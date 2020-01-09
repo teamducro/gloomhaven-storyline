@@ -1,6 +1,7 @@
+import ScenarioRepository from "./repositories/ScenarioRepository";
+
 window._ = require('lodash');
 window.Vue = require('vue');
-import scenarios from './scenarios.json';
 
 let collect = require('collect.js');
 
@@ -12,12 +13,10 @@ window.app = new Vue({
     el: '#app',
     data() {
         return {
-            scenarios: null,
-            edges: null
+            scenarios: null
         }
     },
     mounted() {
-        this.scenarios = collect(scenarios.scenarios);
-        this.edges = collect(scenarios.edges);
+        this.scenarios = ScenarioRepository.fetch();
     }
 });
