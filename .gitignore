@@ -1,1 +1,9 @@
 .idea
+/node_modules
+/vendor
+.env
+npm-debug.log
+/public/css/*
+/public/js/*
+.DS_Store
+.idea
