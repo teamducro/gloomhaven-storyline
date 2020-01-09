@@ -33,5 +33,8 @@
         "vue": "^2.6.11",
         "vue-template-compiler": "^2.6.11"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@material/dialog": "^4.0.0",
+        "collect.js": "^4.19.0"
+    }
 }
