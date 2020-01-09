@@ -15,9 +15,7 @@
             "pages": [
                 4,
                 5
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 3,
@@ -25,27 +23,21 @@
             "pages": [
                 5,
                 6
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 4,
             "name": "#4 Crypt of the Damned",
             "pages": [
                 7
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 5,
             "name": "#5 Ruinous Crypt",
             "pages": [
                 8
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 6,
@@ -53,9 +45,7 @@
             "pages": [
                 9,
                 10
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 7,
@@ -63,27 +53,21 @@
             "pages": [
                 10,
                 11
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 8,
             "name": "#8 Gloomhaven Warehouse",
             "pages": [
                 12
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 9,
             "name": "#9 Diamond Mine",
             "pages": [
                 13
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 11,
@@ -91,9 +75,7 @@
             "pages": [
                 15,
                 16
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 12,
@@ -101,27 +83,21 @@
             "pages": [
                 16,
                 17
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 10,
             "name": "#10 Plane of Elemental Power",
             "pages": [
                 14
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 13,
             "name": "#13 Temple of the Seer",
             "pages": [
                 18
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 14,
@@ -129,9 +105,7 @@
             "pages": [
                 19,
                 20
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 19,
@@ -139,18 +113,14 @@
             "pages": [
                 25,
                 26
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 27,
             "name": "#27 Ruinous Rift",
             "pages": [
                 37
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 21,
@@ -158,9 +128,7 @@
             "pages": [
                 28,
                 29
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 22,
@@ -168,9 +136,7 @@
             "pages": [
                 29,
                 30
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 20,
@@ -178,27 +144,21 @@
             "pages": [
                 26,
                 27
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 28,
             "name": "#28 Outer Ritual Chamber",
             "pages": [
                 38
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 29,
             "name": "#29 Sanctuary of Gloom",
             "pages": [
                 39
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 15,
@@ -206,36 +166,28 @@
             "pages": [
                 20,
                 21
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 17,
             "name": "#17 Lost Island",
             "pages": [
                 23
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 18,
             "name": "#18 Abandoned Sewers",
             "pages": [
                 24
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 16,
             "name": "#16 Mountain Pass",
             "pages": [
                 22
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 24,
@@ -243,9 +195,7 @@
             "pages": [
                 32,
                 33
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 25,
@@ -253,9 +203,7 @@
             "pages": [
                 34,
                 35
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 30,
@@ -263,27 +211,21 @@
             "pages": [
                 40,
                 41
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 42,
             "name": "#42 Realm of the Voice",
             "pages": [
                 56
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 32,
             "name": "#32 Decrepit Wood",
             "pages": [
                 43
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 23,
@@ -291,9 +233,7 @@
             "pages": [
                 31,
                 32
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 43,
@@ -301,9 +241,7 @@
             "pages": [
                 57,
                 58
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 26,
@@ -311,27 +249,21 @@
             "pages": [
                 35,
                 36
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 33,
             "name": "#33 Savvas Armory",
             "pages": [
                 44
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 34,
             "name": "#34 Scorched Summit",
             "pages": [
                 45
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 40,
@@ -339,9 +271,7 @@
             "pages": [
                 53,
                 54
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 41,
@@ -349,9 +279,7 @@
             "pages": [
                 54,
                 55
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 31,
@@ -359,9 +287,7 @@
             "pages": [
                 41,
                 42
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 39,
@@ -369,18 +295,14 @@
             "pages": [
                 51,
                 52
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 37,
             "name": "#37 Doom Trench",
             "pages": [
                 49
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 38,
@@ -388,36 +310,28 @@
             "pages": [
                 50,
                 51
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 46,
             "name": "#46 Nightmare Peak",
             "pages": [
                 61
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 47,
             "name": "#47 Lair of the Unseeing Eye",
             "pages": [
                 62
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 48,
             "name": "#48 Shadow Weald",
             "pages": [
                 63
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 44,
@@ -425,9 +339,7 @@
             "pages": [
                 58,
                 59
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 51,
@@ -435,9 +347,7 @@
             "pages": [
                 66,
                 67
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 35,
@@ -445,9 +355,7 @@
             "pages": [
                 46,
                 47
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 36,
@@ -455,27 +363,21 @@
             "pages": [
                 47,
                 48
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 45,
             "name": "#45 Rebel Swamp",
             "pages": [
                 60
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 49,
             "name": "#49 Rebel's Stand",
             "pages": [
                 64
-            ],
-            "status": "hidden",
-            "notes": ""
+            ]
         },
         {
             "id": 50,
@@ -483,419 +385,7 @@
             "pages": [
                 65,
                 66
-            ],
-            "status": "hidden",
-            "notes": ""
-        },
-        {
-            "id": 52,
-            "name": "#52 Noxious Cellar",
-            "pages": [
-                68,
-                69
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 53,
-            "name": "#53 Crypt Basement",
-            "pages": [
-                69,
-                70
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 54,
-            "name": "#54 Palace of Ice",
-            "pages": [
-                71
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 55,
-            "name": "#55 Foggy Thicket",
-            "pages": [
-                72
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 56,
-            "name": "#56 Bandit's Wood",
-            "pages": [
-                73
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 57,
-            "name": "#57 Investigation",
-            "pages": [
-                74
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 58,
-            "name": "#58 Bloody Shack",
-            "pages": [
-                75
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 59,
-            "name": "#59 Forgotten Grove",
-            "pages": [
-                76
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 60,
-            "name": "#60 Alchemy Lab",
-            "pages": [
-                77
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 61,
-            "name": "#61 Fading Lighthouse",
-            "pages": [
-                78,
-                79
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 62,
-            "name": "#62 Pit of Souls",
-            "pages": [
-                80
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 63,
-            "name": "#63 Magma Pit",
-            "pages": [
-                81
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 64,
-            "name": "#64 Under Water Lagoon",
-            "pages": [
-                82
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 65,
-            "name": "#65 Sulfur Mine",
-            "pages": [
-                83,
-                84
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 66,
-            "name": "#66 Clockwork Cove",
-            "pages": [
-                84,
-                85
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 67,
-            "name": "#67 Arcane Library",
-            "pages": [
-                86
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 68,
-            "name": "#68 Toxic Moor",
-            "pages": [
-                87
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 69,
-            "name": "#69 Well of the Unfortunate",
-            "pages": [
-                88
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 70,
-            "name": "#70 Chained Isle",
-            "pages": [
-                89,
-                90
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 71,
-            "name": "#71 Windswept Highlands",
-            "pages": [
-                90,
-                91
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 72,
-            "name": "#72 Oozing Grove",
-            "pages": [
-                92
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 73,
-            "name": "#73 Rockslide Ridge",
-            "pages": [
-                93
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 76,
-            "name": "#76 Harrower Hive",
-            "pages": [
-                96,
-                97
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 77,
-            "name": "#77 Vault of Secrets",
-            "pages": [
-                97,
-                98
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 74,
-            "name": "#74 Merchant Ship",
-            "pages": [
-                94
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 75,
-            "name": "#75 Overgrown Graveyard",
-            "pages": [
-                95
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 78,
-            "name": "#78 Sacrifice Pit",
-            "pages": [
-                99
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 79,
-            "name": "#79 Lost Temple",
-            "pages": [
-                100,
-                101
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 81,
-            "name": "#81 Temple of the Eclipse",
-            "pages": [
-                103
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 83,
-            "name": "#83 Shadows Within",
-            "pages": [
-                105
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 84,
-            "name": "#84 Crystalline Cave",
-            "pages": [
-                106
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 86,
-            "name": "#86 Harried Village",
-            "pages": [
-                108,
-                109
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 87,
-            "name": "#87 Corrupted Cove",
-            "pages": [
-                110
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 88,
-            "name": "#88 Plane of Water",
-            "pages": [
-                111
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 89,
-            "name": "#89 Syndicate Hideout",
-            "pages": [
-                112
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 91,
-            "name": "#91 Wild Melee",
-            "pages": [
-                114
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 92,
-            "name": "#92 Back Alley Brawl",
-            "pages": [
-                115
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 93,
-            "name": "#93 Sunken Vessel",
-            "pages": [
-                116
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 94,
-            "name": "#94 Vermling Nest",
-            "pages": [
-                117
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 95,
-            "name": "#95 Payment Due",
-            "pages": [
-                118,
-                119
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 80,
-            "name": "#80 Vigil Keep",
-            "pages": [
-                101,
-                102
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 82,
-            "name": "#82 Burning Mountain",
-            "pages": [
-                104
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 85,
-            "name": "#85 Sun Temple",
-            "pages": [
-                107,
-                108
-            ],
-            "status": "locked",
-            "notes": ""
-        },
-        {
-            "id": 90,
-            "name": "#90 Demonic Rift",
-            "pages": [
-                113
-            ],
-            "status": "locked",
-            "notes": ""
+            ]
         }
     ],
     "edges": [
