@@ -4,6 +4,8 @@
         .line { fill: none; stroke: #000; }
         .arrow { fill: #000; stroke: #000; }
         .line, .arrow {transform: matrix(.71909096,0,0,.71909096,0,0)}
+        text { font-family: Helvetica; }
+        text.label {font-size: 9px;}
     </style>
 
     <rect id="rect7997" width="92.707626" height="99.190681" x="252.83899" y="18.152542" rx="10" ry="10" stroke="#d79b00" fill="#ffe6cc"/>
@@ -17,18 +19,18 @@
     <rect id="rect8015" width="215.8856" height="263.21188" x="7.7796607" y="327.39407" rx="10" ry="10" stroke="#d79b00" fill="#ffe6cc"/>
     <rect id="rect8017" width="129.01271" height="114.10169" x="250.89407" y="477.15253" rx="10" ry="10" stroke="#d79b00" fill="#ffe6cc"/>
 
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 268.94 104.987277)" font-size="12" font-family="Helvetica"><tspan y="11">Rebellion Rises</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 134.40273 293.3891)" font-size="12" font-family="Helvetica"><tspan y="11">Sewers</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 334.37727 412.75819)" font-size="12" font-family="Helvetica"><tspan y="11">Dragons</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 303.4564 168.26728)" font-size="12" font-family="Helvetica"><tspan y="11">Under Oceans</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 308.49 312.08546)" font-size="12" font-family="Helvetica"><tspan y="11">Atop Mountains </tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 295 192.71637)" font-size="12" font-family="Helvetica"><tspan y="11">Through </tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 295 192.71637)" font-size="12" font-family="Helvetica"><tspan y="25">Jungles</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 20 578.0146)" font-size="12" font-family="Helvetica"><tspan y="11">The Merchant</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 115.773639 502.64454)" font-size="12" font-family="Helvetica"><tspan y="11">Awaits</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 30 273.25456)" font-size="12" font-family="Helvetica"><tspan y="11">Intro</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 9.348182 12.943637)" font-size="12" font-family="Helvetica"><tspan y="11">Demon and Rift</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 263.83911 578.8682)" font-size="12" font-family="Helvetica"><tspan y="11">Voice</tspan></text>
+    <text class="label" x="268.94" y="112">Rebellion Rises</text>
+    <text class="label" x="134.40273" y="300">Sewers</text>
+    <text class="label" x="334.37727" y="420">Dragons</text>
+    <text class="label" x="303.4564" y="178">Under Oceans</text>
+    <text class="label" x="308.49" y="320">Atop Mountains </text>
+    <text class="label" x="295" y="203.71637">Through </text>
+    <text class="label" x="295" y="216.71637">Jungles</text>
+    <text class="label" x="20" y="585">The Merchant</text>
+    <text class="label" x="115.773639" y="515">Awaits</text>
+    <text class="label" x="30" y="280">Intro</text>
+    <text class="label" x="9.348182" y="22">Demon and Rift</text>
+    <text class="label" x="263.83911" y="585">Voice</text>
 
     <g id="edge46-51">
         <path class="line" d="M 509 414 L 560 414 L 560 355.37 "/>
