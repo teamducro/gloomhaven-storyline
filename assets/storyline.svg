@@ -15,16 +15,17 @@
     <rect id="rect8017" width="129.01271" height="114.10169" x="250.89407" y="477.15253" rx="10" ry="10" stroke="#d79b00" fill="#ffe6cc"/>
 
     <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 268.94 104.987277)" font-size="12" font-family="Helvetica"><tspan y="11">Rebellion Rises</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 124.40273 293.3891)" font-size="12" font-family="Helvetica"><tspan y="11">&#x00a0; &#x00a0;Sewers</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 334.37727 412.75819)" font-size="12" font-family="Helvetica"><tspan y="11" >&#x00a0; Dragons</tspan></text>
+    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 134.40273 293.3891)" font-size="12" font-family="Helvetica"><tspan y="11">Sewers</tspan></text>
+    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 334.37727 412.75819)" font-size="12" font-family="Helvetica"><tspan y="11">Dragons</tspan></text>
     <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 303.4564 168.26728)" font-size="12" font-family="Helvetica"><tspan y="11">Under Oceans</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 308.49 312.08546)" font-size="12" font-family="Helvetica"><tspan y="11">Atop Mountains&#x00a0; &#x00a0;</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 287.63636 192.71637)" font-size="12" font-family="Helvetica"><tspan y="11">Through </tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 287.63636 192.71637)" font-size="12" font-family="Helvetica"><tspan y="25">Jungles</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 9.348182 558.0146)" font-size="12" font-family="Helvetica"><tspan y="11">The Merchant</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 115.773639 502.64454)" font-size="12" font-family="Helvetica"><tspan y="11">&#x00a0;Awaits</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 21.572728 273.25456)" font-size="12" font-family="Helvetica"><tspan y="11">&#x00a0; &#x00a0;Intro</tspan></text>
-    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 9.348182 12.943637)" font-size="12" font-family="Helvetica"><tspan y="11">&#x00a0; &#x00a0;Demon and Rift</tspan></text>
+    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 308.49 312.08546)" font-size="12" font-family="Helvetica"><tspan y="11">Atop Mountains </tspan></text>
+    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 295 192.71637)" font-size="12" font-family="Helvetica"><tspan y="11">Through </tspan></text>
+    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 295 192.71637)" font-size="12" font-family="Helvetica"><tspan y="25">Jungles</tspan></text>
+    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 20 578.0146)" font-size="12" font-family="Helvetica"><tspan y="11">The Merchant</tspan></text>
+    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 115.773639 502.64454)" font-size="12" font-family="Helvetica"><tspan y="11">Awaits</tspan></text>
+    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 30 273.25456)" font-size="12" font-family="Helvetica"><tspan y="11">Intro</tspan></text>
+    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 9.348182 12.943637)" font-size="12" font-family="Helvetica"><tspan y="11">Demon and Rift</tspan></text>
+    <text xml:space="preserve" transform="matrix(.71909096 0 0 .71909096 263.83911 578.8682)" font-size="12" font-family="Helvetica"><tspan y="11">Voice</tspan></text>
 
     <path transform="matrix(.71909096,0,0,.71909096,.35954548,.35954548)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 509 414 L 560 414 L 560 355.37 "/>
     <path transform="matrix(.71909096,0,0,.71909096,.35954548,.35954548)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="#000000" stroke="#000000" d="M 560 350.12 L 563.5 357.12 L 560 355.37 L 556.5 357.12 L 560 350.12 Z "/>
