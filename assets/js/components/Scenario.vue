@@ -1,6 +1,5 @@
 <template>
-    <div class="mdc-dialog scenario-modal"
-         aria-modal="true">
+    <div class="mdc-dialog" ref="modal" aria-modal="true">
         <div class="mdc-dialog__container">
             <div class="mdc-dialog__surface">
                 <template v-if="scenario">
@@ -9,15 +8,32 @@
                     </h2>
                     <div class="mdc-dialog__content" id="my-dialog-content">
 
-                        <radio id="hidden" group="states" label="Hidden"
-                               :checked="scenario.isHidden()"
-                               @changed="stateChanged"></radio>
-                        <radio id="incomplete" group="states" label="Incomplete"
-                               :checked="scenario.isIncomplete()"
-                               @changed="stateChanged"></radio>
-                        <radio id="complete" group="states" label="Complete"
-                               :checked="scenario.isComplete()"
-                               @changed="stateChanged"></radio>
+                        <div class="mb-8">
+                            <radio id="hidden" group="states" label="Hidden"
+                                   :checked="scenario.isHidden()"
+                                   @changed="stateChanged"></radio>
+                            <radio id="incomplete" group="states" label="Incomplete"
+                                   :checked="scenario.isIncomplete()"
+                                   @changed="stateChanged"></radio>
+                            <radio id="complete" group="states" label="Complete"
+                                   :checked="scenario.isComplete()"
+                                   @changed="stateChanged"></radio>
+                        </div>
+
+                        <div class="mb-8">
+                            <div class="mdc-text-field mdc-text-field--textarea w-full"
+                                 ref="notes">
+                                <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
+                                          class="mdc-text-field__input" rows="8" cols="40"></textarea>
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="notes" class="mdc-floating-label">Notes</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                     <footer class="mdc-dialog__actions">
@@ -35,12 +51,14 @@
 <script>
     import {MDCDialog} from '@material/dialog';
     import ScenarioRepository from "../repositories/ScenarioRepository";
+    import {MDCTextField} from "@material/textfield/component";
 
     export default {
         data() {
             return {
                 scenario: null,
                 modal: null,
+                notes: null,
                 scenarioRepository: new ScenarioRepository()
             }
         },
@@ -49,7 +67,7 @@
                 this.open(data.id);
             });
 
-            this.modal = new MDCDialog(document.querySelector('.scenario-modal'));
+            this.modal = new MDCDialog(this.$refs['modal']);
         },
         methods: {
             stateChanged(state) {
@@ -66,13 +84,26 @@
 
                 window.bus.$emit('scenarios-updated');
             },
+            noteChanged() {
+                this.scenario.store();
+            },
             open(id) {
                 this.scenario = null;
                 this.$nextTick(() => {
                     this.scenario = this.scenarioRepository.find(id);
                     this.modal.open();
+                    this.$nextTick(() => {
+                        new MDCTextField(this.$refs['notes']);
+                    });
                 });
             }
         }
     }
 </script>
+
+<style>
+    .mdc-notched-outline__notch {
+        border-right: none;
+        border-left: none;
+    }
+</style>
