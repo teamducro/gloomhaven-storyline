@@ -9,6 +9,18 @@ export default class Scenario {
         this.read();
     }
 
+    isHidden() {
+        return this.status === 'hidden'
+    }
+
+    isComplete() {
+        return this.status === 'complete'
+    }
+
+    isIncomplete() {
+        return this.status === 'incomplete'
+    }
+
     store() {
         window.localStorage.setItem(this.key(), JSON.stringify({
             "status": this.status,

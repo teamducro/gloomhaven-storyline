@@ -1,6 +1,7 @@
 import ScenarioRepository from "./repositories/ScenarioRepository";
 
 window._ = require('lodash');
+window.$ = require('jquery');
 window.Vue = require('vue');
 
 let collect = require('collect.js');
@@ -18,5 +19,9 @@ window.app = new Vue({
     },
     mounted() {
         this.scenarios = ScenarioRepository.fetch();
+
+        this.$nextTick(() => {
+            window.bus.$emit('scenarios-updated');
+        });
     }
 });
