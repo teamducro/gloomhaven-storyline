@@ -29,7 +29,7 @@ export default class Scenario {
     }
 
     read() {
-        let scenario = window.localStorage.getItem(this.key());
+        let scenario = JSON.parse(window.localStorage.getItem(this.key()));
         if (scenario) {
             this.status = scenario.status;
             this.notes = scenario.notes;

@@ -35,6 +35,7 @@
     },
     "dependencies": {
         "@material/dialog": "^4.0.0",
+        "@material/radio": "^4.0.0",
         "collect.js": "^4.19.0",
         "jquery": "^3.4.1"
     }
