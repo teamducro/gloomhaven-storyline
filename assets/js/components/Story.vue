@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <button @click="open" class="mdc-button mdc-button--raised">#1 Black Barrow</button>
-    </div>
+    <inline-svg name="storyline" classes="h-screen"/>
 </template>
 
 <script>
