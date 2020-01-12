@@ -1,5 +1,10 @@
 <template>
-    <inline-svg name="storyline" classes="h-screen"/>
+    <div>
+        <inline-svg name="storyline" classes="h-screen"/>
+        <button type="button" @click="reset" class="mdc-button fixed right-0 bottom-0">
+            <span class="mdc-button__label">Reset</span>
+        </button>
+    </div>
 </template>
 
 <script>
@@ -22,11 +27,17 @@
                 if (app.scenarios) {
                     app.scenarios.each((scenario) => {
                         let $node = $('#node' + scenario.id);
+                        let $edges = $('.edge' + scenario.id);
+                        $edges.hide();
 
                         if (scenario.isHidden()) {
                             $node.hide();
                         } else {
                             $node.show();
+
+                            if (scenario.isComplete()) {
+                                $edges.show();
+                            }
                         }
                     });
                 } else {
@@ -37,6 +48,10 @@
                 window.bus.$emit('open-scenario', {
                     id: id
                 });
+            },
+            reset() {
+                localStorage.clear();
+                app.fetchScenarios();
             }
         }
     }

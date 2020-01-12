@@ -6,6 +6,7 @@ export default class Scenario {
         this.pages = data.pages;
         this.status = this.id === 1 ? "incomplete" : "hidden";
         this.notes = "";
+        this.edges = null;
         this.read();
     }
 

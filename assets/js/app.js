@@ -18,10 +18,15 @@ window.app = new Vue({
         }
     },
     mounted() {
-        this.scenarios = ScenarioRepository.fetch();
+        this.fetchScenarios();
+    },
+    methods: {
+        fetchScenarios() {
+            this.scenarios = (new ScenarioRepository).fetch();
 
-        this.$nextTick(() => {
-            window.bus.$emit('scenarios-updated');
-        });
+            this.$nextTick(() => {
+                window.bus.$emit('scenarios-updated');
+            });
+        }
     }
 });

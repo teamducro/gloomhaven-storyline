@@ -34,12 +34,14 @@
 
 <script>
     import {MDCDialog} from '@material/dialog';
+    import ScenarioRepository from "../repositories/ScenarioRepository";
 
     export default {
         data() {
             return {
                 scenario: null,
-                modal: null
+                modal: null,
+                scenarioRepository: new ScenarioRepository()
             }
         },
         mounted() {
@@ -53,11 +55,23 @@
             stateChanged(state) {
                 this.scenario.status = state;
                 this.scenario.store();
-                // window.bus.$emit('scenarios-updated');
+
+                if (this.scenario.isComplete()) {
+                    this.scenario.edges.whereIn('type', ['unlocks', 'linksto']).each(edge => {
+                        let linkedScenario = this.scenarioRepository.find(edge.target);
+                        linkedScenario.status = 'incomplete';
+                        linkedScenario.store();
+                    });
+                }
+
+                window.bus.$emit('scenarios-updated');
             },
             open(id) {
-                this.scenario = app.scenarios.firstWhere('id', id);
-                this.modal.open();
+                this.scenario = null;
+                this.$nextTick(() => {
+                    this.scenario = this.scenarioRepository.find(id);
+                    this.modal.open();
+                });
             }
         }
     }

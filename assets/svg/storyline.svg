@@ -45,11 +45,11 @@
     <text class="label" x="9.348182" y="22">Demon and Rift</text>
     <text class="label" x="263.83911" y="585">Voice</text>
 
-    <g id="edge46-51" class="edge">
+    <g id="edge46-51" class="edge edge46">
         <path class="line" d="M 509 414 L 560 414 L 560 355.37 "/>
         <path class="arrow" d="M 560 350.12 L 563.5 357.12 L 560 355.37 L 556.5 357.12 L 560 350.12 Z "/>
     </g>
-    <g id="edge1-2" class="edge">
+    <g id="edge1-2" class="edge edge1">
         <path class="line" d="M 36.5 373 L 36.5 392.13 "/>
         <path class="arrow" d="M 36.5 397.38 L 33 390.38 L 36.5 392.13 L 40 390.38 L 36.5 397.38 Z "/>
     </g>
@@ -57,11 +57,11 @@
         <circle cx="37.39272992" cy="257.4345637" r="10.8" class="node"/>
         <text x="24.449091" y="253.12001">1</text>
     </g>
-    <g id="edge2-4" class="edge">
+    <g id="edge2-4" class="edge edge2">
         <path class="line" d="M 51.5 414.02 L 73.64 414.78 "/>
         <path class="arrow" d="M 78.88 414.96 L 71.77 418.22 L 73.64 414.78 L 72.01 411.22 L 78.88 414.96 Z "/>
     </g>
-    <g id="edge2-3" class="edge">
+    <g id="edge2-3" class="edge edge2">
         <path class="line" d="M 37 429 L 35.08 572.63 "/>
         <path class="arrow" d="M 35.01 577.88 L 31.61 570.84 L 35.08 572.63 L 38.61 570.93 L 35.01 577.88 Z "/>
     </g>
@@ -69,7 +69,7 @@
         <circle cx="37.06045564" cy="296.9982021" r="10.8" class="node"/>
         <text x="24.449091" y="293.3891">2</text>
     </g>
-    <g id="edge4-6" class="edge">
+    <g id="edge4-6" class="edge edge4">
         <path class="line" d="M 95 430 L 95 464.63 "/>
         <path class="arrow" d="M 95 469.88 L 91.5 462.88 L 95 464.63 L 98.5 462.88 L 95 469.88 Z "/>
     </g>
@@ -77,11 +77,11 @@
         <circle cx="79.1000056" cy="298.4227484" r="10.8" class="node"/>
         <text x="66.156368" y="294.1082">4</text>
     </g>
-    <g id="edge3-8" class="edge">
+    <g id="edge3-8" class="edge edge3">
         <path class="line" d="M 50 594 L 95 594 L 95 577.71 "/>
         <path class="arrow" d="M 95 570.71 L 98.5 574.21 L 95 577.71 L 91.5 574.21 L 95 570.71 Z "/>
     </g>
-    <g id="edge3-9" class="edge">
+    <g id="edge3-9" class="edge edge3">
         <path class="line" d="M 50 594 L 95 594 L 95 612.29 "/>
         <path class="arrow" d="M 95 619.29 L 91.5 615.79 L 95 612.29 L 98.5 615.79 L 95 619.29 Z "/>
     </g>
@@ -89,15 +89,15 @@
         <circle cx="35.954548" cy="427.1400302" r="10.8" class="node"/>
         <text x="23.01091" y="422.82548">3</text>
     </g>
-    <g id="edge8-7" class="edge">
+    <g id="edge8-7" class="edge edge8">
         <path class="line" d="M 105.45 565.26 L 157.58 619.41 "/>
         <path class="arrow" d="M 161.22 623.19 L 153.85 620.58 L 157.58 619.41 L 158.89 615.72 L 161.22 623.19 Z "/>
     </g>
-    <g id="edge8-14" class="edge">
+    <g id="edge8-14" class="edge edge8">
         <path class="line" d="M 106 544 L 135.58 414.21 "/>
         <path class="arrow" d="M 136.75 409.09 L 138.61 416.69 L 135.58 414.21 L 131.78 415.14 L 136.75 409.09 Z "/>
     </g>
-    <g id="edge8-13" class="edge">
+    <g id="edge8-13" class="edge edge8">
         <path class="line" d="M 110 555 L 151.63 555 "/>
         <path class="arrow" d="M 156.88 555 L 149.88 558.5 L 151.63 555 L 149.88 551.5 L 156.88 555 Z "/>
     </g>
@@ -105,11 +105,11 @@
         <circle cx="79.1000056" cy="399.0954828" r="10.8" class="node"/>
         <text x="66.156368" y="394.7809">8</text>
     </g>
-    <g id="edge9-12" class="edge">
+    <g id="edge9-12" class="edge edge9">
         <path class="line" d="M 95 650 L 95 740 L 279 740 L 279 711.71 "/>
         <path class="arrow" d="M 279 704.71 L 282.5 708.21 L 279 711.71 L 275.5 708.21 L 279 704.71 Z "/>
     </g>
-    <g id="edge9-11" class="edge">
+    <g id="edge9-11" class="edge edge9">
         <path class="line" d="M 95 649.5 L 95 740 L 279 740 L 279 766.29 "/>
         <path class="arrow" d="M 279 773.29 L 275.5 769.79 L 279 766.29 L 282.5 769.79 L 279 773.29 Z "/>
     </g>
@@ -117,15 +117,15 @@
         <circle cx="79.1000056" cy="456.6227596" r="10.8" class="node"/>
         <text x="66.156368" y="452.3082">9</text>
     </g>
-    <g id="edge5-10" class="edge">
+    <g id="edge5-10" class="edge edge5">
         <path class="line" d="M 50 185.5 L 75.13 185.5 "/>
         <path class="arrow" d="M 80.38 185.5 L 73.38 189 L 75.13 185.5 L 73.38 182 L 80.38 185.5 Z "/>
     </g>
-    <g id="edge5-19" class="edge">
+    <g id="edge5-19" class="edge edge5">
         <path class="line" d="M 35 171 L 35 142.37 "/>
         <path class="arrow" d="M 35 137.12 L 38.5 144.12 L 35 142.37 L 31.5 144.12 L 35 137.12 Z "/>
     </g>
-    <g id="edge5-14" class="edge">
+    <g id="edge5-14" class="edge edge5">
         <path class="line" d="M 46 196 L 123.48 376.15 "/>
         <path class="arrow" d="M 125.56 380.97 L 119.58 375.93 L 123.48 376.15 L 126.01 373.16 L 125.56 380.97 Z "/>
     </g>
@@ -133,7 +133,7 @@
         <circle cx="35.954548" cy="133.7509186" r="10.8" class="node"/>
         <text x="23.01091" y="129.43636">5</text>
     </g>
-    <g id="edge6-8" class="edge">
+    <g id="edge6-8" class="edge edge6">
         <path class="line" d="M 95 501 L 95 533.63 "/>
         <path class="arrow" d="M 95 538.88 L 91.5 531.88 L 95 533.63 L 98.5 531.88 L 95 538.88 Z "/>
     </g>
@@ -141,11 +141,11 @@
         <circle cx="79.1000056" cy="349.4782066" r="10.8" class="node"/>
         <text x="66.156368" y="345.16365">6</text>
     </g>
-    <g id="edge10-21" class="edge">
+    <g id="edge10-21" class="edge edge10">
         <path class="line" d="M 96.5 170.5 L 97 78.37 "/>
         <path class="arrow" d="M 97 73.12 L 100.5 80.12 L 97 78.37 L 93.5 80.12 L 97 73.12 Z "/>
     </g>
-    <g id="edge10-22" class="edge">
+    <g id="edge10-22" class="edge edge10">
         <path class="line" d="M 107 196 L 131.73 235.84 "/>
         <path class="arrow" d="M 134.5 240.31 L 127.83 236.2 L 131.73 235.84 L 133.78 232.51 L 134.5 240.31 Z "/>
     </g>
@@ -153,7 +153,7 @@
         <circle cx="80.53818752" cy="133.7509186" r="10.8" class="node"/>
         <text x="64.71818" y="129.43636">10</text>
     </g>
-    <g id="edge19-27" class="edge">
+    <g id="edge19-27" class="edge edge19">
         <path class="line" d="M 35.31 105.5 L 35.99 78.37 "/>
         <path class="arrow" d="M 36.12 73.12 L 39.44 80.2 L 35.99 78.37 L 32.44 80.03 L 36.12 73.12 Z "/>
     </g>
@@ -165,7 +165,7 @@
         <circle cx="109.3018259" cy="282.6027473" r="10.8" class="node"/>
         <text x="93.48182" y="278.2882">14</text>
     </g>
-    <g id="edge7-20" class="edge">
+    <g id="edge7-20" class="edge edge7">
         <path class="line" d="M 188 634.5 L 218.63 634.5 "/>
         <path class="arrow" d="M 223.88 634.5 L 216.88 638 L 218.63 634.5 L 216.88 631 L 223.88 634.5 Z "/>
     </g>
@@ -173,11 +173,11 @@
         <circle cx="135.1891005" cy="456.6227596" r="10.8" class="node"/>
         <text x="122.24545" y="452.3082">7</text>
     </g>
-    <g id="edge13-20" class="edge">
+    <g id="edge13-20" class="edge edge13">
         <path class="line" d="M 188 555 L 240 555 L 240 611.79 "/>
         <path class="arrow" d="M 240 618.79 L 236.5 615.29 L 240 611.79 L 243.5 615.29 L 240 618.79 Z "/>
     </g>
-    <g id="edge13-17" class="edge">
+    <g id="edge13-17" class="edge edge13">
         <path class="line" d="M 188 555 L 256.29 555 "/>
         <path class="arrow" d="M 263.29 555 L 259.79 558.5 L 256.29 555 L 259.79 551.5 L 263.29 555 Z "/>
     </g>
@@ -185,11 +185,11 @@
         <circle cx="135.1891005" cy="399.0954828" r="10.8" class="node"/>
         <text x="119.369098" y="394.7809">13</text>
     </g>
-    <g id="edge20-28" class="edge">
+    <g id="edge20-28" class="edge edge20">
         <path class="line" d="M 225 650 L 215.51 669.37 "/>
         <path class="arrow" d="M 213.2 674.08 L 213.14 666.25 L 215.51 669.37 L 219.42 669.33 L 213.2 674.08 Z "/>
     </g>
-    <g id="edge20-16" class="edge">
+    <g id="edge20-16" class="edge edge20">
         <path class="line" d="M 255 634.5 L 359.63 634.5 "/>
         <path class="arrow" d="M 364.88 634.5 L 357.88 638 L 359.63 634.5 L 357.88 631 L 364.88 634.5 Z "/>
     </g>
@@ -197,7 +197,7 @@
         <circle cx="183.395466" cy="456.2768497" r="10.8" class="node"/>
         <text x="167.54819" y="452.3082">20</text>
     </g>
-    <g id="edge11-18" class="edge">
+    <g id="edge11-18" class="edge edge11">
         <path class="line" d="M 294 789 L 330 789 L 330 440 L 265 440 L 265 415.37 "/>
         <path class="arrow" d="M 265 410.12 L 268.5 417.12 L 265 415.37 L 261.5 417.12 L 265 410.12 Z "/>
     </g>
@@ -205,7 +205,7 @@
         <circle cx="211.4400134" cy="567.376403" r="10.8" class="node"/>
         <text x="196.31183" y="563.0482">11</text>
     </g>
-    <g id="edge12-28" class="edge">
+    <g id="edge12-28" class="edge edge12">
         <path class="line" d="M 264 688.5 L 227.37 688.5 "/>
         <path class="arrow" d="M 222.12 688.5 L 229.12 685 L 227.37 688.5 L 229.12 692 L 222.12 688.5 Z "/>
     </g>
@@ -213,19 +213,19 @@
         <circle cx="211.4400134" cy="495.1077616" r="10.8" class="node"/>
         <text x="195.59273" y="491.1391">12</text>
     </g>
-    <g id="edge18-43" class="edge">
+    <g id="edge18-43" class="edge edge18">
         <path class="line" d="M 280 394 L 328.63 394 "/>
         <path class="arrow" d="M 333.88 394 L 326.88 397.5 L 328.63 394 L 326.88 390.5 L 333.88 394 Z "/>
     </g>
-    <g id="edge23-26" class="edge">
+    <g id="edge23-26" class="edge edge23">
         <path class="line" d="M 251 308.5 L 220.37 308.5 "/>
         <path class="arrow" d="M 215.12 308.5 L 222.12 305 L 220.37 308.5 L 222.12 312 L 215.12 308.5 Z "/>
     </g>
-    <g id="edge18-23" class="edge">
+    <g id="edge18-23" class="edge edge18">
         <path class="line" d="M 265 378.5 L 265.73 329.87 "/>
         <path class="arrow" d="M 265.81 324.62 L 269.2 331.67 L 265.73 329.87 L 262.2 331.56 L 265.81 324.62 Z "/>
     </g>
-    <g id="edge18-14" class="edge">
+    <g id="edge18-14" class="edge edge18">
         <path class="line" d="M 250 394 L 158.37 393.06 "/>
         <path class="arrow" d="M 153.12 393.01 L 160.15 389.58 L 158.37 393.06 L 160.08 396.58 L 153.12 393.01 Z "/>
     </g>
@@ -245,7 +245,7 @@
         <circle cx="262.4682004" cy="283.3218382" r="10.8" class="node"/>
         <text x="246.6482" y="279.0073">43</text>
     </g>
-    <g id="edge26-22" class="edge">
+    <g id="edge26-22" class="edge edge26">
         <path class="line" d="M 184 293.87 L 158.36 268.86 "/>
         <path class="arrow" d="M 154.6 265.19 L 162.05 267.57 L 158.36 268.86 L 157.17 272.59 L 154.6 265.19 Z "/>
     </g>
@@ -261,7 +261,7 @@
         <circle cx="80.20591324" cy="41.00182032" r="10.8" class="node"/>
         <text x="64.71818" y="36.673639">21</text>
     </g>
-    <g id="edge22-35" class="edge">
+    <g id="edge22-35" class="edge edge22">
         <path class="line" d="M 143 239 L 143 120 L 192 120 L 192 79.71 "/>
         <path class="arrow" d="M 192 72.71 L 195.5 76.21 L 192 79.71 L 188.5 76.21 L 192 72.71 Z "/>
     </g>
@@ -269,19 +269,19 @@
         <circle cx="113.6163717" cy="182.6491038" r="10.8" class="node"/>
         <text x="97.796367" y="178.33455">22</text>
     </g>
-    <g id="edge31-43" class="edge">
+    <g id="edge31-43" class="edge edge31">
         <path class="line" d="M 349.5 347 L 349.9 372.13 "/>
         <path class="arrow" d="M 349.98 377.38 L 346.37 370.44 L 349.9 372.13 L 353.37 370.33 L 349.98 377.38 Z "/>
     </g>
-    <g id="edge31-38" class="edge">
+    <g id="edge31-38" class="edge edge31">
         <path class="line" d="M 364.5 332 L 405.13 332 "/>
         <path class="arrow" d="M 410.38 332 L 403.38 335.5 L 405.13 332 L 403.38 328.5 L 410.38 332 Z "/>
     </g>
-    <g id="edge31-39" class="edge">
+    <g id="edge31-39" class="edge edge31">
         <path class="line" d="M 359.79 342.91 L 411.46 398.34 "/>
         <path class="arrow" d="M 415.04 402.18 L 407.71 399.45 L 411.46 398.34 L 412.83 394.67 L 415.04 402.18 Z "/>
     </g>
-    <g id="edge31-37" class="edge">
+    <g id="edge31-37" class="edge edge31">
         <path class="line" d="M 357.47 319.29 L 415.16 227.11 "/>
         <path class="arrow" d="M 417.95 222.66 L 417.2 230.45 L 415.16 227.11 L 411.27 226.74 L 417.95 222.66 Z "/>
     </g>
@@ -289,15 +289,15 @@
         <circle cx="262.4682004" cy="238.7381987" r="10.8" class="node"/>
         <text x="246.6482" y="234.42365">31</text>
     </g>
-    <g id="edge35-45" class="edge">
+    <g id="edge35-45" class="edge edge35">
         <path class="line" d="M 207 57 L 392.63 57 "/>
         <path class="arrow" d="M 397.88 57 L 390.88 60.5 L 392.63 57 L 390.88 53.5 L 397.88 57 Z "/>
     </g>
-    <g id="edge22-31" class="edge">
+    <g id="edge22-31" class="edge edge22">
         <path class="line" d="M 158 254 L 350 254 L 350 310.63 "/>
         <path class="arrow" d="M 350 315.88 L 346.5 308.88 L 350 310.63 L 353.5 308.88 L 350 315.88 Z "/>
     </g>
-    <g id="edge22-36" class="edge">
+    <g id="edge22-36" class="edge edge22">
         <path class="line" d="M 143 239 L 143 120 L 192 120 L 192 163.29 "/>
         <path class="arrow" d="M 192 170.29 L 188.5 166.79 L 192 163.29 L 195.5 166.79 L 192 170.29 Z "/>
     </g>
@@ -309,11 +309,11 @@
         <circle cx="148.8790999" cy="133.4050087" r="10.8" class="node"/>
         <text x="133.03182" y="129.43636">36</text>
     </g>
-    <g id="edge45-50" class="edge">
+    <g id="edge45-50" class="edge edge45">
         <path class="line" d="M 414 72 L 414 121 L 401.71 121 "/>
         <path class="arrow" d="M 394.71 121 L 398.21 117.5 L 401.71 121 L 398.21 124.5 L 394.71 121 Z "/>
     </g>
-    <g id="edge45-49" class="edge">
+    <g id="edge45-49" class="edge edge45">
         <path class="line" d="M 414 72 L 414 121 L 428.29 121 "/>
         <path class="arrow" d="M 435.29 121 L 431.79 124.5 L 428.29 121 L 431.79 117.5 L 435.29 121 Z "/>
     </g>
@@ -333,7 +333,7 @@
         <circle cx="105.7336423" cy="495.1077616" r="10.8" class="node"/>
         <text x="89.88636" y="491.1391">29</text>
     </g>
-    <g id="edge37-47" class="edge">
+    <g id="edge37-47" class="edge edge37">
         <path class="line" d="M 442 209 L 462 209 L 459 209 L 472.13 209 "/>
         <path class="arrow" d="M 477.38 209 L 470.38 212.5 L 472.13 209 L 470.38 205.5 L 477.38 209 Z "/>
     </g>
@@ -341,11 +341,11 @@
         <circle cx="317.8382043" cy="150.2900106" r="10.8" class="node"/>
         <text x="302.0182" y="145.97545">37</text>
     </g>
-    <g id="edge38-48" class="edge">
+    <g id="edge38-48" class="edge edge38">
         <path class="line" d="M 441.5 332 L 472.13 332 "/>
         <path class="arrow" d="M 477.38 332 L 470.38 335.5 L 472.13 332 L 470.38 328.5 L 477.38 332 Z "/>
     </g>
-    <g id="edge38-44" class="edge">
+    <g id="edge38-44" class="edge edge38">
         <path class="line" d="M 438.45 322.93 L 476.37 294.77 "/>
         <path class="arrow" d="M 480.58 291.64 L 477.05 298.62 L 476.37 294.77 L 472.87 293 L 480.58 291.64 Z "/>
     </g>
@@ -353,11 +353,11 @@
         <circle cx="317.8382043" cy="238.7381987" r="10.8" class="node"/>
         <text x="302.0182" y="234.42365">38</text>
     </g>
-    <g id="edge39-46" class="edge">
+    <g id="edge39-46" class="edge edge39">
         <path class="line" d="M 441 414 L 472.13 414 "/>
         <path class="arrow" d="M 477.38 414 L 470.38 417.5 L 472.13 414 L 470.38 410.5 L 477.38 414 Z "/>
     </g>
-    <g id="edge39-15" class="edge">
+    <g id="edge39-15" class="edge edge39">
         <path class="line" d="M 426 429 L 426 486 L 337 486 C 337 476.9 323 476.9 323 486 L 261.37 486 "/>
         <path class="arrow" d="M 256.12 486 L 263.12 482.5 L 261.37 486 L 263.12 489.5 L 256.12 486 Z "/>
     </g>
@@ -369,11 +369,11 @@
         <circle cx="183.3681948" cy="349.4782066" r="10.8" class="node"/>
         <text x="167.54819" y="345.16365">15</text>
     </g>
-    <g id="edge13-15" class="edge">
+    <g id="edge13-15" class="edge edge13">
         <path class="line" d="M 188 555 L 240 555 L 240 508.71 "/>
         <path class="arrow" d="M 240 501.71 L 243.5 505.21 L 240 508.71 L 236.5 505.21 L 240 501.71 Z "/>
     </g>
-    <g id="edge28-29" class="edge">
+    <g id="edge28-29" class="edge edge28">
         <path class="line" d="M 191 688.5 L 153.37 688.5 "/>
         <path class="arrow" d="M 148.12 688.5 L 155.12 685 L 153.37 688.5 L 155.12 692 L 148.12 688.5 Z "/>
     </g>
@@ -381,7 +381,7 @@
         <circle cx="202.0645598" cy="222.1991066" r="10.8" class="node"/>
         <text x="186.24456" y="217.88455">23</text>
     </g>
-    <g id="edge48-51" class="edge">
+    <g id="edge48-51" class="edge edge48">
         <path class="line" d="M 508.5 332.34 L 538.63 333.02 "/>
         <path class="arrow" d="M 543.88 333.14 L 536.81 336.48 L 538.63 333.02 L 536.96 329.48 L 543.88 333.14 Z "/>
     </g>
@@ -401,7 +401,7 @@
         <circle cx="365.6850244" cy="297.717293" r="10.8" class="node"/>
         <text x="350.1973" y="293.3891">46</text>
     </g>
-    <g id="edge47-51" class="edge">
+    <g id="edge47-51" class="edge edge47">
         <path class="line" d="M 509 209 L 560 209 L 560 312.63 "/>
         <path class="arrow" d="M 560 317.88 L 556.5 310.88 L 560 312.63 L 563.5 310.88 L 560 317.88 Z "/>
     </g>
@@ -417,7 +417,7 @@
         <circle cx="284.7600202" cy="535.0036742" r="10.8" class="node"/>
         <text x="268.94" y="530.6891">24</text>
     </g>
-    <g id="edge16-24" class="edge">
+    <g id="edge16-24" class="edge edge16">
         <path class="line" d="M 381 649.5 L 381 722.63 "/>
         <path class="arrow" d="M 381 727.88 L 377.5 720.88 L 381 722.63 L 384.5 720.88 L 381 727.88 Z "/>
     </g>
@@ -425,7 +425,7 @@
         <circle cx="284.7600202" cy="399.0954828" r="10.8" class="node"/>
         <text x="268.94" y="394.7809">25</text>
     </g>
-    <g id="edge16-25" class="edge">
+    <g id="edge16-25" class="edge edge16">
         <path class="line" d="M 381 619.5 L 381 575.87 "/>
         <path class="arrow" d="M 381 570.62 L 384.5 577.62 L 381 575.87 L 377.5 577.62 L 381 570.62 Z "/>
     </g>
@@ -433,7 +433,7 @@
         <circle cx="319.2763862" cy="567.3627674" r="10.8" class="node"/>
         <text x="303.4564" y="563.0482">30</text>
     </g>
-    <g id="edge24-30" class="edge">
+    <g id="edge24-30" class="edge edge24">
         <path class="line" d="M 392.04 754.15 L 413.43 774.37 "/>
         <path class="arrow" d="M 417.24 777.97 L 409.75 775.71 L 413.43 774.37 L 414.56 770.62 L 417.24 777.97 Z "/>
     </g>
@@ -441,7 +441,7 @@
         <circle cx="319.2763862" cy="494.7345805" r="10.8" class="node"/>
         <text x="303.4564" y="490.42">32</text>
     </g>
-    <g id="edge24-32" class="edge">
+    <g id="edge24-32" class="edge edge24">
         <path class="line" d="M 390.68 732.54 L 415.12 703.74 "/>
         <path class="arrow" d="M 418.51 699.74 L 416.65 707.34 L 415.12 703.74 L 411.32 702.81 L 418.51 699.74 Z "/>
     </g>
@@ -449,7 +449,7 @@
         <circle cx="371.7972975" cy="567.376403" r="10.8" class="node"/>
         <text x="355.94999" y="563.0482">42</text>
     </g>
-    <g id="edge30-42" class="edge">
+    <g id="edge30-42" class="edge edge30">
         <path class="line" d="M 444 789 L 480.63 789 "/>
         <path class="arrow" d="M 485.88 789 L 478.88 792.5 L 480.63 789 L 478.88 785.5 L 485.88 789 Z "/>
     </g>
@@ -457,7 +457,7 @@
         <circle cx="371.7700263" cy="494.7345805" r="10.8" class="node"/>
         <text x="355.94999" y="490.42">40</text>
     </g>
-    <g id="edge32-40" class="edge">
+    <g id="edge32-40" class="edge edge32">
         <path class="line" d="M 444 687.5 L 480.63 687.5 "/>
         <path class="arrow" d="M 485.88 687.5 L 478.88 691 L 480.63 687.5 L 478.88 684 L 485.88 687.5 Z "/>
     </g>
@@ -465,11 +465,11 @@
         <circle cx="344.4445698" cy="458.0609415" r="10.8" class="node"/>
         <text x="328.62458" y="453.7464">33</text>
     </g>
-    <g id="edge25-33" class="edge">
+    <g id="edge25-33" class="edge edge25">
         <path class="line" d="M 391.61 565.11 L 448.39 621.89 "/>
         <path class="arrow" d="M 452.1 625.6 L 444.68 623.13 L 448.39 621.89 L 449.63 618.18 L 452.1 625.6 Z "/>
     </g>
-    <g id="edge32-33" class="edge">
+    <g id="edge32-33" class="edge edge32">
         <path class="line" d="M 429 673 L 448.78 652.49 "/>
         <path class="arrow" d="M 452.42 648.71 L 450.08 656.18 L 448.78 652.49 L 445.05 651.32 L 452.42 648.71 Z "/>
     </g>
@@ -477,7 +477,7 @@
         <circle cx="371.7972975" cy="535.7364008" r="10.8" class="node"/>
         <text x="355.94999" y="531.4082">41</text>
     </g>
-    <g id="edge40-41" class="edge">
+    <g id="edge40-41" class="edge edge40">
         <path class="line" d="M 502 702.5 L 502 723.63 "/>
         <path class="arrow" d="M 502 728.88 L 498.5 721.88 L 502 723.63 L 505.5 721.88 L 502 728.88 Z "/>
     </g>
@@ -485,19 +485,19 @@
         <circle cx="341.5954772" cy="398.7495729" r="10.8" class="node"/>
         <text x="325.7482" y="394.7809">34</text>
     </g>
-    <g id="edge25-34" class="edge">
+    <g id="edge25-34" class="edge edge25">
         <path class="line" d="M 396 555 L 438.63 554.67 "/>
         <path class="arrow" d="M 443.88 554.63 L 436.91 558.18 L 438.63 554.67 L 436.85 551.18 L 443.88 554.63 Z "/>
     </g>
-    <g id="edge12-16" class="edge">
+    <g id="edge12-16" class="edge edge12">
         <path class="line" d="M 294 689 L 294 688 L 330 688 L 330 635 L 359.63 635 "/>
         <path class="arrow" d="M 364.88 635 L 357.88 638.5 L 359.63 635 L 357.88 631.5 L 364.88 635 Z "/>
     </g>
-    <g id="edge4-5" class="edge">
+    <g id="edge4-5" class="edge edge4">
         <path class="line" d="M 95 400 L 36.84 207.1 "/>
         <path class="arrow" d="M 35.32 202.07 L 40.69 207.76 L 36.84 207.1 L 33.99 209.78 L 35.32 202.07 Z "/>
     </g>
-    <g id="edge18-26" class="edge">
+    <g id="edge18-26" class="edge edge18">
         <path class="line" d="M 255.84 381.62 L 214.56 328.53 "/>
         <path class="arrow" d="M 211.33 324.38 L 218.39 327.76 L 214.56 328.53 L 212.87 332.06 L 211.33 324.38 Z "/>
     </g>
