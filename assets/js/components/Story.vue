@@ -1,38 +1,14 @@
 <template>
     <div>
         <inline-svg name="storyline" classes="h-screen"/>
-        <button type="button" @click="openReset" class="mdc-button fixed right-0 bottom-0">
-            <span class="mdc-button__label">Reset</span>
-        </button>
-        <modal ref="confirmReset" title="Remove">
-            <template v-slot:content>
-                <p>Are you sure you want to remove scenario data?</p>
-            </template>
-            <template v-slot:buttons>
-                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
-                    <span class="mdc-button__label">Cancel</span>
-                </button>
-                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
-                        @click="resetStates">
-                    <span class="mdc-button__label">Only states</span>
-                </button>
-                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
-                        @click="reset">
-                    <span class="mdc-button__label">Clear all</span>
-                </button>
-            </template>
-        </modal>
+        <reset></reset>
     </div>
 </template>
 
 <script>
-    import ScenarioRepository from "../repositories/ScenarioRepository";
-
     export default {
         data() {
-            return {
-                scenarioRepository: new ScenarioRepository()
-            }
+            return {}
         },
         mounted() {
             this.render();
@@ -83,18 +59,6 @@
                 window.bus.$emit('open-scenario', {
                     id: id
                 });
-            },
-            openReset() {
-                this.$refs['confirmReset'].open();
-            },
-            resetStates() {
-                this.scenarioRepository.hideAllScenarios();
-
-                window.bus.$emit('scenarios-updated');
-            },
-            reset() {
-                localStorage.clear();
-                app.fetchScenarios();
             }
         }
     }
