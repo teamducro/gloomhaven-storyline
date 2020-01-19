@@ -73,7 +73,11 @@ export default class ScenarioValidator {
             }
         } else {
             if (states.has(ScenarioState.complete) === false) {
-                scenario.state = ScenarioState.required;
+                let linked = this.scenarioRepository.findMany(scenario.linked_from);
+                let states = linked.pluck('state', 'state');
+                if (states.has(ScenarioState.complete)) {
+                    scenario.state = ScenarioState.required;
+                }
             }
         }
     }

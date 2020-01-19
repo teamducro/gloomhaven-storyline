@@ -32,9 +32,9 @@ export default class ScenarioRepository {
             });
 
         scenario.required_by = this.requires
-            .where('source', scenario.id)
+            .where('target', scenario.id)
             .map((edge) => {
-                return edge.target;
+                return edge.source;
             });
 
         return scenario;
@@ -63,6 +63,6 @@ export default class ScenarioRepository {
     }
 
     get requires() {
-        return this.requires2 || (this.requires2 = this.edges.where('type', 'requires'));
+        return this.requires2 || (this.requires2 = this.edges.where('type', 'requiredby'));
     }
 }

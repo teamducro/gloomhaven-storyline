@@ -42,6 +42,12 @@
                                 $node.find('.blocked').hide();
                             }
 
+                            if (scenario.isRequired()) {
+                                $node.find('.required').show();
+                            } else {
+                                $node.find('.required').hide();
+                            }
+
                             if (scenario.isComplete()) {
                                 $edges.show();
                             }
