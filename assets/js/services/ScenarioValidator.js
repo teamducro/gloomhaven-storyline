@@ -22,8 +22,7 @@ export default class ScenarioValidator {
     }
 
     checkHidden(scenario) {
-        let linked = this.scenarioRepository.findMany(scenario.linked_from);
-        let states = linked.pluck('state', 'state');
+        let states = this.linkedStates(scenario);
 
         if (scenario.isHidden()) {
             if (states.has(ScenarioState.complete) || scenario.id === 1) {
@@ -41,20 +40,15 @@ export default class ScenarioValidator {
             return;
         }
 
-        let blocks = this.scenarioRepository.findMany(scenario.blocked_by);
-        let states = blocks.pluck('state', 'state');
+        let states = this.blockedStates(scenario);
 
         if (scenario.isBlocked()) {
             if (states.has(ScenarioState.complete) === false) {
                 scenario.state = ScenarioState.incomplete;
             }
         } else {
-            if (states.has(ScenarioState.complete) && !scenario.isComplete()) {
-                let linked = this.scenarioRepository.findMany(scenario.linked_from);
-                let states = linked.pluck('state', 'state');
-                if (states.has(ScenarioState.complete)) {
-                    scenario.state = ScenarioState.blocked;
-                }
+            if (states.has(ScenarioState.complete) && !scenario.isComplete() && this.linkedStates(scenario).has(ScenarioState.complete)) {
+                scenario.state = ScenarioState.blocked;
             }
         }
     }
@@ -64,21 +58,28 @@ export default class ScenarioValidator {
             return;
         }
 
-        let requires = this.scenarioRepository.findMany(scenario.required_by);
-        let states = requires.pluck('state', 'state');
+        let states = this.requiredStates(scenario);
 
         if (scenario.isRequired()) {
             if (states.has(ScenarioState.complete)) {
                 scenario.state = ScenarioState.incomplete;
             }
         } else {
-            if (states.has(ScenarioState.complete) === false) {
-                let linked = this.scenarioRepository.findMany(scenario.linked_from);
-                let states = linked.pluck('state', 'state');
-                if (states.has(ScenarioState.complete)) {
-                    scenario.state = ScenarioState.required;
-                }
+            if (states.has(ScenarioState.complete) === false && this.linkedStates(scenario).has(ScenarioState.complete)) {
+                scenario.state = ScenarioState.required;
             }
         }
+    }
+
+    linkedStates(scenario) {
+        return this.scenarioRepository.findMany(scenario.linked_from).pluck('state', 'state');
+    }
+
+    blockedStates(scenario) {
+        return this.scenarioRepository.findMany(scenario.blocked_by).pluck('state', 'state');
+    }
+
+    requiredStates(scenario) {
+        return this.scenarioRepository.findMany(scenario.required_by).pluck('state', 'state');
     }
 }
