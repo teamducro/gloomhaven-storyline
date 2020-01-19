@@ -1,5 +1,7 @@
 import scenarios from '../scenarios.json';
 import Scenario from "../models/Scenario";
+import ScenarioValidator from "../services/ScenarioValidator";
+import {ScenarioState} from "../models/ScenarioState";
 
 export default class ScenarioRepository {
 
@@ -9,6 +11,30 @@ export default class ScenarioRepository {
             scenario = this.fetchEdges(scenario);
 
             return scenario;
+        })
+    }
+
+    changeState(scenario, state) {
+        scenario.state = state;
+
+        this.scenarioValidator.validate();
+    }
+
+    hideAllScenarios() {
+        app.scenarios.each((scenario) => {
+            scenario.state = ScenarioState.hidden;
+        });
+
+        this.scenarioValidator.validate();
+    }
+
+    find(id) {
+        return app.scenarios.firstWhere('id', id);
+    }
+
+    findMany(list) {
+        return collect().wrap(list).map((id) => {
+            return this.find(id);
         })
     }
 
@@ -40,16 +66,6 @@ export default class ScenarioRepository {
         return scenario;
     }
 
-    find(id) {
-        return app.scenarios.firstWhere('id', id);
-    }
-
-    findMany(list) {
-        return collect().wrap(list).map((id) => {
-            return this.find(id);
-        })
-    }
-
     get edges() {
         return this.edges2 || (this.edges2 = collect(scenarios.edges));
     }
@@ -64,5 +80,9 @@ export default class ScenarioRepository {
 
     get requires() {
         return this.requires2 || (this.requires2 = this.edges.where('type', 'requiredby'));
+    }
+
+    get scenarioValidator() {
+        return this.scenarioValidator2 || (this.scenarioValidator2 = new ScenarioValidator);
     }
 }

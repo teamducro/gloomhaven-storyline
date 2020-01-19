@@ -3,16 +3,6 @@ import {ScenarioState} from "../models/ScenarioState";
 
 export default class ScenarioValidator {
 
-    constructor() {
-        this.scenarioRepository = new ScenarioRepository();
-    }
-
-    changeState(scenario, state) {
-        scenario.state = state;
-
-        this.validate();
-    }
-
     validate() {
         [1, 2].forEach(() => {
             app.scenarios.each((scenario) => {
@@ -83,5 +73,9 @@ export default class ScenarioValidator {
 
     requiredStates(scenario) {
         return this.scenarioRepository.findMany(scenario.required_by).pluck('state', 'state');
+    }
+
+    get scenarioRepository() {
+        return this.scenarioRepository2 || (this.scenarioRepository2 = new ScenarioRepository);
     }
 }
