@@ -26,9 +26,9 @@ export default class ScenarioRepository {
             });
 
         scenario.blocked_by = this.blocks
-            .where('source', scenario.id)
+            .where('target', scenario.id)
             .map((edge) => {
-                return edge.target;
+                return edge.source;
             });
 
         scenario.required_by = this.requires

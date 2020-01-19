@@ -18,7 +18,7 @@ export default class ScenarioValidator {
             this.checkHidden(scenario);
             this.checkBlocked(scenario);
             this.checkRequired(scenario);
-        })
+        });
     }
 
     checkHidden(scenario) {
@@ -41,10 +41,6 @@ export default class ScenarioValidator {
             return;
         }
 
-        if (scenario.id === 8) {
-            console.log(scenario);
-        }
-
         let blocks = this.scenarioRepository.findMany(scenario.blocked_by);
         let states = blocks.pluck('state', 'state');
 
@@ -54,7 +50,11 @@ export default class ScenarioValidator {
             }
         } else {
             if (states.has(ScenarioState.complete) && !scenario.isComplete()) {
-                scenario.state = ScenarioState.blocked;
+                let linked = this.scenarioRepository.findMany(scenario.linked_from);
+                let states = linked.pluck('state', 'state');
+                if (states.has(ScenarioState.complete)) {
+                    scenario.state = ScenarioState.blocked;
+                }
             }
         }
     }

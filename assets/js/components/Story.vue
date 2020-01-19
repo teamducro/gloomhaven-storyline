@@ -36,6 +36,12 @@
                             $node.show();
                             $node.attr('stroke-width', scenario.isComplete() ? 2 : 1);
 
+                            if (scenario.isBlocked()) {
+                                $node.find('.blocked').show();
+                            } else {
+                                $node.find('.blocked').hide();
+                            }
+
                             if (scenario.isComplete()) {
                                 $edges.show();
                             }
