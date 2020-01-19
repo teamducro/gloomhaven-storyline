@@ -4,7 +4,7 @@
             <span class="mdc-button__label">Reset</span>
         </button>
 
-        <modal ref="confirmReset" title="Remove">
+        <modal ref="modal" title="Remove">
             <template v-slot:content>
                 <p>Are you sure you want to remove scenario data?</p>
             </template>
@@ -36,7 +36,7 @@
         },
         methods: {
             open() {
-                this.$refs['confirmReset'].open();
+                this.$refs['modal'].open();
             },
             resetStates() {
                 this.scenarioRepository.hideAllScenarios();

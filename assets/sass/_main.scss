@@ -16,3 +16,7 @@ html, body {
         @apply underline;
     }
 }
+
+button:focus {
+    outline: none;
+}

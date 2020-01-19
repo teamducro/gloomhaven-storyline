@@ -6,7 +6,7 @@
                    :id="id"
                    :name="group"
                    :checked="isChecked"
-                   :disabled="isDisabled"
+                   :disabled="disabled"
                    @change="changed">
             <div class="mdc-radio__background">
                 <div class="mdc-radio__outer-circle"></div>
@@ -14,22 +14,38 @@
             </div>
             <div class="mdc-radio__ripple"></div>
         </div>
-        <label :for="id" :class="{'text-gray-600': isDisabled}">{{ label }}</label>
+        <label :for="id" :class="{'text-gray-600': disabled}">{{ label }}</label>
     </div>
 </template>
 
 <script>
     export default {
-        props: ['id', 'group', 'label', 'checked', 'disabled'],
+        props: {
+            id: {
+                type: String
+            },
+            group: {
+                type: String
+            },
+            label: {
+                type: String
+            },
+            checked: {
+                type: Boolean,
+                default: false
+            },
+            disabled: {
+                type: Boolean,
+                default: false
+            }
+        },
         data() {
             return {
-                'isChecked': false,
-                'isDisabled': false
+                'isChecked': false
             }
         },
         mounted() {
-            this.isChecked = this.checked || false;
-            this.isDisabled = this.disabled || false;
+            this.isChecked = this.checked;
         },
         methods: {
             changed() {

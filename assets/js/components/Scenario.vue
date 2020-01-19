@@ -1,68 +1,80 @@
 <template>
-    <modal ref="modal">
-        <template v-slot:body v-if="scenario">
-            <span class="absolute right-0 top-0 p-2 rounded-bl-lg bg-gray-300 uppercase font-bold text-xs">{{ scenario.state }}</span>
-            <h2 class="mdc-dialog__title" id="my-dialog-title">
-                {{ scenario.name }}
-            </h2>
-            <div class="mdc-dialog__content" id="my-dialog-content">
+    <div>
+        <modal ref="modal">
+            <template v-slot:body v-if="scenario">
+                <h2 class="mdc-dialog__title" id="my-dialog-title">
+                    {{ scenario.name }}
+                    <button type="button" data-mdc-dialog-action="close"
+                            class="mdc-button absolute right-0 top-0 mt-4">
+                        <i class="material-icons">close</i>
+                    </button>
+                </h2>
 
-                <div class="mb-6">
-                    <radio id="incomplete" group="states" label="Incomplete"
-                           :checked="scenario.isIncomplete()"
-                           :disabled="scenario.isBlocked() || scenario.isRequired()"
-                           @changed="stateChanged"
-                    ></radio>
-                    <radio id="complete" group="states" label="Complete"
-                           :checked="scenario.isComplete()"
-                           :disabled="scenario.isBlocked() || scenario.isRequired()"
-                           @changed="stateChanged"
-                    ></radio>
-                </div>
+                <div class="mdc-dialog__content" id="my-dialog-content">
+                    <div class="mb-6 mt-4">
+                        <radio id="incomplete" group="states" label="Incomplete"
+                               :checked="scenario.isIncomplete()"
+                               :disabled="scenario.isBlocked() || scenario.isRequired()"
+                               @changed="stateChanged"
+                        ></radio>
+                        <radio id="complete" group="states" label="Complete"
+                               :checked="scenario.isComplete()"
+                               :disabled="scenario.isBlocked() || scenario.isRequired()"
+                               @changed="stateChanged"
+                        ></radio>
+                    </div>
 
-                <div v-if="scenario.isBlocked()" class="mb-6">
-                    This scenario is blocked by:
-                    <span v-if="blockedScenarios.isEmpty()">???</span>
-                    <a v-else v-for="blockedScenario in blockedScenarios"
-                       role="button" class="link scenarios-links"
-                       @click="open(blockedScenario.id)"
-                       v-text="blockedScenario.name">
-                    </a>
-                </div>
+                    <div v-if="scenario.isBlocked()" class="mb-6">
+                        This scenario is blocked by:
+                        <span v-if="blockedScenarios.isEmpty()">???</span>
+                        <a v-else v-for="blockedScenario in blockedScenarios"
+                           role="button" class="link scenarios-links"
+                           @click="open(blockedScenario.id)"
+                           v-text="blockedScenario.name">
+                        </a>
+                    </div>
 
-                <div v-if="scenario.isRequired()" class="mb-6">
-                    This scenario requires:
-                    <span v-if="requiredScenarios.isEmpty()">???</span>
-                    <a v-else v-for="requiredScenario in requiredScenarios"
-                       role="button" class="link scenarios-links"
-                       @click="open(requiredScenario.id)"
-                       v-text="requiredScenario.name">
-                    </a>
-                </div>
+                    <div v-if="scenario.isRequired()" class="mb-6">
+                        This scenario requires:
+                        <span v-if="requiredScenarios.isEmpty()">???</span>
+                        <a v-else v-for="requiredScenario in requiredScenarios"
+                           role="button" class="link scenarios-links"
+                           @click="open(requiredScenario.id)"
+                           v-text="requiredScenario.name">
+                        </a>
+                    </div>
 
-                <div class="mb-6">
-                    <div class="mdc-text-field mdc-text-field--textarea w-full"
-                         ref="notes">
+                    <div class="mb-6">
+                        <div class="mdc-text-field mdc-text-field--textarea w-full"
+                             ref="notes">
                                 <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
                                           class="mdc-text-field__input" rows="8" cols="40"></textarea>
-                        <div class="mdc-notched-outline">
-                            <div class="mdc-notched-outline__leading"></div>
-                            <div class="mdc-notched-outline__notch">
-                                <label for="notes" class="mdc-floating-label">Notes</label>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="notes" class="mdc-floating-label">Notes</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
                             </div>
-                            <div class="mdc-notched-outline__trailing"></div>
                         </div>
                     </div>
-                </div>
 
-            </div>
-            <footer class="mdc-dialog__actions">
-                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
-                    <span class="mdc-button__label">Close</span>
-                </button>
-            </footer>
-        </template>
-    </modal>
+                    <div class="mb-6">
+                        <button class="mdc-button mdc-button--raised" @click="openPages()">
+                            <div class="mdc-button__ripple"></div>
+                            <i class="material-icons mdc-button__icon">menu_book</i>
+                            <span class="mdc-button__label">Pages</span>
+                        </button>
+                    </div>
+
+                </div>
+                <footer class="mdc-dialog__actions">
+
+                </footer>
+            </template>
+        </modal>
+        <pages v-if="scenario" ref="pages" :pages="scenario.pages"></pages>
+    </div>
 </template>
 
 <script>
@@ -101,6 +113,9 @@
             },
             noteChanged() {
                 this.scenario.store();
+            },
+            openPages() {
+                this.$refs['pages'].open();
             },
             open(id) {
                 this.scenario = null;

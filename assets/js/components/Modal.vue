@@ -3,11 +3,16 @@
         <div class="mdc-dialog__container">
             <div class="mdc-dialog__surface relative">
                 <slot name="body">
-                    <h2 class="mdc-dialog__title">{{ title }}</h2>
+                    <h2 class="mdc-dialog__title">{{ title }}
+                        <button v-if="closeButton" type="button" data-mdc-dialog-action="close"
+                                class="mdc-button absolute right-0 top-0 mt-4">
+                            <i class="material-icons">close</i>
+                        </button>
+                    </h2>
                     <div class="mdc-dialog__content">
                         <slot name="content">{{ content }}</slot>
                     </div>
-                    <footer class="mdc-dialog__actions">
+                    <footer v-if="$slots.buttons" class="mdc-dialog__actions">
                         <slot name="buttons"></slot>
                     </footer>
                 </slot>
@@ -21,7 +26,18 @@
     import {MDCDialog} from '@material/dialog';
 
     export default {
-        props: ['title', 'content'],
+        props: {
+            title: {
+                type: String
+            },
+            content: {
+                type: String
+            },
+            closeButton: {
+                type: Boolean,
+                default: true
+            }
+        },
         data() {
             return {
                 modal: null
