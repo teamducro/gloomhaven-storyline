@@ -11,9 +11,11 @@
                         <div class="mb-8">
                             <radio id="incomplete" group="states" label="Incomplete"
                                    :checked="scenario.isIncomplete()"
+                                   :disabled="scenario.isBlocked() || scenario.isRequired()"
                                    @changed="stateChanged"></radio>
                             <radio id="complete" group="states" label="Complete"
                                    :checked="scenario.isComplete()"
+                                   :disabled="scenario.isBlocked() || scenario.isRequired()"
                                    @changed="stateChanged"></radio>
                         </div>
 

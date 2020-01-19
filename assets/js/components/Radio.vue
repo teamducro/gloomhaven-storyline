@@ -6,6 +6,7 @@
                    :id="id"
                    :name="group"
                    :checked="isChecked"
+                   :disabled="isDisabled"
                    @change="changed">
             <div class="mdc-radio__background">
                 <div class="mdc-radio__outer-circle"></div>
@@ -19,14 +20,16 @@
 
 <script>
     export default {
-        props: ['id', 'group', 'label', 'checked'],
+        props: ['id', 'group', 'label', 'checked', 'disabled'],
         data() {
             return {
-                'isChecked': false
+                'isChecked': false,
+                'isDisabled': false
             }
         },
         mounted() {
             this.isChecked = this.checked || false;
+            this.isDisabled = this.disabled || false;
         },
         methods: {
             changed() {
