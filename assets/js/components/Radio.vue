@@ -14,7 +14,7 @@
             </div>
             <div class="mdc-radio__ripple"></div>
         </div>
-        <label :for="id">{{ label }}</label>
+        <label :for="id" :class="{'text-gray-600': isDisabled}">{{ label }}</label>
     </div>
 </template>
 

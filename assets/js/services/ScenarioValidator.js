@@ -14,10 +14,12 @@ export default class ScenarioValidator {
     }
 
     validate() {
-        app.scenarios.each((scenario) => {
-            this.checkHidden(scenario);
-            this.checkBlocked(scenario);
-            this.checkRequired(scenario);
+        [1, 2].forEach(() => {
+            app.scenarios.each((scenario) => {
+                this.checkHidden(scenario);
+                this.checkBlocked(scenario);
+                this.checkRequired(scenario);
+            });
         });
     }
 

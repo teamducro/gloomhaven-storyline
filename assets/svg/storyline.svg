@@ -157,6 +157,7 @@
     <g id="node10" data-id="10" class="scenario">
         <circle cx="80.53818752" cy="133.7509186" r="10.8" class="node"/>
         <text x="64.71818" y="129.43636">10</text>
+        <text x="67" y="129.43636" class="blocked">×</text>
     </g>
     <g id="edge19-27" class="edge edge19">
         <path class="line" d="M 35.31 105.5 L 35.99 78.37 "/>
@@ -204,6 +205,10 @@
         <circle cx="183.395466" cy="456.2768497" r="10.8" class="node"/>
         <text x="167.54819" y="452.3082">20</text>
         <text x="167.54819" y="452.3082" class="required">*</text>
+    </g>
+    <g id="edge20-18" class="edge edge20">
+        <path class="line" d="M 330 635 L 330 440 L 265 440 L 265 415.37 "/>
+        <path class="arrow" d="M 265 410.12 L 268.5 417.12 L 265 415.37 L 261.5 417.12 L 265 410.12 Z "/>
     </g>
     <g id="edge11-18" class="edge edge11">
         <path class="line" d="M 294 789 L 330 789 L 330 440 L 265 440 L 265 415.37 "/>

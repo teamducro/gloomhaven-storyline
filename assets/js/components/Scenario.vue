@@ -1,14 +1,15 @@
 <template>
     <div class="mdc-dialog" ref="modal" aria-modal="true">
         <div class="mdc-dialog__container">
-            <div class="mdc-dialog__surface">
+            <div class="mdc-dialog__surface relative">
                 <template v-if="scenario">
+                    <span class="absolute right-0 top-0 p-2 rounded-bl-lg bg-gray-300 uppercase font-bold text-xs">{{ scenario.state }}</span>
                     <h2 class="mdc-dialog__title" id="my-dialog-title">
-                        {{ scenario.name }} | {{ scenario.state }}
+                        {{ scenario.name }}
                     </h2>
                     <div class="mdc-dialog__content" id="my-dialog-content">
 
-                        <div class="mb-8">
+                        <div class="mb-6">
                             <radio id="incomplete" group="states" label="Incomplete"
                                    :checked="scenario.isIncomplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
@@ -19,7 +20,27 @@
                                    @changed="stateChanged"></radio>
                         </div>
 
-                        <div class="mb-8">
+                        <div v-if="scenario.isBlocked()" class="mb-6">
+                            This scenario is blocked by:
+                            <span v-if="blockedScenarios.isEmpty()">???</span>
+                            <a v-else v-for="blockedScenario in blockedScenarios"
+                               role="button" class="link scenarios-links"
+                               @click="open(blockedScenario.id)"
+                               v-text="blockedScenario.name">
+                            </a>
+                        </div>
+
+                        <div v-if="scenario.isRequired()" class="mb-6">
+                            This scenario requires:
+                            <span v-if="requiredScenarios.isEmpty()">???</span>
+                            <a v-else v-for="requiredScenario in requiredScenarios"
+                               role="button" class="link scenarios-links"
+                               @click="open(requiredScenario.id)"
+                               v-text="requiredScenario.name">
+                            </a>
+                        </div>
+
+                        <div class="mb-6">
                             <div class="mdc-text-field mdc-text-field--textarea w-full"
                                  ref="notes">
                                 <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
@@ -52,6 +73,7 @@
     import ScenarioRepository from "../repositories/ScenarioRepository";
     import {MDCTextField} from "@material/textfield/component";
     import ScenarioValidator from "../services/ScenarioValidator";
+    import {ScenarioState} from "../models/ScenarioState";
 
     export default {
         data() {
@@ -69,6 +91,16 @@
             });
 
             this.modal = new MDCDialog(this.$refs['modal']);
+        },
+        computed: {
+            blockedScenarios() {
+                return this.scenarioRepository.findMany(this.scenario.blocked_by)
+                    .where('state', ScenarioState.complete);
+            },
+            requiredScenarios() {
+                return this.scenarioRepository.findMany(this.scenario.required_by)
+                    .where('state', ScenarioState.incomplete);
+            }
         },
         methods: {
             stateChanged(state) {
@@ -93,9 +125,15 @@
     }
 </script>
 
-<style>
+<style lang="scss">
     .mdc-notched-outline__notch {
         border-right: none;
         border-left: none;
+    }
+
+    .scenarios-links + .scenarios-links {
+        &:before {
+            content: '/ ';
+        }
     }
 </style>

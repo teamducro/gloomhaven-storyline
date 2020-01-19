@@ -6,3 +6,13 @@ html, body {
     height: 100vh;
     margin: 0;
 }
+
+.mdc-dialog .mdc-dialog__content {
+    @apply text-gray-900;
+}
+
+.link {
+    &:hover {
+        @apply underline;
+    }
+}
