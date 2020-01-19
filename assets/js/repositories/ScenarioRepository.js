@@ -1,10 +1,8 @@
 import scenarios from '../scenarios.json';
 import Scenario from "../models/Scenario";
-import Edge from "../models/Edge";
-
-let collect = require('collect.js');
 
 export default class ScenarioRepository {
+
     fetch() {
         return collect(scenarios.scenarios).map((scenario) => {
             scenario = new Scenario(scenario);
@@ -15,14 +13,56 @@ export default class ScenarioRepository {
     }
 
     fetchEdges(scenario) {
-        scenario.edges = collect(scenarios.edges).where('source', scenario.id).map((edge) => {
-            return new Edge(edge);
-        });
+        scenario.links_to = this.links
+            .where('source', scenario.id)
+            .map((edge) => {
+                return edge.target;
+            });
+
+        scenario.linked_from = this.links
+            .where('target', scenario.id)
+            .map((edge) => {
+                return edge.source;
+            });
+
+        scenario.blocked_by = this.blocks
+            .where('source', scenario.id)
+            .map((edge) => {
+                return edge.target;
+            });
+
+        scenario.required_by = this.requires
+            .where('source', scenario.id)
+            .map((edge) => {
+                return edge.target;
+            });
 
         return scenario;
     }
 
     find(id) {
         return app.scenarios.firstWhere('id', id);
+    }
+
+    findMany(list) {
+        return collect().wrap(list).map((id) => {
+            return this.find(id);
+        })
+    }
+
+    get edges() {
+        return this.edges2 || (this.edges2 = collect(scenarios.edges));
+    }
+
+    get links() {
+        return this.links2 || (this.links2 = this.edges.whereIn('type', ['unlocks', 'linksto']));
+    }
+
+    get blocks() {
+        return this.blocks2 || (this.blocks2 = this.edges.where('type', 'blocks'));
+    }
+
+    get requires() {
+        return this.requires2 || (this.requires2 = this.edges.where('type', 'requires'));
     }
 }

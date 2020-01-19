@@ -1,30 +1,56 @@
+import {ScenarioState} from "./ScenarioState";
+
 export default class Scenario {
 
     constructor(data) {
         this.id = data.id;
         this.name = data.name;
         this.pages = data.pages;
-        this.status = this.id === 1 ? "incomplete" : "hidden";
+        this.state2 = ScenarioState.hidden;
         this.notes = "";
-        this.edges = null;
+        this.links_to = null;
+        this.linked_from = null;
+        this.blocked_by = null;
+        this.required_by = null;
         this.read();
     }
 
     isHidden() {
-        return this.status === 'hidden'
+        return this.state === ScenarioState.hidden;
+    }
+
+    isVisible() {
+        return this.state !== ScenarioState.hidden;
     }
 
     isComplete() {
-        return this.status === 'complete'
+        return this.state === ScenarioState.complete;
     }
 
     isIncomplete() {
-        return this.status === 'incomplete'
+        return this.state === ScenarioState.incomplete;
+    }
+
+    isBlocked() {
+        return this.state === ScenarioState.blocked;
+    }
+
+    isRequired() {
+        return this.state === ScenarioState.required;
+    }
+
+    set state(state) {
+        this.state2 = state;
+        this.store();
+    }
+
+    get state() {
+        return this.state2;
     }
 
     store() {
         window.localStorage.setItem(this.key(), JSON.stringify({
-            "status": this.status,
+            "state": this.state,
             "notes": this.notes
         }));
     }
@@ -32,7 +58,7 @@ export default class Scenario {
     read() {
         let scenario = JSON.parse(window.localStorage.getItem(this.key()));
         if (scenario) {
-            this.status = scenario.status;
+            this.state2 = scenario.state;
             this.notes = scenario.notes;
         }
     }

@@ -4,14 +4,11 @@
             <div class="mdc-dialog__surface">
                 <template v-if="scenario">
                     <h2 class="mdc-dialog__title" id="my-dialog-title">
-                        {{ scenario.name }}
+                        {{ scenario.name }} | {{ scenario.state }}
                     </h2>
                     <div class="mdc-dialog__content" id="my-dialog-content">
 
                         <div class="mb-8">
-                            <radio id="hidden" group="states" label="Hidden"
-                                   :checked="scenario.isHidden()"
-                                   @changed="stateChanged"></radio>
                             <radio id="incomplete" group="states" label="Incomplete"
                                    :checked="scenario.isIncomplete()"
                                    @changed="stateChanged"></radio>
@@ -52,6 +49,7 @@
     import {MDCDialog} from '@material/dialog';
     import ScenarioRepository from "../repositories/ScenarioRepository";
     import {MDCTextField} from "@material/textfield/component";
+    import ScenarioValidator from "../services/ScenarioValidator";
 
     export default {
         data() {
@@ -59,7 +57,8 @@
                 scenario: null,
                 modal: null,
                 notes: null,
-                scenarioRepository: new ScenarioRepository()
+                scenarioRepository: new ScenarioRepository(),
+                scenarioValidator: new ScenarioValidator()
             }
         },
         mounted() {
@@ -71,16 +70,7 @@
         },
         methods: {
             stateChanged(state) {
-                this.scenario.status = state;
-                this.scenario.store();
-
-                if (this.scenario.isComplete()) {
-                    this.scenario.edges.whereIn('type', ['unlocks', 'linksto']).each(edge => {
-                        let linkedScenario = this.scenarioRepository.find(edge.target);
-                        linkedScenario.status = 'incomplete';
-                        linkedScenario.store();
-                    });
-                }
+                this.scenarioValidator.changeState(this.scenario, state);
 
                 window.bus.$emit('scenarios-updated');
             },
