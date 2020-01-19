@@ -34,6 +34,7 @@
                             $node.hide();
                         } else {
                             $node.show();
+                            $node.attr('stroke-width', scenario.isComplete() ? 2 : 1);
 
                             if (scenario.isComplete()) {
                                 $edges.show();
