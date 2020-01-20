@@ -118,7 +118,7 @@
             },
             prevScenarios() {
                 return this.scenarioRepository.findMany(this.scenario.linked_from)
-                    .where('state', '!=', ScenarioState.hidden);
+                    .where('state', ScenarioState.complete);
             },
             nextScenarios() {
                 if (this.scenario.isComplete()) {
