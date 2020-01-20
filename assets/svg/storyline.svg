@@ -194,7 +194,7 @@
         <text x="119.369098" y="394.7809">13</text>
     </g>
     <g id="edge20-28" class="edge edge20">
-        <path class="line" d="M 225 650 L 215.51 669.37 "/>
+        <path class="line" d="M 230 645 L 215.51 669.37 "/>
         <path class="arrow" d="M 213.2 674.08 L 213.14 666.25 L 215.51 669.37 L 219.42 669.33 L 213.2 674.08 Z "/>
     </g>
     <g id="edge20-16" class="edge edge20">
@@ -263,7 +263,7 @@
         <text x="246.6482" y="279.0073" class="required">*</text>
     </g>
     <g id="edge26-22" class="edge edge26">
-        <path class="line" d="M 184 293.87 L 158.36 268.86 "/>
+        <path class="line" d="M 188 297.87 L 158.36 268.86 "/>
         <path class="arrow" d="M 154.6 265.19 L 162.05 267.57 L 158.36 268.86 L 157.17 272.59 L 154.6 265.19 Z "/>
     </g>
     <g id="node26" data-id="26" class="scenario">
