@@ -5,10 +5,10 @@
                 <img :src="currentSrc" :alt="'Page #' + currentPage"/>
             </template>
             <template v-if="hasMultiplePages" v-slot:buttons>
-                <button type="button" class="mdc-button mdc-dialog__button" @click="prev">
+                <button type="button" class="mdc-button mdc-dialog__button" @click="prev" :disabled="hasPrev">
                     <i class="material-icons">navigate_before</i>
                 </button>
-                <button type="button" class="mdc-button mdc-dialog__button" @click="next">
+                <button type="button" class="mdc-button mdc-dialog__button" @click="next" :disabled="hasNext">
                     <i class="material-icons">navigate_next</i>
                 </button>
             </template>
@@ -32,7 +32,13 @@
                 return 'scenarios/' + this.currentPage + '.jpg';
             },
             hasMultiplePages() {
-                return this.pages.length > 1
+                return this.pages.length > 1;
+            },
+            hasPrev() {
+                return this.current <= 0;
+            },
+            hasNext() {
+                return this.current >= this.pages.length - 1;
             }
         },
         methods: {
