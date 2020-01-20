@@ -6,7 +6,7 @@
         circle.node { fill: #FFF; stroke:#000; transform: translate(-10.8px, 0); }
         circle.node + text { font-size: 11px; transform: translate(-1px, 9px); }
         circle.node ~ .blocked { font-size: 23px; transform: translate(-4px, 13px); }
-        circle.node ~ .required { font-size: 21px; transform: translate(-5px, 12px); }
+        circle.node ~ .required { font-size: 21px; transform: translate(-6px, 2px); }
 
         .line { fill: none; }
         .arrow { fill: #000; }
