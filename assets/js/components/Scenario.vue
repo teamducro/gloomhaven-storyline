@@ -61,15 +61,27 @@
 
                     <div class="mb-6">
                         <button class="mdc-button mdc-button--raised" @click="openPages()">
-                            <div class="mdc-button__ripple"></div>
                             <i class="material-icons mdc-button__icon">menu_book</i>
                             <span class="mdc-button__label">Pages</span>
                         </button>
                     </div>
 
                 </div>
-                <footer class="mdc-dialog__actions">
-
+                <footer class="mdc-dialog__actions flex justify-between">
+                    <div>
+                        <button v-for="scenario in prevScenarios" type="button" class="mdc-button"
+                                @click="open(scenario.id)">
+                            <i class="material-icons">navigate_before</i>
+                            <span class="mdc-button__label">{{ scenario.id }}</span>
+                        </button>
+                    </div>
+                    <div>
+                        <button v-for="scenario in nextScenarios" type="button" class="mdc-button"
+                                @click="open(scenario.id)">
+                            <span class="mdc-button__label">{{ scenario.id }}</span>
+                            <i class="material-icons">navigate_next</i>
+                        </button>
+                    </div>
                 </footer>
             </template>
         </modal>
@@ -103,6 +115,18 @@
             requiredScenarios() {
                 return this.scenarioRepository.findMany(this.scenario.required_by)
                     .where('state', ScenarioState.incomplete);
+            },
+            prevScenarios() {
+                return this.scenarioRepository.findMany(this.scenario.linked_from)
+                    .where('state', '!=', ScenarioState.hidden);
+            },
+            nextScenarios() {
+                if (this.scenario.isComplete()) {
+                    return this.scenarioRepository.findMany(this.scenario.links_to)
+                        .where('state', '!=', ScenarioState.hidden);
+                } else {
+                    return null;
+                }
             }
         },
         methods: {

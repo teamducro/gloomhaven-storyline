@@ -6,10 +6,10 @@
             </template>
             <template v-if="hasMultiplePages" v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" @click="prev">
-                    <span class="mdc-button__label"><i class="material-icons">navigate_before</i></span>
+                    <i class="material-icons">navigate_before</i>
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" @click="next">
-                    <span class="mdc-button__label"><i class="material-icons">navigate_next</i></span>
+                    <i class="material-icons">navigate_next</i>
                 </button>
             </template>
         </modal>
