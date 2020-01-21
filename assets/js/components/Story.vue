@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    import svgPanZoom from 'svg-pan-zoom'
+    import zoom from "../services/Zoom";
 
     export default {
         data() {
@@ -22,7 +22,7 @@
                 this.render();
             });
 
-            let instance = svgPanZoom('#storyline');
+            zoom('#storyline');
 
             $('.scenario').click((e) => {
                 this.open($(e.currentTarget).data('id'));
