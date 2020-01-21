@@ -62,10 +62,8 @@ export default function zoom(selector) {
     };
 
     return svgPanZoom(selector, {
-        zoomEnabled: true,
-        controlIconsEnabled: true,
-        fit: 1,
-        center: 1,
+        minZoom: 1,
+        maxZoom: 3,
         customEventsHandler: eventsHandler
     });
 
