@@ -12,7 +12,13 @@
 
         classes(classes) {
             if (classes) {
-                this.svg.classList.add(classes);
+                if (Array.isArray(classes)) {
+                    classes.forEach((c) => {
+                        this.svg.classList.add(c);
+                    });
+                } else {
+                    this.svg.classList.add(classes);
+                }
             }
 
             return this;
@@ -34,13 +40,21 @@
             return this;
         }
 
+        id(id) {
+            if (id) {
+                this.svg.setAttribute('id', id);
+            }
+
+            return this;
+        }
+
         toString() {
             return this.svg.outerHTML;
         }
     }
 
     export default {
-        props: ['name', 'classes', 'width', 'height'],
+        props: ['name', 'classes', 'width', 'height', 'id'],
 
         render(h) {
             return h('div', {
@@ -49,6 +63,7 @@
                         .classes(this.classes)
                         .width(this.width)
                         .height(this.height)
+                        .id(this.id)
                 }
             });
         }

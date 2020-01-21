@@ -1,11 +1,17 @@
 <template>
-    <div>
-        <inline-svg name="storyline" classes="h-screen"/>
+    <div class="h-screen w-screen">
+        <inline-svg
+                name="storyline"
+                id="storyline"
+                :classes="['h-screen', 'w-screen']"
+        />
         <reset></reset>
     </div>
 </template>
 
 <script>
+    import svgPanZoom from 'svg-pan-zoom'
+
     export default {
         data() {
             return {}
@@ -15,6 +21,8 @@
             window.bus.$on('scenarios-updated', () => {
                 this.render();
             });
+
+            let instance = svgPanZoom('#storyline');
 
             $('.scenario').click((e) => {
                 this.open($(e.currentTarget).data('id'));
