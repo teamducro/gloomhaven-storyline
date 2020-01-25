@@ -2,7 +2,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                modal: 'rgba(0,0,0,.3)'
+                complete: '#3B8585',
+                incomplete: '#A13C2F'
             }
         }
     },

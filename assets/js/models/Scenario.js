@@ -6,6 +6,7 @@ export default class Scenario {
         this.id = data.id;
         this.name = data.name;
         this.pages = data.pages;
+        this.requirments = data.requirments;
         this.state2 = ScenarioState.hidden;
         this.notes = "";
         this.links_to = null;

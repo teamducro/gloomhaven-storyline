@@ -66,20 +66,16 @@ export default class ScenarioRepository {
         return scenario;
     }
 
-    get edges() {
-        return this.edges2 || (this.edges2 = collect(scenarios.edges));
-    }
-
     get links() {
-        return this.links2 || (this.links2 = this.edges.whereIn('type', ['unlocks', 'linksto']));
+        return this.links2 || (this.links2 = collect(scenarios.links));
     }
 
     get blocks() {
-        return this.blocks2 || (this.blocks2 = this.edges.where('type', 'blocks'));
+        return this.blocks2 || (this.blocks2 = collect(scenarios.blocks));
     }
 
     get requires() {
-        return this.requires2 || (this.requires2 = this.edges.where('type', 'requiredby'));
+        return this.requires2 || (this.requires2 = collect(scenarios.requires));
     }
 
     get scenarioValidator() {
