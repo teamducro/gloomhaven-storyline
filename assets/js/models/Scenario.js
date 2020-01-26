@@ -8,14 +8,16 @@ export default class Scenario {
         this.pages = data.pages;
         this.requirments = data.requirments;
         this.chapter_id = data.chapter_id;
-        this.chapter_name = undefined;
-        this.choose = data.choose;
+        this.chapter_name = null;
+        this.choices = data.choices;
+        this.chosen2 = null;
+        this.hasChoices = typeof data.choices !== 'undefined';
         this.state2 = ScenarioState.hidden;
         this.notes = "";
-        this.links_to = undefined;
-        this.linked_from = undefined;
-        this.blocked_by = undefined;
-        this.required_by = undefined;
+        this.links_to = null;
+        this.linked_from = null;
+        this.blocked_by = null;
+        this.required_by = null;
         this.read();
     }
 
@@ -52,9 +54,19 @@ export default class Scenario {
         return this.state2;
     }
 
+    set chosen(chosen) {
+        this.chosen2 = chosen;
+        this.store();
+    }
+
+    get chosen() {
+        return this.chosen2;
+    }
+
     store() {
         window.localStorage.setItem(this.key(), JSON.stringify({
             "state": this.state,
+            "chosen": this.chosen,
             "notes": this.notes
         }));
     }
@@ -63,6 +75,7 @@ export default class Scenario {
         let scenario = JSON.parse(window.localStorage.getItem(this.key()));
         if (scenario) {
             this.state2 = scenario.state;
+            this.chosen2 = scenario.chosen;
             this.notes = scenario.notes;
         }
     }

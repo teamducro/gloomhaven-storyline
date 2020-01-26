@@ -66,7 +66,7 @@
                         }
 
                         if (scenario.isComplete()) {
-                            if (!scenario.choose) {
+                            if (!scenario.choices) {
                                 $edges.show();
                             } else {
                                 let chosenScenario = this.scenarioRepository.chosenScenario(scenario);

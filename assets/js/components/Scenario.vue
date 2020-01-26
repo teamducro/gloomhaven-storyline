@@ -89,8 +89,8 @@
         <pages v-if="scenario" ref="pages"
                :pages="scenario.pages"
         ></pages>
-        <choose v-if="scenario && scenario.choose" ref="choose"
-                :scenario-ids="scenario.choose"
+        <choose v-if="scenario && scenario.choices" ref="choose"
+                :scenario-ids="scenario.choices"
                 @scenario-chosen="scenarioChosen"
                 @closing="chooseModalClosing"
         ></choose>
@@ -140,7 +140,7 @@
         },
         methods: {
             stateChanged(state) {
-                if (state === ScenarioState.complete && this.scenario.choose) {
+                if (state === ScenarioState.complete && this.scenario.choices) {
                     this.$refs['choose'].open();
                 } else {
                     this.scenarioRepository.changeState(this.scenario, state);
@@ -152,8 +152,7 @@
                 this.scenario.store();
             },
             scenarioChosen(chosenScenario) {
-                this.scenarioRepository.changeState(this.scenario, ScenarioState.complete);
-                this.scenarioRepository.changeState(chosenScenario, ScenarioState.incomplete);
+                this.scenarioRepository.choose(this.scenario, chosenScenario);
 
                 window.bus.$emit('scenarios-updated');
             },
