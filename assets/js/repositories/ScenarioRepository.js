@@ -23,6 +23,10 @@ export default class ScenarioRepository {
         this.scenarioValidator.validate();
     }
 
+    chosenScenario(scenario) {
+        return this.findMany(scenario.choose).firstWhere('state', '!=', ScenarioState.hidden);
+    }
+
     hideAllScenarios() {
         app.scenarios.each((scenario) => {
             scenario.state = ScenarioState.hidden;

@@ -9,6 +9,7 @@ export default class Scenario {
         this.requirments = data.requirments;
         this.chapter_id = data.chapter_id;
         this.chapter_name = undefined;
+        this.choose = data.choose;
         this.state2 = ScenarioState.hidden;
         this.notes = "";
         this.links_to = undefined;

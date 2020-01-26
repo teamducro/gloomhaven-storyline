@@ -15,9 +15,10 @@ export default class ScenarioValidator {
 
     checkHidden(scenario) {
         let states = this.linkedStates(scenario);
+        let chosen = this.linkedScenarios(scenario).pluck('choose').filter().count();
 
         if (scenario.isHidden()) {
-            if (states.has(ScenarioState.complete) || scenario.id === 1) {
+            if ((states.has(ScenarioState.complete) || scenario.id === 1) && !chosen) {
                 scenario.state = ScenarioState.incomplete;
             }
         } else {
@@ -63,8 +64,12 @@ export default class ScenarioValidator {
         }
     }
 
+    linkedScenarios(scenario) {
+        return this.scenarioRepository.findMany(scenario.linked_from);
+    }
+
     linkedStates(scenario) {
-        return this.scenarioRepository.findMany(scenario.linked_from).pluck('state', 'state');
+        return this.linkedScenarios(scenario).pluck('state', 'state');
     }
 
     blockedStates(scenario) {

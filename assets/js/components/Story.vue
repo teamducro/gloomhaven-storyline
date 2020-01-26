@@ -12,10 +12,13 @@
 <script>
     import zoom from "../services/Zoom";
     import {ScenarioState} from "../models/ScenarioState";
+    import ScenarioRepository from "../repositories/ScenarioRepository";
 
     export default {
         data() {
-            return {}
+            return {
+                scenarioRepository: new ScenarioRepository()
+            }
         },
         mounted() {
             this.render();
@@ -63,7 +66,14 @@
                         }
 
                         if (scenario.isComplete()) {
-                            $edges.show();
+                            if (!scenario.choose) {
+                                $edges.show();
+                            } else {
+                                let chosenScenario = this.scenarioRepository.chosenScenario(scenario);
+                                if (chosenScenario) {
+                                    $('#edge' + scenario.id + '-' + chosenScenario.id).show();
+                                }
+                            }
                         }
                     }
                 });

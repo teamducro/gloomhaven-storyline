@@ -16,11 +16,13 @@
                 <div class="mdc-dialog__content" id="my-dialog-content">
                     <div class="mb-6 mt-4">
                         <radio id="incomplete" group="states" label="Incomplete"
+                               :key="'incomplete-' + stateKey"
                                :checked="scenario.isIncomplete()"
                                :disabled="scenario.isBlocked() || scenario.isRequired()"
                                @changed="stateChanged"
                         ></radio>
                         <radio id="complete" group="states" label="Complete"
+                               :key="'complete-' + stateKey"
                                :checked="scenario.isComplete()"
                                :disabled="scenario.isBlocked() || scenario.isRequired()"
                                @changed="stateChanged"
@@ -84,7 +86,14 @@
                 </footer>
             </template>
         </modal>
-        <pages v-if="scenario" ref="pages" :pages="scenario.pages"></pages>
+        <pages v-if="scenario" ref="pages"
+               :pages="scenario.pages"
+        ></pages>
+        <choose v-if="scenario && scenario.choose" ref="choose"
+                :scenario-ids="scenario.choose"
+                @scenario-chosen="scenarioChosen"
+                @closing="chooseModalClosing"
+        ></choose>
     </div>
 </template>
 
@@ -98,6 +107,7 @@
             return {
                 scenario: null,
                 notes: null,
+                stateKey: 1,
                 scenarioRepository: new ScenarioRepository()
             }
         },
@@ -130,20 +140,38 @@
         },
         methods: {
             stateChanged(state) {
-                this.scenarioRepository.changeState(this.scenario, state);
+                if (state === ScenarioState.complete && this.scenario.choose) {
+                    this.$refs['choose'].open();
+                } else {
+                    this.scenarioRepository.changeState(this.scenario, state);
+                }
 
                 window.bus.$emit('scenarios-updated');
             },
             noteChanged() {
                 this.scenario.store();
             },
+            scenarioChosen(chosenScenario) {
+                this.scenarioRepository.changeState(this.scenario, ScenarioState.complete);
+                this.scenarioRepository.changeState(chosenScenario, ScenarioState.incomplete);
+
+                window.bus.$emit('scenarios-updated');
+            },
+            chooseModalClosing(action) {
+                if (action !== 'chosen') {
+                    this.rerenderStateSelection();
+                }
+            },
             openPages() {
                 this.$refs['pages'].open();
             },
+            rerenderStateSelection() {
+                this.stateKey++;
+            },
             open(id) {
-                this.scenario = null;
+                this.scenario = this.scenarioRepository.find(id);
+                this.rerenderStateSelection();
                 this.$nextTick(() => {
-                    this.scenario = this.scenarioRepository.find(id);
                     this.$refs['modal'].open();
                     this.$nextTick(() => {
                         new MDCTextField(this.$refs['notes']);
