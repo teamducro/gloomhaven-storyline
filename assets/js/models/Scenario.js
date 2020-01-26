@@ -7,12 +7,14 @@ export default class Scenario {
         this.name = data.name;
         this.pages = data.pages;
         this.requirments = data.requirments;
+        this.chapter_id = data.chapter_id;
+        this.chapter_name = undefined;
         this.state2 = ScenarioState.hidden;
         this.notes = "";
-        this.links_to = null;
-        this.linked_from = null;
-        this.blocked_by = null;
-        this.required_by = null;
+        this.links_to = undefined;
+        this.linked_from = undefined;
+        this.blocked_by = undefined;
+        this.required_by = undefined;
         this.read();
     }
 

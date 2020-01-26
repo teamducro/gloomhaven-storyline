@@ -6,7 +6,7 @@
             "pages": [
                 3
             ],
-            "requirments": ""
+            "chapter_id": 1
         },
         {
             "id": 2,
@@ -15,7 +15,8 @@
                 4,
                 5
             ],
-            "requirments": "First Steps (Party) COMPLETE"
+            "requirments": "First Steps (Party) COMPLETE",
+            "chapter_id": 1
         },
         {
             "id": 3,
@@ -24,7 +25,8 @@
                 5,
                 6
             ],
-            "requirments": "The Merchant Flees (Global) INCOMPLETE"
+            "requirments": "The Merchant Flees (Global) INCOMPLETE",
+            "chapter_id": 2
         },
         {
             "id": 4,
@@ -40,7 +42,7 @@
             "pages": [
                 8
             ],
-            "requirments": ""
+            "chapter_id": 3
         },
         {
             "id": 6,
@@ -49,7 +51,7 @@
                 9,
                 10
             ],
-            "requirments": ""
+            "chapter_id": 2
         },
         {
             "id": 7,
@@ -58,7 +60,8 @@
                 10,
                 11
             ],
-            "requirments": "The Power of Enhancement (Global) and The Merchant Flees (Global) COMPLETE"
+            "requirments": "The Power of Enhancement (Global) and The Merchant Flees (Global) COMPLETE",
+            "chapter_id": 2
         },
         {
             "id": 8,
@@ -66,7 +69,8 @@
             "pages": [
                 12
             ],
-            "requirments": "Jekserah’s Plans (Party) COMPLETE and The Dead Invade (Global) INCOMPLETE"
+            "requirments": "Jekserah’s Plans (Party) COMPLETE and The Dead Invade (Global) INCOMPLETE",
+            "chapter_id": 2
         },
         {
             "id": 9,
@@ -74,7 +78,8 @@
             "pages": [
                 13
             ],
-            "requirments": "The Merchant Flees (Global) INCOMPLETE"
+            "requirments": "The Merchant Flees (Global) INCOMPLETE",
+            "chapter_id": 2
         },
         {
             "id": 10,
@@ -82,7 +87,8 @@
             "pages": [
                 14
             ],
-            "requirments": "The Rift Neutralized (Global) INCOMPLETE"
+            "requirments": "The Rift Neutralized (Global) INCOMPLETE",
+            "chapter_id": 3
         },
         {
             "id": 11,
@@ -91,7 +97,8 @@
                 15,
                 16
             ],
-            "requirments": "End of the Invasion (Global) INCOMPLETE"
+            "requirments": "End of the Invasion (Global) INCOMPLETE",
+            "chapter_id": 2
         },
         {
             "id": 12,
@@ -100,7 +107,8 @@
                 16,
                 17
             ],
-            "requirments": "End of the Invasion (Global) INCOMPLETE"
+            "requirments": "End of the Invasion (Global) INCOMPLETE",
+            "chapter_id": 2
         },
         {
             "id": 13,
@@ -108,7 +116,7 @@
             "pages": [
                 18
             ],
-            "requirments": ""
+            "chapter_id": 2
         },
         {
             "id": 14,
@@ -126,7 +134,7 @@
                 20,
                 21
             ],
-            "requirments": ""
+            "chapter_id": 2
         },
         {
             "id": 16,
@@ -142,7 +150,7 @@
             "pages": [
                 23
             ],
-            "requirments": ""
+            "chapter_id": 2
         },
         {
             "id": 18,
@@ -150,7 +158,7 @@
             "pages": [
                 24
             ],
-            "requirments": ""
+            "chapter_id": 4
         },
         {
             "id": 19,
@@ -159,7 +167,8 @@
                 25,
                 26
             ],
-            "requirments": "The Power of Enhancement (Global) COMPLETE"
+            "requirments": "The Power of Enhancement (Global) COMPLETE",
+            "chapter_id": 3
         },
         {
             "id": 20,
@@ -168,7 +177,8 @@
                 26,
                 27
             ],
-            "requirments": "The Merchant Flees (Global) COMPLETE"
+            "requirments": "The Merchant Flees (Global) COMPLETE",
+            "chapter_id": 2
         },
         {
             "id": 21,
@@ -177,7 +187,8 @@
                 28,
                 29
             ],
-            "requirments": "The Rift Neutralized (Global) INCOMPLETE"
+            "requirments": "The Rift Neutralized (Global) INCOMPLETE",
+            "chapter_id": 3
         },
         {
             "id": 22,
@@ -195,7 +206,7 @@
                 31,
                 32
             ],
-            "requirments": ""
+            "chapter_id": 4
         },
         {
             "id": 24,
@@ -204,7 +215,7 @@
                 32,
                 33
             ],
-            "requirments": ""
+            "chapter_id": 10
         },
         {
             "id": 25,
@@ -213,7 +224,7 @@
                 34,
                 35
             ],
-            "requirments": ""
+            "chapter_id": 9
         },
         {
             "id": 26,
@@ -222,7 +233,8 @@
                 35,
                 36
             ],
-            "requirments": "Water-Breathing (Global) or Through the Ruins (Party) COMPLETE"
+            "requirments": "Water-Breathing (Global) or Through the Ruins (Party) COMPLETE",
+            "chapter_id": 4
         },
         {
             "id": 27,
@@ -230,7 +242,8 @@
             "pages": [
                 37
             ],
-            "requirments": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE"
+            "requirments": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
+            "chapter_id": 3
         },
         {
             "id": 28,
@@ -238,7 +251,8 @@
             "pages": [
                 38
             ],
-            "requirments": "Dark Bounty (Party) COMPLETE"
+            "requirments": "Dark Bounty (Party) COMPLETE",
+            "chapter_id": 2
         },
         {
             "id": 29,
@@ -246,7 +260,8 @@
             "pages": [
                 39
             ],
-            "requirments": "An Invitation (Party) COMPLETE"
+            "requirments": "An Invitation (Party) COMPLETE",
+            "chapter_id": 2
         },
         {
             "id": 30,
@@ -255,7 +270,8 @@
                 40,
                 41
             ],
-            "requirments": "The Voice’s Command (Party)"
+            "requirments": "The Voice’s Command (Party)",
+            "chapter_id": 10
         },
         {
             "id": 31,
@@ -272,7 +288,8 @@
             "pages": [
                 43
             ],
-            "requirments": "The Voice’s Command (Party) COMPLETE"
+            "requirments": "The Voice’s Command (Party) COMPLETE",
+            "chapter_id": 10
         },
         {
             "id": 33,
@@ -288,7 +305,8 @@
             "pages": [
                 45
             ],
-            "requirments": "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE"
+            "requirments": "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE",
+            "chapter_id": 9
         },
         {
             "id": 35,
@@ -297,7 +315,8 @@
                 46,
                 47
             ],
-            "requirments": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE"
+            "requirments": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
+            "chapter_id": 3
         },
         {
             "id": 36,
@@ -306,7 +325,8 @@
                 47,
                 48
             ],
-            "requirments": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE"
+            "requirments": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
+            "chapter_id": 3
         },
         {
             "id": 37,
@@ -314,7 +334,8 @@
             "pages": [
                 49
             ],
-            "requirments": "Water-Breathing (Global) COMPLETE"
+            "requirments": "Water-Breathing (Global) COMPLETE",
+            "chapter_id": 6
         },
         {
             "id": 38,
@@ -323,7 +344,7 @@
                 50,
                 51
             ],
-            "requirments": ""
+            "chapter_id": 7
         },
         {
             "id": 39,
@@ -332,7 +353,7 @@
                 51,
                 52
             ],
-            "requirments": ""
+            "chapter_id": 8
         },
         {
             "id": 40,
@@ -341,7 +362,8 @@
                 53,
                 54
             ],
-            "requirments": "The Voice’s Command (Party) and The Voice’s Treasure (Party) COMPLETE"
+            "requirments": "The Voice’s Command (Party) and The Voice’s Treasure (Party) COMPLETE",
+            "chapter_id": 10
         },
         {
             "id": 41,
@@ -350,7 +372,8 @@
                 54,
                 55
             ],
-            "requirments": "The Voice’s Command (Party) COMPLETE"
+            "requirments": "The Voice’s Command (Party) COMPLETE",
+            "chapter_id": 10
         },
         {
             "id": 42,
@@ -358,7 +381,8 @@
             "pages": [
                 56
             ],
-            "requirments": "The Scepter and the Voice (Party) COMPLETE and The Voice Freed (Global) INCOMPLETE"
+            "requirments": "The Scepter and the Voice (Party) COMPLETE and The Voice Freed (Global) INCOMPLETE",
+            "chapter_id": 10
         },
         {
             "id": 43,
@@ -376,7 +400,8 @@
                 58,
                 59
             ],
-            "requirments": "Redthorn’s Aid (Party) COMPLETE"
+            "requirments": "Redthorn’s Aid (Party) COMPLETE",
+            "chapter_id": 7
         },
         {
             "id": 45,
@@ -384,7 +409,8 @@
             "pages": [
                 60
             ],
-            "requirments": "City Rule: Demonic (Global) COMPLETE"
+            "requirments": "City Rule: Demonic (Global) COMPLETE",
+            "chapter_id": 5
         },
         {
             "id": 46,
@@ -392,7 +418,8 @@
             "pages": [
                 61
             ],
-            "requirments": "Across the Divide (Party) COMPLETE"
+            "requirments": "Across the Divide (Party) COMPLETE",
+            "chapter_id": 8
         },
         {
             "id": 47,
@@ -400,7 +427,8 @@
             "pages": [
                 62
             ],
-            "requirments": "Through the Trench (Party) COMPLETE"
+            "requirments": "Through the Trench (Party) COMPLETE",
+            "chapter_id": 6
         },
         {
             "id": 48,
@@ -408,7 +436,8 @@
             "pages": [
                 63
             ],
-            "requirments": "Redthorn’s Aid (Party) COMPLETE"
+            "requirments": "Redthorn’s Aid (Party) COMPLETE",
+            "chapter_id": 7
         },
         {
             "id": 49,
@@ -416,7 +445,8 @@
             "pages": [
                 64
             ],
-            "requirments": "City Rule: Demonic (Global) COMPLETE"
+            "requirments": "City Rule: Demonic (Global) COMPLETE",
+            "chapter_id": 5
         },
         {
             "id": 50,
@@ -425,7 +455,8 @@
                 65,
                 66
             ],
-            "requirments": "City Rule: Demonic (Global) COMPLETE and Annihilation of Order (Global) INCOMPLETE"
+            "requirments": "City Rule: Demonic (Global) COMPLETE and Annihilation of Order (Global) INCOMPLETE",
+            "chapter_id": 5
         },
         {
             "id": 51,
@@ -909,6 +940,48 @@
         {
             "source": 48,
             "target": 51
+        }
+    ],
+    "chapters": [
+        {
+            "id": 1,
+            "name": "Intro"
+        },
+        {
+            "id": 2,
+            "name": "The Merchant"
+        },
+        {
+            "id": 3,
+            "name": "Demon and Rift"
+        },
+        {
+            "id": 4,
+            "name": "Sewers"
+        },
+        {
+            "id": 5,
+            "name": "Rebellion Rises"
+        },
+        {
+            "id": 6,
+            "name": "Under Oceans"
+        },
+        {
+            "id": 7,
+            "name": "Through Jungles"
+        },
+        {
+            "id": 8,
+            "name": "Atop Mountains"
+        },
+        {
+            "id": 9,
+            "name": "Dragons"
+        },
+        {
+            "id": 10,
+            "name": "Voice"
         }
     ]
 }

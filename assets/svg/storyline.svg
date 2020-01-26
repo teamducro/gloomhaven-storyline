@@ -13,39 +13,58 @@
         .line, .arrow { transform: scale(.71909096,.71909096); stroke: #000; }
     </style>
 
-    <rect id="rect7997" width="92.707626" height="99.190681" x="252.83899" y="18.152542" rx="10" ry="10"
-          stroke="#d79b00" fill="#ffe6cc"/>
-    <rect id="rect7999" width="160.13135" height="151.70338" x="5.8347459" y="7.1313553" rx="10" ry="10"
-          stroke="#d79b00" fill="#ffe6cc"/>
-    <rect id="rect8001" width="93.355934" height="51.216106" x="285.25424" y="129.01271" rx="10" ry="10"
-          stroke="#d79b00" fill="#ffe6cc"/>
-    <rect id="rect8005" width="91.411026" height="71.31356" x="286.55087" y="186.71187" rx="10" ry="10" stroke="#d79b00"
-          fill="#ffe6cc"/>
-    <rect id="rect8007" width="86.872887" height="103.72881" x="122.52966" y="201.62288" rx="10" ry="10"
-          stroke="#d79b00" fill="#ffe6cc"/>
-    <rect id="rect8009" width="40.84322" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#d79b00"
-          fill="#ffe6cc"/>
-    <rect id="rect8011" width="94.652542" height="52.512714" x="283.30933" y="272.28815" rx="10" ry="10"
-          stroke="#d79b00" fill="#ffe6cc"/>
-    <rect id="rect8013" width="123.17797" height="43.43644" x="251.54237" y="381.2034" rx="10" ry="10" stroke="#d79b00"
-          fill="#ffe6cc"/>
-    <rect id="rect8015" width="215.8856" height="263.21188" x="7.7796607" y="327.39407" rx="10" ry="10" stroke="#d79b00"
-          fill="#ffe6cc"/>
-    <rect id="rect8017" width="129.01271" height="114.10169" x="250.89407" y="477.15253" rx="10" ry="10"
-          stroke="#d79b00" fill="#ffe6cc"/>
-
-    <text class="label" x="268.94" y="112">Rebellion Rises</text>
-    <text class="label" x="134.40273" y="300">Sewers</text>
-    <text class="label" x="334.37727" y="420">Dragons</text>
-    <text class="label" x="303.4564" y="178">Under Oceans</text>
-    <text class="label" x="308.49" y="320">Atop Mountains</text>
-    <text class="label" x="295" y="203.71637">Through</text>
-    <text class="label" x="295" y="216.71637">Jungles</text>
-    <text class="label" x="20" y="585">The Merchant</text>
-    <text class="label" x="115.773639" y="515">Awaits</text>
-    <text class="label" x="30" y="280">Intro</text>
-    <text class="label" x="9.348182" y="22">Demon and Rift</text>
-    <text class="label" x="263.83911" y="585">Voice</text>
+    <g id="chapter1" class="chapter">
+        <rect width="40.84322" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#d79b00"
+              fill="#ffe6cc"/>
+        <text class="label" x="30" y="280">Intro</text>
+    </g>
+    <g id="chapter2" class="chapter">
+        <rect width="215.8856" height="263.21188" x="7.7796607" y="327.39407" rx="10" ry="10" stroke="#d79b00"
+              fill="#ffe6cc"/>
+        <text class="label" x="20" y="585">The Merchant</text>
+        <text class="label" x="115.773639" y="515">Awaits</text>
+    </g>
+    <g id="chapter3" class="chapter">
+        <rect width="160.13135" height="151.70338" x="5.8347459" y="7.1313553" rx="10" ry="10"
+              stroke="#d79b00" fill="#ffe6cc"/>
+        <text class="label" x="9.348182" y="22">Demon and Rift</text>
+    </g>
+    <g id="chapter4" class="chapter">
+        <rect width="86.872887" height="103.72881" x="122.52966" y="201.62288" rx="10" ry="10" stroke="#d79b00"
+              fill="#ffe6cc"/>
+        <text class="label" x="134.40273" y="300">Sewers</text>
+    </g>
+    <g id="chapter5" class="chapter">
+        <rect width="92.707626" height="99.190681" x="252.83899" y="18.152542" rx="10" ry="10" stroke="#d79b00"
+              fill="#ffe6cc"/>
+        <text class="label" x="268.94" y="112">Rebellion Rises</text>
+    </g>
+    <g id="chapter6" class="chapter">
+        <rect width="93.355934" height="51.216106" x="285.25424" y="129.01271" rx="10" ry="10" stroke="#d79b00"
+              fill="#ffe6cc"/>
+        <text class="label" x="303.4564" y="178">Under Oceans</text>
+    </g>
+    <g id="chapter7" class="chapter">
+        <rect width="91.411026" height="71.31356" x="286.55087" y="186.71187" rx="10" ry="10" stroke="#d79b00"
+              fill="#ffe6cc"/>
+        <text class="label" x="295" y="203.71637">Through</text>
+        <text class="label" x="295" y="216.71637">Jungles</text>
+    </g>
+    <g id="chapter8" class="chapter">
+        <rect width="94.652542" height="52.512714" x="283.30933" y="272.28815" rx="10" ry="10" stroke="#d79b00"
+              fill="#ffe6cc"/>
+        <text class="label" x="308.49" y="320">Atop Mountains</text>
+    </g>
+    <g id="chapter9" class="chapter">
+        <rect width="123.17797" height="43.43644" x="251.54237" y="381.2034" rx="10" ry="10" stroke="#d79b00"
+              fill="#ffe6cc"/>
+        <text class="label" x="334.37727" y="420">Dragons</text>
+    </g>
+    <g id="chapter10" class="chapter">
+        <rect width="129.01271" height="114.10169" x="250.89407" y="477.15253" rx="10" ry="10" stroke="#d79b00"
+              fill="#ffe6cc"/>
+        <text class="label" x="263.83911" y="585">Voice</text>
+    </g>
 
     <g id="edge46-51" class="edge edge46">
         <path class="line" d="M 509 414 L 560 414 L 560 355.37 "/>

@@ -2,13 +2,16 @@
     <div>
         <modal ref="modal">
             <template v-slot:body v-if="scenario">
-                <h2 class="mdc-dialog__title" id="my-dialog-title">
-                    {{ scenario.name }}
-                    <button type="button" data-mdc-dialog-action="close"
-                            class="mdc-button absolute right-0 top-0 mt-4">
-                        <i class="material-icons">close</i>
-                    </button>
-                </h2>
+                <div class="pl-6 border-b border-gray-300"
+                     :class="{'pb-2': scenario.chapter, 'pb-4': !scenario.chapter}">
+                    <h2 class="mdc-dialog__title p-0 leading-none">{{ scenario.name }}
+                        <button type="button" data-mdc-dialog-action="close"
+                                class="mdc-button absolute right-0 top-0 mt-4">
+                            <i class="material-icons">close</i>
+                        </button>
+                    </h2>
+                    <span v-if="scenario.chapter_name" class="text-xs uppercase text-gray-900 font-bold">{{ scenario.chapter_name }}</span>
+                </div>
 
                 <div class="mdc-dialog__content" id="my-dialog-content">
                     <div class="mb-6 mt-4">
