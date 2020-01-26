@@ -14,10 +14,10 @@ export default class Scenario {
         this.hasChoices = typeof data.choices !== 'undefined';
         this.state2 = ScenarioState.hidden;
         this.notes = "";
-        this.links_to = null;
-        this.linked_from = null;
-        this.blocked_by = null;
-        this.required_by = null;
+        this.links_to = collect(data.links_to);
+        this.linked_from = collect(data.linked_from);
+        this.blocked_by = collect(data.blocked_by);
+        this.required_by = collect(data.required_by);
         this.read();
     }
 

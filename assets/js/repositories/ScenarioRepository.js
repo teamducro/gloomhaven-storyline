@@ -8,9 +8,6 @@ export default class ScenarioRepository {
     fetch() {
         return collect(scenarios.scenarios).map((scenario) => {
             scenario = new Scenario(scenario);
-            this.fetchLinks(scenario);
-            this.fetchBlocks(scenario);
-            this.fetchRequirments(scenario);
             this.fetchChapter(scenario);
 
             return scenario;
@@ -52,52 +49,10 @@ export default class ScenarioRepository {
         })
     }
 
-    fetchLinks(scenario) {
-        scenario.links_to = this.links
-            .where('source', scenario.id)
-            .map((edge) => {
-                return edge.target;
-            });
-
-        scenario.linked_from = this.links
-            .where('target', scenario.id)
-            .map((edge) => {
-                return edge.source;
-            });
-    }
-
-    fetchBlocks(scenario) {
-        scenario.blocked_by = this.blocks
-            .where('target', scenario.id)
-            .map((edge) => {
-                return edge.source;
-            });
-    }
-
-    fetchRequirments(scenario) {
-        scenario.required_by = this.requires
-            .where('target', scenario.id)
-            .map((edge) => {
-                return edge.source;
-            });
-    }
-
     fetchChapter(scenario) {
         if (scenario.chapter_id) {
             scenario.chapter_name = this.chapters.firstWhere('id', scenario.chapter_id).name;
         }
-    }
-
-    get links() {
-        return this.links2 || (this.links2 = collect(scenarios.links));
-    }
-
-    get blocks() {
-        return this.blocks2 || (this.blocks2 = collect(scenarios.blocks));
-    }
-
-    get requires() {
-        return this.requires2 || (this.requires2 = collect(scenarios.requires));
     }
 
     get chapters() {

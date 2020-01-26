@@ -6,7 +6,14 @@
             "pages": [
                 3
             ],
-            "chapter_id": 1
+            "chapter_id": 1,
+            "links_to": [
+                2
+            ],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Intro"
         },
         {
             "id": 2,
@@ -16,7 +23,17 @@
                 5
             ],
             "requirments": "First Steps (Party) COMPLETE",
-            "chapter_id": 1
+            "chapter_id": 1,
+            "links_to": [
+                3,
+                4
+            ],
+            "linked_from": [
+                1
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Intro"
         },
         {
             "id": 3,
@@ -26,7 +43,19 @@
                 6
             ],
             "requirments": "The Merchant Flees (Global) INCOMPLETE",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                8,
+                9
+            ],
+            "linked_from": [
+                2
+            ],
+            "blocked_by": [
+                8
+            ],
+            "required_by": [],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 4,
@@ -34,7 +63,16 @@
             "pages": [
                 7
             ],
-            "requirments": ""
+            "requirments": "",
+            "links_to": [
+                6,
+                5
+            ],
+            "linked_from": [
+                2
+            ],
+            "blocked_by": [],
+            "required_by": []
         },
         {
             "id": 5,
@@ -42,7 +80,18 @@
             "pages": [
                 8
             ],
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                14,
+                19,
+                10
+            ],
+            "linked_from": [
+                4
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Demon and Rift"
         },
         {
             "id": 6,
@@ -51,7 +100,16 @@
                 9,
                 10
             ],
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                8
+            ],
+            "linked_from": [
+                4
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 7,
@@ -61,7 +119,18 @@
                 11
             ],
             "requirments": "The Power of Enhancement (Global) and The Merchant Flees (Global) COMPLETE",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                20
+            ],
+            "linked_from": [
+                8
+            ],
+            "blocked_by": [],
+            "required_by": [
+                14
+            ],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 8,
@@ -70,7 +139,21 @@
                 12
             ],
             "requirments": "Jekserah’s Plans (Party) COMPLETE and The Dead Invade (Global) INCOMPLETE",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                7,
+                13,
+                14
+            ],
+            "linked_from": [
+                3,
+                6
+            ],
+            "blocked_by": [
+                9
+            ],
+            "required_by": [],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 9,
@@ -79,7 +162,19 @@
                 13
             ],
             "requirments": "The Merchant Flees (Global) INCOMPLETE",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                11,
+                12
+            ],
+            "linked_from": [
+                3
+            ],
+            "blocked_by": [
+                8
+            ],
+            "required_by": [],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 10,
@@ -88,7 +183,21 @@
                 14
             ],
             "requirments": "The Rift Neutralized (Global) INCOMPLETE",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                21,
+                22
+            ],
+            "linked_from": [
+                5
+            ],
+            "blocked_by": [
+                21,
+                27,
+                36
+            ],
+            "required_by": [],
+            "chapter_name": "Demon and Rift"
         },
         {
             "id": 11,
@@ -98,7 +207,19 @@
                 16
             ],
             "requirments": "End of the Invasion (Global) INCOMPLETE",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                16,
+                18
+            ],
+            "linked_from": [
+                9
+            ],
+            "blocked_by": [
+                12
+            ],
+            "required_by": [],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 12,
@@ -108,7 +229,20 @@
                 17
             ],
             "requirments": "End of the Invasion (Global) INCOMPLETE",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                16,
+                28,
+                18
+            ],
+            "linked_from": [
+                9
+            ],
+            "blocked_by": [
+                11
+            ],
+            "required_by": [],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 13,
@@ -121,7 +255,18 @@
                 17,
                 20
             ],
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                15,
+                17,
+                20
+            ],
+            "linked_from": [
+                8
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 14,
@@ -130,7 +275,15 @@
                 19,
                 20
             ],
-            "requirments": ""
+            "requirments": "",
+            "links_to": [],
+            "linked_from": [
+                5,
+                8,
+                18
+            ],
+            "blocked_by": [],
+            "required_by": []
         },
         {
             "id": 15,
@@ -139,7 +292,15 @@
                 20,
                 21
             ],
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [],
+            "linked_from": [
+                13,
+                39
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 16,
@@ -147,7 +308,18 @@
             "pages": [
                 22
             ],
-            "requirments": ""
+            "requirments": "",
+            "links_to": [
+                25,
+                24
+            ],
+            "linked_from": [
+                11,
+                12,
+                20
+            ],
+            "blocked_by": [],
+            "required_by": []
         },
         {
             "id": 17,
@@ -155,7 +327,14 @@
             "pages": [
                 23
             ],
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [],
+            "linked_from": [
+                13
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 18,
@@ -163,7 +342,21 @@
             "pages": [
                 24
             ],
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                23,
+                14,
+                43,
+                26
+            ],
+            "linked_from": [
+                11,
+                12,
+                20
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Sewers"
         },
         {
             "id": 19,
@@ -173,7 +366,18 @@
                 26
             ],
             "requirments": "The Power of Enhancement (Global) COMPLETE",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                27
+            ],
+            "linked_from": [
+                5
+            ],
+            "blocked_by": [],
+            "required_by": [
+                14
+            ],
+            "chapter_name": "Demon and Rift"
         },
         {
             "id": 20,
@@ -183,7 +387,21 @@
                 27
             ],
             "requirments": "The Merchant Flees (Global) COMPLETE",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                28,
+                16,
+                18
+            ],
+            "linked_from": [
+                7,
+                13
+            ],
+            "blocked_by": [],
+            "required_by": [
+                8
+            ],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 21,
@@ -193,7 +411,17 @@
                 29
             ],
             "requirments": "The Rift Neutralized (Global) INCOMPLETE",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [],
+            "linked_from": [
+                10
+            ],
+            "blocked_by": [
+                27,
+                36
+            ],
+            "required_by": [],
+            "chapter_name": "Demon and Rift"
         },
         {
             "id": 22,
@@ -202,7 +430,18 @@
                 29,
                 30
             ],
-            "requirments": "A Demon’s Errand (Party) or Following Clues (Party) COMPLETE"
+            "requirments": "A Demon’s Errand (Party) or Following Clues (Party) COMPLETE",
+            "links_to": [
+                35,
+                31,
+                36
+            ],
+            "linked_from": [
+                10,
+                26
+            ],
+            "blocked_by": [],
+            "required_by": []
         },
         {
             "id": 23,
@@ -211,7 +450,14 @@
                 31,
                 32
             ],
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [],
+            "linked_from": [
+                18
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Sewers"
         },
         {
             "id": 24,
@@ -220,7 +466,17 @@
                 32,
                 33
             ],
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [
+                32,
+                30
+            ],
+            "linked_from": [
+                16
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Voice"
         },
         {
             "id": 25,
@@ -229,7 +485,17 @@
                 34,
                 35
             ],
-            "chapter_id": 9
+            "chapter_id": 9,
+            "links_to": [
+                33,
+                34
+            ],
+            "linked_from": [
+                16
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Dragons"
         },
         {
             "id": 26,
@@ -239,7 +505,19 @@
                 36
             ],
             "requirments": "Water-Breathing (Global) or Through the Ruins (Party) COMPLETE",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                22
+            ],
+            "linked_from": [
+                18
+            ],
+            "blocked_by": [],
+            "required_by": [
+                23,
+                43
+            ],
+            "chapter_name": "Sewers"
         },
         {
             "id": 27,
@@ -248,7 +526,16 @@
                 37
             ],
             "requirments": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [],
+            "linked_from": [
+                19
+            ],
+            "blocked_by": [
+                35
+            ],
+            "required_by": [],
+            "chapter_name": "Demon and Rift"
         },
         {
             "id": 28,
@@ -257,7 +544,19 @@
                 38
             ],
             "requirments": "Dark Bounty (Party) COMPLETE",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                29
+            ],
+            "linked_from": [
+                12,
+                20
+            ],
+            "blocked_by": [],
+            "required_by": [
+                6
+            ],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 29,
@@ -266,7 +565,14 @@
                 39
             ],
             "requirments": "An Invitation (Party) COMPLETE",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [],
+            "linked_from": [
+                28
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "The Merchant"
         },
         {
             "id": 30,
@@ -276,7 +582,16 @@
                 41
             ],
             "requirments": "The Voice’s Command (Party)",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [
+                42
+            ],
+            "linked_from": [
+                24
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Voice"
         },
         {
             "id": 31,
@@ -285,7 +600,23 @@
                 41,
                 42
             ],
-            "requirments": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE"
+            "requirments": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
+            "links_to": [
+                39,
+                37,
+                38,
+                43
+            ],
+            "linked_from": [
+                22
+            ],
+            "blocked_by": [
+                35
+            ],
+            "required_by": [
+                14,
+                21
+            ]
         },
         {
             "id": 32,
@@ -294,7 +625,19 @@
                 43
             ],
             "requirments": "The Voice’s Command (Party) COMPLETE",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [
+                33,
+                40
+            ],
+            "linked_from": [
+                24
+            ],
+            "blocked_by": [
+                42
+            ],
+            "required_by": [],
+            "chapter_name": "Voice"
         },
         {
             "id": 33,
@@ -302,7 +645,17 @@
             "pages": [
                 44
             ],
-            "requirments": "The Voice’s Command (Party) or The Drake’s Command (Party) COMPLETE"
+            "requirments": "The Voice’s Command (Party) or The Drake’s Command (Party) COMPLETE",
+            "links_to": [],
+            "linked_from": [
+                25,
+                32
+            ],
+            "blocked_by": [
+                34,
+                42
+            ],
+            "required_by": []
         },
         {
             "id": 34,
@@ -311,7 +664,16 @@
                 45
             ],
             "requirments": "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE",
-            "chapter_id": 9
+            "chapter_id": 9,
+            "links_to": [],
+            "linked_from": [
+                25
+            ],
+            "blocked_by": [
+                33
+            ],
+            "required_by": [],
+            "chapter_name": "Dragons"
         },
         {
             "id": 35,
@@ -321,7 +683,22 @@
                 47
             ],
             "requirments": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                45
+            ],
+            "linked_from": [
+                22
+            ],
+            "blocked_by": [
+                21,
+                27,
+                36
+            ],
+            "required_by": [
+                10
+            ],
+            "chapter_name": "Demon and Rift"
         },
         {
             "id": 36,
@@ -331,7 +708,20 @@
                 48
             ],
             "requirments": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [],
+            "linked_from": [
+                22
+            ],
+            "blocked_by": [
+                21,
+                27,
+                35
+            ],
+            "required_by": [
+                10
+            ],
+            "chapter_name": "Demon and Rift"
         },
         {
             "id": 37,
@@ -340,7 +730,18 @@
                 49
             ],
             "requirments": "Water-Breathing (Global) COMPLETE",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                47
+            ],
+            "linked_from": [
+                31
+            ],
+            "blocked_by": [],
+            "required_by": [
+                43
+            ],
+            "chapter_name": "Under Oceans"
         },
         {
             "id": 38,
@@ -349,7 +750,17 @@
                 50,
                 51
             ],
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                48,
+                44
+            ],
+            "linked_from": [
+                31
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Through Jungles"
         },
         {
             "id": 39,
@@ -358,7 +769,17 @@
                 51,
                 52
             ],
-            "chapter_id": 8
+            "chapter_id": 8,
+            "links_to": [
+                46,
+                15
+            ],
+            "linked_from": [
+                31
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Atop Mountains"
         },
         {
             "id": 40,
@@ -368,7 +789,20 @@
                 54
             ],
             "requirments": "The Voice’s Command (Party) and The Voice’s Treasure (Party) COMPLETE",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [
+                41
+            ],
+            "linked_from": [
+                32
+            ],
+            "blocked_by": [
+                42
+            ],
+            "required_by": [
+                33
+            ],
+            "chapter_name": "Voice"
         },
         {
             "id": 41,
@@ -378,7 +812,16 @@
                 55
             ],
             "requirments": "The Voice’s Command (Party) COMPLETE",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [],
+            "linked_from": [
+                40
+            ],
+            "blocked_by": [
+                42
+            ],
+            "required_by": [],
+            "chapter_name": "Voice"
         },
         {
             "id": 42,
@@ -387,7 +830,16 @@
                 56
             ],
             "requirments": "The Scepter and the Voice (Party) COMPLETE and The Voice Freed (Global) INCOMPLETE",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [],
+            "linked_from": [
+                30
+            ],
+            "blocked_by": [
+                41
+            ],
+            "required_by": [],
+            "chapter_name": "Voice"
         },
         {
             "id": 43,
@@ -396,7 +848,16 @@
                 57,
                 58
             ],
-            "requirments": "The Power of Enhancement (Global) COMPLETE"
+            "requirments": "The Power of Enhancement (Global) COMPLETE",
+            "links_to": [],
+            "linked_from": [
+                18,
+                31
+            ],
+            "blocked_by": [],
+            "required_by": [
+                14
+            ]
         },
         {
             "id": 44,
@@ -406,7 +867,14 @@
                 59
             ],
             "requirments": "Redthorn’s Aid (Party) COMPLETE",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [],
+            "linked_from": [
+                38
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Through Jungles"
         },
         {
             "id": 45,
@@ -415,7 +883,17 @@
                 60
             ],
             "requirments": "City Rule: Demonic (Global) COMPLETE",
-            "chapter_id": 5
+            "chapter_id": 5,
+            "links_to": [
+                49,
+                50
+            ],
+            "linked_from": [
+                35
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Rebellion Rises"
         },
         {
             "id": 46,
@@ -424,7 +902,16 @@
                 61
             ],
             "requirments": "Across the Divide (Party) COMPLETE",
-            "chapter_id": 8
+            "chapter_id": 8,
+            "links_to": [
+                51
+            ],
+            "linked_from": [
+                39
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Atop Mountains"
         },
         {
             "id": 47,
@@ -433,7 +920,16 @@
                 62
             ],
             "requirments": "Through the Trench (Party) COMPLETE",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                51
+            ],
+            "linked_from": [
+                37
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Under Oceans"
         },
         {
             "id": 48,
@@ -442,7 +938,16 @@
                 63
             ],
             "requirments": "Redthorn’s Aid (Party) COMPLETE",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                51
+            ],
+            "linked_from": [
+                38
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Through Jungles"
         },
         {
             "id": 49,
@@ -451,7 +956,14 @@
                 64
             ],
             "requirments": "City Rule: Demonic (Global) COMPLETE",
-            "chapter_id": 5
+            "chapter_id": 5,
+            "links_to": [],
+            "linked_from": [
+                45
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Rebellion Rises"
         },
         {
             "id": 50,
@@ -461,7 +973,16 @@
                 66
             ],
             "requirments": "City Rule: Demonic (Global) COMPLETE and Annihilation of Order (Global) INCOMPLETE",
-            "chapter_id": 5
+            "chapter_id": 5,
+            "links_to": [],
+            "linked_from": [
+                45
+            ],
+            "blocked_by": [
+                49
+            ],
+            "required_by": [],
+            "chapter_name": "Rebellion Rises"
         },
         {
             "id": 51,
@@ -470,481 +991,19 @@
                 66,
                 67
             ],
-            "requirments": ""
-        }
-    ],
-    "links": [
-        {
-            "source": 1,
-            "target": 2
-        },
-        {
-            "source": 2,
-            "target": 3
-        },
-        {
-            "source": 2,
-            "target": 4
-        },
-        {
-            "source": 3,
-            "target": 8
-        },
-        {
-            "source": 3,
-            "target": 9
-        },
-        {
-            "source": 4,
-            "target": 6
-        },
-        {
-            "source": 4,
-            "target": 5
-        },
-        {
-            "source": 5,
-            "target": 14
-        },
-        {
-            "source": 5,
-            "target": 19
-        },
-        {
-            "source": 5,
-            "target": 10
-        },
-        {
-            "source": 6,
-            "target": 8
-        },
-        {
-            "source": 7,
-            "target": 20
-        },
-        {
-            "source": 8,
-            "target": 7
-        },
-        {
-            "source": 8,
-            "target": 13
-        },
-        {
-            "source": 8,
-            "target": 14
-        },
-        {
-            "source": 9,
-            "target": 11
-        },
-        {
-            "source": 9,
-            "target": 12
-        },
-        {
-            "source": 10,
-            "target": 21
-        },
-        {
-            "source": 10,
-            "target": 22
-        },
-        {
-            "source": 11,
-            "target": 16
-        },
-        {
-            "source": 11,
-            "target": 18
-        },
-        {
-            "source": 12,
-            "target": 16
-        },
-        {
-            "source": 12,
-            "target": 28
-        },
-        {
-            "source": 12,
-            "target": 18
-        },
-        {
-            "source": 13,
-            "target": 15
-        },
-        {
-            "source": 13,
-            "target": 17
-        },
-        {
-            "source": 13,
-            "target": 20
-        },
-        {
-            "source": 16,
-            "target": 25
-        },
-        {
-            "source": 16,
-            "target": 24
-        },
-        {
-            "source": 18,
-            "target": 23
-        },
-        {
-            "source": 18,
-            "target": 14
-        },
-        {
-            "source": 18,
-            "target": 43
-        },
-        {
-            "source": 18,
-            "target": 26
-        },
-        {
-            "source": 19,
-            "target": 27
-        },
-        {
-            "source": 20,
-            "target": 28
-        },
-        {
-            "source": 20,
-            "target": 16
-        },
-        {
-            "source": 20,
-            "target": 18
-        },
-        {
-            "source": 22,
-            "target": 35
-        },
-        {
-            "source": 22,
-            "target": 31
-        },
-        {
-            "source": 22,
-            "target": 36
-        },
-        {
-            "source": 24,
-            "target": 32
-        },
-        {
-            "source": 24,
-            "target": 30
-        },
-        {
-            "source": 25,
-            "target": 33
-        },
-        {
-            "source": 25,
-            "target": 34
-        },
-        {
-            "source": 26,
-            "target": 22
-        },
-        {
-            "source": 28,
-            "target": 29
-        },
-        {
-            "source": 30,
-            "target": 42
-        },
-        {
-            "source": 31,
-            "target": 39
-        },
-        {
-            "source": 31,
-            "target": 37
-        },
-        {
-            "source": 31,
-            "target": 38
-        },
-        {
-            "source": 31,
-            "target": 43
-        },
-        {
-            "source": 32,
-            "target": 33
-        },
-        {
-            "source": 32,
-            "target": 40
-        },
-        {
-            "source": 35,
-            "target": 45
-        },
-        {
-            "source": 37,
-            "target": 47
-        },
-        {
-            "source": 38,
-            "target": 48
-        },
-        {
-            "source": 38,
-            "target": 44
-        },
-        {
-            "source": 39,
-            "target": 46
-        },
-        {
-            "source": 39,
-            "target": 15
-        },
-        {
-            "source": 40,
-            "target": 41
-        },
-        {
-            "source": 45,
-            "target": 49
-        },
-        {
-            "source": 45,
-            "target": 50
-        },
-        {
-            "source": 46,
-            "target": 51
-        },
-        {
-            "source": 47,
-            "target": 51
-        },
-        {
-            "source": 48,
-            "target": 51
-        },
-        {
-            "source": 52,
-            "target": 53
-        },
-        {
-            "source": 53,
-            "target": 54
-        },
-        {
-            "source": 55,
-            "target": 56
-        },
-        {
-            "source": 57,
-            "target": 58
-        },
-        {
-            "source": 59,
-            "target": 60
-        },
-        {
-            "source": 61,
-            "target": 62
-        },
-        {
-            "source": 86,
-            "target": 87
-        },
-        {
-            "source": 94,
-            "target": 95
-        }
-    ],
-    "blocks": [
-        {
-            "source": 8,
-            "target": 3
-        },
-        {
-            "source": 8,
-            "target": 9
-        },
-        {
-            "source": 9,
-            "target": 8
-        },
-        {
-            "source": 11,
-            "target": 12
-        },
-        {
-            "source": 12,
-            "target": 11
-        },
-        {
-            "source": 21,
-            "target": 10
-        },
-        {
-            "source": 21,
-            "target": 36
-        },
-        {
-            "source": 21,
-            "target": 35
-        },
-        {
-            "source": 27,
-            "target": 10
-        },
-        {
-            "source": 27,
-            "target": 21
-        },
-        {
-            "source": 27,
-            "target": 35
-        },
-        {
-            "source": 27,
-            "target": 36
-        },
-        {
-            "source": 33,
-            "target": 34
-        },
-        {
-            "source": 34,
-            "target": 33
-        },
-        {
-            "source": 35,
-            "target": 27
-        },
-        {
-            "source": 35,
-            "target": 36
-        },
-        {
-            "source": 35,
-            "target": 31
-        },
-        {
-            "source": 36,
-            "target": 35
-        },
-        {
-            "source": 36,
-            "target": 10
-        },
-        {
-            "source": 36,
-            "target": 21
-        },
-        {
-            "source": 41,
-            "target": 42
-        },
-        {
-            "source": 42,
-            "target": 33
-        },
-        {
-            "source": 42,
-            "target": 32
-        },
-        {
-            "source": 42,
-            "target": 40
-        },
-        {
-            "source": 42,
-            "target": 41
-        },
-        {
-            "source": 49,
-            "target": 50
-        }
-    ],
-    "requires": [
-        {
-            "source": 6,
-            "target": 28
-        },
-        {
-            "source": 8,
-            "target": 20
-        },
-        {
-            "source": 10,
-            "target": 35
-        },
-        {
-            "source": 10,
-            "target": 36
-        },
-        {
-            "source": 14,
-            "target": 7
-        },
-        {
-            "source": 14,
-            "target": 43
-        },
-        {
-            "source": 14,
-            "target": 31
-        },
-        {
-            "source": 14,
-            "target": 19
-        },
-        {
-            "source": 21,
-            "target": 31
-        },
-        {
-            "source": 23,
-            "target": 26
-        },
-        {
-            "source": 33,
-            "target": 40
-        },
-        {
-            "source": 43,
-            "target": 26
-        },
-        {
-            "source": 43,
-            "target": 37
-        },
-        {
-            "source": 43,
-            "target": 64
-        },
-        {
-            "source": 43,
-            "target": 88
-        },
-        {
-            "source": 46,
-            "target": 51
-        },
-        {
-            "source": 47,
-            "target": 51
-        },
-        {
-            "source": 48,
-            "target": 51
+            "requirments": "",
+            "links_to": [],
+            "linked_from": [
+                46,
+                47,
+                48
+            ],
+            "blocked_by": [],
+            "required_by": [
+                46,
+                47,
+                48
+            ]
         }
     ],
     "chapters": [

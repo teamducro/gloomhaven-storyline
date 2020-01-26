@@ -68,11 +68,8 @@
                         if (scenario.isComplete()) {
                             if (!scenario.choices) {
                                 $edges.show();
-                            } else {
-                                let chosenScenario = this.scenarioRepository.chosenScenario(scenario);
-                                if (chosenScenario) {
-                                    $('#edge' + scenario.id + '-' + chosenScenario.id).show();
-                                }
+                            } else if (scenario.chosen) {
+                                $('#edge' + scenario.id + '-' + scenario.chosen).show();
                             }
                         }
                     }
