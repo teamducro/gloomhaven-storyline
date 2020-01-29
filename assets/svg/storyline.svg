@@ -11,6 +11,8 @@
         .line { fill: none; }
         .arrow { fill: #000; }
         .line, .arrow { transform: scale(.71909096,.71909096); stroke: #000; }
+
+        .scenario { cursor: pointer; }
     </style>
 
     <g id="chapter1" class="chapter">
