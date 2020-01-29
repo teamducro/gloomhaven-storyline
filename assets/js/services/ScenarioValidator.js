@@ -7,7 +7,7 @@ export default class ScenarioValidator {
         [1, 2].forEach(() => {
             app.scenarios.each((scenario) => {
                 this.checkHidden(scenario);
-                this.checkChosen(scenario);
+                this.checkChoice(scenario);
                 this.checkBlocked(scenario);
                 this.checkRequired(scenario);
             });
@@ -28,25 +28,25 @@ export default class ScenarioValidator {
         }
     }
 
-    checkChosen(scenario) {
+    checkChoice(scenario) {
         let linkedScenarios = this.linkedScenarios(scenario);
         if (linkedScenarios.where('hasChoices', true).count()) {
-            let chosen = linkedScenarios.firstWhere('chosen2', scenario.id);
-            let notChosenStates = linkedScenarios.where('hasChoices', false).pluck('state', 'state');
+            let chosen = linkedScenarios.firstWhere('choice2', scenario.id);
+            let withoutChoicesStates = linkedScenarios.where('hasChoices', false).pluck('state', 'state');
 
             if (scenario.isHidden()) {
-                if (chosen || notChosenStates.has(ScenarioState.complete)) {
+                if (chosen || withoutChoicesStates.has(ScenarioState.complete)) {
                     scenario.state = ScenarioState.incomplete;
                 }
             } else {
-                if (!chosen && notChosenStates.has(ScenarioState.complete) === false) {
+                if (!chosen && withoutChoicesStates.has(ScenarioState.complete) === false) {
                     scenario.state = ScenarioState.hidden;
                 }
             }
         }
 
-        if (scenario.hasChoices && scenario.chosen && scenario.isComplete() === false) {
-            scenario.chosen = null;
+        if (scenario.hasChoices && scenario.choice && scenario.isComplete() === false) {
+            scenario.choice = null;
         }
     }
 

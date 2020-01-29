@@ -15,7 +15,7 @@ export default class ShareState {
 
             if (result.hasOwnProperty('choices')) {
                 result.choices.each((choice, id) => {
-                    this.scenarioRepository.find(parseInt(id)).chosen = choice;
+                    this.scenarioRepository.find(parseInt(id)).choice = choice;
                 });
             }
 
@@ -32,7 +32,7 @@ export default class ShareState {
         let completed = app.scenarios.where('state', ScenarioState.complete);
         let result = {};
         let completedString = completed.pluck('id').implode('-');
-        let choicesString = completed.where('hasChoices', true).pluck('chosen', 'id').map((choice, id) => {
+        let choicesString = completed.where('hasChoices', true).pluck('choice', 'id').map((choice, id) => {
             return id + '_' + choice
         }).values().implode('-');
 

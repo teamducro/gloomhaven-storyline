@@ -10,7 +10,7 @@ export default class Scenario {
         this.chapter_id = data.chapter_id;
         this.chapter_name = null;
         this.choices = data.choices;
-        this.chosen2 = null;
+        this.choice2 = null;
         this.hasChoices = typeof data.choices !== 'undefined';
         this.state2 = ScenarioState.hidden;
         this.notes = "";
@@ -54,19 +54,19 @@ export default class Scenario {
         return this.state2;
     }
 
-    set chosen(chosen) {
-        this.chosen2 = chosen;
+    set choice(choice) {
+        this.choice2 = choice;
         this.store();
     }
 
-    get chosen() {
-        return this.chosen2;
+    get choice() {
+        return this.choice2;
     }
 
     store() {
         window.localStorage.setItem(this.key(), JSON.stringify({
             "state": this.state,
-            "chosen": this.chosen,
+            "choice": this.choice,
             "notes": this.notes
         }));
     }
@@ -75,7 +75,7 @@ export default class Scenario {
         let scenario = JSON.parse(window.localStorage.getItem(this.key()));
         if (scenario) {
             this.state2 = scenario.state;
-            this.chosen2 = scenario.chosen;
+            this.choice2 = scenario.choice;
             this.notes = scenario.notes;
         }
     }

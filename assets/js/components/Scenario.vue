@@ -151,8 +151,8 @@
             noteChanged() {
                 this.scenario.store();
             },
-            scenarioChosen(chosenScenario) {
-                this.scenarioRepository.choose(this.scenario, chosenScenario);
+            scenarioChosen(choice) {
+                this.scenarioRepository.choose(this.scenario, choice);
 
                 window.bus.$emit('scenarios-updated');
             },

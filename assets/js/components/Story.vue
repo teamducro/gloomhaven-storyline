@@ -69,8 +69,8 @@
                         if (scenario.isComplete()) {
                             if (!scenario.choices) {
                                 $edges.show();
-                            } else if (scenario.chosen) {
-                                $('#edge' + scenario.id + '-' + scenario.chosen).show();
+                            } else if (scenario.choice) {
+                                $('#edge' + scenario.id + '-' + scenario.choice).show();
                             }
                         }
                     }

@@ -20,14 +20,14 @@ export default class ScenarioRepository {
         this.scenarioValidator.validate();
     }
 
-    choose(scenario, chosenScenario) {
+    choose(scenario, choice) {
         scenario.state = ScenarioState.complete;
-        scenario.chosen = chosenScenario.id;
+        scenario.choice = choice.id;
 
         this.scenarioValidator.validate();
     }
 
-    chosenScenario(scenario) {
+    choice(scenario) {
         return this.findMany(scenario.choices).firstWhere('state', '!=', ScenarioState.hidden);
     }
 
