@@ -9,6 +9,8 @@ export default class ShareState {
         let result = this.decode();
 
         if (result.hasOwnProperty('completed')) {
+            this.scenarioRepository.hideAllScenarios();
+
             result.completed.each((id) => {
                 this.scenarioRepository.find(id).state = ScenarioState.complete;
             });
