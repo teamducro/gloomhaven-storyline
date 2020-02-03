@@ -29,18 +29,9 @@
                         ></radio>
                     </div>
 
-                    <div v-if="scenario.isBlocked()" class="mb-6">
-                        This scenario is blocked by:
-                        <span v-if="blockedScenarios.isEmpty()">???</span>
-                        <a v-else v-for="blockedScenario in blockedScenarios"
-                           role="button" class="link scenarios-links"
-                           @click="open(blockedScenario.id)"
-                           v-text="blockedScenario.name">
-                        </a>
-                    </div>
-
                     <div v-if="scenario.requirments" class="mb-6 flex items-center">
-                        <i v-if="scenario.isRequired()" class="material-icons text-incomplete text-2xl mr-1">highlight_off</i>
+                        <i v-if="scenario.isRequired() || scenario.isBlocked()"
+                           class="material-icons text-incomplete text-2xl mr-1">highlight_off</i>
                         <i v-else class="material-icons text-complete text-2xl mr-1">check_circle_outline</i>
                         Requirments: {{ scenario.requirments }}
                     </div>
