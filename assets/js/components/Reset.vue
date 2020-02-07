@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button type="button" @click="open" class="mdc-button fixed right-0 bottom-0">
+        <button type="button" @click="open" class="mdc-button fixed left-0 bottom-0">
             <span class="mdc-button__label">Reset</span>
         </button>
 
