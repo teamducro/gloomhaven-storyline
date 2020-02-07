@@ -1,70 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="420pt" viewBox="0 0 420 612" style="width:100%">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="420pt" viewBox="0 0 420 598" style="width:100%">
     <style>
-        text { font-family: Arial; }
+        text { font-family: Arial; fill: #fff; }
         text.label { font-size: 9px; }
 
-        circle.node { fill: #FFF; stroke:#000; transform: translate(-10.8px, 0); }
+        circle.node { fill: #000; stroke:#fff; transform: translate(-10.8px, 0); }
         circle.node + text { font-size: 11px; transform: translate(-1px, 9px); }
         circle.node ~ .blocked { font-size: 23px; transform: translate(-4px, 13px); }
         circle.node ~ .required { font-size: 21px; transform: translate(-6px, 2px); }
 
         .line { fill: none; }
-        .arrow { fill: #000; }
-        .line, .arrow { transform: scale(.71909096,.71909096); stroke: #000; }
+        .arrow { fill: #fff; }
+        .line, .arrow { transform: scale(.71909096,.71909096); stroke: #fff; }
 
         .scenario { cursor: pointer; }
     </style>
 
     <g id="chapter1" class="chapter">
-        <rect width="40.84322" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#d79b00"
-              fill="#ffe6cc"/>
+        <rect width="40.84322" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
         <text class="label" x="30" y="280">Intro</text>
     </g>
     <g id="chapter2" class="chapter">
-        <rect width="215.8856" height="263.21188" x="7.7796607" y="327.39407" rx="10" ry="10" stroke="#d79b00"
-              fill="#ffe6cc"/>
+        <rect width="215.8856" height="263.21188" x="7.7796607" y="327.39407" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
         <text class="label" x="20" y="585">The Merchant</text>
         <text class="label" x="115.773639" y="515">Awaits</text>
     </g>
     <g id="chapter3" class="chapter">
-        <rect width="160.13135" height="151.70338" x="5.8347459" y="7.1313553" rx="10" ry="10"
-              stroke="#d79b00" fill="#ffe6cc"/>
+        <rect width="160.13135" height="151.70338" x="5.8347459" y="7.1313553" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
         <text class="label" x="9.348182" y="22">Demon and Rift</text>
     </g>
     <g id="chapter4" class="chapter">
-        <rect width="86.872887" height="103.72881" x="122.52966" y="201.62288" rx="10" ry="10" stroke="#d79b00"
-              fill="#ffe6cc"/>
+        <rect width="86.872887" height="103.72881" x="122.52966" y="201.62288" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
         <text class="label" x="134.40273" y="300">Sewers</text>
     </g>
     <g id="chapter5" class="chapter">
-        <rect width="92.707626" height="99.190681" x="252.83899" y="18.152542" rx="10" ry="10" stroke="#d79b00"
-              fill="#ffe6cc"/>
+        <rect width="92.707626" height="99.190681" x="252.83899" y="18.152542" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
         <text class="label" x="268.94" y="112">Rebellion Rises</text>
     </g>
     <g id="chapter6" class="chapter">
-        <rect width="93.355934" height="51.216106" x="285.25424" y="129.01271" rx="10" ry="10" stroke="#d79b00"
-              fill="#ffe6cc"/>
+        <rect width="93.355934" height="51.216106" x="285.25424" y="129.01271" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
         <text class="label" x="303.4564" y="178">Under Oceans</text>
     </g>
     <g id="chapter7" class="chapter">
-        <rect width="91.411026" height="71.31356" x="286.55087" y="186.71187" rx="10" ry="10" stroke="#d79b00"
-              fill="#ffe6cc"/>
+        <rect width="91.411026" height="71.31356" x="286.55087" y="186.71187" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
         <text class="label" x="295" y="203.71637">Through</text>
         <text class="label" x="295" y="216.71637">Jungles</text>
     </g>
     <g id="chapter8" class="chapter">
-        <rect width="94.652542" height="52.512714" x="283.30933" y="272.28815" rx="10" ry="10" stroke="#d79b00"
-              fill="#ffe6cc"/>
+        <rect width="94.652542" height="52.512714" x="283.30933" y="272.28815" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
         <text class="label" x="308.49" y="320">Atop Mountains</text>
     </g>
     <g id="chapter9" class="chapter">
-        <rect width="123.17797" height="43.43644" x="251.54237" y="381.2034" rx="10" ry="10" stroke="#d79b00"
-              fill="#ffe6cc"/>
+        <rect width="123.17797" height="43.43644" x="251.54237" y="381.2034" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
         <text class="label" x="334.37727" y="420">Dragons</text>
     </g>
     <g id="chapter10" class="chapter">
-        <rect width="129.01271" height="114.10169" x="250.89407" y="477.15253" rx="10" ry="10" stroke="#d79b00"
-              fill="#ffe6cc"/>
+        <rect width="129.01271" height="114.10169" x="250.89407" y="477.15253" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
         <text class="label" x="263.83911" y="585">Voice</text>
     </g>
 
