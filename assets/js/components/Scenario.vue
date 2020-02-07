@@ -2,7 +2,7 @@
     <div>
         <modal ref="modal">
             <template v-slot:body v-if="scenario">
-                <div class="pl-6 border-b border-white2-20"
+                <div class="pl-6 border-b border-white2-25"
                      :class="{'pb-2': scenario.chapter, 'pb-4': !scenario.chapter}">
                     <h2 class="mdc-dialog__title p-0 leading-none">{{ scenario.name }}
                         <button type="button" data-mdc-dialog-action="close"
