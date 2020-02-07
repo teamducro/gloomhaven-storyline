@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button type="button" @click="open" class="mdc-button mdc-button--raised fixed right-0 top-0 mt-4 mr-4">
+        <button type="button" @click="open" class="mdc-button mdc-button--raised fixed right-0 bottom-0 mb-4 mr-4">
             <span class="mdc-button__label">Share</span>
             <i class="material-icons ml-2 text-base">share</i>
         </button>
@@ -15,27 +15,27 @@
                                 inline-template>
                     <div class="flex">
                         <network network="whatsapp" class="mr-2 cursor-pointer">
-                            <img src="img/whatsapp.png" alt="whatsapp" srcset="img/whatsapp@2x.png 2x"/>
+                            <img src="img/share/whatsapp.png" alt="whatsapp" srcset="img/share/whatsapp@2x.png 2x"/>
                         </network>
 
                         <network network="email" class="mr-2 cursor-pointer">
-                            <img src="img/email.png" alt="email" srcset="img/email@2x.png 2x"/>
+                            <img src="img/share/email.png" alt="email" srcset="img/share/email@2x.png 2x"/>
                         </network>
 
                         <a v-clipboard:copy="url" class="cursor-pointer">
-                            <img src="img/copy-link.png" alt="copy-link" srcset="img/copy-link@2x.png 2x"/>
+                            <img src="img/share/copy-link.png" alt="copy-link" srcset="img/share/copy-link@2x.png 2x"/>
                         </a>
 
                         <network network="facebook" class="ml-auto mr-2 cursor-pointer">
-                            <img src="img/facebook.png" alt="facebook" srcset="img/facebook@2x.png 2x"/>
+                            <img src="img/share/facebook.png" alt="facebook" srcset="img/share/facebook@2x.png 2x"/>
                         </network>
 
                         <!--<network network="reddit" class=mr-2 cursor-pointer>
-                            <img src="img/reddit.png" alt="reddit" srcset="img/reddit@2x.png 2x"/>
+                            <img src="img/share/reddit.png" alt="reddit" srcset="img/share/reddit@2x.png 2x"/>
                         </network>-->
 
                         <network network="twitter" class="cursor-pointer">
-                            <img src="img/twitter.png" alt="twitter" srcset="img/twitter@2x.png 2x"/>
+                            <img src="img/share/twitter.png" alt="twitter" srcset="img/share/twitter@2x.png 2x"/>
                         </network>
                     </div>
                 </social-sharing>
