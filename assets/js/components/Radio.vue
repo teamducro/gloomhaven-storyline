@@ -1,5 +1,5 @@
 <template>
-    <div class="mdc-form-field">
+    <div class="mdc-form-field flex items-center">
         <div class="mdc-radio">
             <input class="mdc-radio__native-control"
                    type="radio"

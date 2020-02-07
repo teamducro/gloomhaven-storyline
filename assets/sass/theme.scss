@@ -1,0 +1,21 @@
+$mdc-theme-primary: #3771E0;
+$mdc-theme-secondary: #018786;
+$mdc-theme-background: #000;
+$mdc-theme-surface: #111;
+$mdc-theme-error: #b00020;
+$mdc-theme-on-primary: #fff;
+$mdc-theme-on-secondary: #fff;
+$mdc-theme-on-surface: #fff;
+$mdc-theme-on-error: #fff;
+$mdc-dialog-scrim-color: #000;
+$mdc-theme-text-primary-on-background: rgba(255, 255, 255, 0.87);
+$mdc-theme-text-secondary-on-background: rgba(255, 255, 255, 0.54);
+$mdc-theme-text-hint-on-background: rgba(255, 255, 255, 0.38);
+$mdc-theme-text-disabled-on-background: rgba(255, 255, 255, 0.38);
+$mdc-theme-text-icon-on-background: rgba(255, 255, 255, 0.38);
+
+@import "~@material/theme/mdc-theme";
+@import "~@material/button/mdc-button";
+@import "~@material/dialog/mdc-dialog";
+@import "~@material/radio/mdc-radio";
+@import "~@material/textfield/mdc-text-field";

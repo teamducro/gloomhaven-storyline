@@ -2,7 +2,7 @@
     <div>
         <modal ref="modal">
             <template v-slot:body v-if="scenario">
-                <div class="pl-6 border-b border-gray-300"
+                <div class="pl-6 border-b border-gray-800"
                      :class="{'pb-2': scenario.chapter, 'pb-4': !scenario.chapter}">
                     <h2 class="mdc-dialog__title p-0 leading-none">{{ scenario.name }}
                         <button type="button" data-mdc-dialog-action="close"
@@ -10,11 +10,11 @@
                             <i class="material-icons">close</i>
                         </button>
                     </h2>
-                    <span v-if="scenario.chapter_name" class="text-xs uppercase text-gray-900 font-bold">{{ scenario.chapter_name }}</span>
+                    <span v-if="scenario.chapter_name" class="text-xs uppercase text-gray-500 font-bold">{{ scenario.chapter_name }}</span>
                 </div>
 
                 <div class="mdc-dialog__content" id="my-dialog-content">
-                    <div class="mb-6 mt-4">
+                    <div class="flex mb-6 mt-4">
                         <radio id="incomplete" group="states" label="Incomplete"
                                :key="'incomplete-' + stateKey"
                                :checked="scenario.isIncomplete()"
@@ -176,11 +176,5 @@
     .mdc-notched-outline__notch {
         border-right: none;
         border-left: none;
-    }
-
-    .scenarios-links + .scenarios-links {
-        &:before {
-            content: '/ ';
-        }
     }
 </style>
