@@ -1,0 +1,24 @@
+html, body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    background-image: url('../img/background-highres.jpg'), url('../img/background-lowres.jpg');
+    background-size: cover, cover;
+    background-position: center, center;
+}
+
+.link {
+    &:hover {
+        @apply underline;
+    }
+}
+
+button:focus {
+    outline: none;
+}

@@ -1,0 +1,1051 @@
+{
+    "scenarios": [
+        {
+            "id": 1,
+            "name": "#1 Black Barrow",
+            "pages": [
+                3
+            ],
+            "chapter_id": 1,
+            "links_to": [
+                2
+            ],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Intro"
+        },
+        {
+            "id": 2,
+            "name": "#2 Barrow Lair",
+            "pages": [
+                4,
+                5
+            ],
+            "requirments": "First Steps (Party) COMPLETE",
+            "chapter_id": 1,
+            "links_to": [
+                3,
+                4
+            ],
+            "linked_from": [
+                1
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Intro"
+        },
+        {
+            "id": 3,
+            "name": "#3 Inox Encampment",
+            "pages": [
+                5,
+                6
+            ],
+            "requirments": "The Merchant Flees (Global) INCOMPLETE",
+            "chapter_id": 2,
+            "links_to": [
+                8,
+                9
+            ],
+            "linked_from": [
+                2
+            ],
+            "blocked_by": [
+                8
+            ],
+            "required_by": [],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 4,
+            "name": "#4 Crypt of the Damned",
+            "pages": [
+                7
+            ],
+            "requirments": "",
+            "links_to": [
+                6,
+                5
+            ],
+            "linked_from": [
+                2
+            ],
+            "blocked_by": [],
+            "required_by": []
+        },
+        {
+            "id": 5,
+            "name": "#5 Ruinous Crypt",
+            "pages": [
+                8
+            ],
+            "chapter_id": 3,
+            "links_to": [
+                14,
+                19,
+                10
+            ],
+            "linked_from": [
+                4
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Demon and Rift"
+        },
+        {
+            "id": 6,
+            "name": "#6 Decaying Crypt",
+            "pages": [
+                9,
+                10
+            ],
+            "chapter_id": 2,
+            "links_to": [
+                8
+            ],
+            "linked_from": [
+                4
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 7,
+            "name": "#7 Vibrant Grotto",
+            "pages": [
+                10,
+                11
+            ],
+            "requirments": "The Power of Enhancement (Global) and The Merchant Flees (Global) COMPLETE",
+            "chapter_id": 2,
+            "links_to": [
+                20
+            ],
+            "linked_from": [
+                8
+            ],
+            "blocked_by": [],
+            "required_by": [
+                14
+            ],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 8,
+            "name": "#8 Gloomhaven Warehouse",
+            "pages": [
+                12
+            ],
+            "requirments": "Jekserah’s Plans (Party) COMPLETE and The Dead Invade (Global) INCOMPLETE",
+            "chapter_id": 2,
+            "links_to": [
+                7,
+                13,
+                14
+            ],
+            "linked_from": [
+                3,
+                6
+            ],
+            "blocked_by": [
+                9
+            ],
+            "required_by": [],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 9,
+            "name": "#9 Diamond Mine",
+            "pages": [
+                13
+            ],
+            "requirments": "The Merchant Flees (Global) INCOMPLETE",
+            "chapter_id": 2,
+            "links_to": [
+                11,
+                12
+            ],
+            "linked_from": [
+                3
+            ],
+            "blocked_by": [
+                8
+            ],
+            "required_by": [],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 10,
+            "name": "#10 Plane of Elemental Power",
+            "pages": [
+                14
+            ],
+            "requirments": "The Rift Neutralized (Global) INCOMPLETE",
+            "chapter_id": 3,
+            "links_to": [
+                21,
+                22
+            ],
+            "linked_from": [
+                5
+            ],
+            "blocked_by": [
+                21,
+                27,
+                36
+            ],
+            "required_by": [],
+            "chapter_name": "Demon and Rift"
+        },
+        {
+            "id": 11,
+            "name": "#11 Gloomhaven Square A",
+            "pages": [
+                15,
+                16
+            ],
+            "requirments": "End of the Invasion (Global) INCOMPLETE",
+            "chapter_id": 2,
+            "links_to": [
+                16,
+                18
+            ],
+            "linked_from": [
+                9
+            ],
+            "blocked_by": [
+                12
+            ],
+            "required_by": [],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 12,
+            "name": "#12 Gloomhaven Square B",
+            "pages": [
+                16,
+                17
+            ],
+            "requirments": "End of the Invasion (Global) INCOMPLETE",
+            "chapter_id": 2,
+            "links_to": [
+                16,
+                28,
+                18
+            ],
+            "linked_from": [
+                9
+            ],
+            "blocked_by": [
+                11
+            ],
+            "required_by": [],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 13,
+            "name": "#13 Temple of the Seer",
+            "pages": [
+                18
+            ],
+            "choices": [
+                15,
+                17,
+                20
+            ],
+            "chapter_id": 2,
+            "links_to": [
+                15,
+                17,
+                20
+            ],
+            "linked_from": [
+                8
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 14,
+            "name": "#14 Frozen Hollow",
+            "pages": [
+                19,
+                20
+            ],
+            "requirments": "",
+            "links_to": [],
+            "linked_from": [
+                5,
+                8,
+                18
+            ],
+            "blocked_by": [],
+            "required_by": []
+        },
+        {
+            "id": 15,
+            "name": "#15 Shrine of Strength",
+            "pages": [
+                20,
+                21
+            ],
+            "chapter_id": 2,
+            "links_to": [],
+            "linked_from": [
+                13,
+                39
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 16,
+            "name": "#16 Mountain Pass",
+            "pages": [
+                22
+            ],
+            "requirments": "",
+            "links_to": [
+                25,
+                24
+            ],
+            "linked_from": [
+                11,
+                12,
+                20
+            ],
+            "blocked_by": [],
+            "required_by": []
+        },
+        {
+            "id": 17,
+            "name": "#17 Lost Island",
+            "pages": [
+                23
+            ],
+            "chapter_id": 2,
+            "links_to": [],
+            "linked_from": [
+                13
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 18,
+            "name": "#18 Abandoned Sewers",
+            "pages": [
+                24
+            ],
+            "chapter_id": 4,
+            "links_to": [
+                23,
+                14,
+                43,
+                26
+            ],
+            "linked_from": [
+                11,
+                12,
+                20
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Sewers"
+        },
+        {
+            "id": 19,
+            "name": "#19 Forgotten Crypt",
+            "pages": [
+                25,
+                26
+            ],
+            "requirments": "The Power of Enhancement (Global) COMPLETE",
+            "chapter_id": 3,
+            "links_to": [
+                27
+            ],
+            "linked_from": [
+                5
+            ],
+            "blocked_by": [],
+            "required_by": [
+                14
+            ],
+            "chapter_name": "Demon and Rift"
+        },
+        {
+            "id": 20,
+            "name": "#20 Necromancer's Sanctum",
+            "pages": [
+                26,
+                27
+            ],
+            "requirments": "The Merchant Flees (Global) COMPLETE",
+            "chapter_id": 2,
+            "links_to": [
+                28,
+                16,
+                18
+            ],
+            "linked_from": [
+                7,
+                13
+            ],
+            "blocked_by": [],
+            "required_by": [
+                8
+            ],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 21,
+            "name": "#21 Infernal Throne",
+            "pages": [
+                28,
+                29
+            ],
+            "requirments": "The Rift Neutralized (Global) INCOMPLETE",
+            "chapter_id": 3,
+            "links_to": [],
+            "linked_from": [
+                10
+            ],
+            "blocked_by": [
+                27,
+                36
+            ],
+            "required_by": [],
+            "chapter_name": "Demon and Rift"
+        },
+        {
+            "id": 22,
+            "name": "#22 Temple of Elements",
+            "pages": [
+                29,
+                30
+            ],
+            "requirments": "A Demon’s Errand (Party) or Following Clues (Party) COMPLETE",
+            "links_to": [
+                35,
+                31,
+                36
+            ],
+            "linked_from": [
+                10,
+                26
+            ],
+            "blocked_by": [],
+            "required_by": []
+        },
+        {
+            "id": 23,
+            "name": "#23 Deep Ruins",
+            "pages": [
+                31,
+                32
+            ],
+            "chapter_id": 4,
+            "links_to": [],
+            "linked_from": [
+                18
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Sewers"
+        },
+        {
+            "id": 24,
+            "name": "#24 Echo Chamber",
+            "pages": [
+                32,
+                33
+            ],
+            "chapter_id": 10,
+            "links_to": [
+                32,
+                30
+            ],
+            "linked_from": [
+                16
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Voice"
+        },
+        {
+            "id": 25,
+            "name": "#25 Icecrag Ascent",
+            "pages": [
+                34,
+                35
+            ],
+            "chapter_id": 9,
+            "links_to": [
+                33,
+                34
+            ],
+            "linked_from": [
+                16
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Dragons"
+        },
+        {
+            "id": 26,
+            "name": "#26 Ancient Cistern",
+            "pages": [
+                35,
+                36
+            ],
+            "requirments": "Water-Breathing (Global) or Through the Ruins (Party) COMPLETE",
+            "chapter_id": 4,
+            "links_to": [
+                22
+            ],
+            "linked_from": [
+                18
+            ],
+            "blocked_by": [],
+            "required_by": [
+                23,
+                43
+            ],
+            "chapter_name": "Sewers"
+        },
+        {
+            "id": 27,
+            "name": "#27 Ruinous Rift",
+            "pages": [
+                37
+            ],
+            "requirments": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
+            "chapter_id": 3,
+            "links_to": [],
+            "linked_from": [
+                19
+            ],
+            "blocked_by": [
+                35
+            ],
+            "required_by": [],
+            "chapter_name": "Demon and Rift"
+        },
+        {
+            "id": 28,
+            "name": "#28 Outer Ritual Chamber",
+            "pages": [
+                38
+            ],
+            "requirments": "Dark Bounty (Party) COMPLETE",
+            "chapter_id": 2,
+            "links_to": [
+                29
+            ],
+            "linked_from": [
+                12,
+                20
+            ],
+            "blocked_by": [],
+            "required_by": [
+                6
+            ],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 29,
+            "name": "#29 Sanctuary of Gloom",
+            "pages": [
+                39
+            ],
+            "requirments": "An Invitation (Party) COMPLETE",
+            "chapter_id": 2,
+            "links_to": [],
+            "linked_from": [
+                28
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "The Merchant"
+        },
+        {
+            "id": 30,
+            "name": "#30 Shrine of the Depths",
+            "pages": [
+                40,
+                41
+            ],
+            "requirments": "The Voice’s Command (Party)",
+            "chapter_id": 10,
+            "links_to": [
+                42
+            ],
+            "linked_from": [
+                24
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Voice"
+        },
+        {
+            "id": 31,
+            "name": "#31 Plane of Night",
+            "pages": [
+                41,
+                42
+            ],
+            "requirments": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
+            "links_to": [
+                39,
+                37,
+                38,
+                43
+            ],
+            "linked_from": [
+                22
+            ],
+            "blocked_by": [
+                35
+            ],
+            "required_by": [
+                14,
+                21
+            ]
+        },
+        {
+            "id": 32,
+            "name": "#32 Decrepit Wood",
+            "pages": [
+                43
+            ],
+            "requirments": "The Voice’s Command (Party) COMPLETE",
+            "chapter_id": 10,
+            "links_to": [
+                33,
+                40
+            ],
+            "linked_from": [
+                24
+            ],
+            "blocked_by": [
+                42
+            ],
+            "required_by": [],
+            "chapter_name": "Voice"
+        },
+        {
+            "id": 33,
+            "name": "#33 Savvas Armory",
+            "pages": [
+                44
+            ],
+            "requirments": "The Voice’s Command (Party) or The Drake’s Command (Party) COMPLETE",
+            "links_to": [],
+            "linked_from": [
+                25,
+                32
+            ],
+            "blocked_by": [
+                34,
+                42
+            ],
+            "required_by": []
+        },
+        {
+            "id": 34,
+            "name": "#34 Scorched Summit",
+            "pages": [
+                45
+            ],
+            "requirments": "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE",
+            "chapter_id": 9,
+            "links_to": [],
+            "linked_from": [
+                25
+            ],
+            "blocked_by": [
+                33
+            ],
+            "required_by": [],
+            "chapter_name": "Dragons"
+        },
+        {
+            "id": 35,
+            "name": "#35 Gloomhaven Battlements A",
+            "pages": [
+                46,
+                47
+            ],
+            "requirments": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
+            "chapter_id": 3,
+            "links_to": [
+                45
+            ],
+            "linked_from": [
+                22
+            ],
+            "blocked_by": [
+                21,
+                27,
+                36
+            ],
+            "required_by": [
+                10
+            ],
+            "chapter_name": "Demon and Rift"
+        },
+        {
+            "id": 36,
+            "name": "#36 Gloomhaven Battlements B",
+            "pages": [
+                47,
+                48
+            ],
+            "requirments": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
+            "chapter_id": 3,
+            "links_to": [],
+            "linked_from": [
+                22
+            ],
+            "blocked_by": [
+                21,
+                27,
+                35
+            ],
+            "required_by": [
+                10
+            ],
+            "chapter_name": "Demon and Rift"
+        },
+        {
+            "id": 37,
+            "name": "#37 Doom Trench",
+            "pages": [
+                49
+            ],
+            "requirments": "Water-Breathing (Global) COMPLETE",
+            "chapter_id": 6,
+            "links_to": [
+                47
+            ],
+            "linked_from": [
+                31
+            ],
+            "blocked_by": [],
+            "required_by": [
+                43
+            ],
+            "chapter_name": "Under Oceans"
+        },
+        {
+            "id": 38,
+            "name": "#38 Slave Pens",
+            "pages": [
+                50,
+                51
+            ],
+            "chapter_id": 7,
+            "links_to": [
+                48,
+                44
+            ],
+            "linked_from": [
+                31
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Through Jungles"
+        },
+        {
+            "id": 39,
+            "name": "#39 Treacherous Divide",
+            "pages": [
+                51,
+                52
+            ],
+            "chapter_id": 8,
+            "links_to": [
+                46,
+                15
+            ],
+            "linked_from": [
+                31
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Atop Mountains"
+        },
+        {
+            "id": 40,
+            "name": "#40 Ancient Defense Network",
+            "pages": [
+                53,
+                54
+            ],
+            "requirments": "The Voice’s Command (Party) and The Voice’s Treasure (Party) COMPLETE",
+            "chapter_id": 10,
+            "links_to": [
+                41
+            ],
+            "linked_from": [
+                32
+            ],
+            "blocked_by": [
+                42
+            ],
+            "required_by": [
+                33
+            ],
+            "chapter_name": "Voice"
+        },
+        {
+            "id": 41,
+            "name": "#41 Timeworn Tomb",
+            "pages": [
+                54,
+                55
+            ],
+            "requirments": "The Voice’s Command (Party) COMPLETE",
+            "chapter_id": 10,
+            "links_to": [],
+            "linked_from": [
+                40
+            ],
+            "blocked_by": [
+                42
+            ],
+            "required_by": [],
+            "chapter_name": "Voice"
+        },
+        {
+            "id": 42,
+            "name": "#42 Realm of the Voice",
+            "pages": [
+                56
+            ],
+            "requirments": "The Scepter and the Voice (Party) COMPLETE and The Voice Freed (Global) INCOMPLETE",
+            "chapter_id": 10,
+            "links_to": [],
+            "linked_from": [
+                30
+            ],
+            "blocked_by": [
+                41
+            ],
+            "required_by": [],
+            "chapter_name": "Voice"
+        },
+        {
+            "id": 43,
+            "name": "#43 Drake Nest",
+            "pages": [
+                57,
+                58
+            ],
+            "requirments": "The Power of Enhancement (Global) COMPLETE",
+            "links_to": [],
+            "linked_from": [
+                18,
+                31
+            ],
+            "blocked_by": [],
+            "required_by": [
+                14
+            ]
+        },
+        {
+            "id": 44,
+            "name": "#44 Tribal Assault",
+            "pages": [
+                58,
+                59
+            ],
+            "requirments": "Redthorn’s Aid (Party) COMPLETE",
+            "chapter_id": 7,
+            "links_to": [],
+            "linked_from": [
+                38
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Through Jungles"
+        },
+        {
+            "id": 45,
+            "name": "#45 Rebel Swamp",
+            "pages": [
+                60
+            ],
+            "requirments": "City Rule: Demonic (Global) COMPLETE",
+            "chapter_id": 5,
+            "links_to": [
+                49,
+                50
+            ],
+            "linked_from": [
+                35
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Rebellion Rises"
+        },
+        {
+            "id": 46,
+            "name": "#46 Nightmare Peak",
+            "pages": [
+                61
+            ],
+            "requirments": "Across the Divide (Party) COMPLETE",
+            "chapter_id": 8,
+            "links_to": [
+                51
+            ],
+            "linked_from": [
+                39
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Atop Mountains"
+        },
+        {
+            "id": 47,
+            "name": "#47 Lair of the Unseeing Eye",
+            "pages": [
+                62
+            ],
+            "requirments": "Through the Trench (Party) COMPLETE",
+            "chapter_id": 6,
+            "links_to": [
+                51
+            ],
+            "linked_from": [
+                37
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Under Oceans"
+        },
+        {
+            "id": 48,
+            "name": "#48 Shadow Weald",
+            "pages": [
+                63
+            ],
+            "requirments": "Redthorn’s Aid (Party) COMPLETE",
+            "chapter_id": 7,
+            "links_to": [
+                51
+            ],
+            "linked_from": [
+                38
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Through Jungles"
+        },
+        {
+            "id": 49,
+            "name": "#49 Rebel's Stand",
+            "pages": [
+                64
+            ],
+            "requirments": "City Rule: Demonic (Global) COMPLETE",
+            "chapter_id": 5,
+            "links_to": [],
+            "linked_from": [
+                45
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "chapter_name": "Rebellion Rises"
+        },
+        {
+            "id": 50,
+            "name": "#50 Ghost Forrest",
+            "pages": [
+                65,
+                66
+            ],
+            "requirments": "City Rule: Demonic (Global) COMPLETE and Annihilation of Order (Global) INCOMPLETE",
+            "chapter_id": 5,
+            "links_to": [],
+            "linked_from": [
+                45
+            ],
+            "blocked_by": [
+                49
+            ],
+            "required_by": [],
+            "chapter_name": "Rebellion Rises"
+        },
+        {
+            "id": 51,
+            "name": "#51 The Void",
+            "pages": [
+                66,
+                67
+            ],
+            "requirments": "",
+            "links_to": [],
+            "linked_from": [
+                46,
+                47,
+                48
+            ],
+            "blocked_by": [],
+            "required_by": [
+                46,
+                47,
+                48
+            ]
+        }
+    ],
+    "chapters": [
+        {
+            "id": 1,
+            "name": "Intro"
+        },
+        {
+            "id": 2,
+            "name": "The Merchant"
+        },
+        {
+            "id": 3,
+            "name": "Demon and Rift"
+        },
+        {
+            "id": 4,
+            "name": "Sewers"
+        },
+        {
+            "id": 5,
+            "name": "Rebellion Rises"
+        },
+        {
+            "id": 6,
+            "name": "Under Oceans"
+        },
+        {
+            "id": 7,
+            "name": "Through Jungles"
+        },
+        {
+            "id": 8,
+            "name": "Atop Mountains"
+        },
+        {
+            "id": 9,
+            "name": "Dragons"
+        },
+        {
+            "id": 10,
+            "name": "Voice"
+        }
+    ]
+}
