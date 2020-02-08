@@ -25,6 +25,7 @@
     "homepage": "https://github.com/dducro/gloomhaven-storyline#readme",
     "devDependencies": {
         "cross-env": "^6.0.3",
+        "cypress": "^4.0.1",
         "glob-all": "^3.1.0",
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.15",
