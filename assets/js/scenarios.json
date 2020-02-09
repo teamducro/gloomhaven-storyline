@@ -13,7 +13,8 @@
             "linked_from": [],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Intro"
+            "chapter_name": "Intro",
+            "description": ""
         },
         {
             "id": 2,
@@ -33,7 +34,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Intro"
+            "chapter_name": "Intro",
+            "description": ""
         },
         {
             "id": 3,
@@ -55,7 +57,8 @@
                 8
             ],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 4,
@@ -72,7 +75,8 @@
                 2
             ],
             "blocked_by": [],
-            "required_by": []
+            "required_by": [],
+            "description": ""
         },
         {
             "id": 5,
@@ -91,7 +95,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "description": ""
         },
         {
             "id": 6,
@@ -109,7 +114,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 7,
@@ -130,7 +136,8 @@
             "required_by": [
                 14
             ],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 8,
@@ -153,7 +160,8 @@
                 9
             ],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 9,
@@ -174,7 +182,8 @@
                 8
             ],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 10,
@@ -197,7 +206,8 @@
                 36
             ],
             "required_by": [],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "description": ""
         },
         {
             "id": 11,
@@ -219,7 +229,8 @@
                 12
             ],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 12,
@@ -242,7 +253,8 @@
                 11
             ],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 13,
@@ -266,7 +278,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 14,
@@ -283,7 +296,8 @@
                 18
             ],
             "blocked_by": [],
-            "required_by": []
+            "required_by": [],
+            "description": ""
         },
         {
             "id": 15,
@@ -300,7 +314,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 16,
@@ -319,7 +334,8 @@
                 20
             ],
             "blocked_by": [],
-            "required_by": []
+            "required_by": [],
+            "description": ""
         },
         {
             "id": 17,
@@ -334,7 +350,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 18,
@@ -356,7 +373,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Sewers"
+            "chapter_name": "Sewers",
+            "description": ""
         },
         {
             "id": 19,
@@ -377,7 +395,8 @@
             "required_by": [
                 14
             ],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "description": ""
         },
         {
             "id": 20,
@@ -401,7 +420,8 @@
             "required_by": [
                 8
             ],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 21,
@@ -421,7 +441,8 @@
                 36
             ],
             "required_by": [],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "description": ""
         },
         {
             "id": 22,
@@ -441,7 +462,8 @@
                 26
             ],
             "blocked_by": [],
-            "required_by": []
+            "required_by": [],
+            "description": ""
         },
         {
             "id": 23,
@@ -457,7 +479,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Sewers"
+            "chapter_name": "Sewers",
+            "description": ""
         },
         {
             "id": 24,
@@ -476,7 +499,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "description": ""
         },
         {
             "id": 25,
@@ -495,7 +519,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Dragons"
+            "chapter_name": "Dragons",
+            "description": ""
         },
         {
             "id": 26,
@@ -517,7 +542,8 @@
                 23,
                 43
             ],
-            "chapter_name": "Sewers"
+            "chapter_name": "Sewers",
+            "description": ""
         },
         {
             "id": 27,
@@ -535,7 +561,8 @@
                 35
             ],
             "required_by": [],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "description": ""
         },
         {
             "id": 28,
@@ -556,7 +583,8 @@
             "required_by": [
                 6
             ],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 29,
@@ -572,7 +600,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "description": ""
         },
         {
             "id": 30,
@@ -591,7 +620,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "description": ""
         },
         {
             "id": 31,
@@ -616,7 +646,8 @@
             "required_by": [
                 14,
                 21
-            ]
+            ],
+            "description": ""
         },
         {
             "id": 32,
@@ -637,7 +668,8 @@
                 42
             ],
             "required_by": [],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "description": ""
         },
         {
             "id": 33,
@@ -655,7 +687,8 @@
                 34,
                 42
             ],
-            "required_by": []
+            "required_by": [],
+            "description": ""
         },
         {
             "id": 34,
@@ -673,7 +706,8 @@
                 33
             ],
             "required_by": [],
-            "chapter_name": "Dragons"
+            "chapter_name": "Dragons",
+            "description": ""
         },
         {
             "id": 35,
@@ -698,7 +732,8 @@
             "required_by": [
                 10
             ],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "description": ""
         },
         {
             "id": 36,
@@ -721,7 +756,8 @@
             "required_by": [
                 10
             ],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "description": ""
         },
         {
             "id": 37,
@@ -741,7 +777,8 @@
             "required_by": [
                 43
             ],
-            "chapter_name": "Under Oceans"
+            "chapter_name": "Under Oceans",
+            "description": ""
         },
         {
             "id": 38,
@@ -760,7 +797,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Through Jungles"
+            "chapter_name": "Through Jungles",
+            "description": ""
         },
         {
             "id": 39,
@@ -779,7 +817,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Atop Mountains"
+            "chapter_name": "Atop Mountains",
+            "description": ""
         },
         {
             "id": 40,
@@ -802,7 +841,8 @@
             "required_by": [
                 33
             ],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "description": ""
         },
         {
             "id": 41,
@@ -821,7 +861,8 @@
                 42
             ],
             "required_by": [],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "description": ""
         },
         {
             "id": 42,
@@ -839,7 +880,8 @@
                 41
             ],
             "required_by": [],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "description": ""
         },
         {
             "id": 43,
@@ -857,7 +899,8 @@
             "blocked_by": [],
             "required_by": [
                 14
-            ]
+            ],
+            "description": ""
         },
         {
             "id": 44,
@@ -874,7 +917,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Through Jungles"
+            "chapter_name": "Through Jungles",
+            "description": ""
         },
         {
             "id": 45,
@@ -893,7 +937,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Rebellion Rises"
+            "chapter_name": "Rebellion Rises",
+            "description": ""
         },
         {
             "id": 46,
@@ -911,7 +956,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Atop Mountains"
+            "chapter_name": "Atop Mountains",
+            "description": ""
         },
         {
             "id": 47,
@@ -929,7 +975,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Under Oceans"
+            "chapter_name": "Under Oceans",
+            "description": ""
         },
         {
             "id": 48,
@@ -947,7 +994,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Through Jungles"
+            "chapter_name": "Through Jungles",
+            "description": ""
         },
         {
             "id": 49,
@@ -963,7 +1011,8 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Rebellion Rises"
+            "chapter_name": "Rebellion Rises",
+            "description": ""
         },
         {
             "id": 50,
@@ -982,7 +1031,8 @@
                 49
             ],
             "required_by": [],
-            "chapter_name": "Rebellion Rises"
+            "chapter_name": "Rebellion Rises",
+            "description": ""
         },
         {
             "id": 51,
@@ -1003,7 +1053,8 @@
                 46,
                 47,
                 48
-            ]
+            ],
+            "description": ""
         }
     ],
     "chapters": [

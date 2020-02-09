@@ -5,6 +5,7 @@ export default class Scenario {
     constructor(data) {
         this.id = data.id;
         this.name = data.name;
+        this.description = data.description;
         this.pages = data.pages;
         this.requirments = data.requirments;
         this.chapter_id = data.chapter_id;

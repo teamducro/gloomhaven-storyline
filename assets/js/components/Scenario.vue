@@ -40,7 +40,7 @@
                         <div class="mdc-text-field mdc-text-field--textarea w-full"
                              ref="notes">
                                 <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
-                                          class="mdc-text-field__input" rows="8" cols="40"></textarea>
+                                          class="mdc-text-field__input" rows="4" cols="40"></textarea>
                             <div class="mdc-notched-outline">
                                 <div class="mdc-notched-outline__leading"></div>
                                 <div class="mdc-notched-outline__notch">
@@ -50,6 +50,24 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="mb-3" v-if="false">
+                        <button class="mdc-button mdc-button--raised" :disabled="!scenario.isComplete()"
+                            @click="descriptionVisible = !descriptionVisible">
+                            <i class="material-icons mdc-button__icon">notes</i>
+                            <span class="mdc-button__label">Description</span>
+                            <i class="material-icons mdc-button__icon transition-transform duration-500"
+                            :class="{'rotate-0': descriptionVisible, 'rotate-180': !descriptionVisible}">
+                                keyboard_arrow_up
+                            </i>
+                        </button>
+                    </div>
+
+                    <transition-expand>
+                        <div v-if="scenario.isComplete() && descriptionVisible">
+                            <p class="pb-3" v-html="scenario.description"></p>
+                        </div>
+                    </transition-expand>
 
                     <div class="mb-6">
                         <button class="mdc-button mdc-button--raised" @click="openPages()">
@@ -99,6 +117,7 @@
                 scenario: null,
                 notes: null,
                 stateKey: 1,
+                descriptionVisible: false,
                 scenarioRepository: new ScenarioRepository()
             }
         },
