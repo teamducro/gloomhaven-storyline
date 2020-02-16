@@ -3,6 +3,8 @@ import ScenarioValidator from "./services/ScenarioValidator";
 import SocialSharing from 'vue-social-sharing';
 import VueClipboard from 'vue-clipboard2';
 import ShareState from "./services/ShareState";
+import QuestRepository from "./repositories/QuestRepository";
+import QuestValidator from "./services/QuestValidator";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -20,7 +22,8 @@ window.app = new Vue({
     el: '#app',
     data() {
         return {
-            scenarios: null
+            scenarios: null,
+            quests: null
         }
     },
     mounted() {
@@ -28,7 +31,11 @@ window.app = new Vue({
     },
     methods: {
         fetchScenarios() {
-            this.scenarios = (new ScenarioRepository).fetch();
+            let scenarioRepository = new ScenarioRepository;
+            let questRepository = new QuestRepository;
+            this.quests = questRepository.fetch();
+            this.scenarios = scenarioRepository.fetch();
+            scenarioRepository.setQuests(this.scenarios, this.quests);
 
             this.$nextTick(() => {
                 (new ShareState).load();

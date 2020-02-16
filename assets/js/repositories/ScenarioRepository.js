@@ -11,7 +11,7 @@ export default class ScenarioRepository {
             this.fetchChapter(scenario);
 
             return scenario;
-        })
+        });
     }
 
     changeState(scenario, state) {
@@ -44,15 +44,19 @@ export default class ScenarioRepository {
     }
 
     findMany(list) {
-        return collect().wrap(list).map((id) => {
-            return this.find(id);
-        })
+        return app.scenarios.whereIn('id', list);
     }
 
     fetchChapter(scenario) {
         if (scenario.chapter_id) {
             scenario.chapter_name = this.chapters.firstWhere('id', scenario.chapter_id).name;
         }
+    }
+
+    setQuests(scenarios, quests) {
+        scenarios.each(scenario => {
+            scenario.quests = quests.whereIn('id', scenario.quests);
+        });
     }
 
     get chapters() {

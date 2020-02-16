@@ -1,0 +1,461 @@
+{
+    "quests": [
+        {
+            "id": 1,
+            "name": "The Merchant's Request",
+            "stages": [
+                "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
+                "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.<br><br>You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic prowess. Nevertheless, you slew them and their unholy allies§. Your target was not among the dead, but a passageway deeper into the catacombs awaits.",
+                "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow.<br><br>You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic prowess. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.<br><br>You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
+            ],
+            "checks": [
+                "",
+                "1==c",
+                "2==c"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "The Merchant's Wrath",
+            "stages": [
+                "A tribe of Inox in the Dagger Forest has ransacked a couple of Jekserah's caravans headed to the Capital. If you can make an example of them, she will pay you handsomely.",
+                "A tribe of Inox in the Dagger Forest has ransacked a couple of Jekserah's caravans headed to the Capital. If you can make an example of them, she will pay you handsomely.<br><br>The Inox tribe is dead. You've made an brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
+                "A tribe of Inox in the Dagger Forest has ransacked a couple of Jekserah's caravans headed to the Capital. If you can make an example of them, she will pay you handsomely.<br><br>Jekserah has fled from Gloomhaven and sworn vengeange upon you due to your actions against her. She will not be keen on paying you for running her errands anymore."
+            ],
+            "checks": [
+                "2==c",
+                "2==c && 8==c",
+                "3==c"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Seeking Gloom",
+            "stages": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+                "2==c",
+                "4==c",
+                "6==c",
+                "6==i && 4==i && (11==c || 20==c)",
+                "6==i && 4==c && (11==c || 20==c)",
+                "6==c && (11==c || 20==c)",
+                "6==c && 11==c",
+                "28==c",
+                "29==c"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Tales from the Crypt",
+            "stages": [
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Scry Me a River",
+            "stages": [
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 6,
+            "name": "The Merchant's Secret",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 7,
+            "name": "A Valrath's Best Friend",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Tripping the Rift",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Necromancer Hunt",
+            "stages": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 10,
+            "name": "New Management",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 11,
+            "name": "The Old Guard",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 12,
+            "name": "The Heart's Desire",
+            "stages": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 13,
+            "name": "The Enchantress",
+            "stages": [
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Unlimited Power",
+            "stages": [
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 15,
+            "name": "There Be Dragons",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Treasure Island",
+            "stages": [
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Sewer Surfin",
+            "stages": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Closing the Rift",
+            "stages": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Exorcism",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 20,
+            "name": "The Artifact",
+            "stages": [
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 21,
+            "name": "The Way Around",
+            "stages": [
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Hearing Things",
+            "stages": [
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Look Who's Talking",
+            "stages": [
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Let it Hail",
+            "stages": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 25,
+            "name": "The Voice",
+            "stages": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Armory Heist",
+            "stages": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Dragon Slayer",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Dark Souls",
+            "stages": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Dancing with the Devil",
+            "stages": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Under the Sea",
+            "stages": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 31,
+            "name": "Black Forest",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 32,
+            "name": "Ice Climbers",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Shut Up and Sit Down",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Growing Gills",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Let Freedom Ring",
+            "stages": [
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 36,
+            "name": "Rebel Scum",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 37,
+            "name": "No Survivors",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 38,
+            "name": "A New Hope",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Corrupting Influence",
+            "stages": [
+                "",
+                "",
+                ""
+            ],
+            "checks": [
+            ]
+        }
+    ]
+}

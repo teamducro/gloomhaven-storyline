@@ -1,5 +1,6 @@
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import {ScenarioState} from "../models/ScenarioState";
+import QuestValidator from "./QuestValidator";
 
 export default class ScenarioValidator {
 
@@ -12,6 +13,8 @@ export default class ScenarioValidator {
                 this.checkRequired(scenario);
             });
         });
+
+        this.questValidator.validate();
     }
 
     checkHidden(scenario) {
@@ -104,5 +107,9 @@ export default class ScenarioValidator {
 
     get scenarioRepository() {
         return this.scenarioRepository2 || (this.scenarioRepository2 = new ScenarioRepository);
+    }
+
+    get questValidator() {
+        return this.questValidator2 || (this.questValidator2 = new QuestValidator);
     }
 }

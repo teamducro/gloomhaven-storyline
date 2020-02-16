@@ -51,23 +51,24 @@
                         </div>
                     </div>
 
-                    <div class="mb-3" v-if="false">
-                        <button class="mdc-button mdc-button--raised" :disabled="!scenario.isComplete()"
-                            @click="descriptionVisible = !descriptionVisible">
-                            <i class="material-icons mdc-button__icon">notes</i>
-                            <span class="mdc-button__label">Description</span>
-                            <i class="material-icons mdc-button__icon transition-transform duration-500"
-                            :class="{'rotate-0': descriptionVisible, 'rotate-180': !descriptionVisible}">
-                                keyboard_arrow_up
-                            </i>
-                        </button>
+                    <div class="mb-3" v-if="scenario.isVisible()">
+                        <template v-for="(quest, index) in scenario.quests">
+                            <button class="mdc-button"
+                                    @click="toggleQuest(index)">
+                                <i class="material-icons mdc-button__icon">notes</i>
+                                <span class="mdc-button__label">{{ quest.name }}</span>
+                                <i class="material-icons mdc-button__icon transition-transform duration-500"
+                                   :class="{'rotate-0': questExpand[index], 'rotate-180': !questExpand[index]}">
+                                    keyboard_arrow_up
+                                </i>
+                            </button>
+                            <transition-expand>
+                                <div v-if="questExpand[index]">
+                                    <p class="pb-3" v-html="quest.stages[quest.stage]"></p>
+                                </div>
+                            </transition-expand>
+                        </template>
                     </div>
-
-                    <transition-expand>
-                        <div v-if="scenario.isComplete() && descriptionVisible">
-                            <p class="pb-3" v-html="scenario.description"></p>
-                        </div>
-                    </transition-expand>
 
                     <div class="mb-6">
                         <button class="mdc-button mdc-button--raised" @click="openPages()">
@@ -117,7 +118,7 @@
                 scenario: null,
                 notes: null,
                 stateKey: 1,
-                descriptionVisible: false,
+                questExpand: [],
                 scenarioRepository: new ScenarioRepository()
             }
         },
@@ -171,6 +172,9 @@
                     this.rerenderStateSelection();
                 }
             },
+            toggleQuest(index) {
+                this.$set(this.questExpand, index, !this.questExpand[index]);
+            },
             openPages() {
                 this.$refs['pages'].open();
             },
@@ -179,6 +183,7 @@
             },
             open(id) {
                 this.scenario = this.scenarioRepository.find(id);
+                this.questExpand = new Array(this.scenario.quests.length);
                 this.rerenderStateSelection();
                 this.$nextTick(() => {
                     this.$refs['modal'].open();
