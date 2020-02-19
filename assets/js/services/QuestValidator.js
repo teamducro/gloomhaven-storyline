@@ -20,12 +20,21 @@ export default class QuestValidator {
             return true;
         }
 
-        check = check.replace(/\d*==/gm, (id) => {
-            id = parseInt(id.replace('=', ''));
-            return '"' + this.scenarioRepository.find(id).state + '"==';
+        check = check.replace(/\d*'?[!=]=/gm, (value) => {
+            let id = parseInt(value.replace(/\D/g, ''));
+            let scenario = this.scenarioRepository.find(id);
+            let operator = value.slice(-2);
+
+            // check state
+            if (!value.includes("'")) {
+                return '"' + scenario.state + '"' + operator;
+            }
+            // check choice
+            else {
+                return scenario.choice + operator;
+            }
         });
         const c = ScenarioState.complete;
-        const i = ScenarioState.incomplete;
 
         return eval(check);
     }
