@@ -374,6 +374,7 @@
     <g id="node50" data-id="50" class="scenario">
         <circle cx="283.3491094" cy="87.02364176" r="10.8" class="node"/>
         <text x="267.50184" y="82.69546">50</text>
+        <text x="270" y="82.69546" class="blocked">×</text>
     </g>
     <g id="node29" data-id="29" class="scenario">
         <circle cx="105.7336423" cy="495.1077616" r="10.8" class="node"/>
