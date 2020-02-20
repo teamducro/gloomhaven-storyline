@@ -14,7 +14,7 @@ export default class QuestValidator {
     }
 
     check(check) {
-        check = check.replace(' ', '');
+        check = check.replace(/ /g, '');
 
         if (!check || check.length === 0) {
             return true;
