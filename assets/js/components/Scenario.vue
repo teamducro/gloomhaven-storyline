@@ -2,7 +2,7 @@
     <div>
         <modal ref="modal">
             <template v-slot:body v-if="scenario">
-                <div class="pl-6 border-b border-white2-25"
+                <div id="scenario-title" class="pl-6 border-b border-white2-25"
                      :class="{'pb-2': scenario.chapter, 'pb-4': !scenario.chapter}">
                     <h2 class="mdc-dialog__title p-0 leading-none">{{ scenario.name }}
                         <button type="button" data-mdc-dialog-action="close"
@@ -13,7 +13,7 @@
                     <span v-if="scenario.chapter_name" class="text-xs uppercase text-white2-50 font-bold">{{ scenario.chapter_name }}</span>
                 </div>
 
-                <div class="mdc-dialog__content" id="my-dialog-content">
+                <div class="mdc-dialog__content" id="scenario-content">
                     <div class="flex mb-6 mt-4">
                         <radio id="incomplete" group="states" label="Incomplete"
                                :key="'incomplete-' + stateKey"
@@ -40,7 +40,7 @@
                         <div class="mdc-text-field mdc-text-field--textarea w-full"
                              ref="notes">
                                 <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
-                                          class="mdc-text-field__input" rows="8" cols="40"></textarea>
+                                          class="mdc-text-field__input" rows="4" cols="40"></textarea>
                             <div class="mdc-notched-outline">
                                 <div class="mdc-notched-outline__leading"></div>
                                 <div class="mdc-notched-outline__notch">
@@ -49,6 +49,25 @@
                                 <div class="mdc-notched-outline__trailing"></div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="mb-3" v-if="scenario.isVisible()">
+                        <template v-for="(quest, index) in scenario.quests">
+                            <button class="mdc-button"
+                                    @click="toggleQuest(index)">
+                                <i class="material-icons mdc-button__icon">notes</i>
+                                <span class="mdc-button__label">{{ quest.name }}</span>
+                                <i class="material-icons mdc-button__icon transition-transform duration-500"
+                                   :class="{'rotate-0': questExpand[index], 'rotate-180': !questExpand[index]}">
+                                    keyboard_arrow_up
+                                </i>
+                            </button>
+                            <transition-expand>
+                                <div v-if="questExpand[index]">
+                                    <p class="pb-3" v-html="quest.stages[quest.stage]"></p>
+                                </div>
+                            </transition-expand>
+                        </template>
                     </div>
 
                     <div class="mb-6">
@@ -99,6 +118,7 @@
                 scenario: null,
                 notes: null,
                 stateKey: 1,
+                questExpand: [],
                 scenarioRepository: new ScenarioRepository()
             }
         },
@@ -152,6 +172,9 @@
                     this.rerenderStateSelection();
                 }
             },
+            toggleQuest(index) {
+                this.$set(this.questExpand, index, !this.questExpand[index]);
+            },
             openPages() {
                 this.$refs['pages'].open();
             },
@@ -160,6 +183,7 @@
             },
             open(id) {
                 this.scenario = this.scenarioRepository.find(id);
+                this.questExpand = new Array(this.scenario.quests.length);
                 this.rerenderStateSelection();
                 this.$nextTick(() => {
                     this.$refs['modal'].open();

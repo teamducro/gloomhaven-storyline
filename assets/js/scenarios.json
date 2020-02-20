@@ -13,7 +13,10 @@
             "linked_from": [],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Intro"
+            "chapter_name": "Intro",
+            "quests": [
+                1
+            ]
         },
         {
             "id": 2,
@@ -33,7 +36,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Intro"
+            "chapter_name": "Intro",
+            "quests": [
+                1
+            ]
         },
         {
             "id": 3,
@@ -55,7 +61,10 @@
                 8
             ],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                2
+            ]
         },
         {
             "id": 4,
@@ -72,7 +81,10 @@
                 2
             ],
             "blocked_by": [],
-            "required_by": []
+            "required_by": [],
+            "quests": [
+                3
+            ]
         },
         {
             "id": 5,
@@ -91,7 +103,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "quests": [
+                4
+            ]
         },
         {
             "id": 6,
@@ -109,7 +124,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                3
+            ]
         },
         {
             "id": 7,
@@ -130,7 +148,11 @@
             "required_by": [
                 14
             ],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                5,
+                9
+            ]
         },
         {
             "id": 8,
@@ -153,7 +175,11 @@
                 9
             ],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                6,
+                7
+            ]
         },
         {
             "id": 9,
@@ -174,7 +200,10 @@
                 8
             ],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                7
+            ]
         },
         {
             "id": 10,
@@ -197,7 +226,10 @@
                 36
             ],
             "required_by": [],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "quests": [
+                8
+            ]
         },
         {
             "id": 11,
@@ -219,7 +251,12 @@
                 12
             ],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                3,
+                10,
+                11
+            ]
         },
         {
             "id": 12,
@@ -242,7 +279,12 @@
                 11
             ],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                3,
+                10,
+                11
+            ]
         },
         {
             "id": 13,
@@ -266,7 +308,11 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                9,
+                12
+            ]
         },
         {
             "id": 14,
@@ -283,7 +329,10 @@
                 18
             ],
             "blocked_by": [],
-            "required_by": []
+            "required_by": [],
+            "quests": [
+                13
+            ]
         },
         {
             "id": 15,
@@ -300,7 +349,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                14
+            ]
         },
         {
             "id": 16,
@@ -319,7 +371,10 @@
                 20
             ],
             "blocked_by": [],
-            "required_by": []
+            "required_by": [],
+            "quests": [
+                15
+            ]
         },
         {
             "id": 17,
@@ -334,7 +389,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                16
+            ]
         },
         {
             "id": 18,
@@ -356,7 +414,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Sewers"
+            "chapter_name": "Sewers",
+            "quests": [
+                17
+            ]
         },
         {
             "id": 19,
@@ -377,7 +438,10 @@
             "required_by": [
                 14
             ],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "quests": [
+                18
+            ]
         },
         {
             "id": 20,
@@ -401,7 +465,11 @@
             "required_by": [
                 8
             ],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                3,
+                9
+            ]
         },
         {
             "id": 21,
@@ -421,7 +489,10 @@
                 36
             ],
             "required_by": [],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "quests": [
+                19
+            ]
         },
         {
             "id": 22,
@@ -441,7 +512,10 @@
                 26
             ],
             "blocked_by": [],
-            "required_by": []
+            "required_by": [],
+            "quests": [
+                20
+            ]
         },
         {
             "id": 23,
@@ -457,7 +531,11 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Sewers"
+            "chapter_name": "Sewers",
+            "quests": [
+                17,
+                21
+            ]
         },
         {
             "id": 24,
@@ -476,7 +554,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "quests": [
+                22
+            ]
         },
         {
             "id": 25,
@@ -495,7 +576,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Dragons"
+            "chapter_name": "Dragons",
+            "quests": [
+                15
+            ]
         },
         {
             "id": 26,
@@ -517,7 +601,10 @@
                 23,
                 43
             ],
-            "chapter_name": "Sewers"
+            "chapter_name": "Sewers",
+            "quests": [
+                17
+            ]
         },
         {
             "id": 27,
@@ -535,7 +622,11 @@
                 35
             ],
             "required_by": [],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "quests": [
+                8,
+                18
+            ]
         },
         {
             "id": 28,
@@ -556,7 +647,10 @@
             "required_by": [
                 6
             ],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                3
+            ]
         },
         {
             "id": 29,
@@ -572,7 +666,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant"
+            "chapter_name": "The Merchant",
+            "quests": [
+                3
+            ]
         },
         {
             "id": 30,
@@ -591,7 +688,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "quests": [
+                23
+            ]
         },
         {
             "id": 31,
@@ -616,6 +716,9 @@
             "required_by": [
                 14,
                 21
+            ],
+            "quests": [
+                24
             ]
         },
         {
@@ -637,7 +740,10 @@
                 42
             ],
             "required_by": [],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "quests": [
+                25
+            ]
         },
         {
             "id": 33,
@@ -655,7 +761,12 @@
                 34,
                 42
             ],
-            "required_by": []
+            "required_by": [],
+            "quests": [
+                25,
+                26,
+                27
+            ]
         },
         {
             "id": 34,
@@ -673,7 +784,10 @@
                 33
             ],
             "required_by": [],
-            "chapter_name": "Dragons"
+            "chapter_name": "Dragons",
+            "quests": [
+                27
+            ]
         },
         {
             "id": 35,
@@ -698,7 +812,10 @@
             "required_by": [
                 10
             ],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "quests": [
+                28
+            ]
         },
         {
             "id": 36,
@@ -721,7 +838,10 @@
             "required_by": [
                 10
             ],
-            "chapter_name": "Demon and Rift"
+            "chapter_name": "Demon and Rift",
+            "quests": [
+                29
+            ]
         },
         {
             "id": 37,
@@ -741,7 +861,10 @@
             "required_by": [
                 43
             ],
-            "chapter_name": "Under Oceans"
+            "chapter_name": "Under Oceans",
+            "quests": [
+                30
+            ]
         },
         {
             "id": 38,
@@ -760,7 +883,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Through Jungles"
+            "chapter_name": "Through Jungles",
+            "quests": [
+                31
+            ]
         },
         {
             "id": 39,
@@ -779,7 +905,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Atop Mountains"
+            "chapter_name": "Atop Mountains",
+            "quests": [
+                32
+            ]
         },
         {
             "id": 40,
@@ -802,7 +931,10 @@
             "required_by": [
                 33
             ],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "quests": [
+                25
+            ]
         },
         {
             "id": 41,
@@ -821,7 +953,10 @@
                 42
             ],
             "required_by": [],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "quests": [
+                25
+            ]
         },
         {
             "id": 42,
@@ -839,7 +974,10 @@
                 41
             ],
             "required_by": [],
-            "chapter_name": "Voice"
+            "chapter_name": "Voice",
+            "quests": [
+                33
+            ]
         },
         {
             "id": 43,
@@ -857,6 +995,9 @@
             "blocked_by": [],
             "required_by": [
                 14
+            ],
+            "quests": [
+                34
             ]
         },
         {
@@ -874,7 +1015,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Through Jungles"
+            "chapter_name": "Through Jungles",
+            "quests": [
+                35
+            ]
         },
         {
             "id": 45,
@@ -893,7 +1037,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Rebellion Rises"
+            "chapter_name": "Rebellion Rises",
+            "quests": [
+                36
+            ]
         },
         {
             "id": 46,
@@ -911,7 +1058,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Atop Mountains"
+            "chapter_name": "Atop Mountains",
+            "quests": [
+                32
+            ]
         },
         {
             "id": 47,
@@ -929,7 +1079,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Under Oceans"
+            "chapter_name": "Under Oceans",
+            "quests": [
+                30
+            ]
         },
         {
             "id": 48,
@@ -947,7 +1100,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Through Jungles"
+            "chapter_name": "Through Jungles",
+            "quests": [
+                31
+            ]
         },
         {
             "id": 49,
@@ -963,7 +1119,10 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Rebellion Rises"
+            "chapter_name": "Rebellion Rises",
+            "quests": [
+                37
+            ]
         },
         {
             "id": 50,
@@ -982,7 +1141,10 @@
                 49
             ],
             "required_by": [],
-            "chapter_name": "Rebellion Rises"
+            "chapter_name": "Rebellion Rises",
+            "quests": [
+                38
+            ]
         },
         {
             "id": 51,
@@ -1003,6 +1165,9 @@
                 46,
                 47,
                 48
+            ],
+            "quests": [
+                39
             ]
         }
     ],

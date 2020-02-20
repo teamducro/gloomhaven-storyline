@@ -11,7 +11,7 @@ export default class ScenarioRepository {
             this.fetchChapter(scenario);
 
             return scenario;
-        })
+        });
     }
 
     changeState(scenario, state) {
@@ -53,6 +53,12 @@ export default class ScenarioRepository {
         if (scenario.chapter_id) {
             scenario.chapter_name = this.chapters.firstWhere('id', scenario.chapter_id).name;
         }
+    }
+
+    setQuests(scenarios, quests) {
+        scenarios.each(scenario => {
+            scenario.quests = quests.whereIn('id', scenario.quests);
+        });
     }
 
     get chapters() {

@@ -43,6 +43,7 @@
         },
         methods: {
             open() {
+                this.current = 0;
                 this.$refs['modal'].open();
             },
             prev() {
