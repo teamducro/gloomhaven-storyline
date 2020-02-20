@@ -44,7 +44,9 @@ export default class ScenarioRepository {
     }
 
     findMany(list) {
-        return app.scenarios.whereIn('id', list);
+        return collect().wrap(list).map((id) => {
+            return this.find(id);
+        })
     }
 
     fetchChapter(scenario) {
