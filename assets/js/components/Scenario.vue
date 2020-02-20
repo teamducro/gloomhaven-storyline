@@ -51,7 +51,7 @@
                         </div>
                     </div>
 
-                    <div class="mb-3" v-if="scenario.isVisible()">
+                    <div class="mb-3 flex flex-col items-start" v-if="scenario.isVisible()">
                         <template v-for="(quest, index) in scenario.quests">
                             <button class="mdc-button"
                                     @click="toggleQuest(index)">
