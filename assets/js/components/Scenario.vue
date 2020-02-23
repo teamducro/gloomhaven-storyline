@@ -51,7 +51,7 @@
                         </div>
                     </div>
 
-                    <div class="mb-3 flex flex-col items-start" v-if="scenario.isVisible()">
+                    <div class="mb-3 flex flex-col items-start">
                         <template v-for="(quest, index) in scenario.quests">
                             <button class="mdc-button"
                                     @click="toggleQuest(index)">
@@ -68,6 +68,19 @@
                                 </div>
                             </transition-expand>
                         </template>
+                    </div>
+
+                    <div class="mb-6" v-if="scenario.treasures.isNotEmpty()">
+                        <h2 class="text-white">Treasures</h2>
+                        <div v-for="(treasure, id) in scenario.treasures.items" :key="id"
+                            class="flex items-center">
+                            <checkbox
+                                    :id="id"
+                                    :label="'#' + id"
+                                    :checked="scenario.isTreasureUnlocked(id)"
+                                    @changed="treasureChanged"></checkbox>
+                            <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">{{ treasure }}</span>
+                        </div>
                     </div>
 
                     <div class="mb-6">
@@ -111,8 +124,10 @@
     import ScenarioRepository from "../repositories/ScenarioRepository";
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../models/ScenarioState";
+    import Checkbox from "./Checkbox";
 
     export default {
+        components: {Checkbox},
         data() {
             return {
                 scenario: null,
@@ -161,6 +176,9 @@
             },
             noteChanged() {
                 this.scenario.store();
+            },
+            treasureChanged(id, checked) {
+                this.scenario.unlockTreasure(id, checked);
             },
             scenarioChosen(choice) {
                 this.scenarioRepository.choose(this.scenario, choice);
