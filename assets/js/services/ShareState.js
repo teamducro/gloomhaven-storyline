@@ -21,6 +21,14 @@ export default class ShareState {
                 });
             }
 
+            if (result.hasOwnProperty('treasures')) {
+                result.treasures.each((treasures, id) => {
+                    treasures.forEach((treasure) => {
+                        this.scenarioRepository.find(parseInt(id)).unlockTreasure(treasure);
+                    });
+                });
+            }
+
             this.scenarioValidator.validate();
             location.href = this.url();
         }
@@ -37,6 +45,12 @@ export default class ShareState {
         let choicesString = completed.where('hasChoices', true).pluck('choice', 'id').map((choice, id) => {
             return id + '_' + choice
         }).values().implode('-');
+        let treasuresString = app.scenarios.pluck('unlockedTreasures', 'id').map((treasures, id) => {
+            if (treasures.length) {
+                return id + '_' + treasures.join('_');
+            }
+            return false;
+        }).filter().values().implode('-');
 
         if (completedString) {
             result.completed = completedString;
@@ -44,6 +58,10 @@ export default class ShareState {
 
         if (choicesString) {
             result.choices = choicesString;
+        }
+
+        if (treasuresString) {
+            result.treasures = treasuresString;
         }
 
         return queryString.stringify(result);
@@ -61,6 +79,14 @@ export default class ShareState {
             result.choices = collect(parsed.choices.split('-')).mapWithKeys((choice) => {
                 let parts = choice.split('_');
                 return [parts[0], parseInt(parts[1])];
+            });
+        }
+
+        if (typeof parsed.treasures !== 'undefined') {
+            result.treasures = collect(parsed.treasures.split('-')).mapWithKeys((choice) => {
+                let parts = choice.split('_');
+                let id = parts.shift();
+                return [id, parts.map((x) => x)];
             });
         }
 

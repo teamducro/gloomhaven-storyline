@@ -69,11 +69,14 @@ export default class Scenario {
     unlockTreasure(id, unlock = true) {
         if (this.treasures.has(id)) {
             if (unlock) {
-                this.unlockedTreasures.push(id);
+                if(!this.isTreasureUnlocked(id)) {
+                    this.unlockedTreasures.push(id);
+                }
             } else {
                 this.unlockedTreasures.splice(this.unlockedTreasures.indexOf(id));
             }
         }
+
         this.store();
     }
 
