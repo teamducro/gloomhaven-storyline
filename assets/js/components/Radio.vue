@@ -5,7 +5,7 @@
                    type="radio"
                    :id="id"
                    :name="group"
-                   v-model="isChecked"
+                   :checked="isChecked"
                    :disabled="disabled"
                    @change="changed">
             <div class="mdc-radio__background">
