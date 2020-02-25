@@ -1,10 +1,15 @@
 html, body {
     background-color: #000;
     color: #fff;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nyala', sans-serif;
     font-weight: 200;
+    font-size: 18px;
     height: 100vh;
     margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Pirata One', 'Nyala', sans-serif !important;
 }
 
 body {
@@ -23,10 +28,30 @@ button:focus {
     outline: none;
 }
 
-.rotate-0 { transform: rotate(0); }
-.rotate-45 { transform: rotate(45deg); }
-.rotate-90 { transform: rotate(90deg); }
-.rotate-180 { transform: rotate(180deg); }
-.-rotate-180 { transform: rotate(-180deg); }
-.-rotate-90 { transform: rotate(-90deg); }
-.-rotate-45 { transform: rotate(-45deg); }
+.rotate-0 {
+    transform: rotate(0);
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.-rotate-180 {
+    transform: rotate(-180deg);
+}
+
+.-rotate-90 {
+    transform: rotate(-90deg);
+}
+
+.-rotate-45 {
+    transform: rotate(-45deg);
+}

@@ -70,5 +70,13 @@
 </script>
 
 <style lang="scss">
+    .mdc-dialog .mdc-dialog__surface {
+        width: calc(100vw - 32px);
+    }
 
+    @media (min-width: 592px) {
+        .mdc-dialog .mdc-dialog__surface {
+            width: 560px;
+        }
+    }
 </style>
