@@ -8,11 +8,11 @@ if (process.env.theme) {
             includePaths: ['./node_modules']
         }
     }).setPublicPath('public');
-}
-else {
+} else {
     mix.js('assets/js/app.js', 'public/js/')
         .sass('assets/sass/app.scss', 'public/css/')
         .copy('assets/img', 'public/img')
+        .copy('assets/fonts', 'public/fonts')
         .options({
             processCssUrls: false,
             postCss: [tailwindcss('./tailwind.config.js')],

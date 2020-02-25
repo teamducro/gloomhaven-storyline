@@ -19,6 +19,8 @@ export default class Scenario {
         this.linked_from = collect(data.linked_from);
         this.blocked_by = collect(data.blocked_by);
         this.required_by = collect(data.required_by);
+        this.treasures = collect(data.treasures);
+        this.unlockedTreasures = [];
         this.read();
     }
 
@@ -64,11 +66,34 @@ export default class Scenario {
         return this.choice2;
     }
 
+    unlockTreasure(id, unlock = true) {
+        if (this.treasures.has(id)) {
+            if (unlock) {
+                if(!this.isTreasureUnlocked(id)) {
+                    this.unlockedTreasures.push(id);
+                }
+            } else {
+                this.unlockedTreasures.splice(this.unlockedTreasures.indexOf(id));
+            }
+        }
+
+        this.store();
+    }
+
+    lockTreasure(id) {
+        this.unlockTreasure(id, false);
+    }
+
+    isTreasureUnlocked(id) {
+        return this.unlockedTreasures.indexOf(id) >= 0
+    }
+
     store() {
         window.localStorage.setItem(this.key(), JSON.stringify({
             "state": this.state,
             "choice": this.choice,
-            "notes": this.notes
+            "notes": this.notes,
+            "treasures": this.unlockedTreasures
         }));
     }
 
@@ -78,6 +103,7 @@ export default class Scenario {
             this.state2 = scenario.state;
             this.choice2 = scenario.choice;
             this.notes = scenario.notes;
+            this.unlockedTreasures = scenario.treasures || [];
         }
     }
 
