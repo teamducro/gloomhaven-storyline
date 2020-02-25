@@ -587,7 +587,9 @@
                 32
             ],
             "chapter_id": 4,
-            "links_to": [],
+            "links_to": [
+                26
+            ],
             "linked_from": [
                 18
             ],
