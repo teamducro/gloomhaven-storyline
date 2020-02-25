@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">
-                    <div class="flex mb-6 mt-4">
+                    <div class="flex mb-2">
                         <radio id="incomplete" group="states" label="Incomplete"
                                :key="'incomplete-' + stateKey"
                                :checked="scenario.isIncomplete()"
@@ -29,26 +29,11 @@
                         ></radio>
                     </div>
 
-                    <div v-if="scenario.requirments" class="mb-6 flex items-center">
+                    <div v-if="scenario.requirments" class="mb-2 flex items-center" style="padding-left: 7px;">
                         <i v-if="scenario.isRequired() || scenario.isBlocked()"
-                           class="material-icons text-incomplete text-2xl mr-1">highlight_off</i>
-                        <i v-else class="material-icons text-complete text-2xl mr-1">check_circle_outline</i>
+                           class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
+                        <i v-else class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
                         Requirments: {{ scenario.requirments }}
-                    </div>
-
-                    <div class="mb-6">
-                        <div class="mdc-text-field mdc-text-field--textarea w-full"
-                             ref="notes">
-                                <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
-                                          class="mdc-text-field__input" rows="4" cols="40"></textarea>
-                            <div class="mdc-notched-outline">
-                                <div class="mdc-notched-outline__leading"></div>
-                                <div class="mdc-notched-outline__notch">
-                                    <label for="notes" class="mdc-floating-label">Notes</label>
-                                </div>
-                                <div class="mdc-notched-outline__trailing"></div>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="mb-3 flex flex-col items-start">
@@ -71,15 +56,30 @@
                     </div>
 
                     <div class="mb-6" v-if="scenario.treasures.isNotEmpty()">
-                        <h2 class="text-white">Treasures</h2>
+                        <h2 class="text-white" style="padding-left: 12px;">Treasures</h2>
                         <div v-for="(treasure, id) in scenario.treasures.items" :key="id"
-                            class="flex items-center">
+                             class="flex items-center">
                             <checkbox
                                     :id="id"
                                     :label="'#' + id"
                                     :checked="scenario.isTreasureUnlocked(id)"
                                     @changed="treasureChanged"></checkbox>
                             <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">{{ treasure }}</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="mdc-text-field mdc-text-field--textarea w-full"
+                             ref="notes">
+                                <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
+                                          class="mdc-text-field__input" rows="4" cols="40"></textarea>
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    <label for="notes" class="mdc-floating-label">Notes</label>
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
                         </div>
                     </div>
 
