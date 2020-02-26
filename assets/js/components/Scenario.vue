@@ -187,6 +187,8 @@
             },
             treasureChanged(id, checked) {
                 this.scenario.unlockTreasure(id, checked);
+
+                this.scenarioRepository.unlockScenario17();
             },
             scenarioChosen(choice) {
                 this.scenarioRepository.choose(this.scenario, choice);

@@ -38,11 +38,13 @@ export default class ScenarioValidator {
             let withoutChoicesStates = linkedScenarios.where('hasChoices', false).pluck('state', 'state');
 
             if (scenario.isHidden()) {
-                if (chosen || withoutChoicesStates.has(ScenarioState.complete)) {
+                if (chosen || withoutChoicesStates.has(ScenarioState.complete) || (scenario.id === 17 && this.scenarioRepository.isScenario17unlocked())) {
                     scenario.state = ScenarioState.incomplete;
                 }
             } else {
-                if (!chosen && withoutChoicesStates.has(ScenarioState.complete) === false) {
+                if (!chosen && withoutChoicesStates.has(ScenarioState.complete) === false && scenario.id !== 17) {
+                    scenario.state = ScenarioState.hidden;
+                } else if (scenario.id === 17 && (!chosen && !this.scenarioRepository.isScenario17unlocked())) {
                     scenario.state = ScenarioState.hidden;
                 }
             }

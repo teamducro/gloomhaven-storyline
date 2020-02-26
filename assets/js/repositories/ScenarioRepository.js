@@ -27,6 +27,21 @@ export default class ScenarioRepository {
         this.scenarioValidator.validate();
     }
 
+    unlockScenario17() {
+        if (this.isScenario17unlocked()) {
+            let scenario = this.find(17);
+            if (scenario.isHidden()) {
+                this.changeState(scenario, ScenarioState.incomplete);
+                window.bus.$emit('scenarios-updated');
+            }
+        }
+    }
+
+    isScenario17unlocked() {
+        let scenario = this.find(37);
+        return scenario.isTreasureUnlocked('49');
+    }
+
     choice(scenario) {
         return this.findMany(scenario.choices).firstWhere('state', '!=', ScenarioState.hidden);
     }
