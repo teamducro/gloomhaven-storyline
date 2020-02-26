@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">
-                    <div class="flex mb-2">
+                    <div class="flex w-full mb-2">
                         <radio id="incomplete" group="states" label="Incomplete"
                                :key="'incomplete-' + stateKey"
                                :checked="scenario.isIncomplete()"
@@ -27,6 +27,10 @@
                                :disabled="scenario.isBlocked() || scenario.isRequired()"
                                @changed="stateChanged"
                         ></radio>
+                        <div class="hidden xs:block ml-auto w-16">
+                            <webp :src="'/img/scenarios/' + scenario.id + '.png'"
+                                  :alt="scenario.name"></webp>
+                        </div>
                     </div>
 
                     <div v-if="scenario.requirments" class="mb-2 flex items-center" style="padding-left: 7px;">
@@ -68,7 +72,7 @@
                         </div>
                     </div>
 
-                    <div class="mb-6">
+                    <div class="mb-6 hidden">
                         <div class="mdc-text-field mdc-text-field--textarea w-full"
                              ref="notes">
                                 <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
@@ -83,11 +87,15 @@
                         </div>
                     </div>
 
-                    <div class="mb-6">
+                    <div class="flex items-center mb-6">
                         <button class="mdc-button mdc-button--raised" @click="openPages()">
                             <i class="material-icons mdc-button__icon">menu_book</i>
                             <span class="mdc-button__label">Pages</span>
                         </button>
+                        <div class="xs:hidden ml-auto w-16">
+                            <webp :src="'/img/scenarios/' + scenario.id + '.png'"
+                                  :alt="scenario.name"></webp>
+                        </div>
                     </div>
 
                 </div>
@@ -179,6 +187,8 @@
             },
             treasureChanged(id, checked) {
                 this.scenario.unlockTreasure(id, checked);
+
+                this.scenarioRepository.unlockScenario17();
             },
             scenarioChosen(choice) {
                 this.scenarioRepository.choose(this.scenario, choice);
