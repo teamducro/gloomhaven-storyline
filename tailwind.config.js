@@ -1,6 +1,10 @@
 module.exports = {
     theme: {
         extend: {
+            spacing: {},
+            screens: {
+                xs: '400px',
+            },
             colors: {
                 complete: '#3B8585',
                 incomplete: '#A13C2F',
