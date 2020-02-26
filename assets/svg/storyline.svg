@@ -7,7 +7,7 @@
         circle.node + text {
         font-family: 'Pirata One', 'Nyala', sans-serif; font-size: 11px; transform: translate(0px, 9px);
         }
-        circle.node ~ .blocked { display:none; font-size: 23px; transform: translate(-4px, 13px); }
+        circle.node ~ .blocked { font-size: 23px; transform: translate(-4px, 13px); }
         circle.node ~ .required { font-size: 21px; transform: translate(-6px, 2px); }
 
         .line { fill: none; }
@@ -226,7 +226,7 @@
     </g>
     <g id="node20" data-id="20" class="scenario">
         <circle cx="183.395466" cy="456.2768497" r="10.8" class="node"/>
-        <text x="167.54819" y="452.3082">20</text>
+        <text x="168" y="452.3082">20</text>
         <text x="167.54819" y="452.3082" class="required">*</text>
     </g>
     <g id="edge20-18" class="edge edge20">
@@ -269,11 +269,11 @@
     </g>
     <g id="node18" data-id="18" class="scenario">
         <circle cx="201.3454688" cy="283.3218382" r="10.8" class="node"/>
-        <text x="187" y="279.0073">18</text>
+        <text x="187" y="279">18</text>
     </g>
     <g id="node28" data-id="28" class="scenario">
         <circle cx="158.9191022" cy="495.4536714" r="10.8" class="node"/>
-        <text x="143.09909" y="491.1391">28</text>
+        <text x="143.5" y="491.1391">28</text>
         <text x="143.09909" y="491.1391" class="required">*</text>
     </g>
     <g id="node17" data-id="17" class="scenario">
@@ -282,8 +282,8 @@
     </g>
     <g id="node43" data-id="43" class="scenario">
         <circle cx="262.4682004" cy="283.3218382" r="10.8" class="node"/>
-        <text x="246" y="279.0073">43</text>
-        <text x="246" y="279.0073" class="required">*</text>
+        <text x="246.5" y="279">43</text>
+        <text x="246" y="279" class="required">*</text>
     </g>
     <g id="edge26-22" class="edge edge26">
         <path class="line" d="M 188 297.87 L 158.36 268.86 "/>
@@ -291,16 +291,16 @@
     </g>
     <g id="node26" data-id="26" class="scenario">
         <circle cx="153.9127366" cy="221.8531968" r="10.8" class="node"/>
-        <text x="138.06546" y="217.88455">26</text>
+        <text x="138.5" y="217.88455">26</text>
         <text x="138.06546" y="217.88455" class="required">*</text>
     </g>
     <g id="node27" data-id="27" class="scenario">
-        <circle cx="37.06045564" cy="41.00182032" r="10.8" class="node"/>
-        <text x="21.572728" y="36.673639">27</text>
+        <circle cx="37.06045564" cy="41" r="10.8" class="node"/>
+        <text x="22" y="36.673639">27</text>
         <text x="24" y="36.673639" class="blocked">×</text>
     </g>
     <g id="node21" data-id="21" class="scenario">
-        <circle cx="80.20591324" cy="41.00182032" r="10.8" class="node"/>
+        <circle cx="80.20591324" cy="41" r="10.8" class="node"/>
         <text x="66" y="36.673639">21</text>
         <text x="67" y="36.673639" class="blocked">×</text>
     </g>
@@ -310,7 +310,7 @@
     </g>
     <g id="node22" data-id="22" class="scenario">
         <circle cx="113.6163717" cy="182.6491038" r="10.8" class="node"/>
-        <text x="97.796367" y="178.33455">22</text>
+        <text x="98.5" y="178.33455">22</text>
     </g>
     <g id="edge31-43" class="edge edge31">
         <path class="line" d="M 349.5 347 L 349.9 372.13 "/>
@@ -347,13 +347,13 @@
     </g>
     <g id="node35" data-id="35" class="scenario">
         <circle cx="148.8518287" cy="40.98818472" r="10.8" class="node"/>
-        <text x="133.03182" y="36.673639">35</text>
+        <text x="133.5" y="36.673639">35</text>
         <text x="135.5" y="36.673639" class="blocked">×</text>
         <text x="133.03182" y="36.673639" class="required">*</text>
     </g>
     <g id="node36" data-id="36" class="scenario">
         <circle cx="148.8790999" cy="133.4050087" r="10.8" class="node"/>
-        <text x="133.03182" y="129.43636">36</text>
+        <text x="133.5" y="129.43636">36</text>
         <text x="135.5" y="129.43636" class="blocked">×</text>
         <text x="133.03182" y="129.43636" class="required">*</text>
     </g>
@@ -379,8 +379,8 @@
         <text x="270" y="82.69546" class="blocked">×</text>
     </g>
     <g id="node29" data-id="29" class="scenario">
-        <circle cx="105.7336423" cy="495.1077616" r="10.8" class="node"/>
-        <text x="89.88636" y="491.1391">29</text>
+        <circle cx="106" cy="495.1077616" r="10.8" class="node"/>
+        <text x="90.5" y="491.1391">29</text>
     </g>
     <g id="edge37-47" class="edge edge37">
         <path class="line" d="M 442 209 L 462 209 L 459 209 L 472.13 209 "/>
@@ -388,8 +388,8 @@
     </g>
     <g id="node37" data-id="37" class="scenario">
         <circle cx="317.8382043" cy="150.2900106" r="10.8" class="node"/>
-        <text x="302.0182" y="145.97545">37</text>
-        <text x="302.0182" y="145.97545" class="required">*</text>
+        <text x="302.5" y="145.97545">37</text>
+        <text x="302" y="145.97545" class="required">*</text>
     </g>
     <g id="edge38-48" class="edge edge38">
         <path class="line" d="M 441.5 332 L 472.13 332 "/>
@@ -401,7 +401,7 @@
     </g>
     <g id="node38" data-id="38" class="scenario">
         <circle cx="317.8382043" cy="238.7381987" r="10.8" class="node"/>
-        <text x="302.0182" y="234.42365">38</text>
+        <text x="302.5" y="234.42365">38</text>
     </g>
     <g id="edge39-46" class="edge edge39">
         <path class="line" d="M 441 414 L 472.13 414 "/>
@@ -413,7 +413,7 @@
     </g>
     <g id="node39" data-id="39" class="scenario">
         <circle cx="317.1191134" cy="297.7036574" r="10.8" class="node"/>
-        <text x="301.2991" y="293.3891">39</text>
+        <text x="301.7" y="293.3891">39</text>
     </g>
     <g id="node15" data-id="15" class="scenario">
         <circle cx="183.3681948" cy="349.4782066" r="10.8" class="node"/>
@@ -429,7 +429,7 @@
     </g>
     <g id="node23" data-id="23" class="scenario">
         <circle cx="202.0645598" cy="222.1991066" r="10.8" class="node"/>
-        <text x="186.24456" y="217.88455">23</text>
+        <text x="187" y="217.88455">23</text>
     </g>
     <g id="edge48-51" class="edge edge48">
         <path class="line" d="M 508.5 332.34 L 538.63 333.02 "/>
@@ -462,11 +462,11 @@
     </g>
     <g id="node16" data-id="16" class="scenario">
         <circle cx="284.7600202" cy="456.6227596" r="10.8" class="node"/>
-        <text x="270" y="452.3082">16</text>
+        <text x="270.5" y="452.3082">16</text>
     </g>
     <g id="node24" data-id="24" class="scenario">
-        <circle cx="284.7600202" cy="535.0036742" r="10.8" class="node"/>
-        <text x="268.94" y="530.6891">24</text>
+        <circle cx="284.7600202" cy="535" r="10.8" class="node"/>
+        <text x="269.4" y="530.6891">24</text>
     </g>
     <g id="edge16-24" class="edge edge16">
         <path class="line" d="M 381 649.5 L 381 722.63 "/>
@@ -474,7 +474,7 @@
     </g>
     <g id="node25" data-id="25" class="scenario">
         <circle cx="284.7600202" cy="399.0954828" r="10.8" class="node"/>
-        <text x="268.94" y="394.7809">25</text>
+        <text x="269.4" y="394.7809">25</text>
     </g>
     <g id="edge16-25" class="edge edge16">
         <path class="line" d="M 381 619.5 L 381 575.87 "/>
@@ -482,7 +482,7 @@
     </g>
     <g id="node30" data-id="30" class="scenario">
         <circle cx="319.2763862" cy="567.3627674" r="10.8" class="node"/>
-        <text x="303.4564" y="563.0482">30</text>
+        <text x="304" y="563.0482">30</text>
     </g>
     <g id="edge24-30" class="edge edge24">
         <path class="line" d="M 392.04 754.15 L 413.43 774.37 "/>
@@ -490,7 +490,7 @@
     </g>
     <g id="node32" data-id="32" class="scenario">
         <circle cx="319.2763862" cy="494.7345805" r="10.8" class="node"/>
-        <text x="303.4564" y="490.42">32</text>
+        <text x="304" y="490.42">32</text>
     </g>
     <g id="edge24-32" class="edge edge24">
         <path class="line" d="M 390.68 732.54 L 415.12 703.74 "/>
@@ -507,7 +507,7 @@
     </g>
     <g id="node40" data-id="40" class="scenario">
         <circle cx="371.7700263" cy="494.7345805" r="10.8" class="node"/>
-        <text x="355.94999" y="490.42">40</text>
+        <text x="356.5" y="490.42">40</text>
         <text x="355.94999" y="490.42" class="required">*</text>
     </g>
     <g id="edge32-40" class="edge edge32">
@@ -516,7 +516,7 @@
     </g>
     <g id="node33" data-id="33" class="scenario">
         <circle cx="344.4445698" cy="458.0609415" r="10.8" class="node"/>
-        <text x="328.62458" y="453.7464">33</text>
+        <text x="329" y="453.7464">33</text>
         <text x="331" y="453.7464" class="blocked">×</text>
     </g>
     <g id="edge25-33" class="edge edge25">
@@ -538,7 +538,7 @@
     </g>
     <g id="node34" data-id="34" class="scenario">
         <circle cx="341.5954772" cy="398.7495729" r="10.8" class="node"/>
-        <text x="325.7482" y="394.7809">34</text>
+        <text x="326" y="394.7809">34</text>
         <text x="328" y="394.7809" class="blocked">×</text>
     </g>
     <g id="edge25-34" class="edge edge25">
