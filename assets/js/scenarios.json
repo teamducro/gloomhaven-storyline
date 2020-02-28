@@ -439,7 +439,10 @@
             ],
             "treasures": {
                 "71": "Random Side Scenario"
-            }
+            },
+            "treasures_from": [
+                37
+            ]
         },
         {
             "id": 18,
@@ -966,6 +969,9 @@
             ],
             "treasures": {
                 "49": "New Scenario: Lost Island (Scenario 17 at K-17)"
+            },
+            "treasures_to": {
+                "49": 17
             }
         },
         {

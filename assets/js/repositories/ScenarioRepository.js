@@ -27,19 +27,26 @@ export default class ScenarioRepository {
         this.scenarioValidator.validate();
     }
 
-    unlockScenario17() {
-        if (this.isScenario17unlocked()) {
-            let scenario = this.find(17);
-            if (scenario.isHidden()) {
-                this.changeState(scenario, ScenarioState.incomplete);
-                window.bus.$emit('scenarios-updated');
-            }
+    unlockTreasureScenario(scenario, id) {
+        if (scenario.treasures_to.has(id)) {
+            this.scenarioValidator.validate();
+
+            return true;
         }
+
+        return false;
     }
 
-    isScenario17unlocked() {
-        let scenario = this.find(37);
-        return scenario.isTreasureUnlocked('49');
+    isScenarioUnlockedByTreasure(scenario) {
+        if (scenario.treasures_from.count()) {
+            let scenarios = this.findMany(scenario.treasures_from);
+            return scenarios.filter((treasureScenario) => {
+                let treasure = treasureScenario.treasures_to.flip().get(scenario.id.toString());
+                return treasureScenario.isTreasureUnlocked(treasure);
+            }).count() > 0;
+        }
+
+        return false;
     }
 
     choice(scenario) {

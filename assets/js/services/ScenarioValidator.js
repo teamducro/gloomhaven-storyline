@@ -19,13 +19,14 @@ export default class ScenarioValidator {
 
     checkHidden(scenario) {
         let states = this.linkedStates(scenario);
+        let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         if (scenario.isHidden()) {
-            if (states.has(ScenarioState.complete) || scenario.id === 1) {
+            if (states.has(ScenarioState.complete) || unlocked || scenario.id === 1) {
                 scenario.state = ScenarioState.incomplete;
             }
         } else {
-            if (states.has(ScenarioState.complete) === false && scenario.id !== 1) {
+            if (states.has(ScenarioState.complete) === false && scenario.id !== 1 && !unlocked) {
                 scenario.state = ScenarioState.hidden;
             }
         }
@@ -33,18 +34,18 @@ export default class ScenarioValidator {
 
     checkChoice(scenario) {
         let linkedScenarios = this.linkedScenarios(scenario);
+        let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
+
         if (linkedScenarios.where('hasChoices', true).count()) {
             let chosen = linkedScenarios.firstWhere('choice2', scenario.id);
             let withoutChoicesStates = linkedScenarios.where('hasChoices', false).pluck('state', 'state');
 
             if (scenario.isHidden()) {
-                if (chosen || withoutChoicesStates.has(ScenarioState.complete) || (scenario.id === 17 && this.scenarioRepository.isScenario17unlocked())) {
+                if (chosen || withoutChoicesStates.has(ScenarioState.complete) || unlocked) {
                     scenario.state = ScenarioState.incomplete;
                 }
             } else {
-                if (!chosen && withoutChoicesStates.has(ScenarioState.complete) === false && scenario.id !== 17) {
-                    scenario.state = ScenarioState.hidden;
-                } else if (scenario.id === 17 && (!chosen && !this.scenarioRepository.isScenario17unlocked())) {
+                if (!chosen && withoutChoicesStates.has(ScenarioState.complete) === false && !unlocked) {
                     scenario.state = ScenarioState.hidden;
                 }
             }
