@@ -20,6 +20,8 @@ export default class Scenario {
         this.blocked_by = collect(data.blocked_by);
         this.required_by = collect(data.required_by);
         this.treasures = collect(data.treasures);
+        this.treasures_from = collect(data.treasures_from);
+        this.treasures_to = collect(data.treasures_to);
         this.unlockedTreasures = [];
         this.read();
     }
@@ -69,7 +71,7 @@ export default class Scenario {
     unlockTreasure(id, unlock = true) {
         if (this.treasures.has(id)) {
             if (unlock) {
-                if(!this.isTreasureUnlocked(id)) {
+                if (!this.isTreasureUnlocked(id)) {
                     this.unlockedTreasures.push(id);
                 }
             } else {

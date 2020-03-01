@@ -18,6 +18,15 @@ body {
     background-position: center, center;
 }
 
+.logo {
+    @apply fixed mt-4;
+    left: 50%;
+    margin-left: -125px;
+    @screen sm {
+        @apply ml-4 left-0;
+    }
+}
+
 .link {
     &:hover {
         @apply underline;
