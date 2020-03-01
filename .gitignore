@@ -11,3 +11,4 @@ npm-debug.log
 /cypress/integration/examples/*
 /cypress/videos
 /cypress/screenshots
+/public/mix-manifest.json
