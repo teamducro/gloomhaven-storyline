@@ -28,6 +28,7 @@ window.app = new Vue({
     },
     mounted() {
         this.fetchScenarios();
+        document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
     },
     methods: {
         fetchScenarios() {
