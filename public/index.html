@@ -11,8 +11,8 @@
     <link rel="preload" href="/fonts/PirataOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link href="css/theme.css?v=eddfb747dd3ac48e5bb69fb0f14ddbf1" rel="stylesheet">
-    <link href="css/app.css?v=e843e046e99eb09565c6800449e4800c" rel="stylesheet">
+    <link href="css/theme.css?v=8c54709e124f1bb9cc01e61a1e58eff1" rel="stylesheet">
+    <link href="css/app.css?v=3c7f1da2923f7a4ccd10fb031bd9c27b" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -26,10 +26,23 @@
 <img alt="Gloomhaven" src="img/gloomhaven-logo.webp"
      width="250" class="logo"
      onerror="this.onerror=null; this.src='img/gloomhaven-logo.png'"/>
-<div id="app" class="flex h-screen items-center justify-center">
-    <story></story>
+<div id="app" class="flex h-screen items-center justify-center" v-cloak>
+    <drawer>
+        <template v-slot:content>
+            <story></story>
+        </template>
+    </drawer>
+
+    <button type="button" @click="$bus.$emit('open-share-modal')"
+            class="mdc-button mdc-button--raised fixed right-0 bottom-0 mb-4 mr-4">
+        <span class="mdc-button__label">Share</span>
+        <i class="material-icons ml-2 text-base">share</i>
+    </button>
+
     <scenario></scenario>
+    <share></share>
+    <reset></reset>
 </div>
-<script src="js/app.js?v=c81b7dbf5509dcca6605fe127de2390c" rel="script"></script>
+<script src="js/app.js?v=4ed7e1b9e00bcd7400af56df59af689f" rel="script"></script>
 </body>
 </html>

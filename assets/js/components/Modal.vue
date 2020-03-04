@@ -1,6 +1,6 @@
 <template>
     <div class="mdc-dialog" ref="modal" aria-modal="true">
-        <div class="mdc-dialog__container">
+        <div class="mdc-dialog__container z-10">
             <div class="mdc-dialog__surface relative">
                 <slot name="body">
                     <h2 class="mdc-dialog__title" :class="{'pr-16': closeButton}">{{ title }}

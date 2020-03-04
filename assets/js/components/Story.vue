@@ -5,8 +5,6 @@
                 id="storyline"
                 :classes="['h-screen', 'w-screen']"
         />
-        <share></share>
-        <reset></reset>
     </div>
 </template>
 

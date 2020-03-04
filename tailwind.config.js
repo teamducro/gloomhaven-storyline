@@ -5,6 +5,9 @@ module.exports = {
             screens: {
                 xs: '400px',
             },
+            zIndex: {
+                5: '5'
+            },
             colors: {
                 complete: '#3B8585',
                 incomplete: '#A13C2F',
