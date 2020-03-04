@@ -17,7 +17,7 @@ window.Vue.use(VueClipboard);
 const files = require.context('./components', true, /\.vue$/i);
 files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-window.bus = new Vue;
+Vue.prototype.$bus = new Vue;
 window.app = new Vue({
     el: '#app',
     data() {
@@ -41,7 +41,7 @@ window.app = new Vue({
             this.$nextTick(() => {
                 (new ShareState).load();
                 (new ScenarioValidator).validate();
-                window.bus.$emit('scenarios-updated');
+                this.$bus.$emit('scenarios-updated');
             });
         }
     }
