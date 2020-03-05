@@ -18,7 +18,7 @@
                              class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
                     </network>
 
-                    <a v-clipboard:copy="url" class="cursor-pointer">
+                    <a v-clipboard:copy="url" class="cursor-pointer mr-6">
                         <img src="img/share/copy-link.png" alt="copy-link" srcset="img/share/copy-link@2x.png 2x"
                              class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
                     </a>
