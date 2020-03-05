@@ -5,7 +5,7 @@ const md5File = require('md5-file/promise');
 const replace = require('replace-in-file');
 
 if (process.env.theme) {
-    mix.sass('assets/sass/theme.scss', 'public/css/', {
+    mix.sass('resources/sass/theme.scss', 'public/css/', {
         sassOptions: {
             includePaths: ['./node_modules']
         }
@@ -15,10 +15,10 @@ if (process.env.theme) {
             versionFile('public/css/theme.css');
         })
 } else {
-    mix.js('assets/js/app.js', 'public/js/')
-        .sass('assets/sass/app.scss', 'public/css/')
-        .copy('assets/img', 'public/img')
-        .copy('assets/fonts', 'public/fonts')
+    mix.js('resources/js/app.js', 'public/js/')
+        .sass('resources/sass/app.scss', 'public/css/')
+        .copy('resources/img', 'public/img')
+        .copy('resources/fonts', 'public/fonts')
         .options({
             processCssUrls: false,
             postCss: [tailwindcss('./tailwind.config.js')],
