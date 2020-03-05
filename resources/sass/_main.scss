@@ -38,6 +38,14 @@ button:focus {
     display: none;
 }
 
+.fade-enter-active {
+    transition: opacity .3s;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
 .rotate-0 {
     transform: rotate(0);
 }

@@ -29,6 +29,7 @@
                         ></radio>
                         <div class="hidden xs:block ml-auto w-20">
                             <webp :src="'/img/scenarios/' + scenario.id + '.png'"
+                                  :animate="true"
                                   :alt="scenario.name"></webp>
                         </div>
                     </div>
@@ -94,6 +95,7 @@
                         </button>
                         <div class="xs:hidden ml-auto w-20">
                             <webp :src="'/img/scenarios/' + scenario.id + '.png'"
+                                  :animate="true"
                                   :alt="scenario.name"></webp>
                         </div>
                     </div>
