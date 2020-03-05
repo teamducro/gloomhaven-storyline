@@ -18,7 +18,7 @@
                             </a>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider !my-2"></li>
+                        <li role="separator" class="mdc-list-divider i-my-2"></li>
 
                         <li>
                             <a class="mdc-list-item" @click="$bus.$emit('open-share-modal')">
@@ -34,7 +34,7 @@
                             </a>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider !my-2"></li>
+                        <li role="separator" class="mdc-list-divider i-my-2"></li>
 
                         <li>
                             <a class="mdc-list-item" target="_blank"
