@@ -1,5 +1,6 @@
 let mix = require('laravel-mix');
-const glob = require('glob-all');
+require('laravel-mix-purgecss');
+const rootPath = Mix.paths.root.bind(Mix.paths);
 const tailwindcss = require('tailwindcss');
 const md5File = require('md5-file/promise');
 const replace = require('replace-in-file');
@@ -17,17 +18,18 @@ if (process.env.theme) {
 } else {
     mix.js('resources/js/app.js', 'public/js/')
         .sass('resources/sass/app.scss', 'public/css/')
+        .purgeCss({
+            content: [
+                rootPath('public/index.html'),
+                rootPath('resources/**/*.js'),
+                rootPath('resources/**/*.vue')
+            ]
+        })
         .copy('resources/img', 'public/img')
         .copy('resources/fonts', 'public/fonts')
         .options({
             processCssUrls: false,
-            postCss: [tailwindcss('./tailwind.config.js')],
-            purifyCss: {
-                paths: glob.sync([
-                    path.join(__dirname, 'assets/js/**/*.vue'),
-                    path.join(__dirname, 'public/index.html')
-                ])
-            }
+            postCss: [tailwindcss('./tailwind.config.js')]
         })
         .setPublicPath('public')
         .override(config => {
