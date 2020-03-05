@@ -5,8 +5,6 @@
                 id="storyline"
                 :classes="['h-screen', 'w-screen']"
         />
-        <share></share>
-        <reset></reset>
     </div>
 </template>
 
@@ -23,7 +21,7 @@
         },
         mounted() {
             this.render();
-            window.bus.$on('scenarios-updated', () => {
+            this.$bus.$on('scenarios-updated', () => {
                 this.render();
             });
 
@@ -89,7 +87,7 @@
                 });
             },
             open(id) {
-                window.bus.$emit('open-scenario', {
+                this.$bus.$emit('open-scenario', {
                     id: id
                 });
             }

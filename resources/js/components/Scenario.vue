@@ -27,7 +27,7 @@
                                :disabled="scenario.isBlocked() || scenario.isRequired()"
                                @changed="stateChanged"
                         ></radio>
-                        <div class="hidden xs:block ml-auto w-16">
+                        <div class="hidden xs:block ml-auto w-20">
                             <webp :src="'/img/scenarios/' + scenario.id + '.png'"
                                   :alt="scenario.name"></webp>
                         </div>
@@ -92,7 +92,7 @@
                             <i class="material-icons mdc-button__icon">menu_book</i>
                             <span class="mdc-button__label">Pages</span>
                         </button>
-                        <div class="xs:hidden ml-auto w-16">
+                        <div class="xs:hidden ml-auto w-20">
                             <webp :src="'/img/scenarios/' + scenario.id + '.png'"
                                   :alt="scenario.name"></webp>
                         </div>
@@ -146,7 +146,7 @@
             }
         },
         mounted() {
-            window.bus.$on('open-scenario', (data) => {
+            this.$bus.$on('open-scenario', (data) => {
                 this.open(data.id);
             });
         },
@@ -180,7 +180,7 @@
                     this.scenarioRepository.changeState(this.scenario, state);
                 }
 
-                window.bus.$emit('scenarios-updated');
+                this.$bus.$emit('scenarios-updated');
             },
             noteChanged() {
                 this.scenario.store();
@@ -189,13 +189,13 @@
                 this.scenario.unlockTreasure(id, checked);
 
                 if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
-                    window.bus.$emit('scenarios-updated');
+                    this.$bus.$emit('scenarios-updated');
                 }
             },
             scenarioChosen(choice) {
                 this.scenarioRepository.choose(this.scenario, choice);
 
-                window.bus.$emit('scenarios-updated');
+                this.$bus.$emit('scenarios-updated');
             },
             chooseModalClosing(action) {
                 if (action !== 'chosen') {
