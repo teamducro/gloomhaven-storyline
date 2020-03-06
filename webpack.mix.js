@@ -36,20 +36,18 @@ mix.js('resources/js/app.js', 'public/js/')
             use: [{loader: 'html-loader'}]
         })
     })
-    .then(() => {
-        versionFile('public/js/app.js');
-        versionFile('public/css/app.css');
-        versionFile('public/css/theme.css');
+    .then(async () => {
+        await versionFile('public/js/app.js', mix.inProduction());
+        await versionFile('public/css/app.css', mix.inProduction());
+        await versionFile('public/css/theme.css', mix.inProduction());
     });
 
-function versionFile(path) {
+async function versionFile(path, applyVersion) {
     const file = path.split('/').pop();
-    const pattern = new RegExp(file.replace('.', '\\.') + '\\?v=[a-f0-9]{32}', 'g');
-    md5File(path).then(hash => {
-        replace({
-            files: 'public/index.html',
-            from: pattern,
-            to: file + '?v=' + hash,
-        });
-    });
+    const pattern = new RegExp(file.replace('.', '\\.') + '(\\?v=[a-f0-9]{32})?', 'g');
+    let to = applyVersion
+        ? file + '?v=' + await md5File(path)
+        : file;
+
+    return replace({files: 'public/index.html', from: pattern, to: to});
 }
