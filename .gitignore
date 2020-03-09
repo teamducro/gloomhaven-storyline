@@ -6,6 +6,7 @@ npm-debug.log
 /public/css/*
 /public/js/*
 /public/img/*
+/public/fonts/*
 .DS_Store
 .idea
 /cypress/integration/examples/*
