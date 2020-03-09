@@ -3,10 +3,7 @@
 /vendor
 .env
 npm-debug.log
-/public/css/*
-/public/js/*
-/public/img/*
-/public/fonts/*
+/public
 .DS_Store
 .idea
 /cypress/integration/examples/*
