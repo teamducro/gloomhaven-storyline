@@ -9,6 +9,7 @@ export default class ScenarioRepository {
         return collect(scenarios.scenarios).map((scenario) => {
             scenario = new Scenario(scenario);
             this.fetchChapter(scenario);
+            this.fetchTypes(scenario);
 
             return scenario;
         });
@@ -77,6 +78,12 @@ export default class ScenarioRepository {
         }
     }
 
+    fetchTypes(scenario) {
+        if (scenario.type_ids.length) {
+            scenario.types = this.types.whereIn('id', scenario.type_ids);
+        }
+    }
+
     setQuests(scenarios, quests) {
         scenarios.each(scenario => {
             scenario.quests = quests.whereIn('id', scenario.quests);
@@ -85,6 +92,10 @@ export default class ScenarioRepository {
 
     get chapters() {
         return this.chapters2 || (this.chapters2 = collect(scenarios.chapters));
+    }
+
+    get types() {
+        return this.types2 || (this.types2 = collect(scenarios.types));
     }
 
     get scenarioValidator() {

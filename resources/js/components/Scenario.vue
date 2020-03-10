@@ -10,7 +10,7 @@
                             <i class="material-icons">close</i>
                         </button>
                     </h2>
-                    <span v-if="scenario.chapter_name" class="text-xs uppercase text-white2-50 font-bold">{{ scenario.chapter_name }}</span>
+                    <span v-if="scenario.types" class="text-xs text-white2-50 font-bold">{{ scenario.types.pluck('name').implode(', ') }}</span>
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">

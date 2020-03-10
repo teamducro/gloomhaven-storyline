@@ -10,6 +10,8 @@ export default class Scenario {
         this.quests = data.quests;
         this.chapter_id = data.chapter_id;
         this.chapter_name = null;
+        this.type_ids = data.type_ids;
+        this.types = null;
         this.choices = data.choices;
         this.choice2 = null;
         this.hasChoices = typeof data.choices !== 'undefined';
