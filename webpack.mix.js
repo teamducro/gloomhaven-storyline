@@ -21,9 +21,9 @@ mix.js('resources/js/app.js', 'public/js/')
         ],
         whitelistPatterns: [/^mdc-/, /-active$/, /-enter$/, /-leave-to$/]
     })
+    .copy('resources/public', 'public')
     .copy('resources/img', 'public/img')
     .copy('resources/fonts', 'public/fonts')
-    .copy('resources/public', 'public')
     .options({
         processCssUrls: false,
         postCss: [tailwindcss('./tailwind.config.js')]

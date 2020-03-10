@@ -2,7 +2,8 @@
     <div>
         <modal ref="modal" :title="'Page #' + currentPage">
             <template v-slot:content>
-                <img :src="currentSrc" :alt="'Page #' + currentPage"/>
+                <webp :src="currentSrc"
+                      :alt="'Page #' + currentPage"></webp>
             </template>
             <template v-if="hasMultiplePages" v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" @click="prev" :disabled="hasPrev">
@@ -29,7 +30,7 @@
                 return this.pages[this.current];
             },
             currentSrc() {
-                return 'scenarios/' + this.currentPage + '.jpg';
+                return '/img/pages/' + this.currentPage + '.jpg';
             },
             hasMultiplePages() {
                 return this.pages.length > 1;
