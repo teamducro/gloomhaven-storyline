@@ -13,13 +13,13 @@
             "linked_from": [],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Intro",
             "quests": [
                 1
             ],
             "treasures": {
                 "7": "Random Side Scenario"
-            }
+            },
+            "type_ids": []
         },
         {
             "id": 2,
@@ -39,13 +39,13 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Intro",
             "quests": [
                 1
             ],
             "treasures": {
                 "67": "Gain 10 Gold"
-            }
+            },
+            "type_ids": []
         },
         {
             "id": 3,
@@ -67,13 +67,15 @@
                 8
             ],
             "required_by": [],
-            "chapter_name": "The Merchant",
             "quests": [
                 2
             ],
             "treasures": {
                 "65": "\"Horned Helm\" design (Item 107)"
-            }
+            },
+            "type_ids": [
+                2
+            ]
         },
         {
             "id": 4,
@@ -97,7 +99,10 @@
             "treasures": {
                 "38": "\"Ring of Skulls\" design (Item 123)",
                 "46": "Suffer 3 damage and gain POISON"
-            }
+            },
+            "type_ids": [
+                7
+            ]
         },
         {
             "id": 5,
@@ -116,14 +121,16 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Demon and Rift",
             "quests": [
                 4
             ],
             "treasures": {
                 "4": "Gain 15 Gold",
                 "28": "Gain 15 Gold"
-            }
+            },
+            "type_ids": [
+                7
+            ]
         },
         {
             "id": 6,
@@ -141,13 +148,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant",
             "quests": [
                 3
             ],
             "treasures": {
                 "50": "Gain \"Second Skin\" (Item 101)"
-            }
+            },
+            "type_ids": [
+                7
+            ]
         },
         {
             "id": 7,
@@ -168,12 +177,15 @@
             "required_by": [
                 14
             ],
-            "chapter_name": "The Merchant",
             "quests": [
                 5,
                 9
             ],
-            "treasures": {}
+            "treasures": {
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 8,
@@ -196,14 +208,16 @@
                 9
             ],
             "required_by": [],
-            "chapter_name": "The Merchant",
             "quests": [
                 6,
                 7
             ],
             "treasures": {
                 "51": "Random Side Scenario"
-            }
+            },
+            "type_ids": [
+                1
+            ]
         },
         {
             "id": 9,
@@ -224,11 +238,14 @@
                 8
             ],
             "required_by": [],
-            "chapter_name": "The Merchant",
             "quests": [
                 7
             ],
-            "treasures": {}
+            "treasures": {
+            },
+            "type_ids": [
+                4
+            ]
         },
         {
             "id": 10,
@@ -251,13 +268,13 @@
                 36
             ],
             "required_by": [],
-            "chapter_name": "Demon and Rift",
             "quests": [
                 8
             ],
             "treasures": {
                 "11": "Random Item Design"
-            }
+            },
+            "type_ids": []
         },
         {
             "id": 11,
@@ -279,7 +296,6 @@
                 12
             ],
             "required_by": [],
-            "chapter_name": "The Merchant",
             "quests": [
                 3,
                 10,
@@ -287,7 +303,10 @@
             ],
             "treasures": {
                 "5": " Gain \"Chainmail\" (Item 023)"
-            }
+            },
+            "type_ids": [
+                1
+            ]
         },
         {
             "id": 12,
@@ -310,7 +329,6 @@
                 11
             ],
             "required_by": [],
-            "chapter_name": "The Merchant",
             "quests": [
                 3,
                 10,
@@ -318,7 +336,10 @@
             ],
             "treasures": {
                 "34": "Gain \"Amulet of Life\" (Item 024)"
-            }
+            },
+            "type_ids": [
+                1
+            ]
         },
         {
             "id": 13,
@@ -342,14 +363,16 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant",
             "quests": [
                 9,
                 12
             ],
             "treasures": {
                 "10": "Gain 10 Experience"
-            }
+            },
+            "type_ids": [
+                4
+            ]
         },
         {
             "id": 14,
@@ -372,7 +395,10 @@
             ],
             "treasures": {
                 "26": "Gain 20 Gold"
-            }
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 15,
@@ -389,11 +415,14 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant",
             "quests": [
                 14
             ],
-            "treasures": {}
+            "treasures": {
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 16,
@@ -418,7 +447,10 @@
             ],
             "treasures": {
                 "1": "Random Item Design"
-            }
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 17,
@@ -433,7 +465,6 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant",
             "quests": [
                 16
             ],
@@ -442,6 +473,9 @@
             },
             "treasures_from": [
                 37
+            ],
+            "type_ids": [
+                6
             ]
         },
         {
@@ -464,13 +498,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Sewers",
             "quests": [
                 17
             ],
             "treasures": {
                 "63": "Random Item Design"
-            }
+            },
+            "type_ids": [
+                1
+            ]
         },
         {
             "id": 19,
@@ -491,13 +527,16 @@
             "required_by": [
                 14
             ],
-            "chapter_name": "Demon and Rift",
             "quests": [
                 18
             ],
             "treasures": {
                 "17": "Gain 20 Gold"
-            }
+            },
+            "type_ids": [
+                3,
+                7
+            ]
         },
         {
             "id": 20,
@@ -521,14 +560,14 @@
             "required_by": [
                 8
             ],
-            "chapter_name": "The Merchant",
             "quests": [
                 3,
                 9
             ],
             "treasures": {
                 "60": "Gain \"Skullbane Axe\" (Item 113)"
-            }
+            },
+            "type_ids": []
         },
         {
             "id": 21,
@@ -548,13 +587,13 @@
                 36
             ],
             "required_by": [],
-            "chapter_name": "Demon and Rift",
             "quests": [
                 19
             ],
             "treasures": {
                 "15": "Gain \"Pendant of Dark Pacts\" (Item 045)"
-            }
+            },
+            "type_ids": []
         },
         {
             "id": 22,
@@ -580,7 +619,8 @@
             ],
             "treasures": {
                 "21": "Suffer 5 Damage"
-            }
+            },
+            "type_ids": []
         },
         {
             "id": 23,
@@ -598,7 +638,6 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Sewers",
             "quests": [
                 17,
                 21
@@ -606,7 +645,10 @@
             "treasures": {
                 "39": "Suffer 5 damage",
                 "72": "\"Fueled Falchion\" design (Item 116)"
-            }
+            },
+            "type_ids": [
+                1
+            ]
         },
         {
             "id": 24,
@@ -625,13 +667,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Voice",
             "quests": [
                 22
             ],
             "treasures": {
                 "70": "Random Side Scenario"
-            }
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 25,
@@ -650,13 +694,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Dragons",
             "quests": [
                 15
             ],
             "treasures": {
                 "58": "Gain \"Drakescale Helm\" (Item 108)"
-            }
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 26,
@@ -678,13 +724,15 @@
                 23,
                 43
             ],
-            "chapter_name": "Sewers",
             "quests": [
                 17
             ],
             "treasures": {
                 "66": "Gain \"Volatile Bomb\" (Item 033)"
-            }
+            },
+            "type_ids": [
+                1
+            ]
         },
         {
             "id": 27,
@@ -702,12 +750,13 @@
                 35
             ],
             "required_by": [],
-            "chapter_name": "Demon and Rift",
             "quests": [
                 8,
                 18
             ],
-            "treasures": {}
+            "treasures": {
+            },
+            "type_ids": []
         },
         {
             "id": 28,
@@ -728,13 +777,15 @@
             "required_by": [
                 6
             ],
-            "chapter_name": "The Merchant",
             "quests": [
                 3
             ],
             "treasures": {
                 "32": "Random Item Design"
-            }
+            },
+            "type_ids": [
+                2
+            ]
         },
         {
             "id": 29,
@@ -750,13 +801,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "The Merchant",
             "quests": [
                 3
             ],
             "treasures": {
                 "41": "Gain \"Black Knife\" (Item 053)"
-            }
+            },
+            "type_ids": [
+                2
+            ]
         },
         {
             "id": 30,
@@ -775,11 +828,14 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Voice",
             "quests": [
                 23
             ],
-            "treasures": {}
+            "treasures": {
+            },
+            "type_ids": [
+                6
+            ]
         },
         {
             "id": 31,
@@ -810,7 +866,10 @@
             ],
             "treasures": {
                 "69": "Gain \"Robes of Summoning\" (Item 100)"
-            }
+            },
+            "type_ids": [
+                1
+            ]
         },
         {
             "id": 32,
@@ -831,11 +890,14 @@
                 42
             ],
             "required_by": [],
-            "chapter_name": "Voice",
             "quests": [
                 25
             ],
-            "treasures": {}
+            "treasures": {
+            },
+            "type_ids": [
+                3
+            ]
         },
         {
             "id": 33,
@@ -859,7 +921,11 @@
                 26,
                 27
             ],
-            "treasures": {}
+            "treasures": {
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 34,
@@ -877,13 +943,15 @@
                 33
             ],
             "required_by": [],
-            "chapter_name": "Dragons",
             "quests": [
                 27
             ],
             "treasures": {
                 "23": "Gain \"Drakescale Armor\" (Item 103)"
-            }
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 35,
@@ -908,13 +976,15 @@
             "required_by": [
                 10
             ],
-            "chapter_name": "Demon and Rift",
             "quests": [
                 28
             ],
             "treasures": {
                 "61": "Gain \"Versatile Dagger\" (Item 040)"
-            }
+            },
+            "type_ids": [
+                1
+            ]
         },
         {
             "id": 36,
@@ -937,13 +1007,15 @@
             "required_by": [
                 10
             ],
-            "chapter_name": "Demon and Rift",
             "quests": [
                 29
             ],
             "treasures": {
                 "2": "Gain \"Tower Shield\" (Item 032)"
-            }
+            },
+            "type_ids": [
+                1
+            ]
         },
         {
             "id": 37,
@@ -963,7 +1035,6 @@
             "required_by": [
                 43
             ],
-            "chapter_name": "Under Oceans",
             "quests": [
                 30
             ],
@@ -972,7 +1043,10 @@
             },
             "treasures_to": {
                 "49": 17
-            }
+            },
+            "type_ids": [
+                6
+            ]
         },
         {
             "id": 38,
@@ -991,13 +1065,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Through Jungles",
             "quests": [
                 31
             ],
             "treasures": {
                 "29": "Gain \"Endurance Footwraps\" (Item 097)"
-            }
+            },
+            "type_ids": [
+                2
+            ]
         },
         {
             "id": 39,
@@ -1016,13 +1092,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Atop Mountains",
             "quests": [
                 32
             ],
             "treasures": {
                 "73": "Random Item Design"
-            }
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 40,
@@ -1045,13 +1123,15 @@
             "required_by": [
                 33
             ],
-            "chapter_name": "Voice",
             "quests": [
                 25
             ],
             "treasures": {
                 "47": "Gain \"Steam Armor\" (Item 104)"
-            }
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 41,
@@ -1070,13 +1150,15 @@
                 42
             ],
             "required_by": [],
-            "chapter_name": "Voice",
             "quests": [
                 25
             ],
             "treasures": {
                 "24": "Suffer 5 damage"
-            }
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 42,
@@ -1094,14 +1176,16 @@
                 41
             ],
             "required_by": [],
-            "chapter_name": "Voice",
             "quests": [
                 33
             ],
             "treasures": {
                 "30": "Gain 1 ✔",
                 "55": "Gain 1 ✔"
-            }
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 43,
@@ -1125,7 +1209,10 @@
             ],
             "treasures": {
                 "35": "Gain \"Drakescale Boots\" (Item 098)"
-            }
+            },
+            "type_ids": [
+                2
+            ]
         },
         {
             "id": 44,
@@ -1142,11 +1229,14 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Through Jungles",
             "quests": [
                 35
             ],
-            "treasures": {}
+            "treasures": {
+            },
+            "type_ids": [
+                2
+            ]
         },
         {
             "id": 45,
@@ -1165,13 +1255,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Rebellion Rises",
             "quests": [
                 36
             ],
             "treasures": {
                 "74": "Random Item Design"
-            }
+            },
+            "type_ids": [
+                3
+            ]
         },
         {
             "id": 46,
@@ -1189,13 +1281,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Atop Mountains",
             "quests": [
                 32
             ],
             "treasures": {
                 "48": "Gain 30 gold"
-            }
+            },
+            "type_ids": [
+                5
+            ]
         },
         {
             "id": 47,
@@ -1213,14 +1307,16 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Under Oceans",
             "quests": [
                 30
             ],
             "treasures": {
                 "18": "Gain 15 gold",
                 "57": "Gain 15 gold"
-            }
+            },
+            "type_ids": [
+                6
+            ]
         },
         {
             "id": 48,
@@ -1238,13 +1334,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Through Jungles",
             "quests": [
                 31
             ],
             "treasures": {
                 "64": "Gain 30 gold"
-            }
+            },
+            "type_ids": [
+                2
+            ]
         },
         {
             "id": 49,
@@ -1260,13 +1358,15 @@
             ],
             "blocked_by": [],
             "required_by": [],
-            "chapter_name": "Rebellion Rises",
             "quests": [
                 37
             ],
             "treasures": {
                 "44": "Random Side Scenario"
-            }
+            },
+            "type_ids": [
+                3
+            ]
         },
         {
             "id": 50,
@@ -1285,11 +1385,14 @@
                 49
             ],
             "required_by": [],
-            "chapter_name": "Rebellion Rises",
             "quests": [
                 38
             ],
-            "treasures": {}
+            "treasures": {
+            },
+            "type_ids": [
+                1
+            ]
         },
         {
             "id": 51,
@@ -1316,7 +1419,10 @@
             ],
             "treasures": {
                 "56": "Gain \"Star Earring\" (Item 069)"
-            }
+            },
+            "type_ids": [
+                1
+            ]
         }
     ],
     "chapters": [
@@ -1359,6 +1465,36 @@
         {
             "id": 10,
             "name": "Voice"
+        }
+    ],
+    "types": [
+        {
+            "id": 1,
+            "name": "Gloomhaven"
+        },
+        {
+            "id": 2,
+            "name": "Dagger Forest"
+        },
+        {
+            "id": 3,
+            "name": "Lingering Swamp"
+        },
+        {
+            "id": 4,
+            "name": "Watcher Mountains"
+        },
+        {
+            "id": 5,
+            "name": "Copperneck Mountains"
+        },
+        {
+            "id": 6,
+            "name": "Misty Sea"
+        },
+        {
+            "id": 7,
+            "name": "Crypt"
         }
     ]
 }
