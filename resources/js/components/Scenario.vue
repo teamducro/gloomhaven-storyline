@@ -5,12 +5,13 @@
                 <div id="scenario-title" class="pl-6 border-b border-white2-25"
                      :class="{'pb-2': scenario.chapter, 'pb-4': !scenario.chapter}">
                     <h2 class="mdc-dialog__title p-0 leading-none">{{ scenario.name }}
+                        <span class="text-sm text-white2-50">{{ scenario.coordinates }}</span>
                         <button type="button" data-mdc-dialog-action="close"
                                 class="mdc-button absolute right-0 top-0 mt-4">
                             <i class="material-icons">close</i>
                         </button>
                     </h2>
-                    <span v-if="scenario.types" class="text-xs text-white2-50 font-bold">{{ scenario.types.pluck('name').implode(', ') }}</span>
+                    <span v-if="scenario.types" class="text-sm text-white2-50 font-bold">{{ scenario.types.pluck('name').implode(', ') }}</span>
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">
