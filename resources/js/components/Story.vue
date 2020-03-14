@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen w-screen">
+    <div class="w-screen">
         <inline-svg
                 name="storyline"
                 id="storyline"
