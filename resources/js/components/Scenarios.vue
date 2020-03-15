@@ -9,7 +9,6 @@
                 <template v-if="scenario.isVisible()">
                     <span class="mdc-list-item__text flex items-center">
                         <webp :src="'/img/scenarios/' + scenario.id + '.png'"
-                              :animate="true"
                               class="w-20 mr-4 my-1"
                               :alt="scenario.name"></webp>
                         <i v-if="scenario.isRequired() || scenario.isBlocked()"
