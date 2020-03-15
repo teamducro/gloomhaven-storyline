@@ -3,6 +3,7 @@
         {
             "id": 1,
             "name": "#1 Black Barrow",
+            "coordinates": "G-10",
             "pages": [
                 3
             ],
@@ -24,6 +25,7 @@
         {
             "id": 2,
             "name": "#2 Barrow Lair",
+            "coordinates": "G-11",
             "pages": [
                 4,
                 5
@@ -50,6 +52,7 @@
         {
             "id": 3,
             "name": "#3 Inox Encampment",
+            "coordinates": "G-3",
             "pages": [
                 5,
                 6
@@ -80,6 +83,7 @@
         {
             "id": 4,
             "name": "#4 Crypt of the Damned",
+            "coordinates": "E-11",
             "pages": [
                 7
             ],
@@ -107,6 +111,7 @@
         {
             "id": 5,
             "name": "#5 Ruinous Crypt",
+            "coordinates": "D-6",
             "pages": [
                 8
             ],
@@ -135,6 +140,7 @@
         {
             "id": 6,
             "name": "#6 Decaying Crypt",
+            "coordinates": "F-10",
             "pages": [
                 9,
                 10
@@ -161,6 +167,7 @@
         {
             "id": 7,
             "name": "#7 Vibrant Grotto",
+            "coordinates": "C-12",
             "pages": [
                 10,
                 11
@@ -190,6 +197,7 @@
         {
             "id": 8,
             "name": "#8 Gloomhaven Warehouse",
+            "coordinates": "C-18",
             "pages": [
                 12
             ],
@@ -222,6 +230,7 @@
         {
             "id": 9,
             "name": "#9 Diamond Mine",
+            "coordinates": "L-2",
             "pages": [
                 13
             ],
@@ -250,6 +259,7 @@
         {
             "id": 10,
             "name": "#10 Plane of Elemental Power",
+            "coordinates": "L-2",
             "pages": [
                 14
             ],
@@ -279,6 +289,7 @@
         {
             "id": 11,
             "name": "#11 Gloomhaven Square A",
+            "coordinates": "B-16",
             "pages": [
                 15,
                 16
@@ -311,6 +322,7 @@
         {
             "id": 12,
             "name": "#12 Gloomhaven Square B",
+            "coordinates": "B-16",
             "pages": [
                 16,
                 17
@@ -344,6 +356,7 @@
         {
             "id": 13,
             "name": "#13 Temple of the Seer",
+            "coordinates": "N-3",
             "pages": [
                 18
             ],
@@ -377,6 +390,7 @@
         {
             "id": 14,
             "name": "#14 Frozen Hollow",
+            "coordinates": "C-10",
             "pages": [
                 19,
                 20
@@ -403,6 +417,7 @@
         {
             "id": 15,
             "name": "#15 Shrine of Strength",
+            "coordinates": "B-11",
             "pages": [
                 20,
                 21
@@ -427,6 +442,7 @@
         {
             "id": 16,
             "name": "#16 Mountain Pass",
+            "coordinates": "B-6",
             "pages": [
                 22
             ],
@@ -455,6 +471,7 @@
         {
             "id": 17,
             "name": "#17 Lost Island",
+            "coordinates": "K-17",
             "pages": [
                 23
             ],
@@ -481,6 +498,7 @@
         {
             "id": 18,
             "name": "#18 Abandoned Sewers",
+            "coordinates": "C-14",
             "pages": [
                 24
             ],
@@ -511,6 +529,7 @@
         {
             "id": 19,
             "name": "#19 Forgotten Crypt",
+            "coordinates": "M-7",
             "pages": [
                 25,
                 26
@@ -541,6 +560,7 @@
         {
             "id": 20,
             "name": "#20 Necromancer's Sanctum",
+            "coordinates": "H-13",
             "pages": [
                 26,
                 27
@@ -572,6 +592,7 @@
         {
             "id": 21,
             "name": "#21 Infernal Throne",
+            "coordinates": "C-7",
             "pages": [
                 28,
                 29
@@ -598,6 +619,7 @@
         {
             "id": 22,
             "name": "#22 Temple of Elements",
+            "coordinates": "K-8",
             "pages": [
                 29,
                 30
@@ -625,6 +647,7 @@
         {
             "id": 23,
             "name": "#23 Deep Ruins",
+            "coordinates": "C-15",
             "pages": [
                 31,
                 32
@@ -653,6 +676,7 @@
         {
             "id": 24,
             "name": "#24 Echo Chamber",
+            "coordinates": "C-6",
             "pages": [
                 32,
                 33
@@ -680,6 +704,7 @@
         {
             "id": 25,
             "name": "#25 Icecrag Ascent",
+            "coordinates": "A-5",
             "pages": [
                 34,
                 35
@@ -707,6 +732,7 @@
         {
             "id": 26,
             "name": "#26 Ancient Cistern",
+            "coordinates": "D-15",
             "pages": [
                 35,
                 36
@@ -737,6 +763,7 @@
         {
             "id": 27,
             "name": "#27 Ruinous Rift",
+            "coordinates": "E-6",
             "pages": [
                 37
             ],
@@ -761,6 +788,7 @@
         {
             "id": 28,
             "name": "#28 Outer Ritual Chamber",
+            "coordinates": "E-4",
             "pages": [
                 38
             ],
@@ -790,6 +818,7 @@
         {
             "id": 29,
             "name": "#29 Sanctuary of Gloom",
+            "coordinates": "E-3",
             "pages": [
                 39
             ],
@@ -814,6 +843,7 @@
         {
             "id": 30,
             "name": "#30 Shrine of the Depths",
+            "coordinates": "N-15",
             "pages": [
                 40,
                 41
@@ -840,6 +870,7 @@
         {
             "id": 31,
             "name": "#31 Plane of Night",
+            "coordinates": "A-16",
             "pages": [
                 41,
                 42
@@ -874,6 +905,7 @@
         {
             "id": 32,
             "name": "#32 Decrepit Wood",
+            "coordinates": "L-11",
             "pages": [
                 43
             ],
@@ -902,6 +934,7 @@
         {
             "id": 33,
             "name": "#33 Savvas Armory",
+            "coordinates": "A-7",
             "pages": [
                 44
             ],
@@ -930,6 +963,7 @@
         {
             "id": 34,
             "name": "#34 Scorched Summit",
+            "coordinates": "A-4",
             "pages": [
                 45
             ],
@@ -956,6 +990,7 @@
         {
             "id": 35,
             "name": "#35 Gloomhaven Battlements A",
+            "coordinates": "A-14",
             "pages": [
                 46,
                 47
@@ -989,6 +1024,7 @@
         {
             "id": 36,
             "name": "#36 Gloomhaven Battlements B",
+            "coordinates": "B-14",
             "pages": [
                 47,
                 48
@@ -1020,6 +1056,7 @@
         {
             "id": 37,
             "name": "#37 Doom Trench",
+            "coordinates": "G-18",
             "pages": [
                 49
             ],
@@ -1051,6 +1088,7 @@
         {
             "id": 38,
             "name": "#38 Slave Pens",
+            "coordinates": "G-2",
             "pages": [
                 50,
                 51
@@ -1078,6 +1116,7 @@
         {
             "id": 39,
             "name": "#39 Treacherous Divide",
+            "coordinates": "B-11",
             "pages": [
                 51,
                 52
@@ -1105,6 +1144,7 @@
         {
             "id": 40,
             "name": "#40 Ancient Defense Network",
+            "coordinates": "F-12",
             "pages": [
                 53,
                 54
@@ -1136,6 +1176,7 @@
         {
             "id": 41,
             "name": "#41 Timeworn Tomb",
+            "coordinates": "F-13",
             "pages": [
                 54,
                 55
@@ -1163,6 +1204,7 @@
         {
             "id": 42,
             "name": "#42 Realm of the Voice",
+            "coordinates": "C-5",
             "pages": [
                 56
             ],
@@ -1190,6 +1232,7 @@
         {
             "id": 43,
             "name": "#43 Drake Nest",
+            "coordinates": "D-4",
             "pages": [
                 57,
                 58
@@ -1217,6 +1260,7 @@
         {
             "id": 44,
             "name": "#44 Tribal Assault",
+            "coordinates": "F-3",
             "pages": [
                 58,
                 59
@@ -1241,6 +1285,7 @@
         {
             "id": 45,
             "name": "#45 Rebel Swamp",
+            "coordinates": "M-9",
             "pages": [
                 60
             ],
@@ -1268,6 +1313,7 @@
         {
             "id": 46,
             "name": "#46 Nightmare Peak",
+            "coordinates": "A-11",
             "pages": [
                 61
             ],
@@ -1294,6 +1340,7 @@
         {
             "id": 47,
             "name": "#47 Lair of the Unseeing Eye",
+            "coordinates": "H-18",
             "pages": [
                 62
             ],
@@ -1321,6 +1368,7 @@
         {
             "id": 48,
             "name": "#48 Shadow Weald",
+            "coordinates": "E-1",
             "pages": [
                 63
             ],
@@ -1347,6 +1395,7 @@
         {
             "id": 49,
             "name": "#49 Rebel's Stand",
+            "coordinates": "N-7",
             "pages": [
                 64
             ],
@@ -1371,6 +1420,7 @@
         {
             "id": 50,
             "name": "#50 Ghost Forrest",
+            "coordinates": "C-17",
             "pages": [
                 65,
                 66
@@ -1397,6 +1447,7 @@
         {
             "id": 51,
             "name": "#51 The Void",
+            "coordinates": "A-15",
             "pages": [
                 66,
                 67

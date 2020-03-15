@@ -12,14 +12,26 @@
                 <div class="mdc-list-group">
                     <ul ref="list" class="mdc-list">
                         <li>
-                            <a class="mdc-list-item mdc-list-item--activated" @click="toggle">
+                            <router-link to="/"
+                                         class="mdc-list-item mdc-list-item--activated" @click="toggle">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
                                 <span class="mdc-list-item__text">Storyline</span>
-                            </a>
+                            </router-link>
+                        </li>
+
+                        <li>
+                            <router-link to="/scenarios"
+                                         class="mdc-list-item">
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">list</i>
+                                <span class="mdc-list-item__text">Scenarios</span>
+                            </router-link>
                         </li>
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
-
+                    </ul>
+                </div>
+                <div class="mdc-list-group">
+                    <ul>
                         <li>
                             <a class="mdc-list-item" @click="$bus.$emit('open-share-modal')">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">share</i>
@@ -50,7 +62,7 @@
 
         <div class="mdc-drawer-scrim"></div>
 
-        <div class="mdc-drawer-app-content">
+        <div class="mdc-drawer-app-content w-full">
             <slot name="content"></slot>
         </div>
     </div>
@@ -68,10 +80,6 @@
         },
         mounted() {
             this.drawer = MDCDrawer.attachTo(this.$refs['menu']);
-
-            this.drawer.listen('MDCDrawer:closed', (action) => {
-                this.drawer.list_.selectedIndex = 0;
-            });
         },
         methods: {
             toggle() {

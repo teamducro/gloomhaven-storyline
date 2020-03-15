@@ -4,7 +4,9 @@ import SocialSharing from 'vue-social-sharing';
 import VueClipboard from 'vue-clipboard2';
 import ShareState from "./services/ShareState";
 import QuestRepository from "./repositories/QuestRepository";
-import QuestValidator from "./services/QuestValidator";
+import VueRouter from 'vue-router'
+import Story from "./components/Story";
+import Scenarios from "./components/Scenarios";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -17,8 +19,16 @@ window.Vue.use(VueClipboard);
 const files = require.context('./components', true, /\.vue$/i);
 files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
+const routes = [
+    {path: '/', component: Story},
+    {path: '/scenarios', component: Scenarios}
+];
+const router = new VueRouter({routes});
+
 Vue.prototype.$bus = new Vue;
+Vue.use(VueRouter);
 window.app = new Vue({
+    router,
     el: '#app',
     data() {
         return {

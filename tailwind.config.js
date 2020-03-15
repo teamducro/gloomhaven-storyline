@@ -5,7 +5,7 @@ module.exports = {
         extend: {
             spacing: {},
             screens: {
-                xs: '400px',
+                xs: '400px'
             },
             zIndex: {
                 5: '5'
