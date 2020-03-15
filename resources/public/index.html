@@ -24,8 +24,10 @@
 </head>
 <body>
 <div id="app" v-cloak>
-    <webp src="/img/gloomhaven-logo.png" alt="Gloomhaven"
-          class="logo" width="250"></webp>
+    <router-link to="/">
+        <webp src="/img/gloomhaven-logo.png" alt="Gloomhaven"
+              class="logo" width="250"></webp>
+    </router-link>
     <drawer>
         <template v-slot:content>
             <router-view></router-view>
