@@ -15,7 +15,7 @@ mix.js('resources/js/app.js', 'public/js/')
     })
     .purgeCss({
         content: [
-            rootPath('public/index.html'),
+            rootPath('resources/**/*.html'),
             rootPath('resources/**/*.js'),
             rootPath('resources/**/*.vue')
         ],
