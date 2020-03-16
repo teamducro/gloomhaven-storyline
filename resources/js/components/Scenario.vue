@@ -42,6 +42,19 @@
                         Requirments: {{ scenario.requirments }}
                     </div>
 
+                    <div class="mb-6" v-if="scenario.isComplete() && scenario.treasures.isNotEmpty()">
+                        <h2 class="text-white" style="padding-left: 12px;">Treasures</h2>
+                        <div v-for="(treasure, id) in scenario.treasures.items" :key="id"
+                             class="flex items-center">
+                            <checkbox
+                                    :id="id"
+                                    :label="'#' + id"
+                                    :checked="scenario.isTreasureUnlocked(id)"
+                                    @changed="treasureChanged"></checkbox>
+                            <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">{{ treasure }}</span>
+                        </div>
+                    </div>
+
                     <div class="mb-3 flex flex-col items-start">
                         <template v-for="(quest, index) in scenario.quests">
                             <button class="mdc-button"
@@ -59,19 +72,6 @@
                                 </div>
                             </transition-expand>
                         </template>
-                    </div>
-
-                    <div class="mb-6" v-if="scenario.treasures.isNotEmpty()">
-                        <h2 class="text-white" style="padding-left: 12px;">Treasures</h2>
-                        <div v-for="(treasure, id) in scenario.treasures.items" :key="id"
-                             class="flex items-center">
-                            <checkbox
-                                    :id="id"
-                                    :label="'#' + id"
-                                    :checked="scenario.isTreasureUnlocked(id)"
-                                    @changed="treasureChanged"></checkbox>
-                            <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">{{ treasure }}</span>
-                        </div>
                     </div>
 
                     <div class="mb-6 hidden">
