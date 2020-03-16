@@ -2,6 +2,7 @@
     <div class="pt-12 pb-4 px-4 flex justify-center w-full">
         <ul v-if="scenarios" class="mdc-list" ref="list">
             <li v-for="scenario in scenarios.items"
+                v-if="!typeFilter || (typeFilter && scenario.isType(typeFilter))"
                 :key="scenario.id"
                 class="mdc-list-item h-auto"
                 :data-id="scenario.id"
@@ -9,7 +10,7 @@
                 <template v-if="scenario.isVisible()">
                     <span class="mdc-list-item__text flex items-center">
                         <webp :src="'/img/scenarios/' + scenario.id + '.png'"
-                              class="w-20 mr-4 my-1"
+                              class="w-16 mr-4 my-1"
                               :alt="scenario.name"></webp>
                         <i v-if="scenario.isRequired() || scenario.isBlocked()"
                            class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
@@ -21,7 +22,7 @@
                     </span>
                 </template>
                 <template v-else>
-                    <span class="mdc-list-item__text opacity-50 pl-32"
+                    <span class="mdc-list-item__text opacity-50 pl-28"
                           @click="open(scenario)">
                         #{{ scenario.id }}
                     </span>
@@ -40,6 +41,7 @@
             return {
                 list: null,
                 scenarios: null,
+                typeFilter: null,
                 scenarioRepository: new ScenarioRepository()
             }
         },

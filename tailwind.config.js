@@ -3,7 +3,9 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
     theme: {
         extend: {
-            spacing: {},
+            spacing: {
+                28: '7rem'
+            },
             screens: {
                 xs: '400px'
             },

@@ -93,6 +93,10 @@ export default class Scenario {
         return this.unlockedTreasures.indexOf(id) >= 0
     }
 
+    isType(id) {
+        return this.type_ids.indexOf(id) >= 0
+    }
+
     store() {
         window.localStorage.setItem(this.key(), JSON.stringify({
             "state": this.state,
