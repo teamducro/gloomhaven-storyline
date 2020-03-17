@@ -33,11 +33,13 @@ window.app = new Vue({
     data() {
         return {
             scenarios: null,
-            quests: null
+            quests: null,
+            webpSupported: true,
         }
     },
     mounted() {
         this.fetchScenarios();
+        this.webpSupported = this.isWebpSupported();
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
     },
     methods: {
@@ -53,6 +55,15 @@ window.app = new Vue({
                 (new ScenarioValidator).validate();
                 this.$bus.$emit('scenarios-updated');
             });
+        },
+        isWebpSupported() {
+            let elem = document.createElement('canvas');
+
+            if (!!(elem.getContext && elem.getContext('2d'))) {
+                return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+            }
+
+            return false;
         }
     }
 });
