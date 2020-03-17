@@ -11,7 +11,7 @@
                             <i class="material-icons">close</i>
                         </button>
                     </h2>
-                    <span v-if="scenario.types" class="text-sm text-white2-50 font-bold">{{ scenario.types.pluck('name').implode(', ') }}</span>
+                    <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">{{ scenario.regions.pluck('name').implode(', ') }}</span>
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">

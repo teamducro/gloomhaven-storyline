@@ -13,6 +13,10 @@ module.exports = {
                 5: '5'
             },
             colors: {
+                primary: '#3771E0',
+                secondary: '#018786',
+                background: '#000',
+                surface: '#111',
                 complete: '#3B8585',
                 incomplete: '#A13C2F',
                 black2: {

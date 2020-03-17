@@ -1,0 +1,18 @@
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.dropdown-enter-active, .dropdown-leave-active {
+    transition: opacity .3s, transform .3s;
+    transform-origin: top;
+}
+
+.dropdown-enter, .dropdown-leave-to {
+    transform-origin: top;
+    opacity: 0;
+    transform: scaleY(.9);
+}

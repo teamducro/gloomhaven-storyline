@@ -3,6 +3,10 @@
 @tailwind components;
 
 @tailwind utilities;
+@import "utilities";
 
 @import "fonts";
+
 @import "main";
+
+@import "animations";

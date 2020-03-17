@@ -79,8 +79,8 @@ export default class ScenarioRepository {
     }
 
     fetchTypes(scenario) {
-        if (scenario.type_ids.length) {
-            scenario.types = this.types.whereIn('id', scenario.type_ids);
+        if (scenario.region_ids.length) {
+            scenario.regions = this.regions.whereIn('id', scenario.region_ids);
         }
     }
 
@@ -94,8 +94,8 @@ export default class ScenarioRepository {
         return this.chapters2 || (this.chapters2 = collect(scenarios.chapters));
     }
 
-    get types() {
-        return this.types2 || (this.types2 = collect(scenarios.types));
+    get regions() {
+        return this.regions2 || (this.regions2 = collect(scenarios.regions));
     }
 
     get scenarioValidator() {
