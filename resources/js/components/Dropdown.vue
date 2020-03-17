@@ -8,7 +8,7 @@
         </div>
 
         <transition name="dropdown">
-            <div class="absolute" v-if="isOpen"
+            <div class="absolute p-2 rounded-lg bg-surface" v-if="isOpen"
                  :class="align === 'left' ? 'left-0' : 'right-0'"
                  :style="{ width }"
             >

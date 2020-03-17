@@ -9,7 +9,7 @@
                     </button>
                 </template>
 
-                <ul class="mdc-list bg-surface"
+                <ul class="mdc-list"
                     ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
                     <li class="mdc-list-item" @click="regionFilter = null">
                         <span class="mdc-list-item__text">All</span>
@@ -22,7 +22,7 @@
             </dropdown>
         </div>
 
-        <ul v-if="scenarios" class="mdc-list bg-black2-25 mt-4" ref="list">
+        <ul v-if="scenarios" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4" ref="list">
             <li v-for="scenario in scenarios.items"
                 v-show="!regionFilter || (regionFilter && scenario.inRegion(regionFilter))"
                 :key="scenario.id"
