@@ -27,7 +27,7 @@
 
             zoom('#storyline');
 
-            $('.scenario').click((e) => {
+            $('.scenario').on('click', (e) => {
                 this.open($(e.currentTarget).data('id'));
             });
         },
