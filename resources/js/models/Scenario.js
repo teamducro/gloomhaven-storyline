@@ -11,8 +11,8 @@ export default class Scenario {
         this.quests = data.quests;
         this.chapter_id = data.chapter_id;
         this.chapter_name = null;
-        this.type_ids = data.type_ids;
-        this.types = null;
+        this.region_ids = data.region_ids;
+        this.regions = null;
         this.choices = data.choices;
         this.choice2 = null;
         this.hasChoices = typeof data.choices !== 'undefined';
@@ -93,8 +93,8 @@ export default class Scenario {
         return this.unlockedTreasures.indexOf(id) >= 0
     }
 
-    isType(id) {
-        return this.type_ids.indexOf(id) >= 0
+    inRegion(id) {
+        return this.region_ids.indexOf(id) >= 0
     }
 
     store() {

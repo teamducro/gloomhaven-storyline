@@ -1,8 +1,30 @@
 <template>
     <div class="pt-12 pb-4 px-4 flex justify-center w-full">
-        <ul v-if="scenarios" class="mdc-list" ref="list">
+
+        <div class="fixed right-0 top-0 mt-1 z-5">
+            <dropdown align="right">
+                <template v-slot:trigger>
+                    <button type="button" class="mdc-icon-button material-icons p-4">
+                        filter_list
+                    </button>
+                </template>
+
+                <ul class="mdc-list"
+                    ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+                    <li class="mdc-list-item" @click="regionFilter = null">
+                        <span class="mdc-list-item__text">All</span>
+                    </li>
+                    <li v-for="region in scenarioRepository.regions.items"
+                        class="mdc-list-item" @click="regionFilter = region.id">
+                        <span class="mdc-list-item__text">{{ region.name }}</span>
+                    </li>
+                </ul>
+            </dropdown>
+        </div>
+
+        <ul v-if="scenarios" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4" ref="list">
             <li v-for="scenario in scenarios.items"
-                v-if="!typeFilter || (typeFilter && scenario.isType(typeFilter))"
+                v-show="!regionFilter || (regionFilter && scenario.inRegion(regionFilter))"
                 :key="scenario.id"
                 class="mdc-list-item h-auto"
                 :data-id="scenario.id"
@@ -41,7 +63,8 @@
             return {
                 list: null,
                 scenarios: null,
-                typeFilter: null,
+                regionFilter: null,
+                filter: null,
                 scenarioRepository: new ScenarioRepository()
             }
         },

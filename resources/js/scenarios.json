@@ -20,7 +20,7 @@
             "treasures": {
                 "7": "Random Side Scenario"
             },
-            "type_ids": []
+            "region_ids": []
         },
         {
             "id": 2,
@@ -47,7 +47,7 @@
             "treasures": {
                 "67": "Gain 10 Gold"
             },
-            "type_ids": []
+            "region_ids": []
         },
         {
             "id": 3,
@@ -76,7 +76,7 @@
             "treasures": {
                 "65": "\"Horned Helm\" design (Item 107)"
             },
-            "type_ids": [
+            "region_ids": [
                 2
             ]
         },
@@ -104,7 +104,7 @@
                 "38": "\"Ring of Skulls\" design (Item 123)",
                 "46": "Suffer 3 damage and gain POISON"
             },
-            "type_ids": [
+            "region_ids": [
                 7
             ]
         },
@@ -133,7 +133,7 @@
                 "4": "Gain 15 Gold",
                 "28": "Gain 15 Gold"
             },
-            "type_ids": [
+            "region_ids": [
                 7
             ]
         },
@@ -160,7 +160,7 @@
             "treasures": {
                 "50": "Gain \"Second Skin\" (Item 101)"
             },
-            "type_ids": [
+            "region_ids": [
                 7
             ]
         },
@@ -190,7 +190,7 @@
             ],
             "treasures": {
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -223,7 +223,7 @@
             "treasures": {
                 "51": "Random Side Scenario"
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         },
@@ -252,7 +252,7 @@
             ],
             "treasures": {
             },
-            "type_ids": [
+            "region_ids": [
                 4
             ]
         },
@@ -284,7 +284,7 @@
             "treasures": {
                 "11": "Random Item Design"
             },
-            "type_ids": []
+            "region_ids": []
         },
         {
             "id": 11,
@@ -315,7 +315,7 @@
             "treasures": {
                 "5": " Gain \"Chainmail\" (Item 023)"
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         },
@@ -349,7 +349,7 @@
             "treasures": {
                 "34": "Gain \"Amulet of Life\" (Item 024)"
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         },
@@ -383,7 +383,7 @@
             "treasures": {
                 "10": "Gain 10 Experience"
             },
-            "type_ids": [
+            "region_ids": [
                 4
             ]
         },
@@ -410,7 +410,7 @@
             "treasures": {
                 "26": "Gain 20 Gold"
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -435,7 +435,7 @@
             ],
             "treasures": {
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -464,7 +464,7 @@
             "treasures": {
                 "1": "Random Item Design"
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -491,7 +491,7 @@
             "treasures_from": [
                 37
             ],
-            "type_ids": [
+            "region_ids": [
                 6
             ]
         },
@@ -522,7 +522,7 @@
             "treasures": {
                 "63": "Random Item Design"
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         },
@@ -552,7 +552,7 @@
             "treasures": {
                 "17": "Gain 20 Gold"
             },
-            "type_ids": [
+            "region_ids": [
                 3,
                 7
             ]
@@ -587,7 +587,7 @@
             "treasures": {
                 "60": "Gain \"Skullbane Axe\" (Item 113)"
             },
-            "type_ids": []
+            "region_ids": []
         },
         {
             "id": 21,
@@ -614,7 +614,7 @@
             "treasures": {
                 "15": "Gain \"Pendant of Dark Pacts\" (Item 045)"
             },
-            "type_ids": []
+            "region_ids": []
         },
         {
             "id": 22,
@@ -642,7 +642,7 @@
             "treasures": {
                 "21": "Suffer 5 Damage"
             },
-            "type_ids": []
+            "region_ids": []
         },
         {
             "id": 23,
@@ -669,7 +669,7 @@
                 "39": "Suffer 5 damage",
                 "72": "\"Fueled Falchion\" design (Item 116)"
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         },
@@ -697,7 +697,7 @@
             "treasures": {
                 "70": "Random Side Scenario"
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -725,7 +725,7 @@
             "treasures": {
                 "58": "Gain \"Drakescale Helm\" (Item 108)"
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -756,7 +756,7 @@
             "treasures": {
                 "66": "Gain \"Volatile Bomb\" (Item 033)"
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         },
@@ -783,7 +783,7 @@
             ],
             "treasures": {
             },
-            "type_ids": []
+            "region_ids": []
         },
         {
             "id": 28,
@@ -811,7 +811,7 @@
             "treasures": {
                 "32": "Random Item Design"
             },
-            "type_ids": [
+            "region_ids": [
                 2
             ]
         },
@@ -836,7 +836,7 @@
             "treasures": {
                 "41": "Gain \"Black Knife\" (Item 053)"
             },
-            "type_ids": [
+            "region_ids": [
                 2
             ]
         },
@@ -863,7 +863,7 @@
             ],
             "treasures": {
             },
-            "type_ids": [
+            "region_ids": [
                 6
             ]
         },
@@ -898,7 +898,7 @@
             "treasures": {
                 "69": "Gain \"Robes of Summoning\" (Item 100)"
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         },
@@ -927,7 +927,7 @@
             ],
             "treasures": {
             },
-            "type_ids": [
+            "region_ids": [
                 3
             ]
         },
@@ -956,7 +956,7 @@
             ],
             "treasures": {
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -983,7 +983,7 @@
             "treasures": {
                 "23": "Gain \"Drakescale Armor\" (Item 103)"
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -1017,7 +1017,7 @@
             "treasures": {
                 "61": "Gain \"Versatile Dagger\" (Item 040)"
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         },
@@ -1049,7 +1049,7 @@
             "treasures": {
                 "2": "Gain \"Tower Shield\" (Item 032)"
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         },
@@ -1081,7 +1081,7 @@
             "treasures_to": {
                 "49": 17
             },
-            "type_ids": [
+            "region_ids": [
                 6
             ]
         },
@@ -1109,7 +1109,7 @@
             "treasures": {
                 "29": "Gain \"Endurance Footwraps\" (Item 097)"
             },
-            "type_ids": [
+            "region_ids": [
                 2
             ]
         },
@@ -1137,7 +1137,7 @@
             "treasures": {
                 "73": "Random Item Design"
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -1169,7 +1169,7 @@
             "treasures": {
                 "47": "Gain \"Steam Armor\" (Item 104)"
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -1197,7 +1197,7 @@
             "treasures": {
                 "24": "Suffer 5 damage"
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -1225,7 +1225,7 @@
                 "30": "Gain 1 ✔",
                 "55": "Gain 1 ✔"
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -1253,7 +1253,7 @@
             "treasures": {
                 "35": "Gain \"Drakescale Boots\" (Item 098)"
             },
-            "type_ids": [
+            "region_ids": [
                 2
             ]
         },
@@ -1278,7 +1278,7 @@
             ],
             "treasures": {
             },
-            "type_ids": [
+            "region_ids": [
                 2
             ]
         },
@@ -1306,7 +1306,7 @@
             "treasures": {
                 "74": "Random Item Design"
             },
-            "type_ids": [
+            "region_ids": [
                 3
             ]
         },
@@ -1333,7 +1333,7 @@
             "treasures": {
                 "48": "Gain 30 gold"
             },
-            "type_ids": [
+            "region_ids": [
                 5
             ]
         },
@@ -1361,7 +1361,7 @@
                 "18": "Gain 15 gold",
                 "57": "Gain 15 gold"
             },
-            "type_ids": [
+            "region_ids": [
                 6
             ]
         },
@@ -1388,7 +1388,7 @@
             "treasures": {
                 "64": "Gain 30 gold"
             },
-            "type_ids": [
+            "region_ids": [
                 2
             ]
         },
@@ -1413,7 +1413,7 @@
             "treasures": {
                 "44": "Random Side Scenario"
             },
-            "type_ids": [
+            "region_ids": [
                 3
             ]
         },
@@ -1440,7 +1440,7 @@
             ],
             "treasures": {
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         },
@@ -1471,7 +1471,7 @@
             "treasures": {
                 "56": "Gain \"Star Earring\" (Item 069)"
             },
-            "type_ids": [
+            "region_ids": [
                 1
             ]
         }
@@ -1518,7 +1518,7 @@
             "name": "Voice"
         }
     ],
-    "types": [
+    "regions": [
         {
             "id": 1,
             "name": "Gloomhaven"

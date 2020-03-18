@@ -11,7 +11,7 @@
                             <i class="material-icons">close</i>
                         </button>
                     </h2>
-                    <span v-if="scenario.types" class="text-sm text-white2-50 font-bold">{{ scenario.types.pluck('name').implode(', ') }}</span>
+                    <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">{{ scenario.regions.pluck('name').implode(', ') }}</span>
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">
@@ -42,7 +42,7 @@
                         Requirments: {{ scenario.requirments }}
                     </div>
 
-                    <div class="mb-6" v-if="scenario.isComplete() && scenario.treasures.isNotEmpty()">
+                    <div class="mb-2" v-if="scenario.isComplete() && scenario.treasures.isNotEmpty()">
                         <h2 class="text-white" style="padding-left: 12px;">Treasures</h2>
                         <div v-for="(treasure, id) in scenario.treasures.items" :key="id"
                              class="flex items-center">
@@ -135,10 +135,8 @@
     import ScenarioRepository from "../repositories/ScenarioRepository";
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../models/ScenarioState";
-    import Checkbox from "./Checkbox";
 
     export default {
-        components: {Checkbox},
         data() {
             return {
                 scenario: null,

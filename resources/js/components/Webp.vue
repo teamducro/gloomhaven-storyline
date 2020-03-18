@@ -22,16 +22,21 @@
             }
         },
         mounted() {
-            this.source = this.webp();
+            this.render(this.src);
         },
         watch: {
             src: function (src) {
-                this.source = this.webp();
+                this.render(src);
             }
         },
         methods: {
-            webp() {
+            render(src) {
                 this.isLoaded = false;
+                this.source = app.webpSupported
+                    ? this.webp()
+                    : src;
+            },
+            webp() {
                 return this.src.split('.').slice(0, -1) + '.webp';
             },
             error() {
