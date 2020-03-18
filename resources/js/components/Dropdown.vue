@@ -25,7 +25,9 @@
             align: {default: 'left'}
         },
         data() {
-            return {isOpen: false}
+            return {
+                isOpen: false
+            }
         },
         watch: {
             isOpen(isOpen) {

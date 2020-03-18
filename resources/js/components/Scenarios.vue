@@ -57,10 +57,8 @@
 <script>
     import {MDCList} from "@material/list/component";
     import ScenarioRepository from "../repositories/ScenarioRepository";
-    import Dropdown from "./Dropdown";
 
     export default {
-        components: {Dropdown},
         data() {
             return {
                 list: null,
