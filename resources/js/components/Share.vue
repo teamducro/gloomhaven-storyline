@@ -18,7 +18,7 @@
                              class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
                     </network>
 
-                    <a v-clipboard:copy="url" class="cursor-pointer mr-6">
+                    <a v-clipboard:copy="url" id="copy" class="cursor-pointer mr-6" data-tippy-content="Copied">
                         <img src="img/share/copy-link.png" alt="copy-link" srcset="img/share/copy-link@2x.png 2x"
                              class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
                     </a>
@@ -44,6 +44,7 @@
 </template>
 
 <script>
+    import tippy from 'tippy.js';
     import ShareState from "../services/ShareState";
 
     export default {
@@ -62,6 +63,14 @@
             open() {
                 this.url = this.shareState.link();
                 this.$refs['modal'].open();
+                this.$nextTick(() => {
+                    let popups = tippy('#copy', {
+                        trigger: 'click'
+                    });
+                    setTimeout(() => {
+                        popups[0].hide();
+                    }, 3000);
+                })
             }
         }
     }
