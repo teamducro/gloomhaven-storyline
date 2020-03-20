@@ -9,8 +9,8 @@ export default class ScenarioValidator {
             app.scenarios.each((scenario) => {
                 this.checkHidden(scenario);
                 this.checkChoice(scenario);
-                this.checkBlocked(scenario);
                 this.checkRequired(scenario);
+                this.checkBlocked(scenario);
             });
         });
 
