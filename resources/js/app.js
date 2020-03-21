@@ -20,7 +20,8 @@ const files = require.context('./components', true, /\.vue$/i);
 files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 const routes = [
-    {path: '/', component: Story},
+    {path: '/', redirect: '/story'},
+    {path: '/story', component: Story},
     {path: '/scenarios', component: Scenarios}
 ];
 const router = new VueRouter({routes});

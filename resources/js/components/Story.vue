@@ -12,6 +12,7 @@
     import zoom from "../services/Zoom";
     import {ScenarioState} from "../models/ScenarioState";
     import ScenarioRepository from "../repositories/ScenarioRepository";
+    import tippy from 'tippy.js';
 
     export default {
         data() {
@@ -27,7 +28,7 @@
 
             zoom('#storyline');
 
-            $('.scenario').click((e) => {
+            $('.scenario').on('click', (e) => {
                 this.open($(e.currentTarget).data('id'));
             });
         },
@@ -71,6 +72,14 @@
                                 $('#edge' + scenario.id + '-' + scenario.choice).show();
                             }
                         }
+                    }
+
+                    // Show tooltip on hover
+                    if (!$node.hasClass('tippy')) {
+                        tippy($node[0], {
+                            content: scenario.name
+                        });
+                        $node.addClass('tippy');
                     }
                 });
             },

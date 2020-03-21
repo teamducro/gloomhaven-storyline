@@ -11,17 +11,15 @@
             <div class="mdc-drawer__content">
                 <div class="mdc-list-group">
                     <ul ref="list" class="mdc-list">
-                        <li>
-                            <router-link to="/"
-                                         class="mdc-list-item mdc-list-item--activated" @click="toggle">
+                        <li @click="toggle">
+                            <router-link to="story" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
                                 <span class="mdc-list-item__text">Storyline</span>
                             </router-link>
                         </li>
 
-                        <li>
-                            <router-link to="/scenarios"
-                                         class="mdc-list-item">
+                        <li @click="toggle">
+                            <router-link to="scenarios" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">list</i>
                                 <span class="mdc-list-item__text">Scenarios</span>
                             </router-link>
