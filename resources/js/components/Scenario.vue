@@ -3,7 +3,7 @@
         <modal ref="modal">
             <template v-slot:body v-if="scenario">
                 <div id="scenario-title" class="pl-6 border-b border-white2-25"
-                     :class="{'pb-2': scenario.chapter, 'pb-4': !scenario.chapter}">
+                     :class="{'pb-2': scenario.regions, 'pb-4': !scenario.regions}">
                     <h2 class="mdc-dialog__title p-0 leading-none">{{ scenario.name }}
                         <span class="text-sm text-white2-50">{{ scenario.coordinates }}</span>
                         <button type="button" data-mdc-dialog-action="close"
@@ -35,11 +35,11 @@
                         </div>
                     </div>
 
-                    <div v-if="scenario.requirments" class="mb-2 flex items-center" style="padding-left: 7px;">
+                    <div v-if="scenario.requirements" class="mb-2 flex items-center" style="padding-left: 7px;">
                         <i v-if="scenario.isRequired() || scenario.isBlocked()"
                            class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
                         <i v-else class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
-                        Requirments: {{ scenario.requirments }}
+                        Requirements: {{ scenario.requirements }}
                     </div>
 
                     <div class="mb-2" v-if="scenario.isComplete() && scenario.treasures.isNotEmpty()">

@@ -9,7 +9,7 @@ export default class ScenarioRepository {
         return collect(scenarios.scenarios).map((scenario) => {
             scenario = new Scenario(scenario);
             this.fetchChapter(scenario);
-            this.fetchTypes(scenario);
+            this.fetchRegions(scenario);
 
             return scenario;
         });
@@ -78,7 +78,7 @@ export default class ScenarioRepository {
         }
     }
 
-    fetchTypes(scenario) {
+    fetchRegions(scenario) {
         if (scenario.region_ids.length) {
             scenario.regions = this.regions.whereIn('id', scenario.region_ids);
         }

@@ -44,12 +44,19 @@
             renderScenarios() {
                 app.scenarios.each((scenario) => {
                     let $node = $('#node' + scenario.id);
+
+                    if (!$node.length) {
+                        return;
+                    }
+
                     let $edges = $('.edge' + scenario.id);
                     $edges.hide();
 
                     if (scenario.isHidden()) {
                         $node.hide();
-                    } else {
+                    }
+
+                    if (scenario.isVisible() || !scenario.story_scenario) {
                         $node.show();
                         $node.attr('stroke-width', scenario.isComplete() ? 2 : 1);
 
@@ -84,16 +91,16 @@
                 });
             },
             renderChapters() {
-                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].forEach((chapter_id) => {
-                    let unlocked = app.scenarios.where('chapter_id', chapter_id).where('state', '!=', ScenarioState.hidden).count();
-                    let $chapter = $('#chapter' + chapter_id);
+                for (let id = 1; id <= 16; id++) {
+                    let unlocked = app.scenarios.where('chapter_id', id).where('state', '!=', ScenarioState.hidden).count();
+                    let $chapter = $('#chapter' + id);
 
                     if (unlocked) {
                         $chapter.show();
                     } else {
                         $chapter.hide();
                     }
-                });
+                }
             },
             open(id) {
                 this.$bus.$emit('open-scenario', {
