@@ -26,7 +26,7 @@ export default class ScenarioValidator {
                 scenario.state = ScenarioState.incomplete;
             }
         } else {
-            if (states.has(ScenarioState.complete) === false && scenario.id !== 1 && !unlocked) {
+            if (states.has(ScenarioState.complete) === false && scenario.story_scenario && scenario.id !== 1 && !unlocked) {
                 scenario.state = ScenarioState.hidden;
             }
         }
