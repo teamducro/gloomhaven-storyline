@@ -4,7 +4,7 @@
             "id": 1,
             "name": "#1 Black Barrow",
             "coordinates": "G-10",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 3
             ],
@@ -28,7 +28,7 @@
             "id": 2,
             "name": "#2 Barrow Lair",
             "coordinates": "G-11",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 4,
                 5
@@ -57,7 +57,7 @@
             "id": 3,
             "name": "#3 Inox Encampment",
             "coordinates": "G-3",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 5,
                 6
@@ -89,7 +89,7 @@
             "id": 4,
             "name": "#4 Crypt of the Damned",
             "coordinates": "E-11",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 7
             ],
@@ -118,7 +118,7 @@
             "id": 5,
             "name": "#5 Ruinous Crypt",
             "coordinates": "D-6",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 8
             ],
@@ -148,7 +148,7 @@
             "id": 6,
             "name": "#6 Decaying Crypt",
             "coordinates": "F-10",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 9,
                 10
@@ -176,7 +176,7 @@
             "id": 7,
             "name": "#7 Vibrant Grotto",
             "coordinates": "C-12",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 10,
                 11
@@ -206,7 +206,7 @@
             "id": 8,
             "name": "#8 Gloomhaven Warehouse",
             "coordinates": "C-18",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 12
             ],
@@ -240,7 +240,7 @@
             "id": 9,
             "name": "#9 Diamond Mine",
             "coordinates": "L-2",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 13
             ],
@@ -269,7 +269,7 @@
             "id": 10,
             "name": "#10 Plane of Elemental Power",
             "coordinates": "L-2",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 14
             ],
@@ -301,7 +301,7 @@
             "id": 11,
             "name": "#11 Gloomhaven Square A",
             "coordinates": "B-16",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 15,
                 16
@@ -335,7 +335,7 @@
             "id": 12,
             "name": "#12 Gloomhaven Square B",
             "coordinates": "B-16",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 16,
                 17
@@ -370,7 +370,7 @@
             "id": 13,
             "name": "#13 Temple of the Seer",
             "coordinates": "N-3",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 18
             ],
@@ -405,7 +405,7 @@
             "id": 14,
             "name": "#14 Frozen Hollow",
             "coordinates": "C-10",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 19,
                 20
@@ -433,7 +433,7 @@
             "id": 15,
             "name": "#15 Shrine of Strength",
             "coordinates": "B-11",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 20,
                 21
@@ -458,7 +458,7 @@
             "id": 16,
             "name": "#16 Mountain Pass",
             "coordinates": "B-6",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 22
             ],
@@ -488,7 +488,7 @@
             "id": 17,
             "name": "#17 Lost Island",
             "coordinates": "K-17",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 23
             ],
@@ -516,7 +516,7 @@
             "id": 18,
             "name": "#18 Abandoned Sewers",
             "coordinates": "C-14",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 24
             ],
@@ -548,7 +548,7 @@
             "id": 19,
             "name": "#19 Forgotten Crypt",
             "coordinates": "M-7",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 25,
                 26
@@ -580,7 +580,7 @@
             "id": 20,
             "name": "#20 Necromancer's Sanctum",
             "coordinates": "H-13",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 26,
                 27
@@ -614,7 +614,7 @@
             "id": 21,
             "name": "#21 Infernal Throne",
             "coordinates": "C-7",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 28,
                 29
@@ -643,7 +643,7 @@
             "id": 22,
             "name": "#22 Temple of Elements",
             "coordinates": "K-8",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 29,
                 30
@@ -673,7 +673,7 @@
             "id": 23,
             "name": "#23 Deep Ruins",
             "coordinates": "C-15",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 31,
                 32
@@ -703,7 +703,7 @@
             "id": 24,
             "name": "#24 Echo Chamber",
             "coordinates": "C-6",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 32,
                 33
@@ -732,7 +732,7 @@
             "id": 25,
             "name": "#25 Icecrag Ascent",
             "coordinates": "A-5",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 34,
                 35
@@ -761,7 +761,7 @@
             "id": 26,
             "name": "#26 Ancient Cistern",
             "coordinates": "D-15",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 35,
                 36
@@ -793,7 +793,7 @@
             "id": 27,
             "name": "#27 Ruinous Rift",
             "coordinates": "E-6",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 37
             ],
@@ -819,7 +819,7 @@
             "id": 28,
             "name": "#28 Outer Ritual Chamber",
             "coordinates": "E-4",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 38
             ],
@@ -850,7 +850,7 @@
             "id": 29,
             "name": "#29 Sanctuary of Gloom",
             "coordinates": "E-3",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 39
             ],
@@ -876,7 +876,7 @@
             "id": 30,
             "name": "#30 Shrine of the Depths",
             "coordinates": "N-15",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 40,
                 41
@@ -903,7 +903,7 @@
             "id": 31,
             "name": "#31 Plane of Night",
             "coordinates": "A-16",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 41,
                 42
@@ -939,7 +939,7 @@
             "id": 32,
             "name": "#32 Decrepit Wood",
             "coordinates": "L-11",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 43
             ],
@@ -968,7 +968,7 @@
             "id": 33,
             "name": "#33 Savvas Armory",
             "coordinates": "A-7",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 44
             ],
@@ -997,7 +997,7 @@
             "id": 34,
             "name": "#34 Scorched Summit",
             "coordinates": "A-4",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 45
             ],
@@ -1025,7 +1025,7 @@
             "id": 35,
             "name": "#35 Gloomhaven Battlements A",
             "coordinates": "A-14",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 46,
                 47
@@ -1060,7 +1060,7 @@
             "id": 36,
             "name": "#36 Gloomhaven Battlements B",
             "coordinates": "B-14",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 47,
                 48
@@ -1093,7 +1093,7 @@
             "id": 37,
             "name": "#37 Doom Trench",
             "coordinates": "G-18",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 49
             ],
@@ -1126,7 +1126,7 @@
             "id": 38,
             "name": "#38 Slave Pens",
             "coordinates": "G-2",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 50,
                 51
@@ -1155,7 +1155,7 @@
             "id": 39,
             "name": "#39 Treacherous Divide",
             "coordinates": "B-11",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 51,
                 52
@@ -1184,7 +1184,7 @@
             "id": 40,
             "name": "#40 Ancient Defense Network",
             "coordinates": "F-12",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 53,
                 54
@@ -1217,7 +1217,7 @@
             "id": 41,
             "name": "#41 Timeworn Tomb",
             "coordinates": "F-13",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 54,
                 55
@@ -1246,7 +1246,7 @@
             "id": 42,
             "name": "#42 Realm of the Voice",
             "coordinates": "C-5",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 56
             ],
@@ -1275,7 +1275,7 @@
             "id": 43,
             "name": "#43 Drake Nest",
             "coordinates": "D-4",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 57,
                 58
@@ -1304,7 +1304,7 @@
             "id": 44,
             "name": "#44 Tribal Assault",
             "coordinates": "F-3",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 58,
                 59
@@ -1329,7 +1329,7 @@
             "id": 45,
             "name": "#45 Rebel Swamp",
             "coordinates": "M-9",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 60
             ],
@@ -1358,7 +1358,7 @@
             "id": 46,
             "name": "#46 Nightmare Peak",
             "coordinates": "A-11",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 61
             ],
@@ -1386,7 +1386,7 @@
             "id": 47,
             "name": "#47 Lair of the Unseeing Eye",
             "coordinates": "H-18",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 62
             ],
@@ -1415,7 +1415,7 @@
             "id": 48,
             "name": "#48 Shadow Weald",
             "coordinates": "E-1",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 63
             ],
@@ -1443,7 +1443,7 @@
             "id": 49,
             "name": "#49 Rebel's Stand",
             "coordinates": "N-7",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 64
             ],
@@ -1469,7 +1469,7 @@
             "id": 50,
             "name": "#50 Ghost Forrest",
             "coordinates": "C-17",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 65,
                 66
@@ -1496,7 +1496,7 @@
             "id": 51,
             "name": "#51 The Void",
             "coordinates": "A-15",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 66,
                 67
@@ -1529,7 +1529,7 @@
             "id": 52,
             "name": "#52 Noxious Cellar",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 68,
                 69
@@ -1552,7 +1552,7 @@
             "id": 53,
             "name": "#53 Crypt Basement",
             "coordinates": "",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 69,
                 70
@@ -1579,7 +1579,7 @@
             "id": 54,
             "name": "#54 Palace of Ice",
             "coordinates": "",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 71
             ],
@@ -1603,7 +1603,7 @@
             "id": 55,
             "name": "#55 Foggy Thicket",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 72
             ],
@@ -1625,7 +1625,7 @@
             "id": 56,
             "name": "#56 Bandit's Wood",
             "coordinates": "",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 73
             ],
@@ -1649,7 +1649,7 @@
             "id": 57,
             "name": "#57 Investigation",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 74
             ],
@@ -1671,7 +1671,7 @@
             "id": 58,
             "name": "#58 Bloody Shack",
             "coordinates": "",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 75
             ],
@@ -1695,7 +1695,7 @@
             "id": 59,
             "name": "#59 Forgotten Grove",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 76
             ],
@@ -1717,7 +1717,7 @@
             "id": 60,
             "name": "#60 Alchemy Lab",
             "coordinates": "",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 77
             ],
@@ -1741,7 +1741,7 @@
             "id": 61,
             "name": "#61 Fading Lighthouse",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 78,
                 79
@@ -1764,7 +1764,7 @@
             "id": 62,
             "name": "#62 Pit of Souls",
             "coordinates": "",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 80
             ],
@@ -1788,7 +1788,7 @@
             "id": 63,
             "name": "#63 Magma Pit",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 81
             ],
@@ -1808,7 +1808,7 @@
             "id": 64,
             "name": "#64 Under Water Lagoon",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 82
             ],
@@ -1828,7 +1828,7 @@
             "id": 65,
             "name": "#65 Sulfur Mine",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 83,
                 84
@@ -1849,7 +1849,7 @@
             "id": 66,
             "name": "#66 Clockwork Cove",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 84,
                 85
@@ -1870,7 +1870,7 @@
             "id": 67,
             "name": "#67 Arcane Library",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 86
             ],
@@ -1889,7 +1889,7 @@
             "id": 68,
             "name": "#68 Toxic Moor",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 87
             ],
@@ -1909,7 +1909,7 @@
             "id": 69,
             "name": "#69 Well of the Unfortunate",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 88
             ],
@@ -1928,7 +1928,7 @@
             "id": 70,
             "name": "#70 Chained Isle",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 89,
                 90
@@ -1949,7 +1949,7 @@
             "id": 71,
             "name": "#71 Windswept Highlands",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 90,
                 91
@@ -1969,7 +1969,7 @@
             "id": 72,
             "name": "#72 Oozing Grove",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 92
             ],
@@ -1988,7 +1988,7 @@
             "id": 73,
             "name": "#73 Rockslide Ridge",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 93
             ],
@@ -2008,7 +2008,7 @@
             "id": 74,
             "name": "#74 Merchant Ship",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 94
             ],
@@ -2028,7 +2028,7 @@
             "id": 75,
             "name": "#75 Overgrown Graveyard",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 95
             ],
@@ -2047,7 +2047,7 @@
             "id": 76,
             "name": "#76 Harrower Hive",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 96,
                 97
@@ -2068,7 +2068,7 @@
             "id": 77,
             "name": "#77 Vault of Secrets",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 97,
                 98
@@ -2089,7 +2089,7 @@
             "id": 78,
             "name": "#78 Sacrifice Pit",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 99
             ],
@@ -2109,7 +2109,7 @@
             "id": 79,
             "name": "#79 Lost Temple",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 100,
                 101
@@ -2130,7 +2130,7 @@
             "id": 80,
             "name": "#80 Vigil Keep",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 101,
                 102
@@ -2151,7 +2151,7 @@
             "id": 81,
             "name": "#81 Temple of the Eclipse",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 103
             ],
@@ -2171,7 +2171,7 @@
             "id": 82,
             "name": "#82 Burning Mountain",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 104
             ],
@@ -2191,7 +2191,7 @@
             "id": 83,
             "name": "#83 Shadows Within",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 105
             ],
@@ -2211,7 +2211,7 @@
             "id": 84,
             "name": "#84 Crystalline Cave",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 106
             ],
@@ -2231,7 +2231,7 @@
             "id": 85,
             "name": "#85 Sun Temple",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 107,
                 108
@@ -2252,7 +2252,7 @@
             "id": 86,
             "name": "#86 Harried Village",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 108,
                 109
@@ -2275,7 +2275,7 @@
             "id": 87,
             "name": "#87 Corrupted Cove",
             "coordinates": "",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 110
             ],
@@ -2298,7 +2298,7 @@
             "id": 88,
             "name": "#88 Plane of Water",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 111
             ],
@@ -2318,7 +2318,7 @@
             "id": 89,
             "name": "#89 Syndicate Hideout",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 112
             ],
@@ -2338,7 +2338,7 @@
             "id": 90,
             "name": "#90 Demonic Rift",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 113
             ],
@@ -2357,7 +2357,7 @@
             "id": 91,
             "name": "#91 Wild Melee",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 114
             ],
@@ -2377,7 +2377,7 @@
             "id": 92,
             "name": "#92 Back Alley Brawl",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 115
             ],
@@ -2397,7 +2397,7 @@
             "id": 93,
             "name": "#93 Sunken Vessel",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 116
             ],
@@ -2417,7 +2417,7 @@
             "id": 94,
             "name": "#94 Vermling Nest",
             "coordinates": "",
-            "story_scenario": false,
+            "is_side": true,
             "pages": [
                 117
             ],
@@ -2437,7 +2437,7 @@
             "id": 95,
             "name": "#95 Payment Due",
             "coordinates": "",
-            "story_scenario": true,
+            "is_side": false,
             "pages": [
                 118,
                 119

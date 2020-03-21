@@ -6,7 +6,7 @@ export default class Scenario {
         this.id = data.id;
         this.name = data.name;
         this.coordinates = data.coordinates;
-        this.story_scenario = data.story_scenario;
+        this.is_side = data.is_side;
         this.pages = data.pages;
         this.requirements = data.requirements;
         this.quests = data.quests;

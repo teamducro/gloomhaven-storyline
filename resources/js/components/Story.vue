@@ -56,7 +56,7 @@
                         $node.hide();
                     }
 
-                    if (scenario.isVisible() || !scenario.story_scenario) {
+                    if (scenario.isVisible() || scenario.is_side) {
                         $node.show();
                         $node.attr('stroke-width', scenario.isComplete() ? 2 : 1);
 
