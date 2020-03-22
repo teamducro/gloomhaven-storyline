@@ -36,11 +36,13 @@ window.app = new Vue({
             scenarios: null,
             quests: null,
             webpSupported: true,
+            hasMouse: false,
         }
     },
     mounted() {
         this.fetchScenarios();
         this.webpSupported = this.isWebpSupported();
+        this.hasMouse = this.checkHasMouse();
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
     },
     methods: {
@@ -65,6 +67,14 @@ window.app = new Vue({
             }
 
             return false;
+        },
+        checkHasMouse() {
+            $('body').one('touchstart.test', (e) => {
+                $('body').off('mousemove.test');
+            }).one('mousemove.test', (e) => {
+                this.hasMouse = true;
+                this.$bus.$emit('scenarios-updated');
+            });
         }
     }
 });

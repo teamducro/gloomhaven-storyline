@@ -1501,8 +1501,7 @@
                 66,
                 67
             ],
-            "requirements": "",
-            "chapter_id": 11,
+            "requirments": "End of Corruption (Global) x3 COMPLETE",
             "links_to": [],
             "linked_from": [
                 46,
@@ -1515,6 +1514,7 @@
                 47,
                 48
             ],
+            "required_and": true,
             "quests": [
                 39
             ],
