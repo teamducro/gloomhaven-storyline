@@ -50,6 +50,7 @@
         "hammerjs": "^2.0.8",
         "jquery": "^3.4.1",
         "md5-file": "^4.0.0",
+        "panzoom": "^9.2.1",
         "query-string": "^6.10.1",
         "replace-in-file": "^5.0.2",
         "svg-pan-zoom": "github:ariutta/svg-pan-zoom",
