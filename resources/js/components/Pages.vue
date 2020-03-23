@@ -2,8 +2,10 @@
     <div>
         <modal ref="modal" :title="'Page #' + currentPage">
             <template v-slot:content>
-                <webp :src="currentSrc"
-                      :alt="'Page #' + currentPage"></webp>
+                <div class="overflow-hidden outline-none">
+                    <webp id="page" :src="currentSrc"
+                          :alt="'Page #' + currentPage"></webp>
+                </div>
             </template>
             <template v-if="hasMultiplePages" v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" @click="prev" :disabled="hasPrev">
@@ -18,12 +20,23 @@
 </template>
 
 <script>
+    import panzoom from "panzoom"
+
     export default {
         props: ['pages'],
         data() {
             return {
-                current: 0
+                current: 0,
+                zoom: null
             }
+        },
+        mounted() {
+            const page = document.querySelector('#page');
+            this.zoom = panzoom(page, {
+                minZoom: 1,
+                maxZoom: 3,
+                bounds: true
+            });
         },
         computed: {
             currentPage() {
