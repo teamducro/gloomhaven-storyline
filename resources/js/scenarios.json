@@ -1514,7 +1514,7 @@
                 47,
                 48
             ],
-            "required_and": true,
+            "required_all": true,
             "quests": [
                 39
             ],

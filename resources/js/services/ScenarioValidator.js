@@ -79,7 +79,7 @@ export default class ScenarioValidator {
             return;
         }
 
-        if (scenario.required_and === false) {
+        if (scenario.required_all === false) {
             let states = this.requiredStates(scenario);
 
             if (scenario.isRequired()) {
