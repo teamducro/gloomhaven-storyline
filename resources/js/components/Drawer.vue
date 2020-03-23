@@ -53,6 +53,12 @@
                                 <span class="mdc-list-item__text">Source</span>
                             </a>
                         </li>
+
+                        <li role="separator" class="mdc-list-divider i-my-2"></li>
+
+                        <li class="py-4 pl-8">
+                            <donate></donate>
+                        </li>
                     </ul>
                 </div>
             </div>
