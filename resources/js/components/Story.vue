@@ -82,7 +82,7 @@
                     }
 
                     // Show tooltip on hover
-                    if (app.hasMouse && !$node.hasClass('tippy')) {
+                    if (app.hasMouse && scenario.isVisible() && !$node.hasClass('tippy')) {
                         tippy($node[0], {
                             content: scenario.title
                         });
