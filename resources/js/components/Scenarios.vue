@@ -11,12 +11,15 @@
 
                 <ul class="mdc-list"
                     ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-                    <li class="mdc-list-item" @click="regionFilter = null">
+                    <li class="mdc-list-item" @click="resetFilter()">
                         <span class="mdc-list-item__text">All</span>
                     </li>
                     <li v-for="region in scenarioRepository.regions.items"
-                        class="mdc-list-item" @click="regionFilter = region.id">
+                        class="mdc-list-item" @click="setRegionFilter(region.id)">
                         <span class="mdc-list-item__text">{{ region.name }}</span>
+                    </li>
+                    <li class="mdc-list-item" @click="setMissedTreasuresFilter">
+                        <span class="mdc-list-item__text">Missed Treasures</span>
                     </li>
                 </ul>
             </dropdown>
@@ -24,7 +27,7 @@
 
         <ul v-if="scenarios" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4" ref="list">
             <li v-for="scenario in scenarios.items"
-                v-show="!regionFilter || (regionFilter && scenario.inRegion(regionFilter))"
+                v-show="applyFilter(scenario)"
                 :key="scenario.id"
                 class="mdc-list-item h-auto"
                 :data-id="scenario.id"
@@ -64,6 +67,7 @@
                 list: null,
                 scenarios: null,
                 regionFilter: null,
+                missedTreasuresFilter: null,
                 filter: null,
                 scenarioRepository: new ScenarioRepository()
             }
@@ -95,6 +99,27 @@
                         id: scenario.id
                     });
                 }
+            },
+            applyFilter(scenario) {
+                if (!this.regionFilter && !this.missedTreasuresFilter) {
+                    return true;
+                } else if (this.regionFilter) {
+                    return scenario.inRegion(this.regionFilter);
+                } else if (this.missedTreasuresFilter) {
+                    return scenario.missedTreasures();
+                }
+            },
+            setRegionFilter(id) {
+                this.resetFilter();
+                this.regionFilter = id;
+            },
+            setMissedTreasuresFilter() {
+                this.resetFilter();
+                this.missedTreasuresFilter = true;
+            },
+            resetFilter() {
+                this.regionFilter = null;
+                this.missedTreasuresFilter = null;
             }
         }
     }
