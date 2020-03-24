@@ -12,6 +12,9 @@ module.exports = {
             zIndex: {
                 5: '5'
             },
+            lineHeight: {
+                '12': '3rem',
+            },
             colors: {
                 primary: '#3771E0',
                 secondary: '#018786',
