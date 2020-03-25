@@ -29,13 +29,13 @@
             zoom('#storyline');
 
             $('.scenario').on('click', (e) => {
-                this.open($(e.currentTarget).attr('id').replace('node', ''));
+                let id = parseInt($(e.currentTarget).attr('id').replace('node', ''));
+                this.open(id);
             });
 
             this.$bus.$on('orientation-changed', (isPortrait) => {
                 console.log(isPortrait);
             });
-
         },
         methods: {
             render() {
