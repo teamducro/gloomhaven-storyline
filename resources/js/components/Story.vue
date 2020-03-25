@@ -65,6 +65,14 @@
                         $node.show();
                         $node.attr('stroke-width', scenario.isComplete() ? 2 : 1);
 
+                        if (scenario.is_side) {
+                            if (scenario.isHidden()) {
+                                $node.addClass('opacity-50');
+                            } else {
+                                $node.removeClass('opacity-50');
+                            }
+                        }
+
                         if (scenario.isBlocked()) {
                             $node.find('.blocked').show();
                         } else {
