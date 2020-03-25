@@ -31,6 +31,11 @@
             $('.scenario').on('click', (e) => {
                 this.open($(e.currentTarget).data('id'));
             });
+
+            this.$bus.$on('orientation-changed', (isPortrait) => {
+                console.log(isPortrait);
+            });
+
         },
         methods: {
             render() {
