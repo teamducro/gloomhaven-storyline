@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="420pt" viewBox="0 -60 420 668"
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="420pt" viewBox="0 -60 420 950"
      style="width:100%;">
     <style>
         text { font-family: Arial, sans-serif; fill: #fff; }
@@ -21,18 +21,18 @@
     <g id="chapter1" class="chapter">
         <rect width="40.84322" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="30" y="280">Intro</text>
+        <text class="label" x="30" y="278">Intro</text>
     </g>
     <g id="chapter2" class="chapter">
         <rect width="215.8856" height="263.21188" x="7.7796607" y="327.39407" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="20" y="585">The Merchant</text>
-        <text class="label" x="115.773639" y="515">Awaits</text>
+        <text class="label" x="112" y="515">Awaits</text>
     </g>
     <g id="chapter3" class="chapter">
         <rect width="160.13135" height="151.70338" x="5.8347459" y="7.1313553" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="9.348182" y="22">Demon and Rift</text>
+        <text class="label" x="15" y="22">Demon and Rift</text>
     </g>
     <g id="chapter4" class="chapter">
         <rect width="86.872887" height="103.72881" x="122.52966" y="201.62288" rx="10" ry="10" stroke="#000"
@@ -42,33 +42,60 @@
     <g id="chapter5" class="chapter">
         <rect width="92.707626" height="99.190681" x="252.83899" y="18.152542" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="268.94" y="112">Rebellion Rises</text>
+        <text class="label" x="272" y="112">Rebellion Rises</text>
     </g>
     <g id="chapter6" class="chapter">
-        <rect width="93.355934" height="51.216106" x="285.25424" y="129.01271" rx="10" ry="10" stroke="#000"
+        <rect width="93" height="51.216106" x="284" y="129.01271" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="303.4564" y="178">Under Oceans</text>
+        <text class="label" x="307" y="175">Under Oceans</text>
     </g>
     <g id="chapter7" class="chapter">
-        <rect width="91.411026" height="71.31356" x="286.55087" y="186.71187" rx="10" ry="10" stroke="#000"
+        <rect width="93" height="71.31356" x="284" y="186.71187" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="295" y="203.71637">Through</text>
         <text class="label" x="295" y="216.71637">Jungles</text>
     </g>
     <g id="chapter8" class="chapter">
-        <rect width="94.652542" height="52.512714" x="283.30933" y="272.28815" rx="10" ry="10" stroke="#000"
+        <rect width="93" height="52.512714" x="284" y="272.28815" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="308.49" y="320">Atop Mountains</text>
+        <text class="label" x="312" y="320">Atop Mountains</text>
     </g>
     <g id="chapter9" class="chapter">
-        <rect width="123.17797" height="43.43644" x="251.54237" y="381.2034" rx="10" ry="10" stroke="#000"
+        <rect width="106" height="43.43644" x="251" y="381.2034" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="334.37727" y="420">Dragons</text>
+        <text class="label" x="316" y="420">Dragons</text>
     </g>
     <g id="chapter10" class="chapter">
-        <rect width="129.01271" height="114.10169" x="250.89407" y="477.15253" rx="10" ry="10" stroke="#000"
+        <rect width="129" height="114.10169" x="251" y="477.15253" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="263.83911" y="585">Voice</text>
+    </g>
+    <g><!--chapter11-->
+        <rect width="172" height="124" x="7.7796607" y="610" rx="10" ry="10" stroke="#000"
+              fill="#111" opacity="0.7"/>
+        <text class="label" x="110" y="727">Personal Quests</text>
+    </g>
+    <g><!--chapter12-->
+        <rect stroke="#000" opacity="0.7" fill="#111" ry="10" rx="10" y="820.346031" x="9.061485" height="58.483938"
+              width="172"/>
+        <text y="872" x="20" class="label">Random Scenarios
+        </text>
+    </g>
+    <g><!--chapter13-->
+        <rect stroke="#000" opacity="0.7" fill="#111" ry="10" rx="10" y="749.063137" x="7.91208" height="58.483938"
+              width="172"/>
+        <text y="802" x="20" class="label">Sealed
+        </text>
+    </g>
+    <g><!--chapter14-->
+        <rect stroke="#000" opacity="0.7" fill="#111" ry="10" rx="10" y="608.850595" x="207.776065" height="99.862506"
+              width="172"/>
+        <text y="702" x="325" class="label">Road Events</text>
+    </g>
+    <g><!--chapter15-->
+        <rect stroke="#000" opacity="0.7" fill="#111" ry="10" rx="10" y="724" x="207.776065" height="124"
+              width="172"/>
+        <text y="840" x="327" class="label">City Events</text>
     </g>
 
     <g id="edge46-51" class="edge edge46">
@@ -642,5 +669,78 @@
         <path class="line" d="M 183.9722312 274.4194922 L 154.2881564 236.242953"/>
         <path class="arrow"
               d="M 151.9654926 233.2587256 L 157.0422748 235.689253 L 154.2881564 236.2429531 L 153.0728927 238.7813442 L 151.9654926 233.2587256 Z"/>
+    </g>
+    <g class="scenario" data-id="52" id="node52">
+        <circle class="node" r="10.8" cy="630" cx="37.39273"/>
+        <text y="626" x="22">52</text>
+    </g>
+    <g class="edge edge52" id="edge52-53">
+        <path d="m26.24682,640.8l0,19" class="line"/>
+        <path d="m26.24682,660.75237l-2.51682,-5.03364l2.51682,2.25841l2.51682,-2.25841l-2.51682,5.03364z"
+              class="arrow"/>
+    </g>
+    <g class="scenario" data-id="53" id="node53">
+        <circle class="node" r="10.8" cy="672.218729" cx="37.39273"/>
+        <text y="668.218729" x="22">53</text>
+    </g>
+    <g class="edge edge53" id="edge53-54">
+        <path d="m26.24682,683l0,19" class="line"/>
+        <path d="m26.24682,703l-2.51682,-5l2.51682,3l2.51682,-3l-2.51682,5z" class="arrow"/>
+    </g>
+    <g class="scenario" data-id="54" id="node54">
+        <circle class="node" r="10.8" cy="714.5" cx="37.39273"/>
+        <text y="710.5" x="22">54</text>
+    </g>
+    <g class="scenario" data-id="55" id="node55">
+        <circle class="node" r="10.8" cy="630" cx="70.069538"/>
+        <text y="626" x="54.676808">55</text>
+    </g>
+    <g class="edge edge55" id="edge55-56">
+        <path d="m58.923628,640.8l0,19" class="line"/>
+        <path d="m58.923628,660.75237l-2.51682,-5.03364l2.51682,2.25841l2.51682,-2.25841l-2.51682,5.03364z"
+              class="arrow"/>
+    </g>
+    <g class="scenario" data-id="56" id="node56">
+        <circle class="node" r="10.8" cy="672.218729" cx="70.069538"/>
+        <text y="668.218729" x="54.676808">56</text>
+    </g>
+    <g class="scenario" data-id="57" id="node57">
+        <circle class="node" r="10.8" cy="630" cx="103.085922"/>
+        <text y="626" x="87.693192">57</text>
+    </g>
+    <g class="edge edge57" id="edge57-58">
+        <path d="m91.940012,640.8l0,19" class="line"/>
+        <path d="m91.940012,660.75237l-2.51682,-5.03364l2.51682,2.25841l2.51682,-2.25841l-2.51682,5.03364z"
+              class="arrow"/>
+    </g>
+    <g class="scenario" data-id="58" id="node58">
+        <circle class="node" r="10.8" cy="672.218729" cx="103.085922"/>
+        <text y="668.218729" x="87.693192">58</text>
+    </g>
+    <g class="scenario" data-id="59" id="node59">
+        <circle class="node" r="10.8" cy="630" cx="135.802798"/>
+        <text y="626" x="120.410068">59</text>
+    </g>
+    <g class="edge edge59" id="edge59-60">
+        <path d="m124.656888,640.8l0,19" class="line"/>
+        <path d="m124.656888,660.75237l-2.51682,-5.03364l2.51682,2.25841l2.51682,-2.25841l-2.51682,5.03364z"
+              class="arrow"/>
+    </g>
+    <g class="scenario" data-id="60" id="node60">
+        <circle class="node" r="10.8" cy="672.218729" cx="135.802798"/>
+        <text y="668.218729" x="120.410068">60</text>
+    </g>
+    <g class="scenario" data-id="61" id="node61">
+        <circle class="node" r="10.8" cy="630" cx="168.61267"/>
+        <text y="626" x="154">61</text>
+    </g>
+    <g class="edge edge61" id="edge61-62">
+        <path d="m157.466761,640.8l0,19" class="line"/>
+        <path d="m157.466761,660.75237l-2.51682,-5.03364l2.51682,2.25841l2.51682,-2.25841l-2.51682,5.03364z"
+              class="arrow"/>
+    </g>
+    <g class="scenario" data-id="62" id="node62">
+        <circle class="node" r="10.8" cy="672.218729" cx="168.61267"/>
+        <text y="668.218729" x="153.219941">62</text>
     </g>
 </svg>
