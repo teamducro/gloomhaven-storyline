@@ -41,10 +41,10 @@ window.app = new Vue({
         }
     },
     mounted() {
-        this.fetchScenarios();
+        this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
-        this.checkOrientation();
+        this.fetchScenarios();
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
     },
     methods: {
@@ -85,6 +85,7 @@ window.app = new Vue({
                 this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
                 this.$bus.$emit('orientation-changed', this.isPortrait);
             }, 300));
+            this.$bus.$emit('orientation-changed', this.isPortrait);
         }
     }
 });

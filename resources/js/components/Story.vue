@@ -1,7 +1,9 @@
 <template>
-    <div class="w-screen">
+    <div id="storyline-container" class="w-screen">
         <inline-svg
-                name="storyline"
+                v-if="isPortrait !== null"
+                :key="storylineKey"
+                :name="storylineFile"
                 id="storyline"
                 :classes="['h-screen', 'w-screen']"
         />
@@ -17,34 +19,52 @@
     export default {
         data() {
             return {
-                scenarioRepository: new ScenarioRepository()
+                scenarioRepository: new ScenarioRepository(),
+                isPortrait: null,
+                zoom: null,
+                storylineKey: 1
             }
         },
         mounted() {
-            this.render();
             this.$bus.$on('scenarios-updated', () => {
                 this.render();
             });
 
-            zoom('#storyline');
-
-            $('.scenario').on('click', (e) => {
+            $('#storyline-container').on('click', '.scenario', (e) => {
                 let id = parseInt($(e.currentTarget).attr('id').replace('node', ''));
                 this.open(id);
             });
 
             this.$bus.$on('orientation-changed', (isPortrait) => {
-                console.log(isPortrait);
+                if (this.isPortrait !== isPortrait) {
+                    this.isPortrait = isPortrait;
+                    this.rerender();
+                }
             });
+        },
+        computed: {
+            storylineFile() {
+                return 'storyline-' + (this.isPortrait ? 'portrait' : 'landscape');
+            }
         },
         methods: {
             render() {
-                if (app.scenarios) {
+                if (app.scenarios && this.isPortrait !== null) {
                     this.renderScenarios();
                     this.renderChapters();
                 } else {
                     $('.scenario, .edge, .chapter').hide();
                 }
+            },
+            rerender() {
+                if (this.zoom) {
+                    this.zoom.destroy();
+                }
+                this.storylineKey++;
+                this.$nextTick(() => {
+                    this.zoom = zoom('#storyline');
+                    this.render();
+                });
             },
             renderScenarios() {
                 app.scenarios.each((scenario) => {
