@@ -37,12 +37,14 @@ window.app = new Vue({
             quests: null,
             webpSupported: true,
             hasMouse: false,
+            isPortrait: true
         }
     },
     mounted() {
-        this.fetchScenarios();
+        this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
+        this.fetchScenarios();
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
     },
     methods: {
@@ -75,6 +77,15 @@ window.app = new Vue({
                 this.hasMouse = true;
                 this.$bus.$emit('scenarios-updated');
             });
+        },
+        checkOrientation() {
+            this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
+
+            window.addEventListener('resize', _.debounce(() => {
+                this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
+                this.$bus.$emit('orientation-changed', this.isPortrait);
+            }, 300));
+            this.$bus.$emit('orientation-changed', this.isPortrait);
         }
     }
 });

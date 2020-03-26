@@ -7,8 +7,9 @@ export default class Scenario {
         this.name = data.name;
         this.title = this.name.substr(this.name.indexOf(' ') + 1);
         this.coordinates = data.coordinates;
+        this.is_side = data.is_side;
         this.pages = data.pages;
-        this.requirments = data.requirments;
+        this.requirements = data.requirements;
         this.quests = data.quests;
         this.chapter_id = data.chapter_id;
         this.chapter_name = null;

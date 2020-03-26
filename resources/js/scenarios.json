@@ -4,6 +4,7 @@
             "id": 1,
             "name": "#1 Black Barrow",
             "coordinates": "G-10",
+            "is_side": false,
             "pages": [
                 3
             ],
@@ -20,17 +21,19 @@
             "treasures": {
                 "7": "Random Side Scenario"
             },
-            "region_ids": []
+            "region_ids": [
+            ]
         },
         {
             "id": 2,
             "name": "#2 Barrow Lair",
             "coordinates": "G-11",
+            "is_side": false,
             "pages": [
                 4,
                 5
             ],
-            "requirments": "First Steps (Party) COMPLETE",
+            "requirements": "First Steps (Party) COMPLETE",
             "chapter_id": 1,
             "links_to": [
                 3,
@@ -47,17 +50,19 @@
             "treasures": {
                 "67": "Gain 10 Gold"
             },
-            "region_ids": []
+            "region_ids": [
+            ]
         },
         {
             "id": 3,
             "name": "#3 Inox Encampment",
             "coordinates": "G-3",
+            "is_side": false,
             "pages": [
                 5,
                 6
             ],
-            "requirments": "The Merchant Flees (Global) INCOMPLETE",
+            "requirements": "The Merchant Flees (Global) INCOMPLETE",
             "chapter_id": 2,
             "links_to": [
                 8,
@@ -84,10 +89,11 @@
             "id": 4,
             "name": "#4 Crypt of the Damned",
             "coordinates": "E-11",
+            "is_side": false,
             "pages": [
                 7
             ],
-            "requirments": "",
+            "requirements": "",
             "links_to": [
                 6,
                 5
@@ -112,6 +118,7 @@
             "id": 5,
             "name": "#5 Ruinous Crypt",
             "coordinates": "D-6",
+            "is_side": false,
             "pages": [
                 8
             ],
@@ -141,6 +148,7 @@
             "id": 6,
             "name": "#6 Decaying Crypt",
             "coordinates": "F-10",
+            "is_side": false,
             "pages": [
                 9,
                 10
@@ -168,11 +176,12 @@
             "id": 7,
             "name": "#7 Vibrant Grotto",
             "coordinates": "C-12",
+            "is_side": false,
             "pages": [
                 10,
                 11
             ],
-            "requirments": "The Power of Enhancement (Global) and The Merchant Flees (Global) COMPLETE",
+            "requirements": "The Power of Enhancement (Global) and The Merchant Flees (Global) COMPLETE",
             "chapter_id": 2,
             "links_to": [
                 20
@@ -188,8 +197,7 @@
                 5,
                 9
             ],
-            "treasures": {
-            },
+            "treasures": {},
             "region_ids": [
                 5
             ]
@@ -198,10 +206,11 @@
             "id": 8,
             "name": "#8 Gloomhaven Warehouse",
             "coordinates": "C-18",
+            "is_side": false,
             "pages": [
                 12
             ],
-            "requirments": "Jekserah’s Plans (Party) COMPLETE and The Dead Invade (Global) INCOMPLETE",
+            "requirements": "Jekserah’s Plans (Party) COMPLETE and The Dead Invade (Global) INCOMPLETE",
             "chapter_id": 2,
             "links_to": [
                 7,
@@ -231,10 +240,11 @@
             "id": 9,
             "name": "#9 Diamond Mine",
             "coordinates": "L-2",
+            "is_side": false,
             "pages": [
                 13
             ],
-            "requirments": "The Merchant Flees (Global) INCOMPLETE",
+            "requirements": "The Merchant Flees (Global) INCOMPLETE",
             "chapter_id": 2,
             "links_to": [
                 11,
@@ -250,8 +260,7 @@
             "quests": [
                 7
             ],
-            "treasures": {
-            },
+            "treasures": {},
             "region_ids": [
                 4
             ]
@@ -260,10 +269,11 @@
             "id": 10,
             "name": "#10 Plane of Elemental Power",
             "coordinates": "L-2",
+            "is_side": false,
             "pages": [
                 14
             ],
-            "requirments": "The Rift Neutralized (Global) INCOMPLETE",
+            "requirements": "The Rift Neutralized (Global) INCOMPLETE",
             "chapter_id": 3,
             "links_to": [
                 21,
@@ -284,17 +294,19 @@
             "treasures": {
                 "11": "Random Item Design"
             },
-            "region_ids": []
+            "region_ids": [
+            ]
         },
         {
             "id": 11,
             "name": "#11 Gloomhaven Square A",
             "coordinates": "B-16",
+            "is_side": false,
             "pages": [
                 15,
                 16
             ],
-            "requirments": "End of the Invasion (Global) INCOMPLETE",
+            "requirements": "End of the Invasion (Global) INCOMPLETE",
             "chapter_id": 2,
             "links_to": [
                 16,
@@ -323,11 +335,12 @@
             "id": 12,
             "name": "#12 Gloomhaven Square B",
             "coordinates": "B-16",
+            "is_side": false,
             "pages": [
                 16,
                 17
             ],
-            "requirments": "End of the Invasion (Global) INCOMPLETE",
+            "requirements": "End of the Invasion (Global) INCOMPLETE",
             "chapter_id": 2,
             "links_to": [
                 16,
@@ -357,6 +370,7 @@
             "id": 13,
             "name": "#13 Temple of the Seer",
             "coordinates": "N-3",
+            "is_side": false,
             "pages": [
                 18
             ],
@@ -391,11 +405,12 @@
             "id": 14,
             "name": "#14 Frozen Hollow",
             "coordinates": "C-10",
+            "is_side": false,
             "pages": [
                 19,
                 20
             ],
-            "requirments": "",
+            "requirements": "",
             "links_to": [],
             "linked_from": [
                 5,
@@ -418,6 +433,7 @@
             "id": 15,
             "name": "#15 Shrine of Strength",
             "coordinates": "B-11",
+            "is_side": false,
             "pages": [
                 20,
                 21
@@ -433,8 +449,7 @@
             "quests": [
                 14
             ],
-            "treasures": {
-            },
+            "treasures": {},
             "region_ids": [
                 5
             ]
@@ -443,10 +458,11 @@
             "id": 16,
             "name": "#16 Mountain Pass",
             "coordinates": "B-6",
+            "is_side": false,
             "pages": [
                 22
             ],
-            "requirments": "",
+            "requirements": "",
             "links_to": [
                 25,
                 24
@@ -472,6 +488,7 @@
             "id": 17,
             "name": "#17 Lost Island",
             "coordinates": "K-17",
+            "is_side": false,
             "pages": [
                 23
             ],
@@ -499,6 +516,7 @@
             "id": 18,
             "name": "#18 Abandoned Sewers",
             "coordinates": "C-14",
+            "is_side": false,
             "pages": [
                 24
             ],
@@ -530,11 +548,12 @@
             "id": 19,
             "name": "#19 Forgotten Crypt",
             "coordinates": "M-7",
+            "is_side": false,
             "pages": [
                 25,
                 26
             ],
-            "requirments": "The Power of Enhancement (Global) COMPLETE",
+            "requirements": "The Power of Enhancement (Global) COMPLETE",
             "chapter_id": 3,
             "links_to": [
                 27
@@ -561,11 +580,12 @@
             "id": 20,
             "name": "#20 Necromancer's Sanctum",
             "coordinates": "H-13",
+            "is_side": false,
             "pages": [
                 26,
                 27
             ],
-            "requirments": "The Merchant Flees (Global) COMPLETE",
+            "requirements": "The Merchant Flees (Global) COMPLETE",
             "chapter_id": 2,
             "links_to": [
                 28,
@@ -587,17 +607,19 @@
             "treasures": {
                 "60": "Gain \"Skullbane Axe\" (Item 113)"
             },
-            "region_ids": []
+            "region_ids": [
+            ]
         },
         {
             "id": 21,
             "name": "#21 Infernal Throne",
             "coordinates": "C-7",
+            "is_side": false,
             "pages": [
                 28,
                 29
             ],
-            "requirments": "The Rift Neutralized (Global) INCOMPLETE",
+            "requirements": "The Rift Neutralized (Global) INCOMPLETE",
             "chapter_id": 3,
             "links_to": [],
             "linked_from": [
@@ -614,17 +636,19 @@
             "treasures": {
                 "15": "Gain \"Pendant of Dark Pacts\" (Item 045)"
             },
-            "region_ids": []
+            "region_ids": [
+            ]
         },
         {
             "id": 22,
             "name": "#22 Temple of Elements",
             "coordinates": "K-8",
+            "is_side": false,
             "pages": [
                 29,
                 30
             ],
-            "requirments": "A Demon’s Errand (Party) or Following Clues (Party) COMPLETE",
+            "requirements": "A Demon’s Errand (Party) or Following Clues (Party) COMPLETE",
             "links_to": [
                 35,
                 31,
@@ -642,12 +666,14 @@
             "treasures": {
                 "21": "Suffer 5 Damage"
             },
-            "region_ids": []
+            "region_ids": [
+            ]
         },
         {
             "id": 23,
             "name": "#23 Deep Ruins",
             "coordinates": "C-15",
+            "is_side": false,
             "pages": [
                 31,
                 32
@@ -677,6 +703,7 @@
             "id": 24,
             "name": "#24 Echo Chamber",
             "coordinates": "C-6",
+            "is_side": false,
             "pages": [
                 32,
                 33
@@ -705,6 +732,7 @@
             "id": 25,
             "name": "#25 Icecrag Ascent",
             "coordinates": "A-5",
+            "is_side": false,
             "pages": [
                 34,
                 35
@@ -733,11 +761,12 @@
             "id": 26,
             "name": "#26 Ancient Cistern",
             "coordinates": "D-15",
+            "is_side": false,
             "pages": [
                 35,
                 36
             ],
-            "requirments": "Water-Breathing (Global) or Through the Ruins (Party) COMPLETE",
+            "requirements": "Water-Breathing (Global) or Through the Ruins (Party) COMPLETE",
             "chapter_id": 4,
             "links_to": [
                 22
@@ -764,10 +793,11 @@
             "id": 27,
             "name": "#27 Ruinous Rift",
             "coordinates": "E-6",
+            "is_side": false,
             "pages": [
                 37
             ],
-            "requirments": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
+            "requirements": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
             "chapter_id": 3,
             "links_to": [],
             "linked_from": [
@@ -781,18 +811,19 @@
                 8,
                 18
             ],
-            "treasures": {
-            },
-            "region_ids": []
+            "treasures": {},
+            "region_ids": [
+            ]
         },
         {
             "id": 28,
             "name": "#28 Outer Ritual Chamber",
             "coordinates": "E-4",
+            "is_side": false,
             "pages": [
                 38
             ],
-            "requirments": "Dark Bounty (Party) COMPLETE",
+            "requirements": "Dark Bounty (Party) COMPLETE",
             "chapter_id": 2,
             "links_to": [
                 29
@@ -819,10 +850,11 @@
             "id": 29,
             "name": "#29 Sanctuary of Gloom",
             "coordinates": "E-3",
+            "is_side": false,
             "pages": [
                 39
             ],
-            "requirments": "An Invitation (Party) COMPLETE",
+            "requirements": "An Invitation (Party) COMPLETE",
             "chapter_id": 2,
             "links_to": [],
             "linked_from": [
@@ -844,11 +876,12 @@
             "id": 30,
             "name": "#30 Shrine of the Depths",
             "coordinates": "N-15",
+            "is_side": false,
             "pages": [
                 40,
                 41
             ],
-            "requirments": "The Voice’s Command (Party)",
+            "requirements": "The Voice’s Command (Party)",
             "chapter_id": 10,
             "links_to": [
                 42
@@ -861,8 +894,7 @@
             "quests": [
                 23
             ],
-            "treasures": {
-            },
+            "treasures": {},
             "region_ids": [
                 6
             ]
@@ -871,11 +903,12 @@
             "id": 31,
             "name": "#31 Plane of Night",
             "coordinates": "A-16",
+            "is_side": false,
             "pages": [
                 41,
                 42
             ],
-            "requirments": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
+            "requirements": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
             "links_to": [
                 39,
                 37,
@@ -906,10 +939,11 @@
             "id": 32,
             "name": "#32 Decrepit Wood",
             "coordinates": "L-11",
+            "is_side": false,
             "pages": [
                 43
             ],
-            "requirments": "The Voice’s Command (Party) COMPLETE",
+            "requirements": "The Voice’s Command (Party) COMPLETE",
             "chapter_id": 10,
             "links_to": [
                 33,
@@ -925,8 +959,7 @@
             "quests": [
                 25
             ],
-            "treasures": {
-            },
+            "treasures": {},
             "region_ids": [
                 3
             ]
@@ -935,10 +968,11 @@
             "id": 33,
             "name": "#33 Savvas Armory",
             "coordinates": "A-7",
+            "is_side": false,
             "pages": [
                 44
             ],
-            "requirments": "The Voice’s Command (Party) or The Drake’s Command (Party) COMPLETE",
+            "requirements": "The Voice’s Command (Party) or The Drake’s Command (Party) COMPLETE",
             "links_to": [],
             "linked_from": [
                 25,
@@ -954,8 +988,7 @@
                 26,
                 27
             ],
-            "treasures": {
-            },
+            "treasures": {},
             "region_ids": [
                 5
             ]
@@ -964,10 +997,11 @@
             "id": 34,
             "name": "#34 Scorched Summit",
             "coordinates": "A-4",
+            "is_side": false,
             "pages": [
                 45
             ],
-            "requirments": "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE",
+            "requirements": "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE",
             "chapter_id": 9,
             "links_to": [],
             "linked_from": [
@@ -991,11 +1025,12 @@
             "id": 35,
             "name": "#35 Gloomhaven Battlements A",
             "coordinates": "A-14",
+            "is_side": false,
             "pages": [
                 46,
                 47
             ],
-            "requirments": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
+            "requirements": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
             "chapter_id": 3,
             "links_to": [
                 45
@@ -1025,11 +1060,12 @@
             "id": 36,
             "name": "#36 Gloomhaven Battlements B",
             "coordinates": "B-14",
+            "is_side": false,
             "pages": [
                 47,
                 48
             ],
-            "requirments": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
+            "requirements": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
             "chapter_id": 3,
             "links_to": [],
             "linked_from": [
@@ -1057,10 +1093,11 @@
             "id": 37,
             "name": "#37 Doom Trench",
             "coordinates": "G-18",
+            "is_side": false,
             "pages": [
                 49
             ],
-            "requirments": "Water-Breathing (Global) COMPLETE",
+            "requirements": "Water-Breathing (Global) COMPLETE",
             "chapter_id": 6,
             "links_to": [
                 47
@@ -1089,6 +1126,7 @@
             "id": 38,
             "name": "#38 Slave Pens",
             "coordinates": "G-2",
+            "is_side": false,
             "pages": [
                 50,
                 51
@@ -1117,6 +1155,7 @@
             "id": 39,
             "name": "#39 Treacherous Divide",
             "coordinates": "B-11",
+            "is_side": false,
             "pages": [
                 51,
                 52
@@ -1145,11 +1184,12 @@
             "id": 40,
             "name": "#40 Ancient Defense Network",
             "coordinates": "F-12",
+            "is_side": false,
             "pages": [
                 53,
                 54
             ],
-            "requirments": "The Voice’s Command (Party) and The Voice’s Treasure (Party) COMPLETE",
+            "requirements": "The Voice’s Command (Party) and The Voice’s Treasure (Party) COMPLETE",
             "chapter_id": 10,
             "links_to": [
                 41
@@ -1177,11 +1217,12 @@
             "id": 41,
             "name": "#41 Timeworn Tomb",
             "coordinates": "F-13",
+            "is_side": false,
             "pages": [
                 54,
                 55
             ],
-            "requirments": "The Voice’s Command (Party) COMPLETE",
+            "requirements": "The Voice’s Command (Party) COMPLETE",
             "chapter_id": 10,
             "links_to": [],
             "linked_from": [
@@ -1205,10 +1246,11 @@
             "id": 42,
             "name": "#42 Realm of the Voice",
             "coordinates": "C-5",
+            "is_side": false,
             "pages": [
                 56
             ],
-            "requirments": "The Scepter and the Voice (Party) COMPLETE and The Voice Freed (Global) INCOMPLETE",
+            "requirements": "The Scepter and the Voice (Party) COMPLETE and The Voice Freed (Global) INCOMPLETE",
             "chapter_id": 10,
             "links_to": [],
             "linked_from": [
@@ -1233,11 +1275,12 @@
             "id": 43,
             "name": "#43 Drake Nest",
             "coordinates": "D-4",
+            "is_side": false,
             "pages": [
                 57,
                 58
             ],
-            "requirments": "The Power of Enhancement (Global) COMPLETE",
+            "requirements": "The Power of Enhancement (Global) COMPLETE",
             "links_to": [],
             "linked_from": [
                 18,
@@ -1261,11 +1304,12 @@
             "id": 44,
             "name": "#44 Tribal Assault",
             "coordinates": "F-3",
+            "is_side": false,
             "pages": [
                 58,
                 59
             ],
-            "requirments": "Redthorn’s Aid (Party) COMPLETE",
+            "requirements": "Redthorn’s Aid (Party) COMPLETE",
             "chapter_id": 7,
             "links_to": [],
             "linked_from": [
@@ -1276,8 +1320,7 @@
             "quests": [
                 35
             ],
-            "treasures": {
-            },
+            "treasures": {},
             "region_ids": [
                 2
             ]
@@ -1286,10 +1329,11 @@
             "id": 45,
             "name": "#45 Rebel Swamp",
             "coordinates": "M-9",
+            "is_side": false,
             "pages": [
                 60
             ],
-            "requirments": "City Rule: Demonic (Global) COMPLETE",
+            "requirements": "City Rule: Demonic (Global) COMPLETE",
             "chapter_id": 5,
             "links_to": [
                 49,
@@ -1314,10 +1358,11 @@
             "id": 46,
             "name": "#46 Nightmare Peak",
             "coordinates": "A-11",
+            "is_side": false,
             "pages": [
                 61
             ],
-            "requirments": "Across the Divide (Party) COMPLETE",
+            "requirements": "Across the Divide (Party) COMPLETE",
             "chapter_id": 8,
             "links_to": [
                 51
@@ -1341,10 +1386,11 @@
             "id": 47,
             "name": "#47 Lair of the Unseeing Eye",
             "coordinates": "H-18",
+            "is_side": false,
             "pages": [
                 62
             ],
-            "requirments": "Through the Trench (Party) COMPLETE",
+            "requirements": "Through the Trench (Party) COMPLETE",
             "chapter_id": 6,
             "links_to": [
                 51
@@ -1369,10 +1415,11 @@
             "id": 48,
             "name": "#48 Shadow Weald",
             "coordinates": "E-1",
+            "is_side": false,
             "pages": [
                 63
             ],
-            "requirments": "Redthorn’s Aid (Party) COMPLETE",
+            "requirements": "Redthorn’s Aid (Party) COMPLETE",
             "chapter_id": 7,
             "links_to": [
                 51
@@ -1396,10 +1443,11 @@
             "id": 49,
             "name": "#49 Rebel's Stand",
             "coordinates": "N-7",
+            "is_side": false,
             "pages": [
                 64
             ],
-            "requirments": "City Rule: Demonic (Global) COMPLETE",
+            "requirements": "City Rule: Demonic (Global) COMPLETE",
             "chapter_id": 5,
             "links_to": [],
             "linked_from": [
@@ -1421,11 +1469,12 @@
             "id": 50,
             "name": "#50 Ghost Forrest",
             "coordinates": "C-17",
+            "is_side": false,
             "pages": [
                 65,
                 66
             ],
-            "requirments": "City Rule: Demonic (Global) COMPLETE and Annihilation of Order (Global) INCOMPLETE",
+            "requirements": "City Rule: Demonic (Global) COMPLETE and Annihilation of Order (Global) INCOMPLETE",
             "chapter_id": 5,
             "links_to": [],
             "linked_from": [
@@ -1438,8 +1487,7 @@
             "quests": [
                 38
             ],
-            "treasures": {
-            },
+            "treasures": {},
             "region_ids": [
                 1
             ]
@@ -1448,6 +1496,7 @@
             "id": 51,
             "name": "#51 The Void",
             "coordinates": "A-15",
+            "is_side": false,
             "pages": [
                 66,
                 67
@@ -1475,6 +1524,925 @@
             "region_ids": [
                 1
             ]
+        },
+        {
+            "id": 52,
+            "name": "#52 Noxious Cellar",
+            "coordinates": "D-14",
+            "is_side": true,
+            "pages": [
+                68,
+                69
+            ],
+            "requirements": "“Seeker of Xorn” personal quest",
+            "chapter_id": 11,
+            "links_to": [
+                53
+            ],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 53,
+            "name": "#53 Crypt Basement",
+            "coordinates": "F-11",
+            "is_side": false,
+            "pages": [
+                69,
+                70
+            ],
+            "requirements": "“Seeker of Xorn” personal quest",
+            "chapter_id": 11,
+            "links_to": [
+                54
+            ],
+            "linked_from": [
+                52
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                7
+            ]
+        },
+        {
+            "id": 54,
+            "name": "#54 Palace of Ice",
+            "coordinates": "D-8",
+            "is_side": false,
+            "pages": [
+                71
+            ],
+            "requirements": "“Seeker of Xorn” personal quest, “Staff of Xorn” item equipped",
+            "chapter_id": 11,
+            "links_to": [],
+            "linked_from": [
+                53
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                5
+            ]
+        },
+        {
+            "id": 55,
+            "name": "#55 Foggy Thicket",
+            "coordinates": "G-5",
+            "is_side": true,
+            "pages": [
+                72
+            ],
+            "requirements": "“Take Back the Trees” personal quest",
+            "chapter_id": 11,
+            "links_to": [
+                56
+            ],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                2
+            ]
+        },
+        {
+            "id": 56,
+            "name": "#56 Bandit's Wood",
+            "coordinates": "G-4",
+            "is_side": false,
+            "pages": [
+                73
+            ],
+            "requirements": "“Take Back the Trees” personal quest",
+            "chapter_id": 11,
+            "links_to": [],
+            "linked_from": [
+                55
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                2
+            ]
+        },
+        {
+            "id": 57,
+            "name": "#57 Investigation",
+            "coordinates": "D-14",
+            "is_side": true,
+            "pages": [
+                74
+            ],
+            "requirements": "“Vengeance” personal quest",
+            "chapter_id": 11,
+            "links_to": [
+                58
+            ],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 58,
+            "name": "#58 Bloody Shack",
+            "coordinates": "E-15",
+            "is_side": false,
+            "pages": [
+                75
+            ],
+            "requirements": "“Vengeance” personal quest",
+            "chapter_id": 11,
+            "links_to": [],
+            "linked_from": [
+                57
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 59,
+            "name": "#59 Forgotten Grove",
+            "coordinates": "F-1",
+            "is_side": true,
+            "pages": [
+                76
+            ],
+            "requirements": "“Finding the Cure” personal quest",
+            "chapter_id": 11,
+            "links_to": [
+                60
+            ],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                2
+            ]
+        },
+        {
+            "id": 60,
+            "name": "#60 Alchemy Lab",
+            "coordinates": "B-15",
+            "is_side": false,
+            "pages": [
+                77
+            ],
+            "requirements": "“Finding the Cure” personal quest",
+            "chapter_id": 11,
+            "links_to": [],
+            "linked_from": [
+                59
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 61,
+            "name": "#61 Fading Lighthouse",
+            "coordinates": "N-11",
+            "is_side": true,
+            "pages": [
+                78,
+                79
+            ],
+            "requirements": "“The Fall of Man” personal quest",
+            "chapter_id": 11,
+            "links_to": [
+                62
+            ],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                3
+            ]
+        },
+        {
+            "id": 62,
+            "name": "#62 Pit of Souls",
+            "coordinates": "O-11",
+            "is_side": false,
+            "pages": [
+                80
+            ],
+            "requirements": "“The Fall of Man” personal quest",
+            "chapter_id": 11,
+            "links_to": [],
+            "linked_from": [
+                61
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                3
+            ]
+        },
+        {
+            "id": 63,
+            "name": "#63 Magma Pit",
+            "coordinates": "M-1",
+            "is_side": true,
+            "pages": [
+                81
+            ],
+            "requirements": "",
+            "chapter_id": 12,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                4
+            ]
+        },
+        {
+            "id": 64,
+            "name": "#64 Under Water Lagoon",
+            "coordinates": "K-16",
+            "is_side": true,
+            "pages": [
+                82
+            ],
+            "requirements": "Water-Breathing (Global) COMPLETE",
+            "chapter_id": 12,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [
+                43
+            ],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                6
+            ]
+        },
+        {
+            "id": 65,
+            "name": "#65 Sulfur Mine",
+            "coordinates": "L-5",
+            "is_side": true,
+            "pages": [
+                83,
+                84
+            ],
+            "requirements": "",
+            "chapter_id": 12,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                4
+            ]
+        },
+        {
+            "id": 66,
+            "name": "#66 Clockwork Cove",
+            "coordinates": "G-14",
+            "is_side": true,
+            "pages": [
+                84,
+                85
+            ],
+            "requirements": "",
+            "chapter_id": 12,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                5
+            ]
+        },
+        {
+            "id": 67,
+            "name": "#67 Arcane Library",
+            "coordinates": "K-2",
+            "is_side": true,
+            "pages": [
+                86
+            ],
+            "requirements": "",
+            "chapter_id": 12,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+            ]
+        },
+        {
+            "id": 68,
+            "name": "#68 Toxic Moor",
+            "coordinates": "N-8",
+            "is_side": true,
+            "pages": [
+                87
+            ],
+            "requirements": "",
+            "chapter_id": 12,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                3
+            ]
+        },
+        {
+            "id": 69,
+            "name": "#69 Well of the Unfortunate",
+            "coordinates": "F-8",
+            "is_side": true,
+            "pages": [
+                88
+            ],
+            "requirements": "",
+            "chapter_id": 12,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+            ]
+        },
+        {
+            "id": 70,
+            "name": "#70 Chained Isle",
+            "coordinates": "J-17",
+            "is_side": true,
+            "pages": [
+                89,
+                90
+            ],
+            "requirements": "",
+            "chapter_id": 12,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                6
+            ]
+        },
+        {
+            "id": 71,
+            "name": "#71 Windswept Highlands",
+            "coordinates": "K-5",
+            "is_side": true,
+            "pages": [
+                90,
+                91
+            ],
+            "requirements": "",
+            "chapter_id": 12,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+            ]
+        },
+        {
+            "id": 72,
+            "name": "#72 Oozing Grove",
+            "coordinates": "H-12",
+            "is_side": true,
+            "pages": [
+                92
+            ],
+            "requirements": "",
+            "chapter_id": 13,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+            ]
+        },
+        {
+            "id": 73,
+            "name": "#73 Rockslide Ridge",
+            "coordinates": "N-5",
+            "is_side": true,
+            "pages": [
+                93
+            ],
+            "requirements": "",
+            "chapter_id": 13,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                4
+            ]
+        },
+        {
+            "id": 74,
+            "name": "#74 Merchant Ship",
+            "coordinates": "I-14",
+            "is_side": true,
+            "pages": [
+                94
+            ],
+            "requirements": "High Sea Escort (Party) COMPLETE",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                6
+            ]
+        },
+        {
+            "id": 75,
+            "name": "#75 Overgrown Graveyard",
+            "coordinates": "G-12",
+            "is_side": true,
+            "pages": [
+                95
+            ],
+            "requirements": "Grave Job (Party) COMPLETE",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+            ]
+        },
+        {
+            "id": 76,
+            "name": "#76 Harrower Hive",
+            "coordinates": "L-3",
+            "is_side": true,
+            "pages": [
+                96,
+                97
+            ],
+            "requirements": "Bravery",
+            "chapter_id": 13,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                4
+            ]
+        },
+        {
+            "id": 77,
+            "name": "#77 Vault of Secrets",
+            "coordinates": "B-17",
+            "is_side": true,
+            "pages": [
+                97,
+                98
+            ],
+            "requirements": "",
+            "chapter_id": 13,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 78,
+            "name": "#78 Sacrifice Pit",
+            "coordinates": "B-14",
+            "is_side": true,
+            "pages": [
+                99
+            ],
+            "requirements": "",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 79,
+            "name": "#79 Lost Temple",
+            "coordinates": "K-12",
+            "is_side": true,
+            "pages": [
+                100,
+                101
+            ],
+            "requirements": "Fish’s Aid (Party) COMPLETE",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                3
+            ]
+        },
+        {
+            "id": 80,
+            "name": "#80 Vigil Keep",
+            "coordinates": "K-1",
+            "is_side": true,
+            "pages": [
+                101,
+                102
+            ],
+            "requirements": "",
+            "chapter_id": 14,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                4
+            ]
+        },
+        {
+            "id": 81,
+            "name": "#81 Temple of the Eclipse",
+            "coordinates": "D-2",
+            "is_side": true,
+            "pages": [
+                103
+            ],
+            "requirements": "",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                2
+            ]
+        },
+        {
+            "id": 82,
+            "name": "#82 Burning Mountain",
+            "coordinates": "M-6",
+            "is_side": true,
+            "pages": [
+                104
+            ],
+            "requirements": "",
+            "chapter_id": 14,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                4
+            ]
+        },
+        {
+            "id": 83,
+            "name": "#83 Shadows Within",
+            "coordinates": "C-15",
+            "is_side": true,
+            "pages": [
+                105
+            ],
+            "requirements": "Bad Business (Party) COMPLETE",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 84,
+            "name": "#84 Crystalline Cave",
+            "coordinates": "D-12",
+            "is_side": true,
+            "pages": [
+                106
+            ],
+            "requirements": "Tremors (Party) COMPLETE",
+            "chapter_id": 13,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                5
+            ]
+        },
+        {
+            "id": 85,
+            "name": "#85 Sun Temple",
+            "coordinates": "M-3",
+            "is_side": true,
+            "pages": [
+                107,
+                108
+            ],
+            "requirements": "",
+            "chapter_id": 14,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                4
+            ]
+        },
+        {
+            "id": 86,
+            "name": "#86 Harried Village",
+            "coordinates": "D-15",
+            "is_side": true,
+            "pages": [
+                108,
+                109
+            ],
+            "requirements": "",
+            "chapter_id": 15,
+            "links_to": [
+                87
+            ],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 87,
+            "name": "#87 Corrupted Cove",
+            "coordinates": "I-9",
+            "is_side": false,
+            "pages": [
+                110
+            ],
+            "requirements": "The Poison’s Source (Party) COMPLETE",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [
+                86
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+            ]
+        },
+        {
+            "id": 88,
+            "name": "#88 Plane of Water",
+            "coordinates": "D-16",
+            "is_side": true,
+            "pages": [
+                111
+            ],
+            "requirements": "Water-Breathing (Global) and Water Staff (Party) COMPLETE",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [
+                43
+            ],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 89,
+            "name": "#89 Syndicate Hideout",
+            "coordinates": "C-17",
+            "is_side": true,
+            "pages": [
+                112
+            ],
+            "requirements": "Sin-Ra (Party) COMPLETE",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 90,
+            "name": "#90 Demonic Rift",
+            "coordinates": "J-7",
+            "is_side": true,
+            "pages": [
+                113
+            ],
+            "requirements": "",
+            "chapter_id": 14,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+            ]
+        },
+        {
+            "id": 91,
+            "name": "#91 Wild Melee",
+            "coordinates": "E-2",
+            "is_side": true,
+            "pages": [
+                114
+            ],
+            "requirements": "",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                2
+            ]
+        },
+        {
+            "id": 92,
+            "name": "#92 Back Alley Brawl",
+            "coordinates": "C-14",
+            "is_side": true,
+            "pages": [
+                115
+            ],
+            "requirements": "Debt Collection (Party) COMPLETE",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                1
+            ]
+        },
+        {
+            "id": 93,
+            "name": "#93 Sunken Vessel",
+            "coordinates": "N-17",
+            "is_side": true,
+            "pages": [
+                116
+            ],
+            "requirements": "A Map to Treasure (Party) COMPLETE",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": [
+                6
+            ]
+        },
+        {
+            "id": 94,
+            "name": "#94 Vermling Nest",
+            "coordinates": "F-12",
+            "is_side": true,
+            "pages": [
+                117
+            ],
+            "requirements": "",
+            "chapter_id": 15,
+            "links_to": [
+                95
+            ],
+            "linked_from": [],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": []
+        },
+        {
+            "id": 95,
+            "name": "#95 Payment Due",
+            "coordinates": "G-12",
+            "is_side": false,
+            "pages": [
+                118,
+                119
+            ],
+            "requirements": "Through the Nest (Party) COMPLETE",
+            "chapter_id": 15,
+            "links_to": [],
+            "linked_from": [
+                94
+            ],
+            "blocked_by": [],
+            "required_by": [],
+            "quests": [],
+            "treasures": {},
+            "region_ids": []
         }
     ],
     "chapters": [
@@ -1517,6 +2485,30 @@
         {
             "id": 10,
             "name": "Voice"
+        },
+        {
+            "id": 11,
+            "name": "Personal Quests"
+        },
+        {
+            "id": 12,
+            "name": "Random Scenarios"
+        },
+        {
+            "id": 13,
+            "name": "Sealed"
+        },
+        {
+            "id": 14,
+            "name": "Road Events"
+        },
+        {
+            "id": 15,
+            "name": "City Events"
+        },
+        {
+            "id": 16,
+            "name": "Solo Scenarios"
         }
     ],
     "regions": [
