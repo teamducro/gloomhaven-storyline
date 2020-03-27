@@ -26,6 +26,9 @@
             }
         },
         mounted() {
+            if (app.isPortrait !== null) {
+                this.isPortrait = app.isPortrait;
+            }
             this.$bus.$on('scenarios-updated', () => {
                 this.render();
             });
@@ -41,6 +44,10 @@
                     this.rerender();
                 }
             });
+
+            this.$nextTick(() => {
+                this.render();
+            })
         },
         computed: {
             storylineFile() {
