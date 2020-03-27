@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="420pt" viewBox="0 -60 420 668"
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="420pt" viewBox="0 -60 420 950"
      style="width:100%;">
     <style>
         text { font-family: Arial, sans-serif; fill: #fff; }
@@ -21,18 +21,18 @@
     <g id="chapter1" class="chapter">
         <rect width="40.84322" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="30" y="280">Intro</text>
+        <text class="label" x="30" y="278">Intro</text>
     </g>
     <g id="chapter2" class="chapter">
         <rect width="215.8856" height="263.21188" x="7.7796607" y="327.39407" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="20" y="585">The Merchant</text>
-        <text class="label" x="115.773639" y="515">Awaits</text>
+        <text class="label" x="112" y="515">Awaits</text>
     </g>
     <g id="chapter3" class="chapter">
         <rect width="160.13135" height="151.70338" x="5.8347459" y="7.1313553" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="9.348182" y="22">Demon and Rift</text>
+        <text class="label" x="15" y="22">Demon and Rift</text>
     </g>
     <g id="chapter4" class="chapter">
         <rect width="86.872887" height="103.72881" x="122.52966" y="201.62288" rx="10" ry="10" stroke="#000"
@@ -42,31 +42,31 @@
     <g id="chapter5" class="chapter">
         <rect width="92.707626" height="99.190681" x="252.83899" y="18.152542" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="268.94" y="112">Rebellion Rises</text>
+        <text class="label" x="272" y="112">Rebellion Rises</text>
     </g>
     <g id="chapter6" class="chapter">
-        <rect width="93.355934" height="51.216106" x="285.25424" y="129.01271" rx="10" ry="10" stroke="#000"
+        <rect width="93" height="51.216106" x="284" y="129.01271" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="303.4564" y="178">Under Oceans</text>
+        <text class="label" x="307" y="175">Under Oceans</text>
     </g>
     <g id="chapter7" class="chapter">
-        <rect width="91.411026" height="71.31356" x="286.55087" y="186.71187" rx="10" ry="10" stroke="#000"
+        <rect width="93" height="71.31356" x="284" y="186.71187" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="295" y="203.71637">Through</text>
         <text class="label" x="295" y="216.71637">Jungles</text>
     </g>
     <g id="chapter8" class="chapter">
-        <rect width="94.652542" height="52.512714" x="283.30933" y="272.28815" rx="10" ry="10" stroke="#000"
+        <rect width="93" height="52.512714" x="284" y="272.28815" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="308.49" y="320">Atop Mountains</text>
+        <text class="label" x="312" y="320">Atop Mountains</text>
     </g>
     <g id="chapter9" class="chapter">
-        <rect width="123.17797" height="43.43644" x="251.54237" y="381.2034" rx="10" ry="10" stroke="#000"
+        <rect width="106" height="43.43644" x="251" y="381.2034" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="334.37727" y="420">Dragons</text>
+        <text class="label" x="316" y="420">Dragons</text>
     </g>
     <g id="chapter10" class="chapter">
-        <rect width="129.01271" height="114.10169" x="250.89407" y="477.15253" rx="10" ry="10" stroke="#000"
+        <rect width="129" height="114.10169" x="251" y="477.15253" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="263.83911" y="585">Voice</text>
     </g>
@@ -81,7 +81,7 @@
         <path class="arrow"
               d="M 26.24682004 285.7523657 L 23.73000168 280.718729 L 26.24682004 281.9771381 L 28.7636384 280.718729 L 26.24682004 285.7523657 Z"/>
     </g>
-    <g id="node1" data-id="1" class="scenario">
+    <g id="node1" class="scenario">
         <circle cx="37.39272992" cy="257.4345637" r="10.8" class="node"/>
         <text x="25" y="253.12001">1</text>
     </g>
@@ -95,7 +95,7 @@
         <path class="arrow"
               d="M 25.17537451 415.548284 L 22.73046525 410.4858836 L 25.22571088 411.7730564 L 27.76410197 410.5506018 L 25.17537451 415.548284 Z"/>
     </g>
-    <g id="node2" data-id="2" class="scenario">
+    <g id="node2" class="scenario">
         <circle cx="37.06045564" cy="296.9982021" r="10.8" class="node"/>
         <text x="24" y="293.3891">2</text>
     </g>
@@ -104,7 +104,7 @@
         <path class="arrow"
               d="M 68.3136412 337.8864603 L 65.79682284 332.8528236 L 68.3136412 334.1112327 L 70.83045956 332.8528236 L 68.3136412 337.8864603 Z"/>
     </g>
-    <g id="node4" data-id="4" class="scenario">
+    <g id="node4" class="scenario">
         <circle cx="79.1000056" cy="298.4227484" r="10.8" class="node"/>
         <text x="66" y="294.1082">4</text>
     </g>
@@ -118,7 +118,7 @@
         <path class="arrow"
               d="M 68.3136412 445.3258406 L 65.79682284 442.8090223 L 68.3136412 440.2922039 L 70.83045956 442.8090223 L 68.3136412 445.3258406 Z"/>
     </g>
-    <g id="node3" data-id="3" class="scenario">
+    <g id="node3" class="scenario">
         <circle cx="35.954548" cy="427.1400302" r="10.8" class="node"/>
         <text x="23" y="422.82548">3</text>
         <text x="23" y="422.82548" class="blocked">×</text>
@@ -138,7 +138,7 @@
         <path class="arrow"
               d="M 112.8109898 399.0954828 L 107.7773531 401.6123012 L 109.0357623 399.0954828 L 107.7773531 396.5786644 L 112.8109898 399.0954828 Z"/>
     </g>
-    <g id="node8" data-id="8" class="scenario">
+    <g id="node8" class="scenario">
         <circle cx="79.1000056" cy="399.0954828" r="10.8" class="node"/>
         <text x="66" y="394.7809">8</text>
         <text x="66" y="394.7809" class="blocked">×</text>
@@ -155,7 +155,7 @@
         <path class="arrow"
               d="M 200.6263778 556.0658485 L 198.1095595 553.5490301 L 200.6263778 551.0322117 L 203.1431962 553.5490301 L 200.6263778 556.0658485 Z"/>
     </g>
-    <g id="node9" data-id="9" class="scenario">
+    <g id="node9" class="scenario">
         <circle cx="79.1000056" cy="456.6227596" r="10.8" class="node"/>
         <text x="66" y="452.3082">9</text>
         <text x="66" y="452.3082" class="blocked">×</text>
@@ -175,7 +175,7 @@
         <path class="arrow"
               d="M 90.28906094 273.952083 L 85.988897 270.3278646 L 88.79335174 270.4860646 L 90.61265187 268.3359826 L 90.28906094 273.952083 Z"/>
     </g>
-    <g id="node5" data-id="5" class="scenario">
+    <g id="node5" class="scenario">
         <circle cx="35.954548" cy="133.7509186" r="10.8" class="node"/>
         <text x="23" y="129.43636">5</text>
     </g>
@@ -184,7 +184,7 @@
         <path class="arrow"
               d="M 68.3136412 387.5037365 L 65.79682284 382.4700998 L 68.3136412 383.728509 L 70.83045956 382.4700998 L 68.3136412 387.5037365 Z"/>
     </g>
-    <g id="node6" data-id="6" class="scenario">
+    <g id="node6" class="scenario">
         <circle cx="79.1000056" cy="349.4782066" r="10.8" class="node"/>
         <text x="66" y="345.16365">6</text>
     </g>
@@ -198,7 +198,7 @@
         <path class="arrow"
               d="M 96.71773412 172.8047486 L 91.92139742 169.8492848 L 94.72585216 169.590412 L 96.19998863 167.1958391 L 96.71773412 172.8047486 Z"/>
     </g>
-    <g id="node10" data-id="10" class="scenario">
+    <g id="node10" class="scenario">
         <circle cx="80.53818752" cy="133.7509186" r="10.8" class="node"/>
         <text x="66" y="129.43636">10</text>
         <text x="67" y="129.43636" class="blocked">×</text>
@@ -208,12 +208,12 @@
         <path class="arrow"
               d="M 25.97356548 52.579931 L 28.36094746 57.67109499 L 25.88008365 56.35515854 L 23.32731074 57.54884953 L 25.97356548 52.579931 Z"/>
     </g>
-    <g id="node19" data-id="19" class="scenario">
+    <g id="node19" class="scenario">
         <circle cx="35.954548" cy="87.01000616" r="10.8" class="node"/>
         <text x="22" y="82.69546">19</text>
         <text x="20.134547" y="82.69546" class="required">*</text>
     </g>
-    <g id="node14" data-id="14" class="scenario">
+    <g id="node14" class="scenario">
         <circle cx="109.3018259" cy="282.6027473" r="10.8" class="node"/>
         <text x="95" y="278.2882">14</text>
     </g>
@@ -222,7 +222,7 @@
         <path class="arrow"
               d="M 160.9900841 456.2632141 L 155.9564474 458.7800325 L 157.2148566 456.2632141 L 155.9564474 453.7463958 L 160.9900841 456.2632141 Z"/>
     </g>
-    <g id="node7" data-id="7" class="scenario">
+    <g id="node7" class="scenario">
         <circle cx="135.1891005" cy="456.6227596" r="10.8" class="node"/>
         <text x="122.24545" y="452.3082">7</text>
         <text x="122.24545" y="452.3082" class="required">*</text>
@@ -237,7 +237,7 @@
         <path class="arrow"
               d="M 189.3294589 399.0954828 L 186.8126405 401.6123012 L 184.2958221 399.0954828 L 186.8126405 396.5786644 L 189.3294589 399.0954828 Z"/>
     </g>
-    <g id="node13" data-id="13" class="scenario">
+    <g id="node13" class="scenario">
         <circle cx="135.1891005" cy="399.0954828" r="10.8" class="node"/>
         <text x="120.8" y="394.7809">13</text>
     </g>
@@ -251,7 +251,7 @@
         <path class="arrow"
               d="M 262.3819095 456.2632141 L 257.3482728 458.7800325 L 258.6066819 456.2632141 L 257.3482728 453.7463958 L 262.3819095 456.2632141 Z"/>
     </g>
-    <g id="node20" data-id="20" class="scenario">
+    <g id="node20" class="scenario">
         <circle cx="183.395466" cy="456.2768497" r="10.8" class="node"/>
         <text x="168" y="452.3082">20</text>
         <text x="167.54819" y="452.3082" class="required">*</text>
@@ -274,7 +274,7 @@
         <path class="arrow"
               d="M 262.3819095 456.6227596 L 257.3482728 459.139578 L 258.6066819 456.6227596 L 257.3482728 454.1059412 L 262.3819095 456.6227596 Z"/>
     </g>
-    <g id="node11" data-id="11" class="scenario">
+    <g id="node11" class="scenario">
         <circle cx="211.4400134" cy="567.376403" r="10.8" class="node"/>
         <text x="198" y="563.0482">11</text>
         <text x="198" y="563.0482" class="blocked">×</text>
@@ -296,7 +296,7 @@
         <path class="arrow"
               d="M 190.5591044 294.9135845 L 193.0759228 299.9472212 L 190.5591044 298.6888121 L 188.042286 299.9472212 L 190.5591044 294.9135845 Z"/>
     </g>
-    <g id="node12" data-id="12" class="scenario">
+    <g id="node12" class="scenario">
         <circle cx="211.4400134" cy="495.1077616" r="10.8" class="node"/>
         <text x="197" y="491.1391">12</text>
         <text x="198" y="491.1391" class="blocked">×</text>
@@ -321,20 +321,20 @@
         <path class="arrow"
               d="M 110.1072078 282.6099382 L 115.1624172 280.1434562 L 113.8824353 282.6458927 L 115.1120809 285.1770929 L 110.1072078 282.6099382 Z"/>
     </g>
-    <g id="node18" data-id="18" class="scenario">
+    <g id="node18" class="scenario">
         <circle cx="201.3454688" cy="283.3218382" r="10.8" class="node"/>
         <text x="187" y="279">18</text>
     </g>
-    <g id="node28" data-id="28" class="scenario">
+    <g id="node28" class="scenario">
         <circle cx="158.9191022" cy="495.4536714" r="10.8" class="node"/>
         <text x="143.5" y="491.1391">28</text>
         <text x="143.09909" y="491.1391" class="required">*</text>
     </g>
-    <g id="node17" data-id="17" class="scenario">
+    <g id="node17" class="scenario">
         <circle cx="211.4127422" cy="399.0954828" r="10.8" class="node"/>
         <text x="197" y="394.7809">17</text>
     </g>
-    <g id="node43" data-id="43" class="scenario">
+    <g id="node43" class="scenario">
         <circle cx="262.4682004" cy="283.3218382" r="10.8" class="node"/>
         <text x="246.5" y="279">43</text>
         <text x="246" y="279" class="required">*</text>
@@ -344,17 +344,17 @@
         <path class="arrow"
               d="M 111.1714624 190.6957317 L 116.5286901 192.4071682 L 113.8752444 193.3347955 L 113.0195262 196.0170048 L 111.1714624 190.6957317 Z"/>
     </g>
-    <g id="node26" data-id="26" class="scenario">
+    <g id="node26" class="scenario">
         <circle cx="153.9127366" cy="221.8531968" r="10.8" class="node"/>
         <text x="138.5" y="217.88455">26</text>
         <text x="138.06546" y="217.88455" class="required">*</text>
     </g>
-    <g id="node27" data-id="27" class="scenario">
+    <g id="node27" class="scenario">
         <circle cx="37.06045564" cy="41" r="10.8" class="node"/>
         <text x="22" y="36.673639">27</text>
         <text x="24" y="36.673639" class="blocked">×</text>
     </g>
-    <g id="node21" data-id="21" class="scenario">
+    <g id="node21" class="scenario">
         <circle cx="80.20591324" cy="41" r="10.8" class="node"/>
         <text x="66" y="36.673639">21</text>
         <text x="67" y="36.673639" class="blocked">×</text>
@@ -365,7 +365,7 @@
         <path class="arrow"
               d="M 138.0654643 52.2851037 L 140.5822827 54.80192206 L 138.0654643 57.31874042 L 135.548646 54.80192206 L 138.0654643 52.2851037 Z"/>
     </g>
-    <g id="node22" data-id="22" class="scenario">
+    <g id="node22" class="scenario">
         <circle cx="113.6163717" cy="182.6491038" r="10.8" class="node"/>
         <text x="98.5" y="178.33455">22</text>
     </g>
@@ -389,7 +389,7 @@
         <path class="arrow"
               d="M 300.5440667 160.1127932 L 300.0047485 165.7145117 L 298.537803 163.3127479 L 295.7405391 163.0466843 L 300.5440667 160.1127932 Z"/>
     </g>
-    <g id="node31" data-id="31" class="scenario">
+    <g id="node31" class="scenario">
         <circle cx="262.4682004" cy="238.7381987" r="10.8" class="node"/>
         <text x="247.5" y="234.42365">31</text>
         <text x="246.6482" y="234.42365" class="required">*</text>
@@ -410,13 +410,13 @@
         <path class="arrow"
               d="M 138.0654643 122.4539996 L 135.548646 119.9371812 L 138.0654643 117.4203629 L 140.5822827 119.9371812 L 138.0654643 122.4539996 Z"/>
     </g>
-    <g id="node35" data-id="35" class="scenario">
+    <g id="node35" class="scenario">
         <circle cx="148.8518287" cy="40.98818472" r="10.8" class="node"/>
         <text x="133.5" y="36.673639">35</text>
         <text x="135.5" y="36.673639" class="blocked">×</text>
         <text x="133.03182" y="36.673639" class="required">*</text>
     </g>
-    <g id="node36" data-id="36" class="scenario">
+    <g id="node36" class="scenario">
         <circle cx="148.8790999" cy="133.4050087" r="10.8" class="node"/>
         <text x="133.5" y="129.43636">36</text>
         <text x="135.5" y="129.43636" class="blocked">×</text>
@@ -432,20 +432,20 @@
         <path class="arrow"
               d="M 313.013104 87.01000616 L 310.4962856 89.52682452 L 307.9794673 87.01000616 L 310.4962856 84.4931878 L 313.013104 87.01000616 Z"/>
     </g>
-    <g id="node45" data-id="45" class="scenario">
+    <g id="node45" class="scenario">
         <circle cx="308.4900218" cy="40.98818472" r="10.8" class="node"/>
         <text x="292.67" y="36.673639">45</text>
     </g>
-    <g id="node49" data-id="49" class="scenario">
+    <g id="node49" class="scenario">
         <circle cx="335.1236586" cy="86.66409628" r="10.8" class="node"/>
         <text x="319.27638" y="82.69546">49</text>
     </g>
-    <g id="node50" data-id="50" class="scenario">
+    <g id="node50" class="scenario">
         <circle cx="283.3491094" cy="87.02364176" r="10.8" class="node"/>
         <text x="267.50184" y="82.69546">50</text>
         <text x="270" y="82.69546" class="blocked">×</text>
     </g>
-    <g id="node29" data-id="29" class="scenario">
+    <g id="node29" class="scenario">
         <circle cx="106" cy="495.1077616" r="10.8" class="node"/>
         <text x="90.5" y="491.1391">29</text>
     </g>
@@ -455,7 +455,7 @@
         <path class="arrow"
               d="M 343.2796425 150.2900106 L 338.2460058 152.806829 L 339.5044149 150.2900106 L 338.2460058 147.7731923 L 343.2796425 150.2900106 Z"/>
     </g>
-    <g id="node37" data-id="37" class="scenario">
+    <g id="node37" class="scenario">
         <circle cx="317.8382043" cy="150.2900106" r="10.8" class="node"/>
         <text x="302.5" y="145.97545">37</text>
         <text x="302" y="145.97545" class="required">*</text>
@@ -470,7 +470,7 @@
         <path class="arrow"
               d="M 345.5807336 209.7156876 L 343.0423425 214.7349425 L 342.5533606 211.9664423 L 340.0365423 210.6936513 L 345.5807336 209.7156876 Z"/>
     </g>
-    <g id="node38" data-id="38" class="scenario">
+    <g id="node38" class="scenario">
         <circle cx="317.8382043" cy="238.7381987" r="10.8" class="node"/>
         <text x="302.5" y="234.42365">38</text>
     </g>
@@ -485,11 +485,11 @@
         <path class="arrow"
               d="M 184.1735767 349.4782066 L 189.2072134 346.9613882 L 187.9488042 349.4782066 L 189.2072134 351.9950249 L 184.1735767 349.4782066 Z"/>
     </g>
-    <g id="node39" data-id="39" class="scenario">
+    <g id="node39" class="scenario">
         <circle cx="317.1191134" cy="297.7036574" r="10.8" class="node"/>
         <text x="301.7" y="293.3891">39</text>
     </g>
-    <g id="node15" data-id="15" class="scenario">
+    <g id="node15" class="scenario">
         <circle cx="183.3681948" cy="349.4782066" r="10.8" class="node"/>
         <text x="169" y="345.16365">15</text>
     </g>
@@ -503,7 +503,7 @@
         <path class="arrow"
               d="M 106.511753 495.094126 L 111.5453897 492.5773076 L 110.2869805 495.094126 L 111.5453897 497.6109443 L 106.511753 495.094126 Z"/>
     </g>
-    <g id="node23" data-id="23" class="scenario">
+    <g id="node23" class="scenario">
         <circle cx="202.0645598" cy="222.1991066" r="10.8" class="node"/>
         <text x="187" y="217.88455">23</text>
     </g>
@@ -512,20 +512,20 @@
         <path class="arrow"
               d="M 391.0991913 239.5579624 L 386.0152182 241.9597262 L 387.3239638 239.4716715 L 386.1230819 236.9260895 L 391.0991913 239.5579624 Z"/>
     </g>
-    <g id="node48" data-id="48" class="scenario">
+    <g id="node48" class="scenario">
         <circle cx="365.6850244" cy="238.7518343" r="10.8" class="node"/>
         <text x="350.1973" y="234.42365">48</text>
     </g>
-    <g id="node44" data-id="44" class="scenario">
+    <g id="node44" class="scenario">
         <circle cx="366.0172986" cy="202.7836507" r="10.8" class="node"/>
         <text x="350.1973" y="198.4691">44</text>
     </g>
-    <g id="node51" data-id="51" class="scenario">
+    <g id="node51" class="scenario">
         <circle cx="413.5045732" cy="239.8304708" r="10.8" class="node"/>
         <text x="398.5" y="235.86183">51</text>
         <text x="397.6573" y="235.86183" class="required">*</text>
     </g>
-    <g id="node46" data-id="46" class="scenario">
+    <g id="node46" class="scenario">
         <circle cx="365.6850244" cy="297.717293" r="10.8" class="node"/>
         <text x="350.1973" y="293.3891">46</text>
     </g>
@@ -534,15 +534,15 @@
         <path class="arrow"
               d="M 402.6909376 228.5846344 L 400.1741192 223.5509976 L 402.6909376 224.8094068 L 405.207756 223.5509976 L 402.6909376 228.5846344 Z"/>
     </g>
-    <g id="node47" data-id="47" class="scenario">
+    <g id="node47" class="scenario">
         <circle cx="365.6850244" cy="150.3036462" r="10.8" class="node"/>
         <text x="350.1973" y="145.97545">47</text>
     </g>
-    <g id="node16" data-id="16" class="scenario">
+    <g id="node16" class="scenario">
         <circle cx="284.7600202" cy="456.6227596" r="10.8" class="node"/>
         <text x="270.5" y="452.3082">16</text>
     </g>
-    <g id="node24" data-id="24" class="scenario">
+    <g id="node24" class="scenario">
         <circle cx="284.7600202" cy="535" r="10.8" class="node"/>
         <text x="269.4" y="530.6891">24</text>
     </g>
@@ -551,7 +551,7 @@
         <path class="arrow"
               d="M 273.9736558 523.411928 L 271.4568374 518.3782912 L 273.9736558 519.6367004 L 276.4904741 518.3782912 L 273.9736558 523.411928 Z"/>
     </g>
-    <g id="node25" data-id="25" class="scenario">
+    <g id="node25" class="scenario">
         <circle cx="284.7600202" cy="399.0954828" r="10.8" class="node"/>
         <text x="269.4" y="394.7809">25</text>
     </g>
@@ -560,7 +560,7 @@
         <path class="arrow"
               d="M 273.9736558 410.3276836 L 276.4904741 415.3613203 L 273.9736558 414.1029111 L 271.4568374 415.3613203 L 273.9736558 410.3276836 Z"/>
     </g>
-    <g id="node30" data-id="30" class="scenario">
+    <g id="node30" class="scenario">
         <circle cx="319.2763862" cy="567.3627674" r="10.8" class="node"/>
         <text x="304" y="563.0482">30</text>
     </g>
@@ -569,7 +569,7 @@
         <path class="arrow"
               d="M 300.0335122 559.4311942 L 294.6475209 557.8060486 L 297.2937756 556.8424667 L 298.1063484 554.1458756 L 300.0335122 559.4311942 Z"/>
     </g>
-    <g id="node32" data-id="32" class="scenario">
+    <g id="node32" class="scenario">
         <circle cx="319.2763862" cy="494.7345805" r="10.8" class="node"/>
         <text x="304" y="490.42">32</text>
     </g>
@@ -578,7 +578,7 @@
         <path class="arrow"
               d="M 300.9467577 503.1767084 L 299.6092485 508.6417996 L 298.5090393 506.0530722 L 295.7764937 505.3843176 L 300.9467577 503.1767084 Z"/>
     </g>
-    <g id="node42" data-id="42" class="scenario">
+    <g id="node42" class="scenario">
         <circle cx="371.7972975" cy="567.376403" r="10.8" class="node"/>
         <text x="355.94999" y="563.0482">42</text>
         <text x="358" y="563.0482" class="blocked">×</text>
@@ -588,7 +588,7 @@
         <path class="arrow"
               d="M 349.3919156 567.3627674 L 344.3582789 569.8795858 L 345.6166881 567.3627674 L 344.3582789 564.8459491 L 349.3919156 567.3627674 Z"/>
     </g>
-    <g id="node40" data-id="40" class="scenario">
+    <g id="node40" class="scenario">
         <circle cx="371.7700263" cy="494.7345805" r="10.8" class="node"/>
         <text x="356.5" y="490.42">40</text>
         <text x="355.94999" y="490.42" class="required">*</text>
@@ -598,7 +598,7 @@
         <path class="arrow"
               d="M 349.3919156 494.375035 L 344.3582789 496.8918534 L 345.6166881 494.375035 L 344.3582789 491.8582166 L 349.3919156 494.375035 Z"/>
     </g>
-    <g id="node33" data-id="33" class="scenario">
+    <g id="node33" class="scenario">
         <circle cx="344.4445698" cy="458.0609415" r="10.8" class="node"/>
         <text x="329" y="453.7464">33</text>
         <text x="331" y="453.7464" class="blocked">×</text>
@@ -613,7 +613,7 @@
         <path class="arrow"
               d="M 325.3311321 466.4814967 L 323.6484593 471.8531061 L 322.713641 469.1996605 L 320.0314317 468.3583241 L 325.3311321 466.4814967 Z"/>
     </g>
-    <g id="node41" data-id="41" class="scenario">
+    <g id="node41" class="scenario">
         <circle cx="371.7972975" cy="535.7364008" r="10.8" class="node"/>
         <text x="357" y="531.4082">41</text>
         <text x="358" y="531.4082" class="blocked">×</text>
@@ -623,7 +623,7 @@
         <path class="arrow"
               d="M 360.9836619 524.1310189 L 358.4668436 519.0973822 L 360.9836619 520.3557914 L 363.5004803 519.0973822 L 360.9836619 524.1310189 Z"/>
     </g>
-    <g id="node34" data-id="34" class="scenario">
+    <g id="node34" class="scenario">
         <circle cx="341.5954772" cy="398.7495729" r="10.8" class="node"/>
         <text x="326" y="394.7809">34</text>
         <text x="328" y="394.7809" class="blocked">×</text>
@@ -642,5 +642,247 @@
         <path class="line" d="M 183.9722312 274.4194922 L 154.2881564 236.242953"/>
         <path class="arrow"
               d="M 151.9654926 233.2587256 L 157.0422748 235.689253 L 154.2881564 236.2429531 L 153.0728927 238.7813442 L 151.9654926 233.2587256 Z"/>
+    </g>
+    <g>
+        <!--chapter11-->
+        <rect opacity="0.7" fill="#111" stroke="#000" ry="10" rx="10" y="610" x="7.279667" height="124" width="172"/>
+        <text y="727.999908" x="111" class="label">Personal Quests</text>
+        <g id="node52" class="scenario">
+            <circle cx="37.39273" cy="630" r="10.8" class="node"/>
+            <text x="22" y="626">52</text>
+        </g>
+        <g id="edge52-53" class="edge edge52">
+            <path class="line" d="m26.24682,640.8l0,19"/>
+            <path class="arrow"
+                  d="m26.24682,660.75237l-2.51682,-5.03364l2.51682,2.25841l2.51682,-2.25841l-2.51682,5.03364z"/>
+        </g>
+        <g id="node53" class="scenario">
+            <circle cx="37.39273" cy="672.218729" r="10.8" class="node"/>
+            <text x="22" y="668.218729">53</text>
+        </g>
+        <g id="edge53-54" class="edge edge53">
+            <path class="line" d="m25.746827,683l0,19"/>
+            <path class="arrow" d="m25.746827,703l-2.51682,-5l2.51682,3l2.51682,-3l-2.51682,5z"/>
+        </g>
+        <g id="node54" class="scenario">
+            <circle cx="36.892737" cy="714.5" r="10.8" class="node"/>
+            <text x="21.500007" y="710.5">54</text>
+        </g>
+        <g id="node55" class="scenario">
+            <circle cx="70.069538" cy="630" r="10.8" class="node"/>
+            <text x="54.676808" y="626">55</text>
+        </g>
+        <g id="edge55-56" class="edge edge55">
+            <path class="line" d="m58.92363,640.8l0,19"/>
+            <path class="arrow"
+                  d="m58.92363,660.75237l-2.51682,-5.03364l2.51682,2.25841l2.51682,-2.25841l-2.51682,5.03364z"/>
+        </g>
+        <g id="node56" class="scenario">
+            <circle cx="70.069538" cy="672.218729" r="10.8" class="node"/>
+            <text x="54.676808" y="668.218729">56</text>
+        </g>
+        <g id="node57" class="scenario">
+            <circle cx="103.085922" cy="630" r="10.8" class="node"/>
+            <text x="87.693192" y="626">57</text>
+        </g>
+        <g id="edge57-58" class="edge edge57">
+            <path class="line" d="m91.94001,640.8l0,19"/>
+            <path class="arrow"
+                  d="m91.94001,660.75237l-2.51682,-5.03364l2.51682,2.25841l2.51682,-2.25841l-2.51682,5.03364z"/>
+        </g>
+        <g id="node58" class="scenario">
+            <circle cx="103.085922" cy="672.218729" r="10.8" class="node"/>
+            <text x="87.693192" y="668.218729">58</text>
+        </g>
+        <g id="node59" class="scenario">
+            <circle cx="135.802798" cy="630" r="10.8" class="node"/>
+            <text x="120.410068" y="626">59</text>
+        </g>
+        <g id="edge59-60" class="edge edge59">
+            <path class="line" d="m124.65689,640.8l0,19"/>
+            <path class="arrow"
+                  d="m124.65689,660.75237l-2.51682,-5.03364l2.51682,2.25841l2.51682,-2.25841l-2.51682,5.03364z"/>
+        </g>
+        <g id="node60" class="scenario">
+            <circle cx="135.802798" cy="672.218729" r="10.8" class="node"/>
+            <text x="120.410068" y="668.218729">60</text>
+        </g>
+        <g id="node61" class="scenario">
+            <circle cx="168.61267" cy="630" r="10.8" class="node"/>
+            <text x="154" y="626">61</text>
+        </g>
+        <g id="edge61-62" class="edge edge61">
+            <path class="line" d="m157.46676,640.8l0,19"/>
+            <path class="arrow"
+                  d="m157.46676,660.75237l-2.51682,-5.03364l2.51682,2.25841l2.51682,-2.25841l-2.51682,5.03364z"/>
+        </g>
+        <g id="node62" class="scenario">
+            <circle cx="168.61267" cy="672.218729" r="10.8" class="node"/>
+            <text x="153.219941" y="668.218729">62</text>
+        </g>
+    </g>
+    <g>
+        <!--chapter12-->
+        <rect stroke="#000" width="172" height="87.14994" x="207.776065" y="609.60058" rx="10" ry="10" fill="#111"
+              opacity="0.7"/>
+        <text class="label" x="305" y="690.489558">Random Scenarios</text>
+        <g id="node63" class="scenario">
+            <circle cx="238.513976" cy="630.516895" r="10.8" class="node"/>
+            <text x="223.121246" y="626.516895">63</text>
+        </g>
+        <g id="node68" class="scenario">
+            <circle cx="238.513976" cy="663.06484" r="10.8" class="node"/>
+            <text x="223.121246" y="659.06484">68</text>
+        </g>
+        <g id="node64" class="scenario">
+            <circle cx="271.190784" cy="630.999987" r="10.8" class="node"/>
+            <text x="255.798054" y="626.999987">64</text>
+        </g>
+        <g id="node69" class="scenario">
+            <circle cx="271.190784" cy="663.06484" r="10.8" class="node"/>
+            <text x="255.798054" y="659.06484">69</text>
+        </g>
+        <g id="node65" class="scenario">
+            <circle cx="304.207168" cy="630.999987" r="10.8" class="node"/>
+            <text x="288.814438" y="626.999987">65</text>
+        </g>
+        <g id="node70" class="scenario">
+            <circle cx="304.207168" cy="662.581748" r="10.8" class="node"/>
+            <text x="288.814438" y="658.581748">70</text>
+        </g>
+        <g id="node66" class="scenario">
+            <circle cx="336.924044" cy="630.999987" r="10.8" class="node"/>
+            <text x="321.531314" y="626.999987">66</text>
+        </g>
+        <g id="node71" class="scenario">
+            <circle cx="336.924044" cy="663.06484" r="10.8" class="node"/>
+            <text x="323" y="659.06484">71</text>
+        </g>
+        <g id="node67" class="scenario">
+            <circle cx="369.733916" cy="630.999987" r="10.8" class="node"/>
+            <text x="355.121246" y="626.999987">67</text>
+        </g>
+    </g>
+    <g>
+        <!--chapter14-->
+        <rect stroke="#000" width="137.103769" height="54.983941" x="9.061485" y="819.849663" rx="10" ry="10"
+              fill="#111" opacity="0.7"/>
+        <text class="label" x="19.000013" y="868.510082">Road Events</text>
+        <g id="node80" class="scenario">
+            <circle cx="37.51274" cy="839.645697" r="10.8" class="node"/>
+            <text x="22.12001" y="835.645697">80</text>
+        </g>
+        <g id="node82" class="scenario">
+            <circle cx="70.189548" cy="840.128789" r="10.8" class="node"/>
+            <text x="54.796818" y="836.128789">82</text>
+        </g>
+        <g id="node85" class="scenario">
+            <circle cx="103.205932" cy="840.128789" r="10.8" class="node"/>
+            <text x="87.813202" y="836.128789">85</text>
+        </g>
+        <g id="node90" class="scenario">
+            <circle cx="135.922808" cy="840.128789" r="10.8" class="node"/>
+            <text x="120.530078" y="836.128789">90</text>
+        </g>
+    </g>
+    <g>
+        <!--chapter13-->
+        <rect stroke="#000" width="172" height="55.483939" x="7.910828" y="749.117152" rx="10" ry="10" fill="#111"
+              opacity="0.7"/>
+        <text class="label" x="17.498748" y="799.054016">Sealed</text>
+        <g id="node72" class="scenario">
+            <circle cx="37.51274" cy="768.617537" r="10.8" class="node"/>
+            <text x="22.5" y="764.617537">72</text>
+        </g>
+        <g id="node73" class="scenario">
+            <circle cx="70.189548" cy="769.100629" r="10.8" class="node"/>
+            <text x="54.796818" y="765.100629">73</text>
+        </g>
+        <g id="node76" class="scenario">
+            <circle cx="103.205932" cy="769.100629" r="10.8" class="node"/>
+            <text x="87.813202" y="765.100629">76</text>
+        </g>
+        <g id="node77" class="scenario">
+            <circle cx="135.922808" cy="769.100629" r="10.8" class="node"/>
+            <text x="121" y="765.100629">77</text>
+        </g>
+        <g id="node84" class="scenario">
+            <circle cx="168.73268" cy="769.100629" r="10.8" class="node"/>
+            <text x="153.5" y="765.100629">84</text>
+        </g>
+    </g>
+    <g>
+        <!--chapter15-->
+        <rect width="172" height="141.744948" x="207.776065" y="711.520852" rx="10" ry="10" fill="#111" opacity="0.7"
+              stroke="#000"/>
+        <text class="label" x="332.396494" y="849.26465">City Events</text>
+        <g id="node74" class="scenario">
+            <circle cx="238.513976" cy="729.020593" r="10.8" class="node"/>
+            <text x="223.121246" y="725.020593">74</text>
+        </g>
+        <g id="node75" class="scenario">
+            <circle cx="271.190784" cy="729.503685" r="10.8" class="node"/>
+            <text x="255.798054" y="725.503685">75</text>
+        </g>
+        <g id="node83" class="scenario">
+            <circle cx="238.513976" cy="761.27313" r="10.8" class="node"/>
+            <text x="223.121246" y="757.568539">83</text>
+        </g>
+        <g id="node88" class="scenario">
+            <circle cx="271.190784" cy="761.568539" r="10.8" class="node"/>
+            <text x="255.798054" y="757.568539">88</text>
+        </g>
+        <g id="node78" class="scenario">
+            <circle cx="304.207168" cy="729.503685" r="10.8" class="node"/>
+            <text x="288.814438" y="725.503685">78</text>
+        </g>
+        <g id="node89" class="scenario">
+            <circle cx="304.207168" cy="761.085447" r="10.8" class="node"/>
+            <text x="288.814438" y="757.085447">89</text>
+        </g>
+        <g id="node79" class="scenario">
+            <circle cx="336.924044" cy="729.503685" r="10.8" class="node"/>
+            <text x="322" y="725.503685">79</text>
+        </g>
+        <g class="scenario" id="node91">
+            <circle cx="336.924044" cy="761.568539" r="10.8" class="node"/>
+            <text x="321.531314" y="757.568539">91</text>
+        </g>
+        <g class="scenario" id="node81">
+            <circle cx="369.733916" cy="729.503685" r="10.8" class="node"/>
+            <text x="355" y="725.503685">81</text>
+        </g>
+        <g class="scenario" id="node92">
+            <circle cx="369.673471" cy="761.80161" r="10.8" class="node"/>
+            <text x="354.280741" y="757.80161">92</text>
+        </g>
+        <g class="edge edge86" id="edge86-87">
+            <path class="line" d="m227.63663,804.38177l0,19"/>
+            <path class="arrow" d="m227.63663,824.38177l-2.51682,-5l2.51682,3l2.51682,-3l-2.51682,5z"/>
+        </g>
+        <g class="scenario" id="node86">
+            <circle cx="238.513976" cy="793.814358" r="10.8" class="node"/>
+            <text x="223.121246" y="789.814358">86</text>
+        </g>
+        <g class="scenario" id="node87">
+            <circle cx="238.782534" cy="835.881771" r="10.8" class="node"/>
+            <text x="223.121246" y="831.881771">87</text>
+        </g>
+        <g class="edge edge94" id="edge94-95">
+            <path class="line" d="m260.893706,804.38177l0,19"/>
+            <path class="arrow" d="m260.893706,824.38177l-2.51682,-5l2.51682,3l2.51682,-3l-2.51682,5z"/>
+        </g>
+        <g class="scenario" id="node94">
+            <circle cx="271.521534" cy="793.814358" r="10.8" class="node"/>
+            <text x="255.798054" y="789.814358">94</text>
+        </g>
+        <g class="scenario" id="node95">
+            <circle cx="271.290405" cy="835.881771" r="10.8" class="node"/>
+            <text x="255.798054" y="831.881771">95</text>
+        </g>
+        <g class="scenario" id="node93">
+            <circle cx="304.207168" cy="794.084078" r="10.8" class="node"/>
+            <text x="288.814438" y="789.814358">93</text>
+        </g>
     </g>
 </svg>

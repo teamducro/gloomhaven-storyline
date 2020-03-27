@@ -26,7 +26,7 @@ export default class ScenarioValidator {
                 scenario.state = ScenarioState.incomplete;
             }
         } else {
-            if (states.has(ScenarioState.complete) === false && scenario.id !== 1 && !unlocked) {
+            if (states.has(ScenarioState.complete) === false && !scenario.is_side && scenario.id !== 1 && !unlocked) {
                 scenario.state = ScenarioState.hidden;
             }
         }
@@ -87,7 +87,7 @@ export default class ScenarioValidator {
                     scenario.state = ScenarioState.incomplete;
                 }
             } else {
-                if (states.has(ScenarioState.complete) === false && this.linkedStates(scenario).has(ScenarioState.complete)) {
+                if (states.has(ScenarioState.complete) === false && (this.linkedStates(scenario).has(ScenarioState.complete) || (scenario.is_side && scenario.isVisible()))) {
                     scenario.state = ScenarioState.required;
                 }
             }

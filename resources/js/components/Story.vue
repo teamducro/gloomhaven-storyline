@@ -1,7 +1,9 @@
 <template>
-    <div class="w-screen">
+    <div id="storyline-container" class="w-screen">
         <inline-svg
-                name="storyline"
+                v-if="isPortrait !== null"
+                :key="storylineKey"
+                :name="storylineFile"
                 id="storyline"
                 :classes="['h-screen', 'w-screen']"
         />
@@ -17,41 +19,79 @@
     export default {
         data() {
             return {
-                scenarioRepository: new ScenarioRepository()
+                scenarioRepository: new ScenarioRepository(),
+                isPortrait: null,
+                zoom: null,
+                storylineKey: 1
             }
         },
         mounted() {
-            this.render();
             this.$bus.$on('scenarios-updated', () => {
                 this.render();
             });
 
-            zoom('#storyline');
-
-            $('.scenario').on('click', (e) => {
-                this.open($(e.currentTarget).data('id'));
+            $('#storyline-container').on('click', '.scenario', (e) => {
+                let id = parseInt($(e.currentTarget).attr('id').replace('node', ''));
+                this.open(id);
             });
+
+            this.$bus.$on('orientation-changed', (isPortrait) => {
+                if (this.isPortrait !== isPortrait) {
+                    this.isPortrait = isPortrait;
+                    this.rerender();
+                }
+            });
+        },
+        computed: {
+            storylineFile() {
+                return 'storyline-' + (this.isPortrait ? 'portrait' : 'landscape');
+            }
         },
         methods: {
             render() {
-                if (app.scenarios) {
+                if (app.scenarios && this.isPortrait !== null) {
                     this.renderScenarios();
                     this.renderChapters();
                 } else {
                     $('.scenario, .edge, .chapter').hide();
                 }
             },
+            rerender() {
+                if (this.zoom) {
+                    this.zoom.destroy();
+                }
+                this.storylineKey++;
+                this.$nextTick(() => {
+                    this.zoom = zoom('#storyline');
+                    this.render();
+                });
+            },
             renderScenarios() {
                 app.scenarios.each((scenario) => {
                     let $node = $('#node' + scenario.id);
+
+                    if (!$node.length) {
+                        return;
+                    }
+
                     let $edges = $('.edge' + scenario.id);
                     $edges.hide();
 
                     if (scenario.isHidden()) {
                         $node.hide();
-                    } else {
+                    }
+
+                    if (scenario.isVisible() || scenario.is_side) {
                         $node.show();
                         $node.attr('stroke-width', scenario.isComplete() ? 2 : 1);
+
+                        if (scenario.is_side) {
+                            if (scenario.isHidden()) {
+                                $node.addClass('opacity-50');
+                            } else {
+                                $node.removeClass('opacity-50');
+                            }
+                        }
 
                         if (scenario.isBlocked()) {
                             $node.find('.blocked').show();
@@ -75,7 +115,7 @@
                     }
 
                     // Show tooltip on hover
-                    if (app.hasMouse && !$node.hasClass('tippy')) {
+                    if (app.hasMouse && scenario.isVisible() && !$node.hasClass('tippy')) {
                         tippy($node[0], {
                             content: scenario.title
                         });
@@ -84,16 +124,16 @@
                 });
             },
             renderChapters() {
-                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].forEach((chapter_id) => {
-                    let unlocked = app.scenarios.where('chapter_id', chapter_id).where('state', '!=', ScenarioState.hidden).count();
-                    let $chapter = $('#chapter' + chapter_id);
+                for (let id = 1; id <= 16; id++) {
+                    let unlocked = app.scenarios.where('chapter_id', id).where('state', '!=', ScenarioState.hidden).count();
+                    let $chapter = $('#chapter' + id);
 
                     if (unlocked) {
                         $chapter.show();
                     } else {
                         $chapter.hide();
                     }
-                });
+                }
             },
             open(id) {
                 this.$bus.$emit('open-scenario', {

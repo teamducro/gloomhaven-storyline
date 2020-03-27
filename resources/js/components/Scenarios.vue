@@ -46,9 +46,13 @@
                         {{ scenario.name }}
                     </span>
                 </template>
+                <template v-else-if="scenario.is_side">
+                    <span class="mdc-list-item__text pl-28">
+                        #{{ scenario.id }}
+                    </span>
+                </template>
                 <template v-else>
-                    <span class="mdc-list-item__text opacity-50 pl-28"
-                          @click="open(scenario)">
+                    <span class="mdc-list-item__text opacity-50 pl-28">
                         #{{ scenario.id }}
                     </span>
                 </template>
@@ -94,7 +98,7 @@
                 });
             },
             open(scenario) {
-                if (scenario.isVisible()) {
+                if (scenario.isVisible() || scenario.is_side) {
                     this.$bus.$emit('open-scenario', {
                         id: scenario.id
                     });
