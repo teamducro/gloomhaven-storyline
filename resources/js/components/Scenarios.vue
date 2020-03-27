@@ -81,9 +81,10 @@
                 this.setScenarios();
             }
 
-            this.$bus.$on('scenarios-updated', () => {
-                this.setScenarios();
-            });
+            this.$bus.$on('scenarios-updated', this.setScenarios);
+        },
+        destroyed() {
+            this.$bus.$off('scenarios-updated', this.setScenarios);
         },
         methods: {
             setScenarios() {
