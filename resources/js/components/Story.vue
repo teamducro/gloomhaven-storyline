@@ -26,9 +26,13 @@
             }
         },
         mounted() {
-            if (app.isPortrait !== null) {
+            if (app.isPortrait !== undefined) {
                 this.isPortrait = app.isPortrait;
+                this.$nextTick(() => {
+                    this.render();
+                });
             }
+            
             this.$bus.$on('scenarios-updated', () => {
                 this.render();
             });
@@ -44,10 +48,6 @@
                     this.rerender();
                 }
             });
-
-            this.$nextTick(() => {
-                this.render();
-            })
         },
         computed: {
             storylineFile() {
