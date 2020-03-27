@@ -32,22 +32,18 @@
                     this.render();
                 });
             }
-            
-            this.$bus.$on('scenarios-updated', () => {
-                this.render();
-            });
 
-            $('#storyline-container').on('click', '.scenario', (e) => {
-                let id = parseInt($(e.currentTarget).attr('id').replace('node', ''));
-                this.open(id);
-            });
-
-            this.$bus.$on('orientation-changed', (isPortrait) => {
-                if (this.isPortrait !== isPortrait) {
-                    this.isPortrait = isPortrait;
-                    this.rerender();
-                }
-            });
+            $('#storyline-container').on('click', '.scenario', this.scenarioClicked);
+            this.$bus.$on('scenarios-updated', this.render);
+            this.$bus.$on('orientation-changed', this.orientationChanged);
+        },
+        destroyed() {
+            if (this.zoom) {
+                this.zoom.destroy();
+            }
+            $('#storyline-container').off('click', '.scenario', this.scenarioClicked);
+            this.$bus.$off('scenarios-updated', this.render);
+            this.$bus.$off('orientation-changed', this.orientationChanged);
         },
         computed: {
             storylineFile() {
@@ -141,6 +137,16 @@
                         $chapter.hide();
                     }
                 }
+            },
+            orientationChanged(isPortrait) {
+                if (this.isPortrait !== isPortrait) {
+                    this.isPortrait = isPortrait;
+                    this.rerender();
+                }
+            },
+            scenarioClicked(e) {
+                let id = parseInt($(e.currentTarget).attr('id').replace('node', ''));
+                this.open(id);
             },
             open(id) {
                 this.$bus.$emit('open-scenario', {
