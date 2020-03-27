@@ -5,7 +5,7 @@ import QuestValidator from "./QuestValidator";
 export default class ScenarioValidator {
 
     validate() {
-        [1, 2].forEach(() => {
+        [1, 2, 3, 4].forEach(() => {
             app.scenarios.each((scenario) => {
                 this.checkHidden(scenario);
                 this.checkChoice(scenario);
