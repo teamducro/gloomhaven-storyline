@@ -47,6 +47,14 @@
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
                         <li>
+                            <a class="mdc-list-item" @click="$bus.$emit('open-about-us-modal')">
+                                <i class="material-icons mdc-list-item__graphic"
+                                   aria-hidden="true">supervisor_account</i>
+                                <span class="mdc-list-item__text">Our party</span>
+                            </a>
+                        </li>
+
+                        <li>
                             <a class="mdc-list-item" target="_blank"
                                href="https://github.com/dducro/gloomhaven-storyline">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">code</i>

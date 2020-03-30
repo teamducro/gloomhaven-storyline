@@ -55,9 +55,7 @@
             }
         },
         mounted() {
-            this.$bus.$on('open-share-modal', () => {
-                this.open();
-            });
+            this.$bus.$on('open-share-modal', this.open);
         },
         methods: {
             open() {
