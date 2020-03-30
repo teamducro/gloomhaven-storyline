@@ -84,6 +84,9 @@
             this.$bus.$on('scenarios-updated', this.setScenarios);
         },
         destroyed() {
+            if (this.list) {
+                this.list.destroy();
+            }
             this.$bus.$off('scenarios-updated', this.setScenarios);
         },
         methods: {

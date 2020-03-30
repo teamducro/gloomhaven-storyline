@@ -21,9 +21,7 @@
             return {}
         },
         mounted() {
-            this.$bus.$on('open-reset-modal', () => {
-                this.open();
-            });
+            this.$bus.$on('open-reset-modal', this.open);
         },
         methods: {
             open() {
