@@ -104,6 +104,10 @@ export default class Scenario {
         return this.isComplete() && this.treasures.count() > this.unlockedTreasures.length;
     }
 
+    image() {
+        return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
+    }
+
     store() {
         window.localStorage.setItem(this.key(), JSON.stringify({
             "state": this.state,

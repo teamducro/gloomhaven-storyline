@@ -6,7 +6,7 @@
                      :class="{'pb-2': scenario.regions, 'pb-4': !scenario.regions}">
                     <h2 class="mdc-dialog__title p-0 leading-none">{{ scenario.isVisible() ? scenario.name :
                         '#' + scenario.id }}
-                        <span class="text-sm text-white2-50">{{ scenario.coordinates }}</span>
+                        <span class="text-sm text-white2-50">{{ scenario.coordinates.name }}</span>
                         <button type="button" data-mdc-dialog-action="close"
                                 class="mdc-button absolute right-0 top-0 mt-4">
                             <i class="material-icons">close</i>
@@ -37,7 +37,7 @@
                         ></radio>
                         <div v-if="scenario.isVisible()"
                              class="hidden xs:block ml-auto w-20">
-                            <webp :src="'/img/scenarios/' + scenario.id + '.png'"
+                            <webp :src="scenario.image()"
                                   :animate="true"
                                   :alt="scenario.name"></webp>
                         </div>
@@ -105,7 +105,7 @@
                                 <span class="mdc-button__label">Pages</span>
                             </button>
                             <div class="xs:hidden ml-auto w-20">
-                                <webp :src="'/img/scenarios/' + scenario.id + '.png'"
+                                <webp :src="scenario.image()"
                                       :animate="true"
                                       :alt="scenario.name"></webp>
                             </div>

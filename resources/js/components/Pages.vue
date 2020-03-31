@@ -31,8 +31,7 @@
             }
         },
         mounted() {
-            const page = document.querySelector('#page');
-            this.zoom = panzoom(page, {
+            this.zoom = panzoom(document.querySelector('#page'), {
                 minZoom: 1,
                 maxZoom: 3,
                 bounds: true
