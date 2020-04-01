@@ -36,7 +36,7 @@ describe('Storyline', () => {
             .should('have.css', 'display')
             .and('eq', 'none');
 
-        cy.visit('/?completed=1-2');
+        cy.visit('/?states=1_c-2_c');
 
         cy.get('#chapter2')
             .should('have.css', 'display')
@@ -44,7 +44,7 @@ describe('Storyline', () => {
     });
 
     it('It blocks blocked scenarios', () => {
-        cy.visit('/?completed=1-2-3-8');
+        cy.visit('/?states=1_c-2_c-3_c-8_c');
 
         isNodeBlocked(9);
         openScenario(9);
@@ -55,7 +55,7 @@ describe('Storyline', () => {
     });
 
     it('It blocks required scenarios', () => {
-        cy.visit('/?completed=1-2-3-8');
+        cy.visit('/?states=1_c-2_c-3_c-8_c');
 
         isNodeRequired(7);
         openScenario(7);
@@ -66,7 +66,7 @@ describe('Storyline', () => {
     });
 
     it('It unlocks required scenarios', () => {
-        cy.visit('/?completed=1-2-3-8');
+        cy.visit('/?states=1_c-2_c-3_c-8_c');
 
         isNodeRequired(7);
 
@@ -81,6 +81,21 @@ describe('Storyline', () => {
         cy.get('#complete')
             .should('not.have.attr', 'disabled');
         closeModel();
+    });
+
+    it('It can share side scenarios', () => {
+        cy.visit('/');
+
+        cy.get('#node52.opacity-50').should(($node) => {
+            expect($node).to.have.length(1);
+        });
+
+        cy.visit('/?states=52_i');
+
+        isNodeVisible(52);
+        cy.get('#node52.opacity-50').should(($node) => {
+            expect($node).to.have.length(0);
+        });
     });
 
     function isNodeVisible(id) {
