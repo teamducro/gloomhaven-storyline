@@ -1,23 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="420pt" viewBox="0 -60 610 668"
      style="width:100%;">
-    <style>
-        text { font-family: Arial, sans-serif; fill: #fff; }
-        text.label { font-family: 'Pirata One', 'Nyala', sans-serif; font-size: 10px; }
-
-        circle.node { fill: #000; stroke:#fff; transform: translate(-10.8px, 0); }
-        circle.node + text {
-        font-family: 'Pirata One', 'Nyala', sans-serif; font-size: 11px; transform: translate(0px, 9px);
-        }
-        circle.node ~ .blocked { font-size: 23px; transform: translate(-4px, 13px); }
-        circle.node ~ .required { font-size: 21px; transform: translate(-6px, 2px); }
-
-        .line { fill: none; }
-        .arrow { fill: #fff; }
-        .line, .arrow { stroke: #fff; }
-
-        .scenario { cursor: pointer; }
-    </style>
-
     <g id="chapter1" class="chapter">
         <rect width="40.84322" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>

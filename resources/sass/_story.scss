@@ -1,0 +1,49 @@
+svg {
+    text {
+        font-family: Arial, sans-serif;
+        fill: #fff;
+    }
+
+    text.label {
+        font-family: 'Pirata One', 'Nyala', sans-serif;
+        font-size: 10px;
+    }
+
+    circle.node {
+        fill: #000;
+        stroke: #fff;
+        transform: translate(-10.8px, 0);
+    }
+
+    circle.node + text {
+        font-family: 'Pirata One', 'Nyala', sans-serif;
+        font-size: 11px;
+        transform: translate(0px, 9px);
+    }
+
+    circle.node ~ .blocked {
+        font-size: 23px;
+        transform: translate(-4px, 13px);
+    }
+
+    circle.node ~ .required {
+        font-size: 21px;
+        transform: translate(-6px, 2px);
+    }
+
+    .line {
+        fill: none;
+    }
+
+    .arrow {
+        fill: #fff;
+    }
+
+    .line, .arrow {
+        stroke: #fff;
+    }
+
+    .scenario {
+        cursor: pointer;
+    }
+}
