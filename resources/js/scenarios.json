@@ -2280,9 +2280,7 @@
                 86
             ],
             "blocked_by": [],
-            "required_by": [
-                86
-            ],
+            "required_by": [],
             "quests": [],
             "treasures": {},
             "region_ids": [
