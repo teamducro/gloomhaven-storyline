@@ -867,6 +867,7 @@
         <g class="scenario" id="node87">
             <circle cx="238.782534" cy="835.881771" r="10.8" class="node"/>
             <text x="223.121246" y="831.881771">87</text>
+            <text x="223.121246" y="831.881771" class="required">*</text>
         </g>
         <g class="edge edge94" id="edge94-95">
             <path class="line" d="m260.893706,804.38177l0,19"/>
