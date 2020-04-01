@@ -2265,7 +2265,7 @@
             "id": 87,
             "name": "#87 Corrupted Cove",
             "coordinates": "I-9",
-            "is_side": false,
+            "is_side": true,
             "pages": [
                 110
             ],
