@@ -88,7 +88,10 @@
             ],
             "required_by": [],
             "quests": [
-                2
+                2,
+                6,
+                7,
+                8
             ],
             "treasures": {
                 "65": "\"Horned Helm\" design (Item 107)"
@@ -258,6 +261,7 @@
             ],
             "required_by": [],
             "quests": [
+                2,
                 6,
                 7
             ],
@@ -2613,7 +2617,7 @@
                 "x": 45.64,
                 "y": 55.32
             },
-            "is_side": false,
+            "is_side": true,
             "pages": [
                 110
             ],
@@ -2624,7 +2628,9 @@
                 86
             ],
             "blocked_by": [],
-            "required_by": [],
+            "required_by": [
+                86
+            ],
             "quests": [],
             "treasures": {},
             "region_ids": [

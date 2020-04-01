@@ -8,11 +8,11 @@ export default class ShareState {
     load() {
         let result = this.decode();
 
-        if (result.hasOwnProperty('completed')) {
+        if (result.hasOwnProperty('states')) {
             this.scenarioRepository.hideAllScenarios();
 
-            result.completed.each((id) => {
-                this.scenarioRepository.find(id).state = ScenarioState.complete;
+            result.states.each((state, id) => {
+                this.scenarioRepository.find(parseInt(id)).state = ScenarioState.make(state);
             });
 
             if (result.hasOwnProperty('choices')) {
@@ -39,12 +39,18 @@ export default class ShareState {
     }
 
     encode() {
-        let completed = app.scenarios.where('state', ScenarioState.complete);
         let result = {};
-        let completedString = completed.pluck('id').implode('-');
-        let choicesString = completed.where('hasChoices', true).pluck('choice', 'id').map((choice, id) => {
-            return id + '_' + choice
-        }).values().implode('-');
+
+        let statesString = app.scenarios.where('state', '!=', ScenarioState.hidden)
+            .pluck('state', 'id').map((state, id) => {
+                return id + '_' + state.substr(0, 1);
+            }).values().implode('-');
+
+        let choicesString = app.scenarios.where('state', ScenarioState.complete)
+            .where('hasChoices', true).pluck('choice', 'id').map((choice, id) => {
+                return id + '_' + choice
+            }).values().implode('-');
+
         let treasuresString = app.scenarios.pluck('unlockedTreasures', 'id').map((treasures, id) => {
             if (treasures.length) {
                 return id + '_' + treasures.join('_');
@@ -52,8 +58,8 @@ export default class ShareState {
             return false;
         }).filter().values().implode('-');
 
-        if (completedString) {
-            result.completed = completedString;
+        if (statesString) {
+            result.states = statesString;
         }
 
         if (choicesString) {
@@ -71,8 +77,11 @@ export default class ShareState {
         let parsed = queryString.parse(location.search);
         let result = {};
 
-        if (typeof parsed.completed !== 'undefined') {
-            result.completed = collect(parsed.completed.split('-')).map(id => parseInt(id));
+        if (typeof parsed.states !== 'undefined') {
+            result.states = collect(parsed.states.split('-')).mapWithKeys((state) => {
+                let parts = state.split('_');
+                return [parts[0], parts[1].substr(0, 1)];
+            });
         }
 
         if (typeof parsed.choices !== 'undefined') {

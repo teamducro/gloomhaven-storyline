@@ -7,6 +7,7 @@ import QuestRepository from "./repositories/QuestRepository";
 import VueRouter from 'vue-router'
 import Story from "./components/Story";
 import Scenarios from "./components/Scenarios";
+import VueAnalytics from 'vue-analytics';
 import Map from "./components/Map";
 
 window._ = require('lodash');
@@ -27,6 +28,11 @@ const routes = [
     {path: '/map', component: Map},
 ];
 const router = new VueRouter({routes});
+
+Vue.use(VueAnalytics, {
+    id: 'UA-162268349-1',
+    router
+});
 
 Vue.prototype.$bus = new Vue;
 Vue.use(VueRouter);

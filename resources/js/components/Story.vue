@@ -86,7 +86,10 @@
 
                     if (scenario.isVisible() || scenario.is_side) {
                         $node.show();
-                        $node.attr('stroke-width', scenario.isComplete() ? 2 : 1);
+                        $node.removeClass(ScenarioState.states().join(' '));
+                        if (scenario.isVisible()) {
+                            $node.addClass(scenario.state);
+                        }
 
                         if (scenario.is_side) {
                             if (scenario.isHidden()) {
@@ -120,7 +123,7 @@
                     // Show tooltip on hover
                     if (app.hasMouse && scenario.isVisible() && !$node.hasClass('tippy')) {
                         tippy($node[0], {
-                            content: scenario.title
+                            content: scenario.name
                         });
                         $node.addClass('tippy');
                     }
