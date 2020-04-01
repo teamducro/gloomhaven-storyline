@@ -1,7 +1,7 @@
-svg {
+#storyline {
     text {
         font-family: Arial, sans-serif;
-        fill: #fff;
+        fill: white;
     }
 
     text.label {
@@ -10,25 +10,39 @@ svg {
     }
 
     circle.node {
-        fill: #000;
-        stroke: #fff;
+        fill: black;
+        stroke: white;
         transform: translate(-10.8px, 0);
+
+        + text {
+            font-family: 'Pirata One', 'Nyala', sans-serif;
+            font-size: 11px;
+            transform: translate(0px, 9px);
+        }
+
+        ~ .blocked {
+            font-size: 16px;
+            transform: translate(-10px, -5px);
+        }
+
+        ~ .required {
+            font-size: 12px;
+            font-weight: bold;
+            transform: translate(-7px, -5px);
+        }
     }
 
-    circle.node + text {
-        font-family: 'Pirata One', 'Nyala', sans-serif;
-        font-size: 11px;
-        transform: translate(0px, 9px);
-    }
+    .scenario {
+        cursor: pointer;
+        position: relative;
 
-    circle.node ~ .blocked {
-        font-size: 23px;
-        transform: translate(-4px, 13px);
-    }
+        &.incomplete {
+            stroke-width: 2;
 
-    circle.node ~ .required {
-        font-size: 21px;
-        transform: translate(-6px, 2px);
+            circle.node {
+                fill: rgba(255, 255, 255, .2);
+            }
+        }
     }
 
     .line {
@@ -36,14 +50,10 @@ svg {
     }
 
     .arrow {
-        fill: #fff;
+        fill: white;
     }
 
     .line, .arrow {
-        stroke: #fff;
-    }
-
-    .scenario {
-        cursor: pointer;
+        stroke: white;
     }
 }
