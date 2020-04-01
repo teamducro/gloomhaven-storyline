@@ -6,7 +6,9 @@ The spoiler free storyline tracker for Gloomhaven
 
 Apart from the minor bugs and enhancements we consider these big features:
 
+* [ ] Map with scenario stickers
 * [ ] Translations
+* [ ] Solo scenarios
 * [ ] Support for Forgotten Circles
 * [ ] Support for Into the Unknown
 * [ ] Support for Capital Intrigue
