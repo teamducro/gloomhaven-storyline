@@ -22,6 +22,7 @@ module.exports = {
                 surface: '#111',
                 complete: '#3B8585',
                 incomplete: '#A13C2F',
+                required: '#E9A678',
                 'light-gray': '#E0E0E0',
                 black2: {
                     25: 'rgba(0, 0, 0, .25)',

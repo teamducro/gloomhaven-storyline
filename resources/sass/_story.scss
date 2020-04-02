@@ -40,7 +40,28 @@
             stroke-width: 2;
 
             circle.node {
-                fill: rgba(255, 255, 255, .2);
+                stroke: $complete;
+                fill: rgba(0, 100, 15, .3);
+            }
+        }
+
+        &.blocked {
+            circle.node {
+                stroke: $incomplete;
+
+                ~ .blocked {
+                    fill: $incomplete;
+                }
+            }
+        }
+
+        &.required {
+            circle.node {
+                stroke: $required;
+
+                ~ .required {
+                    fill: $required;
+                }
             }
         }
     }
