@@ -1,11 +1,10 @@
 #storyline {
     text {
-        font-family: Arial, sans-serif;
+        font-family: 'Pirata One', 'Nyala', sans-serif;
         fill: white;
     }
 
     text.label {
-        font-family: 'Pirata One', 'Nyala', sans-serif;
         font-size: 10px;
     }
 
@@ -22,6 +21,7 @@
 
         ~ .blocked {
             font-size: 16px;
+            font-family: Arial, sans-serif;
             transform: translate(-10px, -5px);
         }
 
