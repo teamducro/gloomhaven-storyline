@@ -9,7 +9,6 @@
         <rect width="215.8856" height="263.21188" x="7.7796607" y="327.39407" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="20" y="585">The Merchant</text>
-        <text class="label" x="112" y="515">Awaits</text>
     </g>
     <g id="chapter3" class="chapter">
         <rect width="160.13135" height="151.70338" x="5.8347459" y="7.1313553" rx="10" ry="10" stroke="#000"
@@ -720,6 +719,7 @@
         <g class="scenario" id="node64">
             <circle class="node" r="10.8" cy="174.999987" cx="494.190784"/>
             <text y="170.999987" x="478.798054">64</text>
+            <text x="478.798054" y="170.999987" class="required">!</text>
         </g>
         <g class="scenario" id="node69">
             <circle class="node" r="10.8" cy="207.06484" cx="494.190784"/>
@@ -814,6 +814,7 @@
         <g class="scenario" id="node88">
             <circle class="node" r="10.8" cy="435.568539" cx="494.190784"/>
             <text y="431.568539" x="478.798054">88</text>
+            <text x="478.798054" y="431.568539" class="required">!</text>
         </g>
         <g class="scenario" id="node78">
             <circle class="node" r="10.8" cy="403.503685" cx="527.207168"/>

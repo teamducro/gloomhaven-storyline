@@ -1,11 +1,10 @@
 #storyline {
     text {
-        font-family: Arial, sans-serif;
+        font-family: 'Pirata One', 'Nyala', sans-serif;
         fill: white;
     }
 
     text.label {
-        font-family: 'Pirata One', 'Nyala', sans-serif;
         font-size: 10px;
     }
 
@@ -22,6 +21,7 @@
 
         ~ .blocked {
             font-size: 16px;
+            font-family: Arial, sans-serif;
             transform: translate(-10px, -5px);
         }
 
@@ -40,7 +40,28 @@
             stroke-width: 2;
 
             circle.node {
-                fill: rgba(255, 255, 255, .2);
+                stroke: $complete;
+                fill: rgba(0, 100, 15, .3);
+            }
+        }
+
+        &.blocked {
+            circle.node {
+                stroke: $incomplete;
+
+                ~ .blocked {
+                    fill: $incomplete;
+                }
+            }
+        }
+
+        &.required {
+            circle.node {
+                stroke: $required;
+
+                ~ .required {
+                    fill: $required;
+                }
             }
         }
     }

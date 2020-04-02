@@ -18,6 +18,10 @@
                         class="mdc-list-item" @click="setRegionFilter(region.id)">
                         <span class="mdc-list-item__text">{{ region.name }}</span>
                     </li>
+                    <li v-for="state in states"
+                        class="mdc-list-item" @click="setStateFilter(state)">
+                        <span class="mdc-list-item__text capitalize">{{ state }}</span>
+                    </li>
                     <li class="mdc-list-item" @click="setMissedTreasuresFilter">
                         <span class="mdc-list-item__text">Missed Treasures</span>
                     </li>
@@ -64,6 +68,7 @@
 <script>
     import {MDCList} from "@material/list/component";
     import ScenarioRepository from "../repositories/ScenarioRepository";
+    import {ScenarioState} from "../models/ScenarioState";
 
     export default {
         data() {
@@ -72,6 +77,7 @@
                 scenarios: null,
                 regionFilter: null,
                 missedTreasuresFilter: null,
+                stateFilter: null,
                 filter: null,
                 scenarioRepository: new ScenarioRepository()
             }
@@ -88,6 +94,11 @@
                 this.list.destroy();
             }
             this.$bus.$off('scenarios-updated', this.setScenarios);
+        },
+        computed: {
+            states() {
+                return [ScenarioState.incomplete];
+            }
         },
         methods: {
             setScenarios() {
@@ -109,10 +120,12 @@
                 }
             },
             applyFilter(scenario) {
-                if (!this.regionFilter && !this.missedTreasuresFilter) {
+                if (!this.regionFilter && !this.missedTreasuresFilter && !this.stateFilter) {
                     return true;
                 } else if (this.regionFilter) {
                     return scenario.inRegion(this.regionFilter);
+                } else if (this.stateFilter) {
+                    return scenario.state === this.stateFilter;
                 } else if (this.missedTreasuresFilter) {
                     return scenario.missedTreasures();
                 }
@@ -125,9 +138,14 @@
                 this.resetFilter();
                 this.missedTreasuresFilter = true;
             },
+            setStateFilter(state) {
+                this.resetFilter();
+                this.stateFilter = state;
+            },
             resetFilter() {
                 this.regionFilter = null;
                 this.missedTreasuresFilter = null;
+                this.stateFilter = null;
             }
         }
     }

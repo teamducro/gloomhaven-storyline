@@ -1784,7 +1784,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "31": "Random Item Design"
+            },
             "region_ids": [
                 7
             ]
@@ -1810,7 +1812,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "25": "Gain 25 gold"
+            },
             "region_ids": [
                 5
             ]
@@ -1836,7 +1840,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "45": "Random Item Design"
+            },
             "region_ids": [
                 2
             ]
@@ -1888,7 +1894,10 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "3": "Gain \"Splintmail\" (Item 044)",
+                "22": "Random Item Design"
+            },
             "region_ids": [
                 1
             ]
@@ -2019,7 +2028,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "59": "Random Item Design"
+            },
             "region_ids": [
                 3
             ]
@@ -2043,7 +2054,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "12": "Gain \"Magma Waders\" (Item 099)"
+            },
             "region_ids": [
                 4
             ]
@@ -2069,7 +2082,9 @@
                 43
             ],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "9": "Gain \"Wave Crest\" (Item 111)"
+            },
             "region_ids": [
                 6
             ]
@@ -2119,7 +2134,10 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "16": "Gain 10 gold",
+                "36": "\"Rocket Boots\" design (Item 096)"
+            },
             "region_ids": [
                 5
             ]
@@ -2143,7 +2161,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "14": "Gain 10 Experience"
+            },
             "region_ids": [
             ]
         },
@@ -2166,7 +2186,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "33": "Gain \"Weighted Net\" (Item 019)"
+            },
             "region_ids": [
                 3
             ]
@@ -2214,7 +2236,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "6": "Gain \"Hooked Chain\" (Item 039)"
+            },
             "region_ids": [
                 6
             ]
@@ -2309,7 +2333,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "20": "Random Item Design"
+            },
             "region_ids": [
                 6
             ]
@@ -2333,7 +2359,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "53": "Random Item Design"
+            },
             "region_ids": [
             ]
         },
@@ -2357,7 +2385,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "75": "Cryptogram Found (See scenario book page 121)"
+            },
             "region_ids": [
                 4
             ]
@@ -2431,7 +2461,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "52": "Gain \"Heart of the Betrayer\" (Item 131)"
+            },
             "region_ids": [
                 3
             ]
@@ -2480,7 +2512,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "68": "Gain \"Helix Ring\" (Item 130)"
+            },
             "region_ids": [
                 2
             ]
@@ -2504,7 +2538,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "62": "Gain \"Helm of the Mountain\" and \"Mountain Hammer\" (Item 110 and 115)"
+            },
             "region_ids": [
                 4
             ]
@@ -2552,7 +2588,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "42": "Random Item Design"
+            },
             "region_ids": [
                 5
             ]
@@ -2628,11 +2666,11 @@
                 86
             ],
             "blocked_by": [],
-            "required_by": [
-                86
-            ],
+            "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "40": "Random Item Design"
+            },
             "region_ids": [
             ]
         },
@@ -2657,7 +2695,10 @@
                 43
             ],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "8": "Gain 1 ✔",
+                "37": "Gain 1 ✔"
+            },
             "region_ids": [
                 1
             ]
@@ -2681,7 +2722,11 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "13": "Suffer 5 Damage and gain POISON and WOUND",
+                "27": "Gain \"Orb of Twilight\" (Item 122)",
+                "43": "Suffer 5 damage gain POISON and WOUND"
+            },
             "region_ids": [
                 1
             ]
@@ -2705,7 +2750,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "19": "Random Item Design"
+            },
             "region_ids": [
             ]
         },
@@ -2776,7 +2823,9 @@
             "blocked_by": [],
             "required_by": [],
             "quests": [],
-            "treasures": {},
+            "treasures": {
+                "54": "Gain \"Doomed Compass\" (Item 124)"
+            },
             "region_ids": [
                 6
             ]
