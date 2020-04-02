@@ -20,7 +20,7 @@ mix.js('resources/js/app.js', 'public/js/')
             rootPath('resources/**/*.vue')
         ],
         whitelistPatterns: [/^mdc-/, /-active$/, /-enter$/, /-leave-to$/, /tippy/],
-        whitelistPatternsChildren: [/tippy/]
+        whitelistPatternsChildren: [/tippy/, /storyline/]
     })
     .copy('resources/public', 'public')
     .copy('resources/img', 'public/img')
