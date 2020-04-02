@@ -29,7 +29,7 @@
             if (app.isPortrait !== undefined) {
                 this.isPortrait = app.isPortrait;
                 this.$nextTick(() => {
-                    this.render();
+                    this.rerender();
                 });
             }
 
