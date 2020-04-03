@@ -1444,7 +1444,8 @@
             ],
             "region_ids": [
                 1
-            ]
+            ],
+            "personal_quest": 510
         },
         {
             "id": 53,
@@ -1468,7 +1469,8 @@
             },
             "region_ids": [
                 7
-            ]
+            ],
+            "personal_quest": 510
         },
         {
             "id": 54,
@@ -1488,7 +1490,8 @@
             },
             "region_ids": [
                 5
-            ]
+            ],
+            "personal_quest": 510
         },
         {
             "id": 55,
@@ -1508,7 +1511,8 @@
             },
             "region_ids": [
                 2
-            ]
+            ],
+            "personal_quest": 521
         },
         {
             "id": 56,
@@ -1525,7 +1529,8 @@
             ],
             "region_ids": [
                 2
-            ]
+            ],
+            "personal_quest": 521
         },
         {
             "id": 57,
@@ -1546,7 +1551,8 @@
             },
             "region_ids": [
                 1
-            ]
+            ],
+            "personal_quest": 526
         },
         {
             "id": 58,
@@ -1563,7 +1569,8 @@
             ],
             "region_ids": [
                 1
-            ]
+            ],
+            "personal_quest": 526
         },
         {
             "id": 59,
@@ -1580,7 +1587,8 @@
             ],
             "region_ids": [
                 2
-            ]
+            ],
+            "personal_quest": 513
         },
         {
             "id": 60,
@@ -1597,7 +1605,8 @@
             ],
             "region_ids": [
                 1
-            ]
+            ],
+            "personal_quest": 513
         },
         {
             "id": 61,
@@ -1615,7 +1624,8 @@
             ],
             "region_ids": [
                 3
-            ]
+            ],
+            "personal_quest": 529
         },
         {
             "id": 62,
@@ -1635,7 +1645,8 @@
             },
             "region_ids": [
                 3
-            ]
+            ],
+            "personal_quest": 529
         },
         {
             "id": 63,
