@@ -12,9 +12,6 @@
             "links_to": [
                 2
             ],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 1
             ],
@@ -42,8 +39,6 @@
             "linked_from": [
                 1
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 1
             ],
@@ -74,7 +69,6 @@
             "blocked_by": [
                 8
             ],
-            "required_by": [],
             "quests": [
                 2,
                 6,
@@ -96,7 +90,6 @@
             "pages": [
                 7
             ],
-            "requirements": "",
             "links_to": [
                 6,
                 5
@@ -104,8 +97,6 @@
             "linked_from": [
                 2
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 3
             ],
@@ -134,8 +125,6 @@
             "linked_from": [
                 4
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 4
             ],
@@ -163,8 +152,6 @@
             "linked_from": [
                 4
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 3
             ],
@@ -192,7 +179,6 @@
             "linked_from": [
                 8
             ],
-            "blocked_by": [],
             "required_by": [
                 14
             ],
@@ -200,7 +186,6 @@
                 5,
                 9
             ],
-            "treasures": {},
             "region_ids": [
                 5
             ]
@@ -227,7 +212,6 @@
             "blocked_by": [
                 9
             ],
-            "required_by": [],
             "quests": [
                 2,
                 6,
@@ -260,11 +244,9 @@
             "blocked_by": [
                 8
             ],
-            "required_by": [],
             "quests": [
                 7
             ],
-            "treasures": {},
             "region_ids": [
                 4
             ]
@@ -291,7 +273,6 @@
                 27,
                 36
             ],
-            "required_by": [],
             "quests": [
                 8
             ],
@@ -322,7 +303,6 @@
             "blocked_by": [
                 12
             ],
-            "required_by": [],
             "quests": [
                 3,
                 10,
@@ -357,7 +337,6 @@
             "blocked_by": [
                 11
             ],
-            "required_by": [],
             "quests": [
                 3,
                 10,
@@ -392,8 +371,6 @@
             "linked_from": [
                 8
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 9,
                 12
@@ -414,15 +391,11 @@
                 19,
                 20
             ],
-            "requirements": "",
-            "links_to": [],
             "linked_from": [
                 5,
                 8,
                 18
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 13
             ],
@@ -443,17 +416,13 @@
                 21
             ],
             "chapter_id": 2,
-            "links_to": [],
             "linked_from": [
                 13,
                 39
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 14
             ],
-            "treasures": {},
             "region_ids": [
                 5
             ]
@@ -466,7 +435,6 @@
             "pages": [
                 22
             ],
-            "requirements": "",
             "links_to": [
                 25,
                 24
@@ -476,8 +444,6 @@
                 12,
                 20
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 15
             ],
@@ -497,12 +463,9 @@
                 23
             ],
             "chapter_id": 2,
-            "links_to": [],
             "linked_from": [
                 13
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 16
             ],
@@ -536,8 +499,6 @@
                 12,
                 20
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 17
             ],
@@ -565,7 +526,6 @@
             "linked_from": [
                 5
             ],
-            "blocked_by": [],
             "required_by": [
                 14
             ],
@@ -600,7 +560,6 @@
                 7,
                 13
             ],
-            "blocked_by": [],
             "required_by": [
                 8
             ],
@@ -625,7 +584,6 @@
             ],
             "requirements": "The Rift Neutralized (Global) INCOMPLETE",
             "chapter_id": 3,
-            "links_to": [],
             "linked_from": [
                 10
             ],
@@ -633,7 +591,6 @@
                 27,
                 36
             ],
-            "required_by": [],
             "quests": [
                 19
             ],
@@ -662,8 +619,6 @@
                 10,
                 26
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 20
             ],
@@ -689,8 +644,6 @@
             "linked_from": [
                 18
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 17,
                 21
@@ -720,8 +673,6 @@
             "linked_from": [
                 16
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 22
             ],
@@ -749,8 +700,6 @@
             "linked_from": [
                 16
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 15
             ],
@@ -778,7 +727,6 @@
             "linked_from": [
                 18
             ],
-            "blocked_by": [],
             "required_by": [
                 23,
                 43
@@ -803,19 +751,16 @@
             ],
             "requirements": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
             "chapter_id": 3,
-            "links_to": [],
             "linked_from": [
                 19
             ],
             "blocked_by": [
                 35
             ],
-            "required_by": [],
             "quests": [
                 8,
                 18
             ],
-            "treasures": {},
             "region_ids": [
             ]
         },
@@ -836,7 +781,6 @@
                 12,
                 20
             ],
-            "blocked_by": [],
             "required_by": [
                 6
             ],
@@ -860,12 +804,9 @@
             ],
             "requirements": "An Invitation (Party) COMPLETE",
             "chapter_id": 2,
-            "links_to": [],
             "linked_from": [
                 28
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 3
             ],
@@ -893,12 +834,9 @@
             "linked_from": [
                 24
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 23
             ],
-            "treasures": {},
             "region_ids": [
                 6
             ]
@@ -959,11 +897,9 @@
             "blocked_by": [
                 42
             ],
-            "required_by": [],
             "quests": [
                 25
             ],
-            "treasures": {},
             "region_ids": [
                 3
             ]
@@ -977,7 +913,6 @@
                 44
             ],
             "requirements": "The Voice’s Command (Party) or The Drake’s Command (Party) COMPLETE",
-            "links_to": [],
             "linked_from": [
                 25,
                 32
@@ -986,13 +921,11 @@
                 34,
                 42
             ],
-            "required_by": [],
             "quests": [
                 25,
                 26,
                 27
             ],
-            "treasures": {},
             "region_ids": [
                 5
             ]
@@ -1007,14 +940,12 @@
             ],
             "requirements": "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE",
             "chapter_id": 9,
-            "links_to": [],
             "linked_from": [
                 25
             ],
             "blocked_by": [
                 33
             ],
-            "required_by": [],
             "quests": [
                 27
             ],
@@ -1071,7 +1002,6 @@
             ],
             "requirements": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
             "chapter_id": 3,
-            "links_to": [],
             "linked_from": [
                 22
             ],
@@ -1109,7 +1039,6 @@
             "linked_from": [
                 31
             ],
-            "blocked_by": [],
             "required_by": [
                 43
             ],
@@ -1143,8 +1072,6 @@
             "linked_from": [
                 31
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 31
             ],
@@ -1172,8 +1099,6 @@
             "linked_from": [
                 31
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 32
             ],
@@ -1228,14 +1153,12 @@
             ],
             "requirements": "The Voice’s Command (Party) COMPLETE",
             "chapter_id": 10,
-            "links_to": [],
             "linked_from": [
                 40
             ],
             "blocked_by": [
                 42
             ],
-            "required_by": [],
             "quests": [
                 25
             ],
@@ -1256,14 +1179,12 @@
             ],
             "requirements": "The Scepter and the Voice (Party) COMPLETE and The Voice Freed (Global) INCOMPLETE",
             "chapter_id": 10,
-            "links_to": [],
             "linked_from": [
                 30
             ],
             "blocked_by": [
                 41
             ],
-            "required_by": [],
             "quests": [
                 33
             ],
@@ -1285,12 +1206,10 @@
                 58
             ],
             "requirements": "The Power of Enhancement (Global) COMPLETE",
-            "links_to": [],
             "linked_from": [
                 18,
                 31
             ],
-            "blocked_by": [],
             "required_by": [
                 14
             ],
@@ -1315,16 +1234,12 @@
             ],
             "requirements": "Redthorn’s Aid (Party) COMPLETE",
             "chapter_id": 7,
-            "links_to": [],
             "linked_from": [
                 38
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 35
             ],
-            "treasures": {},
             "region_ids": [
                 2
             ]
@@ -1346,8 +1261,6 @@
             "linked_from": [
                 35
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 36
             ],
@@ -1374,8 +1287,6 @@
             "linked_from": [
                 39
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 32
             ],
@@ -1402,8 +1313,6 @@
             "linked_from": [
                 37
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 30
             ],
@@ -1431,8 +1340,6 @@
             "linked_from": [
                 38
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 31
             ],
@@ -1453,12 +1360,9 @@
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE",
             "chapter_id": 5,
-            "links_to": [],
             "linked_from": [
                 45
             ],
-            "blocked_by": [],
-            "required_by": [],
             "quests": [
                 37
             ],
@@ -1480,18 +1384,15 @@
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE and Annihilation of Order (Global) INCOMPLETE",
             "chapter_id": 5,
-            "links_to": [],
             "linked_from": [
                 45
             ],
             "blocked_by": [
                 49
             ],
-            "required_by": [],
             "quests": [
                 38
             ],
-            "treasures": {},
             "region_ids": [
                 1
             ]
@@ -1506,13 +1407,11 @@
                 67
             ],
             "requirements": "End of Corruption (Global) x3 COMPLETE",
-            "links_to": [],
             "linked_from": [
                 46,
                 47,
                 48
             ],
-            "blocked_by": [],
             "required_by": [
                 46,
                 47,
@@ -1543,11 +1442,6 @@
             "links_to": [
                 53
             ],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 1
             ]
@@ -1569,9 +1463,6 @@
             "linked_from": [
                 52
             ],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "31": "Random Item Design"
             },
@@ -1589,13 +1480,9 @@
             ],
             "requirements": "“Seeker of Xorn” personal quest, “Staff of Xorn” item equipped",
             "chapter_id": 11,
-            "links_to": [],
             "linked_from": [
                 53
             ],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "25": "Gain 25 gold"
             },
@@ -1616,10 +1503,6 @@
             "links_to": [
                 56
             ],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "45": "Random Item Design"
             },
@@ -1637,14 +1520,9 @@
             ],
             "requirements": "“Take Back the Trees” personal quest",
             "chapter_id": 11,
-            "links_to": [],
             "linked_from": [
                 55
             ],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 2
             ]
@@ -1662,10 +1540,6 @@
             "links_to": [
                 58
             ],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "3": "Gain \"Splintmail\" (Item 044)",
                 "22": "Random Item Design"
@@ -1684,14 +1558,9 @@
             ],
             "requirements": "“Vengeance” personal quest",
             "chapter_id": 11,
-            "links_to": [],
             "linked_from": [
                 57
             ],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 1
             ]
@@ -1709,11 +1578,6 @@
             "links_to": [
                 60
             ],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 2
             ]
@@ -1728,14 +1592,9 @@
             ],
             "requirements": "“Finding the Cure” personal quest",
             "chapter_id": 11,
-            "links_to": [],
             "linked_from": [
                 59
             ],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 1
             ]
@@ -1754,11 +1613,6 @@
             "links_to": [
                 62
             ],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 3
             ]
@@ -1773,13 +1627,9 @@
             ],
             "requirements": "“The Fall of Man” personal quest",
             "chapter_id": 11,
-            "links_to": [],
             "linked_from": [
                 61
             ],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "59": "Random Item Design"
             },
@@ -1795,13 +1645,7 @@
             "pages": [
                 81
             ],
-            "requirements": "",
             "chapter_id": 12,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "12": "Gain \"Magma Waders\" (Item 099)"
             },
@@ -1819,13 +1663,9 @@
             ],
             "requirements": "Water-Breathing (Global) COMPLETE",
             "chapter_id": 12,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
             "required_by": [
                 43
             ],
-            "quests": [],
             "treasures": {
                 "9": "Gain \"Wave Crest\" (Item 111)"
             },
@@ -1842,14 +1682,7 @@
                 83,
                 84
             ],
-            "requirements": "",
             "chapter_id": 12,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 4
             ]
@@ -1863,13 +1696,7 @@
                 84,
                 85
             ],
-            "requirements": "",
             "chapter_id": 12,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "16": "Gain 10 gold",
                 "36": "\"Rocket Boots\" design (Item 096)"
@@ -1886,13 +1713,7 @@
             "pages": [
                 86
             ],
-            "requirements": "",
             "chapter_id": 12,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "14": "Gain 10 Experience"
             },
@@ -1907,13 +1728,7 @@
             "pages": [
                 87
             ],
-            "requirements": "",
             "chapter_id": 12,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "33": "Gain \"Weighted Net\" (Item 019)"
             },
@@ -1929,14 +1744,7 @@
             "pages": [
                 88
             ],
-            "requirements": "",
             "chapter_id": 12,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
             ]
         },
@@ -1949,13 +1757,7 @@
                 89,
                 90
             ],
-            "requirements": "",
             "chapter_id": 12,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "6": "Gain \"Hooked Chain\" (Item 039)"
             },
@@ -1972,14 +1774,7 @@
                 90,
                 91
             ],
-            "requirements": "",
             "chapter_id": 12,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
             ]
         },
@@ -1991,14 +1786,7 @@
             "pages": [
                 92
             ],
-            "requirements": "",
             "chapter_id": 13,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
             ]
         },
@@ -2010,14 +1798,7 @@
             "pages": [
                 93
             ],
-            "requirements": "",
             "chapter_id": 13,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 4
             ]
@@ -2032,11 +1813,6 @@
             ],
             "requirements": "High Sea Escort (Party) COMPLETE",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "20": "Random Item Design"
             },
@@ -2054,11 +1830,6 @@
             ],
             "requirements": "Grave Job (Party) COMPLETE",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "53": "Random Item Design"
             },
@@ -2076,11 +1847,6 @@
             ],
             "requirements": "Bravery",
             "chapter_id": 13,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "75": "Cryptogram Found (See scenario book page 121)"
             },
@@ -2097,14 +1863,7 @@
                 97,
                 98
             ],
-            "requirements": "",
             "chapter_id": 13,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 1
             ]
@@ -2117,14 +1876,7 @@
             "pages": [
                 99
             ],
-            "requirements": "",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 1
             ]
@@ -2140,11 +1892,6 @@
             ],
             "requirements": "Fish’s Aid (Party) COMPLETE",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "52": "Gain \"Heart of the Betrayer\" (Item 131)"
             },
@@ -2161,14 +1908,7 @@
                 101,
                 102
             ],
-            "requirements": "",
             "chapter_id": 14,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 4
             ]
@@ -2181,13 +1921,7 @@
             "pages": [
                 103
             ],
-            "requirements": "",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "68": "Gain \"Helix Ring\" (Item 130)"
             },
@@ -2203,13 +1937,7 @@
             "pages": [
                 104
             ],
-            "requirements": "",
             "chapter_id": 14,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "62": "Gain \"Helm of the Mountain\" and \"Mountain Hammer\" (Item 110 and 115)"
             },
@@ -2227,12 +1955,6 @@
             ],
             "requirements": "Bad Business (Party) COMPLETE",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 1
             ]
@@ -2247,11 +1969,6 @@
             ],
             "requirements": "Tremors (Party) COMPLETE",
             "chapter_id": 13,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "42": "Random Item Design"
             },
@@ -2268,14 +1985,7 @@
                 107,
                 108
             ],
-            "requirements": "",
             "chapter_id": 14,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 4
             ]
@@ -2289,16 +1999,10 @@
                 108,
                 109
             ],
-            "requirements": "",
             "chapter_id": 15,
             "links_to": [
                 87
             ],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 1
             ]
@@ -2313,13 +2017,9 @@
             ],
             "requirements": "The Poison’s Source (Party) COMPLETE",
             "chapter_id": 15,
-            "links_to": [],
             "linked_from": [
                 86
             ],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "40": "Random Item Design"
             },
@@ -2336,13 +2036,9 @@
             ],
             "requirements": "Water-Breathing (Global) and Water Staff (Party) COMPLETE",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
             "required_by": [
                 43
             ],
-            "quests": [],
             "treasures": {
                 "8": "Gain 1 ✔",
                 "37": "Gain 1 ✔"
@@ -2361,11 +2057,6 @@
             ],
             "requirements": "Sin-Ra (Party) COMPLETE",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "13": "Suffer 5 Damage and gain POISON and WOUND",
                 "27": "Gain \"Orb of Twilight\" (Item 122)",
@@ -2383,13 +2074,7 @@
             "pages": [
                 113
             ],
-            "requirements": "",
             "chapter_id": 14,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "19": "Random Item Design"
             },
@@ -2404,14 +2089,7 @@
             "pages": [
                 114
             ],
-            "requirements": "",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 2
             ]
@@ -2426,12 +2104,6 @@
             ],
             "requirements": "Debt Collection (Party) COMPLETE",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
             "region_ids": [
                 1
             ]
@@ -2446,11 +2118,6 @@
             ],
             "requirements": "A Map to Treasure (Party) COMPLETE",
             "chapter_id": 15,
-            "links_to": [],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
             "treasures": {
                 "54": "Gain \"Doomed Compass\" (Item 124)"
             },
@@ -2466,17 +2133,10 @@
             "pages": [
                 117
             ],
-            "requirements": "",
             "chapter_id": 15,
             "links_to": [
                 95
-            ],
-            "linked_from": [],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
-            "region_ids": []
+            ]
         },
         {
             "id": 95,
@@ -2489,15 +2149,9 @@
             ],
             "requirements": "Through the Nest (Party) COMPLETE",
             "chapter_id": 15,
-            "links_to": [],
             "linked_from": [
                 94
-            ],
-            "blocked_by": [],
-            "required_by": [],
-            "quests": [],
-            "treasures": {},
-            "region_ids": []
+            ]
         }
     ],
     "chapters": [
