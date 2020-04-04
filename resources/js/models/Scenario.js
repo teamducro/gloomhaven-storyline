@@ -1,4 +1,5 @@
 import {ScenarioState} from "./ScenarioState";
+import Card from "./Card";
 
 export default class Scenario {
 
@@ -11,9 +12,7 @@ export default class Scenario {
         this.pages = data.pages || [];
         this.requirements = data.requirements || "";
         this.quests = data.quests || [];
-        this.personal_quest = data.personal_quest;
-        this.city_event = data.city_event;
-        this.road_event = data.road_event;
+        this.cards = collect(data.cards).map((card) => new Card(card));
         this.chapter_id = data.chapter_id;
         this.chapter_name = null;
         this.region_ids = data.region_ids || [];
@@ -108,17 +107,7 @@ export default class Scenario {
     }
 
     hasCard() {
-        return this.city_event || this.road_event || this.personal_quest > 0;
-    }
-
-    cardTitle() {
-        if (this.city_event) {
-            return "City Event #" + this.city_event;
-        } else if (this.road_event) {
-            return "Road Event #" + this.road_event;
-        } else if (this.personal_quest) {
-            return "Personal Quest #" + this.personal_quest;
-        }
+        return this.cards.count() > 0;
     }
 
     store() {

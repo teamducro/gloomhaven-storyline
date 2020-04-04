@@ -86,33 +86,24 @@
                                 </transition-expand>
                             </template>
 
-                            <template v-if="scenario.hasCard()">
+                            <template v-if="scenario.hasCard()"
+                                      v-for="(card, index) in scenario.cards">
                                 <button class="mdc-button"
-                                        @click="toggleQuest(scenario.quests.length)">
+                                        @click="toggleQuest(questCount + index)">
                                     <i class="material-icons mdc-button__icon">notes</i>
-                                    <span class="mdc-button__label">{{ scenario.cardTitle() }}</span>
+                                    <span class="mdc-button__label">{{ card.title }}</span>
                                     <i class="material-icons mdc-button__icon transition-transform duration-500"
-                                       :class="{'rotate-0': questExpand[scenario.quests.length], 'rotate-180': !questExpand[scenario.quests.length]}">
+                                       :class="{'rotate-0': questExpand[questCount + index], 'rotate-180': !questExpand[questCount + index]}">
                                         keyboard_arrow_up
                                     </i>
                                 </button>
                                 <transition-expand>
-                                    <div v-if="questExpand[scenario.quests.length]">
-                                        <webp v-if="scenario.personal_quest"
-                                              :src="'/img/cards/quest/' + scenario.personal_quest + '.png'"
-                                              :alt="scenario.cardTitle()"/>
-                                        <webp v-if="scenario.city_event"
-                                              :src="'/img/cards/city/' + scenario.city_event + '_f.png'"
-                                              :alt="scenario.cardTitle() + ' Front'"/>
-                                        <webp v-if="scenario.city_event"
-                                              :src="'/img/cards/city/' + scenario.city_event + '_b.png'"
-                                              :alt="scenario.cardTitle() + ' Back'"/>
-                                        <webp v-if="scenario.road_event"
-                                              :src="'/img/cards/road/' + scenario.road_event + '_f.png'"
-                                              :alt="scenario.cardTitle() + ' Front'"/>
-                                        <webp v-if="scenario.road_event"
-                                              :src="'/img/cards/road/' + scenario.road_event + '_b.png'"
-                                              :alt="scenario.cardTitle() + ' Back'"/>
+                                    <div v-if="questExpand[questCount + index]">
+                                        <webp v-for="(image, index) in card.images"
+                                              :key="card.id + '-' + index"
+                                              :src="image"
+                                              class="mb-4"
+                                              :alt="card.title"/>
                                     </div>
                                 </transition-expand>
                             </template>
@@ -179,6 +170,7 @@
     import ScenarioRepository from "../repositories/ScenarioRepository";
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../models/ScenarioState";
+    import PreloadImage from "../services/PreloadImage";
 
     export default {
         data() {
@@ -187,7 +179,8 @@
                 notes: null,
                 stateKey: 1,
                 questExpand: [],
-                scenarioRepository: new ScenarioRepository()
+                scenarioRepository: new ScenarioRepository(),
+                preloadImage: new PreloadImage()
             }
         },
         mounted() {
@@ -215,6 +208,9 @@
                 } else {
                     return null;
                 }
+            },
+            questCount() {
+                return this.scenario.quests.length || 0;
             }
         },
         methods: {
@@ -258,12 +254,23 @@
             },
             open(id) {
                 this.scenario = this.scenarioRepository.find(id);
-                let questCount = (this.scenario.quests.length || 0) + (this.scenario.hasCard() ? 1 : 0);
+
+                let questCount = this.questCount + this.scenario.cards.count();
                 this.questExpand = new Array(questCount);
+                if (this.scenario.hasCard()) {
+                    this.scenario.cards.each((card) => {
+                        card.images.forEach((image) => {
+                            this.preloadImage.handle(image);
+                        });
+                    });
+                }
+
                 this.rerenderStateSelection();
+
                 this.$nextTick(() => {
                     this.$refs['modal'].open();
                     this.$nextTick(() => {
+                        this.preloadImage.handle(this.$refs['pages'].currentSrc);
                         const notes = this.$refs['notes'];
                         if (notes) {
                             new MDCTextField(notes);
