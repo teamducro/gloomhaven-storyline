@@ -16,30 +16,33 @@
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">
-                    <div class="flex w-full mb-2">
+                    <div class="xs:flex w-full mb-2">
                         <radio v-if="scenario.is_side"
+                               class="whitespace-no-wrap"
                                id="hidden" group="states" label="Not unlocked"
                                :key="'hidden-' + stateKey"
                                :checked="scenario.isHidden()"
                                @changed="stateChanged"
                         ></radio>
-                        <radio id="incomplete" group="states" label="Incomplete"
-                               :key="'incomplete-' + stateKey"
-                               :checked="scenario.isIncomplete()"
-                               :disabled="scenario.isBlocked() || scenario.isRequired()"
-                               @changed="stateChanged"
-                        ></radio>
-                        <radio id="complete" group="states" label="Complete"
-                               :key="'complete-' + stateKey"
-                               :checked="scenario.isComplete()"
-                               :disabled="scenario.isBlocked() || scenario.isRequired()"
-                               @changed="stateChanged"
-                        ></radio>
-                        <div v-if="scenario.isVisible()"
-                             class="hidden xs:block ml-auto w-20">
-                            <webp :src="'/img/scenarios/' + scenario.id + '.png'"
-                                  :animate="true"
-                                  :alt="scenario.name"></webp>
+                        <div class="flex w-full">
+                            <radio id="incomplete" group="states" label="Incomplete"
+                                   :key="'incomplete-' + stateKey"
+                                   :checked="scenario.isIncomplete()"
+                                   :disabled="scenario.isBlocked() || scenario.isRequired()"
+                                   @changed="stateChanged"
+                            ></radio>
+                            <radio id="complete" group="states" label="Complete"
+                                   :key="'complete-' + stateKey"
+                                   :checked="scenario.isComplete()"
+                                   :disabled="scenario.isBlocked() || scenario.isRequired()"
+                                   @changed="stateChanged"
+                            ></radio>
+                            <div v-if="scenario.isVisible()"
+                                 class="hidden sm:block ml-auto w-20">
+                                <webp :src="'/img/scenarios/' + scenario.id + '.png'"
+                                      :animate="true"
+                                      :alt="scenario.name"/>
+                            </div>
                         </div>
                     </div>
 
@@ -82,6 +85,28 @@
                                     </div>
                                 </transition-expand>
                             </template>
+
+                            <template v-if="scenario.hasCard()"
+                                      v-for="(card, index) in scenario.cards">
+                                <button class="mdc-button"
+                                        @click="toggleQuest(questCount + index)">
+                                    <i class="material-icons mdc-button__icon">notes</i>
+                                    <span class="mdc-button__label">{{ card.title }}</span>
+                                    <i class="material-icons mdc-button__icon transition-transform duration-500"
+                                       :class="{'rotate-0': questExpand[questCount + index], 'rotate-180': !questExpand[questCount + index]}">
+                                        keyboard_arrow_up
+                                    </i>
+                                </button>
+                                <transition-expand>
+                                    <div v-if="questExpand[questCount + index]">
+                                        <webp v-for="(image, index) in card.images"
+                                              :key="card.id + '-' + index"
+                                              :src="image"
+                                              class="mb-4"
+                                              :alt="card.title"/>
+                                    </div>
+                                </transition-expand>
+                            </template>
                         </div>
 
                         <div class="mb-6 hidden">
@@ -104,10 +129,10 @@
                                 <i class="material-icons mdc-button__icon">menu_book</i>
                                 <span class="mdc-button__label">Pages</span>
                             </button>
-                            <div class="xs:hidden ml-auto w-20">
+                            <div class="sm:hidden ml-auto w-20">
                                 <webp :src="'/img/scenarios/' + scenario.id + '.png'"
                                       :animate="true"
-                                      :alt="scenario.name"></webp>
+                                      :alt="scenario.name"/>
                             </div>
                         </div>
                     </template>
@@ -145,6 +170,7 @@
     import ScenarioRepository from "../repositories/ScenarioRepository";
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../models/ScenarioState";
+    import PreloadImage from "../services/PreloadImage";
 
     export default {
         data() {
@@ -153,7 +179,8 @@
                 notes: null,
                 stateKey: 1,
                 questExpand: [],
-                scenarioRepository: new ScenarioRepository()
+                scenarioRepository: new ScenarioRepository(),
+                preloadImage: new PreloadImage()
             }
         },
         mounted() {
@@ -181,6 +208,9 @@
                 } else {
                     return null;
                 }
+            },
+            questCount() {
+                return this.scenario.quests.length || 0;
             }
         },
         methods: {
@@ -224,11 +254,23 @@
             },
             open(id) {
                 this.scenario = this.scenarioRepository.find(id);
-                this.questExpand = new Array(this.scenario.quests.length);
+
+                let questCount = this.questCount + this.scenario.cards.count();
+                this.questExpand = new Array(questCount);
+                if (this.scenario.hasCard()) {
+                    this.scenario.cards.each((card) => {
+                        card.images.forEach((image) => {
+                            this.preloadImage.handle(image);
+                        });
+                    });
+                }
+
                 this.rerenderStateSelection();
+
                 this.$nextTick(() => {
                     this.$refs['modal'].open();
                     this.$nextTick(() => {
+                        this.preloadImage.handle(this.$refs['pages'].currentSrc);
                         const notes = this.$refs['notes'];
                         if (notes) {
                             new MDCTextField(notes);

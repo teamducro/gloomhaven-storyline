@@ -13,40 +13,33 @@
                         element.style.height = 'auto';
                     },
                     enter(element) {
-                        const { width } = getComputedStyle(element);
-                        /* eslint-disable no-param-reassign */
-                        element.style.width = width;
-                        element.style.position = 'absolute';
                         element.style.visibility = 'hidden';
-                        element.style.height = 'auto';
-                        /* eslint-enable */
-                        const { height } = getComputedStyle(element);
-                        /* eslint-disable no-param-reassign */
-                        element.style.width = null;
-                        element.style.position = null;
-                        element.style.visibility = null;
-                        element.style.height = 0;
-                        /* eslint-enable */
-                        // Force repaint to make sure the
-                        // animation is triggered correctly.
-                        // eslint-disable-next-line no-unused-expressions
-                        getComputedStyle(element).height;
+                        element.style.position = 'absolute';
+                        element.style.height = '0';
+
                         setTimeout(() => {
-                            // eslint-disable-next-line no-param-reassign
-                            element.style.height = height;
-                        });
+                            element.style.height = 'auto';
+                            const {width} = getComputedStyle(element);
+                            element.style.width = width;
+                            const {height} = getComputedStyle(element);
+                            element.style.width = null;
+                            element.style.position = null;
+                            element.style.visibility = null;
+                            element.style.height = '0';
+                            // Force repaint to make sure the animation is triggered correctly.
+                            getComputedStyle(element).height;
+                            setTimeout(() => {
+                                element.style.height = height;
+                            });
+                        }, 50);
                     },
                     leave(element) {
-                        const { height } = getComputedStyle(element);
-                        // eslint-disable-next-line no-param-reassign
+                        const {height} = getComputedStyle(element);
                         element.style.height = height;
-                        // Force repaint to make sure the
-                        // animation is triggered correctly.
-                        // eslint-disable-next-line no-unused-expressions
+                        // Force repaint to make sure the animation is triggered correctly.
                         getComputedStyle(element).height;
                         setTimeout(() => {
-                            // eslint-disable-next-line no-param-reassign
-                            element.style.height = 0;
+                            element.style.height = '0';
                         });
                     },
                 },
@@ -71,6 +64,7 @@
         transition: height .5s ease-in-out;
         overflow: hidden;
     }
+
     .expand-enter,
     .expand-leave-to {
         height: 0;

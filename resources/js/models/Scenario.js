@@ -1,4 +1,5 @@
 import {ScenarioState} from "./ScenarioState";
+import Card from "./Card";
 
 export default class Scenario {
 
@@ -8,12 +9,13 @@ export default class Scenario {
         this.title = this.name.substr(this.name.indexOf(' ') + 1);
         this.coordinates = data.coordinates;
         this.is_side = data.is_side;
-        this.pages = data.pages;
-        this.requirements = data.requirements;
-        this.quests = data.quests;
+        this.pages = data.pages || [];
+        this.requirements = data.requirements || "";
+        this.quests = data.quests || [];
+        this.cards = collect(data.cards).map((card) => new Card(card));
         this.chapter_id = data.chapter_id;
         this.chapter_name = null;
-        this.region_ids = data.region_ids;
+        this.region_ids = data.region_ids || [];
         this.regions = null;
         this.choices = data.choices;
         this.choice2 = null;
@@ -102,6 +104,10 @@ export default class Scenario {
 
     missedTreasures() {
         return this.isComplete() && this.treasures.count() > this.unlockedTreasures.length;
+    }
+
+    hasCard() {
+        return this.cards.count() > 0;
     }
 
     store() {
