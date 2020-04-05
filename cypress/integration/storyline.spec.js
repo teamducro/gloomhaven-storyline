@@ -8,6 +8,28 @@ describe('Storyline', () => {
             .and('eq', 'inline');
     });
 
+    it('It switches between landscape and portrait', () => {
+        cy.visit('/');
+
+        cy.get('.landscape').should(($node) => {
+            expect($node.length).to.be.greaterThan(4);
+        });
+
+        cy.get('.portrait').should(($node) => {
+            expect($node).to.have.length(0);
+        });
+
+        cy.viewport(500, 800);
+
+        cy.get('.landscape').should(($node) => {
+            expect($node).to.have.length(0);
+        });
+
+        cy.get('.portrait').should(($node) => {
+            expect($node.length).to.be.greaterThan(4);
+        });
+    });
+
     it('It can complete a scenario', () => {
         cy.visit('/');
         isNodeVisible(1);
