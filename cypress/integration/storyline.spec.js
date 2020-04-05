@@ -3,7 +3,7 @@ describe('Storyline', () => {
     it('It loads the storyline', () => {
         cy.visit('/');
 
-        cy.get('.chapter1')
+        cy.get('#chapter1')
             .should('have.css', 'display')
             .and('eq', 'inline');
     });
@@ -32,13 +32,13 @@ describe('Storyline', () => {
     it('It reveals chapters', () => {
         cy.visit('/');
 
-        cy.get('.chapter2')
+        cy.get('#chapter2')
             .should('have.css', 'display')
             .and('eq', 'none');
 
         cy.visit('/?states=1_c-2_c');
 
-        cy.get('.chapter2')
+        cy.get('#chapter2')
             .should('have.css', 'display')
             .and('eq', 'inline');
     });
@@ -73,7 +73,7 @@ describe('Storyline', () => {
         completeScenario(14);
 
         isNodeVisible(7);
-        cy.get('.node7 .required')
+        cy.get('#node7 .required')
             .should('have.css', 'display')
             .and('eq', 'none');
 
@@ -86,40 +86,40 @@ describe('Storyline', () => {
     it('It can share side scenarios', () => {
         cy.visit('/');
 
-        cy.get('.node52.opacity-50').should(($node) => {
-            expect($node).to.have.length(2);
+        cy.get('#node52.opacity-50').should(($node) => {
+            expect($node).to.have.length(1);
         });
 
         cy.visit('/?states=52_i');
 
         isNodeVisible(52);
-        cy.get('.node52.opacity-50').should(($node) => {
+        cy.get('#node52.opacity-50').should(($node) => {
             expect($node).to.have.length(0);
         });
     });
 
     function isNodeVisible(id) {
-        cy.get('.node' + id)
+        cy.get('#node' + id)
             .should('have.css', 'display')
             .and('eq', 'inline');
     }
 
     function isNodeHidden(id) {
-        cy.get('.node' + id)
+        cy.get('#node' + id)
             .should('have.css', 'display')
             .and('eq', 'none');
     }
 
     function isNodeBlocked(id) {
         isNodeVisible(id);
-        cy.get('.node' + id + ' .blocked')
+        cy.get('#node' + id + ' .blocked')
             .should('have.css', 'display')
             .and('eq', 'block');
     }
 
     function isNodeRequired(id) {
         isNodeVisible(id);
-        cy.get('.node' + id + ' .required')
+        cy.get('#node' + id + ' .required')
             .should('have.css', 'display')
             .and('eq', 'block');
     }
@@ -137,7 +137,7 @@ describe('Storyline', () => {
     }
 
     function openScenario(id) {
-        cy.get('.node' + id).click();
+        cy.get('#node' + id).click();
     }
 
     function closeModel() {
