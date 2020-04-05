@@ -87,7 +87,7 @@ describe('Storyline', () => {
         cy.visit('/');
 
         cy.get('.node52.opacity-50').should(($node) => {
-            expect($node).to.have.length(1);
+            expect($node).to.have.length(2);
         });
 
         cy.visit('/?states=52_i');
