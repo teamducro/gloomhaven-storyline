@@ -3,7 +3,7 @@
         <inline-svg
                 v-if="isPortrait !== null"
                 :key="storylineKey"
-                :src="storylineFile"
+                src="storyline"
                 id="storyline"
                 :classes="['h-screen', 'w-screen']"
         />
@@ -45,11 +45,7 @@
             this.$bus.$off('scenarios-updated', this.render);
             this.$bus.$off('orientation-changed', this.orientationChanged);
         },
-        computed: {
-            storylineFile() {
-                return 'storyline-' + (this.isPortrait ? 'portrait' : 'landscape');
-            }
-        },
+        computed: {},
         methods: {
             render() {
                 if (app.scenarios && this.isPortrait !== null) {
@@ -64,6 +60,8 @@
                     this.zoom.destroy();
                 }
                 this.storylineKey++;
+                let landscapeViewBox = '0 -60 610 668';
+                let pertraitViewBox = '0 -60 420 950';
                 this.$nextTick(() => {
                     this.zoom = zoom('#storyline');
                     this.render();
@@ -71,7 +69,7 @@
             },
             renderScenarios() {
                 app.scenarios.each((scenario) => {
-                    let $node = $('#node' + scenario.id);
+                    let $node = $('.node' + scenario.id);
 
                     if (!$node.length) {
                         return;
@@ -115,24 +113,24 @@
                             if (!scenario.choices) {
                                 $edges.show();
                             } else if (scenario.choice) {
-                                $('#edge' + scenario.id + '-' + scenario.choice).show();
+                                $('.edge' + scenario.id + '-' + scenario.choice).show();
                             }
                         }
                     }
 
                     // Show tooltip on hover
-                    if (app.hasMouse && scenario.isVisible() && !$node.hasClass('tippy')) {
-                        tippy($node[0], {
+                    if (app.hasMouse && scenario.isVisible() && !$node.hasClass('has-tippy')) {
+                        tippy('.node' + scenario.id, {
                             content: scenario.name
                         });
-                        $node.addClass('tippy');
+                        $node.addClass('has-tippy');
                     }
                 });
             },
             renderChapters() {
-                for (let id = 1; id <= 16; id++) {
+                for (let id = 1; id <= 10; id++) {
                     let unlocked = app.scenarios.where('chapter_id', id).where('state', '!=', ScenarioState.hidden).count();
-                    let $chapter = $('#chapter' + id);
+                    let $chapter = $('.chapter' + id);
 
                     if (unlocked) {
                         $chapter.show();
