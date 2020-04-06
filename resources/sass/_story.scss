@@ -1,41 +1,5 @@
 #storyline {
-    text {
-        font-family: 'Pirata One', 'Nyala', sans-serif;
-        fill: white;
-    }
-
-    text.label {
-        font-size: 10px;
-    }
-
-    circle.node {
-        fill: black;
-        stroke: white;
-        transform: translate(-10.8px, 0);
-
-        + text {
-            font-family: 'Pirata One', 'Nyala', sans-serif;
-            font-size: 11px;
-            transform: translate(0px, 9px);
-        }
-
-        ~ .blocked {
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            transform: translate(-10px, -5px);
-        }
-
-        ~ .required {
-            font-size: 12px;
-            font-weight: bold;
-            transform: translate(-7px, -5px);
-        }
-    }
-
     .scenario {
-        cursor: pointer;
-        position: relative;
-
         &.incomplete {
             stroke-width: 2;
 
@@ -65,15 +29,7 @@
         }
     }
 
-    .line {
-        fill: none;
-    }
-
-    .arrow {
-        fill: white;
-    }
-
-    .line, .arrow {
-        stroke: white;
+    .legend .scenario {
+        cursor: default;
     }
 }

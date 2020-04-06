@@ -3,7 +3,7 @@
         <inline-svg
                 v-if="isPortrait !== null"
                 :key="storylineKey"
-                :name="storylineFile"
+                src="storyline"
                 id="storyline"
                 :classes="['h-screen', 'w-screen']"
         />
@@ -45,11 +45,6 @@
             this.$bus.$off('scenarios-updated', this.render);
             this.$bus.$off('orientation-changed', this.orientationChanged);
         },
-        computed: {
-            storylineFile() {
-                return 'storyline-' + (this.isPortrait ? 'portrait' : 'landscape');
-            }
-        },
         methods: {
             render() {
                 if (app.scenarios && this.isPortrait !== null) {
@@ -65,9 +60,21 @@
                 }
                 this.storylineKey++;
                 this.$nextTick(() => {
+                    this.renderOrientation();
                     this.zoom = zoom('#storyline');
                     this.render();
                 });
+            },
+            renderOrientation() {
+                let viewBox = '';
+                if (this.isPortrait) {
+                    viewBox = '0 -60 420 1017';
+                    $('#storyline .landscape').remove();
+                } else {
+                    viewBox = '0 -60 610 668';
+                    $('#storyline .portrait').remove();
+                }
+                $('#storyline').attr('viewBox', viewBox);
             },
             renderScenarios() {
                 app.scenarios.each((scenario) => {
@@ -121,16 +128,16 @@
                     }
 
                     // Show tooltip on hover
-                    if (app.hasMouse && scenario.isVisible() && !$node.hasClass('tippy')) {
+                    if (app.hasMouse && scenario.isVisible() && !$node.hasClass('has-tippy')) {
                         tippy($node[0], {
                             content: scenario.name
                         });
-                        $node.addClass('tippy');
+                        $node.addClass('has-tippy');
                     }
                 });
             },
             renderChapters() {
-                for (let id = 1; id <= 16; id++) {
+                for (let id = 1; id <= 10; id++) {
                     let unlocked = app.scenarios.where('chapter_id', id).where('state', '!=', ScenarioState.hidden).count();
                     let $chapter = $('#chapter' + id);
 
@@ -148,6 +155,10 @@
                 }
             },
             scenarioClicked(e) {
+                let $node = $(e.currentTarget);
+                if (!$node.attr('id')) {
+                    return;
+                }
                 let id = parseInt($(e.currentTarget).attr('id').replace('node', ''));
                 this.open(id);
             },

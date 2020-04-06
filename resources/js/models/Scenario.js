@@ -1,5 +1,6 @@
 import {ScenarioState} from "./ScenarioState";
 import Card from "./Card";
+import store from "store/dist/store.modern";
 
 export default class Scenario {
 
@@ -111,16 +112,16 @@ export default class Scenario {
     }
 
     store() {
-        window.localStorage.setItem(this.key(), JSON.stringify({
+        store.set(this.key(), {
             "state": this.state,
             "choice": this.choice,
             "notes": this.notes,
             "treasures": this.unlockedTreasures
-        }));
+        });
     }
 
     read() {
-        let scenario = JSON.parse(window.localStorage.getItem(this.key()));
+        let scenario = store.get(this.key());
         if (scenario) {
             this.state2 = scenario.state;
             this.choice2 = scenario.choice;

@@ -1,8 +1,8 @@
 <script>
     class Svg {
-        constructor(name) {
+        constructor(src) {
             let div = document.createElement('div');
-            div.innerHTML = require('../../svg/' + name + '.svg');
+            div.innerHTML = require('../../svg/' + src + '.svg');
 
             let fragment = document.createDocumentFragment();
             fragment.appendChild(div);
@@ -54,12 +54,12 @@
     }
 
     export default {
-        props: ['name', 'classes', 'width', 'height', 'id'],
+        props: ['src', 'classes', 'width', 'height', 'id'],
 
         render(h) {
             return h('div', {
                 domProps: {
-                    innerHTML: new Svg(this.name)
+                    innerHTML: new Svg(this.src)
                         .classes(this.classes)
                         .width(this.width)
                         .height(this.height)
