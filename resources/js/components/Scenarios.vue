@@ -33,7 +33,7 @@
             <li v-for="scenario in scenarios.items"
                 v-show="applyFilter(scenario)"
                 :key="scenario.id"
-                class="mdc-list-item h-auto"
+                class="mdc-list-item h-auto cursor-pointer"
                 :data-id="scenario.id"
                 :tabindex="scenario.id">
                 <template v-if="scenario.isVisible()">
