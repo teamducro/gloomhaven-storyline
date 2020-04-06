@@ -1,5 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 -60 610 950"
      style="width:100%;">
+    <style>
+        text { font-family: 'Pirata One', 'Nyala', sans-serif; fill: white; }
+        text.label { font-size: 10px; }
+        .line { fill: none; }
+        .arrow { fill: white; }
+        .line, .arrow { stroke: white; }
+        .scenario { cursor: pointer; }
+
+        circle.node { fill: black; stroke: white; transform: translate(-10.8px, 0); }
+        circle.node + text { font-size: 11px; transform: translate(0px, 9px); }
+        circle.node ~ .blocked { font-size: 16px; font-family: Arial, sans-serif; transform: translate(-10px, -5px); }
+        circle.node ~ .required { font-size: 12px; font-weight: bold; transform: translate(-7px, -5px); }
+    </style>
     <g id="chapter1" class="chapter">
         <rect width="40.84322" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
