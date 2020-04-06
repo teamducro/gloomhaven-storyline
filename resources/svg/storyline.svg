@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 -60 610 950"
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 -60 610 1017"
      style="width:100%;">
     <style>
         text { font-family: 'Pirata One', 'Nyala', sans-serif; fill: white; }
@@ -884,9 +884,40 @@
         </g>
     </g>
 
+    <g class="legend landscape">
+        <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="171" x="430.5" y="539"/>
+        <g class="scenario incomplete">
+            <circle class="node" cx="458" cy="561.499978" fill="black" r="10.8"/>
+            <text fill="black" x="446" y="557.499978">I</text>
+        </g>
+        <text class="label" fill="black" x="465.326181" y="565.499025">Incomplete</text>
+        <g class="scenario blocked">
+            <circle class="node" cx="553" cy="562.499978" r="10.8"/>
+            <text fill="black" x="540" y="558.5">B</text>
+            <text class="blocked" x="540" y="558.5">×</text>
+        </g>
+        <text class="label" fill="black" x="558.693369" y="566.506837">Blocked</text>
+        <g class="scenario complete">
+            <circle class="node" cx="458" cy="590.999978" r="10.8"/>
+            <text fill="black" x="445" y="587">C</text>
+        </g>
+        <text class="label" fill="black" x="464.880869" y="596.006837">Completed</text>
+        <g class="scenario required">
+            <circle class="node" cx="553" cy="591.999978" r="10.8"/>
+            <text fill="black" x="540" y="588">R</text>
+            <text class="required" x="538" y="588">!</text>
+        </g>
+        <text class="label" fill="black" x="559.685556" y="595.999025">Required</text>
+        <g class="scenario opacity-50">
+            <circle class="node" cx="458" cy="620.499978" r="10.8"/>
+            <text fill="black" x="445" y="616.499978">N</text>
+        </g>
+        <text class="label" fill="black" x="465.194147" y="624.506837">Not unlocked</text>
+    </g>
+
     <g class="portrait">
         <!--chapter11-->
-        <rect opacity="0.7" fill="#111" stroke="#000" ry="10" rx="10" y="610" x="7.279667" height="124" width="172"/>
+        <rect opacity="0.7" fill="#111" stroke="#000" ry="10" rx="10" y="610" x="8" height="124" width="172"/>
         <text y="727.999908" x="111" class="label">Personal Quests</text>
         <g id="node52" class="scenario">
             <circle cx="37.39273" cy="630" r="10.8" class="node"/>
@@ -1007,7 +1038,7 @@
     </g>
     <g class="portrait">
         <!--chapter14-->
-        <rect stroke="#000" width="137.103769" height="54.983941" x="9.061485" y="819.849663" rx="10" ry="10"
+        <rect stroke="#000" width="137.103769" height="54.983941" x="8" y="819.849663" rx="10" ry="10"
               fill="#111" opacity="0.7"/>
         <text class="label" x="19.000013" y="868.510082">Road Events</text>
         <g id="node80" class="scenario">
@@ -1029,7 +1060,7 @@
     </g>
     <g class="portrait">
         <!--chapter13-->
-        <rect stroke="#000" width="172" height="55.483939" x="7.910828" y="749.117152" rx="10" ry="10" fill="#111"
+        <rect stroke="#000" width="172" height="55.483939" x="8" y="749.117152" rx="10" ry="10" fill="#111"
               opacity="0.7"/>
         <text class="label" x="17.498748" y="799.054016">Sealed</text>
         <g id="node72" class="scenario">
@@ -1128,5 +1159,36 @@
             <circle cx="304.207168" cy="794.084078" r="10.8" class="node"/>
             <text x="288.814438" y="789.814358">93</text>
         </g>
+    </g>
+
+    <g class="legend portrait">
+        <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="171" x="8.5" y="888"/>
+        <g class="scenario incomplete">
+            <circle class="node" cx="36" cy="910.499978" fill="black" r="10.8"/>
+            <text fill="black" x="24" y="906.499978">I</text>
+        </g>
+        <text class="label" fill="black" x="43.326181" y="914.499025">Incomplete</text>
+        <g class="scenario blocked">
+            <circle class="node" cx="131" cy="911.499978" r="10.8"/>
+            <text fill="black" x="118" y="907.5">B</text>
+            <text class="blocked" x="118" y="907.5">×</text>
+        </g>
+        <text class="label" fill="black" x="136.693369" y="915.506837">Blocked</text>
+        <g class="scenario complete">
+            <circle class="node" cx="36" cy="939.999978" r="10.8"/>
+            <text fill="black" x="23" y="936">C</text>
+        </g>
+        <text class="label" fill="black" x="42.880869" y="945.006837">Completed</text>
+        <g class="scenario required">
+            <circle class="node" cx="131" cy="940.999978" r="10.8"/>
+            <text fill="black" x="118" y="937">R</text>
+            <text class="required" x="116" y="937">!</text>
+        </g>
+        <text class="label" fill="black" x="137.685556" y="944.999025">Required</text>
+        <g class="scenario opacity-50">
+            <circle class="node" cx="36" cy="969.499978" r="10.8"/>
+            <text fill="black" x="23" y="965.499978">N</text>
+        </g>
+        <text class="label" fill="black" x="43.194147" y="973.506837">Not unlocked</text>
     </g>
 </svg>

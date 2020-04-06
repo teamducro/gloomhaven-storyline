@@ -68,7 +68,7 @@
             renderOrientation() {
                 let viewBox = '';
                 if (this.isPortrait) {
-                    viewBox = '0 -60 420 950';
+                    viewBox = '0 -60 420 1017';
                     $('#storyline .landscape').remove();
                 } else {
                     viewBox = '0 -60 610 668';
@@ -155,6 +155,10 @@
                 }
             },
             scenarioClicked(e) {
+                let $node = $(e.currentTarget);
+                if (!$node.attr('id')) {
+                    return;
+                }
                 let id = parseInt($(e.currentTarget).attr('id').replace('node', ''));
                 this.open(id);
             },
