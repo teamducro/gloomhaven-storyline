@@ -1,4 +1,6 @@
 import {ScenarioState} from "./ScenarioState";
+import Card from "./Card";
+import store from "store/dist/store.modern";
 
 export default class Scenario {
 
@@ -8,12 +10,13 @@ export default class Scenario {
         this.title = this.name.substr(this.name.indexOf(' ') + 1);
         this.coordinates = data.coordinates;
         this.is_side = data.is_side;
-        this.pages = data.pages;
-        this.requirements = data.requirements;
-        this.quests = data.quests;
+        this.pages = data.pages || [];
+        this.requirements = data.requirements || "";
+        this.quests = data.quests || [];
+        this.cards = collect(data.cards).map((card) => new Card(card));
         this.chapter_id = data.chapter_id;
         this.chapter_name = null;
-        this.region_ids = data.region_ids;
+        this.region_ids = data.region_ids || [];
         this.regions = null;
         this.choices = data.choices;
         this.choice2 = null;
@@ -104,21 +107,25 @@ export default class Scenario {
         return this.isComplete() && this.treasures.count() > this.unlockedTreasures.length;
     }
 
+    hasCard() {
+        return this.cards.count() > 0;
+    }
+
     image() {
         return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
     }
 
     store() {
-        window.localStorage.setItem(this.key(), JSON.stringify({
+        store.set(this.key(), {
             "state": this.state,
             "choice": this.choice,
             "notes": this.notes,
             "treasures": this.unlockedTreasures
-        }));
+        });
     }
 
     read() {
-        let scenario = JSON.parse(window.localStorage.getItem(this.key()));
+        let scenario = store.get(this.key());
         if (scenario) {
             this.state2 = scenario.state;
             this.choice2 = scenario.choice;

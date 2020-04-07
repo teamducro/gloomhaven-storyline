@@ -1,7 +1,13 @@
 <template>
     <modal ref="modal" title="Share Gloomhaven Storyline Tracker">
         <template v-slot:content>
-            <p class="mb-8">Share your current storyline with your friends.</p>
+            <p class="mb-2">Share your current storyline with your party members.</p>
+            <p class="mb-8">
+                <a v-clipboard:copy="url"
+                   class="copied underline text-white2-75 hover:text-white cursor-pointer transition-color duration-200">
+                    Copy the link</a>
+                or share it on one of the folowing platforms.
+            </p>
             <social-sharing :url="url"
                             title="Gloomhaven Storyline Tracker"
                             description="The spoiler free storyline tracker for Gloomhaven"
@@ -18,7 +24,7 @@
                              class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
                     </network>
 
-                    <a v-clipboard:copy="url" id="copy" class="cursor-pointer mr-6" data-tippy-content="Copied">
+                    <a v-clipboard:copy="url" class="cursor-pointer mr-6 copied">
                         <img src="img/share/copy-link.png" alt="copy-link" srcset="img/share/copy-link@2x.png 2x"
                              class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
                     </a>
@@ -28,10 +34,10 @@
                              class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
                     </network>
 
-                    <!--<network network="reddit" class=mr-2 cursor-pointer>
+                    <network network="reddit" class=mr-2 cursor-pointer>
                         <img src="img/share/reddit.png" alt="reddit" srcset="img/share/reddit@2x.png 2x"
-                        class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
-                    </network>-->
+                             class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
+                    </network>
 
                     <network network="twitter" class="cursor-pointer">
                         <img src="img/share/twitter.png" alt="twitter" srcset="img/share/twitter@2x.png 2x"
@@ -51,24 +57,27 @@
         data() {
             return {
                 url: '',
-                shareState: new ShareState
+                shareState: new ShareState,
+                copyTippy: null
             }
         },
         mounted() {
             this.$bus.$on('open-share-modal', this.open);
+
+            this.copyTippy = tippy('.copied', {
+                trigger: 'click',
+                content: 'Copied',
+                onShown(tippy) {
+                    setTimeout(() => {
+                        tippy.hide();
+                    }, 1500);
+                }
+            });
         },
         methods: {
             open() {
                 this.url = this.shareState.link();
                 this.$refs['modal'].open();
-                this.$nextTick(() => {
-                    let popups = tippy('#copy', {
-                        trigger: 'click'
-                    });
-                    setTimeout(() => {
-                        popups[0].hide();
-                    }, 3000);
-                })
             }
         }
     }

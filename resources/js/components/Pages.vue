@@ -21,13 +21,15 @@
 
 <script>
     import panzoom from "panzoom"
+    import PreloadImage from "../services/PreloadImage";
 
     export default {
         props: ['pages'],
         data() {
             return {
                 current: 0,
-                zoom: null
+                zoom: null,
+                preloadImage: new PreloadImage()
             }
         },
         mounted() {
@@ -42,7 +44,7 @@
                 return this.pages[this.current];
             },
             currentSrc() {
-                return '/img/pages/' + this.currentPage + '.jpg';
+                return this.pageSrc(this.currentPage);
             },
             hasMultiplePages() {
                 return this.pages.length > 1;
@@ -55,9 +57,21 @@
             }
         },
         methods: {
+            pageSrc(page) {
+                return '/img/pages/' + page + '.jpg';
+            },
             open() {
                 this.current = 0;
                 this.$refs['modal'].open();
+
+                // Preload other pages.
+                if (this.hasMultiplePages) {
+                    this.pages.forEach((page, index) => {
+                        if (index > 0) {
+                            this.preloadImage.handle(this.pageSrc(page));
+                        }
+                    });
+                }
             },
             prev() {
                 this.current--;
