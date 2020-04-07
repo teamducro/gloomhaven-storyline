@@ -29,7 +29,7 @@
             </dropdown>
         </div>
 
-        <ul v-if="scenarios" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4" ref="list">
+        <ul v-if="scenarios" id="scenarios" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4" ref="list">
             <li v-for="scenario in scenarios.items"
                 v-show="applyFilter(scenario)"
                 :key="scenario.id"
