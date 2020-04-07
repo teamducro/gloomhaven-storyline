@@ -46,6 +46,7 @@
             },
             loaded() {
                 this.isLoaded = true;
+                this.$emit('loaded');
             }
         }
     }
