@@ -1,23 +1,22 @@
 <template>
-    <div id="map">
-        <webp src="/img/map.jpg" alt="Gloomhaven map"></webp>
-        <template v-if="scenarios">
-            <webp v-for="scenario in scenarios.items"
-                  v-if="scenario.isVisible()"
-                  :src="scenario.image()"
-                  :key="scenario.id"
-                  :id="'s' + scenario.id"
-                  :animate="true"
-                  class="absolute scenario"
-                  :style="{
-                      'left': scenario.coordinates.x + '%',
-                      'top': scenario.coordinates.y + '%',
-                      'transform': 'scale('+scale+')',
-                      'padding-top': scale*2+'%',
-                      'padding-left': scale*2+'%'
-                  }"
-                  :alt="scenario.name"></webp>
-        </template>
+    <div id="map-container" class="h-screen w-screen overflow-hidden">
+        <div id="map">
+            <webp src="/img/map.jpg" alt="Gloomhaven map"></webp>
+            <template v-if="scenarios">
+                <webp v-for="scenario in scenarios.items"
+                      v-if="scenario.isVisible()"
+                      :src="scenario.image()"
+                      :key="scenario.id"
+                      :id="'s' + scenario.id"
+                      :animate="true"
+                      :alt="scenario.name"
+                      class="absolute scenario"
+                      :style="{
+                          'left': scenario.coordinates.x + '%',
+                          'top': scenario.coordinates.y + '%',
+                      }"/>
+            </template>
+        </div>
     </div>
 </template>
 
@@ -30,16 +29,18 @@
             return {
                 map: null,
                 scenarios: null,
-                factor: 1,
-                scale: 0.79
+                scale: 0.79,
+                stickers: collect()
             }
         },
         mounted() {
+            this.setScale();
             this.map = panzoom(document.querySelector('#map'), {
-                minZoom: 1,
-                maxZoom: 6,
+                minZoom: this.scale,
+                maxZoom: 4,
                 bounds: true
             });
+            this.map.zoomTo(0, 0, this.scale);
 
             if (app.scenarios) {
                 this.setScenarios();
@@ -58,11 +59,14 @@
             $('#map').off('click', '.scenario', this.scenarioClicked);
         },
         methods: {
+            setScale() {
+                this.scale = $(window).width() / 2484;
+            },
             setScenarios() {
-                const base = 0.79;
-                this.factor = $(window).width() / 2484;
+                this.setScale();
+                this.map.setMinZoom(this.scale);
+
                 this.scenarios = app.scenarios;
-                this.scale = this.factor * base;
 
                 // Show tooltip on hover
                 this.scenarios.each((scenario) => {
@@ -90,8 +94,11 @@
 
 <style lang="scss">
     #map {
+        width: 2484px;
+        height: 2160px;
+
         .scenario {
-            transform-origin: 0 0;
+            transform: scale(0.79);
 
             &:hover {
                 cursor: pointer;
