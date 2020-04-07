@@ -16,7 +16,7 @@
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">
-                    <div class="flex w-full mb-2">
+                    <div class="xs:flex w-full mb-2">
                         <radio v-if="scenario.is_side"
                                class="whitespace-no-wrap"
                                id="hidden" group="states" label="Not unlocked"
@@ -24,23 +24,26 @@
                                :checked="scenario.isHidden()"
                                @changed="stateChanged"
                         ></radio>
-                        <radio id="incomplete" group="states" label="Incomplete"
-                               :key="'incomplete-' + stateKey"
-                               :checked="scenario.isIncomplete()"
-                               :disabled="scenario.isBlocked() || scenario.isRequired()"
-                               @changed="stateChanged"
-                        ></radio>
-                        <radio id="complete" group="states" label="Complete"
-                               :key="'complete-' + stateKey"
-                               :checked="scenario.isComplete()"
-                               :disabled="scenario.isBlocked() || scenario.isRequired()"
-                               @changed="stateChanged"
-                        ></radio>
-                        <div v-if="scenario.isVisible()"
-                             class="hidden xs:block ml-auto w-20">
-                            <webp :src="scenario.image()"
-                                  :animate="true"
-                                  :alt="scenario.name"/>
+                        <div class="flex w-full">
+                            <radio id="incomplete" group="states" label="Incomplete"
+                                   :key="'incomplete-' + stateKey"
+                                   :checked="scenario.isIncomplete()"
+                                   :disabled="scenario.isBlocked() || scenario.isRequired()"
+                                   @changed="stateChanged"
+                            ></radio>
+                            <radio id="complete" group="states" label="Complete"
+                                   :key="'complete-' + stateKey"
+                                   :checked="scenario.isComplete()"
+                                   :disabled="scenario.isBlocked() || scenario.isRequired()"
+                                   @changed="stateChanged"
+                            ></radio>
+                            <div v-if="scenario.isVisible()"
+                                 class="hidden sm:block ml-auto w-20"
+                                 :class="{'sm:block': scenario.is_side, 'xs:block': !scenario.is_side}">
+                                <webp :src="scenario.image()"
+                                      :animate="true"
+                                      :alt="scenario.name"/>
+                            </div>
                         </div>
                     </div>
 
@@ -127,7 +130,8 @@
                                 <i class="material-icons mdc-button__icon">menu_book</i>
                                 <span class="mdc-button__label">Pages</span>
                             </button>
-                            <div class="xs:hidden ml-auto w-20">
+                            <div class="ml-auto w-20"
+                                 :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
                                 <webp :src="scenario.image()"
                                       :animate="true"
                                       :alt="scenario.name"/>
