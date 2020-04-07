@@ -9,7 +9,6 @@
                 },
                 on: {
                     afterEnter(element) {
-                        // eslint-disable-next-line no-param-reassign
                         element.style.height = 'auto';
                     },
                     enter(element) {
