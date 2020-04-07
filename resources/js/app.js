@@ -8,6 +8,7 @@ import VueRouter from 'vue-router'
 import Story from "./components/Story";
 import Scenarios from "./components/Scenarios";
 import VueAnalytics from 'vue-analytics';
+import Map from "./components/Map";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -23,7 +24,8 @@ files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(
 const routes = [
     {path: '/', redirect: '/story'},
     {path: '/story', component: Story},
-    {path: '/scenarios', component: Scenarios}
+    {path: '/scenarios', component: Scenarios},
+    {path: '/map', component: Map},
 ];
 const router = new VueRouter({routes});
 
@@ -88,8 +90,11 @@ window.app = new Vue({
             this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
 
             window.addEventListener('resize', _.debounce(() => {
-                this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
-                this.$bus.$emit('orientation-changed', this.isPortrait);
+                const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+                if (this.isPortrait !== isPortrait) {
+                    this.$bus.$emit('orientation-changed', this.isPortrait);
+                }
+                this.$bus.$emit('windows-resized');
             }, 300));
             this.$bus.$emit('orientation-changed', this.isPortrait);
         }

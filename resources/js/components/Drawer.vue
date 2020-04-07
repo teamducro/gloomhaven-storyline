@@ -19,6 +19,13 @@
                         </li>
 
                         <li @click="toggle">
+                            <router-link to="map" class="mdc-list-item" active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">map</i>
+                                <span class="mdc-list-item__text">Map</span>
+                            </router-link>
+                        </li>
+
+                        <li @click="toggle">
                             <router-link to="scenarios" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">list</i>
                                 <span class="mdc-list-item__text">Scenarios</span>

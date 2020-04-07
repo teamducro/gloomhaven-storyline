@@ -111,6 +111,10 @@ export default class Scenario {
         return this.cards.count() > 0;
     }
 
+    image() {
+        return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
+    }
+
     store() {
         store.set(this.key(), {
             "state": this.state,
