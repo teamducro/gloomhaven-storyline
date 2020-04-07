@@ -90,10 +90,8 @@ window.app = new Vue({
             this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
 
             window.addEventListener('resize', _.debounce(() => {
-                const isPortrait = window.matchMedia("(orientation: portrait)").matches;
-                if (this.isPortrait !== isPortrait) {
-                    this.$bus.$emit('orientation-changed', this.isPortrait);
-                }
+                this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
+                this.$bus.$emit('orientation-changed', this.isPortrait);
                 this.$bus.$emit('windows-resized');
             }, 300));
             this.$bus.$emit('orientation-changed', this.isPortrait);
