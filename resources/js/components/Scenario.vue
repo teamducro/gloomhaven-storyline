@@ -6,7 +6,7 @@
                      :class="{'pb-2': scenario.regions, 'pb-4': !scenario.regions}">
                     <h2 class="mdc-dialog__title p-0 leading-none">{{ scenario.isVisible() ? scenario.name :
                         '#' + scenario.id }}
-                        <span class="text-sm text-white2-50">{{ scenario.coordinates }}</span>
+                        <span class="text-sm text-white2-50">{{ scenario.coordinates.name }}</span>
                         <button type="button" data-mdc-dialog-action="close"
                                 class="mdc-button absolute right-0 top-0 mt-4">
                             <i class="material-icons">close</i>
@@ -38,8 +38,9 @@
                                    @changed="stateChanged"
                             ></radio>
                             <div v-if="scenario.isVisible()"
-                                 class="hidden sm:block ml-auto w-20">
-                                <webp :src="'/img/scenarios/' + scenario.id + '.png'"
+                                 class="hidden sm:block ml-auto w-20"
+                                 :class="{'sm:block': scenario.is_side, 'xs:block': !scenario.is_side}">
+                                <webp :src="scenario.image()"
                                       :animate="true"
                                       :alt="scenario.name"/>
                             </div>
@@ -129,8 +130,9 @@
                                 <i class="material-icons mdc-button__icon">menu_book</i>
                                 <span class="mdc-button__label">Pages</span>
                             </button>
-                            <div class="sm:hidden ml-auto w-20">
-                                <webp :src="'/img/scenarios/' + scenario.id + '.png'"
+                            <div class="ml-auto w-20"
+                                 :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
+                                <webp :src="scenario.image()"
                                       :animate="true"
                                       :alt="scenario.name"/>
                             </div>
