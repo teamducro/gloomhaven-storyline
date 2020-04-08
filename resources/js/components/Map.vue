@@ -29,6 +29,7 @@
         data() {
             return {
                 map: null,
+                mapTouch: null,
                 mapImage: '/img/map-lowres.jpg',
                 highres: '/img/map-highres.jpg',
                 scenarios: null,
@@ -53,6 +54,12 @@
             this.$bus.$on('scenarios-updated', this.setScenarios);
             this.$bus.$on('windows-resized', this.setScenarios);
             $('#map').on('click', '.scenario', this.scenarioClicked);
+            this.mapTouch = new Hammer(document.getElementById('map'));
+            this.mapTouch.on('tap', (e) => {
+                if (e.target.id.startsWith('s')) {
+                    this.scenarioClicked(e);
+                }
+            });
 
             this.$nextTick(() => {
                 this.preloadImage.handle(this.highres, () => {
@@ -67,6 +74,7 @@
             this.$bus.$off('scenarios-updated', this.setScenarios);
             this.$bus.$off('windows-resized', this.setScenarios);
             $('#map').off('click', '.scenario', this.scenarioClicked);
+            this.mapTouch.destroy();
         },
         methods: {
             setScale() {
@@ -90,7 +98,7 @@
                 });
             },
             scenarioClicked(e) {
-                let id = parseInt($(e.currentTarget).attr('id').replace('s', ''));
+                let id = parseInt(e.target.id.replace('s', ''));
                 this.open(id);
             },
             open(id) {
