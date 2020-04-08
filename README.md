@@ -6,7 +6,7 @@ The spoiler free storyline tracker for Gloomhaven
 
 Apart from the minor bugs and enhancements we consider these big features:
 
-* [ ] Map with scenario stickers
+* [x] Map with scenario stickers
 * [ ] Translations
 * [ ] Solo scenarios
 * [ ] Support for Forgotten Circles
@@ -23,3 +23,5 @@ Thanks to these creators for their content:
   https://boardgamegeek.com/filepage/177419/scenario-and-storyline-flowchart
 - Scenario summaries
   https://boardgamegeek.com/geeklist/237840/gloomhaven-quest-log
+- Map coordinates
+  https://www.reddit.com/r/Gloomhaven/comments/7aal60/online_tracker_for_campaign_party_and_characters/
