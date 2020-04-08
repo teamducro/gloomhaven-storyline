@@ -7,6 +7,7 @@ The spoiler free storyline tracker for Gloomhaven
 Apart from the minor bugs and enhancements we consider these big features:
 
 * [x] Map with scenario stickers
+* [ ] Global and party achievements
 * [ ] Translations
 * [ ] Solo scenarios
 * [ ] Support for Forgotten Circles
