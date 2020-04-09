@@ -1,9 +1,10 @@
 <template>
     <div>
-        <modal ref="modal" :title="'Page #' + currentPage">
+        <modal ref="modal" :title="'Page #' + currentPage" :full-screen="true">
             <template v-slot:content>
-                <div class="overflow-hidden outline-none">
-                    <webp id="page" :src="currentSrc"
+                <div class="w-full h-full outline-none">
+                    <webp id="page"
+                          :src="currentSrc"
                           :alt="'Page #' + currentPage"></webp>
                 </div>
             </template>

@@ -1,7 +1,7 @@
 <template>
     <div class="mdc-dialog" ref="modal" aria-modal="true">
         <div class="mdc-dialog__container z-10">
-            <div class="mdc-dialog__surface relative">
+            <div class="mdc-dialog__surface relative" :class="{'full-screen': fullScreen}">
                 <slot name="body">
                     <h2 class="mdc-dialog__title" :class="{'pr-16': closeButton}">{{ title }}
                         <button v-if="closeButton" type="button" data-mdc-dialog-action="close"
@@ -36,6 +36,10 @@
             closeButton: {
                 type: Boolean,
                 default: true
+            },
+            fullScreen: {
+                type: Boolean,
+                default: false
             }
         },
         data() {
@@ -72,6 +76,18 @@
 <style lang="scss">
     .mdc-dialog .mdc-dialog__surface {
         width: calc(100vw - 32px);
+
+        &.full-screen {
+            width: 100vw;
+            max-width: 100vw;
+            height: 100vh;
+            max-height: 100vh;
+
+            .mdc-dialog__content {
+                overflow: hidden;
+                padding: 0;
+            }
+        }
     }
 
     @media (min-width: 592px) {
