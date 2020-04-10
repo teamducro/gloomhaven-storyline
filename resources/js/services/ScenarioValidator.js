@@ -63,13 +63,27 @@ export default class ScenarioValidator {
 
         let states = this.blockedStates(scenario);
 
-        if (scenario.isBlocked()) {
-            if (states.has(ScenarioState.complete) === false) {
-                scenario.state = ScenarioState.incomplete;
+        if (scenario.blocked_all === false) {
+            if (scenario.isBlocked()) {
+                if (states.has(ScenarioState.complete) === false) {
+                    scenario.state = ScenarioState.incomplete;
+                }
+            } else {
+                if (states.has(ScenarioState.complete) && !scenario.isComplete() && this.linkedStates(scenario).has(ScenarioState.complete)) {
+                    scenario.state = ScenarioState.blocked;
+                }
             }
         } else {
-            if (states.has(ScenarioState.complete) && !scenario.isComplete() && this.linkedStates(scenario).has(ScenarioState.complete)) {
-                scenario.state = ScenarioState.blocked;
+            let blockedScenarios = this.scenarioRepository.findMany(scenario.blocked_by);
+            let blockedScenariosCount = blockedScenarios.where("state", ScenarioState.complete).count();
+            if (scenario.isBlocked()) {
+                if (blockedScenariosCount !== blockedScenarios.count()) {
+                    scenario.state = ScenarioState.incomplete;
+                }
+            } else {
+                if (blockedScenariosCount === blockedScenarios.count() && !scenario.isComplete() && this.linkedStates(scenario).has(ScenarioState.complete)) {
+                    scenario.state = ScenarioState.blocked;
+                }
             }
         }
     }

@@ -26,6 +26,7 @@ export default class Scenario {
         this.links_to = collect(data.links_to);
         this.linked_from = collect(data.linked_from);
         this.blocked_by = collect(data.blocked_by);
+        this.blocked_all = data.blocked_all || false;
         this.required_by = collect(data.required_by);
         this.required_all = data.required_all || false;
         this.treasures = collect(data.treasures);
