@@ -1718,9 +1718,6 @@
             "links_to": [
                 56
             ],
-            "treasures": {
-                "45": "Random Item Design"
-            },
             "region_ids": [
                 2
             ],
@@ -1745,6 +1742,9 @@
             "linked_from": [
                 55
             ],
+            "treasures": {
+                "45": "Random Item Design"
+            },
             "region_ids": [
                 2
             ],
