@@ -93,8 +93,15 @@ window.app = new Vue({
                 this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
                 this.$bus.$emit('orientation-changed', this.isPortrait);
                 this.$bus.$emit('windows-resized');
+
+                this.updateViewportHeight();
             }, 300));
             this.$bus.$emit('orientation-changed', this.isPortrait);
+            this.updateViewportHeight();
+        },
+        updateViewportHeight() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
         }
     }
 });
