@@ -26,8 +26,9 @@ body {
 }
 
 .link {
+    @apply underline text-white2-75 cursor-pointer duration-200 transition-colors;
     &:hover {
-        @apply underline;
+        @apply text-white;
     }
 }
 

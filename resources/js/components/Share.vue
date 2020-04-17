@@ -4,7 +4,7 @@
             <p class="mb-2">Share your current storyline with your party members.</p>
             <p class="mb-8">
                 <a v-clipboard:copy="url"
-                   class="copied underline text-white2-75 hover:text-white cursor-pointer transition-color duration-200">
+                   class="copied link">
                     Copy the link</a>
                 or share it on one of the folowing platforms.
             </p>
