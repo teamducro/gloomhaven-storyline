@@ -62,6 +62,14 @@
                         </li>
 
                         <li>
+                            <a class="mdc-list-item" @click="$bus.$emit('open-credits-modal')">
+                                <i class="material-icons mdc-list-item__graphic"
+                                   aria-hidden="true">emoji_people</i>
+                                <span class="mdc-list-item__text">Credits</span>
+                            </a>
+                        </li>
+
+                        <li>
                             <a class="mdc-list-item" target="_blank"
                                href="https://github.com/dducro/gloomhaven-storyline">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">code</i>
