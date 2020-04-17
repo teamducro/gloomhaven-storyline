@@ -4,7 +4,7 @@
             <p class="mb-2">Thanks to these creators for their content.</p>
             <ul class="list-disc ml-4">
                 <li class="py-1">
-                    <span class="mr-1">Scenario summaries by
+                    <span class="mr-1 block sm:inline">Scenario summaries by
                         <a class="link" href="https://boardgamegeek.com/user/DoctorBandage" target="_blank">DoctorBandage</a>:
                     </span>
                     <a class="link" target="_blank"
@@ -13,7 +13,7 @@
                     </a>
                 </li>
                 <li class="py-1">
-                    <span class="mr-1">Chart layout by
+                    <span class="mr-1 block sm:inline">Chart layout by
                         <a class="link" href="https://boardgamegeek.com/user/grimtoothy" target="_blank">Grimtoothy</a>:
                     </span>
                     <a class="link" target="_blank"
@@ -22,9 +22,10 @@
                     </a>
                 </li>
                 <li class="py-1">
-                    <span class="mr-1">Map coordinates by
+                    <span class="mr-1 block sm:inline">Map coordinates by
                         <a class="link" href="https://boardgamegeek.com/user/Dargalin"
-                           target="_blank">Dargalin</a>:</span>
+                           target="_blank">Dargalin</a>:
+                    </span>
                     <a class="link" target="_blank"
                        href="https://boardgamegeek.com/thread/1880969/online-tracker-campaign-party-and-characters">
                         Online map & campaign tracker
