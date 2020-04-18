@@ -1,20 +1,16 @@
 <template>
     <div>
-        <modal ref="modal" :title="'Page #' + currentPage" :full-screen="true">
+        <modal ref="modal" :title="title" :full-screen="true">
             <template v-slot:content>
                 <div class="w-full h-full outline-none">
-                    <webp id="page"
-                          :src="currentSrc"
-                          :alt="'Page #' + currentPage"></webp>
+                    <div id="pages" class="flex flex-col md:flex-row">
+                        <webp v-for="page in pages"
+                              :src="pageSrc(page)"
+                              :key="'page' + page"
+                              :alt="'Page #' + page"
+                              :class="{'md:w-1/2': hasMultiplePages}"/>
+                    </div>
                 </div>
-            </template>
-            <template v-if="hasMultiplePages" v-slot:buttons>
-                <button type="button" class="mdc-button mdc-dialog__button" @click="prev" :disabled="hasPrev">
-                    <i class="material-icons">navigate_before</i>
-                </button>
-                <button type="button" class="mdc-button mdc-dialog__button" @click="next" :disabled="hasNext">
-                    <i class="material-icons">navigate_next</i>
-                </button>
             </template>
         </modal>
     </div>
@@ -25,36 +21,31 @@
     import PreloadImage from "../services/PreloadImage";
 
     export default {
-        props: ['pages'],
+        props: {
+            pages: {
+                type: Array,
+                default: []
+            },
+        },
         data() {
             return {
-                current: 0,
                 zoom: null,
                 preloadImage: new PreloadImage()
             }
         },
         mounted() {
-            this.zoom = panzoom(document.querySelector('#page'), {
+            this.zoom = panzoom(document.querySelector('#pages'), {
                 minZoom: 1,
-                maxZoom: 3,
+                maxZoom: 4,
                 bounds: true
             });
         },
         computed: {
-            currentPage() {
-                return this.pages[this.current];
-            },
-            currentSrc() {
-                return this.pageSrc(this.currentPage);
-            },
             hasMultiplePages() {
                 return this.pages.length > 1;
             },
-            hasPrev() {
-                return this.current <= 0;
-            },
-            hasNext() {
-                return this.current >= this.pages.length - 1;
+            title() {
+                return 'Page #' + this.pages.join(' / ');
             }
         },
         methods: {
@@ -62,36 +53,21 @@
                 return '/img/pages/' + page + '.jpg';
             },
             open() {
-                this.current = 0;
                 this.$refs['modal'].open();
                 this.centerPage();
-
-                // Preload other pages.
-                if (this.hasMultiplePages) {
-                    this.pages.forEach((page, index) => {
-                        if (index > 0) {
-                            this.preloadImage.handle(this.pageSrc(page));
-                        }
-                    });
-                }
             },
             centerPage() {
-                const pageWidth = $('#page').width();
-                if (window.innerWidth > pageWidth) {
-                    this.zoom.moveBy((window.innerWidth - pageWidth) / 2, 0);
+                const pageWidth = $('#pages img').first().width();
+                if (!this.hasMultiplePages && window.innerWidth > pageWidth) {
+                    this.zoom.moveTo((window.innerWidth - pageWidth) / 2, 0);
+                } else {
+                    this.zoom.moveTo(0, 0);
                 }
             },
-            prev() {
-                this.current--;
-                if (this.current < 0) {
-                    this.current = this.pages.length - 1;
-                }
-            },
-            next() {
-                this.current++;
-                if (this.current > this.pages.length - 1) {
-                    this.current = 0;
-                }
+            preload() {
+                this.pages.forEach((page) => {
+                    this.preloadImage.handle(this.pageSrc(page));
+                })
             }
         }
     }
