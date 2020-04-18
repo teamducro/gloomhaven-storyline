@@ -64,6 +64,7 @@
             open() {
                 this.current = 0;
                 this.$refs['modal'].open();
+                this.centerPage();
 
                 // Preload other pages.
                 if (this.hasMultiplePages) {
@@ -72,6 +73,12 @@
                             this.preloadImage.handle(this.pageSrc(page));
                         }
                     });
+                }
+            },
+            centerPage() {
+                const pageWidth = $('#page').width();
+                if (window.innerWidth > pageWidth) {
+                    this.zoom.moveBy((window.innerWidth - pageWidth) / 2, 0);
                 }
             },
             prev() {
