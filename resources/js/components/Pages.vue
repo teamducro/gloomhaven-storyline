@@ -45,7 +45,7 @@
                 return this.pages.length > 1;
             },
             title() {
-                return 'Page #' + this.pages.join(' / ');
+                return 'Page #' + this.pages.join(', ');
             }
         },
         methods: {
