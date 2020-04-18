@@ -4,13 +4,11 @@
             <template v-slot:content>
                 <div class="w-full h-full outline-none">
                     <div id="pages" class="flex flex-col md:flex-row">
-                        <webp :src="firstSrc"
-                              :alt="'Page #' + firstPage"
+                        <webp v-for="page in pages"
+                              :src="pageSrc(page)"
+                              :key="'page' + page"
+                              :alt="'Page #' + page"
                               :class="{'md:w-1/2': hasMultiplePages}"/>
-                        <webp v-if="hasMultiplePages"
-                              :src="secondSrc"
-                              :alt="'Page #' + secondPage"
-                              class="md:w-1/2"/>
                     </div>
                 </div>
             </template>
@@ -43,29 +41,11 @@
             });
         },
         computed: {
-            firstPage() {
-                return _.first(this.pages);
-            },
-            secondPage() {
-                return _.last(this.pages);
-            },
-            firstSrc() {
-                return this.pageSrc(this.firstPage);
-            },
-            secondSrc() {
-                return this.pageSrc(this.secondPage);
-            },
             hasMultiplePages() {
                 return this.pages.length > 1;
             },
             title() {
-                let title = 'Page #' + this.firstPage;
-
-                if (this.hasMultiplePages) {
-                    title + ' / ' + this.secondPage;
-                }
-
-                return title;
+                return 'Page #' + this.pages.join(' / ');
             }
         },
         methods: {
@@ -83,6 +63,11 @@
                 } else {
                     this.zoom.moveTo(0, 0);
                 }
+            },
+            preload() {
+                this.pages.forEach((page) => {
+                    this.preloadImage.handle(this.pageSrc(page));
+                })
             }
         }
     }

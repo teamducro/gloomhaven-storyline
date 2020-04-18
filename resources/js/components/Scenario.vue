@@ -272,7 +272,7 @@
                 this.$nextTick(() => {
                     this.$refs['modal'].open();
                     this.$nextTick(() => {
-                        this.preloadImage.handle(this.$refs['pages'].firstSrc);
+                        this.$refs['pages'].preload();
                         const notes = this.$refs['notes'];
                         if (notes) {
                             new MDCTextField(notes);
