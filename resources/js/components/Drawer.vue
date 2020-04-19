@@ -28,7 +28,7 @@
                         <li @click="toggle">
                             <router-link to="scenarios" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">list</i>
-                                <span class="mdc-list-item__text">Scenarios</span>
+                                <span class="mdc-list-item__text">Scenario list</span>
                             </router-link>
                         </li>
 
