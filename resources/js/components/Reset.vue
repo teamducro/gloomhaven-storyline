@@ -16,6 +16,8 @@
 </template>
 
 <script>
+    import store from "store/dist/store.modern";
+
     export default {
         data() {
             return {}
@@ -28,7 +30,7 @@
                 this.$refs['modal'].open();
             },
             reset() {
-                localStorage.clear();
+                store.clearAll();
                 app.fetchScenarios();
             }
         }
