@@ -1,10 +1,11 @@
+import AchievementRepository from "./AchievementRepository";
 import scenarios from '../scenarios.json';
 import Scenario from "../models/Scenario";
 import ScenarioValidator from "../services/ScenarioValidator";
 import {ScenarioState} from "../models/ScenarioState";
+import QuestValidator from "../services/QuestValidator";
 
 export default class ScenarioRepository {
-
     fetch() {
         return collect(scenarios.scenarios).map((scenario) => {
             scenario = new Scenario(scenario);
@@ -17,6 +18,9 @@ export default class ScenarioRepository {
 
     changeState(scenario, state) {
         scenario.state = state;
+        if (state === ScenarioState.complete) {
+            this.processAchievements(scenario);
+        }
 
         this.scenarioValidator.validate();
     }
@@ -50,6 +54,19 @@ export default class ScenarioRepository {
         return false;
     }
 
+    processAchievements(scenario) {
+        if (scenario.achievements_awarded) {
+            scenario.achievements_awarded.each(achievement => {
+                this.achievementRepository.gain(achievement);
+            })
+        }
+        if (scenario.achievements_lost) {
+            scenario.achievements_lost.each(achievement => {
+                this.achievementRepository.lose(achievement);
+            })
+        }
+    }
+
     choice(scenario) {
         return this.findMany(scenario.choices).firstWhere('state', '!=', ScenarioState.hidden);
     }
@@ -70,6 +87,10 @@ export default class ScenarioRepository {
         return collect().wrap(list).map((id) => {
             return this.find(id);
         });
+    }
+
+    findWhere(filterCallback) {
+        return app.scenarios.filter(filterCallback);
     }
 
     fetchChapter(scenario) {
@@ -100,5 +121,9 @@ export default class ScenarioRepository {
 
     get scenarioValidator() {
         return this.scenarioValidator2 || (this.scenarioValidator2 = new ScenarioValidator);
+    }
+
+    get achievementRepository() {
+        return this._achievementRepository || (this._achievementRepository = new AchievementRepository());
     }
 }

@@ -21,7 +21,10 @@
             ],
             "treasures": {
                 "7": "Random Side Scenario"
-            }
+            },
+            "achievements_awarded": [
+                "PFS","GAL"
+            ]
         },
         {
             "id": 2,
@@ -178,6 +181,10 @@
             },
             "region_ids": [
                 7
+            ],
+            "achievements_awarded": [
+                "PJP",
+                "PDB"
             ]
         },
         {
@@ -279,6 +286,9 @@
             ],
             "region_ids": [
                 4
+            ],
+            "achievements_awarded": [
+                "GTDI"
             ]
         },
         {
@@ -312,7 +322,10 @@
             ],
             "treasures": {
                 "11": "Random Item Design"
-            }
+            },
+            "achievements_awarded": [
+                "PADE"
+            ]
         },
         {
             "id": 11,
@@ -349,6 +362,9 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GTMF"
             ]
         },
         {
@@ -387,6 +403,10 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GCRE",
+                "GEOI"
             ]
         },
         {
@@ -508,6 +528,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GTPE"
             ]
         },
         {
@@ -571,6 +594,9 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GEOI"
             ]
         },
         {
@@ -606,6 +632,9 @@
             "region_ids": [
                 3,
                 7
+            ],
+            "achievements_awarded": [
+                "PSC"
             ]
         },
         {
@@ -670,7 +699,11 @@
             ],
             "treasures": {
                 "15": "Gain \"Pendant of Dark Pacts\" (Item 045)"
-            }
+            },
+            "achievements_awarded": [
+                "GTRN",
+                "GAR2"
+            ]
         },
         {
             "id": 22,
@@ -700,7 +733,10 @@
             ],
             "treasures": {
                 "21": "Suffer 5 Damage"
-            }
+            },
+            "achievements_awarded": [
+                "GAR"
+            ]
         },
         {
             "id": 23,
@@ -732,6 +768,9 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GEOG"
             ]
         },
         {
@@ -794,6 +833,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "PTVC"
             ]
         },
         {
@@ -829,6 +871,10 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GAT",
+                "PTR"
             ]
         },
         {
@@ -854,6 +900,9 @@
             "quests": [
                 8,
                 18
+            ],
+            "achievements_awarded": [
+                "GTRN"
             ]
         },
         {
@@ -888,6 +937,9 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "PJP"
             ]
         },
         {
@@ -915,6 +967,9 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "PAI"
             ]
         },
         {
@@ -943,6 +998,9 @@
             ],
             "region_ids": [
                 6
+            ],
+            "achievements_awarded": [
+                "PTSV"
             ]
         },
         {
@@ -983,6 +1041,9 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "PFC"
             ]
         },
         {
@@ -1045,6 +1106,10 @@
             ],
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "PTVT",
+                "PTDT"
             ]
         },
         {
@@ -1075,6 +1140,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "PTDC"
             ]
         },
         {
@@ -1114,6 +1182,9 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GAC"
             ]
         },
         {
@@ -1150,6 +1221,13 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GCRD",
+                "GAL"
+            ],
+            "achievements_lost": [
+                "PADE"
             ]
         },
         {
@@ -1217,6 +1295,9 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "PTED"
             ]
         },
         {
@@ -1248,6 +1329,12 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GTDS"
+            ],
+            "achievements_lost": [
+                "PTDC"
             ]
         },
         {
@@ -1285,6 +1372,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "PATD"
             ]
         },
         {
@@ -1316,6 +1406,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GAT"
             ]
         },
         {
@@ -1347,6 +1440,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GTVF"
             ]
         },
         {
@@ -1378,6 +1474,9 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "PRA"
             ]
         },
         {
@@ -1403,6 +1502,9 @@
             ],
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "GEOC"
             ]
         },
         {
@@ -1464,6 +1566,12 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GTVS"
+            ],
+            "achievements_lost": [
+                "PTVC"
             ]
         },
         {
@@ -1495,6 +1603,9 @@
             },
             "region_ids": [
                 6
+            ],
+            "achievements_awarded": [
+                "PTTT"
             ]
         },
         {
@@ -1525,6 +1636,9 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "GWB"
             ]
         },
         {
@@ -1580,6 +1694,9 @@
             ],
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GCRM"
             ]
         },
         {
@@ -1615,6 +1732,12 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GTRN"
+            ],
+            "achievements_lost": [
+                "PADE"
             ]
         },
         {
@@ -1945,6 +2068,9 @@
             },
             "region_ids": [
                 6
+            ],
+            "achievements_awarded": [
+                "GEOC"
             ]
         },
         {
@@ -1963,6 +2089,9 @@
             "chapter_id": 12,
             "region_ids": [
                 4
+            ],
+            "achievements_awarded": [
+                "GAT"
             ]
         },
         {
@@ -1985,6 +2114,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GEOC"
             ]
         },
         {
@@ -2002,7 +2134,10 @@
             "chapter_id": 12,
             "treasures": {
                 "14": "Gain 10 Experience"
-            }
+            },
+            "achievements_awarded": [
+                "GAT"
+            ]
         },
         {
             "id": 68,
@@ -2022,6 +2157,9 @@
             },
             "region_ids": [
                 3
+            ],
+            "achievements_awarded": [
+                "GAOO"
             ]
         },
         {
@@ -2344,6 +2482,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GAT"
             ]
         },
         {
@@ -2417,6 +2558,9 @@
             "cards": [
                 "C-47",
                 "C-63"
+            ],
+            "achievements_awarded": [
+                "PTPS"
             ]
         },
         {
@@ -2580,6 +2724,9 @@
             ],
             "cards": [
                 "C-78"
+            ],
+            "achievements_awarded": [
+                "PTTN"
             ]
         },
         {

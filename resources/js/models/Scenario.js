@@ -33,6 +33,8 @@ export default class Scenario {
         this.treasures_from = collect(data.treasures_from);
         this.treasures_to = collect(data.treasures_to);
         this.unlockedTreasures = [];
+        this.achievements_awarded = collect(data.achievements_awarded);
+        this.achievements_lost = collect(data.achievements_lost);
         this.read();
     }
 
