@@ -4,11 +4,14 @@ import SocialSharing from 'vue-social-sharing';
 import VueClipboard from 'vue-clipboard2';
 import ShareState from "./services/ShareState";
 import QuestRepository from "./repositories/QuestRepository";
+import AchievementRepository from "./repositories/AchievementRepository";
 import VueRouter from 'vue-router'
 import Story from "./components/Story";
 import Scenarios from "./components/Scenarios";
+import Achievements from "./components/Achievements";
 import VueAnalytics from 'vue-analytics';
 import Map from "./components/Map";
+import Achievement from "./models/Achievement";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -24,8 +27,10 @@ files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(
 const routes = [
     {path: '/', redirect: '/story'},
     {path: '/story', component: Story},
+    {path: '/story/:id', component: Story},
     {path: '/scenarios', component: Scenarios},
     {path: '/map', component: Map},
+    {path: '/achievements', component: Achievements},
 ];
 const router = new VueRouter({routes});
 
@@ -43,6 +48,7 @@ window.app = new Vue({
         return {
             scenarios: null,
             quests: null,
+            achievements: null,
             webpSupported: true,
             hasMouse: false,
             isPortrait: true
@@ -53,9 +59,17 @@ window.app = new Vue({
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
         this.fetchScenarios();
+        this.fetchAchievements();
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
     },
     methods: {
+        fetchAchievements() {
+            let achievementRepository = new AchievementRepository;
+            this.achievements = achievementRepository.fetch();
+            this.$nextTick(() => {
+                this.$bus.$emit('achievements-updated');
+            });
+        },
         fetchScenarios() {
             let scenarioRepository = new ScenarioRepository;
             let questRepository = new QuestRepository;

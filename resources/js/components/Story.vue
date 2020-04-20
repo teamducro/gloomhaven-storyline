@@ -17,6 +17,11 @@
     import tippy from 'tippy.js';
 
     export default {
+        watch: {
+            $route(to, from) {
+                this.open(parseInt(to.params.id, 10));
+            }
+        },
         data() {
             return {
                 scenarioRepository: new ScenarioRepository(),
@@ -26,6 +31,12 @@
             }
         },
         mounted() {
+            let id = parseInt(this.$route.params.id, 10);
+            if (!isNaN(id)) {
+                this.$bus.$emit('open-scenario', {
+                    id: id
+                });
+            }
             if (app.isPortrait !== undefined) {
                 this.isPortrait = app.isPortrait;
                 this.$nextTick(() => {

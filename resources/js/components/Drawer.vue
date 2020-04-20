@@ -12,23 +12,30 @@
                 <div class="mdc-list-group">
                     <ul ref="list" class="mdc-list">
                         <li @click="toggle">
-                            <router-link to="story" class="mdc-list-item" active-class="mdc-list-item--activated">
+                            <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
                                 <span class="mdc-list-item__text">Storyline</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="map" class="mdc-list-item" active-class="mdc-list-item--activated">
+                            <router-link to="/map" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">map</i>
                                 <span class="mdc-list-item__text">Map</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="scenarios" class="mdc-list-item" active-class="mdc-list-item--activated">
+                            <router-link to="/scenarios" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">list</i>
                                 <span class="mdc-list-item__text">Scenario list</span>
+                            </router-link>
+                        </li>
+
+                        <li @click="toggle">
+                            <router-link to="/achievements" class="mdc-list-item" active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">emoji_events</i>
+                                <span class="mdc-list-item__text">Achievements</span>
                             </router-link>
                         </li>
 
