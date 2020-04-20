@@ -25,13 +25,13 @@
                                @changed="stateChanged"
                         ></radio>
                         <div class="flex w-full">
-                            <radio id="incomplete" group="states" label="Incomplete"
+                            <radio id="incomplete" group="states" :label="$t('general.incomplete')"
                                    :key="'incomplete-' + stateKey"
                                    :checked="scenario.isIncomplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
                                    @changed="stateChanged"
                             ></radio>
-                            <radio id="complete" group="states" label="Complete"
+                            <radio id="complete" group="states" :label="$t('general.complete')"
                                    :key="'complete-' + stateKey"
                                    :checked="scenario.isComplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
@@ -74,7 +74,7 @@
                                 <button class="mdc-button"
                                         @click="toggleQuest(index)">
                                     <i class="material-icons mdc-button__icon">notes</i>
-                                    <span class="mdc-button__label">{{ quest.name }}</span>
+                                    <span class="mdc-button__label">{{ $t(quest.name) }}</span>
                                     <i class="material-icons mdc-button__icon transition-transform duration-500"
                                        :class="{'rotate-0': questExpand[index], 'rotate-180': !questExpand[index]}">
                                         keyboard_arrow_up
@@ -82,7 +82,7 @@
                                 </button>
                                 <transition-expand>
                                     <div v-if="questExpand[index]">
-                                        <p class="pb-3" v-html="quest.stages[quest.stage]"></p>
+                                        <p class="pb-3">{{ $t(quest.description) }}</p>
                                     </div>
                                 </transition-expand>
                             </template>
@@ -128,7 +128,7 @@
                         <div class="flex items-center mb-6">
                             <button class="mdc-button mdc-button--raised" @click="openPages()">
                                 <i class="material-icons mdc-button__icon">menu_book</i>
-                                <span class="mdc-button__label">Pages</span>
+                                <span class="mdc-button__label">{{ $t('pages') }}</span>
                             </button>
                             <div class="ml-auto w-20"
                                  :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
@@ -290,3 +290,17 @@
         border-left: none;
     }
 </style>
+
+<i18n>
+    {
+    "en": {
+    "pages": "pages"
+    },
+    "de": {
+    "pages": "seiten"
+    },
+    "fr": {
+    "pages": "pages"
+    }
+    }
+</i18n>
