@@ -75,7 +75,7 @@
                                         @click="toggleQuest(index)">
                                     <i class="material-icons mdc-button__icon">notes</i>
                                     <span class="mdc-button__label">{{ $t(quest.name) }}</span>
-                                    <i class="material-icons mdc-button__icon transition-transform duration-500"
+                                    <i class="material-icons mdc-button__icon transform transition-transform duration-500"
                                        :class="{'rotate-0': questExpand[index], 'rotate-180': !questExpand[index]}">
                                         keyboard_arrow_up
                                     </i>
