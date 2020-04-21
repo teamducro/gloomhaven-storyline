@@ -48,8 +48,7 @@ window.i18n = new VueI18n({
     fallbackLocale: 'en',
     messages: {
         en: i18nEn
-    },
-    silentTranslationWarn: process.env.NODE_ENV === 'production'
+    }
 });
 
 // event bus
