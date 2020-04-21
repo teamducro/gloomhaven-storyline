@@ -8,10 +8,15 @@ export default {
     quest: {
         1: {
             "name": "The Merchant's Request",
+            "sections": {
+                1: "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
+                2: "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic prowess. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
+                3: "You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
+            },
             "stages": {
-                0: "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
-                1: "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.<br><br>You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic prowess. Nevertheless, you slew them and their unholy allies§. Your target was not among the dead, but a passageway deeper into the catacombs awaits.",
-                2: "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow.<br><br>You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic prowess. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.<br><br>You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{2}{3}"
             }
         },
         2: {
