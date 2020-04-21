@@ -96,7 +96,11 @@
                                 </button>
                                 <transition-expand>
                                     <div v-if="questExpand[index]">
-                                        <p class="pb-3">{{ $t(quest.description) }}</p>
+                                        <i18n :path="quest.description" tag="div">
+                                            <template v-for="n in [1,2,3,4,5,6,7,8,9]" v-slot:[n]>
+                                                <p class="mb-4">{{ $t('quest.' + quest.id + '.sections.' + n) }}</p>
+                                            </template>
+                                        </i18n>
                                     </div>
                                 </transition-expand>
                             </template>
