@@ -4,7 +4,8 @@
         <div class="fixed right-0 top-0 mt-1 z-5">
             <dropdown align="right">
                 <template v-slot:trigger>
-                    <button type="button" class="mdc-icon-button material-icons p-4">
+                    <button type="button" class="mdc-icon-button material-icons p-4"
+                            :class="{'text-primary': filterEnabled}">
                         filter_list
                     </button>
                 </template>
@@ -12,18 +13,27 @@
                 <ul class="mdc-list"
                     ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
                     <li class="mdc-list-item" @click="resetFilter()">
-                        <span class="mdc-list-item__text">All</span>
+                        <span class="mdc-list-item__text">Clear filter</span>
                     </li>
-                    <li v-for="region in scenarioRepository.regions.items"
-                        class="mdc-list-item" @click="setRegionFilter(region.id)">
-                        <span class="mdc-list-item__text">{{ region.name }}</span>
-                    </li>
+
+                    <li role="separator" class="mdc-list-divider i-my-2"></li>
+
                     <li v-for="state in states"
                         class="mdc-list-item" @click="setStateFilter(state)">
-                        <span class="mdc-list-item__text capitalize">{{ state }}</span>
+                        <span class="mdc-list-item__text capitalize"
+                              :class="{'text-primary': stateFilter === state}">{{ state }}</span>
                     </li>
                     <li class="mdc-list-item" @click="setMissedTreasuresFilter">
-                        <span class="mdc-list-item__text">Missed Treasures</span>
+                        <span class="mdc-list-item__text"
+                              :class="{'text-primary': missedTreasuresFilter}">Missed Treasures</span>
+                    </li>
+
+                    <li role="separator" class="mdc-list-divider i-my-2"></li>
+
+                    <li v-for="region in scenarioRepository.regions.items"
+                        class="mdc-list-item" @click="setRegionFilter(region.id)">
+                        <span class="mdc-list-item__text"
+                              :class="{'text-primary': regionFilter === region.id}">{{ region.name }}</span>
                     </li>
                 </ul>
             </dropdown>
@@ -80,7 +90,7 @@
                 regionFilter: null,
                 missedTreasuresFilter: null,
                 stateFilter: null,
-                filter: null,
+                states: [ScenarioState.incomplete],
                 scenarioRepository: new ScenarioRepository()
             }
         },
@@ -98,8 +108,8 @@
             this.$bus.$off('scenarios-updated', this.setScenarios);
         },
         computed: {
-            states() {
-                return [ScenarioState.incomplete];
+            filterEnabled() {
+                return this.regionFilter || this.missedTreasuresFilter || this.stateFilter;
             }
         },
         methods: {
