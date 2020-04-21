@@ -5,8 +5,22 @@ const tailwindcss = require('tailwindcss');
 const md5File = require('md5-file/promise');
 const replace = require('replace-in-file');
 
+mix.extend('i18n', new class {
+        webpackRules() {
+            return [
+                {
+                    resourceQuery: /blockType=i18n/,
+                    type: 'javascript/auto',
+                    loader: '@kazupon/vue-i18n-loader',
+                },
+            ];
+        }
+    }(),
+);
 
-mix.js('resources/js/app.js', 'public/js/')
+
+mix.i18n()
+    .js('resources/js/app.js', 'public/js/')
     .sass('resources/sass/app.scss', 'public/css/')
     .sass('resources/sass/theme.scss', 'public/css/', {
         sassOptions: {

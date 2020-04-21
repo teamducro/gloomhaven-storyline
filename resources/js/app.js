@@ -5,25 +5,30 @@ import VueClipboard from 'vue-clipboard2';
 import ShareState from "./services/ShareState";
 import QuestRepository from "./repositories/QuestRepository";
 import AchievementRepository from "./repositories/AchievementRepository";
-import VueRouter from 'vue-router'
+import VueRouter from 'vue-router';
+import VueI18n from 'vue-i18n';
 import Story from "./components/Story";
 import Scenarios from "./components/Scenarios";
 import Achievements from "./components/Achievements";
 import VueAnalytics from 'vue-analytics';
 import Map from "./components/Map";
 import Achievement from "./models/Achievement";
+import {loadLanguageAsync} from "./services/I18n-setup";
+import i18nEn from "./lang/en";
 
 window._ = require('lodash');
 window.$ = require('jquery');
 window.Vue = require('vue');
 window.collect = require('collect.js');
-window.Vue.use(SocialSharing);
+Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;
-window.Vue.use(VueClipboard);
+Vue.use(VueClipboard);
 
+// Vue components
 const files = require.context('./components', true, /\.vue$/i);
 files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
+// Router
 const routes = [
     {path: '/', redirect: '/story'},
     {path: '/story', component: Story},
@@ -33,15 +38,29 @@ const routes = [
     {path: '/achievements', component: Achievements},
 ];
 const router = new VueRouter({routes});
+Vue.use(VueRouter);
 
+// Analytics
 Vue.use(VueAnalytics, {
     id: 'UA-162268349-1',
     router
 });
 
+// Multi Language
+Vue.use(VueI18n);
+window.i18n = new VueI18n({
+    locale: 'en',
+    fallbackLocale: 'en',
+    messages: {
+        en: i18nEn
+    }
+});
+
+// event bus
 Vue.prototype.$bus = new Vue;
-Vue.use(VueRouter);
+
 window.app = new Vue({
+    i18n,
     router,
     el: '#app',
     data() {
@@ -55,6 +74,7 @@ window.app = new Vue({
         }
     },
     mounted() {
+        // loadLanguageAsync('de');
         this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
