@@ -92,10 +92,15 @@ export default {
         },
         10: {
             "name": "New Management",
-            "stages": {
+            "sections": {
                 0: "Pleased with your work so far, Jekserah has invited you to join her undead invasion of the city. She plans to overthrow the military and put the Merchant's Guild in control.",
-                1: "Pleased with your work so far, Jekserah has invited you to join her undead invasion of the city. She plans to overthrow the military and put the Merchant's Guild in control.{br}You aided Jekserah in overthrowing the military. The city guard fought back, but their pitiful mortal bodies were no match for the overwhelming onslaught of the undead and the might of your blades. Every guard that fell bolstered the undead's ranks. When the Captain of the Guard fell, the remaining guards fled like the cowards you always knew they were. Jekserah's bodyguards were killed during the invasion, but so much the better for you. You are now Jekserah's new right hand and Merchant Guild rules the city.",
-                2: "Pleased with your work so far, Jekserah has invited you to join her undead invasion of the city. She plans to overthrow the military and put the Merchant's Guild in control.{br}Overthrowing the military was not part of your plan. You spurned Jekserah's invitation and sided with the city guard against the invasion. Jekserah is dead by your hand."
+                1: "{br}You aided Jekserah in overthrowing the military. The city guard fought back, but their pitiful mortal bodies were no match for the overwhelming onslaught of the undead and the might of your blades. Every guard that fell bolstered the undead's ranks. When the Captain of the Guard fell, the remaining guards fled like the cowards you always knew they were. Jekserah's bodyguards were killed during the invasion, but so much the better for you. You are now Jekserah's new right hand and Merchant Guild rules the city.",
+                2: "{br}Overthrowing the military was not part of your plan. You spurned Jekserah's invitation and sided with the city guard against the invasion. Jekserah is dead by your hand."                
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
             },
         },
         11: {
