@@ -23,6 +23,7 @@
     },
     "homepage": "https://github.com/dducro/gloomhaven-storyline#readme",
     "devDependencies": {
+        "@kazupon/vue-i18n-loader": "^0.5.0",
         "cross-env": "^6.0.3",
         "cypress": "^4.0.1",
         "laravel-mix": "^5.0.1",
@@ -60,6 +61,7 @@
         "tippy.js": "^6.1.0",
         "vue-analytics": "^5.22.1",
         "vue-clipboard2": "^0.3.1",
+        "vue-i18n": "^8.17.3",
         "vue-router": "^3.1.6",
         "vue-social-sharing": "^2.4.7"
     }

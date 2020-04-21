@@ -25,13 +25,13 @@
                                @changed="stateChanged"
                         ></radio>
                         <div class="flex w-full">
-                            <radio id="incomplete" group="states" label="Incomplete"
+                            <radio id="incomplete" group="states" :label="$t('general.incomplete')"
                                    :key="'incomplete-' + stateKey"
                                    :checked="scenario.isIncomplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
                                    @changed="stateChanged"
                             ></radio>
-                            <radio id="complete" group="states" label="Complete"
+                            <radio id="complete" group="states" :label="$t('general.complete')"
                                    :key="'complete-' + stateKey"
                                    :checked="scenario.isComplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
@@ -56,9 +56,20 @@
                             Requirements: {{ scenario.requirements }}
                         </div>
 
-                        <div class="mb-2" v-if="scenario.isComplete() && scenario.treasures.isNotEmpty()">
+                        <div class="mt-4 mb-2"
+                             v-if="scenario.isVisible() && !scenario.isComplete() && !treasuresVisible">
+                            <button class="mdc-button origin-left transform scale-75 mdc-button--raised"
+                                    @click="treasuresVisible = true">
+                                <i class="material-icons mdc-button__icon">attach_money</i>
+                                <span class="mdc-button__label">Show treasures</span>
+                            </button>
+                        </div>
+
+                        <div class="my-2"
+                             v-if="(scenario.isComplete() || treasuresVisible) && scenario.treasures.isNotEmpty()">
                             <h2 class="text-white" style="padding-left: 12px;">Treasures</h2>
-                            <div v-for="(treasure, id) in scenario.treasures.items" :key="id"
+                            <div v-if="scenario.treasures.isNotEmpty()"
+                                 v-for="(treasure, id) in scenario.treasures.items" :key="id"
                                  class="flex items-center">
                                 <checkbox
                                         :id="id"
@@ -68,21 +79,31 @@
                                 <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">{{ treasure }}</span>
                             </div>
                         </div>
+                        <p class="mb-2" v-if="scenario.treasures.isEmpty() && treasuresVisible">
+                            No treasures available.
+                        </p>
 
                         <div class="mb-3 flex flex-col items-start">
                             <template v-for="(quest, index) in scenario.quests">
                                 <button class="mdc-button"
                                         @click="toggleQuest(index)">
                                     <i class="material-icons mdc-button__icon">notes</i>
-                                    <span class="mdc-button__label">{{ quest.name }}</span>
-                                    <i class="material-icons mdc-button__icon transition-transform duration-500"
+                                    <span class="mdc-button__label">{{ $t(quest.name) }}</span>
+                                    <i class="material-icons mdc-button__icon transform transition-transform duration-500"
                                        :class="{'rotate-0': questExpand[index], 'rotate-180': !questExpand[index]}">
                                         keyboard_arrow_up
                                     </i>
                                 </button>
                                 <transition-expand>
                                     <div v-if="questExpand[index]">
-                                        <p class="pb-3" v-html="quest.stages[quest.stage]"></p>
+                                        <i18n :path="quest.description" tag="div">
+                                            <template v-for="n in [1,2,3,4,5,6,7,8,9]" v-slot:[n]>
+                                                <p class="mb-4">{{ $t('quest.' + quest.id + '.sections.' + n) }}</p>
+                                            </template>
+                                            <template v-slot:br>
+                                                <br><br>
+                                            </template>
+                                        </i18n>
                                     </div>
                                 </transition-expand>
                             </template>
@@ -128,7 +149,7 @@
                         <div class="flex items-center mb-6">
                             <button class="mdc-button mdc-button--raised" @click="openPages()">
                                 <i class="material-icons mdc-button__icon">menu_book</i>
-                                <span class="mdc-button__label">Pages</span>
+                                <span class="mdc-button__label">{{ $t('pages') }}</span>
                             </button>
                             <div class="ml-auto w-20"
                                  :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
@@ -181,6 +202,7 @@
                 notes: null,
                 stateKey: 1,
                 questExpand: [],
+                treasuresVisible: false,
                 scenarioRepository: new ScenarioRepository(),
                 preloadImage: new PreloadImage()
             }
@@ -256,6 +278,7 @@
             },
             open(id) {
                 this.scenario = this.scenarioRepository.find(id);
+                this.treasuresVisible = false;
 
                 let questCount = this.questCount + this.scenario.cards.count();
                 this.questExpand = new Array(questCount);
@@ -290,3 +313,17 @@
         border-left: none;
     }
 </style>
+
+<i18n>
+    {
+    "en": {
+    "pages": "pages"
+    },
+    "de": {
+    "pages": "seiten"
+    },
+    "fr": {
+    "pages": "pages"
+    }
+    }
+</i18n>
