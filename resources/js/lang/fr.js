@@ -67,6 +67,30 @@ export default {
                 1: "{1}{2}"
             }
         },
+        5: {
+            "name": "Le bienfait des plantes",
+            "sections": {
+                1: "Jekserah s'est enfuie pour une destination inconnue. L'enchanteresse Esther Tourmente saura peut-être vous mettre sur la piste de cette criminelle.",
+                2: "Tourmente vous a envoyé collecter de l'Amèracine dans la Forêt des Dagues. L'enchanteresse étourdie a ensuite utilisé cette plante pour localiser Jekserah. Vous avez aussi appris que vous deviez sonner puis attendre 47 secondes avant d'entrer à l'Os Tordu."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        6: {
+            "name": "Le Secret de la Négociante",
+            "sections": {
+                1: "Un contact mystérieux vous a donné l'emplacement de l'entrepot de Jekserah à Havrenuit. Il est clair que Jekserah cache un secret dans cet entrepot. S'attaquer à cet entrepot mettra probablement fin aux accords que vous avez avec elle. Cependant, elle a certainement un plan et vous allez y mettre un terme.",
+                2: "L'entrepot était empli de morts-vivants. Jekserah a utilisé le parchemin de nécromantie que vous lui avez fourni pour réveiller les morts entre les murs de la ville. Vous avez combattu jusqu'à l'arrière salle et confronté Jekserah. Elle a juré de se venger et s'est échappée par une fenêtre pendant que vous combattiez ses gardes Inox. Après les avoir tués, vous avez cherché des indices de la Valrath, mais n'en avez trouvé aucun. Vous avez arreté ses plans pour l'instant, mais après cette brêve conversation il est clair que vous allez devoir la pourchasser avant qu'elle puisse mettre sa menace à exécution.",
+                3: "Vous avez ignoré les avertissements d'Argeise, la garde de la cité, et continué de travaillé pour Jekserah. \"Machinations Sinistres\" est bien sûr une phrase troublante, mais la phrase \"récompense considérable\" prime à vos oreilles. Il n'y a plus aucune raison d'attaquer l'entropot."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
         10: {
             "name": "Nouvelle Administration",
             "sections": {
