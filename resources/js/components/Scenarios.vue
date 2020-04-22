@@ -19,21 +19,24 @@
                     <li role="separator" class="mdc-list-divider i-my-2"></li>
 
                     <li v-for="state in states"
-                        class="mdc-list-item cursor-pointer" @click="setStateFilter(state)">
-                        <span class="mdc-list-item__text capitalize"
-                              :class="{'text-primary': stateFilter === state}">{{ state }}</span>
+                        class="mdc-list-item cursor-pointer"
+                        :class="{'mdc-list-item--activated': stateFilter === state}"
+                        @click="setStateFilter(state)">
+                        <span class="mdc-list-item__text capitalize">{{ state }}</span>
                     </li>
-                    <li class="mdc-list-item cursor-pointer" @click="setMissedTreasuresFilter">
-                        <span class="mdc-list-item__text"
-                              :class="{'text-primary': missedTreasuresFilter}">Missed Treasures</span>
+                    <li class="mdc-list-item cursor-pointer"
+                        :class="{'mdc-list-item--activated': missedTreasuresFilter}"
+                        @click="setMissedTreasuresFilter">
+                        <span class="mdc-list-item__text">Missed Treasures</span>
                     </li>
 
                     <li role="separator" class="mdc-list-divider i-my-2"></li>
 
                     <li v-for="region in scenarioRepository.regions.items"
-                        class="mdc-list-item cursor-pointer" @click="setRegionFilter(region.id)">
-                        <span class="mdc-list-item__text"
-                              :class="{'text-primary': regionFilter === region.id}">{{ region.name }}</span>
+                        class="mdc-list-item cursor-pointer"
+                        :class="{'mdc-list-item--activated': regionFilter === region.id}"
+                        @click="setRegionFilter(region.id)">
+                        <span class="mdc-list-item__text">{{ region.name }}</span>
                     </li>
                 </ul>
             </dropdown>
