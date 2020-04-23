@@ -1,211 +1,211 @@
 {
-  "achievements": [
-    {
-      "id": "PFS",
-      "name": "First Steps",
-      "type": "party"
-    },
-    {
-      "id": "PJP",
-      "name": "Jekserah's Plans",
-      "type": "party"
-    },
-    {
-      "id": "PDB",
-      "name": "Dark Bounty",
-      "type": "party"
-    },
-    {
-      "id": "GTMF",
-      "name": "The Merchant Flees",
-      "type": "global"
-    },
-    {
-      "id": "GTDI",
-      "name": "The Dead Invade",
-      "type": "global"
-    },
-    {
-      "id": "PADE",
-      "name": "A Demon's Errand",
-      "type": "party"
-    },
-    {
-      "id": "GCRE",
-      "name": "City Rule: Economic",
-      "type": "global",
-      "group": "CR"
-    },
-    {
-      "id": "GCRM",
-      "name": "City Rule: Militaristic",
-      "type": "global",
-      "group": "CR"
-    },
-    {
-      "id": "GEOI",
-      "name": "End of the Invasion",
-      "type": "global"
-    },
-    {
-      "id": "GTPE",
-      "name": "The Power of Enhancement",
-      "type": "global"
-    },
-    {
-      "id": "PSC",
-      "name": "Stonebreaker's Censer",
-      "type": "party"
-    },
-    {
-      "id": "GTRN",
-      "name": "The Rift Neutralized",
-      "type": "global"
-    },
-    {
-      "id": "GAR",
-      "name": "The Artifact: Recovered",
-      "type": "global",
-      "group": "ART"
-    },
-    {
-      "id": "GAR2",
-      "name": "The Artifact: Recovered (previously Lost)",
-      "type": "global",
-      "group": "ART",
-      "requirement": "GAL"
-    },
-    {
-      "id": "GAL",
-      "name": "The Artifact: Lost",
-      "type": "global",
-      "group": "ART"
-    },
-    {
-      "id": "GAT",
-      "name": "Ancient Technology",
-      "type": "global",
-      "additive": true,
-      "max" : 5
-    },
-    {
-      "id": "PTR",
-      "name": "Through the Ruins",
-      "type": "party"
-    },
-    {
-      "id": "PTVC",
-      "name": "The Voice's Command",
-      "type": "party"
-    },
-    {
-      "id": "PTDC",
-      "name": "The Drake's Command",
-      "type": "party"
-    },
-    {
-      "id": "PFC",
-      "name": "Following Clues",
-      "type": "party"
-    },
-    {
-      "id": "PAI",
-      "name": "An Invitation",
-      "type": "party"
-    },
-    {
-      "id": "PTED",
-      "name": "The Edge of Darkness",
-      "type": "party"
-    },
-    {
-      "id": "PTSV",
-      "name": "The Sceoter and the Voice",
-      "type": "party"
-    },
-    {
-      "id": "GAC",
-      "name": "Artifact: Cleansed",
-      "type": "global",
-      "group": "ART"
-    },
-    {
-      "id": "PTVT",
-      "name": "The Voice's Treasure",
-      "type": "party"
-    },
-    {
-      "id": "PTDT",
-      "name": "The Drake's Treasure",
-      "type": "party"
-    },
-    {
-      "id": "GTDS",
-      "name": "The Drake Slain",
-      "type": "global"
-    },
-    {
-      "id": "GCRD",
-      "name": "City Rule: Demonic",
-      "type": "global",
-      "group": "CR"
-    },
-    {
-      "id": "PTTT",
-      "name": "Trough the Trench",
-      "type": "party"
-    },
-    {
-      "id": "PRA",
-      "name": "Redthorn's Aid",
-      "type": "party"
-    },
-    {
-      "id": "PATD",
-      "name": "Across the Divide",
-      "type": "party"
-    },
-    {
-      "id": "GTVF",
-      "name": "The Voice Freed",
-      "type": "global"
-    },
-    {
-      "id": "GTVS",
-      "name": "The Voice Silenced",
-      "type": "global"
-    },
-    {
-      "id": "GWB",
-      "name": "Water-Breathing",
-      "type": "global"
-    },
-    {
-      "id": "GEOC",
-      "name": "End of Corruption",
-      "type": "global",
-      "additive": true,
-      "max": 3
-    },
-    {
-      "id": "GAOO",
-      "name": "Annihilation of Order",
-      "type": "global"
-    },
-    {
-      "id": "GEOG",
-      "name": "End of Gloom",
-      "type": "global"
-    },
-    {
-      "id": "PTPS",
-      "name": "The Poison's Source",
-      "type": "party"
-    },
-    {
-      "id": "PTTN",
-      "name": "Through the Nest",
-      "type": "party"
-    }
-  ]
+    "achievements": [
+        {
+            "id": "PFS",
+            "name": "First Steps",
+            "type": "party"
+        },
+        {
+            "id": "PJP",
+            "name": "Jekserah's Plans",
+            "type": "party"
+        },
+        {
+            "id": "PDB",
+            "name": "Dark Bounty",
+            "type": "party"
+        },
+        {
+            "id": "GTMF",
+            "name": "The Merchant Flees",
+            "type": "global"
+        },
+        {
+            "id": "GTDI",
+            "name": "The Dead Invade",
+            "type": "global"
+        },
+        {
+            "id": "PADE",
+            "name": "A Demon's Errand",
+            "type": "party"
+        },
+        {
+            "id": "GCRE",
+            "name": "City Rule: Economic",
+            "type": "global",
+            "group": "CR"
+        },
+        {
+            "id": "GCRM",
+            "name": "City Rule: Militaristic",
+            "type": "global",
+            "group": "CR"
+        },
+        {
+            "id": "GEOI",
+            "name": "End of the Invasion",
+            "type": "global"
+        },
+        {
+            "id": "GTPE",
+            "name": "The Power of Enhancement",
+            "type": "global"
+        },
+        {
+            "id": "PSC",
+            "name": "Stonebreaker's Censer",
+            "type": "party"
+        },
+        {
+            "id": "GTRN",
+            "name": "The Rift Neutralized",
+            "type": "global"
+        },
+        {
+            "id": "GAR",
+            "name": "The Artifact: Recovered",
+            "type": "global",
+            "group": "ART"
+        },
+        {
+            "id": "GAR2",
+            "name": "The Artifact: Recovered (previously Lost)",
+            "type": "global",
+            "group": "ART",
+            "requirement": "GAL"
+        },
+        {
+            "id": "GAL",
+            "name": "The Artifact: Lost",
+            "type": "global",
+            "group": "ART"
+        },
+        {
+            "id": "GAT",
+            "name": "Ancient Technology",
+            "type": "global",
+            "additive": true,
+            "max": 5
+        },
+        {
+            "id": "PTR",
+            "name": "Through the Ruins",
+            "type": "party"
+        },
+        {
+            "id": "PTVC",
+            "name": "The Voice's Command",
+            "type": "party"
+        },
+        {
+            "id": "PTDC",
+            "name": "The Drake's Command",
+            "type": "party"
+        },
+        {
+            "id": "PFC",
+            "name": "Following Clues",
+            "type": "party"
+        },
+        {
+            "id": "PAI",
+            "name": "An Invitation",
+            "type": "party"
+        },
+        {
+            "id": "PTED",
+            "name": "The Edge of Darkness",
+            "type": "party"
+        },
+        {
+            "id": "PTSV",
+            "name": "The Sceoter and the Voice",
+            "type": "party"
+        },
+        {
+            "id": "GAC",
+            "name": "Artifact: Cleansed",
+            "type": "global",
+            "group": "ART"
+        },
+        {
+            "id": "PTVT",
+            "name": "The Voice's Treasure",
+            "type": "party"
+        },
+        {
+            "id": "PTDT",
+            "name": "The Drake's Treasure",
+            "type": "party"
+        },
+        {
+            "id": "GTDS",
+            "name": "The Drake Slain",
+            "type": "global"
+        },
+        {
+            "id": "GCRD",
+            "name": "City Rule: Demonic",
+            "type": "global",
+            "group": "CR"
+        },
+        {
+            "id": "PTTT",
+            "name": "Trough the Trench",
+            "type": "party"
+        },
+        {
+            "id": "PRA",
+            "name": "Redthorn's Aid",
+            "type": "party"
+        },
+        {
+            "id": "PATD",
+            "name": "Across the Divide",
+            "type": "party"
+        },
+        {
+            "id": "GTVF",
+            "name": "The Voice Freed",
+            "type": "global"
+        },
+        {
+            "id": "GTVS",
+            "name": "The Voice Silenced",
+            "type": "global"
+        },
+        {
+            "id": "GWB",
+            "name": "Water-Breathing",
+            "type": "global"
+        },
+        {
+            "id": "GEOC",
+            "name": "End of Corruption",
+            "type": "global",
+            "additive": true,
+            "max": 3
+        },
+        {
+            "id": "GAOO",
+            "name": "Annihilation of Order",
+            "type": "global"
+        },
+        {
+            "id": "GEOG",
+            "name": "End of Gloom",
+            "type": "global"
+        },
+        {
+            "id": "PTPS",
+            "name": "The Poison's Source",
+            "type": "party"
+        },
+        {
+            "id": "PTTN",
+            "name": "Through the Nest",
+            "type": "party"
+        }
+    ]
 }
