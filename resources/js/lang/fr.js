@@ -10,7 +10,7 @@ export default {
             "name": "La Requête de la Négociante",
             "sections": {
                 1: "La Négociante Valrath Jekserah a proposé de vous payer dix pièces d'or pour récupérer des biens volés. Après une conversation musclée avec certains voyous locaux, vous avez découvert que la cachette des voleurs est le Tertre Noir dans le bois du Cadavre.",
-                2: "Vous avez trouvé votre cible dans le Terte, mais elle s'est échapée. En le poursuivant, vous avez compris pourquoi les bandits ont choisi cette sépulture particulière: des Squelettes Réanimés. Les bandits semblent avoir des dons pour la nécromantie. Vous les avez néanmoins tués, ainsi que leurs alliés impies§. Votre cible ne fait pas partie des cadavres, mais un passage plus profond dans les catacombes vous attend.",
+                2: "Vous avez trouvé votre cible dans le Terte, mais elle s'est échapée. En le poursuivant, vous avez compris pourquoi les bandits ont choisi cette sépulture particulière: des Squelettes Réanimés. Les bandits semblent avoir des dons pour la nécromancie. Vous les avez néanmoins tués, ainsi que leurs alliés impies§. Votre cible ne fait pas partie des cadavres, mais un passage plus profond dans les catacombes vous attend.",
                 3: "Vous avez vaincu le Chef des bandits. Quelque chose dans son regard ne semblait pas naturel et il a mentionné l'Ombre pendant votre bataille. Vous avez trouvé les parchemins volés, cachés dans la chambre du Chef et les avez rendus à Jekserah en échange de la récompense convenue."
             },
             "stages": {
@@ -82,7 +82,7 @@ export default {
             "name": "Le Secret de la Négociante",
             "sections": {
                 1: "Un contact mystérieux vous a donné l'emplacement de l'entrepot de Jekserah à Havrenuit. Il est clair que Jekserah cache un secret dans cet entrepot. S'attaquer à cet entrepot mettra probablement fin aux accords que vous avez avec elle. Cependant, elle a certainement un plan et vous allez y mettre un terme.",
-                2: "L'entrepot était empli de morts-vivants. Jekserah a utilisé le parchemin de nécromantie que vous lui avez fourni pour réveiller les morts entre les murs de la ville. Vous avez combattu jusqu'à l'arrière salle et confronté Jekserah. Elle a juré de se venger et s'est échappée par une fenêtre pendant que vous combattiez ses gardes Inox. Après les avoir tués, vous avez cherché des indices de la Valrath, mais n'en avez trouvé aucun. Vous avez arreté ses plans pour l'instant, mais après cette brêve conversation il est clair que vous allez devoir la pourchasser avant qu'elle puisse mettre sa menace à exécution.",
+                2: "L'entrepot était empli de morts-vivants. Jekserah a utilisé le parchemin de nécromancie que vous lui avez fourni pour réveiller les morts entre les murs de la ville. Vous avez combattu jusqu'à l'arrière salle et confronté Jekserah. Elle a juré de se venger et s'est échappée par une fenêtre pendant que vous combattiez ses gardes Inox. Après les avoir tués, vous avez cherché des indices de la Valrath, mais n'en avez trouvé aucun. Vous avez arreté ses plans pour l'instant, mais après cette brêve conversation il est clair que vous allez devoir la pourchasser avant qu'elle puisse mettre sa menace à exécution.",
                 3: "Vous avez ignoré les avertissements d'Argeise, la garde de la cité, et continué de travaillé pour Jekserah. \"Machinations Sinistres\" est bien sûr une phrase troublante, mais la phrase \"récompense considérable\" prime à vos oreilles. Il n'y a plus aucune raison d'attaquer l'entropot."
             },
             "stages": {
@@ -94,14 +94,45 @@ export default {
         7: {
             "name": "Le meilleur ami d'une Valrath",
             "sections": {
-                0: "Jekserah a une dernière tâche pour vous. Elle a besoin d'un diamant d'une taille considérable pour un certain client. Il y a une mine de diamant dans les montagnes sud, mais elle est occupée par des Vermlings, soutenu par une force intelligente. Si vous pouvez vous frayer un chemin et attraper le plus gros diamant que vous trouverez, Jekserah vous donnera une récompense considérable. Cependant, vous avez aussi été prévenu par un garde que Jekserah pouvait être impliquée dans une machination plus sinistre que ce qu'elle vous a laissé penser. Quelque chose à propos de renverser la milice... mais un diamant ne pourrait pas faire de mal, n'est-ce pas ?",
-                1: "Machination sinitre ou non, vous avez décidé que la phrase \"récompense considérable\" était plus pertinente. Comme vous vous y attendiez, la mine de diamant était infesté par des mineurs Vermling. Ils étaient menés par un Contre-maitre Impitoyable qui a rapidement tourné les mineurs contre vous avec quelques coups de fouets. Une fois débarassé du Contre-maitre, les mineurs restants se sont éparpillés. Vous êtes retourné voir Jekserah pour récupérer votre récompense. Ses gardes du corps vous ont escorté à l'intérieur du manoir, qui semblait d'une certaine manière différent - plus tortueux et sombre. \"Merveilleux.\" Elle vous a échangé le diamant contre un sac rempli de pièces. \"Celà conviendra à merveille comme point focal pour l'incantation. Je me demande si les cultistes savaient seulement ce qu'ils avaient là. Avec ceci, je peux invoquer une armée entière de mort-vivants!\" Elle s'est tournée vers vous avec une lueur étrange dans le regard. \" Alors! Etes-vous prêts à renverser la milice d'Havrenuit et mettre le contrôle de la ville entre les mains de la Guilde des Négociants ? Ou peut-être n'avez-vous pas le courage de provoquer de vrai changements?\"",
-                2: "Vous avez décidé que \"machination sinistre\" passait avant \"récompense considérable\". Vous vous êtes attaqué à l'entrepot de Jekserah et découvert ses plans secrets d'envahir la ville avec une armée de morts. Elle a cependant fui la ville. Il semble évident que la \"récompense considérable\" n'est plus à l'ordre du jour et qu'il n'y a plus aucune raison de se rendre à la mine."
+                1: "Jekserah a une dernière tâche pour vous. Elle a besoin d'un diamant d'une taille considérable pour un certain client. Il y a une mine de diamant dans les montagnes sud, mais elle est occupée par des Vermlings, soutenu par une force intelligente. Si vous pouvez vous frayer un chemin et attraper le plus gros diamant que vous trouverez, Jekserah vous donnera une récompense considérable. Cependant, vous avez aussi été prévenu par un garde que Jekserah pouvait être impliquée dans une machination plus sinistre que ce qu'elle vous a laissé penser. Quelque chose à propos de renverser la milice... mais un diamant ne pourrait pas faire de mal, n'est-ce pas ?",
+                2: "Machination sinitre ou non, vous avez décidé que la phrase \"récompense considérable\" était plus pertinente. Comme vous vous y attendiez, la mine de diamant était infesté par des mineurs Vermling. Ils étaient menés par un Contre-maitre Impitoyable qui a rapidement tourné les mineurs contre vous avec quelques coups de fouets. Une fois débarassé du Contre-maitre, les mineurs restants se sont éparpillés. Vous êtes retourné voir Jekserah pour récupérer votre récompense. Ses gardes du corps vous ont escorté à l'intérieur du manoir, qui semblait d'une certaine manière différent - plus tortueux et sombre. \"Merveilleux.\" Elle vous a échangé le diamant contre un sac rempli de pièces. \"Celà conviendra à merveille comme point focal pour l'incantation. Je me demande si les cultistes savaient seulement ce qu'ils avaient là. Avec ceci, je peux invoquer une armée entière de mort-vivants!\" Elle s'est tournée vers vous avec une lueur étrange dans le regard. \" Alors! Etes-vous prêts à renverser la milice d'Havrenuit et mettre le contrôle de la ville entre les mains de la Guilde des Négociants ? Ou peut-être n'avez-vous pas le courage de provoquer de vrai changements?\"",
+                3: "Vous avez décidé que \"machination sinistre\" passait avant \"récompense considérable\". Vous vous êtes attaqué à l'entrepot de Jekserah et découvert ses plans secrets d'envahir la ville avec une armée de morts. Elle a cependant fui la ville. Il semble évident que la \"récompense considérable\" n'est plus à l'ordre du jour et qu'il n'y a plus aucune raison de se rendre à la mine."
             },
             "stages": {
                 0: "{1}",
                 1: "{1}{2}",
                 2: "{1}{3}"
+            }
+        },
+        8: {
+            "name": "De l'autre côté de la Faille",
+            "sections": {
+                1: "Pendant que vous mettiez un terme aux activité d'un groupe de cultiste, vous vous êtes retrouvés face à une déchirure béante dans la réalité. Les cultistes étaient en train de réaliser une sorte de rituel sur la faille, qui déversait des formes cauchemardesques remplies de dents et de griffes. Une fois les cultistes et leurs partisants morts, la faille semble désormais en sommeil. Elle ne cesse pas cependant de vous perturber. Vous avez lancé une pierre au travers, qui a disparu dans le vide - vous vous demander si vous pouvez vous-même entrer dans la faille et si vous pourriez survivre à ce voyage. Oserez-vous entrer dans la faille ?",
+                2: "Le voyage était loin d'être agréable. Aussitôt arrivés, vous avez été abordé par des démons envoyés par une voix en colère. Une fois débarassés des démons, la voix vous a parlé à nouveau et vous a invité dans son royaume. Ayant déjà fait un pas vers l'inconnu, vous avez décidé que vous pouviez en faire un second. A l'intérieur du royaume de la voix se trouvait une créature monstrueuse, qui vous a demandé de récupérer un artefact - ou de mourir par sa main sinon.",
+                3: "Non, bien évidemment. Quel sort d'idiot plongerait dans une faille vers une autre dimension ? A la place, vous avez décidé de trouver de l'aide pour fermer définitivement cette faille. Il est clair que rien de bon ne pouvait en sortir, alors vous l'avez neutralisée."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        9: {
+            "name": "Sur les traces de la nécromancienne",
+            "sections": {
+                1: "La nécromancienne Jekserah a fui Havrenuit. Avant son départ, elle vous a menacé; il est clair que vous devez à présent la pourchasser avant qu'elle puisse mettre ses menaces à exécution. Malheureusement, vous n'avez aucune idée de l'endroit où elle se trouve. La garde de la ville ne sont pas d'une grande aide, mais Argeise vous a donné quelques pistes. Il y a une enchanteresse Esther en ville qui pourrait être capable de localiser Jekserah, mais elle a la réputation d'être un associé difficile. Une seconde piste repose sur l'un de vos contacts au sanctuaire du Grand Chêne, qui a entendu parler d'un temple dédié à une force invisible, qui répondra à toute question qu'on lui pose.",
+                2: "Vous avez rencontré l'enchanteresse Esther Tourmente, à l'Os Tordu. Bien qu'un peu excentrique, elle à l'air tout à fait compétente. Vous avez gagné ses faveurs en lui rendant un service. Peut-êter pourra t'elle maintenant vous aider à trouver Jekserah?",
+                3: "Vous avez visité le Temple du Prophète, mais vous étiez plus intéressé par les autres propositions de la voix plutôt que dans le fait de trouver Jekserah. Le seul moyen de trouver Jekserah maintenant est de requérire l'aide de l'enchanteresse.",
+                4: "Vous avez localisé le sanctuaire de Jekserah dans la Forêt des Dagues. C'est l'heure de mettre un terme à sa nécromancie.",
+                5: "Après une bataille sanglante contre ses sbires morts-vivants, Jekserah a péri sous votre lame. Vous avez séparé sa tête de son corps et quitté sans trainer ce lieu rempli de corps démembrés. Vous avez ramené la tête au Capitaine de la Garde et avez reçu une prime substentielle en échange."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}",
+                3: "{1}{2}{3}",
+                4: "{1}{4}",
+                5: "{1}{4}{5}"
             }
         },
         10: {
