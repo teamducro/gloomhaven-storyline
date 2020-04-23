@@ -91,6 +91,19 @@ export default {
                 2: "{1}{3}"
             }
         },
+        7: {
+            "name": "Le meilleur ami d'une Valrath",
+            "sections": {
+                0: "Jekserah a une dernière tâche pour vous. Elle a besoin d'un diamant d'une taille considérable pour un certain client. Il y a une mine de diamant dans les montagnes sud, mais elle est occupée par des Vermlings, soutenu par une force intelligente. Si vous pouvez vous frayer un chemin et attraper le plus gros diamant que vous trouverez, Jekserah vous donnera une récompense considérable. Cependant, vous avez aussi été prévenu par un garde que Jekserah pouvait être impliquée dans une machination plus sinistre que ce qu'elle vous a laissé penser. Quelque chose à propos de renverser la milice... mais un diamant ne pourrait pas faire de mal, n'est-ce pas ?",
+                1: "Machination sinitre ou non, vous avez décidé que la phrase \"récompense considérable\" était plus pertinente. Comme vous vous y attendiez, la mine de diamant était infesté par des mineurs Vermling. Ils étaient menés par un Contre-maitre Impitoyable qui a rapidement tourné les mineurs contre vous avec quelques coups de fouets. Une fois débarassé du Contre-maitre, les mineurs restants se sont éparpillés. Vous êtes retourné voir Jekserah pour récupérer votre récompense. Ses gardes du corps vous ont escorté à l'intérieur du manoir, qui semblait d'une certaine manière différent - plus tortueux et sombre. \"Merveilleux.\" Elle vous a échangé le diamant contre un sac rempli de pièces. \"Celà conviendra à merveille comme point focal pour l'incantation. Je me demande si les cultistes savaient seulement ce qu'ils avaient là. Avec ceci, je peux invoquer une armée entière de mort-vivants!\" Elle s'est tournée vers vous avec une lueur étrange dans le regard. \" Alors! Etes-vous prêts à renverser la milice d'Havrenuit et mettre le contrôle de la ville entre les mains de la Guilde des Négociants ? Ou peut-être n'avez-vous pas le courage de provoquer de vrai changements?\"",
+                2: "Vous avez décidé que \"machination sinistre\" passait avant \"récompense considérable\". Vous vous êtes attaqué à l'entrepot de Jekserah et découvert ses plans secrets d'envahir la ville avec une armée de morts. Elle a cependant fui la ville. Il semble évident que la \"récompense considérable\" n'est plus à l'ordre du jour et qu'il n'y a plus aucune raison de se rendre à la mine."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
         10: {
             "name": "Nouvelle Administration",
             "sections": {
