@@ -8,7 +8,6 @@
                 "x": 47.42,
                 "y": 41.6
             },
-            "is_side": false,
             "pages": [
                 3
             ],
@@ -23,7 +22,7 @@
                 "7": "Random Side Scenario"
             },
             "achievements_awarded": [
-                "PFS","GAL"
+                "PFS"
             ]
         },
         {
@@ -34,7 +33,6 @@
                 "x": 51.75,
                 "y": 41
             },
-            "is_side": false,
             "pages": [
                 4,
                 5
@@ -63,7 +61,6 @@
                 "x": 14.57,
                 "y": 43.585
             },
-            "is_side": false,
             "pages": [
                 5,
                 6
@@ -78,7 +75,7 @@
                 2
             ],
             "blocked_by": [
-                8
+                "{GTMF}"
             ],
             "quests": [
                 2,
@@ -99,7 +96,6 @@
                 "x": 47.82,
                 "y": 31.19
             },
-            "is_side": false,
             "pages": [
                 7
             ],
@@ -129,7 +125,6 @@
                 "x": 28.22,
                 "y": 26.58
             },
-            "is_side": false,
             "pages": [
                 8
             ],
@@ -161,7 +156,6 @@
                 "x": 44.05,
                 "y": 38.3
             },
-            "is_side": false,
             "pages": [
                 9,
                 10
@@ -195,7 +189,6 @@
                 "x": 57.76,
                 "y": 19.85
             },
-            "is_side": false,
             "pages": [
                 10,
                 11
@@ -209,7 +202,7 @@
                 8
             ],
             "required_by": [
-                14
+                "{GTPE} && {GTMF}"
             ],
             "quests": [
                 5,
@@ -227,7 +220,6 @@
                 "x": 83.98,
                 "y": 18.1
             },
-            "is_side": false,
             "pages": [
                 12
             ],
@@ -243,7 +235,7 @@
                 6
             ],
             "blocked_by": [
-                9
+                "{GTDI}"
             ],
             "quests": [
                 2,
@@ -265,7 +257,6 @@
                 "x": 10.5,
                 "y": 70.65
             },
-            "is_side": false,
             "pages": [
                 13
             ],
@@ -279,7 +270,7 @@
                 3
             ],
             "blocked_by": [
-                8
+                "{GTMF}"
             ],
             "quests": [
                 7
@@ -299,7 +290,6 @@
                 "x": 31.177,
                 "y": 23.56
             },
-            "is_side": false,
             "pages": [
                 14
             ],
@@ -313,9 +303,7 @@
                 5
             ],
             "blocked_by": [
-                21,
-                27,
-                36
+                "{GTRN}"
             ],
             "quests": [
                 8
@@ -335,7 +323,6 @@
                 "x": 76.4,
                 "y": 14.65
             },
-            "is_side": false,
             "pages": [
                 15,
                 16
@@ -350,7 +337,7 @@
                 9
             ],
             "blocked_by": [
-                12
+                "{GEOI}"
             ],
             "quests": [
                 3,
@@ -375,7 +362,6 @@
                 "x": 76.4,
                 "y": 14.65
             },
-            "is_side": false,
             "pages": [
                 16,
                 17
@@ -391,7 +377,7 @@
                 9
             ],
             "blocked_by": [
-                11
+                "{GEOI}"
             ],
             "quests": [
                 3,
@@ -417,7 +403,6 @@
                 "x": 18.22,
                 "y": 84.42
             },
-            "is_side": false,
             "pages": [
                 18
             ],
@@ -454,7 +439,6 @@
                 "x": 47.55,
                 "y": 19.33
             },
-            "is_side": false,
             "pages": [
                 19,
                 20
@@ -482,7 +466,6 @@
                 "x": 51.17,
                 "y": 16.8
             },
-            "is_side": false,
             "pages": [
                 20,
                 21
@@ -507,7 +490,6 @@
                 "x": 28.45,
                 "y": 18.92
             },
-            "is_side": false,
             "pages": [
                 22
             ],
@@ -541,7 +523,6 @@
                 "x": 84.35,
                 "y": 59.235
             },
-            "is_side": false,
             "pages": [
                 23
             ],
@@ -570,7 +551,6 @@
                 "x": 68.298,
                 "y": 20.895
             },
-            "is_side": false,
             "pages": [
                 24
             ],
@@ -607,7 +587,6 @@
                 "x": 34.6,
                 "y": 74.64
             },
-            "is_side": false,
             "pages": [
                 25,
                 26
@@ -621,7 +600,7 @@
                 5
             ],
             "required_by": [
-                14
+                "{GTPE}"
             ],
             "quests": [
                 18
@@ -645,7 +624,6 @@
                 "x": 59,
                 "y": 44.9
             },
-            "is_side": false,
             "pages": [
                 26,
                 27
@@ -662,7 +640,7 @@
                 13
             ],
             "required_by": [
-                8
+                "{GTMF}"
             ],
             "quests": [
                 3,
@@ -680,7 +658,6 @@
                 "x": 34.25,
                 "y": 22.6
             },
-            "is_side": false,
             "pages": [
                 28,
                 29
@@ -691,8 +668,7 @@
                 10
             ],
             "blocked_by": [
-                27,
-                36
+                "{GTRN}"
             ],
             "quests": [
                 19
@@ -713,7 +689,6 @@
                 "x": 39.87,
                 "y": 64.25
             },
-            "is_side": false,
             "pages": [
                 29,
                 30
@@ -746,7 +721,6 @@
                 "x": 73.4,
                 "y": 19.85
             },
-            "is_side": false,
             "pages": [
                 31,
                 32
@@ -781,7 +755,6 @@
                 "x": 25.05,
                 "y": 19.67
             },
-            "is_side": false,
             "pages": [
                 32,
                 33
@@ -812,7 +785,6 @@
                 "x": 20.87,
                 "y": 13.07
             },
-            "is_side": false,
             "pages": [
                 34,
                 35
@@ -846,7 +818,6 @@
                 "x": 73.5,
                 "y": 23.3
             },
-            "is_side": false,
             "pages": [
                 35,
                 36
@@ -860,8 +831,8 @@
                 18
             ],
             "required_by": [
-                23,
-                43
+                "{GWB}",
+                "{PTR}"
             ],
             "quests": [
                 17
@@ -885,7 +856,6 @@
                 "x": 29.22,
                 "y": 30.6
             },
-            "is_side": false,
             "pages": [
                 37
             ],
@@ -895,7 +865,7 @@
                 19
             ],
             "blocked_by": [
-                35
+                "{GAL}"
             ],
             "quests": [
                 8,
@@ -913,7 +883,6 @@
                 "x": 18.15,
                 "y": 32.1
             },
-            "is_side": false,
             "pages": [
                 38
             ],
@@ -927,7 +896,7 @@
                 20
             ],
             "required_by": [
-                6
+                "{PDB}"
             ],
             "quests": [
                 3
@@ -950,7 +919,6 @@
                 "x": 13.9,
                 "y": 32.5
             },
-            "is_side": false,
             "pages": [
                 39
             ],
@@ -980,7 +948,6 @@
                 "x": 72.85,
                 "y": 79.37
             },
-            "is_side": false,
             "pages": [
                 40,
                 41
@@ -1011,7 +978,6 @@
                 "x": 76.46,
                 "y": 8.912
             },
-            "is_side": false,
             "pages": [
                 41,
                 42
@@ -1027,11 +993,10 @@
                 22
             ],
             "blocked_by": [
-                35
+                "{GAL}"
             ],
             "required_by": [
-                14,
-                21
+                "{GTPE} && ({GAR} || {GAR2})"
             ],
             "quests": [
                 24
@@ -1054,7 +1019,6 @@
                 "x": 54.42,
                 "y": 67.9
             },
-            "is_side": false,
             "pages": [
                 43
             ],
@@ -1068,7 +1032,7 @@
                 24
             ],
             "blocked_by": [
-                42
+                "{GTVF}"
             ],
             "quests": [
                 25
@@ -1085,7 +1049,6 @@
                 "x": 30.53,
                 "y": 10.3
             },
-            "is_side": false,
             "pages": [
                 44
             ],
@@ -1095,10 +1058,8 @@
                 32
             ],
             "blocked_by": [
-                34,
-                42
+                "{PTDC} && {GTVF}"
             ],
-            "blocked_all": true,
             "quests": [
                 25,
                 26,
@@ -1120,7 +1081,6 @@
                 "x": 17.01,
                 "y": 9.27
             },
-            "is_side": false,
             "pages": [
                 45
             ],
@@ -1153,7 +1113,6 @@
                 "x": 67.2,
                 "y": 9.42
             },
-            "is_side": false,
             "pages": [
                 46,
                 47
@@ -1172,7 +1131,7 @@
                 36
             ],
             "required_by": [
-                10
+                "{PADE} && {GTRN} === false}"
             ],
             "quests": [
                 28
@@ -1184,7 +1143,11 @@
                 1
             ],
             "achievements_awarded": [
-                "GAC"
+                "GCRD",
+                "GAL"
+            ],
+            "achievements_lost": [
+                "PADE"
             ]
         },
         {
@@ -1195,7 +1158,6 @@
                 "x": 67.2,
                 "y": 9.42
             },
-            "is_side": false,
             "pages": [
                 47,
                 48
@@ -1211,7 +1173,7 @@
                 35
             ],
             "required_by": [
-                10
+                "{PADE} && {GTRN} === false"
             ],
             "quests": [
                 29
@@ -1223,8 +1185,7 @@
                 1
             ],
             "achievements_awarded": [
-                "GCRD",
-                "GAL"
+                "GTRN"
             ],
             "achievements_lost": [
                 "PADE"
@@ -1238,7 +1199,6 @@
                 "x": 85.36,
                 "y": 39.795
             },
-            "is_side": false,
             "pages": [
                 49
             ],
@@ -1251,7 +1211,7 @@
                 31
             ],
             "required_by": [
-                43
+                "{GWB}"
             ],
             "quests": [
                 30
@@ -1274,7 +1234,6 @@
                 "x": 11.15,
                 "y": 43
             },
-            "is_side": false,
             "pages": [
                 50,
                 51
@@ -1308,7 +1267,6 @@
                 "x": 49.9,
                 "y": 12.73
             },
-            "is_side": false,
             "pages": [
                 51,
                 52
@@ -1345,7 +1303,6 @@
                 "x": 57,
                 "y": 35.1
             },
-            "is_side": false,
             "pages": [
                 53,
                 54
@@ -1362,7 +1319,7 @@
                 42
             ],
             "required_by": [
-                33
+                "{PTVC} && {PTVT}"
             ],
             "quests": [
                 25
@@ -1385,7 +1342,6 @@
                 "x": 61.27,
                 "y": 34.9
             },
-            "is_side": false,
             "pages": [
                 54,
                 55
@@ -1419,7 +1375,6 @@
                 "x": 19.6,
                 "y": 19.4
             },
-            "is_side": false,
             "pages": [
                 56
             ],
@@ -1453,7 +1408,6 @@
                 "x": 15.13,
                 "y": 29.3
             },
-            "is_side": false,
             "pages": [
                 57,
                 58
@@ -1464,7 +1418,7 @@
                 31
             ],
             "required_by": [
-                14
+                "{GTPE}"
             ],
             "quests": [
                 34
@@ -1487,7 +1441,6 @@
                 "x": 15.56,
                 "y": 37.9
             },
-            "is_side": false,
             "pages": [
                 58,
                 59
@@ -1515,7 +1468,6 @@
                 "x": 41.7,
                 "y": 72.25
             },
-            "is_side": false,
             "pages": [
                 60
             ],
@@ -1546,7 +1498,6 @@
                 "x": 49.85,
                 "y": 7.34
             },
-            "is_side": false,
             "pages": [
                 61
             ],
@@ -1582,7 +1533,6 @@
                 "x": 85.9,
                 "y": 43.47
             },
-            "is_side": false,
             "pages": [
                 62
             ],
@@ -1616,7 +1566,6 @@
                 "x": 5.9,
                 "y": 32.7
             },
-            "is_side": false,
             "pages": [
                 63
             ],
@@ -1649,7 +1598,6 @@
                 "x": 34.8,
                 "y": 80.15
             },
-            "is_side": false,
             "pages": [
                 64
             ],
@@ -1676,7 +1624,6 @@
                 "x": 79.48,
                 "y": 14.65
             },
-            "is_side": false,
             "pages": [
                 65,
                 66
@@ -1707,7 +1654,6 @@
                 "x": 72.3,
                 "y": 9.15
             },
-            "is_side": false,
             "pages": [
                 66,
                 67
@@ -1719,11 +1665,8 @@
                 48
             ],
             "required_by": [
-                46,
-                47,
-                48
+                "{GEOC*} == 3"
             ],
-            "required_all": true,
             "quests": [
                 39
             ],
@@ -1773,7 +1716,6 @@
                 "x": 51.86,
                 "y": 34.1
             },
-            "is_side": false,
             "pages": [
                 69,
                 70
@@ -1804,7 +1746,6 @@
                 "x": 40.5,
                 "y": 23.34
             },
-            "is_side": false,
             "pages": [
                 71
             ],
@@ -1855,7 +1796,6 @@
                 "x": 18.93,
                 "y": 44.67
             },
-            "is_side": false,
             "pages": [
                 73
             ],
@@ -1910,7 +1850,6 @@
                 "x": 72.315,
                 "y": 30.105
             },
-            "is_side": false,
             "pages": [
                 75
             ],
@@ -1958,7 +1897,6 @@
                 "x": 72.1,
                 "y": 13.5
             },
-            "is_side": false,
             "pages": [
                 77
             ],
@@ -2007,7 +1945,6 @@
                 "x": 57.15,
                 "y": 83.55
             },
-            "is_side": false,
             "pages": [
                 80
             ],
@@ -2061,7 +1998,7 @@
             "requirements": "Water-Breathing (Global) COMPLETE",
             "chapter_id": 12,
             "required_by": [
-                43
+                "{GWB}"
             ],
             "treasures": {
                 "9": "Gain \"Wave Crest\" (Item 111)"
@@ -2578,7 +2515,7 @@
             "requirements": "Water-Breathing (Global) and Water Staff (Party) COMPLETE",
             "chapter_id": 15,
             "required_by": [
-                43
+                "{GWB} && {PWS}"
             ],
             "treasures": {
                 "8": "Gain 1 ✔",
@@ -2737,7 +2674,6 @@
                 "x": 59,
                 "y": 38.65
             },
-            "is_side": false,
             "pages": [
                 118,
                 119

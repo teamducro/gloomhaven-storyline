@@ -9,7 +9,7 @@ export default class Scenario {
         this.name = data.name;
         this.title = this.name.substr(this.name.indexOf(' ') + 1);
         this.coordinates = data.coordinates;
-        this.is_side = data.is_side;
+        this.is_side = data.is_side || false;
         this.pages = data.pages || [];
         this.requirements = data.requirements || "";
         this.quests = data.quests || [];
@@ -26,9 +26,7 @@ export default class Scenario {
         this.links_to = collect(data.links_to);
         this.linked_from = collect(data.linked_from);
         this.blocked_by = collect(data.blocked_by);
-        this.blocked_all = data.blocked_all || false;
         this.required_by = collect(data.required_by);
-        this.required_all = data.required_all || false;
         this.treasures = collect(data.treasures);
         this.treasures_from = collect(data.treasures_from);
         this.treasures_to = collect(data.treasures_to);

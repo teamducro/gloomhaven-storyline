@@ -8,6 +8,8 @@ export default class Achievement {
         this.type = data.type;
         this.group = data.group;
         this.requirement = data.requirement;
+        this.additive = data.additive || false;
+        this.max = data.max || 1;
         this._awarded = false;
         this.read();
     }
@@ -33,6 +35,7 @@ export default class Achievement {
         this._awarded = state;
         this.store();
     }
+
     get awarded() {
         return this._awarded;
     }
