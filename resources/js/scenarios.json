@@ -38,6 +38,13 @@
                 5
             ],
             "requirements": "First Steps (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PFS"
+                    ]
+                }
+            ],
             "chapter_id": 1,
             "links_to": [
                 3,
@@ -66,6 +73,13 @@
                 6
             ],
             "requirements": "The Merchant Flees (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GTMF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 8,
@@ -73,9 +87,6 @@
             ],
             "linked_from": [
                 2
-            ],
-            "blocked_by": [
-                "{GTMF}"
             ],
             "quests": [
                 2,
@@ -86,6 +97,9 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "PJP"
             ]
         },
         {
@@ -194,15 +208,20 @@
                 11
             ],
             "requirements": "The Power of Enhancement (Global) and The Merchant Flees (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTPE",
+                        "GTMF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 20
             ],
             "linked_from": [
                 8
-            ],
-            "required_by": [
-                "{GTPE} && {GTMF}"
             ],
             "quests": [
                 5,
@@ -224,6 +243,17 @@
                 12
             ],
             "requirements": "Jekserah’s Plans (Party) COMPLETE and The Dead Invade (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PJP"
+                    ],
+                    "incomplete": [
+                        "GTDI"
+                    ]
+                },
+                "{PJP} && {GTDI} === false"
+            ],
             "chapter_id": 2,
             "links_to": [
                 7,
@@ -233,9 +263,6 @@
             "linked_from": [
                 3,
                 6
-            ],
-            "blocked_by": [
-                "{GTDI}"
             ],
             "quests": [
                 2,
@@ -247,6 +274,9 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GTMF"
             ]
         },
         {
@@ -261,6 +291,13 @@
                 13
             ],
             "requirements": "The Merchant Flees (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GTMF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 11,
@@ -268,9 +305,6 @@
             ],
             "linked_from": [
                 3
-            ],
-            "blocked_by": [
-                "{GTMF}"
             ],
             "quests": [
                 7
@@ -294,6 +328,13 @@
                 14
             ],
             "requirements": "The Rift Neutralized (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GTRN"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "links_to": [
                 21,
@@ -301,9 +342,6 @@
             ],
             "linked_from": [
                 5
-            ],
-            "blocked_by": [
-                "{GTRN}"
             ],
             "quests": [
                 8
@@ -328,6 +366,13 @@
                 16
             ],
             "requirements": "End of the Invasion (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GEOI"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 16,
@@ -335,9 +380,6 @@
             ],
             "linked_from": [
                 9
-            ],
-            "blocked_by": [
-                "{GEOI}"
             ],
             "quests": [
                 3,
@@ -351,7 +393,8 @@
                 1
             ],
             "achievements_awarded": [
-                "GTMF"
+                "GCRE",
+                "GEOI"
             ]
         },
         {
@@ -367,6 +410,13 @@
                 17
             ],
             "requirements": "End of the Invasion (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GEOI"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 16,
@@ -375,9 +425,6 @@
             ],
             "linked_from": [
                 9
-            ],
-            "blocked_by": [
-                "{GEOI}"
             ],
             "quests": [
                 3,
@@ -391,7 +438,6 @@
                 1
             ],
             "achievements_awarded": [
-                "GCRE",
                 "GEOI"
             ]
         },
@@ -456,6 +502,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GTPE"
             ]
         },
         {
@@ -510,9 +559,6 @@
             },
             "region_ids": [
                 5
-            ],
-            "achievements_awarded": [
-                "GTPE"
             ]
         },
         {
@@ -592,15 +638,19 @@
                 26
             ],
             "requirements": "The Power of Enhancement (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTPE"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "links_to": [
                 27
             ],
             "linked_from": [
                 5
-            ],
-            "required_by": [
-                "{GTPE}"
             ],
             "quests": [
                 18
@@ -629,6 +679,13 @@
                 27
             ],
             "requirements": "The Merchant Flees (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTMF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 28,
@@ -638,9 +695,6 @@
             "linked_from": [
                 7,
                 13
-            ],
-            "required_by": [
-                "{GTMF}"
             ],
             "quests": [
                 3,
@@ -663,12 +717,16 @@
                 29
             ],
             "requirements": "The Rift Neutralized (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GTRN"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "linked_from": [
                 10
-            ],
-            "blocked_by": [
-                "{GTRN}"
             ],
             "quests": [
                 19
@@ -694,6 +752,18 @@
                 30
             ],
             "requirements": "A Demon’s Errand (Party) or Following Clues (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PADE"
+                    ]
+                },
+                {
+                    "complete": [
+                        "PFC"
+                    ]
+                }
+            ],
             "links_to": [
                 35,
                 31,
@@ -744,7 +814,7 @@
                 1
             ],
             "achievements_awarded": [
-                "GEOG"
+                "GAT"
             ]
         },
         {
@@ -775,6 +845,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "PTVC"
             ]
         },
         {
@@ -807,7 +880,7 @@
                 5
             ],
             "achievements_awarded": [
-                "PTVC"
+                "PTDC"
             ]
         },
         {
@@ -823,16 +896,24 @@
                 36
             ],
             "requirements": "Water-Breathing (Global) or Through the Ruins (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GWB"
+                    ]
+                },
+                {
+                    "complete": [
+                        "PTTR"
+                    ]
+                }
+            ],
             "chapter_id": 4,
             "links_to": [
                 22
             ],
             "linked_from": [
                 18
-            ],
-            "required_by": [
-                "{GWB}",
-                "{PTR}"
             ],
             "quests": [
                 17
@@ -844,8 +925,7 @@
                 1
             ],
             "achievements_awarded": [
-                "GAT",
-                "PTR"
+                "PFC"
             ]
         },
         {
@@ -860,12 +940,19 @@
                 37
             ],
             "requirements": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
+            "required_by": [
+                {
+                    "comnplete": [
+                        "PSC"
+                    ],
+                    "incomplete": [
+                        "GAL"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "linked_from": [
                 19
-            ],
-            "blocked_by": [
-                "{GAL}"
             ],
             "quests": [
                 8,
@@ -887,6 +974,13 @@
                 38
             ],
             "requirements": "Dark Bounty (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PDB"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 29
@@ -894,9 +988,6 @@
             "linked_from": [
                 12,
                 20
-            ],
-            "required_by": [
-                "{PDB}"
             ],
             "quests": [
                 3
@@ -908,7 +999,7 @@
                 2
             ],
             "achievements_awarded": [
-                "PJP"
+                "PAI"
             ]
         },
         {
@@ -923,6 +1014,13 @@
                 39
             ],
             "requirements": "An Invitation (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PAI"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "linked_from": [
                 28
@@ -937,7 +1035,7 @@
                 2
             ],
             "achievements_awarded": [
-                "PAI"
+                "GTED"
             ]
         },
         {
@@ -953,6 +1051,13 @@
                 41
             ],
             "requirements": "The Voice’s Command (Party)",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTVC"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "links_to": [
                 42
@@ -983,6 +1088,20 @@
                 42
             ],
             "requirements": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTRN",
+                        "GAR"
+                    ]
+                },
+                {
+                    "complete": [
+                        "GTRN",
+                        "GAR2"
+                    ]
+                }
+            ],
             "links_to": [
                 39,
                 37,
@@ -991,12 +1110,6 @@
             ],
             "linked_from": [
                 22
-            ],
-            "blocked_by": [
-                "{GAL}"
-            ],
-            "required_by": [
-                "{GTPE} && ({GAR} || {GAR2})"
             ],
             "quests": [
                 24
@@ -1008,7 +1121,7 @@
                 1
             ],
             "achievements_awarded": [
-                "PFC"
+                "GAC"
             ]
         },
         {
@@ -1023,6 +1136,13 @@
                 43
             ],
             "requirements": "The Voice’s Command (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTVC"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "links_to": [
                 33,
@@ -1030,9 +1150,6 @@
             ],
             "linked_from": [
                 24
-            ],
-            "blocked_by": [
-                "{GTVF}"
             ],
             "quests": [
                 25
@@ -1053,12 +1170,21 @@
                 44
             ],
             "requirements": "The Voice’s Command (Party) or The Drake’s Command (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTDC"
+                    ]
+                },
+                {
+                    "complete": [
+                        "PTVC"
+                    ]
+                }
+            ],
             "linked_from": [
                 25,
                 32
-            ],
-            "blocked_by": [
-                "{PTDC} && {GTVF}"
             ],
             "quests": [
                 25,
@@ -1085,12 +1211,19 @@
                 45
             ],
             "requirements": "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTDC"
+                    ],
+                    "incomplete": [
+                        "GTDA"
+                    ]
+                }
+            ],
             "chapter_id": 9,
             "linked_from": [
                 25
-            ],
-            "blocked_by": [
-                33
             ],
             "quests": [
                 27
@@ -1102,6 +1235,9 @@
                 5
             ],
             "achievements_awarded": [
+                "GTDS"
+            ],
+            "achievements_lost": [
                 "PTDC"
             ]
         },
@@ -1118,20 +1254,22 @@
                 47
             ],
             "requirements": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PADE"
+                    ],
+                    "incomplete": [
+                        "GTRN"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "links_to": [
                 45
             ],
             "linked_from": [
                 22
-            ],
-            "blocked_by": [
-                21,
-                27,
-                36
-            ],
-            "required_by": [
-                "{PADE} && {GTRN} === false}"
             ],
             "quests": [
                 28
@@ -1163,17 +1301,19 @@
                 48
             ],
             "requirements": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PADE"
+                    ],
+                    "incomplete": [
+                        "GTRN"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "linked_from": [
                 22
-            ],
-            "blocked_by": [
-                21,
-                27,
-                35
-            ],
-            "required_by": [
-                "{PADE} && {GTRN} === false"
             ],
             "quests": [
                 29
@@ -1203,15 +1343,19 @@
                 49
             ],
             "requirements": "Water-Breathing (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GWB"
+                    ]
+                }
+            ],
             "chapter_id": 6,
             "links_to": [
                 47
             ],
             "linked_from": [
                 31
-            ],
-            "required_by": [
-                "{GWB}"
             ],
             "quests": [
                 30
@@ -1224,6 +1368,9 @@
             },
             "region_ids": [
                 6
+            ],
+            "achievements_awarded": [
+                "PTTT"
             ]
         },
         {
@@ -1256,7 +1403,7 @@
                 2
             ],
             "achievements_awarded": [
-                "PTED"
+                "PRA"
             ]
         },
         {
@@ -1289,10 +1436,7 @@
                 5
             ],
             "achievements_awarded": [
-                "GTDS"
-            ],
-            "achievements_lost": [
-                "PTDC"
+                "PATD"
             ]
         },
         {
@@ -1308,18 +1452,20 @@
                 54
             ],
             "requirements": "The Voice’s Command (Party) and The Voice’s Treasure (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTVC",
+                        "PTVT"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "links_to": [
                 41
             ],
             "linked_from": [
                 32
-            ],
-            "blocked_by": [
-                42
-            ],
-            "required_by": [
-                "{PTVC} && {PTVT}"
             ],
             "quests": [
                 25
@@ -1331,7 +1477,7 @@
                 5
             ],
             "achievements_awarded": [
-                "PATD"
+                "GAT"
             ]
         },
         {
@@ -1347,12 +1493,16 @@
                 55
             ],
             "requirements": "The Voice’s Command (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTVC"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "linked_from": [
                 40
-            ],
-            "blocked_by": [
-                42
             ],
             "quests": [
                 25
@@ -1364,7 +1514,7 @@
                 5
             ],
             "achievements_awarded": [
-                "GAT"
+                "GTVF"
             ]
         },
         {
@@ -1379,12 +1529,19 @@
                 56
             ],
             "requirements": "The Scepter and the Voice (Party) COMPLETE and The Voice Freed (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTSV"
+                    ],
+                    "incomplete": [
+                        "GTVF"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "linked_from": [
                 30
-            ],
-            "blocked_by": [
-                41
             ],
             "quests": [
                 33
@@ -1397,7 +1554,10 @@
                 5
             ],
             "achievements_awarded": [
-                "GTVF"
+                "GTVS"
+            ],
+            "achievements_lost": [
+                "PTVC"
             ]
         },
         {
@@ -1413,12 +1573,16 @@
                 58
             ],
             "requirements": "The Power of Enhancement (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTPE"
+                    ]
+                }
+            ],
             "linked_from": [
                 18,
                 31
-            ],
-            "required_by": [
-                "{GTPE}"
             ],
             "quests": [
                 34
@@ -1430,7 +1594,7 @@
                 2
             ],
             "achievements_awarded": [
-                "PRA"
+                "GWB"
             ]
         },
         {
@@ -1446,6 +1610,13 @@
                 59
             ],
             "requirements": "Redthorn’s Aid (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PRA"
+                    ]
+                }
+            ],
             "chapter_id": 7,
             "linked_from": [
                 38
@@ -1455,9 +1626,6 @@
             ],
             "region_ids": [
                 2
-            ],
-            "achievements_awarded": [
-                "GEOC"
             ]
         },
         {
@@ -1472,6 +1640,13 @@
                 60
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GCRD"
+                    ]
+                }
+            ],
             "chapter_id": 5,
             "links_to": [
                 49,
@@ -1502,6 +1677,13 @@
                 61
             ],
             "requirements": "Across the Divide (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PATD"
+                    ]
+                }
+            ],
             "chapter_id": 8,
             "links_to": [
                 51
@@ -1519,10 +1701,7 @@
                 5
             ],
             "achievements_awarded": [
-                "GTVS"
-            ],
-            "achievements_lost": [
-                "PTVC"
+                "GEOC"
             ]
         },
         {
@@ -1537,6 +1716,13 @@
                 62
             ],
             "requirements": "Through the Trench (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTTT"
+                    ]
+                }
+            ],
             "chapter_id": 6,
             "links_to": [
                 51
@@ -1555,7 +1741,7 @@
                 6
             ],
             "achievements_awarded": [
-                "PTTT"
+                "GEOC"
             ]
         },
         {
@@ -1570,6 +1756,13 @@
                 63
             ],
             "requirements": "Redthorn’s Aid (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PRA"
+                    ]
+                }
+            ],
             "chapter_id": 7,
             "links_to": [
                 51
@@ -1587,7 +1780,7 @@
                 2
             ],
             "achievements_awarded": [
-                "GWB"
+                "GEOC"
             ]
         },
         {
@@ -1602,6 +1795,13 @@
                 64
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GCRD"
+                    ]
+                }
+            ],
             "chapter_id": 5,
             "linked_from": [
                 45
@@ -1614,6 +1814,9 @@
             },
             "region_ids": [
                 3
+            ],
+            "achievements_awarded": [
+                "GAOO"
             ]
         },
         {
@@ -1629,12 +1832,19 @@
                 66
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE and Annihilation of Order (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GCRD"
+                    ],
+                    "incomplete": [
+                        "GAOO"
+                    ]
+                }
+            ],
             "chapter_id": 5,
             "linked_from": [
                 45
-            ],
-            "blocked_by": [
-                49
             ],
             "quests": [
                 38
@@ -1659,13 +1869,18 @@
                 67
             ],
             "requirements": "End of Corruption (Global) x3 COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTRN"
+                    ],
+                    "amount": 3
+                }
+            ],
             "linked_from": [
                 46,
                 47,
                 48
-            ],
-            "required_by": [
-                "{GEOC*} == 3"
             ],
             "quests": [
                 39
@@ -1677,10 +1892,7 @@
                 1
             ],
             "achievements_awarded": [
-                "GTRN"
-            ],
-            "achievements_lost": [
-                "PADE"
+                "GEOG"
             ]
         },
         {
@@ -1996,18 +2208,19 @@
                 82
             ],
             "requirements": "Water-Breathing (Global) COMPLETE",
-            "chapter_id": 12,
             "required_by": [
-                "{GWB}"
+                {
+                    "complete": [
+                        "GWB"
+                    ]
+                }
             ],
+            "chapter_id": 12,
             "treasures": {
                 "9": "Gain \"Wave Crest\" (Item 111)"
             },
             "region_ids": [
                 6
-            ],
-            "achievements_awarded": [
-                "GEOC"
             ]
         },
         {
@@ -2053,7 +2266,7 @@
                 5
             ],
             "achievements_awarded": [
-                "GEOC"
+                "GAT"
             ]
         },
         {
@@ -2094,9 +2307,6 @@
             },
             "region_ids": [
                 3
-            ],
-            "achievements_awarded": [
-                "GAOO"
             ]
         },
         {
@@ -2419,9 +2629,6 @@
             },
             "region_ids": [
                 5
-            ],
-            "achievements_awarded": [
-                "GAT"
             ]
         },
         {
@@ -2470,6 +2677,9 @@
             "cards": [
                 "C-47",
                 "C-63"
+            ],
+            "achievements_awarded": [
+                "PTPS"
             ]
         },
         {
@@ -2495,9 +2705,6 @@
             "cards": [
                 "C-47",
                 "C-63"
-            ],
-            "achievements_awarded": [
-                "PTPS"
             ]
         },
         {
@@ -2515,7 +2722,7 @@
             "requirements": "Water-Breathing (Global) and Water Staff (Party) COMPLETE",
             "chapter_id": 15,
             "required_by": [
-                "{GWB} && {PWS}"
+                "{GWB}"
             ],
             "treasures": {
                 "8": "Gain 1 ✔",
@@ -2679,6 +2886,13 @@
                 119
             ],
             "requirements": "Through the Nest (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTTN"
+                    ]
+                }
+            ],
             "chapter_id": 15,
             "linked_from": [
                 94

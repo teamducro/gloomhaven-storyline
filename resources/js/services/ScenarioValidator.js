@@ -1,4 +1,5 @@
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import AchievementRepository from "../repositories/AchievementRepository";
 import {ScenarioState} from "../models/ScenarioState";
 import QuestValidator from "./QuestValidator";
 
@@ -10,7 +11,6 @@ export default class ScenarioValidator {
                 this.checkHidden(scenario);
                 this.checkChoice(scenario);
                 this.checkRequired(scenario);
-                this.checkBlocked(scenario);
             });
         });
 
@@ -56,67 +56,46 @@ export default class ScenarioValidator {
         }
     }
 
-    checkBlocked(scenario) {
-        if (scenario.blocked_by.isEmpty()) {
+    checkRequired(scenario) {
+        if (scenario.state === ScenarioState.hidden || scenario.state === ScenarioState.complete) {
             return;
         }
 
-        let states = this.blockedStates(scenario);
-
-        if (scenario.blocked_all === false) {
-            if (scenario.isBlocked()) {
-                if (states.has(ScenarioState.complete) === false) {
-                    scenario.state = ScenarioState.incomplete;
-                }
-            } else {
-                if (states.has(ScenarioState.complete) && !scenario.isComplete() && this.linkedStates(scenario).has(ScenarioState.complete)) {
-                    scenario.state = ScenarioState.blocked;
-                }
-            }
-        } else {
-            let blockedScenarios = this.scenarioRepository.findMany(scenario.blocked_by);
-            let blockedScenariosCount = blockedScenarios.where("state", ScenarioState.complete).count();
-            if (scenario.isBlocked()) {
-                if (blockedScenariosCount !== blockedScenarios.count()) {
-                    scenario.state = ScenarioState.incomplete;
-                }
-            } else {
-                if (blockedScenariosCount === blockedScenarios.count() && !scenario.isComplete() && this.linkedStates(scenario).has(ScenarioState.complete)) {
-                    scenario.state = ScenarioState.blocked;
-                }
-            }
-        }
-    }
-
-    checkRequired(scenario) {
         if (scenario.required_by.isEmpty()) {
             return;
         }
 
-        if (scenario.required_all === false) {
-            let states = this.requiredStates(scenario);
 
-            if (scenario.isRequired()) {
-                if (states.has(ScenarioState.complete)) {
-                    scenario.state = ScenarioState.incomplete;
-                }
-            } else {
-                if (states.has(ScenarioState.complete) === false && (this.linkedStates(scenario).has(ScenarioState.complete) || (scenario.is_side && scenario.isVisible()))) {
-                    scenario.state = ScenarioState.required;
-                }
-            }
-        } else {
-            let requiredScenarios = this.scenarioRepository.findMany(scenario.required_by);
-            let requiredScenariosCount = requiredScenarios.where("state", ScenarioState.complete).count();
-            if (scenario.isRequired()) {
-                if (requiredScenariosCount === requiredScenarios.count()) {
-                    scenario.state = ScenarioState.incomplete;
-                }
-            } else {
-                if (requiredScenariosCount !== requiredScenarios.count() && this.linkedStates(scenario).has(ScenarioState.complete)) {
-                    scenario.state = ScenarioState.required;
-                }
-            }
+        let self = this;
+        let conditions = scenario.required_by;
+
+        let incompleteScenariosOk = conditions.every((condition) => {
+            let incomplete = collect(condition.incomplete);
+            return incomplete.every((incompleteRequirement) => {
+                let achievement = self.achievementRepository.find(incompleteRequirement) || {};
+                return !achievement.awarded;
+            });
+        });
+        if (!incompleteScenariosOk) {
+            scenario.state = ScenarioState.blocked;
+            return;
+        }
+
+        let completeScenariosOk = conditions.contains((condition) => {
+            let complete = collect(condition.complete);
+            return complete.every((completeRequirement) => {
+                let achievement = self.achievementRepository.find(completeRequirement) || {};
+                // TODO check count
+                return achievement.awarded;
+            });
+        });
+        if (!completeScenariosOk) {
+            scenario.state = ScenarioState.required;
+            return;
+        }
+
+        if (completeScenariosOk && incompleteScenariosOk) {
+            scenario.state = ScenarioState.incomplete;
         }
     }
 
@@ -138,6 +117,10 @@ export default class ScenarioValidator {
 
     get scenarioRepository() {
         return this.scenarioRepository2 || (this.scenarioRepository2 = new ScenarioRepository);
+    }
+
+    get achievementRepository() {
+        return this.achievementRepository2 || (this.achievementRepository2 = new AchievementRepository);
     }
 
     get questValidator() {
