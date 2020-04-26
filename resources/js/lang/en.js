@@ -151,7 +151,7 @@ export default {
         11: {
             "name": "The Old Guard",
             "sections": {
-                1: "Jekserah a convoqué une armée de morts-vivants et prévoit d'envahir la ville! Vous devez avertir immédiatement les gardes!"
+                1: "Jekserah has summoned an undead army and is planning to invade the city! You must warn the city guard at once!"
                 2: "Protecting Gloomhaven with an army of undead was madness. You could not give over all the power to an unscrupulous necromancer. You ran to warn the city guard and were able to mount a defense against the waves of undead crashing against your weapons. You fought the undead all the way back to Jekserah's manor, where you put an end to her vile necromancy once and for all. Jekserah is dead by your hand."
                 3: "... or maybe, just maybe, there's something to Jekserah's plan. It makes sense in some dark, twisted sense. You decided not to warn the guards, but instead joined Jekserah's undead army in overthrowing the military."
             }
