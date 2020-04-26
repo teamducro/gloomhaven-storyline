@@ -6,12 +6,12 @@ export default class Card {
         const parts = str.split('-');
         this.id = parts[1];
         this.type = parts[0];
-        this.title2 = parts.length > 2 ? parts[2] : null;
+        this._title = parts.length > 2 ? parts[2] : null;
     }
 
     get title() {
-        if (this.title2) {
-            return this.title2;
+        if (this._title) {
+            return this._title;
         }
 
         switch (this.type) {
