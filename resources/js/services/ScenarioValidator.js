@@ -57,44 +57,40 @@ export default class ScenarioValidator {
     }
 
     checkRequired(scenario) {
-        if (scenario.state === ScenarioState.hidden || scenario.state === ScenarioState.complete) {
+        if (scenario.isHidden() || scenario.isComplete() || scenario.required_by.isEmpty()) {
             return;
         }
 
-        if (scenario.required_by.isEmpty()) {
-            return;
-        }
-
-
-        let self = this;
         let conditions = scenario.required_by;
 
-        let incompleteScenariosOk = conditions.every((condition) => {
+        let shouldBeBlocked = conditions.every((condition) => {
             let incomplete = collect(condition.incomplete);
             return incomplete.every((incompleteRequirement) => {
-                let achievement = self.achievementRepository.find(incompleteRequirement) || {};
+                let achievement = this.achievementRepository.find(incompleteRequirement) || {};
                 return !achievement.awarded;
             });
-        });
-        if (!incompleteScenariosOk) {
+        }) === false;
+
+        if (shouldBeBlocked) {
             scenario.state = ScenarioState.blocked;
             return;
         }
 
-        let completeScenariosOk = conditions.contains((condition) => {
+        let shouldBeRequired = conditions.contains((condition) => {
             let complete = collect(condition.complete);
             return complete.every((completeRequirement) => {
-                let achievement = self.achievementRepository.find(completeRequirement) || {};
+                let achievement = this.achievementRepository.find(completeRequirement) || {};
                 // TODO check count
                 return achievement.awarded;
             });
-        });
-        if (!completeScenariosOk) {
+        }) === false;
+
+        if (shouldBeRequired) {
             scenario.state = ScenarioState.required;
             return;
         }
 
-        if (completeScenariosOk && incompleteScenariosOk) {
+        if (!shouldBeBlocked && !shouldBeRequired) {
             scenario.state = ScenarioState.incomplete;
         }
     }
@@ -116,14 +112,14 @@ export default class ScenarioValidator {
     }
 
     get scenarioRepository() {
-        return this.scenarioRepository2 || (this.scenarioRepository2 = new ScenarioRepository);
+        return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository);
     }
 
     get achievementRepository() {
-        return this.achievementRepository2 || (this.achievementRepository2 = new AchievementRepository);
+        return this._achievementRepository || (this._achievementRepository = new AchievementRepository);
     }
 
     get questValidator() {
-        return this.questValidator2 || (this.questValidator2 = new QuestValidator);
+        return this._questValidator || (this._questValidator = new QuestValidator);
     }
 }
