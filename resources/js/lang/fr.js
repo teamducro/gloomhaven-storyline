@@ -148,5 +148,18 @@ export default {
                 2: "{1}{3}"
             }            
         }
+        11: {
+            "name": "La vieille garde",
+            "sections": {
+                1: "Jekserah a convoqué une armée de morts-vivants et prévoit d'envahir la ville! Vous devez avertir immédiatement les gardes!",
+                2: "Vous avez couru pour avertir les gardes de la ville et avez pu monter une défense contre les vagues de morts-vivants qui se sont écrasées sous vos armes. Vous avez combattu les morts-vivants jusqu'au manoir de Jekserah, où vous avez mis un terme à sa vile nécromancie une fois pour toutes. Jekserah est morte par votre main.",
+                3: "À moins que... Il y a quelque chose dans le plan de Jekserah, il a du sens d'une façon sombre et tordue. Vous avez décidé de ne pas avertir les gardes, mais au lieu de cela, vous avez rejoint l'armée des morts-vivants de Jekserah pour renverser l'armée d'Havrenuit."
+            }
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        }
     }
 }
