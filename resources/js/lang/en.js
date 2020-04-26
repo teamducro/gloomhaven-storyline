@@ -94,21 +94,26 @@ export default {
             "name": "New Management",
             "sections": {
                 0: "Pleased with your work so far, Jekserah has invited you to join her undead invasion of the city. She plans to overthrow the military and put the Merchant's Guild in control.",
-                1: "{br}You aided Jekserah in overthrowing the military. The city guard fought back, but their pitiful mortal bodies were no match for the overwhelming onslaught of the undead and the might of your blades. Every guard that fell bolstered the undead's ranks. When the Captain of the Guard fell, the remaining guards fled like the cowards you always knew they were. Jekserah's bodyguards were killed during the invasion, but so much the better for you. You are now Jekserah's new right hand and Merchant Guild rules the city.",
-                2: "{br}Overthrowing the military was not part of your plan. You spurned Jekserah's invitation and sided with the city guard against the invasion. Jekserah is dead by your hand."                
+                1: "You aided Jekserah in overthrowing the military. The city guard fought back, but their pitiful mortal bodies were no match for the overwhelming onslaught of the undead and the might of your blades. Every guard that fell bolstered the undead's ranks. When the Captain of the Guard fell, the remaining guards fled like the cowards you always knew they were. Jekserah's bodyguards were killed during the invasion, but so much the better for you. You are now Jekserah's new right hand and Merchant Guild rules the city.",
+                2: "Overthrowing the military was not part of your plan. You spurned Jekserah's invitation and sided with the city guard against the invasion. Jekserah is dead by your hand."                
             },
             "stages": {
-                0: "{1}",
-                1: "{1}{2}",
-                2: "{1}{3}"
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{2}"
             },
         },
         11: {
             "name": "The Old Guard",
+            "sections": {
+                0: "Jekserah a convoqué une armée de morts-vivants et prévoit d'envahir la ville! Vous devez avertir immédiatement les gardes!"
+                1: "Protecting Gloomhaven with an army of undead was madness. You could not give over all the power to an unscrupulous necromancer. You ran to warn the city guard and were able to mount a defense against the waves of undead crashing against your weapons. You fought the undead all the way back to Jekserah's manor, where you put an end to her vile necromancy once and for all. Jekserah is dead by your hand."
+                2: "... or maybe, just maybe, there's something to Jekserah's plan. It makes sense in some dark, twisted sense. You decided not to warn the guards, but instead joined Jekserah's undead army in overthrowing the military."
+            }
             "stages": {
-                0: "Jekserah has summoned an undead army and is planning to invade the city! You must warn the city guard at once!",
-                1: "Jekserah has summoned an undead army and is planning to invade the city! You must warn the city guard at once!{br}Protecting Gloomhaven with an army of undead was madness. You could not give over all the power to an unscrupulous necromancer. You ran to warn the city guard and were able to mount a defense against the waves of undead crashing against your weapons. You fought the undead all the way back to Jekserah's manor, where you put an end to her vile necromancy once and for all. Jekserah is dead by your hand.",
-                2: "Jekserah has summoned an undead army and is planning to invade the city! You must warn the city guard at once!{br}... or maybe, just maybe, there's something to Jekserah's plan. It makes sense in some dark, twisted sense. You decided not to warn the guards, but instead joined Jekserah's undead army in overthrowing the military."
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{2}"
             },
         },
         12: {
