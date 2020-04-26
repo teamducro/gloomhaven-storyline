@@ -53,7 +53,8 @@ window.i18n = new VueI18n({
     fallbackLocale: 'en',
     messages: {
         en: i18nEn
-    }
+    },
+    silentTranslationWarn: true
 });
 
 // event bus
