@@ -1,6 +1,6 @@
 html, body {
+    @extend .font-default;
     color: #fff;
-    font-family: 'Nyala', sans-serif;
     font-weight: 200;
     font-size: 18px;
     height: 100vh;
@@ -8,7 +8,7 @@ html, body {
 }
 
 h1, h2, h3 {
-    font-family: 'Pirata One', 'Nyala', sans-serif !important;
+    @extend .font-title;
 }
 
 body {
