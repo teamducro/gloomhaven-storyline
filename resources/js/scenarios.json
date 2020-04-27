@@ -58,7 +58,11 @@
             ],
             "treasures": {
                 "67": "Gain 10 Gold"
-            }
+            },
+            "rewards": [
+                "10 gold each",
+                "+1 prosperity"
+            ]
         },
         {
             "id": 3,
@@ -100,6 +104,10 @@
             ],
             "achievements_awarded": [
                 "PJP"
+            ],
+            "rewards": [
+                "15 gold each",
+                "+1 prosperity"
             ]
         },
         {
@@ -193,6 +201,9 @@
             "achievements_awarded": [
                 "PJP",
                 "PDB"
+            ],
+            "rewards": [
+                "5 gold each"
             ]
         },
         {
@@ -277,6 +288,9 @@
             ],
             "achievements_awarded": [
                 "GTMF"
+            ],
+            "rewards": [
+                "+2 reputation"
             ]
         },
         {
@@ -314,6 +328,10 @@
             ],
             "achievements_awarded": [
                 "GTDI"
+            ],
+            "rewards": [
+                "20 gold each",
+                "+1 prosperity"
             ]
         },
         {
@@ -395,6 +413,12 @@
             "achievements_awarded": [
                 "GCRE",
                 "GEOI"
+            ],
+            "rewards": [
+                "15 gold each",
+                "-2 reputation",
+                "+2 prosperity",
+                "“Skullbane Axe” design (Item 113)"
             ]
         },
         {
@@ -439,6 +463,10 @@
             ],
             "achievements_awarded": [
                 "GEOI"
+            ],
+            "rewards": [
+                "+4 reputation",
+                "“Skullbane Axe” design (Item 113)"
             ]
         },
         {
@@ -529,6 +557,9 @@
             ],
             "region_ids": [
                 5
+            ],
+            "rewards": [
+                "20 experience each"
             ]
         },
         {
@@ -587,6 +618,9 @@
             ],
             "region_ids": [
                 6
+            ],
+            "rewards": [
+                "25 gold each"
             ]
         },
         {
@@ -664,6 +698,9 @@
             ],
             "achievements_awarded": [
                 "PSC"
+            ],
+            "rewards": [
+                "+1 prosperity"
             ]
         },
         {
@@ -702,7 +739,12 @@
             ],
             "treasures": {
                 "60": "Gain \"Skullbane Axe\" (Item 113)"
-            }
+            },
+            "rewards": [
+                "20 gold each",
+                "+2 reputation",
+                "+1 prosperity"
+            ]
         },
         {
             "id": 21,
@@ -737,6 +779,11 @@
             "achievements_awarded": [
                 "GTRN",
                 "GAR2"
+            ],
+            "rewards": [
+                "50 gold each",
+                "+1 prosperity",
+                "Add City Event 78 to the deck"
             ]
         },
         {
@@ -926,6 +973,11 @@
             ],
             "achievements_awarded": [
                 "PFC"
+            ],
+            "rewards": [
+                "10 gold each",
+                "+1 reputation",
+                "+2 prosperity"
             ]
         },
         {
@@ -960,6 +1012,10 @@
             ],
             "achievements_awarded": [
                 "GTRN"
+            ],
+            "rewards": [
+                "+1 prosperity",
+                "100 gold each This money must immediately be spent on enhancements"
             ]
         },
         {
@@ -1036,6 +1092,9 @@
             ],
             "achievements_awarded": [
                 "GTED"
+            ],
+            "rewards": [
+                "15 experience each"
             ]
         },
         {
@@ -1073,6 +1132,9 @@
             ],
             "achievements_awarded": [
                 "PTSV"
+            ],
+            "rewards": [
+                "10 gold each"
             ]
         },
         {
@@ -1239,6 +1301,11 @@
             ],
             "achievements_lost": [
                 "PTDC"
+            ],
+            "rewards": [
+                "20 gold each",
+                "+2 reputation",
+                "+1 prosperity"
             ]
         },
         {
@@ -1286,6 +1353,12 @@
             ],
             "achievements_lost": [
                 "PADE"
+            ],
+            "rewards": [
+                "30 gold each",
+                "5 reputation",
+                "-2 prosperity",
+                "Add City Event 79 to the deck"
             ]
         },
         {
@@ -1329,6 +1402,11 @@
             ],
             "achievements_lost": [
                 "PADE"
+            ],
+            "rewards": [
+                "10 gold each",
+                "+4 reputation",
+                "Add City Event 78 to the deck"
             ]
         },
         {
@@ -1404,6 +1482,9 @@
             ],
             "achievements_awarded": [
                 "PRA"
+            ],
+            "rewards": [
+                "+1 reputation"
             ]
         },
         {
@@ -1437,6 +1518,9 @@
             ],
             "achievements_awarded": [
                 "PATD"
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -1515,6 +1599,12 @@
             ],
             "achievements_awarded": [
                 "GTVF"
+            ],
+            "rewards": [
+                "50 gold each",
+                "25 experience each",
+                "2 ✔ each",
+                "+2 prosperity"
             ]
         },
         {
@@ -1626,6 +1716,10 @@
             ],
             "region_ids": [
                 2
+            ],
+            "rewards": [
+                "Open envelope 14.svg",
+                "+2 reputation"
             ]
         },
         {
@@ -1663,6 +1757,10 @@
             },
             "region_ids": [
                 3
+            ],
+            "rewards": [
+                "20 gold each",
+                "-2 reputation"
             ]
         },
         {
@@ -1817,6 +1915,10 @@
             ],
             "achievements_awarded": [
                 "GAOO"
+            ],
+            "rewards": [
+                "50 gold each",
+                "-3 reputation"
             ]
         },
         {
@@ -1854,6 +1956,10 @@
             ],
             "achievements_awarded": [
                 "GCRM"
+            ],
+            "rewards": [
+                "+3 reputation",
+                "-2 prosperity"
             ]
         },
         {
@@ -1893,6 +1999,12 @@
             ],
             "achievements_awarded": [
                 "GEOG"
+            ],
+            "rewards": [
+                "+5 reputation",
+                "+5 prosperity",
+                "Add City Event 81 to the deck",
+                "Add Road Event 69 to the deck"
             ]
         },
         {
@@ -1948,6 +2060,9 @@
             ],
             "cards": [
                 "Q-510-Seeker of Xorn"
+            ],
+            "rewards": [
+                "The Seeker of Xorn receives: “Staff of Xorn” (Item 114) The Seeker cannot sell this item."
             ]
         },
         {
@@ -1974,6 +2089,9 @@
             ],
             "cards": [
                 "Q-510-Seeker of Xorn"
+            ],
+            "rewards": [
+                "Immediately retire the Seeker of Xorn"
             ]
         },
         {
@@ -1998,6 +2116,9 @@
             ],
             "cards": [
                 "Q-521-Take Back the Trees"
+            ],
+            "rewards": [
+                "10 collective gold"
             ]
         },
         {
@@ -2024,6 +2145,12 @@
             ],
             "cards": [
                 "Q-521-Take Back the Trees"
+            ],
+            "rewards": [
+                "“Take Back the Trees” quest complete",
+                "Open envelope 14.svg",
+                "10 gold each",
+                "+2 reputation"
             ]
         },
         {
@@ -2052,6 +2179,9 @@
             ],
             "cards": [
                 "Q-526-Vengeance"
+            ],
+            "rewards": [
+                "+1 reputation"
             ]
         },
         {
@@ -2075,6 +2205,11 @@
             ],
             "cards": [
                 "Q-526-Vengeance"
+            ],
+            "rewards": [
+                "“Vengeance” quest complete",
+                "Open envelope X",
+                "+2 reputation"
             ]
         },
         {
@@ -2122,6 +2257,11 @@
             ],
             "cards": [
                 "Q-513-Finding the Cure"
+            ],
+            "rewards": [
+                "“Finding the Cure” quest complete",
+                "Open envelope X",
+                "+1 prosperity"
             ]
         },
         {
@@ -2173,6 +2313,11 @@
             ],
             "cards": [
                 "Q-529-The Fall of Man"
+            ],
+            "rewards": [
+                "“The Fall of Man” quest complete",
+                "Open envelope 10.svg",
+                "10 experience each"
             ]
         },
         {
@@ -2193,6 +2338,9 @@
             },
             "region_ids": [
                 4
+            ],
+            "rewards": [
+                "15 gold each"
             ]
         },
         {
@@ -2221,6 +2369,9 @@
             },
             "region_ids": [
                 6
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -2242,6 +2393,9 @@
             ],
             "achievements_awarded": [
                 "GAT"
+            ],
+            "rewards": [
+                "“Ancient Drill” design (Item 112)"
             ]
         },
         {
@@ -2287,6 +2441,9 @@
             },
             "achievements_awarded": [
                 "GAT"
+            ],
+            "rewards": [
+                "“Power Core” (Item 132)"
             ]
         },
         {
@@ -2307,6 +2464,9 @@
             },
             "region_ids": [
                 3
+            ],
+            "rewards": [
+                "2 “Major Healing Potions” (Item 027)"
             ]
         },
         {
@@ -2321,7 +2481,10 @@
             "pages": [
                 88
             ],
-            "chapter_id": 12
+            "chapter_id": 12,
+            "rewards": [
+                "15 gold each"
+            ]
         },
         {
             "id": 70,
@@ -2342,6 +2505,9 @@
             },
             "region_ids": [
                 6
+            ],
+            "rewards": [
+                "+2 prosperity"
             ]
         },
         {
@@ -2357,7 +2523,10 @@
                 90,
                 91
             ],
-            "chapter_id": 12
+            "chapter_id": 12,
+            "rewards": [
+                "2 “Major Power Potions” (Item 041)"
+            ]
         },
         {
             "id": 72,
@@ -2371,7 +2540,11 @@
             "pages": [
                 92
             ],
-            "chapter_id": 13
+            "chapter_id": 13,
+            "rewards": [
+                "+1 reputation",
+                "+1 prosperity"
+            ]
         },
         {
             "id": 73,
@@ -2388,6 +2561,9 @@
             "chapter_id": 13,
             "region_ids": [
                 4
+            ],
+            "rewards": [
+                "+1 reputation"
             ]
         },
         {
@@ -2412,6 +2588,10 @@
             ],
             "cards": [
                 "C-76"
+            ],
+            "rewards": [
+                "10 gold each",
+                "+2 prosperity"
             ]
         },
         {
@@ -2433,6 +2613,9 @@
             },
             "cards": [
                 "C-77"
+            ],
+            "rewards": [
+                "60 gold each"
             ]
         },
         {
@@ -2473,6 +2656,9 @@
             "chapter_id": 13,
             "region_ids": [
                 1
+            ],
+            "rewards": [
+                "5 experience each"
             ]
         },
         {
@@ -2493,6 +2679,9 @@
             ],
             "cards": [
                 "C-34"
+            ],
+            "rewards": [
+                "+3 reputation"
             ]
         },
         {
@@ -2520,6 +2709,9 @@
                 "R-10",
                 "C-71",
                 "C-72"
+            ],
+            "rewards": [
+                "15 gold each"
             ]
         },
         {
@@ -2541,6 +2733,9 @@
             ],
             "cards": [
                 "R-49"
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -2564,6 +2759,9 @@
             ],
             "cards": [
                 "C-17"
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -2587,6 +2785,15 @@
             ],
             "cards": [
                 "R-24"
+            ],
+            "rewards": [
+                [
+                    "+1 reputation"
+                ],
+                [
+                    "-1 reputation",
+                    "-2 prosperity"
+                ]
             ]
         },
         {
@@ -2608,6 +2815,9 @@
             ],
             "cards": [
                 "C-31"
+            ],
+            "rewards": [
+                "40 collective gold"
             ]
         },
         {
@@ -2629,6 +2839,10 @@
             },
             "region_ids": [
                 5
+            ],
+            "rewards": [
+                "“Resonant Crystal” (Item 133)",
+                "+1 prosperity"
             ]
         },
         {
@@ -2652,6 +2866,9 @@
                 "R-48",
                 "R-61",
                 "R-62"
+            ],
+            "rewards": [
+                "“Orb of Dawn” (Item 121)"
             ]
         },
         {
@@ -2680,6 +2897,9 @@
             ],
             "achievements_awarded": [
                 "PTPS"
+            ],
+            "rewards": [
+                "+2 reputation"
             ]
         },
         {
@@ -2705,6 +2925,10 @@
             "cards": [
                 "C-47",
                 "C-63"
+            ],
+            "rewards": [
+                "+1 reputation",
+                "+1 prosperity"
             ]
         },
         {
@@ -2734,6 +2958,9 @@
             "cards": [
                 "R-50",
                 "C-68"
+            ],
+            "rewards": [
+                "“Staff of Summoning” (Item 120)"
             ]
         },
         {
@@ -2761,6 +2988,9 @@
             "cards": [
                 "C-51",
                 "C-64"
+            ],
+            "rewards": [
+                "50 collective gold"
             ]
         },
         {
@@ -2781,6 +3011,9 @@
             },
             "cards": [
                 "R-44"
+            ],
+            "rewards": [
+                "“Black Censer” (Item 128)"
             ]
         },
         {
@@ -2801,6 +3034,9 @@
             ],
             "cards": [
                 "C-58"
+            ],
+            "rewards": [
+                "2 ✔ each"
             ]
         },
         {
@@ -2824,6 +3060,10 @@
                 "C-56",
                 "C-66",
                 "C-67"
+            ],
+            "rewards": [
+                "10 gold each",
+                "-3 reputation"
             ]
         },
         {
@@ -2848,6 +3088,9 @@
             ],
             "cards": [
                 "C-8"
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -2899,6 +3142,9 @@
             ],
             "cards": [
                 "C-78"
+            ],
+            "rewards": [
+                "“Skull of Hatred” (Item 119)"
             ]
         }
     ],
