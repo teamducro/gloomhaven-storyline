@@ -16,7 +16,7 @@
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">
-                    <div class="xs:flex w-full mb-2">
+                    <div class="xs:flex w-full -ml-2 mb-2">
                         <radio v-if="scenario.is_side"
                                class="whitespace-no-wrap"
                                id="hidden" group="states" label="Not unlocked"
@@ -49,7 +49,7 @@
 
                     <template v-if="scenario.isVisible()">
 
-                        <div v-if="scenario.requirements" class="mb-2 flex items-center" style="padding-left: 7px;">
+                        <div v-if="scenario.requirements" class="mb-2 flex items-center" style="margin-left: -2px;">
                             <i v-if="scenario.isRequired() || scenario.isBlocked()"
                                class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
                             <i v-else class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
@@ -67,10 +67,10 @@
 
                         <div class="my-2"
                              v-if="(scenario.isComplete() || treasuresVisible) && scenario.treasures.isNotEmpty()">
-                            <h2 class="text-white" style="padding-left: 12px;">Treasures</h2>
+                            <h2 class="text-white">Treasures</h2>
                             <div v-if="scenario.treasures.isNotEmpty()"
                                  v-for="(treasure, id) in scenario.treasures.items" :key="id"
-                                 class="flex items-center">
+                                 class="flex items-center -ml-2">
                                 <checkbox
                                         :id="id"
                                         :label="'#' + id"
@@ -79,16 +79,18 @@
                                 <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">{{ treasure }}</span>
                             </div>
                         </div>
-                        <p class="mb-2" v-if="scenario.treasures.isEmpty() && treasuresVisible">
+                        <p class="mb-2"
+                           v-if="!scenario.isComplete() && scenario.treasures.isEmpty() && treasuresVisible">
                             No treasures available.
                         </p>
 
                         <div class="my-2 flex flex-col items-start"
                              v-if="nextScenarios.count()">
-                            <h2 class="text-white" style="padding-left: 12px;">
+                            <h2 class="text-white">
                                 {{ nextScenarios.count() > 1 ? 'New locations' : 'New location' }}
                             </h2>
-                            <button v-for="scenario in nextScenarios" type="button" class="mdc-button normal-case"
+                            <button v-for="scenario in nextScenarios" type="button"
+                                    class="mdc-button normal-case -ml-2"
                                     @click="open(scenario.id)">
                                 <span class="mdc-button__label">{{ scenario.name }}</span>
                             </button>
@@ -98,13 +100,13 @@
                             <template v-for="(y, is_awarded) in x">
                                 <div class="my-2 flex flex-col items-start"
                                      v-if="y.count()">
-                                    <h2 class="text-white" style="padding-left: 12px;">
+                                    <h2 class="text-white">
                                         {{ is_awarded ? '' : 'Lost' }}
                                         {{ is_global ? 'Global' : 'Party' }}
-                                        {{ y.count > 1 ? 'Achievements' : 'Achievement' }}
+                                        {{ y.count() > 1 ? 'Achievements' : 'Achievement' }}
                                     </h2>
                                     <button v-for="achievement in y" type="button"
-                                            class="mdc-button normal-case"
+                                            class="mdc-button normal-case -ml-2"
                                             @click="openAchievement(achievement.id)">
                                         <span class="mdc-button__label">{{ achievement.name }}</span>
                                     </button>
@@ -112,13 +114,28 @@
                             </template>
                         </template>
 
+                        <div class="my-2"
+                             v-if="scenario.isComplete() && scenario.rewards.count()">
+                            <h2 class="text-white">
+                                {{ scenario.rewards.count() > 1 ? 'Rewards' : 'Reward' }}
+                            </h2>
+                            <template v-if="typeof scenario.rewards.first() === 'string'">
+                                <span>{{ scenario.rewards.join(', ') }}</span>
+                            </template>
+                            <template v-if="Array.isArray(scenario.rewards.first())"
+                                      v-for="(rewards, index) in scenario.rewards">
+                                <div>Conclusion <span class="uppercase">{{ n2l.convert(index) }}</span>:
+                                    {{ rewards.join(', ') }}
+                                </div>
+                            </template>
+                        </div>
+
                         <div class="mb-3 flex flex-col items-start">
                             <template v-for="(quest, index) in scenario.quests">
-                                <button class="mdc-button normal-case"
+                                <button class="mdc-button normal-case -ml-2"
                                         @click="toggleQuest(index)">
-                                    <i class="material-icons mdc-button__icon">notes</i>
-                                    <span class="mdc-button__label">{{ $t(quest.name) }}</span>
-                                    <i class="material-icons mdc-button__icon transform transition-transform duration-500"
+                                    <span class="mdc-button__label font-title text-white">{{ $t(quest.name) }}</span>
+                                    <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
                                        :class="{'rotate-0': questExpand[index], 'rotate-180': !questExpand[index]}">
                                         keyboard_arrow_up
                                     </i>
@@ -139,11 +156,10 @@
 
                             <template v-if="scenario.hasCard()"
                                       v-for="(card, index) in scenario.cards">
-                                <button class="mdc-button"
+                                <button class="mdc-button normal-case"
                                         @click="toggleQuest(questCount + index)">
-                                    <i class="material-icons mdc-button__icon">notes</i>
-                                    <span class="mdc-button__label">{{ card.title }}</span>
-                                    <i class="material-icons mdc-button__icon transition-transform duration-500"
+                                    <span class="mdc-button__label font-title text-white">{{ card.title }}</span>
+                                    <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
                                        :class="{'rotate-0': questExpand[questCount + index], 'rotate-180': !questExpand[questCount + index]}">
                                         keyboard_arrow_up
                                     </i>
@@ -224,6 +240,7 @@
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../models/ScenarioState";
     import PreloadImage from "../services/PreloadImage";
+    import N2l from "../services/N2l";
 
     export default {
         data() {
@@ -235,7 +252,8 @@
                 treasuresVisible: false,
                 scenarioRepository: new ScenarioRepository(),
                 achievementRepository: new AchievementRepository(),
-                preloadImage: new PreloadImage()
+                preloadImage: new PreloadImage(),
+                n2l: new N2l()
             }
         },
         mounted() {
