@@ -160,6 +160,19 @@ export default {
                 1: "{1}{2}",
                 2: "{1}{3}"
             }
-        }
+        },
+        39: {
+            "name": "Influence corruptrice",
+            "sections": {
+                1: "Avec l'aide de Tourment, l'artéfact a été purgé de son influence corruptrice. Cependant, Tourmente a mentionné 3 lieux qui tiraient encore du pouvoir de cet artéfact corrompu. Vous avez déjà visité au moins l'un de ces emplacement et détruit l'influence corruptrice qui s'y trouvait. Si vous localisez et détruisez l'influence corruptrice dans chacun des trois lieux, Tourment pourrait vous donner des informations sur la corruption qui réside dans la région de Havrenuit.",
+                2: "Vous avez détruit l'influence corruptrice dans la Mer de Brume, la Forêt des Dagues et les Crêtes de Cuivre. C'est l'heure d'aller voir Tourmente et aller au fond de cette histoire.",
+                3: "Avant que tourmente n'ai pu vous expliquer quoi que ce soit, une colonne immense de sable noir a émergé du nord est de l'Ose Tordu. Tourment a pointé fermement en direction du nuage de sable tourbillonnant, tout en vous tendant une sacoche pour vous protéger de ses effets néfastes. Entrer dans le vortex s'est avéré extrèmement douloureux, mais le contenu de la sacoche vous remplissait d'un engourdissement bienvenu. Après un certain temps, vous vous êtes retrouvés au milieu d'une large salle en pierre couverte d'étranges symboles runics. Il y régnait un froid surnaturel, et la douleur diffuse du Vide persistant encore. “Ceux qui sont assez courageux pour pénétrer en ces lieux seront les premiers à mourrir,” résonne une voix tout autour de vous. “Les autres seront de toute façon chassés et inéluctablement dévorés, mais je prendre plus de plaisir à annihiler les premiers.” Vos yeux s'accoutumaient peu à peu à la pénombre, et vous parveniez à distinguer une silhouette éthérée au centre de la salle. Vous distinguez un Esther porteur de deux lames longues et effilées. “J'ai patienté de nombreuses années pour faucher cette récolte,” a t'il repris avec un sourire cruel. “Pendant un moment, je m'étais convaincu que je prendrais plus de plaisir à vous regarder vous entretuer peu à peu, mais après l'intervention de ma confrérie et la mort de mes geôliers, j'en suis revenu au plan initial. Je ne suis pas mécontent de ce revirement. Même la patience d'un immortel a ses limites.” Les lames de l'Esther se sont mis soudain à virevolter au rythme de la chorégraphie macabre qu'il entame. “Venez à moi, mes agneaux. Qui sera le premier à embrasser l'Ombre?” La bataille a fait rage pendant ce qui vous a semblé des siècles, mais finallement, les deux épées sont tombées au sol avec un tintement métallique. L'Esther est resté un instant immobile, une lueur d'incrédulité traversant son visage balafré. “Comment osez-vous,” a t'il murmuré d'une voix devenue désormais menaçante et éraillée. “J'ai attendu des milliers d'années et vous prétendez me priver des fruits de mes travaux ?” La mort a décrispé les mâchoirs de l'Esther, mais son corps tenait encore, comme suspendu par des cordes invisibles. “Vous pouvez détruire ce corps et me bannir de cette dimencion, mais ce ne sera jamais suffisant. Je suis éternel. Je reviendrai. Je me repaîtrai de ce monde une fois encore!” A ces mots, le corps de l'Esther s'est effondré, puis a disparu. La douleur sourde s'est estompé, et vous avez remonté l'escalier à la lumière du jour. Plus de secousses ni de vortex de sable noir. Tous les habitants de Havrenuit rassemblés autour de vous ont émis un soupir de soulagement lorsque vous avez émergé des profondeurs. Vous avez expliqué aux citoyens la nature du péril dont vous les avez protégés. Ils se sont réjouient et ont loué votre courage."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{2}{3}"
+            }
+        },
     }
 }
