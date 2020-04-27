@@ -4,8 +4,8 @@
             <template v-slot:body v-if="scenario">
                 <div id="scenario-title" class="pl-6 border-b border-white2-25"
                      :class="{'pb-2': scenario.regions, 'pb-4': !scenario.regions}">
-                    <h2 class="mdc-dialog__title p-0 leading-none">{{ scenario.isVisible() ? scenario.name :
-                        '#' + scenario.id }}
+                    <h2 class="mdc-dialog__title p-0 leading-none">
+                        {{ scenario.isVisible() ? scenario.name : '#' + scenario.id }}
                         <span class="text-sm text-white2-50">{{ scenario.coordinates.name }}</span>
                         <button type="button" data-mdc-dialog-action="close"
                                 class="mdc-button absolute right-0 top-0 mt-4">
