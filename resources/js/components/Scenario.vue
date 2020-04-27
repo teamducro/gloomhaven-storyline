@@ -83,9 +83,38 @@
                             No treasures available.
                         </p>
 
+                        <div class="my-2 flex flex-col items-start"
+                             v-if="nextScenarios.count()">
+                            <h2 class="text-white" style="padding-left: 12px;">
+                                {{ nextScenarios.count() > 1 ? 'New locations' : 'New location' }}
+                            </h2>
+                            <button v-for="scenario in nextScenarios" type="button" class="mdc-button normal-case"
+                                    @click="open(scenario.id)">
+                                <span class="mdc-button__label">{{ scenario.name }}</span>
+                            </button>
+                        </div>
+
+                        <template if="achievements" v-for="(x, is_global) in achievements">
+                            <template v-for="(y, is_awarded) in x">
+                                <div class="my-2 flex flex-col items-start"
+                                     v-if="y.count()">
+                                    <h2 class="text-white" style="padding-left: 12px;">
+                                        {{ is_awarded ? '' : 'Lost' }}
+                                        {{ is_global ? 'Global' : 'Party' }}
+                                        {{ y.count > 1 ? 'Achievements' : 'Achievement' }}
+                                    </h2>
+                                    <button v-for="achievement in y" type="button"
+                                            class="mdc-button normal-case"
+                                            @click="openAchievement(achievement.id)">
+                                        <span class="mdc-button__label">{{ achievement.name }}</span>
+                                    </button>
+                                </div>
+                            </template>
+                        </template>
+
                         <div class="mb-3 flex flex-col items-start">
                             <template v-for="(quest, index) in scenario.quests">
-                                <button class="mdc-button"
+                                <button class="mdc-button normal-case"
                                         @click="toggleQuest(index)">
                                     <i class="material-icons mdc-button__icon">notes</i>
                                     <span class="mdc-button__label">{{ $t(quest.name) }}</span>
@@ -191,6 +220,7 @@
 
 <script>
     import ScenarioRepository from "../repositories/ScenarioRepository";
+    import AchievementRepository from "../repositories/AchievementRepository";
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../models/ScenarioState";
     import PreloadImage from "../services/PreloadImage";
@@ -204,6 +234,7 @@
                 questExpand: [],
                 treasuresVisible: false,
                 scenarioRepository: new ScenarioRepository(),
+                achievementRepository: new AchievementRepository(),
                 preloadImage: new PreloadImage()
             }
         },
@@ -229,9 +260,47 @@
                 if (this.scenario.isComplete()) {
                     return this.scenarioRepository.findMany(this.scenario.links_to)
                         .where('state', '!=', ScenarioState.hidden);
-                } else {
-                    return null;
                 }
+
+                return collect();
+            },
+            achievements() {
+                if (this.scenario.isComplete()) {
+                    let awarded = this.achievementRepository.findMany(this.scenario.achievements_awarded)
+                        .where('_awarded', '=', true);
+                    let lost = this.achievementRepository.findMany(this.scenario.achievements_lost)
+                        .where('_awarded', '=', false);
+
+                    return [[
+                        lost.where('type', '=', 'party'),
+                        awarded.where('type', '=', 'party')
+                    ], [
+                        lost.where('type', '=', 'global'),
+                        awarded.where('type', '=', 'global')
+                    ]];
+                }
+
+                return null;
+            },
+            awardedGlobalAchievements() {
+                return this.awardedAchievements.where('type', '=', 'global');
+            },
+            awardedPartyAchievements() {
+                return this.awardedAchievements.where('type', '=', 'party');
+            },
+            lostAchievements() {
+                if (this.scenario.isComplete()) {
+                    return this.achievementRepository.findMany(this.scenario.achievements_lost)
+                        .where('_awarded', '=', false);
+                }
+
+                return collect();
+            },
+            lostGlobalAchievements() {
+                return this.lostAchievements.where('type', '=', 'global');
+            },
+            lostPartyAchievements() {
+                return this.lostAchievements.where('type', '=', 'party');
             },
             questCount() {
                 return this.scenario.quests.length || 0;
@@ -302,6 +371,13 @@
                         }
                     });
                 });
+            },
+            close() {
+                this.$refs['modal'].close();
+            },
+            openAchievement(id) {
+                this.close();
+                console.log(id);
             }
         }
     }
