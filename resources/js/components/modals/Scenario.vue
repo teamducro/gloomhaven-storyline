@@ -84,18 +84,6 @@
                             No treasures available.
                         </p>
 
-                        <div class="my-2 flex flex-col items-start"
-                             v-if="nextScenarios.count()">
-                            <h2 class="text-white">
-                                {{ nextScenarios.count() > 1 ? 'New locations' : 'New location' }}
-                            </h2>
-                            <button v-for="scenario in nextScenarios" type="button"
-                                    class="mdc-button normal-case -ml-2"
-                                    @click="open(scenario.id)">
-                                <span class="mdc-button__label">{{ scenario.name }}</span>
-                            </button>
-                        </div>
-
                         <template if="achievements" v-for="(x, is_global) in achievements">
                             <template v-for="(y, is_awarded) in x">
                                 <div class="my-2 flex flex-col items-start"
@@ -205,20 +193,12 @@
                         </div>
                     </template>
                 </div>
-                <footer class="mdc-dialog__actions flex justify-between">
-                    <div>
-                        <button v-for="scenario in prevScenarios" type="button" class="mdc-button"
-                                @click="open(scenario.id)">
-                            <i class="material-icons">navigate_before</i>
-                            <span class="mdc-button__label">{{ scenario.id }}</span>
-                        </button>
+                <footer class="mdc-dialog__actions flex justify-between px-5">
+                    <div class="space-x-2">
+                        <ScenarioNumber :scenario="scenario" v-for="scenario in prevScenarios" :key="scenario.id"/>
                     </div>
-                    <div>
-                        <button v-for="scenario in nextScenarios" type="button" class="mdc-button"
-                                @click="open(scenario.id)">
-                            <span class="mdc-button__label">{{ scenario.id }}</span>
-                            <i class="material-icons">navigate_next</i>
-                        </button>
+                    <div class="space-x-2">
+                        <ScenarioNumber :scenario="scenario" v-for="scenario in nextScenarios" :key="scenario.id"/>
                     </div>
                 </footer>
             </template>
@@ -241,8 +221,10 @@
     import {ScenarioState} from "../../models/ScenarioState";
     import PreloadImage from "../../services/PreloadImage";
     import N2l from "../../services/N2l";
+    import ScenarioNumber from "../elements/ScenarioNumber";
 
     export default {
+        components: {ScenarioNumber},
         data() {
             return {
                 scenario: null,
