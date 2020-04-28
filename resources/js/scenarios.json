@@ -1275,7 +1275,8 @@
                         "PTDC"
                     ],
                     "incomplete": [
-                        "PTDC", "PTDT"
+                        "PTDC",
+                        "PTDT"
                     ]
                 }
             ],
@@ -2940,7 +2941,11 @@
             "requirements": "Water-Breathing (Global) and Water Staff (Party) COMPLETE",
             "chapter_id": 15,
             "required_by": [
-                "{GWB}"
+                {
+                    "complete": [
+                        "{GWB}"
+                    ]
+                }
             ],
             "treasures": {
                 "8": "Gain 1 ✔",
