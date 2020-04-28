@@ -53,6 +53,6 @@ export default class Achievement {
     }
 
     get displayName() {
-        return this.awarded > 1 ? this.name + " (" + this.awarded + ")" : this.name;
+        return this.count > 1 ? this.name + " (" + this.count + ")" : this.name;
     }
 }
