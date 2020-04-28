@@ -161,6 +161,21 @@ export default {
                 2: "{1}{3}"
             }
         },
+        38: {
+            "name": "Un Nouvel Espoir",
+            "sections": {
+                1: "À la demande du seigneur démon, vous avez anéanti un campement rebelle dans le marais. L'un des gardes mourants a divulgué l'emplacement des forces rebelles restantes. “ Mais seulement parce que je sais que vous n'êtes pas vraiment mauvais. Au lieu de nous chasser et de vous battre avec nous, aidez-nous à reprendre la ville contre ces démons. Dirigez-vous vers l'est, à la frontière des Montagnes du Gardien. Cherchez au nord de la forêt de frênes. Parlez avec le commandant. Aidez nous à libérer la ville ... ”{Br} Hmm. Travailler pour un démon n'a pas tourné comme vous le pensiez. Il est peut-être temps de rejoindre l'alliance rebelle.",
+                2: "Mais d'un autre côté, ce n'est pas mieux d'être du côté d'un groupe de rebelles perdants. Au lieu de cela, vous avez aidé à évincer les démons et à installer un groupe entièrement différent de suzerains à la tête de Havrenuit.",
+                3: "Mais d'un autre côté, ce n'est pas mieux d'être du côté d'un groupe de rebelles perdants. Vous avez utilisé les instructions du garde pour localiser la base rebelle et les avez tous abattus.",
+                4: "Vous avez suivi les instructions de la garde morte dans les contreforts des Montagnes du Gardien. Pas pour tuer et détruire, mais pour aider. Les rebelles semblent méfiants au début, mais ils finissent par vous accueillir. \" Vous pourriez être notre arme secrète. Si vous pouviez vous emparer de l'armurerie de la forteresse fantôme juste au moment où nous franchissons le mur nord, nous pourrions alors converger vers la forteresse et tenir. Une fois que nous serons correctement armés et que nous vous aurons à nos côtés, les démons n'auront aucune chance. La plupart des citoyens sont mécontents de leur occupation et se lèveront quand ils verront que nous avons l'avantage. \" Trois jours plus tard, vous vous êtes faufilé dans la forteresse fantôme et avez pris d'assaut l'armurerie. Vous avez sécurisé l'armurerie juste au moment où les combattants rebelles ont pénètré dans la forteresse. Eliminer les démons du reste du bâtiment fût rapide après cela. Avec une forte présence dans la ville et la population de votre côté, la tendance s'est retourné rapidement contre les démons. La bataille fût encore longue et difficile, car de plus en plus de forces arrivaient du plan élémentaire, mais elle n'a fait finalement que rapprocher les habitants de Havrenuit, luttant contre un ennemi commun. Et comme vous ne vous battiez plus pour eux, la force démoniaque a finit par céder et s'est replié vers sa dimension. Les prochaines semaines furent difficiles, car les citoyens ont reconstruit les murs et tout ce qui aavait été détruit lors de la bataille prolongée. Ils eurent besoin de temps pour vous faire à nouveau confiance après votre trahison. Mais Havrenuit s'est reconstruite avec le temps. Les choses ne seront jamais comme avant, mais au moins, on se sent toujours comme à la maison. "
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}",
+                3: "{1}{4}"
+            }
+        },
         39: {
             "name": "Influence corruptrice",
             "sections": {
