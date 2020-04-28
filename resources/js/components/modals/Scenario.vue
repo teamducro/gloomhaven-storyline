@@ -377,7 +377,9 @@
             },
             openAchievement(id) {
                 this.close();
-                console.log(id);
+                this.$bus.$emit('open-achievement', {
+                    id: id
+                });
             }
         }
     }
