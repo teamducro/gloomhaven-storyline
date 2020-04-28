@@ -346,15 +346,20 @@ export default {
         },
         34: {
             "name": "Growing Gills",
+            "sections": {
+                1: "You require a way to breathe underwater. There is an Aesther enchanter in Gloomhaven who may know something about that. She’s been known to ask for impossible favors before she helps anyone, though.",
+                2: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to close breathe underwater?",
+                3: "Hail had you raid a nest of Drakes for their scales. They weren't terribly keen on parting with them, but your blade was very convincing. Hail used the scales to form some rather uncomfortable blue orbs that should allow you to breathe underwater. Just ignore the painful burning sensation, that's normal."
+            },
             "stages": {
-                0: "You require a way to breathe underwater. There is an Aesther enchanter in Gloomhaven who may know something about that. She’s been known to ask for impossible favors before she helps anyone, though.",
-                1: "You require a way to breathe underwater. There is an Aesther enchanter in Gloomhaven who may know something about that. She’s been known to ask for impossible favors before she helps anyone, though.{br}You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to close breathe underwater?",
-                2: "You require a way to breathe underwater. There is an Aesther enchanter in Gloomhaven who may know something about that. She’s been known to ask for impossible favors before she helps anyone, though.{br}You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to close breathe underwater?{br}Hail had you raid a nest of Drakes for their scales. They weren't terribly keen on parting with them, but your blade was very convincing. Hail used the scales to form some rather uncomfortable blue orbs that should allow you to breathe underwater. Just ignore the painful burning sensation, that's normal."
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{2}{3}"
             }
         },
         35: {
             "name": "Let Freedom Ring",
-            "stages": {
+            "sections": {
                 1: "You recently freed an Orchid named Redthorn from an Inox slave camp in the Dagger forest. After some cathartic revenge on his captors, he asked you to help him check on a nearby village that may have befallen the same fate as his own village.",
                 2: "Along the way to the village, Redthorn expressed some concern that the Inox have become increasingly aggressive. Maybe if you find out what is causing their behavior, you can put an end to these incursions? You had little time to contemplate these thoughts, as you arrived just in the nick of time. The Inox had overtaken the village and were preparing to slaughter the captured Orchids. Redthorn and your party sprung into action, saving all the captives and wiping out the Inox invaders. The orchid village and its residents are safe."
             },

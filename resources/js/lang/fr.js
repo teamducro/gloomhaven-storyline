@@ -161,9 +161,22 @@ export default {
                 2: "{1}{3}"
             }
         },
+        34: {
+            "name": "Se faire pousser des branchies",
+            "sections": {
+                1: "Il vous faut un moyen de respirer sous l'eau. Il y a une enchanteresse Esther à Gloomhaven qui connait peut-être quelque chose à ce sujet. Mais tout le monde sait qu'elle demande des faveurs impossibles avant d'aider quelqu'un...",
+                2: "Vous avez rencontré l'enchanteresse Esther, Tourment, à l'Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait compétente. Vous avez accompli une de ses requetes et avaient ainsi gagné son aide. Peut-être peut elle maintenant vous aider à trouver un moyen de respirer sous l'eau?",
+                3: "Tourment vous a envoyer piller un nid de Wyvernes pour leurs écailles. Ils n'étaient pas très désireux de s'en séparer, mais votre lame était très convaincante. Tourmente a utilisé les écailles pour former des orbes bleues plutôt inconfortables qui devraient vous permettre de respirer sous l'eau. Ignorez simplement la sensation de brûlure douloureuse, c'est normal. "
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{2}{3}"
+            }
+        },
         35: {
             "name": "Au nom de la liberté",
-            "stages": {
+            "sections": {
                 1: "Vous avez récemment libéré un Orchide nommée Redthorn d'un camp d'esclaves Inox dans la Forêt des Dagues. Après une vengeance cathartique contre ses ravisseurs, il vous a demandé de l'accompagner dans un village voisin qui aurait pu subir le même sort que son propre village. ",
                 2: "Sur le chemin du village, Redthorn a exprimé son inquiétude que les Inox soient devenus de plus en plus agressifs. Peut-être que si vous découvriez ce qui cause leur comportement, vous pourriez mettre fin à ces incursions? Vous avez eu peu de temps pour contempler ces pensées , puisque vous êtes arrivé juste à temps. Les Inox étaient venus à bout des défenses du village et se préparaient à massacrer les Orchides capturés. Redthorn et votre groupe sont entrés en action, sauvant tous les captifs et anéantissant les envahisseurs Inox. Le village des Orchides  est à présent en sécurité. "
             },
