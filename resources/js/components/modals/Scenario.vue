@@ -87,23 +87,29 @@
                         <template if="achievements" v-for="(x, is_global) in achievements">
                             <template v-for="(y, is_awarded) in x">
                                 <div class="my-2 flex flex-col items-start"
-                                     v-if="y.count()">
+                                     v-if="!y.isEmpty()">
                                     <h2 class="text-white">
                                         {{ is_awarded ? '' : 'Lost' }}
                                         {{ is_global ? 'Global' : 'Party' }}
                                         {{ y.count() > 1 ? 'Achievements' : 'Achievement' }}
                                     </h2>
-                                    <button v-for="achievement in y" type="button"
-                                            class="mdc-button normal-case -ml-2"
-                                            @click="openAchievement(achievement.id)">
-                                        <span class="mdc-button__label">{{ achievement.name }}</span>
-                                    </button>
+                                    <div v-for="achievement in y"
+                                         class="flex items-center">
+                                        <button type="button"
+                                                class="mdc-button normal-case -ml-2"
+                                                @click="openAchievement(achievement.id)">
+                                            <span class="mdc-button__label">{{ achievement.name }}</span>
+                                        </button>
+                                        <scenario-number class="ml-2"
+                                                         v-for="scenario in requiredBy(achievement)"
+                                                         :scenario="scenario" :key="scenario.id"/>
+                                    </div>
                                 </div>
                             </template>
                         </template>
 
                         <div class="my-2"
-                             v-if="scenario.isComplete() && scenario.rewards.count()">
+                             v-if="scenario.isComplete() && !scenario.rewards.isEmpty()">
                             <h2 class="text-white">
                                 {{ scenario.rewards.count() > 1 ? 'Rewards' : 'Reward' }}
                             </h2>
@@ -244,14 +250,6 @@
             });
         },
         computed: {
-            blockedScenarios() {
-                return this.scenarioRepository.findMany(this.scenario.blocked_by)
-                    .where('state', ScenarioState.complete);
-            },
-            requiredScenarios() {
-                return this.scenarioRepository.findMany(this.scenario.required_by)
-                    .where('state', ScenarioState.incomplete);
-            },
             prevScenarios() {
                 return this.scenarioRepository.findMany(this.scenario.linked_from)
                     .where('state', ScenarioState.complete);
@@ -281,26 +279,6 @@
                 }
 
                 return null;
-            },
-            awardedGlobalAchievements() {
-                return this.awardedAchievements.where('type', '=', 'global');
-            },
-            awardedPartyAchievements() {
-                return this.awardedAchievements.where('type', '=', 'party');
-            },
-            lostAchievements() {
-                if (this.scenario.isComplete()) {
-                    return this.achievementRepository.findMany(this.scenario.achievements_lost)
-                        .where('_awarded', '=', false);
-                }
-
-                return collect();
-            },
-            lostGlobalAchievements() {
-                return this.lostAchievements.where('type', '=', 'global');
-            },
-            lostPartyAchievements() {
-                return this.lostAchievements.where('type', '=', 'party');
             },
             questCount() {
                 return this.scenario.quests.length || 0;
@@ -344,6 +322,9 @@
             },
             rerenderStateSelection() {
                 this.stateKey++;
+            },
+            requiredBy(achievement) {
+                return this.scenarioRepository.requiredBy(achievement);
             },
             open(id) {
                 this.scenario = this.scenarioRepository.find(id);

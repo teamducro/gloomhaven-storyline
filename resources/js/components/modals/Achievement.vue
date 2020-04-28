@@ -1,24 +1,20 @@
 <template>
     <div>
-        <modal ref="modal">
-            <template v-slot:body v-if="achievement">
-                <div id="achivement-title" class="pl-6 border-b border-white2-25">
-                    <h2 class="mdc-dialog__title p-0 leading-none">{{ achievement.name }}
-                        <span class="absolute right-0 top-0 mt-4">
-                        <button type="button" data-mdc-dialog-action="close"
-                                class="mdc-button ">
-                            <i class="material-icons">close</i>
-                        </button>
-                        </span>
-                    </h2>
-                </div>
-
-                <div class="mdc-dialog__content" id="achievement-content">
+        <modal ref="modal" :title="achievement ? achievement.displayName : ''">
+            <template v-slot:content>
+                <div class="i-my-4" v-if="achievement">
                     <!-- TODO: Maybe add flavortext/story for the Achievements -->
-
                     <h2 class="text-white">Gained from:
                         <scenario-number class="ml-2"
                                          v-for="scenario in awardedFrom"
+                                         data-mdc-dialog-action="close"
+                                         :scenario="scenario" :key="scenario.id"/>
+                    </h2>
+
+                    <h2 v-if="!requiredBy.isEmpty()"
+                        class="text-white mt-2">Required by:
+                        <scenario-number class="ml-2"
+                                         v-for="scenario in requiredBy"
                                          data-mdc-dialog-action="close"
                                          :scenario="scenario" :key="scenario.id"/>
                     </h2>
@@ -40,12 +36,8 @@
         data() {
             return {
                 achievement: null,
-                notes: null,
-                stateKey: 1,
-                questExpand: [],
                 scenarioRepository: new ScenarioRepository(),
-                achievementRepository: new AchievementRepository(),
-                preloadImage: new PreloadImage()
+                achievementRepository: new AchievementRepository()
             }
         },
         mounted() {
@@ -55,9 +47,10 @@
         },
         computed: {
             awardedFrom() {
-                return this.scenarioRepository
-                    .findWhere((scenario, key) => scenario.achievements_awarded && scenario.achievements_awarded.contains(this.achievement.id))
-                    .where('state', ScenarioState.complete);
+                return this.scenarioRepository.awardedFrom(this.achievement);
+            },
+            requiredBy() {
+                return this.scenarioRepository.requiredBy(this.achievement);
             },
         },
         methods: {
@@ -68,11 +61,8 @@
                     this.$refs['modal'].open();
                 });
             },
-            openScenario(id) {
-                this.$bus.$emit('open-scenario', {
-                    id: id
-                });
-                this.close();
+            close() {
+                this.$refs['modal'].close();
             }
         }
     }

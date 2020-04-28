@@ -103,8 +103,31 @@ export default class ScenarioRepository {
         });
     }
 
-    findWhere(filterCallback) {
-        return app.scenarios.filter(filterCallback);
+    findWhere(filter) {
+        return app.scenarios.filter(filter);
+    }
+
+    awardedFrom(achievement) {
+        return this.findWhere((scenario, key) => {
+            return scenario.achievements_awarded
+                && scenario.achievements_awarded.contains(achievement.id);
+        })
+            .where('state', ScenarioState.complete);
+    }
+
+    requiredBy(achievement) {
+        return this.findWhere((scenario, key) => {
+            if (scenario.required_by.isEmpty()) {
+                return false;
+            }
+
+            return scenario.required_by.contains((condition) => {
+                let complete = condition.complete || [];
+                let incomplete = condition.incomplete || [];
+                return complete.some((a) => a === achievement.id) || incomplete.some((a) => a === achievement.id);
+            });
+        })
+            .where('state', '!=', ScenarioState.hidden);
     }
 
     fetchChapter(scenario) {

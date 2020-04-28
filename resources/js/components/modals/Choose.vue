@@ -2,7 +2,7 @@
     <div>
         <modal ref="modal" title="Choose a scenario to unlock">
             <template v-slot:content>
-                <div class="mb-6 mt-4 flex flex-col">
+                <div class="flex flex-col">
                     <radio v-for="scenario in scenarios"
                            :id="'choose-scenario' + scenario.id"
                            :key="scenario.id"
