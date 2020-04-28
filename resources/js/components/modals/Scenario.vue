@@ -156,7 +156,7 @@
 
                             <template v-if="scenario.hasCard()"
                                       v-for="(card, index) in scenario.cards">
-                                <button class="mdc-button normal-case"
+                                <button class="mdc-button normal-case -ml-2"
                                         @click="toggleQuest(questCount + index)">
                                     <span class="mdc-button__label font-title text-white">{{ card.title }}</span>
                                     <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
@@ -235,12 +235,12 @@
 </template>
 
 <script>
-    import ScenarioRepository from "../repositories/ScenarioRepository";
-    import AchievementRepository from "../repositories/AchievementRepository";
+    import ScenarioRepository from "../../repositories/ScenarioRepository";
+    import AchievementRepository from "../../repositories/AchievementRepository";
     import {MDCTextField} from "@material/textfield/component";
-    import {ScenarioState} from "../models/ScenarioState";
-    import PreloadImage from "../services/PreloadImage";
-    import N2l from "../services/N2l";
+    import {ScenarioState} from "../../models/ScenarioState";
+    import PreloadImage from "../../services/PreloadImage";
+    import N2l from "../../services/N2l";
 
     export default {
         data() {

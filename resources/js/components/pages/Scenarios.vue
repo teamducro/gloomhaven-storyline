@@ -82,8 +82,8 @@
 
 <script>
     import {MDCList} from "@material/list/component";
-    import ScenarioRepository from "../repositories/ScenarioRepository";
-    import {ScenarioState} from "../models/ScenarioState";
+    import ScenarioRepository from "../../repositories/ScenarioRepository";
+    import {ScenarioState} from "../../models/ScenarioState";
 
     export default {
         data() {

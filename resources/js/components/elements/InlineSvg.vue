@@ -2,7 +2,7 @@
     class Svg {
         constructor(src) {
             let div = document.createElement('div');
-            div.innerHTML = require('../../svg/' + src + '.svg');
+            div.innerHTML = require('../../../svg/' + src + '.svg');
 
             let fragment = document.createDocumentFragment();
             fragment.appendChild(div);

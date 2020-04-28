@@ -18,7 +18,7 @@
 
 <script>
     import panzoom from "panzoom"
-    import PreloadImage from "../services/PreloadImage";
+    import PreloadImage from "../../services/PreloadImage";
 
     export default {
         props: {

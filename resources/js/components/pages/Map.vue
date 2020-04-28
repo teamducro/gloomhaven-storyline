@@ -23,7 +23,7 @@
 <script>
     import panzoom from "panzoom";
     import tippy from "tippy.js";
-    import PreloadImage from "../services/PreloadImage";
+    import PreloadImage from "../../services/PreloadImage";
 
     export default {
         data() {

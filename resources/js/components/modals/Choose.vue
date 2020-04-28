@@ -28,7 +28,7 @@
 </template>
 
 <script>
-    import ScenarioRepository from "../repositories/ScenarioRepository";
+    import ScenarioRepository from "../../repositories/ScenarioRepository";
 
     export default {
         props: {

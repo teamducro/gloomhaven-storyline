@@ -51,7 +51,7 @@
 
 <script>
     import tippy from 'tippy.js';
-    import ShareState from "../services/ShareState";
+    import ShareState from "../../services/ShareState";
 
     export default {
         data() {
