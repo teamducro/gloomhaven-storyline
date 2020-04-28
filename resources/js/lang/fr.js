@@ -161,8 +161,21 @@ export default {
                 2: "{1}{3}"
             }
         },
+        36: {
+            "name": "Saletés de Rebelles",
+            "sections": {
+                1: "Plusieurs semaines après avoir aidé à installer le Premier Démon en tant que suzerain de Havrenuit, vous vous êtes réveillé un jour en trouvant un démon déformé se tenant au-dessus de vous, tenant un parchemin qui ressemblait à une sorte de peau.\" Je me retrouve à requérir votre aide une fois de plus, mortels \", dit-il. \" Il semble que de nombreuses forces d'opposition à Havrenuit m'aient échappé et campent maintenant dans les contreforts sud, complotant pour reprendre la ville. De telles machinations seront sûrement infructueuses, mais il vaut toujours mieux les écraser maintenant que d'attendre de voir ce qu'ils vont faire. \"",
+                2: "Avant d'avoir pû enquêter sur le camp rebelle, vous avez aidé à évincer les démons et à installer un groupe différent de suzerains à Havrenuit.",
+                3: "À la demande du seigneur démon, vous vous êtes dirigé vers le Marais Stagnant pour détruire les derniers vestiges de l'opposition au reigne démoniaque. À l'aide de totems magiques permettant d'assécher le marais inhospitalier, les rebelles avaient érigé un camp. Vous avez écrasé l'opposition rebelle et ses totems, et regardé le campement s'enfoncer lentement dans la boue. Un des soldats mourants vous a divulgué l'emplacement des rebelles restants. Ils tomberont bientôt sous votre épée. "
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
         37: {
-            "name": "No Survivors",
+            "name": "Aucun survivant",
             "sections": {
                 1: "À la demande du seigneur démon, vous avez anéanti un campement rebelle dans le marais. L'un des gardes mourants a divulgué l'emplacement des forces rebelles restantes. “ Mais seulement parce que je sais que vous n'êtes pas vraiment mauvais. Au lieu de nous chasser et de vous battre avec nous, aidez-nous à reprendre la ville contre ces démons. Dirigez-vous vers l'est, à la frontière des Montagnes du Gardien. Cherchez au nord de la forêt de frênes. Parlez avec le commandant. Aidez nous à libérer la ville ... ”{Br} Folie. Maintenant vous savez exactement où frapper. Il n'y aura pas de survivants.",
                 2: "Peut-être qu'il y avait quelque chose de vrai dans ce que vous ont dis ces gardes après tout. Vous avez aidé à évincer les démons et à installer un groupe entièrement différent de suzerains à la tête de Havrenuit.",
