@@ -13,20 +13,16 @@
                     </h2>
                 </div>
 
-                <div class="mdc-dialog__content" id="scenario-content">
-                <!-- TODO: Maybe add flavortext/story for the Achievements -->
+                <div class="mdc-dialog__content" id="achievement-content">
+                    <!-- TODO: Maybe add flavortext/story for the Achievements -->
+
+                    <h2 class="text-white">Gained from:
+                        <scenario-number class="ml-2"
+                                         v-for="scenario in awardedFrom"
+                                         data-mdc-dialog-action="close"
+                                         :scenario="scenario" :key="scenario.id"/>
+                    </h2>
                 </div>
-                <footer class="mdc-dialog__actions flex justify-between">
-                    <div>
-                        Gained from:
-                        <button v-for="scenario in awardedFrom" type="button" class="mdc-button"
-                                data-mdc-dialog-action="close"
-                                @click="openScenario(scenario.id)">
-                            <i class="material-icons">navigate_next</i>
-                            <span class="mdc-button__label">{{ scenario.id }}</span>
-                        </button>
-                    </div>
-                </footer>
             </template>
         </modal>
     </div>
@@ -37,8 +33,10 @@
     import {ScenarioState} from "../../models/ScenarioState";
     import PreloadImage from "../../services/PreloadImage";
     import AchievementRepository from "../../repositories/AchievementRepository";
+    import ScenarioNumber from "../elements/ScenarioNumber";
 
     export default {
+        components: {ScenarioNumber},
         data() {
             return {
                 achievement: null,
