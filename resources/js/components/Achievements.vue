@@ -8,14 +8,14 @@
                 <ul v-if="achievements" id="global-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
                     ref="global-list">
                     <li v-for="achievement in achievements.items"
-                        v-show="achievement.type === 'global' && achievement.awarded"
+                        v-show="achievement.type === 'global' && achievement.awarded && !achievement.hidden"
                         :key="achievement.id"
                         class="mdc-list-item h-auto cursor-pointer"
                         :data-id="achievement.id"
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-50">
-                        {{ achievement.name }}
+                        {{ achievement.displayName }}
                     </span>
                         </template>
                     </li>

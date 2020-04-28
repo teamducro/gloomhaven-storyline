@@ -85,8 +85,36 @@
             "id": "GAT",
             "name": "Ancient Technology",
             "type": "global",
-            "additive": true,
-            "max": 5
+            "upgrades": [
+                "GAT2",
+                "GAT3",
+                "GAT4",
+                "GAT5"
+            ]
+        },
+        {
+            "id": "GAT2",
+            "name": "Ancient Technology (2)",
+            "type": "global",
+            "hidden": true
+        },
+        {
+            "id": "GAT3",
+            "name": "Ancient Technology (3)",
+            "type": "global",
+            "hidden": true
+        },
+        {
+            "id": "GAT4",
+            "name": "Ancient Technology (4)",
+            "type": "global",
+            "hidden": true
+        },
+        {
+            "id": "GAT5",
+            "name": "Ancient Technology (5)",
+            "type": "global",
+            "hidden": true
         },
         {
             "id": "PTR",
@@ -145,6 +173,11 @@
             "type": "global"
         },
         {
+            "id": "GTDA",
+            "name": "The Drake Aided",
+            "type": "global"
+        },
+        {
             "id": "GCRD",
             "name": "City Rule: Demonic",
             "type": "global",
@@ -184,8 +217,22 @@
             "id": "GEOC",
             "name": "End of Corruption",
             "type": "global",
-            "additive": true,
-            "max": 3
+            "upgrades": [
+                "GEOC2",
+                "GEOC3"
+            ]
+        },
+        {
+            "id": "GEOC2",
+            "name": "End of Corruption (2)",
+            "type": "global",
+            "hidden": true
+        },
+        {
+            "id": "GEOC3",
+            "name": "End of Corruption (3)",
+            "type": "global",
+            "hidden": true
         },
         {
             "id": "GAOO",

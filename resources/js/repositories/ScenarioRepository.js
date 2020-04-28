@@ -3,7 +3,6 @@ import scenarios from '../scenarios.json';
 import Scenario from "../models/Scenario";
 import ScenarioValidator from "../services/ScenarioValidator";
 import {ScenarioState} from "../models/ScenarioState";
-import QuestValidator from "../services/QuestValidator";
 
 export default class ScenarioRepository {
     fetch() {
@@ -20,6 +19,8 @@ export default class ScenarioRepository {
         scenario.state = state;
         if (state === ScenarioState.complete) {
             this.processAchievements(scenario);
+        } else if (state === ScenarioState.incomplete) {
+            this.undoAchievements(scenario)
         }
 
         this.scenarioValidator.validate();
@@ -62,6 +63,19 @@ export default class ScenarioRepository {
         }
         if (scenario.achievements_lost) {
             scenario.achievements_lost.each(achievement => {
+                this.achievementRepository.lose(achievement);
+            })
+        }
+    }
+
+    undoAchievements(scenario) {
+        if (scenario.achievements_lost) {
+            scenario.achievements_lost.each(achievement => {
+                this.achievementRepository.gain(achievement);
+            })
+        }
+        if (scenario.achievements_awarded) {
+            scenario.achievements_awarded.each(achievement => {
                 this.achievementRepository.lose(achievement);
             })
         }

@@ -64,10 +64,10 @@ export default class ScenarioValidator {
         let conditions = scenario.required_by;
 
         let shouldBeBlocked = conditions.every((condition) => {
-            let incomplete = collect(condition.incomplete);
-            return incomplete.every((incompleteRequirement) => {
+            let incomplete = condition.incomplete || [];
+            return incomplete.length && !incomplete.every((incompleteRequirement) => {
                 let achievement = this.achievementRepository.find(incompleteRequirement) || {};
-                return !achievement.awarded;
+                return achievement.awarded;
             });
         }) === false;
 
@@ -77,10 +77,9 @@ export default class ScenarioValidator {
         }
 
         let shouldBeRequired = conditions.contains((condition) => {
-            let complete = collect(condition.complete);
+            let complete = condition.complete || [];
             return complete.every((completeRequirement) => {
                 let achievement = this.achievementRepository.find(completeRequirement) || {};
-                // TODO check count
                 return achievement.awarded;
             });
         }) === false;

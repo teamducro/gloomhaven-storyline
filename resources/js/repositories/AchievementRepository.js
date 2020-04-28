@@ -22,15 +22,29 @@ export default class AchievementRepository {
             }
         }
         if (achievement.group) {
-            let sameGroupAchievements = app.achievements
+            app.achievements
                 .where('group', achievement.group)
                 .where('awarded', true)
-                .each((sameGroupAchievement) => sameGroupAchievement.awarded = false)
+                .each((sameGroupAchievement) => sameGroupAchievement.awarded = false);
         }
+        if (achievement.upgrades.length && achievement.awarded) {
+            let next = this.findMany(achievement.upgrades)
+                .first(item => !item.awarded) || achievement;
+            next.awarded = true;
+        }
+        achievement.count++;
         achievement.awarded = true;
     }
+
     lose(id) {
         let achievement = this.find(id);
+        if (achievement.upgrades.length) {
+            let last = this.findMany(achievement.upgrades)
+                .last(item => item.awarded) || achievement;
+            last.awarded = false;
+        }
+
+        achievement.count--;
         achievement.awarded = false;
     }
 

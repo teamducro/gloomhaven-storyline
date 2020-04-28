@@ -262,8 +262,7 @@
                     "incomplete": [
                         "GTDI"
                     ]
-                },
-                "{PJP} && {GTDI} === false"
+                }
             ],
             "chapter_id": 2,
             "links_to": [
@@ -654,9 +653,6 @@
             },
             "region_ids": [
                 1
-            ],
-            "achievements_awarded": [
-                "GEOI"
             ]
         },
         {
@@ -1113,7 +1109,7 @@
             "required_by": [
                 {
                     "complete": [
-                        "GTVC"
+                        "PTVC"
                     ]
                 }
             ],
@@ -1279,7 +1275,7 @@
                         "PTDC"
                     ],
                     "incomplete": [
-                        "GTDA"
+                        "PTDC", "PTDT"
                     ]
                 }
             ],
@@ -1978,9 +1974,8 @@
             "required_by": [
                 {
                     "complete": [
-                        "GTRN"
-                    ],
-                    "amount": 3
+                        "GEOC3"
+                    ]
                 }
             ],
             "linked_from": [
@@ -2923,8 +2918,7 @@
                 "40": "Random Item Design"
             },
             "cards": [
-                "C-47",
-                "C-63"
+                "C-47"
             ],
             "rewards": [
                 "+1 reputation",
