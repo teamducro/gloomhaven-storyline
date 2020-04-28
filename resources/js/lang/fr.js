@@ -161,6 +161,17 @@ export default {
                 2: "{1}{3}"
             }
         },
+        35: {
+            "name": "Au nom de la liberté",
+            "stages": {
+                1: "Vous avez récemment libéré un Orchide nommée Redthorn d'un camp d'esclaves Inox dans la Forêt des Dagues. Après une vengeance cathartique contre ses ravisseurs, il vous a demandé de l'accompagner dans un village voisin qui aurait pu subir le même sort que son propre village. ",
+                2: "Sur le chemin du village, Redthorn a exprimé son inquiétude que les Inox soient devenus de plus en plus agressifs. Peut-être que si vous découvriez ce qui cause leur comportement, vous pourriez mettre fin à ces incursions? Vous avez eu peu de temps pour contempler ces pensées , puisque vous êtes arrivé juste à temps. Les Inox étaient venus à bout des défenses du village et se préparaient à massacrer les Orchides capturés. Redthorn et votre groupe sont entrés en action, sauvant tous les captifs et anéantissant les envahisseurs Inox. Le village des Orchides  est à présent en sécurité. "
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
         36: {
             "name": "Saletés de Rebelles",
             "sections": {
