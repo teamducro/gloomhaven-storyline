@@ -161,6 +161,19 @@ export default {
                 2: "{1}{3}"
             }
         },
+        37: {
+            "name": "No Survivors",
+            "sections": {
+                1: "À la demande du seigneur démon, vous avez anéanti un campement rebelle dans le marais. L'un des gardes mourants a divulgué l'emplacement des forces rebelles restantes. “ Mais seulement parce que je sais que vous n'êtes pas vraiment mauvais. Au lieu de nous chasser et de vous battre avec nous, aidez-nous à reprendre la ville contre ces démons. Dirigez-vous vers l'est, à la frontière des Montagnes du Gardien. Cherchez au nord de la forêt de frênes. Parlez avec le commandant. Aidez nous à libérer la ville ... ”{Br} Folie. Maintenant vous savez exactement où frapper. Il n'y aura pas de survivants.",
+                2: "Peut-être qu'il y avait quelque chose de vrai dans ce que vous ont dis ces gardes après tout. Vous avez aidé à évincer les démons et à installer un groupe entièrement différent de suzerains à la tête de Havrenuit.",
+                3: "En suivant les instructions données par le garde mourant, vous avez pu facilement localiser le camp rebelle. Le pauvre fou pensait que vous vous joindriez aux rebelles pour aider à renverser les démons, mais ces espoirs étaient puérils et infondés. Vous étiez ici pour tuer et détruire. Sans hésitation, vous vous êtes déchaîné à travers le camp dans les contreforts des Montagnes du Gardien. Vous avez incendié leurs tentes et tué quiconque se tiennait devant vous. Le dernier bataillon de gardes a hésité alors qu'il vous a fait face, puis les humains se sont retourné et ont fui. \"Préparez l'arme de siège!\" L'un d'eux s'est écrié alors qu'ils gravissaient la colline. Vous a poursuivi. Cela fût intéressant. En combattant à travers la première vague de soldats, vous êtes arrivé à une clairière. Les autres gardes se tenait autour d'un très gros canon mécanique. Les gardes ont fait feu sur vous plusieurs fois, mais vous avez enduré les volées de canon et tué les gardes alors que vous avanciez. Finalement, le canon se tenait brisé à vos pieds, et avec lui, tout espoir que les rebelles avaient d'attaquer Havrenuit. Les gardes encore vivants se sont éparpillés vivants, et vous êtes revenu victorieux à Havrenuit, gouverné par les démons. \"Donc, vous avez écrasé les pathétiques rebelles?\" Vous vous êtes tenu devant l'un des agents du Premier Démon. \"Bien. Vous avez prouvé que vous êtiez un outil incroyablement efficace, et mon maître vous récompensera grandement pour votre service.\" "
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
         38: {
             "name": "Un Nouvel Espoir",
             "sections": {
