@@ -1,5 +1,5 @@
 html, body {
-    @extend .font-default;
+    @apply font-default;
     color: #fff;
     font-weight: 200;
     font-size: 18px;
@@ -8,7 +8,7 @@ html, body {
 }
 
 h1, h2, h3 {
-    @extend .font-title;
+    @apply font-title #{!important};
 }
 
 body {

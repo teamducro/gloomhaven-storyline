@@ -3,6 +3,10 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
     theme: {
         extend: {
+            fontFamily: {
+                default: ['Nyala', 'sans-serif'],
+                title: ['Pirata One', 'Nyala', 'sans-serif'],
+            },
             spacing: {
                 28: '7rem'
             },
