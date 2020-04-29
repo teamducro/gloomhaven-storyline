@@ -93,8 +93,7 @@
                 2
             ],
             "quests": [
-                2,
-                6
+                2
             ],
             "treasures": {
                 "65": "\"Horned Helm\" design (Item 107)"
@@ -235,7 +234,6 @@
                 8
             ],
             "quests": [
-                5,
                 9
             ],
             "region_ids": [
@@ -275,9 +273,7 @@
                 6
             ],
             "quests": [
-                2,
-                6,
-                7
+                6
             ],
             "treasures": {
                 "51": "Random Side Scenario"
@@ -399,9 +395,7 @@
                 9
             ],
             "quests": [
-                3,
-                10,
-                11
+                10
             ],
             "treasures": {
                 "5": " Gain \"Chainmail\" (Item 023)"
@@ -450,8 +444,6 @@
                 9
             ],
             "quests": [
-                3,
-                10,
                 11
             ],
             "treasures": {
@@ -494,7 +486,6 @@
                 8
             ],
             "quests": [
-                9,
                 12
             ],
             "treasures": {
@@ -607,7 +598,7 @@
                 13
             ],
             "quests": [
-                16
+                12
             ],
             "treasures": {
                 "71": "Random Side Scenario"
@@ -730,7 +721,6 @@
                 13
             ],
             "quests": [
-                3,
                 9
             ],
             "treasures": {
@@ -846,7 +836,6 @@
                 18
             ],
             "quests": [
-                17,
                 21
             ],
             "treasures": {
@@ -1003,7 +992,6 @@
                 19
             ],
             "quests": [
-                8,
                 18
             ],
             "achievements_awarded": [
