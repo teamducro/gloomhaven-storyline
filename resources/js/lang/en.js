@@ -46,13 +46,6 @@ export default {
                 1: "While investigating the \"Gloom\", you discovered the bandits from the Black Barrow are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One appears to see heavy use with the cult. It looks as though you have an opportunity to disrupt more of the cult's activities.{br}You followed the writings to an ancient crypt believed to be the cult’s base of operations. A group of cultists were performing ritual incantations in front of a black, gaping hole in reality. With the cultists and their minions dead, the dark rift is now dormant."
             },
         },
-        5: {
-            "name": "Scry Me a River",
-            "stages": {
-                0: "Jekserah has fled and her whereabouts are unknown. The Aesther enchantress Hail may know of a way to divine her location through scrying.",
-                1: "Jekserah has fled and her whereabouts are unknown. The Aesther enchantress Hail at the Crooked Bone may know of a way to divine her location through scrying.{br}Hail sent you to collect bitteroot from the Dagger Forest. The absent-minded enchantress then used the bitter root to divine Jeksersah's location. Also, you now know to ring the bell and wait 47 seconds before entering the Crooked Bone."
-            },
-        },
         6: {
             "name": "The Merchant's Secret",
             "stages": {
