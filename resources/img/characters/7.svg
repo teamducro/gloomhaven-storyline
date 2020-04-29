@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-
-<!-- Page 7 -->
-<svg x="0" y="0" width="935" height="1210" viewBox="0 0 935 1210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-style="display: block;margin-left: auto;margin-right: auto;">
-<defs>
-<clipPath id="c_7"><path d="M0,0H935V1210H0Z"/></clipPath>
-<clipPath id="c0_7"><path d="M162.4,910V300H772.6V910Z"/></clipPath>
-
-<style type="text/css"><![CDATA[
-
-.g0_7{
-fill: #241F21;
-}
-
-]]></style>
-
-</defs>
-<path d="M0,0
-L0,1210
-L935,1210
-L935,0 Z " 
-fill="#FFFFFF" stroke="none"/>
-<g clip-path="url(#c_7)">
-<g clip-path="url(#c0_7)">
-<path d="M651.7,654.7L773.3,605.5L651.7,556.2L732.4,452.7L602.5,470.9l18.1,-130L517.1,421.6L467.9,300L418.6,421.6L315.1,340.9l18.1,130L203.3,452.7L284,556.2L162.4,605.5L284,654.7L203.3,758.2L333.2,740.1L315.1,870L418.6,789.4l49.3,121.5L517.1,789.4L620.6,870L602.5,740.1l129.9,18.1ZM467.9,756.5c-83.5,0,-151.1,-67.6,-151.1,-151c0,-83.4,67.6,-151.1,151.1,-151.1c83.4,0,151,67.7,151,151.1c0,83.4,-67.6,151,-151,151Z" class="g0_7"/>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="300pt" height="300pt" viewBox="0 0 300 300">
+<g enable-background="new">
+<clipPath id="cp6">
+<path transform="matrix(1,0,0,-1,0,300)" d="M 0 300 L 300 300 L 300 0 L 0 0 Z "/>
+</clipPath>
+<g clip-path="url(#cp6)">
+<path transform="matrix(1,0,0,-1,174.513,150)" d="M 0 0 C 0 -37.611 -30.489 -68.101 -68.1 -68.101 C -105.711 -68.101 -136.2 -37.611 -136.2 0 C -136.2 37.611 -105.711 68.1 -68.1 68.1 C -30.489 68.1 0 37.611 0 0 " fill="#030404"/>
+<path transform="matrix(1,0,0,-1,152.7269,41.03961)" d="M 0 0 C -27.61 0 -52.804 -10.29 -72.006 -27.217 C -59.018 -20.28 -44.19 -16.336 -28.437 -16.336 C 22.717 -16.336 64.187 -57.806 64.187 -108.96 C 64.187 -160.116 22.717 -201.584 -28.437 -201.584 C -44.19 -201.584 -59.018 -197.64 -72.006 -190.704 C -52.804 -207.631 -27.61 -217.921 0 -217.921 C 60.177 -217.921 108.961 -169.138 108.961 -108.96 C 108.961 -48.783 60.177 0 0 0 " fill="#030404"/>
 </g>
-<path d="M562.8,605.5c0,52.4,-42.5,94.9,-95,94.9c-52.4,0,-94.9,-42.5,-94.9,-94.9c0,-52.5,42.5,-95,94.9,-95c52.5,0,95,42.5,95,95Z" class="g0_7"/>
-
 </g>
 </svg>
