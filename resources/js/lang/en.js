@@ -164,10 +164,10 @@ export default {
             }
         },
         21: {
-            "name": "The Way Around",
+            "name": "Deeper depths",
             "stages": {
-                0: "While trying to discover the source of Gloomhaven's poisoned water, you've discovered a secret passage in the sewers. Perhaps there might be something interesting inside, like a way around the cistern without needing gills.",
-                1: "While trying to discover the source of Gloomhaven's poisoned water, you've discovered a secret passage in the sewers. Perhaps there might be something interesting inside, like a way around the cistern without needing gills.{br}The passageway was alarmed and brought a series of mechanical sentries to life. You were able to split up and silence the alarm, which stopped the sentries in their tracks. These mechanical creations may be of some use in the future, but for now you've found a way around the deepest part of the cistern. Unfortunately, you're still going to need to get wet if you want to go further."
+                0: "While trying to discover the source of Gloomhaven's poisoned water, you've discovered a secret passage in the sewers. Perhaps there might be something interesting inside.",
+                1: "While trying to discover the source of Gloomhaven's poisoned water, you've discovered a secret passage in the sewers. Perhaps there might be something interesting inside.{br}The passageway was alarmed and brought a series of mechanical sentries to life. You were able to split up and silence the alarm, which stopped the sentries in their tracks. These mechanical creations may be of some use in the future, but for now you've found a way around the deepest part of the cistern. Unfortunately, you're still going to need to get wet if you want to go further."
             }
         },
         22: {
