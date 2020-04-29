@@ -128,6 +128,13 @@ export default {
                 2: "You've heard reports of large flying creatures in the Copperneck Mountains. Could there really be dragons in the mountains? It's worth investigating, dragons could pose a serious threat to the city.{br}Your goal is the Icecrag, the tallest mountain in the Coppernecks. On your way there, you were ambushed by a group of Inox and Demons. Their co-existence was curious, but your ultimate goal lies further ahead.{br}The climb up the Icecrag was grueling and arduous. You had to fight off the cold, the wolves, and a nest of angry drakes. However you did get to the bottom of this dragon business. Atop the peak was a gigantic winged lizard - that could speak. It spoke with a gravelly voice that surprised you with its eloquence. In fact, it asked for your help. “A group of Savvas subdued me in my sleep and removed one of my flame glands, presumably to study. I cannot let this insult go unpunished and would greatly appreciate you taking it back from their city, killing as many of them as you can in the process.Or, if you wish to be cliché\" the creature said with a sigh, \"you could simply attack me. Slay the dragon, save the princess, and all that. Except I have no princess, and I’m not a dragon — just a drake who has lived a long time and does not wish to end his life today. So if you do attack me, I will fight back, and you will most assuredly die.”"
             }
         },
+        16: {
+            "name": "Treasure Island",
+            "stages": {
+                0: "You've learned of an undiscovered island in the Misty Sea that is rumored to contain vast riches. It's time to charter a boat.",
+                1: "You've learned of an undiscovered island in the Misty Sea that is rumored to contain vast riches. It's time to charter a boat.{br}The island was infested with wild Vermlings. However, no Vermling can stand between you and treasure. You stormed the island and discovered the remains of a derelict ship that the Vermlings were taking refuge in. The ship contained a plethora of gold, ripe for the taking. Who knows what the Vermlings were using the gold for, but you have a good idea what you will use it for."
+            }
+        },
         17: {
             "name": "Sewer Surfin",
             "stages": {
