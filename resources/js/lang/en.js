@@ -10,7 +10,7 @@ export default {
             "name": "The Merchant's Request",
             "sections": {
                 1: "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
-                2: "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic prowess. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
+                2: "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic power. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
                 3: "You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
             },
             "stages": {
@@ -22,9 +22,9 @@ export default {
         2: {
             "name": "The Merchant's Wrath",
             "stages": {
-                0: "A tribe of Inox in the Dagger Forest has ransacked a couple of Jekserah's caravans headed to the Capital. If you can make an example of them, she will pay you handsomely.",
-                1: "A tribe of Inox in the Dagger Forest has ransacked a couple of Jekserah's caravans headed to the Capital. If you can make an example of them, she will pay you handsomely.{br}The Inox tribe is dead. You've made an brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
-                2: "A tribe of Inox in the Dagger Forest has ransacked a couple of Jekserah's caravans headed to the Capital. If you can make an example of them, she will pay you handsomely.{br}Jekserah has fled from Gloomhaven and sworn vengeange upon you due to your actions against her. She will not be keen on paying you for running her errands anymore."
+                0: "Jekserah offers you another job after you finished your first one. A tribe of Inox in the Dagger Forest has ransacked a couple of her caravans headed to the Capital. If you can make an example of them, she will pay you even more this time.",
+                1: "Jekserah offered you another job after you finished your first one. A tribe of Inox in the Dagger Forest had ransacked a couple of her caravans headed to the Capital. She asked if you could make an example of them.{br}The Inox tribe is dead. You've made a brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
+                2: "Jekserah offered you another job after you finished your first one. A tribe of Inox in the Dagger Forest had ransacked a couple of her caravans headed to the Capital. She asked if you could make an example of them.{br}Jekserah has fled from Gloomhaven and sworn vengeance upon you due to your actions against her. She will not be keen on paying you for running her errands anymore."
             }
         },
         3: {
