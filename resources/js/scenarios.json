@@ -78,8 +78,7 @@
                 8
             ],
             "quests": [
-                2,
-                6
+                2
             ],
             "treasures": {
                 "65": "\"Horned Helm\" design (Item 107)"
@@ -239,9 +238,7 @@
                 9
             ],
             "quests": [
-                2,
-                6,
-                7
+                6
             ],
             "treasures": {
                 "51": "Random Side Scenario"
