@@ -44,10 +44,7 @@
 
                 if (this.highres) {
                     await this.$nextTick();
-                    await this.preloadImage.handle(this.highres);
-                    this.source = app.webpSupported
-                        ? this.webp(this.highres)
-                        : this.highres;
+                    this.source = await this.preloadImage.handle(this.highres);
                 }
             },
             webp(url) {

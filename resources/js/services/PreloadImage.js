@@ -14,7 +14,7 @@ export default class PreloadImage {
 
         return new Promise((resolution, rejection) => {
             image.onload = () => {
-                resolution();
+                resolution(image.src);
             }
         });
     }
