@@ -4,8 +4,8 @@
               highres="/img/map-background-highres.jpg"
               alt="Gloomhaven map background" class="fixed"/>
         <div id="map">
-            <webp src="/img/map-lowres.jpg"
-                  highres="/img/map-highres.jpg"
+            <webp src="/img/map-lowres.gif"
+                  highres="/img/map-highres.png"
                   alt="Gloomhaven map"
                   class="w-full h-full"/>
             <template v-if="scenarios">
