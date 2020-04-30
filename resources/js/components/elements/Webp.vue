@@ -1,8 +1,12 @@
 <template>
     <transition name="fade" v-if="animate">
-        <img v-show="isLoaded" :src="source" @error="this.error" @load="loaded"/>
+        <img v-show="isLoaded" :src="source"
+             :class="coverClasses"
+             @error=" this.error" @load="loaded"/>
     </transition>
-    <img v-else :src="source" @error="this.error"/>
+    <img v-else :src="source"
+         :class="coverClasses"
+         @error="this.error" @load="loaded"/>
 </template>
 
 <script>
@@ -17,7 +21,12 @@
                 type: String
             },
             animate: {
-                type: Boolean
+                type: Boolean,
+                default: false
+            },
+            cover: {
+                type: Boolean,
+                default: false
             }
         },
         data() {
@@ -25,6 +34,14 @@
                 source: '',
                 isLoaded: false,
                 preloadImage: new PreloadImage()
+            }
+        },
+        computed: {
+            coverClasses() {
+                if (!this.cover) {
+                    return {};
+                }
+                return ['object-cover', 'max-w-none', 'w-full', 'h-full'];
             }
         },
         mounted() {
