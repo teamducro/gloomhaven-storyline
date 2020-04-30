@@ -8,7 +8,7 @@ export default class PreloadImage {
         };
 
         if (typeof success === "function") {
-            image.onload = success;
+            image.onload = success(image.src);
             return;
         }
 
