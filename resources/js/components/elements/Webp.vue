@@ -55,9 +55,9 @@
         methods: {
             async render(src) {
                 this.isLoaded = false;
-                this.source = app.webpSupported
-                    ? this.webp(src)
-                    : src;
+                this.source = app.webpSupported === false
+                    ? src
+                    : this.webp(src);
 
                 if (this.highres) {
                     await this.$nextTick();
