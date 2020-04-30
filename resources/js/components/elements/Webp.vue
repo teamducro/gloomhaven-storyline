@@ -6,19 +6,25 @@
 </template>
 
 <script>
+    import PreloadImage from "../../services/PreloadImage";
+
     export default {
         props: {
             src: {
-                type: String,
+                type: String
+            },
+            highres: {
+                type: String
             },
             animate: {
-                type: Boolean,
+                type: Boolean
             }
         },
         data() {
             return {
                 source: '',
-                isLoaded: false
+                isLoaded: false,
+                preloadImage: new PreloadImage()
             }
         },
         mounted() {
@@ -30,14 +36,22 @@
             }
         },
         methods: {
-            render(src) {
+            async render(src) {
                 this.isLoaded = false;
                 this.source = app.webpSupported
-                    ? this.webp()
+                    ? this.webp(src)
                     : src;
+
+                if (this.highres) {
+                    await this.$nextTick();
+                    await this.preloadImage.handle(this.highres);
+                    this.source = app.webpSupported
+                        ? this.webp(this.highres)
+                        : this.highres;
+                }
             },
-            webp() {
-                return this.src.split('.').slice(0, -1) + '.webp';
+            webp(url) {
+                return url.split('.').slice(0, -1) + '.webp';
             },
             error() {
                 if (this.source !== this.src) {

@@ -1,7 +1,10 @@
 <template>
     <div id="map-container" class="h-screen w-screen overflow-hidden">
         <div id="map">
-            <webp :src="mapImage" alt="Gloomhaven map" class="w-full h-full"/>
+            <webp src="/img/map-lowres.jpg"
+                  highres="/img/map-highres.jpg"
+                  alt="Gloomhaven map"
+                  class="w-full h-full"/>
             <template v-if="scenarios">
                 <webp v-for="scenario in scenarios.items"
                       v-if="scenario.isVisible()"
@@ -23,19 +26,14 @@
 <script>
     import panzoom from "panzoom";
     import tippy from "tippy.js";
-    import PreloadImage from "../../services/PreloadImage";
 
     export default {
         data() {
             return {
                 map: null,
                 mapTouch: null,
-                mapImage: '/img/map-lowres.jpg',
-                highres: '/img/map-highres.jpg',
                 scenarios: null,
-                scale: 0.79,
-                stickers: collect(),
-                preloadImage: new PreloadImage()
+                scale: 0.79
             }
         },
         mounted() {
@@ -59,12 +57,6 @@
                 if (e.target.id.startsWith('s')) {
                     this.scenarioClicked(e);
                 }
-            });
-
-            this.$nextTick(() => {
-                this.preloadImage.handle(this.highres, () => {
-                    this.mapImage = this.highres;
-                });
             });
         },
         destroyed() {
