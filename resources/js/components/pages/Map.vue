@@ -1,5 +1,8 @@
 <template>
     <div id="map-container" class="h-screen w-screen overflow-hidden">
+        <webp src="/img/map-background-lowres.jpg" :cover="true"
+              highres="/img/map-background-highres.jpg"
+              alt="Gloomhaven map background" class="fixed"/>
         <div id="map">
             <webp src="/img/map-lowres.jpg"
                   highres="/img/map-highres.jpg"
