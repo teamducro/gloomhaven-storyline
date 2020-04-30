@@ -2,22 +2,28 @@
     <div>
         <modal ref="modal" :title="achievement ? achievement.displayName : ''">
             <template v-slot:content>
-                <div class="i-my-4" v-if="achievement">
-                    <!-- TODO: Maybe add flavortext/story for the Achievements -->
-                    <h2 class="text-white">Gained from:
-                        <scenario-number class="ml-2"
-                                         v-for="scenario in awardedFrom"
-                                         data-mdc-dialog-action="close"
-                                         :scenario="scenario" :key="scenario.id"/>
-                    </h2>
+                <div class="flex flex-row justify-between" v-if="achievement">
+                    <div class="i-my-4">
+                        <!-- TODO: Maybe add flavortext/story for the Achievements -->
+                        <h2 class="text-white">Gained from:
+                            <scenario-number class="ml-2"
+                                             v-for="scenario in awardedFrom"
+                                             data-mdc-dialog-action="close"
+                                             :scenario="scenario" :key="scenario.id"/>
+                        </h2>
 
-                    <h2 v-if="!requiredBy.isEmpty()"
-                        class="text-white mt-2">Required by:
-                        <scenario-number class="ml-2"
-                                         v-for="scenario in requiredBy"
-                                         data-mdc-dialog-action="close"
-                                         :scenario="scenario" :key="scenario.id"/>
-                    </h2>
+                        <h2 v-if="!requiredBy.isEmpty()"
+                            class="text-white mt-2">Required by:
+                            <scenario-number class="ml-2"
+                                             v-for="scenario in requiredBy"
+                                             data-mdc-dialog-action="close"
+                                             :scenario="scenario" :key="scenario.id"/>
+                        </h2>
+                    </div>
+                    <webp v-if="achievement.isGlobal()"
+                          :src="achievement.image"
+                          :animate="true" width="50"
+                          :alt="achievement.displayName"/>
                 </div>
             </template>
         </modal>

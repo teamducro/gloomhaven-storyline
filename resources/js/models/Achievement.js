@@ -15,6 +15,14 @@ export default class Achievement {
         this.read();
     }
 
+    isGlobal() {
+        return this.type === 'global';
+    }
+
+    isParty() {
+        return this.type === 'party';
+    }
+
     store() {
         store.set(this.key(), {
             "awarded": this._awarded,
@@ -54,5 +62,9 @@ export default class Achievement {
 
     get displayName() {
         return this.count > 1 ? this.name + " (" + this.count + ")" : this.name;
+    }
+
+    get image() {
+        return '/img/achievements/' + this.id + '.png';
     }
 }

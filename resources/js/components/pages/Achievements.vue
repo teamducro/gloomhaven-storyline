@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="pt-12 pb-4 px-4 flex flex-col ">
+        <div class="pt-16 pb-4 px-4 flex flex-col">
             <div class="w-full flex justify-center">
                 <h1>Global Achievements</h1>
             </div>
@@ -8,13 +8,13 @@
                 <ul v-if="achievements" id="global-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
                     ref="global-list">
                     <li v-for="achievement in achievements.items"
-                        v-show="achievement.type === 'global' && achievement.awarded && !achievement.hidden"
+                        v-show="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
                         :key="achievement.id"
                         class="mdc-list-item h-auto cursor-pointer"
                         :data-id="achievement.id"
                         :tabindex="achievement.id">
                         <template>
-                    <span class="mdc-list-item__text opacity-50">
+                    <span class="mdc-list-item__text opacity-75">
                         {{ achievement.displayName }}
                     </span>
                         </template>
@@ -30,13 +30,13 @@
                 <ul v-if="achievements" id="party-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
                     ref="party-list">
                     <li v-for="achievement in achievements.items"
-                        v-show="achievement.type === 'party' && achievement.awarded"
+                        v-show="achievement.isParty() && achievement.awarded"
                         :key="achievement.id"
                         class="mdc-list-item h-auto cursor-pointer"
                         :data-id="achievement.id"
                         :tabindex="achievement.id">
                         <template>
-                    <span class="mdc-list-item__text opacity-50">
+                    <span class="mdc-list-item__text opacity-75">
                         {{ achievement.name }}
                     </span>
                         </template>
@@ -54,7 +54,8 @@
     export default {
         data() {
             return {
-                list: null,
+                globalList: null,
+                partyList: null,
                 achievements: null,
                 regionFilter: null,
                 missedTreasuresFilter: null,
@@ -71,8 +72,11 @@
             this.$bus.$on('achievements-updated', this.setAchievements);
         },
         destroyed() {
-            if (this.list) {
-                this.list.destroy();
+            if (this.globalList) {
+                this.globalList.destroy();
+            }
+            if (this.partyList) {
+                this.partyList.destroy();
             }
             this.$bus.$off('achievements-updated', this.setAchievements);
         },
@@ -81,13 +85,13 @@
                 this.achievements = app.achievements;
 
                 this.$nextTick(() => {
-                    this.list = MDCList.attachTo(this.$refs['global-list']);
-                    this.list.listen('MDCList:action', (event) => {
+                    this.globalList = MDCList.attachTo(this.$refs['global-list']);
+                    this.globalList.listen('MDCList:action', (event) => {
                         let id = $(event.target).find('li:eq(' + event.detail.index + ')').data('id');
                         this.open(this.achievementRepository.find(id));
                     });
-                    this.list = MDCList.attachTo(this.$refs['party-list']);
-                    this.list.listen('MDCList:action', (event) => {
+                    this.partyList = MDCList.attachTo(this.$refs['party-list']);
+                    this.partyList.listen('MDCList:action', (event) => {
                         let id = $(event.target).find('li:eq(' + event.detail.index + ')').data('id');
                         this.open(this.achievementRepository.find(id));
                     });
