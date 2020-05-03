@@ -807,7 +807,8 @@
                 26
             ],
             "quests": [
-                20
+                20,
+                28
             ],
             "treasures": {
                 "21": "Suffer 5 Damage"
@@ -1399,7 +1400,7 @@
                 22
             ],
             "quests": [
-                29
+                28
             ],
             "treasures": {
                 "2": "Gain \"Tower Shield\" (Item 032)"
