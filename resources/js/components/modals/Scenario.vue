@@ -125,7 +125,7 @@
                         </div>
 
                         <div class="mb-3 flex flex-col items-start">
-                            <template v-for="(quest, index) in scenario.quests">
+                            <template v-for="(quest, index) in quests">
                                 <button class="mdc-button normal-case -ml-2"
                                         @click="toggleQuest(index)">
                                     <span class="mdc-button__label font-title text-white">
@@ -287,8 +287,14 @@
 
                 return null;
             },
+            quests() {
+                return this.scenario.quests.filter(quest => {
+                    return quest.stage !== undefined;
+                })
+
+            },
             questCount() {
-                return this.scenario.quests.length || 0;
+                return this.quests.items.length || 0;
             }
         },
         methods: {
