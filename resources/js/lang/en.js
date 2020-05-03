@@ -318,9 +318,13 @@ export default {
         },
         35: {
             "name": "Let Freedom Ring",
+            "sections": {
+                1: "You recently freed an Orchid named Redthorn from an Inox slave camp in the Dagger forest. After some cathartic revenge on his captors, he asked you to help him check on a nearby village that may have befallen the same fate as his own village.",
+                2: "Along the way to the village, Redthorn expressed some concern that the Inox have become increasingly aggressive. Maybe if you find out what is causing their behavior, you can put an end to these incursions? You had little time to contemplate these thoughts, as you arrived just in the nick of time. The Inox had overtaken the village and were preparing to slaughter the captured Orchids. Redthorn and your party sprung into action, saving all the captives and wiping out the Inox invaders. The orchid village and its residents are safe."
+            },
             "stages": {
-                0: "You recently freed an Orchid named Redthorn from an Inox slave camp in the Dagger forest. After some cathartic revenge on his captors, he asked you to help him check on a nearby village that may have befallen the same fate as his own village.",
-                1: "You recently freed an Orchid named Redthorn from an Inox slave camp in the Dagger forest. After some cathartic revenge on his captors, he asked you to help him check on a nearby village that may have befallen the same fate as his own village.{br}Along the way to the village, Redthorn expressed some concern that the Inox have become increasingly aggressive. Maybe if you find out what is causing their behavior, you can put an end to these incursions? You had little time to contemplate these thoughts, as you arrived just in the nick of time. The Inox had overtaken the village and were preparing to slaughter the captured Orchids. Redthorn and your party sprung into action, saving all the captives and wiping out the Inox invaders. The orchid village and its residents are safe."
+                0: "{1}",
+                1: "{2}{2}"
             }
         },
         36: {
