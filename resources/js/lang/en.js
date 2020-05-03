@@ -291,7 +291,7 @@ export default {
         },
         33: {
             "name": "Shut Up and Sit Down",
-            "sections" :{
+            "sections": {
                 1: "Inside a cave within the Copperneck Mountains, you have discovered a bound creature, known only as 'The Voice'. Ever since, you ears have not stopped ringing. Upon the advice of a Quatryl scholar, you retrieved a scepter of binding, filled with dark energies, from a shrine on the edge of the Lingering Swamp. If you bring the scepter to the Voice's chamber, you can renew the binding and silence this damned voice once and for all.",
                 2: "You decided that the easiest way to silence The Voice was just to give it what it wants. The Voice has been freed and no longer inhabits the Echo Chamber.",
                 3: "As you stood in the mountain cave, scepter in hand, the Voice called to you. “Your intentions are noble. You fear me and wish to keep me imprisoned. I understand, but what you are doing will only lead to disaster and ruin. That scepter was not created to strengthen my prison. I created it! I used it to imprison one of my greatest foes—a being of death and hatred. I do not know what will happen when you bring that thing to my chamber, but I can guarantee you no good will come of it!” Shut up shut up shut up shut up SHUT UP! You blocked the Voice’s lies from your mind and before the Voice could speak another word, you raised up the scepter and channeled its power. A black fog oozed from it and enveloped you. The Voice screamed out once more, but there was no coherence in the sound—only pain. The fog began to dissipate and, for a moment, you felt relief, until you saw that you were not in the Echo Chamber anymore, but some dark and hostile realm instead. The Voice rang out again, but somehow it was different: “The power of the Voice is mine! You will be the first I destroy with it!” And try it did, but after a fierce battle, you severed the Voice's vocal chords. The Voice will never speak again."
@@ -304,10 +304,16 @@ export default {
         },
         34: {
             "name": "Growing Gills",
+            "sections": {
+                1: "You require a way to breathe underwater. There is an Aesther enchanter in Gloomhaven who may know something about that. She’s been known to ask for impossible favors before she helps anyone, though.",
+                2: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to close breathe underwater?",
+                3: "Hail had you raid a nest of Drakes for their scales. They weren't terribly keen on parting with them, but your blade was very convincing. Hail used the scales to form some rather uncomfortable blue orbs that should allow you to breathe underwater. Just ignore the painful burning sensation, that's normal."
+
+            },
             "stages": {
-                0: "You require a way to breathe underwater. There is an Aesther enchanter in Gloomhaven who may know something about that. She’s been known to ask for impossible favors before she helps anyone, though.",
-                1: "You require a way to breathe underwater. There is an Aesther enchanter in Gloomhaven who may know something about that. She’s been known to ask for impossible favors before she helps anyone, though.{br}You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to close breathe underwater?",
-                2: "You require a way to breathe underwater. There is an Aesther enchanter in Gloomhaven who may know something about that. She’s been known to ask for impossible favors before she helps anyone, though.{br}You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to close breathe underwater?{br}Hail had you raid a nest of Drakes for their scales. They weren't terribly keen on parting with them, but your blade was very convincing. Hail used the scales to form some rather uncomfortable blue orbs that should allow you to breathe underwater. Just ignore the painful burning sensation, that's normal."
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{2}{3}"
             }
         },
         35: {
