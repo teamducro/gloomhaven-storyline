@@ -22,7 +22,8 @@
                     </div>
                     <webp v-if="achievement.isGlobal()"
                           :src="achievement.image"
-                          :animate="true" width="50"
+                          :animate="true"
+                          class="w-12"
                           :alt="achievement.displayName"/>
                 </div>
             </template>

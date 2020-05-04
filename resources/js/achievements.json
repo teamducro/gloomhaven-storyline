@@ -18,12 +18,14 @@
         {
             "id": "GTMF",
             "name": "The Merchant Flees",
-            "type": "global"
+            "type": "global",
+            "x": 32.4
         },
         {
             "id": "GTDI",
             "name": "The Dead Invade",
-            "type": "global"
+            "type": "global",
+            "x": 37.8
         },
         {
             "id": "PADE",
@@ -34,23 +36,27 @@
             "id": "GCRE",
             "name": "City Rule: Economic",
             "type": "global",
-            "group": "CR"
+            "group": "CR",
+            "x": 22.3
         },
         {
             "id": "GCRM",
             "name": "City Rule: Militaristic",
             "type": "global",
-            "group": "CR"
+            "group": "CR",
+            "x": 22.3
         },
         {
             "id": "GEOI",
             "name": "End of the Invasion",
-            "type": "global"
+            "type": "global",
+            "x": 62.2
         },
         {
             "id": "GTPE",
             "name": "The Power of Enhancement",
-            "type": "global"
+            "type": "global",
+            "x": 47.7
         },
         {
             "id": "PSC",
@@ -60,31 +66,36 @@
         {
             "id": "GTRN",
             "name": "The Rift Neutralized",
-            "type": "global"
+            "type": "global",
+            "x": 57.9
         },
         {
             "id": "GAR",
             "name": "The Artifact: Recovered",
             "type": "global",
-            "group": "ART"
+            "group": "ART",
+            "x": 27.3
         },
         {
             "id": "GAR2",
             "name": "The Artifact: Recovered (previously Lost)",
             "type": "global",
             "group": "ART",
+            "x": 27.3,
             "requirement": "GAL"
         },
         {
             "id": "GAL",
             "name": "The Artifact: Lost",
             "type": "global",
+            "x": 27.3,
             "group": "ART"
         },
         {
             "id": "GAT",
             "name": "Ancient Technology",
             "type": "global",
+            "x": 78,
             "upgrades": [
                 "GAT2",
                 "GAT3",
@@ -96,25 +107,29 @@
             "id": "GAT2",
             "name": "Ancient Technology (2)",
             "type": "global",
-            "hidden": true
+            "hidden": true,
+            "x": 78
         },
         {
             "id": "GAT3",
             "name": "Ancient Technology (3)",
             "type": "global",
-            "hidden": true
+            "hidden": true,
+            "x": 78
         },
         {
             "id": "GAT4",
             "name": "Ancient Technology (4)",
             "type": "global",
-            "hidden": true
+            "hidden": true,
+            "x": 78
         },
         {
             "id": "GAT5",
             "name": "Ancient Technology (5)",
             "type": "global",
-            "hidden": true
+            "hidden": true,
+            "x": 78
         },
         {
             "id": "PTR",
@@ -145,6 +160,7 @@
             "id": "GTED",
             "name": "The Edge of Darkness",
             "type": "global",
+            "x": 42.8
         },
         {
             "id": "PTSV",
@@ -155,7 +171,8 @@
             "id": "GAC",
             "name": "Artifact: Cleansed",
             "type": "global",
-            "group": "ART"
+            "group": "ART",
+            "x": 27.3
         },
         {
             "id": "PTVT",
@@ -170,18 +187,21 @@
         {
             "id": "GTDS",
             "name": "The Drake Slain",
-            "type": "global"
+            "type": "global",
+            "x": 13
         },
         {
             "id": "GTDA",
             "name": "The Drake Aided",
-            "type": "global"
+            "type": "global",
+            "x": 13
         },
         {
             "id": "GCRD",
             "name": "City Rule: Demonic",
             "type": "global",
-            "group": "CR"
+            "group": "CR",
+            "x": 22.3
         },
         {
             "id": "PTTT",
@@ -201,22 +221,26 @@
         {
             "id": "GTVF",
             "name": "The Voice Freed",
-            "type": "global"
+            "type": "global",
+            "x": 17.7
         },
         {
             "id": "GTVS",
             "name": "The Voice Silenced",
-            "type": "global"
+            "type": "global",
+            "x": 17.7
         },
         {
             "id": "GWB",
             "name": "Water-Breathing",
-            "type": "global"
+            "type": "global",
+            "x": 52.8
         },
         {
             "id": "GEOC",
             "name": "End of Corruption",
             "type": "global",
+            "x": 67.7,
             "upgrades": [
                 "GEOC2",
                 "GEOC3"
@@ -226,23 +250,27 @@
             "id": "GEOC2",
             "name": "End of Corruption (2)",
             "type": "global",
+            "x": 67.7,
             "hidden": true
         },
         {
             "id": "GEOC3",
             "name": "End of Corruption (3)",
             "type": "global",
+            "x": 67.7,
             "hidden": true
         },
         {
             "id": "GAOO",
             "name": "Annihilation of Order",
-            "type": "global"
+            "type": "global",
+            "x": 83.7
         },
         {
             "id": "GEOG",
             "name": "End of Gloom",
-            "type": "global"
+            "type": "global",
+            "x": 73.4
         },
         {
             "id": "PTPS",

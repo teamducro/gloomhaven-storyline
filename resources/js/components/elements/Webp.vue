@@ -1,11 +1,13 @@
 <template>
     <transition name="fade" v-if="animate">
         <img v-show="isLoaded" :src="source"
-             :class="coverClasses"
+             :class="imageClasses"
+             :width="width"
              @error=" this.error" @load="loaded"/>
     </transition>
     <img v-else :src="source"
-         :class="coverClasses"
+         :class="imageClasses"
+         :width="width"
          @error="this.error" @load="loaded"/>
 </template>
 
@@ -27,21 +29,27 @@
             cover: {
                 type: Boolean,
                 default: false
-            }
+            },
+            retina: {
+                type: Boolean,
+                default: false
+            },
         },
         data() {
             return {
                 source: '',
+                width: '',
                 isLoaded: false,
                 preloadImage: new PreloadImage()
             }
         },
         computed: {
-            coverClasses() {
-                if (!this.cover) {
-                    return {};
+            imageClasses() {
+                let classes = [];
+                if (this.cover) {
+                    classes = _.merge(classes, ['object-cover', 'max-w-none', 'w-full', 'h-full']);
                 }
-                return ['object-cover', 'max-w-none', 'w-full', 'h-full'];
+                return classes;
             }
         },
         mounted() {
@@ -72,7 +80,10 @@
                     this.source = this.src;
                 }
             },
-            loaded() {
+            loaded(e) {
+                if (this.retina) {
+                    this.width = e.target.naturalWidth / 2;
+                }
                 this.isLoaded = true;
                 this.$emit('loaded');
             }

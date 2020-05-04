@@ -8,7 +8,7 @@
                 <ul v-if="achievements" id="global-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
                     ref="global-list">
                     <li v-for="achievement in achievements.items"
-                        v-show="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
+                        v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
                         :key="achievement.id"
                         class="mdc-list-item h-auto cursor-pointer"
                         :data-id="achievement.id"
@@ -30,7 +30,7 @@
                 <ul v-if="achievements" id="party-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
                     ref="party-list">
                     <li v-for="achievement in achievements.items"
-                        v-show="achievement.isParty() && achievement.awarded"
+                        v-if="achievement.isParty() && achievement.awarded"
                         :key="achievement.id"
                         class="mdc-list-item h-auto cursor-pointer"
                         :data-id="achievement.id"
@@ -98,9 +98,9 @@
 
                 });
             },
-            open(scenario) {
+            open(achievement) {
                 this.$bus.$emit('open-achievement', {
-                    id: scenario.id
+                    id: achievement.id
                 });
             },
         }

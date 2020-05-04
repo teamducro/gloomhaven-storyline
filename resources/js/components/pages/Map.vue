@@ -8,6 +8,22 @@
                   highres="/img/map-highres.jpg"
                   alt="Gloomhaven map"
                   class="map"/>
+            <ul v-if="achievements">
+                <li v-for="achievement in achievements.items"
+                    v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
+                    :key="achievement.id"
+                    class="absolute"
+                    @click="openAchievement(achievement)"
+                    :style="{
+                        'top': '-174px',
+                        'left': achievement.x + '%'
+                    }">
+                    <webp :src="achievement.image"
+                          :animate="true" :retina="true"
+                          class="cursor-pointer"
+                          :alt="achievement.displayName"/>
+                </li>
+            </ul>
             <template v-if="scenarios">
                 <webp v-for="scenario in scenarios.items"
                       v-if="scenario.isVisible()"
@@ -36,10 +52,11 @@
                 map: null,
                 mapTouch: null,
                 scenarios: null,
+                achievements: null,
                 scale: 0.79
             }
         },
-        async mounted() {
+        mounted() {
             this.setScale();
             let $map = $('#map')
             this.map = panzoom($map[0], {
@@ -66,6 +83,11 @@
                     this.scenarioClicked(e);
                 }
             });
+
+            if (app.achievements) {
+                this.setAchievements();
+            }
+            this.$bus.$on('achievements-updated', this.setAchievements);
         },
         destroyed() {
             if (this.map) {
@@ -97,6 +119,9 @@
                     }
                 });
             },
+            setAchievements() {
+                this.achievements = app.achievements;
+            },
             scenarioClicked(e) {
                 let id = parseInt(e.target.id.replace('s', ''));
                 this.open(id);
@@ -105,7 +130,12 @@
                 this.$bus.$emit('open-scenario', {
                     id: id
                 });
-            }
+            },
+            openAchievement(achievement) {
+                this.$bus.$emit('open-achievement', {
+                    id: achievement.id
+                });
+            },
         }
     }
 </script>

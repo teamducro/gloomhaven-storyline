@@ -6,6 +6,7 @@ export default class Achievement {
         this.id = data.id;
         this.name = data.name;
         this.type = data.type;
+        this.x = data.x;
         this.group = data.group;
         this.requirement = data.requirement;
         this.upgrades = data.upgrades || [];
