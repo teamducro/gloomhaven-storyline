@@ -337,10 +337,15 @@ export default {
         },
         36: {
             "name": "Rebel Scum",
+            "sections": {
+                1: "Several weeks after installing the Prime Demon as the overlord of Gloomhaven, you wake one day to find a deformed demon standing over you, holding a parchment that looks like some sort of skin. “I find myself desiring your help once again, mortals,” it reads. “It appears that many opposition forces in Gloomhaven escaped my grasp and are now camping out in the southern foothills, plotting to take back the city. Such machinations are surely fruitless, but still it is better to crush them now than to wait to see what they do.”",
+                2: "Before you had a chance to investigate the rebel camp, you helped oust the demons and install a different set of overlords into Gloomhaven.",
+                3: "At the behest of the demon lord, you headed into the Lingering Swamp to destroy the last vestiges of opposition to demonic rule. Using the help of magical totems to dry out the inhospitable swamp, the rebels were erecting a campsite right in front of you. You crushed the rebel opposition and their totems, and watched the campsite slowly sink into the muck. One of the dying soldiers divulges the location of the remaining rebels. You'll deal with them soon enough."
+            },
             "stages": {
-                0: "Several weeks after installing the Prime Demon as the overlord of Gloomhaven, you wake one day to find a deformed demon standing over you, holding a parchment that looks like some sort of skin. “I find myself desiring your help once again, mortals,” it reads. “It appears that many opposition forces in Gloomhaven escaped my grasp and are now camping out in the southern foothills, plotting to take back the city. Such machinations are surely fruitless, but still it is better to crush them now than to wait to see what they do.”",
-                1: "Several weeks after installing the Prime Demon as the overlord of Gloomhaven, you wake one day to find a deformed demon standing over you, holding a parchment that looks like some sort of skin. “I find myself desiring your help once again, mortals,” it reads. “It appears that many opposition forces in Gloomhaven escaped my grasp and are now camping out in the southern foothills, plotting to take back the city. Such machinations are surely fruitless, but still it is better to crush them now than to wait to see what they do.”{br}Before you had a chance to investigate the rebel camp, you helped oust the demons and install a different set of overlords into Gloomhaven.",
-                2: "Several weeks after installing the Prime Demon as the overlord of Gloomhaven, you wake one day to find a deformed demon standing over you, holding a parchment that looks like some sort of skin. “I find myself desiring your help once again, mortals,” it reads. “It appears that many opposition forces in Gloomhaven escaped my grasp and are now camping out in the southern foothills, plotting to take back the city. Such machinations are surely fruitless, but still it is better to crush them now than to wait to see what they do.”{br}At the behest of the demon lord, you headed into the Lingering Swamp to destroy the last vestiges of opposition to demonic rule. Using the help of magical totems to dry out the inhospitable swamp, the rebels were erecting a campsite right in front of you. You crushed the rebel opposition and their totems, and watched the campsite slowly sink into the muck. One of the dying soldiers divulges the location of the remaining rebels. You'll deal with them soon enough."
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
             }
         },
         37: {
