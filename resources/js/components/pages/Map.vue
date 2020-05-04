@@ -4,10 +4,10 @@
               highres="/img/map-background-highres.jpg"
               alt="Gloomhaven map background" class="fixed"/>
         <div id="map">
-            <webp src="/img/map-lowres.gif"
-                  highres="/img/map-highres.png"
+            <webp src="/img/map-lowres.jpg"
+                  highres="/img/map-highres.jpg"
                   alt="Gloomhaven map"
-                  class="w-full h-full"/>
+                  class="map"/>
             <template v-if="scenarios">
                 <webp v-for="scenario in scenarios.items"
                       v-if="scenario.isVisible()"
@@ -39,14 +39,19 @@
                 scale: 0.79
             }
         },
-        mounted() {
+        async mounted() {
             this.setScale();
-            this.map = panzoom(document.querySelector('#map'), {
+            let $map = $('#map')
+            this.map = panzoom($map[0], {
                 minZoom: this.scale,
                 maxZoom: 4,
                 bounds: true
             });
             this.map.zoomTo(0, 0, this.scale);
+            const mapH = $map.height() * this.scale;
+            let y = ($(window).height() - mapH) / 2;
+
+            this.map.moveTo(0, y);
 
             if (app.scenarios) {
                 this.setScenarios();
@@ -109,6 +114,14 @@
     #map {
         width: 2484px;
         height: 2160px;
+        position: relative;
+
+        .map {
+            top: -184px;
+            left: 0;
+            width: 100%;
+            position: absolute;
+        }
 
         .scenario {
             transform: scale(0.79);
