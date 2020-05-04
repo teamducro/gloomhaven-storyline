@@ -142,9 +142,9 @@
             "type": "party"
         },
         {
-            "id": "PTED",
+            "id": "GTED",
             "name": "The Edge of Darkness",
-            "type": "party"
+            "type": "global",
         },
         {
             "id": "PTSV",
