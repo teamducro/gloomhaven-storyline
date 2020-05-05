@@ -71,7 +71,7 @@ export default {
             "name": "The Merchant's Secret",
             "sections": {
                 1: "When you left Jekserah's manor a Quatryl city guard approached you. She told you Jekserah has been trying to overthrow the military in Gloomhaven and is up to something sinister. The guard asked for your aid in uncovering Jekserah’s plans and expose her for who she really is.",
-                2: "The warehouse was full of the undead. Jekserah had been using the necromantic scroll you delivered to raise the undead within the city walls. You fought your way to the back room of the warehouse and confronted Jekserah. Just before she flipped out a window she told you she'd be back with a legion of undead. To stop her you could locate her yourself or ask the help of an Aesther enchanter mentioned by the city guard"
+                2: "The warehouse was full of the undead. Jekserah had been using the necromantic scroll you delivered to raise the undead within the city walls. You fought your way to the back room of the warehouse and confronted Jekserah. Just before she flipped out a window she told you she'd be back with a legion of undead. To stop her you could locate her yourself or ask the help of an Aesther enchanter mentioned by the city guard",
                 3: "You ignored the city guard Argeise's warnings and continued working for Jekserah. \"Sinister machinations\" is, of course, a troubling phrase to throw around, but the phrase \"considerable reward\" trumps that in a heartbeat. There is no more reason to raid the warehouse."
             },
             "stages": {
