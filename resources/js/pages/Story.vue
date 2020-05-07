@@ -11,9 +11,9 @@
 </template>
 
 <script>
-    import zoom from "../../services/Zoom";
-    import {ScenarioState} from "../../models/ScenarioState";
-    import ScenarioRepository from "../../repositories/ScenarioRepository";
+    import zoom from "../services/Zoom";
+    import {ScenarioState} from "../models/ScenarioState";
+    import ScenarioRepository from "../repositories/ScenarioRepository";
     import tippy from 'tippy.js';
 
     export default {

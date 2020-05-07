@@ -48,7 +48,7 @@
 </template>
 
 <script>
-    import AchievementRepository from "../../repositories/AchievementRepository";
+    import AchievementRepository from "../repositories/AchievementRepository";
     import {MDCList} from "@material/list/component";
 
     export default {

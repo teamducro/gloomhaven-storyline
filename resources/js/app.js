@@ -7,11 +7,7 @@ import QuestRepository from "./repositories/QuestRepository";
 import AchievementRepository from "./repositories/AchievementRepository";
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';
-import Story from "./components/pages/Story";
-import Scenarios from "./components/pages/Scenarios";
-import Achievements from "./components/pages/Achievements";
 import VueAnalytics from 'vue-analytics';
-import Map from "./components/pages/Map";
 import Achievement from "./models/Achievement";
 import {loadLanguageAsync} from "./services/I18n-setup";
 import i18nEn from "./lang/en";
@@ -25,14 +21,19 @@ VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
 
 // Vue components
-const files = require.context('./components', true, /\.vue$/i);
-files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+const components = require.context('./components', true, /\.vue$/i);
+components.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], components(key).default));
+
+// pages
+const Story = () => import("./pages/Story");
+const Scenarios = () => import("./pages/Scenarios");
+const Achievements = () => import("./pages/Achievements");
+const Map = () => import("./pages/Map");
 
 // Router
 const routes = [
     {path: '/', redirect: '/story'},
     {path: '/story', component: Story},
-    {path: '/story/:id', component: Story},
     {path: '/scenarios', component: Scenarios},
     {path: '/map', component: Map},
     {path: '/achievements', component: Achievements},
