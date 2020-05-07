@@ -128,7 +128,14 @@
                             <template v-for="(quest, index) in scenario.quests">
                                 <button class="mdc-button normal-case -ml-2"
                                         @click="toggleQuest(index)">
-                                    <span class="mdc-button__label font-title text-white">{{ $t(quest.name) }}</span>
+                                    <span class="mdc-button__label font-title text-white">
+                                        <template v-if="questExpand[index]">
+                                            {{ $t(quest.name) }}
+                                        </template>
+                                        <template v-else>
+                                            {{ scenario.isComplete() ? 'Summary' : 'Preceding events' }}
+                                        </template>
+                                    </span>
                                     <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
                                        :class="{'rotate-0': questExpand[index], 'rotate-180': !questExpand[index]}">
                                         keyboard_arrow_up
