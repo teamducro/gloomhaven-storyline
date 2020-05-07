@@ -74,35 +74,43 @@ window.app = new Vue({
             isPortrait: true
         }
     },
-    mounted() {
+    async mounted() {
         // loadLanguageAsync('de');
         this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
-        this.fetchScenarios();
-        this.fetchAchievements();
+
+        await Promise.all([
+            this.fetchAchievements(),
+            this.fetchScenarios()
+        ]);
+
+        this.shouldRedirectToDotCom();
+
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
     },
     methods: {
-        fetchAchievements() {
+        async fetchAchievements() {
             let achievementRepository = new AchievementRepository;
             this.achievements = achievementRepository.fetch();
-            this.$nextTick(() => {
-                this.$bus.$emit('achievements-updated');
-            });
+            await this.$nextTick();
+            this.$bus.$emit('achievements-updated');
+
+            return true;
         },
-        fetchScenarios() {
+        async fetchScenarios() {
             let scenarioRepository = new ScenarioRepository;
             let questRepository = new QuestRepository;
             this.quests = questRepository.fetch();
             this.scenarios = scenarioRepository.fetch();
             scenarioRepository.setQuests(this.scenarios, this.quests);
 
-            this.$nextTick(() => {
-                (new ShareState).load();
-                (new ScenarioValidator).validate();
-                this.$bus.$emit('scenarios-updated');
-            });
+            await this.$nextTick();
+            (new ShareState).load();
+            (new ScenarioValidator).validate();
+            this.$bus.$emit('scenarios-updated');
+
+            return true;
         },
         isWebpSupported() {
             let elem = document.createElement('canvas');
@@ -137,6 +145,12 @@ window.app = new Vue({
         updateViewportHeight() {
             let vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
+        },
+        shouldRedirectToDotCom() {
+            if (window.location.host.endsWith(".danield.nl")) {
+                const url = 'https://gloomhaven-storyline.com';
+                window.location = url + '?' + (new ShareState).encode();
+            }
         }
     }
 });
