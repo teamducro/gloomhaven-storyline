@@ -149,8 +149,11 @@
             },
             renderChapters() {
                 for (let id = 1; id <= 10; id++) {
-                    let unlocked = app.scenarios.where('chapter_id', id).where('state', '!=', ScenarioState.hidden).count();
-                    let $chapter = $('#chapter' + id);
+                    const unlocked = app.scenarios
+                        .where('chapter_id', id)
+                        .where('state', '=', ScenarioState.complete)
+                        .isNotEmpty();
+                    const $chapter = $('#chapter' + id);
 
                     if (unlocked) {
                         $chapter.show();
