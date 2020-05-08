@@ -152,7 +152,7 @@
                     const unlocked = app.scenarios
                         .where('chapter_id', id)
                         .where('state', '=', ScenarioState.complete)
-                        .isNotEmpty();
+                        .isNotEmpty() || id === 1;
                     const $chapter = $('#chapter' + id);
 
                     if (unlocked) {
