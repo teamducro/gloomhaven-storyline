@@ -1138,13 +1138,13 @@
             "required_by": [
                 {
                     "complete": [
-                        "GTRN",
+                        "GTPE",
                         "GAR"
                     ]
                 },
                 {
                     "complete": [
-                        "GTRN",
+                        "GTPE",
                         "GAR2"
                     ]
                 }
