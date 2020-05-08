@@ -52,13 +52,13 @@ describe('Storyline', () => {
     });
 
     it('It reveals chapters', () => {
-        cy.visit('/');
+        cy.visit('/?states=1_c-2_c');
 
         cy.get('#chapter2')
             .should('have.css', 'display')
             .and('eq', 'none');
 
-        cy.visit('/?states=1_c-2_c');
+        completeScenario(3);
 
         cy.get('#chapter2')
             .should('have.css', 'display')
