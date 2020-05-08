@@ -1,8 +1,8 @@
 import {ScenarioState} from "./ScenarioState";
+import Storable from './Storable'
 import Card from "./Card";
-import store from "store/dist/store.modern";
 
-export default class Scenario {
+class Scenario {
 
     constructor(data) {
         this.id = data.id;
@@ -19,9 +19,9 @@ export default class Scenario {
         this.region_ids = data.region_ids || [];
         this.regions = null;
         this.choices = data.choices;
-        this.choice2 = null;
+        this._choice = null;
         this.hasChoices = typeof data.choices !== 'undefined';
-        this.state2 = ScenarioState.hidden;
+        this._state = ScenarioState.hidden;
         this.notes = "";
         this.links_to = collect(data.links_to);
         this.linked_from = collect(data.linked_from);
@@ -33,6 +33,14 @@ export default class Scenario {
         this.unlockedTreasures = [];
         this.achievements_awarded = collect(data.achievements_awarded);
         this.achievements_lost = collect(data.achievements_lost);
+
+        this.fieldsToStore = {
+            "state": "_state",
+            "choice": "_choice",
+            "notes": "notes",
+            "treasures": "unlockedTreasures"
+        }
+
         this.read();
     }
 
@@ -61,39 +69,49 @@ export default class Scenario {
     }
 
     set state(state) {
-        this.state2 = state;
+        if (this._state === state) {
+            return;
+        }
+        this._state = state;
         this.store();
     }
 
     get state() {
-        return this.state2;
+        return this._state;
     }
 
     set choice(choice) {
-        this.choice2 = choice;
+        if (this._choice === choice) {
+            return;
+        }
+        this._choice = choice;
         this.store();
     }
 
     get choice() {
-        return this.choice2;
+        return this._choice;
     }
 
     unlockTreasure(id, unlock = true) {
-        if (this.treasures.has(id)) {
-            if (unlock) {
-                if (!this.isTreasureUnlocked(id)) {
-                    this.unlockedTreasures.push(id);
-                }
-            } else {
-                this.unlockedTreasures.splice(this.unlockedTreasures.indexOf(id));
-            }
+        if (!unlock) {
+            return this.lockTreasure(id);
         }
 
+        if (!this.treasures.has(id) || this.isTreasureUnlocked(id)) {
+            return;
+        }
+
+        this.unlockedTreasures.push(id);
         this.store();
     }
 
     lockTreasure(id) {
-        this.unlockTreasure(id, false);
+        if (!this.treasures.has(id) || !this.isTreasureUnlocked(id)) {
+            return;
+        }
+
+        this.unlockedTreasures.splice(this.unlockedTreasures.indexOf(id));
+        this.store();
     }
 
     isTreasureUnlocked(id) {
@@ -116,26 +134,8 @@ export default class Scenario {
         return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
     }
 
-    store() {
-        store.set(this.key(), {
-            "state": this.state,
-            "choice": this.choice,
-            "notes": this.notes,
-            "treasures": this.unlockedTreasures
-        });
-    }
-
-    read() {
-        let scenario = store.get(this.key());
-        if (scenario) {
-            this.state2 = scenario.state;
-            this.choice2 = scenario.choice;
-            this.notes = scenario.notes;
-            this.unlockedTreasures = scenario.treasures || [];
-        }
-    }
-
-    key() {
-        return 'scenario-' + this.id;
-    }
 }
+
+Object.assign(Scenario.prototype, Storable)
+
+export default Scenario

@@ -1,6 +1,6 @@
-import store from "store/dist/store.modern";
+import Storable from './Storable'
 
-export default class Achievement {
+class Achievement {
 
     constructor(data) {
         this.id = data.id;
@@ -13,6 +13,12 @@ export default class Achievement {
         this.hidden = data.hidden || false;
         this._awarded = false;
         this._count = 0;
+
+        this.fieldsToStore = {
+            "awarded": "_awarded",
+            "count": "_count"
+        }
+
         this.read();
     }
 
@@ -24,26 +30,10 @@ export default class Achievement {
         return this.type === 'party';
     }
 
-    store() {
-        store.set(this.key(), {
-            "awarded": this._awarded,
-            "count": this._count
-        });
-    }
-
-    read() {
-        let achievement = store.get(this.key());
-        if (achievement) {
-            this._awarded = achievement.awarded;
-            this._count = achievement.count;
-        }
-    }
-
-    key() {
-        return 'achievement-' + this.id;
-    }
-
     set awarded(awarded) {
+        if (this._awarded === awarded) {
+            return;
+        }
         this._awarded = awarded;
         this.store();
     }
@@ -53,6 +43,9 @@ export default class Achievement {
     }
 
     set count(count) {
+        if (this._count === count) {
+            return;
+        }
         this._count = count;
         this.store();
     }
@@ -69,3 +62,7 @@ export default class Achievement {
         return '/img/achievements/' + this.id + '.png';
     }
 }
+
+Object.assign(Achievement.prototype, Storable);
+
+export default Achievement;

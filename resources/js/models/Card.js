@@ -1,6 +1,6 @@
 import {ScenarioState} from "./ScenarioState";
 
-export default class Card {
+class Card {
 
     constructor(str) {
         const parts = str.split('-');
@@ -39,3 +39,5 @@ export default class Card {
         }
     }
 }
+
+export default Card
