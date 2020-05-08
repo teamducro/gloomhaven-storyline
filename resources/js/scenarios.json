@@ -846,7 +846,8 @@
                 1
             ],
             "achievements_awarded": [
-                "GAT"
+                "GAT",
+                "PTR"
             ]
         },
         {
@@ -936,7 +937,7 @@
                 },
                 {
                     "complete": [
-                        "PTTR"
+                        "PTR"
                     ]
                 }
             ],
