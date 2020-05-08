@@ -15,15 +15,41 @@ export default class ScenarioRepository {
         });
     }
 
-    changeState(scenario, state) {
+    changeState(scenario, state, shouldValidate = true) {
+        if (!isNaN(scenario)) {
+            scenario = this.find(scenario);
+        }
+
         scenario.state = state;
-        if (state === ScenarioState.complete) {
+        if (scenario.isComplete()) {
             this.processAchievements(scenario);
-        } else if (state === ScenarioState.incomplete) {
+        } else if (scenario.isIncomplete() || scenario.isHidden()) {
             this.undoAchievements(scenario)
         }
 
-        this.scenarioValidator.validate();
+        if (shouldValidate) {
+            this.scenarioValidator.validate();
+        }
+    }
+
+    setHidden(scenario, shouldValidate = false) {
+        this.changeState(scenario, ScenarioState.hidden, shouldValidate);
+    }
+
+    setIncomplete(scenario, shouldValidate = false) {
+        this.changeState(scenario, ScenarioState.incomplete, shouldValidate);
+    }
+
+    setComplete(scenario, shouldValidate = false) {
+        this.changeState(scenario, ScenarioState.complete, shouldValidate);
+    }
+
+    setBlocked(scenario, shouldValidate = false) {
+        this.changeState(scenario, ScenarioState.blocked, shouldValidate);
+    }
+
+    setRequired(scenario, shouldValidate = false) {
+        this.changeState(scenario, ScenarioState.required, shouldValidate);
     }
 
     choose(scenario, choice) {
@@ -76,7 +102,9 @@ export default class ScenarioRepository {
         }
         if (scenario.achievements_awarded) {
             scenario.achievements_awarded.each(achievement => {
-                this.achievementRepository.lose(achievement);
+                if (this.awardedFrom(achievement).isEmpty()) {
+                    this.achievementRepository.lose(achievement);
+                }
             })
         }
     }
@@ -94,7 +122,7 @@ export default class ScenarioRepository {
     }
 
     find(id) {
-        return app.scenarios.firstWhere('id', id);
+        return app.scenarios.firstWhere('id', parseInt(id));
     }
 
     findMany(list) {
@@ -103,12 +131,16 @@ export default class ScenarioRepository {
         });
     }
 
-    findWhere(filter) {
+    where(filter) {
         return app.scenarios.filter(filter);
     }
 
     awardedFrom(achievement) {
-        return this.findWhere((scenario, key) => {
+        if (typeof achievement === 'string') {
+            achievement = this.achievementRepository.find(achievement);
+        }
+
+        return this.where((scenario, key) => {
             return scenario.achievements_awarded
                 && scenario.achievements_awarded.contains(achievement.id);
         })
@@ -116,7 +148,11 @@ export default class ScenarioRepository {
     }
 
     requiredBy(achievement) {
-        return this.findWhere((scenario, key) => {
+        if (typeof achievement === 'string') {
+            achievement = this.achievementRepository.find(achievement);
+        }
+
+        return this.where((scenario, key) => {
             if (scenario.required_by.isEmpty()) {
                 return false;
             }

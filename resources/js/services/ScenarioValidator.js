@@ -6,13 +6,21 @@ import QuestValidator from "./QuestValidator";
 export default class ScenarioValidator {
 
     validate() {
-        [1, 2, 3, 4].forEach(() => {
+        this.needsValidating = true;
+        let count = 1;
+
+        while (this.needsValidating) {
+            this.needsValidating = false;
             app.scenarios.each((scenario) => {
                 this.checkHidden(scenario);
                 this.checkChoice(scenario);
                 this.checkRequired(scenario);
             });
-        });
+            if (count > 4) {
+                this.needsValidating = false;
+            }
+            count++;
+        }
 
         this.questValidator.validate();
     }
@@ -23,11 +31,13 @@ export default class ScenarioValidator {
 
         if (scenario.isHidden()) {
             if (states.has(ScenarioState.complete) || unlocked || scenario.id === 1) {
-                scenario.state = ScenarioState.incomplete;
+                this.scenarioRepository.setIncomplete(scenario);
+                this.needsValidating = true;
             }
         } else {
             if (states.has(ScenarioState.complete) === false && !scenario.is_side && scenario.id !== 1 && !unlocked) {
-                scenario.state = ScenarioState.hidden;
+                this.scenarioRepository.setHidden(scenario);
+                this.needsValidating = true;
             }
         }
     }
@@ -37,16 +47,18 @@ export default class ScenarioValidator {
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         if (linkedScenarios.where('hasChoices', true).count()) {
-            let chosen = linkedScenarios.firstWhere('choice2', scenario.id);
+            let chosen = linkedScenarios.firstWhere('_choice', scenario.id);
             let withoutChoicesStates = linkedScenarios.where('hasChoices', false).pluck('state', 'state');
 
             if (scenario.isHidden()) {
                 if (chosen || withoutChoicesStates.has(ScenarioState.complete) || unlocked) {
-                    scenario.state = ScenarioState.incomplete;
+                    this.scenarioRepository.setIncomplete(scenario);
+                    this.needsValidating = true;
                 }
             } else {
                 if (!chosen && withoutChoicesStates.has(ScenarioState.complete) === false && !unlocked) {
-                    scenario.state = ScenarioState.hidden;
+                    this.scenarioRepository.setHidden(scenario);
+                    this.needsValidating = true;
                 }
             }
         }
@@ -72,7 +84,10 @@ export default class ScenarioValidator {
         }) === false;
 
         if (shouldBeBlocked) {
-            scenario.state = ScenarioState.blocked;
+            if (!scenario.isBlocked()) {
+                this.scenarioRepository.setBlocked(scenario);
+                this.needsValidating = true;
+            }
             return;
         }
 
@@ -84,13 +99,14 @@ export default class ScenarioValidator {
             });
         }) === false;
 
-        if (shouldBeRequired) {
-            scenario.state = ScenarioState.required;
-            return;
+        if (shouldBeRequired && !scenario.isRequired()) {
+            this.scenarioRepository.setRequired(scenario);
+            this.needsValidating = true;
         }
 
-        if (!shouldBeBlocked && !shouldBeRequired) {
-            scenario.state = ScenarioState.incomplete;
+        if (!shouldBeBlocked && !shouldBeRequired && !scenario.isIncomplete()) {
+            this.scenarioRepository.setIncomplete(scenario);
+            this.needsValidating = true;
         }
     }
 
@@ -100,14 +116,6 @@ export default class ScenarioValidator {
 
     linkedStates(scenario) {
         return this.linkedScenarios(scenario).pluck('state', 'state');
-    }
-
-    blockedStates(scenario) {
-        return this.scenarioRepository.findMany(scenario.blocked_by).pluck('state', 'state');
-    }
-
-    requiredStates(scenario) {
-        return this.scenarioRepository.findMany(scenario.required_by).pluck('state', 'state');
     }
 
     get scenarioRepository() {

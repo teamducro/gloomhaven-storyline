@@ -1,6 +1,7 @@
 import {ScenarioState} from "../models/ScenarioState";
 import ScenarioRepository from "../repositories/ScenarioRepository";
-import ScenarioValidator from "./ScenarioValidator";
+import AchievementRepository from "../repositories/AchievementRepository";
+import AchievementGroup from "../models/AchievementGroup";
 
 const queryString = require('query-string');
 
@@ -11,25 +12,31 @@ export default class ShareState {
         if (result.hasOwnProperty('states')) {
             this.scenarioRepository.hideAllScenarios();
 
+            if (result.hasOwnProperty('groups')) {
+                result.groups.each((achievements, id) => {
+                    console.log(achievements);
+                    (new AchievementGroup(id)).achievements = achievements;
+                });
+            }
+
             result.states.each((state, id) => {
-                this.scenarioRepository.find(parseInt(id)).state = ScenarioState.make(state);
+                this.scenarioRepository.changeState(id, ScenarioState.make(state), false);
             });
 
             if (result.hasOwnProperty('choices')) {
                 result.choices.each((choice, id) => {
-                    this.scenarioRepository.find(parseInt(id)).choice = choice;
+                    this.scenarioRepository.find(id).choice = choice;
                 });
             }
 
             if (result.hasOwnProperty('treasures')) {
                 result.treasures.each((treasures, id) => {
                     treasures.forEach((treasure) => {
-                        this.scenarioRepository.find(parseInt(id)).unlockTreasure(treasure);
+                        this.scenarioRepository.find(id).unlockTreasure(treasure);
                     });
                 });
             }
 
-            this.scenarioValidator.validate();
             location.href = this.url();
         }
     }
@@ -41,41 +48,43 @@ export default class ShareState {
     encode() {
         let result = {};
 
-        let statesString = app.scenarios.where('state', '!=', ScenarioState.hidden)
+        result.groups = this.achievementRepository.groups()
+            .filter((group) => group.achievements.length)
+            .pluck('achievements', 'id').map((achievements, id) => {
+                return id + '_' + achievements.join('_');
+            }).values().implode('-');
+
+        result.states = app.scenarios.where('state', '!=', ScenarioState.hidden)
             .pluck('state', 'id').map((state, id) => {
                 return id + '_' + state.substr(0, 1);
             }).values().implode('-');
 
-        let choicesString = app.scenarios.where('state', ScenarioState.complete)
+        result.choices = app.scenarios.where('state', ScenarioState.complete)
             .where('hasChoices', true).pluck('choice', 'id').map((choice, id) => {
                 return id + '_' + choice
             }).values().implode('-');
 
-        let treasuresString = app.scenarios.pluck('unlockedTreasures', 'id').map((treasures, id) => {
+        result.treasures = app.scenarios.pluck('unlockedTreasures', 'id').map((treasures, id) => {
             if (treasures.length) {
                 return id + '_' + treasures.join('_');
             }
             return false;
         }).filter().values().implode('-');
 
-        if (statesString) {
-            result.states = statesString;
-        }
-
-        if (choicesString) {
-            result.choices = choicesString;
-        }
-
-        if (treasuresString) {
-            result.treasures = treasuresString;
-        }
-
-        return queryString.stringify(result);
+        return queryString.stringify(_.pickBy(result, (value) => value));
     }
 
     decode() {
         let parsed = queryString.parse(location.search);
         let result = {};
+
+        if (typeof parsed.groups !== 'undefined') {
+            result.groups = collect(parsed.groups.split('-')).mapWithKeys((group) => {
+                let parts = group.split('_');
+                let id = parts.shift();
+                return [id, parts];
+            });
+        }
 
         if (typeof parsed.states !== 'undefined') {
             result.states = collect(parsed.states.split('-')).mapWithKeys((state) => {
@@ -95,7 +104,7 @@ export default class ShareState {
             result.treasures = collect(parsed.treasures.split('-')).mapWithKeys((choice) => {
                 let parts = choice.split('_');
                 let id = parts.shift();
-                return [id, parts.map((x) => x)];
+                return [id, parts];
             });
         }
 
@@ -107,10 +116,10 @@ export default class ShareState {
     }
 
     get scenarioRepository() {
-        return this.scenarioRepository2 || (this.scenarioRepository2 = new ScenarioRepository);
+        return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository);
     }
 
-    get scenarioValidator() {
-        return this.scenarioValidator2 || (this.scenarioValidator2 = new ScenarioValidator);
+    get achievementRepository() {
+        return this._achievementRepository || (this._achievementRepository = new AchievementRepository);
     }
 }

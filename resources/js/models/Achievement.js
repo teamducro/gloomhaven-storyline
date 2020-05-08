@@ -30,24 +30,30 @@ class Achievement {
         return this.type === 'party';
     }
 
-    set awarded(awarded) {
-        if (this._awarded === awarded) {
-            return;
+    gain() {
+        if (!this.awarded) {
+            this._awarded = true;
         }
-        this._awarded = awarded;
-        this.store();
+
+        if (this.count < this.upgrades.length + 1) {
+            this._count++;
+            this.store();
+        }
+    }
+
+    lose() {
+        if (this.count === 1) {
+            this._awarded = false;
+        }
+
+        if (this.count > 0) {
+            this._count--;
+            this.store();
+        }
     }
 
     get awarded() {
         return this._awarded;
-    }
-
-    set count(count) {
-        if (this._count === count) {
-            return;
-        }
-        this._count = count;
-        this.store();
     }
 
     get count() {

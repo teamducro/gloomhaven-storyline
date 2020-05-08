@@ -1,6 +1,7 @@
 import achievements from '../achievements.json';
 import Achievement from "../models/Achievement";
 import ScenarioRepository from "./ScenarioRepository";
+import AchievementGroup from "../models/AchievementGroup";
 
 export default class AchievementRepository {
 
@@ -22,30 +23,40 @@ export default class AchievementRepository {
             }
         }
         if (achievement.group) {
-            app.achievements
-                .where('group', achievement.group)
-                .where('awarded', true)
-                .each((sameGroupAchievement) => sameGroupAchievement.awarded = false);
+            let group = new AchievementGroup(achievement.group);
+            if (group.current) {
+                this.find(group.current).lose();
+            }
+            group.gain(achievement.id);
         }
         if (achievement.upgrades.length && achievement.awarded) {
             let next = this.findMany(achievement.upgrades)
-                .first(item => !item.awarded) || achievement;
-            next.awarded = true;
+                .first(item => !item.awarded);
+            if (next) {
+                next.gain();
+            }
         }
-        achievement.count++;
-        achievement.awarded = true;
+
+        achievement.gain();
     }
 
     lose(id) {
         let achievement = this.find(id);
+        if (achievement.group) {
+            let group = new AchievementGroup(achievement.group);
+            group.lose(achievement.id);
+
+            if (group.current) {
+                this.find(group.current).gain();
+            }
+        }
         if (achievement.upgrades.length) {
             let last = this.findMany(achievement.upgrades)
                 .last(item => item.awarded) || achievement;
-            last.awarded = false;
+            last.lose();
+        } else {
+            achievement.lose();
         }
-
-        achievement.count--;
-        achievement.awarded = false;
     }
 
     find(id) {
@@ -56,6 +67,15 @@ export default class AchievementRepository {
         return collect().wrap(list).map((id) => {
             return this.find(id);
         });
+    }
+
+    where(filter) {
+        return app.achievements.filter(filter);
+    }
+
+    groups() {
+        return app.achievements.filter((a) => a.group).pluck('group').unique()
+            .map((group) => new AchievementGroup(group));
     }
 
     get scenarioRepository() {
