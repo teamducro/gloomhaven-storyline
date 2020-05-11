@@ -65,7 +65,8 @@ class Achievement {
     }
 
     get image() {
-        return '/img/achievements/' + this.id + '.png';
+        const file = this.count > 1 ? this.id + this.count : this.id;
+        return '/img/achievements/' + file + '.png';
     }
 }
 
