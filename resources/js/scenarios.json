@@ -1221,11 +1221,19 @@
                 {
                     "complete": [
                         "PTDC"
+                    ],
+                    "incomplete": [
+                        "GTDS",
+                        "GTVS"
                     ]
                 },
                 {
                     "complete": [
                         "PTVC"
+                    ],
+                    "incomplete": [
+                        "GTDS",
+                        "GTVS"
                     ]
                 }
             ],
