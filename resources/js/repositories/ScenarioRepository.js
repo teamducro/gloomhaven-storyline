@@ -20,10 +20,12 @@ export default class ScenarioRepository {
             scenario = this.find(scenario);
         }
 
+        const previousState = scenario.state;
         scenario.state = state;
+
         if (scenario.isComplete()) {
             this.processAchievements(scenario);
-        } else if (scenario.isIncomplete() || scenario.isHidden()) {
+        } else if (previousState === ScenarioState.complete && (scenario.isIncomplete() || scenario.isHidden())) {
             this.undoAchievements(scenario)
         }
 
