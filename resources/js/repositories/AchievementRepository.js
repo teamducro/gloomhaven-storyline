@@ -54,9 +54,9 @@ export default class AchievementRepository {
             let last = this.findMany(achievement.upgrades)
                 .last(item => item.awarded) || achievement;
             last.lose();
-        } else {
-            achievement.lose();
         }
+
+        achievement.lose();
     }
 
     find(id) {

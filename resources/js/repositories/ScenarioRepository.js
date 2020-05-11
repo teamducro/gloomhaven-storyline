@@ -96,14 +96,14 @@ export default class ScenarioRepository {
 
     undoAchievements(scenario) {
         if (scenario.achievements_lost) {
-            scenario.achievements_lost.each(achievement => {
-                this.achievementRepository.gain(achievement);
+            scenario.achievements_lost.each(id => {
+                this.achievementRepository.gain(id);
             })
         }
         if (scenario.achievements_awarded) {
-            scenario.achievements_awarded.each(achievement => {
-                if (this.awardedFrom(achievement).isEmpty()) {
-                    this.achievementRepository.lose(achievement);
+            scenario.achievements_awarded.each(id => {
+                if (this.awardedFrom(id).isEmpty() || this.achievementRepository.find(id).upgrades.length) {
+                    this.achievementRepository.lose(id);
                 }
             })
         }
