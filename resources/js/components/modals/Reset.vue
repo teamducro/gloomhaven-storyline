@@ -32,6 +32,7 @@
             reset() {
                 store.clearAll();
                 app.fetchScenarios();
+                app.fetchAchievements();
             }
         }
     }
