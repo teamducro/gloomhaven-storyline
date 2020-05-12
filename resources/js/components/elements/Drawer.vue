@@ -6,7 +6,7 @@
 
         <aside ref="menu" class="mdc-drawer mdc-drawer--modal">
             <div class="mdc-drawer__header">
-                <webp class="w-3/4 mt-4" alt="Gloomhaven" src="img/gloomhaven-logo.png"></webp>
+                <webp class="w-3/4 mt-4" alt="Gloomhaven" force src="/img/gloomhaven-logo.png"/>
             </div>
             <div class="mdc-drawer__content">
                 <div class="mdc-list-group">
@@ -33,7 +33,8 @@
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="/achievements" class="mdc-list-item" active-class="mdc-list-item--activated">
+                            <router-link to="/achievements" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">emoji_events</i>
                                 <span class="mdc-list-item__text">Achievements</span>
                             </router-link>

@@ -34,6 +34,10 @@
                 type: Boolean,
                 default: false
             },
+            force: {
+                type: Boolean,
+                default: false
+            },
         },
         data() {
             return {
@@ -63,7 +67,8 @@
         methods: {
             async render(src) {
                 this.isLoaded = false;
-                this.source = app.webpSupported === false
+                console.log(this.force, this.src);
+                this.source = app.webpSupported === false || !this.force
                     ? src
                     : this.webp(src);
 
