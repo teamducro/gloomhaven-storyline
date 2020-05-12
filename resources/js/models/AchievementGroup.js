@@ -46,6 +46,10 @@ class AchievementGroup {
         return this.achievements.indexOf(id) >= 0;
     }
 
+    key() {
+        return 'achievementgroup-' + this.id;
+    }
+
 }
 
 Object.assign(AchievementGroup.prototype, Storable);

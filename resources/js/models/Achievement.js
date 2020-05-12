@@ -68,6 +68,10 @@ class Achievement {
         const file = this.count > 1 ? this.id + this.count : this.id;
         return '/img/achievements/' + file + '.png';
     }
+
+    key() {
+        return 'achievement-' + this.id;
+    }
 }
 
 Object.assign(Achievement.prototype, Storable);
