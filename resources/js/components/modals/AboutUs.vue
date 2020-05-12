@@ -6,7 +6,7 @@
                 contribution is an interactive flowchart, to track our progress through the game and to make it easier
                 to choose a new scenario to play. With some drinks and snacks, we are ready to begin.</p>
             <div class="m-4">
-                <img src="img/minis.jpeg"/>
+                <webp src="/img/minis.jpg" alt="Gloomhaven minis"/>
             </div>
         </template>
     </modal>
