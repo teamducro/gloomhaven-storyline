@@ -78,7 +78,7 @@
                         </li>
 
                         <li>
-                            <a class="mdc-list-item" target="_blank"
+                            <a class="mdc-list-item" target="_blank" rel="noreferrer"
                                href="https://github.com/teamducro/gloomhaven-storyline">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">code</i>
                                 <span class="mdc-list-item__text">Source</span>
