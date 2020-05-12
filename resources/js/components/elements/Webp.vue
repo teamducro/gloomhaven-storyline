@@ -33,11 +33,7 @@
             retina: {
                 type: Boolean,
                 default: false
-            },
-            force: {
-                type: Boolean,
-                default: false
-            },
+            }
         },
         data() {
             return {
@@ -67,7 +63,7 @@
         methods: {
             async render(src) {
                 this.isLoaded = false;
-                this.source = app.webpSupported === false || !this.force
+                this.source = app.webpSupported === false
                     ? src
                     : this.webp(src);
 

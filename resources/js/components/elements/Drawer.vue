@@ -6,7 +6,7 @@
 
         <aside ref="menu" class="mdc-drawer mdc-drawer--modal">
             <div class="mdc-drawer__header">
-                <webp class="w-3/4 mt-4" alt="Gloomhaven" force src="/img/gloomhaven-logo.png"/>
+                <webp class="w-3/4 mt-4" alt="Gloomhaven" src="/img/gloomhaven-logo.png"/>
             </div>
             <div class="mdc-drawer__content">
                 <div class="mdc-list-group">
