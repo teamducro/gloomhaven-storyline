@@ -134,6 +134,10 @@ class Scenario {
         return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
     }
 
+    key() {
+        return 'scenario-' + this.id;
+    }
+
 }
 
 Object.assign(Scenario.prototype, Storable)

@@ -17,9 +17,5 @@ export default {
                 this[modelKey] = model[storeKey];
             });
         }
-    },
-
-    key() {
-        return this.constructor.name.toLowerCase() + '-' + this.id;
     }
 }
