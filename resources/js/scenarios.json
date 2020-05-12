@@ -8,7 +8,6 @@
                 "x": 47.42,
                 "y": 41.6
             },
-            "is_side": false,
             "pages": [
                 3
             ],
@@ -21,7 +20,10 @@
             ],
             "treasures": {
                 "7": "Random Side Scenario"
-            }
+            },
+            "achievements_awarded": [
+                "PFS"
+            ]
         },
         {
             "id": 2,
@@ -31,12 +33,18 @@
                 "x": 51.75,
                 "y": 41
             },
-            "is_side": false,
             "pages": [
                 4,
                 5
             ],
             "requirements": "First Steps (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PFS"
+                    ]
+                }
+            ],
             "chapter_id": 1,
             "links_to": [
                 3,
@@ -50,7 +58,11 @@
             ],
             "treasures": {
                 "67": "Gain 10 Gold"
-            }
+            },
+            "rewards": [
+                "10 gold each",
+                "+1 prosperity"
+            ]
         },
         {
             "id": 3,
@@ -60,12 +72,18 @@
                 "x": 14.57,
                 "y": 43.585
             },
-            "is_side": false,
             "pages": [
                 5,
                 6
             ],
             "requirements": "The Merchant Flees (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GTMF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 8,
@@ -73,9 +91,6 @@
             ],
             "linked_from": [
                 2
-            ],
-            "blocked_by": [
-                8
             ],
             "quests": [
                 2
@@ -85,6 +100,13 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "PJP"
+            ],
+            "rewards": [
+                "15 gold each",
+                "+1 prosperity"
             ]
         },
         {
@@ -95,7 +117,6 @@
                 "x": 47.82,
                 "y": 31.19
             },
-            "is_side": false,
             "pages": [
                 7
             ],
@@ -125,7 +146,6 @@
                 "x": 28.22,
                 "y": 26.58
             },
-            "is_side": false,
             "pages": [
                 8
             ],
@@ -157,7 +177,6 @@
                 "x": 44.05,
                 "y": 38.3
             },
-            "is_side": false,
             "pages": [
                 9,
                 10
@@ -177,6 +196,13 @@
             },
             "region_ids": [
                 7
+            ],
+            "achievements_awarded": [
+                "PJP",
+                "PDB"
+            ],
+            "rewards": [
+                "5 gold each"
             ]
         },
         {
@@ -187,21 +213,25 @@
                 "x": 57.76,
                 "y": 19.85
             },
-            "is_side": false,
             "pages": [
                 10,
                 11
             ],
             "requirements": "The Power of Enhancement (Global) and The Merchant Flees (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTPE",
+                        "GTMF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 20
             ],
             "linked_from": [
                 8
-            ],
-            "required_by": [
-                14
             ],
             "quests": [
                 9
@@ -218,11 +248,20 @@
                 "x": 83.98,
                 "y": 18.1
             },
-            "is_side": false,
             "pages": [
                 12
             ],
             "requirements": "Jekserah’s Plans (Party) COMPLETE and The Dead Invade (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PJP"
+                    ],
+                    "incomplete": [
+                        "GTDI"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 7,
@@ -233,9 +272,6 @@
                 3,
                 6
             ],
-            "blocked_by": [
-                9
-            ],
             "quests": [
                 6
             ],
@@ -244,6 +280,12 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GTMF"
+            ],
+            "rewards": [
+                "+2 reputation"
             ]
         },
         {
@@ -254,11 +296,17 @@
                 "x": 10.5,
                 "y": 70.65
             },
-            "is_side": false,
             "pages": [
                 13
             ],
             "requirements": "The Merchant Flees (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GTMF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 11,
@@ -267,14 +315,18 @@
             "linked_from": [
                 3
             ],
-            "blocked_by": [
-                8
-            ],
             "quests": [
                 7
             ],
             "region_ids": [
                 4
+            ],
+            "achievements_awarded": [
+                "GTDI"
+            ],
+            "rewards": [
+                "20 gold each",
+                "+1 prosperity"
             ]
         },
         {
@@ -285,11 +337,17 @@
                 "x": 31.177,
                 "y": 23.56
             },
-            "is_side": false,
             "pages": [
                 14
             ],
             "requirements": "The Rift Neutralized (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GTRN"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "links_to": [
                 21,
@@ -298,17 +356,15 @@
             "linked_from": [
                 5
             ],
-            "blocked_by": [
-                21,
-                27,
-                36
-            ],
             "quests": [
                 8
             ],
             "treasures": {
                 "11": "Random Item Design"
-            }
+            },
+            "achievements_awarded": [
+                "PADE"
+            ]
         },
         {
             "id": 11,
@@ -318,12 +374,18 @@
                 "x": 76.4,
                 "y": 14.65
             },
-            "is_side": false,
             "pages": [
                 15,
                 16
             ],
             "requirements": "End of the Invasion (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GEOI"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 16,
@@ -331,9 +393,6 @@
             ],
             "linked_from": [
                 9
-            ],
-            "blocked_by": [
-                12
             ],
             "quests": [
                 10
@@ -343,6 +402,16 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GCRE",
+                "GEOI"
+            ],
+            "rewards": [
+                "15 gold each",
+                "-2 reputation",
+                "+2 prosperity",
+                "“Skullbane Axe” design (Item 113)"
             ]
         },
         {
@@ -353,12 +422,18 @@
                 "x": 76.4,
                 "y": 14.65
             },
-            "is_side": false,
             "pages": [
                 16,
                 17
             ],
             "requirements": "End of the Invasion (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GEOI"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 16,
@@ -368,9 +443,6 @@
             "linked_from": [
                 9
             ],
-            "blocked_by": [
-                11
-            ],
             "quests": [
                 11
             ],
@@ -379,6 +451,13 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GEOI"
+            ],
+            "rewards": [
+                "+4 reputation",
+                "“Skullbane Axe” design (Item 113)"
             ]
         },
         {
@@ -389,7 +468,6 @@
                 "x": 18.22,
                 "y": 84.42
             },
-            "is_side": false,
             "pages": [
                 18
             ],
@@ -425,7 +503,6 @@
                 "x": 47.55,
                 "y": 19.33
             },
-            "is_side": false,
             "pages": [
                 19,
                 20
@@ -443,6 +520,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GTPE"
             ]
         },
         {
@@ -453,7 +533,6 @@
                 "x": 51.17,
                 "y": 16.8
             },
-            "is_side": false,
             "pages": [
                 20,
                 21
@@ -468,6 +547,9 @@
             ],
             "region_ids": [
                 5
+            ],
+            "rewards": [
+                "20 experience each"
             ]
         },
         {
@@ -478,7 +560,6 @@
                 "x": 28.45,
                 "y": 18.92
             },
-            "is_side": false,
             "pages": [
                 22
             ],
@@ -509,7 +590,6 @@
                 "x": 84.35,
                 "y": 59.235
             },
-            "is_side": false,
             "pages": [
                 23
             ],
@@ -518,7 +598,7 @@
                 13
             ],
             "quests": [
-                12
+                16
             ],
             "treasures": {
                 "71": "Random Side Scenario"
@@ -528,6 +608,9 @@
             ],
             "region_ids": [
                 6
+            ],
+            "rewards": [
+                "25 gold each"
             ]
         },
         {
@@ -538,7 +621,6 @@
                 "x": 68.298,
                 "y": 20.895
             },
-            "is_side": false,
             "pages": [
                 24
             ],
@@ -572,21 +654,24 @@
                 "x": 34.6,
                 "y": 74.64
             },
-            "is_side": false,
             "pages": [
                 25,
                 26
             ],
             "requirements": "The Power of Enhancement (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTPE"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "links_to": [
                 27
             ],
             "linked_from": [
                 5
-            ],
-            "required_by": [
-                14
             ],
             "quests": [
                 18
@@ -597,6 +682,12 @@
             "region_ids": [
                 3,
                 7
+            ],
+            "achievements_awarded": [
+                "PSC"
+            ],
+            "rewards": [
+                "+1 prosperity"
             ]
         },
         {
@@ -607,12 +698,18 @@
                 "x": 59,
                 "y": 44.9
             },
-            "is_side": false,
             "pages": [
                 26,
                 27
             ],
             "requirements": "The Merchant Flees (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTMF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 28,
@@ -623,15 +720,17 @@
                 7,
                 13
             ],
-            "required_by": [
-                8
-            ],
             "quests": [
                 9
             ],
             "treasures": {
                 "60": "Gain \"Skullbane Axe\" (Item 113)"
-            }
+            },
+            "rewards": [
+                "20 gold each",
+                "+2 reputation",
+                "+1 prosperity"
+            ]
         },
         {
             "id": 21,
@@ -641,26 +740,37 @@
                 "x": 34.25,
                 "y": 22.6
             },
-            "is_side": false,
             "pages": [
                 28,
                 29
             ],
             "requirements": "The Rift Neutralized (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "GTRN"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "linked_from": [
                 10
-            ],
-            "blocked_by": [
-                27,
-                36
             ],
             "quests": [
                 19
             ],
             "treasures": {
                 "15": "Gain \"Pendant of Dark Pacts\" (Item 045)"
-            }
+            },
+            "achievements_awarded": [
+                "GTRN",
+                "GAR2"
+            ],
+            "rewards": [
+                "50 gold each",
+                "+1 prosperity",
+                "Add City Event 78 to the deck"
+            ]
         },
         {
             "id": 22,
@@ -670,12 +780,23 @@
                 "x": 39.87,
                 "y": 64.25
             },
-            "is_side": false,
             "pages": [
                 29,
                 30
             ],
             "requirements": "A Demon’s Errand (Party) or Following Clues (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PADE"
+                    ]
+                },
+                {
+                    "complete": [
+                        "PFC"
+                    ]
+                }
+            ],
             "links_to": [
                 35,
                 31,
@@ -690,7 +811,10 @@
             ],
             "treasures": {
                 "21": "Suffer 5 Damage"
-            }
+            },
+            "achievements_awarded": [
+                "GAR"
+            ]
         },
         {
             "id": 23,
@@ -700,7 +824,6 @@
                 "x": 73.4,
                 "y": 19.85
             },
-            "is_side": false,
             "pages": [
                 31,
                 32
@@ -721,6 +844,10 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GAT",
+                "PTR"
             ]
         },
         {
@@ -731,7 +858,6 @@
                 "x": 25.05,
                 "y": 19.67
             },
-            "is_side": false,
             "pages": [
                 32,
                 33
@@ -752,6 +878,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "PTVC"
             ]
         },
         {
@@ -762,7 +891,6 @@
                 "x": 20.87,
                 "y": 13.07
             },
-            "is_side": false,
             "pages": [
                 34,
                 35
@@ -783,6 +911,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "PTDC"
             ]
         },
         {
@@ -793,22 +924,29 @@
                 "x": 73.5,
                 "y": 23.3
             },
-            "is_side": false,
             "pages": [
                 35,
                 36
             ],
             "requirements": "Water-Breathing (Global) or Through the Ruins (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GWB"
+                    ]
+                },
+                {
+                    "complete": [
+                        "PTR"
+                    ]
+                }
+            ],
             "chapter_id": 4,
             "links_to": [
                 22
             ],
             "linked_from": [
                 18
-            ],
-            "required_by": [
-                23,
-                43
             ],
             "quests": [
                 17
@@ -818,6 +956,14 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "PFC"
+            ],
+            "rewards": [
+                "10 gold each",
+                "+1 reputation",
+                "+2 prosperity"
             ]
         },
         {
@@ -828,20 +974,33 @@
                 "x": 29.22,
                 "y": 30.6
             },
-            "is_side": false,
             "pages": [
                 37
             ],
             "requirements": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
+            "required_by": [
+                {
+                    "comnplete": [
+                        "PSC"
+                    ],
+                    "incomplete": [
+                        "GAL"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "linked_from": [
                 19
             ],
-            "blocked_by": [
-                35
-            ],
             "quests": [
                 18
+            ],
+            "achievements_awarded": [
+                "GTRN"
+            ],
+            "rewards": [
+                "+1 prosperity",
+                "100 gold each This money must immediately be spent on enhancements"
             ]
         },
         {
@@ -852,11 +1011,17 @@
                 "x": 18.15,
                 "y": 32.1
             },
-            "is_side": false,
             "pages": [
                 38
             ],
             "requirements": "Dark Bounty (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PDB"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 29
@@ -864,9 +1029,6 @@
             "linked_from": [
                 12,
                 20
-            ],
-            "required_by": [
-                6
             ],
             "quests": [
                 3
@@ -876,6 +1038,9 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "PAI"
             ]
         },
         {
@@ -886,11 +1051,17 @@
                 "x": 13.9,
                 "y": 32.5
             },
-            "is_side": false,
             "pages": [
                 39
             ],
             "requirements": "An Invitation (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PAI"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "linked_from": [
                 28
@@ -903,6 +1074,12 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "GTED"
+            ],
+            "rewards": [
+                "15 experience each"
             ]
         },
         {
@@ -913,12 +1090,18 @@
                 "x": 72.85,
                 "y": 79.37
             },
-            "is_side": false,
             "pages": [
                 40,
                 41
             ],
             "requirements": "The Voice’s Command (Party)",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTVC"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "links_to": [
                 42
@@ -931,6 +1114,12 @@
             ],
             "region_ids": [
                 6
+            ],
+            "achievements_awarded": [
+                "PTSV"
+            ],
+            "rewards": [
+                "10 gold each"
             ]
         },
         {
@@ -941,12 +1130,25 @@
                 "x": 76.46,
                 "y": 8.912
             },
-            "is_side": false,
             "pages": [
                 41,
                 42
             ],
             "requirements": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTPE",
+                        "GAR"
+                    ]
+                },
+                {
+                    "complete": [
+                        "GTPE",
+                        "GAR2"
+                    ]
+                }
+            ],
             "links_to": [
                 39,
                 37,
@@ -956,13 +1158,6 @@
             "linked_from": [
                 22
             ],
-            "blocked_by": [
-                35
-            ],
-            "required_by": [
-                14,
-                21
-            ],
             "quests": [
                 24
             ],
@@ -971,6 +1166,9 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GAC"
             ]
         },
         {
@@ -981,11 +1179,17 @@
                 "x": 54.42,
                 "y": 67.9
             },
-            "is_side": false,
             "pages": [
                 43
             ],
             "requirements": "The Voice’s Command (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTVC"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "links_to": [
                 33,
@@ -993,9 +1197,6 @@
             ],
             "linked_from": [
                 24
-            ],
-            "blocked_by": [
-                42
             ],
             "quests": [
                 25
@@ -1012,20 +1213,34 @@
                 "x": 30.53,
                 "y": 10.3
             },
-            "is_side": false,
             "pages": [
                 44
             ],
             "requirements": "The Voice’s Command (Party) or The Drake’s Command (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTDC"
+                    ],
+                    "incomplete": [
+                        "GTDS",
+                        "GTVS"
+                    ]
+                },
+                {
+                    "complete": [
+                        "PTVC"
+                    ],
+                    "incomplete": [
+                        "GTDS",
+                        "GTVS"
+                    ]
+                }
+            ],
             "linked_from": [
                 25,
                 32
             ],
-            "blocked_by": [
-                34,
-                42
-            ],
-            "blocked_all": true,
             "quests": [
                 25,
                 26,
@@ -1033,6 +1248,10 @@
             ],
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "PTVT",
+                "PTDT"
             ]
         },
         {
@@ -1043,17 +1262,24 @@
                 "x": 17.01,
                 "y": 9.27
             },
-            "is_side": false,
             "pages": [
                 45
             ],
             "requirements": "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTDC"
+                    ],
+                    "incomplete": [
+                        "PTDC",
+                        "PTDT"
+                    ]
+                }
+            ],
             "chapter_id": 9,
             "linked_from": [
                 25
-            ],
-            "blocked_by": [
-                33
             ],
             "quests": [
                 27
@@ -1063,6 +1289,17 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GTDS"
+            ],
+            "achievements_lost": [
+                "PTDC"
+            ],
+            "rewards": [
+                "20 gold each",
+                "+2 reputation",
+                "+1 prosperity"
             ]
         },
         {
@@ -1073,26 +1310,27 @@
                 "x": 67.2,
                 "y": 9.42
             },
-            "is_side": false,
             "pages": [
                 46,
                 47
             ],
             "requirements": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PADE"
+                    ],
+                    "incomplete": [
+                        "GTRN"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "links_to": [
                 45
             ],
             "linked_from": [
                 22
-            ],
-            "blocked_by": [
-                21,
-                27,
-                36
-            ],
-            "required_by": [
-                10
             ],
             "quests": [
                 28
@@ -1102,6 +1340,19 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GCRD",
+                "GAL"
+            ],
+            "achievements_lost": [
+                "PADE"
+            ],
+            "rewards": [
+                "30 gold each",
+                "5 reputation",
+                "-2 prosperity",
+                "Add City Event 79 to the deck"
             ]
         },
         {
@@ -1112,23 +1363,40 @@
                 "x": 67.2,
                 "y": 9.42
             },
-            "is_side": false,
             "pages": [
                 47,
                 48
             ],
             "requirements": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PADE"
+                    ],
+                    "incomplete": [
+                        "GTRN"
+                    ]
+                },
+                {
+                    "complete": [
+                        "PADE"
+                    ],
+                    "incomplete": [
+                        "GCRD"
+                    ]
+                },
+                {
+                    "complete": [
+                        "PADE"
+                    ],
+                    "incomplete": [
+                        "GCRM"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "linked_from": [
                 22
-            ],
-            "blocked_by": [
-                21,
-                27,
-                35
-            ],
-            "required_by": [
-                10
             ],
             "quests": [
                 29
@@ -1138,6 +1406,17 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GTRN"
+            ],
+            "achievements_lost": [
+                "PADE"
+            ],
+            "rewards": [
+                "10 gold each",
+                "+4 reputation",
+                "Add City Event 78 to the deck"
             ]
         },
         {
@@ -1148,20 +1427,23 @@
                 "x": 85.36,
                 "y": 39.795
             },
-            "is_side": false,
             "pages": [
                 49
             ],
             "requirements": "Water-Breathing (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GWB"
+                    ]
+                }
+            ],
             "chapter_id": 6,
             "links_to": [
                 47
             ],
             "linked_from": [
                 31
-            ],
-            "required_by": [
-                43
             ],
             "quests": [
                 30
@@ -1174,6 +1456,9 @@
             },
             "region_ids": [
                 6
+            ],
+            "achievements_awarded": [
+                "PTTT"
             ]
         },
         {
@@ -1184,7 +1469,6 @@
                 "x": 11.15,
                 "y": 43
             },
-            "is_side": false,
             "pages": [
                 50,
                 51
@@ -1205,6 +1489,12 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "PRA"
+            ],
+            "rewards": [
+                "+1 reputation"
             ]
         },
         {
@@ -1215,7 +1505,6 @@
                 "x": 49.9,
                 "y": 12.73
             },
-            "is_side": false,
             "pages": [
                 51,
                 52
@@ -1236,6 +1525,12 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "PATD"
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -1246,24 +1541,25 @@
                 "x": 57,
                 "y": 35.1
             },
-            "is_side": false,
             "pages": [
                 53,
                 54
             ],
             "requirements": "The Voice’s Command (Party) and The Voice’s Treasure (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTVC",
+                        "PTVT"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "links_to": [
                 41
             ],
             "linked_from": [
                 32
-            ],
-            "blocked_by": [
-                42
-            ],
-            "required_by": [
-                33
             ],
             "quests": [
                 25
@@ -1273,6 +1569,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GAT"
             ]
         },
         {
@@ -1283,18 +1582,24 @@
                 "x": 61.27,
                 "y": 34.9
             },
-            "is_side": false,
             "pages": [
                 54,
                 55
             ],
             "requirements": "The Voice’s Command (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTVC"
+                    ],
+                    "incomplete": [
+                        "GTVS"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "linked_from": [
                 40
-            ],
-            "blocked_by": [
-                42
             ],
             "quests": [
                 25
@@ -1304,6 +1609,15 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GTVF"
+            ],
+            "rewards": [
+                "50 gold each",
+                "25 experience each",
+                "2 ✔ each",
+                "+2 prosperity"
             ]
         },
         {
@@ -1314,17 +1628,23 @@
                 "x": 19.6,
                 "y": 19.4
             },
-            "is_side": false,
             "pages": [
                 56
             ],
             "requirements": "The Scepter and the Voice (Party) COMPLETE and The Voice Freed (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTSV"
+                    ],
+                    "incomplete": [
+                        "GTVF"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "linked_from": [
                 30
-            ],
-            "blocked_by": [
-                41
             ],
             "quests": [
                 33
@@ -1335,6 +1655,12 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GTVS"
+            ],
+            "achievements_lost": [
+                "PTVC"
             ]
         },
         {
@@ -1345,18 +1671,21 @@
                 "x": 15.13,
                 "y": 29.3
             },
-            "is_side": false,
             "pages": [
                 57,
                 58
             ],
             "requirements": "The Power of Enhancement (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTPE"
+                    ]
+                }
+            ],
             "linked_from": [
                 18,
                 31
-            ],
-            "required_by": [
-                14
             ],
             "quests": [
                 34
@@ -1366,6 +1695,9 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "GWB"
             ]
         },
         {
@@ -1376,12 +1708,18 @@
                 "x": 15.56,
                 "y": 37.9
             },
-            "is_side": false,
             "pages": [
                 58,
                 59
             ],
             "requirements": "Redthorn’s Aid (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PRA"
+                    ]
+                }
+            ],
             "chapter_id": 7,
             "linked_from": [
                 38
@@ -1391,6 +1729,10 @@
             ],
             "region_ids": [
                 2
+            ],
+            "rewards": [
+                "Open envelope 4.svg",
+                "+2 reputation"
             ]
         },
         {
@@ -1401,11 +1743,17 @@
                 "x": 41.7,
                 "y": 72.25
             },
-            "is_side": false,
             "pages": [
                 60
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GCRD"
+                    ]
+                }
+            ],
             "chapter_id": 5,
             "links_to": [
                 49,
@@ -1422,6 +1770,10 @@
             },
             "region_ids": [
                 3
+            ],
+            "rewards": [
+                "20 gold each",
+                "-2 reputation"
             ]
         },
         {
@@ -1432,11 +1784,17 @@
                 "x": 49.85,
                 "y": 7.34
             },
-            "is_side": false,
             "pages": [
                 61
             ],
             "requirements": "Across the Divide (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PATD"
+                    ]
+                }
+            ],
             "chapter_id": 8,
             "links_to": [
                 51
@@ -1452,6 +1810,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GEOC"
             ]
         },
         {
@@ -1462,11 +1823,17 @@
                 "x": 85.9,
                 "y": 43.47
             },
-            "is_side": false,
             "pages": [
                 62
             ],
             "requirements": "Through the Trench (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTTT"
+                    ]
+                }
+            ],
             "chapter_id": 6,
             "links_to": [
                 51
@@ -1483,6 +1850,9 @@
             },
             "region_ids": [
                 6
+            ],
+            "achievements_awarded": [
+                "GEOC"
             ]
         },
         {
@@ -1493,11 +1863,17 @@
                 "x": 5.9,
                 "y": 32.7
             },
-            "is_side": false,
             "pages": [
                 63
             ],
             "requirements": "Redthorn’s Aid (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PRA"
+                    ]
+                }
+            ],
             "chapter_id": 7,
             "links_to": [
                 51
@@ -1513,6 +1889,9 @@
             },
             "region_ids": [
                 2
+            ],
+            "achievements_awarded": [
+                "GEOC"
             ]
         },
         {
@@ -1523,11 +1902,20 @@
                 "x": 34.8,
                 "y": 80.15
             },
-            "is_side": false,
             "pages": [
                 64
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GCRD"
+                    ],
+                    "incomplete": [
+                        "GCRM"
+                    ]
+                }
+            ],
             "chapter_id": 5,
             "linked_from": [
                 45
@@ -1540,6 +1928,13 @@
             },
             "region_ids": [
                 3
+            ],
+            "achievements_awarded": [
+                "GAOO"
+            ],
+            "rewards": [
+                "50 gold each",
+                "-3 reputation"
             ]
         },
         {
@@ -1550,24 +1945,37 @@
                 "x": 79.48,
                 "y": 14.65
             },
-            "is_side": false,
             "pages": [
                 65,
                 66
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE and Annihilation of Order (Global) INCOMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GCRD"
+                    ],
+                    "incomplete": [
+                        "GAOO"
+                    ]
+                }
+            ],
             "chapter_id": 5,
             "linked_from": [
                 45
-            ],
-            "blocked_by": [
-                49
             ],
             "quests": [
                 38
             ],
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GCRM"
+            ],
+            "rewards": [
+                "+3 reputation",
+                "-2 prosperity"
             ]
         },
         {
@@ -1578,23 +1986,23 @@
                 "x": 72.3,
                 "y": 9.15
             },
-            "is_side": false,
             "pages": [
                 66,
                 67
             ],
             "requirements": "End of Corruption (Global) x3 COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GEOC3"
+                    ]
+                }
+            ],
             "linked_from": [
                 46,
                 47,
                 48
             ],
-            "required_by": [
-                46,
-                47,
-                48
-            ],
-            "required_all": true,
             "quests": [
                 39
             ],
@@ -1603,6 +2011,15 @@
             },
             "region_ids": [
                 1
+            ],
+            "achievements_awarded": [
+                "GEOG"
+            ],
+            "rewards": [
+                "+5 reputation",
+                "+5 prosperity",
+                "Add City Event 81 to the deck",
+                "Add Road Event 69 to the deck"
             ]
         },
         {
@@ -1638,7 +2055,6 @@
                 "x": 51.86,
                 "y": 34.1
             },
-            "is_side": false,
             "pages": [
                 69,
                 70
@@ -1659,6 +2075,9 @@
             ],
             "cards": [
                 "Q-510-Seeker of Xorn"
+            ],
+            "rewards": [
+                "The Seeker of Xorn receives: “Staff of Xorn” (Item 114) The Seeker cannot sell this item."
             ]
         },
         {
@@ -1669,7 +2088,6 @@
                 "x": 40.5,
                 "y": 23.34
             },
-            "is_side": false,
             "pages": [
                 71
             ],
@@ -1686,6 +2104,9 @@
             ],
             "cards": [
                 "Q-510-Seeker of Xorn"
+            ],
+            "rewards": [
+                "Immediately retire the Seeker of Xorn"
             ]
         },
         {
@@ -1710,6 +2131,9 @@
             ],
             "cards": [
                 "Q-521-Take Back the Trees"
+            ],
+            "rewards": [
+                "10 collective gold"
             ]
         },
         {
@@ -1720,7 +2144,6 @@
                 "x": 18.93,
                 "y": 44.67
             },
-            "is_side": false,
             "pages": [
                 73
             ],
@@ -1737,6 +2160,12 @@
             ],
             "cards": [
                 "Q-521-Take Back the Trees"
+            ],
+            "rewards": [
+                "“Take Back the Trees” quest complete",
+                "Open envelope 4.svg",
+                "10 gold each",
+                "+2 reputation"
             ]
         },
         {
@@ -1765,6 +2194,9 @@
             ],
             "cards": [
                 "Q-526-Vengeance"
+            ],
+            "rewards": [
+                "+1 reputation"
             ]
         },
         {
@@ -1775,7 +2207,6 @@
                 "x": 72.315,
                 "y": 30.105
             },
-            "is_side": false,
             "pages": [
                 75
             ],
@@ -1789,6 +2220,11 @@
             ],
             "cards": [
                 "Q-526-Vengeance"
+            ],
+            "rewards": [
+                "“Vengeance” quest complete",
+                "Open envelope X",
+                "+2 reputation"
             ]
         },
         {
@@ -1823,7 +2259,6 @@
                 "x": 72.1,
                 "y": 13.5
             },
-            "is_side": false,
             "pages": [
                 77
             ],
@@ -1837,6 +2272,11 @@
             ],
             "cards": [
                 "Q-513-Finding the Cure"
+            ],
+            "rewards": [
+                "“Finding the Cure” quest complete",
+                "Open envelope X",
+                "+1 prosperity"
             ]
         },
         {
@@ -1872,7 +2312,6 @@
                 "x": 57.15,
                 "y": 83.55
             },
-            "is_side": false,
             "pages": [
                 80
             ],
@@ -1889,6 +2328,11 @@
             ],
             "cards": [
                 "Q-529-The Fall of Man"
+            ],
+            "rewards": [
+                "“The Fall of Man” quest complete",
+                "Open envelope 8.svg",
+                "10 experience each"
             ]
         },
         {
@@ -1909,6 +2353,9 @@
             },
             "region_ids": [
                 4
+            ],
+            "rewards": [
+                "15 gold each"
             ]
         },
         {
@@ -1924,15 +2371,22 @@
                 82
             ],
             "requirements": "Water-Breathing (Global) COMPLETE",
-            "chapter_id": 12,
             "required_by": [
-                43
+                {
+                    "complete": [
+                        "GWB"
+                    ]
+                }
             ],
+            "chapter_id": 12,
             "treasures": {
                 "9": "Gain \"Wave Crest\" (Item 111)"
             },
             "region_ids": [
                 6
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -1951,6 +2405,12 @@
             "chapter_id": 12,
             "region_ids": [
                 4
+            ],
+            "achievements_awarded": [
+                "GAT"
+            ],
+            "rewards": [
+                "“Ancient Drill” design (Item 112)"
             ]
         },
         {
@@ -1973,6 +2433,9 @@
             },
             "region_ids": [
                 5
+            ],
+            "achievements_awarded": [
+                "GAT"
             ]
         },
         {
@@ -1990,7 +2453,13 @@
             "chapter_id": 12,
             "treasures": {
                 "14": "Gain 10 Experience"
-            }
+            },
+            "achievements_awarded": [
+                "GAT"
+            ],
+            "rewards": [
+                "“Power Core” (Item 132)"
+            ]
         },
         {
             "id": 68,
@@ -2010,6 +2479,9 @@
             },
             "region_ids": [
                 3
+            ],
+            "rewards": [
+                "2 “Major Healing Potions” (Item 027)"
             ]
         },
         {
@@ -2024,7 +2496,10 @@
             "pages": [
                 88
             ],
-            "chapter_id": 12
+            "chapter_id": 12,
+            "rewards": [
+                "15 gold each"
+            ]
         },
         {
             "id": 70,
@@ -2045,6 +2520,9 @@
             },
             "region_ids": [
                 6
+            ],
+            "rewards": [
+                "+2 prosperity"
             ]
         },
         {
@@ -2060,7 +2538,10 @@
                 90,
                 91
             ],
-            "chapter_id": 12
+            "chapter_id": 12,
+            "rewards": [
+                "2 “Major Power Potions” (Item 041)"
+            ]
         },
         {
             "id": 72,
@@ -2074,7 +2555,11 @@
             "pages": [
                 92
             ],
-            "chapter_id": 13
+            "chapter_id": 13,
+            "rewards": [
+                "+1 reputation",
+                "+1 prosperity"
+            ]
         },
         {
             "id": 73,
@@ -2091,6 +2576,9 @@
             "chapter_id": 13,
             "region_ids": [
                 4
+            ],
+            "rewards": [
+                "+1 reputation"
             ]
         },
         {
@@ -2115,6 +2603,10 @@
             ],
             "cards": [
                 "C-76"
+            ],
+            "rewards": [
+                "10 gold each",
+                "+2 prosperity"
             ]
         },
         {
@@ -2136,6 +2628,9 @@
             },
             "cards": [
                 "C-77"
+            ],
+            "rewards": [
+                "60 gold each"
             ]
         },
         {
@@ -2176,6 +2671,9 @@
             "chapter_id": 13,
             "region_ids": [
                 1
+            ],
+            "rewards": [
+                "5 experience each"
             ]
         },
         {
@@ -2196,6 +2694,9 @@
             ],
             "cards": [
                 "C-34"
+            ],
+            "rewards": [
+                "+3 reputation"
             ]
         },
         {
@@ -2223,6 +2724,9 @@
                 "R-10",
                 "C-71",
                 "C-72"
+            ],
+            "rewards": [
+                "15 gold each"
             ]
         },
         {
@@ -2244,6 +2748,9 @@
             ],
             "cards": [
                 "R-49"
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -2267,6 +2774,9 @@
             ],
             "cards": [
                 "C-17"
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -2290,6 +2800,15 @@
             ],
             "cards": [
                 "R-24"
+            ],
+            "rewards": [
+                [
+                    "+1 reputation"
+                ],
+                [
+                    "-1 reputation",
+                    "-2 prosperity"
+                ]
             ]
         },
         {
@@ -2311,6 +2830,9 @@
             ],
             "cards": [
                 "C-31"
+            ],
+            "rewards": [
+                "40 collective gold"
             ]
         },
         {
@@ -2332,6 +2854,10 @@
             },
             "region_ids": [
                 5
+            ],
+            "rewards": [
+                "“Resonant Crystal” (Item 133)",
+                "+1 prosperity"
             ]
         },
         {
@@ -2355,6 +2881,9 @@
                 "R-48",
                 "R-61",
                 "R-62"
+            ],
+            "rewards": [
+                "“Orb of Dawn” (Item 121)"
             ]
         },
         {
@@ -2380,6 +2909,12 @@
             "cards": [
                 "C-47",
                 "C-63"
+            ],
+            "achievements_awarded": [
+                "PTPS"
+            ],
+            "rewards": [
+                "+2 reputation"
             ]
         },
         {
@@ -2403,8 +2938,11 @@
                 "40": "Random Item Design"
             },
             "cards": [
-                "C-47",
-                "C-63"
+                "C-47"
+            ],
+            "rewards": [
+                "+1 reputation",
+                "+1 prosperity"
             ]
         },
         {
@@ -2422,7 +2960,11 @@
             "requirements": "Water-Breathing (Global) and Water Staff (Party) COMPLETE",
             "chapter_id": 15,
             "required_by": [
-                43
+                {
+                    "complete": [
+                        "{GWB}"
+                    ]
+                }
             ],
             "treasures": {
                 "8": "Gain 1 ✔",
@@ -2434,6 +2976,9 @@
             "cards": [
                 "R-50",
                 "C-68"
+            ],
+            "rewards": [
+                "“Staff of Summoning” (Item 120)"
             ]
         },
         {
@@ -2461,6 +3006,9 @@
             "cards": [
                 "C-51",
                 "C-64"
+            ],
+            "rewards": [
+                "50 collective gold"
             ]
         },
         {
@@ -2481,6 +3029,9 @@
             },
             "cards": [
                 "R-44"
+            ],
+            "rewards": [
+                "“Black Censer” (Item 128)"
             ]
         },
         {
@@ -2501,6 +3052,9 @@
             ],
             "cards": [
                 "C-58"
+            ],
+            "rewards": [
+                "2 ✔ each"
             ]
         },
         {
@@ -2524,6 +3078,10 @@
                 "C-56",
                 "C-66",
                 "C-67"
+            ],
+            "rewards": [
+                "10 gold each",
+                "-3 reputation"
             ]
         },
         {
@@ -2548,6 +3106,9 @@
             ],
             "cards": [
                 "C-8"
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -2568,6 +3129,9 @@
             ],
             "cards": [
                 "C-78"
+            ],
+            "achievements_awarded": [
+                "PTTN"
             ]
         },
         {
@@ -2578,18 +3142,27 @@
                 "x": 59,
                 "y": 38.65
             },
-            "is_side": false,
             "pages": [
                 118,
                 119
             ],
             "requirements": "Through the Nest (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GTTN"
+                    ]
+                }
+            ],
             "chapter_id": 15,
             "linked_from": [
                 94
             ],
             "cards": [
                 "C-78"
+            ],
+            "rewards": [
+                "“Skull of Hatred” (Item 119)"
             ]
         }
     ],

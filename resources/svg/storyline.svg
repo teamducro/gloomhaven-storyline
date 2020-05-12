@@ -433,6 +433,7 @@
     <g id="node49" class="scenario">
         <circle cx="335.1236586" cy="86.66409628" r="10.8" class="node"/>
         <text x="319.27638" y="82.69546">49</text>
+        <text x="320" y="84" class="blocked">×</text>
     </g>
     <g id="node50" class="scenario">
         <circle cx="283.3491094" cy="87.02364176" r="10.8" class="node"/>
@@ -596,6 +597,7 @@
         <circle cx="344.4445698" cy="458.0609415" r="10.8" class="node"/>
         <text x="329" y="453.7464">33</text>
         <text x="331" y="453.7464" class="blocked">×</text>
+        <text x="329.4" y="453" class="required">!</text>
     </g>
     <g id="edge25-33" class="edge edge25">
         <path class="line" d="M 281.6032108 406.3654924 L 322.4331956 447.1954771"/>

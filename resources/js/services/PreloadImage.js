@@ -6,9 +6,17 @@ export default class PreloadImage {
             image.src = url;
             image.onerror = null;
         };
+
         if (typeof success === "function") {
-            image.onload = success;
+            image.onload = success(image.src);
+            return;
         }
+
+        return new Promise((resolution, rejection) => {
+            image.onload = () => {
+                resolution(image.src);
+            }
+        });
     }
 
     webp(url) {
