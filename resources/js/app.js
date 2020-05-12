@@ -86,7 +86,7 @@ window.app = new Vue({
             this.fetchScenarios()
         ]);
 
-        // this.shouldRedirectToDotCom();
+        this.shouldRedirectToDotCom();
 
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
     },
