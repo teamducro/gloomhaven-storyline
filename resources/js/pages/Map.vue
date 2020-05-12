@@ -44,31 +44,27 @@
 
 <script>
     import panzoom from "panzoom";
+    import Hammer from 'hammerjs';
     import tippy from "tippy.js";
 
     export default {
         data() {
             return {
                 map: null,
+                $map: null,
                 mapTouch: null,
                 scenarios: null,
-                achievements: null,
-                scale: 0.79
+                achievements: null
             }
         },
         mounted() {
-            this.setScale();
-            let $map = $('#map')
-            this.map = panzoom($map[0], {
-                minZoom: this.scale,
+            this.$map = $('#map');
+            this.map = panzoom(this.$map[0], {
+                minZoom: this.scale(),
                 maxZoom: 4,
                 bounds: true
             });
-            this.map.zoomTo(0, 0, this.scale);
-            const mapH = $map.height() * this.scale;
-            let y = ($(window).height() - mapH) / 2;
-
-            this.map.moveTo(0, y);
+            this.centerMap();
 
             if (app.scenarios) {
                 this.setScenarios();
@@ -77,7 +73,7 @@
             this.$bus.$on('scenarios-updated', this.setScenarios);
             this.$bus.$on('windows-resized', this.setScenarios);
             $('#map').on('click', '.scenario', this.scenarioClicked);
-            this.mapTouch = new Hammer(document.getElementById('map'));
+            this.mapTouch = new Hammer(this.$map[0]);
             this.mapTouch.on('tap', (e) => {
                 if (e.target.id.startsWith('s')) {
                     this.scenarioClicked(e);
@@ -99,19 +95,16 @@
             this.mapTouch.destroy();
         },
         methods: {
-            setScale() {
-                this.scale = $(window).width() / 2484;
-            },
             setScenarios() {
-                this.setScale();
-                this.map.setMinZoom(this.scale);
+                console.log(this.scale());
+                this.map.setMinZoom(this.scale());
 
                 this.scenarios = app.scenarios;
 
                 // Show tooltip on hover
                 this.scenarios.each((scenario) => {
                     let $s = $('#s' + scenario.id);
-                    if (app.hasMouse && scenario.isVisible() && !$s.hasClass('tippy')) {
+                    if ($s.length && app.hasMouse && scenario.isVisible() && !$s.hasClass('tippy')) {
                         tippy($s[0], {
                             content: scenario.title
                         });
@@ -136,6 +129,29 @@
                     id: achievement.id
                 });
             },
+            centerMap() {
+                const scale = this.scale();
+                this.map.zoomTo(0, 0, scale);
+                const yOffset = 184 * scale;
+
+                if (this.isLandscape()) {
+                    const mapWidth = this.$map.width() * scale;
+                    let x = ($(window).width() - mapWidth) / 2;
+                    this.map.moveTo(x, yOffset + (20 / scale));
+                } else {
+                    const mapHeight = this.$map.height() * scale;
+                    let y = ($(window).height() - mapHeight) / 2;
+                    this.map.moveTo(0, y + yOffset);
+                }
+            },
+            isLandscape() {
+                return $(window).width() > $(window).height();
+            },
+            scale() {
+                return this.isLandscape()
+                    ? $(window).height() / 2296
+                    : $(window).width() / this.$map.width();
+            }
         }
     }
 </script>
