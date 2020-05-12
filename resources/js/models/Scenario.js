@@ -38,7 +38,7 @@ class Scenario {
             "state": "_state",
             "choice": "_choice",
             "notes": "notes",
-            "treasures": "unlockedTreasures"
+            "treasures": {"unlockedTreasures": []}
         }
 
         this.read();

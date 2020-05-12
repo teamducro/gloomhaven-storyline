@@ -14,7 +14,14 @@ export default {
         if (model) {
             const fieldsToStore = collect(this.fieldsToStore || []);
             fieldsToStore.each((modelKey, storeKey) => {
-                this[modelKey] = model[storeKey];
+                let defaultValue = undefined;
+                // support for default values from local storage
+                if (typeof modelKey === 'object') {
+                    const key = Object.keys(modelKey)[0];
+                    defaultValue = modelKey[key];
+                    modelKey = key;
+                }
+                this[modelKey] = model[storeKey] || defaultValue;
             });
         }
     }
