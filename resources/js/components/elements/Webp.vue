@@ -67,7 +67,6 @@
         methods: {
             async render(src) {
                 this.isLoaded = false;
-                console.log(this.force, this.src);
                 this.source = app.webpSupported === false || !this.force
                     ? src
                     : this.webp(src);
