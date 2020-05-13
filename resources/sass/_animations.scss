@@ -16,3 +16,14 @@
     opacity: 0;
     transform: scaleY(.9);
 }
+
+.modal-enter-active, .modal-leave-active {
+    transition: opacity .3s, transform .3s;
+    transform-origin: center;
+}
+
+.modal-enter, .modal-leave-to {
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(.9);
+}
