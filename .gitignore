@@ -5,8 +5,6 @@
 npm-debug.log
 /public
 .DS_Store
-.idea
 /cypress/examples
 /cypress/videos
 /cypress/screenshots
-/public/mix-manifest.json
