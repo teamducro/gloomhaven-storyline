@@ -56,7 +56,7 @@
             return {
                 show: false,
                 isOpen: false,
-                timesWithoutDonations: 3
+                timesWithoutDonations: 5
             }
         },
         mounted() {
@@ -79,10 +79,9 @@
                 if (count > this.timesWithoutDonations) {
                     count = 0;
                 }
-                count = count + 1;
-                store.set('donations', count);
+                store.set('donations', count + 1);
 
-                return (count === 1);
+                return (count === this.timesWithoutDonations);
             }
         }
     }
