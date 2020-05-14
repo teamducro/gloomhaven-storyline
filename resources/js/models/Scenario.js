@@ -26,6 +26,7 @@ class Scenario {
         this.links_to = collect(data.links_to);
         this.linked_from = collect(data.linked_from);
         this.required_by = collect(data.required_by) || [];
+        this.blocks_on = collect(data.blocks_on) || [];
         this.treasures = collect(data.treasures);
         this.treasures_from = collect(data.treasures_from);
         this.treasures_to = collect(data.treasures_to);
@@ -39,7 +40,7 @@ class Scenario {
             "choice": "_choice",
             "notes": "notes",
             "treasures": "unlockedTreasures"
-        }
+        };
 
         this.read();
     }
@@ -136,6 +137,6 @@ class Scenario {
 
 }
 
-Object.assign(Scenario.prototype, Storable)
+Object.assign(Scenario.prototype, Storable);
 
 export default Scenario

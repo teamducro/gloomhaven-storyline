@@ -40,11 +40,11 @@ export default class AchievementRepository {
         achievement.gain();
     }
 
-    lose(id) {
+    remove(id) {
         let achievement = this.find(id);
         if (achievement.group) {
             let group = new AchievementGroup(achievement.group);
-            group.lose(achievement.id);
+            group.remove(achievement.id);
 
             if (group.current) {
                 this.find(group.current).gain();
@@ -53,9 +53,14 @@ export default class AchievementRepository {
         if (achievement.upgrades.length) {
             let last = this.findMany(achievement.upgrades)
                 .last(item => item.awarded) || achievement;
-            last.lose();
+            last.remove();
         }
 
+        achievement.remove();
+    }
+
+    lose(id) {
+        let achievement = this.find(id);
         achievement.lose();
     }
 

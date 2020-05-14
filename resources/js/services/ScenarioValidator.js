@@ -72,16 +72,22 @@ export default class ScenarioValidator {
         if (scenario.isHidden() || scenario.isComplete() || scenario.required_by.isEmpty()) {
             return;
         }
-
         let conditions = scenario.required_by;
 
-        let shouldBeBlocked = conditions.every((condition) => {
-            let incomplete = condition.incomplete || [];
-            return incomplete.length && !incomplete.every((incompleteRequirement) => {
-                let achievement = this.achievementRepository.find(incompleteRequirement) || {};
+        let blocking_conditions = scenario.blocks_on;
+        let shouldBeBlocked = blocking_conditions.contains((condition) => {
+            let complete = condition.complete || [];
+            let completeCheck = complete.length && complete.every((achievementId) => {
+                let achievement = this.achievementRepository.find(achievementId) || {};
                 return achievement.awarded;
             });
-        }) === false;
+            let lost = condition.lost || [];
+            let lostCheck = lost.length && lost.every((achievementId) => {
+                let achievement = this.achievementRepository.find(achievementId) || {};
+                return achievement.lost;
+            });
+            return completeCheck || lostCheck;
+        });
 
         if (shouldBeBlocked) {
             if (!scenario.isBlocked()) {
@@ -92,11 +98,17 @@ export default class ScenarioValidator {
         }
 
         let shouldBeRequired = conditions.contains((condition) => {
+            let incomplete = condition.incomplete || [];
+            let allIncompleteRequirementsOk = incomplete.every((achievementId) => {
+                let achievement = this.achievementRepository.find(achievementId) || {};
+                return !achievement.awarded;
+            });
             let complete = condition.complete || [];
-            return complete.every((completeRequirement) => {
-                let achievement = this.achievementRepository.find(completeRequirement) || {};
+            let allCompleteRequirementsOk = complete.every((achievementId) => {
+                let achievement = this.achievementRepository.find(achievementId) || {};
                 return achievement.awarded;
             });
+            return allIncompleteRequirementsOk && allCompleteRequirementsOk;
         }) === false;
 
         if (shouldBeRequired && !scenario.isRequired()) {

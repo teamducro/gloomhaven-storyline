@@ -84,6 +84,13 @@
                     ]
                 }
             ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        "GTMF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 8,
@@ -262,6 +269,13 @@
                     ]
                 }
             ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        "GTDI"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 7,
@@ -307,6 +321,13 @@
                     ]
                 }
             ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        "GTMF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "links_to": [
                 11,
@@ -348,6 +369,13 @@
                     ]
                 }
             ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        "GTRN"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "links_to": [
                 21,
@@ -382,6 +410,13 @@
             "required_by": [
                 {
                     "incomplete": [
+                        "GEOI"
+                    ]
+                }
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
                         "GEOI"
                     ]
                 }
@@ -430,6 +465,13 @@
             "required_by": [
                 {
                     "incomplete": [
+                        "GEOI"
+                    ]
+                }
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
                         "GEOI"
                     ]
                 }
@@ -752,6 +794,13 @@
                     ]
                 }
             ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        "GTRN"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "linked_from": [
                 10
@@ -915,7 +964,8 @@
             ],
             "achievements_awarded": [
                 "PTDC"
-            ]
+            ],
+            "prompt": "dragonChoice"
         },
         {
             "id": 26,
@@ -981,11 +1031,11 @@
             "requirements": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
             "required_by": [
                 {
-                    "comnplete": [
-                        "PSC"
-                    ],
                     "incomplete": [
                         "GAL"
+                    ],
+                    "complete": [
+                        "PSC"
                     ]
                 }
             ],
@@ -1103,6 +1153,13 @@
                     ]
                 }
             ],
+            "blocks_on": [
+                {
+                    "lost": [
+                        "PTVC"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "links_to": [
                 42
@@ -1144,6 +1201,7 @@
                     ]
                 },
                 {
+                    "display": "false",
                     "complete": [
                         "GTPE",
                         "GAR2"
@@ -1191,6 +1249,13 @@
                     ]
                 }
             ],
+            "blocks_on": [
+                {
+                    "lost": [
+                        "PTVC"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "links_to": [
                 33,
@@ -1221,20 +1286,20 @@
             "required_by": [
                 {
                     "complete": [
-                        "PTDC"
-                    ],
-                    "incomplete": [
-                        "GTDS",
-                        "GTVS"
+                        "PTVC"
                     ]
                 },
                 {
                     "complete": [
-                        "PTVC"
-                    ],
-                    "incomplete": [
-                        "GTDS",
-                        "GTVS"
+                        "PTDC"
+                    ]
+                }
+            ],
+            "blocks_on": [
+                {
+                    "lost": [
+                        "PTVC",
+                        "PTDC"
                     ]
                 }
             ],
@@ -1253,7 +1318,8 @@
             "achievements_awarded": [
                 "PTVT",
                 "PTDT"
-            ]
+            ],
+            "prompt": "dragonChoice"
         },
         {
             "id": 34,
@@ -1273,8 +1339,14 @@
                         "PTDC"
                     ],
                     "incomplete": [
-                        "PTDC",
-                        "PTDT"
+                        "GTDA"
+                    ]
+                }
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        "GTDA"
                     ]
                 }
             ],
@@ -1323,6 +1395,18 @@
                     ],
                     "incomplete": [
                         "GTRN"
+                    ]
+                }
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        "GTRN"
+                    ]
+                },
+                {
+                    "lost": [
+                        "PADE"
                     ]
                 }
             ],
@@ -1377,21 +1461,17 @@
                     "incomplete": [
                         "GTRN"
                     ]
-                },
+                }
+            ],
+            "blocks_on": [
                 {
                     "complete": [
-                        "PADE"
-                    ],
-                    "incomplete": [
-                        "GCRD"
+                        "GTRN"
                     ]
                 },
                 {
-                    "complete": [
+                    "lost": [
                         "PADE"
-                    ],
-                    "incomplete": [
-                        "GCRM"
                     ]
                 }
             ],
@@ -1555,6 +1635,13 @@
                     ]
                 }
             ],
+            "blocks_on": [
+                {
+                    "lost": [
+                        "PTVC"
+                    ]
+                }
+            ],
             "chapter_id": 10,
             "links_to": [
                 41
@@ -1592,9 +1679,13 @@
                 {
                     "complete": [
                         "PTVC"
-                    ],
-                    "incomplete": [
-                        "GTVS"
+                    ]
+                }
+            ],
+            "blocks_on": [
+                {
+                    "lost": [
+                        "PTVC"
                     ]
                 }
             ],
@@ -1639,6 +1730,13 @@
                         "PTSV"
                     ],
                     "incomplete": [
+                        "GTVF"
+                    ]
+                }
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
                         "GTVF"
                     ]
                 }
@@ -1911,9 +2009,18 @@
                 {
                     "complete": [
                         "GCRD"
-                    ],
-                    "incomplete": [
-                        "GCRM"
+                    ]
+                },
+                {
+                    "complete": [
+                        "GCRD"
+                    ]
+                }
+            ],
+            "blocks_on": [
+                {
+                    "lost": [
+                        "GCRD"
                     ]
                 }
             ],
@@ -1957,6 +2064,13 @@
                         "GCRD"
                     ],
                     "incomplete": [
+                        "GAOO"
+                    ]
+                }
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
                         "GAOO"
                     ]
                 }
@@ -3151,7 +3265,7 @@
             "required_by": [
                 {
                     "complete": [
-                        "GTTN"
+                        "PTTN"
                     ]
                 }
             ],

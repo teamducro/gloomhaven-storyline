@@ -12,12 +12,14 @@ class Achievement {
         this.upgrades = data.upgrades || [];
         this.hidden = data.hidden || false;
         this._awarded = false;
+        this._lost = false;
         this._count = 0;
 
         this.fieldsToStore = {
             "awarded": "_awarded",
-            "count": "_count"
-        }
+            "count": "_count",
+            "lost": "_lost"
+        };
 
         this.read();
     }
@@ -37,23 +39,38 @@ class Achievement {
 
         if (this.count < this.upgrades.length + 1) {
             this._count++;
-            this.store();
         }
+
+        if (this.lost) {
+            this._lost = false;
+        }
+
+        this.store();
     }
 
-    lose() {
+    remove() {
         if (this.count === 1) {
             this._awarded = false;
         }
 
         if (this.count > 0) {
             this._count--;
-            this.store();
         }
+
+        this.store();
+    }
+
+    lose() {
+        this._lost = true;
+        this.remove();
     }
 
     get awarded() {
         return this._awarded;
+    }
+
+    get lost() {
+        return this._lost;
     }
 
     get count() {

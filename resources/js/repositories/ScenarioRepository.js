@@ -105,7 +105,7 @@ export default class ScenarioRepository {
         if (scenario.achievements_awarded) {
             scenario.achievements_awarded.each(id => {
                 if (this.awardedFrom(id).isEmpty() || this.achievementRepository.find(id).upgrades.length) {
-                    this.achievementRepository.lose(id);
+                    this.achievementRepository.remove(id);
                 }
             })
         }
