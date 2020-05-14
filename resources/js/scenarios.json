@@ -980,7 +980,7 @@
             "requirements": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
             "required_by": [
                 {
-                    "comnplete": [
+                    "complete": [
                         "PSC"
                     ],
                     "incomplete": [
@@ -2962,7 +2962,7 @@
             "required_by": [
                 {
                     "complete": [
-                        "{GWB}"
+                        "GWB"
                     ]
                 }
             ],
