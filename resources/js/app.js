@@ -75,8 +75,8 @@ window.app = new Vue({
             isPortrait: true
         }
     },
-    mounted() {
-        // loadLanguageAsync('fr');
+    async mounted() {
+        loadLanguageAsync('fr');
         this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
