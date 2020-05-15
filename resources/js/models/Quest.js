@@ -1,4 +1,4 @@
-export default class Quest {
+class Quest {
 
     constructor(data) {
         this.id = data.id;
@@ -14,3 +14,5 @@ export default class Quest {
         return `quest.${this.id}.stages.${this.stage}`;
     }
 }
+
+export default Quest

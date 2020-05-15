@@ -4,12 +4,11 @@ import SocialSharing from 'vue-social-sharing';
 import VueClipboard from 'vue-clipboard2';
 import ShareState from "./services/ShareState";
 import QuestRepository from "./repositories/QuestRepository";
+import AchievementRepository from "./repositories/AchievementRepository";
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';
-import Story from "./components/Story";
-import Scenarios from "./components/Scenarios";
 import VueAnalytics from 'vue-analytics';
-import Map from "./components/Map";
+import Achievement from "./models/Achievement";
 import {loadLanguageAsync} from "./services/I18n-setup";
 import i18nEn from "./lang/en";
 
@@ -22,8 +21,14 @@ VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
 
 // Vue components
-const files = require.context('./components', true, /\.vue$/i);
-files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+const components = require.context('./components', true, /\.vue$/i);
+components.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], components(key).default));
+
+// pages
+const Story = () => import("./pages/Story");
+const Scenarios = () => import("./pages/Scenarios");
+const Achievements = () => import("./pages/Achievements");
+const Map = () => import("./pages/Map");
 
 // Router
 const routes = [
@@ -31,6 +36,7 @@ const routes = [
     {path: '/story', component: Story},
     {path: '/scenarios', component: Scenarios},
     {path: '/map', component: Map},
+    {path: '/achievements', component: Achievements},
 ];
 const router = new VueRouter({routes});
 Vue.use(VueRouter);
@@ -48,7 +54,8 @@ window.i18n = new VueI18n({
     fallbackLocale: 'en',
     messages: {
         en: i18nEn
-    }
+    },
+    silentTranslationWarn: true
 });
 
 // event bus
@@ -62,6 +69,7 @@ window.app = new Vue({
         return {
             scenarios: null,
             quests: null,
+            achievements: null,
             webpSupported: true,
             hasMouse: false,
             isPortrait: true
@@ -72,22 +80,40 @@ window.app = new Vue({
         this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
-        this.fetchScenarios();
+
+        await Promise.all([
+            this.fetchAchievements(),
+            this.fetchScenarios()
+        ]);
+
+        this.shouldRedirectToDotCom();
+
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
+
+        this.$bus.$emit('open-donations');
     },
     methods: {
-        fetchScenarios() {
+        async fetchAchievements() {
+            let achievementRepository = new AchievementRepository;
+            this.achievements = achievementRepository.fetch();
+            await this.$nextTick();
+            this.$bus.$emit('achievements-updated');
+
+            return true;
+        },
+        async fetchScenarios() {
             let scenarioRepository = new ScenarioRepository;
             let questRepository = new QuestRepository;
             this.quests = questRepository.fetch();
             this.scenarios = scenarioRepository.fetch();
             scenarioRepository.setQuests(this.scenarios, this.quests);
 
-            this.$nextTick(() => {
-                (new ShareState).load();
-                (new ScenarioValidator).validate();
-                this.$bus.$emit('scenarios-updated');
-            });
+            await this.$nextTick();
+            (new ShareState).load();
+            (new ScenarioValidator).validate();
+            this.$bus.$emit('scenarios-updated');
+
+            return true;
         },
         isWebpSupported() {
             let elem = document.createElement('canvas');
@@ -122,6 +148,12 @@ window.app = new Vue({
         updateViewportHeight() {
             let vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
+        },
+        shouldRedirectToDotCom() {
+            if (window.location.host.endsWith(".danield.nl")) {
+                const url = 'https://gloomhaven-storyline.com';
+                window.location = url + '?' + (new ShareState).encode();
+            }
         }
     }
 });
