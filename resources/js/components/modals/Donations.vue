@@ -75,6 +75,11 @@
                 this.isOpen = false;
             },
             shouldOpen() {
+                // Only show the Donations modal in production
+                if (process.env.NODE_ENV !== 'production') {
+                    return false;
+                }
+
                 let count = store.get('donations') || 0;
                 if (count > this.timesWithoutDonations) {
                     count = 0;
