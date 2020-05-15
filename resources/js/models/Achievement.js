@@ -15,8 +15,8 @@ class Achievement {
         this._count = 0;
 
         this.fieldsToStore = {
-            "awarded": "_awarded",
-            "count": "_count"
+            "awarded": {"_awarded": this._awarded},
+            "count": {"_count": this._count}
         }
 
         this.read();

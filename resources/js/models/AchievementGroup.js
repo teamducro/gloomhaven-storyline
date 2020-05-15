@@ -7,14 +7,14 @@ class AchievementGroup {
         this._achievements = [];
 
         this.fieldsToStore = {
-            "achievements": "_achievements"
+            "achievements": {"_achievements": this._achievements}
         }
 
         this.read();
     }
 
     gain(id) {
-        if (this.hasGained(id)) {
+        if (this.current === id) {
             return;
         }
         this._achievements.push(id);
@@ -22,10 +22,10 @@ class AchievementGroup {
     }
 
     lose(id) {
-        if (!this.hasGained(id)) {
+        if (this.current !== id) {
             return;
         }
-        this._achievements.splice(this._achievements.indexOf(id));
+        this._achievements.pop();
         this.store();
     }
 
