@@ -150,6 +150,21 @@ export default {
                 2: "{1}{3}"
             }
         },
+        29: {
+            "name": "Danser avec le diable",
+            "sections": {
+                0: "Vous avez récupéré l'artefact, comme l'a demandé le démon. Il est clair que l'artefact a été corrompu. Si vous apportez cela au démon, il l'utilisera très certainement pour un grand et terrible mal. Mais vous êtes prêt à trahir le démon et à combattre ce mal, quel qu'il soit. ",
+                1: "Pourquoi prendre le risque? Vous avez scellé la faille sans remettre l'artefact au démon. De toute évidence, il ne fallait pas lui faire confiance avec un objet aussi dangereux et puissant.",
+                2: "Après réflexion, l'offre du démon semblait plutôt séduisante. Vous vous êtes rangé du côté du démon, avez massacré la garde de la ville et installé les nouveaux suzerains du démon. Havrenuit est maintenant sous la domination des démons.",
+                3: "Vous saviez que ce serait mauvais ... mais une invasion démoniaque de Havrenuit n'était pas ce que vous aviez en tête. C'était trop pour vous. Vous avez échappé à l'antre du démon et avez couru pour avertir le garde de la ville juste à temps. Les démons ont assailli la porte en nombre, mais vous avez pu tenir assez longtemps pour épuiser le démon principal. Il a réussi à franchir la porte, mais vous l'avez abattu et dispersé ses armées. Havrenuit est en sécurité pour l'instant , mais vous voudrez peut-être reconsidérer votre politique consistant à remettre de puissants artefacts à des créatures maléfiques. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{2}",
+                3: "{0}{3}"
+            }
+        },
         30: {
             "name": "Sous la mer",
             "sections": {
