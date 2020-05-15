@@ -4,6 +4,18 @@
             <p class="mb-2">Thanks to these creators for their content.</p>
             <ul class="list-disc ml-4">
                 <li class="py-1">
+                    <span class="mr-1 block sm:inline">Gloomhaven assets by
+                        <a class="link" target="_blank" rel="noreferrer"
+                           href="https://boardgamegeek.com/user/Cephalofair">
+                            Isaac Childres
+                        </a>:
+                    </span>
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://boardgamegeek.com/thread/1733586/files-creation">
+                        Files for creation
+                    </a>
+                </li>
+                <li class="py-1">
                     <span class="mr-1 block sm:inline">Chart layout by
                         <a class="link" target="_blank" rel="noreferrer"
                            href="https://boardgamegeek.com/user/grimtoothy">
@@ -40,6 +52,12 @@
                     </a>
                 </li>
             </ul>
+
+            <p class="my-4">
+                All content remains under creative commons license BY-NC-SA 4.0
+                (<a class="link"
+                    href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>)
+            </p>
         </template>
     </modal>
 </template>

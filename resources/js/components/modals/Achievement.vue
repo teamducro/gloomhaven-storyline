@@ -20,11 +20,12 @@
                                              :scenario="scenario" :key="scenario.id"/>
                         </h2>
                     </div>
-                    <webp v-if="achievement.isGlobal()"
-                          :src="achievement.image"
-                          :animate="true"
-                          class="w-12"
-                          :alt="achievement.displayName"/>
+                    <div class="w-12">
+                        <webp v-if="achievement.isGlobal()"
+                              :src="achievement.image"
+                              :animate="true"
+                              :alt="achievement.displayName"/>
+                    </div>
                 </div>
             </template>
         </modal>
