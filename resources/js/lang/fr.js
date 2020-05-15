@@ -150,6 +150,19 @@ export default {
                 2: "{1}{3}"
             }
         },
+        33: {
+            "name": "Un peu de silence",
+            "sections": {
+              0: "À l'intérieur d'une grotte dans les Crêtes de Cuivre, vous avez découvert une créature liée par un sortilège, connue uniquement sous le nom de\" La Voix \". Depuis, vos oreilles n'ont pas cessé de sonner. Sur les conseils d'un érudit Quatryl, vous avez récupéré un sceptre de liaison , rempli d'énergies sombres, depuis un sanctuaire au bord du Marais Stagnant. Si vous apportez le sceptre dans la chambre de la Voix, vous pourrez renouveler le lien et faire taire cette maudite voix une fois pour toutes. ",
+              1: "Vous avez décidé que le moyen le plus simple de faire taire la Voix était simplement de lui donner ce qu'elle voulait. La Voix a été libérée et n'habite plus la chambre des échos.",
+              2: "Tandis que vous vous teniez dans la grotte de la montagne, sceptre à la main, la Voix vous a appelé.\" Vos intentions sont nobles. Vous me craignez et souhaitez me garder emprisonné. Je comprends, mais ce que vous faites ne conduira qu'au désastre et la ruine. Ce sceptre n'a pas été créé pour renforcer ma prison. Je l'ai créé! Je l'ai utilisé pour emprisonner l'un de mes plus grands ennemis - un être de mort et de haine. Je ne sais pas ce qui se passera lorsque vous apporterez cette chose à ma chambre , mais je peux vous garantir qu'il n'en sortira rien de bon! \" Vous avez bloqué les mensonges de la Voix de votre esprit et avant que la Voix ne puisse dire un autre mot, vous avez soulevé le sceptre et canalisé son pouvoir. La Voix cria une fois de plus, mais il n'y avait pas de cohérence dans le son - seulement de la douleur. Le brouillard commença à se dissiper et, pendant un moment, vous avez ressenti un soulagement, jusqu'à ce que vous vous rendiez compte que vous n'étiez plus dans la chambre d'écho, mais dans un endroit sombre et hostile. La Voix a retentit à nouveau, son timbre était désormais différent: \"Le pouvoir de la Voix est désormais mien! Vous serez le premier à y succomber!\" Après une bataille acharnée, vous avez coupé les cordes vocales de la Voix. La Voix ne parlera plus jamais. "
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
         34: {
             "name": "Se faire pousser des branchies",
             "sections": {
