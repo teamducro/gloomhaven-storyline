@@ -150,6 +150,21 @@ export default {
                 2: "{1}{3}"
             }
         },
+        30: {
+            "name": "Sous la mer",
+            "sections": {
+                0: "Avec l'aide de Tourmente, l'artefact a été nettoyé de son influence corruptrice. Cependant, Tourmente a mentionné trois emplacements qui tiraient le pouvoir de l'artefact corrompu. Si vous voulez en savoir plus sur l'artefact, vous voudrez peut-être visiter ces emplacements. Un de ces endroits est profondément sous la mer brumeuse. Malheureusement, votre anatomie ne comprend pas un ensemble de branchies. Peut-être que Tourmente pourrait avoir un moyen de remédier à cela? La connaissant, quelle la solution qu'elle trouvera sera p désagréable. ",
+                1: "Plutôt désagréable était une hypothèse judicieuse. En tout cas, vous avez réussi à obtenir des appareils qui vous permettent de respirer librement sous l'eau. Il est temps d'enquêter sur l'un des endroits corrompus.",
+                2: "Votre plongée vous a mèné au fond d'une fosse. Vous avez du faire face à la résistance des ténébreux gardiens protégeant ce que vous êtes venus trouver ici, mais vous les avez combattu malgré tout. Vous avez poussé vers l'avant, laissant la fosse misérable. En regardant derrière vous, vous avez vu les silhouettes de Rôdeurs attendant dans l'ombre, mais ils ne vous ont pas poursuivi. Peut-être ont-ils eut peur de tout ce qui vous attendait. Vous êtes allé plus profondément à travers une fissure dans la terre jusqu'à ce que votre chemin se déplace soudainement vers le haut. Vous avez recraché votre orbe permettant de respirer sous l'eau, reconnaissant de pouvoir enfin respirer normalement et de vous reposer un peu. À travers l'obscurité devant vous, vous avez vu une vaste caverne, qui abritait une structure en pierre massive. Cette vue artificielle, si éloignée de tout ce que vous connaissez, vous a rempli d'une terreur irrationnelle et inquiétante. ",
+                3: "Vous vous êtes promené dans l'énorme structure de pierre sous les vagues pendant ce qui semble être des heures. Et juste au moment où vous aviez l'impression de ne pas pouvoir aller plus loin, vous avez senti sa présence. Quelque chose de vieux et de puissant vous attendait au bout de ce couloir . Il vous appellé, vous invitant à grimper dans sa gueule ouverte, embrassant la douce libération de l'infini. C'est ce que vous êtiez venu combattre, mais sans même l'avoir vu, vous avez êté rempli d'un désespoir sans fin. Vous ne pouviez même pas rêver de vaincre une telle une créature. Vous avez secoué la tête et essayé de vous prémunir contre ces sentiments négatifs - après tout, vous n'aviez pas avalé ces sphères respiratoires et nagé au fond de l'océan pour échouer maintenant. Vous deviez détruire cette menace. Vous avez pris votre courage à demain, ainsi que vos lames. Une fois l'oeil géant mort, tous ses serviteurs ont dépéri et sont morts avec lui. Heureusement, la salle a cessé de trembler elle aussi. Vous ne pouviez pas sortir de la même façon dont vous êtes entré, mais vous étiez libre d'explorer la structure plus en avant, sans l'effroi écrasant qui imprégnait l'air auparavant. C'est un long voyage, mais vous êtes sorti de la fosse, retourné au bateau et retourné à Havrenuit, résolus à ne plus jamais refaire ça. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{1}{2}",
+                3: "{0}{1}{2}{3}"
+            }
+        },
         31: {
             "name": "Forêt Noire",
             "sections": {
