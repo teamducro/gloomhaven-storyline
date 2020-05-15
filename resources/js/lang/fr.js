@@ -150,6 +150,19 @@ export default {
                 2: "{1}{3}"
             }
         },
+        32: {
+            "name": "Ice Climbers",
+            "sections": {
+                0: "Avec l'aide de Tourmente, l'artefact a été nettoyé de son influence corruptrice. Cependant, Tourmente a mentionné trois emplacements qui tiraient le pouvoir de l'artefact corrompu. Si vous voulez en savoir plus sur l'artefact, vous voudrez peut-être visiter ces emplacements. Un de ces emplacements est situé au sommet des Crêtes de Cuivre. ",
+                1: "Vous avez escaladé les sommets gelés des Crêtes de Cuivre, déplorant que le lieu où Tourmente vous a envoyé se trouve être l'endroit le plus impitoyable et inhospitalier possible. En escaladant les montagnes, vous avez été pris en embuscade par des personnages en capes sombres et des démons de glace, alors que vous tentiez de franchir un fossé. Une voix a retentit au dessus du vent hurlant. \"Vous n'êtes pas les bienvenus ici, mortels. Tout ce qui vous attend est l'étreinte de la mort.\" Vous pouviez à peine voir à travers le blizzard, mais vous êtiez déterminé à vous assurer que la mort embrasse plutôt quelqu'un d'autre. Alors que vous vous battiez contre les ennemis et les éléments, vous avez échappé à la tempête et trouvé un semblant d'abri dans une grotte. Une orbe d'un blanc brillant se trouvait derrière les démons crytallins qui occupaient la grotte. Les pièces du puzzle commençaient toutes à se mettre en place. Ces démons contrôlaient les éléments ici, bloquant votre passage vers le pic. Vous avez détruis l'orbe et les cris du vent à l'extérieur de la grotte ont diminué jusqu'à n'être que des faibles murmures. Vous êtes sorti et avez trouvé un ciel clair au-dessus de vous, ainsi qu'un chemin vers le sommet. À cette altitude, sans nuage à perte de vue, vous vous êtes émerveillés devant l'étendue merveilleuse des montagnes, des forêts et des plaines au-delà . Vous pouviez même voir le faible contour de Havrenuit au loin. ",
+                2: "Une fois l'autel de glace détruit, grimper le reste du chemin vers le haut de la montagne fût heureusement sans incident. Vous vous amusiez presque, admirant la vue sur toute la campagne, quand la vue est soudainement devenue sombre, bien qu'il ne soit que midi. Vous etiez très proches du sommet maintenant, et vous avez supposé que ce développement avait quelque chose à voir avec la présence maléfique au sommet. Un crissement aigu a retentit, et vous vous êtes accroupis en plissant les yeux dans l'obscurité. Près du sommet, vous avez vu de nombreuses formes sombres grouillant et se tordant, comme si la montagne elle-même était vivante. En plissant les yeux plus loin, vous avez remarqué que la contraction se déplaçait vers le bas de la montagne vers vous. Il semble que votre présence ne soit pas passée inaperçue. Vous avez préparé vos armes et vous vous êtes préparé à vous frayer un chemin jusqu'au sommet.  Le cri strident a percé à nouveau vos oreilles, et un démon massif avec une multitude de griffes acérées et d'ailes coriaces a atterrit devant vous. \"Vous osez vous approcher de mon nid?\" Vous pouviez à peine distinguer les mots de ses gémissements aigus: \"Je vais récolter vos cadavres et les donner en pâture à mes enfants!\" Vous vous êtes battu contre le démon et ses «enfants» jusqu'à ce que finalement, le démon n'en puisse plus. Le démon géant a hurlé une dernière fois, son timbre et son intensité se modulant sauvagement. Ne voulant pas se rapprocher de ses griffes volantes , vous avez attendu que la créature expire. Quand ce fût le cas, une immobilité a envahi la zone et le jour est apparu à nouveau dans le ciel au-dessus de vous. La vue est majestueuse, hormis le sang et les entrailles qui jonchent le pic. Vous avez repris votre souffle et puis lentement commencé à redescendre la montagne, convaincu que le mal qui se cachait ici ne dérangera plus Havrenuit. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{1}{2}"
+            }
+        },
         33: {
             "name": "Un peu de silence",
             "sections": {
@@ -158,9 +171,9 @@ export default {
               2: "Tandis que vous vous teniez dans la grotte de la montagne, sceptre à la main, la Voix vous a appelé.\" Vos intentions sont nobles. Vous me craignez et souhaitez me garder emprisonné. Je comprends, mais ce que vous faites ne conduira qu'au désastre et la ruine. Ce sceptre n'a pas été créé pour renforcer ma prison. Je l'ai créé! Je l'ai utilisé pour emprisonner l'un de mes plus grands ennemis - un être de mort et de haine. Je ne sais pas ce qui se passera lorsque vous apporterez cette chose à ma chambre , mais je peux vous garantir qu'il n'en sortira rien de bon! \" Vous avez bloqué les mensonges de la Voix de votre esprit et avant que la Voix ne puisse dire un autre mot, vous avez soulevé le sceptre et canalisé son pouvoir. La Voix cria une fois de plus, mais il n'y avait pas de cohérence dans le son - seulement de la douleur. Le brouillard commença à se dissiper et, pendant un moment, vous avez ressenti un soulagement, jusqu'à ce que vous vous rendiez compte que vous n'étiez plus dans la chambre d'écho, mais dans un endroit sombre et hostile. La Voix a retentit à nouveau, son timbre était désormais différent: \"Le pouvoir de la Voix est désormais mien! Vous serez le premier à y succomber!\" Après une bataille acharnée, vous avez coupé les cordes vocales de la Voix. La Voix ne parlera plus jamais. "
             },
             "stages": {
-                0: "{1}",
-                1: "{1}{2}",
-                2: "{1}{3}"
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{2}"
             }
         },
         34: {
