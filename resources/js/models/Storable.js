@@ -4,6 +4,9 @@ export default {
     store() {
         const valuesToStore = collect(this.fieldsToStore || [])
             .map((modelKey) => {
+                if (typeof modelKey === 'object') {
+                    modelKey = Object.keys(modelKey)[0];
+                }
                 return this[modelKey];
             }).all();
         store.set(this.key(), valuesToStore);
