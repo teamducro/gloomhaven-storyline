@@ -149,6 +149,238 @@ export default {
                 1: "{1}{2}",
                 2: "{1}{3}"
             }
+        },        
+        12: {
+            "name": "The Heart's Desire",
+            "sections": {
+                0: "Certains de vos contacts au Sanctuaire du Grand Chêne connaissent un temple dédié à une force invisible qui répondra à toutes les questions qui lui seront posées. C'est une occasion en or de rechercher le désir de votre cœur.",
+                1: "Lorsque vous avez finalement atteint le temple, une voix vous a dit \" Je ne peux pas accepter de visiteurs pour le moment \". Avant de pouvoir vous opposer, un groupe de constructions massives en pierre s'est matérialisé devant vous. Mais il n'y avait aucun moyen que vous retourniez vide Après avoir terminé les monstres, la voix vous a ensuite offert un choix entre une grande puissance, une grande richesse ou l'emplacement du nécromancien. ",
+                2: "Le choix évident était un grand pouvoir. Vous n'êtes pas intéressé par l'or ou la petite vengeance. La seule chose qui compte, c'est la force de mettre en œuvre votre volonté. La voix vous parle d'un sanctuaire dans les montagnes Copperneck qui contient une source de grande Puissance.",
+                3: "Quel genre de mercenaire seriez-vous si vous n'étiez pas payé? Une grande richesse est le choix évident ici. La voix vous parle d'une île perdue dans la mer Misty qui contient des trésors oubliés depuis longtemps.",
+                4: "Le pouvoir et la richesse ne signifient rien pendant que Jekserah respire encore. Vous insistez pour que la voix vous indique l'emplacement du néfaste Valrath. Elle vous parle d'un sanctuaire caché au fond du Corpsewood."
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}{2}",
+                2: "{0}{1}{3}",
+                3: "{0}{1}{4}"
+            }
+        },
+        13: {
+            "name": "L'Enchanteresse",
+            "sections": {
+                0: "Vous avez entendu des histoires d'une enchanteresse Aesther à Gloomhaven qui pourrait être en mesure de vous aider dans vos efforts. Cependant, elle est connue pour demander des tâches impossibles en échange de faveurs. Impossible ou non, vous avez besoin de son aide.",
+                1: "À la suite des rapports d'un Aesther dans le quartier des chaudières, vous l'avez trouvée dans une taverne abandonnée et décrépite: le Crooked Bone. Le nom de la femme Aesther est Hail et elle semblait un peu excentrique ... peut-être même un peu folle. Après quelques inquiète, elle a accepté de vous aider si vous pouviez récupérer un orbe du Frozen Hollow dans les montagnes de Copperneck. Les créatures à l'intérieur du creux n'étaient pas très heureuses de vous voir, mais vous les avez combattues malgré tout. Le dernier de vos adversaires étant mort, vous vous êtes approché de l'arrière de la chambre, où une petite sphère bleue flottait au-dessus du sol. Vous l'avez cachée dans votre sac à dos et vous êtes retourné à l'os tordu. La grêle semblait assez amoureuse de l'objet et peut-être un peu désinvolte à quel point dangereux un objet que vous aviez tenu à mains nues. La grêle a disparu avec la sphère. Après ce qui ressemble à des heures d'attente, elle est revenue et demande nonchalamment de faire des expériences sur vous. Vous êtes un peu surpris, mais elle vous assure que c'est sûr. Pour lar De grandes quantités d'or, elle peut désormais améliorer certaines de vos capacités. Plus important encore, elle est également prête à vous faire des faveurs. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}"
+            }
+        },
+        14: {
+            "name": "Puissance illimitée",
+            "sections": {
+                0: "Vous avez appris l'emplacement d'un sanctuaire dans les montagnes de Copperneck. Vos sources vous disent que ce sanctuaire est marqué des symboles de puissance et de force. Vous aimez tous les deux, donc le sanctuaire semble mériter d'être étudié." ,
+                1: "Le sanctuaire a été une épreuve. \" La force engendre la force \"a été inscrite dans les écrits anciens sur les murs. Vous avez démontré votre force en battant les gardiens du sanctuaire et en saisissant le sceau de la force. Le sceau a conféré une grande force à vous, mais vous a également montré des visions d'un étrange alphabet runique. Peut-être que les symboles ont une signification plus profonde? "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}"
+            }
+        },
+        15: {
+            "name": "There Be Dragons",
+            "sections": {
+                0: "Vous avez entendu parler de grandes créatures volantes dans les montagnes de Copperneck. Pourrait-il y avoir vraiment des dragons dans les montagnes? Cela vaut la peine d'être étudié, les dragons pourraient représenter une menace sérieuse pour la ville.",
+                1: "Votre objectif est l'Icecrag, la plus haute montagne des Coppernecks. Sur votre chemin, vous avez été pris en embuscade par un groupe d'Inox et de démons. Leur coexistence était curieuse, mais votre objectif ultime est plus loin.",
+                2: "L'ascension de la glace a été exténuante et ardue. Vous avez dû vous battre contre le froid, les loups et un nid de drakes en colère. Cependant, vous avez atteint le fond de cette affaire de dragon. Au sommet du sommet était une gigantesque aile lézard - qui pouvait parler. Il parlait d'une voix rocailleuse qui vous a surpris par son éloquence. En fait, il a demandé votre aide. \"Un groupe de Savvas m'a subjugué dans mon sommeil et a enlevé une de mes glandes de flammes, vraisemblablement pour étudier. Je ne peux pas laisser cette insulte impunie et j'apprécierais grandement que vous la retiriez de leur ville, tuant autant d'entre eux que possible dans le processus. Ou, si vous souhaitez être cliché \", dit la créature en soupirant," " tu pourrais simplement m'attaquer. Tuer le dragon, sauver la princesse, et tout ça. Sauf que je n'ai pas de princesse, et je ne suis pas un dragon - juste un drake qui a vécu longtemps et ne souhaite pas mettre fin à sa vie aujourd'hui Donc, si vous m'attaquez, je riposterai et vous mourrez assurément. \""
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{1}{2}"
+            }
+        },
+        16: {
+            "name": "Treasure Island",
+            "sections": {
+                0: "Vous avez entendu parler d'une île inconnue de la mer de Brume qui contiendrait de vastes richesses. Il est temps de louer un bateau.",
+                1: "L'île était infestée de Vermlings sauvages. Cependant, aucun Vermling ne peut se tenir entre vous et le trésor. Vous avez pris d'assaut l'île et découvert les restes d'un navire abandonné dans lequel les Vermlings se réfugiaient. Le navire contenait une pléthore d'or, Qui sait à quoi les Vermlings utilisaient l'or, mais vous avez une bonne idée de l'utilisation que vous en ferez."
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}"
+            }
+        },
+        17: {
+            "name": "Sewer Surfin",
+            "sections": {
+                0: "L'approvisionnement en eau de Gloomhaven semble avoir été empoisonné. On vous a demandé d'enquêter sur la source du poison. Malheureusement, cela signifie marcher péniblement dans les égouts. Beurk.",
+                1: "Vous avez sauté à contrecœur dans les égouts pour enquêter sur le poison. Vous avez tué une pléthore de serpents, de limon et de Vermlings. Les Vermlings avaient campé autour d'une citerne qui semblait être la source du poison, mais après enquête, aucune des les Vermlings morts avaient des poisons. Il y a un passage au fond de la pièce qui mène plus profondément ou, si vous pouviez respirer sous l'eau, vous pourriez entrer directement dans la citerne. Vous avez entendu parler d'une Enchanteresse à Gloomhaven qui peut être en mesure d'aider avec ce dernier morceau, mais on dit qu'elle est ... difficile à travailler. ",
+                2: "Vous avez rencontré l'enchanteresse Aesther, Hail, au Crooked Bone. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous aider à trouver un moyen de respirer sous-marin?",
+                3: "Vous avez trouvé un chemin vers la source du poison. Il est temps de purifier l'eau.",
+                4: "Les pompes à eau grouillaient de créatures impies et d'une corruption noire tordue. Au moment où le combat est terminé, les murs et le sol sont en désordre de suintement noir, mais vous avez réussi à tout sortir des pompes. il vibre plus, ce qui est un pas dans la bonne direction. Une simple vadrouille peut nettoyer les restes, maintenant que la présence sombre a été supprimée. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{1}{2}",
+                3: "{0}{1}{3}",
+                4: "{0}{1}{3}{4}"
+            }
+        },
+        18: {
+            "name": "Closing the Rift",
+            "sections": {
+                0: "Tout en exerçant une activité sectaire, vous avez rencontré une faille noire béante dans la réalité. Les cultistes effectuaient une sorte de rituel sur la faille qui produisait des formes cauchemardesques horribles de dents et de griffes dans cette réalité. Avec les cultistes et leurs les sbires sont morts, il semble que la faille sombre soit maintenant en sommeil. Ce n'est pas moins déconcertant, cependant. Vous vous êtes brièvement demandé si vous pouviez entrer vous-même dans la faille, mais trouver un moyen de fermer la faille est probablement la décision la plus prudente. enchanter à Gloomhaven qui peut en savoir plus sur ce truc interplanaire. Elle est connue pour demander des faveurs impossibles avant d'aider quelqu'un. ",
+                1: "Vous avez rencontré l'enchanteresse Aesther, Hail, au Crooked Bone. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous aider à trouver un moyen de fermer la faille?",
+                2: "Hail avait besoin d'un encensoir élémentaire de la crypte d'un élémentaliste mort depuis longtemps. Malheureusement, les sectateurs qui habitaient la crypte n'étaient pas désireux de s'en séparer. Vous avez escorté Hail à travers la crypte jusqu'à ce qu'elle puisse sécuriser l'encensoir, qu'elle utilisait pour expédier rapidement les morts-vivants restants. Elle est maintenant prête à faire face à la faille. ",
+                3: "... ou du moins elle l'était, avant que les nouveaux suzerains de démons de Gloohaven n'atteignent la ville et ne partent avec un artefact. La grêle était nécessaire. Si vous voulez que la grêle ferme la faille, vous devrez récupérer l'artefact du Premier Démon. Il n'en sera probablement pas content. ",
+                4: "Tout au long d'un rituel élaboré, vous et Hail êtes assaillis par des démons mécontents de votre intention de fermer la faille entre vos mondes. Cependant, une fois le rituel terminé, tous les démons sont aspirés dans la faille, et la larme se rétrécit en un point brillant, puis disparaît. En prime, vous semblez avoir considérablement aidé Hail dans ses recherches sur les améliorations. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{1}{2}",
+                3: "{0}{1}{2}{3}",
+                4: "{0}{1}{2}{4}"
+            }
+        },
+        19: {
+            "name": "Exorcisme",
+            "sections": {
+                0: "Dans la faille entre les royaumes, vous avez rencontré un puissant démon. {Br} L'assaillant dans son propre royaume sera difficile, mais il est temps qu'il périsse.",
+                1: "La faille a été neutralisée avant que vous puissiez affronter le démon dans son palais.",
+                2: "Attaquer un démon dans son propre royaume a peut-être été un peu téméraire. Le démon était invulnérable, mais vous avez réussi à briser un autel de verre noir qui semblait contenir l'essence du démon. Avec sa destruction, le démon principal s'est brisé en d'innombrables des éclats de pierre. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{2}"
+            }
+        },
+        20: {
+            "name": "L'artefact",
+            "sections": {
+                0: "Vous avez appris l'existence d'un puissant artefact près de la rivière Kiss du Serpent. Le trouver pourrait s'avérer très utile pour atteindre vos objectifs.",
+                1: "Le Temple des Éléments avait été dépassé par des sectateurs. Les sectateurs avaient utilisé le pouvoir de l'artefact pour améliorer leurs alliés démoniaques. Malgré leur force supplémentaire, les démons et leurs maîtres cultistes n'étaient pas en mesure de vous empêcher de détruire les autels protégeant l'artefact Avec les autels brisés, les démons ont disparu et la barrière de protection autour de l'artefact s'est dissipée. Vous vous êtes approché du centre du temple et avez tendu la main vers le vaisseau, mais vous vous êtes arrêté net. Vous avez senti une puissante obscurité émaner de la chose, et derrière cela, un une profonde tristesse. Cet artefact a été corrompu, et il semble presque en être conscient. Tous ces sentiments vous ont traversé l'esprit comme un avertissement. Il pourrait être utilisé pour un grand mal, mais vous battriez-vous pour ce mal ou contre lui? Après quelques efforts, vous avez utilisé un chiffon épais pour mettre le récipient dans votre sac. Peut-être serait-il préférable de l'amener à un enchanteur plutôt que de jouer avec lui-même."
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}"
+            }
+        },
+        21: {
+            "name": "Profondeurs plus profondes",
+            "sections": {
+                0: "En essayant de découvrir la source de l'eau empoisonnée de Gloomhaven, vous avez découvert un passage secret dans les égouts. Peut-être qu'il pourrait y avoir quelque chose d'intéressant à l'intérieur.",
+                1: "Le passage a été alarmé et a donné vie à une série de sentinelles mécaniques. Vous avez pu diviser et faire taire l'alarme, ce qui a stoppé les sentinelles sur leurs traces. Ces créations mécaniques peuvent être utiles à l'avenir, mais pour vous avez maintenant trouvé un moyen de contourner la partie la plus profonde de la citerne. Malheureusement, vous devrez toujours vous mouiller si vous voulez aller plus loin. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}"
+            }
+        },
+        22: {
+            "name": "Hearing Things",
+            "sections": {
+                0: "Les Inox et les démons que vous avez rencontrés sur le chemin de l'Icecag avaient des grattages grossiers mentionnant une \" voix \" parmi leurs affaires. Il y avait une grotte à proximité du col de la Montagne qui semblait vous appeler. Vous vous sentez un subtil et puissant envie d'explorer la grotte. ",
+                1: "La grotte contient une créature puissante, connue uniquement sous le nom de \" La Voix \". Grâce à ses conseils, vous avez pu restaurer la voix de la créature en plein essor et cliquetis. Elle vous demande de l'aider à se libérer de l'esclavage, mais les motifs de The Voice restent incertains. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}"
+            }
+        },
+        23: {
+            "name": "Regardez qui parle",
+            "sections": {
+                0: "La Voix est une créature si puissante. Vous devez en savoir plus sur ce qu'elle est et ses motivations.",
+                1: "Un érudit Quatryl vous a informé que la Voix peut être un puissant démon lié pour une bonne raison. Bien qu'il soit un peu incertain de l'exactitude du texte auquel il faisait référence, il vous a mis en garde contre la libération de la Voix. Il vous a ensuite pointé du doigt vers un sceptre qui pourrait renforcer le rituel de liaison. Vous l'avez récupéré d'un sanctuaire au bord du marais Lingering. Il était rempli d'énergies sombres, et la Voix vous a supplié de ne pas mettre le sceptre dans ses chambres. La Voix vous réclame ont été induits en erreur. Vous serez le seul à en décider. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}"
+            }
+        },
+        24: {
+            "name": "Let it Hail",
+            "sections": {
+                0: "Il y a quelque chose de profondément préoccupant à propos de l'artefact que vous avez récupéré dans le Temple des Éléments. Vous ressentez une obscurité puissante émanant de la chose, et derrière cela, une profonde tristesse. Cet artefact a été corrompu, et il semble presque être conscients de ce fait. Peut-être serait-il préférable de l’apporter à un enchanteur plutôt que de jouer avec lui-même. ",
+                1: "Vous avez rencontré l'enchanteresse Aesther, Hail, au Crooked Bone. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous en dire plus sur l'artefact? {br} Bien sûr qu'elle le pourrait. La grêle est étrange, mais brillante. Cependant, vous avez remis l'artefact au démon principal. Si vous voulez que la grêle l'inspecte, vous devrez le récupérer. Il a probablement gagné, je m'en sépare volontiers. ",
+                2: "Un enchanteur pourrait peut-être vous en dire plus sur l'artefact. Cependant, vous avez remis l'artefact au démon principal. Si vous voulez que l'enchanteur l'inspecte, vous devrez le récupérer du démon. Il ne s'en séparera probablement pas volontiers. ",
+                3: "Vous avez rencontré l'enchanteresse Aesther, Hail, au Crooked Bone. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous en dire plus sur l'artefact? ",
+                4: "Hail a souligné que l'artefact était corrompu. Elle vous a plutôt envoyé brusquement dans le plan de la nuit pour rompre l'harmonisation de l'artefact. Vous avez réussi à rompre la connexion. De retour dans votre propre plan d'existence, Hail a mentionné trois endroits qui dessinaient le pouvoir de l'artefact corrompu. Si vous voulez en savoir plus sur l'artefact, vous pouvez visiter ces emplacements. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{2}",
+                3: "{0}{3}",
+                4: "{0}{4}"
+            }
+        },
+        25: {
+            "name": "The Voice",
+            "sections": {
+                0: "À l'intérieur d'une grotte dans les montagnes de Copperneck, vous avez découvert une créature, connue uniquement sous le nom de \" La Voix \". La Voix a été piégée par une force puissante au plus profond de la terre. La Voix demande votre aide pour trouver des vaisseaux qui sont cruciaux en prenant une forme corporelle et en mettant fin à sa longue peine d'emprisonnement. ",
+                1: "Vous avez récupéré le premier navire d'une secte de Harrowers militaristes. La Voix vous a dirigé vers l'emplacement du deuxième navire.",
+                2: "L'arsenal de Savvas était un écrou difficile à casser, mais vous avez réussi à vous glisser, à voler les objets nécessaires et à sortir avant que le garde ne vous accable. Un seul vaisseau reste.",
+                3: "Le dernier vaisseau était gardé par un réseau d'anciennes défenses. La Voix vous a montré un moyen de désactiver les défenses. Aux extrémités opposées du réseau, vous avez activé les interrupteurs dans l'ordre indiqué par la Voix. Au centre du réseau, la glissade, révélant une échelle étroite descendant dans l'obscurité. \"Le chemin vers le tombeau est clair\", a déclaré la Voix. \"Allez maintenant, et récupérez ce qui est à moi.\" ",
+                4: "Même si vous pensiez que le réseau de défense était désactivé, la tombe était toujours piégée. Vous vous êtes à peine échappé avec votre vie et le vaisseau avec tact. Avec les trois vaisseaux à la main, vous êtes retourné à la grotte de la montagne et dans la chambre d'écho. Vous avez placé les petits pots en terre au centre de la caverne et attendez. Il était difficile de remarquer au début, mais, avec le temps, un léger tremblement dans le sol et les murs a commencé à croître jusqu'à ce qu'il soit difficile de le garder votre pied. Puis il y a eu un flash de lumière, et avant que vous ne flottiez une brume verte tourbillonnante en forme de longues vrilles entrelacées. \"J'avais presque oublié ce que c'était que de ne pas être emprisonné.\" Pour une fois que vous avez entendu la Voix non pas de l'intérieur de votre tête, mais émanant de la figure devant vous. \"C'est assez merveilleux. Je suis sûr qu'avant trop longtemps, j'oublierai l'horrible sentiment d'impuissance. Il est temps de quitter ce royaume \", a déclaré la Voix.\" Il y a beaucoup à remédier à mon absence prolongée. Mais d'abord, je dois vous remercier sincèrement. Je tiendrai ma part du marché et vous accorderai un grand pouvoir et une grande richesse. \" La lumière verte se propage et vous illumine, vous procurant la plus merveilleuse sensation de chaleur. Et puis elle est partie. Il ne reste plus qu'une tablette de pierre au centre de la pièce avec d'étranges marques cryptiques. Peut-être que ces marques peuvent être utile à l'avenir. ",
+                5: "Vous ne pouviez plus prendre la sonnerie dans vos oreilles. Cette maudite voix devait être réduite au silence et personne d'autre que vous n'alliez le faire."
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{1}{2}",
+                3: "{0}{1}{2}{3}",
+                4: "{0}{1}{2}{3}{4}",
+                5: "{0}{5}"
+            }
+        },
+        26: {
+            "name": "Armory Heist",
+            "sections": {
+                0: "Une créature puissante vous a ordonné de pénétrer dans un arsenal Savvas et de récupérer son trésor. Vous hésitez à pénétrer dans une installation aussi sécurisée, mais le commandement de la créature est fort.",
+                1: "Vous avez tué la puissante créature, coupant son influence sur vous. Vous ressentez toujours une envie de pénétrer dans l'armurerie, mais sans ordre direct, vous n'êtes pas assez audacieux pour essayer.",
+                2: "Vous avez tué les deux puissantes créatures, coupant leur influence sur vous. Vous n'avez plus aucune envie de pénétrer dans l'armurerie. C'est tout simplement trop fou.",
+                3: "La volonté de la créature a été accomplie. L'arsenal a été pillé et vous possédez ses trésors. Bien qu'il soit peut-être préférable de ne pas montrer votre visage autour de la ville de Savvas pendant quelques mois."
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{2}",
+                3: "{0}{3}"
+            }
+        },
+        27: {
+            "name": "Dragon Slayer",
+            "sections": {
+                0: "Au sommet de la Glace, l'Ancien Drake vous a demandé une faveur. N'a-t-il pas entendu parler de vous? Vous n'êtes pas en train de négocier avec des lézards. Il est temps de tuer un dragon.",
+                1: "À bien y penser, avoir un dragon dans vos dettes peut s'avérer utile. Vous avez décidé d'aider le Drake aîné. Après tout, c'était le premier drake à ne pas essayer de vous manger.",
+                2: "Vous n'aviez jamais imaginé qu'un 'dragon' serait aussi sournois qu'il serait en train de mourir. Malgré son sarcasme contraire, la ville vous paie assez bien pour avoir tué le Drake aîné."
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{2}"
+            }
+        },
+        28: {
+            "name": "Dark Souls",
+            "sections": {
+                0: "Vous avez récupéré l'artefact, comme le demandait le démon. Il est tout à fait clair que l'artefact a été corrompu. Si vous apportez cela au démon, il l'utilisera très certainement pour un grand et terrible mal.",
+                1: "Vous avez scellé la faille sans remettre l'artefact au démon. De toute évidence, il ne fallait pas lui faire confiance avec un objet aussi dangereux et puissant.",
+                2: "Vous avez remis l'artefact au démon, mais vous avez rapidement changé d'avis lorsque vous avez réalisé que son plan était de prendre le contrôle de Gloomhaven. Vous avez averti les gardes de la ville et les avez aidés à combattre l'invasion des démons.",
+                3: "Vous avez remis l'artefact au démon, qui a révélé qu'il utiliserait son pouvoir pour prendre le contrôle de Gloomhaven. Cela vous semblait bon. Ces imbéciles de Gloomhaven ne vous ont jamais apprécié de toute façon. Avec l'aide de l'armée des démons, vous avez limogé la garnison. et abattu le garde. Gloomhaven est maintenant sous la domination des démons. "
+            },
+            "stages": {
+                0: "{0}",
+                1: "{0}{1}",
+                2: "{0}{2}",
+                3: "{0}{3}"
+            }
         },
         29: {
             "name": "Danser avec le diable",
@@ -166,9 +398,9 @@ export default {
             }
         },
         30: {
-            "name": "Sous la mer",
+            "name": "Sous l'océan",
             "sections": {
-                0: "Avec l'aide de Tourmente, l'artefact a été nettoyé de son influence corruptrice. Cependant, Tourmente a mentionné trois emplacements qui tiraient le pouvoir de l'artefact corrompu. Si vous voulez en savoir plus sur l'artefact, vous voudrez peut-être visiter ces emplacements. Un de ces endroits est profondément sous la mer brumeuse. Malheureusement, votre anatomie ne comprend pas un ensemble de branchies. Peut-être que Tourmente pourrait avoir un moyen de remédier à cela? La connaissant, quelle la solution qu'elle trouvera sera p désagréable. ",
+                0: "Avec l'aide de Tourmente, l'artefact a été nettoyé de son influence corruptrice. Cependant, Tourmente a mentionné trois emplacements qui tiraient le pouvoir de l'artefact corrompu. Si vous voulez en savoir plus sur l'artefact, vous voudrez peut-être visiter ces emplacements. Un de ces endroits est profondément sous la mer de brume. Malheureusement, votre anatomie ne comprend pas un ensemble de branchies. Peut-être que Tourmente pourrait avoir un moyen de remédier à cela? La connaissant, quelle la solution qu'elle trouvera sera p désagréable. ",
                 1: "Plutôt désagréable était une hypothèse judicieuse. En tout cas, vous avez réussi à obtenir des appareils qui vous permettent de respirer librement sous l'eau. Il est temps d'enquêter sur l'un des endroits corrompus.",
                 2: "Votre plongée vous a mèné au fond d'une fosse. Vous avez du faire face à la résistance des ténébreux gardiens protégeant ce que vous êtes venus trouver ici, mais vous les avez combattu malgré tout. Vous avez poussé vers l'avant, laissant la fosse misérable. En regardant derrière vous, vous avez vu les silhouettes de Rôdeurs attendant dans l'ombre, mais ils ne vous ont pas poursuivi. Peut-être ont-ils eut peur de tout ce qui vous attendait. Vous êtes allé plus profondément à travers une fissure dans la terre jusqu'à ce que votre chemin se déplace soudainement vers le haut. Vous avez recraché votre orbe permettant de respirer sous l'eau, reconnaissant de pouvoir enfin respirer normalement et de vous reposer un peu. À travers l'obscurité devant vous, vous avez vu une vaste caverne, qui abritait une structure en pierre massive. Cette vue artificielle, si éloignée de tout ce que vous connaissez, vous a rempli d'une terreur irrationnelle et inquiétante. ",
                 3: "Vous vous êtes promené dans l'énorme structure de pierre sous les vagues pendant ce qui semble être des heures. Et juste au moment où vous aviez l'impression de ne pas pouvoir aller plus loin, vous avez senti sa présence. Quelque chose de vieux et de puissant vous attendait au bout de ce couloir . Il vous appellé, vous invitant à grimper dans sa gueule ouverte, embrassant la douce libération de l'infini. C'est ce que vous êtiez venu combattre, mais sans même l'avoir vu, vous avez êté rempli d'un désespoir sans fin. Vous ne pouviez même pas rêver de vaincre une telle une créature. Vous avez secoué la tête et essayé de vous prémunir contre ces sentiments négatifs - après tout, vous n'aviez pas avalé ces sphères respiratoires et nagé au fond de l'océan pour échouer maintenant. Vous deviez détruire cette menace. Vous avez pris votre courage à demain, ainsi que vos lames. Une fois l'oeil géant mort, tous ses serviteurs ont dépéri et sont morts avec lui. Heureusement, la salle a cessé de trembler elle aussi. Vous ne pouviez pas sortir de la même façon dont vous êtes entré, mais vous étiez libre d'explorer la structure plus en avant, sans l'effroi écrasant qui imprégnait l'air auparavant. C'est un long voyage, mais vous êtes sorti de la fosse, retourné au bateau et retourné à Havrenuit, résolus à ne plus jamais refaire ça. "
