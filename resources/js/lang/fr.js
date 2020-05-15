@@ -232,11 +232,11 @@ export default {
         18: {
             "name": "Fermer la faille",
             "sections": {
-                0: "Tout en exerçant une activité sectaire, vous avez rencontré une faille noire béante dans la réalité. Les cultistes effectuaient une sorte de rituel sur la faille qui produisait des formes cauchemardesques horribles de dents et de griffes dans cette réalité. Avec les cultistes et leurs les sbires sont morts, il semble que la faille sombre soit maintenant en sommeil. Ce n'est pas moins déconcertant, cependant. Vous vous êtes brièvement demandé si vous pouviez entrer vous-même dans la faille, mais trouver un moyen de fermer la faille est probablement la décision la plus prudente. enchanter à Havrenuit qui peut en savoir plus sur ce truc interplanaire. Elle est connue pour demander des faveurs impossibles avant d'aider quelqu'un. ",
-                1: "Vous avez rencontré l'enchanteresse Esther, Tourmente, au Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous aider à trouver un moyen de fermer la faille?",
-                2: "Tourmente avait besoin d'un encensoir élémentaire de la crypte d'un élémentaliste mort depuis longtemps. Malheureusement, les sectateurs qui habitaient la crypte n'étaient pas désireux de s'en séparer. Vous avez escorté Tourmente à travers la crypte jusqu'à ce qu'elle puisse sécuriser l'encensoir, qu'elle utilisait pour expédier rapidement les morts-vivants restants. Elle est maintenant prête à faire face à la faille. ",
-                3: "... ou du moins elle l'était, avant que les nouveaux suzerains de démons de Havrenuit n'atteignent la ville et ne partent avec un artefact. La grêle était nécessaire. Si vous voulez que la grêle ferme la faille, vous devrez récupérer l'artefact du Premier Démon. Il n'en sera probablement pas content. ",
-                4: "Tout au long d'un rituel élaboré, vous et Tourmente êtes assaillis par des démons mécontents de votre intention de fermer la faille entre vos mondes. Cependant, une fois le rituel terminé, tous les démons sont aspirés dans la faille, et la larme se rétrécit en un point brillant, puis disparaît. En prime, vous semblez avoir considérablement aidé Tourmente dans ses recherches sur les améliorations. "
+                0: "Tout en exerçant une activité pour le compte des cultistes, vous avez rencontré une faille noire béante dans la réalité. Les cultistes effectuaient une sorte de rituel sur la faille qui laissait entrer dans cette réalité des formes cauchemardesques horribles, pleines de dents et de griffes. Une fois les cultistes et leurs  sbires morts, il semble que la faille sombre soit maintenant en sommeil. Ce n'est pas moins déconcertant, cependant. Vous vous êtes brièvement demandé si vous pouviez entrer vous-même dans la faille, mais trouver un moyen de fermer la faille est probablement la décision la plus prudente. Une enchanteresse à Havrenuit pourrait en savoir plus sur ce truc interplanaire. Elle est connue pour demander des faveurs impossibles avant d'aider quelqu'un. ",
+                1: "Vous avez rencontré l'enchanteresse Esther, Tourmente, à l'Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses quêtes. Peut-être qu'elle peut maintenant vous aider à trouver un moyen de fermer la faille?",
+                2: "Tourmente avait besoin d'un encensoir élémentaire de la crypte d'un élémentaliste mort depuis longtemps. Malheureusement, les cultistes qui habitaient la crypte n'étaient pas désireux de s'en séparer. Vous avez escorté Tourmente à travers la crypte jusqu'à ce qu'elle puisse sécuriser l'encensoir, qu'elle a utilisé pour se débarasser rapidement des morts-vivants restants. Elle est maintenant prête à faire face à la faille. ",
+                3: "... ou du moins elle l'était, avant que les nouveaux suzerains de démons de Havrenuit n'atteignent la ville et ne partent avec un artefact. Si vous voulez que Tourmente ferme la faille, vous devrez récupérer l'artefact du Démon Majeur. Il n'en sera probablement pas content. ",
+                4: "Tout au long d'un rituel élaboré, vous et Tourmente êtes assaillis par des démons mécontents de votre intention de fermer la faille entre vos mondes. Cependant, une fois le rituel terminé, tous les démons sont aspirés dans la faille, et la déchirure s'est rétrécit en un point brillant, avant de disparaitre. En prime, vous semblez avoir considérablement aidé Tourmente dans ses recherches sur les améliorations. "
             },
             "stages": {
                 0: "{0}",
@@ -249,9 +249,9 @@ export default {
         19: {
             "name": "Exorcisme",
             "sections": {
-                0: "Dans la faille entre les royaumes, vous avez rencontré un puissant démon. {Br} L'assaillant dans son propre royaume sera difficile, mais il est temps qu'il périsse.",
+                0: "Dans la faille entre les royaumes, vous avez rencontré un puissant démon. {Br} L'attaquer dans son propre royaume sera difficile, mais il est temps qu'il périsse.",
                 1: "La faille a été neutralisée avant que vous puissiez affronter le démon dans son palais.",
-                2: "Attaquer un démon dans son propre royaume a peut-être été un peu téméraire. Le démon était invulnérable, mais vous avez réussi à briser un autel de verre noir qui semblait contenir l'essence du démon. Avec sa destruction, le démon principal s'est brisé en d'innombrables des éclats de pierre. "
+                2: "Attaquer un démon dans son propre royaume a peut-être été un peu téméraire. Le démon était invulnérable, mais vous avez réussi à briser un autel de verre noir qui semblait contenir l'essence du démon. Avec sa destruction, le démon majeur s'est brisé en d'innombrables éclats de pierre. "
             },
             "stages": {
                 0: "{0}",
@@ -263,7 +263,7 @@ export default {
             "name": "L'artefact",
             "sections": {
                 0: "Vous avez appris l'existence d'un puissant artefact près de la Rivière du Baiser du Serpent. Le trouver pourrait s'avérer très utile pour atteindre vos objectifs.",
-                1: "Le Temple des Éléments avait été dépassé par des sectateurs. Les sectateurs avaient utilisé le pouvoir de l'artefact pour améliorer leurs alliés démoniaques. Malgré leur force supplémentaire, les démons et leurs maîtres cultistes n'étaient pas en mesure de vous empêcher de détruire les autels protégeant l'artefact Avec les autels brisés, les démons ont disparu et la barrière de protection autour de l'artefact s'est dissipée. Vous vous êtes approché du centre du temple et avez tendu la main vers le vaisseau, mais vous vous êtes arrêté net. Vous avez senti une puissante obscurité émaner de la chose, et derrière cela, un une profonde tristesse. Cet artefact a été corrompu, et il semble presque en être conscient. Tous ces sentiments vous ont traversé l'esprit comme un avertissement. Il pourrait être utilisé pour un grand mal, mais vous battriez-vous pour ce mal ou contre lui? Après quelques efforts, vous avez utilisé un chiffon épais pour mettre le récipient dans votre sac. Peut-être serait-il préférable de l'amener à un enchanteur plutôt que de jouer avec lui-même."
+                1: "Le Temple des Éléments était submergé par des cultistes. Les cultistes avaient utilisé le pouvoir de l'artefact pour renforcer leurs alliés démoniaques. Malgré leur force supplémentaire, les démons et leurs maîtres cultistes n'étaient pas en mesure de vous empêcher de détruire les autels protégeant l'artefact. Une fois les autels brisés, les démons ont disparu et la barrière de protection autour de l'artefact s'est dissipée. Vous vous êtes approché du centre du temple et avez tendu la main vers l'urne, mais vous vous êtes arrêté net. Vous avez senti une puissante obscurité émaner de la chose, et derrière cela, une profonde tristesse. Cet artefact a été corrompu, et il semble presque en être conscient. Toutes ces sensations vous ont traversé l'esprit comme un avertissement. L'artefact pourrait être utilisé pour faire le mal, mais vous battriez-vous pour ce mal ou contre lui? Après quelques efforts, vous avez utilisé un chiffon épais pour mettre le récipient dans votre sac. Peut-être serait-il préférable de l'amener à un enchanteur plutôt que de jouer avec."
             },
             "stages": {
                 0: "{0}",
@@ -274,7 +274,7 @@ export default {
             "name": "De plus en plus profond",
             "sections": {
                 0: "En essayant de découvrir la source de l'eau empoisonnée de Havrenuit, vous avez découvert un passage secret dans les égouts. Peut-être qu'il pourrait y avoir quelque chose d'intéressant à l'intérieur.",
-                1: "Le passage a été alarmé et a donné vie à une série de sentinelles mécaniques. Vous avez pu diviser et faire taire l'alarme, ce qui a stoppé les sentinelles sur leurs traces. Ces créations mécaniques peuvent être utiles à l'avenir, mais pour vous avez maintenant trouvé un moyen de contourner la partie la plus profonde de la citerne. Malheureusement, vous devrez toujours vous mouiller si vous voulez aller plus loin. "
+                1: "Les mécanismes présents dans ce passage ont été activés par votre présence et ont donné vie à des sentinelles mécaniques. Vous avez pu faire taire l'alarme, ce qui a stoppé les sentinelles. Ces créations mécaniques peuvent être utiles à l'avenir, mais vous avez surtout trouvé un moyen d'atteindre la partie la plus profonde de la citerne. Malheureusement, vous devrez toujours vous mouiller si vous voulez aller plus loin. "
             },
             "stages": {
                 0: "{0}",
@@ -284,8 +284,8 @@ export default {
         22: {
             "name": "Lorsqu'on entend des Voix",
             "sections": {
-                0: "Les Inox et les démons que vous avez rencontrés sur le chemin du Rideau de Glace avaient des grattages grossiers mentionnant une \" Voix \" parmi leurs affaires. Il y avait une grotte à proximité du col de la Montagne qui semblait vous appeler. Vous vous sentez un subtil et puissant envie d'explorer la grotte. ",
-                1: "La grotte contient une créature puissante, connue uniquement sous le nom de \" La Voix \". Grâce à ses conseils, vous avez pu restaurer la Voix de la créature en plein essor et cliquetis. Elle vous demande de l'aider à se libérer de l'esclavage, mais les motifs de La Voix restent incertains. "
+                0: "Les Inox et les démons que vous avez rencontrés sur le chemin du Rideau de Glace avaient des inscriptions grossières mentionnant une \" Voix \" parmi leurs affaires. Il y avait une grotte à proximité du col de la Montagne qui semblait vous appeler. Vous vous sentez une envie subtile et puissante d'explorer la grotte. ",
+                1: "La grotte contient une créature puissante, connue uniquement sous le nom de \" La Voix \". Elle vous demande de l'aider à se libérer de l'esclavage, mais les motifs de La Voix restent incertains. "
             },
             "stages": {
                 0: "{0}",
@@ -295,8 +295,8 @@ export default {
         23: {
             "name": "Une requête à Voix haute",
             "sections": {
-                0: "La Voix est une créature si puissante. Vous devez en savoir plus sur ce qu'elle est et ses motivations.",
-                1: "Un érudit Quatryl vous a informé que la Voix peut être un puissant démon lié pour une bonne raison. Bien qu'il soit un peu incertain de l'exactitude du texte auquel il faisait référence, il vous a mis en garde contre la libération de la Voix. Il vous a ensuite pointé du doigt vers un Sceptre qui pourrait renforcer le rituel de liaison. Vous l'avez récupéré d'un sanctuaire au bord du marais Lingering. Il était rempli d'énergies sombres, et la Voix vous a supplié de ne pas mettre le Sceptre dans ses chambres. La Voix vous réclame ont été induits en erreur. Vous serez le seul à en décider. "
+                0: "La Voix est une créature tellement puissante. Vous devez en savoir plus sur ce qu'elle est et ses motivations.",
+                1: "Un érudit Quatryl vous a informé que la Voix pourrait être un puissant démon lié pour une bonne raison. Bien qu'il soit un peu incertain de l'exactitude du texte auquel il faisait référence, il vous a mis en garde contre la libération de la Voix. Il vous a ensuite pointé du doigt vers un Sceptre qui pourrait renforcer le rituel de liaison. Vous l'avez récupéré d'un sanctuaire au bord du marais Stagnant. Il était rempli d'énergies sombres, et la Voix vous a supplié de ne pas mettre le Sceptre dans la chambre des échos. La Voix vous clame que vous avez été induits en erreur. Vous serez seul à en décider. "
             },
             "stages": {
                 0: "{0}",
@@ -306,11 +306,11 @@ export default {
         24: {
             "name": "L'aide de Tourmente",
             "sections": {
-                0: "Il y a quelque chose de profondément préoccupant à propos de l'artefact que vous avez récupéré dans le Temple des Éléments. Vous ressentez une obscurité puissante émanant de la chose, et derrière cela, une profonde tristesse. Cet artefact a été corrompu, et il semble presque être conscients de ce fait. Peut-être serait-il préférable de l’apporter à un enchanteur plutôt que de jouer avec lui-même. ",
-                1: "Vous avez rencontré l'enchanteresse Esther, Tourmente, au Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous en dire plus sur l'artefact? {br} Bien sûr qu'elle le pourrait.Tourmente est étrange, mais brillante. Cependant, vous avez remis l'artefact au démon principal. Si vous voulez que la grêle l'inspecte, vous devrez le récupérer. Il a probablement gagné, je m'en sépare volontiers. ",
-                2: "Un enchanteur pourrait peut-être vous en dire plus sur l'artefact. Cependant, vous avez remis l'artefact au démon principal. Si vous voulez que l'enchanteur l'inspecte, vous devrez le récupérer du démon. Il ne s'en séparera probablement pas volontiers. ",
-                3: "Vous avez rencontré l'enchanteresse Esther, Tourmente, au Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous en dire plus sur l'artefact? ",
-                4: "Tourmente a souligné que l'artefact était corrompu. Elle vous a plutôt envoyé brusquement dans le plan de la nuit pour rompre l'harmonisation de l'artefact. Vous avez réussi à rompre la connexion. De retour dans votre propre plan d'existence, Tourmente a mentionné trois endroits qui dessinaient le pouvoir de l'artefact corrompu. Si vous voulez en savoir plus sur l'artefact, vous pouvez visiter ces emplacements. "
+                0: "Il y a quelque chose de profondément préoccupant à propos de l'artefact que vous avez récupéré dans le Temple des Éléments. Vous ressentez une obscurité puissante émanant de la chose, et derrière cela, une profonde tristesse. Cet artefact a été corrompu, et il semble presque être conscients de ce fait. Peut-être serait-il préférable de l’apporter à un enchanteur plutôt que de jouer avec. ",
+                1: "Vous avez rencontré l'enchanteresse Esther, Tourmente, à l'Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses quêtes. Cependant, vous avez remis l'artefact au démon majeur. Si vous voulez que Tourmente l'inspecte, vous devrez le récupérer. Il ne voudra probablement pas s'en séparer de bon coeur. ",
+                2: "Un enchanteur pourrait peut-être vous en dire plus sur l'artefact. Cependant, vous avez remis l'artefact au démon majeur. Si vous voulez que l'enchanteur l'inspecte, vous devrez le récupérer du démon. Il ne voudra probablement pas s'en séparer de bon coeur.",
+                3: "Vous avez rencontré l'enchanteresse Esther, Tourmente, à l'Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses quêtes. Peut-être qu'elle peut maintenant vous en dire plus sur l'artefact? ",
+                4: "Tourmente a souligné que l'artefact était corrompu. Elle vous a envoyé plutôt brusquement dans la Dimension des ténèbres pour rompre l'enchentement de l'artefact. Vous avez réussi à rompre la connexion. De retour dans votre propre plan d'existence, Tourmente a mentionné trois endroits qui puisaient le pouvoir de l'artefact corrompu. Si vous voulez en savoir plus sur l'artefact, vous pouvez visiter ces emplacements. "
             },
             "stages": {
                 0: "{0}",
@@ -323,12 +323,12 @@ export default {
         25: {
             "name": "La Voix",
             "sections": {
-                0: "À l'intérieur d'une grotte dans les Crêtes de Cuivre, vous avez découvert une créature, connue uniquement sous le nom de \" La Voix \". La Voix a été piégée par une force puissante au plus profond de la terre. La Voix demande votre aide pour trouver des vaisseaux qui sont cruciaux en prenant une forme corporelle et en mettant fin à sa longue peine d'emprisonnement. ",
-                1: "Vous avez récupéré la première urne  d'une secte d'Infestateurs . La Voix vous a dirigé vers l'emplacement du deuxième navire.",
-                2: "L'arsenal de Savvas était un écrou difficile à casser, mais vous avez réussi à vous glisser, à voler les objets nécessaires et à sortir avant que le garde ne vous accable. Une seule urne reste.",
-                3: "La derniere urne était gardé par un réseau d'anciennes défenses. La Voix vous a montré un moyen de désactiver les défenses. Aux extrémités opposées du réseau, vous avez activé les interrupteurs dans l'ordre indiqué par la Voix. Au centre du réseau, la glissade, révélant une échelle étroite descendant dans l'obscurité. \"Le chemin vers le tombeau est clair\", a déclaré la Voix. \"Allez maintenant, et récupérez ce qui est à moi.\" ",
-                4: "Même si vous pensiez que le réseau de défense était désactivé, la tombe était toujours piégée. Vous vous êtes à peine échappé avec votre vie et l'urne avec tact. Avec les trois urne à la main, vous êtes retourné à la grotte de la montagne et dans la chambre d'écho. Vous avez placé les petits pots en terre au centre de la caverne et attendez. Il était difficile de remarquer au début, mais, avec le temps, un léger tremblement dans le sol et les murs a commencé à croître jusqu'à ce qu'il soit difficile de le garder votre pied. Puis il y a eu un flash de lumière, et avant que vous ne flottiez une brume verte tourbillonnante en forme de longues vrilles entrelacées. \"J'avais presque oublié ce que c'était que de ne pas être emprisonné.\" Pour une fois que vous avez entendu la Voix non pas de l'intérieur de votre tête, mais émanant de la figure devant vous. \"C'est assez merveilleux. Je suis sûr qu'avant trop longtemps, j'oublierai l'horrible sentiment d'impuissance. Il est temps de quitter ce royaume \", a déclaré la Voix.\" Il y a beaucoup à remédier à mon absence prolongée. Mais d'abord, je dois vous remercier sincèrement. Je tiendrai ma part du marché et vous accorderai un grand pouvoir et une grande richesse. \" La lumière verte se propage et vous illumine, vous procurant la plus merveilleuse sensation de chaleur. Et puis elle est partie. Il ne reste plus qu'une tablette de pierre au centre de la pièce avec d'étranges marques cryptiques. Peut-être que ces marques peuvent être utile à l'avenir. ",
-                5: "Vous ne pouviez plus prendre la sonnerie dans vos oreilles. Cette maudite Voix devait être réduite au silence et personne d'autre que vous n'alliez le faire."
+                0: "À l'intérieur d'une grotte dans les Crêtes de Cuivre, vous avez découvert une créature, connue uniquement sous le nom de \" La Voix \". La Voix a été piégée par une force puissante au plus profond de la terre. La Voix demande votre aide pour trouver des urnes qui lui permettront de prendre une forme corporelle, mettant fin à sa longue peine d'emprisonnement. ",
+                1: "Vous avez récupéré la première urne des mains d'une secte d'Infestateurs. La Voix vous a dirigé vers l'emplacement de la seconde.",
+                2: "L'arsenal de Savvas était difficile à briser, mais vous avez réussi à vous y glisser, à voler les objets nécessaires et à sortir avant que la garde ne vous en empêche. Il ne reste plus qu'une seule urne.",
+                3: "La derniere urne était gardée par un réseau d'anciennes défenses. La Voix vous a montré un moyen de désactiver les défenses. Aux extrémités opposées du réseau, vous avez activé les interrupteurs dans l'ordre indiqué par la Voix. Au centre du réseau, une trappe a coulissé, révélant une échelle étroite descendant dans l'obscurité. \"Le chemin vers le tombeau est clair\", a déclaré la Voix. \"Allez maintenant, et récupérez ce qui est à moi.\" ",
+                4: "Même si vous pensiez que le réseau de défense était désactivé, la tombe était toujours piégée. Vous vous êtes à peine échappés, vivants et avec les urnes intactes. Avec les trois urne à la main, vous êtes retourné à la grotte de la montagne et dans la chambre des échos. Vous avez placé les petits pots en terre au centre de la caverne et avez attendu. C'était difficile de le remarquer au début, mais, après un certain temps, un léger tremblement dans le sol et dans les murs a commencé à croître jusqu'à ce qu'il soit difficile de rester debout. Puis il y a eu un flash de lumière, avant que vous ne vous retrouviez à flotter dans une brume verte tourbillonnante en forme de longues vrilles entrelacées. \"J'avais presque oublié ce que c'était que de ne pas être emprisonné.\" Pour une fois, vous avez entendu la Voix non pas de l'intérieur de votre tête, mais émanant de la figure devant vous. \"C'est assez merveilleux. Je suis sûr que d'ici peu j'oublierai cet horrible sentiment d'impuissance. Il est temps de quitter ce royaume \", a déclaré la Voix.\" Il y a beaucoup de chose à rattraper. Mais d'abord, je dois vous remercier sincèrement. Je tiendrai ma part du marché et vous accorderai un grand pouvoir et une grande richesse. \" La lumière verte se propage et vous illumine, vous procurant la plus merveilleuse sensation de chaleur. Et puis elle est partie. Il ne reste plus qu'une tablette de pierre au centre de la pièce avec d'étranges marques cryptiques. Peut-être que ces marques peuvent être utiles à l'avenir. ",
+                5: "Vous n'en pouviez plus d'entendre ce son dans vos oreilles. Cette maudite Voix devait être réduite au silence et personne d'autre que vous n'aurait pu le faire."
             },
             "stages": {
                 0: "{0}",
@@ -342,10 +342,10 @@ export default {
         26: {
             "name": "Le vol de l'Armurerie",
             "sections": {
-                0: "Une créature puissante vous a ordonné de pénétrer dans un arsenal Savvas et de récupérer son trésor. Vous hésitez à pénétrer dans une installation aussi sécurisée, mais le commandement de la créature est fort.",
-                1: "Vous avez tué la puissante créature, coupant son influence sur vous. Vous ressentez toujours une envie de pénétrer dans l'armurerie, mais sans ordre direct, vous n'êtes pas assez audacieux pour essayer.",
-                2: "Vous avez tué les deux puissantes créatures, coupant leur influence sur vous. Vous n'avez plus aucune envie de pénétrer dans l'armurerie. C'est tout simplement trop fou.",
-                3: "La volonté de la créature a été accomplie. L'arsenal a été pillé et vous possédez ses trésors. Bien qu'il soit peut-être préférable de ne pas montrer votre visage autour de la ville de Savvas pendant quelques mois."
+                0: "Une créature puissante vous a ordonné de pénétrer dans un arsenal Savvas et de récupérer son trésor. Vous hésitez à pénétrer dans une installation aussi sécurisée, mais l'injonction de la créature est forte.",
+                1: "Vous avez tué la puissante créature, mettant un terme à son influence sur vous. Vous ressentez toujours une envie de pénétrer dans l'armurerie, mais sans ordre direct, vous n'êtes pas assez audacieux pour essayer.",
+                2: "Vous avez tué les deux puissantes créatures, mettant un terme à leurs influences sur vous. Vous n'avez plus aucune envie de pénétrer dans l'armurerie. C'est tout simplement trop fou.",
+                3: "La volonté de la créature a été accomplie. L'arsenal a été pillé et vous possédez ses trésors. Bien qu'il soit peut-être préférable de ne pas montrer votre visage autour de la ville Savvas pendant quelques mois."
             },
             "stages": {
                 0: "{0}",
@@ -357,9 +357,9 @@ export default {
         27: {
             "name": "Tueur de Dragon",
             "sections": {
-                0: "Au sommet de la Glace, l'Ancien Wyverne vous a demandé une faveur. N'a-t-il pas entendu parler de vous? Vous n'êtes pas en train de négocier avec des lézards. Il est temps de tuer un dragon.",
-                1: "À bien y penser, avoir un dragon dans vos dettes peut s'avérer utile. Vous avez décidé d'aider le Wyverne aîné. Après tout, c'était le premier Wyverne à ne pas essayer de vous manger.",
-                2: "Vous n'aviez jamais imaginé qu'un 'dragon' serait aussi sournois qu'il serait en train de mourir. Malgré son sarcasme contraire, la ville vous paie assez bien pour avoir tué le Wyverne aîné."
+                0: "Au sommet du Rideau de Glace, l'Ancienne Wyverne vous a demandé une faveur. N'a-t-elle pas entendu parler de vous? Vous n'êtes pas en train de négocier avec des lézards. Il est temps de tuer un dragon.",
+                1: "À bien y penser, avoir un dragon dans vos dettes peut s'avérer utile. Vous avez décidé d'aider l'ancienne Wyverne. Après tout, c'était la première Wyverne à ne pas essayer de vous manger.",
+                2: "Vous n'aviez jamais imaginé qu'un 'dragon' serait aussi sournois lorsqu'il est en train de mourir. Malgré ses sarcasmes, la ville vous a plutôt bien payé pour avoir tué l'ancienne Wyverne."
             },
             "stages": {
                 0: "{0}",
@@ -373,7 +373,7 @@ export default {
                 0: "Vous avez récupéré l'artefact, comme le demandait le démon. Il est tout à fait clair que l'artefact a été corrompu. Si vous apportez cela au démon, il l'utilisera très certainement pour un grand et terrible mal.",
                 1: "Vous avez scellé la faille sans remettre l'artefact au démon. De toute évidence, il ne fallait pas lui faire confiance avec un objet aussi dangereux et puissant.",
                 2: "Vous avez remis l'artefact au démon, mais vous avez rapidement changé d'avis lorsque vous avez réalisé que son plan était de prendre le contrôle de Havrenuit. Vous avez averti les gardes de la ville et les avez aidés à combattre l'invasion des démons.",
-                3: "Vous avez remis l'artefact au démon, qui a révélé qu'il utiliserait son pouvoir pour prendre le contrôle de Havrenuit. Cela vous semblait bon. Ces imbéciles de Havrenuit ne vous ont jamais apprécié de toute façon. Avec l'aide de l'armée des démons, vous avez limogé la garnison. et abattu le garde. Havrenuit est maintenant sous la domination des démons. "
+                3: "Vous avez remis l'artefact au démon, qui a révélé qu'il utiliserait son pouvoir pour prendre le contrôle de Havrenuit. Un bon plan selon vous. Ces imbéciles de Havrenuit ne vous ont jamais apprécié de toute façon. Avec l'aide de l'armée des démons, vous avez décimé la garnison et abattu la garde. Havrenuit est maintenant sous la domination des démons. "
             },
             "stages": {
                 0: "{0}",
@@ -388,7 +388,7 @@ export default {
                 0: "Vous avez récupéré l'artefact, comme l'a demandé le démon. Il est clair que l'artefact a été corrompu. Si vous apportez cela au démon, il l'utilisera très certainement pour un grand et terrible mal. Mais vous êtes prêt à trahir le démon et à combattre ce mal, quel qu'il soit. ",
                 1: "Pourquoi prendre le risque? Vous avez scellé la faille sans remettre l'artefact au démon. De toute évidence, il ne fallait pas lui faire confiance avec un objet aussi dangereux et puissant.",
                 2: "Après réflexion, l'offre du démon semblait plutôt séduisante. Vous vous êtes rangé du côté du démon, avez massacré la garde de la ville et installé les nouveaux suzerains du démon. Havrenuit est maintenant sous la domination des démons.",
-                3: "Vous saviez que ce serait mauvais ... mais une invasion démoniaque de Havrenuit n'était pas ce que vous aviez en tête. C'était trop pour vous. Vous avez échappé à l'antre du démon et avez couru pour avertir le garde de la ville juste à temps. Les démons ont assailli la porte en nombre, mais vous avez pu tenir assez longtemps pour épuiser le démon principal. Il a réussi à franchir la porte, mais vous l'avez abattu et dispersé ses armées. Havrenuit est en sécurité pour l'instant , mais vous voudrez peut-être reconsidérer votre politique consistant à remettre de puissants artefacts à des créatures maléfiques. "
+                3: "Vous saviez que ce serait mauvais ... mais une invasion démoniaque de Havrenuit n'était pas ce que vous aviez en tête. C'était trop pour vous. Vous avez échappé à l'antre du démon et avez couru pour avertir la garde de la ville juste à temps. Les démons ont assailli la porte en nombre, mais vous avez pu tenir assez longtemps pour épuiser le démon principal. Il a réussi à franchir la porte, mais vous l'avez abattu et avez dispersé ses armées. Havrenuit est en sécurité pour l'instant , mais vous voudrez peut-être reconsidérer votre politique consistant à remettre de puissants artefacts à des créatures maléfiques. "
             },
             "stages": {
                 0: "{0}",
