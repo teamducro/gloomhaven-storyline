@@ -108,21 +108,7 @@
                             </template>
                         </template>
 
-                        <div class="my-2"
-                             v-if="scenario.isComplete() && !scenario.rewards.isEmpty()">
-                            <h2 class="text-white">
-                                {{ scenario.rewards.count() > 1 ? 'Rewards' : 'Reward' }}
-                            </h2>
-                            <template v-if="typeof scenario.rewards.first() === 'string'">
-                                <span>{{ scenario.rewards.join(', ') }}</span>
-                            </template>
-                            <template v-if="Array.isArray(scenario.rewards.first())"
-                                      v-for="(rewards, index) in scenario.rewards">
-                                <div>Conclusion <span class="uppercase">{{ n2l.convert(index) }}</span>:
-                                    {{ rewards.join(', ') }}
-                                </div>
-                            </template>
-                        </div>
+                        <rewards :scenario="scenario"></rewards>
 
                         <div class="mb-3 flex flex-col items-start">
                             <template v-for="(quest, index) in scenario.quests">
@@ -233,11 +219,11 @@
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../../models/ScenarioState";
     import PreloadImage from "../../services/PreloadImage";
-    import N2l from "../../services/N2l";
     import ScenarioNumber from "../elements/ScenarioNumber";
+    import Rewards from "../presenters/scenario/Rewards";
 
     export default {
-        components: {ScenarioNumber},
+        components: {Rewards, ScenarioNumber},
         data() {
             return {
                 scenario: null,
@@ -247,8 +233,7 @@
                 treasuresVisible: false,
                 scenarioRepository: new ScenarioRepository(),
                 achievementRepository: new AchievementRepository(),
-                preloadImage: new PreloadImage(),
-                n2l: new N2l()
+                preloadImage: new PreloadImage()
             }
         },
         mounted() {
