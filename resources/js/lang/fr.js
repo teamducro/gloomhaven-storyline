@@ -151,7 +151,7 @@ export default {
             }
         },        
         12: {
-            "name": "The Heart's Desire",
+            "name": "Ce que le coeur veux",
             "sections": {
                 0: "Certains de vos contacts au Sanctuaire du Grand Chêne connaissent un temple dédié à une force invisible qui répondra à toutes les questions qui lui seront posées. C'est une occasion en or de rechercher le désir de votre cœur.",
                 1: "Lorsque vous avez finalement atteint le temple, une Voix vous a dit \" Je ne peux pas accepter de visiteurs pour le moment \". Avant de pouvoir vous opposer, un groupe de constructions massives en pierre s'est matérialisé devant vous. Mais il n'y avait aucun moyen que vous retourniez vide Après avoir terminé les monstres, la Voix vous a ensuite offert un choix entre une grande puissance, une grande richesse ou l'emplacement du nécromancien. ",
@@ -178,7 +178,7 @@ export default {
             }
         },
         14: {
-            "name": "Puissance illimitée",
+            "name": "Une puissance illimitée",
             "sections": {
                 0: "Vous avez appris l'emplacement d'un sanctuaire dans les Crêtes de Cuivre. Vos sources vous disent que ce sanctuaire est marqué des symboles de puissance et de force. Vous aimez tous les deux, donc le sanctuaire semble mériter d'être étudié." ,
                 1: "Le sanctuaire a été une épreuve. \" La force engendre la force \"a été inscrite dans les écrits anciens sur les murs. Vous avez démontré votre force en battant les gardiens du sanctuaire et en saisissant le sceau de la force. Le sceau a conféré une grande force à vous, mais vous a également montré des visions d'un étrange alphabet runique. Peut-être que les symboles ont une signification plus profonde? "
@@ -189,7 +189,7 @@ export default {
             }
         },
         15: {
-            "name": "There Be Dragons",
+            "name": "Une histoire de Dragon",
             "sections": {
                 0: "Vous avez entendu parler de grandes créatures volantes dans les Crêtes de Cuivre. Pourrait-il y avoir vraiment des dragons dans les montagnes? Cela vaut la peine d'être étudié, les dragons pourraient représenter une menace sérieuse pour la ville.",
                 1: "Votre objectif est l'Icecrag, la plus haute montagne des Coppernecks. Sur votre chemin, vous avez été pris en embuscade par un groupe d'Inox et de démons. Leur coexistence était curieuse, mais votre objectif ultime est plus loin.",
@@ -202,7 +202,7 @@ export default {
             }
         },
         16: {
-            "name": "Treasure Island",
+            "name": "L'ile au trésor",
             "sections": {
                 0: "Vous avez entendu parler d'une île inconnue de la mer de Brume qui contiendrait de vastes richesses. Il est temps de louer un bateau.",
                 1: "L'île était infestée de Vermlings sauvages. Cependant, aucun Vermling ne peut se tenir entre vous et le trésor. Vous avez pris d'assaut l'île et découvert les restes d'un navire abandonné dans lequel les Vermlings se réfugiaient. Le navire contenait une pléthore d'or, Qui sait à quoi les Vermlings utilisaient l'or, mais vous avez une bonne idée de l'utilisation que vous en ferez."
@@ -213,7 +213,7 @@ export default {
             }
         },
         17: {
-            "name": "Sewer Surfin",
+            "name": "Balade dans les égouts",
             "sections": {
                 0: "L'approvisionnement en eau de Havrenuit semble avoir été empoisonné. On vous a demandé d'enquêter sur la source du poison. Malheureusement, cela signifie marcher péniblement dans les égouts. Beurk.",
                 1: "Vous avez sauté à contrecœur dans les égouts pour enquêter sur le poison. Vous avez tué une pléthore de serpents, de limon et de Vermlings. Les Vermlings avaient campé autour d'une citerne qui semblait être la source du poison, mais après enquête, aucune des les Vermlings morts avaient des poisons. Il y a un passage au fond de la pièce qui mène plus profondément ou, si vous pouviez respirer sous l'eau, vous pourriez entrer directement dans la citerne. Vous avez entendu parler d'une Enchanteresse à Havrenuit qui peut être en mesure d'aider avec ce dernier morceau, mais on dit qu'elle est ... difficile à travailler. ",
@@ -230,7 +230,7 @@ export default {
             }
         },
         18: {
-            "name": "Closing the Rift",
+            "name": "Fermer la faille",
             "sections": {
                 0: "Tout en exerçant une activité sectaire, vous avez rencontré une faille noire béante dans la réalité. Les cultistes effectuaient une sorte de rituel sur la faille qui produisait des formes cauchemardesques horribles de dents et de griffes dans cette réalité. Avec les cultistes et leurs les sbires sont morts, il semble que la faille sombre soit maintenant en sommeil. Ce n'est pas moins déconcertant, cependant. Vous vous êtes brièvement demandé si vous pouviez entrer vous-même dans la faille, mais trouver un moyen de fermer la faille est probablement la décision la plus prudente. enchanter à Havrenuit qui peut en savoir plus sur ce truc interplanaire. Elle est connue pour demander des faveurs impossibles avant d'aider quelqu'un. ",
                 1: "Vous avez rencontré l'enchanteresse Esther, Tourmente, au Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous aider à trouver un moyen de fermer la faille?",
@@ -271,7 +271,7 @@ export default {
             }
         },
         21: {
-            "name": "Profondeurs plus profondes",
+            "name": "De plus en plus profond",
             "sections": {
                 0: "En essayant de découvrir la source de l'eau empoisonnée de Havrenuit, vous avez découvert un passage secret dans les égouts. Peut-être qu'il pourrait y avoir quelque chose d'intéressant à l'intérieur.",
                 1: "Le passage a été alarmé et a donné vie à une série de sentinelles mécaniques. Vous avez pu diviser et faire taire l'alarme, ce qui a stoppé les sentinelles sur leurs traces. Ces créations mécaniques peuvent être utiles à l'avenir, mais pour vous avez maintenant trouvé un moyen de contourner la partie la plus profonde de la citerne. Malheureusement, vous devrez toujours vous mouiller si vous voulez aller plus loin. "
@@ -282,7 +282,7 @@ export default {
             }
         },
         22: {
-            "name": "Hearing Things",
+            "name": "Lorsqu'on entend des Voix",
             "sections": {
                 0: "Les Inox et les démons que vous avez rencontrés sur le chemin du Rideau de Glace avaient des grattages grossiers mentionnant une \" Voix \" parmi leurs affaires. Il y avait une grotte à proximité du col de la Montagne qui semblait vous appeler. Vous vous sentez un subtil et puissant envie d'explorer la grotte. ",
                 1: "La grotte contient une créature puissante, connue uniquement sous le nom de \" La Voix \". Grâce à ses conseils, vous avez pu restaurer la Voix de la créature en plein essor et cliquetis. Elle vous demande de l'aider à se libérer de l'esclavage, mais les motifs de La Voix restent incertains. "
@@ -293,7 +293,7 @@ export default {
             }
         },
         23: {
-            "name": "Regardez qui parle",
+            "name": "Une requête à Voix haute",
             "sections": {
                 0: "La Voix est une créature si puissante. Vous devez en savoir plus sur ce qu'elle est et ses motivations.",
                 1: "Un érudit Quatryl vous a informé que la Voix peut être un puissant démon lié pour une bonne raison. Bien qu'il soit un peu incertain de l'exactitude du texte auquel il faisait référence, il vous a mis en garde contre la libération de la Voix. Il vous a ensuite pointé du doigt vers un Sceptre qui pourrait renforcer le rituel de liaison. Vous l'avez récupéré d'un sanctuaire au bord du marais Lingering. Il était rempli d'énergies sombres, et la Voix vous a supplié de ne pas mettre le Sceptre dans ses chambres. La Voix vous réclame ont été induits en erreur. Vous serez le seul à en décider. "
@@ -304,10 +304,10 @@ export default {
             }
         },
         24: {
-            "name": "Let it Tourmente",
+            "name": "L'aide de Tourmente",
             "sections": {
                 0: "Il y a quelque chose de profondément préoccupant à propos de l'artefact que vous avez récupéré dans le Temple des Éléments. Vous ressentez une obscurité puissante émanant de la chose, et derrière cela, une profonde tristesse. Cet artefact a été corrompu, et il semble presque être conscients de ce fait. Peut-être serait-il préférable de l’apporter à un enchanteur plutôt que de jouer avec lui-même. ",
-                1: "Vous avez rencontré l'enchanteresse Esther, Tourmente, au Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous en dire plus sur l'artefact? {br} Bien sûr qu'elle le pourrait. La grêle est étrange, mais brillante. Cependant, vous avez remis l'artefact au démon principal. Si vous voulez que la grêle l'inspecte, vous devrez le récupérer. Il a probablement gagné, je m'en sépare volontiers. ",
+                1: "Vous avez rencontré l'enchanteresse Esther, Tourmente, au Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous en dire plus sur l'artefact? {br} Bien sûr qu'elle le pourrait.Tourmente est étrange, mais brillante. Cependant, vous avez remis l'artefact au démon principal. Si vous voulez que la grêle l'inspecte, vous devrez le récupérer. Il a probablement gagné, je m'en sépare volontiers. ",
                 2: "Un enchanteur pourrait peut-être vous en dire plus sur l'artefact. Cependant, vous avez remis l'artefact au démon principal. Si vous voulez que l'enchanteur l'inspecte, vous devrez le récupérer du démon. Il ne s'en séparera probablement pas volontiers. ",
                 3: "Vous avez rencontré l'enchanteresse Esther, Tourmente, au Os Tordu. Bien qu'un peu excentrique, elle semble tout à fait capable. Vous avez gagné sa faveur en l'aidant dans ses efforts. Peut-être qu'elle peut maintenant vous en dire plus sur l'artefact? ",
                 4: "Tourmente a souligné que l'artefact était corrompu. Elle vous a plutôt envoyé brusquement dans le plan de la nuit pour rompre l'harmonisation de l'artefact. Vous avez réussi à rompre la connexion. De retour dans votre propre plan d'existence, Tourmente a mentionné trois endroits qui dessinaient le pouvoir de l'artefact corrompu. Si vous voulez en savoir plus sur l'artefact, vous pouvez visiter ces emplacements. "
@@ -340,7 +340,7 @@ export default {
             }
         },
         26: {
-            "name": "Armory Heist",
+            "name": "Le vol de l'Armurerie",
             "sections": {
                 0: "Une créature puissante vous a ordonné de pénétrer dans un arsenal Savvas et de récupérer son trésor. Vous hésitez à pénétrer dans une installation aussi sécurisée, mais le commandement de la créature est fort.",
                 1: "Vous avez tué la puissante créature, coupant son influence sur vous. Vous ressentez toujours une envie de pénétrer dans l'armurerie, mais sans ordre direct, vous n'êtes pas assez audacieux pour essayer.",
@@ -355,7 +355,7 @@ export default {
             }
         },
         27: {
-            "name": "Dragon Slayer",
+            "name": "Tueur de Dragon",
             "sections": {
                 0: "Au sommet de la Glace, l'Ancien Wyverne vous a demandé une faveur. N'a-t-il pas entendu parler de vous? Vous n'êtes pas en train de négocier avec des lézards. Il est temps de tuer un dragon.",
                 1: "À bien y penser, avoir un dragon dans vos dettes peut s'avérer utile. Vous avez décidé d'aider le Wyverne aîné. Après tout, c'était le premier Wyverne à ne pas essayer de vous manger.",
@@ -368,7 +368,7 @@ export default {
             }
         },
         28: {
-            "name": "Dark Souls",
+            "name": "Une âme bien sombre",
             "sections": {
                 0: "Vous avez récupéré l'artefact, comme le demandait le démon. Il est tout à fait clair que l'artefact a été corrompu. Si vous apportez cela au démon, il l'utilisera très certainement pour un grand et terrible mal.",
                 1: "Vous avez scellé la faille sans remettre l'artefact au démon. De toute évidence, il ne fallait pas lui faire confiance avec un objet aussi dangereux et puissant.",
@@ -413,7 +413,7 @@ export default {
             }
         },
         31: {
-            "name": "Forêt Noire",
+            "name": "Ce qui se cache dans les bois",
             "sections": {
                 0: "Avec l'aide de Tourmente, l'artefact a été nettoyé de son influence corruptrice. Cependant, Tourmente a mentionné trois emplacements qui tiraient le pouvoir de l'artefact corrompu. Si vous voulez en savoir plus sur l'artefact, vous voudrez peut-être visiter ces emplacements. Un de ces endroits se trouve au fond de la Forêt des Dagues. ",
                 1: "Tourmente vous a guidé vers un groupe d'Orchids qui pourraient vous guider à travers la forêt labyrinthique. Lorsque vous arrivez au camp des Orchids, cependant, vous avez trouvé quelque chose de totalement inattendu :  une scène de massacre et de dévastation. Bâtiments incendiés et cadavres défigurés. À en juger par les blessures, vous pensez qu'un groupe de pillards Inox a fait cela. Heureusement, les Inox n'ont pas ressenti le besoin de couvrir leurs traces. Vous avez été en mesure de suivre leur trace plus profondément dans les bois, où finalement vous avez trouvé un camp de travaux forcés - des gardes Inox surveillant un groupe d'Orchids et d'êtres humains en lambeaux travaillant à la construction de catapultes et d'autres machines de guerre. Le camp n'est pas particulièrement bien protégé contre les intrus, et, après avoir éliminé quelques gardes, vous avez pu vous glisser dans les enclos des esclaves et libérer l'un des Orchids. Il accepte de vous guider à travers la forêt, mais seulement après l'avoir aidé à se venger des Inox. Vous avez peu de choix en la matière car il s'est précipité sur l'un des Inox. Une fois le dernier Inox tombé, l'Orchid vous a remercie. «Ils ont tué ma famille à leur arrivée. Ils ont dit que mes enfants n'étaient pas des travailleurs suffisamment forts. » Il se présente comme Rougépine et accepte de vous emmener plus profondément dans la forêt. ",
