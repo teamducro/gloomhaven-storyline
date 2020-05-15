@@ -5,7 +5,7 @@
              :width="width"
              @error=" this.error" @load="loaded"/>
     </transition>
-    <img v-else :src="source"
+    <img v-else v-show="isLoaded" :src="source"
          :class="imageClasses"
          :width="width"
          @error="this.error" @load="loaded"/>
