@@ -19,19 +19,19 @@
                     <div class="xs:flex w-full -ml-2 mb-2">
                         <radio v-if="scenario.is_side"
                                class="whitespace-no-wrap"
-                               id="hidden" group="states" label="Not unlocked"
+                               id="hidden" group="states" :label="$t('Not unlocked')"
                                :key="'hidden-' + stateKey"
                                :checked="scenario.isHidden()"
                                @changed="stateChanged"
                         ></radio>
                         <div class="flex w-full">
-                            <radio id="incomplete" group="states" :label="$t('general.incomplete')"
+                            <radio id="incomplete" group="states" :label="$t('incomplete')"
                                    :key="'incomplete-' + stateKey"
                                    :checked="scenario.isIncomplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
                                    @changed="stateChanged"
                             ></radio>
-                            <radio id="complete" group="states" :label="$t('general.complete')"
+                            <radio id="complete" group="states" :label="$t('complete')"
                                    :key="'complete-' + stateKey"
                                    :checked="scenario.isComplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
