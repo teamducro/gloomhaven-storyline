@@ -61,6 +61,13 @@ export default {
     'All content remains under creative commons license': 'All content remains under creative commons license',
     'Play Gloomhaven with a storyline tracker': 'Play Gloomhaven with a storyline tracker',
     'About us text': 'To play Gloomhaven, my friends and I get together once a week. Hitting the pause button on our daily lives. Each one of us has delivered something to strengthen our joy in the game. My contribution is an interactive flowchart, to track our progress through the game and to make it easier to choose a new scenario to play. With some drinks and snacks, we are ready to begin.',
+    'Welcome': 'Welcome',
+    'donations': {
+        1: 'This Gloomhaven Storyline Tracker is completely free.',
+        2: 'I love to play Gloomhaven and this tracker gives us a clear picture of our campaign. I\'d like to keep providing updates for free.',
+        3: 'Please consider a small donation, it helps a lot.',
+        'close': 'Keep using the storyline tracker',
+    },
     quest: {
         1: {
             "name": "The Merchant's Request",

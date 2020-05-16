@@ -17,16 +17,14 @@
                     </div>
                     <div class="mt-3 text-center sm:mt-5">
                         <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
-                            Welcome
+                            {{ $t('Welcome') }}
                         </h3>
                         <div class="mt-2 text-sm leading-5 text-gray-500">
                             <p class="mb-2">
-                                This Gloomhaven Storyline Tracker is completely free.<br>
-                                I love to play Gloomhaven and this tracker gives us a clear picture of our campaign.
-                                I'd like to keep providing updates for free.
+                                {{ $t('donations.1') }}<br>{{ $t('donations.2') }}
                             </p>
                             <p>
-                                Please consider a small donation, it helps a lot.
+                                {{ $t('donations.3') }}
                             </p>
                         </div>
                     </div>
@@ -40,7 +38,7 @@
                     </button>
                     </donate>
                       <span @click="close" class="text-sm text-gray-500 text-center mt-4 cursor-pointer">
-                          Keep using the storyline tracker
+                          {{ $t('donations.close') }}
                       </span>
                   </span>
                 </div>
