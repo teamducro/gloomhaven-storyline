@@ -37,6 +37,7 @@ export default {
     'Summary': 'Summary',
     'Preceding events': 'Preceding events',
     'Notes': 'Notes',
+    'Page': 'Page | Pages',
     'Pages': 'Pages',
     'Choose a scenario to unlock': 'Choose a scenario to unlock',
     'Cancel': 'Cancel',
