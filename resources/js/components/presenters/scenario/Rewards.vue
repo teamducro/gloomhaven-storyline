@@ -2,7 +2,7 @@
     <div class="my-2"
          v-if="scenario.isComplete() && scenario.rewards.isNotEmpty()">
         <h2 class="text-white">
-            {{ scenario.rewards.count() > 1 ? 'Rewards' : 'Reward' }}
+            {{ $tc('Reward', scenario.rewards.count()) }}
         </h2>
         <component v-bind:is="rewards()"></component>
     </div>
@@ -29,11 +29,14 @@
                     output = this.scenario.rewards.map(this.addCharacterIconsToRewards).join(', ');
                 } else if (Array.isArray(this.scenario.rewards.first())) {
                     let n2l = new N2l();
+                    let conclusion = this.$t('Conclusion');
+                    output += '<div class="flex flex-col">'
                     this.scenario.rewards.each((conclusionRewards, index) => {
-                        output += '<div>Conclusion <span class="uppercase">' + n2l.convert(index) + '</span>: ';
+                        output += `<div>${conclusion} <span class="uppercase">${n2l.convert(index)}</span>: `;
                         output += conclusionRewards.map(this.addCharacterIconsToRewards).join(', ');
                         output += '</div>';
                     });
+                    output += '</div>';
                 }
 
                 return {

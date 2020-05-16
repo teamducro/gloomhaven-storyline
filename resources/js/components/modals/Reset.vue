@@ -1,15 +1,15 @@
 <template>
-    <modal ref="modal" title="Remove">
+    <modal ref="modal" :title="$t('Remove')">
         <template v-slot:content>
-            <p>Are you sure you want to remove scenario data?</p>
+            <p>{{ $t('reset.text') }}</p>
         </template>
         <template v-slot:buttons>
             <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
-                <span class="mdc-button__label">Cancel</span>
+                <span class="mdc-button__label">{{ $t('Cancel') }}</span>
             </button>
             <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                     @click="reset">
-                <span class="mdc-button__label">Clear all</span>
+                <span class="mdc-button__label">{{ $t('Clear all') }}</span>
             </button>
         </template>
     </modal>

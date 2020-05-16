@@ -1384,14 +1384,6 @@
                     "incomplete": [
                         "GCRD"
                     ]
-                },
-                {
-                    "complete": [
-                        "PADE"
-                    ],
-                    "incomplete": [
-                        "GCRM"
-                    ]
                 }
             ],
             "chapter_id": 3,

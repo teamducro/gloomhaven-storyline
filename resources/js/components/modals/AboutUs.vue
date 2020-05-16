@@ -1,10 +1,7 @@
 <template>
-    <modal ref="modal" title="Play Gloomhaven with a storyline tracker">
+    <modal ref="modal" :title="$t('about us.title')">
         <template v-slot:content>
-            <p>To play Gloomhaven, my friends and I get together once a week. Hitting the pause
-                button on our daily lives. Each one of us has delivered something to strengthen our joy in the game. My
-                contribution is an interactive flowchart, to track our progress through the game and to make it easier
-                to choose a new scenario to play. With some drinks and snacks, we are ready to begin.</p>
+            <p>{{ $t('about us.text') }}</p>
             <div class="m-4">
                 <webp src="/img/minis.jpg" alt="Gloomhaven minis"/>
             </div>
