@@ -1,10 +1,11 @@
 export default {
-    general: {
-        complete: 'Complete',
-        incomplete: 'Incomplete',
-        blocked: 'Blocked',
-        required: 'Required'
-    },
+    global: 'Global',
+    party: 'Party',
+    achievement: 'Achievement | Achievements',
+    complete: 'Complete',
+    incomplete: 'Incomplete',
+    blocked: 'Blocked',
+    required: 'Required',
     quest: {
         1: {
             "name": "The Merchant's Request",
