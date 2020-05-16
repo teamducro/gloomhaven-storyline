@@ -14,6 +14,7 @@
             fragment.appendChild(div);
 
             this.svg = fragment.querySelector('svg');
+            this.container = div;
         }
 
         classes(classes) {
@@ -56,7 +57,7 @@
 
         toString() {
             this.stripScriptsAndStyles();
-            return this.svg.outerHTML;
+            return this.container.outerHTML;
         }
 
         stripScriptsAndStyles() {
