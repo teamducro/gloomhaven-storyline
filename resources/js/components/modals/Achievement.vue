@@ -4,8 +4,8 @@
             <template v-slot:content>
                 <div class="flex flex-row justify-between" v-if="achievement">
                     <div class="i-my-4">
-                        <!-- TODO: Maybe add flavortext/story for the Achievements -->
-                        <h2 class="text-white">Gained from:
+                        <!-- TODO: Maybe add flavor text/story for the Achievements -->
+                        <h2 class="text-white">{{ $t('Gained from') }}:
                             <scenario-number class="ml-2"
                                              v-for="scenario in awardedFrom"
                                              data-mdc-dialog-action="close"
@@ -13,7 +13,7 @@
                         </h2>
 
                         <h2 v-if="!requiredBy.isEmpty()"
-                            class="text-white mt-2">Required by:
+                            class="text-white mt-2">{{ $t('Required by') }}:
                             <scenario-number class="ml-2"
                                              v-for="scenario in requiredBy"
                                              data-mdc-dialog-action="close"

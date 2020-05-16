@@ -44,6 +44,8 @@ export default {
     'Reward': 'Reward | Rewards',
     'Rewards': 'Rewards',
     'Conclusion': 'Conclusion',
+    'Gained from': 'Gained from',
+    'Required by': 'Required by',
     'Complete': 'Complete',
     'Completed': 'Completed',
     'Incomplete': 'Incomplete',
