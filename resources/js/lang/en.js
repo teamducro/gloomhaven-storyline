@@ -53,15 +53,30 @@ export default {
     'Blocked': 'Blocked',
     'Required': 'Required',
     'Not unlocked': 'Not unlocked',
+    'Remove': 'Remove',
+    'Clear all': 'Clear all',
+    'reset': {
+        'text': 'Are you sure you want to remove scenario data?'
+    },
+    'share': {
+        'title': 'Share Gloomhaven Storyline Tracker',
+        1: 'Share your current storyline with your party members.',
+        2: 'Copy the link',
+        3: 'or share it on one of the folowing platforms.'
+    },
     'Credits': 'Credits',
-    'Thanks to these creators for their content': 'Thanks to these creators for their content.',
+    'credits': {
+        'thanks': 'Thanks to these creators for their content.',
+        'license': 'All content remains under creative commons license'
+    },
     'Gloomhaven assets by': 'Gloomhaven assets by',
     'Chart layout by': 'Chart layout by',
     'Scenario summaries by': 'Scenario summaries by',
     'Map coordinates by': 'Map coordinates by',
-    'All content remains under creative commons license': 'All content remains under creative commons license',
-    'Play Gloomhaven with a storyline tracker': 'Play Gloomhaven with a storyline tracker',
-    'About us text': 'To play Gloomhaven, my friends and I get together once a week. Hitting the pause button on our daily lives. Each one of us has delivered something to strengthen our joy in the game. My contribution is an interactive flowchart, to track our progress through the game and to make it easier to choose a new scenario to play. With some drinks and snacks, we are ready to begin.',
+    'about us': {
+        'title': 'Play Gloomhaven with a storyline tracker',
+        'text': 'To play Gloomhaven, my friends and I get together once a week. Hitting the pause button on our daily lives. Each one of us has delivered something to strengthen our joy in the game. My contribution is an interactive flowchart, to track our progress through the game and to make it easier to choose a new scenario to play. With some drinks and snacks, we are ready to begin.',
+    },
     'Welcome': 'Welcome',
     'donations': {
         1: 'This Gloomhaven Storyline Tracker is completely free.',

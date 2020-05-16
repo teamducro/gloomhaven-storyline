@@ -1,7 +1,7 @@
 <template>
     <modal ref="modal" :title="$t('Credits')">
         <template v-slot:content>
-            <p class="mb-2">{{ $t('Thanks to these creators for their content') }}</p>
+            <p class="mb-2">{{ $t('credits.thanks') }}</p>
             <ul class="list-disc ml-4">
                 <li class="py-1">
                     <span class="mr-1 block sm:inline">{{ $t('Gloomhaven assets by') }}
@@ -46,7 +46,7 @@
             </ul>
 
             <p class="my-4">
-                {{ $t('All content remains under creative commons license') }} BY-NC-SA 4.0
+                {{ $t('credits.license') }} BY-NC-SA 4.0
                 (<a class="link"
                     href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>)
             </p>

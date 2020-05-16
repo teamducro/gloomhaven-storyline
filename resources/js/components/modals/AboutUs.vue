@@ -1,7 +1,7 @@
 <template>
-    <modal ref="modal" :title="$t('Play Gloomhaven with a storyline tracker')">
+    <modal ref="modal" :title="$t('about us.title')">
         <template v-slot:content>
-            <p>{{ $t('About us text') }}</p>
+            <p>{{ $t('about us.text') }}</p>
             <div class="m-4">
                 <webp src="/img/minis.jpg" alt="Gloomhaven minis"/>
             </div>
