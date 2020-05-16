@@ -52,6 +52,13 @@ export default {
     'Blocked': 'Blocked',
     'Required': 'Required',
     'Not unlocked': 'Not unlocked',
+    'Credits': 'Credits',
+    'Thanks to these creators for their content': 'Thanks to these creators for their content.',
+    'Gloomhaven assets by': 'Gloomhaven assets by',
+    'Chart layout by': 'Chart layout by',
+    'Scenario summaries by': 'Scenario summaries by',
+    'Map coordinates by': 'Map coordinates by',
+    'All content remains under creative commons license': 'All content remains under creative commons license',
     'Play Gloomhaven with a storyline tracker': 'Play Gloomhaven with a storyline tracker',
     'About us text': 'To play Gloomhaven, my friends and I get together once a week. Hitting the pause button on our daily lives. Each one of us has delivered something to strengthen our joy in the game. My contribution is an interactive flowchart, to track our progress through the game and to make it easier to choose a new scenario to play. With some drinks and snacks, we are ready to begin.',
     quest: {
