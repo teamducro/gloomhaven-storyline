@@ -1,6 +1,5 @@
 <template>
-    <inline-svg :src="'characters/' + character"
-                :classes="['h-full', 'w-full']"/>
+    <inline-svg :src="'characters/' + character"/>
 </template>
 
 <script>
