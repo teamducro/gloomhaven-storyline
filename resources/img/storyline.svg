@@ -892,24 +892,24 @@
             <circle class="node" cx="458" cy="561.499978" fill="black" r="10.8"/>
             <text fill="black" x="446" y="557.499978">I</text>
         </g>
-        <text class="label" fill="black" x="465.326181" y="565.499025">{{ $t('incomplete') }}</text>
+        <text class="label" fill="black" x="465.326181" y="565.499025">{{ $t('Incomplete') }}</text>
         <g class="scenario blocked">
             <circle class="node" cx="553" cy="562.499978" r="10.8"/>
             <text fill="black" x="540" y="558.5">B</text>
             <text class="blocked" x="540" y="558.5">×</text>
         </g>
-        <text class="label" fill="black" x="558.693369" y="566.506837">{{ $t('blocked') }}</text>
+        <text class="label" fill="black" x="558.693369" y="566.506837">{{ $t('Blocked') }}</text>
         <g class="scenario complete">
             <circle class="node" cx="458" cy="590.999978" r="10.8"/>
             <text fill="black" x="445" y="587">C</text>
         </g>
-        <text class="label" fill="black" x="464.880869" y="596.006837">{{ $t('completed') }}</text>
+        <text class="label" fill="black" x="464.880869" y="596.006837">{{ $t('Completed') }}</text>
         <g class="scenario required">
             <circle class="node" cx="553" cy="591.999978" r="10.8"/>
             <text fill="black" x="540" y="588">R</text>
             <text class="required" x="538" y="588">!</text>
         </g>
-        <text class="label" fill="black" x="559.685556" y="595.999025">{{ $t('required') }}</text>
+        <text class="label" fill="black" x="559.685556" y="595.999025">{{ $t('Required') }}</text>
         <g class="scenario opacity-50">
             <circle class="node" cx="458" cy="620.499978" r="10.8"/>
             <text fill="black" x="445" y="616.499978">N</text>
@@ -1165,28 +1165,31 @@
 
     <g class="legend portrait">
         <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="171" x="8.5" y="888"/>
-        <g class="scenario incomplete">
+        <g class="sce
+
+
+        nario incomplete">
             <circle class="node" cx="36" cy="910.499978" fill="black" r="10.8"/>
             <text fill="black" x="24" y="906.499978">I</text>
         </g>
-        <text class="label" fill="black" x="43.326181" y="914.499025">{{ $t('incomplete') }}</text>
+        <text class="label" fill="black" x="43.326181" y="914.499025">{{ $t('Incomplete') }}</text>
         <g class="scenario blocked">
             <circle class="node" cx="131" cy="911.499978" r="10.8"/>
             <text fill="black" x="118" y="907.5">B</text>
             <text class="blocked" x="118" y="907.5">×</text>
         </g>
-        <text class="label" fill="black" x="136.693369" y="915.506837">{{ $t('blocked') }}</text>
+        <text class="label" fill="black" x="136.693369" y="915.506837">{{ $t('Blocked') }}</text>
         <g class="scenario complete">
             <circle class="node" cx="36" cy="939.999978" r="10.8"/>
             <text fill="black" x="23" y="936">C</text>
         </g>
-        <text class="label" fill="black" x="42.880869" y="945.006837">{{ $t('completed') }}</text>
+        <text class="label" fill="black" x="42.880869" y="945.006837">{{ $t('Completed') }}</text>
         <g class="scenario required">
             <circle class="node" cx="131" cy="940.999978" r="10.8"/>
             <text fill="black" x="118" y="937">R</text>
             <text class="required" x="116" y="937">!</text>
         </g>
-        <text class="label" fill="black" x="137.685556" y="944.999025">{{ $t('required') }}</text>
+        <text class="label" fill="black" x="137.685556" y="944.999025">{{ $t('Required') }}</text>
         <g class="scenario opacity-50">
             <circle class="node" cx="36" cy="969.499978" r="10.8"/>
             <text fill="black" x="23" y="965.499978">N</text>

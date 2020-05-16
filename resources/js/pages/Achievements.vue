@@ -2,7 +2,7 @@
     <div>
         <div class="pt-16 pb-4 px-4 flex flex-col">
             <div class="w-full flex justify-center">
-                <h1>{{ $t('global') }} {{ $t('achievements') }}</h1>
+                <h1>{{ $t('Global') }} {{ $t('Achievements') }}</h1>
             </div>
             <div class="w-full flex justify-center">
                 <ul v-if="achievements" id="global-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
@@ -24,7 +24,7 @@
         </div>
         <div class="pt-4 pb-4 px-4 flex flex-wrap">
             <div class="w-full flex justify-center">
-                <h1>{{ $t('party') }} {{ $t('achievements') }}</h1>
+                <h1>{{ $t('Party') }} {{ $t('Achievements') }}</h1>
             </div>
             <div class="w-full flex justify-center">
                 <ul v-if="achievements" id="party-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
