@@ -50,6 +50,8 @@ export default {
     'Blocked': 'Blocked',
     'Required': 'Required',
     'Not unlocked': 'Not unlocked',
+    'Play Gloomhaven with a storyline tracker': 'Play Gloomhaven with a storyline tracker',
+    'About us text': 'To play Gloomhaven, my friends and I get together once a week. Hitting the pause button on our daily lives. Each one of us has delivered something to strengthen our joy in the game. My contribution is an interactive flowchart, to track our progress through the game and to make it easier to choose a new scenario to play. With some drinks and snacks, we are ready to begin.',
     quest: {
         1: {
             "name": "The Merchant's Request",
