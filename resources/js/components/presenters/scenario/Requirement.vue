@@ -73,8 +73,8 @@
                 }
 
                 let achievement = this.achievementRepository.find(requirement.achievement.id);
-                if (requirement.type === "complete" && !achievement.awarded ||
-                    (requirement.type === "incomplete" && achievement.awarded)) {
+                if (requirement.type === "Complete" && !achievement.awarded ||
+                    (requirement.type === "Incomplete" && achievement.awarded)) {
                     return true;
                 }
 
