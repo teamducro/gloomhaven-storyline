@@ -36,12 +36,12 @@
     <g id="chapter5" class="chapter">
         <rect width="92.707626" height="99.190681" x="252.83899" y="18.152542" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="272" y="112">{{ $t('Rebellion Rises') }}</text>
+        <text class="label" x="298" y="112" text-anchor="middle">{{ $t('Rebellion Rises') }}</text>
     </g>
     <g id="chapter6" class="chapter">
         <rect width="93" height="51.216106" x="284" y="129.01271" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
-        <text class="label" x="307" y="175">{{ $t('Under Oceans') }}</text>
+        <text class="label" x="365" y="175" text-anchor="end">{{ $t('Under Oceans') }}</text>
     </g>
     <g id="chapter7" class="chapter">
         <rect width="93" height="71.31356" x="284" y="186.71187" rx="10" ry="10" stroke="#000"
@@ -643,7 +643,7 @@
         <!--chapter11-->
         <rect width="172" height="124" x="431.279667" y="17.986755" rx="10" ry="10" stroke="#000" fill="#111"
               opacity="0.7"/>
-        <text class="label" x="535" y="135.986663">{{ $t('Personal Quests') }}</text>
+        <text class="label" x="594" y="136" text-anchor="end">{{ $t('Personal Quests') }}</text>
         <g id="node52" class="scenario">
             <circle class="node" r="10.8" cy="37.986755" cx="461.39273"/>
             <text y="33.986755" x="446">52</text>
@@ -722,7 +722,7 @@
         <!--chapter12-->
         <rect opacity="0.7" fill="#111" ry="10" rx="10" y="153.60058" x="430.776065" height="87.14994" width="172"
               stroke="#000"/>
-        <text y="234.489558" x="528" class="label">{{ $t('Random Scenarios') }}</text>
+        <text y="234.489558" x="440" class="label">{{ $t('Random Scenarios') }}</text>
         <g id="node63" class="scenario">
             <circle class="node" r="10.8" cy="174.516895" cx="461.513976"/>
             <text y="170.516895" x="446.121246">63</text>
@@ -813,7 +813,7 @@
         <!--chapter15-->
         <rect stroke="#000" opacity="0.7" fill="#111" ry="10" rx="10" y="385.520852" x="430.776065" height="141.744948"
               width="172"/>
-        <text y="523.26465" x="555.396494" class="label">{{ $t('City Events') }}</text>
+        <text y="523.26465" x="593" text-anchor="end" class="label">{{ $t('City Events') }}</text>
         <g id="node74" class="scenario">
             <circle class="node" r="10.8" cy="403.020593" cx="461.513976"/>
             <text y="399.020593" x="446.121246">74</text>
@@ -920,7 +920,7 @@
     <g class="portrait">
         <!--chapter11-->
         <rect opacity="0.7" fill="#111" stroke="#000" ry="10" rx="10" y="610" x="8" height="124" width="172"/>
-        <text y="727.999908" x="111" class="label">{{ $t('Personal Quests') }}</text>
+        <text y="727.999908" x="170" class="label" text-anchor="end">{{ $t('Personal Quests') }}</text>
         <g id="node52" class="scenario">
             <circle cx="37.39273" cy="630" r="10.8" class="node"/>
             <text x="22" y="626">52</text>
@@ -999,7 +999,7 @@
         <!--chapter12-->
         <rect stroke="#000" width="172" height="87.14994" x="207.776065" y="609.60058" rx="10" ry="10" fill="#111"
               opacity="0.7"/>
-        <text class="label" x="305" y="690.489558">{{ $t('Random Scenarios') }}</text>
+        <text class="label" x="370" y="690.489558" text-anchor="end">{{ $t('Random Scenarios') }}</text>
         <g id="node63" class="scenario">
             <circle cx="238.513976" cy="630.516895" r="10.8" class="node"/>
             <text x="223.121246" y="626.516895">63</text>
@@ -1090,7 +1090,7 @@
         <!--chapter15-->
         <rect width="172" height="141.744948" x="207.776065" y="711.520852" rx="10" ry="10" fill="#111" opacity="0.7"
               stroke="#000"/>
-        <text class="label" x="332.396494" y="849.26465">{{ $t('City Events') }}</text>
+        <text class="label" x="370" y="850" text-anchor="end">{{ $t('City Events') }}</text>
         <g id="node74" class="scenario">
             <circle cx="238.513976" cy="729.020593" r="10.8" class="node"/>
             <text x="223.121246" y="725.020593">74</text>
