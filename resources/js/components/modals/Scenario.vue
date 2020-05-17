@@ -221,9 +221,9 @@
                 @scenario-chosen="scenarioChosen"
                 @closing="chooseModalClosing"
         ></choose>
-        <generic-prompt v-if="scenario" ref="generic-prompt"
+        <decision-prompt v-if="scenario" ref="generic-prompt"
                         v-bind:config="prompt">
-        </generic-prompt>
+        </decision-prompt>
     </div>
 </template>
 
