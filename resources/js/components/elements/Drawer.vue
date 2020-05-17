@@ -36,7 +36,7 @@
                             <router-link to="/achievements" class="mdc-list-item"
                                          active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">emoji_events</i>
-                                <span class="mdc-list-item__text">{{ $t('achievements') }}</span>
+                                <span class="mdc-list-item__text">{{ $t('Achievements') }}</span>
                             </router-link>
                         </li>
 
