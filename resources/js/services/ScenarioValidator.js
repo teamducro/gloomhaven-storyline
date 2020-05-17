@@ -2,6 +2,7 @@ import ScenarioRepository from "../repositories/ScenarioRepository";
 import AchievementRepository from "../repositories/AchievementRepository";
 import {ScenarioState} from "../models/ScenarioState";
 import QuestValidator from "./QuestValidator";
+import ChoiceService from "./ChoiceService";
 
 export default class ScenarioValidator {
 
@@ -65,6 +66,12 @@ export default class ScenarioValidator {
 
         if (scenario.hasChoices && scenario.choice && scenario.isComplete() === false) {
             scenario.choice = null;
+        }
+        if (scenario.hasPrompt && scenario.isComplete() === false) {
+            let promptConfig = this.choiceService.getPromptConfig(scenario);
+            if (promptConfig.callback) {
+                promptConfig.callback(null);
+            }
         }
     }
 
@@ -140,5 +147,9 @@ export default class ScenarioValidator {
 
     get questValidator() {
         return this._questValidator || (this._questValidator = new QuestValidator);
+    }
+
+    get choiceService() {
+        return this._choiceService || (this._choiceService = new ChoiceService);
     }
 }

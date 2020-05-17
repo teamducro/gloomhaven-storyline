@@ -34,10 +34,14 @@ class Scenario {
         this.unlockedTreasures = [];
         this.achievements_awarded = collect(data.achievements_awarded);
         this.achievements_lost = collect(data.achievements_lost);
+        this.prompt = data.prompt;
+        this._promptChoice = null;
+        this.hasPrompt = typeof data.prompt !== 'undefined';
 
         this.fieldsToStore = {
             "state": "_state",
             "choice": "_choice",
+            "promptChoice": "_promptChoice",
             "notes": "notes",
             "treasures": "unlockedTreasures"
         };
@@ -91,6 +95,18 @@ class Scenario {
 
     get choice() {
         return this._choice;
+    }
+
+    set promptChoice(choice) {
+        if (this._promptChoice === choice) {
+            return;
+        }
+        this._promptChoice = choice;
+        this.store();
+    }
+
+    get promptChoice() {
+        return this._promptChoice;
     }
 
     unlockTreasure(id, unlock = true) {

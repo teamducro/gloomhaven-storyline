@@ -7,10 +7,12 @@
                     <h2 class="mdc-dialog__title p-0 leading-none">
                         {{ scenario.isVisible() ? scenario.name : '#' + scenario.id }}
                         <span class="text-sm text-white2-50">{{ scenario.coordinates.name }}</span>
+                        <span class="absolute right-0 top-0">
                         <button type="button" data-mdc-dialog-action="close"
-                                class="mdc-button absolute right-0 top-0 mt-4">
+                                class="mdc-button mt-4">
                             <i class="material-icons">close</i>
                         </button>
+                        </span>
                     </h2>
                     <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">{{ scenario.regions.pluck('name').implode(', ') }}</span>
                 </div>
@@ -224,20 +226,25 @@
                 @scenario-chosen="scenarioChosen"
                 @closing="chooseModalClosing"
         ></choose>
+        <generic-prompt v-if="scenario" ref="generic-prompt"
+                        v-bind:config="prompt">
+        </generic-prompt>
     </div>
 </template>
 
 <script>
     import ScenarioRepository from "../../repositories/ScenarioRepository";
     import AchievementRepository from "../../repositories/AchievementRepository";
+    import ChoiceService from "../../services/ChoiceService";
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../../models/ScenarioState";
     import PreloadImage from "../../services/PreloadImage";
     import N2l from "../../services/N2l";
     import ScenarioNumber from "../elements/ScenarioNumber";
+    import DecisionPrompt from "./DecisionPrompt";
 
     export default {
-        components: {ScenarioNumber},
+        components: {GenericPrompt: DecisionPrompt, ScenarioNumber},
         data() {
             return {
                 scenario: null,
@@ -247,6 +254,7 @@
                 treasuresVisible: false,
                 scenarioRepository: new ScenarioRepository(),
                 achievementRepository: new AchievementRepository(),
+                choiceService: new ChoiceService(),
                 preloadImage: new PreloadImage(),
                 n2l: new N2l()
             }
@@ -255,6 +263,10 @@
             this.$bus.$on('open-scenario', (data) => {
                 this.open(data.id);
             });
+            this.$bus.$on('close-scenario', () => {
+                this.close();
+            });
+
         },
         computed: {
             prevScenarios() {
@@ -295,6 +307,9 @@
             },
             questCount() {
                 return this.quests.items.length || 0;
+            },
+            prompt() {
+                return this.processPrompt(this.scenario)
             }
         },
         methods: {
@@ -374,7 +389,12 @@
                 this.$bus.$emit('open-achievement', {
                     id: id
                 });
+            },
+
+            processPrompt(scenario) {
+                return this.choiceService.getPromptConfig(scenario) || {show: false};
             }
+
         }
     }
 </script>
