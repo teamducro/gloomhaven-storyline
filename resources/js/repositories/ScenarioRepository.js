@@ -142,6 +142,13 @@ export default class ScenarioRepository {
             achievement = this.achievementRepository.find(achievement);
         }
 
+        let baseAchievement = this.achievementRepository
+            .where((a) => { return a.upgrades.includes(achievement.id); } )
+            .first();
+        if (baseAchievement) {
+            achievement = baseAchievement;
+        }
+
         return this.where((scenario, key) => {
             return scenario.achievements_awarded
                 && scenario.achievements_awarded.contains(achievement.id);

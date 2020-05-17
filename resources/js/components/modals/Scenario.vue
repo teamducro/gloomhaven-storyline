@@ -51,11 +51,20 @@
 
                     <template v-if="scenario.isVisible()">
 
-                        <div v-if="scenario.requirements" class="mb-2 flex items-center" style="margin-left: -2px;">
-                            <i v-if="scenario.isRequired() || scenario.isBlocked()"
-                               class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
-                            <i v-else class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
-                            {{ $t('Requirements') }}: {{ scenario.requirements }}
+                        <div v-if="scenario.requirements">
+                            <div class="flex flex-wrap" style="margin-left: -2px;">
+                                <div class="w-full mb-2 flex items-center">
+                                    <i v-if="scenario.isRequired() || scenario.isBlocked()"
+                                       class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
+                                    <i v-else
+                                       class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
+                                    <div>{{ $t('Requirements') }}:</div>
+                                </div>
+                                <div class="ml-8">
+                                    <requirement :conditions="scenario.required_by"
+                                                 :scenarioState="scenario.state"></requirement>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="mt-4 mb-2"
@@ -226,11 +235,12 @@
     import {ScenarioState} from "../../models/ScenarioState";
     import PreloadImage from "../../services/PreloadImage";
     import ScenarioNumber from "../elements/ScenarioNumber";
+    import Requirement from "../presenters/scenario/Requirement";
     import Rewards from "../presenters/scenario/Rewards";
     import DecisionPrompt from "./DecisionPrompt";
 
     export default {
-        components: {DecisionPrompt, Rewards, ScenarioNumber},
+        components: {DecisionPrompt, Requirement, Rewards, ScenarioNumber},
         data() {
             return {
                 scenario: null,
@@ -274,11 +284,11 @@
                         .where('_awarded', '=', false);
 
                     return [[
-                        lost.where('type', '=', 'party'),
-                        awarded.where('type', '=', 'party')
+                        lost.where('type', '=', 'Party'),
+                        awarded.where('type', '=', 'Party')
                     ], [
-                        lost.where('type', '=', 'global'),
-                        awarded.where('type', '=', 'global')
+                        lost.where('type', '=', 'Global'),
+                        awarded.where('type', '=', 'Global')
                     ]];
                 }
 

@@ -3,83 +3,83 @@
         {
             "id": "PFS",
             "name": "First Steps",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "PJP",
             "name": "Jekserah's Plans",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "PDB",
             "name": "Dark Bounty",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "GTMF",
             "name": "The Merchant Flees",
-            "type": "global",
+            "type": "Global",
             "x": 32.4
         },
         {
             "id": "GTDI",
             "name": "The Dead Invade",
-            "type": "global",
+            "type": "Global",
             "x": 37.8
         },
         {
             "id": "PADE",
             "name": "A Demon's Errand",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "GCRE",
             "name": "City Rule: Economic",
-            "type": "global",
+            "type": "Global",
             "group": "CR",
             "x": 22.3
         },
         {
             "id": "GCRM",
             "name": "City Rule: Militaristic",
-            "type": "global",
+            "type": "Global",
             "group": "CR",
             "x": 22.3
         },
         {
             "id": "GEOI",
             "name": "End of the Invasion",
-            "type": "global",
+            "type": "Global",
             "x": 62.2
         },
         {
             "id": "GTPE",
             "name": "The Power of Enhancement",
-            "type": "global",
+            "type": "Global",
             "x": 47.7
         },
         {
             "id": "PSC",
             "name": "Stonebreaker's Censer",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "GTRN",
             "name": "The Rift Neutralized",
-            "type": "global",
+            "type": "Global",
             "x": 57.9
         },
         {
             "id": "GAR",
             "name": "The Artifact: Recovered",
-            "type": "global",
+            "type": "Global",
             "group": "ART",
             "x": 27.3
         },
         {
             "id": "GAR2",
             "name": "The Artifact: Recovered (previously Lost)",
-            "type": "global",
+            "type": "Global",
             "group": "ART",
             "x": 27.3,
             "requirement": "GAL"
@@ -87,14 +87,14 @@
         {
             "id": "GAL",
             "name": "The Artifact: Lost",
-            "type": "global",
+            "type": "Global",
             "x": 27.3,
             "group": "ART"
         },
         {
             "id": "GAT",
             "name": "Ancient Technology",
-            "type": "global",
+            "type": "Global",
             "x": 78,
             "upgrades": [
                 "GAT2",
@@ -105,141 +105,141 @@
         },
         {
             "id": "GAT2",
-            "name": "Ancient Technology (2)",
-            "type": "global",
+            "name": "Ancient Technology x2",
+            "type": "Global",
             "hidden": true,
             "x": 78
         },
         {
             "id": "GAT3",
-            "name": "Ancient Technology (3)",
-            "type": "global",
+            "name": "Ancient Technology x3",
+            "type": "Global",
             "hidden": true,
             "x": 78
         },
         {
             "id": "GAT4",
-            "name": "Ancient Technology (4)",
-            "type": "global",
+            "name": "Ancient Technology x4",
+            "type": "Global",
             "hidden": true,
             "x": 78
         },
         {
             "id": "GAT5",
-            "name": "Ancient Technology (5)",
-            "type": "global",
+            "name": "Ancient Technology x5",
+            "type": "Global",
             "hidden": true,
             "x": 78
         },
         {
             "id": "PTR",
             "name": "Through the Ruins",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "PTVC",
             "name": "The Voice's Command",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "PTDC",
             "name": "The Drake's Command",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "PFC",
             "name": "Following Clues",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "PAI",
             "name": "An Invitation",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "GTED",
             "name": "The Edge of Darkness",
-            "type": "global",
+            "type": "Global",
             "x": 42.8
         },
         {
             "id": "PTSV",
             "name": "The Scepter and the Voice",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "GAC",
             "name": "Artifact: Cleansed",
-            "type": "global",
+            "type": "Global",
             "group": "ART",
             "x": 27.3
         },
         {
             "id": "PTVT",
             "name": "The Voice's Treasure",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "PTDT",
             "name": "The Drake's Treasure",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "GTDS",
             "name": "The Drake Slain",
-            "type": "global",
+            "type": "Global",
             "x": 13
         },
         {
             "id": "GTDA",
             "name": "The Drake Aided",
-            "type": "global",
+            "type": "Global",
             "x": 13
         },
         {
             "id": "GCRD",
             "name": "City Rule: Demonic",
-            "type": "global",
+            "type": "Global",
             "group": "CR",
             "x": 22.3
         },
         {
             "id": "PTTT",
             "name": "Trough the Trench",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "PRA",
             "name": "Redthorn's Aid",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "PATD",
             "name": "Across the Divide",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "GTVF",
             "name": "The Voice Freed",
-            "type": "global",
+            "type": "Global",
             "x": 17.7
         },
         {
             "id": "GTVS",
             "name": "The Voice Silenced",
-            "type": "global",
+            "type": "Global",
             "x": 17.7
         },
         {
             "id": "GWB",
             "name": "Water-Breathing",
-            "type": "global",
+            "type": "Global",
             "x": 52.8
         },
         {
             "id": "GEOC",
             "name": "End of Corruption",
-            "type": "global",
+            "type": "Global",
             "x": 67.7,
             "upgrades": [
                 "GEOC2",
@@ -248,39 +248,39 @@
         },
         {
             "id": "GEOC2",
-            "name": "End of Corruption (2)",
-            "type": "global",
+            "name": "End of Corruption x2",
+            "type": "Global",
             "x": 67.7,
             "hidden": true
         },
         {
             "id": "GEOC3",
-            "name": "End of Corruption (3)",
-            "type": "global",
+            "name": "End of Corruption x3",
+            "type": "Global",
             "x": 67.7,
             "hidden": true
         },
         {
             "id": "GAOO",
             "name": "Annihilation of Order",
-            "type": "global",
+            "type": "Global",
             "x": 83.7
         },
         {
             "id": "GEOG",
             "name": "End of Gloom",
-            "type": "global",
+            "type": "Global",
             "x": 73.4
         },
         {
             "id": "PTPS",
             "name": "The Poison's Source",
-            "type": "party"
+            "type": "Party"
         },
         {
             "id": "PTTN",
             "name": "Through the Nest",
-            "type": "party"
+            "type": "Party"
         }
     ]
 }

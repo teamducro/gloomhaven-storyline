@@ -1195,12 +1195,14 @@
             "requirements": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
             "required_by": [
                 {
+                    "hidden_when" : ["GAR2"],
                     "complete": [
                         "GTPE",
                         "GAR"
                     ]
                 },
                 {
+                    "hidden_when": ["GAL","GAR", "GAC"],
                     "complete": [
                         "GTPE",
                         "GAR2"
@@ -2005,11 +2007,6 @@
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE",
             "required_by": [
-                {
-                    "complete": [
-                        "GCRD"
-                    ]
-                },
                 {
                     "complete": [
                         "GCRD"
