@@ -21,19 +21,19 @@
                     <div class="xs:flex w-full -ml-2 mb-2">
                         <radio v-if="scenario.is_side"
                                class="whitespace-no-wrap"
-                               id="hidden" group="states" label="Not unlocked"
+                               id="hidden" group="states" :label="$t('Not unlocked')"
                                :key="'hidden-' + stateKey"
                                :checked="scenario.isHidden()"
                                @changed="stateChanged"
                         ></radio>
                         <div class="flex w-full">
-                            <radio id="incomplete" group="states" :label="$t('general.incomplete')"
+                            <radio id="incomplete" group="states" :label="$t('Incomplete')"
                                    :key="'incomplete-' + stateKey"
                                    :checked="scenario.isIncomplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
                                    @changed="stateChanged"
                             ></radio>
-                            <radio id="complete" group="states" :label="$t('general.complete')"
+                            <radio id="complete" group="states" :label="$t('Complete')"
                                    :key="'complete-' + stateKey"
                                    :checked="scenario.isComplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
@@ -55,7 +55,7 @@
                             <i v-if="scenario.isRequired() || scenario.isBlocked()"
                                class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
                             <i v-else class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
-                            Requirements: {{ scenario.requirements }}
+                            {{ $t('Requirements') }}: {{ scenario.requirements }}
                         </div>
 
                         <div class="mt-4 mb-2"
@@ -63,13 +63,13 @@
                             <button class="mdc-button origin-left transform scale-75 mdc-button--raised"
                                     @click="treasuresVisible = true">
                                 <i class="material-icons mdc-button__icon">attach_money</i>
-                                <span class="mdc-button__label">Show treasures</span>
+                                <span class="mdc-button__label">{{ $t('Show treasures') }}</span>
                             </button>
                         </div>
 
                         <div class="my-2"
                              v-if="(scenario.isComplete() || treasuresVisible) && scenario.treasures.isNotEmpty()">
-                            <h2 class="text-white">Treasures</h2>
+                            <h2 class="text-white">{{ $t('Treasures') }}</h2>
                             <div v-if="scenario.treasures.isNotEmpty()"
                                  v-for="(treasure, id) in scenario.treasures.items" :key="id"
                                  class="flex items-center -ml-2">
@@ -83,7 +83,7 @@
                         </div>
                         <p class="mb-2"
                            v-if="!scenario.isComplete() && scenario.treasures.isEmpty() && treasuresVisible">
-                            No treasures available.
+                            {{ $t('No treasures available.') }}
                         </p>
 
                         <template if="achievements" v-for="(x, is_global) in achievements">
@@ -91,9 +91,9 @@
                                 <div class="my-2 flex flex-col items-start"
                                      v-if="!y.isEmpty()">
                                     <h2 class="text-white">
-                                        {{ is_awarded ? '' : 'Lost' }}
-                                        {{ is_global ? 'Global' : 'Party' }}
-                                        {{ y.count() > 1 ? 'Achievements' : 'Achievement' }}
+                                        {{ is_awarded ? '' : $t('Lost') }}
+                                        {{ is_global ? $t('Global') : $t('Party') }}
+                                        {{ $tc('Achievement', y.count()) }}
                                     </h2>
                                     <div v-for="achievement in y"
                                          class="flex items-center">
@@ -110,21 +110,7 @@
                             </template>
                         </template>
 
-                        <div class="my-2"
-                             v-if="scenario.isComplete() && !scenario.rewards.isEmpty()">
-                            <h2 class="text-white">
-                                {{ scenario.rewards.count() > 1 ? 'Rewards' : 'Reward' }}
-                            </h2>
-                            <template v-if="typeof scenario.rewards.first() === 'string'">
-                                <span>{{ scenario.rewards.join(', ') }}</span>
-                            </template>
-                            <template v-if="Array.isArray(scenario.rewards.first())"
-                                      v-for="(rewards, index) in scenario.rewards">
-                                <div>Conclusion <span class="uppercase">{{ n2l.convert(index) }}</span>:
-                                    {{ rewards.join(', ') }}
-                                </div>
-                            </template>
-                        </div>
+                        <rewards :scenario="scenario"></rewards>
 
                         <div class="mb-3 flex flex-col items-start">
                             <template v-for="(quest, index) in quests">
@@ -135,7 +121,7 @@
                                             {{ $t(quest.name) }}
                                         </template>
                                         <template v-else>
-                                            {{ scenario.isComplete() ? 'Summary' : 'Preceding events' }}
+                                            {{ scenario.isComplete() ? $t('Summary') : $t('Preceding events') }}
                                         </template>
                                     </span>
                                     <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
@@ -187,7 +173,7 @@
                                 <div class="mdc-notched-outline">
                                     <div class="mdc-notched-outline__leading"></div>
                                     <div class="mdc-notched-outline__notch">
-                                        <label for="notes" class="mdc-floating-label">Notes</label>
+                                        <label for="notes" class="mdc-floating-label">{{ $t('Notes') }}</label>
                                     </div>
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
@@ -197,7 +183,7 @@
                         <div class="flex items-center mb-6">
                             <button class="mdc-button mdc-button--raised" @click="openPages()">
                                 <i class="material-icons mdc-button__icon">menu_book</i>
-                                <span class="mdc-button__label">{{ $t('pages') }}</span>
+                                <span class="mdc-button__label">{{ $t('Pages') }}</span>
                             </button>
                             <div class="ml-auto w-20"
                                  :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
@@ -239,12 +225,12 @@
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../../models/ScenarioState";
     import PreloadImage from "../../services/PreloadImage";
-    import N2l from "../../services/N2l";
     import ScenarioNumber from "../elements/ScenarioNumber";
+    import Rewards from "../presenters/scenario/Rewards";
     import DecisionPrompt from "./DecisionPrompt";
 
     export default {
-        components: {GenericPrompt: DecisionPrompt, ScenarioNumber},
+        components: {DecisionPrompt, Rewards, ScenarioNumber},
         data() {
             return {
                 scenario: null,
@@ -255,8 +241,7 @@
                 scenarioRepository: new ScenarioRepository(),
                 achievementRepository: new AchievementRepository(),
                 choiceService: new ChoiceService(),
-                preloadImage: new PreloadImage(),
-                n2l: new N2l()
+                preloadImage: new PreloadImage()
             }
         },
         mounted() {
@@ -405,17 +390,3 @@
         border-left: none;
     }
 </style>
-
-<i18n>
-    {
-    "en": {
-    "pages": "pages"
-    },
-    "de": {
-    "pages": "seiten"
-    },
-    "fr": {
-    "pages": "pages"
-    }
-    }
-</i18n>

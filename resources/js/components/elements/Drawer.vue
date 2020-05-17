@@ -6,7 +6,7 @@
 
         <aside ref="menu" class="mdc-drawer mdc-drawer--modal">
             <div class="mdc-drawer__header">
-                <webp class="w-3/4 mt-4" alt="Gloomhaven" src="img/gloomhaven-logo.png"></webp>
+                <webp class="w-3/4 mt-4" alt="Gloomhaven" src="/img/gloomhaven-logo.png"/>
             </div>
             <div class="mdc-drawer__content">
                 <div class="mdc-list-group">
@@ -14,28 +14,29 @@
                         <li @click="toggle">
                             <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
-                                <span class="mdc-list-item__text">Storyline</span>
+                                <span class="mdc-list-item__text">{{ $t('Storyline') }}</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
                             <router-link to="/map" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">map</i>
-                                <span class="mdc-list-item__text">Map</span>
+                                <span class="mdc-list-item__text">{{ $t('Map') }}</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
                             <router-link to="/scenarios" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">list</i>
-                                <span class="mdc-list-item__text">Scenario list</span>
+                                <span class="mdc-list-item__text">{{ $t('Scenario list') }}</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="/achievements" class="mdc-list-item" active-class="mdc-list-item--activated">
+                            <router-link to="/achievements" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">emoji_events</i>
-                                <span class="mdc-list-item__text">Achievements</span>
+                                <span class="mdc-list-item__text">{{ $t('Achievements') }}</span>
                             </router-link>
                         </li>
 
@@ -47,14 +48,14 @@
                         <li>
                             <a class="mdc-list-item" @click="$bus.$emit('open-share-modal')">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">share</i>
-                                <span class="mdc-list-item__text">Share</span>
+                                <span class="mdc-list-item__text">{{ $t('Share') }}</span>
                             </a>
                         </li>
 
                         <li>
                             <a class="mdc-list-item" @click="$bus.$emit('open-reset-modal')">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete_forever</i>
-                                <span class="mdc-list-item__text">Reset</span>
+                                <span class="mdc-list-item__text">{{ $t('Reset') }}</span>
                             </a>
                         </li>
 
@@ -64,7 +65,7 @@
                             <a class="mdc-list-item" @click="$bus.$emit('open-about-us-modal')">
                                 <i class="material-icons mdc-list-item__graphic"
                                    aria-hidden="true">supervisor_account</i>
-                                <span class="mdc-list-item__text">Our party</span>
+                                <span class="mdc-list-item__text">{{ $t('Our party') }}</span>
                             </a>
                         </li>
 
@@ -72,15 +73,15 @@
                             <a class="mdc-list-item" @click="$bus.$emit('open-credits-modal')">
                                 <i class="material-icons mdc-list-item__graphic"
                                    aria-hidden="true">emoji_people</i>
-                                <span class="mdc-list-item__text">Credits</span>
+                                <span class="mdc-list-item__text">{{ $t('Credits') }}</span>
                             </a>
                         </li>
 
                         <li>
-                            <a class="mdc-list-item" target="_blank"
+                            <a class="mdc-list-item" target="_blank" rel="noreferrer"
                                href="https://github.com/teamducro/gloomhaven-storyline">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">code</i>
-                                <span class="mdc-list-item__text">Source</span>
+                                <span class="mdc-list-item__text">{{ $t('Source') }}</span>
                             </a>
                         </li>
 

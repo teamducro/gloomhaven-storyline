@@ -16,9 +16,9 @@ class Achievement {
         this._count = 0;
 
         this.fieldsToStore = {
-            "awarded": "_awarded",
-            "count": "_count",
-            "lost": "_lost"
+            "awarded": {"_awarded": this._awarded},
+            "count": {"_count": this._count},
+            "lost": {"_lost": this._lost}
         };
 
         this.read();
@@ -84,6 +84,10 @@ class Achievement {
     get image() {
         const file = this.count > 1 ? this.id + this.count : this.id;
         return '/img/achievements/' + file + '.png';
+    }
+
+    key() {
+        return 'achievement-' + this.id;
     }
 }
 

@@ -3,6 +3,7 @@ import AchievementRepository from "../repositories/AchievementRepository";
 import {ScenarioState} from "../models/ScenarioState";
 import QuestValidator from "./QuestValidator";
 import ChoiceService from "./ChoiceService";
+import AchievementValidator from "./AchievementValidator";
 
 export default class ScenarioValidator {
 
@@ -23,6 +24,7 @@ export default class ScenarioValidator {
             count++;
         }
 
+        this.achievementValidator.validate();
         this.questValidator.validate();
     }
 
@@ -143,6 +145,10 @@ export default class ScenarioValidator {
 
     get achievementRepository() {
         return this._achievementRepository || (this._achievementRepository = new AchievementRepository);
+    }
+
+    get achievementValidator() {
+        return this._achievementValidator || (this._achievementValidator = new AchievementValidator);
     }
 
     get questValidator() {

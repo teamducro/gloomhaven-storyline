@@ -1,13 +1,20 @@
+<template>
+    <component v-bind:is="render()"></component>
+</template>
 <script>
     class Svg {
         constructor(src) {
             let div = document.createElement('div');
-            div.innerHTML = require('../../../svg/' + src + '.svg');
+            if (!src.endsWith('.svg')) {
+                src += '.svg';
+            }
+            div.innerHTML = require('../../../img/' + src);
 
             let fragment = document.createDocumentFragment();
             fragment.appendChild(div);
 
             this.svg = fragment.querySelector('svg');
+            this.container = div;
         }
 
         classes(classes) {
@@ -49,23 +56,43 @@
         }
 
         toString() {
-            return this.svg.outerHTML;
+            this.stripScriptsAndStyles();
+            return this.container.outerHTML;
+        }
+
+        stripScriptsAndStyles() {
+            let scripts = this.svg.getElementsByTagName('script');
+            let styles = this.svg.getElementsByTagName('style');
+
+            for (let script of scripts) {
+                this.svg.removeChild(script);
+            }
+            for (let style of styles) {
+                this.svg.removeChild(style);
+            }
         }
     }
 
     export default {
-        props: ['src', 'classes', 'width', 'height', 'id'],
+        props: {
+            src: String,
+            classes: Array,
+            width: Number,
+            height: Number,
+            id: String,
+        },
 
-        render(h) {
-            return h('div', {
-                domProps: {
-                    innerHTML: new Svg(this.src)
+        methods: {
+            render() {
+                return {
+                    template: new Svg(this.src)
                         .classes(this.classes)
                         .width(this.width)
                         .height(this.height)
                         .id(this.id)
-                }
-            });
+                        .toString()
+                };
+            }
         }
     };
 </script>

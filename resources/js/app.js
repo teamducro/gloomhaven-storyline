@@ -89,6 +89,8 @@ window.app = new Vue({
         this.shouldRedirectToDotCom();
 
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
+
+        this.$bus.$emit('open-donations');
     },
     methods: {
         async fetchAchievements() {

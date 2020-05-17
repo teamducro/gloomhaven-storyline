@@ -40,6 +40,6 @@ export default class QuestValidator {
     }
 
     get scenarioRepository() {
-        return this.scenarioRepository2 || (this.scenarioRepository2 = new ScenarioRepository);
+        return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository);
     }
 }

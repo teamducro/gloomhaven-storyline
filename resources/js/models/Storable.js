@@ -4,6 +4,9 @@ export default {
     store() {
         const valuesToStore = collect(this.fieldsToStore || [])
             .map((modelKey) => {
+                if (typeof modelKey === 'object') {
+                    modelKey = Object.keys(modelKey)[0];
+                }
                 return this[modelKey];
             }).all();
         store.set(this.key(), valuesToStore);
@@ -14,12 +17,15 @@ export default {
         if (model) {
             const fieldsToStore = collect(this.fieldsToStore || []);
             fieldsToStore.each((modelKey, storeKey) => {
-                this[modelKey] = model[storeKey];
+                let defaultValue = undefined;
+                // support for default values from local storage
+                if (typeof modelKey === 'object') {
+                    const key = Object.keys(modelKey)[0];
+                    defaultValue = modelKey[key];
+                    modelKey = key;
+                }
+                this[modelKey] = model[storeKey] || defaultValue;
             });
         }
-    },
-
-    key() {
-        return this.constructor.name.toLowerCase() + '-' + this.id;
     }
 }

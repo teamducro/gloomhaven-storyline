@@ -43,7 +43,7 @@ class Scenario {
             "choice": "_choice",
             "promptChoice": "_promptChoice",
             "notes": "notes",
-            "treasures": "unlockedTreasures"
+            "treasures": {"unlockedTreasures": this.unlockedTreasures}
         };
 
         this.read();
@@ -149,6 +149,10 @@ class Scenario {
 
     image() {
         return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
+    }
+
+    key() {
+        return 'scenario-' + this.id;
     }
 
 }
