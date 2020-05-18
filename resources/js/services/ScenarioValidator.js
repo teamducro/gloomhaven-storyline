@@ -66,10 +66,11 @@ export default class ScenarioValidator {
             }
         }
 
-        if (scenario.hasChoices && scenario.choice && scenario.isComplete() === false) {
+        if (scenario.hasChoices && scenario.choice && scenario.isIncomplete()) {
             scenario.choice = null;
         }
-        if (scenario.hasPrompt && scenario.isComplete() === false) {
+
+        if (scenario.hasPrompt && scenario.isIncomplete()) {
             let promptConfig = this.choiceService.getPromptConfig(scenario);
             if (promptConfig.callback) {
                 promptConfig.callback(null);

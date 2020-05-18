@@ -222,7 +222,7 @@
                 @closing="chooseModalClosing"
         ></choose>
         <decision-prompt v-if="scenario" ref="generic-prompt"
-                         v-bind:config="prompt">
+                         :config="prompt">
         </decision-prompt>
     </div>
 </template>
@@ -385,11 +385,9 @@
                     id: id
                 });
             },
-
             processPrompt(scenario) {
                 return this.choiceService.getPromptConfig(scenario) || {show: false};
             }
-
         }
     }
 </script>
