@@ -18,18 +18,18 @@ class Achievement {
         this.fieldsToStore = {
             "awarded": {"_awarded": this._awarded},
             "count": {"_count": this._count},
-            "lost": {"_lost" : this._lost}
+            "lost": {"_lost": this._lost}
         };
 
         this.read();
     }
 
     isGlobal() {
-        return this.type === 'global';
+        return this.type === 'Global';
     }
 
     isParty() {
-        return this.type === 'party';
+        return this.type === 'Party';
     }
 
     gain() {

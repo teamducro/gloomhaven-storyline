@@ -1,19 +1,19 @@
 <template>
     <span>
         <template class="w-full requirements-list" v-for="(condition, conditionIndex) in conditionsFiltered">
-            <div class="w-full" v-for="(requirement, requirementIndex) in requiredAchievements(condition)">
-                <span :class="{'text-incomplete' : requirementNotMet(requirement)}"
-                      @click="openAchievement(requirement.achievement.id)">
+            <div class="w-full" v-for="(requirement, requirementIndex) in condition.requirements">
+                <span class="flex items-center">
+                    <i v-if="(conditionsFiltered.length > 1 || condition.requirements.length > 1) && requirementNotMet(requirement)"
+                       class="material-icons text-incomplete text-lg mr-1">error_outline</i>
                     {{ requirement.achievement.name }} ({{ $t(requirement.achievement.type) }})
-                    {{ $t(requirement.type).toUpperCase() }}
+                    {{ $t(requirement.state).toUpperCase() }}
+                    <template v-if="requirementIndex + 1 < condition.requirements.length">
+                        and
+                    </template>
+                    <template v-if="conditionIndex + 1 < conditionsFiltered.length">
+                        or
+                    </template>
                 </span>
-                <template v-if="requirementIndex + 1 < requiredAchievements(condition).length"
-                          class="separator">
-                    and
-                </template>
-                <template v-if="conditionIndex + 1 < conditionsFiltered.length" class="separator">
-                    or
-                </template>
             </div>
         </template>
     </span>
@@ -45,6 +45,9 @@
                         return true;
                     }
                     return !this.achievementRepository.findMany(c.hidden_when).contains((a) => a.awarded);
+                }).map((condition) => {
+                    condition.requirements = this.requiredAchievements(condition);
+                    return condition;
                 }).all();
             }
         },
@@ -54,16 +57,18 @@
                     .transform((item) => {
                         return {
                             "achievement": this.achievementRepository.find(item),
-                            "type": "Complete"
+                            "state": "Complete"
                         }
                     });
                 let incomplete = collect(condition.incomplete || [])
                     .transform((item) => {
                         return {
                             "achievement": this.achievementRepository.find(item),
-                            "type": "Incomplete"
+                            "state": "Incomplete"
                         }
                     });
+
+                console.log('test');
 
                 return complete.items.concat(incomplete.items);
             },
@@ -73,8 +78,8 @@
                 }
 
                 let achievement = this.achievementRepository.find(requirement.achievement.id);
-                if (requirement.type === "Complete" && !achievement.awarded ||
-                    (requirement.type === "Incomplete" && achievement.awarded)) {
+                if (requirement.state === "Complete" && !achievement.awarded ||
+                    (requirement.state === "Incomplete" && achievement.awarded)) {
                     return true;
                 }
 

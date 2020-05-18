@@ -51,14 +51,14 @@
 
                     <template v-if="scenario.isVisible()">
 
-                        <div v-if="scenario.requirements">
+                        <div v-if="scenario.required_by.isNotEmpty()">
                             <div class="flex flex-wrap" style="margin-left: -2px;">
-                                <div class="w-full mb-2 flex items-center">
+                                <div class="w-full flex items-center">
                                     <i v-if="scenario.isRequired() || scenario.isBlocked()"
                                        class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
                                     <i v-else
                                        class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
-                                    <div>{{ $t('Requirements') }}:</div>
+                                    <span>{{ $t('Requirements') }}:</span>
                                 </div>
                                 <div class="ml-8">
                                     <requirement :conditions="scenario.required_by"
@@ -222,7 +222,7 @@
                 @closing="chooseModalClosing"
         ></choose>
         <decision-prompt v-if="scenario" ref="generic-prompt"
-                        v-bind:config="prompt">
+                         v-bind:config="prompt">
         </decision-prompt>
     </div>
 </template>
