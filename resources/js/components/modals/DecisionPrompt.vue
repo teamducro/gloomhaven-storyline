@@ -2,8 +2,8 @@
     <div>
         <modal ref="modal" :title="$t(config.title)">
             <template v-slot:content>
-                <div class="flex flex-col">
-                    {{$t(config.text)}}
+                <div class="flex flex-col mb-4">
+                    {{ $t(config.text) }}
                 </div>
                 <div class="flex flex-col">
                     <radio v-for="option in config.options"

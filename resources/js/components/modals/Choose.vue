@@ -46,9 +46,6 @@
             this.$refs['modal'].$on('closing', (event) => {
                 this.$emit('closing', event.detail.action);
             });
-            this.$refs['modal'].$on('closed', (event) => {
-                this.$emit('closed', event.detail.action);
-            });
         },
         methods: {
             open() {
