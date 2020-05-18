@@ -6,8 +6,7 @@ class Scenario {
 
     constructor(data) {
         this.id = data.id;
-        this.name = data.name;
-        this.title = this.name.substr(this.name.indexOf(' ') + 1);
+        this._name = data.name;
         this.coordinates = data.coordinates;
         this.is_side = data.is_side || false;
         this.pages = data.pages || [];
@@ -90,6 +89,14 @@ class Scenario {
 
     get choice() {
         return this._choice;
+    }
+
+    get name() {
+        return app.$t('scenarios.' + this._name);
+    }
+
+    get title() {
+        return `#${this.id} ${this.name}`;
     }
 
     unlockTreasure(id, unlock = true) {
