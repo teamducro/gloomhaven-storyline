@@ -14,7 +14,6 @@ export default class ShareState {
 
             if (result.hasOwnProperty('groups')) {
                 result.groups.each((achievements, id) => {
-                    console.log(achievements);
                     (new AchievementGroup(id)).achievements = achievements;
                 });
             }
@@ -37,7 +36,7 @@ export default class ShareState {
                 });
             }
 
-            location.href = this.url();
+            location.href = this.url() + '#/story';
         }
     }
 
