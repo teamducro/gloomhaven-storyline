@@ -105,7 +105,7 @@ export default class ScenarioRepository {
         if (scenario.achievements_awarded) {
             scenario.achievements_awarded.each(id => {
                 if (this.awardedFrom(id).isEmpty() || this.achievementRepository.find(id).upgrades.length) {
-                    this.achievementRepository.lose(id);
+                    this.achievementRepository.remove(id);
                 }
             })
         }
@@ -140,6 +140,15 @@ export default class ScenarioRepository {
     awardedFrom(achievement) {
         if (typeof achievement === 'string') {
             achievement = this.achievementRepository.find(achievement);
+        }
+
+        let baseAchievement = this.achievementRepository
+            .where((a) => {
+                return a.upgrades.includes(achievement.id);
+            })
+            .first();
+        if (baseAchievement) {
+            achievement = baseAchievement;
         }
 
         return this.where((scenario, key) => {

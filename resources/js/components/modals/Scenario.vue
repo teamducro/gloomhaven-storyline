@@ -5,12 +5,14 @@
                 <div id="scenario-title" class="pl-6 border-b border-white2-25"
                      :class="{'pb-2': scenario.regions, 'pb-4': !scenario.regions}">
                     <h2 class="mdc-dialog__title p-0 leading-none">
-                        {{ scenario.isVisible() ? scenario.name : '#' + scenario.id }}
+                        {{ scenario.isVisible() ? scenario.title : '#' + scenario.id }}
                         <span class="text-sm text-white2-50">{{ scenario.coordinates.name }}</span>
+                        <span class="absolute right-0 top-0">
                         <button type="button" data-mdc-dialog-action="close"
-                                class="mdc-button absolute right-0 top-0 mt-4">
+                                class="mdc-button mt-4">
                             <i class="material-icons">close</i>
                         </button>
+                        </span>
                     </h2>
                     <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">{{ scenario.regions.pluck('name').implode(', ') }}</span>
                 </div>
@@ -19,19 +21,19 @@
                     <div class="xs:flex w-full -ml-2 mb-2">
                         <radio v-if="scenario.is_side"
                                class="whitespace-no-wrap"
-                               id="hidden" group="states" label="Not unlocked"
+                               id="hidden" group="states" :label="$t('Not unlocked')"
                                :key="'hidden-' + stateKey"
                                :checked="scenario.isHidden()"
                                @changed="stateChanged"
                         ></radio>
                         <div class="flex w-full">
-                            <radio id="incomplete" group="states" :label="$t('general.incomplete')"
+                            <radio id="incomplete" group="states" :label="$t('Incomplete')"
                                    :key="'incomplete-' + stateKey"
                                    :checked="scenario.isIncomplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
                                    @changed="stateChanged"
                             ></radio>
-                            <radio id="complete" group="states" :label="$t('general.complete')"
+                            <radio id="complete" group="states" :label="$t('Complete')"
                                    :key="'complete-' + stateKey"
                                    :checked="scenario.isComplete()"
                                    :disabled="scenario.isBlocked() || scenario.isRequired()"
@@ -49,11 +51,22 @@
 
                     <template v-if="scenario.isVisible()">
 
-                        <div v-if="scenario.requirements" class="mb-2 flex items-center" style="margin-left: -2px;">
-                            <i v-if="scenario.isRequired() || scenario.isBlocked()"
-                               class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
-                            <i v-else class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
-                            Requirements: {{ scenario.requirements }}
+                        <div v-if="scenario.requirements">
+                            <div class="flex flex-wrap" style="margin-left: -2px;">
+                                <div class="w-full flex items-center">
+                                    <i v-if="scenario.isRequired() || scenario.isBlocked()"
+                                       class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
+                                    <i v-else
+                                       class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
+                                    <span>{{ $t('Requirements') }}:</span>
+                                </div>
+                                <div class="ml-8">
+                                    <requirement :conditions="scenario.required_by"
+                                                 v-if="scenario.required_by.isNotEmpty()"
+                                                 :scenarioState="scenario.state"></requirement>
+                                    <span v-else>{{ scenario.requirements }}</span>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="mt-4 mb-2"
@@ -61,13 +74,13 @@
                             <button class="mdc-button origin-left transform scale-75 mdc-button--raised"
                                     @click="treasuresVisible = true">
                                 <i class="material-icons mdc-button__icon">attach_money</i>
-                                <span class="mdc-button__label">Show treasures</span>
+                                <span class="mdc-button__label">{{ $t('Show treasures') }}</span>
                             </button>
                         </div>
 
                         <div class="my-2"
                              v-if="(scenario.isComplete() || treasuresVisible) && scenario.treasures.isNotEmpty()">
-                            <h2 class="text-white">Treasures</h2>
+                            <h2 class="text-white">{{ $t('Treasures') }}</h2>
                             <div v-if="scenario.treasures.isNotEmpty()"
                                  v-for="(treasure, id) in scenario.treasures.items" :key="id"
                                  class="flex items-center -ml-2">
@@ -81,7 +94,7 @@
                         </div>
                         <p class="mb-2"
                            v-if="!scenario.isComplete() && scenario.treasures.isEmpty() && treasuresVisible">
-                            No treasures available.
+                            {{ $t('No treasures available.') }}
                         </p>
 
                         <template if="achievements" v-for="(x, is_global) in achievements">
@@ -89,9 +102,9 @@
                                 <div class="my-2 flex flex-col items-start"
                                      v-if="!y.isEmpty()">
                                     <h2 class="text-white">
-                                        {{ is_awarded ? '' : 'Lost' }}
-                                        {{ is_global ? 'Global' : 'Party' }}
-                                        {{ y.count() > 1 ? 'Achievements' : 'Achievement' }}
+                                        {{ is_awarded ? '' : $t('Lost') }}
+                                        {{ is_global ? $t('Global') : $t('Party') }}
+                                        {{ $tc('Achievement', y.count()) }}
                                     </h2>
                                     <div v-for="achievement in y"
                                          class="flex items-center">
@@ -111,7 +124,7 @@
                         <rewards :scenario="scenario"></rewards>
 
                         <div class="mb-3 flex flex-col items-start">
-                            <template v-for="(quest, index) in scenario.quests">
+                            <template v-for="(quest, index) in quests">
                                 <button class="mdc-button normal-case -ml-2"
                                         @click="toggleQuest(index)">
                                     <span class="mdc-button__label font-title text-white">
@@ -119,7 +132,7 @@
                                             {{ $t(quest.name) }}
                                         </template>
                                         <template v-else>
-                                            {{ scenario.isComplete() ? 'Summary' : 'Preceding events' }}
+                                            {{ scenario.isComplete() ? $t('Summary') : $t('Preceding events') }}
                                         </template>
                                     </span>
                                     <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
@@ -171,7 +184,7 @@
                                 <div class="mdc-notched-outline">
                                     <div class="mdc-notched-outline__leading"></div>
                                     <div class="mdc-notched-outline__notch">
-                                        <label for="notes" class="mdc-floating-label">Notes</label>
+                                        <label for="notes" class="mdc-floating-label">{{ $t('Notes') }}</label>
                                     </div>
                                     <div class="mdc-notched-outline__trailing"></div>
                                 </div>
@@ -181,7 +194,7 @@
                         <div class="flex items-center mb-6">
                             <button class="mdc-button mdc-button--raised" @click="openPages()">
                                 <i class="material-icons mdc-button__icon">menu_book</i>
-                                <span class="mdc-button__label">{{ $t('pages') }}</span>
+                                <span class="mdc-button__label">{{ $t('Pages') }}</span>
                             </button>
                             <div class="ml-auto w-20"
                                  :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
@@ -210,20 +223,27 @@
                 @scenario-chosen="scenarioChosen"
                 @closing="chooseModalClosing"
         ></choose>
+        <decision-prompt v-if="scenario" ref="decision-prompt"
+                         :config="prompt"
+                         @closing="decisionPromptClosing">
+        </decision-prompt>
     </div>
 </template>
 
 <script>
     import ScenarioRepository from "../../repositories/ScenarioRepository";
     import AchievementRepository from "../../repositories/AchievementRepository";
+    import ChoiceService from "../../services/ChoiceService";
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../../models/ScenarioState";
     import PreloadImage from "../../services/PreloadImage";
     import ScenarioNumber from "../elements/ScenarioNumber";
+    import Requirement from "../presenters/scenario/Requirement";
     import Rewards from "../presenters/scenario/Rewards";
+    import DecisionPrompt from "./DecisionPrompt";
 
     export default {
-        components: {Rewards, ScenarioNumber},
+        components: {DecisionPrompt, Requirement, Rewards, ScenarioNumber},
         data() {
             return {
                 scenario: null,
@@ -231,14 +251,19 @@
                 stateKey: 1,
                 questExpand: [],
                 treasuresVisible: false,
+                rollback: null,
                 scenarioRepository: new ScenarioRepository(),
                 achievementRepository: new AchievementRepository(),
-                preloadImage: new PreloadImage()
+                choiceService: new ChoiceService(),
+                preloadImage: new PreloadImage(),
             }
         },
         mounted() {
             this.$bus.$on('open-scenario', (data) => {
                 this.open(data.id);
+            });
+            this.$bus.$on('close-scenario', () => {
+                this.close();
             });
         },
         computed: {
@@ -262,34 +287,56 @@
                         .where('_awarded', '=', false);
 
                     return [[
-                        lost.where('type', '=', 'party'),
-                        awarded.where('type', '=', 'party')
+                        lost.where('type', '=', 'Party'),
+                        awarded.where('type', '=', 'Party')
                     ], [
-                        lost.where('type', '=', 'global'),
-                        awarded.where('type', '=', 'global')
+                        lost.where('type', '=', 'Global'),
+                        awarded.where('type', '=', 'Global')
                     ]];
                 }
 
                 return null;
             },
+            quests() {
+                return this.scenario.quests.filter(quest => {
+                    return quest.stage !== undefined;
+                })
+
+            },
             questCount() {
-                return this.scenario.quests.length || 0;
+                return this.quests.items.length || 0;
+            },
+            prompt() {
+                return this.processPrompt()
             }
         },
         methods: {
             stateChanged(state) {
+                if (state === ScenarioState.complete && this.prompt) {
+                    let previousState = this.scenario.state;
+                    this.rollback = () => {
+                        this.scenarioRepository.changeState(this.scenario, previousState);
+                        this.$bus.$emit('scenarios-updated');
+                    }
+                }
+
                 if (state === ScenarioState.complete && this.scenario.choices) {
                     this.$refs['choose'].open();
                 } else {
                     this.scenarioRepository.changeState(this.scenario, state);
+                    this.$bus.$emit('scenarios-updated');
                 }
-
-                this.$bus.$emit('scenarios-updated');
             },
             noteChanged() {
                 this.scenario.store();
             },
             treasureChanged(id, checked) {
+                if (checked && this.prompt) {
+                    this.rollback = () => {
+                        this.scenario.unlockTreasure(id, false);
+                    }
+                }
+
                 this.scenario.unlockTreasure(id, checked);
 
                 if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
@@ -306,6 +353,13 @@
                     this.rerenderStateSelection();
                 }
             },
+            decisionPromptClosing(action) {
+                if (action !== 'chosen' && typeof this.rollback === 'function') {
+                    this.rollback();
+                    this.chooseModalClosing(action);
+                }
+                this.rollback = null;
+            },
             toggleQuest(index) {
                 this.$set(this.questExpand, index, !this.questExpand[index]);
             },
@@ -321,6 +375,7 @@
             open(id) {
                 this.scenario = this.scenarioRepository.find(id);
                 this.treasuresVisible = false;
+                this.rollback = null;
 
                 let questCount = this.questCount + this.scenario.cards.count();
                 this.questExpand = new Array(questCount);
@@ -353,6 +408,9 @@
                 this.$bus.$emit('open-achievement', {
                     id: id
                 });
+            },
+            processPrompt() {
+                return this.choiceService.getPromptConfig(this.scenario);
             }
         }
     }
@@ -364,17 +422,3 @@
         border-left: none;
     }
 </style>
-
-<i18n>
-    {
-    "en": {
-    "pages": "pages"
-    },
-    "de": {
-    "pages": "seiten"
-    },
-    "fr": {
-    "pages": "pages"
-    }
-    }
-</i18n>

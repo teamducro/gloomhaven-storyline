@@ -1,12 +1,12 @@
 <template>
-    <modal ref="modal" title="Share Gloomhaven Storyline Tracker">
+    <modal ref="modal" :title="$t('share.title')">
         <template v-slot:content>
-            <p class="mb-2">Share your current storyline with your party members.</p>
+            <p class="mb-2">{{ $t('share.1') }}</p>
             <p class="mb-8">
                 <a v-clipboard:copy="url"
                    class="copied link">
-                    Copy the link</a>
-                or share it on one of the folowing platforms.
+                    {{ $t('share.2') }}</a>
+                {{ $t('share.3') }}
             </p>
             <social-sharing :url="url"
                             title="Gloomhaven Storyline Tracker"

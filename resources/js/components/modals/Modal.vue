@@ -4,10 +4,12 @@
             <div class="mdc-dialog__surface relative" :class="{'full-screen': fullScreen}">
                 <slot name="body">
                     <h2 class="mdc-dialog__title" :class="{'pr-16': closeButton}">{{ title }}
+                        <span class="absolute right-0 top-0">
                         <button v-if="closeButton" type="button" data-mdc-dialog-action="close"
-                                class="mdc-button absolute right-0 top-0 mt-4">
+                                class="mdc-button mt-4">
                             <i class="material-icons">close</i>
                         </button>
+                        </span>
                     </h2>
                     <div class="mdc-dialog__content">
                         <slot name="content">{{ content }}</slot>

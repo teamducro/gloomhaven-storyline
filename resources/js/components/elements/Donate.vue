@@ -7,7 +7,7 @@
         <slot>
             <button class="relative text-light-gray py-1 pl-3 pr-8 border border-light-gray border-solid rounded-full"
                     type="submit">
-                Buy me a Beer!
+                {{ $t('Buy me a Beer') }}
                 <span class="absolute top-0 right-0 -mt-2 -mr-6 bg-black text-2xl h-12 w-12 leading-12 border-2 border-light-gray border-solid rounded-full">🍻</span>
             </button>
         </slot>

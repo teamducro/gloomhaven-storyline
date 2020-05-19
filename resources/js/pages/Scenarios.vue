@@ -62,7 +62,7 @@
                            class="material-icons text-2xl mr-2">check_circle_outline</i>
                         <i v-else
                            class="material-icons text-complete text-2xl mr-2">radio_button_unchecked</i>
-                        {{ scenario.name }}
+                        {{ scenario.title }}
                     </span>
                 </template>
                 <template v-else-if="scenario.is_side">

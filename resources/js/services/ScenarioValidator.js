@@ -2,6 +2,7 @@ import ScenarioRepository from "../repositories/ScenarioRepository";
 import AchievementRepository from "../repositories/AchievementRepository";
 import {ScenarioState} from "../models/ScenarioState";
 import QuestValidator from "./QuestValidator";
+import ChoiceService from "./ChoiceService";
 import AchievementValidator from "./AchievementValidator";
 
 export default class ScenarioValidator {
@@ -65,8 +66,15 @@ export default class ScenarioValidator {
             }
         }
 
-        if (scenario.hasChoices && scenario.choice && scenario.isComplete() === false) {
+        if (scenario.hasChoices && scenario.choice && scenario.isIncomplete()) {
             scenario.choice = null;
+        }
+
+        if (scenario.hasPrompt && scenario.isIncomplete()) {
+            let promptConfig = this.choiceService.getPromptConfig(scenario);
+            if (typeof promptConfig.callback === 'function') {
+                promptConfig.callback(null);
+            }
         }
     }
 
@@ -74,16 +82,22 @@ export default class ScenarioValidator {
         if (scenario.isHidden() || scenario.isComplete() || scenario.required_by.isEmpty()) {
             return;
         }
-
         let conditions = scenario.required_by;
 
-        let shouldBeBlocked = conditions.every((condition) => {
-            let incomplete = condition.incomplete || [];
-            return incomplete.length && !incomplete.every((incompleteRequirement) => {
-                let achievement = this.achievementRepository.find(incompleteRequirement) || {};
+        let blocking_conditions = scenario.blocks_on;
+        let shouldBeBlocked = blocking_conditions.contains((condition) => {
+            let complete = condition.complete || [];
+            let completeCheck = complete.length && complete.every((achievementId) => {
+                let achievement = this.achievementRepository.find(achievementId) || {};
                 return achievement.awarded;
             });
-        }) === false;
+            let lost = condition.lost || [];
+            let lostCheck = lost.length && lost.every((achievementId) => {
+                let achievement = this.achievementRepository.find(achievementId) || {};
+                return achievement.lost;
+            });
+            return completeCheck || lostCheck;
+        });
 
         if (shouldBeBlocked) {
             if (!scenario.isBlocked()) {
@@ -94,11 +108,17 @@ export default class ScenarioValidator {
         }
 
         let shouldBeRequired = conditions.contains((condition) => {
+            let incomplete = condition.incomplete || [];
+            let allIncompleteRequirementsOk = incomplete.every((achievementId) => {
+                let achievement = this.achievementRepository.find(achievementId) || {};
+                return !achievement.awarded;
+            });
             let complete = condition.complete || [];
-            return complete.every((completeRequirement) => {
-                let achievement = this.achievementRepository.find(completeRequirement) || {};
+            let allCompleteRequirementsOk = complete.every((achievementId) => {
+                let achievement = this.achievementRepository.find(achievementId) || {};
                 return achievement.awarded;
             });
+            return allIncompleteRequirementsOk && allCompleteRequirementsOk;
         }) === false;
 
         if (shouldBeRequired && !scenario.isRequired()) {
@@ -134,5 +154,9 @@ export default class ScenarioValidator {
 
     get questValidator() {
         return this._questValidator || (this._questValidator = new QuestValidator);
+    }
+
+    get choiceService() {
+        return this._choiceService || (this._choiceService = new ChoiceService);
     }
 }
