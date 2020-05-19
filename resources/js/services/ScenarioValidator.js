@@ -72,7 +72,7 @@ export default class ScenarioValidator {
 
         if (scenario.hasPrompt && scenario.isIncomplete()) {
             let promptConfig = this.choiceService.getPromptConfig(scenario);
-            if (promptConfig.callback) {
+            if (typeof promptConfig.callback === 'function') {
                 promptConfig.callback(null);
             }
         }

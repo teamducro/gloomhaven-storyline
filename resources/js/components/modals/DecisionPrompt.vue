@@ -32,18 +32,15 @@
 
 <script>
 
+    import PromptConfig from "../../models/PromptConfig";
     import ChoiceService from "../../services/ChoiceService";
     import ScenarioRepository from "../../repositories/ScenarioRepository";
 
     export default {
         props: {
             config: {
-                type: Object,
-                default: function () {
-                    return {
-                        show: false
-                    }
-                }
+                type: PromptConfig,
+                default: () => new PromptConfig
             }
         },
         data() {
@@ -54,11 +51,13 @@
             }
         },
         mounted() {
-            this.togglePrompt(this.config.show || false);
+            this.togglePrompt(this.config.show);
             this.$bus.$on('open-scenario', (data) => {
-                this.togglePrompt(this.config.show || false);
+                this.togglePrompt(this.config.show);
             });
-
+            this.$refs['modal'].$on('closing', (event) => {
+                this.$emit('closing', event.detail.action || "chosen");
+            });
         },
         watch: {
             config: function (newVal, oldVal) {
@@ -80,7 +79,6 @@
                 this.scenarioRepository.scenarioValidator.validate();
                 this.$bus.$emit('scenarios-updated');
                 this.$bus.$emit('achievements-updated');
-
             }
         }
     }

@@ -221,8 +221,9 @@
                 @scenario-chosen="scenarioChosen"
                 @closing="chooseModalClosing"
         ></choose>
-        <decision-prompt v-if="scenario" ref="generic-prompt"
-                         :config="prompt">
+        <decision-prompt v-if="scenario" ref="decision-prompt"
+                         :config="prompt"
+                         @closing="decisionPromptClosing">
         </decision-prompt>
     </div>
 </template>
@@ -248,10 +249,11 @@
                 stateKey: 1,
                 questExpand: [],
                 treasuresVisible: false,
+                rollback: null,
                 scenarioRepository: new ScenarioRepository(),
                 achievementRepository: new AchievementRepository(),
                 choiceService: new ChoiceService(),
-                preloadImage: new PreloadImage()
+                preloadImage: new PreloadImage(),
             }
         },
         mounted() {
@@ -261,7 +263,6 @@
             this.$bus.$on('close-scenario', () => {
                 this.close();
             });
-
         },
         computed: {
             prevScenarios() {
@@ -304,23 +305,36 @@
                 return this.quests.items.length || 0;
             },
             prompt() {
-                return this.processPrompt(this.scenario)
+                return this.processPrompt()
             }
         },
         methods: {
             stateChanged(state) {
+                if (state === ScenarioState.complete && this.prompt) {
+                    let previousState = this.scenario.state;
+                    this.rollback = () => {
+                        this.scenarioRepository.changeState(this.scenario, previousState);
+                        this.$bus.$emit('scenarios-updated');
+                    }
+                }
+
                 if (state === ScenarioState.complete && this.scenario.choices) {
                     this.$refs['choose'].open();
                 } else {
                     this.scenarioRepository.changeState(this.scenario, state);
+                    this.$bus.$emit('scenarios-updated');
                 }
-
-                this.$bus.$emit('scenarios-updated');
             },
             noteChanged() {
                 this.scenario.store();
             },
             treasureChanged(id, checked) {
+                if (checked && this.prompt) {
+                    this.rollback = () => {
+                        this.scenario.unlockTreasure(id, false);
+                    }
+                }
+
                 this.scenario.unlockTreasure(id, checked);
 
                 if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
@@ -337,6 +351,13 @@
                     this.rerenderStateSelection();
                 }
             },
+            decisionPromptClosing(action) {
+                if (action !== 'chosen' && typeof this.rollback === 'function') {
+                    this.rollback();
+                    this.chooseModalClosing(action);
+                }
+                this.rollback = null;
+            },
             toggleQuest(index) {
                 this.$set(this.questExpand, index, !this.questExpand[index]);
             },
@@ -352,6 +373,7 @@
             open(id) {
                 this.scenario = this.scenarioRepository.find(id);
                 this.treasuresVisible = false;
+                this.rollback = null;
 
                 let questCount = this.questCount + this.scenario.cards.count();
                 this.questExpand = new Array(questCount);
@@ -385,8 +407,8 @@
                     id: id
                 });
             },
-            processPrompt(scenario) {
-                return this.choiceService.getPromptConfig(scenario) || {show: false};
+            processPrompt() {
+                return this.choiceService.getPromptConfig(this.scenario);
             }
         }
     }

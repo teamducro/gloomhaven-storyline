@@ -1,7 +1,8 @@
+import PromptConfig from "../models/PromptConfig";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import AchievementRepository from "../repositories/AchievementRepository";
 
-export default class ChoiceService {
+class ChoiceService {
     constructor() {
     }
 
@@ -20,13 +21,12 @@ export default class ChoiceService {
     }
 
     getPromptConfig(scenario) {
-        const self = this;
-
         switch (scenario.prompt) {
-            case "dragonChoice" :
+            case "dragonChoice":
                 let drakesTreasure = this.achievementRepository.find("PTDT");
                 let drakesCommand = this.achievementRepository.find("PTDC");
-                return {
+
+                return new PromptConfig({
                     show: !this.isChoiceSet(scenario.prompt) && drakesCommand.awarded && drakesTreasure.awarded,
                     title: "prompt.dragonChoice.title",
                     text: "prompt.dragonChoice.text",
@@ -43,17 +43,18 @@ export default class ChoiceService {
                             value: "dragonChoice2"
                         }
                     ],
-                    callback: function (value) {
+                    callback: (value) => {
                         if (value === "dragonChoice1") {
-                            self.achievementRepository.gain("GTDA")
+                            this.achievementRepository.gain("GTDA")
                         } else {
-                            self.achievementRepository.lose("GTDA")
+                            this.achievementRepository.lose("GTDA")
                         }
-                        self.setChoice(scenario.prompt, value);
+                        this.setChoice(scenario.prompt, value);
                     }
-                };
+                });
         }
-        return null;
+
+        return undefined;
     }
 
     isChoiceSet(id) {
@@ -64,10 +65,12 @@ export default class ChoiceService {
     }
 
     get scenarioRepository() {
-        return this.scenarioRepository2 || (this.scenarioRepository2 = new ScenarioRepository);
+        return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository);
     }
 
     get achievementRepository() {
         return this._achievementRepository || (this._achievementRepository = new AchievementRepository);
     }
 }
+
+export default ChoiceService;

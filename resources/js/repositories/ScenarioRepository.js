@@ -143,7 +143,9 @@ export default class ScenarioRepository {
         }
 
         let baseAchievement = this.achievementRepository
-            .where((a) => { return a.upgrades.includes(achievement.id); } )
+            .where((a) => {
+                return a.upgrades.includes(achievement.id);
+            })
             .first();
         if (baseAchievement) {
             achievement = baseAchievement;
