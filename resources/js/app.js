@@ -42,10 +42,12 @@ const router = new VueRouter({routes});
 Vue.use(VueRouter);
 
 // Analytics
-Vue.use(VueAnalytics, {
-    id: 'UA-162268349-1',
-    router
-});
+if (process.env.NODE_ENV === 'production') {
+    Vue.use(VueAnalytics, {
+        id: 'UA-162268349-1',
+        router
+    });
+}
 
 // Multi Language
 Vue.use(VueI18n);
