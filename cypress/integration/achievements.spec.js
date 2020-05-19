@@ -1,7 +1,7 @@
 import store from "store/dist/store.modern";
 import utilities from "../utilities";
 
-describe('Storyline', () => {
+describe('Achievements', () => {
 
     it('It gains achievements when completing a scenario', () => {
         cy.visit('/');
