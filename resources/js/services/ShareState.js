@@ -36,7 +36,7 @@ export default class ShareState {
                 });
             }
 
-            location.href = this.url();
+            location.href = this.url() + '#/story';
         }
     }
 
