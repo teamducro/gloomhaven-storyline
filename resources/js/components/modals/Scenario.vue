@@ -51,7 +51,7 @@
 
                     <template v-if="scenario.isVisible()">
 
-                        <div v-if="scenario.required_by.isNotEmpty()">
+                        <div v-if="scenario.requirements">
                             <div class="flex flex-wrap" style="margin-left: -2px;">
                                 <div class="w-full flex items-center">
                                     <i v-if="scenario.isRequired() || scenario.isBlocked()"
@@ -62,7 +62,9 @@
                                 </div>
                                 <div class="ml-8">
                                     <requirement :conditions="scenario.required_by"
+                                                 v-if="scenario.required_by.isNotEmpty()"
                                                  :scenarioState="scenario.state"></requirement>
+                                    <span v-else>{{ scenario.requirements }}</span>
                                 </div>
                             </div>
                         </div>
