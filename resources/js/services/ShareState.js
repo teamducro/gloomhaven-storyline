@@ -14,7 +14,6 @@ export default class ShareState {
 
             if (result.hasOwnProperty('groups')) {
                 result.groups.each((achievements, id) => {
-                    console.log(achievements);
                     (new AchievementGroup(id)).achievements = achievements;
                 });
             }
