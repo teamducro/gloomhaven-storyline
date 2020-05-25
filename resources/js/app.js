@@ -42,9 +42,9 @@ const router = new VueRouter({routes});
 Vue.use(VueRouter);
 
 // Analytics
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production' && process.env.MIX_GA_ID) {
     Vue.use(VueAnalytics, {
-        id: 'UA-162268349-1',
+        id: process.env.MIX_GA_ID,
         router
     });
 }
@@ -153,8 +153,7 @@ window.app = new Vue({
         },
         shouldRedirectToDotCom() {
             if (window.location.host.endsWith(".danield.nl")) {
-                const url = 'https://gloomhaven-storyline.com';
-                window.location = url + '?' + (new ShareState).encode();
+                window.location = process.env.MIX_APP_URL + '?' + (new ShareState).encode();
             }
         }
     }
