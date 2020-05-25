@@ -42,7 +42,6 @@ const router = new VueRouter({routes});
 Vue.use(VueRouter);
 
 // Analytics
-console.log(process.env.MIX_GA_ID);
 if (process.env.NODE_ENV === 'production' && process.env.MIX_GA_ID) {
     Vue.use(VueAnalytics, {
         id: process.env.MIX_GA_ID,
@@ -153,7 +152,6 @@ window.app = new Vue({
             document.documentElement.style.setProperty('--vh', `${vh}px`);
         },
         shouldRedirectToDotCom() {
-            console.log(process.env.MIX_APP_URL);
             if (window.location.host.endsWith(".danield.nl")) {
                 window.location = process.env.MIX_APP_URL + '?' + (new ShareState).encode();
             }
