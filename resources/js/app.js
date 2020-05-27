@@ -11,6 +11,7 @@ import VueAnalytics from 'vue-analytics';
 import Achievement from "./models/Achievement";
 import {loadLanguageAsync} from "./services/I18n-setup";
 import i18nEn from "./lang/en";
+import Helpers from './services/Helpers';
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -42,7 +43,7 @@ const router = new VueRouter({routes});
 Vue.use(VueRouter);
 
 // Analytics
-if (process.env.NODE_ENV === 'production' && process.env.MIX_GA_ID) {
+if (Helpers.inProduction() && process.env.MIX_GA_ID) {
     Vue.use(VueAnalytics, {
         id: process.env.MIX_GA_ID,
         router
