@@ -111,7 +111,7 @@ export default class ShareState {
     }
 
     url() {
-        return location.protocol + '//' + location.host + location.pathname;
+        return process.env.MIX_APP_URL;
     }
 
     get scenarioRepository() {
