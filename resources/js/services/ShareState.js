@@ -2,6 +2,7 @@ import {ScenarioState} from "../models/ScenarioState";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import AchievementRepository from "../repositories/AchievementRepository";
 import AchievementGroup from "../models/AchievementGroup";
+import Helpers from "./Helpers";
 
 const queryString = require('query-string');
 
@@ -111,7 +112,9 @@ export default class ShareState {
     }
 
     url() {
-        return process.env.MIX_APP_URL;
+        return Helpers.inProduction()
+            ? process.env.MIX_APP_URL
+            : location.protocol + '//' + location.host;
     }
 
     get scenarioRepository() {
