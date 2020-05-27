@@ -8,7 +8,7 @@ import AchievementRepository from "./repositories/AchievementRepository";
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';
 import VueAnalytics from 'vue-analytics';
-import Achievement from "./models/Achievement";
+import Hammer from 'hammerjs';
 import {loadLanguageAsync} from "./services/I18n-setup";
 import i18nEn from "./lang/en";
 import Helpers from './services/Helpers';
@@ -41,6 +41,16 @@ const routes = [
 ];
 const router = new VueRouter({routes});
 Vue.use(VueRouter);
+
+// Directives
+Vue.directive("tap", {
+    bind: function (el, binding) {
+        if (typeof binding.value === "function") {
+            const mc = new Hammer(el);
+            mc.on("tap", binding.value);
+        }
+    }
+});
 
 // Analytics
 if (Helpers.inProduction() && process.env.MIX_GA_ID) {
