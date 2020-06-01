@@ -68,8 +68,6 @@
                         }
                     });
 
-                console.log('test');
-
                 return complete.items.concat(incomplete.items);
             },
             requirementNotMet(requirement) {

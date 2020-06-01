@@ -8,9 +8,9 @@ import AchievementRepository from "./repositories/AchievementRepository";
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';
 import VueAnalytics from 'vue-analytics';
-import Achievement from "./models/Achievement";
 import {loadLanguageAsync} from "./services/I18n-setup";
 import i18nEn from "./lang/en";
+import Helpers from './services/Helpers';
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -29,6 +29,7 @@ const Story = () => import("./pages/Story");
 const Scenarios = () => import("./pages/Scenarios");
 const Achievements = () => import("./pages/Achievements");
 const Map = () => import("./pages/Map");
+const Info = () => import("./pages/Info");
 
 // Router
 const routes = [
@@ -37,12 +38,13 @@ const routes = [
     {path: '/scenarios', component: Scenarios},
     {path: '/map', component: Map},
     {path: '/achievements', component: Achievements},
+    {path: '/info', component: Info},
 ];
 const router = new VueRouter({routes});
 Vue.use(VueRouter);
 
 // Analytics
-if (process.env.NODE_ENV === 'production' && process.env.MIX_GA_ID) {
+if (Helpers.inProduction() && process.env.MIX_GA_ID) {
     Vue.use(VueAnalytics, {
         id: process.env.MIX_GA_ID,
         router

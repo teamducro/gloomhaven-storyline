@@ -4,7 +4,8 @@
         <div class="fixed right-0 top-0 mt-1 z-5">
             <dropdown align="right">
                 <template v-slot:trigger>
-                    <button type="button" class="mdc-icon-button material-icons p-4"
+                    <button type="button"
+                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 i-bg-black2-50 rounded-full"
                             :class="{'text-primary': filterEnabled}">
                         filter_list
                     </button>

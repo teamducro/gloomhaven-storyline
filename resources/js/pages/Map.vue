@@ -96,7 +96,6 @@
         },
         methods: {
             setScenarios() {
-                console.log(this.scale());
                 this.map.setMinZoom(this.scale());
 
                 this.scenarios = app.scenarios;

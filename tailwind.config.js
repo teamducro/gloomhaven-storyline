@@ -7,8 +7,18 @@ module.exports = {
                 default: ['Nyala', 'sans-serif'],
                 title: ['Pirata One', 'Nyala', 'sans-serif'],
             },
+            inset: {
+                'area-inset-top': 'env(safe-area-inset-top, 0)',
+                'area-inset-right': 'env(safe-area-inset-right, 0)',
+                'area-inset-bottom': 'env(safe-area-inset-bottom, 0)',
+                'area-inset-left': 'env(safe-area-inset-left, 0)'
+            },
             spacing: {
-                28: '7rem'
+                28: '7rem',
+                'area-inset-top': 'env(safe-area-inset-top, 0)',
+                'area-inset-right': 'env(safe-area-inset-right, 0)',
+                'area-inset-bottom': 'env(safe-area-inset-bottom, 0)',
+                'area-inset-left': 'env(safe-area-inset-left, 0)'
             },
             screens: {
                 xs: '400px'
@@ -48,7 +58,7 @@ module.exports = {
         // alignSelf: ['important', 'responsive'],
         // appearance: ['important', 'responsive'],
         // backgroundAttachment: ['important', 'responsive'],
-        // backgroundColor: ['important', 'responsive', 'hover', 'focus'],
+        backgroundColor: ['important', 'responsive', 'hover', 'focus'],
         // backgroundPosition: ['important', 'responsive'],
         // backgroundRepeat: ['important', 'responsive'],
         // backgroundSize: ['important', 'responsive'],
