@@ -13,7 +13,7 @@
                 <div class="mdc-list-group">
                     <ul ref="list" class="mdc-list">
                         <li @click="toggle">
-                            <router-link to="/paid" class="mdc-list-item" active-class="mdc-list-item--activated">
+                            <router-link to="/campaigns" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic"
                                    aria-hidden="true">supervisor_account</i>
                                 <span class="mdc-list-item__text">{{ $t('Paid version') }}
@@ -82,7 +82,7 @@
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
                         <li class="py-4 w-full" @click="toggle">
-                            <router-link to="/paid" class="flex justify-center -ml-6">
+                            <router-link to="/campaigns" class="flex justify-center -ml-6">
                                 <button class="relative text-light-gray py-1 pl-3 pr-8 border border-light-gray border-solid rounded-full"
                                         type="submit">
                                     {{ $t('Remove ads') }}

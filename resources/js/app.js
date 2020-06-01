@@ -30,7 +30,7 @@ const Scenarios = () => import("./pages/Scenarios");
 const Achievements = () => import("./pages/Achievements");
 const Map = () => import("./pages/Map");
 const Info = () => import("./pages/Info");
-const Paid = () => import("./pages/Paid");
+const Campaigns = () => import("./pages/Campaigns");
 
 // Router
 const routes = [
@@ -40,7 +40,7 @@ const routes = [
     {path: '/map', component: Map},
     {path: '/achievements', component: Achievements},
     {path: '/info', component: Info},
-    {path: '/paid', component: Paid},
+    {path: '/campaigns', component: Campaigns},
 ];
 const router = new VueRouter({routes});
 Vue.use(VueRouter);
