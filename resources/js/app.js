@@ -29,6 +29,7 @@ const Story = () => import("./pages/Story");
 const Scenarios = () => import("./pages/Scenarios");
 const Achievements = () => import("./pages/Achievements");
 const Map = () => import("./pages/Map");
+const Info = () => import("./pages/Info");
 
 // Router
 const routes = [
@@ -37,6 +38,7 @@ const routes = [
     {path: '/scenarios', component: Scenarios},
     {path: '/map', component: Map},
     {path: '/achievements', component: Achievements},
+    {path: '/info', component: Info},
 ];
 const router = new VueRouter({routes});
 Vue.use(VueRouter);

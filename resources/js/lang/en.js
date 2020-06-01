@@ -7,6 +7,8 @@ export default {
     'Our party': 'Our party',
     'Credits': 'Credits',
     'Source': 'Source',
+    'Open source': 'Open source',
+    'Info': 'Info',
     'Buy me a Beer': 'Buy me a Beer!',
     'Intro': 'Intro',
     'The Merchant': 'The Merchant',
