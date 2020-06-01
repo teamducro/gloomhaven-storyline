@@ -1,11 +1,13 @@
+import utilities from "../utilities";
+
 describe('Storyline', () => {
 
     it('It loads the storyline', () => {
         cy.visit('/');
 
-        cy.get('#chapter1')
-            .should('have.css', 'display')
-            .and('eq', 'inline');
+        cy.get('#chapter1').should(($chapter) => {
+            expect($chapter).css('display', 'inline');
+        });
     });
 
     it('It switches between landscape and portrait', () => {
@@ -32,77 +34,77 @@ describe('Storyline', () => {
 
     it('It can complete a scenario', () => {
         cy.visit('/');
-        isNodeVisible(1);
-        isNodeHidden(2);
+        utilities.isNodeVisible(1);
+        utilities.isNodeHidden(2);
 
-        completeScenario(1);
+        utilities.completeScenario(1);
 
-        isNodeVisible(2);
+        utilities.isNodeVisible(2);
     });
 
     it('It can incomplete a scenario', () => {
         cy.visit('/');
-        completeScenario(1);
+        utilities.completeScenario(1);
 
-        isNodeVisible(2);
+        utilities.isNodeVisible(2);
 
-        incompleteScenario(1);
+        utilities.incompleteScenario(1);
 
-        isNodeHidden(2);
+        utilities.isNodeHidden(2);
     });
 
     it('It reveals chapters', () => {
         cy.visit('/?states=1_c-2_c');
 
-        cy.get('#chapter2')
-            .should('have.css', 'display')
-            .and('eq', 'none');
+        cy.get('#chapter2').should(($chapter) => {
+            expect($chapter).css('display', 'none');
+        });
 
-        completeScenario(3);
+        utilities.completeScenario(3);
 
-        cy.get('#chapter2')
-            .should('have.css', 'display')
-            .and('eq', 'inline');
+        cy.get('#chapter2').should(($chapter) => {
+            expect($chapter).css('display', 'inline');
+        });
     });
 
     it('It blocks blocked scenarios', () => {
         cy.visit('/?states=1_c-2_c-3_c-8_c');
 
-        isNodeBlocked(9);
-        openScenario(9);
-        cy.get('#complete')
-            .should('have.attr', 'disabled')
-            .and('eq', 'disabled');
-        closeModel();
+        utilities.isNodeBlocked(9);
+        utilities.openScenario(9);
+        cy.get('#complete').should(($radio) => {
+            expect($radio).attr('disabled', 'disabled');
+        });
+        utilities.closeModel();
     });
 
     it('It blocks required scenarios', () => {
         cy.visit('/?states=1_c-2_c-3_c-8_c');
 
-        isNodeRequired(7);
-        openScenario(7);
-        cy.get('#complete')
-            .should('have.attr', 'disabled')
-            .and('eq', 'disabled');
-        closeModel();
+        utilities.isNodeRequired(7);
+        utilities.openScenario(7);
+        cy.get('#complete').should(($radio) => {
+            expect($radio).attr('disabled', 'disabled');
+        });
+        utilities.closeModel();
     });
 
     it('It unlocks required scenarios', () => {
         cy.visit('/?states=1_c-2_c-3_c-8_c');
 
-        isNodeRequired(7);
+        utilities.isNodeRequired(7);
 
-        completeScenario(14);
+        utilities.completeScenario(14);
 
-        isNodeVisible(7);
-        cy.get('#node7 .required')
-            .should('have.css', 'display')
-            .and('eq', 'none');
+        utilities.isNodeVisible(7);
+        cy.get('#node7 .required').should(($radio) => {
+            expect($radio).css('display', 'none');
+        });
 
-        openScenario(7);
+        utilities.openScenario(7);
         cy.get('#complete')
             .should('not.have.attr', 'disabled');
-        closeModel();
+        utilities.closeModel();
     });
 
     it('It can share side scenarios', () => {
@@ -114,56 +116,10 @@ describe('Storyline', () => {
 
         cy.visit('/?states=52_i');
 
-        isNodeVisible(52);
+        utilities.isNodeVisible(52);
         cy.get('#node52.opacity-50').should(($node) => {
             expect($node).to.have.length(0);
         });
     });
-
-    function isNodeVisible(id) {
-        cy.get('#node' + id)
-            .should('have.css', 'display')
-            .and('eq', 'inline');
-    }
-
-    function isNodeHidden(id) {
-        cy.get('#node' + id)
-            .should('have.css', 'display')
-            .and('eq', 'none');
-    }
-
-    function isNodeBlocked(id) {
-        isNodeVisible(id);
-        cy.get('#node' + id + ' .blocked')
-            .should('have.css', 'display')
-            .and('eq', 'block');
-    }
-
-    function isNodeRequired(id) {
-        isNodeVisible(id);
-        cy.get('#node' + id + ' .required')
-            .should('have.css', 'display')
-            .and('eq', 'block');
-    }
-
-    function completeScenario(id) {
-        openScenario(id);
-        cy.get('#scenario-content label').contains('Complete').click();
-        closeModel();
-    }
-
-    function incompleteScenario(id) {
-        openScenario(id);
-        cy.get('#scenario-content label').contains('Incomplete').click();
-        closeModel();
-    }
-
-    function openScenario(id) {
-        cy.get('#node' + id).click();
-    }
-
-    function closeModel() {
-        cy.get('body').click('left');
-    }
 
 });

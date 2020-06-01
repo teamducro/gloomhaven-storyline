@@ -8,9 +8,9 @@ import AchievementRepository from "./repositories/AchievementRepository";
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';
 import VueAnalytics from 'vue-analytics';
-import Achievement from "./models/Achievement";
 import {loadLanguageAsync} from "./services/I18n-setup";
 import i18nEn from "./lang/en";
+import Helpers from './services/Helpers';
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -42,10 +42,12 @@ const router = new VueRouter({routes});
 Vue.use(VueRouter);
 
 // Analytics
-Vue.use(VueAnalytics, {
-    id: 'UA-162268349-1',
-    router
-});
+if (Helpers.inProduction() && process.env.MIX_GA_ID) {
+    Vue.use(VueAnalytics, {
+        id: process.env.MIX_GA_ID,
+        router
+    });
+}
 
 // Multi Language
 Vue.use(VueI18n);
@@ -151,8 +153,7 @@ window.app = new Vue({
         },
         shouldRedirectToDotCom() {
             if (window.location.host.endsWith(".danield.nl")) {
-                const url = 'https://gloomhaven-storyline.com';
-                window.location = url + '?' + (new ShareState).encode();
+                window.location = process.env.MIX_APP_URL + '?' + (new ShareState).encode();
             }
         }
     }

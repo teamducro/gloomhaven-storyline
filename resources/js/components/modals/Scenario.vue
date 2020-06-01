@@ -5,12 +5,14 @@
                 <div id="scenario-title" class="pl-6 border-b border-white2-25"
                      :class="{'pb-2': scenario.regions, 'pb-4': !scenario.regions}">
                     <h2 class="mdc-dialog__title p-0 leading-none">
-                        {{ scenario.isVisible() ? scenario.name : '#' + scenario.id }}
+                        {{ scenario.isVisible() ? scenario.title : '#' + scenario.id }}
                         <span class="text-sm text-white2-50">{{ scenario.coordinates.name }}</span>
+                        <span class="absolute right-0 top-0">
                         <button type="button" data-mdc-dialog-action="close"
-                                class="mdc-button absolute right-0 top-0 mt-4">
+                                class="mdc-button mt-4">
                             <i class="material-icons">close</i>
                         </button>
+                        </span>
                     </h2>
                     <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">{{ scenario.regions.pluck('name').implode(', ') }}</span>
                 </div>
@@ -49,11 +51,22 @@
 
                     <template v-if="scenario.isVisible()">
 
-                        <div v-if="scenario.requirements" class="mb-2 flex items-center" style="margin-left: -2px;">
-                            <i v-if="scenario.isRequired() || scenario.isBlocked()"
-                               class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
-                            <i v-else class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
-                            {{ $t('Requirements') }}: {{ scenario.requirements }}
+                        <div v-if="scenario.requirements">
+                            <div class="flex flex-wrap" style="margin-left: -2px;">
+                                <div class="w-full flex items-center">
+                                    <i v-if="scenario.isRequired() || scenario.isBlocked()"
+                                       class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
+                                    <i v-else
+                                       class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
+                                    <span>{{ $t('Requirements') }}:</span>
+                                </div>
+                                <div class="ml-8">
+                                    <requirement :conditions="scenario.required_by"
+                                                 v-if="scenario.required_by.isNotEmpty()"
+                                                 :scenarioState="scenario.state"></requirement>
+                                    <span v-else>{{ scenario.requirements }}</span>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="mt-4 mb-2"
@@ -111,7 +124,7 @@
                         <rewards :scenario="scenario"></rewards>
 
                         <div class="mb-3 flex flex-col items-start">
-                            <template v-for="(quest, index) in scenario.quests">
+                            <template v-for="(quest, index) in quests">
                                 <button class="mdc-button normal-case -ml-2"
                                         @click="toggleQuest(index)">
                                     <span class="mdc-button__label font-title text-white">
@@ -210,20 +223,27 @@
                 @scenario-chosen="scenarioChosen"
                 @closing="chooseModalClosing"
         ></choose>
+        <decision-prompt v-if="scenario" ref="decision-prompt"
+                         :config="prompt"
+                         @closing="decisionPromptClosing">
+        </decision-prompt>
     </div>
 </template>
 
 <script>
     import ScenarioRepository from "../../repositories/ScenarioRepository";
     import AchievementRepository from "../../repositories/AchievementRepository";
+    import ChoiceService from "../../services/ChoiceService";
     import {MDCTextField} from "@material/textfield/component";
     import {ScenarioState} from "../../models/ScenarioState";
     import PreloadImage from "../../services/PreloadImage";
     import ScenarioNumber from "../elements/ScenarioNumber";
+    import Requirement from "../presenters/scenario/Requirement";
     import Rewards from "../presenters/scenario/Rewards";
+    import DecisionPrompt from "./DecisionPrompt";
 
     export default {
-        components: {Rewards, ScenarioNumber},
+        components: {DecisionPrompt, Requirement, Rewards, ScenarioNumber},
         data() {
             return {
                 scenario: null,
@@ -231,14 +251,19 @@
                 stateKey: 1,
                 questExpand: [],
                 treasuresVisible: false,
+                rollback: null,
                 scenarioRepository: new ScenarioRepository(),
                 achievementRepository: new AchievementRepository(),
-                preloadImage: new PreloadImage()
+                choiceService: new ChoiceService(),
+                preloadImage: new PreloadImage(),
             }
         },
         mounted() {
             this.$bus.$on('open-scenario', (data) => {
                 this.open(data.id);
+            });
+            this.$bus.$on('close-scenario', () => {
+                this.close();
             });
         },
         computed: {
@@ -262,34 +287,56 @@
                         .where('_awarded', '=', false);
 
                     return [[
-                        lost.where('type', '=', 'party'),
-                        awarded.where('type', '=', 'party')
+                        lost.where('type', '=', 'Party'),
+                        awarded.where('type', '=', 'Party')
                     ], [
-                        lost.where('type', '=', 'global'),
-                        awarded.where('type', '=', 'global')
+                        lost.where('type', '=', 'Global'),
+                        awarded.where('type', '=', 'Global')
                     ]];
                 }
 
                 return null;
             },
+            quests() {
+                return this.scenario.quests.filter(quest => {
+                    return quest.stage !== undefined;
+                })
+
+            },
             questCount() {
-                return this.scenario.quests.length || 0;
+                return this.quests.items.length || 0;
+            },
+            prompt() {
+                return this.processPrompt()
             }
         },
         methods: {
             stateChanged(state) {
+                if (state === ScenarioState.complete && this.prompt) {
+                    let previousState = this.scenario.state;
+                    this.rollback = () => {
+                        this.scenarioRepository.changeState(this.scenario, previousState);
+                        this.$bus.$emit('scenarios-updated');
+                    }
+                }
+
                 if (state === ScenarioState.complete && this.scenario.choices) {
                     this.$refs['choose'].open();
                 } else {
                     this.scenarioRepository.changeState(this.scenario, state);
+                    this.$bus.$emit('scenarios-updated');
                 }
-
-                this.$bus.$emit('scenarios-updated');
             },
             noteChanged() {
                 this.scenario.store();
             },
             treasureChanged(id, checked) {
+                if (checked && this.prompt) {
+                    this.rollback = () => {
+                        this.scenario.unlockTreasure(id, false);
+                    }
+                }
+
                 this.scenario.unlockTreasure(id, checked);
 
                 if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
@@ -306,6 +353,13 @@
                     this.rerenderStateSelection();
                 }
             },
+            decisionPromptClosing(action) {
+                if (action !== 'chosen' && typeof this.rollback === 'function') {
+                    this.rollback();
+                    this.chooseModalClosing(action);
+                }
+                this.rollback = null;
+            },
             toggleQuest(index) {
                 this.$set(this.questExpand, index, !this.questExpand[index]);
             },
@@ -321,6 +375,7 @@
             open(id) {
                 this.scenario = this.scenarioRepository.find(id);
                 this.treasuresVisible = false;
+                this.rollback = null;
 
                 let questCount = this.questCount + this.scenario.cards.count();
                 this.questExpand = new Array(questCount);
@@ -353,6 +408,9 @@
                 this.$bus.$emit('open-achievement', {
                     id: id
                 });
+            },
+            processPrompt() {
+                return this.choiceService.getPromptConfig(this.scenario);
             }
         }
     }

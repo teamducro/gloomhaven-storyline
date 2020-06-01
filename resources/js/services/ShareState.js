@@ -2,6 +2,7 @@ import {ScenarioState} from "../models/ScenarioState";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import AchievementRepository from "../repositories/AchievementRepository";
 import AchievementGroup from "../models/AchievementGroup";
+import Helpers from "./Helpers";
 
 const queryString = require('query-string');
 
@@ -14,7 +15,6 @@ export default class ShareState {
 
             if (result.hasOwnProperty('groups')) {
                 result.groups.each((achievements, id) => {
-                    console.log(achievements);
                     (new AchievementGroup(id)).achievements = achievements;
                 });
             }
@@ -37,7 +37,7 @@ export default class ShareState {
                 });
             }
 
-            location.href = this.url();
+            location.href = this.url() + '#/story';
         }
     }
 
@@ -112,7 +112,9 @@ export default class ShareState {
     }
 
     url() {
-        return location.protocol + '//' + location.host + location.pathname;
+        return Helpers.inProduction()
+            ? process.env.MIX_APP_URL
+            : location.protocol + '//' + location.host;
     }
 
     get scenarioRepository() {

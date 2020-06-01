@@ -6,8 +6,7 @@ class Scenario {
 
     constructor(data) {
         this.id = data.id;
-        this.name = data.name;
-        this.title = this.name.substr(this.name.indexOf(' ') + 1);
+        this._name = data.name;
         this.coordinates = data.coordinates;
         this.is_side = data.is_side || false;
         this.pages = data.pages || [];
@@ -25,7 +24,8 @@ class Scenario {
         this.notes = "";
         this.links_to = collect(data.links_to);
         this.linked_from = collect(data.linked_from);
-        this.required_by = collect(data.required_by) || [];
+        this.required_by = collect(data.required_by);
+        this.blocks_on = collect(data.blocks_on);
         this.treasures = collect(data.treasures);
         this.treasures_from = collect(data.treasures_from);
         this.treasures_to = collect(data.treasures_to);
@@ -33,13 +33,17 @@ class Scenario {
         this.unlockedTreasures = [];
         this.achievements_awarded = collect(data.achievements_awarded);
         this.achievements_lost = collect(data.achievements_lost);
+        this.prompt = data.prompt;
+        this._promptChoice = null;
+        this.hasPrompt = typeof data.prompt !== 'undefined';
 
         this.fieldsToStore = {
             "state": "_state",
             "choice": "_choice",
+            "promptChoice": "_promptChoice",
             "notes": "notes",
             "treasures": {"unlockedTreasures": this.unlockedTreasures}
-        }
+        };
 
         this.read();
     }
@@ -92,6 +96,26 @@ class Scenario {
         return this._choice;
     }
 
+    set promptChoice(choice) {
+        if (this._promptChoice === choice) {
+            return;
+        }
+        this._promptChoice = choice;
+        this.store();
+    }
+
+    get promptChoice() {
+        return this._promptChoice;
+    }
+
+    get name() {
+        return app.$t('scenarios.' + this._name);
+    }
+
+    get title() {
+        return `#${this.id} ${this.name}`;
+    }
+
     unlockTreasure(id, unlock = true) {
         if (!unlock) {
             return this.lockTreasure(id);
@@ -140,6 +164,6 @@ class Scenario {
 
 }
 
-Object.assign(Scenario.prototype, Storable)
+Object.assign(Scenario.prototype, Storable);
 
 export default Scenario

@@ -13,7 +13,7 @@
                  role="dialog" aria-modal="true" aria-labelledby="modal-headline">
                 <div>
                     <div class="mx-auto flex items-center justify-center w-full">
-                        <webp src="img/donations-banner.jpg" alt="Gloomhaven donations banner"/>
+                        <webp src="/img/donations-banner.jpg" alt="Gloomhaven donations banner"/>
                     </div>
                     <div class="mt-3 text-center sm:mt-5">
                         <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-headline">

@@ -8,7 +8,7 @@ class AchievementGroup {
 
         this.fieldsToStore = {
             "achievements": {"_achievements": this._achievements}
-        }
+        };
 
         this.read();
     }
@@ -21,7 +21,7 @@ class AchievementGroup {
         this.store();
     }
 
-    lose(id) {
+    remove(id) {
         if (this.current !== id) {
             return;
         }

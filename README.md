@@ -10,12 +10,13 @@ The following features are planned for upcoming updates.
 * [x] Map with scenario stickers
 * [x] Global and party achievements
 * [ ] French Translations
+* [ ] iOS and Android apps
+* [ ] Hosted progress for easy sharing (would need to be a paid option)
 * [ ] Solo scenarios
 * [ ] Support for Forgotten Circles
 * [ ] Support for Into the Unknown
 * [ ] Support for Capital Intrigue
 * [ ] Support for Frosthaven
-* [ ] Hosted progress for easy sharing (would need to be a paid option)
 
 ## Translations
 Please open an issue if you would be willing to participate in translating.  

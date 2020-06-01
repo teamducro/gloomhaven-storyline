@@ -2,7 +2,7 @@ class Quest {
 
     constructor(data) {
         this.id = data.id;
-        this.stage = 0;
+        this.stage = undefined;
         this.checks = data.checks;
     }
 
