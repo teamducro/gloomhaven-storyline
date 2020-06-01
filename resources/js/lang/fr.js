@@ -78,6 +78,7 @@ export default {
         'text': 'Pour jouer à Havrenuit, mes amis et moi nous réunissons une fois par semaine - une pause bienvenue dans notre vie de tout les jours. Chacun d\'entre nous a apporté quelque chose pour renforcer notre plaisir de jouer à ce jeu. Ma contribution est ce diagramme intéractif, pour garder en mémoire nos progès à travers le jeu et faciliter le choix d\'un nouveau scénario. Avec quelques boissons et snacks, nous sommes prêts à commencer.',
     },
     'Welcome': 'Bienvenue',
+    'Language': 'Langue',
     'donations': {
         1: 'Gloomhaven Storyline est complètement gratuit.',
         2: 'J\'adore jouer à Havrenuit et cette application nous donne une vue très claire de notre campagne. J\'aimerais continuer à proposer des mises à jour gratuitement.',
@@ -214,7 +215,7 @@ export default {
                 0: "{1}",
                 1: "{1}{2}",
                 2: "{1}{3}"
-            }            
+            }
         },
         11: {
             "name": "La vieille garde",
@@ -228,7 +229,7 @@ export default {
                 1: "{1}{2}",
                 2: "{1}{3}"
             }
-        },        
+        },
         12: {
             "name": "Ce que le cœur veux",
             "sections": {
@@ -259,7 +260,7 @@ export default {
         14: {
             "name": "Une puissance illimitée",
             "sections": {
-                1: "Vous avez appris l'emplacement d'un sanctuaire dans les Crêtes de Cuivre. Vos sources vous disent que ce sanctuaire est marqué des symboles de puissance et de force. Vous aimez bien les deux, donc le sanctuaire semble mériter d'être étudié." ,
+                1: "Vous avez appris l'emplacement d'un sanctuaire dans les Crêtes de Cuivre. Vos sources vous disent que ce sanctuaire est marqué des symboles de puissance et de force. Vous aimez bien les deux, donc le sanctuaire semble mériter d'être étudié.",
                 2: "Le sanctuaire a été une épreuve. \" La force engendre la force \" été inscrit dans une langue ancienne sur les murs. Vous avez démontré votre force en battant les gardiens du sanctuaire et en saisissant le sceau de la force. Le sceau vous a conféré une grande force, mais vous a également montré des visions d'un étrange alphabet runique. Peut-être que les symboles ont une signification plus profonde ? "
             },
             "stages": {
@@ -475,7 +476,7 @@ export default {
                 2: "{1}{3}",
                 3: "{1}{4}"
             }
-        },
+        },
         30: {
             "name": "Sous l'océan",
             "sections": {
@@ -503,7 +504,7 @@ export default {
                 1: "{1}{2}",
                 2: "{1}{2}{3}"
             }
-        },
+        },
         32: {
             "name": "Balade en montagne",
             "sections": {
@@ -515,14 +516,14 @@ export default {
                 0: "{1}",
                 1: "{1}{2}",
                 2: "{1}{2}{3}"
-            }
-        },
+            }
+        },
         33: {
             "name": "Un peu de silence",
             "sections": {
-              1: "À l'intérieur d'une grotte dans les Crêtes de Cuivre, vous avez découvert une créature liée par un sortilège, connue uniquement sous le nom de\" La Voix \". Depuis, vos oreilles n'ont pas cessé de sonner. Sur les conseils d'un érudit Quatryl, vous avez récupéré un Sceptre de liaison, rempli d'énergie sombre, depuis un sanctuaire au bord du Marais Stagnant. Si vous apportez le Sceptre dans la chambre de la Voix, vous pourrez renouveler le lien et faire taire cette maudite Voix une fois pour toutes. ",
-              2: "Vous avez décidé que le moyen le plus simple de faire taire la Voix était simplement de lui donner ce qu'elle voulait. La Voix a été libérée et n'habite plus la chambre des échos.",
-              3: "Tandis que vous vous teniez dans la grotte de la montagne, Sceptre à la main, la Voix vous a appelé.\" Vos intentions sont nobles. Vous me craignez et souhaitez me garder emprisonné. Je comprends, mais ce que vous faites ne conduira qu'au désastre et la ruine. Ce Sceptre n'a pas été créé pour renforcer ma prison. Je l'ai créé ! Je l'ai utilisé pour emprisonner l'un de mes plus grands ennemis - un être de mort et de haine. Je ne sais pas ce qui se passera lorsque vous apporterez cette chose à ma chambre, mais je peux vous garantir qu'il n'en sortira rien de bon ! \" Vous avez bloqué les mensonges de la Voix de votre esprit et avant que la Voix ne puisse dire un autre mot, vous avez soulevé le Sceptre et canalisé son pouvoir. La Voix cria une fois de plus, mais il n'y avait pas de cohérence dans le son - seulement de la douleur. Le brouillard commença à se dissiper et, pendant un moment, vous avez ressenti un soulagement, jusqu'à ce que vous vous rendiez compte que vous n'étiez plus dans la chambre d'écho, mais dans un endroit sombre et hostile. La Voix a retenti à nouveau, son timbre était désormais différent : \"Le pouvoir de la Voix est désormais mien ! Vous serez le premier à y succomber ! \" Après une bataille acharnée, vous avez coupé les cordes vocales de la Voix. La Voix ne parlera plus jamais. "
+                1: "À l'intérieur d'une grotte dans les Crêtes de Cuivre, vous avez découvert une créature liée par un sortilège, connue uniquement sous le nom de\" La Voix \". Depuis, vos oreilles n'ont pas cessé de sonner. Sur les conseils d'un érudit Quatryl, vous avez récupéré un Sceptre de liaison, rempli d'énergie sombre, depuis un sanctuaire au bord du Marais Stagnant. Si vous apportez le Sceptre dans la chambre de la Voix, vous pourrez renouveler le lien et faire taire cette maudite Voix une fois pour toutes. ",
+                2: "Vous avez décidé que le moyen le plus simple de faire taire la Voix était simplement de lui donner ce qu'elle voulait. La Voix a été libérée et n'habite plus la chambre des échos.",
+                3: "Tandis que vous vous teniez dans la grotte de la montagne, Sceptre à la main, la Voix vous a appelé.\" Vos intentions sont nobles. Vous me craignez et souhaitez me garder emprisonné. Je comprends, mais ce que vous faites ne conduira qu'au désastre et la ruine. Ce Sceptre n'a pas été créé pour renforcer ma prison. Je l'ai créé ! Je l'ai utilisé pour emprisonner l'un de mes plus grands ennemis - un être de mort et de haine. Je ne sais pas ce qui se passera lorsque vous apporterez cette chose à ma chambre, mais je peux vous garantir qu'il n'en sortira rien de bon ! \" Vous avez bloqué les mensonges de la Voix de votre esprit et avant que la Voix ne puisse dire un autre mot, vous avez soulevé le Sceptre et canalisé son pouvoir. La Voix cria une fois de plus, mais il n'y avait pas de cohérence dans le son - seulement de la douleur. Le brouillard commença à se dissiper et, pendant un moment, vous avez ressenti un soulagement, jusqu'à ce que vous vous rendiez compte que vous n'étiez plus dans la chambre d'écho, mais dans un endroit sombre et hostile. La Voix a retenti à nouveau, son timbre était désormais différent : \"Le pouvoir de la Voix est désormais mien ! Vous serez le premier à y succomber ! \" Après une bataille acharnée, vous avez coupé les cordes vocales de la Voix. La Voix ne parlera plus jamais. "
             },
             "stages": {
                 0: "{1}",

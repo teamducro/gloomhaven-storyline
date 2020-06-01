@@ -88,10 +88,13 @@
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                        <li class="py-4 pl-8">
-                            <donate></donate>
+                        <li class="py-4 w-full">
+                            <donate class="flex justify-center -ml-6"></donate>
                         </li>
                     </ul>
+                </div>
+                <div class="lgh:absolute lgh:bottom-0 m-2" style="width: calc(100% - 1em);">
+                    <language-switch></language-switch>
                 </div>
             </div>
         </aside>

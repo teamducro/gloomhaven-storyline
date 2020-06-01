@@ -78,6 +78,7 @@ export default {
         'text': 'To play Gloomhaven, my friends and I get together once a week. Hitting the pause button on our daily lives. Each one of us has delivered something to strengthen our joy in the game. My contribution is an interactive flowchart, to track our progress through the game and to make it easier to choose a new scenario to play. With some drinks and snacks, we are ready to begin.',
     },
     'Welcome': 'Welcome',
+    'Language': 'Language',
     'donations': {
         1: 'This Gloomhaven Storyline Tracker is completely free.',
         2: 'I love to play Gloomhaven and this tracker gives us a clear picture of our campaign. I\'d like to keep providing updates for free.',
@@ -305,7 +306,7 @@ export default {
             "sections": {
                 1: "Pleased with your work so far, Jekserah has invited you to join her undead invasion of the city. She plans to overthrow the military and put the Merchant's Guild in control.",
                 2: "You aided Jekserah in overthrowing the military. The city guard fought back, but their pitiful mortal bodies were no match for the overwhelming onslaught of the undead and the might of your blades. Every guard that fell bolstered the undead's ranks. When the Captain of the Guard fell, the remaining guards fled like the cowards you always knew they were. Jekserah's bodyguards were killed during the invasion, but so much the better for you. You are now Jekserah's new right hand and Merchant Guild rules the city.",
-                3: "Overthrowing the military was not part of your plan. You spurned Jekserah's invitation and sided with the city guard against the invasion. Jekserah is dead by your hand."                
+                3: "Overthrowing the military was not part of your plan. You spurned Jekserah's invitation and sided with the city guard against the invasion. Jekserah is dead by your hand."
             },
             "stages": {
                 0: "{1}",
