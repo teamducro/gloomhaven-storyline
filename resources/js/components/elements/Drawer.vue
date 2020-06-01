@@ -16,8 +16,8 @@
                             <router-link to="/paid" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic"
                                    aria-hidden="true">supervisor_account</i>
-                                <span class="mdc-list-item__text">Paid version
-                                <span class="ml-2 text-gold text-mono font-bold">PRO</span></span>
+                                <span class="mdc-list-item__text">{{ $t('Paid version') }}
+                                <span class="ml-2 text-gold font-bold">{{ $t('PRO') }}</span></span>
                             </router-link>
                         </li>
 
