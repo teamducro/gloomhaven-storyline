@@ -7,8 +7,10 @@
 </script>
 <template>
     <div class="pt-12 pb-4 px-4">
-        <div class="bg-black2-25 p-4 rounded-lg m-auto mt-4 w-full">
-            <h1 class="text-xl mb-4">Campaigns</h1>
+        <div class="bg-black2-25 p-4 rounded-lg m-auto mt-4 w-full max-w-3xl">
+            <h1 class="text-2xl sm:text-3xl mb-4">
+                Campaigns
+            </h1>
 
             <ul>
                 <li>Local storyline</li>
@@ -22,9 +24,9 @@
             </ul>
 
 
-            <div class="my-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
+            <div class="my-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
                 <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-12 lg:flex-1">
-                    <h3 class="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9">
+                    <h3 class="text-2xl leading-8 text-gray-900 sm:text-3xl sm:leading-9">
                         Annual Membership
                     </h3>
                     <p class="mt-6 text-base leading-6 text-gray-900">
@@ -75,9 +77,9 @@
                     </div>
                 </div>
                 <div class="py-8 px-6 text-center bg-gray-200 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
-                    <div class="mt-4 flex items-center justify-center text-5xl leading-none font-extrabold text-gray-900">
+                    <div class="font-title mt-4 flex items-center justify-center text-5xl leading-none text-gray-900">
                       <span>
-                        $3,99
+                        $3.99
                       </span>
                         <span class="ml-3 text-xl leading-7 font-medium text-gray-500">
                         USD
@@ -102,10 +104,10 @@
             <h2 class="text-xl mb-4">Synchronised progress</h2>
             <p class="text-lg mb-1">How does it work?</p>
             <ul class="list-disc ml-4 leading-relaxed">
-                <li>Click on the "Add shared storyline" button</li>
+                <li>Click on <span class="link">Add shared storyline</span></li>
                 <li>After purchasing a licence you'll receive a unique campaign code in your email</li>
                 <li>Fill in your email address and unique campaign code</li>
-                <li>Click on the share line</li>
+                <li>Click on <span class="link">Share</span> to give access to your party members</li>
                 <li class="text-lg">All changes made by any party member will be synchronised! 🎉</li>
             </ul>
 
