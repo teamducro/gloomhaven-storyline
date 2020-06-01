@@ -58,7 +58,7 @@ module.exports = {
         // alignSelf: ['important', 'responsive'],
         // appearance: ['important', 'responsive'],
         // backgroundAttachment: ['important', 'responsive'],
-        // backgroundColor: ['important', 'responsive', 'hover', 'focus'],
+        backgroundColor: ['important', 'responsive', 'hover', 'focus'],
         // backgroundPosition: ['important', 'responsive'],
         // backgroundRepeat: ['important', 'responsive'],
         // backgroundSize: ['important', 'responsive'],
