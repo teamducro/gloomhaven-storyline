@@ -13,6 +13,17 @@
                 <div class="mdc-list-group">
                     <ul ref="list" class="mdc-list">
                         <li @click="toggle">
+                            <router-link to="/paid" class="mdc-list-item" active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic"
+                                   aria-hidden="true">supervisor_account</i>
+                                <span class="mdc-list-item__text">Paid version
+                                <span class="ml-2 text-gold text-mono font-bold">PRO</span></span>
+                            </router-link>
+                        </li>
+
+                        <li role="separator" class="mdc-list-divider i-my-2"></li>
+
+                        <li @click="toggle">
                             <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
                                 <span class="mdc-list-item__text">{{ $t('Storyline') }}</span>
@@ -60,8 +71,6 @@
                             </a>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider i-my-2"></li>
-
                         <li @click="toggle">
                             <router-link to="/info" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic"
@@ -72,8 +81,14 @@
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                        <li class="py-4 pl-8">
-                            <donate></donate>
+                        <li class="py-4 w-full" @click="toggle">
+                            <router-link to="/paid" class="flex justify-center -ml-6">
+                                <button class="relative text-light-gray py-1 pl-3 pr-8 border border-light-gray border-solid rounded-full"
+                                        type="submit">
+                                    {{ $t('Remove ads') }}
+                                    <span class="absolute top-0 right-0 -mt-2 -mr-6 bg-black text-2xl h-12 w-12 leading-12 border-2 border-light-gray border-solid rounded-full">🎉</span>
+                                </button>
+                            </router-link>
                         </li>
                     </ul>
                 </div>
