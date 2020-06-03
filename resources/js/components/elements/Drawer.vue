@@ -92,6 +92,9 @@
                         </li>
                     </ul>
                 </div>
+                <div class="lgh:absolute lgh:bottom-0 m-2" style="width: calc(100% - 1em);">
+                    <language-switch></language-switch>
+                </div>
             </div>
         </aside>
 

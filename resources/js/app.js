@@ -8,7 +8,6 @@ import AchievementRepository from "./repositories/AchievementRepository";
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';
 import VueAnalytics from 'vue-analytics';
-import {loadLanguageAsync} from "./services/I18n-setup";
 import i18nEn from "./lang/en";
 import Helpers from './services/Helpers';
 
@@ -82,7 +81,6 @@ window.app = new Vue({
         }
     },
     async mounted() {
-        // loadLanguageAsync('de');
         this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();

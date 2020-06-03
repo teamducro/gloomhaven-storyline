@@ -50,6 +50,7 @@
         "@material/list": "^4.0.0",
         "@material/radio": "^4.0.0",
         "@material/ripple": "^4.0.0",
+        "@material/select": "^4.0.0",
         "@material/textfield": "^4.0.0",
         "@material/theme": "^4.0.0",
         "collect.js": "^4.19.0",
