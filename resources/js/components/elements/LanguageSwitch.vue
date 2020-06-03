@@ -31,7 +31,7 @@
     export default {
         data() {
             return {
-                current: store.get('lang') || window.i18n.locale,
+                current: null,
                 languages: {
                     'en': 'English',
                     'fr': 'Français'
@@ -41,6 +41,9 @@
                     'fr': '🇫🇷'
                 }
             }
+        },
+        beforeMount() {
+            this.setInitialLanguage();
         },
         mounted() {
             this.select = new MDCSelect($('.language-switch')[0]);
@@ -60,6 +63,22 @@
                 this.current = this.select.value;
                 loadLanguageAsync(this.current);
                 store.set('lang', this.current);
+            },
+            setInitialLanguage() {
+                let lang = store.get('lang');
+
+                if (!lang) {
+                    const locale = navigator.language.substring(0, 2);
+                    if (this.validLanguage(locale)) {
+                        lang = locale;
+                        store.set('lang', lang);
+                    }
+                }
+
+                this.current = lang || window.i18n.locale;
+            },
+            validLanguage(lang) {
+                return this.languages.hasOwnProperty(lang);
             }
         }
     }
