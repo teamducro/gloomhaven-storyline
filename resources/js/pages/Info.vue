@@ -1,6 +1,23 @@
 <template>
-    <modal ref="modal" :title="$t('Credits')">
-        <template v-slot:content>
+    <div class="pt-12 pb-4 px-4">
+        <div class="bg-black2-25 p-4 rounded-lg m-auto mt-4 w-full" style="max-width: 560px;">
+            <h1 class="mb-4 text-xl">{{ $t('about us.title') }}</h1>
+
+            <p>{{ $t('about us.text') }}</p>
+            <div class="m-4">
+                <webp src="/img/minis.jpg" alt="Gloomhaven minis"/>
+            </div>
+
+            <h2 class="mt-8 mb-4 text-lg">{{ $t('Open source') }}</h2>
+            <a href="https://github.com/teamducro/gloomhaven-storyline">
+                <button class="mdc-button mdc-button--raised">
+                    <inline-svg src="icons/github.svg" class="mdc-button__icon" :classes="['w-full','h-full']"/>
+                    <span class="mdc-button__label">GitHub</span>
+                </button>
+            </a>
+
+
+            <h2 class="mt-8 mb-4 text-lg">{{ $t('Credits') }}</h2>
             <p class="mb-2">{{ $t('credits.thanks') }}</p>
             <ul class="list-disc ml-4">
                 <li class="py-1">
@@ -50,17 +67,20 @@
                 (<a class="link"
                     href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>)
             </p>
-        </template>
-    </modal>
+        </div>
+    </div>
 </template>
 
 <script>
+    import InlineSvg from "../components/elements/InlineSvg";
+
     export default {
+        components: {InlineSvg},
         data() {
             return {}
         },
         mounted() {
-            this.$bus.$on('open-credits-modal', this.open);
+            this.$bus.$on('open-info-modal', this.open);
         },
         methods: {
             open() {

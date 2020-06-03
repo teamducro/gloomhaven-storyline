@@ -1,7 +1,7 @@
 <template>
     <div>
         <button type="button" @click="toggle"
-                class="mdc-icon-button material-icons fixed left-0 top-area-inset-top mt-1 p-4 z-5">
+                class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 i-bg-black2-50 rounded-full">
             menu
         </button>
 
@@ -62,28 +62,12 @@
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                        <li>
-                            <a class="mdc-list-item" @click="$bus.$emit('open-about-us-modal')">
+                        <li @click="toggle">
+                            <router-link to="/info" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic"
-                                   aria-hidden="true">supervisor_account</i>
-                                <span class="mdc-list-item__text">{{ $t('Our party') }}</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="mdc-list-item" @click="$bus.$emit('open-credits-modal')">
-                                <i class="material-icons mdc-list-item__graphic"
-                                   aria-hidden="true">emoji_people</i>
-                                <span class="mdc-list-item__text">{{ $t('Credits') }}</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="mdc-list-item" target="_blank" rel="noreferrer"
-                               href="https://github.com/teamducro/gloomhaven-storyline">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">code</i>
-                                <span class="mdc-list-item__text">{{ $t('Source') }}</span>
-                            </a>
+                                   aria-hidden="true">info</i>
+                                <span class="mdc-list-item__text">{{ $t('Info') }}</span>
+                            </router-link>
                         </li>
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
