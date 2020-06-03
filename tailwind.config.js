@@ -21,7 +21,8 @@ module.exports = {
                 'area-inset-left': 'env(safe-area-inset-left, 0)'
             },
             screens: {
-                xs: '400px'
+                xs: '400px',
+                lgh: {'raw': '(min-height: 645px)'}
             },
             zIndex: {
                 5: '5'
