@@ -16,6 +16,10 @@ window._ = require('lodash');
 window.$ = require('jquery');
 window.Vue = require('vue');
 window.collect = require('collect.js');
+window.axios = require('axios').default.create({
+    baseURL: process.env.MIX_API_URL,
+    withCredentials: true
+});
 Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
@@ -31,6 +35,7 @@ const Achievements = () => import("./pages/Achievements");
 const Map = () => import("./pages/Map");
 const Info = () => import("./pages/Info");
 const Campaigns = () => import("./pages/Campaigns");
+const Login = () => import("./pages/Login");
 
 // Router
 const routes = [
@@ -41,6 +46,7 @@ const routes = [
     {path: '/achievements', component: Achievements},
     {path: '/info', component: Info},
     {path: '/campaigns', component: Campaigns},
+    {path: '/login/:id/:token', component: Login}
 ];
 const router = new VueRouter({routes});
 Vue.use(VueRouter);
@@ -79,6 +85,7 @@ window.app = new Vue({
             webpSupported: true,
             hasMouse: false,
             isPortrait: true,
+            users: null,
             campaignId: 'local',
             campaignData: {}
         }

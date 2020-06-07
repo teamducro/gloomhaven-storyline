@@ -1,7 +1,7 @@
 <template>
     <div class="pt-12 pb-4 px-4">
         <div class="bg-black2-25 p-4 rounded-lg m-auto mt-4 w-full max-w-3xl">
-            <h1 class="text-2xl sm:text-3xl mb-4">
+            <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left">
                 Campaigns
             </h1>
 
@@ -21,7 +21,7 @@
                                 <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
                                 {{ $t('Renew') }}
                             </button>
-                            <button class="mdc-button mdc-button--raised">
+                            <button type="button" class="mdc-button mdc-button--raised">
                                 <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
                                 {{ $t('Share') }}
                             </button>
@@ -30,11 +30,12 @@
                 </li>
             </ul>
 
-            <button class="mt-4 mdc-button mdc-button--raised">
-                <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
-                {{ $t('Add shared campaign') }}
-            </button>
-
+            <div class="flex flex-col md:flex-row items-center">
+                <button type="button" class="mt-4 mdc-button mdc-button--raised">
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
+                    {{ $t('Add shared campaign') }}
+                </button>
+            </div>
 
             <div v-if="false" class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
                 <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
@@ -114,6 +115,8 @@
                 </div>
             </div>
 
+            <request-login-link/>
+
             <h2 class="text-xl mt-8 mb-4">Synchronised progress</h2>
             <p class="text-lg mb-1">How does it work?</p>
             <ul class="list-disc ml-4 leading-relaxed">
@@ -134,6 +137,9 @@
             return {}
         },
         mounted() {
+
+        },
+        destroyed() {
 
         },
         methods: {}
