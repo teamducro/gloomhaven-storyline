@@ -1,26 +1,32 @@
 export default {
     scenarios() {
-        return new Promise((fulfilled) => {
-            cy.window().then((window) => {
-                fulfilled(window.app.scenarios);
-            });
-        });
+        return cy.wrap(
+            new Promise((fulfilled) => {
+                cy.window().then((window) => {
+                    fulfilled(window.app.scenarios);
+                });
+            })
+        );
     },
 
     achievements() {
-        return new Promise((fulfilled) => {
-            cy.window().then((window) => {
-                fulfilled(window.app.achievements);
-            });
-        });
+        return cy.wrap(
+            new Promise((fulfilled) => {
+                cy.window().then((window) => {
+                    fulfilled(window.app.achievements);
+                });
+            })
+        );
     },
 
     store() {
-        return new Promise((fulfilled) => {
-            cy.window().then((window) => {
-                fulfilled(window.localStorage);
-            });
-        });
+        return cy.wrap(
+            new Promise((fulfilled) => {
+                cy.window().then((window) => {
+                    fulfilled(window.localStorage);
+                });
+            })
+        );
     },
 
     isNodeVisible(id) {
