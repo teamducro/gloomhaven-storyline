@@ -14,7 +14,7 @@
                     <ul ref="list" class="mdc-list">
                         <li @click="toggle">
                             <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
+                                <inline-svg src="icons/story" class="mdc-list-item__graphic" aria-hidden="true"/>
                                 <span class="mdc-list-item__text">{{ $t('Storyline') }}</span>
                             </router-link>
                         </li>
