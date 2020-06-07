@@ -25,6 +25,8 @@
 
                         <li @click="toggle">
                             <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
+                                <inline-svg src="icons/story" class="mdc-list-item__graphic" aria-hidden="true"
+                                            :classes="['h-full', 'w-full']"/>
                                 <span class="mdc-list-item__text">{{ $t('Storyline') }}</span>
                             </router-link>
                         </li>
