@@ -1,10 +1,3 @@
-<script>
-    import InlineSvg from "../components/elements/InlineSvg";
-
-    export default {
-        components: {InlineSvg}
-    }
-</script>
 <template>
     <div class="pt-12 pb-4 px-4">
         <div class="bg-black2-25 p-4 rounded-lg m-auto mt-4 w-full max-w-3xl">
@@ -12,26 +5,46 @@
                 Campaigns
             </h1>
 
-            <ul>
-                <li>Local storyline</li>
-                <li>info@danield.nl | A7934
-                    <button class="ml-4 mdc-button mdc-button--raised">
-                        <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
-                        {{ $t('Share') }}
-                    </button>
+            <ul class="mdc-list">
+                <li class="mdc-list-item" tabindex="0">
+                    <span class="inline-block w-full flex flex-col md:flex-row items-center justify-between mdc-list-item__text">
+                        local campaign
+                    </span>
                 </li>
-                <li>Add shared storyline</li>
+                <li class="mdc-list-item h-auto" tabindex="0">
+                    <span class="inline-block w-full flex flex-col md:flex-row items-center justify-between mdc-list-item__text">
+                        <span>info@danield.nl</span>
+                        <span class="mt-2 md:mt-0">
+                            <span v-if="true" class="bedge mr-4">March 14, 2021</span>
+                            <span v-else class="bedge expire mr-4">{{ $t('Expired') }}</span>
+                            <button v-if="false" class="mr-4 mdc-button mdc-button--raised">
+                                <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
+                                {{ $t('Renew') }}
+                            </button>
+                            <button class="mdc-button mdc-button--raised">
+                                <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
+                                {{ $t('Share') }}
+                            </button>
+                        </span>
+                    </span>
+                </li>
             </ul>
 
+            <button class="mt-4 mdc-button mdc-button--raised">
+                <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
+                {{ $t('Add shared campaign') }}
+            </button>
 
-            <div class="my-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
-                <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-12 lg:flex-1">
+
+            <div v-if="false" class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
+                <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
                     <h3 class="text-2xl leading-8 text-gray-900 sm:text-3xl sm:leading-9">
                         Annual Membership
                     </h3>
                     <p class="mt-6 text-base leading-6 text-gray-900">
                         Synchronised progress with all party members.<br/>
-                        Experience the app without ads on all devices.
+                        Experience the app without ads on all devices.<br/>
+                        Support the project, this helps maintaining the app.
                     </p>
                     <div class="mt-8">
                         <div class="flex items-center">
@@ -70,7 +83,7 @@
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-700">
-                                    Easy to use
+                                    Supports the project
                                 </p>
                             </li>
                         </ul>
@@ -101,20 +114,15 @@
                 </div>
             </div>
 
-            <h2 class="text-xl mb-4">Synchronised progress</h2>
+            <h2 class="text-xl mt-8 mb-4">Synchronised progress</h2>
             <p class="text-lg mb-1">How does it work?</p>
             <ul class="list-disc ml-4 leading-relaxed">
-                <li>Click on <span class="link">Add shared storyline</span></li>
-                <li>After purchasing a licence you'll receive a unique campaign code in your email</li>
-                <li>Fill in your email address and unique campaign code</li>
-                <li>Click on <span class="link">Share</span> to give access to your party members</li>
+                <li>Click on <span class="link">Add shared campaign</span></li>
+                <li>After purchasing a licence you'll receive a link in your email</li>
+                <li>Click on the link in the email to add your new shared campaign!</li>
+                <li class="mt-3">Click on <span class="link">Share</span> to give access to your party members</li>
                 <li class="text-lg">All changes made by any party member will be synchronised! 🎉</li>
             </ul>
-
-            <p class="mt-4 text-sm text-gray-500">
-                (Do not share your email address and unique campaign code with anyone outside your party.)
-            </p>
-
 
         </div>
     </div>

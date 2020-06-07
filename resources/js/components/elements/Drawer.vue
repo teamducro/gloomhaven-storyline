@@ -25,7 +25,6 @@
 
                         <li @click="toggle">
                             <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
                                 <span class="mdc-list-item__text">{{ $t('Storyline') }}</span>
                             </router-link>
                         </li>
@@ -108,8 +107,10 @@
 
 <script>
     import {MDCDrawer} from "@material/drawer/component";
+    import InlineSvg from "./InlineSvg";
 
     export default {
+        components: {InlineSvg},
         data() {
             return {
                 drawer: null,

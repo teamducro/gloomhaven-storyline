@@ -10,6 +10,7 @@ import VueI18n from 'vue-i18n';
 import VueAnalytics from 'vue-analytics';
 import i18nEn from "./lang/en";
 import Helpers from './services/Helpers';
+import store from "store/dist/store.modern";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -77,14 +78,18 @@ window.app = new Vue({
             achievements: null,
             webpSupported: true,
             hasMouse: false,
-            isPortrait: true
+            isPortrait: true,
+            campaignId: 'local',
+            campaignData: {}
         }
     },
     async mounted() {
+        this.fetchCampaignData();
         this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
 
+        await this.$nextTick();
         await Promise.all([
             this.fetchAchievements(),
             this.fetchScenarios()
@@ -95,6 +100,8 @@ window.app = new Vue({
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
 
         this.$bus.$emit('open-donations');
+
+        this.$bus.$on('campaign-changed', this.switchCampaign);
     },
     methods: {
         async fetchAchievements() {
@@ -118,6 +125,18 @@ window.app = new Vue({
             this.$bus.$emit('scenarios-updated');
 
             return true;
+        },
+        async switchCampaign(campaignId) {
+            this.campaignId = campaignId;
+            this.fetchCampaignData();
+
+            await Promise.all([
+                this.fetchAchievements(),
+                this.fetchScenarios()
+            ]);
+        },
+        fetchCampaignData() {
+            this.campaignData = store.get(this.campaignId) || {};
         },
         isWebpSupported() {
             let elem = document.createElement('canvas');

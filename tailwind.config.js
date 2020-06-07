@@ -14,6 +14,7 @@ module.exports = {
                 'area-inset-left': 'env(safe-area-inset-left, 0)'
             },
             spacing: {
+                '.5': '0.125rem',
                 28: '7rem',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
                 'area-inset-right': 'env(safe-area-inset-right, 0)',

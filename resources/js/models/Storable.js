@@ -1,6 +1,7 @@
 import store from "store/dist/store.modern";
 
 export default {
+
     store() {
         const valuesToStore = collect(this.fieldsToStore || [])
             .map((modelKey) => {
@@ -9,11 +10,14 @@ export default {
                 }
                 return this[modelKey];
             }).all();
-        store.set(this.key(), valuesToStore);
+
+        app.campaignData[this.key()] = valuesToStore;
+        store.set(app.campaignId, app.campaignData);
     },
 
     read() {
-        let model = store.get(this.key());
+        let model = app.campaignData[this.key()];
+
         if (model) {
             const fieldsToStore = collect(this.fieldsToStore || []);
             fieldsToStore.each((modelKey, storeKey) => {
