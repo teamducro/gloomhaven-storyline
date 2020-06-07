@@ -22,11 +22,8 @@ body {
 .logo {
     @apply fixed mt-4 z-5;
     left: 50%;
+    width: 250px;
     margin-left: -125px;
-
-    > span {
-        @apply block text-center;
-    }
 }
 
 .link {

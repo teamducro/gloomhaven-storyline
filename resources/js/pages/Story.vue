@@ -1,5 +1,10 @@
 <template>
     <div id="storyline-container" class="w-screen">
+        <div class="logo">
+            <div class="mt-8 flex justify-center">
+                <campaign-switch></campaign-switch>
+            </div>
+        </div>
         <inline-svg
                 v-if="isPortrait !== null"
                 :key="storylineKey"
