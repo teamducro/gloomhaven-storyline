@@ -4,6 +4,7 @@ const rootPath = Mix.paths.root.bind(Mix.paths);
 const tailwindcss = require('tailwindcss');
 const md5File = require('md5-file/promise');
 const replace = require('replace-in-file');
+const moment = require('moment');
 
 mix.extend('i18n', new class {
         webpackRules() {
@@ -56,6 +57,7 @@ mix.i18n()
         await versionFile('public/js/app.js', mix.inProduction());
         await versionFile('public/css/app.css', mix.inProduction());
         await versionFile('public/css/theme.css', mix.inProduction());
+        await replace({files: 'public/sitemap.xml', from: /release-date/, to: moment().format('YYYY-MM-DD')});
     });
 
 async function versionFile(path, applyVersion) {
