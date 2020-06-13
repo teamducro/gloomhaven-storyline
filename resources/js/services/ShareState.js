@@ -13,6 +13,7 @@ export default class ShareState {
 
         if (result.hasOwnProperty('states')) {
             this.reset.reset();
+            app.switchLocal();
 
             if (result.hasOwnProperty('groups')) {
                 result.groups.each((achievements, id) => {
