@@ -119,8 +119,6 @@ export default class ScenarioRepository {
         app.scenarios.each((scenario) => {
             scenario.state = ScenarioState.hidden;
         });
-
-        this.scenarioValidator.validate();
     }
 
     find(id) {
