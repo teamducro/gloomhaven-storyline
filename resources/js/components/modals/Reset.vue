@@ -16,11 +16,13 @@
 </template>
 
 <script>
-    import store from "store/dist/store.modern";
+    import Reset from "../../services/Reset";
 
     export default {
         data() {
-            return {}
+            return {
+                reset: new Reset
+            }
         },
         mounted() {
             this.$bus.$on('open-reset-modal', this.open);
@@ -30,7 +32,7 @@
                 this.$refs['modal'].open();
             },
             reset() {
-                store.clearAll();
+                this.reset.reset();
                 app.fetchScenarios();
                 app.fetchAchievements();
             }
