@@ -9,12 +9,17 @@
 
         <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class">
             <ul class="mdc-list">
-                <li v-for="(name) in campaigns"
-                    :key="name" :data-value="name"
+                <li class="mdc-list-item cursor-pointer"
+                    :aria-selected="current === 'local'"
+                    :class="{'mdc-list-item--selected': current === 'local'}">
+                    {{ $t('local') }}
+                </li>
+                <li v-for="(story) in stories.items"
+                    :key="story.campaignId" :data-value="story.campaignId"
                     class="mdc-list-item cursor-pointer"
-                    :aria-selected="name === current"
-                    :class="{'mdc-list-item--selected': name === current}">
-                    {{ name }}
+                    :aria-selected="current === story.campaignId"
+                    :class="{'mdc-list-item--selected': current === story.campaignId}">
+                    {{ story.name }}
                 </li>
             </ul>
         </div>
@@ -27,31 +32,34 @@
     export default {
         data() {
             return {
-                current: 'local',
-                campaigns: [
-                    'local',
-                    'info'
-                ]
+                stories: collect(),
+                campaignId: 'local',
+                current: 'local'
             }
         },
         beforeMount() {
-            this.setInitialCampaign();
+            this.applyData();
         },
         mounted() {
             this.select = new MDCSelect($('.campaign-switch')[0]);
-            this.select.listen('MDCSelect:change', this.changeCampaign);
+            this.select.listen('MDCSelect:change', this.campaignSelected);
+
+            this.$bus.$on('campaigns-changed', this.applyData);
         },
         destroyed() {
             if (this.select) {
                 this.select.destroy();
             }
+            this.$bus.$off('campaigns-changed', this.applyData);
         },
         methods: {
-            changeCampaign() {
-                this.current = this.select.value;
+            applyData() {
+                this.campaignId = app.campaignId;
+                this.stories = app.stories;
+                this.current = app.stories.firstWhere('campaignId', this.campaignId).name;
             },
-            setInitialCampaign() {
-                this.current = 'local';
+            campaignSelected() {
+                this.$bus.$emit('campaign-selected', this.select.value);
             }
         }
     }

@@ -11,6 +11,8 @@ import VueAnalytics from 'vue-analytics';
 import i18nEn from "./lang/en";
 import Helpers from './services/Helpers';
 import store from "store/dist/store.modern";
+import UserRepository from "./apiRepositiries/UserRepository";
+import StoryRepository from "./apiRepositiries/StoryRepository";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -85,46 +87,54 @@ window.app = new Vue({
             webpSupported: true,
             hasMouse: false,
             isPortrait: true,
-            users: null,
+            user: null,
+            stories: collect(),
             campaignId: 'local',
-            campaignData: {}
+            campaignData: {},
+
+            scenarioRepository: new ScenarioRepository,
+            questRepository: new QuestRepository,
+            achievementRepository: new AchievementRepository,
+            userRepository: new UserRepository,
+            storyRepository: new StoryRepository,
+
         }
     },
     async mounted() {
-        this.fetchCampaignData();
+        this.loadCampaignData(true);
         this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
 
         await this.$nextTick();
-        await Promise.all([
-            this.fetchAchievements(),
-            this.fetchScenarios()
-        ]);
+        await this.campaignsChanged();
 
         this.shouldRedirectToDotCom();
 
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
 
-        this.$bus.$emit('open-donations');
-
-        this.$bus.$on('campaign-changed', this.switchCampaign);
+        this.$bus.$on('campaign-selected', this.switchCampaign);
     },
     methods: {
+        async campaignsChanged() {
+            await Promise.all([
+                this.fetchAchievements(),
+                this.fetchScenarios()
+            ]);
+
+            this.$bus.$emit('campaigns-changed');
+        },
         async fetchAchievements() {
-            let achievementRepository = new AchievementRepository;
-            this.achievements = achievementRepository.fetch();
+            this.achievements = this.achievementRepository.fetch();
             await this.$nextTick();
             this.$bus.$emit('achievements-updated');
 
             return true;
         },
         async fetchScenarios() {
-            let scenarioRepository = new ScenarioRepository;
-            let questRepository = new QuestRepository;
-            this.quests = questRepository.fetch();
-            this.scenarios = scenarioRepository.fetch();
-            scenarioRepository.setQuests(this.scenarios, this.quests);
+            this.quests = this.questRepository.fetch();
+            this.scenarios = this.scenarioRepository.fetch();
+            this.scenarioRepository.setQuests(this.scenarios, this.quests);
 
             await this.$nextTick();
             (new ShareState).load();
@@ -133,17 +143,33 @@ window.app = new Vue({
 
             return true;
         },
-        async switchCampaign(campaignId) {
+        async switchCampaign(campaignId, shouldFetch = false) {
             this.campaignId = campaignId;
-            this.fetchCampaignData();
-
-            await Promise.all([
-                this.fetchAchievements(),
-                this.fetchScenarios()
-            ]);
+            store.set('campaignId', this.campaignId);
+            this.loadCampaignData(shouldFetch);
+            await this.campaignsChanged();
         },
-        fetchCampaignData() {
+        loadCampaignData(shouldFetch = false) {
+            this.campaignId = store.get('campaignId') || 'local';
             this.campaignData = store.get(this.campaignId) || {};
+
+            if (Helpers.loggedIn()) {
+                this.user = this.userRepository.getUser();
+                this.stories = this.storyRepository.getStories();
+                if (shouldFetch) {
+                    this.fetchCampaignData().then(() => {
+                        this.campaignsChanged();
+                    })
+                }
+            }
+        },
+        async fetchCampaignData() {
+            try {
+                this.user = await this.userRepository.find();
+                this.stories = await this.storyRepository.stories();
+            } catch (e) {
+                // offline
+            }
         },
         isWebpSupported() {
             let elem = document.createElement('canvas');

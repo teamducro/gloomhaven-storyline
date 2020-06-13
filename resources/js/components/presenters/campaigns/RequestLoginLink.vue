@@ -30,6 +30,7 @@
 <script>
     import {MDCTextField} from "@material/textfield/component";
     import Csrf from "../../../services/Csrf";
+    import LoginRepository from "../../../apiRepositiries/LoginRepository";
 
     export default {
         data() {
@@ -37,7 +38,8 @@
                 email: null,
                 emailField: null,
                 errors: null,
-                success: false
+                success: false,
+                login: new LoginRepository
             }
         },
         mounted() {
@@ -52,18 +54,14 @@
             requestLoginLink(e) {
                 e.preventDefault();
                 this.errors = null;
-                (new Csrf).init().then(() => {
-                    axios.post('mail-login-link', {
-                        'email': this.email
-                    }).then(response => {
-                        this.email = null;
-                        this.success = true;
-                        setTimeout(() => {
-                            this.success = false;
-                        }, 5000);
-                    }).catch(e => {
-                        this.errors = e.response.data;
-                    });
+                this.login.mailLoginToken(this.email).then(response => {
+                    this.email = null;
+                    this.success = true;
+                    setTimeout(() => {
+                        this.success = false;
+                    }, 5000);
+                }).catch(e => {
+                    this.errors = e.response.data;
                 });
             }
         }

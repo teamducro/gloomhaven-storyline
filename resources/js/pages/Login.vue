@@ -4,32 +4,34 @@
 
 <script>
     import Csrf from "../services/Csrf";
-    import UserRepository from "../repositories/UserRepository";
+    import UserRepository from "../apiRepositiries/UserRepository";
+    import AccessToken from "../services/AccessToken";
+    import StoryRepository from "../apiRepositiries/StoryRepository";
+    import LoginRepository from "../apiRepositiries/LoginRepository";
 
     export default {
         data() {
             return {
-                userRepository: new UserRepository
+                userRepository: new UserRepository,
+                accessToken: new AccessToken,
+                storyRepository: new StoryRepository,
+                login: new LoginRepository
             }
         },
         mounted() {
-            this.login();
+            this.handle();
         },
         methods: {
-            login() {
-                (new Csrf).init().then(() => {
-                    const url = location.hash.substr(1);
-                    axios.get(url).then(async response => {
-                        const user = await this.userRepository.find(response.data.access_token);
-                        this.userRepository.storeAccessToken(response.data.access_token, user.id);
+            handle() {
+                this.login.login().then(async response => {
+                    this.accessToken.store(response.data.access_token);
+                    await this.userRepository.find();
+                    await this.storyRepository.stories();
+                    await app.switchCampaign(stories.first().campaignId);
 
-                        // fetch stories
-                        // select story
-
-                        this.$router.replace('/story');
-                    }).catch(e => {
-                        this.$router.replace('/story');
-                    });
+                    this.$router.replace('/story');
+                }).catch(e => {
+                    this.$router.replace('/story');
                 });
             }
         }

@@ -16,8 +16,14 @@
                             <router-link to="/campaigns" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic"
                                    aria-hidden="true">supervisor_account</i>
-                                <span class="mdc-list-item__text">{{ $t('Paid version') }}
-                                <span class="ml-2 text-gold font-bold">{{ $t('PRO') }}</span></span>
+                                <template v-if="loggedIn">
+                                    <span class="mdc-list-item__text">{{ $t('Campaigns') }}</span>
+                                </template>
+                                <template v-else>
+                                    <span class="mdc-list-item__text">{{ $t('Paid version') }}
+                                        <span class="ml-2 text-gold font-bold">{{ $t('PRO') }}</span>
+                                    </span>
+                                </template>
                             </router-link>
                         </li>
 
@@ -108,14 +114,14 @@
 
 <script>
     import {MDCDrawer} from "@material/drawer/component";
-    import InlineSvg from "./InlineSvg";
+    import Helpers from "../../services/Helpers";
 
     export default {
-        components: {InlineSvg},
         data() {
             return {
                 drawer: null,
-                list: null
+                list: null,
+                loggedIn: Helpers.loggedIn()
             }
         },
         mounted() {

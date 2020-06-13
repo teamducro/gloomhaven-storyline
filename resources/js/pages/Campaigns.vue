@@ -5,30 +5,7 @@
                 Campaigns
             </h1>
 
-            <ul class="mdc-list">
-                <li class="mdc-list-item" tabindex="0">
-                    <span class="inline-block w-full flex flex-col md:flex-row items-center justify-between mdc-list-item__text">
-                        local campaign
-                    </span>
-                </li>
-                <li class="mdc-list-item h-auto" tabindex="0">
-                    <span class="inline-block w-full flex flex-col md:flex-row items-center justify-between mdc-list-item__text">
-                        <span>info@danield.nl</span>
-                        <span class="mt-2 md:mt-0">
-                            <span v-if="true" class="bedge mr-4">March 14, 2021</span>
-                            <span v-else class="bedge expire mr-4">{{ $t('Expired') }}</span>
-                            <button v-if="false" class="mr-4 mdc-button mdc-button--raised">
-                                <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
-                                {{ $t('Renew') }}
-                            </button>
-                            <button type="button" class="mdc-button mdc-button--raised">
-                                <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
-                                {{ $t('Share') }}
-                            </button>
-                        </span>
-                    </span>
-                </li>
-            </ul>
+            <CampaignList></CampaignList>
 
             <div class="flex flex-col md:flex-row items-center">
                 <button type="button" class="mt-4 mdc-button mdc-button--raised">
