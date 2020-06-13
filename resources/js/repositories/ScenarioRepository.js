@@ -115,14 +115,6 @@ export default class ScenarioRepository {
         return this.findMany(scenario.choices).firstWhere('state', '!=', ScenarioState.hidden);
     }
 
-    hideAllScenarios() {
-        app.scenarios.each((scenario) => {
-            scenario.state = ScenarioState.hidden;
-        });
-
-        this.scenarioValidator.validate();
-    }
-
     find(id) {
         return app.scenarios.firstWhere('id', parseInt(id));
     }
