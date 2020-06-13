@@ -16,12 +16,12 @@
 </template>
 
 <script>
-    import Reset from "../../services/Reset";
+    import Reseter from "../../services/Reseter";
 
     export default {
         data() {
             return {
-                reset: new Reset
+                resetService: new Reseter
             }
         },
         mounted() {
@@ -32,7 +32,7 @@
                 this.$refs['modal'].open();
             },
             reset() {
-                this.reset.reset();
+                this.resetService.reset();
                 app.fetchScenarios();
                 app.fetchAchievements();
             }
