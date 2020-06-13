@@ -3,6 +3,7 @@ import ScenarioRepository from "../repositories/ScenarioRepository";
 import AchievementRepository from "../repositories/AchievementRepository";
 import AchievementGroup from "../models/AchievementGroup";
 import Helpers from "./Helpers";
+import Reset from "./Reset";
 
 const queryString = require('query-string');
 
@@ -11,7 +12,7 @@ export default class ShareState {
         let result = this.decode();
 
         if (result.hasOwnProperty('states')) {
-            this.scenarioRepository.hideAllScenarios();
+            this.reset.reset();
 
             if (result.hasOwnProperty('groups')) {
                 result.groups.each((achievements, id) => {
@@ -123,5 +124,9 @@ export default class ShareState {
 
     get achievementRepository() {
         return this._achievementRepository || (this._achievementRepository = new AchievementRepository);
+    }
+
+    get reset() {
+        return this._reset || (this._reset = new Reset);
     }
 }
