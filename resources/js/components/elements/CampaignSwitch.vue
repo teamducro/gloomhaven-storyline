@@ -28,13 +28,15 @@
 
 <script>
     import {MDCSelect} from "@material/select/component";
+    import StoryRepository from "../../repositories/StoryRepository";
 
     export default {
         data() {
             return {
                 stories: collect(),
                 campaignId: 'local',
-                current: 'local'
+                current: 'local',
+                storyRepository: new StoryRepository
             }
         },
         beforeMount() {
@@ -56,7 +58,10 @@
             applyData() {
                 this.campaignId = app.campaignId;
                 this.stories = app.stories;
-                this.current = app.stories.firstWhere('campaignId', this.campaignId).name;
+                const story = this.storyRepository.current()
+                if (story) {
+                    this.current = story.name;
+                }
             },
             campaignSelected() {
                 this.$bus.$emit('campaign-selected', this.select.value);

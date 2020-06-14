@@ -12,8 +12,28 @@ export default class StoryRepository extends ApiRepository {
             .map(story => new Story(story));
     }
 
+    async update(story) {
+        const data = story.postData();
+        return await this.api.put('stories/' + story.id, data);
+    }
+
+    async find(story) {
+        const response = await this.api.get('stories/' + story.id);
+        const s = response.data.data;
+        this.storeStory(s);
+
+        return new Story(s);
+    }
+
     storeStories(stories) {
         store.set('stories', stories);
+    }
+
+    storeStory(story) {
+        let stories = collect(store.get('stories', []));
+        stories = stories.filter(s => s.id = story.id);
+        stories.push(story);
+        this.storeStories(stories);
     }
 
     getStories() {

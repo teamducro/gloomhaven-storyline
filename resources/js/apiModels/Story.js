@@ -23,6 +23,13 @@ class Story extends Model {
         this.campaignId = 'campaign' + this.id;
     }
 
+    postData() {
+        return {
+            data: JSON.stringify(this.data),
+            name: this.name
+        }
+    }
+
 }
 
 export default Story

@@ -9,10 +9,15 @@ export default class ApiService {
         this.csrf = new Csrf;
     }
 
-    async request(method, url, options) {
+    async request(method, url, options, data = {}) {
         options = await this.applyHeaders(options);
 
-        const response = await window.axios[method](url, options);
+        let response;
+        if (method === 'get' || method === 'delete') {
+            response = await window.axios[method](url, options);
+        } else {
+            response = await window.axios[method](url, data, options);
+        }
 
         this.withToken();
 
@@ -23,12 +28,12 @@ export default class ApiService {
         return this.request('get', url, options)
     }
 
-    async post(url, options) {
-        return this.request('post', url, options);
+    async post(url, data, options) {
+        return this.request('post', url, options, data);
     }
 
-    async put(url, options) {
-        return this.request('put', url, options);
+    async put(url, data, options) {
+        return this.request('put', url, options, data);
     }
 
     async applyHeaders(options = {}) {
