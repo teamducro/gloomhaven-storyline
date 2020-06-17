@@ -58,6 +58,7 @@
         "collect.js": "^4.19.0",
         "hammerjs": "^2.0.8",
         "jquery": "^3.5.0",
+        "js-md5": "^0.7.3",
         "kind-of": "^6.0.3",
         "md5-file": "^4.0.0",
         "minimist": "^1.2.5",
