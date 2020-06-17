@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin');
+const {colors} = require('tailwindcss/defaultTheme');
 
 module.exports = {
     theme: {
@@ -50,6 +51,14 @@ module.exports = {
                     25: 'rgba(255, 255, 255, .25)',
                     50: 'rgba(255, 255, 255, .50)',
                     75: 'rgba(255, 255, 255, .75)'
+                },
+                red: {
+                    ...colors.red,
+                    50: 'rgba(255, 100, 100, .50)'
+                },
+                green: {
+                    ...colors.green,
+                    50: 'rgba(100, 255, 100, .50)'
                 }
             }
         }

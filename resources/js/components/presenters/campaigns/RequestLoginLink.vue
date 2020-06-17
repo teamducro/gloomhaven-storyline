@@ -20,9 +20,9 @@
         </form>
         <validation-errors :response="errors" field="email"/>
         <transition name="fade">
-            <span v-if="success" class="text-complete">
+            <alert v-if="success" class="inline-block">
                 {{ $t('The email is send to your inbox.') }}
-            </span>
+            </alert>
         </transition>
     </div>
 </template>

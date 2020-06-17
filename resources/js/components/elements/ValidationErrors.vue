@@ -1,18 +1,24 @@
 <template>
     <transition name="fade">
-        <ul v-if="errors || message" class="text-required">
-            <li v-if="message">{{ message }}</li>
-            <template v-if="errors" v-for="(messages, key) in errors">
-                <li v-if="field == null || key === field" v-for="error in messages">
-                    {{ error }}
-                </li>
-            </template>
-        </ul>
+        <alert v-if="!isEmpty || message" :success="false" class="inline-block">
+            <ul>
+                <li v-if="message">{{ message }}</li>
+                <template v-if="errors" v-for="(messages, key) in errors">
+                    <li v-if="field == null || key === field"
+                        v-for="error in messages">
+                        {{ error }}
+                    </li>
+                </template>
+            </ul>
+        </alert>
     </transition>
 </template>
 
 <script>
+    import InlineSvg from "./InlineSvg";
+
     export default {
+        components: {InlineSvg},
         props: {
             response: {
                 type: Object,
@@ -27,6 +33,11 @@
             return {
                 errors: {},
                 message: ''
+            }
+        },
+        computed: {
+            isEmpty() {
+                return typeof this.errors === 'object' && Object.keys(this.errors).length === 0
             }
         },
         watch: {

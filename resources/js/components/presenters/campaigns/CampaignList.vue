@@ -15,14 +15,14 @@
                 <span class="mt-2 md:mt-0">
                     <template v-if="story.has_expired">
                         <span class="bedge expire mr-4">{{ $t('Expired') }}</span>
-                        <button class="mr-4 mdc-button mdc-button--raised">
+                        <button class="mr-4 mdc-button mdc-button--raised my-2">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
                             {{ $t('Renew') }}
                         </button>
                     </template>
                     <template v-else>
                         <span class="bedge mr-4">{{ story.expires_at.format("MMM Do YY") }}</span>
-                        <button type="button" class="mdc-button mdc-button--raised">
+                        <button type="button" class="mdc-button mdc-button--raised my-2">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
                             {{ $t('Share') }}
                         </button>
