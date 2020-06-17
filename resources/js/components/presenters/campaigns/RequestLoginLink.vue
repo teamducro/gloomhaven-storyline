@@ -14,9 +14,12 @@
                 <span class="mdc-floating-label" id="email-label">Email</span>
                 <span class="mdc-line-ripple"></span>
             </label>
-            <button type="submit" class="mdc-button mdc-button--raised mt-2 ml-0 md:mt-0 md:ml-2">
-                <span class="mdc-button__label">{{ $t('Sync Campaign') }}</span>
-            </button>
+            <div class="relative">
+                <button type="submit" class="mdc-button mdc-button--raised mt-2 ml-0 md:mt-0 md:ml-3">
+                    <span class="mdc-button__label">{{ $t('Sync Campaign') }}</span>
+                </button>
+                <loader v-if="sending" float></loader>
+            </div>
         </form>
         <validation-errors :response="errors" field="email"/>
         <transition name="fade">
@@ -39,6 +42,7 @@
                 emailField: null,
                 errors: null,
                 success: false,
+                sending: false,
                 login: new LoginRepository
             }
         },
@@ -53,14 +57,20 @@
         methods: {
             requestLoginLink(e) {
                 e.preventDefault();
+                if (this.sending) {
+                    return;
+                }
+                this.sending = true;
                 this.errors = null;
                 this.login.mailLoginToken(this.email).then(response => {
+                    this.sending = false;
                     this.email = null;
                     this.success = true;
                     setTimeout(() => {
                         this.success = false;
                     }, 5000);
                 }).catch(e => {
+                    this.sending = false;
                     this.errors = e.response.data;
                 });
             }

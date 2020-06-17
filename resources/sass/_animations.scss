@@ -6,6 +6,15 @@
     opacity: 0;
 }
 
+.fadein-enter-active, .fadein-leave-active {
+    transition: opacity .5s;
+}
+
+.fadein-enter, .fadein-leave-to {
+    transition: opacity 0s;
+    opacity: 0;
+}
+
 .dropdown-enter-active, .dropdown-leave-active {
     transition: opacity .3s, transform .3s;
     transform-origin: top;
@@ -26,4 +35,13 @@
     transform-origin: center;
     opacity: 0;
     transform: scale(.9);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(540deg);
+    }
 }

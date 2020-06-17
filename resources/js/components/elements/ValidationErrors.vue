@@ -1,5 +1,5 @@
 <template>
-    <transition name="fade">
+    <transition name="fadein">
         <alert v-if="!isEmpty || message" :success="false" class="inline-block">
             <ul>
                 <li v-if="message">{{ message }}</li>
