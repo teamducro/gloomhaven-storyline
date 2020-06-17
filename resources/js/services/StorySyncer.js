@@ -9,7 +9,10 @@ export default class StorySyncer {
         }
 
         story.data = app.campaignData;
-        this.apiStoryRepository.update(story);
+
+        if (story.hasChanged()) {
+            this.apiStoryRepository.update(story);
+        }
     }
 
     fetch() {

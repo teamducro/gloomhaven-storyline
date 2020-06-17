@@ -1,6 +1,8 @@
 import Model from "./Model";
 import moment from "moment";
 
+const md5 = require('js-md5');
+
 class Story extends Model {
 
     constructor(properties) {
@@ -21,6 +23,14 @@ class Story extends Model {
     cast() {
         this.expires_at = moment(this.expires_at);
         this.campaignId = 'campaign' + this.id;
+    }
+
+    hasChanged() {
+        return this.hash !== this.makeHash();
+    }
+
+    makeHash() {
+        return md5(JSON.stringify(this.data));
     }
 
     postData() {
