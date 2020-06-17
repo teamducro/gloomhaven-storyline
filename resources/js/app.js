@@ -161,9 +161,7 @@ window.app = new Vue({
                 this.user = this.userRepository.getUser();
                 this.stories = this.storyRepository.getStories();
                 if (shouldFetch) {
-                    this.fetchCampaignData().then(() => {
-                        this.campaignsChanged();
-                    })
+                    this.fetchCampaignData().then(this.campaignsChanged);
                 }
             }
         },

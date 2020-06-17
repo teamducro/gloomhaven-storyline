@@ -9,7 +9,10 @@ export default class StoryRepository extends ApiRepository {
         this.storeStories(stories);
 
         return collect(stories)
-            .map(story => new Story(story));
+            .map(story => new Story(story))
+            .each(story => {
+                this.storeCampaignData(story);
+            });
     }
 
     async update(story) {
@@ -27,6 +30,10 @@ export default class StoryRepository extends ApiRepository {
 
     storeStories(stories) {
         store.set('stories', stories);
+    }
+
+    storeCampaignData(story) {
+        store.set(story.campaignId, story.data);
     }
 
     storeStory(story) {

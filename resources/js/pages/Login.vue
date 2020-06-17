@@ -26,11 +26,12 @@
                 this.login.login().then(async response => {
                     this.accessToken.store(response.data.access_token);
                     await this.userRepository.find();
-                    await this.storyRepository.stories();
+                    const stories = await this.storyRepository.stories();
                     await app.switchCampaign(stories.first().campaignId);
 
                     this.$router.replace('/story');
                 }).catch(e => {
+                    // throw e;
                     this.$router.replace('/story');
                 });
             }
