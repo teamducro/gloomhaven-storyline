@@ -37,6 +37,11 @@ button:focus, .scenario {
     outline: none;
 }
 
+:not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item::before, :not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item::after {
+    background-color: #000;
+    z-index: -1;
+}
+
 [v-cloak] {
     display: none;
 }

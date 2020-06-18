@@ -1,18 +1,20 @@
 <template>
     <modal ref="modal" :title="$t('share.title')">
-        <template v-if="code" v-slot:content>
+        <template v-slot:content>
             <p>Share the following campaign code with your party members to enable progress sync across all
                 your devices!</p>
-            <div v-if="progress" class="flex items-center flex-col my-6">
+            <div v-if="code && progress" class="flex items-center flex-col my-6">
                 <a v-clipboard:copy="code.code" class="cursor-pointer copied">
                     <countdown :label="code.code" :percentage="progress.percentage"></countdown>
                 </a>
                 <span>{{ progress.label }}</span>
             </div>
-            <social-sharing title="Gloomhaven Storyline Tracker"
-                            :description="'Your campaign code: ' + code.code"
-                            hashtags="gloomhaven"
-                            inline-template>
+            <social-sharing
+                    v-if="code"
+                    title="Gloomhaven Storyline Tracker"
+                    :description="'Your campaign code: ' + code.code"
+                    hashtags="gloomhaven"
+                    inline-template>
                 <div class="flex">
                     <network network="whatsapp" class="mr-2 cursor-pointer">
                         <img src="/img/icons/whatsapp.png" alt="whatsapp" srcset="/img/icons/whatsapp@2x.png 2x"

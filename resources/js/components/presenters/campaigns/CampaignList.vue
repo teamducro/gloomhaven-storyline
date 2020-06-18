@@ -10,7 +10,7 @@
         <li v-for="story in stories.items" class="mdc-list-item h-auto" tabindex="0"
             @click="select(story.campaignId)"
             :class="{'mdc-ripple-upgraded--background-focused': campaignId === story.campaignId}">
-            <span class="inline-block w-full flex flex-col md:flex-row items-center justify-between mdc-list-item__text z-1">
+            <span class="inline-block w-full flex flex-col md:flex-row items-center justify-between mdc-list-item__text">
                 <span>{{ story.name }}</span>
                 <span class="mt-2 md:mt-0">
                     <template v-if="story.has_expired">
