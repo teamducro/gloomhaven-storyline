@@ -63,21 +63,27 @@
         },
         mounted() {
             this.$bus.$on('open-share-modal', this.open);
-
-            this.copyTippy = tippy('.copied', {
-                trigger: 'click',
-                content: 'Copied',
-                onShown(tippy) {
-                    setTimeout(() => {
-                        tippy.hide();
-                    }, 1500);
-                }
-            });
         },
         methods: {
             open() {
                 this.url = this.shareState.link();
                 this.$refs['modal'].open();
+                this.addCopyTippy();
+            },
+            addCopyTippy() {
+                if (this.copyTippy) {
+                    return;
+                }
+
+                this.copyTippy = tippy('.copied', {
+                    trigger: 'click',
+                    content: this.$t('Copied'),
+                    onShown(tippy) {
+                        setTimeout(() => {
+                            tippy.hide();
+                        }, 1500);
+                    }
+                });
             }
         }
     }

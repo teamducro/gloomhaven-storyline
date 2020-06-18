@@ -27,6 +27,7 @@ module.exports = {
                 lgh: {'raw': '(min-height: 645px)'}
             },
             zIndex: {
+                1: '1',
                 5: '5'
             },
             lineHeight: {

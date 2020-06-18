@@ -69,3 +69,19 @@
         }
     }
 </script>
+
+<style scoped lang="scss">
+    .campaign-switch {
+        .mdc-select__anchor {
+            &, &:before, &:after {
+                background-color: transparent !important;
+            }
+        }
+
+        .mdc-select__selected-text {
+            line-height: 1rem;
+            min-width: 0;
+            border-bottom: 0;
+        }
+    }
+</style>
