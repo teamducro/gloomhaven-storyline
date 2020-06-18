@@ -39,10 +39,8 @@
 <script>
     import tippy from 'tippy.js';
     import StoryCodeRepository from "../../apiRepositiries/StoryCodeRepository";
-    import Countdown from "../elements/Countdown";
 
     export default {
-        components: {Countdown},
         data() {
             return {
                 story: null,
