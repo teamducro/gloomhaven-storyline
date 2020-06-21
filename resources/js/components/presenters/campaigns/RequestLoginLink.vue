@@ -33,7 +33,7 @@
 <script>
     import {MDCTextField} from "@material/textfield/component";
     import Csrf from "../../../services/Csrf";
-    import LoginRepository from "../../../apiRepositiries/LoginRepository";
+    import LoginRepository from "../../../apiRepositories/LoginRepository";
 
     export default {
         data() {

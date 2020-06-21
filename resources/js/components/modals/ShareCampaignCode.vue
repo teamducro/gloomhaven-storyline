@@ -38,7 +38,7 @@
 
 <script>
     import tippy from 'tippy.js';
-    import StoryCodeRepository from "../../apiRepositiries/StoryCodeRepository";
+    import StoryCodeRepository from "../../apiRepositories/StoryCodeRepository";
 
     export default {
         data() {

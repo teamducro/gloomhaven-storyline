@@ -15,4 +15,12 @@ export default class LoginRepository extends ApiRepository {
                 'email': email
             });
     }
+
+    async submitShareCode(code) {
+        return this.api.withoutToken()
+            .post('/login/story-code', {
+                'code': code,
+                'device_name': navigator.userAgent
+            });
+    }
 }

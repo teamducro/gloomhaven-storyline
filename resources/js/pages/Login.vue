@@ -4,10 +4,10 @@
 
 <script>
     import Csrf from "../services/Csrf";
-    import UserRepository from "../apiRepositiries/UserRepository";
+    import UserRepository from "../apiRepositories/UserRepository";
     import AccessToken from "../services/AccessToken";
-    import StoryRepository from "../apiRepositiries/StoryRepository";
-    import LoginRepository from "../apiRepositiries/LoginRepository";
+    import StoryRepository from "../apiRepositories/StoryRepository";
+    import LoginRepository from "../apiRepositories/LoginRepository";
 
     export default {
         data() {

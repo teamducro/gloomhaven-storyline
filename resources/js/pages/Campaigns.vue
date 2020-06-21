@@ -8,21 +8,22 @@
             <CampaignList></CampaignList>
 
             <div class="flex flex-col md:flex-row items-center">
-                <button type="button" class="mt-4 mdc-button mdc-button--raised">
+                <button type="button" class="mt-4 mdc-button mdc-button--raised"
+                        @click="$bus.$emit('open-add-campaign-modal')">
                     <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
                     {{ $t('Add shared campaign') }}
                 </button>
             </div>
 
-            <div v-if="false" class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
+            <div v-if="loggedIn"
+                 class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
                 <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
-                    <h3 class="text-2xl leading-8 text-gray-900 sm:text-3xl sm:leading-9">
+                    <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
                         Annual Membership
                     </h3>
-                    <p class="mt-6 text-base leading-6 text-gray-900">
-                        Synchronised progress with all party members.<br/>
-                        Experience the app without ads on all devices.<br/>
-                        Support the project, this helps maintaining the app.
+                    <p class="mt-6 text-base text-gray-900">
+                        Synchronised progress with all party members, all changes made are instantly available for users
+                        with access to the shared campaign. By purchasing this license you support this project! *
                     </p>
                     <div class="mt-8">
                         <div class="flex items-center">
@@ -31,21 +32,13 @@
                             </h4>
                             <div class="flex-1 border-t-2 border-gray-200"></div>
                         </div>
-                        <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
+                        <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-5 lg:row-gap-5">
                             <li class="flex items-start lg:col-span-1">
                                 <div class="flex-shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-700">
                                     Synchronised progress
-                                </p>
-                            </li>
-                            <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                                <div class="flex-shrink-0">
-                                    <inline-svg src="icons/check"/>
-                                </div>
-                                <p class="ml-3 text-sm leading-5 text-gray-700">
-                                    Remove ads
                                 </p>
                             </li>
                             <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
@@ -61,10 +54,13 @@
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-700">
-                                    Supports the project
+                                    Support the project
                                 </p>
                             </li>
                         </ul>
+                        <p class="mt-6 text-sm text-gray-700">
+                            When purchasing multiple licenses, you can manage multiple campaigns!
+                        </p>
                     </div>
                 </div>
                 <div class="py-8 px-6 text-center bg-gray-200 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
@@ -76,11 +72,6 @@
                         USD
                       </span>
                     </div>
-                    <p class="mt-4 text-sm leading-5">
-                        <a href="#" class="font-medium text-gray-500 underline">
-                            Learn about our membership policy
-                        </a>
-                    </p>
                     <div class="mt-6">
                         <div class="rounded-md shadow">
                             <a href="#"
@@ -89,18 +80,33 @@
                             </a>
                         </div>
                     </div>
+                    <p class="mt-4 text-sm leading-5">
+                        <a href="#" class="font-medium text-gray-500 underline">
+                            Learn about our membership policy
+                        </a>
+                    </p>
                 </div>
             </div>
 
+            <p class="mt-6 text-sm">
+                * All content is available for free, your local progress can be manually shared via the share button in
+                the menu. The paid version provides an automatic sync feature, progress doesn't have to be shared
+                manually anymore! This covers costs maintaining this app for the community, if you enjoy using the
+                storyline tracker, please consider purchasing a licence.
+            </p>
+
             <request-login-link/>
 
-            <h2 class="text-xl mt-8 mb-4">Synchronised progress</h2>
+            <h2 class="text-xl mt-8 mb-4">Synchronise progress</h2>
             <p class="text-lg mb-1">How does it work?</p>
             <ul class="list-disc ml-4 leading-relaxed">
-                <li>Click on <span class="link">Add shared campaign</span></li>
+                <li>Click on <span class="link" @click="$bus.$emit('open-add-campaign-modal')">
+                    Add shared campaign</span></li>
                 <li>After purchasing a licence you'll receive a link in your email</li>
                 <li>Click on the link in the email to add your new shared campaign!</li>
-                <li class="mt-3">Click on <span class="link">Share</span> to give access to your party members</li>
+                <li class="mt-3">Click on <span class="link" @click="shareCurrentStory">Share</span>
+                    to give access to your party members
+                </li>
                 <li class="text-lg">All changes made by any party member will be synchronised! 🎉</li>
             </ul>
 
@@ -109,9 +115,15 @@
 </template>
 
 <script>
+    import Helpers from "../services/Helpers";
+    import StoryRepository from "../repositories/StoryRepository";
+
     export default {
         data() {
-            return {}
+            return {
+                loggedIn: Helpers.loggedIn(),
+                storyRepository: new StoryRepository
+            }
         },
         mounted() {
 
@@ -119,6 +131,10 @@
         destroyed() {
 
         },
-        methods: {}
+        methods: {
+            shareCurrentStory() {
+                this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
+            }
+        }
     }
 </script>

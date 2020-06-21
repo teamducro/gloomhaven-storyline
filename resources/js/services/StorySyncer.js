@@ -1,5 +1,5 @@
 import StoryRepository from "../repositories/StoryRepository";
-import ApiStoryRepository from "../apiRepositiries/StoryRepository";
+import ApiStoryRepository from "../apiRepositories/StoryRepository";
 
 export default class StorySyncer {
     store() {

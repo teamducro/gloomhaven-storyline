@@ -11,8 +11,8 @@ import VueAnalytics from 'vue-analytics';
 import i18nEn from "./lang/en";
 import Helpers from './services/Helpers';
 import store from "store/dist/store.modern";
-import UserRepository from "./apiRepositiries/UserRepository";
-import StoryRepository from "./apiRepositiries/StoryRepository";
+import UserRepository from "./apiRepositories/UserRepository";
+import StoryRepository from "./apiRepositories/StoryRepository";
 
 window._ = require('lodash');
 window.$ = require('jquery');

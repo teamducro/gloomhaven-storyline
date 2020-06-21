@@ -14,6 +14,8 @@ class Story extends Model {
         this.hash;
         this.expires_at;
         this.has_expired;
+        this.is_shared;
+        this.token;
         this.campaignId;
 
         this.map(properties);
