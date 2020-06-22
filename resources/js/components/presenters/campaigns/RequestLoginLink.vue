@@ -16,7 +16,7 @@
             </label>
             <div class="relative">
                 <button type="submit" class="mdc-button mdc-button--raised mt-2 ml-0 md:mt-0 md:ml-3">
-                    <span class="mdc-button__label">{{ $t('Sync Campaign') }}</span>
+                    <span class="mdc-button__label">{{ $t('Request Login Link') }}</span>
                 </button>
                 <loader v-if="sending" float></loader>
             </div>
