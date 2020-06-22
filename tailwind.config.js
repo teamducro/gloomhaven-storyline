@@ -9,6 +9,8 @@ module.exports = {
                 title: ['Pirata One', 'Nyala', 'sans-serif'],
             },
             inset: {
+                '50': '50%',
+                '-50': '-50%',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
                 'area-inset-right': 'env(safe-area-inset-right, 0)',
                 'area-inset-bottom': 'env(safe-area-inset-bottom, 0)',
@@ -17,6 +19,7 @@ module.exports = {
             spacing: {
                 '.5': '0.125rem',
                 28: '7rem',
+                80: '20rem',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
                 'area-inset-right': 'env(safe-area-inset-right, 0)',
                 'area-inset-bottom': 'env(safe-area-inset-bottom, 0)',

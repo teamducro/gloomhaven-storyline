@@ -6,7 +6,7 @@ export default class StoryRepository extends ApiRepository {
     async stories(token = null) {
         const response = await this.api.withToken(token).get('stories');
         const stories = response.data.data;
-        this.storeStories(stories);
+        this.storeStories(stories, token);
 
         return collect(stories)
             .map(story => new Story(story))
@@ -28,20 +28,20 @@ export default class StoryRepository extends ApiRepository {
         return new Story(s);
     }
 
-    storeStories(data) {
+    storeStory(story, token) {
+        this.storeStories([story], token);
+    }
+
+    storeStories(data, token) {
         const stories = collect(data);
+        if (token) {
+            stories.each(story => story.token = token);
+        }
         const ids = stories.pluck('id').toArray();
         const otherStories = collect(store.get('stories', []))
             .filter(story => !ids.includes(story.id));
         const storiesToStore = stories.merge(otherStories).toArray();
         store.set('stories', storiesToStore);
-    }
-
-    storeStory(story, token) {
-        if (token) {
-            story.token = token;
-        }
-        this.storeStories([story]);
     }
 
     storeCampaignData(story) {

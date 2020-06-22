@@ -5,11 +5,10 @@
                 Campaigns
             </h1>
 
-            <CampaignList></CampaignList>
+            <campaign-list></campaign-list>
 
             <div class="flex flex-col md:flex-row items-center">
-                <button type="button" class="mt-4 mdc-button mdc-button--raised"
-                        @click="$bus.$emit('open-add-campaign-modal')">
+                <button type="button" class="mt-4 mdc-button mdc-button--raised">
                     <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
                     {{ $t('Add shared campaign') }}
                 </button>
@@ -88,20 +87,22 @@
                 </div>
             </div>
 
-            <p class="mt-6 text-sm">
-                * All content is available for free, your local progress can be manually shared via the share button in
+            <h2 class="text-xl mt-6 mb-2">Support the project</h2>
+            <p class="text-sm">
+                * All content is available for free, your local progress can be manually shared via the share button
+                in
                 the menu. The paid version provides an automatic sync feature, progress doesn't have to be shared
                 manually anymore! This covers costs maintaining this app for the community, if you enjoy using the
-                storyline tracker, please consider purchasing a licence.
+                storyline tracker, please consider <a class="link">purchasing a licence</a>.
             </p>
 
+            <add-shared-campaign/>
             <request-login-link/>
 
-            <h2 class="text-xl mt-8 mb-4">Synchronise progress</h2>
+            <h2 class="text-xl mt-8 mb-2">Synchronise progress</h2>
             <p class="text-lg mb-1">How does it work?</p>
             <ul class="list-disc ml-4 leading-relaxed">
-                <li>Click on <span class="link" @click="$bus.$emit('open-add-campaign-modal')">
-                    Add shared campaign</span></li>
+                <li>Click on <span class="link">Add shared campaign</span></li>
                 <li>After purchasing a licence you'll receive a link in your email</li>
                 <li>Click on the link in the email to add your new shared campaign!</li>
                 <li class="mt-3">Click on <span class="link" @click="shareCurrentStory">Share</span>

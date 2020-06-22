@@ -1,5 +1,5 @@
 <template>
-    <modal ref="modal" :title="$t('share.title')">
+    <modal ref="modal" :title="$t('share.title')" @closed="clearTimer">
         <template v-slot:content>
             <p>Share the following campaign code with your party members to enable progress sync across all
                 your devices!</p>
@@ -53,19 +53,16 @@
         },
         mounted() {
             this.$bus.$on('open-share-campaign-code-modal', this.open);
-
-            this.timer = setInterval(this.updatePercentage, 1000);
         },
         destroyed() {
-            if (this.timer) {
-                clearInterval(this.timer);
-            }
+            this.clearTimer();
         },
         methods: {
             async open(story) {
                 this.story = story;
                 this.$refs['modal'].open();
                 await this.fetchCode();
+                this.setTimer();
                 this.addCopyTippy();
             },
             async fetchCode() {
@@ -94,8 +91,16 @@
                         }, 1500);
                     }
                 });
+            },
+            setTimer() {
+                this.clearTimer();
+                this.timer = setInterval(this.updatePercentage, 1000);
+            },
+            clearTimer() {
+                if (this.timer) {
+                    clearInterval(this.timer);
+                }
             }
         }
     }
-    3
 </script>

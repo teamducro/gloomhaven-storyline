@@ -1,5 +1,5 @@
 <template>
-    <div class="campaign-switch mdc-select">
+    <div class="campaign-switch mdc-select relative">
         <div class="mdc-select__anchor">
             <i class="mdc-select__dropdown-icon"></i>
             <div class="mdc-select__selected-text">
@@ -7,7 +7,7 @@
             </div>
         </div>
 
-        <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class">
+        <div class="mdc-select__menu mdc-menu mdc-menu-surface overflow-visible">
             <ul class="mdc-list">
                 <li class="mdc-list-item cursor-pointer"
                     :aria-selected="current === 'local'"
@@ -22,13 +22,19 @@
                     {{ story.name }}
                 </li>
             </ul>
+            <div class="absolute w-80 mt-4 -left-50">
+                <button type="button" class="mdc-button mdc-button--raised">
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
+                    {{ $t('Add shared campaign') }}
+                </button>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
     import {MDCSelect} from "@material/select/component";
-    import StoryRepository from "../../repositories/StoryRepository";
+    import StoryRepository from "../../../repositories/StoryRepository";
 
     export default {
         data() {
