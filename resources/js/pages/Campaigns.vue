@@ -8,13 +8,15 @@
             <campaign-list></campaign-list>
 
             <div class="flex flex-col md:flex-row items-center">
-                <button type="button" class="mt-4 mdc-button mdc-button--raised">
-                    <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
-                    {{ $t('Add shared campaign') }}
-                </button>
+                <purchase>
+                    <button type="button" class="mt-4 mdc-button mdc-button--raised">
+                        <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
+                        {{ $t('Add shared campaign') }}
+                    </button>
+                </purchase>
             </div>
 
-            <template v-if="!loggedIn">
+            <template v-if="loggedIn">
                 <div class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
                     <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
                         <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
@@ -22,8 +24,8 @@
                         </h3>
                         <p class="mt-6 text-base text-gray-900">
                             Synchronised progress with all party members, all changes made are instantly available for
-                            users
-                            with access to the shared campaign. By purchasing this license you support this project! *
+                            users with access to the shared campaign. By purchasing this license you support this
+                            project! *
                         </p>
                         <div class="mt-8">
                             <div class="flex items-center">
@@ -57,6 +59,14 @@
                                         Support the project
                                     </p>
                                 </li>
+                                <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
+                                    <div class="flex-shrink-0">
+                                        <inline-svg src="icons/check"/>
+                                    </div>
+                                    <p class="ml-3 text-sm leading-5 text-gray-700">
+                                        No automatic renewal
+                                    </p>
+                                </li>
                             </ul>
                             <p class="mt-6 text-sm text-gray-700">
                                 When purchasing multiple licenses, you can manage multiple campaigns!
@@ -66,19 +76,21 @@
                     <div class="py-8 px-6 text-center bg-gray-200 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
                         <div class="font-title mt-4 flex items-center justify-center text-5xl leading-none text-gray-900">
                       <span>
-                        $3.99
+                        $4.99
                       </span>
                             <span class="ml-3 text-xl leading-7 font-medium text-gray-500">
                         USD
                       </span>
                         </div>
                         <div class="mt-6">
-                            <div class="rounded-md shadow">
-                                <a href="#"
-                                   class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-                                    Get Access
-                                </a>
-                            </div>
+                            <purchase>
+                                <div class="rounded-md shadow">
+                                    <a href="#"
+                                       class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                                        Get Access
+                                    </a>
+                                </div>
+                            </purchase>
                         </div>
                         <p class="mt-4 text-sm leading-5">
                             <a href="#" class="font-medium text-gray-500 underline">
@@ -87,24 +99,18 @@
                         </p>
                     </div>
                 </div>
-
-                <h2 class="text-xl mt-6 mb-2">Support the project</h2>
-                <p class="text-sm">
-                    * All content is available for free, your local progress can be manually shared via the share button
-                    in
-                    the menu. The paid version provides an automatic sync feature, progress doesn't have to be shared
-                    manually anymore! This covers costs maintaining this app for the community, if you enjoy using the
-                    storyline tracker, please consider <a class="link">purchasing a licence</a>.
-                </p>
             </template>
 
             <add-shared-campaign/>
             <request-login-link/>
 
-            <h2 class="text-xl mt-8 mb-2">Synchronise progress</h2>
-            <p class="text-lg mb-1">How does it work?</p>
+            <h2 class="text-xl mt-8 mb-2">How does it work?</h2>
             <ul class="list-disc ml-4 leading-relaxed">
-                <li>Click on <span class="link">Add shared campaign</span></li>
+                <li>Click on
+                    <purchase class="inline link">
+                        Add shared campaign
+                    </purchase>
+                </li>
                 <li>After purchasing a licence you'll receive a link in your email</li>
                 <li>Click on the link in the email to add your new shared campaign!</li>
                 <li class="mt-3">Click on <span class="link" @click="shareCurrentStory">Share</span>
@@ -112,6 +118,16 @@
                 </li>
                 <li class="text-lg">All changes made by any party member will be synchronised! 🎉</li>
             </ul>
+
+            <template v-if="!loggedIn">
+                <h2 class="text-xl mt-6 mb-2">Support the project</h2>
+                <p class="text-base">
+                    * All content is available for free, your local progress can be manually shared via the share button
+                    in the menu. The paid version provides an automatic sync feature, progress doesn't have to be shared
+                    manually anymore! This covers costs maintaining this app for the community, if you enjoy using the
+                    storyline tracker, please consider <a class="link">purchasing a licence</a>.
+                </p>
+            </template>
 
         </div>
     </div>

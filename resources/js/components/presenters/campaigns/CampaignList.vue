@@ -11,7 +11,10 @@
             @click="select(story.campaignId)"
             :class="{'mdc-ripple-upgraded--background-focused': campaignId === story.campaignId}">
             <span class="inline-block w-full flex flex-col md:flex-row items-center justify-between mdc-list-item__text">
-                <span>{{ story.name }}</span>
+                <div class="flex items-center">
+                    <span>{{ story.name }}</span>
+                    <span class="ml-4 material-icons">cloud_queue</span>
+                </div>
                 <span class="mt-2 md:mt-0">
                     <template v-if="story.has_expired">
                         <bedge class="mr-4" expired>{{ $t('Expired') }}</bedge>

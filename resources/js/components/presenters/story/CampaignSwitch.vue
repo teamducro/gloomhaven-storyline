@@ -23,10 +23,12 @@
                 </li>
             </ul>
             <div class="absolute w-80 mt-4 -left-50">
-                <button type="button" class="mdc-button mdc-button--raised">
-                    <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
-                    {{ $t('Add shared campaign') }}
-                </button>
+                <purchase>
+                    <button type="button" class="mdc-button mdc-button--raised">
+                        <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
+                        {{ $t('Add shared campaign') }}
+                    </button>
+                </purchase>
             </div>
         </div>
     </div>
