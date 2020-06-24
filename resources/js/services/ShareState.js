@@ -4,6 +4,7 @@ import AchievementRepository from "../repositories/AchievementRepository";
 import AchievementGroup from "../models/AchievementGroup";
 import Helpers from "./Helpers";
 import Reseter from "./Reseter";
+import ChoiceService from "./ChoiceService";
 
 const queryString = require('query-string');
 
@@ -28,6 +29,17 @@ export default class ShareState {
             if (result.hasOwnProperty('choices')) {
                 result.choices.each((choice, id) => {
                     this.scenarioRepository.find(id).choice = choice;
+                });
+            }
+
+            if (result.hasOwnProperty('promptChoices')) {
+                result.promptChoices.each((choice, id) => {
+                    let scenario = this.scenarioRepository.find(id);
+                    let promptConfig = this.choiceService.getPromptConfig(scenario);
+                    if (typeof promptConfig.callback === 'function') {
+                        promptConfig.callback(choice);
+                    }
+                    scenario.promptChoice = choice;
                 });
             }
 
@@ -63,6 +75,11 @@ export default class ShareState {
 
         result.choices = app.scenarios.where('state', ScenarioState.complete)
             .where('hasChoices', true).pluck('choice', 'id').map((choice, id) => {
+                return id + '_' + choice
+            }).values().implode('-');
+
+        result.promptChoices = app.scenarios.where('state', ScenarioState.complete)
+            .where('hasPrompt', true).pluck('promptChoice', 'id').map((choice, id) => {
                 return id + '_' + choice
             }).values().implode('-');
 
@@ -102,6 +119,13 @@ export default class ShareState {
             });
         }
 
+        if (typeof parsed.promptChoices !== 'undefined') {
+            result.promptChoices = collect(parsed.promptChoices.split('-')).mapWithKeys((choice) => {
+                let parts = choice.split('_');
+                return [parts[0], parts[1]];
+            });
+        }
+
         if (typeof parsed.treasures !== 'undefined') {
             result.treasures = collect(parsed.treasures.split('-')).mapWithKeys((choice) => {
                 let parts = choice.split('_');
@@ -125,6 +149,10 @@ export default class ShareState {
 
     get achievementRepository() {
         return this._achievementRepository || (this._achievementRepository = new AchievementRepository);
+    }
+
+    get choiceService() {
+        return this._choiceService || (this._choiceService = new ChoiceService);
     }
 
     get reseter() {
