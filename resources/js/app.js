@@ -31,26 +31,8 @@ Vue.use(VueClipboard);
 const components = require.context('./components', true, /\.vue$/i);
 components.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], components(key).default));
 
-// pages
-const Story = () => import("./pages/Story");
-const Scenarios = () => import("./pages/Scenarios");
-const Achievements = () => import("./pages/Achievements");
-const Map = () => import("./pages/Map");
-const Info = () => import("./pages/Info");
-const Campaigns = () => import("./pages/Campaigns");
-const Login = () => import("./pages/Login");
-
 // Router
-const routes = [
-    {path: '/', redirect: '/story'},
-    {path: '/story', component: Story},
-    {path: '/scenarios', component: Scenarios},
-    {path: '/map', component: Map},
-    {path: '/achievements', component: Achievements},
-    {path: '/info', component: Info},
-    {path: '/campaigns', component: Campaigns},
-    {path: '/login/:id/:token', component: Login}
-];
+const routes = require('./routes').default;
 const router = new VueRouter({routes});
 Vue.use(VueRouter);
 
@@ -98,7 +80,6 @@ window.app = new Vue({
             achievementRepository: new AchievementRepository,
             userRepository: new UserRepository,
             storyRepository: new StoryRepository,
-
         }
     },
     async mounted() {
