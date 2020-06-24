@@ -9,7 +9,7 @@ The following features are planned for upcoming updates.
 
 * [x] Map with scenario stickers
 * [x] Global and party achievements
-* [ ] French Translations
+* [x] French Translations
 * [ ] iOS and Android apps
 * [ ] Hosted progress for easy sharing (would need to be a paid option)
 * [ ] Solo scenarios
