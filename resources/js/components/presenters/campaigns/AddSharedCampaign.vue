@@ -1,32 +1,35 @@
 <template>
     <div>
-        <div class="text-center md:text-left">
-            <h2 class="text-xl mt-8">{{ $t('Received a campaign code?') }}</h2>
+        <collapse class="mt-8">
+            <template v-slot:trigger>
+                <h2 class="text-xl">{{ $t('Received a campaign code?') }}</h2>
+            </template>
+
             <p class="leading-loose">
                 {{ $t('Fill in your campaign code, you\'ll get access to the shared campaign.') }}
             </p>
-        </div>
-        <form @submit="submitCampaignCode" class="flex flex-col md:flex-row items-center">
-            <label class="mdc-text-field mdc-text-field--filled" ref="code">
-                <span class="mdc-text-field__ripple"></span>
-                <input class="mdc-text-field__input" aria-labelledby="code-label"
-                       v-model="code" type="text" name="code">
-                <span class="mdc-floating-label" id="code-label">Campaign code</span>
-                <span class="mdc-line-ripple"></span>
-            </label>
-            <div class="relative">
-                <button type="submit" class="mdc-button mdc-button--raised mt-2 ml-0 md:mt-0 md:ml-3">
-                    <span class="mdc-button__label">{{ $t('Sync Campaign') }}</span>
-                </button>
-                <loader v-if="sending" float></loader>
-            </div>
-        </form>
-        <validation-errors :response="errors" field="code"/>
-        <transition name="fade">
-            <alert v-if="success" class="inline-block">
-                {{ $t('Your campaign has been synced! 🎉') }}
-            </alert>
-        </transition>
+            <form @submit="submitCampaignCode" class="flex flex-col md:flex-row items-center">
+                <label class="mdc-text-field mdc-text-field--filled" ref="code">
+                    <span class="mdc-text-field__ripple"></span>
+                    <input class="mdc-text-field__input" aria-labelledby="code-label"
+                           v-model="code" type="text" name="code">
+                    <span class="mdc-floating-label" id="code-label">Campaign code</span>
+                    <span class="mdc-line-ripple"></span>
+                </label>
+                <div class="relative">
+                    <button type="submit" class="mdc-button mdc-button--raised mt-2 ml-0 md:mt-0 md:ml-3">
+                        <span class="mdc-button__label">{{ $t('Sync Campaign') }}</span>
+                    </button>
+                    <loader v-if="sending" float></loader>
+                </div>
+            </form>
+            <validation-errors :response="errors" field="code"/>
+            <transition name="fade">
+                <alert v-if="success" class="inline-block">
+                    {{ $t('Your campaign has been synced! 🎉') }}
+                </alert>
+            </transition>
+        </collapse>
     </div>
 </template>
 
@@ -34,8 +37,10 @@
     import {MDCTextField} from "@material/textfield/component";
     import LoginRepository from "../../../apiRepositories/LoginRepository";
     import StoryRepository from "../../../apiRepositories/StoryRepository";
+    import Collapse from "../../elements/Collapse";
 
     export default {
+        components: {Collapse},
         data() {
             return {
                 code: null,
