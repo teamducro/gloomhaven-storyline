@@ -13,6 +13,7 @@ import Helpers from './services/Helpers';
 import store from "store/dist/store.modern";
 import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
+import {loadStripe} from '@stripe/stripe-js/pure';
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -114,6 +115,8 @@ window.app = new Vue({
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
 
         this.$bus.$on('campaign-selected', this.switchCampaign);
+
+        Vue.prototype.$stripe = await loadStripe(process.env.MIX_STRIPE_KEY);
     },
     methods: {
         async campaignsChanged() {
