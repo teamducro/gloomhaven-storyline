@@ -153,13 +153,21 @@ window.app = new Vue({
         },
         async fetchCampaignData() {
             try {
-                await this.storyRepository.sharedStories();
+                let promises = [
+                    this.storyRepository.sharedStories()
+                ]
                 if (Helpers.loggedIn()) {
-                    this.user = await this.userRepository.find();
-                    this.stories = await this.storyRepository.stories();
-                } else {
-                    this.stories = this.storyRepository.getStories();
+                    promises.push(this.userRepository.find());
+                    promises.push(this.storyRepository.stories());
                 }
+
+                await Promise.all(promises);
+
+                if (Helpers.loggedIn()) {
+                    this.user = this.userRepository.getUser();
+                }
+                this.stories = this.storyRepository.getStories();
+
             } catch (e) {
                 // offline
                 throw e;
