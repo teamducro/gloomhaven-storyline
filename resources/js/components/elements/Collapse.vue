@@ -39,7 +39,16 @@
                 isOpen: this.initialOpen
             }
         },
-        watch: {},
+        watch: {
+            async isOpen(isOpen) {
+                await this.$nextTick();
+                if (isOpen) {
+                    this.$emit('opened');
+                } else {
+                    this.$emit('closed');
+                }
+            }
+        },
         methods: {}
     }
 </script>

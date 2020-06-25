@@ -1,6 +1,6 @@
 <template>
     <div>
-        <collapse class="mt-8">
+        <collapse class="mt-8" @opened="onOpen" @closed="onClose">
             <template v-slot:trigger>
                 <h2 class="text-xl">{{ $t('Already purchased a licence?') }}</h2>
             </template>
@@ -52,11 +52,17 @@
             this.emailField = new MDCTextField(this.$refs['email']);
         },
         destroyed() {
-            if (this.emailField) {
-                this.emailField.destroy();
-            }
+            this.onClose();
         },
         methods: {
+            onOpen() {
+                this.emailField = new MDCTextField(this.$refs['email']);
+            },
+            onClose() {
+                if (this.emailField) {
+                    this.emailField.destroy();
+                }
+            },
             requestLoginLink(e) {
                 e.preventDefault();
                 if (this.sending) {

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <collapse class="mt-8">
+        <collapse class="mt-8" @opened="onOpen" @closed="onClose">
             <template v-slot:trigger>
                 <h2 class="text-xl">{{ $t('Received a campaign code?') }}</h2>
             </template>
@@ -53,14 +53,20 @@
             }
         },
         mounted() {
-            this.codeField = new MDCTextField(this.$refs['code']);
+
         },
         destroyed() {
-            if (this.codeField) {
-                this.codeField.destroy();
-            }
+            this.onClose();
         },
         methods: {
+            onOpen() {
+                this.codeField = new MDCTextField(this.$refs['code']);
+            },
+            onClose() {
+                if (this.codeField) {
+                    this.codeField.destroy();
+                }
+            },
             submitCampaignCode(e) {
                 e.preventDefault();
                 if (this.sending) {
