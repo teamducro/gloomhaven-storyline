@@ -3,17 +3,18 @@
 </template>
 
 <script>
-    import Csrf from "../services/Csrf";
     import UserRepository from "../apiRepositories/UserRepository";
     import AccessToken from "../services/AccessToken";
     import StoryRepository from "../apiRepositories/StoryRepository";
     import LoginRepository from "../apiRepositories/LoginRepository";
+    import store from "store/dist/store.modern";
 
     export default {
         data() {
             return {
                 userRepository: new UserRepository,
                 accessToken: new AccessToken,
+                storyRepository: new StoryRepository,
                 storyRepository: new StoryRepository,
                 login: new LoginRepository
             }
@@ -27,13 +28,23 @@
                     this.accessToken.store(response.data.access_token);
                     await this.userRepository.find();
                     const stories = await this.storyRepository.stories();
-                    await app.switchCampaign(stories.first().campaignId);
+                    const story = stories.first();
+                    if (story.is_new) {
+                        await this.copyLocalToSharedCampaign(story);
+                    }
+                    await app.switchCampaign(story.campaignId);
 
                     this.$router.replace('/story');
                 }).catch(e => {
                     // throw e;
                     this.$router.replace('/story');
                 });
+            },
+            async copyLocalToSharedCampaign(story) {
+                story.data = store.get('local') || {};
+                this.storyRepository.storeStory(story);
+                this.storyRepository.storeCampaignData(story);
+                await this.storyRepository.update(story);
             }
         }
     }
