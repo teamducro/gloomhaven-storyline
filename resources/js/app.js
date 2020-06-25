@@ -142,10 +142,14 @@ window.app = new Vue({
             this.campaignData = store.get(this.campaignId) || {};
 
             if (Helpers.loggedIn()) {
-                this.user = this.userRepository.getUser();
-                this.stories = this.storyRepository.getStories();
                 if (shouldFetch) {
-                    this.fetchCampaignData().then(this.campaignsChanged);
+                    this.fetchCampaignData().then(async () => {
+                        this.campaignData = store.get(this.campaignId) || {};
+                        await this.campaignsChanged();
+                    });
+                } else {
+                    this.user = this.userRepository.getUser();
+                    this.stories = this.storyRepository.getStories();
                 }
             }
         },
@@ -155,6 +159,7 @@ window.app = new Vue({
                 this.stories = await this.storyRepository.stories();
             } catch (e) {
                 // offline
+                // throw e;
             }
         },
         isWebpSupported() {
