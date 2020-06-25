@@ -139,16 +139,15 @@ window.app = new Vue({
         },
         async loadCampaignData(shouldFetch = false) {
             this.campaignId = store.get('campaignId') || 'local';
-            this.campaignData = store.get(this.campaignId) || {};
-            this.stories = this.storyRepository.getStories();
-
-            if (Helpers.loggedIn()) {
-                this.user = this.userRepository.getUser();
-            }
 
             if (shouldFetch) {
                 await this.fetchCampaignData();
-                this.campaignData = store.get(this.campaignId) || {};
+            }
+
+            this.campaignData = store.get(this.campaignId) || {};
+            this.stories = this.storyRepository.getStories();
+            if (Helpers.loggedIn()) {
+                this.user = this.userRepository.getUser();
             }
         },
         async fetchCampaignData() {
@@ -162,15 +161,9 @@ window.app = new Vue({
                 }
 
                 await Promise.all(promises);
-
-                if (Helpers.loggedIn()) {
-                    this.user = this.userRepository.getUser();
-                }
-                this.stories = this.storyRepository.getStories();
-
             } catch (e) {
                 // offline
-                throw e;
+                // throw e;
             }
         },
         isWebpSupported() {
