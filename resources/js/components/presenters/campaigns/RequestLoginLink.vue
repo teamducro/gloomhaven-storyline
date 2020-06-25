@@ -49,7 +49,7 @@
             }
         },
         mounted() {
-            
+
         },
         destroyed() {
             this.onClose();

@@ -83,11 +83,11 @@ window.app = new Vue({
         }
     },
     async mounted() {
-        this.loadCampaignData(true);
         this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
 
+        await this.loadCampaignData(true);
         await this.$nextTick();
         await this.campaignsChanged();
 
@@ -134,32 +134,35 @@ window.app = new Vue({
         async switchCampaign(campaignId, shouldFetch = false) {
             this.campaignId = campaignId;
             store.set('campaignId', this.campaignId);
-            this.loadCampaignData(shouldFetch);
+            await this.loadCampaignData(shouldFetch);
             await this.campaignsChanged();
         },
-        loadCampaignData(shouldFetch = false) {
+        async loadCampaignData(shouldFetch = false) {
             this.campaignId = store.get('campaignId') || 'local';
             this.campaignData = store.get(this.campaignId) || {};
+            this.stories = this.storyRepository.getStories();
 
             if (Helpers.loggedIn()) {
-                if (shouldFetch) {
-                    this.fetchCampaignData().then(async () => {
-                        this.campaignData = store.get(this.campaignId) || {};
-                        await this.campaignsChanged();
-                    });
-                } else {
-                    this.user = this.userRepository.getUser();
-                    this.stories = this.storyRepository.getStories();
-                }
+                this.user = this.userRepository.getUser();
+            }
+
+            if (shouldFetch) {
+                await this.fetchCampaignData();
+                this.campaignData = store.get(this.campaignId) || {};
             }
         },
         async fetchCampaignData() {
             try {
-                this.user = await this.userRepository.find();
-                this.stories = await this.storyRepository.stories();
+                await this.storyRepository.sharedStories();
+                if (Helpers.loggedIn()) {
+                    this.user = await this.userRepository.find();
+                    this.stories = await this.storyRepository.stories();
+                } else {
+                    this.stories = this.storyRepository.getStories();
+                }
             } catch (e) {
                 // offline
-                // throw e;
+                throw e;
             }
         },
         isWebpSupported() {

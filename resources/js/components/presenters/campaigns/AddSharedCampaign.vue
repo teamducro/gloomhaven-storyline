@@ -86,6 +86,8 @@
             async selectCampaign(data) {
                 const stories = await this.storyRepository.stories(data.access_token);
                 if (stories) {
+                    const story = stories.first();
+                    this.storyRepository.storeCampaignData(story);
                     this.$bus.$emit('campaign-selected', stories.first().campaignId);
 
                     this.success = true;
