@@ -49,7 +49,7 @@
             }
         },
         mounted() {
-            this.emailField = new MDCTextField(this.$refs['email']);
+            
         },
         destroyed() {
             this.onClose();
