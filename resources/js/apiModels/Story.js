@@ -25,7 +25,7 @@ class Story extends Model {
 
     cast() {
         this.expires_at = moment(this.expires_at);
-        this.campaignId = 'campaign' + this.id;
+        this.campaignId = '_' + this.id;
     }
 
     hasChanged() {
