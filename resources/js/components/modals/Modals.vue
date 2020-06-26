@@ -6,6 +6,7 @@
         <share-campaign-code></share-campaign-code>
         <reset></reset>
         <donations></donations>
+        <toast></toast>
     </div>
 </template>
 

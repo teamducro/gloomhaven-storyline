@@ -1,32 +1,40 @@
 <template>
     <div @click="purchase">
         <slot></slot>
-        <toast :show="this.error" :success="false">
-            {{ this.error }}
-        </toast>
     </div>
 </template>
 
 <script>
+    import Helpers from "../../services/Helpers";
+    import CheckoutRepository from "../../apiRepositories/CheckoutRepository";
+
     export default {
+        props: {
+            storyId: {
+                type: Number
+            }
+        },
         data() {
             return {
-                error: null
+                checkout: new CheckoutRepository
             }
         },
         methods: {
-            purchase() {
+            async purchase() {
+                const response = await this.checkout.checkout(this.storyId)
+                    .catch(e => {
+                        this.error(e.response.data.message);
+                    });
+
                 this.$stripe.redirectToCheckout({
-                    lineItems: [
-                        {price: process.env.MIX_PRICE, quantity: 1},
-                    ],
-                    mode: 'payment',
-                    successUrl: process.env.MIX_APP_URL + '/#/payment/success',
-                    cancelUrl: process.env.MIX_APP_URL + '/#/payment/canceled',
+                    sessionId: response.data.session
                 })
                     .then(function (result) {
-                        this.error = result.error.message;
+                        this.error(result.error.message);
                     });
+            },
+            error(message) {
+                this.$bus.$emit('toast', message, false);
             }
         }
     }

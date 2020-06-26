@@ -18,14 +18,17 @@
                 <span class="mt-2 md:mt-0">
                     <template v-if="story.has_expired">
                         <bedge class="mr-4" expired>{{ $t('Expired') }}</bedge>
-                        <button class="mr-4 mdc-button mdc-button--raised my-2">
-                            <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
-                            {{ $t('Renew') }}
-                        </button>
+                        <purchase v-if="!story.is_shared" :story-id="story.id" class="inline">
+                            <button class="mr-4 mdc-button mdc-button--raised my-2">
+                                <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
+                                {{ $t('Renew') }}
+                            </button>
+                        </purchase>
                     </template>
                     <template v-else>
                         <bedge class="mr-4">{{ story.expires_at.format("MMM Do YY") }}</bedge>
-                        <button type="button" class="mdc-button mdc-button--raised my-2"
+                        <button v-if="!story.is_shared"
+                                type="button" class="mdc-button mdc-button--raised my-2"
                                 @click="share($event, story)">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
                             {{ $t('Share') }}

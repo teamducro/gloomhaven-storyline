@@ -1,8 +1,8 @@
 <template>
     <transition name="fade">
-        <div v-if="show2" class="fixed right-0 bottom-0 mr-4 mb-4">
+        <div v-if="show" class="fixed right-0 bottom-0 mr-4 mb-4">
             <alert :success="success">
-                <slot></slot>
+                {{ message }}
             </alert>
         </div>
     </transition>
@@ -10,41 +10,31 @@
 
 <script>
     export default {
-        props: {
-            show: {
-                type: Boolean,
-                default: false
-            },
-            success: {
-                type: Boolean,
-                default: true
-            },
-            autoHide: {
-                type: Boolean,
-                default: true
-            },
-        },
         data() {
             return {
-                show2: this.show
+                message: '',
+                show: false,
+                success: true,
+                timer: null
             }
         },
         mounted() {
-            this.letsAutoHide();
+            this.$bus.$on('toast', this.open)
         },
-        watch: {
-            show(show) {
-                this.show2 = show;
-                this.letsAutoHide();
-            }
+        destroyed() {
+            this.$bus.$off('toast', this.open)
         },
         methods: {
-            letsAutoHide() {
-                if (this.show2 && this.autoHide) {
-                    setTimeout(() => {
-                        this.show2 = false;
-                    }, 5000);
+            open(message, isSuccess = true) {
+                this.message = message;
+                this.success = isSuccess;
+                this.show = true;
+                if (this.timer) {
+                    clearTimeout(this.timer);
                 }
+                this.timer = setTimeout(() => {
+                    this.show = false;
+                }, 5000);
             }
         }
     }
