@@ -6,7 +6,7 @@
     import UserRepository from "../apiRepositories/UserRepository";
     import AccessToken from "../services/AccessToken";
     import StoryRepository from "../apiRepositories/StoryRepository";
-    import LoginRepository from "../apiRepositories/LoginRepository";
+    import AuthRepository from "../apiRepositories/AuthRepository";
     import store from "store/dist/store.modern";
 
     export default {
@@ -16,7 +16,7 @@
                 accessToken: new AccessToken,
                 storyRepository: new StoryRepository,
                 storyRepository: new StoryRepository,
-                login: new LoginRepository
+                auth: new AuthRepository
             }
         },
         mounted() {
@@ -24,7 +24,7 @@
         },
         methods: {
             handle() {
-                this.login.login().then(async response => {
+                this.auth.login().then(async response => {
                     this.accessToken.store(response.data.access_token);
                     await this.userRepository.find();
                     const stories = await this.storyRepository.stories();

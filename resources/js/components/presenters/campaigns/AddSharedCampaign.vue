@@ -35,7 +35,7 @@
 
 <script>
     import {MDCTextField} from "@material/textfield/component";
-    import LoginRepository from "../../../apiRepositories/LoginRepository";
+    import AuthRepository from "../../../apiRepositories/AuthRepository";
     import StoryRepository from "../../../apiRepositories/StoryRepository";
     import Collapse from "../../elements/Collapse";
 
@@ -48,7 +48,7 @@
                 errors: null,
                 sending: false,
                 success: false,
-                login: new LoginRepository,
+                auth: new AuthRepository,
                 storyRepository: new StoryRepository
             }
         },
@@ -74,7 +74,7 @@
                 }
                 this.sending = true;
                 this.errors = null;
-                this.login.submitShareCode(this.code).then(response => {
+                this.auth.submitShareCode(this.code).then(response => {
                     this.sending = false;
                     this.code = null;
                     this.selectCampaign(response.data);

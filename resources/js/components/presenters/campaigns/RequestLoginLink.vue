@@ -35,7 +35,7 @@
 <script>
     import {MDCTextField} from "@material/textfield/component";
     import Csrf from "../../../services/Csrf";
-    import LoginRepository from "../../../apiRepositories/LoginRepository";
+    import AuthRepository from "../../../apiRepositories/AuthRepository";
 
     export default {
         data() {
@@ -45,7 +45,7 @@
                 errors: null,
                 success: false,
                 sending: false,
-                login: new LoginRepository
+                auth: new AuthRepository
             }
         },
         mounted() {
@@ -70,7 +70,7 @@
                 }
                 this.sending = true;
                 this.errors = null;
-                this.login.mailLoginToken(this.email).then(response => {
+                this.auth.mailLoginToken(this.email).then(response => {
                     this.sending = false;
                     this.email = null;
                     this.success = true;

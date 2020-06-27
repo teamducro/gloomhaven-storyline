@@ -24,7 +24,7 @@ module.exports = {
             },
             screens: {
                 xs: '400px',
-                lgh: {'raw': '(min-height: 645px)'}
+                lgh: {'raw': '(min-height: 700px)'}
             },
             zIndex: {
                 1: '1',
@@ -51,7 +51,8 @@ module.exports = {
                 white2: {
                     25: 'rgba(255, 255, 255, .25)',
                     50: 'rgba(255, 255, 255, .50)',
-                    75: 'rgba(255, 255, 255, .75)'
+                    75: 'rgba(255, 255, 255, .75)',
+                    87: 'rgba(255, 255, 255, .75)'
                 },
                 red: {
                     ...colors.red,
