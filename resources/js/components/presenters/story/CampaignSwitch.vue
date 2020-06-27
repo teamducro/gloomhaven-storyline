@@ -3,7 +3,7 @@
         <div class="mdc-select__anchor">
             <i class="mdc-select__dropdown-icon"></i>
             <div class="mdc-select__selected-text">
-                {{ current }}
+                {{ current === 'local' ? $t('local') : current }}
             </div>
         </div>
 
@@ -16,10 +16,11 @@
                 </li>
                 <li v-for="(story) in stories.items"
                     :key="story.campaignId" :data-value="story.campaignId"
-                    class="mdc-list-item cursor-pointer whitespace-no-wrap"
+                    class="mdc-list-item cursor-pointer whitespace-no-wrap flex items-center"
                     :aria-selected="current === story.campaignId"
                     :class="{'mdc-list-item--selected': current === story.campaignId}">
                     {{ story.name }}
+                    <span class="ml-4 mt-1 cloud-queue"></span>
                 </li>
                 <li>
                     <purchase>

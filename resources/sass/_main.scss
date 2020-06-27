@@ -45,3 +45,8 @@ button:focus, .scenario {
 [v-cloak] {
     display: none;
 }
+
+.cloud-queue:after {
+    @extend .material-icons;
+    content: 'cloud_queue';
+}
