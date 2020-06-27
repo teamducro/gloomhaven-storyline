@@ -9,27 +9,27 @@
 
         <div class="mdc-select__menu mdc-menu mdc-menu-surface overflow-visible">
             <ul class="mdc-list">
-                <li class="mdc-list-item cursor-pointer"
+                <li class="mdc-list-item cursor-pointer whitespace-no-wrap"
                     :aria-selected="current === 'local'"
                     :class="{'mdc-list-item--selected': current === 'local'}">
                     {{ $t('local') }}
                 </li>
                 <li v-for="(story) in stories.items"
                     :key="story.campaignId" :data-value="story.campaignId"
-                    class="mdc-list-item cursor-pointer"
+                    class="mdc-list-item cursor-pointer whitespace-no-wrap"
                     :aria-selected="current === story.campaignId"
                     :class="{'mdc-list-item--selected': current === story.campaignId}">
                     {{ story.name }}
                 </li>
+                <li>
+                    <purchase>
+                        <button type="button" class="mdc-button mdc-button--raised whitespace-no-wrap">
+                            <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
+                            {{ $t('Add shared campaign') }}
+                        </button>
+                    </purchase>
+                </li>
             </ul>
-            <div class="absolute w-80 mt-4 -left-50">
-                <purchase>
-                    <button type="button" class="mdc-button mdc-button--raised">
-                        <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
-                        {{ $t('Add shared campaign') }}
-                    </button>
-                </purchase>
-            </div>
         </div>
     </div>
 </template>
