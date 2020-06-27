@@ -12,7 +12,9 @@
             :class="{'mdc-ripple-upgraded--background-focused': campaignId === story.campaignId}">
             <span class="inline-block w-full flex flex-col md:flex-row items-center justify-between mdc-list-item__text">
                 <div class="flex items-center">
-                    <span>{{ story.name }}</span>
+                    <change-campaign-name :story="story"
+                                          :editing="!story.is_shared && campaignId === story.campaignId"
+                    ></change-campaign-name>
                     <span class="ml-4 material-icons">cloud_queue</span>
                 </div>
                 <span class="mt-2 md:mt-0">

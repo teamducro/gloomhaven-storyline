@@ -19,7 +19,11 @@ export default class StoryRepository extends ApiRepository {
 
     async update(story) {
         const data = story.postData();
-        return await this.api.withToken(story.token).put('stories/' + story.id, data);
+        const response = await this.api.withToken(story.token).put('stories/' + story.id, data);
+        const storyResponse = response.data;
+        this.storeStory(storyResponse, story.token);
+
+        return new Story(storyResponse);
     }
 
     async sharedStories() {
@@ -54,8 +58,9 @@ export default class StoryRepository extends ApiRepository {
         }
         const ids = stories.pluck('id').toArray();
         const otherStories = collect(store.get('stories', []))
-            .filter(story => !ids.includes(story.id));
-        const storiesToStore = stories.merge(otherStories).toArray();
+            .filter(story => !ids.includes(story.id))
+            .toArray();
+        const storiesToStore = stories.merge(otherStories);
         store.set('stories', storiesToStore);
     }
 

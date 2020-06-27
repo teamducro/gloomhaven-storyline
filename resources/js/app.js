@@ -96,6 +96,7 @@ window.app = new Vue({
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
 
         this.$bus.$on('campaign-selected', this.switchCampaign);
+        this.$bus.$on('load-campaign-data', this.loadCampaignData);
 
         Vue.prototype.$stripe = await loadStripe(process.env.MIX_STRIPE_KEY);
     },
