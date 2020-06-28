@@ -164,7 +164,7 @@
             },
             gravatar() {
                 const hash = md5(this.user.email);
-                return 'https://www.gravatar.com/avatar/' + hash + '?d=identicon';
+                return `https://www.gravatar.com/avatar/${hash}?d=identicon`;
             }
         }
     }

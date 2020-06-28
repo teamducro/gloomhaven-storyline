@@ -6,5 +6,8 @@ export default {
     },
     loggedIn() {
         return typeof (new AccessToken).get() === 'string'
+    },
+    isNumeric(number) {
+        return !isNaN(parseFloat(number)) && isFinite(number);
     }
 }

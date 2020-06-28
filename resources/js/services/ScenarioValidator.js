@@ -8,7 +8,7 @@ import StorySyncer from "./StorySyncer";
 
 export default class ScenarioValidator {
 
-    validate() {
+    validate(shouldSync = true) {
         this.needsValidating = true;
         let count = 1;
 
@@ -27,7 +27,9 @@ export default class ScenarioValidator {
 
         this.achievementValidator.validate();
         this.questValidator.validate();
-        this.storySyncer.store();
+        if (shouldSync) {
+            this.storySyncer.store();
+        }
     }
 
     checkHidden(scenario) {

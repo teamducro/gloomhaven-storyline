@@ -47,6 +47,16 @@ export default class StoryRepository extends ApiRepository {
         return s;
     }
 
+    replaceStory(story) {
+        const oldStory = this.getStory(story.id);
+        story.token = oldStory.token;
+        story.is_shared = oldStory.is_shared;
+        this.storeStory(story, oldStory.token);
+        const s = new Story(story);
+        this.storeCampaignData(s);
+        return s;
+    }
+
     storeStory(story, token) {
         this.storeStories([story], token);
     }
@@ -71,6 +81,10 @@ export default class StoryRepository extends ApiRepository {
     getStories() {
         return collect(store.get('stories'))
             .map(story => new Story(story));
+    }
+
+    getStory(id) {
+        return this.getStories().firstWhere('id', parseInt(id));
     }
 
     getSharedStories() {

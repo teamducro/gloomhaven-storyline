@@ -14,6 +14,7 @@ import store from "store/dist/store.modern";
 import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
 import {loadStripe} from '@stripe/stripe-js/pure';
+import EchoService from "./services/EchoService";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -23,6 +24,7 @@ window.axios = require('axios').default.create({
     baseURL: process.env.MIX_API_URL,
     withCredentials: true
 });
+
 Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
@@ -80,17 +82,21 @@ window.app = new Vue({
             achievementRepository: new AchievementRepository,
             userRepository: new UserRepository,
             storyRepository: new StoryRepository,
+            echo: new EchoService,
+            scenarioValidator: new ScenarioValidator,
         }
     },
     async mounted() {
         this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
+        this.echo.init();
 
         await this.loadCampaignData(true);
         await this.$nextTick();
         await this.campaignsChanged();
 
+        (new ShareState).load();
         this.shouldRedirectToDotCom();
 
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
@@ -101,10 +107,10 @@ window.app = new Vue({
         Vue.prototype.$stripe = await loadStripe(process.env.MIX_STRIPE_KEY);
     },
     methods: {
-        async campaignsChanged() {
+        async campaignsChanged(shouldSync = true) {
             await Promise.all([
                 this.fetchAchievements(),
-                this.fetchScenarios()
+                this.fetchScenarios(shouldSync)
             ]);
 
             this.$bus.$emit('campaigns-changed');
@@ -116,14 +122,13 @@ window.app = new Vue({
 
             return true;
         },
-        async fetchScenarios() {
+        async fetchScenarios(shouldSync = true) {
             this.quests = this.questRepository.fetch();
             this.scenarios = this.scenarioRepository.fetch();
             this.scenarioRepository.setQuests(this.scenarios, this.quests);
 
             await this.$nextTick();
-            (new ShareState).load();
-            (new ScenarioValidator).validate();
+            this.scenarioValidator.validate(shouldSync);
             this.$bus.$emit('scenarios-updated');
 
             return true;
@@ -150,6 +155,14 @@ window.app = new Vue({
             if (Helpers.loggedIn()) {
                 this.user = this.userRepository.getUser();
             }
+
+            this.stories.each(story => {
+                this.echo.listen(story, async newStory => {
+                    this.storyRepository.replaceStory(newStory);
+                    await this.loadCampaignData();
+                    await this.campaignsChanged(false);
+                });
+            });
         },
         async fetchCampaignData() {
             try {

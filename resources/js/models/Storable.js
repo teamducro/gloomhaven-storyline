@@ -3,13 +3,15 @@ import store from "store/dist/store.modern";
 export default {
 
     store() {
-        const valuesToStore = collect(this.fieldsToStore || [])
+        const valuesToStore = collect(this.fieldsToStore || {})
             .map((modelKey) => {
                 if (typeof modelKey === 'object') {
                     modelKey = Object.keys(modelKey)[0];
                 }
                 return this[modelKey];
-            }).all();
+            })
+            .sortKeys()
+            .all();
 
         app.campaignData[this.key()] = valuesToStore;
         store.set(app.campaignId, app.campaignData);
@@ -19,7 +21,7 @@ export default {
         let model = app.campaignData[this.key()];
 
         if (model) {
-            const fieldsToStore = collect(this.fieldsToStore || []);
+            const fieldsToStore = collect(this.fieldsToStore || {});
             fieldsToStore.each((modelKey, storeKey) => {
                 let defaultValue = undefined;
                 // support for default values from local storage
