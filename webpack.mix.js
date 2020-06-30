@@ -32,7 +32,8 @@ mix.i18n()
         content: [
             rootPath('resources/**/*.html'),
             rootPath('resources/**/*.js'),
-            rootPath('resources/**/*.vue')
+            rootPath('resources/**/*.vue'),
+            rootPath('resources/**/*.svg')
         ],
         whitelistPatterns: [/^mdc-/, /-active$/, /-enter$/, /-leave-to$/, /tippy/],
         whitelistPatternsChildren: [/tippy/, /storyline/]
