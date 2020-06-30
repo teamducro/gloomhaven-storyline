@@ -7,7 +7,7 @@
 
             <campaign-list></campaign-list>
 
-            <div class="flex flex-col md:flex-row items-center">
+            <div class="flex items-center">
                 <purchase>
                     <button type="button" class="mt-4 mdc-button mdc-button--raised">
                         <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
@@ -16,7 +16,17 @@
                 </purchase>
             </div>
 
-            <template v-if="!loggedIn">
+            <div v-if="paymentSuccess"
+                 class="w-full max-w-lg bg-white px-6 py-8 mt-8 mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:p-10">
+                <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
+                    Payment Successful!
+                </h3>
+                <p class="mt-6 text-base text-gray-900">
+                    Thanks for purchasing, please check your email to enable your shared campaign!
+                </p>
+            </div>
+
+            <template v-if="!loggedIn && !paymentSuccess">
                 <div class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
                     <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
                         <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
@@ -101,13 +111,13 @@
                 </div>
             </template>
 
-            <add-shared-campaign/>
-            <request-login-link/>
+            <div class="flex flex-col lg:flex-row">
+                <add-shared-campaign/>
+                <request-login-link/>
+            </div>
 
-            <collapse class="mt-8 mb-2" :initial-open="!loggedIn">
-                <template v-slot:trigger>
-                    <h2 class="text-xl">How does it work?</h2>
-                </template>
+            <div class="mt-8 mb-2">
+                <h2 class="text-xl">How does it work?</h2>
                 <ul class="list-disc ml-4 leading-relaxed">
                     <li>Click on
                         <purchase class="inline link">
@@ -119,21 +129,20 @@
                     <li class="mt-3">Click on <span class="link" @click="shareCurrentStory">Share</span>
                         to give access to your party members
                     </li>
-                    <li class="text-lg">All changes made by any party member will be synchronised! 🎉</li>
+                    <li>All changes made by any party member will be synchronised! 🎉</li>
                 </ul>
-            </collapse>
+            </div>
 
-            <collapse class="mt-6 mb-2" :initial-open="!loggedIn">
-                <template v-slot:trigger>
-                    <h2 class="text-xl">Support the project</h2>
-                </template>
+            <div class="mt-6 mb-2">
+                <h2 class="text-xl">Support the project</h2>
                 <p class="text-base">
-                    * All content is available for free, your local progress can be manually shared via the share button
+                    {{ !loggedIn ? '* ' : '' }}
+                    All content is available for free, your local progress can be manually shared via the share button
                     in the menu. The paid version provides an automatic sync feature, progress doesn't have to be shared
                     manually anymore! This covers costs maintaining this app for the community, if you enjoy using the
                     storyline tracker, please consider <a class="link">purchasing a licence</a>.
                 </p>
-            </collapse>
+            </div>
 
         </div>
     </div>
@@ -147,16 +156,20 @@
         data() {
             return {
                 loggedIn: Helpers.loggedIn(),
+                paymentSuccess: false,
                 storyRepository: new StoryRepository
             }
         },
         mounted() {
-
+            this.paymentSuccess = this.isPaymentSuccess();
         },
         destroyed() {
 
         },
         methods: {
+            isPaymentSuccess() {
+                return location.search.includes('payment_success');
+            },
             shareCurrentStory() {
                 this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
             }

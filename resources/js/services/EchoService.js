@@ -32,6 +32,10 @@ export default class EchoService {
     }
 
     listen(story, callback) {
+        if (!window.Echo) {
+            this.init();
+        }
+
         if (!this.listens.includes(story.id)) {
             window.Echo.private(`story.${story.id}`)
                 .listen('StoryUpdated', event => {

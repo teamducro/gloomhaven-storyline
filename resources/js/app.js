@@ -90,7 +90,6 @@ window.app = new Vue({
         this.checkOrientation();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
-        this.echo.init();
 
         await this.loadCampaignData(true);
         await this.$nextTick();

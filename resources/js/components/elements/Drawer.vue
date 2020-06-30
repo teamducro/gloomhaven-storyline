@@ -77,7 +77,8 @@
                 <div class="mdc-list-group">
                     <ul>
                         <li>
-                            <a class="mdc-list-item" @click="$bus.$emit('open-share-modal')">
+                            <a class="mdc-list-item"
+                               @click="loggedIn ? shareCurrentStory() : $bus.$emit('open-share-modal')">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">share</i>
                                 <span class="mdc-list-item__text">{{ $t('Share') }}</span>
                             </a>
@@ -131,6 +132,7 @@
     import Helpers from "../../services/Helpers";
     import InlineSvg from "./InlineSvg";
     import AuthRepository from "../../apiRepositories/AuthRepository";
+    import StoryRepository from "../../repositories/StoryRepository";
 
     const md5 = require('js-md5');
 
@@ -142,7 +144,8 @@
                 list: null,
                 user: null,
                 loggedIn: Helpers.loggedIn(),
-                auth: new AuthRepository()
+                auth: new AuthRepository(),
+                storyRepository: new StoryRepository
             }
         },
         mounted() {
@@ -165,6 +168,9 @@
             gravatar() {
                 const hash = md5(this.user.email);
                 return `https://www.gravatar.com/avatar/${hash}?d=identicon`;
+            },
+            shareCurrentStory() {
+                this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
             }
         }
     }

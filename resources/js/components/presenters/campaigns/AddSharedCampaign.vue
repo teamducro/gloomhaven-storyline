@@ -1,14 +1,12 @@
 <template>
     <div>
-        <collapse class="mt-8" @opened="onOpen" @closed="onClose">
-            <template v-slot:trigger>
-                <h2 class="text-xl">{{ $t('Received a campaign code?') }}</h2>
-            </template>
+        <div class="mt-8">
+            <h2 class="text-xl">{{ $t('Received a campaign code?') }}</h2>
 
-            <p class="leading-loose">
+            <p class="mt-2">
                 {{ $t('Fill in your campaign code, you\'ll get access to the shared campaign.') }}
             </p>
-            <form @submit="submitCampaignCode" class="flex flex-col md:flex-row items-center">
+            <form @submit="submitCampaignCode" class="flex items-center">
                 <label class="mdc-text-field mdc-text-field--filled" ref="code">
                     <span class="mdc-text-field__ripple"></span>
                     <input class="mdc-text-field__input" aria-labelledby="code-label"
@@ -17,7 +15,7 @@
                     <span class="mdc-line-ripple"></span>
                 </label>
                 <div class="relative">
-                    <button type="submit" class="mdc-button mdc-button--raised mt-2 ml-0 md:mt-0 md:ml-3">
+                    <button type="submit" class="mdc-button mdc-button--raised ml-3">
                         <span class="mdc-button__label">{{ $t('Sync Campaign') }}</span>
                     </button>
                     <loader v-if="sending" float></loader>
@@ -29,7 +27,7 @@
                     {{ $t('Your campaign has been synced! 🎉') }}
                 </alert>
             </transition>
-        </collapse>
+        </div>
     </div>
 </template>
 
@@ -53,20 +51,14 @@
             }
         },
         mounted() {
-
+            this.codeField = new MDCTextField(this.$refs['code']);
         },
         destroyed() {
-            this.onClose();
+            if (this.codeField) {
+                this.codeField.destroy();
+            }
         },
         methods: {
-            onOpen() {
-                this.codeField = new MDCTextField(this.$refs['code']);
-            },
-            onClose() {
-                if (this.codeField) {
-                    this.codeField.destroy();
-                }
-            },
             submitCampaignCode(e) {
                 e.preventDefault();
                 if (this.sending) {

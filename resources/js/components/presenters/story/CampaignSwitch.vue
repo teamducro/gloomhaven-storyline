@@ -9,7 +9,8 @@
 
         <div class="mdc-select__menu mdc-menu mdc-menu-surface overflow-visible">
             <ul class="mdc-list">
-                <li class="mdc-list-item cursor-pointer whitespace-no-wrap"
+                <li v-if="stories.isEmpty()"
+                    class="mdc-list-item cursor-pointer whitespace-no-wrap"
                     :aria-selected="current === 'local'"
                     :class="{'mdc-list-item--selected': current === 'local'}">
                     {{ $t('local') }}
@@ -21,14 +22,6 @@
                     :class="{'mdc-list-item--selected': current === story.campaignId}">
                     {{ story.name }}
                     <span class="ml-4 mt-1 cloud-queue"></span>
-                </li>
-                <li>
-                    <purchase>
-                        <button type="button" class="mdc-button mdc-button--raised whitespace-no-wrap">
-                            <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
-                            {{ $t('Add shared campaign') }}
-                        </button>
-                    </purchase>
                 </li>
             </ul>
         </div>

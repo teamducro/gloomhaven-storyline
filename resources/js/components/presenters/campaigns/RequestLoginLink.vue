@@ -1,13 +1,12 @@
 <template>
     <div>
-        <collapse class="mt-8" @opened="onOpen" @closed="onClose">
-            <template v-slot:trigger>
-                <h2 class="text-xl">{{ $t('Already purchased a licence?') }}</h2>
-            </template>
-            <p class="leading-loose">
+        <div class="mt-8">
+            <h2 class="text-xl">{{ $t('Restore Purchase') }}</h2>
+
+            <p class="mt-2">
                 {{ $t('Fill in your email, you\'ll receive a link to sync your campaign.') }}
             </p>
-            <form @submit="requestLoginLink" class="flex flex-col md:flex-row items-center">
+            <form @submit="requestLoginLink" class="flex items-center">
                 <label class="mdc-text-field mdc-text-field--filled" ref="email">
                     <span class="mdc-text-field__ripple"></span>
                     <input class="mdc-text-field__input" aria-labelledby="email-label"
@@ -16,7 +15,7 @@
                     <span class="mdc-line-ripple"></span>
                 </label>
                 <div class="relative">
-                    <button type="submit" class="mdc-button mdc-button--raised mt-2 ml-0 md:mt-0 md:ml-3">
+                    <button type="submit" class="mdc-button mdc-button--raised mt-2 ml-3">
                         <span class="mdc-button__label">{{ $t('Request Login Link') }}</span>
                     </button>
                     <loader v-if="sending" float></loader>
@@ -28,7 +27,7 @@
                     {{ $t('The email is send to your inbox.') }}
                 </alert>
             </transition>
-        </collapse>
+        </div>
     </div>
 </template>
 
@@ -49,20 +48,14 @@
             }
         },
         mounted() {
-
+            this.emailField = new MDCTextField(this.$refs['email']);
         },
         destroyed() {
-            this.onClose();
+            if (this.emailField) {
+                this.emailField.destroy();
+            }
         },
         methods: {
-            onOpen() {
-                this.emailField = new MDCTextField(this.$refs['email']);
-            },
-            onClose() {
-                if (this.emailField) {
-                    this.emailField.destroy();
-                }
-            },
             requestLoginLink(e) {
                 e.preventDefault();
                 if (this.sending) {
