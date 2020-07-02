@@ -35,8 +35,8 @@ mix.i18n()
             rootPath('resources/**/*.vue'),
             rootPath('resources/**/*.svg')
         ],
-        whitelistPatterns: [/^mdc-/, /-active$/, /-enter$/, /-leave-to$/, /tippy/],
-        whitelistPatternsChildren: [/tippy/, /storyline/]
+        whitelistPatterns: [/mdc/, /-active$/, /-enter$/, /-leave-to$/, /tippy/],
+        whitelistPatternsChildren: [/mdc/, /tippy/, /storyline/]
     })
     .copy('resources/public', 'public')
     .copy('resources/img', 'public/img')
