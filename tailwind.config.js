@@ -2,6 +2,12 @@ const plugin = require('tailwindcss/plugin');
 const {colors} = require('tailwindcss/defaultTheme');
 
 module.exports = {
+    purge: [
+        './resources/**/*.html',
+        './resources/**/*.vue',
+        './resources/**/*.js',
+        './resources/**/*.cvs'
+    ],
     theme: {
         extend: {
             fontFamily: {

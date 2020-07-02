@@ -1,6 +1,4 @@
 let mix = require('laravel-mix');
-require('laravel-mix-purgecss');
-const rootPath = Mix.paths.root.bind(Mix.paths);
 const tailwindcss = require('tailwindcss');
 const md5File = require('md5-file/promise');
 const replace = require('replace-in-file');
@@ -27,16 +25,6 @@ mix.i18n()
         sassOptions: {
             includePaths: ['./node_modules']
         }
-    })
-    .purgeCss({
-        content: [
-            rootPath('resources/**/*.html'),
-            rootPath('resources/**/*.js'),
-            rootPath('resources/**/*.vue'),
-            rootPath('resources/**/*.svg')
-        ],
-        whitelistPatterns: [/mdc/, /-active$/, /-enter$/, /-leave-to$/, /tippy/],
-        whitelistPatternsChildren: [/mdc/, /tippy/, /storyline/]
     })
     .copy('resources/public', 'public')
     .copy('resources/img', 'public/img')
