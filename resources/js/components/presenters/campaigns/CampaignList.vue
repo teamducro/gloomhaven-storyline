@@ -1,6 +1,6 @@
 <template>
     <ul class="mdc-list">
-        <li v-if="stories.isEmpty()" class="mdc-list-item" tabindex="0"
+        <li v-if="stories.isEmpty()" class="mdc-list-item min-h-14" tabindex="0"
             @click="select('local')"
             :class="{'mdc-ripple-upgraded--background-focused': campaignId === 'local'}">
             <div class="flex items-center">
@@ -12,7 +12,7 @@
             </div>
         </li>
         <li v-for="story in stories.items" :key="story.id"
-            class="mdc-list-item h-auto" tabindex="0"
+            class="mdc-list-item min-h-14" tabindex="0"
             @click="select(story.campaignId)"
             :class="{'mdc-ripple-upgraded--background-focused': isSelected(story)}">
             <div class="inline-block w-full flex items-center justify-between mdc-list-item__text">

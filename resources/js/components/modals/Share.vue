@@ -8,11 +8,12 @@
                     {{ $t('share.2') }}</a>
                 {{ $t('share.3') }}
             </p>
-            <social-sharing :url="url"
-                            title="Gloomhaven Storyline Tracker"
-                            description="The spoiler free storyline tracker for Gloomhaven"
-                            hashtags="gloomhaven"
-                            inline-template>
+            <social-sharing
+                    :url="url"
+                    title="Gloomhaven Storyline Tracker"
+                    description="The spoiler free storyline tracker for Gloomhaven"
+                    hashtags="gloomhaven"
+                    inline-template>
                 <div class="flex">
                     <network network="whatsapp" class="mr-2 cursor-pointer">
                         <img src="/img/icons/whatsapp.png" alt="whatsapp" srcset="/img/icons/whatsapp@2x.png 2x"

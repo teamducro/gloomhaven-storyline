@@ -10,7 +10,8 @@
                 <span>{{ progress.label }}</span>
             </div>
             <social-sharing
-                    v-if="code"
+                    v-if="code && url"
+                    :url="url"
                     title="Gloomhaven Storyline Tracker"
                     :description="'Your campaign code: ' + code.code"
                     hashtags="gloomhaven"
@@ -26,7 +27,7 @@
                              class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
                     </network>
 
-                    <a v-clipboard:copy="'code'" class="cursor-pointer mr-6 copied">
+                    <a v-clipboard:copy="url" class="cursor-pointer mr-6 copied">
                         <img src="/img/icons/copy-link.png" alt="copy-link" srcset="/img/icons/copy-link@2x.png 2x"
                              class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
                     </a>
@@ -43,6 +44,7 @@
     export default {
         data() {
             return {
+                url: '',
                 story: null,
                 code: null,
                 progress: 0,
@@ -62,6 +64,7 @@
                 this.story = story;
                 this.$refs['modal'].open();
                 await this.fetchCode();
+                this.setUrl();
                 this.setTimer();
                 this.addCopyTippy();
             },
@@ -100,6 +103,9 @@
                 if (this.timer) {
                     clearInterval(this.timer);
                 }
+            },
+            setUrl() {
+                this.url = location.href.replace('/#/', `/?code=${this.code.code}#/`);
             }
         }
     }

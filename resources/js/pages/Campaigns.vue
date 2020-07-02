@@ -113,7 +113,7 @@
 
         <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <div class="flex flex-col lg:flex-row">
-                <add-shared-campaign/>
+                <add-shared-campaign :init-code="initCode"/>
                 <request-login-link/>
             </div>
         </div>
@@ -152,16 +152,23 @@
     import Helpers from "../services/Helpers";
     import StoryRepository from "../repositories/StoryRepository";
 
+    const queryString = require('query-string');
+
     export default {
         data() {
             return {
                 loggedIn: Helpers.loggedIn(),
                 paymentSuccess: false,
+                initCode: '',
                 storyRepository: new StoryRepository
             }
         },
-        mounted() {
+        beforeMount() {
             this.paymentSuccess = this.isPaymentSuccess();
+            this.applyShareCode();
+        },
+        mounted() {
+            Helpers.removeQueryString();
         },
         destroyed() {
 
@@ -169,6 +176,13 @@
         methods: {
             isPaymentSuccess() {
                 return location.search.includes('payment_success');
+            },
+            applyShareCode() {
+                let parsed = queryString.parse(location.search);
+
+                if (typeof parsed.code !== 'undefined') {
+                    this.initCode = parsed.code
+                }
             },
             shareCurrentStory() {
                 this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());

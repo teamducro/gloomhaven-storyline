@@ -5,7 +5,7 @@
         <p class="mt-2">
             {{ $t('Fill in your campaign code, you\'ll get access to the shared campaign.') }}
         </p>
-        <form @submit="submitCampaignCode" class="flex items-center">
+        <form @submit.prevent="submitCampaignCode" class="flex items-center">
             <label class="mdc-text-field mdc-text-field--filled" ref="code">
                 <span class="mdc-text-field__ripple"></span>
                 <input class="mdc-text-field__input" aria-labelledby="code-label"
@@ -33,10 +33,14 @@
     import {MDCTextField} from "@material/textfield/component";
     import AuthRepository from "../../../apiRepositories/AuthRepository";
     import StoryRepository from "../../../apiRepositories/StoryRepository";
-    import Collapse from "../../elements/Collapse";
 
     export default {
-        components: {Collapse},
+        props: {
+            initCode: {
+                type: String,
+                default: ''
+            }
+        },
         data() {
             return {
                 code: null,
@@ -50,6 +54,11 @@
         },
         mounted() {
             this.codeField = new MDCTextField(this.$refs['code']);
+
+            if (this.initCode) {
+                this.code = this.initCode;
+                this.submitCampaignCode();
+            }
         },
         destroyed() {
             if (this.codeField) {
@@ -57,8 +66,7 @@
             }
         },
         methods: {
-            submitCampaignCode(e) {
-                e.preventDefault();
+            submitCampaignCode() {
                 if (this.sending) {
                     return;
                 }
