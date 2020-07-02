@@ -163,6 +163,14 @@
             },
             setUser() {
                 this.user = window.app.user;
+
+                if (this.user && this.shouldOpenShare()) {
+                    this.shareCurrentStory();
+                    Helpers.removeQueryString();
+                }
+            },
+            shouldOpenShare() {
+                return location.search.includes('share');
             },
             gravatar() {
                 const hash = md5(this.user.email);
