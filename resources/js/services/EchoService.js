@@ -32,6 +32,10 @@ export default class EchoService {
     }
 
     listen(story, callback) {
+        if (story.has_expired) {
+            return;
+        }
+
         if (!window.Echo) {
             this.init();
         }
