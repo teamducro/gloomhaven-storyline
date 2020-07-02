@@ -1,33 +1,31 @@
 <template>
-    <div>
-        <div class="mt-8">
-            <h2 class="text-xl">{{ $t('Restore Purchase') }}</h2>
+    <div class="mt-8 lg:mt-0">
+        <h2 class="text-xl">{{ $t('Restore Purchase') }}</h2>
 
-            <p class="mt-2">
-                {{ $t('Fill in your email, you\'ll receive a link to sync your campaign.') }}
-            </p>
-            <form @submit="requestLoginLink" class="flex items-center">
-                <label class="mdc-text-field mdc-text-field--filled" ref="email">
-                    <span class="mdc-text-field__ripple"></span>
-                    <input class="mdc-text-field__input" aria-labelledby="email-label"
-                           v-model="email" type="text" name="email">
-                    <span class="mdc-floating-label" id="email-label">Email</span>
-                    <span class="mdc-line-ripple"></span>
-                </label>
-                <div class="relative">
-                    <button type="submit" class="mdc-button mdc-button--raised mt-2 ml-3">
-                        <span class="mdc-button__label">{{ $t('Request Login Link') }}</span>
-                    </button>
-                    <loader v-if="sending" float></loader>
-                </div>
-            </form>
-            <validation-errors :response="errors" field="email"/>
-            <transition name="fade">
-                <alert v-if="success" class="inline-block">
-                    {{ $t('The email is send to your inbox.') }}
-                </alert>
-            </transition>
-        </div>
+        <p class="mt-2">
+            {{ $t('Fill in your email, you\'ll receive a link to sync your campaign.') }}
+        </p>
+        <form @submit="requestLoginLink" class="flex items-center">
+            <label class="mdc-text-field mdc-text-field--filled" ref="email">
+                <span class="mdc-text-field__ripple"></span>
+                <input class="mdc-text-field__input" aria-labelledby="email-label"
+                       v-model="email" type="text" name="email">
+                <span class="mdc-floating-label" id="email-label">Email</span>
+                <span class="mdc-line-ripple"></span>
+            </label>
+            <div class="relative">
+                <button type="submit" class="mdc-button mdc-button--raised mt-2 ml-3">
+                    <span class="mdc-button__label">{{ $t('Submit') }}</span>
+                </button>
+                <loader v-if="sending" float></loader>
+            </div>
+        </form>
+        <validation-errors :response="errors" field="email"/>
+        <transition name="fade">
+            <alert v-if="success" class="inline-block">
+                {{ $t('The email is send to your inbox.') }}
+            </alert>
+        </transition>
     </div>
 </template>
 

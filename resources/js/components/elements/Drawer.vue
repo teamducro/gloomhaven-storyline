@@ -18,8 +18,7 @@
                         </span>
                         <div class="text-white2-87 flex-1 ml-4 flex flex-col">
                             <span class="text-lg">{{ user.name }}</span>
-                            <!--<span class="text-sm">{{ user.email }}</span>-->
-                            <a class="link text-sm" @click.prevent="logout">{{ $t('Logout') }}</a>
+                            <span class="text-sm">{{ user.email }}</span>
                         </div>
                     </div>
                     <ul ref="list" class="mdc-list">
@@ -102,7 +101,7 @@
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                        <li class="py-4 w-full" @click="toggle">
+                        <li v-if="!loggedIn" class="py-4 w-full" @click="toggle">
                             <router-link to="/campaigns" class="flex justify-center -ml-6">
                                 <button class="relative text-light-gray py-1 pl-3 pr-8 border border-light-gray border-solid rounded-full"
                                         type="submit">
