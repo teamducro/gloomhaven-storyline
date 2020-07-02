@@ -11,7 +11,8 @@
                 <span class="material-icons ml-4">cloud_off</span>
             </div>
         </li>
-        <li v-for="story in stories.items" class="mdc-list-item h-auto" tabindex="0"
+        <li v-for="story in stories.items" :key="story.id"
+            class="mdc-list-item h-auto" tabindex="0"
             @click="select(story.campaignId)"
             :class="{'mdc-ripple-upgraded--background-focused': isSelected(story)}">
             <div class="inline-block w-full flex items-center justify-between mdc-list-item__text">
@@ -37,13 +38,13 @@
                     </template>
                     <template v-else-if="!story.is_shared">
                         <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2 mr-2"
-                                @click="editing[story.id] = !editing[story.id]">
+                                @click="editing[story.id] = !editing[story.id];">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">
                                 {{ editing[story.id] ? 'done' : 'edit' }}
                             </i>
                         </button>
                         <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2"
-                                @click="share($event, story)">
+                                @click.stop="share(story)">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
                         </button>
                     </template>
@@ -82,8 +83,7 @@
             isSelected(story) {
                 return story.campaignId === this.campaignId;
             },
-            share(e, story) {
-                e.stopPropagation();
+            share(story) {
                 this.$bus.$emit('open-share-campaign-code-modal', story);
             }
         }

@@ -1,5 +1,5 @@
 <template>
-    <div @click="purchase">
+    <div @click.stop="purchase">
         <slot></slot>
     </div>
 </template>
