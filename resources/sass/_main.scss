@@ -46,7 +46,12 @@ button:focus, .scenario {
     display: none;
 }
 
-.cloud-queue:after {
+.cloud-on:after {
     @extend .material-icons;
     content: 'cloud_queue';
+}
+
+.cloud-off:after {
+    @extend .material-icons;
+    content: 'cloud_off';
 }

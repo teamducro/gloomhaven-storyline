@@ -13,6 +13,7 @@
                     :aria-selected="current === 'local'"
                     :class="{'mdc-list-item--selected': current === 'local'}">
                     {{ $t('local') }}
+                    <span class="ml-4 mt-1 cloud-off"></span>
                 </li>
                 <li v-for="(story) in stories.items"
                     :key="story.campaignId" :data-value="story.campaignId"
@@ -20,7 +21,7 @@
                     :aria-selected="current === story.campaignId"
                     :class="{'mdc-list-item--selected': current === story.campaignId}">
                     {{ story.name }}
-                    <span class="ml-4 mt-1 cloud-queue"></span>
+                    <span class="ml-4 mt-1 cloud-on"></span>
                 </li>
             </ul>
         </div>
