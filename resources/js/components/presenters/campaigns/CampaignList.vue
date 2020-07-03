@@ -1,6 +1,6 @@
 <template>
     <ul class="mdc-list">
-        <li v-if="stories.isEmpty()" class="mdc-list-item min-h-14" tabindex="0"
+        <li class="mdc-list-item min-h-14" tabindex="0"
             @click="select('local')"
             :class="{'mdc-ripple-upgraded--background-focused': campaignId === 'local'}">
             <div class="flex items-center">

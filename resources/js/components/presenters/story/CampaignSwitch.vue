@@ -9,8 +9,7 @@
 
         <div class="mdc-select__menu mdc-menu mdc-menu-surface overflow-visible">
             <ul class="mdc-list">
-                <li v-if="stories.isEmpty()"
-                    class="mdc-list-item cursor-pointer whitespace-no-wrap"
+                <li class="mdc-list-item cursor-pointer whitespace-no-wrap"
                     :aria-selected="current === 'local'"
                     :class="{'mdc-list-item--selected': current === 'local'}">
                     {{ $t('local') }}
