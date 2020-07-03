@@ -29,7 +29,7 @@
                     await this.userRepository.find();
                     const stories = await this.storyRepository.stories();
                     const story = stories.first();
-                    if (story.is_new) {
+                    if (story.is_new && stories.count() === 1) {
                         await this.copyLocalToSharedCampaign(story);
                     }
                     await app.switchCampaign(story.campaignId);
