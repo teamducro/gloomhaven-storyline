@@ -77,7 +77,7 @@
                     <ul>
                         <li>
                             <a class="mdc-list-item"
-                               @click="loggedIn ? shareCurrentStory() : $bus.$emit('open-share-modal')">
+                               @click="shareCurrentStory">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">share</i>
                                 <span class="mdc-list-item__text">{{ $t('Share') }}</span>
                             </a>
@@ -177,7 +177,11 @@
                 return `https://www.gravatar.com/avatar/${hash}?d=identicon`;
             },
             shareCurrentStory() {
-                this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
+                if (app.campaignId === 'local') {
+                    this.$bus.$emit('open-share-modal');
+                } else {
+                    this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
+                }
             }
         }
     }
