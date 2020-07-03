@@ -87,7 +87,7 @@ export default {
         3: 'Please consider a small donation, it helps a lot.',
         'close': 'Keep using the storyline tracker',
     },
-    local: 'Free Campaign',
+    local: 'Local Campaign',
     scenarios: {
         'Black Barrow': 'Black Barrow',
         'Barrow Lair': 'Barrow Lair',
