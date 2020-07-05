@@ -27,14 +27,10 @@
                                          active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic"
                                    aria-hidden="true">supervisor_account</i>
-                                <template v-if="user">
-                                    <span class="mdc-list-item__text">{{ $t('Campaigns') }}</span>
-                                </template>
-                                <template v-else>
-                                    <span class="mdc-list-item__text">{{ $t('Paid version') }}
-                                        <span class="ml-2 text-gold font-bold">{{ $t('PRO') }}</span>
-                                    </span>
-                                </template>
+                                <span class="mdc-list-item__text">
+                                    {{ $t('Campaigns') }}
+                                    <span v-if="!user" class="ml-2 text-gold font-bold">{{ $t('PRO') }}</span>
+                                </span>
                             </router-link>
                         </li>
 
