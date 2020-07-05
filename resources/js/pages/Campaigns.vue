@@ -142,7 +142,9 @@
                 All content is available for free, your local progress can be manually shared via the share button
                 in the menu. The paid version provides an automatic sync feature, progress doesn't have to be shared
                 manually anymore! This covers costs maintaining this app for the community, if you enjoy using the
-                storyline tracker, please consider <a class="link">purchasing a licence</a>.
+                storyline tracker, please consider
+                <purchase class="inline link">purchasing a licence</purchase>
+                .
             </p>
         </div>
     </div>
