@@ -104,6 +104,8 @@ window.app = new Vue({
         this.$bus.$on('load-campaign-data', this.loadCampaignData);
 
         Vue.prototype.$stripe = await loadStripe(process.env.MIX_STRIPE_KEY);
+
+        this.$bus.$emit('open-donations');
     },
     methods: {
         async campaignsChanged(shouldSync = true) {

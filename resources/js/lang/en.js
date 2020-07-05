@@ -82,9 +82,10 @@ export default {
     'Welcome': 'Welcome',
     'Language': 'Language',
     'donations': {
-        1: 'This Gloomhaven Storyline Tracker is completely free.',
-        2: 'I love to play Gloomhaven and this tracker gives us a clear picture of our campaign. I\'d like to keep providing updates for free.',
-        3: 'Please consider a small donation, it helps a lot.',
+        'title': 'Automatic synchronise progress!',
+        1: 'All content in the Gloomhaven Storyline Tracker is free!',
+        2: 'The paid version provides an automatic sync feature, progress doesn\'t have to be shared manually anymore! This covers costs maintaining this app for the community.',
+        3: 'Please consider a licence, it helps a lot.',
         'close': 'Keep using the storyline tracker',
     },
     local: 'Local Campaign',
