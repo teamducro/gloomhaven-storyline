@@ -48,13 +48,15 @@
 </template>
 <script>
     import store from "store/dist/store.modern";
+    import Helpers from "../../services/Helpers";
 
     export default {
         data() {
             return {
                 show: false,
                 isOpen: false,
-                timesWithoutDonations: 5
+                timesWithoutDonations: 5,
+                loggedIn: Helpers.loggedIn(),
             }
         },
         mounted() {
@@ -74,7 +76,7 @@
             },
             shouldOpen() {
                 // Only show the Donations modal in production
-                if (process.env.NODE_ENV !== 'production') {
+                if (process.env.NODE_ENV !== 'production' || this.loggedIn) {
                     return false;
                 }
 

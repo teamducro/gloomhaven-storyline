@@ -125,14 +125,12 @@
 <script>
     import {MDCDrawer} from "@material/drawer/component";
     import Helpers from "../../services/Helpers";
-    import InlineSvg from "./InlineSvg";
     import AuthRepository from "../../apiRepositories/AuthRepository";
     import StoryRepository from "../../repositories/StoryRepository";
 
     const md5 = require('js-md5');
 
     export default {
-        components: {InlineSvg},
         data() {
             return {
                 drawer: null,
