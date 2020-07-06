@@ -1,0 +1,9 @@
+.mdc-button {
+    &.mdc-button--circle {
+        @apply .rounded-full .min-w-0 .px-2;
+
+        .mdc-button__icon {
+            @apply .i-m-0;
+        }
+    }
+}

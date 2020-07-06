@@ -10,11 +10,21 @@ import VueI18n from 'vue-i18n';
 import VueAnalytics from 'vue-analytics';
 import i18nEn from "./lang/en";
 import Helpers from './services/Helpers';
+import store from "store/dist/store.modern";
+import UserRepository from "./apiRepositories/UserRepository";
+import StoryRepository from "./apiRepositories/StoryRepository";
+import {loadStripe} from '@stripe/stripe-js/pure';
+import EchoService from "./services/EchoService";
 
 window._ = require('lodash');
 window.$ = require('jquery');
 window.Vue = require('vue');
 window.collect = require('collect.js');
+window.axios = require('axios').default.create({
+    baseURL: process.env.MIX_API_URL,
+    withCredentials: true
+});
+
 Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
@@ -23,22 +33,8 @@ Vue.use(VueClipboard);
 const components = require.context('./components', true, /\.vue$/i);
 components.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], components(key).default));
 
-// pages
-const Story = () => import("./pages/Story");
-const Scenarios = () => import("./pages/Scenarios");
-const Achievements = () => import("./pages/Achievements");
-const Map = () => import("./pages/Map");
-const Info = () => import("./pages/Info");
-
 // Router
-const routes = [
-    {path: '/', redirect: '/story'},
-    {path: '/story', component: Story},
-    {path: '/scenarios', component: Scenarios},
-    {path: '/map', component: Map},
-    {path: '/achievements', component: Achievements},
-    {path: '/info', component: Info},
-];
+const routes = require('./routes').default;
 const router = new VueRouter({routes});
 Vue.use(VueRouter);
 
@@ -75,7 +71,19 @@ window.app = new Vue({
             achievements: null,
             webpSupported: true,
             hasMouse: false,
-            isPortrait: true
+            isPortrait: true,
+            user: null,
+            stories: collect(),
+            campaignId: 'local',
+            campaignData: {},
+
+            scenarioRepository: new ScenarioRepository,
+            questRepository: new QuestRepository,
+            achievementRepository: new AchievementRepository,
+            userRepository: new UserRepository,
+            storyRepository: new StoryRepository,
+            echo: new EchoService,
+            scenarioValidator: new ScenarioValidator,
         }
     },
     async mounted() {
@@ -83,39 +91,95 @@ window.app = new Vue({
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
 
-        await Promise.all([
-            this.fetchAchievements(),
-            this.fetchScenarios()
-        ]);
+        await this.loadCampaignData(true);
+        await this.$nextTick();
+        await this.campaignsChanged();
 
+        (new ShareState).load();
         this.shouldRedirectToDotCom();
 
         document.getElementsByTagName('body')[0].style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
 
+        this.$bus.$on('campaign-selected', this.switchCampaign);
+        this.$bus.$on('load-campaign-data', this.loadCampaignData);
+
+        Vue.prototype.$stripe = await loadStripe(process.env.MIX_STRIPE_KEY);
+
         this.$bus.$emit('open-donations');
     },
     methods: {
+        async campaignsChanged(shouldSync = true) {
+            await Promise.all([
+                this.fetchAchievements(),
+                this.fetchScenarios(shouldSync)
+            ]);
+
+            this.$bus.$emit('campaigns-changed');
+        },
         async fetchAchievements() {
-            let achievementRepository = new AchievementRepository;
-            this.achievements = achievementRepository.fetch();
+            this.achievements = this.achievementRepository.fetch();
             await this.$nextTick();
             this.$bus.$emit('achievements-updated');
 
             return true;
         },
-        async fetchScenarios() {
-            let scenarioRepository = new ScenarioRepository;
-            let questRepository = new QuestRepository;
-            this.quests = questRepository.fetch();
-            this.scenarios = scenarioRepository.fetch();
-            scenarioRepository.setQuests(this.scenarios, this.quests);
+        async fetchScenarios(shouldSync = true) {
+            this.quests = this.questRepository.fetch();
+            this.scenarios = this.scenarioRepository.fetch();
+            this.scenarioRepository.setQuests(this.scenarios, this.quests);
 
             await this.$nextTick();
-            (new ShareState).load();
-            (new ScenarioValidator).validate();
+            this.scenarioValidator.validate(shouldSync);
             this.$bus.$emit('scenarios-updated');
 
             return true;
+        },
+        switchLocal() {
+            this.campaignId = 'local';
+            store.set('campaignId', this.campaignId);
+        },
+        async switchCampaign(campaignId, shouldFetch = false) {
+            this.campaignId = campaignId;
+            store.set('campaignId', this.campaignId);
+            await this.loadCampaignData(shouldFetch);
+            await this.campaignsChanged();
+        },
+        async loadCampaignData(shouldFetch = false) {
+            this.campaignId = store.get('campaignId') || 'local';
+
+            if (shouldFetch) {
+                await this.fetchCampaignData();
+            }
+
+            this.campaignData = store.get(this.campaignId) || {};
+            this.stories = this.storyRepository.getStories();
+            if (Helpers.loggedIn()) {
+                this.user = this.userRepository.getUser();
+            }
+
+            this.stories.each(story => {
+                this.echo.listen(story, async newStory => {
+                    this.storyRepository.replaceStory(newStory);
+                    await this.loadCampaignData();
+                    await this.campaignsChanged(false);
+                });
+            });
+        },
+        async fetchCampaignData() {
+            try {
+                let promises = [
+                    this.storyRepository.sharedStories()
+                ]
+                if (Helpers.loggedIn()) {
+                    promises.push(this.userRepository.find());
+                    promises.push(this.storyRepository.stories());
+                }
+
+                await Promise.all(promises);
+            } catch (e) {
+                // offline
+                // throw e;
+            }
         },
         isWebpSupported() {
             let elem = document.createElement('canvas');

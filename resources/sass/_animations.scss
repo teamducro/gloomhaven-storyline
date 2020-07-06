@@ -6,6 +6,15 @@
     opacity: 0;
 }
 
+.fadein-enter-active, .fadein-leave-active {
+    transition: opacity .5s;
+}
+
+.fadein-enter, .fadein-leave-to {
+    transition: opacity 0s;
+    opacity: 0;
+}
+
 .dropdown-enter-active, .dropdown-leave-active {
     transition: opacity .3s, transform .3s;
     transform-origin: top;
@@ -17,6 +26,15 @@
     transform: scaleY(.9);
 }
 
+.expand-enter-active, .expand-leave-active {
+    transition: height .5s ease-in-out;
+    overflow: hidden;
+}
+
+.expand-enter, .expand-leave-to {
+    height: 0;
+}
+
 .modal-enter-active, .modal-leave-active {
     transition: opacity .3s, transform .3s;
     transform-origin: center;
@@ -26,4 +44,13 @@
     transform-origin: center;
     opacity: 0;
     transform: scale(.9);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(540deg);
+    }
 }

@@ -4,10 +4,11 @@ import {ScenarioState} from "../models/ScenarioState";
 import QuestValidator from "./QuestValidator";
 import ChoiceService from "./ChoiceService";
 import AchievementValidator from "./AchievementValidator";
+import StorySyncer from "./StorySyncer";
 
 export default class ScenarioValidator {
 
-    validate() {
+    validate(shouldSync = true) {
         this.needsValidating = true;
         let count = 1;
 
@@ -26,6 +27,9 @@ export default class ScenarioValidator {
 
         this.achievementValidator.validate();
         this.questValidator.validate();
+        if (shouldSync) {
+            this.storySyncer.store();
+        }
     }
 
     checkHidden(scenario) {
@@ -158,5 +162,9 @@ export default class ScenarioValidator {
 
     get choiceService() {
         return this._choiceService || (this._choiceService = new ChoiceService);
+    }
+
+    get storySyncer() {
+        return this._storySyncer || (this._storySyncer = new StorySyncer);
     }
 }

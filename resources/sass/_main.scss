@@ -22,6 +22,7 @@ body {
 .logo {
     @apply fixed mt-4 z-5;
     left: 50%;
+    width: 250px;
     margin-left: -125px;
 }
 
@@ -36,6 +37,21 @@ button:focus, .scenario {
     outline: none;
 }
 
+:not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item::before, :not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item::after {
+    background-color: #000;
+    z-index: -1;
+}
+
 [v-cloak] {
     display: none;
+}
+
+.cloud-on:after {
+    @extend .material-icons;
+    content: 'cloud_queue';
+}
+
+.cloud-off:after {
+    @extend .material-icons;
+    content: 'cloud_off';
 }

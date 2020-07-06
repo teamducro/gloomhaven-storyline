@@ -16,7 +16,6 @@
     <link rel="preload" href="/fonts/Nyala-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/PirataOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/img/gloomhaven-logo.webp" as="image">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link href="/css/theme.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
@@ -44,18 +43,14 @@
 </head>
 <body>
 <div id="app" v-cloak>
-    <webp src="/img/gloomhaven-logo.png" alt="Gloomhaven"
-          class="logo" width="250" height="37"></webp>
+    <webp class="logo" src="/img/gloomhaven-logo.png" alt="Gloomhaven"
+          width="250" height="37"></webp>
     <drawer>
         <template v-slot:content>
             <router-view></router-view>
         </template>
     </drawer>
-    <scenario></scenario>
-    <achievement></achievement>
-    <share></share>
-    <reset></reset>
-    <donations></donations>
+    <modals></modals>
 </div>
 <script src="/js/app.js" rel="script"></script>
 </body>

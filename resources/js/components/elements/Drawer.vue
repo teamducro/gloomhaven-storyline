@@ -11,7 +11,33 @@
             </div>
             <div class="mdc-drawer__content">
                 <div class="mdc-list-group">
+                    <!--
+                    <div v-if="user" class="mx-4 mb-4 flex items-center">
+                        <span class="inline-block h-10 w-10 rounded-full overflow-hidden bg-gray-100">
+                            <img class="h-full w-full"
+                                 :src="gravatar()"/>
+                        </span>
+                        <div class="text-white2-87 flex-1 ml-4 flex flex-col">
+                            <span class="text-lg">{{ user.name }}</span>
+                            <span class="text-sm">{{ user.email }}</span>
+                        </div>
+                    </div>
+                    -->
                     <ul ref="list" class="mdc-list">
+                        <li @click="toggle">
+                            <router-link to="/campaigns" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic"
+                                   aria-hidden="true">supervisor_account</i>
+                                <span class="mdc-list-item__text">
+                                    {{ $t('Campaigns') }}
+                                    <span v-if="!user" class="ml-2 text-gold font-bold">{{ $t('PRO') }}</span>
+                                </span>
+                            </router-link>
+                        </li>
+
+                        <li role="separator" class="mdc-list-divider i-my-2"></li>
+
                         <li @click="toggle">
                             <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <inline-svg src="icons/story" class="mdc-list-item__graphic" aria-hidden="true"/>
@@ -27,7 +53,8 @@
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="/scenarios" class="mdc-list-item" active-class="mdc-list-item--activated">
+                            <router-link to="/scenarios" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">list</i>
                                 <span class="mdc-list-item__text">{{ $t('Scenario list') }}</span>
                             </router-link>
@@ -47,7 +74,8 @@
                 <div class="mdc-list-group">
                     <ul>
                         <li>
-                            <a class="mdc-list-item" @click="$bus.$emit('open-share-modal')">
+                            <a class="mdc-list-item"
+                               @click="shareCurrentStory">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">share</i>
                                 <span class="mdc-list-item__text">{{ $t('Share') }}</span>
                             </a>
@@ -55,12 +83,11 @@
 
                         <li>
                             <a class="mdc-list-item" @click="$bus.$emit('open-reset-modal')">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete_forever</i>
+                                <i class="material-icons mdc-list-item__graphic"
+                                   aria-hidden="true">delete_forever</i>
                                 <span class="mdc-list-item__text">{{ $t('Reset') }}</span>
                             </a>
                         </li>
-
-                        <li role="separator" class="mdc-list-divider i-my-2"></li>
 
                         <li @click="toggle">
                             <router-link to="/info" class="mdc-list-item" active-class="mdc-list-item--activated">
@@ -72,8 +99,14 @@
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                        <li class="py-4 w-full">
-                            <donate class="flex justify-center -ml-6"></donate>
+                        <li v-if="!loggedIn" class="py-4 w-full" @click="toggle">
+                            <router-link to="/campaigns" class="flex justify-center -ml-6">
+                                <button class="relative text-light-gray py-1 pl-3 pr-8 border border-light-gray border-solid rounded-full"
+                                        type="submit">
+                                    {{ $t('Buy me a Beer') }}
+                                    <span class="absolute top-0 right-0 -mt-2 -mr-6 bg-black text-2xl h-12 w-12 leading-12 border-2 border-light-gray border-solid rounded-full">🍻</span>
+                                </button>
+                            </router-link>
                         </li>
                     </ul>
                 </div>
@@ -93,20 +126,58 @@
 
 <script>
     import {MDCDrawer} from "@material/drawer/component";
+    import Helpers from "../../services/Helpers";
+    import AuthRepository from "../../apiRepositories/AuthRepository";
+    import StoryRepository from "../../repositories/StoryRepository";
+
+    const md5 = require('js-md5');
 
     export default {
         data() {
             return {
                 drawer: null,
-                list: null
+                list: null,
+                user: null,
+                loggedIn: Helpers.loggedIn(),
+                auth: new AuthRepository(),
+                storyRepository: new StoryRepository
             }
         },
         mounted() {
             this.drawer = MDCDrawer.attachTo(this.$refs['menu']);
+            this.$bus.$on('campaigns-changed', this.setUser);
         },
         methods: {
             toggle() {
                 this.drawer.open = !this.drawer.open;
+            },
+            async logout() {
+                this.auth.logout();
+                await app.switchCampaign('local');
+
+                location.reload();
+            },
+            setUser() {
+                this.user = window.app.user;
+
+                if (this.user && this.shouldOpenShare()) {
+                    this.shareCurrentStory();
+                    Helpers.removeQueryString();
+                }
+            },
+            shouldOpenShare() {
+                return location.search.includes('share');
+            },
+            gravatar() {
+                const hash = md5(this.user.email);
+                return `https://www.gravatar.com/avatar/${hash}?d=identicon`;
+            },
+            shareCurrentStory() {
+                if (app.campaignId === 'local') {
+                    this.$bus.$emit('open-share-modal');
+                } else {
+                    this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
+                }
             }
         }
     }

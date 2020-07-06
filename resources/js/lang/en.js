@@ -58,11 +58,11 @@ export default {
     'Remove': 'Remove',
     'Clear all': 'Clear all',
     'reset': {
-        'text': 'Are you sure you want to remove scenario data?'
+        'text': 'Are you sure you want to remove all scenario data? This action cannot be undone.'
     },
     'share': {
         'title': 'Share Gloomhaven Storyline Tracker',
-        1: 'Share your current storyline with your party members.',
+        1: 'Share your current local storyline with your party members.',
         2: 'Copy the link',
         3: 'or share it on one of the folowing platforms.'
     },
@@ -82,11 +82,13 @@ export default {
     'Welcome': 'Welcome',
     'Language': 'Language',
     'donations': {
-        1: 'This Gloomhaven Storyline Tracker is completely free.',
-        2: 'I love to play Gloomhaven and this tracker gives us a clear picture of our campaign. I\'d like to keep providing updates for free.',
-        3: 'Please consider a small donation, it helps a lot.',
+        'title': 'Automatic synchronise progress!',
+        1: 'All content in the Gloomhaven Storyline Tracker is free!',
+        2: 'The paid version provides an automatic sync feature, progress doesn\'t have to be shared manually anymore! This covers costs maintaining this app for the community.',
+        3: 'Please consider a licence, it helps a lot.',
         'close': 'Keep using the storyline tracker',
     },
+    local: 'Local Campaign',
     scenarios: {
         'Black Barrow': 'Black Barrow',
         'Barrow Lair': 'Barrow Lair',

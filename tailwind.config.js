@@ -1,6 +1,13 @@
 const plugin = require('tailwindcss/plugin');
+const {colors} = require('tailwindcss/defaultTheme');
 
 module.exports = {
+    purge: [
+        './resources/**/*.html',
+        './resources/**/*.vue',
+        './resources/**/*.js',
+        './resources/**/*.svg'
+    ],
     theme: {
         extend: {
             fontFamily: {
@@ -14,6 +21,7 @@ module.exports = {
                 'area-inset-left': 'env(safe-area-inset-left, 0)'
             },
             spacing: {
+                '.5': '0.125rem',
                 28: '7rem',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
                 'area-inset-right': 'env(safe-area-inset-right, 0)',
@@ -22,9 +30,10 @@ module.exports = {
             },
             screens: {
                 xs: '400px',
-                lgh: {'raw': '(min-height: 645px)'}
+                lgh: {'raw': '(min-height: 600px)'}
             },
             zIndex: {
+                1: '1',
                 5: '5'
             },
             lineHeight: {
@@ -32,12 +41,14 @@ module.exports = {
             },
             colors: {
                 primary: '#3771E0',
+                'primary-dark': '#2356b7',
                 secondary: '#018786',
                 background: '#000',
                 surface: '#111',
                 complete: '#3B8585',
                 incomplete: '#A13C2F',
                 required: '#E9A678',
+                gold: '#E2A246',
                 'light-gray': '#E0E0E0',
                 black2: {
                     25: 'rgba(0, 0, 0, .25)',
@@ -47,7 +58,16 @@ module.exports = {
                 white2: {
                     25: 'rgba(255, 255, 255, .25)',
                     50: 'rgba(255, 255, 255, .50)',
-                    75: 'rgba(255, 255, 255, .75)'
+                    75: 'rgba(255, 255, 255, .75)',
+                    87: 'rgba(255, 255, 255, .75)'
+                },
+                red: {
+                    ...colors.red,
+                    50: 'rgba(255, 100, 100, .50)'
+                },
+                green: {
+                    ...colors.green,
+                    50: 'rgba(100, 255, 100, .50)'
                 }
             }
         }
