@@ -6,7 +6,7 @@
             {{ $t('Fill in your email, you\'ll receive a link to sync your campaign.') }}
         </p>
         <form @submit="requestLoginLink" class="flex items-center">
-            <label class="mdc-text-field mdc-text-field--filled" ref="email">
+            <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="email">
                 <span class="mdc-text-field__ripple"></span>
                 <input class="mdc-text-field__input" aria-labelledby="email-label"
                        v-model="email" type="text" name="email">

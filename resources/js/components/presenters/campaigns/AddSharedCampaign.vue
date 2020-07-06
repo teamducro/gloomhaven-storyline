@@ -6,7 +6,7 @@
             {{ $t('Fill in your campaign code, you\'ll get access to the shared campaign.') }}
         </p>
         <form @submit.prevent="submitCampaignCode" class="flex items-center">
-            <label class="mdc-text-field mdc-text-field--filled" ref="code">
+            <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="code">
                 <span class="mdc-text-field__ripple"></span>
                 <input class="mdc-text-field__input" aria-labelledby="code-label"
                        v-model="code" type="text" name="code">
