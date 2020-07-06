@@ -113,8 +113,8 @@
 
         <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <div class="flex flex-col lg:flex-row">
-                <add-shared-campaign class="flex-1" :init-code="initCode"/>
-                <request-login-link class="flex-1"/>
+                <add-shared-campaign class="flex-1 lg:mr-4" :init-code="initCode"/>
+                <request-login-link class="flex-1 lg:ml-4"/>
             </div>
         </div>
 
