@@ -11,6 +11,7 @@
             </div>
             <div class="mdc-drawer__content">
                 <div class="mdc-list-group">
+                    <!--
                     <div v-if="user" class="mx-4 mb-4 flex items-center">
                         <span class="inline-block h-10 w-10 rounded-full overflow-hidden bg-gray-100">
                             <img class="h-full w-full"
@@ -21,6 +22,7 @@
                             <span class="text-sm">{{ user.email }}</span>
                         </div>
                     </div>
+                    -->
                     <ul ref="list" class="mdc-list">
                         <li @click="toggle">
                             <router-link to="/campaigns" class="mdc-list-item"

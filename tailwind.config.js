@@ -30,7 +30,7 @@ module.exports = {
             },
             screens: {
                 xs: '400px',
-                lgh: {'raw': '(min-height: 700px)'}
+                lgh: {'raw': '(min-height: 600px)'}
             },
             zIndex: {
                 1: '1',
