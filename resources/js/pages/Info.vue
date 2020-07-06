@@ -72,20 +72,13 @@
 </template>
 
 <script>
-    import InlineSvg from "../components/elements/InlineSvg";
-
     export default {
-        components: {InlineSvg},
         data() {
             return {}
         },
         mounted() {
-            this.$bus.$on('open-info-modal', this.open);
+
         },
-        methods: {
-            open() {
-                this.$refs['modal'].open();
-            }
-        }
+        methods: {}
     }
 </script>

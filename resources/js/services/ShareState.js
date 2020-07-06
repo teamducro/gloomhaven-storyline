@@ -13,8 +13,8 @@ export default class ShareState {
         let result = this.decode();
 
         if (result.hasOwnProperty('states')) {
-            this.scenarioRepository.hideAllScenarios();
-            this.achievementRepository.removeAllAchievements();
+            this.reseter.reset();
+            app.switchLocal();
 
             if (result.hasOwnProperty('groups')) {
                 result.groups.each((achievements, id) => {

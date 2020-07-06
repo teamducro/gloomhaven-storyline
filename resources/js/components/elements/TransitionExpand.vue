@@ -56,16 +56,3 @@
         perspective: 1000px;
     }
 </style>
-
-<style>
-    .expand-enter-active,
-    .expand-leave-active {
-        transition: height .5s ease-in-out;
-        overflow: hidden;
-    }
-
-    .expand-enter,
-    .expand-leave-to {
-        height: 0;
-    }
-</style>

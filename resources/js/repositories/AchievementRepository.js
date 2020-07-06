@@ -83,12 +83,6 @@ export default class AchievementRepository {
             .map((group) => new AchievementGroup(group));
     }
 
-    removeAllAchievements() {
-        app.achievements.each((achievement) => {
-            this.remove(achievement.id);
-        });
-    }
-
     get scenarioRepository() {
         return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository());
     }
