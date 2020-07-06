@@ -1,20 +1,5 @@
 <template>
     <div class="pt-12 pb-4 px-4">
-        <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
-            <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left">
-                Campaigns
-            </h1>
-
-            <campaign-list></campaign-list>
-
-            <div class="flex items-center">
-                <purchase>
-                    <button type="button" class="mt-4 mdc-button mdc-button--raised">
-                        {{ $t('Buy shared campaign') }}
-                    </button>
-                </purchase>
-            </div>
-        </div>
 
         <div v-if="paymentSuccess"
              class="w-full max-w-lg bg-white px-6 py-8 mt-8 mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:p-10">
@@ -96,13 +81,13 @@
                         <purchase>
                             <div class="rounded-md shadow">
                                 <a href="#"
-                                   class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-                                    Get Access
+                                   class="flex items-center justify-center uppercase px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                                    {{ $t('Buy shared campaign') }}
                                 </a>
                             </div>
                         </purchase>
                     </div>
-                    <p class="mt-4 text-sm leading-5">
+                    <p class="mt-4 text-sm leading-5 hidden">
                         <a href="#" class="font-medium text-gray-500 underline">
                             Learn about our membership policy
                         </a>
@@ -112,9 +97,28 @@
         </template>
 
         <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
-            <div class="flex flex-col lg:flex-row">
-                <add-shared-campaign class="flex-1 lg:mr-4" :init-code="initCode"/>
-                <request-login-link class="flex-1 lg:ml-4"/>
+            <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left">
+                Campaigns
+            </h1>
+
+            <campaign-list></campaign-list>
+
+            <div class="flex items-center">
+                <purchase>
+                    <button type="button" class="mt-4 mdc-button mdc-button--raised">
+                        {{ $t('Buy shared campaign') }}
+                    </button>
+                </purchase>
+            </div>
+        </div>
+
+        <div class="m-auto w-full max-w-3xl lg:flex">
+            <div class="bg-black2-25 p-4 rounded-lg mt-8 lg:mr-4 lg:flex-1">
+                <add-shared-campaign :init-code="initCode"/>
+            </div>
+
+            <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl lg:ml-4 lg:flex-1">
+                <request-login-link/>
             </div>
         </div>
 

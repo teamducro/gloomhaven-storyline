@@ -17,9 +17,9 @@
                 <button type="submit" class="mdc-button mdc-button--raised ml-3">
                     <span class="mdc-button__label">{{ $t('Add Campaign') }}</span>
                 </button>
-                <loader v-if="sending" float></loader>
             </div>
         </form>
+        <loader class="mt-4" v-if="sending"></loader>
         <validation-errors :response="errors" field="code"/>
         <transition name="fade">
             <alert v-if="success" class="inline-block">

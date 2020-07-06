@@ -1,7 +1,5 @@
 <template>
-    <transition name="fade">
-        <div class="loader" :class="{float: float}"></div>
-    </transition>
+    <div class="loader" :class="{float: float}"></div>
 </template>
 
 <script>
