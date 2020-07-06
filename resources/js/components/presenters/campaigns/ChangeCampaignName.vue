@@ -4,7 +4,7 @@
             <label class="mdc-text-field mdc-text-field--filled" ref="name">
                 <span class="mdc-text-field__ripple"></span>
                 <input class="mdc-text-field__input" :aria-labelledby="'name-label'+story.id"
-                       v-model="name" type="text" name="name" @keyup="changeName">
+                       v-model="name" type="text" name="name" @keyup="changeName" @input="changeName">
                 <span class="mdc-floating-label" :id="'name-label'+story.id">Campaign name</span>
                 <span class="mdc-line-ripple"></span>
             </label>
