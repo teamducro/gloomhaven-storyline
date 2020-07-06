@@ -75,7 +75,7 @@
                 this.isOpen = false;
             },
             shouldOpen() {
-                // Only show the Donations modal in production
+                // Only show the Donations modal in production and hasn't purchased a licence
                 if (process.env.NODE_ENV !== 'production' || this.loggedIn) {
                     return false;
                 }
