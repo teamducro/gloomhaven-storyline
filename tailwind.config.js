@@ -6,7 +6,7 @@ module.exports = {
         './resources/**/*.html',
         './resources/**/*.vue',
         './resources/**/*.js',
-        './resources/**/*.cvs'
+        './resources/**/*.svg'
     ],
     theme: {
         extend: {
