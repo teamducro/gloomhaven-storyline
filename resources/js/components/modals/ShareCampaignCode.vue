@@ -8,6 +8,7 @@
                     <countdown :label="code.code" :percentage="progress.percentage"></countdown>
                 </a>
                 <span>{{ progress.label }}</span>
+                <span class="text-sm">(the code is only valid for an hour)</span>
             </div>
             <social-sharing
                     v-if="code && url"

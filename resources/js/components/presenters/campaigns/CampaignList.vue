@@ -1,6 +1,10 @@
 <template>
     <ul class="mdc-list">
-        <li class="mdc-list-item min-h-14" tabindex="0"
+        <p class="text-sm text-white2-50">
+            The local campaign is your free campaign, it is stored on your device
+            and cannot be synchronized automatically between members.
+        </p>
+        <li class="w-full flex items-center justify-between mdc-list-item h-auto" tabindex="0"
             @click="select('local')"
             :class="{'mdc-ripple-upgraded--background-focused': campaignId === 'local'}">
             <div class="flex items-center">
@@ -10,12 +14,18 @@
                 </span>
                 <span class="material-icons ml-4">cloud_off</span>
             </div>
+            <div class="mt-2 md:mt-0">
+                <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2"
+                        @click.stop="$bus.$emit('open-share-modal')">
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
+                </button>
+            </div>
         </li>
         <li v-for="story in stories.items" :key="story.id"
             class="mdc-list-item min-h-14" tabindex="0"
             @click="select(story.campaignId)"
             :class="{'mdc-ripple-upgraded--background-focused': isSelected(story)}">
-            <div class="inline-block w-full flex items-center justify-between mdc-list-item__text">
+            <div class="w-full flex items-center justify-between mdc-list-item__text">
                 <div class="flex items-center">
                     <span class="material-icons mr-2">{{ isSelected(story) ? 'radio_button_checked' : 'radio_button_unchecked' }}</span>
                     <div class="flex items-center">
@@ -55,12 +65,15 @@
 </template>
 
 <script>
+    import StoryRepository from "../../../repositories/StoryRepository";
+
     export default {
         data() {
             return {
                 stories: collect(),
                 editing: {},
-                campaignId: 'local'
+                campaignId: 'local',
+                storyRepository: new StoryRepository
             }
         },
         beforeMount() {
@@ -78,7 +91,14 @@
                 this.campaignId = app.campaignId;
             },
             select(campaignId) {
+
                 this.$bus.$emit('campaign-selected', campaignId);
+
+                let name = (campaignId === 'local')
+                    ? this.$t('local')
+                    : this.storyRepository.find(campaignId).name;
+
+                this.$bus.$emit('toast', `"${name}" selected!`);
             },
             isSelected(story) {
                 return story.campaignId === this.campaignId;

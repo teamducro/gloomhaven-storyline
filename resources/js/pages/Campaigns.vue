@@ -64,7 +64,8 @@
                             </li>
                         </ul>
                         <p class="mt-6 text-sm text-gray-700">
-                            When purchasing multiple licenses, you can manage multiple campaigns!
+                            When purchasing multiple licenses, you can manage multiple campaigns!<br>
+                            Licenses aren't renewed automatically.
                         </p>
                     </div>
                 </div>
