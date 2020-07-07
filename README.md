@@ -10,9 +10,11 @@ The following features are planned for upcoming updates.
 * [x] Map with scenario stickers
 * [x] Global and party achievements
 * [x] French Translations
+* [x] Hosted progress for easy sharing
+* [x] Multi campaign support
 * [ ] iOS and Android apps
-* [ ] Hosted progress for easy sharing (would need to be a paid option)
 * [ ] Solo scenarios
+* [ ] German Translations
 * [ ] Support for Forgotten Circles
 * [ ] Support for Into the Unknown
 * [ ] Support for Capital Intrigue
