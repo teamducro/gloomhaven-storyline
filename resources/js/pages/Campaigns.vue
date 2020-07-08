@@ -132,7 +132,7 @@
                         Add shared campaign
                     </purchase>
                 </li>
-                <li>After purchasing a licence you'll receive a link in your email</li>
+                <li>After purchasing a license you'll receive a link in your email</li>
                 <li>Click on the link in the email to add your new shared campaign!</li>
                 <li class="mt-3">Click on <span class="link" @click="shareCurrentStory">Share</span>
                     to give access to your party members
@@ -147,9 +147,9 @@
                 {{ !loggedIn ? '* ' : '' }}
                 All content is available for free, your local progress can be manually shared via the share button. The
                 paid version provides an automatic sync feature, progress doesn't have to be shared manually anymore!
-                This covers costs maintaining this app for the community, if you enjoy using the storyline tracker,
+                This covers the costs maintaining this app for the community, if you enjoy using the storyline tracker,
                 please consider
-                <purchase class="inline link">purchasing a licence.</purchase>
+                <purchase class="inline link">purchasing a license.</purchase>
             </p>
         </div>
     </div>
