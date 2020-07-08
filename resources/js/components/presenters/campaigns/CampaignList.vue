@@ -18,7 +18,7 @@
             </div>
         </li>
         <li>
-            <p class="text-sm text-white2-75 ml-11 mb-4">
+            <p class="text-sm text-white2-75 ml-11 mb-4 md:max-w-md mr-20">
                 The local campaign is your free campaign, it is stored on your device
                 and cannot be synchronized automatically between members.
             </p>
