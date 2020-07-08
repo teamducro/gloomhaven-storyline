@@ -1,9 +1,5 @@
 <template>
     <ul class="mdc-list">
-        <p class="text-sm text-white2-50">
-            The local campaign is your free campaign, it is stored on your device
-            and cannot be synchronized automatically between members.
-        </p>
         <li class="w-full flex items-center justify-between mdc-list-item h-auto" tabindex="0"
             @click="select('local')"
             :class="{'mdc-ripple-upgraded--background-focused': campaignId === 'local'}">
@@ -20,6 +16,12 @@
                     <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
                 </button>
             </div>
+        </li>
+        <li>
+            <p class="text-sm text-white2-75 ml-11 mb-4 md:max-w-md mr-20">
+                The local campaign is your free campaign, it is stored on your device
+                and cannot be synchronized automatically between members.
+            </p>
         </li>
         <li v-for="story in stories.items" :key="story.id"
             class="mdc-list-item min-h-14" tabindex="0"

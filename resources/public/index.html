@@ -43,8 +43,11 @@
 </head>
 <body>
 <div id="app" v-cloak>
-    <webp class="logo" src="/img/gloomhaven-logo.png" alt="Gloomhaven"
-          width="250" height="37"></webp>
+    <div class="relative logo">
+        <webp class="" src="/img/gloomhaven-logo.png" alt="Gloomhaven"
+              width="250" height="37"></webp>
+        <ribbon v-if="user">PRO</ribbon>
+    </div>
     <drawer>
         <template v-slot:content>
             <router-view></router-view>
