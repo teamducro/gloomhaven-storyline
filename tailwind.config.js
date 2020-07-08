@@ -22,6 +22,7 @@ module.exports = {
             },
             spacing: {
                 '.5': '0.125rem',
+                11: '2.75rem',
                 28: '7rem',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
                 'area-inset-right': 'env(safe-area-inset-right, 0)',
