@@ -85,7 +85,7 @@ export default {
         'title': 'Automatic synchronise progress!',
         1: 'All content in the Gloomhaven Storyline Tracker is free!',
         2: 'The paid version provides an automatic sync feature, progress doesn\'t have to be shared manually anymore! This covers costs maintaining this app for the community.',
-        3: 'Please consider a licence, it helps a lot.',
+        3: 'Please consider a license, it helps a lot.',
         'close': 'Keep using the storyline tracker',
     },
     local: 'Local Campaign',
