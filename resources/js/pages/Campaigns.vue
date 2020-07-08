@@ -9,6 +9,7 @@
             <p class="mt-6 text-base text-gray-900">
                 Thanks for purchasing, please check your email to enable your shared campaign!
             </p>
+            <meme class="m-auto mt-4 max-w-full"/>
         </div>
 
         <template v-if="!loggedIn && !paymentSuccess">
@@ -144,12 +145,11 @@
             <h2 class="text-xl">Support the project</h2>
             <p class="text-base">
                 {{ !loggedIn ? '* ' : '' }}
-                All content is available for free, your local progress can be manually shared via the share button
-                in the menu. The paid version provides an automatic sync feature, progress doesn't have to be shared
-                manually anymore! This covers costs maintaining this app for the community, if you enjoy using the
-                storyline tracker, please consider
-                <purchase class="inline link">purchasing a licence</purchase>
-                .
+                All content is available for free, your local progress can be manually shared via the share button. The
+                paid version provides an automatic sync feature, progress doesn't have to be shared manually anymore!
+                This covers costs maintaining this app for the community, if you enjoy using the storyline tracker,
+                please consider
+                <purchase class="inline link">purchasing a licence.</purchase>
             </p>
         </div>
     </div>
