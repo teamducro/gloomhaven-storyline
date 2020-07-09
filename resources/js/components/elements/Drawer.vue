@@ -63,7 +63,9 @@
                         <li @click="toggle">
                             <router-link to="/achievements" class="mdc-list-item"
                                          active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">emoji_events</i>
+                                <inline-svg style="width: 16px" src="icons/achievements"
+                                            class="mdc-list-item__graphic ml-1"
+                                            aria-hidden="true"/>
                                 <span class="mdc-list-item__text">{{ $t('Achievements') }}</span>
                             </router-link>
                         </li>
