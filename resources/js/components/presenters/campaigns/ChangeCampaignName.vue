@@ -35,7 +35,8 @@
             return {
                 storyRepository: new StoryRepository,
                 nameField: null,
-                name: null
+                name: null,
+                errors: null,
             }
         },
         mounted() {
@@ -53,13 +54,22 @@
                 } else {
                     this.onClose();
                 }
+            },
+            errors() {
+                this.$emit('errors-changed', this.errors);
             }
         },
         methods: {
-            changeName: _.debounce(async function () {
+            changeName: _.debounce(function () {
+                this.errors = null;
                 this.story.name = this.name;
-                await this.storyRepository.update(this.story);
-                this.$bus.$emit('load-campaign-data');
+                this.storyRepository.update(this.story)
+                    .then(story => {
+                        this.$bus.$emit('load-campaign-data');
+                    })
+                    .catch(e => {
+                        this.errors = e.response.data;
+                    });
             }, 500),
             async onOpen() {
                 this.name = this.story.name;
