@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-8 lg:mt-0">
+    <div class="mt-8 lg:mt-0" id="request-login-link">
         <h2 class="text-xl">{{ $t('Restore Purchase') }}</h2>
 
         <p class="mt-2">

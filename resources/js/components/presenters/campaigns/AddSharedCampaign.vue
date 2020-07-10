@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="add-shared-campaign">
         <h2 class="text-xl">{{ $t('Received a campaign code?') }}</h2>
 
         <p class="mt-2">
