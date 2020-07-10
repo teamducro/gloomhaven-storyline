@@ -1,4 +1,4 @@
-describe('Scenario list', () => {
+describe('Info', () => {
 
     it('It loads the info page', () => {
         cy.visit('/#/info');

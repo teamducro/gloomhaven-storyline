@@ -1,6 +1,6 @@
 import utilities from "../utilities";
 
-describe('Scenario list', () => {
+describe('Campaigns', () => {
 
     it('It loads campaigns', () => {
         cy.visit('/#/campaigns');
