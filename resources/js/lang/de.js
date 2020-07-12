@@ -15,14 +15,14 @@ export default {
     'Demon and Rift': 'Dämonen und Risse',
     'Sewers': 'Kanalisation',
     'Rebellion Rises': 'Die Rebellion',
-    'Under Oceans': 'Unter der Ozean',
+    'Under Oceans': 'Unter dem Ozean',
     'Through': 'Durch',
     'Jungles': 'Dschungel',
-    'Atop Mountains': 'Auf dem Berg',
+    'Atop Mountains': 'Auf den Bergen',
     'Dragons': 'Drachen',
     'Voice': 'Die Stimme',
     'Personal Quests': 'Persönliche Quests',
-    'Random Scenarios': 'Zufallsszenarien',
+    'Random Scenarios': 'Zufällige Szenarien',
     'Sealed': 'Versiegelt',
     'Road Events': 'Weg-Ereignisse',
     'City Events': 'Stadt-Ereignisse',
@@ -58,7 +58,7 @@ export default {
     'Remove': 'Löschen',
     'Clear all': 'Alles löschen',
     'reset': {
-        'text': 'Sind Sie sicher, dass Sie alle Szenariodaten löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.'
+        'text': 'Bist du sicher, dass du alle Szenariodaten löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.'
     },
     'share': {
         'title': 'Gloomhaven Storyline Tracker teilen',
