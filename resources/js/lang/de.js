@@ -188,11 +188,11 @@ export default {
     },
     quest: {
         1: {
-            "name": "The Merchant's Request",
+            "name": "Der Auftrag der Händlerin",
             "sections": {
-                1: "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
-                2: "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic power. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
-                3: "You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
+                1: "Die Valrather Händlerin Jekserah hat euch angeboten, zehn Goldmünzen zu zahlen, um einige gestohlene Waren zurückzuholen. Durch das Aufmischen von ein paar einheimischen Schlägern habt ihr entdeckt, dass das Versteck der Diebe das Schwarzgrab im Totenhain ist.",
+                2: "Ihr habt eure Zielperson im Schwarzgrab gefunden, aber sie ist entkommen. Während der Verfolgung seid ihr auf den Grund gestoßen, warum die Banditen diesen speziellen Grabhügel ausgewählt haben: wiederbelebte Skelette. Die Banditen scheinen über gewisse nekromantische Kräfte zu verfügen. Trotzdem habt ihr sie und ihre unheiligen Verbündeten getötet. Euer Ziel befand sich nicht unter den Toten, aber ein Gang, der tiefer in die Katakomben führt, wartet auf euch.",
+                3: "Ihr habt den Banditen-Kommandanten besiegt. Etwas an ihm schien unnatürlich und er erwähnte das "Grauen" während der Schlacht. Ihr habt die gestohlenen Schriftrollen ein einem Versteck in der Kammer des Kommandanten gefunden und habt sie Jekserah für die vereinbarte Belohnung zurückgegeben."
             },
             "stages": {
                 0: "{1}",
