@@ -192,7 +192,7 @@ export default {
             "sections": {
                 1: "Die Valrather Händlerin Jekserah hat euch angeboten, zehn Goldmünzen zu zahlen, um einige gestohlene Waren zurückzuholen. Durch das Aufmischen von ein paar einheimischen Schlägern habt ihr entdeckt, dass das Versteck der Diebe das Schwarzgrab im Totenhain ist.",
                 2: "Ihr habt eure Zielperson im Schwarzgrab gefunden, aber sie ist entkommen. Während der Verfolgung seid ihr auf den Grund gestoßen, warum die Banditen diesen speziellen Grabhügel ausgewählt haben: wiederbelebte Skelette. Die Banditen scheinen über gewisse nekromantische Kräfte zu verfügen. Trotzdem habt ihr sie und ihre unheiligen Verbündeten getötet. Euer Ziel befand sich nicht unter den Toten, aber ein Gang, der tiefer in die Katakomben führt, wartet auf euch.",
-                3: "Ihr habt den Banditen-Kommandanten besiegt. Etwas an ihm schien unnatürlich und er erwähnte das "Grauen" während der Schlacht. Ihr habt die gestohlenen Schriftrollen ein einem Versteck in der Kammer des Kommandanten gefunden und habt sie Jekserah für die vereinbarte Belohnung zurückgegeben."
+                3: "Ihr habt den Banditen-Kommandanten besiegt. Etwas an ihm schien unnatürlich und er erwähnte das \"Grauen\" während der Schlacht. Ihr habt die gestohlenen Schriftrollen ein einem Versteck in der Kammer des Kommandanten gefunden und habt sie Jekserah für die vereinbarte Belohnung zurückgegeben."
             },
             "stages": {
                 0: "{1}",
@@ -201,11 +201,11 @@ export default {
             }
         },
         2: {
-            "name": "The Merchant's Wrath",
+            "name": "Der Zorn der Händlerin",
             "sections": {
-                1: "Jekserah offers you another job after you finished your first one. A tribe of Inox in the Dagger Forest has ransacked a couple of her caravans headed to the Capital. She asked if you could make an example of them.",
-                2: "The Inox tribe is dead. You've made an brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
-                3: "Jekserah has fled from Gloomhaven and sworn vengeange upon you due to your actions against her. She will not be keen on paying you for running her errands anymore."
+                1: "Jekserah bietet euch nach eurem ersten Auftrag einen weiteren an. Ein Inox-Stamm im Dolchwald hat ein paar ihrer Karawanen in Richtung Hauptstadt geplündert. Sie will an ihnen ein Exempel statuieren.",
+                2: "Der Inox-Stamm ist tot. Ihr habt ein brutales Exempel an ihnen statuiert, und in der nächsten Zeit wird niemand Jekserahs Karawanen bedrohen. Ihr fühlt euch nicht gerade wohl dabei, Eltern vor den Augen ihrer Kinder abzuschlachten, aber Jekserah hat euch trotzdem bezahlt.",
+                3: "Jekserah ist aus Gloomhaven geflohen und hat geschworen, sich an euch zu rächen, weil ihr gegen sie vorgegangen seid. Sie wird nicht mehr darauf erpicht sein, euch für eure Dienste zu bezahlen."
             },
             "stages": {
                 0: "{1}",
@@ -249,11 +249,11 @@ export default {
             }
         },
         6: {
-            "name": "The Merchant's Secret",
+            "name": "Das Geheimnis der Händlerin",
             "sections": {
-                1: "When you left Jekserah's manor a Quatryl city guard approached you. She told you Jekserah has been trying to overthrow the military in Gloomhaven and is up to something sinister. The guard asked for your aid in uncovering Jekserah’s plans and expose her for who she really is.",
-                2: "The warehouse was full of the undead. Jekserah had been using the necromantic scroll you delivered to raise the undead within the city walls. You fought your way to the back room of the warehouse and confronted Jekserah. Just before she flipped out a window she told you she'd be back with a legion of undead. To stop her you could locate her yourself or ask the help of an Aesther enchanter mentioned by the city guard",
-                3: "You ignored the city guard Argeise's warnings and continued working for Jekserah. \"Sinister machinations\" is, of course, a troubling phrase to throw around, but the phrase \"considerable reward\" trumps that in a heartbeat. There is no more reason to raid the warehouse."
+                1: "Als ihr Jekserahs Herrenhaus verlassen hattet, kam eine Quatryl-Stadtwache aus Quatryl auf euch zu. Sie erzählte euch, dass Jekserah versucht hat, das Militär in Gloomhaven zu stürzen, und dass sie etwas Unheimliches im Schilde führt. Die Wache bat euch um eure Hilfe, Jekserahs Pläne aufzudecken und sie als das zu entlarven, was sie wirklich ist.",
+                2: "Das Lager war voll von Untoten. Jekserah hatte die nekromantische Schriftrolle, die ihr ihr übergeben hattet, benutzt, um Untote innerhalb der Stadtmauern zu erwecken. Ihr habt euch in den hinteren Raum des Lagers gekämpft und Jekserah konfrontiert. Kurz bevor sie durch das Fenster entwischte verriet sie euch, dass sie mit einer Heerschar von Untoten zurückkommen würde. Um sie aufzuhalten, könntet ihr sie selbst ausfindig machen oder die Hilfe eines von der Stadtwache erwähnten Ästher-Zauberers erbitten.",
+                3: "Ihr habt die Warnungen der Stadtwache Argeise ignoriert und weiter für Jekserah gearbeitet. \"Unheimliche Machenschaften\" sind natürlich beunruhigende Worte,  aber die Worte \"beträchtliche Belohnung\" übertrumpfen das im Nu. Es gibt keinen Grund mehr, das Lagerhaus zu überfallen."
             },
             "stages": {
                 0: "{1}",
@@ -262,11 +262,12 @@ export default {
             }
         },
         7: {
-            "name": "A Valrath's Best Friend",
+            "name": "Der beste Freund einer Valrath",
             "sections": {
-                1: "Jekserah has one last task for you. She requires a diamond of considerable size for a customer. There is a diamond mine in the southern mountains overrun by Vermlings, with some other more intelligent force behind them. If you can fight your way in and grab the biggest diamond you can find, Jekserah will give you a considerable reward. However, you have been also been warned by a guard that Jekserah may have more sinister machinations than she lets on. Something about overthrowing the military... but one diamond couldn't hurt, could it?",
-                2: "Sinister machinations or not, you decided the phrase \"considerable reward\" was more pertinent. As expected, the diamond mine was infested by Vermling miners. They were lead by a Merciless Overseer who swiftly turned the miners against you with a few cracks of his whip. Once the overseer was dealt with and the diamond recovered, the remaining miners scattered. You headed back to Jekserah to claim your reward. Her bodyguards escorted you inside the manor where you found her somehow different—more harrowed and grim. \"Wonderful.\" She exchanged the diamond for a large purse full of coins. \"This will serve beautifully as a focus for the incantations. I wonder if the cultists even knew what they had here. With this, I can summon an entire army of undead!\" She turned to you with a strange glint in her eye. \"So then! Are you ready to overthrow the military of Gloomhaven and put control of the city into the hands of the Merchant’s Guild? Or do you not have the stomach to effect real change?\"",
-                3: "You decided that \"sinister machinations\" outweigh \"considerable reward\". You raided Jekserah's warehouse and uncovered her secret plans to invade the town with an army of the dead. In the process, she fled the city. It's safe to say the \"considerable reward\" is off the table and there's no more reason to visit the mine."
+                1: "Jekserah hat eine letzte Aufgabe für euch. Sie benötigt einen Diamanten von beträchtlicher Größe für einen Kunden. In den südlichen Bergen gibt es eine Diamantenmine, die von Ratzen überrannt wurde, hinter der eine andere, intelligentere Macht steht. Wenn ihr euch hineinkämpft und den größten Diamanten den ihr finden könnt schnappt, wird euch Jekserah eine beträchtliche Belohnung geben. Ihr wurdet jedoch auch von einer Wache gewarnt, dass Jekserah möglicherweise noch finsterere Machenschaften hat, als sie zugibt. Etwas über den Sturz des Militärs... aber ein Diamant kann ja nicht schaden, oder?",
+                2: "Ob finstere Machenschaften oder nicht, ihr habt entschieden, dass der Ausdruck \"beträchtliche Belohnung\" überzeugender ist. Wie erwartet wurde die Diamantenmine von Ratzen-Minenarbeitern in Beschlag genommen. Sie wurden von einem gnadenlosen Aufseher angeführt, der die Minenarbeiter mit ein paar Peitschenhieben schnell gegen euch aufbrachte. Nachdem der Aufseher ausgeschaltet und der Diamant geborgen worden war, verstreuten sich die verbliebenen Bergleute. Ihr seid zu Jekserah zurückgekehrt, um eure Belohnung einzufordern. Ihre Leibwächter begleiteten euch ins Innere des Herrenhauses, wo ihr sie irgendwie verändert vorfandet - gequälter und grimmiger. \"Wunderbar.\" Sie nahm den Diamanten und gab euch einen großen Beutel voller Münzen. \"Er wird sich bestens für die Beschwörungen eignen. Ob die Kultisten wohl wussten, was da in ihrem Besitz war? Damit kann ich eine ganze Armee von Untoten herbeirufen!" Sie wandte sich mit einem seltsamen Funkeln in den Augen an euch. \"Nun gut! Seid Ihr bereit, das Militär von Gloomhaven zu stürzen und die Kontrolle der Stadt in die Hände der Kaufmannsgilde zu legen? Oder fehlt euch der Mumm, wirklich was zu verändern?\"",
+                3: "Ihr habt entschieden, dass \"finstere Machenschaften\" eine \"beträchtliche Belohnung\" überwiegen. Ihr habt Jekserahs Lagerhaus überfallen und ihre geheimen Pläne, mit einer Armee von Toten in die Stadt einzufallen, aufgedeckt. Dabei floh sie aus der Stadt. Man kann mit Sicherheit sagen, dass die \"beträchtliche Belohnung\" vom Tisch ist und es keinen Grund mehr gibt, die Mine zu besuchen.
+"
             },
             "stages": {
                 0: "{1}",
@@ -394,13 +395,13 @@ export default {
             }
         },
         17: {
-            "name": "Sewer Surfin",
+            "name": "Kanaltauchen",
             "sections": {
-                1: "Gloomhaven's water supply appears to have been poisoned. You've been asked to investigate the source of the poison. Unfortunately, this means trudging through the sewers. Yuck.",
-                2: "You begrudgingly hopped into the sewers to investigate the poison. You slew plethora of snakes, ooze, and Vermlings. The Vermlings had made camp around a cisterns that appeared to be the source of the poison, but upon further investigation, none of the dead Vermlings had any poisons at all. There is a passage at the back of the room that leads deeper or, if you had a way to breath underwater, you could enter the cistern directly. You've heard of an Enchantress in Gloomhaven who may be able to help with that last bit, but she's been rumored to be... difficult to work with.",
-                3: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to breath underwater?",
-                4: "You've found a way to the source of the poison. It's time to purify the water.",
-                5: "The water pumps were teeming with unholy creatures and a writhing black corruption. By the time the fight is over, the walls and floor are a mess of black ooze, but you managed to get it all out of the pumps. None of it is pulsating anymore either, which is a step in the right direction. A simple mop can clean the remnants, now that the dark presence has been removed."
+                1: "Die Wasserversorgung von Gloomhaven scheint vergiftet worden zu sein. Ihr wurdet gebeten, die Quelle des Giftes zu untersuchen. Leider bedeutet das, durch die Kanalisation zu stapfen. Igitt.",
+                2: "Ihr seid widerwillig in die Kanalisation abgestiegen, um das Gift zu untersuchen. Ihr habt eine Menge Schlangen, Schleim und Ratzen erschlagen. Die Ratzen hatten ihr Lager um eine Zisterne aufgeschlagen, die die Quelle des Giftes zu sein schien, aber nach weiteren Untersuchungen hatte keine der toten Ratzen auch nur irgendein Gift dabei. Im hinteren Teil des Raumes gibt es einen Gang, der weiter in die Tiefe führt. Wenn man einen Weg hätte, unter Wasser zu atmen, könnte man die Zisterne auch direkt betreten. Ihr habt von einer Zauberin in Gloomhaven gehört, die vielleicht in der Lage ist, bei diesem letzten Teil zu helfen, aber es gibt Gerüchte, dass es... schwierig ist, mit ihr zusammen zu arbeiten.",
+                3: "Ihr habt die Aesther-Magierin, Hail, im Krummknochen getroffen. Obwohl sie ein wenig exzentrisch ist, scheint sie doch recht fähig zu sein. Ihr habt euch ihre Gunst verdient, indem ihr sie bei ihren Bemühungen unterstützt habt. Vielleicht kann sie euch jetzt helfen, einen Weg zu finden, unter Wasser zu atmen?",
+                4: "Ihr habt einen Weg zur Quelle des Giftes gefunden. Es ist an der Zeit, das Wasser zu reinigen.",
+                5: "In der Zisterne wimmelte es von unheiligen Kreaturen und einer sich windenden schwarzen Fäulnis. Als der Kampf vorbei ist, sind die Wände und der Boden voller schwarzem Schleim, aber ihr habt es geschafft, alles aus den Pumpen zu entfernen. Es pulsiert auch nichts mehr, was ein Schritt in die richtige Richtung ist. Ein einfacher Wischmopp kann die Überreste säubern, jetzt, da die dunkle Präsenz entfernt worden ist."
             },
             "stages": {
                 0: "{1}",
