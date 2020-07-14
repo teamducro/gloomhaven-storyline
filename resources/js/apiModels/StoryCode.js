@@ -24,8 +24,9 @@ class StoryCode extends Model {
         const seconds = Math.floor(this.expires_at.diff() / 1000);
         const percentage = Math.ceil(Math.max(0, seconds / totalSeconds * 100));
         const label = moment().startOf('day').seconds(seconds).format('mm:ss');
+        const time = moment().seconds(seconds).format('hh:mm');
 
-        return {percentage, label};
+        return {percentage, label, time};
     }
 
 }

@@ -1,7 +1,7 @@
 <template>
     <div class="pt-12 pb-4 px-4">
 
-        <div v-if="paymentSuccess"
+        <div v-if="true || paymentSuccess"
              class="w-full max-w-lg bg-white px-6 py-8 mt-8 mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:p-10">
             <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
                 Payment Successful!
@@ -10,9 +10,14 @@
                 Thanks for purchasing, please check your email to enable your shared campaign!
             </p>
             <meme class="m-auto mt-4 max-w-full"/>
+
+            <p class="mt-6 mb-2 text-base text-gray-900">
+                Please spread the word and share this tracker with the community!
+            </p>
+            <share-icons :url="url" :black="true"/>
         </div>
 
-        <template v-if="!loggedIn && !paymentSuccess">
+        <template v-if="false && !loggedIn && !paymentSuccess">
             <div class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
                 <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
                     <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
@@ -167,6 +172,7 @@
                 loggedIn: Helpers.loggedIn(),
                 paymentSuccess: false,
                 initCode: '',
+                url: process.env.MIX_APP_URL,
                 storyRepository: new StoryRepository
             }
         },
