@@ -17,7 +17,7 @@
             <share-icons :url="url" :black="true"/>
         </div>
 
-        <template v-if="false && !loggedIn && !paymentSuccess">
+        <template v-if="!loggedIn && !paymentSuccess">
             <div class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
                 <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
                     <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
