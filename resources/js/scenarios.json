@@ -103,7 +103,7 @@
                 2
             ],
             "treasures": {
-                "65": "\"Horned Helm\" design (Item 107)"
+                "65": "“Horned Helm” design (Item 107)"
             },
             "region_ids": [
                 2
@@ -138,7 +138,7 @@
                 3
             ],
             "treasures": {
-                "38": "\"Ring of Skulls\" design (Item 123)",
+                "38": "“Ring of Skulls” design (Item 123)",
                 "46": "Suffer 3 damage and gain POISON"
             },
             "region_ids": [
@@ -199,7 +199,7 @@
                 3
             ],
             "treasures": {
-                "50": "Gain \"Second Skin\" (Item 101)"
+                "50": "Gain “Second Skin” (Item 101)"
             },
             "region_ids": [
                 7
@@ -433,7 +433,7 @@
                 10
             ],
             "treasures": {
-                "5": " Gain \"Chainmail\" (Item 023)"
+                "5": " Gain “Chainmail” (Item 023)"
             },
             "region_ids": [
                 1
@@ -489,7 +489,7 @@
                 11
             ],
             "treasures": {
-                "34": "Gain \"Amulet of Life\" (Item 024)"
+                "34": "Gain “Amulet of Life” (Item 024)"
             },
             "region_ids": [
                 1
@@ -766,7 +766,7 @@
                 9
             ],
             "treasures": {
-                "60": "Gain \"Skullbane Axe\" (Item 113)"
+                "60": "Gain “Skullbane Axe” (Item 113)"
             },
             "rewards": [
                 "20 gold each",
@@ -809,7 +809,7 @@
                 19
             ],
             "treasures": {
-                "15": "Gain \"Pendant of Dark Pacts\" (Item 045)"
+                "15": "Gain “Pendant of Dark Pacts” (Item 045)"
             },
             "achievements_awarded": [
                 "GTRN",
@@ -890,7 +890,7 @@
             ],
             "treasures": {
                 "39": "Suffer 5 damage",
-                "72": "\"Fueled Falchion\" design (Item 116)"
+                "72": "“Fueled Falchion” design (Item 116)"
             },
             "region_ids": [
                 1
@@ -957,7 +957,7 @@
                 15
             ],
             "treasures": {
-                "58": "Gain \"Drakescale Helm\" (Item 108)"
+                "58": "Gain “Drakescale Helm” (Item 108)"
             },
             "region_ids": [
                 5
@@ -1003,7 +1003,7 @@
                 17
             ],
             "treasures": {
-                "66": "Gain \"Volatile Bomb\" (Item 033)"
+                "66": "Gain “Volatile Bomb” (Item 033)"
             },
             "region_ids": [
                 1
@@ -1121,7 +1121,7 @@
                 3
             ],
             "treasures": {
-                "41": "Gain \"Black Knife\" (Item 053)"
+                "41": "Gain “Black Knife” (Item 053)"
             },
             "region_ids": [
                 2
@@ -1195,14 +1195,20 @@
             "requirements": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
             "required_by": [
                 {
-                    "hidden_when" : ["GAR2"],
+                    "hidden_when": [
+                        "GAR2"
+                    ],
                     "complete": [
                         "GTPE",
                         "GAR"
                     ]
                 },
                 {
-                    "hidden_when": ["GAL","GAR", "GAC"],
+                    "hidden_when": [
+                        "GAL",
+                        "GAR",
+                        "GAC"
+                    ],
                     "complete": [
                         "GTPE",
                         "GAR2"
@@ -1222,7 +1228,7 @@
                 24
             ],
             "treasures": {
-                "69": "Gain \"Robes of Summoning\" (Item 100)"
+                "69": "Gain “Robes of Summoning” (Item 100)"
             },
             "region_ids": [
                 1
@@ -1359,7 +1365,7 @@
                 27
             ],
             "treasures": {
-                "23": "Gain \"Drakescale Armor\" (Item 103)"
+                "23": "Gain “Drakescale Armor” (Item 103)"
             },
             "region_ids": [
                 5
@@ -1422,7 +1428,7 @@
                 28
             ],
             "treasures": {
-                "61": "Gain \"Versatile Dagger\" (Item 040)"
+                "61": "Gain “Versatile Dagger” (Item 040)"
             },
             "region_ids": [
                 1
@@ -1484,7 +1490,7 @@
                 28
             ],
             "treasures": {
-                "2": "Gain \"Tower Shield\" (Item 032)"
+                "2": "Gain “Tower Shield” (Item 032)"
             },
             "region_ids": [
                 1
@@ -1567,7 +1573,7 @@
                 31
             ],
             "treasures": {
-                "29": "Gain \"Endurance Footwraps\" (Item 097)"
+                "29": "Gain “Endurance Footwraps” (Item 097)"
             },
             "region_ids": [
                 2
@@ -1654,7 +1660,7 @@
                 25
             ],
             "treasures": {
-                "47": "Gain \"Steam Armor\" (Item 104)"
+                "47": "Gain “Steam Armor” (Item 104)"
             },
             "region_ids": [
                 5
@@ -1791,7 +1797,7 @@
                 34
             ],
             "treasures": {
-                "35": "Gain \"Drakescale Boots\" (Item 098)"
+                "35": "Gain “Drakescale Boots” (Item 098)"
             },
             "region_ids": [
                 2
@@ -2118,7 +2124,7 @@
                 39
             ],
             "treasures": {
-                "56": "Gain \"Star Earring\" (Item 069)"
+                "56": "Gain “Star Earring” (Item 069)"
             },
             "region_ids": [
                 1
@@ -2297,7 +2303,7 @@
                 58
             ],
             "treasures": {
-                "3": "Gain \"Splintmail\" (Item 044)",
+                "3": "Gain “Splintmail” (Item 044)",
                 "22": "Random Item Design"
             },
             "region_ids": [
@@ -2460,7 +2466,7 @@
             ],
             "chapter_id": 12,
             "treasures": {
-                "12": "Gain \"Magma Waders\" (Item 099)"
+                "12": "Gain “Magma Waders” (Item 099)"
             },
             "region_ids": [
                 4
@@ -2491,7 +2497,7 @@
             ],
             "chapter_id": 12,
             "treasures": {
-                "9": "Gain \"Wave Crest\" (Item 111)"
+                "9": "Gain “Wave Crest” (Item 111)"
             },
             "region_ids": [
                 6
@@ -2540,7 +2546,7 @@
             "chapter_id": 12,
             "treasures": {
                 "16": "Gain 10 gold",
-                "36": "\"Rocket Boots\" design (Item 096)"
+                "36": "“Rocket Boots” design (Item 096)"
             },
             "region_ids": [
                 5
@@ -2586,7 +2592,7 @@
             ],
             "chapter_id": 12,
             "treasures": {
-                "33": "Gain \"Weighted Net\" (Item 019)"
+                "33": "Gain “Weighted Net” (Item 019)"
             },
             "region_ids": [
                 3
@@ -2627,7 +2633,7 @@
             ],
             "chapter_id": 12,
             "treasures": {
-                "6": "Gain \"Hooked Chain\" (Item 039)"
+                "6": "Gain “Hooked Chain” (Item 039)"
             },
             "region_ids": [
                 6
@@ -2826,7 +2832,7 @@
             "requirements": "Fish’s Aid (Party) COMPLETE",
             "chapter_id": 15,
             "treasures": {
-                "52": "Gain \"Heart of the Betrayer\" (Item 131)"
+                "52": "Gain “Heart of the Betrayer” (Item 131)"
             },
             "region_ids": [
                 3
@@ -2878,7 +2884,7 @@
             ],
             "chapter_id": 15,
             "treasures": {
-                "68": "Gain \"Helix Ring\" (Item 130)"
+                "68": "Gain “Helix Ring” (Item 130)"
             },
             "region_ids": [
                 2
@@ -2904,7 +2910,7 @@
             ],
             "chapter_id": 14,
             "treasures": {
-                "62": "Gain \"Helm of the Mountain\" and \"Mountain Hammer\" (Item 110 and 115)"
+                "62": "Gain “Helm of the Mountain” and “Mountain Hammer” (Item 110 and 115)"
             },
             "region_ids": [
                 4
@@ -3108,7 +3114,7 @@
             "chapter_id": 15,
             "treasures": {
                 "13": "Suffer 5 Damage and gain POISON and WOUND",
-                "27": "Gain \"Orb of Twilight\" (Item 122)",
+                "27": "Gain “Orb of Twilight” (Item 122)",
                 "43": "Suffer 5 damage gain POISON and WOUND"
             },
             "region_ids": [
@@ -3210,7 +3216,7 @@
             "requirements": "A Map to Treasure (Party) COMPLETE",
             "chapter_id": 15,
             "treasures": {
-                "54": "Gain \"Doomed Compass\" (Item 124)"
+                "54": "Gain “Doomed Compass” (Item 124)"
             },
             "region_ids": [
                 6
