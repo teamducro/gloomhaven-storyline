@@ -1,6 +1,6 @@
 <template>
     <div class="pt-12 pb-4 px-4">
-        <div class="bg-black2-25 p-4 rounded-lg m-auto mt-4 w-full" style="max-width: 560px;">
+        <div id="info" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 w-full" style="max-width: 560px;">
             <h1 class="mb-4 text-xl">{{ $t('about us.title') }}</h1>
 
             <p>{{ $t('about us.text') }}</p>

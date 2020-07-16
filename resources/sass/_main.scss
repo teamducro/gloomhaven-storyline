@@ -11,12 +11,20 @@ h1, h2, h3 {
     @apply font-title #{!important};
 }
 
-body {
+#bg {
     background-color: #000;
     background-image: url('../img/background-lowres.jpg');
     background-size: cover, cover;
     background-position: center, center;
-    background-attachment: fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-transform: translateZ(0);
+    pointer-events: none;
 }
 
 .logo {

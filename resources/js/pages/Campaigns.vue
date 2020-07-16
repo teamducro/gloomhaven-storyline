@@ -10,6 +10,11 @@
                 Thanks for purchasing, please check your email to enable your shared campaign!
             </p>
             <meme class="m-auto mt-4 max-w-full"/>
+
+            <p class="mt-6 mb-2 text-base text-gray-900">
+                Please spread the word and share this tracker with the community!
+            </p>
+            <share-icons :url="url" :black="true"/>
         </div>
 
         <template v-if="!loggedIn && !paymentSuccess">
@@ -167,6 +172,7 @@
                 loggedIn: Helpers.loggedIn(),
                 paymentSuccess: false,
                 initCode: '',
+                url: process.env.MIX_APP_URL,
                 storyRepository: new StoryRepository
             }
         },
