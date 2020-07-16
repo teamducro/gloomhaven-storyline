@@ -105,7 +105,7 @@ export default {
         'Lost Island': 'L\'Ile Perdue',
         'Abandoned Sewers': 'Les Egouts Abandonnés',
         'Forgotten Crypt': 'La Crypte Oubliée',
-        'Necromancer\'s Sanctum': 'Le Sanctuaire de la Nécromancienne',
+        'Necromancers Sanctum': 'Le Sanctuaire de la Nécromancienne',
         'Infernal Throne': 'L\'Autel Infernal',
         'Temple of Elements': 'Le Temple des Eléments',
         'Deep Ruins': 'Les Ruines des Profondeurs',

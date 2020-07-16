@@ -109,7 +109,7 @@ export default {
         'Lost Island': 'Lost Island',
         'Abandoned Sewers': 'Abandoned Sewers',
         'Forgotten Crypt': 'Forgotten Crypt',
-        'Necromancer\'s Sanctum': 'Necromancer\'s Sanctum',
+        'Necromancers Sanctum': 'Necromancer\'s Sanctum',
         'Infernal Throne': 'Infernal Throne',
         'Temple of Elements': 'Temple of Elements',
         'Deep Ruins': 'Deep Ruins',
