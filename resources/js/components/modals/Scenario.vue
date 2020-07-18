@@ -204,6 +204,15 @@
                             </div>
                         </div>
                     </template>
+                    <blockquote v-if="scenario.id === 14 && scenario.isComplete()"
+                                class="relative py-2 px-4 text-base italic border-l-4 quote">
+                        <a class="absolute w-full h-full top-0 left-0" target="_blank"
+                           href="https://boardgamegeek.com/thread/1722032/scenario-14-conclusion-spoilers"></a>
+                        <p class="mb-4 max-w-sm">
+                            The location numbers in the story text are just reminders. They themselves don't unlock
+                            anything.</p>
+                        <p class="flex items-center"><span class="material-icons">remove</span> Isaac Childres</p>
+                    </blockquote>
                 </div>
                 <footer class="mdc-dialog__actions flex justify-between px-5">
                     <div class="space-x-2">
