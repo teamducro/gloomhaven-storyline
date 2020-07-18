@@ -4,7 +4,7 @@ class Achievement {
 
     constructor(data) {
         this.id = data.id;
-        this.name = data.name;
+        this._name = data.name;
         this.type = data.type;
         this.x = data.x;
         this.group = data.group;
@@ -22,6 +22,10 @@ class Achievement {
         };
 
         this.read();
+    }
+
+    get name() {
+        return app.$t('achievements.' + this._name);
     }
 
     isGlobal() {

@@ -19,11 +19,13 @@ export default class StoryRepository extends ApiRepository {
 
     async update(story) {
         const data = story.postData();
-        const response = await this.api.withToken(story.token).put('stories/' + story.id, data);
-        const storyResponse = response.data;
-        this.storeStory(storyResponse, story.token);
+        return await this.api.withToken(story.token).put('stories/' + story.id, data)
+            .then(response => {
+                const storyResponse = response.data;
+                this.storeStory(storyResponse, story.token);
 
-        return new Story(storyResponse);
+                return new Story(storyResponse);
+            });
     }
 
     async sharedStories() {

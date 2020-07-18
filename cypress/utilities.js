@@ -1,4 +1,15 @@
 export default {
+    startServer() {
+        cy.server();
+
+        cy.route({
+            method: 'GET',
+            url: 'sanctum/csrf-cookie',
+            status: 204,
+            response: ''
+        }).as('csrf');
+    },
+
     scenarios() {
         return cy.wrap(
             new Promise((fulfilled) => {
@@ -22,9 +33,7 @@ export default {
     store() {
         return cy.wrap(
             new Promise((fulfilled) => {
-                cy.window().then((window) => {
-                    fulfilled(window.localStorage);
-                });
+                cy.window().then((window) => fulfilled(window.localStorage));
             })
         );
     },

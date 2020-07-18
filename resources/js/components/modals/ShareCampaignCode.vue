@@ -8,32 +8,13 @@
                     <countdown :label="code.code" :percentage="progress.percentage"></countdown>
                 </a>
                 <span>{{ progress.label }}</span>
-                <span class="text-sm">(the code is only valid for an hour)</span>
+                <span class="text-sm">(The code is only valid for one hour)</span>
             </div>
-            <social-sharing
-                    v-if="code && url"
-                    :url="url"
-                    title="Gloomhaven Storyline Tracker"
-                    :description="'Your campaign code: ' + code.code"
-                    hashtags="gloomhaven"
-                    inline-template>
-                <div class="flex">
-                    <network network="whatsapp" class="mr-2 cursor-pointer">
-                        <img src="/img/icons/whatsapp.png" alt="whatsapp" srcset="/img/icons/whatsapp@2x.png 2x"
-                             class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
-                    </network>
-
-                    <network network="email" class="mr-2 cursor-pointer">
-                        <img src="/img/icons/email.png" alt="email" srcset="/img/icons/email@2x.png 2x"
-                             class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
-                    </network>
-
-                    <a v-clipboard:copy="url" class="cursor-pointer mr-6 copied">
-                        <img src="/img/icons/copy-link.png" alt="copy-link" srcset="/img/icons/copy-link@2x.png 2x"
-                             class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
-                    </a>
-                </div>
-            </social-sharing>
+            <share-icons v-if="code && progress && url"
+                         :url="url"
+                         :networks="['whatsapp', 'email']"
+                         :description="'Your campaign code: ' + code.code + ' (valid until: ' + progress.time+')'"
+            />
         </template>
     </modal>
 </template>
@@ -48,7 +29,7 @@
                 url: '',
                 story: null,
                 code: null,
-                progress: 0,
+                progress: null,
                 timer: null,
                 copyTippy: null,
                 codeRepository: new StoryCodeRepository

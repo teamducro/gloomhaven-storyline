@@ -734,7 +734,7 @@
         },
         {
             "id": 20,
-            "name": "Necromancer's Sanctum",
+            "name": "Necromancers Sanctum",
             "coordinates": {
                 "name": "H-13",
                 "x": 59,
@@ -1996,7 +1996,7 @@
         },
         {
             "id": 49,
-            "name": "Rebel's Stand",
+            "name": "Rebels Stand",
             "coordinates": {
                 "name": "N-7",
                 "x": 34.8,
@@ -2249,7 +2249,7 @@
         },
         {
             "id": 56,
-            "name": "Bandit's Wood",
+            "name": "Bandits Wood",
             "coordinates": {
                 "name": "G-4",
                 "x": 18.93,
