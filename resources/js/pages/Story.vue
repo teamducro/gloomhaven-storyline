@@ -63,6 +63,7 @@
                     this.renderChapters();
                 } else {
                     $('.scenario, .edge, .chapter').hide();
+                    $('.legend .scenario').show();
                 }
             },
             rerender() {

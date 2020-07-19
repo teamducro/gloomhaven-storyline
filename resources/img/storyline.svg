@@ -1165,10 +1165,7 @@
 
     <g class="legend portrait">
         <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="171" x="8.5" y="888"/>
-        <g class="sce
-
-
-        nario incomplete">
+        <g class="scenario incomplete">
             <circle class="node" cx="36" cy="910.499978" fill="black" r="10.8"/>
             <text fill="black" x="24" y="906.499978">I</text>
         </g>
