@@ -1195,14 +1195,20 @@
             "requirements": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
             "required_by": [
                 {
-                    "hidden_when" : ["GAR2"],
+                    "hidden_when": [
+                        "GAR2"
+                    ],
                     "complete": [
                         "GTPE",
                         "GAR"
                     ]
                 },
                 {
-                    "hidden_when": ["GAL","GAR", "GAC"],
+                    "hidden_when": [
+                        "GAL",
+                        "GAR",
+                        "GAC"
+                    ],
                     "complete": [
                         "GTPE",
                         "GAR2"
@@ -2217,7 +2223,9 @@
                 "Q-510-Seeker of Xorn"
             ],
             "rewards": [
-                "Immediately retire the Seeker of Xorn"
+                "Immediately retire the Seeker of Xorn",
+                "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
+                "Open envelope 8.svg"
             ]
         },
         {
@@ -2442,7 +2450,7 @@
             ],
             "rewards": [
                 "“The Fall of Man” quest complete",
-                "Open envelope 8.svg",
+                "Open envelope 7.svg",
                 "10 experience each"
             ]
         },
