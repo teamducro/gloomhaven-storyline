@@ -40,14 +40,14 @@
                 }
 
                 return {
-                    template: `<div class="flex items-center">${output}</div>`
+                    template: `<div>${output}</div>`
                 };
             },
             addCharacterIconsToRewards(reward) {
                 if (reward.includes('.svg')) {
                     let results = reward.match(/(\d\.svg)/g);
                     results.forEach((icon) => {
-                        reward = reward.replace(icon, `<character class="w-6 inline-block" character="${icon}" />`);
+                        reward = reward.replace(icon, `<character class="w-6 -ml-1 -mb-2 inline-block" character="${icon}" />`);
                     });
                 }
 
