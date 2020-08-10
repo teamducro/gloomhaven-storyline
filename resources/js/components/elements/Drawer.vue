@@ -6,10 +6,13 @@
         </button>
 
         <aside ref="menu" class="mdc-drawer mdc-drawer--modal">
-            <div class="mdc-drawer__header">
+            <div class="mdc-drawer__header" style="min-height: 0;">
                 <webp class="w-3/4 mt-4" alt="Gloomhaven" src="/img/gloomhaven-logo.png"/>
             </div>
             <div class="mdc-drawer__content">
+                <div v-if="showCampaignSwitch" class="m-2" style="width: calc(100% - 1em);">
+                    <campaign-switch ref="campaign-switch"></campaign-switch>
+                </div>
                 <div class="mdc-list-group">
                     <!--
                     <div v-if="user" class="mx-4 mb-4 flex items-center">
@@ -23,6 +26,7 @@
                         </div>
                     </div>
                     -->
+
                     <ul ref="list" class="mdc-list">
                         <li @click="toggle">
                             <router-link to="/campaigns" class="mdc-list-item"
@@ -141,6 +145,7 @@
                 list: null,
                 user: null,
                 loggedIn: Helpers.loggedIn(),
+                showCampaignSwitch: false,
                 auth: new AuthRepository(),
                 storyRepository: new StoryRepository
             }
@@ -152,6 +157,11 @@
         methods: {
             toggle() {
                 this.drawer.open = !this.drawer.open;
+
+                // load campaign options
+                if (this.drawer.open && this.showCampaignSwitch) {
+                    this.$refs['campaign-switch'].applyData();
+                }
             },
             async logout() {
                 this.auth.logout();
@@ -160,12 +170,14 @@
                 location.reload();
             },
             setUser() {
-                this.user = window.app.user;
+                this.user = app.user;
 
                 if (this.user && this.shouldOpenShare()) {
                     this.shareCurrentStory();
                     Helpers.removeQueryString();
                 }
+
+                this.showCampaignSwitch = app.stories.count() > 0;
             },
             shouldOpenShare() {
                 return location.search.includes('share');
@@ -184,3 +196,9 @@
         }
     }
 </script>
+
+<style scoped lang="scss">
+    .mdc-drawer__content {
+        overflow-x: hidden;
+    }
+</style>

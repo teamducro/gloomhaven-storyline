@@ -15,6 +15,7 @@
     import {ScenarioState} from "../models/ScenarioState";
     import ScenarioRepository from "../repositories/ScenarioRepository";
     import tippy from 'tippy.js';
+    import StoryRepository from "../repositories/StoryRepository";
 
     export default {
         watch: {
@@ -25,9 +26,11 @@
         data() {
             return {
                 scenarioRepository: new ScenarioRepository(),
+                storyRepository: new StoryRepository(),
                 isPortrait: null,
                 zoom: null,
-                storylineKey: 1
+                storylineKey: 1,
+                campaignName: null
             }
         },
         mounted() {
@@ -47,6 +50,9 @@
             $('#storyline-container').on('click', '.scenario', this.scenarioClicked);
             this.$bus.$on('scenarios-updated', this.render);
             this.$bus.$on('orientation-changed', this.orientationChanged);
+            this.$bus.$on('campaigns-changed', this.setCampaignName);
+
+            this.setCampaignName();
         },
         destroyed() {
             if (this.zoom) {
@@ -55,12 +61,14 @@
             $('#storyline-container').off('click', '.scenario', this.scenarioClicked);
             this.$bus.$off('scenarios-updated', this.render);
             this.$bus.$off('orientation-changed', this.orientationChanged);
+            this.$bus.$off('campaigns-changed', this.setCampaignName);
         },
         methods: {
             render() {
                 if (app.scenarios && this.isPortrait !== null) {
                     this.renderScenarios();
                     this.renderChapters();
+                    $('.campaign-name').text(this.campaignName);
                 } else {
                     $('.scenario, .edge, .chapter').hide();
                     $('.legend .scenario').show();
@@ -80,10 +88,10 @@
             renderOrientation() {
                 let viewBox = '';
                 if (this.isPortrait) {
-                    viewBox = '0 -60 420 1017';
+                    viewBox = '0 -70 420 1080';
                     $('#storyline .landscape').remove();
                 } else {
-                    viewBox = '0 -60 610 668';
+                    viewBox = '0 -40 610 700';
                     $('#storyline .portrait').remove();
                 }
                 $('#storyline').attr('viewBox', viewBox);
@@ -168,6 +176,11 @@
                     this.isPortrait = isPortrait;
                     this.rerender();
                 }
+            },
+            setCampaignName() {
+                const story = this.storyRepository.current()
+                this.campaignName = story ? story.name : this.$t('local');
+                $('.campaign-name').text(this.campaignName);
             },
             scenarioClicked(e) {
                 let $node = $(e.currentTarget);

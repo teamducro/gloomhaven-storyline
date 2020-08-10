@@ -887,34 +887,35 @@
     </g>
 
     <g class="legend landscape">
-        <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="171" x="430.5" y="539"/>
+        <rect fill="#111" height="110" opacity="0.7" rx="10" ry="10" stroke="#000" width="171" x="430.5" y="539"/>
+        <text y="552" x="440" class="label campaign-name"></text>
         <g class="scenario incomplete">
-            <circle class="node" cx="458" cy="561.499978" fill="black" r="10.8"/>
-            <text fill="black" x="446" y="557.499978">I</text>
+            <circle class="node" cx="458" cy="571.499978" fill="black" r="10.8"/>
+            <text fill="black" x="446" y="567.499978">I</text>
         </g>
-        <text class="label" fill="black" x="465.326181" y="565.499025">{{ $t('Incomplete') }}</text>
+        <text class="label" fill="black" x="465.326181" y="575.499025">{{ $t('Incomplete') }}</text>
         <g class="scenario blocked">
-            <circle class="node" cx="553" cy="562.499978" r="10.8"/>
-            <text fill="black" x="540" y="558.5">B</text>
-            <text class="blocked" x="540" y="558.5">×</text>
+            <circle class="node" cx="553" cy="572.499978" r="10.8"/>
+            <text fill="black" x="540" y="568.5">B</text>
+            <text class="blocked" x="540" y="568.5">×</text>
         </g>
-        <text class="label" fill="black" x="558.693369" y="566.506837">{{ $t('Blocked') }}</text>
+        <text class="label" fill="black" x="558.693369" y="576.506837">{{ $t('Blocked') }}</text>
         <g class="scenario complete">
-            <circle class="node" cx="458" cy="590.999978" r="10.8"/>
-            <text fill="black" x="445" y="587">C</text>
+            <circle class="node" cx="458" cy="600.999978" r="10.8"/>
+            <text fill="black" x="445" y="597">C</text>
         </g>
-        <text class="label" fill="black" x="464.880869" y="596.006837">{{ $t('Completed') }}</text>
+        <text class="label" fill="black" x="464.880869" y="606.006837">{{ $t('Completed') }}</text>
         <g class="scenario required">
-            <circle class="node" cx="553" cy="591.999978" r="10.8"/>
-            <text fill="black" x="540" y="588">R</text>
-            <text class="required" x="538" y="588">!</text>
+            <circle class="node" cx="553" cy="601.999978" r="10.8"/>
+            <text fill="black" x="540" y="598">R</text>
+            <text class="required" x="538" y="598">!</text>
         </g>
-        <text class="label" fill="black" x="559.685556" y="595.999025">{{ $t('Required') }}</text>
+        <text class="label" fill="black" x="559.685556" y="605.999025">{{ $t('Required') }}</text>
         <g class="scenario opacity-50">
-            <circle class="node" cx="458" cy="620.499978" r="10.8"/>
-            <text fill="black" x="445" y="616.499978">N</text>
+            <circle class="node" cx="458" cy="630.499978" r="10.8"/>
+            <text fill="black" x="445" y="626.499978">N</text>
         </g>
-        <text class="label" fill="black" x="465.194147" y="624.506837">{{ $t('Not unlocked') }}</text>
+        <text class="label" fill="black" x="465.194147" y="634.506837">{{ $t('Not unlocked') }}</text>
     </g>
 
     <g class="portrait">
@@ -1164,33 +1165,34 @@
     </g>
 
     <g class="legend portrait">
-        <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="171" x="8.5" y="888"/>
+        <rect fill="#111" height="110" opacity="0.7" rx="10" ry="10" stroke="#000" width="171" x="8.5" y="888"/>
+        <text y="902" x="19.000013" class="label campaign-name"></text>
         <g class="scenario incomplete">
-            <circle class="node" cx="36" cy="910.499978" fill="black" r="10.8"/>
-            <text fill="black" x="24" y="906.499978">I</text>
+            <circle class="node" cx="36" cy="920.499978" fill="black" r="10.8"/>
+            <text fill="black" x="24" y="916.499978">I</text>
         </g>
-        <text class="label" fill="black" x="43.326181" y="914.499025">{{ $t('Incomplete') }}</text>
+        <text class="label" fill="black" x="43.326181" y="924.499025">{{ $t('Incomplete') }}</text>
         <g class="scenario blocked">
-            <circle class="node" cx="131" cy="911.499978" r="10.8"/>
-            <text fill="black" x="118" y="907.5">B</text>
-            <text class="blocked" x="118" y="907.5">×</text>
+            <circle class="node" cx="131" cy="921.499978" r="10.8"/>
+            <text fill="black" x="118" y="917.5">B</text>
+            <text class="blocked" x="118" y="917.5">×</text>
         </g>
-        <text class="label" fill="black" x="136.693369" y="915.506837">{{ $t('Blocked') }}</text>
+        <text class="label" fill="black" x="136.693369" y="925.506837">{{ $t('Blocked') }}</text>
         <g class="scenario complete">
-            <circle class="node" cx="36" cy="939.999978" r="10.8"/>
-            <text fill="black" x="23" y="936">C</text>
+            <circle class="node" cx="36" cy="949.999978" r="10.8"/>
+            <text fill="black" x="23" y="946">C</text>
         </g>
-        <text class="label" fill="black" x="42.880869" y="945.006837">{{ $t('Completed') }}</text>
+        <text class="label" fill="black" x="42.880869" y="955.006837">{{ $t('Completed') }}</text>
         <g class="scenario required">
-            <circle class="node" cx="131" cy="940.999978" r="10.8"/>
-            <text fill="black" x="118" y="937">R</text>
-            <text class="required" x="116" y="937">!</text>
+            <circle class="node" cx="131" cy="950.999978" r="10.8"/>
+            <text fill="black" x="118" y="947">R</text>
+            <text class="required" x="116" y="947">!</text>
         </g>
-        <text class="label" fill="black" x="137.685556" y="944.999025">{{ $t('Required') }}</text>
+        <text class="label" fill="black" x="137.685556" y="954.999025">{{ $t('Required') }}</text>
         <g class="scenario opacity-50">
-            <circle class="node" cx="36" cy="969.499978" r="10.8"/>
-            <text fill="black" x="23" y="965.499978">N</text>
+            <circle class="node" cx="36" cy="979.499978" r="10.8"/>
+            <text fill="black" x="23" y="975.499978">N</text>
         </g>
-        <text class="label" fill="black" x="43.194147" y="973.506837">{{ $t('Not unlocked') }}</text>
+        <text class="label" fill="black" x="43.194147" y="983.506837">{{ $t('Not unlocked') }}</text>
     </g>
 </svg>
