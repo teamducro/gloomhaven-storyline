@@ -59,8 +59,9 @@ module.exports = {
                 white2: {
                     25: 'rgba(255, 255, 255, .25)',
                     50: 'rgba(255, 255, 255, .50)',
+                    60: 'rgba(255, 255, 255, .60)',
                     75: 'rgba(255, 255, 255, .75)',
-                    87: 'rgba(255, 255, 255, .75)'
+                    87: 'rgba(255, 255, 255, .87)'
                 },
                 red: {
                     ...colors.red,
@@ -102,7 +103,7 @@ module.exports = {
         // float: ['important', 'responsive'],
         // clear: ['important', 'responsive'],
         // fontFamily: ['important', 'responsive'],
-        // fontSize: ['important', 'responsive'],
+        fontSize: ['important', 'responsive'],
         // fontSmoothing: ['important', 'responsive'],
         // fontStyle: ['important', 'responsive'],
         // fontWeight: ['important', 'responsive', 'hover', 'focus'],
@@ -133,7 +134,7 @@ module.exports = {
         // strokeWidth: ['important', 'responsive'],
         // tableLayout: ['important', 'responsive'],
         // textAlign: ['important', 'responsive'],
-        // textColor: ['important', 'responsive', 'hover', 'focus'],
+        textColor: ['important', 'responsive', 'hover', 'focus'],
         // textDecoration: ['important', 'responsive', 'hover', 'focus'],
         // textTransform: ['important', 'responsive'],
         // userSelect: ['important', 'responsive'],
