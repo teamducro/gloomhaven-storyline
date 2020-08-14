@@ -55,7 +55,7 @@ export default {
         return {
             show: false,
             isOpen: false,
-            timesWithoutDonations: 5,
+            timesWithoutDonations: 4,
             loggedIn: Helpers.loggedIn(),
         }
     },
