@@ -143,7 +143,7 @@
                 <li class="mt-3">Click on <span class="link" @click="shareCurrentStory">Share</span>
                     to give access to your party members
                 </li>
-                <li>All changes made by any party member will be synchronised! 🎉</li>
+                <li>All changes made by any party member will be synchronized! 🎉</li>
             </ul>
         </div>
 
