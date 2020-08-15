@@ -76,6 +76,14 @@ export default class StoryRepository extends ApiRepository {
         store.set('stories', storiesToStore);
     }
 
+    remove(story) {
+        const otherStories = collect(store.get('stories', []))
+            .filter(s => s.id !== story.id)
+            .toArray();
+        store.set('stories', otherStories);
+        store.remove(story.campaignId);
+    }
+
     storeCampaignData(story) {
         store.set(story.campaignId, story.data);
     }

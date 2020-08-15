@@ -5,7 +5,9 @@
                 @click="select('local')"
                 :class="{'mdc-ripple-upgraded--background-focused': campaignId === 'local'}">
                 <div class="flex items-center">
-                    <span class="material-icons mr-2">{{ campaignId === 'local' ? 'radio_button_checked' : 'radio_button_unchecked' }}</span>
+                    <span class="material-icons mr-2">{{
+                            campaignId === 'local' ? 'radio_button_checked' : 'radio_button_unchecked'
+                        }}</span>
                     <span class="inline-block w-full flex items-center justify-between mdc-list-item__text">
                     {{ $t('local') }}
                 </span>
@@ -30,7 +32,9 @@
                 :class="{'mdc-ripple-upgraded--background-focused': isSelected(story)}">
                 <div class="w-full flex items-center justify-between mdc-list-item__text">
                     <div class="flex items-center">
-                        <span class="material-icons mr-2">{{ isSelected(story) ? 'radio_button_checked' : 'radio_button_unchecked' }}</span>
+                        <span class="material-icons mr-2">{{
+                                isSelected(story) ? 'radio_button_checked' : 'radio_button_unchecked'
+                            }}</span>
                         <div class="flex items-center">
                             <change-campaign-name @errors-changed="errorsChanged" :story="story"
                                                   :editing="editing[story.id] || false"
@@ -39,6 +43,7 @@
                         </div>
                     </div>
                     <div class="mt-2 md:mt-0">
+
                         <template v-if="story.has_expired">
                             <bedge class="mr-4">{{ story.expires_at.format("MMM Do YY") }}</bedge>
                             <bedge class="mr-4" expired>{{ $t('Expired') }}</bedge>
@@ -49,6 +54,7 @@
                                 </button>
                             </purchase>
                         </template>
+
                         <template v-else-if="!story.is_shared">
                             <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2 mr-2"
                                     @click="editing[story.id] = !editing[story.id];">
@@ -61,6 +67,15 @@
                                 <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
                             </button>
                         </template>
+
+                        <template v-else-if="story.is_shared">
+                            <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2"
+                                    @click.stop="unlink(story)">
+                                <i class="material-icons mdc-button__icon" aria-hidden="true">
+                                    link_off
+                                </i>
+                            </button>
+                        </template>
                     </div>
                 </div>
             </li>
@@ -70,51 +85,56 @@
 </template>
 
 <script>
-    import StoryRepository from "../../../repositories/StoryRepository";
+import StoryRepository from "../../../repositories/StoryRepository";
+import ApiStoryRepository from "../../../apiRepositories/StoryRepository";
 
-    export default {
-        data() {
-            return {
-                stories: collect(),
-                editing: {},
-                errors: null,
-                campaignId: 'local',
-                storyRepository: new StoryRepository
-            }
+export default {
+    data() {
+        return {
+            stories: collect(),
+            editing: {},
+            errors: null,
+            campaignId: 'local',
+            storyRepository: new StoryRepository,
+            apiStoryRepository: new ApiStoryRepository
+        }
+    },
+    beforeMount() {
+        this.applyData();
+    },
+    mounted() {
+        this.$bus.$on('campaigns-changed', this.applyData);
+    },
+    destroyed() {
+        this.$bus.$off('campaigns-changed', this.applyData);
+    },
+    methods: {
+        applyData() {
+            this.stories = app.stories;
+            this.campaignId = app.campaignId;
         },
-        beforeMount() {
-            this.applyData();
-        },
-        mounted() {
-            this.$bus.$on('campaigns-changed', this.applyData);
-        },
-        destroyed() {
-            this.$bus.$off('campaigns-changed', this.applyData);
-        },
-        methods: {
-            applyData() {
-                this.stories = app.stories;
-                this.campaignId = app.campaignId;
-            },
-            select(campaignId) {
+        select(campaignId) {
+            this.$bus.$emit('campaign-selected', campaignId);
 
-                this.$bus.$emit('campaign-selected', campaignId);
+            let name = (campaignId === 'local')
+                ? this.$t('local')
+                : this.storyRepository.find(campaignId).name;
 
-                let name = (campaignId === 'local')
-                    ? this.$t('local')
-                    : this.storyRepository.find(campaignId).name;
-
-                this.$bus.$emit('toast', `"${name}" selected!`);
-            },
-            isSelected(story) {
-                return story.campaignId === this.campaignId;
-            },
-            share(story) {
-                this.$bus.$emit('open-share-campaign-code-modal', story);
-            },
-            errorsChanged(errors) {
-                this.errors = errors;
-            }
+            this.$bus.$emit('toast', `"${name}" selected!`);
+        },
+        isSelected(story) {
+            return story.campaignId === this.campaignId;
+        },
+        share(story) {
+            this.$bus.$emit('open-share-campaign-code-modal', story);
+        },
+        unlink(story) {
+            this.apiStoryRepository.remove(story);
+            this.select(this.isSelected(story) ? 'local' : this.campaignId);
+        },
+        errorsChanged(errors) {
+            this.errors = errors;
         }
     }
+}
 </script>
