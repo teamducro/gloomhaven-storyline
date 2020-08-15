@@ -107,17 +107,19 @@
 
                         <li v-if="!loggedIn" class="py-4 w-full" @click="toggle">
                             <router-link to="/campaigns" class="flex justify-center -ml-6">
-                                <button class="relative text-light-gray py-1 pl-3 pr-8 border border-light-gray border-solid rounded-full"
-                                        type="submit">
+                                <button
+                                    class="relative text-light-gray py-1 pl-3 pr-8 border border-light-gray border-solid rounded-full"
+                                    type="submit">
                                     {{ $t('Buy me a Beer') }}
-                                    <span class="absolute top-0 right-0 -mt-2 -mr-6 bg-black text-2xl h-12 w-12 leading-12 border-2 border-light-gray border-solid rounded-full">🍻</span>
+                                    <span
+                                        class="absolute top-0 right-0 -mt-2 -mr-6 bg-black text-2xl h-12 w-12 leading-12 border-2 border-light-gray border-solid rounded-full">🍻</span>
                                 </button>
                             </router-link>
                         </li>
                     </ul>
                 </div>
                 <div class="lgh:absolute lgh:bottom-0 m-2" style="width: calc(100% - 1em);">
-                    <language-switch></language-switch>
+                    <language-switch @help="toggle"></language-switch>
                 </div>
             </div>
         </aside>
@@ -131,74 +133,74 @@
 </template>
 
 <script>
-    import {MDCDrawer} from "@material/drawer/component";
-    import Helpers from "../../services/Helpers";
-    import AuthRepository from "../../apiRepositories/AuthRepository";
-    import StoryRepository from "../../repositories/StoryRepository";
+import {MDCDrawer} from "@material/drawer/component";
+import Helpers from "../../services/Helpers";
+import AuthRepository from "../../apiRepositories/AuthRepository";
+import StoryRepository from "../../repositories/StoryRepository";
 
-    const md5 = require('js-md5');
+const md5 = require('js-md5');
 
-    export default {
-        data() {
-            return {
-                drawer: null,
-                list: null,
-                user: null,
-                loggedIn: Helpers.loggedIn(),
-                showCampaignSwitch: false,
-                auth: new AuthRepository(),
-                storyRepository: new StoryRepository
+export default {
+    data() {
+        return {
+            drawer: null,
+            list: null,
+            user: null,
+            loggedIn: Helpers.loggedIn(),
+            showCampaignSwitch: false,
+            auth: new AuthRepository(),
+            storyRepository: new StoryRepository
+        }
+    },
+    mounted() {
+        this.drawer = MDCDrawer.attachTo(this.$refs['menu']);
+        this.$bus.$on('campaigns-changed', this.setUser);
+    },
+    methods: {
+        toggle() {
+            this.drawer.open = !this.drawer.open;
+
+            // load campaign options
+            if (this.drawer.open && this.showCampaignSwitch) {
+                this.$refs['campaign-switch'].applyData();
             }
         },
-        mounted() {
-            this.drawer = MDCDrawer.attachTo(this.$refs['menu']);
-            this.$bus.$on('campaigns-changed', this.setUser);
+        async logout() {
+            this.auth.logout();
+            await app.switchCampaign('local');
+
+            location.reload();
         },
-        methods: {
-            toggle() {
-                this.drawer.open = !this.drawer.open;
+        setUser() {
+            this.user = app.user;
 
-                // load campaign options
-                if (this.drawer.open && this.showCampaignSwitch) {
-                    this.$refs['campaign-switch'].applyData();
-                }
-            },
-            async logout() {
-                this.auth.logout();
-                await app.switchCampaign('local');
+            if (this.user && this.shouldOpenShare()) {
+                this.shareCurrentStory();
+                Helpers.removeQueryString();
+            }
 
-                location.reload();
-            },
-            setUser() {
-                this.user = app.user;
-
-                if (this.user && this.shouldOpenShare()) {
-                    this.shareCurrentStory();
-                    Helpers.removeQueryString();
-                }
-
-                this.showCampaignSwitch = app.stories.count() > 0;
-            },
-            shouldOpenShare() {
-                return location.search.includes('share');
-            },
-            gravatar() {
-                const hash = md5(this.user.email);
-                return `https://www.gravatar.com/avatar/${hash}?d=identicon`;
-            },
-            shareCurrentStory() {
-                if (app.campaignId === 'local') {
-                    this.$bus.$emit('open-share-modal');
-                } else {
-                    this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
-                }
+            this.showCampaignSwitch = app.stories.count() > 0;
+        },
+        shouldOpenShare() {
+            return location.search.includes('share');
+        },
+        gravatar() {
+            const hash = md5(this.user.email);
+            return `https://www.gravatar.com/avatar/${hash}?d=identicon`;
+        },
+        shareCurrentStory() {
+            if (app.campaignId === 'local') {
+                this.$bus.$emit('open-share-modal');
+            } else {
+                this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
             }
         }
     }
+}
 </script>
 
 <style scoped lang="scss">
-    .mdc-drawer__content {
-        overflow-x: hidden;
-    }
+.mdc-drawer__content {
+    overflow-x: hidden;
+}
 </style>

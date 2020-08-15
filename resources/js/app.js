@@ -15,6 +15,7 @@ import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
 import {loadStripe} from '@stripe/stripe-js/pure';
 import EchoService from "./services/EchoService";
+import VueScrollTo from "vue-scrollto";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -28,6 +29,7 @@ window.axios = require('axios').default.create({
 Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
+Vue.use(VueScrollTo);
 
 // Vue components
 const components = require.context('./components', true, /\.vue$/i);

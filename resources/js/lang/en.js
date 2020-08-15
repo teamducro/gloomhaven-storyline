@@ -82,7 +82,7 @@ export default {
     'Welcome': 'Welcome',
     'Language': 'Language',
     'donations': {
-        'title': 'Automatic synchronise progress!',
+        'title': 'Automatic synchronize progress!',
         1: 'All content in the Gloomhaven Storyline Tracker is free!',
         2: 'The paid version provides an automatic sync feature, progress doesn\'t have to be shared manually anymore! This covers costs maintaining this app for the community.',
         3: 'Please consider a license, it helps a lot.',

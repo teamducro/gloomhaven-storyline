@@ -9,6 +9,7 @@
             </div>
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Support') }}</h2>
+            <p>Would you like to contribute by translating to your native language?</p>
             <p>For help or feedback, <a :href="mailto" @click="setMailto" @touchstart="setMailto" class="link">
                 please email me</a>.
             </p>
@@ -77,38 +78,38 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                mailto: ''
+export default {
+    data() {
+        return {
+            mailto: ''
+        }
+    },
+    mounted() {
+    },
+    methods: {
+        setMailto() {
+            if (!this.mailto) {
+                this.mailto = 'mailto:' + this.generateEmail();
             }
         },
-        mounted() {
-        },
-        methods: {
-            setMailto() {
-                if (!this.mailto) {
-                    this.mailto = 'mailto:' + this.generateEmail();
-                }
-            },
-            generateEmail() {
-                const coded = "Gt33Z9T@efZZpDh6vF-GTZ9rfYFv.dZp";
-                const key = "bHMO7kgGvwAKXFPuxTWd1hfSrZBYmj3UEqNRIsez650nL28tQc4alDyo9iCVpJ";
-                const shift = coded.length;
-                let link = "";
+        generateEmail() {
+            const coded = "Gt33Z9T@efZZpDh6vF-GTZ9rfYFv.dZp";
+            const key = "bHMO7kgGvwAKXFPuxTWd1hfSrZBYmj3UEqNRIsez650nL28tQc4alDyo9iCVpJ";
+            const shift = coded.length;
+            let link = "";
 
-                for (let i = 0; i < coded.length; i++) {
-                    if (key.indexOf(coded.charAt(i)) === -1) {
-                        let ltr = coded.charAt(i);
-                        link += (ltr);
-                    } else {
-                        let ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length;
-                        link += (key.charAt(ltr));
-                    }
+            for (let i = 0; i < coded.length; i++) {
+                if (key.indexOf(coded.charAt(i)) === -1) {
+                    let ltr = coded.charAt(i);
+                    link += (ltr);
+                } else {
+                    let ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length;
+                    link += (key.charAt(ltr));
                 }
-
-                return link;
             }
+
+            return link;
         }
     }
+}
 </script>
