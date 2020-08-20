@@ -74,6 +74,14 @@
                             </router-link>
                         </li>
 
+                        <li @click="toggle">
+                            <router-link to="/party" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">assignment</i>
+                                <span class="mdc-list-item__text">{{ $t('Party sheet') }}</span>
+                            </router-link>
+                        </li>
+
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
                     </ul>
                 </div>

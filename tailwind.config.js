@@ -29,6 +29,9 @@ module.exports = {
                 'area-inset-bottom': 'env(safe-area-inset-bottom, 0)',
                 'area-inset-left': 'env(safe-area-inset-left, 0)'
             },
+            height: {
+                '1/2': '50%',
+            },
             screens: {
                 xs: '400px',
                 lgh: {'raw': '(min-height: 600px)'}

@@ -6,6 +6,7 @@ const Map = () => import("./pages/Map");
 const Info = () => import("./pages/Info");
 const Campaigns = () => import("./pages/Campaigns");
 const Login = () => import("./pages/Login");
+const Party = () => import("./pages/Party");
 
 export default [
     {path: '/', redirect: '/story'},
@@ -15,5 +16,6 @@ export default [
     {path: '/achievements', component: Achievements},
     {path: '/info', component: Info},
     {path: '/campaigns', component: Campaigns},
+    {path: '/party', component: Party},
     {path: '/login/:id/:token', component: Login},
 ];
