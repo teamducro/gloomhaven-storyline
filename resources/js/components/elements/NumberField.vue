@@ -1,7 +1,7 @@
 <template>
     <div class="relative w-24">
         <label class="mdc-text-field mdc-text-field--outlined" ref="field">
-            <input type="text" v-model="number" @change="validateNumber"
+            <input type="text" v-model="number" @change="numberChanged"
                    class="mdc-text-field__input font-title text-xl"
                    aria-labelledby="my-label-id">
             <span class="mdc-notched-outline">
@@ -49,25 +49,40 @@ export default {
         this.field = new MDCTextField(this.$refs['field']);
     },
     watch: {
-        number: function (val) {
+        number: function () {
             this.validateNumber();
         }
     },
     methods: {
-        changed() {
-            this.$emit('update:value', this.number);
-        },
         add() {
             this.number++;
         },
         subtract() {
             this.number--;
         },
-        validateNumber() {
-            this.number = parseInt(this.number);
-            if (!this.number) {
+        numberChanged() {
+            if (this.number === '-' || this.number === '') {
                 this.number = 0;
             }
+            this.validateNumber();
+        },
+        validateNumber() {
+            let number = undefined;
+            if (this.number !== '-' && this.number !== '') {
+                this.number = parseInt(this.number);
+                if (!this.number) {
+                    this.number = 0;
+                }
+            } else {
+                number = 0;
+            }
+            if (this.number > 20) {
+                this.number = 20;
+            } else if (this.number < -20) {
+                this.number = -20;
+            }
+
+            this.$emit('update:value', number ?? this.number);
         }
     }
 }
