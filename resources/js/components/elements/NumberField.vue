@@ -1,27 +1,32 @@
 <template>
-    <div class="relative w-24">
-        <label class="mdc-text-field mdc-text-field--outlined" ref="field">
-            <input type="text" v-model="number" @change="numberChanged"
-                   class="mdc-text-field__input font-title text-xl"
-                   aria-labelledby="my-label-id">
-            <span class="mdc-notched-outline">
+    <div class="flex items-center">
+        <div class="relative w-24">
+            <label class="mdc-text-field mdc-text-field--outlined" ref="field">
+                <input type="text" v-model="number" @change="numberChanged" :aria-labelledby="id"
+                       class="mdc-text-field__input font-title text-xl">
+                <span class="mdc-notched-outline">
                 <span class="mdc-notched-outline__leading"></span>
                 <span class="mdc-notched-outline__notch">
-                    <span class="mdc-floating-label" id="my-label-id">{{ label }}</span>
+                    <span class="mdc-floating-label" :id="id">{{ label }}</span>
                 </span>
                 <span class="mdc-notched-outline__trailing"></span>
             </span>
-        </label>
-        <div class="absolute h-full right-0 top-0 p-1">
-            <div class="flex flex-col h-full">
-                <div class="h-1/2 cursor-pointer" @click="add">
-                    <span class="material-icons">add</span>
-                </div>
-                <div class="h-1/2 cursor-pointer" @click="subtract">
-                    <span class="material-icons">remove</span>
+            </label>
+            <div class="absolute h-full right-0 top-0 p-1">
+                <div class="flex flex-col h-full">
+                    <div class="h-1/2 cursor-pointer" @click="add">
+                        <span class="material-icons">add</span>
+                    </div>
+                    <div class="h-1/2 cursor-pointer" @click="subtract">
+                        <span class="material-icons">remove</span>
+                    </div>
                 </div>
             </div>
         </div>
+        <transition name="fade">
+            <span v-if="this.stack.length > 1" @click="rollback"
+                  class="material-icons cursor-pointer ml-4">replay</span>
+        </transition>
     </div>
 </template>
 
@@ -30,6 +35,9 @@ import {MDCTextField} from "@material/textfield/component";
 
 export default {
     props: {
+        id: {
+            type: String
+        },
         label: {
             type: String
         },
@@ -41,7 +49,8 @@ export default {
     data() {
         return {
             number: 0,
-            field: null
+            field: null,
+            stack: []
         }
     },
     mounted() {
@@ -54,6 +63,13 @@ export default {
         }
     },
     methods: {
+        rollback() {
+            if (this.stack.length > 1) {
+                this.stack.pop();
+                this.number = _.last(this.stack);
+                this.updateNumber();
+            }
+        },
         add() {
             this.number++;
         },
@@ -67,14 +83,11 @@ export default {
             this.validateNumber();
         },
         validateNumber() {
-            let number = undefined;
             if (this.number !== '-' && this.number !== '') {
                 this.number = parseInt(this.number);
                 if (!this.number) {
                     this.number = 0;
                 }
-            } else {
-                number = 0;
             }
             if (this.number > 20) {
                 this.number = 20;
@@ -82,7 +95,13 @@ export default {
                 this.number = -20;
             }
 
-            this.$emit('update:value', number ?? this.number);
+            if (Number.isInteger(this.number) && (!this.stack.length || _.last(this.stack) !== this.number)) {
+                this.stack.push(this.number);
+                this.updateNumber();
+            }
+        },
+        updateNumber() {
+            this.$emit('update:value', this.number);
         }
     }
 }
