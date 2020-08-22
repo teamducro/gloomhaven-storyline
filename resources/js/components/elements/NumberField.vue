@@ -7,7 +7,7 @@
                 <span class="mdc-notched-outline">
                 <span class="mdc-notched-outline__leading"></span>
                 <span class="mdc-notched-outline__notch">
-                    <span class="mdc-floating-label" :id="id">{{ label }}</span>
+                    <span v-if="label" class="mdc-floating-label" :id="id">{{ label }}</span>
                 </span>
                 <span class="mdc-notched-outline__trailing"></span>
             </span>
@@ -39,7 +39,8 @@ export default {
             type: String
         },
         label: {
-            type: String
+            type: String,
+            default: null
         },
         value: {
             type: Number,
@@ -55,6 +56,7 @@ export default {
     },
     mounted() {
         this.number = this.value;
+        this.stack.push(this.number);
         this.field = new MDCTextField(this.$refs['field']);
     },
     watch: {
