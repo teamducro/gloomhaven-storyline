@@ -1,6 +1,6 @@
 <template>
     <div class="pt-12 pb-4 px-4">
-        <div id="info" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 w-full" style="max-width: 560px;">
+        <div id="info" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
             <h1 class="mb-4 text-xl">{{ $t('Party sheet') }}</h1>
 
             <div class="flex w-full">
@@ -13,6 +13,11 @@
                     <span class="font-title text-xl">{{ shop }}</span>
                 </div>
             </div>
+
+            <div class="w-full mt-8">
+                <h3 class="mb-2">{{ $t('Prosperity') }}</h3>
+                <prosperity :prosperity.sync="prosperity"></prosperity>
+            </div>
         </div>
     </div>
 </template>
@@ -22,7 +27,8 @@ export default {
     data() {
         return {
             reputation: 0,
-            shop: 0
+            shop: 0,
+            prosperity: 1,
         }
     },
     watch: {

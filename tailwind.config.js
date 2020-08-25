@@ -32,6 +32,9 @@ module.exports = {
             height: {
                 '1/2': '50%',
             },
+            maxWidth: {
+                'party': '1041px'
+            },
             screens: {
                 xs: '400px',
                 lgh: {'raw': '(min-height: 600px)'}
