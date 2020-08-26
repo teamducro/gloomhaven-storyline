@@ -1,32 +1,28 @@
 <template>
-    <div class="flex items-center">
-        <div class="relative w-24">
-            <label class="mdc-text-field mdc-text-field--outlined" ref="field">
-                <input type="text" v-model="number" @change="numberChanged" :aria-labelledby="id"
-                       class="mdc-text-field__input font-title text-xl">
-                <span class="mdc-notched-outline">
+    <div class="relative w-24">
+        <label class="mdc-text-field mdc-text-field--outlined" ref="field">
+            <input type="text" :value="number" @change="numberChanged" :aria-labelledby="id"
+                   class="mdc-text-field__input font-title text-xl">
+            <span class="mdc-notched-outline">
                 <span class="mdc-notched-outline__leading"></span>
                 <span class="mdc-notched-outline__notch">
                     <span v-if="label" class="mdc-floating-label" :id="id">{{ label }}</span>
                 </span>
                 <span class="mdc-notched-outline__trailing"></span>
             </span>
-            </label>
-            <div class="absolute h-full right-0 top-0 p-1">
-                <div class="flex flex-col h-full">
-                    <div class="h-1/2 cursor-pointer" @click="add">
-                        <span class="material-icons">add</span>
-                    </div>
-                    <div class="h-1/2 cursor-pointer" @click="subtract">
-                        <span class="material-icons">remove</span>
-                    </div>
+        </label>
+        <div class="absolute h-full right-0 top-0 p-1">
+            <div class="flex flex-col h-full">
+                <div class="h-1/2" @click="add"
+                     :class="{'cursor-pointer': number !== max, 'text-gray-500': number === max}">
+                    <span class="material-icons">add</span>
+                </div>
+                <div class="h-1/2" @click="subtract"
+                     :class="{'cursor-pointer': number !== min, 'text-gray-500': number === min}">
+                    <span class="material-icons">remove</span>
                 </div>
             </div>
         </div>
-        <transition name="fade">
-            <span v-if="this.stack.length > 1" @click="rollback"
-                  class="material-icons cursor-pointer ml-4">replay</span>
-        </transition>
     </div>
 </template>
 
@@ -45,40 +41,47 @@ export default {
         value: {
             type: Number,
             default: 0
+        },
+        step: {
+            type: Number,
+            default: 1
+        },
+        min: {
+            type: Number,
+            default: null
+        },
+        max: {
+            type: Number,
+            default: null
         }
     },
     data() {
         return {
             number: 0,
-            field: null,
-            stack: []
+            field: null
         }
     },
     mounted() {
         this.number = this.value;
-        this.stack.push(this.number);
         this.field = new MDCTextField(this.$refs['field']);
     },
     watch: {
+        value: function (value) {
+            this.number = value;
+        },
         number: function () {
             this.validateNumber();
         }
     },
     methods: {
-        rollback() {
-            if (this.stack.length > 1) {
-                this.stack.pop();
-                this.number = _.last(this.stack);
-                this.updateNumber();
-            }
-        },
         add() {
-            this.number++;
+            this.number = this.number + this.step;
         },
         subtract() {
-            this.number--;
+            this.number = this.number - this.step;
         },
-        numberChanged() {
+        numberChanged(e) {
+            this.number = e.target.value;
             if (this.number === '-' || this.number === '') {
                 this.number = 0;
             }
@@ -91,19 +94,20 @@ export default {
                     this.number = 0;
                 }
             }
-            if (this.number > 20) {
-                this.number = 20;
-            } else if (this.number < -20) {
-                this.number = -20;
+
+            if (this.step > 1) {
+                this.number = Math.ceil(this.number / this.step) * this.step;
             }
 
-            if (Number.isInteger(this.number) && (!this.stack.length || _.last(this.stack) !== this.number)) {
-                this.stack.push(this.number);
-                this.updateNumber();
+            if (this.max !== null && this.number > this.max) {
+                this.number = this.max;
+            } else if (this.min !== null && this.number < this.min) {
+                this.number = this.min;
             }
-        },
-        updateNumber() {
-            this.$emit('update:value', this.number);
+
+            if (Number.isInteger(this.number)) {
+                this.$emit('update:value', this.number);
+            }
         }
     }
 }
