@@ -15,6 +15,10 @@
             </div>
 
             <div class="w-full mt-8">
+                <h3 class="mb-2">{{ $t('Sanctuary Donations') }}</h3>
+            </div>
+
+            <div class="w-full mt-8">
                 <h3 class="mb-2">{{ $t('Prosperity') }}</h3>
                 <prosperity :prosperity.sync="prosperity"></prosperity>
             </div>
