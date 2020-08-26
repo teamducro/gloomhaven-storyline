@@ -27,6 +27,7 @@
 <script>
 import tippy from 'tippy.js';
 import StoryCodeRepository from "../../apiRepositories/StoryCodeRepository";
+import Helpers from "../../services/Helpers";
 
 export default {
     data() {
@@ -92,7 +93,11 @@ export default {
             }
         },
         setUrl() {
-            this.url = location.href.replace('/#/', `/?code=${this.code.code}#/`);
+            let url = Helpers.inProduction()
+                ? process.env.MIX_APP_URL
+                : location.protocol + '//' + location.host;
+
+            this.url = url + `/?code=${this.code.code}#/campaigns`;
         }
     }
 }
