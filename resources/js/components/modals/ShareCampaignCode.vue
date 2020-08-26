@@ -1,20 +1,25 @@
 <template>
     <modal ref="modal" :title="$t('share.title')" @closed="clearTimer">
         <template v-slot:content>
-            <p>Share the following campaign code with your party members to enable progress sync across all
-                your devices!</p>
-            <div v-if="code && progress" class="flex items-center flex-col my-6">
-                <a v-clipboard:copy="code.code" class="cursor-pointer copied">
-                    <countdown :label="code.code" :percentage="progress.percentage"></countdown>
-                </a>
-                <span>valid until: <span class="font-bold">{{ progress.time }}</span></span>
-                <span class="text-sm">The code is valid for one week.</span>
-            </div>
-            <share-icons v-if="code && progress && url"
-                         :url="url"
-                         :networks="['whatsapp', 'email']"
-                         :description="'Your campaign code: ' + code.code + ' (valid until: ' + progress.time+')'"
-            />
+            <template v-if="story && story.is_shared">
+                <p>You are not the owner of this campaign, you can't share it with others.</p>
+            </template>
+            <template v-else-if="code && progress">
+                <p>Share the following campaign code with your party members to enable progress sync across all
+                    your devices!</p>
+                <div class="flex items-center flex-col my-6">
+                    <a v-clipboard:copy="code.code" class="cursor-pointer copied">
+                        <countdown :label="code.code" :percentage="progress.percentage"></countdown>
+                    </a>
+                    <span>valid until: <span class="font-bold">{{ progress.time }}</span></span>
+                    <span class="text-sm">The code is valid for one week.</span>
+                </div>
+                <share-icons v-if="url"
+                             :url="url"
+                             :networks="['whatsapp', 'email']"
+                             :description="'Your campaign code: ' + code.code + ' (valid until: ' + progress.time+')'"
+                />
+            </template>
         </template>
     </modal>
 </template>
@@ -22,6 +27,7 @@
 <script>
 import tippy from 'tippy.js';
 import StoryCodeRepository from "../../apiRepositories/StoryCodeRepository";
+import Helpers from "../../services/Helpers";
 
 export default {
     data() {
@@ -87,7 +93,11 @@ export default {
             }
         },
         setUrl() {
-            this.url = location.href.replace('/#/', `/?code=${this.code.code}#/`);
+            let url = Helpers.inProduction()
+                ? process.env.MIX_APP_URL
+                : location.protocol + '//' + location.host;
+
+            this.url = url + `/?code=${this.code.code}#/campaigns`;
         }
     }
 }
