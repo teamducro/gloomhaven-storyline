@@ -18,17 +18,29 @@
                 </div>
             </div>
 
-            <div class="w-full mt-8">
-                <div class="mb-2 flex items-center">
-                    <h3>{{ $t('Sanctuary Donations') }}</h3>
-                    <rollback :value.sync="donations"></rollback>
+            <div class="flex w-full mt-8">
+                <div class="flex-1">
+                    <div class="mb-2 flex items-center">
+                        <h3>{{ $t('Sanctuary of the Great Oak') }}</h3>
+                        <rollback :value.sync="donations"></rollback>
+                    </div>
+                    <number-field :value.sync="donations" :min="0" :step="10" :id="'reputation'"></number-field>
+                    <p class="text-sm">
+                        When in town, a character may donate 10g to the Sanctuary to add 2 Bless cards to their combat
+                        deck. For each such donation, increase the counter. When 100 gold is donated, open envelope
+                        <span class="font-title">B</span>
+                    </p>
                 </div>
-                <number-field :value.sync="donations" :min="0" :step="10" :id="'reputation'"></number-field>
+                <div class="flex-1">
+                    <p v-if="donationProsperity">
+                        <span class="font-title">{{ donationProsperity }}</span> gained prosperity by donations.
+                    </p>
+                </div>
             </div>
 
             <div class="w-full mt-8">
                 <div class="mb-2 flex items-center">
-                    <h3>{{ $t('Prosperity') }}</h3>
+                    <h3>{{ $t('Gloomhaven Prosperity') }}</h3>
                     <rollback :value.sync="prosperity"></rollback>
                 </div>
                 <prosperity :prosperity.sync="prosperity"></prosperity>
@@ -47,12 +59,16 @@ export default {
             reputation: 0,
             shop: 0,
             donations: 0,
+            donationProsperity: 0,
             prosperity: 1,
         }
     },
     watch: {
         reputation: function () {
             this.calculateShop();
+        },
+        donations: function () {
+            this.calculateDonationProsperity();
         }
     },
     mounted() {
@@ -83,6 +99,16 @@ export default {
             } else {
                 this.shop = -5;
             }
+        },
+        calculateDonationProsperity() {
+            let rates = collect([100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, 900, 1000]);
+            let donationProsperity = 0;
+            rates.each((rate) => {
+                if (this.donations >= rate) {
+                    donationProsperity++;
+                }
+            });
+            this.donationProsperity = donationProsperity;
         }
     }
 }
