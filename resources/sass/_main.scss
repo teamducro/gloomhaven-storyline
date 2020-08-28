@@ -67,3 +67,10 @@ button:focus, .scenario {
     @extend .material-icons;
     content: 'cloud_off';
 }
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
