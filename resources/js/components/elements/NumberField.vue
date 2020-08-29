@@ -105,6 +105,7 @@ export default {
 
             if (Number.isInteger(this.number)) {
                 this.$emit('update:value', this.number);
+                this.$emit('change', this.number);
             }
         }
     }

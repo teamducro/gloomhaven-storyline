@@ -19,7 +19,6 @@ export default {
         }
     },
     mounted() {
-        this.stack.push(this.value);
     },
     watch: {
         value: function (val) {
@@ -33,11 +32,15 @@ export default {
         }
     },
     methods: {
+        reset() {
+            this.stack = [this.value];
+        },
         rollback() {
             if (this.stack.length > 1) {
                 this.stack.pop();
                 let value = this.last();
                 this.$emit('update:value', value);
+                this.$emit('change', value);
             }
         },
         last() {

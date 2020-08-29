@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-12 pb-4 px-4 md:px-8">
+    <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
         <div id="info" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <h1 class="mb-4 text-xl">{{ $t('Party sheet') }} {{ campaignName }}</h1>
@@ -8,9 +8,11 @@
                 <div class="mb-8 sm:mb-0 sm:mr-4">
                     <div class="mb-2 flex items-center">
                         <h2>{{ $t('Reputation') }}</h2>
-                        <rollback :value.sync="sheet.reputation"></rollback>
+                        <rollback v-show="!loading" ref="reputation-rollback"
+                                  :value.sync="sheet.reputation"></rollback>
                     </div>
-                    <number-field :value.sync="sheet.reputation" :min="-20" :max="20" :id="'reputation'"></number-field>
+                    <number-field :value.sync="sheet.reputation" :min="-20" :max="20" :id="'reputation'"
+                                  @change="store"></number-field>
                 </div>
                 <div>
                     <h2 class="mb-2">{{ $t('Shop modifier') }}</h2>
@@ -24,9 +26,11 @@
             <div class="w-full mt-8">
                 <div class="mb-2 flex items-center">
                     <h2>{{ $t('Sanctuary of the Great Oak') }}</h2>
-                    <rollback :value.sync="sheet.donations"></rollback>
+                    <rollback v-show="!loading" ref="donations-rollback"
+                              :value.sync="sheet.donations"></rollback>
                 </div>
-                <number-field :value.sync="sheet.donations" :min="0" :step="10" :id="'reputation'"></number-field>
+                <number-field :value.sync="sheet.donations" :min="0" :step="10" :id="'reputation'"
+                              @change="store"></number-field>
                 <p v-if="sheet.donations <= 100" class="mt-2 text-sm">
                     When 100 gold is donated, open envelope <span class="font-title">B</span>
                 </p>
@@ -38,11 +42,14 @@
             <div class="w-full mt-8">
                 <div class="mb-2 flex items-center">
                     <h2>{{ $t('Gloomhaven Prosperity') }}</h2>
-                    <rollback :value.sync="sheet.prosperityIndex"></rollback>
+                    <rollback v-show="!loading" ref="prosperity-rollback"
+                              :value.sync="sheet.prosperityIndex"
+                              @change="store"></rollback>
                 </div>
                 <prosperity class="-mx-2"
                             :prosperityIndex.sync="sheet.prosperityIndex"
-                            :prosperity.sync="prosperity"></prosperity>
+                            :prosperity.sync="prosperity"
+                            @change="store"></prosperity>
             </div>
 
             <div class="w-full mt-8 flex flex-col sm:flex-row">
@@ -52,7 +59,8 @@
                         <li v-for="(items, index) in prosperityItems" class="flex items-center">
                             <checkbox group="items"
                                       :disabled="true"
-                                      :checked="prosperity > index"></checkbox>
+                                      :checked="prosperity > index"
+                                      @change="store"></checkbox>
                             <span class="w-16 font-title">{{ items }}</span>
                         </li>
                     </ul>
@@ -63,7 +71,7 @@
                         <li v-for="(checked, item) in sheet.itemDesigns" class="flex items-center">
                             <checkbox group="items"
                                       :checked="checked"
-                                      @change="(id, isChecked) => sheet.itemDesigns[item] = isChecked"></checkbox>
+                                      @change="(id, isChecked) => {sheet.itemDesigns[item] = isChecked; store()}"></checkbox>
                             <span class="w-8 font-title">{{ item }}</span>
                         </li>
                     </ul>
@@ -72,17 +80,17 @@
 
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
-                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"></notes>
+                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')" @change="store"></notes>
             </div>
 
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Unlocks') }}</h2>
-                <table class="w-full">
+                <table class="w-full mb-4">
                     <tr v-for="(unlock, index) in unlocks" class="flex items-center border-b border-gray-600">
                         <td class="-ml-2">
                             <checkbox group="unlocks"
                                       :checked="sheet.unlocks[index]"
-                                      @change="(id, isChecked) => sheet.unlocks[index] = isChecked"></checkbox>
+                                      @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
                         </td>
                         <td class="w-full flex flex-wrap">
                             <span class="whitespace-normal md:whitespace-no-wrap">{{ unlock.goal }}</span>
@@ -98,7 +106,7 @@
                         <checkbox group="items"
                                   :checked="checked"
                                   :disabled="character < 6"
-                                  @change="(id, isChecked) => sheet.characters[character] = isChecked"></checkbox>
+                                  @change="(id, isChecked) => {sheet.characters[character] = isChecked; store()}"></checkbox>
                         <span v-if="character < 17" class="w-8 font-title">
                             <character class="w-6 -mb-2 inline-block" :character="character+1"/>
                         </span>
@@ -113,73 +121,12 @@
 
 <script>
 import StoryRepository from "../repositories/StoryRepository";
+import Sheet from "../models/Sheet";
 
 export default {
     data() {
         return {
-            sheet: {
-                reputation: 0,
-                donations: 0,
-                prosperityIndex: 1,
-                itemDesigns: {
-                    71: false,
-                    72: false,
-                    73: false,
-                    74: false,
-                    75: false,
-                    76: false,
-                    77: false,
-                    78: false,
-                    79: false,
-                    80: false,
-                    81: false,
-                    82: false,
-                    83: false,
-                    84: false,
-                    85: false,
-                    86: false,
-                    87: false,
-                    88: false,
-                    89: false,
-                    90: false,
-                    91: false,
-                    92: false,
-                    93: false,
-                    94: false,
-                    95: false
-                },
-                notes: '',
-                unlocks: [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                ],
-                characters: [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                ]
-            },
+            sheet: null,
             shop: 0,
             donationProsperity: 0,
             prosperity: 1,
@@ -229,7 +176,8 @@ export default {
                 }
             ],
             storyRepository: new StoryRepository(),
-            campaignName: null
+            campaignName: null,
+            loading: true
         }
     },
     watch: {
@@ -241,16 +189,37 @@ export default {
         }
     },
     mounted() {
+        this.render();
         this.calculateShop();
         this.calculateDonationProsperity();
-        this.setCampaignName();
 
-        this.$bus.$on('campaigns-changed', this.setCampaignName);
+        this.$bus.$on('campaigns-changed', this.render);
     },
     destroyed() {
-        this.$bus.$off('campaigns-changed', this.setCampaignName);
+        this.$bus.$off('campaigns-changed', this.render);
     },
     methods: {
+        async render() {
+            this.loading = true;
+
+            this.sheet = new Sheet;
+            this.setCampaignName();
+
+            await this.$nextTick();
+
+            this.$refs['reputation-rollback'].reset();
+            this.$refs['donations-rollback'].reset();
+            this.$refs['prosperity-rollback'].reset();
+
+            this.loading = false;
+        },
+        store() {
+            if (this.loading) {
+                return;
+            }
+
+            this.sheet.store();
+        },
         calculateShop() {
             let reputation = [-18, -14, -10, -6, -2, 3, 7, 11, 15, 19];
             let shop = 5;
