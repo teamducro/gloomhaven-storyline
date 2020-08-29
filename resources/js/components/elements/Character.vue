@@ -4,12 +4,12 @@
 </template>
 
 <script>
-    export default {
-        props: {
-            character: String
-        },
-        data() {
-            return {}
-        }
+export default {
+    props: [
+        'character'
+    ],
+    data() {
+        return {}
     }
+}
 </script>

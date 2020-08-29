@@ -1,9 +1,9 @@
 <template>
-    <div class="flex flex-wrap -mx-2">
+    <div class="flex flex-wrap">
         <div class="flex flex-col items-center justify-end"
-             v-for="(p,index) in 65">
-            <span class="font-title -mb-1" v-if="breaks[p]">{{ breaks[p] }}</span>
-            <checkbox :style="!breaks[p] ? 'transform: scale(0.7)' : ''"
+             v-for="p in 65">
+            <span class="font-title -mb-1" v-if="breaks.get(p)">{{ breaks.get(p) }}</span>
+            <checkbox :style="!breaks.get(p) ? 'transform: scale(0.7)' : ''"
                       class="-m-1"
                       :id="'p-'+p"
                       group="prosperity"
@@ -17,6 +17,10 @@
 <script>
 export default {
     props: {
+        prosperityIndex: {
+            type: Number,
+            default: 1
+        },
         prosperity: {
             type: Number,
             default: 1
@@ -24,7 +28,7 @@ export default {
     },
     data() {
         return {
-            breaks: {
+            breaks: collect({
                 1: 1,
                 5: 2,
                 10: 3,
@@ -34,19 +38,21 @@ export default {
                 40: 7,
                 51: 8,
                 65: 9
-            },
+            }),
             currentProsperity: 1,
             checked: {}
         }
     },
     mounted() {
-        this.currentProsperity = this.prosperity;
+        this.currentProsperity = this.prosperityIndex;
         this.updateChecked();
+        this.calculateProsperity();
     },
     watch: {
-        prosperity: function (currentProsperity) {
+        prosperityIndex: function (currentProsperity) {
             this.currentProsperity = currentProsperity;
             this.updateChecked();
+            this.calculateProsperity();
         }
     },
     methods: {
@@ -62,8 +68,15 @@ export default {
                 p = p - 1;
             }
             this.currentProsperity = p;
-            this.$emit('update:prosperity', this.currentProsperity);
+            this.$emit('update:prosperityIndex', this.currentProsperity);
             this.$emit('change', this.currentProsperity);
+            this.calculateProsperity();
+        },
+        calculateProsperity() {
+            let prosperity = this.breaks
+                .filter((prosperity, index) => this.currentProsperity >= index)
+                .last();
+            this.$emit('update:prosperity', prosperity);
         }
     }
 }

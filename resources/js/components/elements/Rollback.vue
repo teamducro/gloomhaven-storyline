@@ -24,7 +24,11 @@ export default {
     watch: {
         value: function (val) {
             if (val !== this.last()) {
-                this.stack.push(val);
+                if (val === this.secondToLast()) {
+                    this.stack.pop();
+                } else {
+                    this.stack.push(val);
+                }
             }
         }
     },
@@ -38,6 +42,11 @@ export default {
         },
         last() {
             return _.last(this.stack);
+        },
+        secondToLast() {
+            if (this.stack.length > 1) {
+                return this.stack[this.stack.length - 2];
+            }
         }
     }
 }
