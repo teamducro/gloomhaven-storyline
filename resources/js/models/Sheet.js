@@ -23,7 +23,7 @@ class Sheet {
 
         this.read();
 
-        if (typeof this.reputation === 'undefined') {
+        if (typeof app.campaignData[this.key()] === 'undefined') {
             this.new();
         }
     }
