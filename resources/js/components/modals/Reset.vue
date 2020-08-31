@@ -19,31 +19,33 @@
 </template>
 
 <script>
-    import Reseter from "../../services/Reseter";
-    import Helpers from "../../services/Helpers";
-    import StoryRepository from "../../repositories/StoryRepository";
+import Reseter from "../../services/Reseter";
+import Helpers from "../../services/Helpers";
+import StoryRepository from "../../repositories/StoryRepository";
 
-    export default {
-        data() {
-            return {
-                resetService: new Reseter,
-                loggedIn: Helpers.loggedIn(),
-                storyRepository: new StoryRepository,
-                current: null,
-            }
+export default {
+    data() {
+        return {
+            resetService: new Reseter,
+            loggedIn: Helpers.loggedIn(),
+            storyRepository: new StoryRepository,
+            current: null,
+        }
+    },
+    mounted() {
+        this.$bus.$on('open-reset-modal', this.open);
+    },
+    methods: {
+        open() {
+            this.current = this.storyRepository.current();
+            this.$refs['modal'].open();
         },
-        mounted() {
-            this.$bus.$on('open-reset-modal', this.open);
-        },
-        methods: {
-            open() {
-                this.current = this.storyRepository.current();
-                this.$refs['modal'].open();
-            },
-            reset() {
-                const campaignId = this.current ? this.current.campaignId : 'local';
-                this.resetService.reset(campaignId);
-            }
+        async reset() {
+            const campaignId = this.current ? this.current.campaignId : 'local';
+            this.resetService.reset(campaignId);
+            await this.$nextTick();
+            this.$bus.$emit('campaigns-changed');
         }
     }
+}
 </script>
