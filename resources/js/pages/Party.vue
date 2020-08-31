@@ -122,6 +122,7 @@
 <script>
 import StoryRepository from "../repositories/StoryRepository";
 import Sheet from "../models/Sheet";
+import StorySyncer from "../services/StorySyncer";
 
 export default {
     data() {
@@ -176,6 +177,7 @@ export default {
                 }
             ],
             storyRepository: new StoryRepository(),
+            storySyncer: new StorySyncer,
             campaignName: null,
             loading: true
         }
@@ -219,6 +221,7 @@ export default {
             }
 
             this.sheet.store();
+            this.storySyncer.store();
         },
         calculateShop() {
             let reputation = [-18, -14, -10, -6, -2, 3, 7, 11, 15, 19];
