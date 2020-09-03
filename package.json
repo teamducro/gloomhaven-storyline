@@ -62,6 +62,7 @@
         "js-md5": "^0.7.3",
         "kind-of": "^6.0.3",
         "laravel-echo": "^1.8.0",
+        "lz-string": "^1.4.4",
         "md5-file": "^4.0.0",
         "minimist": "^1.2.5",
         "panzoom": "^9.2.1",

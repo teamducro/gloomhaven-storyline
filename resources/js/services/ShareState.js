@@ -5,12 +5,30 @@ import AchievementGroup from "../models/AchievementGroup";
 import Helpers from "./Helpers";
 import Reseter from "./Reseter";
 import ChoiceService from "./ChoiceService";
+import LZString from "lz-string";
+import store from "store/dist/store.modern";
 
 const queryString = require('query-string');
 
 export default class ShareState {
-    load() {
-        let result = this.decode();
+    hasNewLink() {
+        this.result = this.decodeNewLink();
+
+        return !!this.result;
+    }
+
+    loadNewLink() {
+        let result = this.result || this.decodeNewLink();
+
+        if (result) {
+            app.switchLocal();
+
+            store.set(app.campaignId, result.storage);
+        }
+    }
+
+    loadOldLink() {
+        let result = this.decodeOldLink();
 
         if (result.hasOwnProperty('states')) {
             this.reseter.reset();
@@ -59,41 +77,54 @@ export default class ShareState {
         return this.url() + '?' + this.encode();
     }
 
-    encode() {
-        let result = {};
-
-        result.groups = this.achievementRepository.groups()
-            .filter((group) => group.achievements.length)
-            .pluck('achievements', 'id').map((achievements, id) => {
-                return id + '_' + achievements.join('_');
-            }).values().implode('-');
-
-        result.states = app.scenarios.where('state', '!=', ScenarioState.hidden)
-            .pluck('state', 'id').map((state, id) => {
-                return id + '_' + state.substr(0, 1);
-            }).values().implode('-');
-
-        result.choices = app.scenarios.where('state', ScenarioState.complete)
-            .where('hasChoices', true).pluck('choice', 'id').map((choice, id) => {
-                return id + '_' + choice
-            }).values().implode('-');
-
-        result.promptChoices = app.scenarios.where('state', ScenarioState.complete)
-            .where('hasPrompt', true).pluck('promptChoice', 'id').map((choice, id) => {
-                return id + '_' + choice
-            }).values().implode('-');
-
-        result.treasures = app.scenarios.pluck('unlockedTreasures', 'id').map((treasures, id) => {
-            if (treasures.length) {
-                return id + '_' + treasures.join('_');
-            }
-            return false;
-        }).filter().values().implode('-');
-
-        return queryString.stringify(_.pickBy(result, (value) => value));
+    encodeMap() {
+        return {
+            'scenario': '_s_',
+            '"state":': '_st_',
+            'achievement': '_a_',
+            '"awarded":': '_aw_',
+            '"complete"': '_c_',
+            '"choice":': '_ch_',
+            '"count":': '_co_',
+            '"incomplete"': '_i_',
+            '"blocked"': '_b_',
+            '"hidden"': '_h_',
+            '"promptChoice":': '_p_',
+            '"notes":': '_n_',
+            '"treasures":': '_t_',
+            '"lost":': '_l_',
+        }
     }
 
-    decode() {
+    encode() {
+        let input = JSON.stringify(app.campaignData);
+
+        collect(this.encodeMap()).each((replace, search) => {
+            const regEx = new RegExp(search, 'g');
+            input = input.replace(regEx, replace);
+        });
+        const compressed = LZString.compressToEncodedURIComponent(input);
+
+        return queryString.stringify({storage: compressed});
+    }
+
+    decodeNewLink() {
+        let parsed = queryString.parse(location.search);
+
+        if (typeof parsed.storage !== 'undefined') {
+            let decompressed = LZString.decompressFromEncodedURIComponent(parsed.storage)
+            collect(this.encodeMap()).each((search, replace) => {
+                const regEx = new RegExp(search, 'g');
+                decompressed = decompressed.replace(regEx, replace);
+            });
+
+            return {
+                storage: JSON.parse(decompressed)
+            };
+        }
+    }
+
+    decodeOldLink() {
         let parsed = queryString.parse(location.search);
         let result = {};
 

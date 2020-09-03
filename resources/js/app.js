@@ -94,11 +94,18 @@ window.app = new Vue({
         this.hasMouse = this.checkHasMouse();
         this.shouldTransferVersion1Progress();
 
+        let shareState = new ShareState;
+
+        if (shareState.hasNewLink()) {
+            await this.$nextTick();
+            shareState.loadNewLink();
+        }
+
         await this.loadCampaignData(true);
         await this.$nextTick();
         await this.campaignsChanged();
 
-        (new ShareState).load();
+        shareState.loadOldLink();
 
         document.getElementById('bg').style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
 
