@@ -29,7 +29,7 @@
                     <rollback v-show="!loading" ref="donations-rollback"
                               :value.sync="sheet.donations"></rollback>
                 </div>
-                <number-field :value.sync="sheet.donations" :min="0" :step="10" :id="'reputation'"
+                <number-field :value.sync="sheet.donations" :min="0" :step="10" :id="'donations'"
                               @change="store"></number-field>
                 <p v-if="sheet.donations <= 100" class="mt-2 text-sm">
                     When 100 gold is donated, open envelope <span class="font-title">B</span>
