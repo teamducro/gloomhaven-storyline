@@ -98,7 +98,7 @@ window.app = new Vue({
         await this.$nextTick();
         await this.campaignsChanged();
 
-        (new ShareState).load();
+        (new ShareState).loadOldLink();
 
         document.getElementById('bg').style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
 
@@ -136,8 +136,8 @@ window.app = new Vue({
 
             return true;
         },
-        switchLocal() {
-            this.campaignId = 'local';
+        switchLocal(campaignId = 'local') {
+            this.campaignId = campaignId;
             store.set('campaignId', this.campaignId);
         },
         async switchCampaign(campaignId, shouldFetch = false) {
