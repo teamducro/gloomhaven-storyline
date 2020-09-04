@@ -52,15 +52,23 @@ export default {
 
     isNodeBlocked(id) {
         this.isNodeVisible(id);
-        cy.get('#node' + id + ' .blocked').should(($node) => {
-            expect($node).css('display', 'block');
-        });
+        cy.get('#node' + id + '.blocked .blocked').should('be.visible');
     },
 
     isNodeRequired(id) {
         this.isNodeVisible(id);
-        cy.get('#node' + id + ' .required').should(($node) => {
-            expect($node).css('display', 'block');
+        cy.get('#node' + id + '.required .required').should('be.visible');
+    },
+
+    isNodeComplete(id) {
+        this.isNodeVisible(id);
+        cy.get('#node' + id + '.complete').should('be.visible');
+    },
+
+    isNodeIncomplete(id) {
+        this.isNodeVisible(id);
+        cy.get('#node' + id + '.incomplete').should(($node) => {
+            expect($node).css('display', 'inline');
         });
     },
 

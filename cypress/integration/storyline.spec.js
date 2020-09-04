@@ -38,7 +38,6 @@ describe('Storyline', () => {
         utilities.isNodeHidden(2);
 
         utilities.completeScenario(1);
-
         utilities.isNodeVisible(2);
     });
 
@@ -54,7 +53,15 @@ describe('Storyline', () => {
     });
 
     it('It reveals chapters', () => {
+
+        let alerted = false;
+        cy.on('window:alert', message => alerted = message);
+
         cy.visit('/?states=1_c-2_c');
+
+        cy.window().then((window) => {
+            expect(alerted.includes('deprecated')).to.be.true;
+        });
 
         cy.get('#chapter2').should(($chapter) => {
             expect($chapter).css('display', 'none');
