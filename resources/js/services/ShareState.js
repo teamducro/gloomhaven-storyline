@@ -11,20 +11,12 @@ import store from "store/dist/store.modern";
 const queryString = require('query-string');
 
 export default class ShareState {
-    hasNewLink() {
-        this.result = this.decodeNewLink();
+    loadNewLink(compressed) {
+        let result = this.decodeNewLink(compressed);
 
-        return !!this.result;
-    }
+        app.switchLocal();
 
-    loadNewLink() {
-        let result = this.result || this.decodeNewLink();
-
-        if (result) {
-            app.switchLocal();
-
-            store.set(app.campaignId, result.storage);
-        }
+        store.set(app.campaignId, result);
     }
 
     loadOldLink() {
@@ -74,30 +66,43 @@ export default class ShareState {
     }
 
     link() {
-        return this.url() + '?' + this.encode();
+        return this.url() + '#/shared/' + this.encode();
     }
 
     encodeMap() {
         return {
-            'scenario': '_s_',
-            '"state":': '_st_',
-            'achievement': '_a_',
-            '"awarded":': '_aw_',
-            '"complete"': '_c_',
-            '"choice":': '_ch_',
-            '"count":': '_co_',
-            '"incomplete"': '_i_',
-            '"blocked"': '_b_',
-            '"hidden"': '_h_',
-            '"promptChoice":': '_p_',
-            '"notes":': '_n_',
-            '"treasures":': '_t_',
-            '"lost":': '_l_',
+            '"state":': '±st',
+            '"sheet":': '±sh',
+            '"achievements":': '±as',
+            '"achievementgroup-': '±ag',
+            '"awarded":': '±aw',
+            '"characters":': '±cha',
+            '"choice":': '±ch',
+            '"count":': '±co',
+            '"itemDesigns":': '±id',
+            '"promptChoice":': '±pc',
+            '"prosperityIndex":': '±pi',
+            'false': '±0',
+            'true': '±1',
+            '"scenario-': '±s',
+            '"achievement-': '±a',
+            '"complete"': '±c',
+            '"incomplete"': '±i',
+            '"blocked"': '±b',
+            '"hidden"': '±h',
+            '"donations":': '±d',
+            '"reputation":': '±r',
+            '"notes":': '±n',
+            '"unlocks":': '±u',
+            '"treasures":': '±t',
+            '"lost":': '±l',
         }
     }
 
     encode() {
         let input = JSON.stringify(app.campaignData);
+
+        console.log(input);
 
         collect(this.encodeMap()).each((replace, search) => {
             const regEx = new RegExp(search, 'g');
@@ -105,23 +110,23 @@ export default class ShareState {
         });
         const compressed = LZString.compressToEncodedURIComponent(input);
 
-        return queryString.stringify({storage: compressed});
+        console.log(compressed);
+
+        return compressed;
     }
 
-    decodeNewLink() {
-        let parsed = queryString.parse(location.search);
+    decodeNewLink(compressed) {
+        console.log(compressed);
 
-        if (typeof parsed.storage !== 'undefined') {
-            let decompressed = LZString.decompressFromEncodedURIComponent(parsed.storage)
-            collect(this.encodeMap()).each((search, replace) => {
-                const regEx = new RegExp(search, 'g');
-                decompressed = decompressed.replace(regEx, replace);
-            });
+        let decompressed = LZString.decompressFromEncodedURIComponent(compressed)
+        collect(this.encodeMap()).each((search, replace) => {
+            const regEx = new RegExp(search, 'g');
+            decompressed = decompressed.replace(regEx, replace);
+        });
 
-            return {
-                storage: JSON.parse(decompressed)
-            };
-        }
+        console.log(decompressed);
+
+        return JSON.parse(decompressed);
     }
 
     decodeOldLink() {
