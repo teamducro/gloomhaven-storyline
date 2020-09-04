@@ -45,7 +45,7 @@
             },
             addCharacterIconsToRewards(reward) {
                 if (reward.includes('.svg')) {
-                    let results = reward.match(/(\d\.svg)/g);
+                    let results = reward.match(/(\d{1,2}\.svg)/g);
                     results.forEach((icon) => {
                         reward = reward.replace(icon, `<character class="w-6 -ml-1 -mb-2 inline-block" character="${icon}" />`);
                     });
