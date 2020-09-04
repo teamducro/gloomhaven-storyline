@@ -53,7 +53,6 @@ describe('Storyline', () => {
     });
 
     it('It reveals chapters', () => {
-
         let alerted = false;
         cy.on('window:alert', message => alerted = message);
 

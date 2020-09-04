@@ -23,4 +23,26 @@ describe('Share', () => {
         cy.get('#notes').should('have.value', 'Foo Bar');
     });
 
+    it('It shows an error message on invalid version', () => {
+        let alerted = false;
+        cy.on('window:alert', message => alerted = message);
+
+        cy.visit('#/shared/9999/local/N4RozgjARAXKYBcQGMC+AaEBDA5gYQCVZQswBtKAcUIFkoBdDbaguubAdxAk2QHseIADYgADEywAFAGIBlYp268BmEeMxgATAsQomYAMw6kAS30AWYyDOogA');
+
+        cy.window().then((window) => {
+            expect(alerted.includes('incompatible')).to.be.true;
+        });
+    });
+
+    it('It shows an error message on failed storage id', () => {
+        let alerted = false;
+        cy.on('window:alert', message => alerted = message);
+
+        cy.visit('#/shared/1/invalid/N4RozgjARAXKYBcQGMC+AaEBDA5gYQCVZQswBtKAcUIFkoBdDbaguubAdxAk2QHseIADYgADEywAFAGIBlYp268BmEeMxgATAsQomYAMw6kAS30AWYyDOogA');
+
+        cy.window().then((window) => {
+            expect(alerted.includes('incompatible')).to.be.true;
+        });
+    });
+
 });
