@@ -11,12 +11,28 @@ import store from "store/dist/store.modern";
 const queryString = require('query-string');
 
 export default class ShareState {
-    loadNewLink(compressed) {
-        let result = this.decodeNewLink(compressed);
+    constructor() {
+        this.version = 1;
+        this.compatibleIds = [
+            'local'
+        ];
+    }
 
-        app.switchLocal();
+    loadNewLink(version, id, compressed) {
+        // version incompatible
+        if (this.version < version) {
+            return false;
+        }
 
-        store.set(app.campaignId, result);
+        // local storage id incompatible
+        if (this.compatibleIds.includes(id) === false) {
+            return false;
+        }
+
+        app.switchLocal(id);
+        store.set(id, this.decodeNewLink(compressed));
+
+        return true;
     }
 
     loadOldLink() {
@@ -61,12 +77,14 @@ export default class ShareState {
                 });
             }
 
+            alert('This shared link is in the old format, these are deprecated and may be removed in the future. Please share your campaign again to get the new link.');
+
             location.href = this.url() + '#/story';
         }
     }
 
-    link() {
-        return this.url() + '#/shared/' + this.encode();
+    link(id = 'local') {
+        return `${this.url()}#/shared/${this.version}/${id}/${this.encode()}`;
     }
 
     encodeMap() {
@@ -102,29 +120,21 @@ export default class ShareState {
     encode() {
         let input = JSON.stringify(app.campaignData);
 
-        console.log(input);
-
         collect(this.encodeMap()).each((replace, search) => {
             const regEx = new RegExp(search, 'g');
             input = input.replace(regEx, replace);
         });
         const compressed = LZString.compressToEncodedURIComponent(input);
 
-        console.log(compressed);
-
         return compressed;
     }
 
     decodeNewLink(compressed) {
-        console.log(compressed);
-
         let decompressed = LZString.decompressFromEncodedURIComponent(compressed)
         collect(this.encodeMap()).each((search, replace) => {
             const regEx = new RegExp(search, 'g');
             decompressed = decompressed.replace(regEx, replace);
         });
-
-        console.log(decompressed);
 
         return JSON.parse(decompressed);
     }

@@ -19,5 +19,5 @@ export default [
     {path: '/campaigns', component: Campaigns},
     {path: '/party', component: Party},
     {path: '/login/:id/:token', component: Login},
-    {path: '/shared/:storage', component: Shared},
+    {path: '/shared/:version/:id/:storage', component: Shared},
 ];

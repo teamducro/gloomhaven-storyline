@@ -136,8 +136,8 @@ window.app = new Vue({
 
             return true;
         },
-        switchLocal() {
-            this.campaignId = 'local';
+        switchLocal(campaignId = 'local') {
+            this.campaignId = campaignId;
             store.set('campaignId', this.campaignId);
         },
         async switchCampaign(campaignId, shouldFetch = false) {
