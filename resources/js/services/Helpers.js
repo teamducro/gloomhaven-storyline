@@ -12,5 +12,8 @@ export default {
     },
     removeQueryString() {
         history.replaceState({}, document.title, location.href.replace(location.search, ''));
+    },
+    isMac() {
+        return window.navigator.platform.match("Mac");
     }
 }

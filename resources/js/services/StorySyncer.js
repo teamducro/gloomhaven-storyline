@@ -1,27 +1,25 @@
 import StoryRepository from "../repositories/StoryRepository";
 import ApiStoryRepository from "../apiRepositories/StoryRepository";
+import moment from "moment";
 
 export default class StorySyncer {
-    store() {
+    store(force = false) {
         const story = this.storyRepository.current();
         if (!story) {
             return;
         }
 
         story.data = app.campaignData;
+        const hasChanged = story.hasChanged();
 
-        if (story.hasChanged()) {
+        if (hasChanged) {
+            story.updated_at = moment();
+            this.apiStoryRepository.storeStory(story);
+        }
+
+        if (hasChanged || force) {
             this.apiStoryRepository.update(story);
         }
-    }
-
-    fetch() {
-        let story = this.storyRepository.current();
-        if (!story) {
-            return;
-        }
-
-        story = this.apiStoryRepository.find(story);
     }
 
     get storyRepository() {
