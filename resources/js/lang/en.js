@@ -601,7 +601,7 @@ export default {
             "sections": {
                 1: "A demon has tasked you (or rather threatened) with retrieving a powerful artifact. Helping such a powerful creature could certainly be profitable, but at what cost?",
                 2: "You've retrieved the artifact, as the demon requested. It's abundantly clear that the artifact has been corrupted. If you bring this to the demon, he will most certainly use it for a great and terrible evil.",
-                3: "You sealed the rift without handing over the artifact to the Demon. Clearly it was not to be trusted with such a dangerous and powerful item",
+                3: "You sealed the rift without handing over the artifact to the Demon. Clearly it was not to be trusted with such a dangerous and powerful item.",
                 4: "You knew it would be bad... but a demon invasion of Gloomhaven was not what you had in mind. This was too much for you to handle on your own. You escaped the demon's lair and ran to warn the city guard just in time. The demons assailed the gate with tremendous numbers, but you were able to hold long enough to wear down the Prime Demon. He managed to breach the gate, but you put him down and his armies scattered. Gloomhaven is safe for now, but you may want to reconsider your policy of handing powerful artifacts to evil creatures.",
                 5: "You handed over the artifact to the demon, who revealed he would use it's power to take over Gloomhaven. Sounded good to you. Those fools in Gloomhaven never appreciated you anyway. With the aid of the demon army, you sacked the garrison and slaughtered the guard. Gloomhaven is now under demon rule."
             },
