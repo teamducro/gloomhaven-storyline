@@ -12,20 +12,24 @@ export default class ApiService {
     async request(method, url, options, data = {}) {
         options = await this.applyHeaders(options);
 
-        let response;
-        if (method === 'get' || method === 'delete') {
-            response = await window.axios[method](url, options);
-        } else {
-            response = await window.axios[method](url, data, options);
+        try {
+            let response;
+            if (['get', 'delete', 'head'].includes(method)) {
+                response = await window.axios[method](url, options);
+            } else {
+                response = await window.axios[method](url, data, options);
+            }
+
+            this.withToken();
+
+            return response;
+        } catch (e) {
+            throw e;
         }
-
-        this.withToken();
-
-        return response;
     }
 
     async get(url, options) {
-        return this.request('get', url, options)
+        return this.request('get', url, options);
     }
 
     async post(url, data, options) {
@@ -34,6 +38,10 @@ export default class ApiService {
 
     async put(url, data, options) {
         return this.request('put', url, options, data);
+    }
+
+    async head(url, options) {
+        return this.request('head', url, options);
     }
 
     async applyHeaders(options = {}) {

@@ -1,3 +1,7 @@
+html {
+    background-color: #393939;
+}
+
 html, body {
     @apply font-default;
     color: #fff;
@@ -62,4 +66,11 @@ button:focus, .scenario {
 .cloud-off:after {
     @extend .material-icons;
     content: 'cloud_off';
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

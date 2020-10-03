@@ -15,6 +15,9 @@ import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
 import {loadStripe} from '@stripe/stripe-js/pure';
 import EchoService from "./services/EchoService";
+import VueScrollTo from "vue-scrollto";
+import StorySyncer from "./services/StorySyncer";
+import OfflineChecker from "./services/OfflineChecker";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -28,6 +31,7 @@ window.axios = require('axios').default.create({
 Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
+Vue.use(VueScrollTo);
 
 // Vue components
 const components = require.context('./components', true, /\.vue$/i);
@@ -84,10 +88,13 @@ window.app = new Vue({
             storyRepository: new StoryRepository,
             echo: new EchoService,
             scenarioValidator: new ScenarioValidator,
+            storySyncer: new StorySyncer,
+            offlineChecker: new OfflineChecker(this.$bus)
         }
     },
     async mounted() {
         this.checkOrientation();
+        this.offlineChecker.handle();
         this.webpSupported = this.isWebpSupported();
         this.hasMouse = this.checkHasMouse();
         this.shouldTransferVersion1Progress();
@@ -96,7 +103,7 @@ window.app = new Vue({
         await this.$nextTick();
         await this.campaignsChanged();
 
-        (new ShareState).load();
+        (new ShareState).loadOldLink();
 
         document.getElementById('bg').style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
 
@@ -106,6 +113,8 @@ window.app = new Vue({
         Vue.prototype.$stripe = await loadStripe(process.env.MIX_STRIPE_KEY);
 
         this.$bus.$emit('open-donations');
+
+        this.listenToCrtlS();
     },
     methods: {
         async campaignsChanged(shouldSync = true) {
@@ -134,8 +143,8 @@ window.app = new Vue({
 
             return true;
         },
-        switchLocal() {
-            this.campaignId = 'local';
+        switchLocal(campaignId = 'local') {
+            this.campaignId = campaignId;
             store.set('campaignId', this.campaignId);
         },
         async switchCampaign(campaignId, shouldFetch = false) {
@@ -169,7 +178,8 @@ window.app = new Vue({
             try {
                 let promises = [
                     this.storyRepository.sharedStories()
-                ]
+                ];
+
                 if (Helpers.loggedIn()) {
                     promises.push(this.userRepository.find());
                     promises.push(this.storyRepository.stories());
@@ -178,7 +188,6 @@ window.app = new Vue({
                 await Promise.all(promises);
             } catch (e) {
                 // offline
-                // throw e;
             }
         },
         isWebpSupported() {
@@ -237,6 +246,15 @@ window.app = new Vue({
             Object.keys(local).forEach(key => {
                 store.remove(key);
             });
+        },
+
+        listenToCrtlS() {
+            document.addEventListener('keydown', (e) => {
+                if ((Helpers.isMac() ? e.metaKey : e.ctrlKey) && (e.code === 'KeyS')) {
+                    e.preventDefault();
+                    this.storySyncer.store(true);
+                }
+            }, false);
         }
     }
 });

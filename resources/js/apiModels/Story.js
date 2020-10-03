@@ -16,6 +16,7 @@ class Story extends Model {
         this.has_expired;
         this.is_shared;
         this.is_new;
+        this.updated_at;
         this.token;
         this.campaignId;
 
@@ -25,6 +26,7 @@ class Story extends Model {
 
     cast() {
         this.expires_at = moment(this.expires_at);
+        this.updated_at = moment(this.updated_at);
         this.campaignId = '_' + this.id;
     }
 

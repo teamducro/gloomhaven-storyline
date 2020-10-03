@@ -1837,7 +1837,7 @@
                 2
             ],
             "rewards": [
-                "Open envelope 4.svg",
+                "Open envelope 7.svg",
                 "+2 reputation"
             ]
         },
@@ -2223,7 +2223,9 @@
                 "Q-510-Seeker of Xorn"
             ],
             "rewards": [
-                "Immediately retire the Seeker of Xorn"
+                "Immediately retire the Seeker of Xorn",
+                "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
+                "Open envelope 16.svg"
             ]
         },
         {
@@ -2280,7 +2282,7 @@
             ],
             "rewards": [
                 "“Take Back the Trees” quest complete",
-                "Open envelope 4.svg",
+                "Open envelope 7.svg",
                 "10 gold each",
                 "+2 reputation"
             ]
@@ -2377,7 +2379,8 @@
                 "y": 13.5
             },
             "pages": [
-                77
+                77,
+                78
             ],
             "requirements": "“Finding the Cure” personal quest",
             "chapter_id": 11,
@@ -2448,7 +2451,7 @@
             ],
             "rewards": [
                 "“The Fall of Man” quest complete",
-                "Open envelope 8.svg",
+                "Open envelope 12.svg",
                 "10 experience each"
             ]
         },

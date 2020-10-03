@@ -1,6 +1,6 @@
 <template>
     <div class="pt-12 pb-4 px-4">
-        <div id="info" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 w-full" style="max-width: 560px;">
+        <div id="info" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-screen-sm">
             <h1 class="mb-4 text-xl">{{ $t('about us.title') }}</h1>
 
             <p>{{ $t('about us.text') }}</p>
@@ -9,6 +9,7 @@
             </div>
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Support') }}</h2>
+            <p>Would you like to contribute by translating to your native language?</p>
             <p>For help or feedback, <a :href="mailto" @click="setMailto" @touchstart="setMailto" class="link">
                 please email me</a>.
             </p>
@@ -77,38 +78,38 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                mailto: ''
+export default {
+    data() {
+        return {
+            mailto: ''
+        }
+    },
+    mounted() {
+    },
+    methods: {
+        setMailto() {
+            if (!this.mailto) {
+                this.mailto = 'mailto:' + this.generateEmail();
             }
         },
-        mounted() {
-        },
-        methods: {
-            setMailto() {
-                if (!this.mailto) {
-                    this.mailto = 'mailto:' + this.generateEmail();
-                }
-            },
-            generateEmail() {
-                const coded = "Gt33Z9T@efZZpDh6vF-GTZ9rfYFv.dZp";
-                const key = "bHMO7kgGvwAKXFPuxTWd1hfSrZBYmj3UEqNRIsez650nL28tQc4alDyo9iCVpJ";
-                const shift = coded.length;
-                let link = "";
+        generateEmail() {
+            const coded = "Gt33Z9T@efZZpDh6vF-GTZ9rfYFv.dZp";
+            const key = "bHMO7kgGvwAKXFPuxTWd1hfSrZBYmj3UEqNRIsez650nL28tQc4alDyo9iCVpJ";
+            const shift = coded.length;
+            let link = "";
 
-                for (let i = 0; i < coded.length; i++) {
-                    if (key.indexOf(coded.charAt(i)) === -1) {
-                        let ltr = coded.charAt(i);
-                        link += (ltr);
-                    } else {
-                        let ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length;
-                        link += (key.charAt(ltr));
-                    }
+            for (let i = 0; i < coded.length; i++) {
+                if (key.indexOf(coded.charAt(i)) === -1) {
+                    let ltr = coded.charAt(i);
+                    link += (ltr);
+                } else {
+                    let ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length;
+                    link += (key.charAt(ltr));
                 }
-
-                return link;
             }
+
+            return link;
         }
     }
+}
 </script>

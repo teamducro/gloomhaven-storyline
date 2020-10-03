@@ -17,7 +17,7 @@
             <share-icons :url="url" :black="true"/>
         </div>
 
-        <template v-if="!loggedIn && !paymentSuccess">
+        <template v-if="!loggedIn && !paymentSuccess && !initCode">
             <div class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
                 <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
                     <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
@@ -75,7 +75,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="py-8 px-6 text-center bg-gray-200 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+                <div
+                    class="py-8 px-6 text-center bg-gray-200 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
                     <div class="font-title mt-4 flex items-center justify-center text-5xl leading-none text-gray-900">
                       <span>
                         €4.99
@@ -103,7 +104,7 @@
             </div>
         </template>
 
-        <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
+        <div id="campaigns" class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left">
                 Campaigns
             </h1>
@@ -142,7 +143,7 @@
                 <li class="mt-3">Click on <span class="link" @click="shareCurrentStory">Share</span>
                     to give access to your party members
                 </li>
-                <li>All changes made by any party member will be synchronised! 🎉</li>
+                <li>All changes made by any party member will be synchronized! 🎉</li>
             </ul>
         </div>
 
@@ -161,45 +162,45 @@
 </template>
 
 <script>
-    import Helpers from "../services/Helpers";
-    import StoryRepository from "../repositories/StoryRepository";
+import Helpers from "../services/Helpers";
+import StoryRepository from "../repositories/StoryRepository";
 
-    const queryString = require('query-string');
+const queryString = require('query-string');
 
-    export default {
-        data() {
-            return {
-                loggedIn: Helpers.loggedIn(),
-                paymentSuccess: false,
-                initCode: '',
-                url: process.env.MIX_APP_URL,
-                storyRepository: new StoryRepository
+export default {
+    data() {
+        return {
+            loggedIn: Helpers.loggedIn(),
+            paymentSuccess: false,
+            initCode: '',
+            url: process.env.MIX_APP_URL,
+            storyRepository: new StoryRepository
+        }
+    },
+    beforeMount() {
+        this.paymentSuccess = this.isPaymentSuccess();
+        this.applyShareCode();
+    },
+    mounted() {
+        Helpers.removeQueryString();
+    },
+    destroyed() {
+
+    },
+    methods: {
+        isPaymentSuccess() {
+            return location.search.includes('payment_success');
+        },
+        applyShareCode() {
+            let parsed = queryString.parse(location.search);
+
+            if (typeof parsed.code !== 'undefined') {
+                this.initCode = parsed.code
             }
         },
-        beforeMount() {
-            this.paymentSuccess = this.isPaymentSuccess();
-            this.applyShareCode();
-        },
-        mounted() {
-            Helpers.removeQueryString();
-        },
-        destroyed() {
-
-        },
-        methods: {
-            isPaymentSuccess() {
-                return location.search.includes('payment_success');
-            },
-            applyShareCode() {
-                let parsed = queryString.parse(location.search);
-
-                if (typeof parsed.code !== 'undefined') {
-                    this.initCode = parsed.code
-                }
-            },
-            shareCurrentStory() {
-                this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
-            }
+        shareCurrentStory() {
+            this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
         }
     }
+}
 </script>
