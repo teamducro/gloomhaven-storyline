@@ -5,7 +5,7 @@ describe('Storyline', () => {
     it('It loads the storyline', () => {
         cy.visit('/');
 
-        cy.get('#chapter1').should(($chapter) => {
+        cy.get('.chapter1').should(($chapter) => {
             expect($chapter).css('display', 'inline');
         });
     });
@@ -62,13 +62,13 @@ describe('Storyline', () => {
             expect(alerted.includes('deprecated')).to.be.true;
         });
 
-        cy.get('#chapter2').should(($chapter) => {
+        cy.get('.chapter2').should(($chapter) => {
             expect($chapter).css('display', 'none');
         });
 
         utilities.completeScenario(3);
 
-        cy.get('#chapter2').should(($chapter) => {
+        cy.get('.chapter2').should(($chapter) => {
             expect($chapter).css('display', 'inline');
         });
     });
