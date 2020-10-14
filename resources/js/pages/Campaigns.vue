@@ -78,12 +78,8 @@
                 <div
                     class="py-8 px-6 text-center bg-gray-200 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
                     <div class="font-title mt-4 flex items-center justify-center text-5xl leading-none text-gray-900">
-                      <span>
-                        €4.99
-                      </span>
-                        <span class="ml-3 text-xl leading-7 font-medium text-gray-500">
-                        EUR
-                      </span>
+                        <span>€4.99</span>
+                        <span class="ml-3 text-xl leading-7 font-medium text-gray-500">/ year</span>
                     </div>
                     <div class="mt-6">
                         <purchase>
