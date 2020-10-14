@@ -1,13 +1,14 @@
 <template>
-    <div class="campaign-switch mdc-select relative">
-        <div class="mdc-select__anchor">
+    <div class="campaign-switch mdc-select w-full">
+        <span class="mdc-list-item absolute i-text-xs i--mt-1 i-text-white2-60">{{ $t('Selected Campaign') }}</span>
+        <div class="mdc-select__anchor w-full">
             <i class="mdc-select__dropdown-icon"></i>
             <div class="mdc-select__selected-text">
                 {{ current === 'local' ? $t('local') : current }}
             </div>
         </div>
 
-        <div class="mdc-select__menu mdc-menu mdc-menu-surface overflow-visible">
+        <div class="mdc-select__menu mdc-menu mdc-menu-surface overflow-visible" style="min-width: 240px">
             <ul class="mdc-list">
                 <li class="mdc-list-item cursor-pointer whitespace-no-wrap"
                     :aria-selected="current === 'local'"
@@ -30,7 +31,7 @@
 
 <script>
     import {MDCSelect} from "@material/select/component";
-    import StoryRepository from "../../../repositories/StoryRepository";
+    import StoryRepository from "../../repositories/StoryRepository";
 
     export default {
         data() {
@@ -40,9 +41,6 @@
                 current: 'local',
                 storyRepository: new StoryRepository
             }
-        },
-        beforeMount() {
-            this.applyData();
         },
         mounted() {
             this.select = new MDCSelect($('.campaign-switch')[0]);
@@ -78,12 +76,6 @@
             &, &:before, &:after {
                 background-color: transparent !important;
             }
-        }
-
-        .mdc-select__selected-text {
-            line-height: 1rem;
-            min-width: 0;
-            border-bottom: 0;
         }
     }
 </style>

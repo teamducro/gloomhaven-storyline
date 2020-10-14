@@ -14,7 +14,9 @@
                         </button>
                         </span>
                     </h2>
-                    <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">{{ scenario.regions.pluck('name').implode(', ') }}</span>
+                    <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">{{
+                            scenario.regions.pluck('name').implode(', ')
+                        }}</span>
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">
@@ -84,11 +86,11 @@
                             <div v-if="scenario.treasures.isNotEmpty()"
                                  v-for="(treasure, id) in scenario.treasures.items" :key="id"
                                  class="flex items-center -ml-2">
-                                <checkbox
-                                        :id="id"
-                                        :label="'#' + id"
-                                        :checked="scenario.isTreasureUnlocked(id)"
-                                        @changed="treasureChanged"></checkbox>
+                                <checkbox-with-label
+                                    :id="id"
+                                    :label="'#' + id"
+                                    :checked="scenario.isTreasureUnlocked(id)"
+                                    @change="treasureChanged"></checkbox-with-label>
                                 <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">{{ treasure }}</span>
                             </div>
                         </div>
@@ -204,13 +206,22 @@
                             </div>
                         </div>
                     </template>
+                    <blockquote v-if="(scenario.id === 14 || scenario.id === 43) && scenario.isComplete()"
+                                class="relative py-2 px-4 text-base italic border-l-4 quote">
+                        <a class="absolute w-full h-full top-0 left-0" target="_blank"
+                           href="https://boardgamegeek.com/thread/1722032/scenario-14-conclusion-spoilers"></a>
+                        <p class="mb-4 max-w-sm">
+                            The location numbers in the story text are just reminders. They themselves don't unlock
+                            anything.</p>
+                        <p class="flex items-center"><span class="material-icons">remove</span> Isaac Childres</p>
+                    </blockquote>
                 </div>
                 <footer class="mdc-dialog__actions flex justify-between px-5">
                     <div class="space-x-2">
-                        <ScenarioNumber :scenario="scenario" v-for="scenario in prevScenarios" :key="scenario.id"/>
+                        <scenario-number :scenario="scenario" v-for="scenario in prevScenarios" :key="scenario.id"/>
                     </div>
                     <div class="space-x-2">
-                        <ScenarioNumber :scenario="scenario" v-for="scenario in nextScenarios" :key="scenario.id"/>
+                        <scenario-number :scenario="scenario" v-for="scenario in nextScenarios" :key="scenario.id"/>
                     </div>
                 </footer>
             </template>
@@ -231,194 +242,189 @@
 </template>
 
 <script>
-    import ScenarioRepository from "../../repositories/ScenarioRepository";
-    import AchievementRepository from "../../repositories/AchievementRepository";
-    import ChoiceService from "../../services/ChoiceService";
-    import {MDCTextField} from "@material/textfield/component";
-    import {ScenarioState} from "../../models/ScenarioState";
-    import PreloadImage from "../../services/PreloadImage";
-    import ScenarioNumber from "../elements/ScenarioNumber";
-    import Requirement from "../presenters/scenario/Requirement";
-    import Rewards from "../presenters/scenario/Rewards";
-    import DecisionPrompt from "./DecisionPrompt";
+import ScenarioRepository from "../../repositories/ScenarioRepository";
+import AchievementRepository from "../../repositories/AchievementRepository";
+import ChoiceService from "../../services/ChoiceService";
+import {MDCTextField} from "@material/textfield/component";
+import {ScenarioState} from "../../models/ScenarioState";
+import PreloadImage from "../../services/PreloadImage";
 
-    export default {
-        components: {DecisionPrompt, Requirement, Rewards, ScenarioNumber},
-        data() {
-            return {
-                scenario: null,
-                notes: null,
-                stateKey: 1,
-                questExpand: [],
-                treasuresVisible: false,
-                rollback: null,
-                scenarioRepository: new ScenarioRepository(),
-                achievementRepository: new AchievementRepository(),
-                choiceService: new ChoiceService(),
-                preloadImage: new PreloadImage(),
+export default {
+    data() {
+        return {
+            scenario: null,
+            notes: null,
+            stateKey: 1,
+            questExpand: [],
+            treasuresVisible: false,
+            rollback: null,
+            scenarioRepository: new ScenarioRepository(),
+            achievementRepository: new AchievementRepository(),
+            choiceService: new ChoiceService(),
+            preloadImage: new PreloadImage(),
+        }
+    },
+    mounted() {
+        this.$bus.$on('open-scenario', (data) => {
+            this.open(data.id);
+        });
+        this.$bus.$on('close-scenario', () => {
+            this.close();
+        });
+    },
+    computed: {
+        prevScenarios() {
+            return this.scenarioRepository.findMany(this.scenario.linked_from)
+                .where('state', ScenarioState.complete);
+        },
+        nextScenarios() {
+            if (this.scenario.isComplete()) {
+                return this.scenarioRepository.findMany(this.scenario.links_to)
+                    .where('state', '!=', ScenarioState.hidden);
             }
+
+            return collect();
         },
-        mounted() {
-            this.$bus.$on('open-scenario', (data) => {
-                this.open(data.id);
-            });
-            this.$bus.$on('close-scenario', () => {
-                this.close();
-            });
-        },
-        computed: {
-            prevScenarios() {
-                return this.scenarioRepository.findMany(this.scenario.linked_from)
-                    .where('state', ScenarioState.complete);
-            },
-            nextScenarios() {
-                if (this.scenario.isComplete()) {
-                    return this.scenarioRepository.findMany(this.scenario.links_to)
-                        .where('state', '!=', ScenarioState.hidden);
-                }
+        achievements() {
+            if (this.scenario.isComplete()) {
+                let awarded = this.achievementRepository.findMany(this.scenario.achievements_awarded)
+                    .where('_awarded', '=', true);
+                let lost = this.achievementRepository.findMany(this.scenario.achievements_lost)
+                    .where('_awarded', '=', false);
 
-                return collect();
-            },
-            achievements() {
-                if (this.scenario.isComplete()) {
-                    let awarded = this.achievementRepository.findMany(this.scenario.achievements_awarded)
-                        .where('_awarded', '=', true);
-                    let lost = this.achievementRepository.findMany(this.scenario.achievements_lost)
-                        .where('_awarded', '=', false);
-
-                    return [[
-                        lost.where('type', '=', 'Party'),
-                        awarded.where('type', '=', 'Party')
-                    ], [
-                        lost.where('type', '=', 'Global'),
-                        awarded.where('type', '=', 'Global')
-                    ]];
-                }
-
-                return null;
-            },
-            quests() {
-                return this.scenario.quests.filter(quest => {
-                    return quest.stage !== undefined;
-                })
-
-            },
-            questCount() {
-                return this.quests.items.length || 0;
-            },
-            prompt() {
-                return this.processPrompt()
+                return [[
+                    lost.where('type', '=', 'Party'),
+                    awarded.where('type', '=', 'Party')
+                ], [
+                    lost.where('type', '=', 'Global'),
+                    awarded.where('type', '=', 'Global')
+                ]];
             }
-        },
-        methods: {
-            stateChanged(state) {
-                if (state === ScenarioState.complete && this.prompt) {
-                    let previousState = this.scenario.state;
-                    this.rollback = () => {
-                        this.scenarioRepository.changeState(this.scenario, previousState);
-                        this.$bus.$emit('scenarios-updated');
-                    }
-                }
 
-                if (state === ScenarioState.complete && this.scenario.choices) {
-                    this.$refs['choose'].open();
-                } else {
-                    this.scenarioRepository.changeState(this.scenario, state);
+            return null;
+        },
+        quests() {
+            return this.scenario.quests.filter(quest => {
+                return quest.stage !== undefined;
+            })
+
+        },
+        questCount() {
+            return this.quests.items.length || 0;
+        },
+        prompt() {
+            return this.processPrompt()
+        }
+    },
+    methods: {
+        stateChanged(state) {
+            if (state === ScenarioState.complete && this.prompt) {
+                let previousState = this.scenario.state;
+                this.rollback = () => {
+                    this.scenarioRepository.changeState(this.scenario, previousState);
                     this.$bus.$emit('scenarios-updated');
                 }
-            },
-            noteChanged() {
-                this.scenario.store();
-            },
-            treasureChanged(id, checked) {
-                if (checked && this.prompt) {
-                    this.rollback = () => {
-                        this.scenario.unlockTreasure(id, false);
-                    }
-                }
+            }
 
-                this.scenario.unlockTreasure(id, checked);
-
-                if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
-                    this.$bus.$emit('scenarios-updated');
-                }
-            },
-            scenarioChosen(choice) {
-                this.scenarioRepository.choose(this.scenario, choice);
-
+            if (state === ScenarioState.complete && this.scenario.choices) {
+                this.$refs['choose'].open();
+            } else {
+                this.scenarioRepository.changeState(this.scenario, state);
                 this.$bus.$emit('scenarios-updated');
-            },
-            chooseModalClosing(action) {
-                if (action !== 'chosen') {
-                    this.rerenderStateSelection();
-                }
-            },
-            decisionPromptClosing(action) {
-                if (action !== 'chosen' && typeof this.rollback === 'function') {
-                    this.rollback();
-                    this.chooseModalClosing(action);
-                }
-                this.rollback = null;
-            },
-            toggleQuest(index) {
-                this.$set(this.questExpand, index, !this.questExpand[index]);
-            },
-            openPages() {
-                this.$refs['pages'].open();
-            },
-            rerenderStateSelection() {
-                this.stateKey++;
-            },
-            requiredBy(achievement) {
-                return this.scenarioRepository.requiredBy(achievement);
-            },
-            open(id) {
-                this.scenario = this.scenarioRepository.find(id);
-                this.treasuresVisible = false;
-                this.rollback = null;
-
-                let questCount = this.questCount + this.scenario.cards.count();
-                this.questExpand = new Array(questCount);
-                if (this.scenario.hasCard()) {
-                    this.scenario.cards.each((card) => {
-                        card.images.forEach((image) => {
-                            this.preloadImage.handle(image);
-                        });
-                    });
-                }
-
-                this.rerenderStateSelection();
-
-                this.$nextTick(() => {
-                    this.$refs['modal'].open();
-                    this.$nextTick(() => {
-                        this.$refs['pages'].preload();
-                        const notes = this.$refs['notes'];
-                        if (notes) {
-                            new MDCTextField(notes);
-                        }
-                    });
-                });
-            },
-            close() {
-                this.$refs['modal'].close();
-            },
-            openAchievement(id) {
-                this.close();
-                this.$bus.$emit('open-achievement', {
-                    id: id
-                });
-            },
-            processPrompt() {
-                return this.choiceService.getPromptConfig(this.scenario);
             }
+        },
+        noteChanged() {
+            this.scenario.store();
+        },
+        treasureChanged(id, checked) {
+            if (checked && this.prompt) {
+                this.rollback = () => {
+                    this.scenario.unlockTreasure(id, false);
+                }
+            }
+
+            this.scenario.unlockTreasure(id, checked);
+
+            if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
+                this.$bus.$emit('scenarios-updated');
+            }
+        },
+        scenarioChosen(choice) {
+            this.scenarioRepository.choose(this.scenario, choice);
+
+            this.$bus.$emit('scenarios-updated');
+        },
+        chooseModalClosing(action) {
+            if (action !== 'chosen') {
+                this.rerenderStateSelection();
+            }
+        },
+        decisionPromptClosing(action) {
+            if (action !== 'chosen' && typeof this.rollback === 'function') {
+                this.rollback();
+                this.chooseModalClosing(action);
+            }
+            this.rollback = null;
+        },
+        toggleQuest(index) {
+            this.$set(this.questExpand, index, !this.questExpand[index]);
+        },
+        openPages() {
+            this.$refs['pages'].open();
+        },
+        rerenderStateSelection() {
+            this.stateKey++;
+        },
+        requiredBy(achievement) {
+            return this.scenarioRepository.requiredBy(achievement);
+        },
+        open(id) {
+            this.scenario = this.scenarioRepository.find(id);
+            this.treasuresVisible = false;
+            this.rollback = null;
+
+            let questCount = this.questCount + this.scenario.cards.count();
+            this.questExpand = new Array(questCount);
+            if (this.scenario.hasCard()) {
+                this.scenario.cards.each((card) => {
+                    card.images.forEach((image) => {
+                        this.preloadImage.handle(image);
+                    });
+                });
+            }
+
+            this.rerenderStateSelection();
+
+            this.$nextTick(() => {
+                this.$refs['modal'].open();
+                this.$nextTick(() => {
+                    this.$refs['pages'].preload();
+                    const notes = this.$refs['notes'];
+                    if (notes) {
+                        new MDCTextField(notes);
+                    }
+                });
+            });
+        },
+        close() {
+            this.$refs['modal'].close();
+        },
+        openAchievement(id) {
+            this.close();
+            this.$bus.$emit('open-achievement', {
+                id: id
+            });
+        },
+        processPrompt() {
+            return this.choiceService.getPromptConfig(this.scenario);
         }
     }
+}
 </script>
 
 <style lang="scss">
-    .mdc-notched-outline__notch {
-        border-right: none;
-        border-left: none;
-    }
+.mdc-notched-outline__notch {
+    border-right: none;
+    border-left: none;
+}
 </style>

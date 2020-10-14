@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="add-shared-campaign">
         <h2 class="text-xl">{{ $t('Received a campaign code?') }}</h2>
 
         <p class="mt-2">
@@ -30,70 +30,82 @@
 </template>
 
 <script>
-    import {MDCTextField} from "@material/textfield/component";
-    import AuthRepository from "../../../apiRepositories/AuthRepository";
-    import StoryRepository from "../../../apiRepositories/StoryRepository";
+import {MDCTextField} from "@material/textfield/component";
+import AuthRepository from "../../../apiRepositories/AuthRepository";
+import StoryRepository from "../../../apiRepositories/StoryRepository";
 
-    export default {
-        props: {
-            initCode: {
-                type: String,
-                default: ''
-            }
-        },
-        data() {
-            return {
-                code: null,
-                codeField: null,
-                errors: null,
-                sending: false,
-                success: false,
-                auth: new AuthRepository,
-                storyRepository: new StoryRepository
-            }
-        },
-        mounted() {
-            this.codeField = new MDCTextField(this.$refs['code']);
+export default {
+    props: {
+        initCode: {
+            type: String,
+            default: ''
+        }
+    },
+    data() {
+        return {
+            code: null,
+            codeField: null,
+            errors: null,
+            sending: false,
+            success: false,
+            auth: new AuthRepository,
+            storyRepository: new StoryRepository
+        }
+    },
+    mounted() {
+        this.codeField = new MDCTextField(this.$refs['code']);
 
-            if (this.initCode) {
-                this.code = this.initCode;
-                this.submitCampaignCode();
+        if (this.initCode) {
+            this.code = this.initCode;
+            this.submitCampaignCode();
+        }
+    },
+    destroyed() {
+        if (this.codeField) {
+            this.codeField.destroy();
+        }
+    },
+    methods: {
+        submitCampaignCode() {
+            if (this.sending) {
+                return;
             }
-        },
-        destroyed() {
-            if (this.codeField) {
-                this.codeField.destroy();
-            }
-        },
-        methods: {
-            submitCampaignCode() {
-                if (this.sending) {
-                    return;
+            this.sending = true;
+            this.errors = null;
+            let isShared = this.code === this.initCode;
+
+            this.auth.submitShareCode(this.code).then(response => {
+                this.sending = false;
+                this.code = null;
+                this.selectCampaign(response.data, isShared);
+            }).catch(e => {
+                this.sending = false;
+                this.errors = e.response.data;
+                this.codeField.focus();
+                if (isShared) {
+                    this.$scrollTo("#add-shared-campaign");
                 }
-                this.sending = true;
-                this.errors = null;
-                this.auth.submitShareCode(this.code).then(response => {
-                    this.sending = false;
-                    this.code = null;
-                    this.selectCampaign(response.data);
-                }).catch(e => {
-                    this.sending = false;
-                    this.errors = e.response.data;
-                });
-            },
-            async selectCampaign(data) {
-                const stories = await this.storyRepository.stories(data.access_token);
-                if (stories) {
-                    const story = stories.first();
-                    this.storyRepository.storeCampaignData(story);
-                    this.$bus.$emit('campaign-selected', stories.first().campaignId);
+            });
+        },
+        async selectCampaign(data, isShared = false) {
+            const stories = await this.storyRepository.stories(data.access_token);
+            if (stories) {
+                const story = stories.first();
+                this.storyRepository.storeCampaignData(story);
+                this.$bus.$emit('campaign-selected', stories.first().campaignId);
 
-                    this.success = true;
-                    setTimeout(() => {
-                        this.success = false;
-                    }, 5000);
+                this.success = true;
+                setTimeout(() => {
+                    this.success = false;
+                }, 5000);
+
+                if (isShared) {
+                    await this.$router.push('/story');
+                } else {
+                    this.$scrollTo('#campaigns');
                 }
             }
         }
     }
+}
 </script>

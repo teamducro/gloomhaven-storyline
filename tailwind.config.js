@@ -29,6 +29,12 @@ module.exports = {
                 'area-inset-bottom': 'env(safe-area-inset-bottom, 0)',
                 'area-inset-left': 'env(safe-area-inset-left, 0)'
             },
+            height: {
+                '1/2': '50%',
+            },
+            maxWidth: {
+                'party': '1041px'
+            },
             screens: {
                 xs: '400px',
                 lgh: {'raw': '(min-height: 600px)'}
@@ -59,8 +65,9 @@ module.exports = {
                 white2: {
                     25: 'rgba(255, 255, 255, .25)',
                     50: 'rgba(255, 255, 255, .50)',
+                    60: 'rgba(255, 255, 255, .60)',
                     75: 'rgba(255, 255, 255, .75)',
-                    87: 'rgba(255, 255, 255, .75)'
+                    87: 'rgba(255, 255, 255, .87)'
                 },
                 red: {
                     ...colors.red,
@@ -102,7 +109,7 @@ module.exports = {
         // float: ['important', 'responsive'],
         // clear: ['important', 'responsive'],
         // fontFamily: ['important', 'responsive'],
-        // fontSize: ['important', 'responsive'],
+        fontSize: ['important', 'responsive'],
         // fontSmoothing: ['important', 'responsive'],
         // fontStyle: ['important', 'responsive'],
         // fontWeight: ['important', 'responsive', 'hover', 'focus'],
@@ -133,7 +140,7 @@ module.exports = {
         // strokeWidth: ['important', 'responsive'],
         // tableLayout: ['important', 'responsive'],
         // textAlign: ['important', 'responsive'],
-        // textColor: ['important', 'responsive', 'hover', 'focus'],
+        textColor: ['important', 'responsive', 'hover', 'focus'],
         // textDecoration: ['important', 'responsive', 'hover', 'focus'],
         // textTransform: ['important', 'responsive'],
         // userSelect: ['important', 'responsive'],

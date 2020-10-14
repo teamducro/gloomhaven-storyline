@@ -5,12 +5,38 @@ import AchievementGroup from "../models/AchievementGroup";
 import Helpers from "./Helpers";
 import Reseter from "./Reseter";
 import ChoiceService from "./ChoiceService";
+import LZString from "lz-string";
+import store from "store/dist/store.modern";
 
 const queryString = require('query-string');
 
 export default class ShareState {
-    load() {
-        let result = this.decode();
+    constructor() {
+        this.version = 1;
+        this.compatibleIds = [
+            'local'
+        ];
+    }
+
+    loadNewLink(version, id, compressed) {
+        // version incompatible
+        if (this.version < version) {
+            return false;
+        }
+
+        // local storage id incompatible
+        if (this.compatibleIds.includes(id) === false) {
+            return false;
+        }
+
+        app.switchLocal(id);
+        store.set(id, this.decodeNewLink(compressed));
+
+        return true;
+    }
+
+    loadOldLink() {
+        let result = this.decodeOldLink();
 
         if (result.hasOwnProperty('states')) {
             this.reseter.reset();
@@ -51,49 +77,69 @@ export default class ShareState {
                 });
             }
 
+            alert('This shared link is in the old format, these are deprecated and may be removed in the future. Please share your campaign again to get the new link.');
+
             location.href = this.url() + '#/story';
         }
     }
 
-    link() {
-        return this.url() + '?' + this.encode();
+    link(id = 'local') {
+        return `${this.url()}#/shared/${this.version}/${id}/${this.encode()}`;
+    }
+
+    encodeMap() {
+        return {
+            '"state":': '±st',
+            '"sheet":': '±sh',
+            '"achievements":': '±as',
+            '"achievementgroup-': '±ag',
+            '"awarded":': '±aw',
+            '"characters":': '±cha',
+            '"choice":': '±ch',
+            '"count":': '±co',
+            '"itemDesigns":': '±id',
+            '"promptChoice":': '±pc',
+            '"prosperityIndex":': '±pi',
+            'false': '±0',
+            'true': '±1',
+            '"scenario-': '±s',
+            '"achievement-': '±a',
+            '"complete"': '±c',
+            '"incomplete"': '±i',
+            '"blocked"': '±b',
+            '"hidden"': '±h',
+            '"donations":': '±d',
+            '"reputation":': '±r',
+            '"notes":': '±n',
+            '"unlocks":': '±u',
+            '"treasures":': '±t',
+            '"lost":': '±l',
+        }
     }
 
     encode() {
-        let result = {};
+        let input = JSON.stringify(app.campaignData);
 
-        result.groups = this.achievementRepository.groups()
-            .filter((group) => group.achievements.length)
-            .pluck('achievements', 'id').map((achievements, id) => {
-                return id + '_' + achievements.join('_');
-            }).values().implode('-');
+        collect(this.encodeMap()).each((replace, search) => {
+            const regEx = new RegExp(search, 'g');
+            input = input.replace(regEx, replace);
+        });
+        const compressed = LZString.compressToEncodedURIComponent(input);
 
-        result.states = app.scenarios.where('state', '!=', ScenarioState.hidden)
-            .pluck('state', 'id').map((state, id) => {
-                return id + '_' + state.substr(0, 1);
-            }).values().implode('-');
-
-        result.choices = app.scenarios.where('state', ScenarioState.complete)
-            .where('hasChoices', true).pluck('choice', 'id').map((choice, id) => {
-                return id + '_' + choice
-            }).values().implode('-');
-
-        result.promptChoices = app.scenarios.where('state', ScenarioState.complete)
-            .where('hasPrompt', true).pluck('promptChoice', 'id').map((choice, id) => {
-                return id + '_' + choice
-            }).values().implode('-');
-
-        result.treasures = app.scenarios.pluck('unlockedTreasures', 'id').map((treasures, id) => {
-            if (treasures.length) {
-                return id + '_' + treasures.join('_');
-            }
-            return false;
-        }).filter().values().implode('-');
-
-        return queryString.stringify(_.pickBy(result, (value) => value));
+        return compressed;
     }
 
-    decode() {
+    decodeNewLink(compressed) {
+        let decompressed = LZString.decompressFromEncodedURIComponent(compressed)
+        collect(this.encodeMap()).each((search, replace) => {
+            const regEx = new RegExp(search, 'g');
+            decompressed = decompressed.replace(regEx, replace);
+        });
+
+        return JSON.parse(decompressed);
+    }
+
+    decodeOldLink() {
         let parsed = queryString.parse(location.search);
         let result = {};
 

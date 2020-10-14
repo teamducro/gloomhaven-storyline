@@ -11,6 +11,9 @@ export default {
                 return this[modelKey];
             })
             .sortKeys()
+            .filter(value => {
+                return value !== null && value !== '' && (!Array.isArray(value) || value.length)
+            })
             .all();
 
         app.campaignData[this.key()] = valuesToStore;

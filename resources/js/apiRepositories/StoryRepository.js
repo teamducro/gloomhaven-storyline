@@ -1,29 +1,44 @@
 import store from "store/dist/store.modern";
 import ApiRepository from "./ApiRepository";
 import Story from "../apiModels/Story";
+import moment from "moment";
 
 export default class StoryRepository extends ApiRepository {
     async stories(token = null) {
         const response = await this.api.withToken(token).get('stories');
-        const stories = response.data.data;
-        this.storeStories(stories, token);
+        const storyResponses = collect(response.data.data);
+        let promises = [];
 
-        collect(stories)
-            .map(story => new Story(story))
-            .each(story => {
-                this.storeCampaignData(story);
-            });
+        storyResponses.each(async (response) => {
+            promises.push(this.updateStoryIfNeeded(response, token));
+        });
+
+        await Promise.all(promises);
 
         return this.getStories();
     }
 
     async update(story) {
         const data = story.postData();
-        const response = await this.api.withToken(story.token).put('stories/' + story.id, data);
-        const storyResponse = response.data;
-        this.storeStory(storyResponse, story.token);
 
-        return new Story(storyResponse);
+        window.app.$bus.$emit('toast', 'Saving progress...');
+
+        return await this.api.withToken(story.token)
+            .put('stories/' + story.id, data)
+            .then(response => {
+                window.app.$bus.$emit('toast', 'Progress saved!');
+
+                let storyResponse = response.data;
+                if (story.token) {
+                    storyResponse.token = story.token;
+                }
+                this.storeStory(storyResponse);
+
+                return new Story(storyResponse);
+            })
+            .catch(reason => {
+                window.app.$bus.$emit('toast', 'Failed to save progress, try again later.', false);
+            });
     }
 
     async sharedStories() {
@@ -39,12 +54,22 @@ export default class StoryRepository extends ApiRepository {
 
     async find(story) {
         const response = await this.api.withToken(story.token).get('stories/' + story.id);
-        const storyResponse = response.data;
-        this.storeStory(storyResponse, story.token);
-        const s = new Story(storyResponse);
-        this.storeCampaignData(s);
+        return await this.updateStoryIfNeeded(response.data, story.token);
+    }
 
-        return s;
+    // If local campaign is newer then remote campaign, update it
+    async updateStoryIfNeeded(response, token = null) {
+        let remoteStory = new Story(response);
+        const localStory = this.getStory(remoteStory.id);
+
+        if (localStory && localStory.updated_at > remoteStory.updated_at) {
+            remoteStory = await this.update(localStory);
+        } else {
+            this.storeStory(response, token);
+        }
+        this.storeCampaignData(remoteStory);
+
+        return remoteStory;
     }
 
     replaceStory(story) {
@@ -74,8 +99,22 @@ export default class StoryRepository extends ApiRepository {
         store.set('stories', storiesToStore);
     }
 
+    remove(story) {
+        const otherStories = collect(store.get('stories', []))
+            .filter(s => s.id !== story.id)
+            .toArray();
+        store.set('stories', otherStories);
+        store.remove(story.campaignId);
+    }
+
     storeCampaignData(story) {
         store.set(story.campaignId, story.data);
+    }
+
+    storeUpdatedAt(storyId, updatedAt) {
+        let story = this.getStory(storyId);
+        story.updated_at = updatedAt || moment();
+        this.storeStory(story);
     }
 
     getStories() {

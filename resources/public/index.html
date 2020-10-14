@@ -7,14 +7,15 @@
 
     <meta name="description"
           content="This Gloomhaven Storyline Tracker enables you to register what scenarios are finished and read the story for each new unlocked scenario!">
-    <meta name="keywords" content="Gloomhaven,storyline tracker,storyline,road event,city event,treasures,scenario">
+    <meta name="keywords" content="Gloomhaven,storyline tracker,storyline,party sheet,road event,city event,treasures,scenario">
     <meta name="author" content="Daniël Ducro">
 
     <title>Gloomhaven storyline</title>
 
-    <link rel="preload" href="/fonts/ArialMT.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Nyala-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/PirataOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ArialMT.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/Nyala-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/PirataOne-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2" as="font" crossorigin>
     <link rel="preload" href="/img/gloomhaven-logo.webp" as="image">
 
     <link href="/css/theme.css" rel="stylesheet">
@@ -28,20 +29,11 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162268349-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'UA-162268349-1', {'anonymize_ip': true});
-    </script>
+    <!-- Google Analytics -->
+    <script src="/js/gtm.js" rel="script"></script>
 </head>
 <body>
+<div id="bg"></div>
 <div id="app" v-cloak>
     <div class="relative logo">
         <webp class="" src="/img/gloomhaven-logo.png" alt="Gloomhaven"
