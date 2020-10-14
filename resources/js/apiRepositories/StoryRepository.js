@@ -10,7 +10,7 @@ export default class StoryRepository extends ApiRepository {
         let promises = [];
 
         storyResponses.each(async (response) => {
-            promises.push(this.updateStoryIfNeeded(response));
+            promises.push(this.updateStoryIfNeeded(response, token));
         });
 
         await Promise.all(promises);
@@ -54,18 +54,18 @@ export default class StoryRepository extends ApiRepository {
 
     async find(story) {
         const response = await this.api.withToken(story.token).get('stories/' + story.id);
-        return await this.updateStoryIfNeeded(response.data);
+        return await this.updateStoryIfNeeded(response.data, story.token);
     }
 
     // If local campaign is newer then remote campaign, update it
-    async updateStoryIfNeeded(response) {
+    async updateStoryIfNeeded(response, token = null) {
         let remoteStory = new Story(response);
         const localStory = this.getStory(remoteStory.id);
 
         if (localStory && localStory.updated_at > remoteStory.updated_at) {
             remoteStory = await this.update(localStory);
         } else {
-            this.storeStory(response, remoteStory.token);
+            this.storeStory(response, token);
         }
         this.storeCampaignData(remoteStory);
 

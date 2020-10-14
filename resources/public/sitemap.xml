@@ -33,4 +33,9 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://gloomhaven-storyline.com/#/party</loc>
+        <lastmod>release-date</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
 </urlset>
