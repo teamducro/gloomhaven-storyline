@@ -193,16 +193,20 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center mb-6">
-                            <button class="mdc-button mdc-button--raised" @click="openPages()">
-                                <i class="material-icons mdc-button__icon">menu_book</i>
-                                <span class="mdc-button__label">{{ $t('Pages') }}</span>
-                            </button>
-                            <div class="ml-auto w-20"
-                                 :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
-                                <webp :src="scenario.image()"
-                                      :animate="true"
-                                      :alt="scenario.name"/>
+                        <div class="relative h-8 mb-6">
+                            <div class="flex absolute left-0 top-0 origin-left transform scale-75"
+                                 style="width: 300px">
+                                <button class="mdc-button mdc-button--raised mr-2"
+                                        @click="openPages()">
+                                    <i class="material-icons mdc-button__icon">menu_book</i>
+                                    <span class="mdc-button__label">{{ $t('Pages') }}</span>
+                                </button>
+                                <a :href="virtualBoardUrl" target="_blank">
+                                    <button class="mdc-button mdc-button--raised">
+                                        <i class="material-icons mdc-button__icon transform rotate-180">style</i>
+                                        <span class="mdc-button__label">{{ $t('Virtual Board') }}</span>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </template>
@@ -219,6 +223,12 @@
                 <footer class="mdc-dialog__actions flex justify-between px-5">
                     <div class="space-x-2">
                         <scenario-number :scenario="scenario" v-for="scenario in prevScenarios" :key="scenario.id"/>
+                    </div>
+                    <div class="mx-auto w-20"
+                         :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
+                        <webp :src="scenario.image()"
+                              :animate="true"
+                              :alt="scenario.name"/>
                     </div>
                     <div class="space-x-2">
                         <scenario-number :scenario="scenario" v-for="scenario in nextScenarios" :key="scenario.id"/>
@@ -248,6 +258,10 @@ import ChoiceService from "../../services/ChoiceService";
 import {MDCTextField} from "@material/textfield/component";
 import {ScenarioState} from "../../models/ScenarioState";
 import PreloadImage from "../../services/PreloadImage";
+import StoryRepository from "../../repositories/StoryRepository";
+
+const md5 = require('js-md5');
+const queryString = require('query-string');
 
 export default {
     data() {
@@ -258,10 +272,12 @@ export default {
             questExpand: [],
             treasuresVisible: false,
             rollback: null,
+            virtualBoardUrl: null,
             scenarioRepository: new ScenarioRepository(),
             achievementRepository: new AchievementRepository(),
             choiceService: new ChoiceService(),
             preloadImage: new PreloadImage(),
+            storyRepository: new StoryRepository(),
         }
     },
     mounted() {
@@ -378,8 +394,9 @@ export default {
         requiredBy(achievement) {
             return this.scenarioRepository.requiredBy(achievement);
         },
-        open(id) {
+        async open(id) {
             this.scenario = this.scenarioRepository.find(id);
+            this.setVirtualBoardUrl();
             this.treasuresVisible = false;
             this.rollback = null;
 
@@ -395,16 +412,15 @@ export default {
 
             this.rerenderStateSelection();
 
-            this.$nextTick(() => {
-                this.$refs['modal'].open();
-                this.$nextTick(() => {
-                    this.$refs['pages'].preload();
-                    const notes = this.$refs['notes'];
-                    if (notes) {
-                        new MDCTextField(notes);
-                    }
-                });
-            });
+            await this.$nextTick();
+            this.$refs['modal'].open();
+            await this.$nextTick();
+
+            this.$refs['pages'].preload();
+            const notes = this.$refs['notes'];
+            if (notes) {
+                new MDCTextField(notes);
+            }
         },
         close() {
             this.$refs['modal'].close();
@@ -417,6 +433,20 @@ export default {
         },
         processPrompt() {
             return this.choiceService.getPromptConfig(this.scenario);
+        },
+        setVirtualBoardUrl() {
+            const current = this.storyRepository.current();
+
+            let query = {
+                scenario: this.scenario.id,
+                lockScenario: 1,
+            };
+            if (current) {
+                query.lockRoomCode = 1;
+                query.seed = parseInt(md5(current.campaignId + this.scenario.id).substr(0, 7), 16);
+            }
+
+            this.virtualBoardUrl = process.env.MIX_VIRTUAL_BOARD_URL + '?' + queryString.stringify(query);
         }
     }
 }

@@ -66,6 +66,14 @@
                        href="https://boardgamegeek.com/thread/1880969/online-tracker-campaign-party-and-characters">
                         Online map & campaign tracker</a>
                 </li>
+                <li class="py-1">
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://www.reddit.com/user/hobnobuk">
+                        Hobnobuk</a>:
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://vgb.purplekingdomgames.com">
+                        {{ $t('Virtual Gloomhaven Board') }}</a>
+                </li>
             </ul>
 
             <p class="my-4">
