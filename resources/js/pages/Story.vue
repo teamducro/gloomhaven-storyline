@@ -20,7 +20,9 @@ import StoryRepository from "../repositories/StoryRepository";
 export default {
     watch: {
         $route(to, from) {
-            this.open(parseInt(to.params.id, 10));
+            if (to.params.id) {
+                this.open(to.params.id);
+            }
         }
     },
     data() {

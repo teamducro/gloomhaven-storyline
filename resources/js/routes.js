@@ -11,7 +11,7 @@ const Shared = () => import("./pages/Shared");
 
 export default [
     {path: '/', redirect: '/story'},
-    {path: '/story', component: Story},
+    {path: '/story/:id?', component: Story},
     {path: '/scenarios', component: Scenarios},
     {path: '/map', component: Map},
     {path: '/achievements', component: Achievements},
