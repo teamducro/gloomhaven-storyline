@@ -395,7 +395,15 @@ export default {
             return this.scenarioRepository.requiredBy(achievement);
         },
         async open(id) {
-            this.scenario = this.scenarioRepository.find(id);
+            await this.makeSureScenariosAreLoaded();
+            const scenario = this.scenarioRepository.find(id);
+
+            // Can't open hidden scenario's for now.
+            if (scenario.isHidden() && !scenario.is_side) {
+                return;
+            }
+
+            this.scenario = scenario;
             this.setVirtualBoardUrl();
             this.treasuresVisible = false;
             this.rollback = null;
@@ -447,6 +455,18 @@ export default {
             }
 
             this.virtualBoardUrl = process.env.MIX_VIRTUAL_BOARD_URL + '?' + queryString.stringify(query);
+        },
+        makeSureScenariosAreLoaded() {
+            return new Promise((resolve) => {
+                const waitForScenarios = () => {
+                    if (app.scenarios !== null) {
+                        resolve();
+                    } else {
+                        setTimeout(waitForScenarios, 100);
+                    }
+                }
+                waitForScenarios();
+            });
         }
     }
 }

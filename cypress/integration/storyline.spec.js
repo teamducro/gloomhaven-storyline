@@ -128,4 +128,10 @@ describe('Storyline', () => {
         });
     });
 
+    it('It can open a scenario via url', () => {
+        cy.visit('/#/story/1');
+
+        cy.get('#scenario-title').contains('#1 Black Barrow');
+    });
+
 });

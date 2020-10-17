@@ -62,12 +62,11 @@
             },
         },
         methods: {
-            open(id) {
+            async open(id) {
                 this.achievement = this.achievementRepository.find(id);
 
-                this.$nextTick(() => {
-                    this.$refs['modal'].open();
-                });
+                await this.$nextTick();
+                this.$refs['modal'].open();
             },
             close() {
                 this.$refs['modal'].close();

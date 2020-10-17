@@ -20,7 +20,9 @@ import StoryRepository from "../repositories/StoryRepository";
 export default {
     watch: {
         $route(to, from) {
-            this.open(parseInt(to.params.id, 10));
+            if (to.params.id) {
+                this.open(to.params.id);
+            }
         }
     },
     data() {
@@ -33,7 +35,7 @@ export default {
             campaignName: null
         }
     },
-    mounted() {
+    async mounted() {
         let id = parseInt(this.$route.params.id, 10);
         if (!isNaN(id)) {
             this.$bus.$emit('open-scenario', {
@@ -42,9 +44,8 @@ export default {
         }
         if (app.isPortrait !== undefined) {
             this.isPortrait = app.isPortrait;
-            this.$nextTick(() => {
-                this.rerender();
-            });
+            await this.$nextTick();
+            this.rerender();
         }
 
         $('#storyline-container').on('click', '.scenario', this.scenarioClicked);
