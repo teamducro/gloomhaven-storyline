@@ -33,7 +33,7 @@ export default {
             campaignName: null
         }
     },
-    mounted() {
+    async mounted() {
         let id = parseInt(this.$route.params.id, 10);
         if (!isNaN(id)) {
             this.$bus.$emit('open-scenario', {
@@ -42,9 +42,8 @@ export default {
         }
         if (app.isPortrait !== undefined) {
             this.isPortrait = app.isPortrait;
-            this.$nextTick(() => {
-                this.rerender();
-            });
+            await this.$nextTick();
+            this.rerender();
         }
 
         $('#storyline-container').on('click', '.scenario', this.scenarioClicked);
