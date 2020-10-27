@@ -77,9 +77,9 @@
             </ul>
 
             <p class="my-4">
-                {{ $t('credits.license') }} BY-NC-SA 4.0
-                (<a class="link"
-                    href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>)
+                {{ $t('credits.license') }}
+                <a class="link" target="_blank" rel="noreferrer"
+                   href="https://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0</a>.
             </p>
         </div>
     </div>
