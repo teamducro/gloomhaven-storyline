@@ -10,7 +10,16 @@
           content="Gloomhaven,storyline tracker,storyline,party sheet,road event,city event,treasures,scenario">
     <meta name="author" content="Daniël Ducro">
 
-    <title>Gloomhaven storyline website test</title>
+    <title>Gloomhaven storyline</title>
+
+    <link rel="preload" href="/fonts/ArialMT.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/Nyala-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/PirataOne-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2"
+          as="font" crossorigin>
+    <link rel="preload" href="/img/gloomhaven-logo.webp" as="image">
+
+    <link href="/css/website.css" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,8 +28,46 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Analytics -->
+    <script src="/js/gtm.js" rel="script"></script>
 </head>
 <body>
-<h1>TEST</h1>
+<div class="gradient fixed top-0 left-0 w-screen h-screen"></div>
+<div id="app" class="relative" v-cloak>
+    <top-menu></top-menu>
+
+    <router-view></router-view>
+
+    <!--Footer-->
+    <footer class="">
+        <hr class="border-b border-gray-100 opacity-25 my-0 py-0">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-center sm:justify-between mt-0 py-8">
+            <a class="pl-4 text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
+                <webp class="inline" src="/img/gloomhaven-logo.png" alt="Gloomhaven" width="250" height="37"></webp>
+                <span class="hidden sm:inline">Storyline</span>
+            </a>
+
+            <div class="">
+                <ul class="list-reset mt-6 sm:mt-0 flex md:flex-col">
+                    <li>
+                        <a href="https://github.com/teamducro/gloomhaven-storyline"
+                           class="link text-white p-2">GitHub</a>
+                    </li>
+                    <li>
+                        <email-me class="link text-white p-2">
+                            Contact
+                        </email-me>
+                    </li>
+                    <li>
+                        <a :href="appUrl" class="link text-white p-2">App</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</div>
+<script src="/js/website.js" rel="script"></script>
 </body>
 </html>
