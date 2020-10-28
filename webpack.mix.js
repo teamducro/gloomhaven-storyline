@@ -19,11 +19,11 @@ mix.extend('i18n', new class {
 
 
 mix.i18n()
-    .js('resources/js/website.js', 'public/js/')
     .js('resources/js/app.js', 'public/js/')
     .js('resources/js/gtm.js', 'public/js/')
-    .sass('resources/sass/website.scss', 'public/css/')
+    .js('resources/js/website.js', 'public/js/')
     .sass('resources/sass/app.scss', 'public/css/')
+    .sass('resources/sass/website.scss', 'public/css/')
     .sass('resources/sass/theme.scss', 'public/css/', {
         sassOptions: {
             includePaths: ['./node_modules']
