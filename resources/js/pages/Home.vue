@@ -124,11 +124,11 @@
                                 </h3>
                             </div>
                             <p class="text-gray-600 mb-2">
-                                Gloomhaven storyline tracker contains a Party Sheet!
+                                Gloomhaven storyline tracker features a Party Sheet!
                             </p>
                             <p class="text-gray-600 mb-4">
-                                You can track party related info like reputation, donations, prosperity and more all in
-                                one place!
+                                With it, you can track party-related info like reputation, donations, prosperity and
+                                more, all in one place!
                             </p>
                             <p class="mb-4">
                                 <a :href="this.appUrl+'/#/party'"
