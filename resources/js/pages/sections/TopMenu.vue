@@ -24,16 +24,18 @@
                 -->
             </div>
 
-            <div class="w-full flex-grow flex xs:flex flex-col-reverse xs:flex-row items-center xs:w-auto mt-2 xs:mt-0 xs:bg-transparent text-black p-4 pb-0 xs:p-0 z-20"
-                 :class="{hidden: !menuVisible, 'bg-gray-100': !fixedHeader || !menuVisible, 'bg-white': fixedHeader || menuVisible}">
+            <div
+                class="w-full flex-grow flex xs:flex flex-col-reverse xs:flex-row items-center xs:w-auto mt-2 xs:mt-0 xs:bg-transparent text-black p-4 pb-0 xs:p-0 z-20"
+                :class="{hidden: !menuVisible, 'bg-gray-100': !fixedHeader || !menuVisible, 'bg-white': fixedHeader || menuVisible}">
                 <ul class="list-reset xs:flex justify-end flex-1 items-center mt-2 xs:mt-0">
                     <li class="xs:mr-1 py-2 hover:underline xs:hidden sm:i-inline-block text-center">
-                        <a href="https://github.com/teamducro/gloomhaven-storyline"
-                           :class="{'text-gray-100': !fixedHeader || !menuVisible, 'text-gray-800': fixedHeader || menuVisible}">GitHub</a>
+                        <a href="/#pricing"
+                           :class="{'text-gray-100': !fixedHeader || !menuVisible, 'text-gray-800': fixedHeader || menuVisible}">Pricing</a>
                     </li>
                     <li class="xs:mr-1 xs:hidden sm:i-inline-block text-center">
-                        <email-me class="w-full hover:underline xs:w-auto xs:my-0 text-center inline-block no-underline hover:text-underline py-2 px-4"
-                                  :class="{'text-gray-100': !fixedHeader || !menuVisible, 'text-gray-800': fixedHeader || menuVisible}">
+                        <email-me
+                            class="w-full hover:underline xs:w-auto xs:my-0 text-center inline-block no-underline hover:text-underline py-2 px-4"
+                            :class="{'text-gray-100': !fixedHeader || !menuVisible, 'text-gray-800': fixedHeader || menuVisible}">
                             Contact
                         </email-me>
                     </li>

@@ -21,9 +21,15 @@
                         <p class="text-gray-600 mb-2">
                             View a summary of the storyline for each state of a scenario.
                         </p>
-                        <p class="text-gray-600">
+                        <p class="text-gray-600 mb-4">
                             To prevent spoilers we only include a summery up-to the current scenario.
                             The conclusion of a scenario is added after it has been completed.
+                        </p>
+                        <p class="mb-4">
+                            <a :href="this.appUrl"
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                Open storyline
+                            </a>
                         </p>
                     </div>
                     <div class="w-full sm:w-1/2 p-6">
@@ -74,34 +80,7 @@
                     </div>
                 </div>
 
-
-                <div class="flex flex-wrap">
-                    <div class="w-5/6 sm:w-1/2 p-6">
-                        <div class="flex items-center mb-4">
-                            <i class="material-icons text-gray-800 mr-2" aria-hidden="true">map</i>
-                            <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                                Map view
-                            </h3>
-                        </div>
-                        <p class="text-gray-600 mb-2">
-                            See all of the scenarios you've played and achievements you've gained, displayed on the
-                            original Gloomhaven map!
-                        </p>
-                        <p class="text-gray-600 mb-2">
-                            All Global achievements and scenarios displayed on the map are clickable and the full
-                            functionality of the Flowchart view is also available in this Map view.
-                        </p>
-                    </div>
-                    <div class="w-full sm:w-1/2 p-6">
-                        <webp src="/img/map-zoomed.jpg" class="w-full mx-auto" alt="Gloomhaven Scenario 1"/>
-                    </div>
-                </div>
-
-
                 <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                    <div class="w-full sm:w-1/2 p-6 mt-6">
-                        <img src="/img/gloomhaven1.jpg" class="w-full mx-auto" alt="Gloomhaven"/>
-                    </div>
                     <div class="w-full sm:w-1/2 p-6 mt-6">
                         <div class="align-middle">
                             <div class="flex items-center mb-4">
@@ -127,9 +106,72 @@
                             </p>
                         </div>
                     </div>
+                    <div class="w-full sm:w-1/2 p-6 mt-6">
+                        <img src="/img/gloomhaven1.jpg" class="w-full mx-auto" alt="Gloomhaven"/>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+                    <div class="w-full sm:w-1/2 p-6 mt-6">
+                        <webp src="/img/party-sheet.jpg" class="w-full mx-auto" alt="Gloomhaven Party Sheet"/>
+                    </div>
+                    <div class="w-full sm:w-1/2 p-6 mt-6">
+                        <div class="align-middle">
+                            <div class="flex items-center mb-4">
+                                <i class="material-icons text-gray-800 mr-2" aria-hidden="true">assignment</i>
+                                <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                                    Party Sheet
+                                </h3>
+                            </div>
+                            <p class="text-gray-600 mb-2">
+                                Gloomhaven storyline tracker contains a Party Sheet!
+                            </p>
+                            <p class="text-gray-600 mb-4">
+                                You can track party related info like reputation, donations, prosperity and more all in
+                                one place!
+                            </p>
+                            <p class="mb-4">
+                                <a :href="this.appUrl+'/#/party'"
+                                   class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                    Open partysheet
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="flex flex-wrap">
+                    <div class="w-5/6 sm:w-1/2 p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="material-icons text-gray-800 mr-2" aria-hidden="true">map</i>
+                            <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                                Map view
+                            </h3>
+                        </div>
+                        <p class="text-gray-600 mb-2">
+                            See all of the scenarios you've played and achievements you've gained, displayed on the
+                            original Gloomhaven map!
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            All Global achievements and scenarios displayed on the map are clickable and the full
+                            functionality of the Flowchart view is also available in this Map view.
+                        </p>
+                        <p class="mb-4">
+                            <a :href="this.appUrl+'/#/map'"
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                Open map
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-full sm:w-1/2 p-6">
+                        <webp src="/img/map-zoomed.jpg" class="w-full mx-auto" alt="Gloomhaven Scenario 1"/>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap">
+                    <div class="w-full sm:w-1/2 p-6">
+                        <webp src="/img/gloomhaven-filters.jpg" class="w-full mx-auto" alt="Gloomhaven Filters"/>
+                    </div>
                     <div class="w-5/6 sm:w-1/2 p-6">
                         <div class="flex items-center mb-4">
                             <i class="material-icons text-gray-800 mr-2" aria-hidden="true">filter_list</i>
@@ -141,13 +183,16 @@
                             Gloomhaven Storyline includes the option to track looted chests and a filter feature to find
                             completed scenarios with chests you missed.
                         </p>
-                        <p class="text-gray-600">
+                        <p class="text-gray-600 mb-4">
                             Using the filter feature, you can find just the scenario you need to complete your personal
                             quest.
                         </p>
-                    </div>
-                    <div class="w-full sm:w-1/2 p-6">
-                        <webp src="/img/gloomhaven-filters.jpg" class="w-full mx-auto" alt="Gloomhaven Filters"/>
+                        <p class="mb-4">
+                            <a :href="this.appUrl+'/#/scenarios'"
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                Open scenario list
+                            </a>
+                        </p>
                     </div>
                 </div>
 
