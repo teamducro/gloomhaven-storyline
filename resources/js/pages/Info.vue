@@ -11,7 +11,7 @@
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Support') }}</h2>
             <p>Would you like to contribute by translating to your native language?</p>
             <p>For help or feedback,
-                <email-me>please email me</email-me>
+                <email-me class="link">please email me</email-me>
                 .
             </p>
 
@@ -77,9 +77,9 @@
             </ul>
 
             <p class="my-4">
-                {{ $t('credits.license') }} BY-NC-SA 4.0
-                (<a class="link"
-                    href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>)
+                {{ $t('credits.license') }}
+                <a class="link" target="_blank" rel="noreferrer"
+                   href="https://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0</a>.
             </p>
         </div>
     </div>

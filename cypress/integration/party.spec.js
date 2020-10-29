@@ -3,8 +3,9 @@ import utilities from "../utilities";
 describe('Party', () => {
 
     it('It loads the party sheet', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
+        cy.contains('Party sheet');
         cy.contains('Reputation');
         cy.contains('Shop modifier');
         cy.contains('Sanctuary');
@@ -16,7 +17,7 @@ describe('Party', () => {
     });
 
     it('It has a reputation counter', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="reputation"]').clear().type('3{enter}');
         cy.contains('-1 Gold');
@@ -25,7 +26,7 @@ describe('Party', () => {
     });
 
     it('It can roll back reputation counter', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="reputation"]').clear().type('3{enter}');
         cy.get('h2').contains('Reputation').next().click();
@@ -33,7 +34,7 @@ describe('Party', () => {
     });
 
     it('It has a donations counter', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="donations"]').clear().type('100{enter}');
         cy.contains('1 gained prosperity');
@@ -42,7 +43,7 @@ describe('Party', () => {
     });
 
     it('It can roll back donations counter', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="donations"]').clear().type('3{enter}');
         cy.get('h2').contains('Sanctuary').next().click();
@@ -50,7 +51,7 @@ describe('Party', () => {
     });
 
     it('It has prosperity checkboxes', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('span').contains('015–021').prev().find('input').should('not.be.checked');
 
@@ -63,7 +64,7 @@ describe('Party', () => {
     });
 
     it('It can roll back prosperity checkboxes', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('input#p-5').click();
         cy.get('h2').contains('Prosperity').next().click();
@@ -75,7 +76,7 @@ describe('Party', () => {
     });
 
     it('It stores the party sheet', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
         cy.get('input[aria-labelledby="reputation"]').clear().type('20{enter}');
         cy.get('input[aria-labelledby="donations"]').clear().type('1000{enter}');
         cy.get('input#p-65').click();

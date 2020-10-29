@@ -90,5 +90,9 @@ export default {
 
     closeModel() {
         cy.get('body').click('left');
+    },
+
+    isTracker() {
+        cy.url().should('include', '/tracker');
     }
 }

@@ -3,7 +3,7 @@ import utilities from "../utilities";
 describe('Storyline', () => {
 
     it('It loads the storyline', () => {
-        cy.visit('/');
+        cy.visit('/tracker');
 
         cy.get('.chapter1').should(($chapter) => {
             expect($chapter).css('display', 'inline');
@@ -11,7 +11,7 @@ describe('Storyline', () => {
     });
 
     it('It switches between landscape and portrait', () => {
-        cy.visit('/');
+        cy.visit('/tracker');
 
         cy.get('.landscape').should(($node) => {
             expect($node.length).to.be.greaterThan(4);
@@ -33,7 +33,7 @@ describe('Storyline', () => {
     });
 
     it('It can complete a scenario', () => {
-        cy.visit('/');
+        cy.visit('/tracker');
         utilities.isNodeVisible(1);
         utilities.isNodeHidden(2);
 
@@ -42,7 +42,7 @@ describe('Storyline', () => {
     });
 
     it('It can incomplete a scenario', () => {
-        cy.visit('/');
+        cy.visit('/tracker');
         utilities.completeScenario(1);
 
         utilities.isNodeVisible(2);
@@ -56,7 +56,7 @@ describe('Storyline', () => {
         let alerted = false;
         cy.on('window:alert', message => alerted = message);
 
-        cy.visit('/?states=1_c-2_c');
+        cy.visit('/tracker?states=1_c-2_c');
 
         cy.window().then((window) => {
             expect(alerted.includes('deprecated')).to.be.true;
@@ -74,7 +74,7 @@ describe('Storyline', () => {
     });
 
     it('It blocks blocked scenarios', () => {
-        cy.visit('/?states=1_c-2_c-3_c-8_c');
+        cy.visit('/tracker?states=1_c-2_c-3_c-8_c');
 
         utilities.isNodeBlocked(9);
         utilities.openScenario(9);
@@ -85,7 +85,7 @@ describe('Storyline', () => {
     });
 
     it('It blocks required scenarios', () => {
-        cy.visit('/?states=1_c-2_c-3_c-8_c');
+        cy.visit('/tracker?states=1_c-2_c-3_c-8_c');
 
         utilities.isNodeRequired(7);
         utilities.openScenario(7);
@@ -96,7 +96,7 @@ describe('Storyline', () => {
     });
 
     it('It unlocks required scenarios', () => {
-        cy.visit('/?states=1_c-2_c-3_c-8_c');
+        cy.visit('/tracker?states=1_c-2_c-3_c-8_c');
 
         utilities.isNodeRequired(7);
 
@@ -114,13 +114,13 @@ describe('Storyline', () => {
     });
 
     it('It can share side scenarios', () => {
-        cy.visit('/');
+        cy.visit('/tracker');
 
         cy.get('#node52.opacity-50').should(($node) => {
             expect($node).to.have.length(1);
         });
 
-        cy.visit('/?states=52_i');
+        cy.visit('/tracker?states=52_i');
 
         utilities.isNodeVisible(52);
         cy.get('#node52.opacity-50').should(($node) => {
@@ -129,7 +129,7 @@ describe('Storyline', () => {
     });
 
     it('It can open a scenario via url', () => {
-        cy.visit('/#/story/1');
+        cy.visit('/tracker/#/story/1');
 
         cy.get('#scenario-title').contains('#1 Black Barrow');
     });
