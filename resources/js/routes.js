@@ -20,4 +20,5 @@ export default [
     {path: '/party', component: Party},
     {path: '/login/:id/:token', component: Login},
     {path: '/shared/:version/:id/:storage', component: Shared},
+    {path: '*', redirect: '/story'},
 ];

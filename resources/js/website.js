@@ -40,7 +40,7 @@ Vue.component('top-menu', TopMenu);
 const router = new VueRouter({
     routes: [
         {path: '/', component: Home},
-        {path: '/pricing', component: Home}
+        {path: '*', component: Home}
     ]
 });
 Vue.use(VueRouter);
@@ -81,8 +81,8 @@ window.app = new Vue({
             return false;
         },
         shouldRedirectToApp() {
-            ['story', 'scenarios', 'map', 'achievements', 'info', 'campaigns', 'party', 'login', 'shared'].forEach(x => {
-                if (location.hash.includes(x)) {
+            ['story', 'scenarios', 'map', 'achievements', 'info', 'campaigns', 'party', 'login', 'shared'].forEach(path => {
+                if (location.hash.includes(path)) {
                     const newLocation = location.href.replace(process.env.MIX_WEB_URL, process.env.MIX_APP_URL);
                     location.replace(newLocation);
                 }
