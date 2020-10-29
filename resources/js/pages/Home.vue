@@ -13,7 +13,7 @@
                 <div class="flex flex-wrap">
                     <div class="w-5/6 sm:w-1/2 p-6">
                         <div class="flex items-center mb-4">
-                            <img src="img/icons/story.svg" alt="Storyline icon" class="mr-2"/>
+                            <img src="/img/icons/story.svg" alt="Storyline icon" class="mr-2"/>
                             <h3 class="text-3xl text-gray-800 font-bold leading-none">
                                 Summaries
                             </h3>
@@ -27,7 +27,7 @@
                         </p>
                     </div>
                     <div class="w-full sm:w-1/2 p-6">
-                        <webp src="img/scenario1.jpg" class="w-full mx-auto" alt="Gloomhaven Scenario 1"/>
+                        <webp src="/img/scenario1.jpg" class="w-full mx-auto" alt="Gloomhaven Scenario 1"/>
                     </div>
                 </div>
 
@@ -40,7 +40,7 @@
                     <div class="w-full sm:w-1/2 p-6 mt-6">
                         <div class="align-middle">
                             <div class="flex items-center mb-4">
-                                <img src="img/icons/achievements.svg" alt="Achievements icon" class="mr-2 h-5"/>
+                                <img src="/img/icons/achievements.svg" alt="Achievements icon" class="mr-2 h-5"/>
                                 <h3 class="text-3xl text-gray-800 font-bold leading-none">
                                     Clear and organized
                                 </h3>
@@ -93,7 +93,7 @@
                         </p>
                     </div>
                     <div class="w-full sm:w-1/2 p-6">
-                        <webp src="img/map-zoomed.jpg" class="w-full mx-auto" alt="Gloomhaven Scenario 1"/>
+                        <webp src="/img/map-zoomed.jpg" class="w-full mx-auto" alt="Gloomhaven Scenario 1"/>
                     </div>
                 </div>
 
@@ -147,7 +147,7 @@
                         </p>
                     </div>
                     <div class="w-full sm:w-1/2 p-6">
-                        <webp src="img/gloomhaven-filters.jpg" class="w-full mx-auto" alt="Gloomhaven Filters"/>
+                        <webp src="/img/gloomhaven-filters.jpg" class="w-full mx-auto" alt="Gloomhaven Filters"/>
                     </div>
                 </div>
 
