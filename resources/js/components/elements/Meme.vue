@@ -1,5 +1,5 @@
 <template>
-    <webp width="300" :src="`img/memes/${meme}.jpg`"></webp>
+    <webp width="300" :src="`/img/memes/${meme}.jpg`"></webp>
 </template>
 
 <script>

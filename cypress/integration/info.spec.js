@@ -1,7 +1,7 @@
 describe('Info', () => {
 
     it('It loads the info page', () => {
-        cy.visit('/#/info');
+        cy.visit('/tracker/#/info');
 
         cy.get('#info').within(() => {
             cy.contains('Play Gloomhaven with a storyline tracker');
@@ -9,7 +9,7 @@ describe('Info', () => {
     });
 
     it('It decode the email', () => {
-        cy.visit('/#/info');
+        cy.visit('/tracker/#/info');
 
         cy.get('#info').within(() => {
             cy.get('.link').first()
@@ -22,7 +22,7 @@ describe('Info', () => {
     });
 
     it('It has a github link', () => {
-        cy.visit('/#/info');
+        cy.visit('/tracker/#/info');
 
         cy.get('#info').within(() => {
             cy.get('.mdc-button').first().parent('a').should(($button) => {

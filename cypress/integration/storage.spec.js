@@ -4,7 +4,7 @@ describe('Storage', () => {
     it('It stores data correctly in local storage', () => {
         let collect = require('collect.js');
 
-        cy.visit('/');
+        cy.visit('/tracker');
         utilities.completeScenario(1);
 
         utilities.store().then((store) => {
