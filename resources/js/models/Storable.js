@@ -2,8 +2,8 @@ import store from "store/dist/store.modern";
 
 export default {
 
-    store() {
-        const valuesToStore = collect(this.fieldsToStore || {})
+    valuesToStore() {
+        return collect(this.fieldsToStore || {})
             .map((modelKey) => {
                 if (typeof modelKey === 'object') {
                     modelKey = Object.keys(modelKey)[0];
@@ -15,8 +15,10 @@ export default {
                 return value !== null && value !== '' && (!Array.isArray(value) || value.length)
             })
             .all();
+    },
 
-        app.campaignData[this.key()] = valuesToStore;
+    store() {
+        app.campaignData[this.key()] = this.valuesToStore();
         store.set(app.campaignId, app.campaignData);
     },
 
