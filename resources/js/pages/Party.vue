@@ -52,30 +52,38 @@
                             @change="store"></prosperity>
             </div>
 
-            <div class="w-full mt-8 flex flex-col sm:flex-row">
-                <div class="flex-1 mb-8 sm:mb-0 sm:mr-4">
-                    <h2>{{ $t('Prosperity Items') }}</h2>
-                    <ul class="flex flex-row flex-wrap -mx-2">
-                        <li v-for="(items, index) in prosperityItems" class="flex items-center">
-                            <checkbox group="items"
-                                      :disabled="true"
-                                      :checked="prosperity > index"
-                                      @change="store"></checkbox>
-                            <span class="w-16 font-title">{{ items }}</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex-1">
-                    <h2>{{ $t('Item Designs') }}</h2>
-                    <ul class="flex flex-row flex-wrap -mx-2">
-                        <li v-for="(checked, item) in sheet.itemDesigns" class="flex items-center">
-                            <checkbox group="items"
-                                      :checked="checked"
-                                      @change="(id, isChecked) => {sheet.itemDesigns[item] = isChecked; store()}"></checkbox>
-                            <span class="w-8 font-title">{{ item }}</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="w-full mt-8">
+                <h2>{{ $t('Prosperity Items') }}</h2>
+                <ul class="flex flex-row flex-wrap -mx-2">
+                    <li v-for="(items, index) in prosperityItems" class="flex items-center">
+                        <checkbox group="items"
+                                  :disabled="true"
+                                  :checked="prosperity > index"
+                                  @change="store"></checkbox>
+                        <span class="w-16 font-title">{{ items }}</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-full mt-8">
+                <h2>{{ $t('Item Designs') }}</h2>
+                <ul class="flex flex-row flex-wrap -mx-2">
+                    <li v-for="(checked, item) in sheet.itemDesigns"
+                        v-if="item < 134 || showSoloItems"
+                        class="flex items-center">
+                        <checkbox group="items"
+                                  :checked="checked"
+                                  @change="(id, isChecked) => {sheet.itemDesigns[item] = isChecked; store()}"></checkbox>
+                        <span class="w-8 font-title">{{ item }}</span>
+                    </li>
+                    <li v-if="!showSoloItems" class="flex items-center">
+                        <a @click.prevent="showSoloItems = true"
+                           class="cursor-pointer"
+                        >
+                            Show more...
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div class="w-full mt-8">
@@ -108,7 +116,7 @@
                                   :disabled="character < 6"
                                   @change="(id, isChecked) => {sheet.characters[character] = isChecked; store()}"></checkbox>
                         <span v-if="character < 17" class="w-8 font-title">
-                            <character class="w-6 -mb-2 inline-block" :character="character+1"/>
+                            <character class="w-6 -mb-2 inline-block" :character="parseInt(character)+1"/>
                         </span>
                         <span v-else class="font-title text-lg">X</span>
                     </li>
@@ -179,6 +187,7 @@ export default {
             storyRepository: new StoryRepository(),
             storySyncer: new StorySyncer,
             campaignName: null,
+            showSoloItems: false,
             loading: true
         }
     },
@@ -192,8 +201,8 @@ export default {
     },
     mounted() {
         this.render();
-        this.calculateShop();
-        this.calculateDonationProsperity();
+        // this.calculateShop();
+        // this.calculateDonationProsperity();
 
         this.$bus.$on('campaigns-changed', this.render);
     },
