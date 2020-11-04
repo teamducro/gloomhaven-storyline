@@ -15,9 +15,9 @@
             <div class="relative z-0">
                 <div class="absolute inset-0 h-5/6 bg-gray-900 lg:h-2/3"></div>
                 <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="relative lg:grid lg:grid-cols-7">
+                    <div class="relative lg:grid">
                         <div
-                            class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 shadow-slight-white">
+                            class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 shadow-md">
                             <div
                                 class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
                                 <div class="flex-1 flex flex-col">
@@ -38,7 +38,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
+                                        class="bg-gray-800 flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                                         <ul class="-mt-4">
                                             <li v-for="(isPro, feature) in features.free" class="mt-4 flex items-start">
                                                 <div class="flex-shrink-0">
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                         <div
-                            class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4 shadow-white">
+                            class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4 shadow-2xl">
                             <div class="relative z-10 rounded-lg shadow-xl">
                                 <div
                                     class="pointer-events-none absolute inset-0 rounded-lg border-2 border-blue-600"></div>
@@ -94,7 +94,7 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
+                                    class="bg-gray-900 border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
                                     <ul class="-mt-4">
                                         <li v-for="(isPro, feature) in features.gloomhaven"
                                             class="mt-4 flex items-start">
@@ -122,7 +122,7 @@
                             </div>
                         </div>
                         <div
-                            class="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3 shadow-slight-white">
+                            class="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3 shadow-md">
                             <div
                                 class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
                                 <div class="flex-1 flex flex-col">
@@ -145,7 +145,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
+                                        class="bg-gray-800 flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                                         <ul class="-mt-4">
                                             <li v-for="(isPro, feature) in features.frosthaven"
                                                 class="mt-4 flex items-start">
