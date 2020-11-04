@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="pt-20">
+        <div class="pt-20 lg:pt-24">
             <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
                 <!--Left Col-->
                 <div class="flex flex-col w-full md:w-1/2 justify-center items-start text-center md:text-left">
@@ -9,14 +9,15 @@
                     <p class="leading-normal text-2xl mb-8">Keep track of your progress of completed and unlocked
                         scenarios!</p>
 
-                    <div class="flex">
-                        <purchase class="mr-2">
-                            <a class="block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                    <div
+                        class="flex flex-col w-full lg:flex-row items-center md:items-start justify-center lg:justify-start">
+                        <purchase class="mb-8 lg:mb-0 lg:mr-8 cursor-pointer">
+                            <a class="cursor-pointer block text-center rounded-lg border border-transparent bg-white px-6 py-3 text-lg leading-6 font-bold text-black hover:text-gray-700 focus:outline-none focus:shadow-outline transition ease-in-out duration-150">
                                 Buy shared campaign
                             </a>
                         </purchase>
                         <a :href="this.appUrl"
-                           class="block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                           class="block text-center rounded-lg border border-transparent bg-white px-6 py-3 text-lg leading-6 font-bold text-black hover:text-gray-700 focus:outline-none focus:shadow-outline transition ease-in-out duration-150">
                             Open storyline
                         </a>
                     </div>
