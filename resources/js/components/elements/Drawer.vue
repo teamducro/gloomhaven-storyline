@@ -7,7 +7,9 @@
 
         <aside ref="menu" class="mdc-drawer mdc-drawer--modal">
             <div class="mdc-drawer__header" style="min-height: 0;">
-                <webp class="w-3/4 mt-4" alt="Gloomhaven" src="/img/gloomhaven-logo.png"/>
+                <a href="/">
+                    <webp class="w-3/4 mt-4" alt="Gloomhaven" src="/img/gloomhaven-logo.png"/>
+                </a>
             </div>
             <div class="mdc-drawer__content">
                 <div v-if="showCampaignSwitch" class="m-2" style="width: calc(100% - 1em);">
