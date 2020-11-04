@@ -39,69 +39,13 @@
                                     </div>
                                     <div
                                         class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
-                                        <ul>
-                                            <li class="flex items-start">
+                                        <ul class="-mt-4">
+                                            <li v-for="(isPro, feature) in features.free" class="mt-4 flex items-start">
                                                 <div class="flex-shrink-0">
                                                     <inline-svg src="icons/checkmark"></inline-svg>
                                                 </div>
                                                 <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Manual sharing
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Spoiler free scenario tracking
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Scenario summaries
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Tracked Achievements
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Map view
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Filters
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    All modern devices
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Multi language
+                                                    {{ feature }}
                                                 </p>
                                             </li>
                                         </ul>
@@ -151,77 +95,15 @@
                                 </div>
                                 <div
                                     class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
-                                    <ul>
-                                        <li class="flex items-start">
+                                    <ul class="-mt-4">
+                                        <li v-for="(isPro, feature) in features.gloomhaven"
+                                            class="mt-4 flex items-start">
                                             <div class="flex-shrink-0">
                                                 <inline-svg src="icons/checkmark"></inline-svg>
                                             </div>
-                                            <p class="ml-3 text-base leading-6 font-bold text-white">
-                                                Automatic sharing
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <inline-svg src="icons/checkmark"></inline-svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Spoiler free scenario tracking
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <inline-svg src="icons/checkmark"></inline-svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Scenario summaries
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <inline-svg src="icons/checkmark"></inline-svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Tracked Achievements
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <inline-svg src="icons/checkmark"></inline-svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Map view
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <inline-svg src="icons/checkmark"></inline-svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Filters
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <inline-svg src="icons/checkmark"></inline-svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                All modern devices
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <inline-svg src="icons/checkmark"></inline-svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Multi language
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <inline-svg src="icons/checkmark"></inline-svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-bold text-white">
-                                                Support the project
+                                            <p class="ml-3 text-base leading-6 font-medium"
+                                               :class="{'text-white': isPro, 'text-gray-500': !isPro}">
+                                                {{ feature }}
                                             </p>
                                         </li>
                                     </ul>
@@ -264,77 +146,15 @@
                                     </div>
                                     <div
                                         class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
-                                        <ul>
-                                            <li class="flex items-start">
+                                        <ul class="-mt-4">
+                                            <li v-for="(isPro, feature) in features.frosthaven"
+                                                class="mt-4 flex items-start">
                                                 <div class="flex-shrink-0">
                                                     <inline-svg src="icons/checkmark"></inline-svg>
                                                 </div>
-                                                <p class="ml-3 text-base leading-6 font-bold text-white">
-                                                    Automatic sharing
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Spoiler free scenario tracking
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Scenario summaries
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Tracked Achievements
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Map view
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Filters
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    All modern devices
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                    Multi language
-                                                </p>
-                                            </li>
-                                            <li class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
-                                                    <inline-svg src="icons/checkmark"></inline-svg>
-                                                </div>
-                                                <p class="ml-3 text-base leading-6 font-bold text-white">
-                                                    Support the project
+                                                <p class="ml-3 text-base leading-6 font-medium"
+                                                   :class="{'text-white': isPro, 'text-gray-500': !isPro}">
+                                                    {{ feature }}
                                                 </p>
                                             </li>
                                         </ul>
@@ -374,6 +194,40 @@ export default {
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,
+            features: {
+                free: {
+                    'Manual sharing': false,
+                    'Spoiler free scenario tracking': false,
+                    'Scenario summaries': false,
+                    'Tracked Achievements': false,
+                    'Map view': false,
+                    'Filters': false,
+                    'All modern devices': false,
+                    'Multi language': false,
+                },
+                gloomhaven: {
+                    'Automatic sharing': true,
+                    'Spoiler free scenario tracking': false,
+                    'Scenario summaries': false,
+                    'Tracked Achievements': false,
+                    'Map view': false,
+                    'Filters': false,
+                    'All modern devices': false,
+                    'Multi language': false,
+                    'Support the project': true,
+                },
+                frosthaven: {
+                    'Automatic sharing': true,
+                    'Spoiler free scenario tracking': false,
+                    'Scenario summaries': false,
+                    'Tracked Achievements': false,
+                    'Map view': false,
+                    'Filters': false,
+                    'All modern devices': false,
+                    'Multi language': false,
+                    'Support the project': true,
+                }
+            }
         }
     },
     mounted() {
