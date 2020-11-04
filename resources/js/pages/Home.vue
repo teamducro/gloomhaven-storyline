@@ -250,8 +250,8 @@
                             Virtual Gloomhaven Board
                         </div>
                         <p class="text-gray-600 px-6 mb-2">
-                            Hobnobuks Virtual Gloomhaven Board is designed to help people play Gloomhaven remotely,
-                            without the need for a physical board.
+                            Virtual Gloomhaven Board by Purple Kingdom Games development is designed to help people play
+                            Gloomhaven remotely, without the need for a physical board.
                             Gloomhaven Storyline features integration with this great tool, allowing you to open the
                             virtual board directly from the scenario view.
                         </p>
