@@ -23,7 +23,7 @@
                                 <div class="flex-1 flex flex-col">
                                     <div class="bg-white px-6 py-10">
                                         <div>
-                                            <h3 class="text-center text-2xl leading-8 font-medium text-gray-900"
+                                            <h3 class="text-center text-2xl leading-8 font-medium text-gray-900 lg:mt-7"
                                                 id="tier-free">
                                                 Free
                                             </h3>
@@ -133,9 +133,11 @@
                                 </div>
                                 <div class="bg-white rounded-t-lg px-6 pt-12 pb-10">
                                     <div>
-                                        <h3 class="text-center text-3xl leading-9 font-semibold text-gray-900 sm:-mx-6"
+                                        <h3 class="flex items-center flex-col text-center text-3xl leading-9 font-semibold text-gray-900 sm:-mx-6"
                                             id="tier-gloomhaven">
-                                            Gloomhaven Pro
+                                            <webp class="" src="/img/gloomhaven-logo.png" alt="Gloomhaven logo"
+                                                  width="250" height="37"></webp>
+                                            Pro
                                         </h3>
                                         <div class="font-title mt-4 flex items-center justify-center">
                                             <span
@@ -244,9 +246,11 @@
                                 <div class="flex-1 flex flex-col">
                                     <div class="bg-white px-6 py-10">
                                         <div>
-                                            <h3 class="text-center text-2xl leading-8 font-medium text-gray-900"
+                                            <h3 class="flex items-center flex-col text-center text-2xl leading-8 font-medium text-gray-900"
                                                 id="tier-frosthaven">
-                                                Frosthaven Pro
+                                                <webp class="" src="/img/frosthaven-logo.png" alt="Frosthaven logo"
+                                                      width="250" height="37"></webp>
+                                                Pro
                                             </h3>
                                             <div class="font-title mt-4 flex items-center justify-center">
                                                 <span

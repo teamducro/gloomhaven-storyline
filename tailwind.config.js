@@ -85,6 +85,9 @@ module.exports = {
                 'slight-white': '0px 0px 20px 5px rgba(255,255,255,0.1)',
                 'white': '0px 0px 20px 5px rgba(255,255,255,0.2)'
             },
+            margin: {
+                7: '1.75rem'
+            }
         }
     },
     variants: {
