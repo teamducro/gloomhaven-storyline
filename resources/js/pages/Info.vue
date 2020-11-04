@@ -68,8 +68,8 @@
                 </li>
                 <li class="py-1">
                     <a class="link" target="_blank" rel="noreferrer"
-                       href="https://www.reddit.com/user/hobnobuk">
-                        Hobnobuk</a>:
+                       href="https://purplekingdomgames.com">
+                        Purple Kingdom Games development</a>:
                     <a class="link" target="_blank" rel="noreferrer"
                        href="https://vgb.purplekingdomgames.com">
                         {{ $t('Virtual Gloomhaven Board') }}</a>
