@@ -10,14 +10,14 @@
                     <div class="h-2px mx-auto gradient w-64 opacity-75 my-0 py-0 rounded shadow"></div>
                 </div>
 
-                <div class="flex flex-wrap">
-                    <div class="w-5/6 sm:w-1/2 p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="/img/icons/story.svg" alt="Storyline icon" class="mr-2"/>
-                            <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                                Summaries
-                            </h3>
-                        </div>
+                <two-column-content>
+                    <template v-slot:title>
+                        <img src="/img/icons/story.svg" alt="Storyline icon" class="mr-2"/>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Summaries
+                        </h3>
+                    </template>
+                    <template v-slot:left>
                         <p class="text-gray-600 mb-2">
                             View a summary of the storyline for each state of a scenario.
                         </p>
@@ -26,128 +26,127 @@
                             The conclusion of a scenario is added after it has been completed.
                         </p>
                         <p class="mb-4">
-                            <a :href="this.appUrl"
+                            <a :href="appUrl"
                                class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open storyline
                             </a>
                         </p>
-                    </div>
-                    <div class="w-full sm:w-1/2 p-6">
-                        <webp src="/img/scenario1.jpg" class="w-full mx-auto" alt="Gloomhaven Scenario 1"/>
-                    </div>
-                </div>
+                    </template>
+                    <template v-slot:right>
+                        <webp src="/img/scenario1.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Gloomhaven Scenario 1"/>
+                    </template>
+                </two-column-content>
 
 
-                <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                    <div class="w-full sm:w-1/2 p-6 mt-6">
-                        <img src="/img/gloomhaven-storyline-spoilerfree.jpg" class="w-full mx-auto"
+                <two-column-content reverse>
+                    <template v-slot:title>
+                        <img src="/img/icons/achievements.svg" alt="Achievements icon" class="mr-2 h-5"/>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Clear and organized
+                        </h3>
+                    </template>
+                    <template v-slot:left>
+                        <p class="text-gray-600 mb-2">
+                            Use the neat Flowchart overview of your completed and unlocked scenarios to keep track
+                            of your progress.
+                            The scenarios are color coded to quickly find available ones.
+                        </p>
+                        <p class="text-gray-600 mb-2">
+                            Furthermore, it keeps your story organized!
+                        </p>
+                        <p class="text-gray-600 mb-2">
+                            Blocked scenarios are displayed, along with their requirements. This way, you won't need
+                            to read up the requirements in the book and risk seeing spoilers.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            When you complete scenarios, you will be granted Party and Global achievements.
+                            The app features an achievements overview, where all your accomplishments are displayed.
+                        </p>
+                        <p class="mb-4">
+                            <a :href="appUrl"
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                Open storyline
+                            </a>
+                        </p>
+                        <p class="text-gray-600">
+                            (Removed details to prevent spoilers)
+                        </p>
+                    </template>
+                    <template v-slot:right>
+                        <img src="/img/gloomhaven-storyline-spoilerfree.jpg" class="w-full mx-auto rounded-md shadow-md"
                              alt="Gloomhaven schreenshot spoiler free"/>
-                    </div>
-                    <div class="w-full sm:w-1/2 p-6 mt-6">
-                        <div class="align-middle">
-                            <div class="flex items-center mb-4">
-                                <img src="/img/icons/achievements.svg" alt="Achievements icon" class="mr-2 h-5"/>
-                                <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                                    Clear and organized
-                                </h3>
-                            </div>
-                            <p class="text-gray-600 mb-2">
-                                Use the neat Flowchart overview of your completed and unlocked scenarios to keep track
-                                of your progress.
-                                The scenarios are color coded to quickly find available ones.
-                            </p>
-                            <p class="text-gray-600 mb-2">
-                                Furthermore, it keeps your story organized!
-                            </p>
-                            <p class="text-gray-600 mb-2">
-                                Blocked scenarios are displayed, along with their requirements. This way, you won't need
-                                to read up the requirements in the book and risk seeing spoilers.
-                            </p>
-                            <p class="text-gray-600 mb-4">
-                                When you complete scenarios, you will be granted Party and Global achievements.
-                                The app features an achievements overview, where all your accomplishments are displayed.
-                            </p>
-                            <p class="mb-4">
-                                <a :href="this.appUrl"
-                                   class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
-                                    Open storyline
-                                </a>
-                            </p>
-                            <p class="text-gray-600">
-                                (Removed details to prevent spoilers)
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    </template>
+                </two-column-content>
 
-                <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                    <div class="w-full sm:w-1/2 p-6 mt-6">
-                        <div class="align-middle">
-                            <div class="flex items-center mb-4">
-                                <i class="material-icons text-gray-800 mr-2" aria-hidden="true">share</i>
-                                <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                                    Share with party
-                                </h3>
-                            </div>
-                            <p class="text-gray-600 mb-2">
-                                Share your progress with your party members! Easy with Gloomhaven Storyline!
-                            </p>
-                            <p class="text-gray-600 mb-4">
-                                You can share your progress manually, or have the app sync it automagically between you
-                                and your party members by purchasing a license.
-                                Only one person in your party needs to <a href="#pricing" class="link">purchase a
-                                license</a>, and your whole party can benefit!
-                            </p>
-                            <p class="mb-4">
-                                <a :href="this.appUrl"
-                                   class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
-                                    Open storyline
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w-full sm:w-1/2 p-6 mt-6">
-                        <img src="/img/gloomhaven1.jpg" class="w-full mx-auto" alt="Gloomhaven"/>
-                    </div>
-                </div>
 
-                <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                    <div class="w-full sm:w-1/2 p-6 mt-6">
-                        <webp src="/img/party-sheet.jpg" class="w-full mx-auto" alt="Gloomhaven Party Sheet"/>
-                    </div>
-                    <div class="w-full sm:w-1/2 p-6 mt-6">
-                        <div class="align-middle">
-                            <div class="flex items-center mb-4">
-                                <i class="material-icons text-gray-800 mr-2" aria-hidden="true">assignment</i>
-                                <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                                    Party Sheet
-                                </h3>
-                            </div>
-                            <p class="text-gray-600 mb-2">
-                                Gloomhaven storyline tracker features a Party Sheet!
-                            </p>
-                            <p class="text-gray-600 mb-4">
-                                With it, you can track party-related info like reputation, donations, prosperity and
-                                more, all in one place!
-                            </p>
-                            <p class="mb-4">
-                                <a :href="this.appUrl+'/#/party'"
-                                   class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
-                                    Open partysheet
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <two-column-content>
+                    <template v-slot:title>
+                        <i class="material-icons text-gray-800 mr-2" aria-hidden="true">share</i>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Share with party
+                        </h3>
+                    </template>
+                    <template v-slot:left>
+                        <p class="text-gray-600 mb-2">
+                            Share your progress with your party members! Easy with Gloomhaven Storyline!
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            You can share your progress manually, or have the app sync it automagically between you
+                            and your party members by purchasing a license.
+                            Only one person in your party needs to <a href="#pricing" class="link">purchase a
+                            license</a>, and your whole party can benefit!
+                        </p>
+                        <p class="mb-4">
+                            <a :href="appUrl"
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                Open storyline
+                            </a>
+                        </p>
+                    </template>
+                    <template v-slot:right>
+                        <img src="/img/gloomhaven1.jpg" class="w-full mx-auto rounded-md shadow-md" alt="Gloomhaven"/>
+                    </template>
+                </two-column-content>
 
-                <div class="flex flex-wrap">
-                    <div class="w-5/6 sm:w-1/2 p-6">
-                        <div class="flex items-center mb-4">
-                            <i class="material-icons text-gray-800 mr-2" aria-hidden="true">map</i>
-                            <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                                Map view
-                            </h3>
-                        </div>
+
+                <two-column-content reverse>
+                    <template v-slot:title>
+                        <i class="material-icons text-gray-800 mr-2" aria-hidden="true">assignment</i>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Party Sheet
+                        </h3>
+                    </template>
+                    <template v-slot:left>
+                        <p class="text-gray-600 mb-2">
+                            Gloomhaven storyline tracker features a Party Sheet!
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            With it, you can track party-related info like reputation, donations, prosperity and
+                            more, all in one place!
+                        </p>
+                        <p class="mb-4">
+                            <a :href="appUrl+'/#/party'"
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                Open partysheet
+                            </a>
+                        </p>
+                    </template>
+                    <template v-slot:right>
+                        <webp src="/img/party-sheet.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Gloomhaven Party Sheet"/>
+                    </template>
+                </two-column-content>
+
+
+                <two-column-content>
+                    <template v-slot:title>
+                        <i class="material-icons text-gray-800 mr-2" aria-hidden="true">map</i>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Map view
+                        </h3>
+                    </template>
+                    <template v-slot:left>
                         <p class="text-gray-600 mb-2">
                             See all of the scenarios you've played and achievements you've gained, displayed on the
                             original Gloomhaven map!
@@ -157,28 +156,27 @@
                             functionality of the Flowchart view is also available in this Map view.
                         </p>
                         <p class="mb-4">
-                            <a :href="this.appUrl+'/#/map'"
+                            <a :href="appUrl+'/#/map'"
                                class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open map
                             </a>
                         </p>
-                    </div>
-                    <div class="w-full sm:w-1/2 p-6">
-                        <webp src="/img/map-zoomed.jpg" class="w-full mx-auto" alt="Gloomhaven Scenario 1"/>
-                    </div>
-                </div>
+                    </template>
+                    <template v-slot:right>
+                        <webp src="/img/map-zoomed.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Gloomhaven Scenario 1"/>
+                    </template>
+                </two-column-content>
 
-                <div class="flex flex-wrap">
-                    <div class="w-full sm:w-1/2 p-6">
-                        <webp src="/img/gloomhaven-filters.jpg" class="w-full mx-auto" alt="Gloomhaven Filters"/>
-                    </div>
-                    <div class="w-5/6 sm:w-1/2 p-6">
-                        <div class="flex items-center mb-4">
-                            <i class="material-icons text-gray-800 mr-2" aria-hidden="true">filter_list</i>
-                            <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                                Filters
-                            </h3>
-                        </div>
+
+                <two-column-content reverse>
+                    <template v-slot:title>
+                        <i class="material-icons text-gray-800 mr-2" aria-hidden="true">filter_list</i>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Filters
+                        </h3>
+                    </template>
+                    <template v-slot:left>
                         <p class="text-gray-600 mb-2">
                             Gloomhaven Storyline includes the option to track looted chests and a filter feature to find
                             completed scenarios with chests you missed.
@@ -188,13 +186,17 @@
                             quest.
                         </p>
                         <p class="mb-4">
-                            <a :href="this.appUrl+'/#/scenarios'"
+                            <a :href="appUrl+'/#/scenarios'"
                                class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open scenario list
                             </a>
                         </p>
-                    </div>
-                </div>
+                    </template>
+                    <template v-slot:right>
+                        <webp src="/img/gloomhaven-filters.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Gloomhaven Filters"/>
+                    </template>
+                </two-column-content>
 
             </div>
         </section>
@@ -247,13 +249,13 @@
                             <i class="material-icons mr-2" aria-hidden="true">api</i>
                             Virtual Gloomhaven Board
                         </div>
-                        <p class="text-gray-800 px-6 mb-2">
+                        <p class="text-gray-600 px-6 mb-2">
                             Hobnobuks Virtual Gloomhaven Board is designed to help people play Gloomhaven remotely,
                             without the need for a physical board.
                             Gloomhaven Storyline features integration with this great tool, allowing you to open the
                             virtual board directly from the scenario view.
                         </p>
-                        <p class="text-gray-800 px-6 mb-2">
+                        <p class="text-gray-600 px-6 mb-2">
                             Registered users will join the same room as party members automatically!
                         </p>
                     </div>
@@ -286,9 +288,10 @@
 import Pricing from "../pages/sections/Pricing";
 import HeroHeader from "../pages/sections/HeroHeader";
 import Creation from "../pages/sections/Creation";
+import TwoColumnContent from "../pages/sections/TwoColumnContent";
 
 export default {
-    components: {HeroHeader, Pricing, Creation},
+    components: {HeroHeader, TwoColumnContent, Pricing, Creation},
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,
