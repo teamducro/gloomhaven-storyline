@@ -2,7 +2,11 @@
     <div>
         <hero-header/>
 
-        <section class="wave-mask bg-white border-b pt-48 pb-8">
+        <div class="w-full pt-4">
+            <webp src="img/wave.png" alt="background wave" class="object-cover"/>
+        </div>
+
+        <section class="bg-white border-b pt-4 pb-8">
             <div class="container max-w-5xl mx-auto">
                 <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-800">Get the
                     most out of Gloomhaven</h1>
@@ -267,7 +271,11 @@
 
         <creation></creation>
 
-        <section class="container mx-auto text-center py-6 mb-12">
+        <div class="w-full pb-4 -mt-1">
+            <webp src="img/wave.png" alt="background wave" class="object-cover transform rotate-180"/>
+        </div>
+
+        <section class="container mx-auto text-center px-4 py-6 mb-12">
 
             <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-white">Enjoy
                 Gloomhaven</h1>

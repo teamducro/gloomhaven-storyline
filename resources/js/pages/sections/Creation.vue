@@ -1,7 +1,9 @@
 <template>
-    <section class="wave-mask-reverse bg-white border-b pb-32 pt-16">
+    <section class="bg-white border-b pt-16">
         <div class="container max-w-5xl mx-auto p-8">
-            <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-800">The creation</h1>
+            <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-800">
+                The creation
+            </h1>
             <div class="w-full mb-4">
                 <div class="h-2px mx-auto gradient w-64 opacity-75 my-0 py-0 rounded shadow"></div>
             </div>
@@ -10,17 +12,21 @@
                 <div class="w-5/6 md:w-1/2 p-6">
                     <h2 class="mb-4 text-2xl text-gray-800">Why dit I create this app?</h2>
                     <p class="text-gray-600 mb-2">
-                        Remembering what happened in the scenario's leading up to the unlocked scenarios can be a challenge. Gloomhaven Storyline helps you to stay immersed in the story instead of randomly picking scenarios.
+                        Remembering what happened in the scenario's leading up to the unlocked scenarios can be a
+                        challenge. Gloomhaven Storyline helps you to stay immersed in the story instead of randomly
+                        picking scenarios.
                     </p>
                     <p class="text-gray-600 mb-2">
-                        There are great scenario charts made by the community, but it is a bit of a spoiler to see an overview of all the scenarios you are yet to play.
-                        Reading through the introductions and conclusions of the scenarios takes up a bit of unnecessary time, also.
-                        The Gloomhaven community comes to the resque with written summaries of the sub-stories for every scenario.
-                        These are displayed on scenarios as a summary of how you got there.
+                        There are great scenario charts made by the community, but it is a bit of a spoiler to see an
+                        overview of all the scenarios you are yet to play. Reading through the introductions and
+                        conclusions of the scenarios takes up a bit of unnecessary time, also.
+                        The Gloomhaven community comes to the resque with written summaries of the sub-stories for every
+                        scenario. These are displayed on scenarios as a summary of how you got there.
                     </p>
                     <p class="text-gray-600 mb-2">
-                        As a developer, this presented a nice challenge to combine these two resources (charts and summaries) into a neat mobile friendly web application.
-                        This would enable my party and I to register what scenarios we had finished and read the story for each new unlocked scenario!
+                        As a developer, this presented a nice challenge to combine these two resources (charts and
+                        summaries) into a neat mobile friendly web application. This would enable my party and I to
+                        register what scenarios we had finished and read the story for each new unlocked scenario!
                     </p>
                 </div>
 
@@ -79,8 +85,10 @@
                     </ul>
 
                     <p class="my-4 text-gray-600">
-                        All content remains under creative commons license <a class="link" rel="noreferrer" target="_blank"
-                                                                              href="https://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0</a>.
+                        All content remains under creative commons license <a class="link" rel="noreferrer"
+                                                                              target="_blank"
+                                                                              href="https://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA
+                        4.0</a>.
                     </p>
                 </div>
             </div>

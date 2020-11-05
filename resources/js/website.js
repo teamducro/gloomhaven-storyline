@@ -13,6 +13,7 @@ import ShareIcons from "./components/elements/ShareIcons";
 import Toast from "./components/elements/Toast";
 import Webp from "./components/elements/Webp";
 import TopMenu from "./pages/sections/TopMenu";
+import SiteFooter from "./pages/sections/SiteFooter";
 
 window.Vue = require('vue');
 window.axios = require('axios').default.create({
@@ -35,6 +36,7 @@ Vue.component('webp', Webp);
 
 // Vue page sections
 Vue.component('top-menu', TopMenu);
+Vue.component('site-footer', SiteFooter);
 
 // Router
 const router = new VueRouter({
