@@ -2,9 +2,9 @@
     <nav id="header" class="fixed w-full z-30 top-0 text-white"
          :class="{'bg-white': fixedHeader || menuVisible, shadow: fixedHeader || menuVisible}">
 
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="px-4 w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
 
-            <div class="pl-4 flex items-center w-full xs:w-auto">
+            <div class="flex items-center w-full xs:w-auto">
                 <a class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/"
                    :class="{'text-gray-100': !fixedHeader || !menuVisible, 'text-gray-800': fixedHeader || menuVisible}">
                     <webp class="inline" src="/img/gloomhaven-logo.png" alt="Gloomhaven" width="250" height="37"></webp>
