@@ -3,7 +3,7 @@
         <hero-header/>
 
         <div class="w-full pt-4">
-            <webp src="img/wave.png" alt="background wave" class="object-cover" :lazy="false"/>
+            <webp src="img/wave.png" alt="background wave" class="w-full object-cover" :lazy="false"/>
         </div>
 
         <section class="bg-white border-b pt-4 pb-8">
@@ -277,7 +277,7 @@
         <creation></creation>
 
         <div class="w-full pb-4 -mt-1">
-            <webp src="img/wave.png" alt="background wave" class="object-cover transform rotate-180"/>
+            <webp src="img/wave.png" alt="background wave" class="w-full object-cover transform rotate-180"/>
         </div>
 
         <section class="container mx-auto text-center px-4 py-6 mb-12">
