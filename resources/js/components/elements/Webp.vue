@@ -5,7 +5,8 @@
              :width="width"
              @error=" this.error" @load="loaded"/>
     </transition>
-    <img v-else v-show="isLoaded" :src="source"
+    <img v-else :src="source"
+         :loading="lazy ? 'lazy' : 'auto'"
          :class="imageClasses"
          :width="width"
          @error="this.error" @load="loaded"/>
@@ -33,7 +34,11 @@
             retina: {
                 type: Boolean,
                 default: false
-            }
+            },
+            lazy: {
+                type: Boolean,
+                default: true
+            },
         },
         data() {
             return {

@@ -7,7 +7,7 @@
             <div class="flex items-center w-full xs:w-auto">
                 <a class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/"
                    :class="{'text-gray-100': !fixedHeader || !menuVisible, 'text-gray-800': fixedHeader || menuVisible}">
-                    <webp class="inline" src="/img/gloomhaven-logo.png" alt="Gloomhaven" width="250" height="37"></webp>
+                    <webp class="inline" src="/img/gloomhaven-logo.png" alt="Gloomhaven" width="250" height="37" :lazy="false"></webp>
                     <span class="hidden sm:inline">Storyline</span>
                 </a>
 

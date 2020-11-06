@@ -3,7 +3,7 @@
         <hero-header/>
 
         <div class="w-full pt-4">
-            <webp src="img/wave.png" alt="background wave" class="object-cover"/>
+            <webp src="img/wave.png" alt="background wave" class="object-cover" :lazy="false"/>
         </div>
 
         <section class="bg-white border-b pt-4 pb-8">
@@ -78,7 +78,9 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <img src="/img/gloomhaven-storyline-spoilerfree.jpg" class="w-full mx-auto rounded-md shadow-md"
+                        <img src="/img/gloomhaven-storyline-spoilerfree.jpg"
+                             loading="lazy"
+                             class="w-full mx-auto rounded-md shadow-md"
                              alt="Gloomhaven schreenshot spoiler free"/>
                     </template>
                 </two-column-content>
@@ -109,7 +111,10 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <img src="/img/gloomhaven1.jpg" class="w-full mx-auto rounded-md shadow-md" alt="Gloomhaven"/>
+                        <img src="/img/gloomhaven1.jpg"
+                             class="w-full mx-auto rounded-md shadow-md"
+                             alt="Gloomhaven"
+                             loading="lazy"/>
                     </template>
                 </two-column-content>
 
