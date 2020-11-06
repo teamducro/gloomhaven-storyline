@@ -24,7 +24,10 @@
                 </div>
                 <!--Right Col-->
                 <div class="w-full md:w-1/2 py-6 text-center md:pl-2">
-                    <webp class="w-full z-50" src="/img/gloomhaven-cover.png" alt="Gloomhaven starter characters"/>
+                    <webp class="w-full z-50"
+                          src="/img/gloomhaven-cover.png"
+                          alt="Gloomhaven starter characters"
+                          :lazy="false"/>
                 </div>
             </div>
         </div>
