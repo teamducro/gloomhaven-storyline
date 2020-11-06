@@ -262,7 +262,7 @@ export default {
             }
         },
         3: {
-            "name": "Seeking Gloom",
+            "name": "Die Suche nach gloom",
             "sections": {
                 1: "The Bandit Commander's proclamations of a \"Gloom\" during your battle do not sit well with you. Sifting through the carnage left by the battle, you found a cache of scrolls. The writing upon them was in some unknown archaic language. Among the scrolls, you found a map of the northern countryside. A bend in the Still River was clearly marked as a point of interest. Contemplating whether you want to find out more about this so-called \"Gloom,\" you decided that the spot could be a point of interest for you, as well.",
                 2: "The map lead to a crypt full of demons and cultists. Clearly, the bandits are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One is marked as being overrun by vicious undead. It looks as though you have an opportunity to get in the cult's good graces by helping to clear out a threat. This may help you learn more about the \"Gloom\".",
