@@ -101,6 +101,10 @@
                 "GAT3",
                 "GAT4",
                 "GAT5"
+            ],
+            "manual": true,
+            "card": [
+                "C-03"
             ]
         },
         {
@@ -281,6 +285,115 @@
             "id": "PTTN",
             "name": "Through the Nest",
             "type": "Party"
+        },
+        {
+            "id": "PAMT",
+            "name": "A Map to Treasure",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-08"
+            ]
+        },
+        {
+            "id": "PBB",
+            "name": "Bad Business",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-31"
+            ]
+        },
+        {
+            "id": "PTPS",
+            "name": "The Poison's Source",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-47"
+            ]
+        },
+        {
+            "id": "PSB",
+            "name": "Sun-Blessed",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-48"
+            ]
+        },
+        {
+            "id": "PSR",
+            "name": "Sin-Ra",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-64"
+            ]
+        },
+        {
+            "id": "PDC",
+            "name": "Debt Collection",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-67"
+            ]
+        },
+        {
+            "id": "PWS",
+            "name": "Water Staff",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-68"
+            ]
+        },
+        {
+            "id": "PFA",
+            "name": "Fish's Aid",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-72"
+            ]
+        },
+        {
+            "id": "PT",
+            "name": "Tremors",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-73"
+            ]
+        },
+        {
+            "id": "PHSE",
+            "name": "High Sea Escort",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-76"
+            ]
+        },
+        {
+            "id": "PGJ",
+            "name": "Grave Job",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-77"
+            ]
+        },
+        {
+            "id": "PNE",
+            "name": "Northern Expedition",
+            "type": "Party",
+            "manual": true,
+            "card": [
+                "C-83",
+                "R-83"
+            ]
         }
     ]
 }
