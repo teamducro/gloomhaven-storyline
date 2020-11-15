@@ -2714,6 +2714,13 @@
                 94
             ],
             "requirements": "High Sea Escort (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PHSE"
+                    ]
+                }
+            ],
             "chapter_id": 15,
             "treasures": {
                 "20": "Random Item Design"
@@ -2742,6 +2749,13 @@
                 95
             ],
             "requirements": "Grave Job (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PGJ"
+                    ]
+                }
+            ],
             "chapter_id": 15,
             "treasures": {
                 "53": "Random Item Design"
@@ -2833,6 +2847,13 @@
                 101
             ],
             "requirements": "Fish’s Aid (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PFA"
+                    ]
+                }
+            ],
             "chapter_id": 15,
             "treasures": {
                 "52": "Gain “Heart of the Betrayer” (Item 131)"
@@ -2944,6 +2965,13 @@
                 105
             ],
             "requirements": "Bad Business (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PBB"
+                    ]
+                }
+            ],
             "chapter_id": 15,
             "region_ids": [
                 1
@@ -2968,6 +2996,13 @@
                 106
             ],
             "requirements": "Tremors (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PT"
+                    ]
+                }
+            ],
             "chapter_id": 13,
             "treasures": {
                 "42": "Random Item Design"
@@ -2978,6 +3013,10 @@
             "rewards": [
                 "“Resonant Crystal” (Item 133)",
                 "+1 prosperity"
+            ],
+            "cards": [
+                "R-11",
+                "C-73"
             ]
         },
         {
@@ -3050,6 +3089,13 @@
                 110
             ],
             "requirements": "The Poison’s Source (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PTPS"
+                    ]
+                }
+            ],
             "chapter_id": 15,
             "linked_from": [
                 86
@@ -3078,14 +3124,15 @@
                 111
             ],
             "requirements": "Water-Breathing (Global) and Water Staff (Party) COMPLETE",
-            "chapter_id": 15,
             "required_by": [
                 {
                     "complete": [
-                        "GWB"
+                        "GWB",
+                        "PWS"
                     ]
                 }
             ],
+            "chapter_id": 15,
             "treasures": {
                 "8": "Gain 1 ✔",
                 "37": "Gain 1 ✔"
@@ -3114,6 +3161,13 @@
                 112
             ],
             "requirements": "Sin-Ra (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PSR"
+                    ]
+                }
+            ],
             "chapter_id": 15,
             "treasures": {
                 "13": "Suffer 5 Damage and gain POISON and WOUND",
@@ -3190,6 +3244,13 @@
                 115
             ],
             "requirements": "Debt Collection (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PDC"
+                    ]
+                }
+            ],
             "chapter_id": 15,
             "region_ids": [
                 1
@@ -3217,6 +3278,13 @@
                 116
             ],
             "requirements": "A Map to Treasure (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PAMT"
+                    ]
+                }
+            ],
             "chapter_id": 15,
             "treasures": {
                 "54": "Gain “Doomed Compass” (Item 124)"

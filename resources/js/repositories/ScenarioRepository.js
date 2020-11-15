@@ -26,7 +26,15 @@ export default class ScenarioRepository {
         if (scenario.isComplete()) {
             this.processAchievements(scenario);
         } else if (previousState === ScenarioState.complete && (scenario.isIncomplete() || scenario.isHidden())) {
-            this.undoAchievements(scenario)
+            this.undoAchievements(scenario);
+        }
+
+        if (scenario.is_side && !scenario.required_by.isEmpty()) {
+            if (!scenario.isHidden()) {
+                this.processManualAchievements(scenario);
+            } else {
+                this.undoManualAchievements(scenario);
+            }
         }
 
         if (shouldValidate) {
@@ -111,6 +119,20 @@ export default class ScenarioRepository {
         }
     }
 
+    processManualAchievements(scenario) {
+        this.achievementRepository.getManualAchievementsByRequiredScenario(scenario, false)
+            .each(achievement => {
+                this.achievementRepository.gain(achievement.id);
+            });
+    }
+
+    undoManualAchievements(scenario) {
+        this.achievementRepository.getManualAchievementsByRequiredScenario(scenario, true)
+            .each(achievement => {
+                this.achievementRepository.remove(achievement.id);
+            });
+    }
+
     choice(scenario) {
         return this.findMany(scenario.choices).firstWhere('state', '!=', ScenarioState.hidden);
     }
@@ -169,6 +191,17 @@ export default class ScenarioRepository {
             .where('state', '!=', ScenarioState.hidden);
     }
 
+    getSideScenarioByManualAchievement(achievement) {
+        return this.where((scenario) => {
+            return scenario.is_side
+                && !scenario.required_by.isEmpty()
+                && scenario.required_by.contains((condition) => {
+                    let complete = condition.complete || [];
+                    return complete.includes(achievement.id);
+                })
+        }).first();
+    }
+
     fetchChapter(scenario) {
         if (scenario.chapter_id) {
             scenario.chapter_name = this.chapters.firstWhere('id', scenario.chapter_id).name;
@@ -188,15 +221,15 @@ export default class ScenarioRepository {
     }
 
     get chapters() {
-        return this.chapters2 || (this.chapters2 = collect(scenarios.chapters));
+        return this._chapters || (this._chapters = collect(scenarios.chapters));
     }
 
     get regions() {
-        return this.regions2 || (this.regions2 = collect(scenarios.regions));
+        return this._regions || (this._regions = collect(scenarios.regions));
     }
 
     get scenarioValidator() {
-        return this.scenarioValidator2 || (this.scenarioValidator2 = new ScenarioValidator);
+        return this._scenarioValidator || (this._scenarioValidator = new ScenarioValidator);
     }
 
     get achievementRepository() {

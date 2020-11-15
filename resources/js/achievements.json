@@ -102,9 +102,9 @@
                 "GAT4",
                 "GAT5"
             ],
-            "manual": true,
-            "card": [
-                "C-03"
+            "is_manual": true,
+            "cards": [
+                "C-3"
             ]
         },
         {
@@ -277,11 +277,6 @@
             "x": 73.4
         },
         {
-            "id": "PTPS",
-            "name": "The Poisons Source",
-            "type": "Party"
-        },
-        {
             "id": "PTTN",
             "name": "Through the Nest",
             "type": "Party"
@@ -290,17 +285,17 @@
             "id": "PAMT",
             "name": "A Map to Treasure",
             "type": "Party",
-            "manual": true,
-            "card": [
-                "C-08"
+            "is_manual": true,
+            "cards": [
+                "C-8"
             ]
         },
         {
             "id": "PBB",
             "name": "Bad Business",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-31"
             ]
         },
@@ -308,8 +303,8 @@
             "id": "PTPS",
             "name": "The Poison's Source",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-47"
             ]
         },
@@ -317,8 +312,8 @@
             "id": "PSB",
             "name": "Sun-Blessed",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-48"
             ]
         },
@@ -326,8 +321,8 @@
             "id": "PSR",
             "name": "Sin-Ra",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-64"
             ]
         },
@@ -335,8 +330,8 @@
             "id": "PDC",
             "name": "Debt Collection",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-67"
             ]
         },
@@ -344,17 +339,17 @@
             "id": "PWS",
             "name": "Water Staff",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-68"
             ]
         },
         {
             "id": "PFA",
-            "name": "Fish's Aid",
+            "name": "Fishs Aid",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-72"
             ]
         },
@@ -362,8 +357,8 @@
             "id": "PT",
             "name": "Tremors",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-73"
             ]
         },
@@ -371,8 +366,8 @@
             "id": "PHSE",
             "name": "High Sea Escort",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-76"
             ]
         },
@@ -380,8 +375,8 @@
             "id": "PGJ",
             "name": "Grave Job",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-77"
             ]
         },
@@ -389,8 +384,8 @@
             "id": "PNE",
             "name": "Northern Expedition",
             "type": "Party",
-            "manual": true,
-            "card": [
+            "is_manual": true,
+            "cards": [
                 "C-83",
                 "R-83"
             ]

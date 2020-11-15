@@ -156,26 +156,7 @@
                                 </transition-expand>
                             </template>
 
-                            <template v-if="scenario.hasCard()"
-                                      v-for="(card, index) in scenario.cards">
-                                <button class="mdc-button normal-case -ml-2"
-                                        @click="toggleQuest(questCount + index)">
-                                    <span class="mdc-button__label font-title text-white">{{ card.title }}</span>
-                                    <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
-                                       :class="{'rotate-0': questExpand[questCount + index], 'rotate-180': !questExpand[questCount + index]}">
-                                        keyboard_arrow_up
-                                    </i>
-                                </button>
-                                <transition-expand>
-                                    <div v-if="questExpand[questCount + index]">
-                                        <webp v-for="(image, index) in card.images"
-                                              :key="card.id + '-' + index"
-                                              :src="image"
-                                              class="mb-4"
-                                              :alt="card.title"/>
-                                    </div>
-                                </transition-expand>
-                            </template>
+                            <cards v-if="scenario.hasCard()" :cards="scenario.cards"></cards>
                         </div>
 
                         <div class="mb-6 hidden">
@@ -259,11 +240,13 @@ import {MDCTextField} from "@material/textfield/component";
 import {ScenarioState} from "../../models/ScenarioState";
 import PreloadImage from "../../services/PreloadImage";
 import StoryRepository from "../../repositories/StoryRepository";
+import Cards from "../presenters/cards/Cards";
 
 const md5 = require('js-md5');
 const queryString = require('query-string');
 
 export default {
+    components: {Cards},
     data() {
         return {
             scenario: null,

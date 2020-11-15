@@ -2,6 +2,7 @@ import achievements from '../achievements.json';
 import Achievement from "../models/Achievement";
 import ScenarioRepository from "./ScenarioRepository";
 import AchievementGroup from "../models/AchievementGroup";
+import {ScenarioState} from "../models/ScenarioState";
 
 export default class AchievementRepository {
 
@@ -38,6 +39,16 @@ export default class AchievementRepository {
         }
 
         achievement.gain();
+
+        if (achievement.is_manual) {
+            const scenarioToUnlock = this.scenarioRepository.getSideScenarioByManualAchievement(achievement)
+            if (scenarioToUnlock
+                && scenarioToUnlock.state !== ScenarioState.incomplete
+                && scenarioToUnlock.state !== ScenarioState.complete) {
+                this.scenarioRepository.changeState(scenarioToUnlock, ScenarioState.incomplete);
+                console.log(scenarioToUnlock.state);
+            }
+        }
     }
 
     remove(id) {
@@ -57,6 +68,13 @@ export default class AchievementRepository {
         }
 
         achievement.remove();
+
+        if (achievement.is_manual) {
+            const scenarioToHide = this.scenarioRepository.getSideScenarioByManualAchievement(achievement);
+            if (scenarioToHide && scenarioToHide.isVisible()) {
+                this.scenarioRepository.changeState(scenarioToHide, ScenarioState.hidden);
+            }
+        }
     }
 
     lose(id) {
@@ -76,6 +94,26 @@ export default class AchievementRepository {
 
     where(filter) {
         return app.achievements.filter(filter);
+    }
+
+    searchManual(query) {
+        query = query.trim().toLowerCase();
+        return this.where((achievement) => {
+            return achievement.is_manual
+                && !achievement.manual_awarded
+                && achievement.name.toLowerCase().startsWith(query);
+        });
+    }
+
+    getManualAchievementsByRequiredScenario(scenario, isAwarded = true) {
+        let achievements = collect();
+        scenario.required_by.each((condition) => {
+            let complete = condition.complete || [];
+            this.findMany(complete)
+                .filter(achievement => achievement.is_manual && achievement.manual_awarded === isAwarded)
+                .each(achievement => achievements.push(achievement));
+        });
+        return achievements;
     }
 
     groups() {
