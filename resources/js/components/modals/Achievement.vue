@@ -3,13 +3,6 @@
         <modal ref="modal" :title="achievement ? achievement.displayName : ''" :titleDivider="true">
             <template v-slot:content>
                 <div class="flex flex-row justify-between" v-if="achievement">
-                    <button v-if="achievement.is_manual"
-                            class="mdc-button mdc-button--raised origin-right transform scale-75 absolute right-0 top-0 mr-6 mt-18"
-                            @click="removeManualAchievement(achievement)">
-                        <i class="material-icons mdc-button__icon">delete</i>
-                        <span class="mdc-button__label">{{ $t('Remove') }}</span>
-                    </button>
-
                     <div class="i-my-4">
                         <!-- TODO: Maybe add flavor text/story for the Achievements -->
                         <h2 v-if="!awardedFrom.isEmpty()" class="text-white">{{ $t('Gained from') }}:
@@ -32,8 +25,15 @@
                                              :scenario="scenario" :key="scenario.id"/>
                         </h2>
                     </div>
-                    <div class="w-12">
-                        <webp v-if="achievement.isGlobal()"
+                    <div>
+                        <button v-if="achievement.is_manual"
+                                class="mdc-button mdc-button--raised origin-right transform scale-75 my-4"
+                                @click="removeManualAchievement(achievement)">
+                            <i class="material-icons mdc-button__icon">delete</i>
+                            <span class="mdc-button__label">{{ $t('Remove') }}</span>
+                        </button>
+                        <webp class="w-12 ml-auto"
+                              v-if="achievement.isGlobal()"
                               :src="achievement.image"
                               :animate="true"
                               :alt="achievement.displayName"/>
