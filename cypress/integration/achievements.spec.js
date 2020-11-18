@@ -80,4 +80,59 @@ describe('Achievements', () => {
             expect(a.awarded).true;
         });
     });
+
+    it('It gains a manual achievement when unlocking a scenario required by one', () => {
+        cy.visit('/tracker');
+
+        utilities.incompleteScenario(74);
+
+        utilities.achievements().then((achievements) => {
+            let a = achievements.firstWhere('id', 'PHSE');
+            expect(a.awarded).true;
+        });
+    });
+
+    it('It loses a manual achievement when locking a scenario required by one', () => {
+        cy.visit('/tracker');
+
+        utilities.incompleteScenario(74);
+        utilities.lockSideScenario(74);
+
+        utilities.achievements().then((achievements) => {
+            let a = achievements.firstWhere('id', 'PHSE');
+            expect(a.awarded).false;
+        });
+    });
+
+    it('It can search for manual achievements', () => {
+        cy.visit('/tracker/#/achievements');
+
+        cy.get('button').contains('add').click();
+        cy.get('input[name=achievement-to-add]').type('hi');
+        cy.get('li').contains('High Sea Escort').click();
+        cy.get('#party-achievements li').contains('High Sea Escort').should('be.visible');
+
+        // And it unlocks the required scenario
+        cy.visit('/tracker/#/story');
+        utilities.isNodeIncomplete(74);
+    });
+
+    it('It can remove manual achievements', () => {
+        cy.visit('/tracker/#/achievements');
+
+        cy.get('button').contains('add').click();
+        cy.get('input[name=achievement-to-add]').type('hi');
+        cy.get('li').contains('High Sea Escort').click();
+        cy.get('#party-achievements li').contains('High Sea Escort').click();
+        cy.get('button').contains('Remove').click();
+
+        utilities.achievements().then((achievements) => {
+            let a = achievements.firstWhere('id', 'PHSE');
+            expect(a.awarded).false;
+        });
+
+        // And it locks the required scenario
+        cy.visit('/tracker/#/story');
+        utilities.isSideNodeHidden(74);
+    });
 });
