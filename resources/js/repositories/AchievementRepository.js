@@ -3,6 +3,7 @@ import Achievement from "../models/Achievement";
 import ScenarioRepository from "./ScenarioRepository";
 import AchievementGroup from "../models/AchievementGroup";
 import {ScenarioState} from "../models/ScenarioState";
+import scenarios from "../scenarios.json";
 
 export default class AchievementRepository {
 
@@ -105,14 +106,31 @@ export default class AchievementRepository {
         });
     }
 
+    getSideScenariosWithManualAchievements() {
+        let achievements = collect();
+
+        this.scenarioRepository.where(scenario => {
+            return scenario.is_side
+                && scenario.isVisible()
+                && !scenario.required_by.isEmpty();
+        }).each(scenario => {
+            this.getManualAchievementsByRequiredScenario(scenario, false)
+                .each(achievement => achievements.push(achievement));
+        });
+
+        return achievements;
+    }
+
     getManualAchievementsByRequiredScenario(scenario, isAwarded = true) {
         let achievements = collect();
+
         scenario.required_by.each((condition) => {
             let complete = condition.complete || [];
             this.findMany(complete)
                 .filter(achievement => achievement.is_manual && achievement.manual_awarded === isAwarded)
                 .each(achievement => achievements.push(achievement));
         });
+
         return achievements;
     }
 

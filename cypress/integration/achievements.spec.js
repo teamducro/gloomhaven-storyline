@@ -93,9 +93,13 @@ describe('Achievements', () => {
     });
 
     it('It loses a manual achievement when locking a scenario required by one', () => {
-        cy.visit('/tracker');
+        cy.visit('/tracker/?groups=CR_GCRM&states=74_i');
 
-        utilities.incompleteScenario(74);
+        utilities.achievements().then((achievements) => {
+            let a = achievements.firstWhere('id', 'PHSE');
+            expect(a.awarded).true;
+        });
+
         utilities.lockSideScenario(74);
 
         utilities.achievements().then((achievements) => {
@@ -118,11 +122,9 @@ describe('Achievements', () => {
     });
 
     it('It can remove manual achievements', () => {
+        cy.visit('/tracker/?groups=CR_GCRM&states=74_i');
         cy.visit('/tracker/#/achievements');
 
-        cy.get('button').contains('add').click();
-        cy.get('input[name=achievement-to-add]').type('hi');
-        cy.get('li').contains('High Sea Escort').click();
         cy.get('#party-achievements li').contains('High Sea Escort').click();
         cy.get('button').contains('Remove').click();
 
