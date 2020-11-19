@@ -121,7 +121,7 @@ export default {
     },
     methods: {
         async setAchievements() {
-            this.achievements = app.achievements;
+            this.achievements = app.achievements.sortBy('name');
 
             await this.$nextTick();
 
