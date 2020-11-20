@@ -15,7 +15,7 @@
 
                     <div class="mdc-list w-40">
                         <p class="text-white text-sm">
-                            Add achievements gained by events other then completing scenarios manually.
+                            Add achievements gained by events other than completing scenarios manually.
                         </p>
                         <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="achievement-to-add">
                             <span class="mdc-text-field__ripple"></span>
