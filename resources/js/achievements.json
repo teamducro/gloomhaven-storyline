@@ -389,6 +389,131 @@
                 "C-83",
                 "R-83"
             ]
+        },
+        {
+            "id": "GTTP",
+            "name": "Through the Portal",
+            "type": "Global"
+        },
+        {
+            "id": "GKIP",
+            "name": "Knowledge is Power",
+            "type": "Global",
+            "upgrades": [
+                "GKIP2",
+                "GKIP3",
+                "GKIP4"
+            ]
+        },
+        {
+            "id": "GKIP2",
+            "name": "Knowledge is Power x2",
+            "type": "Global",
+            "hidden": true
+        },
+        {
+            "id": "GKIP3",
+            "name": "Knowledge is Power x3",
+            "type": "Global",
+            "hidden": true
+        },
+        {
+            "id": "GKIP4",
+            "name": "Knowledge is Power x4",
+            "type": "Global",
+            "hidden": true
+        },
+        {
+            "id": "PAOD",
+            "name": "Angels of Death",
+            "type": "Party"
+        },
+        {
+            "id": "PC",
+            "name": "Custodians",
+            "type": "Party"
+        },
+        {
+            "id": "PHP",
+            "name": "Hunted Prey",
+            "type": "Party"
+        },
+        {
+            "id": "PPA",
+            "name": "Pieces of an Artifact",
+            "type": "Party",
+            "upgrades": [
+                "PPA2",
+                "PPA3"
+            ]
+        },
+        {
+            "id": "PPA2",
+            "name": "Pieces of an Artifact x2",
+            "type": "Party",
+            "hidden": true
+        },
+        {
+            "id": "PPA3",
+            "name": "Pieces of an Artifact x3",
+            "type": "Party",
+            "hidden": true
+        },
+        {
+            "id": "PGD",
+            "name": "Guard Detail",
+            "type": "Party"
+        },
+        {
+            "id": "PDE",
+            "name": "Dimensional Equilibrium",
+            "type": "Party"
+        },
+        {
+            "id": "PHH",
+            "name": "Hunting the Hunter",
+            "type": "Party"
+        },
+        {
+            "id": "PXA",
+            "name": "Xangroth's Aid",
+            "type": "Party"
+        },
+        {
+            "id": "PDA",
+            "name": "Diamara's Aid",
+            "type": "Party"
+        },
+        {
+            "id": "GAPA",
+            "name": "A Peril Averted",
+            "type": "Global",
+            "upgrades": [
+                "GAPA2",
+                "GAPA3"
+            ]
+        },
+        {
+            "id": "GAPA2",
+            "name": "A Peril Averted x2",
+            "type": "Global",
+            "hidden": true
+        },
+        {
+            "id": "GAPA3",
+            "name": "A Peril Averted x3",
+            "type": "Global",
+            "hidden": true
+        },
+        {
+            "id": "GMS",
+            "name": "Mechanical Splendor",
+            "type": "Global"
+        },
+        {
+            "id": "GST",
+            "name": "Severed Ties",
+            "type": "Global"
         }
     ]
 }

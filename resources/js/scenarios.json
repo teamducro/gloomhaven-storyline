@@ -9,7 +9,7 @@
                 "y": 41.6
             },
             "pages": [
-                3
+                "gh/3"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -34,8 +34,8 @@
                 "y": 41
             },
             "pages": [
-                4,
-                5
+                "gh/4",
+                "gh/5"
             ],
             "requirements": "First Steps (Party) COMPLETE",
             "required_by": [
@@ -73,8 +73,8 @@
                 "y": 43.585
             },
             "pages": [
-                5,
-                6
+                "gh/5",
+                "gh/6"
             ],
             "requirements": "The Merchant Flees (Global) INCOMPLETE",
             "required_by": [
@@ -125,7 +125,7 @@
                 "y": 31.19
             },
             "pages": [
-                7
+                "gh/7"
             ],
             "links_to": [
                 6,
@@ -154,7 +154,7 @@
                 "y": 26.58
             },
             "pages": [
-                8
+                "gh/8"
             ],
             "chapter_id": 3,
             "links_to": [
@@ -185,8 +185,8 @@
                 "y": 38.3
             },
             "pages": [
-                9,
-                10
+                "gh/9",
+                "gh/10"
             ],
             "chapter_id": 2,
             "links_to": [
@@ -221,8 +221,8 @@
                 "y": 19.85
             },
             "pages": [
-                10,
-                11
+                "gh/10",
+                "gh/11"
             ],
             "requirements": "The Power of Enhancement (Global) and The Merchant Flees (Global) COMPLETE",
             "required_by": [
@@ -256,7 +256,7 @@
                 "y": 18.1
             },
             "pages": [
-                12
+                "gh/12"
             ],
             "requirements": "Jekserah’s Plans (Party) COMPLETE and The Dead Invade (Global) INCOMPLETE",
             "required_by": [
@@ -311,7 +311,7 @@
                 "y": 70.65
             },
             "pages": [
-                13
+                "gh/13"
             ],
             "requirements": "The Merchant Flees (Global) INCOMPLETE",
             "required_by": [
@@ -359,7 +359,7 @@
                 "y": 23.56
             },
             "pages": [
-                14
+                "gh/14"
             ],
             "requirements": "The Rift Neutralized (Global) INCOMPLETE",
             "required_by": [
@@ -403,8 +403,8 @@
                 "y": 14.65
             },
             "pages": [
-                15,
-                16
+                "gh/15",
+                "gh/16"
             ],
             "requirements": "End of the Invasion (Global) INCOMPLETE",
             "required_by": [
@@ -458,8 +458,8 @@
                 "y": 14.65
             },
             "pages": [
-                16,
-                17
+                "gh/16",
+                "gh/17"
             ],
             "requirements": "End of the Invasion (Global) INCOMPLETE",
             "required_by": [
@@ -511,7 +511,7 @@
                 "y": 84.42
             },
             "pages": [
-                18
+                "gh/18"
             ],
             "choices": [
                 15,
@@ -546,8 +546,8 @@
                 "y": 19.33
             },
             "pages": [
-                19,
-                20
+                "gh/19",
+                "gh/20"
             ],
             "linked_from": [
                 5,
@@ -576,8 +576,8 @@
                 "y": 16.8
             },
             "pages": [
-                20,
-                21
+                "gh/20",
+                "gh/21"
             ],
             "chapter_id": 2,
             "linked_from": [
@@ -603,7 +603,7 @@
                 "y": 18.92
             },
             "pages": [
-                22
+                "gh/22"
             ],
             "links_to": [
                 25,
@@ -633,7 +633,7 @@
                 "y": 59.235
             },
             "pages": [
-                23
+                "gh/23"
             ],
             "chapter_id": 2,
             "linked_from": [
@@ -664,7 +664,7 @@
                 "y": 20.895
             },
             "pages": [
-                24
+                "gh/24"
             ],
             "chapter_id": 4,
             "links_to": [
@@ -697,8 +697,8 @@
                 "y": 74.64
             },
             "pages": [
-                25,
-                26
+                "gh/25",
+                "gh/26"
             ],
             "requirements": "The Power of Enhancement (Global) COMPLETE",
             "required_by": [
@@ -741,8 +741,8 @@
                 "y": 44.9
             },
             "pages": [
-                26,
-                27
+                "gh/26",
+                "gh/27"
             ],
             "requirements": "The Merchant Flees (Global) COMPLETE",
             "required_by": [
@@ -783,8 +783,8 @@
                 "y": 22.6
             },
             "pages": [
-                28,
-                29
+                "gh/28",
+                "gh/29"
             ],
             "requirements": "The Rift Neutralized (Global) INCOMPLETE",
             "required_by": [
@@ -830,8 +830,8 @@
                 "y": 64.25
             },
             "pages": [
-                29,
-                30
+                "gh/29",
+                "gh/30"
             ],
             "requirements": "A Demon’s Errand (Party) or Following Clues (Party) COMPLETE",
             "required_by": [
@@ -875,8 +875,8 @@
                 "y": 19.85
             },
             "pages": [
-                31,
-                32
+                "gh/31",
+                "gh/32"
             ],
             "chapter_id": 4,
             "links_to": [
@@ -909,8 +909,8 @@
                 "y": 19.67
             },
             "pages": [
-                32,
-                33
+                "gh/32",
+                "gh/33"
             ],
             "chapter_id": 10,
             "links_to": [
@@ -942,8 +942,8 @@
                 "y": 13.07
             },
             "pages": [
-                34,
-                35
+                "gh/34",
+                "gh/35"
             ],
             "chapter_id": 9,
             "links_to": [
@@ -976,8 +976,8 @@
                 "y": 23.3
             },
             "pages": [
-                35,
-                36
+                "gh/35",
+                "gh/36"
             ],
             "requirements": "Water-Breathing (Global) or Through the Ruins (Party) COMPLETE",
             "required_by": [
@@ -1026,7 +1026,7 @@
                 "y": 30.6
             },
             "pages": [
-                37
+                "gh/37"
             ],
             "requirements": "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
             "required_by": [
@@ -1063,7 +1063,7 @@
                 "y": 32.1
             },
             "pages": [
-                38
+                "gh/38"
             ],
             "requirements": "Dark Bounty (Party) COMPLETE",
             "required_by": [
@@ -1103,7 +1103,7 @@
                 "y": 32.5
             },
             "pages": [
-                39
+                "gh/39"
             ],
             "requirements": "An Invitation (Party) COMPLETE",
             "required_by": [
@@ -1142,8 +1142,8 @@
                 "y": 79.37
             },
             "pages": [
-                40,
-                41
+                "gh/40",
+                "gh/41"
             ],
             "requirements": "The Voice’s Command (Party)",
             "required_by": [
@@ -1189,8 +1189,8 @@
                 "y": 8.912
             },
             "pages": [
-                41,
-                42
+                "gh/41",
+                "gh/42"
             ],
             "requirements": "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
             "required_by": [
@@ -1246,7 +1246,7 @@
                 "y": 67.9
             },
             "pages": [
-                43
+                "gh/43"
             ],
             "requirements": "The Voice’s Command (Party) COMPLETE",
             "required_by": [
@@ -1287,7 +1287,7 @@
                 "y": 10.3
             },
             "pages": [
-                44
+                "gh/44"
             ],
             "requirements": "The Voice’s Command (Party) or The Drake’s Command (Party) COMPLETE",
             "required_by": [
@@ -1337,7 +1337,7 @@
                 "y": 9.27
             },
             "pages": [
-                45
+                "gh/45"
             ],
             "requirements": "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE",
             "required_by": [
@@ -1391,8 +1391,8 @@
                 "y": 9.42
             },
             "pages": [
-                46,
-                47
+                "gh/46",
+                "gh/47"
             ],
             "requirements": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
             "required_by": [
@@ -1456,8 +1456,8 @@
                 "y": 9.42
             },
             "pages": [
-                47,
-                48
+                "gh/47",
+                "gh/48"
             ],
             "requirements": "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
             "required_by": [
@@ -1516,7 +1516,7 @@
                 "y": 39.795
             },
             "pages": [
-                49
+                "gh/49"
             ],
             "requirements": "Water-Breathing (Global) COMPLETE",
             "required_by": [
@@ -1558,8 +1558,8 @@
                 "y": 43
             },
             "pages": [
-                50,
-                51
+                "gh/50",
+                "gh/51"
             ],
             "chapter_id": 7,
             "links_to": [
@@ -1594,8 +1594,8 @@
                 "y": 12.73
             },
             "pages": [
-                51,
-                52
+                "gh/51",
+                "gh/52"
             ],
             "chapter_id": 8,
             "links_to": [
@@ -1630,8 +1630,8 @@
                 "y": 35.1
             },
             "pages": [
-                53,
-                54
+                "gh/53",
+                "gh/54"
             ],
             "requirements": "The Voice’s Command (Party) and The Voice’s Treasure (Party) COMPLETE",
             "required_by": [
@@ -1678,8 +1678,8 @@
                 "y": 34.9
             },
             "pages": [
-                54,
-                55
+                "gh/54",
+                "gh/55"
             ],
             "requirements": "The Voice’s Command (Party) COMPLETE",
             "required_by": [
@@ -1728,7 +1728,7 @@
                 "y": 19.4
             },
             "pages": [
-                56
+                "gh/56"
             ],
             "requirements": "The Scepter and the Voice (Party) COMPLETE and The Voice Freed (Global) INCOMPLETE",
             "required_by": [
@@ -1778,8 +1778,8 @@
                 "y": 29.3
             },
             "pages": [
-                57,
-                58
+                "gh/57",
+                "gh/58"
             ],
             "requirements": "The Power of Enhancement (Global) COMPLETE",
             "required_by": [
@@ -1815,8 +1815,8 @@
                 "y": 37.9
             },
             "pages": [
-                58,
-                59
+                "gh/58",
+                "gh/59"
             ],
             "requirements": "Redthorn’s Aid (Party) COMPLETE",
             "required_by": [
@@ -1850,7 +1850,7 @@
                 "y": 72.25
             },
             "pages": [
-                60
+                "gh/60"
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE",
             "required_by": [
@@ -1891,7 +1891,7 @@
                 "y": 7.34
             },
             "pages": [
-                61
+                "gh/61"
             ],
             "requirements": "Across the Divide (Party) COMPLETE",
             "required_by": [
@@ -1930,7 +1930,7 @@
                 "y": 43.47
             },
             "pages": [
-                62
+                "gh/62"
             ],
             "requirements": "Through the Trench (Party) COMPLETE",
             "required_by": [
@@ -1970,7 +1970,7 @@
                 "y": 32.7
             },
             "pages": [
-                63
+                "gh/63"
             ],
             "requirements": "Redthorn’s Aid (Party) COMPLETE",
             "required_by": [
@@ -2009,7 +2009,7 @@
                 "y": 80.15
             },
             "pages": [
-                64
+                "gh/64"
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE",
             "required_by": [
@@ -2056,8 +2056,8 @@
                 "y": 14.65
             },
             "pages": [
-                65,
-                66
+                "gh/65",
+                "gh/66"
             ],
             "requirements": "City Rule: Demonic (Global) COMPLETE and Annihilation of Order (Global) INCOMPLETE",
             "required_by": [
@@ -2104,8 +2104,8 @@
                 "y": 9.15
             },
             "pages": [
-                66,
-                67
+                "gh/66",
+                "gh/67"
             ],
             "requirements": "End of Corruption (Global) x3 COMPLETE",
             "required_by": [
@@ -2149,8 +2149,8 @@
             },
             "is_side": true,
             "pages": [
-                68,
-                69
+                "gh/68",
+                "gh/69"
             ],
             "requirements": "“Seeker of Xorn” personal quest",
             "chapter_id": 11,
@@ -2173,8 +2173,8 @@
                 "y": 34.1
             },
             "pages": [
-                69,
-                70
+                "gh/69",
+                "gh/70"
             ],
             "requirements": "“Seeker of Xorn” personal quest",
             "chapter_id": 11,
@@ -2206,7 +2206,7 @@
                 "y": 23.34
             },
             "pages": [
-                71
+                "gh/71"
             ],
             "requirements": "“Seeker of Xorn” personal quest, “Staff of Xorn” item equipped",
             "chapter_id": 11,
@@ -2238,7 +2238,7 @@
             },
             "is_side": true,
             "pages": [
-                72
+                "gh/72"
             ],
             "requirements": "“Take Back the Trees” personal quest",
             "chapter_id": 11,
@@ -2264,7 +2264,7 @@
                 "y": 44.67
             },
             "pages": [
-                73
+                "gh/73"
             ],
             "requirements": "“Take Back the Trees” personal quest",
             "chapter_id": 11,
@@ -2297,7 +2297,7 @@
             },
             "is_side": true,
             "pages": [
-                74
+                "gh/74"
             ],
             "requirements": "“Vengeance” personal quest",
             "chapter_id": 11,
@@ -2327,7 +2327,7 @@
                 "y": 30.105
             },
             "pages": [
-                75
+                "gh/75"
             ],
             "requirements": "“Vengeance” personal quest",
             "chapter_id": 11,
@@ -2356,7 +2356,7 @@
             },
             "is_side": true,
             "pages": [
-                76
+                "gh/76"
             ],
             "requirements": "“Finding the Cure” personal quest",
             "chapter_id": 11,
@@ -2379,8 +2379,8 @@
                 "y": 13.5
             },
             "pages": [
-                77,
-                78
+                "gh/77",
+                "gh/78"
             ],
             "requirements": "“Finding the Cure” personal quest",
             "chapter_id": 11,
@@ -2409,8 +2409,8 @@
             },
             "is_side": true,
             "pages": [
-                78,
-                79
+                "gh/78",
+                "gh/79"
             ],
             "requirements": "“The Fall of Man” personal quest",
             "chapter_id": 11,
@@ -2433,7 +2433,7 @@
                 "y": 83.55
             },
             "pages": [
-                80
+                "gh/80"
             ],
             "requirements": "“The Fall of Man” personal quest",
             "chapter_id": 11,
@@ -2465,7 +2465,7 @@
             },
             "is_side": true,
             "pages": [
-                81
+                "gh/81"
             ],
             "chapter_id": 12,
             "treasures": {
@@ -2488,7 +2488,7 @@
             },
             "is_side": true,
             "pages": [
-                82
+                "gh/82"
             ],
             "requirements": "Water-Breathing (Global) COMPLETE",
             "required_by": [
@@ -2519,8 +2519,8 @@
             },
             "is_side": true,
             "pages": [
-                83,
-                84
+                "gh/83",
+                "gh/84"
             ],
             "chapter_id": 12,
             "region_ids": [
@@ -2543,8 +2543,8 @@
             },
             "is_side": true,
             "pages": [
-                84,
-                85
+                "gh/84",
+                "gh/85"
             ],
             "chapter_id": 12,
             "treasures": {
@@ -2568,7 +2568,7 @@
             },
             "is_side": true,
             "pages": [
-                86
+                "gh/86"
             ],
             "chapter_id": 12,
             "treasures": {
@@ -2591,7 +2591,7 @@
             },
             "is_side": true,
             "pages": [
-                87
+                "gh/87"
             ],
             "chapter_id": 12,
             "treasures": {
@@ -2614,7 +2614,7 @@
             },
             "is_side": true,
             "pages": [
-                88
+                "gh/88"
             ],
             "chapter_id": 12,
             "rewards": [
@@ -2631,8 +2631,8 @@
             },
             "is_side": true,
             "pages": [
-                89,
-                90
+                "gh/89",
+                "gh/90"
             ],
             "chapter_id": 12,
             "treasures": {
@@ -2655,8 +2655,8 @@
             },
             "is_side": true,
             "pages": [
-                90,
-                91
+                "gh/90",
+                "gh/91"
             ],
             "chapter_id": 12,
             "rewards": [
@@ -2673,7 +2673,7 @@
             },
             "is_side": true,
             "pages": [
-                92
+                "gh/92"
             ],
             "chapter_id": 13,
             "rewards": [
@@ -2691,7 +2691,7 @@
             },
             "is_side": true,
             "pages": [
-                93
+                "gh/93"
             ],
             "chapter_id": 13,
             "region_ids": [
@@ -2711,7 +2711,7 @@
             },
             "is_side": true,
             "pages": [
-                94
+                "gh/94"
             ],
             "requirements": "High Sea Escort (Party) COMPLETE",
             "required_by": [
@@ -2746,7 +2746,7 @@
             },
             "is_side": true,
             "pages": [
-                95
+                "gh/95"
             ],
             "requirements": "Grave Job (Party) COMPLETE",
             "required_by": [
@@ -2777,8 +2777,8 @@
             },
             "is_side": true,
             "pages": [
-                96,
-                97
+                "gh/96",
+                "gh/97"
             ],
             "requirements": "Bravery",
             "chapter_id": 13,
@@ -2799,8 +2799,8 @@
             },
             "is_side": true,
             "pages": [
-                97,
-                98
+                "gh/97",
+                "gh/98"
             ],
             "chapter_id": 13,
             "region_ids": [
@@ -2820,7 +2820,7 @@
             },
             "is_side": true,
             "pages": [
-                99
+                "gh/99"
             ],
             "chapter_id": 15,
             "region_ids": [
@@ -2843,8 +2843,8 @@
             },
             "is_side": true,
             "pages": [
-                100,
-                101
+                "gh/100",
+                "gh/101"
             ],
             "requirements": "Fish’s Aid (Party) COMPLETE",
             "required_by": [
@@ -2880,8 +2880,8 @@
             },
             "is_side": true,
             "pages": [
-                101,
-                102
+                "gh/101",
+                "gh/102"
             ],
             "chapter_id": 14,
             "region_ids": [
@@ -2904,7 +2904,7 @@
             },
             "is_side": true,
             "pages": [
-                103
+                "gh/103"
             ],
             "chapter_id": 15,
             "treasures": {
@@ -2930,7 +2930,7 @@
             },
             "is_side": true,
             "pages": [
-                104
+                "gh/104"
             ],
             "chapter_id": 14,
             "treasures": {
@@ -2962,7 +2962,7 @@
             },
             "is_side": true,
             "pages": [
-                105
+                "gh/105"
             ],
             "requirements": "Bad Business (Party) COMPLETE",
             "required_by": [
@@ -2993,7 +2993,7 @@
             },
             "is_side": true,
             "pages": [
-                106
+                "gh/106"
             ],
             "requirements": "Tremors (Party) COMPLETE",
             "required_by": [
@@ -3029,8 +3029,8 @@
             },
             "is_side": true,
             "pages": [
-                107,
-                108
+                "gh/107",
+                "gh/108"
             ],
             "chapter_id": 14,
             "region_ids": [
@@ -3055,8 +3055,8 @@
             },
             "is_side": true,
             "pages": [
-                108,
-                109
+                "gh/108",
+                "gh/109"
             ],
             "chapter_id": 15,
             "links_to": [
@@ -3086,7 +3086,7 @@
             },
             "is_side": true,
             "pages": [
-                110
+                "gh/110"
             ],
             "requirements": "The Poison’s Source (Party) COMPLETE",
             "required_by": [
@@ -3121,7 +3121,7 @@
             },
             "is_side": true,
             "pages": [
-                111
+                "gh/111"
             ],
             "requirements": "Water-Breathing (Global) and Water Staff (Party) COMPLETE",
             "required_by": [
@@ -3158,7 +3158,7 @@
             },
             "is_side": true,
             "pages": [
-                112
+                "gh/112"
             ],
             "requirements": "Sin-Ra (Party) COMPLETE",
             "required_by": [
@@ -3195,7 +3195,7 @@
             },
             "is_side": true,
             "pages": [
-                113
+                "gh/113"
             ],
             "chapter_id": 14,
             "treasures": {
@@ -3218,7 +3218,7 @@
             },
             "is_side": true,
             "pages": [
-                114
+                "gh/114"
             ],
             "chapter_id": 15,
             "region_ids": [
@@ -3241,7 +3241,7 @@
             },
             "is_side": true,
             "pages": [
-                115
+                "gh/115"
             ],
             "requirements": "Debt Collection (Party) COMPLETE",
             "required_by": [
@@ -3275,7 +3275,7 @@
             },
             "is_side": true,
             "pages": [
-                116
+                "gh/116"
             ],
             "requirements": "A Map to Treasure (Party) COMPLETE",
             "required_by": [
@@ -3309,7 +3309,7 @@
             },
             "is_side": true,
             "pages": [
-                117
+                "gh/117"
             ],
             "chapter_id": 15,
             "links_to": [
@@ -3331,8 +3331,8 @@
                 "y": 38.65
             },
             "pages": [
-                118,
-                119
+                "gh/118",
+                "gh/119"
             ],
             "requirements": "Through the Nest (Party) COMPLETE",
             "required_by": [
