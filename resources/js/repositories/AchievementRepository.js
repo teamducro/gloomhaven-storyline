@@ -47,7 +47,6 @@ export default class AchievementRepository {
                 && scenarioToUnlock.state !== ScenarioState.incomplete
                 && scenarioToUnlock.state !== ScenarioState.complete) {
                 this.scenarioRepository.changeState(scenarioToUnlock, ScenarioState.incomplete);
-                console.log(scenarioToUnlock.state);
             }
         }
     }
