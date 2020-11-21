@@ -98,11 +98,11 @@ export default class AchievementRepository {
     }
 
     searchManual(query) {
-        query = query.trim().toLowerCase();
+        query = query.trim().toLowerCase().replace('-', ' ');
         return this.where((achievement) => {
             return achievement.is_manual
                 && !achievement.manual_awarded
-                && achievement.name.toLowerCase().startsWith(query);
+                && achievement.name.toLowerCase().replace('-', ' ').startsWith(query);
         });
     }
 
