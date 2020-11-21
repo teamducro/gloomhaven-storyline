@@ -46,8 +46,6 @@
 
 <script>
 import ScenarioRepository from "../../repositories/ScenarioRepository";
-import {ScenarioState} from "../../models/ScenarioState";
-import PreloadImage from "../../services/PreloadImage";
 import AchievementRepository from "../../repositories/AchievementRepository";
 import ScenarioNumber from "../elements/ScenarioNumber";
 

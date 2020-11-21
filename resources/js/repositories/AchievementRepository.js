@@ -4,6 +4,7 @@ import ScenarioRepository from "./ScenarioRepository";
 import AchievementGroup from "../models/AchievementGroup";
 import {ScenarioState} from "../models/ScenarioState";
 import scenarios from "../scenarios.json";
+import StorySyncer from "../services/StorySyncer";
 
 export default class AchievementRepository {
 
@@ -47,7 +48,8 @@ export default class AchievementRepository {
                 && scenarioToUnlock.state !== ScenarioState.incomplete
                 && scenarioToUnlock.state !== ScenarioState.complete) {
                 this.scenarioRepository.changeState(scenarioToUnlock, ScenarioState.incomplete);
-                console.log(scenarioToUnlock.state);
+            } else {
+                this.storySyncer.store();
             }
         }
     }
@@ -74,6 +76,8 @@ export default class AchievementRepository {
             const scenarioToHide = this.scenarioRepository.getSideScenarioByManualAchievement(achievement);
             if (scenarioToHide && scenarioToHide.isVisible()) {
                 this.scenarioRepository.changeState(scenarioToHide, ScenarioState.hidden);
+            } else {
+                this.storySyncer.store();
             }
         }
     }
@@ -141,6 +145,10 @@ export default class AchievementRepository {
 
     get scenarioRepository() {
         return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository());
+    }
+
+    get storySyncer() {
+        return this._storySyncer || (this._storySyncer = new StorySyncer);
     }
 
 }
