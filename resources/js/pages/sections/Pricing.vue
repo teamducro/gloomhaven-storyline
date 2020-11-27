@@ -3,7 +3,13 @@
         <div class="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
             <div class="text-center">
                 <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-300">
-                    Pricing</h1>
+                    Black Friday
+                    <br>
+                    -30%
+                </h1>
+                <p class="mt-3 max-w-4xl mx-auto text-xl leading-7 text-gray-300 sm:mt-5 sm:text-2xl sm:leading-8">
+                    Valid until 11/30
+                </p>
                 <p class="mt-3 max-w-4xl mx-auto text-xl leading-7 text-gray-300 sm:mt-5 sm:text-2xl sm:leading-8">
                     All content is available for free, the paid option covers the costs maintaining this app for the
                     community. If you enjoy using the storyline tracker, please consider purchasing a license.
@@ -84,10 +90,11 @@
                                             Pro
                                         </h3>
                                         <div class="font-title mt-4 flex items-center justify-center">
+                                            <span class="text-gray-500 text-2xl font-extrabold line-through">4,99</span>
                                             <span
                                                 class="px-3 flex items-start text-6xl leading-none tracking-tight text-gray-900 sm:text-6xl">
                                                 <span class="mt-2 mr-2 text-4xl font-medium">€</span>
-                                                <span class="font-extrabold">4,99</span>
+                                                <span class="font-extrabold">3,49</span>
                                             </span>
                                             <span class="text-2xl leading-8 font-medium text-gray-500">/ year</span>
                                         </div>
