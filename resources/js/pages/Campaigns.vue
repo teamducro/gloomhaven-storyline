@@ -78,7 +78,7 @@
                 <div
                     class="py-8 px-6 text-center bg-gray-200 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
                     <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
-                        Black Friday -30%
+                        Cyber Monday -30%
                     </h3>
                     <p class="mb-6 text-base text-gray-900">
                         Valid until 11/30

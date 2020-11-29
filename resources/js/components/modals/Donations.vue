@@ -34,7 +34,7 @@
                           <router-link to="/campaigns">
                               <button type="submit" @click="close"
                                       class="w-full rounded-md border border-transparent p-2 bg-blue-600 font-medium text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
-                              {{ $t('-30% Black Friday') }}
+                              {{ $t('-30% Cyber Monday') }}
                               </button>
                           </router-link>
                           <span @click="close" class="text-sm text-gray-500 text-center mt-4 cursor-pointer">

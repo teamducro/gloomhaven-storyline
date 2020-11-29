@@ -3,7 +3,7 @@
         <div class="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
             <div class="text-center">
                 <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-300">
-                    Black Friday
+                    Cyber Monday
                     <br>
                     -30%
                 </h1>
