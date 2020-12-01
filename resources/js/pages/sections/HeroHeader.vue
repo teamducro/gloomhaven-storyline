@@ -16,16 +16,10 @@
                                 Buy shared campaign
                             </a>
                         </purchase>
-                        <a href="#pricing"
-                           class="block text-center rounded-lg border border-transparent bg-white px-6 py-3 text-lg leading-6 font-bold text-blue-600 hover:text-blue-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150">
-                            -30% Cyber Monday
-                        </a>
-                        <!--
                         <a :href="this.appUrl"
                            class="block text-center rounded-lg border border-transparent bg-white px-6 py-3 text-lg leading-6 font-bold text-blue-600 hover:text-blue-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150">
                             Open storyline
                         </a>
-                        -->
                     </div>
                 </div>
                 <!--Right Col-->
