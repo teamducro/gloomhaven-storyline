@@ -113,12 +113,6 @@ export default class StoryRepository extends ApiRepository {
         store.set(story.campaignId, story.data);
     }
 
-    storeUpdatedAt(storyId, updatedAt) {
-        let story = this.getStory(storyId);
-        story.updated_at = updatedAt || moment();
-        this.storeStory(story);
-    }
-
     getStories() {
         return collect(store.get('stories'))
             .map(story => new Story(story));
