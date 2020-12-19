@@ -26,7 +26,9 @@ class Story extends Model {
 
     cast() {
         this.expires_at = moment(this.expires_at);
-        this.updated_at = moment(this.updated_at);
+        this.updated_at = this.updated_at
+            ? moment(this.updated_at)
+            : moment().subtract(10, 'years');
         this.campaignId = '_' + this.id;
     }
 
