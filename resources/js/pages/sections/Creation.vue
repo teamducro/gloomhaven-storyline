@@ -5,7 +5,7 @@
                 The creation
             </h1>
             <div class="w-full mb-4">
-                <div class="h-2px mx-auto gradient w-64 opacity-75 my-0 py-0 rounded shadow"></div>
+                <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded shadow"></div>
             </div>
 
             <div class="flex flex-wrap">
