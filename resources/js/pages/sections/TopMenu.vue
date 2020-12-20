@@ -2,14 +2,20 @@
     <nav id="header" class="fixed w-full z-30 top-0 text-white"
          :class="{'bg-white': fixedHeader || menuVisible, shadow: fixedHeader || menuVisible}">
 
-        <div class="px-4 w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="px-4 w-full flex flex-wrap items-center justify-between mt-0 py-2">
 
             <div class="flex items-center w-full xs:w-auto">
-                <a class="text-white no-underline hover:no-underline m-auto font-bold text-2xl lg:text-4xl" href="/"
+                <a class="text-white no-underline hover:no-underline mr-4 xs:mr-0 font-bold text-2xl lg:text-4xl"
+                   href="/"
                    :class="{'text-gray-100': !fixedHeader || !menuVisible, 'text-gray-800': fixedHeader || menuVisible}">
                     <webp class="inline" src="/img/gloomhaven-logo.png"
                           alt="Gloomhaven" width="250" height="37" :lazy="false"></webp>
                     <span class="hidden sm:inline">Storyline</span>
+                </a>
+
+                <a :href="this.appUrl"
+                   class="inline-block xs:hidden ml-auto text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                    App
                 </a>
 
                 <!--
