@@ -1,7 +1,7 @@
 <template>
     <transition name="fade">
         <div v-if="show" class="fixed right-0 bottom-0 mr-4 mb-4">
-            <alert :success="success">
+            <alert :type="success ? 'success' : 'error'">
                 {{ message }}
             </alert>
         </div>
