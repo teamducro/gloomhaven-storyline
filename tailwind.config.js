@@ -40,7 +40,7 @@ module.exports = {
             },
             screens: {
                 xs: '400px',
-                lgh: {'raw': '(min-height: 600px)'}
+                lgh: {'raw': '(min-height: 660px)'}
             },
             zIndex: {
                 1: '1',
