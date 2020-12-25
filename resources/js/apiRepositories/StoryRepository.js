@@ -1,7 +1,6 @@
 import store from "store/dist/store.modern";
 import ApiRepository from "./ApiRepository";
 import Story from "../apiModels/Story";
-import moment from "moment";
 
 export default class StoryRepository extends ApiRepository {
     async stories(token = null) {

@@ -25,6 +25,6 @@
         border: 6px solid transparent;
         border-top-color: theme('colors.primary');
         border-bottom-color: theme('colors.primary');
-        animation: spin 1s ease-in-out infinite;
+        animation: spin-loader 1s ease-in-out infinite;
     }
 </style>

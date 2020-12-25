@@ -5,7 +5,8 @@
                 Snapshots
             </h1>
             <p class="text-base">
-                If you ever lose campaign progress you can use these automatic snapshots to revert unwanted changes!
+                If you ever lose campaign progress you can use these automatic snapshots to revert unwanted
+                changes!
             </p>
 
             <alert v-if="campaignId === 'local'" type="warning">
@@ -19,7 +20,8 @@
 
             <template v-if="story && !story.is_shared">
                 <button @click.stop="takeSnapshot" type="button" class="mt-4 mb-6 mdc-button mdc-button--raised">
-                    <i class="material-icons mdc-button__icon" aria-hidden="true">restore</i>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true"
+                       :class="{'animate-spin': takingSnapshot}">restore</i>
                     <span class="mdc-button__label">{{ $t('Create snapshot') }}</span>
                 </button>
 
@@ -27,10 +29,10 @@
                     There are no snapshots yet.
                 </p>
 
-                <ul class="mdc-list">
+                <ul class="mdc-list mdc-list--non-interactive">
                     <li v-for="snapshot in story.snapshots.items" :key="snapshot.id"
                         class="mdc-list-item min-h-14" tabindex="0"
-                        :class="{'mdc-ripple-upgraded--background-focused': snapshot.isCurrent(story)}">
+                        :class="{'bg-black2-25': snapshot.isCurrent(story)}">
                         <div class="w-full flex items-center justify-between mdc-list-item__text">
                             <div class="flex items-center" style="max-width:calc(100% - 120px)">
                                 <span class="truncate">{{ snapshot.name }}</span>
@@ -43,7 +45,8 @@
                                 </span>
                                 <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2"
                                         @click.stop="restore(snapshot)">
-                                    <i class="material-icons mdc-button__icon" aria-hidden="true">restore</i>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true"
+                                       :class="{'animate-spin': restoringSnapshot === snapshot.id}">restore</i>
                                 </button>
                             </div>
                         </div>
@@ -55,16 +58,18 @@
 </template>
 
 <script>
-import Helpers from "../services/Helpers";
 import StoryRepository from "../repositories/StoryRepository";
+import SnapshotRepository from "../apiRepositories/SnapshotRepository";
 
 export default {
     data() {
         return {
-            loggedIn: Helpers.loggedIn(),
             campaignId: null,
             story: null,
-            storyRepository: new StoryRepository
+            takingSnapshot: false,
+            restoringSnapshot: null,
+            storyRepository: new StoryRepository,
+            snapshotRepository: new SnapshotRepository,
         }
     },
     beforeMount() {
@@ -82,11 +87,24 @@ export default {
             this.story = this.storyRepository.current();
             this.campaignId = app.campaignId;
         },
-        takeSnapshot() {
+        async takeSnapshot() {
+            if (this.takingSnapshot) {
+                return;
+            }
 
+
+            this.takingSnapshot = true;
+            this.story = await this.snapshotRepository.take(this.story);
+            this.takingSnapshot = false;
         },
-        restore(snapshot) {
-
+        async restore(snapshot) {
+            if (this.restoringSnapshot) {
+                return;
+            }
+            this.restoringSnapshot = snapshot.id;
+            this.story = await this.snapshotRepository.restore(this.story, snapshot);
+            this.$bus.$emit('campaign-selected', this.campaignId);
+            this.restoringSnapshot = null;
         }
     }
 }

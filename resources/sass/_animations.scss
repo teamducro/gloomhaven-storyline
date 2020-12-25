@@ -46,7 +46,20 @@
     transform: scale(.9);
 }
 
+.animate-spin {
+    animation: spin .7s linear infinite;
+}
+
 @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-loader {
     0% {
         transform: rotate(0deg);
     }

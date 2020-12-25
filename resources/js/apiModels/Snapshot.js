@@ -20,7 +20,7 @@ class Snapshot extends Model {
     }
 
     isCurrent(story) {
-        return !story.hasChanged() && this.hash === story.hash;
+        return this.hash === story.hash;
     }
 
 }
