@@ -7,7 +7,7 @@ const Campaigns = () => import("./pages/Campaigns");
 const Login = () => import("./pages/Login");
 const Party = () => import("./pages/Party");
 const Shared = () => import("./pages/Shared");
-const Snapshots = () => import("./pages/Snapshots");
+const Settings = () => import("./pages/Settings");
 
 export default [
     {path: '/', redirect: '/story'},
@@ -19,7 +19,7 @@ export default [
     {path: '/campaigns', component: Campaigns},
     {path: '/party', component: Party},
     {path: '/login/:id/:token', component: Login},
-    {path: '/snapshots', component: Snapshots},
+    {path: '/settings', component: Settings},
     {path: '/shared/:version/:id/:storage', component: Shared},
     {path: '*', redirect: '/story'},
 ];

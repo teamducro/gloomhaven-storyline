@@ -58,7 +58,7 @@ export default {
     'Remove': 'Remove',
     'Clear all': 'Clear all',
     'reset': {
-        'text': 'Are you sure you want to remove all scenario data? This action cannot be undone.'
+        'text': 'Are you sure you want to remove all scenario data?'
     },
     'share': {
         'title': 'Share Gloomhaven Storyline Tracker',

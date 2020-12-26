@@ -98,19 +98,11 @@
                         </li>
 
                         <li>
-                            <router-link to="/snapshots" class="mdc-list-item"
+                            <router-link to="/settings" class="mdc-list-item"
                                          active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">restore</i>
-                                <span class="mdc-list-item__text">{{ $t('Snapshots') }}</span>
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+                                <span class="mdc-list-item__text">{{ $t('Settings') }}</span>
                             </router-link>
-                        </li>
-
-                        <li>
-                            <a class="mdc-list-item" @click="$bus.$emit('open-reset-modal')">
-                                <i class="material-icons mdc-list-item__graphic"
-                                   aria-hidden="true">delete_forever</i>
-                                <span class="mdc-list-item__text">{{ $t('Reset') }}</span>
-                            </a>
                         </li>
 
                         <li @click="toggle">
