@@ -44,12 +44,12 @@
                                     Synchronised progress
                                 </p>
                             </li>
-                            <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
+                            <li class="flex items-start lg:col-span-1">
                                 <div class="flex-shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-700">
-                                    Supports all modern devices
+                                    Automatic snapshots
                                 </p>
                             </li>
                             <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
@@ -128,6 +128,7 @@
 
         <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h2 class="text-xl">How does it work?</h2>
+
             <ul class="list-disc ml-4 leading-relaxed">
                 <li>Click on
                     <purchase class="inline link">
@@ -141,6 +142,12 @@
                 </li>
                 <li>All changes made by any party member will be synchronized! 🎉</li>
             </ul>
+
+            <p class="mt-4">Local progress will be preserved when purchasing a shared campaign,
+                campaign progress can be transferred between campaigns on the
+                <router-link class="link" to="/settings">settings page</router-link>
+                .
+            </p>
         </div>
 
         <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">

@@ -1,4 +1,3 @@
-// pages
 const Story = () => import("./pages/Story");
 const Scenarios = () => import("./pages/Scenarios");
 const Achievements = () => import("./pages/Achievements");
@@ -8,6 +7,7 @@ const Campaigns = () => import("./pages/Campaigns");
 const Login = () => import("./pages/Login");
 const Party = () => import("./pages/Party");
 const Shared = () => import("./pages/Shared");
+const Settings = () => import("./pages/Settings");
 
 export default [
     {path: '/', redirect: '/story'},
@@ -19,6 +19,7 @@ export default [
     {path: '/campaigns', component: Campaigns},
     {path: '/party', component: Party},
     {path: '/login/:id/:token', component: Login},
+    {path: '/settings', component: Settings},
     {path: '/shared/:version/:id/:storage', component: Shared},
     {path: '*', redirect: '/story'},
 ];

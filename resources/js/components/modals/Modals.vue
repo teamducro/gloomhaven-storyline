@@ -7,9 +7,10 @@
         <reset></reset>
         <donations></donations>
         <toast></toast>
+        <confirm-transfer></confirm-transfer>
     </div>
 </template>
 
 <script>
-    export default {}
+export default {}
 </script>

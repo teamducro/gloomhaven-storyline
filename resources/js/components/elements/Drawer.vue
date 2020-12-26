@@ -1,4 +1,4 @@
-<template>
+<template xmlns="http://www.w3.org/1999/html">
     <div>
         <button type="button" @click="toggle"
                 class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 i-bg-black2-50 rounded-full">
@@ -98,11 +98,11 @@
                         </li>
 
                         <li>
-                            <a class="mdc-list-item" @click="$bus.$emit('open-reset-modal')">
-                                <i class="material-icons mdc-list-item__graphic"
-                                   aria-hidden="true">delete_forever</i>
-                                <span class="mdc-list-item__text">{{ $t('Reset') }}</span>
-                            </a>
+                            <router-link to="/settings" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+                                <span class="mdc-list-item__text">{{ $t('Settings') }}</span>
+                            </router-link>
                         </li>
 
                         <li @click="toggle">
