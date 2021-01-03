@@ -97,7 +97,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li @click="toggle">
                             <router-link to="/settings" class="mdc-list-item"
                                          active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
@@ -115,20 +115,12 @@
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                        <li v-if="!loggedIn" class="py-4 w-full" @click="toggle">
-                            <router-link to="/campaigns" class="flex justify-center -ml-6">
-                                <button
-                                    class="relative text-light-gray py-1 pl-3 pr-8 border border-light-gray border-solid rounded-full"
-                                    type="submit">
-                                    {{ $t('Buy me a Beer') }}
-                                    <span
-                                        class="absolute top-0 right-0 -mt-2 -mr-6 bg-black text-2xl h-12 w-12 leading-12 border-2 border-light-gray border-solid rounded-full">🍻</span>
-                                </button>
-                            </router-link>
+                        <li v-if="!loggedIn" class="py-4 pl-4 w-full" @click="toggle">
+                            <donate></donate>
                         </li>
                     </ul>
                 </div>
-                <div class="lgh:absolute lgh:bottom-0 m-2" style="width: calc(100% - 1em);">
+                <div class="m-2" style="width: calc(100% - 1em);">
                     <language-switch @help="toggle"></language-switch>
                 </div>
             </div>
