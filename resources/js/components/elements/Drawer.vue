@@ -97,7 +97,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li @click="toggle">
                             <router-link to="/settings" class="mdc-list-item"
                                          active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
