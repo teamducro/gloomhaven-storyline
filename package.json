@@ -55,7 +55,7 @@
         "@material/textfield": "^4.0.0",
         "@material/theme": "^4.0.0",
         "@stripe/stripe-js": "^1.7.0",
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "collect.js": "^4.19.0",
         "hammerjs": "^2.0.8",
         "jquery": "^3.5.0",
