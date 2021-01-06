@@ -77,7 +77,7 @@ export default {
     'Map coordinates by': 'Kartenkoordinaten von',
     'about us': {
         'title': 'Verfolge deinen Handlungsstrang in Gloomhaven',
-        'text': 'Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Wir drücken die Pausetaste in unserem täglichen Leben. Jeder von uns hat etwas beigetragen, das unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Fortschritte im Spiel zu verfolgen und die Auswahl eines neuen Szenarios zu erleichtern. Mit einigen Getränken und Snacks sind wir bereit anzufangen.',
+        'text': 'Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Wir drücken die Pausetaste in unserem Alltag. Jeder von uns hat etwas beigetragen, das unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Fortschritte im Spiel zu verfolgen und die Auswahl eines neuen Szenarios zu erleichtern. Mit einigen Getränken und Snacks sind wir bereit anzufangen.',
     },
     'Welcome': 'Willkommen',
     'Language': 'Sprache',
@@ -111,7 +111,7 @@ export default {
         'Forgotten Crypt': 'Vergessene Krypta',
         'Necromancer\'s Sanctum': 'Versteck der Nekromantin',
         'Infernal Throne': 'Höllenthron',
-        'Temple of Elements': 'Tempel der Elemente',
+        'Temple of the Elements': 'Tempel der Elemente',
         'Deep Ruins': 'Tiefe Ruinen',
         'Echo Chamber': 'Echokammer',
         'Icecrag Ascent': 'Aufstieg zur Eisklippe',
@@ -132,7 +132,7 @@ export default {
         'Ancient Defense Network': 'Altes Verteidigungsnetzwerk',
         'Timeworn Tomb': 'Verfallenes Grab',
         'Realm of the Voice': 'Reich der Stimme',
-        'Drake Nest': 'Drachennest',
+        'Drake Nest': 'Drakennest',
         'Tribal Assault': 'Stammesangriff',
         'Rebel Swamp': 'Rebellensumpf',
         'Nightmare Peak': 'Alptraumspitze',
@@ -262,16 +262,16 @@ export default {
             }
         },
         3: {
-            "name": "Die Suche nach gloom",
+            "name": "Die Suche nach dem Grauen",
             "sections": {
-                1: "The Bandit Commander's proclamations of a \"Gloom\" during your battle do not sit well with you. Sifting through the carnage left by the battle, you found a cache of scrolls. The writing upon them was in some unknown archaic language. Among the scrolls, you found a map of the northern countryside. A bend in the Still River was clearly marked as a point of interest. Contemplating whether you want to find out more about this so-called \"Gloom,\" you decided that the spot could be a point of interest for you, as well.",
-                2: "The map lead to a crypt full of demons and cultists. Clearly, the bandits are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One is marked as being overrun by vicious undead. It looks as though you have an opportunity to get in the cult's good graces by helping to clear out a threat. This may help you learn more about the \"Gloom\".",
-                3: "After the terrible shrieks and moans of the undead ceased, a grinning hooded figure appeared before you. His demeanor was deeply unsettling. He asked another favor of you in exchange for forgiveness for killing his brethren. The cultists want the necromancer, Jekserah, dead. If you bring her head to their headquarters, you may find out more about the \"Gloom\". The figure gave you details on where to find evidence of Jekserah's plans.",
-                4: "You have slain Jekserah. As she collapsed, the life fleeing her eyes, she whispered at you “You have no idea what’s coming...”. Perhaps your old boss's head may prove useful in future dealings with the bandits.",
-                5: "You have slain Jekserah. It's time to bring your old boss's head to the cult's headquarters.",
-                6: "Unfortunately for the cultists, you have sided with Jekserah and taken over the city. Your mysterious contact will surely never want to meet with you now.",
-                7: "You met the hooded figure at the cult's headquarters, where he thanked you graciously for your help in taking out the necromancer. He then introduced you to a black, flaming rift in space that he called his master, \"The Gloom\". The figure then promptly betrayed you by summoning a horde of unnatural creatures in an attempt to kill you. Apparently, getting back into the cult's good graces isn't easy after murdering their followers and setting back their plans. After an exhausting battle, the Gloom spoke to you in a cold, low voice. \"You have done well. My minions may not be able to forgive. But I can. Come. Come to me. Step into my realm. Embrace the inevitable.\" The rift stands before you. Do you dare enter?",
-                8: "You stepped into the black rift. The low voice spoke once more, \"Tricked again. Truly amazing that creatures as stupid as yourselves have caused me so much trouble. No matter. You will rot here, completely cut off from your home. There will be no last stand. You will simply waste away. You will die without valor in a foreign place and there is no recourse. I leave you now forever. Good-bye.\" The ensuing battle seemed endless. After killing everything, you banged on the walls, desperately hoping for something to continue fighting against in this exile. You grew tired, then your vision darkened. In your next breath, you found yourself laying in the grass outside of the cult’s hideout. \"Know that I have spared you.\" The low voice returned. \"Your persistence intrigues me. I invite you to break yourself against me. It will be more entertaining than the last time I brought gloom to this world.\" You bolted upright and rushed back into the crypt. Dead bodies of the cultists littered the floor. \"I am not here anymore. These shells have served their purpose. My roots are now deep and you will soon encounter my endless power once more. I look forward to the day.\""
+                1: "Die Ankündigungen des Banditenkommandants über ein \"Grauen\" während der Schlacht beunruhigt euch. Beim Durchsuchen der niedergemetzelten Körper, die die Schlacht hinterlassen hat, stoßt ihr auf einen Behälter, der mehrere Schriftrollen enthält. Die Schrift war in einer archaischen euch unbekannten Sprache verfasst. Unter den Schriftrollen befand sich auch eine Karte der nördlichen Landschaft, auf der eine Biegung des Stillen Flusses deutlich markiert war. Ihr überlegt, ob ihr mehr über dieses sogenannte \"Grauen\" herausfinden wollt, oder ob der markierte Punkt auf der Karte auch von Interesse für euch sein könnte.",
+                2: "Die Karte führte euch zu einer Krypta voller Dämonen und Kultisten. Offensichtlich sind die Banditen mit einer Art Kult verbunden und eure Ankunft hat sie bei der Durchführung eines Rituals gestört. Unter den Schriften, die ihr in der Ritualkammer gefunden habt, befinden sich Notizen über ein paar andere Orte der Macht in der Gegend. Einer davon ist \"als von bösartigen Untoten überrannt\" markiert. Es scheint als hättet ihr die Chance, sich die Gunst des Kults zu verdienen, indem ihr die Bedrohung beseitigt. Das könnte eine Möglichkeit sein, mehr über das \"Grauen\" zu erfahren.",
+                3: "Nachdem das schreckliche Kreischen und Stöhnen der Untoten verstummt war, erschien eine grinsende Kapuzengestalt vor euch. Ihr Auftreten war zutiefst beunruhigend. Im Austausch zur Vergebung der Morde an ihren Brüdern bat sie euch um einen weiteren Gefallen. Die Kultisten wollen die Nekromantin Jekserah tot sehen. Wenn ihr ihren Kopf in das Hauptquartier der Kultisten bringt, werdet ihr vielleicht mehr über das \"Grauen\" erfahren. Die Gestalt hat euch Aufschluss darüber gegeben, wo ihr Beweise für Jeksehras Pläne finden könnt.",
+                4: "Ihr habt Jekserah erschlagen. Als sie zusammenbrach und das Leben aus ihren Augen wich, flüsterte sie euch zu \"Ihr habt keine Ahnung was euch erwartet...\". Vielleicht erweist sich der Kopf eurer alten Chefin für die zukünftigen Verhandlungen mit den Banditen als nützlich.",
+                5: "Ihr habt Jekserah erschlagen. Es ist an der Zeit den Kopf eurer alten Chefin zum Hauptquartier der Kultisten zu bringen.",
+                6: "Zum Leidwesen der Kultisten habt ihr euch auf die Seite von Jekserah geschlagen und die Stadt übernommen. Euer mysteriöser Kontakt wir sich nun sicher nicht mehr mit euch treffen wollen.",
+                7: "Ihr habt die Kapuzengestalt im Hauptquartier des Kults getroffen, wo sie euch freundlich für eure Hilfe bei der Beseitigung der Nekromantin gedankt hat. Dann stellte sie euch einen schwarzen, flammenden Spalt im Raum vor, den sie ihren Meister, das \"Grauen\", nannte. Die Gestalt hat euch prompt verraten, indem sie eine Horde unnatürlicher Kreaturen beschwor, um euch zu töten. Scheinbar ist es nicht so einfach wieder in die Gunst des Kultes zu gelangen, nachdem man seine Anhänger ermordet und seine Pläne sabotiert hat. Nach einem anstrengenden Kampf sprach das \"Grauen\" mit kalter und tiefer Stimme zu euch. \"Das habt ihr gut gemacht. Meine Anhänger können euch vielleicht nicht verzeihen, aber ich kann es. Kommt zu mir, tretet ein in mein Reich. Nehmt das Unvermeidliche an.\" Der Spalt ist direkt vor euch, wagt ihr es einzutreten?",
+                8: "Ihr seid in den schwarzen Spalt eingetreten. Die tiefe Stimme ertönt noch einmal: \"Wieder ausgetrickst. Wirklich erstaunlich, dass Kreaturen, die so dumm sind wie ihr, mir so viel Ärger bereiten. Aber das ist nun auch egal, denn ihr werdet hier verroten, vollkommen abgeschitten von eurer Heimat. Ihr werdet ohne Tapferkeit an einem fremden Ort sterben und es gibt keinen Ausweg. Ich verlasse euch nun für immer. Auf Wiedersehen.\" Der darauf folgende Kampf schien endlos zu sein. Nachdem ihr alle Gegner getötet habt, schlugt ihr verzweifelt auf die Wände ein in der Hoffnung einen Ausweg zu finden bis ihr undendlich müde wurdet und eure Sinne schwanden. Mit eurem nächsten Atemzug fandet ihr euch im Gras vor dem Versteck der Sekte liegend wieder. \"Wisst, dass ich euch verschont habe.\" Die tiefe Stimme kehrt in eure Köpfe zurück. \"Eure Hartnäckigkeit fasziniert mich. Seid eingeladen euch an mir zu zerbrechen. Es wird unterhaltsamer sein als das letzte Mal, als ich das Grauen in diese Welt brachte\". Ihr richtet euch auf und eilt zurück in die Krypta, wo die toten Körper der Kultisten den Boden übersäen. \"Ich bin nicht mehr hier. Diese Hüllen haben ihren Zweck erfüllt. Meine Wurzeln sind nun tief verankert und ihr werdet bald wieder auf meine unendliche Macht treffen. Ich freue mich auf diesen Tag.\""
             },
             "stages": {
                 0: "{1}",
@@ -286,7 +286,7 @@ export default {
             }
         },
         4: {
-            "name": "Tales from the Crypt",
+            "name": "Geschichten aus der Gruft",
             "sections": {
                 1: "While investigating the \"Gloom\", you discovered the bandits from the Black Barrow are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One appears to see heavy use with the cult. It looks as though you have an opportunity to disrupt more of the cult's activities.",
                 2: "You followed the writings to an ancient crypt believed to be the cult’s base of operations. A group of cultists were performing ritual incantations in front of a black, gaping hole in reality. With the cultists and their minions dead, the dark rift is now dormant."
