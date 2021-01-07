@@ -238,7 +238,7 @@ export default {
         1: {
             "name": "Der Auftrag der Händlerin",
             "sections": {
-                1: "Die Valrather Händlerin Jekserah hat euch angeboten, zehn Goldmünzen zu zahlen, um einige gestohlene Waren zurückzuholen. Durch das Aufmischen von ein paar einheimischen Schlägern habt ihr entdeckt, dass das Versteck der Diebe das Schwarzgrab im Totenhain ist.",
+                1: "Die Valrath-Händlerin Jekserah hat euch angeboten, zehn Goldmünzen zu zahlen, um einige gestohlene Waren zurückzuholen. Durch das Aufmischen von ein paar einheimischen Schlägern habt ihr entdeckt, dass das Versteck der Diebe das Schwarzgrab im Totenhain ist.",
                 2: "Ihr habt eure Zielperson im Schwarzgrab gefunden, aber sie ist entkommen. Während der Verfolgung seid ihr auf den Grund gestoßen, warum die Banditen diesen speziellen Grabhügel ausgewählt haben: wiederbelebte Skelette. Die Banditen scheinen über gewisse nekromantische Kräfte zu verfügen. Trotzdem habt ihr sie und ihre unheiligen Verbündeten getötet. Euer Ziel befand sich nicht unter den Toten, aber ein Gang, der tiefer in die Katakomben führt, wartet auf euch.",
                 3: "Ihr habt den Banditen-Kommandanten besiegt. Etwas an ihm schien unnatürlich und er erwähnte das \"Grauen\" während der Schlacht. Ihr habt die gestohlenen Schriftrollen ein einem Versteck in der Kammer des Kommandanten gefunden und habt sie Jekserah für die vereinbarte Belohnung zurückgegeben."
             },
@@ -288,8 +288,8 @@ export default {
         4: {
             "name": "Geschichten aus der Gruft",
             "sections": {
-                1: "While investigating the \"Gloom\", you discovered the bandits from the Black Barrow are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One appears to see heavy use with the cult. It looks as though you have an opportunity to disrupt more of the cult's activities.",
-                2: "You followed the writings to an ancient crypt believed to be the cult’s base of operations. A group of cultists were performing ritual incantations in front of a black, gaping hole in reality. With the cultists and their minions dead, the dark rift is now dormant."
+                1: "Während eurer Nachforschung über das \"Grauen\" habt ihr herausgefunden, dass die Banditen aus dem Schearzgrab mit einem Kult gemeinsame Sache machen Eure Ankunft hat ihr Rutual gestört. Unter den Schriften, die in ihr in der Ritualkamer gefunden habt, befinden sich Notizen über einige andere Orte der Macht in der näheren Umgebung. Einer davon scheint von dem Kult stark genutzt zu werden. Es scheint, als hättet ihr die Chance, weitere Aktivitäten des Kults zu verhindern.",
+                2: "Ihr seid den Schriften zu einer uralten Krypta gefolgt, die vermutlich als Hauptquartier des Kultes gedient hat. Eine Gruppe von Kultisten führte rituelle Beschwörungen vor einem schwarzen, klaffenden Spalt aus. Durch den Tod der Kultisten und ihrer Lakeiein hat sich auch der klaffende Spalt geschlossen.",
             },
             "stages": {
                 0: "{1}",
