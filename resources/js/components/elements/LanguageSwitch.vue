@@ -41,11 +41,15 @@ export default {
             current: null,
             languages: {
                 'en': 'English',
-                'fr': 'Français'
+                'fr': 'Français',
+                'it': 'Italiano',
+                // 'de': 'Deutsche'
             },
             flags: {
                 'en': '🇺🇸',
-                'fr': '🇫🇷'
+                'fr': '🇫🇷',
+                'it': '🇮🇹',
+                'de': '🇩🇪'
             }
         }
     },
