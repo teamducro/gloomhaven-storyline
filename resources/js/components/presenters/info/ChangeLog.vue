@@ -110,7 +110,7 @@ export default {
                     date: moment('26-12-2020', "DD-MM-YYYY")
                 },
                 {version: 2.8, description: 'Italian language', date: moment('15-01-2021', "DD-MM-YYYY")}
-            ]
+            ].reverse()
         }
     },
     mounted() {
