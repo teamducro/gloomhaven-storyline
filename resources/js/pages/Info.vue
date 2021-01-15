@@ -26,6 +26,8 @@
                 </button>
             </a>
 
+            <change-log></change-log>
+
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Credits') }}</h2>
             <p class="mb-2">{{ $t('credits.thanks') }}</p>
             <ul class="list-disc ml-4">
