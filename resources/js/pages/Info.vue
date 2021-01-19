@@ -80,6 +80,17 @@
                         {{ $t('Virtual Gloomhaven Board') }}</a>
                 </li>
             </ul>
+            <p>{{ $t('Translations') }}</p>
+            <ul class="list-disc ml-4">
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('French') }}:</span>
+                    Aelentyr & Steve Rodrigue
+                </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Italian') }}:</span>
+                    Emiliano Caruselli & O.T.Nad
+                </li>
+            </ul>
 
             <p class="my-4">
                 {{ $t('credits.license') }}

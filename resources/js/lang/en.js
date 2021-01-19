@@ -64,7 +64,7 @@ export default {
         'title': 'Share Gloomhaven Storyline Tracker',
         1: 'Share your current local storyline with your party members.',
         2: 'Copy the link',
-        3: 'or share it on one of the folowing platforms.'
+        3: 'or share it on one of the following platforms.'
     },
     'Credits': 'Credits',
     'credits': {
