@@ -289,7 +289,7 @@ export default {
             "name": "Geschichten aus der Gruft",
             "sections": {
                 1: "Während eurer Nachforschung über das \"Grauen\" habt ihr herausgefunden, dass die Banditen aus dem Schearzgrab mit einem Kult gemeinsame Sache machen Eure Ankunft hat ihr Rutual gestört. Unter den Schriften, die in ihr in der Ritualkamer gefunden habt, befinden sich Notizen über einige andere Orte der Macht in der näheren Umgebung. Einer davon scheint von dem Kult stark genutzt zu werden. Es scheint, als hättet ihr die Chance, weitere Aktivitäten des Kults zu verhindern.",
-                2: "Ihr seid den Schriften zu einer uralten Krypta gefolgt, die vermutlich als Hauptquartier des Kultes gedient hat. Eine Gruppe von Kultisten führte rituelle Beschwörungen vor einem schwarzen, klaffenden Spalt aus. Durch den Tod der Kultisten und ihrer Lakeiein hat sich auch der klaffende Spalt geschlossen.",
+                2: "Ihr seid den Schriften zu einer uralten Krypta gefolgt, die vermutlich als Hauptquartier des Kultes gedient hat. Eine Gruppe von Kultisten führte rituelle Beschwörungen vor einem schwarzen, klaffenden Spalt aus. Durch den Tod der Kultisten und ihrer Lakeien hat sich auch der klaffende Spalt geschlossen.",
             },
             "stages": {
                 0: "{1}",
@@ -323,11 +323,11 @@ export default {
             }
         },
         8: {
-            "name": "Tripping the Rift",
+            "name": "Den Spalt betreten",
             "sections": {
-                1: "While busting up some cultist activity, you encountered a gaping black rift in reality. The cultists were performing some sort of ritual on the rift that was bringing forth horrible nightmarish forms of teeth and claws into this reality. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. You tossed a rock at it, and the rock disappeared into nothingness. You must admit that you wonder whether you could enter the rift yourself and whether you could survive the trip to wherever that rock ended up. Do you dare enter the rift?",
-                2: "The trip was less than pleasant. As soon as you arrived, you were set upon by demons sent by an angry, booming voice. Once the demons were dispatched, the voice spoke once more and invited you into it's realm. Having already made one leap of faith, you decided there was no harm in making another. Inside the voice's realm stood a monstrous creature, horned and terrifying, holding a trident and standing on four hooved legs. It asked you to retrieve an artifact, or otherwise the demonic creature would kill you.",
-                3: "Of course not. What kind of fool goes diving into shadowy dimensional rifts? Instead, you decided to seek aid in closing this rift permanently. Clearly nothing good could come of it, so you neutralized the rift."
+                1: "Während ihr einige Aktivitäten der Kultisten vereitelt habt, seid ihr auf einen klaffenden Spalt gestoßen. Die Kultisten involvierten den Spalt scheinbar in ein finsteres Ritual, so dass schreckliche und alptraumhafte Kreaturen durch ihn in eure Welt gebracht wurden. Jetzt, wo die Kultisten und ihre Schergen tot sind, scheint auch der Spalt zur Ruhe gekommen zu sein, was ihn jedoch nicht weniger beunruhigend macht. Ihr habt einen Stein hinein geworfen, der im Nichts verschwand. Ihr fragt euch, ob ihr den Spalt wohl selbst betreten könntet und ob ihr die Reise, die der Stein angetreten hat auch überleben könntet. Traut ihr euch den Spalt zu betreten?",
+                2: "Eure Reise war alles andere als angenehm. Kaum angekommen, wurdet ihr von Dämonen angegriffen, die von einer wütenden, dröhnenden Stimme geschickt wurden. Nachdem die Dämonen erledigt waren, sprach die Stimme noch einmal zu euch und lud euch in ihr Reich ein. Erneut nahmt ihr den Sprung ins Ungewisse in Kauf. Im Reich der Stimme stellte sich euch eine monströse, gehörnte Kreatur, die einen Dreizack hieltund auf vier Hufen stand, entgegen. Das Monstrum forderte euch auf ein Artefakt zu beschaffen, anderenfalls wärt ihr des Todes.",
+                3: "Nein, natürlich nicht. Welcher Narr springt schon in düstere Dimensionsspalten? Stattdessen habt ihr beschlossen, Hilfe zu suchen, um den Spalt dauerhaft zu schließen. Offensichtlich konnte nichts Gutes dabei herauskommen, also habt ihr den Spalt geschlossen."
             },
             "stages": {
                 0: "{1}",
@@ -336,13 +336,13 @@ export default {
             }
         },
         9: {
-            "name": "Necromancer Hunt",
+            "name": "Jagd auf die Nekromantin",
             "sections": {
-                1: "The necromancer Jekserah has fled Gloomhaven. Before she left, she made some threats against you. It is clear you need to hunt her down before she can make good on her threats. Unfortunately, you have no idea where she is. The city guard isn't much help here, but Argeise does have some suggestions. There is an Aesther enchanter in town who may be able to divine Jekserah's location, but she's notoriously difficult to work with. Alternatively, some of your contacts at the Santuary of the Great Oak know of a temple dedicated to an unseen force that will answer any question asked of it.",
-                2: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find Jekserah?",
-                3: "You visited the Temple of the Seer, but were much more interested in the voice's other offers than finding Jekserah. The only way to find Jekserah now is with the enchanter's help.",
-                4: "You've located Jekserah's sanctum in the Corpsewood. It's time to put a stop to her necromancy for good.",
-                5: "After a grueling fight against her undead lackies, Jekserah falls to your blade. You separated her head from her body and hastily left the wretched place full of mangled corpses. You returned the head to the Captain of the Guard and were paid handsomely for the bounty on her."
+                1: "Die Nekromantin Jekserah ist aus der Stadt geflohen. Bevor sie verschwand, sprach sie einige düstere Drohungen gegen euch aus. Es ist klar, dass ihr sie zur Strecke bringen müsst, bevor sie ihre Drohungen wahr machen kann. Leider habt ihr keine Ahnung, wo sie ist. Die Stadtwache ist keine große Hilfe, aber Argeise hat ein paar Vorschläge wo ihr Hilfe bekommen könntet. Es gibt eine Aesther-Zauberin in der Stadt, die vielleicht in der Lage ist, Jekserahs Aufenthaltsort zu erraten, aber die Zusammenarbeit mit ihr ist gemeinhin als schwierig bekannt. Alternativ dazu nannten euch einige eurer Kontakte im Heiligtum der Großen Eiche einen Tempel, der einer unsichtbaren Macht geweiht ist. Diese Macht beantworte jede Frage, die man ihr stellt.",
+                2: "Ihr habt die Aesther-Zauberin Hail im Crooked Bone getroffen. Obwohl sie ein wenig exzentrisch ist, scheint sie recht fähig zu sein. Ihr habt euch ihre Gunst verdient, indem ihr ihr bei ihren Geschäften geholfen hast. Vielleicht kann sie euch jetzt helfen, Jekserah zu finden?",
+                3: "Ihr habt den Tempel des Sehers besucht, wart aber viel mehr an den anderen Angeboten der Stimme interessiert, als Jekserah zu finden. Der einzige Weg, Jekserah jetzt zu finden, ist mit der Hilfe der Zauberin.",
+                4: "Ihr habt Jekserahs Heiligtum im Leichenwald gefunden. Es ist an der Zeit, ihrer Nekromantie ein für alle Mal ein Ende zu setzen.",
+                5: "Nach einem zermürbenden Kampf gegen ihre untoten Lakaien, fällt Jekserah unter den Hieben eurer Klingen. Ihr trennt ihren Kopf vom Rumpf und verlasst eilig den erbärmlichen Ort voller verstümmelter Leichen. Ihr habt den Kopf an den Hauptmann der Wache ausgehändigt und wurdet für das auf sie ausgesetzte Kopfgeld gut bezahlt."
             },
             "stages": {
                 0: "{1}",
