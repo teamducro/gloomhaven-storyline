@@ -248,7 +248,7 @@ export default {
     },
     quest: {
         1: {
-            "name": "The Merchant's Request",
+            "name": "La solicitud de la comerciante",
             "sections": {
                 1: "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
                 2: "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic power. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
@@ -261,7 +261,7 @@ export default {
             }
         },
         2: {
-            "name": "The Merchant's Wrath",
+            "name": "La ira de la comerciante",
             "sections": {
                 1: "Jekserah offers you another job after you finished your first one. A tribe of Inox in the Dagger Forest has ransacked a couple of her caravans headed to the Capital. She asked if you could make an example of them.",
                 2: "The Inox tribe is dead. You've made an brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
@@ -274,7 +274,7 @@ export default {
             }
         },
         3: {
-            "name": "Seeking Gloom",
+            "name": "Buscando la Penunbra",
             "sections": {
                 1: "The Bandit Commander's proclamations of a \"Gloom\" during your battle do not sit well with you. Sifting through the carnage left by the battle, you found a cache of scrolls. The writing upon them was in some unknown archaic language. Among the scrolls, you found a map of the northern countryside. A bend in the Still River was clearly marked as a point of interest. Contemplating whether you want to find out more about this so-called \"Gloom,\" you decided that the spot could be a point of interest for you, as well.",
                 2: "The map lead to a crypt full of demons and cultists. Clearly, the bandits are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One is marked as being overrun by vicious undead. It looks as though you have an opportunity to get in the cult's good graces by helping to clear out a threat. This may help you learn more about the \"Gloom\".",
@@ -298,7 +298,7 @@ export default {
             }
         },
         4: {
-            "name": "Tales from the Crypt",
+            "name": "Historias de la cripta",
             "sections": {
                 1: "While investigating the \"Gloom\", you discovered the bandits from the Black Barrow are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One appears to see heavy use with the cult. It looks as though you have an opportunity to disrupt more of the cult's activities.",
                 2: "You followed the writings to an ancient crypt believed to be the cult’s base of operations. A group of cultists were performing ritual incantations in front of a black, gaping hole in reality. With the cultists and their minions dead, the dark rift is now dormant."
@@ -309,7 +309,7 @@ export default {
             }
         },
         6: {
-            "name": "The Merchant's Secret",
+            "name": "El secreto de la comerciante",
             "sections": {
                 1: "When you left Jekserah's manor a Quatryl city guard approached you. She told you Jekserah has been trying to overthrow the military in Gloomhaven and is up to something sinister. The guard asked for your aid in uncovering Jekserah’s plans and expose her for who she really is.",
                 2: "The warehouse was full of the undead. Jekserah had been using the necromantic scroll you delivered to raise the undead within the city walls. You fought your way to the back room of the warehouse and confronted Jekserah. Just before she flipped out a window she told you she'd be back with a legion of undead. To stop her you could locate her yourself or ask the help of an Aesther enchanter mentioned by the city guard",
@@ -322,7 +322,7 @@ export default {
             }
         },
         7: {
-            "name": "A Valrath's Best Friend",
+            "name": "El mejor amigo de la valrath",
             "sections": {
                 1: "Jekserah has one last task for you. She requires a diamond of considerable size for a customer. There is a diamond mine in the southern mountains overrun by Vermlings, with some other more intelligent force behind them. If you can fight your way in and grab the biggest diamond you can find, Jekserah will give you a considerable reward. However, you have been also been warned by a guard that Jekserah may have more sinister machinations than she lets on. Something about overthrowing the military... but one diamond couldn't hurt, could it?",
                 2: "Sinister machinations or not, you decided the phrase \"considerable reward\" was more pertinent. As expected, the diamond mine was infested by Vermling miners. They were lead by a Merciless Overseer who swiftly turned the miners against you with a few cracks of his whip. Once the overseer was dealt with and the diamond recovered, the remaining miners scattered. You headed back to Jekserah to claim your reward. Her bodyguards escorted you inside the manor where you found her somehow different—more harrowed and grim. \"Wonderful.\" She exchanged the diamond for a large purse full of coins. \"This will serve beautifully as a focus for the incantations. I wonder if the cultists even knew what they had here. With this, I can summon an entire army of undead!\" She turned to you with a strange glint in her eye. \"So then! Are you ready to overthrow the military of Gloomhaven and put control of the city into the hands of the Merchant’s Guild? Or do you not have the stomach to effect real change?\"",
@@ -335,7 +335,7 @@ export default {
             }
         },
         8: {
-            "name": "Tripping the Rift",
+            "name": "Topando con la Grieta",
             "sections": {
                 1: "While busting up some cultist activity, you encountered a gaping black rift in reality. The cultists were performing some sort of ritual on the rift that was bringing forth horrible nightmarish forms of teeth and claws into this reality. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. You tossed a rock at it, and the rock disappeared into nothingness. You must admit that you wonder whether you could enter the rift yourself and whether you could survive the trip to wherever that rock ended up. Do you dare enter the rift?",
                 2: "The trip was less than pleasant. As soon as you arrived, you were set upon by demons sent by an angry, booming voice. Once the demons were dispatched, the voice spoke once more and invited you into it's realm. Having already made one leap of faith, you decided there was no harm in making another. Inside the voice's realm stood a monstrous creature, horned and terrifying, holding a trident and standing on four hooved legs. It asked you to retrieve an artifact, or otherwise the demonic creature would kill you.",
@@ -348,7 +348,7 @@ export default {
             }
         },
         9: {
-            "name": "Necromancer Hunt",
+            "name": "A la caza de la Nigromante",
             "sections": {
                 1: "The necromancer Jekserah has fled Gloomhaven. Before she left, she made some threats against you. It is clear you need to hunt her down before she can make good on her threats. Unfortunately, you have no idea where she is. The city guard isn't much help here, but Argeise does have some suggestions. There is an Aesther enchanter in town who may be able to divine Jekserah's location, but she's notoriously difficult to work with. Alternatively, some of your contacts at the Santuary of the Great Oak know of a temple dedicated to an unseen force that will answer any question asked of it.",
                 2: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find Jekserah?",
@@ -366,7 +366,7 @@ export default {
             }
         },
         10: {
-            "name": "New Management",
+            "name": "Nuevo Gobierno",
             "sections": {
                 1: "Pleased with your work so far, Jekserah has invited you to join her undead invasion of the city. She plans to overthrow the military and put the Merchant's Guild in control.",
                 2: "You aided Jekserah in overthrowing the military. The city guard fought back, but their pitiful mortal bodies were no match for the overwhelming onslaught of the undead and the might of your blades. Every guard that fell bolstered the undead's ranks. When the Captain of the Guard fell, the remaining guards fled like the cowards you always knew they were. Jekserah's bodyguards were killed during the invasion, but so much the better for you. You are now Jekserah's new right hand and Merchant Guild rules the city.",
@@ -379,7 +379,7 @@ export default {
             },
         },
         11: {
-            "name": "The Old Guard",
+            "name": "La Vieja Guardia",
             "sections": {
                 1: "Jekserah has summoned an undead army and is planning to invade the city! You must warn the city guard at once!",
                 2: "Her plan of protecting Gloomhaven with an army of undead was madness. You could not give over all the power to an unscrupulous necromancer. You ran to warn the city guard and were able to mount a defense against the waves of undead crashing against your weapons. You fought the undead all the way back to Jekserah's manor, where you put an end to her vile necromancy once and for all. Jekserah is dead by your hand.",
