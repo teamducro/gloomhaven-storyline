@@ -65,30 +65,29 @@
                 </ul>
             </div>
 
-            <div class="w-full mt-8">
-                <h2>{{ $t('Item Designs') }}</h2>
-                <autocomplete
-                    :label="$t('Add item designs')"
-                    id="item-designs"
-                    :list="Object.keys(sheet.itemDesigns)"
-                    @selected="(item) => {toggleItemDesign(item)}">
-                    <template v-for="(checked, item) in sheet.itemDesigns" v-slot:[slugify(item)]>
-                        <div class="w-full flex items-center justify-between">
-                            <span>{{ item }}</span>
-                            <span class="material-icons">
-                                {{ checked ? 'check_circle_outline' : 'radio_button_unchecked' }}
-                            </span>
-                        </div>
-                    </template>
-                </autocomplete>
-                <div :key="itemListKey">
-                    <bedge v-for="(checked, item) in sheet.itemDesigns" v-if="checked" :key="item"
-                           class="mr-2 white cursor-pointer rounded-md"
-                           @click="(e) => {deselectItemDesign(item)}">
-                        {{ item }}
-                        <span class="ml-1">×</span>
-                    </bedge>
-                </div>
+            <selectable-list
+                id="item-designs"
+                :title="$t('Item Designs')"
+                :label="$t('Add item designs')"
+                :items.sync="sheet.itemDesigns"
+                @change="store"
+            ></selectable-list>
+
+            <div class="lg:flex">
+                <selectable-list
+                    id="city-events"
+                    :title="$t('City Events')"
+                    :label="$t('Add city events')"
+                    :items.sync="sheet.city"
+                    @change="store"
+                ></selectable-list>
+                <selectable-list
+                    id="road-events"
+                    :title="$t('Road Events')"
+                    :label="$t('Add road events')"
+                    :items.sync="sheet.road"
+                    @change="store"
+                ></selectable-list>
             </div>
 
             <div class="w-full mt-8">
@@ -136,13 +135,10 @@
 import StoryRepository from "../repositories/StoryRepository";
 import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
-import Autocomplete from "../components/elements/Autocomplete";
-import Bedge from "../components/elements/Bedge";
-import Slugify from "../services/Slugify";
+import SelectableList from "../components/presenters/party/SelectableList";
 
 export default {
-    components: {Bedge, Autocomplete},
-    mixins: [Slugify],
+    components: {SelectableList},
     data() {
         return {
             sheet: null,
@@ -196,7 +192,6 @@ export default {
             ],
             campaignName: null,
             loading: true,
-            itemListKey: 0,
             storyRepository: new StoryRepository(),
             storySyncer: new StorySyncer,
         }
@@ -271,21 +266,7 @@ export default {
         setCampaignName() {
             const story = this.storyRepository.current()
             this.campaignName = story ? story.name : this.$t('local');
-        },
-        selectItemDesign(item, select = true) {
-            this.$set(this.sheet.itemDesigns, item, select);
-            this.rerenderItemList();
-            this.store();
-        },
-        deselectItemDesign(item) {
-            this.selectItemDesign(item, false);
-        },
-        toggleItemDesign(item) {
-            this.selectItemDesign(item, !this.sheet.itemDesigns[item]);
-        },
-        rerenderItemList() {
-            this.itemListKey++;
-        },
+        }
     }
 }
 </script>

@@ -69,7 +69,7 @@ export default {
             });
         },
         select(item) {
-            this.$emit('selected', item);
+            this.$emit('change', item);
         }
     }
 }
