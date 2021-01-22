@@ -235,7 +235,6 @@ export default {
         "Through the Nest": "Through the Nest",
         "A Map to Treasure": "A Map to Treasure",
         "Bad Business": "Bad Business",
-        "The Poison's Source": "The Poison's Source",
         "Sun-Blessed": "Sun-Blessed",
         "Sin-Ra": "Sin-Ra",
         "Debt Collection": "Debt Collection",
