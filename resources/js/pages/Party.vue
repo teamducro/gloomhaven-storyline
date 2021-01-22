@@ -67,23 +67,28 @@
 
             <div class="w-full mt-8">
                 <h2>{{ $t('Item Designs') }}</h2>
-                <ul class="flex flex-row flex-wrap -mx-2">
-                    <li v-for="(checked, item) in sheet.itemDesigns"
-                        v-if="item < 134 || showSoloItems"
-                        class="flex items-center">
-                        <checkbox group="items"
-                                  :checked="checked"
-                                  @change="(id, isChecked) => {sheet.itemDesigns[item] = isChecked; store()}"></checkbox>
-                        <span class="w-8 font-title">{{ item }}</span>
-                    </li>
-                    <li v-if="!showSoloItems" class="flex items-center">
-                        <a @click.prevent="showSoloItems = true"
-                           class="cursor-pointer"
-                        >
-                            Show more...
-                        </a>
-                    </li>
-                </ul>
+                <autocomplete
+                    :label="$t('Add item designs')"
+                    id="item-designs"
+                    :list="Object.keys(sheet.itemDesigns)"
+                    @selected="(item) => {toggleItemDesign(item)}">
+                    <template v-for="(checked, item) in sheet.itemDesigns" v-slot:[slugify(item)]>
+                        <div class="w-full flex items-center justify-between">
+                            <span>{{ item }}</span>
+                            <span class="material-icons">
+                                {{ checked ? 'check_circle_outline' : 'radio_button_unchecked' }}
+                            </span>
+                        </div>
+                    </template>
+                </autocomplete>
+                <div :key="itemListKey">
+                    <bedge v-for="(checked, item) in sheet.itemDesigns" v-if="checked" :key="item"
+                           class="mr-2 white cursor-pointer rounded-md"
+                           @click="(e) => {deselectItemDesign(item)}">
+                        {{ item }}
+                        <span class="ml-1">×</span>
+                    </bedge>
+                </div>
             </div>
 
             <div class="w-full mt-8">
@@ -131,8 +136,13 @@
 import StoryRepository from "../repositories/StoryRepository";
 import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
+import Autocomplete from "../components/elements/Autocomplete";
+import Bedge from "../components/elements/Bedge";
+import Slugify from "../services/Slugify";
 
 export default {
+    components: {Bedge, Autocomplete},
+    mixins: [Slugify],
     data() {
         return {
             sheet: null,
@@ -184,11 +194,11 @@ export default {
                     reward: 'Open the Town Records Book'
                 }
             ],
+            campaignName: null,
+            loading: true,
+            itemListKey: 0,
             storyRepository: new StoryRepository(),
             storySyncer: new StorySyncer,
-            campaignName: null,
-            showSoloItems: false,
-            loading: true
         }
     },
     watch: {
@@ -201,6 +211,7 @@ export default {
     },
     mounted() {
         this.render();
+
         // this.calculateShop();
         // this.calculateDonationProsperity();
 
@@ -260,6 +271,20 @@ export default {
         setCampaignName() {
             const story = this.storyRepository.current()
             this.campaignName = story ? story.name : this.$t('local');
+        },
+        selectItemDesign(item, select = true) {
+            this.$set(this.sheet.itemDesigns, item, select);
+            this.rerenderItemList();
+            this.store();
+        },
+        deselectItemDesign(item) {
+            this.selectItemDesign(item, false);
+        },
+        toggleItemDesign(item) {
+            this.selectItemDesign(item, !this.sheet.itemDesigns[item]);
+        },
+        rerenderItemList() {
+            this.itemListKey++;
         },
     }
 }
