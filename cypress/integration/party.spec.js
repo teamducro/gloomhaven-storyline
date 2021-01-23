@@ -12,6 +12,8 @@ describe('Party', () => {
         cy.contains('Prosperity');
         cy.contains('Prosperity Items');
         cy.contains('Item Designs');
+        cy.contains('City Event Decks');
+        cy.contains('Road Event Decks');
         cy.contains('notes');
         cy.contains('Unlocks');
     });

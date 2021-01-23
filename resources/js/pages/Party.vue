@@ -76,14 +76,14 @@
             <div class="lg:flex">
                 <selectable-list
                     id="city-events"
-                    :title="$t('City Events')"
+                    :title="$t('City Event Decks')"
                     :label="$t('Add city events')"
                     :items.sync="sheet.city"
                     @change="store"
                 ></selectable-list>
                 <selectable-list
                     id="road-events"
-                    :title="$t('Road Events')"
+                    :title="$t('Road Event Decks')"
                     :label="$t('Add road events')"
                     :items.sync="sheet.road"
                     @change="store"
