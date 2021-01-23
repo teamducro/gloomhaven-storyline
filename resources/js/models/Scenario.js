@@ -1,6 +1,7 @@
 import {ScenarioState} from "./ScenarioState";
 import Storable from './Storable'
 import Card from "./Card";
+import ScenarioRepository from "../repositories/ScenarioRepository";
 
 class Scenario {
 
@@ -24,6 +25,7 @@ class Scenario {
         this.notes = "";
         this.links_to = collect(data.links_to);
         this.linked_from = collect(data.linked_from);
+        this.coupled = data.coupled;
         this.required_by = collect(data.required_by);
         this.blocks_on = collect(data.blocks_on);
         this.treasures = collect(data.treasures);
@@ -155,6 +157,12 @@ class Scenario {
     }
 
     image() {
+        if (this.coupled && this.isBlocked()) {
+            if ((new ScenarioRepository).find(this.coupled).isComplete()) {
+                return '/img/scenarios/' + this.coupled + '_c' + '.png'
+            }
+        }
+
         return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
     }
 
