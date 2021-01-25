@@ -301,7 +301,7 @@
         },
         {
             "id": "PTPS",
-            "name": "The Poison's Source",
+            "name": "The Poisons Source",
             "type": "Party",
             "is_manual": true,
             "cards": [

@@ -235,7 +235,6 @@ export default {
         "Through the Nest": "Attraverso il Nido",
         "A Map to Treasure": "A Map to Treasure",
         "Bad Business": "Bad Business",
-        "The Poison's Source": "La Fonte del Veleno",
         "Sun-Blessed": "Benedetto dal Sole",
         "Sin-Ra": "Sin-Ra",
         "Debt Collection": "Riscossione del Debito",
