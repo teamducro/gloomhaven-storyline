@@ -12,6 +12,8 @@ describe('Party', () => {
         cy.contains('Prosperity');
         cy.contains('Prosperity Items');
         cy.contains('Item Designs');
+        cy.contains('City Event Decks');
+        cy.contains('Road Event Decks');
         cy.contains('notes');
         cy.contains('Unlocks');
     });
@@ -75,11 +77,23 @@ describe('Party', () => {
         cy.get('span').contains('015–021').prev().find('input').should('not.be.checked');
     });
 
+    it('It checks item designs', () => {
+        cy.get('#item-designs').parent().click();
+        cy.get('[name="item-designs"]').type('90');
+        cy.get('.mdc-list-item__text span').contains('90').click();
+        utilities.closeModel();
+        cy.get('.bedge').contains('90').should('be.visible').click();
+        cy.get('.bedge').should('not.exist');
+    });
+
     it('It stores the party sheet', () => {
         cy.visit('/tracker/#/party');
         cy.get('input[aria-labelledby="reputation"]').clear().type('20{enter}');
         cy.get('input[aria-labelledby="donations"]').clear().type('1000{enter}');
         cy.get('input#p-65').click();
+        cy.get('#item-designs').parent().click();
+        cy.get('[name="item-designs"]').type('90');
+        cy.get('.mdc-list-item__text span').contains('90').click();
 
         cy.get('#notes').type('Foo Bar');
         utilities.closeModel();
@@ -92,6 +106,7 @@ describe('Party', () => {
         cy.get('input#p-65').should('be.checked');
         cy.get('span').contains('064–070').prev().find('input').should('be.checked');
         cy.get('#notes').should('have.value', 'Foo Bar');
+        cy.get('.bedge').contains('90').should('be.visible');
     });
 
 });
