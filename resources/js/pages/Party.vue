@@ -65,25 +65,29 @@
                 </ul>
             </div>
 
-            <div class="w-full mt-8">
-                <h2>{{ $t('Item Designs') }}</h2>
-                <ul class="flex flex-row flex-wrap -mx-2">
-                    <li v-for="(checked, item) in sheet.itemDesigns"
-                        v-if="item < 134 || showSoloItems"
-                        class="flex items-center">
-                        <checkbox group="items"
-                                  :checked="checked"
-                                  @change="(id, isChecked) => {sheet.itemDesigns[item] = isChecked; store()}"></checkbox>
-                        <span class="w-8 font-title">{{ item }}</span>
-                    </li>
-                    <li v-if="!showSoloItems" class="flex items-center">
-                        <a @click.prevent="showSoloItems = true"
-                           class="cursor-pointer"
-                        >
-                            Show more...
-                        </a>
-                    </li>
-                </ul>
+            <selectable-list
+                id="item-designs"
+                :title="$t('Item Designs')"
+                :label="$t('Add item designs')"
+                :items.sync="sheet.itemDesigns"
+                @change="store"
+            ></selectable-list>
+
+            <div class="lg:flex">
+                <selectable-list
+                    id="city-events"
+                    :title="$t('City Event Decks')"
+                    :label="$t('Add city events')"
+                    :items.sync="sheet.city"
+                    @change="store"
+                ></selectable-list>
+                <selectable-list
+                    id="road-events"
+                    :title="$t('Road Event Decks')"
+                    :label="$t('Add road events')"
+                    :items.sync="sheet.road"
+                    @change="store"
+                ></selectable-list>
             </div>
 
             <div class="w-full mt-8">
@@ -131,8 +135,10 @@
 import StoryRepository from "../repositories/StoryRepository";
 import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
+import SelectableList from "../components/presenters/party/SelectableList";
 
 export default {
+    components: {SelectableList},
     data() {
         return {
             sheet: null,
@@ -184,11 +190,10 @@ export default {
                     reward: 'Open the Town Records Book'
                 }
             ],
+            campaignName: null,
+            loading: true,
             storyRepository: new StoryRepository(),
             storySyncer: new StorySyncer,
-            campaignName: null,
-            showSoloItems: false,
-            loading: true
         }
     },
     watch: {
@@ -201,6 +206,7 @@ export default {
     },
     mounted() {
         this.render();
+
         // this.calculateShop();
         // this.calculateDonationProsperity();
 
@@ -260,7 +266,7 @@ export default {
         setCampaignName() {
             const story = this.storyRepository.current()
             this.campaignName = story ? story.name : this.$t('local');
-        },
+        }
     }
 }
 </script>
