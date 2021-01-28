@@ -132,12 +132,14 @@
 </template>
 
 <script>
-import StoryRepository from "../repositories/StoryRepository";
 import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
 import SelectableList from "../components/presenters/party/SelectableList";
+import GetCampaignName from "../services/GetCampaignName";
+import SheetCalculations from "../services/SheetCalculations";
 
 export default {
+    mixins: [GetCampaignName, SheetCalculations],
     components: {SelectableList},
     data() {
         return {
@@ -192,23 +194,19 @@ export default {
             ],
             campaignName: null,
             loading: true,
-            storyRepository: new StoryRepository(),
             storySyncer: new StorySyncer,
         }
     },
     watch: {
         'sheet.reputation': function () {
-            this.calculateShop();
+            this.shop = this.calculateShop(this.sheet.reputation);
         },
         'sheet.donations': function () {
-            this.calculateDonationProsperity();
+            this.donationProsperity = this.calculateDonationProsperity(this.sheet.donations);
         }
     },
     mounted() {
         this.render();
-
-        // this.calculateShop();
-        // this.calculateDonationProsperity();
 
         this.$bus.$on('campaigns-changed', this.render);
     },
@@ -220,7 +218,7 @@ export default {
             this.loading = true;
 
             this.sheet = new Sheet;
-            this.setCampaignName();
+            this.campaignName = this.getCampaignName();
 
             await this.$nextTick();
 
@@ -238,34 +236,10 @@ export default {
             this.sheet.store();
             this.storySyncer.store();
         },
-        calculateShop() {
-            let reputation = [-18, -14, -10, -6, -2, 3, 7, 11, 15, 19];
-            let shop = 5;
-            reputation.forEach((r) => {
-                if (this.sheet.reputation >= r) {
-                    shop--;
-                }
-            });
-            this.shop = shop;
-        },
-        calculateDonationProsperity() {
-            let rates = [100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, 900, 1000];
-            let donationProsperity = 0;
-            rates.forEach((rate) => {
-                if (this.sheet.donations >= rate) {
-                    donationProsperity++;
-                }
-            });
-            this.donationProsperity = donationProsperity;
-        },
         renderHtml(html) {
             return {
                 template: `<span>${html}</span>`
             };
-        },
-        setCampaignName() {
-            const story = this.storyRepository.current()
-            this.campaignName = story ? story.name : this.$t('local');
         }
     }
 }
