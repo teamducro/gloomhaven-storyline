@@ -25,9 +25,10 @@ export default {
             return donationProsperity;
         },
         calculateItems(items, prosperity) {
-            const prosperityItems = [14, 21, 28, 35, 42, 49, 56, 63, 70];
-            console.log(items);
-            return items;
+            let filteredItems = collect(items).filter().keys().all().map(Number)
+            const prosperityMap = [14, 21, 28, 35, 42, 49, 56, 63, 70];
+            let prosperityItems = Array.from({length: prosperityMap[prosperity - 1]}, (_, i) => i + 1)
+            return prosperityItems.concat(filteredItems);
         }
     }
 }

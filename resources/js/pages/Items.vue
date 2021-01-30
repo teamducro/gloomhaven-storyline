@@ -4,6 +4,13 @@
 
             <h1 class="mb-4 text-xl">{{ $t('Item designs') }} {{ campaignName }}</h1>
 
+            <data-table
+                :columns="columns"
+                :sortable="sortable"
+                :searchable="searchable"
+                :data="items.items"
+            ></data-table>
+
         </div>
     </div>
 </template>
@@ -13,6 +20,7 @@ import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
+import ItemRepository from "../repositories/ItemRepository";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -20,16 +28,32 @@ export default {
         return {
             sheet: null,
             shop: 0,
-            items: [],
+            items: collect([]),
             campaignName: null,
             loading: true,
+            columns: [
+                {id: 'image', name: ''},
+                {id: 'id', name: 'ID'},
+                {id: 'name', name: 'Name'},
+                {id: 'slot', name: 'Slot'},
+                {id: 'cost', name: 'Cost'},
+                {id: 'use', name: 'Use'},
+                {id: 'desc', name: 'Effect'}
+            ],
+            sortable: ['id', 'name', 'slot', 'cost', 'use'],
+            searchable: ['id', 'name'],
             storySyncer: new StorySyncer,
+            itemRepository: new ItemRepository,
         }
     },
     watch: {
-        'sheet.items': function () {
-            this.items = this.calculateItems(this.sheet.items, this.sheet.prosperity)
-        },
+        'sheet.itemDesign': {
+            handler() {
+                const sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                this.items = this.itemRepository.findMany(sheetItems);
+            },
+            deep: true
+        }
     },
     mounted() {
         this.render();
