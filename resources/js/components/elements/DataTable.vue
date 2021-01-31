@@ -3,7 +3,7 @@
         <thead class="bg-black2-25">
         <tr>
             <th v-for="head in columns" scope="col"
-                class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                class="p-3 text-left text-xs font-medium text-white uppercase tracking-wider">
                 <span class="flex items-center">
                     {{ head.name }}
                     <span v-if="sort === head.id" class="material-icons">arrow_drop_down</span>
@@ -13,10 +13,12 @@
         </thead>
         <tbody>
         <tr v-for="(row, index) in rows" :key="index"
-            class="px-6 py-4 whitespace-nowrap text-sm text-white2-75" :class="{'bg-black2-25': index%2 === 0}">
-            <td v-for="column in columns" :key="column.id+index">
+            class="whitespace-nowrap text-sm text-white2-75" :class="{'bg-black2-25': index%2 === 0}">
+            <td v-for="column in columns" :key="column.id+index"
+                class="relative p-3 overflow-hidden">
                 <slot :name="column.id" :value="row[column.id]" :row="row">
-                    {{ row[column.id] }}
+                    <webp v-if="String(row[column.id]).startsWith('img')" :src="row[column.id]" width="20"/>
+                    <span v-else>{{ row[column.id] }}</span>
                 </slot>
             </td>
         </tr>
@@ -60,7 +62,7 @@ export default {
 
             let result = {};
             this.searchable.forEach(key => {
-                result[key] = (input) => (input ? input.toString().toLowerCase().includes(this.search.toLowerCase()) : false);
+                result[key] = (input) => (input ? input.toString().toLowerCase().includes(this.search.toString().toLowerCase()) : false);
             });
             return result;
         },
@@ -107,9 +109,8 @@ export default {
         },
         initialSearch: {
             handler(newVal) {
-                this.search = Object.assign({}, newVal)
+                this.search = newVal
             },
-            deep: true,
             immediate: true
         }
     },

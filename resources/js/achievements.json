@@ -7,7 +7,7 @@
         },
         {
             "id": "PJP",
-            "name": "Jekserahs Plans",
+            "name": "Jekserah's Plans",
             "type": "Party"
         },
         {
@@ -29,7 +29,7 @@
         },
         {
             "id": "PADE",
-            "name": "A Demons Errand",
+            "name": "A Demon's Errand",
             "type": "Party"
         },
         {
@@ -60,7 +60,7 @@
         },
         {
             "id": "PSC",
-            "name": "Stonebreakers Censer",
+            "name": "Stonebreaker's Censer",
             "type": "Party"
         },
         {
@@ -142,12 +142,12 @@
         },
         {
             "id": "PTVC",
-            "name": "The Voices Command",
+            "name": "The Voice's Command",
             "type": "Party"
         },
         {
             "id": "PTDC",
-            "name": "The Drakes Command",
+            "name": "The Drake's Command",
             "type": "Party"
         },
         {
@@ -214,7 +214,7 @@
         },
         {
             "id": "PRA",
-            "name": "Redthorns Aid",
+            "name": "Redthorn's Aid",
             "type": "Party"
         },
         {
@@ -301,7 +301,7 @@
         },
         {
             "id": "PTPS",
-            "name": "The Poisons Source",
+            "name": "The Poison's Source",
             "type": "Party",
             "is_manual": true,
             "cards": [
@@ -346,7 +346,7 @@
         },
         {
             "id": "PFA",
-            "name": "Fishs Aid",
+            "name": "Fish's Aid",
             "type": "Party",
             "is_manual": true,
             "cards": [

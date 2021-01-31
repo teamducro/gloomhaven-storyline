@@ -1,4 +1,4 @@
-<template>
+<template xmlns:slot="http://www.w3.org/1999/html">
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
         <div id="items" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
@@ -9,7 +9,13 @@
                 :sortable="sortable"
                 :searchable="searchable"
                 :data="items.items"
-            ></data-table>
+            >
+                <template slot="image" slot-scope="{value}">
+                    <div class="relative overflow-hidden h-11 -m-3" style="width: 80px;">
+                        <webp :src="value" width="80" class="-mt-4 top-0 absolute max-w-none" :animate="true"/>
+                    </div>
+                </template>
+            </data-table>
 
         </div>
     </div>
@@ -33,15 +39,15 @@ export default {
             loading: true,
             columns: [
                 {id: 'image', name: ''},
-                {id: 'id', name: 'ID'},
+                {id: 'number', name: 'ID'},
                 {id: 'name', name: 'Name'},
                 {id: 'slot', name: 'Slot'},
                 {id: 'cost', name: 'Cost'},
                 {id: 'use', name: 'Use'},
                 {id: 'desc', name: 'Effect'}
             ],
-            sortable: ['id', 'name', 'slot', 'cost', 'use'],
-            searchable: ['id', 'name'],
+            sortable: ['number', 'name', 'slot', 'cost', 'use'],
+            searchable: ['number', 'name'],
             storySyncer: new StorySyncer,
             itemRepository: new ItemRepository,
         }

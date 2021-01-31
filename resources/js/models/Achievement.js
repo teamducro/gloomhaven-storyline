@@ -32,7 +32,7 @@ class Achievement {
     }
 
     get name() {
-        return app.$t('achievements.' + this._name);
+        return app.$t('achievements.' + this._name.replace("'", ''));
     }
 
     isGlobal() {
