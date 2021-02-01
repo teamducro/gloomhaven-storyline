@@ -15,7 +15,7 @@
                 <span class="mdc-text-field__ripple"></span>
                 <input class="mdc-text-field__input" aria-labelledby="item-search"
                        type="text" name="item-search"
-                       v-model="query" @keyup="filter">
+                       v-model="query" @keyup="applySearch">
                 <span class="mdc-floating-label" id="item-search">Search</span>
                 <span class="mdc-line-ripple"></span>
             </label>
@@ -23,7 +23,7 @@
             <data-table class="mt-2"
                         :columns="columns"
                         :sortable="sortable"
-                        :searchable="searchable"
+                        :initialSearch="search"
                         :data="items.items"
             >
                 <template slot="image" slot-scope="{value, row}">
@@ -57,11 +57,12 @@ export default {
         return {
             selectedItem: null,
             sheet: null,
-            query: '',
             shop: 0,
             items: collect([]),
             campaignName: null,
             loading: true,
+            query: '',
+            search: {},
             columns: [
                 {id: 'image', name: 'Card'},
                 {id: 'number', name: 'Nr'},
@@ -72,7 +73,6 @@ export default {
                 {id: 'desc', name: 'Effect'}
             ],
             sortable: ['number', 'name', 'slot', 'cost', 'use'],
-            searchable: ['number', 'name'],
             field: null,
             storySyncer: new StorySyncer,
             itemRepository: new ItemRepository,
@@ -117,8 +117,19 @@ export default {
             this.sheet.store();
             this.storySyncer.store();
         },
-        filter() {
-
+        applySearch() {
+            if (this.query) {
+                if (isNaN(this.query)) {
+                    Vue.delete(this.search, 'number');
+                    Vue.set(this.search, 'name', this.query);
+                } else {
+                    Vue.delete(this.search, 'name');
+                    Vue.set(this.search, 'number', this.query);
+                }
+            } else {
+                Vue.delete(this.search, 'number');
+                Vue.delete(this.search, 'name');
+            }
         },
         async openItemModel(item) {
             this.selectedItem = item;

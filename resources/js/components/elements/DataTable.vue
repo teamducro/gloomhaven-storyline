@@ -42,15 +42,14 @@ export default {
             type: Array,
             default: () => []
         },
-        searchable: {
-            type: Array,
-            default: () => []
-        },
         sortable: {
             type: Array,
             default: () => []
         },
-        initialSearch: ""
+        initialSearch: {
+            type: Object,
+            default: {}
+        },
     },
     data() {
         return {
@@ -61,25 +60,26 @@ export default {
     },
     computed: {
         searchFunctions() {
-            if (!this.search) {
-                return {};
-            }
-
-            let result = {};
-            this.searchable.forEach(key => {
-                result[key] = (input) => (input ? input.toString().toLowerCase().includes(this.search.toString().toLowerCase()) : false);
+            const keys = Object.keys(this.search)
+            let result = {}
+            keys.forEach(key => {
+                const searchString = this.search[key]
+                if (!searchString) {
+                    return
+                }
+                result[key] = (input) => (input ? input.toString().toLowerCase().includes(searchString.toString().toLowerCase()) : false);
             });
             return result;
         },
         filteredData() {
             const search = this.searchFunctions
-            const searchedCols = Object.keys(search)
+            const searchedColumns = Object.keys(search)
             const colMatch = (row, colName) => {
                 const colVal = row[colName]
                 return search[colName](colVal)
             }
             const rowMatch = (row) => (
-                !searchedCols.some(col => !colMatch(row, col))
+                !searchedColumns.some(col => !colMatch(row, col))
             )
             return this.data.filter(row => rowMatch(row))
         },
@@ -114,17 +114,19 @@ export default {
         },
         initialSearch: {
             handler(newVal) {
-                this.search = newVal
+                this.search = Object.assign({}, newVal)
+                console.log('test', this.search);
             },
+            deep: true,
             immediate: true
-        }
+        },
     },
     methods: {
         resetState() {
             const initialData = this.$options.data()
             this.sort = initialData.sort
             this.ascending = initialData.ascending
-            this.search = this.initialSearch
+            this.search = Object.assign({}, this.initialSearch)
         },
         sortBy(column, event) {
             if (!this.sortable.includes(column)) {
