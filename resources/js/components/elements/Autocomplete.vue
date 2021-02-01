@@ -44,7 +44,8 @@ export default {
     data() {
         return {
             query: '',
-            items: []
+            items: [],
+            field: null
         }
     },
     mounted() {

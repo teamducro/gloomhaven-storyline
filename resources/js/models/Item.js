@@ -12,13 +12,23 @@ class Item {
         this.count = data.count;
         this._slot = data.slot;
         this.source = data.source;
-        this.spent = data.spent;
         this.desc = data.desc;
         this.faq = data.faq;
+        this.spent = data.spent || false;
+        this.consumed = data.consumed || false;
     }
 
     get name() {
         return app.$t('items.' + this._name.replace("'", ''));
+    }
+
+    get use() {
+        if (this.spent) {
+            return 'img/icons/general/spent_white.png';
+        } else if (this.consumed) {
+            return 'img/icons/general/consumed_white.png';
+        }
+        return '';
     }
 
     get slot() {
