@@ -82,7 +82,7 @@ export default {
             query: '',
             search: {},
             columns: [
-                {id: 'image', name: 'Card', classes: 'hidden md:table-cell'},
+                {id: 'image', name: 'Card', classes: 'hidden sm:table-cell'},
                 {id: 'number', name: 'Nr'},
                 {id: 'name', name: 'Name'},
                 {id: 'slot', name: 'Slot'},
