@@ -3,10 +3,15 @@
         <thead class="bg-black2-25">
         <tr>
             <th v-for="head in columns" scope="col"
-                class="px-1 py-2 md:p-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                class="px-1 py-2 md:p-3 text-left text-xs font-medium text-white uppercase tracking-wider"
+                :class="{'cursor-pointer': sortable.includes(head.id)}"
+                @click="sortBy(head.id, $event)">
                 <span class="flex items-center">
                     {{ head.name }}
-                    <span v-if="sort === head.id" class="material-icons">arrow_drop_down</span>
+                    <span v-if="sort !== head.id && sortable.includes(head.id)"
+                          class="material-icons">unfold_more</span>
+                    <span v-else-if="sort === head.id && !ascending" class="material-icons">expand_more</span>
+                    <span v-else-if="sort === head.id && ascending" class="material-icons">expand_less</span>
                 </span>
             </th>
         </tr>
@@ -122,6 +127,10 @@ export default {
             this.search = this.initialSearch
         },
         sortBy(column, event) {
+            if (!this.sortable.includes(column)) {
+                return;
+            }
+
             event.preventDefault()
             if (this.sort === column) {
                 this.ascending = !this.ascending

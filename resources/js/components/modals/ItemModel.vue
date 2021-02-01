@@ -1,11 +1,11 @@
 <template>
     <div>
-        <modal ref="modal" :title="item ? item.name : ''">
+        <modal ref="modal" :title="item ? item.name : ''" max-width="450px">
             <div slot="content" class="w-full h-full outline-none">
                 <webp v-if="item"
                       :src="item.image"
                       :alt="item.name"
-                      class="md:w-full rounded-3xl"/>
+                      class="w-full rounded-3xl" style="max-width: 400px;"/>
             </div>
         </modal>
     </div>

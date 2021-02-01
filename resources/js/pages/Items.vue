@@ -31,7 +31,7 @@
                          @click="openItemModel(row)">
                         <webp :src="value" width="80" class="-mt-2 top-0 absolute max-w-none" :animate="true"/>
                     </div>
-                    <div class="w-12 h-2"></div>
+                    <div class="w-16 md:w-12 h-2"></div>
                 </template>
                 <span slot="cost" slot-scope="{value}">
                     {{ value + shop }}

@@ -1,7 +1,8 @@
 <template>
     <div class="mdc-dialog" ref="modal" aria-modal="true">
         <div class="mdc-dialog__container z-10">
-            <div class="mdc-dialog__surface relative" :class="{'full-screen': fullScreen}">
+            <div class="mdc-dialog__surface relative" :class="{'full-screen': fullScreen}"
+                 :style="{'max-width': fullScreen ? '100vw' : maxWidth}">
                 <slot name="body">
                     <h2 class="mdc-dialog__title" :class="{
                         'pr-16': closeButton,
@@ -50,6 +51,10 @@ export default {
         fullScreen: {
             type: Boolean,
             default: false
+        },
+        maxWidth: {
+            type: String,
+            default: '560px'
         }
     },
     data() {
