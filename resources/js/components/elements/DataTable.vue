@@ -1,26 +1,29 @@
 <template>
-    <table class="min-w-full divide-y">
+    <table class="min-w-full divide-y rounded-lg overflow-hidden">
         <thead class="bg-black2-25">
         <tr>
-            <th v-for="head in columns" scope="col"
+            <th v-for="column in columns" scope="col"
                 class="px-1 py-2 md:p-3 text-left text-xs font-medium text-white uppercase tracking-wider"
-                :class="{'cursor-pointer': sortable.includes(head.id)}"
-                @click="sortBy(head.id, $event)">
+                :class="headClasses(column)"
+                @click="sortBy(column.id, $event)">
                 <span class="flex items-center">
-                    {{ head.name }}
-                    <span v-if="sort !== head.id && sortable.includes(head.id)"
-                          class="material-icons">unfold_more</span>
-                    <span v-else-if="sort === head.id && !ascending" class="material-icons">expand_more</span>
-                    <span v-else-if="sort === head.id && ascending" class="material-icons">expand_less</span>
+                    {{ column.name }}
+
+                    <span v-if="sortable.includes(column.id)" class="material-icons i-text-sm text-white2-50">
+                        {{ sort !== column.id ? 'unfold_more' : (!ascending ? 'expand_more' : 'expand_less') }}
+                    </span>
                 </span>
             </th>
         </tr>
         </thead>
         <tbody>
         <tr v-for="(row, index) in rows" :key="index"
-            class="whitespace-nowrap text-sm text-white2-75" :class="{'bg-black2-25': index%2 === 0}">
+            class="whitespace-nowrap text-sm text-white2-75"
+            :class="rowClasses(index)">
             <td v-for="column in columns" :key="column.id+index"
-                class="relative px-1 py-2 md:p-3 overflow-hidden">
+                class="relative px-1 py-2 md:p-3 overflow-hidden"
+                :class="columnClasses(column)"
+                @click="$emit('rowClick', row)">
                 <slot :name="column.id" :value="row[column.id]" :row="row">
                     <webp v-if="String(row[column.id]).startsWith('img')" :src="row[column.id]" width="20"/>
                     <span v-else>{{ row[column.id] }}</span>
@@ -49,6 +52,14 @@ export default {
         initialSearch: {
             type: Object,
             default: {}
+        },
+        oddClass: {
+            type: String,
+            default: ''
+        },
+        evenClass: {
+            type: String,
+            default: 'bg-black2-25'
         },
     },
     data() {
@@ -114,8 +125,7 @@ export default {
         },
         initialSearch: {
             handler(newVal) {
-                this.search = Object.assign({}, newVal)
-                console.log('test', this.search);
+                this.search = Object.assign({}, newVal);
             },
             deep: true,
             immediate: true
@@ -140,6 +150,27 @@ export default {
                 this.sort = column
                 this.ascending = true
             }
+        },
+        columnClasses(column) {
+            let classes = {};
+            if (column.classes) {
+                classes[column.classes] = true;
+            }
+
+            return classes;
+        },
+        headClasses(column) {
+            return Object.assign(this.columnClasses(column), {'cursor-pointer': this.sortable.includes(column.id)});
+        },
+        rowClasses(index) {
+            let classes = {};
+
+            let rowClass = index % 2 === 0 ? this.oddClass : this.evenClass;
+            if (rowClass) {
+                classes[rowClass] = true;
+            }
+
+            return classes;
         }
     }
 }

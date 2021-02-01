@@ -30,15 +30,6 @@ export default {
     methods: {
         open() {
             this.$refs['modal'].open();
-            this.center();
-        },
-        center() {
-            const width = $('#item-zoom img').first().width();
-            if (window.innerWidth > width) {
-                this.zoom.moveTo((window.innerWidth - width) / 2, 0);
-            } else {
-                this.zoom.moveTo(0, 0);
-            }
         }
     }
 }
