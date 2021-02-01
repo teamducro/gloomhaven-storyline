@@ -12,7 +12,8 @@ class Item {
         this.count = data.count;
         this._slot = data.slot;
         this.source = data.source;
-        this.desc = data.desc;
+        this._desc = data.desc;
+        this.minusOneCardsAdded = data.minusOneCardsAdded || 0;
         this.faq = data.faq;
         this.spent = data.spent || false;
         this.consumed = data.consumed || false;
@@ -20,6 +21,14 @@ class Item {
 
     get name() {
         return app.$t('items.' + this._name.replace("'", ''));
+    }
+
+    get desc() {
+        let desc = this._desc;
+        if (this.minusOneCardsAdded > 0) {
+            desc += ' Add ' + this.minusOneCardsAdded + '-1 to your attack modifier deck.';
+        }
+        return desc;
     }
 
     get use() {
