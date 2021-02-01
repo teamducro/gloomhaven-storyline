@@ -25,6 +25,7 @@ export default {
             return donationProsperity;
         },
         calculateItems(items, prosperity) {
+            return Array.from({length: 160}, (_, i) => i + 1)
             let filteredItems = collect(items).filter().keys().all().map(Number)
             const prosperityMap = [14, 21, 28, 35, 42, 49, 56, 63, 70];
             let prosperityItems = Array.from({length: prosperityMap[prosperity - 1]}, (_, i) => i + 1)
