@@ -33,19 +33,19 @@ class Item {
 
     get use() {
         if (this.spent) {
-            return 'img/icons/general/spent_white.png';
+            return '/img/icons/general/spent_white.png';
         } else if (this.consumed) {
-            return 'img/icons/general/consumed_white.png';
+            return '/img/icons/general/consumed_white.png';
         }
         return '';
     }
 
     get slot() {
-        return 'img/icons/equipment/' + slugify(this._slot, {lower: true}) + '.png';
+        return '/img/icons/equipment/' + slugify(this._slot, {lower: true}) + '.png';
     }
 
     get image() {
-        return 'img/items/' + slugify(this._name.replaceAll("'", ''), {lower: true}) + '.png';
+        return '/img/items/' + slugify(this._name.replaceAll("'", ''), {lower: true}) + '.png';
     }
 }
 
