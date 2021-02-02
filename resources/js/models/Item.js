@@ -26,7 +26,7 @@ class Item {
     get desc() {
         let desc = this._desc;
         if (this.minusOneCardsAdded > 0) {
-            desc += ' Add ' + this.minusOneCardsAdded + '-1 to your attack modifier deck.';
+            desc += ' Add ' + this.minusOneCardsAdded + ' {-1} to your attack modifier deck.';
         }
         return desc;
     }
@@ -45,7 +45,7 @@ class Item {
     }
 
     get image() {
-        return 'img/items/' + slugify(this._name.replace("'", ''), {lower: true}) + '.png';
+        return 'img/items/' + slugify(this._name.replaceAll("'", ''), {lower: true}) + '.png';
     }
 }
 

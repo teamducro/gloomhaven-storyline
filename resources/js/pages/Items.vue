@@ -54,6 +54,9 @@
                 <span slot="cost" slot-scope="{value}">
                     {{ value + shop }}
                 </span>
+                <template slot="desc" slot-scope="{value}">
+                    <component v-bind:is="addIcons(value)"></component>
+                </template>
             </data-table>
 
             <item-model v-if="selectedItem" :item="selectedItem" ref="item-model"></item-model>
@@ -159,6 +162,53 @@ export default {
             await this.$nextTick();
             this.$refs['item-model'].open();
         },
+        addIcons(desc) {
+            collect({
+                // Shield: 'Shield <webp src="/img/icons/general/shield.png" width="20" class="inline"/>',
+                // Heal: 'Heal <webp src="/img/icons/general/heal.png" width="20" class="inline"/>',
+                // Attack: 'Attack <webp src="/img/icons/general/attack.png" width="20" class="inline"/>',
+                Move: 'Move <webp src="/img/icons/general/move.png" width="20" class="inline"/>',
+                Jump: 'Jump <webp src="/img/icons/general/jump.png" width="20" class="inline"/>',
+                Recover: 'Recover <webp src="/img/icons/general/recover_white.png" width="20" class="inline"/>',
+                Refresh: 'Refresh <webp src="/img/icons/general/refresh_white.png" width="20" class="inline"/>',
+                Flying: 'Flying <webp src="/img/icons/general/flying.png" width="20" class="inline"/>',
+                '{-1}': '<webp src="/img/icons/general/modifier_minus_one_white.png" width="20" class="inline"/>',
+                '{any}': '<webp src="/img/icons/elements/any.png" width="20" class="inline"/>',
+                '{use}': '<webp src="/img/icons/elements/use.png" width="20" class="inline"/>',
+                '{dark}': '<webp src="/img/icons/elements/dark.png" width="20" class="inline"/>',
+                '{earth}': '<webp src="/img/icons/elements/earth.png" width="20" class="inline"/>',
+                '{fire}': '<webp src="/img/icons/elements/fire.png" width="20" class="inline"/>',
+                '{ice}': '<webp src="/img/icons/elements/ice.png" width="20" class="inline"/>',
+                '{wind}': '<webp src="/img/icons/elements/wind.png" width="20" class="inline"/>',
+                '{light}': '<webp src="/img/icons/elements/light.png" width="20" class="inline"/>',
+                '{anyX}': '<webp src="/img/icons/elements/anyX.png" width="20" class="inline"/>',
+                '{darkX}': '<webp src="/img/icons/elements/darkX.png" width="20" class="inline"/>',
+                '{earthX}': '<webp src="/img/icons/elements/earthX.png" width="20" class="inline"/>',
+                '{fireX}': '<webp src="/img/icons/elements/fireX.png" width="20" class="inline"/>',
+                '{iceX}': '<webp src="/img/icons/elements/iceX.png" width="20" class="inline"/>',
+                '{windX}': '<webp src="/img/icons/elements/windX.png" width="20" class="inline"/>',
+                '{lightX}': '<webp src="/img/icons/elements/lightX.png" width="20" class="inline"/>',
+                '{multi_attack.cleave_0_1}': '<webp src="/img/icons/aoe/cleave_0_1.png" width="40" class="inline"/>',
+                '{multi_attack.cone_0_1}': '<webp src="/img/icons/aoe/cone_0_1.png" width="40" class="inline"/>',
+                '{multi_attack.cone_1_1}': '<webp src="/img/icons/aoe/cone_1_1.png" width="40" class="inline"/>',
+                '{multi_attack.cube_2_2}': '<webp src="/img/icons/aoe/cube_2_2.png" width="40" class="inline"/>',
+                '{multi_attack.line_0_1_1}': '<webp src="/img/icons/aoe/line_0_1_1.png" width="60" class="inline"/>',
+                IMMOBILIZE: 'IMMOBILIZE <webp src="/img/icons/status/immobilize.png" width="20" class="inline"/>',
+                INVISIBLE: 'INVISIBLE <webp src="/img/icons/status/invisible.png" width="20" class="inline"/>',
+                STUN: 'STUN <webp src="/img/icons/status/stun.png" width="20" class="inline"/>',
+                POISON: 'POISON <webp src="/img/icons/status/stun.png" width="20" class="inline"/>',
+                WOUND: 'WOUND <webp src="/img/icons/status/wound.png" width="20" class="inline"/>',
+                MUDDLE: 'MUDDLE <webp src="/img/icons/status/muddle.png" width="20" class="inline"/>',
+                CURSE: 'CURSE <webp src="/img/icons/status/curse.png" width="20" class="inline"/>',
+                BLESS: 'BLESS <webp src="/img/icons/status/bless.png" width="20" class="inline"/>',
+            }).each((icon, key) => {
+                desc = desc.replaceAll(key, icon);
+            });
+
+            return {
+                template: `<span>${desc}</span>`
+            };
+        }
     }
 }
 </script>
