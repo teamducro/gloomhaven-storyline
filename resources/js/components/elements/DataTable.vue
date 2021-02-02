@@ -1,11 +1,12 @@
 <template>
-    <table class="min-w-full divide-y rounded-lg overflow-hidden">
-        <thead class="bg-black2-25">
-        <tr>
-            <th v-for="column in columns" scope="col"
-                class="px-1 py-2 md:p-3 text-left text-xs font-medium text-white uppercase tracking-wider"
-                :class="headClasses(column)"
-                @click="sortBy(column.id, $event)">
+    <div class="min-w-full rounded-lg overflow-hidden">
+        <table class="min-w-full divide-y">
+            <thead class="bg-black2-25">
+            <tr>
+                <th v-for="column in columns" scope="col"
+                    class="px-1 py-2 md:p-3 text-left text-xs font-medium text-white uppercase tracking-wider"
+                    :class="headClasses(column)"
+                    @click="sortBy(column.id, $event)">
                 <span class="flex items-center">
                     {{ column.name }}
 
@@ -13,25 +14,29 @@
                         {{ sort !== column.id ? 'unfold_more' : (!ascending ? 'expand_more' : 'expand_less') }}
                     </span>
                 </span>
-            </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr v-for="(row, index) in rows" :key="index"
-            class="whitespace-nowrap text-sm text-white2-75"
-            :class="rowClasses(index)">
-            <td v-for="column in columns" :key="column.id+index"
-                class="relative px-1 py-2 md:p-3 overflow-hidden"
-                :class="columnClasses(column)"
-                @click="$emit('rowClick', row)">
-                <slot :name="column.id" :value="row[column.id]" :row="row">
-                    <webp v-if="String(row[column.id]).startsWith('/img')" :src="row[column.id]" width="20"/>
-                    <span v-else>{{ row[column.id] }}</span>
-                </slot>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(row, index) in rows" :key="index"
+                class="whitespace-nowrap text-sm text-white2-75"
+                :class="rowClasses(index)">
+                <td v-for="column in columns" :key="column.id+index"
+                    class="relative px-1 py-2 md:p-3 overflow-hidden"
+                    :class="columnClasses(column)"
+                    @click="$emit('rowClick', row)">
+                    <slot :name="column.id" :value="row[column.id]" :row="row">
+                        <webp v-if="String(row[column.id]).startsWith('/img')" :src="row[column.id]" width="20"/>
+                        <span v-else>{{ row[column.id] }}</span>
+                    </slot>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p class="px-1 md:px-3 pb-2 bg-black2-25" v-if="loaded && rows.length <= 0">
+            {{ noResults }}
+        </p>
+    </div>
 </template>
 
 <script>
@@ -61,13 +66,23 @@ export default {
             type: String,
             default: 'bg-black2-25'
         },
+        noResults: {
+            type: String,
+            default: 'No results'
+        }
     },
     data() {
         return {
             sort: undefined,
             ascending: true, // false = descending
-            search: this.initialSearch
+            search: this.initialSearch,
+            loaded: false
         }
+    },
+    mounted() {
+        setTimeout(() => {
+            this.loaded = true;
+        }, 1000);
     },
     computed: {
         searchFunctions() {

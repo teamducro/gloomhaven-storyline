@@ -1,18 +1,29 @@
 <template>
     <div>
-        <modal ref="modal" :title="item ? item.number : ''" max-width="450px">
-            <div slot="content" class="w-full h-full outline-none">
-                <webp v-if="item"
-                      :src="item.image"
-                      :alt="item.name"
-                      class="w-full rounded-3xl" style="max-width: 400px;"/>
+        <modal ref="modal" :title="item ? item.number : ''">
+            <div slot="content" class="w-full h-full flex outline-none">
 
-                <p class="mt-2" v-if="item.faq">
-                    <span class="relative w-6 h-4 inline-block">
-                        <span class="material-icons absolute">help_outline</span>
-                    </span>
-                    {{ item.faq }}
-                </p>
+                <div class="flex-1 mr-3">
+                    <webp v-if="item"
+                          :src="item.image"
+                          :alt="item.name"
+                          class="w-full rounded-lg sm:rounded-xl" style="max-width: 400px;"/>
+                </div>
+
+                <div class="flex-1 space-y-2">
+                    <p v-if="item.source">
+                        <span class="relative w-6 h-4 inline-block">
+                            <span class="material-icons absolute">info_outline</span>
+                        </span>
+                        {{ item.source }}
+                    </p>
+                    <p v-if="item.faq">
+                        <span class="relative w-6 h-4 inline-block">
+                            <span class="material-icons absolute">help_outline</span>
+                        </span>
+                        {{ item.faq }}
+                    </p>
+                </div>
             </div>
         </modal>
     </div>

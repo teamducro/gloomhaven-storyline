@@ -1,6 +1,6 @@
 <template xmlns:slot="http://www.w3.org/1999/html">
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
-        <div class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
+        <div class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs :tabs="[$t('Party sheet'), $t('Items')]"
                   :icons="['assignment', 'style']"
@@ -9,6 +9,34 @@
             >
             </tabs>
             <h1 class="hidden sm:inline text-xl">{{ campaignName }}</h1>
+
+            <div class="absolute right-0 top-0 mt-4 mr-4 z-5">
+                <dropdown class="items-to-add-dropdown" align="right" width=""
+                          @open="dropDownClose = true"
+                          @close="dropDownClose = false">
+                    <template v-slot:trigger>
+                        <button type="button"
+                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 i-bg-black2-50 rounded-full transform transition-transform"
+                                :class="{'rotate-45': dropDownClose}">
+                            add
+                        </button>
+                    </template>
+
+                    <div class="w-full">
+                        <h2>{{ $t('Add Items') }}</h2>
+                        <ul class="flex flex-row flex-wrap -mx-2">
+                            <li v-for="(checked, item) in sheet.itemDesigns"
+                                class="flex items-center">
+                                <checkbox group="items"
+                                          :checked="checked"
+                                          :id="'item-'+item"
+                                          @change="changeItem"></checkbox>
+                                <span class="w-8 font-title">{{ item }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </dropdown>
+            </div>
 
             <div class="my-4">
                 <h2 class="mb-2">{{ $t('Shop modifier') }}:
@@ -24,7 +52,7 @@
                         <input class="mdc-text-field__input" aria-labelledby="item-search"
                                type="text" name="item-search"
                                v-model="query" @keyup="applySearch">
-                        <span class="mdc-floating-label" id="item-search">{{ $t('Search') }}</span>
+                        <span class="mdc-floating-label" id="item-search">{{ $t('number or name') }}</span>
                         <span class="mdc-line-ripple"></span>
                     </label>
                 </div>
@@ -49,6 +77,7 @@
                         :data="items.items"
                         odd-class="bg-black2-10"
                         @rowClick="openItemModel"
+                        :noResults="$t('No items found')"
             >
                 <template slot="image" slot-scope="{value, row}">
                     <div class="overflow-hidden h-full -m-1 md:-m-3 top-0 left-0 cursor-pointer">
@@ -104,12 +133,13 @@ export default {
             filters: ['body', 'head', 'legs', 'one-hand', 'small-item', 'two-hands'],
             sortable: ['number', 'name', 'slot', 'cost', 'use'],
             field: null,
+            dropDownClose: false,
             storySyncer: new StorySyncer,
             itemRepository: new ItemRepository,
         }
     },
     watch: {
-        'sheet.itemDesign': {
+        'sheet.itemDesigns': {
             handler() {
                 const sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
                 this.items = this.itemRepository.findMany(sheetItems);
@@ -139,6 +169,13 @@ export default {
 
             this.field = new MDCTextField(this.$refs['search-field']);
         },
+
+        changeItem(id, isChecked) {
+            const item = parseInt(id.replace('item-', ''));
+            Vue.set(this.sheet.itemDesigns, item, isChecked);
+            this.store();
+        },
+
         store() {
             if (this.loading) {
                 return;
@@ -225,3 +262,15 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+.items-to-add-dropdown .dropdown {
+    width: calc(100vw - 4.8rem);
+}
+
+@screen md {
+    .items-to-add-dropdown .dropdown {
+        width: calc(100vw - 6.8rem);
+        max-width: 1006px;
+    }
+}
+</style>
