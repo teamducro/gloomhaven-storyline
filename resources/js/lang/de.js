@@ -356,9 +356,9 @@ export default {
         10: {
             "name": "New Management",
             "sections": {
-                1: "Pleased with your work so far, Jekserah has invited you to join her undead invasion of the city. She plans to overthrow the military and put the Merchant's Guild in control.",
-                2: "You aided Jekserah in overthrowing the military. The city guard fought back, but their pitiful mortal bodies were no match for the overwhelming onslaught of the undead and the might of your blades. Every guard that fell bolstered the undead's ranks. When the Captain of the Guard fell, the remaining guards fled like the cowards you always knew they were. Jekserah's bodyguards were killed during the invasion, but so much the better for you. You are now Jekserah's new right hand and Merchant Guild rules the city.",
-                3: "Overthrowing the military was not part of your plan. You spurned Jekserah's invitation and sided with the city guard against the invasion. Jekserah is dead by your hand."
+                1: "Zufrieden mit eurer bisherigen Arbeit hat Jekserah euch eingeladen, euch ihrer untoten Invasion der Stadt anzuschließen. Sie plant die Militärregierung zu stürzen und die Kaufmannsgilde an die Macht zu bringen.",
+                2: "Ihr habt Jekserah geholfen die Militärregierung zu stürzen. Die Stadtwache wehrte sich, aber ihre erbärmlichen sterblichen Körper waren dem überwältigenden Ansturm  der Untoten und der Macht Eurer Klingen nicht gewachsen. Jede Wache, die fiel, verstärkte die Reihen der Untoten. Als der Hauptmann der Wache fiel, flohen die restlichen Wachen wie die Feiglinge, von denen ihr immer wusstet, dass sie es sind. Jekserahs Leibwächter wurden bei der Invasion getötet, aber ums besser für euch. Ihr seid jetzt Jekserahs neue rechte Hand und die Händlergilde regiert die Stadt.",
+                3: "Die Militärregierung zu stürzen war nicht eure Absicht. Daher habt ihr Jekserahs Einladung verschmäht und euch auf der Seite der Stadtwache gegen die Invasion gestellt. Jekserah ist tot, gefallen durch eure Hände."
             },
             "stages": {
                 0: "{1}",
@@ -367,11 +367,11 @@ export default {
             },
         },
         11: {
-            "name": "The Old Guard",
+            "name": "Die alte Wache",
             "sections": {
-                1: "Jekserah has summoned an undead army and is planning to invade the city! You must warn the city guard at once!",
-                2: "Her plan of protecting Gloomhaven with an army of undead was madness. You could not give over all the power to an unscrupulous necromancer. You ran to warn the city guard and were able to mount a defense against the waves of undead crashing against your weapons. You fought the undead all the way back to Jekserah's manor, where you put an end to her vile necromancy once and for all. Jekserah is dead by your hand.",
-                3: "... or maybe, just maybe, there's something to Jekserah's plan. It makes sense in some dark, twisted sense. You decided not to warn the guards, but instead joined Jekserah's undead army in overthrowing the military."
+                1: "Jekserah hat eine Armee von Untoten beschworen und plant die Stadt zu überfallen! Ihr müsst sofort die Stadtwache warnen!",
+                2: "Ihr Plan, Gloomhaven mit einer Armee von Untoten zu schützen war Wahnsinn. Ihr konntet die Macht über die Stadt nicht einer skrupellosen Nekromantin überlassen! Ihr ranntet los, um die Stadtwache zu warnen und konntet euch gegen die Wellen von Untoten wehren, die gegen eure Waffen anbrandeten. Ihr konntet die Untoten bis hin zu Jekserahs Anwesen zurüchgeschlagen, wo ihr ihrer abscheulichen Nekromantie ein für alle Mal ein Ende gesetzt habt. Jekserah ist tot, gefallen durch eure Hände.",
+                3: "...oder vielleicht, nur vielleicht, ist etwas an Jekserhas Plan dran. Es macht Sinn, auf eine dunkle und verdrehte Art und Weise. Ihr habt euch entschieden die Wachen nicht zu warnen, sondern habt euch stattdessen Jekserahs Armee von Untoten angeschlossen, um die Militärregierung zu stürzen."
             },
             "stages": {
                 0: "{1}",
@@ -380,7 +380,7 @@ export default {
             },
         },
         12: {
-            "name": "The Heart's Desire",
+            "name": "Der Wunsch des Herzens",
             "sections": {
                 1: "Some of your contacts at the Sanctuary of the Great Oak know of a temple dedicated to an unseen force that will answer any question asked of it. This is a golden opportunity seek out your heart's desire.",
                 2: "When you finally reached the temple a voice told you \"I cannot accept visitors at this time\". Before you could object, a group of massive stone constructs materialized before you. But there was no way you were going back empty handed. After finishing of the monsters, the voice then offered you a choice of either great power, great wealth, or the location of the necromancer.",
