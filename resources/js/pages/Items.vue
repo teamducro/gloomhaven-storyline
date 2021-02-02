@@ -202,7 +202,7 @@ export default {
                 INVISIBLE: 'INVISIBLE <webp src="/img/icons/status/invisible.png" width="20" class="inline"/>',
                 PIERCE: 'PIERCE <webp src="/img/icons/status/pierce.png" width="20" class="inline"/>',
                 STUN: 'STUN <webp src="/img/icons/status/stun.png" width="20" class="inline"/>',
-                POISON: 'POISON <webp src="/img/icons/status/stun.png" width="20" class="inline"/>',
+                POISON: 'POISON <webp src="/img/icons/status/poison.png" width="20" class="inline"/>',
                 WOUND: 'WOUND <webp src="/img/icons/status/wound.png" width="20" class="inline"/>',
                 MUDDLE: 'MUDDLE <webp src="/img/icons/status/muddle.png" width="20" class="inline"/>',
                 CURSE: 'CURSE <webp src="/img/icons/status/curse.png" width="20" class="inline"/>',
