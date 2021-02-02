@@ -25,7 +25,7 @@
                 :class="columnClasses(column)"
                 @click="$emit('rowClick', row)">
                 <slot :name="column.id" :value="row[column.id]" :row="row">
-                    <webp v-if="String(row[column.id]).startsWith('img')" :src="row[column.id]" width="20"/>
+                    <webp v-if="String(row[column.id]).startsWith('/img')" :src="row[column.id]" width="20"/>
                     <span v-else>{{ row[column.id] }}</span>
                 </slot>
             </td>
