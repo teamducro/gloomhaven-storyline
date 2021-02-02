@@ -29,7 +29,7 @@
                             class="p-2 cursor-pointer rounded-full"
                             :class="{'bg-black2-75' : selectedFilter === filter}"
                             @click="applyFilter(filter)">
-                            <webp :src="'img/icons/equipment/' + filter + '.png'" :alt="filter" width="20"/>
+                            <webp :src="'/img/icons/equipment/' + filter + '.png'" :alt="filter" width="20"/>
                         </li>
                     </ul>
                 </div>
