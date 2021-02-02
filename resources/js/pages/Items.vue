@@ -2,9 +2,15 @@
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
         <div class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <h1 class="mb-4 text-xl">{{ $t('Item designs') }} {{ campaignName }}</h1>
+            <tabs :tabs="[$t('Party sheet'), $t('Items')]"
+                  :icons="['assignment', 'style']"
+                  :urls="['party', 'items']"
+                  :active="$t('Items')"
+            >
+            </tabs>
+            <h1 class="hidden sm:inline text-xl">{{ campaignName }}</h1>
 
-            <div class="mb-4">
+            <div class="my-4">
                 <h2 class="mb-2">{{ $t('Shop modifier') }}:
                     <span>{{ shop }} {{ $t('Gold') }}</span>
                 </h2>
@@ -79,6 +85,7 @@ export default {
             selectedItem: null,
             sheet: null,
             shop: 0,
+            prosperity: 1,
             items: collect([]),
             campaignName: null,
             loading: true,
