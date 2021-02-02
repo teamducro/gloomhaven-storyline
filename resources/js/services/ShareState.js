@@ -114,6 +114,7 @@ export default class ShareState {
             '"unlocks":': '±u',
             '"treasures":': '±t',
             '"lost":': '±l',
+            '"manual_awarded":': '±ma'
         }
     }
 

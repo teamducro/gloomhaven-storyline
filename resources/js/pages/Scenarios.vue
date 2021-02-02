@@ -2,7 +2,7 @@
     <div class="pt-12 pb-4 px-4 flex justify-center w-full">
 
         <div class="fixed right-0 top-0 mt-1 z-5">
-            <dropdown align="right">
+            <dropdown ref="filter-dropdown" align="right">
                 <template v-slot:trigger>
                     <button type="button"
                             class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 i-bg-black2-50 rounded-full"
@@ -82,87 +82,88 @@
 </template>
 
 <script>
-    import {MDCList} from "@material/list/component";
-    import ScenarioRepository from "../repositories/ScenarioRepository";
-    import {ScenarioState} from "../models/ScenarioState";
+import {MDCList} from "@material/list/component";
+import ScenarioRepository from "../repositories/ScenarioRepository";
+import {ScenarioState} from "../models/ScenarioState";
 
-    export default {
-        data() {
-            return {
-                list: null,
-                scenarios: null,
-                regionFilter: null,
-                missedTreasuresFilter: null,
-                stateFilter: null,
-                states: [ScenarioState.incomplete],
-                scenarioRepository: new ScenarioRepository()
-            }
-        },
-        mounted() {
-            if (app.scenarios) {
-                this.setScenarios();
-            }
+export default {
+    data() {
+        return {
+            list: null,
+            scenarios: null,
+            regionFilter: null,
+            missedTreasuresFilter: null,
+            stateFilter: null,
+            states: [ScenarioState.incomplete],
+            scenarioRepository: new ScenarioRepository()
+        }
+    },
+    mounted() {
+        if (app.scenarios) {
+            this.setScenarios();
+        }
 
-            this.$bus.$on('scenarios-updated', this.setScenarios);
-        },
-        destroyed() {
-            if (this.list) {
-                this.list.destroy();
-            }
-            this.$bus.$off('scenarios-updated', this.setScenarios);
-        },
-        computed: {
-            filterEnabled() {
-                return this.regionFilter || this.missedTreasuresFilter || this.stateFilter;
-            }
-        },
-        methods: {
-            setScenarios() {
-                this.scenarios = app.scenarios;
+        this.$bus.$on('scenarios-updated', this.setScenarios);
+    },
+    destroyed() {
+        if (this.list) {
+            this.list.destroy();
+        }
+        this.$bus.$off('scenarios-updated', this.setScenarios);
+    },
+    computed: {
+        filterEnabled() {
+            return this.regionFilter || this.missedTreasuresFilter || this.stateFilter;
+        }
+    },
+    methods: {
+        setScenarios() {
+            this.scenarios = app.scenarios;
 
-                this.$nextTick(() => {
-                    this.list = MDCList.attachTo(this.$refs['list']);
-                    this.list.listen('MDCList:action', (event) => {
-                        let id = $(event.target).find('li:eq(' + event.detail.index + ')').data('id');
-                        this.open(this.scenarioRepository.find(id));
-                    });
+            this.$nextTick(() => {
+                this.list = MDCList.attachTo(this.$refs['list']);
+                this.list.listen('MDCList:action', (event) => {
+                    let id = $(event.target).find('li:eq(' + event.detail.index + ')').data('id');
+                    this.open(this.scenarioRepository.find(id));
                 });
-            },
-            open(scenario) {
-                if (scenario.isVisible() || scenario.is_side) {
-                    this.$bus.$emit('open-scenario', {
-                        id: scenario.id
-                    });
-                }
-            },
-            applyFilter(scenario) {
-                if (!this.regionFilter && !this.missedTreasuresFilter && !this.stateFilter) {
-                    return true;
-                } else if (this.regionFilter) {
-                    return scenario.inRegion(this.regionFilter);
-                } else if (this.stateFilter) {
-                    return scenario.state === this.stateFilter;
-                } else if (this.missedTreasuresFilter) {
-                    return scenario.missedTreasures();
-                }
-            },
-            setRegionFilter(id) {
-                this.resetFilter();
-                this.regionFilter = id;
-            },
-            setMissedTreasuresFilter() {
-                this.resetFilter();
-                this.missedTreasuresFilter = true;
-            },
-            setStateFilter(state) {
-                this.resetFilter();
-                this.stateFilter = state;
-            },
-            resetFilter() {
-                this.regionFilter = null;
-                this.missedTreasuresFilter = null;
-                this.stateFilter = null;
+            });
+        },
+        open(scenario) {
+            if (scenario.isVisible() || scenario.is_side) {
+                this.$bus.$emit('open-scenario', {
+                    id: scenario.id
+                });
             }
+        },
+        applyFilter(scenario) {
+            if (!this.regionFilter && !this.missedTreasuresFilter && !this.stateFilter) {
+                return true;
+            } else if (this.regionFilter) {
+                return scenario.inRegion(this.regionFilter);
+            } else if (this.stateFilter) {
+                return scenario.state === this.stateFilter;
+            } else if (this.missedTreasuresFilter) {
+                return scenario.missedTreasures();
+            }
+        },
+        setRegionFilter(id) {
+            this.resetFilter();
+            this.regionFilter = id;
+        },
+        setMissedTreasuresFilter() {
+            this.resetFilter();
+            this.missedTreasuresFilter = true;
+        },
+        setStateFilter(state) {
+            this.resetFilter();
+            this.stateFilter = state;
+        },
+        resetFilter() {
+            this.$refs['filter-dropdown'].close();
+            this.regionFilter = null;
+            this.missedTreasuresFilter = null;
+            this.stateFilter = null;
         }
     }
+}
 </script>

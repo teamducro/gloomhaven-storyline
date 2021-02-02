@@ -19,10 +19,12 @@ mix.extend('i18n', new class {
 
 
 mix.i18n()
-    .js('resources/js/app.js', 'public/js/')
-    .js('resources/js/gtm.js', 'public/js/')
-    .sass('resources/sass/app.scss', 'public/css/')
-    .sass('resources/sass/theme.scss', 'public/css/', {
+    .js('resources/js/app.js', 'js')
+    .js('resources/js/gtm.js', 'js')
+    .js('resources/js/website.js', 'js')
+    .sass('resources/sass/app.scss', 'css')
+    .sass('resources/sass/website.scss', 'css')
+    .sass('resources/sass/theme.scss', 'css', {
         sassOptions: {
             includePaths: ['./node_modules']
         }
@@ -44,10 +46,17 @@ mix.i18n()
         })
     })
     .then(async () => {
+        await versionFile('public/js/website.js', mix.inProduction());
         await versionFile('public/js/app.js', mix.inProduction());
+        await versionFile('public/js/gtm.js', mix.inProduction());
         await versionFile('public/css/app.css', mix.inProduction());
+        await versionFile('public/css/website.css', mix.inProduction());
         await versionFile('public/css/theme.css', mix.inProduction());
-        await replace({files: 'public/sitemap.xml', from: /release-date/, to: moment().format('YYYY-MM-DD')});
+
+        // set date in sitemap
+        for (let i = 0; i < 20; i++) {
+            await replace({files: 'public/sitemap.xml', from: /release-date/, to: moment().format('YYYY-MM-DD')});
+        }
     });
 
 async function versionFile(path, applyVersion) {
@@ -57,5 +66,5 @@ async function versionFile(path, applyVersion) {
         ? file + '?v=' + await md5File(path)
         : file;
 
-    return replace({files: 'public/index.html', from: pattern, to: to});
+    return replace({files: ['public/index.html', 'public/tracker/index.html'], from: pattern, to: to});
 }

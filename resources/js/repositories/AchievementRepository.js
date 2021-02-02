@@ -2,6 +2,9 @@ import achievements from '../achievements.json';
 import Achievement from "../models/Achievement";
 import ScenarioRepository from "./ScenarioRepository";
 import AchievementGroup from "../models/AchievementGroup";
+import {ScenarioState} from "../models/ScenarioState";
+import scenarios from "../scenarios.json";
+import StorySyncer from "../services/StorySyncer";
 
 export default class AchievementRepository {
 
@@ -38,6 +41,17 @@ export default class AchievementRepository {
         }
 
         achievement.gain();
+
+        if (achievement.is_manual) {
+            const scenarioToUnlock = this.scenarioRepository.getSideScenarioByManualAchievement(achievement)
+            if (scenarioToUnlock
+                && scenarioToUnlock.state !== ScenarioState.incomplete
+                && scenarioToUnlock.state !== ScenarioState.complete) {
+                this.scenarioRepository.changeState(scenarioToUnlock, ScenarioState.incomplete);
+            } else {
+                this.storySyncer.store();
+            }
+        }
     }
 
     remove(id) {
@@ -57,6 +71,15 @@ export default class AchievementRepository {
         }
 
         achievement.remove();
+
+        if (achievement.is_manual) {
+            const scenarioToHide = this.scenarioRepository.getSideScenarioByManualAchievement(achievement);
+            if (scenarioToHide && scenarioToHide.isVisible()) {
+                this.scenarioRepository.changeState(scenarioToHide, ScenarioState.hidden);
+            } else {
+                this.storySyncer.store();
+            }
+        }
     }
 
     lose(id) {
@@ -78,6 +101,43 @@ export default class AchievementRepository {
         return app.achievements.filter(filter);
     }
 
+    searchManual(query) {
+        query = query.trim().toLowerCase().replace('-', ' ');
+        return this.where((achievement) => {
+            return achievement.is_manual
+                && !achievement.manual_awarded
+                && achievement.name.toLowerCase().replace('-', ' ').startsWith(query);
+        });
+    }
+
+    getSideScenariosWithManualAchievements() {
+        let achievements = collect();
+
+        this.scenarioRepository.where(scenario => {
+            return scenario.is_side
+                && scenario.isVisible()
+                && !scenario.required_by.isEmpty();
+        }).each(scenario => {
+            this.getManualAchievementsByRequiredScenario(scenario, false)
+                .each(achievement => achievements.push(achievement));
+        });
+
+        return achievements;
+    }
+
+    getManualAchievementsByRequiredScenario(scenario, isAwarded = true) {
+        let achievements = collect();
+
+        scenario.required_by.each((condition) => {
+            let complete = condition.complete || [];
+            this.findMany(complete)
+                .filter(achievement => achievement.is_manual && achievement.manual_awarded === isAwarded)
+                .each(achievement => achievements.push(achievement));
+        });
+
+        return achievements;
+    }
+
     groups() {
         return app.achievements.filter((a) => a.group).pluck('group').unique()
             .map((group) => new AchievementGroup(group));
@@ -85,6 +145,10 @@ export default class AchievementRepository {
 
     get scenarioRepository() {
         return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository());
+    }
+
+    get storySyncer() {
+        return this._storySyncer || (this._storySyncer = new StorySyncer);
     }
 
 }

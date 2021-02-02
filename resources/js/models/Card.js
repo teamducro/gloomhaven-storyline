@@ -29,11 +29,11 @@ class Card {
     get images() {
         switch (this.type) {
             case "R":
-                return [`/img/cards/road/${this.id}-f.png`, `/img/cards/road/${this.id}-b.png`];
+                return [`/img/cards/road/${this.id}-f.jpg`, `/img/cards/road/${this.id}-b.jpg`];
             case "C":
-                return [`/img/cards/city/${this.id}-f.png`, `/img/cards/city/${this.id}-b.png`];
+                return [`/img/cards/city/${this.id}-f.jpg`, `/img/cards/city/${this.id}-b.jpg`];
             case "Q":
-                return [`/img/cards/quest/${this.id}.png`];
+                return [`/img/cards/quest/${this.id}.jpg`];
             default:
                 return [];
         }

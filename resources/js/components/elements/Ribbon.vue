@@ -1,6 +1,6 @@
 <template>
     <div class="ribbon">
-        <webp width="40" height="92" src="img/pro.png" @loaded="isLoaded = true"/>
+        <webp width="40" height="92" src="/img/pro.png" @loaded="isLoaded = true"/>
         <div v-if="isLoaded" class="text">
             <slot></slot>
         </div>

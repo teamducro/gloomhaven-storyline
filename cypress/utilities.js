@@ -50,6 +50,11 @@ export default {
         });
     },
 
+    isSideNodeHidden(id) {
+        this.isNodeVisible(id);
+        cy.get('#node' + id + '.opacity-50').should('be.visible');
+    },
+
     isNodeBlocked(id) {
         this.isNodeVisible(id);
         cy.get('#node' + id + '.blocked .blocked').should('be.visible');
@@ -84,11 +89,21 @@ export default {
         this.closeModel();
     },
 
+    lockSideScenario(id) {
+        this.openScenario(id);
+        cy.get('#scenario-content label').contains('Not unlocked').click();
+        this.closeModel();
+    },
+
     openScenario(id) {
         cy.get('#node' + id).click();
     },
 
     closeModel() {
         cy.get('body').click('left');
+    },
+
+    isTracker() {
+        cy.url().should('include', '/tracker');
     }
 }

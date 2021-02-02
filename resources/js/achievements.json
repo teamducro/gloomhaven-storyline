@@ -7,7 +7,7 @@
         },
         {
             "id": "PJP",
-            "name": "Jekserahs Plans",
+            "name": "Jekserah's Plans",
             "type": "Party"
         },
         {
@@ -29,7 +29,7 @@
         },
         {
             "id": "PADE",
-            "name": "A Demons Errand",
+            "name": "A Demon's Errand",
             "type": "Party"
         },
         {
@@ -60,7 +60,7 @@
         },
         {
             "id": "PSC",
-            "name": "Stonebreakers Censer",
+            "name": "Stonebreaker's Censer",
             "type": "Party"
         },
         {
@@ -101,6 +101,10 @@
                 "GAT3",
                 "GAT4",
                 "GAT5"
+            ],
+            "is_manual": true,
+            "cards": [
+                "C-3"
             ]
         },
         {
@@ -138,12 +142,12 @@
         },
         {
             "id": "PTVC",
-            "name": "The Voices Command",
+            "name": "The Voice's Command",
             "type": "Party"
         },
         {
             "id": "PTDC",
-            "name": "The Drakes Command",
+            "name": "The Drake's Command",
             "type": "Party"
         },
         {
@@ -210,7 +214,7 @@
         },
         {
             "id": "PRA",
-            "name": "Redthorns Aid",
+            "name": "Redthorn's Aid",
             "type": "Party"
         },
         {
@@ -273,14 +277,118 @@
             "x": 73.4
         },
         {
-            "id": "PTPS",
-            "name": "The Poisons Source",
-            "type": "Party"
-        },
-        {
             "id": "PTTN",
             "name": "Through the Nest",
             "type": "Party"
+        },
+        {
+            "id": "PAMT",
+            "name": "A Map to Treasure",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-8"
+            ]
+        },
+        {
+            "id": "PBB",
+            "name": "Bad Business",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-31"
+            ]
+        },
+        {
+            "id": "PTPS",
+            "name": "The Poison's Source",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-47"
+            ]
+        },
+        {
+            "id": "PSB",
+            "name": "Sun-Blessed",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-48"
+            ]
+        },
+        {
+            "id": "PSR",
+            "name": "Sin-Ra",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-64"
+            ]
+        },
+        {
+            "id": "PDC",
+            "name": "Debt Collection",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-67"
+            ]
+        },
+        {
+            "id": "PWS",
+            "name": "Water Staff",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-68"
+            ]
+        },
+        {
+            "id": "PFA",
+            "name": "Fish's Aid",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-72"
+            ]
+        },
+        {
+            "id": "PT",
+            "name": "Tremors",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-73"
+            ]
+        },
+        {
+            "id": "PHSE",
+            "name": "High Sea Escort",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-76"
+            ]
+        },
+        {
+            "id": "PGJ",
+            "name": "Grave Job",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-77"
+            ]
+        },
+        {
+            "id": "PNE",
+            "name": "Northern Expedition",
+            "type": "Party",
+            "is_manual": true,
+            "cards": [
+                "C-83",
+                "R-83"
+            ]
         }
     ]
 }

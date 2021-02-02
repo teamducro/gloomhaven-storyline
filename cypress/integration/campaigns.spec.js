@@ -3,13 +3,13 @@ import utilities from "../utilities";
 describe('Campaigns', () => {
 
     it('It loads campaigns', () => {
-        cy.visit('/#/campaigns');
+        cy.visit('/tracker/#/campaigns');
 
         cy.contains('Campaigns');
     });
 
     it('It shows a validation message on an incorrect campaign code', () => {
-        cy.visit('/#/campaigns');
+        cy.visit('/tracker/#/campaigns');
 
         utilities.startServer();
         cy.route({
@@ -30,7 +30,7 @@ describe('Campaigns', () => {
     });
 
     it('It shows a validation message on an incorrect email', () => {
-        cy.visit('/#/campaigns');
+        cy.visit('/tracker/#/campaigns');
 
         utilities.startServer();
         cy.route({
@@ -51,7 +51,7 @@ describe('Campaigns', () => {
     });
 
     it('It can request a login email', () => {
-        cy.visit('/#/campaigns');
+        cy.visit('/tracker/#/campaigns');
 
         utilities.startServer();
         cy.route({
