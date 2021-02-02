@@ -11,7 +11,7 @@
         <transition name="dropdown">
             <div class="dropdown absolute z-10 p-2 rounded-lg bg-surface" v-if="isOpen"
                  :class="align === 'left' ? 'left-0' : 'right-0'"
-                 :style="{ width }"
+                 :style="width"
             >
                 <slot></slot>
             </div>
@@ -22,7 +22,11 @@
 <script>
 export default {
     props: {
-        width: {default: 'auto'},
+        width: {
+            default: () => {
+                return {width: 'auto'}
+            }
+        },
         align: {default: 'left'},
         shouldToggle: {default: true},
     },
@@ -34,11 +38,13 @@ export default {
     watch: {
         isOpen(isOpen) {
             if (isOpen) {
+                this.$emit('open');
                 setTimeout(() => {
                     document.addEventListener('click', this.closeIfClickedOutside);
                     this.$emit('opened');
                 }, 100);
             } else {
+                this.$emit('close');
                 document.removeEventListener('click', this.closeIfClickedOutside);
                 this.$emit('closed');
             }

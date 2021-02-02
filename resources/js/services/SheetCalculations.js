@@ -24,10 +24,20 @@ export default {
 
             return donationProsperity;
         },
-        calculateItems(items, prosperity) {
+        prosperityBreaks() {
+            return collect({
+                1: 1, 5: 2, 10: 3, 16: 4, 23: 5, 31: 6, 40: 7, 51: 8, 65: 9
+            });
+        },
+        calculateProsperity(prosperityIndex) {
+            return this.prosperityBreaks()
+                .filter((prosperity, index) => prosperityIndex >= index)
+                .last();
+        },
+        calculateItems(items, prosperityIndex) {
             let filteredItems = collect(items).filter().keys().all().map(Number)
             const prosperityMap = [14, 21, 28, 35, 42, 49, 56, 63, 70];
-            let prosperityItems = Array.from({length: prosperityMap[prosperity - 1]}, (_, i) => i + 1)
+            let prosperityItems = Array.from({length: prosperityMap[this.calculateProsperity(prosperityIndex) - 1]}, (_, i) => i + 1)
             return prosperityItems.concat(filteredItems);
         }
     }
