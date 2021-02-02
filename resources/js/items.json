@@ -31,7 +31,7 @@
         "spent": true,
         "minusOneCardsAdded": 2,
         "useSlots": 2,
-        "desc": "On the next two sources of damage to you from attacks, gain Shield 1.",
+        "desc": "On the next two sources of damage to you from attacks, gain {Shield} 1.",
         "faq": "Hide Armor only grants the shield for the attack, not until the end of the round."
     },
     {
@@ -82,7 +82,7 @@
         "slot": "One Hand",
         "source": "Prosperity 1",
         "spent": true,
-        "desc": "When damaged by an attack, gain Shield 1 for the attack."
+        "desc": "When damaged by an attack, gain {Shield} 1 for the attack."
     },
     {
         "id": 9,
@@ -122,7 +122,7 @@
         "slot": "Small Item",
         "source": "Prosperity 1",
         "consumed": true,
-        "desc": "During your turn, perform a \"Heal 3, self\" action."
+        "desc": "During your turn, perform a \"{Heal} 3, self\" action."
     },
     {
         "id": 13,
@@ -143,7 +143,7 @@
         "slot": "Small Item",
         "source": "Prosperity 1",
         "consumed": true,
-        "desc": "During your attack, add +1 Attack to your entire Attack action."
+        "desc": "During your attack, add +1 {Attack} to your entire Attack action."
     },
     {
         "id": 15,
@@ -233,7 +233,7 @@
         "source": "Prosperity 3",
         "minusOneCardsAdded": 3,
         "spent": true,
-        "desc": "On the next three sources of damage to you from attacks, gain Shield 1.",
+        "desc": "On the next three sources of damage to you from attacks, gain {Shield} 1.",
         "faq": "Chainmail only grants the shield for the attack, not until the end of the round."
     },
     {
@@ -244,7 +244,7 @@
         "slot": "Head",
         "source": "Prosperity 3",
         "spent": true,
-        "desc": "During your turn, Heal 1 damage."
+        "desc": "During your turn, {Heal} 1 damage."
     },
     {
         "id": 25,
@@ -274,7 +274,7 @@
         "slot": "Small Item",
         "source": "Prosperity 3",
         "consumed": true,
-        "desc": "During your turn, perform a \"Heal 5, self\" action."
+        "desc": "During your turn, perform a \"{Heal} 5, self\" action."
     },
     {
         "id": 28,
@@ -303,7 +303,7 @@
         "slot": "Body",
         "source": "Prosperity 4",
         "spent": true,
-        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain Shield 1 for the attack."
+        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {Shield} 1 for the attack."
     },
     {
         "id": 31,
@@ -323,7 +323,7 @@
         "slot": "One Hand",
         "source": "Prosperity 4",
         "spent": true,
-        "desc": "When damaged by an attack, gain Shield 2 for the attack."
+        "desc": "When damaged by an attack, gain {Shield} 2 for the attack."
     },
     {
         "id": 33,
@@ -381,7 +381,7 @@
         "slot": "Body",
         "source": "Prosperity 5",
         "spent": true,
-        "desc": "During your attack, {anyX} to add +1 Attack to the entire Attack action."
+        "desc": "During your attack, {anyX} to add +1 {Attack} to the entire Attack action."
     },
     {
         "id": 38,
@@ -410,7 +410,7 @@
         "cost": 25,
         "slot": "One Hand",
         "source": "Prosperity 5",
-        "desc": "Whenever you use the default top of an ability card, perform an Attack 3 action instead of an Attack 2 action."
+        "desc": "Whenever you use the default top of an ability card, perform an {Attack} 3 action instead of an {Attack} 2 action."
     },
     {
         "id": 41,
@@ -420,7 +420,7 @@
         "slot": "Small Item",
         "source": "Prosperity 5\nScenario #105 (Treasure #83)",
         "consumed": true,
-        "desc": "During your attack, add +2 Attack to your entire Attack action."
+        "desc": "During your attack, add +2 {Attack} to your entire Attack action."
     },
     {
         "id": 42,
@@ -450,7 +450,7 @@
         "slot": "Body",
         "source": "Prosperity 6",
         "minusOneCardsAdded": 4,
-        "desc": "On the next four sources of damage to you from attacks, gain Shield 1."
+        "desc": "On the next four sources of damage to you from attacks, gain {Shield} 1."
     },
     {
         "id": 45,
@@ -471,7 +471,7 @@
         "slot": "One Hand",
         "source": "Prosperity 6",
         "spent": true,
-        "desc": "When damaged by an attack, gain Shield 1 and Retaliate 2 for the attack."
+        "desc": "When damaged by an attack, gain {Shield} 1 and Retaliate 2 for the attack."
     },
     {
         "id": 47,
@@ -501,7 +501,7 @@
         "slot": "Small Item",
         "source": "Prosperity 6",
         "consumed": true,
-        "desc": "During your turn, Refresh all of your spent items and Heal 3 damage."
+        "desc": "During your turn, Refresh all of your spent items and {Heal} 3 damage."
     },
     {
         "id": 50,
@@ -511,7 +511,7 @@
         "slot": "Legs",
         "source": "Prosperity 7",
         "minusOneCardsAdded": 2,
-        "desc": "If you move 1 or fewer hexes on your turn, gain Shield 1 for the round."
+        "desc": "If you move 1 or fewer hexes on your turn, gain {Shield} 1 for the round."
     },
     {
         "id": 51,
@@ -550,7 +550,7 @@
         "slot": "Two Hands",
         "source": "Prosperity 7",
         "spent": true,
-        "desc": "During your ranged attack, {anyX} to add +1 Attack to the entire Attack action."
+        "desc": "During your ranged attack, {anyX} to add +1 {Attack} to the entire Attack action."
     },
     {
         "id": 55,
@@ -560,7 +560,7 @@
         "slot": "Small Item",
         "source": "Prosperity 7",
         "consumed": true,
-        "desc": "During your turn, perform a \"Heal 7, self\" action."
+        "desc": "During your turn, perform a \"{Heal} 7, self\" action."
     },
     {
         "id": 56,
@@ -618,7 +618,7 @@
         "slot": "Two Hands",
         "source": "Prosperity 8",
         "spent": true,
-        "desc": "When damaged by an attack, gain Shield 4 for the attack."
+        "desc": "When damaged by an attack, gain {Shield} 4 for the attack."
     },
     {
         "id": 62,
@@ -660,7 +660,7 @@
         "spent": true,
         "minusOneCardsAdded": 5,
         "useSlots": 5,
-        "desc": "On the next five sources of damage to you from attacks, gain Shield 1."
+        "desc": "On the next five sources of damage to you from attacks, gain {Shield} 1."
     },
     {
         "id": 66,
@@ -678,7 +678,7 @@
         "cost": 60,
         "slot": "One Hand",
         "source": "Prosperity 9",
-        "desc": "Whenever you use the default top of an ability card, perform an Attack 4 instead of an Attack 2 action."
+        "desc": "Whenever you use the default top of an ability card, perform an {Attack} 4 instead of an {Attack} 2 action."
     },
     {
         "id": 68,
@@ -696,7 +696,7 @@
         "cost": 70,
         "slot": "Small Item",
         "source": "Prosperity 9",
-        "desc": "During your turn, Refresh all of your spent items, Heal 3 damage, and Recover up to two of your discarded cards."
+        "desc": "During your turn, Refresh all of your spent items, {Heal} 3 damage, and Recover up to two of your discarded cards."
     },
     {
         "id": 70,
@@ -744,7 +744,7 @@
         "source": "Random Item",
         "spent": true,
         "minusOneCardsAdded": 4,
-        "desc": "On the next three sources of damage from attacks targeting you, gain Shield 1, Retaliate 1"
+        "desc": "On the next three sources of damage from attacks targeting you, gain {Shield} 1, {Retaliate} 1"
     },
     {
         "id": 75,
@@ -764,7 +764,7 @@
         "slot": "Head",
         "source": "Random Item",
         "minusOneCardsAdded": 1,
-        "desc": "While you are adjacent to three or more monsters, gain Shield 1"
+        "desc": "While you are adjacent to three or more monsters, gain {Shield} 1"
     },
     {
         "id": 77,
@@ -773,7 +773,7 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "Random Item",
-        "desc": "During your melee attack, {iceX} to add +2 Attack to a single attack."
+        "desc": "During your melee attack, {iceX} to add +2 {Attack} to a single attack."
     },
     {
         "id": 78,
@@ -782,7 +782,7 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "Random Item",
-        "desc": "During your melee attack, {windX} to add +2 Attack to a single attack."
+        "desc": "During your melee attack, {windX} to add +2 {Attack} to a single attack."
     },
     {
         "id": 79,
@@ -791,7 +791,7 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "Random Item",
-        "desc": "During your melee attack, {fireX} to add +2 Attack to a single attack."
+        "desc": "During your melee attack, {fireX} to add +2 {Attack} to a single attack."
     },
     {
         "id": 80,
@@ -800,7 +800,7 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "Random Item",
-        "desc": "During your melee attack, {earthX} to add +2 Attack to a single attack."
+        "desc": "During your melee attack, {earthX} to add +2 {Attack} to a single attack."
     },
     {
         "id": 81,
@@ -809,7 +809,7 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "Random Item",
-        "desc": "During your melee attack, {lightX} to add +2 Attack to a single attack."
+        "desc": "During your melee attack, {lightX} to add +2 {Attack} to a single attack."
     },
     {
         "id": 82,
@@ -818,7 +818,7 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "Random Item",
-        "desc": "During your melee attack, {darkX} to add +2 Attack to a single attack."
+        "desc": "During your melee attack, {darkX} to add +2 {Attack} to a single attack."
     },
     {
         "id": 83,
@@ -908,7 +908,7 @@
         "slot": "Small Item",
         "source": "Random Item",
         "consumed": true,
-        "desc": "When damaged by an attack targeting you, gain Shield 4 for the attack."
+        "desc": "When damaged by an attack targeting you, gain {Shield} 4 for the attack."
     },
     {
         "id": 92,
@@ -928,7 +928,7 @@
         "slot": "Small Item",
         "source": "Random Item",
         "consumed": true,
-        "desc": "During an ally's attack, add +1 Attack to their entire attack action"
+        "desc": "During an ally's attack, add +1 {Attack} to their entire attack action"
     },
     {
         "id": 94,
@@ -938,7 +938,7 @@
         "slot": "Small Item",
         "source": "Random Item",
         "consumed": true,
-        "desc": "During your turn, perform a \"Heal 3, Range 5\" action"
+        "desc": "During your turn, perform a \"{Heal} 3, Range 5\" action"
     },
     {
         "id": 95,
@@ -967,7 +967,7 @@
         "cost": 40,
         "slot": "Legs",
         "source": "Scenario #38 (Treasure #29)",
-        "desc": "If you move 4 or more hexes on your turn, perform a \"\"Heal 1, Self\"\" action."
+        "desc": "If you move 4 or more hexes on your turn, perform a \"\"{Heal} 1, Self\"\" action."
     },
     {
         "id": 98,
@@ -985,7 +985,7 @@
         "cost": 50,
         "slot": "Legs",
         "source": "Scenario #63 (Treasure #12)",
-        "desc": "Ignore the damaging effects of hazardous terrain and perform a \"\"Heal 2, Self\"\" action on any turn in which you have entered a hazardous terrain hex."
+        "desc": "Ignore the damaging effects of hazardous terrain and perform a \"\"{Heal} 2, Self\"\" action on any turn in which you have entered a hazardous terrain hex."
     },
     {
         "id": 100,
@@ -995,7 +995,7 @@
         "slot": "Body",
         "source": "Scenario #31 (Treasure #69)",
         "spent": true,
-        "desc": "During your turn, perform a \"Heal 2, target any summoned ally\" action."
+        "desc": "During your turn, perform a \"{Heal} 2, target any summoned ally\" action."
     },
     {
         "id": 101,
@@ -1014,7 +1014,7 @@
         "slot": "Body",
         "source": "City Event 40",
         "spent": true,
-        "desc": "During your ranged attack, suffer 3 damage to add +1 Attack to the entire Attack action."
+        "desc": "During your ranged attack, suffer 3 damage to add +1 {Attack} to the entire Attack action."
     },
     {
         "id": 103,
@@ -1033,7 +1033,7 @@
         "slot": "Body",
         "source": "Scenario #40 (Treasure #47)",
         "consumed": true,
-        "desc": "On the next five sources of damage from attacks targeting you, gain Shield 1."
+        "desc": "On the next five sources of damage from attacks targeting you, gain {Shield} 1."
     },
     {
         "id": 105,
@@ -1052,7 +1052,7 @@
         "cost": 40,
         "slot": "Head",
         "source": "Road Event 05",
-        "desc": "Any time you kill an enemy during your turn, perform a \"Heal 1, Self\" action."
+        "desc": "Any time you kill an enemy during your turn, perform a \"{Heal} 1, Self\" action."
     },
     {
         "id": 107,
@@ -1061,7 +1061,7 @@
         "cost": 30,
         "slot": "Head",
         "source": "Scenario #03 (Treasure #65)",
-        "desc": "After moving 4 or more hexes on your turn, add +1 Attack to your next melee attack this turn.",
+        "desc": "After moving 4 or more hexes on your turn, add +1 {Attack} to your next melee attack this turn.",
         "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
     },
     {
@@ -1109,7 +1109,7 @@
         "slot": "Two Hands",
         "source": "Reward From Scenario #65\nOption from Scenario 100",
         "consumed": true,
-        "desc": "During your melee attack, add +2 Attack and PIERCE 2 to the entire Attack action"
+        "desc": "During your melee attack, add +2 {Attack} and PIERCE 2 to the entire Attack action"
     },
     {
         "id": 113,
@@ -1166,7 +1166,7 @@
         "slot": "One Hand",
         "source": "City Event 53\nRoad Event 53",
         "spent": true,
-        "desc": "During your melee attack, suffer 2 damage to add +1 Attack to the entire Attack action."
+        "desc": "During your melee attack, suffer 2 damage to add +1 {Attack} to the entire Attack action."
     },
     {
         "id": 118,
@@ -1291,7 +1291,7 @@
         "slot": "Small Item",
         "source": "Road Event 51",
         "consumed": true,
-        "desc": "During your turn, place a character token on an adjacent normal or elite enemy. You add +1 Attack to all your attacks targeting this enemy."
+        "desc": "During your turn, place a character token on an adjacent normal or elite enemy. You add +1 {Attack} to all your attacks targeting this enemy."
     },
     {
         "id": 130,
@@ -1301,7 +1301,7 @@
         "slot": "Small Item",
         "source": "Scenario #81 (Treasure #68)",
         "consumed": true,
-        "desc": "During your turn, {lightX} {darkX} to perform a \"Heal 25, Self\" action"
+        "desc": "During your turn, {lightX} {darkX} to perform a \"{Heal} 25, Self\" action"
     },
     {
         "id": 131,
@@ -1348,7 +1348,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "Reward from Solo Scenario #01 — {BR}",
-        "desc": "Any time you kill an enemy during your turn, gain Shield 1 for the rest of the round.",
+        "desc": "Any time you kill an enemy during your turn, gain {Shield} 1 for the rest of the round.",
         "soloItem": "BR"
     },
     {
@@ -1370,7 +1370,7 @@
         "slot": "Small Item",
         "source": "Reward from Solo Scenario #03 — {SW}",
         "consumed": true,
-        "desc": "During your ranged attack, add +2 Attack and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made.",
+        "desc": "During your ranged attack, add +2 {Attack} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made.",
         "soloItem": "SW"
     },
     {
@@ -1401,7 +1401,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "Reward from Solo Scenario #06 — {MT}",
-        "desc": "Any time you perform an Augment action, add +1 Attack to the entire action.",
+        "desc": "Any time you perform an Augment action, add +1 {Attack} to the entire action.",
         "soloItem": "MT"
     },
     {
@@ -1411,7 +1411,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "Reward from Solo Scenario #07 — {SK}",
-        "desc": "When damaged by an attack, you may {lightX} to gain Shield 3 for the attack.",
+        "desc": "When damaged by an attack, you may {lightX} to gain {Shield} 3 for the attack.",
         "soloItem": "SK"
     },
     {
@@ -1466,7 +1466,7 @@
         "cost": 50,
         "slot": "Head",
         "source": "Reward from Solo Scenario #08 — {BE}",
-        "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 Attack to the Attack.",
+        "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {Attack} to the Attack.",
         "soloItem": "BE"
     },
     {
@@ -1556,7 +1556,7 @@
         "cost": 75,
         "slot": "Body",
         "source": "Reward from Scenario #108",
-        "desc": "You are immune to CURSE, even if the item is spent. On the next three sources of damage from attacks targeting you gain Shield 1.",
+        "desc": "You are immune to CURSE, even if the item is spent. On the next three sources of damage from attacks targeting you gain {Shield} 1.",
         "spent": true,
         "minusOneCardsAdded": 3
     },
@@ -1567,7 +1567,7 @@
         "cost": 50,
         "slot": "Two Hands",
         "source": "Unknown",
-        "desc": "During your melee attack, {anyX} to add +2 Attack to a single attack."
+        "desc": "During your melee attack, {anyX} to add +2 {Attack} to a single attack."
     },
     {
         "id": 157,
@@ -1576,7 +1576,7 @@
         "cost": 40,
         "slot": "Two Hands",
         "source": "Scenario #107 (Treasure #78)\nSection 32\"Collapsed Atrium\" in book",
-        "desc": "During your ranged attack, add +2 Attack, CURSE, and WOUND to a single attack.",
+        "desc": "During your ranged attack, add +2 {Attack}, CURSE, and WOUND to a single attack.",
         "consumed": true
     },
     {
