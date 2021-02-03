@@ -1,6 +1,10 @@
 export default {
     methods: {
         calculateShop(reputation) {
+            if (typeof reputation === 'undefined') {
+                return 0;
+            }
+
             let reputations = [-18, -14, -10, -6, -2, 3, 7, 11, 15, 19];
             let shop = 5;
 

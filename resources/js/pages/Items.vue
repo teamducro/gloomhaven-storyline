@@ -160,7 +160,7 @@ export default {
             this.loading = true;
 
             this.sheet = new Sheet;
-            this.shop = this.calculateShop(this.sheet.reputation);
+            this.shop = this.calculateShop(this.sheet.reputation || 0);
             this.campaignName = this.getCampaignName();
 
             await this.$nextTick();
