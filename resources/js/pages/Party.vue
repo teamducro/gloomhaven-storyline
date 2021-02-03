@@ -2,9 +2,15 @@
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
         <div id="info" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <h1 class="mb-4 text-xl">{{ $t('Party sheet') }} {{ campaignName }}</h1>
+            <tabs :tabs="[$t('Party sheet'), $t('Items')]"
+                  :icons="['assignment', 'style']"
+                  :urls="['party', 'items']"
+                  :active="$t('Party sheet')"
+            >
+            </tabs>
+            <h1 class="hidden sm:inline text-xl">{{ campaignName }}</h1>
 
-            <div class="flex flex-col sm:flex-row">
+            <div class="mt-4 flex flex-col sm:flex-row">
                 <div class="mb-8 sm:mb-0 sm:mr-4">
                     <div class="mb-2 flex items-center">
                         <h2>{{ $t('Reputation') }}</h2>
@@ -65,13 +71,12 @@
                 </ul>
             </div>
 
-            <selectable-list
-                id="item-designs"
-                :title="$t('Item Designs')"
-                :label="$t('Add item designs')"
-                :items.sync="sheet.itemDesigns"
-                @change="store"
-            ></selectable-list>
+            <router-link to="/items">
+                <button class="mdc-button origin-left transform scale-75 mdc-button--raised">
+                    <i class="material-icons mdc-button__icon transform rotate-180">style</i>
+                    <span class="mdc-button__label">{{ $t('Items') }}</span>
+                </button>
+            </router-link>
 
             <div class="lg:flex">
                 <selectable-list
@@ -132,12 +137,14 @@
 </template>
 
 <script>
-import StoryRepository from "../repositories/StoryRepository";
 import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
 import SelectableList from "../components/presenters/party/SelectableList";
+import GetCampaignName from "../services/GetCampaignName";
+import SheetCalculations from "../services/SheetCalculations";
 
 export default {
+    mixins: [GetCampaignName, SheetCalculations],
     components: {SelectableList},
     data() {
         return {
@@ -192,23 +199,19 @@ export default {
             ],
             campaignName: null,
             loading: true,
-            storyRepository: new StoryRepository(),
             storySyncer: new StorySyncer,
         }
     },
     watch: {
         'sheet.reputation': function () {
-            this.calculateShop();
+            this.shop = this.calculateShop(this.sheet.reputation);
         },
         'sheet.donations': function () {
-            this.calculateDonationProsperity();
+            this.donationProsperity = this.calculateDonationProsperity(this.sheet.donations);
         }
     },
     mounted() {
         this.render();
-
-        // this.calculateShop();
-        // this.calculateDonationProsperity();
 
         this.$bus.$on('campaigns-changed', this.render);
     },
@@ -220,7 +223,7 @@ export default {
             this.loading = true;
 
             this.sheet = new Sheet;
-            this.setCampaignName();
+            this.campaignName = this.getCampaignName();
 
             await this.$nextTick();
 
@@ -238,34 +241,10 @@ export default {
             this.sheet.store();
             this.storySyncer.store();
         },
-        calculateShop() {
-            let reputation = [-18, -14, -10, -6, -2, 3, 7, 11, 15, 19];
-            let shop = 5;
-            reputation.forEach((r) => {
-                if (this.sheet.reputation >= r) {
-                    shop--;
-                }
-            });
-            this.shop = shop;
-        },
-        calculateDonationProsperity() {
-            let rates = [100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, 900, 1000];
-            let donationProsperity = 0;
-            rates.forEach((rate) => {
-                if (this.sheet.donations >= rate) {
-                    donationProsperity++;
-                }
-            });
-            this.donationProsperity = donationProsperity;
-        },
         renderHtml(html) {
             return {
                 template: `<span>${html}</span>`
             };
-        },
-        setCampaignName() {
-            const story = this.storyRepository.current()
-            this.campaignName = story ? story.name : this.$t('local');
         }
     }
 }

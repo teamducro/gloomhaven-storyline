@@ -84,6 +84,15 @@
                             </router-link>
                         </li>
 
+                        <li @click="toggle">
+                            <router-link to="/items" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic transform rotate-180"
+                                   aria-hidden="true">style</i>
+                                <span class="mdc-list-item__text">{{ $t('Items') }}</span>
+                            </router-link>
+                        </li>
+
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
                     </ul>
                 </div>
