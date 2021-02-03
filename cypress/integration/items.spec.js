@@ -15,9 +15,12 @@ describe('Items', () => {
         cy.get('#items').contains('Circlet of Elements');
         cy.get('.items-to-add-dropdown button').click();
         cy.get('#item-71').click();
-        cy.get('#item-75').click();
         utilities.closeModel();
         cy.get('#items').contains('Boots of Levitation');
+
+        cy.get('.items-to-add-dropdown button').click();
+        cy.get('#item-75').click();
+        utilities.closeModel();
         cy.get('#items').contains('Circlet of Elements').should('not.exist');
     });
 

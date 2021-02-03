@@ -140,10 +140,7 @@ export default {
     },
     watch: {
         'sheet.itemDesigns': {
-            handler() {
-                const sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
-                this.items = this.itemRepository.findMany(sheetItems);
-            },
+            handler: 'refreshItems',
             deep: true
         }
     },
@@ -170,9 +167,15 @@ export default {
             this.field = new MDCTextField(this.$refs['search-field']);
         },
 
+        refreshItems() {
+            const sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+            this.items = this.itemRepository.findMany(sheetItems);
+        },
+
         changeItem(id, isChecked) {
             const item = parseInt(id.replace('item-', ''));
             Vue.set(this.sheet.itemDesigns, item, isChecked);
+            this.refreshItems();
             this.store();
         },
 
