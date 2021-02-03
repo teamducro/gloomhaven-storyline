@@ -109,7 +109,8 @@ export default {
                     description: 'Snapshots and data transfer between campaigns',
                     date: moment('26-12-2020', "DD-MM-YYYY")
                 },
-                {version: 2.8, description: 'Italian language', date: moment('15-01-2021', "DD-MM-YYYY")}
+                {version: 2.8, description: 'Italian language', date: moment('15-01-2021', "DD-MM-YYYY")},
+                {version: 2.9, description: 'Item Database', date: moment('03-02-2021', "DD-MM-YYYY")}
             ].reverse()
         }
     },
