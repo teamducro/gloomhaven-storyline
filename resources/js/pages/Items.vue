@@ -251,6 +251,7 @@ export default {
                 MUDDLE: 'MUDDLE <webp src="/img/icons/status/muddle.png" width="20" class="inline"/>',
                 CURSE: 'CURSE <webp src="/img/icons/status/curse.png" width="20" class="inline"/>',
                 BLESS: 'BLESS <webp src="/img/icons/status/bless.png" width="20" class="inline"/>',
+                REGENERATE: 'REGENERATE <webp src="/img/icons/status/regenerate.png" width="20" class="inline"/>',
             }).each((icon, key) => {
                 desc = desc.replaceAll(key, icon);
             });
