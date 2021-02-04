@@ -9,7 +9,7 @@ export default {
     'Source': 'Quelle',
     'Open source': 'Open source',
     'Info': 'Info',
-    'Buy me a Beer': 'Kauf mir ein Bier!',
+    'Buy me a Beer': 'Gib mir ein Bier aus!',
     'Intro': 'Einleitung',
     'The Merchant': 'Die Händlerin',
     'Demon and Rift': 'Dämonen und Risse',
@@ -354,7 +354,7 @@ export default {
             }
         },
         10: {
-            "name": "New Management",
+            "name": "Neues Management",
             "sections": {
                 1: "Zufrieden mit eurer bisherigen Arbeit hat Jekserah euch eingeladen, euch ihrer untoten Invasion der Stadt anzuschließen. Sie plant die Militärregierung zu stürzen und die Kaufmannsgilde an die Macht zu bringen.",
                 2: "Ihr habt Jekserah geholfen die Militärregierung zu stürzen. Die Stadtwache wehrte sich, aber ihre erbärmlichen sterblichen Körper waren dem überwältigenden Ansturm  der Untoten und der Macht Eurer Klingen nicht gewachsen. Jede Wache, die fiel, verstärkte die Reihen der Untoten. Als der Hauptmann der Wache fiel, flohen die restlichen Wachen wie die Feiglinge, von denen ihr immer wusstet, dass sie es sind. Jekserahs Leibwächter wurden bei der Invasion getötet, aber ums besser für euch. Ihr seid jetzt Jekserahs neue rechte Hand und die Händlergilde regiert die Stadt.",
@@ -382,11 +382,11 @@ export default {
         12: {
             "name": "Der Wunsch des Herzens",
             "sections": {
-                1: "Some of your contacts at the Sanctuary of the Great Oak know of a temple dedicated to an unseen force that will answer any question asked of it. This is a golden opportunity seek out your heart's desire.",
-                2: "When you finally reached the temple a voice told you \"I cannot accept visitors at this time\". Before you could object, a group of massive stone constructs materialized before you. But there was no way you were going back empty handed. After finishing of the monsters, the voice then offered you a choice of either great power, great wealth, or the location of the necromancer.",
-                3: "The obvious choice was great power. You are not interested in gold or petty revenge. The only thing that matters is the strength to enact your will. The voice tells you of a shrine in the Copperneck Mountains that contains a source of great power.",
-                4: "What kind of mercenary would you be if you weren't getting paid? Great wealth is the obvious choice here. The voice tells you of a lost island in the Misty Sea that contains long forgotten treasures.",
-                5: "Power and wealth mean nothing while Jekserah still breathes. You insist that the voice tell you the location of the nefarious Valrath. It tells you of a sanctum hidden deep within the Corpsewood."
+                1: "Einige eurer Kontakte im Heiligtum der Großen Eiche wissen von einem Tempel, der einer unsichtbaren Kraft gewidmet ist, die jede Frage beantworten wird, die man ihr stellt. Das ist die Gelegenheit für euch, euch euren Herzenswunsch zu erfüllen.",
+                2: "Als ihr schließlich den Tempel erreicht hattet, vernahmt ihr eine Stimme:\"Ich kann um diese Zeit keine Besucher empfangen.\" Bevor ihr etwas erwidern konntet, materialisierte sich eine Gruppe von Steinkonstrukten vor euch. Aber ihr wolltet auf keinen Fall mit leeren Händen den Rückweg antreten. Nachdem ihr mit den Monstern fertig wart, bot euch die Stimme entweder große Macht, großen Reichtum oder aber Aufschlüsse über den Aufenthaltsort der Nekormantin an.",
+                3: "Eure offensichtliche Wahl war große Macht. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein in den Copperneck Mountains, der eine Quelle großer Macht enthält.",
+                4: "Was für eine Art von Söldnern wärt ihr, wenn ihr nicht nach Reichtum und Bezahlung trachten würdet? Großer Reichtum war daher eure offensichtliche Wahl. Die Stimme erzählte euch von einer verlorenen Insel im Nebelmeer, die längst vergessene Schätze enthält.",
+                5: "Macht und Reichtum bedeuten euch nichts, solange Jekserah noch am Leben ist. Ihr besteht darauf, dass die Stimme euch den Aufenthaltsort der ruchlosen Valrath verrät. Sie erzählte euch von einem Heiligtum, das in den Tiefen des Leichenwaldes versteckt ist."
             },
             "stages": {
                 0: "{1}",
@@ -396,10 +396,10 @@ export default {
             }
         },
         13: {
-            "name": "The Enchantress",
+            "name": "Die Zauberin",
             "sections": {
-                1: "You've heard stories of an Aesther enchanteress in Gloomhaven who may be able to aid in your endeavors. However, she's been to known to ask impossible tasks in exchange for favors. Impossible or not, you need her help.",
-                2: "Following reports of an Aesther in the Boiler District, you found her inside an abandoned and decrepit tavern: the Crooked Bone. The Aesther woman's name is Hail and she seemed a bit eccentric... perhaps even a bit mad. After some trepidation, she agreed to help you if you could retrieve an orb from the Frozen Hollow in the Copperneck Mountains. The creatures inside the hollow were none too pleased to see you, but you fought through them nonetheless. With the last of your adversaries dead, you approached the back of the chamber, where a small blue sphere floated above the floor. You stashed it into your pack and made your way back to the Crooked Bone. Hail seemed quite enamored with the object and perhaps a bit flippant about just how dangerous an object you had held with your bare hands. Hail disappeared with the sphere. After what feels like hours of waiting, she returned and casually asks to experiment on you. You're a bit taken aback, but she assures you that it's safe. For large amounts of gold, she can now enhance some of your abilities. More importantly, she's also willing to do you some favors."
+                1: "Ihr habt Geschichten über eine Aesther-Zauberin in Gloomhaven gehört, die euch vielleicht bei euren Bemühungen helfen kann. Allerdings ist sie dafür bekannt, dass sie unmögliche Aufgaben im Austausch für Gefallen stellt. Unmöglich oder nicht, ihr braucht ihre Hilfe.",
+                2: "Nach Berichten über eine Aesther-Zauberin im Kesselviertel habt ihr sie in einer verlassenen und heruntergekommenen Taverne gefunden: dem Crooked Bone. Der Name der Aestherin ist Hail und sie schien ein wenig exzentrisch zu sein... vielleicht sogar ein wenig verrückt. Nach einigem Zögern willigte sie ein euch zu helfen, wenn ihr eine Kugel aus der Gefrorenen Höhle in den Copperneck-Bergen holen könnten. Die Kreaturen in der Höhle waren nicht gerade erfreut euch zu sehen, aber ihr machtet kurzen Prozess mit dieser Gefahr. Als der letzte Gegner tot war, nähertet ihr euch dem hinteren Teil der Kammer, wo eine kleine blaue Kugel über dem Boden schwebte. Ihr stecktet sie in euren Rucksack und begabt euch auf den Weg zurück zum Crooked Bone. Hail schien ziemlich verliebt in das Objekt zu sein und vielleicht ein wenig leichtsinnig darüber, wie gefährlich dieses Objekt war, das ihr mit euren bloßen Händen gehalten hattet. Hail verschwand mit der Kugel. Nach gefühlten Stunden des Wartens kehrte sie zurück und fragte beiläufig, ob sie an euch ein Experiment durchdürfen dürfe. Ihr seid ein wenig verblüfft, aber sie versichert euch, dass es sicher ist. Für eine große Menge Gold kann sie nun einige eurer Fähigkeiten verbessern. Was noch wichtiger ist: Sie ist auch bereit, euch einige weitere Gefallen zu tun."
             },
             "stages": {
                 0: "{1}",
@@ -409,8 +409,8 @@ export default {
         14: {
             "name": "Unbegrenzte Macht",
             "sections": {
-                1: "You've learned of a shrine's location in the Copperneck mountains. Your sources tell you that this shrine is marked with the symbols for power and strength. You're fond of both of those, so the shrine seems worth investigating.",
-                2: "The shrine was a trial. \"Strength begets strength\" was inscribed in ancient writings on the walls. You demonstrated your strength by defeating the shrine's guardians and grabbing hold of the Sigil of Strength. The sigil bestowed a great strength upon you, but also showed you visions of strange runic alphabet. Perhaps the symbols have a deeper meaning?"
+                1: "Ihr habt von einem Schrein in den Copperneck Mountains erfahren. Eure Quellen berichten euch, dass dieser Schrein mit Symbolen der Macht und der Stärke gekennzeichnet ist. Da ihr Beides mögt, scheint er Schrein eine Untersuchung wert zu sein.",
+                2: "Der Schrein war eine Prüfung. \"Stärke erzeugt Stärke\" stand in alten Schriften an der Wand geschrieben. Ihr habt eure Stärke bewiesen, indem ihr die Wächter des Schreins besiegt und das Siegel der Stärke an euch gerissen habt. Das Siegel verlieh euch eine große Stärke, offenbarte euch aber auch Visionen von seltsamen Runen. Vielleicht haben die Symbole eine tiefere Bedeutung?"
             },
             "stages": {
                 0: "{1}",
@@ -418,7 +418,7 @@ export default {
             }
         },
         15: {
-            "name": "There Be Dragons",
+            "name": "Es leben die Drachen",
             "sections": {
                 1: "You've heard reports of large flying creatures in the Copperneck Mountains. Could there really be dragons in the mountains? It's worth investigating, dragons could pose a serious threat to the city.",
                 2: "Your goal is the Icecrag, the tallest mountain in the Coppernecks. On your way there, you were ambushed by a group of Inox and Demons. Their co-existence was curious, but your ultimate goal lies further ahead.",
