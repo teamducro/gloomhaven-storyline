@@ -88,7 +88,7 @@
                                 Nicomatic</a>:
                             <a class="link" target="_blank" rel="noreferrer"
                                href="https://heisch.github.io/gloomhaven-item-db/">
-                                {{ $t('Gloomhaven Item DB') }}</a>
+                                Gloomhaven Item DB</a>
                         </li>
                     </ul>
 
