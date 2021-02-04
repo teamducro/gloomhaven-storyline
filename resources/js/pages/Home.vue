@@ -134,6 +134,10 @@
                             With it, you can track party-related info like reputation, donations, prosperity and
                             more, all in one place!
                         </p>
+                        <p class="text-gray-600 mb-4">
+                            You may even track your City and Road Event Decks, this is especially useful for remote
+                            play!
+                        </p>
                         <p class="mb-4">
                             <a :href="appUrl+'/#/party'"
                                class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
@@ -142,13 +146,41 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <webp src="/img/party-sheet.jpg" class="w-full mx-auto rounded-md shadow-md"
+                        <webp src="/img/gloomhaven-party-sheet.jpg" class="w-full mx-auto rounded-md shadow-md"
                               alt="Gloomhaven Party Sheet"/>
                     </template>
                 </two-column-content>
 
-
                 <two-column-content>
+                    <template v-slot:title>
+                        <i class="material-icons text-gray-800 mr-2 transform rotate-180" aria-hidden="true">style</i>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Item database
+                        </h3>
+                    </template>
+                    <template v-slot:left>
+                        <p class="text-gray-600 mb-2">
+                            Gloomhaven storyline tracker features an item database for
+                            all the available items in your Gloomhaven campaign.
+                        </p>
+                        <p class="text-gray-600 mb-2">
+                            Items obtained in your Gloomhaven campaign can conveniently be searched and filtered
+                            through. It includes all item card images.
+                        </p>
+                        <p class="mb-4">
+                            <a :href="appUrl+'/#/items'"
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                Open items
+                            </a>
+                        </p>
+                    </template>
+                    <template v-slot:right>
+                        <webp src="/img/gloomhaven-items.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Gloomhaven Items"/>
+                    </template>
+                </two-column-content>
+
+                <two-column-content reverse>
                     <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2" aria-hidden="true">map</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
@@ -178,7 +210,7 @@
                 </two-column-content>
 
 
-                <two-column-content reverse>
+                <two-column-content>
                     <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2" aria-hidden="true">filter_list</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
