@@ -7,10 +7,21 @@ describe('Items', () => {
 
         cy.get('.items-to-add-dropdown button').click();
         cy.get('#item-75').click();
-        cy.get('#item-100').click();
         utilities.closeModel();
         cy.get('#items').contains('Circlet of Elements');
-        cy.get('#items').contains('Robes of Summoning');
+
+        // Make sure it also works after a reload!
+        cy.reload(true);
+        cy.get('#items').contains('Circlet of Elements');
+        cy.get('.items-to-add-dropdown button').click();
+        cy.get('#item-71').click();
+        utilities.closeModel();
+        cy.get('#items').contains('Boots of Levitation');
+
+        cy.get('.items-to-add-dropdown button').click();
+        cy.get('#item-75').click();
+        utilities.closeModel();
+        cy.get('#items').contains('Circlet of Elements').should('not.exist');
     });
 
     it('It can search items', () => {

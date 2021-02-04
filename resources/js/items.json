@@ -7,7 +7,7 @@
         "slot": "Legs",
         "source": "Prosperity 1",
         "spent": true,
-        "desc": "During your movement, add +2 Move to the movement.",
+        "desc": "During your movement, add +2 {Move} to the movement.",
         "faq": "Boots of Striding only add to the numerical value of an existing single movement ability. They do not give you a free movement action."
     },
     {
@@ -18,7 +18,7 @@
         "slot": "Legs",
         "source": "Prosperity 1",
         "spent": true,
-        "desc": "During your movement, add Jump to the movement.",
+        "desc": "During your movement, add {Jump} to the movement.",
         "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
     },
     {
@@ -132,7 +132,7 @@
         "slot": "Small Item",
         "source": "Prosperity 1",
         "consumed": true,
-        "desc": "During your turn, Recover up to two of your discarded cards.",
+        "desc": "During your turn, {Recover} up to two of your discarded cards.",
         "faq": "[Errata] The item should allow you to recover only one discarded card. This is change in an upcoming expansion but may be used for the base game."
     },
     {
@@ -172,7 +172,7 @@
         "slot": "Head",
         "source": "Prosperity 2",
         "consumed": true,
-        "desc": "During your turn, Refresh one of your consumed small items."
+        "desc": "During your turn, {Refresh} one of your consumed small items."
     },
     {
         "id": 18,
@@ -284,7 +284,7 @@
         "slot": "Small Item",
         "source": "Prosperity 3",
         "consumed": true,
-        "desc": "During your turn, Refresh all of your spent items."
+        "desc": "During your turn, {Refresh} all of your spent items."
     },
     {
         "id": 29,
@@ -293,7 +293,7 @@
         "cost": 30,
         "slot": "Legs",
         "source": "Prosperity 4",
-        "desc": "Whenever you use the default bottom of an ability card, perform a Move 3 action instead of a Move 2 action."
+        "desc": "Whenever you use the default bottom of an ability card, perform a {Move} 3 action instead of a {Move} 2 action."
     },
     {
         "id": 30,
@@ -313,7 +313,7 @@
         "slot": "Head",
         "source": "Prosperity 4",
         "spent": true,
-        "desc": "During your ranged attack, add +1 Range to your entire Attack action."
+        "desc": "During your ranged attack, add +1 {Range} to your entire Attack action."
     },
     {
         "id": 32,
@@ -343,7 +343,7 @@
         "slot": "Small Item",
         "source": "Prosperity 4",
         "consumed": true,
-        "desc": "During your turn, Recover up to three of your discarded cards.",
+        "desc": "During your turn, {Recover} up to three of your discarded cards.",
         "faq": "[Errata] The item should allow you to recover only two discarded cards. This is change in an upcoming expansion but may be used in the base game."
     },
     {
@@ -360,7 +360,7 @@
             "attack": 2,
             "range": 0
         },
-        "desc": "Summon Jade Falcon (Flying)",
+        "desc": "Summon Jade Falcon ({Flying})",
         "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
     },
     {
@@ -371,7 +371,7 @@
         "slot": "Legs",
         "source": "Prosperity 5",
         "spent": true,
-        "desc": "During your movement, add +3 Move to the movement."
+        "desc": "During your movement, add +3 {Move} to the movement."
     },
     {
         "id": 37,
@@ -460,7 +460,7 @@
         "slot": "Head",
         "source": "Prosperity 6",
         "consumed": true,
-        "desc": "During your turn, Refresh two of your consumed small items. Gain CURSE.",
+        "desc": "During your turn, {Refresh} two of your consumed small items. Gain CURSE.",
         "faq": "The perk that ignores item effects does not prevent you from being cursed."
     },
     {
@@ -501,7 +501,7 @@
         "slot": "Small Item",
         "source": "Prosperity 6",
         "consumed": true,
-        "desc": "During your turn, Refresh all of your spent items and {Heal} 3 damage."
+        "desc": "During your turn, {Refresh} all of your spent items and {Heal} 3 damage."
     },
     {
         "id": 50,
@@ -579,7 +579,7 @@
         "cost": 75,
         "slot": "Legs",
         "source": "Prosperity 8",
-        "desc": "Whenever you use the default bottom of an ability card perform a Move 4 action instead of a Move 2 action."
+        "desc": "Whenever you use the default bottom of an ability card perform a {Move} 4 action instead of a {Move} 2 action."
     },
     {
         "id": 58,
@@ -588,7 +588,7 @@
         "cost": 75,
         "slot": "Body",
         "source": "Prosperity 8",
-        "desc": "Gain Flying. While occupying an obstacle hex, you are considered Invisible and cannot attack"
+        "desc": "Gain {Flying}. While occupying an obstacle hex, you are considered Invisible and cannot attack"
     },
     {
         "id": 59,
@@ -598,7 +598,7 @@
         "slot": "Head",
         "source": "Prosperity 8\nOption from Scenario 100",
         "spent": true,
-        "desc": "During your ranged attack, add +2 Range to your entire Attack action"
+        "desc": "During your ranged attack, add +2 {Range} to your entire Attack action"
     },
     {
         "id": 60,
@@ -648,7 +648,7 @@
         "slot": "Legs",
         "source": "Prosperity 9",
         "spent": true,
-        "desc": "During your movement, add +4 Move to the movement."
+        "desc": "During your movement, add +4 {Move} to the movement."
     },
     {
         "id": 65,
@@ -696,7 +696,7 @@
         "cost": 70,
         "slot": "Small Item",
         "source": "Prosperity 9",
-        "desc": "During your turn, Refresh all of your spent items, {Heal} 3 damage, and Recover up to two of your discarded cards."
+        "desc": "During your turn, {Refresh} all of your spent items, {Heal} 3 damage, and {Recover} up to two of your discarded cards."
     },
     {
         "id": 70,
@@ -714,7 +714,7 @@
         "cost": 50,
         "slot": "Legs",
         "source": "Random Item",
-        "desc": "Gain Flying"
+        "desc": "Gain {Flying}"
     },
     {
         "id": 72,
@@ -733,7 +733,7 @@
         "slot": "Body",
         "source": "Random Item",
         "consumed": true,
-        "desc": "During your turn, perform a \"Move 4, Jump\" action"
+        "desc": "During your turn, perform a \"{Move} 4, {Jump}\" action"
     },
     {
         "id": 74,
@@ -938,7 +938,7 @@
         "slot": "Small Item",
         "source": "Random Item",
         "consumed": true,
-        "desc": "During your turn, perform a \"{Heal} 3, Range 5\" action"
+        "desc": "During your turn, perform a \"{Heal} 3, {Range} 5\" action"
     },
     {
         "id": 95,
@@ -948,7 +948,7 @@
         "slot": "Small Item",
         "source": "Random Item",
         "consumed": true,
-        "desc": "During your turn, an ally within Range 5 may Recover up to two of their discarded cards"
+        "desc": "During your turn, an ally within {Range} 5 may {Recover} up to two of their discarded cards"
     },
     {
         "id": 96,
@@ -958,7 +958,7 @@
         "slot": "Legs",
         "source": "Scenario #66 (Treasure #36)",
         "spent": true,
-        "desc": "During your movement, add +3 Move and Jump to a single movement"
+        "desc": "During your movement, add +3 {Move} and {Jump} to a single movement"
     },
     {
         "id": 97,
@@ -1196,7 +1196,7 @@
         "slot": "Two Hands",
         "source": "Reward From Scenario #88",
         "spent": true,
-        "desc": "During your turn, a summoned ally within Range 3 performs a \"Move 3\" action with you controlling the action."
+        "desc": "During your turn, a summoned ally within {Range} 3 performs a \"{Move} 3\" action with you controlling the action."
     },
     {
         "id": 121,
@@ -1241,7 +1241,7 @@
         "slot": "Small Item",
         "source": "Scenario #93 (Treasure #54)",
         "consumed": true,
-        "desc": "During your turn, force an enemy within Range 5 to perform a \"Move 2\" action with you controlling the action."
+        "desc": "During your turn, force an enemy within {Range} 5 to perform a \"{Move} 2\" action with you controlling the action."
     },
     {
         "id": 125,
@@ -1251,7 +1251,7 @@
         "slot": "Small Item",
         "source": "City Event 03\nOption from Scenario 100",
         "consumed": true,
-        "desc": "During your turn, disarm all traps within Range 2."
+        "desc": "During your turn, disarm all traps within {Range} 2."
     },
     {
         "id": 126,
@@ -1281,7 +1281,7 @@
         "slot": "Small Item",
         "source": "Reward From Scenario #90",
         "consumed": true,
-        "desc": "During your turn, Muddle all enemies with Range 2."
+        "desc": "During your turn, Muddle all enemies with {Range} 2."
     },
     {
         "id": 129,
@@ -1422,7 +1422,7 @@
         "slot": "Small Item",
         "source": "Reward from Solo Scenario #09 — {QM}",
         "consumed": true,
-        "desc": "During your turn, you or any one ally may Refresh one of your spent or consumed items.",
+        "desc": "During your turn, you or any one ally may {Refresh} one of your spent or consumed items.",
         "faq": "This item cannot be refreshed.",
         "soloItem": "QM"
     },
@@ -1456,7 +1456,7 @@
         "slot": "Head",
         "source": "Reward from Solo Scenario #12 — {PH}",
         "spent": true,
-        "desc": "During your turn, POISON and CURSE one enemy within Range 3.",
+        "desc": "During your turn, POISON and CURSE one enemy within {Range} 3.",
         "soloItem": "PH"
     },
     {
@@ -1476,7 +1476,7 @@
         "cost": 50,
         "slot": "Two Hands",
         "source": "Reward from Solo Scenario #13 — {SS}",
-        "desc": "After performing any song action, immediately perform an Attack 2 or Move 2 action.",
+        "desc": "After performing any song action, immediately perform an Attack 2 or {Move} 2 action.",
         "soloItem": "SS"
     },
     {
@@ -1586,7 +1586,7 @@
         "cost": 35,
         "slot": "Legs",
         "source": "Scenario #111 (Treasure #82)",
-        "desc": "During your movement, add +2 Move to the movement and gain REGENERATE.",
+        "desc": "During your movement, add +2 {Move} to the movement and gain REGENERATE.",
         "spent": true
     },
     {
@@ -1596,7 +1596,7 @@
         "cost": 30,
         "slot": "Small Item",
         "source": "Scenario #103 (Treasure #81)",
-        "desc": "During any one ally's movement, add +2 Move to the movement.",
+        "desc": "During any one ally's movement, add +2 {Move} to the movement.",
         "consumed": true
     },
     {
@@ -1616,7 +1616,7 @@
         "cost": 35,
         "slot": "One Hand",
         "source": "Reward from Scenario #108",
-        "desc": "During your single-target melee attack action, add Range 3 to the attack.",
+        "desc": "During your single-target melee attack action, add {Range} 3 to the attack.",
         "consumed": true
     },
     {
