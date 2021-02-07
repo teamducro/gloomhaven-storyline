@@ -75,16 +75,15 @@ export default {
                 $('.legend .scenario').show();
             }
         },
-        rerender() {
+        async rerender() {
             if (this.zoom) {
                 this.zoom.destroy();
             }
             this.storylineKey++;
-            this.$nextTick(() => {
-                this.renderOrientation();
-                this.zoom = zoom('#storyline');
-                this.render();
-            });
+            await this.$nextTick();
+            this.renderOrientation();
+            this.render();
+            this.zoom = await zoom('#storyline');
         },
         renderOrientation() {
             let viewBox = '';
