@@ -3,7 +3,7 @@ import slugify from 'slugify';
 export default {
     methods: {
         slugify: function (string) {
-            return slugify(string, {lower: true});
+            return slugify(String.toString(string), {lower: true});
         }
     }
 }
