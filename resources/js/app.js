@@ -19,6 +19,8 @@ import VueScrollTo from "vue-scrollto";
 import StorySyncer from "./services/StorySyncer";
 import OfflineChecker from "./services/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
+import * as Sentry from "@sentry/vue";
+import {Integrations} from "@sentry/tracing";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -48,6 +50,16 @@ if (Helpers.inProduction() && process.env.MIX_GA_ID) {
     Vue.use(VueAnalytics, {
         id: process.env.MIX_GA_ID,
         router
+    });
+}
+
+if (Helpers.inProduction() && process.env.MIX_SENTRY_DSN) {
+    Sentry.init({
+        Vue: window.Vue,
+        dsn: process.env.MIX_SENTRY_DSN,
+        integrations: [new Integrations.BrowserTracing()],
+        tracesSampleRate: 0,
+        logErrors: false
     });
 }
 
