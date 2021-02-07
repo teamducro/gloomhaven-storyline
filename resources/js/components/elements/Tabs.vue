@@ -68,6 +68,9 @@ export default {
     methods: {
         select(tab, e) {
             e.preventDefault();
+            if (this.selected === tab) {
+                return;
+            }
             this.selected = tab;
 
             if (this.urls[this.tabs.indexOf(tab)]) {
