@@ -33,7 +33,8 @@ export default class QuestValidator {
             else {
                 return scenario.choice + operator;
             }
-        }).replaceAll('=c', '="' + ScenarioState.complete + '"');
+        })
+        check = check.replace(/=c/g, '="' + ScenarioState.complete + '"');
 
         return Function('"use strict";return (' + check + ')')();
     }
