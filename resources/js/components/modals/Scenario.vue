@@ -255,14 +255,13 @@ import {ScenarioState} from "../../models/ScenarioState";
 import PreloadImage from "../../services/PreloadImage";
 import StoryRepository from "../../repositories/StoryRepository";
 import Cards from "../presenters/cards/Cards";
-import Dropdown from "../elements/Dropdown";
 import StorySyncer from "../../services/StorySyncer";
 
 const md5 = require('js-md5');
 const queryString = require('query-string');
 
 export default {
-    components: {Dropdown, Cards},
+    components: {Cards},
     data() {
         return {
             scenario: null,
