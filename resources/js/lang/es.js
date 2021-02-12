@@ -414,9 +414,9 @@ export default {
         1: {
             "name": "La solicitud de la comerciante",
             "sections": {
-                1: "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
-                2: "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic power. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
-                3: "You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
+                1: "Jekserah, una comerciante valrath, se ha ofrecido a pagaros diez monedas de oro por recuperar algunas pertenencias robadas. Tras sacudir a algunos matones callejeros, habéis descubierto que el escondite de los ladrones es el Tümulo Negro, en el Soto del Cadáver.",
+                2: "Habéis encontrado a vuestra presa en el Túmulo, pero se os ha escapado. Mientras lo perseguíais, encontrásteis la razón por la que los bandidos habían elegido este túmulo en particular: huesos vivientes. Los bandidos parecen tener algún tipo de poder necromántico.  No obstante, matáis a los bandidos junto a sus impíos aliados. Vuestra presa no se encontraba entre los muertos, pero os aguarda un pasaje hacia abajo, a las catacumbas.",
+                3: "Habéis matado al Capitán bandido. Había algo en él que parecía sobrenatural y mencionó algo sobre “la Penumbra” durante la batalla. Encontráis los pergaminos robados en un alijo al fondo de los aposentos del Capitán y se los devolvéis a Jekserah a cambio de la cantidad acordada."
             },
             "stages": {
                 0: "{1}",
