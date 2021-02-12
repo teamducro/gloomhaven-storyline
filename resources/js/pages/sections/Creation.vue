@@ -82,6 +82,14 @@
                                href="https://vgb.purplekingdomgames.com">
                                 Virtual Gloomhaven Board</a>
                         </li>
+                        <li class="py-1">
+                            <a class="link" target="_blank" rel="noreferrer"
+                               href="https://www.reddit.com/user/nicomatic/">
+                                Nicomatic</a>:
+                            <a class="link" target="_blank" rel="noreferrer"
+                               href="https://heisch.github.io/gloomhaven-item-db/">
+                                Gloomhaven Item DB</a>
+                        </li>
                     </ul>
 
                     <p class="my-4 text-gray-600">

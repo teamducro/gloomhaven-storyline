@@ -15,9 +15,10 @@ import zoom from "../services/Zoom";
 import {ScenarioState} from "../models/ScenarioState";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import tippy from 'tippy.js';
-import StoryRepository from "../repositories/StoryRepository";
+import GetCampaignName from "../services/GetCampaignName";
 
 export default {
+    mixins: [GetCampaignName],
     watch: {
         $route(to, from) {
             if (to.params.id) {
@@ -28,7 +29,6 @@ export default {
     data() {
         return {
             scenarioRepository: new ScenarioRepository(),
-            storyRepository: new StoryRepository(),
             isPortrait: null,
             zoom: null,
             storylineKey: 1,
@@ -75,16 +75,15 @@ export default {
                 $('.legend .scenario').show();
             }
         },
-        rerender() {
+        async rerender() {
             if (this.zoom) {
                 this.zoom.destroy();
             }
             this.storylineKey++;
-            this.$nextTick(() => {
-                this.renderOrientation();
-                this.zoom = zoom('#storyline');
-                this.render();
-            });
+            await this.$nextTick();
+            this.renderOrientation();
+            this.render();
+            this.zoom = await zoom('#storyline');
         },
         renderOrientation() {
             let viewBox = '';
@@ -187,8 +186,7 @@ export default {
             }
         },
         setCampaignName() {
-            const story = this.storyRepository.current()
-            this.campaignName = story ? story.name : this.$t('local');
+            this.campaignName = this.getCampaignName();
             $('.campaign-name').text(this.campaignName);
         },
         scenarioClicked(e) {

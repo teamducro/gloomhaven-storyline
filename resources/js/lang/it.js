@@ -235,7 +235,6 @@ export default {
         "Through the Nest": "Attraverso il Nido",
         "A Map to Treasure": "A Map to Treasure",
         "Bad Business": "Bad Business",
-        "The Poison's Source": "La Fonte del Veleno",
         "Sun-Blessed": "Benedetto dal Sole",
         "Sin-Ra": "Sin-Ra",
         "Debt Collection": "Riscossione del Debito",
@@ -263,7 +262,7 @@ export default {
         2: {
             "name": "La Furia della Mercante",
             "sections": {
-                1: "Jekserah vi offre un altro lavoro, dato il successo del precedenteo. Una tribù di Inox della Foresta dei Pugnali ha saccheggiato un paio delle sue carovane dirette alla Capitale. Vi ha chiesto di punirli in modo esemplare.",
+                1: "Jekserah vi offre un altro lavoro, dato il successo del precedente. Una tribù di Inox della Foresta dei Pugnali ha saccheggiato un paio delle sue carovane dirette alla Capitale. Vi ha chiesto di punirli in modo esemplare.",
                 2: "La Tribù Inox è sgominata. Avete inferto loro una dura punizione  e nessuno minaccerà le carovane di Jekserah per un bel po'. Non state bene con voi stessi dopo aver massacrato dei genitori di fronte ai loro figli, ma Jekserah vi paga lo stesso.",
                 3: "Jekserah è scappata da Gloomhaven ed ha promesso di vendicarsi per le vostre azioni contro di lei. Non sembra sarà ancora propensa a pagarvi per svolgere le sue faccende."
             },

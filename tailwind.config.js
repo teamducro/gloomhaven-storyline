@@ -61,6 +61,7 @@ module.exports = {
                 gold: '#E2A246',
                 'light-gray': '#E0E0E0',
                 black2: {
+                    10: 'rgba(0, 0, 0, .10)',
                     25: 'rgba(0, 0, 0, .25)',
                     50: 'rgba(0, 0, 0, .50)',
                     75: 'rgba(0, 0, 0, .75)'

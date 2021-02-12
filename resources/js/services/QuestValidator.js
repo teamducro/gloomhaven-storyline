@@ -33,10 +33,10 @@ export default class QuestValidator {
             else {
                 return scenario.choice + operator;
             }
-        });
-        const c = ScenarioState.complete;
+        })
+        check = check.replace(/=c/g, '="' + ScenarioState.complete + '"');
 
-        return eval(check);
+        return Function('"use strict";return (' + check + ')')();
     }
 
     get scenarioRepository() {
