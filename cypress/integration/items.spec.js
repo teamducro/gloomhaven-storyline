@@ -64,7 +64,7 @@ describe('Items', () => {
 
         // The item is clickable
         cy.get('a').contains('Ring of Skulls').click();
-        cy.get('p').contains('Scenario #04 (Treasure #38)');
+        cy.get('h2').contains('#123');
         utilities.closeModel();
         utilities.closeModel();
 
@@ -93,7 +93,7 @@ describe('Items', () => {
 
         // The item is clickable
         cy.get('a').contains('Staff of Xorn').click();
-        cy.get('p').contains('Reward from Scenario #53');
+        cy.get('h2').contains('#114');
         utilities.closeModel();
         utilities.closeModel();
 
@@ -113,6 +113,14 @@ describe('Items', () => {
         cy.get('#items').contains('Staff of Xorn').should('not.exist');
     });
 
+    it('It opens scenario modal from item modal', () => {
+        cy.visit('/tracker?states=52_c-53_c');
+        cy.visit('/tracker/#/items');
+        cy.get('#items tbody tr:last').click();
+        cy.get('.mdc-dialog__content button').contains(53).click();
+        cy.get('.mdc-dialog__content span').contains('Reward from').should('not.exist');
+        cy.get('#scenario-title h2').contains('#53 Crypt Basement');
+    });
 });
 
 function assertItemCount(count) {

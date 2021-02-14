@@ -206,7 +206,6 @@ export default {
             this.selectedItem = item;
             await this.$nextTick();
             this.$bus.$emit('open-item', {item});
-            this.$refs['item-model'].open();
         },
         addIcons(desc) {
             collect({

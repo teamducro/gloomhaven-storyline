@@ -3,7 +3,6 @@
 </template>
 
 <script>
-import ItemTextParser from "../../services/ItemTextParser";
 import ScenarioTextParser from "../../services/ScenarioTextParser";
 import ScenarioRepository from "../../repositories/ScenarioRepository";
 
@@ -16,18 +15,31 @@ export default {
     },
     data() {
         return {
-            itemTextParser: new ItemTextParser()
+            scenarioTextParser: new ScenarioTextParser(),
+            scenarioRepository: new ScenarioRepository()
         }
     },
     methods: {
         render() {
             let output = this.text;
+            let scenarios = {};
 
-            this.itemTextParser.parse(this.text).each((item, id) => {
-                output = output.replace(item, `<a class="link" href="#" @click.prevent="$bus.$emit('open-item', {id:${id}})">${item}</a>`);
-            })
+            this.scenarioTextParser.parse(this.text).each((name, id) => {
+                const scenario = this.scenarioRepository.find(id);
+                if (scenario.isVisible()) {
+                    scenarios[id] = scenario;
+                    output = output.replace(name, `<scenario-number :scenario="scenarios[${id}]"/>`);
+                } else {
+                    output = output.replace(name, 'Hidden Scenario');
+                }
+            });
 
             return {
+                data() {
+                    return {
+                        scenarios
+                    }
+                },
                 template: `<span>${output}</span>`
             };
         }

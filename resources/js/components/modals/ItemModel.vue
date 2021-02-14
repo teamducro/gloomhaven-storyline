@@ -12,7 +12,7 @@
                         <span class="relative w-6 h-4 inline-block">
                             <span class="material-icons absolute">info_outline</span>
                         </span>
-                        {{ item.source }}
+                        <add-scenario-links :text="item.source"/>
                     </p>
                     <p v-if="item.faq">
                         <span class="relative w-6 h-4 inline-block">
@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import panzoom from "panzoom"
 import ItemRepository from "../../repositories/ItemRepository";
 
 export default {
@@ -42,6 +41,9 @@ export default {
             const item = data.item || this.itemRepository.find(data.id);
             this.open(item);
         });
+        this.$bus.$on('open-scenario', (data) => {
+            this.close();
+        });
         this.$bus.$on('close-item', () => {
             this.close();
         });
@@ -54,7 +56,7 @@ export default {
         close() {
             this.item = null;
             this.$refs['modal'].close();
-        },
+        }
     }
 }
 </script>
