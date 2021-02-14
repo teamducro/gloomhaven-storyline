@@ -38,9 +38,7 @@ export default {
     async mounted() {
         let id = parseInt(this.$route.params.id, 10);
         if (!isNaN(id)) {
-            this.$bus.$emit('open-scenario', {
-                id: id
-            });
+            this.$bus.$emit('open-scenario', {id});
         }
         if (app.isPortrait !== undefined) {
             this.isPortrait = app.isPortrait;
@@ -198,9 +196,7 @@ export default {
             this.open(id);
         },
         open(id) {
-            this.$bus.$emit('open-scenario', {
-                id: id
-            });
+            this.$bus.$emit('open-scenario', {id});
         }
     }
 }
