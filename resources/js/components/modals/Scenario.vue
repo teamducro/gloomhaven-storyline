@@ -91,7 +91,9 @@
                                     :label="'#' + id"
                                     :checked="scenario.isTreasureUnlocked(id)"
                                     @change="treasureChanged"></checkbox-with-label>
-                                <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">{{ treasure }}</span>
+                                <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
+                                    <add-item-links :text="treasure"/>
+                                </span>
                             </div>
                         </div>
                         <p class="mb-2"
@@ -256,12 +258,13 @@ import PreloadImage from "../../services/PreloadImage";
 import StoryRepository from "../../repositories/StoryRepository";
 import Cards from "../presenters/cards/Cards";
 import StorySyncer from "../../services/StorySyncer";
+import AddItemLinks from "../elements/AddItemLinks";
 
 const md5 = require('js-md5');
 const queryString = require('query-string');
 
 export default {
-    components: {Cards},
+    components: {AddItemLinks, Cards},
     data() {
         return {
             scenario: null,
@@ -373,10 +376,12 @@ export default {
             }
 
             this.scenario.unlockTreasure(id, checked);
-
+            this.scenarioRepository.processTreasureItems(this.scenario, id, checked);
             if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
                 this.$bus.$emit('scenarios-updated');
             }
+
+            this.storySyncer.store();
         },
         scenarioChosen(choice) {
             this.scenarioRepository.choose(this.scenario, choice);

@@ -93,8 +93,6 @@
                     <component v-bind:is="addIcons(value)"></component>
                 </template>
             </data-table>
-
-            <item-model v-if="selectedItem" :item="selectedItem" ref="item-model"></item-model>
         </div>
     </div>
 </template>
@@ -207,7 +205,7 @@ export default {
         async openItemModel(item) {
             this.selectedItem = item;
             await this.$nextTick();
-            this.$refs['item-model'].open();
+            this.$bus.$emit('open-item', {item});
         },
         addIcons(desc) {
             collect({

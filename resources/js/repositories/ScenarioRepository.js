@@ -3,6 +3,9 @@ import scenarios from '../scenarios.json';
 import Scenario from "../models/Scenario";
 import ScenarioValidator from "../services/ScenarioValidator";
 import {ScenarioState} from "../models/ScenarioState";
+import N2l from "../services/N2l";
+import Sheet from "../models/Sheet";
+import ItemTextParser from "../services/ItemTextParser";
 
 export default class ScenarioRepository {
     fetch() {
@@ -25,8 +28,10 @@ export default class ScenarioRepository {
 
         if (scenario.isComplete()) {
             this.processAchievements(scenario);
+            this.processRewardedItems(scenario);
         } else if (previousState === ScenarioState.complete && (scenario.isIncomplete() || scenario.isHidden())) {
             this.undoAchievements(scenario);
+            this.processRewardedItems(scenario, false);
         }
 
         if (scenario.is_side && !scenario.required_by.isEmpty()) {
@@ -116,6 +121,30 @@ export default class ScenarioRepository {
                     this.achievementRepository.remove(id);
                 }
             })
+        }
+    }
+
+    processRewardedItems(scenario, checked = true) {
+        const items = scenario.rewardItems();
+        this.processItems(items, checked);
+    }
+
+    processTreasureItems(scenario, id, checked = true) {
+        if (!scenario.treasures.has(id)) {
+            return;
+        }
+
+        let items = (new ItemTextParser).ids(scenario.treasures.get(id));
+        this.processItems(items, checked);
+    }
+
+    processItems(items, checked) {
+        if (!items.empty) {
+            let sheet = new Sheet;
+            items.each(item => {
+                sheet.itemDesigns[item] = checked;
+            });
+            sheet.store();
         }
     }
 
