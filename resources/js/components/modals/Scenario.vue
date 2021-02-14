@@ -376,10 +376,12 @@ export default {
             }
 
             this.scenario.unlockTreasure(id, checked);
-
+            this.scenarioRepository.processTreasureItems(this.scenario, id, checked);
             if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
                 this.$bus.$emit('scenarios-updated');
             }
+
+            this.storySyncer.store();
         },
         scenarioChosen(choice) {
             this.scenarioRepository.choose(this.scenario, choice);

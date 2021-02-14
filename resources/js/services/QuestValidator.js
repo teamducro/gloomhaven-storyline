@@ -21,9 +21,9 @@ export default class QuestValidator {
         }
 
         check = check.replace(/\d*'?[!=]=/gm, (value) => {
-            let id = parseInt(value.replace(/\D/g, ''));
-            let scenario = this.scenarioRepository.find(id);
-            let operator = value.slice(-2);
+            const id = parseInt(value.replace(/\D/g, ''));
+            const scenario = this.scenarioRepository.find(id);
+            const operator = value.slice(-2);
 
             // check state
             if (!value.includes("'")) {

@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import ItemTextParser from "../../services/ItemTextParser";
+
 export default {
     props: {
         text: {
@@ -19,13 +21,9 @@ export default {
             };
         },
         addItemLinks(text) {
-            if (text.includes('(Item')) {
-                let results = text.match(/(“[\w\s]+”[\w\s]+\(Item [\d]+\))/g);
-                results.forEach((item) => {
-                    const id = item.replace(/[\D+]/g, '');
-                    text = text.replace(item, `<a class="link" href="#" @click.prevent="$bus.$emit('open-item', {id:${id}})">${item}</a>`);
-                });
-            }
+            (new ItemTextParser()).parse(text).each((item, id) => {
+                text = text.replace(item, `<a class="link" href="#" @click.prevent="$bus.$emit('open-item', {id:${id}})">${item}</a>`);
+            })
 
             return text;
         }
