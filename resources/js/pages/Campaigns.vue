@@ -116,7 +116,7 @@
             </div>
         </div>
 
-        <div class="m-auto w-full max-w-3xl lg:flex">
+        <div id="add-shared-campaign-container" class="m-auto w-full max-w-3xl lg:flex">
             <div class="bg-black2-25 p-4 rounded-lg mt-8 lg:mr-4 lg:flex-1">
                 <add-shared-campaign :init-code="initCode"/>
             </div>
@@ -176,6 +176,7 @@ export default {
             loggedIn: Helpers.loggedIn(),
             paymentSuccess: false,
             initCode: '',
+            receivedACampaignCode: false,
             url: process.env.MIX_APP_URL,
             storyRepository: new StoryRepository
         }
@@ -186,6 +187,10 @@ export default {
     },
     mounted() {
         Helpers.removeQueryString();
+
+        if (this.receivedACampaignCode) {
+            this.scrollToForm();
+        }
     },
     destroyed() {
 
@@ -200,6 +205,13 @@ export default {
             if (typeof parsed.code !== 'undefined') {
                 this.initCode = parsed.code
             }
+
+            if (typeof parsed['received-a-campaign-code'] !== 'undefined') {
+                this.receivedACampaignCode = true;
+            }
+        },
+        scrollToForm() {
+            document.getElementById("add-shared-campaign-container").scrollIntoView();
         },
         shareCurrentStory() {
             this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
