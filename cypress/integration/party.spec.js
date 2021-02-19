@@ -82,7 +82,32 @@ describe('Party', () => {
         cy.get('.mdc-list-item__text span').contains('50').click();
         utilities.closeModel();
         cy.get('.bedge').contains('50').should('be.visible').click();
-        cy.get('.bedge').should('not.exist');
+        cy.get('.bedge').contains('50').should('not.exist');
+    });
+
+    it('It can roll back city events', () => {
+        cy.get('#city-events').parent().click();
+        cy.get('[name="city-events"]').clear().type('50');
+        cy.get('.mdc-list-item__text span').contains('50').click();
+        cy.get('[name="city-events"]').clear().type('60');
+        cy.get('.mdc-list-item__text span').contains('60').click();
+        utilities.closeModel();
+        cy.get('#city-events-bedges .bedge').contains('50').should('be.visible');
+        cy.get('#city-events-bedges .bedge').contains('60').should('be.visible');
+        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('#city-events-bedges .bedge').contains('60').should('not.exist');
+        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('#city-events-bedges .bedge').contains('50').should('not.exist');
+        utilities.closeModel();
+        
+        cy.get('#city-events-bedges .bedge').contains('10').click();
+        cy.get('#city-events-bedges .bedge').contains('10').should('not.exist');
+        cy.get('#city-events-bedges .bedge').contains('20').click();
+        cy.get('#city-events-bedges .bedge').contains('20').should('not.exist');
+        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('#city-events-bedges .bedge').contains('20').should('be.visible');
+        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('#city-events-bedges .bedge').contains('10').should('be.visible');
     });
 
     it('It stores the party sheet', () => {
