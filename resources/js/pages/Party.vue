@@ -85,6 +85,7 @@
                     :label="$t('Add city events')"
                     :items.sync="sheet.city"
                     @change="store"
+                    ref="city-events"
                 ></selectable-list>
                 <selectable-list
                     id="road-events"
@@ -92,6 +93,7 @@
                     :label="$t('Add road events')"
                     :items.sync="sheet.road"
                     @change="store"
+                    ref="road-events"
                 ></selectable-list>
             </div>
 
@@ -230,6 +232,8 @@ export default {
             this.$refs['reputation-rollback'].reset();
             this.$refs['donations-rollback'].reset();
             this.$refs['prosperity-rollback'].reset();
+            this.$refs['city-events'].reset();
+            this.$refs['road-events'].reset();
 
             this.loading = false;
         },

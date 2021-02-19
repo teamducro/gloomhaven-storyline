@@ -1,6 +1,11 @@
 <template>
     <div class="w-full mt-8">
-        <h2>{{ title }}</h2>
+        <div class="mb-2 flex items-center">
+            <h2>{{ title }}</h2>
+            <rollback v-show="rollbackLoaded" ref="rollback"
+                      :value="items"
+                      @change="rolledBack"></rollback>
+        </div>
         <autocomplete
             :label="label"
             :id="id || slugify(title)"
@@ -15,7 +20,7 @@
                 </div>
             </template>
         </autocomplete>
-        <div :key="key">
+        <div :key="key" :id="(id || slugify(title)) + '-bedges'">
             <bedge v-for="(checked, item) in items" v-if="checked" :key="item"
                    class="mr-2 mt-2 white cursor-pointer rounded-md"
                    @click="(e) => {deselect(item)}">
@@ -39,12 +44,33 @@ export default {
     },
     data() {
         return {
-            key: 0
+            // itemData: {},
+            key: 0,
+            rollbackLoaded: false
         }
     },
+    // watch: {
+    //     items: {
+    //         handler(items) {
+    //             console.log('items changed');
+    //         },
+    //         deep: true,
+    //         immediate: true
+    //     }
+    // },
     methods: {
+        reset() {
+            this.$refs['rollback'].reset();
+            this.rollbackLoaded = true;
+        },
+        rolledBack(items) {
+            this.$emit('update:items', items);
+            this.$emit('change', items);
+            this.rerender();
+        },
         select(item, select = true) {
             this.$set(this.items, item, select);
+            this.$refs['rollback'].set(this.items);
             this.rerender();
             this.$emit('update:items', this.items);
             this.$emit('change', this.items);
