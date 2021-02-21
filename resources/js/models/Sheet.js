@@ -7,6 +7,8 @@ class Sheet {
         this.donations = data.donations;
         this.prosperityIndex = data.prosperityIndex;
         this.itemDesigns = {...data.itemDesigns};
+        this.city = {...data.city};
+        this.road = {...data.road};
         this.notes = data.notes;
         this.unlocks = {...data.unlocks};
         this.characters = {...data.characters};
@@ -15,10 +17,12 @@ class Sheet {
             reputation: 'reputation',
             donations: 'donations',
             prosperityIndex: 'prosperityIndex',
-            itemDesigns: 'itemDesigns',
+            itemDesigns: {'itemDesigns': {}},
+            city: {'city': {}},
+            road: {'road': {}},
             notes: 'notes',
-            unlocks: 'unlocks',
-            characters: 'characters'
+            unlocks: {'unlocks': {}},
+            characters: {'characters': {}}
         };
 
         this.read();
@@ -33,6 +37,8 @@ class Sheet {
         this.donations = 0;
         this.prosperityIndex = 1;
         this.itemDesigns = {};
+        this.city = {};
+        this.road = {};
         this.notes = '';
         this.unlocks = {};
         this.characters = {
@@ -51,6 +57,18 @@ class Sheet {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
         }
 
+        for (let i = 1; i <= 90; i++) {
+            this.city[i] = this.city[i] || false;
+        }
+
+        for (let i = 1; i <= 69; i++) {
+            this.road[i] = this.road[i] || false;
+        }
+
+        // FC
+        this.road[82] = this.road[82] || false;
+        this.road[83] = this.road[83] || false;
+
         for (let i = 0; i < 8; i++) {
             this.unlocks[i] = this.unlocks[i] || false;
         }
@@ -68,6 +86,8 @@ class Sheet {
     valuesToStore() {
         let values = this.parentValuesToStore();
         values.itemDesigns = collect({...this.itemDesigns}).filter(v => v).all();
+        values.city = collect({...this.city}).filter(v => v).all();
+        values.road = collect({...this.road}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();
         values.characters = collect({...this.characters}).filter(v => v).all();
         return values;

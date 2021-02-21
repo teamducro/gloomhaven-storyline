@@ -1,5 +1,6 @@
 import Model from "./Model";
 import moment from "moment";
+import Snapshot from "./Snapshot";
 
 const md5 = require('js-md5');
 
@@ -19,6 +20,7 @@ class Story extends Model {
         this.updated_at;
         this.token;
         this.campaignId;
+        this.snapshots;
 
         this.map(properties);
         this.cast();
@@ -26,8 +28,13 @@ class Story extends Model {
 
     cast() {
         this.expires_at = moment(this.expires_at);
-        this.updated_at = moment(this.updated_at);
+        this.updated_at = this.updated_at
+            ? moment(this.updated_at)
+            : moment().subtract(10, 'years');
         this.campaignId = '_' + this.id;
+        this.snapshots = collect(this.snapshots).map((snapshot) => {
+            return new Snapshot(snapshot);
+        })
     }
 
     hasChanged() {

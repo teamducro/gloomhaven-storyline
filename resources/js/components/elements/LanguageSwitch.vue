@@ -10,7 +10,7 @@
         </div>
 
         <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class" style="min-width: 240px">
-            <div class="mx-1 px-1" @click="help">
+            <div class="mx-1 px-1 mt-4" @click="help">
                 <router-link to="/info" class="flex items-center cursor-pointer">
                     <i class="material-icons mdc-list-item__graphic i-text-white2-60"
                        aria-hidden="true">language</i>
@@ -41,11 +41,15 @@ export default {
             current: null,
             languages: {
                 'en': 'English',
-                'fr': 'Français'
+                'fr': 'Français',
+                'it': 'Italiano',
+                // 'de': 'Deutsche'
             },
             flags: {
                 'en': '🇺🇸',
-                'fr': '🇫🇷'
+                'fr': '🇫🇷',
+                'it': '🇮🇹',
+                'de': '🇩🇪'
             }
         }
     },

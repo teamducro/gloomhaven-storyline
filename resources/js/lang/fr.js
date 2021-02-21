@@ -56,7 +56,7 @@ export default {
     'Remove': 'Supprimer',
     'Clear all': 'Effacer tout',
     'reset': {
-        'text': 'Voulez-vous vraiment supprimer toutes les données de scénario ?'
+        'text': 'Voulez-vous vraiment supprimer toutes les données de scénario?'
     },
     'share': {
         'title': 'Partagez Gloomhaven Storyline',

@@ -61,6 +61,7 @@ module.exports = {
                 gold: '#E2A246',
                 'light-gray': '#E0E0E0',
                 black2: {
+                    10: 'rgba(0, 0, 0, .10)',
                     25: 'rgba(0, 0, 0, .25)',
                     50: 'rgba(0, 0, 0, .50)',
                     75: 'rgba(0, 0, 0, .75)'
@@ -74,12 +75,16 @@ module.exports = {
                 },
                 red: {
                     ...colors.red,
-                    50: 'rgba(255, 100, 100, .50)'
+                    50: 'rgba(255, 100, 100, .5)'
                 },
                 green: {
                     ...colors.green,
-                    50: 'rgba(100, 255, 100, .50)'
-                }
+                    50: 'rgba(100, 255, 100, .5)'
+                },
+                yellow: {
+                    ...colors.yellow,
+                    50: 'rgba(236, 202, 75, .5)'
+                },
             },
             boxShadow: {
                 'slight-white': '0px 0px 20px 5px rgba(255,255,255,0.1)',

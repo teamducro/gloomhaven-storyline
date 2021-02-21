@@ -354,7 +354,7 @@
             "id": 10,
             "name": "Plane of Elemental Power",
             "coordinates": {
-                "name": "L-2",
+                "name": "C-7",
                 "x": 31.177,
                 "y": 23.56
             },
@@ -429,6 +429,7 @@
             "linked_from": [
                 9
             ],
+            "coupled": 12,
             "quests": [
                 10
             ],
@@ -485,6 +486,7 @@
             "linked_from": [
                 9
             ],
+            "coupled": 11,
             "quests": [
                 11
             ],
@@ -1424,6 +1426,7 @@
             "linked_from": [
                 22
             ],
+            "coupled": 36,
             "quests": [
                 28
             ],
@@ -1486,6 +1489,7 @@
             "linked_from": [
                 22
             ],
+            "coupled": 35,
             "quests": [
                 28
             ],

@@ -214,6 +214,7 @@ export default {
                     'Filters': false,
                     'All modern devices': false,
                     'Multi language': false,
+                    'Automatic snapshots': true,
                     'Support the project': true,
                 },
                 frosthaven: {
@@ -225,6 +226,7 @@ export default {
                     'Filters': false,
                     'All modern devices': false,
                     'Multi language': false,
+                    'Automatic snapshots': true,
                     'Support the project': true,
                 }
             }

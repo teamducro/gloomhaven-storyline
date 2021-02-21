@@ -18,6 +18,7 @@ import EchoService from "./services/EchoService";
 import VueScrollTo from "vue-scrollto";
 import StorySyncer from "./services/StorySyncer";
 import OfflineChecker from "./services/OfflineChecker";
+import ItemRepository from "./repositories/ItemRepository";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -73,6 +74,7 @@ window.app = new Vue({
             scenarios: null,
             quests: null,
             achievements: null,
+            items: null,
             webpSupported: true,
             hasMouse: false,
             isPortrait: true,
@@ -84,6 +86,7 @@ window.app = new Vue({
             scenarioRepository: new ScenarioRepository,
             questRepository: new QuestRepository,
             achievementRepository: new AchievementRepository,
+            itemRepository: new ItemRepository,
             userRepository: new UserRepository,
             storyRepository: new StoryRepository,
             echo: new EchoService,
@@ -120,7 +123,8 @@ window.app = new Vue({
         async campaignsChanged(shouldSync = true) {
             await Promise.all([
                 this.fetchAchievements(),
-                this.fetchScenarios(shouldSync)
+                this.fetchScenarios(shouldSync),
+                this.fetchItems(),
             ]);
 
             this.$bus.$emit('campaigns-changed');
@@ -140,6 +144,13 @@ window.app = new Vue({
             await this.$nextTick();
             this.scenarioValidator.validate(shouldSync);
             this.$bus.$emit('scenarios-updated');
+
+            return true;
+        },
+        async fetchItems() {
+            this.items = this.itemRepository.fetch();
+            await this.$nextTick();
+            this.$bus.$emit('items-updated');
 
             return true;
         },

@@ -1,4 +1,4 @@
-<template>
+<template xmlns="http://www.w3.org/1999/html">
     <div>
         <button type="button" @click="toggle"
                 class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 i-bg-black2-50 rounded-full">
@@ -84,6 +84,15 @@
                             </router-link>
                         </li>
 
+                        <li @click="toggle">
+                            <router-link to="/items" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic transform rotate-180"
+                                   aria-hidden="true">style</i>
+                                <span class="mdc-list-item__text">{{ $t('Items') }}</span>
+                            </router-link>
+                        </li>
+
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
                     </ul>
                 </div>
@@ -97,12 +106,12 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a class="mdc-list-item" @click="$bus.$emit('open-reset-modal')">
-                                <i class="material-icons mdc-list-item__graphic"
-                                   aria-hidden="true">delete_forever</i>
-                                <span class="mdc-list-item__text">{{ $t('Reset') }}</span>
-                            </a>
+                        <li @click="toggle">
+                            <router-link to="/settings" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+                                <span class="mdc-list-item__text">{{ $t('Settings') }}</span>
+                            </router-link>
                         </li>
 
                         <li @click="toggle">
@@ -115,20 +124,12 @@
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                        <li v-if="!loggedIn" class="py-4 w-full" @click="toggle">
-                            <router-link to="/campaigns" class="flex justify-center -ml-6">
-                                <button
-                                    class="relative text-light-gray py-1 pl-3 pr-8 border border-light-gray border-solid rounded-full"
-                                    type="submit">
-                                    {{ $t('Buy me a Beer') }}
-                                    <span
-                                        class="absolute top-0 right-0 -mt-2 -mr-6 bg-black text-2xl h-12 w-12 leading-12 border-2 border-light-gray border-solid rounded-full">🍻</span>
-                                </button>
-                            </router-link>
+                        <li v-if="!loggedIn" class="py-4 pl-4 w-full" @click="toggle">
+                            <donate></donate>
                         </li>
                     </ul>
                 </div>
-                <div class="lgh:absolute lgh:bottom-0 m-2" style="width: calc(100% - 1em);">
+                <div class="m-2" style="width: calc(100% - 1em);">
                     <language-switch @help="toggle"></language-switch>
                 </div>
             </div>

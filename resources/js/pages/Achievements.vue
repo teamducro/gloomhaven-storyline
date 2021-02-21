@@ -4,11 +4,14 @@
 
             <div class="fixed right-0 top-0 mt-1 z-5">
                 <dropdown ref="achievement-to-add-dropdown" align="right"
+                          @open="dropDownClose = true"
+                          @close="dropDownClose = false"
                           @opened="achievementToAddOpened"
                           @closed="achievementToAddClosed">
                     <template v-slot:trigger>
                         <button type="button"
-                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 i-bg-black2-50 rounded-full">
+                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 i-bg-black2-50 rounded-full transform transition-transform"
+                                :class="{'rotate-45': dropDownClose}">
                             add
                         </button>
                     </template>
@@ -100,6 +103,7 @@ export default {
             filter: null,
             achievementQuery: '',
             achievementsToAdd: collect(),
+            dropDownClose: false,
             achievementRepository: new AchievementRepository()
         }
     },

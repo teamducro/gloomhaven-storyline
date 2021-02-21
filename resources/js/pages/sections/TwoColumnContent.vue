@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-wrap" :class="{'sm:flex-row-reverse': reverse}">
-        <div class="w-5/6 sm:w-1/2 p-6">
+        <div class="w-full sm:w-1/2 p-4 sm:p-6">
             <div class="flex items-center mb-4">
                 <slot name="title"></slot>
             </div>

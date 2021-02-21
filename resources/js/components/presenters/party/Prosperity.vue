@@ -15,7 +15,10 @@
 </template>
 
 <script>
+import SheetCalculations from "../../../services/SheetCalculations";
+
 export default {
+    mixins: [SheetCalculations],
     props: {
         prosperityIndex: {
             type: Number,
@@ -28,17 +31,7 @@ export default {
     },
     data() {
         return {
-            breaks: collect({
-                1: 1,
-                5: 2,
-                10: 3,
-                16: 4,
-                23: 5,
-                31: 6,
-                40: 7,
-                51: 8,
-                65: 9
-            }),
+            breaks: this.prosperityBreaks(),
             currentProsperity: 1,
             checked: {}
         }
@@ -46,13 +39,13 @@ export default {
     mounted() {
         this.currentProsperity = this.prosperityIndex;
         this.updateChecked();
-        this.calculateProsperity();
+        this.updateProsperity();
     },
     watch: {
         prosperityIndex: function (currentProsperity) {
             this.currentProsperity = currentProsperity;
             this.updateChecked();
-            this.calculateProsperity();
+            this.updateProsperity();
         }
     },
     methods: {
@@ -70,13 +63,10 @@ export default {
             this.currentProsperity = p;
             this.$emit('update:prosperityIndex', this.currentProsperity);
             this.$emit('change', this.currentProsperity);
-            this.calculateProsperity();
+            this.updateProsperity();
         },
-        calculateProsperity() {
-            let prosperity = this.breaks
-                .filter((prosperity, index) => this.currentProsperity >= index)
-                .last();
-            this.$emit('update:prosperity', prosperity);
+        updateProsperity() {
+            this.$emit('update:prosperity', this.calculateProsperity(this.currentProsperity));
         }
     }
 }
