@@ -485,6 +485,11 @@
             "type": "Party"
         },
         {
+            "id": "PBF",
+            "name": "Beauty in Freedom",
+            "type": "Party"
+        },
+        {
             "id": "GAPA",
             "name": "A Peril Averted",
             "type": "Global",

@@ -42,11 +42,11 @@
             "name": "Lore Untold",
             "pages": [
                 "fc/1/6",
-                "fc/2/4",
                 "fc/2/9",
                 "fc/2/15",
                 "fc/2/36",
-                "fc/2/38"
+                "fc/2/38",
+                "fc/2/4"
             ],
             "coordinates": {
                 "name": "A-17",
@@ -66,8 +66,8 @@
                 "PAOD"
             ],
             "rewards": [
-                "“Curseward Armor” (Item 155)",
-                "2 “Throwing Axes” (Item 161)"
+                "10 gold each",
+                "Add City Events 88, 89 and 90 to the deck"
             ]
         },
         {
@@ -623,8 +623,8 @@
                 101
             ],
             "treasure": {
-                "80": "Gain 1 check and add Rift Event 19 to the deck",
-                "94": "Gain 1 check and add Rift Event 20 to the deck"
+                "80": "Gain 1 ✓ and add Rift Event 19 to the deck",
+                "94": "Gain 1 ✓ and add Rift Event 20 to the deck"
             },
             "rewards": [
                 "10 experience each",
@@ -830,6 +830,25 @@
                 // svg
                 "Retire the Aesther Diviner",
                 "Add City and Road Events 83 to their respective decks"
+            ]
+        },
+        {
+            "id": 200,
+            "name": "Tower to the Stars",
+            "pages": [
+                "fc/1/26",
+                "fc/2/22"
+            ],
+            "achievements_awarded": [
+                "PBF"
+            ],
+            "treasure": {
+                "93": "“Scroll of Haste” (Item 159)"
+            },
+            "rewards": [
+                "15 gold each",
+                "1 ✓ each",
+                "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
             ]
         }
     ],
