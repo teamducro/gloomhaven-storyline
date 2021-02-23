@@ -43,7 +43,7 @@ export default {
                 'en': 'English',
                 'fr': 'Français',
                 'it': 'Italiano',
-                // 'de': 'Deutsche'
+                'de': 'Deutsche'
             },
             flags: {
                 'en': '🇺🇸',
