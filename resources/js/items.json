@@ -1,0 +1,1651 @@
+[
+    {
+        "id": 1,
+        "name": "Boots of Striding",
+        "cost": 20,
+        "count": 2,
+        "slot": "Legs",
+        "source": "Prosperity 1",
+        "spent": true,
+        "desc": "During your movement, add +2 {Move} to the movement.",
+        "faq": "Boots of Striding only add to the numerical value of an existing single movement ability. They do not give you a free movement action."
+    },
+    {
+        "id": 2,
+        "name": "Winged Shoes",
+        "cost": 20,
+        "count": 2,
+        "slot": "Legs",
+        "source": "Prosperity 1",
+        "spent": true,
+        "desc": "During your movement, add {Jump} to the movement.",
+        "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
+    },
+    {
+        "id": 3,
+        "name": "Hide Armor",
+        "cost": 10,
+        "count": 2,
+        "slot": "Body",
+        "source": "Prosperity 1",
+        "spent": true,
+        "minusOneCardsAdded": 2,
+        "useSlots": 2,
+        "desc": "On the next two sources of damage to you from attacks, gain {Shield} 1.",
+        "faq": "Hide Armor only grants the shield for the attack, not until the end of the round."
+    },
+    {
+        "id": 4,
+        "name": "Leather Armor",
+        "cost": 20,
+        "count": 2,
+        "slot": "Body",
+        "source": "Prosperity 1",
+        "spent": true,
+        "desc": "When attacked, the attacker gains Disadvantage on the attack.",
+        "faq": "The Leather Armor must be used before the enemy draws an attack modifier card."
+    },
+    {
+        "id": 5,
+        "name": "Cloak of Invisibility",
+        "cost": 20,
+        "count": 2,
+        "slot": "Body",
+        "source": "Prosperity 1",
+        "consumed": true,
+        "desc": "During your turn, gain INVISIBLE."
+    },
+    {
+        "id": 6,
+        "name": "Eagle-Eye Goggles",
+        "count": 2,
+        "cost": 30,
+        "slot": "Head",
+        "source": "Prosperity 1",
+        "spent": true,
+        "desc": "During your attack, gain Advantage on the entire Attack action."
+    },
+    {
+        "id": 7,
+        "name": "Iron Helmet",
+        "count": 2,
+        "cost": 10,
+        "slot": "Head",
+        "source": "Prosperity 1",
+        "desc": "When attacked, consider any 2x attack modifier card the enemy draws to be a +0 instead."
+    },
+    {
+        "id": 8,
+        "name": "Heater Shield",
+        "count": 2,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Prosperity 1",
+        "spent": true,
+        "desc": "When damaged by an attack, gain {Shield} 1 for the attack."
+    },
+    {
+        "id": 9,
+        "name": "Piercing Bow",
+        "count": 2,
+        "cost": 30,
+        "slot": "Two Hands",
+        "source": "Prosperity 1",
+        "consumed": true,
+        "desc": "During your ranged attack, ignore all Shield values for the entire Attack action."
+    },
+    {
+        "id": 10,
+        "name": "War Hammer",
+        "count": 2,
+        "cost": 30,
+        "slot": "Two Hands",
+        "source": "Prosperity 1",
+        "consumed": true,
+        "desc": "During your melee attack, add STUN to the entire Attack action."
+    },
+    {
+        "id": 11,
+        "name": "Poison Dagger",
+        "count": 2,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Prosperity 1",
+        "spent": true,
+        "desc": "During your melee attack, add POISON to a single attack."
+    },
+    {
+        "id": 12,
+        "name": "Minor Healing Potion",
+        "count": 4,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "Prosperity 1",
+        "consumed": true,
+        "desc": "During your turn, perform a \"{Heal} 3, self\" action."
+    },
+    {
+        "id": 13,
+        "name": "Minor Stamina Potion",
+        "count": 4,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "Prosperity 1",
+        "consumed": true,
+        "desc": "During your turn, {Recover} up to two of your discarded cards.",
+        "faq": "[Errata] The item should allow you to recover only one discarded card. This is change in an upcoming expansion but may be used for the base game."
+    },
+    {
+        "id": 14,
+        "name": "Minor Power Potion",
+        "count": 4,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "Prosperity 1",
+        "consumed": true,
+        "desc": "During your attack, add +1 {Attack} to your entire Attack action."
+    },
+    {
+        "id": 15,
+        "name": "Boots of Speed",
+        "count": 2,
+        "cost": 30,
+        "slot": "Legs",
+        "source": "Prosperity 2",
+        "spent": true,
+        "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 10."
+    },
+    {
+        "id": 16,
+        "name": "Cloak of Pockets",
+        "count": 2,
+        "cost": 20,
+        "slot": "Body",
+        "source": "Prosperity 2",
+        "desc": "You can carry two additional small items."
+    },
+    {
+        "id": 17,
+        "name": "Empowering Talisman",
+        "count": 2,
+        "cost": 45,
+        "slot": "Head",
+        "source": "Prosperity 2",
+        "consumed": true,
+        "desc": "During your turn, {Refresh} one of your consumed small items."
+    },
+    {
+        "id": 18,
+        "name": "Battle-Axe",
+        "count": 2,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Prosperity 2",
+        "consumed": true,
+        "desc": "During your single-target melee attack action, turn the attack into the following: {multi_attack.cone_0_1}"
+    },
+    {
+        "id": 19,
+        "name": "Weighted Net",
+        "count": 2,
+        "cost": 20,
+        "slot": "Two Hands",
+        "source": "Prosperity 2",
+        "spent": true,
+        "desc": "During your ranged attack, add IMMOBILIZE to a single attack."
+    },
+    {
+        "id": 20,
+        "name": "Minor Mana Potion",
+        "count": 4,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "Prosperity 2",
+        "consumed": true,
+        "desc": "During your turn, create any element. {any}"
+    },
+    {
+        "id": 21,
+        "name": "Stun Powder",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
+        "source": "Prosperity 2",
+        "consumed": true,
+        "desc": "During your attack, add STUN to a single attack."
+    },
+    {
+        "id": 22,
+        "name": "Heavy Greaves",
+        "count": 2,
+        "cost": 20,
+        "slot": "Legs",
+        "source": "Prosperity 3",
+        "minusOneCardsAdded": 1,
+        "desc": "You are immune to all forced movement caused by enemies or scenario effects."
+    },
+    {
+        "id": 23,
+        "name": "Chainmail",
+        "count": 2,
+        "cost": 20,
+        "slot": "Body",
+        "source": "Prosperity 3",
+        "minusOneCardsAdded": 3,
+        "spent": true,
+        "desc": "On the next three sources of damage to you from attacks, gain {Shield} 1.",
+        "faq": "Chainmail only grants the shield for the attack, not until the end of the round."
+    },
+    {
+        "id": 24,
+        "name": "Amulet of Life",
+        "count": 2,
+        "cost": 20,
+        "slot": "Head",
+        "source": "Prosperity 3",
+        "spent": true,
+        "desc": "During your turn, {Heal} 1 damage."
+    },
+    {
+        "id": 25,
+        "name": "Jagged Sword",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Prosperity 3",
+        "spent": true,
+        "desc": "During your melee attack, add WOUND to a single attack."
+    },
+    {
+        "id": 26,
+        "name": "Long Spear",
+        "count": 2,
+        "cost": 30,
+        "slot": "Two Hands",
+        "source": "Prosperity 3",
+        "spent": true,
+        "desc": "Turn a single-target melee attack into the following: {multi_attack.line_0_1_1}"
+    },
+    {
+        "id": 27,
+        "name": "Major Healing Potion",
+        "count": 4,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Prosperity 3",
+        "consumed": true,
+        "desc": "During your turn, perform a \"{Heal} 5, self\" action."
+    },
+    {
+        "id": 28,
+        "name": "Moon Earring",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
+        "source": "Prosperity 3",
+        "consumed": true,
+        "desc": "During your turn, {Refresh} all of your spent items."
+    },
+    {
+        "id": 29,
+        "name": "Comfortable Shoes",
+        "count": 2,
+        "cost": 30,
+        "slot": "Legs",
+        "source": "Prosperity 4",
+        "desc": "Whenever you use the default bottom of an ability card, perform a {Move} 3 action instead of a {Move} 2 action."
+    },
+    {
+        "id": 30,
+        "name": "Studded Leather",
+        "count": 2,
+        "cost": 30,
+        "slot": "Body",
+        "source": "Prosperity 4",
+        "spent": true,
+        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {Shield} 1 for the attack."
+    },
+    {
+        "id": 31,
+        "name": "Hawk Helm",
+        "count": 2,
+        "cost": 20,
+        "slot": "Head",
+        "source": "Prosperity 4",
+        "spent": true,
+        "desc": "During your ranged attack, add +1 {Range} to your entire Attack action."
+    },
+    {
+        "id": 32,
+        "name": "Tower Shield",
+        "count": 2,
+        "cost": 40,
+        "slot": "One Hand",
+        "source": "Prosperity 4",
+        "spent": true,
+        "desc": "When damaged by an attack, gain {Shield} 2 for the attack."
+    },
+    {
+        "id": 33,
+        "name": "Volatile Bomb",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Prosperity 4",
+        "consumed": true,
+        "desc": "During your single-target ranged attack action, turn the attack into the following: {multi_attack.cone_1_1}"
+    },
+    {
+        "id": 34,
+        "name": "Major Stamina Potion",
+        "count": 4,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Prosperity 4",
+        "consumed": true,
+        "desc": "During your turn, {Recover} up to three of your discarded cards.",
+        "faq": "[Errata] The item should allow you to recover only two discarded cards. This is change in an upcoming expansion but may be used in the base game."
+    },
+    {
+        "id": 35,
+        "name": "Falcon Figurine",
+        "count": 2,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Prosperity 4\nScenario #98 (Treasure #79)",
+        "consumed": true,
+        "summon": {
+            "hp": 2,
+            "move": 3,
+            "attack": 2,
+            "range": 0
+        },
+        "desc": "Summon Jade Falcon ({Flying})",
+        "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+    },
+    {
+        "id": 36,
+        "name": "Boots of Dashing",
+        "count": 2,
+        "cost": 40,
+        "slot": "Legs",
+        "source": "Prosperity 5",
+        "spent": true,
+        "desc": "During your movement, add +3 {Move} to the movement."
+    },
+    {
+        "id": 37,
+        "name": "Robes of Evocation",
+        "count": 2,
+        "cost": 40,
+        "slot": "Body",
+        "source": "Prosperity 5",
+        "spent": true,
+        "desc": "During your attack, {anyX} to add +1 {Attack} to the entire Attack action."
+    },
+    {
+        "id": 38,
+        "name": "Heavy Basinet",
+        "count": 2,
+        "cost": 30,
+        "slot": "Head",
+        "source": "Prosperity 5",
+        "minusOneCardsAdded": 2,
+        "desc": "You are immune to STUN and MUDDLE."
+    },
+    {
+        "id": 39,
+        "name": "Hooked Chain",
+        "count": 2,
+        "cost": 40,
+        "slot": "Two Hands",
+        "source": "Prosperity 5",
+        "spent": true,
+        "desc": "During your ranged attack, add PULL 2 to the entire Attack action."
+    },
+    {
+        "id": 40,
+        "name": "Versatile Dagger",
+        "count": 2,
+        "cost": 25,
+        "slot": "One Hand",
+        "source": "Prosperity 5",
+        "desc": "Whenever you use the default top of an ability card, perform an {Attack} 3 action instead of an {Attack} 2 action."
+    },
+    {
+        "id": 41,
+        "name": "Major Power Potion",
+        "count": 4,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Prosperity 5\nScenario #105 (Treasure #83)",
+        "consumed": true,
+        "desc": "During your attack, add +2 {Attack} to your entire Attack action."
+    },
+    {
+        "id": 42,
+        "name": "Ring of Haste",
+        "count": 2,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Prosperity 5",
+        "consumed": true,
+        "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of the card."
+    },
+    {
+        "id": 43,
+        "name": "Boots of Quickness",
+        "count": 2,
+        "cost": 75,
+        "slot": "Legs",
+        "source": "Prosperity 6",
+        "spent": true,
+        "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 20."
+    },
+    {
+        "id": 44,
+        "name": "Splintmail",
+        "count": 2,
+        "cost": 35,
+        "slot": "Body",
+        "source": "Prosperity 6",
+        "minusOneCardsAdded": 4,
+        "desc": "On the next four sources of damage to you from attacks, gain {Shield} 1."
+    },
+    {
+        "id": 45,
+        "name": "Pendant of Dark Pacts",
+        "count": 2,
+        "cost": 75,
+        "slot": "Head",
+        "source": "Prosperity 6",
+        "consumed": true,
+        "desc": "During your turn, {Refresh} two of your consumed small items. Gain CURSE.",
+        "faq": "The perk that ignores item effects does not prevent you from being cursed."
+    },
+    {
+        "id": 46,
+        "name": "Spiked Shield",
+        "count": 2,
+        "cost": 40,
+        "slot": "One Hand",
+        "source": "Prosperity 6",
+        "spent": true,
+        "desc": "When damaged by an attack, gain {Shield} 1 and Retaliate 2 for the attack."
+    },
+    {
+        "id": 47,
+        "name": "Reaping Scythe",
+        "count": 2,
+        "cost": 40,
+        "slot": "Two Hands",
+        "source": "Prosperity 6",
+        "consumed": true,
+        "desc": "During your single-target melee attack action, turn the attack into the following:  {multi_attack.cleave_0_1}"
+    },
+    {
+        "id": 48,
+        "name": "Major Mana Potion",
+        "count": 4,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Prosperity 6\nReward from Scenario #104",
+        "consumed": true,
+        "desc": "During your turn, create any two elements. {any} {any}"
+    },
+    {
+        "id": 49,
+        "name": "Sun Earring",
+        "count": 2,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Prosperity 6",
+        "consumed": true,
+        "desc": "During your turn, {Refresh} all of your spent items and {Heal} 3 damage."
+    },
+    {
+        "id": 50,
+        "name": "Steel Sabatons",
+        "count": 2,
+        "cost": 60,
+        "slot": "Legs",
+        "source": "Prosperity 7",
+        "minusOneCardsAdded": 2,
+        "desc": "If you move 1 or fewer hexes on your turn, gain {Shield} 1 for the round."
+    },
+    {
+        "id": 51,
+        "name": "Shadow Armor",
+        "count": 2,
+        "cost": 30,
+        "slot": "Body",
+        "source": "Prosperity 7",
+        "consumed": true,
+        "desc": "When you are damaged by an attack, suffer no damage instead."
+    },
+    {
+        "id": 52,
+        "name": "Protective Charm",
+        "count": 2,
+        "cost": 60,
+        "slot": "Head",
+        "source": "Prosperity 7\nReward from Scenario #109",
+        "desc": "You are immune to POISON and WOUND."
+    },
+    {
+        "id": 53,
+        "name": "Black Knife",
+        "count": 2,
+        "cost": 25,
+        "slot": "One Hand",
+        "source": "Prosperity 7",
+        "spent": true,
+        "desc": "During your melee attack, add CURSE to a single attack."
+    },
+    {
+        "id": 54,
+        "name": "Staff of Eminence",
+        "count": 2,
+        "cost": 60,
+        "slot": "Two Hands",
+        "source": "Prosperity 7",
+        "spent": true,
+        "desc": "During your ranged attack, {anyX} to add +1 {Attack} to the entire Attack action."
+    },
+    {
+        "id": 55,
+        "name": "Super Healing Potion",
+        "count": 4,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Prosperity 7",
+        "consumed": true,
+        "desc": "During your turn, perform a \"{Heal} 7, self\" action."
+    },
+    {
+        "id": 56,
+        "name": "Ring of Brutality",
+        "count": 2,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Prosperity 7",
+        "consumed": true,
+        "desc": "At the end of your turn, play one card from your hand and immediately perform the top action of the card."
+    },
+    {
+        "id": 57,
+        "name": "Serene Sandals",
+        "count": 2,
+        "cost": 75,
+        "slot": "Legs",
+        "source": "Prosperity 8",
+        "desc": "Whenever you use the default bottom of an ability card perform a {Move} 4 action instead of a {Move} 2 action."
+    },
+    {
+        "id": 58,
+        "name": "Cloak of Phasing",
+        "count": 2,
+        "cost": 75,
+        "slot": "Body",
+        "source": "Prosperity 8",
+        "desc": "Gain {Flying}. While occupying an obstacle hex, you are considered Invisible and cannot attack"
+    },
+    {
+        "id": 59,
+        "name": "Telescopic Lens",
+        "count": 2,
+        "cost": 50,
+        "slot": "Head",
+        "source": "Prosperity 8\nOption from Scenario 100",
+        "spent": true,
+        "desc": "During your ranged attack, add +2 {Range} to your entire Attack action"
+    },
+    {
+        "id": 60,
+        "name": "Unstable Explosives",
+        "count": 2,
+        "cost": 45,
+        "slot": "One Hand",
+        "source": "Prosperity 8",
+        "consumed": true,
+        "desc": "Turn a single target ranged attack into the following: {multi_attack.cube_2_2}. All allies in the attack area suffer 3 damage."
+    },
+    {
+        "id": 61,
+        "name": "Wall Shield",
+        "count": 2,
+        "cost": 60,
+        "slot": "Two Hands",
+        "source": "Prosperity 8",
+        "spent": true,
+        "desc": "When damaged by an attack, gain {Shield} 4 for the attack."
+    },
+    {
+        "id": 62,
+        "name": "Doom Powder",
+        "count": 2,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Prosperity 8",
+        "consumed": true,
+        "desc": "During your attack, add STUN, POISON, and CURSE to a single attack."
+    },
+    {
+        "id": 63,
+        "name": "Lucky Eye",
+        "count": 2,
+        "cost": 60,
+        "slot": "Small Item",
+        "source": "Prosperity 8",
+        "consumed": true,
+        "desc": "During your turn, STRENGTHEN yourself and all adjacent allies."
+    },
+    {
+        "id": 64,
+        "name": "Boots of Sprinting",
+        "count": 2,
+        "cost": 75,
+        "slot": "Legs",
+        "source": "Prosperity 9",
+        "spent": true,
+        "desc": "During your movement, add +4 {Move} to the movement."
+    },
+    {
+        "id": 65,
+        "name": "Platemail",
+        "count": 2,
+        "cost": 50,
+        "slot": "Body",
+        "source": "Prosperity 9",
+        "spent": true,
+        "minusOneCardsAdded": 5,
+        "useSlots": 5,
+        "desc": "On the next five sources of damage to you from attacks, gain {Shield} 1."
+    },
+    {
+        "id": 66,
+        "name": "Mask of Terror",
+        "count": 2,
+        "cost": 50,
+        "slot": "Head",
+        "source": "Prosperity 9\nScenario #110 (Treasure #84)",
+        "desc": "During your melee attack, add PUSH 1."
+    },
+    {
+        "id": 67,
+        "name": "Balanced Blade",
+        "count": 2,
+        "cost": 60,
+        "slot": "One Hand",
+        "source": "Prosperity 9",
+        "desc": "Whenever you use the default top of an ability card, perform an {Attack} 4 instead of an {Attack} 2 action."
+    },
+    {
+        "id": 68,
+        "name": "Halberd",
+        "count": 2,
+        "cost": 60,
+        "slot": "Two Hands",
+        "source": "Prosperity 9\nScenario #111 (Treasure #92)\nSection 132 -> g106\"Strangler's Park\" in book",
+        "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
+    },
+    {
+        "id": 69,
+        "name": "Star Earring",
+        "count": 2,
+        "cost": 70,
+        "slot": "Small Item",
+        "source": "Prosperity 9",
+        "desc": "During your turn, {Refresh} all of your spent items, {Heal} 3 damage, and {Recover} up to two of your discarded cards."
+    },
+    {
+        "id": 70,
+        "name": "Second Chance Ring",
+        "count": 2,
+        "cost": 75,
+        "slot": "Small Item",
+        "source": "Prosperity 9\nFC Challenge Scenario, Rift Card 12 (Treasure #89)\nSection 103 -> 84\"Gateway to the Firmament\" in book",
+        "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
+    },
+    {
+        "id": 71,
+        "name": "Boots of Levitation",
+        "count": 2,
+        "cost": 50,
+        "slot": "Legs",
+        "source": "Random Item",
+        "desc": "Gain {Flying}"
+    },
+    {
+        "id": 72,
+        "name": "Shoes of Happiness",
+        "count": 2,
+        "cost": 50,
+        "slot": "Legs",
+        "source": "Random Item",
+        "desc": "If you move 6 or more hexes on your turn, gain {exp1}."
+    },
+    {
+        "id": 73,
+        "name": "Blinking Cape",
+        "count": 2,
+        "cost": 50,
+        "slot": "Body",
+        "source": "Random Item",
+        "consumed": true,
+        "desc": "During your turn, perform a \"{Move} 4, {Jump}\" action"
+    },
+    {
+        "id": 74,
+        "name": "Swordedge Armor",
+        "count": 2,
+        "cost": 40,
+        "slot": "Body",
+        "source": "Random Item",
+        "spent": true,
+        "minusOneCardsAdded": 4,
+        "desc": "On the next three sources of damage from attacks targeting you, gain {Shield} 1, {Retaliate} 1"
+    },
+    {
+        "id": 75,
+        "name": "Circlet of Elements",
+        "count": 2,
+        "cost": 25,
+        "slot": "Head",
+        "source": "Random Item",
+        "spent": true,
+        "desc": "During your turn, {anyX} to create any element. {any}"
+    },
+    {
+        "id": 76,
+        "name": "Chain Hood",
+        "count": 2,
+        "cost": 40,
+        "slot": "Head",
+        "source": "Random Item",
+        "minusOneCardsAdded": 1,
+        "desc": "While you are adjacent to three or more monsters, gain {Shield} 1"
+    },
+    {
+        "id": 77,
+        "name": "Frigid Blade",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "desc": "During your melee attack, {iceX} to add +2 {Attack} to a single attack."
+    },
+    {
+        "id": 78,
+        "name": "Storm Blade",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "desc": "During your melee attack, {windX} to add +2 {Attack} to a single attack."
+    },
+    {
+        "id": 79,
+        "name": "Inferno Blade",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "desc": "During your melee attack, {fireX} to add +2 {Attack} to a single attack."
+    },
+    {
+        "id": 80,
+        "name": "Tremor Blade",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "desc": "During your melee attack, {earthX} to add +2 {Attack} to a single attack."
+    },
+    {
+        "id": 81,
+        "name": "Brilliant Blade",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "desc": "During your melee attack, {lightX} to add +2 {Attack} to a single attack."
+    },
+    {
+        "id": 82,
+        "name": "Night Blade",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "desc": "During your melee attack, {darkX} to add +2 {Attack} to a single attack."
+    },
+    {
+        "id": 83,
+        "name": "Wand of Frost",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "spent": true,
+        "desc": "During your turn, create Ice. {ice}"
+    },
+    {
+        "id": 84,
+        "name": "Wand of Storms",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "spent": true,
+        "desc": "During your turn, create Wind. {wind}"
+    },
+    {
+        "id": 85,
+        "name": "Wand of Infernos",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "spent": true,
+        "desc": "During your turn, create Fire. {fire}"
+    },
+    {
+        "id": 86,
+        "name": "Wand of Tremors",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "spent": true,
+        "desc": "During your turn, create Earth. {earth}"
+    },
+    {
+        "id": 87,
+        "name": "Wand of Brilliance",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "spent": true,
+        "desc": "During your turn, create Light. {light}"
+    },
+    {
+        "id": 88,
+        "name": "Wand of Darkness",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Random Item",
+        "spent": true,
+        "desc": "During your turn, create Dark. {dark}"
+    },
+    {
+        "id": 89,
+        "name": "Minor Cure Potion",
+        "count": 2,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "Random Item",
+        "consumed": true,
+        "desc": "During your turn, remove one negative condition on yourself. This can be used while you have STUN."
+    },
+    {
+        "id": 90,
+        "name": "Major Cure Potion",
+        "count": 2,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Random Item\nScenario #102 (Treasure #77)",
+        "consumed": true,
+        "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have STUN."
+    },
+    {
+        "id": 91,
+        "name": "Steel Ring",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
+        "source": "Random Item",
+        "consumed": true,
+        "desc": "When damaged by an attack targeting you, gain {Shield} 4 for the attack."
+    },
+    {
+        "id": 92,
+        "name": "Dampening Ring",
+        "count": 2,
+        "cost": 25,
+        "slot": "Small Item",
+        "source": "Random Item",
+        "consumed": true,
+        "desc": "Before an enemy would consume an element, consume that element instead for no effect"
+    },
+    {
+        "id": 93,
+        "name": "Scroll of Power",
+        "count": 2,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Random Item",
+        "consumed": true,
+        "desc": "During an ally's attack, add +1 {Attack} to their entire attack action"
+    },
+    {
+        "id": 94,
+        "name": "Scroll of Healing",
+        "count": 2,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Random Item",
+        "consumed": true,
+        "desc": "During your turn, perform a \"{Heal} 3, {Range} 5\" action"
+    },
+    {
+        "id": 95,
+        "name": "Scroll of Stamina",
+        "count": 2,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Random Item",
+        "consumed": true,
+        "desc": "During your turn, an ally within {Range} 5 may {Recover} up to two of their discarded cards"
+    },
+    {
+        "id": 96,
+        "name": "Rocket Boots",
+        "count": 2,
+        "cost": 80,
+        "slot": "Legs",
+        "source": "Scenario #66 (Treasure #36)",
+        "spent": true,
+        "desc": "During your movement, add +3 {Move} and {Jump} to a single movement"
+    },
+    {
+        "id": 97,
+        "name": "Endurance Footwraps",
+        "count": 1,
+        "cost": 40,
+        "slot": "Legs",
+        "source": "Scenario #38 (Treasure #29)",
+        "desc": "If you move 4 or more hexes on your turn, perform a \"\"{Heal} 1, Self\"\" action."
+    },
+    {
+        "id": 98,
+        "name": "Drakescale Boots",
+        "count": 1,
+        "cost": 50,
+        "slot": "Legs",
+        "source": "Scenario #43 (Treasure #35)",
+        "desc": "You are unaffected by difficult and hazardous terrain."
+    },
+    {
+        "id": 99,
+        "name": "Magma Waders",
+        "count": 1,
+        "cost": 50,
+        "slot": "Legs",
+        "source": "Scenario #63 (Treasure #12)",
+        "desc": "Ignore the damaging effects of hazardous terrain and perform a \"\"{Heal} 2, Self\"\" action on any turn in which you have entered a hazardous terrain hex."
+    },
+    {
+        "id": 100,
+        "name": "Robes of Summoning",
+        "count": 1,
+        "cost": 40,
+        "slot": "Body",
+        "source": "Scenario #31 (Treasure #69)",
+        "spent": true,
+        "desc": "During your turn, perform a \"{Heal} 2, target any summoned ally\" action."
+    },
+    {
+        "id": 101,
+        "name": "Second Skin",
+        "count": 1,
+        "cost": 30,
+        "slot": "Body",
+        "source": "Scenario #06 (Treasure #50)",
+        "desc": "Remove two {modifier_minus_one} from your attack modifier deck."
+    },
+    {
+        "id": 102,
+        "name": "Sacrificial Robes",
+        "count": 1,
+        "cost": 50,
+        "slot": "Body",
+        "source": "City Event 40",
+        "spent": true,
+        "desc": "During your ranged attack, suffer 3 damage to add +1 {Attack} to the entire Attack action."
+    },
+    {
+        "id": 103,
+        "name": "Drakescale Armor",
+        "count": 1,
+        "cost": 50,
+        "slot": "Body",
+        "source": "Scenario #34 (Treasure #23)",
+        "desc": "You are immune to POISON and WOUND."
+    },
+    {
+        "id": 104,
+        "name": "Steam Armor",
+        "count": 1,
+        "cost": 50,
+        "slot": "Body",
+        "source": "Scenario #40 (Treasure #47)",
+        "consumed": true,
+        "desc": "On the next five sources of damage from attacks targeting you, gain {Shield} 1."
+    },
+    {
+        "id": 105,
+        "name": "Flea-Bitten Shawl",
+        "count": 1,
+        "cost": 10,
+        "slot": "Body",
+        "source": "City Event 30",
+        "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
+        "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
+    },
+    {
+        "id": 106,
+        "name": "Necklace of Teeth",
+        "count": 1,
+        "cost": 40,
+        "slot": "Head",
+        "source": "Road Event 05",
+        "desc": "Any time you kill an enemy during your turn, perform a \"{Heal} 1, Self\" action."
+    },
+    {
+        "id": 107,
+        "name": "Horned Helm",
+        "count": 2,
+        "cost": 30,
+        "slot": "Head",
+        "source": "Scenario #03 (Treasure #65)",
+        "desc": "After moving 4 or more hexes on your turn, add +1 {Attack} to your next melee attack this turn.",
+        "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
+    },
+    {
+        "id": 108,
+        "name": "Drakescale Helm",
+        "count": 1,
+        "cost": 50,
+        "slot": "Head",
+        "source": "Scenario #25 (Treasure #58)",
+        "desc": "Whenever you gain MUDDLE, gain STRENGTHEN instead."
+    },
+    {
+        "id": 109,
+        "name": "Thief's Hood",
+        "count": 1,
+        "cost": 20,
+        "slot": "Head",
+        "source": "City Event 62",
+        "consumed": true,
+        "desc": "During your \"Loot 1\" ability, perform a \"Loot 2\" ability instead."
+    },
+    {
+        "id": 110,
+        "name": "Helm of the Mountain",
+        "count": 1,
+        "cost": 50,
+        "slot": "Head",
+        "source": "Scenario #82 (Treasure #62)",
+        "desc": "When attacked, if {earth} is Strong, Immobilize the attacker."
+    },
+    {
+        "id": 111,
+        "name": "Wave Crest",
+        "count": 1,
+        "cost": 50,
+        "slot": "Head",
+        "source": "Scenario #64 (Treasure #09)",
+        "desc": "When attacked, if {ice} is Strong, perform a \"PUSH 2\" action targeting the attacker."
+    },
+    {
+        "id": 112,
+        "name": "Ancient Drill",
+        "count": 2,
+        "cost": 30,
+        "slot": "Two Hands",
+        "source": "Reward From Scenario #65\nOption from Scenario 100",
+        "consumed": true,
+        "desc": "During your melee attack, add +2 {Attack} and PIERCE 2 to the entire Attack action"
+    },
+    {
+        "id": 113,
+        "name": "Skullbane Axe",
+        "count": 1,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Reward From Scenario #11\nReward From Scenario #12",
+        "spent": true,
+        "desc": "During your melee attack targeting a Living Corpse, Living Spirit, or Living Bones, add +5 Attack to a single attack."
+    },
+    {
+        "id": 114,
+        "name": "Staff of Xorn",
+        "count": 1,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Reward from Scenario #53",
+        "consumed": true,
+        "desc": "During your ranged attack, add POISON and MUDDLE to the entire Attack action"
+    },
+    {
+        "id": 115,
+        "name": "Mountain Hammer",
+        "count": 1,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Scenario #82 (Treasure #62)",
+        "consumed": true,
+        "summon": {
+            "hp": 4,
+            "move": 1,
+            "attack": 3,
+            "range": 0
+        },
+        "desc": "Summon Warrior Spirit",
+        "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+    },
+    {
+        "id": 116,
+        "name": "Fueled Falchion",
+        "count": 2,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Scenario #23 (Treasure #72)",
+        "consumed": true,
+        "desc": "During your single-target melee attack, the target and all enemies adjacent to the target suffer 1 damage"
+    },
+    {
+        "id": 117,
+        "name": "Bloody Axe",
+        "count": 2,
+        "cost": 40,
+        "slot": "One Hand",
+        "source": "City Event 53\nRoad Event 53",
+        "spent": true,
+        "desc": "During your melee attack, suffer 2 damage to add +1 {Attack} to the entire Attack action."
+    },
+    {
+        "id": 118,
+        "name": "Staff of Elements",
+        "count": 2,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "City Event 57",
+        "spent": true,
+        "desc": "During your turn, create any element. {any}"
+    },
+    {
+        "id": 119,
+        "name": "Skull of Hatred",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Reward From Scenario #95",
+        "consumed": true,
+        "desc": "During your turn, CURSE all adjacent enemies."
+    },
+    {
+        "id": 120,
+        "name": "Staff of Summoning",
+        "count": 1,
+        "cost": 60,
+        "slot": "Two Hands",
+        "source": "Reward From Scenario #88",
+        "spent": true,
+        "desc": "During your turn, a summoned ally within {Range} 3 performs a \"{Move} 3\" action with you controlling the action."
+    },
+    {
+        "id": 121,
+        "name": "Orb of Dawn",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Reward From Scenario #85",
+        "desc": "During your turn, {darkX} to create Light. {light}"
+    },
+    {
+        "id": 122,
+        "name": "Orb of Twilight",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Scenario #89 (Treasure #27)",
+        "desc": "During your turn, {lightX} to create Dark. {dark}"
+    },
+    {
+        "id": 123,
+        "name": "Ring of Skulls",
+        "count": 2,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Scenario #04 (Treasure #38)",
+        "consumed": true,
+        "summon": {
+            "hp": 3,
+            "move": 2,
+            "attack": 2,
+            "range": 0
+        },
+        "desc": "Summon Skeleton",
+        "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+    },
+    {
+        "id": 124,
+        "name": "Doomed Compass",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Scenario #93 (Treasure #54)",
+        "consumed": true,
+        "desc": "During your turn, force an enemy within {Range} 5 to perform a \"{Move} 2\" action with you controlling the action."
+    },
+    {
+        "id": 125,
+        "name": "Curious Gear",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "City Event 03\nOption from Scenario 100",
+        "consumed": true,
+        "desc": "During your turn, disarm all traps within {Range} 2."
+    },
+    {
+        "id": 126,
+        "name": "Remote Spider",
+        "count": 1,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "City Event 43\nOption from Scenario 100",
+        "consumed": true,
+        "desc": "During your turn, POISON all adjacent enemies."
+    },
+    {
+        "id": 127,
+        "name": "Giant Remote Spider",
+        "count": 1,
+        "cost": 60,
+        "slot": "Small Item",
+        "source": "City Event 61",
+        "consumed": true,
+        "desc": "During your turn, perform a \"Loot 1\" action."
+    },
+    {
+        "id": 128,
+        "name": "Black Censer",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Reward From Scenario #90",
+        "consumed": true,
+        "desc": "During your turn, Muddle all enemies with {Range} 2."
+    },
+    {
+        "id": 129,
+        "name": "Black Card",
+        "count": 1,
+        "cost": 75,
+        "slot": "Small Item",
+        "source": "Road Event 51",
+        "consumed": true,
+        "desc": "During your turn, place a character token on an adjacent normal or elite enemy. You add +1 {Attack} to all your attacks targeting this enemy."
+    },
+    {
+        "id": 130,
+        "name": "Helix Ring",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Scenario #81 (Treasure #68)",
+        "consumed": true,
+        "desc": "During your turn, {lightX} {darkX} to perform a \"{Heal} 25, Self\" action"
+    },
+    {
+        "id": 131,
+        "name": "Heart of the Betrayer",
+        "count": 1,
+        "cost": 60,
+        "slot": "Small Item",
+        "source": "Scenario #79 (Treasure #52)",
+        "consumed": true,
+        "desc": "When attacked by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
+        "faq": "This item cannot be used if there is no other enemy in range to be attacked."
+    },
+    {
+        "id": 132,
+        "name": "Power Core",
+        "count": 1,
+        "cost": 75,
+        "slot": "Small Item",
+        "source": "Scenario #67",
+        "consumed": true,
+        "summon": {
+            "hp": 5,
+            "move": 2,
+            "attack": 3,
+            "range": 0
+        },
+        "desc": "Summon Steel Construct.",
+        "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+    },
+    {
+        "id": 133,
+        "name": "Resonant Crystal",
+        "count": 1,
+        "cost": 20,
+        "slot": "Small Item",
+        "source": "Scenario #84",
+        "consumed": true,
+        "desc": "During your turn, destroy an adjacent obstacle."
+    },
+    {
+        "id": 134,
+        "name": "Imposing Blade",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario #01 — {BR}",
+        "desc": "Any time you kill an enemy during your turn, gain {Shield} 1 for the rest of the round.",
+        "soloItem": "BR"
+    },
+    {
+        "id": 135,
+        "name": "Focusing Ray",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario #02 — {TI}",
+        "consumed": true,
+        "desc": "During your Heal action, double the value of the Heal.",
+        "soloItem": "TI"
+    },
+    {
+        "id": 136,
+        "name": "Volatile Elixir",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Reward from Solo Scenario #03 — {SW}",
+        "consumed": true,
+        "desc": "During your ranged attack, add +2 {Attack} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made.",
+        "soloItem": "SW"
+    },
+    {
+        "id": 137,
+        "name": "Silent Stiletto",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario #04 — {SC}",
+        "desc": "Any time you perform a melee attack, add PIERCE 1 to the Attack.",
+        "soloItem": "SC"
+    },
+    {
+        "id": 138,
+        "name": "Stone Charm",
+        "count": 1,
+        "cost": 50,
+        "slot": "Head",
+        "source": "Reward from Solo Scenario #05 — {CH}",
+        "spent": true,
+        "desc": "During your action where an obstacle is created, create one additional obstacle and apply all effects of the action to it.",
+        "soloItem": "CH"
+    },
+    {
+        "id": 139,
+        "name": "Psychic Knife",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario #06 — {MT}",
+        "desc": "Any time you perform an Augment action, add +1 {Attack} to the entire action.",
+        "soloItem": "MT"
+    },
+    {
+        "id": 140,
+        "name": "Sun Shield",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario #07 — {SK}",
+        "desc": "When damaged by an attack, you may {lightX} to gain {Shield} 3 for the attack.",
+        "soloItem": "SK"
+    },
+    {
+        "id": 141,
+        "name": "Utility Belt",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Reward from Solo Scenario #09 — {QM}",
+        "consumed": true,
+        "desc": "During your turn, you or any one ally may {Refresh} one of your spent or consumed items.",
+        "faq": "This item cannot be refreshed.",
+        "soloItem": "QM"
+    },
+    {
+        "id": 142,
+        "name": "Phasing Idol",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Reward from Solo Scenario #10 — {SU}",
+        "consumed": true,
+        "desc": "When a summon you own is damaged by an attack, it suffers no damage instead.",
+        "soloItem": "SU"
+    },
+    {
+        "id": 143,
+        "name": "Smoke Elixir",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Reward from Solo Scenario #11 — {NS}",
+        "consumed": true,
+        "desc": "During your turn, gain INVISIBLE and create dark. {dark}",
+        "soloItem": "NS"
+    },
+    {
+        "id": 144,
+        "name": "Pendant of the Plague",
+        "count": 1,
+        "cost": 50,
+        "slot": "Head",
+        "source": "Reward from Solo Scenario #12 — {PH}",
+        "spent": true,
+        "desc": "During your turn, POISON and CURSE one enemy within {Range} 3.",
+        "soloItem": "PH"
+    },
+    {
+        "id": 145,
+        "name": "Mask of Death",
+        "count": 1,
+        "cost": 50,
+        "slot": "Head",
+        "source": "Reward from Solo Scenario #08 — {BE}",
+        "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {Attack} to the Attack.",
+        "soloItem": "BE"
+    },
+    {
+        "id": 146,
+        "name": "Master's Lute",
+        "count": 1,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Reward from Solo Scenario #13 — {SS}",
+        "desc": "After performing any song action, immediately perform an Attack 2 or {Move} 2 action.",
+        "soloItem": "SS"
+    },
+    {
+        "id": 147,
+        "name": "Cloak of the Hunter",
+        "count": 1,
+        "cost": 50,
+        "slot": "Body",
+        "source": "Reward from Solo Scenario #14 — {DS}",
+        "desc": "Any time you perform a {Doom} action, MUDDLE the target of the {Doom}.",
+        "soloItem": "DS"
+    },
+    {
+        "id": 148,
+        "name": "Doctor's Coat",
+        "count": 1,
+        "cost": 50,
+        "slot": "Body",
+        "source": "Reward from Solo Scenario #15 — {SB}",
+        "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal.",
+        "soloItem": "SB"
+    },
+    {
+        "id": 149,
+        "name": "Elemental Boots",
+        "count": 1,
+        "cost": 50,
+        "slot": "Legs",
+        "source": "Reward from Solo Scenario #16 — {EL}",
+        "spent": true,
+        "desc": "If you move 5 or more hexes on your turn, create any element. {any}",
+        "soloItem": "EL"
+    },
+    {
+        "id": 150,
+        "name": "Staff of Command",
+        "count": 1,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Reward from Solo Scenario #17 — {BT}",
+        "spent": true,
+        "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action.",
+        "soloItem": "BT"
+    },
+    {
+        "id": 152,
+        "name": "Ring of Duality",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #97\nSection 125 \"A locked chest\" in book",
+        "consumed": true,
+        "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
+    },
+    {
+        "id": 153,
+        "name": "Minor Antidote",
+        "count": 2,
+        "cost": 25,
+        "slot": "Small Item",
+        "source": "Reward From Scenario #99",
+        "desc": "The next three times you would gain POISON prevent the condition."
+    },
+    {
+        "id": 154,
+        "name": "Major Antidote",
+        "count": 2,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #105",
+        "desc": "The next five times you would gain POISON prevent the condition."
+    },
+    {
+        "id": 155,
+        "name": "Curseward Armor",
+        "count": 1,
+        "cost": 75,
+        "slot": "Body",
+        "source": "Reward from Scenario #108",
+        "desc": "You are immune to CURSE, even if the item is spent. On the next three sources of damage from attacks targeting you gain {Shield} 1.",
+        "spent": true,
+        "minusOneCardsAdded": 3
+    },
+    {
+        "id": 156,
+        "name": "Elemental Claymore",
+        "count": 2,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Unknown",
+        "desc": "During your melee attack, {anyX} to add +2 {Attack} to a single attack."
+    },
+    {
+        "id": 157,
+        "name": "Ancient Bow",
+        "count": 2,
+        "cost": 40,
+        "slot": "Two Hands",
+        "source": "Scenario #107 (Treasure #78)\nSection 32\"Collapsed Atrium\" in book",
+        "desc": "During your ranged attack, add +2 {Attack}, CURSE, and WOUND to a single attack.",
+        "consumed": true
+    },
+    {
+        "id": 158,
+        "name": "Rejuvenation Greaves",
+        "count": 2,
+        "cost": 35,
+        "slot": "Legs",
+        "source": "Scenario #111 (Treasure #82)",
+        "desc": "During your movement, add +2 {Move} to the movement and gain REGENERATE.",
+        "spent": true
+    },
+    {
+        "id": 159,
+        "name": "Scroll of Haste",
+        "count": 2,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Scenario #103 (Treasure #81)",
+        "desc": "During any one ally's movement, add +2 {Move} to the movement.",
+        "consumed": true
+    },
+    {
+        "id": 160,
+        "name": "Cutpurse Dagger",
+        "count": 1,
+        "cost": 45,
+        "slot": "One Hand",
+        "source": "Unknown",
+        "desc": "When you kill a monster during your turn, gain one money token.",
+        "spent": true
+    },
+    {
+        "id": 161,
+        "name": "Throwing Axe",
+        "count": 2,
+        "cost": 35,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #108",
+        "desc": "During your single-target melee attack action, add {Range} 3 to the attack.",
+        "consumed": true
+    },
+    {
+        "id": 162,
+        "name": "Rift Device",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #112\nSection 62 \"Mechanical Splendor\"in book.",
+        "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you.",
+        "consumed": true
+    },
+    {
+        "id": 163,
+        "name": "Crystal Tiara",
+        "count": 1,
+        "cost": 75,
+        "slot": "Head",
+        "source": "Reward from Scenario #110",
+        "desc": "When you peform a long or short rest, gain STRENGTHEN."
+    },
+    {
+        "id": 164,
+        "name": "Basin of Prophecy",
+        "count": 1,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Reward from Solo Scenario #18 — {DR}",
+        "desc": "When you reveal cards from any deck, reveal one additional card.",
+        "soloItem": "DR"
+    }
+]

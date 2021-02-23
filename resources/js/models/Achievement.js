@@ -1,4 +1,5 @@
 import Storable from './Storable'
+import Card from "./Card";
 
 class Achievement {
 
@@ -12,20 +13,26 @@ class Achievement {
         this.upgrades = data.upgrades || [];
         this.hidden = data.hidden || false;
         this._awarded = false;
+        this._manual_awarded = false;
         this._lost = false;
         this._count = 0;
+        this.is_manual = data.is_manual || false;
+        this.cards = collect(data.cards).map((card) => new Card(card));
 
         this.fieldsToStore = {
             "awarded": {"_awarded": this._awarded},
             "count": {"_count": this._count},
             "lost": {"_lost": this._lost}
         };
+        if (this.is_manual) {
+            this.fieldsToStore.manual_awarded = {"_manual_awarded": this._manual_awarded};
+        }
 
         this.read();
     }
 
     get name() {
-        return app.$t('achievements.' + this._name);
+        return app.$t('achievements.' + this._name.replaceAll("'", ''));
     }
 
     isGlobal() {
@@ -39,6 +46,9 @@ class Achievement {
     gain() {
         if (!this.awarded) {
             this._awarded = true;
+            if (this.upgrades.length === 0) {
+                this._manual_awarded = true;
+            }
         }
 
         if (this.count < this.upgrades.length + 1) {
@@ -61,6 +71,10 @@ class Achievement {
             this._count--;
         }
 
+        if (this.upgrades.length === 0) {
+            this._manual_awarded = false;
+        }
+
         this.store();
     }
 
@@ -81,6 +95,10 @@ class Achievement {
         return this._count;
     }
 
+    get manual_awarded() {
+        return this._manual_awarded;
+    }
+
     get displayName() {
         return this.count > 1 ? this.name + " (" + this.count + ")" : this.name;
     }
@@ -88,6 +106,10 @@ class Achievement {
     get image() {
         const file = this.count > 1 ? this.id + this.count : this.id;
         return '/img/achievements/' + file + '.png';
+    }
+
+    hasCard() {
+        return this.cards.count() > 0;
     }
 
     key() {

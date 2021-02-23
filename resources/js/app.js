@@ -18,6 +18,24 @@ import EchoService from "./services/EchoService";
 import VueScrollTo from "vue-scrollto";
 import StorySyncer from "./services/StorySyncer";
 import OfflineChecker from "./services/OfflineChecker";
+import ItemRepository from "./repositories/ItemRepository";
+import * as Sentry from "@sentry/vue";
+import {Integrations} from "@sentry/tracing";
+
+/**
+ * String.prototype.replaceAll() polyfill
+ * https://gomakethings.com/how-to-replace-a-section-of-a-string-with-another-one-with-vanilla-js/
+ * @author Chris Ferdinandi
+ * @license MIT
+ */
+if (!String.prototype.replaceAll) {
+    String.prototype.replaceAll = function (str, newStr) {
+        if (Object.prototype.toString.call(str).toLowerCase() === '[object regexp]') {
+            return this.replace(str, newStr);
+        }
+        return this.replace(new RegExp(str, 'g'), newStr);
+    };
+}
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -50,6 +68,16 @@ if (Helpers.inProduction() && process.env.MIX_GA_ID) {
     });
 }
 
+if (Helpers.inProduction() && process.env.MIX_SENTRY_DSN) {
+    Sentry.init({
+        Vue: window.Vue,
+        dsn: process.env.MIX_SENTRY_DSN,
+        integrations: [new Integrations.BrowserTracing()],
+        tracesSampleRate: 0,
+        logErrors: false
+    });
+}
+
 // Multi Language
 Vue.use(VueI18n);
 window.i18n = new VueI18n({
@@ -73,6 +101,7 @@ window.app = new Vue({
             scenarios: null,
             quests: null,
             achievements: null,
+            items: null,
             webpSupported: true,
             hasMouse: false,
             isPortrait: true,
@@ -84,6 +113,7 @@ window.app = new Vue({
             scenarioRepository: new ScenarioRepository,
             questRepository: new QuestRepository,
             achievementRepository: new AchievementRepository,
+            itemRepository: new ItemRepository,
             userRepository: new UserRepository,
             storyRepository: new StoryRepository,
             echo: new EchoService,
@@ -120,7 +150,8 @@ window.app = new Vue({
         async campaignsChanged(shouldSync = true) {
             await Promise.all([
                 this.fetchAchievements(),
-                this.fetchScenarios(shouldSync)
+                this.fetchScenarios(shouldSync),
+                this.fetchItems(),
             ]);
 
             this.$bus.$emit('campaigns-changed');
@@ -140,6 +171,13 @@ window.app = new Vue({
             await this.$nextTick();
             this.scenarioValidator.validate(shouldSync);
             this.$bus.$emit('scenarios-updated');
+
+            return true;
+        },
+        async fetchItems() {
+            this.items = this.itemRepository.fetch();
+            await this.$nextTick();
+            this.$bus.$emit('items-updated');
 
             return true;
         },

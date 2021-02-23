@@ -21,9 +21,9 @@ export default class QuestValidator {
         }
 
         check = check.replace(/\d*'?[!=]=/gm, (value) => {
-            let id = parseInt(value.replace(/\D/g, ''));
-            let scenario = this.scenarioRepository.find(id);
-            let operator = value.slice(-2);
+            const id = parseInt(value.replace(/\D/g, ''));
+            const scenario = this.scenarioRepository.find(id);
+            const operator = value.slice(-2);
 
             // check state
             if (!value.includes("'")) {
@@ -33,10 +33,10 @@ export default class QuestValidator {
             else {
                 return scenario.choice + operator;
             }
-        });
-        const c = ScenarioState.complete;
+        })
+        check = check.replace(/=c/g, '="' + ScenarioState.complete + '"');
 
-        return eval(check);
+        return Function('"use strict";return (' + check + ')')();
     }
 
     get scenarioRepository() {

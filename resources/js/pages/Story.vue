@@ -15,36 +15,35 @@ import zoom from "../services/Zoom";
 import {ScenarioState} from "../models/ScenarioState";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import tippy from 'tippy.js';
-import StoryRepository from "../repositories/StoryRepository";
+import GetCampaignName from "../services/GetCampaignName";
 
 export default {
+    mixins: [GetCampaignName],
     watch: {
         $route(to, from) {
-            this.open(parseInt(to.params.id, 10));
+            if (to.params.id) {
+                this.open(to.params.id);
+            }
         }
     },
     data() {
         return {
             scenarioRepository: new ScenarioRepository(),
-            storyRepository: new StoryRepository(),
             isPortrait: null,
             zoom: null,
             storylineKey: 1,
             campaignName: null
         }
     },
-    mounted() {
+    async mounted() {
         let id = parseInt(this.$route.params.id, 10);
         if (!isNaN(id)) {
-            this.$bus.$emit('open-scenario', {
-                id: id
-            });
+            this.$bus.$emit('open-scenario', {id});
         }
         if (app.isPortrait !== undefined) {
             this.isPortrait = app.isPortrait;
-            this.$nextTick(() => {
-                this.rerender();
-            });
+            await this.$nextTick();
+            this.rerender();
         }
 
         $('#storyline-container').on('click', '.scenario', this.scenarioClicked);
@@ -74,16 +73,15 @@ export default {
                 $('.legend .scenario').show();
             }
         },
-        rerender() {
+        async rerender() {
             if (this.zoom) {
                 this.zoom.destroy();
             }
             this.storylineKey++;
-            this.$nextTick(() => {
-                this.renderOrientation();
-                this.zoom = zoom('#storyline');
-                this.render();
-            });
+            await this.$nextTick();
+            this.renderOrientation();
+            this.render();
+            this.zoom = await zoom('#storyline');
         },
         renderOrientation() {
             let viewBox = '';
@@ -186,8 +184,7 @@ export default {
             }
         },
         setCampaignName() {
-            const story = this.storyRepository.current()
-            this.campaignName = story ? story.name : this.$t('local');
+            this.campaignName = this.getCampaignName();
             $('.campaign-name').text(this.campaignName);
         },
         scenarioClicked(e) {
@@ -199,9 +196,7 @@ export default {
             this.open(id);
         },
         open(id) {
-            this.$bus.$emit('open-scenario', {
-                id: id
-            });
+            this.$bus.$emit('open-scenario', {id});
         }
     }
 }

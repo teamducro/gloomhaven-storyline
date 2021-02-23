@@ -6,19 +6,23 @@ class Sheet {
         this.reputation = data.reputation;
         this.donations = data.donations;
         this.prosperityIndex = data.prosperityIndex;
-        this.itemDesigns = data.itemDesigns;
+        this.itemDesigns = {...data.itemDesigns};
+        this.city = {...data.city};
+        this.road = {...data.road};
         this.notes = data.notes;
-        this.unlocks = data.unlocks;
-        this.characters = data.characters;
+        this.unlocks = {...data.unlocks};
+        this.characters = {...data.characters};
 
         this.fieldsToStore = {
             reputation: 'reputation',
             donations: 'donations',
             prosperityIndex: 'prosperityIndex',
-            itemDesigns: 'itemDesigns',
+            itemDesigns: {'itemDesigns': {}},
+            city: {'city': {}},
+            road: {'road': {}},
             notes: 'notes',
-            unlocks: 'unlocks',
-            characters: 'characters'
+            unlocks: {'unlocks': {}},
+            characters: {'characters': {}}
         };
 
         this.read();
@@ -32,64 +36,65 @@ class Sheet {
         this.reputation = 0;
         this.donations = 0;
         this.prosperityIndex = 1;
-        this.itemDesigns = {
-            71: false,
-            72: false,
-            73: false,
-            74: false,
-            75: false,
-            76: false,
-            77: false,
-            78: false,
-            79: false,
-            80: false,
-            81: false,
-            82: false,
-            83: false,
-            84: false,
-            85: false,
-            86: false,
-            87: false,
-            88: false,
-            89: false,
-            90: false,
-            91: false,
-            92: false,
-            93: false,
-            94: false,
-            95: false
-        };
+        this.itemDesigns = {};
+        this.city = {};
+        this.road = {};
         this.notes = '';
-        this.unlocks = [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-        ];
-        this.characters = [
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-        ];
+        this.unlocks = {};
+        this.characters = {
+            0: true,
+            1: true,
+            2: true,
+            3: true,
+            4: true,
+            5: true,
+        };
+        for (let i = 1; i <= 30; i++) {
+            this.city[i] = true;
+            this.road[i] = true;
+        }
+        this.fillBlanks();
+    }
+
+    fillBlanks() {
+        for (let i = 71; i <= 150; i++) {
+            this.itemDesigns[i] = this.itemDesigns[i] || false;
+        }
+
+        for (let i = 1; i <= 90; i++) {
+            this.city[i] = this.city[i] || false;
+        }
+
+        for (let i = 1; i <= 69; i++) {
+            this.road[i] = this.road[i] || false;
+        }
+
+        // FC
+        this.road[82] = this.road[82] || false;
+        this.road[83] = this.road[83] || false;
+
+        for (let i = 0; i < 8; i++) {
+            this.unlocks[i] = this.unlocks[i] || false;
+        }
+
+        for (let i = 0; i < 18; i++) {
+            this.characters[i] = this.characters[i] || false;
+        }
+    }
+
+    read() {
+        this.parentRead();
+        this.fillBlanks();
+    }
+
+    valuesToStore() {
+        let values = this.parentValuesToStore();
+        values.itemDesigns = collect({...this.itemDesigns}).filter(v => v).all();
+        values.city = collect({...this.city}).filter(v => v).all();
+        values.road = collect({...this.road}).filter(v => v).all();
+        values.unlocks = collect({...this.unlocks}).filter(v => v).all();
+        values.characters = collect({...this.characters}).filter(v => v).all();
+        return values;
     }
 
     key() {
@@ -97,6 +102,10 @@ class Sheet {
     }
 }
 
-Object.assign(Sheet.prototype, Storable);
+Object.assign(Sheet.prototype, {
+    parentRead: Storable.read,
+    parentValuesToStore: Storable.valuesToStore,
+    store: Storable.store,
+});
 
 export default Sheet;

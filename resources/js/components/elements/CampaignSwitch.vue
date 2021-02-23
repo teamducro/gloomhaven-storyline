@@ -1,6 +1,9 @@
 <template>
-    <div class="campaign-switch mdc-select w-full">
-        <span class="mdc-list-item absolute i-text-xs i--mt-1 i-text-white2-60">{{ $t('Selected Campaign') }}</span>
+    <div ref="campaign-switch" class="campaign-switch mdc-select w-full"
+         :class="{'with-transparency': withTransparency}">
+        <span class="mdc-list-item absolute z-1 pointer-events-none i-text-xs i--mt-2 i-text-white2-60">
+            {{ $t('Selected Campaign') }}
+        </span>
         <div class="mdc-select__anchor w-full">
             <i class="mdc-select__dropdown-icon"></i>
             <div class="mdc-select__selected-text">
@@ -30,52 +33,58 @@
 </template>
 
 <script>
-    import {MDCSelect} from "@material/select/component";
-    import StoryRepository from "../../repositories/StoryRepository";
+import {MDCSelect} from "@material/select/component";
+import StoryRepository from "../../repositories/StoryRepository";
 
-    export default {
-        data() {
-            return {
-                stories: collect(),
-                campaignId: 'local',
-                current: 'local',
-                storyRepository: new StoryRepository
-            }
-        },
-        mounted() {
-            this.select = new MDCSelect($('.campaign-switch')[0]);
-            this.select.listen('MDCSelect:change', this.campaignSelected);
+export default {
+    props: {
+        withTransparency: {
+            type: Boolean,
+            default: true
+        }
+    },
+    data() {
+        return {
+            stories: collect(),
+            campaignId: 'local',
+            current: 'local',
+            storyRepository: new StoryRepository
+        }
+    },
+    mounted() {
+        this.select = new MDCSelect(this.$refs['campaign-switch']);
+        this.select.listen('MDCSelect:change', this.campaignSelected);
 
-            this.$bus.$on('campaigns-changed', this.applyData);
-        },
-        destroyed() {
-            if (this.select) {
-                this.select.destroy();
+        this.$bus.$on('campaigns-changed', this.applyData);
+    },
+    destroyed() {
+        if (this.select) {
+            this.select.destroy();
+        }
+        this.$bus.$off('campaigns-changed', this.applyData);
+    },
+    methods: {
+        applyData() {
+            this.campaignId = app.campaignId;
+            this.stories = app.stories;
+            const story = this.storyRepository.current()
+            if (story) {
+                this.current = story.name;
             }
-            this.$bus.$off('campaigns-changed', this.applyData);
         },
-        methods: {
-            applyData() {
-                this.campaignId = app.campaignId;
-                this.stories = app.stories;
-                const story = this.storyRepository.current()
-                if (story) {
-                    this.current = story.name;
-                }
-            },
-            campaignSelected() {
-                this.$bus.$emit('campaign-selected', this.select.value);
-            }
+        campaignSelected() {
+            this.$bus.$emit('campaign-selected', this.select.value);
         }
     }
+}
 </script>
 
 <style scoped lang="scss">
-    .campaign-switch {
-        .mdc-select__anchor {
-            &, &:before, &:after {
-                background-color: transparent !important;
-            }
+.campaign-switch.with-transparency {
+    .mdc-select__anchor {
+        &, &:before, &:after {
+            background-color: transparent !important;
         }
     }
+}
 </style>

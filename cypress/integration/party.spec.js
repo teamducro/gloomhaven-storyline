@@ -3,20 +3,22 @@ import utilities from "../utilities";
 describe('Party', () => {
 
     it('It loads the party sheet', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
+        cy.contains('Party sheet');
         cy.contains('Reputation');
         cy.contains('Shop modifier');
         cy.contains('Sanctuary');
         cy.contains('Prosperity');
         cy.contains('Prosperity Items');
-        cy.contains('Item Designs');
+        cy.contains('City Event Decks');
+        cy.contains('Road Event Decks');
         cy.contains('notes');
         cy.contains('Unlocks');
     });
 
     it('It has a reputation counter', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="reputation"]').clear().type('3{enter}');
         cy.contains('-1 Gold');
@@ -25,7 +27,7 @@ describe('Party', () => {
     });
 
     it('It can roll back reputation counter', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="reputation"]').clear().type('3{enter}');
         cy.get('h2').contains('Reputation').next().click();
@@ -33,7 +35,7 @@ describe('Party', () => {
     });
 
     it('It has a donations counter', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="donations"]').clear().type('100{enter}');
         cy.contains('1 gained prosperity');
@@ -42,7 +44,7 @@ describe('Party', () => {
     });
 
     it('It can roll back donations counter', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="donations"]').clear().type('3{enter}');
         cy.get('h2').contains('Sanctuary').next().click();
@@ -50,7 +52,7 @@ describe('Party', () => {
     });
 
     it('It has prosperity checkboxes', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('span').contains('015–021').prev().find('input').should('not.be.checked');
 
@@ -63,7 +65,7 @@ describe('Party', () => {
     });
 
     it('It can roll back prosperity checkboxes', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
 
         cy.get('input#p-5').click();
         cy.get('h2').contains('Prosperity').next().click();
@@ -74,11 +76,48 @@ describe('Party', () => {
         cy.get('span').contains('015–021').prev().find('input').should('not.be.checked');
     });
 
+    it('It checks city events', () => {
+        cy.get('#city-events').parent().click();
+        cy.get('[name="city-events"]').type('50');
+        cy.get('.mdc-list-item__text span').contains('50').click();
+        utilities.closeModel();
+        cy.get('.bedge').contains('50').should('be.visible').click();
+        cy.get('.bedge').contains('50').should('not.exist');
+    });
+
+    it('It can roll back city events', () => {
+        cy.get('#city-events').parent().click();
+        cy.get('[name="city-events"]').clear().type('50');
+        cy.get('.mdc-list-item__text span').contains('50').click();
+        cy.get('[name="city-events"]').clear().type('60');
+        cy.get('.mdc-list-item__text span').contains('60').click();
+        utilities.closeModel();
+        cy.get('#city-events-bedges .bedge').contains('50').should('be.visible');
+        cy.get('#city-events-bedges .bedge').contains('60').should('be.visible');
+        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('#city-events-bedges .bedge').contains('60').should('not.exist');
+        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('#city-events-bedges .bedge').contains('50').should('not.exist');
+        utilities.closeModel();
+        
+        cy.get('#city-events-bedges .bedge').contains('10').click();
+        cy.get('#city-events-bedges .bedge').contains('10').should('not.exist');
+        cy.get('#city-events-bedges .bedge').contains('20').click();
+        cy.get('#city-events-bedges .bedge').contains('20').should('not.exist');
+        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('#city-events-bedges .bedge').contains('20').should('be.visible');
+        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('#city-events-bedges .bedge').contains('10').should('be.visible');
+    });
+
     it('It stores the party sheet', () => {
-        cy.visit('/#/party');
+        cy.visit('/tracker/#/party');
         cy.get('input[aria-labelledby="reputation"]').clear().type('20{enter}');
         cy.get('input[aria-labelledby="donations"]').clear().type('1000{enter}');
         cy.get('input#p-65').click();
+        cy.get('#city-events').parent().click();
+        cy.get('[name="city-events"]').type('50');
+        cy.get('.mdc-list-item__text span').contains('50').click();
 
         cy.get('#notes').type('Foo Bar');
         utilities.closeModel();
@@ -91,6 +130,7 @@ describe('Party', () => {
         cy.get('input#p-65').should('be.checked');
         cy.get('span').contains('064–070').prev().find('input').should('be.checked');
         cy.get('#notes').should('have.value', 'Foo Bar');
+        cy.get('.bedge').contains('50').should('be.visible');
     });
 
 });

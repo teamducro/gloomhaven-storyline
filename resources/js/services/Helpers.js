@@ -15,5 +15,8 @@ export default {
     },
     isMac() {
         return window.navigator.platform.match("Mac");
+    },
+    sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
 }

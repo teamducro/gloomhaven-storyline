@@ -11,9 +11,12 @@
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Support') }}</h2>
             <p>Would you like to contribute by translating to your native language?</p>
             <p>For help or feedback,
-                <email-me>please email me</email-me>
+                <email-me class="link">please email me</email-me>
                 .
             </p>
+
+            <h2 class="mt-8 mb-4 text-lg">{{ $t('Donate') }}</h2>
+            <donate></donate>
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Open source') }}</h2>
             <a href="https://github.com/teamducro/gloomhaven-storyline">
@@ -22,6 +25,8 @@
                     <span class="mdc-button__label">GitHub</span>
                 </button>
             </a>
+
+            <change-log></change-log>
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Credits') }}</h2>
             <p class="mb-2">{{ $t('credits.thanks') }}</p>
@@ -66,12 +71,39 @@
                        href="https://boardgamegeek.com/thread/1880969/online-tracker-campaign-party-and-characters">
                         Online map & campaign tracker</a>
                 </li>
+                <li class="py-1">
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://purplekingdomgames.com">
+                        Purple Kingdom Games development</a>:
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://vgb.purplekingdomgames.com">
+                        {{ $t('Virtual Gloomhaven Board') }}</a>
+                </li>
+                <li class="py-1">
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://www.reddit.com/user/nicomatic/">
+                        Nicomatic</a>:
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://heisch.github.io/gloomhaven-item-db/">
+                        {{ $t('Gloomhaven Item DB') }}</a>
+                </li>
+            </ul>
+            <p>{{ $t('Translations') }}</p>
+            <ul class="list-disc ml-4">
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('French') }}:</span>
+                    Aelentyr & Steve Rodrigue
+                </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Italian') }}:</span>
+                    Emiliano Caruselli & O.T.Nad
+                </li>
             </ul>
 
             <p class="my-4">
-                {{ $t('credits.license') }} BY-NC-SA 4.0
-                (<a class="link"
-                    href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>)
+                {{ $t('credits.license') }}
+                <a class="link" target="_blank" rel="noreferrer"
+                   href="https://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0</a>.
             </p>
         </div>
     </div>

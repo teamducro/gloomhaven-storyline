@@ -91,7 +91,9 @@
                                     :label="'#' + id"
                                     :checked="scenario.isTreasureUnlocked(id)"
                                     @change="treasureChanged"></checkbox-with-label>
-                                <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">{{ treasure }}</span>
+                                <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
+                                    <add-item-links :text="treasure"/>
+                                </span>
                             </div>
                         </div>
                         <p class="mb-2"
@@ -156,53 +158,52 @@
                                 </transition-expand>
                             </template>
 
-                            <template v-if="scenario.hasCard()"
-                                      v-for="(card, index) in scenario.cards">
-                                <button class="mdc-button normal-case -ml-2"
-                                        @click="toggleQuest(questCount + index)">
-                                    <span class="mdc-button__label font-title text-white">{{ card.title }}</span>
-                                    <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
-                                       :class="{'rotate-0': questExpand[questCount + index], 'rotate-180': !questExpand[questCount + index]}">
-                                        keyboard_arrow_up
-                                    </i>
-                                </button>
-                                <transition-expand>
-                                    <div v-if="questExpand[questCount + index]">
-                                        <webp v-for="(image, index) in card.images"
-                                              :key="card.id + '-' + index"
-                                              :src="image"
-                                              class="mb-4"
-                                              :alt="card.title"/>
-                                    </div>
-                                </transition-expand>
-                            </template>
+                            <cards v-if="scenario.hasCard()" :cards="scenario.cards"></cards>
                         </div>
 
-                        <div class="mb-6 hidden">
-                            <div class="mdc-text-field mdc-text-field--textarea w-full"
-                                 ref="notes">
-                                <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
-                                          class="mdc-text-field__input" rows="4" cols="40"></textarea>
-                                <div class="mdc-notched-outline">
-                                    <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="notes" class="mdc-floating-label">{{ $t('Notes') }}</label>
-                                    </div>
-                                    <div class="mdc-notched-outline__trailing"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center mb-6">
-                            <button class="mdc-button mdc-button--raised" @click="openPages()">
-                                <i class="material-icons mdc-button__icon">menu_book</i>
-                                <span class="mdc-button__label">{{ $t('Pages') }}</span>
+                        <div class="mb-3" v-if="showNotes">
+                            <button class="mdc-button normal-case -ml-2"
+                                    @click="notesIsOpen = !notesIsOpen">
+                                <span class="mdc-button__label font-title text-white">{{ $t('Notes') }}</span>
+                                <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
+                                   :class="{'rotate-0': notesIsOpen, 'rotate-180': !notesIsOpen}">
+                                    keyboard_arrow_up
+                                </i>
                             </button>
-                            <div class="ml-auto w-20"
-                                 :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
-                                <webp :src="scenario.image()"
-                                      :animate="true"
-                                      :alt="scenario.name"/>
+
+                            <transition-expand
+                                :duration="{ enter: 500, leave: 800 }"
+                                @after-enter="notesEntered"
+                                @leave="notesLeft">
+                                <div v-if="notesIsOpen" ref="notes"
+                                     class="mdc-text-field mdc-text-field--textarea w-full">
+                                    <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
+                                              class="mdc-text-field__input" rows="4" cols="40"></textarea>
+                                    <div class="mdc-notched-outline">
+                                        <div class="mdc-notched-outline__leading"></div>
+                                        <div class="mdc-notched-outline__notch">
+                                            <label for="notes" class="mdc-floating-label">{{ $t('Notes') }}</label>
+                                        </div>
+                                        <div class="mdc-notched-outline__trailing"></div>
+                                    </div>
+                                </div>
+                            </transition-expand>
+                        </div>
+
+                        <div class="relative h-8 mb-6">
+                            <div class="flex absolute left-0 top-0 origin-left transform scale-75"
+                                 style="width: 300px">
+                                <button class="mdc-button mdc-button--raised mr-2"
+                                        @click="openPages()">
+                                    <i class="material-icons mdc-button__icon">menu_book</i>
+                                    <span class="mdc-button__label">{{ $t('Pages') }}</span>
+                                </button>
+                                <a :href="virtualBoardUrl" target="_blank">
+                                    <button class="mdc-button mdc-button--raised">
+                                        <i class="material-icons mdc-button__icon transform rotate-180">style</i>
+                                        <span class="mdc-button__label">{{ $t('Virtual Board') }}</span>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </template>
@@ -219,6 +220,12 @@
                 <footer class="mdc-dialog__actions flex justify-between px-5">
                     <div class="space-x-2">
                         <scenario-number :scenario="scenario" v-for="scenario in prevScenarios" :key="scenario.id"/>
+                    </div>
+                    <div class="mx-auto w-20"
+                         :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
+                        <webp :src="scenario.image()"
+                              :animate="true"
+                              :alt="scenario.name"/>
                     </div>
                     <div class="space-x-2">
                         <scenario-number :scenario="scenario" v-for="scenario in nextScenarios" :key="scenario.id"/>
@@ -248,20 +255,33 @@ import ChoiceService from "../../services/ChoiceService";
 import {MDCTextField} from "@material/textfield/component";
 import {ScenarioState} from "../../models/ScenarioState";
 import PreloadImage from "../../services/PreloadImage";
+import StoryRepository from "../../repositories/StoryRepository";
+import Cards from "../presenters/cards/Cards";
+import StorySyncer from "../../services/StorySyncer";
+import AddItemLinks from "../elements/AddItemLinks";
+
+const md5 = require('js-md5');
+const queryString = require('query-string');
 
 export default {
+    components: {AddItemLinks, Cards},
     data() {
         return {
             scenario: null,
-            notes: null,
             stateKey: 1,
             questExpand: [],
             treasuresVisible: false,
             rollback: null,
+            virtualBoardUrl: null,
+            notes: null,
+            showNotes: false,
+            notesIsOpen: false,
             scenarioRepository: new ScenarioRepository(),
             achievementRepository: new AchievementRepository(),
             choiceService: new ChoiceService(),
             preloadImage: new PreloadImage(),
+            storyRepository: new StoryRepository(),
+            storySyncer: new StorySyncer(),
         }
     },
     mounted() {
@@ -333,8 +353,20 @@ export default {
                 this.$bus.$emit('scenarios-updated');
             }
         },
+        notesEntered() {
+            if (!this.notes && this.$refs['notes']) {
+                this.notes = new MDCTextField(this.$refs['notes']);
+            }
+        },
+        notesLeft() {
+            if (this.notes) {
+                this.notes.destroy();
+                this.notes = null;
+            }
+        },
         noteChanged() {
             this.scenario.store();
+            this.storySyncer.store();
         },
         treasureChanged(id, checked) {
             if (checked && this.prompt) {
@@ -344,10 +376,12 @@ export default {
             }
 
             this.scenario.unlockTreasure(id, checked);
-
+            this.scenarioRepository.processTreasureItems(this.scenario, id, checked);
             if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
                 this.$bus.$emit('scenarios-updated');
             }
+
+            this.storySyncer.store();
         },
         scenarioChosen(choice) {
             this.scenarioRepository.choose(this.scenario, choice);
@@ -378,10 +412,20 @@ export default {
         requiredBy(achievement) {
             return this.scenarioRepository.requiredBy(achievement);
         },
-        open(id) {
-            this.scenario = this.scenarioRepository.find(id);
+        async open(id) {
+            await this.makeSureScenariosAreLoaded();
+            const scenario = this.scenarioRepository.find(id);
+
+            // Can't open hidden scenario's for now.
+            if (scenario.isHidden() && !scenario.is_side) {
+                return;
+            }
+
+            this.scenario = scenario;
+            this.setVirtualBoardUrl();
             this.treasuresVisible = false;
             this.rollback = null;
+            this.notesEntered();
 
             let questCount = this.questCount + this.scenario.cards.count();
             this.questExpand = new Array(questCount);
@@ -395,18 +439,18 @@ export default {
 
             this.rerenderStateSelection();
 
-            this.$nextTick(() => {
-                this.$refs['modal'].open();
-                this.$nextTick(() => {
-                    this.$refs['pages'].preload();
-                    const notes = this.$refs['notes'];
-                    if (notes) {
-                        new MDCTextField(notes);
-                    }
-                });
-            });
+            await this.$nextTick();
+            this.$refs['modal'].open();
+            await this.$nextTick();
+
+            this.$refs['pages'].preload()
+
+            // Don't display scenario notes for unregistered users
+            // This may result in unstable storyline links
+            this.showNotes = app.campaignId !== 'local';
         },
         close() {
+            this.notesLeft();
             this.$refs['modal'].close();
         },
         openAchievement(id) {
@@ -417,6 +461,32 @@ export default {
         },
         processPrompt() {
             return this.choiceService.getPromptConfig(this.scenario);
+        },
+        setVirtualBoardUrl() {
+            const current = this.storyRepository.current();
+
+            let query = {
+                scenario: this.scenario.id,
+                lockScenario: 1,
+            };
+            if (current) {
+                query.lockRoomCode = 1;
+                query.seed = parseInt(md5(current.campaignId + this.scenario.id).substr(0, 7), 16);
+            }
+
+            this.virtualBoardUrl = process.env.MIX_VIRTUAL_BOARD_URL + '?' + queryString.stringify(query);
+        },
+        makeSureScenariosAreLoaded() {
+            return new Promise((resolve) => {
+                const waitForScenarios = () => {
+                    if (app.scenarios !== null) {
+                        resolve();
+                    } else {
+                        setTimeout(waitForScenarios, 100);
+                    }
+                }
+                waitForScenarios();
+            });
         }
     }
 }

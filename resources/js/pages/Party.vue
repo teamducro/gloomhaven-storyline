@@ -2,9 +2,15 @@
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
         <div id="info" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <h1 class="mb-4 text-xl">{{ $t('Party sheet') }} {{ campaignName }}</h1>
+            <tabs :tabs="[$t('Party sheet'), $t('Items')]"
+                  :icons="['assignment', 'style']"
+                  :urls="['party', 'items']"
+                  :active="$t('Party sheet')"
+            >
+            </tabs>
+            <h1 class="hidden sm:inline text-xl">{{ campaignName }}</h1>
 
-            <div class="flex flex-col sm:flex-row">
+            <div class="mt-4 flex flex-col sm:flex-row">
                 <div class="mb-8 sm:mb-0 sm:mr-4">
                     <div class="mb-2 flex items-center">
                         <h2>{{ $t('Reputation') }}</h2>
@@ -52,30 +58,43 @@
                             @change="store"></prosperity>
             </div>
 
-            <div class="w-full mt-8 flex flex-col sm:flex-row">
-                <div class="flex-1 mb-8 sm:mb-0 sm:mr-4">
-                    <h2>{{ $t('Prosperity Items') }}</h2>
-                    <ul class="flex flex-row flex-wrap -mx-2">
-                        <li v-for="(items, index) in prosperityItems" class="flex items-center">
-                            <checkbox group="items"
-                                      :disabled="true"
-                                      :checked="prosperity > index"
-                                      @change="store"></checkbox>
-                            <span class="w-16 font-title">{{ items }}</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex-1">
-                    <h2>{{ $t('Item Designs') }}</h2>
-                    <ul class="flex flex-row flex-wrap -mx-2">
-                        <li v-for="(checked, item) in sheet.itemDesigns" class="flex items-center">
-                            <checkbox group="items"
-                                      :checked="checked"
-                                      @change="(id, isChecked) => {sheet.itemDesigns[item] = isChecked; store()}"></checkbox>
-                            <span class="w-8 font-title">{{ item }}</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="w-full mt-8">
+                <h2>{{ $t('Prosperity Items') }}</h2>
+                <ul class="flex flex-row flex-wrap -mx-2">
+                    <li v-for="(items, index) in prosperityItems" class="flex items-center">
+                        <checkbox group="items"
+                                  :disabled="true"
+                                  :checked="prosperity > index"
+                                  @change="store"></checkbox>
+                        <span class="w-16 font-title">{{ items }}</span>
+                    </li>
+                </ul>
+            </div>
+
+            <router-link to="/items">
+                <button class="mdc-button origin-left transform scale-75 mdc-button--raised">
+                    <i class="material-icons mdc-button__icon transform rotate-180">style</i>
+                    <span class="mdc-button__label">{{ $t('Items') }}</span>
+                </button>
+            </router-link>
+
+            <div class="lg:flex">
+                <selectable-list
+                    id="city-events"
+                    :title="$t('City Event Decks')"
+                    :label="$t('Add city events')"
+                    :items.sync="sheet.city"
+                    @change="store"
+                    ref="city-events"
+                ></selectable-list>
+                <selectable-list
+                    id="road-events"
+                    :title="$t('Road Event Decks')"
+                    :label="$t('Add road events')"
+                    :items.sync="sheet.road"
+                    @change="store"
+                    ref="road-events"
+                ></selectable-list>
             </div>
 
             <div class="w-full mt-8">
@@ -108,7 +127,7 @@
                                   :disabled="character < 6"
                                   @change="(id, isChecked) => {sheet.characters[character] = isChecked; store()}"></checkbox>
                         <span v-if="character < 17" class="w-8 font-title">
-                            <character class="w-6 -mb-2 inline-block" :character="character+1"/>
+                            <character class="w-6 -mb-2 inline-block" :character="parseInt(character)+1"/>
                         </span>
                         <span v-else class="font-title text-lg">X</span>
                     </li>
@@ -120,11 +139,15 @@
 </template>
 
 <script>
-import StoryRepository from "../repositories/StoryRepository";
 import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
+import SelectableList from "../components/presenters/party/SelectableList";
+import GetCampaignName from "../services/GetCampaignName";
+import SheetCalculations from "../services/SheetCalculations";
 
 export default {
+    mixins: [GetCampaignName, SheetCalculations],
+    components: {SelectableList},
     data() {
         return {
             sheet: null,
@@ -176,24 +199,21 @@ export default {
                     reward: 'Open the Town Records Book'
                 }
             ],
-            storyRepository: new StoryRepository(),
-            storySyncer: new StorySyncer,
             campaignName: null,
-            loading: true
+            loading: true,
+            storySyncer: new StorySyncer,
         }
     },
     watch: {
         'sheet.reputation': function () {
-            this.calculateShop();
+            this.shop = this.calculateShop(this.sheet.reputation);
         },
         'sheet.donations': function () {
-            this.calculateDonationProsperity();
+            this.donationProsperity = this.calculateDonationProsperity(this.sheet.donations);
         }
     },
     mounted() {
         this.render();
-        this.calculateShop();
-        this.calculateDonationProsperity();
 
         this.$bus.$on('campaigns-changed', this.render);
     },
@@ -205,13 +225,15 @@ export default {
             this.loading = true;
 
             this.sheet = new Sheet;
-            this.setCampaignName();
+            this.campaignName = this.getCampaignName();
 
             await this.$nextTick();
 
             this.$refs['reputation-rollback'].reset();
             this.$refs['donations-rollback'].reset();
             this.$refs['prosperity-rollback'].reset();
+            this.$refs['city-events'].reset();
+            this.$refs['road-events'].reset();
 
             this.loading = false;
         },
@@ -223,35 +245,11 @@ export default {
             this.sheet.store();
             this.storySyncer.store();
         },
-        calculateShop() {
-            let reputation = [-18, -14, -10, -6, -2, 3, 7, 11, 15, 19];
-            let shop = 5;
-            reputation.forEach((r) => {
-                if (this.sheet.reputation >= r) {
-                    shop--;
-                }
-            });
-            this.shop = shop;
-        },
-        calculateDonationProsperity() {
-            let rates = [100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, 900, 1000];
-            let donationProsperity = 0;
-            rates.forEach((rate) => {
-                if (this.sheet.donations >= rate) {
-                    donationProsperity++;
-                }
-            });
-            this.donationProsperity = donationProsperity;
-        },
         renderHtml(html) {
             return {
                 template: `<span>${html}</span>`
             };
-        },
-        setCampaignName() {
-            const story = this.storyRepository.current()
-            this.campaignName = story ? story.name : this.$t('local');
-        },
+        }
     }
 }
 </script>

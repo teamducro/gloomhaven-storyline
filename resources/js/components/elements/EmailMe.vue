@@ -1,5 +1,5 @@
 <template>
-    <a :href="mailto" @click="setMailto" @touchstart="setMailto" class="link">
+    <a :href="mailto" @click="setMailto" @touchstart="setMailto">
         <slot/>
     </a>
 </template>
