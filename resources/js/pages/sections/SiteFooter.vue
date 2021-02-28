@@ -19,7 +19,7 @@
                 <ul class="list-reset flex md:flex-col">
                     <li>
                         <a href="/#pricing"
-                           class="link text-white p-2">Pricing</a>
+                           class="link text-white p-2">Contribute</a>
                     </li>
                     <li>
                         <a href="https://github.com/teamducro/gloomhaven-storyline"

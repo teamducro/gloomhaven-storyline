@@ -99,9 +99,9 @@
                         </p>
                         <p class="text-gray-600 mb-4">
                             You can share your progress manually, or have the app sync it automagically between you
-                            and your party members by purchasing a license.
-                            Only one person in your party needs to <a href="#pricing" class="link">purchase a
-                            license</a>, and your whole party can benefit!
+                            and your party members by contributing.
+                            Only one person in your party needs to <a href="#pricing" class="link">donate</a>, and your
+                            whole party can benefit!
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl"
