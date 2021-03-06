@@ -2,7 +2,7 @@
     "quests": [
         {
             "id": 1,
-            "name": "The Merchant's Request",
+            "name": "Black Barrow",
             "checks": [
                 "",
                 "1==c",
@@ -11,7 +11,7 @@
         },
         {
             "id": 2,
-            "name": "The Merchant's Wrath",
+            "name": "Jekserah's caravans",
             "checks": [
                 "2==c",
                 "3==c",
@@ -20,13 +20,12 @@
         },
         {
             "id": 3,
-            "name": "Seeking Gloom",
+            "name": "The Gloom",
             "checks": [
                 "2==c",
                 "4==c",
                 "6==c",
                 "6!=c && 4!=c && (12==c || 20==c)",
-                "6!=c && 4==c && (12==c || 20==c)",
                 "6==c && (12==c || 20==c)",
                 "6==c && 11==c",
                 "28==c",
@@ -35,23 +34,15 @@
         },
         {
             "id": 4,
-            "name": "Tales from the Crypt",
+            "name": "Ancient crypt",
             "checks": [
                 "4==c",
                 "4==c && 5==c"
             ]
         },
         {
-            "id": 5,
-            "name": "Scry Me a River",
-            "checks": [
-                "8==c && 14==c",
-                "8==c && 14==c && 7==c"
-            ]
-        },
-        {
             "id": 6,
-            "name": "The Merchant's Secret",
+            "name": "Jekserah's Secret",
             "checks": [
                 "(6==c || 3==c) && 9!=c",
                 "8==c",
@@ -60,7 +51,7 @@
         },
         {
             "id": 7,
-            "name": "A Valrath's Best Friend",
+            "name": "Diamond hunt",
             "checks": [
                 "3==c && 8!=c",
                 "3==c && 8!=c && 9==c",
@@ -69,7 +60,7 @@
         },
         {
             "id": 8,
-            "name": "Tripping the Rift",
+            "name": "Nightmarish hole",
             "checks": [
                 "5==c && 27!=c",
                 "10==c",
@@ -78,7 +69,7 @@
         },
         {
             "id": 9,
-            "name": "Necromancer Hunt",
+            "name": "In search of Jekserah",
             "checks": [
                 "8==c",
                 "8==c && 14==c",
@@ -90,7 +81,7 @@
         },
         {
             "id": 10,
-            "name": "New Management",
+            "name": "New right hand",
             "checks": [
                 "9==c && 12!=c",
                 "9==c && 11==c",
@@ -99,7 +90,7 @@
         },
         {
             "id": 11,
-            "name": "The Old Guard",
+            "name": "Ambivalence",
             "checks": [
                 "9==c && 12!=c",
                 "9==c && 12==c",
@@ -108,7 +99,7 @@
         },
         {
             "id": 12,
-            "name": "The Heart's Desire",
+            "name": "Choices",
             "checks": [
                 "8==c && 13!=c",
                 "8==c && 13==c && 13'==15",
@@ -118,7 +109,7 @@
         },
         {
             "id": 13,
-            "name": "The Enchantress",
+            "name": "The Aesther woman",
             "checks": [
                 "5==c || 8==c || 18==c",
                 "14==c"
@@ -126,7 +117,7 @@
         },
         {
             "id": 14,
-            "name": "Unlimited Power",
+            "name": "Strength and power",
             "checks": [
                 "(13==c && 13'==15) || 39==c",
                 "15==c"
@@ -134,7 +125,7 @@
         },
         {
             "id": 15,
-            "name": "There Be Dragons",
+            "name": "In search of dragons",
             "checks": [
                 "11==c || 12==c || 20==c",
                 "25!=c && 16==c",
@@ -143,7 +134,7 @@
         },
         {
             "id": 16,
-            "name": "Treasure Island",
+            "name": "Misty sea island",
             "checks": [
                 "17!=c",
                 "17==c"
@@ -151,7 +142,7 @@
         },
         {
             "id": 17,
-            "name": "Sewer Surfin",
+            "name": "Filthy liquid",
             "checks": [
                 "11==c || 12==c || 20==c",
                 "23!=c && 43!=c && 18==c",
@@ -162,7 +153,7 @@
         },
         {
             "id": 18,
-            "name": "Closing the Rift",
+            "name": "Closure",
             "checks": [
                 "5==c && 14!=c",
                 "5==c && 14==c",
@@ -173,7 +164,7 @@
         },
         {
             "id": 19,
-            "name": "Exorcism",
+            "name": "Raising of spirits",
             "checks": [
                 "10==c",
                 "10==c && 27==c",
@@ -182,7 +173,7 @@
         },
         {
             "id": 20,
-            "name": "The Artifact",
+            "name": "Mysterious object",
             "checks": [
                 "26==c && 22!=c",
                 "26==c && 22==c"
@@ -190,7 +181,7 @@
         },
         {
             "id": 21,
-            "name": "The Way Around",
+            "name": "Deep dive",
             "checks": [
                 "18==c",
                 "23==c"
@@ -198,7 +189,7 @@
         },
         {
             "id": 22,
-            "name": "Hearing Things",
+            "name": "A voice",
             "checks": [
                 "16==c",
                 "24==c"
@@ -206,7 +197,7 @@
         },
         {
             "id": 23,
-            "name": "Look Who's Talking",
+            "name": "The study of a voice",
             "checks": [
                 "24==c",
                 "30==c"
@@ -214,7 +205,7 @@
         },
         {
             "id": 24,
-            "name": "Let it Hail",
+            "name": "Severing connections",
             "checks": [
                 "22==c && 14!=c",
                 "22==c && 14==c && 35==c",
@@ -225,7 +216,7 @@
         },
         {
             "id": 25,
-            "name": "The Voice",
+            "name": "Vessels",
             "checks": [
                 "24==c",
                 "32==c && 33!=c",
@@ -237,7 +228,7 @@
         },
         {
             "id": 26,
-            "name": "Armory Heist",
+            "name": "To slay or not to slay",
             "checks": [
                 "24==c || 25==c",
                 "(34==c && 24!=c) || (42==c && 25!=c)",
@@ -247,7 +238,7 @@
         },
         {
             "id": 27,
-            "name": "Dragon Slayer",
+            "name": "The Elder Drake",
             "checks": [
                 "25==c && 33!=c",
                 "25==c && 33==c",
@@ -256,7 +247,7 @@
         },
         {
             "id": 28,
-            "name": "Dark Souls",
+            "name": "Pull of the dark",
             "checks": [
                 "10==c",
                 "10==c && 22==c && 35!=c && 36!=c",
@@ -267,7 +258,7 @@
         },
         {
             "id": 30,
-            "name": "Under the Sea",
+            "name": "Diving",
             "checks": [
                 "31==c && 43!=c",
                 "31==c && 43==c",
@@ -286,7 +277,7 @@
         },
         {
             "id": 32,
-            "name": "Ice Climbers",
+            "name": "To the peaks",
             "checks": [
                 "31==c",
                 "39==c",
@@ -295,7 +286,7 @@
         },
         {
             "id": 33,
-            "name": "Shut Up and Sit Down",
+            "name": "Just shut up!",
             "checks": [
                 "30==c",
                 "41==c",
@@ -304,7 +295,7 @@
         },
         {
             "id": 34,
-            "name": "Growing Gills",
+            "name": "Passing water",
             "checks": [
                 "18==c || 31==c",
                 "(18==c || 31==c) && 14==c",
@@ -313,7 +304,7 @@
         },
         {
             "id": 35,
-            "name": "Let Freedom Ring",
+            "name": "Freedom!",
             "checks": [
                 "38==c",
                 "44==c"
@@ -321,7 +312,7 @@
         },
         {
             "id": 36,
-            "name": "Rebel Scum",
+            "name": "The Rebels",
             "checks": [
                 "35==c",
                 "11==c && 35==c",
@@ -330,7 +321,7 @@
         },
         {
             "id": 37,
-            "name": "No Survivors",
+            "name": "Bloodshed",
             "checks": [
                 "45==c",
                 "45==c && 11==c",
@@ -349,7 +340,7 @@
         },
         {
             "id": 39,
-            "name": "Corrupting Influence",
+            "name": "Corruption",
             "checks": [
                 "46==c || 47==c || 48==c",
                 "46==c && 47==c && 48==c",

@@ -52,16 +52,6 @@
                         Scenario and Storyline Flowchart</a>
                 </li>
                 <li class="py-1">
-                    <span class="mr-1 block sm:inline">{{ $t('Scenario summaries by') }}
-                        <a class="link" target="_blank" rel="noreferrer"
-                           href="https://boardgamegeek.com/user/DoctorBandage">
-                            DoctorBandage</a>:
-                    </span>
-                    <a class="link" target="_blank" rel="noreferrer"
-                       href="https://boardgamegeek.com/geeklist/237840/gloomhaven-quest-log">
-                        Gloomhaven Quest Log</a>
-                </li>
-                <li class="py-1">
                     <span class="mr-1 block sm:inline">{{ $t('Map coordinates by') }}
                         <a class="link" target="_blank" rel="noreferrer"
                            href="https://boardgamegeek.com/user/Dargalin">
