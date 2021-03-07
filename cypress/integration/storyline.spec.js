@@ -23,8 +23,6 @@ describe('Storyline', () => {
 
         cy.viewport(500, 800);
 
-        cy.wait(400);
-
         cy.get('.landscape').should(($node) => {
             expect($node).to.have.length(0);
         });
