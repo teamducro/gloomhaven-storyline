@@ -26,21 +26,7 @@ import isWebpSupported from "./services/app/isWebpSupported";
 import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
 import checkOrientation from "./services/app/checkOrientation";
-
-/**
- * String.prototype.replaceAll() polyfill
- * https://gomakethings.com/how-to-replace-a-section-of-a-string-with-another-one-with-vanilla-js/
- * @author Chris Ferdinandi
- * @license MIT
- */
-if (!String.prototype.replaceAll) {
-    String.prototype.replaceAll = function (str, newStr) {
-        if (Object.prototype.toString.call(str).toLowerCase() === '[object regexp]') {
-            return this.replace(str, newStr);
-        }
-        return this.replace(new RegExp(str, 'g'), newStr);
-    };
-}
+import polyfills from "./services/app/polyfills";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -231,6 +217,7 @@ window.app = new Vue({
             }
         },
         beforeBoot() {
+            polyfills();
             this.$bus.$on('orientation-changed', (isPortrait) => this.isPortrait = isPortrait);
             this.$bus.$on('has-mouse', (hasMouse) => this.hasMouse = hasMouse);
             checkOrientation(this.$bus);
