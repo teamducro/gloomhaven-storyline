@@ -1,5 +1,5 @@
-import Helpers from "./Helpers";
-import StorySyncer from "./StorySyncer";
+import Helpers from "../Helpers";
+import StorySyncer from "../StorySyncer";
 
 export default function listenToCrtlS() {
     let storySyncer = new StorySyncer;

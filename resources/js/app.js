@@ -17,15 +17,15 @@ import {loadStripe} from '@stripe/stripe-js/pure';
 import EchoService from "./services/EchoService";
 import VueScrollTo from "vue-scrollto";
 import StorySyncer from "./services/StorySyncer";
-import OfflineChecker from "./services/OfflineChecker";
+import OfflineChecker from "./services/app/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
 import * as Sentry from "@sentry/vue";
 import {Integrations} from "@sentry/tracing";
-import shouldTransferVersion1Progress from "./services/shouldTransferVersion1Progress";
-import isWebpSupported from "./services/isWebpSupported";
-import listenToCrtlS from "./services/listenToCrtlS";
-import checkHasMouse from "./services/checkHasMouse";
-import checkOrientation from "./services/checkOrientation";
+import shouldTransferVersion1Progress from "./services/app/shouldTransferVersion1Progress";
+import isWebpSupported from "./services/app/isWebpSupported";
+import listenToCrtlS from "./services/app/listenToCrtlS";
+import checkHasMouse from "./services/app/checkHasMouse";
+import checkOrientation from "./services/app/checkOrientation";
 
 /**
  * String.prototype.replaceAll() polyfill
