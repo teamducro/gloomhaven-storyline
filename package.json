@@ -54,6 +54,8 @@
         "@material/select": "^4.0.0",
         "@material/textfield": "^4.0.0",
         "@material/theme": "^4.0.0",
+        "@sentry/tracing": "^6.1.0",
+        "@sentry/vue": "^6.1.0",
         "@stripe/stripe-js": "^1.7.0",
         "axios": "^0.21.1",
         "collect.js": "^4.19.0",

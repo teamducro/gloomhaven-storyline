@@ -38,9 +38,7 @@ export default {
     async mounted() {
         let id = parseInt(this.$route.params.id, 10);
         if (!isNaN(id)) {
-            this.$bus.$emit('open-scenario', {
-                id: id
-            });
+            this.$bus.$emit('open-scenario', {id});
         }
         if (app.isPortrait !== undefined) {
             this.isPortrait = app.isPortrait;
@@ -75,16 +73,15 @@ export default {
                 $('.legend .scenario').show();
             }
         },
-        rerender() {
+        async rerender() {
             if (this.zoom) {
                 this.zoom.destroy();
             }
             this.storylineKey++;
-            this.$nextTick(() => {
-                this.renderOrientation();
-                this.zoom = zoom('#storyline');
-                this.render();
-            });
+            await this.$nextTick();
+            this.renderOrientation();
+            this.render();
+            this.zoom = await zoom('#storyline');
         },
         renderOrientation() {
             let viewBox = '';
@@ -199,9 +196,7 @@ export default {
             this.open(id);
         },
         open(id) {
-            this.$bus.$emit('open-scenario', {
-                id: id
-            });
+            this.$bus.$emit('open-scenario', {id});
         }
     }
 }

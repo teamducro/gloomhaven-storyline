@@ -1,7 +1,7 @@
 import svgPanZoom from 'svg-pan-zoom';
 import Hammer from 'hammerjs';
 
-export default function zoom(selector) {
+export default async function zoom(selector) {
 
     let touchEventsHandler = {
         haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel'],
@@ -80,11 +80,20 @@ export default function zoom(selector) {
         return customPan
     };
 
+    let times = 0;
+    while (!document.querySelector(selector) && times < 3) {
+        await new Promise(r => setTimeout(r, 100));
+        times++;
+    }
+
+    if (!document.querySelector(selector)) {
+        return;
+    }
+
     return svgPanZoom(selector, {
         minZoom: 1,
         maxZoom: 3,
         customEventsHandler: touchEventsHandler,
         beforePan: limitPan
     });
-
 }

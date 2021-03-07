@@ -8,6 +8,7 @@
         <donations></donations>
         <toast></toast>
         <confirm-transfer></confirm-transfer>
+        <item-model></item-model>
     </div>
 </template>
 

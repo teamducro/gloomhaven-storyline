@@ -567,6 +567,7 @@
     <g id="node32" class="scenario">
         <circle cx="319.2763862" cy="494.7345805" r="10.8" class="node"/>
         <text x="304" y="490.42">32</text>
+        <text x="308" y="490.42" class="blocked">×</text>
     </g>
     <g id="edge24-32" class="edge edge24">
         <path class="line" d="M 280.9344563 526.7628918 L 298.5090393 506.0530722"/>

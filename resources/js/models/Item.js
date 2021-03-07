@@ -1,5 +1,3 @@
-import Storable from './Storable'
-import Card from "./Card";
 import slugify from "slugify";
 
 class Item {

@@ -49,6 +49,10 @@ class Sheet {
             4: true,
             5: true,
         };
+        for (let i = 1; i <= 30; i++) {
+            this.city[i] = true;
+            this.road[i] = true;
+        }
         this.fillBlanks();
     }
 

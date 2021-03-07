@@ -91,7 +91,9 @@
                                     :label="'#' + id"
                                     :checked="scenario.isTreasureUnlocked(id)"
                                     @change="treasureChanged"></checkbox-with-label>
-                                <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">{{ treasure }}</span>
+                                <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
+                                    <add-item-links :text="treasure"/>
+                                </span>
                             </div>
                         </div>
                         <p class="mb-2"
@@ -159,19 +161,33 @@
                             <cards v-if="scenario.hasCard()" :cards="scenario.cards"></cards>
                         </div>
 
-                        <div class="mb-6 hidden">
-                            <div class="mdc-text-field mdc-text-field--textarea w-full"
-                                 ref="notes">
-                                <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
-                                          class="mdc-text-field__input" rows="4" cols="40"></textarea>
-                                <div class="mdc-notched-outline">
-                                    <div class="mdc-notched-outline__leading"></div>
-                                    <div class="mdc-notched-outline__notch">
-                                        <label for="notes" class="mdc-floating-label">{{ $t('Notes') }}</label>
+                        <div class="mb-3" v-if="showNotes">
+                            <button class="mdc-button normal-case -ml-2"
+                                    @click="notesIsOpen = !notesIsOpen">
+                                <span class="mdc-button__label font-title text-white">{{ $t('Notes') }}</span>
+                                <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
+                                   :class="{'rotate-0': notesIsOpen, 'rotate-180': !notesIsOpen}">
+                                    keyboard_arrow_up
+                                </i>
+                            </button>
+
+                            <transition-expand
+                                :duration="{ enter: 500, leave: 800 }"
+                                @after-enter="notesEntered"
+                                @leave="notesLeft">
+                                <div v-if="notesIsOpen" ref="notes"
+                                     class="mdc-text-field mdc-text-field--textarea w-full">
+                                    <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
+                                              class="mdc-text-field__input" rows="4" cols="40"></textarea>
+                                    <div class="mdc-notched-outline">
+                                        <div class="mdc-notched-outline__leading"></div>
+                                        <div class="mdc-notched-outline__notch">
+                                            <label for="notes" class="mdc-floating-label">{{ $t('Notes') }}</label>
+                                        </div>
+                                        <div class="mdc-notched-outline__trailing"></div>
                                     </div>
-                                    <div class="mdc-notched-outline__trailing"></div>
                                 </div>
-                            </div>
+                            </transition-expand>
                         </div>
 
                         <div class="relative h-8 mb-6">
@@ -241,26 +257,31 @@ import {ScenarioState} from "../../models/ScenarioState";
 import PreloadImage from "../../services/PreloadImage";
 import StoryRepository from "../../repositories/StoryRepository";
 import Cards from "../presenters/cards/Cards";
+import StorySyncer from "../../services/StorySyncer";
+import AddItemLinks from "../elements/AddItemLinks";
 
 const md5 = require('js-md5');
 const queryString = require('query-string');
 
 export default {
-    components: {Cards},
+    components: {AddItemLinks, Cards},
     data() {
         return {
             scenario: null,
-            notes: null,
             stateKey: 1,
             questExpand: [],
             treasuresVisible: false,
             rollback: null,
             virtualBoardUrl: null,
+            notes: null,
+            showNotes: false,
+            notesIsOpen: false,
             scenarioRepository: new ScenarioRepository(),
             achievementRepository: new AchievementRepository(),
             choiceService: new ChoiceService(),
             preloadImage: new PreloadImage(),
             storyRepository: new StoryRepository(),
+            storySyncer: new StorySyncer(),
         }
     },
     mounted() {
@@ -332,8 +353,20 @@ export default {
                 this.$bus.$emit('scenarios-updated');
             }
         },
+        notesEntered() {
+            if (!this.notes && this.$refs['notes']) {
+                this.notes = new MDCTextField(this.$refs['notes']);
+            }
+        },
+        notesLeft() {
+            if (this.notes) {
+                this.notes.destroy();
+                this.notes = null;
+            }
+        },
         noteChanged() {
             this.scenario.store();
+            this.storySyncer.store();
         },
         treasureChanged(id, checked) {
             if (checked && this.prompt) {
@@ -343,10 +376,12 @@ export default {
             }
 
             this.scenario.unlockTreasure(id, checked);
-
+            this.scenarioRepository.processTreasureItems(this.scenario, id, checked);
             if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
                 this.$bus.$emit('scenarios-updated');
             }
+
+            this.storySyncer.store();
         },
         scenarioChosen(choice) {
             this.scenarioRepository.choose(this.scenario, choice);
@@ -390,6 +425,7 @@ export default {
             this.setVirtualBoardUrl();
             this.treasuresVisible = false;
             this.rollback = null;
+            this.notesEntered();
 
             let questCount = this.questCount + this.scenario.cards.count();
             this.questExpand = new Array(questCount);
@@ -407,13 +443,14 @@ export default {
             this.$refs['modal'].open();
             await this.$nextTick();
 
-            this.$refs['pages'].preload();
-            const notes = this.$refs['notes'];
-            if (notes) {
-                new MDCTextField(notes);
-            }
+            this.$refs['pages'].preload()
+
+            // Don't display scenario notes for unregistered users
+            // This may result in unstable storyline links
+            this.showNotes = app.campaignId !== 'local';
         },
         close() {
+            this.notesLeft();
             this.$refs['modal'].close();
         },
         openAchievement(id) {

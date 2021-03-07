@@ -3,7 +3,10 @@ import slugify from 'slugify';
 export default {
     methods: {
         slugify: function (string) {
-            return slugify(string, {lower: true});
+            if (isNaN(string)) {
+                return slugify(string, {lower: true});
+            }
+            return string;
         }
     }
 }

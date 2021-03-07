@@ -2,6 +2,8 @@ import {ScenarioState} from "./ScenarioState";
 import Storable from './Storable'
 import Card from "./Card";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import ItemTextParser from "../services/ItemTextParser";
+import Sheet from "./Sheet";
 
 class Scenario {
 
@@ -164,6 +166,18 @@ class Scenario {
         }
 
         return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
+    }
+
+    rewardItems() {
+        let items = collect();
+
+        if (typeof this.rewards.first() === 'string') {
+            this.rewards.each(reward => {
+                items = items.merge((new ItemTextParser()).ids(reward).items);
+            });
+        }
+
+        return items;
     }
 
     key() {

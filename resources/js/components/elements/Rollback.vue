@@ -9,39 +9,67 @@
 export default {
     props: {
         value: {
-            type: Number,
             default: 0
         }
     },
     data() {
         return {
-            stack: []
+            current: null,
+            stack: [],
+            rollingBack: false
         }
     },
-    mounted() {
-    },
     watch: {
-        value: function (val) {
-            if (val !== this.last()) {
-                if (val === this.secondToLast()) {
-                    this.stack.pop();
-                } else {
-                    this.stack.push(val);
-                }
-            }
+        value: {
+            handler(val) {
+                this.set(val);
+            },
+            deep: true,
+            immediate: true
         }
     },
     methods: {
         reset() {
-            this.stack = [this.value];
+            this.stack = [];
+            this.push(this.value);
+        },
+        set(value) {
+            this.current = value;
+            if (JSON.stringify(value) !== JSON.stringify(this.last()) && !this.rollingBack) {
+                if (value === this.secondToLast()) {
+                    this.pop();
+                } else {
+                    this.push(value);
+                }
+            }
+        },
+        pop() {
+            this.stack.pop();
+        },
+        push(value) {
+            this.stack.push(this.isObject(value) ? Object.assign({}, value) : value);
         },
         rollback() {
             if (this.stack.length > 1) {
-                this.stack.pop();
-                let value = this.last();
+                this.rollingBack = true;
+
+                this.pop();
+                let value;
+                if (this.isObject(this.last())) {
+                    value = Object.assign(this.current, this.last());
+                } else {
+                    value = this.last();
+                }
                 this.$emit('update:value', value);
                 this.$emit('change', value);
+
+                setTimeout(() => {
+                    this.rollingBack = false;
+                }, 0);
             }
+        },
+        isObject(val) {
+            return (typeof val === 'object' && val !== null);
         },
         last() {
             return _.last(this.stack);

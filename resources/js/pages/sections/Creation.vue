@@ -55,16 +55,6 @@
                                 Scenario and Storyline Flowchart</a>
                         </li>
                         <li class="py-1">
-                                <span class="mr-1 block sm:inline">Scenario summaries by
-                                    <a class="link" target="_blank" rel="noreferrer"
-                                       href="https://boardgamegeek.com/user/DoctorBandage">
-                                        DoctorBandage</a>:
-                                </span>
-                            <a class="link" target="_blank" rel="noreferrer"
-                               href="https://boardgamegeek.com/geeklist/237840/gloomhaven-quest-log">
-                                Gloomhaven Quest Log</a>
-                        </li>
-                        <li class="py-1">
                                 <span class="mr-1 block sm:inline">Map coordinates by
                                     <a class="link" target="_blank" rel="noreferrer"
                                        href="https://boardgamegeek.com/user/Dargalin">
@@ -81,6 +71,14 @@
                             <a class="link" target="_blank" rel="noreferrer"
                                href="https://vgb.purplekingdomgames.com">
                                 Virtual Gloomhaven Board</a>
+                        </li>
+                        <li class="py-1">
+                            <a class="link" target="_blank" rel="noreferrer"
+                               href="https://www.reddit.com/user/nicomatic/">
+                                Nicomatic</a>:
+                            <a class="link" target="_blank" rel="noreferrer"
+                               href="https://heisch.github.io/gloomhaven-item-db/">
+                                Gloomhaven Item DB</a>
                         </li>
                     </ul>
 

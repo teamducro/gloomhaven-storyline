@@ -7,7 +7,7 @@
                 Payment Successful!
             </h3>
             <p class="mt-6 text-base text-gray-900">
-                Thanks for purchasing, please check your email to enable your shared campaign!
+                Thanks for your contribution, please check your email to enable your shared campaign!
             </p>
             <meme class="m-auto mt-4 max-w-full"/>
 
@@ -70,7 +70,7 @@
                             </li>
                         </ul>
                         <p class="mt-6 text-sm text-gray-700">
-                            When purchasing multiple licenses, you can manage multiple campaigns!<br>
+                            When donating multiple times, you can manage multiple campaigns!<br>
                             Licenses aren't renewed automatically.
                         </p>
                     </div>
@@ -116,7 +116,7 @@
             </div>
         </div>
 
-        <div class="m-auto w-full max-w-3xl lg:flex">
+        <div id="add-shared-campaign-container" class="m-auto w-full max-w-3xl lg:flex">
             <div class="bg-black2-25 p-4 rounded-lg mt-8 lg:mr-4 lg:flex-1">
                 <add-shared-campaign :init-code="initCode"/>
             </div>
@@ -135,7 +135,7 @@
                         Add shared campaign
                     </purchase>
                 </li>
-                <li>After purchasing a license you'll receive a link in your email</li>
+                <li>After your donation you'll receive a link in your email</li>
                 <li>Click on the link in the email to add your new shared campaign!</li>
                 <li class="mt-3">Click on <span class="link" @click="shareCurrentStory">Share</span>
                     to give access to your party members
@@ -176,6 +176,7 @@ export default {
             loggedIn: Helpers.loggedIn(),
             paymentSuccess: false,
             initCode: '',
+            receivedACampaignCode: false,
             url: process.env.MIX_APP_URL,
             storyRepository: new StoryRepository
         }
@@ -186,6 +187,10 @@ export default {
     },
     mounted() {
         Helpers.removeQueryString();
+
+        if (this.receivedACampaignCode) {
+            this.scrollToForm();
+        }
     },
     destroyed() {
 
@@ -200,6 +205,13 @@ export default {
             if (typeof parsed.code !== 'undefined') {
                 this.initCode = parsed.code
             }
+
+            if (typeof parsed['received-a-campaign-code'] !== 'undefined') {
+                this.receivedACampaignCode = true;
+            }
+        },
+        scrollToForm() {
+            document.getElementById("add-shared-campaign-container").scrollIntoView();
         },
         shareCurrentStory() {
             this.$bus.$emit('open-share-campaign-code-modal', this.storyRepository.current());
