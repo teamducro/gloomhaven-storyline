@@ -1,11 +1,11 @@
-import quests from '../quests.json';
 import Quest from "../models/Quest";
 import QuestValidator from "../services/QuestValidator";
+import GameData from "../services/GameData";
 
 export default class QuestRepository {
 
     fetch() {
-        return collect(quests.quests).map((quest) => {
+        return collect((new GameData).quests()).map((quest) => {
             return new Quest(quest);
         });
     }

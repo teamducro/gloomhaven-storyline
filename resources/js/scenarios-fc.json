@@ -96,7 +96,7 @@
             "treasure": {
                 "79": "Gain \"Falcon Figurine\" (Item 157)"
             },
-            // todo: multiple conclusions
+            "todo": "multiple conclusions",
             "rewards": [
                 "10 gold each",
                 "+1 reputation",
@@ -129,7 +129,7 @@
             "treasure": {
                 "95": "Gain 25 gold and Party Achievement: \"A Strongbox\" Add City Event  85 to the deck"
             },
-            // todo: multiple conclusions
+            "todo": "multiple conclusions",
             "rewards": [
                 "10 gold each",
                 "+1 prosperity",
@@ -161,7 +161,7 @@
                 "x": 0,
                 "y": 0
             },
-            // todo: multiple conclusions
+            "todo": "multiple conclusions",
             "links_to": [
                 106,
                 107
@@ -463,19 +463,17 @@
                 "fc/2/37",
                 "fc/2/39"
             ],
-            "links_to": [
-                112
-            ],
+            "links_to": [],
             "linked_from": [
                 100
             ],
             "achievements_awarded": [
                 "PPA"
             ],
-            // todo: multiple conclusions
+            "todo": "multiple conclusions",
             "rewards": [
-                "175 gold each, This money must immediately be spent on any [], [], [], [], [], or [] enhancements"
-                // "+1 prosperity"
+                "175 gold each, This money must immediately be spent on any [], [], [], [], [], or [] enhancements",
+                "// +1 prosperity"
             ]
         },
         {
@@ -518,9 +516,7 @@
                 "fc/2/39",
                 "fc/2/40"
             ],
-            "links_to": [
-                112
-            ],
+            "links_to": [],
             "linked_from": [
                 100
             ],
@@ -531,9 +527,9 @@
                 "78": "\"Ancient Bow\" design (Item 157)",
                 "90": "Read section 75 on page 49"
             },
-            // todo: multiple conclusions
+            "todo": "multiple conclusions",
             "rewards": [
-                // "10 gold each",
+                "// 10 gold each",
                 "5 experience each"
             ]
         },
@@ -575,15 +571,15 @@
             "linked_from": [
                 101
             ],
-            // todo: multiple conclusions
+            "todo": "multiple conclusions",
             "achievements_awarded": [
-                "PXA"
-                // "PDA"
-                // "PAOD"
+                "PXA",
+                "// PDA",
+                "// PAOD"
             ],
             "rewards": [
-                "\"Curseward Armor\" (Item 155)"
-                // "2 \"Throwing Axes\" (Item 161)\n"
+                "\"Curseward Armor\" (Item 155)",
+                "// 2 \"Throwing Axes\" (Item 161)\n"
             ]
         },
         {
@@ -693,21 +689,21 @@
             ],
             "achievements_awarded": [
                 "GAPA",
-                "PHH"
-                // "PHP"
+                "PHH",
+                "// PHP"
             ],
             "achievements_lost": [
                 "PHP"
             ],
-            // todo: multiple conclusions
+            "todo": "multiple conclusions",
             "treasure": {
                 "82": "\"Rejuvenation Greaves\" design (Item 158)"
             },
             "rewards": [
                 "12 experience each",
-                "1 ✓ each"
-                // "5 experience each",
-                // "Add Rift Event 16 to the deck. Instead of shuffling this event into the whole deck, shuffle it into the top 3 cards"
+                "1 ✓ each",
+                "// 5 experience each",
+                "// Add Rift Event 16 to the deck. Instead of shuffling this event into the whole deck, shuffle it into the top 3 cards"
             ]
         },
         {
@@ -734,10 +730,10 @@
                 "GAPA",
                 "GMS"
             ],
-            // todo: multiple conclusions
+            "todo": "multiple conclusions",
             "rewards": [
                 "25 collective gold",
-                // "10 gold each",
+                "// 10 gold each",
                 "5 experience each",
                 "1 ✓ each"
             ]
@@ -769,7 +765,7 @@
             ],
             "rewards": [
                 "135 gold each",
-                // svgs
+                "todo: svgs",
                 "This money must immediately be spent on any Move, Range or Jump enhancements",
                 "+1 prosperity"
             ]
@@ -820,14 +816,14 @@
             "achievements_awarded": [
                 "GST"
             ],
+            "todo": "note",
             "treasure": {
-                // note
                 "96": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover:"
             },
             "rewards": [
                 "+3 reputation",
                 "+1 prosperity",
-                // svg
+                "todo: svg",
                 "Retire the Aesther Diviner",
                 "Add City and Road Events 83 to their respective decks"
             ]
@@ -853,7 +849,35 @@
         }
     ],
     "chapters": [
+        {
+            "id": 1,
+            "name": "Intro"
+        },
+        {
+            "id": 2,
+            "name": "Chapter 2"
+        },
+        {
+            "id": 3,
+            "name": "Chapter 3"
+        },
+        {
+            "id": 4,
+            "name": "Chapter 4"
+        },
+        {
+            "id": 5,
+            "name": "Chapter 5"
+        },
+        {
+            "id": 6,
+            "name": "Chapter 6"
+        }
     ],
     "regions": [
+        {
+            "id": 1,
+            "name": "Gloomhaven"
+        }
     ]
 }

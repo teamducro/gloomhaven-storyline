@@ -1,15 +1,14 @@
 import AchievementRepository from "./AchievementRepository";
-import scenarios from '../scenarios.json';
 import Scenario from "../models/Scenario";
 import ScenarioValidator from "../services/ScenarioValidator";
 import {ScenarioState} from "../models/ScenarioState";
-import N2l from "../services/N2l";
 import Sheet from "../models/Sheet";
 import ItemTextParser from "../services/ItemTextParser";
+import GameData from "../services/GameData";
 
 export default class ScenarioRepository {
     fetch() {
-        return collect(scenarios.scenarios).map((scenario) => {
+        return collect((new GameData).scenarios()).map((scenario) => {
             scenario = new Scenario(scenario);
             this.fetchChapter(scenario);
             this.fetchRegions(scenario);
@@ -250,11 +249,11 @@ export default class ScenarioRepository {
     }
 
     get chapters() {
-        return this._chapters || (this._chapters = collect(scenarios.chapters));
+        return this._chapters || (this._chapters = collect((new GameData).chapters()));
     }
 
     get regions() {
-        return this._regions || (this._regions = collect(scenarios.regions));
+        return this._regions || (this._regions = collect((new GameData).regions()));
     }
 
     get scenarioValidator() {

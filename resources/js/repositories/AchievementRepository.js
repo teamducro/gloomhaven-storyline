@@ -1,15 +1,15 @@
-import achievements from '../achievements.json';
 import Achievement from "../models/Achievement";
 import ScenarioRepository from "./ScenarioRepository";
 import AchievementGroup from "../models/AchievementGroup";
 import {ScenarioState} from "../models/ScenarioState";
 import scenarios from "../scenarios.json";
 import StorySyncer from "../services/StorySyncer";
+import GameData from "../services/GameData";
 
 export default class AchievementRepository {
 
     fetch() {
-        return collect(achievements.achievements).map((achievement) => {
+        return collect((new GameData).achievements()).map((achievement) => {
             achievement = new Achievement(achievement);
             return achievement;
         });

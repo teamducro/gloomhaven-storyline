@@ -21,6 +21,11 @@ import OfflineChecker from "./services/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
 import * as Sentry from "@sentry/vue";
 import {Integrations} from "@sentry/tracing";
+import shouldTransferVersion1Progress from "./services/shouldTransferVersion1Progress";
+import isWebpSupported from "./services/isWebpSupported";
+import listenToCrtlS from "./services/listenToCrtlS";
+import checkHasMouse from "./services/checkHasMouse";
+import checkOrientation from "./services/checkOrientation";
 
 /**
  * String.prototype.replaceAll() polyfill
@@ -123,11 +128,7 @@ window.app = new Vue({
         }
     },
     async mounted() {
-        this.checkOrientation();
-        this.offlineChecker.handle();
-        this.webpSupported = this.isWebpSupported();
-        this.hasMouse = this.checkHasMouse();
-        this.shouldTransferVersion1Progress();
+        this.beforeBoot();
 
         await this.loadCampaignData(true);
         await this.$nextTick();
@@ -144,7 +145,7 @@ window.app = new Vue({
 
         this.$bus.$emit('open-donations');
 
-        this.listenToCrtlS();
+        listenToCrtlS();
     },
     methods: {
         async campaignsChanged(shouldSync = true) {
@@ -199,6 +200,7 @@ window.app = new Vue({
             }
 
             this.campaignData = store.get(this.campaignId) || {};
+            this.game = store.get(this.game) || 'gh';
             this.stories = this.storyRepository.getStories();
             if (Helpers.loggedIn()) {
                 this.user = this.userRepository.getUser();
@@ -228,71 +230,14 @@ window.app = new Vue({
                 // offline
             }
         },
-        isWebpSupported() {
-            let elem = document.createElement('canvas');
-
-            if (!!(elem.getContext && elem.getContext('2d'))) {
-                return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
-            }
-
-            return false;
-        },
-        checkHasMouse() {
-            $('body').one('touchstart.test', (e) => {
-                $('body').off('mousemove.test');
-            }).one('mousemove.test', (e) => {
-                this.hasMouse = true;
-                this.$bus.$emit('scenarios-updated');
-            });
-        },
-        checkOrientation() {
-            this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
-
-            window.addEventListener('resize', _.debounce(() => {
-                this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
-                this.$bus.$emit('orientation-changed', this.isPortrait);
-                this.$bus.$emit('windows-resized');
-
-                this.updateViewportHeight();
-            }, 300));
-            this.$bus.$emit('orientation-changed', this.isPortrait);
-            this.updateViewportHeight();
-        },
-        updateViewportHeight() {
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        },
-        shouldTransferVersion1Progress() {
-            if (!store.get('scenario-1')) {
-                return;
-            }
-
-            const items = {...localStorage};
-
-            // fetch old campaign progress.
-            let local = {};
-            for (const [key, value] of Object.entries(items)) {
-                if (key.startsWith('scenario') || key.startsWith('achievement')) {
-                    local[key] = JSON.parse(value);
-                }
-            }
-
-            // store campaign progress at new location.
-            store.set('local', local);
-
-            // remove old campaign progress.
-            Object.keys(local).forEach(key => {
-                store.remove(key);
-            });
-        },
-
-        listenToCrtlS() {
-            document.addEventListener('keydown', (e) => {
-                if ((Helpers.isMac() ? e.metaKey : e.ctrlKey) && (e.code === 'KeyS')) {
-                    e.preventDefault();
-                    this.storySyncer.store(true);
-                }
-            }, false);
+        beforeBoot() {
+            this.$bus.$on('orientation-changed', (isPortrait) => this.isPortrait = isPortrait);
+            this.$bus.$on('has-mouse', (hasMouse) => this.hasMouse = hasMouse);
+            checkOrientation(this.$bus);
+            this.offlineChecker.handle();
+            this.webpSupported = isWebpSupported();
+            checkHasMouse(this.$bus);
+            shouldTransferVersion1Progress();
         }
     }
 });

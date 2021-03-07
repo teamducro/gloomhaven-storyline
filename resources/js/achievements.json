@@ -1,524 +1,529 @@
-{
-    "achievements": [
-        {
-            "id": "PFS",
-            "name": "First Steps",
-            "type": "Party"
-        },
-        {
-            "id": "PJP",
-            "name": "Jekserah's Plans",
-            "type": "Party"
-        },
-        {
-            "id": "PDB",
-            "name": "Dark Bounty",
-            "type": "Party"
-        },
-        {
-            "id": "GTMF",
-            "name": "The Merchant Flees",
-            "type": "Global",
-            "x": 32.4
-        },
-        {
-            "id": "GTDI",
-            "name": "The Dead Invade",
-            "type": "Global",
-            "x": 37.8
-        },
-        {
-            "id": "PADE",
-            "name": "A Demon's Errand",
-            "type": "Party"
-        },
-        {
-            "id": "GCRE",
-            "name": "City Rule: Economic",
-            "type": "Global",
-            "group": "CR",
-            "x": 22.3
-        },
-        {
-            "id": "GCRM",
-            "name": "City Rule: Militaristic",
-            "type": "Global",
-            "group": "CR",
-            "x": 22.3
-        },
-        {
-            "id": "GEOI",
-            "name": "End of the Invasion",
-            "type": "Global",
-            "x": 62.2
-        },
-        {
-            "id": "GTPE",
-            "name": "The Power of Enhancement",
-            "type": "Global",
-            "x": 47.7
-        },
-        {
-            "id": "PSC",
-            "name": "Stonebreaker's Censer",
-            "type": "Party"
-        },
-        {
-            "id": "GTRN",
-            "name": "The Rift Neutralized",
-            "type": "Global",
-            "x": 57.9
-        },
-        {
-            "id": "GAR",
-            "name": "The Artifact: Recovered",
-            "type": "Global",
-            "group": "ART",
-            "x": 27.3
-        },
-        {
-            "id": "GAR2",
-            "name": "The Artifact: Recovered (previously Lost)",
-            "type": "Global",
-            "group": "ART",
-            "x": 27.3,
-            "requirement": "GAL"
-        },
-        {
-            "id": "GAL",
-            "name": "The Artifact: Lost",
-            "type": "Global",
-            "x": 27.3,
-            "group": "ART"
-        },
-        {
-            "id": "GAT",
-            "name": "Ancient Technology",
-            "type": "Global",
-            "x": 78,
-            "upgrades": [
-                "GAT2",
-                "GAT3",
-                "GAT4",
-                "GAT5"
-            ],
-            "is_manual": true,
-            "cards": [
-                "C-3"
-            ]
-        },
-        {
-            "id": "GAT2",
-            "name": "Ancient Technology x2",
-            "type": "Global",
-            "hidden": true,
-            "x": 78
-        },
-        {
-            "id": "GAT3",
-            "name": "Ancient Technology x3",
-            "type": "Global",
-            "hidden": true,
-            "x": 78
-        },
-        {
-            "id": "GAT4",
-            "name": "Ancient Technology x4",
-            "type": "Global",
-            "hidden": true,
-            "x": 78
-        },
-        {
-            "id": "GAT5",
-            "name": "Ancient Technology x5",
-            "type": "Global",
-            "hidden": true,
-            "x": 78
-        },
-        {
-            "id": "PTR",
-            "name": "Through the Ruins",
-            "type": "Party"
-        },
-        {
-            "id": "PTVC",
-            "name": "The Voice's Command",
-            "type": "Party"
-        },
-        {
-            "id": "PTDC",
-            "name": "The Drake's Command",
-            "type": "Party"
-        },
-        {
-            "id": "PFC",
-            "name": "Following Clues",
-            "type": "Party"
-        },
-        {
-            "id": "PAI",
-            "name": "An Invitation",
-            "type": "Party"
-        },
-        {
-            "id": "GTED",
-            "name": "The Edge of Darkness",
-            "type": "Global",
-            "x": 42.8
-        },
-        {
-            "id": "PTSV",
-            "name": "The Scepter and the Voice",
-            "type": "Party"
-        },
-        {
-            "id": "GAC",
-            "name": "Artifact: Cleansed",
-            "type": "Global",
-            "group": "ART",
-            "x": 27.3
-        },
-        {
-            "id": "PTVT",
-            "name": "The Voices Treasure",
-            "type": "Party"
-        },
-        {
-            "id": "PTDT",
-            "name": "The Drakes Treasure",
-            "type": "Party"
-        },
-        {
-            "id": "GTDS",
-            "name": "The Drake Slain",
-            "type": "Global",
-            "x": 13
-        },
-        {
-            "id": "GTDA",
-            "name": "The Drake Aided",
-            "type": "Global",
-            "x": 13
-        },
-        {
-            "id": "GCRD",
-            "name": "City Rule: Demonic",
-            "type": "Global",
-            "group": "CR",
-            "x": 22.3
-        },
-        {
-            "id": "PTTT",
-            "name": "Trough the Trench",
-            "type": "Party"
-        },
-        {
-            "id": "PRA",
-            "name": "Redthorn's Aid",
-            "type": "Party"
-        },
-        {
-            "id": "PATD",
-            "name": "Across the Divide",
-            "type": "Party"
-        },
-        {
-            "id": "GTVF",
-            "name": "The Voice Freed",
-            "type": "Global",
-            "x": 17.7
-        },
-        {
-            "id": "GTVS",
-            "name": "The Voice Silenced",
-            "type": "Global",
-            "x": 17.7
-        },
-        {
-            "id": "GWB",
-            "name": "Water-Breathing",
-            "type": "Global",
-            "x": 52.8
-        },
-        {
-            "id": "GEOC",
-            "name": "End of Corruption",
-            "type": "Global",
-            "x": 67.7,
-            "upgrades": [
-                "GEOC2",
-                "GEOC3"
-            ]
-        },
-        {
-            "id": "GEOC2",
-            "name": "End of Corruption x2",
-            "type": "Global",
-            "x": 67.7,
-            "hidden": true
-        },
-        {
-            "id": "GEOC3",
-            "name": "End of Corruption x3",
-            "type": "Global",
-            "x": 67.7,
-            "hidden": true
-        },
-        {
-            "id": "GAOO",
-            "name": "Annihilation of Order",
-            "type": "Global",
-            "x": 83.7
-        },
-        {
-            "id": "GEOG",
-            "name": "End of Gloom",
-            "type": "Global",
-            "x": 73.4
-        },
-        {
-            "id": "PTTN",
-            "name": "Through the Nest",
-            "type": "Party"
-        },
-        {
-            "id": "PAMT",
-            "name": "A Map to Treasure",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-8"
-            ]
-        },
-        {
-            "id": "PBB",
-            "name": "Bad Business",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-31"
-            ]
-        },
-        {
-            "id": "PTPS",
-            "name": "The Poison's Source",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-47"
-            ]
-        },
-        {
-            "id": "PSB",
-            "name": "Sun-Blessed",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-48"
-            ]
-        },
-        {
-            "id": "PSR",
-            "name": "Sin-Ra",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-64"
-            ]
-        },
-        {
-            "id": "PDC",
-            "name": "Debt Collection",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-67"
-            ]
-        },
-        {
-            "id": "PWS",
-            "name": "Water Staff",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-68"
-            ]
-        },
-        {
-            "id": "PFA",
-            "name": "Fish's Aid",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-72"
-            ]
-        },
-        {
-            "id": "PT",
-            "name": "Tremors",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-73"
-            ]
-        },
-        {
-            "id": "PHSE",
-            "name": "High Sea Escort",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-76"
-            ]
-        },
-        {
-            "id": "PGJ",
-            "name": "Grave Job",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-77"
-            ]
-        },
-        {
-            "id": "PNE",
-            "name": "Northern Expedition",
-            "type": "Party",
-            "is_manual": true,
-            "cards": [
-                "C-83",
-                "R-83"
-            ]
-        },
-        {
-            "id": "GTTP",
-            "name": "Through the Portal",
-            "type": "Global"
-        },
-        {
-            "id": "GKIP",
-            "name": "Knowledge is Power",
-            "type": "Global",
-            "upgrades": [
-                "GKIP2",
-                "GKIP3",
-                "GKIP4"
-            ]
-        },
-        {
-            "id": "GKIP2",
-            "name": "Knowledge is Power x2",
-            "type": "Global",
-            "hidden": true
-        },
-        {
-            "id": "GKIP3",
-            "name": "Knowledge is Power x3",
-            "type": "Global",
-            "hidden": true
-        },
-        {
-            "id": "GKIP4",
-            "name": "Knowledge is Power x4",
-            "type": "Global",
-            "hidden": true
-        },
-        {
-            "id": "PAOD",
-            "name": "Angels of Death",
-            "type": "Party"
-        },
-        {
-            "id": "PC",
-            "name": "Custodians",
-            "type": "Party"
-        },
-        {
-            "id": "PHP",
-            "name": "Hunted Prey",
-            "type": "Party"
-        },
-        {
-            "id": "PPA",
-            "name": "Pieces of an Artifact",
-            "type": "Party",
-            "upgrades": [
-                "PPA2",
-                "PPA3"
-            ]
-        },
-        {
-            "id": "PPA2",
-            "name": "Pieces of an Artifact x2",
-            "type": "Party",
-            "hidden": true
-        },
-        {
-            "id": "PPA3",
-            "name": "Pieces of an Artifact x3",
-            "type": "Party",
-            "hidden": true
-        },
-        {
-            "id": "PGD",
-            "name": "Guard Detail",
-            "type": "Party"
-        },
-        {
-            "id": "PDE",
-            "name": "Dimensional Equilibrium",
-            "type": "Party"
-        },
-        {
-            "id": "PHH",
-            "name": "Hunting the Hunter",
-            "type": "Party"
-        },
-        {
-            "id": "PXA",
-            "name": "Xangroth's Aid",
-            "type": "Party"
-        },
-        {
-            "id": "PDA",
-            "name": "Diamara's Aid",
-            "type": "Party"
-        },
-        {
-            "id": "PBF",
-            "name": "Beauty in Freedom",
-            "type": "Party"
-        },
-        {
-            "id": "GAPA",
-            "name": "A Peril Averted",
-            "type": "Global",
-            "upgrades": [
-                "GAPA2",
-                "GAPA3"
-            ]
-        },
-        {
-            "id": "GAPA2",
-            "name": "A Peril Averted x2",
-            "type": "Global",
-            "hidden": true
-        },
-        {
-            "id": "GAPA3",
-            "name": "A Peril Averted x3",
-            "type": "Global",
-            "hidden": true
-        },
-        {
-            "id": "GMS",
-            "name": "Mechanical Splendor",
-            "type": "Global"
-        },
-        {
-            "id": "GST",
-            "name": "Severed Ties",
-            "type": "Global"
-        }
-    ]
-}
+[
+    {
+        "id": "PFS",
+        "name": "First Steps",
+        "type": "Party"
+    },
+    {
+        "id": "PJP",
+        "name": "Jekserah's Plans",
+        "type": "Party"
+    },
+    {
+        "id": "PDB",
+        "name": "Dark Bounty",
+        "type": "Party"
+    },
+    {
+        "id": "GTMF",
+        "name": "The Merchant Flees",
+        "type": "Global",
+        "x": 32.4
+    },
+    {
+        "id": "GTDI",
+        "name": "The Dead Invade",
+        "type": "Global",
+        "x": 37.8
+    },
+    {
+        "id": "PADE",
+        "name": "A Demon's Errand",
+        "type": "Party"
+    },
+    {
+        "id": "GCRE",
+        "name": "City Rule: Economic",
+        "type": "Global",
+        "group": "CR",
+        "x": 22.3
+    },
+    {
+        "id": "GCRM",
+        "name": "City Rule: Militaristic",
+        "type": "Global",
+        "group": "CR",
+        "x": 22.3
+    },
+    {
+        "id": "GEOI",
+        "name": "End of the Invasion",
+        "type": "Global",
+        "x": 62.2
+    },
+    {
+        "id": "GTPE",
+        "name": "The Power of Enhancement",
+        "type": "Global",
+        "x": 47.7
+    },
+    {
+        "id": "PSC",
+        "name": "Stonebreaker's Censer",
+        "type": "Party"
+    },
+    {
+        "id": "GTRN",
+        "name": "The Rift Neutralized",
+        "type": "Global",
+        "x": 57.9
+    },
+    {
+        "id": "GAR",
+        "name": "The Artifact: Recovered",
+        "type": "Global",
+        "group": "ART",
+        "x": 27.3
+    },
+    {
+        "id": "GAR2",
+        "name": "The Artifact: Recovered (previously Lost)",
+        "type": "Global",
+        "group": "ART",
+        "x": 27.3,
+        "requirement": "GAL"
+    },
+    {
+        "id": "GAL",
+        "name": "The Artifact: Lost",
+        "type": "Global",
+        "x": 27.3,
+        "group": "ART"
+    },
+    {
+        "id": "GAT",
+        "name": "Ancient Technology",
+        "type": "Global",
+        "x": 78,
+        "upgrades": [
+            "GAT2",
+            "GAT3",
+            "GAT4",
+            "GAT5"
+        ],
+        "is_manual": true,
+        "cards": [
+            "C-3"
+        ]
+    },
+    {
+        "id": "GAT2",
+        "name": "Ancient Technology x2",
+        "type": "Global",
+        "hidden": true,
+        "x": 78
+    },
+    {
+        "id": "GAT3",
+        "name": "Ancient Technology x3",
+        "type": "Global",
+        "hidden": true,
+        "x": 78
+    },
+    {
+        "id": "GAT4",
+        "name": "Ancient Technology x4",
+        "type": "Global",
+        "hidden": true,
+        "x": 78
+    },
+    {
+        "id": "GAT5",
+        "name": "Ancient Technology x5",
+        "type": "Global",
+        "hidden": true,
+        "x": 78
+    },
+    {
+        "id": "PTR",
+        "name": "Through the Ruins",
+        "type": "Party"
+    },
+    {
+        "id": "PTVC",
+        "name": "The Voice's Command",
+        "type": "Party"
+    },
+    {
+        "id": "PTDC",
+        "name": "The Drake's Command",
+        "type": "Party"
+    },
+    {
+        "id": "PFC",
+        "name": "Following Clues",
+        "type": "Party"
+    },
+    {
+        "id": "PAI",
+        "name": "An Invitation",
+        "type": "Party"
+    },
+    {
+        "id": "GTED",
+        "name": "The Edge of Darkness",
+        "type": "Global",
+        "x": 42.8
+    },
+    {
+        "id": "PTSV",
+        "name": "The Scepter and the Voice",
+        "type": "Party"
+    },
+    {
+        "id": "GAC",
+        "name": "Artifact: Cleansed",
+        "type": "Global",
+        "group": "ART",
+        "x": 27.3
+    },
+    {
+        "id": "PTVT",
+        "name": "The Voices Treasure",
+        "type": "Party"
+    },
+    {
+        "id": "PTDT",
+        "name": "The Drakes Treasure",
+        "type": "Party"
+    },
+    {
+        "id": "GTDS",
+        "name": "The Drake Slain",
+        "type": "Global",
+        "x": 13
+    },
+    {
+        "id": "GTDA",
+        "name": "The Drake Aided",
+        "type": "Global",
+        "x": 13
+    },
+    {
+        "id": "GCRD",
+        "name": "City Rule: Demonic",
+        "type": "Global",
+        "group": "CR",
+        "x": 22.3
+    },
+    {
+        "id": "PTTT",
+        "name": "Trough the Trench",
+        "type": "Party"
+    },
+    {
+        "id": "PRA",
+        "name": "Redthorn's Aid",
+        "type": "Party"
+    },
+    {
+        "id": "PATD",
+        "name": "Across the Divide",
+        "type": "Party"
+    },
+    {
+        "id": "GTVF",
+        "name": "The Voice Freed",
+        "type": "Global",
+        "x": 17.7
+    },
+    {
+        "id": "GTVS",
+        "name": "The Voice Silenced",
+        "type": "Global",
+        "x": 17.7
+    },
+    {
+        "id": "GWB",
+        "name": "Water-Breathing",
+        "type": "Global",
+        "x": 52.8
+    },
+    {
+        "id": "GEOC",
+        "name": "End of Corruption",
+        "type": "Global",
+        "x": 67.7,
+        "upgrades": [
+            "GEOC2",
+            "GEOC3"
+        ]
+    },
+    {
+        "id": "GEOC2",
+        "name": "End of Corruption x2",
+        "type": "Global",
+        "x": 67.7,
+        "hidden": true
+    },
+    {
+        "id": "GEOC3",
+        "name": "End of Corruption x3",
+        "type": "Global",
+        "x": 67.7,
+        "hidden": true
+    },
+    {
+        "id": "GAOO",
+        "name": "Annihilation of Order",
+        "type": "Global",
+        "x": 83.7
+    },
+    {
+        "id": "GEOG",
+        "name": "End of Gloom",
+        "type": "Global",
+        "x": 73.4
+    },
+    {
+        "id": "PTTN",
+        "name": "Through the Nest",
+        "type": "Party"
+    },
+    {
+        "id": "PAMT",
+        "name": "A Map to Treasure",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-8"
+        ]
+    },
+    {
+        "id": "PBB",
+        "name": "Bad Business",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-31"
+        ]
+    },
+    {
+        "id": "PTPS",
+        "name": "The Poison's Source",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-47"
+        ]
+    },
+    {
+        "id": "PSB",
+        "name": "Sun-Blessed",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-48"
+        ]
+    },
+    {
+        "id": "PSR",
+        "name": "Sin-Ra",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-64"
+        ]
+    },
+    {
+        "id": "PDC",
+        "name": "Debt Collection",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-67"
+        ]
+    },
+    {
+        "id": "PWS",
+        "name": "Water Staff",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-68"
+        ]
+    },
+    {
+        "id": "PFA",
+        "name": "Fish's Aid",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-72"
+        ]
+    },
+    {
+        "id": "PT",
+        "name": "Tremors",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-73"
+        ]
+    },
+    {
+        "id": "PHSE",
+        "name": "High Sea Escort",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-76"
+        ]
+    },
+    {
+        "id": "PGJ",
+        "name": "Grave Job",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-77"
+        ]
+    },
+    {
+        "id": "PNE",
+        "name": "Northern Expedition",
+        "type": "Party",
+        "is_manual": true,
+        "cards": [
+            "C-83",
+            "R-83"
+        ]
+    },
+    {
+        "id": "GTTP",
+        "name": "Through the Portal",
+        "type": "Global"
+    },
+    {
+        "id": "GKIP",
+        "name": "Knowledge is Power",
+        "type": "Global",
+        "upgrades": [
+            "GKIP2",
+            "GKIP3",
+            "GKIP4"
+        ]
+    },
+    {
+        "id": "GKIP2",
+        "name": "Knowledge is Power x2",
+        "type": "Global",
+        "hidden": true
+    },
+    {
+        "id": "GKIP3",
+        "name": "Knowledge is Power x3",
+        "type": "Global",
+        "hidden": true
+    },
+    {
+        "id": "GKIP4",
+        "name": "Knowledge is Power x4",
+        "type": "Global",
+        "hidden": true
+    },
+    {
+        "id": "PAOD",
+        "name": "Angels of Death",
+        "type": "Party"
+    },
+    {
+        "id": "PC",
+        "name": "Custodians",
+        "type": "Party"
+    },
+    {
+        "id": "PHP",
+        "name": "Hunted Prey",
+        "type": "Party"
+    },
+    {
+        "id": "PPA",
+        "name": "Pieces of an Artifact",
+        "type": "Party",
+        "upgrades": [
+            "PPA2",
+            "PPA3"
+        ]
+    },
+    {
+        "id": "PPA2",
+        "name": "Pieces of an Artifact x2",
+        "type": "Party",
+        "hidden": true
+    },
+    {
+        "id": "PPA3",
+        "name": "Pieces of an Artifact x3",
+        "type": "Party",
+        "hidden": true
+    },
+    {
+        "id": "PGD",
+        "name": "Guard Detail",
+        "type": "Party"
+    },
+    {
+        "id": "PDE",
+        "name": "Dimensional Equilibrium",
+        "type": "Party"
+    },
+    {
+        "id": "PHH",
+        "name": "Hunting the Hunter",
+        "type": "Party"
+    },
+    {
+        "id": "PXA",
+        "name": "Xangroth's Aid",
+        "type": "Party"
+    },
+    {
+        "id": "PDA",
+        "name": "Diamara's Aid",
+        "type": "Party"
+    },
+    {
+        "id": "PBF",
+        "name": "Beauty in Freedom",
+        "type": "Party"
+    },
+    {
+        "id": "GPA",
+        "name": "A Peril Averted",
+        "type": "Global",
+        "upgrades": [
+            "GPA2",
+            "GPA3",
+            "GPA4"
+        ]
+    },
+    {
+        "id": "GPA2",
+        "name": "A Peril Averted x2",
+        "type": "Global",
+        "hidden": true
+    },
+    {
+        "id": "GPA3",
+        "name": "A Peril Averted x3",
+        "type": "Global",
+        "hidden": true
+    },
+    {
+        "id": "GPA4",
+        "name": "A Peril Averted x4",
+        "type": "Global",
+        "hidden": true
+    },
+    {
+        "id": "GMS",
+        "name": "Mechanical Splendor",
+        "type": "Global"
+    },
+    {
+        "id": "GST",
+        "name": "Severed Ties",
+        "type": "Global"
+    }
+]
