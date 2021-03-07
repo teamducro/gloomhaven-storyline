@@ -99,14 +99,13 @@ describe('Party', () => {
         cy.get('h2').contains('City Event Decks').next().click(); // rollback
         cy.get('#city-events-bedges .bedge').contains('50').should('not.exist');
         utilities.closeModel();
-        utilities.closeModel();
 
         cy.get('#city-events-bedges .bedge').contains('10').click();
         cy.get('#city-events-bedges .bedge').contains('10').should('not.exist');
-        cy.get('#city-events-bedges .bedge').contains('20').click();
-        cy.get('#city-events-bedges .bedge').contains('20').should('not.exist');
+        cy.get('#city-events-bedges .bedge').contains('15').click();
+        cy.get('#city-events-bedges .bedge').contains('15').should('not.exist');
         cy.get('h2').contains('City Event Decks').next().click(); // rollback
-        cy.get('#city-events-bedges .bedge').contains('20').should('be.visible');
+        cy.get('#city-events-bedges .bedge').contains('15').should('be.visible');
         cy.get('h2').contains('City Event Decks').next().click(); // rollback
         cy.get('#city-events-bedges .bedge').contains('10').should('be.visible');
     });
