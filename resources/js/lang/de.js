@@ -502,8 +502,8 @@ export default {
         21: {
             "name": "Tiefere Tiefen",
             "sections": {
-                1: "While trying to discover the source of Gloomhaven's poisoned water, you've discovered a secret passage in the sewers. Perhaps there might be something interesting inside.",
-                2: "The passageway was alarmed and brought a series of mechanical sentries to life. You were able to split up and silence the alarm, which stopped the sentries in their tracks. These mechanical creations may be of some use in the future, but for now you've found a way around the deepest part of the cistern. Unfortunately, you're still going to need to get wet if you want to go further."
+                1: "Bei dem Versuch, die Quelle von Gloomhavens vergiftetem Wasser zu finden, habt ihr einen Geheimgang in der Kanalisation entdeckt. Vielleicht befindet sich dort etwas Interessantes.",
+                2: "Beim Betreten des Geheimgangs wurde ein Alarm ausgelöst und erweckte eine Reihe von mechanischen Wachposten zum Leben. Ihr wart in der Lage den Alarm zum Schweigen zu bringen, was die Wachen deaktivierte. Diese Maschinen könnten in der Zukunft von Nutzen sein, aber für den Moment habt ihr einen Weg zum tiefsten Teil der Zisterne gefunden. Leider werdet ihr immer noch nass werden, wenn ihr weiter gehen wollt."
             },
             "stages": {
                 0: "{1}",
@@ -513,8 +513,8 @@ export default {
         22: {
             "name": "Dinge hören",
             "sections": {
-                1: "The Inox and demons you encountered on the way to the Icecrag had some crude scratching mentioning a 'voice' on among their belongings. There was a cave nearby the Mountain Pass that seemed to call to you. You feel a subtle and powerful urge to explore the cave.",
-                2: "The cave contains a powerful creature, known only as 'The Voice'. With it's guidance, you were able to restore the creature's booming, bone-rattling voice. It asks that you help free it from bondage, but The Voice's motives remain uncertain."
+                1: "Die Inox und Dämonen, denen ihr auf dem Weg zum Icecrag begegnetet, hatten unter ihren Habseligkeiten einige grobe Kritzeleien, auf denen eine \"Stimme\" erwähnt wurde. In der Nähe des Bergpasses befand sich eine Höhle, die nach euch zu rufen schien. Ihr spürt einen subtilen und starken Drang, die Höhle zu erkunden.",
+                2: "In der Höhle befindet sich eine mächtige Kreatur, die nur als \"Die Stimme\" bekannt ist. Mit ihrer Hilfe konntet ihr die dröhnende, knochenklappernde Stimme der Kreatur wiederherstellen. Sie bittet euch, sie zu befreien, aber die Motive \"Der Stimme\" bleiben unklar."
             },
             "stages": {
                 0: "{1}",
@@ -524,8 +524,8 @@ export default {
         23: {
             "name": "Schau mal wer da spricht",
             "sections": {
-                1: "The Voice is such a powerful creature. You must find out more about whatever it is and what it's motives are.",
-                2: "A Quatryl scholar has advised you that the Voice may be a powerful demon bound for good reason. Although he was a bit unsure of the accuracy the text he was referring to, he warned you against freeing the Voice. He then pointed you towards a scepter that may strengthen the binding ritual. You retrieved it from a shrine on the edge of the Lingering Swamp. It was filled with dark energies, and the Voice pleaded with you not to bring the scepter into its chambers. The Voice claims you have been misled. You'll be the one to decide that."
+                1: "Die Stimme ist eine unglaublich mächtige Kreatur. Ihr müsst mehr über darüber herausfinden, was immer sie wirklich ist und was ihre Motive sind.",
+                2: "Ein Quatryl-Gelehrter hat euch darauf hingewiesen, dass die Stimme ein mächtiger Dämon sein könnte, der aus gutem Grund in die Höhle verbannt wurde. Obwohl er sich über die Genauigkeit des Textes, auf den er sich bezog, nicht ganz sicher war, warnte er euch davor, die Stimme zu befreien. Dann wies er euch auf ein Szepter hin, das das Bindungsritual verstärken könnte. Ihr habt es aus einem Schrein am Rande des Verweilenden Sumpfes geholt. Es war mit dunklen Energien gefüllt, und die Stimme flehte euch an, das Szepter nicht in seine Kammer zu bringen. Die Stimme behauptet, dass ihr in die Irre geführt wurdet. Das müsst ihr aber selbst entscheiden."
             },
             "stages": {
                 0: "{1}",
@@ -535,11 +535,11 @@ export default {
         24: {
             "name": "Let it Hail",
             "sections": {
-                1: "There is something deeply concerning about the artifact you recovered in the Temple of the Elements. You feel a powerful darkness emanating from the thing, and behind that, a deep sadness. This artifact has been corrupted, and it seems to almost be cognizant of that fact. Perhaps it would be best to bring it to an enchanter rather than mess with it yourself.",
-                2: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can tell you more about the artifact?{br}Of course she could. Hail is odd, but brilliant. However, you handed over the artifact to the Prime Demon. If you want Hail to inspect it, you'll need to get it back from him. He probably won't part with it willingly.",
-                3: "An enchanter might be able to tell you more about the artifact. However, you handed over the artifact to the Prime Demon. If you want the enchanter to inspect it, you'll need to get it back from the demon. He probably won't part with it willingly.",
-                4: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can tell you more about the artifact?",
-                5: "Hail pointed out that the artifact was corrupted. She rather abruptly sent you into the Plane of Night to break the artifact's attunement. You managed to sever the connection. Back in your own plane of existence, Hail mentioned three locations that were drawing power from the corrupted artifact. If you want to know more about the artifact, you may want to visit these locations."
+                1: "Da ist etwas zutiefst Beunruhigendes an dem Artefakt, das ihr aus dem tempel der Elemente geborgen habt. Ihr spürt eine möchtige Dunkelheit, die von dem Ding ausgeht, und dahinter eine tiefe Traurigkeit. Das Artefakt ist beschädigt und es scheint sich dieser Tatsache fast bewusst zu sein. Vielleicht wäre es das Beste es zu einem Zauberer zu bringen, anstatt selbst damit herumzuspielen.",
+                2: "Ihr habt die Aesther-Zauberin Hail im Crooked Bone getroffen. Obwohl sie ein wenig exzentricsch ist, scheint sie recht fähig zu sein. Ihr habt euch ihre Gunst verdient, indem ihr ihr bei einigen ihrer Vorhaben geholfen habt. Vielleicht kann sie euch nun mehr über das Artefakt erzählen. Natürlich kann sie das. Hail ist sonderbar, aber brilliant. Ihr aber habt das Artefakt dem obersten Dämonen übergeben. Wenn ihr wollt, dass Hail es sich ansieht, müsst ihr es von ihm zurückbekommen und er wird es euch sicherlich nicht freiwillig überlassen.",
+                3: "Eine Zauberer kann euch vielleicht mehr über das Artefakt sagen. Allerdings habt ihr das Artefakt dem obersten Dämon überlassen. Wenn ihr wollt, dass ein Zauberer es untersucht, müsst ihr es von dem Dämon zurückbekommen und er wird es euch sicherlich nicht freiwillig überlassen.",
+                4: "Ihr habt die Aesther-Zauberin Hail im Crooked Bone getroffen. Obwohl sie ein wenig exzentrisch ist, scheint sie recht fähig zu sein. Ihr habt euch ihr Gunst verdient, indem ih ihr bei einigen ihrer Vorhaben geholfen habt. Vielleicht kann sie euch jetzt mehr über das Artefakt erzählen?",
+                5: "Hail wies darauf hin, dass das Artefakt beschädigt war. Sie schickte euch ziemlich abrupt in die Ebene der Nacht, um die Einstimmung des Artefakts zu unterbrechen, was euch mit einiger Anstrngung gelang. Zurück in der Ebene von Gloomhaven erwähnte Hail drei Orte, die mit Energie aus dem beschädigten Artefakt versorgt wurden. Wenn ihr mehr über das Artefakt wissen wollt, solltet ihr diese Orte besuchen."
             },
             "stages": {
                 0: "{1}",
