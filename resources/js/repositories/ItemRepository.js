@@ -3,8 +3,8 @@ import GameData from "../services/GameData";
 
 export default class ItemRepository {
 
-    fetch() {
-        return collect((new GameData).items()).map((item) => {
+    fetch(game) {
+        return collect((new GameData).items(game)).map((item) => {
             item = new Item(item);
             return item;
         });

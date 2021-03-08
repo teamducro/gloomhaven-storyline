@@ -7,11 +7,11 @@ import ItemTextParser from "../services/ItemTextParser";
 import GameData from "../services/GameData";
 
 export default class ScenarioRepository {
-    fetch() {
-        return collect((new GameData).scenarios()).map((scenario) => {
+    fetch(game) {
+        return collect((new GameData).scenarios(game)).map((scenario) => {
             scenario = new Scenario(scenario);
-            this.fetchChapter(scenario);
-            this.fetchRegions(scenario);
+            this.fetchChapter(scenario, game);
+            this.fetchRegions(scenario, game);
 
             return scenario;
         });
@@ -230,15 +230,15 @@ export default class ScenarioRepository {
         }).first();
     }
 
-    fetchChapter(scenario) {
+    fetchChapter(scenario, game) {
         if (scenario.chapter_id) {
-            scenario.chapter_name = this.chapters.firstWhere('id', scenario.chapter_id).name;
+            scenario.chapter_name = this.fetchAllChapters(game).firstWhere('id', scenario.chapter_id).name;
         }
     }
 
-    fetchRegions(scenario) {
+    fetchRegions(scenario, game) {
         if (scenario.region_ids.length) {
-            scenario.regions = this.regions.whereIn('id', scenario.region_ids);
+            scenario.regions = this.fetchAllRegions(game).whereIn('id', scenario.region_ids);
         }
     }
 
@@ -248,12 +248,12 @@ export default class ScenarioRepository {
         });
     }
 
-    get chapters() {
-        return this._chapters || (this._chapters = collect((new GameData).chapters()));
+    fetchAllChapters(game) {
+        return this._chapters || (this._chapters = collect((new GameData).chapters(game)));
     }
 
-    get regions() {
-        return this._regions || (this._regions = collect((new GameData).regions()));
+    fetchAllRegions(game) {
+        return this._regions || (this._regions = collect((new GameData).regions(game)));
     }
 
     get scenarioValidator() {

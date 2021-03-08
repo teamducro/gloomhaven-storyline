@@ -4,8 +4,8 @@ import GameData from "../services/GameData";
 
 export default class QuestRepository {
 
-    fetch() {
-        return collect((new GameData).quests()).map((quest) => {
+    fetch(game) {
+        return collect((new GameData).quests(game)).map((quest) => {
             return new Quest(quest);
         });
     }

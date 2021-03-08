@@ -89,6 +89,7 @@ window.app = new Vue({
     el: '#app',
     data() {
         return {
+            game: 'gh',
             scenarios: null,
             quests: null,
             achievements: null,
@@ -144,15 +145,15 @@ window.app = new Vue({
             this.$bus.$emit('campaigns-changed');
         },
         async fetchAchievements() {
-            this.achievements = this.achievementRepository.fetch();
+            this.achievements = this.achievementRepository.fetch(this.game);
             await this.$nextTick();
             this.$bus.$emit('achievements-updated');
 
             return true;
         },
         async fetchScenarios(shouldSync = true) {
-            this.quests = this.questRepository.fetch();
-            this.scenarios = this.scenarioRepository.fetch();
+            this.quests = this.questRepository.fetch(this.game);
+            this.scenarios = this.scenarioRepository.fetch(this.game);
             this.scenarioRepository.setQuests(this.scenarios, this.quests);
 
             await this.$nextTick();
@@ -162,7 +163,7 @@ window.app = new Vue({
             return true;
         },
         async fetchItems() {
-            this.items = this.itemRepository.fetch();
+            this.items = this.itemRepository.fetch(this.game);
             await this.$nextTick();
             this.$bus.$emit('items-updated');
 
@@ -186,7 +187,7 @@ window.app = new Vue({
             }
 
             this.campaignData = store.get(this.campaignId) || {};
-            this.game = store.get(this.game) || 'gh';
+            this.game = store.get('game') || 'gh';
             this.stories = this.storyRepository.getStories();
             if (Helpers.loggedIn()) {
                 this.user = this.userRepository.getUser();
