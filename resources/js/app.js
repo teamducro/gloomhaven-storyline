@@ -83,17 +83,6 @@ window.i18n = new VueI18n({
 // event bus
 Vue.prototype.$bus = new Vue;
 
-Vue.directive('fragments', {
-    inserted: function (el) {
-        const children = Array.from(el.children)
-        const parent = el.parentElement
-        children.forEach((item) => {
-            parent.appendChild(item)
-        })
-        parent.removeChild(el)
-    }
-});
-
 window.app = new Vue({
     i18n,
     router,
