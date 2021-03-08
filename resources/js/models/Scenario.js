@@ -9,6 +9,7 @@ class Scenario {
 
     constructor(data) {
         this.id = data.id;
+        this.root = data.root || false;
         this._name = data.name;
         this.coordinates = data.coordinates;
         this.is_side = data.is_side || false;

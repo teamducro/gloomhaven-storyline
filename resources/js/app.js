@@ -83,6 +83,17 @@ window.i18n = new VueI18n({
 // event bus
 Vue.prototype.$bus = new Vue;
 
+Vue.directive('fragments', {
+    inserted: function (el) {
+        const children = Array.from(el.children)
+        const parent = el.parentElement
+        children.forEach((item) => {
+            parent.appendChild(item)
+        })
+        parent.removeChild(el)
+    }
+});
+
 window.app = new Vue({
     i18n,
     router,
@@ -125,6 +136,7 @@ window.app = new Vue({
 
         document.getElementById('bg').style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
 
+        this.$bus.$on('game-selected', this.switchGame);
         this.$bus.$on('campaign-selected', this.switchCampaign);
         this.$bus.$on('load-campaign-data', this.loadCampaignData);
 
@@ -172,6 +184,11 @@ window.app = new Vue({
         switchLocal(campaignId = 'local') {
             this.campaignId = campaignId;
             store.set('campaignId', this.campaignId);
+        },
+        async switchGame(game) {
+            this.game = game;
+            store.set('game', game);
+            await this.switchCampaign(this.campaignId);
         },
         async switchCampaign(campaignId, shouldFetch = false) {
             this.campaignId = campaignId;

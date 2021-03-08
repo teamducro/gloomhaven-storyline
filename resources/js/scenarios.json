@@ -1,6 +1,7 @@
 {
     "scenarios": [
         {
+            "root": true,
             "id": 1,
             "name": "Black Barrow",
             "coordinates": {

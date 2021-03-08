@@ -37,12 +37,12 @@ export default class ScenarioValidator {
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         if (scenario.isHidden()) {
-            if (states.has(ScenarioState.complete) || unlocked || scenario.id === 1) {
+            if (states.has(ScenarioState.complete) || unlocked || scenario.root) {
                 this.scenarioRepository.setIncomplete(scenario);
                 this.needsValidating = true;
             }
         } else {
-            if (states.has(ScenarioState.complete) === false && !scenario.is_side && scenario.id !== 1 && !unlocked) {
+            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked) {
                 this.scenarioRepository.setHidden(scenario);
                 this.needsValidating = true;
             }

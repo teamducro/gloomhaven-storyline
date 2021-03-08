@@ -1,6 +1,7 @@
 {
     "scenarios": [
         {
+            "root": true,
             "id": 96,
             "name": "Unexpected Visitors",
             "pages": [

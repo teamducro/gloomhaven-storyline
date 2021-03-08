@@ -44,12 +44,14 @@
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                        <li @click="toggle">
+                        <li @click="expandGameSwitch = true">
                             <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <inline-svg src="icons/story" class="mdc-list-item__graphic" aria-hidden="true"/>
                                 <span class="mdc-list-item__text">{{ $t('Storyline') }}</span>
                             </router-link>
                         </li>
+
+                        <game-switch @click="toggle" v-if="expandGameSwitch"></game-switch>
 
                         <li @click="toggle">
                             <router-link to="/map" class="mdc-list-item" active-class="mdc-list-item--activated">
@@ -157,6 +159,8 @@ export default {
             drawer: null,
             list: null,
             user: null,
+            currentRoute: null,
+            expandGameSwitch: false,
             loggedIn: Helpers.loggedIn(),
             showCampaignSwitch: false,
             auth: new AuthRepository(),
@@ -170,10 +174,14 @@ export default {
     methods: {
         toggle() {
             this.drawer.open = !this.drawer.open;
+            if (this.drawer.open) {
+                this.currentRoute = this.$router.currentRoute.path;
+                this.expandGameSwitch = false;
 
-            // load campaign options
-            if (this.drawer.open && this.showCampaignSwitch) {
-                this.$refs['campaign-switch'].applyData();
+                // load campaign options
+                if (this.showCampaignSwitch) {
+                    this.$refs['campaign-switch'].applyData();
+                }
             }
         },
         async logout() {
