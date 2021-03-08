@@ -1,4 +1,4 @@
-import AuthRepository from "../apiRepositories/AuthRepository";
+import AuthRepository from "../../apiRepositories/AuthRepository";
 import Echo from "laravel-echo";
 
 export default class EchoService {

@@ -14,7 +14,7 @@ import store from "store/dist/store.modern";
 import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
 import {loadStripe} from '@stripe/stripe-js/pure';
-import EchoService from "./services/EchoService";
+import EchoService from "./services/app/EchoService";
 import VueScrollTo from "vue-scrollto";
 import StorySyncer from "./services/StorySyncer";
 import OfflineChecker from "./services/app/OfflineChecker";
