@@ -757,12 +757,12 @@ export default {
             }
         },
     },
-    prompt: {
-        dragonChoice: {
+    prompts: {
+        dragons: {
             title: "Amici o Nemici",
             text: "Avete recuperato il tesoro del Draco. Lo restituite al Draco o seguite gli ordini del Capitano delle Guardie e provate ad uccidere il Draco?",
-            dragonChoice1: "Restituite il tesoro al Draco. Ottenete l'Achievement Globale \"Aiutato il Drago\", aggiungete l'Evento di Città 75 e l'Evento di Strada 66 ai rispettivi mazzi.",
-            dragonChoice2: "Non aiutate il Draco."
+            1: "Restituite il tesoro al Draco. Ottenete l'Achievement Globale \"Aiutato il Drago\", aggiungete l'Evento di Città 75 e l'Evento di Strada 66 ai rispettivi mazzi.",
+            2: "Non aiutate il Draco."
         }
     }
 }

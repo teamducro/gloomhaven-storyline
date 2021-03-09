@@ -922,13 +922,25 @@ export default {
             }
         },
     },
-    prompt: {
-        dragonChoice: {
+    prompts: {
+        dragons: {
             title: "Friend or Foe",
             text: "You retrieved the Drake’s treasure. Do you return it to the Drake or do you follow the Guard Captain’s orders and attempt to kill the Drake?",
-            dragonChoice1: "Return the treasure to the Drake. Gain the Global Achivement \"The Drake Aided\". Add City Event 75 and Road Event 66 to the deck",
-            dragonChoice2: "Do not aid the Drake."
-
+            1: "Return the treasure to the Drake. Gain the Global Achievement “The Drake Aided”. Add City Event 75 and Road Event 66 to the deck",
+            2: "Do not aid the Drake."
+        },
+        burningMountain: {
+            title: "Escape The Burning Mountain",
+            text: "You looted the treasure. Do you dare to escape the rumbling volcano and keep the retrieved items?",
+            1: "Conclusion A: You decide to end your turn at G and remove one of the items from the game.",
+            2: "Conclusion B: After looting the chest, all characters returned to the entrance before becoming exhausted."
+        },
+        merchantsBay: {
+            title: "The Merchant’s Bay",
+            text: "",
+            1: "You recovered both scrolls.",
+            2: "You failed to recover the Record of the Journey.",
+            3: "You failed to recover the Record of Accounts."
         }
     }
 }

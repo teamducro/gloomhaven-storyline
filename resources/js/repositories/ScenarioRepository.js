@@ -68,7 +68,7 @@ export default class ScenarioRepository {
 
     choose(scenario, choice) {
         scenario.state = ScenarioState.complete;
-        scenario.choice = choice.id;
+        scenario.choice = typeof choice === 'object' ? choice.id : choice;
 
         this.scenarioValidator.validate();
     }

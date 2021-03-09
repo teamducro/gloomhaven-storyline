@@ -27,16 +27,8 @@ export default {
 
             if (typeof this.scenario.rewards.first() === 'string') {
                 output = this.scenario.rewards.map(this.addCharacterIconsToRewards).join(', ');
-            } else if (Array.isArray(this.scenario.rewards.first())) {
-                let n2l = new N2l();
-                let conclusion = this.$t('Conclusion');
-                output += '<div class="flex flex-col">'
-                this.scenario.rewards.each((conclusionRewards, index) => {
-                    output += `<div>${conclusion} <span class="uppercase">${n2l.convert(index)}</span>: `;
-                    output += conclusionRewards.map(this.addCharacterIconsToRewards).join(', ');
-                    output += '</div>';
-                });
-                output += '</div>';
+            } else if (Array.isArray(this.scenario.rewards.first()) && this.scenario.promptChoice) {
+                output = collect(this.scenario.rewards.get(this.scenario.promptChoice - 1)).map(this.addCharacterIconsToRewards).join(', ');
             }
 
             return {

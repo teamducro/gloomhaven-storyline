@@ -236,11 +236,15 @@
         <pages v-if="scenario" ref="pages"
                :pages="scenario.pages"
         ></pages>
+
+        <!-- a choice is displayed after the scenario is completed, played may chose a unlocked scenario -->
         <choose v-if="scenario && scenario.choices" ref="choose"
                 :scenario-ids="scenario.choices"
                 @scenario-chosen="scenarioChosen"
                 @closing="chooseModalClosing"
         ></choose>
+
+        <!-- a decision-prompt is displayed before or after the scenario is played, this may influence gained achievements and rewards -->
         <decision-prompt v-if="scenario" ref="decision-prompt"
                          :config="prompt"
                          @closing="decisionPromptClosing">
@@ -346,7 +350,9 @@ export default {
                 }
             }
 
-            if (state === ScenarioState.complete && this.scenario.choices) {
+            if (state === ScenarioState.complete && this.scenario.prompt && this.prompt.promptAfter) {
+                this.$refs['decision-prompt'].open();
+            } else if (state === ScenarioState.complete && this.scenario.choices) {
                 this.$refs['choose'].open();
             } else {
                 this.scenarioRepository.changeState(this.scenario, state);
@@ -385,6 +391,8 @@ export default {
         },
         scenarioChosen(choice) {
             this.scenarioRepository.choose(this.scenario, choice);
+
+            this.storySyncer.store();
 
             this.$bus.$emit('scenarios-updated');
         },
@@ -460,6 +468,7 @@ export default {
             });
         },
         processPrompt() {
+            console.log(this.choiceService.getPromptConfig(this.scenario));
             return this.choiceService.getPromptConfig(this.scenario);
         },
         setVirtualBoardUrl() {

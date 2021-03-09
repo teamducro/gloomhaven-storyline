@@ -63,9 +63,7 @@
             "linked_from": [
                 96
             ],
-            "achievements_awarded": [
-                "PAOD"
-            ],
+            "achievements_awarded": [],
             "rewards": [
                 "10 gold each",
                 "Add City Events 88, 89 and 90 to the deck"
@@ -91,6 +89,10 @@
                 102,
                 103
             ],
+            "choices": [
+                102,
+                103
+            ],
             "linked_from": [
                 97
             ],
@@ -99,11 +101,22 @@
             },
             "todo": "multiple conclusions",
             "rewards": [
-                "10 gold each",
-                "+1 reputation",
-                "+1 prosperity",
-                "Add City Event 86 to the deck"
-            ]
+                [
+                    "10 gold each",
+                    "+1 reputation",
+                    "+1 prosperity",
+                    "Add City Event 86 to the deck"
+                ],
+                [
+                    "5 gold each",
+                    "+1 reputation"
+                ],
+                [
+                    "5 gold each",
+                    "+1 reputation"
+                ]
+            ],
+            "prompt": "merchantsBay"
         },
         {
             "id": 99,

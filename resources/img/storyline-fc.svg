@@ -100,10 +100,12 @@
     <g class="scenario" id="node102">
         <circle class="node" cx="65.3" cy="209.1017" fill="black" r="10.8"/>
         <text fill="black" x="49.05" y="204.78715">102</text>
+        <text x="47" y="204.78715" class="required">!</text>
     </g>
     <g class="scenario" id="node103">
-        <circle class="node" cx="121.55" cy="208.8517" fill="black" r="10.8"/>
-        <text fill="black" x="105.25" y="205.28715">103</text>
+        <circle class="node" cx="121.55" cy="209.1017" fill="black" r="10.8"/>
+        <text fill="black" x="105.25" y="204.78715">103</text>
+        <text x="103.25" y="204.78715" class="required">!</text>
     </g>
     <g class="scenario" id="node110">
         <circle class="node" cx="93.55" cy="237.8517" fill="black" r="10.8"/>

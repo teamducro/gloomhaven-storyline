@@ -54,7 +54,9 @@ export default class ScenarioValidator {
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         if (linkedScenarios.where('hasChoices', true).count()) {
-            let chosen = linkedScenarios.firstWhere('_choice', scenario.id);
+            let chosen = linkedScenarios.filter((s) => {
+                return String(s.choice).split(',').includes(String(scenario.id));
+            }).count() > 0;
             let withoutChoicesStates = linkedScenarios.where('hasChoices', false).pluck('state', 'state');
 
             if (scenario.isHidden()) {

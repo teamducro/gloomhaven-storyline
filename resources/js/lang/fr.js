@@ -755,12 +755,12 @@ export default {
             }
         },
     },
-    prompt: {
-        dragonChoice: {
+    prompts: {
+        dragons: {
             title: "Ami ou Ennemi",
             text: "Vous avez récupéré le trésor de la Wyverne. Le retournez vous à la Wyverne ou suivez-vous l'ordre du capitaine de la garde et attaquez la Wyverne ?",
-            dragonChoice1: "Rendre le trésor à la Wyverne. Gagnez le Haut-Fait Général \"Au service de la Wyverne\". Ajoutez l'évènement de ville 75 et l'évènement de route 66 aux paquets.",
-            dragonChoice2: "Ne pas aider la Wyverne."
+            1: "Rendre le trésor à la Wyverne. Gagnez le Haut-Fait Général \"Au service de la Wyverne\". Ajoutez l'évènement de ville 75 et l'évènement de route 66 aux paquets.",
+            2: "Ne pas aider la Wyverne."
 
         }
     }

@@ -145,7 +145,9 @@ export default {
                         if (!scenario.choices) {
                             $edges.show();
                         } else if (scenario.choice) {
-                            $('#edge' + scenario.id + '-' + scenario.choice).show();
+                            String(scenario.choice).split(',').forEach((c) => {
+                                $('#edge' + scenario.id + '-' + c).show();
+                            });
                         }
                     }
                 }

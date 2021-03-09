@@ -968,7 +968,7 @@
             "achievements_awarded": [
                 "PTDC"
             ],
-            "prompt": "dragonChoice"
+            "prompt": "dragons"
         },
         {
             "id": 26,
@@ -1329,7 +1329,7 @@
                 "PTVT",
                 "PTDT"
             ],
-            "prompt": "dragonChoice"
+            "prompt": "dragons"
         },
         {
             "id": 34,
@@ -2955,7 +2955,8 @@
                     "-1 reputation",
                     "-2 prosperity"
                 ]
-            ]
+            ],
+            "prompt": "burningMountain"
         },
         {
             "id": 83,

@@ -759,12 +759,12 @@ export default {
             }
         },
     },
-    prompt: {
-        dragonChoice: {
+    prompts: {
+        dragons: {
             title: "Freund order Feind",
             text: "You retrieved the Drake's treasure. Do you return it to the Drake or do you follow the Guard Captain's orders and attempt to kill the Drake?",
-            dragonChoice1: "Return the treasure to the Drake. Gain the Global Achivement \"The Drake Aided\". Add City Event 75 and Road Event 66 to the deck",
-            dragonChoice2: "Do not aid the Drake."
+            1: "Return the treasure to the Drake. Gain the Global Achivement \"The Drake Aided\". Add City Event 75 and Road Event 66 to the deck",
+            2: "Do not aid the Drake."
 
         }
     }

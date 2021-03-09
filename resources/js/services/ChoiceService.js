@@ -1,55 +1,72 @@
 import PromptConfig from "../models/PromptConfig";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import AchievementRepository from "../repositories/AchievementRepository";
+import {ScenarioState} from "../models/ScenarioState";
 
 class ChoiceService {
     constructor() {
     }
 
-    setChoice(id, value) {
-        this.findScenariosWithChoice(id)
-            .each((s) => {
-                s.promptChoice = value;
-            });
-    }
-
-    findScenariosWithChoice(id) {
-        return this.scenarioRepository
-            .where((s) => {
-                return s.prompt === id;
-            });
-    }
-
     getPromptConfig(scenario) {
         switch (scenario.prompt) {
-            case "dragonChoice":
-                let drakesTreasure = this.achievementRepository.find("PTDT");
-                let drakesCommand = this.achievementRepository.find("PTDC");
+            case 'dragons':
+                let drakesTreasure = this.achievementRepository.find('PTDT');
+                let drakesCommand = this.achievementRepository.find('PTDC');
 
-                return new PromptConfig({
+                return new PromptConfig(scenario, {
+                    options: 2,
                     show: !this.isChoiceSet(scenario.prompt) && drakesCommand.awarded && drakesTreasure.awarded,
-                    title: "prompt.dragonChoice.title",
-                    text: "prompt.dragonChoice.text",
-                    scenario: scenario,
-                    options: [
-                        {
-                            id: "dragonChoice1",
-                            text: "prompt.dragonChoice.dragonChoice1",
-                            value: "dragonChoice1"
-                        },
-                        {
-                            id: "dragonChoice2",
-                            text: "prompt.dragonChoice.dragonChoice2",
-                            value: "dragonChoice2"
-                        }
-                    ],
-                    callback: (value) => {
-                        if (value === "dragonChoice1") {
-                            this.achievementRepository.gain("GTDA")
+                    promptAfter: false,
+                    callback: (id) => {
+                        if (id === 1) {
+                            this.achievementRepository.gain('GTDA');
                         } else {
-                            this.achievementRepository.lose("GTDA")
+                            this.achievementRepository.lose('GTDA');
                         }
-                        this.setChoice(scenario.prompt, value);
+                        this.setChoice(scenario, id, false);
+                    }
+                });
+
+            case 'burningMountain':
+                return new PromptConfig(scenario, {
+                    options: 2,
+                    callback: (id) => {
+                        this.setChoice(scenario, id);
+                    }
+                });
+
+            case 'merchantsBay':
+                return new PromptConfig(scenario, {
+                    options: 3,
+                    callback: (value) => {
+                        if (value) {
+                            // achievements
+                            this.achievementRepository.gain('GKIP');
+                            if (value === 1) {
+                                this.achievementRepository.gain('PC');
+                            } else {
+                                this.achievementRepository.lose('PC');
+                            }
+
+                            // scenarios
+                            if (value === 1) {
+                                this.scenarioRepository.choose(scenario, '102,103');
+                            }
+                            if (value === 2) {
+                                this.scenarioRepository.choose(scenario, 102);
+                            }
+                            if (value === 3) {
+                                this.scenarioRepository.choose(scenario, 103);
+                            }
+                        } else {
+                            // reset
+                            this.achievementRepository.lose('GKIP');
+                            this.achievementRepository.lose('PC');
+                            this.scenarioRepository.setHidden(102);
+                            this.scenarioRepository.setHidden(103);
+                        }
+
+                        this.setChoice(scenario, value);
                     }
                 });
         }
@@ -57,11 +74,26 @@ class ChoiceService {
         return undefined;
     }
 
+    setChoice(scenario, value, setComplete = true) {
+        if (value !== null && setComplete) {
+            this.scenarioRepository.changeState(scenario, ScenarioState.complete);
+        }
+
+        this.findScenariosWithChoice(scenario.prompt).each((s) => {
+            s.promptChoice = value;
+        });
+    }
+
     isChoiceSet(id) {
-        return this.findScenariosWithChoice(id)
-            .contains((s) => {
-                return s.promptChoice
-            });
+        return this.findScenariosWithChoice(id).contains((s) => {
+            return s.promptChoice
+        });
+    }
+
+    findScenariosWithChoice(id) {
+        return this.scenarioRepository.where((s) => {
+            return s.prompt === id;
+        });
     }
 
     get scenarioRepository() {
