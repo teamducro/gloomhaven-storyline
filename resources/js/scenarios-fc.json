@@ -28,7 +28,7 @@
                 }
             ],
             "treasure": {
-                "91": "Gain 30 gold and Party Achievement: \"Opportunists\" Add City Event 84 to the deck"
+                "91": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
             },
             "achievements_awarded": [
                 "GTTP"
@@ -97,7 +97,7 @@
                 97
             ],
             "treasure": {
-                "79": "Gain \"Falcon Figurine\" (Item 157)"
+                "79": "Gain “Falcon Figurine” (Item 157)"
             },
             "todo": "multiple conclusions",
             "rewards": [
@@ -141,13 +141,12 @@
                 97
             ],
             "treasure": {
-                "95": "Gain 25 gold and Party Achievement: \"A Strongbox\" Add City Event  85 to the deck"
+                "95": "Gain 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
             },
-            "todo": "multiple conclusions",
             "rewards": [
                 "10 gold each",
                 "+1 prosperity",
-                "\"Minor Antidote\" design (Item 153)"
+                "“Minor Antidote” (Item 153)"
             ]
         },
         {
@@ -193,10 +192,10 @@
             ],
             "rewards": [
                 "Choose to gain one of the following sets:",
-                "\"Telescopic Lens\" (Item 059) and",
-                "\"Ancient Drill\" (Item 112), OR",
-                "\"Curious Gear\" (Item 125) and",
-                "\"Remote Spider\" (Item 126)"
+                "“Telescopic Lens” (Item 059) and",
+                "“Ancient Drill” (Item 112), OR",
+                "“Curious Gear” (Item 125) and",
+                "“Remote Spider” (Item 126)"
             ]
         },
         {
@@ -227,7 +226,7 @@
                 "GKIP"
             ],
             "treasure": {
-                "93": "Gain \"Scroll of Haste\" (Item 159)"
+                "93": "Gain “Scroll of Haste” (Item 159)"
             },
             "rewards": [
                 "20 collective gold",
@@ -277,8 +276,8 @@
                 98
             ],
             "treasure": {
-                "77": "Gain \"Major Cure Potion\" (Item 090)",
-                "86": "Unlock Diviner Solo Scenario \"Forecast of the Inevitable"
+                "77": "Gain “Major Cure Potion” (Item 090)",
+                "86": "Unlock Diviner Solo Scenario “Forecast of the Inevitable"
             },
             "rewards": [
                 "15 experience each",
@@ -328,7 +327,7 @@
                 "PGD"
             ],
             "treasure": {
-                "81": "Gain \"Scroll of Haste\" (Item 159) and 10 gold"
+                "81": "Gain “Scroll of Haste” (Item 159) and 10 gold"
             },
             "rewards": [
                 "+2 prosperity",
@@ -381,7 +380,7 @@
                 "87": "Suffer 2 damage, gain CURSE and 15 gold"
             },
             "rewards": [
-                "\"Major Mana Potion\" (Item 048)"
+                "“Major Mana Potion” (Item 048)"
             ]
         },
         {
@@ -432,11 +431,11 @@
                 99
             ],
             "treasure": {
-                "83": "Gain \"Major Power Potion\" (Item 041)",
-                "88": "Gain \"Second Chance Ring\" (Item 070)"
+                "83": "Gain “Major Power Potion” (Item 041)",
+                "88": "Gain “Second Chance Ring” (Item 070)"
             },
             "rewards": [
-                "\"Major Antidote\" design (Item 154)"
+                "“Major Antidote” (Item 154)"
             ]
         },
         {
@@ -538,7 +537,7 @@
                 "PPA"
             ],
             "treasure": {
-                "78": "\"Ancient Bow\" design (Item 157)",
+                "78": "“Ancient Bow” (Item 157)",
                 "90": "Read section 75 on page 49"
             },
             "todo": "multiple conclusions",
@@ -592,8 +591,8 @@
                 "// PAOD"
             ],
             "rewards": [
-                "\"Curseward Armor\" (Item 155)",
-                "// 2 \"Throwing Axes\" (Item 161)\n"
+                "“Curseward Armor” (Item 155)",
+                "// 2 “Throwing Axes” (Item 161)\n"
             ]
         },
         {
@@ -638,7 +637,7 @@
             },
             "rewards": [
                 "10 experience each",
-                "\"Protective Charm\" (Item 052)\n"
+                "“Protective Charm” (Item 052)\n"
             ]
         },
         {
@@ -667,10 +666,10 @@
                 "GAPA"
             ],
             "treasure": {
-                "84": "Gain \"Mask of Terrors\" (Item 066)"
+                "84": "Gain “Mask of Terrors” (Item 066)"
             },
             "rewards": [
-                "\"Crystal Tiara\" (Item 163)"
+                "“Crystal Tiara” (Item 163)"
             ]
         },
         {
@@ -711,7 +710,7 @@
             ],
             "todo": "multiple conclusions",
             "treasure": {
-                "82": "\"Rejuvenation Greaves\" design (Item 158)"
+                "82": "“Rejuvenation Greaves” (Item 158)"
             },
             "rewards": [
                 "12 experience each",

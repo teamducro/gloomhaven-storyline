@@ -122,7 +122,7 @@
         "slot": "Small Item",
         "source": "Prosperity 1",
         "consumed": true,
-        "desc": "During your turn, perform a \"{Heal} 3, self\" action."
+        "desc": "During your turn, perform a “{Heal} 3, self” action."
     },
     {
         "id": 13,
@@ -274,7 +274,7 @@
         "slot": "Small Item",
         "source": "Prosperity 3",
         "consumed": true,
-        "desc": "During your turn, perform a \"{Heal} 5, self\" action."
+        "desc": "During your turn, perform a “{Heal} 5, self” action."
     },
     {
         "id": 28,
@@ -560,7 +560,7 @@
         "slot": "Small Item",
         "source": "Prosperity 7",
         "consumed": true,
-        "desc": "During your turn, perform a \"{Heal} 7, self\" action."
+        "desc": "During your turn, perform a “{Heal} 7, self” action."
     },
     {
         "id": 56,
@@ -686,7 +686,7 @@
         "count": 2,
         "cost": 60,
         "slot": "Two Hands",
-        "source": "Prosperity 9\nScenario #111 (Treasure #92)\nSection 132 -> g106\"Strangler's Park\" in book",
+        "source": "Prosperity 9\nScenario #111 (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
         "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
     },
     {
@@ -704,7 +704,7 @@
         "count": 2,
         "cost": 75,
         "slot": "Small Item",
-        "source": "Prosperity 9\nFC Challenge Scenario, Rift Card 12 (Treasure #89)\nSection 103 -> 84\"Gateway to the Firmament\" in book",
+        "source": "Prosperity 9\nFC Challenge Scenario, Rift Card 12 (Treasure #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
         "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
     },
     {
@@ -733,7 +733,7 @@
         "slot": "Body",
         "source": "Random Item",
         "consumed": true,
-        "desc": "During your turn, perform a \"{Move} 4, {Jump}\" action"
+        "desc": "During your turn, perform a “{Move} 4, {Jump}” action"
     },
     {
         "id": 74,
@@ -938,7 +938,7 @@
         "slot": "Small Item",
         "source": "Random Item",
         "consumed": true,
-        "desc": "During your turn, perform a \"{Heal} 3, {Range} 5\" action"
+        "desc": "During your turn, perform a “{Heal} 3, {Range} 5” action"
     },
     {
         "id": 95,
@@ -967,7 +967,7 @@
         "cost": 40,
         "slot": "Legs",
         "source": "Scenario #38 (Treasure #29)",
-        "desc": "If you move 4 or more hexes on your turn, perform a \"\"{Heal} 1, Self\"\" action."
+        "desc": "If you move 4 or more hexes on your turn, perform a “{Heal} 1, Self” action."
     },
     {
         "id": 98,
@@ -985,7 +985,7 @@
         "cost": 50,
         "slot": "Legs",
         "source": "Scenario #63 (Treasure #12)",
-        "desc": "Ignore the damaging effects of hazardous terrain and perform a \"\"{Heal} 2, Self\"\" action on any turn in which you have entered a hazardous terrain hex."
+        "desc": "Ignore the damaging effects of hazardous terrain and perform a “{Heal} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
     },
     {
         "id": 100,
@@ -995,7 +995,7 @@
         "slot": "Body",
         "source": "Scenario #31 (Treasure #69)",
         "spent": true,
-        "desc": "During your turn, perform a \"{Heal} 2, target any summoned ally\" action."
+        "desc": "During your turn, perform a “{Heal} 2, target any summoned ally” action."
     },
     {
         "id": 101,
@@ -1052,7 +1052,7 @@
         "cost": 40,
         "slot": "Head",
         "source": "Road Event 05",
-        "desc": "Any time you kill an enemy during your turn, perform a \"{Heal} 1, Self\" action."
+        "desc": "Any time you kill an enemy during your turn, perform a “{Heal} 1, Self” action."
     },
     {
         "id": 107,
@@ -1081,7 +1081,7 @@
         "slot": "Head",
         "source": "City Event 62",
         "consumed": true,
-        "desc": "During your \"Loot 1\" ability, perform a \"Loot 2\" ability instead."
+        "desc": "During your “Loot 1” ability, perform a “Loot 2” ability instead."
     },
     {
         "id": 110,
@@ -1099,7 +1099,7 @@
         "cost": 50,
         "slot": "Head",
         "source": "Scenario #64 (Treasure #09)",
-        "desc": "When attacked, if {ice} is Strong, perform a \"PUSH 2\" action targeting the attacker."
+        "desc": "When attacked, if {ice} is Strong, perform a “PUSH 2” action targeting the attacker."
     },
     {
         "id": 112,
@@ -1196,7 +1196,7 @@
         "slot": "Two Hands",
         "source": "Reward From Scenario #88",
         "spent": true,
-        "desc": "During your turn, a summoned ally within {Range} 3 performs a \"{Move} 3\" action with you controlling the action."
+        "desc": "During your turn, a summoned ally within {Range} 3 performs a “{Move} 3” action with you controlling the action."
     },
     {
         "id": 121,
@@ -1241,7 +1241,7 @@
         "slot": "Small Item",
         "source": "Scenario #93 (Treasure #54)",
         "consumed": true,
-        "desc": "During your turn, force an enemy within {Range} 5 to perform a \"{Move} 2\" action with you controlling the action."
+        "desc": "During your turn, force an enemy within {Range} 5 to perform a “{Move} 2” action with you controlling the action."
     },
     {
         "id": 125,
@@ -1271,7 +1271,7 @@
         "slot": "Small Item",
         "source": "City Event 61",
         "consumed": true,
-        "desc": "During your turn, perform a \"Loot 1\" action."
+        "desc": "During your turn, perform a “Loot 1” action."
     },
     {
         "id": 128,
@@ -1301,7 +1301,7 @@
         "slot": "Small Item",
         "source": "Scenario #81 (Treasure #68)",
         "consumed": true,
-        "desc": "During your turn, {lightX} {darkX} to perform a \"{Heal} 25, Self\" action"
+        "desc": "During your turn, {lightX} {darkX} to perform a “{Heal} 25, Self” action"
     },
     {
         "id": 131,
@@ -1527,7 +1527,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
-        "source": "Reward from Scenario #97\nSection 125 \"A locked chest\" in book",
+        "source": "Reward from Scenario #97\nSection 125 “A locked chest” in book",
         "consumed": true,
         "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
     },
@@ -1575,7 +1575,7 @@
         "count": 2,
         "cost": 40,
         "slot": "Two Hands",
-        "source": "Scenario #107 (Treasure #78)\nSection 32\"Collapsed Atrium\" in book",
+        "source": "Scenario #107 (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
         "desc": "During your ranged attack, add +2 {Attack}, CURSE, and WOUND to a single attack.",
         "consumed": true
     },
@@ -1625,7 +1625,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
-        "source": "Reward from Scenario #112\nSection 62 \"Mechanical Splendor\"in book.",
+        "source": "Reward from Scenario #112\nSection 62 “Mechanical Splendor “in book.",
         "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you.",
         "consumed": true
     },
