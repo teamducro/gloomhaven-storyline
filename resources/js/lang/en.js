@@ -244,6 +244,21 @@ export default {
         "High Sea Escort": "High Sea Escort",
         "Grave Job": "Grave Job",
         "Northern Expedition": "Northern Expedition",
+        "Through the Portal": "Through the Portal",
+        "Knowledge is Power": "Knowledge is Power",
+        "Angels of Death": "Angels of Death",
+        "Custodians": "Custodians",
+        "Hunted Prey": "Hunted Prey",
+        "Pieces of an Artifact": "Pieces of an Artifact",
+        "Guard Detail": "Guard Detail",
+        "Dimensional Equilibrium": "Dimensional Equilibrium",
+        "Hunting the Hunter": "Hunting the Hunter",
+        "Xangroths Aid": "Xangroth's Aid",
+        "Diamaras Aid": "Diamara's Aid",
+        "Beauty in Freedom": "Beauty in Freedom",
+        "A Peril Averted": "A Peril Averted",
+        "Mechanical Splendor": "Mechanical Splendor",
+        "Severed Ties": "Severed Ties"
     },
     items: {
         "Boots of Striding": "Boots of Striding",
@@ -941,6 +956,12 @@ export default {
             1: "You recovered both scrolls.",
             2: "You failed to recover the Record of the Journey.",
             3: "You failed to recover the Record of Accounts."
+        },
+        aftershocks: {
+            title: "Protect the civilians",
+            text: "How many Valraths were you able to bring to safety?",
+            1: "Exactly four civilians are alive.",
+            2: "Five or more civilians are alive."
         }
     }
 }
