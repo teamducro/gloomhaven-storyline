@@ -88,6 +88,30 @@ class ChoiceService {
                         this.setChoice(scenario, value);
                     }
                 });
+            case 'shiftingGears':
+                return new PromptConfig(scenario, {
+                    options: 2,
+                    callback: (value) => {
+                        if (value) {
+                            if (value === 2) {
+                                // achievements
+                                this.achievementRepository.gain('GPA');
+
+                                // scenarios
+                                this.scenarioRepository.choose(scenario, '106,107');
+                            } else {
+                                this.achievementRepository.lose('GPA');
+                            }
+                        } else {
+                            // reset
+                            this.achievementRepository.lose('GPA');
+                            this.scenarioRepository.setHidden(106);
+                            this.scenarioRepository.setHidden(107);
+                        }
+
+                        this.setChoice(scenario, value);
+                    }
+                });
         }
 
         return undefined;

@@ -190,8 +190,11 @@
                 "x": 0,
                 "y": 0
             },
-            "todo": "multiple conclusions",
             "links_to": [
+                106,
+                107
+            ],
+            "choices": [
                 106,
                 107
             ],
@@ -203,16 +206,12 @@
                 "85": "Suffer 3 damage, gain POISON and 10 gold"
             },
             "achievements_awarded": [
-                "PPA",
                 "GKIP"
             ],
             "rewards": [
-                "Choose to gain one of the following sets:",
-                "“Telescopic Lens” (Item 059) and",
-                "“Ancient Drill” (Item 112), OR",
-                "“Curious Gear” (Item 125) and",
-                "“Remote Spider” (Item 126)"
-            ]
+                "Choose to gain one of the following sets: “Telescopic Lens” (Item 059) and “Ancient Drill” (Item 112), OR “Curious Gear” (Item 125) and “Remote Spider” (Item 126)"
+            ],
+            "prompt": "shiftingGears"
         },
         {
             "id": 101,
@@ -297,8 +296,7 @@
             },
             "rewards": [
                 "15 experience each",
-                "If no more than 2+C inhabitants were intimidated: +2 reputation",
-                "Otherwise: -2 reputation"
+                "If no more than 2+C inhabitants were intimidated: +2 reputation Otherwise: -2 reputation"
             ]
         },
         {
@@ -497,7 +495,7 @@
                 100
             ],
             "achievements_awarded": [
-                "PPA"
+                "GPA"
             ],
             "todo": "multiple conclusions",
             "rewards": [
@@ -550,7 +548,7 @@
                 100
             ],
             "achievements_awarded": [
-                "PPA"
+                "GPA"
             ],
             "treasure": {
                 "78": "“Ancient Bow” (Item 157)",

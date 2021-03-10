@@ -178,10 +178,12 @@
     <g class="scenario" id="node106">
         <circle class="node" cx="318.8" cy="208.75001" fill="black" r="10.8"/>
         <text fill="black" x="302.55" y="204.43545">106</text>
+        <text x="300.55" y="204.43545" class="required">!</text>
     </g>
     <g class="scenario" id="node107">
         <circle class="node" cx="375.05" cy="208.50001" fill="black" r="10.8"/>
-        <text fill="black" x="358.75" y="204.93545">107</text>
+        <text fill="black" x="358.75" y="204.43545">107</text>
+        <text x="356.75" y="204.43545" class="required">!</text>
     </g>
     <g class="scenario" id="node112">
         <circle class="node" cx="347.05" cy="237.50001" fill="black" r="10.8"/>
@@ -206,10 +208,12 @@
     <g class="scenario" id="node108">
         <circle class="node" cx="445.8" cy="208.75002" fill="black" r="10.8"/>
         <text fill="black" x="429.55" y="204.43546">108</text>
+        <text x="427.55" y="204.43546" class="required">!</text>
     </g>
     <g class="scenario" id="node109">
         <circle class="node" cx="502.05" cy="208.50002" fill="black" r="10.8"/>
-        <text fill="black" x="485.75" y="204.93546">109</text>
+        <text fill="black" x="485.75" y="204.43546">109</text>
+        <text x="483.75" y="204.43546" class="required">!</text>
     </g>
     <g class="scenario" id="node113">
         <circle class="node" cx="474.05" cy="237.50002" fill="black" r="10.8"/>

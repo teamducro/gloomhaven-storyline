@@ -438,24 +438,24 @@
         "type": "Party"
     },
     {
-        "id": "PPA",
+        "id": "GPA",
         "name": "Pieces of an Artifact",
-        "type": "Party",
+        "type": "Global",
         "upgrades": [
-            "PPA2",
-            "PPA3"
+            "GPA2",
+            "GPA3"
         ]
     },
     {
-        "id": "PPA2",
+        "id": "GPA2",
         "name": "Pieces of an Artifact x2",
-        "type": "Party",
+        "type": "Global",
         "hidden": true
     },
     {
-        "id": "PPA3",
+        "id": "GPA3",
         "name": "Pieces of an Artifact x3",
-        "type": "Party",
+        "type": "Global",
         "hidden": true
     },
     {
