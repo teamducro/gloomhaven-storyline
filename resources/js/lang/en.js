@@ -937,7 +937,7 @@ export default {
         },
         merchantsBay: {
             title: "The Merchant’s Bay",
-            text: "",
+            text: "You doused the flames and disposed the interlopers. How many records were you able to save?",
             1: "You recovered both scrolls.",
             2: "You failed to recover the Record of the Journey.",
             3: "You failed to recover the Record of Accounts."

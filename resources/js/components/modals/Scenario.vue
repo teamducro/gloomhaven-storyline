@@ -468,7 +468,6 @@ export default {
             });
         },
         processPrompt() {
-            console.log(this.choiceService.getPromptConfig(this.scenario));
             return this.choiceService.getPromptConfig(this.scenario);
         },
         setVirtualBoardUrl() {

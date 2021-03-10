@@ -64,7 +64,9 @@ export default {
     },
     watch: {
         config: function (newVal, oldVal) {
-            this.togglePrompt(newVal.show || false);
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.togglePrompt(newVal.show || false);
+            }
         }
     },
 
