@@ -99,7 +99,9 @@
             "treasure": {
                 "79": "Gain “Falcon Figurine” (Item 157)"
             },
-            "todo": "multiple conclusions",
+            "achievements_awarded": [
+                "GKIP"
+            ],
             "rewards": [
                 [
                     "10 gold each",
@@ -137,17 +139,31 @@
                 104,
                 105
             ],
+            "choices": [
+                104,
+                105
+            ],
             "linked_from": [
                 97
             ],
             "treasure": {
                 "95": "Gain 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
             },
+            "achievements_awarded": [
+                "GKIP"
+            ],
             "rewards": [
-                "10 gold each",
-                "+1 prosperity",
-                "“Minor Antidote” (Item 153)"
-            ]
+                [
+                    "5 gold each",
+                    "“Minor Antidote” (Item 153)"
+                ],
+                [
+                    "10 gold each",
+                    "+1 prosperity",
+                    "“Minor Antidote” (Item 153)"
+                ]
+            ],
+            "prompt": "aftershocks"
         },
         {
             "id": 100,

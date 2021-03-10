@@ -41,7 +41,6 @@ class ChoiceService {
                     callback: (value) => {
                         if (value) {
                             // achievements
-                            this.achievementRepository.gain('GKIP');
                             if (value === 1) {
                                 this.achievementRepository.gain('PC');
                             } else {
@@ -60,10 +59,30 @@ class ChoiceService {
                             }
                         } else {
                             // reset
-                            this.achievementRepository.lose('GKIP');
                             this.achievementRepository.lose('PC');
                             this.scenarioRepository.setHidden(102);
                             this.scenarioRepository.setHidden(103);
+                        }
+
+                        this.setChoice(scenario, value);
+                    }
+                });
+            case 'aftershocks':
+                return new PromptConfig(scenario, {
+                    options: 2,
+                    callback: (value) => {
+                        if (value) {
+                            // scenarios
+                            if (value === 1) {
+                                this.scenarioRepository.choose(scenario, 104);
+                            }
+                            if (value === 2) {
+                                this.scenarioRepository.choose(scenario, '104,105');
+                            }
+                        } else {
+                            // reset
+                            this.scenarioRepository.setHidden(104);
+                            this.scenarioRepository.setHidden(105);
                         }
 
                         this.setChoice(scenario, value);
