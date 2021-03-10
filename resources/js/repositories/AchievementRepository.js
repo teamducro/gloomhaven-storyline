@@ -16,6 +16,8 @@ export default class AchievementRepository {
 
     gain(id) {
         let achievement = this.find(id);
+
+        // An achievement can require an other achievement
         if (achievement.requirement) {
             let fulfilledRequirements = app.achievements
                 .where('id', achievement.requirement)
@@ -24,6 +26,8 @@ export default class AchievementRepository {
                 return;
             }
         }
+
+        // Lose the current achievement in the group because it is replaced
         if (achievement.group) {
             let group = new AchievementGroup(achievement.group);
             if (group.current) {
@@ -31,6 +35,8 @@ export default class AchievementRepository {
             }
             group.gain(achievement.id);
         }
+
+        // Gain the next achievement from the upgrade list
         if (achievement.upgrades.length && achievement.awarded) {
             let next = this.findMany(achievement.upgrades)
                 .first(item => !item.awarded);
@@ -41,6 +47,7 @@ export default class AchievementRepository {
 
         achievement.gain();
 
+        // These achievements are unlocked via the user interface and may unlock scenarios.
         if (achievement.is_manual) {
             const scenarioToUnlock = this.scenarioRepository.getSideScenarioByManualAchievement(achievement)
             if (scenarioToUnlock
@@ -55,6 +62,8 @@ export default class AchievementRepository {
 
     remove(id) {
         let achievement = this.find(id);
+
+        // Gain the last achievement from the group because the current is lost.
         if (achievement.group) {
             let group = new AchievementGroup(achievement.group);
             group.remove(achievement.id);
@@ -63,6 +72,8 @@ export default class AchievementRepository {
                 this.find(group.current).gain();
             }
         }
+
+        // Remove one achievement from the list
         if (achievement.upgrades.length) {
             let last = this.findMany(achievement.upgrades)
                 .last(item => item.awarded) || achievement;
@@ -71,6 +82,7 @@ export default class AchievementRepository {
 
         achievement.remove();
 
+        // These achievements are unlocked via the user interface and may hide scenarios.
         if (achievement.is_manual) {
             const scenarioToHide = this.scenarioRepository.getSideScenarioByManualAchievement(achievement);
             if (scenarioToHide && scenarioToHide.isVisible()) {
