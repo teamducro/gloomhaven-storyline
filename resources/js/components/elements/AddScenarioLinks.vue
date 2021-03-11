@@ -26,11 +26,13 @@ export default {
 
             this.scenarioTextParser.parse(this.text).each((name, id) => {
                 const scenario = this.scenarioRepository.find(id);
-                if (scenario.isVisible()) {
-                    scenarios[id] = scenario;
-                    output = output.replace(name, `<scenario-number :scenario="scenarios[${id}]"/>`);
-                } else {
-                    output = output.replace(name, 'Hidden Scenario');
+                if (scenario) {
+                    if (scenario.isVisible()) {
+                        scenarios[id] = scenario;
+                        output = output.replace(name, `<scenario-number :scenario="scenarios[${id}]"/>`);
+                    } else {
+                        output = output.replace(name, 'Hidden Scenario');
+                    }
                 }
             });
 
