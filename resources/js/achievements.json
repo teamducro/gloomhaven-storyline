@@ -456,7 +456,7 @@
         "id": "GPOA3",
         "name": "Pieces of an Artifact x3",
         "type": "Global",
-        "hidden": true,
+        "hidden": true
     },
     {
         "id": "PGD",
