@@ -46,18 +46,27 @@ export default class AchievementRepository {
         }
 
         achievement.gain();
+        this.unlockScenariosByAchievement(achievement);
+    }
 
-        // These achievements are unlocked via the user interface and may unlock scenarios.
+    // These achievements are unlocked via the user interface and may unlock scenarios.
+    unlockScenariosByAchievement(achievement, unlock = true) {
         if (achievement.is_manual) {
-            const scenarioToUnlock = this.scenarioRepository.getSideScenarioByManualAchievement(achievement)
-            if (scenarioToUnlock
-                && scenarioToUnlock.state !== ScenarioState.incomplete
-                && scenarioToUnlock.state !== ScenarioState.complete) {
-                this.scenarioRepository.changeState(scenarioToUnlock, ScenarioState.incomplete);
+            const scenario = this.scenarioRepository.getSideScenarioByManualAchievement(achievement)
+            if (unlock && scenario
+                && scenario.state !== ScenarioState.incomplete
+                && scenario.state !== ScenarioState.complete) {
+                this.scenarioRepository.changeState(scenario, ScenarioState.incomplete);
+            } else if (!unlock && scenario && scenario.isVisible()) {
+                this.scenarioRepository.changeState(scenario, ScenarioState.hidden);
             } else {
                 this.storySyncer.store();
             }
         }
+    }
+
+    lockScenariosByAchievement(achievement) {
+        this.unlockScenariosByAchievement(achievement, false);
     }
 
     remove(id) {
@@ -81,16 +90,7 @@ export default class AchievementRepository {
         }
 
         achievement.remove();
-
-        // These achievements are unlocked via the user interface and may hide scenarios.
-        if (achievement.is_manual) {
-            const scenarioToHide = this.scenarioRepository.getSideScenarioByManualAchievement(achievement);
-            if (scenarioToHide && scenarioToHide.isVisible()) {
-                this.scenarioRepository.changeState(scenarioToHide, ScenarioState.hidden);
-            } else {
-                this.storySyncer.store();
-            }
-        }
+        this.lockScenariosByAchievement(achievement);
     }
 
     lose(id) {

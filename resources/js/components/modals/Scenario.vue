@@ -390,7 +390,7 @@ export default {
             this.storySyncer.store();
         },
         scenarioChosen(choice) {
-            this.scenarioRepository.choose(this.scenario, choice);
+            this.scenarioRepository.choose(this.scenario, choice, true);
 
             this.storySyncer.store();
 

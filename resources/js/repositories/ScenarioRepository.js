@@ -66,11 +66,17 @@ export default class ScenarioRepository {
         this.changeState(scenario, ScenarioState.required, shouldValidate);
     }
 
-    choose(scenario, choice) {
-        scenario.state = ScenarioState.complete;
-        scenario.choice = typeof choice === 'object' ? choice.id : choice;
+    choose(scenario, choice, validate = false) {
+        if (choice) {
+            scenario.state = ScenarioState.complete;
+            scenario.choice = typeof choice === 'object' ? choice.id : choice;
+        } else {
+            scenario.choice = null;
+        }
 
-        this.scenarioValidator.validate();
+        if (validate) {
+            this.scenarioValidator.validate();
+        }
     }
 
     unlockTreasureScenario(scenario, id) {

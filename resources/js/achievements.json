@@ -438,25 +438,25 @@
         "type": "Party"
     },
     {
-        "id": "GPA",
+        "id": "GPOA",
         "name": "Pieces of an Artifact",
         "type": "Global",
         "upgrades": [
-            "GPA2",
-            "GPA3"
+            "GPOA2",
+            "GPOA3"
         ]
     },
     {
-        "id": "GPA2",
+        "id": "GPOA2",
         "name": "Pieces of an Artifact x2",
         "type": "Global",
         "hidden": true
     },
     {
-        "id": "GPA3",
+        "id": "GPOA3",
         "name": "Pieces of an Artifact x3",
         "type": "Global",
-        "hidden": true
+        "hidden": true,
     },
     {
         "id": "PGD",

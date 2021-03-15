@@ -469,6 +469,9 @@
                 "x": 0,
                 "y": 0
             },
+            "choices": [
+                112
+            ],
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -501,18 +504,23 @@
                 "fc/2/37",
                 "fc/2/39"
             ],
-            "links_to": [],
+            "links_to": [
+                112
+            ],
             "linked_from": [
                 100
             ],
-            "achievements_awarded": [
-                "GPA"
-            ],
-            "todo": "multiple conclusions",
+            "achievements_awarded": [],
             "rewards": [
-                "175 gold each, This money must immediately be spent on any [], [], [], [], [], or [] enhancements",
-                "// +1 prosperity"
-            ]
+                [
+                    "175 gold each, This money must immediately be spent on any [], [], [], [], [], or [] enhancements"
+                ],
+                [
+                    "175 gold each, This money must immediately be spent on any [], [], [], [], [], or [] enhancements",
+                    "+ 1 prosperity"
+                ]
+            ],
+            "prompt": "searchPiecesOfAnArtifact1"
         },
         {
             "id": 107,
@@ -522,6 +530,9 @@
                 "x": 0,
                 "y": 0
             },
+            "choices": [
+                112
+            ],
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -556,22 +567,27 @@
                 "fc/2/39",
                 "fc/2/40"
             ],
-            "links_to": [],
+            "links_to": [
+                112
+            ],
             "linked_from": [
                 100
             ],
-            "achievements_awarded": [
-                "GPA"
-            ],
+            "achievements_awarded": [],
             "treasure": {
                 "78": "“Ancient Bow” (Item 157)",
                 "90": "Read section 75 on page 49"
             },
-            "todo": "multiple conclusions",
             "rewards": [
-                "// 10 gold each",
-                "5 experience each"
-            ]
+                [
+                    "5 experience each"
+                ],
+                [
+                    "10 gold each",
+                    "5 experience each"
+                ]
+            ],
+            "prompt": "searchPiecesOfAnArtifact2"
         },
         {
             "id": 108,
@@ -769,6 +785,14 @@
             "linked_from": [
                 106,
                 107
+            ],
+            "requirements": "Pieces of an Artifact (Global)x3 COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GPOA3"
+                    ]
+                }
             ],
             "achievements_awarded": [
                 "GAPA",

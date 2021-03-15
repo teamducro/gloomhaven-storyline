@@ -188,6 +188,7 @@
     <g class="scenario" id="node112">
         <circle class="node" cx="347.05" cy="237.50001" fill="black" r="10.8"/>
         <text fill="black" x="331.75" y="233.18545">112</text>
+        <text x="329.75" y="233.18545" class="required">!</text>
     </g>
     <g class="edge edge100" id="edge100-106">
         <path class="line" d="m322.24999,184.23429l0,13.75621" fill="black" transform="rotate(45 322.25 191.112)"/>

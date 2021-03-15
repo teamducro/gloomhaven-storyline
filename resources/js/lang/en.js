@@ -185,6 +185,27 @@ export default {
         'Sunken Vessel': 'Sunken Vessel',
         'Vermling Nest': 'Vermling Nest',
         'Payment Due': 'Payment Due',
+        'Unexpected Visitors': 'Unexpected Visitors',
+        'Lore Untold': 'Lore Untold',
+        'Past in Flames': 'Past in Flames',
+        'Aftershocks': 'Aftershocks',
+        'Shifting Gears': 'Shifting Gears',
+        'Shrouded Crypt': 'Shrouded Crypt',
+        'Bazaar of Knowledge': 'Bazaar of Knowledge',
+        'Where It Is Needed': 'Where It Is Needed',
+        'A Gaping Would': 'A Gaping Would',
+        'Monstrosities of a Cult': 'Monstrosities of a Cult',
+        'Intricate Work': 'Intricate Work',
+        'Mechanical Genius': 'Mechanical Genius',
+        'Prologue to the End': 'Prologue to the End',
+        'Epilogue of a War': 'Epilogue of a War',
+        'A Circular Solution': 'A Circular Solution',
+        'The Shackles Loosen': 'The Shackles Loosen',
+        'The Bottom of It': 'The Bottom of It',
+        'The Lost Thread': 'The Lost Thread',
+        'Ink Not Yet Dry': 'Ink Not Yet Dry',
+        'Future Uncertain': 'Future Uncertain',
+        'Tower to the Stars': 'Tower to the Stars',
     },
     achievements: {
         "First Steps": "First Steps",
@@ -253,6 +274,8 @@ export default {
         "Custodians": "Custodians",
         "Hunted Prey": "Hunted Prey",
         "Pieces of an Artifact": "Pieces of an Artifact",
+        "Pieces of an Artifact x2": "Pieces of an Artifact x2",
+        "Pieces of an Artifact x3": "Pieces of an Artifact x3",
         "Guard Detail": "Guard Detail",
         "Dimensional Equilibrium": "Dimensional Equilibrium",
         "Hunting the Hunter": "Hunting the Hunter",
@@ -971,6 +994,18 @@ export default {
             text: "Did you manage to kill all enemies?",
             1: "All enemies are killed.",
             2: "Goal treasure tile is looted."
+        },
+        searchPiecesOfAnArtifact1: {
+            title: "Search pieces of an artifact",
+            text: "Did you manage to kill all enemies?",
+            1: "All enemies are killed.",
+            2: "Found more pieces of an artifact."
+        },
+        searchPiecesOfAnArtifact2: {
+            title: "Search pieces of an artifact",
+            text: "Did you manage to kill all enemies?",
+            1: "All enemies are killed.",
+            2: "Found more pieces of an artifact."
         },
     }
 }
