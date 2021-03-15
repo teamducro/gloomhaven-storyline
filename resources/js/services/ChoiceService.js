@@ -123,7 +123,9 @@ class ChoiceService {
                         if (value) {
                             if (value === 2) {
                                 this.achievementRepository.gain('GPOA');
-                                this.scenarioRepository.choose(scenario, 112);
+                                if (this.achievementRepository.find('GPOA3').awarded) {
+                                    this.scenarioRepository.choose(scenario, 112);
+                                }
                             }
                         } else {
                             // reset
