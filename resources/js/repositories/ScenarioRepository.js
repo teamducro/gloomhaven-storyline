@@ -5,6 +5,7 @@ import {ScenarioState} from "../models/ScenarioState";
 import Sheet from "../models/Sheet";
 import ItemTextParser from "../services/ItemTextParser";
 import GameData from "../services/GameData";
+import ScenarioCompletedService from "../services/ScenarioCompletedService";
 
 export default class ScenarioRepository {
     fetch(game) {
@@ -28,9 +29,11 @@ export default class ScenarioRepository {
         if (scenario.isComplete()) {
             this.processAchievements(scenario);
             this.processRewardedItems(scenario);
+            this.scenarioCompletedService.complete(scenario);
         } else if (previousState === ScenarioState.complete && (scenario.isIncomplete() || scenario.isHidden())) {
             this.undoAchievements(scenario);
             this.processRewardedItems(scenario, false);
+            this.scenarioCompletedService.rollback(scenario);
         }
 
         if (scenario.is_side && !scenario.required_by.isEmpty()) {
@@ -79,26 +82,67 @@ export default class ScenarioRepository {
         }
     }
 
-    unlockTreasureScenario(scenario, id) {
-        if (scenario.treasures_to.has(id)) {
-            this.scenarioValidator.validate();
+    unlockTreasure(scenario, id, checked = true) {
+        scenario.unlockTreasure(id, checked);
 
-            return true;
+        this.processTreasureItems(scenario, id, checked);
+
+        let reloadScenarios = scenario.treasures_to.has(id)
+            || scenario.achievements_from_treasures.has(id)
+            || this.scenarioCompletedService.hasHandler(scenario);
+
+        this.processAchievementsFromTreasures(scenario, id, checked);
+        this.scenarioCompletedService.complete(scenario, checked);
+
+        if (reloadScenarios) {
+            this.scenarioValidator.validate();
         }
 
-        return false;
+        return reloadScenarios;
+    }
+
+    prevScenarios(scenario) {
+        return this.findMany(scenario.linked_from)
+            .where('state', ScenarioState.complete)
+            .merge(this.unlockedFromTreasureScenarios(scenario).items);
+    }
+
+    nextScenarios(scenario) {
+        if (scenario.isComplete()) {
+            return this.findMany(scenario.links_to)
+                .where('state', '!=', ScenarioState.hidden)
+                .merge(this.unlockedByTreasureScenarios(scenario).items);
+        }
+
+        return collect();
+    }
+
+    unlockedFromTreasureScenarios(scenario) {
+        if (scenario.treasures_from.count()) {
+            return this.findMany(scenario.treasures_from)
+                .filter((treasureScenario) => {
+                    let treasure = treasureScenario.treasures_to.filter((treasure) => {
+                        return treasure.includes(scenario.id);
+                    }).keys().first();
+
+                    return treasure && treasureScenario.isComplete() && treasureScenario.isTreasureUnlocked(treasure);
+                });
+        }
+
+        return collect();
+    }
+
+    unlockedByTreasureScenarios(scenario) {
+        if (scenario.treasures_to.count()) {
+            let unlocked = scenario.treasures_to.only(scenario.unlockedTreasures).flatten();
+            return this.findMany(unlocked.items);
+        }
+
+        return collect();
     }
 
     isScenarioUnlockedByTreasure(scenario) {
-        if (scenario.treasures_from.count()) {
-            let scenarios = this.findMany(scenario.treasures_from);
-            return scenarios.filter((treasureScenario) => {
-                let treasure = treasureScenario.treasures_to.flip().get(scenario.id.toString());
-                return treasureScenario.isTreasureUnlocked(treasure);
-            }).count() > 0;
-        }
-
-        return false;
+        return this.unlockedFromTreasureScenarios(scenario).count() > 0;
     }
 
     processAchievements(scenario) {
@@ -153,6 +197,22 @@ export default class ScenarioRepository {
         }
     }
 
+    processAchievementsFromTreasures(scenario, id, checked) {
+        if (scenario.achievements_from_treasures.has(id)) {
+            scenario.achievements_from_treasures.get(id).forEach((achievement) => {
+                if (checked) {
+                    this.achievementRepository.gain(achievement);
+                } else {
+                    this.achievementRepository.remove(achievement);
+                }
+            })
+
+            return true;
+        }
+
+        return false;
+    }
+
     processManualAchievements(scenario) {
         this.achievementRepository.getManualAchievementsByRequiredScenario(scenario, false)
             .each(achievement => {
@@ -200,8 +260,8 @@ export default class ScenarioRepository {
         }
 
         return this.where((scenario, key) => {
-            return scenario.achievements_awarded
-                && scenario.achievements_awarded.contains(achievement.id);
+            return (scenario.achievements_awarded && scenario.achievements_awarded.contains(achievement.id))
+                || scenario.achievements_from_treasures.only(scenario.unlockedTreasures).flatten().items.includes(achievement.id);
         })
             .where('state', ScenarioState.complete);
     }
@@ -268,5 +328,9 @@ export default class ScenarioRepository {
 
     get achievementRepository() {
         return this._achievementRepository || (this._achievementRepository = new AchievementRepository());
+    }
+
+    get scenarioCompletedService() {
+        return this._scenarioCompletedService || (this._scenarioCompletedService = new ScenarioCompletedService());
     }
 }

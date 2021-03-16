@@ -1545,7 +1545,9 @@
                 "49": "New Scenario: Lost Island (Scenario 17 at K-17)"
             },
             "treasures_to": {
-                "49": 17
+                "49": [
+                    17
+                ]
             },
             "region_ids": [
                 6

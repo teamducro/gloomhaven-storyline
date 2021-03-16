@@ -90,55 +90,6 @@ class ChoiceService {
                         this.setChoice(scenario, value);
                     }
                 });
-            case 'shiftingGears':
-                return new PromptConfig(scenario, {
-                    options: 2,
-                    callback: (value) => {
-                        if (value) {
-                            if (value === 2) {
-                                // achievements
-                                this.achievementRepository.gain('GPOA');
-
-                                // scenarios
-                                this.scenarioRepository.choose(scenario, '106,107');
-                            }
-                        } else {
-                            // reset
-                            if (scenario.promptChoice === 2) {
-                                this.achievementRepository.remove('GPOA');
-                            }
-                            this.scenarioRepository.choose(scenario, null);
-                            this.scenarioRepository.setHidden(106);
-                            this.scenarioRepository.setHidden(107);
-                        }
-
-                        this.setChoice(scenario, value);
-                    }
-                });
-            case 'searchPiecesOfAnArtifact1':
-            case 'searchPiecesOfAnArtifact2':
-                return new PromptConfig(scenario, {
-                    options: 2,
-                    callback: (value) => {
-                        if (value) {
-                            if (value === 2) {
-                                this.achievementRepository.gain('GPOA');
-                                if (this.achievementRepository.find('GPOA3').awarded) {
-                                    this.scenarioRepository.choose(scenario, 112);
-                                }
-                            }
-                        } else {
-                            // reset
-                            if (scenario.promptChoice === 2) {
-                                this.achievementRepository.remove('GPOA');
-                                this.scenarioRepository.setHidden(112);
-                                this.scenarioRepository.choose(scenario, null);
-                            }
-                        }
-
-                        this.setChoice(scenario, value);
-                    }
-                });
         }
 
         return undefined;

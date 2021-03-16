@@ -988,24 +988,6 @@ export default {
             text: "How many Valraths were you able to bring to safety?",
             1: "Exactly four civilians are alive.",
             2: "Five or more civilians are alive."
-        },
-        shiftingGears: {
-            title: "Bastian’s workshop",
-            text: "Did you manage to kill all enemies?",
-            1: "All enemies are killed.",
-            2: "Goal treasure tile is looted."
-        },
-        searchPiecesOfAnArtifact1: {
-            title: "Search pieces of an artifact",
-            text: "Did you manage to kill all enemies?",
-            1: "All enemies are killed.",
-            2: "Found more pieces of an artifact."
-        },
-        searchPiecesOfAnArtifact2: {
-            title: "Search pieces of an artifact",
-            text: "Did you manage to kill all enemies?",
-            1: "All enemies are killed.",
-            2: "Found more pieces of an artifact."
-        },
+        }
     }
 }

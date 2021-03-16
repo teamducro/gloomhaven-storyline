@@ -142,11 +142,19 @@ export default {
                     }
 
                     if (scenario.isComplete()) {
-                        if (!scenario.choices) {
+                        if (!scenario.choices && !scenario.treasures_to.count()) {
                             $edges.show();
-                        } else if (scenario.choice) {
+                        }
+
+                        if (scenario.choice) {
                             String(scenario.choice).split(',').forEach((c) => {
                                 $('#edge' + scenario.id + '-' + c).show();
+                            });
+                        }
+
+                        if (scenario.treasures_to) {
+                            this.scenarioRepository.unlockedByTreasureScenarios(scenario).each((t) => {
+                                $('#edge' + scenario.id + '-' + t.id).show();
                             });
                         }
                     }

@@ -60,7 +60,7 @@ describe('Items', () => {
 
         // Unlock treasure
         utilities.openScenario(4);
-        cy.get('#38').parent().click();
+        cy.get('#treasure-38').parent().click();
 
         // The item is clickable
         cy.get('a').contains('Ring of Skulls').click();
@@ -75,7 +75,7 @@ describe('Items', () => {
         // Lock treasure
         cy.visit('/tracker/#/story');
         utilities.openScenario(4);
-        cy.get('#38').parent().click();
+        cy.get('#treasure-38').parent().click();
         cy.get('a').contains('Ring of Skulls').should('not.exist');
         utilities.closeModel();
 

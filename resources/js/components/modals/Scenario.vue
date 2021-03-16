@@ -84,11 +84,11 @@
                              v-if="(scenario.isComplete() || treasuresVisible) && scenario.treasures.isNotEmpty()">
                             <h2 class="text-white">{{ $t('Treasures') }}</h2>
                             <div v-if="scenario.treasures.isNotEmpty()"
-                                 v-for="(treasure, id) in scenario.treasures.items" :key="id"
+                                 v-for="(treasure, id) in scenario.treasures.items" :key="'treasure-'+id"
                                  class="flex items-center -ml-2">
                                 <checkbox-with-label
-                                    :id="id"
-                                    :label="'#' + id"
+                                    :id="'treasure-'+id"
+                                    :label="isNaN(id) ? id.toUpperCase() : '#' + id"
                                     :checked="scenario.isTreasureUnlocked(id)"
                                     @change="treasureChanged"></checkbox-with-label>
                                 <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
@@ -298,20 +298,16 @@ export default {
     },
     computed: {
         prevScenarios() {
-            return this.scenarioRepository.findMany(this.scenario.linked_from)
-                .where('state', ScenarioState.complete);
+            return this.scenarioRepository.prevScenarios(this.scenario);
         },
         nextScenarios() {
-            if (this.scenario.isComplete()) {
-                return this.scenarioRepository.findMany(this.scenario.links_to)
-                    .where('state', '!=', ScenarioState.hidden);
-            }
-
-            return collect();
+            return this.scenarioRepository.nextScenarios(this.scenario);
         },
         achievements() {
             if (this.scenario.isComplete()) {
-                let awarded = this.achievementRepository.findMany(this.scenario.achievements_awarded)
+                let awarded = this.achievementRepository.findMany(this.scenario.achievements_awarded.merge(
+                    this.scenario.achievements_from_treasures.only(this.scenario.unlockedTreasures).flatten().items
+                ))
                     .where('_awarded', '=', true);
                 let lost = this.achievementRepository.findMany(this.scenario.achievements_lost)
                     .where('_awarded', '=', false);
@@ -352,7 +348,7 @@ export default {
 
             if (state === ScenarioState.complete && this.scenario.prompt && this.prompt.promptAfter) {
                 this.$refs['decision-prompt'].open();
-            } else if (state === ScenarioState.complete && this.scenario.choices) {
+            } else if (state === ScenarioState.complete && this.scenario.choices && this.scenario.choices.length > 1) {
                 this.$refs['choose'].open();
             } else {
                 this.scenarioRepository.changeState(this.scenario, state);
@@ -375,15 +371,15 @@ export default {
             this.storySyncer.store();
         },
         treasureChanged(id, checked) {
+            id = id.replace('treasure-', '');
             if (checked && this.prompt) {
                 this.rollback = () => {
-                    this.scenario.unlockTreasure(id, false);
+                    this.scenarioRepository.unlockTreasure(this.scenario, id, false);
                 }
             }
 
-            this.scenario.unlockTreasure(id, checked);
-            this.scenarioRepository.processTreasureItems(this.scenario, id, checked);
-            if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
+            const reload = this.scenarioRepository.unlockTreasure(this.scenario, id, checked);
+            if (reload) {
                 this.$bus.$emit('scenarios-updated');
             }
 

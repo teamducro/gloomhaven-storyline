@@ -27,7 +27,7 @@
                     ]
                 }
             ],
-            "treasure": {
+            "treasures": {
                 "91": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
             },
             "achievements_awarded": [
@@ -96,7 +96,7 @@
             "linked_from": [
                 97
             ],
-            "treasure": {
+            "treasures": {
                 "79": "Gain “Falcon Figurine” (Item 157)"
             },
             "achievements_awarded": [
@@ -146,7 +146,7 @@
             "linked_from": [
                 97
             ],
-            "treasure": {
+            "treasures": {
                 "95": "Gain 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
             },
             "achievements_awarded": [
@@ -190,28 +190,31 @@
                 "x": 0,
                 "y": 0
             },
-            "links_to": [
-                106,
-                107
-            ],
-            "choices": [
-                106,
-                107
-            ],
             "linked_from": [
                 97
             ],
-            "treasure": {
+            "treasures": {
                 "76": "Suffer 3 damage, gain WOUND and 10 gold",
-                "85": "Suffer 3 damage, gain POISON and 10 gold"
+                "85": "Suffer 3 damage, gain POISON and 10 gold",
+                "goal": "Read section 80 on page 26"
+            },
+            "treasures_to": {
+                "goal": [
+                    106,
+                    107
+                ]
+            },
+            "achievements_from_treasures": {
+                "goal": [
+                    "GPOA"
+                ]
             },
             "achievements_awarded": [
                 "GKIP"
             ],
             "rewards": [
                 "Choose to gain one of the following sets: “Telescopic Lens” (Item 059) and “Ancient Drill” (Item 112), OR “Curious Gear” (Item 125) and “Remote Spider” (Item 126)"
-            ],
-            "prompt": "shiftingGears"
+            ]
         },
         {
             "id": 101,
@@ -240,7 +243,7 @@
             "achievements_awarded": [
                 "GKIP"
             ],
-            "treasure": {
+            "treasures": {
                 "93": "Gain “Scroll of Haste” (Item 159)"
             },
             "rewards": [
@@ -293,7 +296,7 @@
                 98
             ],
             "todo": "svg",
-            "treasure": {
+            "treasures": {
                 "77": "Gain “Major Cure Potion” (Item 090)",
                 "86": "Unlock Diviner Solo Scenario “Forecast of the Inevitable"
             },
@@ -345,7 +348,7 @@
             "achievements_awarded": [
                 "PGD"
             ],
-            "treasure": {
+            "treasures": {
                 "81": "Gain “Scroll of Haste” (Item 159) and 10 gold"
             },
             "rewards": [
@@ -397,7 +400,7 @@
             "achievements_awarded": [
                 "PDE"
             ],
-            "treasure": {
+            "treasures": {
                 "87": "Suffer 2 damage, gain CURSE and 15 gold"
             },
             "rewards": [
@@ -453,7 +456,7 @@
             "linked_from": [
                 99
             ],
-            "treasure": {
+            "treasures": {
                 "83": "Gain “Major Power Potion” (Item 041)",
                 "88": "Gain “Second Chance Ring” (Item 070)"
             },
@@ -507,20 +510,20 @@
             "links_to": [
                 112
             ],
-            "linked_from": [
+            "treasures_from": [
                 100
             ],
-            "achievements_awarded": [],
-            "rewards": [
-                [
-                    "175 gold each, This money must immediately be spent on any [], [], [], [], [], or [] enhancements"
-                ],
-                [
-                    "175 gold each, This money must immediately be spent on any [], [], [], [], [], or [] enhancements",
-                    "+ 1 prosperity"
+            "treasures": {
+                "goal": "+1 prosperity, read section 86 on page 28"
+            },
+            "achievements_from_treasures": {
+                "goal": [
+                    "GPOA"
                 ]
-            ],
-            "prompt": "searchPiecesOfAnArtifact1"
+            },
+            "rewards": [
+                "175 gold each, This money must immediately be spent on any [], [], [], [], [], or [] enhancements"
+            ]
         },
         {
             "id": 107,
@@ -570,24 +573,21 @@
             "links_to": [
                 112
             ],
-            "linked_from": [
+            "treasures_from": [
                 100
             ],
-            "achievements_awarded": [],
-            "treasure": {
+            "treasures": {
                 "78": "“Ancient Bow” (Item 157)",
-                "90": "Read section 75 on page 49"
+                "90": "10 gold each, Read section 75 on page 49"
+            },
+            "achievements_from_treasures": {
+                "90": [
+                    "GPOA"
+                ]
             },
             "rewards": [
-                [
-                    "5 experience each"
-                ],
-                [
-                    "10 gold each",
-                    "5 experience each"
-                ]
-            ],
-            "prompt": "searchPiecesOfAnArtifact2"
+                "5 experience each"
+            ]
         },
         {
             "id": 108,
@@ -678,7 +678,7 @@
             "linked_from": [
                 101
             ],
-            "treasure": {
+            "treasures": {
                 "80": "Gain 1 ✓ and add Rift Event 19 to the deck",
                 "94": "Gain 1 ✓ and add Rift Event 20 to the deck"
             },
@@ -712,7 +712,7 @@
             "achievements_awarded": [
                 "GAPA"
             ],
-            "treasure": {
+            "treasures": {
                 "84": "Gain “Mask of Terrors” (Item 066)"
             },
             "rewards": [
@@ -756,7 +756,7 @@
                 "PHP"
             ],
             "todo": "multiple conclusions",
-            "treasure": {
+            "treasures": {
                 "82": "“Rejuvenation Greaves” (Item 158)"
             },
             "rewards": [
@@ -885,7 +885,7 @@
                 "GST"
             ],
             "todo": "note",
-            "treasure": {
+            "treasures": {
                 "96": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover:"
             },
             "rewards": [
@@ -906,7 +906,7 @@
             "achievements_awarded": [
                 "PBF"
             ],
-            "treasure": {
+            "treasures": {
                 "93": "“Scroll of Haste” (Item 159)"
             },
             "rewards": [
