@@ -185,6 +185,16 @@
         <text fill="black" x="358.75" y="204.43545">107</text>
         <text x="356.75" y="204.43545" class="required">!</text>
     </g>
+    <g class="edge edge107" id="edge107-112" transform="rotate(45 352.25 224)">
+        <path class="line" d="m352.25,215.234199l0,13.75621"/>
+        <path class="arrow"
+              d="m352.25,232.765639l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"/>
+    </g>
+    <g class="edge edge106" id="edge106-112" transform="matrix(1 0 0 1 0 0) rotate(-45 321.75 223)">
+        <path class="line" d="m321.75,214.234189l0,13.75622"/>
+        <path class="arrow"
+              d="m321.75,231.765629l-2.51682,-5.03363l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03363z"/>
+    </g>
     <g class="scenario" id="node112">
         <circle class="node" cx="347.05" cy="237.50001" fill="black" r="10.8"/>
         <text fill="black" x="331.75" y="233.18545">112</text>
