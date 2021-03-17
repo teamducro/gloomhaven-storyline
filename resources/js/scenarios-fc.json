@@ -16,6 +16,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 1,
             "links_to": [
                 97
             ],
@@ -54,6 +55,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 1,
             "links_to": [
                 98,
                 99,
@@ -85,6 +87,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 2,
             "links_to": [
                 102,
                 103
@@ -135,6 +138,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 2,
             "links_to": [
                 104,
                 105
@@ -190,6 +194,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 3,
             "linked_from": [
                 97
             ],
@@ -224,6 +229,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 4,
             "pages": [
                 "fc/1/10",
                 "fc/2/15",
@@ -260,6 +266,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 2,
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -313,6 +320,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 2,
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -364,6 +372,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 3,
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -415,6 +424,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 3,
             "requirements": "Knowledge is Power (Global)x2 COMPLETE and Hunting the Hunter (Party) INCOMPLETE",
             "required_by": [
                 {
@@ -472,6 +482,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 4,
             "choices": [
                 112
             ],
@@ -533,6 +544,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 4,
             "choices": [
                 112
             ],
@@ -597,6 +609,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 5,
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -648,6 +661,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 5,
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -695,6 +709,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 2,
             "pages": [
                 "fc/1/19",
                 "fc/2/19",
@@ -727,6 +742,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 3,
             "pages": [
                 "fc/1/20",
                 "fc/2/15",
@@ -774,6 +790,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 4,
             "pages": [
                 "fc/1/21",
                 "fc/2/23",
@@ -813,6 +830,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 5,
             "name": "The Lost Thread",
             "pages": [
                 "fc/1/22",
@@ -846,6 +864,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 6,
             "pages": [
                 "fc/1/23",
                 "fc/2/7",
@@ -873,6 +892,7 @@
                 "x": 0,
                 "y": 0
             },
+            "chapter_id": 6,
             "pages": [
                 "fc/1/24",
                 "fc/2/8",
