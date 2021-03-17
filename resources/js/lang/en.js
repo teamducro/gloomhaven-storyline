@@ -988,6 +988,13 @@ export default {
             text: "How many Valraths were you able to bring to safety?",
             1: "Exactly four civilians are alive.",
             2: "Five or more civilians are alive."
+        },
+        bloodyWar: {
+            title: "Bloody Demon War",
+            text: "Which side dit you choose?",
+            1: "A: Assist the Valraths",
+            2: "B: Assist the Humans",
+            3: "C: Fight both sides"
         }
     }
 }

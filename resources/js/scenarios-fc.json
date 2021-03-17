@@ -642,16 +642,19 @@
             "linked_from": [
                 101
             ],
-            "todo": "multiple conclusions",
-            "achievements_awarded": [
-                "PXA",
-                "// PDA",
-                "// PAOD"
-            ],
             "rewards": [
-                "“Curseward Armor” (Item 155)",
-                "// 2 “Throwing Axes” (Item 161)\n"
-            ]
+                [
+                    "“Curseward Armor” (Item 155)"
+                ],
+                [
+                    "2 “Throwing Axes” (Item 161)"
+                ],
+                [
+                    "“Curseward Armor” (Item 155)",
+                    "2 “Throwing Axes” (Item 161)"
+                ]
+            ],
+            "prompt": "bloodyWar"
         },
         {
             "id": 109,

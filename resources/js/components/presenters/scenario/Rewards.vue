@@ -23,13 +23,7 @@ export default {
     },
     methods: {
         rewards() {
-            let output = '';
-
-            if (typeof this.scenario.rewards.first() === 'string') {
-                output = this.scenario.rewards.map(this.addCharacterIconsToRewards).join(', ');
-            } else if (Array.isArray(this.scenario.rewards.first()) && this.scenario.promptChoice) {
-                output = collect(this.scenario.rewards.get(this.scenario.promptChoice - 1)).map(this.addCharacterIconsToRewards).join(', ');
-            }
+            const output = this.scenario.rewards.map(this.addCharacterIconsToRewards).join(', ');
 
             return {
                 template: `<add-item-links :text="'${output}'"/>`

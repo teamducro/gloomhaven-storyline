@@ -36,7 +36,7 @@ class Scenario {
         this.treasures_to = collect(data.treasures_to);
         this.unlockedTreasures = [];
         this.achievements_from_treasures = collect(data.achievements_from_treasures);
-        this.rewards = collect(data.rewards);
+        this._rewards = collect(data.rewards);
         this.achievements_awarded = collect(data.achievements_awarded);
         this.achievements_lost = collect(data.achievements_lost);
         this.prompt = data.prompt;
@@ -170,14 +170,24 @@ class Scenario {
         return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
     }
 
+    get rewards() {
+        let rewards = collect();
+
+        if (typeof this._rewards.first() === 'string') {
+            rewards = this._rewards;
+        } else if (Array.isArray(this._rewards.first()) && this.promptChoice) {
+            rewards = collect(this._rewards.get(this.promptChoice - 1));
+        }
+
+        return rewards;
+    }
+
     rewardItems() {
         let items = collect();
 
-        if (typeof this.rewards.first() === 'string') {
-            this.rewards.each(reward => {
-                items = items.merge((new ItemTextParser()).ids(reward).items);
-            });
-        }
+        this.rewards.each(reward => {
+            items = items.merge((new ItemTextParser()).ids(reward).items);
+        });
 
         return items;
     }

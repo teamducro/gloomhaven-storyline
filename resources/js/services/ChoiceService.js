@@ -68,6 +68,7 @@ class ChoiceService {
                         this.setChoice(scenario, value);
                     }
                 });
+
             case 'aftershocks':
                 return new PromptConfig(scenario, {
                     options: 2,
@@ -85,6 +86,27 @@ class ChoiceService {
                             this.scenarioRepository.choose(scenario, null);
                             this.scenarioRepository.setHidden(104);
                             this.scenarioRepository.setHidden(105);
+                        }
+
+                        this.setChoice(scenario, value);
+                    }
+                });
+
+            case 'bloodyWar':
+                return new PromptConfig(scenario, {
+                    options: 3,
+                    callback: (value) => {
+                        // reset
+                        this.achievementRepository.remove('PXA');
+                        this.achievementRepository.remove('PDA');
+                        this.achievementRepository.remove('PAD');
+
+                        if (value === 1) {
+                            this.achievementRepository.gain('PXA');
+                        } else if (value === 2) {
+                            this.achievementRepository.gain('PDA');
+                        } else if (value === 3) {
+                            this.achievementRepository.gain('PAD');
                         }
 
                         this.setChoice(scenario, value);
