@@ -104,14 +104,16 @@ export default class ScenarioRepository {
     prevScenarios(scenario) {
         return this.findMany(scenario.linked_from)
             .where('state', ScenarioState.complete)
-            .merge(this.unlockedFromTreasureScenarios(scenario).items);
+            .merge(this.unlockedFromTreasureScenarios(scenario).items)
+            .filter();
     }
 
     nextScenarios(scenario) {
         if (scenario.isComplete()) {
             return this.findMany(scenario.links_to)
                 .where('state', '!=', ScenarioState.hidden)
-                .merge(this.unlockedByTreasureScenarios(scenario).items);
+                .merge(this.unlockedByTreasureScenarios(scenario).items)
+                .filter();
         }
 
         return collect();
@@ -302,7 +304,10 @@ export default class ScenarioRepository {
 
     fetchChapter(scenario, game) {
         if (scenario.chapter_id) {
-            scenario.chapter_name = this.fetchAllChapters(game).firstWhere('id', scenario.chapter_id).name;
+            const chapter = this.fetchAllChapters(game).firstWhere('id', scenario.chapter_id);
+            if (chapter) {
+                scenario.chapter_name = chapter.name;
+            }
         }
     }
 

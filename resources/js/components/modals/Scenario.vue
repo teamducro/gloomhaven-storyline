@@ -219,7 +219,7 @@
                 </div>
                 <footer class="mdc-dialog__actions flex justify-between px-5">
                     <div class="space-x-2">
-                        <scenario-number :scenario="scenario" v-for="scenario in prevScenarios" :key="scenario.id"/>
+                        <scenario-number :scenario="prev" v-for="prev in prevScenarios" :key="prev.id"/>
                     </div>
                     <div class="mx-auto w-20"
                          :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
@@ -228,7 +228,7 @@
                               :alt="scenario.name"/>
                     </div>
                     <div class="space-x-2">
-                        <scenario-number :scenario="scenario" v-for="scenario in nextScenarios" :key="scenario.id"/>
+                        <scenario-number :scenario="next" v-for="next in nextScenarios" :key="next.id"/>
                     </div>
                 </footer>
             </template>
