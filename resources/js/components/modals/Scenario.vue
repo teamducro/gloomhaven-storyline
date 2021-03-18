@@ -92,7 +92,7 @@
                                     :checked="scenario.isTreasureUnlocked(id)"
                                     @change="treasureChanged"></checkbox-with-label>
                                 <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
-                                    <add-item-links :text="treasure"/>
+                                    <add-links-and-icons :text="treasure"/>
                                 </span>
                             </div>
                         </div>
@@ -262,13 +262,12 @@ import PreloadImage from "../../services/PreloadImage";
 import StoryRepository from "../../repositories/StoryRepository";
 import Cards from "../presenters/cards/Cards";
 import StorySyncer from "../../services/StorySyncer";
-import AddItemLinks from "../elements/AddItemLinks";
 
 const md5 = require('js-md5');
 const queryString = require('query-string');
 
 export default {
-    components: {AddItemLinks, Cards},
+    components: {Cards},
     data() {
         return {
             scenario: null,

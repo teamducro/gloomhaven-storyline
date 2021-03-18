@@ -4,41 +4,19 @@
         <h2 class="text-white">
             {{ $tc('Reward', scenario.rewards.count()) }}
         </h2>
-        <component v-bind:is="rewards()"></component>
+        <add-links-and-icons :text="scenario.rewards.join(', ')"/>
     </div>
 </template>
 
 <script>
 import Scenario from "../../../models/Scenario";
-import N2l from "../../../services/N2l";
 
 export default {
     props: {
         scenario: Scenario
     },
     data() {
-        return {
-            n2l: new N2l
-        }
-    },
-    methods: {
-        rewards() {
-            const output = this.scenario.rewards.map(this.addCharacterIconsToRewards).join(', ');
-
-            return {
-                template: `<add-item-links :text="'${output}'"/>`
-            };
-        },
-        addCharacterIconsToRewards(reward) {
-            if (reward.includes('.svg')) {
-                let results = reward.match(/(\d{1,2}\.svg)/g);
-                results.forEach((icon) => {
-                    reward = reward.replace(icon, `<character class="w-6 -ml-1 -mb-2 inline-block" character="${icon}" />`);
-                });
-            }
-
-            return reward;
-        }
+        return {}
     }
 }
 </script>

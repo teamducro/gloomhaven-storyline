@@ -302,10 +302,9 @@
             "linked_from": [
                 98
             ],
-            "todo": "svg",
             "treasures": {
                 "77": "Gain “Major Cure Potion” (Item 090)",
-                "86": "Unlock Diviner Solo Scenario “Forecast of the Inevitable"
+                "86": "Unlock Diviner 18.svg Solo Scenario “Forecast of the Inevitable"
             },
             "rewards": [
                 "15 experience each",
@@ -533,7 +532,7 @@
                 ]
             },
             "rewards": [
-                "175 gold each, This money must immediately be spent on any [], [], [], [], [], or [] enhancements"
+                "175 gold each, This money must immediately be spent on any {wind}, {ice}, {fire}, {earth}, {light}, or {dark} enhancements"
             ]
         },
         {
@@ -863,8 +862,7 @@
             ],
             "rewards": [
                 "135 gold each",
-                "todo: svgs",
-                "This money must immediately be spent on any Move, Range or Jump enhancements",
+                "This money must immediately be spent on any Move {Move}, Range {Range} or Jump {Jump} enhancements",
                 "+1 prosperity"
             ]
         },
@@ -942,8 +940,7 @@
             "rewards": [
                 "+3 reputation",
                 "+1 prosperity",
-                "todo: svg",
-                "Retire the Aesther Diviner",
+                "Retire the Aesther Diviner 18.svg",
                 "Add City and Road Events 83 to their respective decks"
             ]
         },

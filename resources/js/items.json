@@ -53,7 +53,7 @@
         "slot": "Body",
         "source": "Prosperity 1",
         "consumed": true,
-        "desc": "During your turn, gain INVISIBLE."
+        "desc": "During your turn, gain {INVISIBLE}."
     },
     {
         "id": 6,
@@ -102,7 +102,7 @@
         "slot": "Two Hands",
         "source": "Prosperity 1",
         "consumed": true,
-        "desc": "During your melee attack, add STUN to the entire Attack action."
+        "desc": "During your melee attack, add {STUN} to the entire Attack action."
     },
     {
         "id": 11,
@@ -112,7 +112,7 @@
         "slot": "One Hand",
         "source": "Prosperity 1",
         "spent": true,
-        "desc": "During your melee attack, add POISON to a single attack."
+        "desc": "During your melee attack, add {POISON} to a single attack."
     },
     {
         "id": 12,
@@ -192,7 +192,7 @@
         "slot": "Two Hands",
         "source": "Prosperity 2",
         "spent": true,
-        "desc": "During your ranged attack, add IMMOBILIZE to a single attack."
+        "desc": "During your ranged attack, add {IMMOBILIZE} to a single attack."
     },
     {
         "id": 20,
@@ -212,7 +212,7 @@
         "slot": "Small Item",
         "source": "Prosperity 2",
         "consumed": true,
-        "desc": "During your attack, add STUN to a single attack."
+        "desc": "During your attack, add {STUN} to a single attack."
     },
     {
         "id": 22,
@@ -254,7 +254,7 @@
         "slot": "One Hand",
         "source": "Prosperity 3",
         "spent": true,
-        "desc": "During your melee attack, add WOUND to a single attack."
+        "desc": "During your melee attack, add {WOUND} to a single attack."
     },
     {
         "id": 26,
@@ -391,7 +391,7 @@
         "slot": "Head",
         "source": "Prosperity 5",
         "minusOneCardsAdded": 2,
-        "desc": "You are immune to STUN and MUDDLE."
+        "desc": "You are immune to {STUN} and {MUDDLE}."
     },
     {
         "id": 39,
@@ -401,7 +401,7 @@
         "slot": "Two Hands",
         "source": "Prosperity 5",
         "spent": true,
-        "desc": "During your ranged attack, add PULL 2 to the entire Attack action."
+        "desc": "During your ranged attack, add {PULL} 2 to the entire Attack action."
     },
     {
         "id": 40,
@@ -460,7 +460,7 @@
         "slot": "Head",
         "source": "Prosperity 6",
         "consumed": true,
-        "desc": "During your turn, {Refresh} two of your consumed small items. Gain CURSE.",
+        "desc": "During your turn, {Refresh} two of your consumed small items. Gain {CURSE}.",
         "faq": "The perk that ignores item effects does not prevent you from being cursed."
     },
     {
@@ -530,7 +530,7 @@
         "cost": 60,
         "slot": "Head",
         "source": "Prosperity 7\nReward from Scenario #109",
-        "desc": "You are immune to POISON and WOUND."
+        "desc": "You are immune to {POISON} and {WOUND}."
     },
     {
         "id": 53,
@@ -540,7 +540,7 @@
         "slot": "One Hand",
         "source": "Prosperity 7",
         "spent": true,
-        "desc": "During your melee attack, add CURSE to a single attack."
+        "desc": "During your melee attack, add {CURSE} to a single attack."
     },
     {
         "id": 54,
@@ -628,7 +628,7 @@
         "slot": "Small Item",
         "source": "Prosperity 8",
         "consumed": true,
-        "desc": "During your attack, add STUN, POISON, and CURSE to a single attack."
+        "desc": "During your attack, add {STUN}, {POISON}, and {CURSE} to a single attack."
     },
     {
         "id": 63,
@@ -638,7 +638,7 @@
         "slot": "Small Item",
         "source": "Prosperity 8",
         "consumed": true,
-        "desc": "During your turn, STRENGTHEN yourself and all adjacent allies."
+        "desc": "During your turn, {STRENGTHEN} yourself and all adjacent allies."
     },
     {
         "id": 64,
@@ -669,7 +669,7 @@
         "cost": 50,
         "slot": "Head",
         "source": "Prosperity 9\nScenario #110 (Treasure #84)",
-        "desc": "During your melee attack, add PUSH 1."
+        "desc": "During your melee attack, add {PUSH} 1."
     },
     {
         "id": 67,
@@ -888,7 +888,7 @@
         "slot": "Small Item",
         "source": "Random Item",
         "consumed": true,
-        "desc": "During your turn, remove one negative condition on yourself. This can be used while you have STUN."
+        "desc": "During your turn, remove one negative condition on yourself. This can be used while you have {STUN}."
     },
     {
         "id": 90,
@@ -898,7 +898,7 @@
         "slot": "Small Item",
         "source": "Random Item\nScenario #102 (Treasure #77)",
         "consumed": true,
-        "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have STUN."
+        "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have {STUN}."
     },
     {
         "id": 91,
@@ -1023,7 +1023,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "Scenario #34 (Treasure #23)",
-        "desc": "You are immune to POISON and WOUND."
+        "desc": "You are immune to {POISON} and {WOUND}."
     },
     {
         "id": 104,
@@ -1071,7 +1071,7 @@
         "cost": 50,
         "slot": "Head",
         "source": "Scenario #25 (Treasure #58)",
-        "desc": "Whenever you gain MUDDLE, gain STRENGTHEN instead."
+        "desc": "Whenever you gain {MUDDLE}, gain {STRENGTHEN} instead."
     },
     {
         "id": 109,
@@ -1099,7 +1099,7 @@
         "cost": 50,
         "slot": "Head",
         "source": "Scenario #64 (Treasure #09)",
-        "desc": "When attacked, if {ice} is Strong, perform a “PUSH 2” action targeting the attacker."
+        "desc": "When attacked, if {ice} is Strong, perform a “{PUSH} 2” action targeting the attacker."
     },
     {
         "id": 112,
@@ -1109,7 +1109,7 @@
         "slot": "Two Hands",
         "source": "Reward From Scenario #65\nOption from Scenario 100",
         "consumed": true,
-        "desc": "During your melee attack, add +2 {Attack} and PIERCE 2 to the entire Attack action"
+        "desc": "During your melee attack, add +2 {Attack} and {PIERCE} 2 to the entire Attack action"
     },
     {
         "id": 113,
@@ -1129,7 +1129,7 @@
         "slot": "Two Hands",
         "source": "Reward from Scenario #53",
         "consumed": true,
-        "desc": "During your ranged attack, add POISON and MUDDLE to the entire Attack action"
+        "desc": "During your ranged attack, add {POISON} and {MUDDLE} to the entire Attack action"
     },
     {
         "id": 115,
@@ -1186,7 +1186,7 @@
         "slot": "One Hand",
         "source": "Reward From Scenario #95",
         "consumed": true,
-        "desc": "During your turn, CURSE all adjacent enemies."
+        "desc": "During your turn, {CURSE} all adjacent enemies."
     },
     {
         "id": 120,
@@ -1261,7 +1261,7 @@
         "slot": "Small Item",
         "source": "City Event 43\nOption from Scenario 100",
         "consumed": true,
-        "desc": "During your turn, POISON all adjacent enemies."
+        "desc": "During your turn, {POISON} all adjacent enemies."
     },
     {
         "id": 127,
@@ -1380,7 +1380,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "Reward from Solo Scenario #04 — {SC}",
-        "desc": "Any time you perform a melee attack, add PIERCE 1 to the Attack.",
+        "desc": "Any time you perform a melee attack, add {PIERCE} 1 to the Attack.",
         "soloItem": "SC"
     },
     {
@@ -1445,7 +1445,7 @@
         "slot": "Small Item",
         "source": "Reward from Solo Scenario #11 — {NS}",
         "consumed": true,
-        "desc": "During your turn, gain INVISIBLE and create dark. {dark}",
+        "desc": "During your turn, gain {INVISIBLE} and create dark. {dark}",
         "soloItem": "NS"
     },
     {
@@ -1456,7 +1456,7 @@
         "slot": "Head",
         "source": "Reward from Solo Scenario #12 — {PH}",
         "spent": true,
-        "desc": "During your turn, POISON and CURSE one enemy within {Range} 3.",
+        "desc": "During your turn, {POISON} and {CURSE} one enemy within {Range} 3.",
         "soloItem": "PH"
     },
     {
@@ -1486,7 +1486,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "Reward from Solo Scenario #14 — {DS}",
-        "desc": "Any time you perform a {Doom} action, MUDDLE the target of the {Doom}.",
+        "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}.",
         "soloItem": "DS"
     },
     {
@@ -1538,7 +1538,7 @@
         "cost": 25,
         "slot": "Small Item",
         "source": "Reward From Scenario #99",
-        "desc": "The next three times you would gain POISON prevent the condition."
+        "desc": "The next three times you would gain {POISON} prevent the condition."
     },
     {
         "id": 154,
@@ -1547,7 +1547,7 @@
         "cost": 50,
         "slot": "Small Item",
         "source": "Reward from Scenario #105",
-        "desc": "The next five times you would gain POISON prevent the condition."
+        "desc": "The next five times you would gain {POISON} prevent the condition."
     },
     {
         "id": 155,
@@ -1556,7 +1556,7 @@
         "cost": 75,
         "slot": "Body",
         "source": "Reward from Scenario #108",
-        "desc": "You are immune to CURSE, even if the item is spent. On the next three sources of damage from attacks targeting you gain {Shield} 1.",
+        "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {Shield} 1.",
         "spent": true,
         "minusOneCardsAdded": 3
     },
@@ -1576,7 +1576,7 @@
         "cost": 40,
         "slot": "Two Hands",
         "source": "Scenario #107 (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
-        "desc": "During your ranged attack, add +2 {Attack}, CURSE, and WOUND to a single attack.",
+        "desc": "During your ranged attack, add +2 {Attack}, {CURSE}, and {WOUND} to a single attack.",
         "consumed": true
     },
     {
@@ -1586,7 +1586,7 @@
         "cost": 35,
         "slot": "Legs",
         "source": "Scenario #111 (Treasure #82)",
-        "desc": "During your movement, add +2 {Move} to the movement and gain REGENERATE.",
+        "desc": "During your movement, add +2 {Move} to the movement and gain {REGENERATE}.",
         "spent": true
     },
     {
@@ -1636,7 +1636,7 @@
         "cost": 75,
         "slot": "Head",
         "source": "Reward from Scenario #110",
-        "desc": "When you peform a long or short rest, gain STRENGTHEN."
+        "desc": "When you peform a long or short rest, gain {STRENGTHEN}."
     },
     {
         "id": 164,

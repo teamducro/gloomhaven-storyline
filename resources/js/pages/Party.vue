@@ -126,7 +126,7 @@
                                   :checked="checked"
                                   :disabled="character < 6"
                                   @change="(id, isChecked) => {sheet.characters[character] = isChecked; store()}"></checkbox>
-                        <span v-if="character < 17" class="w-8 font-title">
+                        <span v-if="character < Object.keys(sheet.characters).length" class="w-8 font-title">
                             <character class="w-6 -mb-2 inline-block" :character="parseInt(character)+1"/>
                         </span>
                         <span v-else class="font-title text-lg">X</span>

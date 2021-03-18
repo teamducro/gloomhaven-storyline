@@ -77,7 +77,7 @@ class Sheet {
             this.unlocks[i] = this.unlocks[i] || false;
         }
 
-        for (let i = 0; i < 18; i++) {
+        for (let i = 0; i < 19; i++) {
             this.characters[i] = this.characters[i] || false;
         }
     }
