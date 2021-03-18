@@ -137,6 +137,27 @@ class ChoiceService {
                         this.setChoice(scenario, value);
                     }
                 });
+
+            case 'directingBeams':
+                return new PromptConfig(scenario, {
+                    options: 2,
+                    callback: (value) => {
+                        if (value) {
+                            if (value === 1) {
+                                this.achievementRepository.gain('GMS');
+                                this.achievementRepository.gain('GPA');
+                            }
+                        } else {
+                            // reset
+                            if (scenario.promptChoice === 1) {
+                                this.achievementRepository.remove('GMS');
+                                this.achievementRepository.remove('GPA');
+                            }
+                        }
+
+                        this.setChoice(scenario, value);
+                    }
+                });
         }
 
         return undefined;

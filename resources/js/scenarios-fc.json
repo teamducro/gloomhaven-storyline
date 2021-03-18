@@ -819,17 +819,18 @@
                     ]
                 }
             ],
-            "achievements_awarded": [
-                "GPA",
-                "GMS"
-            ],
-            "todo": "multiple conclusions",
             "rewards": [
-                "25 collective gold",
-                "// 10 gold each",
-                "5 experience each",
-                "1 ✓ each"
-            ]
+                [
+                    "10 gold each",
+                    "5 experience each"
+                ],
+                [
+                    "25 collective gold",
+                    "5 experience each",
+                    "1 ✓ each"
+                ]
+            ],
+            "prompt": "directingBeams"
         },
         {
             "id": 113,
@@ -911,8 +912,7 @@
                 113
             ],
             "rewards": [
-                "Party Boon:",
-                "Additional costs of enhancing an ability card based on the level of the card are now reduced by 5 gold per level."
+                "Party Boon: Additional costs of enhancing an ability card based on the level of the card are now reduced by 5 gold per level."
             ]
         },
         {

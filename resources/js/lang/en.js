@@ -283,6 +283,9 @@ export default {
         "Diamaras Aid": "Diamara's Aid",
         "Beauty in Freedom": "Beauty in Freedom",
         "A Peril Averted": "A Peril Averted",
+        "A Peril Averted x2": "A Peril Averted x2",
+        "A Peril Averted x3": "A Peril Averted x3",
+        "A Peril Averted x4": "A Peril Averted x4",
         "Mechanical Splendor": "Mechanical Splendor",
         "Severed Ties": "Severed Ties"
     },
@@ -1001,6 +1004,12 @@ export default {
             text: "Did all characters escaped through an exit?",
             1: "All characters escaped",
             2: "The Husk is killed"
+        },
+        "directingBeams": {
+            title: "Directing Beams",
+            text: "Did you direct the beams to the fountain?",
+            1: "All four beams are directed at the fountain",
+            2: "Survived for fourteen rounds"
         }
     }
 }
