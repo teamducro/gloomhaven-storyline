@@ -995,6 +995,12 @@ export default {
             1: "A: Assist the Valraths",
             2: "B: Assist the Humans",
             3: "C: Fight both sides"
+        },
+        "escapeFromTheHusk": {
+            title: "Escape from The Husk",
+            text: "Did all characters escaped through an exit?",
+            1: "All characters escaped",
+            2: "The Husk is killed"
         }
     }
 }

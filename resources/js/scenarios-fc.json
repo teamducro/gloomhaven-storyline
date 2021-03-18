@@ -483,9 +483,6 @@
                 "y": 0
             },
             "chapter_id": 4,
-            "choices": [
-                112
-            ],
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -517,6 +514,9 @@
                 "fc/2/30",
                 "fc/2/37",
                 "fc/2/39"
+            ],
+            "choices": [
+                112
             ],
             "links_to": [
                 112
@@ -720,6 +720,9 @@
                 "fc/2/40",
                 "fc/2/41"
             ],
+            "choices": [
+                114
+            ],
             "links_to": [
                 114
             ],
@@ -728,7 +731,7 @@
                 103
             ],
             "achievements_awarded": [
-                "GAPA"
+                "GPA"
             ],
             "treasures": {
                 "84": "Gain “Mask of Terrors” (Item 066)"
@@ -759,6 +762,9 @@
                 "fc/2/39",
                 "fc/2/41"
             ],
+            "choices": [
+                114
+            ],
             "links_to": [
                 114
             ],
@@ -766,24 +772,20 @@
                 104,
                 105
             ],
-            "achievements_awarded": [
-                "GAPA",
-                "PHH",
-                "// PHP"
-            ],
-            "achievements_lost": [
-                "PHP"
-            ],
-            "todo": "multiple conclusions",
             "treasures": {
                 "82": "“Rejuvenation Greaves” (Item 158)"
             },
             "rewards": [
-                "12 experience each",
-                "1 ✓ each",
-                "// 5 experience each",
-                "// Add Rift Event 16 to the deck. Instead of shuffling this event into the whole deck, shuffle it into the top 3 cards"
-            ]
+                [
+                    "5 experience each",
+                    "Add Rift Event 16 to the deck. Instead of shuffling this event into the whole deck, shuffle it into the top 3 cards"
+                ],
+                [
+                    "12 experience each",
+                    "1 ✓ each"
+                ]
+            ],
+            "prompt": "escapeFromTheHusk"
         },
         {
             "id": 112,
@@ -798,6 +800,9 @@
                 "fc/1/21",
                 "fc/2/23",
                 "fc/2/40"
+            ],
+            "choices": [
+                114
             ],
             "links_to": [
                 114
@@ -815,7 +820,7 @@
                 }
             ],
             "achievements_awarded": [
-                "GAPA",
+                "GPA",
                 "GMS"
             ],
             "todo": "multiple conclusions",
@@ -843,6 +848,9 @@
                 "fc/2/35",
                 "fc/2/37"
             ],
+            "choices": [
+                114
+            ],
             "links_to": [
                 114
             ],
@@ -850,7 +858,7 @@
                 109
             ],
             "achievements_awarded": [
-                "GAPA"
+                "GPA"
             ],
             "rewards": [
                 "135 gold each",
@@ -872,6 +880,26 @@
                 "fc/1/23",
                 "fc/2/7",
                 "fc/2/32"
+            ],
+            "requirements": "A Peril Averted (Global)x2 COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GPA2"
+                    ]
+                },
+                {
+                    "hidden": true,
+                    "complete": [
+                        "GPA3"
+                    ]
+                },
+                {
+                    "hidden": true,
+                    "complete": [
+                        "GPA4"
+                    ]
+                }
             ],
             "links_to": [
                 115

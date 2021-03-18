@@ -242,7 +242,11 @@ export default class ScenarioRepository {
     }
 
     where(filter) {
-        return app.scenarios.filter(filter);
+        return this.get().filter(filter);
+    }
+
+    get() {
+        return app.scenarios
     }
 
     awardedFrom(achievement) {

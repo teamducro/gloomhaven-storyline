@@ -265,20 +265,20 @@
         <text fill="black" x="265.15002" y="357.157683">115</text>
     </g>
     <g class="edge edge110" id="edge110-114">
+        <path class="line" d="m172.39643,189.664259l0,181.354955" fill="black"
+              transform="rotate(-68.7052 172.396 280.342)"/>
         <path class="arrow"
-              d="m282.621517,316.213893l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
-              fill="black" transform="rotate(68.7052 282.621 313.697)"/>
-        <path class="line" d="m369.843872,186.462158l0,186.618847" fill="black"
-              transform="rotate(68.7052 369.844 279.772)"/>
+              d="m256.711352,315.971687l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(-68.7052 256.712 313.455)"/>
     </g>
-    <g class="edge edge111" id="edge111-114">
+    <g class="edge edge112" id="edge112-114">
         <path class="line" d="m304.498627,236.073666l0,83.102615" fill="black"
               transform="rotate(43.243 304.499 277.625)"/>
         <path class="arrow"
               d="m276.011356,310.291377l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
               fill="black" transform="rotate(43.243 276.011 307.775)"/>
     </g>
-    <g class="edge edge112" id="edge112-114">
+    <g class="edge edge111" id="edge111-114">
         <path class="line" d="m235.785862,238.102152l0,78.614741" fill="black"
               transform="rotate(-42.1231 235.786 277.41)"/>
         <path class="arrow"
@@ -286,10 +286,10 @@
               fill="black" transform="rotate(-42.1231 263.1 307.853)"/>
     </g>
     <g class="edge edge113" id="edge113-114">
-        <path class="line" d="m172.39643,189.664259l0,181.354955" fill="black"
-              transform="rotate(-68.7052 172.396 280.342)"/>
         <path class="arrow"
-              d="m256.711352,315.971687l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
-              fill="black" transform="rotate(-68.7052 256.712 313.455)"/>
+              d="m282.621517,316.213893l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(68.7052 282.621 313.697)"/>
+        <path class="line" d="m369.843872,186.462158l0,186.618847" fill="black"
+              transform="rotate(68.7052 369.844 279.772)"/>
     </g>
 </svg>

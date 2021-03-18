@@ -112,6 +112,31 @@ class ChoiceService {
                         this.setChoice(scenario, value);
                     }
                 });
+
+            case 'escapeFromTheHusk':
+                return new PromptConfig(scenario, {
+                    options: 2,
+                    callback: (value) => {
+                        if (value) {
+                            if (value === 1) {
+                                this.achievementRepository.gain('PHP');
+                            } else if (value === 2) {
+                                this.achievementRepository.gain('GPA');
+                                this.achievementRepository.gain('PHH');
+                            }
+                        } else {
+                            // reset
+                            if (scenario.promptChoice === 1) {
+                                this.achievementRepository.remove('PHP');
+                            } else if (scenario.promptChoice === 2) {
+                                this.achievementRepository.remove('GPA');
+                                this.achievementRepository.remove('PHH');
+                            }
+                        }
+
+                        this.setChoice(scenario, value);
+                    }
+                });
         }
 
         return undefined;
