@@ -294,6 +294,9 @@ export default {
         this.$bus.$on('close-scenario', () => {
             this.close();
         });
+        this.$bus.$on('game-selected', () => {
+            this.unsetScenario();
+        });
     },
     computed: {
         prevScenarios() {
@@ -455,6 +458,9 @@ export default {
         close() {
             this.notesLeft();
             this.$refs['modal'].close();
+        },
+        unsetScenario() {
+            this.scenario = null;
         },
         openAchievement(id) {
             this.close();
