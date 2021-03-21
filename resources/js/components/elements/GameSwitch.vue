@@ -35,6 +35,7 @@ export default {
         },
         select(code) {
             if (this.current !== code) {
+                this.$emit('click');
                 this.$bus.$emit('game-selected', code);
             }
         }

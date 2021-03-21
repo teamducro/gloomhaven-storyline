@@ -94,6 +94,9 @@ module.exports = {
             margin: {
                 7: '1.75rem',
                 18: '4.5rem'
+            },
+            rotate: {
+                '270': '270deg',
             }
         }
     },

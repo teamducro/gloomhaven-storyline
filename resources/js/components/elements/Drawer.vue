@@ -44,10 +44,15 @@
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                        <li @click="expandGameSwitch = true">
+                        <li @click="toggle">
                             <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <inline-svg src="icons/story" class="mdc-list-item__graphic" aria-hidden="true"/>
                                 <span class="mdc-list-item__text">{{ $t('Storyline') }}</span>
+                                <button type="button" @click="expandGameSwitch = !expandGameSwitch; preventToggle()"
+                                        class="mdc-icon-button material-icons mdc-button--raised transition-transform transform rounded-full ml-auto p-0 i-bg-transparent i-text-white2-87 cursor-pointer"
+                                        :class="{'rotate-270': expandGameSwitch, 'rotate-90': !expandGameSwitch}">
+                                    play_circle_outline
+                                </button>
                             </router-link>
                         </li>
 
@@ -160,6 +165,7 @@ export default {
             list: null,
             user: null,
             currentRoute: null,
+            stopToggle: false,
             expandGameSwitch: false,
             loggedIn: Helpers.loggedIn(),
             showCampaignSwitch: false,
@@ -173,16 +179,27 @@ export default {
     },
     methods: {
         toggle() {
+            if (this.stopToggle) {
+                return;
+            }
+
             this.drawer.open = !this.drawer.open;
             if (this.drawer.open) {
                 this.currentRoute = this.$router.currentRoute.path;
                 this.expandGameSwitch = false;
+                this.stopToggle = false;
 
                 // load campaign options
                 if (this.showCampaignSwitch) {
                     this.$refs['campaign-switch'].applyData();
                 }
             }
+        },
+        preventToggle() {
+            this.stopToggle = true;
+            setTimeout(() => {
+                this.stopToggle = false;
+            }, 10);
         },
         async logout() {
             this.auth.logout();
