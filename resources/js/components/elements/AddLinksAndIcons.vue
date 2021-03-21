@@ -91,6 +91,8 @@ export default {
                     '{CURSE}': this.$t('CURSE') + ' <webp src="/img/icons/status/curse.png" width="20" class="inline"/>',
                     '{BLESS}': this.$t('BLESS') + ' <webp src="/img/icons/status/bless.png" width="20" class="inline"/>',
                     '{REGENERATE}': this.$t('REGENERATE') + ' <webp src="/img/icons/status/regenerate.png" width="20" class="inline"/>',
+                    '{note-115}': '<webp src="/img/notes/note-115.png" width="421"/>',
+                    '{note-42}': '<webp src="/img/notes/note-42.png" width="421"/>',
                 }).each((icon, key) => {
                     text = text.replaceAll(key, icon);
                 });

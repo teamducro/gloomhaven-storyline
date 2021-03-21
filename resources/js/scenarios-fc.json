@@ -933,9 +933,8 @@
             "achievements_awarded": [
                 "GST"
             ],
-            "todo": "note",
             "treasures": {
-                "96": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover:"
+                "96": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {note-115}"
             },
             "rewards": [
                 "+3 reputation",
