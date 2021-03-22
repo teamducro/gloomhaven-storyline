@@ -998,6 +998,12 @@ export default {
             1: "All enemies are killed.",
             2: "Found more pieces of the artifact."
         },
+        directingBeams: {
+            title: "Directing Beams",
+            text: "Did you direct the beams to the fountain?",
+            1: "All four beams are directed at the fountain",
+            2: "Survived for fourteen rounds"
+        },
         aftershocks: {
             title: "Protect the civilians",
             text: "How many Valraths were you able to bring to safety?",
@@ -1011,17 +1017,11 @@ export default {
             2: "B: Assist the Humans",
             3: "C: Fight both sides"
         },
-        "escapeFromTheHusk": {
+        escapeFromTheHusk: {
             title: "Escape from The Husk",
             text: "Did all characters escaped through an exit?",
             1: "All characters escaped",
-            2: "The Husk is killed"
-        },
-        "directingBeams": {
-            title: "Directing Beams",
-            text: "Did you direct the beams to the fountain?",
-            1: "All four beams are directed at the fountain",
-            2: "Survived for fourteen rounds"
+            2: "???"
         }
     }
 }
