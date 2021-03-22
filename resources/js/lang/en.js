@@ -993,10 +993,10 @@ export default {
             2: "???"
         },
         searchPiecesOfAnArtifact: {
-            title: "Search pieces of the artifact",
+            title: "Search pieces of the rift device",
             text: "Did you manage to kill all enemies?",
             1: "All enemies are killed.",
-            2: "Found more pieces of the artifact."
+            2: "Found more pieces of the rift device."
         },
         directingBeams: {
             title: "Directing Beams",

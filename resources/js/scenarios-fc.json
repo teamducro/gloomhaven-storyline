@@ -958,27 +958,27 @@
     "chapters": [
         {
             "id": 1,
-            "name": "Intro"
+            "name": "Diviner"
         },
         {
             "id": 2,
-            "name": "Chapter 2"
+            "name": "Orchid society"
         },
         {
             "id": 3,
-            "name": "Chapter 3"
+            "name": "Citizens of Gloomhaven"
         },
         {
             "id": 4,
-            "name": "Chapter 4"
+            "name": "The rift device"
         },
         {
             "id": 5,
-            "name": "Chapter 5"
+            "name": "Tainted crypt"
         },
         {
             "id": 6,
-            "name": "Chapter 6"
+            "name": "Corruption"
         }
     ],
     "regions": [
