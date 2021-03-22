@@ -69,6 +69,52 @@ class ChoiceService {
                     }
                 });
 
+            case 'shiftingGears':
+                return new PromptConfig(scenario, {
+                    options: 2,
+                    callback: (value) => {
+                        if (value) {
+                            if (value === 2) {
+                                // achievements
+                                this.achievementRepository.gain('GPOA');
+
+                                // scenarios
+                                this.scenarioRepository.choose(scenario, '106,107');
+                            }
+                        } else {
+                            // reset
+                            if (scenario.promptChoice === 2) {
+                                this.achievementRepository.remove('GPOA');
+                                this.scenarioRepository.choose(scenario, null);
+                                this.scenarioRepository.setHidden(106);
+                                this.scenarioRepository.setHidden(107);
+                            }
+                        }
+
+                        this.setChoice(scenario, value);
+                    }
+                });
+
+            case 'searchPiecesOfAnArtifact':
+                return new PromptConfig(scenario, {
+                    options: 2,
+                    callback: (value) => {
+                        if (value) {
+                            if (value === 2) {
+                                // achievements
+                                this.achievementRepository.gain('GPOA');
+                            }
+                        } else {
+                            // reset
+                            if (scenario.promptChoice === 2) {
+                                this.achievementRepository.remove('GPOA');
+                            }
+                        }
+
+                        this.setChoice(scenario, value);
+                    }
+                });
+
             case 'aftershocks':
                 return new PromptConfig(scenario, {
                     options: 2,

@@ -986,6 +986,18 @@ export default {
             2: "You failed to recover the Record of the Journey.",
             3: "You failed to recover the Record of Accounts."
         },
+        shiftingGears: {
+            title: "Bastian’s workshop",
+            text: "Did you manage to kill all enemies?",
+            1: "All enemies are killed.",
+            2: "???"
+        },
+        searchPiecesOfAnArtifact: {
+            title: "Search pieces of the artifact",
+            text: "Did you manage to kill all enemies?",
+            1: "All enemies are killed.",
+            2: "Found more pieces of the artifact."
+        },
         aftershocks: {
             title: "Protect the civilians",
             text: "How many Valraths were you able to bring to safety?",

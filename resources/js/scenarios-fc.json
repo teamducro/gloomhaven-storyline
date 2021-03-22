@@ -200,26 +200,19 @@
             ],
             "treasures": {
                 "76": "Suffer 3 damage, gain WOUND and 10 gold",
-                "85": "Suffer 3 damage, gain POISON and 10 gold",
-                "goal": "Read section 80 on page 26"
+                "85": "Suffer 3 damage, gain POISON and 10 gold"
             },
-            "treasures_to": {
-                "goal": [
-                    106,
-                    107
-                ]
-            },
-            "achievements_from_treasures": {
-                "goal": [
-                    "GPOA"
-                ]
-            },
+            "choices": [
+                106,
+                107
+            ],
             "achievements_awarded": [
                 "GKIP"
             ],
             "rewards": [
                 "Choose to gain one of the following sets: “Telescopic Lens” (Item 059) and “Ancient Drill” (Item 112), OR “Curious Gear” (Item 125) and “Remote Spider” (Item 126)"
-            ]
+            ],
+            "prompt": "shiftingGears"
         },
         {
             "id": 101,
@@ -520,20 +513,19 @@
             "links_to": [
                 112
             ],
-            "treasures_from": [
+            "linked_from": [
                 100
             ],
-            "treasures": {
-                "goal": "+1 prosperity, read section 86 on page 28"
-            },
-            "achievements_from_treasures": {
-                "goal": [
-                    "GPOA"
-                ]
-            },
             "rewards": [
-                "175 gold each, This money must immediately be spent on any {wind}, {ice}, {fire}, {earth}, {light}, or {dark} enhancements"
-            ]
+                [
+                    "175 gold each, This money must immediately be spent on any {wind}, {ice}, {fire}, {earth}, {light}, or {dark} enhancements"
+                ],
+                [
+                    "175 gold each, This money must immediately be spent on any {wind}, {ice}, {fire}, {earth}, {light}, or {dark} enhancements",
+                    "+ 1 prosperity"
+                ]
+            ],
+            "prompt": "searchPiecesOfAnArtifact"
         },
         {
             "id": 107,
@@ -584,7 +576,7 @@
             "links_to": [
                 112
             ],
-            "treasures_from": [
+            "linked_from": [
                 100
             ],
             "treasures": {
