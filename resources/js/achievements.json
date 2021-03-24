@@ -537,6 +537,7 @@
     {
         "id": "GST",
         "name": "Severed Ties",
-        "type": "Global"
+        "type": "Global",
+        "x": 84.6
     }
 ]
