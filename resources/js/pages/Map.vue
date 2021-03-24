@@ -151,7 +151,7 @@ export default {
         },
         scale() {
             return this.isLandscape()
-                ? $(window).height() / 2296
+                ? $(window).height() / 2155
                 : $(window).width() / this.$map.width();
         }
     }
@@ -160,8 +160,8 @@ export default {
 
 <style lang="scss">
 #map {
-    width: 2484px;
-    height: 2160px;
+    width: 2606px;
+    height: 2155px;
     position: relative;
 
     .map {

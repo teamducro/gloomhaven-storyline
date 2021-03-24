@@ -55,9 +55,9 @@ export default class GameData {
     }
 
     map(game = 'gh') {
-        let map;
+        let map = 'fc';
 
-        if (game !== 'fc') {
+        if (game !== 'gh') {
             map = game;
         }
 

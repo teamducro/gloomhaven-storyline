@@ -18,13 +18,13 @@
         "id": "GTMF",
         "name": "The Merchant Flees",
         "type": "Global",
-        "x": 32.4
+        "x": 30.8772
     },
     {
         "id": "GTDI",
         "name": "The Dead Invade",
         "type": "Global",
-        "x": 37.8
+        "x": 36.0234
     },
     {
         "id": "PADE",
@@ -36,26 +36,26 @@
         "name": "City Rule: Economic",
         "type": "Global",
         "group": "CR",
-        "x": 22.3
+        "x": 21.2519
     },
     {
         "id": "GCRM",
         "name": "City Rule: Militaristic",
         "type": "Global",
         "group": "CR",
-        "x": 22.3
+        "x": 21.2519
     },
     {
         "id": "GEOI",
         "name": "End of the Invasion",
         "type": "Global",
-        "x": 62.2
+        "x": 59.2766
     },
     {
         "id": "GTPE",
         "name": "The Power of Enhancement",
         "type": "Global",
-        "x": 47.7
+        "x": 45.4581
     },
     {
         "id": "PSC",
@@ -66,35 +66,35 @@
         "id": "GTRN",
         "name": "The Rift Neutralized",
         "type": "Global",
-        "x": 57.9
+        "x": 55.1787
     },
     {
         "id": "GAR",
         "name": "The Artifact: Recovered",
         "type": "Global",
         "group": "ART",
-        "x": 27.3
+        "x": 26.0169
     },
     {
         "id": "GAR2",
         "name": "The Artifact: Recovered (previously Lost)",
         "type": "Global",
         "group": "ART",
-        "x": 27.3,
+        "x": 26.0169,
         "requirement": "GAL"
     },
     {
         "id": "GAL",
         "name": "The Artifact: Lost",
         "type": "Global",
-        "x": 27.3,
+        "x": 26.0169,
         "group": "ART"
     },
     {
         "id": "GAT",
         "name": "Ancient Technology",
         "type": "Global",
-        "x": 78,
+        "x": 74.334,
         "upgrades": [
             "GAT2",
             "GAT3",
@@ -111,28 +111,28 @@
         "name": "Ancient Technology x2",
         "type": "Global",
         "hidden": true,
-        "x": 78
+        "x": 74.334
     },
     {
         "id": "GAT3",
         "name": "Ancient Technology x3",
         "type": "Global",
         "hidden": true,
-        "x": 78
+        "x": 74.334
     },
     {
         "id": "GAT4",
         "name": "Ancient Technology x4",
         "type": "Global",
         "hidden": true,
-        "x": 78
+        "x": 74.334
     },
     {
         "id": "GAT5",
         "name": "Ancient Technology x5",
         "type": "Global",
         "hidden": true,
-        "x": 78
+        "x": 74.334
     },
     {
         "id": "PTR",
@@ -163,7 +163,7 @@
         "id": "GTED",
         "name": "The Edge of Darkness",
         "type": "Global",
-        "x": 42.8
+        "x": 40.7884
     },
     {
         "id": "PTSV",
@@ -175,7 +175,7 @@
         "name": "Artifact: Cleansed",
         "type": "Global",
         "group": "ART",
-        "x": 27.3
+        "x": 26.0169
     },
     {
         "id": "PTVT",
@@ -191,20 +191,20 @@
         "id": "GTDS",
         "name": "The Drake Slain",
         "type": "Global",
-        "x": 13
+        "x": 12.389
     },
     {
         "id": "GTDA",
         "name": "The Drake Aided",
         "type": "Global",
-        "x": 13
+        "x": 12.389
     },
     {
         "id": "GCRD",
         "name": "City Rule: Demonic",
         "type": "Global",
         "group": "CR",
-        "x": 22.3
+        "x": 21.2519
     },
     {
         "id": "PTTT",
@@ -225,25 +225,25 @@
         "id": "GTVF",
         "name": "The Voice Freed",
         "type": "Global",
-        "x": 17.7
+        "x": 16.8681
     },
     {
         "id": "GTVS",
         "name": "The Voice Silenced",
         "type": "Global",
-        "x": 17.7
+        "x": 16.8681
     },
     {
         "id": "GWB",
         "name": "Water-Breathing",
         "type": "Global",
-        "x": 52.8
+        "x": 50.3184
     },
     {
         "id": "GEOC",
         "name": "End of Corruption",
         "type": "Global",
-        "x": 67.7,
+        "x": 64.5181,
         "upgrades": [
             "GEOC2",
             "GEOC3"
@@ -253,27 +253,27 @@
         "id": "GEOC2",
         "name": "End of Corruption x2",
         "type": "Global",
-        "x": 67.7,
+        "x": 64.5181,
         "hidden": true
     },
     {
         "id": "GEOC3",
         "name": "End of Corruption x3",
         "type": "Global",
-        "x": 67.7,
+        "x": 64.5181,
         "hidden": true
     },
     {
         "id": "GAOO",
         "name": "Annihilation of Order",
         "type": "Global",
-        "x": 83.7
+        "x": 79.7661
     },
     {
         "id": "GEOG",
         "name": "End of Gloom",
         "type": "Global",
-        "x": 73.4
+        "x": 69.9502
     },
     {
         "id": "PTTN",
@@ -392,12 +392,14 @@
     {
         "id": "GTTP",
         "name": "Through the Portal",
-        "type": "Global"
+        "type": "Global",
+        "x": 84.6
     },
     {
         "id": "GKIP",
         "name": "Knowledge is Power",
         "type": "Global",
+        "x": 88.4,
         "upgrades": [
             "GKIP2",
             "GKIP3",
@@ -408,18 +410,21 @@
         "id": "GKIP2",
         "name": "Knowledge is Power x2",
         "type": "Global",
+        "x": 88.4,
         "hidden": true
     },
     {
         "id": "GKIP3",
         "name": "Knowledge is Power x3",
         "type": "Global",
+        "x": 88.4,
         "hidden": true
     },
     {
         "id": "GKIP4",
         "name": "Knowledge is Power x4",
         "type": "Global",
+        "x": 88.4,
         "hidden": true
     },
     {
@@ -441,6 +446,7 @@
         "id": "GPOA",
         "name": "Pieces of an Artifact",
         "type": "Global",
+        "x": 96.6,
         "upgrades": [
             "GPOA2",
             "GPOA3"
@@ -450,12 +456,14 @@
         "id": "GPOA2",
         "name": "Pieces of an Artifact x2",
         "type": "Global",
+        "x": 96.6,
         "hidden": true
     },
     {
         "id": "GPOA3",
         "name": "Pieces of an Artifact x3",
         "type": "Global",
+        "x": 96.6,
         "hidden": true
     },
     {
@@ -492,6 +500,7 @@
         "id": "GPA",
         "name": "A Peril Averted",
         "type": "Global",
+        "x": 92.8,
         "upgrades": [
             "GPA2",
             "GPA3",
@@ -502,24 +511,28 @@
         "id": "GPA2",
         "name": "A Peril Averted x2",
         "type": "Global",
+        "x": 92.8,
         "hidden": true
     },
     {
         "id": "GPA3",
         "name": "A Peril Averted x3",
         "type": "Global",
+        "x": 92.8,
         "hidden": true
     },
     {
         "id": "GPA4",
         "name": "A Peril Averted x4",
         "type": "Global",
+        "x": 92.8,
         "hidden": true
     },
     {
         "id": "GMS",
         "name": "Mechanical Splendor",
-        "type": "Global"
+        "type": "Global",
+        "x": 96.6
     },
     {
         "id": "GST",
