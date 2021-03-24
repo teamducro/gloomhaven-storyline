@@ -37,7 +37,8 @@ class Scenario {
         this.unlockedTreasures = [];
         this.achievements_from_treasures = collect(data.achievements_from_treasures);
         this._rewards = collect(data.rewards);
-        this.achievements_awarded = collect(data.achievements_awarded);
+        this._achievements_awarded = collect(data.achievements_awarded);
+        this.achievements_awarded_by_choice = collect(data.achievements_awarded_by_choice);
         this.achievements_lost = collect(data.achievements_lost);
         this.prompt = data.prompt;
         this._promptChoice = null;
@@ -180,6 +181,16 @@ class Scenario {
         }
 
         return rewards;
+    }
+
+    get achievements_awarded() {
+        let achievements = this._achievements_awarded;
+
+        if (this.achievements_awarded_by_choice.isNotEmpty() && this.promptChoice) {
+            achievements = achievements.merge(this.achievements_awarded_by_choice.get(this.promptChoice - 1) || []);
+        }
+
+        return achievements;
     }
 
     rewardItems() {
