@@ -17,13 +17,13 @@ class ChoiceService {
                     options: 2,
                     show: !this.isChoiceSet(scenario.prompt) && drakesCommand.awarded && drakesTreasure.awarded,
                     promptAfter: false,
-                    callback: (id) => {
-                        if (id === 1) {
+                    callback: (value) => {
+                        if (value === 1) {
                             this.achievementRepository.gain('GTDA');
                         } else {
                             this.achievementRepository.lose('GTDA');
                         }
-                        this.setChoice(scenario, id, false);
+                        this.setChoice(scenario, value, false);
                     }
                 });
 
@@ -40,14 +40,6 @@ class ChoiceService {
                     options: 3,
                     callback: (value) => {
                         if (value) {
-                            // achievements
-                            if (value === 1) {
-                                this.achievementRepository.gain('PC');
-                            } else {
-                                this.achievementRepository.remove('PC');
-                            }
-
-                            // scenarios
                             if (value === 1) {
                                 this.scenarioRepository.choose(scenario, '102,103');
                             }
@@ -59,7 +51,6 @@ class ChoiceService {
                             }
                         } else {
                             // reset
-                            this.achievementRepository.remove('PC');
                             this.scenarioRepository.choose(scenario, null);
                             this.scenarioRepository.setHidden(102);
                             this.scenarioRepository.setHidden(103);
@@ -75,16 +66,11 @@ class ChoiceService {
                     callback: (value) => {
                         if (value) {
                             if (value === 2) {
-                                // achievements
-                                this.achievementRepository.gain('GPOA');
-
-                                // scenarios
                                 this.scenarioRepository.choose(scenario, '106,107');
                             }
                         } else {
                             // reset
                             if (scenario.promptChoice === 2) {
-                                this.achievementRepository.remove('GPOA');
                                 this.scenarioRepository.choose(scenario, null);
                                 this.scenarioRepository.setHidden(106);
                                 this.scenarioRepository.setHidden(107);
@@ -99,18 +85,6 @@ class ChoiceService {
                 return new PromptConfig(scenario, {
                     options: 2,
                     callback: (value) => {
-                        if (value) {
-                            if (value === 2) {
-                                // achievements
-                                this.achievementRepository.gain('GPOA');
-                            }
-                        } else {
-                            // reset
-                            if (scenario.promptChoice === 2) {
-                                this.achievementRepository.remove('GPOA');
-                            }
-                        }
-
                         this.setChoice(scenario, value);
                     }
                 });
@@ -120,7 +94,6 @@ class ChoiceService {
                     options: 2,
                     callback: (value) => {
                         if (value) {
-                            // scenarios
                             if (value === 1) {
                                 this.scenarioRepository.choose(scenario, 104);
                             }
@@ -142,19 +115,6 @@ class ChoiceService {
                 return new PromptConfig(scenario, {
                     options: 3,
                     callback: (value) => {
-                        // reset
-                        this.achievementRepository.remove('PXA');
-                        this.achievementRepository.remove('PDA');
-                        this.achievementRepository.remove('PAD');
-
-                        if (value === 1) {
-                            this.achievementRepository.gain('PXA');
-                        } else if (value === 2) {
-                            this.achievementRepository.gain('PDA');
-                        } else if (value === 3) {
-                            this.achievementRepository.gain('PAD');
-                        }
-
                         this.setChoice(scenario, value);
                     }
                 });
@@ -163,23 +123,6 @@ class ChoiceService {
                 return new PromptConfig(scenario, {
                     options: 2,
                     callback: (value) => {
-                        if (value) {
-                            if (value === 1) {
-                                this.achievementRepository.gain('PHP');
-                            } else if (value === 2) {
-                                this.achievementRepository.gain('GPA');
-                                this.achievementRepository.gain('PHH');
-                            }
-                        } else {
-                            // reset
-                            if (scenario.promptChoice === 1) {
-                                this.achievementRepository.remove('PHP');
-                            } else if (scenario.promptChoice === 2) {
-                                this.achievementRepository.remove('GPA');
-                                this.achievementRepository.remove('PHH');
-                            }
-                        }
-
                         this.setChoice(scenario, value);
                     }
                 });
@@ -188,19 +131,6 @@ class ChoiceService {
                 return new PromptConfig(scenario, {
                     options: 2,
                     callback: (value) => {
-                        if (value) {
-                            if (value === 1) {
-                                this.achievementRepository.gain('GMS');
-                                this.achievementRepository.gain('GPA');
-                            }
-                        } else {
-                            // reset
-                            if (scenario.promptChoice === 1) {
-                                this.achievementRepository.remove('GMS');
-                                this.achievementRepository.remove('GPA');
-                            }
-                        }
-
                         this.setChoice(scenario, value);
                     }
                 });
@@ -210,13 +140,13 @@ class ChoiceService {
     }
 
     setChoice(scenario, value, setComplete = true) {
-        if (value !== null && setComplete) {
-            this.scenarioRepository.changeState(scenario, ScenarioState.complete);
-        }
-
         this.findScenariosWithChoice(scenario.prompt).each((s) => {
             s.promptChoice = value;
         });
+
+        if (value !== null && setComplete) {
+            this.scenarioRepository.changeState(scenario, ScenarioState.complete);
+        }
     }
 
     isChoiceSet(id) {
