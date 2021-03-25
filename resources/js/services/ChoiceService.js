@@ -30,8 +30,8 @@ class ChoiceService {
             case 'burningMountain':
                 return new PromptConfig(scenario, {
                     options: 2,
-                    callback: (id) => {
-                        this.setChoice(scenario, id);
+                    callback: (value) => {
+                        this.setChoice(scenario, value);
                     }
                 });
 
