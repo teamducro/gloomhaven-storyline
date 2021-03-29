@@ -66,4 +66,12 @@ export default class GameData {
             highres: `/img/maps/${map}-highres.jpg`
         }
     }
+
+    scenarioStickerScale(game = 'gh') {
+        if (game === 'gh' || game === 'fc') {
+            return 0.79;
+        }
+
+        return 1;
+    }
 }

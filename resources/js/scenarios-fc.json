@@ -13,8 +13,8 @@
             ],
             "coordinates": {
                 "name": "B-13",
-                "x": 0,
-                "y": 0
+                "x": 58.67,
+                "y": 15.24
             },
             "chapter_id": 1,
             "links_to": [
@@ -52,8 +52,8 @@
             ],
             "coordinates": {
                 "name": "A-17",
-                "x": 0,
-                "y": 0
+                "x": 75.35,
+                "y": 5.22
             },
             "chapter_id": 1,
             "links_to": [
@@ -144,7 +144,7 @@
                 "x": 0,
                 "y": 0
             },
-            "chapter_id": 2,
+            "chapter_id": 3,
             "links_to": [
                 104,
                 105
@@ -200,7 +200,7 @@
                 "x": 0,
                 "y": 0
             },
-            "chapter_id": 3,
+            "chapter_id": 4,
             "linked_from": [
                 97
             ],
@@ -231,10 +231,10 @@
             "name": "Shrouded Crypt",
             "coordinates": {
                 "name": "K-9",
-                "x": 0,
-                "y": 0
+                "x": 43.12,
+                "y": 63.4
             },
-            "chapter_id": 4,
+            "chapter_id": 5,
             "pages": [
                 "fc/1/10",
                 "fc/2/15",
