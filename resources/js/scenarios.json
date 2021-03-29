@@ -2163,7 +2163,7 @@
                 "gh/69"
             ],
             "requirements": "“Seeker of Xorn” personal quest",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "links_to": [
                 53
             ],
@@ -2187,7 +2187,7 @@
                 "gh/70"
             ],
             "requirements": "“Seeker of Xorn” personal quest",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "links_to": [
                 54
             ],
@@ -2219,7 +2219,7 @@
                 "gh/71"
             ],
             "requirements": "“Seeker of Xorn” personal quest, “Staff of Xorn” item equipped",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "linked_from": [
                 53
             ],
@@ -2251,7 +2251,7 @@
                 "gh/72"
             ],
             "requirements": "“Take Back the Trees” personal quest",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "links_to": [
                 56
             ],
@@ -2277,7 +2277,7 @@
                 "gh/73"
             ],
             "requirements": "“Take Back the Trees” personal quest",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "linked_from": [
                 55
             ],
@@ -2310,7 +2310,7 @@
                 "gh/74"
             ],
             "requirements": "“Vengeance” personal quest",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "links_to": [
                 58
             ],
@@ -2340,7 +2340,7 @@
                 "gh/75"
             ],
             "requirements": "“Vengeance” personal quest",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "linked_from": [
                 57
             ],
@@ -2369,7 +2369,7 @@
                 "gh/76"
             ],
             "requirements": "“Finding the Cure” personal quest",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "links_to": [
                 60
             ],
@@ -2393,7 +2393,7 @@
                 "gh/78"
             ],
             "requirements": "“Finding the Cure” personal quest",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "linked_from": [
                 59
             ],
@@ -2423,7 +2423,7 @@
                 "gh/79"
             ],
             "requirements": "“The Fall of Man” personal quest",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "links_to": [
                 62
             ],
@@ -2446,7 +2446,7 @@
                 "gh/80"
             ],
             "requirements": "“The Fall of Man” personal quest",
-            "chapter_id": 11,
+            "chapter_id": 101,
             "linked_from": [
                 61
             ],
@@ -2477,7 +2477,7 @@
             "pages": [
                 "gh/81"
             ],
-            "chapter_id": 12,
+            "chapter_id": 102,
             "treasures": {
                 "12": "Gain “Magma Waders” (Item 099)"
             },
@@ -2508,7 +2508,7 @@
                     ]
                 }
             ],
-            "chapter_id": 12,
+            "chapter_id": 102,
             "treasures": {
                 "9": "Gain “Wave Crest” (Item 111)"
             },
@@ -2532,7 +2532,7 @@
                 "gh/83",
                 "gh/84"
             ],
-            "chapter_id": 12,
+            "chapter_id": 102,
             "region_ids": [
                 4
             ],
@@ -2556,7 +2556,7 @@
                 "gh/84",
                 "gh/85"
             ],
-            "chapter_id": 12,
+            "chapter_id": 102,
             "treasures": {
                 "16": "Gain 10 gold",
                 "36": "“Rocket Boots” design (Item 096)"
@@ -2580,7 +2580,7 @@
             "pages": [
                 "gh/86"
             ],
-            "chapter_id": 12,
+            "chapter_id": 102,
             "treasures": {
                 "14": "Gain 10 Experience"
             },
@@ -2603,7 +2603,7 @@
             "pages": [
                 "gh/87"
             ],
-            "chapter_id": 12,
+            "chapter_id": 102,
             "treasures": {
                 "33": "Gain “Weighted Net” (Item 019)"
             },
@@ -2626,7 +2626,7 @@
             "pages": [
                 "gh/88"
             ],
-            "chapter_id": 12,
+            "chapter_id": 102,
             "rewards": [
                 "15 gold each"
             ]
@@ -2644,7 +2644,7 @@
                 "gh/89",
                 "gh/90"
             ],
-            "chapter_id": 12,
+            "chapter_id": 102,
             "treasures": {
                 "6": "Gain “Hooked Chain” (Item 039)"
             },
@@ -2668,7 +2668,7 @@
                 "gh/90",
                 "gh/91"
             ],
-            "chapter_id": 12,
+            "chapter_id": 102,
             "rewards": [
                 "2 “Major Power Potions” (Item 041)"
             ]
@@ -2685,7 +2685,7 @@
             "pages": [
                 "gh/92"
             ],
-            "chapter_id": 13,
+            "chapter_id": 103,
             "rewards": [
                 "+1 reputation",
                 "+1 prosperity"
@@ -2703,7 +2703,7 @@
             "pages": [
                 "gh/93"
             ],
-            "chapter_id": 13,
+            "chapter_id": 103,
             "region_ids": [
                 4
             ],
@@ -2731,7 +2731,7 @@
                     ]
                 }
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "treasures": {
                 "20": "Random Item Design"
             },
@@ -2766,7 +2766,7 @@
                     ]
                 }
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "treasures": {
                 "53": "Random Item Design"
             },
@@ -2791,7 +2791,7 @@
                 "gh/97"
             ],
             "requirements": "Bravery",
-            "chapter_id": 13,
+            "chapter_id": 103,
             "treasures": {
                 "75": "Cryptogram Found (See scenario book page 121)"
             },
@@ -2812,7 +2812,7 @@
                 "gh/97",
                 "gh/98"
             ],
-            "chapter_id": 13,
+            "chapter_id": 103,
             "region_ids": [
                 1
             ],
@@ -2832,7 +2832,7 @@
             "pages": [
                 "gh/99"
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "region_ids": [
                 1
             ],
@@ -2864,7 +2864,7 @@
                     ]
                 }
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "treasures": {
                 "52": "Gain “Heart of the Betrayer” (Item 131)"
             },
@@ -2893,7 +2893,7 @@
                 "gh/101",
                 "gh/102"
             ],
-            "chapter_id": 14,
+            "chapter_id": 104,
             "region_ids": [
                 4
             ],
@@ -2916,7 +2916,7 @@
             "pages": [
                 "gh/103"
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "treasures": {
                 "68": "Gain “Helix Ring” (Item 130)"
             },
@@ -2942,7 +2942,7 @@
             "pages": [
                 "gh/104"
             ],
-            "chapter_id": 14,
+            "chapter_id": 104,
             "treasures": {
                 "62": "Gain “Helm of the Mountain” (Item 110) and “Mountain Hammer” (Item 115)"
             },
@@ -2983,7 +2983,7 @@
                     ]
                 }
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "region_ids": [
                 1
             ],
@@ -3014,7 +3014,7 @@
                     ]
                 }
             ],
-            "chapter_id": 13,
+            "chapter_id": 103,
             "treasures": {
                 "42": "Random Item Design"
             },
@@ -3043,7 +3043,7 @@
                 "gh/107",
                 "gh/108"
             ],
-            "chapter_id": 14,
+            "chapter_id": 104,
             "region_ids": [
                 4
             ],
@@ -3069,7 +3069,7 @@
                 "gh/108",
                 "gh/109"
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "links_to": [
                 87
             ],
@@ -3107,7 +3107,7 @@
                     ]
                 }
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "linked_from": [
                 86
             ],
@@ -3143,7 +3143,7 @@
                     ]
                 }
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "treasures": {
                 "8": "Gain 1 ✔",
                 "37": "Gain 1 ✔"
@@ -3179,7 +3179,7 @@
                     ]
                 }
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "treasures": {
                 "13": "Suffer 5 Damage and gain POISON and WOUND",
                 "27": "Gain “Orb of Twilight” (Item 122)",
@@ -3208,7 +3208,7 @@
             "pages": [
                 "gh/113"
             ],
-            "chapter_id": 14,
+            "chapter_id": 104,
             "treasures": {
                 "19": "Random Item Design"
             },
@@ -3231,7 +3231,7 @@
             "pages": [
                 "gh/114"
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "region_ids": [
                 2
             ],
@@ -3262,7 +3262,7 @@
                     ]
                 }
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "region_ids": [
                 1
             ],
@@ -3296,7 +3296,7 @@
                     ]
                 }
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "treasures": {
                 "54": "Gain “Doomed Compass” (Item 124)"
             },
@@ -3322,7 +3322,7 @@
             "pages": [
                 "gh/117"
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "links_to": [
                 95
             ],
@@ -3353,7 +3353,7 @@
                     ]
                 }
             ],
-            "chapter_id": 15,
+            "chapter_id": 105,
             "linked_from": [
                 94
             ],
@@ -3381,6 +3381,9 @@
                 "y": 15.24
             },
             "chapter_id": 20,
+            "region_ids": [
+                1
+            ],
             "links_to": [
                 97
             ],
@@ -3420,6 +3423,9 @@
                 "y": 5.22
             },
             "chapter_id": 20,
+            "region_ids": [
+                1
+            ],
             "links_to": [
                 98,
                 99,
@@ -3452,6 +3458,9 @@
                 "y": 23.2
             },
             "chapter_id": 21,
+            "region_ids": [
+                1
+            ],
             "links_to": [
                 102,
                 103
@@ -3509,6 +3518,9 @@
                 "y": 12.6
             },
             "chapter_id": 22,
+            "region_ids": [
+                1
+            ],
             "links_to": [
                 104,
                 105
@@ -3565,6 +3577,9 @@
                 "y": 29.15
             },
             "chapter_id": 23,
+            "region_ids": [
+                5
+            ],
             "linked_from": [
                 97
             ],
@@ -3599,6 +3614,9 @@
                 "y": 63.4
             },
             "chapter_id": 24,
+            "region_ids": [
+                3
+            ],
             "pages": [
                 "fc/1/10",
                 "fc/2/15",
@@ -3636,6 +3654,9 @@
                 "y": 71.2
             },
             "chapter_id": 21,
+            "region_ids": [
+                8
+            ],
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -3689,6 +3710,9 @@
                 "y": 47
             },
             "chapter_id": 21,
+            "region_ids": [
+                1
+            ],
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -3741,6 +3765,9 @@
                 "y": 60.13
             },
             "chapter_id": 22,
+            "region_ids": [
+                9
+            ],
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -3793,6 +3820,9 @@
                 "y": 10.4
             },
             "chapter_id": 22,
+            "region_ids": [
+                5
+            ],
             "requirements": "Knowledge is Power (Global)x2 COMPLETE and Hunting the Hunter (Party) INCOMPLETE",
             "required_by": [
                 {
@@ -3851,6 +3881,9 @@
                 "y": 52.4
             },
             "chapter_id": 23,
+            "region_ids": [
+                10
+            ],
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -3918,6 +3951,9 @@
                 "y": 36.5
             },
             "chapter_id": 23,
+            "region_ids": [
+                11
+            ],
             "choices": [
                 112
             ],
@@ -3983,6 +4019,9 @@
                 "y": 88.55
             },
             "chapter_id": 241,
+            "region_ids": [
+                4
+            ],
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -4049,6 +4088,9 @@
                 "y": 81
             },
             "chapter_id": 241,
+            "region_ids": [
+                4
+            ],
             "requirements": "Knowledge is Power (Global)x2 COMPLETE",
             "required_by": [
                 {
@@ -4097,6 +4139,9 @@
                 "y": 64.7
             },
             "chapter_id": 21,
+            "region_ids": [
+                8
+            ],
             "pages": [
                 "fc/1/19",
                 "fc/2/19",
@@ -4133,6 +4178,9 @@
                 "y": 9.15
             },
             "chapter_id": 22,
+            "region_ids": [
+                1
+            ],
             "pages": [
                 "fc/1/20",
                 "fc/2/15",
@@ -4189,6 +4237,9 @@
                 "y": 26.7
             },
             "chapter_id": 23,
+            "region_ids": [
+                10
+            ],
             "pages": [
                 "fc/1/21",
                 "fc/2/23",
@@ -4240,6 +4291,9 @@
                 "y": 44.8
             },
             "chapter_id": 24,
+            "region_ids": [
+                12
+            ],
             "name": "The Lost Thread",
             "pages": [
                 "fc/1/22",
@@ -4276,6 +4330,9 @@
                 "y": 28.4
             },
             "chapter_id": 25,
+            "region_ids": [
+                1
+            ],
             "pages": [
                 "fc/1/23",
                 "fc/2/7",
@@ -4323,6 +4380,9 @@
                 "y": 45.1
             },
             "chapter_id": 25,
+            "region_ids": [
+                12
+            ],
             "pages": [
                 "fc/1/24",
                 "fc/2/8",
@@ -4406,28 +4466,28 @@
             "name": "Voice"
         },
         {
-            "id": 11,
+            "id": 100,
+            "name": "Solo Scenarios"
+        },
+        {
+            "id": 101,
             "name": "Personal Quests"
         },
         {
-            "id": 12,
+            "id": 102,
             "name": "Random Scenarios"
         },
         {
-            "id": 13,
+            "id": 103,
             "name": "Sealed"
         },
         {
-            "id": 14,
+            "id": 104,
             "name": "Road Events"
         },
         {
-            "id": 15,
+            "id": 105,
             "name": "City Events"
-        },
-        {
-            "id": 16,
-            "name": "Solo Scenarios"
         },
         {
             "id": 20,
@@ -4482,6 +4542,26 @@
         {
             "id": 7,
             "name": "Crypt"
+        },
+        {
+            "id": 8,
+            "name": "East Continent"
+        },
+        {
+            "id": 9,
+            "name": "Serpent’s Kiss River"
+        },
+        {
+            "id": 10,
+            "name": "Merchant’s Bay"
+        },
+        {
+            "id": 11,
+            "name": "East Coast"
+        },
+        {
+            "id": 12,
+            "name": "different Dimension"
         }
     ]
 }
