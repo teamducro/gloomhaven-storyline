@@ -17,8 +17,4 @@ export default class QuestRepository {
     findMany(list) {
         return app.quests.whereIn(list);
     }
-
-    get questValidator() {
-        return this.questValidator2 || (this.questValidator2 = new QuestValidator);
-    }
 }
