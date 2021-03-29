@@ -185,6 +185,27 @@ export default {
         'Sunken Vessel': 'Sunken Vessel',
         'Vermling Nest': 'Vermling Nest',
         'Payment Due': 'Payment Due',
+        'Unexpected Visitors': 'Unexpected Visitors',
+        'Lore Untold': 'Lore Untold',
+        'Past in Flames': 'Past in Flames',
+        'Aftershocks': 'Aftershocks',
+        'Shifting Gears': 'Shifting Gears',
+        'Shrouded Crypt': 'Shrouded Crypt',
+        'Bazaar of Knowledge': 'Bazaar of Knowledge',
+        'Where It Is Needed': 'Where It Is Needed',
+        'A Gaping Would': 'A Gaping Would',
+        'Monstrosities of a Cult': 'Monstrosities of a Cult',
+        'Intricate Work': 'Intricate Work',
+        'Mechanical Genius': 'Mechanical Genius',
+        'Prologue to the End': 'Prologue to the End',
+        'Epilogue of a War': 'Epilogue of a War',
+        'A Circular Solution': 'A Circular Solution',
+        'The Shackles Loosen': 'The Shackles Loosen',
+        'The Bottom of It': 'The Bottom of It',
+        'The Lost Thread': 'The Lost Thread',
+        'Ink Not Yet Dry': 'Ink Not Yet Dry',
+        'Future Uncertain': 'Future Uncertain',
+        'Tower to the Stars': 'Tower to the Stars',
     },
     achievements: {
         "First Steps": "First Steps",
@@ -244,6 +265,29 @@ export default {
         "High Sea Escort": "High Sea Escort",
         "Grave Job": "Grave Job",
         "Northern Expedition": "Northern Expedition",
+        "Through the Portal": "Through the Portal",
+        "Knowledge is Power": "Knowledge is Power",
+        "Knowledge is Power x2": "Knowledge is Power x2",
+        "Knowledge is Power x3": "Knowledge is Power x3",
+        "Knowledge is Power x4": "Knowledge is Power x4",
+        "Angels of Death": "Angels of Death",
+        "Custodians": "Custodians",
+        "Hunted Prey": "Hunted Prey",
+        "Pieces of an Artifact": "Pieces of an Artifact",
+        "Pieces of an Artifact x2": "Pieces of an Artifact x2",
+        "Pieces of an Artifact x3": "Pieces of an Artifact x3",
+        "Guard Detail": "Guard Detail",
+        "Dimensional Equilibrium": "Dimensional Equilibrium",
+        "Hunting the Hunter": "Hunting the Hunter",
+        "Xangroths Aid": "Xangroth's Aid",
+        "Diamaras Aid": "Diamara's Aid",
+        "Beauty in Freedom": "Beauty in Freedom",
+        "A Peril Averted": "A Peril Averted",
+        "A Peril Averted x2": "A Peril Averted x2",
+        "A Peril Averted x3": "A Peril Averted x3",
+        "A Peril Averted x4": "A Peril Averted x4",
+        "Mechanical Splendor": "Mechanical Splendor",
+        "Severed Ties": "Severed Ties"
     },
     items: {
         "Boots of Striding": "Boots of Striding",
@@ -922,13 +966,62 @@ export default {
             }
         },
     },
-    prompt: {
-        dragonChoice: {
+    prompts: {
+        dragons: {
             title: "Friend or Foe",
             text: "You retrieved the Drake’s treasure. Do you return it to the Drake or do you follow the Guard Captain’s orders and attempt to kill the Drake?",
-            dragonChoice1: "Return the treasure to the Drake. Gain the Global Achivement \"The Drake Aided\". Add City Event 75 and Road Event 66 to the deck",
-            dragonChoice2: "Do not aid the Drake."
-
+            1: "Return the treasure to the Drake. Gain the Global Achievement “The Drake Aided”. Add City Event 75 and Road Event 66 to the deck",
+            2: "Do not aid the Drake."
+        },
+        burningMountain: {
+            title: "Escape The Burning Mountain",
+            text: "You looted the treasure. Do you dare to escape the rumbling volcano and keep the retrieved items?",
+            1: "Conclusion A: You decide to end your turn at G and remove one of the items from the game.",
+            2: "Conclusion B: After looting the chest, all characters returned to the entrance before becoming exhausted."
+        },
+        merchantsBay: {
+            title: "The Merchant’s Bay",
+            text: "You doused the flames and disposed the interlopers. How many records were you able to save?",
+            1: "You recovered both scrolls.",
+            2: "You failed to recover the Record of the Journey.",
+            3: "You failed to recover the Record of Accounts."
+        },
+        shiftingGears: {
+            title: "Bastian’s workshop",
+            text: "Did you manage to kill all enemies?",
+            1: "All enemies are killed.",
+            2: "???"
+        },
+        searchPiecesOfAnArtifact: {
+            title: "Search pieces of the rift device",
+            text: "Did you manage to kill all enemies?",
+            1: "All enemies are killed.",
+            2: "Found more pieces of the rift device."
+        },
+        directingBeams: {
+            title: "Directing Beams",
+            text: "Did you direct the beams to the fountain?",
+            1: "All four beams are directed at the fountain",
+            2: "Survived for fourteen rounds"
+        },
+        aftershocks: {
+            title: "Protect the civilians",
+            text: "How many Valraths were you able to bring to safety?",
+            1: "Exactly four civilians are alive.",
+            2: "Five or more civilians are alive."
+        },
+        bloodyWar: {
+            title: "Bloody Demon War",
+            text: "Which side dit you choose?",
+            1: "A: Assist the Valraths",
+            2: "B: Assist the Humans",
+            3: "C: Fight both sides"
+        },
+        escapeFromTheHusk: {
+            title: "Escape from The Husk",
+            text: "Did all characters escaped through an exit?",
+            1: "All characters escaped",
+            2: "???"
         }
     }
 }

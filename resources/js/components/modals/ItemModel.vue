@@ -47,6 +47,9 @@ export default {
         this.$bus.$on('close-item', () => {
             this.close();
         });
+        this.$bus.$on('game-selected', () => {
+            this.unsetItem();
+        });
     },
     methods: {
         open(item) {
@@ -56,7 +59,10 @@ export default {
         close() {
             this.item = null;
             this.$refs['modal'].close();
-        }
+        },
+        unsetItem() {
+            this.item = null;
+        },
     }
 }
 </script>

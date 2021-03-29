@@ -37,12 +37,12 @@ export default class ScenarioValidator {
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         if (scenario.isHidden()) {
-            if (states.has(ScenarioState.complete) || unlocked || scenario.id === 1) {
+            if (states.has(ScenarioState.complete) || unlocked || scenario.root) {
                 this.scenarioRepository.setIncomplete(scenario);
                 this.needsValidating = true;
             }
         } else {
-            if (states.has(ScenarioState.complete) === false && !scenario.is_side && scenario.id !== 1 && !unlocked) {
+            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked) {
                 this.scenarioRepository.setHidden(scenario);
                 this.needsValidating = true;
             }
@@ -54,7 +54,9 @@ export default class ScenarioValidator {
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         if (linkedScenarios.where('hasChoices', true).count()) {
-            let chosen = linkedScenarios.firstWhere('_choice', scenario.id);
+            let chosen = linkedScenarios.filter((s) => {
+                return String(s.choice).split(',').includes(String(scenario.id));
+            }).count() > 0;
             let withoutChoicesStates = linkedScenarios.where('hasChoices', false).pluck('state', 'state');
 
             if (scenario.isHidden()) {

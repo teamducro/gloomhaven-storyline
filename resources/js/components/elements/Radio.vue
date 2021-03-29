@@ -3,7 +3,7 @@
         <div class="mdc-radio">
             <input class="mdc-radio__native-control"
                    type="radio"
-                   :id="id"
+                   :id="Number.isInteger(id) ? group+id : id"
                    :name="group"
                    :checked="isChecked"
                    :disabled="disabled"
@@ -19,39 +19,39 @@
 </template>
 
 <script>
-    export default {
-        props: {
-            id: {
-                type: String
-            },
-            group: {
-                type: String
-            },
-            label: {
-                type: String
-            },
-            checked: {
-                type: Boolean,
-                default: false
-            },
-            disabled: {
-                type: Boolean,
-                default: false
-            }
+export default {
+    props: {
+        id: {
+            type: [String, Number]
         },
-        data() {
-            return {
-                'isChecked': false
-            }
+        group: {
+            type: String
         },
-        mounted() {
-            this.isChecked = this.checked;
+        label: {
+            type: String
         },
-        methods: {
-            changed() {
-                this.$emit('update:checked', this.isChecked);
-                this.$emit('changed', this.id);
-            }
+        checked: {
+            type: Boolean,
+            default: false
+        },
+        disabled: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data() {
+        return {
+            'isChecked': false
+        }
+    },
+    mounted() {
+        this.isChecked = this.checked;
+    },
+    methods: {
+        changed() {
+            this.$emit('update:checked', this.isChecked);
+            this.$emit('changed', this.id);
         }
     }
+}
 </script>

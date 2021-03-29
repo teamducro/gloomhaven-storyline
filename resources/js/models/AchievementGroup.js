@@ -1,5 +1,8 @@
 import Storable from './Storable';
 
+/**
+ * A group of achievements, only one of which can be gained at a time.
+ */
 class AchievementGroup {
 
     constructor(id) {

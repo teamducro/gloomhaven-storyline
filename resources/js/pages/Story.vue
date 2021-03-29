@@ -1,9 +1,9 @@
 <template>
     <div id="storyline-container" class="w-screen">
         <inline-svg
-            v-if="isPortrait !== null"
+            v-if="storyline !== null && isPortrait !== null"
             :key="storylineKey"
-            src="storyline"
+            :src="storyline"
             id="storyline"
             :classes="['h-screen', 'w-screen']"
         />
@@ -28,11 +28,12 @@ export default {
     },
     data() {
         return {
-            scenarioRepository: new ScenarioRepository(),
             isPortrait: null,
             zoom: null,
             storylineKey: 1,
-            campaignName: null
+            campaignName: null,
+            storyline: null,
+            scenarioRepository: new ScenarioRepository
         }
     },
     async mounted() {
@@ -64,6 +65,10 @@ export default {
     },
     methods: {
         render() {
+            if (this.setStoryline()) {
+                return this.rerender();
+            }
+
             if (app.scenarios && this.isPortrait !== null) {
                 this.renderScenarios();
                 this.renderChapters();
@@ -137,10 +142,23 @@ export default {
                     }
 
                     if (scenario.isComplete()) {
-                        if (!scenario.choices) {
+                        if (!scenario.choices && !scenario.treasures_to.isNotEmpty()) {
                             $edges.show();
-                        } else if (scenario.choice) {
-                            $('#edge' + scenario.id + '-' + scenario.choice).show();
+                        }
+
+                        if (scenario.choice) {
+                            String(scenario.choice).split(',').forEach((c) => {
+                                $('#edge' + scenario.id + '-' + c).show();
+                            });
+                        }
+
+                        if (scenario.treasures_to.isNotEmpty()) {
+                            scenario.links_to.each((id) => {
+                                $('#edge' + scenario.id + '-' + id).show();
+                            });
+                            this.scenarioRepository.unlockedByTreasureScenarios(scenario).each((t) => {
+                                $('#edge' + scenario.id + '-' + t.id).show();
+                            });
                         }
                     }
                 }
@@ -186,6 +204,13 @@ export default {
         setCampaignName() {
             this.campaignName = this.getCampaignName();
             $('.campaign-name').text(this.campaignName);
+        },
+        setStoryline() {
+            const storyline = 'storyline-' + app.game;
+            if (this.storyline !== storyline) {
+                this.storyline = storyline;
+                return true;
+            }
         },
         scenarioClicked(e) {
             let $node = $(e.currentTarget);

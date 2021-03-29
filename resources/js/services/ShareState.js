@@ -30,7 +30,12 @@ export default class ShareState {
         }
 
         app.switchLocal(id);
-        store.set(id, this.decodeNewLink(compressed));
+        const decoded = this.decodeNewLink(compressed);
+        if (decoded) {
+            store.set(id, decoded);
+        } else {
+            window.app.$bus.$emit('toast', 'Failed importing link.', false);
+        }
 
         return true;
     }
@@ -72,7 +77,8 @@ export default class ShareState {
             if (result.hasOwnProperty('treasures')) {
                 result.treasures.each((treasures, id) => {
                     treasures.forEach((treasure) => {
-                        this.scenarioRepository.find(id).unlockTreasure(treasure);
+                        const scenario = this.scenarioRepository.find(id);
+                        this.scenarioRepository.unlockTreasure(scenario, treasure);
                     });
                 });
             }
@@ -137,7 +143,11 @@ export default class ShareState {
             decompressed = decompressed.replace(regEx, replace);
         });
 
-        return JSON.parse(decompressed);
+        if (decompressed) {
+            return JSON.parse(decompressed);
+        }
+
+        return false;
     }
 
     decodeOldLink() {
