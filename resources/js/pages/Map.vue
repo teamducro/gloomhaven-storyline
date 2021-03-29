@@ -106,15 +106,17 @@ export default {
             this.scenarios = app.scenarios;
 
             // Show tooltip on hover
-            this.scenarios.each((scenario) => {
-                let $s = $('#s' + scenario.id);
-                if ($s.length && app.hasMouse && scenario.isVisible() && !$s.hasClass('tippy')) {
-                    tippy($s[0], {
-                        content: scenario.title
-                    });
-                    $s.addClass('tippy');
-                }
-            });
+            if (this.scenarios) {
+                this.scenarios.each((scenario) => {
+                    let $s = $('#s' + scenario.id);
+                    if ($s.length && app.hasMouse && scenario.isVisible() && !$s.hasClass('tippy')) {
+                        tippy($s[0], {
+                            content: scenario.title
+                        });
+                        $s.addClass('tippy');
+                    }
+                });
+            }
         },
         setAchievements() {
             this.achievements = app.achievements;
