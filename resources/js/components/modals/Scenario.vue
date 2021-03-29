@@ -423,7 +423,7 @@ export default {
             const scenario = this.scenarioRepository.find(id);
 
             // Can't open hidden scenario's for now.
-            if (scenario.isHidden() && !scenario.is_side) {
+            if (!scenario || (scenario.isHidden() && !scenario.is_side)) {
                 return;
             }
 
