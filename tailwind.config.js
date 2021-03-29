@@ -23,6 +23,7 @@ module.exports = {
             spacing: {
                 '.5': '0.125rem',
                 11: '2.75rem',
+                14: '3.5rem',
                 28: '7rem',
                 '1/2': '50%',
                 '1/4': '25%',
@@ -93,6 +94,9 @@ module.exports = {
             margin: {
                 7: '1.75rem',
                 18: '4.5rem'
+            },
+            rotate: {
+                '270': '270deg',
             }
         }
     },
@@ -147,7 +151,7 @@ module.exports = {
         // order: ['important', 'responsive'],
         // outline: ['important', 'responsive', 'focus'],
         // overflow: ['important', 'responsive'],
-        // padding: ['important', 'responsive'],
+        padding: ['important', 'responsive'],
         // placeholderColor: ['important', 'responsive', 'focus'],
         // pointerEvents: ['important', 'responsive'],
         // position: ['important', 'responsive'],

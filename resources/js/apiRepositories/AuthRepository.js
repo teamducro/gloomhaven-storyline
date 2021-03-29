@@ -1,6 +1,5 @@
 import store from "store/dist/store.modern";
 import ApiRepository from "./ApiRepository";
-import ScenarioRepository from "../repositories/ScenarioRepository";
 import StoryRepository from "./StoryRepository";
 import Helpers from "../services/Helpers";
 

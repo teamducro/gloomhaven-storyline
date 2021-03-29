@@ -1,11 +1,11 @@
 <template>
     <div id="map-container" class="h-screen w-screen overflow-hidden">
-        <webp src="/img/map-background-lowres.jpg" :cover="true"
-              highres="/img/map-background-highres.jpg"
+        <webp src="/img/maps/background-lowres.jpg" :cover="true"
+              highres="/img/maps/background-highres.jpg"
               alt="Gloomhaven map background" class="fixed"/>
         <div id="map">
-            <webp src="/img/map-lowres.jpg"
-                  highres="/img/map-highres.jpg"
+            <webp v-if="mapImages" :src="mapImages.lowres"
+                  :highres="mapImages.highres"
                   alt="Gloomhaven map"
                   class="map"/>
             <ul v-if="achievements">
@@ -46,18 +46,23 @@
 import panzoom from "panzoom";
 import Hammer from 'hammerjs';
 import tippy from "tippy.js";
+import GameData from "../services/GameData";
 
 export default {
     data() {
         return {
             map: null,
             $map: null,
+            mapImages: null,
             mapTouch: null,
             scenarios: null,
-            achievements: null
+            achievements: null,
+            gameData: new GameData
         }
     },
     mounted() {
+        this.mapImages = this.gameData.map();
+
         this.$map = $('#map');
         this.map = panzoom(this.$map[0], {
             minZoom: this.scale(),
@@ -72,7 +77,7 @@ export default {
 
         this.$bus.$on('scenarios-updated', this.setScenarios);
         this.$bus.$on('windows-resized', this.setScenarios);
-        $('#map').on('click', '.scenario', this.scenarioClicked);
+        this.$map.on('click', '.scenario', this.scenarioClicked);
         this.mapTouch = new Hammer(this.$map[0]);
         this.mapTouch.on('tap', (e) => {
             if (e.target.id.startsWith('s')) {
@@ -91,7 +96,7 @@ export default {
         }
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
-        $('#map').off('click', '.scenario', this.scenarioClicked);
+        this.$map.off('click', '.scenario', this.scenarioClicked);
         this.mapTouch.destroy();
     },
     methods: {
@@ -146,7 +151,7 @@ export default {
         },
         scale() {
             return this.isLandscape()
-                ? $(window).height() / 2296
+                ? $(window).height() / 2155
                 : $(window).width() / this.$map.width();
         }
     }
@@ -155,8 +160,8 @@ export default {
 
 <style lang="scss">
 #map {
-    width: 2484px;
-    height: 2160px;
+    width: 2606px;
+    height: 2155px;
     position: relative;
 
     .map {

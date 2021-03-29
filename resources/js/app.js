@@ -14,28 +14,19 @@ import store from "store/dist/store.modern";
 import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
 import {loadStripe} from '@stripe/stripe-js/pure';
-import EchoService from "./services/EchoService";
+import EchoService from "./services/app/EchoService";
 import VueScrollTo from "vue-scrollto";
 import StorySyncer from "./services/StorySyncer";
-import OfflineChecker from "./services/OfflineChecker";
+import OfflineChecker from "./services/app/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
 import * as Sentry from "@sentry/vue";
 import {Integrations} from "@sentry/tracing";
-
-/**
- * String.prototype.replaceAll() polyfill
- * https://gomakethings.com/how-to-replace-a-section-of-a-string-with-another-one-with-vanilla-js/
- * @author Chris Ferdinandi
- * @license MIT
- */
-if (!String.prototype.replaceAll) {
-    String.prototype.replaceAll = function (str, newStr) {
-        if (Object.prototype.toString.call(str).toLowerCase() === '[object regexp]') {
-            return this.replace(str, newStr);
-        }
-        return this.replace(new RegExp(str, 'g'), newStr);
-    };
-}
+import shouldTransferVersion1Progress from "./services/app/shouldTransferVersion1Progress";
+import isWebpSupported from "./services/app/isWebpSupported";
+import listenToCrtlS from "./services/app/listenToCrtlS";
+import checkHasMouse from "./services/app/checkHasMouse";
+import checkOrientation from "./services/app/checkOrientation";
+import polyfills from "./services/app/polyfills";
 
 window._ = require('lodash');
 window.$ = require('jquery');
@@ -98,6 +89,7 @@ window.app = new Vue({
     el: '#app',
     data() {
         return {
+            game: 'gh',
             scenarios: null,
             quests: null,
             achievements: null,
@@ -123,11 +115,7 @@ window.app = new Vue({
         }
     },
     async mounted() {
-        this.checkOrientation();
-        this.offlineChecker.handle();
-        this.webpSupported = this.isWebpSupported();
-        this.hasMouse = this.checkHasMouse();
-        this.shouldTransferVersion1Progress();
+        this.beforeBoot();
 
         await this.loadCampaignData(true);
         await this.$nextTick();
@@ -137,6 +125,7 @@ window.app = new Vue({
 
         document.getElementById('bg').style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
 
+        this.$bus.$on('game-selected', this.switchGame);
         this.$bus.$on('campaign-selected', this.switchCampaign);
         this.$bus.$on('load-campaign-data', this.loadCampaignData);
 
@@ -144,7 +133,7 @@ window.app = new Vue({
 
         this.$bus.$emit('open-donations');
 
-        this.listenToCrtlS();
+        listenToCrtlS();
     },
     methods: {
         async campaignsChanged(shouldSync = true) {
@@ -157,15 +146,15 @@ window.app = new Vue({
             this.$bus.$emit('campaigns-changed');
         },
         async fetchAchievements() {
-            this.achievements = this.achievementRepository.fetch();
+            this.achievements = this.achievementRepository.fetch(this.game);
             await this.$nextTick();
             this.$bus.$emit('achievements-updated');
 
             return true;
         },
         async fetchScenarios(shouldSync = true) {
-            this.quests = this.questRepository.fetch();
-            this.scenarios = this.scenarioRepository.fetch();
+            this.quests = this.questRepository.fetch(this.game);
+            this.scenarios = this.scenarioRepository.fetch(this.game);
             this.scenarioRepository.setQuests(this.scenarios, this.quests);
 
             await this.$nextTick();
@@ -175,7 +164,7 @@ window.app = new Vue({
             return true;
         },
         async fetchItems() {
-            this.items = this.itemRepository.fetch();
+            this.items = this.itemRepository.fetch(this.game);
             await this.$nextTick();
             this.$bus.$emit('items-updated');
 
@@ -184,6 +173,11 @@ window.app = new Vue({
         switchLocal(campaignId = 'local') {
             this.campaignId = campaignId;
             store.set('campaignId', this.campaignId);
+        },
+        async switchGame(game) {
+            this.game = game;
+            store.set('game', game);
+            await this.switchCampaign(this.campaignId);
         },
         async switchCampaign(campaignId, shouldFetch = false) {
             this.campaignId = campaignId;
@@ -199,6 +193,7 @@ window.app = new Vue({
             }
 
             this.campaignData = store.get(this.campaignId) || {};
+            this.game = store.get('game') || 'gh';
             this.stories = this.storyRepository.getStories();
             if (Helpers.loggedIn()) {
                 this.user = this.userRepository.getUser();
@@ -228,71 +223,15 @@ window.app = new Vue({
                 // offline
             }
         },
-        isWebpSupported() {
-            let elem = document.createElement('canvas');
-
-            if (!!(elem.getContext && elem.getContext('2d'))) {
-                return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
-            }
-
-            return false;
-        },
-        checkHasMouse() {
-            $('body').one('touchstart.test', (e) => {
-                $('body').off('mousemove.test');
-            }).one('mousemove.test', (e) => {
-                this.hasMouse = true;
-                this.$bus.$emit('scenarios-updated');
-            });
-        },
-        checkOrientation() {
-            this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
-
-            window.addEventListener('resize', _.debounce(() => {
-                this.isPortrait = window.matchMedia("(orientation: portrait)").matches;
-                this.$bus.$emit('orientation-changed', this.isPortrait);
-                this.$bus.$emit('windows-resized');
-
-                this.updateViewportHeight();
-            }, 300));
-            this.$bus.$emit('orientation-changed', this.isPortrait);
-            this.updateViewportHeight();
-        },
-        updateViewportHeight() {
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        },
-        shouldTransferVersion1Progress() {
-            if (!store.get('scenario-1')) {
-                return;
-            }
-
-            const items = {...localStorage};
-
-            // fetch old campaign progress.
-            let local = {};
-            for (const [key, value] of Object.entries(items)) {
-                if (key.startsWith('scenario') || key.startsWith('achievement')) {
-                    local[key] = JSON.parse(value);
-                }
-            }
-
-            // store campaign progress at new location.
-            store.set('local', local);
-
-            // remove old campaign progress.
-            Object.keys(local).forEach(key => {
-                store.remove(key);
-            });
-        },
-
-        listenToCrtlS() {
-            document.addEventListener('keydown', (e) => {
-                if ((Helpers.isMac() ? e.metaKey : e.ctrlKey) && (e.code === 'KeyS')) {
-                    e.preventDefault();
-                    this.storySyncer.store(true);
-                }
-            }, false);
+        beforeBoot() {
+            polyfills();
+            this.$bus.$on('orientation-changed', (isPortrait) => this.isPortrait = isPortrait);
+            this.$bus.$on('has-mouse', (hasMouse) => this.hasMouse = hasMouse);
+            checkOrientation(this.$bus);
+            this.offlineChecker.handle();
+            this.webpSupported = isWebpSupported();
+            checkHasMouse(this.$bus);
+            shouldTransferVersion1Progress();
         }
     }
 });

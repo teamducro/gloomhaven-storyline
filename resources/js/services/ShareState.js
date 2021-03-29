@@ -77,7 +77,8 @@ export default class ShareState {
             if (result.hasOwnProperty('treasures')) {
                 result.treasures.each((treasures, id) => {
                     treasures.forEach((treasure) => {
-                        this.scenarioRepository.find(id).unlockTreasure(treasure);
+                        const scenario = this.scenarioRepository.find(id);
+                        this.scenarioRepository.unlockTreasure(scenario, treasure);
                     });
                 });
             }

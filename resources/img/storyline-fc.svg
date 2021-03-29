@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<svg width="550" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <style>text { font-family: "Pirata One", "Nyala", sans-serif; fill: white; }
+        text.label { font-size: 10px; }
+        .line { fill: none; }
+        .arrow { fill: white; }
+        .line, .arrow { stroke: white; }
+        .scenario { cursor: pointer; }
+
+        circle.node { fill: black; stroke: white; transform: translate(-10.8px, 0); }
+        circle.node + text { font-size: 11px; transform: translate(0px, 9px); }
+        circle.node ~ .blocked { font-size: 16px; font-family: Arial, sans-serif; transform: translate(-10px, -5px); }
+        circle.node ~ .required { font-size: 12px; font-weight: bold; transform: translate(-7px, -5px); }
+    </style>
+    <g class="chapter chapter1" transform="matrix(1 0 0 1 0 0)">
+        <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="62.13135" x="253.43433"
+              y="20.6483"/>
+        <text class="label" x="262.59958" y="39.51694">{{ $t("Diviner") }}</text>
+    </g>
+    <g class="chapter chapter2" transform="matrix(1 0 0 1 0 0)">
+        <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="103" x="39.43433"
+              y="160"/>
+        <text class="label" fill="black" transform="rotate(-90 131.203 202.12)" x="100.59958" y="205.785318">
+            {{ $t("Orchid society") }}
+        </text>
+    </g>
+    <g class="chapter chapter3" transform="matrix(1 0 0 1 0 0)">
+        <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="103" x="166.43433"
+              y="160.000011"/>
+        <text class="label" fill="black" transform="rotate(-90 257.654 202.12)" x="210" y="205.785318">
+            {{ $t("Citizens of Gloomhaven") }}
+        </text>
+    </g>
+    <g class="chapter chapter4">
+        <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="103" x="292.93432"
+              y="159.648311"/>
+        <text class="label" fill="black" transform="matrix(1 0 0 1 0 0) rotate(-90 384.107 203.102)" x="353.432912"
+              y="206.76695">{{ $t("The rift device") }}
+        </text>
+    </g>
+    <g class="chapter chapter5" transform="matrix(1 0 0 1 0 0)">
+        <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="103" x="419.93432"
+              y="159.648311"/>
+        <text class="label" fill="black" transform="rotate(-90 511.26 203.768)" x="480.432915" y="207.433628">
+            {{ $t("Tainted crypt") }}
+        </text>
+    </g>
+    <g class="chapter chapter6">
+        <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="62.13135" x="253.43433"
+              y="300.481654"/>
+        <text class="label" fill="black" x="259.082933" y="387.01696">{{ $t("Corruption") }}</text>
+    </g>
+    <g class="scenario" id="node96">
+        <circle class="node" cx="283.35937" cy="60.76407" fill="black" r="10.8"/>
+        <text fill="black" x="268" y="56.44952">96</text>
+        <text x="266" y="56.44952" class="required">!</text>
+    </g>
+    <g class="edge edge96" id="edge96-97">
+        <path class="line" d="m272.71684,71.74055l0,13.75621" fill="black"/>
+        <path class="arrow"
+              d="m272.71684,88.91357l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black"/>
+    </g>
+    <g class="scenario" id="node97" transform="matrix(1 0 0 1 0 0)">
+        <circle class="node" cx="283.73369" cy="101.63889" fill="black" r="10.8"/>
+        <text fill="black" x="268" y="97.32434">97</text>
+    </g>
+    <g class="edge edge97" id="edge97-98">
+        <path class="arrow"
+              d="m94.76016,174.89236l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(68.7052 94.7602 172.376)"/>
+        <path class="line" d="m178.99584,49.02258l0,180.92332" fill="black"
+              transform="rotate(68.7052 178.996 139.484)"/>
+    </g>
+    <g class="edge edge97" id="edge97-99">
+        <path class="line" d="m241.219845,100.74288l0,76.962787" fill="black"
+              transform="rotate(43.243 241.22 139.224)"/>
+        <path class="arrow"
+              d="m214.15,170.303177l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(43.243 214.15 167.787)"/>
+    </g>
+    <g class="edge edge97" id="edge97-100">
+        <path class="line" d="m304.57052,100.9616l0,76.26324" fill="black"
+              transform="matrix(1 0 0 1 0 0) rotate(-43.243 304.57 139.093)"/>
+        <path class="arrow"
+              d="m330.45,169.21682l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(-43.243 330.45 166.7)"/>
+    </g>
+    <g class="edge edge97" id="edge97-101">
+        <path class="line" d="m366.73616,49.30357l0,180.92332" fill="black"
+              transform="rotate(-68.7052 366.736 139.765)"/>
+        <path class="arrow"
+              d="m450.85,175.31682l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(-68.7052 450.85 172.8)"/>
+    </g>
+    <g class="scenario" id="node98">
+        <circle class="node" cx="93.55" cy="180.1017" fill="black" r="10.8"/>
+        <text fill="black" x="78" y="175.53715">98</text>
+    </g>
+    <g class="scenario" id="node102">
+        <circle class="node" cx="65.3" cy="209.1017" fill="black" r="10.8"/>
+        <text fill="black" x="49.05" y="204.78715">102</text>
+        <text x="47" y="204.78715" class="required">!</text>
+    </g>
+    <g class="scenario" id="node103">
+        <circle class="node" cx="121.55" cy="209.1017" fill="black" r="10.8"/>
+        <text fill="black" x="105.25" y="204.78715">103</text>
+        <text x="103.25" y="204.78715" class="required">!</text>
+    </g>
+    <g class="scenario" id="node110">
+        <circle class="node" cx="93.55" cy="237.8517" fill="black" r="10.8"/>
+        <text fill="black" x="78.25" y="233.53715">110</text>
+    </g>
+    <g class="edge edge98" id="edge98-102" transform="rotate(45 68.75 193.352)">
+        <path class="line" d="m68.74999,184.58598l0,13.75621"/>
+        <path class="arrow"
+              d="m68.74999,202.11742l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"/>
+    </g>
+    <g class="edge edge98" id="edge98-103">
+        <path class="line" d="m96.14217,184.91234l0,13.75621" transform="rotate(-46 96.142 191.791)"/>
+        <path class="arrow"
+              d="m101.99508,199.95937l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              transform="rotate(-46 101.995 197.443)"/>
+    </g>
+    <g class="edge edge103" id="edge103-110" transform="rotate(45 97.75 223.602)">
+        <path class="line" d="m97.75,214.83598l0,13.75622"/>
+        <path class="arrow"
+              d="m97.75,232.36742l-2.51682,-5.03363l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03363z"/>
+    </g>
+    <g class="edge edge102" id="edge102-110" transform="rotate(-45 69.25 222.602)">
+        <path class="line" d="m69.25,213.83598l0,13.75621"/>
+        <path class="arrow"
+              d="m69.25,231.36742l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"/>
+    </g>
+    <g class="scenario" id="node99">
+        <circle class="node" cx="220.55" cy="180.10171" fill="black" r="10.8"/>
+        <text fill="black" x="205" y="175.53715">99</text>
+    </g>
+    <g class="scenario" id="node104">
+        <circle class="node" cx="192.3" cy="209.10171" fill="black" r="10.8"/>
+        <text fill="black" x="176" y="204.78715">104</text>
+        <text x="174" y="204.78715" class="required">!</text>
+    </g>
+    <g class="scenario" id="node105">
+        <circle class="node" cx="248.55" cy="209.10171" fill="black" r="10.8"/>
+        <text fill="black" x="232.25" y="204.78715">105</text>
+        <text x="230.25" y="204.78715" class="required">!</text>
+    </g>
+    <g class="scenario" id="node111">
+        <circle class="node" cx="220.55" cy="237.85171" fill="black" r="10.8"/>
+        <text fill="black" x="205.25" y="233.53715">111</text>
+    </g>
+    <g class="edge edge99" id="edge99-104" transform="rotate(45 195.75 193.352)">
+        <path class="line" d="m195.74999,184.58599l0,13.75621"/>
+        <path class="arrow"
+              d="m195.74999,202.11743l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"/>
+    </g>
+    <g class="edge edge99" id="edge99-105">
+        <path class="line" d="m223.14217,184.91235l0,13.75621" transform="rotate(-46 223.142 191.791)"/>
+        <path class="arrow"
+              d="m228.99508,199.95938l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              transform="rotate(-46 228.995 197.443)"/>
+    </g>
+    <g class="edge edge105" id="edge105-111" transform="rotate(45 224.75 223.602)">
+        <path class="line" d="m224.75,214.83599l0,13.75621"/>
+        <path class="arrow"
+              d="m224.75,232.36743l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"/>
+    </g>
+    <g class="edge edge104" id="edge104-111" transform="rotate(-45 196.25 222.602)">
+        <path class="line" d="m196.25,213.83598l0,13.75622"/>
+        <path class="arrow"
+              d="m196.25,231.36742l-2.51682,-5.03363l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03363z"/>
+    </g>
+    <g class="scenario" id="node100">
+        <circle class="node" cx="347.05" cy="179.75001" fill="black" r="10.8"/>
+        <text fill="black" x="330.5" y="175.18545">100</text>
+    </g>
+    <g class="scenario" id="node106">
+        <circle class="node" cx="318.8" cy="208.75001" fill="black" r="10.8"/>
+        <text fill="black" x="302.55" y="204.43545">106</text>
+        <text x="300.55" y="204.43545" class="required">!</text>
+    </g>
+    <g class="scenario" id="node107">
+        <circle class="node" cx="375.05" cy="208.50001" fill="black" r="10.8"/>
+        <text fill="black" x="358.75" y="204.43545">107</text>
+        <text x="356.75" y="204.43545" class="required">!</text>
+    </g>
+    <g class="edge edge107" id="edge107-112" transform="rotate(45 352.25 224)">
+        <path class="line" d="m352.25,215.234199l0,13.75621"/>
+        <path class="arrow"
+              d="m352.25,232.765639l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"/>
+    </g>
+    <g class="edge edge106" id="edge106-112" transform="matrix(1 0 0 1 0 0) rotate(-45 321.75 223)">
+        <path class="line" d="m321.75,214.234189l0,13.75622"/>
+        <path class="arrow"
+              d="m321.75,231.765629l-2.51682,-5.03363l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03363z"/>
+    </g>
+    <g class="scenario" id="node112">
+        <circle class="node" cx="347.05" cy="237.50001" fill="black" r="10.8"/>
+        <text fill="black" x="331.75" y="233.18545">112</text>
+        <text x="329.75" y="233.18545" class="required">!</text>
+    </g>
+    <g class="edge edge100" id="edge100-106">
+        <path class="line" d="m322.24999,184.23429l0,13.75621" fill="black" transform="rotate(45 322.25 191.112)"/>
+        <path class="arrow"
+              d="m316.49999,199.26573l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(45 316.5 196.749)"/>
+    </g>
+    <g class="edge edge100" id="edge100-107">
+        <path class="line" d="m349.64216,184.56065l0,13.75621" transform="rotate(-46 349.642 191.439)"/>
+        <path class="arrow"
+              d="m355.49507,199.60768l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="matrix(1 0 0 1 0 0) rotate(-46 355.495 197.091)"/>
+    </g>
+    <g class="scenario" id="node101">
+        <circle class="node" cx="474.05" cy="179.75002" fill="black" r="10.8"/>
+        <text fill="black" x="458.5" y="175.18546">101</text>
+    </g>
+    <g class="scenario" id="node108">
+        <circle class="node" cx="445.8" cy="208.75002" fill="black" r="10.8"/>
+        <text fill="black" x="429.55" y="204.43546">108</text>
+        <text x="427.55" y="204.43546" class="required">!</text>
+    </g>
+    <g class="scenario" id="node109">
+        <circle class="node" cx="502.05" cy="208.50002" fill="black" r="10.8"/>
+        <text fill="black" x="485.75" y="204.43546">109</text>
+        <text x="483.75" y="204.43546" class="required">!</text>
+    </g>
+    <g class="scenario" id="node113">
+        <circle class="node" cx="474.05" cy="237.50002" fill="black" r="10.8"/>
+        <text fill="black" x="458.75" y="233.18546">113</text>
+    </g>
+    <g class="edge edge101" id="edge101-108">
+        <path class="line" d="m449.12499,184.59563l0,13.75621" fill="black"
+              transform="matrix(1 0 0 1 0 0) rotate(45 449.125 191.473)"/>
+        <path class="arrow"
+              d="m443.37499,199.62707l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="matrix(1 0 0 1 0 0) rotate(45 443.375 197.11)"/>
+    </g>
+    <g class="edge edge101" id="edge101-109">
+        <path class="line" d="m476.64216,184.56066l0,13.75621" transform="rotate(-46 476.642 191.439)"/>
+        <path class="arrow"
+              d="m482.49507,199.60769l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              transform="rotate(-46 482.495 197.091)"/>
+    </g>
+    <g class="edge edge109" id="edge109-113">
+        <path class="line" d="m480.37499,215.59564l0,13.75621" fill="black"
+              transform="matrix(1 0 0 1 0 0) rotate(45 480.375 222.473)"/>
+        <path class="arrow"
+              d="m474.12499,231.12708l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="matrix(1 0 0 1 0 0) rotate(45 474.125 228.61)"/>
+    </g>
+    <g class="scenario" id="node114" transform="matrix(1 0 0 1 0 0)">
+        <circle class="node" cx="280.5094" cy="320.597423" fill="black" r="10.8"/>
+        <text fill="black" x="265.15002" y="316.282863">114</text>
+    </g>
+    <g class="edge edge114" id="edge114-115" transform="matrix(1 0 0 1 0 0)">
+        <path class="line" d="m269.86686,331.573903l0,13.75621" fill="black"/>
+        <path class="arrow"
+              d="m269.86686,348.746923l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black"/>
+    </g>
+    <g class="scenario" id="node115" transform="matrix(1 0 0 1 0 0)">
+        <circle class="node" cx="280.88372" cy="361.472233" fill="black" r="10.8"/>
+        <text fill="black" x="265.15002" y="357.157683">115</text>
+    </g>
+    <g class="edge edge110" id="edge110-114">
+        <path class="line" d="m172.39643,189.664259l0,181.354955" fill="black"
+              transform="rotate(-68.7052 172.396 280.342)"/>
+        <path class="arrow"
+              d="m256.711352,315.971687l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(-68.7052 256.712 313.455)"/>
+    </g>
+    <g class="edge edge112" id="edge112-114">
+        <path class="line" d="m304.498627,236.073666l0,83.102615" fill="black"
+              transform="rotate(43.243 304.499 277.625)"/>
+        <path class="arrow"
+              d="m276.011356,310.291377l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(43.243 276.011 307.775)"/>
+    </g>
+    <g class="edge edge111" id="edge111-114">
+        <path class="line" d="m235.785862,238.102152l0,78.614741" fill="black"
+              transform="rotate(-42.1231 235.786 277.41)"/>
+        <path class="arrow"
+              d="m263.100572,310.369463l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(-42.1231 263.1 307.853)"/>
+    </g>
+    <g class="edge edge113" id="edge113-114">
+        <path class="arrow"
+              d="m282.621517,316.213893l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+              fill="black" transform="rotate(68.7052 282.621 313.697)"/>
+        <path class="line" d="m369.843872,186.462158l0,186.618847" fill="black"
+              transform="rotate(68.7052 369.844 279.772)"/>
+    </g>
+</svg>

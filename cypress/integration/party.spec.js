@@ -30,7 +30,7 @@ describe('Party', () => {
         cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="reputation"]').clear().type('3{enter}');
-        cy.get('h2').contains('Reputation').next().click();
+        cy.get('h2').contains('Reputation').next().click(); // rollback
         cy.get('input[aria-labelledby="reputation"]').should('have.value', '0');
     });
 
@@ -47,7 +47,7 @@ describe('Party', () => {
         cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="donations"]').clear().type('3{enter}');
-        cy.get('h2').contains('Sanctuary').next().click();
+        cy.get('h2').contains('Sanctuary').next().click(); // rollback
         cy.get('input[aria-labelledby="donations"]').should('have.value', '0');
     });
 
@@ -68,7 +68,7 @@ describe('Party', () => {
         cy.visit('/tracker/#/party');
 
         cy.get('input#p-5').click();
-        cy.get('h2').contains('Prosperity').next().click();
+        cy.get('h2').contains('Prosperity').next().click(); // rollback
         cy.get('input#p-2').should('not.be.checked');
         cy.get('input#p-3').should('not.be.checked');
         cy.get('input#p-4').should('not.be.checked');
@@ -94,19 +94,19 @@ describe('Party', () => {
         utilities.closeModel();
         cy.get('#city-events-bedges .bedge').contains('50').should('be.visible');
         cy.get('#city-events-bedges .bedge').contains('60').should('be.visible');
-        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('h2').contains('City Event Decks').next().click(); // rollback
         cy.get('#city-events-bedges .bedge').contains('60').should('not.exist');
-        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('h2').contains('City Event Decks').next().click(); // rollback
         cy.get('#city-events-bedges .bedge').contains('50').should('not.exist');
         utilities.closeModel();
-        
+
         cy.get('#city-events-bedges .bedge').contains('10').click();
         cy.get('#city-events-bedges .bedge').contains('10').should('not.exist');
-        cy.get('#city-events-bedges .bedge').contains('20').click();
-        cy.get('#city-events-bedges .bedge').contains('20').should('not.exist');
-        cy.get('h2').contains('City Event Decks').next().click();
-        cy.get('#city-events-bedges .bedge').contains('20').should('be.visible');
-        cy.get('h2').contains('City Event Decks').next().click();
+        cy.get('#city-events-bedges .bedge').contains('15').click();
+        cy.get('#city-events-bedges .bedge').contains('15').should('not.exist');
+        cy.get('h2').contains('City Event Decks').next().click(); // rollback
+        cy.get('#city-events-bedges .bedge').contains('15').should('be.visible');
+        cy.get('h2').contains('City Event Decks').next().click(); // rollback
         cy.get('#city-events-bedges .bedge').contains('10').should('be.visible');
     });
 

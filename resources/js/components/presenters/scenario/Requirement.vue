@@ -22,84 +22,91 @@
 <script>
 
 
-    import AchievementRepository from "../../../repositories/AchievementRepository";
+import AchievementRepository from "../../../repositories/AchievementRepository";
 
-    export default {
-        props: {
-            conditions: {
-                type: Object
-            },
-            scenarioState: {
-                type: String
-            }
+export default {
+    props: {
+        conditions: {
+            type: Object
         },
-        data() {
-            return {
-                achievementRepository: new AchievementRepository(),
-            };
-        },
-        computed: {
-            conditionsFiltered() {
-                return this.conditions.filter((c) => {
-                    if (!c.hidden_when) {
-                        return true;
-                    }
-                    return !this.achievementRepository.findMany(c.hidden_when).contains((a) => a.awarded);
-                }).map((condition) => {
-                    condition.requirements = this.requiredAchievements(condition);
-                    return condition;
-                }).all();
-            }
-        },
-        methods: {
-            requiredAchievements(condition) {
-                let complete = collect(condition.complete || [])
-                    .transform((item) => {
-                        return {
-                            "achievement": this.achievementRepository.find(item),
-                            "state": "Complete"
-                        }
-                    });
-                let incomplete = collect(condition.incomplete || [])
-                    .transform((item) => {
-                        return {
-                            "achievement": this.achievementRepository.find(item),
-                            "state": "Incomplete"
-                        }
-                    });
-
-                return complete.items.concat(incomplete.items);
-            },
-            requirementNotMet(requirement) {
-                if (this.scenarioState === "complete") {
-                    return false;
-                }
-
-                let achievement = this.achievementRepository.find(requirement.achievement.id);
-                if (requirement.state === "Complete" && !achievement.awarded ||
-                    (requirement.state === "Incomplete" && achievement.awarded)) {
+        scenarioState: {
+            type: String
+        }
+    },
+    data() {
+        return {
+            achievementRepository: new AchievementRepository(),
+        };
+    },
+    computed: {
+        conditionsFiltered() {
+            return this.conditions.filter((condition) => {
+                if (!condition.hidden_when && !condition.hidden) {
                     return true;
                 }
 
-            },
-            openAchievement(id) {
-                this.$bus.$emit('close-scenario', {});
-                this.$bus.$emit('open-achievement', {
-                    id: id
-                });
-            },
-        },
-        filters: {
-            capitalize: function (value) {
-                if (!value) {
-                    return "";
+                if (condition.hidden) {
+                    return false;
                 }
-                value = value.toString();
-                return value.charAt(0).toLocaleUpperCase() + value.slice(1);
-            }
-        }
 
+                return !this.achievementRepository
+                    .findMany(condition.hidden_when)
+                    .contains((achievement) => achievement.awarded);
+            }).map((condition) => {
+                condition.requirements = this.requiredAchievements(condition);
+                return condition;
+            }).all();
+        }
+    },
+    methods: {
+        requiredAchievements(condition) {
+            let complete = collect(condition.complete || [])
+                .transform((item) => {
+                    return {
+                        "achievement": this.achievementRepository.find(item),
+                        "state": "Complete"
+                    }
+                });
+            let incomplete = collect(condition.incomplete || [])
+                .transform((item) => {
+                    return {
+                        "achievement": this.achievementRepository.find(item),
+                        "state": "Incomplete"
+                    }
+                });
+
+            return complete.items.concat(incomplete.items);
+        },
+        requirementNotMet(requirement) {
+            if (this.scenarioState === "complete") {
+                return false;
+            }
+
+            let achievement = this.achievementRepository.find(requirement.achievement.id);
+            if (requirement.state === "Complete" && !achievement.awarded ||
+                (requirement.state === "Incomplete" && achievement.awarded)) {
+                return true;
+            }
+
+        },
+        openAchievement(id) {
+            this.$bus.$emit('close-scenario', {});
+            this.$bus.$emit('open-achievement', {
+                id: id
+            });
+        },
+    },
+    filters: {
+        capitalize: function (value) {
+            if (!value) {
+                return "";
+            }
+            value = value.toString();
+            return value.charAt(0).toLocaleUpperCase() + value.slice(1);
+        }
     }
+
+}
 </script>
 <style lang="scss" scoped>
 </style>
