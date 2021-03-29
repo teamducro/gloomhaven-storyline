@@ -173,8 +173,14 @@ export default {
             });
         },
         renderChapters() {
-            for (let id = 1; id <= 16; id++) {
-                const isSideChapter = id > 10;
+            $('.chapter').each(function () {
+                if ($(this).hasClass('intro')) {
+                    return;
+                }
+
+                let id = parseInt($(this).attr('id').replace('chapter', '').trim());
+
+                const isSideChapter = id > 99;
                 const scenariosInChapter = app.scenarios.where('chapter_id', id);
                 let unlocked;
 
@@ -185,15 +191,15 @@ export default {
                 } else {
                     unlocked = scenariosInChapter
                         .where('state', '=', ScenarioState.complete)
-                        .isNotEmpty() || id === 1;
+                        .isNotEmpty();
                 }
 
                 if (unlocked) {
-                    $('.chapter' + id).show();
+                    $(this).show();
                 } else {
-                    $('.chapter' + id).hide();
+                    $(this).hide();
                 }
-            }
+            });
         },
         orientationChanged(isPortrait) {
             if (this.isPortrait !== isPortrait) {

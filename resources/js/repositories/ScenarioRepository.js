@@ -331,6 +331,14 @@ export default class ScenarioRepository {
         return this._regions || (this._regions = collect((new GameData).regions(game)));
     }
 
+    fetchRegionsWithScenarios(game) {
+        const regionIds = this.where((scenario) => {
+            return scenario.isVisible();
+        }).pluck('region_ids').flatten();
+
+        return this.fetchAllRegions(game).whereIn('id', regionIds);
+    }
+
     get scenarioValidator() {
         return this._scenarioValidator || (this._scenarioValidator = new ScenarioValidator);
     }

@@ -21,7 +21,7 @@ describe('Home', () => {
     it('It redirects to story', () => {
         cy.visit('/#/story');
         utilities.isTracker();
-        cy.get('.chapter1').should(($chapter) => {
+        cy.get('#chapter1').should(($chapter) => {
             expect($chapter).css('display', 'inline');
         });
     });
