@@ -145,8 +145,7 @@
 
             <p class="mt-4">Local progress will be preserved when purchasing a shared campaign,
                 campaign progress can be transferred between campaigns on the
-                <router-link class="link" to="/settings">settings page</router-link>
-                .
+                <router-link class="link" to="/settings">settings page.</router-link>
             </p>
         </div>
 

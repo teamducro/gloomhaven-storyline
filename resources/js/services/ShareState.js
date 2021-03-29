@@ -31,11 +31,13 @@ export default class ShareState {
 
         app.switchLocal(id);
         const decoded = this.decodeNewLink(compressed);
-        if (decoded) {
-            store.set(id, decoded);
-        } else {
-            window.app.$bus.$emit('toast', 'Failed importing link.', false);
+
+        // decoding failed
+        if (!decoded) {
+            return false;
         }
+
+        store.set(id, decoded);
 
         return true;
     }
