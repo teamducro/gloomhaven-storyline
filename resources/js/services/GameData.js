@@ -1,6 +1,5 @@
 import achievementsJson from '../achievements.json'
 import scenariosJson from '../scenarios.json'
-import scenariosFCJson from '../scenarios-fc.json'
 import questsJson from '../quests.json'
 import questsFCJson from '../quests-fc.json'
 import itemsJson from '../items.json'
@@ -29,8 +28,6 @@ export default class GameData {
 
     _scenarioData(game) {
         switch (game) {
-            case 'fc':
-                return scenariosFCJson
             default:
                 return scenariosJson
         }
@@ -65,5 +62,13 @@ export default class GameData {
             lowres: `/img/maps/${map}-lowres.jpg`,
             highres: `/img/maps/${map}-highres.jpg`
         }
+    }
+
+    scenarioStickerScale(game = 'gh') {
+        if (game === 'gh' || game === 'fc') {
+            return 0.79;
+        }
+
+        return 1;
     }
 }

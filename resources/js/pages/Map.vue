@@ -36,6 +36,7 @@
                       :style="{
                           'left': scenario.coordinates.x + '%',
                           'top': scenario.coordinates.y + '%',
+                          'transform': 'scale('+scenarioScale+')'
                       }"/>
             </template>
         </div>
@@ -57,6 +58,7 @@ export default {
             mapTouch: null,
             scenarios: null,
             achievements: null,
+            scenarioScale: 1,
             gameData: new GameData
         }
     },
@@ -101,6 +103,7 @@ export default {
     },
     methods: {
         setScenarios() {
+            this.mapImages = this.gameData.map();
             this.map.setMinZoom(this.scale());
 
             this.scenarios = app.scenarios;
@@ -152,6 +155,8 @@ export default {
             return $(window).width() > $(window).height();
         },
         scale() {
+            this.scenarioScale = this.gameData.scenarioStickerScale(app.game);
+
             return this.isLandscape()
                 ? $(window).height() / 2155
                 : $(window).width() / this.$map.width();
@@ -174,8 +179,6 @@ export default {
     }
 
     .scenario {
-        transform: scale(0.79);
-
         &:hover {
             cursor: pointer;
         }
