@@ -263,6 +263,14 @@
                             Gloomhaven Storyline supports all modern devices and browsers. Easy to use on your
                             smartphone.
                         </p>
+
+                        <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
+                            <inline-svg src="icons/deviner" :classes="['w-8', 'h-8']"/>
+                            Forgotten Circles
+                        </div>
+                        <p class="text-gray-800 px-6">
+                            The tracker has support for Forgotten Circles
+                        </p>
                     </div>
                 </div>
 
