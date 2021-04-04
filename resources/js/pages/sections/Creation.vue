@@ -1,6 +1,6 @@
 <template>
-    <section class="bg-white border-b pt-16">
-        <div class="container max-w-5xl mx-auto p-4 sm:p-6">
+    <section class="bg-white">
+        <div class="container max-w-5xl mx-auto p-4 sm:p-6 lg:px-8">
             <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-800">
                 The creation
             </h1>

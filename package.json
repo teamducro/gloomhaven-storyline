@@ -72,6 +72,7 @@
         "pusher-js": "^6.0.3",
         "query-string": "^6.10.1",
         "replace-in-file": "^5.0.2",
+        "scroll-js": "^3.3.0",
         "slugify": "^1.4.6",
         "store": "^2.0.12",
         "svg-pan-zoom": "github:ariutta/svg-pan-zoom",
