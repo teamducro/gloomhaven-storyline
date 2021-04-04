@@ -314,6 +314,8 @@
 
         <pricing></pricing>
 
+        <faq></faq>
+
         <creation></creation>
 
         <div class="w-full pb-4 -mt-1">
@@ -342,16 +344,31 @@ import Pricing from "../pages/sections/Pricing";
 import HeroHeader from "../pages/sections/HeroHeader";
 import Creation from "../pages/sections/Creation";
 import TwoColumnContent from "../pages/sections/TwoColumnContent";
+import faq from "./sections/FAQ";
+import {scrollIntoView} from 'scroll-js';
 
 export default {
-    components: {HeroHeader, TwoColumnContent, Pricing, Creation},
+    components: {HeroHeader, TwoColumnContent, Pricing, Creation, faq},
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,
         }
     },
     mounted() {
+        let path = this.$router.currentRoute.path.substring(1);
+        if (path.length) {
+            this.scrollTo(path);
+        }
     },
-    methods: {}
+    methods: {
+        scrollTo(id) {
+            let element = document.getElementById(id);
+            if (element) {
+                scrollIntoView(element).then(() => {
+                    scrollIntoView(element);
+                });
+            }
+        }
+    }
 }
 </script>

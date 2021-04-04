@@ -147,6 +147,10 @@
                 campaign progress can be transferred between campaigns on the
                 <router-link class="link" to="/settings">settings page.</router-link>
             </p>
+
+            <p class="mt-8">If you have questions, consult the <a href="/#/faq" class="link">FAQ</a> or
+                <email-me class="link">send me an e-mail.</email-me>
+            </p>
         </div>
 
         <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">

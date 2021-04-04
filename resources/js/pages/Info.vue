@@ -10,9 +10,8 @@
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Support') }}</h2>
             <p>Would you like to contribute by translating to your native language?</p>
-            <p>For help or feedback,
-                <email-me class="link">please email me</email-me>
-                .
+            <p>For help or feedback, please consult the <a href="/#/faq" class="link">FAQ</a> or
+                <email-me class="link">send me an e-mail.</email-me>
             </p>
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Donate') }}</h2>
