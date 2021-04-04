@@ -262,9 +262,9 @@ export default {
         2: {
             "name": "La Ira de la Comerciante",
             "sections": {
-                1: "Jekserah offers you another job after you finished your first one. A tribe of Inox in the Dagger Forest has ransacked a couple of her caravans headed to the Capital. She asked if you could make an example of them.",
-                2: "The Inox tribe is dead. You've made an brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
-                3: "Jekserah has fled from Gloomhaven and sworn vengeange upon you due to your actions against her. She will not be keen on paying you for running her errands anymore."
+                1: "Jekserah te ofrece otro trabajo después de que termines el primero. Una tribu de Inox ha saqueado algunas de sus caravanas en el Bosque de las Dagas cuando se dirigían a la capital. Ella os preguntó si podíais darles una lección.",
+                2: "La tribu Inox está muerta. Has dado un ejemplo brutal con ellos y nadie amenazará las caravanas de Jekserah durante bastante tiempo. No os sentisteis exactamente bien por los hechos ocurridos en el campameto, bien matando a los padres frente a sus hijos, pero Jekserah os pagó de todos modos.",
+                3: "Jekserah ha huido de Gloomhaven y juró vengarse de ti debido a tus acciones contra ella. Ella ya no estará dispuesta a pagarte por hacer sus recados. "
             },
             "stages": {
                 0: "{1}",
