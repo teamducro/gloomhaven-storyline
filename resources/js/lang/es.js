@@ -248,11 +248,10 @@ export default {
     },
     quest: {
         1: {
-            "name": "La solicitud de la comerciante",
-            "sections": {
-                1: "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
-                2: "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic power. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
-                3: "You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
+            "name": "La Solicitud de la Comerciante",
+                1: "Jekserah, una comerciante valrath, se ha ofrecido a pagaros diez monedas de oro por recuperar algunas pertenencias robadas. Tras sacudir a algunos matones callejeros, habéis descubierto que el escondite de los ladrones es el Tümulo Negro, en el Soto del Cadáver.",
+                2: "Habéis encontrado a vuestra presa en el Túmulo, pero se os ha escapado. Mientras lo perseguíais, encontrásteis la razón por la que los bandidos habían elegido este túmulo en particular: huesos vivientes. Los bandidos parecen tener algún tipo de poder necromántico.  No obstante, matáis a los bandidos junto a sus impíos aliados. Vuestra presa no se encontraba entre los muertos, pero os aguarda un pasaje hacia abajo, a las catacumbas.",
+                3: "Habéis matado al Capitán bandido. Había algo en él que parecía sobrenatural y mencionó algo sobre “la Penumbra” durante la batalla. Encontráis los pergaminos robados en un alijo al fondo de los aposentos del Capitán y se los devolvéis a Jekserah a cambio de la cantidad acordada."
             },
             "stages": {
                 0: "{1}",
@@ -261,7 +260,7 @@ export default {
             }
         },
         2: {
-            "name": "La ira de la comerciante",
+            "name": "La Ira de la Comerciante",
             "sections": {
                 1: "Jekserah offers you another job after you finished your first one. A tribe of Inox in the Dagger Forest has ransacked a couple of her caravans headed to the Capital. She asked if you could make an example of them.",
                 2: "The Inox tribe is dead. You've made an brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
