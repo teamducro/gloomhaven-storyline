@@ -273,10 +273,10 @@ export default {
             }
         },
         3: {
-            "name": "Buscando la Penunbra",
+            "name": "Buscando La Penunbra",
             "sections": {
                 1: "Las revelaciones del comandante de los bandidos acerca de una \ "Penumbra \" no sientan bien a vuestros estómagos. Escudriñando la carnicería que queda tras la batalla, encontráis un alijo de pergaminos. La escritura estaba en un antigua lenguaje desconocido. Entre los pergaminos, encontráis un mapa de una zona rural del norte, una curva del río Aguasmansas está claramente marcada como punto importante. Mientras os planteáis buscar más información sobre la llamada \ "Penumbra \",decidís que ese lugar también podría ser un punto de interés para vosotros.",
-                2: "El mapa conduce a una cripta llena de demonios y cultistas. Claramente, los bandidos están asociados con algún tipo de culto. Tu llegada interrumpió algún tipo de ritual. Entre los pergaminos que se encuentran en la cámara ritual hay notas sobre un par de lugares de poder en la zona. Uno está marcado como invadido por despiadados muertos vivientes. Parece que tenéis la oportunidad de obtener el favor del culto ayudando a eliminar una amenaza. Esto puede ayudaros a aprender más sobre la \ "Penumbra \".",
+                2: "El mapa conduce a una cripta llena de demonios y cultistas. Claramente, los bandidos están asociados con algún tipo de culto. Vuestra llegada interrumpió algún tipo de ritual. Entre los pergaminos que se encuentran en la cámara ritual hay notas sobre un par de lugares de poder en la zona. Uno está marcado como invadido por despiadados muertos vivientes. Parece que tenéis la oportunidad de obtener el favor del culto ayudando a eliminar una amenaza. Esto puede ayudaros a aprender más sobre la \ "Penumbra \".",
                 3: "Después de los terribles chillidos y gemidos de los no muertos, una figura encapuchada y sonriente apareció ante ti. Su comportamiento fue profundamente inquietante y amenazante. Os pidió otro favor a cambio del perdón por haber asesinado a algunos de sus hermanos. Los cultistas quieren a la nigromante, Jekserah, muerta. Si lleváis su cabeza a su cuartel general, puede averiguar más sobre la \ "Penumbra \". La figura os dio detalles sobre dónde encontrar evidencia de los planes de Jekserah.",
                 4: "Has matado a Jekserah. Mientras se derrumbaba y la vida se apagaba de sus ojos, os susurró: "Yo... No tenéis idea de lo que se avecina ...". Quizás la cabeza de su antigua jefa pueda resultar útil en futuros tratos.",
                 5: "Has matado a Jekserah. Es hora de llevar la cabeza de la nigromante al cuartel general de los cultistas.",
@@ -297,10 +297,10 @@ export default {
             }
         },
         4: {
-            "name": "Historias de la cripta",
+            "name": "Historias de la Cripta",
             "sections": {
-                1: "While investigating the \"Gloom\", you discovered the bandits from the Black Barrow are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One appears to see heavy use with the cult. It looks as though you have an opportunity to disrupt more of the cult's activities.",
-                2: "You followed the writings to an ancient crypt believed to be the cult’s base of operations. A group of cultists were performing ritual incantations in front of a black, gaping hole in reality. With the cultists and their minions dead, the dark rift is now dormant."
+                1: "Mientras investigabais la \ "Penumbra \", descubristeis que los bandidos del Túmulo Negro están asociados con algún tipo de secta. Vuestra llegada interrumpió algún tipo de ritual. Entre los pergaminos que se encuentran en la cámara ritual hay notas sobre un par de lugares de poder en la zona. Uno parece muy usado por la secta. Parece que tenéis la oportunidad de interrumpir más rituales de la secta.",
+                2: "Seguisteis la pista de los pergaminos hasta una antigua cripta que suponéis que era la base de operaciones de la secta. Un grupo de sectarios llevaba a cabo conjuros rituales frente a un enorme agujero negro en el aire. Con los sectarios y sus esbirros muertos, la grieta oscura se volvió latente."
             },
             "stages": {
                 0: "{1}",
