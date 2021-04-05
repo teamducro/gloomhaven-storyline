@@ -308,11 +308,11 @@ export default {
             }
         },
         6: {
-            "name": "El secreto de la comerciante",
+            "name": "El Secreto de la Comerciante",
             "sections": {
-                1: "When you left Jekserah's manor a Quatryl city guard approached you. She told you Jekserah has been trying to overthrow the military in Gloomhaven and is up to something sinister. The guard asked for your aid in uncovering Jekserah’s plans and expose her for who she really is.",
-                2: "The warehouse was full of the undead. Jekserah had been using the necromantic scroll you delivered to raise the undead within the city walls. You fought your way to the back room of the warehouse and confronted Jekserah. Just before she flipped out a window she told you she'd be back with a legion of undead. To stop her you could locate her yourself or ask the help of an Aesther enchanter mentioned by the city guard",
-                3: "You ignored the city guard Argeise's warnings and continued working for Jekserah. \"Sinister machinations\" is, of course, a troubling phrase to throw around, but the phrase \"considerable reward\" trumps that in a heartbeat. There is no more reason to raid the warehouse."
+                1: "Cuando salisteis de la mansión de Jekserah, una guardia quatryl de la ciudad se os presentó. Ella os contó que Jekserah está tramando algo siniestro y que desde que llegó estaba intentado derrocar a los militares de Gloomhaven. La guardia os pidió ayuda para llegar al fondo de los planes de Jekserah y averigüar quién es en realidad.",
+                2: "El almacén estaba plagado de no muertos. Jekserah había estado usando los pergaminos de necromancia que le devolvisteis para levantar a los no muertos dentro de las murallas de la ciudad. Luchasteis para llegar a la habitación de la parte trasera del almacén para enfrentaros a Jekserah y sus guardaespaldas, pero huyó de vosotros por una ventana. Os dijo que volvería con una legión de no muertos. Para detenerla, podéis localizarla vosotros mismos o pedir la ayuda de la hechicera Aesther mencionada por la guardia de la ciudad.",
+                3: "Ignorasteis las advertencias de Argeise, la guardia de la ciudad y seguisteis trabajando para Jekserah. Claro que \"maquinaciones siniestras\" suena bastante preocupante, pero \"notable recompensa\" suena estupendamente. No había razones para asaltar el almacén de Jekserah como dijo la guardia."
             },
             "stages": {
                 0: "{1}",
