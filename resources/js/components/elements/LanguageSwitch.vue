@@ -34,8 +34,8 @@
 import {loadLanguageAsync} from "../../services/I18n-setup";
 import store from "store/dist/store.modern";
 import {MDCSelect} from "@material/select/component";
+
 export default {
-    
     data() {
         return {
             current: null,
