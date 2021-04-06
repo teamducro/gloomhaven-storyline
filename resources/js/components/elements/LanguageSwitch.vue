@@ -34,7 +34,6 @@
 import {loadLanguageAsync} from "../../services/I18n-setup";
 import store from "store/dist/store.modern";
 import {MDCSelect} from "@material/select/component";
-
 export default {
     data() {
         return {
@@ -43,15 +42,15 @@ export default {
                 'en': 'English',
                 'fr': 'Français',
                 'it': 'Italiano',
-                // 'de': 'Deutsche',
-                // 'es': 'Spanish'
+                //'de': 'Deutsche',
+                //'es': 'Spanish',
             },
             flags: {
                 'en': '🇺🇸',
                 'fr': '🇫🇷',
                 'it': '🇮🇹',
-                'de': '🇩🇪',
-                'es': '🇪🇸'
+                //'de': '🇩🇪',
+                //'es': '🇪🇸',
             }
         }
     },
@@ -61,7 +60,6 @@ export default {
     mounted() {
         this.select = new MDCSelect($('.language-switch')[0]);
         this.select.listen('MDCSelect:change', this.changeLanguage);
-
         if (this.current !== window.i18n.locale) {
             loadLanguageAsync(this.current);
         }
@@ -79,7 +77,6 @@ export default {
         },
         setInitialLanguage() {
             let lang = store.get('lang');
-
             if (!lang) {
                 const locale = navigator.language.substring(0, 2);
                 if (this.validLanguage(locale)) {
@@ -87,7 +84,6 @@ export default {
                     store.set('lang', lang);
                 }
             }
-
             this.current = lang || window.i18n.locale;
         },
         validLanguage(lang) {
