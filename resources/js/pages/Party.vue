@@ -85,6 +85,7 @@
                     :label="$t('Add city events')"
                     :items.sync="sheet.city"
                     @change="store"
+                    ref="city-events"
                 ></selectable-list>
                 <selectable-list
                     id="road-events"
@@ -92,6 +93,7 @@
                     :label="$t('Add road events')"
                     :items.sync="sheet.road"
                     @change="store"
+                    ref="road-events"
                 ></selectable-list>
             </div>
 
@@ -124,7 +126,7 @@
                                   :checked="checked"
                                   :disabled="character < 6"
                                   @change="(id, isChecked) => {sheet.characters[character] = isChecked; store()}"></checkbox>
-                        <span v-if="character < 17" class="w-8 font-title">
+                        <span v-if="character < Object.keys(sheet.characters).length-1" class="w-8 font-title">
                             <character class="w-6 -mb-2 inline-block" :character="parseInt(character)+1"/>
                         </span>
                         <span v-else class="font-title text-lg">X</span>
@@ -230,6 +232,8 @@ export default {
             this.$refs['reputation-rollback'].reset();
             this.$refs['donations-rollback'].reset();
             this.$refs['prosperity-rollback'].reset();
+            this.$refs['city-events'].reset();
+            this.$refs['road-events'].reset();
 
             this.loading = false;
         },

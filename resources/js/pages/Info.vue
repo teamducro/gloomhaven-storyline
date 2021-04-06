@@ -10,9 +10,8 @@
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Support') }}</h2>
             <p>Would you like to contribute by translating to your native language?</p>
-            <p>For help or feedback,
-                <email-me class="link">please email me</email-me>
-                .
+            <p>For help or feedback, please consult the <a href="/#/faq" class="link">FAQ</a> or
+                <email-me class="link">send me an e-mail.</email-me>
             </p>
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Donate') }}</h2>
@@ -50,16 +49,6 @@
                     <a class="link" target="_blank" rel="noreferrer"
                        href="https://boardgamegeek.com/filepage/177419/scenario-and-storyline-flowchart">
                         Scenario and Storyline Flowchart</a>
-                </li>
-                <li class="py-1">
-                    <span class="mr-1 block sm:inline">{{ $t('Scenario summaries by') }}
-                        <a class="link" target="_blank" rel="noreferrer"
-                           href="https://boardgamegeek.com/user/DoctorBandage">
-                            DoctorBandage</a>:
-                    </span>
-                    <a class="link" target="_blank" rel="noreferrer"
-                       href="https://boardgamegeek.com/geeklist/237840/gloomhaven-quest-log">
-                        Gloomhaven Quest Log</a>
                 </li>
                 <li class="py-1">
                     <span class="mr-1 block sm:inline">{{ $t('Map coordinates by') }}

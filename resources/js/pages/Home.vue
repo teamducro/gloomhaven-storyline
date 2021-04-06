@@ -99,9 +99,9 @@
                         </p>
                         <p class="text-gray-600 mb-4">
                             You can share your progress manually, or have the app sync it automagically between you
-                            and your party members by purchasing a license.
-                            Only one person in your party needs to <a href="#pricing" class="link">purchase a
-                            license</a>, and your whole party can benefit!
+                            and your party members by contributing.
+                            Only one person in your party needs to <a href="#pricing" class="link">donate</a>, and your
+                            whole party can benefit!
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl"
@@ -263,6 +263,14 @@
                             Gloomhaven Storyline supports all modern devices and browsers. Easy to use on your
                             smartphone.
                         </p>
+
+                        <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
+                            <inline-svg src="icons/deviner" :classes="['w-8', 'h-8']"/>
+                            Forgotten Circles
+                        </div>
+                        <p class="text-gray-800 px-6">
+                            The tracker has support for Forgotten Circles
+                        </p>
                     </div>
                 </div>
 
@@ -306,6 +314,8 @@
 
         <pricing></pricing>
 
+        <faq></faq>
+
         <creation></creation>
 
         <div class="w-full pb-4 -mt-1">
@@ -334,16 +344,31 @@ import Pricing from "../pages/sections/Pricing";
 import HeroHeader from "../pages/sections/HeroHeader";
 import Creation from "../pages/sections/Creation";
 import TwoColumnContent from "../pages/sections/TwoColumnContent";
+import faq from "./sections/FAQ";
+import {scrollIntoView} from 'scroll-js';
 
 export default {
-    components: {HeroHeader, TwoColumnContent, Pricing, Creation},
+    components: {HeroHeader, TwoColumnContent, Pricing, Creation, faq},
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,
         }
     },
     mounted() {
+        let path = this.$router.currentRoute.path.substring(1);
+        if (path.length) {
+            this.scrollTo(path);
+        }
     },
-    methods: {}
+    methods: {
+        scrollTo(id) {
+            let element = document.getElementById(id);
+            if (element) {
+                scrollIntoView(element).then(() => {
+                    scrollIntoView(element);
+                });
+            }
+        }
+    }
 }
 </script>

@@ -80,6 +80,7 @@ export default {
                 this.selectCampaign(response.data, isShared);
             }).catch(e => {
                 this.sending = false;
+                e.response.data.message = 'Please request a new code. ' + e.response.data.message;
                 this.errors = e.response.data;
                 this.codeField.focus();
                 if (isShared) {

@@ -2,11 +2,14 @@ import {ScenarioState} from "./ScenarioState";
 import Storable from './Storable'
 import Card from "./Card";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import ItemTextParser from "../services/ItemTextParser";
+import Sheet from "./Sheet";
 
 class Scenario {
 
     constructor(data) {
         this.id = data.id;
+        this.root = data.root || false;
         this._name = data.name;
         this.coordinates = data.coordinates;
         this.is_side = data.is_side || false;
@@ -31,9 +34,11 @@ class Scenario {
         this.treasures = collect(data.treasures);
         this.treasures_from = collect(data.treasures_from);
         this.treasures_to = collect(data.treasures_to);
-        this.rewards = collect(data.rewards);
         this.unlockedTreasures = [];
-        this.achievements_awarded = collect(data.achievements_awarded);
+        this.achievements_from_treasures = collect(data.achievements_from_treasures);
+        this._rewards = collect(data.rewards);
+        this._achievements_awarded = collect(data.achievements_awarded);
+        this.achievements_awarded_by_choice = collect(data.achievements_awarded_by_choice);
         this.achievements_lost = collect(data.achievements_lost);
         this.prompt = data.prompt;
         this._promptChoice = null;
@@ -164,6 +169,38 @@ class Scenario {
         }
 
         return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
+    }
+
+    get rewards() {
+        let rewards = collect();
+
+        if (typeof this._rewards.first() === 'string') {
+            rewards = this._rewards;
+        } else if (Array.isArray(this._rewards.first()) && this.promptChoice) {
+            rewards = collect(this._rewards.get(this.promptChoice - 1));
+        }
+
+        return rewards;
+    }
+
+    get achievements_awarded() {
+        let achievements = this._achievements_awarded;
+
+        if (this.achievements_awarded_by_choice.isNotEmpty() && this.promptChoice) {
+            achievements = achievements.merge(this.achievements_awarded_by_choice.get(this.promptChoice - 1) || []);
+        }
+
+        return achievements;
+    }
+
+    rewardItems() {
+        let items = collect();
+
+        this.rewards.each(reward => {
+            items = items.merge((new ItemTextParser()).ids(reward).items);
+        });
+
+        return items;
     }
 
     key() {

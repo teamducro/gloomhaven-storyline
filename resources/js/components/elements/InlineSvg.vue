@@ -61,8 +61,8 @@
         }
 
         stripScriptsAndStyles() {
-            let scripts = this.svg.getElementsByTagName('script');
-            let styles = this.svg.getElementsByTagName('style');
+            let scripts = Array.from(this.svg.getElementsByTagName('script'));
+            let styles = Array.from(this.svg.getElementsByTagName('style'));
 
             for (let script of scripts) {
                 this.svg.removeChild(script);
