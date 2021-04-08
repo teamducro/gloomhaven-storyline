@@ -534,7 +534,7 @@ export default {
             "sections": {
                 1: "Satisfecha con vuestro trabajo hasta ahora, Jekserah os invitó a uniros a su invasión de no muertos con la que planea derrocar a los militares de Gloomhaven y poner el control de la ciudad en las manos de la Hermandad de Comerciantes.",
                 2: "Ayudasteis a Jekserah a derrocar a los militares. Los soldados de la ciudad se defendieron, pero sus lastimosos cuerpos mortales no pudieron competir con el aplastante ataque de los no muertos y el poder de vuestras armas. Cada guardia que caía hacía crecer el ejército de los no muertos. Cuando cayó el Capitán de la Guardia, los guardias restantes huyeron como los cobardes que siempre supisteis que eran. Ya que los guardaespaldas Inox de Jekserah murieron durante la invasión y ahora seréis su nueva mano derecha. La Hermandad de Comerciantes gobierna la ciudad.",
-                3: "Derrocar a los militares no era parte de vuestro plan. Rechazásteis la invitación de Jekserah y os pusísteis del lado de la guardia de la ciudad contra la invasión de no muertos. Después de una ardua batalla contra las filas de no muertos, llegásteis hasta Jekserah a la que matásteis. Mientras su vida se escapaba de sus ojos os lanzó unas advertencias."
+                3: "Derrocar a los militares no era parte de vuestro plan. Rechazásteis la invitación de Jekserah y os pusísteis del lado de la guardia de la ciudad contra la invasión de no muertos. Después de una ardua batalla contra las filas de no muertos, llegásteis hasta Jekserah a la que matásteis. Mientras su vida se escapaba de sus ojos os lanzó una advertencia."
             },
             "stages": {
                 0: "{1}",
@@ -545,9 +545,9 @@ export default {
         11: {
             "name": "La Vieja Guardia",
             "sections": {
-                1: "Jekserah has summoned an undead army and is planning to invade the city! You must warn the city guard at once!",
-                2: "Her plan of protecting Gloomhaven with an army of undead was madness. You could not give over all the power to an unscrupulous necromancer. You ran to warn the city guard and were able to mount a defense against the waves of undead crashing against your weapons. You fought the undead all the way back to Jekserah's manor, where you put an end to her vile necromancy once and for all. Jekserah is dead by your hand.",
-                3: "... or maybe, just maybe, there's something to Jekserah's plan. It makes sense in some dark, twisted sense. You decided not to warn the guards, but instead joined Jekserah's undead army in overthrowing the military."
+                1: "¡Jekserah ha convocado a un ejército de no muertos y está planeando invadir la ciudad! ¡Debes advertir al capitán de la guardia de la ciudad de inmediato!",
+                2: "El plan de proteger Gloomhaven con un ejército de no muertos era una locura. No podíais cederle todo el poder a una nigromante sin escrúpulos. Corristeis para advertir a la guardia de la ciudad y montasteis una defensa contra las oleadas de no muertos, que una tras otra, se estrellaban contra vuestras armas hasta que llegasteis a la mansión de Jekserah, donde pusisteis fin a su vil nigromancia de una vez por todas. Mientras su vida se escapaba de sus ojos ,Jekserah, os lanzó una advertencia.",
+                3: "... o tal vez, solo tal vez, hay algo que os atrae en el plan de Jekserah, aunque sin duda, es algo oscuro y retorcido. Decidisteis no advertir a los guardias y uniros al ejército de no muertos de Jekserah para derrocar a los militares."
             },
             "stages": {
                 0: "{1}",
