@@ -185,6 +185,27 @@ export default {
         'Sunken Vessel': 'Barco naufragado',
         'Vermling Nest': 'Nido de infestores',
         'Payment Due': 'Cuenta pendiente',
+        'Unexpected Visitors': 'Unexpected Visitors',
+        'Lore Untold': 'Lore Untold',
+        'Past in Flames': 'Past in Flames',
+        'Aftershocks': 'Aftershocks',
+        'Shifting Gears': 'Shifting Gears',
+        'Shrouded Crypt': 'Shrouded Crypt',
+        'Bazaar of Knowledge': 'Bazaar of Knowledge',
+        'Where It Is Needed': 'Where It Is Needed',
+        'A Gaping Would': 'A Gaping Would',
+        'Monstrosities of a Cult': 'Monstrosities of a Cult',
+        'Intricate Work': 'Intricate Work',
+        'Mechanical Genius': 'Mechanical Genius',
+        'Prologue to the End': 'Prologue to the End',
+        'Epilogue of a War': 'Epilogue of a War',
+        'A Circular Solution': 'A Circular Solution',
+        'The Shackles Loosen': 'The Shackles Loosen',
+        'The Bottom of It': 'The Bottom of It',
+        'The Lost Thread': 'The Lost Thread',
+        'Ink Not Yet Dry': 'Ink Not Yet Dry',
+        'Future Uncertain': 'Future Uncertain',
+        'Tower to the Stars': 'Tower to the Stars',
     },
     achievements: {
         "First Steps": "Primeros pasos",
@@ -244,6 +265,29 @@ export default {
         "High Sea Escort": "High Sea Escort",
         "Grave Job": "Grave Job",
         "Northern Expedition": "Northern Expedition",
+        "Through the Portal": "Through the Portal",
+        "Knowledge is Power": "Knowledge is Power",
+        "Knowledge is Power x2": "Knowledge is Power x2",
+        "Knowledge is Power x3": "Knowledge is Power x3",
+        "Knowledge is Power x4": "Knowledge is Power x4",
+        "Angels of Death": "Angels of Death",
+        "Custodians": "Custodians",
+        "Hunted Prey": "Hunted Prey",
+        "Pieces of an Artifact": "Pieces of an Artifact",
+        "Pieces of an Artifact x2": "Pieces of an Artifact x2",
+        "Pieces of an Artifact x3": "Pieces of an Artifact x3",
+        "Guard Detail": "Guard Detail",
+        "Dimensional Equilibrium": "Dimensional Equilibrium",
+        "Hunting the Hunter": "Hunting the Hunter",
+        "Xangroths Aid": "Xangroth's Aid",
+        "Diamaras Aid": "Diamara's Aid",
+        "Beauty in Freedom": "Beauty in Freedom",
+        "A Peril Averted": "A Peril Averted",
+        "A Peril Averted x2": "A Peril Averted x2",
+        "A Peril Averted x3": "A Peril Averted x3",
+        "A Peril Averted x4": "A Peril Averted x4",
+        "Mechanical Splendor": "Mechanical Splendor",
+        "Severed Ties": "Severed Ties"
     },
     items: {
         "Boots of Striding": "Botas de Zancadas",
@@ -438,7 +482,7 @@ export default {
             }
         },
         3: {
-            "name": "Buscando La Penunbra",
+            "name": "La Penunbra",
             "sections": {
                 1: "Las revelaciones del comandante de los bandidos acerca de una “Penumbra” no sientan bien a vuestros estómagos. Escudriñando la carnicería que queda tras la batalla, encontráis un alijo de pergaminos. La escritura estaba en un antigua lenguaje desconocido. Entre los pergaminos, encontráis un mapa de una zona rural del norte, una curva del río Aguasmansas está claramente marcada como punto importante. Mientras os planteáis buscar más información sobre la llamada “Penumbra”,decidís que ese lugar también podría ser un punto de interés para vosotros.",
                 2: "El mapa conduce a una cripta llena de demonios y cultistas. Claramente, los bandidos están asociados con algún tipo de culto. Vuestra llegada interrumpió algún tipo de ritual. Entre los pergaminos que se encuentran en la cámara ritual hay notas sobre un par de lugares de poder en la zona. Uno está marcado como invadido por despiadados muertos vivientes. Parece que tenéis la oportunidad de obtener el favor del culto ayudando a eliminar una amenaza. Esto puede ayudaros a aprender más sobre la “Penumbra”.",
@@ -473,7 +517,7 @@ export default {
             }
         },
         6: {
-            "name": "El Secreto de la Comerciante",
+            "name": "El Secreto de Jekserah",
             "sections": {
                 1: "Cuando salisteis de la mansión de Jekserah, una guardia quatryl de la ciudad se os presentó. Ella os contó que Jekserah está tramando algo siniestro y que desde que llegó estaba intentado derrocar a los militares de Gloomhaven. La guardia os pidió ayuda para llegar al fondo de los planes de Jekserah y averigüar quién es en realidad.",
                 2: "El almacén estaba plagado de no muertos. Jekserah había estado usando los pergaminos de necromancia que le devolvisteis para levantar a los no muertos dentro de las murallas de la ciudad. Luchasteis para llegar a la habitación de la parte trasera del almacén para enfrentaros a Jekserah y sus guardaespaldas, pero huyó de vosotros por una ventana. Os dijo que volvería con una legión de no muertos. Para detenerla, podéis localizarla vosotros mismos o pedir la ayuda de la hechicera Aesther mencionada por la guardia de la ciudad.",
@@ -556,13 +600,13 @@ export default {
             },
         },
         12: {
-            "name": "El Deseo del Corazón",
+            "name": "Elecciones",
             "sections": {
-                1: "Some of your contacts at the Sanctuary of the Great Oak know of a temple dedicated to an unseen force that will answer any question asked of it. This is a golden opportunity seek out your heart's desire.",
-                2: "When you finally reached the temple a voice told you \"I cannot accept visitors at this time\". Before you could object, a group of massive stone constructs materialized before you. But there was no way you were going back empty handed. After finishing of the monsters, the voice then offered you a choice of either great power, great wealth, or the location of the necromancer.",
-                3: "The obvious choice was great power. You are not interested in gold or petty revenge. The only thing that matters is the strength to enact your will. The voice tells you of a shrine in the Copperneck Mountains that contains a source of great power.",
-                4: "What kind of mercenary would you be if you weren't getting paid? Great wealth is the obvious choice here. The voice tells you of a lost island in the Misty Sea that contains long forgotten treasures.",
-                5: "Power and wealth mean nothing while Jekserah still breathes. You insist that the voice tell you the location of the nefarious Valrath. It tells you of a sanctum hidden deep within the Corpsewood."
+                1: "Buscando información sobre la ubicación de Jekserah, algunos de vuestros contactos en el Santuario del Gran Roble saben de un templo en la cima de las Montañas Guardianas dedicado a una fuerza invisible que responderá a cualquier pregunta que se le haga. Esta es una oportunidad de oro para buscar lo que vuestro corarón más desee.",
+                2: "Cos gran riesgo, finalmente llegasteis al templo, donde una voz os dijo: “Me temo que no puedo aceptar visitas en este momento. Por favor, volved en 12 años. Tal vez entonces pueda atenderos”. Antes de que pudierais objetar, un grupo de enormes constructos de piedra se materializó ante vosotros. Pero no había forma de que os volvierais con las manos vacías. Después de acabar con todas las criaturas, la voz volvió a hablar para ofreceros un trao a cambio de dejar el lugar sin más incidentes: ¿Grandes poderes? ¿Grandes riquezas? ¿O la ubicación del nigromante?",
+                3: "La elección obvia para vosotros fue obtener un gran poder. No estais interesados en el oro ni en una pequeña venganza. Lo único que os importa es la fuerza para hacer vuestra voluntad. La voz os habla de un santuario en las Montañas Cobrizas que contiene la fuente de un gran poder.",
+                4: "¿Qué clase de mercenario seríais si no os gustara el oro? Obtener grandes riquezas es la opción obvia aquí. La voz os habla de una isla perdida en el Mar Brumoso que contiene tesoros olvidados hace mucho tiempo.",
+                5: "El poder y la riqueza carecen de importancia mientras Jekserah aún respire. Le pedís a la voz que os diga la ubicación de la infame Valrath y os habla de un antiguo mausoleo oculto en las profundidades de Soto Cadáver."
             },
             "stages": {
                 0: "{1}",
@@ -572,7 +616,7 @@ export default {
             }
         },
         13: {
-            "name": "La Hechicera",
+            "name": "La Hechicera Aesther",
             "sections": {
                 1: "You've heard stories of an Aesther enchanteress in Gloomhaven who may be able to aid in your endeavors. However, she's been to known to ask impossible tasks in exchange for favors. Impossible or not, you need her help.",
                 2: "Following reports of an Aesther in the Boiler District, you found her inside an abandoned and decrepit tavern: the Crooked Bone. The Aesther woman's name is Hail and she seemed a bit eccentric... perhaps even a bit mad. After some trepidation, she agreed to help you if you could retrieve an orb from the Frozen Hollow in the Copperneck Mountains. The creatures inside the hollow were none too pleased to see you, but you fought through them nonetheless. With the last of your adversaries dead, you approached the back of the chamber, where a small blue sphere floated above the floor. You stashed it into your pack and made your way back to the Crooked Bone. Hail seemed quite enamored with the object and perhaps a bit flippant about just how dangerous an object you had held with your bare hands. Hail disappeared with the sphere. After what feels like hours of waiting, she returned and casually asks to experiment on you. You're a bit taken aback, but she assures you that it's safe. For large amounts of gold, she can now enhance some of your abilities. More importantly, she's also willing to do you some favors."
