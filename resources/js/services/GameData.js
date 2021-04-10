@@ -1,6 +1,7 @@
 import achievementsJson from '../achievements.json'
 import scenariosJson from '../scenarios.json'
 import questsJson from '../quests.json'
+import questsFCJson from '../quests-fc.json'
 import itemsJson from '../items.json'
 
 export default class GameData {
@@ -32,6 +33,8 @@ export default class GameData {
 
     quests(game) {
         switch (game) {
+            case 'fc':
+                return questsFCJson
             default:
                 return questsJson
         }
@@ -39,8 +42,6 @@ export default class GameData {
 
     items(game) {
         switch (game) {
-            case 'fc':
-                return itemsJson
             default:
                 return itemsJson
         }

@@ -24,15 +24,20 @@ export default class QuestValidator {
             const id = parseInt(value.replace(/\D/g, ''));
             const scenario = this.scenarioRepository.find(id);
             const operator = value.slice(-2);
+            let result = '';
 
-            // check state
+            // check scenario state
             if (!value.includes("'")) {
-                return '"' + scenario.state + '"' + operator;
+                result = '"' + scenario.state + '"';
             }
             // check choice
-            else {
-                return scenario.choice + operator;
+            else if (scenario.hasPrompt) {
+                result = scenario.promptChoice;
+            } else if (scenario.hasChoices) {
+                result = scenario.choice;
             }
+
+            return result + operator;
         })
         check = check.replace(/=c/g, '="' + ScenarioState.complete + '"');
 
