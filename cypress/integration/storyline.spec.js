@@ -134,7 +134,7 @@ describe('Storyline', () => {
         cy.get('#scenario-title').contains('#1 Black Barrow');
     });
 
-    it.only('It shows summaries', () => {
+    it('It shows summaries', () => {
         cy.visit('/tracker');
 
         utilities.openScenario(1);
