@@ -1847,7 +1847,7 @@
                 2
             ],
             "rewards": [
-                "Open envelope 7.svg",
+                "Open envelope {DS}",
                 "+2 reputation"
             ]
         },
@@ -2235,7 +2235,7 @@
             "rewards": [
                 "Immediately retire the Seeker of Xorn",
                 "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
-                "Open envelope 16.svg"
+                "Open envelope {PH}"
             ]
         },
         {
@@ -2292,7 +2292,7 @@
             ],
             "rewards": [
                 "“Take Back the Trees” quest complete",
-                "Open envelope 7.svg",
+                "Open envelope {DS}",
                 "10 gold each",
                 "+2 reputation"
             ]
@@ -2461,7 +2461,7 @@
             ],
             "rewards": [
                 "“The Fall of Man” quest complete",
-                "Open envelope 12.svg",
+                "Open envelope {NS}",
                 "10 experience each"
             ]
         },
@@ -3715,7 +3715,7 @@
             ],
             "treasures": {
                 "77": "Gain “Major Cure Potion” (Item 090)",
-                "86": "Unlock Diviner 18.svg Solo Scenario “Forecast of the Inevitable"
+                "86": "Unlock Diviner {DR} Solo Scenario “Forecast of the Inevitable"
             },
             "rewards": [
                 "15 experience each",
@@ -4460,7 +4460,7 @@
             "rewards": [
                 "+3 reputation",
                 "+1 prosperity",
-                "Retire the Aesther Diviner 18.svg",
+                "Retire the Aesther Diviner {DR}",
                 "Add City and Road Events 83 to their respective decks"
             ]
         },

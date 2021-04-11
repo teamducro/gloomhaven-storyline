@@ -3,6 +3,7 @@ import scenariosJson from '../scenarios.json'
 import questsJson from '../quests.json'
 import questsFCJson from '../quests-fc.json'
 import itemsJson from '../items.json'
+import charactersJson from '../characters.json'
 
 export default class GameData {
     achievements(game) {
@@ -22,6 +23,13 @@ export default class GameData {
 
     chapters(game) {
         return this._scenarioData(game).chapters
+    }
+
+    characters(game) {
+        switch (game) {
+            default:
+                return charactersJson
+        }
     }
 
     _scenarioData(game) {

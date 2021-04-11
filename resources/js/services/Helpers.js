@@ -10,6 +10,13 @@ export default {
     isNumeric(number) {
         return !isNaN(parseFloat(number)) && isFinite(number);
     },
+    nl2br(string) {
+        if (typeof string === 'undefined' || string === null) {
+            return '';
+        }
+
+        return (string + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1<br/>$2');
+    },
     removeQueryString() {
         history.replaceState({}, document.title, location.href.replace(location.search, ''));
     },

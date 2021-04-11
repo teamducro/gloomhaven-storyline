@@ -4,6 +4,10 @@
 
 <script>
 import ItemTextParser from "../../services/ItemTextParser";
+import ScenarioTextParser from "../../services/ScenarioTextParser";
+import ScenarioRepository from "../../repositories/ScenarioRepository";
+import Helpers from "../../services/Helpers";
+import GameData from "../../services/GameData";
 
 export default {
     props: {
@@ -14,16 +18,28 @@ export default {
     },
     data() {
         return {
-            itemTextParser: new ItemTextParser
+            itemTextParser: new ItemTextParser,
+            scenarioTextParser: new ScenarioTextParser,
+            scenarioRepository: new ScenarioRepository,
+            gameData: new GameData,
+            scenarios: {}
         }
     },
     methods: {
         render() {
-            let output = this.addItemLinks(this.text);
+            let output = Helpers.nl2br(this.text);
+            output = this.addItemLinks(output);
+            output = this.addScenarioLinks(output);
             output = this.addCharacterIcons(output);
             output = this.addIcons(output);
+            const scenarios = this.scenarios;
 
             return {
+                data() {
+                    return {
+                        scenarios
+                    }
+                },
                 template: `<span>${output}</span>`
             };
         },
@@ -34,11 +50,27 @@ export default {
 
             return text;
         },
+        addScenarioLinks(text) {
+            this.scenarioTextParser.parse(text).each((name, id) => {
+                const scenario = this.scenarioRepository.find(id);
+                if (scenario) {
+                    if (scenario.isVisible()) {
+                        this.scenarios[id] = scenario;
+                        text = text.replace(name, `<scenario-number :scenario="scenarios[${id}]"/>`);
+                    } else {
+                        text = text.replace(name, 'Hidden Scenario');
+                    }
+                }
+            });
+
+            return text;
+        },
         addCharacterIcons(text) {
-            if (text.includes('.svg')) {
-                let results = text.match(/(\d{1,2}\.svg)/g);
-                results.forEach((icon) => {
-                    text = text.replace(icon, `<character class="w-6 -ml-1 -mb-2 inline-block" character="${icon}" />`);
+            const characters = Object.values(this.gameData.characters(app.game));
+
+            if (text.match(new RegExp(characters.join('|'))) !== null) {
+                characters.forEach((character) => {
+                    text = text.replace(`{${character}}`, `<character class="w-6 -ml-1 -mb-2 inline-block" character="${character}" />`);
                 });
             }
 
@@ -103,21 +135,3 @@ export default {
     }
 }
 </script>
-
-<style scoped lang="scss">
-.bedge {
-    @apply top-0 left-0 font-bold inline-flex relative items-center px-2 py-.5 text-sm font-medium leading-5 bg-green-100 text-green-800;
-
-    &.expired {
-        @apply bg-red-100 text-red-800;
-    }
-
-    &.white {
-        @apply bg-gray-100 text-gray-800;
-    }
-
-    &:not([class*='rounded']) {
-        @apply rounded-full;
-    }
-}
-</style>
