@@ -1847,7 +1847,7 @@
                 2
             ],
             "rewards": [
-                "Open envelope 7.svg",
+                "Open envelope {DS}",
                 "+2 reputation"
             ]
         },
@@ -2235,7 +2235,7 @@
             "rewards": [
                 "Immediately retire the Seeker of Xorn",
                 "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
-                "Open envelope 16.svg"
+                "Open envelope {PH}"
             ]
         },
         {
@@ -2292,7 +2292,7 @@
             ],
             "rewards": [
                 "“Take Back the Trees” quest complete",
-                "Open envelope 7.svg",
+                "Open envelope {DS}",
                 "10 gold each",
                 "+2 reputation"
             ]
@@ -2461,7 +2461,7 @@
             ],
             "rewards": [
                 "“The Fall of Man” quest complete",
-                "Open envelope 12.svg",
+                "Open envelope {NS}",
                 "10 experience each"
             ]
         },
@@ -3380,6 +3380,9 @@
                 "x": 58.67,
                 "y": 15.24
             },
+            "quests": [
+                96
+            ],
             "chapter_id": 20,
             "region_ids": [
                 1
@@ -3422,6 +3425,9 @@
                 "x": 75.35,
                 "y": 5.22
             },
+            "quests": [
+                97
+            ],
             "chapter_id": 20,
             "region_ids": [
                 1
@@ -3457,6 +3463,9 @@
                 "x": 81,
                 "y": 23.2
             },
+            "quests": [
+                98
+            ],
             "chapter_id": 21,
             "region_ids": [
                 1
@@ -3517,6 +3526,9 @@
                 "x": 71.3,
                 "y": 12.6
             },
+            "quests": [
+                99
+            ],
             "chapter_id": 22,
             "region_ids": [
                 1
@@ -3576,6 +3588,9 @@
                 "x": 40.3,
                 "y": 29.15
             },
+            "quests": [
+                100
+            ],
             "chapter_id": 23,
             "region_ids": [
                 5
@@ -3613,6 +3628,9 @@
                 "x": 43.12,
                 "y": 63.4
             },
+            "quests": [
+                101
+            ],
             "chapter_id": 24,
             "region_ids": [
                 3
@@ -3653,6 +3671,9 @@
                 "x": 87.5,
                 "y": 71.2
             },
+            "quests": [
+                102
+            ],
             "chapter_id": 21,
             "region_ids": [
                 8
@@ -3694,7 +3715,7 @@
             ],
             "treasures": {
                 "77": "Gain “Major Cure Potion” (Item 090)",
-                "86": "Unlock Diviner 18.svg Solo Scenario “Forecast of the Inevitable"
+                "86": "Unlock Diviner {DR} Solo Scenario “Forecast of the Inevitable"
             },
             "rewards": [
                 "15 experience each",
@@ -3709,6 +3730,9 @@
                 "x": 35.2,
                 "y": 47
             },
+            "quests": [
+                103
+            ],
             "chapter_id": 21,
             "region_ids": [
                 1
@@ -3764,6 +3788,9 @@
                 "x": 12.9,
                 "y": 60.13
             },
+            "quests": [
+                104
+            ],
             "chapter_id": 22,
             "region_ids": [
                 9
@@ -3819,6 +3846,9 @@
                 "x": 41.55,
                 "y": 10.4
             },
+            "quests": [
+                105
+            ],
             "chapter_id": 22,
             "region_ids": [
                 5
@@ -3880,6 +3910,9 @@
                 "x": 54.6,
                 "y": 52.4
             },
+            "quests": [
+                106
+            ],
             "chapter_id": 23,
             "region_ids": [
                 10
@@ -3950,6 +3983,9 @@
                 "x": 62.62,
                 "y": 36.5
             },
+            "quests": [
+                107
+            ],
             "chapter_id": 23,
             "region_ids": [
                 11
@@ -4018,6 +4054,9 @@
                 "x": 5.4,
                 "y": 88.55
             },
+            "quests": [
+                108
+            ],
             "chapter_id": 241,
             "region_ids": [
                 4
@@ -4087,6 +4126,9 @@
                 "x": 20.9,
                 "y": 81
             },
+            "quests": [
+                109
+            ],
             "chapter_id": 241,
             "region_ids": [
                 4
@@ -4138,6 +4180,9 @@
                 "x": 86.35,
                 "y": 64.7
             },
+            "quests": [
+                110
+            ],
             "chapter_id": 21,
             "region_ids": [
                 8
@@ -4177,6 +4222,9 @@
                 "x": 79.85,
                 "y": 9.15
             },
+            "quests": [
+                111
+            ],
             "chapter_id": 22,
             "region_ids": [
                 1
@@ -4236,6 +4284,9 @@
                 "x": 71.65,
                 "y": 26.7
             },
+            "quests": [
+                112
+            ],
             "chapter_id": 23,
             "region_ids": [
                 10
@@ -4285,16 +4336,19 @@
         },
         {
             "id": 113,
+            "name": "The Lost Thread",
             "coordinates": {
                 "name": "H-16",
                 "x": 76.4,
                 "y": 44.8
             },
+            "quests": [
+                113
+            ],
             "chapter_id": 24,
             "region_ids": [
                 12
             ],
-            "name": "The Lost Thread",
             "pages": [
                 "fc/1/22",
                 "fc/2/11",
@@ -4329,6 +4383,9 @@
                 "x": 61.95,
                 "y": 28.4
             },
+            "quests": [
+                114
+            ],
             "chapter_id": 25,
             "region_ids": [
                 1
@@ -4379,6 +4436,9 @@
                 "x": 70.8,
                 "y": 45.1
             },
+            "quests": [
+                115
+            ],
             "chapter_id": 25,
             "region_ids": [
                 12
@@ -4400,7 +4460,7 @@
             "rewards": [
                 "+3 reputation",
                 "+1 prosperity",
-                "Retire the Aesther Diviner 18.svg",
+                "Retire the Aesther Diviner {DR}",
                 "Add City and Road Events 83 to their respective decks"
             ]
         },

@@ -26,7 +26,7 @@
             </ul>
             <template v-if="scenarios">
                 <webp v-for="scenario in scenarios.items"
-                      v-if="scenario.isVisible()"
+                      v-if="scenario.isVisible() && (!scenario.root || (scenario.root && !scenario.isRequired()))"
                       :src="scenario.image()"
                       :key="scenario.id"
                       :id="'s' + scenario.id"
@@ -63,7 +63,7 @@ export default {
         }
     },
     mounted() {
-        this.mapImages = this.gameData.map();
+        this.mapImages = this.gameData.map(app.game);
 
         this.$map = $('#map');
         this.map = panzoom(this.$map[0], {
@@ -103,7 +103,7 @@ export default {
     },
     methods: {
         setScenarios() {
-            this.mapImages = this.gameData.map();
+            this.mapImages = this.gameData.map(app.game);
             this.map.setMinZoom(this.scale());
 
             this.scenarios = app.scenarios;
