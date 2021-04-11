@@ -134,4 +134,17 @@ describe('Storyline', () => {
         cy.get('#scenario-title').contains('#1 Black Barrow');
     });
 
+    it.only('It shows summaries', () => {
+        cy.visit('/tracker');
+
+        utilities.openScenario(1);
+
+        cy.get('#scenario-content').contains('Preceding events');
+        cy.get('#scenario-content label').contains('Complete').click();
+        cy.get('#scenario-content').contains('Summary').click();
+        cy.get('#scenario-content').contains('Jekserah');
+
+        utilities.closeModel();
+    });
+
 });
