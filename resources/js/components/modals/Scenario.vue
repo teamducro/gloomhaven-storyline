@@ -152,9 +152,6 @@
                                                     {{ $t(quest.translationKey() + '.sections.' + n) }}
                                                 </p>
                                             </template>
-                                            <template v-slot:br>
-                                                <br><br>
-                                            </template>
                                         </i18n>
                                     </div>
                                 </transition-expand>
