@@ -76,6 +76,9 @@
                        href="https://heisch.github.io/gloomhaven-item-db/">
                         {{ $t('Gloomhaven Item DB') }}</a>
                 </li>
+                <li class="py-1">
+                    Summaries for Forgotten Circles by O.T.Nad
+                </li>
             </ul>
             <p>{{ $t('Translations') }}</p>
             <ul class="list-disc ml-4">
