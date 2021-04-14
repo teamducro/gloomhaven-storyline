@@ -156,7 +156,8 @@ describe('Storyline', () => {
 
         utilities.isNodeIncomplete(96);
         utilities.completeScenario(96);
-        utilities.isNodeVisible(97);
+        utilities.isNodeComplete(96);
+        utilities.isNodeIncomplete(97);
     });
 
 });
