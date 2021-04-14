@@ -147,4 +147,17 @@ describe('Storyline', () => {
         utilities.closeModel();
     });
 
+    it('It opens FC', () => {
+        cy.visit('/tracker');
+
+        cy.get('button').contains('menu').click();
+        cy.get('.mdc-list-item__text').contains('Storyline').next().click();
+        cy.get('.fc').click();
+
+        utilities.isNodeIncomplete(96);
+        utilities.completeScenario(96);
+        utilities.isNodeComplete(96);
+        utilities.isNodeIncomplete(97);
+    });
+
 });

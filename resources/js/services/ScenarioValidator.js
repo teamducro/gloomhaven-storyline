@@ -85,9 +85,21 @@ export default class ScenarioValidator {
     }
 
     checkRequired(scenario) {
-        if (scenario.isHidden() || scenario.isComplete() || scenario.required_by.isEmpty()) {
+        // skip if scenario is hidden or was completed before
+        if (scenario.isHidden() || scenario.isComplete()) {
             return;
         }
+
+        // skip if scenario has no requirements
+        if (scenario.required_by.isEmpty()) {
+            // correct scenario state
+            if (scenario.isRequired()) {
+                this.scenarioRepository.setIncomplete(scenario);
+                this.needsValidating = true;
+            }
+            return;
+        }
+
         let conditions = scenario.required_by;
 
         let blocking_conditions = scenario.blocks_on;
