@@ -26,7 +26,7 @@
             </ul>
             <template v-if="scenarios">
                 <webp v-for="scenario in scenarios.items"
-                      v-if="scenario.isVisible() && (!scenario.root || (scenario.root && !scenario.isRequired()))"
+                      v-if="scenario.isVisible() && (!scenario.root || (scenario.root && scenario.isComplete()))"
                       :src="scenario.image()"
                       :key="scenario.id"
                       :id="'s' + scenario.id"

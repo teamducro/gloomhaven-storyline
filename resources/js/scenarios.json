@@ -3391,13 +3391,6 @@
                 97
             ],
             "requirements": "End of Gloom (Global) COMPLETE",
-            "required_by": [
-                {
-                    "complete": [
-                        "GEOG"
-                    ]
-                }
-            ],
             "treasures": {
                 "91": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
             },
