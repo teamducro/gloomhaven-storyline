@@ -175,11 +175,11 @@ export default {
         renderChapters() {
             $('.chapter').each(function () {
                 if ($(this).hasClass('intro')) {
+                    $(this).show();
                     return;
                 }
 
-                let id = parseInt($(this).attr('id').replace('chapter', '').trim());
-
+                const id = parseInt($(this).data('id'));
                 const isSideChapter = id > 99;
                 const scenariosInChapter = app.scenarios.where('chapter_id', id);
                 let unlocked;

@@ -12,40 +12,40 @@
         circle.node ~ .blocked { font-size: 16px; font-family: Arial, sans-serif; transform: translate(-10px, -5px); }
         circle.node ~ .required { font-size: 12px; font-weight: bold; transform: translate(-7px, -5px); }
     </style>
-    <g class="chapter intro" id="chapter20" transform="matrix(1 0 0 1 0 0)">
+    <g class="chapter intro" data-id="20" transform="matrix(1 0 0 1 0 0)">
         <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="62.13135" x="253.43433"
               y="20.6483"/>
         <text class="label" x="262.59958" y="39.51694">{{ $t("Diviner") }}</text>
     </g>
-    <g class="chapter" id="chapter21" transform="matrix(1 0 0 1 0 0)">
+    <g class="chapter" data-id="21" transform="matrix(1 0 0 1 0 0)">
         <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="103" x="39.43433"
               y="160"/>
         <text class="label" fill="black" transform="rotate(-90 131.203 202.12)" x="100.59958" y="205.785318">
             {{ $t("Orchid society") }}
         </text>
     </g>
-    <g class="chapter" id="chapter22" transform="matrix(1 0 0 1 0 0)">
+    <g class="chapter" data-id="22" transform="matrix(1 0 0 1 0 0)">
         <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="103" x="166.43433"
               y="160.000011"/>
         <text class="label" fill="black" transform="rotate(-90 257.654 202.12)" x="210" y="205.785318">
             {{ $t("Citizens of Gloomhaven") }}
         </text>
     </g>
-    <g class="chapter" id="chapter23">
+    <g class="chapter" data-id="23">
         <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="103" x="292.93432"
               y="159.648311"/>
         <text class="label" fill="black" transform="matrix(1 0 0 1 0 0) rotate(-90 384.107 203.102)" x="353.432912"
               y="206.76695">{{ $t("The rift device") }}
         </text>
     </g>
-    <g class="chapter" id="chapter24" transform="matrix(1 0 0 1 0 0)">
+    <g class="chapter" data-id="24" transform="matrix(1 0 0 1 0 0)">
         <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="103" x="419.93432"
               y="159.648311"/>
         <text class="label" fill="black" transform="rotate(-90 511.26 203.768)" x="480.432915" y="207.433628">
             {{ $t("Tainted crypt") }}
         </text>
     </g>
-    <g class="chapter" id="chapter25">
+    <g class="chapter" data-id="25">
         <rect fill="#111" height="100" opacity="0.7" rx="10" ry="10" stroke="#000" width="62.13135" x="253.43433"
               y="300.481654"/>
         <text class="label" fill="black" x="259.082933" y="387.01696">{{ $t("Corruption") }}</text>
