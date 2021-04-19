@@ -13,53 +13,53 @@
         circle.node ~ .blocked { font-size: 16px; font-family: Arial, sans-serif; transform: translate(-10px, -5px); }
         circle.node ~ .required { font-size: 12px; font-weight: bold; transform: translate(-7px, -5px); }
     </style>
-    <g class="chapter intro" data-id="1">
+    <g class="chapter intro" id="chapter1">
         <rect width="40.84322" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="30" y="278">{{ $t('Intro') }}</text>
     </g>
-    <g class="chapter" data-id="2">
+    <g class="chapter" id="chapter2">
         <rect width="215.8856" height="263.21188" x="7.7796607" y="327.39407" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="20" y="585">{{ $t('The Merchant') }}</text>
     </g>
-    <g class="chapter" data-id="3">
+    <g class="chapter" id="chapter3">
         <rect width="160.13135" height="151.70338" x="5.8347459" y="7.1313553" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="15" y="22">{{ $t('Demon and Rift') }}</text>
     </g>
-    <g class="chapter" data-id="4">
+    <g class="chapter" id="chapter4">
         <rect width="86.872887" height="103.72881" x="122.52966" y="201.62288" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="134.40273" y="300">{{ $t('Sewers') }}</text>
     </g>
-    <g class="chapter" data-id="5">
+    <g class="chapter" id="chapter5">
         <rect width="92.707626" height="99.190681" x="252.83899" y="18.152542" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="298" y="112" text-anchor="middle">{{ $t('Rebellion Rises') }}</text>
     </g>
-    <g class="chapter" data-id="6">
+    <g class="chapter" id="chapter6">
         <rect width="93" height="51.216106" x="284" y="129.01271" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="365" y="175" text-anchor="end">{{ $t('Under Oceans') }}</text>
     </g>
-    <g class="chapter" data-id="7">
+    <g class="chapter" id="chapter7">
         <rect width="93" height="71.31356" x="284" y="186.71187" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="295" y="203.71637">{{ $t('Through') }}</text>
         <text class="label" x="295" y="216.71637">{{ $t('Jungles') }}</text>
     </g>
-    <g class="chapter" data-id="8">
+    <g class="chapter" id="chapter8">
         <rect width="93" height="52.512714" x="284" y="272.28815" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="312" y="320">{{ $t('Atop Mountains') }}</text>
     </g>
-    <g class="chapter" data-id="9">
+    <g class="chapter" id="chapter9">
         <rect width="106" height="43.43644" x="251" y="381.2034" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="316" y="420">{{ $t('Dragons') }}</text>
     </g>
-    <g class="chapter" data-id="10">
+    <g class="chapter" id="chapter10">
         <rect width="129" height="114.10169" x="251" y="477.15253" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="263.83911" y="585">{{ $t('Voice') }}</text>
@@ -644,7 +644,7 @@
         <!--chapter11-->
         <rect width="172" height="124" x="431.279667" y="17.986755" rx="10" ry="10" stroke="#000" fill="#111"
               opacity="0.7"/>
-        <text class="label chapter" data-id="101" x="594" y="136" text-anchor="end">{{ $t('Personal Quests') }}</text>
+        <text class="label chapter" id="chapter11" x="594" y="136" text-anchor="end">{{ $t('Personal Quests') }}</text>
         <g id="node52" class="scenario">
             <circle class="node" r="10.8" cy="37.986755" cx="461.39273"/>
             <text y="33.986755" x="446">52</text>
@@ -723,7 +723,7 @@
         <!--chapter12-->
         <rect opacity="0.7" fill="#111" ry="10" rx="10" y="153.60058" x="430.776065" height="87.14994" width="172"
               stroke="#000"/>
-        <text y="234.489558" x="440" class="label chapter" data-id="102">{{ $t('Random Scenarios') }}</text>
+        <text y="234.489558" x="440" class="label chapter" id="chapter12">{{ $t('Random Scenarios') }}</text>
         <g id="node63" class="scenario">
             <circle class="node" r="10.8" cy="174.516895" cx="461.513976"/>
             <text y="170.516895" x="446.121246">63</text>
@@ -766,7 +766,7 @@
         <!--chapter14-->
         <rect opacity="0.7" fill="#111" ry="10" rx="10" y="318.849663" x="431.061485" height="54.983941"
               width="137.103769" stroke="#000"/>
-        <text y="367.510082" x="441.000013" class="label chapter" data-id="104">{{ $t('Road Events') }}</text>
+        <text y="367.510082" x="441.000013" class="label chapter" id="chapter14">{{ $t('Road Events') }}</text>
         <g id="node80" class="scenario">
             <circle class="node" r="10.8" cy="338.645697" cx="459.51274"/>
             <text y="334.645697" x="444.12001">80</text>
@@ -788,7 +788,7 @@
         <!--chapter13-->
         <rect opacity="0.7" fill="#111" ry="10" rx="10" y="252.117152" x="430.910828" height="55.483939" width="172"
               stroke="#000"/>
-        <text y="302.054016" x="440.498748" class="label chapter" data-id="103">{{ $t('Sealed') }}</text>
+        <text y="302.054016" x="440.498748" class="label chapter" id="chapter13">{{ $t('Sealed') }}</text>
         <g id="node72" class="scenario">
             <circle class="node" r="10.8" cy="271.617537" cx="460.51274"/>
             <text y="267.617537" x="445.5">72</text>
@@ -814,7 +814,7 @@
         <!--chapter15-->
         <rect stroke="#000" opacity="0.7" fill="#111" ry="10" rx="10" y="385.520852" x="430.776065" height="141.744948"
               width="172"/>
-        <text y="523.26465" x="593" text-anchor="end" class="label chapter" data-id="105">{{ $t('City Events') }}
+        <text y="523.26465" x="593" text-anchor="end" class="label chapter" id="chapter15">{{ $t('City Events') }}
         </text>
         <g id="node74" class="scenario">
             <circle class="node" r="10.8" cy="403.020593" cx="461.513976"/>
@@ -923,7 +923,7 @@
     <g class="portrait">
         <!--chapter11-->
         <rect opacity="0.7" fill="#111" stroke="#000" ry="10" rx="10" y="610" x="8" height="124" width="172"/>
-        <text y="727.999908" x="170" class="label chapter" data-id="101" text-anchor="end">{{ $t('Personal Quests') }}
+        <text y="727.999908" x="170" class="label chapter" id="chapter11" text-anchor="end">{{ $t('Personal Quests') }}
         </text>
         <g id="node52" class="scenario">
             <circle cx="37.39273" cy="630" r="10.8" class="node"/>
@@ -1003,7 +1003,7 @@
         <!--chapter12-->
         <rect stroke="#000" width="172" height="87.14994" x="207.776065" y="609.60058" rx="10" ry="10" fill="#111"
               opacity="0.7"/>
-        <text class="label chapter" data-id="102" x="370" y="690.489558" text-anchor="end">{{ $t('Random Scenarios') }}
+        <text class="label chapter" id="chapter12" x="370" y="690.489558" text-anchor="end">{{ $t('Random Scenarios') }}
         </text>
         <g id="node63" class="scenario">
             <circle cx="238.513976" cy="630.516895" r="10.8" class="node"/>
@@ -1047,7 +1047,7 @@
         <!--chapter14-->
         <rect stroke="#000" width="137.103769" height="54.983941" x="8" y="819.849663" rx="10" ry="10"
               fill="#111" opacity="0.7"/>
-        <text class="label chapter" data-id="104" x="19.000013" y="868.510082">{{ $t('Road Events') }}</text>
+        <text class="label chapter" id="chapter14" x="19.000013" y="868.510082">{{ $t('Road Events') }}</text>
         <g id="node80" class="scenario">
             <circle cx="37.51274" cy="839.645697" r="10.8" class="node"/>
             <text x="22.12001" y="835.645697">80</text>
@@ -1069,7 +1069,7 @@
         <!--chapter13-->
         <rect stroke="#000" width="172" height="55.483939" x="8" y="749.117152" rx="10" ry="10" fill="#111"
               opacity="0.7"/>
-        <text class="label chapter" data-id="103" x="17.498748" y="799.054016">{{ $t('Sealed') }}</text>
+        <text class="label chapter" id="chapter13" x="17.498748" y="799.054016">{{ $t('Sealed') }}</text>
         <g id="node72" class="scenario">
             <circle cx="37.51274" cy="768.617537" r="10.8" class="node"/>
             <text x="22.5" y="764.617537">72</text>
@@ -1095,7 +1095,7 @@
         <!--chapter15-->
         <rect width="172" height="141.744948" x="207.776065" y="711.520852" rx="10" ry="10" fill="#111" opacity="0.7"
               stroke="#000"/>
-        <text class="label chapter" data-id="105" x="370" y="850" text-anchor="end">{{ $t('City Events') }}</text>
+        <text class="label chapter" id="chapter15" x="370" y="850" text-anchor="end">{{ $t('City Events') }}</text>
         <g id="node74" class="scenario">
             <circle cx="238.513976" cy="729.020593" r="10.8" class="node"/>
             <text x="223.121246" y="725.020593">74</text>
