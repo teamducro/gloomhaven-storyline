@@ -90,6 +90,10 @@
                     <span class="mr-1 block sm:inline">{{ $t('Italian') }}:</span>
                     Emiliano Caruselli & O.T.Nad
                 </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('German') }}:</span>
+                    Krokantpudding & mgh1979
+                </li>
             </ul>
 
             <p class="my-4">
