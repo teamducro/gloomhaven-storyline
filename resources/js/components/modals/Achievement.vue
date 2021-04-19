@@ -63,6 +63,9 @@ export default {
         this.$bus.$on('open-achievement', (data) => {
             this.open(data.id);
         });
+        this.$bus.$on('game-selected', () => {
+            this.unsetAchievement();
+        });
     },
     computed: {
         awardedFrom() {
@@ -82,6 +85,9 @@ export default {
         },
         close() {
             this.$refs['modal'].close();
+        },
+        unsetAchievement() {
+            this.achievement = null;
         },
         removeManualAchievement(achievement) {
             if (achievement.upgrades.length > 0) {

@@ -3,10 +3,11 @@
         <div class="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
             <div class="text-center">
                 <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-300">
-                    Pricing</h1>
+                    Contribute</h1>
                 <p class="mt-3 max-w-4xl mx-auto text-xl leading-7 text-gray-300 sm:mt-5 sm:text-2xl sm:leading-8">
-                    All content is available for free, the paid option covers the costs maintaining this app for the
-                    community. If you enjoy using the storyline tracker, please consider purchasing a license.
+                    All content is available for free, donations cover the costs maintaining this app for the
+                    community. If you enjoy using the storyline tracker, please consider a donation.<br/>
+                    You'll get some nice perks!
                 </p>
             </div>
         </div>
@@ -180,7 +181,7 @@
         <div class="px-4 sm:px-6 lg:px-8 pb-16">
             <div class="text-center">
                 <p class="mt-3 max-w-4xl mx-auto text-base leading-7 text-gray-300 sm:mt-5 sm:text-lg sm:leading-8">
-                    When purchasing multiple licenses, you can manage multiple campaigns!<br>
+                    When donating multiple times, you can manage multiple campaigns!<br>
                     Licenses aren't renewed automatically.
                 </p>
 

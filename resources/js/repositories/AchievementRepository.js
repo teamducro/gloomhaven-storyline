@@ -1,15 +1,14 @@
-import achievements from '../achievements.json';
 import Achievement from "../models/Achievement";
 import ScenarioRepository from "./ScenarioRepository";
 import AchievementGroup from "../models/AchievementGroup";
 import {ScenarioState} from "../models/ScenarioState";
-import scenarios from "../scenarios.json";
 import StorySyncer from "../services/StorySyncer";
+import GameData from "../services/GameData";
 
 export default class AchievementRepository {
 
-    fetch() {
-        return collect(achievements.achievements).map((achievement) => {
+    fetch(game) {
+        return collect((new GameData).achievements(game)).map((achievement) => {
             achievement = new Achievement(achievement);
             return achievement;
         });
@@ -17,6 +16,8 @@ export default class AchievementRepository {
 
     gain(id) {
         let achievement = this.find(id);
+
+        // An achievement can require an other achievement
         if (achievement.requirement) {
             let fulfilledRequirements = app.achievements
                 .where('id', achievement.requirement)
@@ -25,6 +26,8 @@ export default class AchievementRepository {
                 return;
             }
         }
+
+        // Lose the current achievement in the group because it is replaced
         if (achievement.group) {
             let group = new AchievementGroup(achievement.group);
             if (group.current) {
@@ -32,6 +35,8 @@ export default class AchievementRepository {
             }
             group.gain(achievement.id);
         }
+
+        // Gain the next achievement from the upgrade list
         if (achievement.upgrades.length && achievement.awarded) {
             let next = this.findMany(achievement.upgrades)
                 .first(item => !item.awarded);
@@ -41,21 +46,33 @@ export default class AchievementRepository {
         }
 
         achievement.gain();
+        this.unlockScenariosByAchievement(achievement);
+    }
 
+    // These achievements are unlocked via the user interface and may unlock scenarios.
+    unlockScenariosByAchievement(achievement, unlock = true) {
         if (achievement.is_manual) {
-            const scenarioToUnlock = this.scenarioRepository.getSideScenarioByManualAchievement(achievement)
-            if (scenarioToUnlock
-                && scenarioToUnlock.state !== ScenarioState.incomplete
-                && scenarioToUnlock.state !== ScenarioState.complete) {
-                this.scenarioRepository.changeState(scenarioToUnlock, ScenarioState.incomplete);
+            const scenario = this.scenarioRepository.getSideScenarioByManualAchievement(achievement)
+            if (unlock && scenario
+                && scenario.state !== ScenarioState.incomplete
+                && scenario.state !== ScenarioState.complete) {
+                this.scenarioRepository.changeState(scenario, ScenarioState.incomplete);
+            } else if (!unlock && scenario && scenario.isVisible()) {
+                this.scenarioRepository.changeState(scenario, ScenarioState.hidden);
             } else {
                 this.storySyncer.store();
             }
         }
     }
 
+    lockScenariosByAchievement(achievement) {
+        this.unlockScenariosByAchievement(achievement, false);
+    }
+
     remove(id) {
         let achievement = this.find(id);
+
+        // Gain the last achievement from the group because the current is lost.
         if (achievement.group) {
             let group = new AchievementGroup(achievement.group);
             group.remove(achievement.id);
@@ -64,6 +81,8 @@ export default class AchievementRepository {
                 this.find(group.current).gain();
             }
         }
+
+        // Remove one achievement from the list
         if (achievement.upgrades.length) {
             let last = this.findMany(achievement.upgrades)
                 .last(item => item.awarded) || achievement;
@@ -71,15 +90,7 @@ export default class AchievementRepository {
         }
 
         achievement.remove();
-
-        if (achievement.is_manual) {
-            const scenarioToHide = this.scenarioRepository.getSideScenarioByManualAchievement(achievement);
-            if (scenarioToHide && scenarioToHide.isVisible()) {
-                this.scenarioRepository.changeState(scenarioToHide, ScenarioState.hidden);
-            } else {
-                this.storySyncer.store();
-            }
-        }
+        this.lockScenariosByAchievement(achievement);
     }
 
     lose(id) {

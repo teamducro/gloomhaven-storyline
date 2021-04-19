@@ -7,7 +7,7 @@
                 Payment Successful!
             </h3>
             <p class="mt-6 text-base text-gray-900">
-                Thanks for purchasing, please check your email to enable your shared campaign!
+                Thanks for your contribution, please check your email to enable your shared campaign!
             </p>
             <meme class="m-auto mt-4 max-w-full"/>
 
@@ -70,7 +70,7 @@
                             </li>
                         </ul>
                         <p class="mt-6 text-sm text-gray-700">
-                            When purchasing multiple licenses, you can manage multiple campaigns!<br>
+                            When donating multiple times, you can manage multiple campaigns!<br>
                             Licenses aren't renewed automatically.
                         </p>
                     </div>
@@ -135,7 +135,7 @@
                         Add shared campaign
                     </purchase>
                 </li>
-                <li>After purchasing a license you'll receive a link in your email</li>
+                <li>After your donation you'll receive a link in your email</li>
                 <li>Click on the link in the email to add your new shared campaign!</li>
                 <li class="mt-3">Click on <span class="link" @click="shareCurrentStory">Share</span>
                     to give access to your party members
@@ -145,8 +145,11 @@
 
             <p class="mt-4">Local progress will be preserved when purchasing a shared campaign,
                 campaign progress can be transferred between campaigns on the
-                <router-link class="link" to="/settings">settings page</router-link>
-                .
+                <router-link class="link" to="/settings">settings page.</router-link>
+            </p>
+
+            <p class="mt-8">If you have questions, consult the <a href="/#/faq" class="link">FAQ</a> or
+                <email-me class="link">send me an e-mail.</email-me>
             </p>
         </div>
 

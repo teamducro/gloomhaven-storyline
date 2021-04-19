@@ -12,7 +12,7 @@
                         <span class="relative w-6 h-4 inline-block">
                             <span class="material-icons absolute">info_outline</span>
                         </span>
-                        <add-scenario-links :text="item.source"/>
+                        <add-links-and-icons :text="item.source"/>
                     </p>
                     <p v-if="item.faq">
                         <span class="relative w-6 h-4 inline-block">
@@ -47,6 +47,9 @@ export default {
         this.$bus.$on('close-item', () => {
             this.close();
         });
+        this.$bus.$on('game-selected', () => {
+            this.unsetItem();
+        });
     },
     methods: {
         open(item) {
@@ -56,6 +59,9 @@ export default {
         close() {
             this.item = null;
             this.$refs['modal'].close();
+        },
+        unsetItem() {
+            this.item = null;
         }
     }
 }

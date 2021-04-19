@@ -126,7 +126,7 @@
                                   :checked="checked"
                                   :disabled="character < 6"
                                   @change="(id, isChecked) => {sheet.characters[character] = isChecked; store()}"></checkbox>
-                        <span v-if="character < 17" class="w-8 font-title">
+                        <span v-if="character < Object.keys(sheet.characters).length-1" class="w-8 font-title">
                             <character class="w-6 -mb-2 inline-block" :character="parseInt(character)+1"/>
                         </span>
                         <span v-else class="font-title text-lg">X</span>
@@ -180,7 +180,7 @@ export default {
                 },
                 {
                     goal: 'Have a party reputation of 10 or higher',
-                    reward: 'Open envelope <character class="w-6 -mb-2 inline-block" character="11" />'
+                    reward: 'Open envelope <character class="w-6 -mb-2 inline-block" character="SK" />'
                 },
                 {
                     goal: 'Have a party reputation of 20',
@@ -188,7 +188,7 @@ export default {
                 },
                 {
                     goal: 'Have a party reputation of -10 or lower',
-                    reward: 'Open envelope <character class="w-6 -mb-2 inline-block" character="12" />'
+                    reward: 'Open envelope <character class="w-6 -mb-2 inline-block" character="NS" />'
                 },
                 {
                     goal: 'Have a party reputation of -20',

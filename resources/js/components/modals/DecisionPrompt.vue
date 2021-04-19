@@ -7,11 +7,11 @@
                 </div>
                 <div class="flex flex-col">
                     <radio v-for="option in config.options"
-                           :id="option.id"
-                           :key="option.value"
+                           :id="config.name + option.id"
+                           :key="option.id"
                            :label="$t(option.text)"
                            group="choose"
-                           @changed="selected = option.value"
+                           @changed="selected = option.id"
                     ></radio>
                 </div>
             </template>
@@ -32,54 +32,62 @@
 
 <script>
 
-    import PromptConfig from "../../models/PromptConfig";
-    import ChoiceService from "../../services/ChoiceService";
-    import ScenarioRepository from "../../repositories/ScenarioRepository";
+import PromptConfig from "../../models/PromptConfig";
+import ChoiceService from "../../services/ChoiceService";
+import ScenarioRepository from "../../repositories/ScenarioRepository";
 
-    export default {
-        props: {
-            config: {
-                type: PromptConfig,
-                default: () => new PromptConfig
-            }
-        },
-        data() {
-            return {
-                selected: undefined,
-                choiceService: new ChoiceService(),
-                scenarioRepository: new ScenarioRepository()
-            }
-        },
-        mounted() {
+export default {
+    props: {
+        config: {
+            type: PromptConfig,
+            default: () => new PromptConfig
+        }
+    },
+    data() {
+        return {
+            selected: undefined,
+            choiceService: new ChoiceService(),
+            scenarioRepository: new ScenarioRepository()
+        }
+    },
+    mounted() {
+        if (!this.config.promptAfter) {
             this.togglePrompt(this.config.show);
             this.$bus.$on('open-scenario', (data) => {
                 this.togglePrompt(this.config.show);
             });
-            this.$refs['modal'].$on('closing', (event) => {
-                this.$emit('closing', event.detail.action || "chosen");
-            });
-        },
-        watch: {
-            config: function (newVal, oldVal) {
+        }
+
+        this.$refs['modal'].$on('closing', (event) => {
+            this.$emit('closing', event.detail.action || "chosen");
+        });
+    },
+    watch: {
+        config: function (newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.togglePrompt(newVal.show || false);
             }
-        },
+        }
+    },
 
-        methods: {
-            togglePrompt(value) {
-                if (value) {
-                    this.$refs['modal'].open();
-                } else {
-                    this.$refs['modal'].close();
-                }
-            },
-            onChoose(selected) {
-                this.config.callback(selected);
-                selected = null;
-                this.scenarioRepository.scenarioValidator.validate();
-                this.$bus.$emit('scenarios-updated');
-                this.$bus.$emit('achievements-updated');
+    methods: {
+        togglePrompt(open) {
+            if (open) {
+                this.$refs['modal'].open();
+            } else {
+                this.$refs['modal'].close();
             }
+        },
+        open() {
+            this.togglePrompt(true);
+        },
+        onChoose(selected) {
+            this.config.callback(selected);
+            selected = null;
+            this.scenarioRepository.scenarioValidator.validate();
+            this.$bus.$emit('scenarios-updated');
+            this.$bus.$emit('achievements-updated');
         }
     }
+}
 </script>

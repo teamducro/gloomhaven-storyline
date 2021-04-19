@@ -84,7 +84,7 @@ export default {
     'donations': {
         'title': 'Automatic synchronize progress!',
         1: 'All content in the Gloomhaven Storyline Tracker is free!',
-        2: 'The paid version provides an automatic sync feature, progress doesn\'t have to be shared manually anymore! This covers costs maintaining this app for the community.',
+        2: 'The paid version provides an automatic sync feature, progress doesn’t have to be shared manually anymore! This covers costs maintaining this app for the community.',
         3: 'Please consider a license, it helps a lot.',
         'close': 'Keep using the storyline tracker',
     },
@@ -109,7 +109,7 @@ export default {
         'Lost Island': 'Lost Island',
         'Abandoned Sewers': 'Abandoned Sewers',
         'Forgotten Crypt': 'Forgotten Crypt',
-        'Necromancers Sanctum': 'Necromancer\'s Sanctum',
+        'Necromancers Sanctum': 'Necromancer’s Sanctum',
         'Infernal Throne': 'Infernal Throne',
         'Temple of Elements': 'Temple of Elements',
         'Deep Ruins': 'Deep Ruins',
@@ -138,14 +138,14 @@ export default {
         'Nightmare Peak': 'Nightmare Peak',
         'Lair of the Unseeing Eye': 'Lair of the Unseeing Eye',
         'Shadow Weald': 'Shadow Weald',
-        'Rebels Stand': 'Rebel\'s Stand',
+        'Rebels Stand': 'Rebel’s Stand',
         'Ghost Forrest': 'Ghost Forrest',
         'The Void': 'The Void',
         'Noxious Cellar': 'Noxious Cellar',
         'Crypt Basement': 'Crypt Basement',
         'Palace of Ice': 'Palace of Ice',
         'Foggy Thicket': 'Foggy Thicket',
-        'Bandits Wood': 'Bandit\'s Wood',
+        'Bandits Wood': 'Bandit’s Wood',
         'Investigation': 'Investigation',
         'Bloody Shack': 'Bloody Shack',
         'Forgotten Grove': 'Forgotten Grove',
@@ -185,19 +185,40 @@ export default {
         'Sunken Vessel': 'Sunken Vessel',
         'Vermling Nest': 'Vermling Nest',
         'Payment Due': 'Payment Due',
+        'Unexpected Visitors': 'Unexpected Visitors',
+        'Lore Untold': 'Lore Untold',
+        'Past in Flames': 'Past in Flames',
+        'Aftershocks': 'Aftershocks',
+        'Shifting Gears': 'Shifting Gears',
+        'Shrouded Crypt': 'Shrouded Crypt',
+        'Bazaar of Knowledge': 'Bazaar of Knowledge',
+        'Where It Is Needed': 'Where It Is Needed',
+        'A Gaping Would': 'A Gaping Would',
+        'Monstrosities of a Cult': 'Monstrosities of a Cult',
+        'Intricate Work': 'Intricate Work',
+        'Mechanical Genius': 'Mechanical Genius',
+        'Prologue to the End': 'Prologue to the End',
+        'Epilogue of a War': 'Epilogue of a War',
+        'A Circular Solution': 'A Circular Solution',
+        'The Shackles Loosen': 'The Shackles Loosen',
+        'The Bottom of It': 'The Bottom of It',
+        'The Lost Thread': 'The Lost Thread',
+        'Ink Not Yet Dry': 'Ink Not Yet Dry',
+        'Future Uncertain': 'Future Uncertain',
+        'Tower to the Stars': 'Tower to the Stars',
     },
     achievements: {
         "First Steps": "First Steps",
-        "Jekserahs Plans": "Jekserah's Plans",
+        "Jekserahs Plans": "Jekserah’s Plans",
         "Dark Bounty": "Dark Bounty",
         "The Merchant Flees": "The Merchant Flees",
         "The Dead Invade": "The Dead Invade",
-        "A Demons Errand": "A Demon's Errand",
+        "A Demons Errand": "A Demon’s Errand",
         "City Rule: Economic": "City Rule: Economic",
         "City Rule: Militaristic": "City Rule: Militaristic",
         "End of the Invasion": "End of the Invasion",
         "The Power of Enhancement": "The Power of Enhancement",
-        "Stonebreakers Censer": "Stonebreaker's Censer",
+        "Stonebreakers Censer": "Stonebreaker’s Censer",
         "The Rift Neutralized": "The Rift Neutralized",
         "The Artifact: Recovered": "The Artifact: Recovered",
         "The Artifact: Recovered (previously Lost)": "The Artifact: Recovered (previously Lost)",
@@ -208,20 +229,20 @@ export default {
         "Ancient Technology x4": "Ancient Technology x4",
         "Ancient Technology x5": "Ancient Technology x5",
         "Through the Ruins": "Through the Ruins",
-        "The Voices Command": "The Voice's Command",
-        "The Drakes Command": "The Drake's Command",
+        "The Voices Command": "The Voice’s Command",
+        "The Drakes Command": "The Drake’s Command",
         "Following Clues": "Following Clues",
         "An Invitation": "An Invitation",
         "The Edge of Darkness": "The Edge of Darkness",
         "The Scepter and the Voice": "The Scepter and the Voice",
         "Artifact: Cleansed": "Artifact: Cleansed",
-        "The Voices Treasure": "The Voice's Treasure",
-        "The Drakes Treasure": "The Drake's Treasure",
+        "The Voices Treasure": "The Voice’s Treasure",
+        "The Drakes Treasure": "The Drake’s Treasure",
         "The Drake Slain": "The Drake Slain",
         "The Drake Aided": "The Drake Aided",
         "City Rule: Demonic": "City Rule: Demonic",
         "Trough the Trench": "Trough the Trench",
-        "Redthorns Aid": "Redthorn's Aid",
+        "Redthorns Aid": "Redthorn’s Aid",
         "Across the Divide": "Across the Divide",
         "The Voice Freed": "The Voice Freed",
         "The Voice Silenced": "The Voice Silenced",
@@ -231,7 +252,7 @@ export default {
         "End of Corruption x3": "End of Corruption x3",
         "Annihilation of Order": "Annihilation of Order",
         "End of Gloom": "End of Gloom",
-        "The Poisons Source": "The Poison's Source",
+        "The Poisons Source": "The Poison’s Source",
         "Through the Nest": "Through the Nest",
         "A Map to Treasure": "A Map to Treasure",
         "Bad Business": "Bad Business",
@@ -239,11 +260,34 @@ export default {
         "Sin-Ra": "Sin-Ra",
         "Debt Collection": "Debt Collection",
         "Water Staff": "Water Staff",
-        "Fishs Aid": "Fish's Aid",
+        "Fishs Aid": "Fish’s Aid",
         "Tremors": "Tremors",
         "High Sea Escort": "High Sea Escort",
         "Grave Job": "Grave Job",
         "Northern Expedition": "Northern Expedition",
+        "Through the Portal": "Through the Portal",
+        "Knowledge is Power": "Knowledge is Power",
+        "Knowledge is Power x2": "Knowledge is Power x2",
+        "Knowledge is Power x3": "Knowledge is Power x3",
+        "Knowledge is Power x4": "Knowledge is Power x4",
+        "Angels of Death": "Angels of Death",
+        "Custodians": "Custodians",
+        "Hunted Prey": "Hunted Prey",
+        "Pieces of an Artifact": "Pieces of an Artifact",
+        "Pieces of an Artifact x2": "Pieces of an Artifact x2",
+        "Pieces of an Artifact x3": "Pieces of an Artifact x3",
+        "Guard Detail": "Guard Detail",
+        "Dimensional Equilibrium": "Dimensional Equilibrium",
+        "Hunting the Hunter": "Hunting the Hunter",
+        "Xangroths Aid": "Xangroth's Aid",
+        "Diamaras Aid": "Diamara's Aid",
+        "Beauty in Freedom": "Beauty in Freedom",
+        "A Peril Averted": "A Peril Averted",
+        "A Peril Averted x2": "A Peril Averted x2",
+        "A Peril Averted x3": "A Peril Averted x3",
+        "A Peril Averted x4": "A Peril Averted x4",
+        "Mechanical Splendor": "Mechanical Splendor",
+        "Severed Ties": "Severed Ties"
     },
     items: {
         "Boots of Striding": "Boots of Striding",
@@ -354,7 +398,7 @@ export default {
         "Necklace of Teeth": "Necklace of Teeth",
         "Horned Helm": "Horned Helm",
         "Drakescale Helm": "Drakescale Helm",
-        "Thiefs Hood": "Thief's Hood",
+        "Thiefs Hood": "Thief’s Hood",
         "Helm of the Mountain": "Helm of the Mountain",
         "Wave Crest": "Wave Crest",
         "Ancient Drill": "Ancient Drill",
@@ -391,9 +435,9 @@ export default {
         "Smoke Elixir": "Smoke Elixir",
         "Pendant of the Plague": "Pendant of the Plague",
         "Mask of Death": "Mask of Death",
-        "Masters Lute": "Master's Lute",
+        "Masters Lute": "Master’s Lute",
         "Cloak of the Hunter": "Cloak of the Hunter",
-        "Doctors Coat": "Doctor's Coat",
+        "Doctors Coat": "Doctor’s Coat",
         "Elemental Boots": "Elemental Boots",
         "Staff of Command": "Staff of Command",
         "Ring of Duality": "Ring of Duality",
@@ -412,11 +456,11 @@ export default {
     },
     quest: {
         1: {
-            "name": "The Merchant's Request",
+            "name": "Black Barrow",
             "sections": {
-                1: "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
-                2: "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic power. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
-                3: "You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
+                1: "Jekserah, the Valrath merchant, offered to pay you ten gold coins to recover some stolen goods. You’ve learned that the robbers’ hideout is the Black Barrow in the Corpsewood, by roughing up some local thugs.",
+                2: "Within the barrow, you found your quarry, but he got away. You found the reason the bandits picked this particular barrow when chasing him down: animated bones. It appears that the bandits here have some necromantic power. You did, however, slay them and their unholy allies. Your target was not among the dead, but there was a passage deeper into the catacombs.",
+                3: "You have defeated the Bandit Commander. Something about him seemed unnatural and, during combat, he described “The Gloom”. In the Chamber of the Commander, you discovered the stolen scrolls concealed in a cache. Your returned them to Jekserah for the negotiated reward."
             },
             "stages": {
                 0: "{1}",
@@ -425,11 +469,11 @@ export default {
             }
         },
         2: {
-            "name": "The Merchant's Wrath",
+            "name": "Jekserah’s caravans",
             "sections": {
-                1: "Jekserah offers you another job after you finished your first one. A tribe of Inox in the Dagger Forest has ransacked a couple of her caravans headed to the Capital. She asked if you could make an example of them.",
-                2: "The Inox tribe is dead. You've made an brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
-                3: "Jekserah has fled from Gloomhaven and sworn vengeange upon you due to your actions against her. She will not be keen on paying you for running her errands anymore."
+                1: "After you’re first quest, Jekserah offers you another job. In the Dagger Forest, a tribe of Inox ransacked a few of her caravans on their way to Gloomhaven. If you can make an example of them, she will pay you well.",
+                2: "You killed the tribe of Inox. No one is going to bother Jekserah’s caravans anymore. You don’t really feel good about slaughtering parents in front of their children, but Jekserah paid your reward.",
+                3: "Due to your acts against her, Jekserah has fled from Gloomhaven and has vowed revenge upon you."
             },
             "stages": {
                 0: "{1}",
@@ -438,16 +482,16 @@ export default {
             }
         },
         3: {
-            "name": "Seeking Gloom",
+            "name": "The Gloom",
             "sections": {
-                1: "The Bandit Commander's proclamations of a \"Gloom\" during your battle do not sit well with you. Sifting through the carnage left by the battle, you found a cache of scrolls. The writing upon them was in some unknown archaic language. Among the scrolls, you found a map of the northern countryside. A bend in the Still River was clearly marked as a point of interest. Contemplating whether you want to find out more about this so-called \"Gloom,\" you decided that the spot could be a point of interest for you, as well.",
-                2: "The map lead to a crypt full of demons and cultists. Clearly, the bandits are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One is marked as being overrun by vicious undead. It looks as though you have an opportunity to get in the cult's good graces by helping to clear out a threat. This may help you learn more about the \"Gloom\".",
-                3: "After the terrible shrieks and moans of the undead ceased, a grinning hooded figure appeared before you. His demeanor was deeply unsettling. He asked another favor of you in exchange for forgiveness for killing his brethren. The cultists want the necromancer, Jekserah, dead. If you bring her head to their headquarters, you may find out more about the \"Gloom\". The figure gave you details on where to find evidence of Jekserah's plans.",
-                4: "You have slain Jekserah. As she collapsed, the life fleeing her eyes, she whispered at you “You have no idea what’s coming...”. Perhaps your old boss's head may prove useful in future dealings with the bandits.",
-                5: "You have slain Jekserah. It's time to bring your old boss's head to the cult's headquarters.",
-                6: "Unfortunately for the cultists, you have sided with Jekserah and taken over the city. Your mysterious contact will surely never want to meet with you now.",
-                7: "You met the hooded figure at the cult's headquarters, where he thanked you graciously for your help in taking out the necromancer. He then introduced you to a black, flaming rift in space that he called his master, \"The Gloom\". The figure then promptly betrayed you by summoning a horde of unnatural creatures in an attempt to kill you. Apparently, getting back into the cult's good graces isn't easy after murdering their followers and setting back their plans. After an exhausting battle, the Gloom spoke to you in a cold, low voice. \"You have done well. My minions may not be able to forgive. But I can. Come. Come to me. Step into my realm. Embrace the inevitable.\" The rift stands before you. Do you dare enter?",
-                8: "You stepped into the black rift. The low voice spoke once more, \"Tricked again. Truly amazing that creatures as stupid as yourselves have caused me so much trouble. No matter. You will rot here, completely cut off from your home. There will be no last stand. You will simply waste away. You will die without valor in a foreign place and there is no recourse. I leave you now forever. Good-bye.\" The ensuing battle seemed endless. After killing everything, you banged on the walls, desperately hoping for something to continue fighting against in this exile. You grew tired, then your vision darkened. In your next breath, you found yourself laying in the grass outside of the cult’s hideout. \"Know that I have spared you.\" The low voice returned. \"Your persistence intrigues me. I invite you to break yourself against me. It will be more entertaining than the last time I brought gloom to this world.\" You bolted upright and rushed back into the crypt. Dead bodies of the cultists littered the floor. \"I am not here anymore. These shells have served their purpose. My roots are now deep and you will soon encounter my endless power once more. I look forward to the day.\""
+                1: "The bandit commander’s proclamations of a “Gloom” do not sit well with you. Sifting through the carnage left by the battle, you found a cache of scrolls. The writing upon them was in some unknown archaic language. Among the scrolls, you found a map of the northern countryside. A bend in the Still River was clearly marked as a point of interest. Contemplating whether you want to find out more about this so-called “Gloom”, you decided that the spot could be a point of interest for you, as well.",
+                2: "The map lead to a crypt full of cultists and demons. Clearly, some form of cult is linked with the bandits. Your arrival has interrupted a ritual of some kind. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One is marked as being overrun by vicious undead. It seems like you’ve got an opportunity to get in the cult’s good graces by helping to clear out a threat. You might find out more about “The Gloom”",
+                3: "After the terrible shrieks and moans of the undead, a hooded figure appeared behind you. In exchange for forgiveness for murdering his brethren, he asked another favour from you. The Cultists seek the death of the necromancer, Jekserah. If you carry her head to their headquarters, you can find out more about the “Gloom”. You decide that the location might be a point of interest for you. The figure gave you a location of where to find information about Jekserah’s plans.",
+                4: "You have slain Jekserah. In her last breath she whispered at you “You have no idea what’s coming...”.",
+                5: "You have slain Jekserah. In her last breath she whispered at you “You have no idea what’s coming...”. It’s time to deliver her head to the cult’s headquarters.",
+                6: "You sided with Jekserah and took over the city, unfortunately for the cultists.",
+                7: "At the cult’s headquarters you met the hooded figure, where he thanked you graciously for your help in taking out the necromancer. He introduced you to a black, flaming rift in space that he called his master, “The Gloom”. Out of the rift, a group of corpses appears and shambles toward you. The Gloom spoke with a cold, low voice after an exhausting fight. “You have done well. My minions may not be able to forgive. But I can. Come. Come to me. Step into my realm. Embrace the inevitable.” The rift stands before you. Will you see this through to the end?",
+                8: "You stepped into the black rift. The low voice returned. “Tricked again. Truly amazing that creatures as stupid as yourselves have caused me so much trouble. No matter. You will rot here, completely cut off from your home. There will be no last stand. You will simply waste away. You will die without valor in a foreign place and there is no recourse. I leave you now forever. Good-bye.” After a relentless battle, your vision darkened. In your next breath, you find yourself lying in the grass outside of the cult’s hideout. The low voice returned. “Know that I have spared you. Your persistence intrigues me. I invite you to break yourself against me. It will be more entertaining than the last time I brought gloom to this world.” In the crypt, dead bodies of the cultists littered the floor. “I am not here anymore. These shells have served their purpose. My roots are now deep and you will soon encounter my endless power once more. I look forward to the day.”"
             },
             "stages": {
                 0: "{1}",
@@ -462,10 +506,10 @@ export default {
             }
         },
         4: {
-            "name": "Tales from the Crypt",
+            "name": "Ancient crypt",
             "sections": {
-                1: "While investigating the \"Gloom\", you discovered the bandits from the Black Barrow are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One appears to see heavy use with the cult. It looks as though you have an opportunity to disrupt more of the cult's activities.",
-                2: "You followed the writings to an ancient crypt believed to be the cult’s base of operations. A group of cultists were performing ritual incantations in front of a black, gaping hole in reality. With the cultists and their minions dead, the dark rift is now dormant."
+                1: "During your search to the “Gloom”, you learned that the bandits are linked to some kind of cult. Your arrival has interrupted a ritual of some kind. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One appears to see heavy use with the cult. It looks as though you have an opportunity to disrupt more of the cult’s work.",
+                2: "You followed the writings to an ancient crypt believed to be the cult’s base of operations. A group of cultists were performing ritual incantations in front of a black, gaping hole in reality. With the cultists and their minions dead, it seems the dark rift is now dormant."
             },
             "stages": {
                 0: "{1}",
@@ -473,11 +517,11 @@ export default {
             }
         },
         6: {
-            "name": "The Merchant's Secret",
+            "name": "Jekserah’s Secret",
             "sections": {
-                1: "When you left Jekserah's manor a Quatryl city guard approached you. She told you Jekserah has been trying to overthrow the military in Gloomhaven and is up to something sinister. The guard asked for your aid in uncovering Jekserah’s plans and expose her for who she really is.",
-                2: "The warehouse was full of the undead. Jekserah had been using the necromantic scroll you delivered to raise the undead within the city walls. You fought your way to the back room of the warehouse and confronted Jekserah. Just before she flipped out a window she told you she'd be back with a legion of undead. To stop her you could locate her yourself or ask the help of an Aesther enchanter mentioned by the city guard",
-                3: "You ignored the city guard Argeise's warnings and continued working for Jekserah. \"Sinister machinations\" is, of course, a troubling phrase to throw around, but the phrase \"considerable reward\" trumps that in a heartbeat. There is no more reason to raid the warehouse."
+                1: "A Quatryl city guard, Argeise, confronted you when you left Jekserah’s house. Jekserah is been trying to overthrow the military in Gloomhaven and is up to something far more sinister she told you. The guard asked for your help to get to the bottom of Jekserah’s plans and expose her for who she really is.",
+                2: "You discover that the warehouse is teeming with undead. Jekserah’s clearly been using the necromantic scroll you delivered to raise the undead within the city walls. You fought your way to the warehouse’s back room and faced Jekserah. She said “I will be back with a legion of undead” right before she fled. To stop her you could hunt her down yourself or an Aesther enchanter might be able to locate her for you.",
+                3: "You ignored the warnings of Argeise, and kept working with Jekserah. “Sinister machinations” is, of course, a troubling phrase to throw around, but the phrase “considerable reward” trumps that in a heartbeat. Raiding the warehouse is not a consideration anymore."
             },
             "stages": {
                 0: "{1}",
@@ -486,11 +530,11 @@ export default {
             }
         },
         7: {
-            "name": "A Valrath's Best Friend",
+            "name": "Diamond hunt",
             "sections": {
-                1: "Jekserah has one last task for you. She requires a diamond of considerable size for a customer. There is a diamond mine in the southern mountains overrun by Vermlings, with some other more intelligent force behind them. If you can fight your way in and grab the biggest diamond you can find, Jekserah will give you a considerable reward. However, you have been also been warned by a guard that Jekserah may have more sinister machinations than she lets on. Something about overthrowing the military... but one diamond couldn't hurt, could it?",
-                2: "Sinister machinations or not, you decided the phrase \"considerable reward\" was more pertinent. As expected, the diamond mine was infested by Vermling miners. They were lead by a Merciless Overseer who swiftly turned the miners against you with a few cracks of his whip. Once the overseer was dealt with and the diamond recovered, the remaining miners scattered. You headed back to Jekserah to claim your reward. Her bodyguards escorted you inside the manor where you found her somehow different—more harrowed and grim. \"Wonderful.\" She exchanged the diamond for a large purse full of coins. \"This will serve beautifully as a focus for the incantations. I wonder if the cultists even knew what they had here. With this, I can summon an entire army of undead!\" She turned to you with a strange glint in her eye. \"So then! Are you ready to overthrow the military of Gloomhaven and put control of the city into the hands of the Merchant’s Guild? Or do you not have the stomach to effect real change?\"",
-                3: "You decided that \"sinister machinations\" outweigh \"considerable reward\". You raided Jekserah's warehouse and uncovered her secret plans to invade the town with an army of the dead. In the process, she fled the city. It's safe to say the \"considerable reward\" is off the table and there's no more reason to visit the mine."
+                1: "Jekserah’s last task requires you to retrieve a diamond of considerable size for a customer. There is a diamond mine in the southern mountains overrun with Vermlings, with some other more intelligent force behind them. If you can fight your way in and grab the biggest diamond you can find, Jekserah will give you a considerable reward. However, Argeise, city guard, also warned you that Jekserah may have far more sinister machinations than she shows. Something about overthrowing the military...",
+                2: "You ignored the warnings of Argeise, and kept working with Jekserah. “Sinister machinations” is, of course, a troubling phrase to throw around, but the phrase “considerable reward” trumps that in a heartbeat. The diamond mine was overrun by Vermling miners. A Merciless Overseer in a dark robe orders at the miners with a whip, they turned toward you. With the overseer dead and the diamond in hand, you head back to Jekserah to claim your reward. “This will serve beautifully as a focus for the incantations. With this, I can summon an entire army of undead!” Jekserah said. “So then! Are you ready to overthrow the military of Gloomhaven and put control of the city into the hands of the Merchant’s Guild? Or do you not have the stomach to effect real change?”",
+                3: "You invaded Jekserah’s warehouse, uncovering her sinister plans to invade the city with an army of undead. She fled the city in the process. It’s fair to assume that the “considerable reward” is off the table."
             },
             "stages": {
                 0: "{1}",
@@ -499,11 +543,11 @@ export default {
             }
         },
         8: {
-            "name": "Tripping the Rift",
+            "name": "Nightmarish hole",
             "sections": {
-                1: "While busting up some cultist activity, you encountered a gaping black rift in reality. The cultists were performing some sort of ritual on the rift that was bringing forth horrible nightmarish forms of teeth and claws into this reality. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. You tossed a rock at it, and the rock disappeared into nothingness. You must admit that you wonder whether you could enter the rift yourself and whether you could survive the trip to wherever that rock ended up. Do you dare enter the rift?",
-                2: "The trip was less than pleasant. As soon as you arrived, you were set upon by demons sent by an angry, booming voice. Once the demons were dispatched, the voice spoke once more and invited you into it's realm. Having already made one leap of faith, you decided there was no harm in making another. Inside the voice's realm stood a monstrous creature, horned and terrifying, holding a trident and standing on four hooved legs. It asked you to retrieve an artifact, or otherwise the demonic creature would kill you.",
-                3: "Of course not. What kind of fool goes diving into shadowy dimensional rifts? Instead, you decided to seek aid in closing this rift permanently. Clearly nothing good could come of it, so you neutralized the rift."
+                1: "With the goal of stopping elemental cultists, you step into a crypt and discover a horrifying sight. A group of cultists is performing ritual incantations in front of a black, gaping hole in reality. Out of the rift come nightmarish forms, full of teeth and claws. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. You toss a rock at it, and the rock disappears into nothingness. You must admit that you wonder whether you could enter the rift yourself and whether you could survive the trip to wherever that rock ended up. Are you bold enough to enter?",
+                2: "After your nightmarish trip inside the rift, a booming voice makes you fight your way through demons. When the demons are slayed, the voice invites you in his realm. Having already made one leap of faith this day, you decide there’s no harm in making another. Decending in an underground temple, you see a monstrous creature, horned and terrifying, holding a trident and standing on four hooved legs. The creature asks you to retrieve an artifact, or be killed.",
+                3: "Getting aid in neutralizing the rift is of course your best and most risc free choice."
             },
             "stages": {
                 0: "{1}",
@@ -512,13 +556,13 @@ export default {
             }
         },
         9: {
-            "name": "Necromancer Hunt",
+            "name": "In search of Jekserah",
             "sections": {
-                1: "The necromancer Jekserah has fled Gloomhaven. Before she left, she made some threats against you. It is clear you need to hunt her down before she can make good on her threats. Unfortunately, you have no idea where she is. The city guard isn't much help here, but Argeise does have some suggestions. There is an Aesther enchanter in town who may be able to divine Jekserah's location, but she's notoriously difficult to work with. Alternatively, some of your contacts at the Santuary of the Great Oak know of a temple dedicated to an unseen force that will answer any question asked of it.",
-                2: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find Jekserah?",
-                3: "You visited the Temple of the Seer, but were much more interested in the voice's other offers than finding Jekserah. The only way to find Jekserah now is with the enchanter's help.",
-                4: "You've located Jekserah's sanctum in the Corpsewood. It's time to put a stop to her necromancy for good.",
-                5: "After a grueling fight against her undead lackies, Jekserah falls to your blade. You separated her head from her body and hastily left the wretched place full of mangled corpses. You returned the head to the Captain of the Guard and were paid handsomely for the bounty on her."
+                1: "“You will regret that decision when I return to Gloomhaven with a legion of undead at my back!” Jerkserah threatens and she flees from the city. It is clear you need to hunt her down before she can make good on her threats. The city guard Argeise suggests you to seek help from an Aesther enchanter, if she is willing to work together. Or perhaps the Sanctuary of the Great Oak will answer any question you ask of it?",
+                2: "Having met Hail, the Aesther enchantress, she surely will help you find Jeskerah after you helped her?",
+                3: "While at the Temple of the Seer, a disembodied voice offers you one answer to any choice of questions. Your interest went out to other questions. The enchanters help will be the only way to find Jekserah.",
+                4: "Jekserah’s location is in the Corpsewood. Lets stop her necromancy!",
+                5: "With one more hack of your blade, you separate her head from her body, return the head to the Captain of the Guard and are paid handsomely for the bounty on her."
             },
             "stages": {
                 0: "{1}",
@@ -530,11 +574,11 @@ export default {
             }
         },
         10: {
-            "name": "New Management",
+            "name": "New right hand",
             "sections": {
-                1: "Pleased with your work so far, Jekserah has invited you to join her undead invasion of the city. She plans to overthrow the military and put the Merchant's Guild in control.",
-                2: "You aided Jekserah in overthrowing the military. The city guard fought back, but their pitiful mortal bodies were no match for the overwhelming onslaught of the undead and the might of your blades. Every guard that fell bolstered the undead's ranks. When the Captain of the Guard fell, the remaining guards fled like the cowards you always knew they were. Jekserah's bodyguards were killed during the invasion, but so much the better for you. You are now Jekserah's new right hand and Merchant Guild rules the city.",
-                3: "Overthrowing the military was not part of your plan. You spurned Jekserah's invitation and sided with the city guard against the invasion. Jekserah is dead by your hand."
+                1: "Jekserah is happy with the diamond you brought her. Now, are you ready to overthrow the military of Gloomhaven and put control of the city into the hands of the Merchant’s Guild?",
+                2: "Jekserah’s army already dispersed into the city. It will grow with every guard who falls. Now the last of the guard falls and you are the new right hand. The Merchant Guid rules the city now.",
+                3: "Jekserah’s plans of overthrowing the military aren’t yours. You slowly back out of the room and alarm the city. Although a big army of undead, Jekserah is no match for you and she dies by your doing."
             },
             "stages": {
                 0: "{1}",
@@ -543,11 +587,11 @@ export default {
             },
         },
         11: {
-            "name": "The Old Guard",
+            "name": "Ambivalence",
             "sections": {
-                1: "Jekserah has summoned an undead army and is planning to invade the city! You must warn the city guard at once!",
-                2: "Her plan of protecting Gloomhaven with an army of undead was madness. You could not give over all the power to an unscrupulous necromancer. You ran to warn the city guard and were able to mount a defense against the waves of undead crashing against your weapons. You fought the undead all the way back to Jekserah's manor, where you put an end to her vile necromancy once and for all. Jekserah is dead by your hand.",
-                3: "... or maybe, just maybe, there's something to Jekserah's plan. It makes sense in some dark, twisted sense. You decided not to warn the guards, but instead joined Jekserah's undead army in overthrowing the military."
+                1: "You decide to not help Jekserah in her plans. Your plan involves alarming the city of a summoned undead army.",
+                2: "With all city guards as allies, you fight until reaching Jekserah’s manor. Although a big army of undead, Jekserah is no match for you and she dies by your doing.",
+                3: "Ambivalent about Jekserah’s plans, you finally decide to join her side."
             },
             "stages": {
                 0: "{1}",
@@ -556,13 +600,13 @@ export default {
             },
         },
         12: {
-            "name": "The Heart's Desire",
+            "name": "Choices",
             "sections": {
-                1: "Some of your contacts at the Sanctuary of the Great Oak know of a temple dedicated to an unseen force that will answer any question asked of it. This is a golden opportunity seek out your heart's desire.",
-                2: "When you finally reached the temple a voice told you \"I cannot accept visitors at this time\". Before you could object, a group of massive stone constructs materialized before you. But there was no way you were going back empty handed. After finishing of the monsters, the voice then offered you a choice of either great power, great wealth, or the location of the necromancer.",
-                3: "The obvious choice was great power. You are not interested in gold or petty revenge. The only thing that matters is the strength to enact your will. The voice tells you of a shrine in the Copperneck Mountains that contains a source of great power.",
-                4: "What kind of mercenary would you be if you weren't getting paid? Great wealth is the obvious choice here. The voice tells you of a lost island in the Misty Sea that contains long forgotten treasures.",
-                5: "Power and wealth mean nothing while Jekserah still breathes. You insist that the voice tell you the location of the nefarious Valrath. It tells you of a sanctum hidden deep within the Corpsewood."
+                1: "You reach out to some of your contacts concerning Jekserah’s location, and end up with an odd bit of information from the Sanctuary of the Great Oak. They say there is a temple high in the Watcher Mountains dedicated to some unseen force that can answer any questions asked of it. So many choices in finding out what you want!",
+                2: "With great risk, you finally reach the temple. “I am afraid I cannot accept visitors at this time,” a disembodied voice booms through the room. After fighting off the monsters the voice throws at you, the voice makes you a deal. “I will answer a single question for you, and then you will leave this place.” What do you choose? Great power, wealth or the location of the necromancer?",
+                3: "Great power it is. The voice talks about a shrine in the Copperneck mountains which will give you the power you are looking for.",
+                4: "Wealth it is. The voice talks about an island in the Misty Sea. It gives you confidence that you will find vast riches on this particular one.",
+                5: "The location of the necromancer it is. The voice talks about a sanctum in the Corpsewood."
             },
             "stages": {
                 0: "{1}",
@@ -572,10 +616,10 @@ export default {
             }
         },
         13: {
-            "name": "The Enchantress",
+            "name": "The Aesther woman",
             "sections": {
-                1: "You've heard stories of an Aesther enchanteress in Gloomhaven who may be able to aid in your endeavors. However, she's been to known to ask impossible tasks in exchange for favors. Impossible or not, you need her help.",
-                2: "Following reports of an Aesther in the Boiler District, you found her inside an abandoned and decrepit tavern: the Crooked Bone. The Aesther woman's name is Hail and she seemed a bit eccentric... perhaps even a bit mad. After some trepidation, she agreed to help you if you could retrieve an orb from the Frozen Hollow in the Copperneck Mountains. The creatures inside the hollow were none too pleased to see you, but you fought through them nonetheless. With the last of your adversaries dead, you approached the back of the chamber, where a small blue sphere floated above the floor. You stashed it into your pack and made your way back to the Crooked Bone. Hail seemed quite enamored with the object and perhaps a bit flippant about just how dangerous an object you had held with your bare hands. Hail disappeared with the sphere. After what feels like hours of waiting, she returned and casually asks to experiment on you. You're a bit taken aback, but she assures you that it's safe. For large amounts of gold, she can now enhance some of your abilities. More importantly, she's also willing to do you some favors."
+                1: "An enchanter has been called for, so an enchanter must be found. Following reports of an Aesther in the Boiler District, you find yourself in front of the Aesther woman.",
+                2: "She is known to be eccentric and does not feel enthusiasm to help you at first. However, with your help in finding an orb from the frozen hollow in the Copperneck mountains, Hail is curious about what you want."
             },
             "stages": {
                 0: "{1}",
@@ -583,10 +627,10 @@ export default {
             }
         },
         14: {
-            "name": "Unlimited Power",
+            "name": "Strength and power",
             "sections": {
-                1: "You've learned of a shrine's location in the Copperneck mountains. Your sources tell you that this shrine is marked with the symbols for power and strength. You're fond of both of those, so the shrine seems worth investigating.",
-                2: "The shrine was a trial. \"Strength begets strength\" was inscribed in ancient writings on the walls. You demonstrated your strength by defeating the shrine's guardians and grabbing hold of the Sigil of Strength. The sigil bestowed a great strength upon you, but also showed you visions of strange runic alphabet. Perhaps the symbols have a deeper meaning?"
+                1: "Nestled in a high valley deep in the Copperneck Mountains, a shrine is to be found. Adorning the structure’s stone face are innumerable symbols of power and strength. Both of those things is something you want.",
+                2: "You have proven yourself to get at whatever is in this temple. You see images of a strange runic alphabet. What do those symbols mean?"
             },
             "stages": {
                 0: "{1}",
@@ -594,11 +638,11 @@ export default {
             }
         },
         15: {
-            "name": "There Be Dragons",
+            "name": "In search of dragons",
             "sections": {
-                1: "You've heard reports of large flying creatures in the Copperneck Mountains. Could there really be dragons in the mountains? It's worth investigating, dragons could pose a serious threat to the city.",
-                2: "Your goal is the Icecrag, the tallest mountain in the Coppernecks. On your way there, you were ambushed by a group of Inox and Demons. Their co-existence was curious, but your ultimate goal lies further ahead.",
-                3: "The climb up the Icecrag was grueling and arduous. You had to fight off the cold, the wolves, and a nest of angry drakes. However you did get to the bottom of this dragon business. Atop the peak was a gigantic winged lizard - that could speak. It spoke with a gravelly voice that surprised you with its eloquence. In fact, it asked for your help. “A group of Savvas subdued me in my sleep and removed one of my flame glands, presumably to study. I cannot let this insult go unpunished and would greatly appreciate you taking it back from their city, killing as many of them as you can in the process.Or, if you wish to be cliché\" the creature said with a sigh, \"you could simply attack me. Slay the dragon, save the princess, and all that. Except I have no princess, and I’m not a dragon — just a drake who has lived a long time and does not wish to end his life today. So if you do attack me, I will fight back, and you will most assuredly die.”"
+                1: "You’ve heard some talk of a dragon making roost in the Copperneck Mountains. The reports are worth investigating. Whatever it is could be a threat to the city.",
+                2: "Your goal is the Icecrag, the tallest mountain in the Coppernecks. A group of Inox emerge from a concealed cave. What were Inox and demons doing together? And so far north? Questions needed to be answered later.",
+                3: "The Copperneck Mountains are not accommodating. The weather, wolves and some drakes slow down your process up the mountain. A giant, winged lizard perches atop a jagged boulder. The lizard asks for help: “A group of Savvas subdued me in my sleep and removed one of my flame glands, presumably to study. I cannot let this insult go unpunished and would greatly appreciate you taking it back from their city, killing as many of them as you can in the process.” “Or, if you wish to be cliché,” the creature says with a sigh, “you could simply attack me. But I will fight back, and you will most assuredly die.”"
             },
             "stages": {
                 0: "{1}",
@@ -607,10 +651,10 @@ export default {
             }
         },
         16: {
-            "name": "Treasure Island",
+            "name": "Misty sea island",
             "sections": {
-                1: "You've learned of an undiscovered island in the Misty Sea that is rumored to contain vast riches. It's time to charter a boat.",
-                2: "The island was infested with wild Vermlings. However, no Vermling can stand between you and treasure. You stormed the island and discovered the remains of a derelict ship that the Vermlings were taking refuge in. The ship contained a plethora of gold, ripe for the taking. Who knows what the Vermlings were using the gold for, but you have a good idea what you will use it for."
+                1: "You know about an island in the Misty Sea which will give you vast riches. Let’s go!",
+                2: "You see numerous Vermlings on the island. Entering their dwellings onboard a derelict ship, you see the glinting of gold. Who knows what the Vermlings were using the gold for, but you have a good idea what you will use it for."
             },
             "stages": {
                 0: "{1}",
@@ -618,13 +662,13 @@ export default {
             }
         },
         17: {
-            "name": "Sewer Surfin",
+            "name": "Filthy liquid",
             "sections": {
-                1: "Gloomhaven's water supply appears to have been poisoned. You've been asked to investigate the source of the poison. Unfortunately, this means trudging through the sewers. Yuck.",
-                2: "You begrudgingly hopped into the sewers to investigate the poison. You slew plethora of snakes, ooze, and Vermlings. The Vermlings had made camp around a cisterns that appeared to be the source of the poison, but upon further investigation, none of the dead Vermlings had any poisons at all. There is a passage at the back of the room that leads deeper or, if you had a way to breath underwater, you could enter the cistern directly. You've heard of an Enchantress in Gloomhaven who may be able to help with that last bit, but she's been rumored to be... difficult to work with.",
-                3: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to breath underwater?",
-                4: "You've found a way to the source of the poison. It's time to purify the water.",
-                5: "The water pumps were teeming with unholy creatures and a writhing black corruption. By the time the fight is over, the walls and floor are a mess of black ooze, but you managed to get it all out of the pumps. None of it is pulsating anymore either, which is a step in the right direction. A simple mop can clean the remnants, now that the dark presence has been removed."
+                1: "You notice the water supply is poisoned. In order to investigate the source of the poison, you need to go through the sewers.",
+                2: "While investigating the sewers, snakes, ooze and Vermlings come your way. In order to go further, you need to be able to breath under water. Maybe an Enchantress can be of some help. She is rumored to be quite eccentric though.",
+                3: "After meeting the Aesther enchantress, Hail, there is a possibility of her helping you with the breathing under water problem.",
+                4: "The source of the poison is known. Time to purify!",
+                5: "While fighting with unholy creatures and writhing black corruption, the dark presence is removed."
             },
             "stages": {
                 0: "{1}",
@@ -635,12 +679,12 @@ export default {
             }
         },
         18: {
-            "name": "Closing the Rift",
+            "name": "Closure",
             "sections": {
-                1: "While busting up some cultist activity, you encountered a gaping black rift in reality. The cultists were performing some sort of ritual on the rift that was bringing forth horrible nightmarish forms of teeth and claws into this reality. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. You briefly wondered whether you could enter the rift yourself, but finding some way to close the rift is probably the more prudent decision. There is an Aesther enchanter in Gloomhaven who may know more about this inter-planar stuff. She’s been known to ask for impossible favors before she helps anyone, though.",
-                2: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to close the rift?",
-                3: "Hail required an elemental censer from a long dead elementalist's crypt. Unfortunately, the cultists inhabiting the crypt weren't keen on parting with it. You escorted Hail through the crypt until she could secure the censer, which she used to promptly dispatch the remaining undead. She's now ready to deal with the rift.",
-                4: "... or at least she was, before Gloohaven's new Demon overlords overtook the city and made off with an artifact Hail needed. If you want Hail to close the rift, you'll need to get the artifact back from the Prime Demon. He probably won't be happy about it.",
+                1: "With the goal of stopping elemental cultists, you step into a crypt and discover a horrifying sight. A group of cultists is performing ritual incantations in front of a black, gaping hole in reality. Out of the rift come nightmarish forms, full of teeth and claws. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. Having met Hail, the Aesther enchantress, she surely will help you close the rift?",
+                2: "Having met Hail, the Aesther enchantress, she surely will help you close the rift?",
+                3: "Hail required an elemental censer from a long dead elementalist’s crypt. Unfortunately, the cultists inhabiting the crypt weren’t keen on parting with it. You escorted Hail through the crypt until she could secure the censer, which she used to promptly dispatch the remaining undead. She’s now ready to deal with the rift.",
+                4: "... or at least she was, before Gloomhaven’s new Demon overlords overtook the city and made off with an artifact Hail needed. If you want Hail to close the rift, you’ll need to get the artifact back from the Prime Demon. He probably won’t be happy about it.",
                 5: "Throughout an elaborate ritual, you and Hail are assailed by demons unhappy with your intent to close the rift between your worlds. However once the ritual is completed, all the demons are sucked back into the rift, and the tear shrinks to a brilliant point, then disappears. As a bonus, you seemed to have helped Hail out with her research on enhancements considerably."
             },
             "stages": {
@@ -652,11 +696,11 @@ export default {
             }
         },
         19: {
-            "name": "Exorcism",
+            "name": "Raising of spirits",
             "sections": {
-                1: "Within the rift between realms, you've met a powerful Demon.{br}Assaulting him within his own realm will be difficult, but it's time he perished.",
-                2: "The rift was neutralized before you could confront the demon within his palace.",
-                3: "Attacking a demon within his own realm may have been a tad foolhardy. The demon was invulnerable, but you managed to smash an altar of black glass that seemed to contain the demon's essence. With it's destruction, the Prime Demon shattered into countless shards of stone."
+                1: "You go on a quest, trying to slay a powerful demon.",
+                2: "Unfortunately, before your chance to slay the demon, the rift was neutralized.",
+                3: "The attack of the demon in its own realm was tricky. However, by smashing an altar of black glass, destruction was upon the beast."
             },
             "stages": {
                 0: "{1}",
@@ -665,10 +709,10 @@ export default {
             }
         },
         20: {
-            "name": "The Artifact",
+            "name": "Mysterious object",
             "sections": {
-                1: "You've learned of a powerful artifact near the Serpent's Kiss River. Finding it could prove very useful in furthering your goals.",
-                2: "The Temple of the Elements had been overtaken by cultists. The cultists had used the artifact's power to enhance their demon allies. Despite their extra strength, the demons and their cultist masters were unable to stop you from destroying the altars protecting the artifact. With the altars smashed, the demons vanished and the protective barrier around the artifact dissipated. You approached the center of the temple and reached out for the vessel but stopped short. You felt a powerful darkness emanating from the thing, and behind that, a deep sadness. This artifact has been corrupted, and it seems to almost be cognizant of that fact. All of these feelings flashed in your mind as a warning. It could be used for great evil, but would you fight for that evil or against it? After some effort, you used a thick cloth to get the vessel into your bag. Perhaps it would be best to bring it to an enchanter rather than mess with it yourself."
+                1: "There is a mysterious object near the Serpent’s kiss river. This will help you on your other quests.",
+                2: "Cultists took over the Temple of the Elements. They were no match for your strength. However, reaching for the vessel gives you negative feelings. Maybe an enchanter can help?"
             },
             "stages": {
                 0: "{1}",
@@ -676,10 +720,10 @@ export default {
             }
         },
         21: {
-            "name": "Deeper depths",
+            "name": "Deep dive",
             "sections": {
-                1: "While trying to discover the source of Gloomhaven's poisoned water, you've discovered a secret passage in the sewers. Perhaps there might be something interesting inside.",
-                2: "The passageway was alarmed and brought a series of mechanical sentries to life. You were able to split up and silence the alarm, which stopped the sentries in their tracks. These mechanical creations may be of some use in the future, but for now you've found a way around the deepest part of the cistern. Unfortunately, you're still going to need to get wet if you want to go further."
+                1: "In your endeavor of finding the source of the poisoned water, the path in the sewers opens up into a series of branching passageways. Your gets attracted to a secret passage.",
+                2: "As you step forward, a clanging sound rings out through the room, almost like an alarm. Then the machinery moves and springs to life, clearly intent on attacking any intruders. You shut the alarm off by splitting up. A quick swim should take you farther into this underground world."
             },
             "stages": {
                 0: "{1}",
@@ -687,10 +731,10 @@ export default {
             }
         },
         22: {
-            "name": "Hearing Things",
+            "name": "A voice",
             "sections": {
-                1: "The Inox and demons you encountered on the way to the Icecrag had some crude scratching mentioning a 'voice' on among their belongings. There was a cave nearby the Mountain Pass that seemed to call to you. You feel a subtle and powerful urge to explore the cave.",
-                2: "The cave contains a powerful creature, known only as 'The Voice'. With it's guidance, you were able to restore the creature's booming, bone-rattling voice. It asks that you help free it from bondage, but The Voice's motives remain uncertain."
+                1: "You find crude scratchings referencing a “voice” while trying to get to the Icecrag. There is a subtle and powerful urge, calling you to explore the cave.",
+                2: "Exploring the cave, you are being led by a voice. It eventually asks you to aid it again. However, it is uncertain whether or not the voice is to be trusted."
             },
             "stages": {
                 0: "{1}",
@@ -698,10 +742,10 @@ export default {
             }
         },
         23: {
-            "name": "Look Who's Talking",
+            "name": "The study of a voice",
             "sections": {
-                1: "The Voice is such a powerful creature. You must find out more about whatever it is and what it's motives are.",
-                2: "A Quatryl scholar has advised you that the Voice may be a powerful demon bound for good reason. Although he was a bit unsure of the accuracy the text he was referring to, he warned you against freeing the Voice. He then pointed you towards a scepter that may strengthen the binding ritual. You retrieved it from a shrine on the edge of the Lingering Swamp. It was filled with dark energies, and the Voice pleaded with you not to bring the scepter into its chambers. The Voice claims you have been misled. You'll be the one to decide that."
+                1: "You decide to try to get to the bottom of what exactly the Voice is, instead of just meddling with powers you do not understand.",
+                2: "A bookish Quatryl at the University strongly recommends against freeing the creature. The accuracy of the text is admittedly a little questionable, but whatever this voice is, it was bound for a reason. There is a scepter that could be used to strengthen the binding ritual. While retrieving the scepter, the voice says you have been misled. You are eager to bring it to the Echo Chamber and silence the Voice."
             },
             "stages": {
                 0: "{1}",
@@ -709,13 +753,13 @@ export default {
             }
         },
         24: {
-            "name": "Let it Hail",
+            "name": "Severing connections",
             "sections": {
-                1: "There is something deeply concerning about the artifact you recovered in the Temple of the Elements. You feel a powerful darkness emanating from the thing, and behind that, a deep sadness. This artifact has been corrupted, and it seems to almost be cognizant of that fact. Perhaps it would be best to bring it to an enchanter rather than mess with it yourself.",
-                2: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can tell you more about the artifact?{br}Of course she could. Hail is odd, but brilliant. However, you handed over the artifact to the Prime Demon. If you want Hail to inspect it, you'll need to get it back from him. He probably won't part with it willingly.",
-                3: "An enchanter might be able to tell you more about the artifact. However, you handed over the artifact to the Prime Demon. If you want the enchanter to inspect it, you'll need to get it back from the demon. He probably won't part with it willingly.",
-                4: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can tell you more about the artifact?",
-                5: "Hail pointed out that the artifact was corrupted. She rather abruptly sent you into the Plane of Night to break the artifact's attunement. You managed to sever the connection. Back in your own plane of existence, Hail mentioned three locations that were drawing power from the corrupted artifact. If you want to know more about the artifact, you may want to visit these locations."
+                1: "You feel a powerful darkness emanating from the artifact, and behind that, a deep sadness. This artifact has been corrupted, and it seems to almost be cognizant of that fact. Perhaps it would be best to bring it to an enchanter rather than mess with it yourself.",
+                2: "Having met Hail, the Aesther enchantress, you helped her and she is going to help you. She maybe knows more about the artifact. However, the prime demon has your priority.",
+                3: "Before an enchantress could look at the artifact, you have already taken it to the prime demon. It is going to be tricky to pry the artifact out of the demons clutches.",
+                4: "Having met Hail, the Aesther enchantress, you helped her and she is going to help you. She maybe knows more about the artifact.",
+                5: "In order to sever the connection of the artifact with the plane of night, Hail sent you there and where successful. Hail gives you the locations that used the corrupt power of the artifact. Visiting these locations might be your next goal."
             },
             "stages": {
                 0: "{1}",
@@ -726,14 +770,14 @@ export default {
             }
         },
         25: {
-            "name": "The Voice",
+            "name": "Vessels",
             "sections": {
-                1: "Inside a cave within the Copperneck Mountains, you have discovered a creature, known only as 'The Voice'. The Voice has been trapped by a powerful force deep within the earth. The Voice asks for your help finding vessels that are crucial in taking corporeal form and ending it's long imprisonment.",
-                2: "You have recovered the first vessel from a sect of militaristic Harrowers. The Voice has directed you to the location of the second vessel.",
-                3: "The Savvas armory was a difficult nut to crack, but you managed to slip in, steal the necessary items, and get out before the guard overwhelmed you. Only one vessel remains.",
-                4: "The last vessel was guarded by an network of ancient defenses. The Voice showed you a way to disable the defenses. From opposite ends of the network, you activated the switches in the order shown to you by the Voice. In the center of the network, the slid away, revealing a narrow ladder descending down into the dark. “The way to the tomb is clear,” the Voice said. “Go now, and retrieve what is mine.”",
-                5: "Even though you thought the defense network disabled, the tomb was still booby-trapped. You barely escaped with your lives and the vessel in tact. With all three vessels in hand, you made your way back to the mountain cave and into the Echo Chamber. You placed the small earthen pots in the center of the cavern and wait. It was difficult to notice at first, but, over time, a faint tremor in the floor and walls began to grow until it was difficult to even keep your footing. Then there was a flash of light, and before you floated a swirling green mist in the shape of many long, intertwined tendrils. “I had almost forgotten what it felt like to not be imprisoned.” For once you heard the Voice not from inside your own head, but emanating from the figure in front of you. “It is quite wondrous. I am sure that before too long, I will forget the horrid feeling of powerlessness. It is time to leave this realm,” the Voice said. “There is much to be remedied from my prolonged absence. But first, I must give you a proper thanks. I shall hold up my end of the bargain and bestow upon you great power and wealth.” The green light spreads forth and illuminated you, providing you with the most wonderful feeling of warmth. And then it was gone. All that was left was a stone tablet in the center of the room with strange, cryptic markings. Perhaps those marking may be useful in the future.",
-                6: "You couldn't take the ringing in your ears any longer. That damned voice needed to be silenced and no one but you was going to do it."
+                1: "The voice you found in a cave in the Copperneck Mountains, asks you for your help in escaping its prison.",
+                2: "The Harrowers proved quite difficult to take down, but in the end they fell just like any other foe. Feeling the rot of the place seeping into your bones, you hurriedly ransack the dwelling and locate the small earthen pot shown to you by the Voice. The voice gives you the second location.",
+                3: "The Savvas were difficult to take on, but you managed. “There is but one vessel left,” the Voice calls to you.",
+                4: "From opposite ends of the network, you active the switches in the order shown to you by the Voice. There, the center of the floor slides away, revealing a narrow ladder descending down into the dark. “The way to the tomb is clear,” the Voice says. “Go now, and retrieve what is mine.",
+                5: "You grow furious at the Voice for not warning you about the extra security, and then channel that fury into doing whatever it takes to emerge from this tomb alive, with the vessel in tact. With all three vessels in hand, you make your way back to the mountain cave and into the Echo Chamber. You place the small earthen pots in the center of the cavern and wait. It is difficult to notice at first, but, over time, a faint tremor in the floor and walls begins to grow until it is difficult to even keep your footing. Then there is a flash of light, and before you floats a swirling green mist in the shape of many long, intertwined tendrils. “I had almost forgotten what it felt like to not be imprisoned.” For once you hear the Voice not from inside your own head, but emanating from the figure in front of you. “It is quite wondrous. I am sure that before too long, I will forget the horrid feeling of powerlessness. “It is time to leave this realm,” the Voice says. “There is much to be remedied from my prolonged absence. But first, I must give you a proper thanks. I shall hold up my end of the bargain and bestow upon you great power and wealth.” The green light spreads forth and illuminates you, providing you with the most wonderful feeling of warmth. And then it is gone. All that is left is a stone tablet in the center of the room with strange, cryptic markings. Will this be usefull in the future?",
+                6: "You block the Voice’s lies from your mind and venture into the cave. A strong note of dissonance rings out as you snap the last chord, and then there is silence, something you wanted for a long time."
             },
             "stages": {
                 0: "{1}",
@@ -745,12 +789,12 @@ export default {
             }
         },
         26: {
-            "name": "Armory Heist",
+            "name": "To slay or not to slay",
             "sections": {
-                1: "A powerful creature has commanded you to break into a Savvas armory and recover it's treasure. You're hesitant to break into such a secure facility, but the creature's command is strong.",
-                2: "You slew the powerful creature, severing it's influence over you. You still feel some urge to break into the armory, but without a direct command you're not quite so bold as to try.",
-                3: "You slew both the powerful creatures, severing their influence over you. You no longer feel any urge to break into the armory. It's just too crazy.",
-                4: "The creature's will has been done. The armory has been looted and you possess its treasures. Although perhaps it's best not to show your face around the Savvas city for a few months."
+                1: "What do you choose? Breaking into a Savvas armory and taking its treasure or disobeying the voice in your head?",
+                2: "The creature is destroyed, the influence is gone. The Savvas armory could be a nice challenge to break into, but maybe to big.",
+                3: "Both of the creatures are destroyed, their influence is gone. Breaking into the Savvas armory does not have your interest anymore.",
+                4: "You did what was asked of you by the creature. The treasure of the Savvas armory is yours."
             },
             "stages": {
                 0: "{1}",
@@ -760,11 +804,11 @@ export default {
             }
         },
         27: {
-            "name": "Dragon Slayer",
+            "name": "The Elder Drake",
             "sections": {
-                1: "High atop the Icecrag, the Elder Drake has asked you for a favor. Has it not heard of you? You're not in the business of negotiating with lizards. It's time to kill a dragon.",
-                2: "On second thought, having a dragon in your debt may prove useful. You decided to help the Elder Drake. After all, it was the first drake not to try and eat you.",
-                3: "You never imagined a 'dragon' would be so snide as it lay dying. Despite its sarcasm to the contrary, the city pays you well enough for slaying the Elder Drake."
+                1: "Standing before the great, proud drake, you see nothing to discuss with the monster. If it wants your help, it is certainly for a nefarious purpose. The drakes you’ve met previously certainly haven’t been very kind. You ready your weapons with determination.",
+                2: "Maybe this dragon isn’t so bad, nobody ever got hurt from helping, right?",
+                3: "Needless to say, the drake’s sarcastic predictions do not come to pass. You report your deeds to the Gloomhaven authorities and receive a modest reward to add to the modest amount of treasure you found on the scorched summit."
             },
             "stages": {
                 0: "{1}",
@@ -773,13 +817,13 @@ export default {
             }
         },
         28: {
-            "name": "Dark Souls",
+            "name": "Pull of the dark",
             "sections": {
-                1: "A demon has tasked you (or rather threatened) with retrieving a powerful artifact. Helping such a powerful creature could certainly be profitable, but at what cost?",
-                2: "You've retrieved the artifact, as the demon requested. It's abundantly clear that the artifact has been corrupted. If you bring this to the demon, he will most certainly use it for a great and terrible evil.",
-                3: "You sealed the rift without handing over the artifact to the Demon. Clearly it was not to be trusted with such a dangerous and powerful item.",
-                4: "You knew it would be bad... but a demon invasion of Gloomhaven was not what you had in mind. This was too much for you to handle on your own. You escaped the demon's lair and ran to warn the city guard just in time. The demons assailed the gate with tremendous numbers, but you were able to hold long enough to wear down the Prime Demon. He managed to breach the gate, but you put him down and his armies scattered. Gloomhaven is safe for now, but you may want to reconsider your policy of handing powerful artifacts to evil creatures.",
-                5: "You handed over the artifact to the demon, who revealed he would use it's power to take over Gloomhaven. Sounded good to you. Those fools in Gloomhaven never appreciated you anyway. With the aid of the demon army, you sacked the garrison and slaughtered the guard. Gloomhaven is now under demon rule."
+                1: "There is an artifact of great power located in a forgotten temple along the Serpent’s Kiss River. You can retrieve it for me. Do you want to retrieve it?",
+                2: "While retrieving the artifact, you notice that it has been corrupted. It could be used for great evil. but would you fight for that evil or against it?",
+                3: "A swirling rift of chromatic energy emerges and pulses, bathing the demon in an aura of protection. With one final blow, the rift grows chaotic. In a brilliant flash of light, the void collapses in on itself and then explodes outward, sending a shock wave that destroys all demons in its path. You did not trust that demon.",
+                4: "It slowly dawns on you the many mistakes you have made that have led you to this moment. You never should have brought the artifact. Now he wishes to destroy Gloomhaven, and you must find a way to stop him. The demon bellows and falls. Maybe think a little longer next time before giving an object to someone untrustworthy.",
+                5: "You have returned with the artifact. The demon asks to help fight against the humans. You smile and nod. Finally you will get the recognition you deserve. Together you slay the guards of Gloomhaven and the Demon becomes its ruler."
             },
             "stages": {
                 0: "{1}",
@@ -790,12 +834,12 @@ export default {
             }
         },
         30: {
-            "name": "Under the Sea",
+            "name": "Diving",
             "sections": {
-                1: "With Hail's help, the artifact has been cleansed of it's corrupting influence. However, Hail mentioned three locations that were drawing power from the corrupted artifact. If you want to know more about the artifact, you may want to visit these locations. One such location is deep under the Misty Sea. Unfortunately, your anatomy does not include a set of gills. Perhaps Hail might have a way to help with this? Knowing her, whatever solution she comes up with will be rather unpleasant.",
-                2: "Rather unpleasant was an astute assumption. in any case, you've managed to obtain some devices that allow you to breath freely underwater. It's time to investigate one of the corrupted locations.",
-                3: "Your dive leads you to the bottom of a trench. You meet resistance from the murky guardians of whatever you're here to find, but fight through them nonetheless. You press ever forward, leaving the wretched trench. Looking behind you, you see the figures of more Lurkers waiting in the shadows, but they do not pursue. Perhaps they are afraid of whatever lies ahead. You go deeper through a crack in the earth until your path shifts suddenly upward. You emerge from the cold, unforgiving water into an air pocket deep beneath the waves. You spit out your water-breathing orb, grateful to finally breathe normally and take a short rest. Through the darkness ahead of you, you see an expansive cavern, which houses a massive stone structure. This unnatural sight, so far removed from anything you are familiar with, fills you with irrational, foreboding dread.",
-                4: "You wander through the massive stone structure beneath the waves for what feels like hours. And just when you feel as though you cannot go any farther, you feel its presence. Something old and powerful waits for you at the end of this corridor. It calls to you, inviting you to climb into its open maw, embracing the sweet release of infinity. This is what you came to defeat, but without even seeing it, you are filled with unending hopelessness. You cannot even dream of defeating such a creature. You shake your head and attempt to guard yourself from the negative feelings. You didn’t swallow those throat-crushing breathing spheres and swim down to the bottom of the ocean just to fail now. You must destroy this threat. You steel your nerves and set to the creature with your blades. With the giant eye dead, all of its minions wither and die with it. Thankfully, the room stops shaking as well. You can’t get out the way you came in, but you are able to explore the structure further, free of the crushing dread that permeated the air previously. It is a long journey, but you find your way out of the trench, return to the boat, and head back to Gloomhaven, resolving to never do something like that again."
+                1: "In order to sever the connection of the artifact with the plane of night, Hail sent you there and where successful. Hail gives you the locations that used the corrupt power of the artifact. The first location on Hail’s map is under the Misty Sea. However, breathing under water is not one of your traits. Asking Hail for advise it is.",
+                2: "After a few minutes, the extreme discomfort of breathing through the orb gives way to a mere mild annoyance. You press on.",
+                3: "You hit the bottom of a trench, and shadowy figures emerge from the murky waters. You press ever forward, leaving the wretched trench. Looking behind you, you see the figures of more Lurkers waiting in the shadows, but they do not pursue. Perhaps they are afraid of whatever lies ahead. You go deeper through a crack in the earth until your path shifts suddenly upward. You emerge from the cold, unforgiving water into an air pocket deep beneath the waves. You spit out your water-breathing orb, grateful to finally breathe normally and take a short rest. Through the darkness ahead of you, you see an expansive cavern, which houses a massive stone structure. This unnatural sight, so far removed from anything you are familiar with, fills you with irrational, foreboding dread.",
+                4: "You wander through the massive stone structure beneath the waves for what feels like hours. And just when you feel as though you cannot go any farther, you feel its presence. Something old and powerful waits for you at the end of this corridor. It calls to you, inviting you to climb into its open maw, embracing the sweet release of infinity. You shake your head and attempt to guard yourself from the negative feelings. You didn’t swallow those throat-crushing breathing spheres and swim down to the bottom of the ocean just to fail now. With the giant eye dead, all of its minions wither and die with it. Thankfully, the room stops shaking as well. You can’t get out the way you came in, but you are able to explore the structure further, free of the crushing dread that permeated the air previously It is a long journey, but you find your way out of the trench, return to the boat, and head back to Gloomhaven, resolving to never do something like that again."
             },
             "stages": {
                 0: "{1}",
@@ -805,11 +849,11 @@ export default {
             }
         },
         31: {
-            "name": "Black Forest",
+            "name": "Dark Forest",
             "sections": {
-                1: "With Hail's help, the artifact has been cleansed of it's corrupting influence. However, Hail mentioned three locations that were drawing power from the corrupted artifact. If you want to know more about the artifact, you may want to visit these locations. One such location is deep in the Dagger Forest.",
-                2: "Hail directed you to a group of Orchids that could guide you through the maze-like forest. When you arrive at the Orchid camp, however, you find something wholly unexpected. It is a scene of massacre and devastation. Burned out buildings and disfigured corpses. Judging from the wounds, you figure a raiding party of Inox did this. Luckily, Inox don’t feel a particular need to cover their tracks. You are able to follow their trail deeper into the woods, where eventually you find a slave labor camp—Inox guards overseeing a group of ragged Orchids and humans working to construct catapults and other machines of war. The camp is not particularly well-guarded from intruders, and, after eliminating a couple key lookouts, you are able to slip into the slave pens and free one of the Orchids. He agrees to guide you through the forest, but only after helping him seek revenge against the Inox. You have little choice in the matter as he rushes one of the Inox. Once the last Inox falls, the Orchid thanks you. “They killed my family when they came. They said my children were not strong enough workers.” He introduces himself as Redthorn and agrees to take you deeper into the forest.",
-                3: "Redthorn leads you deep into the Dagger Forest. Eventually, a fine grey mist begins to permeate your surroundings and you come across a dismal, dead clearing. “This was once the heart of the forest,” Redthorn whispers. “Unreachable by any normal means. Safe and perfect. And then it came. Now this place houses nothing but horrors and nightmares.” The Orchid looks down at the black earth. “Truly, this place terrifies me. Whatever creatures haunt these shadows, I cannot help you fight them, but if you survive, I will show you the way back.” As Redthorn disappears into the mist, you begin to see other forms moving at the edge of your vision. And then you hear the hoofbeats, like a terrible thunder rolling through the trees. The sound gets closer and closer until the ground beneath your feet tremors at the approach. The Dark Rider fades into and out of the mist seemingly at random. The monster is difficult to strike, but eventually the headless spectre screams as you land one final strike against it, and it's form dissipates in a gruesome way. Redthorn appears out of the thinning fog. “I don’t know how you did it, but I can already feel the forest lighten. It will take a long time, but I think the heart of the forest may one day be restored."
+                1: "In order to sever the connection of the artifact with the plane of night, Hail sent you there and you where successful. Hail gives you the locations that used the corrupt power of the artifact. The Dagger Forest is the second location on Hail’s map.",
+                2: "Haill tells you, you need a guide and directs you to an orchid-camp. When you arrive at the Orchid camp, however, you find something wholly unexpected. It is a scene of massacre and devastation. Burned out buildings and disfigured corpses. Judging from the wounds, you figure a raiding party of Inox did this. Luckily, Inox don’t feel a particular need to cover their tracks. You are able to follow their trail deeper into the woods, where eventually you find a slave labor camp. Inox guards overseeing a group of ragged Orchids and humans working to construct catapults and other machines of war. After eliminating a couple key lookouts, you are able to slip into the slave pens and free one of the Orchids. The Orchid agree to guide you, but only after you give him his revenge. “They killed my family when they came. They said my children were not strong enough workers.” The orchid says and introduces himself as Redthorne.",
+                3: "Redthorn leads you deep into the Dagger Forest. Eventually, a fine grey mist begins to permeate your surroundings and you come across a dismal, dead clearing. “This was once the heart of the forest,” Redthorn whispers. “Unreachable by any normal means. Safe and perfect. “And then it came. Now this place houses nothing but horrors and nightmares.” The Orchid looks down at the black earth. “Truly, this place terrifies me. Whatever creatures haunt these shadows, I cannot help you fight them, but if you survive, I will show you the way back.” As Redthorn disappears into the mist, you begin to see other forms moving at the edge of your vision. And then you hear the hoofbeats, like a terrible thunder rolling through the trees. The sound gets closer and closer until the ground beneath your feet tremors at the approach. The headless spectre screams as you land one final strike against it, and its form begins to dissipate, black wisps of smoke escaping from the cracks in its armor. Redthorn appears out of the thinning fog. “I don’t know how you did it, but I can already feel the forest lighten. It will take a long time, but I think the heart of the forest may one day be restored."
             },
             "stages": {
                 0: "{1}",
@@ -818,11 +862,11 @@ export default {
             }
         },
         32: {
-            "name": "Ice Climbers",
+            "name": "To the peaks",
             "sections": {
-                1: "With Hail's help, the artifact has been cleansed of it's corrupting influence. However, Hail mentioned three locations that were drawing power from the corrupted artifact. If you want to know more about the artifact, you may want to visit these locations. One such location is high atop the Copperneck Mountains.",
-                2: "You climb the frozen peaks of the Copperneck Mountains, lamenting that every location Hail has sent you is in the most unforgiving, inhospitable place possible. While climbing the mountains, you are ambushed by figures in dark cloaks and demons made of ice as you attempt to cross a divide. A voice booms out over the howling wind. “You are not welcome here, mortals. All that awaits you is the embrace of death.” You can hardly see through the blizzard, but you are determined to make sure death embraces someone else. As you battle though both enemies and weather alike, you escape the rising storm of ice to find some semblance of shelter in a cave. A glowing white orb sits behind the crytalline demons occupying the cave. The pieces all start to fall into place. They are controlling the weather here, blocking our passage to the peak. You destroy the orb and the screeching of the wind outside the cave lessens to a faint murmur. You exit to see clear skies above you and a path to the peak. At this altitude, without a cloud in sight, you find yourself looking out over the horizon, marveling at the wondrous expanse of mountains and the forests and plains beyond them. You can even see the faint outline of Gloomhaven in the distance.",
-                3: "With the ice altar destroyed, climbing the rest of the way up the mountain is thankfully uneventful. You are almost enjoying yourself, admiring the view of the entire countryside, when the view grows suddenly dark, despite it only being midday. You are very close to the peak now, and you surmise that this development has something to do with the evil presence at the summit. A sharp screeching rings out, and you crouch down squinting through the darkness. Near the peak you see many dark shapes scrabbling and writhing, as if the mountain itself is alive. Squinting further, you notice that the writhing is moving down the mountain toward you. It seems your presence has not gone unnoticed. You ready your weapons and prepare to fight your way to the peak. You make your way through the dark fog and find a small clearing at the summit. The screech once again pierces your ears, and a massive demon with a multitude of sharp claws and leathery wings lands before you. “You dare approach my nest?” You can barely make out the words from its high-pitched wailing. “I will harvest your corpses and feed them to my children!” You battle the demon and its 'children' until finally, the demon can take no more. The giant demon screeches one last time, its timbre and intensity modulating wildly as it spasms in its death throes. Not wanting to get close to its flailing claws, you wait for the creature to expire. When it finally does, a stillness washes over the area and day once again breaks in the sky above. The view is grand, apart from the blood and carnage that litters the peak. You take it all in and then slowly begin to make your way back down the mountain, satisfied that whatever evil was lurking here will no longer trouble Gloomhaven."
+                1: "With Hail’s help, the artifact has been cleansed of it’s corrupting influence. However, Hail mentioned three locations that were drawing power from the corrupted artifact. If you want to know more about the artifact, you may want to visit these locations. One such location is high atop the Copperneck Mountains.",
+                2: "You climb the frozen peaks of the Copperneck Mountains, lamenting that every location Hail has sent you is in the most unforgiving, inhospitable place possible. Figures in dark cloaks and demons made of ice wait for you across a divide. A voice booms out over the howling wind. “You are not welcome here, mortals. All that awaits you is the embrace of death.” You ready your weapons. You can hardly see through the blizzard, but you are determined to make sure death embraces someone else. As quickly as you can, you escape the rising storm of ice to find some semblance of shelter in a cave. Upon seeing a glowing white orb behind the crytalline demons, the pieces all start to fall into place. They are controlling the weather here, blocking your passage to the peak. After destroying the orb, pieces fall to the snowy floor along with the corpses of the enemies who stood in your way. The screeching of the wind outside the cave lessens to a faint murmur. You exit to see clear skies above you and a path to the peak. At this altitude, without a cloud in sight, you find yourself looking out over the horizon, marveling at the wondrous expanse of mountains and the forests and plains beyond them. You can even see the faint outline of Gloomhaven in the distance.",
+                3: "With the ice altar destroyed, climbing the rest of the way up the mountain is thankfully uneventful. You are almost enjoying yourself, admiring the view of the entire countryside, when the view grows suddenly dark, despite it only being midday. You are very close to the peak now, and you surmise that this development has something to do with the evil presence at the summit. You make your way through the dark fog and find a small clearing at the summit. The screech once again pierces your ears, and a massive demon with a multitude of sharp claws and leathery wings lands before you. “You dare approach my nest?” You can barely make out the words from its high-pitched wailing. “I will harvest your corpses and feed them to my children!” After battling the demon it screeches one last time, its timbre and intensity modulating wildly as it spasms in its death throes. Not wanting to get close to its flailing claws, you wait for the creature to expire. When it finally does, a stillness washes over the area and day once again breaks in the sky above. The view is grand, apart from the blood and carnage that litters the peak. You take it all in and then slowly begin to make your way back down the mountain, satisfied that whatever evil was lurking here will no longer trouble Gloomhaven."
             },
             "stages": {
                 0: "{1}",
@@ -831,11 +875,11 @@ export default {
             }
         },
         33: {
-            "name": "Shut Up and Sit Down",
+            "name": "Just shut up!",
             "sections": {
-                1: "Inside a cave within the Copperneck Mountains, you have discovered a bound creature, known only as 'The Voice'. Ever since, you ears have not stopped ringing. Upon the advice of a Quatryl scholar, you retrieved a scepter of binding, filled with dark energies, from a shrine on the edge of the Lingering Swamp. If you bring the scepter to the Voice's chamber, you can renew the binding and silence this damned voice once and for all.",
-                2: "You decided that the easiest way to silence The Voice was just to give it what it wants. The Voice has been freed and no longer inhabits the Echo Chamber.",
-                3: "As you stood in the mountain cave, scepter in hand, the Voice called to you. “Your intentions are noble. You fear me and wish to keep me imprisoned. I understand, but what you are doing will only lead to disaster and ruin. That scepter was not created to strengthen my prison. I created it! I used it to imprison one of my greatest foes—a being of death and hatred. I do not know what will happen when you bring that thing to my chamber, but I can guarantee you no good will come of it!” Shut up shut up shut up shut up SHUT UP! You blocked the Voice’s lies from your mind and before the Voice could speak another word, you raised up the scepter and channeled its power. A black fog oozed from it and enveloped you. The Voice screamed out once more, but there was no coherence in the sound—only pain. The fog began to dissipate and, for a moment, you felt relief, until you saw that you were not in the Echo Chamber anymore, but some dark and hostile realm instead. The Voice rang out again, but somehow it was different: “The power of the Voice is mine! You will be the first I destroy with it!” And try it did, but after a fierce battle, you severed the Voice's vocal chords. The Voice will never speak again."
+                1: "Ever since that voice started talking to you, when you discovered a cave in the Copperneck Mountains, you want to get rid of it. Perhaps a scepter with dark energies will be of some help. ",
+                2: "Weakness is the new strength today and you are going to use it to get rid of that awful voice by giving in and just doing what it says. You free the voice of its prison.",
+                3: "You stand before the entrance of the mountain cave, scepter in hand. Once again, the Voice calls to you. “Your intentions are noble. You fear me and wish to keep me imprisoned. I understand, but what you are doing will only lead to disaster and ruin. “That scepter was not created to strengthen my prison. I created it! I used it to imprison one of my greatest foes—a being of death and hatred. I do not know what will happen when you bring that thing to my chamber, but I can guarantee you no good will come of it!” You block the Voice’s lies from your mind and venture into the cave. You make your way to the Echo Chamber, and, before the Voice can speak another word, you raise up the scepter and channel its power. A black fog oozes from it and envelops you. The Voice screams out once more, but there is no coherence in the sound—only pain. The fog begins to dissipate and, for a moment, you feel relief, until you see that you are not in the Echo Chamber anymore, but some dark and hostile realm instead. The Voice rings out again, but somehow it is different: “The power of the Voice is mine! You will be the first I destroy with it!” A strong note of dissonance rings out as you snap the last chord, and then there is silence."
             },
             "stages": {
                 0: "{1}",
@@ -844,11 +888,11 @@ export default {
             }
         },
         34: {
-            "name": "Growing Gills",
+            "name": "Passing water",
             "sections": {
-                1: "You require a way to breathe underwater. There is an Aesther enchanter in Gloomhaven who may know something about that. She’s been known to ask for impossible favors before she helps anyone, though.",
-                2: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to close breathe underwater?",
-                3: "Hail had you raid a nest of Drakes for their scales. They weren't terribly keen on parting with them, but your blade was very convincing. Hail used the scales to form some rather uncomfortable blue orbs that should allow you to breathe underwater. Just ignore the painful burning sensation, that's normal."
+                1: "Breathing under water is not part of your abilities. Hail will surely help you.",
+                2: "At the Crooked Bone is were Hail lives. She is certainly eccentric in asking you for favors in exchange for her help. So now you did something for her, tit for tat, she will probably know how to breath under water.",
+                3: "Scales are the key. Unfortunately you had to take it from a nest of Drakes. It is sad, but gives you the advantage of not dying while under water."
             },
             "stages": {
                 0: "{1}",
@@ -857,10 +901,10 @@ export default {
             }
         },
         35: {
-            "name": "Let Freedom Ring",
+            "name": "Freedom!",
             "sections": {
-                1: "You recently freed an Orchid named Redthorn from an Inox slave camp in the Dagger forest. After some cathartic revenge on his captors, he asked you to help him check on a nearby village that may have befallen the same fate as his own village.",
-                2: "Along the way to the village, Redthorn expressed some concern that the Inox have become increasingly aggressive. Maybe if you find out what is causing their behavior, you can put an end to these incursions? You had little time to contemplate these thoughts, as you arrived just in the nick of time. The Inox had overtaken the village and were preparing to slaughter the captured Orchids. Redthorn and your party sprung into action, saving all the captives and wiping out the Inox invaders. The orchid village and its residents are safe."
+                1: "The Orchid you freed from the Dagger Forest wants your help in freeing his people from a nearby village.",
+                2: "Redthorn leads you from the ruined Inox slaver camp northeast into the dense forest. “The other village is not too far from here. It is well-hidden, but I fear the worst.” “In more recent years, the Inox have become increasingly aggressive and territorial, encroaching on our land and attacking our people.” Redthorne says. When the village comes into your sight, your arrival comes not a moment too soon, as you see a large Inox in the center of the clearing preparing to kill one of the captive Orchids. Thankfully you are able to save this village."
             },
             "stages": {
                 0: "{1}",
@@ -868,11 +912,11 @@ export default {
             }
         },
         36: {
-            "name": "Rebel Scum",
+            "name": "The Rebels",
             "sections": {
-                1: "Several weeks after installing the Prime Demon as the overlord of Gloomhaven, you wake one day to find a deformed demon standing over you, holding a parchment that looks like some sort of skin. “I find myself desiring your help once again, mortals,” it reads. “It appears that many opposition forces in Gloomhaven escaped my grasp and are now camping out in the southern foothills, plotting to take back the city. Such machinations are surely fruitless, but still it is better to crush them now than to wait to see what they do.”",
-                2: "Before you had a chance to investigate the rebel camp, you helped oust the demons and install a different set of overlords into Gloomhaven.",
-                3: "At the behest of the demon lord, you headed into the Lingering Swamp to destroy the last vestiges of opposition to demonic rule. Using the help of magical totems to dry out the inhospitable swamp, the rebels were erecting a campsite right in front of you. You crushed the rebel opposition and their totems, and watched the campsite slowly sink into the muck. One of the dying soldiers divulges the location of the remaining rebels. You'll deal with them soon enough."
+                1: "One day, you wake to find a deformed demon standing over you, holding a parchment that looks like some sort of skin. “I find myself desiring your help once again, mortals,” it reads. “It appears that many opposition forces in Gloomhaven escaped my grasp and are now camping out in the southern foothills, plotting to take back the city. Such machinations are surely fruitless, but still it is better to crush them now than to wait to see what they do.”",
+                2: "There is a rebel camp. You did not have a chance to investigate it yet, because all the overthrowing of overlords and stuff.",
+                3: "At the behest of the demon lord, you head into the Lingering Swamp to destroy the last vestiges of opposition to demonic rule. By destroying some magical totems, you are able to crush your opposition. A rebel tells you of the location of his fellow rebels, asking you to help them in their cause."
             },
             "stages": {
                 0: "{1}",
@@ -881,11 +925,11 @@ export default {
             }
         },
         37: {
-            "name": "No Survivors",
+            "name": "Bloodshed",
             "sections": {
-                1: "At the behest of the demon lord, you quashed a rebel campsite in the swamp. One of the dying guards divulged the location of the remaining rebel forces. “But only because I know that you are not truly evil. Instead of hunting us down, fight with us. Help us take back the city from those demons. Head east, to the border of the Watcher Mountains. Look to the north of the ash tree grove. Talk with the commander. Help free the city...”{br}Fool. Now you know just where to strike. There will be no survivors.",
-                2: "Maybe there was something to those guard's word after all. You helped oust the demons and install a different set of overlords into Gloomhaven.",
-                3: "Following the directions given by the dying guard, you are able to easily locate the rebel camp. The poor fool thought you would join with the rebels to help overthrow the demons, but such hopes were childish and unfounded. You are here to kill and destroy. Without hesitation, you rampage through the camp in the foothills of the Watcher Mountains. You set fire to their tents and slay anyone who stands before you. The last battalion of guards hesitates as it faces you, then the humans turn and flee. “Arm the siege weapon!” One of them calls as they crest the hill. You give chase. This should be interesting. Fighting through the first wave of soldiers, you arrive at a clearing. The rest of the guards are standing around a very large mechanical cannon. The guards fire the cannon at you many times, but you endure the volleys and slay the guards as you advance. Eventually, the cannon lies ruined and broken at your feet, and with it, any hope the rebels had of assaulting Gloomhaven. The guards who are still alive scatter, and you return to the demon-ruled Gloomhaven victorious. “So you have crushed the pathetic upstarts?” You stand before one of the Prime Demon’s liaisons. “Good. You have proven yourselves an incredibly effective tool, and my master will compensate you greatly for your service.”"
+                1: "At the behest of the demon lord, you head into the Lingering Swamp to destroy the last vestiges of opposition to demonic rule. You crush the last of the totems and your boots sink back into the muck. You walk over to a severely injured guard. “I’ll tell you,” he gasps. “But only because I know that you are not truly evil. Instead of hunting us down, 49 fight with us. 50 Help us take back the city from those demons. Head east, to the border of the Watcher Mountains. Look to the north of the ash tree grove. Talk with the commander. Help free the city...”. Now you know what to do.",
+                2: "The words of that dying guard could have some truth to it. You help the rebels overthrow the demons and let Gloomhaven run by other overlords.",
+                3: "Following the directions given by the dying guard, you are able to easily locate the rebel camp. The poor fool thought you would join with the rebels to help overthrow the demons, but such hopes were childish and unfounded. You are here to kill and destroy. The last battalion of guards hesitates as it faces you, then the humans turn and flee. “Arm the siege weapon!” One of them calls as they crest the hill. You give chase. This should be interesting. The cannon lies ruined and broken at your feet, and with it, any hope the rebels had of assaulting Gloomhaven. The guards who are still alive scatter, and you return to the demon-ruled Gloomhaven victorious. “So you have crushed the pathetic upstarts?” You stand before one of the Prime Demon’s liaisons. “Good. You have proven yourselves an incredibly effective tool, and my master will compensate you greatly for your service.”"
             },
             "stages": {
                 0: "{1}",
@@ -894,12 +938,12 @@ export default {
             }
         },
         38: {
-            "name": "A New Hope",
+            "name": "Possibilities",
             "sections": {
-                1: "At the behest of the demon lord, you quashed a rebel campsite in the swamp. One of the dying guards divulged the location of the remaining rebel forces. “But only because I know that you are not truly evil. Instead of hunting us down, fight with us. Help us take back the city from those demons. Head east, to the border of the Watcher Mountains. Look to the north of the ash tree grove. Talk with the commander. Help free the city...”{br}Hmm. Working for a Demon hasn't been all it was cracked up to be. It might just be time to join the rebel alliance.",
-                2: "But then again, neither was working with a bunch of loser rebels. Instead, you helped oust the demons and install an entirely different set of overlords into Gloomhaven.",
-                3: "But then again, neither was working with a bunch of loser rebels. You used the guard's directions to locate the rebel base and slaughtered them all.",
-                4: "You follow the dead guard’s directions into the foothills of the Watcher Mountains. Not to kill and destroy, but to help. The rebels seem wary at first, but they eventually open up. \"You could be our secret weapon. If you could take the armory of the Ghost Fortress just as we break through the north wall, we could then converge at the fortress and make our stand there. Once we are properly armed and have you at our side, the demons won’t stand a chance. Most of the citizenry are unhappy under their occupation and will rise up when they see we have the advantage.” Three days later you sneak into the Ghost Fortress, and storm the armory. You secure the last of the armory stock just as the rebel fighters break through into the fortress. Cleaning out the demons from the rest of the building becomes short work after that. With a strong foothold in the town and the populace on your side, the tide quickly turns against the demons. The battle is still long and difficult, as more forces continue to arrive from the elemental plane, but it ultimately only brings the residents of Gloomhaven into stronger unison, fighting against a common enemy. And with you no longer fighting for them, the demon force eventually relents and retreats back to its own plane. The next weeks are difficult, as the citizenry rebuilds the walls and everything else that had been destroyed in the prolonged battle. They also need time to trust you again after your ill-conceived betrayal. But Gloomhaven does bounce back in time. It is full of resilient people and the port is vital for trade. It never feels quite the same afterward, but at some point, it at least still feels like home."
+                1: "At the behest of the demon lord, you head into the Lingering Swamp to destroy the last vestiges of opposition to demonic rule. You crush the last of the totems and your boots sink back into the muck. You walk over to a severely injured guard. “I’ll tell you,” he gasps. “But only because I know that you are not truly evil. Instead of hunting us down, 49 fight with us. 50 Help us take back the city from those demons. Head east, to the border of the Watcher Mountains. Look to the north of the ash tree grove. Talk with the commander. Help free the city...”. The words of that dying guard could have some truth to it. Lets help those rebels!",
+                2: "Those rebel suckers don’t deserve your help. You help letting Gloomhaven get rid of the demons and some other overlords take their place.",
+                3: "Those rebel suckers don’t deserve your help. The directions of that guard proved useful to slay every last one of the rebels.",
+                4: "You follow the dead guard’s directions into the foothills of the Watcher Mountains. Not to kill and destroy, but to help. The rebels seem wary at first, but they eventually open up. “To tell you the truth,” the rebel captain says, “we are in desperate need of your help. We’ve spent all our resources constructing a cannon capable of punching through Gloomhaven’s walls, but once that is accomplished, we don’t have the numbers or arms necessary to engage the demon force and drive them out of our home.” The captain unfurls a map of the city onto a table. “But you could be our secret weapon. Three days later, once the rebels are able to get their cannon into position, you sneak into the Ghost Fortress, preparing to take the armory. You decide a two-pronged assault will be the best way to get your hands on the weapon caches quickly. You hear the distant explosion of the cannon and spring into action. You secure the last of the armory stock just as the rebel fighters break through into the fortress. Cleaning out the demons from the rest of the building becomes short work after that. With a strong foothold in the town and the populace on your side, the tide quickly turns against the demons. The battle is still long and difficult, as more forces continue to arrive from the elemental plane, but it ultimately only brings the residents of Gloomhaven into stronger unison, fighting against a common enemy. And with you no longer fighting for them, the demon force eventually relents and retreats back to its own plane. The next weeks are difficult, as the citizenry rebuilds the walls and everything else that had been destroyed in the prolonged battle. They also need time to trust you again after your ill-conceived betrayal. But Gloomhaven does bounce back in time. It is full of resilient people and the port is vital for trade. It never feels quite the same afterward, but at some point, it at least still feels like home."
             },
             "stages": {
                 0: "{1}",
@@ -909,11 +953,11 @@ export default {
             }
         },
         39: {
-            "name": "Corrupting Influence",
+            "name": "Corruption",
             "sections": {
-                1: "With Hail's help, the artifact has been cleansed of it's corrupting influence. However, Hail mentioned three locations that were drawing power from the corrupted artifact. You have visited at least one of these locations and destroyed the corrupting influence within. If you seek out and destroy the corrupting influence in all three locations, Hail may be to provide more information on the corruption permeating Gloomhaven's surrounding area.",
-                2: "You have destroyed the corrupting influence in the Misty Sea, Dagger Forest, and Copperneck Mountains. It's time to go see Hail and get to the bottom of all this.",
-                3: "Before Hail could explain anything, a massive column of black sand erupts from northeast the crooked bone. Hail resolutely points you toward the whirling mass of sand, handing you a pouch to protect you from its ill effects. Entering the vortex is immensely painful but the pouch fills you with a dull numbness. Eventually, you find yourself standing in a large stone room covered in odd runic symbols. There is an unearthly coldness to it, and the dull pain of the Void persists. “Those brave enough to enter here will be the first torn apart.” An arresting voice echoes through the chamber around you. “The rest I will hunt down like game and devour, but I do think I will enjoy this more.” As your eyes adjust to the low light, you see a shadowy form in the center of the room. With time, you are able to focus on the image of an Aesther with two long, thin blades. “I have waited many years to reap this harvest,” he says with a wicked grin. “At one time, I had convinced myself that I would find more delight in watching you slowly kill yourselves, but with my meddling brethren and the deaths of my wards, I have returned to my original design. “I am not unhappy at the development. Even the patience of an immortal has its limits.” The Aesther flashes its blades in a mesmerizing dance. “Come then, brave lambs. Who will be the first to embrace the Gloom?” The battle rages for what feels like eons, but finally, two swords fall to the stone floor with a sharp ring. The Aesther stands limp, a look of shock on his wounded face. “How dare you,” he mutters. The voice that was once smooth and hypnotic is now gravely and dark. “I have waited thousands of years, and you presume to rob me of the fruits of my labors?” The Aesther’s mouth drops slack in death, but still the figure stands, as if held up by invisible strings. “You can destroy my vessel and banish me from this plane, but it will never be enough. I am eternal. I will return. I will feast on this world once again!” At this, the body of the Aesther crumples to the ground and fades out of existence. The dull pain subsides, and you ascend the staircase to a bright, clear sky. The tremors and vortex of black sand are gone and all those gathered around the Void look very relieved when you emerge from the confrontation. You let the people know that whatever calamity had descended upon them has now been averted. They cheer and celebrate your strength."
+                1: "The connection between the corrupted artifact and the Plane of Night is severed. Hail mentions three locations that drew energy from the corrupted artifact. Destroying the corrupted power in all three locations will make Hail tell more about the corruption in Gloomhaven and its surroundings.",
+                2: "The corruption at the Misty Sea, the Dagger Forest and Copperneck Mountains is destroyed by you. Let’s go see Hail to retrieve more information.",
+                3: "Hail is cut short by a violent shifting in the earth. The Aesther ushers you outside, where you see a massive black column of smoke to the northeast. “There is no time!” She hands you a small pouch filled with what feels like sand and small rocks. “This should protect you from the worst of the Void’s influence. You must find him there and stop him from returning this world to ash.” As you approach the black column, it becomes clear that it is not smoke but a whirlwind of black sand extending far into the sky. The tremors continue, but you race towards the vortex as quickly as you can. The pouch fills you with a dull numbness. “Those brave enough to enter here will be the first torn apart.” An arresting voice echoes through the chamber around you. “The rest I will hunt down like game and devour, but I do think I will enjoy this more.” As your eyes adjust to the low light, you see a shadowy form in the center of the room. With time, you are able to focus on the image of an Aesther with two long, thin blades. “I have waited many years to reap this harvest,” he says with a wicked grin. “At one time, I had convinced myself that I would find more delight in watching you slowly kill yourselves, but with my meddling brethren and the deaths of my wards, I have returned to my original design. “I am not unhappy at the development. Even the patience of an immortal has its limits.” The Aesther flashes its blades in a mesmerizing dance. “Come then, brave lambs. Who will be the first to embrace the Gloom?” Two swords fall to the stone floor with a sharp ring. The Aesther stands limp, a look of shock on his wounded face. “How dare you,” he mutters. The voice that was once smooth and hypnotic is now gravely and dark. “I have waited thousands of years, and you presume to rob me of the fruits of my labors?” The Aesther’s mouth drops slack in death, but still the figure stands, as if held up by invisible strings. “You can destroy my vessel and banish me from this plane, but it will never be enough. I am eternal. I will return. I will feast on this world once again!” At this, the body of the Aesther crumples to the ground and fades out of existence. The dull pain subsides, and you ascend the staircase to a bright, clear sky. The tremors and vortex of black sand are gone and all those gathered around the Void look very relieved when you emerge from the confrontation. You let the people know that whatever calamity had descended upon them has now been averted. They cheer and celebrate your strength."
             },
             "stages": {
                 0: "{1}",
@@ -922,13 +966,286 @@ export default {
             }
         },
     },
-    prompt: {
-        dragonChoice: {
+    'quest-fc': {
+        96: {
+            "sections": {
+                1: "Your party survived the Calamity, but there are still many mysteries to be unfold. The last words spoken by the Gloom resound in you head, and Hail refuses to talk about what happened. You just know that the name of the creature was once Bastian, but someone or something was using him as a vessel; nothing else. \n" + "The ruins of the battlefield are now barred by a group of militant humans that's apparently studying the area, funded by the Deslin estate. You just know something is wrong with them. As all of this wasn't enough, your wounds appear to heal mysteriously slower than normal. Everything feels odd and wrong, both in your body and in your spirit, and you feel both scarred by the enemies weapons and by the nightmares haunting you. Maybe drinking and gambling will finally heal you? You come back to the Sleeping Lion, where you are treated like heroes. Suddendly, a tears in the fabric of reality opens and Demons enters the tavern, immediately followed by a female Aesther, whom asks for your help. Your nightmares are certainly not over yet.",
+                2: "You destroy all the altars and run back to your reality plane, while the Aesther close the portals. She tells you she was imprisoned with the demons and managed to escape thanks to the defeat of the Gloom. She appears to know a lot about it, and mentions that the Void was once the site of a great tower that Bastian built to house researchers and studies. When the Gloom started his evil doings, the Tower and all its inhabitants were scattered all across the infinite beyond: that was the beginning of the Aesther race, mutated by the long exodus they were forced. She introduces herself as Cassandra, a travellers through realities. She tried to stop the Gloom centuries ago, but she sadly failed and has been a prisoner even since, doomed to watch the Gloom plans unfold helplessly. Cassandra asks for our help: to stop the Gloom once and for all she first needs to go to the Void and find the vast library of Bastian texts, once part of the Tower. Vigil cultists will try to stop her, but that's your problem to solve, after all."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        97: {
+            "sections": {
+                1: "Cassandra shows you a sketch of the Vault of Knowledge, where the four scrolls that she needs are hidden. She raises her hands and opens a portal to the central hall of the Vault, alerting you about the traps that surely you will find there.",
+                2: "Once all the scrolls are rescued and in your hand, Cassandra takes all of you back to her sanctum and starts studying what you have got. She appears to fall in a deep trance while examining the scripts, sometimes mumbling about some grave dangers that deeply unsettles you. When she comes back to senses she seems upset. Each of the scrolls take to a different trail and all of those needs to be explored before jumping to conclusions. She also handles you a mysterious piece of paper with something wrong on it on a language you have never seen."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        98: {
+            "sections": {
+                1: "This is where the trail from the Orchid scholars scrolls takes you. Apparently there is going to be some sort of historical conference at the University about the Upheaval, the Demon War with the Valraths and the founding of Gloomhaven itself, and a group of Orchids researchers are about to arrive by boat in Gloomhaven. Hail needs to talk to them. While you are on your way to the New Docks to greet the Orchids that are coming to lecture, a group of ruffians, guiding tamed drakes, attacks the Orchid ship. They even have bombards! There is no time to think, it's time for some action.",
+                2: "You saved the Record of Accounts; browsing through the book a merchant hub in particular captures your attention: it is a commercial port across the Misty Sea, by the name of Velcyll Harbor, source of many valuable cargo. Maybe it would be interesting to get some more informations there. The Record of Journey is sadly gone forever.",
+                3: "You saved the Record of Agreements. It details the Orchid involvment in the foundation of Gloomhaven and, in particular, it explains the caravans routes to the city. It also explains some political intricacies among the different races in Gloomhaven. What's most interesting, howerer, is a small footnote talking about an old caravan carrying something of great importance that never arrived to destination. What was in there? The Record of Accounts is sadly gone forever.",
+                4: "You saved the Record of Accounts; browsing through the book a merchant hub in particular captures your attention: it is a commercial port across the Misty Sea, by the name of Velcyll Harbor, source of many valuable cargo. Maybe it would be interesting to get some more informations there. You also saved the Record of Agreements. It details the Orchid involvment in the foundation of Gloomhaven and, in particular, it explains the caravans routes to the city. It also explains some political intricacies among the different races in Gloomhaven. What's most interesting, howerer, is a small footnote talking about an old caravan carrying something of great importance that never arrived to destination. What was in there?"
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}",
+                3: "{1}{4}"
+            }
+        },
+        99: {
+            "sections": {
+                1: "Cassandra is confident that studying the Void will lead to important discoveries. She heads east, to the Traveler's District, until you arrive to the Sekhem Gardens. Everything seems quiet there, but Hail, who can see through illusions and magics, after circling around the area, muttering, points to an apparently anonymous point on the street. Mere instants later hooded figures appeare from an arcane fog, chanting spells in unison while nightmarish creatures emerge from the ground, attacking the civilians.",
+                2: "Many, too many died today because of this. This was definitely more than an isolated attack. Cassandra didn't expect this many creatures and cultists ready for an attack. It is now clear that all of this is starting to be too much even for Cassandra, and she decides to ask for the help of Hail.",
+                3: "You saved as many as you could, but the corruption extended well over your battlefield and, while you fought, many Valrath fell. Some of the survivors recognized the \"Cult of the Void\" insigna on the attackers robe and you manage to find a lead to their location. It seems clear to you that all of this is starting to be too much even for Cassandra, and she decides to ask for the help of Hail."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        100: {
+            "sections": {
+                1: "The atlas you found in the Vault indicates the location of one of Bastian's hidden workshop, right on the Copperneck Mountains. Cassandra teleports you there. The place seems to be like a gigantic clockwork device, with springs, pistons and gears everywhere. The Aesther tries to use her old research credentials to grant you the access to the inner chambers, but a message on a screen denies you that hope. The defense system is activated, be ready to fight.",
+                2: "You defeated Bastian's intricate labyrinth and found the tomb. You ransack everything you can and escape back to safety through a rift. After days of studies, you manage to find a way to fit the mechanical parts you found together, only to discover it is only a part of the rift device created by Bastian. Two other parts are missing, but their locations is written on the books. One is somewhere in the Misty Sea, near the twin lighthouses. The other is in another underground facility right east the coast of Gloomhaven.",
+                3: "Even though you defeat the golems, Cassandra seems concerned. The control panel displays what appears to be a countdown: she shouts you to grab whatever you can before she can open a rifts and rushes all of you back to the sanctum. You survived to the impending destruction of the vault, but what you got, sadly, takes you no closer than before to any answer."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        101: {
+            "sections": {
+                1: "A worried Inox approaches you, talking about unsettling news regarding some Keeper of the Oak members working south of Gloomhaven. The area where they were camping is near a tainted Crypt Cassandra seems to remembers about... When you arrive there, it is raining in the swamps. While you slowly progress to the exact location you are headed, you hear the shrills of several drakes, that appear to be inside the Crypt you are going into.",
+                2: "You manage to destroy the source of unnatural darkness, which Cassandra recognizes it as a counduit for the power of the corruption. Meanwhile, around you, the fog lifts and everything seems back to normal. When you come back to the Sleeping Lion, the now-relieved Inox thanks you with a bag of Gold and two Tomes from the Sanctuary. Cassandra immediately starts to read them, wondering how they will lead you to new adventures, this time..."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        102: {
+            "sections": {
+                1: "You head to Velcyll Harbor, where you are sure you'll find some informations about your quest. Once arrived, it is clear that the markets are so active and in thriving business that even gathering some information from the busy merchants and customers will be incredibly hard.",
+                2: "As satisfying as it could be to help so many people, almost none of your answers about Bastian or the Gloom gets answered. Many people pointed you to Ashtooth, member of the Orchid Hight Council, also known as the \"Keeper of Secrets\". There's only one problem: apparently the only way to meet him is to win the monthly challenges of the Coliseum of Refinement tournament."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        103: {
+            "sections": {
+                1: "Examining the notes you found about the Orchids caravans appears to be a useless exercise at first. Cassandra is convinced that the only way to retrace those caravans and discover their contents would be to be there at the right time, and while you try to understand what she means you almost can't believe your senses (probably due to the immense pain during the travel) when mere moments later you literally are carried to the past, in the exact location the caravans were about to pass. Once you all catch your breath after that painful experience, you reach the Orchids and travels with them, just to be attacked later by the cultists, as written.",
+                2: "After a long fight and a dusty run, the caravan emerges from the rocky hollows, distancing from the attackers. Many Orchids died, but the survivors are grateful to you enough to grant you the access to their inner circle, where you was expecting to find the mysterious disappeared treasure; instead, you meet a small Orchid girl called Terra. She appears to be able to perceive the future and notices you are not from this time. When questioned, sadly, she refuses to cooperate, as she thinks her future is intertwined with the event she foreseen regarding the Gloom and don't want to divert or negate the course of what it is going to be. If anything, at least the trip back to the the future is way less painful."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        104: {
+            "sections": {
+                1: "You are not entirely sure of what to expect when you come back to the Crooked Bone. As soon as Cassandra enters the room, Hail materializes, puzzled by her presence. They seem to have a lot of troubled history together, as Hail mentions that Cassandra denied her help in the past in several instances, during the battle agains the Gloom. Hail considers Cassandra indirectly responsable for what happened to the Tower, and she seems to not deny it. But when Cassandra explains the possibility of a new rift opening in Gloomhaven, Hail is convinced to help you again and to put all issues for the greater good.",
+                2: "You wander together with Hail and Cassandra through several portals and dimension, and at the end of them you see a bleak landscape, full of insect swarms. The portal cracks before you can enter in it, and Hail is clearly too exausted to continue. Cassandra opens a portal back to the Crooked Bone and excorts all of you back in a safe place. Even if Hail is still resentful toward Cassandra, she recognize the mission you are in is too important to be polluted by personal baggages. You all have to be careful, and you have to be fast..."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        105: {
+            "sections": {
+                1: "Your success at the Sekhem Gardens makes people trust you, and they describe in great details the circumstances of the attacks in other parts of the neighbors. Many witness talks about a brave Savvas that saved many of them; after finding him, he tells you that the cultists were guided by a mystical translucent being, and he points you to the Sanctuary of the Great Oak, where the Head Keeper, called Athan Tredan, should give you more details. When you arrived, the image of an hulking Aesther, with flaming bellows, giving order to the enemies briefly appears in front of you before vanishing. After a long analysis of the dimensional energies flow, Cassandra finds the place that Athan was talking about, deep in the Copperneck Mountains.",
+                2: "After the fight is over, you start rummaging around the rooms, finding an alchemical formula to a vaccine that should prevents the effect you noticed in Sekhem Gardens, where many people were converted to demons by the Corruption. If anything, now you can slow down their conquering of civilian's bodies. You decide to take this informations to the University."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        106: {
+            "sections": {
+                1: "You take a boat and head to the lighthouses out the Merchant's Bay. The sailors talks about tales regarding spirits and demons lurking to the towers. When you arrive to the entrance hall you feel overcome by the power emanating from six contraptions, probably Bastian's work, that suppress elemental energies. You have no time to examine those though, as you get ambushed by figures from the shadows.",
+                2: "After you purge the towers from the evil presences, something still feels odd. You don't find anything related to the rift and it seems that this was just a dead end. At least you practiced with elements..!",
+                3: "First those weird vision, then those words from that entity that possessed Cassandra, but finally you manage to find another piece of Bastian's rift device. She recollects it was his voice that you heard when she was possessed. This entire place is imbued with his aura, slowly consumed by his desire of a greater knowledge. She shakes off her ill feelings and you all go back through a rift."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        107: {
+            "sections": {
+                1: "Cassandra gathered some informations about another Bastian's facility, now plagued by vermlings presence. She knows it should be underground but can't recognize how big it is. She focus and creates a portal that head you there. When you arrive, she notices the floor is imbued with magical aura and suggest to find Bastian's device as quickly as possible.",
+                2: "You slain more vermlings than you can count, which after all were doing nothing more than defend their home. After a long and exhausting research, you can't seem to find anything. Even worse, Cassandra cannot open a portal back home due to the restrictive aura of the place. You have to get out of there through the garbage tunnels. Clearly not your favourite ending ever.",
+                3: "You found a well-hidden chest containing a complex apparatus, which Cassandra immediately recognizes as another piece of Bastian’s rift device. You all go back through a rift."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        108: {
+            "sections": {
+                1: "Cassandra starts reading from one of the book that Inox gave you, when all around the room fades and new images of a different location start to appear, like in a dream. You now are in the Grasslands of Stormbrew during the fight between Valraths and Humans, back in the remote past. At least it didn't hurt, this time. Cassandra tells you that you can't change the course of events; what you can do is to gather as many informations as possible from the opposing commanders of the two factions, Diamara and Xangroth.",
+                2: "The human are destined to fail this battle, and you simply partecipate in the natural course of events. You slain the human soldiers and take Diamara's armor and journal from his dead body, then come back to your place and time. It seems the War was orchestrated by Aesthers all along... But why?",
+                3: "Human are clearly not the favorite by the circumstances, but you decide to side with them. Maybe if you slain their commander, Xangroth, the flow of time will change? After the fight you earn Xangroth axes and his journal, then you immediately come back to your place and time. It seems the War was orchestrated by Aesthers all along... But why?",
+                4: "You don't belong to these struggles, you just need to gather as many informations you can, searching from both factions; nobody will notice you in the battlefield...If you kill them first. After the war is over, you search for the bodies of Xangroth and Diamara and find both their journals. You also reckon that their weapons might be useful, or at least valuable. You go back to your place and time. It seems the War was orchestrated by Aesthers all along... But why?"
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}",
+                3: "{1}{4}"
+            }
+        },
+        109: {
+            "sections": {
+                1: "Cassandra start reading from one of the book that Inox gave you. She sighs as she notices the tome is about the Demon War, in which her husband, Nareet, fought. They were married before the Upheaval and waited for him during her imprisonment, but he never arrived. She is resolute in finding him, or at least discover what happened to him. When she starts reading, your surrounding disappear in a mystical fog and transfers you in a land covered in fog. You are now in the battlefield, in search of Cassandra's husband.",
+                2: "You meet the captain that you helped back in the fight over the Grasslands of Stormbrew. He's older, showing the marks of time, and he's surprised to notice that you are the same as he remembers. It has been mere days for you, after all. He tells you that Nareen was there, but already left with other somewhere. This battlefield clearly shows sign of more corrupted Aesthers. Cassandra recognize where to find them.",
+                3: "This battlefield clearly shows sign of more corrupted Aesthers. Cassandra recognize where to find them."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        110: {
+            "sections": {
+                1: "It is now time for you to meet this Ashtooth they told you about, also appointed as the Keeper of Secrets, one of the members of the Orchid High Coucil. Apparently the only way to reach him is to emerge victorious from the fighting pits of the Coliseum of Refinement. The arena is different from what you expected. Everything seems strangely clean and the crowd is almost polite, almost as these fights were civilized squabble. Everybody keeps talking about a “Stoneblessed crew” that seems to be way stronger than anybody else around.",
+                2: "When all your adversaries bite the dust, the crowd explodes in thunderous cheers. It is finally over. You are summoned to the highest box in the colosseum, where you get a tiara and your long awaited meeting with the High Council. Surprisingly, Ashtooth reveals that was already waiting for Cassandra and that he'll discuss with her about the Upheaval in the Library of Inquiry. You admit you are too tired to escort her during the conversation and retire to rest on the Sylmir Inn. The Next Morning you are greeted by a resoluted Cassandra, who declares to now understand what's happening and how to stop the Corruption. She opens a rift and you return to Gloomhaven."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        111: {
+            "sections": {
+                1: "While you walk through the New Market, Cassandra notices that something is odd around you. Everything is too quiet, and she suspect a trap is about to spring on you. After a bit, strange creatures emerge from the shadow, guided by an hulking Aesther with flaming knives. Cassandra reveals he's an Husk, a corrupted shell of what was once an Aesther. Perhaps escaping is a viable option, this time.",
+                2: "You storm into the entrance of the New Market, the Husk still following you. The guards don their armor and prepare for the battle. The Husk, however, starts laughing, saying that the time for this fight has merely been delayed and that sooner or later, he will kill you. He then disappears in a black smoke.",
+                3: "The Husk finally falls, this time. With his last whispers he refer to some big machination of the corruption that, apparently, you shouldn't be able to stop. With a sigh of relief, this battle is now over, even is the war is very far from being so. Cassandra draws a black rune in the air and a vision lingers before her eyes. She can see other plans are in motion, but you are going to stop them."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        112: {
+            "sections": {
+                1: "Cassandra decides to go back to the ruin of her old lab. She warns you that she'll not be able to deactivate the security measures that she once installed there, so you get ready to fight.",
+                2: "When all four beams converge in the middle of the lab, all machineries activate and the light converge in a power source that you immediately grab before running back home through a rift.",
+                3: "Whatever you were looking for, you didn't find it in time. The power has completely drained and there's no way to turn it back on. The only thing to do left is going back home through a rift."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                1: "{1}{3}"
+            }
+        },
+        113: {
+            "sections": {
+                1: "You're headed to the place where Nareet is abducted. She feels the presence of her husband's aura, but it's faint and damaged. Ripping the fabric of space one rift after another, you reach a rocky room with no ceiling; Nareet is there, hovering unconscious in mid-air, chained to four crystals.",
+                2: "You free the Aesther from the magic seals, and Cassandra catches him as he falls to the floor. He is barely alive and whispers something to Cassandra. They talk about what happened and what could have, but you recognize it is a private moment and not something you should interrupt. She opens a rift and you leave her alone. When she comes back, hours later, you don't talk about it anymore. It is time to move on."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        114: {
+            "sections": {
+                1: "Hail now seems to have enough information about the Corruption and the Upheaval to come with a plan, but before anything else, she tells you that she senses agents of corruptions approaching the Crooked Bone to murder Hail. You immediately rush there to save your friend. When you reach the Crooked Bone, Cassandra is unable to teleport you inside. You run through the door and reach for Hail, explaining the situation, but she percieve is too late, the creatures are already there. She tells you to get to her storage closet and you make way.",
+                2: "Hail open the cabinet and activate some strange contraption that looks like a telescope; as a result, a shockwave blasts through the entire building. The creature are now defeated, and it also seems that this deactivated the anti-rift protection Hail had in her house, because now Cassandra opens a rift and you head back to a safe place. It seems that Cassandra knew about this impending attack and used Hail as some sort of bait to destroy the agents of Corruption. The final fight is now right ahead of you."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        115: {
+            "sections": {
+                1: "You all agree that this is the time to attack, before the corruption heals from the damage you caused it and grows further in power. Cassandra begins her ritual and finds the hideout where whoever is orchestrating this hides. She shields you from the corruption via some magic protections, but recognize the power you are about to face is bigger than hersThe primary objective is to subdue the corruption and avert its escape, separating the battle zone from the interdimentional void. She teleports you all to a blackened landscape, where weird apparitions pulsate in a blue light. Everything is evershifting, even the floor beneath you, looking like a mess of floating rocks.You feel the presence of a dark energy, and a corruption mass grows in the middle of your group. It claws at your mind, try to bend you will, but you manage to fight back. Just when you are about to attack it, the mass screams and invoke its army, made of corrupted Aesthers and Valrath. It then proceeds to splay its tendrils in every direction, pulling back crystal shards that it feeds onto. It seems to gather energy from the infinite realms, and as every second passes it grows stronger and stronger. It is time to act!",
+                2: "You strike with everything you have, and finally the tendrils of the globe of corruption dissolves away. The mass is defeated, its core laying on the ground. Cassandra conjures a net of glowing cables, chaining it: the corruption still fights back, but its power is not enough and, after a bit, it stops.\Just when you are about to rest, everything around you starts cracking and crumbling; you jump back to the last portal still open and hurry back in Gloomhaven. When you open again your eyes, you find yourself back at the Sleeping Lion. Like nothing happens, you order a round of drinks and finally sit. Your mission is complete. \Cassandra thanks you all, but it is time to part ways. Someone else is waiting for her. “Enjoy your drink”, she says as she steps through a rift. You definitely deserve it."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+    },
+    prompts: {
+        dragons: {
             title: "Friend or Foe",
-            text: "You retrieved the Drake's treasure. Do you return it to the Drake or do you follow the Guard Captain's orders and attempt to kill the Drake?",
-            dragonChoice1: "Return the treasure to the Drake. Gain the Global Achivement \"The Drake Aided\". Add City Event 75 and Road Event 66 to the deck",
-            dragonChoice2: "Do not aid the Drake."
-
+            text: "You retrieved the Drake’s treasure. Do you return it to the Drake or do you follow the Guard Captain’s orders and attempt to kill the Drake?",
+            1: "Return the treasure to the Drake. Gain the Global Achievement “The Drake Aided”. Add City Event 75 and Road Event 66 to the deck",
+            2: "Do not aid the Drake."
+        },
+        burningMountain: {
+            title: "Escape The Burning Mountain",
+            text: "You looted the treasure. Do you dare to escape the rumbling volcano and keep the retrieved items?",
+            1: "Conclusion A: You decide to end your turn at G and remove one of the items from the game.",
+            2: "Conclusion B: After looting the chest, all characters returned to the entrance before becoming exhausted."
+        },
+        merchantsBay: {
+            title: "The Merchant’s Bay",
+            text: "You doused the flames and disposed the interlopers. How many records were you able to save?",
+            1: "You recovered both scrolls.",
+            2: "You failed to recover the Record of the Journey.",
+            3: "You failed to recover the Record of Accounts."
+        },
+        shiftingGears: {
+            title: "Bastian’s workshop",
+            text: "Did you manage to kill all enemies?",
+            1: "All enemies are killed.",
+            2: "???"
+        },
+        searchPiecesOfAnArtifact: {
+            title: "Search pieces of the rift device",
+            text: "Did you manage to kill all enemies?",
+            1: "All enemies are killed.",
+            2: "Found more pieces of the rift device."
+        },
+        directingBeams: {
+            title: "Directing Beams",
+            text: "Did you direct the beams to the fountain?",
+            1: "All four beams are directed at the fountain",
+            2: "Survived for fourteen rounds"
+        },
+        aftershocks: {
+            title: "Protect the civilians",
+            text: "How many Valraths were you able to bring to safety?",
+            1: "Exactly four civilians are alive.",
+            2: "Five or more civilians are alive."
+        },
+        bloodyWar: {
+            title: "Bloody Demon War",
+            text: "Which side dit you choose?",
+            1: "A: Assist the Valraths",
+            2: "B: Assist the Humans",
+            3: "C: Fight both sides"
+        },
+        escapeFromTheHusk: {
+            title: "Escape from The Husk",
+            text: "Did all characters escaped through an exit?",
+            1: "All characters escaped",
+            2: "???"
         }
     }
 }

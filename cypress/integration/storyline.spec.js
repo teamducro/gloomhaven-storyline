@@ -5,7 +5,7 @@ describe('Storyline', () => {
     it('It loads the storyline', () => {
         cy.visit('/tracker');
 
-        cy.get('.chapter1').should(($chapter) => {
+        cy.get('#chapter1').should(($chapter) => {
             expect($chapter).css('display', 'inline');
         });
     });
@@ -62,13 +62,13 @@ describe('Storyline', () => {
             expect(alerted.includes('deprecated')).to.be.true;
         });
 
-        cy.get('.chapter2').should(($chapter) => {
+        cy.get('#chapter2').should(($chapter) => {
             expect($chapter).css('display', 'none');
         });
 
         utilities.completeScenario(3);
 
-        cy.get('.chapter2').should(($chapter) => {
+        cy.get('#chapter2').should(($chapter) => {
             expect($chapter).css('display', 'inline');
         });
     });
@@ -132,6 +132,32 @@ describe('Storyline', () => {
         cy.visit('/tracker/#/story/1');
 
         cy.get('#scenario-title').contains('#1 Black Barrow');
+    });
+
+    it('It shows summaries', () => {
+        cy.visit('/tracker');
+
+        utilities.openScenario(1);
+
+        cy.get('#scenario-content').contains('Preceding events');
+        cy.get('#scenario-content label').contains('Complete').click();
+        cy.get('#scenario-content').contains('Summary').click();
+        cy.get('#scenario-content').contains('Jekserah');
+
+        utilities.closeModel();
+    });
+
+    it('It opens FC', () => {
+        cy.visit('/tracker');
+
+        cy.get('button').contains('menu').click();
+        cy.get('.mdc-list-item__text').contains('Storyline').next().click();
+        cy.get('.fc').click();
+
+        utilities.isNodeIncomplete(96);
+        utilities.completeScenario(96);
+        utilities.isNodeComplete(96);
+        utilities.isNodeIncomplete(97);
     });
 
 });

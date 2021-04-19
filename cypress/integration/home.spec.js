@@ -7,7 +7,7 @@ describe('Home', () => {
 
         cy.get('#app').within(() => {
             cy.contains('Gloomhaven Storyline Tracker!');
-            cy.contains('Pricing');
+            cy.contains('Contribute');
         });
     });
 
@@ -21,7 +21,7 @@ describe('Home', () => {
     it('It redirects to story', () => {
         cy.visit('/#/story');
         utilities.isTracker();
-        cy.get('.chapter1').should(($chapter) => {
+        cy.get('#chapter1').should(($chapter) => {
             expect($chapter).css('display', 'inline');
         });
     });

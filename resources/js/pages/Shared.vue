@@ -20,8 +20,9 @@ export default {
 
             if (this.shareState.loadNewLink(version, id, compressed)) {
                 this.$bus.$emit('campaign-selected', id);
+                this.$bus.$emit('toast', 'Imported campaign progress successful.');
             } else {
-                alert('This shared link is incompatible with this version of the Gloomhaven Storyline Tracker. Please use the most recent version and/or ask for a new link.')
+                this.$bus.$emit('toast', 'This shared link is incompatible with this version of the Gloomhaven Storyline Tracker. Please use the most recent version and request a new link.', false);
             }
 
             await this.$nextTick();

@@ -1,11 +1,11 @@
-import quests from '../quests.json';
 import Quest from "../models/Quest";
 import QuestValidator from "../services/QuestValidator";
+import GameData from "../services/GameData";
 
 export default class QuestRepository {
 
-    fetch() {
-        return collect(quests.quests).map((quest) => {
+    fetch(game) {
+        return collect((new GameData).quests(game)).map((quest) => {
             return new Quest(quest);
         });
     }
@@ -16,9 +16,5 @@ export default class QuestRepository {
 
     findMany(list) {
         return app.quests.whereIn(list);
-    }
-
-    get questValidator() {
-        return this.questValidator2 || (this.questValidator2 = new QuestValidator);
     }
 }

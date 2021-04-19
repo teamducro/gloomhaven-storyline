@@ -1,11 +1,11 @@
 <template>
     <div id="map-container" class="h-screen w-screen overflow-hidden">
-        <webp src="/img/map-background-lowres.jpg" :cover="true"
-              highres="/img/map-background-highres.jpg"
+        <webp src="/img/maps/background-lowres.jpg" :cover="true"
+              highres="/img/maps/background-highres.jpg"
               alt="Gloomhaven map background" class="fixed"/>
         <div id="map">
-            <webp src="/img/map-lowres.jpg"
-                  highres="/img/map-highres.jpg"
+            <webp v-if="mapImages" :src="mapImages.lowres"
+                  :highres="mapImages.highres"
                   alt="Gloomhaven map"
                   class="map"/>
             <ul v-if="achievements">
@@ -26,7 +26,7 @@
             </ul>
             <template v-if="scenarios">
                 <webp v-for="scenario in scenarios.items"
-                      v-if="scenario.isVisible()"
+                      v-if="scenario.isVisible() && (!scenario.root || scenario.id === 1 || (scenario.root && scenario.isComplete()))"
                       :src="scenario.image()"
                       :key="scenario.id"
                       :id="'s' + scenario.id"
@@ -36,6 +36,7 @@
                       :style="{
                           'left': scenario.coordinates.x + '%',
                           'top': scenario.coordinates.y + '%',
+                          'transform': 'scale('+scenarioScale+')'
                       }"/>
             </template>
         </div>
@@ -46,18 +47,24 @@
 import panzoom from "panzoom";
 import Hammer from 'hammerjs';
 import tippy from "tippy.js";
+import GameData from "../services/GameData";
 
 export default {
     data() {
         return {
             map: null,
             $map: null,
+            mapImages: null,
             mapTouch: null,
             scenarios: null,
-            achievements: null
+            achievements: null,
+            scenarioScale: 1,
+            gameData: new GameData
         }
     },
     mounted() {
+        this.mapImages = this.gameData.map(app.game);
+
         this.$map = $('#map');
         this.map = panzoom(this.$map[0], {
             minZoom: this.scale(),
@@ -72,7 +79,7 @@ export default {
 
         this.$bus.$on('scenarios-updated', this.setScenarios);
         this.$bus.$on('windows-resized', this.setScenarios);
-        $('#map').on('click', '.scenario', this.scenarioClicked);
+        this.$map.on('click', '.scenario', this.scenarioClicked);
         this.mapTouch = new Hammer(this.$map[0]);
         this.mapTouch.on('tap', (e) => {
             if (e.target.id.startsWith('s')) {
@@ -91,25 +98,28 @@ export default {
         }
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
-        $('#map').off('click', '.scenario', this.scenarioClicked);
+        this.$map.off('click', '.scenario', this.scenarioClicked);
         this.mapTouch.destroy();
     },
     methods: {
         setScenarios() {
+            this.mapImages = this.gameData.map(app.game);
             this.map.setMinZoom(this.scale());
 
             this.scenarios = app.scenarios;
 
             // Show tooltip on hover
-            this.scenarios.each((scenario) => {
-                let $s = $('#s' + scenario.id);
-                if ($s.length && app.hasMouse && scenario.isVisible() && !$s.hasClass('tippy')) {
-                    tippy($s[0], {
-                        content: scenario.title
-                    });
-                    $s.addClass('tippy');
-                }
-            });
+            if (this.scenarios) {
+                this.scenarios.each((scenario) => {
+                    let $s = $('#s' + scenario.id);
+                    if ($s.length && app.hasMouse && scenario.isVisible() && !$s.hasClass('tippy')) {
+                        tippy($s[0], {
+                            content: scenario.title
+                        });
+                        $s.addClass('tippy');
+                    }
+                });
+            }
         },
         setAchievements() {
             this.achievements = app.achievements;
@@ -145,8 +155,10 @@ export default {
             return $(window).width() > $(window).height();
         },
         scale() {
+            this.scenarioScale = this.gameData.scenarioStickerScale(app.game);
+
             return this.isLandscape()
-                ? $(window).height() / 2296
+                ? $(window).height() / 2155
                 : $(window).width() / this.$map.width();
         }
     }
@@ -155,8 +167,8 @@ export default {
 
 <style lang="scss">
 #map {
-    width: 2484px;
-    height: 2160px;
+    width: 2606px;
+    height: 2155px;
     position: relative;
 
     .map {
@@ -167,8 +179,6 @@ export default {
     }
 
     .scenario {
-        transform: scale(0.79);
-
         &:hover {
             cursor: pointer;
         }

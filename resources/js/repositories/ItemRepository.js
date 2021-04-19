@@ -1,10 +1,10 @@
-import items from '../items.json';
 import Item from "../models/Item";
+import GameData from "../services/GameData";
 
 export default class ItemRepository {
 
-    fetch() {
-        return collect(items).map((item) => {
+    fetch(game) {
+        return collect((new GameData).items(game)).map((item) => {
             item = new Item(item);
             return item;
         });

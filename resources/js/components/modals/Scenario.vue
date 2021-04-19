@@ -84,15 +84,15 @@
                              v-if="(scenario.isComplete() || treasuresVisible) && scenario.treasures.isNotEmpty()">
                             <h2 class="text-white">{{ $t('Treasures') }}</h2>
                             <div v-if="scenario.treasures.isNotEmpty()"
-                                 v-for="(treasure, id) in scenario.treasures.items" :key="id"
+                                 v-for="(treasure, id) in scenario.treasures.items" :key="'treasure-'+id"
                                  class="flex items-center -ml-2">
                                 <checkbox-with-label
-                                    :id="id"
-                                    :label="'#' + id"
+                                    :id="'treasure-'+id"
+                                    :label="isNaN(id) ? id.toUpperCase() : '#' + id"
                                     :checked="scenario.isTreasureUnlocked(id)"
                                     @change="treasureChanged"></checkbox-with-label>
                                 <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
-                                    <add-item-links :text="treasure"/>
+                                    <add-links-and-icons :text="treasure"/>
                                 </span>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                                 <button class="mdc-button normal-case -ml-2"
                                         @click="toggleQuest(index)">
                                     <span class="mdc-button__label font-title text-white">
-                                        <template v-if="questExpand[index]">
+                                        <template v-if="questExpand[index] && !$t(quest.name).startsWith('quest')">
                                             {{ $t(quest.name) }}
                                         </template>
                                         <template v-else>
@@ -148,10 +148,9 @@
                                     <div v-if="questExpand[index]">
                                         <i18n :path="quest.description" tag="div">
                                             <template v-for="n in [1,2,3,4,5,6,7,8,9]" v-slot:[n]>
-                                                <p class="mb-4">{{ $t('quest.' + quest.id + '.sections.' + n) }}</p>
-                                            </template>
-                                            <template v-slot:br>
-                                                <br><br>
+                                                <p class="mb-4">
+                                                    {{ $t(quest.translationKey() + '.sections.' + n) }}
+                                                </p>
                                             </template>
                                         </i18n>
                                     </div>
@@ -219,7 +218,7 @@
                 </div>
                 <footer class="mdc-dialog__actions flex justify-between px-5">
                     <div class="space-x-2">
-                        <scenario-number :scenario="scenario" v-for="scenario in prevScenarios" :key="scenario.id"/>
+                        <scenario-number :scenario="prev" v-for="prev in prevScenarios" :key="prev.id"/>
                     </div>
                     <div class="mx-auto w-20"
                          :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
@@ -228,7 +227,7 @@
                               :alt="scenario.name"/>
                     </div>
                     <div class="space-x-2">
-                        <scenario-number :scenario="scenario" v-for="scenario in nextScenarios" :key="scenario.id"/>
+                        <scenario-number :scenario="next" v-for="next in nextScenarios" :key="next.id"/>
                     </div>
                 </footer>
             </template>
@@ -236,11 +235,15 @@
         <pages v-if="scenario" ref="pages"
                :pages="scenario.pages"
         ></pages>
+
+        <!-- a choice is displayed after the scenario is completed, played may chose a unlocked scenario -->
         <choose v-if="scenario && scenario.choices" ref="choose"
                 :scenario-ids="scenario.choices"
                 @scenario-chosen="scenarioChosen"
                 @closing="chooseModalClosing"
         ></choose>
+
+        <!-- a decision-prompt is displayed before or after the scenario is played, this may influence gained achievements and rewards -->
         <decision-prompt v-if="scenario" ref="decision-prompt"
                          :config="prompt"
                          @closing="decisionPromptClosing">
@@ -258,13 +261,12 @@ import PreloadImage from "../../services/PreloadImage";
 import StoryRepository from "../../repositories/StoryRepository";
 import Cards from "../presenters/cards/Cards";
 import StorySyncer from "../../services/StorySyncer";
-import AddItemLinks from "../elements/AddItemLinks";
 
 const md5 = require('js-md5');
 const queryString = require('query-string');
 
 export default {
-    components: {AddItemLinks, Cards},
+    components: {Cards},
     data() {
         return {
             scenario: null,
@@ -291,23 +293,22 @@ export default {
         this.$bus.$on('close-scenario', () => {
             this.close();
         });
+        this.$bus.$on('game-selected', () => {
+            this.unsetScenario();
+        });
     },
     computed: {
         prevScenarios() {
-            return this.scenarioRepository.findMany(this.scenario.linked_from)
-                .where('state', ScenarioState.complete);
+            return this.scenarioRepository.prevScenarios(this.scenario);
         },
         nextScenarios() {
-            if (this.scenario.isComplete()) {
-                return this.scenarioRepository.findMany(this.scenario.links_to)
-                    .where('state', '!=', ScenarioState.hidden);
-            }
-
-            return collect();
+            return this.scenarioRepository.nextScenarios(this.scenario);
         },
         achievements() {
             if (this.scenario.isComplete()) {
-                let awarded = this.achievementRepository.findMany(this.scenario.achievements_awarded)
+                let awarded = this.achievementRepository.findMany(this.scenario.achievements_awarded.merge(
+                    this.scenario.achievements_from_treasures.only(this.scenario.unlockedTreasures).flatten().items
+                ))
                     .where('_awarded', '=', true);
                 let lost = this.achievementRepository.findMany(this.scenario.achievements_lost)
                     .where('_awarded', '=', false);
@@ -346,7 +347,9 @@ export default {
                 }
             }
 
-            if (state === ScenarioState.complete && this.scenario.choices) {
+            if (state === ScenarioState.complete && this.scenario.prompt && this.prompt.promptAfter) {
+                this.$refs['decision-prompt'].open();
+            } else if (state === ScenarioState.complete && this.scenario.choices && this.scenario.choices.length > 1) {
                 this.$refs['choose'].open();
             } else {
                 this.scenarioRepository.changeState(this.scenario, state);
@@ -369,22 +372,24 @@ export default {
             this.storySyncer.store();
         },
         treasureChanged(id, checked) {
+            id = id.replace('treasure-', '');
             if (checked && this.prompt) {
                 this.rollback = () => {
-                    this.scenario.unlockTreasure(id, false);
+                    this.scenarioRepository.unlockTreasure(this.scenario, id, false);
                 }
             }
 
-            this.scenario.unlockTreasure(id, checked);
-            this.scenarioRepository.processTreasureItems(this.scenario, id, checked);
-            if (this.scenarioRepository.unlockTreasureScenario(this.scenario, id)) {
+            const reload = this.scenarioRepository.unlockTreasure(this.scenario, id, checked);
+            if (reload) {
                 this.$bus.$emit('scenarios-updated');
             }
 
             this.storySyncer.store();
         },
         scenarioChosen(choice) {
-            this.scenarioRepository.choose(this.scenario, choice);
+            this.scenarioRepository.choose(this.scenario, choice, true);
+
+            this.storySyncer.store();
 
             this.$bus.$emit('scenarios-updated');
         },
@@ -417,7 +422,7 @@ export default {
             const scenario = this.scenarioRepository.find(id);
 
             // Can't open hidden scenario's for now.
-            if (scenario.isHidden() && !scenario.is_side) {
+            if (!scenario || (scenario.isHidden() && !scenario.is_side)) {
                 return;
             }
 
@@ -452,6 +457,9 @@ export default {
         close() {
             this.notesLeft();
             this.$refs['modal'].close();
+        },
+        unsetScenario() {
+            this.scenario = null;
         },
         openAchievement(id) {
             this.close();
