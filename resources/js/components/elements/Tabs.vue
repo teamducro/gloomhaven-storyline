@@ -80,7 +80,7 @@ export default {
             }
         },
         mobileSelect(e) {
-            this.select($(e.target).val(), e);
+            this.select(e.target.value, e);
         }
     }
 }

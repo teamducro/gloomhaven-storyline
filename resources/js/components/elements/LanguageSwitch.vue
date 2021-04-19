@@ -43,13 +43,13 @@ export default {
                 'en': 'English',
                 'fr': 'Français',
                 'it': 'Italiano',
-                //'de': 'Deutsche'
+                'de': 'Deutsche'
             },
             flags: {
                 'en': '🇺🇸',
                 'fr': '🇫🇷',
                 'it': '🇮🇹',
-                //'de': '🇩🇪'
+                'de': '🇩🇪'
             }
         }
     },
@@ -57,7 +57,7 @@ export default {
         this.setInitialLanguage();
     },
     mounted() {
-        this.select = new MDCSelect($('.language-switch')[0]);
+        this.select = new MDCSelect(document.getElementsByClassName('language-switch')[0]);
         this.select.listen('MDCSelect:change', this.changeLanguage);
 
         if (this.current !== window.i18n.locale) {

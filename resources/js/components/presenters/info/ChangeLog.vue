@@ -116,7 +116,8 @@ export default {
                     version: 2.11,
                     description: 'Summaries for Forgotten Circles',
                     date: moment('12-04-2021', "DD-MM-YYYY")
-                }
+                },
+                {version: 2.12, description: 'German language', date: moment('20-04-2021', "DD-MM-YYYY")}
             ].reverse()
         }
     },

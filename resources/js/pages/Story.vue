@@ -47,7 +47,7 @@ export default {
             this.rerender();
         }
 
-        $('#storyline-container').on('click', '.scenario', this.scenarioClicked);
+        document.getElementById('storyline-container').addEventListener('click', this.scenarioClicked, false);
         this.$bus.$on('scenarios-updated', this.render);
         this.$bus.$on('orientation-changed', this.orientationChanged);
         this.$bus.$on('campaigns-changed', this.setCampaignName);
@@ -58,7 +58,7 @@ export default {
         if (this.zoom) {
             this.zoom.destroy();
         }
-        $('#storyline-container').off('click', '.scenario', this.scenarioClicked);
+        document.getElementById('storyline-container').removeEventListener('click', this.scenarioClicked, false);
         this.$bus.$off('scenarios-updated', this.render);
         this.$bus.$off('orientation-changed', this.orientationChanged);
         this.$bus.$off('campaigns-changed', this.setCampaignName);
@@ -72,10 +72,16 @@ export default {
             if (app.scenarios && this.isPortrait !== null) {
                 this.renderScenarios();
                 this.renderChapters();
-                $('.campaign-name').text(this.campaignName);
+                [...document.getElementsByClassName('campaign-name')].forEach((element) => {
+                    element.innerHTML = this.campaignName;
+                });
             } else {
-                $('.scenario, .edge, .chapter').hide();
-                $('.legend .scenario').show();
+                [...document.querySelectorAll('.scenario, .edge, .chapter')].forEach((element) => {
+                    element.style.display = 'none';
+                });
+                [...document.querySelectorAll('.legend .scenario')].forEach((element) => {
+                    element.style.display = 'inline';
+                });
             }
         },
         async rerender() {
@@ -92,94 +98,113 @@ export default {
             let viewBox = '';
             if (this.isPortrait) {
                 viewBox = '0 -70 420 1080';
-                $('#storyline .landscape').remove();
+                [...document.querySelectorAll('#storyline .landscape')].forEach((element) => {
+                    element.remove();
+                });
             } else {
                 viewBox = '0 -40 610 700';
-                $('#storyline .portrait').remove();
+                [...document.querySelectorAll('#storyline .portrait')].forEach((element) => {
+                    element.remove();
+                });
             }
-            $('#storyline').attr('viewBox', viewBox);
+            const storyline = document.getElementById('storyline')
+            if (storyline) {
+                storyline.setAttribute('viewBox', viewBox);
+            }
         },
         renderScenarios() {
             app.scenarios.each((scenario) => {
-                let $node = $('#node' + scenario.id);
+                let node = document.getElementById('node' + scenario.id);
 
-                if (!$node.length) {
+                if (!node) {
                     return;
                 }
 
-                let $edges = $('.edge' + scenario.id);
-                $edges.hide();
+                let edges = document.getElementsByClassName('edge' + scenario.id);
+                [...edges].forEach((element) => {
+                    element.style.display = 'none';
+                });
 
                 if (scenario.isHidden()) {
-                    $node.hide();
+                    node.style.display = 'none';
                 }
 
                 if (scenario.isVisible() || scenario.is_side) {
-                    $node.show();
-                    $node.removeClass(ScenarioState.states().join(' '));
+                    node.style.display = 'inline';
+                    ScenarioState.states().forEach((state) => {
+                        node.classList.remove(state);
+                    })
                     if (scenario.isVisible()) {
-                        $node.addClass(scenario.state);
+                        node.classList.add(scenario.state);
                     }
 
                     if (scenario.is_side) {
                         if (scenario.isHidden()) {
-                            $node.addClass('opacity-50');
+                            node.classList.add('opacity-50');
                         } else {
-                            $node.removeClass('opacity-50');
+                            node.classList.remove('opacity-50');
                         }
                     }
 
-                    if (scenario.isBlocked()) {
-                        $node.find('.blocked').show();
-                    } else {
-                        $node.find('.blocked').hide();
+                    const blocked = node.getElementsByClassName('blocked');
+                    if (blocked.length) {
+                        if (scenario.isBlocked()) {
+                            blocked[0].style.display = 'inline';
+                        } else {
+                            blocked[0].style.display = 'none';
+                        }
                     }
 
-                    if (scenario.isRequired()) {
-                        $node.find('.required').show();
-                    } else {
-                        $node.find('.required').hide();
+                    const required = node.getElementsByClassName('required');
+                    if (required.length) {
+                        if (scenario.isRequired()) {
+                            required[0].style.display = 'inline';
+                        } else {
+                            required[0].style.display = 'none';
+                        }
                     }
 
                     if (scenario.isComplete()) {
                         if (!scenario.choices && !scenario.treasures_to.isNotEmpty()) {
-                            $edges.show();
+                            [...edges].forEach((element) => {
+                                element.style.display = 'inline';
+                            });
                         }
 
                         if (scenario.choice) {
                             String(scenario.choice).split(',').forEach((c) => {
-                                $('#edge' + scenario.id + '-' + c).show();
+                                document.getElementById('edge' + scenario.id + '-' + c).style.display = 'inline';
                             });
                         }
 
                         if (scenario.treasures_to.isNotEmpty()) {
                             scenario.links_to.each((id) => {
-                                $('#edge' + scenario.id + '-' + id).show();
+                                document.getElementById('edge' + scenario.id + '-' + id).style.display = 'inline';
                             });
                             this.scenarioRepository.unlockedByTreasureScenarios(scenario).each((t) => {
-                                $('#edge' + scenario.id + '-' + t.id).show();
+                                document.getElementById('edge' + scenario.id + '-' + t.id).style.display = 'inline';
                             });
                         }
                     }
                 }
 
                 // Show tooltip on hover
-                if (app.hasMouse && scenario.isVisible() && !$node.hasClass('has-tippy')) {
-                    tippy($node[0], {
+                if (app.hasMouse && scenario.isVisible() && !node.classList.contains('has-tippy')) {
+                    tippy(node, {
                         content: scenario.title
                     });
-                    $node.addClass('has-tippy');
+                    node.classList.add('has-tippy');
                 }
             });
         },
         renderChapters() {
-            $('.chapter').each(function () {
-                if ($(this).hasClass('intro')) {
+            [...document.getElementsByClassName('chapter')].forEach((chapter) => {
+                if (chapter.classList.contains('intro')) {
+                    chapter.style.display = 'inline';
                     return;
                 }
 
-                let id = parseInt($(this).attr('id').replace('chapter', '').trim());
-
+                const id = parseInt(chapter.id.replace('chapter', '').trim());
                 const isSideChapter = id > 99;
                 const scenariosInChapter = app.scenarios.where('chapter_id', id);
                 let unlocked;
@@ -195,9 +220,9 @@ export default {
                 }
 
                 if (unlocked) {
-                    $(this).show();
+                    chapter.style.display = 'inline';
                 } else {
-                    $(this).hide();
+                    chapter.style.display = 'none';
                 }
             });
         },
@@ -209,7 +234,9 @@ export default {
         },
         setCampaignName() {
             this.campaignName = this.getCampaignName();
-            $('.campaign-name').text(this.campaignName);
+            [...document.getElementsByClassName('campaign-name')].forEach((element) => {
+                element.innerHTML = this.campaignName;
+            });
         },
         setStoryline() {
             const storyline = 'storyline-' + app.game;
@@ -219,12 +246,16 @@ export default {
             }
         },
         scenarioClicked(e) {
-            let $node = $(e.currentTarget);
-            if (!$node.attr('id')) {
-                return;
+            let node = e.target;
+
+            while (node && !node.classList.contains('scenario') && node !== e.currentTarget) {
+                node = node.parentNode
             }
-            let id = parseInt($(e.currentTarget).attr('id').replace('node', ''));
-            this.open(id);
+
+            if (node.classList.contains('scenario') && node.id) {
+                const id = parseInt(node.id.replace('node', ''));
+                this.open(id);
+            }
         },
         open(id) {
             this.$bus.$emit('open-scenario', {id});

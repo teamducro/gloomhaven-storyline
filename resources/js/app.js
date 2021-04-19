@@ -29,7 +29,6 @@ import checkOrientation from "./services/app/checkOrientation";
 import polyfills from "./services/app/polyfills";
 
 window._ = require('lodash');
-window.$ = require('jquery');
 window.Vue = require('vue');
 window.collect = require('collect.js');
 window.axios = require('axios').default.create({
