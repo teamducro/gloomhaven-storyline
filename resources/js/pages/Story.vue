@@ -1,5 +1,5 @@
 <template>
-    <div id="storyline-container" class="w-screen" ref="storyline-container">
+    <div id="storyline-container" class="w-screen">
         <inline-svg
             v-if="storyline !== null && isPortrait !== null"
             :key="storylineKey"
@@ -47,9 +47,7 @@ export default {
             this.rerender();
         }
 
-        if (this.$refs['storyline-container']) {
-            this.$refs['storyline-container'].addEventListener('click', this.scenarioClicked, false);
-        }
+        document.getElementById('storyline-container').addEventListener('click', this.scenarioClicked, false);
         this.$bus.$on('scenarios-updated', this.render);
         this.$bus.$on('orientation-changed', this.orientationChanged);
         this.$bus.$on('campaigns-changed', this.setCampaignName);
@@ -60,9 +58,7 @@ export default {
         if (this.zoom) {
             this.zoom.destroy();
         }
-        if (this.$refs['storyline-container']) {
-            this.$refs['storyline-container'].removeEventListener('click', this.scenarioClicked, false);
-        }
+        document.getElementById('storyline-container').removeEventListener('click', this.scenarioClicked, false);
         this.$bus.$off('scenarios-updated', this.render);
         this.$bus.$off('orientation-changed', this.orientationChanged);
         this.$bus.$off('campaigns-changed', this.setCampaignName);
@@ -177,25 +173,16 @@ export default {
 
                         if (scenario.choice) {
                             String(scenario.choice).split(',').forEach((c) => {
-                                let edge = document.getElementById('edge' + scenario.id + '-' + c);
-                                if (edge) {
-                                    edge.style.display = 'inline';
-                                }
+                                document.getElementById('edge' + scenario.id + '-' + c).style.display = 'inline';
                             });
                         }
 
                         if (scenario.treasures_to.isNotEmpty()) {
                             scenario.links_to.each((id) => {
-                                let edge = document.getElementById('edge' + scenario.id + '-' + id);
-                                if (edge) {
-                                    edge.style.display = 'inline';
-                                }
+                                document.getElementById('edge' + scenario.id + '-' + id).style.display = 'inline';
                             });
                             this.scenarioRepository.unlockedByTreasureScenarios(scenario).each((t) => {
-                                let edge = document.getElementById('edge' + scenario.id + '-' + t.id);
-                                if (edge) {
-                                    edge.style.display = 'inline';
-                                }
+                                document.getElementById('edge' + scenario.id + '-' + t.id).style.display = 'inline';
                             });
                         }
                     }
