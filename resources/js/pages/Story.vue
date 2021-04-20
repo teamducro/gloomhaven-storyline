@@ -147,8 +147,8 @@ export default {
                         }
 
                         if (scenario.choice) {
-                            String(scenario.choice).split(',').forEach((c) => {
-                                c('#edge' + scenario.id + '-' + c).show();
+                            String(scenario.choice).split(',').forEach((choice) => {
+                                c('#edge' + scenario.id + '-' + choice).show();
                             });
                         }
 
@@ -156,8 +156,8 @@ export default {
                             scenario.links_to.each((id) => {
                                 c('#edge' + scenario.id + '-' + id).show();
                             });
-                            this.scenarioRepository.unlockedByTreasureScenarios(scenario).each((t) => {
-                                c('#edge' + scenario.id + '-' + t.id).show();
+                            this.scenarioRepository.unlockedByTreasureScenarios(scenario).each((treasure) => {
+                                c('#edge' + scenario.id + '-' + treasure.id).show();
                             });
                         }
                     }
@@ -173,13 +173,13 @@ export default {
             });
         },
         renderChapters() {
-            c('.chapter').each(function () {
-                if (c(this).hasClass('intro')) {
-                    c(this).show();
+            c('.chapter').each((index, element) => {
+                if (c(element).hasClass('intro')) {
+                    c(element).show();
                     return;
                 }
 
-                let id = parseInt(c(this).attr('id').replace('chapter', '').trim());
+                let id = parseInt(c(element).attr('id').replace('chapter', '').trim());
 
                 const isSideChapter = id > 99;
                 const scenariosInChapter = app.scenarios.where('chapter_id', id);
