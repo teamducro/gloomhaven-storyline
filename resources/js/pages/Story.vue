@@ -55,9 +55,7 @@ export default {
         this.setCampaignName();
     },
     destroyed() {
-        if (this.zoom) {
-            this.zoom.destroy();
-        }
+        this.removeZoom();
         c('#storyline-container').off('click', '.scenario', this.scenarioClicked);
         this.$bus.$off('scenarios-updated', this.render);
         this.$bus.$off('orientation-changed', this.orientationChanged);
@@ -79,9 +77,7 @@ export default {
             }
         },
         async rerender() {
-            if (this.zoom) {
-                this.zoom.destroy();
-            }
+            this.removeZoom();
             this.storylineKey++;
             await this.$nextTick();
             this.renderOrientation();
@@ -217,6 +213,14 @@ export default {
             if (this.storyline !== storyline) {
                 this.storyline = storyline;
                 return true;
+            }
+        },
+        removeZoom() {
+            if (this.zoom) {
+                try {
+                    this.zoom.destroy();
+                } catch (e) {
+                }
             }
         },
         scenarioClicked(e) {
