@@ -65,8 +65,8 @@ export default {
     mounted() {
         this.mapImages = this.gameData.map(app.game);
 
-        this.$map = c('#map');
-        this.map = panzoom(this.$map[0], {
+        this.$map = document.getElementById('map');
+        this.map = panzoom(this.$map, {
             minZoom: this.scale(),
             maxZoom: 4,
             bounds: true
@@ -79,7 +79,7 @@ export default {
 
         this.$bus.$on('scenarios-updated', this.setScenarios);
         this.$bus.$on('windows-resized', this.setScenarios);
-        this.mapTouch = new Hammer(this.$map[0]);
+        this.mapTouch = new Hammer(this.$map);
         this.mapTouch.on('tap', (e) => {
             if (e.target.id.startsWith('s')) {
                 this.scenarioClicked(e);
@@ -109,12 +109,12 @@ export default {
             // Show tooltip on hover
             if (this.scenarios) {
                 this.scenarios.each((scenario) => {
-                    let $s = c('#s' + scenario.id);
-                    if ($s.length && app.hasMouse && scenario.isVisible() && !$s.hasClass('tippy')) {
-                        tippy($s[0], {
+                    let s = document.getElementById('s' + scenario.id);
+                    if (s && app.hasMouse && scenario.isVisible() && !s.classList.contains('tippy')) {
+                        tippy(s, {
                             content: scenario.title
                         });
-                        $s.addClass('tippy');
+                        s.classList.add('tippy');
                     }
                 });
             }
@@ -140,24 +140,24 @@ export default {
             const yOffset = 184 * scale;
 
             if (this.isLandscape()) {
-                const mapWidth = this.$map.width() * scale;
-                let x = (c(window).width() - mapWidth) / 2;
+                const mapWidth = this.$map.offsetWidth * scale;
+                let x = (window.innerWidth - mapWidth) / 2;
                 this.map.moveTo(x, yOffset + (20 / scale));
             } else {
-                const mapHeight = this.$map.height() * scale;
-                let y = (c(window).height() - mapHeight) / 2;
+                const mapHeight = this.$map.offsetHeight * scale;
+                let y = (window.innerHeight - mapHeight) / 2;
                 this.map.moveTo(0, y + yOffset);
             }
         },
         isLandscape() {
-            return c(window).width() > c(window).height();
+            return window.innerWidth > window.innerHeight;
         },
         scale() {
             this.scenarioScale = this.gameData.scenarioStickerScale(app.game);
 
             return this.isLandscape()
-                ? c(window).height() / 2155
-                : c(window).width() / this.$map.width();
+                ? window.innerHeight / 2155
+                : window.innerWidth / this.$map.offsetWidth;
         }
     }
 }
