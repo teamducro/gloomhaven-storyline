@@ -50,6 +50,7 @@
                         v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
                         :key="achievement.id"
                         class="mdc-list-item h-auto cursor-pointer"
+                        :data-id="achievement.id"
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-75">
@@ -71,6 +72,7 @@
                         v-if="achievement.isParty() && achievement.awarded"
                         :key="achievement.id"
                         class="mdc-list-item h-auto cursor-pointer"
+                        :data-id="achievement.id"
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-75">
@@ -127,25 +129,14 @@ export default {
 
             await this.$nextTick();
 
-            if (this.globalList) {
-                this.globalList.destroy();
-            }
             this.globalList = MDCList.attachTo(this.$refs['global-list']);
             this.globalList.listen('MDCList:action', (event) => {
-                const id = this.achievements.filter((a) => {
-                    return a.isGlobal() && a.awarded && !a.hidden;
-                }).get(event.detail.index).id;
+                let id = $(event.target).find('li:eq(' + event.detail.index + ')').data('id');
                 this.open(this.achievementRepository.find(id));
             });
-
-            if (this.partyList) {
-                this.partyList.destroy();
-            }
             this.partyList = MDCList.attachTo(this.$refs['party-list']);
             this.partyList.listen('MDCList:action', (event) => {
-                const id = this.achievements.filter((a) => {
-                    return a.isParty() && a.awarded;
-                }).get(event.detail.index).id;
+                let id = $(event.target).find('li:eq(' + event.detail.index + ')').data('id');
                 this.open(this.achievementRepository.find(id));
             });
         },
