@@ -131,12 +131,12 @@ export default {
 
             this.globalList = MDCList.attachTo(this.$refs['global-list']);
             this.globalList.listen('MDCList:action', (event) => {
-                let id = $(event.target).find('li:eq(' + event.detail.index + ')').data('id');
+                let id = c(event.target).find('li:eq(' + event.detail.index + ')').data('id');
                 this.open(this.achievementRepository.find(id));
             });
             this.partyList = MDCList.attachTo(this.$refs['party-list']);
             this.partyList.listen('MDCList:action', (event) => {
-                let id = $(event.target).find('li:eq(' + event.detail.index + ')').data('id');
+                let id = c(event.target).find('li:eq(' + event.detail.index + ')').data('id');
                 this.open(this.achievementRepository.find(id));
             });
         },

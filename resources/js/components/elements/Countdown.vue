@@ -50,8 +50,8 @@
                 }
                 const angle1_inner = -angle1;
                 const angle2_inner = -180 - angle2;
-                const circle_rotate = $('#code-progress .circle-loader-rotate');
-                const circle_inner = $('#code-progress .circle-loader-circle');
+                const circle_rotate = c('#code-progress .circle-loader-rotate');
+                const circle_inner = c('#code-progress .circle-loader-circle');
                 circle_rotate[0].style.transform = 'rotate(' + Math.floor(angle1).toString() + 'deg)';
                 circle_rotate[1].style.transform = 'rotate(' + Math.floor(angle2).toString() + 'deg)';
                 circle_inner[0].style.transform = 'rotate(' + Math.floor(angle1_inner).toString() + 'deg)';

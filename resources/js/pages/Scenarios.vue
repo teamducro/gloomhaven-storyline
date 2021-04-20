@@ -123,7 +123,7 @@ export default {
             this.$nextTick(() => {
                 this.list = MDCList.attachTo(this.$refs['list']);
                 this.list.listen('MDCList:action', (event) => {
-                    let id = $(event.target).find('li:eq(' + event.detail.index + ')').data('id');
+                    let id = c(event.target).find('li:eq(' + event.detail.index + ')').data('id');
                     this.open(this.scenarioRepository.find(id));
                 });
             });
