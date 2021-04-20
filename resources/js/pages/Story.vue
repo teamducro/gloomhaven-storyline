@@ -175,6 +175,7 @@ export default {
         renderChapters() {
             $('.chapter').each(function () {
                 if ($(this).hasClass('intro')) {
+                    $(this).show();
                     return;
                 }
 
