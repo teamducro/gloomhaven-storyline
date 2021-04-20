@@ -65,7 +65,7 @@ export default {
     mounted() {
         this.mapImages = this.gameData.map(app.game);
 
-        this.$map = $('#map');
+        this.$map = c('#map');
         this.map = panzoom(this.$map[0], {
             minZoom: this.scale(),
             maxZoom: 4,
@@ -79,7 +79,6 @@ export default {
 
         this.$bus.$on('scenarios-updated', this.setScenarios);
         this.$bus.$on('windows-resized', this.setScenarios);
-        this.$map.on('click', '.scenario', this.scenarioClicked);
         this.mapTouch = new Hammer(this.$map[0]);
         this.mapTouch.on('tap', (e) => {
             if (e.target.id.startsWith('s')) {
@@ -98,7 +97,6 @@ export default {
         }
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
-        this.$map.off('click', '.scenario', this.scenarioClicked);
         this.mapTouch.destroy();
     },
     methods: {
@@ -111,7 +109,7 @@ export default {
             // Show tooltip on hover
             if (this.scenarios) {
                 this.scenarios.each((scenario) => {
-                    let $s = $('#s' + scenario.id);
+                    let $s = c('#s' + scenario.id);
                     if ($s.length && app.hasMouse && scenario.isVisible() && !$s.hasClass('tippy')) {
                         tippy($s[0], {
                             content: scenario.title
@@ -143,23 +141,23 @@ export default {
 
             if (this.isLandscape()) {
                 const mapWidth = this.$map.width() * scale;
-                let x = ($(window).width() - mapWidth) / 2;
+                let x = (c(window).width() - mapWidth) / 2;
                 this.map.moveTo(x, yOffset + (20 / scale));
             } else {
                 const mapHeight = this.$map.height() * scale;
-                let y = ($(window).height() - mapHeight) / 2;
+                let y = (c(window).height() - mapHeight) / 2;
                 this.map.moveTo(0, y + yOffset);
             }
         },
         isLandscape() {
-            return $(window).width() > $(window).height();
+            return c(window).width() > c(window).height();
         },
         scale() {
             this.scenarioScale = this.gameData.scenarioStickerScale(app.game);
 
             return this.isLandscape()
-                ? $(window).height() / 2155
-                : $(window).width() / this.$map.width();
+                ? c(window).height() / 2155
+                : c(window).width() / this.$map.width();
         }
     }
 }

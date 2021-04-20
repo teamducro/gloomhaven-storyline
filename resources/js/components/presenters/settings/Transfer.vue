@@ -99,7 +99,7 @@ export default {
                 this.$refs['campaign-switch'].applyData();
 
                 if (!this.select) {
-                    this.select = new MDCSelect($('.copy-switch')[0]);
+                    this.select = new MDCSelect(c('.copy-switch')[0]);
                 }
             }
         },
