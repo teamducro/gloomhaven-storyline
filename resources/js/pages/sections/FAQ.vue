@@ -54,6 +54,15 @@ export default {
                 q: 'I am using the free version, do I have to send a new share link every time?',
                 a: 'Yes, progress is not shared amongst devices.'
             },
+            {
+                q: 'Do I need to backup a shared campaign?',
+                a: 'No, shared campaigns are backed-up automatically. If your device fails you can always continue where ' +
+                    'you left off or even rollback unwanted changes.'
+            },
+            {
+                q: 'How do I backup a free campaign?',
+                a: 'You can send a share link to yourself to back it up, it might come in handy in an emergency.'
+            },
         ]
     },
     methods: {}
