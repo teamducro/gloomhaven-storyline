@@ -65,8 +65,8 @@ export default {
     mounted() {
         this.mapImages = this.gameData.map(app.game);
 
-        this.$map = document.getElementById('map');
-        this.map = panzoom(this.$map, {
+        this.$map = $('#map');
+        this.map = panzoom(this.$map[0], {
             minZoom: this.scale(),
             maxZoom: 4,
             bounds: true
@@ -79,7 +79,8 @@ export default {
 
         this.$bus.$on('scenarios-updated', this.setScenarios);
         this.$bus.$on('windows-resized', this.setScenarios);
-        this.mapTouch = new Hammer(this.$map);
+        this.$map.on('click', '.scenario', this.scenarioClicked);
+        this.mapTouch = new Hammer(this.$map[0]);
         this.mapTouch.on('tap', (e) => {
             if (e.target.id.startsWith('s')) {
                 this.scenarioClicked(e);
@@ -97,6 +98,7 @@ export default {
         }
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
+        this.$map.off('click', '.scenario', this.scenarioClicked);
         this.mapTouch.destroy();
     },
     methods: {
@@ -109,12 +111,12 @@ export default {
             // Show tooltip on hover
             if (this.scenarios) {
                 this.scenarios.each((scenario) => {
-                    let $s = document.getElementById('s' + scenario.id);
-                    if ($s && app.hasMouse && scenario.isVisible() && !$s.classList.contains('.tippy')) {
-                        tippy($s, {
+                    let $s = $('#s' + scenario.id);
+                    if ($s.length && app.hasMouse && scenario.isVisible() && !$s.hasClass('tippy')) {
+                        tippy($s[0], {
                             content: scenario.title
                         });
-                        $s.classList.add('tippy');
+                        $s.addClass('tippy');
                     }
                 });
             }
@@ -140,24 +142,24 @@ export default {
             const yOffset = 184 * scale;
 
             if (this.isLandscape()) {
-                const mapWidth = this.$map.offsetWidth * scale;
-                let x = (window.innerWidth - mapWidth) / 2;
+                const mapWidth = this.$map.width() * scale;
+                let x = ($(window).width() - mapWidth) / 2;
                 this.map.moveTo(x, yOffset + (20 / scale));
             } else {
-                const mapHeight = this.$map.offsetHeight * scale;
-                let y = (window.innerHeight - mapHeight) / 2;
+                const mapHeight = this.$map.height() * scale;
+                let y = ($(window).height() - mapHeight) / 2;
                 this.map.moveTo(0, y + yOffset);
             }
         },
         isLandscape() {
-            return window.innerWidth > window.innerHeight;
+            return $(window).width() > $(window).height();
         },
         scale() {
             this.scenarioScale = this.gameData.scenarioStickerScale(app.game);
 
             return this.isLandscape()
-                ? window.innerHeight / 2155
-                : window.innerWidth / this.$map.offsetWidth;
+                ? $(window).height() / 2155
+                : $(window).width() / this.$map.width();
         }
     }
 }

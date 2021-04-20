@@ -48,6 +48,7 @@
                 v-show="applyFilter(scenario)"
                 :key="scenario.id"
                 class="mdc-list-item h-auto cursor-pointer"
+                :data-id="scenario.id"
                 :tabindex="scenario.id">
                 <template v-if="scenario.isVisible()">
                     <span class="mdc-list-item__text flex items-center">
@@ -116,18 +117,15 @@ export default {
         }
     },
     methods: {
-        async setScenarios() {
+        setScenarios() {
             this.scenarios = app.scenarios;
 
-            await this.$nextTick();
-
-            if (this.list) {
-                this.list.destroy();
-            }
-            this.list = MDCList.attachTo(this.$refs['list']);
-            this.list.listen('MDCList:action', (event) => {
-                const id = this.scenarios.get(event.detail.index).id;
-                this.open(this.scenarioRepository.find(id));
+            this.$nextTick(() => {
+                this.list = MDCList.attachTo(this.$refs['list']);
+                this.list.listen('MDCList:action', (event) => {
+                    let id = $(event.target).find('li:eq(' + event.detail.index + ')').data('id');
+                    this.open(this.scenarioRepository.find(id));
+                });
             });
         },
         open(scenario) {

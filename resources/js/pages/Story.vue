@@ -1,5 +1,5 @@
 <template>
-    <div id="storyline-container" class="w-screen" ref="storyline-container">
+    <div id="storyline-container" class="w-screen">
         <inline-svg
             v-if="storyline !== null && isPortrait !== null"
             :key="storylineKey"
@@ -47,9 +47,7 @@ export default {
             this.rerender();
         }
 
-        if (this.$refs['storyline-container']) {
-            this.$refs['storyline-container'].addEventListener('click', this.scenarioClicked, false);
-        }
+        $('#storyline-container').on('click', '.scenario', this.scenarioClicked);
         this.$bus.$on('scenarios-updated', this.render);
         this.$bus.$on('orientation-changed', this.orientationChanged);
         this.$bus.$on('campaigns-changed', this.setCampaignName);
@@ -60,9 +58,7 @@ export default {
         if (this.zoom) {
             this.zoom.destroy();
         }
-        if (this.$refs['storyline-container']) {
-            this.$refs['storyline-container'].removeEventListener('click', this.scenarioClicked, false);
-        }
+        $('#storyline-container').off('click', '.scenario', this.scenarioClicked);
         this.$bus.$off('scenarios-updated', this.render);
         this.$bus.$off('orientation-changed', this.orientationChanged);
         this.$bus.$off('campaigns-changed', this.setCampaignName);
@@ -76,16 +72,10 @@ export default {
             if (app.scenarios && this.isPortrait !== null) {
                 this.renderScenarios();
                 this.renderChapters();
-                [...document.getElementsByClassName('campaign-name')].forEach((element) => {
-                    element.innerHTML = this.campaignName;
-                });
+                $('.campaign-name').text(this.campaignName);
             } else {
-                [...document.querySelectorAll('.scenario, .edge, .chapter')].forEach((element) => {
-                    element.style.display = 'none';
-                });
-                [...document.querySelectorAll('.legend .scenario')].forEach((element) => {
-                    element.style.display = 'inline';
-                });
+                $('.scenario, .edge, .chapter').hide();
+                $('.legend .scenario').show();
             }
         },
         async rerender() {
@@ -102,122 +92,95 @@ export default {
             let viewBox = '';
             if (this.isPortrait) {
                 viewBox = '0 -70 420 1080';
-                [...document.querySelectorAll('#storyline .landscape')].forEach((element) => {
-                    element.remove();
-                });
+                $('#storyline .landscape').remove();
             } else {
                 viewBox = '0 -40 610 700';
-                [...document.querySelectorAll('#storyline .portrait')].forEach((element) => {
-                    element.remove();
-                });
+                $('#storyline .portrait').remove();
             }
-            const storyline = document.getElementById('storyline')
-            if (storyline) {
-                storyline.setAttribute('viewBox', viewBox);
-            }
+            $('#storyline').attr('viewBox', viewBox);
         },
         renderScenarios() {
             app.scenarios.each((scenario) => {
-                let node = document.getElementById('node' + scenario.id);
+                let $node = $('#node' + scenario.id);
 
-                if (!node) {
+                if (!$node.length) {
                     return;
                 }
 
-                let edges = document.getElementsByClassName('edge' + scenario.id);
-                [...edges].forEach((element) => {
-                    element.style.display = 'none';
-                });
+                let $edges = $('.edge' + scenario.id);
+                $edges.hide();
 
                 if (scenario.isHidden()) {
-                    node.style.display = 'none';
+                    $node.hide();
                 }
 
                 if (scenario.isVisible() || scenario.is_side) {
-                    node.style.display = 'inline';
-                    ScenarioState.states().forEach((state) => {
-                        node.classList.remove(state);
-                    })
+                    $node.show();
+                    $node.removeClass(ScenarioState.states().join(' '));
                     if (scenario.isVisible()) {
-                        node.classList.add(scenario.state);
+                        $node.addClass(scenario.state);
                     }
 
                     if (scenario.is_side) {
                         if (scenario.isHidden()) {
-                            node.classList.add('opacity-50');
+                            $node.addClass('opacity-50');
                         } else {
-                            node.classList.remove('opacity-50');
+                            $node.removeClass('opacity-50');
                         }
                     }
 
-                    const blocked = node.getElementsByClassName('blocked');
-                    if (blocked.length) {
-                        if (scenario.isBlocked()) {
-                            blocked[0].style.display = 'inline';
-                        } else {
-                            blocked[0].style.display = 'none';
-                        }
+                    if (scenario.isBlocked()) {
+                        $node.find('.blocked').show();
+                    } else {
+                        $node.find('.blocked').hide();
                     }
 
-                    const required = node.getElementsByClassName('required');
-                    if (required.length) {
-                        if (scenario.isRequired()) {
-                            required[0].style.display = 'inline';
-                        } else {
-                            required[0].style.display = 'none';
-                        }
+                    if (scenario.isRequired()) {
+                        $node.find('.required').show();
+                    } else {
+                        $node.find('.required').hide();
                     }
 
                     if (scenario.isComplete()) {
                         if (!scenario.choices && !scenario.treasures_to.isNotEmpty()) {
-                            [...edges].forEach((element) => {
-                                element.style.display = 'inline';
-                            });
+                            $edges.show();
                         }
 
                         if (scenario.choice) {
                             String(scenario.choice).split(',').forEach((c) => {
-                                let edge = document.getElementById('edge' + scenario.id + '-' + c);
-                                if (edge) {
-                                    edge.style.display = 'inline';
-                                }
+                                $('#edge' + scenario.id + '-' + c).show();
                             });
                         }
 
                         if (scenario.treasures_to.isNotEmpty()) {
                             scenario.links_to.each((id) => {
-                                let edge = document.getElementById('edge' + scenario.id + '-' + id);
-                                if (edge) {
-                                    edge.style.display = 'inline';
-                                }
+                                $('#edge' + scenario.id + '-' + id).show();
                             });
                             this.scenarioRepository.unlockedByTreasureScenarios(scenario).each((t) => {
-                                let edge = document.getElementById('edge' + scenario.id + '-' + t.id);
-                                if (edge) {
-                                    edge.style.display = 'inline';
-                                }
+                                $('#edge' + scenario.id + '-' + t.id).show();
                             });
                         }
                     }
                 }
 
                 // Show tooltip on hover
-                if (app.hasMouse && scenario.isVisible() && !node.classList.contains('has-tippy')) {
-                    tippy(node, {
+                if (app.hasMouse && scenario.isVisible() && !$node.hasClass('has-tippy')) {
+                    tippy($node[0], {
                         content: scenario.title
                     });
-                    node.classList.add('has-tippy');
+                    $node.addClass('has-tippy');
                 }
             });
         },
         renderChapters() {
-            [...document.getElementsByClassName('chapter')].forEach((chapter) => {
-                if (chapter.classList.contains('intro')) {
-                    chapter.style.display = 'inline';
+            $('.chapter').each(function () {
+                if ($(this).hasClass('intro')) {
+                    $(this).show();
                     return;
                 }
 
-                const id = parseInt(chapter.id.replace('chapter', '').trim());
+                let id = parseInt($(this).attr('id').replace('chapter', '').trim());
+
                 const isSideChapter = id > 99;
                 const scenariosInChapter = app.scenarios.where('chapter_id', id);
                 let unlocked;
@@ -233,9 +196,9 @@ export default {
                 }
 
                 if (unlocked) {
-                    chapter.style.display = 'inline';
+                    $(this).show();
                 } else {
-                    chapter.style.display = 'none';
+                    $(this).hide();
                 }
             });
         },
@@ -247,9 +210,7 @@ export default {
         },
         setCampaignName() {
             this.campaignName = this.getCampaignName();
-            [...document.getElementsByClassName('campaign-name')].forEach((element) => {
-                element.innerHTML = this.campaignName;
-            });
+            $('.campaign-name').text(this.campaignName);
         },
         setStoryline() {
             const storyline = 'storyline-' + app.game;
@@ -259,16 +220,12 @@ export default {
             }
         },
         scenarioClicked(e) {
-            let node = e.target;
-
-            while (node && !node.classList.contains('scenario') && node !== e.currentTarget) {
-                node = node.parentNode
+            let $node = $(e.currentTarget);
+            if (!$node.attr('id')) {
+                return;
             }
-
-            if (node.classList.contains('scenario') && node.id) {
-                const id = parseInt(node.id.replace('node', ''));
-                this.open(id);
-            }
+            let id = parseInt($(e.currentTarget).attr('id').replace('node', ''));
+            this.open(id);
         },
         open(id) {
             this.$bus.$emit('open-scenario', {id});
