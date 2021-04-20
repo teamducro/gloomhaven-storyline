@@ -174,12 +174,12 @@ export default {
         },
         renderChapters() {
             c('.chapter').each((index, element) => {
-                if (c(element).hasClass('intro')) {
+                if (element.classList.contains('intro')) {
                     c(element).show();
                     return;
                 }
 
-                let id = parseInt(c(element).attr('id').replace('chapter', '').trim());
+                let id = parseInt(element.id.replace('chapter', '').trim());
 
                 const isSideChapter = id > 99;
                 const scenariosInChapter = app.scenarios.where('chapter_id', id);
@@ -196,9 +196,9 @@ export default {
                 }
 
                 if (unlocked) {
-                    c(this).show();
+                    c(element).show();
                 } else {
-                    c(this).hide();
+                    c(element).hide();
                 }
             });
         },
