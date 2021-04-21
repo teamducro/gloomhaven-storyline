@@ -244,7 +244,9 @@ export default class ScenarioRepository {
     }
 
     where(filter) {
-        return this.get().filter(filter);
+        return this.get()
+            ? this.get().filter(filter)
+            : collect();
     }
 
     get() {

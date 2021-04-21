@@ -11,9 +11,9 @@
                     </button>
                 </template>
 
-                <ul class="mdc-list"
+                <ul class="mdc-list overflow-y-auto" style="max-height: calc(100vh - 100px)"
                     ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-                    <li class="mdc-list-item cursor-pointer" @click="resetFilter()">
+                    <li class="mdc-list-item cursor-pointer" @click="resetFilter(true)">
                         <span class="mdc-list-item__text">Clear filter</span>
                     </li>
 
@@ -35,48 +35,52 @@
 
                     <li v-for="region in scenarioRepository.fetchRegionsWithScenarios().items"
                         class="mdc-list-item cursor-pointer"
-                        :class="{'mdc-list-item--activated': regionFilter === region.id}"
-                        @click="setRegionFilter(region.id)">
+                        :class="{'mdc-list-item--activated': regionFilter.includes(region.id)}"
+                        @click="toggleRegionFilter(region.id)">
                         <span class="mdc-list-item__text">{{ region.name }}</span>
                     </li>
                 </ul>
             </dropdown>
         </div>
 
-        <ul v-if="scenarios" id="scenarios" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4" ref="list">
-            <li v-for="scenario in scenarios.items"
-                v-show="applyFilter(scenario)"
-                :key="scenario.id"
-                class="mdc-list-item h-auto cursor-pointer"
-                :tabindex="scenario.id">
-                <template v-if="scenario.isVisible()">
-                    <span class="mdc-list-item__text flex items-center">
-                        <webp :src="'/img/scenarios/' + scenario.id + '.png'"
-                              class="w-16 mr-4 my-1"
-                              :alt="scenario.name"/>
-                        <i v-if="scenario.isRequired()"
-                           class="material-icons text-required text-2xl mr-2">error_outline</i>
-                        <i v-else-if="scenario.isBlocked()"
-                           class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
-                        <i v-else-if="scenario.isComplete()"
-                           class="material-icons text-2xl mr-2">check_circle_outline</i>
-                        <i v-else
-                           class="material-icons text-complete text-2xl mr-2">radio_button_unchecked</i>
-                        {{ scenario.title }}
-                    </span>
+        <div v-if="scenarios" id="scenarios" class="m-auto mt-4 max-w-party">
+            <data-table :columns="columns"
+                        :sortable="sortable"
+                        :data="scenarios.items"
+                        odd-class="bg-black2-10"
+                        :initialSearch="applyFilter"
+                        :sortFunctions="sortFunctions"
+                        @rowClick="open"
+            >
+                <template slot="row" slot-scope="{row}">
+                    <template v-if="row.isHidden()">
+                        <td @click="open(row)" colspan="2"></td>
+                        <td @click="open(row)"
+                            colspan="100" class="relative px-1 py-2 md:p-3 overflow-hidden"
+                            :class="{'opacity-50': !row.is_side}">#{{ row.id }}
+                        </td>
+                    </template>
                 </template>
-                <template v-else-if="scenario.is_side">
-                    <span class="mdc-list-item__text pl-28">
-                        #{{ scenario.id }}
-                    </span>
+                <template slot="image" slot-scope="{value, row}">
+                    <webp :src="'/img/scenarios/' + row.id + '.png'"
+                          class="w-16 mr-4 my-1"
+                          :alt="row.name"/>
                 </template>
-                <template v-else>
-                    <span class="mdc-list-item__text opacity-50 pl-28">
-                        #{{ scenario.id }}
-                    </span>
+                <template slot="state" slot-scope="{value, row}">
+                    <i v-if="row.isRequired()"
+                       class="material-icons text-required text-2xl mr-2">error_outline</i>
+                    <i v-else-if="row.isBlocked()"
+                       class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
+                    <i v-else-if="row.isComplete()"
+                       class="material-icons text-2xl mr-2">check_circle_outline</i>
+                    <i v-else-if="row.isIncomplete()"
+                       class="material-icons text-complete text-2xl mr-2">radio_button_unchecked</i>
                 </template>
-            </li>
-        </ul>
+                <template slot="regions" slot-scope="{value, row}">
+                    <span v-if="value">{{ value.pluck('name').join(', ') }}</span>
+                </template>
+            </data-table>
+        </div>
     </div>
 </template>
 
@@ -90,9 +94,24 @@ export default {
         return {
             list: null,
             scenarios: null,
-            regionFilter: null,
+            regionFilter: [],
             missedTreasuresFilter: null,
             stateFilter: null,
+            columns: [
+                {id: 'image', name: 'Sticker'},
+                {id: 'state', name: 'State'},
+                {id: 'title', name: 'Name'},
+                {id: 'regions', name: 'Region', classes: 'hidden sm:table-cell'},
+                {id: 'chapter_name', name: 'Chapter', classes: 'hidden md:table-cell'},
+                {id: 'lootedAllTreasures', name: 'Looted', classes: 'hidden xs:table-cell'},
+                {id: 'is_side', name: 'Side', classes: 'hidden sm:table-cell'}
+            ],
+            sortFunctions: {
+                image: 'id',
+                title: 'id',
+                regions: this.sortRegion
+            },
+            sortable: ['image', 'state', 'title', 'regions', 'chapter_name', 'lootedAllTreasures', 'is_side'],
             states: [ScenarioState.incomplete],
             scenarioRepository: new ScenarioRepository()
         }
@@ -105,14 +124,14 @@ export default {
         this.$bus.$on('scenarios-updated', this.setScenarios);
     },
     destroyed() {
-        if (this.list) {
-            this.list.destroy();
-        }
+        // if (this.list) {
+        //     this.list.destroy();
+        // }
         this.$bus.$off('scenarios-updated', this.setScenarios);
     },
     computed: {
         filterEnabled() {
-            return this.regionFilter || this.missedTreasuresFilter || this.stateFilter;
+            return this.regionFilter.length || this.missedTreasuresFilter || this.stateFilter;
         }
     },
     methods: {
@@ -121,14 +140,14 @@ export default {
 
             await this.$nextTick();
 
-            if (this.list) {
-                this.list.destroy();
-            }
-            this.list = MDCList.attachTo(this.$refs['list']);
-            this.list.listen('MDCList:action', (event) => {
-                const id = this.scenarios.get(event.detail.index).id;
-                this.open(this.scenarioRepository.find(id));
-            });
+            // if (this.list) {
+            //     this.list.destroy();
+            // }
+            // this.list = MDCList.attachTo(this.$refs['list']);
+            // this.list.listen('MDCList:action', (event) => {
+            //     const id = this.scenarios.get(event.detail.index).id;
+            //     this.open(this.scenarioRepository.find(id));
+            // });
         },
         open(scenario) {
             if (scenario.isVisible() || scenario.is_side) {
@@ -138,33 +157,80 @@ export default {
             }
         },
         applyFilter(scenario) {
-            if (!this.regionFilter && !this.missedTreasuresFilter && !this.stateFilter) {
+            if (!this.regionFilter.length && !this.missedTreasuresFilter && !this.stateFilter) {
                 return true;
-            } else if (this.regionFilter) {
-                return scenario.inRegion(this.regionFilter);
-            } else if (this.stateFilter) {
+            }
+
+            if (this.regionFilter.length) {
+                let inRegion = false;
+                this.regionFilter.forEach((region) => {
+                    if (scenario.inRegion(region)) {
+                        inRegion = true;
+                    }
+                });
+                if (!inRegion) {
+                    return false;
+                }
+            }
+
+            if (this.stateFilter) {
                 return scenario.state === this.stateFilter;
             } else if (this.missedTreasuresFilter) {
-                return scenario.missedTreasures();
+                return scenario.missedTreasures;
             }
+
+            return true;
         },
-        setRegionFilter(id) {
-            this.resetFilter();
-            this.regionFilter = id;
+        sortRegion(a, b) {
+            if (a.isHidden() && a.isHidden()) {
+                return 0;
+            } else if (a.isHidden()) {
+                return 1;
+            } else if (b.isHidden()) {
+                return -1;
+            }
+
+            let regionA = a.regions ? a.regions.pluck('name').first() : '';
+            let regionB = b.regions ? b.regions.pluck('name').first() : '';
+
+            if (!regionA.length && !regionA.length) {
+                return 0;
+            } else if (!regionA.length) {
+                return 1;
+            } else if (!regionB.length) {
+                return -1;
+            }
+
+            return regionA.localeCompare(regionB);
+        },
+        toggleRegionFilter(id) {
+            this.regionFilter.includes(id)
+                ? this.regionFilter.splice(this.regionFilter.indexOf(id), 1)
+                : this.regionFilter.push(id);
         },
         setMissedTreasuresFilter() {
-            this.resetFilter();
-            this.missedTreasuresFilter = true;
+            if (!this.missedTreasuresFilter) {
+                this.resetFilter();
+                this.missedTreasuresFilter = true;
+            } else {
+                this.resetFilter();
+            }
         },
         setStateFilter(state) {
-            this.resetFilter();
-            this.stateFilter = state;
+            if (this.stateFilter !== state) {
+                this.resetFilter();
+                this.stateFilter = state;
+            } else {
+                this.resetFilter();
+            }
         },
-        resetFilter() {
-            this.$refs['filter-dropdown'].close();
-            this.regionFilter = null;
+        resetFilter(clearRegions = false) {
             this.missedTreasuresFilter = null;
             this.stateFilter = null;
+            if (clearRegions) {
+                this.$refs['filter-dropdown'].close();
+                this.regionFilter = [];
+            }
         }
     }
 }

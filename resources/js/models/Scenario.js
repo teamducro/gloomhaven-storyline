@@ -153,8 +153,12 @@ class Scenario {
         return this.region_ids.indexOf(id) >= 0
     }
 
-    missedTreasures() {
+    get missedTreasures() {
         return this.isComplete() && this.treasures.count() > this.unlockedTreasures.length;
+    }
+
+    get lootedAllTreasures() {
+        return this.isComplete() && this.treasures.count() > 0 && this.treasures.count() === this.unlockedTreasures.length;
     }
 
     hasCard() {
