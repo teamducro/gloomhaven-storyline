@@ -137,17 +137,6 @@ export default {
     methods: {
         async setScenarios() {
             this.scenarios = app.scenarios;
-
-            await this.$nextTick();
-
-            // if (this.list) {
-            //     this.list.destroy();
-            // }
-            // this.list = MDCList.attachTo(this.$refs['list']);
-            // this.list.listen('MDCList:action', (event) => {
-            //     const id = this.scenarios.get(event.detail.index).id;
-            //     this.open(this.scenarioRepository.find(id));
-            // });
         },
         open(scenario) {
             if (scenario.isVisible() || scenario.is_side) {
