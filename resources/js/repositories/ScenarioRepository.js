@@ -336,7 +336,7 @@ export default class ScenarioRepository {
     fetchRegionsWithScenarios(game) {
         const regionIds = this.where((scenario) => {
             return scenario.isVisible();
-        }).pluck('region_ids').flatten();
+        }).pluck('region_ids').flatten().items;
 
         return this.fetchAllRegions(game).whereIn('id', regionIds);
     }

@@ -33,7 +33,8 @@
 
                     <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                    <li v-for="region in scenarioRepository.fetchRegionsWithScenarios().items"
+                    <li v-if="scenarios"
+                        v-for="region in scenarioRepository.fetchRegionsWithScenarios().items"
                         class="mdc-list-item cursor-pointer"
                         :class="{'mdc-list-item--activated': regionFilter.includes(region.id)}"
                         @click="toggleRegionFilter(region.id)">
@@ -137,17 +138,6 @@ export default {
     methods: {
         async setScenarios() {
             this.scenarios = app.scenarios;
-
-            await this.$nextTick();
-
-            // if (this.list) {
-            //     this.list.destroy();
-            // }
-            // this.list = MDCList.attachTo(this.$refs['list']);
-            // this.list.listen('MDCList:action', (event) => {
-            //     const id = this.scenarios.get(event.detail.index).id;
-            //     this.open(this.scenarioRepository.find(id));
-            // });
         },
         open(scenario) {
             if (scenario.isVisible() || scenario.is_side) {
