@@ -33,7 +33,8 @@
 
                     <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                    <li v-for="region in scenarioRepository.fetchRegionsWithScenarios().items"
+                    <li v-if="scenarios"
+                        v-for="region in scenarioRepository.fetchRegionsWithScenarios().items"
                         class="mdc-list-item cursor-pointer"
                         :class="{'mdc-list-item--activated': regionFilter.includes(region.id)}"
                         @click="toggleRegionFilter(region.id)">
