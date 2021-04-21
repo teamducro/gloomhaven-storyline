@@ -82,7 +82,7 @@
                 <template slot="image" slot-scope="{value, row}">
                     <div class="overflow-hidden h-full -m-1 md:-m-3 top-0 left-0 cursor-pointer">
                         <webp :src="value" width="80" class="-mt-2 top-0 absolute max-w-none rounded"
-                              :animate="true"/>
+                              :alt="row.name" :animate="true"/>
                     </div>
                     <div class="w-16 md:w-12 h-2"></div>
                 </template>

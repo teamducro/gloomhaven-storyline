@@ -130,5 +130,11 @@ export default {
 
     isTracker() {
         cy.url().should('include', '/tracker');
+    },
+
+    assertTableCount(table, count) {
+        cy.get('#' + table + ' tbody tr').should(($list) => {
+            expect($list).to.have.length(count);
+        });
     }
 }

@@ -27,25 +27,25 @@ describe('Items', () => {
     it('It can search items', () => {
         cy.visit('/tracker/#/items');
 
-        assertItemCount(14);
+        utilities.assertTableCount('items', 14);
 
         cy.get('[name="item-search"]').type('boots');
-        assertItemCount(1);
+        utilities.assertTableCount('items', 1);
     });
 
     it('It can filter items', () => {
         cy.visit('/tracker/#/items');
 
-        assertItemCount(14);
+        utilities.assertTableCount('items', 14);
 
         cy.get('[alt="body"]').click();
-        assertItemCount(3);
+        utilities.assertTableCount('items', 3);
 
         cy.get('[alt="head"]').click();
-        assertItemCount(2);
+        utilities.assertTableCount('items', 2);
 
         cy.get('[alt="small-item"]').click();
-        assertItemCount(3);
+        utilities.assertTableCount('items', 3);
     });
 
     it('It opens item modal', () => {
@@ -122,9 +122,3 @@ describe('Items', () => {
         cy.get('#scenario-title h2').contains('#53 Crypt Basement');
     });
 });
-
-function assertItemCount(count) {
-    cy.get('#items tbody tr').should(($list) => {
-        expect($list).to.have.length(count);
-    });
-}
