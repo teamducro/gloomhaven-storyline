@@ -136,5 +136,11 @@ export default {
         cy.get('#' + table + ' tbody tr').should(($list) => {
             expect($list).to.have.length(count);
         });
+    },
+
+    switchGame(game) {
+        cy.get('button').contains('menu').click();
+        cy.get('.mdc-list-item__text').contains('Storyline').next().click();
+        cy.get('.' + game).click();
     }
 }

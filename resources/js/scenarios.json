@@ -3,6 +3,7 @@
         {
             "root": true,
             "id": 1,
+            "game": "gh",
             "name": "Black Barrow",
             "coordinates": {
                 "name": "G-10",
@@ -28,6 +29,7 @@
         },
         {
             "id": 2,
+            "game": "gh",
             "name": "Barrow Lair",
             "coordinates": {
                 "name": "G-11",
@@ -67,6 +69,7 @@
         },
         {
             "id": 3,
+            "game": "gh",
             "name": "Inox Encampment",
             "coordinates": {
                 "name": "G-3",
@@ -119,6 +122,7 @@
         },
         {
             "id": 4,
+            "game": "gh",
             "name": "Crypt of the Damned",
             "coordinates": {
                 "name": "E-11",
@@ -148,6 +152,7 @@
         },
         {
             "id": 5,
+            "game": "gh",
             "name": "Ruinous Crypt",
             "coordinates": {
                 "name": "D-6",
@@ -179,6 +184,7 @@
         },
         {
             "id": 6,
+            "game": "gh",
             "name": "Decaying Crypt",
             "coordinates": {
                 "name": "F-10",
@@ -215,6 +221,7 @@
         },
         {
             "id": 7,
+            "game": "gh",
             "name": "Vibrant Grotto",
             "coordinates": {
                 "name": "C-12",
@@ -250,6 +257,7 @@
         },
         {
             "id": 8,
+            "game": "gh",
             "name": "Gloomhaven Warehouse",
             "coordinates": {
                 "name": "C-18",
@@ -305,6 +313,7 @@
         },
         {
             "id": 9,
+            "game": "gh",
             "name": "Diamond Mine",
             "coordinates": {
                 "name": "L-2",
@@ -353,6 +362,7 @@
         },
         {
             "id": 10,
+            "game": "gh",
             "name": "Plane of Elemental Power",
             "coordinates": {
                 "name": "C-7",
@@ -397,6 +407,7 @@
         },
         {
             "id": 11,
+            "game": "gh",
             "name": "Gloomhaven Square A",
             "coordinates": {
                 "name": "B-16",
@@ -453,6 +464,7 @@
         },
         {
             "id": 12,
+            "game": "gh",
             "name": "Gloomhaven Square B",
             "coordinates": {
                 "name": "B-16",
@@ -507,6 +519,7 @@
         },
         {
             "id": 13,
+            "game": "gh",
             "name": "Temple of the Seer",
             "coordinates": {
                 "name": "N-3",
@@ -542,6 +555,7 @@
         },
         {
             "id": 14,
+            "game": "gh",
             "name": "Frozen Hollow",
             "coordinates": {
                 "name": "C-10",
@@ -572,6 +586,7 @@
         },
         {
             "id": 15,
+            "game": "gh",
             "name": "Shrine of Strength",
             "coordinates": {
                 "name": "B-11",
@@ -599,6 +614,7 @@
         },
         {
             "id": 16,
+            "game": "gh",
             "name": "Mountain Pass",
             "coordinates": {
                 "name": "B-6",
@@ -629,6 +645,7 @@
         },
         {
             "id": 17,
+            "game": "gh",
             "name": "Lost Island",
             "coordinates": {
                 "name": "K-17",
@@ -660,6 +677,7 @@
         },
         {
             "id": 18,
+            "game": "gh",
             "name": "Abandoned Sewers",
             "coordinates": {
                 "name": "C-14",
@@ -693,6 +711,7 @@
         },
         {
             "id": 19,
+            "game": "gh",
             "name": "Forgotten Crypt",
             "coordinates": {
                 "name": "M-7",
@@ -737,6 +756,7 @@
         },
         {
             "id": 20,
+            "game": "gh",
             "name": "Necromancers Sanctum",
             "coordinates": {
                 "name": "H-13",
@@ -779,6 +799,7 @@
         },
         {
             "id": 21,
+            "game": "gh",
             "name": "Infernal Throne",
             "coordinates": {
                 "name": "C-7",
@@ -826,6 +847,7 @@
         },
         {
             "id": 22,
+            "game": "gh",
             "name": "Temple of Elements",
             "coordinates": {
                 "name": "K-8",
@@ -871,6 +893,7 @@
         },
         {
             "id": 23,
+            "game": "gh",
             "name": "Deep Ruins",
             "coordinates": {
                 "name": "C-15",
@@ -905,6 +928,7 @@
         },
         {
             "id": 24,
+            "game": "gh",
             "name": "Echo Chamber",
             "coordinates": {
                 "name": "C-6",
@@ -938,6 +962,7 @@
         },
         {
             "id": 25,
+            "game": "gh",
             "name": "Icecrag Ascent",
             "coordinates": {
                 "name": "A-5",
@@ -972,6 +997,7 @@
         },
         {
             "id": 26,
+            "game": "gh",
             "name": "Ancient Cistern",
             "coordinates": {
                 "name": "D-15",
@@ -1022,6 +1048,7 @@
         },
         {
             "id": 27,
+            "game": "gh",
             "name": "Ruinous Rift",
             "coordinates": {
                 "name": "E-6",
@@ -1059,6 +1086,7 @@
         },
         {
             "id": 28,
+            "game": "gh",
             "name": "Outer Ritual Chamber",
             "coordinates": {
                 "name": "E-4",
@@ -1099,6 +1127,7 @@
         },
         {
             "id": 29,
+            "game": "gh",
             "name": "Sanctuary of Gloom",
             "coordinates": {
                 "name": "E-3",
@@ -1138,6 +1167,7 @@
         },
         {
             "id": 30,
+            "game": "gh",
             "name": "Shrine of the Depths",
             "coordinates": {
                 "name": "N-15",
@@ -1185,6 +1215,7 @@
         },
         {
             "id": 31,
+            "game": "gh",
             "name": "Plane of Night",
             "coordinates": {
                 "name": "A-16",
@@ -1242,6 +1273,7 @@
         },
         {
             "id": 32,
+            "game": "gh",
             "name": "Decrepit Wood",
             "coordinates": {
                 "name": "L-11",
@@ -1283,6 +1315,7 @@
         },
         {
             "id": 33,
+            "game": "gh",
             "name": "Savvas Armory",
             "coordinates": {
                 "name": "A-7",
@@ -1333,6 +1366,7 @@
         },
         {
             "id": 34,
+            "game": "gh",
             "name": "Scorched Summit",
             "coordinates": {
                 "name": "A-4",
@@ -1387,6 +1421,7 @@
         },
         {
             "id": 35,
+            "game": "gh",
             "name": "Gloomhaven Battlements A",
             "coordinates": {
                 "name": "A-14",
@@ -1453,6 +1488,7 @@
         },
         {
             "id": 36,
+            "game": "gh",
             "name": "Gloomhaven Battlements B",
             "coordinates": {
                 "name": "B-14",
@@ -1514,6 +1550,7 @@
         },
         {
             "id": 37,
+            "game": "gh",
             "name": "Doom Trench",
             "coordinates": {
                 "name": "G-18",
@@ -1558,6 +1595,7 @@
         },
         {
             "id": 38,
+            "game": "gh",
             "name": "Slave Pens",
             "coordinates": {
                 "name": "G-2",
@@ -1594,6 +1632,7 @@
         },
         {
             "id": 39,
+            "game": "gh",
             "name": "Treacherous Divide",
             "coordinates": {
                 "name": "B-11",
@@ -1630,6 +1669,7 @@
         },
         {
             "id": 40,
+            "game": "gh",
             "name": "Ancient Defense Network",
             "coordinates": {
                 "name": "F-12",
@@ -1678,6 +1718,7 @@
         },
         {
             "id": 41,
+            "game": "gh",
             "name": "Timeworn Tomb",
             "coordinates": {
                 "name": "F-13",
@@ -1728,6 +1769,7 @@
         },
         {
             "id": 42,
+            "game": "gh",
             "name": "Realm of the Voice",
             "coordinates": {
                 "name": "C-5",
@@ -1781,6 +1823,7 @@
         },
         {
             "id": 43,
+            "game": "gh",
             "name": "Drake Nest",
             "coordinates": {
                 "name": "D-4",
@@ -1818,6 +1861,7 @@
         },
         {
             "id": 44,
+            "game": "gh",
             "name": "Tribal Assault",
             "coordinates": {
                 "name": "F-3",
@@ -1853,6 +1897,7 @@
         },
         {
             "id": 45,
+            "game": "gh",
             "name": "Rebel Swamp",
             "coordinates": {
                 "name": "M-9",
@@ -1894,6 +1939,7 @@
         },
         {
             "id": 46,
+            "game": "gh",
             "name": "Nightmare Peak",
             "coordinates": {
                 "name": "A-11",
@@ -1933,6 +1979,7 @@
         },
         {
             "id": 47,
+            "game": "gh",
             "name": "Lair of the Unseeing Eye",
             "coordinates": {
                 "name": "H-18",
@@ -1973,6 +2020,7 @@
         },
         {
             "id": 48,
+            "game": "gh",
             "name": "Shadow Weald",
             "coordinates": {
                 "name": "E-1",
@@ -2012,6 +2060,7 @@
         },
         {
             "id": 49,
+            "game": "gh",
             "name": "Rebels Stand",
             "coordinates": {
                 "name": "N-7",
@@ -2059,6 +2108,7 @@
         },
         {
             "id": 50,
+            "game": "gh",
             "name": "Ghost Forrest",
             "coordinates": {
                 "name": "C-17",
@@ -2107,6 +2157,7 @@
         },
         {
             "id": 51,
+            "game": "gh",
             "name": "The Void",
             "coordinates": {
                 "name": "A-15",
@@ -2151,6 +2202,7 @@
         },
         {
             "id": 52,
+            "game": "gh",
             "name": "Noxious Cellar",
             "coordinates": {
                 "name": "D-14",
@@ -2176,6 +2228,7 @@
         },
         {
             "id": 53,
+            "game": "gh",
             "name": "Crypt Basement",
             "coordinates": {
                 "name": "F-11",
@@ -2209,6 +2262,7 @@
         },
         {
             "id": 54,
+            "game": "gh",
             "name": "Palace of Ice",
             "coordinates": {
                 "name": "D-8",
@@ -2240,6 +2294,7 @@
         },
         {
             "id": 55,
+            "game": "gh",
             "name": "Foggy Thicket",
             "coordinates": {
                 "name": "G-5",
@@ -2267,6 +2322,7 @@
         },
         {
             "id": 56,
+            "game": "gh",
             "name": "Bandits Wood",
             "coordinates": {
                 "name": "G-4",
@@ -2299,6 +2355,7 @@
         },
         {
             "id": 57,
+            "game": "gh",
             "name": "Investigation",
             "coordinates": {
                 "name": "D-14",
@@ -2330,6 +2387,7 @@
         },
         {
             "id": 58,
+            "game": "gh",
             "name": "Bloody Shack",
             "coordinates": {
                 "name": "E-15",
@@ -2358,6 +2416,7 @@
         },
         {
             "id": 59,
+            "game": "gh",
             "name": "Forgotten Grove",
             "coordinates": {
                 "name": "F-1",
@@ -2382,6 +2441,7 @@
         },
         {
             "id": 60,
+            "game": "gh",
             "name": "Alchemy Lab",
             "coordinates": {
                 "name": "B-15",
@@ -2411,6 +2471,7 @@
         },
         {
             "id": 61,
+            "game": "gh",
             "name": "Fading Lighthouse",
             "coordinates": {
                 "name": "N-11",
@@ -2436,6 +2497,7 @@
         },
         {
             "id": 62,
+            "game": "gh",
             "name": "Pit of Souls",
             "coordinates": {
                 "name": "O-11",
@@ -2467,6 +2529,7 @@
         },
         {
             "id": 63,
+            "game": "gh",
             "name": "Magma Pit",
             "coordinates": {
                 "name": "M-1",
@@ -2490,6 +2553,7 @@
         },
         {
             "id": 64,
+            "game": "gh",
             "name": "Under Water Lagoon",
             "coordinates": {
                 "name": "K-16",
@@ -2521,6 +2585,7 @@
         },
         {
             "id": 65,
+            "game": "gh",
             "name": "Sulfur Mine",
             "coordinates": {
                 "name": "L-5",
@@ -2545,6 +2610,7 @@
         },
         {
             "id": 66,
+            "game": "gh",
             "name": "Clockwork Cove",
             "coordinates": {
                 "name": "G-14",
@@ -2570,6 +2636,7 @@
         },
         {
             "id": 67,
+            "game": "gh",
             "name": "Arcane Library",
             "coordinates": {
                 "name": "K-2",
@@ -2593,6 +2660,7 @@
         },
         {
             "id": 68,
+            "game": "gh",
             "name": "Toxic Moor",
             "coordinates": {
                 "name": "N-8",
@@ -2616,6 +2684,7 @@
         },
         {
             "id": 69,
+            "game": "gh",
             "name": "Well of the Unfortunate",
             "coordinates": {
                 "name": "F-8",
@@ -2633,6 +2702,7 @@
         },
         {
             "id": 70,
+            "game": "gh",
             "name": "Chained Isle",
             "coordinates": {
                 "name": "J-17",
@@ -2657,6 +2727,7 @@
         },
         {
             "id": 71,
+            "game": "gh",
             "name": "Windswept Highlands",
             "coordinates": {
                 "name": "K-5",
@@ -2675,6 +2746,7 @@
         },
         {
             "id": 72,
+            "game": "gh",
             "name": "Oozing Grove",
             "coordinates": {
                 "name": "H-12",
@@ -2693,6 +2765,7 @@
         },
         {
             "id": 73,
+            "game": "gh",
             "name": "Rockslide Ridge",
             "coordinates": {
                 "name": "N-5",
@@ -2713,6 +2786,7 @@
         },
         {
             "id": 74,
+            "game": "gh",
             "name": "Merchant Ship",
             "coordinates": {
                 "name": "I-14",
@@ -2748,6 +2822,7 @@
         },
         {
             "id": 75,
+            "game": "gh",
             "name": "Overgrown Graveyard",
             "coordinates": {
                 "name": "G-12",
@@ -2779,6 +2854,7 @@
         },
         {
             "id": 76,
+            "game": "gh",
             "name": "Harrower Hive",
             "coordinates": {
                 "name": "L-3",
@@ -2801,6 +2877,7 @@
         },
         {
             "id": 77,
+            "game": "gh",
             "name": "Vault of Secrets",
             "coordinates": {
                 "name": "B-17",
@@ -2822,6 +2899,7 @@
         },
         {
             "id": 78,
+            "game": "gh",
             "name": "Sacrifice Pit",
             "coordinates": {
                 "name": "B-14",
@@ -2845,6 +2923,7 @@
         },
         {
             "id": 79,
+            "game": "gh",
             "name": "Lost Temple",
             "coordinates": {
                 "name": "K-12",
@@ -2882,6 +2961,7 @@
         },
         {
             "id": 80,
+            "game": "gh",
             "name": "Vigil Keep",
             "coordinates": {
                 "name": "K-1",
@@ -2906,6 +2986,7 @@
         },
         {
             "id": 81,
+            "game": "gh",
             "name": "Temple of the Eclipse",
             "coordinates": {
                 "name": "D-2",
@@ -2932,6 +3013,7 @@
         },
         {
             "id": 82,
+            "game": "gh",
             "name": "Burning Mountain",
             "coordinates": {
                 "name": "M-6",
@@ -2965,6 +3047,7 @@
         },
         {
             "id": 83,
+            "game": "gh",
             "name": "Shadows Within",
             "coordinates": {
                 "name": "C-15",
@@ -2996,6 +3079,7 @@
         },
         {
             "id": 84,
+            "game": "gh",
             "name": "Crystalline Cave",
             "coordinates": {
                 "name": "D-12",
@@ -3032,6 +3116,7 @@
         },
         {
             "id": 85,
+            "game": "gh",
             "name": "Sun Temple",
             "coordinates": {
                 "name": "M-3",
@@ -3058,6 +3143,7 @@
         },
         {
             "id": 86,
+            "game": "gh",
             "name": "Harried Village",
             "coordinates": {
                 "name": "D-15",
@@ -3089,6 +3175,7 @@
         },
         {
             "id": 87,
+            "game": "gh",
             "name": "Corrupted Cove",
             "coordinates": {
                 "name": "I-9",
@@ -3124,6 +3211,7 @@
         },
         {
             "id": 88,
+            "game": "gh",
             "name": "Plane of Water",
             "coordinates": {
                 "name": "D-16",
@@ -3161,6 +3249,7 @@
         },
         {
             "id": 89,
+            "game": "gh",
             "name": "Syndicate Hideout",
             "coordinates": {
                 "name": "C-17",
@@ -3198,6 +3287,7 @@
         },
         {
             "id": 90,
+            "game": "gh",
             "name": "Demonic Rift",
             "coordinates": {
                 "name": "J-7",
@@ -3221,6 +3311,7 @@
         },
         {
             "id": 91,
+            "game": "gh",
             "name": "Wild Melee",
             "coordinates": {
                 "name": "E-2",
@@ -3244,6 +3335,7 @@
         },
         {
             "id": 92,
+            "game": "gh",
             "name": "Back Alley Brawl",
             "coordinates": {
                 "name": "C-14",
@@ -3278,6 +3370,7 @@
         },
         {
             "id": 93,
+            "game": "gh",
             "name": "Sunken Vessel",
             "coordinates": {
                 "name": "N-17",
@@ -3312,6 +3405,7 @@
         },
         {
             "id": 94,
+            "game": "gh",
             "name": "Vermling Nest",
             "coordinates": {
                 "name": "F-12",
@@ -3335,6 +3429,7 @@
         },
         {
             "id": 95,
+            "game": "gh",
             "name": "Payment Due",
             "coordinates": {
                 "name": "G-12",
@@ -3367,6 +3462,7 @@
         {
             "root": true,
             "id": 96,
+            "game": "fc",
             "name": "Unexpected Visitors",
             "pages": [
                 "fc/1/5",
@@ -3404,6 +3500,7 @@
         },
         {
             "id": 97,
+            "game": "fc",
             "name": "Lore Untold",
             "pages": [
                 "fc/1/6",
@@ -3442,6 +3539,7 @@
         },
         {
             "id": 98,
+            "game": "fc",
             "name": "Past in Flames",
             "pages": [
                 "fc/1/7",
@@ -3506,6 +3604,7 @@
         },
         {
             "id": 99,
+            "game": "fc",
             "name": "Aftershocks",
             "pages": [
                 "fc/1/8",
@@ -3558,6 +3657,7 @@
         },
         {
             "id": 100,
+            "game": "fc",
             "name": "Shifting Gears",
             "pages": [
                 "fc/1/9",
@@ -3615,6 +3715,7 @@
         },
         {
             "id": 101,
+            "game": "fc",
             "name": "Shrouded Crypt",
             "coordinates": {
                 "name": "K-9",
@@ -3658,6 +3759,7 @@
         },
         {
             "id": 102,
+            "game": "fc",
             "name": "Bazaar of Knowledge",
             "coordinates": {
                 "name": "M-19",
@@ -3717,6 +3819,7 @@
         },
         {
             "id": 103,
+            "game": "fc",
             "name": "Where It Is Needed",
             "coordinates": {
                 "name": "H-8",
@@ -3775,6 +3878,7 @@
         },
         {
             "id": 104,
+            "game": "fc",
             "name": "A Gaping Would",
             "coordinates": {
                 "name": "J-3",
@@ -3833,6 +3937,7 @@
         },
         {
             "id": 105,
+            "game": "fc",
             "name": "Monstrosities of a Cult",
             "coordinates": {
                 "name": "B-10",
@@ -3897,6 +4002,7 @@
         },
         {
             "id": 106,
+            "game": "fc",
             "name": "Intricate Work",
             "coordinates": {
                 "name": "I-12",
@@ -3970,6 +4076,7 @@
         },
         {
             "id": 107,
+            "game": "fc",
             "name": "Mechanical Genius",
             "coordinates": {
                 "name": "F-14",
@@ -4041,6 +4148,7 @@
         },
         {
             "id": 108,
+            "game": "fc",
             "name": "Prologue to the End",
             "coordinates": {
                 "name": "O-1",
@@ -4113,6 +4221,7 @@
         },
         {
             "id": 109,
+            "game": "fc",
             "name": "Epilogue of a War",
             "coordinates": {
                 "name": "N-4",
@@ -4167,6 +4276,7 @@
         },
         {
             "id": 110,
+            "game": "fc",
             "name": "A Circular Solution",
             "coordinates": {
                 "name": "L-19",
@@ -4209,6 +4319,7 @@
         },
         {
             "id": 111,
+            "game": "fc",
             "name": "The Shackles Loosen",
             "coordinates": {
                 "name": "B-18",
@@ -4271,6 +4382,7 @@
         },
         {
             "id": 112,
+            "game": "fc",
             "name": "The Bottom of It",
             "coordinates": {
                 "name": "E-16",
@@ -4329,6 +4441,7 @@
         },
         {
             "id": 113,
+            "game": "fc",
             "name": "The Lost Thread",
             "coordinates": {
                 "name": "H-16",
@@ -4370,6 +4483,7 @@
         },
         {
             "id": 114,
+            "game": "fc",
             "name": "Ink Not Yet Dry",
             "coordinates": {
                 "name": "E-14",
@@ -4423,6 +4537,7 @@
         },
         {
             "id": 115,
+            "game": "fc",
             "name": "Future Uncertain",
             "coordinates": {
                 "name": "H-16",
@@ -4459,6 +4574,7 @@
         },
         {
             "id": 200,
+            "game": "fc",
             "name": "Tower to the Stars",
             "pages": [
                 "fc/1/26",

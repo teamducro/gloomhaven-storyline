@@ -147,10 +147,17 @@ export default {
             }
         },
         applyFilter(scenario) {
+            // Only show scenarios from selected game (GH/FC)
+            if (scenario.game && app.game && scenario.game !== app.game) {
+                return false;
+            }
+
+            // Filter is not applied
             if (!this.regionFilter.length && !this.missedTreasuresFilter && !this.stateFilter) {
                 return true;
             }
 
+            // Apply region
             if (this.regionFilter.length) {
                 let inRegion = false;
                 this.regionFilter.forEach((region) => {
@@ -163,6 +170,7 @@ export default {
                 }
             }
 
+            // Apply other filters
             if (this.stateFilter) {
                 return scenario.state === this.stateFilter;
             } else if (this.missedTreasuresFilter) {

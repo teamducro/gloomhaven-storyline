@@ -154,9 +154,7 @@ describe('Storyline', () => {
     it('It opens FC', () => {
         cy.visit('/tracker');
 
-        cy.get('button').contains('menu').click();
-        cy.get('.mdc-list-item__text').contains('Storyline').next().click();
-        cy.get('.fc').click();
+        utilities.switchGame('fc');
 
         utilities.isNodeIncomplete(96);
         utilities.completeScenario(96);
@@ -174,10 +172,7 @@ describe('Storyline', () => {
             utilities.checkNodeState(id, data ? data.state : 'hidden');
         }
 
-        // Open FC
-        cy.get('button').contains('menu').click();
-        cy.get('.mdc-list-item__text').contains('Storyline').next().click();
-        cy.get('.fc').click();
+        utilities.switchGame('fc');
 
         // check FC scenarios
         for (let id = 96; id <= 115; id++) {
