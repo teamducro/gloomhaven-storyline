@@ -43,6 +43,7 @@ class Scenario {
         this.prompt = data.prompt;
         this._promptChoice = null;
         this.hasPrompt = typeof data.prompt !== 'undefined';
+        this.game = data.game;
 
         this.fieldsToStore = {
             "state": "_state",
