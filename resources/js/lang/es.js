@@ -629,8 +629,8 @@ export default {
         14: {
             "name": "Poder Ilimitado",
             "sections": {
-                1: "You've learned of a shrine's location in the Copperneck mountains. Your sources tell you that this shrine is marked with the symbols for power and strength. You're fond of both of those, so the shrine seems worth investigating.",
-                2: "The shrine was a trial. \"Strength begets strength\" was inscribed in ancient writings on the walls. You demonstrated your strength by defeating the shrine's guardians and grabbing hold of the Sigil of Strength. The sigil bestowed a great strength upon you, but also showed you visions of strange runic alphabet. Perhaps the symbols have a deeper meaning?"
+                1: "Os enterasteis de la ubicación de un santuario en las Montañas Cobrizas. Vuestras fuentes os dicen que este santuario está marcado con los símbolos de poder y fuerza. Os atraen ambos, por lo que parece que vale la pena investigar el santuario.",
+                2: "El santuario fue una prueba. \"La fuerza genera fuerza \" estaba grabado en runas en las paredes. Demostrasteis vuestra fuerza al derrotar a los guardianes del santuario y coger el Sello de la Fuerza. El Sello os otorgó una gran fuerza, pero también os mostró visiones de un extraño alfabeto rúnico. ¿Quizás los símbolos tienen un significado más profundo?"
             },
             "stages": {
                 0: "{1}",
