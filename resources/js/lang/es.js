@@ -630,7 +630,7 @@ export default {
             "name": "Poder Ilimitado",
             "sections": {
                 1: "Os enterasteis de la ubicación de un santuario en las Montañas Cobrizas. Vuestras fuentes os dicen que este santuario está marcado con los símbolos de poder y fuerza. Os atraen ambos, por lo que parece que vale la pena investigar el santuario.",
-                2: "El santuario fue una prueba. \"La fuerza genera fuerza \" estaba grabado en runas en las paredes. Demostrasteis vuestra fuerza al derrotar a los guardianes del santuario y coger el Sello de la Fuerza. El Sello os otorgó una gran fuerza, pero también os mostró visiones de un extraño alfabeto rúnico. ¿Quizás los símbolos tienen un significado más profundo?"
+                2: "El santuario fue una prueba. “La fuerza genera fuerza” estaba grabado en runas en las paredes. Demostrasteis vuestra fuerza al derrotar a los guardianes del santuario y coger el Sello de la Fuerza. El Sello os otorgó una gran fuerza, pero también os mostró visiones de un extraño alfabeto rúnico. ¿Quizás los símbolos tienen un significado más profundo?"
             },
             "stages": {
                 0: "{1}",
@@ -638,11 +638,11 @@ export default {
             }
         },
         15: {
-            "name": "Hay Dragones",
+            "name": "En Busca de Dragones",
             "sections": {
-                1: "You've heard reports of large flying creatures in the Copperneck Mountains. Could there really be dragons in the mountains? It's worth investigating, dragons could pose a serious threat to the city.",
-                2: "Your goal is the Icecrag, the tallest mountain in the Coppernecks. On your way there, you were ambushed by a group of Inox and Demons. Their co-existence was curious, but your ultimate goal lies further ahead.",
-                3: "The climb up the Icecrag was grueling and arduous. You had to fight off the cold, the wolves, and a nest of angry drakes. However you did get to the bottom of this dragon business. Atop the peak was a gigantic winged lizard - that could speak. It spoke with a gravelly voice that surprised you with its eloquence. In fact, it asked for your help. “A group of Savvas subdued me in my sleep and removed one of my flame glands, presumably to study. I cannot let this insult go unpunished and would greatly appreciate you taking it back from their city, killing as many of them as you can in the process.Or, if you wish to be cliché\" the creature said with a sigh, \"you could simply attack me. Slay the dragon, save the princess, and all that. Except I have no princess, and I’m not a dragon — just a drake who has lived a long time and does not wish to end his life today. So if you do attack me, I will fight back, and you will most assuredly die.”"
+                1: "Habéis escuchado informes de grandes criaturas voladoras en las Montañas Cobrizas. ¿Realmente podría haber dragones en las montañas? Vale la pena investigarlo, los dragones podrían representar una seria amenaza para la ciudad.",
+                2: "Vuestro objetivo es el Risco de Hielo, la más alta de las Montañas Cobrizas. En tu camino hacia allí, fuiste emboscado por un grupo formado por Inox y Demonios. ¿Qué hacían juntos Inox y demonios? ¿Y tan al norte? Solo encontráis garabatos entre sus pertenencias que hacen referencia a una “voz.”. Pensáis que habrá algunas pistas abajo, en los túneles",
+                3: "Las Montañas Cobrizas no son hospitalarias. El clima, los lobos y algunos dracos ralentizan vuestro proceso de subida de la montaña. Un lagarto gigante alado se posa sobre una roca afilada. El lagarto pide ayuda: “Un grupo de Savvas me sometió mientras dormía y me quitó una de mis glándulas flamígeras, probablemente con la intención de estudiarla. No puedo permitir que esta afrenta quede impune, por lo que estaría sumamente agradecido si la recuperarais de la ciudad y dierais muerte a tantos de ellos como os fuera posible”. “O, si preferís caer en los tópicos”, dice la criatura con un suspiro, “podéis atacarme. Pero me defenderé y, con mucha probabilidad, moriréis”."
             },
             "stages": {
                 0: "{1}",
