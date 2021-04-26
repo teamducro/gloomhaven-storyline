@@ -698,9 +698,9 @@ export default {
         19: {
             "name": "Exorcismo",
             "sections": {
-                1: "Within the rift between realms, you've met a powerful Demon.{br}Assaulting him within his own realm will be difficult, but it's time he perished.",
-                2: "The rift was neutralized before you could confront the demon within his palace.",
-                3: "Attacking a demon within his own realm may have been a tad foolhardy. The demon was invulnerable, but you managed to smash an altar of black glass that seemed to contain the demon's essence. With it's destruction, the Prime Demon shattered into countless shards of stone."
+                1: "Dentro de la fisura, habéis conocido a un poderoso Demonio. Enfrentaros a el  dentro de su propio reino será difícil, pero es hora de eliminarlo.",
+                2: "La grieta fue cerrada antes de que pudierais enfrentaros al Demonio Supremo dentro de su plano.",
+                3: "Atacar a un demonio dentro de su propio plano puede haber sido un poco temerario. El Demonio Supremo parecía inmune a todo el daño, pero lograsteis romper un altar de vidrio negro que lo protegía. Con su destrucción, la grieta lanza una onda que destruye a todos los demonios en su camino hasta llegarl al Demonio Supremo que se fragmenta en innumerables esquirlas de roca."
             },
             "stages": {
                 0: "{1}",
