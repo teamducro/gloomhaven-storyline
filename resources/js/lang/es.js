@@ -653,8 +653,8 @@ export default {
         16: {
             "name": "La Isla del Tesoro",
             "sections": {
-                1: "You've learned of an undiscovered island in the Misty Sea that is rumored to contain vast riches. It's time to charter a boat.",
-                2: "The island was infested with wild Vermlings. However, no Vermling can stand between you and treasure. You stormed the island and discovered the remains of a derelict ship that the Vermlings were taking refuge in. The ship contained a plethora of gold, ripe for the taking. Who knows what the Vermlings were using the gold for, but you have a good idea what you will use it for."
+                1: "Os habéis enterado de una isla sin descubrir en el Mar Brumoso que se rumorea que contiene grandes riquezas. Es hora de alquilar un barco.¡Vamos!",
+                2: "La isla estaba llena de criaturas salvajes, sin embargo, ninguna puede interponerse entre vosotros y el tesoro. Irrumpisteis en la isla y descubristeis los restos de un barco abandonado en el que se estaban refugiando la tribu de Infestores. El barco contenía grandes alijos de oro bajo la cubierta. Quién sabe para qué estarían usando el oro los Infestores, aunque vosotros también tenéis una buena idea de qué hacer con él."
             },
             "stages": {
                 0: "{1}",
