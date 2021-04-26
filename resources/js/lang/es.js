@@ -731,10 +731,10 @@ export default {
             }
         },
         22: {
-            "name": "Escuchando Cosas",
+            "name": "Una Voz",
             "sections": {
-                1: "The Inox and demons you encountered on the way to the Icecrag had some crude scratching mentioning a 'voice' on among their belongings. There was a cave nearby the Mountain Pass that seemed to call to you. You feel a subtle and powerful urge to explore the cave.",
-                2: "The cave contains a powerful creature, known only as 'The Voice'. With it's guidance, you were able to restore the creature's booming, bone-rattling voice. It asks that you help free it from bondage, but The Voice's motives remain uncertain."
+                1: "Los Inox y los demonios que encontraste en el camino al Risco de Hielo tenían algunos garabatos rudimentarios haciendo referencia a una “voz” entre sus pertenencias. Había una cueva cerca del paso de la montaña que parecía llamaros. Sentís una sutil y poderosa necesidad de explorar la cueva.",
+                2: "La cueva contenía una criatura poderosa, conocida solo como “La Voz”. Con su plan, podréis devolverle su forma de nuevo. Os pide que lo ayudeis a liberarlo del viento que lo atrapa consiguiendo sus receptáculos, pero lo que es exactamente “La Voz” es algo que no estendíais."
             },
             "stages": {
                 0: "{1}",
