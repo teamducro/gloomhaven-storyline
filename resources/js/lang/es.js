@@ -720,10 +720,10 @@ export default {
             }
         },
         21: {
-            "name": "El fondo de la Fosa",
+            "name": "Las Profundidades",
             "sections": {
-                1: "While trying to discover the source of Gloomhaven's poisoned water, you've discovered a secret passage in the sewers. Perhaps there might be something interesting inside.",
-                2: "The passageway was alarmed and brought a series of mechanical sentries to life. You were able to split up and silence the alarm, which stopped the sentries in their tracks. These mechanical creations may be of some use in the future, but for now you've found a way around the deepest part of the cistern. Unfortunately, you're still going to need to get wet if you want to go further."
+                1: "Al intentar descubrir la fuente del agua envenenada de Gloomhaven en las alcantarillas, habéis descubierto unas grietas en la pared que muestran un camino hacia las profundidades. Quizás haya algo interesante dentro.",
+                2: "Descubristeis pasadizos hechos de piedra con grabados en lenguaje rúnico. Tras llegar a una sala un ruido metálico sonó como una alarma que activó maquinaria con intención de atacaros. Pudisteis separaros para desactivar la alarma, lo que detuvo toda actividad de las maquinarias. Estas creaciones mecánicas serán de alguna utilidad en el futuro, pero por ahora habéis encontrado un pasillo que desciende hasta un charco de líquido salobre. Un baño rápido os sumergirá aún más en ese mundo subterráneo."
             },
             "stages": {
                 0: "{1}",
