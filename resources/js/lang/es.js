@@ -744,8 +744,8 @@ export default {
         23: {
             "name": "Mira Quién Habla",
             "sections": {
-                1: "The Voice is such a powerful creature. You must find out more about whatever it is and what it's motives are.",
-                2: "A Quatryl scholar has advised you that the Voice may be a powerful demon bound for good reason. Although he was a bit unsure of the accuracy the text he was referring to, he warned you against freeing the Voice. He then pointed you towards a scepter that may strengthen the binding ritual. You retrieved it from a shrine on the edge of the Lingering Swamp. It was filled with dark energies, and the Voice pleaded with you not to bring the scepter into its chambers. The Voice claims you have been misled. You'll be the one to decide that."
+                1: "Decidís tratar de averiguar qué es exactamente La Voz, en lugar de jugar con poderes que no entendéis",
+                2: "Un estudioso Quatryl de la universidad os contó que la Voz podía ser un poderoso demonio encerrado por un buen motivo aunque la precisión del texto donde se encontraba esta información era un tanto cuestionable. Os contó que había un cetro que podía fortalecer el ritual de atadura que lo encerraba, el cual, fueiteis a recuperar de un templo en una isla de la costa sur. Estaba lleno de energías oscuras y la Voz os habló en vustras mentes suplicando que no llevarais el cetro hasta él, afirmaba que os habían engañado. Seréis vosotros quienes decidáis qué hacer."
             },
             "stages": {
                 0: "{1}",
