@@ -819,11 +819,11 @@ export default {
         28: {
             "name": "Almas Oscuras",
             "sections": {
-                1: "A demon has tasked you (or rather threatened) with retrieving a powerful artifact. Helping such a powerful creature could certainly be profitable, but at what cost?",
-                2: "You've retrieved the artifact, as the demon requested. It's abundantly clear that the artifact has been corrupted. If you bring this to the demon, he will most certainly use it for a great and terrible evil.",
-                3: "You sealed the rift without handing over the artifact to the Demon. Clearly it was not to be trusted with such a dangerous and powerful item.",
-                4: "You knew it would be bad... but a demon invasion of Gloomhaven was not what you had in mind. This was too much for you to handle on your own. You escaped the demon's lair and ran to warn the city guard just in time. The demons assailed the gate with tremendous numbers, but you were able to hold long enough to wear down the Prime Demon. He managed to breach the gate, but you put him down and his armies scattered. Gloomhaven is safe for now, but you may want to reconsider your policy of handing powerful artifacts to evil creatures.",
-                5: "You handed over the artifact to the demon, who revealed he would use it's power to take over Gloomhaven. Sounded good to you. Those fools in Gloomhaven never appreciated you anyway. With the aid of the demon army, you sacked the garrison and slaughtered the guard. Gloomhaven is now under demon rule."
+                1: "Un demonio os encomendó (con algo de amenazas) recuperar un artefacto de gran poder en un templo junto al río Beso de la Sierpe. Ayudar a esta criatura podría ser rentable, pero ¿a qué costo?",
+                2: "Habéis recuperado el artefacto, como pidió la criatura. El artefacto estaba corrompido. Si le llevabais eso al demonio, seguramente lo usaría para causar grandes males.",
+                3: "Neutralizasteis la grieta antes de buscar el artefacto y entregarlo al demonio. Claramente, no se podía confiar en las palabras de un demonio.",
+                4: "Sabíais que el demonio traería algo malo... pero destruir Gloomhaven no era lo que teníais en mente. Nunca debisteis de traerle ese artefacto. Escapasteis del Plano Elemental y corristeis a Gloomhaven a advertir al capitán de la guardia para preparar a la ciudad ante el asalto. El ejército de los demonios logró entrar por uno de los portones, pero pudisteis aguantar hasta acabar con el Demonio Supremo haciendo que sus fuerzas se despersaran. Gloomhaven estaba a salvo por ahora, pero habría que reconsiderar nuestra política de entregar artefactos poderosos a criaturas malvadas.",
+                5: "Le entregasteis el artefacto al demonio, quien reveló que usaría su poder para apoderarse de Gloomhaven. Sonreísteis y asentísteis. Por fin obtendríais el reconocimiento que merecéis. Con la ayuda del ejército de demonios, acabasteis con la guardia de la cuidad y matasteis su capitán. Gloomhaven ahora está bajo un gobierno demoníaco."
             },
             "stages": {
                 0: "{1}",
