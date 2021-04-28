@@ -804,11 +804,11 @@ export default {
             }
         },
         27: {
-            "name": "Cazador de Dragones",
+            "name": "El Draco Anciano",
             "sections": {
-                1: "High atop the Icecrag, the Elder Drake has asked you for a favor. Has it not heard of you? You're not in the business of negotiating with lizards. It's time to kill a dragon.",
-                2: "On second thought, having a dragon in your debt may prove useful. You decided to help the Elder Drake. After all, it was the first drake not to try and eat you.",
-                3: "You never imagined a 'dragon' would be so snide as it lay dying. Despite its sarcasm to the contrary, the city pays you well enough for slaying the Elder Drake."
+                1: "En lo alto del Risco de Hielo, os encontrateis con el Draco anciano. No teníais nada que discutir con el monstruos, los dracos que habñiais conocido anteriormente no habían sido muy amables., así que os preparásteis para luchar",
+                2: "Pensándolo bien, tener un dragón en deuda con vosotros podía resultar útil. Decidisteis ayudar al Draco anciano. Después de todo, fue el primer draco que no intentó comerte.",
+                3: "Nunca esperaríais que un draco fuera tan sarcástico mientras moría. A pesar de su sarcasmo, la ciudad os pagó una modesta recompensa por matar al Draco anciano."
             },
             "stages": {
                 0: "{1}",
