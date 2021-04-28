@@ -875,7 +875,7 @@ export default {
             }
         },
         33: {
-            "name": "Cállate y Siéntate",
+            "name": "¡Cállate!",
             "sections": {
                 1: "Dentro de una cueva en las Montañas Cobrizas, habíais descubierto una criatura encerrada, conocida solo como 'La Voz'. Desde entonces, su voz no había parado de resonar en vuestras mentes. Siguiendo el consejo de un estudioso de Quatryl, recuperasteis un cetro que fortalecería el ritual de atadura que encerraba a la criatura, de un templo en una isla de la costa sur. Si llevais el cetro a la Cámara de los Ecos, podréis renovar la atadura y silenciar esta maldita voz de una vez por todas.",
                 2: "Decidisteis que la forma más fácil de silenciar a La Voz era simplemente ayudarla con su petición. La Voz fué liberada y ya no habita en la Cámara de los Ecos.",
