@@ -888,11 +888,11 @@ export default {
             }
         },
         34: {
-            "name": "Branquias en Crecimiento",
+            "name": "Pasado por Agua",
             "sections": {
-                1: "You require a way to breathe underwater. There is an Aesther enchanter in Gloomhaven who may know something about that. She’s been known to ask for impossible favors before she helps anyone, though.",
-                2: "You have met the Aesther enchantress, Hail, at the Crooked Bone. Although a bit eccentric, she does seem quite capable. You have earned her favor by aiding in her endeavors. Perhaps now she can help you find a way to close breathe underwater?",
-                3: "Hail had you raid a nest of Drakes for their scales. They weren't terribly keen on parting with them, but your blade was very convincing. Hail used the scales to form some rather uncomfortable blue orbs that should allow you to breathe underwater. Just ignore the painful burning sensation, that's normal."
+                1: "Necesitais una forma de respirar bajo el agua. Habéis escuchado historias de una hechicera etérida en Gloomhaven que puede ayudaros en vuestros esfuerzos. Sin embargo, es conocida por pedir tareas imposibles a cambio de favores. Imposible o no, necesitais su ayuda.",
+                2: "Habéis conocido a la hechicera etérida, llamada Hail, en una taberna decrépita y abandonada: el Hueso Retorcido. Aunque un poco excéntrica, parece bastante capaz. Os ganásteis su favor ayudándola a recuperar una esfera de la Hondonada Helada. ¿Quizás ahora ella pueda ayudaros a encontrar una manera de respirar bajo el agua?",
+                3: "Hail os hizo asaltar un nido de dracos para obtener sus escamas. No estaban muy interesados en separarse de ellas, pero vuestros ataques fueron muy convincentes. Hail usó las escamas para crear unas pequeñas esferas azules que deberían permitiros respirar bajo el agua, aunque os avisa que será algo doloroso e incómodo de usar."
             },
             "stages": {
                 0: "{1}",
