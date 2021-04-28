@@ -901,10 +901,10 @@ export default {
             }
         },
         35: {
-            "name": "Deja a la Libertad Sonar",
+            "name": "¡Libertad!",
             "sections": {
-                1: "You recently freed an Orchid named Redthorn from an Inox slave camp in the Dagger forest. After some cathartic revenge on his captors, he asked you to help him check on a nearby village that may have befallen the same fate as his own village.",
-                2: "Along the way to the village, Redthorn expressed some concern that the Inox have become increasingly aggressive. Maybe if you find out what is causing their behavior, you can put an end to these incursions? You had little time to contemplate these thoughts, as you arrived just in the nick of time. The Inox had overtaken the village and were preparing to slaughter the captured Orchids. Redthorn and your party sprung into action, saving all the captives and wiping out the Inox invaders. The orchid village and its residents are safe."
+                1: "Recientemente liberasteis a un orquídeo llamado Espina Carmesí de un campamento de esclavos controlados por Inox en el Bosque de las Dagas. Después de vengaros de sus captores, os pidió pasar a comprobar un poblado cercano que podía haber corrido la misma suerte que su tribu.",
+                2: "En el camino hacia la poblado, Espina Carmesí contó que en los últimos años los Inox se han vuelto cada vez más agresivos y territoriales. ¿Quizás si averiguais qué está provocando su comportamiento, podráis acabar con estas invasiones? Tuvisteis poco tiempo para pensar en ello, ya que llegasteis justo a tiempo. Los Inox se habían apoderado del poblado y se estaban preparando para masacrar a los orquídeos capturados. Espina Carmesí y tu grupo entrásteis en acción, salvando a todos los cautivos y acabando con los invasores Inox. El pueblo de orquídeo y sus habitentes estaban a salvo."
             },
             "stages": {
                 0: "{1}",
