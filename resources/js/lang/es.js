@@ -791,10 +791,10 @@ export default {
         26: {
             "name": "Atraco a la Armería",
             "sections": {
-                1: "A powerful creature has commanded you to break into a Savvas armory and recover it's treasure. You're hesitant to break into such a secure facility, but the creature's command is strong.",
-                2: "You slew the powerful creature, severing it's influence over you. You still feel some urge to break into the armory, but without a direct command you're not quite so bold as to try.",
-                3: "You slew both the powerful creatures, severing their influence over you. You no longer feel any urge to break into the armory. It's just too crazy.",
-                4: "The creature's will has been done. The armory has been looted and you possess its treasures. Although perhaps it's best not to show your face around the Savvas city for a few months."
+                1: "Una poderosa criatura os pide recuperar un tesoro incalculabble de una armería Savvas. No teníais claro qué hacer ¿Irrumpir en la armería Savvas y tomar su tesoro? o ¿desobedecer la voz que os habla en vustra cabeza?",
+                2: "Matasteis a la poderosa criatura, cortando su influencia sobre vosotros. La armería Savvas podría ser un buen desafío para entrar, pero quizás demasiado grande para vosotros solos.",
+                3: "Ambas criaturas murieron, cortando su influencia sobre vosotros. YIrrumpir en la armería Savvas ya no tenía vuestro interés",
+                4: "Sucumbísteis a la voluntad de la criatura. Saqueásteis la armería Savvas y obtuvísteis su tesoros. Quizás sea mejor no dar la cara por la ciudad Savvas durante unos meses..."
             },
             "stages": {
                 0: "{1}",
