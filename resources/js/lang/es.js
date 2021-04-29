@@ -137,7 +137,7 @@ export default {
     'Expired': 'Caducado',
     'Renew': 'Renovar',
     'Restore Purchase': 'Restaurar compra',
-    'Fill in your email, you\'ll receive a link to sync your campaign.': 'Complete en su correo electrónico, recibirá un enlace para sincronizar su campaña.',
+    'Fill in your email, you\'ll receive a link to sync your campaign.': 'Introduzca su correo electrónico, recibirá un enlace para sincronizar su campaña.',
     'Submit': 'Enviar',
     'The email is send to your inbox.': 'El correo electrónico se enviará a su bandeja de entrada.',
     'Selected Campaign': 'Campaña seleccionada',
