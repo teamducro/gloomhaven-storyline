@@ -7,11 +7,21 @@ class Quest {
     }
 
     get name() {
-        return `quest.${this.id}.name`;
+        return `${this.translationKey()}.name`;
     }
 
     get description() {
-        return `quest.${this.id}.stages.${this.stage}`;
+        return `${this.translationKey()}.stages.${this.stage}`;
+    }
+
+    translationKey() {
+        let result = '';
+        if (app.game === 'gh') {
+            result = 'quest';
+        } else {
+            result = `quest-${app.game}`;
+        }
+        return `${result}.${this.id}`;
     }
 }
 

@@ -2,6 +2,29 @@
     <component v-bind:is="render()"></component>
 </template>
 <script>
+    export default {
+        props: {
+            src: String,
+            classes: Array,
+            width: Number,
+            height: Number,
+            id: String,
+        },
+
+        methods: {
+            render() {
+                return {
+                    template: new Svg(this.src)
+                        .classes(this.classes)
+                        .width(this.width)
+                        .height(this.height)
+                        .id(this.id)
+                        .toString()
+                };
+            }
+        }
+    };
+
     class Svg {
         constructor(src) {
             let div = document.createElement('div');
@@ -72,27 +95,4 @@
             }
         }
     }
-
-    export default {
-        props: {
-            src: String,
-            classes: Array,
-            width: Number,
-            height: Number,
-            id: String,
-        },
-
-        methods: {
-            render() {
-                return {
-                    template: new Svg(this.src)
-                        .classes(this.classes)
-                        .width(this.width)
-                        .height(this.height)
-                        .id(this.id)
-                        .toString()
-                };
-            }
-        }
-    };
 </script>

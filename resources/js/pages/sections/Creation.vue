@@ -80,6 +80,9 @@
                                href="https://heisch.github.io/gloomhaven-item-db/">
                                 Gloomhaven Item DB</a>
                         </li>
+                        <li class="py-1">
+                            Summaries for Forgotten Circles by O.T.Nad
+                        </li>
                     </ul>
 
                     <p class="my-4 text-gray-600">

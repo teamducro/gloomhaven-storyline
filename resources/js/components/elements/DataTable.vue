@@ -21,15 +21,20 @@
             <tr v-for="(row, index) in rows" :key="index"
                 class="whitespace-nowrap text-sm text-white2-75"
                 :class="rowClasses(index)">
-                <td v-for="column in columns" :key="column.id+index"
-                    class="relative px-1 py-2 md:p-3 overflow-hidden"
-                    :class="columnClasses(column)"
-                    @click="$emit('rowClick', row)">
-                    <slot :name="column.id" :value="row[column.id]" :row="row">
-                        <webp v-if="String(row[column.id]).startsWith('/img')" :src="row[column.id]" width="20"/>
-                        <span v-else>{{ row[column.id] }}</span>
-                    </slot>
-                </td>
+                <slot name="row" :row="row">
+                    <td v-for="column in columns" :key="column.id+index"
+                        class="relative px-1 py-2 md:p-3 overflow-hidden"
+                        :class="columnClasses(column)"
+                        @click="$emit('rowClick', row)">
+                        <slot :name="column.id" :value="row[column.id]" :row="row">
+                            <webp v-if="String(row[column.id]).startsWith('/img')" :src="row[column.id]" width="20"/>
+                            <span v-else-if="typeof row[column.id] === 'boolean'">
+                            <span v-if="row[column.id] === true" class="material-icons">done</span>
+                        </span>
+                            <span v-else>{{ row[column.id] }}</span>
+                        </slot>
+                    </td>
+                </slot>
             </tr>
             </tbody>
         </table>
@@ -55,8 +60,16 @@ export default {
             default: () => []
         },
         initialSearch: {
+            type: [Object, Function],
+            default: () => {
+                return {}
+            }
+        },
+        sortFunctions: {
             type: Object,
-            default: {}
+            default: () => {
+                return {}
+            }
         },
         oddClass: {
             type: String,
@@ -82,10 +95,16 @@ export default {
     mounted() {
         setTimeout(() => {
             this.loaded = true;
-        }, 1000);
+        }, 300);
     },
     computed: {
         searchFunctions() {
+            // search has a callback function to filter the row on
+            if (typeof this.search === 'function') {
+                return this.search;
+            }
+
+            // Build search functions per column
             const keys = Object.keys(this.search)
             let result = {}
             keys.forEach(key => {
@@ -99,6 +118,13 @@ export default {
         },
         filteredData() {
             const search = this.searchFunctions
+
+            // Filter based on search function
+            if (typeof search === 'function') {
+                return this.data.filter(row => search(row))
+            }
+
+            // Filter rows based on column values matching values in search object
             const searchedColumns = Object.keys(search)
             const colMatch = (row, colName) => {
                 const colVal = row[colName]
@@ -112,11 +138,25 @@ export default {
         filteredAndSortedData() {
             const rows = this.filteredData
             if (this.sort) {
-                const col = this.sort
-                if (this.ascending) {
-                    rows.sort((a, b) => (a[col] > b[col]) - (a[col] < b[col]))
+                let col = this.sort
+
+                // Custom sort function
+                if (typeof this.sortFunctions[col] === 'function') {
+                    rows.sort((a, b) => {
+                        return this.ascending ? this.sortFunctions[col](a, b) : this.sortFunctions[col](b, a);
+                    })
                 } else {
-                    rows.sort((b, a) => (a[col] > b[col]) - (a[col] < b[col]))
+                    // Sort on other value then column
+                    if (typeof this.sortFunctions[col] === 'string') {
+                        col = this.sortFunctions[col];
+                    }
+
+                    // default sort function
+                    if (this.ascending) {
+                        rows.sort((a, b) => (a[col] > b[col]) - (a[col] < b[col]))
+                    } else {
+                        rows.sort((b, a) => (a[col] > b[col]) - (a[col] < b[col]))
+                    }
                 }
             }
             return rows
@@ -140,7 +180,7 @@ export default {
         },
         initialSearch: {
             handler(newVal) {
-                this.search = Object.assign({}, newVal);
+                this.search = typeof newVal === 'function' ? newVal : Object.assign({}, newVal)
             },
             deep: true,
             immediate: true
@@ -151,7 +191,7 @@ export default {
             const initialData = this.$options.data()
             this.sort = initialData.sort
             this.ascending = initialData.ascending
-            this.search = Object.assign({}, this.initialSearch)
+            this.search = typeof this.initialSearch === 'function' ? this.initialSearch : Object.assign({}, this.initialSearch)
         },
         sortBy(column, event) {
             if (!this.sortable.includes(column)) {

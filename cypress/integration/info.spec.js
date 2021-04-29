@@ -12,7 +12,7 @@ describe('Info', () => {
         cy.visit('/tracker/#/info');
 
         cy.get('#info').within(() => {
-            cy.get('.link').first()
+            cy.get('.link').contains('send me an e-mail')
                 .then($link => $link.on('click', e => e.preventDefault()))
                 .click()
                 .should(($link) => {

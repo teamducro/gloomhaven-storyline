@@ -55,6 +55,16 @@ export default {
         cy.get('#node' + id + '.opacity-50').should('be.visible');
     },
 
+    isNodeOrSideNodeHidden(id) {
+        cy.get('#node' + id).should(($node) => {
+            if ($node.css('display') != 'none') {
+                expect($node).class('opacity-50')
+            } else {
+                expect($node).css('display', 'none');
+            }
+        });
+    },
+
     isNodeBlocked(id) {
         this.isNodeVisible(id);
         cy.get('#node' + id + '.blocked .blocked').should('be.visible');
@@ -75,6 +85,21 @@ export default {
         cy.get('#node' + id + '.incomplete').should(($node) => {
             expect($node).css('display', 'inline');
         });
+    },
+
+    checkNodeState(id, state) {
+        switch (state) {
+            case "hidden":
+                return this.isNodeOrSideNodeHidden(id);
+            case "incomplete":
+                return this.isNodeIncomplete(id);
+            case "complete":
+                return this.isNodeComplete(id);
+            case "blocked":
+                return this.isNodeBlocked(id);
+            case "required":
+                return this.isNodeRequired(id);
+        }
     },
 
     completeScenario(id) {
@@ -105,5 +130,17 @@ export default {
 
     isTracker() {
         cy.url().should('include', '/tracker');
+    },
+
+    assertTableCount(table, count) {
+        cy.get('#' + table + ' tbody tr').should(($list) => {
+            expect($list).to.have.length(count);
+        });
+    },
+
+    switchGame(game) {
+        cy.get('button').contains('menu').click();
+        cy.get('.mdc-list-item__text').contains('Storyline').next().click();
+        cy.get('.' + game).click();
     }
 }
