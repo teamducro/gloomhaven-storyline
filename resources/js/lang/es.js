@@ -969,15 +969,15 @@ export default {
     prompts: {
         dragons: {
             title: "Amigo o enemigo",
-            text: "You retrieved the Drake’s treasure. Do you return it to the Drake or do you follow the Guard Captain’s orders and attempt to kill the Drake?",
-            1: "Return the treasure to the Drake. Gain the Global Achievement “The Drake Aided”. Add City Event 75 and Road Event 66 to the deck",
-            2: "Do not aid the Drake."
+            text: "Recuperasteis el tesoro del Draco. ¿Se lo devolvéis al Draco o aceptásis el trabajo de intentar matar al Draco?",
+            1: "Devolvéis el tesoro al Draco. Obtienes el logro global “El Draco Auxiliado”. Agrega el Evento de Ciudad 75 y el Evento de Viaje 66 al mazo",
+            2: "No ayudásteis al Draco ."
         },
         burningMountain: {
-            title: "Escape The Burning Mountain",
-            text: "You looted the treasure. Do you dare to escape the rumbling volcano and keep the retrieved items?",
-            1: "Conclusion A: You decide to end your turn at G and remove one of the items from the game.",
-            2: "Conclusion B: After looting the chest, all characters returned to the entrance before becoming exhausted."
+            title: "Escapar de la montaña ardiente",
+            text: "Saqueasteis el tesoro. ¿Intentáis escapar con todos los artefactos pese a las advertencias?",
+            1: "Conclusión A: Decides terminar tu turno en 'G' y retirar uno de los objetos del juego.",
+            2: "Conclusión B: Después de saquear el tesoro, todos los personajes regresaron a la entrada antes de agotarse. "
         },
         merchantsBay: {
             title: "The Merchant’s Bay",
