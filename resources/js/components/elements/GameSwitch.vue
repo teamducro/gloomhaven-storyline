@@ -1,7 +1,7 @@
 <template xmlns="http://www.w3.org/1999/html">
     <li>
         <ul>
-            <li v-for="(name, code) in games" :key="code" @click="select(code)">
+            <li v-for="(name, code) in games" :key="code" :class="code" @click="select(code)">
                 <a class="mdc-list-item i-pl-14 i--my-0">
                     <span class="mdc-list-item__text">{{ name }}</span>
                 </a>

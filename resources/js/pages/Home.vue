@@ -281,7 +281,7 @@
                             Multi language
                         </div>
                         <p class="text-gray-600 px-6 mb-2">
-                            Gloomhaven Storyline is available in English, French and Italian. German coming soon.
+                            Gloomhaven Storyline is available in English, French, Italian and German!
                         </p>
                         <p class="text-gray-600 px-6">
                             Please

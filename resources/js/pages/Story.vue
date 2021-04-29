@@ -47,7 +47,7 @@ export default {
             this.rerender();
         }
 
-        $('#storyline-container').on('click', '.scenario', this.scenarioClicked);
+        c('#storyline-container').on('click', '.scenario', this.scenarioClicked);
         this.$bus.$on('scenarios-updated', this.render);
         this.$bus.$on('orientation-changed', this.orientationChanged);
         this.$bus.$on('campaigns-changed', this.setCampaignName);
@@ -55,10 +55,8 @@ export default {
         this.setCampaignName();
     },
     destroyed() {
-        if (this.zoom) {
-            this.zoom.destroy();
-        }
-        $('#storyline-container').off('click', '.scenario', this.scenarioClicked);
+        this.removeZoom();
+        c('#storyline-container').off('click', '.scenario', this.scenarioClicked);
         this.$bus.$off('scenarios-updated', this.render);
         this.$bus.$off('orientation-changed', this.orientationChanged);
         this.$bus.$off('campaigns-changed', this.setCampaignName);
@@ -72,16 +70,14 @@ export default {
             if (app.scenarios && this.isPortrait !== null) {
                 this.renderScenarios();
                 this.renderChapters();
-                $('.campaign-name').text(this.campaignName);
+                c('.campaign-name').text(this.campaignName);
             } else {
-                $('.scenario, .edge, .chapter').hide();
-                $('.legend .scenario').show();
+                c('.scenario, .edge, .chapter').hide();
+                c('.legend .scenario').show();
             }
         },
         async rerender() {
-            if (this.zoom) {
-                this.zoom.destroy();
-            }
+            this.removeZoom();
             this.storylineKey++;
             await this.$nextTick();
             this.renderOrientation();
@@ -92,22 +88,22 @@ export default {
             let viewBox = '';
             if (this.isPortrait) {
                 viewBox = '0 -70 420 1080';
-                $('#storyline .landscape').remove();
+                c('#storyline .landscape').remove();
             } else {
                 viewBox = '0 -40 610 700';
-                $('#storyline .portrait').remove();
+                c('#storyline .portrait').remove();
             }
-            $('#storyline').attr('viewBox', viewBox);
+            c('#storyline').attr('viewBox', viewBox);
         },
         renderScenarios() {
             app.scenarios.each((scenario) => {
-                let $node = $('#node' + scenario.id);
+                let $node = c('#node' + scenario.id);
 
                 if (!$node.length) {
                     return;
                 }
 
-                let $edges = $('.edge' + scenario.id);
+                let $edges = c('.edge' + scenario.id);
                 $edges.hide();
 
                 if (scenario.isHidden()) {
@@ -147,17 +143,17 @@ export default {
                         }
 
                         if (scenario.choice) {
-                            String(scenario.choice).split(',').forEach((c) => {
-                                $('#edge' + scenario.id + '-' + c).show();
+                            String(scenario.choice).split(',').forEach((choice) => {
+                                c('#edge' + scenario.id + '-' + choice).show();
                             });
                         }
 
                         if (scenario.treasures_to.isNotEmpty()) {
                             scenario.links_to.each((id) => {
-                                $('#edge' + scenario.id + '-' + id).show();
+                                c('#edge' + scenario.id + '-' + id).show();
                             });
-                            this.scenarioRepository.unlockedByTreasureScenarios(scenario).each((t) => {
-                                $('#edge' + scenario.id + '-' + t.id).show();
+                            this.scenarioRepository.unlockedByTreasureScenarios(scenario).each((treasure) => {
+                                c('#edge' + scenario.id + '-' + treasure.id).show();
                             });
                         }
                     }
@@ -173,12 +169,13 @@ export default {
             });
         },
         renderChapters() {
-            $('.chapter').each(function () {
-                if ($(this).hasClass('intro')) {
+            c('.chapter').each((index, element) => {
+                if (element.classList.contains('intro')) {
+                    c(element).show();
                     return;
                 }
 
-                let id = parseInt($(this).attr('id').replace('chapter', '').trim());
+                let id = parseInt(element.id.replace('chapter', '').trim());
 
                 const isSideChapter = id > 99;
                 const scenariosInChapter = app.scenarios.where('chapter_id', id);
@@ -195,9 +192,9 @@ export default {
                 }
 
                 if (unlocked) {
-                    $(this).show();
+                    c(element).show();
                 } else {
-                    $(this).hide();
+                    c(element).hide();
                 }
             });
         },
@@ -209,7 +206,7 @@ export default {
         },
         setCampaignName() {
             this.campaignName = this.getCampaignName();
-            $('.campaign-name').text(this.campaignName);
+            c('.campaign-name').text(this.campaignName);
         },
         setStoryline() {
             const storyline = 'storyline-' + app.game;
@@ -218,12 +215,20 @@ export default {
                 return true;
             }
         },
+        removeZoom() {
+            if (this.zoom) {
+                try {
+                    this.zoom.destroy();
+                } catch (e) {
+                }
+            }
+        },
         scenarioClicked(e) {
-            let $node = $(e.currentTarget);
+            let $node = c(e.currentTarget);
             if (!$node.attr('id')) {
                 return;
             }
-            let id = parseInt($(e.currentTarget).attr('id').replace('node', ''));
+            let id = parseInt(c(e.currentTarget).attr('id').replace('node', ''));
             this.open(id);
         },
         open(id) {

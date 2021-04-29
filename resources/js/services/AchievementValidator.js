@@ -11,6 +11,7 @@ class AchievementValidator {
     validate() {
         if (this.validateOneTime) {
             this.checkCityRule();
+            this.fixAchievementGroups();
             this.checkMissingManualAchievements();
         }
 
@@ -23,10 +24,27 @@ class AchievementValidator {
             this.achievementRepository.gain('GCRM');
         }
         // Fix missing starting City Rule: Militaristic
-        else if (cityRuleGroup.achievements[0] != 'GCRM') {
+        else if (cityRuleGroup.achievements[0] !== 'GCRM') {
             cityRuleGroup._achievements.unshift('GCRM');
             cityRuleGroup.store();
         }
+    }
+
+    fixAchievementGroups() {
+        let groupCodes = this.achievementRepository.where((achievement) => {
+            return achievement.group;
+        }).pluck('group').unique();
+
+        groupCodes.each((groupId) => {
+            let group = new AchievementGroup(groupId);
+            if (group.achievements.length) {
+                const lastAchievementId = group.achievements.slice(-1)[0];
+                const achievement = this.achievementRepository.find(lastAchievementId);
+                if (!achievement.awarded) {
+                    this.achievementRepository.gain(lastAchievementId);
+                }
+            }
+        });
     }
 
     checkMissingManualAchievements() {
