@@ -585,8 +585,8 @@ export default {
         4: {
             "name": "Historias de la Cripta",
             "sections": {
-                1: "Mientras investigabais la “Penumbra”, descubristeis que los bandidos del Túmulo Negro están asociados con algún tipo de secta. Vuestra llegada interrumpió algún tipo de ritual. Entre los pergaminos que se encuentran en la cámara ritual hay notas sobre un par de lugares de poder en la zona. Uno parece muy usado por la secta. Parece que tenéis la oportunidad de interrumpir más rituales de la secta.",
-                2: "Seguisteis la pista de los pergaminos hasta una antigua cripta que suponéis que era la base de operaciones de la secta. Un grupo de sectarios llevaba a cabo conjuros rituales frente a un enorme agujero negro en el aire. Con los sectarios y sus esbirros muertos, la grieta oscura se volvió latente."
+                1: "Mientras investigabais la “Penumbra”, descubristeis que los bandidos del Túmulo Negro están asociados con algún tipo de secta. Vuestra llegada interrumpió algún tipo de ritual. Entre los pergaminos que se encontraban en la cámara ritual había notas sobre un par de lugares de poder en la zona. Uno parece muy usado por la secta. Parece que tenéis la oportunidad de interrumpir más de estos rituales de la secta.",
+                2: "Seguisteis la pista de los pergaminos hasta una antigua cripta que suponíais que era la base de operaciones de la secta. Un grupo de sectarios llevaba a cabo conjuros rituales frente a un enorme agujero negro en el aire. Con los sectarios y sus esbirros muertos, la grieta oscura se volvió latente."
             },
             "stages": {
                 0: "{1}",
@@ -596,9 +596,9 @@ export default {
         6: {
             "name": "El Secreto de Jekserah",
             "sections": {
-                1: "Cuando salisteis de la mansión de Jekserah, una guardia quatryl de la ciudad se os presentó. Ella os contó que Jekserah está tramando algo siniestro y que desde que llegó estaba intentado derrocar a los militares de Gloomhaven. La guardia os pidió ayuda para llegar al fondo de los planes de Jekserah y averigüar quién es en realidad.",
-                2: "El almacén estaba plagado de no muertos. Jekserah había estado usando los pergaminos de necromancia que le devolvisteis para levantar a los no muertos dentro de las murallas de la ciudad. Luchasteis para llegar a la habitación de la parte trasera del almacén para enfrentaros a Jekserah y sus guardaespaldas, pero huyó de vosotros por una ventana. Os dijo que volvería con una legión de no muertos. Para detenerla, podéis localizarla vosotros mismos o pedir la ayuda de la hechicera Aesther mencionada por la guardia de la ciudad.",
-                3: "Ignorasteis las advertencias de Argeise, la guardia de la ciudad y seguisteis trabajando para Jekserah. Claro que “maquinaciones siniestras” suena bastante preocupante, pero “notable recompensa” suena estupendamente. No había razones para asaltar el almacén de Jekserah como dijo la guardia."
+                1: "Cuando salisteis de la mansión de Jekserah, se os presentó una quatryl, era guardia de la ciudad. Os contó que Jekserah estaba tramando algo siniestro y que desde que llegó estaba intentado derrocar a los militares de Gloomhaven. La guardia os pidió ayuda para llegar al fondo de los planes de Jekserah y averigüar quién es en realidad.",
+                2: "Descubrísteis que el almacén estaba plagado de no muertos. Claramente, Jekserah había estado usando los pergaminos de necromancia que le devolvisteis para levantar a los no muertos dentro de las murallas de la ciudad. Luchasteis para llegar a la habitación de la parte trasera del almacén y enfrentaros a Jekserah y sus guardaespaldas, pero huyó de vosotros por una ventana. Os dijo que volvería con una legión de no muertos. Para detenerla, podríais localizarla vosotros mismos o pedir la ayuda de esa hechicera Aesther que había mencionado por la guardia de la ciudad.",
+                3: "Ignorasteis las advertencias de Argeise, la guardia de la ciudad, y seguisteis trabajando para Jekserah. Claro que “maquinaciones siniestras” suena bastante preocupante, pero “notable recompensa” suena estupendamente. No hay razones para asaltar el almacén de Jekserah como dijo la guardia."
             },
             "stages": {
                 0: "{1}",
