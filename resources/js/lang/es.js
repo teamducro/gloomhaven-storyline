@@ -9,6 +9,24 @@ export default {
     'Source': 'Fuente',
     'Open source': 'Open source',
     'Info': 'Información',
+    'Settings': 'Ajustes',
+    'Party sheet': 'Hoja de Grupo',
+    'Reputation': 'Reputación',
+    'Shop modifier': 'Modificador de Precios',
+    'Sanctuary of the Great Oak': 'Santuario del Gran Roble ',
+    'Gloomhaven Prosperity': 'Prosperidad de Gloomhaven',
+    'Prosperity Items': 'Objetos por Prosperidad',
+    'City Event Decks': 'Mazo Eventos de Ciudad',
+    'Add city events': 'Añade Evento de Ciudad',
+    'Road Event Decks': 'Mazo de Enevtos de Camino',
+    'Add road events': 'Añade Evento de Camino',
+    'Additional notes': 'Notas',
+    'Items': 'Objetos',
+    'Add Items': 'Añade Objetos',
+    'Shop modifier': 'Modificador de Precios',
+    'Gold': 'Oro',
+    'Number or Name': 'Número o Nombre',
+    'No items found': 'No se encontró el Objeto',
     'Buy me a Beer': '¡Invítame a una cerveza!',
     'Intro': 'Intro',
     'The Merchant': 'La comerciante',
@@ -26,6 +44,12 @@ export default {
     'Sealed': 'Sellado',
     'Road Events': 'Eventos de camino',
     'City Events': 'Eventos de ciudad',
+    'Diviner': 'Adivino',
+    'Orchid society': 'Sociedad de Orquídeos',
+    'Citizens of Gloomhaven': 'Habitantes de Gloomhaven',
+    'The rift device': 'El mecanismo de la Grieta',
+    'Tainted crypt': 'Cripta Corrompida',
+    'Corruption': 'Corrupción',
     'Requirements': 'Requisitos',
     'Show treasures': 'Mostrar los tesoros',
     'Treasure': 'Tesoro | Tesoros',
@@ -39,8 +63,10 @@ export default {
     'Summary': 'Resumen',
     'Preceding events': 'Sucesos anteriores',
     'Notes': 'Notas',
+    'Unlocks': 'Desbloqueado',
     'Page': 'Página | Páginas',
     'Pages': 'Páginas',
+    'Virtual Board': 'Tablero Virtual',
     'Choose a scenario to unlock': 'Elige qué escenario desbloquear',
     'Cancel': 'Cancelar',
     'Choose': 'Elegir',
@@ -66,7 +92,6 @@ export default {
         2: 'Copia el link',
         3: 'o compártelo en una de las siguientes plataformas.'
     },
-    'Credits': 'Créditos',
     'credits': {
         'thanks': 'Gracias a todos estos creadores por su contenido.',
         'license': 'Todo el contenido está bajo la licencia creative commons'
@@ -75,12 +100,21 @@ export default {
     'Chart layout by': 'La disposición del gráfico por',
     'Scenario summaries by': 'Resúmenes de escenarios por',
     'Map coordinates by': 'Coordenadas del mapa por',
+    'Virtual Gloomhaven Board': 'Tablero virtual de Gloomhaven ',
+    'Gloomhaven Item DB': 'DB de objetos de Gloomhaven',
     'about us': {
         'title': 'Juega a Gloomhaven con una app de seguimiento de la historia',
         'text': 'Para jugar a Gloomhaven, mis amigos y yo nos juntamos una vez por semana. Pulsando el botón de pausa en nuestras vidas cotidianas. Cada uno de nosotros ha aportado algo para fortalecer nuestro disfrute del juego. Mi contribución es un diagrama de flujo interactivo, que permite hacer un seguimiento de nuestro progreso a lo largo del juego y hacer más fácil la elección de un nuevo escenario al que jugar. Con unas bebidas y unos aperitivos, estamos listos para empezar.',
     },
     'Welcome': 'Bienvenido',
     'Language': 'Idioma',
+    'Help translating?': '¿Ayudas traduciendo?',
+    'Translations': 'Traducciones',
+    'French': 'Francés',
+    'Italian': 'Italiano',
+    'German': 'Alemán',
+    'Campaigns': 'Campañas',
+    'Buy shared campaign': 'Comprar campaña compartida',
     'donations': {
         'title': '¡Sincronización automática del progreso!',
         1: '¡Todo el contenido en Gloomhaven Storyline Tracker es gratis!',
@@ -88,7 +122,50 @@ export default {
         3: 'Por favor, contempla la opción de comprar una licencia, ayuda mucho.',
         'close': 'Seguir usando la app',
     },
-    local: 'Campaña local',
+    'Support': 'Soporte',
+    'Donate': 'Donar',
+    'local': 'Campaña local',
+    'Transfer': 'Transferir',
+    'Transfer to': 'Transferir a',
+    'Copied': 'Copiado',
+    'Create snapshot': 'Crear instantánea',
+    'Reset campaign': 'Reiniciar campaña',
+    'Change log': 'Registro',
+    'Received a campaign code?': '¿Recibió un código de campaña?',
+    'Add Campaign': 'Agregar campaña',
+    'Your campaign has been synced!': '¡Tu campaña se ha sincronizado!',
+    'Expired': 'Caducado',
+    'Renew': 'Renovar',
+    'Restore Purchase': 'Restaurar compra',
+    'Fill in your email, you\'ll receive a link to sync your campaign.': 'Complete en su correo electrónico, recibirá un enlace para sincronizar su campaña.',
+    'Submit': 'Enviar',
+    'The email is send to your inbox.': 'El correo electrónico se enviará a su bandeja de entrada.',
+    'Selected Campaign': 'Campaña seleccionada',
+    'PRO': 'PRO',
+    'Gloomhaven': 'Gloomhaven',
+    'Forgotten Circles': 'Círculos Olvidados',
+    'Shield': 'Escudo',
+    'Heal': 'Curación',
+    'Attack': 'Ataque',
+    'Range': 'Alcance',
+    'Move': 'Movimiento',
+    'Jump': 'Salto',
+    'Recover': 'Recuperar',
+    'Refresh': 'Reponer',
+    'Flying': 'Vuelo',
+    'STRENGTHEN': 'FORTALECIMIENTO',
+    'PUSH': 'EMPUJÓN',
+    'PULL': 'TIRÓN',
+    'IMMOBILIZE': 'INMOBILIZACIÓN',
+    'INVISIBLE': 'INVISIBILIDAD',
+    'PIERCE': 'PERFORANTE',
+    'STUN': 'ATURDIMIENTO',
+    'POISON': 'VENENO',
+    'WOUND': 'HERIDA',
+    'MUDDLE': 'CONFUSIÓN',
+    'CURSE': 'MALDICIÓN',
+    'BLESS': 'BENDICIÓN',
+    'REGENERATE': 'REGENERACIÓN',
     scenarios: {
         'Black Barrow': 'Túmulo Negro',
         'Barrow Lair': 'Guarida del Túmulo',
@@ -963,6 +1040,230 @@ export default {
                 0: "{1}",
                 1: "{1}{2}",
                 2: "{1}{2}{3}"
+            }
+        },
+    },
+    'quest-fc': {
+        96: {
+            "sections": {
+                1: "Your party survived the Calamity, but there are still many mysteries to be unfold. The last words spoken by the Gloom resound in you head, and Hail refuses to talk about what happened. You just know that the name of the creature was once Bastian, but someone or something was using him as a vessel; nothing else. \n" + "The ruins of the battlefield are now barred by a group of militant humans that's apparently studying the area, funded by the Deslin estate. You just know something is wrong with them. As all of this wasn't enough, your wounds appear to heal mysteriously slower than normal. Everything feels odd and wrong, both in your body and in your spirit, and you feel both scarred by the enemies weapons and by the nightmares haunting you. Maybe drinking and gambling will finally heal you? You come back to the Sleeping Lion, where you are treated like heroes. Suddendly, a tears in the fabric of reality opens and Demons enters the tavern, immediately followed by a female Aesther, whom asks for your help. Your nightmares are certainly not over yet.",
+                2: "You destroy all the altars and run back to your reality plane, while the Aesther close the portals. She tells you she was imprisoned with the demons and managed to escape thanks to the defeat of the Gloom. She appears to know a lot about it, and mentions that the Void was once the site of a great tower that Bastian built to house researchers and studies. When the Gloom started his evil doings, the Tower and all its inhabitants were scattered all across the infinite beyond: that was the beginning of the Aesther race, mutated by the long exodus they were forced. She introduces herself as Cassandra, a travellers through realities. She tried to stop the Gloom centuries ago, but she sadly failed and has been a prisoner even since, doomed to watch the Gloom plans unfold helplessly. Cassandra asks for our help: to stop the Gloom once and for all she first needs to go to the Void and find the vast library of Bastian texts, once part of the Tower. Vigil cultists will try to stop her, but that's your problem to solve, after all."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        97: {
+            "sections": {
+                1: "Cassandra shows you a sketch of the Vault of Knowledge, where the four scrolls that she needs are hidden. She raises her hands and opens a portal to the central hall of the Vault, alerting you about the traps that surely you will find there.",
+                2: "Once all the scrolls are rescued and in your hand, Cassandra takes all of you back to her sanctum and starts studying what you have got. She appears to fall in a deep trance while examining the scripts, sometimes mumbling about some grave dangers that deeply unsettles you. When she comes back to senses she seems upset. Each of the scrolls take to a different trail and all of those needs to be explored before jumping to conclusions. She also handles you a mysterious piece of paper with something wrong on it on a language you have never seen."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        98: {
+            "sections": {
+                1: "This is where the trail from the Orchid scholars scrolls takes you. Apparently there is going to be some sort of historical conference at the University about the Upheaval, the Demon War with the Valraths and the founding of Gloomhaven itself, and a group of Orchids researchers are about to arrive by boat in Gloomhaven. Hail needs to talk to them. While you are on your way to the New Docks to greet the Orchids that are coming to lecture, a group of ruffians, guiding tamed drakes, attacks the Orchid ship. They even have bombards! There is no time to think, it's time for some action.",
+                2: "You saved the Record of Accounts; browsing through the book a merchant hub in particular captures your attention: it is a commercial port across the Misty Sea, by the name of Velcyll Harbor, source of many valuable cargo. Maybe it would be interesting to get some more informations there. The Record of Journey is sadly gone forever.",
+                3: "You saved the Record of Agreements. It details the Orchid involvment in the foundation of Gloomhaven and, in particular, it explains the caravans routes to the city. It also explains some political intricacies among the different races in Gloomhaven. What's most interesting, howerer, is a small footnote talking about an old caravan carrying something of great importance that never arrived to destination. What was in there? The Record of Accounts is sadly gone forever.",
+                4: "You saved the Record of Accounts; browsing through the book a merchant hub in particular captures your attention: it is a commercial port across the Misty Sea, by the name of Velcyll Harbor, source of many valuable cargo. Maybe it would be interesting to get some more informations there. You also saved the Record of Agreements. It details the Orchid involvment in the foundation of Gloomhaven and, in particular, it explains the caravans routes to the city. It also explains some political intricacies among the different races in Gloomhaven. What's most interesting, howerer, is a small footnote talking about an old caravan carrying something of great importance that never arrived to destination. What was in there?"
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}",
+                3: "{1}{4}"
+            }
+        },
+        99: {
+            "sections": {
+                1: "Cassandra is confident that studying the Void will lead to important discoveries. She heads east, to the Traveler's District, until you arrive to the Sekhem Gardens. Everything seems quiet there, but Hail, who can see through illusions and magics, after circling around the area, muttering, points to an apparently anonymous point on the street. Mere instants later hooded figures appeare from an arcane fog, chanting spells in unison while nightmarish creatures emerge from the ground, attacking the civilians.",
+                2: "Many, too many died today because of this. This was definitely more than an isolated attack. Cassandra didn't expect this many creatures and cultists ready for an attack. It is now clear that all of this is starting to be too much even for Cassandra, and she decides to ask for the help of Hail.",
+                3: "You saved as many as you could, but the corruption extended well over your battlefield and, while you fought, many Valrath fell. Some of the survivors recognized the \"Cult of the Void\" insigna on the attackers robe and you manage to find a lead to their location. It seems clear to you that all of this is starting to be too much even for Cassandra, and she decides to ask for the help of Hail."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        100: {
+            "sections": {
+                1: "The atlas you found in the Vault indicates the location of one of Bastian's hidden workshop, right on the Copperneck Mountains. Cassandra teleports you there. The place seems to be like a gigantic clockwork device, with springs, pistons and gears everywhere. The Aesther tries to use her old research credentials to grant you the access to the inner chambers, but a message on a screen denies you that hope. The defense system is activated, be ready to fight.",
+                2: "You defeated Bastian's intricate labyrinth and found the tomb. You ransack everything you can and escape back to safety through a rift. After days of studies, you manage to find a way to fit the mechanical parts you found together, only to discover it is only a part of the rift device created by Bastian. Two other parts are missing, but their locations is written on the books. One is somewhere in the Misty Sea, near the twin lighthouses. The other is in another underground facility right east the coast of Gloomhaven.",
+                3: "Even though you defeat the golems, Cassandra seems concerned. The control panel displays what appears to be a countdown: she shouts you to grab whatever you can before she can open a rifts and rushes all of you back to the sanctum. You survived to the impending destruction of the vault, but what you got, sadly, takes you no closer than before to any answer."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        101: {
+            "sections": {
+                1: "A worried Inox approaches you, talking about unsettling news regarding some Keeper of the Oak members working south of Gloomhaven. The area where they were camping is near a tainted Crypt Cassandra seems to remembers about... When you arrive there, it is raining in the swamps. While you slowly progress to the exact location you are headed, you hear the shrills of several drakes, that appear to be inside the Crypt you are going into.",
+                2: "You manage to destroy the source of unnatural darkness, which Cassandra recognizes it as a counduit for the power of the corruption. Meanwhile, around you, the fog lifts and everything seems back to normal. When you come back to the Sleeping Lion, the now-relieved Inox thanks you with a bag of Gold and two Tomes from the Sanctuary. Cassandra immediately starts to read them, wondering how they will lead you to new adventures, this time..."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        102: {
+            "sections": {
+                1: "You head to Velcyll Harbor, where you are sure you'll find some informations about your quest. Once arrived, it is clear that the markets are so active and in thriving business that even gathering some information from the busy merchants and customers will be incredibly hard.",
+                2: "As satisfying as it could be to help so many people, almost none of your answers about Bastian or the Gloom gets answered. Many people pointed you to Ashtooth, member of the Orchid Hight Council, also known as the \"Keeper of Secrets\". There's only one problem: apparently the only way to meet him is to win the monthly challenges of the Coliseum of Refinement tournament."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        103: {
+            "sections": {
+                1: "Examining the notes you found about the Orchids caravans appears to be a useless exercise at first. Cassandra is convinced that the only way to retrace those caravans and discover their contents would be to be there at the right time, and while you try to understand what she means you almost can't believe your senses (probably due to the immense pain during the travel) when mere moments later you literally are carried to the past, in the exact location the caravans were about to pass. Once you all catch your breath after that painful experience, you reach the Orchids and travels with them, just to be attacked later by the cultists, as written.",
+                2: "After a long fight and a dusty run, the caravan emerges from the rocky hollows, distancing from the attackers. Many Orchids died, but the survivors are grateful to you enough to grant you the access to their inner circle, where you was expecting to find the mysterious disappeared treasure; instead, you meet a small Orchid girl called Terra. She appears to be able to perceive the future and notices you are not from this time. When questioned, sadly, she refuses to cooperate, as she thinks her future is intertwined with the event she foreseen regarding the Gloom and don't want to divert or negate the course of what it is going to be. If anything, at least the trip back to the the future is way less painful."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        104: {
+            "sections": {
+                1: "You are not entirely sure of what to expect when you come back to the Crooked Bone. As soon as Cassandra enters the room, Hail materializes, puzzled by her presence. They seem to have a lot of troubled history together, as Hail mentions that Cassandra denied her help in the past in several instances, during the battle agains the Gloom. Hail considers Cassandra indirectly responsable for what happened to the Tower, and she seems to not deny it. But when Cassandra explains the possibility of a new rift opening in Gloomhaven, Hail is convinced to help you again and to put all issues for the greater good.",
+                2: "You wander together with Hail and Cassandra through several portals and dimension, and at the end of them you see a bleak landscape, full of insect swarms. The portal cracks before you can enter in it, and Hail is clearly too exausted to continue. Cassandra opens a portal back to the Crooked Bone and excorts all of you back in a safe place. Even if Hail is still resentful toward Cassandra, she recognize the mission you are in is too important to be polluted by personal baggages. You all have to be careful, and you have to be fast..."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        105: {
+            "sections": {
+                1: "Your success at the Sekhem Gardens makes people trust you, and they describe in great details the circumstances of the attacks in other parts of the neighbors. Many witness talks about a brave Savvas that saved many of them; after finding him, he tells you that the cultists were guided by a mystical translucent being, and he points you to the Sanctuary of the Great Oak, where the Head Keeper, called Athan Tredan, should give you more details. When you arrived, the image of an hulking Aesther, with flaming bellows, giving order to the enemies briefly appears in front of you before vanishing. After a long analysis of the dimensional energies flow, Cassandra finds the place that Athan was talking about, deep in the Copperneck Mountains.",
+                2: "After the fight is over, you start rummaging around the rooms, finding an alchemical formula to a vaccine that should prevents the effect you noticed in Sekhem Gardens, where many people were converted to demons by the Corruption. If anything, now you can slow down their conquering of civilian's bodies. You decide to take this informations to the University."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        106: {
+            "sections": {
+                1: "You take a boat and head to the lighthouses out the Merchant's Bay. The sailors talks about tales regarding spirits and demons lurking to the towers. When you arrive to the entrance hall you feel overcome by the power emanating from six contraptions, probably Bastian's work, that suppress elemental energies. You have no time to examine those though, as you get ambushed by figures from the shadows.",
+                2: "After you purge the towers from the evil presences, something still feels odd. You don't find anything related to the rift and it seems that this was just a dead end. At least you practiced with elements..!",
+                3: "First those weird vision, then those words from that entity that possessed Cassandra, but finally you manage to find another piece of Bastian's rift device. She recollects it was his voice that you heard when she was possessed. This entire place is imbued with his aura, slowly consumed by his desire of a greater knowledge. She shakes off her ill feelings and you all go back through a rift."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        107: {
+            "sections": {
+                1: "Cassandra gathered some informations about another Bastian's facility, now plagued by vermlings presence. She knows it should be underground but can't recognize how big it is. She focus and creates a portal that head you there. When you arrive, she notices the floor is imbued with magical aura and suggest to find Bastian's device as quickly as possible.",
+                2: "You slain more vermlings than you can count, which after all were doing nothing more than defend their home. After a long and exhausting research, you can't seem to find anything. Even worse, Cassandra cannot open a portal back home due to the restrictive aura of the place. You have to get out of there through the garbage tunnels. Clearly not your favourite ending ever.",
+                3: "You found a well-hidden chest containing a complex apparatus, which Cassandra immediately recognizes as another piece of Bastian’s rift device. You all go back through a rift."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        108: {
+            "sections": {
+                1: "Cassandra starts reading from one of the book that Inox gave you, when all around the room fades and new images of a different location start to appear, like in a dream. You now are in the Grasslands of Stormbrew during the fight between Valraths and Humans, back in the remote past. At least it didn't hurt, this time. Cassandra tells you that you can't change the course of events; what you can do is to gather as many informations as possible from the opposing commanders of the two factions, Diamara and Xangroth.",
+                2: "The human are destined to fail this battle, and you simply partecipate in the natural course of events. You slain the human soldiers and take Diamara's armor and journal from his dead body, then come back to your place and time. It seems the War was orchestrated by Aesthers all along... But why?",
+                3: "Human are clearly not the favorite by the circumstances, but you decide to side with them. Maybe if you slain their commander, Xangroth, the flow of time will change? After the fight you earn Xangroth axes and his journal, then you immediately come back to your place and time. It seems the War was orchestrated by Aesthers all along... But why?",
+                4: "You don't belong to these struggles, you just need to gather as many informations you can, searching from both factions; nobody will notice you in the battlefield...If you kill them first. After the war is over, you search for the bodies of Xangroth and Diamara and find both their journals. You also reckon that their weapons might be useful, or at least valuable. You go back to your place and time. It seems the War was orchestrated by Aesthers all along... But why?"
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}",
+                3: "{1}{4}"
+            }
+        },
+        109: {
+            "sections": {
+                1: "Cassandra start reading from one of the book that Inox gave you. She sighs as she notices the tome is about the Demon War, in which her husband, Nareet, fought. They were married before the Upheaval and waited for him during her imprisonment, but he never arrived. She is resolute in finding him, or at least discover what happened to him. When she starts reading, your surrounding disappear in a mystical fog and transfers you in a land covered in fog. You are now in the battlefield, in search of Cassandra's husband.",
+                2: "You meet the captain that you helped back in the fight over the Grasslands of Stormbrew. He's older, showing the marks of time, and he's surprised to notice that you are the same as he remembers. It has been mere days for you, after all. He tells you that Nareen was there, but already left with other somewhere. This battlefield clearly shows sign of more corrupted Aesthers. Cassandra recognize where to find them.",
+                3: "This battlefield clearly shows sign of more corrupted Aesthers. Cassandra recognize where to find them."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        110: {
+            "sections": {
+                1: "It is now time for you to meet this Ashtooth they told you about, also appointed as the Keeper of Secrets, one of the members of the Orchid High Coucil. Apparently the only way to reach him is to emerge victorious from the fighting pits of the Coliseum of Refinement. The arena is different from what you expected. Everything seems strangely clean and the crowd is almost polite, almost as these fights were civilized squabble. Everybody keeps talking about a “Stoneblessed crew” that seems to be way stronger than anybody else around.",
+                2: "When all your adversaries bite the dust, the crowd explodes in thunderous cheers. It is finally over. You are summoned to the highest box in the colosseum, where you get a tiara and your long awaited meeting with the High Council. Surprisingly, Ashtooth reveals that was already waiting for Cassandra and that he'll discuss with her about the Upheaval in the Library of Inquiry. You admit you are too tired to escort her during the conversation and retire to rest on the Sylmir Inn. The Next Morning you are greeted by a resoluted Cassandra, who declares to now understand what's happening and how to stop the Corruption. She opens a rift and you return to Gloomhaven."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        111: {
+            "sections": {
+                1: "While you walk through the New Market, Cassandra notices that something is odd around you. Everything is too quiet, and she suspect a trap is about to spring on you. After a bit, strange creatures emerge from the shadow, guided by an hulking Aesther with flaming knives. Cassandra reveals he's an Husk, a corrupted shell of what was once an Aesther. Perhaps escaping is a viable option, this time.",
+                2: "You storm into the entrance of the New Market, the Husk still following you. The guards don their armor and prepare for the battle. The Husk, however, starts laughing, saying that the time for this fight has merely been delayed and that sooner or later, he will kill you. He then disappears in a black smoke.",
+                3: "The Husk finally falls, this time. With his last whispers he refer to some big machination of the corruption that, apparently, you shouldn't be able to stop. With a sigh of relief, this battle is now over, even is the war is very far from being so. Cassandra draws a black rune in the air and a vision lingers before her eyes. She can see other plans are in motion, but you are going to stop them."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                2: "{1}{3}"
+            }
+        },
+        112: {
+            "sections": {
+                1: "Cassandra decides to go back to the ruin of her old lab. She warns you that she'll not be able to deactivate the security measures that she once installed there, so you get ready to fight.",
+                2: "When all four beams converge in the middle of the lab, all machineries activate and the light converge in a power source that you immediately grab before running back home through a rift.",
+                3: "Whatever you were looking for, you didn't find it in time. The power has completely drained and there's no way to turn it back on. The only thing to do left is going back home through a rift."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}",
+                1: "{1}{3}"
+            }
+        },
+        113: {
+            "sections": {
+                1: "You're headed to the place where Nareet is abducted. She feels the presence of her husband's aura, but it's faint and damaged. Ripping the fabric of space one rift after another, you reach a rocky room with no ceiling; Nareet is there, hovering unconscious in mid-air, chained to four crystals.",
+                2: "You free the Aesther from the magic seals, and Cassandra catches him as he falls to the floor. He is barely alive and whispers something to Cassandra. They talk about what happened and what could have, but you recognize it is a private moment and not something you should interrupt. She opens a rift and you leave her alone. When she comes back, hours later, you don't talk about it anymore. It is time to move on."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        114: {
+            "sections": {
+                1: "Hail now seems to have enough information about the Corruption and the Upheaval to come with a plan, but before anything else, she tells you that she senses agents of corruptions approaching the Crooked Bone to murder Hail. You immediately rush there to save your friend. When you reach the Crooked Bone, Cassandra is unable to teleport you inside. You run through the door and reach for Hail, explaining the situation, but she percieve is too late, the creatures are already there. She tells you to get to her storage closet and you make way.",
+                2: "Hail open the cabinet and activate some strange contraption that looks like a telescope; as a result, a shockwave blasts through the entire building. The creature are now defeated, and it also seems that this deactivated the anti-rift protection Hail had in her house, because now Cassandra opens a rift and you head back to a safe place. It seems that Cassandra knew about this impending attack and used Hail as some sort of bait to destroy the agents of Corruption. The final fight is now right ahead of you."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
+            }
+        },
+        115: {
+            "sections": {
+                1: "You all agree that this is the time to attack, before the corruption heals from the damage you caused it and grows further in power. Cassandra begins her ritual and finds the hideout where whoever is orchestrating this hides. She shields you from the corruption via some magic protections, but recognize the power you are about to face is bigger than hersThe primary objective is to subdue the corruption and avert its escape, separating the battle zone from the interdimentional void. She teleports you all to a blackened landscape, where weird apparitions pulsate in a blue light. Everything is evershifting, even the floor beneath you, looking like a mess of floating rocks.You feel the presence of a dark energy, and a corruption mass grows in the middle of your group. It claws at your mind, try to bend you will, but you manage to fight back. Just when you are about to attack it, the mass screams and invoke its army, made of corrupted Aesthers and Valrath. It then proceeds to splay its tendrils in every direction, pulling back crystal shards that it feeds onto. It seems to gather energy from the infinite realms, and as every second passes it grows stronger and stronger. It is time to act!",
+                2: "You strike with everything you have, and finally the tendrils of the globe of corruption dissolves away. The mass is defeated, its core laying on the ground. Cassandra conjures a net of glowing cables, chaining it: the corruption still fights back, but its power is not enough and, after a bit, it stops.\Just when you are about to rest, everything around you starts cracking and crumbling; you jump back to the last portal still open and hurry back in Gloomhaven. When you open again your eyes, you find yourself back at the Sleeping Lion. Like nothing happens, you order a round of drinks and finally sit. Your mission is complete. \Cassandra thanks you all, but it is time to part ways. Someone else is waiting for her. “Enjoy your drink”, she says as she steps through a rift. You definitely deserve it."
+            },
+            "stages": {
+                0: "{1}",
+                1: "{1}{2}"
             }
         },
     },
