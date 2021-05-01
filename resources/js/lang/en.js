@@ -133,7 +133,7 @@ export default {
     'Change log': 'Change log',
     'Received a campaign code?': 'Received a campaign code?',
     'Add Campaign': 'Add Campaign',
-    'Your campaign has been synced! 🎉': 'Your campaign has been synced! 🎉',
+    'Your campaign has been synced!': 'Your campaign has been synced!',
     'Expired': 'Expired',
     'Renew': 'Renew',
     'Restore Purchase': 'Restore Purchase',
