@@ -112,6 +112,7 @@ export default {
     "French": "Francés",
     "Italian": "Italiano",
     "German": "Alemán",
+    "Spanish": "Español",
     "Campaigns": "Campañas",
     "Buy shared campaign": "Comprar campaña compartida",
     "donations": {

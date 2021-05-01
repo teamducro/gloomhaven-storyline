@@ -94,6 +94,10 @@
                     <span class="mr-1 block sm:inline">{{ $t('German') }}:</span>
                     Krokantpudding & mgh1979
                 </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Spanish') }}:</span>
+                    Juan Carlos Orte Cardona & Álvaro Frutos
+                </li>
             </ul>
 
             <p class="my-4">
