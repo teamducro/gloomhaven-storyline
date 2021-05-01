@@ -43,13 +43,15 @@ export default {
                 'en': 'English',
                 'fr': 'Français',
                 'it': 'Italiano',
-                'de': 'Deutsche'
+                'de': 'Deutsche',
+                'es': 'Spanish'
             },
             flags: {
                 'en': '🇺🇸',
                 'fr': '🇫🇷',
                 'it': '🇮🇹',
-                'de': '🇩🇪'
+                'de': '🇩🇪',
+                'es': '🇪🇸'
             }
         }
     },
