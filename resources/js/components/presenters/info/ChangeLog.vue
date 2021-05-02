@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 class="mt-8 mb-4 text-lg">{{ $t('Change log') }}</h2>
+        <h2 id="change-log" class="mt-8 mb-4 text-lg">{{ $t('Change log') }}</h2>
 
         <p class="my-4">
             Only somewhat big features are included, every update brings bug fixes and improvements to the app!

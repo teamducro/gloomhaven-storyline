@@ -14,6 +14,6 @@ export default class ItemTextParser {
     }
 
     ids(text) {
-        return this.parse(text).keys().map(parseInt);
+        return this.parse(text).keys().map((id) => parseInt(id));
     }
 }
