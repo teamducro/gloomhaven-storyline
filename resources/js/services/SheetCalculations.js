@@ -42,7 +42,7 @@ export default {
             let filteredItems = collect(items).filter().keys().all().map(Number)
             const prosperityMap = [14, 21, 28, 35, 42, 49, 56, 63, 70];
             let prosperityItems = Array.from({length: prosperityMap[this.calculateProsperity(prosperityIndex) - 1]}, (_, i) => i + 1)
-            return prosperityItems.concat(filteredItems);
+            return _.uniq(prosperityItems.concat(filteredItems));
         }
     }
 }
