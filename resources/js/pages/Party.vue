@@ -24,7 +24,7 @@
                     <h2 class="mb-2">{{ $t('Shop modifier') }}</h2>
                     <span class="font-title text-lg">{{ shop }} {{ $t('Gold') }}</span>
                     <p class="text-sm">
-                        Modify the cost of items when buying by this amount.
+                        {{ $t('Modify the cost of items when buying by this amount.') }}
                     </p>
                 </div>
             </div>
@@ -38,10 +38,11 @@
                 <number-field :value.sync="sheet.donations" :min="0" :step="10" :id="'donations'"
                               @change="store"></number-field>
                 <p v-if="sheet.donations <= 100" class="mt-2 text-sm">
-                    When 100 gold is donated, open envelope <span class="font-title">B</span>
+                    {{ $t('When 100 gold is donated, open envelope') }} <span class="font-title">B</span>
                 </p>
                 <p class="mt-2" v-if="donationProsperity">
-                    <span class="font-title">{{ donationProsperity }}</span> gained prosperity checkbox by donations.
+                    <span class="font-title">{{ donationProsperity }}</span>
+                    {{ $t('gained prosperity checkbox by donations.') }}
                 </p>
             </div>
 

@@ -51,6 +51,7 @@
                         odd-class="bg-black2-10"
                         :initialSearch="applyFilter"
                         :sortFunctions="sortFunctions"
+                        :translatable="translatable"
                         @rowClick="open"
             >
                 <template slot="row" slot-scope="{row}">
@@ -78,7 +79,7 @@
                        class="material-icons text-complete text-2xl mr-2">radio_button_unchecked</i>
                 </template>
                 <template slot="regions" slot-scope="{value, row}">
-                    <span v-if="value">{{ value.pluck('name').join(', ') }}</span>
+                    <span v-if="value">{{ value.pluck('name').map(name => $t(name)).join(', ') }}</span>
                 </template>
             </data-table>
         </div>
@@ -113,6 +114,7 @@ export default {
                 regions: this.sortRegion
             },
             sortable: ['image', 'state', 'title', 'regions', 'chapter_name', 'lootedAllTreasures', 'is_side'],
+            translatable: ['chapter_name'],
             states: [ScenarioState.incomplete],
             scenarioRepository: new ScenarioRepository()
         }
