@@ -45,8 +45,23 @@
                     <div class="mt-2 md:mt-0">
 
                         <template v-if="story.has_expired">
-                            <bedge class="mr-4">{{ story.expires_at.format("MMM Do YY") }}</bedge>
-                            <bedge class="mr-4" expired>{{ $t('Expired') }}</bedge>
+                            <bedge class="mr-4" expired>
+                                {{ $t('Expired') }}
+                                {{ story.expires_at.format("MMM Do YY") }}
+                            </bedge>
+                            <purchase v-if="!story.is_shared" :story-id="story.id" class="inline">
+                                <button class="mdc-button mdc-button--raised my-2">
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
+                                    {{ $t('Renew') }}
+                                </button>
+                            </purchase>
+                        </template>
+
+                        <template v-else-if="story.expires_soon">
+                            <bedge class="mr-4 white">
+                                {{ $t('Expires soon') }}
+                                {{ story.expires_at.format("MMM Do YY") }}
+                            </bedge>
                             <purchase v-if="!story.is_shared" :story-id="story.id" class="inline">
                                 <button class="mr-4 mdc-button mdc-button--raised my-2">
                                     <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
@@ -55,7 +70,7 @@
                             </purchase>
                         </template>
 
-                        <template v-else-if="!story.is_shared">
+                        <template v-if="!story.has_expired && !story.is_shared">
                             <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2 mr-2"
                                     @click="editing[story.id] = !editing[story.id];">
                                 <i class="material-icons mdc-button__icon" aria-hidden="true">

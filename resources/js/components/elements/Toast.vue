@@ -2,13 +2,15 @@
     <transition name="fade">
         <div v-if="show" class="toast fixed right-0 bottom-0 mr-4 mb-4">
             <alert :type="success ? 'success' : 'error'">
-                {{ message }}
+                <component v-bind:is="render()"></component>
             </alert>
         </div>
     </transition>
 </template>
 
 <script>
+import Helpers from "../../services/Helpers";
+
 export default {
     data() {
         return {
@@ -25,6 +27,11 @@ export default {
         this.$bus.$off('toast', this.open)
     },
     methods: {
+        render() {
+            return {
+                template: `<span>${this.message}</span>`
+            };
+        },
         open(message, isSuccess = true) {
             this.message = message;
             this.success = isSuccess;
