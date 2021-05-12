@@ -27,7 +27,7 @@
 
             <change-log></change-log>
 
-            <h2 class="mt-8 mb-4 text-lg">{{ $t('Credits') }}</h2>
+            <h2 id="credits" class="mt-8 mb-4 text-lg">{{ $t('Credits') }}</h2>
             <p class="mb-2">{{ $t('credits.thanks') }}</p>
             <ul class="list-disc ml-4">
                 <li class="py-1">
@@ -94,6 +94,10 @@
                     <span class="mr-1 block sm:inline">{{ $t('German') }}:</span>
                     Krokantpudding & mgh1979
                 </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Spanish') }}:</span>
+                    Juan Carlos Orte Cardona & Álvaro Frutos
+                </li>
             </ul>
 
             <p class="my-4">
@@ -106,11 +110,24 @@
 </template>
 
 <script>
+
+import Helpers from "../services/Helpers";
+
+const queryString = require('query-string');
+
 export default {
     data() {
         return {}
     },
     mounted() {
+        const scrollTo = Object.keys(queryString.parse(location.search)).find(Boolean)
+        if (scrollTo) {
+            Helpers.removeQueryString();
+            const element = document.getElementById(scrollTo);
+            if (element) {
+                element.scrollIntoView();
+            }
+        }
     },
     methods: {}
 }

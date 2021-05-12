@@ -23,7 +23,7 @@
         <validation-errors :response="errors" field="code"/>
         <transition name="fade">
             <alert v-if="success" class="inline-block">
-                {{ $t('Your campaign has been synced! 🎉') }}
+                {{ $t('Your campaign has been synced!') }} 🎉
             </alert>
         </transition>
     </div>

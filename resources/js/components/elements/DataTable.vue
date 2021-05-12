@@ -8,7 +8,7 @@
                     :class="headClasses(column)"
                     @click="sortBy(column.id, $event)">
                 <span class="flex items-center">
-                    {{ column.name }}
+                    {{ $t(column.name) }}
 
                     <span v-if="sortable.includes(column.id)" class="material-icons i-text-sm text-white2-50">
                         {{ sort !== column.id ? 'unfold_more' : (!ascending ? 'expand_more' : 'expand_less') }}
@@ -29,8 +29,9 @@
                         <slot :name="column.id" :value="row[column.id]" :row="row">
                             <webp v-if="String(row[column.id]).startsWith('/img')" :src="row[column.id]" width="20"/>
                             <span v-else-if="typeof row[column.id] === 'boolean'">
-                            <span v-if="row[column.id] === true" class="material-icons">done</span>
-                        </span>
+                                <span v-if="row[column.id] === true" class="material-icons">done</span>
+                            </span>
+                            <span v-else-if="translatable.includes(column.id)">{{ $t(row[column.id]) }}</span>
                             <span v-else>{{ row[column.id] }}</span>
                         </slot>
                     </td>
@@ -56,6 +57,10 @@ export default {
             default: () => []
         },
         sortable: {
+            type: Array,
+            default: () => []
+        },
+        translatable: {
             type: Array,
             default: () => []
         },

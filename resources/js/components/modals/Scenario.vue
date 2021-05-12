@@ -14,9 +14,9 @@
                         </button>
                         </span>
                     </h2>
-                    <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">{{
-                            scenario.regions.pluck('name').implode(', ')
-                        }}</span>
+                    <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">
+                        {{ scenario.regions.pluck('name').map(name => $t(name)).join(', ') }}
+                    </span>
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">
