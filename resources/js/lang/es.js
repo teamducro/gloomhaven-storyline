@@ -23,7 +23,6 @@ export default {
     'Additional notes': 'Notas',
     'Items': 'Objetos',
     'Add Items': 'Añade Objetos',
-    'Shop modifier': 'Modificador de Precios',
     'Gold': 'Oro',
     'Number or Name': 'Número o Nombre',
     'No items found': 'No se encontró el Objeto',
@@ -113,6 +112,7 @@ export default {
     'French': 'Francés',
     'Italian': 'Italiano',
     'German': 'Alemán',
+    "Spanish": "Español",
     'Campaigns': 'Campañas',
     'Buy shared campaign': 'Comprar campaña compartida',
     'donations': {
