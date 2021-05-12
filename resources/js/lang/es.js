@@ -150,7 +150,7 @@ export default {
     "Sticker": "Pegatina",
     "State": "Estado",
     "Name": "Nombre",
-    "Region": "Region",
+    "Region": "Región",
     "Chapter": "Capítulo",
     "Looted": "Saqueado",
     "Side": "Side",
