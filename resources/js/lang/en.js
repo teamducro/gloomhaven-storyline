@@ -17,6 +17,7 @@ export default {
     "Gloomhaven Prosperity": "Gloomhaven Prosperity",
     "Prosperity Items": "Prosperity Items",
     "Modify the cost of items when buying by this amount.": "Modify the cost of items when buying by this amount.",
+    "The cost of items displayed is modified by this amount.": "The cost of items displayed is modified by this amount.",
     "When 100 gold is donated, open envelope": "When 100 gold is donated, open envelope",
     "gained prosperity checkbox by donations.": "gained prosperity checkbox by donations.",
     "City Event Decks": "City Event Decks",
