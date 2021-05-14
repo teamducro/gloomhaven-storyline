@@ -1380,7 +1380,7 @@ export default {
             "1": "All characters escaped",
             "2": "???",
             "title": "Escape from The Husk",
-            "text": "Did all characters escaped through an exit?"
+            "text": "Did all characters escape through an exit?"
         }
     }
 }
