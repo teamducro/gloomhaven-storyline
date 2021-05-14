@@ -109,7 +109,7 @@
 
             <div class="flex items-center">
                 <purchase>
-                    <button type="button" class="mt-4 mdc-button mdc-button--raised">
+                    <button type="button" class="mt-6 mdc-button mdc-button--raised">
                         {{ $t('Buy shared campaign') }}
                     </button>
                 </purchase>

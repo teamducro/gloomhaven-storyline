@@ -56,6 +56,7 @@ module.exports = {
                 secondary: '#018786',
                 background: '#000',
                 surface: '#111',
+                'dark-background': '#1b1b1b',
                 complete: '#3B8585',
                 incomplete: '#A13C2F',
                 required: '#E9A678',

@@ -95,6 +95,9 @@ export default {
         "3": "or share it on one of the following platforms.",
         "title": "Share Gloomhaven Storyline Tracker"
     },
+    "campaign page": {
+        "local desc": "The local campaign is your free campaign, it is stored on your device and cannot be synchronized automatically between members."
+    },
     "credits": {
         "thanks": "Thanks to these creators for their content.",
         "license": "All content remains under creative commons license"
@@ -139,7 +142,12 @@ export default {
     "Add Campaign": "Add Campaign",
     "Your campaign has been synced!": "Your campaign has been synced!",
     "Expired": "Expired",
+    "Expires soon": "Expires soon",
+    "Expires": "Expires",
     "Renew": "Renew",
+    "Extend": "Extend",
+    "Edit": "Edit",
+    "Unlink": "Unlink",
     "Restore Purchase": "Restore Purchase",
     "Fill in your email, you'll receive a link to sync your campaign.": "Fill in your email, you'll receive a link to sync your campaign.",
     "Submit": "Submit",

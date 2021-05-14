@@ -1,101 +1,94 @@
 <template>
     <div>
-        <ul class="mdc-list">
-            <li class="w-full flex items-center justify-between mdc-list-item h-auto" tabindex="0"
-                @click="select('local')"
-                :class="{'mdc-ripple-upgraded--background-focused': campaignId === 'local'}">
-                <div class="flex items-center">
-                    <span class="material-icons mr-2">{{
-                            campaignId === 'local' ? 'radio_button_checked' : 'radio_button_unchecked'
-                        }}</span>
-                    <span class="inline-block w-full flex items-center justify-between mdc-list-item__text">
-                    {{ $t('local') }}
-                </span>
-                    <span class="material-icons ml-4">cloud_off</span>
+        <ul class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <li class="col-span-full bg-dark-background rounded-lg shadow divide-y divide-gray-600">
+                <div class="w-full flex items-center justify-between p-6 space-x-6"
+                     @click="select('local')">
+                    <div class="flex-1">
+                        <div class="flex items-center w-full">
+                            <span class="material-icons mr-2">
+                                {{ campaignId === 'local' ? 'radio_button_checked' : 'radio_button_unchecked' }}
+                            </span>
+                            <h3 class="text-white text-sm font-medium truncate">{{ $t('local') }}</h3>
+                            <span class="material-icons ml-auto">cloud_off</span>
+                        </div>
+                        <p class="flex-1 mt-2 text-sm text-white2-75">
+                            {{ $t('campaign page.local desc') }}
+                        </p>
+                    </div>
                 </div>
-                <div class="mt-2 md:mt-0">
-                    <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2"
-                            @click.stop="$bus.$emit('open-share-modal')">
-                        <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
-                    </button>
-                </div>
-            </li>
-            <li>
-                <p class="text-sm text-white2-75 ml-11 mb-4 md:max-w-md mr-20">
-                    The local campaign is your free campaign, it is stored on your device
-                    and cannot be synchronized automatically between members.
-                </p>
-            </li>
-            <li v-for="story in stories.items" :key="story.id"
-                class="mdc-list-item min-h-14" tabindex="0"
-                @click="select(story.campaignId)"
-                :class="{'mdc-ripple-upgraded--background-focused': isSelected(story)}">
-                <div class="w-full flex items-center justify-between mdc-list-item__text">
-                    <div class="flex items-center">
-                        <span class="material-icons mr-2">{{
-                                isSelected(story) ? 'radio_button_checked' : 'radio_button_unchecked'
-                            }}</span>
-                        <div class="flex items-center">
-                            <change-campaign-name @errors-changed="errorsChanged" :story="story"
-                                                  :editing="editing[story.id] || false"
-                            ></change-campaign-name>
-                            <span class="ml-4 material-icons">cloud_queue</span>
+                <div>
+                    <div class="-mt-px flex divide-x divide-gray-600">
+                        <div class="-ml-px w-0 flex-1 flex">
+                            <a href="#" @click.prevent="$bus.$emit('open-share-modal')"
+                               class="relative mt-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
+                                <span class="material-icons">share</span>
+                                <span class="ml-2 sm:ml-3">{{ $t('Share') }}</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="mt-2 md:mt-0">
+                </div>
+            </li>
 
-                        <template v-if="story.has_expired">
-                            <bedge class="mr-4" expired>
-                                {{ $t('Expired') }}
-                                {{ story.expires_at.format("MMM Do YY") }}
-                            </bedge>
-                            <purchase v-if="!story.is_shared" :story-id="story.id" class="inline">
-                                <button class="mdc-button mdc-button--raised my-2">
-                                    <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
-                                    {{ $t('Renew') }}
-                                </button>
-                            </purchase>
-                        </template>
-
-                        <template v-else-if="story.expires_soon">
-                            <bedge class="mr-4 white">
-                                {{ $t('Expires soon') }}
-                                {{ story.expires_at.format("MMM Do YY") }}
-                            </bedge>
-                            <purchase v-if="!story.is_shared" :story-id="story.id" class="inline">
-                                <button class="mr-4 mdc-button mdc-button--raised my-2">
-                                    <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
-                                    {{ $t('Renew') }}
-                                </button>
-                            </purchase>
-                        </template>
-
-                        <template v-if="!story.has_expired && !story.is_shared">
-                            <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2 mr-2"
-                                    @click="editing[story.id] = !editing[story.id];">
-                                <i class="material-icons mdc-button__icon" aria-hidden="true">
-                                    {{ editing[story.id] ? 'done' : 'edit' }}
-                                </i>
-                            </button>
-                            <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2"
-                                    @click.stop="share(story)">
-                                <i class="material-icons mdc-button__icon" aria-hidden="true">share</i>
-                            </button>
-                        </template>
-
-                        <template v-else-if="story.is_shared">
-                            <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2"
-                                    @click.stop="unlink(story)">
-                                <i class="material-icons mdc-button__icon" aria-hidden="true">
-                                    link_off
-                                </i>
-                            </button>
-                        </template>
+            <li v-for="story in stories.items" :key="story.id"
+                class="col-span-1 bg-dark-background rounded-lg shadow divide-y divide-gray-600">
+                <div class="w-full flex items-center justify-between p-6 space-x-6"
+                     @click="select(story.campaignId)">
+                    <div class="flex-1 truncate">
+                        <div class="flex items-center">
+                            <span class="material-icons mr-2">
+                                {{ isSelected(story) ? 'radio_button_checked' : 'radio_button_unchecked' }}
+                            </span>
+                            <h3 class="text-white text-sm font-medium truncate">{{ story.name }}</h3>
+                            <span class="ml-auto material-icons">
+                                {{ story.has_expired ? 'cloud_off' : 'cloud_queue' }}
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <campaign-badge class="mt-3" :story="story"></campaign-badge>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="-mt-px flex divide-x divide-gray-600">
+                        <div v-if="!story.has_expired && !story.is_shared" class="w-0 flex-1 flex">
+                            <a href="#" @click.prevent="$bus.$emit('open-edit-campaign-modal', story)"
+                               class="relative mt-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
+                                <span class="material-icons">settings</span>
+                                <span class="ml-2 sm:ml-3">{{ $t('Edit') }}</span>
+                            </a>
+                        </div>
+                        <div v-if="!story.has_expired && !story.is_shared" class="mt-px w-0 flex-1 flex">
+                            <a href="#" @click.prevent="share(story)"
+                               class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
+                                <span class="material-icons">share</span>
+                                <span class="ml-2 sm:ml-3">{{ $t('Share') }}</span>
+                            </a>
+                        </div>
+                        <div v-if="story.is_shared" class="mt-px w-0 flex-1 flex">
+                            <a href="#" @click.prevent="unlink(story)"
+                               class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
+                                <span class=" material-icons">link_off</span>
+                                <span class="ml-2 sm:ml-3">{{ $t('Unlink') }}</span>
+                            </a>
+                        </div>
+                        <purchase v-if="!story.is_shared"
+                                  :story-id="story.id" class="mt-px w-0 flex-1 flex">
+                            <a class="cursor-pointer relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
+                                <template v-if="story.has_expired || story.expires_soon">
+                                    <span class="material-icons">replay</span>
+                                    <span class="ml-2 sm:ml-3">{{ $t('Renew') }}</span>
+                                </template>
+                                <template v-else>
+                                    <span class="material-icons">refresh</span>
+                                    <span class="ml-2 sm:ml-3">{{ $t('Extend') }}</span>
+                                </template>
+                            </a>
+                        </purchase>
                     </div>
                 </div>
             </li>
         </ul>
-        <validation-errors :response="errors" field="name"/>
     </div>
 </template>
 
@@ -107,8 +100,6 @@ export default {
     data() {
         return {
             stories: collect(),
-            editing: {},
-            errors: null,
             campaignId: 'local',
             storyRepository: new StoryRepository,
             apiStoryRepository: new ApiStoryRepository
@@ -146,9 +137,6 @@ export default {
         unlink(story) {
             this.apiStoryRepository.remove(story);
             this.select(this.isSelected(story) ? 'local' : this.campaignId);
-        },
-        errorsChanged(errors) {
-            this.errors = errors;
         }
     }
 }
