@@ -2,7 +2,7 @@
     <modal ref="modal" :titleDivider="true">
         <template v-if="story" v-slot:title>
             <span class="inline-flex w-full">
-                {{ story.name }}
+                {{ $t('Change name') }}
                 <span class="flex ml-auto items-center space-x-4">
                     <campaign-badge class="hidden sm:block" :story="story"></campaign-badge>
                     <span class="ml-auto material-icons">
