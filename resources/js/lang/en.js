@@ -149,6 +149,7 @@ export default {
     "Edit": "Edit",
     "Unlink": "Unlink",
     "Restore Purchase": "Restore Purchase",
+    "Change name": "Change name",
     "Fill in your email, you'll receive a link to sync your campaign.": "Fill in your email, you'll receive a link to sync your campaign.",
     "Submit": "Submit",
     "The email is send to your inbox.": "The email is send to your inbox.",

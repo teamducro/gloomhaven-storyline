@@ -17,6 +17,7 @@ export default {
     "Gloomhaven Prosperity": "Gloomhaven Prosperity",
     "Prosperity Items": "Prosperity Items",
     "Modify the cost of items when buying by this amount.": "Modify the cost of items when buying by this amount.",
+    "The cost of items displayed is modified by this amount.": "The cost of items displayed is modified by this amount.",
     "When 100 gold is donated, open envelope": "When 100 gold is donated, open envelope",
     "gained prosperity checkbox by donations.": "gained prosperity checkbox by donations.",
     "City Event Decks": "City Event Decks",
@@ -94,6 +95,9 @@ export default {
         "3": "oder teile ihn auf einer der folgenden Plattformen.",
         "title": "Gloomhaven Storyline Tracker teilen"
     },
+    "campaign page": {
+        "local desc": "The local campaign is your free campaign, it is stored on your device and cannot be synchronized automatically between members."
+    },
     "credits": {
         "thanks": "Vielen Dank an diese Entwickler für ihre Beträge.",
         "license": "Alle Inhalte bleiben unter Creative-Commons-Lizenz."
@@ -138,8 +142,14 @@ export default {
     "Add Campaign": "Add Campaign",
     "Your campaign has been synced!": "Your campaign has been synced!",
     "Expired": "Expired",
+    "Expires soon": "Expires soon",
+    "Expires": "Expires",
     "Renew": "Renew",
+    "Extend": "Extend",
+    "Edit": "Edit",
+    "Unlink": "Unlink",
     "Restore Purchase": "Restore Purchase",
+    "Change name": "Change name",
     "Fill in your email, you'll receive a link to sync your campaign.": "Fill in your email, you'll receive a link to sync your campaign.",
     "Submit": "Submit",
     "The email is send to your inbox.": "The email is send to your inbox.",
