@@ -14,9 +14,9 @@
                         </button>
                         </span>
                     </h2>
-                    <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">{{
-                            scenario.regions.pluck('name').implode(', ')
-                        }}</span>
+                    <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">
+                        {{ scenario.regions.pluck('name').map(name => $t(name)).join(', ') }}
+                    </span>
                 </div>
 
                 <div class="mdc-dialog__content" id="scenario-content">
@@ -190,8 +190,7 @@
                         </div>
 
                         <div class="relative h-8 mb-6">
-                            <div class="flex absolute left-0 top-0 origin-left transform scale-75"
-                                 style="width: 300px">
+                            <div class="flex absolute left-0 top-0 origin-left transform scale-75">
                                 <button class="mdc-button mdc-button--raised mr-2"
                                         @click="openPages()">
                                     <i class="material-icons mdc-button__icon">menu_book</i>

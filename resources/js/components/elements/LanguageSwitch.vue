@@ -44,7 +44,7 @@ export default {
                 'fr': 'Français',
                 'it': 'Italiano',
                 'de': 'Deutsche',
-                'es': 'Spanish'
+                'es': 'Español'
             },
             flags: {
                 'en': '🇺🇸',

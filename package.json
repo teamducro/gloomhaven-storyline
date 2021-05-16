@@ -34,7 +34,7 @@
         "cypress": "^4.0.1",
         "laravel-mix": "^5.0.4",
         "laravel-mix-purgecss": "^5.0.0",
-        "lodash": "^4.17.19",
+        "lodash": "^4.17.21",
         "moment": "^2.26.0",
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.24.3",

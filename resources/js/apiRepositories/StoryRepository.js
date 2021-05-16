@@ -35,8 +35,14 @@ export default class StoryRepository extends ApiRepository {
 
                 return new Story(storyResponse);
             })
-            .catch(reason => {
-                window.app.$bus.$emit('toast', 'Failed to save progress, try again later.', false);
+            .catch(e => {
+                let message = 'Failed to save progress, try again later.';
+
+                if (e.response && e.response.status === 403 && e.response.data.message.includes('expired')) {
+                    message = e.response.data.message + ' <a class="link" href="/tracker/#/campaigns">Click here</a>';
+                }
+
+                window.app.$bus.$emit('toast', message, false);
             });
     }
 

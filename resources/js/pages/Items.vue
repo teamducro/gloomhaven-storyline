@@ -42,7 +42,9 @@
                 <h2 class="mb-2">{{ $t('Shop modifier') }}:
                     <span>{{ shop }} {{ $t('Gold') }}</span>
                 </h2>
-                <p v-if="shop != 0" class="text-sm">The cost of items displayed is modified by this amount.</p>
+                <p v-if="shop != 0" class="text-sm">
+                    {{ $t('The cost of items displayed is modified by this amount.') }}
+                </p>
             </div>
 
             <div class="flex justify-between flex-wrap">

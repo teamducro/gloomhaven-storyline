@@ -7,7 +7,7 @@ import fs from "fs"
 
 // Scan languages directory for language files
 fs.readdir('./resources/js/lang/', (err, files) => {
-    let otherLanguages = files.filter((file) => file.endsWith('js'));
+    let otherLanguages = files.filter(file => file.endsWith('js') && file !== 'en.js');
 
     otherLanguages.forEach(async (file) => {
         // Read language file

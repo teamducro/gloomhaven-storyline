@@ -8,7 +8,7 @@
                         'pr-16': closeButton,
                         'border-b border-white2-25': titleDivider
                     }">
-                        {{ title }}
+                        <slot name="title">{{ title }}</slot>
                         <span class="absolute right-0 top-0">
                         <button v-if="closeButton" type="button" data-mdc-dialog-action="close"
                                 class="mdc-button mt-4">
