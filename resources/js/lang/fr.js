@@ -335,7 +335,7 @@ export default {
         "The Drake Slain": "The Drake Slain",
         "The Drake Aided": "The Drake Aided",
         "City Rule: Demonic": "City Rule: Demonic",
-        "Trough the Trench": "Trough the Trench",
+        "Through the Trench": "Through the Trench",
         "Redthorns Aid": "Redthorn's Aid",
         "Across the Divide": "Across the Divide",
         "The Voice Freed": "The Voice Freed",

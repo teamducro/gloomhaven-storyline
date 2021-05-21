@@ -336,7 +336,7 @@ export default {
         "The Drake Slain": "Il Draco è Stato Ucciso",
         "The Drake Aided": "Il Draco è Stato Salvato",
         "City Rule: Demonic": "Governo Cittadino: Demoniaco",
-        "Trough the Trench": "Attraverso il Crepaccio",
+        "Through the Trench": "Attraverso il Crepaccio",
         "Redthorns Aid": "L'Aiuto di Spinarossa",
         "Across the Divide": "Attraverso il Dirupo",
         "The Voice Freed": "La Voce è Stata Liberata",

@@ -357,7 +357,7 @@ export default {
         "The Drake Slain": "Erlegter Draken",
         "The Drake Aided": "Hilfe für den Draken",
         "City Rule: Demonic": "Stadtherrschaft: dämonisch",
-        "Trough the Trench": "Durch den Graben",
+        "Through the Trench": "Durch den Graben",
         "Redthorns Aid": "Rotdorns Hilfe",
         "Across the Divide": "Jenseits der Kluft",
         "The Voice Freed": "Befreite Stimme",
