@@ -357,7 +357,7 @@ export default {
         "The Drake Slain": "El draco ejecutado",
         "The Drake Aided": "El draco auxiliado",
         "City Rule: Demonic": "Gobierno de la ciudad: Demoníaco",
-        "Trough the Trench": "A través de la Fosa",
+        "Through the Trench": "A través de la Fosa",
         "Redthorns Aid": "La ayuda de Espina Carmesí",
         "Across the Divide": "Al otro lado del puente",
         "The Voice Freed": "La Voz liberada",
