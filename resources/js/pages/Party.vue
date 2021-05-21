@@ -172,7 +172,7 @@ export default {
                     reward: 'Open envelope <span class="font-title">A</span>'
                 },
                 {
-                    goal: 'Gain “The Drake’s Request” & “The Drake’s Treasure” Party Achievements',
+                    goal: 'Gain “The Drake’s Command” & “The Drake’s Treasure” Party Achievements',
                     reward: 'Add City Event 75 & Road Event 66'
                 },
                 {
