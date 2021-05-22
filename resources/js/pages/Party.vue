@@ -168,36 +168,36 @@ export default {
             ],
             unlocks: [
                 {
-                    goal: '5 “Ancient Technology” Global Achievements',
-                    reward: 'Open envelope <span class="font-title">A</span>'
+                    goal: this.$t('5 Ancient Technology Global Achievements'),
+                    reward: this.$t('Open envelope') + ' <span class="font-title">A</span>'
                 },
                 {
-                    goal: 'Gain “The Drake’s Command” & “The Drake’s Treasure” Party Achievements',
-                    reward: 'Add City Event 75 & Road Event 66'
+                    goal: this.$t('Gain The Drakes Command & The Drakes Treasure Party Achievements'),
+                    reward: this.$t('Add City Event 75 & Road Event 66')
                 },
                 {
-                    goal: 'Donate +100 gold to the Sanctuary of the Great Oak',
-                    reward: 'Open envelope <span class="font-title">B</span>'
+                    goal: this.$t('Donate +100 gold to the Sanctuary of the Great Oak'),
+                    reward: this.$t('Open envelope') + ' <span class="font-title">B</span>'
                 },
                 {
-                    goal: 'Have a party reputation of 10 or higher',
-                    reward: 'Open envelope <character class="w-6 -mb-2 inline-block" character="SK" />'
+                    goal: this.$t('Have a party reputation of 10 or higher'),
+                    reward: this.$t('Open envelope') + ' <character class="w-6 -mb-2 inline-block" character="SK" />'
                 },
                 {
-                    goal: 'Have a party reputation of 20',
-                    reward: 'Add City Event 76 & Road Event 67'
+                    goal: this.$t('Have a party reputation of 20'),
+                    reward: this.$t('Add City Event 76 & Road Event 67')
                 },
                 {
-                    goal: 'Have a party reputation of -10 or lower',
-                    reward: 'Open envelope <character class="w-6 -mb-2 inline-block" character="NS" />'
+                    goal: this.$t('Have a party reputation of -10 or lower'),
+                    reward: this.$t('Open envelope') + ' <character class="w-6 -mb-2 inline-block" character="NS" />'
                 },
                 {
-                    goal: 'Have a party reputation of -20',
-                    reward: 'Add City Event 77 & Road Event 68'
+                    goal: this.$t('Have a party reputation of -20'),
+                    reward: this.$t('Add City Event 77 & Road Event 68')
                 },
                 {
-                    goal: 'Retire a character',
-                    reward: 'Open the Town Records Book'
+                    goal: this.$t('Retire a character'),
+                    reward: this.$t('Open the Town Records Book')
                 }
             ],
             campaignName: null,
