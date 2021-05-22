@@ -71,12 +71,14 @@ module.exports = {
     },
   },
   variants: {
-    backgroundColor: ['important', 'responsive', 'hover', 'focus'],
-    display: ['important', 'responsive'],
-    fontSize: ['important', 'responsive'],
-    margin: ['important', 'responsive'],
-    padding: ['important', 'responsive'],
-    textColor: ['important', 'responsive', 'hover', 'focus'],
+    extend: {
+      backgroundColor: ['important'],
+      display: ['important'],
+      fontSize: ['important'],
+      margin: ['important'],
+      padding: ['important'],
+      textColor: ['important'],
+    },
   },
   plugins: [
     plugin(function ({ addVariant }) {
