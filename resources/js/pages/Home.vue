@@ -22,10 +22,10 @@
                         </h3>
                     </template>
                     <template v-slot:left>
-                        <p class="text-gray-600 mb-2">
+                        <p class="text-gray-500 mb-2">
                             View a summary of the storyline for each state of a scenario.
                         </p>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-500 mb-4">
                             To prevent spoilers we only include a summery up-to the current scenario.
                             The conclusion of a scenario is added after it has been completed.
                         </p>
@@ -51,19 +51,19 @@
                         </h3>
                     </template>
                     <template v-slot:left>
-                        <p class="text-gray-600 mb-2">
+                        <p class="text-gray-500 mb-2">
                             Use the neat Flowchart overview of your completed and unlocked scenarios to keep track
                             of your progress.
                             The scenarios are color coded to quickly find available ones.
                         </p>
-                        <p class="text-gray-600 mb-2">
+                        <p class="text-gray-500 mb-2">
                             Furthermore, it keeps your story organized!
                         </p>
-                        <p class="text-gray-600 mb-2">
+                        <p class="text-gray-500 mb-2">
                             Blocked scenarios are displayed, along with their requirements. This way, you won't need
                             to read up the requirements in the book and risk seeing spoilers.
                         </p>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-500 mb-4">
                             When you complete scenarios, you will be granted Party and Global achievements.
                             The app features an achievements overview, where all your accomplishments are displayed.
                         </p>
@@ -73,7 +73,7 @@
                                 Open storyline
                             </a>
                         </p>
-                        <p class="text-gray-600">
+                        <p class="text-gray-500">
                             (Removed details to prevent spoilers)
                         </p>
                     </template>
@@ -94,10 +94,10 @@
                         </h3>
                     </template>
                     <template v-slot:left>
-                        <p class="text-gray-600 mb-2">
+                        <p class="text-gray-500 mb-2">
                             Share your progress with your party members! Easy with Gloomhaven Storyline!
                         </p>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-500 mb-4">
                             You can share your progress manually, or have the app sync it automagically between you
                             and your party members by contributing.
                             Only one person in your party needs to <a href="#pricing" class="link">donate</a>, and your
@@ -127,14 +127,14 @@
                         </h3>
                     </template>
                     <template v-slot:left>
-                        <p class="text-gray-600 mb-2">
+                        <p class="text-gray-500 mb-2">
                             Gloomhaven storyline tracker features a Party Sheet!
                         </p>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-500 mb-4">
                             With it, you can track party-related info like reputation, donations, prosperity and
                             more, all in one place!
                         </p>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-500 mb-4">
                             You may even track your City and Road Event Decks, this is especially useful for remote
                             play!
                         </p>
@@ -159,11 +159,11 @@
                         </h3>
                     </template>
                     <template v-slot:left>
-                        <p class="text-gray-600 mb-2">
+                        <p class="text-gray-500 mb-2">
                             Gloomhaven storyline tracker features an item database for
                             all the available items in your Gloomhaven campaign.
                         </p>
-                        <p class="text-gray-600 mb-2">
+                        <p class="text-gray-500 mb-2">
                             Items obtained in your Gloomhaven campaign can conveniently be searched and filtered
                             through. It includes all item card images.
                         </p>
@@ -188,11 +188,11 @@
                         </h3>
                     </template>
                     <template v-slot:left>
-                        <p class="text-gray-600 mb-2">
+                        <p class="text-gray-500 mb-2">
                             See all of the scenarios you've played and achievements you've gained, displayed on the
                             original Gloomhaven map!
                         </p>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-500 mb-4">
                             All Global achievements and scenarios displayed on the map are clickable and the full
                             functionality of the Flowchart view is also available in this Map view.
                         </p>
@@ -218,11 +218,11 @@
                         </h3>
                     </template>
                     <template v-slot:left>
-                        <p class="text-gray-600 mb-2">
+                        <p class="text-gray-500 mb-2">
                             Gloomhaven Storyline includes the option to track looted chests and a filter feature to find
                             completed scenarios with chests you missed.
                         </p>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-500 mb-4">
                             Using the filter feature, you can find just the scenario you need to complete your personal
                             quest.
                         </p>
@@ -280,10 +280,10 @@
                             <i class="material-icons mr-2" aria-hidden="true">language</i>
                             Multi language
                         </div>
-                        <p class="text-gray-600 px-6 mb-2">
+                        <p class="text-gray-500 px-6 mb-2">
                             Gloomhaven Storyline is available in English, French, Italian, German and Spanish!
                         </p>
-                        <p class="text-gray-600 px-6">
+                        <p class="text-gray-500 px-6">
                             Please
                             <email-me class="link">contact me</email-me>
                             if you like to contribute with translations.
@@ -298,13 +298,13 @@
                             <i class="material-icons mr-2" aria-hidden="true">api</i>
                             Virtual Gloomhaven Board
                         </div>
-                        <p class="text-gray-600 px-6 mb-2">
+                        <p class="text-gray-500 px-6 mb-2">
                             Virtual Gloomhaven Board by Purple Kingdom Games development is designed to help people play
                             Gloomhaven remotely, without the need for a physical board.
                             Gloomhaven Storyline features integration with this great tool, allowing you to open the
                             virtual board directly from the scenario view.
                         </p>
-                        <p class="text-gray-600 px-6 mb-2">
+                        <p class="text-gray-500 px-6 mb-2">
                             Registered users will join the same room as party members automatically!
                         </p>
                     </div>

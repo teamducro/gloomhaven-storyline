@@ -1,6 +1,8 @@
 const plugin = require('tailwindcss/plugin')
 const { colors } = require('tailwindcss/defaultTheme')
 
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./resources/**/*.html', './resources/**/*.vue', './resources/**/*.js', './resources/**/*.svg'],
   theme: {
@@ -57,6 +59,8 @@ module.exports = {
         red: { ...colors.red, 50: 'rgba(255, 100, 100, .5)' },
         green: { ...colors.green, 50: 'rgba(100, 255, 100, .5)' },
         yellow: { ...colors.yellow, 50: 'rgba(236, 202, 75, .5)' },
+        gray: colors.blueGray,
+        blue: colors.lightBlue,
       },
       boxShadow: {
         'slight-white': '0px 0px 20px 5px rgba(255,255,255,0.1)',

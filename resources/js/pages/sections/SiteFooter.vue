@@ -1,6 +1,6 @@
 <template>
     <footer class="">
-        <hr class="border-b border-gray-100 opacity-25 my-0 py-0">
+        <hr class="border-b border-gray-50 opacity-25 my-0 py-0">
         <div
             class="w-full container mx-auto mt-0 py-8 flex flex-wrap items-center justify-center md:justify-between md:px-4">
             <div class="text-center md:text-left">
