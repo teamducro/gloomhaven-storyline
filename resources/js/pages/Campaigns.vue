@@ -35,7 +35,7 @@
                             </h4>
                             <div class="flex-1 border-t-2 border-gray-200"></div>
                         </div>
-                        <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-5 lg:row-gap-5">
+                        <ul class="mt-8 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-5">
                             <li class="flex items-start lg:col-span-1">
                                 <div class="flex-shrink-0">
                                     <inline-svg src="icons/check"/>
@@ -85,7 +85,7 @@
                         <purchase>
                             <div class="rounded-md shadow">
                                 <a href="#"
-                                   class="flex items-center justify-center uppercase px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                                   class="flex items-center justify-center uppercase px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring transition duration-150 ease-in-out">
                                     {{ $t('Buy shared campaign') }}
                                 </a>
                             </div>

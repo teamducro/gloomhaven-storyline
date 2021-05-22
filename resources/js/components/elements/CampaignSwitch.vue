@@ -13,7 +13,7 @@
 
         <div class="mdc-select__menu mdc-menu mdc-menu-surface overflow-visible" style="min-width: 240px">
             <ul class="mdc-list">
-                <li class="mdc-list-item cursor-pointer whitespace-no-wrap"
+                <li class="mdc-list-item cursor-pointer whitespace-nowrap"
                     :aria-selected="current === 'local'"
                     :class="{'mdc-list-item--selected': current === 'local'}">
                     {{ $t('local') }}
@@ -21,7 +21,7 @@
                 </li>
                 <li v-for="(story) in stories.items"
                     :key="story.campaignId" :data-value="story.campaignId"
-                    class="mdc-list-item cursor-pointer whitespace-no-wrap flex items-center"
+                    class="mdc-list-item cursor-pointer whitespace-nowrap flex items-center"
                     :aria-selected="current === story.campaignId"
                     :class="{'mdc-list-item--selected': current === story.campaignId}">
                     {{ story.name }}

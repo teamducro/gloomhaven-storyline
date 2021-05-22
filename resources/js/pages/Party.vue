@@ -113,8 +113,8 @@
                                       @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
                         </td>
                         <td class="w-full flex flex-wrap">
-                            <span class="whitespace-normal md:whitespace-no-wrap">{{ unlock.goal }}</span>
-                            <span class="whitespace-normal md:whitespace-no-wrap ml-auto flex items-center text-right">
+                            <span class="whitespace-normal md:whitespace-nowrap">{{ unlock.goal }}</span>
+                            <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
                                 <span class="material-icons mr-1">remove</span>
                                 <component v-bind:is="renderHtml(unlock.reward)"></component>
                             </span>

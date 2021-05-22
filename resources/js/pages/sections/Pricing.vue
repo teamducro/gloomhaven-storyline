@@ -53,7 +53,7 @@
                                         <div class="mt-8">
                                             <div class="rounded-lg shadow-md">
                                                 <a :href="appUrl"
-                                                   class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150"
+                                                   class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring transition ease-in-out duration-150"
                                                    aria-describedby="tier-free">
                                                     Open storyline
                                                 </a>
