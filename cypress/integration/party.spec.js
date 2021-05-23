@@ -133,4 +133,11 @@ describe('Party', () => {
         cy.get('.bedge').contains('50').should('be.visible');
     });
 
+    it('it draws event cards', () => {
+        cy.visit('/tracker/#/party');
+        cy.get('button').contains('Draw').first().click();
+        cy.get('.mdc-dialog__title').contains('City Event #').should('be.visible');
+        cy.get('.mdc-dialog__content button').contains('A').click();
+        cy.get('.mdc-dialog__content button').should('not.exist');
+    });
 });
