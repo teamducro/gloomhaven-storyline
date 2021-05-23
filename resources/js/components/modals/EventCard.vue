@@ -13,11 +13,11 @@
 
                     <div v-if="!choice" class="mt-4 flex justify-between">
                         <button @click="chose('A')"
-                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
                             <span class="mdc-button__label">A</span>
                         </button>
                         <button @click="chose('B')"
-                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
                             <span class="mdc-button__label">B</span>
                         </button>
                     </div>
