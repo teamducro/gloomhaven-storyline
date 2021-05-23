@@ -16,7 +16,7 @@
                         </button>
                         </span>
                     </h2>
-                    <div class="mdc-dialog__content">
+                    <div class="mdc-dialog__content" :class="{'overflow-hidden': overflowHidden}">
                         <slot name="content">{{ content }}</slot>
                     </div>
                     <footer v-if="$slots.buttons" class="mdc-dialog__actions">
@@ -55,6 +55,10 @@ export default {
         maxWidth: {
             type: String,
             default: '560px'
+        },
+        overflowHidden: {
+            type: Boolean,
+            default: false
         }
     },
     data() {
