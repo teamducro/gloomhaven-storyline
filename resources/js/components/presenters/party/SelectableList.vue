@@ -22,14 +22,15 @@
                 </template>
             </autocomplete>
 
-            <button @click="draw" class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+            <button @click="draw" :disabled="!checkedItems.length"
+                    class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                 <i class="material-icons mdc-button__icon">launch</i>
                 <span class="mdc-button__label">{{ $t('Draw') }}</span>
             </button>
         </div>
 
         <div :key="key" :id="(id || slugify(title)) + '-bedges'">
-            <bedge v-for="(checked, item) in items" v-if="checked" :key="item"
+            <bedge v-for="item in checkedItems" :key="item"
                    class="mr-2 mt-2 white cursor-pointer rounded-md"
                    @click="(e) => {deselect(item)}">
                 {{ item }}
@@ -52,20 +53,20 @@ export default {
     },
     data() {
         return {
-            // itemData: {},
             key: 0,
-            rollbackLoaded: false
+            rollbackLoaded: false,
+            checkedItems: []
         }
     },
-    // watch: {
-    //     items: {
-    //         handler(items) {
-    //             console.log('items changed');
-    //         },
-    //         deep: true,
-    //         immediate: true
-    //     }
-    // },
+    watch: {
+        items: {
+            handler(items) {
+                this.setCheckedItems(items);
+            },
+            deep: true,
+            immediate: true
+        }
+    },
     methods: {
         reset() {
             this.$refs['rollback'].reset();
@@ -77,7 +78,7 @@ export default {
             this.rerender();
         },
         draw() {
-            let id = this.checkedItems().sort((a, b) => 0.5 - Math.random()).shift();
+            let id = this.checkedItems.sort((a, b) => 0.5 - Math.random())[0];
             if (id) {
                 let card = this.id.substr(0, 1) + '-' + id;
                 this.$bus.$emit('open-card', card);
@@ -98,17 +99,16 @@ export default {
         },
         rerender() {
             this.key++;
+            this.setCheckedItems(this.items);
         },
-        checkedItems() {
-            let checkedItems = [];
+        setCheckedItems(items) {
+            this.checkedItems = [];
 
-            for (let id in this.items) {
-                if (this.items[id]) {
-                    checkedItems.push(id);
+            for (let id in items) {
+                if (items[id]) {
+                    this.checkedItems.push(id);
                 }
             }
-
-            return checkedItems;
         }
     }
 }
