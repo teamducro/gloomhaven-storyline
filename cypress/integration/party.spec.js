@@ -138,6 +138,7 @@ describe('Party', () => {
         cy.get('button').contains('Draw').first().click();
         cy.get('.mdc-dialog__title').contains('City Event #').should('be.visible');
         cy.get('.mdc-dialog__content button').contains('A').click();
-        cy.get('.mdc-dialog__content button').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains('A').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains('Toggle B').should('exist');
     });
 });
