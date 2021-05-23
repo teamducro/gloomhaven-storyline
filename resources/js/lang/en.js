@@ -24,6 +24,7 @@ export default {
     "Add city events": "Add city events",
     "Road Event Decks": "Road Event Decks",
     "Add road events": "Add road events",
+    "Draw": "Draw",
     "5 Ancient Technology Global Achievements": "5 “Ancient Technology” Global Achievements",
     "Gain The Drakes Command & The Drakes Treasure Party Achievements": "Gain “The Drake’s Command” & “The Drake’s Treasure” Party Achievements",
     "Add City Event 75 & Road Event 66": "Add City Event 75 & Road Event 66",
