@@ -1,11 +1,9 @@
-import {ScenarioState} from "./ScenarioState";
-
 class Card {
 
     constructor(str) {
         const parts = str.split('-');
         this.id = parts[1];
-        this.type = parts[0];
+        this.type = parts[0].toUpperCase();
         this._title = parts.length > 2 ? parts[2] : null;
     }
 

@@ -8,6 +8,7 @@ module.exports = {
         extend: {
             fontFamily: {default: ['Nyala', 'sans-serif'], title: ['Pirata One', 'Nyala', 'sans-serif']},
             inset: {
+                '1/2': '50%',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
                 'area-inset-right': 'env(safe-area-inset-right, 0)',
                 'area-inset-bottom': 'env(safe-area-inset-bottom, 0)',

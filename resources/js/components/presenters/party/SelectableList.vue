@@ -6,20 +6,28 @@
                       :value="items"
                       @change="rolledBack"></rollback>
         </div>
-        <autocomplete
-            :label="label"
-            :id="id || slugify(title)"
-            :list="Object.keys(items)"
-            @change="(item) => {toggle(item)}">
-            <template v-for="(checked, item) in items" v-slot:[slugify(item)]>
-                <div class="w-full flex items-center justify-between">
-                    <span>{{ item }}</span>
-                    <span class="material-icons">
+        <div class="flex items-center">
+            <autocomplete
+                :label="label"
+                :id="id || slugify(title)"
+                :list="Object.keys(items)"
+                @change="(item) => {toggle(item)}">
+                <template v-for="(checked, item) in items" v-slot:[slugify(item)]>
+                    <div class="w-full flex items-center justify-between">
+                        <span>{{ item }}</span>
+                        <span class="material-icons">
                         {{ checked ? 'check_circle_outline' : 'radio_button_unchecked' }}
                     </span>
-                </div>
-            </template>
-        </autocomplete>
+                    </div>
+                </template>
+            </autocomplete>
+
+            <button @click="draw" class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                <i class="material-icons mdc-button__icon">launch</i>
+                <span class="mdc-button__label">{{ $t('Draw') }}</span>
+            </button>
+        </div>
+
         <div :key="key" :id="(id || slugify(title)) + '-bedges'">
             <bedge v-for="(checked, item) in items" v-if="checked" :key="item"
                    class="mr-2 mt-2 white cursor-pointer rounded-md"
@@ -68,6 +76,13 @@ export default {
             this.$emit('change', items);
             this.rerender();
         },
+        draw() {
+            let id = this.checkedItems().sort((a, b) => 0.5 - Math.random()).shift();
+            if (id) {
+                let card = this.id.substr(0, 1) + '-' + id;
+                this.$bus.$emit('open-card', card);
+            }
+        },
         select(item, select = true) {
             this.$set(this.items, item, select);
             this.$refs['rollback'].set(this.items);
@@ -84,6 +99,17 @@ export default {
         rerender() {
             this.key++;
         },
+        checkedItems() {
+            let checkedItems = [];
+
+            for (let id in this.items) {
+                if (this.items[id]) {
+                    checkedItems.push(id);
+                }
+            }
+
+            return checkedItems;
+        }
     }
 }
 </script>
