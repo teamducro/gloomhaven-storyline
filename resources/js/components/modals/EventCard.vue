@@ -2,7 +2,7 @@
     <div>
         <modal ref="modal" :title="card ? card.title : ''" :max-width="'348px'"
                :overflowHidden="animating">
-            <div v-if="card" slot="content" class="w-full h-full flex outline-none">
+            <div v-if="card" slot="content" class="w-full h-full flex flex-col outline-none">
                 <div class="relative w-full" style="max-width: 300px;">
                     <flip-card :flipped="!!choice">
                         <template v-slot:front>
@@ -22,24 +22,24 @@
                          class="blur rounded-lg absolute h-1/2 w-full top-0 left-0"
                          :class="{'top-1/2': choice === 'A'}">
                     </div>
-
-                    <div v-if="!choice" class="mt-4 flex justify-between">
-                        <button @click="chose('A')"
-                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                            <span class="mdc-button__label">A</span>
-                        </button>
-                        <button @click="chose('B')"
-                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                            <span class="mdc-button__label">B</span>
-                        </button>
-                    </div>
-                    <div v-if="choice" class="mt-4 flex justify-center">
-                        <button @click="blur = !blur"
-                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                            <span class="mdc-button__label">
-                                {{ $t('Toggle') + ' ' + (choice === 'A' ? 'B' : 'A') }}</span>
-                        </button>
-                    </div>
+                </div>
+                <div v-if="!choice" class="mt-4 flex justify-between">
+                    <button @click="chose('A')"
+                            class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                        <span class="mdc-button__label">A</span>
+                    </button>
+                    <button @click="chose('B')"
+                            class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                        <span class="mdc-button__label">B</span>
+                    </button>
+                </div>
+                <div v-if="choice" class="mt-4 flex justify-center">
+                    <button @click="blur = !blur"
+                            class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                        <span class="mdc-button__label">
+                            {{ $t('Toggle') + ' ' + (choice === 'A' ? 'B' : 'A') }}
+                        </span>
+                    </button>
                 </div>
             </div>
         </modal>
