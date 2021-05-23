@@ -50,6 +50,7 @@
 
 import Card from "../../models/Card";
 import FlipCard from "../elements/FlipCard";
+import PreloadImage from "../../services/PreloadImage";
 
 export default {
     components: {FlipCard},
@@ -58,7 +59,8 @@ export default {
             card: null,
             choice: null,
             animating: false,
-            blur: false
+            blur: false,
+            preloadImage: new PreloadImage(),
         }
     },
     mounted() {
@@ -76,6 +78,7 @@ export default {
             this.animating = false;
             this.blur = false;
             this.$refs['modal'].open();
+            this.preloadImage.handle(card.images[1]);
         },
         chose(choice) {
             this.choice = choice;
