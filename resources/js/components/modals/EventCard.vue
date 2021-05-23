@@ -33,6 +33,13 @@
                             <span class="mdc-button__label">B</span>
                         </button>
                     </div>
+                    <div v-if="choice" class="mt-4 flex justify-center">
+                        <button @click="blur = !blur"
+                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__label">
+                                {{ $t('Toggle') + ' ' + (choice === 'A' ? 'B' : 'A') }}</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </modal>
