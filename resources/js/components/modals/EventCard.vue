@@ -1,10 +1,15 @@
 <template>
     <div>
-        <modal ref="modal" :title="card ? card.title : ''">
+        <modal ref="modal" :title="card ? card.title : ''" :max-width="'348px'">
             <div v-if="card" slot="content" class="w-full h-full flex outline-none">
-                <div style="max-width: 300px;">
+                <div class="relative" style="max-width: 300px;">
                     <webp :src="choice ? card.images[1] : card.images[0]" :alt="card.title"
                           class="w-full rounded-lg sm:rounded-xl"/>
+
+                    <div v-if="choice"
+                         class="blur absolute h-1/2 w-full top-0 left-0"
+                         :class="{'top-1/2': choice === 'A'}">
+                    </div>
 
                     <div v-if="!choice" class="mt-4 flex justify-between">
                         <button @click="chose('A')"
@@ -57,3 +62,8 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+.blur {
+    backdrop-filter: blur(4px);
+}
+</style>
