@@ -10,7 +10,7 @@
                 <span class="flex items-center">
                     {{ $t(column.name) }}
 
-                    <span v-if="sortable.includes(column.id)" class="material-icons i-text-sm text-white2-50">
+                    <span v-if="sortable.includes(column.id)" class="material-icons !text-sm text-white2-50">
                         {{ sort !== column.id ? 'unfold_more' : (!ascending ? 'expand_more' : 'expand_less') }}
                     </span>
                 </span>

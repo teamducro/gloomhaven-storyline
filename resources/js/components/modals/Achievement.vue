@@ -3,7 +3,7 @@
         <modal ref="modal" :title="achievement ? achievement.displayName : ''" :titleDivider="true">
             <template v-slot:content>
                 <div class="flex flex-row justify-between" v-if="achievement">
-                    <div class="i-my-4">
+                    <div class="!my-4">
                         <!-- TODO: Maybe add flavor text/story for the Achievements -->
                         <h2 v-if="!awardedFrom.isEmpty()" class="text-white">{{ $t('Gained from') }}:
                             <scenario-number class="ml-2"

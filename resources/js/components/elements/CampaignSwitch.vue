@@ -1,7 +1,7 @@
 <template>
     <div ref="campaign-switch" class="campaign-switch mdc-select w-full"
          :class="{'with-transparency': withTransparency}">
-        <span class="mdc-list-item absolute z-1 pointer-events-none i-text-xs i--mt-2 i-text-white2-60">
+        <span class="mdc-list-item absolute z-1 pointer-events-none !text-xs !-mt-2 !text-white2-60">
             {{ $t('Selected Campaign') }}
         </span>
         <div class="mdc-select__anchor w-full">

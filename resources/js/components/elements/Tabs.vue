@@ -12,7 +12,7 @@
                     <a v-for="(tab, index) in tabs" href="#" @click="select(tab, $event)"
                        class="group inline-flex items-center font-title text-md transition-colors"
                        :class="{'text-white': selected === tab, 'text-white2-50 hover:text-white2-75': selected !== tab}">
-                        <span v-if="icons[index]" class="material-icons i-text-md mr-2"
+                        <span v-if="icons[index]" class="material-icons !text-md mr-2"
                               :class="{'transform rotate-180': icons[index] === 'style'}">
                             {{ icons[index] }}
                         </span>

@@ -12,7 +12,7 @@
         <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class" style="min-width: 240px">
             <div class="mx-1 px-1 mt-4" @click="help">
                 <router-link to="/info" class="flex items-center cursor-pointer">
-                    <i class="material-icons mdc-list-item__graphic i-text-white2-60"
+                    <i class="material-icons mdc-list-item__graphic !text-white2-60"
                        aria-hidden="true">language</i>
                     <span class="mdc-list-item__text text-sm text-white2-87">{{ $t('Help translating?') }}</span>
                 </router-link>

@@ -2,7 +2,7 @@
     <li>
         <ul>
             <li v-for="(name, code) in games" :key="code" :class="code" @click="select(code)">
-                <a class="mdc-list-item i-pl-14 i--my-0">
+                <a class="mdc-list-item !pl-14 !-my-0">
                     <span class="mdc-list-item__text">{{ name }}</span>
                 </a>
             </li>
