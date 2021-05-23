@@ -22,7 +22,7 @@
                 <div class="mdc-dialog__content" id="scenario-content">
                     <div class="xs:flex w-full -ml-2 mb-2">
                         <radio v-if="scenario.is_side"
-                               class="whitespace-no-wrap"
+                               class="whitespace-nowrap"
                                id="hidden" group="states" :label="$t('Not unlocked')"
                                :key="'hidden-' + stateKey"
                                :checked="scenario.isHidden()"

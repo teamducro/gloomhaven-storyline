@@ -106,15 +106,15 @@
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Unlocks') }}</h2>
                 <table class="w-full mb-4">
-                    <tr v-for="(unlock, index) in unlocks" class="flex items-center border-b border-gray-600">
+                    <tr v-for="(unlock, index) in unlocks" class="flex items-center border-b border-gray-500">
                         <td class="-ml-2">
                             <checkbox group="unlocks"
                                       :checked="sheet.unlocks[index]"
                                       @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
                         </td>
                         <td class="w-full flex flex-wrap">
-                            <span class="whitespace-normal md:whitespace-no-wrap">{{ unlock.goal }}</span>
-                            <span class="whitespace-normal md:whitespace-no-wrap ml-auto flex items-center text-right">
+                            <span class="whitespace-normal md:whitespace-nowrap">{{ unlock.goal }}</span>
+                            <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
                                 <span class="material-icons mr-1">remove</span>
                                 <component v-bind:is="renderHtml(unlock.reward)"></component>
                             </span>

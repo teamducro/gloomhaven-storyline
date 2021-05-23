@@ -13,10 +13,10 @@
         </label>
         <div class="absolute h-full right-0 top-0 p-1">
             <div class="flex flex-col h-full">
-                <button class="h-1/2 no-select" @click="add" :class="{'text-gray-500': number === max}">
+                <button class="h-1/2 no-select" @click="add" :class="{'text-gray-400': number === max}">
                     <span class="material-icons">add</span>
                 </button>
-                <button class="h-1/2 no-select" @click="subtract" :class="{'text-gray-500': number === min}">
+                <button class="h-1/2 no-select" @click="subtract" :class="{'text-gray-400': number === min}">
                     <span class="material-icons">remove</span>
                 </button>
             </div>

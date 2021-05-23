@@ -1,14 +1,14 @@
 <template>
     <section id="faq" class="bg-white pt-16">
         <div class="container max-w-5xl mx-auto p-4 sm:p-6">
-            <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-800">
+            <h1 class="w-full my-2 text-4xl lg:text-5xl lg:leading-tight font-bold leading-tight text-center text-gray-800">
                 Frequently asked questions
             </h1>
             <div class="w-full mb-4">
                 <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded shadow"></div>
             </div>
 
-            <p class="w-full mt-8 text-center text-gray-600">Can’t find the answer you’re looking for?
+            <p class="w-full mt-8 text-center text-gray-500">Can’t find the answer you’re looking for?
                 <email-me class="link">Send me an e-mail.</email-me>
             </p>
 
@@ -16,7 +16,7 @@
                 <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-8">
                     <div v-for="item in faq">
                         <dt class="text-lg leading-6 font-medium text-gray-800" v-html="item.q"/>
-                        <dd class="mt-2 text-base text-gray-600" v-html="item.a"/>
+                        <dd class="mt-2 text-base text-gray-500" v-html="item.a"/>
                     </div>
                 </dl>
             </div>

@@ -12,12 +12,12 @@
                     <div
                         class="flex flex-col w-full lg:flex-row items-center md:items-start justify-center lg:justify-start">
                         <purchase class="mb-8 lg:mb-0 lg:mr-8 cursor-pointer">
-                            <a class="cursor-pointer block text-center rounded-lg border border-transparent bg-blue-600 px-6 py-3 text-lg leading-6 font-bold text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline transition ease-in-out duration-150">
+                            <a class="cursor-pointer block text-center rounded-lg border border-transparent bg-blue-600 px-6 py-3 text-lg leading-6 font-bold text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring transition ease-in-out duration-150">
                                 Buy shared campaign
                             </a>
                         </purchase>
                         <a :href="this.appUrl"
-                           class="block text-center rounded-lg border border-transparent bg-white px-6 py-3 text-lg leading-6 font-bold text-blue-600 hover:text-blue-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150">
+                           class="block text-center rounded-lg border border-transparent bg-white px-6 py-3 text-lg leading-6 font-bold text-blue-600 hover:text-blue-500 focus:outline-none focus:ring transition ease-in-out duration-150">
                             Open storyline
                         </a>
                     </div>

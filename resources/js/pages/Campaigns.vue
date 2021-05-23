@@ -33,14 +33,14 @@
                             <h4 class="flex-shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
                                 What's included
                             </h4>
-                            <div class="flex-1 border-t-2 border-gray-200"></div>
+                            <div class="flex-1 border-t-2 border-gray-100"></div>
                         </div>
-                        <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-5 lg:row-gap-5">
+                        <ul class="mt-8 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-5">
                             <li class="flex items-start lg:col-span-1">
                                 <div class="flex-shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
-                                <p class="ml-3 text-sm leading-5 text-gray-700">
+                                <p class="ml-3 text-sm leading-5 text-gray-600">
                                     Synchronised progress
                                 </p>
                             </li>
@@ -48,7 +48,7 @@
                                 <div class="flex-shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
-                                <p class="ml-3 text-sm leading-5 text-gray-700">
+                                <p class="ml-3 text-sm leading-5 text-gray-600">
                                     Automatic snapshots
                                 </p>
                             </li>
@@ -56,7 +56,7 @@
                                 <div class="flex-shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
-                                <p class="ml-3 text-sm leading-5 text-gray-700">
+                                <p class="ml-3 text-sm leading-5 text-gray-600">
                                     Support the project
                                 </p>
                             </li>
@@ -64,35 +64,35 @@
                                 <div class="flex-shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
-                                <p class="ml-3 text-sm leading-5 text-gray-700">
+                                <p class="ml-3 text-sm leading-5 text-gray-600">
                                     1 year license
                                 </p>
                             </li>
                         </ul>
-                        <p class="mt-6 text-sm text-gray-700">
+                        <p class="mt-6 text-sm text-gray-600">
                             When donating multiple times, you can manage multiple campaigns!<br>
                             Licenses aren't renewed automatically.
                         </p>
                     </div>
                 </div>
                 <div
-                    class="py-8 px-6 text-center bg-gray-200 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+                    class="py-8 px-6 text-center bg-gray-100 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
                     <div class="font-title mt-4 flex items-center justify-center text-5xl leading-none text-gray-900">
                         <span>€4,99</span>
-                        <span class="ml-3 text-xl leading-7 font-medium text-gray-500">/ year</span>
+                        <span class="ml-3 text-xl leading-7 font-medium text-gray-400">/ year</span>
                     </div>
                     <div class="mt-6">
                         <purchase>
                             <div class="rounded-md shadow">
                                 <a href="#"
-                                   class="flex items-center justify-center uppercase px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                                   class="flex items-center justify-center uppercase px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring transition duration-150 ease-in-out">
                                     {{ $t('Buy shared campaign') }}
                                 </a>
                             </div>
                         </purchase>
                     </div>
                     <p class="mt-4 text-sm leading-5 hidden">
-                        <a href="#" class="font-medium text-gray-500 underline">
+                        <a href="#" class="font-medium text-gray-400 underline">
                             Learn about our membership policy
                         </a>
                     </p>

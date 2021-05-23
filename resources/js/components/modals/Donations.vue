@@ -3,7 +3,7 @@
          class="fixed z-10 bottom-0 inset-x-0 px-4 pb-6 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
         <transition name="fade" @after-leave="show = false">
             <div v-if="isOpen" @click="close" class="fixed inset-0 transition-opacity">
-                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+                <div class="absolute inset-0 bg-gray-400 opacity-75"></div>
             </div>
         </transition>
 
@@ -19,7 +19,7 @@
                         <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
                             {{ $t('donations.title') }}
                         </h3>
-                        <div class="mt-2 text-sm leading-5 text-gray-500">
+                        <div class="mt-2 text-sm leading-5 text-gray-400">
                             <p class="mb-2">
                                 {{ $t('donations.1') }}<br>{{ $t('donations.2') }}
                             </p>
@@ -37,7 +37,7 @@
                               {{ $t('Read more') }}
                               </button>
                           </router-link>
-                          <span @click="close" class="text-sm text-gray-500 text-center mt-4 cursor-pointer">
+                          <span @click="close" class="text-sm text-gray-400 text-center mt-4 cursor-pointer">
                               {{ $t('donations.close') }}
                           </span>
                       </span>
