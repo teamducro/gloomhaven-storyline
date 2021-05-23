@@ -83,8 +83,8 @@ window.app = new Vue({
             return false;
         },
         shouldRedirectToApp() {
-            ['story', 'scenarios', 'map', 'achievements', 'info', 'campaigns', 'party', 'login', 'shared'].forEach(path => {
-                if (location.hash.includes(path)) {
+            ['story', 'scenarios', 'map', 'achievements', 'info', 'campaigns', 'party', 'login', 'shared', 'states'].forEach(path => {
+                if (location.hash.includes(path) || location.search.includes(path)) {
                     const newLocation = location.href.replace(process.env.MIX_WEB_URL, process.env.MIX_APP_URL);
                     location.replace(newLocation);
                 }
