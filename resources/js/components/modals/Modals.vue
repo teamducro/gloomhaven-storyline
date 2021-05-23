@@ -9,6 +9,7 @@
         <toast></toast>
         <confirm-transfer></confirm-transfer>
         <item-modal></item-modal>
+        <event-card></event-card>
         <edit-campaign></edit-campaign>
     </div>
 </template>
