@@ -39,6 +39,7 @@ export default {
     "Retire a character": "Retire a character",
     "Open the Town Records Book": "Open the Town Records Book",
     "Open envelope": "Open envelope",
+    "Open box": "Open box",
     "Additional notes": "Additional notes",
     "Items": "Items",
     "Add Items": "Add Items",

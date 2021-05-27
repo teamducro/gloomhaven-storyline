@@ -181,7 +181,7 @@ export default {
                 },
                 {
                     goal: this.$t('Have a party reputation of 10 or higher'),
-                    reward: this.$t('Open envelope') + ' <character class="w-6 -mb-2 inline-block" character="SK" />'
+                    reward: this.$t('Open box') + ' <character class="w-6 -mb-2 inline-block" character="SK" />'
                 },
                 {
                     goal: this.$t('Have a party reputation of 20'),
@@ -189,7 +189,7 @@ export default {
                 },
                 {
                     goal: this.$t('Have a party reputation of -10 or lower'),
-                    reward: this.$t('Open envelope') + ' <character class="w-6 -mb-2 inline-block" character="NS" />'
+                    reward: this.$t('Open box') + ' <character class="w-6 -mb-2 inline-block" character="NS" />'
                 },
                 {
                     goal: this.$t('Have a party reputation of -20'),
