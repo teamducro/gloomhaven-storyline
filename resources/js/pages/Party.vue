@@ -106,9 +106,11 @@
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Unlocks') }}</h2>
                 <table class="w-full mb-4">
-                    <tr v-for="(unlock, index) in unlocks" class="flex items-center border-b border-gray-600">
+                    <tr v-for="(unlock, index) in unlocks" v-if="index < 8" :key="'unlock'+index"
+                        class="flex items-center border-b border-gray-600">
                         <td class="-ml-2">
                             <checkbox group="unlocks"
+                                      :id="'unlock'+index"
                                       :checked="sheet.unlocks[index]"
                                       @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
                         </td>
@@ -120,17 +122,55 @@
                             </span>
                         </td>
                     </tr>
+                    <tr class="flex items-center border-b border-gray-600">
+                        <td class="-ml-2">
+                            <checkbox group="unlocks" id="unlock8"
+                                      :checked="sheet.unlocks[8]"
+                                      @change="(id, isChecked) => {sheet.unlocks[8] = isChecked; store(); rerenderX();}"></checkbox>
+                        </td>
+                        <td class="w-full flex flex-wrap items-center">
+                            <span class="whitespace-normal md:whitespace-no-wrap">
+                                {{ $t('Envelope') }} <span class="font-title">x</span> {{ $t('opened') }}
+                            </span>
+                            <span v-show="sheet.unlocks[8]" :key="'a'+renderX"
+                                  class="whitespace-normal md:whitespace-no-wrap ml-auto flex items-center text-right">
+                                <span class="material-icons mr-1">remove</span>
+                                {{ $t('Clues') }}
+                                <span>
+                                    <checkbox v-for="(unlock, index) in sheet.xClues" group="xClues"
+                                              :key="'x'+index"
+                                              :id="'x'+index"
+                                              :checked="index == 0 || sheet.xClues[index]"
+                                              :disabled="index == 0"
+                                              @change="(id, isChecked) => {sheet.xClues[index] = isChecked; store()}"></checkbox>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr v-show="sheet.unlocks[8]" :key="'b'+renderX"
+                        class="flex items-center border-b border-gray-600">
+                        <td class="-ml-2">
+                            <checkbox group="unlocks" id="unlock9"
+                                      :checked="sheet.unlocks[9]"
+                                      @change="(id, isChecked) => {sheet.unlocks[9] = isChecked; store()}"></checkbox>
+                        </td>
+                        <td class="w-full flex flex-wrap">
+                            <span class="whitespace-normal md:whitespace-no-wrap">
+                                {{ $t('Envelope') }} <span class="font-title">x</span> {{ $t('solved') }}
+                            </span>
+                        </td>
+                    </tr>
                 </table>
+
                 <ul class="flex flex-row flex-wrap -mx-2">
                     <li v-for="(checked, character) in sheet.characters" class="flex items-center">
                         <checkbox group="items"
                                   :checked="checked"
                                   :disabled="character < 6"
                                   @change="(id, isChecked) => {sheet.characters[character] = isChecked; store()}"></checkbox>
-                        <span v-if="character < Object.keys(sheet.characters).length-1" class="w-8 font-title">
+                        <span class="w-8 font-title">
                             <character class="w-6 -mb-2 inline-block" :character="parseInt(character)+1"/>
                         </span>
-                        <span v-else class="font-title text-lg">X</span>
                     </li>
                 </ul>
             </div>
@@ -202,6 +242,7 @@ export default {
             ],
             campaignName: null,
             loading: true,
+            renderX: 0,
             storySyncer: new StorySyncer,
         }
     },
@@ -250,6 +291,9 @@ export default {
             return {
                 template: `<span>${html}</span>`
             };
+        },
+        rerenderX() {
+            this.renderX++;
         }
     }
 }
