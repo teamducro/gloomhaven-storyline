@@ -11,6 +11,7 @@ class Sheet {
         this.road = {...data.road};
         this.notes = data.notes;
         this.unlocks = {...data.unlocks};
+        this.xClues = {...data.xClues};
         this.characters = {...data.characters};
 
         this.fieldsToStore = {
@@ -22,6 +23,7 @@ class Sheet {
             road: {'road': {}},
             notes: 'notes',
             unlocks: {'unlocks': {}},
+            xClues: {'xClues': {}},
             characters: {'characters': {}}
         };
 
@@ -41,6 +43,7 @@ class Sheet {
         this.road = {};
         this.notes = '';
         this.unlocks = {};
+        this.xClues = {};
         this.characters = {
             0: true,
             1: true,
@@ -73,12 +76,19 @@ class Sheet {
         this.road[82] = this.road[82] || false;
         this.road[83] = this.road[83] || false;
 
-        for (let i = 0; i < 8; i++) {
+        for (let i = 0; i < 10; i++) {
             this.unlocks[i] = this.unlocks[i] || false;
         }
 
-        for (let i = 0; i < 19; i++) {
+        for (let i = 1; i < 10; i++) {
+            this.xClues[i] = this.xClues[i] || false;
+        }
+
+        for (let i = 0; i < 18; i++) {
             this.characters[i] = this.characters[i] || false;
+        }
+        if (this.characters[18]) {
+            this.characters.splice(-1, 1);
         }
     }
 

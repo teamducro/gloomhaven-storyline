@@ -139,6 +139,15 @@ describe('Party', () => {
         cy.get('.mdc-dialog__title').contains('City Event #').should('be.visible');
         cy.get('.mdc-dialog__content button').contains('A').click();
         cy.get('.mdc-dialog__content button').contains('A').should('not.exist');
-        cy.get('.mdc-dialog__content button').contains('Toggle B').should('exist');
+        cy.get('.mdc-dialog__content .blur').should('be.visible');
+        cy.get('.mdc-dialog__content button').contains('Toggle B').click();
+        cy.get('.mdc-dialog__content .blur').should('not.exist');
+    });
+
+    it('it unlocks envelope X', () => {
+        cy.visit('/tracker/#/party');
+        cy.get('input#unlock8').click();
+        cy.get('span').contains('Envelope x solved').should('be.visible');
+        cy.get('span').contains('Clues').should('be.visible');
     });
 });
