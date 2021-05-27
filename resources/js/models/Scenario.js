@@ -159,7 +159,7 @@ class Scenario {
     }
 
     get lootedAllTreasures() {
-        return this.isComplete() && this.treasures.count() > 0 && this.treasures.count() === this.unlockedTreasures.length;
+        return this.treasures.count() > 0 && this.treasures.count() === this.unlockedTreasures.length;
     }
 
     hasCard() {
