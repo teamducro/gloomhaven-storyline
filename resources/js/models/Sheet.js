@@ -88,7 +88,7 @@ class Sheet {
             this.characters[i] = this.characters[i] || false;
         }
         if (this.characters[18]) {
-            this.characters.splice(-1, 1);
+            delete this.characters[18];
         }
     }
 
