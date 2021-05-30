@@ -119,7 +119,8 @@ export default {
                 },
                 {version: 2.12, description: 'German language', date: moment('20-04-2021', "DD-MM-YYYY")},
                 {version: 2.13, description: 'New scenarios table', date: moment('22-04-2021', "DD-MM-YYYY")},
-                {version: 2.14, description: 'Spanish language', date: moment('01-05-2021', "DD-MM-YYYY")}
+                {version: 2.14, description: 'Spanish language', date: moment('01-05-2021', "DD-MM-YYYY")},
+                {version: 2.15, description: 'Draw event cards', date: moment('23-05-2021', "DD-MM-YYYY")}
             ].reverse()
         }
     },

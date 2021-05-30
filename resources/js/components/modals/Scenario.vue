@@ -427,7 +427,7 @@ export default {
 
             this.scenario = scenario;
             this.setVirtualBoardUrl();
-            this.treasuresVisible = false;
+            this.treasuresVisible = this.scenario.lootedAllTreasures;
             this.rollback = null;
             this.notesEntered();
 
