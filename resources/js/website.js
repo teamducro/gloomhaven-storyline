@@ -14,6 +14,7 @@ import Toast from "./components/elements/Toast";
 import Webp from "./components/elements/Webp";
 import TopMenu from "./pages/sections/TopMenu";
 import SiteFooter from "./pages/sections/SiteFooter";
+import BecomePatronButton from "./components/elements/BecomePatronButton";
 
 window.Vue = require('vue');
 window.axios = require('axios').default.create({
@@ -33,6 +34,7 @@ Vue.component('purchase', Purchase);
 Vue.component('share-icons', ShareIcons);
 Vue.component('toast', Toast);
 Vue.component('webp', Webp);
+Vue.component('becomePatronButton', BecomePatronButton);
 
 // Vue page sections
 Vue.component('top-menu', TopMenu);

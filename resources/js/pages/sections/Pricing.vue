@@ -9,10 +9,12 @@
                     community. If you enjoy using the storyline tracker, please consider a donation.<br/>
                     You'll get some nice perks!
                 </p>
+
+                <becomePatronButton class="mt-8 flex justify-center" text="Or become a patron"></becomePatronButton>
             </div>
         </div>
 
-        <div class="mt-16 bg-gray-900 pb-12 lg:mt-20">
+        <div class="mt-8 bg-gray-900 pb-12 lg:mt-12">
             <div class="relative z-0">
                 <div class="absolute inset-0 h-5/6 bg-gray-900 lg:h-2/3"></div>
                 <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">

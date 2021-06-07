@@ -131,7 +131,11 @@
 
                         <li role="separator" class="mdc-list-divider i-my-2"></li>
 
-                        <li v-if="!loggedIn" class="py-4 pl-4 w-full" @click="toggle">
+                        <li v-if="loggedIn" class="py-4 pl-4 flex" @click="toggle">
+                            <become-patron-button transparent></become-patron-button>
+                        </li>
+
+                        <li v-if="loggedIn" class="py-4 pl-4 w-full" @click="toggle">
                             <donate></donate>
                         </li>
                     </ul>

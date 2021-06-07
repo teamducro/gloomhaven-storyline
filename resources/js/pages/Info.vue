@@ -17,6 +17,8 @@
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Donate') }}</h2>
             <donate></donate>
 
+            <becomePatronButton class="mt-8 flex justify-start"></becomePatronButton>
+
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Open source') }}</h2>
             <a href="https://github.com/teamducro/gloomhaven-storyline">
                 <button class="mdc-button mdc-button--raised">
