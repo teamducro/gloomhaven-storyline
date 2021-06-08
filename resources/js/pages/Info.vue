@@ -17,6 +17,8 @@
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Donate') }}</h2>
             <donate></donate>
 
+            <p>Patrons can vote on new features and are notified when new features roll out! In addition they can Create
+                unlimited shared campaigns.</p>
             <becomePatronButton class="mt-8 flex justify-start"></becomePatronButton>
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Open source') }}</h2>

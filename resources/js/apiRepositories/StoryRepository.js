@@ -17,6 +17,23 @@ export default class StoryRepository extends ApiRepository {
         return this.getStories();
     }
 
+    async create() {
+        window.app.$bus.$emit('toast', 'Creating campaign...');
+
+        return await this.api.post('stories')
+            .then(response => {
+                window.app.$bus.$emit('toast', 'Campaign created!');
+
+                let storyResponse = response.data;
+                this.storeStory(storyResponse);
+
+                return new Story(storyResponse);
+            })
+            .catch(e => {
+                window.app.$bus.$emit('toast', 'Failed to create campaign, try again later.', false);
+            });
+    }
+
     async update(story) {
         const data = story.postData();
 

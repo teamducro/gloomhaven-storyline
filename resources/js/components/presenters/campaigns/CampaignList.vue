@@ -44,7 +44,7 @@
                                 {{ story.has_expired ? 'cloud_off' : 'cloud_queue' }}
                             </span>
                         </div>
-                        <div class="flex items-center">
+                        <div v-if="showPurchaseButton" class="flex items-center">
                             <campaign-badge class="mt-3" :story="story"></campaign-badge>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                                 <span class="ml-2 sm:ml-3">{{ $t('Unlink') }}</span>
                             </a>
                         </div>
-                        <purchase v-if="!story.is_shared"
+                        <purchase v-if="!story.is_shared && showPurchaseButton"
                                   :story-id="story.id" class="mt-px w-0 flex-1 flex">
                             <a class="cursor-pointer relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
                                 <template v-if="story.has_expired || story.expires_soon">
@@ -97,6 +97,11 @@ import StoryRepository from "../../../repositories/StoryRepository";
 import ApiStoryRepository from "../../../apiRepositories/StoryRepository";
 
 export default {
+    props: {
+        user: {
+            type: Object
+        }
+    },
     data() {
         return {
             stories: collect(),
@@ -113,6 +118,11 @@ export default {
     },
     destroyed() {
         this.$bus.$off('campaigns-changed', this.applyData);
+    },
+    computed: {
+        showPurchaseButton() {
+            return !this.user || !this.user.is_patron;
+        }
     },
     methods: {
         applyData() {
