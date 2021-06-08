@@ -47,9 +47,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .theme-transparent .iyzAZC {
     background-color: transparent;
     border: 1px solid white;
+}
+
+.theme-large .iyzAZC {
+    font-size: 1.1rem;
 }
 
 .iyzAZC {

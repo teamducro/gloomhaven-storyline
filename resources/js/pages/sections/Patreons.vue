@@ -14,7 +14,7 @@
             </p>
             <p class="w-full mt-8 text-center text-gray-600">
                 Patrons can vote on new features and are notified when new features roll out!
-                Create unlimited shared campaigns.
+                In addition they can Create unlimited shared campaigns.
             </p>
 
             <becomePatronButton class="mt-8 flex justify-center"></becomePatronButton>

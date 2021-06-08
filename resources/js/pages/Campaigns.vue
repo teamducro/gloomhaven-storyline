@@ -44,7 +44,7 @@
                                     Synchronised progress
                                 </p>
                             </li>
-                            <li class="flex items-start lg:col-span-1">
+                            <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
                                 <div class="flex-shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
@@ -105,14 +105,17 @@
                 Campaigns
             </h1>
 
-            <campaign-list></campaign-list>
+            <campaign-list :user="user"></campaign-list>
 
-            <div class="flex items-center">
+            <div v-if="showPurchaseButton" class="flex items-center">
                 <purchase>
                     <button type="button" class="mt-6 mdc-button mdc-button--raised">
                         {{ $t('Buy shared campaign') }}
                     </button>
                 </purchase>
+            </div>
+            <div v-else class="flex items-center">
+                <create-shared-campaign/>
             </div>
         </div>
 
@@ -125,6 +128,70 @@
                 <request-login-link/>
             </div>
         </div>
+
+        <template v-if="showPurchaseButton">
+            <div class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
+                <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
+                    <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
+                        Patreon
+                    </h3>
+                    <p class="mt-6 text-base text-gray-900">
+                        Support the project by joining the Patreon. You'll earn my deepest gratitude.
+                        You make it possible for me to maintain the tracker and keep the new features coming.
+                    </p>
+                    <div class="mt-8">
+                        <div class="flex items-center">
+                            <h4 class="flex-shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+                                What's included
+                            </h4>
+                            <div class="flex-1 border-t-2 border-gray-200"></div>
+                        </div>
+                        <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-5 lg:row-gap-5">
+                            <li class="flex items-start lg:col-span-1">
+                                <div class="flex-shrink-0">
+                                    <inline-svg src="icons/check"/>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700">
+                                    Unlimited shared campaigns
+                                </p>
+                            </li>
+                            <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
+                                <div class="flex-shrink-0">
+                                    <inline-svg src="icons/check"/>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700">
+                                    Patron shout-out
+                                </p>
+                            </li>
+                            <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
+                                <div class="flex-shrink-0">
+                                    <inline-svg src="icons/check"/>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700">
+                                    Vote on new features
+                                </p>
+                            </li>
+                            <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
+                                <div class="flex-shrink-0">
+                                    <inline-svg src="icons/check"/>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700">
+                                    Get notified
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="py-8 px-6 text-center bg-gray-200 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+                    <div class="font-title mt-4 flex items-center justify-center text-5xl leading-none text-gray-900">
+                        <span>€3,00</span>
+                        <span class="ml-3 text-xl leading-7 font-medium text-gray-500">/ month</span>
+                    </div>
+                    <becomePatronButton class="mt-8 flex justify-center theme-large"></becomePatronButton>
+                </div>
+            </div>
+        </template>
 
         <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h2 class="text-xl">How does it work?</h2>
@@ -153,7 +220,7 @@
             </p>
         </div>
 
-        <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
+        <div v-if="showPurchaseButton" class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h2 class="text-xl">Support the project</h2>
             <p class="text-base">
                 {{ !loggedIn ? '* ' : '' }}
@@ -163,6 +230,9 @@
                 please consider
                 <purchase class="inline link">purchasing a license.</purchase>
             </p>
+        </div>
+        <div v-else class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
+            <h2 class="text-xl">Thanks for joining the Patreon! 🤩</h2>
         </div>
     </div>
 </template>
@@ -177,6 +247,7 @@ export default {
     data() {
         return {
             loggedIn: Helpers.loggedIn(),
+            user: null,
             paymentSuccess: false,
             initCode: '',
             receivedACampaignCode: false,
@@ -190,15 +261,25 @@ export default {
     },
     mounted() {
         Helpers.removeQueryString();
+        this.setUser();
+        this.$bus.$on('campaigns-changed', this.setUser);
 
         if (this.receivedACampaignCode) {
             this.scrollToForm();
         }
     },
     destroyed() {
-
+        this.$bus.$off('campaigns-changed', this.setUser);
+    },
+    computed: {
+        showPurchaseButton() {
+            return !this.user || !this.user.is_patron;
+        }
     },
     methods: {
+        setUser() {
+            this.user = app.user;
+        },
         isPaymentSuccess() {
             return location.search.includes('payment_success');
         },

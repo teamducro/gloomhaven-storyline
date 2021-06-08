@@ -37,6 +37,7 @@
                               {{ $t('Read more') }}
                               </button>
                           </router-link>
+                          <becomePatronButton class="mt-4 flex justify-center"></becomePatronButton>
                           <span @click="close" class="text-sm text-gray-500 text-center mt-4 cursor-pointer">
                               {{ $t('donations.close') }}
                           </span>

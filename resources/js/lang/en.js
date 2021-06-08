@@ -142,6 +142,7 @@ export default {
     "Spanish": "Spanish",
     "Campaigns": "Campaigns",
     "Buy shared campaign": "Buy shared campaign",
+    "Add shared campaign": "Add shared campaign",
     "donations": {
         "1": "All content in the Gloomhaven Storyline Tracker is free!",
         "2": "The paid version provides an automatic sync feature, progress doesn’t have to be shared manually anymore! This covers costs maintaining this app for the community.",

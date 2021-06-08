@@ -8,6 +8,7 @@ class User extends Model {
         this.id;
         this.name;
         this.email;
+        this.is_patron;
 
         this.map(properties)
     }
