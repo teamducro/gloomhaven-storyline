@@ -314,6 +314,8 @@
 
         <pricing></pricing>
 
+        <patreons></patreons>
+
         <faq></faq>
 
         <creation></creation>
@@ -344,11 +346,12 @@ import Pricing from "../pages/sections/Pricing";
 import HeroHeader from "../pages/sections/HeroHeader";
 import Creation from "../pages/sections/Creation";
 import TwoColumnContent from "../pages/sections/TwoColumnContent";
-import faq from "./sections/FAQ";
+import Faq from "./sections/FAQ";
+import Patreons from "./sections/Patreons";
 import {scrollIntoView} from 'scroll-js';
 
 export default {
-    components: {HeroHeader, TwoColumnContent, Pricing, Creation, faq},
+    components: {HeroHeader, TwoColumnContent, Pricing, Creation, Faq, Patreons},
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,

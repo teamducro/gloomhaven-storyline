@@ -10,6 +10,12 @@
 
             <p class="w-full mt-8 text-center text-gray-500">Can’t find the answer you’re looking for?
                 <email-me class="link">Send me an e-mail.</email-me>
+                <br>
+                For game related questions, check the official
+                <a class="link"
+                   href="https://www.boardgamegeek.com/thread/1897763/official-faq-game-no-rules-questions-please">
+                    Gloomhaven FAQ
+                </a>.
             </p>
 
             <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">

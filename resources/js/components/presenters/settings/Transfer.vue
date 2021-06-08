@@ -81,6 +81,7 @@ export default {
         }
     },
     mounted() {
+        this.setStories();
         this.$bus.$on('campaigns-changed', this.setStories);
     },
     destroyed() {

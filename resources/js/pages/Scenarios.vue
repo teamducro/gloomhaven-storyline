@@ -111,7 +111,8 @@ export default {
             sortFunctions: {
                 image: 'id',
                 title: 'id',
-                regions: this.sortRegion
+                regions: this.sortRegion,
+                chapter_name: this.sortChapter
             },
             sortable: ['image', 'state', 'title', 'regions', 'chapter_name', 'lootedAllTreasures', 'is_side'],
             translatable: ['chapter_name'],
@@ -182,26 +183,26 @@ export default {
             return true;
         },
         sortRegion(a, b) {
-            if (a.isHidden() && a.isHidden()) {
+            let regionA = a.regions ? a.regions.pluck('name').first() : null;
+            let regionB = b.regions ? b.regions.pluck('name').first() : null;
+
+            return this.scenarioSort(a, regionA, b, regionB);
+        },
+        sortChapter(a, b) {
+            return this.scenarioSort(a, a.chapter_name, b, b.chapter_name);
+        },
+        scenarioSort(a, valueA, b, valueB) {
+            if ((a.isHidden() && b.isHidden()) || (!valueA && !valueB)) {
                 return 0;
-            } else if (a.isHidden()) {
+            }
+            if (!valueA || a.isHidden()) {
                 return 1;
-            } else if (b.isHidden()) {
+            }
+            if (!valueB || b.isHidden()) {
                 return -1;
             }
 
-            let regionA = a.regions ? a.regions.pluck('name').first() : '';
-            let regionB = b.regions ? b.regions.pluck('name').first() : '';
-
-            if (!regionA.length && !regionA.length) {
-                return 0;
-            } else if (!regionA.length) {
-                return 1;
-            } else if (!regionB.length) {
-                return -1;
-            }
-
-            return regionA.localeCompare(regionB);
+            return new Intl.Collator().compare(valueA, valueB);
         },
         toggleRegionFilter(id) {
             this.regionFilter.includes(id)

@@ -149,18 +149,23 @@ export default {
                 if (typeof this.sortFunctions[col] === 'function') {
                     rows.sort((a, b) => {
                         return this.ascending ? this.sortFunctions[col](a, b) : this.sortFunctions[col](b, a);
-                    })
+                    });
                 } else {
                     // Sort on other value then column
                     if (typeof this.sortFunctions[col] === 'string') {
                         col = this.sortFunctions[col];
                     }
 
-                    // default sort function
-                    if (this.ascending) {
-                        rows.sort((a, b) => (a[col] > b[col]) - (a[col] < b[col]))
+                    // default sort strings
+                    if (rows.length && typeof rows[0][col] === 'string') {
+                        rows.sort((a, b) => {
+                            return this.ascending ? new Intl.Collator().compare(a[col], b[col]) : new Intl.Collator().compare(b[col], a[col]);
+                        });
                     } else {
-                        rows.sort((b, a) => (a[col] > b[col]) - (a[col] < b[col]))
+                        // default sort numbers
+                        rows.sort((a, b) => {
+                            return this.ascending ? a[col] - b[col] : b[col] - a[col];
+                        });
                     }
                 }
             }
