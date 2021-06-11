@@ -1,5 +1,5 @@
 <template>
-    <div @click.stop="purchase">
+    <div @click.prevent.stop="purchase">
         <slot></slot>
     </div>
 </template>
@@ -16,15 +16,24 @@ export default {
     },
     data() {
         return {
+            purchasing: false,
             checkout: new CheckoutRepository
         }
     },
     methods: {
         async purchase() {
+            if (this.purchasing) {
+                return;
+            }
+            this.purchasing = true;
+
             const response = await this.checkout.checkout(this.storyId)
                 .catch(e => {
+                    this.purchasing = false;
                     this.error(e.response.data.message);
                 });
+
+            this.purchasing = false;
 
             if (response) {
                 this.$stripe.redirectToCheckout({
