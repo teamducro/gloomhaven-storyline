@@ -1122,6 +1122,17 @@ export default {
                 "1": "{1}{2}",
                 "2": "{1}{2}{3}"
             }
+        },
+        "72": {
+            "name": "Councilmans bargain",
+            "sections": {
+                "1": "The librarian Domenic wants to get into the development of Gloomhaven and this clash between the merchants and the military in the city. He asks your help to get the backing of a powerful merchant to keep him safe. You might have the most luck with Councilman Greymare.",
+                "2": "Councilman Greymare asked you to neutralize the situation in the Corpsewood. You are not sure this land will every grow crops again, but you neutralized the threat. Hopefully that is enough for Greymare to hold up his end of the bargain."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
         }
     },
     "quest-fc": {
