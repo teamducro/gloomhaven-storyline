@@ -361,5 +361,13 @@
             "73!=c",
             "73==c"
         ]
+    },
+    {
+        "id": 77,
+        "name": "Infiltrate the Vigil",
+        "checks": [
+            "77!=c",
+            "77==c"
+        ]
     }
 ]
