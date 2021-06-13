@@ -1133,6 +1133,17 @@ export default {
                 "0": "{1}",
                 "1": "{1}{2}"
             }
+        },
+        "73": {
+            "name": "Find the Aesther's story",
+            "sections": {
+                "1": "Dominic found out there is a written record of the Aesther's story. It's in the Codex of Directives. There was a copy of the book delivered to Gloomhaven. Apparently the caravan was attacked by a group of Inox near the southern tip of the Dagger Forest. Dominic learned the location of the Inox camp from an excaped guard, the book may still be out there.",
+                "2": "With the Inox dead. Among their belongings, you do find a large tome, although it's in poor condition. Dominic is extremely grateful when you returned with the Codex. He'll begin studying it immediately."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
         }
     },
     "quest-fc": {

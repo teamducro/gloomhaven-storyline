@@ -353,5 +353,13 @@
             "72!=c",
             "72==c"
         ]
+    },
+    {
+        "id": 73,
+        "name": "Find the Aesther's story",
+        "checks": [
+            "73!=c",
+            "73==c"
+        ]
     }
 ]
