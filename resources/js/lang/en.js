@@ -1144,6 +1144,17 @@ export default {
                 "0": "{1}",
                 "1": "{1}{2}"
             }
+        },
+        "77": {
+            "name": "Infiltrate the Vigil",
+            "sections": {
+                "1": "Dominic's work has been mostly destroyed by the Vigil, who also confiscated the Codex and his book. Following some investigation, he discovers that the Vigil are a bunch of pro-military skullerackers who keep any evidence of the Upheaval secret from everyone else. Dominic handed you a map to the Traveler's District where they operate. He request to recover the Codex and his book.",
+                "2": "Searching through the vault libraries, you find both the Codex and Dominic’s book. You find many other strange texts among the shelves: “Golems and Constructs,” “The Algox of the North.” However there is no time to sort through it all."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
         }
     },
     "quest-fc": {
