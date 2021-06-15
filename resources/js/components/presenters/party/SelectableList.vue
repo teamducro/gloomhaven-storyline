@@ -78,7 +78,7 @@ export default {
             this.rerender();
         },
         draw() {
-            let id = this.checkedItems.sort((a, b) => 0.5 - Math.random())[0];
+            let id = [...this.checkedItems].sort((a, b) => 0.5 - Math.random())[0];
             if (id) {
                 let card = this.id.substr(0, 1) + '-' + id;
                 this.$bus.$emit('open-card', card);
