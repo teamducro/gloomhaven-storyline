@@ -182,13 +182,11 @@
 <script>
 import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
-import SelectableList from "../components/presenters/party/SelectableList";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
-    components: {SelectableList},
     data() {
         return {
             sheet: null,
@@ -258,9 +256,11 @@ export default {
         this.render();
 
         this.$bus.$on('campaigns-changed', this.render);
+        this.$bus.$on('remove-card', this.removeCard);
     },
     destroyed() {
         this.$bus.$off('campaigns-changed', this.render);
+        this.$bus.$off('remove-card', this.removeCard);
     },
     methods: {
         async render() {
@@ -286,6 +286,15 @@ export default {
 
             this.sheet.store();
             this.storySyncer.store();
+        },
+        removeCard(card) {
+            if (card.type === 'R') {
+                this.sheet.road[card.id] = false;
+            } else if (card.type === 'C') {
+                this.sheet.city[card.id] = false;
+            }
+
+            this.store();
         },
         renderHtml(html) {
             return {
