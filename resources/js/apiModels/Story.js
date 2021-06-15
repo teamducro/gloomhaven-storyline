@@ -1,6 +1,7 @@
 import Model from "./Model";
 import moment from "moment";
 import Snapshot from "./Snapshot";
+import LZString from "lz-string";
 
 const md5 = require('js-md5');
 
@@ -27,6 +28,9 @@ class Story extends Model {
     }
 
     cast() {
+        if (typeof this.data === 'string') {
+            this.data = JSON.parse(LZString.decompressFromEncodedURIComponent(this.data));
+        }
         this.expires_at = moment(this.expires_at);
         this.updated_at = this.updated_at
             ? moment(this.updated_at)
