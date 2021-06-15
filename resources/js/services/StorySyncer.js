@@ -13,6 +13,7 @@ export default class StorySyncer {
         const hasChanged = story.hasChanged();
 
         if (hasChanged) {
+            story.hash = story.makeHash();
             story.updated_at = moment();
             this.apiStoryRepository.storeStory(story);
         }
