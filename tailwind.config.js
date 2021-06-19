@@ -55,6 +55,7 @@ module.exports = {
                 primary: '#3771E0',
                 'primary-dark': '#2356b7',
                 secondary: '#018786',
+                patreon: '#ff424d',
                 background: '#000',
                 surface: '#111',
                 'dark-background': '#1b1b1b',
