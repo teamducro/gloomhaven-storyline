@@ -8,18 +8,28 @@
                 <webp src="/img/minis.jpg" alt="Gloomhaven minis"/>
             </div>
 
+            <h2 id="contribute" class="mt-8 mb-4 text-lg">{{ $t('Contributions') }}</h2>
+
+            <p>Support the project by joining the Patreon. You'll earn my deepest gratitude. You make it
+                possible for me to maintain the tracker and keep the new features coming.</p>
+            <p class="mt-2">Patrons can create unlimited shared campaigns. In addition they can vote on new features and
+                are notified when new features roll out!</p>
+
+            <div class="flex flex-col sm:flex-row">
+                <div>
+                    <becomePatronButton class="mt-8 flex justify-start"></becomePatronButton>
+                    <donate class="mt-8"></donate>
+                </div>
+                <div class="mt-8 sm:mt-0 sm:ml-12 sm:flex sm:items-end">
+                    <webp src="/img/character-sheets.png" width="225"></webp>
+                </div>
+            </div>
+
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Support') }}</h2>
             <p>Would you like to contribute by translating to your native language?</p>
             <p>For help or feedback, please consult the <a href="/#/faq" class="link">FAQ</a> or
                 <email-me class="link">send me an e-mail.</email-me>
             </p>
-
-            <h2 class="mt-8 mb-4 text-lg">{{ $t('Donate') }}</h2>
-            <donate></donate>
-
-            <p class="mt-6">Patrons can vote on new features and are notified when new features roll out!
-                In addition they can Create unlimited shared campaigns.</p>
-            <becomePatronButton class="mt-8 flex justify-start"></becomePatronButton>
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Open source') }}</h2>
             <a href="https://github.com/teamducro/gloomhaven-storyline">
@@ -130,19 +140,31 @@ import Helpers from "../services/Helpers";
 const queryString = require('query-string');
 
 export default {
+    props: {
+        contribute: {
+            type: Boolean,
+            default: false
+        }
+    },
     data() {
         return {}
     },
     mounted() {
-        const scrollTo = Object.keys(queryString.parse(location.search)).find(Boolean)
+        const scrollTo = Object.keys(queryString.parse(location.search)).find(Boolean);
         if (scrollTo) {
+            this.scrollTo(scrollTo);
+        } else if (this.contribute) {
+            this.scrollTo('contribute');
+        }
+    },
+    methods: {
+        scrollTo(id) {
             Helpers.removeQueryString();
-            const element = document.getElementById(scrollTo);
+            const element = document.getElementById(id);
             if (element) {
                 element.scrollIntoView();
             }
         }
-    },
-    methods: {}
+    }
 }
 </script>
