@@ -16,7 +16,7 @@ export default [
     {path: '/scenarios', component: Scenarios},
     {path: '/map', component: Map},
     {path: '/achievements', component: Achievements},
-    {path: '/info', component: Info},
+    {path: '/info', name: 'info', component: Info, props: true},
     {path: '/campaigns', component: Campaigns},
     {path: '/party', component: Party},
     {path: '/items', component: Items},

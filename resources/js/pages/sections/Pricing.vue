@@ -10,7 +10,7 @@
                     You'll get some nice perks!
                 </p>
 
-                <becomePatronButton class="mt-8 flex justify-center" text="Or become a patron"></becomePatronButton>
+                <becomePatronButton class="mt-8 flex justify-center"></becomePatronButton>
             </div>
         </div>
 

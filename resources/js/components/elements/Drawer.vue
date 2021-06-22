@@ -100,11 +100,6 @@
                             </router-link>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider i-my-2"></li>
-                    </ul>
-                </div>
-                <div class="mdc-list-group">
-                    <ul>
                         <li>
                             <a class="mdc-list-item"
                                @click="shareCurrentStory">
@@ -113,19 +108,29 @@
                             </a>
                         </li>
 
-                        <li @click="toggle">
-                            <router-link to="/settings" class="mdc-list-item"
-                                         active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
-                                <span class="mdc-list-item__text">{{ $t('Settings') }}</span>
-                            </router-link>
-                        </li>
+                        <li role="separator" class="mdc-list-divider i-my-2"></li>
+                    </ul>
+                </div>
+
+                <links @click="toggle" class="px-4 -my-2"></links>
+
+                <div class="mdc-list-group">
+                    <ul>
+                        <li role="separator" class="mdc-list-divider i-my-2"></li>
 
                         <li @click="toggle">
                             <router-link to="/info" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic"
                                    aria-hidden="true">info</i>
                                 <span class="mdc-list-item__text">{{ $t('Info') }}</span>
+                            </router-link>
+                        </li>
+
+                        <li @click="toggle">
+                            <router-link to="/settings" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+                                <span class="mdc-list-item__text">{{ $t('Settings') }}</span>
                             </router-link>
                         </li>
 

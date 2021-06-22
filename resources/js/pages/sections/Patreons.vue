@@ -12,7 +12,7 @@
                 Support the project by joining the Patreon. You'll earn my deepest gratitude.
                 You make it possible for me to maintain the tracker and keep the new features coming.
             </p>
-            <p class="w-full mt-8 text-center text-gray-600">
+            <p class="w-full mt-2 text-center text-gray-600">
                 Patrons can create unlimited shared campaigns. In addition they can vote on new features and are
                 notified when new features roll out!
             </p>
