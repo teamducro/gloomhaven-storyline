@@ -3,7 +3,7 @@ export default {
     'Map': 'Karte',
     'Scenario list': 'Liste der Szenarien',
     'Share': 'Teilen',
-    'Reset': 'Reset',
+    'Reset': 'Zurücksetzen',
     'Our party': 'Unsere Gruppe',
     'Credits': 'Credits',
     'Source': 'Quelle',
@@ -27,24 +27,24 @@ export default {
     'Road Events': 'Weg-Ereignisse',
     'City Events': 'Stadt-Ereignisse',
     'Requirements': 'Voraussetzungen',
-    'Show treasures': 'Zeige Schätze',
-    'Treasure': 'Schätze | Schätze',
+    'Show treasures': 'Schätze anzeigen',
+    'Treasure': 'Schatz',
     'No treasures available': 'Keine Schätze verfügbar',
     'Treasures': 'Schätze',
     'Global': 'Global',
     'Party': 'Gruppe',
     'Lost': 'Verloren',
-    'Achievement': 'Erfolg | Erfolge',
+    'Achievement': 'Erfolg',
     'Achievements': 'Erfolge',
     'Summary': 'Zusammenfassung',
     'Preceding events': 'Vorgeschichte',
     'Notes': 'Notizen',
-    'Page': 'Seite | Seiten',
+    'Page': 'Seite',
     'Pages': 'Seiten',
     'Choose a scenario to unlock': 'Wähle ein Szenario zum Freischalten',
     'Cancel': 'Abbrechen',
     'Choose': 'Wählen',
-    'Reward': 'Belohnung | Belohnungen',
+    'Reward': 'Belohnung',
     'Rewards': 'Belohnung',
     'Conclusion': 'Epilog',
     'Gained from': 'Erhalten von',
@@ -68,7 +68,7 @@ export default {
     },
     'Credits': 'Credits',
     'credits': {
-        'thanks': 'Vielen Dank an diese Entwickler für ihre Beträge.',
+        'thanks': 'Vielen Dank an die Entwickler für ihre Beträge.',
         'license': 'Alle Inhalte bleiben unter Creative-Commons-Lizenz.'
     },
     'Gloomhaven assets by': 'Gloomhaven Ressourcen von',
@@ -88,7 +88,7 @@ export default {
         3: 'Bitte ziehe eine Lizenz in Betracht, das wäre sehr hilfreich.',
         'close': 'Verwende den Storyline Tracker weiterhin.',
     },
-    local: 'Local Campaign',
+    local: 'Lokale Kampagne',
     scenarios: {
         'Black Barrow': 'Schwarzgrab',
         'Barrow Lair': 'Grabhöhle',
@@ -238,7 +238,7 @@ export default {
         1: {
             "name": "Der Auftrag der Händlerin",
             "sections": {
-                1: "Die Valrath-Händlerin Jekserah hat euch angeboten, zehn Goldmünzen zu zahlen, um einige gestohlene Waren zurückzuholen. Durch das Aufmischen von ein paar einheimischen Schlägern habt ihr entdeckt, dass das Versteck der Diebe das Schwarzgrab im Totenhain ist.",
+                1: "Die Valrath-Händlerin Jekserah hat euch angeboten, zehn Goldmünzen zu zahlen, um einige gestohlene Waren zurückzuholen. Durch das Aufmischen von ein paar einheimischen Schlägern habt ihr erfahren, dass das Versteck der Diebe das Schwarzgrab im Totenhain ist.",
                 2: "Ihr habt eure Zielperson im Schwarzgrab gefunden, aber sie ist entkommen. Während der Verfolgung seid ihr auf den Grund gestoßen, warum die Banditen diesen speziellen Grabhügel ausgewählt haben: wiederbelebte Skelette. Die Banditen scheinen über gewisse nekromantische Kräfte zu verfügen. Trotzdem habt ihr sie und ihre unheiligen Verbündeten getötet. Euer Ziel befand sich nicht unter den Toten, aber ein Gang, der tiefer in die Katakomben führt, wartet auf euch.",
                 3: "Ihr habt den Banditen-Kommandanten besiegt. Etwas an ihm schien unnatürlich und er erwähnte das \"Grauen\" während der Schlacht. Ihr habt die gestohlenen Schriftrollen ein einem Versteck in der Kammer des Kommandanten gefunden und habt sie Jekserah für die vereinbarte Belohnung zurückgegeben."
             },
@@ -252,7 +252,7 @@ export default {
             "name": "Der Zorn der Händlerin",
             "sections": {
                 1: "Jekserah bietet euch nach eurem ersten Auftrag einen weiteren an. Ein Inox-Stamm im Dolchwald hat ein paar ihrer Karawanen in Richtung Hauptstadt geplündert. Sie will an ihnen ein Exempel statuieren.",
-                2: "Der Inox-Stamm ist tot. Ihr habt ein brutales Exempel an ihnen statuiert, und in der nächsten Zeit wird niemand Jekserahs Karawanen bedrohen. Ihr fühlt euch nicht gerade wohl dabei, Eltern vor den Augen ihrer Kinder abzuschlachten, aber Jekserah hat euch trotzdem bezahlt.",
+                2: "Der Inox-Stamm ist tot. Ihr habt ein brutales Exempel an ihnen statuiert, und in der nächsten Zeit wird niemand Jekserahs Karawanen bedrohen. Ihr fühltet euch nicht gerade wohl dabei, Eltern vor den Augen ihrer Kinder abzuschlachten, aber Jekserah hat euch trotzdem bezahlt.",
                 3: "Jekserah ist aus Gloomhaven geflohen und hat geschworen, sich an euch zu rächen, weil ihr gegen sie vorgegangen seid. Sie wird nicht mehr darauf erpicht sein, euch für eure Dienste zu bezahlen."
             },
             "stages": {
@@ -264,7 +264,7 @@ export default {
         3: {
             "name": "Die Suche nach dem Grauen",
             "sections": {
-                1: "Die Ankündigungen des Banditenkommandants über ein \"Grauen\" während der Schlacht beunruhigt euch. Beim Durchsuchen der niedergemetzelten Körper, die die Schlacht hinterlassen hat, stoßt ihr auf einen Behälter, der mehrere Schriftrollen enthält. Die Schrift war in einer archaischen euch unbekannten Sprache verfasst. Unter den Schriftrollen befand sich auch eine Karte der nördlichen Landschaft, auf der eine Biegung des Stillen Flusses deutlich markiert war. Ihr überlegt, ob ihr mehr über dieses sogenannte \"Grauen\" herausfinden wollt, oder ob der markierte Punkt auf der Karte auch von Interesse für euch sein könnte.",
+                1: "Die Ankündigungen des Banditenkommandants über ein \"Grauen\" während der Schlacht beunruhigt euch. Beim Durchsuchen der niedergemetzelten Körper, die die Schlacht hinterlassen hat, stoßt ihr auf einen Behälter, der mehrere Schriftrollen enthält. Die Schrift ist in einer archaischen euch unbekannten Sprache verfasst. Unter den Schriftrollen befand sich auch eine Karte der nördlichen Landschaft, auf der eine Biegung des Stillen Flusses deutlich markiert war. Ihr überlegt, ob ihr mehr über dieses sogenannte \"Grauen\" herausfinden wollt, oder ob der markierte Punkt auf der Karte auch von Interesse für euch sein könnte.",
                 2: "Die Karte führte euch zu einer Krypta voller Dämonen und Kultisten. Offensichtlich sind die Banditen mit einer Art Kult verbunden und eure Ankunft hat sie bei der Durchführung eines Rituals gestört. Unter den Schriften, die ihr in der Ritualkammer gefunden habt, befinden sich Notizen über ein paar andere Orte der Macht in der Gegend. Einer davon ist \"als von bösartigen Untoten überrannt\" markiert. Es scheint als hättet ihr die Chance, sich die Gunst des Kults zu verdienen, indem ihr die Bedrohung beseitigt. Das könnte eine Möglichkeit sein, mehr über das \"Grauen\" zu erfahren.",
                 3: "Nachdem das schreckliche Kreischen und Stöhnen der Untoten verstummt war, erschien eine grinsende Kapuzengestalt vor euch. Ihr Auftreten war zutiefst beunruhigend. Im Austausch zur Vergebung der Morde an ihren Brüdern bat sie euch um einen weiteren Gefallen. Die Kultisten wollen die Nekromantin Jekserah tot sehen. Wenn ihr ihren Kopf in das Hauptquartier der Kultisten bringt, werdet ihr vielleicht mehr über das \"Grauen\" erfahren. Die Gestalt hat euch Aufschluss darüber gegeben, wo ihr Beweise für Jeksehras Pläne finden könnt.",
                 4: "Ihr habt Jekserah erschlagen. Als sie zusammenbrach und das Leben aus ihren Augen wich, flüsterte sie euch zu \"Ihr habt keine Ahnung was euch erwartet...\". Vielleicht erweist sich der Kopf eurer alten Chefin für die zukünftigen Verhandlungen mit den Banditen als nützlich.",
