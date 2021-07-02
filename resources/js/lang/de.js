@@ -21,7 +21,7 @@ export default {
     'Atop Mountains': 'Auf den Bergen',
     'Dragons': 'Drachen',
     'Voice': 'Die Stimme',
-    'Personal Quests': 'Persönliche Quests',
+    'Personal Quests': 'Persönliche Ziele',
     'Random Scenarios': 'Zufällige Szenarien',
     'Sealed': 'Versiegelt',
     'Road Events': 'Weg-Ereignisse',
@@ -45,7 +45,7 @@ export default {
     'Cancel': 'Abbrechen',
     'Choose': 'Wählen',
     'Reward': 'Belohnung',
-    'Rewards': 'Belohnung',
+    'Rewards': 'Belohnungen',
     'Conclusion': 'Epilog',
     'Gained from': 'Erhalten von',
     'Required by': 'Benötigt für',
@@ -77,7 +77,7 @@ export default {
     'Map coordinates by': 'Kartenkoordinaten von',
     'about us': {
         'title': 'Verfolge deinen Handlungsstrang in Gloomhaven',
-        'text': 'Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Wir drücken die Pausetaste in unserem Alltag. Jeder von uns hat etwas beigetragen, das unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Fortschritte im Spiel zu verfolgen und die Auswahl eines neuen Szenarios zu erleichtern. Mit einigen Getränken und Snacks sind wir bereit anzufangen.',
+        'text': 'Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Dann drücken wir die Pausetaste vonn unserem Alltag. Jeder von uns hat etwas beigetragen, das unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Fortschritte im Spiel zu verfolgen und die Auswahl eines neuen Szenarios zu erleichtern. Mit einigen Getränken und Snacks sind wir bereit zu starten.',
     },
     'Welcome': 'Willkommen',
     'Language': 'Sprache',
@@ -85,7 +85,7 @@ export default {
         'title': 'Fortschritt automatisch synchronisieren!',
         1: 'Alle Inhalte im Gloomhaven Storyline Tracker sind gratis!',
         2: 'Die kostenpflichtige Version bietet eine automatische Synchronisierungsfunktion, Fortschritte müssen nicht mehr manuell ausgetauscht werden! Dies deckt die Kosten für die Wartung dieser App für die Community.',
-        3: 'Bitte ziehe eine Lizenz in Betracht, das wäre sehr hilfreich.',
+        3: 'Bitte ziehe den Kauf einer Lizenz in Betracht, das wäre sehr hilfreich.',
         'close': 'Verwende den Storyline Tracker weiterhin.',
     },
     local: 'Lokale Kampagne',
@@ -136,7 +136,7 @@ export default {
         'Tribal Assault': 'Stammesangriff',
         'Rebel Swamp': 'Rebellensumpf',
         'Nightmare Peak': 'Alptraumspitze',
-        'Lair of the Unseeing Eye': 'Hort des Blicklosten',
+        'Lair of the Unseeing Eye': 'Hort des Blicklosen',
         'Shadow Weald': 'Schattenwald',
         'Rebel\'s Stand': 'Letzter Widerstand',
         'Ghost Forrest': 'Geisterfestung',
@@ -212,7 +212,7 @@ export default {
         "The Drakes Command": "Befehl des Draken",
         "Following Clues": "Hinweisen folgen",
         "An Invitation": "Eine Einladung",
-        "The Edge of Darkness": "Am Rand der Finsternis",
+        "The Edge of Darkness": "Der Rand der Finsternis",
         "The Scepter and the Voice": "Zepter und Stimme",
         "Artifact: Cleansed": "Artefakt: geläutert",
         "The Voices Treasure": "Schatz des Stimme",
@@ -229,7 +229,7 @@ export default {
         "End of Corruption": "Ende der Verderbtheit",
         "End of Corruption x2": "Ende der Verderbtheit x2",
         "End of Corruption x3": "Ende der Verderbtheit x3",
-        "Annihilation of Order": "Auslöschung jeglicher Ordnung",
+        "Annihilation of Order": "Auslöschung der Ordnung",
         "End of Gloom": "Ende des Grauens",
         "The Poisons Source": "Quelle des Gifts",
         "Through the Nest": "Durch den Bau",
@@ -238,9 +238,9 @@ export default {
         1: {
             "name": "Der Auftrag der Händlerin",
             "sections": {
-                1: "Die Valrath-Händlerin Jekserah hat euch angeboten, zehn Goldmünzen zu zahlen, um einige gestohlene Waren zurückzuholen. Durch das Aufmischen von ein paar einheimischen Schlägern habt ihr erfahren, dass das Versteck der Diebe das Schwarzgrab im Totenhain ist.",
+                1: "Die Valrath-Händlerin Jekserah hat euch angeboten, zehn Goldmünzen zu zahlen, wenn ihr für sie einige gestohlene Waren zurückholt. Durch das Aufmischen von ein paar einheimischen Schlägern habt ihr erfahren, dass das Versteck der Diebe das Schwarzgrab im Totenhain ist.",
                 2: "Ihr habt eure Zielperson im Schwarzgrab gefunden, aber sie ist entkommen. Während der Verfolgung seid ihr auf den Grund gestoßen, warum die Banditen diesen speziellen Grabhügel ausgewählt haben: wiederbelebte Skelette. Die Banditen scheinen über gewisse nekromantische Kräfte zu verfügen. Trotzdem habt ihr sie und ihre unheiligen Verbündeten getötet. Euer Ziel befand sich nicht unter den Toten, aber ein Gang, der tiefer in die Katakomben führt, wartet auf euch.",
-                3: "Ihr habt den Banditen-Kommandanten besiegt. Etwas an ihm schien unnatürlich und er erwähnte das \"Grauen\" während der Schlacht. Ihr habt die gestohlenen Schriftrollen ein einem Versteck in der Kammer des Kommandanten gefunden und habt sie Jekserah für die vereinbarte Belohnung zurückgegeben."
+                3: "Ihr habt den Banditen-Kommandanten besiegt. Etwas an ihm schien unnatürlich und während der Schlacht sprach er von einem \"Grauen\". Ihr habt die gestohlenen Schriftrollen in einem Versteck in der Kammer des Kommandanten gefunden und habt sie Jekserah für die vereinbarte Belohnung zurückgegeben."
             },
             "stages": {
                 0: "{1}",
@@ -252,8 +252,8 @@ export default {
             "name": "Der Zorn der Händlerin",
             "sections": {
                 1: "Jekserah bietet euch nach eurem ersten Auftrag einen weiteren an. Ein Inox-Stamm im Dolchwald hat ein paar ihrer Karawanen in Richtung Hauptstadt geplündert. Sie will an ihnen ein Exempel statuieren.",
-                2: "Der Inox-Stamm ist tot. Ihr habt ein brutales Exempel an ihnen statuiert, und in der nächsten Zeit wird niemand Jekserahs Karawanen bedrohen. Ihr fühltet euch nicht gerade wohl dabei, Eltern vor den Augen ihrer Kinder abzuschlachten, aber Jekserah hat euch trotzdem bezahlt.",
-                3: "Jekserah ist aus Gloomhaven geflohen und hat geschworen, sich an euch zu rächen, weil ihr gegen sie vorgegangen seid. Sie wird nicht mehr darauf erpicht sein, euch für eure Dienste zu bezahlen."
+                2: "Der Inox-Stamm ist tot. Ihr habt ein brutales Exempel an ihnen statuiert, und in der nächsten Zeit wird niemand Jekserahs Karawanen bedrohen. Eltern vor den Augen ihrer Kinder abzuschlachten war nicht gerade eine ruhmreiche Tat, aber Jekserah hatte euch nunmal dafür bezahlt.",
+                3: "Jekserah ist aus Gloomhaven geflohen und hat geschworen, sich an euch zu rächen, weil ihr gegen sie vorgegangen seid. Eure Bezahlung könnt ihr somit auch vergessen."
             },
             "stages": {
                 0: "{1}",
@@ -264,14 +264,14 @@ export default {
         3: {
             "name": "Die Suche nach dem Grauen",
             "sections": {
-                1: "Die Ankündigungen des Banditenkommandants über ein \"Grauen\" während der Schlacht beunruhigt euch. Beim Durchsuchen der niedergemetzelten Körper, die die Schlacht hinterlassen hat, stoßt ihr auf einen Behälter, der mehrere Schriftrollen enthält. Die Schrift ist in einer archaischen euch unbekannten Sprache verfasst. Unter den Schriftrollen befand sich auch eine Karte der nördlichen Landschaft, auf der eine Biegung des Stillen Flusses deutlich markiert war. Ihr überlegt, ob ihr mehr über dieses sogenannte \"Grauen\" herausfinden wollt, oder ob der markierte Punkt auf der Karte auch von Interesse für euch sein könnte.",
-                2: "Die Karte führte euch zu einer Krypta voller Dämonen und Kultisten. Offensichtlich sind die Banditen mit einer Art Kult verbunden und eure Ankunft hat sie bei der Durchführung eines Rituals gestört. Unter den Schriften, die ihr in der Ritualkammer gefunden habt, befinden sich Notizen über ein paar andere Orte der Macht in der Gegend. Einer davon ist \"als von bösartigen Untoten überrannt\" markiert. Es scheint als hättet ihr die Chance, sich die Gunst des Kults zu verdienen, indem ihr die Bedrohung beseitigt. Das könnte eine Möglichkeit sein, mehr über das \"Grauen\" zu erfahren.",
+                1: "Die Erwähnung des Banditenkommandants eines \"Grauens\" während der Schlacht beunruhigt euch. Beim Durchsuchen der niedergemetzelten Körper, die die Schlacht hinterlassen hat, stoßt ihr auf einen Behälter, der mehrere Schriftrollen enthält. Die Schrift ist in einer archaischen euch unbekannten Sprache verfasst. Unter den Schriftrollen befand sich auch eine Karte der nördlichen Landschaft, auf der eine Biegung des Stillen Flusses deutlich markiert ist. Ihr überlegt, ob ihr mehr über dieses sogenannte \"Grauen\" herausfinden wollt, oder ob der markierte Punkt auf der Karte auch von Interesse für euch sein könnte.",
+                2: "Die Karte führte euch zu einer Krypta voller Dämonen und Kultisten. Offensichtlich sind die Banditen mit einer Art Kult verbunden und eure Ankunft hat sie bei der Durchführung eines Rituals gestört. Unter den Schriften, die ihr in der Ritualkammer gefunden habt, befinden sich Notizen über verschiedene Orte der Macht in der Gegend. Einer davon ist \"als von bösartigen Untoten überrannt\" markiert. Es scheint als hättet ihr die Chance, sich die Gunst des Kults zu verdienen, indem ihr die Bedrohung beseitigt. Das könnte eine Möglichkeit sein, mehr über das \"Grauen\" zu erfahren.",
                 3: "Nachdem das schreckliche Kreischen und Stöhnen der Untoten verstummt war, erschien eine grinsende Kapuzengestalt vor euch. Ihr Auftreten war zutiefst beunruhigend. Im Austausch zur Vergebung der Morde an ihren Brüdern bat sie euch um einen weiteren Gefallen. Die Kultisten wollen die Nekromantin Jekserah tot sehen. Wenn ihr ihren Kopf in das Hauptquartier der Kultisten bringt, werdet ihr vielleicht mehr über das \"Grauen\" erfahren. Die Gestalt hat euch Aufschluss darüber gegeben, wo ihr Beweise für Jeksehras Pläne finden könnt.",
                 4: "Ihr habt Jekserah erschlagen. Als sie zusammenbrach und das Leben aus ihren Augen wich, flüsterte sie euch zu \"Ihr habt keine Ahnung was euch erwartet...\". Vielleicht erweist sich der Kopf eurer alten Chefin für die zukünftigen Verhandlungen mit den Banditen als nützlich.",
                 5: "Ihr habt Jekserah erschlagen. Es ist an der Zeit den Kopf eurer alten Chefin zum Hauptquartier der Kultisten zu bringen.",
                 6: "Zum Leidwesen der Kultisten habt ihr euch auf die Seite von Jekserah geschlagen und die Stadt übernommen. Euer mysteriöser Kontakt wir sich nun sicher nicht mehr mit euch treffen wollen.",
                 7: "Ihr habt die Kapuzengestalt im Hauptquartier des Kults getroffen, wo sie euch freundlich für eure Hilfe bei der Beseitigung der Nekromantin gedankt hat. Dann stellte sie euch einen schwarzen, flammenden Spalt im Raum vor, den sie ihren Meister, das \"Grauen\", nannte. Die Gestalt hat euch prompt verraten, indem sie eine Horde unnatürlicher Kreaturen beschwor, um euch zu töten. Scheinbar ist es nicht so einfach wieder in die Gunst des Kultes zu gelangen, nachdem man seine Anhänger ermordet und seine Pläne sabotiert hat. Nach einem anstrengenden Kampf sprach das \"Grauen\" mit kalter und tiefer Stimme zu euch. \"Das habt ihr gut gemacht. Meine Anhänger können euch vielleicht nicht verzeihen, aber ich kann es. Kommt zu mir, tretet ein in mein Reich. Nehmt das Unvermeidliche an.\" Der Spalt ist direkt vor euch, wagt ihr es einzutreten?",
-                8: "Ihr seid in den schwarzen Spalt eingetreten. Die tiefe Stimme ertönt noch einmal: \"Wieder ausgetrickst. Wirklich erstaunlich, dass Kreaturen, die so dumm sind wie ihr, mir so viel Ärger bereiten. Aber das ist nun auch egal, denn ihr werdet hier verroten, vollkommen abgeschitten von eurer Heimat. Ihr werdet ohne Tapferkeit an einem fremden Ort sterben und es gibt keinen Ausweg. Ich verlasse euch nun für immer. Auf Wiedersehen.\" Der darauf folgende Kampf schien endlos zu sein. Nachdem ihr alle Gegner getötet habt, schlugt ihr verzweifelt auf die Wände ein in der Hoffnung einen Ausweg zu finden bis ihr undendlich müde wurdet und eure Sinne schwanden. Mit eurem nächsten Atemzug fandet ihr euch im Gras vor dem Versteck der Sekte liegend wieder. \"Wisst, dass ich euch verschont habe.\" Die tiefe Stimme kehrt in eure Köpfe zurück. \"Eure Hartnäckigkeit fasziniert mich. Seid eingeladen euch an mir zu zerbrechen. Es wird unterhaltsamer sein als das letzte Mal, als ich das Grauen in diese Welt brachte\". Ihr richtet euch auf und eilt zurück in die Krypta, wo die toten Körper der Kultisten den Boden übersäen. \"Ich bin nicht mehr hier. Diese Hüllen haben ihren Zweck erfüllt. Meine Wurzeln sind nun tief verankert und ihr werdet bald wieder auf meine unendliche Macht treffen. Ich freue mich auf diesen Tag.\""
+                8: "Ihr seid in den schwarzen Spalt eingetreten. Die tiefe Stimme ertönt noch einmal: \"Wieder ausgetrickst. Wirklich erstaunlich, dass Kreaturen, die so dumm sind wie ihr, mir so viel Ärger bereiten. Aber das ist nun auch egal, denn ihr werdet hier verroten, vollkommen abgeschnitten von eurer Heimat. Ihr werdet ohne Tapferkeit an einem fremden Ort sterben und es gibt keinen Ausweg. Ich verlasse euch nun für immer. Auf Wiedersehen.\" Der darauf folgende Kampf schien endlos zu sein. Nachdem ihr alle Gegner getötet habt, schlugt ihr verzweifelt auf die Wände ein in der Hoffnung einen Ausweg zu finden bis ihr vollkommen erschöpft wart und eure Sinne schwanden. Mit eurem nächsten Atemzug fandet ihr euch im Gras vor dem Versteck der Sekte liegend wieder. \"Wisst, dass ich euch verschont habe.\" Die tiefe Stimme kehrt in eure Köpfe zurück. \"Eure Hartnäckigkeit fasziniert mich. Seid eingeladen an mir zu Grunde zu gehen. Es wird unterhaltsamer sein als das letzte Mal, als ich das Grauen in diese Welt brachte\". Ihr richtet euch auf und eilt zurück in die Krypta, wo die toten Körper der Kultisten den Boden übersäen. \"Ich bin nicht mehr hier. Diese Hüllen haben ihren Zweck erfüllt. Meine Wurzeln sind nun tief verankert und ihr werdet bald wieder auf meine unendliche Macht treffen. Ich freue mich auf diesen Tag.\""
             },
             "stages": {
                 0: "{1}",
