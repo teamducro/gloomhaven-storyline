@@ -1,5 +1,5 @@
 import Model from "./Model";
-import moment from "moment";
+import dayjs from "dayjs";
 import Snapshot from "./Snapshot";
 import LZString from "lz-string";
 
@@ -31,10 +31,10 @@ class Story extends Model {
         if (typeof this.data === 'string') {
             this.data = JSON.parse(LZString.decompressFromEncodedURIComponent(this.data));
         }
-        this.expires_at = moment(this.expires_at);
+        this.expires_at = dayjs(this.expires_at);
         this.updated_at = this.updated_at
-            ? moment(this.updated_at)
-            : moment().subtract(10, 'years');
+            ? dayjs(this.updated_at)
+            : dayjs().subtract(10, 'years');
         this.campaignId = '_' + this.id;
         this.snapshots = collect(this.snapshots).map((snapshot) => {
             return new Snapshot(snapshot);
