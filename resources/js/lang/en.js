@@ -10,8 +10,6 @@ export default {
     "Open source": "Open source",
     "Info": "Info",
     "Settings": "Settings",
-    "Characters": "Characters",
-    "Character sheet": "Character sheet",
     "Party sheet": "Party sheet",
     "Reputation": "Reputation",
     "Shop modifier": "Shop modifier",
