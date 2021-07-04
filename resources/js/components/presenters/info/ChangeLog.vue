@@ -35,7 +35,7 @@
                             {{ log.description }}
                         </td>
                         <td class="px-4 py-2 text-sm text-right text-white">
-                            {{ log.date.format("MMM Do YY") }}
+                            {{ log.date.format("ll") }}
                         </td>
                     </tr>
                     </tbody>
