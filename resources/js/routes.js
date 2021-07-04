@@ -6,6 +6,7 @@ const Info = () => import("./pages/Info");
 const Campaigns = () => import("./pages/Campaigns");
 const Login = () => import("./pages/Login");
 const Party = () => import("./pages/Party");
+const Characters = () => import("./pages/Characters");
 const Items = () => import("./pages/Items");
 const Shared = () => import("./pages/Shared");
 const Settings = () => import("./pages/Settings");
@@ -19,6 +20,7 @@ export default [
     {path: '/info', name: 'info', component: Info, props: true},
     {path: '/campaigns', component: Campaigns},
     {path: '/party', component: Party},
+    {path: '/characters', component: Characters},
     {path: '/items', component: Items},
     {path: '/login/:id/:token', component: Login},
     {path: '/settings', component: Settings},
