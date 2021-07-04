@@ -35,6 +35,9 @@ export default {
                     defaultValue = modelKey[key];
                     modelKey = key;
                 }
+                if(storeKey === 'characters') {
+                    console.log(storeKey, model[storeKey]);
+                }
                 this[modelKey] = model[storeKey] || defaultValue;
             });
         }

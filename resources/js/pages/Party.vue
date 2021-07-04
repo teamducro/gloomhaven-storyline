@@ -1,13 +1,13 @@
 <template>
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
-        <div id="party" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
+        <div id="party" class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
                   :urls="['party', 'characters', 'items']"
                   :active="$t('Party sheet')"
             />
-            <h1 class="hidden sm:inline text-xl">{{ campaignName }}</h1>
+            <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
             <div class="mt-4 flex flex-col sm:flex-row">
                 <div class="mb-8 sm:mb-0 sm:mr-4">
@@ -162,13 +162,14 @@
                 </table>
 
                 <ul class="flex flex-row flex-wrap -mx-2">
-                    <li v-for="(checked, character) in sheet.characters" class="flex items-center">
+                    <li v-for="(checked, id) in sheet.characterUnlocks" :key="id" class="flex items-center"
+                        :class="['order-'+characterOrder[id]]">
                         <checkbox group="items"
                                   :checked="checked"
-                                  :disabled="character < 6"
-                                  @change="(id, isChecked) => {sheet.characters[character] = isChecked; store()}"></checkbox>
+                                  :disabled="starterCharacters.includes(id)"
+                                  @change="(_, isChecked) => {sheet.characterUnlocks[id] = isChecked; store()}"></checkbox>
                         <span class="w-8 font-title">
-                            <character class="w-6 -mb-2 inline-block" :character="parseInt(character)+1"/>
+                            <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
                         </span>
                     </li>
                 </ul>
@@ -179,10 +180,12 @@
 </template>
 
 <script>
-import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
+import SheetRepository from "../repositories/SheetRepository";
+import GameData from "../services/GameData";
+import Helpers from "../services/Helpers";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -218,7 +221,7 @@ export default {
                 },
                 {
                     goal: this.$t('Have a party reputation of 10 or higher'),
-                    reward: this.$t('Open box') + ' <character class="w-6 -mb-2 inline-block" character="SK" />'
+                    reward: this.$t('Open box') + ' <character-icon class="w-6 -mb-2 inline-block" character="SK" />'
                 },
                 {
                     goal: this.$t('Have a party reputation of 20'),
@@ -226,7 +229,7 @@ export default {
                 },
                 {
                     goal: this.$t('Have a party reputation of -10 or lower'),
-                    reward: this.$t('Open box') + ' <character class="w-6 -mb-2 inline-block" character="NS" />'
+                    reward: this.$t('Open box') + ' <character-icon class="w-6 -mb-2 inline-block" character="NS" />'
                 },
                 {
                     goal: this.$t('Have a party reputation of -20'),
@@ -237,10 +240,14 @@ export default {
                     reward: this.$t('Open the Town Records Book')
                 }
             ],
+            starterCharacters: ["BR", "CH", "SW", "TI", "SC", "MT"],
+            characterOrder: {},
             campaignName: null,
             loading: true,
             renderX: 0,
+            gameData: new GameData,
             storySyncer: new StorySyncer,
+            sheetRepository: new SheetRepository
         }
     },
     watch: {
@@ -265,8 +272,9 @@ export default {
         async render() {
             this.loading = true;
 
-            this.sheet = new Sheet;
+            this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
+            this.characterOrder = Helpers.reverse(this.gameData.characterOrder(app.game));
 
             await this.$nextTick();
 
@@ -279,6 +287,7 @@ export default {
             this.loading = false;
         },
         store() {
+            console.log(this.sheet.characterUnlocks['DS']);
             if (this.loading) {
                 return;
             }

@@ -66,11 +66,11 @@ export default {
             return text;
         },
         addCharacterIcons(text) {
-            const characters = Object.values(this.gameData.characters(app.game));
+            const characters = Object.values(this.gameData.characterOrder(app.game));
 
             if (text.match(new RegExp(characters.join('|'))) !== null) {
                 characters.forEach((character) => {
-                    text = text.replace(`{${character}}`, `<character class="w-6 -ml-1 -mb-2 inline-block" character="${character}" />`);
+                    text = text.replace(`{${character}}`, `<character-icon class="w-6 -ml-1 -mb-2 inline-block" character="${character}" />`);
                 });
             }
 

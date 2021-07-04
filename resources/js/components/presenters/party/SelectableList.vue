@@ -16,8 +16,8 @@
                     <div class="w-full flex items-center justify-between">
                         <span>{{ item }}</span>
                         <span class="material-icons">
-                        {{ checked ? 'check_circle_outline' : 'radio_button_unchecked' }}
-                    </span>
+                            {{ checked ? 'check_circle_outline' : 'radio_button_unchecked' }}
+                        </span>
                     </div>
                 </template>
             </autocomplete>

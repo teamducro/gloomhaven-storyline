@@ -1,18 +1,27 @@
 import Storable from './Storable'
+import Character from "./Character";
+import GameData from "../services/GameData";
 
 class Sheet {
 
+    static make() {
+        return new Sheet({game: 'gh'});
+    }
+
     constructor(data = {}) {
-        this.reputation = data.reputation;
-        this.donations = data.donations;
-        this.prosperityIndex = data.prosperityIndex;
+        this.reputation = data.reputation || 0;
+        this.donations = data.donations || 0;
+        this.prosperityIndex = data.prosperityIndex || 1;
         this.itemDesigns = {...data.itemDesigns};
         this.city = {...data.city};
         this.road = {...data.road};
-        this.notes = data.notes;
+        this.notes = data.notes || '';
         this.unlocks = {...data.unlocks};
         this.xClues = {...data.xClues};
+        this.characterUnlocks = {...data.characterUnlocks};
         this.characters = {...data.characters};
+        this.game = data.game;
+        this.gameData = new GameData;
 
         this.fieldsToStore = {
             reputation: 'reputation',
@@ -24,6 +33,7 @@ class Sheet {
             notes: 'notes',
             unlocks: {'unlocks': {}},
             xClues: {'xClues': {}},
+            characterUnlocks: {'characterUnlocks': {}},
             characters: {'characters': {}}
         };
 
@@ -35,16 +45,7 @@ class Sheet {
     }
 
     new() {
-        this.reputation = 0;
-        this.donations = 0;
-        this.prosperityIndex = 1;
-        this.itemDesigns = {};
-        this.city = {};
-        this.road = {};
-        this.notes = '';
-        this.unlocks = {};
-        this.xClues = {};
-        this.characters = {
+        this.characterUnlocks = {
             0: true,
             1: true,
             2: true,
@@ -84,17 +85,46 @@ class Sheet {
             this.xClues[i] = this.xClues[i] || false;
         }
 
-        for (let i = 0; i < 18; i++) {
-            this.characters[i] = this.characters[i] || false;
+        const characterOrder = this.gameData.characterOrder('gh');
+        for (const i in characterOrder) {
+            const id = characterOrder[i];
+            if (id) {
+                this.characterUnlocks[id] = this.characterUnlocks[id] || this.characterUnlocks[i] || false;
+            }
         }
-        if (this.characters[18]) {
-            delete this.characters[18];
+
+        // Remove old character unlocks from party sheet, keys are ids now
+        for (let i = 0; i <= 18; i++) {
+            if (this.characterUnlocks[i]) {
+                delete this.characterUnlocks[i];
+            }
+        }
+        if (this.characterUnlocks[undefined]) {
+            delete this.characterUnlocks[undefined];
+        }
+    }
+
+    fillRelations() {
+        console.log(this.characters);
+        for (const id in this.characters) {
+            console.log(id);
+            this.characters[id] = Character.make(id, this.game);
         }
     }
 
     read() {
         this.parentRead();
+        this.migrateCharacterUnlocks();
         this.fillBlanks();
+        this.fillRelations();
+    }
+
+    // characterUnlocks used to be stored in key characters, migrate them to be backwards compatible.
+    migrateCharacterUnlocks() {
+        if (0 in this.characters && this.characters[0] === true) {
+            this.characterUnlocks = JSON.parse(JSON.stringify(this.characters));
+            this.characters = {};
+        }
     }
 
     valuesToStore() {
@@ -103,7 +133,8 @@ class Sheet {
         values.city = collect({...this.city}).filter(v => v).all();
         values.road = collect({...this.road}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();
-        values.characters = collect({...this.characters}).filter(v => v).all();
+        values.characterUnlocks = collect({...this.characterUnlocks}).filter(v => v).all();
+        values.characters = collect({...this.characters}).map(character => character.id).all();
         return values;
     }
 

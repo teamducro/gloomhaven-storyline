@@ -19,8 +19,8 @@ export default {
         }
     },
     mounted() {
-        if (Helpers.isNumeric(this.character)) {
-            this.svg = this.gameData.characters(app.game)[this.character];
+        if (typeof this.character === 'object') {
+            this.svg = this.character.id;
         } else {
             this.svg = this.character;
         }

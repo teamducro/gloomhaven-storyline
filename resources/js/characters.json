@@ -1,20 +1,107 @@
 {
-    "1": "BR",
-    "2": "CH",
-    "3": "SW",
-    "4": "TI",
-    "5": "SC",
-    "6": "MT",
-    "7": "DS",
-    "8": "EL",
-    "9": "SB",
-    "10": "SS",
-    "11": "SK",
-    "12": "NS",
-    "13": "SU",
-    "14": "BE",
-    "15": "QM",
-    "16": "PH",
-    "17": "BT",
-    "18": "DR"
+    "order": {
+        "1": "BR",
+        "2": "CH",
+        "3": "SW",
+        "4": "TI",
+        "5": "SC",
+        "6": "MT",
+        "7": "DS",
+        "8": "EL",
+        "9": "SB",
+        "10": "SS",
+        "11": "SK",
+        "12": "NS",
+        "13": "SU",
+        "14": "BE",
+        "15": "QM",
+        "16": "PH",
+        "17": "BT",
+        "18": "DR"
+    },
+    "names": {
+        "BR": "Brute",
+        "CH": "Cragheart",
+        "SW": "Spellweaver",
+        "TI": "Tinkerer",
+        "SC": "Scoundrel",
+        "MT": "Mindthief",
+        "DS": "Doomstalker",
+        "EL": "Elementalist",
+        "SB": "Sawbones",
+        "SS": "Soothsinger",
+        "SK": "Sunkeeper",
+        "NS": "Nightshroud",
+        "SU": "Summoner",
+        "BE": "Berserker",
+        "QM": "Quartermaster",
+        "PH": "Plagueherald",
+        "BT": "Beast-tyrant",
+        "DR": "Diviner"
+    },
+    "perks": {
+        "BR": [
+            {
+                "count": 1,
+                "desc": "Remove two {-1} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Replace on {-1} card with on {+1} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {+1} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add on {+3} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add three {AGAIN} PUSH {PUSH}1 cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} PIERCE {PIERCE}3 cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {AGAIN} STUN {STUN} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {AGAIN} DISARM {DISARM} card and one {AGAIN} MUDDLE {MUDDLE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {AGAIN} ADD TARGET {TARGET} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+1} Shield {SHIELD}1, Self card"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative item effects and add on {+1} card"
+            }
+        ],
+        "CH": [],
+        "SW": [],
+        "TI": [],
+        "SC": [],
+        "MT": [],
+        "DS": [],
+        "EL": [],
+        "SB": [],
+        "SS": [],
+        "SK": [],
+        "NS": [],
+        "SU": [],
+        "BE": [],
+        "QM": [],
+        "PH": [],
+        "BT": [],
+        "DR": []
+    }
 }

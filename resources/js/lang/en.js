@@ -108,6 +108,7 @@ export default {
     "Not unlocked": "Not unlocked",
     "Remove": "Remove",
     "Clear all": "Clear all",
+    "Add Character": "Add Character",
     "reset": {
         "text": "Are you sure you want to remove all scenario data?"
     },
