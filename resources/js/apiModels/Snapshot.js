@@ -1,5 +1,5 @@
 import Model from "./Model";
-import moment from "moment";
+import dayjs from "dayjs";
 
 class Snapshot extends Model {
 
@@ -16,7 +16,7 @@ class Snapshot extends Model {
     }
 
     cast() {
-        this.created_at = moment(this.created_at);
+        this.created_at = dayjs(this.created_at);
     }
 
     isCurrent(story) {
