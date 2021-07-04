@@ -92,6 +92,15 @@
                         </li>
 
                         <li @click="toggle">
+                            <router-link to="/characters" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic"
+                                   aria-hidden="true">person</i>
+                                <span class="mdc-list-item__text">{{ $t('Character sheet') }}</span>
+                            </router-link>
+                        </li>
+
+                        <li @click="toggle">
                             <router-link to="/items" class="mdc-list-item"
                                          active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic transform rotate-180"

@@ -1,13 +1,12 @@
 <template>
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
-        <div id="info" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
+        <div id="party" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[$t('Party sheet'), $t('Items')]"
-                  :icons="['assignment', 'style']"
-                  :urls="['party', 'items']"
+            <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
+                  :icons="['assignment', 'person', 'style']"
+                  :urls="['party', 'characters', 'items']"
                   :active="$t('Party sheet')"
-            >
-            </tabs>
+            />
             <h1 class="hidden sm:inline text-xl">{{ campaignName }}</h1>
 
             <div class="mt-4 flex flex-col sm:flex-row">
