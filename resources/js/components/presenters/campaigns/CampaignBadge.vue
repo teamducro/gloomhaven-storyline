@@ -2,11 +2,11 @@
     <div>
         <bedge v-if="story.has_expired" expired>
             {{ $t('Expired') }}
-            {{ story.expires_at.format("MMM Do YY") }}
+            {{ story.expires_at.format("ll") }}
         </bedge>
         <bedge v-else-if="story.expires_soon" class="opacity-75 white">
             {{ $t('Expires soon') }}
-            {{ story.expires_at.format("MMM Do YY") }}
+            {{ story.expires_at.format("ll") }}
         </bedge>
         <bedge v-else-if="!story.is_shared" class="opacity-75 white">
             {{ $t('Expires') }}

@@ -23,7 +23,7 @@ class StoryCode extends Model {
         const totalSeconds = Math.floor(this.expires_at.diff(this.created_at) / 1000);
         const seconds = Math.floor(this.expires_at.diff() / 1000);
         const percentage = Math.ceil(Math.max(0, seconds / totalSeconds * 100));
-        const time = dayjs().seconds(seconds).format('MMM DD YYYY hh:mm');
+        const time = dayjs().add(seconds, 'second').format('MMM DD YYYY hh:mm');
 
         return {percentage, time};
     }
