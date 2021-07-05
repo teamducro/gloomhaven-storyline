@@ -89,7 +89,7 @@ class Sheet {
         for (const i in characterOrder) {
             const id = characterOrder[i];
             if (id) {
-                this.characterUnlocks[id] = this.characterUnlocks[id] || this.characterUnlocks[i] || false;
+                this.characterUnlocks[id] = this.characterUnlocks[id] || this.characters[i] || false;
             }
         }
 
@@ -105,9 +105,7 @@ class Sheet {
     }
 
     fillRelations() {
-        console.log(this.characters);
         for (const id in this.characters) {
-            console.log(id);
             this.characters[id] = Character.make(id, this.game);
         }
     }

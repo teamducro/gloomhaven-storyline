@@ -23,7 +23,7 @@
 
                     <div class="w-full">
                         <h2>{{ $t('Add Character') }}</h2>
-                        <ul class="py-5 px-3 space-y-6">
+                        <ul class="flex flex-col py-5 px-3 space-y-6">
                             <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" class="flow-root"
                                 :class="['order-'+characterOrder[id]]">
                                 <a @click.stop.prevent="create(id)" href="#"
@@ -53,12 +53,36 @@
                 </div>
                 <div v-if="character" class="ml-8 w-full relative" :class="{'opacity-50': !selected}">
                     <div v-if="!selected" @click.stop="() => {$refs['add-character'].open()}"
-                         class="absolute top-0 right-0 bottom-0 left-0 cursor-pointer">
+                         class="absolute z-1 top-0 right-0 bottom-0 left-0 cursor-pointer">
                     </div>
-                    sheet
+
+                    <div>
+                        {{ character.name }}
+                    </div>
+
+                    <button @click="$refs['remove-character'].open()" type="button"
+                            class="mt-4 mb-6 mdc-button mdc-button--raised">
+                        <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
+                        <span class="mdc-button__label">{{ $t('Remove') }} {{ character.name }}</span>
+                    </button>
                 </div>
             </div>
         </div>
+
+        <modal ref="remove-character" :title="$t('Remove') + ' ' + character.name">
+            <template v-slot:content>
+                <p>{{ $t('remove-character.text') }}</p>
+            </template>
+            <template v-slot:buttons>
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__label">{{ $t('Cancel') }}</span>
+                </button>
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
+                        @click="remove">
+                    <span class="mdc-button__label text-red-700">{{ $t('Remove') }}</span>
+                </button>
+            </template>
+        </modal>
     </div>
 </template>
 
@@ -112,52 +136,60 @@ export default {
             this.campaignName = this.getCampaignName();
             this.characterOrder = Helpers.reverse(this.gameData.characterOrder(app.game));
 
+            this.selectDefault();
+
+            await this.$nextTick();
+
+            this.loading = false;
+        },
+        selectDefault() {
             if (Object.keys(this.sheet.characters).length) {
                 this.select(Object.keys(this.sheet.characters)[0]);
             } else {
                 this.selectDemo();
             }
-
-            await this.$nextTick();
-
-            this.loading = false;
-        }
-        ,
+        },
         select(id) {
             if (this.sheet.characters[id]) {
                 this.selected = id;
                 this.character = this.sheet.characters[id];
             }
-        }
-        ,
+        },
         selectDemo() {
+            this.selected = null;
             this.character = Character.make('BR', app.game);
-        }
-        ,
+        },
         create(id) {
             if (this.sheet.characters[id]) {
                 return;
             }
 
+            this.sheet.characterUnlocks[id] = true;
             this.characterRepository.createCharacter(this.sheet, id);
             this.select(id);
-        }
-        ,
+            this.store();
+        },
         store() {
             if (this.loading) {
                 return;
             }
 
-            this.sheet.store();
+            this.character.store();
             this.storySyncer.store();
-        }
-        ,
+        },
+        remove() {
+            if (this.character && this.sheet.characters[this.character.id]) {
+                delete this.sheet.characters[this.character.id];
+                this.sheet.store();
+                this.storySyncer.store();
+                this.selectDefault();
+            }
+        },
         renderHtml(html) {
             return {
                 template: `<span>${html}</span>`
             };
-        }
-        ,
+        },
         rerenderX() {
             this.renderX++;
         }

@@ -287,7 +287,6 @@ export default {
             this.loading = false;
         },
         store() {
-            console.log(this.sheet.characterUnlocks['DS']);
             if (this.loading) {
                 return;
             }

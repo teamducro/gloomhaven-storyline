@@ -109,6 +109,9 @@ export default {
     "Remove": "Remove",
     "Clear all": "Clear all",
     "Add Character": "Add Character",
+    "remove-character": {
+        "text": "Are you sure you want to remove this character?"
+    },
     "reset": {
         "text": "Are you sure you want to remove all scenario data?"
     },
