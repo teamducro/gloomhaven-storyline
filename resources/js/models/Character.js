@@ -1,5 +1,8 @@
 import Storable from './Storable'
 import GameData from "../services/GameData";
+import Item from "./Item";
+import StoryRepository from "../apiRepositories/StoryRepository";
+import ItemRepository from "../repositories/ItemRepository";
 
 class Character {
 
@@ -70,6 +73,7 @@ class Character {
     valuesToStore() {
         let values = this.parentValuesToStore();
         values.checks = collect({...this.checks}).filter(v => v).all();
+        values.items = collect({...this.items}).filter(v => v).all();
         return values;
     }
 

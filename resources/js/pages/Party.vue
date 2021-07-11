@@ -86,7 +86,15 @@
                     :items.sync="sheet.city"
                     @change="store"
                     ref="city-events"
-                ></selectable-list>
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, true)" :disabled="!checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
                 <selectable-list
                     id="road-events"
                     :title="$t('Road Event Decks')"
@@ -94,7 +102,15 @@
                     :items.sync="sheet.road"
                     @change="store"
                     ref="road-events"
-                ></selectable-list>
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, false)" :disabled="!checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
             </div>
 
             <div class="w-full mt-8">
@@ -293,6 +309,13 @@ export default {
 
             this.sheet.store();
             this.storySyncer.store();
+        },
+        draw(checkedItems, isCity = true) {
+            let id = [...checkedItems].sort((a, b) => 0.5 - Math.random())[0];
+            if (id) {
+                const card = (isCity ? 'C' : 'R') + '-' + id;
+                this.$bus.$emit('open-card', card);
+            }
         },
         removeCard(card) {
             if (card.type === 'R') {
