@@ -135,7 +135,8 @@
                         </div>
                     </div>
                     <div class="w-1/2">
-                        <perks :checks.sync="character.checks" :perks.sync="character.perks" @change="store"/>
+                        <perks :checks.sync="character.checks" :perks.sync="character.perks"
+                               :perk-descriptions="character.perkDescriptions()" @change="store"/>
                     </div>
                 </div>
             </div>

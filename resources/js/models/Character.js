@@ -54,15 +54,18 @@ class Character {
             this.checks[i] = this.checks[i] || false;
         }
 
+        this.perkDescriptions().forEach((perk, index) => {
+            for (let i = 0; i < perk.count; i++) {
+                this.perks[index] = this.perks[index] || [];
+                this.perks[index][i] = this.perks[index][i] || false;
+            }
+        })
+    }
+
+    perkDescriptions() {
         const perks = this.gameData.characterPerks(this.game);
-        if (perks && typeof perks[this.id] === "Array") {
-            perks[this.id].forEach((perk, index) => {
-                for (let i = 0; i <= perk.count; i++) {
-                    this.perks[index] = this.perks[index] || [];
-                    this.perks[index][i] = this.perks[index][i] || false;
-                }
-            })
-        }
+
+        return perks ? perks[this.id] : [];
     }
 
     read() {
