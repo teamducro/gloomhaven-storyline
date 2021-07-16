@@ -42,11 +42,6 @@ export default {
 
             return Math.min(Math.max(currentExp / neededExp * 100, 0), 100);
         }
-    },
-    mounted() {
-
-    },
-    watch: {},
-    methods: {}
+    }
 }
 </script>

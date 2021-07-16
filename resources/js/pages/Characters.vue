@@ -54,7 +54,7 @@
                         </li>
                     </ul>
                 </div>
-                <div v-if="character" class="ml-8 w-full relative" :class="{'opacity-50': !selected}">
+                <div v-if="character" class="ml-8 w-full relative flex space-x-8" :class="{'opacity-50': !selected}">
                     <div class="w-1/2">
                         <div v-if="!selected" @click.stop="() => {$refs['add-character'].open()}"
                              class="absolute z-1 top-0 right-0 bottom-0 left-0 cursor-pointer">
@@ -134,6 +134,9 @@
                             </button>
                         </div>
                     </div>
+                    <div class="w-1/2">
+                        <perks :checks.sync="character.checks" :perks.sync="character.perks" @change="store"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,8 +162,6 @@
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
-import CharacterIcon from "../components/elements/CharacterIcon";
-import Dropdown from "../components/elements/Dropdown";
 import GameData from "../services/GameData";
 import SheetRepository from "../repositories/SheetRepository";
 import Helpers from "../services/Helpers";
@@ -168,10 +169,8 @@ import Character from "../models/Character";
 import CharacterRepository from "../repositories/CharacterRepository";
 import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
-import LevelProgressBar from "../components/presenters/charecters/LevelProgressBar";
 
 export default {
-    components: {LevelProgressBar, Dropdown, CharacterIcon},
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
