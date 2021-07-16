@@ -101,15 +101,7 @@
                             </div>
                         </div>
 
-                        <div class="flex mb-4 items-center">
-                            <div class="bg-black2-50 h-1 w-full rounded-full relative">
-                                <div class="absolute left-0 top-0 rounded-full bg-primary h-1 w-1/2"></div>
-                            </div>
-                            <div class="ml-2 flex flex-col whitespace-no-wrap text-center">
-                                <span>Lvl 2</span>
-                                <span>45 exp</span>
-                            </div>
-                        </div>
+                        <level-progress-bar :level="character.level" :exp="character.exp"/>
 
                         <selectable-list
                             id="items"
@@ -176,9 +168,10 @@ import Character from "../models/Character";
 import CharacterRepository from "../repositories/CharacterRepository";
 import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
+import LevelProgressBar from "../components/presenters/charecters/LevelProgressBar";
 
 export default {
-    components: {Dropdown, CharacterIcon},
+    components: {LevelProgressBar, Dropdown, CharacterIcon},
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
