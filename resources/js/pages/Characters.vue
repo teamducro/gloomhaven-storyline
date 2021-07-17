@@ -46,8 +46,8 @@
                     <ul class="space-y-6">
                         <li v-for="character in sheet.characters" :key="character.id" class="flow-root">
                             <a @click.stop.prevent="select(character.id)" href="#"
-                               class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-75 transition ease-in-out duration-150"
-                               :class="{'text-white': selected === character.id, 'text-white2-75': selected !== character.id}">
+                               class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
+                               :class="{'text-white bg-black2-25': selected === character.id, 'text-white2-75': selected !== character.id}">
                                 <character-icon class="w-5 mr-2" :character="character.id"/>
                                 <span>{{ character.name }}</span>
                             </a>
@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="mb-4">
-                            <h2 class="mb-2">Name</h2>
+                            <h2 class="mb-2">{{ $t('Name') }}</h2>
                             <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="name-field">
                                 <span class="mdc-text-field__ripple"></span>
                                 <input class="mdc-text-field__input" aria-labelledby="name"
@@ -78,16 +78,16 @@
                                     <rollback v-show="!loading" ref="reputation-rollback"
                                               :value.sync="character.level"></rollback>
                                 </div>
-                                <number-field :value.sync="character.level" :min="1" :max="9" :id="'level'"
+                                <number-field :value.sync="character.level" :min="1" :max="9" id="level"
                                               @change="store"></number-field>
                             </div>
                             <div class="mb-8 sm:mb-0 sm:mr-4">
                                 <div class="mb-2 flex items-center">
-                                    <h2>{{ $t('EXP') }}</h2>
+                                    <h2>{{ $t('Exp') }}</h2>
                                     <rollback v-show="!loading" ref="reputation-rollback"
                                               :value.sync="character.exp"></rollback>
                                 </div>
-                                <number-field :value.sync="character.exp" :min="0" :max="9999" :id="'exp'"
+                                <number-field :value.sync="character.exp" :min="0" :max="9999" id="exp"
                                               @change="store"></number-field>
                             </div>
                             <div class="mb-8 sm:mb-0">
@@ -96,7 +96,7 @@
                                     <rollback v-show="!loading" ref="reputation-rollback"
                                               :value.sync="character.gold"></rollback>
                                 </div>
-                                <number-field :value.sync="character.gold" :min="0" :max="9999" :id="'gold'"
+                                <number-field :value.sync="character.gold" :min="0" :max="9999" id="gold"
                                               @change="store"></number-field>
                             </div>
                         </div>

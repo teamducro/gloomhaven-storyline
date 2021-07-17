@@ -1,6 +1,6 @@
 <template>
     <div class="mb-4">
-        <h2 class="mb-2">Perks</h2>
+        <h2 class="mb-2">{{ $t('Perks') }}</h2>
         <div class="mb-4">
             <div class="flex" v-for="(perkDescription, perkIndex) in perkDescriptions">
                 <checkbox v-for="(perk, index) in perks[perkIndex]"
@@ -9,9 +9,12 @@
                           :id="'perk-'+perkIndex+'-'+index"
                           :checked="perks[perkIndex][index]"
                           @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
-                <p class="ml-2 mt-1 mb-1">{{ perkDescription.desc }}</p>
+                <p class="ml-2 mt-1 mb-1">
+                    <add-links-and-icons :text="perkDescription.desc"/>
+                </p>
             </div>
         </div>
+        <h2 class="mb-2">{{ $t('Battle Goals') }}</h2>
         <div class="flex flex-wrap">
             <template v-for="groupIndex in [0, 3, 6, 9, 12, 15]">
                 <div class="flex items-center">

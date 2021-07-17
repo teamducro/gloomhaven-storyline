@@ -43,47 +43,47 @@
         "BR": [
             {
                 "count": 1,
-                "desc": "Remove two {-1} cards"
+                "desc": "Remove two {-1_WHITE} cards"
             },
             {
                 "count": 1,
-                "desc": "Replace on {-1} card with on {+1} card"
+                "desc": "Replace on {-1_WHITE} card with on {+1_WHITE} card"
             },
             {
                 "count": 2,
-                "desc": "Add two {+1} cards"
+                "desc": "Add two {+1_WHITE} cards"
             },
             {
                 "count": 1,
-                "desc": "Add on {+3} card"
+                "desc": "Add on {+3_WHITE} card"
             },
             {
                 "count": 2,
-                "desc": "Add three {AGAIN} PUSH {PUSH}1 cards"
+                "desc": "Add three {AGAIN} {PUSH}1 cards"
             },
             {
                 "count": 1,
-                "desc": "Add two {AGAIN} PIERCE {PIERCE}3 cards"
+                "desc": "Add two {AGAIN} {PIERCE}3 cards"
             },
             {
                 "count": 2,
-                "desc": "Add one {AGAIN} STUN {STUN} card"
+                "desc": "Add one {AGAIN} {STUN} card"
             },
             {
                 "count": 1,
-                "desc": "Add one {AGAIN} DISARM {DISARM} card and one {AGAIN} MUDDLE {MUDDLE} card"
+                "desc": "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card"
             },
             {
                 "count": 2,
-                "desc": "Add one {AGAIN} ADD TARGET {TARGET} card"
+                "desc": "Add one {AGAIN} ADD {TARGET} card"
             },
             {
                 "count": 1,
-                "desc": "Add one {+1} Shield {SHIELD}1, Self card"
+                "desc": "Add one {+1_WHITE} {Shield}1, Self card"
             },
             {
                 "count": 1,
-                "desc": "Ignore negative item effects and add on {+1} card"
+                "desc": "Ignore negative item effects and add on {+1_WHITE} card"
             }
         ],
         "CH": [],
