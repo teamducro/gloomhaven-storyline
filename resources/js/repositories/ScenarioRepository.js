@@ -127,7 +127,7 @@ export default class ScenarioRepository {
                         return treasure.includes(scenario.id);
                     }).keys().first();
 
-                    return treasure && treasureScenario.isComplete() && treasureScenario.isTreasureUnlocked(treasure);
+                    return treasure && treasureScenario.isTreasureUnlocked(treasure);
                 });
         }
 
