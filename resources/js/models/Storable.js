@@ -1,4 +1,5 @@
 import store from "store/dist/store.modern";
+import Helpers from "../services/Helpers";
 
 export default {
 
@@ -23,7 +24,7 @@ export default {
     },
 
     read() {
-        let model = app.campaignData[this.key()];
+        const model = _.clone(app.campaignData[this.key()]);
 
         if (model) {
             const fieldsToStore = collect(this.fieldsToStore || {});

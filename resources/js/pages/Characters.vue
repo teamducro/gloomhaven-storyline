@@ -1,5 +1,5 @@
 <template>
-    <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
+    <div v-if="sheet" :key="selected" class="pt-12 pb-4 px-4 md:px-8">
         <div id="characters" class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
@@ -8,53 +8,16 @@
                   :active="$t('Characters')"
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}
-                <span v-if="character"
+                <span v-if="character && selected"
                       class="pl-4">{{ character.characterName }}</span>
             </h1>
 
-            <div class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
-                <dropdown class="items-to-add-dropdown" align="right" ref="add-character"
-                          @open="dropDownClose = true"
-                          @close="dropDownClose = false">
-                    <template v-slot:trigger>
-                        <button type="button"
-                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 i-bg-black2-50 rounded-full transform transition-transform"
-                                :class="{'rotate-45': dropDownClose}">
-                            add
-                        </button>
-                    </template>
-
-                    <div class="w-full">
-                        <h2>{{ $t('Add Character') }}</h2>
-                        <ul class="flex flex-col py-5 px-3 space-y-6">
-                            <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" class="flow-root"
-                                :class="['order-'+characterOrder[id]]">
-                                <a @click.stop.prevent="create(id)" href="#"
-                                   class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-white hover:bg-black2-75 transition ease-in-out duration-150"
-                                   :class="{'text-white2-50 grayscale cursor-default': sheet.characters[id]}">
-                                    <character-icon class="w-5 mr-2" :character="id"/>
-                                    <span v-if="unlocked">{{ characterNames[id] }}</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </dropdown>
-            </div>
+            <add-character ref="add-character" :sheet="sheet" @create="create"/>
 
             <div class="mt-4 flex">
-                <div class="w-40">
-                    <ul class="space-y-6">
-                        <li v-for="character in sheet.characters" :key="character.id" class="flow-root">
-                            <a @click.stop.prevent="select(character.id)" href="#"
-                               class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
-                               :class="{'text-white bg-black2-25': selected === character.id, 'text-white2-75': selected !== character.id}">
-                                <character-icon class="w-5 mr-2" :character="character.id"/>
-                                <span>{{ character.name }}</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div v-if="character" class="ml-8 w-full relative flex space-x-8" :class="{'opacity-50': !selected}">
+                <character-menu :selected="selected" :sheet="sheet" :user="user" @select="select"/>
+
+                <div v-if="character" class="ml-8 w-full relative flex space-x-8" :class="{'opacity-25': !selected}">
                     <div class="w-1/2">
                         <div v-if="!selected" @click.stop="() => {$refs['add-character'].open()}"
                              class="absolute z-1 top-0 right-0 bottom-0 left-0 cursor-pointer">
@@ -126,11 +89,23 @@
                             </div>
                         </selectable-list>
 
-                        <div class="mt-4">
-                            <button @click="$refs['remove-character'].open()" type="button"
-                                    class="mt-4 mb-6 mdc-button mdc-button--raised">
+                        <div class="my-8">
+                            <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
+                                    class="mr-4 mdc-button mdc-button--raised">
                                 <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
-                                <span class="mdc-button__label">{{ $t('Remove') }} {{ character.name }}</span>
+                                <span class="mdc-button__label">{{ $t('Retire') }}</span>
+                            </button>
+                            <button v-if="isArchived" @click="$refs['remove-character'].open()" type="button"
+                                    class="mdc-button mdc-button--raised">
+                                <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
+                                <span class="mdc-button__label">{{ $t('Remove') }}</span>
+                            </button>
+                            <button v-if="isArchived" type="button"
+                                    @click="restore"
+                                    :disabled="characterRepository.partyHasCharacter(sheet, character.id)"
+                                    class="ml-4 mdc-button mdc-button--raised">
+                                <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
+                                <span class="mdc-button__label">{{ $t('Restore') }}</span>
                             </button>
                         </div>
                     </div>
@@ -142,7 +117,32 @@
             </div>
         </div>
 
-        <modal ref="remove-character" :title="$t('Remove') + ' ' + character.name">
+        <modal v-if="character" :title="$t('Retire') + ' ' + character.name"
+               ref="retire-character">
+            <template v-slot:content>
+                <p v-if="user">{{ $t('retire-character.text') }}</p>
+                <p v-else>{{ $t('retire-character.upgrade') }},
+                    <router-link to="/campaigns" class="link">
+                        {{ $t('please consider purchasing a licence') }}.
+                    </router-link>
+                </p>
+            </template>
+            <template v-slot:buttons>
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__label">{{ $t('Cancel') }}</span>
+                </button>
+                <button v-if="user" type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
+                        @click="archive">
+                    <span class="mdc-button__label text-red-700">{{ $t('Retire') }}</span>
+                </button>
+                <button v-else type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
+                        @click="remove">
+                    <span class="mdc-button__label text-red-700">{{ $t('Remove') }}</span>
+                </button>
+            </template>
+        </modal>
+        <modal v-if="character" :title="$t('Remove') + ' ' + character.name"
+               ref="remove-character">
             <template v-slot:content>
                 <p>{{ $t('remove-character.text') }}</p>
             </template>
@@ -163,9 +163,7 @@
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
-import GameData from "../services/GameData";
 import SheetRepository from "../repositories/SheetRepository";
-import Helpers from "../services/Helpers";
 import Character from "../models/Character";
 import CharacterRepository from "../repositories/CharacterRepository";
 import {MDCTextField} from "@material/textfield/component";
@@ -175,19 +173,16 @@ export default {
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
+            user: null,
             sheet: null,
             selected: null,
             character: null,
             campaignName: null,
             loading: true,
             renderX: 0,
-            dropDownClose: false,
             sheetItems: {},
             items: collect(),
-            characterNames: {},
-            characterOrder: {},
             nameField: null,
-            gameData: new GameData,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
             characterRepository: new CharacterRepository,
@@ -197,27 +192,37 @@ export default {
     watch: {},
     mounted() {
         this.render();
-        this.characterNames = this.gameData.characterNames(app.game);
 
         this.$bus.$on('campaigns-changed', this.render);
     },
     destroyed() {
         this.$bus.$off('campaigns-changed', this.render);
     },
+    computed: {
+        isArchived() {
+            return this.character.uuid in this.sheet.archivedCharacters;
+        }
+    },
     methods: {
         async render() {
             this.loading = true;
 
+            this.user = app.user;
             this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
-            this.characterOrder = Helpers.reverse(this.gameData.characterOrder(app.game));
 
             this.selectDefault();
 
             await this.$nextTick();
 
             this.loading = false;
+        },
+        async refreshInputFields() {
+            await this.$nextTick();
 
+            if (this.nameField) {
+                this.nameField.destroy();
+            }
             this.nameField = new MDCTextField(this.$refs['name-field']);
         },
         refreshItems() {
@@ -234,29 +239,38 @@ export default {
         selectDefault() {
             if (Object.keys(this.sheet.characters).length) {
                 this.select(Object.keys(this.sheet.characters)[0]);
+            } else if (Object.keys(this.sheet.archivedCharacters).length) {
+                this.select(Object.keys(this.sheet.archivedCharacters)[0]);
             } else {
                 this.selectDemo();
             }
         },
-        select(id) {
-            if (this.sheet.characters[id]) {
-                this.selected = id;
-                this.character = this.sheet.characters[id];
+        select(uuid) {
+            if (this.sheet.characters[uuid]) {
+                this.character = this.sheet.characters[uuid];
+            } else if (this.sheet.archivedCharacters[uuid]) {
+                this.character = this.sheet.archivedCharacters[uuid];
+            }
+
+            if (this.character) {
+                this.selected = uuid;
                 this.refreshItems();
+                this.refreshInputFields();
             }
         },
         selectDemo() {
             this.selected = null;
-            this.character = Character.make('BR', app.game);
+            this.character = Character.make('demo', app.game, 'BR');
+            this.refreshInputFields();
         },
         create(id) {
-            if (this.sheet.characters[id]) {
+            if (this.characterRepository.partyHasCharacter(this.sheet, id)) {
                 return;
             }
 
             this.sheet.characterUnlocks[id] = true;
-            this.characterRepository.createCharacter(this.sheet, id);
-            this.select(id);
+            const character = this.characterRepository.createCharacter(this.sheet, id);
+            this.select(character.uuid);
             this.store();
         },
         openItemModel(id) {
@@ -275,11 +289,22 @@ export default {
             this.storySyncer.store();
         },
         remove() {
-            if (this.character && this.sheet.characters[this.character.id]) {
-                delete this.sheet.characters[this.character.id];
-                this.sheet.store();
+            if (this.character) {
+                this.characterRepository.removeCharacter(this.sheet, this.character);
                 this.storySyncer.store();
                 this.selectDefault();
+            }
+        },
+        archive() {
+            if (this.character) {
+                this.characterRepository.archiveCharacter(this.sheet, this.character);
+                this.storySyncer.store();
+            }
+        },
+        restore() {
+            if (this.character) {
+                this.characterRepository.restoreCharacter(this.sheet, this.character);
+                this.storySyncer.store();
             }
         },
         renderHtml(html) {

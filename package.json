@@ -78,6 +78,7 @@
         "store": "^2.0.12",
         "svg-pan-zoom": "github:ariutta/svg-pan-zoom",
         "tippy.js": "^6.1.0",
+        "uuid": "^8.3.2",
         "vue-analytics": "^5.22.1",
         "vue-clipboard2": "^0.3.1",
         "vue-i18n": "^8.17.3",

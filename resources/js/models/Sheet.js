@@ -20,8 +20,10 @@ class Sheet {
         this.xClues = {...data.xClues};
         this.characterUnlocks = {...data.characterUnlocks};
         this.characters = {...data.characters};
+        this.archivedCharacters = {...data.archivedCharacters};
         this.game = data.game;
         this.gameData = new GameData;
+        this.starterCharacters = ["BR", "CH", "SW", "TI", "SC", "MT"];
 
         this.fieldsToStore = {
             reputation: 'reputation',
@@ -34,7 +36,8 @@ class Sheet {
             unlocks: {'unlocks': {}},
             xClues: {'xClues': {}},
             characterUnlocks: {'characterUnlocks': {}},
-            characters: {'characters': {}}
+            characters: {'characters': {}},
+            archivedCharacters: {'archivedCharacters': {}},
         };
 
         this.read();
@@ -45,14 +48,6 @@ class Sheet {
     }
 
     new() {
-        this.characterUnlocks = {
-            0: true,
-            1: true,
-            2: true,
-            3: true,
-            4: true,
-            5: true,
-        };
         for (let i = 1; i <= 30; i++) {
             this.city[i] = true;
             this.road[i] = true;
@@ -89,13 +84,15 @@ class Sheet {
         for (const i in characterOrder) {
             const id = characterOrder[i];
             if (id) {
-                this.characterUnlocks[id] = this.characterUnlocks[id] || this.characters[i] || false;
+                this.characterUnlocks[id] = this.starterCharacters.includes(id)
+                    ? true
+                    : (this.characterUnlocks[id] || this.characters[i] || false);
             }
         }
 
         // Remove old character unlocks from party sheet, keys are ids now
         for (let i = 0; i <= 18; i++) {
-            if (this.characterUnlocks[i]) {
+            if (this.characters[i] === true) {
                 delete this.characterUnlocks[i];
             }
         }
@@ -105,8 +102,16 @@ class Sheet {
     }
 
     fillRelations() {
-        for (const id in this.characters) {
-            this.characters[id] = Character.make(id, this.game);
+        for (const uuid in this.characters) {
+            if (!(this.characters[uuid] instanceof Character)) {
+                this.characters[uuid] = Character.make(uuid, this.game);
+            }
+        }
+
+        for (const uuid in this.archivedCharacters) {
+            if (!(this.archivedCharacters[uuid] instanceof Character)) {
+                this.archivedCharacters[uuid] = Character.make(uuid, this.game);
+            }
         }
     }
 
@@ -132,7 +137,8 @@ class Sheet {
         values.road = collect({...this.road}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();
         values.characterUnlocks = collect({...this.characterUnlocks}).filter(v => v).all();
-        values.characters = collect({...this.characters}).map(character => character.id).all();
+        values.characters = collect({...this.characters}).mapWithKeys(character => [character.uuid, character.id]).all();
+        values.archivedCharacters = collect({...this.archivedCharacters}).mapWithKeys(character => [character.uuid, character.id]).all();
         return values;
     }
 

@@ -1,16 +1,14 @@
 import Storable from './Storable'
 import GameData from "../services/GameData";
-import Item from "./Item";
-import StoryRepository from "../apiRepositories/StoryRepository";
-import ItemRepository from "../repositories/ItemRepository";
 
 class Character {
 
-    static make(id, game) {
-        return new Character({id, game});
+    static make(uuid, game, id) {
+        return new Character({uuid, game, id});
     }
 
     constructor(data = {}) {
+        this.uuid = data.uuid;
         this.id = data.id;
         this.name = data.name;
         this.characterName = data.characterName;
@@ -25,7 +23,7 @@ class Character {
         this.gameData = new GameData;
 
         this.fieldsToStore = {
-            reputation: 'name',
+            uuid: 'uuid',
             id: 'id',
             level: 'level',
             exp: 'exp',
@@ -38,18 +36,19 @@ class Character {
 
         this.read();
 
-        if (this.id && this.game && !this.characterName) {
+        if (this.id && this.game && !this.name) {
             this.new();
         }
     }
 
     new() {
-        this.characterName = this.gameData.characterNames(this.game)[this.id];
         this.name = this.characterName;
         this.fillBlanks();
     }
 
     fillBlanks() {
+        this.characterName = this.gameData.characterNames(this.game)[this.id];
+
         for (let i = 0; i <= 17; i++) {
             this.checks[i] = this.checks[i] || false;
         }
@@ -76,12 +75,13 @@ class Character {
     valuesToStore() {
         let values = this.parentValuesToStore();
         values.checks = collect({...this.checks}).filter(v => v).all();
+        values.perks = collect({...this.perks}).filter(perks => (perks || []).filter(v => v)).all();
         values.items = collect({...this.items}).filter(v => v).all();
         return values;
     }
 
     key() {
-        return 'character-' + this.id;
+        return 'character-' + this.uuid;
     }
 }
 

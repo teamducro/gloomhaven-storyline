@@ -110,11 +110,18 @@ export default {
     "Blocked": "Blocked",
     "Required": "Required",
     "Not unlocked": "Not unlocked",
+    "Retire": "Retire",
+    "Retired": "Retired",
     "Remove": "Remove",
     "Clear all": "Clear all",
     "Add Character": "Add Character",
+    "please consider purchasing a licence": "please consider purchasing a licence",
+    "retire-character": {
+        "text": "Are you sure you want to retire this character? It's not removed permanently.",
+        "upgrade": "Are you sure you want to permanently remove this character? Pro users may retire a character without removing it permanently."
+    },
     "remove-character": {
-        "text": "Are you sure you want to remove this character?"
+        "text": "Are you sure you want to permanently remove this character?"
     },
     "reset": {
         "text": "Are you sure you want to remove all scenario data?"

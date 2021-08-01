@@ -182,7 +182,7 @@
                         :class="['order-'+characterOrder[id]]">
                         <checkbox group="items"
                                   :checked="checked"
-                                  :disabled="starterCharacters.includes(id)"
+                                  :disabled="sheet.starterCharacters.includes(id)"
                                   @change="(_, isChecked) => {sheet.characterUnlocks[id] = isChecked; store()}"></checkbox>
                         <span class="w-8 font-title">
                             <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
@@ -256,7 +256,6 @@ export default {
                     reward: this.$t('Open the Town Records Book')
                 }
             ],
-            starterCharacters: ["BR", "CH", "SW", "TI", "SC", "MT"],
             characterOrder: {},
             campaignName: null,
             loading: true,
