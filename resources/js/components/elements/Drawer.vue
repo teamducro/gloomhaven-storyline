@@ -97,6 +97,7 @@
                                 <i class="material-icons mdc-list-item__graphic"
                                    aria-hidden="true">person</i>
                                 <span class="mdc-list-item__text">{{ $t('Character sheet') }}</span>
+                                <bedge class="small white ml-2">BETA</bedge>
                             </router-link>
                         </li>
 
