@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-24">
+    <div class="number-field-container">
         <label class="mdc-text-field mdc-text-field--outlined" ref="field">
             <input type="text" :value="number" @change="numberChanged" :aria-labelledby="id"
                    class="mdc-text-field__input font-title text-xl">
@@ -111,3 +111,13 @@ export default {
     }
 }
 </script>
+
+<style scoped lang="scss">
+.number-field-container {
+    @apply relative;
+
+    &:not([class*='w-']) {
+        @apply w-20;
+    }
+}
+</style>

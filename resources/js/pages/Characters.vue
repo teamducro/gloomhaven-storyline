@@ -34,17 +34,17 @@
                             </label>
                         </div>
 
-                        <div class="flex">
-                            <div class="mb-8 sm:mb-0 sm:mr-4">
+                        <div class="flex flex-wrap">
+                            <div class="mb-4 sm:mr-4">
                                 <div class="mb-2 flex items-center">
                                     <h2>{{ $t('Level') }}</h2>
                                     <rollback v-show="!loading" ref="reputation-rollback"
                                               :value.sync="character.level"></rollback>
                                 </div>
-                                <number-field :value.sync="character.level" :min="1" :max="9" id="level"
+                                <number-field class="w-14" :value.sync="character.level" :min="1" :max="9" id="level"
                                               @change="store"></number-field>
                             </div>
-                            <div class="mb-8 sm:mb-0 sm:mr-4">
+                            <div class="mb-4 sm:mr-4">
                                 <div class="mb-2 flex items-center">
                                     <h2>{{ $t('Exp') }}</h2>
                                     <rollback v-show="!loading" ref="reputation-rollback"
@@ -53,7 +53,7 @@
                                 <number-field :value.sync="character.exp" :min="0" :max="9999" id="exp"
                                               @change="store"></number-field>
                             </div>
-                            <div class="mb-8 sm:mb-0">
+                            <div class="mb-4">
                                 <div class="mb-2 flex items-center">
                                     <h2>{{ $t('Gold') }}</h2>
                                     <rollback v-show="!loading" ref="reputation-rollback"
@@ -62,9 +62,9 @@
                                 <number-field :value.sync="character.gold" :min="0" :max="9999" id="gold"
                                               @change="store"></number-field>
                             </div>
-                        </div>
 
-                        <level-progress-bar :level="character.level" :exp="character.exp"/>
+                            <level-progress-bar :level="character.level" :exp="character.exp"/>
+                        </div>
 
                         <selectable-list
                             id="items"

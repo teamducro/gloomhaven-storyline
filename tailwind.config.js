@@ -51,6 +51,9 @@ module.exports = {
             lineHeight: {
                 '12': '3rem',
             },
+            fontSize: {
+                xxs: ['0.5rem', '0.75rem'],
+            },
             colors: {
                 primary: '#3771E0',
                 'primary-dark': '#2356b7',
