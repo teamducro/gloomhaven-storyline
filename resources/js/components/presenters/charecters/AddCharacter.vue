@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
+    <div class="absolute right-0 top-0 mt-14 sheet-break-sm:mt-4 mr-4 z-5">
         <dropdown class="items-to-add-dropdown" align="right" ref="add-character"
                   @open="dropDownClose = true"
                   @close="dropDownClose = false">

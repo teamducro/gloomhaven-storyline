@@ -1,6 +1,7 @@
 <template>
     <div>
-        <div v-if="enableMobile" class="relative xs:hidden pb-2 mb-4 border-b border-white2-25">
+        <!-- Mobile tabs -->
+        <div class="relative xs:hidden pb-2 mb-4 border-b border-white2-25">
             <select :id="id" :name="id" @change="mobileSelect"
                     class="block w-full absolute opacity-0 font-title text-md -ml-1">
                 <option v-for="tab in tabs" :selected="selected === tab" :value="tab">{{ tab }}</option>
@@ -14,8 +15,9 @@
                 <span class="ml-auto material-icons">keyboard_arrow_down</span>
             </label>
         </div>
-        <div class="pb-2 border-b border-white2-25"
-             :class="{'hidden xs:inline-block': enableMobile}">
+
+        <!-- Desktop tabs -->
+        <div class="pb-2 border-b border-white2-25 hidden xs:inline-block">
             <nav class="-mb-px flex space-x-8" aria-label="Tabs">
                 <a v-for="(tab, index) in tabs" href="#" @click="select(tab, $event)"
                    class="group inline-flex items-center font-title text-md transition-colors"
@@ -53,11 +55,7 @@ export default {
         active: {
             type: String,
             default: null
-        },
-        enableMobile: {
-            type: Boolean,
-            default: true
-        },
+        }
     },
     mounted() {
         if (this.active) {

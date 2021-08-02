@@ -42,7 +42,8 @@ module.exports = {
             },
             screens: {
                 xs: '430px',
-                'sheet-break': '895px',
+                'sheet-break-sm': '505px',
+                'sheet-break-lg': '860px',
                 lgh: {'raw': '(min-height: 600px)'}
             },
             zIndex: {

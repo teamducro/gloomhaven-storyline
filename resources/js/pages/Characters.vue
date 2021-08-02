@@ -2,25 +2,26 @@
     <div v-if="sheet" :key="selected" class="pt-12 pb-4 px-4 md:px-8">
         <div id="characters" class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
+            <tabs class="hidden sheet-break-sm:block"
+                  :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
                   :urls="['party', 'characters', 'items']"
                   :active="$t('Characters')"
             />
-            <h1 class="mt-4 text-xl">{{ campaignName }}
+            <h1 class="hidden sheet-break-sm:inline-block mt-4 text-xl">{{ campaignName }}
                 <span v-if="character && selected"
                       class="pl-4">{{ character.characterName }}</span>
             </h1>
 
             <add-character ref="add-character" :sheet="sheet" @create="create"/>
 
-            <div class="mt-4 flex">
+            <div class="sheet-break-sm:mt-4 sheet-break-sm:flex">
                 <character-menu :selected="selected" :sheet="sheet" :user="user" @select="select"/>
 
-                <div v-if="character" class="ml-8 w-full relative"
+                <div v-if="character" class="w-full relative sheet-break-sm:ml-8"
                      :class="{'opacity-25': !selected}">
-                    <div class="flex flex-col sheet-break:flex-row sheet-break:space-x-8">
-                        <div class="w-full sheet-break:w-1/2">
+                    <div class="flex flex-col sheet-break-lg:flex-row sheet-break-lg:space-x-4">
+                        <div class="w-full sheet-break-lg:w-1/2">
                             <div v-if="!selected" @click.stop="() => {$refs['add-character'].open()}"
                                  class="absolute z-1 top-0 right-0 bottom-0 left-0 cursor-pointer">
                             </div>
@@ -94,7 +95,7 @@
                             </selectable-list>
 
                         </div>
-                        <div class="w-full sheet-break:w-1/2">
+                        <div class="w-full sheet-break-lg:w-1/2">
                             <perks :checks.sync="character.checks" :perks.sync="character.perks"
                                    :perk-descriptions="character.perkDescriptions()" @change="store"/>
                         </div>
