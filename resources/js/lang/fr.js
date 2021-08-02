@@ -10,6 +10,8 @@ export default {
     "Open source": "Open source",
     "Info": "Info",
     "Settings": "Settings",
+    "Characters": "Characters",
+    "Character sheet": "Character sheet",
     "Party sheet": "Party sheet",
     "Reputation": "Reputation",
     "Shop modifier": "Shop modifier",
@@ -48,6 +50,10 @@ export default {
     "Items": "Items",
     "Add Items": "Add Items",
     "Gold": "Gold",
+    "Level": "Level",
+    "Exp": "Exp",
+    "Perks": "Perks",
+    "Battle Goals": "Battle Goals",
     "Number or Name": "Number or Name",
     "No items found": "No items found",
     "Buy me a Beer": "Offrez moi une Bière!",
@@ -104,8 +110,19 @@ export default {
     "Blocked": "Bloqué",
     "Required": "Prérequis",
     "Not unlocked": "Non débloqué",
+    "Retire": "Retire",
+    "Retired": "Retired",
     "Remove": "Supprimer",
     "Clear all": "Effacer tout",
+    "Add Character": "Add Character",
+    "please consider purchasing a licence": "please consider purchasing a licence",
+    "retire-character": {
+        "text": "Are you sure you want to retire this character? It's not removed permanently.",
+        "upgrade": "Are you sure you want to permanently remove this character? Pro users may retire a character without removing it permanently."
+    },
+    "remove-character": {
+        "text": "Are you sure you want to permanently remove this character?"
+    },
     "reset": {
         "text": "Voulez-vous vraiment supprimer toutes les données de scénario?"
     },
@@ -142,6 +159,7 @@ export default {
     "Spanish": "Spanish",
     "Campaigns": "Campaigns",
     "Buy shared campaign": "Buy shared campaign",
+    "Add shared campaign": "Add shared campaign",
     "donations": {
         "1": "Gloomhaven Storyline est complètement gratuit.",
         "2": "J'adore jouer à Havrenuit et cette application nous donne une vue très claire de notre campagne. J'aimerais continuer à proposer des mises à jour gratuitement.",
@@ -211,6 +229,8 @@ export default {
     "CURSE": "CURSE",
     "BLESS": "BLESS",
     "REGENERATE": "REGENERATE",
+    "DISARM": "DISARM",
+    "TARGET": "TARGET",
     "Through Jungles": "Through Jungles",
     "Solo Scenarios": "Solo Scenarios",
     "Dagger Forest": "Dagger Forest",

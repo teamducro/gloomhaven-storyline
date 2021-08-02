@@ -10,6 +10,8 @@ export default {
     "Open source": "Open source",
     "Info": "Informazioni",
     "Settings": "Settings",
+    "Characters": "Characters",
+    "Character sheet": "Character sheet",
     "Party sheet": "Party sheet",
     "Reputation": "Reputation",
     "Shop modifier": "Shop modifier",
@@ -48,6 +50,10 @@ export default {
     "Items": "Items",
     "Add Items": "Add Items",
     "Gold": "Gold",
+    "Level": "Level",
+    "Exp": "Exp",
+    "Perks": "Perks",
+    "Battle Goals": "Battle Goals",
     "Number or Name": "Number or Name",
     "No items found": "No items found",
     "Buy me a Beer": "Offrimi una birra",
@@ -104,8 +110,19 @@ export default {
     "Blocked": "Bloccato",
     "Required": "Richiesto",
     "Not unlocked": "Non sbloccato",
+    "Retire": "Retire",
+    "Retired": "Retired",
     "Remove": "Rimuovi",
     "Clear all": "Rimuovi tutto",
+    "Add Character": "Add Character",
+    "please consider purchasing a licence": "please consider purchasing a licence",
+    "retire-character": {
+        "text": "Are you sure you want to retire this character? It's not removed permanently.",
+        "upgrade": "Are you sure you want to permanently remove this character? Pro users may retire a character without removing it permanently."
+    },
+    "remove-character": {
+        "text": "Are you sure you want to permanently remove this character?"
+    },
     "reset": {
         "text": "Sei sicuro di voler rimuovere tutti i dati relativi agli scenari? L’azione è irreversibile."
     },
@@ -142,6 +159,7 @@ export default {
     "Spanish": "Spanish",
     "Campaigns": "Campaigns",
     "Buy shared campaign": "Buy shared campaign",
+    "Add shared campaign": "Add shared campaign",
     "donations": {
         "1": "All content in the Gloomhaven Storyline Tracker is free!",
         "2": "The paid version provides an automatic sync feature, progress doesn’t have to be shared manually anymore! This covers costs maintaining this app for the community.",
@@ -212,6 +230,8 @@ export default {
     "CURSE": "CURSE",
     "BLESS": "BLESS",
     "REGENERATE": "REGENERATE",
+    "DISARM": "DISARM",
+    "TARGET": "TARGET",
     "Through Jungles": "Through Jungles",
     "Solo Scenarios": "Solo Scenarios",
     "Dagger Forest": "Dagger Forest",
