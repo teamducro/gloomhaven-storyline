@@ -15,7 +15,7 @@
             </div>
         </div>
         <h2 class="mb-2">{{ $t('Battle Goals') }}</h2>
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap max-w-xs">
             <template v-for="groupIndex in [0, 3, 6, 9, 12, 15]">
                 <div class="flex items-center">
                     <checkbox v-for="index in [1, 2, 3]" :key="'check'+(groupIndex+index)" group="checks"

@@ -17,101 +17,107 @@
             <div class="mt-4 flex">
                 <character-menu :selected="selected" :sheet="sheet" :user="user" @select="select"/>
 
-                <div v-if="character" class="ml-8 w-full relative flex space-x-8" :class="{'opacity-25': !selected}">
-                    <div class="w-1/2">
-                        <div v-if="!selected" @click.stop="() => {$refs['add-character'].open()}"
-                             class="absolute z-1 top-0 right-0 bottom-0 left-0 cursor-pointer">
-                        </div>
-
-                        <div class="mb-4">
-                            <h2 class="mb-2">{{ $t('Name') }}</h2>
-                            <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="name-field">
-                                <span class="mdc-text-field__ripple"></span>
-                                <input class="mdc-text-field__input" aria-labelledby="name"
-                                       type="text" name="name" v-model="character.name" @change="store">
-                                <span class="mdc-floating-label" id="name">{{ $t('Name') }}</span>
-                                <span class="mdc-line-ripple"></span>
-                            </label>
-                        </div>
-
-                        <div class="flex flex-wrap">
-                            <div class="mb-4 sm:mr-4">
-                                <div class="mb-2 flex items-center">
-                                    <h2>{{ $t('Level') }}</h2>
-                                    <rollback v-show="!loading" ref="reputation-rollback"
-                                              :value.sync="character.level"></rollback>
-                                </div>
-                                <number-field class="w-14" :value.sync="character.level" :min="1" :max="9" id="level"
-                                              @change="store"></number-field>
+                <div v-if="character" class="ml-8 w-full relative"
+                     :class="{'opacity-25': !selected}">
+                    <div class="flex flex-col sheet-break:flex-row sheet-break:space-x-8">
+                        <div class="w-full sheet-break:w-1/2">
+                            <div v-if="!selected" @click.stop="() => {$refs['add-character'].open()}"
+                                 class="absolute z-1 top-0 right-0 bottom-0 left-0 cursor-pointer">
                             </div>
-                            <div class="mb-4 sm:mr-4">
-                                <div class="mb-2 flex items-center">
-                                    <h2>{{ $t('Exp') }}</h2>
-                                    <rollback v-show="!loading" ref="reputation-rollback"
-                                              :value.sync="character.exp"></rollback>
-                                </div>
-                                <number-field :value.sync="character.exp" :min="0" :max="9999" id="exp"
-                                              @change="store"></number-field>
-                            </div>
+
                             <div class="mb-4">
-                                <div class="mb-2 flex items-center">
-                                    <h2>{{ $t('Gold') }}</h2>
-                                    <rollback v-show="!loading" ref="reputation-rollback"
-                                              :value.sync="character.gold"></rollback>
-                                </div>
-                                <number-field :value.sync="character.gold" :min="0" :max="9999" id="gold"
-                                              @change="store"></number-field>
+                                <h2 class="mb-2">{{ $t('Name') }}</h2>
+                                <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="name-field">
+                                    <span class="mdc-text-field__ripple"></span>
+                                    <input class="mdc-text-field__input" aria-labelledby="name"
+                                           type="text" name="name" v-model="character.name" @change="store">
+                                    <span class="mdc-floating-label" id="name">{{ $t('Name') }}</span>
+                                    <span class="mdc-line-ripple"></span>
+                                </label>
                             </div>
 
-                            <level-progress-bar :level="character.level" :exp="character.exp"/>
-                        </div>
+                            <div class="flex flex-wrap">
+                                <div class="mb-4 mr-4">
+                                    <div class="mb-2 flex items-center">
+                                        <h2>{{ $t('Level') }}</h2>
+                                        <rollback v-show="!loading" ref="reputation-rollback"
+                                                  :value.sync="character.level"></rollback>
+                                    </div>
+                                    <number-field class="w-14" :value.sync="character.level" :min="1" :max="9"
+                                                  id="level"
+                                                  @change="store"></number-field>
+                                </div>
+                                <div class="mb-4 mr-4">
+                                    <div class="mb-2 flex items-center">
+                                        <h2>{{ $t('Exp') }}</h2>
+                                        <rollback v-show="!loading" ref="reputation-rollback"
+                                                  :value.sync="character.exp"></rollback>
+                                    </div>
+                                    <number-field :value.sync="character.exp" :min="0" :max="9999" id="exp"
+                                                  @change="store"></number-field>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="mb-2 flex items-center">
+                                        <h2>{{ $t('Gold') }}</h2>
+                                        <rollback v-show="!loading" ref="reputation-rollback"
+                                                  :value.sync="character.gold"></rollback>
+                                    </div>
+                                    <number-field :value.sync="character.gold" :min="0" :max="9999" id="gold"
+                                                  @change="store"></number-field>
+                                </div>
 
-                        <selectable-list
-                            id="items"
-                            :title="$t('Items')"
-                            :label="$t('Add items')"
-                            :items.sync="sheetItems"
-                            width="w-auto"
-                            @change="storeItems"
-                            ref="items"
-                        >
+                                <level-progress-bar :level="character.level" :exp="character.exp"/>
+                            </div>
+
+                            <selectable-list
+                                id="items"
+                                :title="$t('Items')"
+                                :label="$t('Add items')"
+                                :items.sync="sheetItems"
+                                width="w-auto"
+                                class="mb-8"
+                                @change="storeItems"
+                                ref="items"
+                            >
                             <span class="flex items-center mr-6" slot="label" slot-scope="{item}">
                                 <webp :src="items[item].slot" width="20" class="mr-2"/>
                                 <span>{{ items[item].number }} {{ items[item].name }}</span>
                             </span>
-                            <div slot="item" slot-scope="{item}"
-                                 class="cursor-pointer flex items-center border-b border-white2-50 py-1"
-                                 @click="openItemModel(item)">
-                                <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                <span>{{ items[item].number }} {{ items[item].name }}</span>
-                                <span @click.stop="$refs.items.deselect(item)"
-                                      class="ml-auto material-icons">clear</span>
-                            </div>
-                        </selectable-list>
+                                <div slot="item" slot-scope="{item}"
+                                     class="cursor-pointer flex items-center border-b border-white2-50 py-1"
+                                     @click="openItemModel(item)">
+                                    <webp :src="items[item].slot" width="20" class="mr-2"/>
+                                    <span>{{ items[item].number }} {{ items[item].name }}</span>
+                                    <span @click.stop="$refs.items.deselect(item)"
+                                          class="ml-auto material-icons">clear</span>
+                                </div>
+                            </selectable-list>
 
-                        <div class="my-8">
-                            <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
-                                    class="mr-4 mdc-button mdc-button--raised">
-                                <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
-                                <span class="mdc-button__label">{{ $t('Retire') }}</span>
-                            </button>
-                            <button v-if="isArchived" @click="$refs['remove-character'].open()" type="button"
-                                    class="mdc-button mdc-button--raised">
-                                <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
-                                <span class="mdc-button__label">{{ $t('Remove') }}</span>
-                            </button>
-                            <button v-if="isArchived" type="button"
-                                    @click="restore"
-                                    :disabled="characterRepository.partyHasCharacter(sheet, character.id)"
-                                    class="ml-4 mdc-button mdc-button--raised">
-                                <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
-                                <span class="mdc-button__label">{{ $t('Restore') }}</span>
-                            </button>
+                        </div>
+                        <div class="w-full sheet-break:w-1/2">
+                            <perks :checks.sync="character.checks" :perks.sync="character.perks"
+                                   :perk-descriptions="character.perkDescriptions()" @change="store"/>
                         </div>
                     </div>
-                    <div class="w-1/2">
-                        <perks :checks.sync="character.checks" :perks.sync="character.perks"
-                               :perk-descriptions="character.perkDescriptions()" @change="store"/>
+
+                    <div class="my-8">
+                        <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
+                                class="mr-4 mdc-button mdc-button--raised">
+                            <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
+                            <span class="mdc-button__label">{{ $t('Retire') }}</span>
+                        </button>
+                        <button v-if="isArchived" @click="$refs['remove-character'].open()" type="button"
+                                class="mdc-button mdc-button--raised">
+                            <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
+                            <span class="mdc-button__label">{{ $t('Remove') }}</span>
+                        </button>
+                        <button v-if="isArchived" type="button"
+                                @click="restore"
+                                :disabled="characterRepository.partyHasCharacter(sheet, character.id)"
+                                class="ml-4 mdc-button mdc-button--raised">
+                            <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
+                            <span class="mdc-button__label">{{ $t('Restore') }}</span>
+                        </button>
                     </div>
                 </div>
             </div>
