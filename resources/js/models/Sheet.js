@@ -2,6 +2,8 @@ import Storable from './Storable'
 import Character from "./Character";
 import GameData from "../services/GameData";
 
+const md5 = require('js-md5');
+
 class Sheet {
 
     static make() {
@@ -113,6 +115,10 @@ class Sheet {
                 this.archivedCharacters[uuid] = Character.make(uuid, this.game);
             }
         }
+    }
+
+    getHash() {
+        return md5(JSON.stringify(this));
     }
 
     read() {

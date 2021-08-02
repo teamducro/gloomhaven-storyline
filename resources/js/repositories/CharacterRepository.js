@@ -3,10 +3,6 @@ import {v4 as uuidv4} from 'uuid';
 
 export default class CharacterRepository {
 
-    fetch() {
-
-    }
-
     partyHasCharacter(sheet, id) {
         for (const uuid in sheet.characters) {
             if (sheet.characters[uuid].id === id) {

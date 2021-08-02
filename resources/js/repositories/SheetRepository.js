@@ -1,5 +1,4 @@
 import Sheet from "../models/Sheet";
-import Character from "../models/Character";
 
 export default class SheetRepository {
 

@@ -1,5 +1,5 @@
 <template>
-    <div v-if="sheet" :key="selected" class="pt-12 pb-4 px-4 md:px-8">
+    <div v-if="sheet" :key="sheetHash" class="pt-12 pb-4 px-4 md:px-8">
         <div id="characters" class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs class="hidden sheet-break-sm:block"
@@ -182,11 +182,11 @@ export default {
         return {
             user: null,
             sheet: null,
+            sheetHash: null,
             selected: null,
             character: null,
             campaignName: null,
             loading: true,
-            renderX: 0,
             sheetItems: {},
             items: collect(),
             nameField: null,
@@ -207,7 +207,9 @@ export default {
     },
     computed: {
         isArchived() {
-            return this.character.uuid in this.sheet.archivedCharacters;
+            // Reference sheet hash so the value is recalculated when the sheet is updated.
+            this.sheetHash;
+            return this.selected in this.sheet.archivedCharacters;
         }
     },
     methods: {
@@ -262,13 +264,13 @@ export default {
             if (this.character) {
                 this.selected = uuid;
                 this.refreshItems();
-                this.refreshInputFields();
+                this.rerender();
             }
         },
         selectDemo() {
             this.selected = null;
             this.character = Character.make('demo', app.game, 'BR');
-            this.refreshInputFields();
+            this.rerender();
         },
         create(id) {
             if (this.characterRepository.partyHasCharacter(this.sheet, id)) {
@@ -306,12 +308,14 @@ export default {
             if (this.character) {
                 this.characterRepository.archiveCharacter(this.sheet, this.character);
                 this.storySyncer.store();
+                this.rerender();
             }
         },
         restore() {
             if (this.character) {
                 this.characterRepository.restoreCharacter(this.sheet, this.character);
                 this.storySyncer.store();
+                this.rerender();
             }
         },
         renderHtml(html) {
@@ -319,8 +323,9 @@ export default {
                 template: `<span>${html}</span>`
             };
         },
-        rerenderX() {
-            this.renderX++;
+        rerender() {
+            this.refreshInputFields();
+            this.sheetHash = this.sheet.getHash();
         }
     }
 }
