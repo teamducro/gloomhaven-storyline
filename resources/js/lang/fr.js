@@ -51,7 +51,7 @@ export default {
     "Add Items": "Add Items",
     "Gold": "Gold",
     "Level": "Level",
-    "Exp": "Exp",
+    "XP": "XP",
     "Perks": "Perks",
     "Battle Goals": "Battle Goals",
     "Number or Name": "Number or Name",

@@ -39,5 +39,10 @@ export default {
                 this[modelKey] = model[storeKey] || defaultValue;
             });
         }
-    }
+    },
+
+    delete() {
+        delete app.campaignData[this.key()];
+        store.set(app.campaignId, app.campaignData);
+    },
 }

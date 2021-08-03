@@ -6,11 +6,11 @@
                      :style="{width: progress+'%'}"></div>
             </div>
             <div class="ml-2 mt-2 flex flex-col leading-4 whitespace-no-wrap text-center">
-                <span>Lvl {{ level + 1 }}</span>
-                <span>{{ levels[level + 1] }} exp</span>
+                <span>{{ $t('Lvl') }} {{ level + 1 }}</span>
+                <span>{{ levels[level + 1] }} {{ $t('XP') }}</span>
             </div>
         </div>
-        <p v-if="progress >= 100">{{ this.$t('Level up when you\'re back in town!') }}</p>
+        <p v-if="progress >= 100">{{ $t('Level up when you\'re back in town!') }}</p>
     </div>
 </template>
 
@@ -18,7 +18,7 @@
 export default {
     props: {
         level: Number,
-        exp: Number
+        xp: Number
     },
     data() {
         return {
@@ -37,7 +37,7 @@ export default {
     },
     computed: {
         progress() {
-            const currentExp = this.exp - this.levels[this.level];
+            const currentExp = this.xp - this.levels[this.level];
             const neededExp = this.levels[this.level + 1] - this.levels[this.level];
 
             return Math.min(Math.max(currentExp / neededExp * 100, 0), 100);

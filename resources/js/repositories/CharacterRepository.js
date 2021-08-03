@@ -44,6 +44,7 @@ export default class CharacterRepository {
     removeCharacter(sheet, character) {
         delete sheet.characters[character.uuid];
         delete sheet.archivedCharacters[character.uuid];
+        character.delete();
         sheet.store();
     }
 }

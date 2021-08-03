@@ -1,7 +1,7 @@
 <template>
-    <div class="sheet-break-sm:w-40">
+    <div class="sm:w-30">
         <!-- Mobile menu -->
-        <div class="relative sheet-break-sm:hidden pb-2 mb-4 border-b border-white2-25">
+        <div class="relative sm:hidden pb-2 mb-4 border-b border-white2-25">
             <select id="mobile-character-menu" name="mobile-character-menu" @change="mobileSelect"
                     class="block w-full absolute opacity-0 font-title text-md -ml-1">
                 <option value="party">
@@ -27,21 +27,21 @@
                 </option>
             </select>
             <label v-if="selectedCharacter" for="mobile-character-menu" class="flex items-center">
-                <character-icon class="w-5 mr-2" :character="selectedCharacter.id"/>
+                <character-icon class="flex-shrink-0 w-5 mr-2" :character="selectedCharacter.id"/>
                 <span class="font-title">{{ selectedCharacter.name }}</span>
                 <span class="ml-auto material-icons">keyboard_arrow_down</span>
             </label>
         </div>
 
         <!-- Desktop menu -->
-        <div class="hidden sheet-break-sm:block">
+        <div class="hidden sm:block">
             <ul class="space-y-6 mb-4">
                 <li v-for="character in sheet.characters" :key="character.id" class="flow-root">
                     <a @click.stop.prevent="select(character.uuid)" href="#"
                        class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                        :class="{'text-white bg-black2-25': selected === character.uuid, 'text-white2-75': selected !== character.uuid}">
-                        <character-icon class="w-5 mr-2" :character="character.id"/>
-                        <span>{{ character.name }}</span>
+                        <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
+                        <span class="overflow-hidden">{{ character.name }}</span>
                     </a>
                 </li>
             </ul>
@@ -57,7 +57,7 @@
                             <a @click.stop.prevent="select(character.uuid)" href="#"
                                class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                                :class="{'text-white bg-black2-25': selected === character.uuid, 'text-white2-75': selected !== character.uuid}">
-                                <character-icon class="w-5 mr-2" :character="character.id"/>
+                                <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
                                 <span>{{ character.name }}</span>
                             </a>
                         </li>

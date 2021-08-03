@@ -26,6 +26,9 @@ module.exports = {
                 11: '2.75rem',
                 14: '3.5rem',
                 28: '7rem',
+                30: '7.5rem',
+                32: '8rem',
+                36: '9rem',
                 '1/2': '50%',
                 '1/4': '25%',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
@@ -42,8 +45,7 @@ module.exports = {
             },
             screens: {
                 xs: '430px',
-                'sheet-break-sm': '505px',
-                'sheet-break-lg': '860px',
+                'sheet-break-lg': '872px',
                 lgh: {'raw': '(min-height: 600px)'}
             },
             zIndex: {

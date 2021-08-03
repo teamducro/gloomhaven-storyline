@@ -2,7 +2,7 @@
     <div class="mb-4">
         <h2 class="mb-2">{{ $t('Perks') }}</h2>
         <div class="mb-4">
-            <div class="flex" v-for="(perkDescription, perkIndex) in perkDescriptions">
+            <div class="flex" v-for="(perkDescription, perkIndex) in character.perkDescriptions()">
                 <checkbox v-for="(perk, index) in perks[perkIndex]"
                           v-if="index < perkDescription.count"
                           :key="'perk-'+perkIndex+'-'+index" group="perks"
@@ -26,13 +26,17 @@
                 </div>
             </template>
         </div>
+
+        <p v-if="perkCount < minimalPerks">
+            {{ $t('You may select an additional perk!') }}
+        </p>
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        perkDescriptions: Array,
+        character: Object,
         perks: Object,
         checks: Object
     },
@@ -41,6 +45,14 @@ export default {
     },
     mounted() {
 
+    },
+    computed: {
+        perkCount() {
+            return collect(this.perks).flatten().filter().count();
+        },
+        minimalPerks() {
+            return this.character.level - 1 + Math.floor(collect(this.checks).filter().count() / 3);
+        }
     },
     methods: {
         changedChecks(index, isChecked) {

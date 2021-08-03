@@ -13,7 +13,7 @@ class Character {
         this.name = data.name;
         this.characterName = data.characterName;
         this.level = data.level || 1;
-        this.exp = data.exp || 0;
+        this.xp = data.xp || 0;
         this.gold = data.gold || 0;
         this.items = {...data.items};
         this.notes = data.notes || '';
@@ -25,8 +25,9 @@ class Character {
         this.fieldsToStore = {
             uuid: 'uuid',
             id: 'id',
+            name: 'name',
             level: 'level',
-            exp: 'exp',
+            xp: 'xp',
             gold: 'gold',
             items: {'items': {}},
             notes: 'notes',

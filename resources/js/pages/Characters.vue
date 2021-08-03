@@ -2,23 +2,23 @@
     <div v-if="sheet" :key="sheetHash" class="pt-12 pb-4 px-4 md:px-8">
         <div id="characters" class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs class="hidden sheet-break-sm:block"
+            <tabs class="hidden sm:block"
                   :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
                   :urls="['party', 'characters', 'items']"
                   :active="$t('Characters')"
             />
-            <h1 class="hidden sheet-break-sm:inline-block mt-4 text-xl">{{ campaignName }}
+            <h1 class="hidden sm:inline-block mt-4 text-xl">{{ campaignName }}
                 <span v-if="character && selected"
                       class="pl-4">{{ character.characterName }}</span>
             </h1>
 
             <add-character ref="add-character" :sheet="sheet" @create="create"/>
 
-            <div class="sheet-break-sm:mt-4 sheet-break-sm:flex">
+            <div class="sm:mt-4 sm:flex">
                 <character-menu :selected="selected" :sheet="sheet" :user="user" @select="select"/>
 
-                <div v-if="character" class="w-full relative sheet-break-sm:ml-8"
+                <div v-if="character" class="w-full relative sm:ml-8"
                      :class="{'opacity-25': !selected}">
                     <div class="flex flex-col sheet-break-lg:flex-row sheet-break-lg:space-x-4">
                         <div class="w-full sheet-break-lg:w-1/2">
@@ -50,11 +50,11 @@
                                 </div>
                                 <div class="mb-4 mr-4">
                                     <div class="mb-2 flex items-center">
-                                        <h2>{{ $t('Exp') }}</h2>
+                                        <h2>{{ $t('XP') }}</h2>
                                         <rollback v-show="!loading" ref="reputation-rollback"
-                                                  :value.sync="character.exp"></rollback>
+                                                  :value.sync="character.xp"></rollback>
                                     </div>
-                                    <number-field :value.sync="character.exp" :min="0" :max="9999" id="exp"
+                                    <number-field :value.sync="character.xp" :min="0" :max="9999" id="xp"
                                                   @change="store"></number-field>
                                 </div>
                                 <div class="mb-4">
@@ -67,7 +67,7 @@
                                                   @change="store"></number-field>
                                 </div>
 
-                                <level-progress-bar :level="character.level" :exp="character.exp"/>
+                                <level-progress-bar :level="character.level" :xp="character.xp"/>
                             </div>
 
                             <selectable-list
@@ -97,7 +97,7 @@
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
                             <perks :checks.sync="character.checks" :perks.sync="character.perks"
-                                   :perk-descriptions="character.perkDescriptions()" @change="store"/>
+                                   :character="character" @change="store"/>
                         </div>
                     </div>
 
