@@ -36,7 +36,7 @@
         <!-- Desktop menu -->
         <div class="hidden sm:block">
             <ul class="space-y-6 mb-4">
-                <li v-for="character in sheet.characters" :key="character.id" class="flow-root">
+                <li v-for="character in sheet.characters" :key="character.uuid" class="flow-root">
                     <a @click.stop.prevent="select(character.uuid)" href="#"
                        class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                        :class="{'text-white bg-black2-25': selected === character.uuid, 'text-white2-75': selected !== character.uuid}">
@@ -52,8 +52,8 @@
                         <div class="my-3 font-title">{{ $t('Retired') }}</div>
                     </template>
 
-                    <ul>
-                        <li v-for="character in sheet.archivedCharacters" :key="character.id" class="flow-root">
+                    <ul class="space-y-6 mb-4">
+                        <li v-for="character in sheet.archivedCharacters" :key="character.uuid" class="flow-root">
                             <a @click.stop.prevent="select(character.uuid)" href="#"
                                class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                                :class="{'text-white bg-black2-25': selected === character.uuid, 'text-white2-75': selected !== character.uuid}">

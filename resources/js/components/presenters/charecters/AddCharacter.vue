@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute right-0 top-0 mt-14 sheet-break-sm:mt-4 mr-4 z-5">
+    <div class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
         <dropdown class="items-to-add-dropdown" align="right" ref="add-character"
                   @open="dropDownClose = true"
                   @close="dropDownClose = false">
@@ -13,14 +13,23 @@
 
             <div class="w-full">
                 <h2>{{ $t('Add Character') }}</h2>
-                <ul class="flex flex-col py-4 px-3 space-y-6">
-                    <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" class="flow-root"
-                        :class="['order-'+characterOrder[id]]">
+                <ul class="flex flex-col py-4 px-3">
+                    <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" v-if="unlocked" class="flow-root"
+                        :class="['order-'+characterOrder[id]+' '+(characterOrder[id]>1?'mt-6':'')]">
                         <a @click.stop.prevent="$emit('create', id)" href="#"
                            class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-white hover:bg-black2-75 transition ease-in-out duration-150"
                            :class="{'text-white2-50 grayscale cursor-default': characterRepository.partyHasCharacter(sheet, id)}">
                             <character-icon class="flex-shrink-0 w-5 mr-2" :character="id"/>
-                            <span v-if="unlocked">{{ characterNames[id] }}</span>
+                            <span>{{ characterNames[id] }}</span>
+                        </a>
+                    </li>
+                </ul>
+                <h2 v-if="hasLocked">{{ $t('Locked') }}</h2>
+                <ul v-if="hasLocked" class="flex flex-wrap mx-1 py-2">
+                    <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" v-if="!unlocked" class="flow-root"
+                        :class="['order-'+characterOrder[id]]">
+                        <a @click.stop.prevent="$emit('create', id)" href="#" class="block m-1">
+                            <character-icon class="flex-shrink-0 w-5" :character="id"/>
                         </a>
                     </li>
                 </ul>
@@ -45,6 +54,12 @@ export default {
             dropDownClose: false,
             gameData: new GameData,
             characterRepository: new CharacterRepository
+        }
+    },
+    computed: {
+        hasLocked() {
+            const all = collect(this.sheet.characterUnlocks).count();
+            return all > collect(this.sheet.characterUnlocks).filter().count();
         }
     },
     mounted() {

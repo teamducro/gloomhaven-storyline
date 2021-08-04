@@ -112,6 +112,7 @@ export default {
     "Blocked": "Blocked",
     "Required": "Required",
     "Not unlocked": "Not unlocked",
+    "Locked": "Locked",
     "Retire": "Retire",
     "Retired": "Retired",
     "Remove": "Remove",
