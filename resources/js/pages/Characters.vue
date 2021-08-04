@@ -128,9 +128,11 @@
                ref="retire-character">
             <template v-slot:content>
                 <p v-if="user">{{ $t('retire-character.text') }}</p>
-                <p v-else>{{ $t('retire-character.upgrade') }},
+                <p v-else>{{ $t('retire-character.upgrade') }}
                     <router-link to="/campaigns" class="link">
-                        {{ $t('please consider purchasing a licence') }}.
+                        <span @click="$refs['retire-character'].close()">
+                            {{ $t('Please consider purchasing a licence') }}.
+                        </span>
                     </router-link>
                 </p>
             </template>
@@ -216,7 +218,7 @@ export default {
         async render() {
             this.loading = true;
 
-            this.user = app.user;
+            // this.user = app.user;
             this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
 

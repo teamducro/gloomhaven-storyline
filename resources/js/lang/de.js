@@ -118,7 +118,7 @@ export default {
     "Remove": "Löschen",
     "Clear all": "Alles löschen",
     "Add Character": "Add Character",
-    "please consider purchasing a licence": "please consider purchasing a licence",
+    "Please consider purchasing a licence": "Please consider purchasing a licence",
     "retire-character": {
         "text": "Are you sure you want to retire this character? It's not removed permanently.",
         "upgrade": "Are you sure you want to permanently remove this character? Pro users may retire a character without removing it permanently."
