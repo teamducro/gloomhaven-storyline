@@ -90,6 +90,7 @@ Object.assign(Character.prototype, {
     parentRead: Storable.read,
     parentValuesToStore: Storable.valuesToStore,
     store: Storable.store,
+    delete: Storable.delete,
 });
 
 export default Character;
