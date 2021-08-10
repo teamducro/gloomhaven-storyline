@@ -36,7 +36,7 @@
         "BE": "Berserker",
         "QM": "Quartermaster",
         "PH": "Plagueherald",
-        "BT": "Beast-tyrant",
+        "BT": "Beast Tyrant",
         "DR": "Diviner"
     },
     "perks": {
@@ -756,7 +756,40 @@
                 "desc": "Ignore negative scenario effects and add one {+1_WHITE} card"
             }
         ],
-        "BT": [],
+        "BT": [
+            {
+                "count": 1,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 3,
+                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+1_WHITE} {WOUND} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+            },
+            {
+                "count": 3,
+                "desc": "Add two {AGAIN} {HEAL}1 cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {EARTH} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative scenario effects"
+            }
+        ],
         "DR": [
             {
                 "count": 2,
