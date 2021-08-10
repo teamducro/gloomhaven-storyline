@@ -272,7 +272,7 @@
             },
             {
                 "count": 1,
-                "desc": "Ignore negative item effects"
+                "desc": "Ignore negative scenario effects"
             }
         ],
         "DS": [
@@ -314,7 +314,7 @@
             },
             {
                 "count": 1,
-                "desc": "Ignore negative item effects"
+                "desc": "Ignore negative scenario effects"
             }
         ],
         "EL": [
@@ -544,7 +544,7 @@
             },
             {
                 "count": 1,
-                "desc": "Ignore negative item effects and add two {+1_WHITE} cards"
+                "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards"
             }
         ],
         "SU": [
@@ -671,10 +671,63 @@
             },
             {
                 "count": 1,
-                "desc": "Ignore negative item effects and add one {+1_WHITE} card"
+                "desc": "Ignore negative scenario effects and add one {+1_WHITE} card"
             }
         ],
         "BT": [],
-        "DR": []
+        "DR": [
+            {
+                "count": 2,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Remove one {-2_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Replace two {+1_WHITE} cards with one {+3_WHITE} {SHIELD}1, Self card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1, Affect any ally card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {DARK} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {REGENERATE}, Self card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {HEAL}2, Affect any ally card"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {HEAL}1, Self cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {CURSE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards"
+            }
+        ]
     }
 }
