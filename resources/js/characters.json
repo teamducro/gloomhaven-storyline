@@ -228,7 +228,44 @@
         "MT": [],
         "DS": [],
         "EL": [],
-        "SB": [],
+        "SB": [
+            {
+                "count": 2,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Remove four {+0_WHITE} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {AGAIN} {+2_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {WOUND} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {AGAIN} {STUN} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {AGAIN} {HEAL}3 card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+0_WHITE} Refresh an item card"
+            }
+        ],
         "SS": [
             {
                 "count": 2,
