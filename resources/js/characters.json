@@ -87,7 +87,52 @@
             }
         ],
         "CH": [],
-        "SW": [],
+        "SW": [
+            {
+                "count": 1,
+                "desc": "Remove four {+0_WHITE} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Replace on {-1_WHITE} card with on {+1_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {+1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+0_WHITE} {STUN} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+1_WHITE} {WOUND} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+1_WHITE} {CURSE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+2_WHITE} {FIRE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+2_WHITE} {ICE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {AGAIN} {EARTH} and one {AGAIN} {WIND} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {AGAIN} {LIGHT} and one {AGAIN} {DARK} card"
+            }
+        ],
         "TI": [
             {
                 "count": 2,
