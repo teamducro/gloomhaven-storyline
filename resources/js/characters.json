@@ -630,7 +630,48 @@
                 "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards"
             }
         ],
-        "BE": [],
+        "BE": [
+            {
+                "count": 1,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Remove four {+0_WHITE} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Replace one {+0_WHITE} card with one {AGAIN} {+2_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {WOUND} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {AGAIN} {STUN} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {AGAIN} {+1_WHITE} {DISARM} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {HEAL}1 cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+2_WHITE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative item effects"
+            }
+        ],
         "QM": [
             {
                 "count": 2,
