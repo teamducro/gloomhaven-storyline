@@ -184,7 +184,56 @@
         "DS": [],
         "EL": [],
         "SB": [],
-        "SS": [],
+        "SS": [
+            {
+                "count": 2,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Remove one {-2_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Replace two {+1_WHITE} cards with one {+4_WHITE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {DISARM} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {WOUND} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {POISON} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {STUN} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add three {AGAIN} {+1_WHITE} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {CURSE} cards"
+            }
+        ],
         "SK": [
             {
                 "count": 2,
