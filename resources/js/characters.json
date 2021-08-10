@@ -448,7 +448,48 @@
                 "desc": "Ignore negative item effects and add two {+1_WHITE} cards"
             }
         ],
-        "PH": [],
+        "PH": [
+            {
+                "count": 1,
+                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {+1_WHITE} cards"
+            },
+            {
+                "count": 3,
+                "desc": "Add one {+1_WHITE} {WIND} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add three {AGAIN} {POISON} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {CURSE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {IMMOBILIZE} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {AGAIN} {STUN} card"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative item effects and add one {+1_WHITE} card"
+            }
+        ],
         "BT": [],
         "DR": []
     }
