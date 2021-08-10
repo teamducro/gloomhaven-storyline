@@ -275,7 +275,48 @@
                 "desc": "Ignore negative item effects"
             }
         ],
-        "DS": [],
+        "DS": [
+            {
+                "count": 2,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 3,
+                "desc": "Replace two {+0_WHITE} cards with two {+1_WHITE} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {+1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+2_WHITE} {MUDDLE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+1_WHITE} {POISON} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+1_WHITE} {WOUND} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+0_WHITE} {STUN} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {AGAIN} {TARGET} card"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative item effects"
+            }
+        ],
         "EL": [
             {
                 "count": 2,
