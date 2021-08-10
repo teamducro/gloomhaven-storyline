@@ -177,6 +177,7 @@ import Character from "../models/Character";
 import CharacterRepository from "../repositories/CharacterRepository";
 import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
+import store from "store/dist/store.modern";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -248,7 +249,10 @@ export default {
             }
         },
         selectDefault() {
-            if (Object.keys(this.sheet.characters).length) {
+            const storedUuid = this.readSelected();
+            if (storedUuid && (this.sheet.characters[storedUuid] || this.sheet.archivedCharacters[storedUuid])) {
+                this.select(storedUuid);
+            } else if (Object.keys(this.sheet.characters).length) {
                 this.select(Object.keys(this.sheet.characters)[0]);
             } else if (Object.keys(this.sheet.archivedCharacters).length) {
                 this.select(Object.keys(this.sheet.archivedCharacters)[0]);
@@ -267,6 +271,7 @@ export default {
                 this.selected = uuid;
                 this.refreshItems();
                 this.rerender();
+                this.storeSelected();
             }
         },
         selectDemo() {
@@ -319,6 +324,12 @@ export default {
                 this.storySyncer.store();
                 this.rerender();
             }
+        },
+        storeSelected() {
+            store.set('selectedCharacter', this.selected);
+        },
+        readSelected() {
+            return store.get('selectedCharacter');
         },
         renderHtml(html) {
             return {
