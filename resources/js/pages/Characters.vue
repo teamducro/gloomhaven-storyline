@@ -16,7 +16,8 @@
             <add-character ref="add-character" :sheet="sheet" @create="create"/>
 
             <div class="sm:mt-4 sm:flex">
-                <character-menu :selected="selected" :sheet="sheet" :user="user" @select="select"/>
+                <character-menu :selected="selected" :sheet="sheet" @select="select"
+                                :is-local-campaign="isLocalCampaign"/>
 
                 <div v-if="character" class="w-full relative sm:ml-8"
                      :class="{'opacity-25': !selected}">
@@ -127,26 +128,27 @@
         <modal v-if="character" :title="$t('Retire') + ' ' + character.name"
                ref="retire-character">
             <template v-slot:content>
-                <p v-if="user">{{ $t('retire-character.text') }}</p>
-                <p v-else>{{ $t('retire-character.upgrade') }}
+                <p v-if="isLocalCampaign">{{ $t('retire-character.upgrade') }}
                     <router-link to="/campaigns" class="link">
                         <span @click="$refs['retire-character'].close()">
                             {{ $t('Please consider purchasing a licence') }}.
                         </span>
                     </router-link>
                 </p>
+                <p v-else>{{ $t('retire-character.text') }}</p>
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
                     <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                 </button>
-                <button v-if="user" type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
-                        @click="archive">
-                    <span class="mdc-button__label text-red-700">{{ $t('Retire') }}</span>
-                </button>
-                <button v-else type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
+                <button v-if="isLocalCampaign" type="button" class="mdc-button mdc-dialog__button"
+                        data-mdc-dialog-action="yes"
                         @click="remove">
                     <span class="mdc-button__label text-red-700">{{ $t('Remove') }}</span>
+                </button>
+                <button v-else type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
+                        @click="archive">
+                    <span class="mdc-button__label text-red-700">{{ $t('Retire') }}</span>
                 </button>
             </template>
         </modal>
@@ -183,7 +185,6 @@ export default {
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
-            user: null,
             sheet: null,
             sheetHash: null,
             selected: null,
@@ -193,6 +194,7 @@ export default {
             sheetItems: {},
             items: collect(),
             nameField: null,
+            isLocalCampaign: true,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
             characterRepository: new CharacterRepository,
@@ -219,9 +221,12 @@ export default {
         async render() {
             this.loading = true;
 
-            // this.user = app.user;
             this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
+
+            // Unregistered users can't archive characters nor use character notes
+            // This may result in unstable storyline links
+            this.isLocalCampaign = app.campaignId === 'local';
 
             this.selectDefault();
 

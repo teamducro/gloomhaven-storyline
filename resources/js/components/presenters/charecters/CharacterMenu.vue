@@ -14,7 +14,7 @@
                         {{ characters.name }}
                     </option>
                 </optgroup>
-                <optgroup v-if="user && Object.keys(sheet.archivedCharacters).length"
+                <optgroup v-if="!isLocalCampaign && Object.keys(sheet.archivedCharacters).length"
                           :label="$t('Retired')">
                     <option v-for="characters in sheet.archivedCharacters"
                             :selected="selected === characters.uuid"
@@ -46,7 +46,7 @@
                 </li>
             </ul>
 
-            <template v-if="user && Object.keys(sheet.archivedCharacters).length">
+            <template v-if="!isLocalCampaign && Object.keys(sheet.archivedCharacters).length">
                 <collapse :initialOpen="selected in sheet.archivedCharacters">
                     <template slot="trigger">
                         <div class="my-3 font-title">{{ $t('Retired') }}</div>
@@ -73,7 +73,7 @@ export default {
     props: {
         selected: String,
         sheet: Object,
-        user: Object
+        isLocalCampaign: Boolean
     },
     data() {
         return {}
