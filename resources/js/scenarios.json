@@ -1818,7 +1818,7 @@
                 "PTVC"
             ],
             "rewards": [
-                "{note-42}"
+                "{NOTE_42}"
             ]
         },
         {
@@ -4074,10 +4074,10 @@
             ],
             "rewards": [
                 [
-                    "175 gold each, This money must immediately be spent on any {wind}, {ice}, {fire}, {earth}, {light}, or {dark} enhancements"
+                    "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements"
                 ],
                 [
-                    "175 gold each, This money must immediately be spent on any {wind}, {ice}, {fire}, {earth}, {light}, or {dark} enhancements",
+                    "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements",
                     "+ 1 prosperity"
                 ]
             ],
@@ -4486,7 +4486,7 @@
             ],
             "rewards": [
                 "135 gold each",
-                "This money must immediately be spent on any Move {Move}, Range {Range} or Jump {Jump} enhancements",
+                "This money must immediately be spent on any Move {MOVE}, Range {RANGE} or Jump {JUMP} enhancements",
                 "+1 prosperity"
             ]
         },
@@ -4572,7 +4572,7 @@
                 "GST"
             ],
             "treasures": {
-                "96": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {note-115}"
+                "96": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}"
             },
             "rewards": [
                 "+3 reputation",
