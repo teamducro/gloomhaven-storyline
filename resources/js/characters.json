@@ -179,7 +179,52 @@
                 "desc": "Ignore negative scenario effects"
             }
         ],
-        "SC": [],
+        "SC": [
+            {
+                "count": 2,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Remove four {+0_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {+1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {PIERCE}3 cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {POISON} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {MUDDLE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {AGAIN} {INVISIBLE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative scenario effects"
+            }
+        ],
         "MT": [],
         "DS": [],
         "EL": [],
