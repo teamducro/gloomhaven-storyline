@@ -187,7 +187,48 @@
             }
         ],
         "NS": [],
-        "SU": [],
+        "SU": [
+            {
+                "count": 1,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+            },
+            {
+                "count": 3,
+                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+2_WHITE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {WOUND} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {POISON} cards"
+            },
+            {
+                "count": 3,
+                "desc": "Add two {AGAIN} {HEAL}1 cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {AGAIN} {FIRE} and one {AGAIN} {WIND} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {AGAIN} {DARK} and one {AGAIN} {EARTH} card"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards"
+            }
+        ],
         "BE": [],
         "QM": [],
         "PH": [],
