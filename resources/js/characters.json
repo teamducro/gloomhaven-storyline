@@ -86,7 +86,48 @@
                 "desc": "Ignore negative item effects and add one {+1_WHITE} card"
             }
         ],
-        "CH": [],
+        "CH": [
+            {
+                "count": 1,
+                "desc": "Remove four {+0_WHITE} cards"
+            },
+            {
+                "count": 3,
+                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {-2_WHITE} card and two {+2_WHITE} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+2_WHITE} {MUDDLE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {PUSH}2 cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {EARTH} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {WIND} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative item effects"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative scenario effects"
+            }
+        ],
         "SW": [
             {
                 "count": 1,
