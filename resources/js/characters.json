@@ -47,7 +47,7 @@
             },
             {
                 "count": 1,
-                "desc": "Replace one {-1_WHITE} card with on {+1_WHITE} card"
+                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
             },
             {
                 "count": 2,
@@ -55,7 +55,7 @@
             },
             {
                 "count": 1,
-                "desc": "Add on {+3_WHITE} card"
+                "desc": "Add one {+3_WHITE} card"
             },
             {
                 "count": 2,
@@ -83,7 +83,7 @@
             },
             {
                 "count": 1,
-                "desc": "Ignore negative item effects and add on {+1_WHITE} card"
+                "desc": "Ignore negative item effects and add one {+1_WHITE} card"
             }
         ],
         "CH": [],
@@ -94,7 +94,7 @@
             },
             {
                 "count": 2,
-                "desc": "Replace on {-1_WHITE} card with on {+1_WHITE} card"
+                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
             },
             {
                 "count": 2,
@@ -327,11 +327,11 @@
             },
             {
                 "count": 1,
-                "desc": "Replace one {-2_WHITE} card with on {+0_WHITE} card"
+                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
             },
             {
                 "count": 1,
-                "desc": "Replace one {+0_WHITE} card with on {+2_WHITE} card"
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
             },
             {
                 "count": 2,
@@ -406,7 +406,48 @@
             }
         ],
         "BE": [],
-        "QM": [],
+        "QM": [
+            {
+                "count": 2,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Remove four {+0_WHITE} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {+1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add three {AGAIN} {MUDDLE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {PIERCE}3 cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {AGAIN} {STUN} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {AGAIN} {TARGET} card"
+            },
+            {
+                "count": 3,
+                "desc": "Add one {+0_WHITE} Refresh an item card"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative item effects and add two {+1_WHITE} cards"
+            }
+        ],
         "PH": [],
         "BT": [],
         "DR": []
