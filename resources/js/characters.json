@@ -47,7 +47,7 @@
             },
             {
                 "count": 1,
-                "desc": "Replace on {-1_WHITE} card with on {+1_WHITE} card"
+                "desc": "Replace one {-1_WHITE} card with on {+1_WHITE} card"
             },
             {
                 "count": 2,
@@ -140,7 +140,52 @@
         "EL": [],
         "SB": [],
         "SS": [],
-        "SK": [],
+        "SK": [
+            {
+                "count": 2,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Remove four {+0_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {-2_WHITE} card with on {+0_WHITE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {+0_WHITE} card with on {+2_WHITE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {+1_WHITE} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {HEAL}1 cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {STUN} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add two {AGAIN} {LIGHT} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {SHIELD}1, Self cards"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative item effects and add two {+1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative scenario effects"
+            }
+        ],
         "NS": [],
         "SU": [],
         "BE": [],
