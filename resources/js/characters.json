@@ -88,7 +88,52 @@
         ],
         "CH": [],
         "SW": [],
-        "TI": [],
+        "TI": [
+            {
+                "count": 2,
+                "desc": "Remove two {-1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {+1_WHITE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+3_WHITE} card"
+            },
+            {
+                "count": 1,
+                "desc": "Add two {AGAIN} {FIRE} cards"
+            },
+            {
+                "count": 1,
+                "desc": "Add three {AGAIN} {MUDDLE} cards"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+1_WHITE} {WOUND} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+            },
+            {
+                "count": 2,
+                "desc": "Add one {+1_WHITE} Heal {HEAL}2 card"
+            },
+            {
+                "count": 1,
+                "desc": "Add one {+0_WHITE} ADD {TARGET} card"
+            },
+            {
+                "count": 1,
+                "desc": "Ignore negative scenario effects"
+            }
+        ],
         "SC": [],
         "MT": [],
         "DS": [],
