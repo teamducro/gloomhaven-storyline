@@ -88,18 +88,11 @@ class Sheet {
             if (id) {
                 this.characterUnlocks[id] = this.starterCharacters.includes(id)
                     ? true
-                    : (this.characterUnlocks[id] || this.characters[i] || false);
+                    : (this.characterUnlocks[id] || this.characterUnlocks[i] || false);
             }
-        }
 
-        // Remove old character unlocks from party sheet, keys are ids now
-        for (let i = 0; i <= 18; i++) {
-            if (this.characters[i] === true) {
-                delete this.characterUnlocks[i];
-            }
-        }
-        if (this.characterUnlocks[undefined]) {
-            delete this.characterUnlocks[undefined];
+            // Remove old character unlocks from party sheet, keys are ids now
+            delete this.characterUnlocks[i];
         }
     }
 
