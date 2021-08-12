@@ -116,6 +116,7 @@ describe('Items', () => {
     it('It opens scenario modal from item modal', () => {
         cy.visit('/tracker?states=52_c-53_c');
         cy.visit('/tracker/#/items');
+        utilities.scrollTo('100%');
         cy.get('#items tbody tr:last').click();
         cy.get('.mdc-dialog__content button').contains(53).click();
         cy.get('.mdc-dialog__content span').contains('Reward from').should('not.exist');

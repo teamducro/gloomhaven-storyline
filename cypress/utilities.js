@@ -121,11 +121,11 @@ export default {
     },
 
     openScenario(id) {
-        cy.get('#node' + id).click();
+        cy.get('#node' + id).click({force: true});
     },
 
     closeModel() {
-        cy.get('body').click('left');
+        cy.get('body').click('left', {force: true});
     },
 
     isTracker() {
@@ -142,5 +142,12 @@ export default {
         cy.get('button').contains('menu').click();
         cy.get('.mdc-list-item__text').contains('Storyline').next().click();
         cy.get('.' + game).click();
+    },
+
+    // Call "cy.scrollTo" twice to make sure scrolling is performed as expected.
+    scrollTo(to) {
+        cy.scrollTo(0, to);
+        cy.wait(500);
+        cy.scrollTo(0, to);
     }
 }
