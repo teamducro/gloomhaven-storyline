@@ -12,7 +12,7 @@
                 </label>
             </template>
 
-            <div class="mdc-list w-40 z-10">
+            <div class="mdc-list z-10" :class="[width]">
                 <ul v-if="list.length" class="mdc-list" aria-hidden="true"
                     aria-orientation="vertical" tabindex="-1">
                     <li v-for="(item, i) in items" :key="i"
@@ -39,7 +39,8 @@ export default {
         id: {type: String},
         label: {type: String},
         list: {type: Array},
-        maxItems: {default: 10}
+        maxItems: {default: 10},
+        width: {type: String, default: 'w-40'}
     },
     data() {
         return {

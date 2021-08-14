@@ -2,15 +2,14 @@
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
         <div class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[$t('Party sheet'), $t('Items')]"
-                  :icons="['assignment', 'style']"
-                  :urls="['party', 'items']"
+            <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
+                  :icons="['assignment', 'person', 'style']"
+                  :urls="['party', 'characters', 'items']"
                   :active="$t('Items')"
-            >
-            </tabs>
-            <h1 class="hidden sm:inline text-xl">{{ campaignName }}</h1>
+            />
+            <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
-            <div class="absolute right-0 top-0 mt-4 mr-4 z-5">
+            <div class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
                 <dropdown class="items-to-add-dropdown" align="right" width=""
                           @open="dropDownClose = true"
                           @close="dropDownClose = false">
@@ -47,7 +46,7 @@
                 </p>
             </div>
 
-            <div class="flex justify-between flex-wrap">
+            <div class="flex justify-between flex-wrap items-end">
                 <div>
                     <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="search-field">
                         <span class="mdc-text-field__ripple"></span>
@@ -101,11 +100,11 @@
 
 <script>
 import {MDCTextField} from "@material/textfield/component";
-import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
 import ItemRepository from "../repositories/ItemRepository";
+import SheetRepository from "../repositories/SheetRepository";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -136,6 +135,7 @@ export default {
             dropDownClose: false,
             storySyncer: new StorySyncer,
             itemRepository: new ItemRepository,
+            sheetRepository: new SheetRepository,
         }
     },
     watch: {
@@ -156,7 +156,7 @@ export default {
         async render() {
             this.loading = true;
 
-            this.sheet = new Sheet;
+            this.sheet = this.sheetRepository.make(app.game);
             this.shop = this.calculateShop(this.sheet.reputation || 0);
             this.campaignName = this.getCampaignName();
 

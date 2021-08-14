@@ -38,7 +38,7 @@
                         </div>
                         <div class="mt-2 md:mt-0">
                                 <span class="mr-2">
-                                    <span>{{ snapshot.created_at.format('MMM Do') }}</span><span
+                                    <span>{{ snapshot.created_at.format('ll') }}</span><span
                                     class="hidden sm:inline">, {{ snapshot.created_at.format('hh:mm a') }}
                                     </span>
                                 </span>

@@ -1,3 +1,5 @@
+import utilities from "../utilities";
+
 describe('Info', () => {
 
     it('It loads the info page', () => {
@@ -11,6 +13,7 @@ describe('Info', () => {
     it('It decode the email', () => {
         cy.visit('/tracker/#/info');
 
+        utilities.scrollTo('600');
         cy.get('#info').within(() => {
             cy.get('.link').contains('send me an e-mail')
                 .then($link => $link.on('click', e => e.preventDefault()))

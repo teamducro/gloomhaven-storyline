@@ -10,6 +10,9 @@ export default {
     isNumeric(number) {
         return !isNaN(parseFloat(number)) && isFinite(number);
     },
+    reverse(obj) {
+        return Object.assign({}, ...Object.entries(obj).map(([a, b]) => ({[b]: a})));
+    },
     nl2br(string) {
         if (typeof string === 'undefined' || string === null) {
             return '';

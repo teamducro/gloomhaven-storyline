@@ -26,6 +26,9 @@ module.exports = {
                 11: '2.75rem',
                 14: '3.5rem',
                 28: '7rem',
+                30: '7.5rem',
+                32: '8rem',
+                36: '9rem',
                 '1/2': '50%',
                 '1/4': '25%',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
@@ -41,7 +44,8 @@ module.exports = {
                 'party': '1041px'
             },
             screens: {
-                xs: '400px',
+                xs: '430px',
+                'sheet-break-lg': '872px',
                 lgh: {'raw': '(min-height: 600px)'}
             },
             zIndex: {
@@ -50,6 +54,9 @@ module.exports = {
             },
             lineHeight: {
                 '12': '3rem',
+            },
+            fontSize: {
+                xxs: ['0.5rem', '0.75rem'],
             },
             colors: {
                 primary: '#3771E0',
@@ -101,6 +108,28 @@ module.exports = {
             rotate: {
                 '270': '270deg',
             }
+        },
+        order: {
+            1: '1',
+            2: '2',
+            3: '3',
+            4: '4',
+            5: '5',
+            6: '6',
+            7: '7',
+            8: '8',
+            9: '9',
+            10: '10',
+            11: '11',
+            12: '12',
+            13: '13',
+            14: '14',
+            15: '15',
+            16: '16',
+            17: '17',
+            18: '18',
+            19: '19',
+            20: '20'
         }
     },
     variants: {
