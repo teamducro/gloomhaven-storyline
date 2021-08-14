@@ -10,6 +10,8 @@ export default {
     "Open source": "Open source",
     "Info": "Info",
     "Settings": "Settings",
+    "Characters": "Characters",
+    "Character sheet": "Character sheet",
     "Party sheet": "Party sheet",
     "Reputation": "Reputation",
     "Shop modifier": "Shop modifier",
@@ -48,6 +50,12 @@ export default {
     "Items": "Items",
     "Add Items": "Add Items",
     "Gold": "Gold",
+    "Level": "Level",
+    "Lvl": "Lvl",
+    "XP": "XP",
+    "Perks": "Perks",
+    "Battle Goals": "Battle Goals",
+    "You may select an additional perk!": "You may select an additional perk!",
     "Number or Name": "Number or Name",
     "No items found": "No items found",
     "Buy me a Beer": "Gib mir ein Bier aus!",
@@ -104,8 +112,21 @@ export default {
     "Blocked": "Gesperrt",
     "Required": "Benötigt",
     "Not unlocked": "Nicht freigeschaltet",
+    "Locked": "Locked",
+    "Retire": "Retire",
+    "Retired": "Retired",
     "Remove": "Löschen",
     "Clear all": "Alles löschen",
+    "Add Character": "Add Character",
+    "character-limit-message": "Dew to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
+    "Please consider purchasing a licence": "Please consider purchasing a licence",
+    "retire-character": {
+        "text": "Are you sure you want to retire this character? It's not removed permanently.",
+        "upgrade": "Are you sure you want to permanently remove this character? Pro users may retire a character without removing it permanently."
+    },
+    "remove-character": {
+        "text": "Are you sure you want to permanently remove this character?"
+    },
     "reset": {
         "text": "Bist du sicher, dass du alle Szenariodaten löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden."
     },
@@ -142,6 +163,7 @@ export default {
     "Spanish": "Spanish",
     "Campaigns": "Campaigns",
     "Buy shared campaign": "Buy shared campaign",
+    "Add shared campaign": "Add shared campaign",
     "donations": {
         "1": "Alle Inhalte im Gloomhaven Storyline Tracker sind gratis!",
         "2": "Die kostenpflichtige Version bietet eine automatische Synchronisierungsfunktion, Fortschritte müssen nicht mehr manuell ausgetauscht werden! Dies deckt die Kosten für die Wartung dieser App für die Community.",
@@ -212,6 +234,8 @@ export default {
     "CURSE": "CURSE",
     "BLESS": "BLESS",
     "REGENERATE": "REGENERATE",
+    "DISARM": "DISARM",
+    "TARGET": "TARGET",
     "Through Jungles": "Through Jungles",
     "Solo Scenarios": "Solo Scenarios",
     "Dagger Forest": "Dagger Forest",

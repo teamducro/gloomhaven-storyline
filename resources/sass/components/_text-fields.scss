@@ -1,0 +1,21 @@
+.mdc-text-field:hover::before {
+    opacity: 0.04;
+}
+
+.mdc-text-field.mdc-ripple-upgraded--background-focused::before,
+.mdc-text-field:not(.mdc-ripple-upgraded):focus::before {
+    opacity: 0.1;
+}
+
+.mdc-text-field.mdc-text-field--textarea,
+.mdc-text-field.mdc-text-field--outlined {
+    @apply bg-dark-background;
+
+    &:hover {
+        background-color: #232323;
+    }
+
+    &.mdc-text-field--focused {
+        background-color: #2F2F2F;
+    }
+}

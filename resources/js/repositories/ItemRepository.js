@@ -11,7 +11,7 @@ export default class ItemRepository {
     }
 
     find(id) {
-        return app.items ? app.items.firstWhere('id', id) : null;
+        return app.items ? app.items.firstWhere('id', parseInt(id)) : null;
     }
 
     findMany(list) {

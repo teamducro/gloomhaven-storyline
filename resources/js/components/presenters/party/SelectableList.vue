@@ -11,44 +11,49 @@
                 :label="label"
                 :id="id || slugify(title)"
                 :list="Object.keys(items)"
+                :width="width"
                 @change="(item) => {toggle(item)}">
                 <template v-for="(checked, item) in items" v-slot:[slugify(item)]>
                     <div class="w-full flex items-center justify-between">
-                        <span>{{ item }}</span>
+                        <slot name="label" :item="item">
+                            <span>{{ item }}</span>
+                        </slot>
                         <span class="material-icons">
-                        {{ checked ? 'check_circle_outline' : 'radio_button_unchecked' }}
-                    </span>
+                            {{ checked ? 'check_circle_outline' : 'radio_button_unchecked' }}
+                        </span>
                     </div>
                 </template>
             </autocomplete>
 
-            <button @click="draw" :disabled="!checkedItems.length"
-                    class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
-                <i class="material-icons mdc-button__icon">launch</i>
-                <span class="mdc-button__label">{{ $t('Draw') }}</span>
-            </button>
+            <slot name="after-field" :checked-items="checkedItems"></slot>
         </div>
 
         <div :key="key" :id="(id || slugify(title)) + '-bedges'">
-            <bedge v-for="item in checkedItems" :key="item"
-                   class="mr-2 mt-2 white cursor-pointer rounded-md"
-                   @click="(e) => {deselect(item)}">
-                {{ item }}
-                <span class="ml-1">×</span>
-            </bedge>
+            <span v-for="item in checkedItems" :key="item">
+                <slot name="item" :item="item">
+                    <bedge class="mr-2 mt-2 white cursor-pointer rounded-md"
+                           @click="(e) => {deselect(item)}">
+                        {{ item }}
+                        <span class="ml-1">×</span>
+                    </bedge>
+                </slot>
+            </span>
         </div>
     </div>
 </template>
 
 <script>
 import Slugify from "../../../services/Slugify";
+import Bedge from "../../elements/Bedge";
 
 export default {
+    components: {Bedge},
     mixins: [Slugify],
     props: {
         id: String,
         title: String,
         label: String,
+        width: String,
         items: Object
     },
     data() {
@@ -76,13 +81,6 @@ export default {
             this.$emit('update:items', items);
             this.$emit('change', items);
             this.rerender();
-        },
-        draw() {
-            let id = [...this.checkedItems].sort((a, b) => 0.5 - Math.random())[0];
-            if (id) {
-                let card = this.id.substr(0, 1) + '-' + id;
-                this.$bus.$emit('open-card', card);
-            }
         },
         select(item, select = true) {
             this.$set(this.items, item, select);

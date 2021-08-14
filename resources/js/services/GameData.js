@@ -25,10 +25,24 @@ export default class GameData {
         return this._scenarioData(game).chapters
     }
 
-    characters(game) {
+    characterOrder(game) {
         switch (game) {
             default:
-                return charactersJson
+                return charactersJson.order
+        }
+    }
+
+    characterNames(game) {
+        switch (game) {
+            default:
+                return charactersJson.names
+        }
+    }
+
+    characterPerks(game) {
+        switch (game) {
+            default:
+                return charactersJson.perks
         }
     }
 

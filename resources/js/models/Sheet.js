@@ -1,18 +1,31 @@
 import Storable from './Storable'
+import Character from "./Character";
+import GameData from "../services/GameData";
+
+const md5 = require('js-md5');
 
 class Sheet {
 
+    static make() {
+        return new Sheet({game: 'gh'});
+    }
+
     constructor(data = {}) {
-        this.reputation = data.reputation;
-        this.donations = data.donations;
-        this.prosperityIndex = data.prosperityIndex;
+        this.reputation = data.reputation || 0;
+        this.donations = data.donations || 0;
+        this.prosperityIndex = data.prosperityIndex || 1;
         this.itemDesigns = {...data.itemDesigns};
         this.city = {...data.city};
         this.road = {...data.road};
-        this.notes = data.notes;
+        this.notes = data.notes || '';
         this.unlocks = {...data.unlocks};
         this.xClues = {...data.xClues};
+        this.characterUnlocks = {...data.characterUnlocks};
         this.characters = {...data.characters};
+        this.archivedCharacters = {...data.archivedCharacters};
+        this.game = data.game;
+        this.gameData = new GameData;
+        this.starterCharacters = ["BR", "CH", "SW", "TI", "SC", "MT"];
 
         this.fieldsToStore = {
             reputation: 'reputation',
@@ -24,7 +37,9 @@ class Sheet {
             notes: 'notes',
             unlocks: {'unlocks': {}},
             xClues: {'xClues': {}},
-            characters: {'characters': {}}
+            characterUnlocks: {'characterUnlocks': {}},
+            characters: {'characters': {}},
+            archivedCharacters: {'archivedCharacters': {}},
         };
 
         this.read();
@@ -35,33 +50,24 @@ class Sheet {
     }
 
     new() {
-        this.reputation = 0;
-        this.donations = 0;
-        this.prosperityIndex = 1;
-        this.itemDesigns = {};
-        this.city = {};
-        this.road = {};
-        this.notes = '';
-        this.unlocks = {};
-        this.xClues = {};
-        this.characters = {
-            0: true,
-            1: true,
-            2: true,
-            3: true,
-            4: true,
-            5: true,
-        };
-        for (let i = 1; i <= 30; i++) {
-            this.city[i] = true;
-            this.road[i] = true;
-        }
-        this.fillBlanks();
+        // Nothing to set up..
     }
 
     fillBlanks() {
         for (let i = 71; i <= 150; i++) {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
+        }
+
+        if (!Object.keys(this.city).length) {
+            for (let i = 1; i <= 30; i++) {
+                this.city[i] = true;
+            }
+        }
+
+        if (!Object.keys(this.road).length) {
+            for (let i = 1; i <= 30; i++) {
+                this.road[i] = true;
+            }
         }
 
         for (let i = 1; i <= 90; i++) {
@@ -84,17 +90,51 @@ class Sheet {
             this.xClues[i] = this.xClues[i] || false;
         }
 
-        for (let i = 0; i < 18; i++) {
-            this.characters[i] = this.characters[i] || false;
+        const characterOrder = this.gameData.characterOrder('gh');
+        for (const i in characterOrder) {
+            const id = characterOrder[i];
+            if (id) {
+                this.characterUnlocks[id] = this.starterCharacters.includes(id)
+                    ? true
+                    : (this.characterUnlocks[id] || this.characterUnlocks[i - 1] || false);
+            }
+
+            // Remove old character unlocks from party sheet, keys are ids now
+            delete this.characterUnlocks[i - 1];
         }
-        if (this.characters[18]) {
-            delete this.characters[18];
+    }
+
+    fillRelations() {
+        for (const uuid in this.characters) {
+            if (!(this.characters[uuid] instanceof Character)) {
+                this.characters[uuid] = Character.make(uuid, this.game);
+            }
         }
+
+        for (const uuid in this.archivedCharacters) {
+            if (!(this.archivedCharacters[uuid] instanceof Character)) {
+                this.archivedCharacters[uuid] = Character.make(uuid, this.game);
+            }
+        }
+    }
+
+    getHash() {
+        return md5(JSON.stringify(this));
     }
 
     read() {
         this.parentRead();
+        this.migrateCharacterUnlocks();
         this.fillBlanks();
+        this.fillRelations();
+    }
+
+    // characterUnlocks used to be stored in key characters, migrate them to be backwards compatible.
+    migrateCharacterUnlocks() {
+        if (0 in this.characters && this.characters[0] === true) {
+            this.characterUnlocks = JSON.parse(JSON.stringify(this.characters));
+            this.characters = {};
+        }
     }
 
     valuesToStore() {
@@ -103,7 +143,9 @@ class Sheet {
         values.city = collect({...this.city}).filter(v => v).all();
         values.road = collect({...this.road}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();
-        values.characters = collect({...this.characters}).filter(v => v).all();
+        values.characterUnlocks = collect({...this.characterUnlocks}).filter(v => v).all();
+        values.characters = collect({...this.characters}).mapWithKeys(character => [character.uuid, character.id]).all();
+        values.archivedCharacters = collect({...this.archivedCharacters}).mapWithKeys(character => [character.uuid, character.id]).all();
         return values;
     }
 
