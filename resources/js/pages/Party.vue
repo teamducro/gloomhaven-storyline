@@ -115,7 +115,9 @@
 
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
-                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')" @change="store"></notes>
+                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
+                       @change="store" :is-local-campaign="isLocalCampaign"
+                ></notes>
             </div>
 
             <div class="w-full mt-8">
@@ -259,6 +261,7 @@ export default {
             characterOrder: {},
             campaignName: null,
             loading: true,
+            isLocalCampaign: true,
             renderX: 0,
             gameData: new GameData,
             storySyncer: new StorySyncer,
@@ -290,6 +293,8 @@ export default {
             this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
             this.characterOrder = Helpers.reverse(this.gameData.characterOrder(app.game));
+
+            this.isLocalCampaign = app.campaignId === 'local';
 
             await this.$nextTick();
 

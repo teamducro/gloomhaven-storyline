@@ -102,6 +102,13 @@
                         </div>
                     </div>
 
+                    <div class="w-full">
+                        <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
+                        <notes :value.sync="character.notes" id="notes" :label="$t('Notes')"
+                               @change="store" :is-local-campaign="isLocalCampaign"
+                        ></notes>
+                    </div>
+
                     <div class="my-8">
                         <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
                                 class="mr-4 mdc-button mdc-button--raised">
@@ -224,7 +231,7 @@ export default {
             this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
 
-            // Unregistered users can't archive characters nor use character notes
+            // Unregistered users can't archive characters
             // This may result in unstable storyline links
             this.isLocalCampaign = app.campaignId === 'local';
 
