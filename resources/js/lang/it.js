@@ -118,6 +118,7 @@ export default {
     "Remove": "Rimuovi",
     "Clear all": "Rimuovi tutto",
     "Add Character": "Add Character",
+    "character-limit-message": "Dew to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
     "Please consider purchasing a licence": "Please consider purchasing a licence",
     "retire-character": {
         "text": "Are you sure you want to retire this character? It's not removed permanently.",
