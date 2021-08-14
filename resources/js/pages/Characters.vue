@@ -42,7 +42,7 @@
                                 <div class="mb-4 mr-4">
                                     <div class="mb-2 flex items-center">
                                         <h2>{{ $t('Level') }}</h2>
-                                        <rollback v-show="!loading" ref="reputation-rollback"
+                                        <rollback v-show="!loading" ref="level-rollback"
                                                   :value.sync="character.level"></rollback>
                                     </div>
                                     <number-field class="w-14" :value.sync="character.level" :min="1" :max="9"
@@ -52,7 +52,7 @@
                                 <div class="mb-4 mr-4">
                                     <div class="mb-2 flex items-center">
                                         <h2>{{ $t('XP') }}</h2>
-                                        <rollback v-show="!loading" ref="reputation-rollback"
+                                        <rollback v-show="!loading" ref="xp-rollback"
                                                   :value.sync="character.xp"></rollback>
                                     </div>
                                     <number-field :value.sync="character.xp" :min="0" :max="9999" id="xp"
@@ -61,7 +61,7 @@
                                 <div class="mb-4">
                                     <div class="mb-2 flex items-center">
                                         <h2>{{ $t('Gold') }}</h2>
-                                        <rollback v-show="!loading" ref="reputation-rollback"
+                                        <rollback v-show="!loading" ref="gold-rollback"
                                                   :value.sync="character.gold"></rollback>
                                     </div>
                                     <number-field :value.sync="character.gold" :min="0" :max="9999" id="gold"
@@ -260,6 +260,11 @@ export default {
                 });
             }
         },
+        resetRollback() {
+            this.$refs['level-rollback'].reset();
+            this.$refs['xp-rollback'].reset();
+            this.$refs['gold-rollback'].reset();
+        },
         selectDefault() {
             const storedUuid = this.readSelected();
             if (storedUuid && (this.sheet.characters[storedUuid] || this.sheet.archivedCharacters[storedUuid])) {
@@ -284,6 +289,9 @@ export default {
                 this.refreshItems();
                 this.rerender();
                 this.storeSelected();
+                this.$nextTick(() => {
+                    this.resetRollback();
+                });
             }
         },
         selectDemo() {
