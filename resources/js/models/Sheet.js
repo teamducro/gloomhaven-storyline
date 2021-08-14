@@ -50,16 +50,24 @@ class Sheet {
     }
 
     new() {
-        for (let i = 1; i <= 30; i++) {
-            this.city[i] = true;
-            this.road[i] = true;
-        }
-        this.fillBlanks();
+        // Nothing to set up..
     }
 
     fillBlanks() {
         for (let i = 71; i <= 150; i++) {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
+        }
+
+        if (!Object.keys(this.city).length) {
+            for (let i = 1; i <= 30; i++) {
+                this.city[i] = true;
+            }
+        }
+
+        if (!Object.keys(this.road).length) {
+            for (let i = 1; i <= 30; i++) {
+                this.road[i] = true;
+            }
         }
 
         for (let i = 1; i <= 90; i++) {
