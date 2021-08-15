@@ -74,9 +74,18 @@ export default class StoryRepository extends ApiRepository {
         await Promise.all(promises);
     }
 
-    async find(story) {
+    async find(story, updateStoryIfNeeded = true) {
         const response = await this.api.withToken(story.token).get('stories/' + story.id);
-        return await this.updateStoryIfNeeded(response.data, story.token);
+
+        if (updateStoryIfNeeded) {
+            return await this.updateStoryIfNeeded(response.data, story.token);
+        }
+
+        return new Story(response.data);
+    }
+
+    async findWithoutUpdates(story) {
+        return this.find(story, false);
     }
 
     // If local campaign is newer then remote campaign, update it
