@@ -1,5 +1,6 @@
 import AuthRepository from "../../apiRepositories/AuthRepository";
 import Echo from "laravel-echo";
+import StoryRepository from "../../apiRepositories/StoryRepository";
 
 export default class EchoService {
 
@@ -42,11 +43,19 @@ export default class EchoService {
 
         if (!this.listens.includes(story.id)) {
             window.Echo.private(`story.${story.id}`)
-                .listen('StoryUpdated', event => {
-                    callback(event.story);
+                .listen('StoryUpdated', async (event) => {
+                    if (event.story) {
+                        callback(event.story);
+                    } else {
+                        callback(await this.storyRepository.findWithoutUpdates(story));
+                    }
                 });
 
             this.listens.push(story.id);
         }
+    }
+
+    get storyRepository() {
+        return this._storyRepository || (this._storyRepository = new StoryRepository());
     }
 }
