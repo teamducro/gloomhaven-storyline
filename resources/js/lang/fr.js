@@ -38,7 +38,7 @@ export default {
     "Have a party reputation of -10 or lower": "Have a party reputation of -10 or lower",
     "Have a party reputation of -20": "Have a party reputation of -20",
     "Add City Event 77 & Road Event 68": "Add City Event 77 & Road Event 68",
-    "Retire a character": "Retire a character",
+    "Retire a character": "Avoir fait la Retraite d'un personnage.",
     "Open the Town Records Book": "Open the Town Records Book",
     "Envelope": "Envelope",
     "opened": "opened",
