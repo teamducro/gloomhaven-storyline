@@ -97,7 +97,9 @@ export default {
         }
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
-        this.mapTouch.destroy();
+        if (this.mapTouch) {
+            this.mapTouch.destroy();
+        }
     },
     methods: {
         setScenarios() {
