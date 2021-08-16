@@ -32,7 +32,7 @@ export default {
     'No treasures available': 'Keine Schätze verfügbar',
     'Treasures': 'Schätze',
     'Global': 'Global',
-    'Party': 'Gruppe',
+    'Party': 'Gruppen',
     'Lost': 'Verloren',
     'Achievement': 'Erfolg',
     'Achievements': 'Erfolge',
@@ -380,11 +380,11 @@ export default {
             },
         },
         12: {
-            "name": "Der Wunsch des Herzens",
+            "name": "Der Herzenswunsch",
             "sections": {
                 1: "Einige eurer Kontakte im Heiligtum der Großen Eiche wissen von einem Tempel, der einer unsichtbaren Kraft gewidmet ist, die jede Frage beantworten wird, die man ihr stellt. Das ist die Gelegenheit für euch, euch euren Herzenswunsch zu erfüllen.",
-                2: "Als ihr schließlich den Tempel erreicht hattet, vernahmt ihr eine Stimme:\"Ich kann um diese Zeit keine Besucher empfangen.\" Bevor ihr etwas erwidern konntet, materialisierte sich eine Gruppe von Steinkonstrukten vor euch. Aber ihr wolltet auf keinen Fall mit leeren Händen den Rückweg antreten. Nachdem ihr mit den Monstern fertig wart, bot euch die Stimme entweder große Macht, großen Reichtum oder aber Aufschlüsse über den Aufenthaltsort der Nekormantin an.",
-                3: "Eure offensichtliche Wahl war große Macht. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein im Kupferhalsgebirge, der eine Quelle großer Macht enthält.",
+                2: "Als ihr schließlich den Tempel erreicht hattet, vernahmt ihr eine Stimme:\"Ich kann um diese Zeit keine Besucher empfangen.\" Bevor ihr etwas erwidern konntet, materialisierte sich eine Gruppe von Steinkonstrukten vor euch. Aber ihr wolltet auf keinen Fall mit leeren Händen den Rückweg antreten. Nachdem ihr mit den Monstern fertig wart, bot euch die Stimme entweder große Macht, großen Reichtum oder aber einen Hinweis über den Aufenthaltsort der Nekormantin an.",
+                3: "Große Macht war eure offensichtliche Wahl. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein im Kupferhalsgebirge, der eine Quelle großer Macht enthält.",
                 4: "Was für eine Art von Söldnern wärt ihr, wenn ihr nicht nach Reichtum und Bezahlung trachten würdet? Großer Reichtum war daher eure offensichtliche Wahl. Die Stimme erzählte euch von einer verlorenen Insel im Nebelmeer, die längst vergessene Schätze enthält.",
                 5: "Macht und Reichtum bedeuten euch nichts, solange Jekserah noch am Leben ist. Ihr besteht darauf, dass die Stimme euch den Aufenthaltsort der ruchlosen Valrath verrät. Sie erzählte euch von einem Heiligtum, das in den Tiefen des Leichenwaldes versteckt ist."
             },
