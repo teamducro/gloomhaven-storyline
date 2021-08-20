@@ -123,16 +123,16 @@
                     <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2" aria-hidden="true">assignment</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                            Party Sheet
+                            Party and Character sheets
                         </h3>
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-600 mb-2">
-                            Gloomhaven storyline tracker features a Party Sheet!
+                            Gloomhaven storyline tracker features Party and Character sheets!
                         </p>
                         <p class="text-gray-600 mb-4">
-                            With it, you can track party-related info like reputation, donations, prosperity and
-                            more, all in one place!
+                            With it, you can track all party-related info like reputation, prosperity, and donations.
+                            Even levels, gold, XP and perks are trackable in the character sheet!
                         </p>
                         <p class="text-gray-600 mb-4">
                             You may even track your City and Road Event Decks, this is especially useful for remote
@@ -146,7 +146,8 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <webp src="/img/gloomhaven-party-sheet.jpg" class="w-full mx-auto rounded-md shadow-md"
+                        <webp src="/img/gloomhaven-party-character-sheets.jpg"
+                              class="w-full mx-auto rounded-md shadow-md"
                               alt="Gloomhaven Party Sheet"/>
                     </template>
                 </two-column-content>
