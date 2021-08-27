@@ -350,7 +350,7 @@ export default {
         "Shrouded Crypt": "Shrouded Crypt",
         "Bazaar of Knowledge": "Bazaar of Knowledge",
         "Where It Is Needed": "Where It Is Needed",
-        "A Gaping Would": "A Gaping Would",
+        "A Gaping Wound": "A Gaping Wound",
         "Monstrosities of a Cult": "Monstrosities of a Cult",
         "Intricate Work": "Intricate Work",
         "Mechanical Genius": "Mechanical Genius",
