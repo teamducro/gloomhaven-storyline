@@ -49,6 +49,7 @@ export default {
     "Additional notes": "Notas",
     "Items": "Objetos",
     "Add Items": "Añade Objetos",
+    "Search name or nr": "Search name or nr",
     "Gold": "Oro",
     "Level": "Level",
     "Lvl": "Lvl",

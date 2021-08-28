@@ -53,7 +53,7 @@
                         <input class="mdc-text-field__input" aria-labelledby="item-search"
                                type="text" name="item-search"
                                v-model="query" @keyup="applySearch">
-                        <span class="mdc-floating-label" id="item-search">{{ $t('Number or Name') }}</span>
+                        <span class="mdc-floating-label" id="item-search">{{ $t('Search name or nr') }}</span>
                         <span class="mdc-line-ripple"></span>
                     </label>
                 </div>

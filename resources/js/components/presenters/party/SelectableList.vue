@@ -11,6 +11,7 @@
                 :label="label"
                 :id="id || slugify(title)"
                 :list="Object.keys(items)"
+                :filter-closure="filterClosure"
                 :width="width"
                 @change="(item) => {toggle(item)}">
                 <template v-for="(checked, item) in items" v-slot:[slugify(item)]>
@@ -54,7 +55,8 @@ export default {
         title: String,
         label: String,
         width: String,
-        items: Object
+        items: Object,
+        filterClosure: Function
     },
     data() {
         return {

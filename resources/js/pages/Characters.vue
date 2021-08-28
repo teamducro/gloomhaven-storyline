@@ -74,17 +74,18 @@
                             <selectable-list
                                 id="items"
                                 :title="$t('Items')"
-                                :label="$t('Add items')"
+                                :label="$t('Search name or nr')"
                                 :items.sync="sheetItems"
+                                :filter-closure="itemFilterClosure"
                                 width="w-auto"
                                 class="mb-8"
                                 @change="storeItems"
                                 ref="items"
                             >
-                            <span class="flex items-center mr-6" slot="label" slot-scope="{item}">
-                                <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                <span>{{ items[item].number }} {{ items[item].name }}</span>
-                            </span>
+                                <span class="flex items-center mr-6" slot="label" slot-scope="{item}">
+                                    <webp :src="items[item].slot" width="20" class="mr-2"/>
+                                    <span>{{ items[item].number }} {{ items[item].name }}</span>
+                                </span>
                                 <div slot="item" slot-scope="{item}"
                                      class="cursor-pointer flex items-center border-b border-white2-50 py-1"
                                      @click="openItemModel(item)">
@@ -350,6 +351,13 @@ export default {
         },
         readSelected() {
             return store.get('selectedCharacter');
+        },
+        itemFilterClosure(query) {
+            // This allows to find items based on id and it's name.
+            return (id) => {
+                return id.toLowerCase().startsWith(query)
+                    || this.items[id].name.toLowerCase().replace('-', ' ').startsWith(query);
+            }
         },
         renderHtml(html) {
             return {
