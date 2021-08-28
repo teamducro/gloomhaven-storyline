@@ -214,9 +214,11 @@ export default {
         this.render();
 
         this.$bus.$on('campaigns-changed', this.render);
+        this.$bus.$on('select-character', this.select);
     },
     destroyed() {
         this.$bus.$off('campaigns-changed', this.render);
+        this.$bus.$off('select-character', this.select);
     },
     computed: {
         isArchived() {
