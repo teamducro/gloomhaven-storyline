@@ -28,7 +28,7 @@
                 <ul v-if="hasLocked" class="flex flex-wrap mx-1 py-2">
                     <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" v-if="!unlocked" class="flow-root"
                         :class="['order-'+characterOrder[id]]">
-                        <a @click.stop.prevent="$emit('create', id)" href="#" class="block m-1">
+                        <a @click.stop.prevent="$emit('create', id)" href="#" class="block w-5 m-1">
                             <character-icon class="flex-shrink-0 w-5" :character="id"/>
                         </a>
                     </li>

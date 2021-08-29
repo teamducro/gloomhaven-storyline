@@ -20,7 +20,10 @@
                         </span>
                         {{ item.faq }}
                     </p>
-                    <character-icon v-for="(character, uuid) in characters" :key="uuid"
+                    <p class="pt-4">
+                        Availability: {{ item.count - characters.count() }} / {{ item.count }}
+                    </p>
+                    <character-icon v-for="(character, uuid) in characters.items" :key="uuid"
                                     :player="uuid" :character="character.id" class="w-6 mr-2 inline-block"
                                     @click="close"/>
                 </div>
@@ -65,7 +68,7 @@ export default {
             this.characters = collect(sheet.characters)
                 .filter((character) => {
                     return character.items[item.id] === true;
-                }).items;
+                });
 
             this.$refs['modal'].open();
         },
