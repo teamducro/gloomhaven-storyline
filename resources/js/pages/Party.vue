@@ -270,7 +270,7 @@ export default {
     },
     watch: {
         'sheet.reputation': function () {
-            this.shop = this.calculateShop(this.sheet.reputation);
+            this.shop = this.calculateCostModifier(this.sheet.reputation);
         },
         'sheet.donations': function () {
             this.donationProsperity = this.calculateDonationProsperity(this.sheet.donations);

@@ -49,6 +49,7 @@ export default {
     "Additional notes": "Additional notes",
     "Items": "Items",
     "Add Items": "Add Items",
+    "Search name or nr": "Search name or nr",
     "Gold": "Gold",
     "Level": "Level",
     "Lvl": "Lvl",

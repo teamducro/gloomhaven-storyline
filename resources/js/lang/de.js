@@ -3,7 +3,7 @@ export default {
     "Map": "Karte",
     "Scenario list": "Liste der Szenarien",
     "Share": "Teilen",
-    "Reset": "Reset",
+    "Reset": "Zurücksetzen",
     "Our party": "Unsere Gruppe",
     "Credits": "Credits",
     "Source": "Quelle",
@@ -49,6 +49,7 @@ export default {
     "Additional notes": "Additional notes",
     "Items": "Items",
     "Add Items": "Add Items",
+    "Search name or nr": "Search name or nr",
     "Gold": "Gold",
     "Level": "Level",
     "Lvl": "Lvl",
@@ -70,7 +71,7 @@ export default {
     "Atop Mountains": "Auf den Bergen",
     "Dragons": "Drachen",
     "Voice": "Die Stimme",
-    "Personal Quests": "Persönliche Quests",
+    "Personal Quests": "Persönliche Ziele",
     "Random Scenarios": "Zufällige Szenarien",
     "Sealed": "Versiegelt",
     "Road Events": "Weg-Ereignisse",
@@ -82,27 +83,27 @@ export default {
     "Tainted crypt": "Tainted crypt",
     "Corruption": "Corruption",
     "Requirements": "Voraussetzungen",
-    "Show treasures": "Zeige Schätze",
-    "Treasure": "Schätze | Schätze",
+    "Show treasures": "Schätze anzeigen",
+    "Treasure": "Schatz",
     "No treasures available": "Keine Schätze verfügbar",
     "Treasures": "Schätze",
     "Global": "Global",
-    "Party": "Gruppe",
+    "Party": "Gruppen",
     "Lost": "Verloren",
-    "Achievement": "Erfolg | Erfolge",
+    "Achievement": "Erfolg",
     "Achievements": "Erfolge",
     "Summary": "Zusammenfassung",
     "Preceding events": "Vorgeschichte",
     "Notes": "Notizen",
     "Unlocks": "Unlocks",
-    "Page": "Seite | Seiten",
+    "Page": "Seite",
     "Pages": "Seiten",
     "Virtual Board": "Virtual Board",
     "Choose a scenario to unlock": "Wähle ein Szenario zum Freischalten",
     "Cancel": "Abbrechen",
     "Choose": "Wählen",
-    "Reward": "Belohnung | Belohnungen",
-    "Rewards": "Belohnung",
+    "Reward": "Belohnung",
+    "Rewards": "Belohnungen",
     "Conclusion": "Epilog",
     "Gained from": "Erhalten von",
     "Required by": "Benötigt für",
@@ -140,7 +141,7 @@ export default {
         "local desc": "The local campaign is your free campaign, it is stored on your device and cannot be synchronized automatically between members."
     },
     "credits": {
-        "thanks": "Vielen Dank an diese Entwickler für ihre Beträge.",
+        "thanks": "Vielen Dank an die Entwickler für ihre Beträge.",
         "license": "Alle Inhalte bleiben unter Creative-Commons-Lizenz."
     },
     "Gloomhaven assets by": "Gloomhaven Ressourcen von",
@@ -151,7 +152,7 @@ export default {
     "Gloomhaven Item DB": "Gloomhaven Item DB",
     "about us": {
         "title": "Verfolge deinen Handlungsstrang in Gloomhaven",
-        "text": "Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Wir drücken die Pausetaste in unserem Alltag. Jeder von uns hat etwas beigetragen, das unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Fortschritte im Spiel zu verfolgen und die Auswahl eines neuen Szenarios zu erleichtern. Mit einigen Getränken und Snacks sind wir bereit anzufangen."
+        "text": "Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Dann drücken wir die Pausetaste vonn unserem Alltag. Jeder von uns hat etwas beigetragen, das unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Fortschritte im Spiel zu verfolgen und die Auswahl eines neuen Szenarios zu erleichtern. Mit einigen Getränken und Snacks sind wir bereit zu starten."
     },
     "Welcome": "Willkommen",
     "Language": "Sprache",
@@ -167,13 +168,13 @@ export default {
     "donations": {
         "1": "Alle Inhalte im Gloomhaven Storyline Tracker sind gratis!",
         "2": "Die kostenpflichtige Version bietet eine automatische Synchronisierungsfunktion, Fortschritte müssen nicht mehr manuell ausgetauscht werden! Dies deckt die Kosten für die Wartung dieser App für die Community.",
-        "3": "Bitte ziehe eine Lizenz in Betracht, das wäre sehr hilfreich.",
+        "3": "Bitte ziehe den Kauf einer Lizenz in Betracht, das wäre sehr hilfreich.",
         "title": "Fortschritt automatisch synchronisieren!",
         "close": "Verwende den Storyline Tracker weiterhin."
     },
     "Support": "Support",
     "Donate": "Donate",
-    "local": "Local Campaign",
+    "local": "Lokale Kampagne",
     "Transfer": "Transfer",
     "Transfer to": "Transfer to",
     "Copied": "Copied",
@@ -296,7 +297,7 @@ export default {
         "Tribal Assault": "Stammesangriff",
         "Rebel Swamp": "Rebellensumpf",
         "Nightmare Peak": "Alptraumspitze",
-        "Lair of the Unseeing Eye": "Hort des Blicklosten",
+        "Lair of the Unseeing Eye": "Hort des Blicklosen",
         "Shadow Weald": "Schattenwald",
         "Rebel's Stand": "Letzter Widerstand",
         "Ghost Forrest": "Geisterfestung",
@@ -353,7 +354,7 @@ export default {
         "Shrouded Crypt": "Shrouded Crypt",
         "Bazaar of Knowledge": "Bazaar of Knowledge",
         "Where It Is Needed": "Where It Is Needed",
-        "A Gaping Would": "A Gaping Would",
+        "A Gaping Wound": "A Gaping Wound",
         "Monstrosities of a Cult": "Monstrosities of a Cult",
         "Intricate Work": "Intricate Work",
         "Mechanical Genius": "Mechanical Genius",
@@ -393,7 +394,7 @@ export default {
         "The Drakes Command": "Befehl des Draken",
         "Following Clues": "Hinweisen folgen",
         "An Invitation": "Eine Einladung",
-        "The Edge of Darkness": "Am Rand der Finsternis",
+        "The Edge of Darkness": "Der Rand der Finsternis",
         "The Scepter and the Voice": "Zepter und Stimme",
         "Artifact: Cleansed": "Artefakt: geläutert",
         "The Voices Treasure": "Schatz des Stimme",
@@ -401,7 +402,7 @@ export default {
         "The Drake Slain": "Erlegter Draken",
         "The Drake Aided": "Hilfe für den Draken",
         "City Rule: Demonic": "Stadtherrschaft: dämonisch",
-        "Through the Trench": "Durch den Graben",
+        "Trough the Trench": "Durch den Graben",
         "Redthorns Aid": "Rotdorns Hilfe",
         "Across the Divide": "Jenseits der Kluft",
         "The Voice Freed": "Befreite Stimme",
@@ -410,7 +411,7 @@ export default {
         "End of Corruption": "Ende der Verderbtheit",
         "End of Corruption x2": "Ende der Verderbtheit x2",
         "End of Corruption x3": "Ende der Verderbtheit x3",
-        "Annihilation of Order": "Auslöschung jeglicher Ordnung",
+        "Annihilation of Order": "Auslöschung der Ordnung",
         "End of Gloom": "Ende des Grauens",
         "The Poisons Source": "Quelle des Gifts",
         "Through the Nest": "Durch den Bau",
@@ -618,9 +619,9 @@ export default {
         "1": {
             "name": "Der Auftrag der Händlerin",
             "sections": {
-                "1": "Die Valrath-Händlerin Jekserah hat euch angeboten, zehn Goldmünzen zu zahlen, um einige gestohlene Waren zurückzuholen. Durch das Aufmischen von ein paar einheimischen Schlägern habt ihr entdeckt, dass das Versteck der Diebe das Schwarzgrab im Totenhain ist.",
+                "1": "Die Valrath-Händlerin Jekserah hat euch angeboten, zehn Goldmünzen zu zahlen, wenn ihr für sie einige gestohlene Waren zurückholt. Durch das Aufmischen von ein paar einheimischen Schlägern habt ihr erfahren, dass das Versteck der Diebe das Schwarzgrab im Totenhain ist.",
                 "2": "Ihr habt eure Zielperson im Schwarzgrab gefunden, aber sie ist entkommen. Während der Verfolgung seid ihr auf den Grund gestoßen, warum die Banditen diesen speziellen Grabhügel ausgewählt haben: wiederbelebte Skelette. Die Banditen scheinen über gewisse nekromantische Kräfte zu verfügen. Trotzdem habt ihr sie und ihre unheiligen Verbündeten getötet. Euer Ziel befand sich nicht unter den Toten, aber ein Gang, der tiefer in die Katakomben führt, wartet auf euch.",
-                "3": "Ihr habt den Banditen-Kommandanten besiegt. Etwas an ihm schien unnatürlich und er erwähnte das \"Grauen\" während der Schlacht. Ihr habt die gestohlenen Schriftrollen ein einem Versteck in der Kammer des Kommandanten gefunden und habt sie Jekserah für die vereinbarte Belohnung zurückgegeben."
+                "3": "Ihr habt den Banditen-Kommandanten besiegt. Etwas an ihm schien unnatürlich und während der Schlacht sprach er von einem \"Grauen\". Ihr habt die gestohlenen Schriftrollen in einem Versteck in der Kammer des Kommandanten gefunden und habt sie Jekserah für die vereinbarte Belohnung zurückgegeben."
             },
             "stages": {
                 "0": "{1}",
@@ -632,8 +633,8 @@ export default {
             "name": "Der Zorn der Händlerin",
             "sections": {
                 "1": "Jekserah bietet euch nach eurem ersten Auftrag einen weiteren an. Ein Inox-Stamm im Dolchwald hat ein paar ihrer Karawanen in Richtung Hauptstadt geplündert. Sie will an ihnen ein Exempel statuieren.",
-                "2": "Der Inox-Stamm ist tot. Ihr habt ein brutales Exempel an ihnen statuiert, und in der nächsten Zeit wird niemand Jekserahs Karawanen bedrohen. Ihr fühlt euch nicht gerade wohl dabei, Eltern vor den Augen ihrer Kinder abzuschlachten, aber Jekserah hat euch trotzdem bezahlt.",
-                "3": "Jekserah ist aus Gloomhaven geflohen und hat geschworen, sich an euch zu rächen, weil ihr gegen sie vorgegangen seid. Sie wird nicht mehr darauf erpicht sein, euch für eure Dienste zu bezahlen."
+                "2": "Der Inox-Stamm ist tot. Ihr habt ein brutales Exempel an ihnen statuiert, und in der nächsten Zeit wird niemand Jekserahs Karawanen bedrohen. Eltern vor den Augen ihrer Kinder abzuschlachten war nicht gerade eine ruhmreiche Tat, aber Jekserah hatte euch nunmal dafür bezahlt.",
+                "3": "Jekserah ist aus Gloomhaven geflohen und hat geschworen, sich an euch zu rächen, weil ihr gegen sie vorgegangen seid. Eure Bezahlung könnt ihr somit auch vergessen."
             },
             "stages": {
                 "0": "{1}",
@@ -644,14 +645,14 @@ export default {
         "3": {
             "name": "Die Suche nach dem Grauen",
             "sections": {
-                "1": "Die Ankündigungen des Banditenkommandants über ein \"Grauen\" während der Schlacht beunruhigt euch. Beim Durchsuchen der niedergemetzelten Körper, die die Schlacht hinterlassen hat, stoßt ihr auf einen Behälter, der mehrere Schriftrollen enthält. Die Schrift war in einer archaischen euch unbekannten Sprache verfasst. Unter den Schriftrollen befand sich auch eine Karte der nördlichen Landschaft, auf der eine Biegung des Stillen Flusses deutlich markiert war. Ihr überlegt, ob ihr mehr über dieses sogenannte \"Grauen\" herausfinden wollt, oder ob der markierte Punkt auf der Karte auch von Interesse für euch sein könnte.",
-                "2": "Die Karte führte euch zu einer Krypta voller Dämonen und Kultisten. Offensichtlich sind die Banditen mit einer Art Kult verbunden und eure Ankunft hat sie bei der Durchführung eines Rituals gestört. Unter den Schriften, die ihr in der Ritualkammer gefunden habt, befinden sich Notizen über ein paar andere Orte der Macht in der Gegend. Einer davon ist \"als von bösartigen Untoten überrannt\" markiert. Es scheint als hättet ihr die Chance, sich die Gunst des Kults zu verdienen, indem ihr die Bedrohung beseitigt. Das könnte eine Möglichkeit sein, mehr über das \"Grauen\" zu erfahren.",
+                "1": "Die Erwähnung des Banditenkommandants eines \"Grauens\" während der Schlacht beunruhigt euch. Beim Durchsuchen der niedergemetzelten Körper, die die Schlacht hinterlassen hat, stoßt ihr auf einen Behälter, der mehrere Schriftrollen enthält. Die Schrift ist in einer archaischen euch unbekannten Sprache verfasst. Unter den Schriftrollen befand sich auch eine Karte der nördlichen Landschaft, auf der eine Biegung des Stillen Flusses deutlich markiert ist. Ihr überlegt, ob ihr mehr über dieses sogenannte \"Grauen\" herausfinden wollt, oder ob der markierte Punkt auf der Karte auch von Interesse für euch sein könnte.",
+                "2": "Die Karte führte euch zu einer Krypta voller Dämonen und Kultisten. Offensichtlich sind die Banditen mit einer Art Kult verbunden und eure Ankunft hat sie bei der Durchführung eines Rituals gestört. Unter den Schriften, die ihr in der Ritualkammer gefunden habt, befinden sich Notizen über verschiedene Orte der Macht in der Gegend. Einer davon ist \"als von bösartigen Untoten überrannt\" markiert. Es scheint als hättet ihr die Chance, sich die Gunst des Kults zu verdienen, indem ihr die Bedrohung beseitigt. Das könnte eine Möglichkeit sein, mehr über das \"Grauen\" zu erfahren.",
                 "3": "Nachdem das schreckliche Kreischen und Stöhnen der Untoten verstummt war, erschien eine grinsende Kapuzengestalt vor euch. Ihr Auftreten war zutiefst beunruhigend. Im Austausch zur Vergebung der Morde an ihren Brüdern bat sie euch um einen weiteren Gefallen. Die Kultisten wollen die Nekromantin Jekserah tot sehen. Wenn ihr ihren Kopf in das Hauptquartier der Kultisten bringt, werdet ihr vielleicht mehr über das \"Grauen\" erfahren. Die Gestalt hat euch Aufschluss darüber gegeben, wo ihr Beweise für Jeksehras Pläne finden könnt.",
                 "4": "Ihr habt Jekserah erschlagen. Als sie zusammenbrach und das Leben aus ihren Augen wich, flüsterte sie euch zu \"Ihr habt keine Ahnung was euch erwartet...\". Vielleicht erweist sich der Kopf eurer alten Chefin für die zukünftigen Verhandlungen mit den Banditen als nützlich.",
                 "5": "Ihr habt Jekserah erschlagen. Es ist an der Zeit den Kopf eurer alten Chefin zum Hauptquartier der Kultisten zu bringen.",
                 "6": "Zum Leidwesen der Kultisten habt ihr euch auf die Seite von Jekserah geschlagen und die Stadt übernommen. Euer mysteriöser Kontakt wir sich nun sicher nicht mehr mit euch treffen wollen.",
                 "7": "Ihr habt die Kapuzengestalt im Hauptquartier des Kults getroffen, wo sie euch freundlich für eure Hilfe bei der Beseitigung der Nekromantin gedankt hat. Dann stellte sie euch einen schwarzen, flammenden Spalt im Raum vor, den sie ihren Meister, das \"Grauen\", nannte. Die Gestalt hat euch prompt verraten, indem sie eine Horde unnatürlicher Kreaturen beschwor, um euch zu töten. Scheinbar ist es nicht so einfach wieder in die Gunst des Kultes zu gelangen, nachdem man seine Anhänger ermordet und seine Pläne sabotiert hat. Nach einem anstrengenden Kampf sprach das \"Grauen\" mit kalter und tiefer Stimme zu euch. \"Das habt ihr gut gemacht. Meine Anhänger können euch vielleicht nicht verzeihen, aber ich kann es. Kommt zu mir, tretet ein in mein Reich. Nehmt das Unvermeidliche an.\" Der Spalt ist direkt vor euch, wagt ihr es einzutreten?",
-                "8": "Ihr seid in den schwarzen Spalt eingetreten. Die tiefe Stimme ertönt noch einmal: \"Wieder ausgetrickst. Wirklich erstaunlich, dass Kreaturen, die so dumm sind wie ihr, mir so viel Ärger bereiten. Aber das ist nun auch egal, denn ihr werdet hier verroten, vollkommen abgeschitten von eurer Heimat. Ihr werdet ohne Tapferkeit an einem fremden Ort sterben und es gibt keinen Ausweg. Ich verlasse euch nun für immer. Auf Wiedersehen.\" Der darauf folgende Kampf schien endlos zu sein. Nachdem ihr alle Gegner getötet habt, schlugt ihr verzweifelt auf die Wände ein in der Hoffnung einen Ausweg zu finden bis ihr undendlich müde wurdet und eure Sinne schwanden. Mit eurem nächsten Atemzug fandet ihr euch im Gras vor dem Versteck der Sekte liegend wieder. \"Wisst, dass ich euch verschont habe.\" Die tiefe Stimme kehrt in eure Köpfe zurück. \"Eure Hartnäckigkeit fasziniert mich. Seid eingeladen euch an mir zu zerbrechen. Es wird unterhaltsamer sein als das letzte Mal, als ich das Grauen in diese Welt brachte\". Ihr richtet euch auf und eilt zurück in die Krypta, wo die toten Körper der Kultisten den Boden übersäen. \"Ich bin nicht mehr hier. Diese Hüllen haben ihren Zweck erfüllt. Meine Wurzeln sind nun tief verankert und ihr werdet bald wieder auf meine unendliche Macht treffen. Ich freue mich auf diesen Tag.\""
+                "8": "Ihr seid in den schwarzen Spalt eingetreten. Die tiefe Stimme ertönt noch einmal: \"Wieder ausgetrickst. Wirklich erstaunlich, dass Kreaturen, die so dumm sind wie ihr, mir so viel Ärger bereiten. Aber das ist nun auch egal, denn ihr werdet hier verroten, vollkommen abgeschnitten von eurer Heimat. Ihr werdet ohne Tapferkeit an einem fremden Ort sterben und es gibt keinen Ausweg. Ich verlasse euch nun für immer. Auf Wiedersehen.\" Der darauf folgende Kampf schien endlos zu sein. Nachdem ihr alle Gegner getötet habt, schlugt ihr verzweifelt auf die Wände ein in der Hoffnung einen Ausweg zu finden bis ihr vollkommen erschöpft wart und eure Sinne schwanden. Mit eurem nächsten Atemzug fandet ihr euch im Gras vor dem Versteck der Sekte liegend wieder. \"Wisst, dass ich euch verschont habe.\" Die tiefe Stimme kehrt in eure Köpfe zurück. \"Eure Hartnäckigkeit fasziniert mich. Seid eingeladen an mir zu Grunde zu gehen. Es wird unterhaltsamer sein als das letzte Mal, als ich das Grauen in diese Welt brachte\". Ihr richtet euch auf und eilt zurück in die Krypta, wo die toten Körper der Kultisten den Boden übersäen. \"Ich bin nicht mehr hier. Diese Hüllen haben ihren Zweck erfüllt. Meine Wurzeln sind nun tief verankert und ihr werdet bald wieder auf meine unendliche Macht treffen. Ich freue mich auf diesen Tag.\""
             },
             "stages": {
                 "0": "{1}",
@@ -668,8 +669,8 @@ export default {
         "4": {
             "name": "Geschichten aus der Gruft",
             "sections": {
-                "1": "Während eurer Nachforschung über das \"Grauen\" habt ihr herausgefunden, dass die Banditen aus dem Schearzgrab mit einem Kult gemeinsame Sache machen Eure Ankunft hat ihr Rutual gestört. Unter den Schriften, die in ihr in der Ritualkamer gefunden habt, befinden sich Notizen über einige andere Orte der Macht in der näheren Umgebung. Einer davon scheint von dem Kult stark genutzt zu werden. Es scheint, als hättet ihr die Chance, weitere Aktivitäten des Kults zu verhindern.",
-                "2": "Ihr seid den Schriften zu einer uralten Krypta gefolgt, die vermutlich als Hauptquartier des Kultes gedient hat. Eine Gruppe von Kultisten führte rituelle Beschwörungen vor einem schwarzen, klaffenden Spalt aus. Durch den Tod der Kultisten und ihrer Lakeien hat sich auch der klaffende Spalt geschlossen."
+                "1": "Während eurer Nachforschung über das \"Grauen\" habt ihr herausgefunden, dass die Banditen aus dem Schwarzgrab gemeinsame Sache mit einem Kult machen. Eure Ankunft hat ihr Ritual gestört. Unter den Schriften, die in ihr in der Ritualkamer gefunden habt, befinden sich Notizen über verschiedene andere Orte der Macht in der näheren Umgebung. Einer davon scheint von dem Kult stark genutzt zu werden. Es sieht so aus, als hättet ihr die Chance, weitere Aktivitäten des Kults zu verhindern.",
+                "2": "Ihr seid den Schriften zu einer uralten Krypta gefolgt, die vermutlich als Hauptquartier des Kultes dienste. Eine Gruppe von Kultisten führte rituelle Beschwörungen vor einem schwarzen, klaffenden Spalt aus. Durch den Tod der Kultisten und ihrer Lakeien hat sich auch der klaffende Spalt geschlossen."
             },
             "stages": {
                 "0": "{1}",
@@ -679,8 +680,8 @@ export default {
         "6": {
             "name": "Das Geheimnis der Händlerin",
             "sections": {
-                "1": "Als ihr Jekserahs Herrenhaus verlassen hattet, kam eine Quatryl-Stadtwache aus Quatryl auf euch zu. Sie erzählte euch, dass Jekserah versucht hat, das Militär in Gloomhaven zu stürzen, und dass sie etwas Unheimliches im Schilde führt. Die Wache bat euch um eure Hilfe, Jekserahs Pläne aufzudecken und sie als das zu entlarven, was sie wirklich ist.",
-                "2": "Das Lager war voll von Untoten. Jekserah hatte die nekromantische Schriftrolle, die ihr ihr übergeben hattet, benutzt, um Untote innerhalb der Stadtmauern zu erwecken. Ihr habt euch in den hinteren Raum des Lagers gekämpft und Jekserah konfrontiert. Kurz bevor sie durch das Fenster entwischte verriet sie euch, dass sie mit einer Heerschar von Untoten zurückkommen würde. Um sie aufzuhalten, könntet ihr sie selbst ausfindig machen oder die Hilfe eines von der Stadtwache erwähnten Ästher-Zauberers erbitten.",
+                "1": "Als ihr Jekserahs Herrenhaus verlassen hattet, kam eine Quatryl-Stadtwache auf euch zu. Sie erzählte euch, dass Jekserah versucht hat, das Militär in Gloomhaven zu stürzen, und dass sie etwas Unheimliches im Schilde führt. Die Wache bat euch um eure Hilfe, Jekserahs Pläne aufzudecken und sie als das zu entlarven, was sie wirklich ist.",
+                "2": "Das Lager war voll von Untoten. Jekserah hatte die nekromantische Schriftrolle, die ihr ihr übergeben hattet, benutzt, um Untote innerhalb der Stadtmauern zu erwecken. Ihr habt euch in den hinteren Raum des Lagers gekämpft und Jekserah konfrontiert. Kurz bevor sie durch das Fenster entwischte verriet sie euch, dass sie mit einer Heerschar von Untoten zurückkommen würde. Um sie aufzuhalten, könntet ihr sie selbst ausfindig machen oder die Hilfe einer von der Stadtwache erwähnten Ästher-Zauberin erbitten.",
                 "3": "Ihr habt die Warnungen der Stadtwache Argeise ignoriert und weiter für Jekserah gearbeitet. \"Unheimliche Machenschaften\" sind natürlich beunruhigende Worte,  aber die Worte \"beträchtliche Belohnung\" übertrumpfen das im Nu. Es gibt keinen Grund mehr, das Lagerhaus zu überfallen."
             },
             "stages": {
@@ -692,8 +693,8 @@ export default {
         "7": {
             "name": "Der beste Freund einer Valrath",
             "sections": {
-                "1": "Jekserah hat eine letzte Aufgabe für euch. Sie benötigt einen Diamanten von beträchtlicher Größe für einen Kunden. In den südlichen Bergen gibt es eine Diamantenmine, die von Ratzen überrannt wurde, hinter der eine andere, intelligentere Macht steht. Wenn ihr euch hineinkämpft und den größten Diamanten den ihr finden könnt schnappt, wird euch Jekserah eine beträchtliche Belohnung geben. Ihr wurdet jedoch auch von einer Wache gewarnt, dass Jekserah möglicherweise noch finsterere Machenschaften hat, als sie zugibt. Etwas über den Sturz des Militärs... aber ein Diamant kann ja nicht schaden, oder?",
-                "2": "Ob finstere Machenschaften oder nicht, ihr habt entschieden, dass der Ausdruck \"beträchtliche Belohnung\" überzeugender ist. Wie erwartet wurde die Diamantenmine von Ratzen-Minenarbeitern in Beschlag genommen. Sie wurden von einem gnadenlosen Aufseher angeführt, der die Minenarbeiter mit ein paar Peitschenhieben schnell gegen euch aufbrachte. Nachdem der Aufseher ausgeschaltet und der Diamant geborgen worden war, verstreuten sich die verbliebenen Bergleute. Ihr seid zu Jekserah zurückgekehrt, um eure Belohnung einzufordern. Ihre Leibwächter begleiteten euch ins Innere des Herrenhauses, wo ihr sie irgendwie verändert vorfandet - gequälter und grimmiger. \"Wunderbar.\" Sie nahm den Diamanten und gab euch einen großen Beutel voller Münzen. \"Er wird sich bestens für die Beschwörungen eignen. Ob die Kultisten wohl wussten, was da in ihrem Besitz war? Damit kann ich eine ganze Armee von Untoten herbeirufen! \"Sie wandte sich mit einem seltsamen Funkeln  in den Augen an euch. \"Nun gut! Seid Ihr bereit, das Militär von Gloomhaven zu stürzen und die Kontrolle der Stadt in die Hände der Kaufmannsgilde zu legen? Oder fehlt euch der Mumm, wirklich was zu verändern?\"",
+                "1": "Jekserah hat eine letzte Aufgabe für euch. Für einen Kunden benötigt sie einen Diamanten von beträchtlicher Größe. In den südlichen Bergen gibt es eine Diamantenmine, die von Ratzen überrannt wurde, hinter der eine andere, intelligentere Macht steht. Wenn ihr euch hineinkämpft und den größten Diamanten, den ihr finden könnt schnappt, wird euch Jekserah eine beträchtliche Belohnung geben. Eine Stadtwache hat euch allerdings auch gewarnt, dass Jekserah möglicherweise noch finsterere Machenschaften hat, als sie zugibt. Etwas über den Sturz des Militärs... aber ein Diamant kann ja nicht schaden, oder?",
+                "2": "Ob finstere Machenschaften oder nicht, ihr habt entschieden, dass der Ausdruck \"beträchtliche Belohnung\" überzeugender ist. Wie erwartet wurde die Diamantenmine von Ratzen-Minenarbeitern in Beschlag genommen. Sie wurden von einem gnadenlosen Aufseher angeführt, der die Minenarbeiter mit ein paar Peitschenhieben schnell gegen euch aufbrachte. Nachdem der Aufseher ausgeschaltet und der Diamant geborgen worden war, verstreuten sich die verbliebenen Bergleute. Ihr seid zu Jekserah zurückgekehrt, um eure Belohnung einzufordern. Ihre Leibwächter begleiteten euch ins Innere des Herrenhauses, wo ihr sie irgendwie verändert vorfandet - gequälter und grimmiger. \"Wunderbar.\" Sie nahm den Diamanten und gab euch einen großen Beutel voller Münzen. \"Er wird sich bestens für die Beschwörungen eignen. Ob die Kultisten wohl wussten, was da in ihrem Besitz war? Damit kann ich eine ganze Armee von Untoten herbeirufen! \"Sie wandte sich mit einem seltsamen Funkeln  in den Augen an euch. \"Nun gut! Seid Ihr bereit, das Militär von Gloomhaven zu stürzen und die Kontrolle der Stadt in die Hände der Kaufmannsgilde zu legen? Oder fehlt euch der Mumm, wirklich etwas zu verändern?\"",
                 "3": "Ihr habt entschieden, dass \"finstere Machenschaften\" eine \"beträchtliche Belohnung\" überwiegen. Ihr habt Jekserahs Lagerhaus überfallen und ihre geheimen Pläne, mit einer Armee von Toten in die Stadt einzufallen, aufgedeckt. Dabei floh sie aus der Stadt. Man kann mit Sicherheit sagen, dass die \"beträchtliche Belohnung\" vom Tisch ist und es keinen Grund mehr gibt, die Mine zu besuchen."
             },
             "stages": {
@@ -706,8 +707,8 @@ export default {
             "name": "Den Spalt betreten",
             "sections": {
                 "1": "Während ihr einige Aktivitäten der Kultisten vereitelt habt, seid ihr auf einen klaffenden Spalt gestoßen. Die Kultisten involvierten den Spalt scheinbar in ein finsteres Ritual, so dass schreckliche und alptraumhafte Kreaturen durch ihn in eure Welt gebracht wurden. Jetzt, wo die Kultisten und ihre Schergen tot sind, scheint auch der Spalt zur Ruhe gekommen zu sein, was ihn jedoch nicht weniger beunruhigend macht. Ihr habt einen Stein hinein geworfen, der im Nichts verschwand. Ihr fragt euch, ob ihr den Spalt wohl selbst betreten könntet und ob ihr die Reise, die der Stein angetreten hat auch überleben könntet. Traut ihr euch den Spalt zu betreten?",
-                "2": "Eure Reise war alles andere als angenehm. Kaum angekommen, wurdet ihr von Dämonen angegriffen, die von einer wütenden, dröhnenden Stimme geschickt wurden. Nachdem die Dämonen erledigt waren, sprach die Stimme noch einmal zu euch und lud euch in ihr Reich ein. Erneut nahmt ihr den Sprung ins Ungewisse in Kauf. Im Reich der Stimme stellte sich euch eine monströse, gehörnte Kreatur, die einen Dreizack hieltund auf vier Hufen stand, entgegen. Das Monstrum forderte euch auf ein Artefakt zu beschaffen, anderenfalls wärt ihr des Todes.",
-                "3": "Nein, natürlich nicht. Welcher Narr springt schon in düstere Dimensionsspalten? Stattdessen habt ihr beschlossen, Hilfe zu suchen, um den Spalt dauerhaft zu schließen. Offensichtlich konnte nichts Gutes dabei herauskommen, also habt ihr den Spalt geschlossen."
+                "2": "Eure Reise war alles andere als angenehm. Kaum angekommen, wurdet ihr von Dämonen angegriffen, die von einer wütenden, dröhnenden Stimme geschickt wurden. Nachdem die Dämonen erledigt waren, sprach die Stimme noch einmal zu euch und lud euch in ihr Reich ein. Erneut nahmt ihr den Sprung ins Ungewisse in Kauf. Im Reich der Stimme stellte sich euch eine monströse, gehörnte Kreatur, die einen Dreizack in den Händen hielt und auf vier Hufen stand, entgegen. Das Monstrum forderte euch auf ein Artefakt zu beschaffen, anderenfalls wärt ihr des Todes.",
+                "3": "Nein, natürlich nicht. Welcher Narr springt schon in düstere Dimensionsspalten? Stattdessen habt ihr beschlossen Hilfe zu suchen, um den Spalt dauerhaft zu schließen. Offensichtlich konnte nichts Gutes dabei herauskommen, also habt ihr den Spalt geschlossen."
             },
             "stages": {
                 "0": "{1}",
@@ -718,11 +719,11 @@ export default {
         "9": {
             "name": "Jagd auf die Nekromantin",
             "sections": {
-                "1": "Die Nekromantin Jekserah ist aus der Stadt geflohen. Bevor sie verschwand, sprach sie einige düstere Drohungen gegen euch aus. Es ist klar, dass ihr sie zur Strecke bringen müsst, bevor sie ihre Drohungen wahr machen kann. Leider habt ihr keine Ahnung, wo sie ist. Die Stadtwache ist keine große Hilfe, aber Argeise hat ein paar Vorschläge wo ihr Hilfe bekommen könntet. Es gibt eine Aesther-Zauberin in der Stadt, die vielleicht in der Lage ist, Jekserahs Aufenthaltsort zu erraten, aber die Zusammenarbeit mit ihr ist gemeinhin als schwierig bekannt. Alternativ dazu nannten euch einige eurer Kontakte im Heiligtum der Großen Eiche einen Tempel, der einer unsichtbaren Macht geweiht ist. Diese Macht beantworte jede Frage, die man ihr stellt.",
-                "2": "Ihr habt die Aesther-Zauberin Hail im Crooked Bone getroffen. Obwohl sie ein wenig exzentrisch ist, scheint sie recht fähig zu sein. Ihr habt euch ihre Gunst verdient, indem ihr ihr bei ihren Geschäften geholfen hast. Vielleicht kann sie euch jetzt helfen, Jekserah zu finden?",
+                "1": "Die Nekromantin Jekserah ist aus der Stadt geflohen. Bevor sie verschwand, sprach sie einige düstere Drohungen gegen euch aus. Es ist klar, dass ihr sie zur Strecke bringen müsst, bevor sie ihre Drohungen wahr machen kann. Leider habt ihr keine Ahnung wo sie ist. Die Stadtwache ist keine große Hilfe, aber Argeise hat ein paar Vorschläge wo ihr Hilfe bekommen könntet. Es gibt eine Aesther-Zauberin in der Stadt, die vielleicht in der Lage ist, Jekserahs Aufenthaltsort zu erraten, aber die Zusammenarbeit mit ihr ist gemeinhin als schwierig bekannt. Alternativ dazu nannten euch einige eurer Kontakte im Heiligtum der Großen Eiche einen Tempel, der einer unsichtbaren Macht geweiht ist. Diese Macht beantworte scheinbar jede Frage, die man ihr stellt.",
+                "2": "Ihr habt die Aesther-Zauberin Hail im Krummen Knochen getroffen. Obwohl sie ein wenig exzentrisch ist, scheint sie recht fähig zu sein. Ihr habt euch ihre Gunst verdient, indem ihr ihr bei ihren Geschäften geholfen habt. Vielleicht kann sie euch jetzt helfen, Jekserah zu finden?",
                 "3": "Ihr habt den Tempel des Sehers besucht, wart aber viel mehr an den anderen Angeboten der Stimme interessiert, als Jekserah zu finden. Der einzige Weg, Jekserah jetzt zu finden, ist mit der Hilfe der Zauberin.",
-                "4": "Ihr habt Jekserahs Heiligtum im Leichenwald gefunden. Es ist an der Zeit, ihrer Nekromantie ein für alle Mal ein Ende zu setzen.",
-                "5": "Nach einem zermürbenden Kampf gegen ihre untoten Lakaien, fällt Jekserah unter den Hieben eurer Klingen. Ihr trennt ihren Kopf vom Rumpf und verlasst eilig den erbärmlichen Ort voller verstümmelter Leichen. Ihr habt den Kopf an den Hauptmann der Wache ausgehändigt und wurdet für das auf sie ausgesetzte Kopfgeld gut bezahlt."
+                "4": "Ihr habt Jekserahs Heiligtum im Leichenwald gefunden. Es ist an der Zeit ihrer Nekromantie ein für alle Mal ein Ende zu setzen.",
+                "5": "Nach einem zermürbenden Kampf gegen ihre untoten Lakaien fällt Jekserah unter den Hieben eurer Klingen. Ihr trennt ihren Kopf vom Rumpf und verlasst eilig diesen erbärmlichen Ort voller verstümmelter Leichen. Ihr habt den Kopf an den Hauptmann der Wache ausgehändigt und wurdet für das auf sie ausgesetzte Kopfgeld gut bezahlt."
             },
             "stages": {
                 "0": "{1}",
@@ -737,7 +738,7 @@ export default {
             "name": "Neues Management",
             "sections": {
                 "1": "Zufrieden mit eurer bisherigen Arbeit hat Jekserah euch eingeladen, euch ihrer untoten Invasion der Stadt anzuschließen. Sie plant die Militärregierung zu stürzen und die Kaufmannsgilde an die Macht zu bringen.",
-                "2": "Ihr habt Jekserah geholfen die Militärregierung zu stürzen. Die Stadtwache wehrte sich, aber ihre erbärmlichen sterblichen Körper waren dem überwältigenden Ansturm  der Untoten und der Macht Eurer Klingen nicht gewachsen. Jede Wache, die fiel, verstärkte die Reihen der Untoten. Als der Hauptmann der Wache fiel, flohen die restlichen Wachen wie die Feiglinge, von denen ihr immer wusstet, dass sie es sind. Jekserahs Leibwächter wurden bei der Invasion getötet, aber ums besser für euch. Ihr seid jetzt Jekserahs neue rechte Hand und die Händlergilde regiert die Stadt.",
+                "2": "Ihr habt Jekserah geholfen die Militärregierung zu stürzen. Die Stadtwache wehrte sich, aber ihre erbärmlichen sterblichen Körper waren dem überwältigenden Ansturm  der Untoten und der Macht Eurer Klingen nicht gewachsen. Jede Wache die starb, verstärkte die Reihen der Untoten. Als der Hauptmann der Wache fiel, flohen die restlichen Wachen wie die Feiglinge, von denen ihr immer wusstet, dass sie es sind. Jekserahs Leibwächter wurden bei der Invasion getötet, aber umso besser für euch. Ihr seid jetzt Jekserahs neue rechte Hand und die Händlergilde regiert die Stadt.",
                 "3": "Die Militärregierung zu stürzen war nicht eure Absicht. Daher habt ihr Jekserahs Einladung verschmäht und euch auf der Seite der Stadtwache gegen die Invasion gestellt. Jekserah ist tot, gefallen durch eure Hände."
             },
             "stages": {
@@ -760,11 +761,11 @@ export default {
             }
         },
         "12": {
-            "name": "Der Wunsch des Herzens",
+            "name": "Der Herzenswunsch",
             "sections": {
                 "1": "Einige eurer Kontakte im Heiligtum der Großen Eiche wissen von einem Tempel, der einer unsichtbaren Kraft gewidmet ist, die jede Frage beantworten wird, die man ihr stellt. Das ist die Gelegenheit für euch, euch euren Herzenswunsch zu erfüllen.",
-                "2": "Als ihr schließlich den Tempel erreicht hattet, vernahmt ihr eine Stimme:\"Ich kann um diese Zeit keine Besucher empfangen.\" Bevor ihr etwas erwidern konntet, materialisierte sich eine Gruppe von Steinkonstrukten vor euch. Aber ihr wolltet auf keinen Fall mit leeren Händen den Rückweg antreten. Nachdem ihr mit den Monstern fertig wart, bot euch die Stimme entweder große Macht, großen Reichtum oder aber Aufschlüsse über den Aufenthaltsort der Nekormantin an.",
-                "3": "Eure offensichtliche Wahl war große Macht. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein in den Copperneck Mountains, der eine Quelle großer Macht enthält.",
+                "2": "Als ihr schließlich den Tempel erreicht hattet, vernahmt ihr eine Stimme:\"Ich kann um diese Zeit keine Besucher empfangen.\" Bevor ihr etwas erwidern konntet, materialisierte sich eine Gruppe von Steinkonstrukten vor euch. Aber ihr wolltet auf keinen Fall mit leeren Händen den Rückweg antreten. Nachdem ihr mit den Monstern fertig wart, bot euch die Stimme entweder große Macht, großen Reichtum oder aber einen Hinweis über den Aufenthaltsort der Nekormantin an.",
+                "3": "Große Macht war eure offensichtliche Wahl. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein im Kupferhalsgebirge, der eine Quelle großer Macht enthält.",
                 "4": "Was für eine Art von Söldnern wärt ihr, wenn ihr nicht nach Reichtum und Bezahlung trachten würdet? Großer Reichtum war daher eure offensichtliche Wahl. Die Stimme erzählte euch von einer verlorenen Insel im Nebelmeer, die längst vergessene Schätze enthält.",
                 "5": "Macht und Reichtum bedeuten euch nichts, solange Jekserah noch am Leben ist. Ihr besteht darauf, dass die Stimme euch den Aufenthaltsort der ruchlosen Valrath verrät. Sie erzählte euch von einem Heiligtum, das in den Tiefen des Leichenwaldes versteckt ist."
             },

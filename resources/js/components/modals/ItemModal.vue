@@ -20,6 +20,12 @@
                         </span>
                         {{ item.faq }}
                     </p>
+                    <p class="pt-4">
+                        Availability: {{ item.count - characters.count() }} / {{ item.count }}
+                    </p>
+                    <character-icon v-for="(character, uuid) in characters.items" :key="uuid"
+                                    :player="uuid" :character="character.id" class="w-6 mr-2 inline-block"
+                                    @click="close"/>
                 </div>
             </div>
         </modal>
@@ -28,12 +34,15 @@
 
 <script>
 import ItemRepository from "../../repositories/ItemRepository";
+import SheetRepository from "../../repositories/SheetRepository";
 
 export default {
     data() {
         return {
             item: null,
-            itemRepository: new ItemRepository()
+            characters: {},
+            itemRepository: new ItemRepository(),
+            sheetRepository: new SheetRepository()
         }
     },
     mounted() {
@@ -54,14 +63,22 @@ export default {
     methods: {
         open(item) {
             this.item = item;
+
+            const sheet = this.sheetRepository.make(app.game);
+            this.characters = collect(sheet.characters)
+                .filter((character) => {
+                    return character.items[item.id] === true;
+                });
+
             this.$refs['modal'].open();
         },
         close() {
-            this.item = null;
+            this.unsetItem();
             this.$refs['modal'].close();
         },
         unsetItem() {
             this.item = null;
+            this.characters = {};
         }
     }
 }
