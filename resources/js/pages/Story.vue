@@ -3,7 +3,7 @@
         <inline-svg
             v-if="storyline !== null && isPortrait !== null"
             :key="storylineKey"
-            :src="'storyline/'+storyline"
+            :src="'storylines/'+storyline"
             id="storyline"
             :classes="['h-screen', 'w-screen']"
         />
