@@ -22,7 +22,7 @@ mix.i18n()
     .js('resources/js/app.js', 'js').vue()
     .js('resources/js/gtm.js', 'js')
     .js('resources/js/website.js', 'js').vue()
-    .sass('resour3ces/sass/app.scss', 'css')
+    .sass('resources/sass/app.scss', 'css')
     .sass('resources/sass/website.scss', 'css')
     .sass('resources/sass/theme.scss', 'css', {
         sassOptions: {
