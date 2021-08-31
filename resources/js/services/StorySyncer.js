@@ -1,6 +1,6 @@
 import StoryRepository from "../repositories/StoryRepository";
 import ApiStoryRepository from "../apiRepositories/StoryRepository";
-import moment from "moment";
+import dayjs from "dayjs";
 
 export default class StorySyncer {
     store(force = false) {
@@ -13,7 +13,8 @@ export default class StorySyncer {
         const hasChanged = story.hasChanged();
 
         if (hasChanged) {
-            story.updated_at = moment();
+            story.hash = story.makeHash();
+            story.updated_at = dayjs();
             this.apiStoryRepository.storeStory(story);
         }
 

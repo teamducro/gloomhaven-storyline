@@ -1,20 +1,20 @@
 export default {
     methods: {
-        calculateShop(reputation) {
+        calculateCostModifier(reputation) {
             if (typeof reputation === 'undefined') {
                 return 0;
             }
 
             let reputations = [-18, -14, -10, -6, -2, 3, 7, 11, 15, 19];
-            let shop = 5;
+            let costModifier = 5;
 
             reputations.forEach((r) => {
                 if (reputation >= r) {
-                    shop--;
+                    costModifier--;
                 }
             });
 
-            return shop;
+            return costModifier;
         },
         calculateDonationProsperity(donations) {
             let rates = [100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, 900, 1000];

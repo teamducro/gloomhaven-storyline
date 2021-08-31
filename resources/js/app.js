@@ -27,6 +27,9 @@ import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
 import checkOrientation from "./services/app/checkOrientation";
 import polyfills from "./services/app/polyfills";
+import dayjs from "dayjs";
+import localizedFormat from 'dayjs/plugin/localizedFormat';
+import relativeTime from 'dayjs/plugin/relativeTime';
 
 window._ = require('lodash');
 window.c = require('cash-dom');
@@ -36,6 +39,8 @@ window.axios = require('axios').default.create({
     baseURL: process.env.MIX_API_URL,
     withCredentials: true
 });
+dayjs.extend(localizedFormat);
+dayjs.extend(relativeTime);
 
 Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;

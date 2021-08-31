@@ -1,14 +1,13 @@
 <template>
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
-        <div id="info" class="bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
+        <div id="party" class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[$t('Party sheet'), $t('Items')]"
-                  :icons="['assignment', 'style']"
-                  :urls="['party', 'items']"
+            <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
+                  :icons="['assignment', 'person', 'style']"
+                  :urls="['party', 'characters', 'items']"
                   :active="$t('Party sheet')"
-            >
-            </tabs>
-            <h1 class="hidden sm:inline text-xl">{{ campaignName }}</h1>
+            />
+            <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
             <div class="mt-4 flex flex-col sm:flex-row">
                 <div class="mb-8 sm:mb-0 sm:mr-4">
@@ -87,7 +86,15 @@
                     :items.sync="sheet.city"
                     @change="store"
                     ref="city-events"
-                ></selectable-list>
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, true)" :disabled="!checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
                 <selectable-list
                     id="road-events"
                     :title="$t('Road Event Decks')"
@@ -95,12 +102,22 @@
                     :items.sync="sheet.road"
                     @change="store"
                     ref="road-events"
-                ></selectable-list>
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, false)" :disabled="!checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
             </div>
 
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
-                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')" @change="store"></notes>
+                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
+                       @change="store" :is-local-campaign="isLocalCampaign"
+                ></notes>
             </div>
 
             <div class="w-full mt-8">
@@ -163,13 +180,14 @@
                 </table>
 
                 <ul class="flex flex-row flex-wrap -mx-2">
-                    <li v-for="(checked, character) in sheet.characters" class="flex items-center">
+                    <li v-for="(checked, id) in sheet.characterUnlocks" :key="id" class="flex items-center"
+                        :class="['order-'+characterOrder[id]]">
                         <checkbox group="items"
                                   :checked="checked"
-                                  :disabled="character < 6"
-                                  @change="(id, isChecked) => {sheet.characters[character] = isChecked; store()}"></checkbox>
+                                  :disabled="sheet.starterCharacters.includes(id)"
+                                  @change="(_, isChecked) => {sheet.characterUnlocks[id] = isChecked; store()}"></checkbox>
                         <span class="w-8 font-title">
-                            <character class="w-6 -mb-2 inline-block" :character="parseInt(character)+1"/>
+                            <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
                         </span>
                     </li>
                 </ul>
@@ -180,15 +198,15 @@
 </template>
 
 <script>
-import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
-import SelectableList from "../components/presenters/party/SelectableList";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
+import SheetRepository from "../repositories/SheetRepository";
+import GameData from "../services/GameData";
+import Helpers from "../services/Helpers";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
-    components: {SelectableList},
     data() {
         return {
             sheet: null,
@@ -221,7 +239,7 @@ export default {
                 },
                 {
                     goal: this.$t('Have a party reputation of 10 or higher'),
-                    reward: this.$t('Open box') + ' <character class="w-6 -mb-2 inline-block" character="SK" />'
+                    reward: this.$t('Open box') + ' <character-icon class="w-6 -mb-2 inline-block" character="SK" />'
                 },
                 {
                     goal: this.$t('Have a party reputation of 20'),
@@ -229,7 +247,7 @@ export default {
                 },
                 {
                     goal: this.$t('Have a party reputation of -10 or lower'),
-                    reward: this.$t('Open box') + ' <character class="w-6 -mb-2 inline-block" character="NS" />'
+                    reward: this.$t('Open box') + ' <character-icon class="w-6 -mb-2 inline-block" character="NS" />'
                 },
                 {
                     goal: this.$t('Have a party reputation of -20'),
@@ -240,15 +258,19 @@ export default {
                     reward: this.$t('Open the Town Records Book')
                 }
             ],
+            characterOrder: {},
             campaignName: null,
             loading: true,
+            isLocalCampaign: true,
             renderX: 0,
+            gameData: new GameData,
             storySyncer: new StorySyncer,
+            sheetRepository: new SheetRepository
         }
     },
     watch: {
         'sheet.reputation': function () {
-            this.shop = this.calculateShop(this.sheet.reputation);
+            this.shop = this.calculateCostModifier(this.sheet.reputation);
         },
         'sheet.donations': function () {
             this.donationProsperity = this.calculateDonationProsperity(this.sheet.donations);
@@ -258,16 +280,21 @@ export default {
         this.render();
 
         this.$bus.$on('campaigns-changed', this.render);
+        this.$bus.$on('remove-card', this.removeCard);
     },
     destroyed() {
         this.$bus.$off('campaigns-changed', this.render);
+        this.$bus.$off('remove-card', this.removeCard);
     },
     methods: {
         async render() {
             this.loading = true;
 
-            this.sheet = new Sheet;
+            this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
+            this.characterOrder = Helpers.reverse(this.gameData.characterOrder(app.game));
+
+            this.isLocalCampaign = app.campaignId === 'local';
 
             await this.$nextTick();
 
@@ -286,6 +313,22 @@ export default {
 
             this.sheet.store();
             this.storySyncer.store();
+        },
+        draw(checkedItems, isCity = true) {
+            let id = [...checkedItems].sort((a, b) => 0.5 - Math.random())[0];
+            if (id) {
+                const card = (isCity ? 'C' : 'R') + '-' + id;
+                this.$bus.$emit('open-card', card);
+            }
+        },
+        removeCard(card) {
+            if (card.type === 'R') {
+                this.sheet.road[card.id] = false;
+            } else if (card.type === 'C') {
+                this.sheet.city[card.id] = false;
+            }
+
+            this.store();
         },
         renderHtml(html) {
             return {

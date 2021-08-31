@@ -92,6 +92,16 @@
                         </li>
 
                         <li @click="toggle">
+                            <router-link to="/characters" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic"
+                                   aria-hidden="true">person</i>
+                                <span class="mdc-list-item__text">{{ $t('Character sheet') }}</span>
+                                <bedge class="small white ml-2">BETA</bedge>
+                            </router-link>
+                        </li>
+
+                        <li @click="toggle">
                             <router-link to="/items" class="mdc-list-item"
                                          active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic transform rotate-180"
@@ -113,13 +123,15 @@
                             </a>
                         </li>
 
-                        <li @click="toggle">
-                            <router-link to="/settings" class="mdc-list-item"
-                                         active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
-                                <span class="mdc-list-item__text">{{ $t('Settings') }}</span>
-                            </router-link>
-                        </li>
+                        <li role="separator" class="mdc-list-divider !my-2"></li>
+                    </ul>
+                </div>
+
+                <links @click="toggle" class="px-4 -my-2"></links>
+
+                <div class="mdc-list-group">
+                    <ul>
+                        <li role="separator" class="mdc-list-divider !my-2"></li>
 
                         <li @click="toggle">
                             <router-link to="/info" class="mdc-list-item" active-class="mdc-list-item--activated">
@@ -129,13 +141,21 @@
                             </router-link>
                         </li>
 
+                        <li @click="toggle">
+                            <router-link to="/settings" class="mdc-list-item"
+                                         active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+                                <span class="mdc-list-item__text">{{ $t('Settings') }}</span>
+                            </router-link>
+                        </li>
+
                         <li role="separator" class="mdc-list-divider !my-2"></li>
 
-                        <li v-if="loggedIn" class="py-4 pl-4 flex" @click="toggle">
+                        <li v-if="!loggedIn" class="py-4 pl-4 flex" @click="toggle">
                             <become-patron-button transparent></become-patron-button>
                         </li>
 
-                        <li v-if="loggedIn" class="py-4 pl-4 w-full" @click="toggle">
+                        <li v-if="!loggedIn" class="py-4 pl-4 w-full" @click="toggle">
                             <donate></donate>
                         </li>
                     </ul>

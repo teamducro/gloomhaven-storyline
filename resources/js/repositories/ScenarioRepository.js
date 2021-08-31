@@ -2,10 +2,10 @@ import AchievementRepository from "./AchievementRepository";
 import Scenario from "../models/Scenario";
 import ScenarioValidator from "../services/ScenarioValidator";
 import {ScenarioState} from "../models/ScenarioState";
-import Sheet from "../models/Sheet";
 import ItemTextParser from "../services/ItemTextParser";
 import GameData from "../services/GameData";
 import ScenarioCompletedService from "../services/ScenarioCompletedService";
+import SheetRepository from "./SheetRepository";
 
 export default class ScenarioRepository {
     fetch(game) {
@@ -127,7 +127,7 @@ export default class ScenarioRepository {
                         return treasure.includes(scenario.id);
                     }).keys().first();
 
-                    return treasure && treasureScenario.isComplete() && treasureScenario.isTreasureUnlocked(treasure);
+                    return treasure && treasureScenario.isTreasureUnlocked(treasure);
                 });
         }
 
@@ -191,7 +191,7 @@ export default class ScenarioRepository {
 
     processItems(items, checked) {
         if (!items.empty) {
-            let sheet = new Sheet;
+            let sheet = this.sheetRepository.make(app.game);
             items.each(item => {
                 sheet.itemDesigns[item] = checked;
             });
@@ -347,6 +347,10 @@ export default class ScenarioRepository {
 
     get achievementRepository() {
         return this._achievementRepository || (this._achievementRepository = new AchievementRepository());
+    }
+
+    get sheetRepository() {
+        return this._sheetRepository || (this._sheetRepository = new SheetRepository());
     }
 
     get scenarioCompletedService() {

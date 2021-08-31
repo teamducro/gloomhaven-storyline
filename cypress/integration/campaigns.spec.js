@@ -19,6 +19,7 @@ describe('Campaigns', () => {
             response: 'fixture:incorrect-code.json'
         }).as('storyCode');
 
+        utilities.scrollTo('50%');
         cy.get('#add-shared-campaign').within(() => {
             cy.get('input[name=code]').type('123456');
             cy.get('form').submit();
@@ -40,6 +41,7 @@ describe('Campaigns', () => {
             response: 'fixture:incorrect-email.json'
         }).as('mailLoginLink');
 
+        utilities.scrollTo('50%');
         cy.get('#request-login-link').within(() => {
             cy.get('input[name=email]').type('test');
             cy.get('form').submit();
@@ -60,6 +62,7 @@ describe('Campaigns', () => {
             response: 'fixture:request-login-email.json'
         }).as('mailLoginLink');
 
+        utilities.scrollTo('50%');
         cy.get('#request-login-link').within(() => {
             cy.get('input[name=email]').type('test');
             cy.get('form').submit();

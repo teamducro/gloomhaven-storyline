@@ -10,7 +10,7 @@
                     You'll get some nice perks!
                 </p>
 
-                <becomePatronButton class="mt-8 flex justify-center" text="Or become a patron"></becomePatronButton>
+                <becomePatronButton class="mt-8 flex justify-center"></becomePatronButton>
             </div>
         </div>
 
@@ -210,7 +210,8 @@ export default {
                     'Scenario summaries': false,
                     'Tracked Achievements': false,
                     'Map view': false,
-                    'Filters': false,
+                    'Items': false,
+                    'Party and Character sheets': false,
                     'All modern devices': false,
                     'Multi language': false,
                 },
@@ -220,7 +221,8 @@ export default {
                     'Scenario summaries': false,
                     'Tracked Achievements': false,
                     'Map view': false,
-                    'Filters': false,
+                    'Items': false,
+                    'Party and Character sheets': false,
                     'All modern devices': false,
                     'Multi language': false,
                     'Automatic snapshots': true,
@@ -232,7 +234,8 @@ export default {
                     'Scenario summaries': false,
                     'Tracked Achievements': false,
                     'Map view': false,
-                    'Filters': false,
+                    'Items': false,
+                    'Party and Character sheets': false,
                     'All modern devices': false,
                     'Multi language': false,
                     'Automatic snapshots': true,

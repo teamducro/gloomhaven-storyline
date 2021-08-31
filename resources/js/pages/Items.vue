@@ -2,15 +2,14 @@
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
         <div class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[$t('Party sheet'), $t('Items')]"
-                  :icons="['assignment', 'style']"
-                  :urls="['party', 'items']"
+            <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
+                  :icons="['assignment', 'person', 'style']"
+                  :urls="['party', 'characters', 'items']"
                   :active="$t('Items')"
-            >
-            </tabs>
-            <h1 class="hidden sm:inline text-xl">{{ campaignName }}</h1>
+            />
+            <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
-            <div class="absolute right-0 top-0 mt-4 mr-4 z-5">
+            <div class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
                 <dropdown class="items-to-add-dropdown" align="right" width=""
                           @open="dropDownClose = true"
                           @close="dropDownClose = false">
@@ -40,21 +39,21 @@
 
             <div class="my-4">
                 <h2 class="mb-2">{{ $t('Shop modifier') }}:
-                    <span>{{ shop }} {{ $t('Gold') }}</span>
+                    <span>{{ costModifier }} {{ $t('Gold') }}</span>
                 </h2>
-                <p v-if="shop != 0" class="text-sm">
+                <p v-if="costModifier != 0" class="text-sm">
                     {{ $t('The cost of items displayed is modified by this amount.') }}
                 </p>
             </div>
 
-            <div class="flex justify-between flex-wrap">
+            <div class="flex justify-between flex-wrap items-end">
                 <div>
                     <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="search-field">
                         <span class="mdc-text-field__ripple"></span>
                         <input class="mdc-text-field__input" aria-labelledby="item-search"
                                type="text" name="item-search"
                                v-model="query" @keyup="applySearch">
-                        <span class="mdc-floating-label" id="item-search">{{ $t('Number or Name') }}</span>
+                        <span class="mdc-floating-label" id="item-search">{{ $t('Search name or nr') }}</span>
                         <span class="mdc-line-ripple"></span>
                     </label>
                 </div>
@@ -88,9 +87,28 @@
                     </div>
                     <div class="w-16 md:w-12 h-2"></div>
                 </template>
-                <span slot="cost" slot-scope="{value}">
-                    {{ value + shop }}
+                <span slot="number" slot-scope="{value, row}">
+                    {{ value }}<br>
+                    <span class="lg:hidden">
+                        <webp :src="row.slot" class="inline-block mr-2" width="20"/>
+                    </span>
                 </span>
+                <span slot="name" class="xs:whitespace-no-wrap" slot-scope="{value, row}">
+                    {{ value }}<br>
+                    <span class="lg:hidden">
+                        <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
+                        <span class="inline-block mr-2">
+                            {{ row.count - (itemCountUses[row.id] || 0) }}/{{ row.count }}
+                        </span>
+                        <span class="inline-block md:hidden">{{ row.cost + costModifier }}</span>
+                    </span>
+                </span>
+                <span slot="cost" slot-scope="{value}">
+                    {{ value + costModifier }}
+                </span>
+                <template slot="availability" slot-scope="{value, row}">
+                    {{ row.count - (itemCountUses[row.id] || 0) }} / {{ row.count }}
+                </template>
                 <template slot="desc" slot-scope="{value}">
                     <add-links-and-icons :text="value"/>
                 </template>
@@ -101,11 +119,11 @@
 
 <script>
 import {MDCTextField} from "@material/textfield/component";
-import Sheet from "../models/Sheet";
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
 import ItemRepository from "../repositories/ItemRepository";
+import SheetRepository from "../repositories/SheetRepository";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -113,9 +131,10 @@ export default {
         return {
             selectedItem: null,
             sheet: null,
-            shop: 0,
+            costModifier: 0,
             prosperity: 1,
             items: collect([]),
+            itemCountUses: {},
             campaignName: null,
             loading: true,
             query: '',
@@ -124,18 +143,20 @@ export default {
                 {id: 'image', name: 'Card', classes: 'hidden sm:table-cell'},
                 {id: 'number', name: 'Nr'},
                 {id: 'name', name: 'Name'},
-                {id: 'slot', name: 'Slot'},
-                {id: 'cost', name: 'Cost'},
-                {id: 'use', name: 'Use', classes: 'hidden md:table-cell'},
+                {id: 'slot', name: 'Slot', classes: 'hidden lg:table-cell'},
+                {id: 'cost', name: 'Cost', classes: 'hidden md:table-cell'},
+                {id: 'availability', name: 'Avail', classes: 'hidden lg:table-cell'},
+                {id: 'use', name: 'Use', classes: 'hidden lg:table-cell'},
                 {id: 'desc', name: 'Effect'}
             ],
             selectedFilter: null,
             filters: ['body', 'head', 'legs', 'one-hand', 'small-item', 'two-hands'],
-            sortable: ['number', 'name', 'slot', 'cost', 'use'],
+            sortable: ['number', 'name', 'cost'],
             field: null,
             dropDownClose: false,
             storySyncer: new StorySyncer,
             itemRepository: new ItemRepository,
+            sheetRepository: new SheetRepository,
         }
     },
     watch: {
@@ -156,9 +177,10 @@ export default {
         async render() {
             this.loading = true;
 
-            this.sheet = new Sheet;
-            this.shop = this.calculateShop(this.sheet.reputation || 0);
+            this.sheet = this.sheetRepository.make(app.game);
+            this.costModifier = this.calculateCostModifier(this.sheet.reputation || 0);
             this.campaignName = this.getCampaignName();
+            this.getItemAvailability();
 
             await this.$nextTick();
 
@@ -166,19 +188,29 @@ export default {
 
             this.field = new MDCTextField(this.$refs['search-field']);
         },
-
         refreshItems() {
             const sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
             this.items = this.itemRepository.findMany(sheetItems);
         },
-
         changeItem(id, isChecked) {
             const item = parseInt(id.replace('item-', ''));
             Vue.set(this.sheet.itemDesigns, item, isChecked);
             this.refreshItems();
             this.store();
         },
+        getItemAvailability() {
+            this.itemCountUses = {};
 
+            if (this.sheet.characters) {
+                collect(this.sheet.characters).each(character => {
+                    collect(character.items).each((available, id) => {
+                        if (available) {
+                            this.itemCountUses[id] = (this.itemCountUses[id] || 0) + 1;
+                        }
+                    });
+                })
+            }
+        },
         store() {
             if (this.loading) {
                 return;

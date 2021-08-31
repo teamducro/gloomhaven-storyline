@@ -43,4 +43,19 @@
         <lastmod>release-date</lastmod>
         <changefreq>monthly</changefreq>
     </url>
+    <url>
+        <loc>https://gloomhaven-storyline.com/tracker/#/items</loc>
+        <lastmod>release-date</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://gloomhaven-storyline.com/tracker/#/characters</loc>
+        <lastmod>release-date</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://gloomhaven-storyline.com/tracker/#/settings</loc>
+        <lastmod>release-date</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
 </urlset>

@@ -77,6 +77,7 @@ describe('Party', () => {
     });
 
     it('It checks city events', () => {
+        utilities.scrollTo('40%');
         cy.get('#city-events').parent().click();
         cy.get('[name="city-events"]').type('50');
         cy.get('.mdc-list-item__text span').contains('50').click();
@@ -86,6 +87,7 @@ describe('Party', () => {
     });
 
     it('It can roll back city events', () => {
+        utilities.scrollTo('40%');
         cy.get('#city-events').parent().click();
         cy.get('[name="city-events"]').clear().type('50');
         cy.get('.mdc-list-item__text span').contains('50').click();
@@ -115,10 +117,12 @@ describe('Party', () => {
         cy.get('input[aria-labelledby="reputation"]').clear().type('20{enter}');
         cy.get('input[aria-labelledby="donations"]').clear().type('1000{enter}');
         cy.get('input#p-65').click();
+        utilities.scrollTo('40%');
         cy.get('#city-events').parent().click();
         cy.get('[name="city-events"]').type('50');
         cy.get('.mdc-list-item__text span').contains('50').click();
 
+        utilities.scrollTo('80%');
         cy.get('#notes').type('Foo Bar');
         utilities.closeModel();
 
@@ -135,6 +139,7 @@ describe('Party', () => {
 
     it('it draws event cards', () => {
         cy.visit('/tracker/#/party');
+        utilities.scrollTo('50%');
         cy.get('button').contains('Draw').first().click();
         cy.get('.mdc-dialog__title').contains('City Event #').should('be.visible');
         cy.get('.mdc-dialog__content button').contains('A').click();
@@ -146,6 +151,7 @@ describe('Party', () => {
 
     it('it unlocks envelope X', () => {
         cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%');
         cy.get('input#unlock8').click();
         cy.get('span').contains('Envelope x solved').should('be.visible');
         cy.get('span').contains('Clues').should('be.visible');

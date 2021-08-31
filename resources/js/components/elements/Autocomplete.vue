@@ -12,7 +12,7 @@
                 </label>
             </template>
 
-            <div class="mdc-list w-40 z-10">
+            <div class="mdc-list z-10" :class="[width]">
                 <ul v-if="list.length" class="mdc-list" aria-hidden="true"
                     aria-orientation="vertical" tabindex="-1">
                     <li v-for="(item, i) in items" :key="i"
@@ -39,7 +39,16 @@ export default {
         id: {type: String},
         label: {type: String},
         list: {type: Array},
-        maxItems: {default: 10}
+        maxItems: {default: 10},
+        width: {type: String, default: 'w-40'},
+        filterClosure: {
+            type: Function,
+            default: (query) => {
+                return (item) => {
+                    return item.toLowerCase().replace('-', ' ').startsWith(query);
+                }
+            }
+        },
     },
     data() {
         return {
@@ -65,9 +74,7 @@ export default {
         },
         search(query) {
             query = query.trim().toLowerCase().replace('-', ' ');
-            return this.list.filter((item) => {
-                return item.toLowerCase().replace('-', ' ').startsWith(query);
-            });
+            return this.list.filter(this.filterClosure(query));
         },
         select(item) {
             this.$emit('change', item);

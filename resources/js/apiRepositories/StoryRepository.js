@@ -17,6 +17,23 @@ export default class StoryRepository extends ApiRepository {
         return this.getStories();
     }
 
+    async create() {
+        window.app.$bus.$emit('toast', 'Creating campaign...');
+
+        return await this.api.post('stories')
+            .then(response => {
+                window.app.$bus.$emit('toast', 'Campaign created!');
+
+                let storyResponse = response.data;
+                this.storeStory(storyResponse);
+
+                return new Story(storyResponse);
+            })
+            .catch(e => {
+                window.app.$bus.$emit('toast', 'Failed to create campaign, try again later.', false);
+            });
+    }
+
     async update(story) {
         const data = story.postData();
 
@@ -57,9 +74,18 @@ export default class StoryRepository extends ApiRepository {
         await Promise.all(promises);
     }
 
-    async find(story) {
+    async find(story, updateStoryIfNeeded = true) {
         const response = await this.api.withToken(story.token).get('stories/' + story.id);
-        return await this.updateStoryIfNeeded(response.data, story.token);
+
+        if (updateStoryIfNeeded) {
+            return await this.updateStoryIfNeeded(response.data, story.token);
+        }
+
+        return new Story(response.data);
+    }
+
+    async findWithoutUpdates(story) {
+        return this.find(story, false);
     }
 
     // If local campaign is newer then remote campaign, update it
@@ -69,7 +95,7 @@ export default class StoryRepository extends ApiRepository {
 
         if (localStory
             && localStory.data != null
-            && localStory.updated_at > remoteStory.updated_at) {
+            && localStory.updated_at.isAfter(remoteStory.updated_at)) {
             remoteStory = await this.update(localStory);
         } else {
             this.storeStory(response, token);

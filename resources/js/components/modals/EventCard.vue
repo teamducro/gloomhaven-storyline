@@ -18,10 +18,12 @@
                     <!-- push buttons under the flip card wit the same aspect ratio -->
                     <webp :src="card.images[0]" class="invisible"></webp>
 
-                    <div v-if="blur"
-                         class="blur rounded-lg absolute h-1/2 w-full top-0 left-0"
-                         :class="{'top-1/2': choice === 'A'}">
-                    </div>
+                    <transition name="fade">
+                        <div v-if="blur"
+                             class="blur rounded-lg absolute h-1/2 w-full top-0 left-0"
+                             :class="{'top-1/2': choice === 'A'}">
+                        </div>
+                    </transition>
                 </div>
                 <div v-if="!choice" class="mt-4 flex justify-between">
                     <button @click="chose('A')"
@@ -33,12 +35,17 @@
                         <span class="mdc-button__label">B</span>
                     </button>
                 </div>
-                <div v-if="choice" class="mt-4 flex justify-center">
+                <div v-if="choice" class="mt-4 flex justify-between">
                     <button @click="blur = !blur"
                             class="mdc-button origin-left transform scale-90 mdc-button--raised">
                         <span class="mdc-button__label">
                             {{ $t('Toggle') + ' ' + (choice === 'A' ? 'B' : 'A') }}
                         </span>
+                    </button>
+
+                    <button @click="remove"
+                            class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                        <img width="26" src="/img/icons/remove-card.png" :alt="'Remove #' + card.id"/>
                     </button>
                 </div>
             </div>
@@ -60,6 +67,7 @@ export default {
             choice: null,
             animating: false,
             blur: false,
+            removed: false,
             preloadImage: new PreloadImage(),
         }
     },
@@ -77,22 +85,25 @@ export default {
             this.choice = null;
             this.animating = false;
             this.blur = false;
+            this.removed = false;
             this.$refs['modal'].open();
             this.preloadImage.handle(card.images[1]);
         },
         chose(choice) {
             this.choice = choice;
             this.animating = true;
-
-            // half way animating
-            setTimeout(() => {
-                this.blur = true;
-            }, 200);
+            this.blur = true;
 
             // animation done
             setTimeout(() => {
                 this.animating = false;
             }, 600);
+        },
+        remove() {
+            if (!this.removed && this.choice && !this.animating) {
+                this.removed = true;
+                this.$bus.$emit('remove-card', this.card);
+            }
         },
         close() {
             this.card = null;

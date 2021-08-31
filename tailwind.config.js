@@ -19,6 +19,9 @@ module.exports = {
                 11: '2.75rem',
                 14: '3.5rem',
                 28: '7rem',
+                30: '7.5rem',
+                32: '8rem',
+                36: '9rem',
                 '1/2': '50%',
                 '1/4': '25%',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
@@ -26,15 +29,33 @@ module.exports = {
                 'area-inset-bottom': 'env(safe-area-inset-bottom, 0)',
                 'area-inset-left': 'env(safe-area-inset-left, 0)',
             },
-            height: {'1/2': '50%', '2px': '2px'},
-            maxWidth: {party: '1041px'},
-            screens: {xs: '400px', lgh: {raw: '(min-height: 600px)'}},
-            zIndex: {1: '1', 5: '5'},
-            lineHeight: {12: '3rem'},
+            height: {
+                '1/2': '50%',
+                '2px': '2px'
+            },
+            maxWidth: {
+                'party': '1041px'
+            },
+            screens: {
+                xs: '430px',
+                'sheet-break-lg': '872px',
+                lgh: {'raw': '(min-height: 600px)'}
+            },
+            zIndex: {
+                1: '1',
+                5: '5'
+            },
+            lineHeight: {
+                '12': '3rem',
+            },
+            fontSize: {
+                xxs: ['0.5rem', '0.75rem'],
+            },
             colors: {
                 primary: '#3771E0',
                 'primary-dark': '#2356b7',
                 secondary: '#018786',
+                patreon: '#ff424d',
                 background: '#000',
                 surface: '#111',
                 'dark-background': '#1b1b1b',
@@ -65,8 +86,35 @@ module.exports = {
                 'slight-white': '0px 0px 20px 5px rgba(255,255,255,0.1)',
                 white: '0px 0px 20px 5px rgba(255,255,255,0.2)',
             },
-            margin: {7: '1.75rem', 18: '4.5rem'},
-            rotate: {270: '270deg'},
+            margin: {
+                7: '1.75rem',
+                18: '4.5rem'
+            },
+            rotate: {
+                '270': '270deg',
+            }
         },
-    },
+        order: {
+            1: '1',
+            2: '2',
+            3: '3',
+            4: '4',
+            5: '5',
+            6: '6',
+            7: '7',
+            8: '8',
+            9: '9',
+            10: '10',
+            11: '11',
+            12: '12',
+            13: '13',
+            14: '14',
+            15: '15',
+            16: '16',
+            17: '17',
+            18: '18',
+            19: '19',
+            20: '20'
+        }
+    }
 }

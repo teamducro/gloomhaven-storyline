@@ -2,7 +2,7 @@ let mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 const md5File = require('md5-file/promise');
 const replace = require('replace-in-file');
-const moment = require('moment');
+const dayjs = require('dayjs');
 
 mix.extend('i18n', new class {
         webpackRules() {
@@ -55,7 +55,7 @@ mix.i18n()
 
         // set date in sitemap
         for (let i = 0; i < 20; i++) {
-            await replace({files: 'public/sitemap.xml', from: /release-date/, to: moment().format('YYYY-MM-DD')});
+            await replace({files: 'public/sitemap.xml', from: /release-date/, to: dayjs().format('YYYY-MM-DD')});
         }
     });
 

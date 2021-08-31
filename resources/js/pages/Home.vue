@@ -123,7 +123,7 @@
                     <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2" aria-hidden="true">assignment</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                            Party Sheet
+                            Party and Character sheets
                         </h3>
                     </template>
                     <template v-slot:left>
@@ -146,7 +146,8 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <webp src="/img/gloomhaven-party-sheet.jpg" class="w-full mx-auto rounded-md shadow-md"
+                        <webp src="/img/gloomhaven-party-character-sheets.jpg"
+                              class="w-full mx-auto rounded-md shadow-md"
                               alt="Gloomhaven Party Sheet"/>
                     </template>
                 </two-column-content>
