@@ -16,7 +16,7 @@
 
                 <two-column-content>
                     <template v-slot:title>
-                        <img src="/img/icons/story.svg" alt="Storyline icon" class="mr-2"/>
+                        <img src="/svg/icons/story.svg" alt="Storyline icon" class="mr-2"/>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
                             Summaries
                         </h3>
@@ -45,7 +45,7 @@
 
                 <two-column-content reverse>
                     <template v-slot:title>
-                        <img src="/img/icons/achievements.svg" alt="Achievements icon" class="mr-2 h-5"/>
+                        <img src="/svg/icons/achievements.svg" alt="Achievements icon" class="mr-2 h-5"/>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
                             Clear and organized
                         </h3>
