@@ -190,7 +190,7 @@ export default class ScenarioRepository {
     }
 
     processItems(items, checked) {
-        if (!items.empty) {
+        if (!items.isEmpty()) {
             let sheet = this.sheetRepository.make(app.game);
             items.each(item => {
                 sheet.itemDesigns[item] = checked;

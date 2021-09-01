@@ -30,6 +30,7 @@ import polyfills from "./services/app/polyfills";
 import dayjs from "dayjs";
 import localizedFormat from 'dayjs/plugin/localizedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
+import TreasureValidator from "./services/TreasureValidator";
 
 window._ = require('lodash');
 window.c = require('cash-dom');
@@ -115,6 +116,7 @@ window.app = new Vue({
             storyRepository: new StoryRepository,
             echo: new EchoService,
             scenarioValidator: new ScenarioValidator,
+            treasureValidator: new TreasureValidator,
             storySyncer: new StorySyncer,
             offlineChecker: new OfflineChecker(this.$bus)
         }
@@ -164,6 +166,7 @@ window.app = new Vue({
 
             await this.$nextTick();
             this.scenarioValidator.validate(shouldSync);
+            this.treasureValidator.validate();
             this.$bus.$emit('scenarios-updated');
 
             return true;
