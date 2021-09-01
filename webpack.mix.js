@@ -34,7 +34,8 @@ mix.i18n()
     .copy('resources/fonts', 'public/fonts')
     .options({
         processCssUrls: false,
-        postCss: [tailwindcss('./tailwind.config.js')]
+        postCss: [tailwindcss('./tailwind.config.js')],
+        autoprefixer: {remove: false}
     })
     .setPublicPath('public')
     .override(config => {
