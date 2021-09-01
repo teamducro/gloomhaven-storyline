@@ -3,7 +3,7 @@
         <inline-svg
             v-if="storyline !== null && isPortrait !== null"
             :key="storylineKey"
-            :src="storyline"
+            :src="'storylines/'+storyline"
             id="storyline"
             :classes="['h-screen', 'w-screen']"
         />
@@ -209,9 +209,8 @@ export default {
             c('.campaign-name').text(this.campaignName);
         },
         setStoryline() {
-            const storyline = 'storyline-' + app.game;
-            if (this.storyline !== storyline) {
-                this.storyline = storyline;
+            if (this.storyline !== app.game) {
+                this.storyline = app.game;
                 return true;
             }
         },
