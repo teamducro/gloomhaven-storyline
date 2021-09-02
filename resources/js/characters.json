@@ -557,7 +557,7 @@
             },
             {
                 "count": 2,
-                "desc": "Add one {+1_WHITE} {DARK} card"
+                "desc": "Add one {-1_WHITE} {DARK} card"
             },
             {
                 "count": 2,
@@ -665,7 +665,7 @@
             },
             {
                 "count": 2,
-                "desc": "Add one {+2_WHITE} card"
+                "desc": "Add one {+2_WHITE} {FIRE} card"
             },
             {
                 "count": 1,
