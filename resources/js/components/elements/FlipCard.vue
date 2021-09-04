@@ -38,7 +38,6 @@ export default {
 
         .front, .back {
             @apply absolute w-full h-full;
-            -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
         }
 
