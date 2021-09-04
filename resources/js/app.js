@@ -31,10 +31,11 @@ import dayjs from "dayjs";
 import localizedFormat from 'dayjs/plugin/localizedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import TreasureValidator from "./services/TreasureValidator";
+import Vue from 'vue';
 
 window._ = require('lodash');
 window.c = require('cash-dom');
-window.Vue = require('vue');
+window.Vue = Vue;
 window.collect = require('collect.js');
 window.axios = require('axios').default.create({
     baseURL: process.env.MIX_API_URL,

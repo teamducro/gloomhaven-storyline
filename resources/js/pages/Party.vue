@@ -132,8 +132,8 @@
                                       @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
                         </td>
                         <td class="w-full flex flex-wrap">
-                            <span class="whitespace-normal md:whitespace-no-wrap">{{ unlock.goal }}</span>
-                            <span class="whitespace-normal md:whitespace-no-wrap ml-auto flex items-center text-right">
+                            <span class="whitespace-normal md:whitespace-nowrap">{{ unlock.goal }}</span>
+                            <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
                                 <span class="material-icons mr-1">remove</span>
                                 <component v-bind:is="renderHtml(unlock.reward)"></component>
                             </span>
@@ -146,11 +146,11 @@
                                       @change="(id, isChecked) => {sheet.unlocks[8] = isChecked; store(); rerenderX();}"></checkbox>
                         </td>
                         <td class="w-full flex flex-wrap items-center">
-                            <span class="whitespace-normal md:whitespace-no-wrap">
+                            <span class="whitespace-normal md:whitespace-nowrap">
                                 {{ $t('Envelope') }} <span class="font-title">x</span> {{ $t('opened') }}
                             </span>
                             <span v-show="sheet.unlocks[8]" :key="'a'+renderX"
-                                  class="whitespace-normal md:whitespace-no-wrap ml-auto flex items-center text-right">
+                                  class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
                                 <span class="material-icons mr-1">remove</span>
                                 {{ $t('Clues') }}
                                 <span>
@@ -172,7 +172,7 @@
                                       @change="(id, isChecked) => {sheet.unlocks[9] = isChecked; store()}"></checkbox>
                         </td>
                         <td class="w-full flex flex-wrap">
-                            <span class="whitespace-normal md:whitespace-no-wrap">
+                            <span class="whitespace-normal md:whitespace-nowrap">
                                 {{ $t('Envelope') }} <span class="font-title">x</span> {{ $t('solved') }}
                             </span>
                         </td>

@@ -15,7 +15,7 @@
                           @close="dropDownClose = false">
                     <template v-slot:trigger>
                         <button type="button"
-                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 i-bg-black2-50 rounded-full transform transition-transform"
+                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-black2-50 rounded-full transform transition-transform"
                                 :class="{'rotate-45': dropDownClose}">
                             add
                         </button>
@@ -93,7 +93,7 @@
                         <webp :src="row.slot" class="inline-block mr-2" width="20"/>
                     </span>
                 </span>
-                <span slot="name" class="xs:whitespace-no-wrap" slot-scope="{value, row}">
+                <span slot="name" class="xs:whitespace-nowrap" slot-scope="{value, row}">
                     {{ value }}<br>
                     <span class="lg:hidden">
                         <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>

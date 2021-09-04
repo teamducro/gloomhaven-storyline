@@ -5,7 +5,7 @@
             <dropdown ref="filter-dropdown" align="right">
                 <template v-slot:trigger>
                     <button type="button"
-                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 i-bg-black2-50 rounded-full"
+                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-black2-50 rounded-full"
                             :class="{'text-primary': filterEnabled}">
                         filter_list
                     </button>
@@ -17,7 +17,7 @@
                         <span class="mdc-list-item__text">Clear filter</span>
                     </li>
 
-                    <li role="separator" class="mdc-list-divider i-my-2"></li>
+                    <li role="separator" class="mdc-list-divider !my-2"></li>
 
                     <li v-for="state in states"
                         class="mdc-list-item cursor-pointer"
@@ -31,7 +31,7 @@
                         <span class="mdc-list-item__text">Missed Treasures</span>
                     </li>
 
-                    <li role="separator" class="mdc-list-divider i-my-2"></li>
+                    <li role="separator" class="mdc-list-divider !my-2"></li>
 
                     <li v-if="scenarios"
                         v-for="region in scenarioRepository.fetchRegionsWithScenarios().items"

@@ -38,14 +38,14 @@
                         <div class="mdc-select__menu mdc-menu mdc-menu-surface overflow-visible"
                              style="min-width: 240px">
                             <ul class="mdc-list">
-                                <li class="mdc-list-item cursor-pointer whitespace-no-wrap"
+                                <li class="mdc-list-item cursor-pointer whitespace-nowrap"
                                     data-value="local">
                                     {{ $t('local') }}
                                     <span class="ml-4 mt-1 cloud-off"></span>
                                 </li>
                                 <li v-for="(story) in stories.items"
                                     :key="story.campaignId" :data-value="story.campaignId"
-                                    class="mdc-list-item cursor-pointer whitespace-no-wrap flex items-center">
+                                    class="mdc-list-item cursor-pointer whitespace-nowrap flex items-center">
                                     {{ story.name }}
                                     <span class="ml-4 mt-1 cloud-on"></span>
                                 </li>
