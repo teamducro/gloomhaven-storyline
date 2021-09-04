@@ -5,3 +5,7 @@
 .grayscale {
     filter: grayscale(100);
 }
+
+.blur {
+    backdrop-filter: blur(4px);
+}
