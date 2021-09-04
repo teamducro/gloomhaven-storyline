@@ -146,7 +146,7 @@
                             </h4>
                             <div class="flex-1 border-t-2 border-gray-200"></div>
                         </div>
-                        <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-5 lg:row-gap-5">
+                        <ul class="mt-8 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-5">
                             <li class="flex items-start lg:col-span-1">
                                 <div class="flex-shrink-0">
                                     <inline-svg src="icons/check"/>

@@ -7,7 +7,7 @@
                 <option v-for="tab in tabs" :selected="selected === tab" :value="tab">{{ tab }}</option>
             </select>
             <label v-if="selected" :for="id" class="flex items-center">
-                <span v-if="icons[tabs.indexOf(selected)]" class="material-icons i-text-md mr-2"
+                <span v-if="icons[tabs.indexOf(selected)]" class="material-icons !text-md mr-2"
                       :class="{'transform rotate-180': icons[tabs.indexOf(selected)] === 'style'}">
                             {{ icons[tabs.indexOf(selected)] }}
                 </span>

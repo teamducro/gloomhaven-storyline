@@ -114,7 +114,7 @@
                                         <div class="rounded-lg shadow-md">
                                             <purchase>
                                                 <a href="#"
-                                                   class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150"
+                                                   class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring focus:ring-blue-700 transition ease-in-out duration-150"
                                                    aria-describedby="tier-gloomhaven">
                                                     Buy shared campaign
                                                 </a>

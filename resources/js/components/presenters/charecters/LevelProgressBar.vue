@@ -5,7 +5,7 @@
                 <div class="absolute left-0 top-0 rounded-full bg-primary h-1"
                      :style="{width: progress+'%'}"></div>
             </div>
-            <div class="ml-2 mt-2 flex flex-col leading-4 whitespace-no-wrap text-center">
+            <div class="ml-2 mt-2 flex flex-col leading-4 whitespace-nowrap text-center">
                 <span>{{ $t('Lvl') }} {{ level + 1 }}</span>
                 <span>{{ levels[level + 1] }} {{ $t('XP') }}</span>
             </div>

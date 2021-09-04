@@ -93,7 +93,7 @@
                         <webp :src="row.slot" class="inline-block mr-2" width="20"/>
                     </span>
                 </span>
-                <span slot="name" class="xs:whitespace-no-wrap" slot-scope="{value, row}">
+                <span slot="name" class="xs:whitespace-nowrap" slot-scope="{value, row}">
                     {{ value }}<br>
                     <span class="lg:hidden">
                         <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
