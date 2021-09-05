@@ -112,8 +112,3 @@ export default {
     }
 }
 </script>
-<style scoped lang="scss">
-.blur {
-    backdrop-filter: blur(4px);
-}
-</style>

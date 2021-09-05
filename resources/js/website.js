@@ -15,8 +15,9 @@ import Webp from "./components/elements/Webp";
 import TopMenu from "./pages/sections/TopMenu";
 import SiteFooter from "./pages/sections/SiteFooter";
 import BecomePatronButton from "./components/elements/BecomePatronButton";
+import Vue from 'vue';
 
-window.Vue = require('vue');
+window.Vue = Vue;
 window.axios = require('axios').default.create({
     baseURL: process.env.MIX_API_URL,
     withCredentials: true

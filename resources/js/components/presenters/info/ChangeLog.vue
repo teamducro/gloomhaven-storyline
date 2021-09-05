@@ -8,7 +8,7 @@
 
         <div class="flex flex-col">
             <div class="overflow-hidden rounded-lg">
-                <table class="min-w-full divide-y divide-gray-200">
+                <table class="min-w-full divide-y divide-gray-100">
                     <thead class="bg-black2-50">
                     <tr>
                         <th scope="col"

@@ -3,11 +3,11 @@
         <!-- Mobile tabs -->
         <div class="relative xs:hidden pb-2 mb-4 border-b border-white2-25">
             <select :id="id" :name="id" @change="mobileSelect"
-                    class="block w-full absolute opacity-0 font-title text-md -ml-1">
+                    class="block w-full bg-transparent absolute opacity-0 font-title text-md -ml-1">
                 <option v-for="tab in tabs" :selected="selected === tab" :value="tab">{{ tab }}</option>
             </select>
             <label v-if="selected" :for="id" class="flex items-center">
-                <span v-if="icons[tabs.indexOf(selected)]" class="material-icons i-text-md mr-2"
+                <span v-if="icons[tabs.indexOf(selected)]" class="material-icons !text-md mr-2"
                       :class="{'transform rotate-180': icons[tabs.indexOf(selected)] === 'style'}">
                             {{ icons[tabs.indexOf(selected)] }}
                 </span>
@@ -22,7 +22,7 @@
                 <a v-for="(tab, index) in tabs" href="#" @click="select(tab, $event)"
                    class="group inline-flex items-center font-title text-md transition-colors"
                    :class="{'text-white': selected === tab, 'text-white2-50 hover:text-white2-75': selected !== tab}">
-                        <span v-if="icons[index]" class="material-icons i-text-md mr-2"
+                        <span v-if="icons[index]" class="material-icons !text-md mr-2"
                               :class="{'transform rotate-180': icons[index] === 'style'}">
                             {{ icons[index] }}
                         </span>
@@ -90,6 +90,3 @@ export default {
     }
 }
 </script>
-<style lang="scss" scoped>
-
-</style>
