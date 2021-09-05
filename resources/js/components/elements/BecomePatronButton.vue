@@ -58,6 +58,7 @@ export default {
 }
 
 .iyzAZC {
+    -webkit-appearance: none;
     -webkit-box-align: center;
     align-items: center;
     backface-visibility: hidden;
