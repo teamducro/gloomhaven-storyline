@@ -95,6 +95,7 @@ export default {
                     '{DARK}': '<webp src="/img/icons/elements/dark.png" width="20" class="inline"/>',
                     '{EARTH}': '<webp src="/img/icons/elements/earth.png" width="20" class="inline"/>',
                     '{FIRE}': '<webp src="/img/icons/elements/fire.png" width="20" class="inline"/>',
+                    '{FIRE_LIGHT}': '<webp src="/img/icons/elements/fire_light.png" width="40" class="inline"/>',
                     '{ICE}': '<webp src="/img/icons/elements/ice.png" width="20" class="inline"/>',
                     '{WIND}': '<webp src="/img/icons/elements/wind.png" width="20" class="inline"/>',
                     '{LIGHT}': '<webp src="/img/icons/elements/light.png" width="20" class="inline"/>',
