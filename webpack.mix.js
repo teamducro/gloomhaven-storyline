@@ -31,6 +31,7 @@ mix.i18n()
     })
     .copyDirectory('resources/public', 'public')
     .copyDirectory('resources/img', 'public/img')
+    .copyDirectory('resources/svg', 'public/svg')
     .copyDirectory('resources/fonts', 'public/fonts')
     .options({
         processCssUrls: false,

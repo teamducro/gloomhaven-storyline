@@ -166,10 +166,18 @@ export default {
     "Buy shared campaign": "Comprar campaña compartida",
     "Add shared campaign": "Add shared campaign",
     "donations": {
-        "1": "¡Todo el contenido en Gloomhaven Storyline Tracker es gratis!",
-        "2": "La versión de pago habilita la sincronización automática, ¡con ella ya no es necesario compartir el progreso manualmente! Esto cubre el coste de mantener esta app para la comunidad.",
-        "3": "Por favor, contempla la opción de comprar una licencia, ayuda mucho.",
-        "title": "¡Sincronización automática del progreso!",
+        "1": {
+            "1": "¡Todo el contenido en Gloomhaven Storyline Tracker es gratis!",
+            "2": "La versión de pago habilita la sincronización automática, ¡con ella ya no es necesario compartir el progreso manualmente! Esto cubre el coste de mantener esta app para la comunidad.",
+            "3": "Por favor, contempla la opción de comprar una licencia, ayuda mucho.",
+            "title": "¡Sincronización automática del progreso!"
+        },
+        "2": {
+            "1": "Don't forget to backup your progress once in a while, the manual share feature is great for that!",
+            "2": "The paid version provides automatic backups, you can always continue where you left off or even rollback unwanted changes. This covers costs maintaining this app for the community.",
+            "3": "Please consider a license, it helps a lot.",
+            "title": "Automatic backups!",
+        },
         "close": "Seguir usando la app"
     },
     "Support": "Soporte",
