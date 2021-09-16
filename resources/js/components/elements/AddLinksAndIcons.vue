@@ -8,6 +8,7 @@ import ScenarioTextParser from "../../services/ScenarioTextParser";
 import ScenarioRepository from "../../repositories/ScenarioRepository";
 import Helpers from "../../services/Helpers";
 import GameData from "../../services/GameData";
+import ItemRepository from "../../repositories/ItemRepository";
 
 export default {
     props: {
@@ -20,6 +21,7 @@ export default {
         return {
             itemTextParser: new ItemTextParser,
             scenarioTextParser: new ScenarioTextParser,
+            itemRepository: new ItemRepository,
             scenarioRepository: new ScenarioRepository,
             gameData: new GameData,
             scenarios: {}
@@ -44,8 +46,10 @@ export default {
             };
         },
         addItemLinks(text) {
-            this.itemTextParser.parse(text).each((item, id) => {
-                text = text.replace(item, `<a class="link" href="#" @click.prevent="$bus.$emit('open-item', {id:${id}})">${item}</a>`);
+            this.itemTextParser.parse(text).each((itemText, id) => {
+                let item = this.itemRepository.find(id);
+                let linkContent = itemText.replace(`“${item._name}”`, `“${item.name}”`);
+                text = text.replace(itemText, `<a class="link" href="#" @click.prevent="$bus.$emit('open-item', {id:${id}})">${linkContent}</a>`);
             });
 
             return text;
