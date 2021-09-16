@@ -258,6 +258,8 @@ export default {
     "Merchants Bay": "Bahía del Comerciante",
     "East Coast": "Costa Este",
     "different Dimension": "otra Dimensión",
+    "and": "y",
+    "or": "o",
     "scenarios": {
         "Black Barrow": "Túmulo Negro",
         "Barrow Lair": "Guarida del Túmulo",

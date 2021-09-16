@@ -279,6 +279,8 @@ export default {
     "Merchants Bay": "Merchant’s Bay",
     "East Coast": "East Coast",
     "different Dimension": "different Dimension",
+    "and": "and",
+    "or": "or",
     "scenarios": {
         "Black Barrow": "Black Barrow",
         "Barrow Lair": "Barrow Lair",
