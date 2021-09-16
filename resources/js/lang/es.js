@@ -1,4 +1,6 @@
 export default {
+    "and": "y",
+    "or": "o",
     "Storyline": "Historia",
     "Map": "Mapa",
     "Scenario list": "Lista de escenarios",
@@ -27,7 +29,7 @@ export default {
     "Road Event Decks": "Mazo de Enevtos de Camino",
     "Add road events": "Añade Evento de Camino",
     "Draw": "Robar",
-    "Toggle": "Toggle",
+    "Toggle": "Resultado",
     "5 Ancient Technology Global Achievements": "Obtén 5 Logros Globales de “Tecnología Antigua”",
     "Gain The Drakes Command & The Drakes Treasure Party Achievements": "Obtén los logros de Grupo “La orden del Draco” y “El tesoro del Draco”",
     "Add City Event 75 & Road Event 66": "Añade el Evento de Ciudad 75 y Evento de Camino 66",
@@ -72,6 +74,7 @@ export default {
     "Dragons": "Dragones",
     "Voice": "La Voz",
     "Personal Quests": "Misiones personales",
+    "Personal Quest": "Misión personal",
     "Random Scenarios": "Escenarios aleatorios",
     "Sealed": "Cerrado",
     "Road Events": "Eventos de camino",
