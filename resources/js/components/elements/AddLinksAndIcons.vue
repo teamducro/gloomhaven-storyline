@@ -62,7 +62,7 @@ export default {
                         this.scenarios[id] = scenario;
                         text = text.replace(name, `<scenario-number :scenario="scenarios[${id}]"/>`);
                     } else {
-                        text = text.replace(name, 'Hidden Scenario');
+                        text = text.replace(name, this.$t('Hidden Scenario'));
                     }
                 }
             });

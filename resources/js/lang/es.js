@@ -260,6 +260,7 @@ export default {
     "different Dimension": "otra Dimensión",
     "and": "y",
     "or": "o",
+    "Hidden Scenario": "Escenario oculto",
     "scenarios": {
         "Black Barrow": "Túmulo Negro",
         "Barrow Lair": "Guarida del Túmulo",

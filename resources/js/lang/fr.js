@@ -260,6 +260,7 @@ export default {
     "different Dimension": "different Dimension",
     "and": "et",
     "or": "ou",
+    "Hidden Scenario": "Scénario cachée",
     "scenarios": {
         "Black Barrow": "Le Tertre Noir",
         "Barrow Lair": "Le Repaire sous le Tertre",

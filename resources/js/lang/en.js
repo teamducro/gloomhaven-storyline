@@ -281,6 +281,7 @@ export default {
     "different Dimension": "different Dimension",
     "and": "and",
     "or": "or",
+    "Hidden Scenario": "Hidden Scenario",
     "scenarios": {
         "Black Barrow": "Black Barrow",
         "Barrow Lair": "Barrow Lair",
