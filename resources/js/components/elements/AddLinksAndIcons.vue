@@ -70,7 +70,7 @@ export default {
             return text;
         },
         addCharacterIcons(text) {
-            const characters = Object.values(this.gameData.characterOrder(app.game));
+            const characters = this.gameData.characterOrder(app.game);
 
             if (text.match(new RegExp(characters.join('|'))) !== null) {
                 characters.forEach((character) => {

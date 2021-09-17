@@ -1,13 +1,18 @@
 import achievementsJson from '../achievements.json'
 import scenariosJson from '../scenarios.json'
+import scenariosJotlJson from '../scenarios-jotl.json'
 import questsJson from '../quests.json'
 import questsFCJson from '../quests-fc.json'
+import questsJotlJson from '../quests-jotl.json'
 import itemsJson from '../items.json'
+import itemsJotlJson from '../items-jotl.json'
 import charactersJson from '../characters.json'
 
 export default class GameData {
     achievements(game) {
         switch (game) {
+            case 'jotl':
+                return []
             default:
                 return achievementsJson
         }
@@ -48,6 +53,8 @@ export default class GameData {
 
     _scenarioData(game) {
         switch (game) {
+            case 'jotl':
+                return scenariosJotlJson
             default:
                 return scenariosJson
         }
@@ -57,6 +64,8 @@ export default class GameData {
         switch (game) {
             case 'fc':
                 return questsFCJson
+            case 'jotl':
+                return questsJotlJson
             default:
                 return questsJson
         }
@@ -64,6 +73,8 @@ export default class GameData {
 
     items(game) {
         switch (game) {
+            case 'jotl':
+                return itemsJotlJson
             default:
                 return itemsJson
         }

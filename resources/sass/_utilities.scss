@@ -5,3 +5,9 @@
 .grayscale {
     filter: grayscale(100);
 }
+
+@for $i from 1 through 30 {
+    .order-#{$i} {
+        order: $i;
+    }
+}

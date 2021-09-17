@@ -13,6 +13,9 @@ export default {
     reverse(obj) {
         return Object.assign({}, ...Object.entries(obj).map(([a, b]) => ({[b]: a})));
     },
+    unique(array) {
+        return array.filter((value, index, self) => self.indexOf(value) === index);
+    },
     nl2br(string) {
         if (typeof string === 'undefined' || string === null) {
             return '';

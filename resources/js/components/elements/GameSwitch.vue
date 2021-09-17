@@ -18,7 +18,8 @@ export default {
             current: null,
             games: {
                 gh: this.$t('Gloomhaven'),
-                fc: this.$t('Forgotten Circles')
+                fc: this.$t('Forgotten Circles'),
+                jotl: this.$t('Jaws of the Lion'),
             }
         }
     },

@@ -86,7 +86,7 @@ export default {
         },
         noResults: {
             type: String,
-            default: 'No results'
+            default: 'No results' // pass value to translate
         }
     },
     data() {
