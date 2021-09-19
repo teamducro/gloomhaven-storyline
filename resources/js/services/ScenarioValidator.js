@@ -90,20 +90,8 @@ export default class ScenarioValidator {
             return;
         }
 
-        // skip if scenario has no requirements
-        if (scenario.required_by.isEmpty()) {
-            // correct scenario state
-            if (scenario.isRequired()) {
-                this.scenarioRepository.setIncomplete(scenario);
-                this.needsValidating = true;
-            }
-            return;
-        }
-
-        let conditions = scenario.required_by;
-
-        let blocking_conditions = scenario.blocks_on;
-        let shouldBeBlocked = blocking_conditions.contains((condition) => {
+        let blockingConditions = scenario.blocks_on;
+        let shouldBeBlocked = !!blockingConditions.count() && blockingConditions.contains((condition) => {
             let completeCheck = this.checkCompleteConditions(condition.complete || []);
 
             let lost = condition.lost || [];
@@ -123,7 +111,8 @@ export default class ScenarioValidator {
             return;
         }
 
-        let shouldBeRequired = conditions.contains((condition) => {
+        let requiringConditions = scenario.required_by;
+        let shouldBeRequired = !!requiringConditions.count() && requiringConditions.contains((condition) => {
             let allIncompleteRequirementsOk = this.checkIncompleteConditions(condition.incomplete || []);
             let allCompleteRequirementsOk = this.checkCompleteConditions(condition.complete || []);
 
