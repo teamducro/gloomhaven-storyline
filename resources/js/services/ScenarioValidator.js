@@ -104,16 +104,14 @@ export default class ScenarioValidator {
 
         let blocking_conditions = scenario.blocks_on;
         let shouldBeBlocked = blocking_conditions.contains((condition) => {
-            let complete = condition.complete || [];
-            let completeCheck = complete.length && complete.every((achievementId) => {
-                let achievement = this.achievementRepository.find(achievementId) || {};
-                return achievement.awarded;
-            });
+            let completeCheck = this.checkCompleteConditions(condition.complete || []);
+
             let lost = condition.lost || [];
             let lostCheck = lost.length && lost.every((achievementId) => {
                 let achievement = this.achievementRepository.find(achievementId) || {};
                 return achievement.lost;
             });
+
             return completeCheck || lostCheck;
         });
 
@@ -126,16 +124,9 @@ export default class ScenarioValidator {
         }
 
         let shouldBeRequired = conditions.contains((condition) => {
-            let incomplete = condition.incomplete || [];
-            let allIncompleteRequirementsOk = incomplete.every((achievementId) => {
-                let achievement = this.achievementRepository.find(achievementId) || {};
-                return !achievement.awarded;
-            });
-            let complete = condition.complete || [];
-            let allCompleteRequirementsOk = complete.every((achievementId) => {
-                let achievement = this.achievementRepository.find(achievementId) || {};
-                return achievement.awarded;
-            });
+            let allIncompleteRequirementsOk = this.checkIncompleteConditions(condition.incomplete || []);
+            let allCompleteRequirementsOk = this.checkCompleteConditions(condition.complete || []);
+
             return allIncompleteRequirementsOk && allCompleteRequirementsOk;
         }) === false;
 
@@ -148,6 +139,22 @@ export default class ScenarioValidator {
             this.scenarioRepository.setIncomplete(scenario);
             this.needsValidating = true;
         }
+    }
+
+    checkCompleteConditions(conditions, shouldBeCompleted = true) {
+        return conditions.every((scenarioOrAchievementId) => {
+            if (Number.isInteger(scenarioOrAchievementId)) {
+                let scenario = this.scenarioRepository.find(scenarioOrAchievementId) || {};
+                return shouldBeCompleted ? scenario.isComplete() : !scenario.isComplete();
+            } else {
+                let achievement = this.achievementRepository.find(scenarioOrAchievementId) || {};
+                return shouldBeCompleted ? achievement.awarded : !achievement.awarded;
+            }
+        });
+    }
+
+    checkIncompleteConditions(conditions) {
+        return this.checkCompleteConditions(conditions, false);
     }
 
     linkedScenarios(scenario) {
