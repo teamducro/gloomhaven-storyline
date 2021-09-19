@@ -5,7 +5,7 @@ export default class ItemRepository {
 
     fetch(game) {
         return collect((new GameData).items(game)).map((item) => {
-            item = new Item(item);
+            item = new Item(item, game);
             return item;
         });
     }

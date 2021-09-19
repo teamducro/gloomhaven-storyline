@@ -2,7 +2,7 @@ import slugify from "slugify";
 
 class Item {
 
-    constructor(data) {
+    constructor(data, game) {
         this.id = data.id;
         this.number = '#' + String(data.id).padStart(3, '0');
         this._name = data.name;
@@ -15,6 +15,7 @@ class Item {
         this.faq = data.faq;
         this.spent = data.spent || false;
         this.consumed = data.consumed || false;
+        this.game = game;
     }
 
     get name() {
@@ -43,7 +44,9 @@ class Item {
     }
 
     get image() {
-        return '/img/items/' + slugify(this._name.replaceAll("'", ''), {lower: true}) + '.png';
+        // FC uses GH items
+        const folder = this.game === 'fc' ? 'gh' : this.game;
+        return '/img/items/' + folder + '/' + slugify(this._name.replaceAll("'", ''), {lower: true}) + '.png';
     }
 }
 
