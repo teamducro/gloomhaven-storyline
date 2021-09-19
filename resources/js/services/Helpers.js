@@ -31,5 +31,8 @@ export default {
     },
     sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    },
+    makeArrayWithNumbers(length, start = 1) {
+        return Array.from({length}, (_, i) => i + start);
     }
 }

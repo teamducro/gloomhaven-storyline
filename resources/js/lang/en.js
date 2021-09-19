@@ -58,7 +58,7 @@ export default {
     "Battle Goals": "Battle Goals",
     "You may select an additional perk!": "You may select an additional perk!",
     "Number or Name": "Number or Name",
-    "No items found": "No items found",
+    "No items available": "No items available",
     "Buy me a Beer": "Buy me a Beer!",
     "Intro": "Intro",
     "The Merchant": "The Merchant",
