@@ -144,7 +144,7 @@
             ],
             "treasures": {
                 "38": "“Ring of Skulls” design (Item 123)",
-                "46": "Suffer 3 damage and gain POISON"
+                "46": "Suffer 3 damage and gain {POISON}"
             },
             "region_ids": [
                 7
@@ -3279,9 +3279,9 @@
             ],
             "chapter_id": 105,
             "treasures": {
-                "13": "Suffer 5 Damage and gain POISON and WOUND",
+                "13": "Suffer 5 Damage and gain {POISON} and {WOUND}",
                 "27": "Gain “Orb of Twilight” (Item 122)",
-                "43": "Suffer 5 damage gain POISON and WOUND"
+                "43": "Suffer 5 damage gain {POISON} and {WOUND}"
             },
             "region_ids": [
                 1
@@ -3701,8 +3701,8 @@
                 97
             ],
             "treasures": {
-                "76": "Suffer 3 damage, gain WOUND and 10 gold",
-                "85": "Suffer 3 damage, gain POISON and 10 gold"
+                "76": "Suffer 3 damage, gain {WOUND} and 10 gold",
+                "85": "Suffer 3 damage, gain {POISON} and 10 gold"
             },
             "choices": [
                 106,
