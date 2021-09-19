@@ -191,7 +191,7 @@
 
                         <div class="relative h-8 mb-6">
                             <div class="flex absolute left-0 top-0 origin-left transform scale-75">
-                                <button class="mdc-button mdc-button--raised mr-2"
+                                <button v-if="scenario.pages.length" class="mdc-button mdc-button--raised mr-2"
                                         @click="openPages()">
                                     <i class="material-icons mdc-button__icon">menu_book</i>
                                     <span class="mdc-button__label">{{ $t('Pages') }}</span>
