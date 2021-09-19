@@ -9,7 +9,7 @@
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
-            <div v-if="sheet.itemDesigns.items" class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
+            <div v-if="Object.keys(sheet.itemDesigns).length" class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
                 <dropdown class="items-to-add-dropdown" align="right" width=""
                           @open="dropDownClose = true"
                           @close="dropDownClose = false">
@@ -198,7 +198,6 @@ export default {
                 sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
             }
             this.items = this.itemRepository.findMany(sheetItems);
-            console.log(this.items);
         },
         changeItem(id, isChecked) {
             const item = parseInt(id.replace('item-', ''));
