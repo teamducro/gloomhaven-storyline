@@ -25,6 +25,9 @@
                 "y": 0
             },
             "chapter_id": 1,
+            "linked_from": [
+                1
+            ],
             "links_to": [
                 3
             ],
@@ -42,6 +45,9 @@
                 "y": 0
             },
             "chapter_id": 1,
+            "linked_from": [
+                2
+            ],
             "links_to": [
                 4
             ],
@@ -59,6 +65,9 @@
                 "y": 0
             },
             "chapter_id": 1,
+            "linked_from": [
+                3
+            ],
             "links_to": [
                 5
             ],
@@ -76,6 +85,9 @@
                 "y": 0
             },
             "chapter_id": 1,
+            "linked_from": [
+                4
+            ],
             "links_to": [
                 6
             ],
@@ -93,6 +105,9 @@
                 "y": 0
             },
             "chapter_id": 2,
+            "linked_from": [
+                5
+            ],
             "links_to": [
                 7,
                 8
@@ -114,6 +129,9 @@
                         8
                     ]
                 }
+            ],
+            "linked_from": [
+                6
             ],
             "links_to": [
                 9
@@ -139,6 +157,9 @@
                     ]
                 }
             ],
+            "linked_from": [
+                6
+            ],
             "links_to": [
                 9
             ],
@@ -156,6 +177,10 @@
                 "y": 0
             },
             "chapter_id": 2,
+            "linked_from": [
+                7,
+                8
+            ],
             "links_to": [
                 10
             ],
@@ -173,6 +198,9 @@
                 "y": 0
             },
             "chapter_id": 2,
+            "linked_from": [
+                9
+            ],
             "links_to": [
                 11,
                 12
@@ -198,6 +226,9 @@
                 }
             ],
             "chapter_id": 2,
+            "linked_from": [
+                10
+            ],
             "links_to": [
                 13,
                 19
@@ -220,6 +251,9 @@
                 }
             ],
             "chapter_id": 2,
+            "linked_from": [
+                10
+            ],
             "links_to": [
                 14,
                 18
@@ -235,6 +269,9 @@
                 "y": 0
             },
             "chapter_id": 2,
+            "linked_from": [
+                11
+            ],
             "links_to": [
                 15
             ],
@@ -252,6 +289,9 @@
                 "y": 0
             },
             "chapter_id": 2,
+            "linked_from": [
+                12
+            ],
             "links_to": [
                 15
             ],
@@ -269,6 +309,10 @@
                 "y": 0
             },
             "chapter_id": 2,
+            "linked_from": [
+                13,
+                14
+            ],
             "links_to": [
                 16
             ]
@@ -283,6 +327,9 @@
                 "y": 0
             },
             "chapter_id": 2,
+            "linked_from": [
+                15
+            ],
             "links_to": [
                 17
             ]
@@ -297,6 +344,9 @@
                 "y": 0
             },
             "chapter_id": 2,
+            "linked_from": [
+                16
+            ],
             "treasures": {
                 "3": "Gain 15 experience"
             }
@@ -311,6 +361,9 @@
                 "y": 0
             },
             "chapter_id": 2,
+            "linked_from": [
+                12
+            ],
             "treasures": {
                 "2": "“Ring of Strength” (Item 31)",
                 "6": "Gain 10 gold",
@@ -327,7 +380,10 @@
                 "x": 0,
                 "y": 0
             },
-            "chapter_id": 2
+            "chapter_id": 2,
+            "linked_from": [
+                11
+            ]
         },
         {
             "id": 20,
