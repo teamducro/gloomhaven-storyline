@@ -37,11 +37,11 @@
                 </dropdown>
             </div>
 
-            <div class="my-4">
+            <div v-if="costModifier != 0" class="my-4">
                 <h2 class="mb-2">{{ $t('Shop modifier') }}:
                     <span>{{ costModifier }} {{ $t('Gold') }}</span>
                 </h2>
-                <p v-if="costModifier != 0" class="text-sm">
+                <p class="text-sm">
                     {{ $t('The cost of items displayed is modified by this amount.') }}
                 </p>
             </div>
