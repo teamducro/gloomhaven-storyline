@@ -83,13 +83,14 @@ export default class GameData {
     map(game = 'gh') {
         let map = 'fc';
 
+        // GH uses the FC map
         if (game !== 'gh') {
             map = game;
         }
 
         return {
-            lowres: `/img/maps/${map}-lowres.jpg`,
-            highres: `/img/maps/${map}-highres.jpg`
+            lowres: `/img/maps/${map}/lowres.jpg`,
+            highres: `/img/maps/${map}/highres.jpg`
         }
     }
 

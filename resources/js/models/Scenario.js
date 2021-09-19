@@ -15,7 +15,7 @@ class Scenario {
         this.pages = data.pages || [];
         this.requirements = data.requirements || "";
         this.quests = data.quests || [];
-        this.cards = collect(data.cards).map((card) => new Card(card));
+        this.cards = collect(data.cards).map((card) => new Card(card, data.game));
         this.chapter_id = data.chapter_id;
         this.chapter_name = null;
         this.region_ids = data.region_ids || [];

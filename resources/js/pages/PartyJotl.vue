@@ -69,6 +69,7 @@ export default {
             campaignName: null,
             loading: true,
             isLocalCampaign: true,
+            game: 'jotl',
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository
         }
