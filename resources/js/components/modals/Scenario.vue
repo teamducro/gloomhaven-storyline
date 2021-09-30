@@ -205,8 +205,9 @@
                             </div>
                         </div>
                     </template>
-                    <blockquote v-if="(scenario.id === 14 || scenario.id === 43) && scenario.isComplete()"
-                                class="relative py-2 px-4 text-base italic border-l-4 quote">
+                    <blockquote
+                        v-if="scenario.game === 'gh' && (scenario.id === 14 || scenario.id === 43) && scenario.isComplete()"
+                        class="relative py-2 px-4 text-base italic border-l-4 quote">
                         <a class="absolute w-full h-full top-0 left-0" target="_blank"
                            href="https://boardgamegeek.com/thread/1722032/scenario-14-conclusion-spoilers"></a>
                         <p class="mb-4 max-w-sm">
