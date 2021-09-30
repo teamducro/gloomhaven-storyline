@@ -23,7 +23,7 @@
         <validation-errors :response="errors" field="email"/>
         <transition name="fade">
             <alert v-if="success" class="inline-block">
-                {{ $t('The email is send to your inbox.') }}
+                {{ $t('An email has been sent to your inbox.') }}
             </alert>
         </transition>
     </div>
