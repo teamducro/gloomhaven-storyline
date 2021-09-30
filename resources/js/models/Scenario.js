@@ -168,11 +168,11 @@ class Scenario {
     image() {
         if (this.coupled && this.isBlocked()) {
             if ((new ScenarioRepository).find(this.coupled).isComplete()) {
-                return '/img/scenarios/' + this.coupled + '_c' + '.png'
+                return '/img/scenarios/' + this.game + '/' + this.coupled + '_c' + '.png'
             }
         }
 
-        return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
+        return '/img/scenarios/' + this.game + '/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
     }
 
     get rewards() {
