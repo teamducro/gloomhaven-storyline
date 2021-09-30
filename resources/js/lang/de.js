@@ -203,7 +203,7 @@ export default {
     "Change name": "Name ändern",
     "Fill in your email, you'll receive a link to sync your campaign.": "Trage deine Emailadresse ein. Du erhälst einen Link mit dem du deine Kampagne synchronisieren kannst.",
     "Submit": "Abschicken",
-    "The email is send to your inbox.": "Eine Email wurde an dein Postfach geschickt.",
+    "An email has been sent to your inbox.": "Eine Email wurde an dein Postfach geschickt.",
     "Selected Campaign": "Ausgewählte Kampagne",
     "PRO": "PRO",
     "Gloomhaven": "Gloomhaven",
