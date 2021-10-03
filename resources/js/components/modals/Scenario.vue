@@ -196,7 +196,7 @@
                                     <i class="material-icons mdc-button__icon">menu_book</i>
                                     <span class="mdc-button__label">{{ $t('Pages') }}</span>
                                 </button>
-                                <a :href="virtualBoardUrl" target="_blank">
+                                <a v-if="virtualBoardUrl" :href="virtualBoardUrl" target="_blank">
                                     <button class="mdc-button mdc-button--raised">
                                         <i class="material-icons mdc-button__icon transform rotate-180">style</i>
                                         <span class="mdc-button__label">{{ $t('Virtual Board') }}</span>
@@ -471,6 +471,11 @@ export default {
             return this.choiceService.getPromptConfig(this.scenario);
         },
         setVirtualBoardUrl() {
+            if (!this.scenario.compatibleWithVirtualBoard()) {
+                this.virtualBoardUrl = null;
+                return;
+            }
+
             const current = this.storyRepository.current();
 
             let query = {

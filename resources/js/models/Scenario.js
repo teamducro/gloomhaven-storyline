@@ -166,6 +166,11 @@ class Scenario {
     }
 
     image() {
+        // Remove when completed scenario stickers are added for jotl
+        if (this.game === 'jotl') {
+            return '/img/scenarios/jotl/' + this.id + '.png'
+        }
+
         if (this.coupled && this.isBlocked()) {
             if ((new ScenarioRepository).find(this.coupled).isComplete()) {
                 return '/img/scenarios/' + this.game + '/' + this.coupled + '_c' + '.png'
@@ -205,6 +210,10 @@ class Scenario {
         });
 
         return items;
+    }
+
+    compatibleWithVirtualBoard() {
+        return ["gh", "fc"].includes(this.game);
     }
 
     key() {
