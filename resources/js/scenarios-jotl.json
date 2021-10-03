@@ -172,9 +172,16 @@
             "game": "jotl",
             "name": "Explosive Evolution",
             "coordinates": {
-                "name": "D-2",
-                "x": 0,
-                "y": 0
+                "7": {
+                    "name": "C-4",
+                    "x": 0,
+                    "y": 0
+                },
+                "8": {
+                    "name": "D-2",
+                    "x": 0,
+                    "y": 0
+                }
             },
             "chapter_id": 2,
             "linked_from": [
