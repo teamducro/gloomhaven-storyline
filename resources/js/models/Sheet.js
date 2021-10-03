@@ -92,6 +92,10 @@ class Sheet {
     }
 
     fillBlanksJotl() {
+        for (let i = 28; i <= 36; i++) {
+            this.itemDesigns[i] = this.itemDesigns[i] || false;
+        }
+
         if (!Object.keys(this.city).length) {
             for (let i = 1; i <= 22; i++) {
                 this.city[i] = true;

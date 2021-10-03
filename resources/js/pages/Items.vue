@@ -193,7 +193,7 @@ export default {
         refreshItems() {
             let sheetItems;
             if (this.sheet.game === 'jotl') {
-                sheetItems = this.calculateItemsJotl(this.scenarioRepository);
+                sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
             } else {
                 sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
             }

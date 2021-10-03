@@ -46,31 +46,24 @@ export default {
             let prosperityItems = Helpers.makeArrayWithNumbers(prosperityMap[this.calculateProsperity(prosperityIndex) - 1])
             return _.uniq(prosperityItems.concat(filteredItems));
         },
-        calculateItemsJotl(scenarioRepository) {
-            let items = [];
+        calculateItemsJotl(items, scenarioRepository) {
+            let filteredItems = collect(items).filter().keys().all().map(Number)
+            let shopItems = [];
 
             let itemRewards = {
                 2: Helpers.makeArrayWithNumbers(13),
                 4: [14],
                 9: Helpers.makeArrayWithNumbers(6, 15),
-                15: Helpers.makeArrayWithNumbers(6, 21),
-                11: [28],
-                12: [28],
-                16: [29],
-                19: [31],
-                20: [32],
-                22: [33],
-                23: [34],
-                24: [35, 36]
+                15: Helpers.makeArrayWithNumbers(6, 21)
             }
 
             for (const scenarioId in itemRewards) {
                 if (scenarioRepository.find(scenarioId).isComplete()) {
-                    items.push(...itemRewards[scenarioId]);
+                    shopItems.push(...itemRewards[scenarioId]);
                 }
             }
 
-            return items;
+            return _.uniq(shopItems.concat(filteredItems));
         }
     }
 }
