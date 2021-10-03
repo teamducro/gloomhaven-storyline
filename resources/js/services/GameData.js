@@ -116,8 +116,8 @@ export default class GameData {
                 }
             default:
                 return {
-                    portrait: '0 -40 610 700',
-                    landscape: '0 -70 420 1080'
+                    portrait: '0 -70 420 1080',
+                    landscape: '0 -40 610 700'
                 }
         }
     }
