@@ -101,4 +101,24 @@ export default class GameData {
 
         return 1;
     }
+
+    storylineViewBox(game = 'gh') {
+        switch (game) {
+            case 'fc':
+                return {
+                    portrait: '0 0 560 600',
+                    landscape: '0 -40 560 600'
+                }
+            case 'jotl':
+                return {
+                    portrait: '-100 0 500 500',
+                    landscape: '-100 -70 500 500'
+                }
+            default:
+                return {
+                    portrait: '0 -40 610 700',
+                    landscape: '0 -70 420 1080'
+                }
+        }
+    }
 }
