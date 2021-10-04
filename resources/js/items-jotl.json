@@ -314,7 +314,7 @@
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
-        "source": "Misplaced Good #F",
+        "source": "Misplaced Good #F from Scenario #20",
         "consumed": true,
         "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action."
     },
