@@ -10,12 +10,12 @@ class Scenario {
         this.id = data.id;
         this.root = data.root || false;
         this._name = data.name;
-        this.coordinates = data.coordinates;
+        this._coordinates = data.coordinates;
         this.is_side = data.is_side || false;
         this.pages = data.pages || [];
         this.requirements = data.requirements || "";
         this.quests = data.quests || [];
-        this.cards = collect(data.cards).map((card) => new Card(card));
+        this.cards = collect(data.cards).map((card) => new Card(card, data.game));
         this.chapter_id = data.chapter_id;
         this.chapter_name = null;
         this.region_ids = data.region_ids || [];
@@ -165,14 +165,41 @@ class Scenario {
         return this.cards.count() > 0;
     }
 
+    get coordinates() {
+        if (this.hasMultipleLocations()) {
+            const from = this.scenarioRepository.prevScenarios(this).first().id;
+            return this._coordinates[from];
+        } else {
+            return this._coordinates;
+        }
+    }
+
+    hasMultipleLocations() {
+        return Object.keys(this._coordinates).includes(String(this.linked_from.first()));
+    }
+
     image() {
+        let sticker = '/img/scenarios/' + this.game + '/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
+
+        // Multiple scenarios on the same sticker
         if (this.coupled && this.isBlocked()) {
-            if ((new ScenarioRepository).find(this.coupled).isComplete()) {
-                return '/img/scenarios/' + this.coupled + '_c' + '.png'
+            if (this.scenarioRepository.find(this.coupled).isComplete()) {
+                sticker = '/img/scenarios/' + this.game + '/' + this.coupled + '_c' + '.png'
             }
         }
 
-        return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
+        // Scenarios with a different location based on the prior scenario
+        if (this.hasMultipleLocations()) {
+            const from = this.scenarioRepository.prevScenarios(this).first().id;
+            sticker = '/img/scenarios/' + this.game + '/' + this.id + '_' + from + '_c' + '.png'
+        }
+
+        // Remove when completed scenario stickers are added for JotL
+        if (this.game === 'jotl') {
+            sticker = sticker.replace('_c', '');
+        }
+
+        return sticker;
     }
 
     get rewards() {
@@ -205,6 +232,14 @@ class Scenario {
         });
 
         return items;
+    }
+
+    compatibleWithVirtualBoard() {
+        return ["gh", "fc"].includes(this.game);
+    }
+
+    get scenarioRepository() {
+        return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository);
     }
 
     key() {

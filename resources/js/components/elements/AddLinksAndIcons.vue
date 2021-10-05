@@ -70,7 +70,7 @@ export default {
             return text;
         },
         addCharacterIcons(text) {
-            const characters = Object.values(this.gameData.characterOrder(app.game));
+            const characters = this.gameData.characterOrder(app.game);
 
             if (text.match(new RegExp(characters.join('|'))) !== null) {
                 characters.forEach((character) => {
@@ -137,6 +137,7 @@ export default {
                     '{+2_WHITE}': '<webp src="/img/icons/perks/+2_white.png" width="20" class="inline"/>',
                     '{+3_WHITE}': '<webp src="/img/icons/perks/+3_white.png" width="20" class="inline"/>',
                     '{+4_WHITE}': '<webp src="/img/icons/perks/+4_white.png" width="20" class="inline"/>',
+                    '{2X_WHITE}': '<webp src="/img/icons/perks/2x_white.png" width="20" class="inline"/>',
                     '{AGAIN}': '<webp src="/img/icons/perks/again_white.png" width="20" class="inline"/>',
                     '{NOTE_115}': '<webp src="/img/notes/note-115.png" width="421"/>',
                     '{NOTE_42}': '<webp src="/img/notes/note-42.png" width="421"/>',

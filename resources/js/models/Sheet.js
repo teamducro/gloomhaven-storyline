@@ -1,13 +1,14 @@
 import Storable from './Storable'
 import Character from "./Character";
 import GameData from "../services/GameData";
+import Helpers from "../services/Helpers";
 
 const md5 = require('js-md5');
 
 class Sheet {
 
-    static make() {
-        return new Sheet({game: 'gh'});
+    static make(game) {
+        return new Sheet({game: game});
     }
 
     constructor(data = {}) {
@@ -25,7 +26,6 @@ class Sheet {
         this.archivedCharacters = {...data.archivedCharacters};
         this.game = data.game;
         this.gameData = new GameData;
-        this.starterCharacters = ["BR", "CH", "SW", "TI", "SC", "MT"];
 
         this.fieldsToStore = {
             reputation: 'reputation',
@@ -53,7 +53,7 @@ class Sheet {
         // Nothing to set up..
     }
 
-    fillBlanks() {
+    fillBlanksGH() {
         for (let i = 71; i <= 150; i++) {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
         }
@@ -89,18 +89,17 @@ class Sheet {
         for (let i = 1; i < 10; i++) {
             this.xClues[i] = this.xClues[i] || false;
         }
+    }
 
-        const characterOrder = this.gameData.characterOrder('gh');
-        for (const i in characterOrder) {
-            const id = characterOrder[i];
-            if (id) {
-                this.characterUnlocks[id] = this.starterCharacters.includes(id)
-                    ? true
-                    : (this.characterUnlocks[id] || this.characterUnlocks[i - 1] || false);
+    fillBlanksJotl() {
+        for (let i = 28; i <= 36; i++) {
+            this.itemDesigns[i] = this.itemDesigns[i] || false;
+        }
+
+        if (!Object.keys(this.city).length) {
+            for (let i = 1; i <= 22; i++) {
+                this.city[i] = true;
             }
-
-            // Remove old character unlocks from party sheet, keys are ids now
-            delete this.characterUnlocks[i - 1];
         }
     }
 
@@ -118,6 +117,21 @@ class Sheet {
         }
     }
 
+    fillCharacterUnlocks() {
+        const characterOrder = this.gameData.characterOrder('gh');
+        for (const i in characterOrder) {
+            const id = characterOrder[i];
+            if (id) {
+                this.characterUnlocks[id] = this.starterCharacters.includes(id)
+                    ? true
+                    : (this.characterUnlocks[id] || this.characterUnlocks[i] || false);
+            }
+
+            // Remove old character unlocks from party sheet, keys are ids now
+            delete this.characterUnlocks[i];
+        }
+    }
+
     getHash() {
         return md5(JSON.stringify(this));
     }
@@ -125,7 +139,16 @@ class Sheet {
     read() {
         this.parentRead();
         this.migrateCharacterUnlocks();
-        this.fillBlanks();
+
+        switch (this.game) {
+            case 'jotl':
+                this.fillBlanksJotl();
+                break;
+            default:
+                this.fillBlanksGH();
+        }
+
+        this.fillCharacterUnlocks();
         this.fillRelations();
     }
 
@@ -149,8 +172,36 @@ class Sheet {
         return values;
     }
 
+    get starterCharacters() {
+        switch (this.game) {
+            case 'fc':
+                return ["DR", "BR", "CH", "SW", "TI", "SC", "MT"];
+            case 'jotl':
+                return ["RG", "DM", "HT", "VW"];
+            default:
+                return ["BR", "CH", "SW", "TI", "SC", "MT"];
+        }
+    }
+
+    get characterOrder() {
+        if (this._characterOrder) {
+            return this._characterOrder;
+        }
+
+        const characterOrder = this.gameData.characterOrder(this.game);
+        const characterOrderWithStartersFirst = Helpers.unique([...this.starterCharacters, ...characterOrder]);
+        this._characterOrder = Helpers.reverse(Object.assign({}, characterOrderWithStartersFirst));
+
+        return this._characterOrder;
+    }
+
     key() {
-        return 'sheet';
+        switch (this.game) {
+            case 'jotl':
+                return 'sheet-jotl';
+            default:
+                return 'sheet';
+        }
     }
 }
 

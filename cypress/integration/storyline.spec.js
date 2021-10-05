@@ -156,10 +156,23 @@ describe('Storyline', () => {
 
         utilities.switchGame('fc');
 
+        cy.get('#chapter20').contains('Diviner');
         utilities.isNodeIncomplete(96);
         utilities.completeScenario(96);
         utilities.isNodeComplete(96);
         utilities.isNodeIncomplete(97);
+    });
+
+    it('It opens JotL', () => {
+        cy.visit('/tracker');
+
+        utilities.switchGame('jotl');
+
+        cy.get('#chapter4').contains('Characters');
+        utilities.isNodeIncomplete(1);
+        utilities.completeScenario(1);
+        utilities.isNodeComplete(1);
+        utilities.isNodeIncomplete(2);
     });
 
     it('Storyline renders correclty', () => {

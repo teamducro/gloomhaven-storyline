@@ -14,8 +14,9 @@
             <div class="w-full">
                 <h2>{{ $t('Add Character') }}</h2>
                 <ul class="flex flex-col py-4 px-3">
-                    <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" v-if="unlocked" class="flow-root"
-                        :class="['order-'+characterOrder[id]+' '+(characterOrder[id]>1?'mt-6':'')]">
+                    <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" v-if="unlocked"
+                        class="add-character flow-root"
+                        :class="['order-'+sheet.characterOrder[id], sheet.characterOrder[id] === 0 ? 'mt-0' : 'mt-6']">
                         <a @click.stop.prevent="$emit('create', id)" href="#"
                            class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-white hover:bg-black2-75 transition ease-in-out duration-150"
                            :class="{'text-white2-50 grayscale cursor-default': characterRepository.partyHasCharacter(sheet, id)}">
@@ -27,7 +28,7 @@
                 <h2 v-if="hasLocked">{{ $t('Locked') }}</h2>
                 <ul v-if="hasLocked" class="flex flex-wrap mx-1 py-2">
                     <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" v-if="!unlocked" class="flow-root"
-                        :class="['order-'+characterOrder[id]]">
+                        :class="'order-'+sheet.characterOrder[id]">
                         <a @click.stop.prevent="$emit('create', id)" href="#" class="block w-5 m-1">
                             <character-icon class="flex-shrink-0 w-5" :character="id"/>
                         </a>
@@ -39,7 +40,6 @@
 </template>
 
 <script>
-import Helpers from "../../../services/Helpers";
 import GameData from "../../../services/GameData";
 import CharacterRepository from "../../../repositories/CharacterRepository";
 
@@ -49,7 +49,6 @@ export default {
     },
     data() {
         return {
-            characterOrder: {},
             characterNames: {},
             dropDownClose: false,
             gameData: new GameData,
@@ -73,7 +72,6 @@ export default {
     methods: {
         render() {
             this.characterNames = this.gameData.characterNames(app.game);
-            this.characterOrder = Helpers.reverse(this.gameData.characterOrder(app.game));
         },
         open() {
             this.$refs['add-character'].open()
@@ -81,3 +79,9 @@ export default {
     }
 }
 </script>
+
+<style scoped lang="scss">
+.add-character.order-0 {
+    @apply mt-0;
+}
+</style>

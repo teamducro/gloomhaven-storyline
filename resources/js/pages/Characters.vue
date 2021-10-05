@@ -188,6 +188,7 @@ import CharacterRepository from "../repositories/CharacterRepository";
 import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
 import store from "store/dist/store.modern";
+import ScenarioRepository from "../repositories/ScenarioRepository";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -205,6 +206,7 @@ export default {
             isLocalCampaign: true,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
+            scenarioRepository: new ScenarioRepository,
             characterRepository: new CharacterRepository,
             itemRepository: new ItemRepository
         }
@@ -254,8 +256,14 @@ export default {
         },
         refreshItems() {
             if (this.character) {
-                let sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                let sheetItems;
                 this.sheetItems = {};
+
+                if (this.sheet.game === 'jotl') {
+                    sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
+                } else {
+                    sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                }
 
                 this.items = this.itemRepository.findMany(sheetItems).keyBy('id').items;
                 sheetItems.forEach(id => {
