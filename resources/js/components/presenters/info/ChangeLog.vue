@@ -122,7 +122,8 @@ export default {
                 {version: 2.14, description: 'Spanish language', date: dayjs('05-01-2021')},
                 {version: 2.15, description: 'Draw event cards', date: dayjs('05-23-2021')},
                 {version: 2.16, description: 'Patreon', date: dayjs('06-09-2021')},
-                {version: 2.17, description: 'Character sheets', date: dayjs('08-14-2021')}
+                {version: 2.17, description: 'Character sheets', date: dayjs('08-14-2021')},
+                {version: 2.19, description: 'Jaws of the Lion', date: dayjs('10-06-2021')}
             ].reverse()
         }
     },

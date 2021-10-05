@@ -258,6 +258,9 @@ export default {
     "Merchants Bay": "Merchant’s Bay",
     "East Coast": "East Coast",
     "different Dimension": "different Dimension",
+    "and": "et",
+    "or": "ou",
+    "Hidden Scenario": "Scénario cachée",
     "scenarios": {
         "Black Barrow": "Le Tertre Noir",
         "Barrow Lair": "Le Repaire sous le Tertre",

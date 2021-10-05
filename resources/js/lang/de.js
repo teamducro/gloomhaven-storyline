@@ -258,6 +258,9 @@ export default {
     "Merchants Bay": "Merchant’s Bay",
     "East Coast": "Ostküste",
     "different Dimension": "verschiedene Dimension",
+    "and": "und",
+    "or": "oder",
+    "Hidden Scenario": "Verstecktes Szenarie",
     "scenarios": {
         "Black Barrow": "Schwarzgrab",
         "Barrow Lair": "Grabhöhle",

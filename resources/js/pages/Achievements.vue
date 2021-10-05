@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="enabled">
         <div class="pt-16 pb-4 px-4 flex flex-col">
 
             <div class="fixed right-0 top-0 mt-1 z-5">
@@ -82,6 +82,9 @@
             </div>
         </div>
     </div>
+    <div v-else>
+        <h1 class="pt-16 text-center">{{ $t('No achievements in ') }} {{ $t(game) }}</h1>
+    </div>
 </template>
 
 <script>
@@ -92,6 +95,8 @@ import {MDCTextField} from "@material/textfield/component";
 export default {
     data() {
         return {
+            enabled: true,
+            game: 'gh',
             globalList: null,
             partyList: null,
             achievements: null,
@@ -123,6 +128,8 @@ export default {
     },
     methods: {
         async setAchievements() {
+            this.enabled = app.game !== 'jotl';
+            this.game = app.game;
             this.achievements = app.achievements.sortBy('name');
 
             await this.$nextTick();
@@ -130,24 +137,28 @@ export default {
             if (this.globalList) {
                 this.globalList.destroy();
             }
-            this.globalList = MDCList.attachTo(this.$refs['global-list']);
-            this.globalList.listen('MDCList:action', (event) => {
-                const id = this.achievements.filter((a) => {
-                    return a.isGlobal() && a.awarded && !a.hidden;
-                }).get(event.detail.index).id;
-                this.open(this.achievementRepository.find(id));
-            });
+            if (this.$refs['global-list']) {
+                this.globalList = MDCList.attachTo(this.$refs['global-list']);
+                this.globalList.listen('MDCList:action', (event) => {
+                    const id = this.achievements.filter((a) => {
+                        return a.isGlobal() && a.awarded && !a.hidden;
+                    }).get(event.detail.index).id;
+                    this.open(this.achievementRepository.find(id));
+                });
+            }
 
             if (this.partyList) {
                 this.partyList.destroy();
             }
-            this.partyList = MDCList.attachTo(this.$refs['party-list']);
-            this.partyList.listen('MDCList:action', (event) => {
-                const id = this.achievements.filter((a) => {
-                    return a.isParty() && a.awarded;
-                }).get(event.detail.index).id;
-                this.open(this.achievementRepository.find(id));
-            });
+            if (this.$refs['party-list']) {
+                this.partyList = MDCList.attachTo(this.$refs['party-list']);
+                this.partyList.listen('MDCList:action', (event) => {
+                    const id = this.achievements.filter((a) => {
+                        return a.isParty() && a.awarded;
+                    }).get(event.detail.index).id;
+                    this.open(this.achievementRepository.find(id));
+                });
+            }
         },
         achievementToAddOpened() {
             this.achievementToAddField = new MDCTextField(this.$refs['achievement-to-add']);

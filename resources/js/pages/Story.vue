@@ -16,6 +16,7 @@ import {ScenarioState} from "../models/ScenarioState";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import tippy from 'tippy.js';
 import GetCampaignName from "../services/GetCampaignName";
+import GameData from "../services/GameData";
 
 export default {
     mixins: [GetCampaignName],
@@ -30,10 +31,12 @@ export default {
         return {
             isPortrait: null,
             zoom: null,
+            game: null,
             storylineKey: 1,
             campaignName: null,
             storyline: null,
-            scenarioRepository: new ScenarioRepository
+            scenarioRepository: new ScenarioRepository,
+            gameData: new GameData
         }
     },
     async mounted() {
@@ -63,6 +66,8 @@ export default {
     },
     methods: {
         render() {
+            this.game = app.game;
+
             if (this.setStoryline()) {
                 return this.rerender();
             }
@@ -85,15 +90,15 @@ export default {
             this.zoom = await zoom('#storyline');
         },
         renderOrientation() {
-            let viewBox = '';
+            const viewBoxes = this.gameData.storylineViewBox(app.game);
+
             if (this.isPortrait) {
-                viewBox = '0 -70 420 1080';
                 c('#storyline .landscape').remove();
+                c('#storyline').attr('viewBox', viewBoxes.portrait);
             } else {
-                viewBox = '0 -40 610 700';
                 c('#storyline .portrait').remove();
+                c('#storyline').attr('viewBox', viewBoxes.landscape);
             }
-            c('#storyline').attr('viewBox', viewBox);
         },
         renderScenarios() {
             app.scenarios.each((scenario) => {

@@ -9,7 +9,7 @@
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
-            <div class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
+            <div v-if="Object.keys(sheet.itemDesigns).length" class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
                 <dropdown class="items-to-add-dropdown" align="right" width=""
                           @open="dropDownClose = true"
                           @close="dropDownClose = false">
@@ -37,11 +37,11 @@
                 </dropdown>
             </div>
 
-            <div class="my-4">
+            <div v-if="costModifier != 0" class="my-4">
                 <h2 class="mb-2">{{ $t('Shop modifier') }}:
                     <span>{{ costModifier }} {{ $t('Gold') }}</span>
                 </h2>
-                <p v-if="costModifier != 0" class="text-sm">
+                <p class="text-sm">
                     {{ $t('The cost of items displayed is modified by this amount.') }}
                 </p>
             </div>
@@ -78,7 +78,7 @@
                         :data="items.items"
                         odd-class="bg-black2-10"
                         @rowClick="openItemModel"
-                        :noResults="$t('No items found')"
+                        :noResults="$t('No items available')"
             >
                 <template slot="image" slot-scope="{value, row}">
                     <div class="overflow-hidden h-full -m-1 md:-m-3 top-0 left-0 cursor-pointer">
@@ -124,6 +124,7 @@ import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
 import ItemRepository from "../repositories/ItemRepository";
 import SheetRepository from "../repositories/SheetRepository";
+import ScenarioRepository from "../repositories/ScenarioRepository";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -156,6 +157,7 @@ export default {
             dropDownClose: false,
             storySyncer: new StorySyncer,
             itemRepository: new ItemRepository,
+            scenarioRepository: new ScenarioRepository,
             sheetRepository: new SheetRepository,
         }
     },
@@ -189,7 +191,12 @@ export default {
             this.field = new MDCTextField(this.$refs['search-field']);
         },
         refreshItems() {
-            const sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+            let sheetItems;
+            if (this.sheet.game === 'jotl') {
+                sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
+            } else {
+                sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+            }
             this.items = this.itemRepository.findMany(sheetItems);
         },
         changeItem(id, isChecked) {

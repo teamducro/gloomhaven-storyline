@@ -73,11 +73,9 @@ export default {
     },
     mounted() {
         this.$bus.$on('open-card', (card) => {
-            this.open(new Card(card));
+            this.open(new Card(card.id, card.game));
         });
-        this.$bus.$on('close-card', () => {
-            this.close();
-        });
+        this.$bus.$on('close-card', this.close);
     },
     methods: {
         open(card) {

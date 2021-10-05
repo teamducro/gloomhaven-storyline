@@ -191,12 +191,12 @@
 
                         <div class="relative h-8 mb-6">
                             <div class="flex absolute left-0 top-0 origin-left transform scale-75">
-                                <button class="mdc-button mdc-button--raised mr-2"
+                                <button v-if="scenario.pages.length" class="mdc-button mdc-button--raised mr-2"
                                         @click="openPages()">
                                     <i class="material-icons mdc-button__icon">menu_book</i>
                                     <span class="mdc-button__label">{{ $t('Pages') }}</span>
                                 </button>
-                                <a :href="virtualBoardUrl" target="_blank">
+                                <a v-if="virtualBoardUrl" :href="virtualBoardUrl" target="_blank">
                                     <button class="mdc-button mdc-button--raised">
                                         <i class="material-icons mdc-button__icon transform rotate-180">style</i>
                                         <span class="mdc-button__label">{{ $t('Virtual Board') }}</span>
@@ -205,8 +205,9 @@
                             </div>
                         </div>
                     </template>
-                    <blockquote v-if="(scenario.id === 14 || scenario.id === 43) && scenario.isComplete()"
-                                class="relative py-2 px-4 text-base italic border-l-4 quote">
+                    <blockquote
+                        v-if="scenario.game === 'gh' && (scenario.id === 14 || scenario.id === 43) && scenario.isComplete()"
+                        class="relative py-2 px-4 text-base italic border-l-4 quote">
                         <a class="absolute w-full h-full top-0 left-0" target="_blank"
                            href="https://boardgamegeek.com/thread/1722032/scenario-14-conclusion-spoilers"></a>
                         <p class="mb-4 max-w-sm">
@@ -470,6 +471,11 @@ export default {
             return this.choiceService.getPromptConfig(this.scenario);
         },
         setVirtualBoardUrl() {
+            if (!this.scenario.compatibleWithVirtualBoard()) {
+                this.virtualBoardUrl = null;
+                return;
+            }
+
             const current = this.storyRepository.current();
 
             let query = {
