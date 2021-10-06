@@ -15,8 +15,11 @@ export default class ScenarioValidator {
         while (this.needsValidating) {
             this.needsValidating = false;
             app.scenarios.each((scenario) => {
-                this.checkHidden(scenario);
-                this.checkChoice(scenario);
+                if (this.linkedScenarios(scenario).where('hasChoices', true).count()) {
+                    this.checkChoice(scenario);
+                } else {
+                    this.checkHidden(scenario);
+                }
                 this.checkRequired(scenario);
             });
             if (count > 4) {
@@ -92,7 +95,8 @@ export default class ScenarioValidator {
 
         let blockingConditions = scenario.blocks_on;
         let shouldBeBlocked = !!blockingConditions.count() && blockingConditions.contains((condition) => {
-            let completeCheck = this.checkCompleteConditions(condition.complete || []);
+            let complete = condition.complete || [];
+            let completeCheck = !!complete.length && this.checkCompleteConditions(complete);
 
             let lost = condition.lost || [];
             let lostCheck = lost.length && lost.every((achievementId) => {
