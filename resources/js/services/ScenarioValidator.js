@@ -15,10 +15,11 @@ export default class ScenarioValidator {
         while (this.needsValidating) {
             this.needsValidating = false;
             app.scenarios.each((scenario) => {
-                if (this.linkedScenarios(scenario).where('hasChoices', true).count()) {
-                    this.checkChoice(scenario);
-                } else {
+                let linkedScenarios = this.linkedScenarios(scenario);
+                if (linkedScenarios.where('hasChoices', true).isEmpty()) {
                     this.checkHidden(scenario);
+                } else {
+                    this.checkChoice(scenario);
                 }
                 this.checkRequired(scenario);
             });
@@ -56,6 +57,16 @@ export default class ScenarioValidator {
         let linkedScenarios = this.linkedScenarios(scenario);
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
+        // Skip when no linked scenarios are completed
+        let states = this.linkedStates(scenario);
+        if (states.has(ScenarioState.complete) === false) {
+            if (scenario.isVisible()) {
+                this.scenarioRepository.setHidden(scenario);
+                this.needsValidating = true;
+            }
+            return;
+        }
+
         if (linkedScenarios.where('hasChoices', true).count()) {
             let chosen = linkedScenarios.filter((s) => {
                 return String(s.choice).split(',').includes(String(scenario.id));
@@ -88,8 +99,9 @@ export default class ScenarioValidator {
     }
 
     checkRequired(scenario) {
-        // skip if scenario is hidden or was completed before
-        if (scenario.isHidden() || scenario.isComplete()) {
+        // Skip when no linked scenarios are completed, scenario is hidden or was completed before
+        let states = this.linkedStates(scenario);
+        if (states.has(ScenarioState.complete) === false || scenario.isHidden() || scenario.isComplete()) {
             return;
         }
 
