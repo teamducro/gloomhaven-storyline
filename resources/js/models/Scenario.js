@@ -243,7 +243,7 @@ class Scenario {
     }
 
     key() {
-        return 'scenario-' + this.id;
+        return 'scenario-' + this.game + '-' + this.id;
     }
 
 }

@@ -22,7 +22,7 @@ export default {
             games: {
                 gh: this.$t('Gloomhaven'),
                 fc: this.$t('Forgotten Circles'),
-                // jotl: this.$t('Jaws of the Lion'),
+                jotl: this.$t('Jaws of the Lion'),
             },
             beta: ['jotl']
         }
