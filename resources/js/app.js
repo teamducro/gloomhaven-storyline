@@ -21,7 +21,7 @@ import OfflineChecker from "./services/app/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
 import * as Sentry from "@sentry/vue";
 import {Integrations} from "@sentry/tracing";
-import shouldTransferVersion1Progress from "./services/app/shouldTransferVersion1Progress";
+import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
 import isWebpSupported from "./services/app/isWebpSupported";
 import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
@@ -240,7 +240,7 @@ window.app = new Vue({
             this.offlineChecker.handle();
             this.webpSupported = isWebpSupported();
             checkHasMouse(this.$bus);
-            shouldTransferVersion1Progress();
+            migrateVersion1Progress();
         }
     }
 });
