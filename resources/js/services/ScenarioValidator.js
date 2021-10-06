@@ -95,7 +95,8 @@ export default class ScenarioValidator {
 
         let blockingConditions = scenario.blocks_on;
         let shouldBeBlocked = !!blockingConditions.count() && blockingConditions.contains((condition) => {
-            let completeCheck = this.checkCompleteConditions(condition.complete || []);
+            let complete = condition.complete || [];
+            let completeCheck = !!complete.length && this.checkCompleteConditions(complete);
 
             let lost = condition.lost || [];
             let lostCheck = lost.length && lost.every((achievementId) => {
