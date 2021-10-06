@@ -22,6 +22,7 @@ import ItemRepository from "./repositories/ItemRepository";
 import * as Sentry from "@sentry/vue";
 import {Integrations} from "@sentry/tracing";
 import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
+import migrateVersion2Progress from "./services/app/migrateVersion2Progress";
 import isWebpSupported from "./services/app/isWebpSupported";
 import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
@@ -202,6 +203,7 @@ window.app = new Vue({
             }
 
             this.campaignData = store.get(this.campaignId) || {};
+            this.campaignData = migrateVersion2Progress(this.campaignData);
             this.game = store.get('game') || 'gh';
             this.stories = this.storyRepository.getStories();
             if (Helpers.loggedIn()) {
