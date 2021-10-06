@@ -15,8 +15,12 @@ export default class ScenarioValidator {
         while (this.needsValidating) {
             this.needsValidating = false;
             app.scenarios.each((scenario) => {
-                this.checkHidden(scenario);
-                this.checkChoice(scenario);
+                let linkedScenarios = this.linkedScenarios(scenario);
+                if (linkedScenarios.where('hasChoices', true).isEmpty()) {
+                    this.checkHidden(scenario);
+                } else {
+                    this.checkChoice(scenario);
+                }
                 this.checkRequired(scenario);
             });
             if (count > 4) {
@@ -56,6 +60,10 @@ export default class ScenarioValidator {
         // Skip when no linked scenarios are completed
         let states = this.linkedStates(scenario);
         if (states.has(ScenarioState.complete) === false) {
+            if (scenario.isVisible()) {
+                this.scenarioRepository.setHidden(scenario);
+                this.needsValidating = true;
+            }
             return;
         }
 
