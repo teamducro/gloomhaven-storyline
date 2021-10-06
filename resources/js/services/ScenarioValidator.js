@@ -15,8 +15,11 @@ export default class ScenarioValidator {
         while (this.needsValidating) {
             this.needsValidating = false;
             app.scenarios.each((scenario) => {
-                this.checkHidden(scenario);
-                this.checkChoice(scenario);
+                if (this.linkedScenarios(scenario).where('hasChoices', true).count()) {
+                    this.checkChoice(scenario);
+                } else {
+                    this.checkHidden(scenario);
+                }
                 this.checkRequired(scenario);
             });
             if (count > 4) {
