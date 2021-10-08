@@ -1,6 +1,7 @@
 import store from "store/dist/store.modern";
 
-export default function shouldTransferVersion1Progress() {
+export default function migrateVersion1Progress() {
+    // No migrations needed
     if (!store.get('scenario-1')) {
         return;
     }
