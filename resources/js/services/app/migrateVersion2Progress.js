@@ -12,7 +12,7 @@ export default function migrateVersion2Progress(campaignData) {
             const id = key.replace('scenario-', '');
             const game = id <= 95 ? 'gh' : 'fc';
             // add new scenario key, includes the game code
-            campaignData['scenario-' + game + '-' + id] = value;
+            campaignData[`scenario-${game}-${id}`] = value;
             // remove old key
             delete campaignData[key];
         }
