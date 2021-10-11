@@ -101,6 +101,7 @@ export default {
             if (!this.removed && this.choice && !this.animating) {
                 this.removed = true;
                 this.$bus.$emit('remove-card', this.card);
+                this.close();
             }
         },
         close() {

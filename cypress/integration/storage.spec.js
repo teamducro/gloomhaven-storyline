@@ -31,7 +31,7 @@ describe('Storage', () => {
                 const newKey = `scenario-${game}-${id}`;
 
                 expect(scenario).eq(newCampaignData[newKey]);
-                expect(false).eq(newCampaignData.hasOwnProperty(key));
+                expect(newCampaignData.hasOwnProperty(key)).false;
             }
         }
     });

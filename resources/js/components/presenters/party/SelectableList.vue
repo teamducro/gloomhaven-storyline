@@ -32,7 +32,11 @@
         <div :key="key" :id="(id || slugify(title)) + '-bedges'">
             <span v-for="item in checkedItems" :key="item">
                 <slot name="item" :item="item">
-                    <bedge class="mr-2 mt-2 white cursor-pointer rounded-md"
+                    <bedge class="mr-2 mt-2 white cursor-pointer rounded-md animate__animated"
+                           :class="{
+                                'animate__flipInX': animationsEnabled  && addedItems.includes(item),
+                                'animate__flipOutX': animationsEnabled && removedItems.includes(item)
+                            }"
                            @click="(e) => {deselect(item)}">
                         {{ item }}
                         <span class="ml-1">×</span>
@@ -46,6 +50,7 @@
 <script>
 import Slugify from "../../../services/Slugify";
 import Bedge from "../../elements/Bedge";
+import Helpers from "../../../services/Helpers";
 
 export default {
     components: {Bedge},
@@ -62,13 +67,16 @@ export default {
         return {
             key: 0,
             rollbackLoaded: false,
-            checkedItems: []
+            checkedItems: [],
+            addedItems: [],
+            removedItems: [],
+            animationsEnabled: false
         }
     },
     watch: {
         items: {
             handler(items) {
-                this.setCheckedItems(items);
+                this.itemsUpdated(items);
             },
             deep: true,
             immediate: true
@@ -82,7 +90,7 @@ export default {
         rolledBack(items) {
             this.$emit('update:items', items);
             this.$emit('change', items);
-            this.rerender();
+            this.itemsUpdated(items);
         },
         select(item, select = true) {
             this.$set(this.items, item, select);
@@ -90,6 +98,7 @@ export default {
             this.rerender();
             this.$emit('update:items', this.items);
             this.$emit('change', this.items);
+            this.itemsUpdated(this.items);
         },
         deselect(item) {
             this.select(item, false);
@@ -97,18 +106,60 @@ export default {
         toggle(item) {
             this.select(item, !this.items[item]);
         },
+        itemsUpdated(items) {
+            this.detectChangedItems();
+            this.setCheckedItems(items);
+            this.rerender();
+        },
         rerender() {
             this.key++;
-            this.setCheckedItems(this.items);
+            if (this.key > 1) {
+                this.animationsEnabled = true;
+            }
         },
-        setCheckedItems(items) {
+        async setCheckedItems(items) {
             this.checkedItems = [];
 
             for (let id in items) {
-                if (items[id]) {
+                if (items[id] || this.removedItems.includes(id)) {
                     this.checkedItems.push(id);
                 }
             }
+
+            // Keep removed items checked for an other 800ms for the remove animation.
+            if (this.animationsEnabled && (this.addedItems.length || this.removedItems.length)) {
+                let currentAddedItems = [...this.addedItems];
+                let currentRemovedItems = [...this.removedItems];
+                await Helpers.sleep(800);
+                this.checkedItems.forEach((id) => {
+                    if (currentRemovedItems.includes(id) && !this.items[id]) {
+                        this.$delete(this.checkedItems, this.checkedItems.indexOf(id));
+                    }
+                });
+                this.addedItems = this.addedItems.filter((item) => !currentAddedItems.includes(item));
+                this.removedItems = this.removedItems.filter((item) => !currentRemovedItems.includes(item));
+            }
+        },
+        detectChangedItems() {
+            if (!this.animationsEnabled || !this.items) {
+                return;
+            }
+
+            const currentCheckedItems = [...this.checkedItems];
+            const newCheckedItems = [];
+            for (let id in this.items) {
+                if (this.items[id]) {
+                    newCheckedItems.push(id);
+                }
+            }
+
+            // Added items
+            const addedItems = newCheckedItems.filter(item => !currentCheckedItems.includes(item));
+            this.addedItems = [...this.addedItems, ...addedItems];
+
+            // Removed items
+            const removedItems = currentCheckedItems.filter(item => !newCheckedItems.includes(item));
+            this.removedItems = [...this.removedItems, ...removedItems];
         }
     }
 }

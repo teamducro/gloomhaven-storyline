@@ -64,6 +64,7 @@
         "@sentry/tracing": "^6.2.1",
         "@sentry/vue": "^6.2.1",
         "@stripe/stripe-js": "^1.7.0",
+        "animate.css": "^4.1.1",
         "axios": "^0.21.1",
         "cash-dom": "^8.1.0",
         "collect.js": "^4.19.0",

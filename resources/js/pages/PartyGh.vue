@@ -318,11 +318,8 @@ export default {
             }
         },
         removeCard(card) {
-            if (card.type === 'R') {
-                this.sheet.road[card.id] = false;
-            } else if (card.type === 'C') {
-                this.sheet.city[card.id] = false;
-            }
+            const type = card.type === 'R' ? 'road' : 'city';
+            this.sheet[type][card.id] = false;
 
             this.store();
         },
