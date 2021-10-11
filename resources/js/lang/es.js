@@ -23,7 +23,7 @@ export default {
     "Modify the cost of items when buying by this amount.": "Modifica el precio de los objetos cuando los compres por esta cantidad.",
     "The cost of items displayed is modified by this amount.": "El coste de los artículos mostrados se modifica en esta cantidad.",
     "When 100 gold is donated, open envelope": "Cuando se done 100 de oro, abre el sobre",
-    "gained prosperity checkbox by donations.": "ganada marca de prosperidad mediante donaciones.",
+    "gained prosperity checkbox by donations.": "de prosperidad ganada mediante donaciones.",
     "City Event Decks": "Mazo Eventos de Ciudad",
     "Add city events": "Añade Evento de Ciudad",
     "Road Event Decks": "Mazo de Enevtos de Camino",
