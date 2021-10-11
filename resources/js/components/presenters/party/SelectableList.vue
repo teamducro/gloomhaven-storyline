@@ -107,8 +107,7 @@ export default {
             this.select(item, !this.items[item]);
         },
         itemsUpdated(items) {
-            this.detectChangedItems(true);
-            this.detectChangedItems(false);
+            this.detectChangedItems();
             this.setCheckedItems(items);
             this.rerender();
         },
@@ -141,7 +140,7 @@ export default {
                 this.removedItems = this.removedItems.filter((item) => !currentRemovedItems.includes(item));
             }
         },
-        detectChangedItems(added = true) {
+        detectChangedItems() {
             if (!this.animationsEnabled || !this.items) {
                 return;
             }
@@ -154,13 +153,13 @@ export default {
                 }
             }
 
-            if (added) {
-                const addedItems = newCheckedItems.filter(item => !currentCheckedItems.includes(item));
-                this.addedItems = [...this.addedItems, ...addedItems];
-            } else {
-                const removedItems = currentCheckedItems.filter(item => !newCheckedItems.includes(item));
-                this.removedItems = [...this.removedItems, ...removedItems];
-            }
+            // Added items
+            const addedItems = newCheckedItems.filter(item => !currentCheckedItems.includes(item));
+            this.addedItems = [...this.addedItems, ...addedItems];
+
+            // Removed items
+            const removedItems = currentCheckedItems.filter(item => !newCheckedItems.includes(item));
+            this.removedItems = [...this.removedItems, ...removedItems];
         }
     }
 }
