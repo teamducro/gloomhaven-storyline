@@ -26,7 +26,7 @@ export default {
     "gained prosperity checkbox by donations.": "de prosperidad ganada mediante donaciones.",
     "City Event Decks": "Mazo Eventos de Ciudad",
     "Add city events": "Añade Evento de Ciudad",
-    "Road Event Decks": "Mazo de Enevtos de Camino",
+    "Road Event Decks": "Mazo de Eventos de Camino",
     "Add road events": "Añade Evento de Camino",
     "Draw": "Robar",
     "Toggle": "Resultado",
