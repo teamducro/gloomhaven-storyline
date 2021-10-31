@@ -64,7 +64,7 @@
                     </template>
                 </template>
                 <template slot="image" slot-scope="{value, row}">
-                    <webp :src="'/img/scenarios/' + row.id + '.png'"
+                    <webp :src="row.image()"
                           class="w-16 mr-4 my-1"
                           :alt="row.name"/>
                 </template>
