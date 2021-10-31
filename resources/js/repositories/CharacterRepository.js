@@ -1,7 +1,32 @@
 import Character from "../models/Character";
 import {v4 as uuidv4} from 'uuid';
+import GameData from "../services/GameData";
+import SheetRepository from "./SheetRepository";
 
 export default class CharacterRepository {
+
+    get(game) {
+        const characters = collect(this.gameData.characters(game));
+        return this.checkHiddenCharacters(characters);
+    }
+
+    ids(game) {
+        const order = this.gameData.characterOrder(game);
+        return this.get().keys().toArray().sort((a, b) => {
+            return order.indexOf(a) - order.indexOf(b);
+        });
+    }
+
+    checkHiddenCharacters(characters) {
+        const data = this.sheetRepository.data("gh");
+
+        // Check Envelope X solution before Bladeswarm is available
+        if (data?.xResult?.toLowerCase() !== 'bladeswarm') {
+            characters.forget("BS");
+        }
+
+        return characters;
+    }
 
     partyHasCharacter(sheet, id) {
         for (const uuid in sheet.characters) {
@@ -46,5 +71,13 @@ export default class CharacterRepository {
         delete sheet.archivedCharacters[character.uuid];
         character.delete();
         sheet.store();
+    }
+
+    get sheetRepository() {
+        return this._sheetRepository || (this._sheetRepository = new SheetRepository());
+    }
+
+    get gameData() {
+        return this._gameData || (this._gameData = new GameData());
     }
 }

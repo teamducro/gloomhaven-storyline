@@ -821,7 +821,6 @@
         "BS": {
             "id": "BS",
             "name": "Bladeswarm",
-            "isHidden": true,
             "perks": [
                 {
                     "count": 1,

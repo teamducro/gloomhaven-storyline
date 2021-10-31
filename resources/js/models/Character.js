@@ -20,7 +20,6 @@ class Character {
         this.notes = data.notes || '';
         this.checks = {...data.checks};
         this.perks = {...data.perks};
-        this.isHidden = false;
         this.game = data.game;
         this.gameData = new GameData;
 
@@ -52,7 +51,6 @@ class Character {
         const data = this.gameData.characters(this.game)[this.id];
         this.characterName = data.name;
         this.perkDescriptions = data.perks;
-        this.isHidden = data.isHidden || false;
     }
 
     fillBlanks() {

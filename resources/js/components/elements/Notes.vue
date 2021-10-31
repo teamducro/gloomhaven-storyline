@@ -13,7 +13,8 @@
             <div class="mdc-notched-outline">
                 <div class="mdc-notched-outline__leading"></div>
                 <div class="mdc-notched-outline__notch">
-                    <label :for="id" class="mdc-floating-label">{{ label }}</label>
+                    <label :for="id" class="mdc-floating-label"
+                           :class="{'mdc-floating-label--float-above': text.length}">{{ label }}</label>
                 </div>
                 <div class="mdc-notched-outline__trailing"></div>
             </div>

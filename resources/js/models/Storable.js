@@ -13,7 +13,7 @@ export default {
             })
             .sortKeys()
             .filter(value => {
-                return value !== null && value !== '' && (!Array.isArray(value) || value.length)
+                return value !== null && typeof value !== 'undefined' && value !== '' && (!Array.isArray(value) || value.length)
             })
             .all();
     },

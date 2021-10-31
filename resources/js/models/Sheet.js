@@ -2,6 +2,7 @@ import Storable from './Storable'
 import Character from "./Character";
 import GameData from "../services/GameData";
 import Helpers from "../services/Helpers";
+import CharacterRepository from "../repositories/CharacterRepository";
 
 const md5 = require('js-md5');
 
@@ -20,12 +21,12 @@ class Sheet {
         this.road = {...data.road};
         this.notes = data.notes || '';
         this.unlocks = {...data.unlocks};
-        this.xClues = {...data.xClues};
+        this.xResult = data.xResult || '';
         this.characterUnlocks = {...data.characterUnlocks};
         this.characters = {...data.characters};
         this.archivedCharacters = {...data.archivedCharacters};
         this.game = data.game;
-        this.gameData = new GameData;
+        this.characterRepository = new CharacterRepository();
 
         this.fieldsToStore = {
             reputation: 'reputation',
@@ -34,9 +35,9 @@ class Sheet {
             itemDesigns: {'itemDesigns': {}},
             city: {'city': {}},
             road: {'road': {}},
-            notes: 'notes',
+            notes: {'notes': ''},
             unlocks: {'unlocks': {}},
-            xClues: {'xClues': {}},
+            xResult: {'xResult': ''},
             characterUnlocks: {'characterUnlocks': {}},
             characters: {'characters': {}},
             archivedCharacters: {'archivedCharacters': {}},
@@ -82,12 +83,8 @@ class Sheet {
         this.road[82] = this.road[82] || false;
         this.road[83] = this.road[83] || false;
 
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 9; i++) {
             this.unlocks[i] = this.unlocks[i] || false;
-        }
-
-        for (let i = 1; i < 10; i++) {
-            this.xClues[i] = this.xClues[i] || false;
         }
     }
 
@@ -118,7 +115,10 @@ class Sheet {
     }
 
     fillCharacterUnlocks() {
-        const characterOrder = this.gameData.characterOrder('gh');
+        // Ensures character order is reloaded, needed to reveal hidden characters
+        this._characterOrder = undefined;
+
+        const characterOrder = this.characterRepository.ids(this.game);
         for (const i in characterOrder) {
             const id = characterOrder[i];
             if (id) {
@@ -126,10 +126,15 @@ class Sheet {
                     ? true
                     : (this.characterUnlocks[id] || this.characterUnlocks[i] || false);
             }
-
-            // Remove old character unlocks from party sheet, keys are ids now
-            delete this.characterUnlocks[i];
         }
+
+        // Remove old character unlocks from party sheet, keys are ids now
+        // Remove hidden characters
+        this.characterUnlocks = _.each(this.characterUnlocks, (characterUnlock, id) => {
+            if (!characterOrder.includes(id)) {
+                delete this.characterUnlocks[id];
+            }
+        });
     }
 
     getHash() {
@@ -139,6 +144,7 @@ class Sheet {
     read() {
         this.parentRead();
         this.migrateCharacterUnlocks();
+        this.migrateEnvelopeXResult();
 
         switch (this.game) {
             case 'jotl':
@@ -157,6 +163,13 @@ class Sheet {
         if (0 in this.characters && this.characters[0] === true) {
             this.characterUnlocks = JSON.parse(JSON.stringify(this.characters));
             this.characters = {};
+        }
+    }
+
+    migrateEnvelopeXResult() {
+        if (this.unlocks[9]) {
+            this.xResult = 'Bladeswarm';
+            delete this.unlocks[9];
         }
     }
 
@@ -188,7 +201,7 @@ class Sheet {
             return this._characterOrder;
         }
 
-        const characterOrder = this.gameData.characterOrder(this.game);
+        const characterOrder = this.characterRepository.ids(this.game);
         const characterOrderWithStartersFirst = Helpers.unique([...this.starterCharacters, ...characterOrder]);
         this._characterOrder = Helpers.reverse(Object.assign({}, characterOrderWithStartersFirst));
 
@@ -197,10 +210,11 @@ class Sheet {
 
     key() {
         switch (this.game) {
-            case 'jotl':
-                return 'sheet-jotl';
-            default:
+            case 'gh':
+            case 'fc':
                 return 'sheet';
+            default:
+                return 'sheet-' + this.game;
         }
     }
 }

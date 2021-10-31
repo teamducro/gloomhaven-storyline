@@ -33,7 +33,7 @@ export default class GameData {
     characters(game) {
         switch (game) {
             default:
-                return charactersJson.characters
+                return _.clone(charactersJson.characters)
         }
     }
 

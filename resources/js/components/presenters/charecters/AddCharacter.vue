@@ -52,7 +52,6 @@ export default {
         return {
             characterNames: {},
             dropDownClose: false,
-            gameData: new GameData,
             characterRepository: new CharacterRepository
         }
     },
@@ -72,7 +71,7 @@ export default {
     },
     methods: {
         render() {
-            const characters = this.gameData.characters(app.game);
+            const characters = this.characterRepository.get(app.game);
             this.characterNames = collect(characters).pluck('name').items;
         },
         open() {
