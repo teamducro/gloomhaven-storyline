@@ -42,6 +42,7 @@
 <script>
 import GameData from "../../../services/GameData";
 import CharacterRepository from "../../../repositories/CharacterRepository";
+import charactersJson from "../../../characters.json";
 
 export default {
     props: {
@@ -71,7 +72,8 @@ export default {
     },
     methods: {
         render() {
-            this.characterNames = this.gameData.characterNames(app.game);
+            const characters = this.gameData.characters(app.game);
+            this.characterNames = collect(characters).pluck('name').items;
         },
         open() {
             this.$refs['add-character'].open()

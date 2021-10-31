@@ -12,6 +12,7 @@ class Character {
         this.id = data.id;
         this.name = data.name;
         this.characterName = data.characterName;
+        this.perkDescriptions = [];
         this.level = data.level || 1;
         this.xp = data.xp || 0;
         this.gold = data.gold || 0;
@@ -19,6 +20,7 @@ class Character {
         this.notes = data.notes || '';
         this.checks = {...data.checks};
         this.perks = {...data.perks};
+        this.isHidden = false;
         this.game = data.game;
         this.gameData = new GameData;
 
@@ -44,17 +46,21 @@ class Character {
 
     new() {
         this.name = this.characterName;
-        this.fillBlanks();
+    }
+
+    readGameData() {
+        const data = this.gameData.characters(this.game)[this.id];
+        this.characterName = data.name;
+        this.perkDescriptions = data.perks;
+        this.isHidden = data.isHidden || false;
     }
 
     fillBlanks() {
-        this.characterName = this.gameData.characterNames(this.game)[this.id];
-
         for (let i = 0; i <= 17; i++) {
             this.checks[i] = this.checks[i] || false;
         }
 
-        this.perkDescriptions().forEach((perk, index) => {
+        this.perkDescriptions.forEach((perk, index) => {
             for (let i = 0; i < perk.count; i++) {
                 this.perks[index] = this.perks[index] || [];
                 this.perks[index][i] = this.perks[index][i] || false;
@@ -62,14 +68,9 @@ class Character {
         })
     }
 
-    perkDescriptions() {
-        const perks = this.gameData.characterPerks(this.game);
-
-        return perks ? perks[this.id] : [];
-    }
-
     read() {
         this.parentRead();
+        this.readGameData();
         this.fillBlanks();
     }
 
