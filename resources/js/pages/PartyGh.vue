@@ -72,9 +72,9 @@
             </div>
 
             <router-link to="/items">
-                <button class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                <button class="mdc-button origin-left transform scale-90 mdc-button--raised pr-1">
                     <i class="material-icons mdc-button__icon transform rotate-180">style</i>
-                    <span class="mdc-button__label">{{ $t('Items') }}</span>
+                    <span class="mdc-button__label">{{ $t('Items') }} 〉</span>
                 </button>
             </router-link>
 

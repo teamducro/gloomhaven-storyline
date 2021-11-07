@@ -15,7 +15,8 @@
                 :width="width"
                 @change="(item) => {toggle(item)}">
                 <template v-for="(checked, item) in items" v-slot:[slugify(item)]>
-                    <div class="w-full flex items-center justify-between">
+                    <div class="w-full flex items-center justify-between"
+                         :class="{'opacity-50': isDisabled(item)}">
                         <slot name="label" :item="item">
                             <span>{{ item }}</span>
                         </slot>
@@ -61,6 +62,7 @@ export default {
         label: String,
         width: String,
         items: Object,
+        disabled: Array,
         filterClosure: Function
     },
     data() {
@@ -93,6 +95,9 @@ export default {
             this.itemsUpdated(items);
         },
         select(item, select = true) {
+            if (this.isDisabled(item)) {
+                return;
+            }
             this.$set(this.items, item, select);
             this.$refs['rollback'].set(this.items);
             this.rerender();
@@ -105,6 +110,10 @@ export default {
         },
         toggle(item) {
             this.select(item, !this.items[item]);
+        },
+        isDisabled(item) {
+            const checked = this.items[item];
+            return !checked && Array.isArray(this.disabled) && this.disabled.includes(item);
         },
         itemsUpdated(items) {
             this.detectChangedItems();

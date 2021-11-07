@@ -98,7 +98,7 @@
                     <span class="lg:hidden">
                         <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
                         <span class="inline-block mr-2">
-                            {{ row.count - (itemCountUses[row.id] || 0) }}/{{ row.count }}
+                            {{ row.count - itemAvailability.uses(row.id) }}/{{ row.count }}
                         </span>
                         <span class="inline-block md:hidden">{{ row.cost + costModifier }}</span>
                     </span>
@@ -107,7 +107,7 @@
                     {{ value + costModifier }}
                 </span>
                 <template slot="availability" slot-scope="{value, row}">
-                    {{ row.count - (itemCountUses[row.id] || 0) }} / {{ row.count }}
+                    {{ row.count - itemAvailability.uses(row.id) }} / {{ row.count }}
                 </template>
                 <template slot="desc" slot-scope="{value}">
                     <add-links-and-icons :text="value"/>
@@ -125,6 +125,7 @@ import SheetCalculations from "../services/SheetCalculations";
 import ItemRepository from "../repositories/ItemRepository";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import ItemAvailability from "../services/ItemAvailability";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -135,7 +136,7 @@ export default {
             costModifier: 0,
             prosperity: 1,
             items: collect([]),
-            itemCountUses: {},
+            itemAvailability: null,
             campaignName: null,
             loading: true,
             query: '',
@@ -182,7 +183,7 @@ export default {
             this.sheet = this.sheetRepository.make(app.game);
             this.costModifier = this.calculateCostModifier(this.sheet.reputation || 0);
             this.campaignName = this.getCampaignName();
-            this.getItemAvailability();
+            this.itemAvailability = new ItemAvailability(this.sheet);
 
             await this.$nextTick();
 
@@ -204,19 +205,6 @@ export default {
             Vue.set(this.sheet.itemDesigns, item, isChecked);
             this.refreshItems();
             this.store();
-        },
-        getItemAvailability() {
-            this.itemCountUses = {};
-
-            if (this.sheet.characters) {
-                collect(this.sheet.characters).each(character => {
-                    collect(character.items).each((available, id) => {
-                        if (available) {
-                            this.itemCountUses[id] = (this.itemCountUses[id] || 0) + 1;
-                        }
-                    });
-                })
-            }
         },
         store() {
             if (this.loading) {
