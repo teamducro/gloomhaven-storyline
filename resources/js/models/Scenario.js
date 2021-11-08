@@ -190,8 +190,10 @@ class Scenario {
 
         // Scenarios with a different location based on the prior scenario
         if (this.hasMultipleLocations()) {
-            const from = this.scenarioRepository.prevScenarios(this).first().id;
-            sticker = '/img/scenarios/' + this.game + '/' + this.id + '_' + from + '_c' + '.png'
+            const from = this.scenarioRepository.prevScenarios(this)?.first()?.id;
+            if (from) {
+                sticker = '/img/scenarios/' + this.game + '/' + this.id + '_' + from + '_c' + '.png'
+            }
         }
 
         // Remove when completed scenario stickers are added for JotL

@@ -169,6 +169,7 @@ describe('Party', () => {
 
         cy.visit('/tracker/#/characters');
 
+        cy.wait(100);
         utilities.scrollTo('0%');
         utilities.openCharacter('Bladeswarm');
         cy.get('h1').contains('Bladeswarm');
