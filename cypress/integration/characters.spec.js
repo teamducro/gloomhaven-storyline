@@ -101,6 +101,19 @@ describe('Character', () => {
 
     });
 
+    it('It can\'t add more items then there is stock', () => {
+        // Campaign with Brute and Cragheart #001 Boots of Striding
+        cy.visit('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxASwL4BpwBmAxjAJwBsyqGO+YUwCAhgE5FSYBuApgCYDCUVkyJpuLMFTwJ2w0eICqAOwA2AeyIBrSSgQAhAErIQcXAn4AJY6YQBlAOrWzAFQCSTu-w8BZZ9bwgsowALADMABxE4XCkwTAEoXBxwXBw4TAARrxw5DAA7OThAAykBMFE5EwZecj6RmahRTHBTOR5MERMebwwwQBMRNwwTKVwMMXlTMHcGX3cYbWWCNJEmGgAnlQIiEgmZn0eoR7BHgCsHpS7NjVXZuEepB5wRU87e9sHt9tHX0lP579Lu84Ddgfdfo8vn0XlC3jY+p93n0fkiTlCAUigfDQfDwUjIe9Gv58JheMAAgAHTA2FhqJi8LZw-aHY5nC4eHF3B5PGHApkfJ4omx-X4Y4VYswgp544UE+G8+H8hEeZEqtFIsX7CUIPqcnUy-ZyhoKgIAV3JKyELBEYhYvQiUWa8USyVS6SyOXyhRKZQqVRujHY3C0OnJZggahUDKQRTMpNqhgQcbEAFtQ9tiQgVNweCpkDYlEwU9wEyxTWIkwgKeJtFsYQBtEBFAC6kuQjZbzKQHfwnYQPw7rYQaJ7TaHAMHZkuo77N0nCHBM6HkPnz3bY+kptN8aQw4d0VizqSvTdmWyuQKxVK5Uq1UrAA8Kcgipa5LaYI1mq12p1ur0BkMIwEGMEydNMszzD8gZQMGtYoNIEZRs+cbRuYVjJtwaaMpm2a5vmZiFsWizWtA3CsGglbViwcGMA2Y5tt2Ta9r2Q6fPOA5MfRw7rrGXETlx06cbOPFDouXErhuZhbju-ZNLE34dF0PT9IMwyjOMRSTOBcwLGYj7Ptg2BAA');
+
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Spellweaver');
+
+        cy.get('input[name="items"]').click();
+        cy.get('li').contains('Boots of Striding').click().parent().parent().should('have.class', 'opacity-50');
+
+        cy.get('#items-bedges').contains('Boots of Striding').should('not.exist');
+    });
+
     it('It stores the character sheet', () => {
         cy.visit('/tracker/#/characters');
         utilities.openCharacter();
