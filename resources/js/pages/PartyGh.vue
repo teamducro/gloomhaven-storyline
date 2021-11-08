@@ -169,6 +169,7 @@
                     <li v-for="(checked, id) in sheet.characterUnlocks" :key="id" class="flex items-center"
                         :class="'order-'+sheet.characterOrder[id]">
                         <checkbox group="items"
+                                  :id="'character-'+id"
                                   :checked="checked"
                                   :disabled="sheet.starterCharacters.includes(id)"
                                   @change="(_, isChecked) => {sheet.characterUnlocks[id] = isChecked; store()}"></checkbox>

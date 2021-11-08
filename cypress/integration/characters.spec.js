@@ -1,0 +1,132 @@
+import utilities from "../utilities";
+
+describe('Character', () => {
+
+    it('It loads the character sheet', () => {
+        cy.visit('/tracker/#/characters');
+
+        cy.contains('Brute');
+        cy.contains('Perks');
+        cy.contains('Remove two cards');
+        cy.contains('Items');
+        cy.contains('Battle Goals');
+        cy.contains('Additional notes');
+        cy.contains('Retire');
+    });
+
+    it('It can add a character', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+
+        cy.contains('Ignore negative scenario effects');
+    });
+
+    it('It can have one character in a party at the time', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+
+        cy.get('.items-to-add-dropdown').click();
+        cy.get('li.add-character').contains('Cragheart').contains('Cragheart').parent().should('have.class', 'grayscale');
+    });
+
+    it('It can change the character name', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+
+        cy.get('input[name="name"]').clear().type("Test");
+        cy.get('li').contains('Test').should('be.visible');
+    });
+
+    it('It can change level, xp and gold', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+
+        // LVL
+        cy.contains('Lvl 2');
+        cy.contains('45 XP');
+        cy.get('input[aria-labelledby="level"]').clear({force: true}).type('2{enter}');
+        cy.contains('Lvl 3');
+        cy.contains('95 XP');
+
+        // XP
+        cy.get('input[aria-labelledby="xp"]').clear({force: true}).type('100{enter}');
+        cy.contains('Level up when you\'re back in town!');
+
+        // Gold
+        cy.get('input[aria-labelledby="gold"]').clear({force: true}).type('20{enter}');
+    });
+
+    it('It can add items', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+
+        cy.get('input[name="items"]').click();
+        cy.get('li').contains('Boots of Striding').click();
+        utilities.closeModel();
+
+        cy.get('#items-bedges').contains('Boots of Striding');
+
+        cy.get('input[name="items"]').click().type('10{enter}');
+        cy.get('li').contains('War Hammer').click();
+        utilities.closeModel();
+
+        cy.get('#items-bedges').contains('War Hammer');
+    });
+
+    it('It can check perks', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+
+        for (let i = 0; i <= 9; i++) {
+            cy.get(`#perk-${i}-0`).click();
+        }
+    });
+
+    it('It can check battle goals', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+        utilities.scrollTo('60%');
+
+        for (let i = 1; i <= 3; i++) {
+            cy.get(`#check${i}`).click();
+        }
+        cy.contains('You may select an additional perk!');
+
+    });
+
+    it('It stores the character sheet', () => {
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter();
+
+        cy.get('input[name="name"]').clear().type("Test");
+        cy.get('input[aria-labelledby="level"]').clear({force: true}).type('2{enter}');
+        cy.get('input[aria-labelledby="xp"]').clear({force: true}).type('50{enter}');
+        cy.get('input[aria-labelledby="gold"]').clear({force: true}).type('50{enter}');
+        cy.get('input[name="items"]').click();
+        cy.get('li').contains('Boots of Striding').click();
+        utilities.closeModel();
+        cy.get('#perk-0-0').click();
+        utilities.scrollTo('60%');
+        cy.get('#check1').click();
+        cy.get('#notes').type('Foo Bar');
+        utilities.closeModel();
+
+        cy.reload();
+
+        cy.get('input[name="name"]').should('have.value', 'Test');
+        cy.get('input[aria-labelledby="level"]').should('have.value', '2');
+        cy.get('input[aria-labelledby="xp"]').should('have.value', '50');
+        cy.get('input[aria-labelledby="gold"]').should('have.value', '50');
+        cy.get('#check1').should('be.checked');
+        cy.get('#perk-0-0').should('be.checked');
+        cy.get('#notes').should('have.value', 'Foo Bar');
+    });
+
+});

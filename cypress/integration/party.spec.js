@@ -160,8 +160,17 @@ describe('Party', () => {
     it('it unlocks envelope X', () => {
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%');
+        cy.get('li.order-17 g[fill="#D39382"]').should('not.exist');
         cy.get('input#unlock8').click();
-        cy.get('span').contains('Envelope x solved').should('be.visible');
-        cy.get('span').contains('Clues').should('be.visible');
+        utilities.scrollTo('100%');
+        cy.get('input[name="x-result"]').type('Bladeswarm{enter}');
+        cy.get('li.order-17 g[fill="#D39382"]').should('exist');
+        cy.get('#character-BS').click();
+
+        cy.visit('/tracker/#/characters');
+
+        utilities.scrollTo('0%');
+        utilities.openCharacter('Bladeswarm');
+        cy.get('h1').contains('Bladeswarm');
     });
 });
