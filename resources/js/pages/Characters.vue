@@ -76,9 +76,10 @@
                                 :title="$t('Items')"
                                 :label="$t('Search name or nr')"
                                 :items.sync="sheetItems"
+                                :disabled="outOfStockItems"
                                 :filter-closure="itemFilterClosure"
                                 width="w-auto"
-                                class="mb-8"
+                                class="mb-2"
                                 @change="storeItems"
                                 ref="items"
                             >
@@ -95,6 +96,13 @@
                                           class="ml-auto material-icons">clear</span>
                                 </div>
                             </selectable-list>
+
+                            <router-link to="/items">
+                                <button class="mb-8 mdc-button origin-left transform scale-90 mdc-button--raised pr-1">
+                                    <i class="material-icons mdc-button__icon transform rotate-180">style</i>
+                                    <span class="mdc-button__label">{{ $t('Items') }} 〉</span>
+                                </button>
+                            </router-link>
 
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
@@ -189,6 +197,7 @@ import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
 import store from "store/dist/store.modern";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import ItemAvailability from "../services/ItemAvailability";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -202,6 +211,8 @@ export default {
             loading: true,
             sheetItems: {},
             items: collect(),
+            itemAvailability: null,
+            outOfStockItems: [],
             nameField: null,
             isLocalCampaign: true,
             storySyncer: new StorySyncer,
@@ -267,8 +278,26 @@ export default {
 
                 this.items = this.itemRepository.findMany(sheetItems).keyBy('id').items;
                 sheetItems.forEach(id => {
-                    this.sheetItems[id] = !!this.character.items[id];
+                    if (!isNaN(id)) {
+                        this.sheetItems[id] = !!this.character.items[id];
+                    }
                 });
+
+                this.refreshOutOfStockItems();
+            }
+        },
+        refreshOutOfStockItems() {
+            this.itemAvailability = new ItemAvailability(this.sheet);
+
+            if (this.character) {
+                this.outOfStockItems = [];
+
+                for (const id in this.itemAvailability.itemCountUses) {
+                    // The following items are out of stock
+                    if (this.items[id] && this.itemAvailability.uses(id) >= this.items[id].count) {
+                        this.outOfStockItems.push(id);
+                    }
+                }
             }
         },
         resetRollback() {
@@ -326,6 +355,7 @@ export default {
         storeItems() {
             this.character.items = this.sheetItems;
             this.store();
+            this.refreshOutOfStockItems();
         },
         store() {
             if (this.loading) {

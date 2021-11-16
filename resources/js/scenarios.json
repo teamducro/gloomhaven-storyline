@@ -4585,6 +4585,11 @@
             "id": 200,
             "game": "fc",
             "name": "Tower to the Stars",
+            "coordinates": {
+                "name": "",
+                "x": 0,
+                "y": 0
+            },
             "pages": [
                 "fc/1/26",
                 "fc/2/22"

@@ -144,6 +144,11 @@ export default {
         cy.get('.' + game).click();
     },
 
+    openCharacter(character = 'Cragheart') {
+        cy.get('.items-to-add-dropdown').click();
+        cy.get('li.add-character').contains(character).click();
+    },
+
     // Call "cy.scrollTo" twice to make sure scrolling is performed as expected.
     scrollTo(to) {
         cy.scrollTo(0, to);

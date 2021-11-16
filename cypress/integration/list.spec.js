@@ -83,10 +83,14 @@ describe('Scenario list', () => {
         utilities.assertTableCount('scenarios', 95);
 
         utilities.switchGame('fc');
-
         cy.visit('/tracker/#/scenarios');
 
         utilities.assertTableCount('scenarios', 21);
+
+        utilities.switchGame('jotl');
+        cy.visit('/tracker/#/scenarios');
+
+        utilities.assertTableCount('scenarios', 25);
     });
 
 });

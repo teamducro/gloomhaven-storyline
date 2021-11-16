@@ -4,11 +4,12 @@ import AchievementGroup from "../models/AchievementGroup";
 import {ScenarioState} from "../models/ScenarioState";
 import StorySyncer from "../services/StorySyncer";
 import GameData from "../services/GameData";
+import ScenarioCompletedService from "../services/ScenarioCompletedService";
 
 export default class AchievementRepository {
 
     fetch(game) {
-        return collect((new GameData).achievements(game)).map((achievement) => {
+        return collect(this.gameData.achievements(game)).map((achievement) => {
             achievement = new Achievement(achievement);
             return achievement;
         });
@@ -160,6 +161,10 @@ export default class AchievementRepository {
 
     get storySyncer() {
         return this._storySyncer || (this._storySyncer = new StorySyncer);
+    }
+
+    get gameData() {
+        return this._gameData || (this._gameData = new GameData());
     }
 
 }
