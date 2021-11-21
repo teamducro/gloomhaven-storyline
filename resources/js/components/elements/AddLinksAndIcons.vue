@@ -141,6 +141,12 @@ export default {
                     '{AGAIN}': '<webp src="/img/icons/perks/again_white.png" width="20" class="inline"/>',
                     '{NOTE_115}': '<webp src="/img/notes/note-115.png" width="421"/>',
                     '{NOTE_42}': '<webp src="/img/notes/note-42.png" width="421"/>',
+                    '{BODY}': '<webp src="/img/icons/equipment/body.png" alt="body" width="20"/>',
+                    '{HEAD}': '<webp src="/img/icons/equipment/head.png" alt="head" width="20"/>',
+                    '{LEGS}': '<webp src="/img/icons/equipment/legs.png" alt="legs" width="20"/>',
+                    '{SMALL-ITEM}': '<webp src="/img/icons/equipment/small-item.png" alt="small-item" width="20"/>',
+                    '{ONE-HAND}': '<webp src="/img/icons/equipment/one-hand.png" alt="one-hand" width="20"/>',
+                    '{TWO-HANDS}': '<webp src="/img/icons/equipment/two-hands.png" alt="two-hands" width="20"/>'
                 }).each((icon, key) => {
                     text = text.replaceAll(key, icon);
                 });
