@@ -60,7 +60,7 @@ export default {
                 if (scenario) {
                     if (scenario.isVisible()) {
                         this.scenarios[id] = scenario;
-                        text = text.replace(name, `<scenario-number :scenario="scenarios[${id}]"/>`);
+                        text = text.replace(name, `<scenario-number :scenario="scenarios[${id}]" :showName="true"/>`);
                     } else {
                         text = text.replace(name, this.$t('Hidden Scenario'));
                     }
