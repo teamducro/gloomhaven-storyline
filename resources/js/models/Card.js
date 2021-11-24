@@ -35,7 +35,7 @@ class Card {
             case "C":
                 return [`/img/cards/${folder}/city/${this.id}-f.jpg`, `/img/cards/${folder}/city/${this.id}-b.jpg`];
             case "Q":
-                return [`/img/cards/${folder}/quest/${this.id}.jpg`];
+                return [`/img/cards/${folder}/quest/${this.id}.jpg`, `/img/cards/${folder}/quest/back.jpg`];
             default:
                 return [];
         }

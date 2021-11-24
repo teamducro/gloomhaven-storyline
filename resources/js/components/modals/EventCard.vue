@@ -58,6 +58,7 @@
 import Card from "../../models/Card";
 import FlipCard from "../elements/FlipCard";
 import PreloadImage from "../../services/PreloadImage";
+import Helpers from "../../services/Helpers";
 
 export default {
     components: {FlipCard},
@@ -72,14 +73,14 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-card', (card) => {
-            this.open(new Card(card.id, card.game));
+        this.$bus.$on('open-event-card', (card) => {
+            this.open(card);
         });
-        this.$bus.$on('close-card', this.close);
+        this.$bus.$on('close-event-card', this.close);
     },
     methods: {
         open(card) {
-            this.card = card;
+            this.card = card instanceof Card ? card : new Card(card.id, card.game);
             this.choice = null;
             this.animating = false;
             this.blur = false;
@@ -87,15 +88,14 @@ export default {
             this.$refs['modal'].open();
             this.preloadImage.handle(card.images[1]);
         },
-        chose(choice) {
+        async chose(choice) {
             this.choice = choice;
             this.animating = true;
             this.blur = true;
 
             // animation done
-            setTimeout(() => {
-                this.animating = false;
-            }, 600);
+            await Helpers.sleep(600);
+            this.animating = false;
         },
         remove() {
             if (!this.removed && this.choice && !this.animating) {

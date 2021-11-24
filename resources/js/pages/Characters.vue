@@ -104,10 +104,17 @@
                                 </button>
                             </router-link>
 
+                            <personal-quests v-if="game !== 'jotl'"
+                                             :quest.sync="character.quest"
+                                             :game="character.game"
+                                             @change="store"/>
+
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
-                            <perks :checks.sync="character.checks" :perks.sync="character.perks"
-                                   :character="character" @change="store"/>
+                            <perks :checks.sync="character.checks"
+                                   :perks.sync="character.perks"
+                                   :character="character"
+                                   @change="store"/>
                         </div>
                     </div>
 
@@ -203,6 +210,7 @@ export default {
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
+            game: null,
             sheet: null,
             sheetHash: null,
             selected: null,
@@ -244,6 +252,7 @@ export default {
         async render() {
             this.loading = true;
 
+            this.game = app.game;
             this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
 

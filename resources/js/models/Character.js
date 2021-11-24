@@ -1,5 +1,7 @@
 import Storable from './Storable'
 import GameData from "../services/GameData";
+import PersonalQuestRepository from "../repositories/PersonalQuestRepository";
+import PersonalQuest from "./PersonalQuest";
 
 class Character {
 
@@ -20,8 +22,10 @@ class Character {
         this.notes = data.notes || '';
         this.checks = {...data.checks};
         this.perks = {...data.perks};
+        this.quest = {...data.quest};
         this.game = data.game;
         this.gameData = new GameData;
+        this.personalQuestRepository = new PersonalQuestRepository;
 
         this.fieldsToStore = {
             uuid: 'uuid',
@@ -33,7 +37,8 @@ class Character {
             items: {'items': {}},
             notes: 'notes',
             checks: {'checks': {}},
-            perks: {'perks': {}}
+            perks: {'perks': {}},
+            quest: {'quest': {}}
         };
 
         this.read();
@@ -66,10 +71,17 @@ class Character {
         })
     }
 
+    fillRelations() {
+        if (this.quest.id && !(this.quest instanceof PersonalQuest)) {
+            this.quest = this.personalQuestRepository.make(this.quest);
+        }
+    }
+
     read() {
         this.parentRead();
         this.readGameData();
         this.fillBlanks();
+        this.fillRelations();
     }
 
     valuesToStore() {
@@ -77,6 +89,7 @@ class Character {
         values.checks = collect({...this.checks}).filter(v => v).all();
         values.perks = collect({...this.perks}).filter(perks => (perks || []).filter(v => v)).all();
         values.items = collect({...this.items}).filter(v => v).all();
+        values.quest = this.quest instanceof PersonalQuest ? this.quest.valuesToStore() : {};
         return values;
     }
 
