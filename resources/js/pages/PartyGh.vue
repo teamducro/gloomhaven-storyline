@@ -72,9 +72,9 @@
             </div>
 
             <router-link to="/items">
-                <button class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                <button class="mdc-button origin-left transform scale-90 mdc-button--raised pr-1">
                     <i class="material-icons mdc-button__icon transform rotate-180">style</i>
-                    <span class="mdc-button__label">{{ $t('Items') }}</span>
+                    <span class="mdc-button__label">{{ $t('Items') }} 〉</span>
                 </button>
             </router-link>
 
@@ -149,40 +149,27 @@
                             <span class="whitespace-normal md:whitespace-nowrap">
                                 {{ $t('Envelope') }} <span class="font-title">x</span> {{ $t('opened') }}
                             </span>
-                            <span v-show="sheet.unlocks[8]" :key="'a'+renderX"
-                                  class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
-                                <span class="material-icons mr-1">remove</span>
-                                {{ $t('Clues') }}
-                                <span>
-                                    <checkbox v-for="(unlock, index) in sheet.xClues" group="xClues"
-                                              :key="'x'+index"
-                                              :id="'x'+index"
-                                              :checked="index == 0 || sheet.xClues[index]"
-                                              :disabled="index == 0"
-                                              @change="(id, isChecked) => {sheet.xClues[index] = isChecked; store()}"></checkbox>
-                                </span>
-                            </span>
                         </td>
                     </tr>
-                    <tr v-show="sheet.unlocks[8]" :key="'b'+renderX"
+                    <tr v-show="sheet.unlocks[8]" :key="'a'+renderX"
                         class="flex items-center border-b border-gray-600">
                         <td class="-ml-2">
-                            <checkbox group="unlocks" id="unlock9"
-                                      :checked="sheet.unlocks[9]"
-                                      @change="(id, isChecked) => {sheet.unlocks[9] = isChecked; store()}"></checkbox>
+                            <checkbox disabled="disabled" readonly="readonly"
+                                      :checked="'BS' in sheet.characterUnlocks"></checkbox>
                         </td>
                         <td class="w-full flex flex-wrap">
-                            <span class="whitespace-normal md:whitespace-nowrap">
-                                {{ $t('Envelope') }} <span class="font-title">x</span> {{ $t('solved') }}
-                            </span>
+                            <text-field class="my-2" id="x-result" :label="$t('Envelope X solution')"
+                                        :value="sheet.xResult || ''" :max="10"
+                                        @change="xResultChanged"></text-field>
                         </td>
                     </tr>
                 </table>
 
-                <ul class="flex flex-row flex-wrap -mx-2">
+                <ul class="flex flex-row flex-wrap -mx-2" :key="'b'+renderX">
                     <li v-for="(checked, id) in sheet.characterUnlocks" :key="id" class="flex items-center"
                         :class="'order-'+sheet.characterOrder[id]">
                         <checkbox group="items"
+                                  :id="'character-'+id"
                                   :checked="checked"
                                   :disabled="sheet.starterCharacters.includes(id)"
                                   @change="(_, isChecked) => {sheet.characterUnlocks[id] = isChecked; store()}"></checkbox>
@@ -314,7 +301,7 @@ export default {
             let id = [...checkedItems].sort((a, b) => 0.5 - Math.random())[0];
             if (id) {
                 const card = (isCity ? 'C' : 'R') + '-' + id;
-                this.$bus.$emit('open-card', {id: card, game: this.game});
+                this.$bus.$emit('open-event-card', {id: card, game: this.game});
             }
         },
         removeCard(card) {
@@ -327,6 +314,14 @@ export default {
             return {
                 template: `<span>${html}</span>`
             };
+        },
+        async xResultChanged(xResult) {
+            this.sheet.xResult = xResult;
+            this.store();
+            await this.$nextTick();
+            this.sheet.fillCharacterUnlocks();
+            await this.$nextTick();
+            this.rerenderX();
         },
         rerenderX() {
             this.renderX++;

@@ -184,6 +184,23 @@
 
                 <two-column-content reverse>
                     <template v-slot:title>
+                        <i class="material-icons text-gray-800 mr-2 transform rotate-180" aria-hidden="true">style</i>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Extensions
+                        </h3>
+                    </template>
+                    <template v-slot:left>
+                        <p class="text-gray-500 mb-2">
+                            Forgotten circles and Jaws of the Lion can be tracked in Gloomhaven Storyline
+                        </p>
+                    </template>
+                    <template v-slot:right>
+
+                    </template>
+                </two-column-content>
+
+                <two-column-content>
+                    <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2" aria-hidden="true">map</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
                             Map view
@@ -212,7 +229,7 @@
                 </two-column-content>
 
 
-                <two-column-content>
+                <two-column-content reverse>
                     <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2" aria-hidden="true">filter_list</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">

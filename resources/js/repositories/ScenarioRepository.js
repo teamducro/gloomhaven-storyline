@@ -9,7 +9,7 @@ import SheetRepository from "./SheetRepository";
 
 export default class ScenarioRepository {
     fetch(game) {
-        return collect((new GameData).scenarios(game)).map((scenario) => {
+        return collect(this.gameData.scenarios(game)).map((scenario) => {
             scenario = new Scenario(scenario);
             this.fetchChapter(scenario);
             this.fetchRegions(scenario);
@@ -326,11 +326,11 @@ export default class ScenarioRepository {
     }
 
     fetchAllChapters(game) {
-        return this._chapters || (this._chapters = collect((new GameData).chapters(game)));
+        return collect(this.gameData.chapters(game));
     }
 
     fetchAllRegions(game) {
-        return this._regions || (this._regions = collect((new GameData).regions(game)));
+        return collect(this.gameData.regions(game));
     }
 
     fetchRegionsWithScenarios(game) {
@@ -355,5 +355,9 @@ export default class ScenarioRepository {
 
     get scenarioCompletedService() {
         return this._scenarioCompletedService || (this._scenarioCompletedService = new ScenarioCompletedService());
+    }
+
+    get gameData() {
+        return this._gameData || (this._gameData = new GameData());
     }
 }

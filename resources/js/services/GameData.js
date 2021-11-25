@@ -4,6 +4,7 @@ import scenariosJotlJson from '../scenarios-jotl.json'
 import questsJson from '../quests.json'
 import questsFCJson from '../quests-fc.json'
 import questsJotlJson from '../quests-jotl.json'
+import personalQuestsJson from '../personal-quests.json'
 import itemsJson from '../items.json'
 import itemsJotlJson from '../items-jotl.json'
 import charactersJson from '../characters.json'
@@ -30,24 +31,17 @@ export default class GameData {
         return this._scenarioData(game).chapters
     }
 
+    characters(game) {
+        switch (game) {
+            default:
+                return _.clone(charactersJson.characters)
+        }
+    }
+
     characterOrder(game) {
         switch (game) {
             default:
                 return charactersJson.order
-        }
-    }
-
-    characterNames(game) {
-        switch (game) {
-            default:
-                return charactersJson.names
-        }
-    }
-
-    characterPerks(game) {
-        switch (game) {
-            default:
-                return charactersJson.perks
         }
     }
 
@@ -77,6 +71,13 @@ export default class GameData {
                 return itemsJotlJson
             default:
                 return itemsJson
+        }
+    }
+
+    personalQuests(game) {
+        switch (game) {
+            default:
+                return personalQuestsJson
         }
     }
 
