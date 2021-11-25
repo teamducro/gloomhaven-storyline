@@ -301,7 +301,7 @@ export default {
             let id = [...checkedItems].sort((a, b) => 0.5 - Math.random())[0];
             if (id) {
                 const card = (isCity ? 'C' : 'R') + '-' + id;
-                this.$bus.$emit('open-card', {id: card, game: this.game});
+                this.$bus.$emit('open-event-card', {id: card, game: this.game});
             }
         },
         removeCard(card) {
