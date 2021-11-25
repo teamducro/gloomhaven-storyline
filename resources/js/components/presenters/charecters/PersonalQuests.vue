@@ -5,24 +5,33 @@
             <h2>{{ $t('Personal Quest') }}</h2>
         </div>
 
-        <autocomplete v-if="!quest.id" :label="$t('Search name or nr')"
-                      id="personal-quests"
-                      :list="Object.keys(quests)"
-                      :filter-closure="questFilterClosure"
-                      :auto-close="true"
-                      @change="(id) => {select(id)}"
-        >
-            <template v-for="(quest, id) in quests" v-slot:[id]>
-                {{ quest.title }}
-            </template>
-        </autocomplete>
+        <div v-if="!quest.id" class="flex items-center">
+            <autocomplete :label="$t('Search name or nr')"
+                          id="personal-quests"
+                          :list="Object.keys(quests)"
+                          :filter-closure="questFilterClosure"
+                          :auto-close="true"
+                          @change="(id) => {select(id)}"
+            >
+                <template v-for="(quest, id) in quests" v-slot:[id]>
+                    {{ quest.title }}
+                </template>
+            </autocomplete>
+
+            <div class="mx-4">{{ $t('or') }}</div>
+
+            <button @click="random" class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                <i class="material-icons mdc-button__icon">launch</i>
+                <span class="mdc-button__label">{{ $t('Draw') }}</span>
+            </button>
+        </div>
 
         <div v-if="quest.id" class="flex justify-between">
             <div class="flex flex-col">
-                <h3>{{ quest.title }}</h3>
+                <h3 class="mt-2">{{ quest.title }}</h3>
 
                 <div v-for="(part, partIndex) in quest.progress">
-                    <p class="mt-4">{{ part.name }}</p>
+                    <add-links-and-icons class="mt-2 children-inline" :text="part.name"/>
                     <div v-if="part.type === 'checkbox'">
                         <checkbox v-for="(checked, valueIndex) in part.value" :key="'pq-'+partIndex+'-'+valueIndex"
                                   :group="'pq-'+partIndex"
@@ -69,11 +78,13 @@ export default {
     },
     mounted() {
         this.quests = this.personalQuestRepository.fetch(this.game).keyBy('id').items;
-        console.log('loaded');
-        console.log(this.quest.progress);
     },
     computed: {},
     methods: {
+        random() {
+            const quest = [...Object.values(this.quests)].sort((a, b) => 0.5 - Math.random())[0];
+            this.update(quest);
+        },
         select(questId) {
             const quest = this.quests[questId];
             this.update(quest);
@@ -87,16 +98,14 @@ export default {
             this.$emit('change', quest);
         },
         changedCheckboxProgress(partIndex, valueIndex, isChecked) {
-            const quest = _.clone(this.quest);
-            quest.progress[partIndex].value[valueIndex] = isChecked;
+            this.quest.progress[partIndex].value[valueIndex] = isChecked;
 
-            this.update(quest);
+            this.update(this.quest);
         },
         changedNumberProgress(partIndex, value) {
-            const quest = _.clone(this.quest);
-            quest.progress[partIndex].value = value;
+            this.quest.progress[partIndex].value = value;
 
-            this.update(quest);
+            this.update(this.quest);
         },
         openCard() {
             this.$bus.$emit('open-default-card', this.quest.card);
@@ -112,3 +121,9 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.children-inline > img {
+    @apply inline;
+}
+</style>
