@@ -151,7 +151,7 @@ describe('Character', () => {
         cy.get('li').contains('#510 Seeker of Xorn').click();
 
         cy.get('img[alt="Seeker of Xorn"]').click();
-        cy.get('h2').contains('Personal Quest #513');
+        cy.get('h2').contains('Personal Quest #510');
     });
 
     it('It stores the character sheet', () => {
@@ -162,10 +162,10 @@ describe('Character', () => {
         cy.get('input[aria-labelledby="level"]').clear({force: true}).type('2{enter}');
         cy.get('input[aria-labelledby="xp"]').clear({force: true}).type('50{enter}');
         cy.get('input[aria-labelledby="gold"]').clear({force: true}).type('50{enter}');
+        cy.get('#perk-0-0').click();
         cy.get('input[name="items"]').click();
         cy.get('li').contains('Boots of Striding').click();
         utilities.closeModel();
-        cy.get('#perk-0-0').click();
         utilities.scrollTo('60%');
         cy.get('#check1').click();
         cy.get('#notes').type('Foo Bar');
