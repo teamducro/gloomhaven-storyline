@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="550" height="400">
+    <style>text { font-family: "Pirata One", "Nyala", sans-serif; fill: white; }
+        text.label { font-size: 10px; }
+        .line { fill: none; }
+        .arrow { fill: white; }
+        .line, .arrow { stroke: white; }
+        .scenario { cursor: pointer; }
+
+        circle.node { fill: black; stroke: white; transform: translate(-10.8px, 0); }
+        circle.node + text { font-size: 11px; transform: translate(0px, 9px); }
+        circle.node ~ .blocked { font-size: 16px; font-family: Arial, sans-serif; transform: translate(-10px, -5px); }
+        circle.node ~ .required { font-size: 12px; font-weight: bold; transform: translate(-7px, -5px); }
+    </style>
+    <g class="layer">
+        <g class="chapter intro" id="chapter1">
+            <rect fill="#111" height="48.5" opacity="0.7" rx="10" ry="10" stroke="#000" width="198" x="14" y="10"/>
+            <text class="label" x="22" y="22">
+                {{ $t("Intro") }}
+            </text>
+        </g>
+        <g class="chapter" id="chapter2">
+            <rect fill="#111" height="237.5" opacity="0.7" rx="10" ry="10" stroke="#000" width="198" x="14" y="68"/>
+            <text class="label" x="22" y="80">
+                {{ $t("Main") }}
+            </text>
+        </g>
+        <g id="chapter3">
+            <rect fill="#111" height="50" opacity="0.7" rx="10" ry="10" stroke="#000" width="74" x="223" y="10"/>
+            <text class="label" x="230" y="22">
+                {{ $t("City Events") }}
+            </text>
+        </g>
+        <g id="chapter4">
+            <rect fill="#111" height="82.5" opacity="0.7" rx="10" ry="10" stroke="#000" width="74" x="223" y="68"/>
+            <text class="label" x="230" y="80">
+                {{ $t("Characters") }}
+            </text>
+        </g>
+
+        <!-- Intro -->
+        <g class="scenario" id="node1">
+            <circle class="node" cx="40.35937" cy="39.76407" fill="black" r="10.8"/>
+            <text fill="black" x="28" y="35.44952">1</text>
+        </g>
+        <g class="edge edge1" id="edge1-2" transform="rotate(-90 49.7168 40.3271)">
+            <path class="line" d="m49.71684,31.74055l0,13.75621" fill="black"/>
+            <path class="arrow"
+                  d="m49.71684,48.91357l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black"/>
+        </g>
+        <g class="scenario" id="node2">
+            <circle class="node" cx="81.23369" cy="39.63889" fill="black" r="10.8"/>
+            <text fill="black" x="68" y="35.32434">2</text>
+        </g>
+        <g class="edge edge2" id="edge2-3" transform="rotate(-90 90.25 40)">
+            <path class="line" d="m90.25,31.41349l0,13.75621" fill="black"/>
+            <path class="arrow" d="m90.25,48.58651l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black"/>
+        </g>
+        <g class="scenario" id="node3">
+            <circle class="node" cx="122.05" cy="40.1017" fill="black" r="10.8"/>
+            <text fill="black" x="108.5" y="35.53715">3</text>
+        </g>
+        <g class="edge edge3" id="edge3-4" transform="rotate(-90 131.25 40.5)">
+            <path class="line" d="m131.25,31.91349l0,13.75621" fill="black"/>
+            <path class="arrow"
+                  d="m131.25,49.08651l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black"/>
+        </g>
+        <g class="scenario" id="node4">
+            <circle class="node" cx="162.55" cy="40.10171" fill="black" r="10.8"/>
+            <text fill="black" x="149" y="35.53715">4</text>
+        </g>
+        <g class="edge edge4" id="edge4-5" transform="rotate(-90 171.75 40.5)">
+            <path class="line" d="m171.75,31.91349l0,13.75621" fill="black"/>
+            <path class="arrow"
+                  d="m171.75,49.08651l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black"/>
+        </g>
+        <g class="scenario" id="node5">
+            <circle class="node" cx="203.55" cy="40.75001" fill="black" r="10.8"/>
+            <text fill="black" x="190" y="36.18545">5</text>
+        </g>
+        <g class="edge edge5" id="edge5-6" transform="rotate(0.386978 151.292 64.7253)">
+            <path class="line" d="m153.55438,28l0,72" transform="rotate(60.726 153.554 62.7046)"/>
+            <path class="arrow"
+                  d="m119.29913,84.42415l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  transform="rotate(60.726 119.299 81.9073)"/>
+        </g>
+        <!-- Main -->
+        <g class="scenario" id="node6">
+            <circle class="node" cx="117.55" cy="88.75002" fill="black" r="10.8"/>
+            <text fill="black" x="104" y="84.18546">6</text>
+        </g>
+        <g class="edge edge6" id="edge6-7">
+            <path class="line" d="m92.62499,93.59563l0,13.75621" fill="black" transform="rotate(45 92.625 100.473)"/>
+            <path class="arrow"
+                  d="m86.87499,108.62707l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black" transform="rotate(45 86.875 106.11)"/>
+        </g>
+        <g class="edge edge6" id="edge6-8">
+            <path class="line" d="m120.14216,93.56066l0,13.75621" transform="rotate(-46 120.142 100.439)"/>
+            <path class="arrow"
+                  d="m125.99507,108.60769l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  transform="rotate(-46 125.995 106.091)"/>
+        </g>
+        <g class="scenario" id="node7">
+            <circle class="node" cx="89.3" cy="117.75002" fill="black" r="10.8"/>
+            <text fill="black" x="76.2" y="113.43546">7</text>
+            <text class="blocked" x="71.05" y="114">×</text>
+        </g>
+        <g class="edge edge7" id="edge7-9">
+            <path class="line" d="m90.91504,124.38894l0,13.75621" transform="rotate(-45 90.915 131.267)"/>
+            <path class="arrow"
+                  d="m96.66842,139.53725l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  transform="rotate(-45 96.6684 137.02)"/>
+        </g>
+        <g class="scenario" id="node8">
+            <circle class="node" cx="145.55" cy="117.50002" fill="black" r="10.8"/>
+            <text fill="black" x="132.25" y="113.43546">8</text>
+            <text class="blocked" x="153.25" y="114">×</text>
+        </g>
+        <g class="edge edge8" id="edge8-9">
+            <path class="line" d="m123.87499,124.59564l0,13.75621" fill="black" transform="rotate(45 123.875 131.473)"/>
+            <path class="arrow"
+                  d="m117.62499,140.12708l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black" transform="rotate(45 117.625 137.61)"/>
+        </g>
+        <g class="scenario" id="node9">
+            <circle class="node" cx="117.55" cy="146.50002" fill="black" r="10.8"/>
+            <text fill="black" x="104.25" y="142.18546">9</text>
+        </g>
+        <g class="edge edge9" id="edge9-10">
+            <path class="line" d="m107.25001,157.91348l0,13.75621" fill="black"/>
+            <path class="arrow"
+                  d="m107.25001,175.0865l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black"/>
+        </g>
+        <g class="scenario" id="node10">
+            <circle class="node" cx="117.55" cy="186.6017" fill="black" r="10.8"/>
+            <text fill="black" x="104" y="182.28715">10</text>
+        </g>
+        <g class="edge edge10" id="edge10-11" transform="rotate(45 92.75 199.352)">
+            <path class="line" d="m92.74999,190.58599l0,13.75621"/>
+            <path class="arrow"
+                  d="m92.74999,208.11743l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"/>
+        </g>
+        <g class="edge edge10" id="edge10-12">
+            <path class="line" d="m121.64217,190.91235l0,13.75621" transform="rotate(-46 121.642 197.791)"/>
+            <path class="arrow"
+                  d="m127.49508,205.95938l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  transform="rotate(-46 127.495 203.443)"/>
+        </g>
+        <g class="scenario" id="node11">
+            <circle class="node" cx="89.3" cy="215.10171" fill="black" r="10.8"/>
+            <text fill="black" x="76" y="210.78715">11</text>
+            <text class="blocked" x="71" y="211">×</text>
+        </g>
+        <g class="edge edge11" id="node11-13">
+            <path class="line" d="m78.5,226.16348l0,13.75621" fill="black"/>
+            <path class="arrow" d="m78.5,243.3365l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black"/>
+        </g>
+        <g class="edge edge11" id="edge11-19" transform="rotate(90 59 215.25)">
+            <path class="line" d="m59,206.66349l0,13.75621" fill="black"/>
+            <path class="arrow" d="m59,223.83651l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black"/>
+        </g>
+        <g class="scenario" id="node12">
+            <circle class="node" cx="147.05" cy="215.10171" fill="black" r="10.8"/>
+            <text fill="black" x="133" y="210.78715">12</text>
+            <text class="blocked" x="154" y="211">×</text>
+        </g>
+        <g class="edge edge12" id="edge12-14">
+            <path class="line" d="m136.5,226.16349l0,13.75621" fill="black"/>
+            <path class="arrow"
+                  d="m136.5,243.33651l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black"/>
+        </g>
+        <g class="edge edge12" id="edge12-18" transform="rotate(-90 156 215.25)">
+            <path class="line" d="m156,206.66349l0,13.75621" fill="black"/>
+            <path class="arrow" d="m156,223.83651l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black"/>
+        </g>
+        <g class="scenario" id="node13">
+            <circle class="node" cx="89.3" cy="255.25" fill="black" r="10.8"/>
+            <text fill="black" x="75.5" y="250.93545">13</text>
+        </g>
+        <g class="edge edge13" id="edge13-15">
+            <path class="line" d="m90.77527,262.14741l0,13.75621" transform="rotate(-45 90.7752 269.025)"/>
+            <path class="arrow"
+                  d="m96.52865,277.29572l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  transform="rotate(-45 96.5286 274.778)"/>
+        </g>
+        <g class="scenario" id="node14">
+            <circle class="node" cx="147.05" cy="255.25" fill="black" r="10.8"/>
+            <text fill="black" x="133" y="250.93545">14</text>
+        </g>
+        <g class="edge edge14" id="edge14-15">
+            <path class="line" d="m123.97323,261.95591l0,13.75621" fill="black"
+                  transform="rotate(45 123.973 268.833)"/>
+            <path class="arrow"
+                  d="m117.72323,277.48735l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black" transform="rotate(45 117.723 274.97)"/>
+        </g>
+        <g class="scenario" id="node15">
+            <circle class="node" cx="117.55" cy="285.01406" fill="black" r="10.8"/>
+            <text fill="black" x="103.2" y="280.6995">15</text>
+        </g>
+        <g class="edge edge15" id="edge15-16" transform="rotate(-90 126.5 285.25)">
+            <path class="line" d="m126.5,276.66349l0,13.75621" fill="black"/>
+            <path class="arrow"
+                  d="m126.5,293.83651l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z" fill="black"
+            />
+        </g>
+        <g class="scenario" id="node16">
+            <circle class="node" cx="157.79997" cy="284.75002" fill="black" r="10.8"/>
+            <text fill="black" x="143.5" y="280.43546">16</text>
+        </g>
+        <g class="edge edge16" id="edge16-17" transform="rotate(-90 167 285.25)">
+            <path class="line" d="m167,276.66349l0,13.75621" fill="black"/>
+            <path class="arrow" d="m167,293.83651l-2.51682,-5.03364l2.51682,1.25841l2.51682,-1.25841l-2.51682,5.03364z"
+                  fill="black"/>
+        </g>
+        <g class="scenario" id="node17">
+            <circle class="node" cx="197.79996" cy="284.74999" fill="black" r="10.8"/>
+            <text fill="black" x="184" y="280.43544">17</text>
+        </g>
+        <g class="scenario" id="node18">
+            <circle class="node" cx="187.69687" cy="215.10171" fill="black" r="10.8"/>
+            <text fill="black" x="173.5" y="210.8">18</text>
+        </g>
+        <g class="scenario" id="node19">
+            <circle class="node" cx="49.16562" cy="215.10171" fill="black" r="10.8"/>
+            <text fill="black" x="35" y="210.8">19</text>
+        </g>
+
+        <!-- City Events -->
+        <g class="scenario" id="node20">
+            <circle class="node" cx="251.55" cy="40" fill="black" r="10.8"/>
+            <text fill="black" x="236" y="36.28715">20</text>
+        </g>
+        <g class="scenario" id="node21">
+            <circle class="node" cx="287.05" cy="40" fill="black" r="10.8"/>
+            <text fill="black" x="272" y="36.53715">21</text>
+        </g>
+
+        <!-- Characters -->
+        <g class="scenario" id="node22">
+            <circle class="node" cx="251.8" cy="99" fill="black" r="10.8"/>
+            <text fill="black" x="237" y="95">22</text>
+        </g>
+        <g class="scenario" id="node23">
+            <circle class="node" cx="287.05" cy="99" fill="black" r="10.8"/>
+            <text fill="black" x="272" y="95">23</text>
+        </g>
+        <g class="scenario" id="node24">
+            <circle class="node" cx="251.8" cy="130" fill="black" r="10.8"/>
+            <text fill="black" x="237" y="125.68545">24</text>
+        </g>
+        <g class="scenario" id="node25">
+            <circle class="node" cx="287.05" cy="130" fill="black" r="10.8"/>
+            <text fill="black" x="272" y="125.68545">25</text>
+        </g>
+    </g>
+</svg>

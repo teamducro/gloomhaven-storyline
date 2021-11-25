@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul class="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <li class="col-span-full bg-dark-background rounded-lg shadow divide-y divide-gray-600">
+            <li class="col-span-full bg-dark-background rounded-lg shadow divide-y divide-gray-500">
                 <div class="w-full flex items-center justify-between p-6 space-x-6"
                      @click="select('local')">
                     <div class="flex-1">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="-mt-px flex divide-x divide-gray-600">
+                    <div class="-mt-px flex divide-x divide-gray-500">
                         <div class="-ml-px w-0 flex-1 flex">
                             <a href="#" @click.prevent="$bus.$emit('open-share-modal')"
                                class="relative mt-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
@@ -31,7 +31,7 @@
             </li>
 
             <li v-for="story in stories.items" :key="story.id"
-                class="col-span-1 bg-dark-background rounded-lg shadow divide-y divide-gray-600">
+                class="col-span-1 bg-dark-background rounded-lg shadow divide-y divide-gray-500">
                 <div class="w-full flex items-center justify-between p-6 space-x-6"
                      @click="select(story.campaignId)">
                     <div class="flex-1 truncate">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="-mt-px flex divide-x divide-gray-600">
+                    <div class="-mt-px flex divide-x divide-gray-500">
                         <div v-if="!story.has_expired && !story.is_shared" class="w-0 flex-1 flex">
                             <a href="#" @click.prevent="$bus.$emit('open-edit-campaign-modal', story)"
                                class="relative mt-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">

@@ -122,4 +122,25 @@ describe('Items', () => {
         cy.get('.mdc-dialog__content span').contains('Reward from').should('not.exist');
         cy.get('#scenario-title h2').contains('#53 Crypt Basement');
     });
+
+    it('It shows item availability', () => {
+        // Campaign with Brute #001 Boots of Striding
+        cy.visit('/tracker/#/shared/1/local/N4RozgjARAXKYBcQEsC+AacBOAbLeSamYAFsFAIYBOAxicgG4CmAJgMInUU0JNVj4MUOlx58AqgDsANgHsaAawFwoAIQBKsEBHRQ2ACS06oAZQDqR3QBUAkpdNt7AWStGMIEeQAsAIywsaLAAOLABaAHZAgCZQrywAMx9QnwAGAFYvUJYcJi8vRKjwih8fWDVNIRpkBABPfChoGG1dKPsAZnsvezT7PCbjcPsg+yx7CBSxxuaG1v7dCA65hq6liB7VvumIQdXh1dGlqInDqeMo2emoxcuVy-XLzbOdy73Lg+m24+13FhTMZBYwHcAAdkDoQFQ-lAqLIKCx6qcWu1Ot1evZnsZXsZ3sZxpMxhdcddcbdcfdcY95hj5lj5jiWl8zoioOd7Fc2aSWuSWpSWdSWbSWfSoJ83JgAK5A3QADzY0nFTGU5CmUIuUOuUNuUPuUM2UOeUNeUPeKVQlU4VG4vCosT8AWCYUiWBicUSyXSmWyuXyPkKxVKKjoTEUSqEAHNZNJ4TAoQCyhooLpqkwALZKhpiqDSJjMaSwYySCgppjxqji3iJqDAvhKerHADaIBSAF15rBGy2kTAO5hOyL203W1AVj3B7p1h2h31R32dpPdHsZ0ODvOGg3B0JxeK4zBh3bAiEItFYgkkqkMlkcnkCkUSpXpcDYKbUEA');
+        cy.visit('/tracker/#/items');
+
+        cy.get('#items').contains('1 / 2');
+        cy.get('#items tbody tr:first').click();
+        cy.get('.mdc-dialog').contains('Availability: 1 / 2');
+    });
+
+    it('It can navigate to character, owner of item', () => {
+        // Campaign with brute #001 Boots of Striding
+        cy.visit('/tracker/#/shared/1/local/N4RozgjARAXKYBcQEsC+AacBOAbLeSamYAFsFAIYBOAxicgG4CmAJgMInUU0JNVj4MUOlx58AqgDsANgHsaAawFwoAIQBKsEBHRQ2ACS06oAZQDqR3QBUAkpdNt7AWStGMIEeQAsAIywsaLAAOLABaAHZAgCZQrywAMx9QnwAGAFYvUJYcJi8vRKjwih8fWDVNIRpkBABPfChoGG1dKPsAZnsvezT7PCbjcPsg+yx7CBSxxuaG1v7dCA65hq6liB7VvumIQdXh1dGlqInDqeMo2emoxcuVy-XLzbOdy73Lg+m24+13FhTMZBYwHcAAdkDoQFQ-lAqLIKCx6qcWu1Ot1evZnsZXsZ3sZxpMxhdcddcbdcfdcY95hj5lj5jiWl8zoioOd7Fc2aSWuSWpSWdSWbSWfSoJ83JgAK5A3QADzY0nFTGU5CmUIuUOuUNuUPuUM2UOeUNeUPeKVQlU4VG4vCosT8AWCYUiWBicUSyXSmWyuXyPkKxVKKjoTEUSqEAHNZNJ4TAoQCyhooLpqkwALZKhpiqDSJjMaSwYySCgppjxqji3iJqDAvhKerHADaIBSAF15rBGy2kTAO5hOyL203W1AVj3B7p1h2h31R32dpPdHsZ0ODvOGg3B0JxeK4zBh3bAiEItFYgkkqkMlkcnkCkUSpXpcDYKbUEA');
+        cy.visit('/tracker/#/items');
+
+        cy.get('#items tbody tr:first').click();
+        cy.get('.mdc-dialog__content a:last').click();
+
+        cy.get('#characters').contains('Brute');
+    });
 });

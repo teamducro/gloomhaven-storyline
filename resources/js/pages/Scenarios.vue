@@ -5,7 +5,7 @@
             <dropdown ref="filter-dropdown" align="right">
                 <template v-slot:trigger>
                     <button type="button"
-                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 i-bg-black2-50 rounded-full"
+                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-black2-50 rounded-full"
                             :class="{'text-primary': filterEnabled}">
                         filter_list
                     </button>
@@ -17,7 +17,7 @@
                         <span class="mdc-list-item__text">Clear filter</span>
                     </li>
 
-                    <li role="separator" class="mdc-list-divider i-my-2"></li>
+                    <li role="separator" class="mdc-list-divider !my-2"></li>
 
                     <li v-for="state in states"
                         class="mdc-list-item cursor-pointer"
@@ -31,10 +31,10 @@
                         <span class="mdc-list-item__text">Missed Treasures</span>
                     </li>
 
-                    <li role="separator" class="mdc-list-divider i-my-2"></li>
+                    <li v-if="regions.length" role="separator" class="mdc-list-divider !my-2"></li>
 
-                    <li v-if="scenarios"
-                        v-for="region in scenarioRepository.fetchRegionsWithScenarios().items"
+                    <li v-if="scenarios && regions.length"
+                        v-for="region in regions"
                         class="mdc-list-item cursor-pointer"
                         :class="{'mdc-list-item--activated': regionFilter.includes(region.id)}"
                         @click="toggleRegionFilter(region.id)">
@@ -64,7 +64,7 @@
                     </template>
                 </template>
                 <template slot="image" slot-scope="{value, row}">
-                    <webp :src="'/img/scenarios/' + row.id + '.png'"
+                    <webp :src="row.image()"
                           class="w-16 mr-4 my-1"
                           :alt="row.name"/>
                 </template>
@@ -90,6 +90,8 @@
 import {MDCList} from "@material/list/component";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import {ScenarioState} from "../models/ScenarioState";
+import When from "../services/When";
+import Helpers from "../services/Helpers";
 
 export default {
     data() {
@@ -99,15 +101,8 @@ export default {
             regionFilter: [],
             missedTreasuresFilter: null,
             stateFilter: null,
-            columns: [
-                {id: 'image', name: 'Sticker'},
-                {id: 'state', name: 'State'},
-                {id: 'title', name: 'Name'},
-                {id: 'regions', name: 'Region', classes: 'hidden sm:table-cell'},
-                {id: 'chapter_name', name: 'Chapter', classes: 'hidden md:table-cell'},
-                {id: 'lootedAllTreasures', name: 'Looted', classes: 'hidden xs:table-cell'},
-                {id: 'is_side', name: 'Side', classes: 'hidden sm:table-cell'}
-            ],
+            regions: [],
+            columns: [],
             sortFunctions: {
                 image: 'id',
                 title: 'id',
@@ -128,9 +123,6 @@ export default {
         this.$bus.$on('scenarios-updated', this.setScenarios);
     },
     destroyed() {
-        // if (this.list) {
-        //     this.list.destroy();
-        // }
         this.$bus.$off('scenarios-updated', this.setScenarios);
     },
     computed: {
@@ -141,6 +133,17 @@ export default {
     methods: {
         async setScenarios() {
             this.scenarios = app.scenarios;
+            this.regions = this.scenarioRepository.fetchRegionsWithScenarios().items;
+
+            this.columns = (new When).filter([
+                {id: 'image', name: 'Sticker'},
+                {id: 'state', name: 'State'},
+                {id: 'title', name: 'Name'},
+                new When(this.regions.length, {id: 'regions', name: 'Region', classes: 'hidden sm:table-cell'}),
+                {id: 'chapter_name', name: 'Chapter', classes: 'hidden md:table-cell'},
+                {id: 'lootedAllTreasures', name: 'Looted', classes: 'hidden xs:table-cell'},
+                {id: 'is_side', name: 'Side', classes: 'hidden sm:table-cell'}
+            ]);
         },
         open(scenario) {
             if (scenario.isVisible() || scenario.is_side) {

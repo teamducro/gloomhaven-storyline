@@ -17,7 +17,8 @@ class Achievement {
         this._lost = false;
         this._count = 0;
         this.is_manual = data.is_manual || false;
-        this.cards = collect(data.cards).map((card) => new Card(card));
+        this.cards = collect(data.cards).map((card) => new Card(card, data.game));
+        this.game = data.game;
 
         this.fieldsToStore = {
             "awarded": {"_awarded": this._awarded},

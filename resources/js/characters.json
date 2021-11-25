@@ -1,848 +1,1135 @@
 {
-    "order": {
-        "1": "BR",
-        "2": "CH",
-        "3": "SW",
-        "4": "TI",
-        "5": "SC",
-        "6": "MT",
-        "7": "DS",
-        "8": "EL",
-        "9": "SB",
-        "10": "SS",
-        "11": "SK",
-        "12": "NS",
-        "13": "SU",
-        "14": "BE",
-        "15": "QM",
-        "16": "PH",
-        "17": "BT",
-        "18": "DR"
+    "characters": {
+        "BR": {
+            "id": "BR",
+            "name": "Brute",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {+1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+3_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add three {AGAIN} {PUSH}1 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {PIERCE}3 cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {AGAIN} {STUN} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {AGAIN} ADD {TARGET} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {SHIELD}1, Self card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative item effects and add one {+1_WHITE} card"
+                }
+            ]
+        },
+        "CH": {
+            "id": "CH",
+            "name": "Cragheart",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 3,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {-2_WHITE} card and two {+2_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+2_WHITE} {MUDDLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {PUSH}2 cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {EARTH} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {WIND} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative item effects"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects"
+                }
+            ]
+        },
+        "SW": {
+            "id": "SW",
+            "name": "Spellweaver",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {+1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+0_WHITE} {STUN} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {CURSE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+2_WHITE} {FIRE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+2_WHITE} {ICE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {EARTH} and one {AGAIN} {WIND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {LIGHT} and one {AGAIN} {DARK} card"
+                }
+            ]
+        },
+        "TI": {
+            "id": "TI",
+            "name": "Tinkerer",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {+1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+3_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {FIRE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {AGAIN} {MUDDLE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} Heal {HEAL}2 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+0_WHITE} ADD {TARGET} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects"
+                }
+            ]
+        },
+        "SC": {
+            "id": "SC",
+            "name": "Scoundrel",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {+1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {PIERCE}3 cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {POISON} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {MUDDLE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {INVISIBLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects"
+                }
+            ]
+        },
+        "MT": {
+            "id": "MT",
+            "name": "Mindthief",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+1_WHITE} cards with two {+2_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+2_WHITE} {ICE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {+1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {AGAIN} {PULL}1 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {AGAIN} {MUDDLE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {IMMOBILIZE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {STUN} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects"
+                }
+            ]
+        },
+        "DS": {
+            "id": "DS",
+            "name": "Doomstalker",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 3,
+                    "desc": "Replace two {+0_WHITE} cards with two {+1_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {+1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+2_WHITE} {MUDDLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {POISON} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+0_WHITE} {STUN} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {AGAIN} {TARGET} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects"
+                }
+            ]
+        },
+        "EL": {
+            "id": "EL",
+            "name": "Elementalist",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {+0_WHITE} {FIRE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {+0_WHITE} {ICE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {+0_WHITE} {WIND} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {+0_WHITE} {EARTH} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+0_WHITE} card with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+0_WHITE} card with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {+1_WHITE} {PUSH}1 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+0_WHITE} {STUN} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+0_WHITE} {TARGET} card"
+                }
+            ]
+        },
+        "SB": {
+            "id": "SB",
+            "name": "Sawbones",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {AGAIN} {+2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {WOUND} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {STUN} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {AGAIN} {HEAL}3 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+0_WHITE} Refresh an item card"
+                }
+            ]
+        },
+        "SS": {
+            "id": "SS",
+            "name": "Soothsinger",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {-2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace two {+1_WHITE} cards with one {+4_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {DISARM} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {POISON} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {STUN} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {AGAIN} {+1_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {CURSE} cards"
+                }
+            ]
+        },
+        "SK": {
+            "id": "SK",
+            "name": "Sunkeeper",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {+1_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {HEAL}1 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {STUN} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {LIGHT} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {SHIELD}1, Self cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative item effects and add two {+1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects"
+                }
+            ]
+        },
+        "NS": {
+            "id": "NS",
+            "name": "Nightshroud",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {-1_WHITE} {DARK} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} {DARK} card with one {+1_WHITE} {DARK} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {INVISIBLE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add three {AGAIN} {MUDDLE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {HEAL}1 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {CURSE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {TARGET} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards"
+                }
+            ]
+        },
+        "SU": {
+            "id": "SU",
+            "name": "Summoner",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+                },
+                {
+                    "count": 3,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+2_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {WOUND} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {POISON} cards"
+                },
+                {
+                    "count": 3,
+                    "desc": "Add two {AGAIN} {HEAL}1 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {FIRE} and one {AGAIN} {WIND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {DARK} and one {AGAIN} {EARTH} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards"
+                }
+            ]
+        },
+        "BE": {
+            "id": "BE",
+            "name": "Berserker",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {AGAIN} {+2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {WOUND} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {AGAIN} {STUN} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {+1_WHITE} {DISARM} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {HEAL}1 cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+2_WHITE} {FIRE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative item effects"
+                }
+            ]
+        },
+        "QM": {
+            "id": "QM",
+            "name": "Quartermaster",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {+1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {AGAIN} {MUDDLE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {PIERCE}3 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {STUN} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {TARGET} card"
+                },
+                {
+                    "count": 3,
+                    "desc": "Add one {+0_WHITE} Refresh an item card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative item effects and add two {+1_WHITE} cards"
+                }
+            ]
+        },
+        "PH": {
+            "id": "PH",
+            "name": "Plagueherald",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {+1_WHITE} cards"
+                },
+                {
+                    "count": 3,
+                    "desc": "Add one {+1_WHITE} {WIND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {AGAIN} {POISON} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {CURSE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {IMMOBILIZE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {AGAIN} {STUN} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and add one {+1_WHITE} card"
+                }
+            ]
+        },
+        "BT": {
+            "id": "BT",
+            "name": "Beast Tyrant",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 3,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
+                },
+                {
+                    "count": 3,
+                    "desc": "Add two {AGAIN} {HEAL}1 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {EARTH} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects"
+                }
+            ]
+        },
+        "BS": {
+            "id": "BS",
+            "name": "Bladeswarm",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove one {-2_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {WIND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {EARTH} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {LIGHT} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {DARK} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {HEAL}1 cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {POSION} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+2_WHITE} {MUDDLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative item effects and add one {+1_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and add one {+1_WHITE} card"
+                }
+            ]
+        },
+        "DR": {
+            "id": "DR",
+            "name": "Diviner",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {-2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace two {+1_WHITE} cards with one {+3_WHITE} {SHIELD}1, Self card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1, Affect any ally card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {DARK} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {REGENERATE}, Self card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {HEAL}2, Affect any ally card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {HEAL}1, Self cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {CURSE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards"
+                }
+            ]
+        },
+        "RG": {
+            "id": "RG",
+            "name": "Red Guard",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {-2_WHITE} card and one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {LIGHT} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {FIRE_LIGHT} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {SHIELD} 1 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card"
+                }
+            ]
+        },
+        "DM": {
+            "id": "DM",
+            "name": "Demolitionist",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {-2_WHITE} card and one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {EARTH} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+0_WHITE} All adjacent enemies suffer 1 damage card"
+                }
+            ]
+        },
+        "HT": {
+            "id": "HT",
+            "name": "Hatchet",
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {+0_WHITE} card with one {+1_WHITE} {POISON} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {+0_WHITE} card with one {+1_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {+0_WHITE} card with one {+1_WHITE} {PUSH}2 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {+0_WHITE} card with one {+0_WHITE} {STUN} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {+1_WHITE} card with one {+1_WHITE} {STUN} card"
+                },
+                {
+                    "count": 3,
+                    "desc": "Add one {+2_WHITE} {WIND} card"
+                },
+                {
+                    "count": 3,
+                    "desc": "Replace one {+1_WHITE} with one {+3_WHITE} card"
+                }
+            ]
+        },
+        "VW": {
+            "id": "VW",
+            "name": "Voidwarden",
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove one {-2_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} with one {+1_WHITE} {DARK} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} with one {+1_WHITE} {ICE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} with one {+0_WHITE} {HEAL}1 (Ally) card"
+                },
+                {
+                    "count": 3,
+                    "desc": "Add one {+1_WHITE} {HEAL}1 (Ally) card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {POISON} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+3_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {CURSE} card"
+                }
+            ]
+        }
     },
-    "names": {
-        "BR": "Brute",
-        "CH": "Cragheart",
-        "SW": "Spellweaver",
-        "TI": "Tinkerer",
-        "SC": "Scoundrel",
-        "MT": "Mindthief",
-        "DS": "Doomstalker",
-        "EL": "Elementalist",
-        "SB": "Sawbones",
-        "SS": "Soothsinger",
-        "SK": "Sunkeeper",
-        "NS": "Nightshroud",
-        "SU": "Summoner",
-        "BE": "Berserker",
-        "QM": "Quartermaster",
-        "PH": "Plagueherald",
-        "BT": "Beast Tyrant",
-        "DR": "Diviner"
-    },
-    "perks": {
-        "BR": [
-            {
-                "count": 1,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {+1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+3_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add three {AGAIN} {PUSH}1 cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {PIERCE}3 cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {AGAIN} {STUN} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {AGAIN} ADD {TARGET} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+1_WHITE} {SHIELD}1, Self card"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative item effects and add one {+1_WHITE} card"
-            }
-        ],
-        "CH": [
-            {
-                "count": 1,
-                "desc": "Remove four {+0_WHITE} cards"
-            },
-            {
-                "count": 3,
-                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {-2_WHITE} card and two {+2_WHITE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+2_WHITE} {MUDDLE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {PUSH}2 cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {EARTH} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {WIND} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative item effects"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects"
-            }
-        ],
-        "SW": [
-            {
-                "count": 1,
-                "desc": "Remove four {+0_WHITE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {+1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+0_WHITE} {STUN} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+1_WHITE} {WOUND} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+1_WHITE} {CURSE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+2_WHITE} {FIRE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+2_WHITE} {ICE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {EARTH} and one {AGAIN} {WIND} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {LIGHT} and one {AGAIN} {DARK} card"
-            }
-        ],
-        "TI": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {+1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+3_WHITE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {FIRE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add three {AGAIN} {MUDDLE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+1_WHITE} {WOUND} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+1_WHITE} Heal {HEAL}2 card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+0_WHITE} ADD {TARGET} card"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects"
-            }
-        ],
-        "SC": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Remove four {+0_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {+1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {PIERCE}3 cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {POISON} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {MUDDLE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {INVISIBLE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects"
-            }
-        ],
-        "MT": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Remove four {+0_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Replace two {+1_WHITE} cards with two {+2_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+2_WHITE} {ICE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {+1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add three {AGAIN} {PULL}1 cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add three {AGAIN} {MUDDLE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {IMMOBILIZE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {STUN} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects"
-            }
-        ],
-        "DS": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 3,
-                "desc": "Replace two {+0_WHITE} cards with two {+1_WHITE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {+1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+2_WHITE} {MUDDLE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+1_WHITE} {POISON} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+1_WHITE} {WOUND} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+0_WHITE} {STUN} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {AGAIN} {TARGET} card"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects"
-            }
-        ],
-        "EL": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add three {+0_WHITE} {FIRE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add three {+0_WHITE} {ICE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add three {+0_WHITE} {WIND} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add three {+0_WHITE} {EARTH} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Replace two {+0_WHITE} card with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace two {+0_WHITE} card with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {+1_WHITE} {PUSH}1 cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+1_WHITE} {WOUND} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+0_WHITE} {STUN} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+0_WHITE} {TARGET} card"
-            }
-        ],
-        "SB": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Remove four {+0_WHITE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {AGAIN} {+2_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {WOUND} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {STUN} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {AGAIN} {HEAL}3 card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {+0_WHITE} Refresh an item card"
-            }
-        ],
-        "SS": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Remove one {-2_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Replace two {+1_WHITE} cards with one {+4_WHITE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {DISARM} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {WOUND} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {POISON} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {STUN} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add three {AGAIN} {+1_WHITE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {CURSE} cards"
-            }
-        ],
-        "SK": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Remove four {+0_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {+1_WHITE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {HEAL}1 cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {STUN} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {LIGHT} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {SHIELD}1, Self cards"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative item effects and add two {+1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects"
-            }
-        ],
-        "NS": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Remove four {+0_WHITE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+1_WHITE} {DARK} card"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {-1_WHITE} {DARK} card with one {+1_WHITE} {DARK} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+1_WHITE} {INVISIBLE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add three {AGAIN} {MUDDLE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {HEAL}1 cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {CURSE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {TARGET} card"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards"
-            }
-        ],
-        "SU": [
-            {
-                "count": 1,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
-            },
-            {
-                "count": 3,
-                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+2_WHITE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {WOUND} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {POISON} cards"
-            },
-            {
-                "count": 3,
-                "desc": "Add two {AGAIN} {HEAL}1 cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {FIRE} and one {AGAIN} {WIND} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {DARK} and one {AGAIN} {EARTH} card"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards"
-            }
-        ],
-        "BE": [
-            {
-                "count": 1,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Remove four {+0_WHITE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {+0_WHITE} card with one {AGAIN} {+2_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {WOUND} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {AGAIN} {STUN} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {+1_WHITE} {DISARM} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {HEAL}1 cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+2_WHITE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative item effects"
-            }
-        ],
-        "QM": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Remove four {+0_WHITE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add two {AGAIN} {+1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add three {AGAIN} {MUDDLE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {PIERCE}3 cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {STUN} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add one {AGAIN} {TARGET} card"
-            },
-            {
-                "count": 3,
-                "desc": "Add one {+0_WHITE} Refresh an item card"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative item effects and add two {+1_WHITE} cards"
-            }
-        ],
-        "PH": [
-            {
-                "count": 1,
-                "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {+1_WHITE} cards"
-            },
-            {
-                "count": 3,
-                "desc": "Add one {+1_WHITE} {WIND} card"
-            },
-            {
-                "count": 1,
-                "desc": "Add three {AGAIN} {POISON} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {CURSE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {IMMOBILIZE} cards"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {AGAIN} {STUN} card"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects and add one {+1_WHITE} card"
-            }
-        ],
-        "BT": [
-            {
-                "count": 1,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 3,
-                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+1_WHITE} {WOUND} card"
-            },
-            {
-                "count": 2,
-                "desc": "Add one {+1_WHITE} {IMMOBILIZE} card"
-            },
-            {
-                "count": 3,
-                "desc": "Add two {AGAIN} {HEAL}1 cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {EARTH} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects"
-            }
-        ],
-        "DR": [
-            {
-                "count": 2,
-                "desc": "Remove two {-1_WHITE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Remove one {-2_WHITE} card"
-            },
-            {
-                "count": 2,
-                "desc": "Replace two {+1_WHITE} cards with one {+3_WHITE} {SHIELD}1, Self card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1, Affect any ally card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {DARK} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {REGENERATE}, Self card"
-            },
-            {
-                "count": 1,
-                "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {HEAL}2, Affect any ally card"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {HEAL}1, Self cards"
-            },
-            {
-                "count": 1,
-                "desc": "Add two {AGAIN} {CURSE} cards"
-            },
-            {
-                "count": 1,
-                "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards"
-            }
-        ]
-    }
+    "order": [
+        "BR",
+        "CH",
+        "SW",
+        "TI",
+        "SC",
+        "MT",
+        "DS",
+        "EL",
+        "SB",
+        "SS",
+        "SK",
+        "NS",
+        "SU",
+        "BE",
+        "QM",
+        "PH",
+        "BT",
+        "BS",
+        "DR",
+        "RG",
+        "DM",
+        "HT",
+        "VW"
+    ]
 }

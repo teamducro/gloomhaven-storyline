@@ -4,8 +4,8 @@ import GameData from "../services/GameData";
 export default class ItemRepository {
 
     fetch(game) {
-        return collect((new GameData).items(game)).map((item) => {
-            item = new Item(item);
+        return collect(this.gameData.items(game)).map((item) => {
+            item = new Item(item, game);
             return item;
         });
     }
@@ -22,6 +22,10 @@ export default class ItemRepository {
 
     where(filter) {
         return app.items.filter(filter);
+    }
+
+    get gameData() {
+        return this._gameData || (this._gameData = new GameData());
     }
 
 }

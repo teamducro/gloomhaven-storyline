@@ -73,11 +73,9 @@ export default {
     },
     mounted() {
         this.$bus.$on('open-card', (card) => {
-            this.open(new Card(card));
+            this.open(new Card(card.id, card.game));
         });
-        this.$bus.$on('close-card', () => {
-            this.close();
-        });
+        this.$bus.$on('close-card', this.close);
     },
     methods: {
         open(card) {
@@ -103,6 +101,7 @@ export default {
             if (!this.removed && this.choice && !this.animating) {
                 this.removed = true;
                 this.$bus.$emit('remove-card', this.card);
+                this.close();
             }
         },
         close() {
@@ -112,7 +111,8 @@ export default {
     }
 }
 </script>
-<style scoped lang="scss">
+
+<style lang="scss" scoped>
 .blur {
     backdrop-filter: blur(4px);
 }

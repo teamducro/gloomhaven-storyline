@@ -74,17 +74,19 @@
                             <selectable-list
                                 id="items"
                                 :title="$t('Items')"
-                                :label="$t('Add items')"
+                                :label="$t('Search name or nr')"
                                 :items.sync="sheetItems"
+                                :disabled="outOfStockItems"
+                                :filter-closure="itemFilterClosure"
                                 width="w-auto"
-                                class="mb-8"
+                                class="mb-2"
                                 @change="storeItems"
                                 ref="items"
                             >
-                            <span class="flex items-center mr-6" slot="label" slot-scope="{item}">
-                                <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                <span>{{ items[item].number }} {{ items[item].name }}</span>
-                            </span>
+                                <span class="flex items-center mr-6" slot="label" slot-scope="{item}">
+                                    <webp :src="items[item].slot" width="20" class="mr-2"/>
+                                    <span>{{ items[item].number }} {{ items[item].name }}</span>
+                                </span>
                                 <div slot="item" slot-scope="{item}"
                                      class="cursor-pointer flex items-center border-b border-white2-50 py-1"
                                      @click="openItemModel(item)">
@@ -94,6 +96,13 @@
                                           class="ml-auto material-icons">clear</span>
                                 </div>
                             </selectable-list>
+
+                            <router-link to="/items">
+                                <button class="mb-8 mdc-button origin-left transform scale-90 mdc-button--raised pr-1">
+                                    <i class="material-icons mdc-button__icon transform rotate-180">style</i>
+                                    <span class="mdc-button__label">{{ $t('Items') }} 〉</span>
+                                </button>
+                            </router-link>
 
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
@@ -187,6 +196,8 @@ import CharacterRepository from "../repositories/CharacterRepository";
 import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
 import store from "store/dist/store.modern";
+import ScenarioRepository from "../repositories/ScenarioRepository";
+import ItemAvailability from "../services/ItemAvailability";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -200,10 +211,13 @@ export default {
             loading: true,
             sheetItems: {},
             items: collect(),
+            itemAvailability: null,
+            outOfStockItems: [],
             nameField: null,
             isLocalCampaign: true,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
+            scenarioRepository: new ScenarioRepository,
             characterRepository: new CharacterRepository,
             itemRepository: new ItemRepository
         }
@@ -213,9 +227,11 @@ export default {
         this.render();
 
         this.$bus.$on('campaigns-changed', this.render);
+        this.$bus.$on('select-character', this.select);
     },
     destroyed() {
         this.$bus.$off('campaigns-changed', this.render);
+        this.$bus.$off('select-character', this.select);
     },
     computed: {
         isArchived() {
@@ -251,13 +267,37 @@ export default {
         },
         refreshItems() {
             if (this.character) {
-                let sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                let sheetItems;
                 this.sheetItems = {};
+
+                if (this.sheet.game === 'jotl') {
+                    sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
+                } else {
+                    sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                }
 
                 this.items = this.itemRepository.findMany(sheetItems).keyBy('id').items;
                 sheetItems.forEach(id => {
-                    this.sheetItems[id] = !!this.character.items[id];
+                    if (!isNaN(id)) {
+                        this.sheetItems[id] = !!this.character.items[id];
+                    }
                 });
+
+                this.refreshOutOfStockItems();
+            }
+        },
+        refreshOutOfStockItems() {
+            this.itemAvailability = new ItemAvailability(this.sheet);
+
+            if (this.character) {
+                this.outOfStockItems = [];
+
+                for (const id in this.itemAvailability.itemCountUses) {
+                    // The following items are out of stock
+                    if (this.items[id] && this.itemAvailability.uses(id) >= this.items[id].count) {
+                        this.outOfStockItems.push(id);
+                    }
+                }
             }
         },
         resetRollback() {
@@ -315,6 +355,7 @@ export default {
         storeItems() {
             this.character.items = this.sheetItems;
             this.store();
+            this.refreshOutOfStockItems();
         },
         store() {
             if (this.loading) {
@@ -350,6 +391,13 @@ export default {
         },
         readSelected() {
             return store.get('selectedCharacter');
+        },
+        itemFilterClosure(query) {
+            // This allows to find items based on id and it's name.
+            return (id) => {
+                return id.toLowerCase().startsWith(query)
+                    || this.items[id].name.toLowerCase().replace('-', ' ').startsWith(query);
+            }
         },
         renderHtml(html) {
             return {

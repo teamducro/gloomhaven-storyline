@@ -1,13 +1,15 @@
 import Storable from './Storable'
 import Character from "./Character";
 import GameData from "../services/GameData";
+import Helpers from "../services/Helpers";
+import CharacterRepository from "../repositories/CharacterRepository";
 
 const md5 = require('js-md5');
 
 class Sheet {
 
-    static make() {
-        return new Sheet({game: 'gh'});
+    static make(game) {
+        return new Sheet({game: game});
     }
 
     constructor(data = {}) {
@@ -19,13 +21,12 @@ class Sheet {
         this.road = {...data.road};
         this.notes = data.notes || '';
         this.unlocks = {...data.unlocks};
-        this.xClues = {...data.xClues};
+        this.xResult = data.xResult || '';
         this.characterUnlocks = {...data.characterUnlocks};
         this.characters = {...data.characters};
         this.archivedCharacters = {...data.archivedCharacters};
         this.game = data.game;
-        this.gameData = new GameData;
-        this.starterCharacters = ["BR", "CH", "SW", "TI", "SC", "MT"];
+        this.characterRepository = new CharacterRepository();
 
         this.fieldsToStore = {
             reputation: 'reputation',
@@ -34,9 +35,9 @@ class Sheet {
             itemDesigns: {'itemDesigns': {}},
             city: {'city': {}},
             road: {'road': {}},
-            notes: 'notes',
+            notes: {'notes': ''},
             unlocks: {'unlocks': {}},
-            xClues: {'xClues': {}},
+            xResult: {'xResult': ''},
             characterUnlocks: {'characterUnlocks': {}},
             characters: {'characters': {}},
             archivedCharacters: {'archivedCharacters': {}},
@@ -53,7 +54,7 @@ class Sheet {
         // Nothing to set up..
     }
 
-    fillBlanks() {
+    fillBlanksGH() {
         for (let i = 71; i <= 150; i++) {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
         }
@@ -82,25 +83,20 @@ class Sheet {
         this.road[82] = this.road[82] || false;
         this.road[83] = this.road[83] || false;
 
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 9; i++) {
             this.unlocks[i] = this.unlocks[i] || false;
         }
+    }
 
-        for (let i = 1; i < 10; i++) {
-            this.xClues[i] = this.xClues[i] || false;
+    fillBlanksJotl() {
+        for (let i = 28; i <= 36; i++) {
+            this.itemDesigns[i] = this.itemDesigns[i] || false;
         }
 
-        const characterOrder = this.gameData.characterOrder('gh');
-        for (const i in characterOrder) {
-            const id = characterOrder[i];
-            if (id) {
-                this.characterUnlocks[id] = this.starterCharacters.includes(id)
-                    ? true
-                    : (this.characterUnlocks[id] || this.characterUnlocks[i - 1] || false);
+        if (!Object.keys(this.city).length) {
+            for (let i = 1; i <= 22; i++) {
+                this.city[i] = true;
             }
-
-            // Remove old character unlocks from party sheet, keys are ids now
-            delete this.characterUnlocks[i - 1];
         }
     }
 
@@ -118,6 +114,29 @@ class Sheet {
         }
     }
 
+    fillCharacterUnlocks() {
+        // Ensures character order is reloaded, needed to reveal hidden characters
+        this._characterOrder = undefined;
+
+        const characterOrder = this.characterRepository.ids(this.game);
+        for (const i in characterOrder) {
+            const id = characterOrder[i];
+            if (id) {
+                this.characterUnlocks[id] = this.starterCharacters.includes(id)
+                    ? true
+                    : (this.characterUnlocks[id] || this.characterUnlocks[i] || false);
+            }
+        }
+
+        // Remove old character unlocks from party sheet, keys are ids now
+        // Remove hidden characters
+        this.characterUnlocks = _.each(this.characterUnlocks, (characterUnlock, id) => {
+            if (!characterOrder.includes(id)) {
+                delete this.characterUnlocks[id];
+            }
+        });
+    }
+
     getHash() {
         return md5(JSON.stringify(this));
     }
@@ -125,7 +144,17 @@ class Sheet {
     read() {
         this.parentRead();
         this.migrateCharacterUnlocks();
-        this.fillBlanks();
+        this.migrateEnvelopeXResult();
+
+        switch (this.game) {
+            case 'jotl':
+                this.fillBlanksJotl();
+                break;
+            default:
+                this.fillBlanksGH();
+        }
+
+        this.fillCharacterUnlocks();
         this.fillRelations();
     }
 
@@ -134,6 +163,13 @@ class Sheet {
         if (0 in this.characters && this.characters[0] === true) {
             this.characterUnlocks = JSON.parse(JSON.stringify(this.characters));
             this.characters = {};
+        }
+    }
+
+    migrateEnvelopeXResult() {
+        if (this.unlocks[9]) {
+            this.xResult = 'Bladeswarm';
+            delete this.unlocks[9];
         }
     }
 
@@ -149,8 +185,37 @@ class Sheet {
         return values;
     }
 
+    get starterCharacters() {
+        switch (this.game) {
+            case 'fc':
+                return ["DR", "BR", "CH", "SW", "TI", "SC", "MT"];
+            case 'jotl':
+                return ["RG", "DM", "HT", "VW"];
+            default:
+                return ["BR", "CH", "SW", "TI", "SC", "MT"];
+        }
+    }
+
+    get characterOrder() {
+        if (this._characterOrder) {
+            return this._characterOrder;
+        }
+
+        const characterOrder = this.characterRepository.ids(this.game);
+        const characterOrderWithStartersFirst = Helpers.unique([...this.starterCharacters, ...characterOrder]);
+        this._characterOrder = Helpers.reverse(Object.assign({}, characterOrderWithStartersFirst));
+
+        return this._characterOrder;
+    }
+
     key() {
-        return 'sheet';
+        switch (this.game) {
+            case 'gh':
+            case 'fc':
+                return 'sheet';
+            default:
+                return 'sheet-' + this.game;
+        }
     }
 }
 

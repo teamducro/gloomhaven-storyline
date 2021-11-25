@@ -13,7 +13,8 @@
             <p>Support the project by joining the Patreon. You'll earn my deepest gratitude. You make it
                 possible for me to maintain the tracker and keep the new features coming.</p>
             <p class="mt-2">Patrons can create unlimited shared campaigns. In addition they can vote on new features and
-                are notified when new features roll out! Upcoming features include Character sheets, JotL support or Solo scenarios!</p>
+                are notified when new features roll out! Upcoming features include improvements to Character sheets,
+                JotL support or Solo scenarios!</p>
 
             <div class="flex flex-col sm:flex-row">
                 <div>

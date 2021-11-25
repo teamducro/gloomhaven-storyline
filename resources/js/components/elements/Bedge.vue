@@ -26,7 +26,7 @@ export default {
     }
 
     &.white {
-        @apply bg-gray-100 text-gray-800;
+        @apply bg-gray-50 text-gray-800;
     }
 
     &.small {

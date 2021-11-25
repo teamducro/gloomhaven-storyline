@@ -31,7 +31,7 @@
             if (!src.endsWith('.svg')) {
                 src += '.svg';
             }
-            div.innerHTML = require('../../../img/' + src);
+            div.innerHTML = require('../../../svg/' + src);
 
             let fragment = document.createDocumentFragment();
             fragment.appendChild(div);

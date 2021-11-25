@@ -10,7 +10,7 @@
                 <span class="flex items-center">
                     {{ $t(column.name) }}
 
-                    <span v-if="sortable.includes(column.id)" class="material-icons i-text-sm text-white2-50">
+                    <span v-if="sortable.includes(column.id)" class="material-icons !text-sm text-white2-50">
                         {{ sort !== column.id ? 'unfold_more' : (!ascending ? 'expand_more' : 'expand_less') }}
                     </span>
                 </span>
@@ -19,7 +19,7 @@
             </thead>
             <tbody>
             <tr v-for="(row, index) in rows" :key="index"
-                class="whitespace-nowrap text-sm text-white2-75"
+                class="text-sm text-white2-75"
                 :class="rowClasses(index)">
                 <slot name="row" :row="row">
                     <td v-for="column in columns" :key="column.id+index"
@@ -86,7 +86,7 @@ export default {
         },
         noResults: {
             type: String,
-            default: 'No results'
+            default: 'No results' // pass value to translate
         }
     },
     data() {

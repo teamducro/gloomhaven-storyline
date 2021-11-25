@@ -9,13 +9,13 @@
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
-            <div class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
+            <div v-if="Object.keys(sheet.itemDesigns).length" class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
                 <dropdown class="items-to-add-dropdown" align="right" width=""
                           @open="dropDownClose = true"
                           @close="dropDownClose = false">
                     <template v-slot:trigger>
                         <button type="button"
-                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 i-bg-black2-50 rounded-full transform transition-transform"
+                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-black2-50 rounded-full transform transition-transform"
                                 :class="{'rotate-45': dropDownClose}">
                             add
                         </button>
@@ -37,11 +37,11 @@
                 </dropdown>
             </div>
 
-            <div class="my-4">
+            <div v-if="costModifier != 0" class="my-4">
                 <h2 class="mb-2">{{ $t('Shop modifier') }}:
-                    <span>{{ shop }} {{ $t('Gold') }}</span>
+                    <span>{{ costModifier }} {{ $t('Gold') }}</span>
                 </h2>
-                <p v-if="shop != 0" class="text-sm">
+                <p class="text-sm">
                     {{ $t('The cost of items displayed is modified by this amount.') }}
                 </p>
             </div>
@@ -53,7 +53,7 @@
                         <input class="mdc-text-field__input" aria-labelledby="item-search"
                                type="text" name="item-search"
                                v-model="query" @keyup="applySearch">
-                        <span class="mdc-floating-label" id="item-search">{{ $t('Number or Name') }}</span>
+                        <span class="mdc-floating-label" id="item-search">{{ $t('Search name or nr') }}</span>
                         <span class="mdc-line-ripple"></span>
                     </label>
                 </div>
@@ -78,7 +78,7 @@
                         :data="items.items"
                         odd-class="bg-black2-10"
                         @rowClick="openItemModel"
-                        :noResults="$t('No items found')"
+                        :noResults="$t('No items available')"
             >
                 <template slot="image" slot-scope="{value, row}">
                     <div class="overflow-hidden h-full -m-1 md:-m-3 top-0 left-0 cursor-pointer">
@@ -87,9 +87,28 @@
                     </div>
                     <div class="w-16 md:w-12 h-2"></div>
                 </template>
-                <span slot="cost" slot-scope="{value}">
-                    {{ value + shop }}
+                <span slot="number" slot-scope="{value, row}">
+                    {{ value }}<br>
+                    <span class="lg:hidden">
+                        <webp :src="row.slot" class="inline-block mr-2" width="20"/>
+                    </span>
                 </span>
+                <span slot="name" class="xs:whitespace-nowrap" slot-scope="{value, row}">
+                    {{ value }}<br>
+                    <span class="lg:hidden">
+                        <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
+                        <span class="inline-block mr-2">
+                            {{ row.count - itemAvailability.uses(row.id) }}/{{ row.count }}
+                        </span>
+                        <span class="inline-block md:hidden">{{ row.cost + costModifier }}</span>
+                    </span>
+                </span>
+                <span slot="cost" slot-scope="{value}">
+                    {{ value + costModifier }}
+                </span>
+                <template slot="availability" slot-scope="{value, row}">
+                    {{ row.count - itemAvailability.uses(row.id) }} / {{ row.count }}
+                </template>
                 <template slot="desc" slot-scope="{value}">
                     <add-links-and-icons :text="value"/>
                 </template>
@@ -105,6 +124,8 @@ import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
 import ItemRepository from "../repositories/ItemRepository";
 import SheetRepository from "../repositories/SheetRepository";
+import ScenarioRepository from "../repositories/ScenarioRepository";
+import ItemAvailability from "../services/ItemAvailability";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -112,9 +133,10 @@ export default {
         return {
             selectedItem: null,
             sheet: null,
-            shop: 0,
+            costModifier: 0,
             prosperity: 1,
             items: collect([]),
+            itemAvailability: null,
             campaignName: null,
             loading: true,
             query: '',
@@ -123,18 +145,20 @@ export default {
                 {id: 'image', name: 'Card', classes: 'hidden sm:table-cell'},
                 {id: 'number', name: 'Nr'},
                 {id: 'name', name: 'Name'},
-                {id: 'slot', name: 'Slot'},
-                {id: 'cost', name: 'Cost'},
-                {id: 'use', name: 'Use', classes: 'hidden md:table-cell'},
+                {id: 'slot', name: 'Slot', classes: 'hidden lg:table-cell'},
+                {id: 'cost', name: 'Cost', classes: 'hidden md:table-cell'},
+                {id: 'availability', name: 'Avail', classes: 'hidden lg:table-cell'},
+                {id: 'use', name: 'Use', classes: 'hidden lg:table-cell'},
                 {id: 'desc', name: 'Effect'}
             ],
             selectedFilter: null,
             filters: ['body', 'head', 'legs', 'one-hand', 'small-item', 'two-hands'],
-            sortable: ['number', 'name', 'slot', 'cost', 'use'],
+            sortable: ['number', 'name', 'cost'],
             field: null,
             dropDownClose: false,
             storySyncer: new StorySyncer,
             itemRepository: new ItemRepository,
+            scenarioRepository: new ScenarioRepository,
             sheetRepository: new SheetRepository,
         }
     },
@@ -157,8 +181,9 @@ export default {
             this.loading = true;
 
             this.sheet = this.sheetRepository.make(app.game);
-            this.shop = this.calculateShop(this.sheet.reputation || 0);
+            this.costModifier = this.calculateCostModifier(this.sheet.reputation || 0);
             this.campaignName = this.getCampaignName();
+            this.itemAvailability = new ItemAvailability(this.sheet);
 
             await this.$nextTick();
 
@@ -166,19 +191,21 @@ export default {
 
             this.field = new MDCTextField(this.$refs['search-field']);
         },
-
         refreshItems() {
-            const sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+            let sheetItems;
+            if (this.sheet.game === 'jotl') {
+                sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
+            } else {
+                sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+            }
             this.items = this.itemRepository.findMany(sheetItems);
         },
-
         changeItem(id, isChecked) {
             const item = parseInt(id.replace('item-', ''));
             Vue.set(this.sheet.itemDesigns, item, isChecked);
             this.refreshItems();
             this.store();
         },
-
         store() {
             if (this.loading) {
                 return;

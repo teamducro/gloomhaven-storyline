@@ -1,7 +1,7 @@
 <template xmlns="http://www.w3.org/1999/html">
     <div>
         <button type="button" @click="toggle"
-                class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 i-bg-black2-50 rounded-full">
+                class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 !bg-black2-50 rounded-full">
             menu
         </button>
 
@@ -18,7 +18,7 @@
                 <div class="mdc-list-group">
                     <!--
                     <div v-if="user" class="mx-4 mb-4 flex items-center">
-                        <span class="inline-block h-10 w-10 rounded-full overflow-hidden bg-gray-100">
+                        <span class="inline-block h-10 w-10 rounded-full overflow-hidden bg-gray-50">
                             <img class="h-full w-full"
                                  :src="gravatar()"/>
                         </span>
@@ -42,14 +42,14 @@
                             </router-link>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider i-my-2"></li>
+                        <li role="separator" class="mdc-list-divider !my-2"></li>
 
                         <li @click="toggle">
                             <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <inline-svg src="icons/story" class="mdc-list-item__graphic" aria-hidden="true"/>
                                 <span class="mdc-list-item__text">{{ $t('Storyline') }}</span>
                                 <button type="button" @click="expandGameSwitch = !expandGameSwitch; preventToggle()"
-                                        class="mdc-icon-button material-icons mdc-button--raised transition-transform transform rounded-full ml-auto p-0 i-bg-transparent i-text-white2-87 cursor-pointer"
+                                        class="mdc-icon-button material-icons mdc-button--raised transition-transform transform rounded-full ml-auto p-0 !bg-transparent !text-white2-87 cursor-pointer"
                                         :class="{'rotate-270': expandGameSwitch, 'rotate-90': !expandGameSwitch}">
                                     play_circle_outline
                                 </button>
@@ -97,7 +97,6 @@
                                 <i class="material-icons mdc-list-item__graphic"
                                    aria-hidden="true">person</i>
                                 <span class="mdc-list-item__text">{{ $t('Character sheet') }}</span>
-                                <bedge class="small white ml-2">BETA</bedge>
                             </router-link>
                         </li>
 
@@ -110,6 +109,11 @@
                             </router-link>
                         </li>
 
+                        <li role="separator" class="mdc-list-divider !my-2"></li>
+                    </ul>
+                </div>
+                <div class="mdc-list-group">
+                    <ul>
                         <li>
                             <a class="mdc-list-item"
                                @click="shareCurrentStory">
@@ -118,7 +122,7 @@
                             </a>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider i-my-2"></li>
+                        <li role="separator" class="mdc-list-divider !my-2"></li>
                     </ul>
                 </div>
 
@@ -126,7 +130,7 @@
 
                 <div class="mdc-list-group">
                     <ul>
-                        <li role="separator" class="mdc-list-divider i-my-2"></li>
+                        <li role="separator" class="mdc-list-divider !my-2"></li>
 
                         <li @click="toggle">
                             <router-link to="/info" class="mdc-list-item" active-class="mdc-list-item--activated">
@@ -144,7 +148,7 @@
                             </router-link>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider i-my-2"></li>
+                        <li role="separator" class="mdc-list-divider !my-2"></li>
 
                         <li v-if="!loggedIn" class="py-4 pl-4 flex" @click="toggle">
                             <become-patron-button transparent></become-patron-button>

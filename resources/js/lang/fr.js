@@ -49,6 +49,7 @@ export default {
     "Additional notes": "Notes complémentaires",
     "Items": "Objets",
     "Add Items": "Ajouter des objets",
+    "Search name or nr": "Search name or nr",
     "Gold": "Pièces d'or",
     "Level": "Niveau",
     "Lvl": "Niv.",
@@ -165,9 +166,18 @@ export default {
     "Buy shared campaign": "Buy shared campaign",
     "Add shared campaign": "Add shared campaign",
     "donations": {
-        "1": "Gloomhaven Storyline est complètement gratuit.",
-        "2": "J'adore jouer à Havrenuit et cette application nous donne une vue très claire de notre campagne. J'aimerais continuer à proposer des mises à jour gratuitement.",
-        "3": "N'hésitez pas à faire un petit don, car ça m'aide beaucoup.",
+        "1": {
+            "1": "Gloomhaven Storyline est complètement gratuit.",
+            "2": "J'adore jouer à Havrenuit et cette application nous donne une vue très claire de notre campagne. J'aimerais continuer à proposer des mises à jour gratuitement.",
+            "3": "N'hésitez pas à faire un petit don, car ça m'aide beaucoup.",
+            "title": "¡Sincroniza automáticamente tu progreso!",
+        },
+        "2": {
+            "1": "Don't forget to backup your progress once in a while, the manual share feature is great for that!",
+            "2": "The paid version provides automatic backups, you can always continue where you left off or even rollback unwanted changes. This covers costs maintaining this app for the community.",
+            "3": "Please consider a license, it helps a lot.",
+            "title": "Automatic backups!",
+        },
         "close": "Continuer à utiliser Gloomhaven Storyline"
     },
     "Support": "Support",
@@ -193,7 +203,7 @@ export default {
     "Change name": "Change name",
     "Fill in your email, you'll receive a link to sync your campaign.": "Fill in your email, you'll receive a link to sync your campaign.",
     "Submit": "Submit",
-    "The email is send to your inbox.": "The email is send to your inbox.",
+    "An email has been sent to your inbox.": "An email has been sent to your inbox.",
     "Selected Campaign": "Selected Campaign",
     "PRO": "PRO",
     "Gloomhaven": "Gloomhaven",
@@ -248,6 +258,9 @@ export default {
     "Merchants Bay": "Merchant’s Bay",
     "East Coast": "East Coast",
     "different Dimension": "different Dimension",
+    "and": "et",
+    "or": "ou",
+    "Hidden Scenario": "Scénario cachée",
     "scenarios": {
         "Black Barrow": "Le Tertre Noir",
         "Barrow Lair": "Le Repaire sous le Tertre",

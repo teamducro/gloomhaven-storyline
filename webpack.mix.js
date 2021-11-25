@@ -19,9 +19,9 @@ mix.extend('i18n', new class {
 
 
 mix.i18n()
-    .js('resources/js/app.js', 'js')
+    .js('resources/js/app.js', 'js').vue()
     .js('resources/js/gtm.js', 'js')
-    .js('resources/js/website.js', 'js')
+    .js('resources/js/website.js', 'js').vue()
     .sass('resources/sass/app.scss', 'css')
     .sass('resources/sass/website.scss', 'css')
     .sass('resources/sass/theme.scss', 'css', {
@@ -29,12 +29,14 @@ mix.i18n()
             includePaths: ['./node_modules']
         }
     })
-    .copy('resources/public', 'public')
-    .copy('resources/img', 'public/img')
-    .copy('resources/fonts', 'public/fonts')
+    .copyDirectory('resources/public', 'public')
+    .copyDirectory('resources/img', 'public/img')
+    .copyDirectory('resources/svg', 'public/svg')
+    .copyDirectory('resources/fonts', 'public/fonts')
     .options({
         processCssUrls: false,
-        postCss: [tailwindcss('./tailwind.config.js')]
+        postCss: [tailwindcss('./tailwind.config.js')],
+        autoprefixer: {remove: false}
     })
     .setPublicPath('public')
     .override(config => {
@@ -43,7 +45,7 @@ mix.i18n()
         config.module.rules.push({
             test: /\.svg$/,
             use: [{loader: 'html-loader'}]
-        })
+        });
     })
     .then(async () => {
         await versionFile('public/js/website.js', mix.inProduction());
