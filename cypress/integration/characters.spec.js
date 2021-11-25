@@ -114,6 +114,46 @@ describe('Character', () => {
         cy.get('#items-bedges').contains('Boots of Striding').should('not.exist');
     });
 
+    it('It can track personal quests', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+        utilities.scrollTo('60%');
+
+        cy.get(`input[name="personal-quests"]`).type("510");
+        cy.get('li').contains('#510 Seeker of Xorn').click();
+
+        cy.get(`input[name="personal-quests"]`).should('not.exist');
+        cy.contains('Complete three Crypt scenarios.');
+
+        cy.get('#pq-0-0').click();
+        cy.get('button').contains('Remove #510');
+    });
+
+    it('It can draw a random personal quest', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+        utilities.scrollTo('60%');
+
+        cy.get('button').contains('Draw').click();
+
+        cy.get(`input[name="personal-quests"]`).should('not.exist');
+    });
+
+    it('It opens personal quest card', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+        utilities.scrollTo('60%');
+
+        cy.get(`input[name="personal-quests"]`).click();
+        cy.get('li').contains('#510 Seeker of Xorn').click();
+
+        cy.get('img[alt="Seeker of Xorn"]').click();
+        cy.get('h2').contains('Personal Quest #513');
+    });
+
     it('It stores the character sheet', () => {
         cy.visit('/tracker/#/characters');
         utilities.openCharacter();
@@ -130,6 +170,9 @@ describe('Character', () => {
         cy.get('#check1').click();
         cy.get('#notes').type('Foo Bar');
         utilities.closeModel();
+        cy.get(`input[name="personal-quests"]`).click();
+        cy.get('li').contains('#510 Seeker of Xorn').click();
+        cy.get('#pq-0-0').click();
 
         cy.reload();
 
@@ -140,6 +183,8 @@ describe('Character', () => {
         cy.get('#check1').should('be.checked');
         cy.get('#perk-0-0').should('be.checked');
         cy.get('#notes').should('have.value', 'Foo Bar');
+        cy.get('h3').contains('#510 Seeker of Xorn');
+        cy.get('#pq-0-0').should('be.checked');
     });
 
 });
