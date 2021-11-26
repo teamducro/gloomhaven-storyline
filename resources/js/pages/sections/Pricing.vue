@@ -84,13 +84,17 @@
                                             id="tier-gloomhaven">
                                             <webp class="" src="/img/gloomhaven-logo.png" alt="Gloomhaven logo"
                                                   width="250" height="37"></webp>
-                                            Pro
+                                            Black Friday
                                         </h3>
                                         <div class="font-title mt-4 flex items-center justify-center">
                                             <span
+                                                class="pr-3 flex items-start text-4xl leading-none tracking-tight text-gray-400 sm:text-3xl sm:leading-none">
+                                                <span class="font-extrabold line-through">€ 4,99</span>
+                                            </span>
+                                            <span
                                                 class="px-3 flex items-start text-6xl leading-none tracking-tight text-gray-900 sm:text-6xl sm:leading-none">
                                                 <span class="mt-2 mr-2 text-4xl font-medium">€</span>
-                                                <span class="font-extrabold">4,99</span>
+                                                <span class="font-extrabold">3,49</span>
                                             </span>
                                             <span class="text-2xl leading-8 font-medium text-gray-400">/ year</span>
                                         </div>
