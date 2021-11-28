@@ -203,7 +203,7 @@ export default {
     "Change name": "Change name",
     "Fill in your email, you'll receive a link to sync your campaign.": "Fill in your email, you'll receive a link to sync your campaign.",
     "Submit": "Submit",
-    "The email is send to your inbox.": "The email is send to your inbox.",
+    "An email has been sent to your inbox.": "An email has been sent to your inbox.",
     "Selected Campaign": "Selected Campaign",
     "PRO": "PRO",
     "Gloomhaven": "Gloomhaven",
@@ -258,6 +258,9 @@ export default {
     "Merchants Bay": "Merchant’s Bay",
     "East Coast": "East Coast",
     "different Dimension": "different Dimension",
+    "and": "e",
+    "or": "o",
+    "Hidden Scenario": "Scenario nascosto",
     "scenarios": {
         "Black Barrow": "Tumulo Nero",
         "Barrow Lair": "Tana del Tumulo",

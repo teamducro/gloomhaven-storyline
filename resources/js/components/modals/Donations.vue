@@ -12,17 +12,25 @@
                  class="bg-white rounded-lg px-4 pt-5 pb-4 overflow-hidden shadow-xl transform transition-all sm:max-w-sm sm:w-full sm:p-6"
                  role="dialog" aria-modal="true" aria-labelledby="modal-headline">
                 <div>
-                    <div class="mx-auto flex items-center justify-center w-full">
+                    <!--<div class="mx-auto flex items-center justify-center w-full">
                         <webp src="/img/donations-banner.jpg" alt="Gloomhaven donations banner"/>
-                    </div>
+                    </div>-->
                     <div class="mt-3 text-center sm:mt-5">
-                        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
-                            {{ $t('donations.' + paragraph + '.title') }}
+                        <h3 class="text-2xl leading-6 font-medium text-gray-900" id="modal-headline">
+                            Black Friday sale!
+                            <!--{{ $t('donations.' + paragraph + '.title') }}-->
                         </h3>
                         <div class="mt-2 text-sm leading-5 text-gray-400">
                             <p class="mb-2">
                                 {{ $t('donations.' + paragraph + '.1') }}<br>{{ $t('donations.' + paragraph + '.2') }}
                             </p>
+                            <p class="mb-2">
+                                <span class="font-title mb-2 text-2xl leading-7 font-medium text-gray-400 line-through">€4,99</span>
+                            <div
+                                class="font-title mt-4 flex items-center justify-center text-5xl leading-none text-gray-900">
+                                <span>€3,49</span>
+                                <span class="ml-3 text-xl leading-7 font-medium text-gray-400">/ year</span>
+                            </div>
                             <p>
                                 {{ $t('donations.' + paragraph + '.3') }}
                             </p>
@@ -55,7 +63,7 @@ export default {
         return {
             show: false,
             isOpen: false,
-            timesWithoutDonations: 4,
+            timesWithoutDonations: 2,
             paragraph: Math.ceil(Math.random() * 2),
             loggedIn: Helpers.loggedIn(),
         }

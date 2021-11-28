@@ -72,7 +72,7 @@
         "cost": 10,
         "slot": "Head",
         "source": "Prosperity 1",
-        "desc": "When attacked, consider any 2x attack modifier card the enemy draws to be a +0 instead."
+        "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
     },
     {
         "id": 8,
@@ -1348,8 +1348,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "Reward from Solo Scenario - {BR}",
-        "desc": "Any time you kill an enemy during your turn, gain {SHIELD} 1 for the rest of the round.",
-        "soloItem": "BR"
+        "desc": "Any time you kill an enemy during your turn, gain {SHIELD} 1 for the rest of the round."
     },
     {
         "id": 135,
@@ -1359,8 +1358,7 @@
         "slot": "One Hand",
         "source": "Reward from Solo Scenario - {TI}",
         "consumed": true,
-        "desc": "During your Heal action, double the value of the Heal.",
-        "soloItem": "TI"
+        "desc": "During your Heal action, double the value of the Heal."
     },
     {
         "id": 136,
@@ -1370,8 +1368,7 @@
         "slot": "Small Item",
         "source": "Reward from Solo Scenario - {SW}",
         "consumed": true,
-        "desc": "During your ranged attack, add +2 {ATTACK} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made.",
-        "soloItem": "SW"
+        "desc": "During your ranged attack, add +2 {ATTACK} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made."
     },
     {
         "id": 137,
@@ -1380,8 +1377,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "Reward from Solo Scenario - {SC}",
-        "desc": "Any time you perform a melee attack, add {PIERCE} 1 to the Attack.",
-        "soloItem": "SC"
+        "desc": "Any time you perform a melee attack, add {PIERCE} 1 to the Attack."
     },
     {
         "id": 138,
@@ -1391,8 +1387,7 @@
         "slot": "Head",
         "source": "Reward from Solo Scenario - {CH}",
         "spent": true,
-        "desc": "During your action where an obstacle is created, create one additional obstacle and apply all effects of the action to it.",
-        "soloItem": "CH"
+        "desc": "During your action where an obstacle is created, create one additional obstacle and apply all effects of the action to it."
     },
     {
         "id": 139,
@@ -1401,8 +1396,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "Reward from Solo Scenario - {MT}",
-        "desc": "Any time you perform an Augment action, add +1 {ATTACK} to the entire action.",
-        "soloItem": "MT"
+        "desc": "Any time you perform an Augment action, add +1 {ATTACK} to the entire action."
     },
     {
         "id": 140,
@@ -1411,8 +1405,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "Reward from Solo Scenario - {SK}",
-        "desc": "When damaged by an attack, you may {LIGHT_X} to gain {SHIELD} 3 for the attack.",
-        "soloItem": "SK"
+        "desc": "When damaged by an attack, you may {LIGHT_X} to gain {SHIELD} 3 for the attack."
     },
     {
         "id": 141,
@@ -1423,8 +1416,7 @@
         "source": "Reward from Solo Scenario - {QM}",
         "consumed": true,
         "desc": "During your turn, you or any one ally may {REFRESH} one of your spent or consumed items.",
-        "faq": "This item cannot be refreshed.",
-        "soloItem": "QM"
+        "faq": "This item cannot be refreshed."
     },
     {
         "id": 142,
@@ -1434,8 +1426,7 @@
         "slot": "Small Item",
         "source": "Reward from Solo Scenario - {SU}",
         "consumed": true,
-        "desc": "When a summon you own is damaged by an attack, it suffers no damage instead.",
-        "soloItem": "SU"
+        "desc": "When a summon you own is damaged by an attack, it suffers no damage instead."
     },
     {
         "id": 143,
@@ -1445,8 +1436,7 @@
         "slot": "Small Item",
         "source": "Reward from Solo Scenario - {NS}",
         "consumed": true,
-        "desc": "During your turn, gain {INVISIBLE} and create dark. {DARK}",
-        "soloItem": "NS"
+        "desc": "During your turn, gain {INVISIBLE} and create dark. {DARK}"
     },
     {
         "id": 144,
@@ -1456,8 +1446,7 @@
         "slot": "Head",
         "source": "Reward from Solo Scenario - {PH}",
         "spent": true,
-        "desc": "During your turn, {POISON} and {CURSE} one enemy within {RANGE} 3.",
-        "soloItem": "PH"
+        "desc": "During your turn, {POISON} and {CURSE} one enemy within {RANGE} 3."
     },
     {
         "id": 145,
@@ -1466,8 +1455,7 @@
         "cost": 50,
         "slot": "Head",
         "source": "Reward from Solo Scenario - {BE}",
-        "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {ATTACK} to the Attack.",
-        "soloItem": "BE"
+        "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {ATTACK} to the Attack."
     },
     {
         "id": 146,
@@ -1476,8 +1464,7 @@
         "cost": 50,
         "slot": "Two Hands",
         "source": "Reward from Solo Scenario - {SS}",
-        "desc": "After performing any song action, immediately perform an Attack 2 or {MOVE} 2 action.",
-        "soloItem": "SS"
+        "desc": "After performing any song action, immediately perform an Attack 2 or {MOVE} 2 action."
     },
     {
         "id": 147,
@@ -1486,8 +1473,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "Reward from Solo Scenario - {DS}",
-        "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}.",
-        "soloItem": "DS"
+        "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}."
     },
     {
         "id": 148,
@@ -1496,8 +1482,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "Reward from Solo Scenario - {SB}",
-        "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal.",
-        "soloItem": "SB"
+        "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal."
     },
     {
         "id": 149,
@@ -1507,8 +1492,7 @@
         "slot": "Legs",
         "source": "Reward from Solo Scenario - {EL}",
         "spent": true,
-        "desc": "If you move 5 or more hexes on your turn, create any element. {ANY}",
-        "soloItem": "EL"
+        "desc": "If you move 5 or more hexes on your turn, create any element. {ANY}"
     },
     {
         "id": 150,
@@ -1518,8 +1502,7 @@
         "slot": "Two Hands",
         "source": "Reward from Solo Scenario - {BT}",
         "spent": true,
-        "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action.",
-        "soloItem": "BT"
+        "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
     },
     {
         "id": 152,
@@ -1645,7 +1628,6 @@
         "cost": 50,
         "slot": "Two Hands",
         "source": "Reward from Solo Scenario - {DR}",
-        "desc": "When you reveal cards from any deck, reveal one additional card.",
-        "soloItem": "DR"
+        "desc": "When you reveal cards from any deck, reveal one additional card."
     }
 ]

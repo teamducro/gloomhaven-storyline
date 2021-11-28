@@ -13,6 +13,9 @@ export default {
     reverse(obj) {
         return Object.assign({}, ...Object.entries(obj).map(([a, b]) => ({[b]: a})));
     },
+    unique(array) {
+        return array.filter((value, index, self) => self.indexOf(value) === index);
+    },
     nl2br(string) {
         if (typeof string === 'undefined' || string === null) {
             return '';
@@ -28,5 +31,8 @@ export default {
     },
     sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    },
+    makeArrayWithNumbers(length, start = 1) {
+        return Array.from({length}, (_, i) => i + start);
     }
 }

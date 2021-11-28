@@ -76,9 +76,10 @@
                                 :title="$t('Items')"
                                 :label="$t('Search name or nr')"
                                 :items.sync="sheetItems"
+                                :disabled="outOfStockItems"
                                 :filter-closure="itemFilterClosure"
                                 width="w-auto"
-                                class="mb-8"
+                                class="mb-2"
                                 @change="storeItems"
                                 ref="items"
                             >
@@ -96,10 +97,25 @@
                                 </div>
                             </selectable-list>
 
+                            <router-link to="/items">
+                                <button class="mb-8 mdc-button origin-left transform scale-90 mdc-button--raised pr-1">
+                                    <i class="material-icons mdc-button__icon transform rotate-180">style</i>
+                                    <span class="mdc-button__label">{{ $t('Items') }} 〉</span>
+                                </button>
+                            </router-link>
+
+                            <personal-quests v-if="game !== 'jotl'"
+                                             :quest.sync="character.quest"
+                                             :game="character.game"
+                                             :sheet="sheet"
+                                             @change="store"/>
+
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
-                            <perks :checks.sync="character.checks" :perks.sync="character.perks"
-                                   :character="character" @change="store"/>
+                            <perks :checks.sync="character.checks"
+                                   :perks.sync="character.perks"
+                                   :character="character"
+                                   @change="store"/>
                         </div>
                     </div>
 
@@ -188,11 +204,14 @@ import CharacterRepository from "../repositories/CharacterRepository";
 import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
 import store from "store/dist/store.modern";
+import ScenarioRepository from "../repositories/ScenarioRepository";
+import ItemAvailability from "../services/ItemAvailability";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
+            game: null,
             sheet: null,
             sheetHash: null,
             selected: null,
@@ -201,10 +220,13 @@ export default {
             loading: true,
             sheetItems: {},
             items: collect(),
+            itemAvailability: null,
+            outOfStockItems: [],
             nameField: null,
             isLocalCampaign: true,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
+            scenarioRepository: new ScenarioRepository,
             characterRepository: new CharacterRepository,
             itemRepository: new ItemRepository
         }
@@ -231,6 +253,7 @@ export default {
         async render() {
             this.loading = true;
 
+            this.game = app.game;
             this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
 
@@ -254,13 +277,37 @@ export default {
         },
         refreshItems() {
             if (this.character) {
-                let sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                let sheetItems;
                 this.sheetItems = {};
+
+                if (this.sheet.game === 'jotl') {
+                    sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
+                } else {
+                    sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                }
 
                 this.items = this.itemRepository.findMany(sheetItems).keyBy('id').items;
                 sheetItems.forEach(id => {
-                    this.sheetItems[id] = !!this.character.items[id];
+                    if (!isNaN(id)) {
+                        this.sheetItems[id] = !!this.character.items[id];
+                    }
                 });
+
+                this.refreshOutOfStockItems();
+            }
+        },
+        refreshOutOfStockItems() {
+            this.itemAvailability = new ItemAvailability(this.sheet);
+
+            if (this.character) {
+                this.outOfStockItems = [];
+
+                for (const id in this.itemAvailability.itemCountUses) {
+                    // The following items are out of stock
+                    if (this.items[id] && this.itemAvailability.uses(id) >= this.items[id].count) {
+                        this.outOfStockItems.push(id);
+                    }
+                }
             }
         },
         resetRollback() {
@@ -318,6 +365,7 @@ export default {
         storeItems() {
             this.character.items = this.sheetItems;
             this.store();
+            this.refreshOutOfStockItems();
         },
         store() {
             if (this.loading) {

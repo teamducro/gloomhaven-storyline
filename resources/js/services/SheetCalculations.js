@@ -1,3 +1,5 @@
+import Helpers from "./Helpers";
+
 export default {
     methods: {
         calculateCostModifier(reputation) {
@@ -38,11 +40,30 @@ export default {
                 .filter((prosperity, index) => prosperityIndex >= index)
                 .last();
         },
-        calculateItems(items, prosperityIndex) {
+        calculateItemsGh(items, prosperityIndex) {
             let filteredItems = collect(items).filter().keys().all().map(Number)
             const prosperityMap = [14, 21, 28, 35, 42, 49, 56, 63, 70];
-            let prosperityItems = Array.from({length: prosperityMap[this.calculateProsperity(prosperityIndex) - 1]}, (_, i) => i + 1)
+            let prosperityItems = Helpers.makeArrayWithNumbers(prosperityMap[this.calculateProsperity(prosperityIndex) - 1])
             return _.uniq(prosperityItems.concat(filteredItems));
+        },
+        calculateItemsJotl(items, scenarioRepository) {
+            let filteredItems = collect(items).filter().keys().all().map(Number)
+            let shopItems = [];
+
+            let itemRewards = {
+                2: Helpers.makeArrayWithNumbers(13),
+                4: [14],
+                9: Helpers.makeArrayWithNumbers(6, 15),
+                15: Helpers.makeArrayWithNumbers(6, 21)
+            }
+
+            for (const scenarioId in itemRewards) {
+                if (scenarioRepository.find(scenarioId).isComplete()) {
+                    shopItems.push(...itemRewards[scenarioId]);
+                }
+            }
+
+            return _.uniq(shopItems.concat(filteredItems));
         }
     }
 }

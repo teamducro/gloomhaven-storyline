@@ -3,6 +3,9 @@
         <inline-svg v-if="svg"
                     :src="'characters/' + svg"
                     :classes="['h-full', 'w-full']"/>
+        <span v-if="showName && name">
+            {{ name }}
+        </span>
     </a>
 </template>
 
@@ -11,10 +14,19 @@ import GameData from "../../services/GameData";
 import Helpers from "../../services/Helpers";
 
 export default {
-    props: [
-        'character',
-        'player'
-    ],
+    props: {
+        character: {
+            type: Object | String
+        },
+        player: {
+            type: Object,
+            default: null
+        },
+        showName: {
+            type: Boolean,
+            default: false
+        }
+    },
     data() {
         return {
             gameData: new GameData,
@@ -26,6 +38,13 @@ export default {
             this.svg = this.character.id;
         } else {
             this.svg = this.character;
+        }
+    },
+    computed: {
+        name() {
+            return typeof this.character === 'object'
+                ? this.character.name
+                : '';
         }
     },
     methods: {

@@ -8,10 +8,10 @@
                     {{ requirement.achievement.name }} ({{ $t(requirement.achievement.type) }})
                     {{ $t(requirement.state).toUpperCase() }}
                     <template v-if="requirementIndex + 1 < condition.requirements.length">
-                        and
+                        {{ $t('and') }}
                     </template>
                     <template v-if="conditionIndex + 1 < conditionsFiltered.length">
-                        or
+                        {{ $t('or') }}
                     </template>
                 </span>
             </div>
