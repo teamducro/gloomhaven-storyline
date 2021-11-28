@@ -45,6 +45,16 @@
                     </div>
                 </div>
 
+                <div v-if="goalMet" class="mt-2">
+                    <p v-if="quest.character_unlock">
+                        {{ $t('Unlocked') }}:
+                        <character-icon class="w-6 -mb-2 inline-block" :character="quest.character_unlock"/>
+                    </p>
+                    <p v-else-if="quest.unlock">
+                        {{ quest.unlock }}
+                    </p>
+                </div>
+
                 <div>
                     <button @click.prevent="remove" type="button"
                             class="my-4 mdc-button mdc-button--raised">
@@ -64,30 +74,39 @@
 
 <script>
 import PersonalQuestRepository from "../../../repositories/PersonalQuestRepository";
+import PersonalQuestValidator from "../../../services/PersonalQuestValidator";
 
 export default {
     props: {
         quest: Object,
-        game: String
+        game: String,
+        sheet: Object
     },
     data() {
         return {
             quests: collect(),
-            personalQuestRepository: new PersonalQuestRepository
+            goalMet: false,
+            personalQuestRepository: new PersonalQuestRepository,
+            personalQuestValidator: new PersonalQuestValidator
         }
     },
     mounted() {
         this.quests = this.personalQuestRepository.fetch(this.game).keyBy('id').items;
+        if (this.quest.id) {
+            this.validate();
+        }
     },
     computed: {},
     methods: {
         random() {
             const quest = [...Object.values(this.quests)].sort((a, b) => 0.5 - Math.random())[0];
             this.update(quest);
+            this.goalMet = false;
         },
         select(questId) {
             const quest = this.quests[questId];
             this.update(quest);
+            this.goalMet = false;
         },
         remove() {
             this.$emit('update:quest', {});
@@ -100,12 +119,17 @@ export default {
         changedCheckboxProgress(partIndex, valueIndex, isChecked) {
             this.quest.progress[partIndex].value[valueIndex] = isChecked;
 
+            this.validate();
             this.update(this.quest);
         },
         changedNumberProgress(partIndex, value) {
             this.quest.progress[partIndex].value = value;
 
+            this.validate();
             this.update(this.quest);
+        },
+        validate() {
+            this.goalMet = this.personalQuestValidator.validate(this.quest, this.sheet);
         },
         openCard() {
             this.$bus.$emit('open-default-card', this.quest.card);

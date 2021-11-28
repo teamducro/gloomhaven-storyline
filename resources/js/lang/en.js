@@ -95,6 +95,7 @@ export default {
     "Retire": "Retire",
     "Retired": "Retired",
     "Remove": "Remove",
+    "Unlocked": "Unlocked",
     "Clear all": "Clear all",
     "Add Character": "Add Character",
     "character-limit-message": "Dew to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",

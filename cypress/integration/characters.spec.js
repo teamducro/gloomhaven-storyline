@@ -114,7 +114,7 @@ describe('Character', () => {
         cy.get('#items-bedges').contains('Boots of Striding').should('not.exist');
     });
 
-    it('It can track personal quests', () => {
+    it.only('It can track personal quests', () => {
         cy.visit('/tracker/#/characters');
 
         utilities.openCharacter();
@@ -128,6 +128,15 @@ describe('Character', () => {
 
         cy.get('#pq-0-0').click();
         cy.get('button').contains('Remove #510');
+        cy.get('p').contains('Unlocked').should('not.exist');
+        cy.get('span').contains('Conclude Hidden Scenario');
+
+        cy.get('#pq-0-1').click();
+        cy.get('#pq-0-2').click();
+        cy.get('span').contains('Conclude 52 Noxious Cellar');
+        cy.get('span').contains('Conclude Hidden Scenario').should('not.exist');
+        cy.get('#pq-1-0').click();
+        cy.get('p').contains('Unlocked');
     });
 
     it('It can draw a random personal quest', () => {
