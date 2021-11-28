@@ -8,6 +8,7 @@ class PersonalQuest {
         this.number = '#' + String(data.id).padStart(3, '0');
         this._name = data.name;
         this.character_unlock = data.character_unlock;
+        this.unlock = data.unlock;
         this.progress = [...data.progress];
         this.card = new Card('Q-' + this.id, game);
         this.game = game;

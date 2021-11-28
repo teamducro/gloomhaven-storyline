@@ -341,7 +341,7 @@
     {
         "id": 526,
         "name": "Vengeance",
-        "unlock": "Open envelope X",
+        "unlock": "Open Envelope X",
         "progress": [
             {
                 "type": "checkbox",
