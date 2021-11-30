@@ -5,9 +5,7 @@
                 :class="classes">
             {{ scenario.id }}
         </button>
-        <span v-if="showName">
-            {{ scenario.name }}
-        </span>
+        <span v-if="showName">{{ scenario.name }}</span>
     </span>
 </template>
 
