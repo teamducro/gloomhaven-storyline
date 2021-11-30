@@ -114,7 +114,7 @@ describe('Character', () => {
         cy.get('#items-bedges').contains('Boots of Striding').should('not.exist');
     });
 
-    it.only('It can track personal quests', () => {
+    it('It can track personal quests', () => {
         cy.visit('/tracker/#/characters');
 
         utilities.openCharacter();
