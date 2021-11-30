@@ -59,7 +59,7 @@ export default class ScenarioValidator {
 
         // Skip when no linked scenarios are completed
         let states = this.linkedStates(scenario);
-        if (states.has(ScenarioState.complete) === false) {
+        if (states.has(ScenarioState.complete) === false && !unlocked) {
             if (scenario.isVisible()) {
                 this.scenarioRepository.setHidden(scenario);
                 this.needsValidating = true;
