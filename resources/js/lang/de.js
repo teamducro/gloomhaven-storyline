@@ -11,14 +11,14 @@ export default {
     "Info": "Info",
     "Settings": "Einstellungen",
     "Characters": "Charaktere",
-    "Character sheet": "Charakter Blatt",
-    "Party sheet": "Party Blatt",
+    "Character sheet": "Charakter-Blatt",
+    "Party sheet": "Gruppen-Blatt",
     "Reputation": "Ansehen",
     "Shop modifier": "Shop-Modifikator",
     "Sanctuary of the Great Oak": "Heiligtum der Großen Eiche",
     "Gloomhaven Prosperity": "Gloomhaven-Wohlstand",
     "Prosperity Items": "Wohlstands-Gegenstände",
-    "Modify the cost of items when buying by this amount.": "Verändert beim Kauf von Gegenständen den Preis um diese Höhe.",
+    "Modify the cost of items when buying by this amount.": "Beim Kauf von Gegenständen wird der Preis um diese Höhe verändert.",
     "The cost of items displayed is modified by this amount.": "Die Kosten der angezeigten Gegenstände wird um diese Höhe verändert.",
     "When 100 gold is donated, open envelope": "Wenn ihr 100 Gold gespendet habt, öffnet Umschlag",
     "gained prosperity checkbox by donations.": "Erhaltene Wohlstands-Checkbox pro Spende.",
@@ -38,7 +38,7 @@ export default {
     "Have a party reputation of -10 or lower": "Erlangt ein Ansehen von -10 der weniger",
     "Have a party reputation of -20": "Erlangt ein Ansehen von -20",
     "Add City Event 77 & Road Event 68": "Fügt Stadt-Ereignis 77 & Weg-Ereignis 68 hinzu",
-    "Retire a character": "Schickt einen Charakter in den Ruhestand",
+    "Retire a character": "Einen Charakter in den Ruhestand schicken",
     "Open the Town Records Book": "Öffnet das Stadtarchiv",
     "Envelope": "Umschlag",
     "opened": "geöffnet",
@@ -79,7 +79,7 @@ export default {
     "Diviner": "Wahrsager",
     "Orchid society": "Orchideen-Gesellschaft",
     "Citizens of Gloomhaven": "Bürger von Gloomhaven",
-    "The rift device": "Das Spaltgerät",
+    "The rift device": "Das Spalt-Gerät",
     "Tainted crypt": "Verdorbene Krypta",
     "Corruption": "Korruption",
     "Requirements": "Voraussetzungen",
@@ -123,7 +123,7 @@ export default {
     "Please consider purchasing a licence": "Nur Pro-Lizenz-Nutzer können beliebig viele Charaktere anlegen. Bitte zieh den Kauf einer solchen Lizenz in Betracht.",
     "retire-character": {
         "text": "Bist du sicher, dass du diesen Charakter in Ruhestand schicken willst? Er wird nicht endgültig gelöscht.",
-        "upgrade": "Bist du sicher, dass due diesen Charakter endgültig löschen willst? Pro-Lizenz-Nutzer können einen Charakter in Ruhestand schicken ohne dass er endgültig entfernt wird."
+        "upgrade": "Bist du sicher, dass du diesen Charakter endgültig löschen willst? Pro-Lizenz-Nutzer können einen Charakter in Ruhestand schicken ohne dass er endgültig entfernt wird."
     },
     "remove-character": {
         "text": "Bist du sicher, dass du diesen Charakter endgültig löschen willst?"
@@ -135,7 +135,7 @@ export default {
         "1": "Teile deine aktuelle lokale Storyline mit deinen Gruppenmitgliedern.",
         "2": "Link kopieren",
         "3": "oder teile ihn auf einer der folgenden Plattformen.",
-        "title": "Gloomhaven Storyline Tracker teilen"
+        "title": "Gloomhaven-Storyline-Tracker teilen"
     },
     "campaign page": {
         "local desc": "Die lokale Kampagne ist deine Gratis-Kampagne und wird auf deinem lokalen Endgerät gespeichert. Du kannst sie nicht automatisch mit deinen Gruppenmitgliedern synchronisieren."
@@ -152,11 +152,11 @@ export default {
     "Gloomhaven Item DB": "Gloomhaven Gegenstands DB",
     "about us": {
         "title": "Verfolge deinen Handlungsstrang in Gloomhaven",
-        "text": "Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Dann drücken wir die Pausetaste vom Alltag. Jeder von uns hat etwas dazu beigetragen, das sich unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Spielfortschritte festzuhalten und uns die Auswahl eines neuen Szenarios zu erleichtern. Mit einigen Getränken und Snacks am Tisch, sind wir bereit ins Abenteuer aufzubrechen."
+        "text": "Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Wir drücken dann die Pausetaste vom Alltag. Jeder von uns hat etwas dazu beigetragen, dass sich unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Spielfortschritte festzuhalten und uns die Auswahl eines neuen Szenarios zu erleichtern. Mit ein paar Getränken und Snacks sind wir bereit ins Abenteuer aufzubrechen."
     },
     "Welcome": "Willkommen",
     "Language": "Sprache",
-    "Help translating?": "Willst du bei der Übersetzung helfen",
+    "Help translating?": "Willst du bei der Übersetzung helfen?",
     "Translations": "Übersetzungen",
     "French": "Französisch",
     "Italian": "Italienisch",
@@ -168,17 +168,17 @@ export default {
     "donations": {
         "1": {
             "1": "Alle Inhalte im Gloomhaven Storyline Tracker sind gratis!",
-            "2": "Die kostenpflichtige Version bietet eine automatische Synchronisierungsfunktion, Fortschritte müssen nicht mehr manuell ausgetauscht werden! Dies deckt die Kosten für die Instandhaltung dieser App für die Community.",
+            "2": "Die kostenpflichtige Version bietet eine automatische Synchronisierungsfunktion, Fortschritte müssen nicht mehr manuell ausgetauscht werden! Dies deckt die Kosten für die Instandhaltung der App für die Community.",
             "3": "Bitte ziehe den Kauf einer Lizenz in Betracht, das wäre sehr hilfreich.",
             "title": "Fortschritt automatisch synchronisieren!"
         },
         "2": {
-            "1": "Don't forget to backup your progress once in a while, the manual share feature is great for that!",
-            "2": "The paid version provides automatic backups, you can always continue where you left off or even rollback unwanted changes. This covers costs maintaining this app for the community.",
-            "3": "Please consider a license, it helps a lot.",
-            "title": "Automatic backups!",
+            "1": "Vergiss nicht deinen Kampagnen-Fortschritt hin und wieder abzuspeichern. Das Feature \"manuell Teilen\" ist super dafür geeignet.",
+            "2": "Die Bezahlversion beinhaltet automatische Backups. Du kannst immer dort weitermachen wo du aufgehört hast oder ungewollte Änderungen rückgängig machen. Deine Unterstützung deckt die Wartungs- und Weiterentwicklungskosten der App für die Community.",
+            "3": "Bitte zieh den Kauf einer Lizenz in Betracht, es hilft ungemein.",
+            "title": "Automatische Backups!",
         },
-        "close": "Verwende den Storyline Tracker weiterhin."
+        "close": "Verwende den Storyline-Tracker weiterhin."
     },
     "Support": "Unterstützung",
     "Donate": "Spende",
@@ -246,16 +246,16 @@ export default {
     "DISARM": "ENTWAFFNEN",
     "TARGET": "ZIEL",
     "Through Jungles": "Durch die Dschungel",
-    "Solo Scenarios": "Solo Szenarien",
+    "Solo Scenarios": "Solo-Szenarien",
     "Dagger Forest": "Dolchwald",
     "Lingering Swamp": "Siechensumpf",
     "Watcher Mountains": "Wäschtergebirge",
-    "Copperneck Mountains": "Kupferkamm",
+    "Copperneck Mountains": "Kupferkammgebirge",
     "Misty Sea": "Nebelmeer",
-    "Crypt": "Krypt",
+    "Crypt": "Krypta",
     "East Continent": "Östlicher Kontinent",
-    "Serpents Kiss River": "Schlagenkuss",
-    "Merchants Bay": "Händlerbuch",
+    "Serpents Kiss River": "Schlangenkuss",
+    "Merchants Bay": "Händlerbucht",
     "East Coast": "Ostküste",
     "different Dimension": "verschiedene Dimension",
     "and": "und",
@@ -776,7 +776,7 @@ export default {
             "sections": {
                 "1": "Einige eurer Kontakte im Heiligtum der Großen Eiche wissen von einem Tempel, der einer unsichtbaren Kraft gewidmet ist, die jede Frage beantworten wird, die man ihr stellt. Das ist die Gelegenheit für euch, euch euren Herzenswunsch zu erfüllen.",
                 "2": "Als ihr schließlich den Tempel erreicht hattet, vernahmt ihr eine Stimme:\"Ich kann um diese Zeit keine Besucher empfangen.\" Bevor ihr etwas erwidern konntet, materialisierte sich eine Gruppe von Steinkonstrukten vor euch. Aber ihr wolltet auf keinen Fall mit leeren Händen den Rückweg antreten. Nachdem ihr mit den Monstern fertig wart, bot euch die Stimme als Belohnung entweder große Macht, großen Reichtum oder aber einen Hinweis über den Aufenthaltsort der Nekormantin an.",
-                "3": "Große Macht war eure offensichtliche Wahl. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein in den Copperneck Mountains, der eine Quelle großer Macht enthält.",
+                "3": "Große Macht war eure offensichtliche Wahl. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein im Kupferkammgebirge, der eine Quelle großer Macht enthält.",
                 "4": "Was für eine Art von Söldnern wärt ihr, wenn ihr nicht nach Reichtum und Bezahlung trachten würdet? Großer Reichtum war daher eure offensichtliche Wahl. Die Stimme erzählte euch von einer verlorenen Insel im Nebelmeer, die längst vergessene Schätze enthält.",
                 "5": "Macht und Reichtum bedeuten euch nichts, solange Jekserah noch am Leben ist. Ihr besteht darauf, dass die Stimme euch den Aufenthaltsort der ruchlosen Valrath verrät. Sie erzählte euch von einem Heiligtum, das in den Tiefen des Leichenwaldes versteckt ist."
             },
@@ -791,7 +791,7 @@ export default {
             "name": "Die Zauberin",
             "sections": {
                 "1": "Ihr habt Geschichten über eine Aesther-Zauberin in Gloomhaven gehört, die euch vielleicht bei euren Bemühungen helfen kann. Allerdings ist sie dafür bekannt, dass sie unmögliche Aufgaben im Austausch für einen Gefallen stellt. Unmöglich oder nicht, ihr braucht ihre Hilfe.",
-                "2": "Nach Berichten über eine Aesther-Zauberin im Kesselviertel habt ihr sie in einer verlassenen und heruntergekommenen Taverne gefunden: dem Crooked Bone. Der Name der Aestherin ist Hail und sie schien ein wenig exzentrisch zu sein... vielleicht sogar ein wenig verrückt. Nach einigem Zögern willigte sie ein euch zu helfen, wenn ihr eine Kugel aus der Gefrorenen Höhle in den Copperneck-Bergen holen könnten. Die Kreaturen in der Höhle waren nicht gerade erfreut euch zu sehen, aber ihr machtet kurzen Prozess mit dieser Gefahr. Als der letzte Gegner tot war, nähertet ihr euch dem hinteren Teil der Kammer, wo eine kleine blaue Kugel über dem Boden schwebte. Ihr stecktet sie in euren Rucksack und begabt euch auf den Weg zurück zum Crooked Bone. Hail schien ziemlich verliebt in das Objekt zu sein und vielleicht ein wenig leichtsinnig darüber, wie gefährlich dieses Objekt war, das ihr mit euren bloßen Händen gehalten hattet. Hail verschwand mit der Kugel. Nach gefühlten Stunden des Wartens kehrte sie zurück und fragte beiläufig, ob sie an euch ein Experiment durchdürfen dürfe. Ihr seid ein wenig verblüfft, aber sie versichert euch, dass es sicher ist. Für eine große Menge Gold kann sie nun einige eurer Fähigkeiten verbessern. Was noch wichtiger ist: Sie ist auch bereit, euch einige weitere Gefallen zu tun."
+                "2": "Nach Berichten über eine Aesther-Zauberin im Kesselviertel habt ihr sie in einer verlassenen und heruntergekommenen Taverne gefunden: dem Krummknochen. Der Name der Aestherin ist Hail und sie schien ein wenig exzentrisch zu sein... vielleicht sogar ein wenig verrückt. Nach einigem Zögern willigte sie ein euch zu helfen, wenn ihr eine Kugel aus der Gefrorenen Höhle im Kupferkammgebirge holen könntet. Die Kreaturen in der Höhle waren nicht gerade erfreut euch zu sehen, aber ihr machtet kurzen Prozess mit dieser Gefahr. Als der letzte Gegner tot war, nähertet ihr euch dem hinteren Teil der Kammer, wo eine kleine blaue Kugel über dem Boden schwebte. Ihr nahmt sie an euch und begabt euch auf den Weg zurück zum Krummknochen. Hail schien ziemlich verliebt in das Objekt zu sein und vielleicht ein wenig leichtsinnig darüber, wie gefährlich dieses Objekt war, das ihr mit euren bloßen Händen gehalten hattet. Hail verschwand mit der Kugel. Nach gefühlten Stunden des Wartens kehrte sie zurück und fragte beiläufig, ob sie an euch ein Experiment durchdürfen dürfe. Ihr seid ein wenig verblüfft, aber sie versichert euch, dass es sicher ist. Für eine große Menge Gold kann sie nun einige eurer Fähigkeiten verbessern. Was noch wichtiger ist: Sie ist auch bereit, euch einige weitere Gefallen zu tun."
             },
             "stages": {
                 "0": "{1}",
@@ -801,7 +801,7 @@ export default {
         "14": {
             "name": "Unbegrenzte Macht",
             "sections": {
-                "1": "Ihr habt von einem Schrein in den Copperneck Mountains erfahren. Eure Quellen berichten euch, dass dieser Schrein mit Symbolen der Macht und der Stärke gekennzeichnet ist. Da ihr Beides mögt, scheint er Schrein eine Untersuchung wert zu sein.",
+                "1": "Ihr habt von einem Schrein im Kupferkammgebirge erfahren. Eure Quellen berichten euch, dass dieser Schrein mit Symbolen von Macht und Stärke gekennzeichnet ist. Da ihr Beides mögt, scheint der Schrein eine Untersuchung wert zu sein.",
                 "2": "Der Schrein war eine Prüfung. \"Stärke erzeugt Stärke\" stand in alten Schriften an der Wand geschrieben. Ihr habt eure Stärke bewiesen, indem ihr die Wächter des Schreins besiegt und das Siegel der Stärke an euch gerissen habt. Das Siegel verlieh euch eine große Stärke, offenbarte euch aber auch Visionen von seltsamen Runen. Vielleicht haben die Symbole eine tiefere Bedeutung?"
             },
             "stages": {
@@ -812,9 +812,9 @@ export default {
         "15": {
             "name": "Es leben die Drachen",
             "sections": {
-                "1": "Ihr habt Berichte über große fliegende Kreaturen in den Copperneck Mountains gehört. Könnte es sich dabei wirklich um Drachen handeln? Drachen könnten eine Bedrohung für die Stadt darstellen. Daher beschließt ihr, dieser Sache auf den Grund zu gehen.",
-                "2": "Euer Ziel ist der Icecrag, der höchste Berg in den Coppernecks. Auf eurem Weg wurdet ihr von einer Gruppe Inox und Dämonen überfallen. Ihr wart höchst verwundert über ein solches Bündnis, aber ihr ließt euch dadurch nicht von eurem Weg zu eurem Ziel abbringen.",
-                "3": "Der Aufstieg auf den Icecrag war zermürbend und beschwerlich. Ihr musstet euch gegen die Kälte, Wölfe und hungrige Draken erwehren. Doch kamt ihr auch der Sache mit den Drachen auf den Grund. Auf dem Gipfel befand sich eine gigantische, sprechende Echse. Sie sprach mit einer harschen Stimme, die euch aber mit ihrer Eloquenz überraschte. \"Eine Gruppe von Savvas hat mich im Schlaf überrascht und mir eine meiner Flammendrüsen entfernt, vermutlich um sie zu studieren. Ich kann diese Beleidigung nicht ungestraft lassen und würde es sehr zu schätzen wissen, wenn ihr sie aus der Stadt zurückholt und dabei so viele von ihnen tötet, wie ihr könnt....oder, wen ihr dem Klischee entsprechen wollt, könnt ihr mich einfach angreifen”, sagte die Kreatur mit einem Seufzer. \"Den Drachen erschlagen, die Prinzessin retten und so weiter. Nur habe ich keine Prinzessin, und ich bin auch kein Drache - nur ein Drake, der schon lange gelebt hat und sein Leben heute nicht beenden will. Wenn ihr mich also angreift, werde ich mich wehren und ihr werdet mit Sicherheit sterben\"."
+                "1": "Ihr habt Berichte über große fliegende Kreaturen im Kupferkammgebirge gehört. Könnte es sich dabei wirklich um Drachen handeln? Drachen könnten eine Bedrohung für die Stadt darstellen. Daher beschließt ihr, dieser Sache auf den Grund zu gehen.",
+                "2": "Euer Ziel ist der Icecrag, der höchste Berg im Kupferkammgebirge. Auf eurem Weg wurdet ihr von einer Gruppe Inox und Dämonen überfallen. Ihr wart höchst verwundert über ein solches Bündnis, aber ihr ließt euch dadurch nicht von eurem Weg zu eurem Ziel abbringen.",
+                "3": "Der Aufstieg auf den Icecrag war zermürbend und beschwerlich. Ihr musstet euch gegen die Kälte, Wölfe und hungrige Draken erwehren. Aber ihr seid der Sache mit den Drachen auf den Grund gekommen. Auf dem Gipfel befand sich eine gigantische, sprechende Echse. Sie sprach mit einer harschen Stimme, die euch mit ihrer Eloquenz überraschte. \"Eine Gruppe von Savvas hat mich im Schlaf überrascht und mir eine meiner Flammendrüsen entfernt, vermutlich um sie zu studieren. Ich kann diese Beleidigung nicht ungestraft lassen und würde es sehr zu schätzen wissen, wenn ihr sie aus der Stadt zurückholt und dabei so viele von ihnen tötet, wie ihr könnt....oder, wenn ihr dem Klischee entsprechen wollt, könnt ihr mich einfach angreifen”, sagte die Kreatur mit einem Seufzer. \"Den Drachen erschlagen, die Prinzessin retten und so weiter. Nur habe ich keine Prinzessin, und ich bin auch kein Drache - nur ein Drake, der schon lange gelebt hat und sein Leben heute nicht beenden will. Wenn ihr mich also angreift, werde ich mich wehren und ihr werdet mit Sicherheit sterben\"."
             },
             "stages": {
                 "0": "{1}",
@@ -826,7 +826,7 @@ export default {
             "name": "Schatzinsel",
             "sections": {
                 "1": "Ihr habt von einer unentdeckten Insel im Nebelmeer erfahren, die Gerüchten zufolge große Reichtümer beherbergen soll. Es ist Zeit, ein Boot zu chartern.",
-                "2": "Die Insel war von wilden Ratzen befallen. Doch keine Ratze kann sich zwischen Euch und den Schatz stellen. Ihr habt die Insel erstürmt und die Überreste eines verlassenen Schiffes entdeckt, in dem die Ratzen Zuflucht suchten. Das Schiff enthielt eine Unmenge an Gold. Wer weiß, wofür die Ratzen das Gold verwendet haben, aber ihr habt eine gute Idee, wofür ihr es verwenden werden."
+                "2": "Die Insel war von wilden Ratzen besiedelt. Doch keine Ratze kann sich zwischen Euch und den Schatz stellen. Ihr habt die Insel erstürmt und die Überreste eines verlassenen Schiffes entdeckt, in dem die Ratzen Zuflucht suchten. Das Schiff enthielt eine Unmenge an Gold. Wer weiß, wofür die Ratzen das Gold verwendet haben, aber ihr habt eine gute Idee, wofür ihr es verwenden werdet."
             },
             "stages": {
                 "0": "{1}",
@@ -944,7 +944,7 @@ export default {
         "25": {
             "name": "Die Stimme",
             "sections": {
-                "1": "In einer Höhle in den Copperneck Mountains habt ihr eine Kreatur entdeckt, die nur als \"Die Stimme\" bekannt ist. Die Stimme wurde von einer mächtigen Kraft tief in der Erde gefangen gehalten. Sie bat euch um Eure Hilfe bei der Suche nach Gefäßen, die sie benötigt, um ihre körperliche Form wiederzuerlangen und ihre lange Gefangenschaft zu beenden.",
+                "1": "In einer Höhle im Kupferkammgebirge habt ihr eine Kreatur entdeckt, die nur als \"Die Stimme\" bekannt ist. Die Stimme wurde von einer mächtigen Kraft tief in der Erde gefangen gehalten. Sie bat euch um Eure Hilfe bei der Suche nach Gefäßen, die sie benötigt, um ihre körperliche Form wiederzuerlangen und ihre lange Gefangenschaft zu beenden.",
                 "2": "Ihr habt das erste Gefäß von einer Sekte militanter Harrower geborgen. Die Stimme hat euch zum Standort des zweiten Gefäß' geführt.",
                 "3": "Die Waffenkammer der Savvas war eine schwer zu kanckende Nuss, aber ihr habt es geschafft hineinzuschlüpfen, die notwendigen Gegenstände zu stehlen, und wieder herauzukommen, bevor die Wache euch überwältigt hat. Nur noch ein Gefäß bleibt nun übrig.",
                 "4": "Das letzte Gefäß wurde von einem Geflecht uralter Verteidigungsanlagen bewacht. Die Stimme zeigte euch einen Weg, diese Anlagen auszuschalten. Hierfür musstet ihr eine Reihe von Schaltern in der richten Reihenfolge betätigen. Daraufhin wurde eine schmale Leiter freigelegt, die in die Dunkelheit hinabführte. \"Der Weg zur Gruft ist frei.\", sagte die Stimme. \"Geht jetzt und holt euch, was mir gehört.\"",
@@ -1141,7 +1141,7 @@ export default {
             "name": "Verdorbener Einfluß",
             "sections": {
                 "1": "Mit Hails Hilfe wurde das Artefakt von seinem verderblichen Einfluss gereinigt. Hail erwähnte jedoch drei Orte, die dem korrumpierten Artefakt Energie entzogen. Ihr habt mindestens einen dieser Orte besucht und den verderblichen Einfluss dort zerstört. Wenn ihr den verderblichen Einfluss an allen drei Orten aufspürt und zerstört, kann Hail euch vielleicht mehr Informationen über die Verderbnis geben, die die Umgebung von Gloomhaven durchdringt.",
-                "2": "Ihr habt den verderblichen Einfluss in der Nebelsee, im Dolchwald und in den Copperneck Mountains zerstört. Es ist Zeit, zu Hail zu gehen und dem Ganzen auf den Grund zu gehen.",
+                "2": "Ihr habt den verderblichen Einfluss in der Nebelsee, im Dolchwald und im Kupferkammgebirge zerstört. Es ist Zeit, zu Hail zu gehen und dem Ganzen auf den Grund zu gehen.",
                 "3": "Bevor Hail irgendetwas erklären konnte, bricht eine massive Säule aus schwarzem Sand aus dem Nordosten des Crooked Bones hervor. Hail weist euch entschlossen auf die wirbelnde Sandmasse zu und reicht euch einen Beutel, der euch vor den schädlichen Auswirkungen schützen soll. Der Eintritt in den Strudel ist äußerst schmerzhaft, aber der Beutel füllt euch mit einem dumpfen Taubheitsgefühl. Schließlich findet ihr euch in einem großen steinernen Raum wieder, der mit seltsamen Runensymbolen bedeckt ist. Es herrscht eine unheimliche Kälte, und der dumpfe Schmerz der Leere hält an. \"Diejenigen, die mutig genug sind, diesen Raum zu betreten, werden die ersten sein, die zerrissen werden.\" Eine eindringliche Stimme hallt durch die Kammer um euch herum. \"Den Rest werde ich wie Wild jagen und verschlingen, aber ich glaube, ich werde das hier mehr genießen.\" Als sich eure Augen an das schwache Licht gewöhnen, seht ihr eine schemenhafte Gestalt in der Mitte des Raumes. Mit der Zeit gelingt es euch, sich auf das Bild eines Ästhers mit zwei langen, dünnen Klingen zu konzentrieren. \"Ich habe viele Jahre darauf gewartet, diese Ernte einzufahren\", sagt er mit einem boshaften Grinsen. \"Eine Zeit lang hatte ich mir eingeredet, dass es mir mehr Vergnügen bereiten würde, euch dabei zuzusehen, wie ihr euch langsam selbst umbringt, aber durch die Einmischung meiner Brüder und den Tod meiner Schützlinge bin ich zu meinem ursprünglichen Plan zurückgekehrt. Ich bin nicht unglücklich über die Entwicklung. Selbst die Geduld eines Unsterblichen hat ihre Grenzen.\" Der Aesther lässt seine Klingen in einem hypnotisierenden Tanz aufblitzen. \"Kommt, ihr tapferen Lämmer. Wer wird der Erste sein, der die Finsternis umarmt?\" Der Kampf tobt für eine gefühlte Ewigkeit, doch schließlich fallen zwei Schwerter mit einem scharfen Klingeln auf den Steinboden. Der Aesther bleibt schlaff stehen, ein Ausdruck des Schocks auf seinem verwundeten Gesicht. \"Wie kannst du es wagen?\", murmelt er. Die Stimme, die einst sanft und hypnotisch war, ist nun ernst und dunkel. \"Ich habe Tausende von Jahren gewartet, und ihr maßt euch an, mich um die Früchte meiner Arbeit zu bringen?\" Der Mund des Ästhers hängt schlaff herunter, aber die Gestalt steht immer noch, als würde sie von unsichtbaren Fäden hochgehalten. \"Ihr könnt mein Gefäß zerstören und mich von dieser Ebene verbannen, aber es wird nie genug sein. Ich bin ewig. Ich werde zurückkehren. Ich werde mich noch einmal an dieser Welt laben!\" Bei diesen Worten sackt der Körper des Ästhers zu Boden und verschwindet aus dem Leben. Der dumpfe Schmerz lässt nach, und ihr steigt die Treppe hinauf, einem hellen und klaren Himmel entgegen. Die Erschütterungen und der Wirbel aus schwarzem Sand sind verschwunden und alle, die sich um die Leere versammelt haben, sehen sehr erleichtert aus, dass ihr wohlauf aus der Konfrontation herausgekommen seid. Ihr lasst die Menschen wissen, dass das Unheil, das über sie hereingebrochen war, nun abgewendet ist. Sie jubeln und feiern eure Stärke."
             },
             "stages": {
