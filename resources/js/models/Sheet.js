@@ -89,7 +89,7 @@ class Sheet {
     }
 
     fillBlanksJotl() {
-        for (let i = 28; i <= 36; i++) {
+        for (let i = 26; i <= 36; i++) {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
         }
 
