@@ -91,8 +91,8 @@ export default class ShareState {
         }
     }
 
-    link(id = 'local') {
-        return `${this.url()}#/shared/${this.version}/${id}/${this.encode()}`;
+    link(id = 'local', path = 'story') {
+        return `${this.url()}#/shared/${this.version}/${id}/${this.encode()}/${path}`;
     }
 
     encodeMap() {
