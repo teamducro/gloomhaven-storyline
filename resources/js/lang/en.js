@@ -184,6 +184,7 @@ export default {
     "Submit": "Submit",
     "An email has been sent to your inbox.": "An email has been sent to your inbox.",
     "Selected Campaign": "Selected Campaign",
+    "Selected Game": "Selected Game",
     "PRO": "PRO",
     "gh": "Gloomhaven",
     "Forgotten Circles": "Forgotten Circles",

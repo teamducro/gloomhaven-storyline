@@ -67,11 +67,12 @@ export default {
         }
     },
     destroyed() {
-        if (this.select) {
-            this.select.destroy();
-        }
+        this.select?.destroy()
     },
     methods: {
+        open() {
+            document.querySelector('.language-switch .mdc-select__selected-text').click();
+        },
         changeLanguage() {
             this.current = this.select.value;
             loadLanguageAsync(this.current);

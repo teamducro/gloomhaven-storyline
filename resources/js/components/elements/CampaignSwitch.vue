@@ -48,6 +48,7 @@ export default {
             stories: collect(),
             campaignId: 'local',
             current: 'local',
+            select: null,
             storyRepository: new StoryRepository
         }
     },
@@ -58,12 +59,14 @@ export default {
         this.$bus.$on('campaigns-changed', this.applyData);
     },
     destroyed() {
-        if (this.select) {
-            this.select.destroy();
-        }
+        this.select?.destroy();
+
         this.$bus.$off('campaigns-changed', this.applyData);
     },
     methods: {
+        open() {
+            document.querySelector('.campaign-switch .mdc-select__selected-text').click();
+        },
         applyData() {
             this.campaignId = app.campaignId;
             this.stories = app.stories;
@@ -78,13 +81,3 @@ export default {
     }
 }
 </script>
-
-<style scoped lang="scss">
-.campaign-switch.with-transparency {
-    .mdc-select__anchor {
-        &, &:before, &:after {
-            background-color: transparent !important;
-        }
-    }
-}
-</style>

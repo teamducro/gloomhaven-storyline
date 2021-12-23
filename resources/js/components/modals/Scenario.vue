@@ -362,10 +362,8 @@ export default {
             }
         },
         notesLeft() {
-            if (this.notes) {
-                this.notes.destroy();
-                this.notes = null;
-            }
+            this.notes?.destroy();
+            this.notes = null;
         },
         noteChanged() {
             this.scenario.store();
