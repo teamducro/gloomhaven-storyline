@@ -1,0 +1,17 @@
+#app {
+    ::-webkit-scrollbar {
+        @apply w-1;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-surface;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-white2-50 rounded;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-white2-75;
+    }
+}
