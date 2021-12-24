@@ -9,25 +9,34 @@ class Item {
         this.cost = data.cost;
         this.count = data.count;
         this._slot = data.slot;
-        this.source = data.source;
+        this._source = data.source;
         this._desc = data.desc;
         this.minusOneCardsAdded = data.minusOneCardsAdded || 0;
-        this.faq = data.faq;
+        this._faq = data.faq;
         this.spent = data.spent || false;
         this.consumed = data.consumed || false;
         this.game = game;
+        this.lang = `items.${this.game}_${this.id}`;
     }
 
     get name() {
-        return app.$t('items.' + this._name.replace("'", ''));
+        return app.$t(`${this.lang}.name`);
     }
 
     get desc() {
-        let desc = this._desc;
+        let desc = app.$t(`${this.lang}.desc`);
         if (this.minusOneCardsAdded > 0) {
-            desc += ' Add ' + this.minusOneCardsAdded + ' {-1} to your attack modifier deck.';
+            desc += app.$t('\nAdd {x} {-1} to your attack modifier deck.').replaceAll('{x}', this.minusOneCardsAdded);
         }
         return desc;
+    }
+
+    get source() {
+        return this._source ? app.$t(`${this.lang}.source`) : '';
+    }
+
+    get faq() {
+        return this._faq ? app.$t(`${this.lang}.faq`) : '';
     }
 
     get use() {

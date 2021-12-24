@@ -19,7 +19,7 @@ export default {
             type: Object | String
         },
         player: {
-            type: Object,
+            type: Object | String,
             default: null
         },
         showName: {
