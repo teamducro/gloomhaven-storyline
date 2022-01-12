@@ -298,7 +298,7 @@ export default {
             this.storySyncer.store();
         },
         draw(checkedItems, isCity = true) {
-            let id = [...checkedItems].sort((a, b) => 0.5 - Math.random())[0];
+            let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
             if (id) {
                 const card = (isCity ? 'C' : 'R') + '-' + id;
                 this.$bus.$emit('open-event-card', {id: card, game: this.game});
