@@ -78,12 +78,13 @@
                         :data="items.items"
                         odd-class="bg-black2-10"
                         @rowClick="openItemModel"
+                        :translatable="['name', 'desc']"
                         :noResults="$t('No items available')"
             >
                 <template slot="image" slot-scope="{value, row}">
                     <div class="overflow-hidden h-full -m-1 md:-m-3 top-0 left-0 cursor-pointer">
                         <webp :src="value" width="80" class="-mt-2 top-0 absolute max-w-none rounded"
-                              :alt="row.name" :animate="true"/>
+                              :alt="$t(row.name)" :animate="true"/>
                     </div>
                     <div class="w-16 md:w-12 h-2"></div>
                 </template>
@@ -94,7 +95,7 @@
                     </span>
                 </span>
                 <span slot="name" class="xs:whitespace-nowrap" slot-scope="{value, row}">
-                    {{ value }}<br>
+                    {{ $t(value) }}<br>
                     <span class="lg:hidden">
                         <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
                         <span class="inline-block mr-2">
@@ -110,7 +111,7 @@
                     {{ row.count - itemAvailability.uses(row.id) }} / {{ row.count }}
                 </template>
                 <template slot="desc" slot-scope="{value}">
-                    <add-links-and-icons :text="value"/>
+                    <add-links-and-icons :text="$t(value)"/>
                 </template>
             </data-table>
         </div>

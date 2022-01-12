@@ -1,5 +1,5 @@
 import Card from "./Card";
-import charactersJson from "../characters.json";
+import UsesTranslations from "./UsesTranslations";
 
 class PersonalQuest {
 
@@ -12,14 +12,11 @@ class PersonalQuest {
         this.progress = [...data.progress];
         this.card = new Card('Q-' + this.id, game);
         this.game = game;
+        this.translationKey = 'personal_quests';
     }
 
     get name() {
-        return app.$t('personal_quests.' + this._name.replace("'", ''));
-    }
-
-    get title() {
-        return this.number + ' ' + this.name;
+        return this.$tPrefix(this._name.replace("'", ''));
     }
 
     applyProgress(progress = []) {
@@ -36,5 +33,7 @@ class PersonalQuest {
         };
     }
 }
+
+Object.assign(PersonalQuest.prototype, UsesTranslations);
 
 export default PersonalQuest;

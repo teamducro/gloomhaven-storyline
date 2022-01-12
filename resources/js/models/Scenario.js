@@ -3,11 +3,14 @@ import Storable from './Storable'
 import Card from "./Card";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemTextParser from "../services/ItemTextParser";
+import UsesTranslations from "./UsesTranslations";
+import Character from "./Character";
 
 class Scenario {
 
     constructor(data) {
         this.id = data.id;
+        this.number = `#${this.id}`;
         this.root = data.root || false;
         this._name = data.name;
         this._coordinates = data.coordinates;
@@ -43,6 +46,7 @@ class Scenario {
         this._promptChoice = null;
         this.hasPrompt = typeof data.prompt !== 'undefined';
         this.game = data.game;
+        this.translationKey = 'scenarios';
 
         this.fieldsToStore = {
             "state": "_state",
@@ -116,11 +120,7 @@ class Scenario {
     }
 
     get name() {
-        return app.$t('scenarios.' + this._name);
-    }
-
-    get title() {
-        return `#${this.id} ${this.name}`;
+        return this.$tPrefix(this._name);
     }
 
     unlockTreasure(id, unlock = true) {
@@ -251,5 +251,6 @@ class Scenario {
 }
 
 Object.assign(Scenario.prototype, Storable);
+Object.assign(Scenario.prototype, UsesTranslations);
 
 export default Scenario

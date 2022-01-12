@@ -1,6 +1,6 @@
 <template>
     <div>
-        <modal ref="modal" :title="achievement ? achievement.displayName : ''" :titleDivider="true">
+        <modal ref="modal" :title="achievement ? ($t(achievement.name) + (achievement.count > 1 ? ` (${this.count})` : '')) : ''" :titleDivider="true">
             <template v-slot:content>
                 <div class="flex flex-row justify-between" v-if="achievement">
                     <div class="!my-4">
@@ -36,7 +36,7 @@
                               v-if="achievement.isGlobal()"
                               :src="achievement.image"
                               :animate="true"
-                              :alt="achievement.displayName"/>
+                              :alt="$t(achievement.name)"/>
                     </div>
                 </div>
             </template>

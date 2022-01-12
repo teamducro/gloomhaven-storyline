@@ -10,7 +10,7 @@
             />
             <h1 class="hidden sm:inline-block mt-4 text-xl">{{ campaignName }}
                 <span v-if="character && selected"
-                      class="pl-4">{{ character.characterName }}</span>
+                      class="pl-4">{{ $t(character.characterName) }}</span>
             </h1>
 
             <add-character ref="add-character" :sheet="sheet" @create="create"/>
@@ -85,13 +85,13 @@
                             >
                                 <span class="flex items-center mr-6" slot="label" slot-scope="{item}">
                                     <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                    <span>{{ items[item].number }} {{ items[item].name }}</span>
+                                    <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
                                 </span>
                                 <div slot="item" slot-scope="{item}"
                                      class="cursor-pointer flex items-center border-b border-white2-50 py-1"
                                      @click="openItemModel(item)">
                                     <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                    <span>{{ items[item].number }} {{ items[item].name }}</span>
+                                    <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
                                     <span @click.stop="$refs.items.deselect(item)"
                                           class="ml-auto material-icons">clear</span>
                                 </div>
@@ -206,6 +206,7 @@ import ItemRepository from "../repositories/ItemRepository";
 import store from "store/dist/store.modern";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemAvailability from "../services/ItemAvailability";
+import Helpers from "../services/Helpers";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -406,7 +407,7 @@ export default {
             // This allows to find items based on id and it's name.
             return (id) => {
                 return id.toLowerCase().startsWith(query)
-                    || this.items[id].name.toLowerCase().replace('-', ' ').startsWith(query);
+                    || Helpers.sanitize(this.$t(this.items[id].name)).startsWith(query);
             }
         },
         renderHtml(html) {
