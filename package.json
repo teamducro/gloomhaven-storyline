@@ -90,6 +90,7 @@
         "vue-analytics": "^5.22.1",
         "vue-clipboard2": "^0.3.1",
         "vue-i18n": "^8.17.3",
+        "vue-ray": "^1.17.3",
         "vue-router": "^3.1.6",
         "vue-scrollto": "^2.18.2",
         "vue-social-sharing": "^3.0.6",
