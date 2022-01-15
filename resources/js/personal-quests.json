@@ -321,7 +321,7 @@
                 "type": "number",
                 "name": "Kill twenty elite monsters.",
                 "value": 0,
-                "target": 12
+                "target": 20
             }
         ]
     },
