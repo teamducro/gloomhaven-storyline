@@ -23,16 +23,14 @@
                      :class="{'opacity-25': !selected}">
                     <div class="flex flex-col sheet-break-lg:flex-row sheet-break-lg:space-x-4">
                         <div class="w-full sheet-break-lg:w-1/2">
-                            <div v-if="!selected" @click.stop="() => {$refs['add-character'].open()}"
-                                 class="absolute z-1 top-0 right-0 bottom-0 left-0 cursor-pointer">
-                            </div>
+
 
                             <div class="mb-4">
                                 <h2 class="mb-2">{{ $t('Name') }}</h2>
                                 <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="name-field">
                                     <span class="mdc-text-field__ripple"></span>
                                     <input class="mdc-text-field__input" aria-labelledby="name"
-                                           type="text" name="name" v-model="character.name" @change="store">
+                                           type="text" name="name" v-model="nameText" @change="store">
                                     <span class="mdc-floating-label" id="name">{{ $t('Name') }}</span>
                                     <span class="mdc-line-ripple"></span>
                                 </label>
@@ -217,6 +215,7 @@ export default {
             sheetHash: null,
             selected: null,
             character: null,
+            nameText: null,
             campaignName: null,
             loading: true,
             sheetItems: {},
@@ -336,6 +335,9 @@ export default {
             }
 
             if (this.character) {
+                this.nameText = this.character.name !== this.character.characterName
+                    ? this.character.name
+                    : this.$t(this.character.characterName);
                 this.selected = uuid;
                 this.refreshItems();
                 this.rerender();
@@ -348,6 +350,7 @@ export default {
         selectDemo() {
             this.selected = null;
             this.character = Character.make('demo', app.game, 'BR');
+            this.nameText = this.$t(this.character.characterName);
             this.rerender();
         },
         create(id) {
@@ -369,10 +372,13 @@ export default {
             this.refreshOutOfStockItems();
         },
         store() {
-            if (this.loading) {
+            if (this.loading || !this.selected) {
                 return;
             }
 
+            if (this.nameText !== this.character.name) {
+                this.character.name = this.nameText;
+            }
             this.character.store();
             this.storySyncer.store();
         },

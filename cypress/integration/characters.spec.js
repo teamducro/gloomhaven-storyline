@@ -5,7 +5,7 @@ describe('Character', () => {
     it('It loads the character sheet', () => {
         cy.visit('/tracker/#/characters');
 
-        cy.contains('Brute');
+        cy.get('input[name="name"]').should('have.value', 'Brute');
         cy.contains('Perks');
         cy.contains('Remove two cards');
         cy.contains('Items');
@@ -36,7 +36,7 @@ describe('Character', () => {
 
         utilities.openCharacter();
 
-        cy.get('input[name="name"]').clear().type("Test");
+        cy.get('input[name="name"]').clear().type("Test").blur();
         cy.get('li').contains('Test').should('be.visible');
     });
 
