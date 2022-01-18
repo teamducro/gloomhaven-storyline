@@ -33,7 +33,7 @@
                             aria-orientation="vertical" tabindex="-1">
                             <li v-for="achievement in achievementsToAdd"
                                 class="mdc-list-item cursor-pointer" @click="addAchievement(achievement)">
-                                <span class="mdc-list-item__text">{{ achievement.name }}</span>
+                                <span class="mdc-list-item__text">{{ $t(achievement.name) }}</span>
                             </li>
                         </ul>
                     </div>
@@ -53,7 +53,7 @@
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-75">
-                        {{ achievement.displayName }}
+                        {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${this.count})` : '') }}
                     </span>
                         </template>
                     </li>
@@ -74,7 +74,7 @@
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-75">
-                        {{ achievement.name }}
+                        {{ $t(achievement.name) }}
                     </span>
                         </template>
                     </li>

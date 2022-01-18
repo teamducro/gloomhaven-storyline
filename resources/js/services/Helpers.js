@@ -34,5 +34,11 @@ export default {
     },
     makeArrayWithNumbers(length, start = 1) {
         return Array.from({length}, (_, i) => i + start);
+    },
+    sanitize(str) {
+        return str.trim()
+            .toLowerCase()
+            .replaceAll('-', ' ')
+            .replaceAll("'", '');
     }
 }

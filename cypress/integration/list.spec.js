@@ -15,7 +15,7 @@ describe('Scenario list', () => {
     it('It opens a scenario', () => {
         cy.visit('/tracker/#/scenarios');
 
-        cy.get('span').contains('#1 Black Barrow').click();
+        cy.get('td').contains('#1 Black Barrow').click();
         cy.get('label').contains('Incomplete');
         cy.get('label').contains('Complete');
     });

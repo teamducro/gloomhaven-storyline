@@ -6,7 +6,7 @@
                     <radio v-for="scenario in scenarios"
                            :id="'choose-scenario' + scenario.id"
                            :key="scenario.id"
-                           :label="scenario.name"
+                           :label="$t(scenario.name)"
                            group="choose"
                            @changed="selected = scenario"
                     ></radio>

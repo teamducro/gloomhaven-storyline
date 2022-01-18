@@ -46,6 +46,8 @@
 </template>
 
 <script>
+import Helpers from "../../services/Helpers";
+
 export default {
     props: {
         data: {
@@ -113,11 +115,18 @@ export default {
             const keys = Object.keys(this.search)
             let result = {}
             keys.forEach(key => {
-                const searchString = this.search[key]
+                const searchString = this.search[key];
                 if (!searchString) {
                     return
                 }
-                result[key] = (input) => (input ? input.toString().toLowerCase().includes(searchString.toString().toLowerCase()) : false);
+                result[key] = (input) => {
+                    if (!input) {
+                        return false;
+                    }
+                    
+                    input = this.translatable.includes(key) ? app.$t(input) : input;
+                    return Helpers.sanitize(input.toString()).includes(Helpers.sanitize(searchString.toString()));
+                }
             });
             return result;
         },

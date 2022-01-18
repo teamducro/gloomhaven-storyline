@@ -1,4 +1,6 @@
 import slugify from "slugify";
+import UsesTranslations from "./UsesTranslations";
+import Character from "./Character";
 
 class Item {
 
@@ -16,27 +18,23 @@ class Item {
         this.spent = data.spent || false;
         this.consumed = data.consumed || false;
         this.game = game;
-        this.lang = `items.${this.game}_${this.id}`;
+        this.translationKey = `items.${this.game}_${this.id}`;
     }
 
     get name() {
-        return app.$t(`${this.lang}.name`);
+        return this.$tPrefix('name');
     }
 
     get desc() {
-        let desc = app.$t(`${this.lang}.desc`);
-        if (this.minusOneCardsAdded > 0) {
-            desc += app.$t('\nAdd {x} {-1} to your attack modifier deck.').replaceAll('{x}', this.minusOneCardsAdded);
-        }
-        return desc;
+        return this.$tPrefix('desc');
     }
 
     get source() {
-        return this._source ? app.$t(`${this.lang}.source`) : '';
+        return this._source ? this.$tPrefix('source') : '';
     }
 
     get faq() {
-        return this._faq ? app.$t(`${this.lang}.faq`) : '';
+        return this._faq ? this.$tPrefix('faq') : '';
     }
 
     get use() {
@@ -58,5 +56,7 @@ class Item {
         return '/img/items/' + folder + '/' + slugify(this._name.replaceAll("'", ''), {lower: true}) + '.png';
     }
 }
+
+Object.assign(Item.prototype, UsesTranslations);
 
 export default Item;

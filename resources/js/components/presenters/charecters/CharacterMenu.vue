@@ -2,24 +2,24 @@
     <div class="sm:w-30">
         <!-- Mobile menu -->
         <div class="relative sm:hidden pb-2 mb-4 border-b border-white2-25">
-            <select id="mobile-character-menu" name="mobile-character-menu" @change="mobileSelect"
+            <select id="mobile-character-menu" @change="mobileSelect"
                     class="block w-full absolute opacity-0 font-title text-md -ml-1">
                 <option value="party">
                     {{ $t('Party sheet') }}
                 </option>
                 <optgroup :label="$t('Characters')">
-                    <option v-for="characters in sheet.characters"
-                            :selected="selected === characters.uuid"
-                            :value="characters.uuid">
-                        {{ characters.name }}
+                    <option v-for="character in sheet.characters"
+                            :selected="selected === character.uuid"
+                            :value="character.uuid">
+                        {{ character.name === character.characterName ? $t(character.characterName) : character.name }}
                     </option>
                 </optgroup>
                 <optgroup v-if="!isLocalCampaign && Object.keys(sheet.archivedCharacters).length"
                           :label="$t('Retired')">
-                    <option v-for="characters in sheet.archivedCharacters"
-                            :selected="selected === characters.uuid"
-                            :value="characters.uuid">
-                        {{ characters.name }}
+                    <option v-for="character in sheet.archivedCharacters"
+                            :selected="selected === character.uuid"
+                            :value="character.uuid">
+                        {{ character.name === character.characterName ? $t(character.characterName) : character.name }}
                     </option>
                 </optgroup>
                 <option value="items">
@@ -28,7 +28,7 @@
             </select>
             <label v-if="selectedCharacter" for="mobile-character-menu" class="flex items-center">
                 <character-icon class="flex-shrink-0 w-5 mr-2" :character="selectedCharacter.id"/>
-                <span class="font-title">{{ selectedCharacter.name }}</span>
+                <span class="font-title">{{ selectedCharacter.name === selectedCharacter.characterName ? $t(selectedCharacter.characterName) : selectedCharacter.name }}</span>
                 <span class="ml-auto material-icons">keyboard_arrow_down</span>
             </label>
         </div>
@@ -41,7 +41,7 @@
                        class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                        :class="{'text-white bg-black2-25': selected === character.uuid, 'text-white2-75': selected !== character.uuid}">
                         <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
-                        <span class="overflow-hidden">{{ character.name }}</span>
+                        <span class="overflow-hidden">{{ character.name === character.characterName ? $t(character.characterName) : character.name }}</span>
                     </a>
                 </li>
             </ul>
@@ -58,7 +58,7 @@
                                class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                                :class="{'text-white bg-black2-25': selected === character.uuid, 'text-white2-75': selected !== character.uuid}">
                                 <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
-                                <span>{{ character.name }}</span>
+                                <span>{{ character.name === character.characterName ? $t(character.characterName) : character.name }}</span>
                             </a>
                         </li>
                     </ul>

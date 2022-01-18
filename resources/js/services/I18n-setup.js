@@ -5,6 +5,7 @@ const supportedLanguages = ['en', 'de', 'fr', 'it', 'es'];
 
 function setI18nLanguage(lang) {
     i18n.locale = lang;
+    app.$i18n.locale = lang;
     // axios.defaults.headers.common['Accept-Language'] = lang;
     document.querySelector('html').setAttribute('lang', lang);
     return lang;
