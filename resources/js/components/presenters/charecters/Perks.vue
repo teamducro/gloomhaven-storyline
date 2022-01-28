@@ -10,7 +10,7 @@
                           :checked="perks[perkIndex][index]"
                           @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
                 <p class="ml-2 mt-1 mb-1">
-                    <add-links-and-icons :text="perkDescription.desc"/>
+                    <add-links-and-icons :text="$t(perkDescription.desc)"/>
                 </p>
             </div>
         </div>

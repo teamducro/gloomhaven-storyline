@@ -140,8 +140,9 @@ export default {
 
     switchGame(game) {
         cy.get('button').contains('menu').click();
-        cy.get('.mdc-list-item__text').contains('Storyline').next().click();
+        cy.get('.game-switch .mdc-select__selected-text').click();
         cy.get('.' + game).click();
+        cy.reload();
     },
 
     openCharacter(character = 'Cragheart') {

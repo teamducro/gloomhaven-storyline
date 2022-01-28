@@ -21,7 +21,7 @@
                            class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-white hover:bg-black2-75 transition ease-in-out duration-150"
                            :class="{'text-white2-50 grayscale cursor-default': characterRepository.partyHasCharacter(sheet, id)}">
                             <character-icon class="flex-shrink-0 w-5 mr-2" :character="id"/>
-                            <span>{{ characterNames[id] }}</span>
+                            <span>{{ $t(characterNames[id]) }}</span>
                         </a>
                     </li>
                 </ul>

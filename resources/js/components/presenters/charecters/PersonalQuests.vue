@@ -14,7 +14,7 @@
                           @change="(id) => {select(id)}"
             >
                 <template v-for="(quest, id) in quests" v-slot:[id]>
-                    {{ quest.title }}
+                    {{ quest.number }} {{ $t(quest.name) }}
                 </template>
             </autocomplete>
 
@@ -28,7 +28,7 @@
 
         <div v-if="quest.id" class="flex justify-between">
             <div class="flex flex-col">
-                <h3 class="mt-2">{{ quest.title }}</h3>
+                <h3 class="mt-2">{{ quest.number }} {{ $t(quest.name) }}</h3>
 
                 <div v-for="(part, partIndex) in quest.progress">
                     <add-links-and-icons class="mt-2 children-inline" :text="part.name"/>
@@ -65,7 +65,7 @@
             </div>
 
             <div @click="openCard" class="cursor-pointer w-12">
-                <webp :src="quest.card.images[1]" :alt="quest.name"/>
+                <webp :src="quest.card.images[1]" :alt="$t(quest.name)"/>
             </div>
         </div>
 
@@ -75,6 +75,7 @@
 <script>
 import PersonalQuestRepository from "../../../repositories/PersonalQuestRepository";
 import PersonalQuestValidator from "../../../services/PersonalQuestValidator";
+import Helpers from "../../../services/Helpers";
 
 export default {
     props: {
@@ -139,7 +140,7 @@ export default {
             // This allows to find items based on id and it's name.
             return (id) => {
                 return id.toLowerCase().startsWith(query)
-                    || this.quests[id].name.toLowerCase().replace('-', ' ').startsWith(query);
+                    || Helpers.sanitize(this.quests[id]._name).startsWith(query);
             }
         },
     }

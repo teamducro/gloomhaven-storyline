@@ -5,7 +5,7 @@
                 <div id="scenario-title" class="pl-6 border-b border-white2-25"
                      :class="{'pb-2': scenario.regions, 'pb-4': !scenario.regions}">
                     <h2 class="mdc-dialog__title p-0 leading-none">
-                        {{ scenario.isVisible() ? scenario.title : '#' + scenario.id }}
+                        {{ scenario.number }} {{ scenario.isVisible() ? $t(scenario.name) : '' }}
                         <span class="text-sm text-white2-50">{{ scenario.coordinates.name }}</span>
                         <span class="absolute right-0 top-0">
                         <button type="button" data-mdc-dialog-action="close"
@@ -46,7 +46,7 @@
                                  :class="{'sm:block': scenario.is_side, 'xs:block': !scenario.is_side}">
                                 <webp :src="scenario.image()"
                                       :animate="true"
-                                      :alt="scenario.name"/>
+                                      :alt="$t(scenario.name)"/>
                             </div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                                         <button type="button"
                                                 class="mdc-button normal-case -ml-2"
                                                 @click="openAchievement(achievement.id)">
-                                            <span class="mdc-button__label">{{ achievement.name }}</span>
+                                            <span class="mdc-button__label">{{ $t(achievement.name) }}</span>
                                         </button>
                                         <scenario-number class="ml-2"
                                                          v-for="scenario in requiredBy(achievement)"
@@ -224,7 +224,7 @@
                          :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
                         <webp :src="scenario.image()"
                               :animate="true"
-                              :alt="scenario.name"/>
+                              :alt="$t(scenario.name)"/>
                     </div>
                     <div class="space-x-2">
                         <scenario-number :scenario="next" v-for="next in nextScenarios" :key="next.id"/>
@@ -362,10 +362,8 @@ export default {
             }
         },
         notesLeft() {
-            if (this.notes) {
-                this.notes.destroy();
-                this.notes = null;
-            }
+            this.notes?.destroy();
+            this.notes = null;
         },
         noteChanged() {
             this.scenario.store();

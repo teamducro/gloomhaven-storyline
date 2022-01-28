@@ -21,7 +21,7 @@
                     <webp :src="achievement.image"
                           :animate="true" :retina="true"
                           class="cursor-pointer"
-                          :alt="achievement.displayName"/>
+                          :alt="$t(achievement.name)"/>
                 </li>
             </ul>
             <template v-if="scenarios">
@@ -31,7 +31,7 @@
                       :key="scenario.id"
                       :id="'s' + scenario.id"
                       :animate="true"
-                      :alt="scenario.name"
+                      :alt="$t(scenario.name)"
                       class="absolute scenario"
                       :style="{
                           'left': scenario.coordinates.x + '%',
@@ -114,7 +114,7 @@ export default {
                     let s = document.getElementById('s' + scenario.id);
                     if (s && app.hasMouse && scenario.isVisible() && !s.classList.contains('tippy')) {
                         tippy(s, {
-                            content: scenario.title
+                            content: scenario.number + ' ' + this.$t(scenario.name)
                         });
                         s.classList.add('tippy');
                     }

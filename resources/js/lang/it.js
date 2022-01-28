@@ -418,169 +418,1378 @@ export default {
         "Northern Expedition": "Spedizione a Nord"
     },
     "items": {
-        "Boots of Striding": "Boots of Striding",
-        "Winged Shoes": "Winged Shoes",
-        "Hide Armor": "Hide Armor",
-        "Leather Armor": "Leather Armor",
-        "Cloak of Invisibility": "Cloak of Invisibility",
-        "Eagle-Eye Goggles": "Eagle-Eye Goggles",
-        "Iron Helmet": "Iron Helmet",
-        "Heater Shield": "Heater Shield",
-        "Piercing Bow": "Piercing Bow",
-        "War Hammer": "War Hammer",
-        "Poison Dagger": "Poison Dagger",
-        "Minor Healing Potion": "Minor Healing Potion",
-        "Minor Stamina Potion": "Minor Stamina Potion",
-        "Minor Power Potion": "Minor Power Potion",
-        "Boots of Speed": "Boots of Speed",
-        "Cloak of Pockets": "Cloak of Pockets",
-        "Empowering Talisman": "Empowering Talisman",
-        "Battle-Axe": "Battle-Axe",
-        "Weighted Net": "Weighted Net",
-        "Minor Mana Potion": "Minor Mana Potion",
-        "Stun Powder": "Stun Powder",
-        "Heavy Greaves": "Heavy Greaves",
-        "Chainmail": "Chainmail",
-        "Amulet of Life": "Amulet of Life",
-        "Jagged Sword": "Jagged Sword",
-        "Long Spear": "Long Spear",
-        "Major Healing Potion": "Major Healing Potion",
-        "Moon Earring": "Moon Earring",
-        "Comfortable Shoes": "Comfortable Shoes",
-        "Studded Leather": "Studded Leather",
-        "Hawk Helm": "Hawk Helm",
-        "Tower Shield": "Tower Shield",
-        "Volatile Bomb": "Volatile Bomb",
-        "Major Stamina Potion": "Major Stamina Potion",
-        "Falcon Figurine": "Falcon Figurine",
-        "Boots of Dashing": "Boots of Dashing",
-        "Robes of Evocation": "Robes of Evocation",
-        "Heavy Basinet": "Heavy Basinet",
-        "Hooked Chain": "Hooked Chain",
-        "Versatile Dagger": "Versatile Dagger",
-        "Major Power Potion": "Major Power Potion",
-        "Ring of Haste": "Ring of Haste",
-        "Boots of Quickness": "Boots of Quickness",
-        "Splintmail": "Splintmail",
-        "Pendant of Dark Pacts": "Pendant of Dark Pacts",
-        "Spiked Shield": "Spiked Shield",
-        "Reaping Scythe": "Reaping Scythe",
-        "Major Mana Potion": "Major Mana Potion",
-        "Sun Earring": "Sun Earring",
-        "Steel Sabatons": "Steel Sabatons",
-        "Shadow Armor": "Shadow Armor",
-        "Protective Charm": "Protective Charm",
-        "Black Knife": "Black Knife",
-        "Staff of Eminence": "Staff of Eminence",
-        "Super Healing Potion": "Super Healing Potion",
-        "Ring of Brutality": "Ring of Brutality",
-        "Serene Sandals": "Serene Sandals",
-        "Cloak of Phasing": "Cloak of Phasing",
-        "Telescopic Lens": "Telescopic Lens",
-        "Unstable Explosives": "Unstable Explosives",
-        "Wall Shield": "Wall Shield",
-        "Doom Powder": "Doom Powder",
-        "Lucky Eye": "Lucky Eye",
-        "Boots of Sprinting": "Boots of Sprinting",
-        "Platemail": "Platemail",
-        "Mask of Terror": "Mask of Terror",
-        "Balanced Blade": "Balanced Blade",
-        "Halberd": "Halberd",
-        "Star Earring": "Star Earring",
-        "Second Chance Ring": "Second Chance Ring",
-        "Boots of Levitation": "Boots of Levitation",
-        "Shoes of Happiness": "Shoes of Happiness",
-        "Blinking Cape": "Blinking Cape",
-        "Swordedge Armor": "Swordedge Armor",
-        "Circlet of Elements": "Circlet of Elements",
-        "Chain Hood": "Chain Hood",
-        "Frigid Blade": "Frigid Blade",
-        "Storm Blade": "Storm Blade",
-        "Inferno Blade": "Inferno Blade",
-        "Tremor Blade": "Tremor Blade",
-        "Brilliant Blade": "Brilliant Blade",
-        "Night Blade": "Night Blade",
-        "Wand of Frost": "Wand of Frost",
-        "Wand of Storms": "Wand of Storms",
-        "Wand of Infernos": "Wand of Infernos",
-        "Wand of Tremors": "Wand of Tremors",
-        "Wand of Brilliance": "Wand of Brilliance",
-        "Wand of Darkness": "Wand of Darkness",
-        "Minor Cure Potion": "Minor Cure Potion",
-        "Major Cure Potion": "Major Cure Potion",
-        "Steel Ring": "Steel Ring",
-        "Dampening Ring": "Dampening Ring",
-        "Scroll of Power": "Scroll of Power",
-        "Scroll of Healing": "Scroll of Healing",
-        "Scroll of Stamina": "Scroll of Stamina",
-        "Rocket Boots": "Rocket Boots",
-        "Endurance Footwraps": "Endurance Footwraps",
-        "Drakescale Boots": "Drakescale Boots",
-        "Magma Waders": "Magma Waders",
-        "Robes of Summoning": "Robes of Summoning",
-        "Second Skin": "Second Skin",
-        "Sacrificial Robes": "Sacrificial Robes",
-        "Drakescale Armor": "Drakescale Armor",
-        "Steam Armor": "Steam Armor",
-        "Flea-Bitten Shawl": "Flea-Bitten Shawl",
-        "Necklace of Teeth": "Necklace of Teeth",
-        "Horned Helm": "Horned Helm",
-        "Drakescale Helm": "Drakescale Helm",
-        "Thiefs Hood": "Thief’s Hood",
-        "Helm of the Mountain": "Helm of the Mountain",
-        "Wave Crest": "Wave Crest",
-        "Ancient Drill": "Ancient Drill",
-        "Skullbane Axe": "Skullbane Axe",
-        "Staff of Xorn": "Staff of Xorn",
-        "Mountain Hammer": "Mountain Hammer",
-        "Fueled Falchion": "Fueled Falchion",
-        "Bloody Axe": "Bloody Axe",
-        "Staff of Elements": "Staff of Elements",
-        "Skull of Hatred": "Skull of Hatred",
-        "Staff of Summoning": "Staff of Summoning",
-        "Orb of Dawn": "Orb of Dawn",
-        "Orb of Twilight": "Orb of Twilight",
-        "Ring of Skulls": "Ring of Skulls",
-        "Doomed Compass": "Doomed Compass",
-        "Curious Gear": "Curious Gear",
-        "Remote Spider": "Remote Spider",
-        "Giant Remote Spider": "Giant Remote Spider",
-        "Black Censer": "Black Censer",
-        "Black Card": "Black Card",
-        "Helix Ring": "Helix Ring",
-        "Heart of the Betrayer": "Heart of the Betrayer",
-        "Power Core": "Power Core",
-        "Resonant Crystal": "Resonant Crystal",
-        "Imposing Blade": "Imposing Blade",
-        "Focusing Ray": "Focusing Ray",
-        "Volatile Elixir": "Volatile Elixir",
-        "Silent Stiletto": "Silent Stiletto",
-        "Stone Charm": "Stone Charm",
-        "Psychic Knife": "Psychic Knife",
-        "Sun Shield": "Sun Shield",
-        "Utility Belt": "Utility Belt",
-        "Phasing Idol": "Phasing Idol",
-        "Smoke Elixir": "Smoke Elixir",
-        "Pendant of the Plague": "Pendant of the Plague",
-        "Mask of Death": "Mask of Death",
-        "Masters Lute": "Master’s Lute",
-        "Cloak of the Hunter": "Cloak of the Hunter",
-        "Doctors Coat": "Doctor’s Coat",
-        "Elemental Boots": "Elemental Boots",
-        "Staff of Command": "Staff of Command",
-        "Ring of Duality": "Ring of Duality",
-        "Minor Antidote": "Minor Antidote",
-        "Major Antidote": "Major Antidote",
-        "Curseward Armor": "Curseward Armor",
-        "Elemental Claymore": "Elemental Claymore",
-        "Ancient Bow": "Ancient Bow",
-        "Rejuvenation Greaves": "Rejuvenation Greaves",
-        "Scroll of Haste": "Scroll of Haste",
-        "Cutpurse Dagger": "Cutpurse Dagger",
-        "Throwing Axe": "Throwing Axe",
-        "Rift Device": "Rift Device",
-        "Crystal Tiara": "Crystal Tiara",
-        "Basin of Prophecy": "Basin of Prophecy"
+        "gh_1": {
+            "name": "Boots of Striding",
+            "source": "Prosperity 1",
+            "desc": "During your movement, add +2 {MOVE} to the movement.",
+            "faq": "Boots of Striding only add to the numerical value of an existing single movement ability. They do not give you a free movement action."
+        },
+        "gh_2": {
+            "name": "Winged Shoes",
+            "source": "Prosperity 1",
+            "desc": "During your movement, add {JUMP} to the movement.",
+            "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
+        },
+        "gh_3": {
+            "name": "Hide Armor",
+            "source": "Prosperity 1",
+            "desc": "On the next two sources of damage to you from attacks, gain {SHIELD} 1. Add 2 {-1} to your attack modifier deck.",
+            "faq": "Hide Armor only grants the shield for the attack, not until the end of the round."
+        },
+        "gh_4": {
+            "name": "Leather Armor",
+            "source": "Prosperity 1",
+            "desc": "When attacked, the attacker gains Disadvantage on the attack.",
+            "faq": "The Leather Armor must be used before the enemy draws an attack modifier card."
+        },
+        "gh_5": {
+            "name": "Cloak of Invisibility",
+            "source": "Prosperity 1",
+            "desc": "During your turn, gain {INVISIBLE}."
+        },
+        "gh_6": {
+            "name": "Eagle-Eye Goggles",
+            "source": "Prosperity 1",
+            "desc": "During your attack, gain Advantage on the entire Attack action."
+        },
+        "gh_7": {
+            "name": "Iron Helmet",
+            "source": "Prosperity 1",
+            "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+        },
+        "gh_8": {
+            "name": "Heater Shield",
+            "source": "Prosperity 1",
+            "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+        },
+        "gh_9": {
+            "name": "Piercing Bow",
+            "source": "Prosperity 1",
+            "desc": "During your ranged attack, ignore all Shield values for the entire Attack action."
+        },
+        "gh_10": {
+            "name": "War Hammer",
+            "source": "Prosperity 1",
+            "desc": "During your melee attack, add {STUN} to the entire Attack action."
+        },
+        "gh_11": {
+            "name": "Poison Dagger",
+            "source": "Prosperity 1",
+            "desc": "During your melee attack, add {POISON} to a single attack."
+        },
+        "gh_12": {
+            "name": "Minor Healing Potion",
+            "source": "Prosperity 1",
+            "desc": "During your turn, perform a “{HEAL} 3, self” action."
+        },
+        "gh_13": {
+            "name": "Minor Stamina Potion",
+            "source": "Prosperity 1",
+            "desc": "During your turn, {RECOVER} up to two of your discarded cards.",
+            "faq": "[Errata] The item should allow you to recover only one discarded card. This is change in an upcoming expansion but may be used for the base game."
+        },
+        "gh_14": {
+            "name": "Minor Power Potion",
+            "source": "Prosperity 1",
+            "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+        },
+        "gh_15": {
+            "name": "Boots of Speed",
+            "source": "Prosperity 2",
+            "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 10."
+        },
+        "gh_16": {
+            "name": "Cloak of Pockets",
+            "source": "Prosperity 2",
+            "desc": "You can carry two additional small items."
+        },
+        "gh_17": {
+            "name": "Empowering Talisman",
+            "source": "Prosperity 2",
+            "desc": "During your turn, {REFRESH} one of your consumed small items."
+        },
+        "gh_18": {
+            "name": "Battle-Axe",
+            "source": "Prosperity 2",
+            "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+        },
+        "gh_19": {
+            "name": "Weighted Net",
+            "source": "Prosperity 2",
+            "desc": "During your ranged attack, add {IMMOBILIZE} to a single attack."
+        },
+        "gh_20": {
+            "name": "Minor Mana Potion",
+            "source": "Prosperity 2",
+            "desc": "During your turn, create any element. {ANY}"
+        },
+        "gh_21": {
+            "name": "Stun Powder",
+            "source": "Prosperity 2",
+            "desc": "During your attack, add {STUN} to a single attack."
+        },
+        "gh_22": {
+            "name": "Heavy Greaves",
+            "source": "Prosperity 3",
+            "desc": "You are immune to all forced movement caused by enemies or scenario effects. Add 1 {-1} to your attack modifier deck."
+        },
+        "gh_23": {
+            "name": "Chainmail",
+            "source": "Prosperity 3",
+            "desc": "On the next three sources of damage to you from attacks, gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
+            "faq": "Chainmail only grants the shield for the attack, not until the end of the round."
+        },
+        "gh_24": {
+            "name": "Amulet of Life",
+            "source": "Prosperity 3",
+            "desc": "During your turn, {HEAL} 1 damage."
+        },
+        "gh_25": {
+            "name": "Jagged Sword",
+            "source": "Prosperity 3",
+            "desc": "During your melee attack, add {WOUND} to a single attack."
+        },
+        "gh_26": {
+            "name": "Long Spear",
+            "source": "Prosperity 3",
+            "desc": "Turn a single-target melee attack into the following: {AOE.LINE_0_1_1}"
+        },
+        "gh_27": {
+            "name": "Major Healing Potion",
+            "source": "Prosperity 3",
+            "desc": "During your turn, perform a “{HEAL} 5, self” action."
+        },
+        "gh_28": {
+            "name": "Moon Earring",
+            "source": "Prosperity 3",
+            "desc": "During your turn, {REFRESH} all of your spent items."
+        },
+        "gh_29": {
+            "name": "Comfortable Shoes",
+            "source": "Prosperity 4",
+            "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+        },
+        "gh_30": {
+            "name": "Studded Leather",
+            "source": "Prosperity 4",
+            "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+        },
+        "gh_31": {
+            "name": "Hawk Helm",
+            "source": "Prosperity 4",
+            "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
+        },
+        "gh_32": {
+            "name": "Tower Shield",
+            "source": "Prosperity 4",
+            "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
+        },
+        "gh_33": {
+            "name": "Volatile Bomb",
+            "source": "Prosperity 4",
+            "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+        },
+        "gh_34": {
+            "name": "Major Stamina Potion",
+            "source": "Prosperity 4",
+            "desc": "During your turn, {RECOVER} up to three of your discarded cards.",
+            "faq": "[Errata] The item should allow you to recover only two discarded cards. This is change in an upcoming expansion but may be used in the base game."
+        },
+        "gh_35": {
+            "name": "Falcon Figurine",
+            "source": "Prosperity 4\nScenario #98 (Treasure #79)",
+            "desc": "Summon Jade Falcon ({FLYING})",
+            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        },
+        "gh_36": {
+            "name": "Boots of Dashing",
+            "source": "Prosperity 5",
+            "desc": "During your movement, add +3 {MOVE} to the movement."
+        },
+        "gh_37": {
+            "name": "Robes of Evocation",
+            "source": "Prosperity 5",
+            "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        },
+        "gh_38": {
+            "name": "Heavy Basinet",
+            "source": "Prosperity 5",
+            "desc": "You are immune to {STUN} and {MUDDLE}. Add 2 {-1} to your attack modifier deck."
+        },
+        "gh_39": {
+            "name": "Hooked Chain",
+            "source": "Prosperity 5",
+            "desc": "During your ranged attack, add {PULL} 2 to the entire Attack action."
+        },
+        "gh_40": {
+            "name": "Versatile Dagger",
+            "source": "Prosperity 5",
+            "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 3 action instead of an {ATTACK} 2 action."
+        },
+        "gh_41": {
+            "name": "Major Power Potion",
+            "source": "Prosperity 5\nScenario #105 (Treasure #83)",
+            "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
+        },
+        "gh_42": {
+            "name": "Ring of Haste",
+            "source": "Prosperity 5",
+            "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of the card."
+        },
+        "gh_43": {
+            "name": "Boots of Quickness",
+            "source": "Prosperity 6",
+            "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 20."
+        },
+        "gh_44": {
+            "name": "Splintmail",
+            "source": "Prosperity 6",
+            "desc": "On the next four sources of damage to you from attacks, gain {SHIELD} 1. Add 4 {-1} to your attack modifier deck."
+        },
+        "gh_45": {
+            "name": "Pendant of Dark Pacts",
+            "source": "Prosperity 6",
+            "desc": "During your turn, {REFRESH} two of your consumed small items. Gain {CURSE}.",
+            "faq": "The perk that ignores item effects does not prevent you from being cursed."
+        },
+        "gh_46": {
+            "name": "Spiked Shield",
+            "source": "Prosperity 6",
+            "desc": "When damaged by an attack, gain {SHIELD} 1 and Retaliate 2 for the attack."
+        },
+        "gh_47": {
+            "name": "Reaping Scythe",
+            "source": "Prosperity 6",
+            "desc": "During your single-target melee attack action, turn the attack into the following:  {AOE.CLEAVE_0_1}"
+        },
+        "gh_48": {
+            "name": "Major Mana Potion",
+            "source": "Prosperity 6\nReward from Scenario #104",
+            "desc": "During your turn, create any two elements. {ANY} {ANY}"
+        },
+        "gh_49": {
+            "name": "Sun Earring",
+            "source": "Prosperity 6",
+            "desc": "During your turn, {REFRESH} all of your spent items and {HEAL} 3 damage."
+        },
+        "gh_50": {
+            "name": "Steel Sabatons",
+            "source": "Prosperity 7",
+            "desc": "If you move 1 or fewer hexes on your turn, gain {SHIELD} 1 for the round. Add 2 {-1} to your attack modifier deck."
+        },
+        "gh_51": {
+            "name": "Shadow Armor",
+            "source": "Prosperity 7",
+            "desc": "When you are damaged by an attack, suffer no damage instead."
+        },
+        "gh_52": {
+            "name": "Protective Charm",
+            "source": "Prosperity 7\nReward from Scenario #109",
+            "desc": "You are immune to {POISON} and {WOUND}."
+        },
+        "gh_53": {
+            "name": "Black Knife",
+            "source": "Prosperity 7",
+            "desc": "During your melee attack, add {CURSE} to a single attack."
+        },
+        "gh_54": {
+            "name": "Staff of Eminence",
+            "source": "Prosperity 7",
+            "desc": "During your ranged attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        },
+        "gh_55": {
+            "name": "Super Healing Potion",
+            "source": "Prosperity 7",
+            "desc": "During your turn, perform a “{HEAL} 7, self” action."
+        },
+        "gh_56": {
+            "name": "Ring of Brutality",
+            "source": "Prosperity 7",
+            "desc": "At the end of your turn, play one card from your hand and immediately perform the top action of the card."
+        },
+        "gh_57": {
+            "name": "Serene Sandals",
+            "source": "Prosperity 8",
+            "desc": "Whenever you use the default bottom of an ability card perform a {MOVE} 4 action instead of a {MOVE} 2 action."
+        },
+        "gh_58": {
+            "name": "Cloak of Phasing",
+            "source": "Prosperity 8",
+            "desc": "Gain {FLYING}. While occupying an obstacle hex, you are considered Invisible and cannot attack"
+        },
+        "gh_59": {
+            "name": "Telescopic Lens",
+            "source": "Prosperity 8\nOption from Scenario #100",
+            "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
+        },
+        "gh_60": {
+            "name": "Unstable Explosives",
+            "source": "Prosperity 8",
+            "desc": "Turn a single target ranged attack into the following: {AOE.CUBE_2_2}. All allies in the attack area suffer 3 damage."
+        },
+        "gh_61": {
+            "name": "Wall Shield",
+            "source": "Prosperity 8",
+            "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
+        },
+        "gh_62": {
+            "name": "Doom Powder",
+            "source": "Prosperity 8",
+            "desc": "During your attack, add {STUN}, {POISON}, and {CURSE} to a single attack."
+        },
+        "gh_63": {
+            "name": "Lucky Eye",
+            "source": "Prosperity 8",
+            "desc": "During your turn, {STRENGTHEN} yourself and all adjacent allies."
+        },
+        "gh_64": {
+            "name": "Boots of Sprinting",
+            "source": "Prosperity 9",
+            "desc": "During your movement, add +4 {MOVE} to the movement."
+        },
+        "gh_65": {
+            "name": "Platemail",
+            "source": "Prosperity 9",
+            "desc": "On the next five sources of damage to you from attacks, gain {SHIELD} 1. Add 5 {-1} to your attack modifier deck."
+        },
+        "gh_66": {
+            "name": "Mask of Terror",
+            "source": "Prosperity 9\nScenario #110 (Treasure #84)",
+            "desc": "During your melee attack, add {PUSH} 1."
+        },
+        "gh_67": {
+            "name": "Balanced Blade",
+            "source": "Prosperity 9",
+            "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 4 instead of an {ATTACK} 2 action."
+        },
+        "gh_68": {
+            "name": "Halberd",
+            "source": "Prosperity 9\nScenario #111 (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
+            "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
+        },
+        "gh_69": {
+            "name": "Star Earring",
+            "source": "Prosperity 9",
+            "desc": "During your turn, {REFRESH} all of your spent items, {HEAL} 3 damage, and {RECOVER} up to two of your discarded cards."
+        },
+        "gh_70": {
+            "name": "Second Chance Ring",
+            "source": "Prosperity 9\nFC Challenge Scenario, Rift Card 12 (Treasure #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
+            "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
+        },
+        "gh_71": {
+            "name": "Boots of Levitation",
+            "source": "Random Item",
+            "desc": "Gain {FLYING}"
+        },
+        "gh_72": {
+            "name": "Shoes of Happiness",
+            "source": "Random Item",
+            "desc": "If you move 6 or more hexes on your turn, gain {exp1}."
+        },
+        "gh_73": {
+            "name": "Blinking Cape",
+            "source": "Random Item",
+            "desc": "During your turn, perform a “{MOVE} 4, {JUMP}” action"
+        },
+        "gh_74": {
+            "name": "Swordedge Armor",
+            "source": "Random Item",
+            "desc": "On the next three sources of damage from attacks targeting you, gain {SHIELD} 1, {Retaliate} 1. Add 4 {-1} to your attack modifier deck."
+        },
+        "gh_75": {
+            "name": "Circlet of Elements",
+            "source": "Random Item",
+            "desc": "During your turn, {ANY_X} to create any element. {ANY}"
+        },
+        "gh_76": {
+            "name": "Chain Hood",
+            "source": "Random Item",
+            "desc": "While you are adjacent to three or more monsters, gain {SHIELD} 1. Add 1 {-1} to your attack modifier deck."
+        },
+        "gh_77": {
+            "name": "Frigid Blade",
+            "source": "Random Item",
+            "desc": "During your melee attack, {ICE_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh_78": {
+            "name": "Storm Blade",
+            "source": "Random Item",
+            "desc": "During your melee attack, {WIND_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh_79": {
+            "name": "Inferno Blade",
+            "source": "Random Item",
+            "desc": "During your melee attack, {FIRE_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh_80": {
+            "name": "Tremor Blade",
+            "source": "Random Item",
+            "desc": "During your melee attack, {EARTH_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh_81": {
+            "name": "Brilliant Blade",
+            "source": "Random Item",
+            "desc": "During your melee attack, {LIGHT_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh_82": {
+            "name": "Night Blade",
+            "source": "Random Item",
+            "desc": "During your melee attack, {DARK_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh_83": {
+            "name": "Wand of Frost",
+            "source": "Random Item",
+            "desc": "During your turn, create Ice. {ICE}"
+        },
+        "gh_84": {
+            "name": "Wand of Storms",
+            "source": "Random Item",
+            "desc": "During your turn, create Wind. {WIND}"
+        },
+        "gh_85": {
+            "name": "Wand of Infernos",
+            "source": "Random Item",
+            "desc": "During your turn, create Fire. {FIRE}"
+        },
+        "gh_86": {
+            "name": "Wand of Tremors",
+            "source": "Random Item",
+            "desc": "During your turn, create Earth. {EARTH}"
+        },
+        "gh_87": {
+            "name": "Wand of Brilliance",
+            "source": "Random Item",
+            "desc": "During your turn, create Light. {LIGHT}"
+        },
+        "gh_88": {
+            "name": "Wand of Darkness",
+            "source": "Random Item",
+            "desc": "During your turn, create Dark. {DARK}"
+        },
+        "gh_89": {
+            "name": "Minor Cure Potion",
+            "source": "Random Item",
+            "desc": "During your turn, remove one negative condition on yourself. This can be used while you have {STUN}."
+        },
+        "gh_90": {
+            "name": "Major Cure Potion",
+            "source": "Random Item\nScenario #102 (Treasure #77)",
+            "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have {STUN}."
+        },
+        "gh_91": {
+            "name": "Steel Ring",
+            "source": "Random Item",
+            "desc": "When damaged by an attack targeting you, gain {SHIELD} 4 for the attack."
+        },
+        "gh_92": {
+            "name": "Dampening Ring",
+            "source": "Random Item",
+            "desc": "Before an enemy would consume an element, consume that element instead for no effect"
+        },
+        "gh_93": {
+            "name": "Scroll of Power",
+            "source": "Random Item",
+            "desc": "During an ally's attack, add +1 {ATTACK} to their entire attack action"
+        },
+        "gh_94": {
+            "name": "Scroll of Healing",
+            "source": "Random Item",
+            "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action"
+        },
+        "gh_95": {
+            "name": "Scroll of Stamina",
+            "source": "Random Item",
+            "desc": "During your turn, an ally within {RANGE} 5 may {RECOVER} up to two of their discarded cards"
+        },
+        "gh_96": {
+            "name": "Rocket Boots",
+            "source": "Scenario #66 (Treasure #36)",
+            "desc": "During your movement, add +3 {MOVE} and {JUMP} to a single movement"
+        },
+        "gh_97": {
+            "name": "Endurance Footwraps",
+            "source": "Scenario #38 (Treasure #29)",
+            "desc": "If you move 4 or more hexes on your turn, perform a “{HEAL} 1, Self” action."
+        },
+        "gh_98": {
+            "name": "Drakescale Boots",
+            "source": "Scenario #43 (Treasure #35)",
+            "desc": "You are unaffected by difficult and hazardous terrain."
+        },
+        "gh_99": {
+            "name": "Magma Waders",
+            "source": "Scenario #63 (Treasure #12)",
+            "desc": "Ignore the damaging effects of hazardous terrain and perform a “{HEAL} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
+        },
+        "gh_100": {
+            "name": "Robes of Summoning",
+            "source": "Scenario #31 (Treasure #69)",
+            "desc": "During your turn, perform a “{HEAL} 2, target any summoned ally” action."
+        },
+        "gh_101": {
+            "name": "Second Skin",
+            "source": "Scenario #06 (Treasure #50)",
+            "desc": "Remove two {MODIFIER_MINUS_ONE} from your attack modifier deck."
+        },
+        "gh_102": {
+            "name": "Sacrificial Robes",
+            "source": "City Event 40",
+            "desc": "During your ranged attack, suffer 3 damage to add +1 {ATTACK} to the entire Attack action."
+        },
+        "gh_103": {
+            "name": "Drakescale Armor",
+            "source": "Scenario #34 (Treasure #23)",
+            "desc": "You are immune to {POISON} and {WOUND}."
+        },
+        "gh_104": {
+            "name": "Steam Armor",
+            "source": "Scenario #40 (Treasure #47)",
+            "desc": "On the next five sources of damage from attacks targeting you, gain {SHIELD} 1."
+        },
+        "gh_105": {
+            "name": "Flea-Bitten Shawl",
+            "source": "City Event 30",
+            "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
+            "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
+        },
+        "gh_106": {
+            "name": "Necklace of Teeth",
+            "source": "Road Event 05",
+            "desc": "Any time you kill an enemy during your turn, perform a “{HEAL} 1, Self” action."
+        },
+        "gh_107": {
+            "name": "Horned Helm",
+            "source": "Scenario #03 (Treasure #65)",
+            "desc": "After moving 4 or more hexes on your turn, add +1 {ATTACK} to your next melee attack this turn.",
+            "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
+        },
+        "gh_108": {
+            "name": "Drakescale Helm",
+            "source": "Scenario #25 (Treasure #58)",
+            "desc": "Whenever you gain {MUDDLE}, gain {STRENGTHEN} instead."
+        },
+        "gh_109": {
+            "name": "Thief's Hood",
+            "source": "City Event 62",
+            "desc": "During your “Loot 1” ability, perform a “Loot 2” ability instead."
+        },
+        "gh_110": {
+            "name": "Helm of the Mountain",
+            "source": "Scenario #82 (Treasure #62)",
+            "desc": "When attacked, if {EARTH} is Strong, Immobilize the attacker."
+        },
+        "gh_111": {
+            "name": "Wave Crest",
+            "source": "Scenario #64 (Treasure #09)",
+            "desc": "When attacked, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
+        },
+        "gh_112": {
+            "name": "Ancient Drill",
+            "source": "Reward From Scenario #65\nOption from Scenario #100",
+            "desc": "During your melee attack, add +2 {ATTACK} and {PIERCE} 2 to the entire Attack action"
+        },
+        "gh_113": {
+            "name": "Skullbane Axe",
+            "source": "Reward From Scenario #11\nReward From Scenario #12",
+            "desc": "During your melee attack targeting a Living Corpse, Living Spirit, or Living Bones, add +5 Attack to a single attack."
+        },
+        "gh_114": {
+            "name": "Staff of Xorn",
+            "source": "Reward from Scenario #53",
+            "desc": "During your ranged attack, add {POISON} and {MUDDLE} to the entire Attack action"
+        },
+        "gh_115": {
+            "name": "Mountain Hammer",
+            "source": "Scenario #82 (Treasure #62)",
+            "desc": "Summon Warrior Spirit",
+            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        },
+        "gh_116": {
+            "name": "Fueled Falchion",
+            "source": "Scenario #23 (Treasure #72)",
+            "desc": "During your single-target melee attack, the target and all enemies adjacent to the target suffer 1 damage"
+        },
+        "gh_117": {
+            "name": "Bloody Axe",
+            "source": "City Event 53\nRoad Event 53",
+            "desc": "During your melee attack, suffer 2 damage to add +1 {ATTACK} to the entire Attack action."
+        },
+        "gh_118": {
+            "name": "Staff of Elements",
+            "source": "City Event 57",
+            "desc": "During your turn, create any element. {ANY}"
+        },
+        "gh_119": {
+            "name": "Skull of Hatred",
+            "source": "Reward From Scenario #95",
+            "desc": "During your turn, {CURSE} all adjacent enemies."
+        },
+        "gh_120": {
+            "name": "Staff of Summoning",
+            "source": "Reward From Scenario #88",
+            "desc": "During your turn, a summoned ally within {RANGE} 3 performs a “{MOVE} 3” action with you controlling the action."
+        },
+        "gh_121": {
+            "name": "Orb of Dawn",
+            "source": "Reward From Scenario #85",
+            "desc": "During your turn, {DARK_X} to create Light. {LIGHT}"
+        },
+        "gh_122": {
+            "name": "Orb of Twilight",
+            "source": "Scenario #89 (Treasure #27)",
+            "desc": "During your turn, {LIGHT_X} to create Dark. {DARK}"
+        },
+        "gh_123": {
+            "name": "Ring of Skulls",
+            "source": "Scenario #04 (Treasure #38)",
+            "desc": "Summon Skeleton",
+            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        },
+        "gh_124": {
+            "name": "Doomed Compass",
+            "source": "Scenario #93 (Treasure #54)",
+            "desc": "During your turn, force an enemy within {RANGE} 5 to perform a “{MOVE} 2” action with you controlling the action."
+        },
+        "gh_125": {
+            "name": "Curious Gear",
+            "source": "City Event 03\nOption from Scenario #100",
+            "desc": "During your turn, disarm all traps within {RANGE} 2."
+        },
+        "gh_126": {
+            "name": "Remote Spider",
+            "source": "City Event 43\nOption from Scenario #100",
+            "desc": "During your turn, {POISON} all adjacent enemies."
+        },
+        "gh_127": {
+            "name": "Giant Remote Spider",
+            "source": "City Event 61",
+            "desc": "During your turn, perform a “Loot 1” action."
+        },
+        "gh_128": {
+            "name": "Black Censer",
+            "source": "Reward From Scenario #90",
+            "desc": "During your turn, Muddle all enemies with {RANGE} 2."
+        },
+        "gh_129": {
+            "name": "Black Card",
+            "source": "Road Event 51",
+            "desc": "During your turn, place a character token on an adjacent normal or elite enemy. You add +1 {ATTACK} to all your attacks targeting this enemy."
+        },
+        "gh_130": {
+            "name": "Helix Ring",
+            "source": "Scenario #81 (Treasure #68)",
+            "desc": "During your turn, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Self” action"
+        },
+        "gh_131": {
+            "name": "Heart of the Betrayer",
+            "source": "Scenario #79 (Treasure #52)",
+            "desc": "When attacked by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
+            "faq": "This item cannot be used if there is no other enemy in range to be attacked."
+        },
+        "gh_132": {
+            "name": "Power Core",
+            "source": "Scenario #67",
+            "desc": "Summon Steel Construct.",
+            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        },
+        "gh_133": {
+            "name": "Resonant Crystal",
+            "source": "Scenario #84",
+            "desc": "During your turn, destroy an adjacent obstacle."
+        },
+        "gh_134": {
+            "name": "Imposing Blade",
+            "source": "Reward from Solo Scenario - {BR}",
+            "desc": "Any time you kill an enemy during your turn, gain {SHIELD} 1 for the rest of the round."
+        },
+        "gh_135": {
+            "name": "Focusing Ray",
+            "source": "Reward from Solo Scenario - {TI}",
+            "desc": "During your Heal action, double the value of the Heal."
+        },
+        "gh_136": {
+            "name": "Volatile Elixir",
+            "source": "Reward from Solo Scenario - {SW}",
+            "desc": "During your ranged attack, add +2 {ATTACK} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made."
+        },
+        "gh_137": {
+            "name": "Silent Stiletto",
+            "source": "Reward from Solo Scenario - {SC}",
+            "desc": "Any time you perform a melee attack, add {PIERCE} 1 to the Attack."
+        },
+        "gh_138": {
+            "name": "Stone Charm",
+            "source": "Reward from Solo Scenario - {CH}",
+            "desc": "During your action where an obstacle is created, create one additional obstacle and apply all effects of the action to it."
+        },
+        "gh_139": {
+            "name": "Psychic Knife",
+            "source": "Reward from Solo Scenario - {MT}",
+            "desc": "Any time you perform an Augment action, add +1 {ATTACK} to the entire action."
+        },
+        "gh_140": {
+            "name": "Sun Shield",
+            "source": "Reward from Solo Scenario - {SK}",
+            "desc": "When damaged by an attack, you may {LIGHT_X} to gain {SHIELD} 3 for the attack."
+        },
+        "gh_141": {
+            "name": "Utility Belt",
+            "source": "Reward from Solo Scenario - {QM}",
+            "desc": "During your turn, you or any one ally may {REFRESH} one of your spent or consumed items.",
+            "faq": "This item cannot be refreshed."
+        },
+        "gh_142": {
+            "name": "Phasing Idol",
+            "source": "Reward from Solo Scenario - {SU}",
+            "desc": "When a summon you own is damaged by an attack, it suffers no damage instead."
+        },
+        "gh_143": {
+            "name": "Smoke Elixir",
+            "source": "Reward from Solo Scenario - {NS}",
+            "desc": "During your turn, gain {INVISIBLE} and create dark. {DARK}"
+        },
+        "gh_144": {
+            "name": "Pendant of the Plague",
+            "source": "Reward from Solo Scenario - {PH}",
+            "desc": "During your turn, {POISON} and {CURSE} one enemy within {RANGE} 3."
+        },
+        "gh_145": {
+            "name": "Mask of Death",
+            "source": "Reward from Solo Scenario - {BE}",
+            "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {ATTACK} to the Attack."
+        },
+        "gh_146": {
+            "name": "Master's Lute",
+            "source": "Reward from Solo Scenario - {SS}",
+            "desc": "After performing any song action, immediately perform an Attack 2 or {MOVE} 2 action."
+        },
+        "gh_147": {
+            "name": "Cloak of the Hunter",
+            "source": "Reward from Solo Scenario - {DS}",
+            "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}."
+        },
+        "gh_148": {
+            "name": "Doctor's Coat",
+            "source": "Reward from Solo Scenario - {SB}",
+            "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal."
+        },
+        "gh_149": {
+            "name": "Elemental Boots",
+            "source": "Reward from Solo Scenario - {EL}",
+            "desc": "If you move 5 or more hexes on your turn, create any element. {ANY}"
+        },
+        "gh_150": {
+            "name": "Staff of Command",
+            "source": "Reward from Solo Scenario - {BT}",
+            "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
+        },
+        "gh_152": {
+            "name": "Ring of Duality",
+            "source": "Reward from Scenario #97\nSection 125 “A locked chest” in book",
+            "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
+        },
+        "gh_153": {
+            "name": "Minor Antidote",
+            "source": "Reward From Scenario #99",
+            "desc": "The next three times you would gain {POISON} prevent the condition."
+        },
+        "gh_154": {
+            "name": "Major Antidote",
+            "source": "Reward from Scenario #105",
+            "desc": "The next five times you would gain {POISON} prevent the condition."
+        },
+        "gh_155": {
+            "name": "Curseward Armor",
+            "source": "Reward from Scenario #108",
+            "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
+        },
+        "gh_156": {
+            "name": "Elemental Claymore",
+            "source": "Unknown",
+            "desc": "During your melee attack, {ANY_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh_157": {
+            "name": "Ancient Bow",
+            "source": "Scenario #107 (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
+            "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack.",
+        },
+        "gh_158": {
+            "name": "Rejuvenation Greaves",
+            "source": "Scenario #111 (Treasure #82)",
+            "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}.",
+        },
+        "gh_159": {
+            "name": "Scroll of Haste",
+            "source": "Scenario #103 (Treasure #81)",
+            "desc": "During any one ally's movement, add +2 {MOVE} to the movement.",
+        },
+        "gh_160": {
+            "name": "Cutpurse Dagger",
+            "source": "Unknown",
+            "desc": "When you kill a monster during your turn, gain one money token.",
+        },
+        "gh_161": {
+            "name": "Throwing Axe",
+            "source": "Reward from Scenario #108",
+            "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack.",
+        },
+        "gh_162": {
+            "name": "Rift Device",
+            "source": "Reward from Scenario #112\nSection 62 “Mechanical Splendor” in book.",
+            "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you.",
+        },
+        "gh_163": {
+            "name": "Crystal Tiara",
+            "source": "Reward from Scenario #110",
+            "desc": "When you peform a long or short rest, gain {STRENGTHEN}."
+        },
+        "gh_164": {
+            "name": "Basin of Prophecy",
+            "source": "Reward from Solo Scenario - {DR}",
+            "desc": "When you reveal cards from any deck, reveal one additional card."
+        },
+        "jotl_1": {
+            "name": "Eagle-Eye Goggles",
+            "source": "Reward from Scenario #2",
+            "desc": "During your attack, gain Advantage on the entire Attack action."
+        },
+        "jotl_2": {
+            "name": "Iron Helmet",
+            "source": "Reward from Scenario #2",
+            "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+        },
+        "jotl_3": {
+            "name": "Chain Armor",
+            "source": "Reward from Scenario #2",
+            "desc": "During your turn gain {SHIELD} 1 for the rest of the round",
+        },
+        "jotl_4": {
+            "name": "Studded Leather",
+            "source": "Reward from Scenario #2",
+            "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+        },
+        "jotl_5": {
+            "name": "Weathered Boots",
+            "source": "Reward from Scenario #2",
+            "desc": "During your movement add +1 {MOVE} to a single movement."
+        },
+        "jotl_6": {
+            "name": "Winged Shoes",
+            "source": "Reward from Scenario #2",
+            "desc": "During your movement, add {JUMP} to the entire Move Action.",
+            "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
+        },
+        "jotl_7": {
+            "name": "Heater Shield",
+            "source": "Reward from Scenario #2",
+            "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+        },
+        "jotl_8": {
+            "name": "Throwing Hammer",
+            "source": "Reward from Scenario #2",
+            "desc": "During your ranged attack, add {STUN} to a single attack",
+        },
+        "jotl_9": {
+            "name": "Poison Dagger",
+            "source": "Reward from Scenario #2",
+            "desc": "During your melee attack, add {POISON} to a single attack."
+        },
+        "jotl_10": {
+            "name": "Iron Spear",
+            "source": "Reward from Scenario #2",
+            "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes",
+        },
+        "jotl_11": {
+            "name": "Healing Potion",
+            "source": "Reward from Scenario #2",
+            "desc": "During your turn, perform a “{HEAL} 3, Self” action."
+        },
+        "jotl_12": {
+            "name": "Stamina Potion",
+            "source": "Reward from Scenario #2",
+            "desc": "During your turn, return one of your discarded cards to your hand."
+        },
+        "jotl_13": {
+            "name": "Power Potion",
+            "source": "Reward from Scenario #2",
+            "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+        },
+        "jotl_14": {
+            "name": "Mana Potion",
+            "source": "Reward from Scenario #4\n Scenario #4 (Treasure #16)",
+            "desc": "During your turn, infuse any one element. {ANY}"
+        },
+        "jotl_15": {
+            "name": "Amulet of Life",
+            "source": "Reward from Scenario #9",
+            "desc": "During your turn, “{HEAL} 1, Self” action."
+        },
+        "jotl_16": {
+            "name": "Robes of Evocation",
+            "source": "Reward from Scenario #9",
+            "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        },
+        "jotl_17": {
+            "name": "Comfortable Shoes",
+            "source": "Reward from Scenario #9",
+            "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+        },
+        "jotl_18": {
+            "name": "Battle-Axe",
+            "source": "Reward from Scenario #9",
+            "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+        },
+        "jotl_19": {
+            "name": "Black Candle",
+            "source": "Reward from Scenario #9",
+            "desc": "During your ranged attack, add {CURSE} to a single attack."
+        },
+        "jotl_20": {
+            "name": "Stun Powder",
+            "source": "Reward from Scenario #9",
+            "desc": "During your attack, add {STUN} to a single attack."
+        },
+        "jotl_21": {
+            "name": "Hawk Helm",
+            "source": "Reward from Scenario #15",
+            "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
+        },
+        "jotl_22": {
+            "name": "Bladed Armor",
+            "source": "Reward from Scenario #15",
+            "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack and the attacker suffers 2 damage."
+        },
+        "jotl_23": {
+            "name": "Boots of Striding",
+            "source": "Reward from Scenario #15",
+            "desc": "During your movement, add +2 {MOVE} to a single movement."
+        },
+        "jotl_24": {
+            "name": "Volatile Bomb",
+            "source": "Reward from Scenario #15",
+            "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+        },
+        "jotl_25": {
+            "name": "Barbed Chain",
+            "source": "Reward from Scenario #15",
+            "desc": "During your ranged attack, add {PULL} 2 to a single attack."
+        },
+        "jotl_26": {
+            "name": "Oak Charm",
+            "source": "Reward from Scenario #15",
+            "desc": "During your turn, perform a “{BLESS}, {RANGE} 5” action."
+        },
+        "jotl_27": {
+            "name": "Fateful Compass",
+            "source": "Scenario #3 (Treasure #10)",
+            "desc": "During your turn, force one enemy within {RANGE} 3 to peform a “{MOVE} 2” action with you controlling the action."
+        },
+        "jotl_28": {
+            "name": "Flea-Bitten Shawl",
+            "source": "Reward from Scenario #8\nReward from Scenario #12",
+            "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
+            "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
+        },
+        "jotl_29": {
+            "name": "Tower Shield",
+            "source": "Reward from Scenario #16",
+            "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
+        },
+        "jotl_30": {
+            "name": "Ring of Haste",
+            "source": "Scenario #21 (Treasure #11)",
+            "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of that card."
+        },
+        "jotl_31": {
+            "name": "Ring of Strength",
+            "source": "Reward from Scenario #19\nScenario #18 (Treasure #2)",
+            "desc": "During your turn, gain {STRENGTHEN}."
+        },
+        "jotl_32": {
+            "name": "Ring of Restoration",
+            "source": "Misplaced Good #F from Scenario #20",
+            "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action."
+        },
+        "jotl_33": {
+            "name": "Steel Ring",
+            "source": "Reward from Scenario #22",
+            "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
+        },
+        "jotl_34": {
+            "name": "Barbed Axe",
+            "source": "Reward from Scenario #34",
+            "desc": "During your attack, add {WOUND} to the entire Attack Action."
+        },
+        "jotl_35": {
+            "name": "Robes of Command",
+            "source": "Reward from Scenario #24",
+            "desc": "During your turn, one adjacent ally may perform and “{ATTACK} 2” Action."
+        },
+        "jotl_36": {
+            "name": "Jet Boots",
+            "source": "Reward from Scenario #25",
+            "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."
+        }
+    },
+    "characters": {
+        "BR": {
+            "name": "Brute",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Add two {+1_WHITE} cards",
+                "Add one {+3_WHITE} card",
+                "Add three {AGAIN} {PUSH}1 cards",
+                "Add two {AGAIN} {PIERCE}3 cards",
+                "Add one {AGAIN} {STUN} card",
+                "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
+                "Add one {AGAIN} ADD {TARGET} card",
+                "Add one {+1_WHITE} {SHIELD}1, Self card",
+                "Ignore negative item effects and add one {+1_WHITE} card",
+            ]
+        },
+        "CH": {
+            "name": "Cragheart",
+            "perks": [
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Add one {-2_WHITE} card and two {+2_WHITE} cards",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add one {+2_WHITE} {MUDDLE} card",
+                "Add two {AGAIN} {PUSH}2 cards",
+                "Add two {AGAIN} {EARTH} cards",
+                "Add two {AGAIN} {WIND} cards",
+                "Ignore negative item effects",
+                "Ignore negative scenario effects",
+            ]
+        },
+        "SW": {
+            "name": "Spellweaver",
+            "perks": [
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Add two {+1_WHITE} cards",
+                "Add one {+0_WHITE} {STUN} card",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add one {+1_WHITE} {CURSE} card",
+                "Add one {+2_WHITE} {FIRE} card",
+                "Add one {+2_WHITE} {ICE} card",
+                "Add one {AGAIN} {EARTH} and one {AGAIN} {WIND} card",
+                "Add one {AGAIN} {LIGHT} and one {AGAIN} {DARK} card",
+            ]
+        },
+        "TI": {
+            "name": "Tinkerer",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Add two {+1_WHITE} cards",
+                "Add one {+3_WHITE} card",
+                "Add two {AGAIN} {FIRE} cards",
+                "Add three {AGAIN} {MUDDLE} cards",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add one {+1_WHITE} Heal {HEAL}2 card",
+                "Add one {+0_WHITE} ADD {TARGET} card",
+                "Ignore negative scenario effects",
+            ]
+        },
+        "SC": {
+            "name": "Scoundrel",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add two {AGAIN} {+1_WHITE} cards",
+                "Add two {AGAIN} {PIERCE}3 cards",
+                "Add two {AGAIN} {POISON} cards",
+                "Add two {AGAIN} {MUDDLE} cards",
+                "Add one {AGAIN} {INVISIBLE} card",
+                "Ignore negative scenario effects",
+            ]
+        },
+        "MT": {
+            "name": "Mindthief",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Add one {+2_WHITE} {ICE} card",
+                "Add two {AGAIN} {+1_WHITE} cards",
+                "Add three {AGAIN} {PULL}1 cards",
+                "Add three {AGAIN} {MUDDLE} cards",
+                "Add two {AGAIN} {IMMOBILIZE} cards",
+                "Add one {AGAIN} {STUN} card",
+                "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
+                "Ignore negative scenario effects",
+            ]
+        },
+        "DS": {
+            "name": "Doomstalker",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace two {+0_WHITE} cards with two {+1_WHITE} cards",
+                "Add two {AGAIN} {+1_WHITE} cards",
+                "Add one {+2_WHITE} {MUDDLE} card",
+                "Add one {+1_WHITE} {POISON} card",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add one {+0_WHITE} {STUN} card",
+                "Add one {AGAIN} {TARGET} card",
+                "Ignore negative scenario effects",
+            ]
+        },
+        "EL": {
+            "name": "Elementalist",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add three {+0_WHITE} {FIRE} cards",
+                "Add three {+0_WHITE} {ICE} cards",
+                "Add three {+0_WHITE} {WIND} cards",
+                "Add three {+0_WHITE} {EARTH} cards",
+                "Replace two {+0_WHITE} card with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} card",
+                "Replace two {+0_WHITE} card with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} card",
+                "Add two {+1_WHITE} {PUSH}1 cards",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+0_WHITE} {STUN} card",
+                "Add one {+0_WHITE} {TARGET} card",
+            ]
+        },
+        "SB": {
+            "name": "Sawbones",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add one {AGAIN} {+2_WHITE} card",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add two {AGAIN} {WOUND} cards",
+                "Add one {AGAIN} {STUN} card",
+                "Add one {AGAIN} {HEAL}3 card",
+                "Add one {+0_WHITE} Refresh an item card",
+            ]
+        },
+        "SS": {
+            "name": "Soothsinger",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove one {-2_WHITE} card",
+                "Replace two {+1_WHITE} cards with one {+4_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {DISARM} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {WOUND} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {POISON} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
+                "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
+                "Replace one {-1_WHITE} card with one {+0_WHITE} {STUN} card",
+                "Add three {AGAIN} {+1_WHITE} cards",
+                "Add two {AGAIN} {CURSE} cards",
+            ]
+        },
+        "SK": {
+            "name": "Sunkeeper",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add two {AGAIN} {+1_WHITE} cards",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add two {AGAIN} {STUN} card",
+                "Add two {AGAIN} {LIGHT} cards",
+                "Add two {AGAIN} {SHIELD}1, Self cards",
+                "Ignore negative item effects and add two {+1_WHITE} cards",
+                "Ignore negative scenario effects",
+            ]
+        },
+        "NS": {
+            "name": "Nightshroud",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Add one {-1_WHITE} {DARK} card",
+                "Replace one {-1_WHITE} {DARK} card with one {+1_WHITE} {DARK} card",
+                "Add one {+1_WHITE} {INVISIBLE} card",
+                "Add three {AGAIN} {MUDDLE} cards",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add two {AGAIN} {CURSE} cards",
+                "Add one {AGAIN} {TARGET} card",
+                "Ignore negative scenario effects and add two {+1_WHITE} cards",
+            ]
+        },
+        "SU": {
+            "name": "Summoner",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Add one {+2_WHITE} card",
+                "Add two {AGAIN} {WOUND} cards",
+                "Add two {AGAIN} {POISON} cards",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add one {AGAIN} {FIRE} and one {AGAIN} {WIND} card",
+                "Add one {AGAIN} {DARK} and one {AGAIN} {EARTH} card",
+                "Ignore negative scenario effects and add two {+1_WHITE} cards",
+            ]
+        },
+        "BE": {
+            "name": "Berserker",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {AGAIN} {+2_WHITE} card",
+                "Add two {AGAIN} {WOUND} cards",
+                "Add one {AGAIN} {STUN} card",
+                "Add one {AGAIN} {+1_WHITE} {DISARM} card",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add one {+2_WHITE} {FIRE} card",
+                "Ignore negative item effects",
+            ]
+        },
+        "QM": {
+            "name": "Quartermaster",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add two {AGAIN} {+1_WHITE} cards",
+                "Add three {AGAIN} {MUDDLE} cards",
+                "Add two {AGAIN} {PIERCE}3 cards",
+                "Add one {AGAIN} {STUN} card",
+                "Add one {AGAIN} {TARGET} card",
+                "Add one {+0_WHITE} Refresh an item card",
+                "Ignore negative item effects and add two {+1_WHITE} cards",
+            ]
+        },
+        "PH": {
+            "name": "Plagueherald",
+            "perks": [
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add two {+1_WHITE} cards",
+                "Add one {+1_WHITE} {WIND} card",
+                "Add three {AGAIN} {POISON} cards",
+                "Add two {AGAIN} {CURSE} cards",
+                "Add two {AGAIN} {IMMOBILIZE} cards",
+                "Add one {AGAIN} {STUN} card",
+                "Ignore negative scenario effects and add one {+1_WHITE} card",
+            ]
+        },
+        "BT": {
+            "name": "Beast Tyrant",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add two {AGAIN} {EARTH} cards",
+                "Ignore negative scenario effects",
+            ]
+        },
+        "BS": {
+            "name": "Bladeswarm",
+            "perks": [
+                "Remove one {-2_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} {WIND} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} {EARTH} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} {LIGHT} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} {DARK} card",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+1_WHITE} {POISON} card",
+                "Add one {+2_WHITE} {MUDDLE} card",
+                "Ignore negative item effects and add one {+1_WHITE} card",
+                "Ignore negative scenario effects and add one {+1_WHITE} card",
+            ]
+        },
+        "DR": {
+            "name": "Diviner",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove one {-2_WHITE} card",
+                "Replace two {+1_WHITE} cards with one {+3_WHITE} {SHIELD}1, Self card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1, Affect any ally card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {DARK} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT} card",
+                "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {REGENERATE}, Self card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} {HEAL}2, Affect any ally card",
+                "Add two {AGAIN} {HEAL}1, Self cards",
+                "Add two {AGAIN} {CURSE} cards",
+                "Ignore negative scenario effects and add two {+1_WHITE} cards",
+            ]
+        },
+        "RG": {
+            "name": "Red Guard",
+            "perks": [
+                "Remove four {+0_WHITE} cards",
+                "Remove two {-1_WHITE} cards",
+                "Remove one {-2_WHITE} card and one {+1_WHITE} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
+                "Replace one {+1_WHITE} card with one {+2_WHITE} {LIGHT} card",
+                "Add one {+1_WHITE} {FIRE_LIGHT} card",
+                "Add one {+1_WHITE} {SHIELD} 1 card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card",
+            ]
+        },
+        "DM": {
+            "name": "Demolitionist",
+            "perks": [
+                "Remove four {+0_WHITE} cards",
+                "Remove two {-1_WHITE} cards",
+                "Remove one {-2_WHITE} card and one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
+                "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card",
+                "Add one {+2_WHITE} card",
+                "Replace one {+1_WHITE} card with one {+2_WHITE} {EARTH} card",
+                "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
+                "Add one {+0_WHITE} All adjacent enemies suffer 1 damage card",
+            ]
+        },
+        "HT": {
+            "name": "Hatchet",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
+                "Remove one {+0_WHITE} card with one {+1_WHITE} {POISON} card",
+                "Remove one {+0_WHITE} card with one {+1_WHITE} {WOUND} card",
+                "Remove one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
+                "Remove one {+0_WHITE} card with one {+1_WHITE} {PUSH}2 card",
+                "Remove one {+0_WHITE} card with one {+0_WHITE} {STUN} card",
+                "Remove one {+1_WHITE} card with one {+1_WHITE} {STUN} card",
+                "Add one {+2_WHITE} {WIND} card",
+                "Replace one {+1_WHITE} with one {+3_WHITE} card",
+            ]
+        },
+        "VW": {
+            "name": "Voidwarden",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove one {-2_WHITE} card",
+                "Replace one {+0_WHITE} with one {+1_WHITE} {DARK} card",
+                "Replace one {+0_WHITE} with one {+1_WHITE} {ICE} card",
+                "Replace one {-1_WHITE} with one {+0_WHITE} {HEAL}1 (Ally) card",
+                "Add one {+1_WHITE} {HEAL}1 (Ally) card",
+                "Add one {+1_WHITE} {POISON} card",
+                "Add one {+3_WHITE} card",
+                "Add one {+1_WHITE} {CURSE} card",
+            ]
+        }
     },
     "quest": {
         "1": {

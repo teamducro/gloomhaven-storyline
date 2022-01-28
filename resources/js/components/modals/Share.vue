@@ -31,7 +31,8 @@
         },
         methods: {
             open() {
-                this.url = this.shareState.link();
+                const path = this.$router.currentRoute.path.split('/')[1];
+                this.url = this.shareState.link('local', path);
                 this.$refs['modal'].open();
                 this.addCopyTippy();
             },

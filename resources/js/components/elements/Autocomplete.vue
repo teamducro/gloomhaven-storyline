@@ -32,6 +32,7 @@
 <script>
 import {MDCTextField} from "@material/textfield/component";
 import Slugify from "../../services/Slugify";
+import Helpers from "../../services/Helpers";
 
 export default {
     mixins: [Slugify],
@@ -46,7 +47,7 @@ export default {
             type: Function,
             default: (query) => {
                 return (item) => {
-                    return item.toLowerCase().replace('-', ' ').startsWith(query);
+                    return Helpers.sanitize(item).startsWith(query);
                 }
             }
         },
@@ -77,7 +78,7 @@ export default {
             this.items = filtered.slice(0, this.maxItems)
         },
         search(query) {
-            query = query.trim().toLowerCase().replace('-', ' ').replace(/^0+/, '');
+            query = Helpers.sanitize(query).replace(/^0+/, '');
 
             if (query.length) {
                 return this.list.filter(this.filterClosure(query));

@@ -61,9 +61,7 @@ export default {
         }
     },
     destroyed() {
-        if (this.codeField) {
-            this.codeField.destroy();
-        }
+        this.codeField?.destroy();
     },
     methods: {
         submitCampaignCode() {

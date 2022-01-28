@@ -1,0 +1,9 @@
+.mdc-select {
+    &.with-transparency {
+        .mdc-select__anchor {
+            &, &:before, &:after {
+                background-color: transparent !important;
+            }
+        }
+    }
+}
