@@ -86,7 +86,7 @@ export default {
             this.blur = false;
             this.removed = false;
             this.$refs['modal'].open();
-            this.preloadImage.handle(card.images[1]);
+            this.preloadImage.handle(this.card.images[1]);
         },
         async chose(choice) {
             this.choice = choice;
