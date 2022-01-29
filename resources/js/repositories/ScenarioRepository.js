@@ -234,7 +234,14 @@ export default class ScenarioRepository {
     }
 
     find(id) {
-        return app.scenarios.firstWhere('id', parseInt(id));
+        const scenario = app.scenarios.firstWhere('id', parseInt(id));
+
+        if (!scenario) {
+            let message = 'Something went wrong, please refresh and try again.';
+            app.$bus.$emit('toast', message, false);
+        }
+
+        return scenario;
     }
 
     findMany(list) {

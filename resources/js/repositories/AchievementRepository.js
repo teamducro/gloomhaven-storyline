@@ -96,12 +96,19 @@ export default class AchievementRepository {
     }
 
     lose(id) {
-        let achievement = this.find(id);
+        const achievement = this.find(id);
         achievement.lose();
     }
 
     find(id) {
-        return app.achievements.firstWhere('id', id);
+        const achievement = app.achievements.firstWhere('id', id);
+
+        if (!achievement) {
+            let message = 'Something went wrong, please refresh and try again.';
+            app.$bus.$emit('toast', message, false);
+        }
+
+        return achievement;
     }
 
     findMany(list) {
