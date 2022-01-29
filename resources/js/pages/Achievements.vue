@@ -53,7 +53,7 @@
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-75">
-                        {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${this.count})` : '') }}
+                        {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
                     </span>
                         </template>
                     </li>
