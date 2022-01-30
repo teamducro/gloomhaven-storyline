@@ -204,6 +204,18 @@ class Scenario {
     }
 
     get rewards() {
+        let rewards = collect();
+
+        if (typeof this._rewards.first() === 'string') {
+            rewards = this._rewards;
+        } else if (Array.isArray(this._rewards.first()) && this.promptChoice) {
+            rewards = collect(this._rewards.get(this.promptChoice - 1));
+        }
+
+        return rewards;
+    }
+
+    get translatedRewards() {
         if (typeof this._rewards.first() === 'string') {
             return this.$tPrefix('rewards');
         } else if (Array.isArray(this._rewards.first()) && this.promptChoice) {

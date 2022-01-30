@@ -18,7 +18,7 @@ export default {
     },
     computed: {
         rewards() {
-            return this.$t(this.scenario.rewards);
+            return this.$t(this.scenario.translatedRewards);
         }
     },
     data() {
