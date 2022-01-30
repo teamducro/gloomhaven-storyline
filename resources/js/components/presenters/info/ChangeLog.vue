@@ -125,6 +125,7 @@ export default {
                 {version: 2.17, description: 'Character sheets', date: dayjs('08-14-2021')},
                 {version: 3.0, description: 'Jaws of the Lion', date: dayjs('10-08-2021')},
                 {version: 3.1, description: 'Personal quests', date: dayjs('11-25-2021')},
+                {version: 3.2, description: 'Add more translation support', date: dayjs('01-31-2022')},
             ].reverse()
         }
     },
