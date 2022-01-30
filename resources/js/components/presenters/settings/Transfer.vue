@@ -2,19 +2,19 @@
     <div id="copy"
          class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
         <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left">
-            Transfer campaign data
+            {{ $t('transfer.title') }}
         </h1>
 
         <p class="text-base">
-            Copy campaign data between campaigns can be done easily.
+            {{ $t('transfer.text') }}
         </p>
 
         <alert v-if="campaignId && !hasMultipleStories" type="warning">
-            Campaign data can only be transferred if you purchased a shared campaign.<br>
-            <router-link to="/campaigns" class="link">Please consider purchasing a license.</router-link>
-            <div class="mt-2">Alternatively you may
-                <a @click.stop="$bus.$emit('open-share-modal')" class="link">share</a>
-                a campaign link.
+            {{ $t('transfer.warning.text') }}<br>
+            <router-link to="/campaigns" class="link">{{ $t('Please consider purchasing a license') }}.</router-link>
+            <div class="mt-2">{{ $t('Alternatively you may') }}
+                <a @click.stop="$bus.$emit('open-share-modal')" class="link">{{ $t('share') }}</a>
+                {{ $t('a campaign link') }}.
             </div>
         </alert>
 

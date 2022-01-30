@@ -20,7 +20,7 @@ class Achievement {
         this.is_manual = data.is_manual || false;
         this.cards = collect(data.cards).map((card) => new Card(card, data.game));
         this.game = data.game;
-        this.translationKey = 'achievements';
+        this.translationKey = `achievements.${this.game}-${this.id}`;
 
         this.fieldsToStore = {
             "awarded": {"_awarded": this._awarded},
@@ -35,7 +35,7 @@ class Achievement {
     }
 
     get name() {
-        return this.$tPrefix(this._name.replaceAll("'", ''));
+        return this.$tPrefix('name');
     }
 
     isGlobal() {

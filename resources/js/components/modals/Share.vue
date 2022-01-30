@@ -1,12 +1,12 @@
 <template>
-    <modal ref="modal" :title="$t('share.title')">
+    <modal ref="modal" :title="$t('share-modal.title')">
         <template v-slot:content>
-            <p class="mb-2">{{ $t('share.1') }}</p>
+            <p class="mb-2">{{ $t('share-modal.1') }}</p>
             <p class="mb-8">
                 <a v-clipboard:copy="url"
                    class="copied link">
-                    {{ $t('share.2') }}</a>
-                {{ $t('share.3') }}
+                    {{ $t('share-modal.2') }}</a>
+                {{ $t('share-modal.3') }}
             </p>
 
             <share-icons :url="url" :margin-center="true"/>
