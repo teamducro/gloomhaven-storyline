@@ -302,9 +302,10 @@ export default {
     "and": "et",
     "Hidden Scenario": "Scénario cachée",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
+    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
     "scenarios": {
         "gh-1": {
-            "name": "Le Tertre Noir",
+            "name": "Le Tertre Noir"
         },
         "gh-2": {
             "name": "Le Repaire sous le Tertre",
@@ -321,10 +322,10 @@ export default {
             ]
         },
         "gh-4": {
-            "name": "La Crypte des Damnés",
+            "name": "La Crypte des Damnés"
         },
         "gh-5": {
-            "name": "La Crypte dans les Ruines",
+            "name": "La Crypte dans les Ruines"
         },
         "gh-6": {
             "name": "La Crypte en Déclin",
@@ -333,7 +334,7 @@ export default {
             ]
         },
         "gh-7": {
-            "name": "La Grotte foisonnante",
+            "name": "La Grotte foisonnante"
         },
         "gh-8": {
             "name": "L'Entrepôt de Havrenuit",
@@ -349,7 +350,7 @@ export default {
             ]
         },
         "gh-10": {
-            "name": "La Dimension du Pouvoir Elementaire",
+            "name": "La Dimension du Pouvoir Elementaire"
         },
         "gh-11": {
             "name": "La Place de Havrenuit A",
@@ -368,10 +369,10 @@ export default {
             ]
         },
         "gh-13": {
-            "name": "Le Temple du Prophète",
+            "name": "Le Temple du Prophète"
         },
         "gh-14": {
-            "name": "La Caverne Gelée",
+            "name": "La Caverne Gelée"
         },
         "gh-15": {
             "name": "Le Sanctuaire de Puissance",
@@ -380,7 +381,7 @@ export default {
             ]
         },
         "gh-16": {
-            "name": "Le Col de la Montagne",
+            "name": "Le Col de la Montagne"
         },
         "gh-17": {
             "name": "L'Ile Perdue",
@@ -389,7 +390,7 @@ export default {
             ]
         },
         "gh-18": {
-            "name": "Les Egouts Abandonnés",
+            "name": "Les Egouts Abandonnés"
         },
         "gh-19": {
             "name": "La Crypte Oubliée",
@@ -414,16 +415,16 @@ export default {
             ]
         },
         "gh-22": {
-            "name": "Le Temple des Eléments",
+            "name": "Le Temple des Eléments"
         },
         "gh-23": {
-            "name": "Les Ruines des Profondeurs",
+            "name": "Les Ruines des Profondeurs"
         },
         "gh-24": {
-            "name": "La Chambre des Echos",
+            "name": "La Chambre des Echos"
         },
         "gh-25": {
-            "name": "L'Ascension du Rideau de Glace",
+            "name": "L'Ascension du Rideau de Glace"
         },
         "gh-26": {
             "name": "L'Ancienne Citerne",
@@ -441,7 +442,7 @@ export default {
             ]
         },
         "gh-28": {
-            "name": "La Chambre du Rituel de l'Outre-Monde",
+            "name": "La Chambre du Rituel de l'Outre-Monde"
         },
         "gh-29": {
             "name": "Le Sanctuaire de l'Ombre",
@@ -456,13 +457,13 @@ export default {
             ]
         },
         "gh-31": {
-            "name": "La Dimension de la Nuit",
+            "name": "La Dimension de la Nuit"
         },
         "gh-32": {
-            "name": "Le Bois Abandonné",
+            "name": "Le Bois Abandonné"
         },
         "gh-33": {
-            "name": "L'Armurerie Savvas",
+            "name": "L'Armurerie Savvas"
         },
         "gh-34": {
             "name": "Le Sommet Calciné",
@@ -490,7 +491,7 @@ export default {
             ]
         },
         "gh-37": {
-            "name": "La Tranchée de l'Ombre",
+            "name": "La Tranchée de l'Ombre"
         },
         "gh-38": {
             "name": "L'Enclos des Esclaves",
@@ -505,7 +506,7 @@ export default {
             ]
         },
         "gh-40": {
-            "name": "L'Ancien Réseau de Défense",
+            "name": "L'Ancien Réseau de Défense"
         },
         "gh-41": {
             "name": "Le Tombeau Erodé",
@@ -523,7 +524,7 @@ export default {
             ]
         },
         "gh-43": {
-            "name": "Le Nid des Wyvernes",
+            "name": "Le Nid des Wyvernes"
         },
         "gh-44": {
             "name": "Assaut Tribal",
@@ -540,13 +541,13 @@ export default {
             ]
         },
         "gh-46": {
-            "name": "Le Pic des Cauchemars",
+            "name": "Le Pic des Cauchemars"
         },
         "gh-47": {
-            "name": "L'Antre de l'Oeil Aveugle",
+            "name": "L'Antre de l'Oeil Aveugle"
         },
         "gh-48": {
-            "name": "La Forêt Lugubre",
+            "name": "La Forêt Lugubre"
         },
         "gh-49": {
             "name": "Le Campement des Rebelles",
@@ -572,7 +573,7 @@ export default {
             ]
         },
         "gh-52": {
-            "name": "La Cave Toxique",
+            "name": "La Cave Toxique"
         },
         "gh-53": {
             "name": "Le Sous-sol de la Crypte",
@@ -618,7 +619,7 @@ export default {
             ]
         },
         "gh-59": {
-            "name": "Le Bosquet Oublié",
+            "name": "Le Bosquet Oublié"
         },
         "gh-60": {
             "name": "Le laboratoire d'Alchimie",
@@ -629,7 +630,7 @@ export default {
             ]
         },
         "gh-61": {
-            "name": "Le Phare Evanescent",
+            "name": "Le Phare Evanescent"
         },
         "gh-62": {
             "name": "La fosse des Ames",
@@ -658,7 +659,7 @@ export default {
             ]
         },
         "gh-66": {
-            "name": "La Crique Mécanique",
+            "name": "La Crique Mécanique"
         },
         "gh-67": {
             "name": "La Bibliothèque Arcanique",
@@ -717,7 +718,7 @@ export default {
             ]
         },
         "gh-76": {
-            "name": "La Ruche des Persécuteurs",
+            "name": "La Ruche des Persécuteurs"
         },
         "gh-77": {
             "name": "Le Caveau des Secrets",
@@ -759,7 +760,7 @@ export default {
                     "-1 reputation",
                     "-2 prosperity"
                 ]
-            ],
+            ]
         },
         "gh-83": {
             "name": "Les Ombres Intérieures",
@@ -772,7 +773,7 @@ export default {
             "rewards": [
                 "“Resonant Crystal” (Item 133)",
                 "+1 prosperity"
-            ],
+            ]
         },
         "gh-85": {
             "name": "Le Temple Solaire",
@@ -831,7 +832,7 @@ export default {
             ]
         },
         "gh-94": {
-            "name": "Le Nid des Vermlings",
+            "name": "Le Nid des Vermlings"
         },
         "gh-95": {
             "name": "L'Heure du Jugement",
@@ -870,7 +871,7 @@ export default {
                     "5 gold each",
                     "+1 reputation"
                 ]
-            ],
+            ]
         },
         "fc-99": {
             "name": "Aftershocks",
@@ -884,13 +885,13 @@ export default {
                     "+1 prosperity",
                     "“Minor Antidote” (Item 153)"
                 ]
-            ],
+            ]
         },
         "fc-100": {
             "name": "Shifting Gears",
             "rewards": [
                 "Choose to gain one of the following sets: “Telescopic Lens” (Item 059) and “Ancient Drill” (Item 112), OR “Curious Gear” (Item 125) and “Remote Spider” (Item 126)"
-            ],
+            ]
         },
         "fc-101": {
             "name": "Shrouded Crypt",
@@ -936,7 +937,7 @@ export default {
                     "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements",
                     "+ 1 prosperity"
                 ]
-            ],
+            ]
         },
         "fc-107": {
             "name": "Mechanical Genius",
@@ -957,7 +958,7 @@ export default {
                     "“Curseward Armor” (Item 155)",
                     "2 “Throwing Axes” (Item 161)"
                 ]
-            ],
+            ]
         },
         "fc-109": {
             "name": "Epilogue of a War",
@@ -983,7 +984,7 @@ export default {
                     "12 experience each",
                     "1 ✓ each"
                 ]
-            ],
+            ]
         },
         "fc-112": {
             "name": "The Bottom of It",
@@ -997,7 +998,7 @@ export default {
                     "5 experience each",
                     "1 ✓ each"
                 ]
-            ],
+            ]
         },
         "fc-113": {
             "name": "The Lost Thread",
@@ -1031,7 +1032,7 @@ export default {
             ]
         },
         "jotl-1": {
-            "name": "Roadside Ambush",
+            "name": "Roadside Ambush"
         },
         "jotl-2": {
             "name": "A Hole in the Wall",
@@ -1071,7 +1072,7 @@ export default {
             ]
         },
         "jotl-8": {
-            "name": "Hidden Tumor",
+            "name": "Hidden Tumor"
         },
         "jotl-9": {
             "name": "Explosive Evolution",
@@ -1178,7 +1179,7 @@ export default {
             "rewards": [
                 "“Jet Boots” (Item 36)"
             ]
-        },
+        }
     },
     "achievements": {
         "gh-PFS": {
@@ -2724,56 +2725,56 @@ export default {
             "name": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}"
         },
         "jotl-1": {
-            "name": 'Gain 10 experience'
+            "name": "Gain 10 experience"
         },
         "jotl-2": {
-            "name": '“Ring of Strength” (Item 31)'
+            "name": "“Ring of Strength” (Item 31)"
         },
         "jotl-3": {
-            "name": 'Gain 15 experience'
+            "name": "Gain 15 experience"
         },
         "jotl-4": {
-            "name": 'Gain 5 gold'
+            "name": "Gain 5 gold"
         },
         "jotl-5": {
-            "name": 'Gain 1 ✔'
+            "name": "Gain 1 ✔"
         },
         "jotl-6": {
-            "name": 'Gain 10 gold'
+            "name": "Gain 10 gold"
         },
         "jotl-7": {
-            "name": 'Gain 5 gold'
+            "name": "Gain 5 gold"
         },
         "jotl-8": {
-            "name": 'Suffer 3 damage, gain {POISON,'
+            "name": "Suffer 3 damage, gain {POISON,"
         },
         "jotl-9": {
-            "name": 'Gain 5 gold'
+            "name": "Gain 5 gold"
         },
         "jotl-10": {
-            "name": '“Fateful Compass” (Item 27)'
+            "name": "“Fateful Compass” (Item 27)"
         },
         "jotl-11": {
-            "name": '“Ring of Haste” (Item 30)'
+            "name": "“Ring of Haste” (Item 30)"
         },
         "jotl-12": {
-            "name": 'Gain 5 gold'
+            "name": "Gain 5 gold"
         },
         "jotl-13": {
-            "name": 'Gain 5 gold'
+            "name": "Gain 5 gold"
         },
         "jotl-14": {
-            "name": 'Gain 3 money tokens'
+            "name": "Gain 3 money tokens"
         },
         "jotl-15": {
-            "name": 'Gain 1 ✔'
+            "name": "Gain 1 ✔"
         },
         "jotl-16": {
-            "name": '“Mana Potion” (Item 14)'
+            "name": "“Mana Potion” (Item 14)"
         },
         "jotl-X": {
-            "name": '“Ring of Restoration” (Item 32)'
-        },
+            "name": "“Ring of Restoration” (Item 32)"
+        }
     },
     "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
     "personal_quests": {

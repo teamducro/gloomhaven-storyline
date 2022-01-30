@@ -303,6 +303,7 @@ export default {
     "or": "or",
     "Hidden Scenario": "Hidden Scenario",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
+    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
     "scenarios": {
         "gh-1": {
             "name": "Black Barrow"
