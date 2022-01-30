@@ -4,7 +4,6 @@ import Card from "./Card";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemTextParser from "../services/ItemTextParser";
 import UsesTranslations from "./UsesTranslations";
-import Character from "./Character";
 
 class Scenario {
 
@@ -46,7 +45,7 @@ class Scenario {
         this._promptChoice = null;
         this.hasPrompt = typeof data.prompt !== 'undefined';
         this.game = data.game;
-        this.translationKey = 'scenarios';
+        this.translationKey = `scenarios.${this.game}-${this.id}`;
 
         this.fieldsToStore = {
             "state": "_state",
@@ -120,7 +119,7 @@ class Scenario {
     }
 
     get name() {
-        return this.$tPrefix(this._name);
+        return this.$tPrefix('name');
     }
 
     unlockTreasure(id, unlock = true) {
@@ -214,6 +213,16 @@ class Scenario {
         }
 
         return rewards;
+    }
+
+    get translatedRewards() {
+        if (typeof this._rewards.first() === 'string') {
+            return this.$tPrefix('rewards');
+        } else if (Array.isArray(this._rewards.first()) && this.promptChoice) {
+            return this.$tPrefix(`rewards.${this.promptChoice - 1}`);
+        }
+
+        return '';
     }
 
     get achievements_awarded() {

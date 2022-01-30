@@ -17,8 +17,8 @@ class Item {
         this._faq = data.faq;
         this.spent = data.spent || false;
         this.consumed = data.consumed || false;
-        this.game = game;
-        this.translationKey = `items.${this.game}_${this.id}`;
+        this._game = game;
+        this.translationKey = `items.${this.game}-${this.id}`;
     }
 
     get name() {
@@ -51,9 +51,12 @@ class Item {
     }
 
     get image() {
+        return '/img/items/' + this.game + '/' + slugify(this._name.replaceAll("'", ''), {lower: true}) + '.png';
+    }
+
+    get game() {
         // FC uses GH items
-        const folder = this.game === 'fc' ? 'gh' : this.game;
-        return '/img/items/' + folder + '/' + slugify(this._name.replaceAll("'", ''), {lower: true}) + '.png';
+        return  this._game === 'fc' ? 'gh' : this._game;
     }
 }
 

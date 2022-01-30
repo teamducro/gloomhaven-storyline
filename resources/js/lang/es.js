@@ -10,6 +10,24 @@ export default {
     "Open source": "Open source",
     "Info": "Información",
     "Settings": "Ajustes",
+    "transfer": {
+        "title": "Transfer campaign data",
+        "text": "Copy campaign data between campaigns can be done easily.",
+        "warning": {
+            "text": "Campaign data can only be transferred if you purchased a shared campaign."
+        }
+    },
+    "Please consider purchasing a license": "Please consider purchasing a license",
+    "Danger zone!": "Danger zone!",
+    "Alternatively you may": "Alternatively you may",
+    "a campaign link": "a campaign link",
+    "snapshots": {
+        "title": "Snapshots",
+        "text-1": "If you ever lose campaign progress you can use these automatic snapshots to revert unwanted changes!",
+        "text-2": "Snapshots are only available for shared campaigns because they're stored in the cloud.",
+        "only-owner": "Only owners of this campaign can manage snapshots",
+        "no-snapshots": "There are no snapshots yet"
+    },
     "Characters": "Personajes",
     "Character sheet": "Hoja de Personaje",
     "Party sheet": "Hoja de Grupo",
@@ -58,35 +76,12 @@ export default {
     "Battle Goals": "Objetivos de batalla",
     "You may select an additional perk!": "¡Puedes seleccionar una pericia adicional!",
     "Number or Name": "Número o Nombre",
-    "No items found": "No se encontró el Objeto",
+    "No items available": "No items available",
     "Buy me a Beer": "¡Invítame a una cerveza!",
-    "Intro": "Intro",
-    "The Merchant": "La comerciante",
-    "Demon and Rift": "El demonio y la grieta",
-    "Sewers": "Las cloacas",
-    "Rebellion Rises": "La rebelión se alza",
-    "Under Oceans": "Bajo los océanos",
-    "Through": "A través de",
-    "Jungles": "las selvas",
-    "Atop Mountains": "En lo alto de las montañas",
-    "Dragons": "Dragones",
-    "Voice": "La Voz",
-    "Personal Quests": "Misiones personales",
-    "Personal Quest": "Misión personal",
-    "Random Scenarios": "Escenarios aleatorios",
-    "Sealed": "Cerrado",
-    "Road Events": "Eventos de camino",
-    "City Events": "Eventos de ciudad",
-    "Diviner": "Adivino",
-    "Orchid society": "Sociedad de Orquídeos",
-    "Citizens of Gloomhaven": "Habitantes de Gloomhaven",
-    "The rift device": "El mecanismo de la Grieta",
-    "Tainted crypt": "Cripta Corrompida",
-    "Corruption": "Corrupción",
     "Requirements": "Requisitos",
     "Show treasures": "Mostrar los tesoros",
     "Treasure": "Tesoro | Tesoros",
-    "No treasures available": "No hay tesoros disponibles.",
+    "No treasures available": "No hay tesoros disponibles",
     "Treasures": "Tesoros",
     "Global": "Global",
     "Party": "Grupo",
@@ -118,6 +113,7 @@ export default {
     "Retire": "Retira",
     "Retired": "Retirado",
     "Remove": "Eliminar",
+    "Unlocked": "Unlocked",
     "Clear all": "Borrar todo",
     "Add Character": "Añade personaje",
     "character-limit-message": "Respecto a las limitaciones de uso compartido de las campañas gratuitas, hay un límite de caracteres en las notas. Los usuarios Pro no tienen este límite",
@@ -132,7 +128,8 @@ export default {
     "reset": {
         "text": "¿Estas seguro de que quieres borrar todos los datos de los escenarios?"
     },
-    "share": {
+    "share": "share",
+    "share-modal": {
         "1": "Comparte tu historia local actual con los miembros de tu grupo.",
         "2": "Copia el link",
         "3": "o compártelo en una de las siguientes plataformas.",
@@ -155,6 +152,16 @@ export default {
         "title": "Juega a Gloomhaven con una app de seguimiento de la historia",
         "text": "Para jugar a Gloomhaven, mis amigos y yo nos juntamos una vez por semana. Pulsando el botón de pausa en nuestras vidas cotidianas. Cada uno de nosotros ha aportado algo para fortalecer nuestro disfrute del juego. Mi contribución es un diagrama de flujo interactivo, que permite hacer un seguimiento de nuestro progreso a lo largo del juego y hacer más fácil la elección de un nuevo escenario al que jugar. Con unas bebidas y unos aperitivos, estamos listos para empezar."
     },
+    "contribute": {
+        "text-1": "Support the project by joining the Patreon. You'll earn my deepest gratitude. You make it possible for me to maintain the tracker and keep the new features coming.",
+        "text-2": "Patrons can create unlimited shared campaigns. In addition they can vote on new features and are notified when new features roll out!"
+    },
+    "support": {
+        "text-1": "Would you like to contribute by translating to your native language?",
+        "text-2": "For help or feedback, please consult the"
+    },
+    "send me an e-mail": "send me an e-mail",
+    "or": "o",
     "Welcome": "Bienvenido",
     "Language": "Idioma",
     "Help translating?": "¿Ayudas traduciendo?",
@@ -177,10 +184,11 @@ export default {
             "1": "No olvide hacer una copia de seguridad de su progreso de vez en cuando, ¡la función de uso compartido manual es excelente para eso!",
             "2": "La versión de pago proporciona copias de seguridad automáticas, siempre puede continuar donde lo dejó o incluso revertir los cambios no deseados. Esto cubre los costos de mantenimiento de esta aplicación para la comunidad.",
             "3": "Por favor, contempla la opción de comprar una licencia, ayuda mucho.",
-            "title": "¡Copias de seguridad automáticas!",
+            "title": "¡Copias de seguridad automáticas!"
         },
         "close": "Seguir usando la app"
     },
+    "faq": "FAQ",
     "Support": "Soporte",
     "Donate": "Donar",
     "local": "Campaña local",
@@ -190,6 +198,12 @@ export default {
     "Create snapshot": "Crear instantánea",
     "Reset campaign": "Reiniciar campaña",
     "Change log": "Registro",
+    "changelog": {
+        "text": "Only somewhat big features are included, every update brings bug fixes and improvements to the app!"
+    },
+    "Version": "Version",
+    "Description": "Description",
+    "Release date": "Release date",
     "Received a campaign code?": "¿Recibió un código de campaña?",
     "Add Campaign": "Agregar campaña",
     "Your campaign has been synced!": "¡Tu campaña se ha sincronizado!",
@@ -206,8 +220,8 @@ export default {
     "Submit": "Enviar",
     "An email has been sent to your inbox.": "El correo electrónico se enviará a su bandeja de entrada.",
     "Selected Campaign": "Campaña seleccionada",
+    "Selected Game": "Selected Game",
     "PRO": "PRO",
-    "Gloomhaven": "Gloomhaven",
     "gh": "Gloomhaven",
     "Forgotten Circles": "Círculos Olvidados",
     "fc": "Círculos Olvidados",
@@ -250,8 +264,30 @@ export default {
     "REGENERATE": "REGENERACIÓN",
     "DISARM": "DESARME",
     "TARGET": "OBJETIVO",
+    "Intro": "Intro",
+    "The Merchant": "La comerciante",
+    "Demon and Rift": "El demonio y la grieta",
+    "Sewers": "Las cloacas",
+    "Rebellion Rises": "La rebelión se alza",
+    "Under Oceans": "Bajo los océanos",
     "Through Jungles": "A través de las Selvas",
+    "Atop Mountains": "En lo alto de las montañas",
+    "Dragons": "Dragones",
+    "Voice": "La Voz",
     "Solo Scenarios": "Escenarios en solitario",
+    "Personal Quests": "Misiones personales",
+    "Personal Quest": "Misión personal",
+    "Random Scenarios": "Escenarios aleatorios",
+    "Sealed": "Cerrado",
+    "Road Events": "Eventos de camino",
+    "City Events": "Eventos de ciudad",
+    "Diviner": "Adivino",
+    "Orchid society": "Sociedad de Orquídeos",
+    "Citizens of Gloomhaven": "Habitantes de Gloomhaven",
+    "The rift device": "El mecanismo de la Grieta",
+    "Tainted crypt": "Cripta Corrompida",
+    "Corruption": "Corrupción",
+    "Gloomhaven": "Gloomhaven",
     "Dagger Forest": "Bosque de las Dagas",
     "Lingering Swamp": "Pantano Perenne",
     "Watcher Mountains": "Montañas Guardianas",
@@ -264,1064 +300,1957 @@ export default {
     "East Coast": "Costa Este",
     "different Dimension": "otra Dimensión",
     "and": "y",
-    "or": "o",
     "Hidden Scenario": "Escenario Oculto",
+    "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
+    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
     "scenarios": {
-        "Black Barrow": "Túmulo Negro",
-        "Barrow Lair": "Guarida del Túmulo",
-        "Inox Encampment": "Campamento inox",
-        "Crypt of the Damned": "Cripta de los Malditos",
-        "Ruinous Crypt": "Cripta Ruinosa",
-        "Decaying Crypt": "Cripta decadente",
-        "Vibrant Grotto": "Gruta trepidante",
-        "Gloomhaven Warehouse": "Almacén de Gloomhaven",
-        "Diamond Mine": "Mina de diamantes",
-        "Plane of Elemental Power": "Plano del Poder Elemental",
-        "Gloomhaven Square A": "Plaza de Gloomhaven A",
-        "Gloomhaven Square B": "Plaza de Gloomhaven B",
-        "Temple of the Seer": "Templo del Vidente",
-        "Frozen Hollow": "Hondonada Helada",
-        "Shrine of Strength": "Altar de la fuerza",
-        "Mountain Pass": "El paso de la montaña",
-        "Lost Island": "Isla perdida",
-        "Abandoned Sewers": "Cloacas abandonadas",
-        "Forgotten Crypt": "Cripta olvidada",
-        "Necromancers Sanctum": "Santuario de la nigromante",
-        "Infernal Throne": "Trono infernal",
-        "Temple of Elements": "Templo de los Elementos",
-        "Deep Ruins": "Ruinas profundas",
-        "Echo Chamber": "Cámara de los Ecos",
-        "Icecrag Ascent": "Ascenso al Risco de Hielo",
-        "Ancient Cistern": "Antiguo aljibe",
-        "Ruinous Rift": "Grieta destructiva",
-        "Outer Ritual Chamber": "Cámara ritual ultraterrestre",
-        "Sanctuary of Gloom": "Santuario de la Penumbra",
-        "Shrine of the Depths": "Altar de las profundidades",
-        "Plane of Night": "Plano de la Noche",
-        "Decrepit Wood": "Bosque decrépito",
-        "Savvas Armory": "Armería savvas",
-        "Scorched Summit": "Cumbre calcinada",
-        "Gloomhaven Battlements A": "Almenas de Gloomhaven A",
-        "Gloomhaven Battlements B": "Almenas de Gloomhaven B",
-        "Doom Trench": "Fosa maldita",
-        "Slave Pens": "Jaula de esclavos",
-        "Treacherous Divide": "Puente traicionero",
-        "Ancient Defense Network": "Antigua red de defensa",
-        "Timeworn Tomb": "Tumba ancestral",
-        "Realm of the Voice": "Reino de la Voz",
-        "Drake Nest": "Nido de dracos",
-        "Tribal Assault": "Asalto tribal",
-        "Rebel Swamp": "Pantano rebelde",
-        "Nightmare Peak": "Cumbre agónica",
-        "Lair of the Unseeing Eye": "Guarida del ojo que no ve",
-        "Shadow Weald": "Bosque sombrío",
-        "Rebels Stand": "Resistencia rebelde",
-        "Ghost Forrest": "Fortaleza fantasma",
-        "The Void": "El Vacío",
-        "Noxious Cellar": "Sótano nocivo",
-        "Crypt Basement": "Subsuelo de la cripta",
-        "Palace of Ice": "Palacio de Hielo",
-        "Foggy Thicket": "Maraña neblinosa",
-        "Bandits Wood": "Bosque de los bandidos",
-        "Investigation": "Investigación",
-        "Bloody Shack": "Cabaña ensangrentada",
-        "Forgotten Grove": "Arboleda olvidada",
-        "Alchemy Lab": "Laboratorio de alquimia",
-        "Fading Lighthouse": "Faro decrépito",
-        "Pit of Souls": "Foso de almas",
-        "Magma Pit": "Foso de magma",
-        "Under Water Lagoon": "Laguna submarina",
-        "Sulfur Mine": "Mina de Azufre",
-        "Clockwork Cove": "Cala mecánica",
-        "Arcane Library": "Biblioteca arcana",
-        "Toxic Moor": "Páramo tóxico",
-        "Well of the Unfortunate": "Pozo de los desdichados",
-        "Chained Isle": "Isla Encadenada",
-        "Windswept Highlands": "Montañas ventosas",
-        "Oozing Grove": "Arboleda rezumante",
-        "Rockslide Ridge": "Cordillera de aludes",
-        "Merchant Ship": "Barco mercante",
-        "Overgrown Graveyard": "Cementerio descuidado",
-        "Harrower Hive": "Colmena de atormentadores",
-        "Vault of Secrets": "Cripta de los secretos",
-        "Sacrifice Pit": "Foso de los sacrificios",
-        "Lost Temple": "Templo perdido",
-        "Vigil Keep": "Torre de la Vigilia",
-        "Temple of the Eclipse": "Templo del eclipse",
-        "Burning Mountain": "Montaña ardiente",
-        "Shadows Within": "Sombras del interior",
-        "Crystalline Cave": "Cueva cristalina",
-        "Sun Temple": "Templo del Sol",
-        "Harried Village": "Poblado hostigado",
-        "Corrupted Cove": "Bahía corrupta",
-        "Plane of Water": "Plano del Agua",
-        "Syndicate Hideout": "Guarida del Gremio",
-        "Demonic Rift": "Grieta demoníaca",
-        "Wild Melee": "Tumulto salvaje",
-        "Back Alley Brawl": "Reyerta de callejón",
-        "Sunken Vessel": "Barco naufragado",
-        "Vermling Nest": "Nido de infestores",
-        "Payment Due": "Cuenta pendiente",
-        // FC
-        "Unexpected Visitors": "Unexpected Visitors",
-        "Lore Untold": "Lore Untold",
-        "Past in Flames": "Past in Flames",
-        "Aftershocks": "Aftershocks",
-        "Shifting Gears": "Shifting Gears",
-        "Shrouded Crypt": "Shrouded Crypt",
-        "Bazaar of Knowledge": "Bazaar of Knowledge",
-        "Where It Is Needed": "Where It Is Needed",
-        "A Gaping Wound": "A Gaping Wound",
-        "Monstrosities of a Cult": "Monstrosities of a Cult",
-        "Intricate Work": "Intricate Work",
-        "Mechanical Genius": "Mechanical Genius",
-        "Prologue to the End": "Prologue to the End",
-        "Epilogue of a War": "Epilogue of a War",
-        "A Circular Solution": "A Circular Solution",
-        "The Shackles Loosen": "The Shackles Loosen",
-        "The Bottom of It": "The Bottom of It",
-        "The Lost Thread": "The Lost Thread",
-        "Ink Not Yet Dry": "Ink Not Yet Dry",
-        "Future Uncertain": "Future Uncertain",
-        "Tower to the Stars": "Tower to the Stars",
-        // JotL
-        "Roadside Ambush": "Roadside Ambush",
-        "A Hole in the Wall": "A Hole in the Wall",
-        "The Black Ship": "The Black Ship",
-        "A Ritual in Stone": "A Ritual in Stone",
-        "A Deeper Understanding": "A Deeper Understanding",
-        "Corrupted Research": "Corrupted Research",
-        "Sunken Tumor": "Sunken Tumor",
-        "Hidden Tumor": "Hidden Tumor",
-        "Explosive Evolution": "Explosive Evolution",
-        "The Gauntlet": "The Gauntlet",
-        "Defiled Sewers": "Defiled Sewers",
-        "Beguiling Sewers": "Beguiling Sewers",
-        "Vile Harvest": "Vile Harvest",
-        "Toxic Harvest": "Toxic Harvest",
-        "Tainted Blood": "Tainted Blood",
-        "Mixed Results": "Mixed Results",
-        "Red Twilight": "Red Twilight",
-        "The Heist": "The Heist",
-        "Den of Thieves": "Den of Thieves",
-        "Misplaced Goods": "Misplaced Goods",
-        "Agents of Chaos": "Agents of Chaos",
-        "Unfriendly Message": "Unfriendly Message",
-        "Best of the Best": "Best of the Best",
-        "Warding the Void": "Warding the Void",
-        "The Greatest Job in the World": "The Greatest Job in the World",
+        "gh-1": {
+            "name": "Túmulo Negro"
+        },
+        "gh-2": {
+            "name": "Guarida del Túmulo",
+            "rewards": [
+                "10 gold each",
+                "+1 prosperity"
+            ]
+        },
+        "gh-3": {
+            "name": "Campamento inox",
+            "rewards": [
+                "15 gold each",
+                "+1 prosperity"
+            ]
+        },
+        "gh-4": {
+            "name": "Cripta de los Malditos"
+        },
+        "gh-5": {
+            "name": "Cripta Ruinosa"
+        },
+        "gh-6": {
+            "name": "Cripta decadente",
+            "rewards": [
+                "5 gold each"
+            ]
+        },
+        "gh-7": {
+            "name": "Gruta trepidante"
+        },
+        "gh-8": {
+            "name": "Almacén de Gloomhaven",
+            "rewards": [
+                "+2 reputation"
+            ]
+        },
+        "gh-9": {
+            "name": "Mina de diamantes",
+            "rewards": [
+                "20 gold each",
+                "+1 prosperity"
+            ]
+        },
+        "gh-10": {
+            "name": "Plano del Poder Elemental"
+        },
+        "gh-11": {
+            "name": "Plaza de Gloomhaven A",
+            "rewards": [
+                "15 gold each",
+                "-2 reputation",
+                "+2 prosperity",
+                "“Skullbane Axe” design (Item 113)"
+            ]
+        },
+        "gh-12": {
+            "name": "Plaza de Gloomhaven B",
+            "rewards": [
+                "+4 reputation",
+                "“Skullbane Axe” design (Item 113)"
+            ]
+        },
+        "gh-13": {
+            "name": "Templo del Vidente"
+        },
+        "gh-14": {
+            "name": "Hondonada Helada"
+        },
+        "gh-15": {
+            "name": "Altar de la fuerza",
+            "rewards": [
+                "20 experience each"
+            ]
+        },
+        "gh-16": {
+            "name": "El paso de la montaña"
+        },
+        "gh-17": {
+            "name": "Isla perdida",
+            "rewards": [
+                "25 gold each"
+            ]
+        },
+        "gh-18": {
+            "name": "Cloacas abandonadas"
+        },
+        "gh-19": {
+            "name": "Cripta olvidada",
+            "rewards": [
+                "+1 prosperity"
+            ]
+        },
+        "gh-20": {
+            "name": "Santuario de la nigromante",
+            "rewards": [
+                "20 gold each",
+                "+2 reputation",
+                "+1 prosperity"
+            ]
+        },
+        "gh-21": {
+            "name": "Trono infernal",
+            "rewards": [
+                "50 gold each",
+                "+1 prosperity",
+                "Add City Event 78 to the deck"
+            ]
+        },
+        "gh-22": {
+            "name": "Templo de los Elementos"
+        },
+        "gh-23": {
+            "name": "Ruinas profundas"
+        },
+        "gh-24": {
+            "name": "Cámara de los Ecos"
+        },
+        "gh-25": {
+            "name": "Ascenso al Risco de Hielo"
+        },
+        "gh-26": {
+            "name": "Antiguo aljibe",
+            "rewards": [
+                "10 gold each",
+                "+1 reputation",
+                "+2 prosperity"
+            ]
+        },
+        "gh-27": {
+            "name": "Grieta destructiva",
+            "rewards": [
+                "+1 prosperity",
+                "100 gold each This money must immediately be spent on enhancements"
+            ]
+        },
+        "gh-28": {
+            "name": "Cámara ritual ultraterrestre"
+        },
+        "gh-29": {
+            "name": "Santuario de la Penumbra",
+            "rewards": [
+                "15 experience each"
+            ]
+        },
+        "gh-30": {
+            "name": "Altar de las profundidades",
+            "rewards": [
+                "10 gold each"
+            ]
+        },
+        "gh-31": {
+            "name": "Plano de la Noche"
+        },
+        "gh-32": {
+            "name": "Bosque decrépito"
+        },
+        "gh-33": {
+            "name": "Armería savvas"
+        },
+        "gh-34": {
+            "name": "Cumbre calcinada",
+            "rewards": [
+                "20 gold each",
+                "+2 reputation",
+                "+1 prosperity"
+            ]
+        },
+        "gh-35": {
+            "name": "Almenas de Gloomhaven A",
+            "rewards": [
+                "30 gold each",
+                "5 reputation",
+                "-2 prosperity",
+                "Add City Event 79 to the deck"
+            ]
+        },
+        "gh-36": {
+            "name": "Almenas de Gloomhaven B",
+            "rewards": [
+                "10 gold each",
+                "+4 reputation",
+                "Add City Event 78 to the deck"
+            ]
+        },
+        "gh-37": {
+            "name": "Fosa maldita"
+        },
+        "gh-38": {
+            "name": "Jaula de esclavos",
+            "rewards": [
+                "+1 reputation"
+            ]
+        },
+        "gh-39": {
+            "name": "Puente traicionero",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "gh-40": {
+            "name": "Antigua red de defensa"
+        },
+        "gh-41": {
+            "name": "Tumba ancestral",
+            "rewards": [
+                "50 gold each",
+                "25 experience each",
+                "2 ✔ each",
+                "+2 prosperity"
+            ]
+        },
+        "gh-42": {
+            "name": "Reino de la Voz",
+            "rewards": [
+                "{NOTE_42}"
+            ]
+        },
+        "gh-43": {
+            "name": "Nido de dracos"
+        },
+        "gh-44": {
+            "name": "Asalto tribal",
+            "rewards": [
+                "Open envelope {DS}",
+                "+2 reputation"
+            ]
+        },
+        "gh-45": {
+            "name": "Pantano rebelde",
+            "rewards": [
+                "20 gold each",
+                "-2 reputation"
+            ]
+        },
+        "gh-46": {
+            "name": "Cumbre agónica"
+        },
+        "gh-47": {
+            "name": "Guarida del ojo que no ve"
+        },
+        "gh-48": {
+            "name": "Bosque sombrío"
+        },
+        "gh-49": {
+            "name": "Resistencia rebelde",
+            "rewards": [
+                "50 gold each",
+                "-3 reputation"
+            ]
+        },
+        "gh-50": {
+            "name": "Fortaleza fantasma",
+            "rewards": [
+                "+3 reputation",
+                "-2 prosperity"
+            ]
+        },
+        "gh-51": {
+            "name": "El Vacío",
+            "rewards": [
+                "+5 reputation",
+                "+5 prosperity",
+                "Add City Event 81 to the deck",
+                "Add Road Event 69 to the deck"
+            ]
+        },
+        "gh-52": {
+            "name": "Sótano nocivo"
+        },
+        "gh-53": {
+            "name": "Subsuelo de la cripta",
+            "rewards": [
+                "The Seeker of Xorn receives: “Staff of Xorn” (Item 114) The Seeker cannot sell this item."
+            ]
+        },
+        "gh-54": {
+            "name": "Palacio de Hielo",
+            "rewards": [
+                "Immediately retire the Seeker of Xorn",
+                "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
+                "Open envelope {PH}"
+            ]
+        },
+        "gh-55": {
+            "name": "Maraña neblinosa",
+            "rewards": [
+                "10 collective gold"
+            ]
+        },
+        "gh-56": {
+            "name": "Bosque de los bandidos",
+            "rewards": [
+                "“Take Back the Trees” quest complete",
+                "Open envelope {DS}",
+                "10 gold each",
+                "+2 reputation"
+            ]
+        },
+        "gh-57": {
+            "name": "Investigación",
+            "rewards": [
+                "+1 reputation"
+            ]
+        },
+        "gh-58": {
+            "name": "Cabaña ensangrentada",
+            "rewards": [
+                "“Vengeance” quest complete",
+                "Open envelope X",
+                "+2 reputation"
+            ]
+        },
+        "gh-59": {
+            "name": "Arboleda olvidada"
+        },
+        "gh-60": {
+            "name": "Laboratorio de alquimia",
+            "rewards": [
+                "“Finding the Cure” quest complete",
+                "Open envelope X",
+                "+1 prosperity"
+            ]
+        },
+        "gh-61": {
+            "name": "Faro decrépito"
+        },
+        "gh-62": {
+            "name": "Foso de almas",
+            "rewards": [
+                "“The Fall of Man” quest complete",
+                "Open envelope {NS}",
+                "10 experience each"
+            ]
+        },
+        "gh-63": {
+            "name": "Foso de magma",
+            "rewards": [
+                "15 gold each"
+            ]
+        },
+        "gh-64": {
+            "name": "Laguna submarina",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "gh-65": {
+            "name": "Mina de Azufre",
+            "rewards": [
+                "“Ancient Drill” design (Item 112)"
+            ]
+        },
+        "gh-66": {
+            "name": "Cala mecánica"
+        },
+        "gh-67": {
+            "name": "Biblioteca arcana",
+            "rewards": [
+                "“Power Core” (Item 132)"
+            ]
+        },
+        "gh-68": {
+            "name": "Páramo tóxico",
+            "rewards": [
+                "2 “Major Healing Potions” (Item 027)"
+            ]
+        },
+        "gh-69": {
+            "name": "Pozo de los desdichados",
+            "rewards": [
+                "15 gold each"
+            ]
+        },
+        "gh-70": {
+            "name": "Isla Encadenada",
+            "rewards": [
+                "+2 prosperity"
+            ]
+        },
+        "gh-71": {
+            "name": "Montañas ventosas",
+            "rewards": [
+                "2 “Major Power Potions” (Item 041)"
+            ]
+        },
+        "gh-72": {
+            "name": "Arboleda rezumante",
+            "rewards": [
+                "+1 reputation",
+                "+1 prosperity"
+            ]
+        },
+        "gh-73": {
+            "name": "Cordillera de aludes",
+            "rewards": [
+                "+1 reputation"
+            ]
+        },
+        "gh-74": {
+            "name": "Barco mercante",
+            "rewards": [
+                "10 gold each",
+                "+2 prosperity"
+            ]
+        },
+        "gh-75": {
+            "name": "Cementerio descuidado",
+            "rewards": [
+                "60 gold each"
+            ]
+        },
+        "gh-76": {
+            "name": "Colmena de atormentadores"
+        },
+        "gh-77": {
+            "name": "Cripta de los secretos",
+            "rewards": [
+                "5 experience each"
+            ]
+        },
+        "gh-78": {
+            "name": "Foso de los sacrificios",
+            "rewards": [
+                "+3 reputation"
+            ]
+        },
+        "gh-79": {
+            "name": "Templo perdido",
+            "rewards": [
+                "15 gold each"
+            ]
+        },
+        "gh-80": {
+            "name": "Torre de la Vigilia",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "gh-81": {
+            "name": "Templo del eclipse",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "gh-82": {
+            "name": "Montaña ardiente",
+            "rewards": [
+                [
+                    "+1 reputation"
+                ],
+                [
+                    "-1 reputation",
+                    "-2 prosperity"
+                ]
+            ]
+        },
+        "gh-83": {
+            "name": "Sombras del interior",
+            "rewards": [
+                "40 collective gold"
+            ]
+        },
+        "gh-84": {
+            "name": "Cueva cristalina",
+            "rewards": [
+                "“Resonant Crystal” (Item 133)",
+                "+1 prosperity"
+            ]
+        },
+        "gh-85": {
+            "name": "Templo del Sol",
+            "rewards": [
+                "“Orb of Dawn” (Item 121)"
+            ]
+        },
+        "gh-86": {
+            "name": "Poblado hostigado",
+            "rewards": [
+                "+2 reputation"
+            ]
+        },
+        "gh-87": {
+            "name": "Bahía corrupta",
+            "rewards": [
+                "+1 reputation",
+                "+1 prosperity"
+            ]
+        },
+        "gh-88": {
+            "name": "Plano del Agua",
+            "rewards": [
+                "“Staff of Summoning” (Item 120)"
+            ]
+        },
+        "gh-89": {
+            "name": "Guarida del Gremio",
+            "rewards": [
+                "50 collective gold"
+            ]
+        },
+        "gh-90": {
+            "name": "Grieta demoníaca",
+            "rewards": [
+                "“Black Censer” (Item 128)"
+            ]
+        },
+        "gh-91": {
+            "name": "Tumulto salvaje",
+            "rewards": [
+                "2 ✔ each"
+            ]
+        },
+        "gh-92": {
+            "name": "Reyerta de callejón",
+            "rewards": [
+                "10 gold each",
+                "-3 reputation"
+            ]
+        },
+        "gh-93": {
+            "name": "Barco naufragado",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "gh-94": {
+            "name": "Nido de infestores"
+        },
+        "gh-95": {
+            "name": "Cuenta pendiente",
+            "rewards": [
+                "“Skull of Hatred” (Item 119)"
+            ]
+        },
+        "fc-96": {
+            "name": "Unexpected Visitors",
+            "rewards": [
+                "10 experience each",
+                "Add City and Road Events 82 to their respective decks"
+            ]
+        },
+        "fc-97": {
+            "name": "Lore Untold",
+            "rewards": [
+                "10 gold each",
+                "Add City Events 88, 89 and 90 to the deck"
+            ]
+        },
+        "fc-98": {
+            "name": "Past in Flames",
+            "rewards": [
+                [
+                    "10 gold each",
+                    "+1 reputation",
+                    "+1 prosperity",
+                    "Add City Event 86 to the deck"
+                ],
+                [
+                    "5 gold each",
+                    "+1 reputation"
+                ],
+                [
+                    "5 gold each",
+                    "+1 reputation"
+                ]
+            ]
+        },
+        "fc-99": {
+            "name": "Aftershocks",
+            "rewards": [
+                [
+                    "5 gold each",
+                    "“Minor Antidote” (Item 153)"
+                ],
+                [
+                    "10 gold each",
+                    "+1 prosperity",
+                    "“Minor Antidote” (Item 153)"
+                ]
+            ]
+        },
+        "fc-100": {
+            "name": "Shifting Gears",
+            "rewards": [
+                "Choose to gain one of the following sets: “Telescopic Lens” (Item 059) and “Ancient Drill” (Item 112), OR “Curious Gear” (Item 125) and “Remote Spider” (Item 126)"
+            ]
+        },
+        "fc-101": {
+            "name": "Shrouded Crypt",
+            "rewards": [
+                "20 collective gold",
+                "+1 reputation",
+                "+1 prosperity"
+            ]
+        },
+        "fc-102": {
+            "name": "Bazaar of Knowledge",
+            "rewards": [
+                "15 experience each",
+                "If no more than 2+C inhabitants were intimidated: +2 reputation Otherwise: -2 reputation"
+            ]
+        },
+        "fc-103": {
+            "name": "Where It Is Needed",
+            "rewards": [
+                "+2 prosperity",
+                "Add City Event 87 to the deck"
+            ]
+        },
+        "fc-104": {
+            "name": "A Gaping Wound",
+            "rewards": [
+                "“Major Mana Potion” (Item 048)"
+            ]
+        },
+        "fc-105": {
+            "name": "Monstrosities of a Cult",
+            "rewards": [
+                "“Major Antidote” (Item 154)"
+            ]
+        },
+        "fc-106": {
+            "name": "Intricate Work",
+            "rewards": [
+                [
+                    "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements"
+                ],
+                [
+                    "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements",
+                    "+ 1 prosperity"
+                ]
+            ]
+        },
+        "fc-107": {
+            "name": "Mechanical Genius",
+            "rewards": [
+                "5 experience each"
+            ]
+        },
+        "fc-108": {
+            "name": "Prologue to the End",
+            "rewards": [
+                [
+                    "“Curseward Armor” (Item 155)"
+                ],
+                [
+                    "2 “Throwing Axes” (Item 161)"
+                ],
+                [
+                    "“Curseward Armor” (Item 155)",
+                    "2 “Throwing Axes” (Item 161)"
+                ]
+            ]
+        },
+        "fc-109": {
+            "name": "Epilogue of a War",
+            "rewards": [
+                "10 experience each",
+                "“Protective Charm” (Item 052)"
+            ]
+        },
+        "fc-110": {
+            "name": "A Circular Solution",
+            "rewards": [
+                "“Crystal Tiara” (Item 163)"
+            ]
+        },
+        "fc-111": {
+            "name": "The Shackles Loosen",
+            "rewards": [
+                [
+                    "5 experience each",
+                    "Add Rift Event 16 to the deck. Instead of shuffling this event into the whole deck, shuffle it into the top 3 cards"
+                ],
+                [
+                    "12 experience each",
+                    "1 ✓ each"
+                ]
+            ]
+        },
+        "fc-112": {
+            "name": "The Bottom of It",
+            "rewards": [
+                [
+                    "10 gold each",
+                    "5 experience each"
+                ],
+                [
+                    "25 collective gold",
+                    "5 experience each",
+                    "1 ✓ each"
+                ]
+            ]
+        },
+        "fc-113": {
+            "name": "The Lost Thread",
+            "rewards": [
+                "135 gold each",
+                "This money must immediately be spent on any Move {MOVE}, Range {RANGE} or Jump {JUMP} enhancements",
+                "+1 prosperity"
+            ]
+        },
+        "fc-114": {
+            "name": "Ink Not Yet Dry",
+            "rewards": [
+                "Party Boon: Additional costs of enhancing an ability card based on the level of the card are now reduced by 5 gold per level."
+            ]
+        },
+        "fc-115": {
+            "name": "Future Uncertain",
+            "rewards": [
+                "+3 reputation",
+                "+1 prosperity",
+                "Retire the Aesther Diviner {DR}",
+                "Add City and Road Events 83 to their respective decks"
+            ]
+        },
+        "fc-200": {
+            "name": "Tower to the Stars",
+            "rewards": [
+                "15 gold each",
+                "1 ✓ each",
+                "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
+            ]
+        },
+        "jotl-1": {
+            "name": "Roadside Ambush"
+        },
+        "jotl-2": {
+            "name": "A Hole in the Wall",
+            "rewards": [
+                "25 gold each",
+                "Add items 1-13 to the shop"
+            ]
+        },
+        "jotl-3": {
+            "name": "The Black Ship",
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        "jotl-4": {
+            "name": "A Ritual in Stone",
+            "rewards": [
+                "“Mana Potion” (Item 14)"
+            ]
+        },
+        "jotl-5": {
+            "name": "A Deeper Understanding",
+            "rewards": [
+                "25 experience each"
+            ]
+        },
+        "jotl-6": {
+            "name": "Corrupted Research",
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        "jotl-7": {
+            "name": "Sunken Tumor",
+            "rewards": [
+                "20 experience each"
+            ]
+        },
+        "jotl-8": {
+            "name": "Hidden Tumor"
+        },
+        "jotl-9": {
+            "name": "Explosive Evolution",
+            "rewards": [
+                "20 experience each",
+                "Add items 15-20 to the shop"
+            ]
+        },
+        "jotl-10": {
+            "name": "The Gauntlet",
+            "rewards": [
+                "15 experience each"
+            ]
+        },
+        "jotl-11": {
+            "name": "Defiled Sewers",
+            "rewards": [
+                "“Flea-Bitten Shawl” (Item 28)"
+            ]
+        },
+        "jotl-12": {
+            "name": "Beguiling Sewers",
+            "rewards": [
+                "“Flea-Bitten Shawl” (Item 28)"
+            ]
+        },
+        "jotl-13": {
+            "name": "Vile Harvest",
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        "jotl-14": {
+            "name": "Toxic Harvest",
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        "jotl-15": {
+            "name": "Tainted Blood",
+            "rewards": [
+                "10 gold each",
+                "Add items 21-26 to the shop"
+            ]
+        },
+        "jotl-16": {
+            "name": "Mixed Results",
+            "rewards": [
+                "15 experience each",
+                "“Tower Shield” (Item 29)"
+            ]
+        },
+        "jotl-17": {
+            "name": "Red Twilight",
+            "rewards": [
+                "25 experience each",
+                "30 gold each"
+            ]
+        },
+        "jotl-18": {
+            "name": "The Heist",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "jotl-19": {
+            "name": "Den of Thieves",
+            "rewards": [
+                "“Ring of Strength” (Item 31)"
+            ]
+        },
+        "jotl-20": {
+            "name": "Misplaced Goods",
+            "rewards": [
+                "10 gold each"
+            ]
+        },
+        "jotl-21": {
+            "name": "Agents of Chaos",
+            "rewards": [
+                "15 gold each"
+            ]
+        },
+        "jotl-22": {
+            "name": "Unfriendly Message",
+            "rewards": [
+                "“Steel Ring” (Item 33)"
+            ]
+        },
+        "jotl-23": {
+            "name": "Best of the Best",
+            "rewards": [
+                "“Barbed Axe” (Item 34)"
+            ]
+        },
+        "jotl-24": {
+            "name": "Warding the Void",
+            "rewards": [
+                "“Robes of Command” (Item 35)"
+            ]
+        },
+        "jotl-25": {
+            "name": "The Greatest Job in the World",
+            "rewards": [
+                "“Jet Boots” (Item 36)"
+            ]
+        }
     },
     "achievements": {
-        "First Steps": "Primeros pasos",
-        "Jekserahs Plans": "Los planes de Jekserah",
-        "Dark Bounty": "Encargo siniestro",
-        "The Merchant Flees": "La comerciante huye",
-        "The Dead Invade": "La invasión de los muertos",
-        "A Demons Errand": "El recado de un demonio",
-        "City Rule: Economic": "Gobierno de la ciudad: Económico",
-        "City Rule: Militaristic": "Gobierno de la ciudad: Militarista",
-        "End of the Invasion": "Fin de la invasión",
-        "The Power of Enhancement": "El poder de la mejora",
-        "Stonebreakers Censer": "Incensario de Romperrocas",
-        "The Rift Neutralized": "La grieta neutralizada",
-        "The Artifact: Recovered": "Artefacto recuperado",
-        "The Artifact: Recovered (previously Lost)": "Artefacto recuperado (previamente perdido)",
-        "The Artifact: Lost": "Artefacto perdido",
-        "Ancient Technology": "Tecnología antigua",
-        "Ancient Technology x2": "Tecnología antigua x2",
-        "Ancient Technology x3": "Tecnología antigua x3",
-        "Ancient Technology x4": "Tecnología antigua x4",
-        "Ancient Technology x5": "Tecnología antigua x5",
-        "Through the Ruins": "A través de las ruinas",
-        "The Voices Command": "La petición de la Voz",
-        "The Drakes Command": "La orden del Draco",
-        "Following Clues": "Tras la pista",
-        "An Invitation": "Una invitación",
-        "The Edge of Darkness": "El filo de la oscuridad",
-        "The Scepter and the Voice": "El cetro y la Voz",
-        "Artifact: Cleansed": "Artefacto purificado",
-        "The Voices Treasure": "El tesoro de la Voz",
-        "The Drakes Treasure": "El tesoro del draco",
-        "The Drake Slain": "El draco ejecutado",
-        "The Drake Aided": "El draco auxiliado",
-        "City Rule: Demonic": "Gobierno de la ciudad: Demoníaco",
-        "Through the Trench": "A través de la Fosa",
-        "Redthorns Aid": "La ayuda de Espina Carmesí",
-        "Across the Divide": "Al otro lado del puente",
-        "The Voice Freed": "La Voz liberada",
-        "The Voice Silenced": "La Voz silenciada",
-        "Water-Breathing": "Respiración subacuática",
-        "End of Corruption": "El fin de la corrupción",
-        "End of Corruption x2": "El fin de la corrupción x2",
-        "End of Corruption x3": "El fin de la corrupción x3",
-        "Annihilation of Order": "La aniquilación del orden",
-        "End of Gloom": "El fin de la Penumbra",
-        "The Poisons Source": "El origen del veneno",
-        "Through the Nest": "A través del nido",
-        "A Map to Treasure": "Mapa del tesoro",
-        "Bad Business": "Mal negocio",
-        "Sun-Blessed": "Bendecidos por el Sol",
-        "Sin-Ra": "Sin-Ra",
-        "Debt Collection": "Cobro de deuda",
-        "Water Staff": "Báculo del agua",
-        "Fishs Aid": "La ayuda de Fish",
-        "Tremors": "Temblores",
-        "High Sea Escort": "Escolta en alta mar",
-        "Grave Job": "Golpe en el cementerio",
-        "Northern Expedition": "Northern Expedition",
-        "Through the Portal": "Through the Portal",
-        "Knowledge is Power": "Knowledge is Power",
-        "Knowledge is Power x2": "Knowledge is Power x2",
-        "Knowledge is Power x3": "Knowledge is Power x3",
-        "Knowledge is Power x4": "Knowledge is Power x4",
-        // FC
-        "Angels of Death": "Angels of Death",
-        "Custodians": "Custodians",
-        "Hunted Prey": "Hunted Prey",
-        "Pieces of an Artifact": "Pieces of an Artifact",
-        "Pieces of an Artifact x2": "Pieces of an Artifact x2",
-        "Pieces of an Artifact x3": "Pieces of an Artifact x3",
-        "Guard Detail": "Guard Detail",
-        "Dimensional Equilibrium": "Dimensional Equilibrium",
-        "Hunting the Hunter": "Hunting the Hunter",
-        "Xangroths Aid": "Xangroth's Aid",
-        "Diamaras Aid": "Diamara's Aid",
-        "Beauty in Freedom": "Beauty in Freedom",
-        "A Peril Averted": "A Peril Averted",
-        "A Peril Averted x2": "A Peril Averted x2",
-        "A Peril Averted x3": "A Peril Averted x3",
-        "A Peril Averted x4": "A Peril Averted x4",
-        "Mechanical Splendor": "Mechanical Splendor",
-        "Severed Ties": "Severed Ties"
+        "gh-PFS": {
+            "name": "Primeros pasos"
+        },
+        "gh-PJP": {
+            "name": "Los planes de Jekserah"
+        },
+        "gh-PDB": {
+            "name": "Encargo siniestro"
+        },
+        "gh-GTMF": {
+            "name": "La comerciante huye"
+        },
+        "gh-GTDI": {
+            "name": "La invasión de los muertos"
+        },
+        "gh-PADE": {
+            "name": "El recado de un demonio"
+        },
+        "gh-GCRE": {
+            "name": "Gobierno de la ciudad: Económico"
+        },
+        "gh-GCRM": {
+            "name": "Gobierno de la ciudad: Militarista"
+        },
+        "gh-GEOI": {
+            "name": "Fin de la invasión"
+        },
+        "gh-GTPE": {
+            "name": "El poder de la mejora"
+        },
+        "gh-PSC": {
+            "name": "Incensario de Romperrocas"
+        },
+        "gh-GTRN": {
+            "name": "La grieta neutralizada"
+        },
+        "gh-GAR": {
+            "name": "Artefacto recuperado"
+        },
+        "gh-GAR2": {
+            "name": "Artefacto recuperado (previamente perdido)"
+        },
+        "gh-GAL": {
+            "name": "Artefacto perdido"
+        },
+        "gh-GAT": {
+            "name": "Tecnología antigua"
+        },
+        "gh-GAT2": {
+            "name": "Tecnología antigua x2"
+        },
+        "gh-GAT3": {
+            "name": "Tecnología antigua x3"
+        },
+        "gh-GAT4": {
+            "name": "Tecnología antigua x4"
+        },
+        "gh-GAT5": {
+            "name": "Tecnología antigua x5"
+        },
+        "gh-PTR": {
+            "name": "A través de las ruinas"
+        },
+        "gh-PTVC": {
+            "name": "La petición de la Voz"
+        },
+        "gh-PTDC": {
+            "name": "La orden del Draco"
+        },
+        "gh-PFC": {
+            "name": "Tras la pista"
+        },
+        "gh-PAI": {
+            "name": "Una invitación"
+        },
+        "gh-GTED": {
+            "name": "El filo de la oscuridad"
+        },
+        "gh-PTSV": {
+            "name": "El cetro y la Voz"
+        },
+        "gh-GAC": {
+            "name": "Artefacto purificado"
+        },
+        "gh-PTVT": {
+            "name": "El tesoro de la Voz"
+        },
+        "gh-PTDT": {
+            "name": "El tesoro del draco"
+        },
+        "gh-GTDS": {
+            "name": "El draco ejecutado"
+        },
+        "gh-GTDA": {
+            "name": "El draco auxiliado"
+        },
+        "gh-GCRD": {
+            "name": "Gobierno de la ciudad: Demoníaco"
+        },
+        "gh-PTTT": {
+            "name": "A través de la Fosa"
+        },
+        "gh-PRA": {
+            "name": "La ayuda de Espina Carmesí"
+        },
+        "gh-PATD": {
+            "name": "Al otro lado del puente"
+        },
+        "gh-GTVF": {
+            "name": "La Voz liberada"
+        },
+        "gh-GTVS": {
+            "name": "La Voz silenciada"
+        },
+        "gh-GWB": {
+            "name": "Respiración subacuática"
+        },
+        "gh-GEOC": {
+            "name": "El fin de la corrupción"
+        },
+        "gh-GEOC2": {
+            "name": "El fin de la corrupción x2"
+        },
+        "gh-GEOC3": {
+            "name": "El fin de la corrupción x3"
+        },
+        "gh-GAOO": {
+            "name": "La aniquilación del orden"
+        },
+        "gh-GEOG": {
+            "name": "El fin de la Penumbra"
+        },
+        "gh-PTTN": {
+            "name": "El origen del veneno"
+        },
+        "gh-PAMT": {
+            "name": "A través del nido"
+        },
+        "gh-PBB": {
+            "name": "Mapa del tesoro"
+        },
+        "gh-PTPS": {
+            "name": "Mal negocio"
+        },
+        "gh-PSB": {
+            "name": "Bendecidos por el Sol"
+        },
+        "gh-PSR": {
+            "name": "Sin-Ra"
+        },
+        "gh-PDC": {
+            "name": "Cobro de deuda"
+        },
+        "gh-PWS": {
+            "name": "Báculo del agua"
+        },
+        "gh-PFA": {
+            "name": "La ayuda de Fish"
+        },
+        "gh-PT": {
+            "name": "Temblores"
+        },
+        "gh-PHSE": {
+            "name": "Escolta en alta mar"
+        },
+        "gh-PGJ": {
+            "name": "Golpe en el cementerio"
+        },
+        "gh-PNE": {
+            "name": "Northern Expedition"
+        },
+        "gh-GTTP": {
+            "name": "Through the Portal"
+        },
+        "gh-GKIP": {
+            "name": "Knowledge is Power"
+        },
+        "gh-GKIP2": {
+            "name": "Knowledge is Power x2"
+        },
+        "gh-GKIP3": {
+            "name": "Knowledge is Power x3"
+        },
+        "gh-GKIP4": {
+            "name": "Knowledge is Power x4"
+        },
+        "gh-PAD": {
+            "name": "Angels of Death"
+        },
+        "gh-PC": {
+            "name": "Custodians"
+        },
+        "gh-PHP": {
+            "name": "Hunted Prey"
+        },
+        "gh-GPOA": {
+            "name": "Pieces of an Artifact"
+        },
+        "gh-GPOA2": {
+            "name": "Pieces of an Artifact x2"
+        },
+        "gh-GPOA3": {
+            "name": "Pieces of an Artifact x3"
+        },
+        "gh-PGD": {
+            "name": "Guard Detail"
+        },
+        "gh-PDE": {
+            "name": "Dimensional Equilibrium"
+        },
+        "gh-PHH": {
+            "name": "Hunting the Hunter"
+        },
+        "gh-PXA": {
+            "name": "Xangroth's Aid"
+        },
+        "gh-PDA": {
+            "name": "Diamara's Aid"
+        },
+        "gh-PBF": {
+            "name": "Beauty in Freedom"
+        },
+        "gh-GPA": {
+            "name": "A Peril Averted"
+        },
+        "gh-GPA2": {
+            "name": "A Peril Averted x2"
+        },
+        "gh-GPA3": {
+            "name": "A Peril Averted x3"
+        },
+        "gh-GPA4": {
+            "name": "A Peril Averted x4"
+        },
+        "gh-GMS": {
+            "name": "Mechanical Splendor"
+        },
+        "gh-GST": {
+            "name": "Severed Ties"
+        }
     },
     "items": {
-        "gh_1": {
+        "gh-1": {
             "name": "Botas de Zancadas",
             "source": "Prosperity 1",
             "desc": "During your movement, add +2 {MOVE} to the movement.",
             "faq": "Boots of Striding only add to the numerical value of an existing single movement ability. They do not give you a free movement action."
         },
-        "gh_2": {
+        "gh-2": {
             "name": "Zapatos Alados",
             "source": "Prosperity 1",
             "desc": "During your movement, add {JUMP} to the movement.",
             "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
         },
-        "gh_3": {
+        "gh-3": {
             "name": "Armadura de Piel",
             "source": "Prosperity 1",
             "desc": "On the next two sources of damage to you from attacks, gain {SHIELD} 1. Add 2 {-1} to your attack modifier deck.",
             "faq": "Hide Armor only grants the shield for the attack, not until the end of the round."
         },
-        "gh_4": {
+        "gh-4": {
             "name": "Armadura de Cuero",
             "source": "Prosperity 1",
             "desc": "When attacked, the attacker gains Disadvantage on the attack.",
             "faq": "The Leather Armor must be used before the enemy draws an attack modifier card."
         },
-        "gh_5": {
+        "gh-5": {
             "name": "Capa de Invisibilidad",
             "source": "Prosperity 1",
             "desc": "During your turn, gain {INVISIBLE}."
         },
-        "gh_6": {
+        "gh-6": {
             "name": "Lentes Ojo de Águila",
             "source": "Prosperity 1",
             "desc": "During your attack, gain Advantage on the entire Attack action."
         },
-        "gh_7": {
+        "gh-7": {
             "name": "Yelmo de Hierro",
             "source": "Prosperity 1",
             "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
         },
-        "gh_8": {
+        "gh-8": {
             "name": "Escudo Triangular",
             "source": "Prosperity 1",
             "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
         },
-        "gh_9": {
+        "gh-9": {
             "name": "Arco Perforante",
             "source": "Prosperity 1",
             "desc": "During your ranged attack, ignore all Shield values for the entire Attack action."
         },
-        "gh_10": {
+        "gh-10": {
             "name": "Martillo de Guerra",
             "source": "Prosperity 1",
             "desc": "During your melee attack, add {STUN} to the entire Attack action."
         },
-        "gh_11": {
+        "gh-11": {
             "name": "Daga Envenenada",
             "source": "Prosperity 1",
             "desc": "During your melee attack, add {POISON} to a single attack."
         },
-        "gh_12": {
+        "gh-12": {
             "name": "Poción Curativa Menor",
             "source": "Prosperity 1",
             "desc": "During your turn, perform a “{HEAL} 3, self” action."
         },
-        "gh_13": {
+        "gh-13": {
             "name": "Poción de Resistencia Menor",
             "source": "Prosperity 1",
             "desc": "During your turn, {RECOVER} up to two of your discarded cards.",
             "faq": "[Errata] The item should allow you to recover only one discarded card. This is change in an upcoming expansion but may be used for the base game."
         },
-        "gh_14": {
+        "gh-14": {
             "name": "Poción de Poder Menor",
             "source": "Prosperity 1",
             "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
         },
-        "gh_15": {
+        "gh-15": {
             "name": "Botas de Velocidad",
             "source": "Prosperity 2",
             "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 10."
         },
-        "gh_16": {
+        "gh-16": {
             "name": "Capa de Bolsillos",
             "source": "Prosperity 2",
             "desc": "You can carry two additional small items."
         },
-        "gh_17": {
+        "gh-17": {
             "name": "Talismán Reviltalizador",
             "source": "Prosperity 2",
             "desc": "During your turn, {REFRESH} one of your consumed small items."
         },
-        "gh_18": {
+        "gh-18": {
             "name": "Hacha de Batalla",
             "source": "Prosperity 2",
             "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
         },
-        "gh_19": {
+        "gh-19": {
             "name": "Red Contrapesada",
             "source": "Prosperity 2",
             "desc": "During your ranged attack, add {IMMOBILIZE} to a single attack."
         },
-        "gh_20": {
+        "gh-20": {
             "name": "Poción de Maná Menor",
             "source": "Prosperity 2",
             "desc": "During your turn, create any element. {ANY}"
         },
-        "gh_21": {
+        "gh-21": {
             "name": "Polvo Aturdidor",
             "source": "Prosperity 2",
             "desc": "During your attack, add {STUN} to a single attack."
         },
-        "gh_22": {
+        "gh-22": {
             "name": "Grebas Pesadas",
             "source": "Prosperity 3",
             "desc": "You are immune to all forced movement caused by enemies or scenario effects. Add 1 {-1} to your attack modifier deck."
         },
-        "gh_23": {
+        "gh-23": {
             "name": "Cota de Malla",
             "source": "Prosperity 3",
             "desc": "On the next three sources of damage to you from attacks, gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
             "faq": "Chainmail only grants the shield for the attack, not until the end of the round."
         },
-        "gh_24": {
+        "gh-24": {
             "name": "Amuleto de la Vida",
             "source": "Prosperity 3",
             "desc": "During your turn, {HEAL} 1 damage."
         },
-        "gh_25": {
+        "gh-25": {
             "name": "Espada Aserrada",
             "source": "Prosperity 3",
             "desc": "During your melee attack, add {WOUND} to a single attack."
         },
-        "gh_26": {
+        "gh-26": {
             "name": "Lanza Larga",
             "source": "Prosperity 3",
             "desc": "Turn a single-target melee attack into the following: {AOE.LINE_0_1_1}"
         },
-        "gh_27": {
+        "gh-27": {
             "name": "Poción Curativa Mayor",
             "source": "Prosperity 3",
             "desc": "During your turn, perform a “{HEAL} 5, self” action."
         },
-        "gh_28": {
+        "gh-28": {
             "name": "Pendiente de Luna",
             "source": "Prosperity 3",
             "desc": "During your turn, {REFRESH} all of your spent items."
         },
-        "gh_29": {
+        "gh-29": {
             "name": "Zapatos Cómodos",
             "source": "Prosperity 4",
             "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
         },
-        "gh_30": {
+        "gh-30": {
             "name": "Cuero Tachonado",
             "source": "Prosperity 4",
             "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
         },
-        "gh_31": {
+        "gh-31": {
             "name": "Yelmo de Halcón",
             "source": "Prosperity 4",
             "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
         },
-        "gh_32": {
+        "gh-32": {
             "name": "Pavés",
             "source": "Prosperity 4",
             "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
         },
-        "gh_33": {
+        "gh-33": {
             "name": "Bomba Volátil",
             "source": "Prosperity 4",
             "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
         },
-        "gh_34": {
+        "gh-34": {
             "name": "Poción de Resistencia Mayor",
             "source": "Prosperity 4",
             "desc": "During your turn, {RECOVER} up to three of your discarded cards.",
             "faq": "[Errata] The item should allow you to recover only two discarded cards. This is change in an upcoming expansion but may be used in the base game."
         },
-        "gh_35": {
+        "gh-35": {
             "name": "Figura de Halcón",
             "source": "Prosperity 4\nScenario #98 (Treasure #79)",
             "desc": "Summon Jade Falcon ({FLYING})",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
-        "gh_36": {
+        "gh-36": {
             "name": "Botas de Carrera",
             "source": "Prosperity 5",
             "desc": "During your movement, add +3 {MOVE} to the movement."
         },
-        "gh_37": {
+        "gh-37": {
             "name": "Túnica de Evocación",
             "source": "Prosperity 5",
             "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
         },
-        "gh_38": {
+        "gh-38": {
             "name": "Bacinete Pesado",
             "source": "Prosperity 5",
             "desc": "You are immune to {STUN} and {MUDDLE}. Add 2 {-1} to your attack modifier deck."
         },
-        "gh_39": {
+        "gh-39": {
             "name": "Cadena con Garfio",
             "source": "Prosperity 5",
             "desc": "During your ranged attack, add {PULL} 2 to the entire Attack action."
         },
-        "gh_40": {
+        "gh-40": {
             "name": "Daga Versátil",
             "source": "Prosperity 5",
             "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 3 action instead of an {ATTACK} 2 action."
         },
-        "gh_41": {
+        "gh-41": {
             "name": "MPoción de Poder Mayor",
             "source": "Prosperity 5\nScenario #105 (Treasure #83)",
             "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
         },
-        "gh_42": {
+        "gh-42": {
             "name": "Anillo de Premura",
             "source": "Prosperity 5",
             "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of the card."
         },
-        "gh_43": {
+        "gh-43": {
             "name": "Botas de Aceleración",
             "source": "Prosperity 6",
             "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 20."
         },
-        "gh_44": {
+        "gh-44": {
             "name": "Lóriga de Láminas",
             "source": "Prosperity 6",
             "desc": "On the next four sources of damage to you from attacks, gain {SHIELD} 1. Add 4 {-1} to your attack modifier deck."
         },
-        "gh_45": {
+        "gh-45": {
             "name": "Colgante de Pactos Siniestros",
             "source": "Prosperity 6",
             "desc": "During your turn, {REFRESH} two of your consumed small items. Gain {CURSE}.",
             "faq": "The perk that ignores item effects does not prevent you from being cursed."
         },
-        "gh_46": {
+        "gh-46": {
             "name": "Escudo Erizo",
             "source": "Prosperity 6",
             "desc": "When damaged by an attack, gain {SHIELD} 1 and Retaliate 2 for the attack."
         },
-        "gh_47": {
+        "gh-47": {
             "name": "Guadaña de Segador",
             "source": "Prosperity 6",
             "desc": "During your single-target melee attack action, turn the attack into the following:  {AOE.CLEAVE_0_1}"
         },
-        "gh_48": {
+        "gh-48": {
             "name": "Poción de Maná Mayor",
             "source": "Prosperity 6\nReward from Scenario #104",
             "desc": "During your turn, create any two elements. {ANY} {ANY}"
         },
-        "gh_49": {
+        "gh-49": {
             "name": "Pendiente de Sol",
             "source": "Prosperity 6",
             "desc": "During your turn, {REFRESH} all of your spent items and {HEAL} 3 damage."
         },
-        "gh_50": {
+        "gh-50": {
             "name": "Escarpes de Acero",
             "source": "Prosperity 7",
             "desc": "If you move 1 or fewer hexes on your turn, gain {SHIELD} 1 for the round. Add 2 {-1} to your attack modifier deck."
         },
-        "gh_51": {
+        "gh-51": {
             "name": "Armadura Sombría",
             "source": "Prosperity 7",
             "desc": "When you are damaged by an attack, suffer no damage instead."
         },
-        "gh_52": {
+        "gh-52": {
             "name": "Amuleto Protector",
             "source": "Prosperity 7\nReward from Scenario #109",
             "desc": "You are immune to {POISON} and {WOUND}."
         },
-        "gh_53": {
+        "gh-53": {
             "name": "Cuchillo Negro",
             "source": "Prosperity 7",
             "desc": "During your melee attack, add {CURSE} to a single attack."
         },
-        "gh_54": {
+        "gh-54": {
             "name": "Bastón de Eminencia",
             "source": "Prosperity 7",
             "desc": "During your ranged attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
         },
-        "gh_55": {
+        "gh-55": {
             "name": "Poción Curativa Suprema",
             "source": "Prosperity 7",
             "desc": "During your turn, perform a “{HEAL} 7, self” action."
         },
-        "gh_56": {
+        "gh-56": {
             "name": "Anillo de Salvajismo",
             "source": "Prosperity 7",
             "desc": "At the end of your turn, play one card from your hand and immediately perform the top action of the card."
         },
-        "gh_57": {
+        "gh-57": {
             "name": "Sandalias de Serenidad",
             "source": "Prosperity 8",
             "desc": "Whenever you use the default bottom of an ability card perform a {MOVE} 4 action instead of a {MOVE} 2 action."
         },
-        "gh_58": {
+        "gh-58": {
             "name": "Capa de Fase",
             "source": "Prosperity 8",
             "desc": "Gain {FLYING}. While occupying an obstacle hex, you are considered Invisible and cannot attack"
         },
-        "gh_59": {
+        "gh-59": {
             "name": "Gafas Telescópicas",
             "source": "Prosperity 8\nOption from Scenario #100",
             "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
         },
-        "gh_60": {
+        "gh-60": {
             "name": "Explosivos Inestables",
             "source": "Prosperity 8",
             "desc": "Turn a single target ranged attack into the following: {AOE.CUBE_2_2}. All allies in the attack area suffer 3 damage."
         },
-        "gh_61": {
+        "gh-61": {
             "name": "Scutum",
             "source": "Prosperity 8",
             "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
         },
-        "gh_62": {
+        "gh-62": {
             "name": "Polvo de Mal de Ojo",
             "source": "Prosperity 8",
             "desc": "During your attack, add {STUN}, {POISON}, and {CURSE} to a single attack."
         },
-        "gh_63": {
+        "gh-63": {
             "name": "Ojo de la Suerte",
             "source": "Prosperity 8",
             "desc": "During your turn, {STRENGTHEN} yourself and all adjacent allies."
         },
-        "gh_64": {
+        "gh-64": {
             "name": "Botas de Centella",
             "source": "Prosperity 9",
             "desc": "During your movement, add +4 {MOVE} to the movement."
         },
-        "gh_65": {
+        "gh-65": {
             "name": "Arnés",
             "source": "Prosperity 9",
             "desc": "On the next five sources of damage to you from attacks, gain {SHIELD} 1. Add 5 {-1} to your attack modifier deck."
         },
-        "gh_66": {
+        "gh-66": {
             "name": "Máscara de Terror",
             "source": "Prosperity 9\nScenario #110 (Treasure #84)",
             "desc": "During your melee attack, add {PUSH} 1."
         },
-        "gh_67": {
+        "gh-67": {
             "name": "Espada Equilibrada",
             "source": "Prosperity 9",
             "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 4 instead of an {ATTACK} 2 action."
         },
-        "gh_68": {
+        "gh-68": {
             "name": "Alabarda",
             "source": "Prosperity 9\nScenario #111 (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
             "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
         },
-        "gh_69": {
+        "gh-69": {
             "name": "Pendiente de Estrella",
             "source": "Prosperity 9",
             "desc": "During your turn, {REFRESH} all of your spent items, {HEAL} 3 damage, and {RECOVER} up to two of your discarded cards."
         },
-        "gh_70": {
+        "gh-70": {
             "name": "Anillo de Segunda Oportunidad",
             "source": "Prosperity 9\nFC Challenge Scenario, Rift Card 12 (Treasure #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
             "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
         },
-        "gh_71": {
+        "gh-71": {
             "name": "Botas de Levitación",
             "source": "Random Item",
             "desc": "Gain {FLYING}"
         },
-        "gh_72": {
+        "gh-72": {
             "name": "Zapatos de Felicidad",
             "source": "Random Item",
             "desc": "If you move 6 or more hexes on your turn, gain {exp1}."
         },
-        "gh_73": {
+        "gh-73": {
             "name": "Capa de Reaparición",
             "source": "Random Item",
             "desc": "During your turn, perform a “{MOVE} 4, {JUMP}” action"
         },
-        "gh_74": {
+        "gh-74": {
             "name": "Armadura Filosa",
             "source": "Random Item",
             "desc": "On the next three sources of damage from attacks targeting you, gain {SHIELD} 1, {Retaliate} 1. Add 4 {-1} to your attack modifier deck."
         },
-        "gh_75": {
+        "gh-75": {
             "name": "Diadema de los Elementos",
             "source": "Random Item",
             "desc": "During your turn, {ANY_X} to create any element. {ANY}"
         },
-        "gh_76": {
+        "gh-76": {
             "name": "Almófar",
             "source": "Random Item",
             "desc": "While you are adjacent to three or more monsters, gain {SHIELD} 1. Add 1 {-1} to your attack modifier deck."
         },
-        "gh_77": {
+        "gh-77": {
             "name": "Espada Gélida",
             "source": "Random Item",
             "desc": "During your melee attack, {ICE_X} to add +2 {ATTACK} to a single attack."
         },
-        "gh_78": {
+        "gh-78": {
             "name": "Espada Tormentosa",
             "source": "Random Item",
             "desc": "During your melee attack, {WIND_X} to add +2 {ATTACK} to a single attack."
         },
-        "gh_79": {
+        "gh-79": {
             "name": "Espada Incineradora",
             "source": "Random Item",
             "desc": "During your melee attack, {FIRE_X} to add +2 {ATTACK} to a single attack."
         },
-        "gh_80": {
+        "gh-80": {
             "name": "Espada Sísmica",
             "source": "Random Item",
             "desc": "During your melee attack, {EARTH_X} to add +2 {ATTACK} to a single attack."
         },
-        "gh_81": {
+        "gh-81": {
             "name": "Espada Brillante",
             "source": "Random Item",
             "desc": "During your melee attack, {LIGHT_X} to add +2 {ATTACK} to a single attack."
         },
-        "gh_82": {
+        "gh-82": {
             "name": "Espada Nocturna",
             "source": "Random Item",
             "desc": "During your melee attack, {DARK_X} to add +2 {ATTACK} to a single attack."
         },
-        "gh_83": {
+        "gh-83": {
             "name": "Varita de Escarcha",
             "source": "Random Item",
             "desc": "During your turn, create Ice. {ICE}"
         },
-        "gh_84": {
+        "gh-84": {
             "name": "Varita de Tormenta",
             "source": "Random Item",
             "desc": "During your turn, create Wind. {WIND}"
         },
-        "gh_85": {
+        "gh-85": {
             "name": "Varita de Incendio",
             "source": "Random Item",
             "desc": "During your turn, create Fire. {FIRE}"
         },
-        "gh_86": {
+        "gh-86": {
             "name": "Varita de Terremoto",
             "source": "Random Item",
             "desc": "During your turn, create Earth. {EARTH}"
         },
-        "gh_87": {
+        "gh-87": {
             "name": "Varita de Fulgor",
             "source": "Random Item",
             "desc": "During your turn, create Light. {LIGHT}"
         },
-        "gh_88": {
+        "gh-88": {
             "name": "Varita de Oscuridad",
             "source": "Random Item",
             "desc": "During your turn, create Dark. {DARK}"
         },
-        "gh_89": {
+        "gh-89": {
             "name": "Poción de Remedio Menor",
             "source": "Random Item",
             "desc": "During your turn, remove one negative condition on yourself. This can be used while you have {STUN}."
         },
-        "gh_90": {
+        "gh-90": {
             "name": "Poción de Remedio Mayor",
             "source": "Random Item\nScenario #102 (Treasure #77)",
             "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have {STUN}."
         },
-        "gh_91": {
+        "gh-91": {
             "name": "Anillo de Acero",
             "source": "Random Item",
             "desc": "When damaged by an attack targeting you, gain {SHIELD} 4 for the attack."
         },
-        "gh_92": {
+        "gh-92": {
             "name": "Anillo Atenuador",
             "source": "Random Item",
             "desc": "Before an enemy would consume an element, consume that element instead for no effect"
         },
-        "gh_93": {
+        "gh-93": {
             "name": "Pergamino de Poder",
             "source": "Random Item",
             "desc": "During an ally's attack, add +1 {ATTACK} to their entire attack action"
         },
-        "gh_94": {
+        "gh-94": {
             "name": "Pergamino de Curación",
             "source": "Random Item",
             "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action"
         },
-        "gh_95": {
+        "gh-95": {
             "name": "Pergamino de Resistencia",
             "source": "Random Item",
             "desc": "During your turn, an ally within {RANGE} 5 may {RECOVER} up to two of their discarded cards"
         },
-        "gh_96": {
+        "gh-96": {
             "name": "Botas Cohete",
             "source": "Scenario #66 (Treasure #36)",
             "desc": "During your movement, add +3 {MOVE} and {JUMP} to a single movement"
         },
-        "gh_97": {
+        "gh-97": {
             "name": "Sandalias de Robustez",
             "source": "Scenario #38 (Treasure #29)",
             "desc": "If you move 4 or more hexes on your turn, perform a “{HEAL} 1, Self” action."
         },
-        "gh_98": {
+        "gh-98": {
             "name": "Botas de Escamas de Draco",
             "source": "Scenario #43 (Treasure #35)",
             "desc": "You are unaffected by difficult and hazardous terrain."
         },
-        "gh_99": {
+        "gh-99": {
             "name": "Botas de Magma",
             "source": "Scenario #63 (Treasure #12)",
             "desc": "Ignore the damaging effects of hazardous terrain and perform a “{HEAL} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
         },
-        "gh_100": {
+        "gh-100": {
             "name": "Túnica de Invocación",
             "source": "Scenario #31 (Treasure #69)",
             "desc": "During your turn, perform a “{HEAL} 2, target any summoned ally” action."
         },
-        "gh_101": {
+        "gh-101": {
             "name": "Segunda Piel",
             "source": "Scenario #06 (Treasure #50)",
             "desc": "Remove two {MODIFIER_MINUS_ONE} from your attack modifier deck."
         },
-        "gh_102": {
+        "gh-102": {
             "name": "Túnica de Sacrificio",
             "source": "City Event 40",
             "desc": "During your ranged attack, suffer 3 damage to add +1 {ATTACK} to the entire Attack action."
         },
-        "gh_103": {
+        "gh-103": {
             "name": "Armadura de Escamas de Draco",
             "source": "Scenario #34 (Treasure #23)",
             "desc": "You are immune to {POISON} and {WOUND}."
         },
-        "gh_104": {
+        "gh-104": {
             "name": "Armadura a Vapor",
             "source": "Scenario #40 (Treasure #47)",
             "desc": "On the next five sources of damage from attacks targeting you, gain {SHIELD} 1."
         },
-        "gh_105": {
+        "gh-105": {
             "name": "Mantón Pulgoso",
             "source": "City Event 30",
             "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
             "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
         },
-        "gh_106": {
+        "gh-106": {
             "name": "Collar de Dientes",
             "source": "Road Event 05",
             "desc": "Any time you kill an enemy during your turn, perform a “{HEAL} 1, Self” action."
         },
-        "gh_107": {
+        "gh-107": {
             "name": "Yelmo con Cuernos",
             "source": "Scenario #03 (Treasure #65)",
             "desc": "After moving 4 or more hexes on your turn, add +1 {ATTACK} to your next melee attack this turn.",
             "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
         },
-        "gh_108": {
+        "gh-108": {
             "name": "Yelmo de Escamas de Draco",
             "source": "Scenario #25 (Treasure #58)",
             "desc": "Whenever you gain {MUDDLE}, gain {STRENGTHEN} instead."
         },
-        "gh_109": {
+        "gh-109": {
             "name": "Capucha de Ladrón",
             "source": "City Event 62",
             "desc": "During your “Loot 1” ability, perform a “Loot 2” ability instead."
         },
-        "gh_110": {
+        "gh-110": {
             "name": "Yelmo de la Montaña",
             "source": "Scenario #82 (Treasure #62)",
             "desc": "When attacked, if {EARTH} is Strong, Immobilize the attacker."
         },
-        "gh_111": {
+        "gh-111": {
             "name": "Collar de las Mareas",
             "source": "Scenario #64 (Treasure #09)",
             "desc": "When attacked, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
         },
-        "gh_112": {
+        "gh-112": {
             "name": "Berbiquí Antigüo",
             "source": "Reward From Scenario #65\nOption from Scenario #100",
             "desc": "During your melee attack, add +2 {ATTACK} and {PIERCE} 2 to the entire Attack action"
         },
-        "gh_113": {
+        "gh-113": {
             "name": "Hacha Rompecráneos",
             "source": "Reward From Scenario #11\nReward From Scenario #12",
             "desc": "During your melee attack targeting a Living Corpse, Living Spirit, or Living Bones, add +5 Attack to a single attack."
         },
-        "gh_114": {
+        "gh-114": {
             "name": "Báculo de Xorn",
             "source": "Reward from Scenario #53",
             "desc": "During your ranged attack, add {POISON} and {MUDDLE} to the entire Attack action"
         },
-        "gh_115": {
+        "gh-115": {
             "name": "Martillo de la Montaña",
             "source": "Scenario #82 (Treasure #62)",
             "desc": "Summon Warrior Spirit",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
-        "gh_116": {
+        "gh-116": {
             "name": "Alfanje de Combustión",
             "source": "Scenario #23 (Treasure #72)",
             "desc": "During your single-target melee attack, the target and all enemies adjacent to the target suffer 1 damage"
         },
-        "gh_117": {
+        "gh-117": {
             "name": "Hacha Sanguinaria",
             "source": "City Event 53\nRoad Event 53",
             "desc": "During your melee attack, suffer 2 damage to add +1 {ATTACK} to the entire Attack action."
         },
-        "gh_118": {
+        "gh-118": {
             "name": "Báculo de los Elementos",
             "source": "City Event 57",
             "desc": "During your turn, create any element. {ANY}"
         },
-        "gh_119": {
+        "gh-119": {
             "name": "Cráneo del Odio",
             "source": "Reward From Scenario #95",
             "desc": "During your turn, {CURSE} all adjacent enemies."
         },
-        "gh_120": {
+        "gh-120": {
             "name": "Báculo de Invocación",
             "source": "Reward From Scenario #88",
             "desc": "During your turn, a summoned ally within {RANGE} 3 performs a “{MOVE} 3” action with you controlling the action."
         },
-        "gh_121": {
+        "gh-121": {
             "name": "Orbe del Alba",
             "source": "Reward From Scenario #85",
             "desc": "During your turn, {DARK_X} to create Light. {LIGHT}"
         },
-        "gh_122": {
+        "gh-122": {
             "name": "Orbe del Crepúsculo",
             "source": "Scenario #89 (Treasure #27)",
             "desc": "During your turn, {LIGHT_X} to create Dark. {DARK}"
         },
-        "gh_123": {
+        "gh-123": {
             "name": "Anillo de Cráneos",
             "source": "Scenario #04 (Treasure #38)",
             "desc": "Summon Skeleton",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
-        "gh_124": {
+        "gh-124": {
             "name": "Brújula Maldita",
             "source": "Scenario #93 (Treasure #54)",
             "desc": "During your turn, force an enemy within {RANGE} 5 to perform a “{MOVE} 2” action with you controlling the action."
         },
-        "gh_125": {
+        "gh-125": {
             "name": "Engranaje Enigmático",
             "source": "City Event 03\nOption from Scenario #100",
             "desc": "During your turn, disarm all traps within {RANGE} 2."
         },
-        "gh_126": {
+        "gh-126": {
             "name": "Araña Mecánica",
             "source": "City Event 43\nOption from Scenario #100",
             "desc": "During your turn, {POISON} all adjacent enemies."
         },
-        "gh_127": {
+        "gh-127": {
             "name": "Araña Mecánica Gigante",
             "source": "City Event 61",
             "desc": "During your turn, perform a “Loot 1” action."
         },
-        "gh_128": {
+        "gh-128": {
             "name": "Incesario Negro",
             "source": "Reward From Scenario #90",
             "desc": "During your turn, Muddle all enemies with {RANGE} 2."
         },
-        "gh_129": {
+        "gh-129": {
             "name": "Carta Negra",
             "source": "Road Event 51",
             "desc": "During your turn, place a character token on an adjacent normal or elite enemy. You add +1 {ATTACK} to all your attacks targeting this enemy."
         },
-        "gh_130": {
+        "gh-130": {
             "name": "Anillo Helicoidal",
             "source": "Scenario #81 (Treasure #68)",
             "desc": "During your turn, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Self” action"
         },
-        "gh_131": {
+        "gh-131": {
             "name": "Corazón del Traidor",
             "source": "Scenario #79 (Treasure #52)",
             "desc": "When attacked by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
             "faq": "This item cannot be used if there is no other enemy in range to be attacked."
         },
-        "gh_132": {
+        "gh-132": {
             "name": "Núcleo de Energía",
             "source": "Scenario #67",
             "desc": "Summon Steel Construct.",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
-        "gh_133": {
+        "gh-133": {
             "name": "Cristal Resonante",
             "source": "Scenario #84",
             "desc": "During your turn, destroy an adjacent obstacle."
         },
-        "gh_134": {
+        "gh-134": {
             "name": "Hoja Imponente",
             "source": "Reward from Solo Scenario - {BR}",
             "desc": "Any time you kill an enemy during your turn, gain {SHIELD} 1 for the rest of the round."
         },
-        "gh_135": {
+        "gh-135": {
             "name": "Rayo Concentrador",
             "source": "Reward from Solo Scenario - {TI}",
             "desc": "During your Heal action, double the value of the Heal."
         },
-        "gh_136": {
+        "gh-136": {
             "name": "Elixir Volátil",
             "source": "Reward from Solo Scenario - {SW}",
             "desc": "During your ranged attack, add +2 {ATTACK} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made."
         },
-        "gh_137": {
+        "gh-137": {
             "name": "Estilete Silencioso",
             "source": "Reward from Solo Scenario - {SC}",
             "desc": "Any time you perform a melee attack, add {PIERCE} 1 to the Attack."
         },
-        "gh_138": {
+        "gh-138": {
             "name": "Amuleto de Piedra",
             "source": "Reward from Solo Scenario - {CH}",
             "desc": "During your action where an obstacle is created, create one additional obstacle and apply all effects of the action to it."
         },
-        "gh_139": {
+        "gh-139": {
             "name": "Cuchillo Psíquico",
             "source": "Reward from Solo Scenario - {MT}",
             "desc": "Any time you perform an Augment action, add +1 {ATTACK} to the entire action."
         },
-        "gh_140": {
+        "gh-140": {
             "name": "Escudo del Sol",
             "source": "Reward from Solo Scenario - {SK}",
             "desc": "When damaged by an attack, you may {LIGHT_X} to gain {SHIELD} 3 for the attack."
         },
-        "gh_141": {
+        "gh-141": {
             "name": "Cinturón Multiusos",
             "source": "Reward from Solo Scenario - {QM}",
             "desc": "During your turn, you or any one ally may {REFRESH} one of your spent or consumed items.",
             "faq": "This item cannot be refreshed."
         },
-        "gh_142": {
+        "gh-142": {
             "name": "Ídolo de Fase",
             "source": "Reward from Solo Scenario - {SU}",
             "desc": "When a summon you own is damaged by an attack, it suffers no damage instead."
         },
-        "gh_143": {
+        "gh-143": {
             "name": "Elixir de Humo",
             "source": "Reward from Solo Scenario - {NS}",
             "desc": "During your turn, gain {INVISIBLE} and create dark. {DARK}"
         },
-        "gh_144": {
+        "gh-144": {
             "name": "Colgante de la Plaga",
             "source": "Reward from Solo Scenario - {PH}",
             "desc": "During your turn, {POISON} and {CURSE} one enemy within {RANGE} 3."
         },
-        "gh_145": {
+        "gh-145": {
             "name": "Máscara de la Muerte",
             "source": "Reward from Solo Scenario - {BE}",
             "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {ATTACK} to the Attack."
         },
-        "gh_146": {
+        "gh-146": {
             "name": "Laúd Magistral",
             "source": "Reward from Solo Scenario - {SS}",
             "desc": "After performing any song action, immediately perform an Attack 2 or {MOVE} 2 action."
         },
-        "gh_147": {
+        "gh-147": {
             "name": "Capa del Cazador",
             "source": "Reward from Solo Scenario - {DS}",
             "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}."
         },
-        "gh_148": {
+        "gh-148": {
             "name": "Bata del Doctor",
             "source": "Reward from Solo Scenario - {SB}",
             "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal."
         },
-        "gh_149": {
+        "gh-149": {
             "name": "Botas Elementales",
             "source": "Reward from Solo Scenario - {EL}",
             "desc": "If you move 5 or more hexes on your turn, create any element. {ANY}"
         },
-        "gh_150": {
+        "gh-150": {
             "name": "Vara de Mando",
             "source": "Reward from Solo Scenario - {BT}",
             "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
         },
-        "gh_152": {
+        "gh-152": {
             "name": "Ring of Duality",
             "source": "Reward from Scenario #97\nSection 125 “A locked chest” in book",
             "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
         },
-        "gh_153": {
+        "gh-153": {
             "name": "Minor Antidote",
             "source": "Reward From Scenario #99",
             "desc": "The next three times you would gain {POISON} prevent the condition."
         },
-        "gh_154": {
+        "gh-154": {
             "name": "Major Antidote",
             "source": "Reward from Scenario #105",
             "desc": "The next five times you would gain {POISON} prevent the condition."
         },
-        "gh_155": {
+        "gh-155": {
             "name": "Curseward Armor",
             "source": "Reward from Scenario #108",
-            "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
+            "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck."
         },
-        "gh_156": {
+        "gh-156": {
             "name": "Elemental Claymore",
             "source": "Unknown",
             "desc": "During your melee attack, {ANY_X} to add +2 {ATTACK} to a single attack."
         },
-        "gh_157": {
+        "gh-157": {
             "name": "Ancient Bow",
             "source": "Scenario #107 (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
-            "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack.",
+            "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack."
         },
-        "gh_158": {
+        "gh-158": {
             "name": "Rejuvenation Greaves",
             "source": "Scenario #111 (Treasure #82)",
-            "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}.",
+            "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}."
         },
-        "gh_159": {
+        "gh-159": {
             "name": "Scroll of Haste",
             "source": "Scenario #103 (Treasure #81)",
-            "desc": "During any one ally's movement, add +2 {MOVE} to the movement.",
+            "desc": "During any one ally's movement, add +2 {MOVE} to the movement."
         },
-        "gh_160": {
+        "gh-160": {
             "name": "Cutpurse Dagger",
             "source": "Unknown",
-            "desc": "When you kill a monster during your turn, gain one money token.",
+            "desc": "When you kill a monster during your turn, gain one money token."
         },
-        "gh_161": {
+        "gh-161": {
             "name": "Throwing Axe",
             "source": "Reward from Scenario #108",
-            "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack.",
+            "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack."
         },
-        "gh_162": {
+        "gh-162": {
             "name": "Rift Device",
             "source": "Reward from Scenario #112\nSection 62 “Mechanical Splendor” in book.",
-            "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you.",
+            "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you."
         },
-        "gh_163": {
+        "gh-163": {
             "name": "Crystal Tiara",
             "source": "Reward from Scenario #110",
             "desc": "When you peform a long or short rest, gain {STRENGTHEN}."
         },
-        "gh_164": {
+        "gh-164": {
             "name": "Basin of Prophecy",
             "source": "Reward from Solo Scenario - {DR}",
             "desc": "When you reveal cards from any deck, reveal one additional card."
@@ -1339,7 +2268,7 @@ export default {
         "jotl_3": {
             "name": "Chain Armor",
             "source": "Reward from Scenario #2",
-            "desc": "During your turn gain {SHIELD} 1 for the rest of the round",
+            "desc": "During your turn gain {SHIELD} 1 for the rest of the round"
         },
         "jotl_4": {
             "name": "Studded Leather",
@@ -1365,7 +2294,7 @@ export default {
         "jotl_8": {
             "name": "Throwing Hammer",
             "source": "Reward from Scenario #2",
-            "desc": "During your ranged attack, add {STUN} to a single attack",
+            "desc": "During your ranged attack, add {STUN} to a single attack"
         },
         "jotl_9": {
             "name": "Poison Dagger",
@@ -1375,7 +2304,7 @@ export default {
         "jotl_10": {
             "name": "Iron Spear",
             "source": "Reward from Scenario #2",
-            "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes",
+            "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes"
         },
         "jotl_11": {
             "name": "Healing Potion",
@@ -1507,7 +2436,372 @@ export default {
             "name": "Jet Boots",
             "source": "Reward from Scenario #25",
             "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."
+        }
+    },
+    "treasures": {
+        "gh-1": {
+            "name": "Random Item Design"
         },
+        "gh-2": {
+            "name": "Gain “Tower Shield” (Item 032)"
+        },
+        "gh-3": {
+            "name": "Gain “Splintmail” (Item 044)"
+        },
+        "gh-4": {
+            "name": "Gain 15 Gold"
+        },
+        "gh-5": {
+            "name": "Gain “Chainmail” (Item 023)"
+        },
+        "gh-6": {
+            "name": "Gain “Hooked Chain” (Item 039)"
+        },
+        "gh-7": {
+            "name": "Random Side Scenario"
+        },
+        "gh-8": {
+            "name": "Gain 1 ✔"
+        },
+        "gh-9": {
+            "name": "Gain “Wave Crest” (Item 111)"
+        },
+        "gh-10": {
+            "name": "Gain 10 Experience"
+        },
+        "gh-11": {
+            "name": "Random Item Design"
+        },
+        "gh-12": {
+            "name": "Gain “Magma Waders” (Item 099)"
+        },
+        "gh-13": {
+            "name": "Suffer 5 Damage and gain {POISON} and {WOUND}"
+        },
+        "gh-14": {
+            "name": "Gain 10 Experience"
+        },
+        "gh-15": {
+            "name": "Gain “Pendant of Dark Pacts” (Item 045)"
+        },
+        "gh-16": {
+            "name": "Gain 10 gold"
+        },
+        "gh-17": {
+            "name": "Gain 20 Gold"
+        },
+        "gh-18": {
+            "name": "Gain 15 gold"
+        },
+        "gh-19": {
+            "name": "Random Item Design"
+        },
+        "gh-20": {
+            "name": "Random Item Design"
+        },
+        "gh-21": {
+            "name": "Suffer 5 Damage"
+        },
+        "gh-22": {
+            "name": "Random Item Design"
+        },
+        "gh-23": {
+            "name": "Gain “Drakescale Armor” (Item 103)"
+        },
+        "gh-24": {
+            "name": "Suffer 5 damage"
+        },
+        "gh-25": {
+            "name": "Gain 25 gold"
+        },
+        "gh-26": {
+            "name": "Gain 20 Gold"
+        },
+        "gh-27": {
+            "name": "Gain “Orb of Twilight” (Item 122)"
+        },
+        "gh-28": {
+            "name": "Gain 15 Gold"
+        },
+        "gh-29": {
+            "name": "Gain “Endurance Footwraps” (Item 097)"
+        },
+        "gh-30": {
+            "name": "Gain 1 ✔"
+        },
+        "gh-31": {
+            "name": "Random Item Design"
+        },
+        "gh-32": {
+            "name": "Random Item Design"
+        },
+        "gh-33": {
+            "name": "Gain “Weighted Net” (Item 019)"
+        },
+        "gh-34": {
+            "name": "Gain “Amulet of Life” (Item 024)"
+        },
+        "gh-35": {
+            "name": "Gain “Drakescale Boots” (Item 098)"
+        },
+        "gh-36": {
+            "name": "“Rocket Boots” design (Item 096)"
+        },
+        "gh-37": {
+            "name": "Gain 1 ✔"
+        },
+        "gh-38": {
+            "name": "“Ring of Skulls” design (Item 123)"
+        },
+        "gh-39": {
+            "name": "Suffer 5 damage"
+        },
+        "gh-40": {
+            "name": "Random Item Design"
+        },
+        "gh-41": {
+            "name": "Gain “Black Knife” (Item 053)"
+        },
+        "gh-42": {
+            "name": "Random Item Design"
+        },
+        "gh-43": {
+            "name": "Suffer 5 damage gain {POISON} and {WOUND}"
+        },
+        "gh-44": {
+            "name": "Random Side Scenario"
+        },
+        "gh-45": {
+            "name": "Random Item Design"
+        },
+        "gh-46": {
+            "name": "Suffer 3 damage and gain {POISON}"
+        },
+        "gh-47": {
+            "name": "Gain “Steam Armor” (Item 104)"
+        },
+        "gh-48": {
+            "name": "Gain 30 gold"
+        },
+        "gh-49": {
+            "name": "New Scenario: Lost Island (Scenario 17 at K-17)"
+        },
+        "gh-50": {
+            "name": "Gain “Second Skin” (Item 101)"
+        },
+        "gh-51": {
+            "name": "Random Side Scenario"
+        },
+        "gh-52": {
+            "name": "Gain “Heart of the Betrayer” (Item 131)"
+        },
+        "gh-53": {
+            "name": "Random Item Design"
+        },
+        "gh-54": {
+            "name": "Gain “Doomed Compass” (Item 124)"
+        },
+        "gh-55": {
+            "name": "Gain 1 ✔"
+        },
+        "gh-56": {
+            "name": "Gain “Star Earring” (Item 069)"
+        },
+        "gh-57": {
+            "name": "Gain 15 gold"
+        },
+        "gh-58": {
+            "name": "Gain “Drakescale Helm” (Item 108)"
+        },
+        "gh-59": {
+            "name": "Random Item Design"
+        },
+        "gh-60": {
+            "name": "Gain “Skullbane Axe” (Item 113)"
+        },
+        "gh-61": {
+            "name": "Gain “Versatile Dagger” (Item 040)"
+        },
+        "gh-62": {
+            "name": "Gain “Helm of the Mountain” (Item 110) and “Mountain Hammer” (Item 115)"
+        },
+        "gh-63": {
+            "name": "Random Item Design"
+        },
+        "gh-64": {
+            "name": "Gain 30 gold"
+        },
+        "gh-65": {
+            "name": "“Horned Helm” design (Item 107)"
+        },
+        "gh-66": {
+            "name": "Gain “Volatile Bomb” (Item 033)"
+        },
+        "gh-67": {
+            "name": "Gain 10 Gold"
+        },
+        "gh-68": {
+            "name": "Gain “Helix Ring” (Item 130)"
+        },
+        "gh-69": {
+            "name": "Gain “Robes of Summoning” (Item 100)"
+        },
+        "gh-70": {
+            "name": "Random Side Scenario"
+        },
+        "gh-71": {
+            "name": "Random Side Scenario"
+        },
+        "gh-72": {
+            "name": "“Fueled Falchion” design (Item 116)"
+        },
+        "gh-73": {
+            "name": "Random Item Design"
+        },
+        "gh-74": {
+            "name": "Random Item Design"
+        },
+        "gh-75": {
+            "name": "Cryptogram Found (See scenario book page 121)"
+        },
+        "fc-76": {
+            "name": "Suffer 3 damage, gain {WOUND} and 10 gold"
+        },
+        "fc-77": {
+            "name": "Gain “Major Cure Potion” (Item 090)"
+        },
+        "fc-78": {
+            "name": "“Ancient Bow” (Item 157)"
+        },
+        "fc-79": {
+            "name": "Gain “Falcon Figurine” (Item 157)"
+        },
+        "fc-80": {
+            "name": "Gain 1 ✓ and add Rift Event 19 to the deck"
+        },
+        "fc-81": {
+            "name": "Gain “Scroll of Haste” (Item 159) and 10 gold"
+        },
+        "fc-82": {
+            "name": "“Rejuvenation Greaves” (Item 158)"
+        },
+        "fc-83": {
+            "name": "Gain “Major Power Potion” (Item 041)"
+        },
+        "fc-84": {
+            "name": "Gain “Mask of Terrors” (Item 066)"
+        },
+        "fc-85": {
+            "name": "Suffer 3 damage, gain {POISON} and 10 gold"
+        },
+        "fc-86": {
+            "name": "Unlock Diviner {DR} Solo Scenario “Forecast of the Inevitable” (see page 25 of the main book)"
+        },
+        "fc-87": {
+            "name": "Suffer 2 damage, gain CURSE and 15 gold"
+        },
+        "fc-88": {
+            "name": "Gain 1 ✓"
+        },
+        "fc-89": {
+            "name": "Gain “Second Chance Ring” (Item 070)"
+        },
+        "fc-90": {
+            "name": "10 gold each, Read section 75 on page 49"
+        },
+        "fc-91": {
+            "name": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
+        },
+        "fc-93": {
+            "name": "“Scroll of Haste” (Item 159)"
+        },
+        "fc-94": {
+            "name": "Gain 1 ✓ and add Rift Event 20 to the deck"
+        },
+        "fc-95": {
+            "name": "Gain 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
+        },
+        "fc-96": {
+            "name": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}"
+        },
+        "jotl-1": {
+            "name": "Gain 10 experience"
+        },
+        "jotl-2": {
+            "name": "“Ring of Strength” (Item 31)"
+        },
+        "jotl-3": {
+            "name": "Gain 15 experience"
+        },
+        "jotl-4": {
+            "name": "Gain 5 gold"
+        },
+        "jotl-5": {
+            "name": "Gain 1 ✔"
+        },
+        "jotl-6": {
+            "name": "Gain 10 gold"
+        },
+        "jotl-7": {
+            "name": "Gain 5 gold"
+        },
+        "jotl-8": {
+            "name": "Suffer 3 damage, gain {POISON,"
+        },
+        "jotl-9": {
+            "name": "Gain 5 gold"
+        },
+        "jotl-10": {
+            "name": "“Fateful Compass” (Item 27)"
+        },
+        "jotl-11": {
+            "name": "“Ring of Haste” (Item 30)"
+        },
+        "jotl-12": {
+            "name": "Gain 5 gold"
+        },
+        "jotl-13": {
+            "name": "Gain 5 gold"
+        },
+        "jotl-14": {
+            "name": "Gain 3 money tokens"
+        },
+        "jotl-15": {
+            "name": "Gain 1 ✔"
+        },
+        "jotl-16": {
+            "name": "“Mana Potion” (Item 14)"
+        },
+        "jotl-X": {
+            "name": "“Ring of Restoration” (Item 32)"
+        }
+    },
+    "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
+    "personal_quests": {
+        "Seeker of Xorn": "Seeker of Xorn",
+        "Merchant Class": "Merchant Class",
+        "Greed is Good": "Greed is Good",
+        "Finding the Cure": "Finding the Cure",
+        "A Study of Anatomy": "A Study of Anatomy",
+        "Law Bringer": "Law Bringer",
+        "Pounds of Flesh": "Pounds of Flesh",
+        "Trophy Hunt": "Trophy Hunt",
+        "Eternal Wanderer": "Eternal Wanderer",
+        "Battle Legend": "Battle Legend",
+        "Implement of Light": "Implement of Light",
+        "Take Back the Trees": "Take Back the Trees",
+        "The Thin Places": "The Thin Places",
+        "Aberrant Slayer": "Aberrant Slayer",
+        "Fearless Stand": "Fearless Stand",
+        "Piety in All Things": "Piety in All Things",
+        "Vengeance": "Vengeance",
+        "Zealot of the Blood God": "Zealot of the Blood God",
+        "Goliath Toppler": "Goliath Toppler",
+        "The Fall of Man": "The Fall of Man",
+        "Augmented Abilities": "Augmented Abilities",
+        "Elemental Samples": "Elemental Samples",
+        "A Helping Hand": "A Helping Hand",
+        "The Perfect Poison": "The Perfect Poison"
     },
     "characters": {
         "BR": {
@@ -1523,7 +2817,7 @@ export default {
                 "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
                 "Add one {AGAIN} ADD {TARGET} card",
                 "Add one {+1_WHITE} {SHIELD}1, Self card",
-                "Ignore negative item effects and add one {+1_WHITE} card",
+                "Ignore negative item effects and add one {+1_WHITE} card"
             ]
         },
         "CH": {
@@ -1538,7 +2832,7 @@ export default {
                 "Add two {AGAIN} {EARTH} cards",
                 "Add two {AGAIN} {WIND} cards",
                 "Ignore negative item effects",
-                "Ignore negative scenario effects",
+                "Ignore negative scenario effects"
             ]
         },
         "SW": {
@@ -1554,7 +2848,7 @@ export default {
                 "Add one {+2_WHITE} {FIRE} card",
                 "Add one {+2_WHITE} {ICE} card",
                 "Add one {AGAIN} {EARTH} and one {AGAIN} {WIND} card",
-                "Add one {AGAIN} {LIGHT} and one {AGAIN} {DARK} card",
+                "Add one {AGAIN} {LIGHT} and one {AGAIN} {DARK} card"
             ]
         },
         "TI": {
@@ -1570,7 +2864,7 @@ export default {
                 "Add one {+1_WHITE} {IMMOBILIZE} card",
                 "Add one {+1_WHITE} Heal {HEAL}2 card",
                 "Add one {+0_WHITE} ADD {TARGET} card",
-                "Ignore negative scenario effects",
+                "Ignore negative scenario effects"
             ]
         },
         "SC": {
@@ -1586,7 +2880,7 @@ export default {
                 "Add two {AGAIN} {POISON} cards",
                 "Add two {AGAIN} {MUDDLE} cards",
                 "Add one {AGAIN} {INVISIBLE} card",
-                "Ignore negative scenario effects",
+                "Ignore negative scenario effects"
             ]
         },
         "MT": {
@@ -1603,7 +2897,7 @@ export default {
                 "Add two {AGAIN} {IMMOBILIZE} cards",
                 "Add one {AGAIN} {STUN} card",
                 "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
-                "Ignore negative scenario effects",
+                "Ignore negative scenario effects"
             ]
         },
         "DS": {
@@ -1618,7 +2912,7 @@ export default {
                 "Add one {+1_WHITE} {IMMOBILIZE} card",
                 "Add one {+0_WHITE} {STUN} card",
                 "Add one {AGAIN} {TARGET} card",
-                "Ignore negative scenario effects",
+                "Ignore negative scenario effects"
             ]
         },
         "EL": {
@@ -1636,7 +2930,7 @@ export default {
                 "Add two {+1_WHITE} {PUSH}1 cards",
                 "Add one {+1_WHITE} {WOUND} card",
                 "Add one {+0_WHITE} {STUN} card",
-                "Add one {+0_WHITE} {TARGET} card",
+                "Add one {+0_WHITE} {TARGET} card"
             ]
         },
         "SB": {
@@ -1650,7 +2944,7 @@ export default {
                 "Add two {AGAIN} {WOUND} cards",
                 "Add one {AGAIN} {STUN} card",
                 "Add one {AGAIN} {HEAL}3 card",
-                "Add one {+0_WHITE} Refresh an item card",
+                "Add one {+0_WHITE} Refresh an item card"
             ]
         },
         "SS": {
@@ -1667,7 +2961,7 @@ export default {
                 "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
                 "Replace one {-1_WHITE} card with one {+0_WHITE} {STUN} card",
                 "Add three {AGAIN} {+1_WHITE} cards",
-                "Add two {AGAIN} {CURSE} cards",
+                "Add two {AGAIN} {CURSE} cards"
             ]
         },
         "SK": {
@@ -1683,7 +2977,7 @@ export default {
                 "Add two {AGAIN} {LIGHT} cards",
                 "Add two {AGAIN} {SHIELD}1, Self cards",
                 "Ignore negative item effects and add two {+1_WHITE} cards",
-                "Ignore negative scenario effects",
+                "Ignore negative scenario effects"
             ]
         },
         "NS": {
@@ -1698,7 +2992,7 @@ export default {
                 "Add two {AGAIN} {HEAL}1 cards",
                 "Add two {AGAIN} {CURSE} cards",
                 "Add one {AGAIN} {TARGET} card",
-                "Ignore negative scenario effects and add two {+1_WHITE} cards",
+                "Ignore negative scenario effects and add two {+1_WHITE} cards"
             ]
         },
         "SU": {
@@ -1713,7 +3007,7 @@ export default {
                 "Add two {AGAIN} {HEAL}1 cards",
                 "Add one {AGAIN} {FIRE} and one {AGAIN} {WIND} card",
                 "Add one {AGAIN} {DARK} and one {AGAIN} {EARTH} card",
-                "Ignore negative scenario effects and add two {+1_WHITE} cards",
+                "Ignore negative scenario effects and add two {+1_WHITE} cards"
             ]
         },
         "BE": {
@@ -1728,7 +3022,7 @@ export default {
                 "Add one {AGAIN} {+1_WHITE} {DISARM} card",
                 "Add two {AGAIN} {HEAL}1 cards",
                 "Add one {+2_WHITE} {FIRE} card",
-                "Ignore negative item effects",
+                "Ignore negative item effects"
             ]
         },
         "QM": {
@@ -1743,7 +3037,7 @@ export default {
                 "Add one {AGAIN} {STUN} card",
                 "Add one {AGAIN} {TARGET} card",
                 "Add one {+0_WHITE} Refresh an item card",
-                "Ignore negative item effects and add two {+1_WHITE} cards",
+                "Ignore negative item effects and add two {+1_WHITE} cards"
             ]
         },
         "PH": {
@@ -1758,7 +3052,7 @@ export default {
                 "Add two {AGAIN} {CURSE} cards",
                 "Add two {AGAIN} {IMMOBILIZE} cards",
                 "Add one {AGAIN} {STUN} card",
-                "Ignore negative scenario effects and add one {+1_WHITE} card",
+                "Ignore negative scenario effects and add one {+1_WHITE} card"
             ]
         },
         "BT": {
@@ -1771,7 +3065,7 @@ export default {
                 "Add one {+1_WHITE} {IMMOBILIZE} card",
                 "Add two {AGAIN} {HEAL}1 cards",
                 "Add two {AGAIN} {EARTH} cards",
-                "Ignore negative scenario effects",
+                "Ignore negative scenario effects"
             ]
         },
         "BS": {
@@ -1788,7 +3082,7 @@ export default {
                 "Add one {+1_WHITE} {POISON} card",
                 "Add one {+2_WHITE} {MUDDLE} card",
                 "Ignore negative item effects and add one {+1_WHITE} card",
-                "Ignore negative scenario effects and add one {+1_WHITE} card",
+                "Ignore negative scenario effects and add one {+1_WHITE} card"
             ]
         },
         "DR": {
@@ -1806,7 +3100,7 @@ export default {
                 "Replace one {-1_WHITE} card with one {+1_WHITE} {HEAL}2, Affect any ally card",
                 "Add two {AGAIN} {HEAL}1, Self cards",
                 "Add two {AGAIN} {CURSE} cards",
-                "Ignore negative scenario effects and add two {+1_WHITE} cards",
+                "Ignore negative scenario effects and add two {+1_WHITE} cards"
             ]
         },
         "RG": {
@@ -1821,7 +3115,7 @@ export default {
                 "Add one {+1_WHITE} {FIRE_LIGHT} card",
                 "Add one {+1_WHITE} {SHIELD} 1 card",
                 "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card"
             ]
         },
         "DM": {
@@ -1835,7 +3129,7 @@ export default {
                 "Add one {+2_WHITE} card",
                 "Replace one {+1_WHITE} card with one {+2_WHITE} {EARTH} card",
                 "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
-                "Add one {+0_WHITE} All adjacent enemies suffer 1 damage card",
+                "Add one {+0_WHITE} All adjacent enemies suffer 1 damage card"
             ]
         },
         "HT": {
@@ -1850,7 +3144,7 @@ export default {
                 "Remove one {+0_WHITE} card with one {+0_WHITE} {STUN} card",
                 "Remove one {+1_WHITE} card with one {+1_WHITE} {STUN} card",
                 "Add one {+2_WHITE} {WIND} card",
-                "Replace one {+1_WHITE} with one {+3_WHITE} card",
+                "Replace one {+1_WHITE} with one {+3_WHITE} card"
             ]
         },
         "VW": {
@@ -1864,7 +3158,7 @@ export default {
                 "Add one {+1_WHITE} {HEAL}1 (Ally) card",
                 "Add one {+1_WHITE} {POISON} card",
                 "Add one {+3_WHITE} card",
-                "Add one {+1_WHITE} {CURSE} card",
+                "Add one {+1_WHITE} {CURSE} card"
             ]
         }
     },

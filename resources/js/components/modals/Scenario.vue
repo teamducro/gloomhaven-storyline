@@ -92,13 +92,13 @@
                                     :checked="scenario.isTreasureUnlocked(id)"
                                     @change="treasureChanged"></checkbox-with-label>
                                 <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
-                                    <add-links-and-icons :text="treasure"/>
+                                    <add-links-and-icons :text="$t(`treasures.${scenario.game}-${id}.name`)"/>
                                 </span>
                             </div>
                         </div>
                         <p class="mb-2"
                            v-if="!scenario.isComplete() && scenario.treasures.isEmpty() && treasuresVisible">
-                            {{ $t('No treasures available.') }}
+                            {{ $t('No treasures available') }}.
                         </p>
 
                         <template if="achievements" v-for="(x, is_global) in achievements">
@@ -211,8 +211,9 @@
                         <a class="absolute w-full h-full top-0 left-0" target="_blank"
                            href="https://boardgamegeek.com/thread/1722032/scenario-14-conclusion-spoilers"></a>
                         <p class="mb-4 max-w-sm">
-                            The location numbers in the story text are just reminders. They themselves don't unlock
-                            anything.</p>
+                            {{
+                                $t('The location numbers in the story text are just reminders. They themselves don\'t unlock anything.')
+                            }}</p>
                         <p class="flex items-center"><span class="material-icons">remove</span> Isaac Childres</p>
                     </blockquote>
                 </div>
