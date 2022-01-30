@@ -1,6 +1,6 @@
 <template>
     <div class="my-2"
-         v-if="scenario.isComplete() && scenario.rewards.length">
+         v-if="scenario.isComplete() && scenario.rewards.isNotEmpty()">
         <h2 class="text-white">
             {{ $tc('Reward', rewards.length) }}
         </h2>
