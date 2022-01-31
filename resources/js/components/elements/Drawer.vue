@@ -155,9 +155,6 @@
                 <div class="m-2" style="width: calc(100% - 1em);">
                     <game-switch ref="game-switch"></game-switch>
                 </div>
-                <div class="m-2" style="width: calc(100% - 1em);">
-                    <language-switch @help="toggle"></language-switch>
-                </div>
             </div>
         </aside>
 

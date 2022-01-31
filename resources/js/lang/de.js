@@ -161,10 +161,12 @@ export default {
         "text-2": "For help or feedback, please consult the"
     },
     "send me an e-mail": "send me an e-mail",
+    "Please send me an e-mail": "Please send me an e-mail",
     "or": "oder",
     "Welcome": "Willkommen",
     "Language": "Sprache",
-    "Help translating?": "Willst du bei der Übersetzung helfen?",
+    "Gloomhaven Storyline is available in multiple languages!": "Gloomhaven Storyline is available in multiple languages!",
+    "If you like to contribute with translations.": "If you like to contribute with translations.",
     "Translations": "Übersetzungen",
     "French": "Französisch",
     "Italian": "Italienisch",

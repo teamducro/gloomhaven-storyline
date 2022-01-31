@@ -1,7 +1,8 @@
 <template>
     <div id="copy"
          class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
-        <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left">
+        <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left flex items-center">
+            <i class="material-icons mr-4" aria-hidden="true">content_copy</i>
             {{ $t('transfer.title') }}
         </h1>
 
