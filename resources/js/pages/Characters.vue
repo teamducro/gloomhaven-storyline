@@ -23,7 +23,9 @@
                      :class="{'opacity-25': !selected}">
                     <div class="flex flex-col sheet-break-lg:flex-row sheet-break-lg:space-x-4">
                         <div class="w-full sheet-break-lg:w-1/2">
-
+                            <div v-if="!selected" @click.stop="() => {$refs['add-character'].open()}"
+                                 class="absolute z-1 top-0 right-0 bottom-0 left-0 cursor-pointer">
+                            </div>
 
                             <div class="mb-4">
                                 <h2 class="mb-2">{{ $t('Name') }}</h2>
