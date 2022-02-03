@@ -11,22 +11,22 @@ export default {
     "Info": "Información",
     "Settings": "Ajustes",
     "transfer": {
-        "title": "Transfer campaign data",
-        "text": "Copy campaign data between campaigns can be done easily.",
+        "title": "Transferir datos de campaña",
+        "text": "La copia de datos entre campañas se puede hacer fácilmente .",
         "warning": {
-            "text": "Campaign data can only be transferred if you purchased a shared campaign."
+            "text": "Los datos de la campaña solo se pueden transferir si compró una campaña compartida."
         }
     },
-    "Please consider purchasing a license": "Please consider purchasing a license",
-    "Danger zone!": "Danger zone!",
-    "Alternatively you may": "Alternatively you may",
-    "a campaign link": "a campaign link",
+    "Please consider purchasing a license": "Por favor considere comprar una licencia ",
+    "Danger zone!": "Zona Peligrosa!",
+    "Alternatively you may": "Alternativamente, puede",
+    "a campaign link": "un enlace de campaña ",
     "snapshots": {
-        "title": "Snapshots",
-        "text-1": "If you ever lose campaign progress you can use these automatic snapshots to revert unwanted changes!",
-        "text-2": "Snapshots are only available for shared campaigns because they're stored in the cloud.",
-        "only-owner": "Only owners of this campaign can manage snapshots",
-        "no-snapshots": "There are no snapshots yet"
+        "title": "Instantáneas",
+        "text-1": "Si alguna vez pierde el progreso de la campaña, puede usar estas instantáneas automáticas para revertir los cambios no deseados!",
+        "text-2": "Las instantáneas solo están disponibles para campañas compartidas porque se almacenan en la nube.",
+        "only-owner": "Solo l@s propietari@s de esta campaña pueden administrar instantáneas",
+        "no-snapshots": "Aún no hay instantáneas"
     },
     "Characters": "Personajes",
     "Character sheet": "Hoja de Personaje",
@@ -147,7 +147,7 @@ export default {
     "Scenario summaries by": "Resúmenes de escenarios por",
     "Map coordinates by": "Coordenadas del mapa por",
     "Virtual Gloomhaven Board": "Tablero virtual de Gloomhaven ",
-    "Gloomhaven Item DB": "DB de objetos de Gloomhaven",
+    "Gloomhaven Item DB": "BD de objetos de Gloomhaven",
     "about us": {
         "title": "Juega a Gloomhaven con una app de seguimiento de la historia",
         "text": "Para jugar a Gloomhaven, mis amigos y yo nos juntamos una vez por semana. Pulsando el botón de pausa en nuestras vidas cotidianas. Cada uno de nosotros ha aportado algo para fortalecer nuestro disfrute del juego. Mi contribución es un diagrama de flujo interactivo, que permite hacer un seguimiento de nuestro progreso a lo largo del juego y hacer más fácil la elección de un nuevo escenario al que jugar. Con unas bebidas y unos aperitivos, estamos listos para empezar."
@@ -160,13 +160,13 @@ export default {
         "text-1": "Would you like to contribute by translating to your native language?",
         "text-2": "For help or feedback, please consult the"
     },
-    "send me an e-mail": "send me an e-mail",
-    "Please send me an e-mail": "Please send me an e-mail",
+    "send me an e-mail": "envíame un e-mail",
+    "Please send me an e-mail": "Por favor envíame un e-mail",
     "or": "o",
     "Welcome": "Bienvenido",
     "Language": "Idioma",
-    "Gloomhaven Storyline is available in multiple languages!": "Gloomhaven Storyline is available in multiple languages!",
-    "If you like to contribute with translations.": "If you like to contribute with translations.",
+    "Gloomhaven Storyline is available in multiple languages!": "Gloomhaven Storyline está disponible en múltiples Idiomas!",
+    "If you like to contribute with translations.": "Si quieres contribuir con las traducciones.",
     "Translations": "Traducciones",
     "French": "Francés",
     "Italian": "Italiano",
