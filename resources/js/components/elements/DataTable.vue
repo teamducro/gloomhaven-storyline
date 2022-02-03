@@ -19,7 +19,7 @@
             </thead>
             <tbody>
             <tr v-for="(row, index) in rows" :key="index"
-                class="whitespace-nowrap text-sm text-white2-75"
+                class="text-sm text-white2-75"
                 :class="rowClasses(index)">
                 <slot name="row" :row="row">
                     <td v-for="column in columns" :key="column.id+index"
@@ -46,6 +46,8 @@
 </template>
 
 <script>
+import Helpers from "../../services/Helpers";
+
 export default {
     props: {
         data: {
@@ -86,7 +88,7 @@ export default {
         },
         noResults: {
             type: String,
-            default: 'No results'
+            default: 'No results' // pass value to translate
         }
     },
     data() {
@@ -113,11 +115,18 @@ export default {
             const keys = Object.keys(this.search)
             let result = {}
             keys.forEach(key => {
-                const searchString = this.search[key]
+                const searchString = this.search[key];
                 if (!searchString) {
                     return
                 }
-                result[key] = (input) => (input ? input.toString().toLowerCase().includes(searchString.toString().toLowerCase()) : false);
+                result[key] = (input) => {
+                    if (!input) {
+                        return false;
+                    }
+                    
+                    input = this.translatable.includes(key) ? app.$t(input) : input;
+                    return Helpers.sanitize(input.toString()).includes(Helpers.sanitize(searchString.toString()));
+                }
             });
             return result;
         },

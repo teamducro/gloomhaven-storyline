@@ -77,6 +77,8 @@ describe('Party', () => {
     });
 
     it('It checks city events', () => {
+        cy.visit('/tracker/#/party');
+
         utilities.scrollTo('40%');
         cy.get('#city-events').parent().click();
         cy.get('[name="city-events"]').type('50');
@@ -87,7 +89,9 @@ describe('Party', () => {
     });
 
     it('It can roll back city events', () => {
-        utilities.scrollTo('40%');
+        cy.visit('/tracker/#/party');
+
+        utilities.scrollTo('35%');
         cy.get('#city-events').parent().click();
         cy.get('[name="city-events"]').clear().type('50');
         cy.get('.mdc-list-item__text span').contains('50').click();
@@ -102,10 +106,13 @@ describe('Party', () => {
         cy.get('#city-events-bedges .bedge').contains('50').should('not.exist');
         utilities.closeModel();
 
+        utilities.scrollTo('35%');
         cy.get('#city-events-bedges .bedge').contains('10').click();
         cy.get('#city-events-bedges .bedge').contains('10').should('not.exist');
         cy.get('#city-events-bedges .bedge').contains('15').click();
         cy.get('#city-events-bedges .bedge').contains('15').should('not.exist');
+
+        utilities.scrollTo('35%');
         cy.get('h2').contains('City Event Decks').next().click(); // rollback
         cy.get('#city-events-bedges .bedge').contains('15').should('be.visible');
         cy.get('h2').contains('City Event Decks').next().click(); // rollback
@@ -147,13 +154,24 @@ describe('Party', () => {
         cy.get('.mdc-dialog__content .blur').should('be.visible');
         cy.get('.mdc-dialog__content button').contains('Toggle B').click();
         cy.get('.mdc-dialog__content .blur').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains('Toggle B').parent().next().click();
     });
 
     it('it unlocks envelope X', () => {
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%');
+        cy.get('li.order-17 g[fill="#D39382"]').should('not.exist');
         cy.get('input#unlock8').click();
-        cy.get('span').contains('Envelope x solved').should('be.visible');
-        cy.get('span').contains('Clues').should('be.visible');
+        utilities.scrollTo('100%');
+        cy.get('input[name="x-result"]').type('Bladeswarm{enter}');
+        cy.get('li.order-17 g[fill="#D39382"]').should('exist');
+        cy.get('#character-BS').click();
+
+        cy.visit('/tracker/#/characters');
+
+        cy.wait(100);
+        utilities.scrollTo('0%');
+        utilities.openCharacter('Bladeswarm');
+        cy.get('h1').contains('Bladeswarm');
     });
 });

@@ -9,7 +9,7 @@
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
-            <div class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
+            <div v-if="Object.keys(sheet.itemDesigns).length" class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
                 <dropdown class="items-to-add-dropdown" align="right" width=""
                           @open="dropDownClose = true"
                           @close="dropDownClose = false">
@@ -37,11 +37,11 @@
                 </dropdown>
             </div>
 
-            <div class="my-4">
+            <div v-if="costModifier != 0" class="my-4">
                 <h2 class="mb-2">{{ $t('Shop modifier') }}:
                     <span>{{ costModifier }} {{ $t('Gold') }}</span>
                 </h2>
-                <p v-if="costModifier != 0" class="text-sm">
+                <p class="text-sm">
                     {{ $t('The cost of items displayed is modified by this amount.') }}
                 </p>
             </div>
@@ -78,12 +78,13 @@
                         :data="items.items"
                         odd-class="bg-black2-10"
                         @rowClick="openItemModel"
-                        :noResults="$t('No items found')"
+                        :translatable="['name', 'desc']"
+                        :noResults="$t('No items available')"
             >
                 <template slot="image" slot-scope="{value, row}">
                     <div class="overflow-hidden h-full -m-1 md:-m-3 top-0 left-0 cursor-pointer">
                         <webp :src="value" width="80" class="-mt-2 top-0 absolute max-w-none rounded"
-                              :alt="row.name" :animate="true"/>
+                              :alt="$t(row.name)" :animate="true"/>
                     </div>
                     <div class="w-16 md:w-12 h-2"></div>
                 </template>
@@ -94,11 +95,11 @@
                     </span>
                 </span>
                 <span slot="name" class="xs:whitespace-nowrap" slot-scope="{value, row}">
-                    {{ value }}<br>
+                    {{ $t(value) }}<br>
                     <span class="lg:hidden">
                         <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
                         <span class="inline-block mr-2">
-                            {{ row.count - (itemCountUses[row.id] || 0) }}/{{ row.count }}
+                            {{ row.count - itemAvailability.uses(row.id) }}/{{ row.count }}
                         </span>
                         <span class="inline-block md:hidden">{{ row.cost + costModifier }}</span>
                     </span>
@@ -107,10 +108,10 @@
                     {{ value + costModifier }}
                 </span>
                 <template slot="availability" slot-scope="{value, row}">
-                    {{ row.count - (itemCountUses[row.id] || 0) }} / {{ row.count }}
+                    {{ row.count - itemAvailability.uses(row.id) }} / {{ row.count }}
                 </template>
                 <template slot="desc" slot-scope="{value}">
-                    <add-links-and-icons :text="value"/>
+                    <add-links-and-icons :text="$t(value)"/>
                 </template>
             </data-table>
         </div>
@@ -124,6 +125,8 @@ import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
 import ItemRepository from "../repositories/ItemRepository";
 import SheetRepository from "../repositories/SheetRepository";
+import ScenarioRepository from "../repositories/ScenarioRepository";
+import ItemAvailability from "../services/ItemAvailability";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -134,7 +137,7 @@ export default {
             costModifier: 0,
             prosperity: 1,
             items: collect([]),
-            itemCountUses: {},
+            itemAvailability: null,
             campaignName: null,
             loading: true,
             query: '',
@@ -156,6 +159,7 @@ export default {
             dropDownClose: false,
             storySyncer: new StorySyncer,
             itemRepository: new ItemRepository,
+            scenarioRepository: new ScenarioRepository,
             sheetRepository: new SheetRepository,
         }
     },
@@ -180,7 +184,7 @@ export default {
             this.sheet = this.sheetRepository.make(app.game);
             this.costModifier = this.calculateCostModifier(this.sheet.reputation || 0);
             this.campaignName = this.getCampaignName();
-            this.getItemAvailability();
+            this.itemAvailability = new ItemAvailability(this.sheet);
 
             await this.$nextTick();
 
@@ -189,7 +193,12 @@ export default {
             this.field = new MDCTextField(this.$refs['search-field']);
         },
         refreshItems() {
-            const sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+            let sheetItems;
+            if (this.sheet.game === 'jotl') {
+                sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
+            } else {
+                sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+            }
             this.items = this.itemRepository.findMany(sheetItems);
         },
         changeItem(id, isChecked) {
@@ -197,19 +206,6 @@ export default {
             Vue.set(this.sheet.itemDesigns, item, isChecked);
             this.refreshItems();
             this.store();
-        },
-        getItemAvailability() {
-            this.itemCountUses = {};
-
-            if (this.sheet.characters) {
-                collect(this.sheet.characters).each(character => {
-                    collect(character.items).each((available, id) => {
-                        if (available) {
-                            this.itemCountUses[id] = (this.itemCountUses[id] || 0) + 1;
-                        }
-                    });
-                })
-            }
         },
         store() {
             if (this.loading) {

@@ -1,5 +1,8 @@
 import Storable from './Storable'
 import GameData from "../services/GameData";
+import PersonalQuestRepository from "../repositories/PersonalQuestRepository";
+import PersonalQuest from "./PersonalQuest";
+import UsesTranslations from "./UsesTranslations";
 
 class Character {
 
@@ -11,7 +14,8 @@ class Character {
         this.uuid = data.uuid;
         this.id = data.id;
         this.name = data.name;
-        this.characterName = data.characterName;
+        this.characterName = null;
+        this.perkDescriptions = [];
         this.level = data.level || 1;
         this.xp = data.xp || 0;
         this.gold = data.gold || 0;
@@ -19,8 +23,11 @@ class Character {
         this.notes = data.notes || '';
         this.checks = {...data.checks};
         this.perks = {...data.perks};
+        this.quest = {...data.quest};
         this.game = data.game;
         this.gameData = new GameData;
+        this.personalQuestRepository = new PersonalQuestRepository;
+        this.translationKey = '';
 
         this.fieldsToStore = {
             uuid: 'uuid',
@@ -32,7 +39,8 @@ class Character {
             items: {'items': {}},
             notes: 'notes',
             checks: {'checks': {}},
-            perks: {'perks': {}}
+            perks: {'perks': {}},
+            quest: {'quest': {}}
         };
 
         this.read();
@@ -44,17 +52,21 @@ class Character {
 
     new() {
         this.name = this.characterName;
-        this.fillBlanks();
+    }
+
+    readGameData() {
+        const data = this.gameData.characters(this.game)[this.id];
+        this.characterName = this.$tPrefix('name');
+        this.perkDescriptions = data.perks;
     }
 
     fillBlanks() {
-        this.characterName = this.gameData.characterNames(this.game)[this.id];
-
         for (let i = 0; i <= 17; i++) {
             this.checks[i] = this.checks[i] || false;
         }
 
-        this.perkDescriptions().forEach((perk, index) => {
+        this.perkDescriptions.forEach((perk, index) => {
+            perk.desc = this.$tPrefix('perks.' + index);
             for (let i = 0; i < perk.count; i++) {
                 this.perks[index] = this.perks[index] || [];
                 this.perks[index][i] = this.perks[index][i] || false;
@@ -62,15 +74,18 @@ class Character {
         })
     }
 
-    perkDescriptions() {
-        const perks = this.gameData.characterPerks(this.game);
-
-        return perks ? perks[this.id] : [];
+    fillRelations() {
+        if (this.quest.id && !(this.quest instanceof PersonalQuest)) {
+            this.quest = this.personalQuestRepository.make(this.quest);
+        }
     }
 
     read() {
         this.parentRead();
+        this.translationKey = 'characters.' + this.id;
+        this.readGameData();
         this.fillBlanks();
+        this.fillRelations();
     }
 
     valuesToStore() {
@@ -78,6 +93,7 @@ class Character {
         values.checks = collect({...this.checks}).filter(v => v).all();
         values.perks = collect({...this.perks}).filter(perks => (perks || []).filter(v => v)).all();
         values.items = collect({...this.items}).filter(v => v).all();
+        values.quest = this.quest instanceof PersonalQuest ? this.quest.valuesToStore() : {};
         return values;
     }
 
@@ -92,5 +108,7 @@ Object.assign(Character.prototype, {
     store: Storable.store,
     delete: Storable.delete,
 });
+
+Object.assign(Character.prototype, UsesTranslations);
 
 export default Character;

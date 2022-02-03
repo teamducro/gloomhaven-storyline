@@ -5,13 +5,13 @@
                 <span class="flex items-center">
                     <i v-if="(conditionsFiltered.length > 1 || condition.requirements.length > 1) && requirementNotMet(requirement)"
                        class="material-icons text-incomplete text-lg mr-1">error_outline</i>
-                    {{ requirement.achievement.name }} ({{ $t(requirement.achievement.type) }})
+                    {{ $t(requirement.achievement.name) }} ({{ $t(requirement.achievement.type) }})
                     {{ $t(requirement.state).toUpperCase() }}
                     <template v-if="requirementIndex + 1 < condition.requirements.length">
-                        and
+                        {{ $t('and') }}
                     </template>
                     <template v-if="conditionIndex + 1 < conditionsFiltered.length">
-                        or
+                        {{ $t('or') }}
                     </template>
                 </span>
             </div>

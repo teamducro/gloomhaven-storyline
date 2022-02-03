@@ -5,7 +5,7 @@ import GameData from "../services/GameData";
 export default class QuestRepository {
 
     fetch(game) {
-        return collect((new GameData).quests(game)).map((quest) => {
+        return collect(this.gameData.quests(game)).map((quest) => {
             return new Quest(quest);
         });
     }
@@ -16,5 +16,9 @@ export default class QuestRepository {
 
     findMany(list) {
         return app.quests.whereIn(list);
+    }
+
+    get gameData() {
+        return this._gameData || (this._gameData = new GameData());
     }
 }

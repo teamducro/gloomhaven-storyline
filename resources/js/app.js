@@ -21,7 +21,8 @@ import OfflineChecker from "./services/app/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
 import * as Sentry from "@sentry/vue";
 import {Integrations} from "@sentry/tracing";
-import shouldTransferVersion1Progress from "./services/app/shouldTransferVersion1Progress";
+import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
+import migrateVersion2Progress from "./services/app/migrateVersion2Progress";
 import isWebpSupported from "./services/app/isWebpSupported";
 import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
@@ -32,6 +33,7 @@ import localizedFormat from 'dayjs/plugin/localizedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import TreasureValidator from "./services/TreasureValidator";
 import Vue from 'vue';
+const { RayPlugin } = require('vue-ray/vue2');
 
 window._ = require('lodash');
 window.c = require('cash-dom');
@@ -48,6 +50,7 @@ Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
 Vue.use(VueScrollTo);
+Vue.use(RayPlugin, { interceptErrors: true, host: '127.0.0.1', port: 23517 });
 
 // Vue components
 const components = require.context('./components', true, /\.vue$/i);
@@ -202,6 +205,7 @@ window.app = new Vue({
             }
 
             this.campaignData = store.get(this.campaignId) || {};
+            this.campaignData = migrateVersion2Progress(this.campaignData);
             this.game = store.get('game') || 'gh';
             this.stories = this.storyRepository.getStories();
             if (Helpers.loggedIn()) {
@@ -240,7 +244,7 @@ window.app = new Vue({
             this.offlineChecker.handle();
             this.webpSupported = isWebpSupported();
             checkHasMouse(this.$bus);
-            shouldTransferVersion1Progress();
+            migrateVersion1Progress();
         }
     }
 });

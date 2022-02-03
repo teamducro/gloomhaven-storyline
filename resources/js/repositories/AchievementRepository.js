@@ -4,11 +4,13 @@ import AchievementGroup from "../models/AchievementGroup";
 import {ScenarioState} from "../models/ScenarioState";
 import StorySyncer from "../services/StorySyncer";
 import GameData from "../services/GameData";
+import ScenarioCompletedService from "../services/ScenarioCompletedService";
+import Helpers from "../services/Helpers";
 
 export default class AchievementRepository {
 
     fetch(game) {
-        return collect((new GameData).achievements(game)).map((achievement) => {
+        return collect(this.gameData.achievements(game)).map((achievement) => {
             achievement = new Achievement(achievement);
             return achievement;
         });
@@ -94,12 +96,19 @@ export default class AchievementRepository {
     }
 
     lose(id) {
-        let achievement = this.find(id);
+        const achievement = this.find(id);
         achievement.lose();
     }
 
     find(id) {
-        return app.achievements.firstWhere('id', id);
+        const achievement = app.achievements.firstWhere('id', id);
+
+        if (!achievement) {
+            let message = 'Something went wrong, please refresh and try again.';
+            app.$bus.$emit('toast', message, false);
+        }
+
+        return achievement;
     }
 
     findMany(list) {
@@ -113,11 +122,11 @@ export default class AchievementRepository {
     }
 
     searchManual(query) {
-        query = query.trim().toLowerCase().replace('-', ' ');
+        query = Helpers.sanitize(query);
         return this.where((achievement) => {
             return achievement.is_manual
                 && !achievement.manual_awarded
-                && achievement.name.toLowerCase().replace('-', ' ').startsWith(query);
+                && Helpers.sanitize(achievement._name).startsWith(query);
         });
     }
 
@@ -160,6 +169,10 @@ export default class AchievementRepository {
 
     get storySyncer() {
         return this._storySyncer || (this._storySyncer = new StorySyncer);
+    }
+
+    get gameData() {
+        return this._gameData || (this._gameData = new GameData());
     }
 
 }

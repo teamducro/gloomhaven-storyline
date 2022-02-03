@@ -32,6 +32,7 @@
 <script>
 import {MDCTextField} from "@material/textfield/component";
 import Slugify from "../../services/Slugify";
+import Helpers from "../../services/Helpers";
 
 export default {
     mixins: [Slugify],
@@ -41,11 +42,12 @@ export default {
         list: {type: Array},
         maxItems: {default: 10},
         width: {type: String, default: 'w-40'},
+        autoClose: {type: Boolean, default: false},
         filterClosure: {
             type: Function,
             default: (query) => {
                 return (item) => {
-                    return item.toLowerCase().replace('-', ' ').startsWith(query);
+                    return Helpers.sanitize(item).startsWith(query);
                 }
             }
         },
@@ -61,8 +63,11 @@ export default {
         this.field = new MDCTextField(this.$refs['field']);
     },
     watch: {
-        list(list) {
-            this.filter();
+        list: {
+            handler(list) {
+                this.filter();
+            },
+            immediate: true
         }
     },
     methods: {
@@ -73,12 +78,23 @@ export default {
             this.items = filtered.slice(0, this.maxItems)
         },
         search(query) {
-            query = query.trim().toLowerCase().replace('-', ' ');
-            return this.list.filter(this.filterClosure(query));
+            query = Helpers.sanitize(query).replace(/^0+/, '');
+
+            if (query.length) {
+                return this.list.filter(this.filterClosure(query));
+            }
+
+            return this.list;
         },
         select(item) {
             this.$emit('change', item);
-        }
+            if (this.autoClose) {
+                this.close();
+            }
+        },
+        close() {
+            this.$refs["dropdown"].close();
+        },
     }
 }
 </script>

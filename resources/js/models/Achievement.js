@@ -1,5 +1,6 @@
 import Storable from './Storable'
 import Card from "./Card";
+import UsesTranslations from "./UsesTranslations";
 
 class Achievement {
 
@@ -17,7 +18,9 @@ class Achievement {
         this._lost = false;
         this._count = 0;
         this.is_manual = data.is_manual || false;
-        this.cards = collect(data.cards).map((card) => new Card(card));
+        this.cards = collect(data.cards).map((card) => new Card(card, data.game));
+        this.game = data.game;
+        this.translationKey = `achievements.${this.game}-${this.id}`;
 
         this.fieldsToStore = {
             "awarded": {"_awarded": this._awarded},
@@ -32,7 +35,7 @@ class Achievement {
     }
 
     get name() {
-        return app.$t('achievements.' + this._name.replaceAll("'", ''));
+        return this.$tPrefix('name');
     }
 
     isGlobal() {
@@ -99,10 +102,6 @@ class Achievement {
         return this._manual_awarded;
     }
 
-    get displayName() {
-        return this.count > 1 ? this.name + " (" + this.count + ")" : this.name;
-    }
-
     get image() {
         const file = this.count > 1 ? this.id + this.count : this.id;
         return '/img/achievements/' + file + '.png';
@@ -118,5 +117,6 @@ class Achievement {
 }
 
 Object.assign(Achievement.prototype, Storable);
+Object.assign(Achievement.prototype, UsesTranslations);
 
 export default Achievement;

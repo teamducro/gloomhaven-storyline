@@ -3,7 +3,7 @@
         <h2 id="change-log" class="mt-8 mb-4 text-lg">{{ $t('Change log') }}</h2>
 
         <p class="my-4">
-            Only somewhat big features are included, every update brings bug fixes and improvements to the app!
+            {{ $t('changelog.text') }}
         </p>
 
         <div class="flex flex-col">
@@ -13,15 +13,15 @@
                     <tr>
                         <th scope="col"
                             class="px-4 py-3 text-left text-xs font-bold text-white uppercase">
-                            Version
+                            {{ $t('Version') }}
                         </th>
                         <th scope="col"
                             class="px-4 py-3 text-left text-xs font-bold text-white uppercase">
-                            Description
+                            {{ $t('Description') }}
                         </th>
                         <th scope="col"
                             class="px-4 py-3 text-left text-xs font-bold text-white uppercase">
-                            Release&nbsp;date
+                            {{ $t('Release&nbsp;date') }}
                         </th>
                     </tr>
                     </thead>
@@ -122,7 +122,10 @@ export default {
                 {version: 2.14, description: 'Spanish language', date: dayjs('05-01-2021')},
                 {version: 2.15, description: 'Draw event cards', date: dayjs('05-23-2021')},
                 {version: 2.16, description: 'Patreon', date: dayjs('06-09-2021')},
-                {version: 2.17, description: 'Character sheets', date: dayjs('08-14-2021')}
+                {version: 2.17, description: 'Character sheets', date: dayjs('08-14-2021')},
+                {version: 3.0, description: 'Jaws of the Lion', date: dayjs('10-08-2021')},
+                {version: 3.1, description: 'Personal quests', date: dayjs('11-25-2021')},
+                {version: 3.2, description: 'Add more translation support', date: dayjs('01-31-2022')},
             ].reverse()
         }
     },

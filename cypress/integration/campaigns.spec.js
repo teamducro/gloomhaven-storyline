@@ -66,7 +66,7 @@ describe('Campaigns', () => {
         cy.get('#request-login-link').within(() => {
             cy.get('input[name=email]').type('test');
             cy.get('form').submit();
-            cy.contains('The email is send to your inbox.');
+            cy.contains('An email has been sent to your inbox.');
         });
     });
 

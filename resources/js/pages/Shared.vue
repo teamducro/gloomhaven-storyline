@@ -17,6 +17,7 @@ export default {
             const version = this.$route.params.version;
             const id = this.$route.params.id;
             const compressed = this.$route.params.storage;
+            const path = this.$route.params.path || 'story';
 
             if (this.shareState.loadNewLink(version, id, compressed)) {
                 this.$bus.$emit('campaign-selected', id);
@@ -26,7 +27,8 @@ export default {
             }
 
             await this.$nextTick();
-            this.$router.replace('/story');
+
+            this.$router.replace('/' + path);
         }
     }
 }

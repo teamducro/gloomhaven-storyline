@@ -17,14 +17,14 @@
                     </div>
                     <div class="mt-3 text-center sm:mt-5">
                         <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
-                            {{ $t('donations.title') }}
+                            {{ $t('donations.' + paragraph + '.title') }}
                         </h3>
                         <div class="mt-2 text-sm leading-5 text-gray-400">
                             <p class="mb-2">
-                                {{ $t('donations.1') }}<br>{{ $t('donations.2') }}
+                                {{ $t('donations.' + paragraph + '.1') }}<br>{{ $t('donations.' + paragraph + '.2') }}
                             </p>
                             <p>
-                                {{ $t('donations.3') }}
+                                {{ $t('donations.' + paragraph + '.3') }}
                             </p>
                         </div>
                     </div>
@@ -56,6 +56,7 @@ export default {
             show: false,
             isOpen: false,
             timesWithoutDonations: 4,
+            paragraph: Math.ceil(Math.random() * 2),
             loggedIn: Helpers.loggedIn(),
         }
     },

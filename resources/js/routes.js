@@ -24,6 +24,6 @@ export default [
     {path: '/items', component: Items},
     {path: '/login/:id/:token', component: Login},
     {path: '/settings', component: Settings},
-    {path: '/shared/:version/:id/:storage', component: Shared},
+    {path: '/shared/:version/:id/:storage/:path?', component: Shared},
     {path: '*', redirect: '/story'},
 ];

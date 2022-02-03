@@ -2,7 +2,7 @@
     <div class="mb-4">
         <h2 class="mb-2">{{ $t('Perks') }}</h2>
         <div class="mb-4">
-            <div class="flex" v-for="(perkDescription, perkIndex) in character.perkDescriptions()">
+            <div class="flex" v-for="(perkDescription, perkIndex) in character.perkDescriptions">
                 <checkbox v-for="(perk, index) in perks[perkIndex]"
                           v-if="index < perkDescription.count"
                           :key="'perk-'+perkIndex+'-'+index" group="perks"
@@ -10,7 +10,7 @@
                           :checked="perks[perkIndex][index]"
                           @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
                 <p class="ml-2 mt-1 mb-1">
-                    <add-links-and-icons :text="perkDescription.desc"/>
+                    <add-links-and-icons :text="$t(perkDescription.desc)"/>
                 </p>
             </div>
         </div>

@@ -1,20 +1,20 @@
 <template>
     <div id="snapshots" class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
-        <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left">
-            Snapshots
+        <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left flex items-center">
+            <i class="material-icons mr-4" aria-hidden="true">restore</i>
+            {{ $t('snapshots.title') }}
         </h1>
         <p class="text-base">
-            If you ever lose campaign progress you can use these automatic snapshots to revert unwanted
-            changes!
+            {{ $t('snapshots.text-1') }}
         </p>
 
         <alert v-if="campaignId === 'local'" type="warning">
-            Snapshots are only available for shared campaigns because they're stored in the cloud.<br>
-            <router-link to="/campaigns" class="link">Please consider purchasing a license.</router-link>
+            {{ $t('snapshots.text-2') }}<br>
+            <router-link to="/campaigns" class="link">{{ $t('Please consider purchasing a license') }}.</router-link>
         </alert>
 
         <alert v-if="story && story.is_shared" type="warning">
-            Only owners of this campaign can manage snapshots.
+            {{ $t('snapshots.only-owner') }}.
         </alert>
 
         <template v-if="story && !story.is_shared">
@@ -25,7 +25,7 @@
             </button>
 
             <p class="text-base mt-2" v-if="story.snapshots.isEmpty()">
-                There are no snapshots yet.
+                {{ $t('snapshots.no-snapshots') }}.
             </p>
 
             <ul class="mdc-list mdc-list--non-interactive">

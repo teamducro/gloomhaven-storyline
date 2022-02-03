@@ -10,6 +10,7 @@
         <confirm-transfer></confirm-transfer>
         <item-modal></item-modal>
         <event-card></event-card>
+        <default-card-modal></default-card-modal>
         <edit-campaign></edit-campaign>
     </div>
 </template>

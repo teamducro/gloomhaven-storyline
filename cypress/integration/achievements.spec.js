@@ -6,10 +6,8 @@ describe('Achievements', () => {
     it('It opens achievements page', () => {
         cy.visit('/tracker/#/achievements');
 
-        cy.get('#app').within(() => {
-            cy.contains('Global Achievements');
-            cy.contains('Party Achievements');
-        });
+        cy.contains('Global Achievements');
+        cy.contains('Party Achievements');
     });
 
     it('It gains achievements when completing a scenario', () => {
@@ -137,4 +135,11 @@ describe('Achievements', () => {
         cy.visit('/tracker/#/story');
         utilities.isSideNodeHidden(74);
     });
+
+    it('It can gain an achievement multiple times', () => {
+        cy.visit('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxAYwL4BpwBmmMAnAGzKoYCWe4UwCAhgE6ZTUBuApgCYDCUVk0xpuLMJTwJ2w0eICqAOwA2Ae0wBrSSgQAhAErIQcXAn4AJY6YQBlAOrWzAFQCSTu-w8BZZ9bqywNKY1GgAnpQIiEgmZgBMHgDMHgAsHgCsHhQxNgDsHgAcHiQecAAMpdGxUQk5ZnDJdVFpTXCZrdnVcPmtRa0lTXEVg1U2cbXVcY2TLZPtk51jPZN9kwPVicMmdNS8QfgADtQ2LGpMvJGj8UmpGVkeyzarNus25ZWlE2-Tb7Nv829FvVHvVnvVXvEtmMrghxh4pvC-vEAfEgbCQbCwbCIQhNv58ABXIJ0JgABQAYrZKCAmAB3WJYNSmEAqEBlOiQWC1KhYEkQfhGFA0sAAbQQAHEBd4EABdEmSgzSoV0hmYJn4Vns-CcmCNHkAIw50BgLR5OG1xvaPNoFtg2TNJNJAClSdSVcy1czNY6ACJ6N30j3qllso2wPoO-BMcXObzkgOq4Pe20wHqR8DGhrU9AgG0Z2BwU3gDDmmkx0kAUQTQa9oZTQ2zJbD8GGPKgzbgAzbjtsXmV9LK+DVg5DWvzMDiaeLIHbUZjBgAcgmR8ONXXx3B7dO8zq4BHp6WdXF9zmd8a4kWc7Px3ErSADphmVfmwihTnD+et+-myk9Qf5QAgn4-aJrWI4ALZMOuZLOIKoDukOSbQRSfbwYGiFgS+3L-lGEAAQYwHwaKEr4QgZjigBXhynOpEgSuagjqycDNok0TpjqiR3ugCAsNwACOBLULxFwsV+aA8fxgnCQggGoTS6GMphKaJFO37KSeTbKV2OFlvY-ogTWa5jjBPpySq9GMeuHF-g+T4YNeHGXvZjrOAAaoR8lsohlnGaSzg+h55neUZ8r+QB1YYSFUZ+c4gUKZ6UXjikqmaWWFYAPJmfFaiJIlOrpGx26OgY4UGZFo4-k5uY-hpvLRUBPoRYpeWZlxNA-mJdVpZl2EIc1FVzhl-B-n1CUVdgQA/achievements');
+        cy.get('#global-achievements li').contains('End of Corruption (3)').click();
+
+        cy.get('.mdc-dialog__title').contains('End of Corruption (3)');
+    })
 });

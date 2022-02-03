@@ -10,7 +10,7 @@
             />
             <h1 class="hidden sm:inline-block mt-4 text-xl">{{ campaignName }}
                 <span v-if="character && selected"
-                      class="pl-4">{{ character.characterName }}</span>
+                      class="pl-4">{{ $t(character.characterName) }}</span>
             </h1>
 
             <add-character ref="add-character" :sheet="sheet" @create="create"/>
@@ -32,7 +32,7 @@
                                 <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="name-field">
                                     <span class="mdc-text-field__ripple"></span>
                                     <input class="mdc-text-field__input" aria-labelledby="name"
-                                           type="text" name="name" v-model="character.name" @change="store">
+                                           type="text" name="name" v-model="nameText" @change="store">
                                     <span class="mdc-floating-label" id="name">{{ $t('Name') }}</span>
                                     <span class="mdc-line-ripple"></span>
                                 </label>
@@ -76,30 +76,46 @@
                                 :title="$t('Items')"
                                 :label="$t('Search name or nr')"
                                 :items.sync="sheetItems"
+                                :disabled="outOfStockItems"
                                 :filter-closure="itemFilterClosure"
                                 width="w-auto"
-                                class="mb-8"
+                                class="mb-2"
                                 @change="storeItems"
                                 ref="items"
                             >
                                 <span class="flex items-center mr-6" slot="label" slot-scope="{item}">
                                     <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                    <span>{{ items[item].number }} {{ items[item].name }}</span>
+                                    <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
                                 </span>
                                 <div slot="item" slot-scope="{item}"
                                      class="cursor-pointer flex items-center border-b border-white2-50 py-1"
                                      @click="openItemModel(item)">
                                     <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                    <span>{{ items[item].number }} {{ items[item].name }}</span>
+                                    <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
                                     <span @click.stop="$refs.items.deselect(item)"
                                           class="ml-auto material-icons">clear</span>
                                 </div>
                             </selectable-list>
 
+                            <router-link to="/items">
+                                <button class="mb-8 mdc-button origin-left transform scale-90 mdc-button--raised pr-1">
+                                    <i class="material-icons mdc-button__icon transform rotate-180">style</i>
+                                    <span class="mdc-button__label">{{ $t('Items') }} 〉</span>
+                                </button>
+                            </router-link>
+
+                            <personal-quests v-if="game !== 'jotl'"
+                                             :quest.sync="character.quest"
+                                             :game="character.game"
+                                             :sheet="sheet"
+                                             @change="store"/>
+
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
-                            <perks :checks.sync="character.checks" :perks.sync="character.perks"
-                                   :character="character" @change="store"/>
+                            <perks :checks.sync="character.checks"
+                                   :perks.sync="character.perks"
+                                   :character="character"
+                                   @change="store"/>
                         </div>
                     </div>
 
@@ -188,23 +204,31 @@ import CharacterRepository from "../repositories/CharacterRepository";
 import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
 import store from "store/dist/store.modern";
+import ScenarioRepository from "../repositories/ScenarioRepository";
+import ItemAvailability from "../services/ItemAvailability";
+import Helpers from "../services/Helpers";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
+            game: null,
             sheet: null,
             sheetHash: null,
             selected: null,
             character: null,
+            nameText: null,
             campaignName: null,
             loading: true,
             sheetItems: {},
             items: collect(),
+            itemAvailability: null,
+            outOfStockItems: [],
             nameField: null,
             isLocalCampaign: true,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
+            scenarioRepository: new ScenarioRepository,
             characterRepository: new CharacterRepository,
             itemRepository: new ItemRepository
         }
@@ -231,6 +255,7 @@ export default {
         async render() {
             this.loading = true;
 
+            this.game = app.game;
             this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
 
@@ -254,13 +279,37 @@ export default {
         },
         refreshItems() {
             if (this.character) {
-                let sheetItems = this.calculateItems(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                let sheetItems;
                 this.sheetItems = {};
+
+                if (this.sheet.game === 'jotl') {
+                    sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
+                } else {
+                    sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                }
 
                 this.items = this.itemRepository.findMany(sheetItems).keyBy('id').items;
                 sheetItems.forEach(id => {
-                    this.sheetItems[id] = !!this.character.items[id];
+                    if (!isNaN(id)) {
+                        this.sheetItems[id] = !!this.character.items[id];
+                    }
                 });
+
+                this.refreshOutOfStockItems();
+            }
+        },
+        refreshOutOfStockItems() {
+            this.itemAvailability = new ItemAvailability(this.sheet);
+
+            if (this.character) {
+                this.outOfStockItems = [];
+
+                for (const id in this.itemAvailability.itemCountUses) {
+                    // The following items are out of stock
+                    if (this.items[id] && this.itemAvailability.uses(id) >= this.items[id].count) {
+                        this.outOfStockItems.push(id);
+                    }
+                }
             }
         },
         resetRollback() {
@@ -288,6 +337,9 @@ export default {
             }
 
             if (this.character) {
+                this.nameText = this.character.name !== this.character.characterName
+                    ? this.character.name
+                    : this.$t(this.character.characterName);
                 this.selected = uuid;
                 this.refreshItems();
                 this.rerender();
@@ -300,6 +352,7 @@ export default {
         selectDemo() {
             this.selected = null;
             this.character = Character.make('demo', app.game, 'BR');
+            this.nameText = this.$t(this.character.characterName);
             this.rerender();
         },
         create(id) {
@@ -318,12 +371,16 @@ export default {
         storeItems() {
             this.character.items = this.sheetItems;
             this.store();
+            this.refreshOutOfStockItems();
         },
         store() {
-            if (this.loading) {
+            if (this.loading || !this.selected) {
                 return;
             }
 
+            if (this.nameText !== this.character.name) {
+                this.character.name = this.nameText;
+            }
             this.character.store();
             this.storySyncer.store();
         },
@@ -358,7 +415,7 @@ export default {
             // This allows to find items based on id and it's name.
             return (id) => {
                 return id.toLowerCase().startsWith(query)
-                    || this.items[id].name.toLowerCase().replace('-', ' ').startsWith(query);
+                    || Helpers.sanitize(this.$t(this.items[id].name)).startsWith(query);
             }
         },
         renderHtml(html) {

@@ -8,7 +8,8 @@
 
         <section class="bg-white border-b pt-4 pb-8">
             <div class="container max-w-5xl mx-auto">
-                <h1 class="w-full my-2 text-4xl lg:text-5xl lg:leading-tight font-bold leading-tight text-center text-gray-800">Get the
+                <h1 class="w-full my-2 text-4xl lg:text-5xl lg:leading-tight font-bold leading-tight text-center text-gray-800">
+                    Get the
                     most out of Gloomhaven</h1>
                 <div class="w-full mb-4">
                     <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded shadow"></div>
@@ -183,6 +184,23 @@
 
                 <two-column-content reverse>
                     <template v-slot:title>
+                        <i class="material-icons text-gray-800 mr-2 transform rotate-180" aria-hidden="true">style</i>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Extensions
+                        </h3>
+                    </template>
+                    <template v-slot:left>
+                        <p class="text-gray-500 mb-2">
+                            Forgotten circles and Jaws of the Lion can be tracked in Gloomhaven Storyline
+                        </p>
+                    </template>
+                    <template v-slot:right>
+
+                    </template>
+                </two-column-content>
+
+                <two-column-content>
+                    <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2" aria-hidden="true">map</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
                             Map view
@@ -211,7 +229,7 @@
                 </two-column-content>
 
 
-                <two-column-content>
+                <two-column-content reverse>
                     <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2" aria-hidden="true">filter_list</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
@@ -289,6 +307,14 @@
                             <email-me class="link">contact me</email-me>
                             if you like to contribute with translations.
                         </p>
+
+                        <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
+                            <inline-svg src="icons/jotl" :classes="['w-6', 'h-6', 'mr-2']"/>
+                            Jaws of the Lion
+                        </div>
+                        <p class="text-gray-800 px-6">
+                            Jaws of the Lion is supported!
+                        </p>
                     </div>
                 </div>
 
@@ -327,7 +353,8 @@
 
         <section class="container mx-auto text-center px-4 py-6 mb-12">
 
-            <h1 class="w-full my-2 text-4xl lg:text-5xl lg:leading-tight font-bold leading-tight text-center text-white">Enjoy
+            <h1 class="w-full my-2 text-4xl lg:text-5xl lg:leading-tight font-bold leading-tight text-center text-white">
+                Enjoy
                 Gloomhaven</h1>
 
             <h3 class="my-4 text-3xl leading-tight">An organized campaign synchronized with your party!</h3>

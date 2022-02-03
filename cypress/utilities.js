@@ -140,8 +140,14 @@ export default {
 
     switchGame(game) {
         cy.get('button').contains('menu').click();
-        cy.get('.mdc-list-item__text').contains('Storyline').next().click();
+        cy.get('.game-switch .mdc-select__selected-text').click();
         cy.get('.' + game).click();
+        cy.reload();
+    },
+
+    openCharacter(character = 'Cragheart') {
+        cy.get('.items-to-add-dropdown').click();
+        cy.get('li.add-character').contains(character).click();
     },
 
     // Call "cy.scrollTo" twice to make sure scrolling is performed as expected.

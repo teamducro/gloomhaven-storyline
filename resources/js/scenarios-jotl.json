@@ -1,0 +1,566 @@
+{
+    "scenarios": [
+        {
+            "root": true,
+            "id": 1,
+            "game": "jotl",
+            "name": "Roadside Ambush",
+            "coordinates": {
+                "name": "B-1",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 1,
+            "links_to": [
+                2
+            ]
+        },
+        {
+            "id": 2,
+            "game": "jotl",
+            "name": "A Hole in the Wall",
+            "coordinates": {
+                "name": "B-1",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 1,
+            "linked_from": [
+                1
+            ],
+            "links_to": [
+                3
+            ],
+            "treasures": {
+                "14": "Gain 3 money tokens"
+            },
+            "rewards": [
+                "25 gold each",
+                "Add items 1-13 to the shop"
+            ]
+        },
+        {
+            "id": 3,
+            "game": "jotl",
+            "name": "The Black Ship",
+            "coordinates": {
+                "name": "D-5",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 1,
+            "linked_from": [
+                2
+            ],
+            "links_to": [
+                4
+            ],
+            "treasures": {
+                "10": "“Fateful Compass” (Item 27)"
+            },
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        {
+            "id": 4,
+            "game": "jotl",
+            "name": "A Ritual in Stone",
+            "coordinates": {
+                "name": "C-2",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 1,
+            "linked_from": [
+                3
+            ],
+            "links_to": [
+                5
+            ],
+            "treasures": {
+                "16": "“Mana Potion” (Item 14)"
+            },
+            "rewards": [
+                "“Mana Potion” (Item 14)"
+            ]
+        },
+        {
+            "id": 5,
+            "game": "jotl",
+            "name": "A Deeper Understanding",
+            "coordinates": {
+                "name": "C-2",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 1,
+            "linked_from": [
+                4
+            ],
+            "links_to": [
+                6
+            ],
+            "treasures": {
+                "9": "Gain 5 gold"
+            },
+            "rewards": [
+                "25 experience each"
+            ]
+        },
+        {
+            "id": 6,
+            "game": "jotl",
+            "name": "Corrupted Research",
+            "coordinates": {
+                "name": "B-4",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                5
+            ],
+            "links_to": [
+                7,
+                8
+            ],
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        {
+            "id": 7,
+            "game": "jotl",
+            "name": "Sunken Tumor",
+            "coordinates": {
+                "name": "D-2",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "blocks_on": [
+                {
+                    "complete": [
+                        8
+                    ]
+                }
+            ],
+            "linked_from": [
+                6
+            ],
+            "links_to": [
+                9
+            ],
+            "treasures": {
+                "12": "Gain 5 gold"
+            },
+            "rewards": [
+                "20 experience each"
+            ]
+        },
+        {
+            "id": 8,
+            "game": "jotl",
+            "name": "Hidden Tumor",
+            "coordinates": {
+                "name": "C-4",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "blocks_on": [
+                {
+                    "complete": [
+                        7
+                    ]
+                }
+            ],
+            "linked_from": [
+                6
+            ],
+            "links_to": [
+                9
+            ],
+            "treasures": {
+                "4": "Gain 5 gold"
+            }
+        },
+        {
+            "id": 9,
+            "game": "jotl",
+            "name": "Explosive Evolution",
+            "coordinates": {
+                "7": {
+                    "name": "C-4",
+                    "x": 0,
+                    "y": 0
+                },
+                "8": {
+                    "name": "D-2",
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                7,
+                8
+            ],
+            "links_to": [
+                10
+            ],
+            "treasures": {
+                "1": "Gain 10 experience"
+            },
+            "rewards": [
+                "20 experience each",
+                "Add items 15-20 to the shop"
+            ]
+        },
+        {
+            "id": 10,
+            "game": "jotl",
+            "name": "The Gauntlet",
+            "coordinates": {
+                "name": "E-2",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                9
+            ],
+            "links_to": [
+                11,
+                12
+            ],
+            "treasures": {
+                "8": "Suffer 3 damage, gain {POISON}"
+            },
+            "rewards": [
+                "15 experience each"
+            ]
+        },
+        {
+            "id": 11,
+            "game": "jotl",
+            "name": "Defiled Sewers",
+            "coordinates": {
+                "name": "D-2",
+                "x": 0,
+                "y": 0
+            },
+            "blocks_on": [
+                {
+                    "complete": [
+                        12
+                    ]
+                }
+            ],
+            "chapter_id": 2,
+            "linked_from": [
+                10
+            ],
+            "links_to": [
+                13,
+                19
+            ],
+            "rewards": [
+                "“Flea-Bitten Shawl” (Item 28)"
+            ]
+        },
+        {
+            "id": 12,
+            "game": "jotl",
+            "name": "Beguiling Sewers",
+            "coordinates": {
+                "name": "B-5",
+                "x": 0,
+                "y": 0
+            },
+            "blocks_on": [
+                {
+                    "complete": [
+                        11
+                    ]
+                }
+            ],
+            "chapter_id": 2,
+            "linked_from": [
+                10
+            ],
+            "links_to": [
+                14,
+                18
+            ],
+            "rewards": [
+                "“Flea-Bitten Shawl” (Item 28)"
+            ]
+        },
+        {
+            "id": 13,
+            "game": "jotl",
+            "name": "Vile Harvest",
+            "coordinates": {
+                "name": "D-3",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                11
+            ],
+            "links_to": [
+                15
+            ],
+            "treasures": {
+                "5": "Gain 1 ✔"
+            },
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        {
+            "id": 14,
+            "game": "jotl",
+            "name": "Toxic Harvest",
+            "coordinates": {
+                "name": "B-4",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                12
+            ],
+            "links_to": [
+                15
+            ],
+            "treasures": {
+                "15": "Gain 1 ✔"
+            },
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        {
+            "id": 15,
+            "game": "jotl",
+            "name": "Tainted Blood",
+            "coordinates": {
+                "name": "C-4",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                13,
+                14
+            ],
+            "links_to": [
+                16
+            ],
+            "rewards": [
+                "10 gold each",
+                "Add items 21-26 to the shop"
+            ]
+        },
+        {
+            "id": 16,
+            "game": "jotl",
+            "name": "Mixed Results",
+            "coordinates": {
+                "name": "B-4",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                15
+            ],
+            "links_to": [
+                17
+            ],
+            "rewards": [
+                "15 experience each",
+                "“Tower Shield” (Item 29)"
+            ]
+        },
+        {
+            "id": 17,
+            "game": "jotl",
+            "name": "Red Twilight",
+            "coordinates": {
+                "name": "C-6",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                16
+            ],
+            "treasures": {
+                "3": "Gain 15 experience"
+            },
+            "rewards": [
+                "25 experience each",
+                "30 gold each"
+            ]
+        },
+        {
+            "id": 18,
+            "game": "jotl",
+            "name": "The Heist",
+            "coordinates": {
+                "name": "A-5",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                12
+            ],
+            "treasures": {
+                "2": "“Ring of Strength” (Item 31)",
+                "6": "Gain 10 gold",
+                "7": "Gain 5 gold",
+                "13": "Gain 5 gold"
+            },
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        {
+            "id": 19,
+            "game": "jotl",
+            "name": "Den of Thieves",
+            "coordinates": {
+                "name": "A-5",
+                "x": 0,
+                "y": 0
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                11
+            ],
+            "rewards": [
+                "“Ring of Strength” (Item 31)"
+            ]
+        },
+        {
+            "id": 20,
+            "game": "jotl",
+            "name": "Misplaced Goods",
+            "coordinates": {
+                "name": "C-5",
+                "x": 0,
+                "y": 0
+            },
+            "is_side": true,
+            "chapter_id": 3,
+            "treasures": {
+                "X": "“Ring of Restoration” (Item 32)"
+            },
+            "rewards": [
+                "10 gold each"
+            ]
+        },
+        {
+            "id": 21,
+            "game": "jotl",
+            "name": "Agents of Chaos",
+            "coordinates": {
+                "name": "C-9",
+                "x": 0,
+                "y": 0
+            },
+            "is_side": true,
+            "chapter_id": 3,
+            "treasures": {
+                "11": "“Ring of Haste” (Item 30)"
+            },
+            "rewards": [
+                "15 gold each"
+            ]
+        },
+        {
+            "id": 22,
+            "game": "jotl",
+            "name": "Unfriendly Message",
+            "coordinates": {
+                "name": "D-1",
+                "x": 0,
+                "y": 0
+            },
+            "is_side": true,
+            "chapter_id": 4,
+            "rewards": [
+                "“Steel Ring” (Item 33)"
+            ]
+        },
+        {
+            "id": 23,
+            "game": "jotl",
+            "name": "Best of the Best",
+            "coordinates": {
+                "name": "B-5",
+                "x": 0,
+                "y": 0
+            },
+            "is_side": true,
+            "chapter_id": 4,
+            "rewards": [
+                "“Barbed Axe” (Item 34)"
+            ]
+        },
+        {
+            "id": 24,
+            "game": "jotl",
+            "name": "Warding the Void",
+            "coordinates": {
+                "name": "A-3",
+                "x": 0,
+                "y": 0
+            },
+            "is_side": true,
+            "chapter_id": 4,
+            "rewards": [
+                "“Robes of Command” (Item 35)"
+            ]
+        },
+        {
+            "id": 25,
+            "game": "jotl",
+            "name": "The Greatest Job in the World",
+            "coordinates": {
+                "name": "C-7",
+                "x": 0,
+                "y": 0
+            },
+            "is_side": true,
+            "chapter_id": 4,
+            "rewards": [
+                "“Jet Boots” (Item 36)"
+            ]
+        }
+    ],
+    "chapters": [
+        {
+            "id": 1,
+            "name": "Intro"
+        },
+        {
+            "id": 2,
+            "name": "Main"
+        },
+        {
+            "id": 3,
+            "name": "City Events"
+        },
+        {
+            "id": 4,
+            "name": "Characters"
+        }
+    ]
+}

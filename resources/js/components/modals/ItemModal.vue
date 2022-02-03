@@ -3,22 +3,22 @@
         <modal ref="modal" :title="item ? item.number : ''">
             <div v-if="item" slot="content" class="w-full h-full flex outline-none">
                 <div class="flex-1 mr-3">
-                    <webp :src="item.image" :alt="item.name"
+                    <webp :src="item.image" :alt="$t(item.name)"
                           class="w-full rounded-lg sm:rounded-xl" style="max-width: 400px;"/>
                 </div>
 
                 <div class="flex-1 space-y-2">
-                    <p v-if="item.source">
+                    <p v-if="item._source">
                         <span class="relative w-6 h-4 inline-block">
                             <span class="material-icons absolute">info_outline</span>
                         </span>
-                        <add-links-and-icons :text="item.source"/>
+                        <add-links-and-icons :text="$t(item.source)"/>
                     </p>
-                    <p v-if="item.faq">
+                    <p v-if="item._faq">
                         <span class="relative w-6 h-4 inline-block">
                             <span class="material-icons absolute">help_outline</span>
                         </span>
-                        {{ item.faq }}
+                        {{ $t(item.faq) }}
                     </p>
                     <p class="pt-4">
                         Availability: {{ item.count - characters.count() }} / {{ item.count }}

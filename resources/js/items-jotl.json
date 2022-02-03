@@ -1,0 +1,361 @@
+[
+    {
+        "id": 1,
+        "name": "Eagle-Eye Goggles",
+        "count": 2,
+        "cost": 30,
+        "slot": "Head",
+        "source": "Reward from Scenario #2",
+        "spent": true,
+        "desc": "During your attack, gain Advantage on the entire Attack action."
+    },
+    {
+        "id": 2,
+        "name": "Iron Helmet",
+        "count": 2,
+        "cost": 10,
+        "slot": "Head",
+        "source": "Reward from Scenario #2",
+        "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+    },
+    {
+        "id": 3,
+        "name": "Chain Armor",
+        "count": 2,
+        "cost": 30,
+        "slot": "Body",
+        "source": "Reward from Scenario #2",
+        "desc": "During your turn gain {SHIELD} 1 for the rest of the round",
+        "spent": true
+    },
+    {
+        "id": 4,
+        "name": "Studded Leather",
+        "count": 2,
+        "cost": 30,
+        "slot": "Body",
+        "source": "Reward from Scenario #2",
+        "spent": true,
+        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+    },
+    {
+        "id": 5,
+        "name": "Weathered Boots",
+        "count": 2,
+        "cost": 15,
+        "slot": "Legs",
+        "source": "Reward from Scenario #2",
+        "spent": true,
+        "desc": "During your movement add +1 {MOVE} to a single movement."
+    },
+    {
+        "id": 6,
+        "name": "Winged Shoes",
+        "cost": 15,
+        "count": 2,
+        "slot": "Legs",
+        "source": "Reward from Scenario #2",
+        "spent": true,
+        "desc": "During your movement, add {JUMP} to the entire Move Action.",
+        "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
+    },
+    {
+        "id": 7,
+        "name": "Heater Shield",
+        "count": 2,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #2",
+        "spent": true,
+        "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+    },
+    {
+        "id": 8,
+        "name": "Throwing Hammer",
+        "count": 2,
+        "cost": 35,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #2",
+        "desc": "During your ranged attack, add {STUN} to a single attack",
+        "consumed": true
+    },
+    {
+        "id": 9,
+        "name": "Poison Dagger",
+        "count": 2,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #2",
+        "spent": true,
+        "desc": "During your melee attack, add {POISON} to a single attack."
+    },
+    {
+        "id": 10,
+        "name": "Iron Spear",
+        "count": 2,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #2",
+        "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes",
+        "spent": true
+    },
+    {
+        "id": 11,
+        "name": "Healing Potion",
+        "count": 2,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #2",
+        "consumed": true,
+        "desc": "During your turn, perform a “{HEAL} 3, Self” action."
+    },
+    {
+        "id": 12,
+        "name": "Stamina Potion",
+        "count": 2,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #2",
+        "consumed": true,
+        "desc": "During your turn, return one of your discarded cards to your hand."
+    },
+    {
+        "id": 13,
+        "name": "Power Potion",
+        "count": 2,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #2",
+        "consumed": true,
+        "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+    },
+    {
+        "id": 14,
+        "name": "Mana Potion",
+        "count": 2,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #4\n Scenario #4 (Treasure #16)",
+        "consumed": true,
+        "desc": "During your turn, infuse any one element. {ANY}"
+    },
+    {
+        "id": 15,
+        "name": "Amulet of Life",
+        "count": 1,
+        "cost": 20,
+        "slot": "Head",
+        "source": "Reward from Scenario #9",
+        "spent": true,
+        "desc": "During your turn, “{HEAL} 1, Self” action."
+    },
+    {
+        "id": 16,
+        "name": "Robes of Evocation",
+        "count": 1,
+        "cost": 40,
+        "slot": "Body",
+        "source": "Reward from Scenario #9",
+        "spent": true,
+        "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+    },
+    {
+        "id": 17,
+        "name": "Comfortable Shoes",
+        "count": 1,
+        "cost": 30,
+        "slot": "Legs",
+        "source": "Reward from Scenario #9",
+        "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+    },
+    {
+        "id": 18,
+        "name": "Battle-Axe",
+        "count": 1,
+        "cost": 25,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #9",
+        "consumed": true,
+        "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+    },
+    {
+        "id": 19,
+        "name": "Black Candle",
+        "count": 1,
+        "cost": 40,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #9",
+        "spent": true,
+        "desc": "During your ranged attack, add {CURSE} to a single attack."
+    },
+    {
+        "id": 20,
+        "name": "Stun Powder",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #9",
+        "consumed": true,
+        "desc": "During your attack, add {STUN} to a single attack."
+    },
+    {
+        "id": 21,
+        "name": "Hawk Helm",
+        "count": 1,
+        "cost": 20,
+        "slot": "Head",
+        "source": "Reward from Scenario #15",
+        "spent": true,
+        "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
+    },
+    {
+        "id": 22,
+        "name": "Bladed Armor",
+        "count": 1,
+        "cost": 45,
+        "slot": "Body",
+        "source": "Reward from Scenario #15",
+        "spent": true,
+        "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack and the attacker suffers 2 damage."
+    },
+    {
+        "id": 23,
+        "name": "Boots of Striding",
+        "cost": 30,
+        "count": 1,
+        "slot": "Legs",
+        "source": "Reward from Scenario #15",
+        "spent": true,
+        "desc": "During your movement, add +2 {MOVE} to a single movement."
+    },
+    {
+        "id": 24,
+        "name": "Volatile Bomb",
+        "count": 1,
+        "cost": 40,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #15",
+        "consumed": true,
+        "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+    },
+    {
+        "id": 25,
+        "name": "Barbed Chain",
+        "count": 1,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #15",
+        "spent": true,
+        "desc": "During your ranged attack, add {PULL} 2 to a single attack."
+    },
+    {
+        "id": 26,
+        "name": "Oak Charm",
+        "count": 2,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #15",
+        "consumed": true,
+        "desc": "During your turn, perform a “{BLESS}, {RANGE} 5” action."
+    },
+    {
+        "id": 27,
+        "name": "Fateful Compass",
+        "count": 1,
+        "cost": 25,
+        "slot": "Small Item",
+        "source": "Scenario #3 (Treasure #10)",
+        "consumed": true,
+        "desc": "During your turn, force one enemy within {RANGE} 3 to peform a “{MOVE} 2” action with you controlling the action."
+    },
+    {
+        "id": 28,
+        "name": "Flea-Bitten Shawl",
+        "count": 1,
+        "cost": 10,
+        "slot": "Body",
+        "source": "Reward from Scenario #8\nReward from Scenario #12",
+        "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
+        "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
+    },
+    {
+        "id": 29,
+        "name": "Tower Shield",
+        "count": 1,
+        "cost": 40,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #16",
+        "spent": true,
+        "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
+    },
+    {
+        "id": 30,
+        "name": "Ring of Haste",
+        "count": 1,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Scenario #21 (Treasure #11)",
+        "consumed": true,
+        "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of that card."
+    },
+    {
+        "id": 31,
+        "name": "Ring of Strength",
+        "count": 1,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #19\nScenario #18 (Treasure #2)",
+        "consumed": true,
+        "desc": "During your turn, gain {STRENGTHEN}."
+    },
+    {
+        "id": 32,
+        "name": "Ring of Restoration",
+        "count": 1,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Misplaced Good #F from Scenario #20",
+        "consumed": true,
+        "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action."
+    },
+    {
+        "id": 33,
+        "name": "Steel Ring",
+        "count": 1,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Reward from Scenario #22",
+        "consumed": true,
+        "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
+    },
+    {
+        "id": 34,
+        "name": "Barbed Axe",
+        "count": 1,
+        "cost": 40,
+        "slot": "One Hand",
+        "source": "Reward from Scenario #34",
+        "consumed": true,
+        "desc": "During your attack, add {WOUND} to the entire Attack Action."
+    },
+    {
+        "id": 35,
+        "name": "Robes of Command",
+        "count": 1,
+        "cost": 40,
+        "slot": "Body",
+        "source": "Reward from Scenario #24",
+        "spent": true,
+        "desc": "During your turn, one adjacent ally may perform and “{ATTACK} 2” Action."
+    },
+    {
+        "id": 36,
+        "name": "Jet Boots",
+        "count": 1,
+        "cost": 30,
+        "slot": "Legs",
+        "source": "Reward from Scenario #25",
+        "spent": true,
+        "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."
+    }
+]

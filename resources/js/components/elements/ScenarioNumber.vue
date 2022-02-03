@@ -1,9 +1,12 @@
 <template>
-    <button type="button" v-if="scenario.isVisible()"
-            @click="open(scenario.id)"
-            :class="classes">
-        {{ scenario.id }}
-    </button>
+    <span>
+        <button type="button" v-if="scenario.isVisible()"
+                @click="open(scenario.id)"
+                :class="classes">
+            {{ scenario.id }}
+        </button>
+        <span v-if="showName">{{ $t(scenario.name) }}</span>
+    </span>
 </template>
 
 <script>
@@ -15,6 +18,10 @@ export default {
         isSmall: {
             type: Boolean,
             default: true
+        },
+        showName: {
+            type: Boolean,
+            default: false
         }
     },
     data() {

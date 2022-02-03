@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="enabled">
         <div class="pt-16 pb-4 px-4 flex flex-col">
 
             <div class="fixed right-0 top-0 mt-1 z-5">
@@ -18,7 +18,7 @@
 
                     <div class="mdc-list w-40">
                         <p class="text-white text-sm">
-                            Add achievements gained by events other than completing scenarios manually.
+                            {{ $t('Add achievements gained by events other than completing scenarios manually') }}.
                         </p>
                         <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="achievement-to-add">
                             <span class="mdc-text-field__ripple"></span>
@@ -33,7 +33,7 @@
                             aria-orientation="vertical" tabindex="-1">
                             <li v-for="achievement in achievementsToAdd"
                                 class="mdc-list-item cursor-pointer" @click="addAchievement(achievement)">
-                                <span class="mdc-list-item__text">{{ achievement.name }}</span>
+                                <span class="mdc-list-item__text">{{ $t(achievement.name) }}</span>
                             </li>
                         </ul>
                     </div>
@@ -53,7 +53,7 @@
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-75">
-                        {{ achievement.displayName }}
+                        {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
                     </span>
                         </template>
                     </li>
@@ -74,13 +74,16 @@
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-75">
-                        {{ achievement.name }}
+                        {{ $t(achievement.name) }}
                     </span>
                         </template>
                     </li>
                 </ul>
             </div>
         </div>
+    </div>
+    <div v-else>
+        <h1 class="pt-16 text-center">{{ $t('No achievements in ') }} {{ $t(game) }}</h1>
     </div>
 </template>
 
@@ -92,6 +95,8 @@ import {MDCTextField} from "@material/textfield/component";
 export default {
     data() {
         return {
+            enabled: true,
+            game: 'gh',
             globalList: null,
             partyList: null,
             achievements: null,
@@ -123,6 +128,8 @@ export default {
     },
     methods: {
         async setAchievements() {
+            this.enabled = app.game !== 'jotl';
+            this.game = app.game;
             this.achievements = app.achievements.sortBy('name');
 
             await this.$nextTick();
@@ -130,24 +137,28 @@ export default {
             if (this.globalList) {
                 this.globalList.destroy();
             }
-            this.globalList = MDCList.attachTo(this.$refs['global-list']);
-            this.globalList.listen('MDCList:action', (event) => {
-                const id = this.achievements.filter((a) => {
-                    return a.isGlobal() && a.awarded && !a.hidden;
-                }).get(event.detail.index).id;
-                this.open(this.achievementRepository.find(id));
-            });
+            if (this.$refs['global-list']) {
+                this.globalList = MDCList.attachTo(this.$refs['global-list']);
+                this.globalList.listen('MDCList:action', (event) => {
+                    const id = this.achievements.filter((a) => {
+                        return a.isGlobal() && a.awarded && !a.hidden;
+                    }).get(event.detail.index).id;
+                    this.open(this.achievementRepository.find(id));
+                });
+            }
 
             if (this.partyList) {
                 this.partyList.destroy();
             }
-            this.partyList = MDCList.attachTo(this.$refs['party-list']);
-            this.partyList.listen('MDCList:action', (event) => {
-                const id = this.achievements.filter((a) => {
-                    return a.isParty() && a.awarded;
-                }).get(event.detail.index).id;
-                this.open(this.achievementRepository.find(id));
-            });
+            if (this.$refs['party-list']) {
+                this.partyList = MDCList.attachTo(this.$refs['party-list']);
+                this.partyList.listen('MDCList:action', (event) => {
+                    const id = this.achievements.filter((a) => {
+                        return a.isParty() && a.awarded;
+                    }).get(event.detail.index).id;
+                    this.open(this.achievementRepository.find(id));
+                });
+            }
         },
         achievementToAddOpened() {
             this.achievementToAddField = new MDCTextField(this.$refs['achievement-to-add']);

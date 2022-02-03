@@ -3,19 +3,21 @@ import Storable from './Storable'
 import Card from "./Card";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemTextParser from "../services/ItemTextParser";
+import UsesTranslations from "./UsesTranslations";
 
 class Scenario {
 
     constructor(data) {
         this.id = data.id;
+        this.number = `#${this.id}`;
         this.root = data.root || false;
         this._name = data.name;
-        this.coordinates = data.coordinates;
+        this._coordinates = data.coordinates;
         this.is_side = data.is_side || false;
         this.pages = data.pages || [];
         this.requirements = data.requirements || "";
         this.quests = data.quests || [];
-        this.cards = collect(data.cards).map((card) => new Card(card));
+        this.cards = collect(data.cards).map((card) => new Card(card, data.game));
         this.chapter_id = data.chapter_id;
         this.chapter_name = null;
         this.region_ids = data.region_ids || [];
@@ -43,6 +45,7 @@ class Scenario {
         this._promptChoice = null;
         this.hasPrompt = typeof data.prompt !== 'undefined';
         this.game = data.game;
+        this.translationKey = `scenarios.${this.game}-${this.id}`;
 
         this.fieldsToStore = {
             "state": "_state",
@@ -116,11 +119,7 @@ class Scenario {
     }
 
     get name() {
-        return app.$t('scenarios.' + this._name);
-    }
-
-    get title() {
-        return `#${this.id} ${this.name}`;
+        return this.$tPrefix('name');
     }
 
     unlockTreasure(id, unlock = true) {
@@ -165,14 +164,43 @@ class Scenario {
         return this.cards.count() > 0;
     }
 
+    get coordinates() {
+        if (this.hasMultipleLocations()) {
+            const from = this.scenarioRepository.prevScenarios(this).first().id;
+            return this._coordinates[from];
+        } else {
+            return this._coordinates;
+        }
+    }
+
+    hasMultipleLocations() {
+        return Object.keys(this._coordinates).includes(String(this.linked_from.first()));
+    }
+
     image() {
+        let sticker = '/img/scenarios/' + this.game + '/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
+
+        // Multiple scenarios on the same sticker
         if (this.coupled && this.isBlocked()) {
-            if ((new ScenarioRepository).find(this.coupled).isComplete()) {
-                return '/img/scenarios/' + this.coupled + '_c' + '.png'
+            if (this.scenarioRepository.find(this.coupled).isComplete()) {
+                sticker = '/img/scenarios/' + this.game + '/' + this.coupled + '_c' + '.png'
             }
         }
 
-        return '/img/scenarios/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
+        // Scenarios with a different location based on the prior scenario
+        if (this.hasMultipleLocations()) {
+            const from = this.scenarioRepository.prevScenarios(this)?.first()?.id;
+            if (from) {
+                sticker = '/img/scenarios/' + this.game + '/' + this.id + '_' + from + '_c' + '.png'
+            }
+        }
+
+        // Remove when completed scenario stickers are added for JotL
+        if (this.game === 'jotl') {
+            sticker = sticker.replace('_c', '');
+        }
+
+        return sticker;
     }
 
     get rewards() {
@@ -185,6 +213,16 @@ class Scenario {
         }
 
         return rewards;
+    }
+
+    get translatedRewards() {
+        if (typeof this._rewards.first() === 'string') {
+            return this.$tPrefix('rewards');
+        } else if (Array.isArray(this._rewards.first()) && this.promptChoice) {
+            return this.$tPrefix(`rewards.${this.promptChoice - 1}`);
+        }
+
+        return '';
     }
 
     get achievements_awarded() {
@@ -207,12 +245,21 @@ class Scenario {
         return items;
     }
 
+    compatibleWithVirtualBoard() {
+        return ["gh", "fc"].includes(this.game);
+    }
+
+    get scenarioRepository() {
+        return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository);
+    }
+
     key() {
-        return 'scenario-' + this.id;
+        return 'scenario-' + this.game + '-' + this.id;
     }
 
 }
 
 Object.assign(Scenario.prototype, Storable);
+Object.assign(Scenario.prototype, UsesTranslations);
 
 export default Scenario
