@@ -55,7 +55,12 @@ class Sheet {
     }
 
     fillBlanksGH() {
-        for (let i = 71; i <= 150; i++) {
+        for (let i = 71; i <= 151; i++) {
+            this.itemDesigns[i] = this.itemDesigns[i] || false;
+        }
+
+        // FC
+        for (let i = 152; i <= 164; i++) {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
         }
 

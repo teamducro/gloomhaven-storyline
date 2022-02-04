@@ -1505,6 +1505,16 @@
         "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
     },
     {
+        "id": 151,
+        "name": "Sword of the Sands",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario - {BS}",
+        "spent": true,
+        "desc": "During your melee attack, add {POISON} and {WOUND} to the entire attack action."
+    },
+    {
         "id": 152,
         "name": "Ring of Duality",
         "count": 1,

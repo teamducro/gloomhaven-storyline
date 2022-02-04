@@ -2194,6 +2194,11 @@ export default {
             "source": "Reward from Solo Scenario - {BT}",
             "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
         },
+        "gh-151": {
+            "name": "Sword of the Sands",
+            "source": "Reward from Solo Scenario - {BS}",
+            "desc": "During your melee attack, add {POISON} and {WOUND} to the entire attack action."
+        },
         "gh-152": {
             "name": "Ring of Duality",
             "source": "Reward from Scenario #97\nSection 125 “A locked chest” in book",
