@@ -1035,6 +1035,12 @@ export default {
                 "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
             ]
         },
+        "fc-201": {
+            "name": "Forecast of the Inevitable",
+            "rewards": [
+                "“Wahrsagebecken” (Item 164)"
+            ]
+        },
         "jotl-1": {
             "name": "Roadside Ambush"
         },
