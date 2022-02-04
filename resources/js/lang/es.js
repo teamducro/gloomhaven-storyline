@@ -1048,13 +1048,13 @@ export default {
             "name": "A Hole in the Wall",
             "rewards": [
                 "25 de oro para cada personaje",
-                "Add items 1-13 to the shop"
+                "Añade los objetos 1-13 a la tienda"
             ]
         },
         "jotl-3": {
             "name": "The Black Ship",
             "rewards": [
-                "1 ✔ each"
+                "1 ✔ para cada personaje"
             ]
         },
         "jotl-4": {
@@ -1072,7 +1072,7 @@ export default {
         "jotl-6": {
             "name": "Corrupted Research",
             "rewards": [
-                "1 ✔ each"
+                "1 ✔ para cada personaje"
             ]
         },
         "jotl-7": {
@@ -1088,7 +1088,7 @@ export default {
             "name": "Explosive Evolution",
             "rewards": [
                 "20 XP para cada personaje",
-                "Add items 15-20 to the shop"
+                "Añade los objetos 15-20 a la tienda"
             ]
         },
         "jotl-10": {
@@ -1112,20 +1112,20 @@ export default {
         "jotl-13": {
             "name": "Vile Harvest",
             "rewards": [
-                "1 ✔ each"
+                "1 ✔ para cada personaje"
             ]
         },
         "jotl-14": {
             "name": "Toxic Harvest",
             "rewards": [
-                "1 ✔ each"
+                "1 ✔ para cada personaje"
             ]
         },
         "jotl-15": {
             "name": "Tainted Blood",
             "rewards": [
                 "10 de oro para cada personaje",
-                "Add items 21-26 to the shop"
+                "Añade los objetos 21-26 a la tienda"
             ]
         },
         "jotl-16": {
@@ -1361,76 +1361,76 @@ export default {
             "name": "Golpe en el cementerio"
         },
         "gh-PNE": {
-            "name": "Northern Expedition"
+            "name": "Expedición al Norte"
         },
         "gh-GTTP": {
-            "name": "Through the Portal"
+            "name": "A través del portal"
         },
         "gh-GKIP": {
-            "name": "Knowledge is Power"
+            "name": "El conocimiento es poder"
         },
         "gh-GKIP2": {
-            "name": "Knowledge is Power x2"
+            "name": "El conocimiento es poder x2"
         },
         "gh-GKIP3": {
-            "name": "Knowledge is Power x3"
+            "name": "El conocimiento es poder x3"
         },
         "gh-GKIP4": {
-            "name": "Knowledge is Power x4"
+            "name": "El conocimiento es poder x4"
         },
         "gh-PAD": {
-            "name": "Angels of Death"
+            "name": "Ángeles de la muerte"
         },
         "gh-PC": {
-            "name": "Custodians"
+            "name": "Custodios"
         },
         "gh-PHP": {
-            "name": "Hunted Prey"
+            "name": "Presa cazada"
         },
         "gh-GPOA": {
-            "name": "Pieces of an Artifact"
+            "name": "Piezas de un artefacto"
         },
         "gh-GPOA2": {
-            "name": "Pieces of an Artifact x2"
+            "name": "Piezas de un artefacto x2"
         },
         "gh-GPOA3": {
-            "name": "Pieces of an Artifact x3"
+            "name": "Piezas de un artefacto x3"
         },
         "gh-PGD": {
-            "name": "Guard Detail"
+            "name": "Destacamento de guardia"
         },
         "gh-PDE": {
-            "name": "Dimensional Equilibrium"
+            "name": "Equilibrio dimensional"
         },
         "gh-PHH": {
-            "name": "Hunting the Hunter"
+            "name": "Cazador cazado"
         },
         "gh-PXA": {
-            "name": "Xangroth's Aid"
+            "name": "La ayuda de Xangroth"
         },
         "gh-PDA": {
-            "name": "Diamara's Aid"
+            "name": "La ayuda de Diamara"
         },
         "gh-PBF": {
-            "name": "Beauty in Freedom"
+            "name": "La belleza de la libertad"
         },
         "gh-GPA": {
-            "name": "A Peril Averted"
+            "name": "Un peligro evitado"
         },
         "gh-GPA2": {
-            "name": "A Peril Averted x2"
+            "name": "Un peligro evitado x2"
         },
         "gh-GPA3": {
-            "name": "A Peril Averted x3"
+            "name": "Un peligro evitado x3"
         },
         "gh-GPA4": {
-            "name": "A Peril Averted x4"
+            "name": "Un peligro evitado x4"
         },
         "gh-GMS": {
-            "name": "Mechanical Splendor"
+            "name": "Esplendor mecánico"
         },
         "gh-GST": {
-            "name": "Severed Ties"
+            "name": "Lazos cortados"
         }
     },
     "items": {
