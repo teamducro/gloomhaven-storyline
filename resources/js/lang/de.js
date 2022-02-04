@@ -1319,16 +1319,16 @@ export default {
             "name": "Ende des Grauens"
         },
         "gh-PTTN": {
-            "name": "Quelle des Gifts"
-        },
-        "gh-PAMT": {
             "name": "Durch den Bau"
         },
-        "gh-PBB": {
+        "gh-PAMT": {
             "name": "Schatzkarte"
         },
-        "gh-PTPS": {
+        "gh-PBB": {
             "name": "Schlechtes Geschäft"
+        },
+        "gh-PTPS": {
+            "name": "Quelle des Gifts"
         },
         "gh-PSB": {
             "name": "Sonnenverwöhnt"
