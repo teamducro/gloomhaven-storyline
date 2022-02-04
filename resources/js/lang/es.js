@@ -273,6 +273,8 @@ export default {
     "Rebellion Rises": "La rebelión se alza",
     "Under Oceans": "Bajo los océanos",
     "Through Jungles": "A través de las Selvas",
+    "Through": "A través de",
+    "Jungles": "las Selvas",
     "Atop Mountains": "En lo alto de las montañas",
     "Dragons": "Dragones",
     "Voice": "La Voz",

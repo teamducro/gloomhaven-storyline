@@ -273,6 +273,8 @@ export default {
     "Rebellion Rises": "Monta la Ribellione",
     "Under Oceans": "Sotto gli Oceani",
     "Through Jungles": "Through Jungles",
+    "Through": "Through",
+    "Jungles": "Jungles",
     "Atop Mountains": "Sulle Montagne",
     "Dragons": "Draghi",
     "Voice": "La Voce",

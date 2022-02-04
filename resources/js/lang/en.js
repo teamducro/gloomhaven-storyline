@@ -273,6 +273,8 @@ export default {
     "Rebellion Rises": "Rebellion Rises",
     "Under Oceans": "Under Oceans",
     "Through Jungles": "Through Jungles",
+    "Through": "Through",
+    "Jungles": "Jungles",
     "Atop Mountains": "Atop Mountains",
     "Dragons": "Dragons",
     "Voice": "Voice",
