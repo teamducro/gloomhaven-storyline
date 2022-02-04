@@ -312,14 +312,14 @@ export default {
         "gh-2": {
             "name": "Guarida del Túmulo",
             "rewards": [
-                "10 de oro para cada PJ",
+                "10 de oro para cada personaje",
                 "+1 de prosperidad"
             ]
         },
         "gh-3": {
             "name": "Campamento inox",
             "rewards": [
-                "15 de oro para cada PJ",
+                "15 de oro para cada personaje",
                 "+1 de prosperidad"
             ]
         },
@@ -332,7 +332,7 @@ export default {
         "gh-6": {
             "name": "Cripta decadente",
             "rewards": [
-                "5 de oro para cada PJ"
+                "5 de oro para cada personaje"
             ]
         },
         "gh-7": {
@@ -347,7 +347,7 @@ export default {
         "gh-9": {
             "name": "Mina de diamantes",
             "rewards": [
-                "20 de oro para cada PJ",
+                "20 de oro para cada personaje",
                 "+1 de prosperidad"
             ]
         },
@@ -357,7 +357,7 @@ export default {
         "gh-11": {
             "name": "Plaza de Gloomhaven A",
             "rewards": [
-                "15 de oro para cada PJ",
+                "15 de oro para cada personaje",
                 "-2 de reputación",
                 "+2 de prosperidad",
                 "Diseño “Hacha rompecráneos” (Objeto 113)"
@@ -379,7 +379,7 @@ export default {
         "gh-15": {
             "name": "Altar de la fuerza",
             "rewards": [
-                "20 XP para cada PJ"
+                "20 XP para cada personaje"
             ]
         },
         "gh-16": {
@@ -388,7 +388,7 @@ export default {
         "gh-17": {
             "name": "Isla perdida",
             "rewards": [
-                "25 de oro para cada PJ"
+                "25 de oro para cada personaje"
             ]
         },
         "gh-18": {
@@ -403,7 +403,7 @@ export default {
         "gh-20": {
             "name": "Santuario de la nigromante",
             "rewards": [
-                "20 de oro para cada PJ",
+                "20 de oro para cada personaje",
                 "+2 de reputación",
                 "+1 de prosperidad"
             ]
@@ -411,7 +411,7 @@ export default {
         "gh-21": {
             "name": "Trono infernal",
             "rewards": [
-                "50 de oro para cada PJ",
+                "50 de oro para cada personaje",
                 "+1 de prosperidad",
                 "Añade el Evento de ciudad 78 al mazo"
             ]
@@ -431,7 +431,7 @@ export default {
         "gh-26": {
             "name": "Antiguo aljibe",
             "rewards": [
-                "10 de oro para cada PJ",
+                "10 de oro para cada personaje",
                 "+1 de reputación",
                 "+2 de prosperidad"
             ]
@@ -440,7 +440,7 @@ export default {
             "name": "Grieta destructiva",
             "rewards": [
                 "+1 de prosperidad",
-                "100 de oro para cada PJ. Este oro debe gastarse de inmediato en mejoras"
+                "100 de oro para cada personaje. Este oro debe gastarse de inmediato en mejoras"
             ]
         },
         "gh-28": {
@@ -449,13 +449,13 @@ export default {
         "gh-29": {
             "name": "Santuario de la Penumbra",
             "rewards": [
-                "15 XP para cada PJ"
+                "15 XP para cada personaje"
             ]
         },
         "gh-30": {
             "name": "Altar de las profundidades",
             "rewards": [
-                "10 de oro para cada PJ"
+                "10 de oro para cada personaje"
             ]
         },
         "gh-31": {
@@ -470,7 +470,7 @@ export default {
         "gh-34": {
             "name": "Cumbre calcinada",
             "rewards": [
-                "20 de oro para cada PJ",
+                "20 de oro para cada personaje",
                 "+2 de reputación",
                 "+1 de prosperidad"
             ]
@@ -478,7 +478,7 @@ export default {
         "gh-35": {
             "name": "Almenas de Gloomhaven A",
             "rewards": [
-                "30 de oro para cada PJ",
+                "30 de oro para cada personaje",
                 "5 de reputación",
                 "-2 de prosperidad",
                 "Añade el Evento de ciudad 79 al mazo"
@@ -487,7 +487,7 @@ export default {
         "gh-36": {
             "name": "Almenas de Gloomhaven B",
             "rewards": [
-                "10 de oro para cada PJ",
+                "10 de oro para cada personaje",
                 "+4 de reputación",
                 "Añade el Evento de ciudad 78 al mazo"
             ]
@@ -504,7 +504,7 @@ export default {
         "gh-39": {
             "name": "Puente traicionero",
             "rewards": [
-                "10 XP para cada PJ"
+                "10 XP para cada personaje"
             ]
         },
         "gh-40": {
@@ -513,9 +513,9 @@ export default {
         "gh-41": {
             "name": "Tumba ancestral",
             "rewards": [
-                "50 de oro para cada PJ",
-                "25 XP para cada PJ",
-                "2 ✔ para cada PJ",
+                "50 de oro para cada personaje",
+                "25 XP para cada personaje",
+                "2 ✔ para cada personaje",
                 "+2 de prosperidad"
             ]
         },
@@ -538,7 +538,7 @@ export default {
         "gh-45": {
             "name": "Pantano rebelde",
             "rewards": [
-                "20 de oro para cada PJ",
+                "20 de oro para cada personaje",
                 "-2 de reputación"
             ]
         },
@@ -554,7 +554,7 @@ export default {
         "gh-49": {
             "name": "Resistencia rebelde",
             "rewards": [
-                "50 de oro para cada PJ",
+                "50 de oro para cada personaje",
                 "-3 de reputación"
             ]
         },
@@ -602,7 +602,7 @@ export default {
             "rewards": [
                 "Misión “Recupera los árboles” qcompleta",
                 "Abre el sobre {DS}",
-                "10 de oro para cada PJ",
+                "10 de oro para cada personaje",
                 "+2 de reputación"
             ]
         },
@@ -639,19 +639,19 @@ export default {
             "rewards": [
                 "Misión “La caída del hombre” completa",
                 "Abre el sobre {NS}",
-                "10 XP para cada PJ"
+                "10 XP para cada personaje"
             ]
         },
         "gh-63": {
             "name": "Foso de magma",
             "rewards": [
-                "15 de oro para cada PJ"
+                "15 de oro para cada personaje"
             ]
         },
         "gh-64": {
             "name": "Laguna submarina",
             "rewards": [
-                "10 XP para cada PJ"
+                "10 XP para cada personaje"
             ]
         },
         "gh-65": {
@@ -678,7 +678,7 @@ export default {
         "gh-69": {
             "name": "Pozo de los desdichados",
             "rewards": [
-                "15 de oro para cada PJ"
+                "15 de oro para cada personaje"
             ]
         },
         "gh-70": {
@@ -709,14 +709,14 @@ export default {
         "gh-74": {
             "name": "Barco mercante",
             "rewards": [
-                "10 de oro para cada PJ",
+                "10 de oro para cada personaje",
                 "+2 de prosperidad"
             ]
         },
         "gh-75": {
             "name": "Cementerio descuidado",
             "rewards": [
-                "60 de oro para cada PJ"
+                "60 de oro para cada personaje"
             ]
         },
         "gh-76": {
@@ -725,7 +725,7 @@ export default {
         "gh-77": {
             "name": "Cripta de los secretos",
             "rewards": [
-                "5 XP para cada PJ"
+                "5 XP para cada personaje"
             ]
         },
         "gh-78": {
@@ -737,19 +737,19 @@ export default {
         "gh-79": {
             "name": "Templo perdido",
             "rewards": [
-                "15 de oro para cada PJ"
+                "15 de oro para cada personaje"
             ]
         },
         "gh-80": {
             "name": "Torre de la Vigilia",
             "rewards": [
-                "10 XP para cada PJ"
+                "10 XP para cada personaje"
             ]
         },
         "gh-81": {
             "name": "Templo del eclipse",
             "rewards": [
-                "10 XP para cada PJ"
+                "10 XP para cada personaje"
             ]
         },
         "gh-82": {
@@ -817,20 +817,20 @@ export default {
         "gh-91": {
             "name": "Tumulto salvaje",
             "rewards": [
-                "2 ✔ para cada PJ"
+                "2 ✔ para cada personaje"
             ]
         },
         "gh-92": {
             "name": "Reyerta de callejón",
             "rewards": [
-                "10 de oro para cada PJ",
+                "10 de oro para cada personaje",
                 "-3 de reputación"
             ]
         },
         "gh-93": {
             "name": "Barco naufragado",
             "rewards": [
-                "10 XP para cada PJ"
+                "10 XP para cada personaje"
             ]
         },
         "gh-94": {
@@ -843,60 +843,60 @@ export default {
             ]
         },
         "fc-96": {
-            "name": "Unexpected Visitors",
+            "name": "Visitantes inesperados",
             "rewards": [
-                "10 XP para cada PJ",
-                "Add City and Road Events 82 to their respective decks"
+                "10 XP para cada personaje",
+                "Añade los Eventos de ciudad y camino 82 a sus mazos"
             ]
         },
         "fc-97": {
-            "name": "Lore Untold",
+            "name": "Saber ignoto",
             "rewards": [
-                "10 de oro para cada PJ",
-                "Add City Events 88, 89 and 90 to the deck"
+                "10 de oro para cada personaje",
+                "Añade los Eventos de ciudad 88,89 y 90 a su mazo"
             ]
         },
         "fc-98": {
-            "name": "Past in Flames",
+            "name": "El pasado en llamas",
             "rewards": [
                 [
-                    "10 de oro para cada PJ",
+                    "10 de oro para cada personaje",
                     "+1 de reputación",
                     "+1 de prosperidad",
-                    "Add City Event 86 to the deck"
+                    "Añade el Evento de ciudad 86 a su mazo"
                 ],
                 [
-                    "5 de oro para cada PJ",
+                    "5 de oro para cada personaje",
                     "+1 de reputación"
                 ],
                 [
-                    "5 de oro para cada PJ",
+                    "5 de oro para cada personaje",
                     "+1 de reputación"
                 ]
             ]
         },
         "fc-99": {
-            "name": "Aftershocks",
+            "name": "Réplicas",
             "rewards": [
                 [
-                    "5 de oro para cada PJ",
-                    "“Minor Antidote” (Item 153)"
+                    "5 de oro para cada personaje",
+                    "Diseño “Antídoto menor” (Objeto 153)"
                 ],
                 [
-                    "10 de oro para cada PJ",
+                    "10 de oro para cada personaje",
                     "+1 de prosperidad",
-                    "“Minor Antidote” (Item 153)"
+                    "Diseño “Antídoto menor” (Objeto 153)"
                 ]
             ]
         },
         "fc-100": {
-            "name": "Shifting Gears",
+            "name": "Los engranajes del tiempo",
             "rewards": [
-                "Choose to gain one of the following sets: “Telescopic Lens” (Item 059) and “Ancient Drill” (Item 112), OR “Curious Gear” (Item 125) and “Remote Spider” (Item 126)"
+                "El grupo elije uno de los siguientes objetos: “Gafas telescópicas” (Objeto 059) y “Berbiquí antiguo” (Objeto 112), O BIEN “Engranaje enigmático” (Objeto 125) and “Araña mecánica” (Objeto 126)"
             ]
         },
         "fc-101": {
-            "name": "Shrouded Crypt",
+            "name": "Cripta ensombrencida",
             "rewards": [
                 "20 de oro colectivo",
                 "+1 de reputación",
@@ -904,133 +904,141 @@ export default {
             ]
         },
         "fc-102": {
-            "name": "Bazaar of Knowledge",
+            "name": "Bazar del saber",
             "rewards": [
-                "15 XP para cada PJ",
-                "If no more than 2+C inhabitants were intimidated: +2 de reputación Otherwise: -2 de reputación"
+                "15 XP para cada personaje",
+                "Si no intimidastes a más de 2+P habitantes: +2 de reputación. De lo contrario: -2 de reputación"
             ]
         },
         "fc-103": {
-            "name": "Where It Is Needed",
+            "name": "En el lugar oportuno",
             "rewards": [
                 "+2 de prosperidad",
-                "Add City Event 87 to the deck"
+                "Añade el Evento de ciudad 87 a su mazo"
             ]
         },
         "fc-104": {
-            "name": "A Gaping Wound",
+            "name": "Una herida abierta",
             "rewards": [
-                "“Major Mana Potion” (Item 048)"
+                "“Poción de maná mayor” (Objeto 048)"
             ]
         },
         "fc-105": {
-            "name": "Monstrosities of a Cult",
+            "name": "Monstruosidades de la secta",
             "rewards": [
-                "“Major Antidote” (Item 154)"
+                "Diseño “Antídoto mayor” (Objeto 154)"
             ]
         },
         "fc-106": {
-            "name": "Intricate Work",
+            "name": "Un trabajo enrevesado",
             "rewards": [
                 [
-                    "175 de oro para cada PJ, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements"
+                    "175 de oro para cada personaje."
+                    "Este dinero debe gastarse de inmediato en cualquier mejora de {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, o {DARK}"
                 ],
                 [
-                    "175 de oro para cada PJ, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements",
+                    "175 de oro para cada personaje."
+                    "Este dinero debe gastarse de inmediato en cualquier mejora de {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, o {DARK}"
                     "+ 1 de prosperidad"
                 ]
             ]
         },
         "fc-107": {
-            "name": "Mechanical Genius",
+            "name": "Genio mecánico",
             "rewards": [
-                "5 XP para cada PJ"
+                "5 XP para cada personaje"
             ]
         },
         "fc-108": {
-            "name": "Prologue to the End",
+            "name": "Prólogo del fin",
             "rewards": [
                 [
-                    "“Curseward Armor” (Item 155)"
+                    "“Armadura antimaldiciones” (Objeto 155)"
                 ],
                 [
-                    "2 “Throwing Axes” (Item 161)"
+                    "2 “Hacha arrojadiza” (Objeto 161)"
                 ],
                 [
-                    "“Curseward Armor” (Item 155)",
-                    "2 “Throwing Axes” (Item 161)"
+                    "“Armadura antimaldiciones” (Objeto 155)",
+                    "2 “Hacha arrojadiza” (Objeto 161)"
                 ]
             ]
         },
         "fc-109": {
-            "name": "Epilogue of a War",
+            "name": "Epílogo de una guerra",
             "rewards": [
-                "10 XP para cada PJ",
-                "“Protective Charm” (Item 052)"
+                "10 XP para cada personaje",
+                "“Amuleto protector” (Objeto 052)"
             ]
         },
         "fc-110": {
-            "name": "A Circular Solution",
+            "name": "Una solución circular",
             "rewards": [
-                "“Crystal Tiara” (Item 163)"
+                "“Tiara de cristal” (Objeto 163)"
             ]
         },
         "fc-111": {
-            "name": "The Shackles Loosen",
+            "name": "Caen los grilletes",
             "rewards": [
                 [
-                    "5 XP para cada PJ",
-                    "Add Rift Event 16 to the deck. Instead of shuffling this event into the whole deck, shuffle it into the top 3 cards"
+                    "5 XP para cada personaje",
+                    "Añade el Evento de Fisura 16 a su mazo. En lugar de añadir este evento al mazo y barajarlo, roba las 3 primeras cartas, añade el evento a ellas, barájalas y ponlas encima del mazo."
                 ],
                 [
-                    "12 XP para cada PJ",
-                    "1 ✓ each"
+                    "12 XP para cada personaje",
+                    "1 ✓ para cada personaje"
                 ]
             ]
         },
         "fc-112": {
-            "name": "The Bottom of It",
+            "name": "El fondo del asunto",
             "rewards": [
                 [
-                    "10 de oro para cada PJ",
-                    "5 XP para cada PJ"
+                    "10 de oro para cada personaje",
+                    "5 XP para cada personaje"
                 ],
                 [
                     "25 de oro colectivo",
-                    "5 XP para cada PJ",
-                    "1 ✓ each"
+                    "5 XP para cada personaje",
+                    "1 ✓ para cada personaje"
                 ]
             ]
         },
         "fc-113": {
-            "name": "The Lost Thread",
+            "name": "El hilo perdido",
             "rewards": [
-                "135 de oro para cada PJ",
-                "This money must immediately be spent on any Move {MOVE}, Range {RANGE} or Jump {JUMP} enhancements",
+                "135 de oro para cada personaje",
+                "Este dinero debe gastarse de inmediato en cualquier mejora de Movimiento {MOVE}, Alcance {RANGE} o Salto {JUMP}",
                 "+1 de prosperidad"
             ]
         },
         "fc-114": {
-            "name": "Ink Not Yet Dry",
+            "name": "La tinta aún no se ha secado",
             "rewards": [
-                "Party Boon: Additional costs of enhancing an ability card based on the level of the card are now reduced by 5 gold per level."
+                "Ventaja de grupo: Los costes adicionales para mejorar una carta de capacidad basados en el nivel de la carta se reducen ahora en 5 de oro por nivel."
             ]
         },
         "fc-115": {
-            "name": "Future Uncertain",
+            "name": "Futuro incierto",
             "rewards": [
                 "+3 de reputación",
                 "+1 de prosperidad",
-                "Retire the Aesther Diviner {DR}",
-                "Add City and Road Events 83 to their respective decks"
+                "Retira la Adivina etérida {DR}",
+                "Añade los Eventos de ciudad y camino 83 a sus mazos"
             ]
         },
         "fc-200": {
-            "name": "Tower to the Stars",
+            "name": "Torre a las estrellas",
             "rewards": [
-                "15 de oro para cada PJ",
-                "1 ✓ each",
-                "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
+                "15 de oro para cada personaje",
+                "1 ✓ para cada personaje",
+                "Todos los personajes pueden añadir una nueva carta de su clase a su reserva de cartas activas. La carta seleccionada debe tener un nivel igual o inferior al nivel del personaje menos 2."
+            ]
+        },
+        "fc-201": {
+            "name": "Una visión de lo inevitable",
+            "rewards": [
+                "“Cuenco de profecía” (Objeto 164)"
             ]
         },
         "jotl-1": {
@@ -1039,7 +1047,7 @@ export default {
         "jotl-2": {
             "name": "A Hole in the Wall",
             "rewards": [
-                "25 de oro para cada PJ",
+                "25 de oro para cada personaje",
                 "Add items 1-13 to the shop"
             ]
         },
@@ -1052,13 +1060,13 @@ export default {
         "jotl-4": {
             "name": "A Ritual in Stone",
             "rewards": [
-                "“Mana Potion” (Item 14)"
+                "“Mana Potion” (Objeto 14)"
             ]
         },
         "jotl-5": {
             "name": "A Deeper Understanding",
             "rewards": [
-                "25 XP para cada PJ"
+                "25 XP para cada personaje"
             ]
         },
         "jotl-6": {
@@ -1070,7 +1078,7 @@ export default {
         "jotl-7": {
             "name": "Sunken Tumor",
             "rewards": [
-                "20 XP para cada PJ"
+                "20 XP para cada personaje"
             ]
         },
         "jotl-8": {
@@ -1079,26 +1087,26 @@ export default {
         "jotl-9": {
             "name": "Explosive Evolution",
             "rewards": [
-                "20 XP para cada PJ",
+                "20 XP para cada personaje",
                 "Add items 15-20 to the shop"
             ]
         },
         "jotl-10": {
             "name": "The Gauntlet",
             "rewards": [
-                "15 XP para cada PJ"
+                "15 XP para cada personaje"
             ]
         },
         "jotl-11": {
             "name": "Defiled Sewers",
             "rewards": [
-                "“Flea-Bitten Shawl” (Item 28)"
+                "“Flea-Bitten Shawl” (Objeto 28)"
             ]
         },
         "jotl-12": {
             "name": "Beguiling Sewers",
             "rewards": [
-                "“Flea-Bitten Shawl” (Item 28)"
+                "“Flea-Bitten Shawl” (Objeto 28)"
             ]
         },
         "jotl-13": {
@@ -1116,70 +1124,70 @@ export default {
         "jotl-15": {
             "name": "Tainted Blood",
             "rewards": [
-                "10 de oro para cada PJ",
+                "10 de oro para cada personaje",
                 "Add items 21-26 to the shop"
             ]
         },
         "jotl-16": {
             "name": "Mixed Results",
             "rewards": [
-                "15 XP para cada PJ",
-                "“Tower Shield” (Item 29)"
+                "15 XP para cada personaje",
+                "“Tower Shield” (Objeto 29)"
             ]
         },
         "jotl-17": {
             "name": "Red Twilight",
             "rewards": [
-                "25 XP para cada PJ",
-                "30 de oro para cada PJ"
+                "25 XP para cada personaje",
+                "30 de oro para cada personaje"
             ]
         },
         "jotl-18": {
             "name": "The Heist",
             "rewards": [
-                "10 XP para cada PJ"
+                "10 XP para cada personaje"
             ]
         },
         "jotl-19": {
             "name": "Den of Thieves",
             "rewards": [
-                "“Ring of Strength” (Item 31)"
+                "“Ring of Strength” (Objeto 31)"
             ]
         },
         "jotl-20": {
             "name": "Misplaced Goods",
             "rewards": [
-                "10 de oro para cada PJ"
+                "10 de oro para cada personaje"
             ]
         },
         "jotl-21": {
             "name": "Agents of Chaos",
             "rewards": [
-                "15 de oro para cada PJ"
+                "15 de oro para cada personaje"
             ]
         },
         "jotl-22": {
             "name": "Unfriendly Message",
             "rewards": [
-                "“Steel Ring” (Item 33)"
+                "“Steel Ring” (Objeto 33)"
             ]
         },
         "jotl-23": {
             "name": "Best of the Best",
             "rewards": [
-                "“Barbed Axe” (Item 34)"
+                "“Barbed Axe” (Objeto 34)"
             ]
         },
         "jotl-24": {
             "name": "Warding the Void",
             "rewards": [
-                "“Robes of Command” (Item 35)"
+                "“Robes of Command” (Objeto 35)"
             ]
         },
         "jotl-25": {
             "name": "The Greatest Job in the World",
             "rewards": [
-                "“Jet Boots” (Item 36)"
+                "“Jet Boots” (Objeto 36)"
             ]
         }
     },
@@ -2445,19 +2453,19 @@ export default {
             "name": "Random Item Design"
         },
         "gh-2": {
-            "name": "Gain “Tower Shield” (Item 032)"
+            "name": "Gain “Tower Shield” (Objeto 032)"
         },
         "gh-3": {
-            "name": "Gain “Splintmail” (Item 044)"
+            "name": "Gain “Splintmail” (Objeto 044)"
         },
         "gh-4": {
             "name": "Gain 15 Gold"
         },
         "gh-5": {
-            "name": "Gain “Chainmail” (Item 023)"
+            "name": "Gain “Chainmail” (Objeto 023)"
         },
         "gh-6": {
-            "name": "Gain “Hooked Chain” (Item 039)"
+            "name": "Gain “Hooked Chain” (Objeto 039)"
         },
         "gh-7": {
             "name": "Random Side Scenario"
@@ -2466,7 +2474,7 @@ export default {
             "name": "Gain 1 ✔"
         },
         "gh-9": {
-            "name": "Gain “Wave Crest” (Item 111)"
+            "name": "Gain “Wave Crest” (Objeto 111)"
         },
         "gh-10": {
             "name": "Gain 10 Experience"
@@ -2475,7 +2483,7 @@ export default {
             "name": "Random Item Design"
         },
         "gh-12": {
-            "name": "Gain “Magma Waders” (Item 099)"
+            "name": "Gain “Magma Waders” (Objeto 099)"
         },
         "gh-13": {
             "name": "Suffer 5 Damage and gain {POISON} and {WOUND}"
@@ -2484,7 +2492,7 @@ export default {
             "name": "Gain 10 Experience"
         },
         "gh-15": {
-            "name": "Gain “Pendant of Dark Pacts” (Item 045)"
+            "name": "Gain “Pendant of Dark Pacts” (Objeto 045)"
         },
         "gh-16": {
             "name": "Gain 10 gold"
@@ -2508,7 +2516,7 @@ export default {
             "name": "Random Item Design"
         },
         "gh-23": {
-            "name": "Gain “Drakescale Armor” (Item 103)"
+            "name": "Gain “Drakescale Armor” (Objeto 103)"
         },
         "gh-24": {
             "name": "Suffer 5 damage"
@@ -2520,13 +2528,13 @@ export default {
             "name": "Gain 20 Gold"
         },
         "gh-27": {
-            "name": "Gain “Orb of Twilight” (Item 122)"
+            "name": "Gain “Orb of Twilight” (Objeto 122)"
         },
         "gh-28": {
             "name": "Gain 15 Gold"
         },
         "gh-29": {
-            "name": "Gain “Endurance Footwraps” (Item 097)"
+            "name": "Gain “Endurance Footwraps” (Objeto 097)"
         },
         "gh-30": {
             "name": "Gain 1 ✔"
@@ -2538,22 +2546,22 @@ export default {
             "name": "Random Item Design"
         },
         "gh-33": {
-            "name": "Gain “Weighted Net” (Item 019)"
+            "name": "Gain “Weighted Net” (Objeto 019)"
         },
         "gh-34": {
-            "name": "Gain “Amulet of Life” (Item 024)"
+            "name": "Gain “Amulet of Life” (Objeto 024)"
         },
         "gh-35": {
-            "name": "Gain “Drakescale Boots” (Item 098)"
+            "name": "Gain “Drakescale Boots” (Objeto 098)"
         },
         "gh-36": {
-            "name": "“Rocket Boots” design (Item 096)"
+            "name": "“Rocket Boots” design (Objeto 096)"
         },
         "gh-37": {
             "name": "Gain 1 ✔"
         },
         "gh-38": {
-            "name": "“Ring of Skulls” design (Item 123)"
+            "name": "“Ring of Skulls” design (Objeto 123)"
         },
         "gh-39": {
             "name": "Suffer 5 damage"
@@ -2562,7 +2570,7 @@ export default {
             "name": "Random Item Design"
         },
         "gh-41": {
-            "name": "Gain “Black Knife” (Item 053)"
+            "name": "Gain “Black Knife” (Objeto 053)"
         },
         "gh-42": {
             "name": "Random Item Design"
@@ -2580,7 +2588,7 @@ export default {
             "name": "Suffer 3 damage and gain {POISON}"
         },
         "gh-47": {
-            "name": "Gain “Steam Armor” (Item 104)"
+            "name": "Gain “Steam Armor” (Objeto 104)"
         },
         "gh-48": {
             "name": "Gain 30 gold"
@@ -2589,43 +2597,43 @@ export default {
             "name": "New Scenario: Lost Island (Scenario 17 at K-17)"
         },
         "gh-50": {
-            "name": "Gain “Second Skin” (Item 101)"
+            "name": "Gain “Second Skin” (Objeto 101)"
         },
         "gh-51": {
             "name": "Random Side Scenario"
         },
         "gh-52": {
-            "name": "Gain “Heart of the Betrayer” (Item 131)"
+            "name": "Gain “Heart of the Betrayer” (Objeto 131)"
         },
         "gh-53": {
             "name": "Random Item Design"
         },
         "gh-54": {
-            "name": "Gain “Doomed Compass” (Item 124)"
+            "name": "Gain “Doomed Compass” (Objeto 124)"
         },
         "gh-55": {
             "name": "Gain 1 ✔"
         },
         "gh-56": {
-            "name": "Gain “Star Earring” (Item 069)"
+            "name": "Gain “Star Earring” (Objeto 069)"
         },
         "gh-57": {
             "name": "Gain 15 gold"
         },
         "gh-58": {
-            "name": "Gain “Drakescale Helm” (Item 108)"
+            "name": "Gain “Drakescale Helm” (Objeto 108)"
         },
         "gh-59": {
             "name": "Random Item Design"
         },
         "gh-60": {
-            "name": "Gain “Skullbane Axe” (Item 113)"
+            "name": "Gain “Skullbane Axe” (Objeto 113)"
         },
         "gh-61": {
-            "name": "Gain “Versatile Dagger” (Item 040)"
+            "name": "Gain “Versatile Dagger” (Objeto 040)"
         },
         "gh-62": {
-            "name": "Gain “Helm of the Mountain” (Item 110) and “Mountain Hammer” (Item 115)"
+            "name": "Gain “Helm of the Mountain” (Objeto 110) and “Mountain Hammer” (Objeto 115)"
         },
         "gh-63": {
             "name": "Random Item Design"
@@ -2634,19 +2642,19 @@ export default {
             "name": "Gain 30 gold"
         },
         "gh-65": {
-            "name": "“Horned Helm” design (Item 107)"
+            "name": "“Horned Helm” design (Objeto 107)"
         },
         "gh-66": {
-            "name": "Gain “Volatile Bomb” (Item 033)"
+            "name": "Gain “Volatile Bomb” (Objeto 033)"
         },
         "gh-67": {
             "name": "Gain 10 Gold"
         },
         "gh-68": {
-            "name": "Gain “Helix Ring” (Item 130)"
+            "name": "Gain “Helix Ring” (Objeto 130)"
         },
         "gh-69": {
-            "name": "Gain “Robes of Summoning” (Item 100)"
+            "name": "Gain “Robes of Summoning” (Objeto 100)"
         },
         "gh-70": {
             "name": "Random Side Scenario"
@@ -2655,7 +2663,7 @@ export default {
             "name": "Random Side Scenario"
         },
         "gh-72": {
-            "name": "“Fueled Falchion” design (Item 116)"
+            "name": "“Fueled Falchion” design (Objeto 116)"
         },
         "gh-73": {
             "name": "Random Item Design"
@@ -2670,28 +2678,28 @@ export default {
             "name": "Suffer 3 damage, gain {WOUND} and 10 gold"
         },
         "fc-77": {
-            "name": "Gain “Major Cure Potion” (Item 090)"
+            "name": "Gain “Major Cure Potion” (Objeto 090)"
         },
         "fc-78": {
-            "name": "“Ancient Bow” (Item 157)"
+            "name": "“Ancient Bow” (Objeto 157)"
         },
         "fc-79": {
-            "name": "Gain “Falcon Figurine” (Item 157)"
+            "name": "Gain “Falcon Figurine” (Objeto 157)"
         },
         "fc-80": {
             "name": "Gain 1 ✓ and add Rift Event 19 to the deck"
         },
         "fc-81": {
-            "name": "Gain “Scroll of Haste” (Item 159) and 10 gold"
+            "name": "Gain “Scroll of Haste” (Objeto 159) and 10 gold"
         },
         "fc-82": {
-            "name": "“Rejuvenation Greaves” (Item 158)"
+            "name": "“Rejuvenation Greaves” (Objeto 158)"
         },
         "fc-83": {
-            "name": "Gain “Major Power Potion” (Item 041)"
+            "name": "Gain “Major Power Potion” (Objeto 041)"
         },
         "fc-84": {
-            "name": "Gain “Mask of Terrors” (Item 066)"
+            "name": "Gain “Mask of Terrors” (Objeto 066)"
         },
         "fc-85": {
             "name": "Suffer 3 damage, gain {POISON} and 10 gold"
@@ -2706,16 +2714,16 @@ export default {
             "name": "Gain 1 ✓"
         },
         "fc-89": {
-            "name": "Gain “Second Chance Ring” (Item 070)"
+            "name": "Gain “Second Chance Ring” (Objeto 070)"
         },
         "fc-90": {
-            "name": "10 de oro para cada PJ, Read section 75 on page 49"
+            "name": "10 de oro para cada personaje, Read section 75 on page 49"
         },
         "fc-91": {
             "name": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
         },
         "fc-93": {
-            "name": "“Scroll of Haste” (Item 159)"
+            "name": "“Scroll of Haste” (Objeto 159)"
         },
         "fc-94": {
             "name": "Gain 1 ✓ and add Rift Event 20 to the deck"
@@ -2730,7 +2738,7 @@ export default {
             "name": "Gain 10 experience"
         },
         "jotl-2": {
-            "name": "“Ring of Strength” (Item 31)"
+            "name": "“Ring of Strength” (Objeto 31)"
         },
         "jotl-3": {
             "name": "Gain 15 experience"
@@ -2754,10 +2762,10 @@ export default {
             "name": "Gain 5 gold"
         },
         "jotl-10": {
-            "name": "“Fateful Compass” (Item 27)"
+            "name": "“Fateful Compass” (Objeto 27)"
         },
         "jotl-11": {
-            "name": "“Ring of Haste” (Item 30)"
+            "name": "“Ring of Haste” (Objeto 30)"
         },
         "jotl-12": {
             "name": "Gain 5 gold"
@@ -2772,10 +2780,10 @@ export default {
             "name": "Gain 1 ✔"
         },
         "jotl-16": {
-            "name": "“Mana Potion” (Item 14)"
+            "name": "“Mana Potion” (Objeto 14)"
         },
         "jotl-X": {
-            "name": "“Ring of Restoration” (Item 32)"
+            "name": "“Ring of Restoration” (Objeto 32)"
         }
     },
     "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
