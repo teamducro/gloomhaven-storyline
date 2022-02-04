@@ -1608,7 +1608,7 @@ export default {
         },
         "gh-35": {
             "name": "Falcon Figurine",
-            "source": "Prosperity 4\nScenario #98 (Treasure #79)",
+            "source": "Prosperity 4\n{SCENARIO 98} (Treasure #79)",
             "desc": "Summon Jade Falcon ({FLYING})",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
@@ -1639,7 +1639,7 @@ export default {
         },
         "gh-41": {
             "name": "Major Power Potion",
-            "source": "Prosperity 5\nScenario #105 (Treasure #83)",
+            "source": "Prosperity 5\n{SCENARIO 105} (Treasure #83)",
             "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
         },
         "gh-42": {
@@ -1675,7 +1675,7 @@ export default {
         },
         "gh-48": {
             "name": "Major Mana Potion",
-            "source": "Prosperity 6\nReward from Scenario #104",
+            "source": "Prosperity 6\nReward from {SCENARIO 104}",
             "desc": "During your turn, create any two elements. {ANY} {ANY}"
         },
         "gh-49": {
@@ -1695,7 +1695,7 @@ export default {
         },
         "gh-52": {
             "name": "Protective Charm",
-            "source": "Prosperity 7\nReward from Scenario #109",
+            "source": "Prosperity 7\nReward from {SCENARIO 109}",
             "desc": "You are immune to {POISON} and {WOUND}."
         },
         "gh-53": {
@@ -1730,7 +1730,7 @@ export default {
         },
         "gh-59": {
             "name": "Telescopic Lens",
-            "source": "Prosperity 8\nOption from Scenario #100",
+            "source": "Prosperity 8\nOption from {SCENARIO 100}",
             "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
         },
         "gh-60": {
@@ -1765,7 +1765,7 @@ export default {
         },
         "gh-66": {
             "name": "Mask of Terror",
-            "source": "Prosperity 9\nScenario #110 (Treasure #84)",
+            "source": "Prosperity 9\n{SCENARIO 110} (Treasure #84)",
             "desc": "During your melee attack, add {PUSH} 1."
         },
         "gh-67": {
@@ -1775,7 +1775,7 @@ export default {
         },
         "gh-68": {
             "name": "Halberd",
-            "source": "Prosperity 9\nScenario #111 (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
+            "source": "Prosperity 9\n{SCENARIO 111} (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
             "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
         },
         "gh-69": {
@@ -1885,7 +1885,7 @@ export default {
         },
         "gh-90": {
             "name": "Major Cure Potion",
-            "source": "Random Item\nScenario #102 (Treasure #77)",
+            "source": "Random Item\n{SCENARIO 102} (Treasure #77)",
             "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have {STUN}."
         },
         "gh-91": {
@@ -1915,32 +1915,32 @@ export default {
         },
         "gh-96": {
             "name": "Rocket Boots",
-            "source": "Scenario #66 (Treasure #36)",
+            "source": "{SCENARIO 66} (Treasure #36)",
             "desc": "During your movement, add +3 {MOVE} and {JUMP} to a single movement"
         },
         "gh-97": {
             "name": "Endurance Footwraps",
-            "source": "Scenario #38 (Treasure #29)",
+            "source": "{SCENARIO 38} (Treasure #29)",
             "desc": "If you move 4 or more hexes on your turn, perform a “{HEAL} 1, Self” action."
         },
         "gh-98": {
             "name": "Drakescale Boots",
-            "source": "Scenario #43 (Treasure #35)",
+            "source": "{SCENARIO 43} (Treasure #35)",
             "desc": "You are unaffected by difficult and hazardous terrain."
         },
         "gh-99": {
             "name": "Magma Waders",
-            "source": "Scenario #63 (Treasure #12)",
+            "source": "{SCENARIO 63} (Treasure #12)",
             "desc": "Ignore the damaging effects of hazardous terrain and perform a “{HEAL} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
         },
         "gh-100": {
             "name": "Robes of Summoning",
-            "source": "Scenario #31 (Treasure #69)",
+            "source": "{SCENARIO 31} (Treasure #69)",
             "desc": "During your turn, perform a “{HEAL} 2, target any summoned ally” action."
         },
         "gh-101": {
             "name": "Second Skin",
-            "source": "Scenario #06 (Treasure #50)",
+            "source": "{SCENARIO 06} (Treasure #50)",
             "desc": "Remove two {MODIFIER_MINUS_ONE} from your attack modifier deck."
         },
         "gh-102": {
@@ -1950,12 +1950,12 @@ export default {
         },
         "gh-103": {
             "name": "Drakescale Armor",
-            "source": "Scenario #34 (Treasure #23)",
+            "source": "{SCENARIO 34} (Treasure #23)",
             "desc": "You are immune to {POISON} and {WOUND}."
         },
         "gh-104": {
             "name": "Steam Armor",
-            "source": "Scenario #40 (Treasure #47)",
+            "source": "{SCENARIO 40} (Treasure #47)",
             "desc": "On the next five sources of damage from attacks targeting you, gain {SHIELD} 1."
         },
         "gh-105": {
@@ -1971,13 +1971,13 @@ export default {
         },
         "gh-107": {
             "name": "Horned Helm",
-            "source": "Scenario #03 (Treasure #65)",
+            "source": "{SCENARIO 03} (Treasure #65)",
             "desc": "After moving 4 or more hexes on your turn, add +1 {ATTACK} to your next melee attack this turn.",
             "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
         },
         "gh-108": {
             "name": "Drakescale Helm",
-            "source": "Scenario #25 (Treasure #58)",
+            "source": "{SCENARIO 25} (Treasure #58)",
             "desc": "Whenever you gain {MUDDLE}, gain {STRENGTHEN} instead."
         },
         "gh-109": {
@@ -1987,38 +1987,38 @@ export default {
         },
         "gh-110": {
             "name": "Helm of the Mountain",
-            "source": "Scenario #82 (Treasure #62)",
+            "source": "{SCENARIO 82} (Treasure #62)",
             "desc": "When attacked, if {EARTH} is Strong, Immobilize the attacker."
         },
         "gh-111": {
             "name": "Wave Crest",
-            "source": "Scenario #64 (Treasure #09)",
+            "source": "{SCENARIO 64} (Treasure #09)",
             "desc": "When attacked, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
         },
         "gh-112": {
             "name": "Ancient Drill",
-            "source": "Reward From Scenario #65\nOption from Scenario #100",
+            "source": "Reward From {SCENARIO 65}\nOption from {SCENARIO 100}",
             "desc": "During your melee attack, add +2 {ATTACK} and {PIERCE} 2 to the entire Attack action"
         },
         "gh-113": {
             "name": "Skullbane Axe",
-            "source": "Reward From Scenario #11\nReward From Scenario #12",
+            "source": "Reward From {SCENARIO 11}\nReward From {SCENARIO 12}",
             "desc": "During your melee attack targeting a Living Corpse, Living Spirit, or Living Bones, add +5 Attack to a single attack."
         },
         "gh-114": {
             "name": "Staff of Xorn",
-            "source": "Reward from Scenario #53",
+            "source": "Reward from {SCENARIO 53}",
             "desc": "During your ranged attack, add {POISON} and {MUDDLE} to the entire Attack action"
         },
         "gh-115": {
             "name": "Mountain Hammer",
-            "source": "Scenario #82 (Treasure #62)",
+            "source": "{SCENARIO 82} (Treasure #62)",
             "desc": "Summon Warrior Spirit",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-116": {
             "name": "Fueled Falchion",
-            "source": "Scenario #23 (Treasure #72)",
+            "source": "{SCENARIO 23} (Treasure #72)",
             "desc": "During your single-target melee attack, the target and all enemies adjacent to the target suffer 1 damage"
         },
         "gh-117": {
@@ -2033,43 +2033,43 @@ export default {
         },
         "gh-119": {
             "name": "Skull of Hatred",
-            "source": "Reward From Scenario #95",
+            "source": "Reward From {SCENARIO 95}",
             "desc": "During your turn, {CURSE} all adjacent enemies."
         },
         "gh-120": {
             "name": "Staff of Summoning",
-            "source": "Reward From Scenario #88",
+            "source": "Reward From {SCENARIO 88}",
             "desc": "During your turn, a summoned ally within {RANGE} 3 performs a “{MOVE} 3” action with you controlling the action."
         },
         "gh-121": {
             "name": "Orb of Dawn",
-            "source": "Reward From Scenario #85",
+            "source": "Reward From {SCENARIO 85}",
             "desc": "During your turn, {DARK_X} to create Light. {LIGHT}"
         },
         "gh-122": {
             "name": "Orb of Twilight",
-            "source": "Scenario #89 (Treasure #27)",
+            "source": "{SCENARIO 89} (Treasure #27)",
             "desc": "During your turn, {LIGHT_X} to create Dark. {DARK}"
         },
         "gh-123": {
             "name": "Ring of Skulls",
-            "source": "Scenario #04 (Treasure #38)",
+            "source": "{SCENARIO 04} (Treasure #38)",
             "desc": "Summon Skeleton",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-124": {
             "name": "Doomed Compass",
-            "source": "Scenario #93 (Treasure #54)",
+            "source": "{SCENARIO 93} (Treasure #54)",
             "desc": "During your turn, force an enemy within {RANGE} 5 to perform a “{MOVE} 2” action with you controlling the action."
         },
         "gh-125": {
             "name": "Curious Gear",
-            "source": "City Event 03\nOption from Scenario #100",
+            "source": "City Event 03\nOption from {SCENARIO 100}",
             "desc": "During your turn, disarm all traps within {RANGE} 2."
         },
         "gh-126": {
             "name": "Remote Spider",
-            "source": "City Event 43\nOption from Scenario #100",
+            "source": "City Event 43\nOption from {SCENARIO 100}",
             "desc": "During your turn, {POISON} all adjacent enemies."
         },
         "gh-127": {
@@ -2079,7 +2079,7 @@ export default {
         },
         "gh-128": {
             "name": "Black Censer",
-            "source": "Reward From Scenario #90",
+            "source": "Reward From {SCENARIO 90}",
             "desc": "During your turn, Muddle all enemies with {RANGE} 2."
         },
         "gh-129": {
@@ -2089,24 +2089,24 @@ export default {
         },
         "gh-130": {
             "name": "Helix Ring",
-            "source": "Scenario #81 (Treasure #68)",
+            "source": "{SCENARIO 81} (Treasure #68)",
             "desc": "During your turn, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Self” action"
         },
         "gh-131": {
             "name": "Heart of the Betrayer",
-            "source": "Scenario #79 (Treasure #52)",
+            "source": "{SCENARIO 79} (Treasure #52)",
             "desc": "When attacked by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
             "faq": "This item cannot be used if there is no other enemy in range to be attacked."
         },
         "gh-132": {
             "name": "Power Core",
-            "source": "Scenario #67",
+            "source": "{SCENARIO 67}",
             "desc": "Summon Steel Construct.",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-133": {
             "name": "Resonant Crystal",
-            "source": "Scenario #84",
+            "source": "{SCENARIO 84}",
             "desc": "During your turn, destroy an adjacent obstacle."
         },
         "gh-134": {
@@ -2202,22 +2202,22 @@ export default {
         },
         "gh-152": {
             "name": "Ring of Duality",
-            "source": "Reward from Scenario #97\nSection 125 “A locked chest” in book",
+            "source": "Reward from {SCENARIO 97}\nSection 125 “A locked chest” in book",
             "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
         },
         "gh-153": {
             "name": "Minor Antidote",
-            "source": "Reward From Scenario #99",
+            "source": "Reward From {SCENARIO 99}",
             "desc": "The next three times you would gain {POISON} prevent the condition."
         },
         "gh-154": {
             "name": "Major Antidote",
-            "source": "Reward from Scenario #105",
+            "source": "Reward from {SCENARIO 105}",
             "desc": "The next five times you would gain {POISON} prevent the condition."
         },
         "gh-155": {
             "name": "Curseward Armor",
-            "source": "Reward from Scenario #108",
+            "source": "Reward from {SCENARIO 108}",
             "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
         },
         "gh-156": {
@@ -2227,17 +2227,17 @@ export default {
         },
         "gh-157": {
             "name": "Ancient Bow",
-            "source": "Scenario #107 (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
+            "source": "{SCENARIO 107} (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
             "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack.",
         },
         "gh-158": {
             "name": "Rejuvenation Greaves",
-            "source": "Scenario #111 (Treasure #82)",
+            "source": "{SCENARIO 111} (Treasure #82)",
             "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}.",
         },
         "gh-159": {
             "name": "Scroll of Haste",
-            "source": "Scenario #103 (Treasure #81)",
+            "source": "{SCENARIO 103} (Treasure #81)",
             "desc": "During any one ally's movement, add +2 {MOVE} to the movement.",
         },
         "gh-160": {
@@ -2247,17 +2247,17 @@ export default {
         },
         "gh-161": {
             "name": "Throwing Axe",
-            "source": "Reward from Scenario #108",
+            "source": "Reward from {SCENARIO 108}",
             "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack.",
         },
         "gh-162": {
             "name": "Rift Device",
-            "source": "Reward from Scenario #112\nSection 62 “Mechanical Splendor” in book.",
+            "source": "Reward from {SCENARIO 112}\nSection 62 “Mechanical Splendor” in book.",
             "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you.",
         },
         "gh-163": {
             "name": "Crystal Tiara",
-            "source": "Reward from Scenario #110",
+            "source": "Reward from {SCENARIO 110}",
             "desc": "When you peform a long or short rest, gain {STRENGTHEN}."
         },
         "gh-164": {
@@ -2267,184 +2267,184 @@ export default {
         },
         "jotl-1": {
             "name": "Eagle-Eye Goggles",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "During your attack, gain Advantage on the entire Attack action."
         },
         "jotl-2": {
             "name": "Iron Helmet",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
         },
         "jotl-3": {
             "name": "Chain Armor",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "During your turn gain {SHIELD} 1 for the rest of the round",
         },
         "jotl-4": {
             "name": "Studded Leather",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
         },
         "jotl-5": {
             "name": "Weathered Boots",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "During your movement add +1 {MOVE} to a single movement."
         },
         "jotl-6": {
             "name": "Winged Shoes",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "During your movement, add {JUMP} to the entire Move Action.",
             "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
         },
         "jotl-7": {
             "name": "Heater Shield",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
         },
         "jotl-8": {
             "name": "Throwing Hammer",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "During your ranged attack, add {STUN} to a single attack",
         },
         "jotl-9": {
             "name": "Poison Dagger",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "During your melee attack, add {POISON} to a single attack."
         },
         "jotl-10": {
             "name": "Iron Spear",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes",
         },
         "jotl-11": {
             "name": "Healing Potion",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "During your turn, perform a “{HEAL} 3, Self” action."
         },
         "jotl-12": {
             "name": "Stamina Potion",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "During your turn, return one of your discarded cards to your hand."
         },
         "jotl-13": {
             "name": "Power Potion",
-            "source": "Reward from Scenario #2",
+            "source": "Reward from {SCENARIO 2}",
             "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
         },
         "jotl-14": {
             "name": "Mana Potion",
-            "source": "Reward from Scenario #4\n Scenario #4 (Treasure #16)",
+            "source": "Reward from {SCENARIO 4}\n {SCENARIO 4} (Treasure #16)",
             "desc": "During your turn, infuse any one element. {ANY}"
         },
         "jotl-15": {
             "name": "Amulet of Life",
-            "source": "Reward from Scenario #9",
+            "source": "Reward from {SCENARIO 9}",
             "desc": "During your turn, “{HEAL} 1, Self” action."
         },
         "jotl-16": {
             "name": "Robes of Evocation",
-            "source": "Reward from Scenario #9",
+            "source": "Reward from {SCENARIO 9}",
             "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
         },
         "jotl-17": {
             "name": "Comfortable Shoes",
-            "source": "Reward from Scenario #9",
+            "source": "Reward from {SCENARIO 9}",
             "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
         },
         "jotl-18": {
             "name": "Battle-Axe",
-            "source": "Reward from Scenario #9",
+            "source": "Reward from {SCENARIO 9}",
             "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
         },
         "jotl-19": {
             "name": "Black Candle",
-            "source": "Reward from Scenario #9",
+            "source": "Reward from {SCENARIO 9}",
             "desc": "During your ranged attack, add {CURSE} to a single attack."
         },
         "jotl-20": {
             "name": "Stun Powder",
-            "source": "Reward from Scenario #9",
+            "source": "Reward from {SCENARIO 9}",
             "desc": "During your attack, add {STUN} to a single attack."
         },
         "jotl-21": {
             "name": "Hawk Helm",
-            "source": "Reward from Scenario #15",
+            "source": "Reward from {SCENARIO 15}",
             "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
         },
         "jotl-22": {
             "name": "Bladed Armor",
-            "source": "Reward from Scenario #15",
+            "source": "Reward from {SCENARIO 15}",
             "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack and the attacker suffers 2 damage."
         },
         "jotl-23": {
             "name": "Boots of Striding",
-            "source": "Reward from Scenario #15",
+            "source": "Reward from {SCENARIO 15}",
             "desc": "During your movement, add +2 {MOVE} to a single movement."
         },
         "jotl-24": {
             "name": "Volatile Bomb",
-            "source": "Reward from Scenario #15",
+            "source": "Reward from {SCENARIO 15}",
             "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
         },
         "jotl-25": {
             "name": "Barbed Chain",
-            "source": "Reward from Scenario #15",
+            "source": "Reward from {SCENARIO 15}",
             "desc": "During your ranged attack, add {PULL} 2 to a single attack."
         },
         "jotl-26": {
             "name": "Oak Charm",
-            "source": "Reward from Scenario #15",
+            "source": "Reward from {SCENARIO 15}",
             "desc": "During your turn, perform a “{BLESS}, {RANGE} 5” action."
         },
         "jotl-27": {
             "name": "Fateful Compass",
-            "source": "Scenario #3 (Treasure #10)",
+            "source": "{SCENARIO 3} (Treasure #10)",
             "desc": "During your turn, force one enemy within {RANGE} 3 to peform a “{MOVE} 2” action with you controlling the action."
         },
         "jotl-28": {
             "name": "Flea-Bitten Shawl",
-            "source": "Reward from Scenario #8\nReward from Scenario #12",
+            "source": "Reward from {SCENARIO 8}\nReward from {SCENARIO 12}",
             "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
             "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
         },
         "jotl-29": {
             "name": "Tower Shield",
-            "source": "Reward from Scenario #16",
+            "source": "Reward from {SCENARIO 16}",
             "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
         },
         "jotl-30": {
             "name": "Ring of Haste",
-            "source": "Scenario #21 (Treasure #11)",
+            "source": "{SCENARIO 21} (Treasure #11)",
             "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of that card."
         },
         "jotl-31": {
             "name": "Ring of Strength",
-            "source": "Reward from Scenario #19\nScenario #18 (Treasure #2)",
+            "source": "Reward from {SCENARIO 19}\n{SCENARIO 18} (Treasure #2)",
             "desc": "During your turn, gain {STRENGTHEN}."
         },
         "jotl-32": {
             "name": "Ring of Restoration",
-            "source": "Misplaced Good #F from Scenario #20",
+            "source": "Misplaced Good #F from {SCENARIO 20}",
             "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action."
         },
         "jotl-33": {
             "name": "Steel Ring",
-            "source": "Reward from Scenario #22",
+            "source": "Reward from {SCENARIO 22}",
             "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
         },
         "jotl-34": {
             "name": "Barbed Axe",
-            "source": "Reward from Scenario #34",
+            "source": "Reward from {SCENARIO 34}",
             "desc": "During your attack, add {WOUND} to the entire Attack Action."
         },
         "jotl-35": {
             "name": "Robes of Command",
-            "source": "Reward from Scenario #24",
+            "source": "Reward from {SCENARIO 24}",
             "desc": "During your turn, one adjacent ally may perform and “{ATTACK} 2” Action."
         },
         "jotl-36": {
             "name": "Jet Boots",
-            "source": "Reward from Scenario #25",
+            "source": "Reward from {SCENARIO 25}",
             "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."
         }
     },
