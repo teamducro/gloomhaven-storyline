@@ -352,7 +352,7 @@
         "count": 2,
         "cost": 50,
         "slot": "Small Item",
-        "source": "Prosperity 4\nScenario #98 (Treasure #79)",
+        "source": "Prosperity 4\n{SCENARIO 98} (Treasure #79)",
         "consumed": true,
         "summon": {
             "hp": 2,
@@ -418,7 +418,7 @@
         "count": 4,
         "cost": 40,
         "slot": "Small Item",
-        "source": "Prosperity 5\nScenario #105 (Treasure #83)",
+        "source": "Prosperity 5\n{SCENARIO 105} (Treasure #83)",
         "consumed": true,
         "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
     },
@@ -489,7 +489,7 @@
         "count": 4,
         "cost": 30,
         "slot": "Small Item",
-        "source": "Prosperity 6\nReward from Scenario #104",
+        "source": "Prosperity 6\nReward from {SCENARIO 104}",
         "consumed": true,
         "desc": "During your turn, create any two elements. {ANY} {ANY}"
     },
@@ -529,7 +529,7 @@
         "count": 2,
         "cost": 60,
         "slot": "Head",
-        "source": "Prosperity 7\nReward from Scenario #109",
+        "source": "Prosperity 7\nReward from {SCENARIO 109}",
         "desc": "You are immune to {POISON} and {WOUND}."
     },
     {
@@ -596,7 +596,7 @@
         "count": 2,
         "cost": 50,
         "slot": "Head",
-        "source": "Prosperity 8\nOption from Scenario #100",
+        "source": "Prosperity 8\nOption from {SCENARIO 100}",
         "spent": true,
         "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
     },
@@ -668,7 +668,7 @@
         "count": 2,
         "cost": 50,
         "slot": "Head",
-        "source": "Prosperity 9\nScenario #110 (Treasure #84)",
+        "source": "Prosperity 9\n{SCENARIO 110} (Treasure #84)",
         "desc": "During your melee attack, add {PUSH} 1."
     },
     {
@@ -686,7 +686,7 @@
         "count": 2,
         "cost": 60,
         "slot": "Two Hands",
-        "source": "Prosperity 9\nScenario #111 (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
+        "source": "Prosperity 9\n{SCENARIO 111} (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
         "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
     },
     {
@@ -896,7 +896,7 @@
         "count": 2,
         "cost": 30,
         "slot": "Small Item",
-        "source": "Random Item\nScenario #102 (Treasure #77)",
+        "source": "Random Item\n{SCENARIO 102} (Treasure #77)",
         "consumed": true,
         "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have {STUN}."
     },
@@ -956,7 +956,7 @@
         "count": 2,
         "cost": 80,
         "slot": "Legs",
-        "source": "Scenario #66 (Treasure #36)",
+        "source": "{SCENARIO 66} (Treasure #36)",
         "spent": true,
         "desc": "During your movement, add +3 {MOVE} and {JUMP} to a single movement"
     },
@@ -966,7 +966,7 @@
         "count": 1,
         "cost": 40,
         "slot": "Legs",
-        "source": "Scenario #38 (Treasure #29)",
+        "source": "{SCENARIO 38} (Treasure #29)",
         "desc": "If you move 4 or more hexes on your turn, perform a “{HEAL} 1, Self” action."
     },
     {
@@ -975,7 +975,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Legs",
-        "source": "Scenario #43 (Treasure #35)",
+        "source": "{SCENARIO 43} (Treasure #35)",
         "desc": "You are unaffected by difficult and hazardous terrain."
     },
     {
@@ -984,7 +984,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Legs",
-        "source": "Scenario #63 (Treasure #12)",
+        "source": "{SCENARIO 63} (Treasure #12)",
         "desc": "Ignore the damaging effects of hazardous terrain and perform a “{HEAL} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
     },
     {
@@ -993,7 +993,7 @@
         "count": 1,
         "cost": 40,
         "slot": "Body",
-        "source": "Scenario #31 (Treasure #69)",
+        "source": "{SCENARIO 31} (Treasure #69)",
         "spent": true,
         "desc": "During your turn, perform a “{HEAL} 2, target any summoned ally” action."
     },
@@ -1003,7 +1003,7 @@
         "count": 1,
         "cost": 30,
         "slot": "Body",
-        "source": "Scenario #06 (Treasure #50)",
+        "source": "{SCENARIO 06} (Treasure #50)",
         "desc": "Remove two {MODIFIER_MINUS_ONE} from your attack modifier deck."
     },
     {
@@ -1022,7 +1022,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Body",
-        "source": "Scenario #34 (Treasure #23)",
+        "source": "{SCENARIO 34} (Treasure #23)",
         "desc": "You are immune to {POISON} and {WOUND}."
     },
     {
@@ -1031,7 +1031,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Body",
-        "source": "Scenario #40 (Treasure #47)",
+        "source": "{SCENARIO 40} (Treasure #47)",
         "consumed": true,
         "desc": "On the next five sources of damage from attacks targeting you, gain {SHIELD} 1."
     },
@@ -1060,7 +1060,7 @@
         "count": 2,
         "cost": 30,
         "slot": "Head",
-        "source": "Scenario #03 (Treasure #65)",
+        "source": "{SCENARIO 03} (Treasure #65)",
         "desc": "After moving 4 or more hexes on your turn, add +1 {ATTACK} to your next melee attack this turn.",
         "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
     },
@@ -1070,7 +1070,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Head",
-        "source": "Scenario #25 (Treasure #58)",
+        "source": "{SCENARIO 25} (Treasure #58)",
         "desc": "Whenever you gain {MUDDLE}, gain {STRENGTHEN} instead."
     },
     {
@@ -1089,7 +1089,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Head",
-        "source": "Scenario #82 (Treasure #62)",
+        "source": "{SCENARIO 82} (Treasure #62)",
         "desc": "When attacked, if {EARTH} is Strong, Immobilize the attacker."
     },
     {
@@ -1098,7 +1098,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Head",
-        "source": "Scenario #64 (Treasure #09)",
+        "source": "{SCENARIO 64} (Treasure #09)",
         "desc": "When attacked, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
     },
     {
@@ -1107,7 +1107,7 @@
         "count": 2,
         "cost": 30,
         "slot": "Two Hands",
-        "source": "Reward From Scenario #65\nOption from Scenario #100",
+        "source": "Reward From {SCENARIO 65}\nOption from {SCENARIO 100}",
         "consumed": true,
         "desc": "During your melee attack, add +2 {ATTACK} and {PIERCE} 2 to the entire Attack action"
     },
@@ -1117,7 +1117,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Two Hands",
-        "source": "Reward From Scenario #11\nReward From Scenario #12",
+        "source": "Reward From {SCENARIO 11}\nReward From {SCENARIO 12}",
         "spent": true,
         "desc": "During your melee attack targeting a Living Corpse, Living Spirit, or Living Bones, add +5 Attack to a single attack."
     },
@@ -1127,7 +1127,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Two Hands",
-        "source": "Reward from Scenario #53",
+        "source": "Reward from {SCENARIO 53}",
         "consumed": true,
         "desc": "During your ranged attack, add {POISON} and {MUDDLE} to the entire Attack action"
     },
@@ -1137,7 +1137,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Two Hands",
-        "source": "Scenario #82 (Treasure #62)",
+        "source": "{SCENARIO 82} (Treasure #62)",
         "consumed": true,
         "summon": {
             "hp": 4,
@@ -1154,7 +1154,7 @@
         "count": 2,
         "cost": 20,
         "slot": "One Hand",
-        "source": "Scenario #23 (Treasure #72)",
+        "source": "{SCENARIO 23} (Treasure #72)",
         "consumed": true,
         "desc": "During your single-target melee attack, the target and all enemies adjacent to the target suffer 1 damage"
     },
@@ -1184,7 +1184,7 @@
         "count": 1,
         "cost": 50,
         "slot": "One Hand",
-        "source": "Reward From Scenario #95",
+        "source": "Reward From {SCENARIO 95}",
         "consumed": true,
         "desc": "During your turn, {CURSE} all adjacent enemies."
     },
@@ -1194,7 +1194,7 @@
         "count": 1,
         "cost": 60,
         "slot": "Two Hands",
-        "source": "Reward From Scenario #88",
+        "source": "Reward From {SCENARIO 88}",
         "spent": true,
         "desc": "During your turn, a summoned ally within {RANGE} 3 performs a “{MOVE} 3” action with you controlling the action."
     },
@@ -1204,7 +1204,7 @@
         "count": 1,
         "cost": 50,
         "slot": "One Hand",
-        "source": "Reward From Scenario #85",
+        "source": "Reward From {SCENARIO 85}",
         "desc": "During your turn, {DARK_X} to create Light. {LIGHT}"
     },
     {
@@ -1213,7 +1213,7 @@
         "count": 1,
         "cost": 50,
         "slot": "One Hand",
-        "source": "Scenario #89 (Treasure #27)",
+        "source": "{SCENARIO 89} (Treasure #27)",
         "desc": "During your turn, {LIGHT_X} to create Dark. {DARK}"
     },
     {
@@ -1222,7 +1222,7 @@
         "count": 2,
         "cost": 50,
         "slot": "Small Item",
-        "source": "Scenario #04 (Treasure #38)",
+        "source": "{SCENARIO 04} (Treasure #38)",
         "consumed": true,
         "summon": {
             "hp": 3,
@@ -1239,7 +1239,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
-        "source": "Scenario #93 (Treasure #54)",
+        "source": "{SCENARIO 93} (Treasure #54)",
         "consumed": true,
         "desc": "During your turn, force an enemy within {RANGE} 5 to perform a “{MOVE} 2” action with you controlling the action."
     },
@@ -1249,7 +1249,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
-        "source": "City Event 03\nOption from Scenario #100",
+        "source": "City Event 03\nOption from {SCENARIO 100}",
         "consumed": true,
         "desc": "During your turn, disarm all traps within {RANGE} 2."
     },
@@ -1259,7 +1259,7 @@
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
-        "source": "City Event 43\nOption from Scenario #100",
+        "source": "City Event 43\nOption from {SCENARIO 100}",
         "consumed": true,
         "desc": "During your turn, {POISON} all adjacent enemies."
     },
@@ -1279,7 +1279,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
-        "source": "Reward From Scenario #90",
+        "source": "Reward From {SCENARIO 90}",
         "consumed": true,
         "desc": "During your turn, Muddle all enemies with {RANGE} 2."
     },
@@ -1299,7 +1299,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
-        "source": "Scenario #81 (Treasure #68)",
+        "source": "{SCENARIO 81} (Treasure #68)",
         "consumed": true,
         "desc": "During your turn, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Self” action"
     },
@@ -1309,7 +1309,7 @@
         "count": 1,
         "cost": 60,
         "slot": "Small Item",
-        "source": "Scenario #79 (Treasure #52)",
+        "source": "{SCENARIO 79} (Treasure #52)",
         "consumed": true,
         "desc": "When attacked by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
         "faq": "This item cannot be used if there is no other enemy in range to be attacked."
@@ -1320,7 +1320,7 @@
         "count": 1,
         "cost": 75,
         "slot": "Small Item",
-        "source": "Scenario #67",
+        "source": "{SCENARIO 67}",
         "consumed": true,
         "summon": {
             "hp": 5,
@@ -1337,7 +1337,7 @@
         "count": 1,
         "cost": 20,
         "slot": "Small Item",
-        "source": "Scenario #84",
+        "source": "{SCENARIO 84}",
         "consumed": true,
         "desc": "During your turn, destroy an adjacent obstacle."
     },
@@ -1520,7 +1520,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
-        "source": "Reward from Scenario #97\nSection 125 “A locked chest” in book",
+        "source": "Reward from {SCENARIO 97}\nSection 125 “A locked chest” in book",
         "consumed": true,
         "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
     },
@@ -1530,7 +1530,7 @@
         "count": 2,
         "cost": 25,
         "slot": "Small Item",
-        "source": "Reward From Scenario #99",
+        "source": "Reward From {SCENARIO 99}",
         "desc": "The next three times you would gain {POISON} prevent the condition."
     },
     {
@@ -1539,7 +1539,7 @@
         "count": 2,
         "cost": 50,
         "slot": "Small Item",
-        "source": "Reward from Scenario #105",
+        "source": "Reward from {SCENARIO 105}",
         "desc": "The next five times you would gain {POISON} prevent the condition."
     },
     {
@@ -1548,7 +1548,7 @@
         "count": 1,
         "cost": 75,
         "slot": "Body",
-        "source": "Reward from Scenario #108",
+        "source": "Reward from {SCENARIO 108}",
         "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1.",
         "spent": true,
         "minusOneCardsAdded": 3
@@ -1568,7 +1568,7 @@
         "count": 2,
         "cost": 40,
         "slot": "Two Hands",
-        "source": "Scenario #107 (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
+        "source": "{SCENARIO 107} (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
         "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack.",
         "consumed": true
     },
@@ -1578,7 +1578,7 @@
         "count": 2,
         "cost": 35,
         "slot": "Legs",
-        "source": "Scenario #111 (Treasure #82)",
+        "source": "{SCENARIO 111} (Treasure #82)",
         "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}.",
         "spent": true
     },
@@ -1588,7 +1588,7 @@
         "count": 2,
         "cost": 30,
         "slot": "Small Item",
-        "source": "Scenario #103 (Treasure #81)",
+        "source": "{SCENARIO 103} (Treasure #81)",
         "desc": "During any one ally's movement, add +2 {MOVE} to the movement.",
         "consumed": true
     },
@@ -1608,7 +1608,7 @@
         "count": 2,
         "cost": 35,
         "slot": "One Hand",
-        "source": "Reward from Scenario #108",
+        "source": "Reward from {SCENARIO 108}",
         "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack.",
         "consumed": true
     },
@@ -1618,7 +1618,7 @@
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
-        "source": "Reward from Scenario #112\nSection 62 “Mechanical Splendor” in book.",
+        "source": "Reward from {SCENARIO 112}\nSection 62 “Mechanical Splendor” in book.",
         "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you.",
         "consumed": true
     },
@@ -1628,7 +1628,7 @@
         "count": 1,
         "cost": 75,
         "slot": "Head",
-        "source": "Reward from Scenario #110",
+        "source": "Reward from {SCENARIO 110}",
         "desc": "When you peform a long or short rest, gain {STRENGTHEN}."
     },
     {
