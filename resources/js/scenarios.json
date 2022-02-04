@@ -3469,6 +3469,215 @@
             ]
         },
         {
+            "id": 202,
+            "game": "gh",
+            "name": "Return to the Black Barrow",
+            "solo": "BR",
+            "pages": [
+                "gh/2/2"
+            ],
+            "rewards": [
+                "“Imposing Blade” (Item 134)"
+            ]
+        },
+        {
+            "id": 203,
+            "game": "gh",
+            "name": "An Unfortunate Intrusion",
+            "solo": "TI",
+            "pages": [
+                "gh/2/3"
+            ],
+            "rewards": [
+                "“Focusing Ray” (Item 135)"
+            ]
+        },
+        {
+            "id": 204,
+            "game": "gh",
+            "name": " Corrupted Laboratory",
+            "solo": "SW",
+            "pages": [
+                "gh/2/4"
+            ],
+            "rewards": [
+                "“Volatile Elixir” (Item 136)"
+            ]
+        },
+        {
+            "id": 205,
+            "game": "gh",
+            "name": "Armory Heist",
+            "solo": "SC",
+            "pages": [
+                "gh/2/5"
+            ],
+            "rewards": [
+                "“Silent Stiletto” (Item 137)"
+            ]
+        },
+        {
+            "id": 206,
+            "game": "gh",
+            "name": "Stone Defense",
+            "solo": "CH",
+            "pages": [
+                "gh/2/6"
+            ],
+            "rewards": [
+                "“Stone Charm” (Item 138)"
+            ]
+        },
+        {
+            "id": 207,
+            "game": "gh",
+            "name": "Rodent Liberation",
+            "solo": "MT",
+            "pages": [
+                "gh/2/7"
+            ],
+            "rewards": [
+                "“Psychic Knife” (Item 139)"
+            ]
+        },
+        {
+            "id": 208,
+            "game": "gh",
+            "name": "Caravan Escort",
+            "solo": "SK",
+            "pages": [
+                "gh/2/8",
+                "gh/2/9"
+            ],
+            "rewards": [
+                "“Sun Shield” (Item 140)"
+            ]
+        },
+        {
+            "id": 209,
+            "game": "gh",
+            "name": "Unnatural Insults",
+            "solo": "BE",
+            "pages": [
+                "gh/2/9",
+                "gh/2/10"
+            ],
+            "rewards": [
+                "“Mask of Death” (Item 145)"
+            ]
+        },
+        {
+            "id": 210,
+            "game": "gh",
+            "name": "Storage Fees",
+            "solo": "QM",
+            "pages": [
+                "gh/2/11"
+            ],
+            "rewards": [
+                "“Utility Belt” (Item 141)"
+            ]
+        },
+        {
+            "id": 211,
+            "game": "gh",
+            "name": "Plane of Wild Beasts",
+            "solo": "SU",
+            "pages": [
+                "gh/2/11"
+            ],
+            "rewards": [
+                "“Phasing Idol” (Item 142)"
+            ]
+        },
+        {
+            "id": 212,
+            "game": "gh",
+            "name": "Harvesting the Night",
+            "solo": "NS",
+            "pages": [
+                "gh/2/13"
+            ],
+            "rewards": [
+                "“Smoke Elixir” (Item 143)"
+            ]
+        },
+        {
+            "id": 213,
+            "game": "gh",
+            "name": "Plagued Crypt",
+            "solo": "PH",
+            "pages": [
+                "gh/2/14"
+            ],
+            "rewards": [
+                "“Pendant of the Plague” (Item 144)"
+            ]
+        },
+        {
+            "id": 214,
+            "game": "gh",
+            "name": "Battle of the Bards",
+            "solo": "SS",
+            "pages": [
+                "gh/2/15",
+                "gh/2/16"
+            ],
+            "rewards": [
+                "“Master’s Lute” (Item 146)"
+            ]
+        },
+        {
+            "id": 215,
+            "game": "gh",
+            "name": "Corrupted Hunt",
+            "solo": "DS",
+            "pages": [
+                "gh/2/16",
+                "gh/2/17"
+            ],
+            "rewards": [
+                "“Cloak of the Hunter” (Item 147)"
+            ]
+        },
+        {
+            "id": 216,
+            "game": "gh",
+            "name": "Aftermath",
+            "solo": "SB",
+            "pages": [
+                "gh/2/18"
+            ],
+            "rewards": [
+                "“Doctor’s Coat” (Item 148)"
+            ]
+        },
+        {
+            "id": 217,
+            "game": "gh",
+            "name": "Elemental Secrets",
+            "solo": "EL",
+            "pages": [
+                "gh/2/19"
+            ],
+            "rewards": [
+                "“Elemental Boots” (Item 149)"
+            ]
+        },
+        {
+            "id": 218,
+            "game": "gh",
+            "name": "The Caged Bear",
+            "solo": "BT",
+            "pages": [
+                "gh/2/20",
+                "gh/2/21"
+            ],
+            "rewards": [
+                "“Staff of Command” (Item 150)"
+            ]
+        },
+        {
             "root": true,
             "id": 96,
             "game": "fc",
@@ -4604,6 +4813,22 @@
                 "15 gold each",
                 "1 ✓ each",
                 "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
+            ]
+        },
+        {
+            "id": 201,
+            "game": "fc",
+            "name": "Forecast of the Inevitable",
+            "solo": "DR",
+            "pages": [
+                "fc/1/25",
+                "fc/2/11",
+                "fc/2/25",
+                "fc/2/30",
+                "fc/2/27"
+            ],
+            "rewards": [
+                "“Basin of Prophecy” (Item 164)"
             ]
         }
     ],

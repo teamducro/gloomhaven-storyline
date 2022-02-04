@@ -844,6 +844,108 @@ export default {
                 "“Skull of Hatred” (Item 119)"
             ]
         },
+        "gh-202": {
+            "name": "Return to the Black Barrow",
+            "rewards": [
+                "“Imposing Blade” (Item 134)"
+            ]
+        },
+        "gh-203": {
+            "name": "An Unfortunate Intrusion",
+            "rewards": [
+                "“Focusing Ray” (Item 135)"
+            ]
+        },
+        "gh-204": {
+            "name": " Corrupted Laboratory",
+            "rewards": [
+                "“Volatile Elixir” (Item 136)"
+            ]
+        },
+        "gh-205": {
+            "name": "Armory Heist",
+            "rewards": [
+                "“Silent Stiletto” (Item 137)"
+            ]
+        },
+        "gh-206": {
+            "name": "Stone Defense",
+            "rewards": [
+                "“Stone Charm” (Item 138)"
+            ]
+        },
+        "gh-207": {
+            "name": "Rodent Liberation",
+            "rewards": [
+                "“Psychic Knife” (Item 139)"
+            ]
+        },
+        "gh-208": {
+            "name": "Caravan Escort",
+            "rewards": [
+                "“Sun Shield” (Item 140)"
+            ]
+        },
+        "gh-209": {
+            "name": "Unnatural Insults",
+            "rewards": [
+                "“Mask of Death” (Item 145)"
+            ]
+        },
+        "gh-210": {
+            "name": "Storage Fees",
+            "rewards": [
+                "“Utility Belt” (Item 141)"
+            ]
+        },
+        "gh-211": {
+            "name": "Plane of Wild Beasts",
+            "rewards": [
+                "“Phasing Idol” (Item 142)"
+            ]
+        },
+        "gh-212": {
+            "name": "Harvesting the Night",
+            "rewards": [
+                "“Smoke Elixir” (Item 143)"
+            ]
+        },
+        "gh-213": {
+            "name": "Plagued Crypt",
+            "rewards": [
+                "“Pendant of the Plague” (Item 144)"
+            ]
+        },
+        "gh-214": {
+            "name": "Battle of the Bards",
+            "rewards": [
+                "“Master’s Lute” (Item 146)"
+            ]
+        },
+        "gh-215": {
+            "name": "Corrupted Hunt",
+            "rewards": [
+                "“Cloak of the Hunter” (Item 147)"
+            ]
+        },
+        "gh-216": {
+            "name": "Aftermath",
+            "rewards": [
+                "“Doctor’s Coat” (Item 148)"
+            ]
+        },
+        "gh-217": {
+            "name": "Elemental Secrets",
+            "rewards": [
+                "“Elemental Boots” (Item 149)"
+            ]
+        },
+        "gh-218": {
+            "name": "The Caged Bear",
+            "rewards": [
+                "“Staff of Command” (Item 150)"
+            ]
+        },
         "fc-96": {
             "name": "Unerwartete Besucher",
             "rewards": [
