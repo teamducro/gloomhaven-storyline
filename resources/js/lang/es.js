@@ -2200,68 +2200,73 @@ export default {
             "source": "Reward from Solo Scenario - {BT}",
             "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
         },
+        "gh-151": {
+            "name": "Espada de las arenas",
+            "source": "Recompensa de escenario en solitario - {BS}",
+            "desc": "Durante tu ataque cuerpo a cuerpo, añade {POISON} y {WOUND} a la acción de ataque entera."
+        },
         "gh-152": {
-            "name": "Ring of Duality",
+            "name": "Anillo de dualidad",
             "source": "Reward from Scenario #97\nSection 125 “A locked chest” in book",
             "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
         },
         "gh-153": {
-            "name": "Minor Antidote",
+            "name": "Antídoto menor",
             "source": "Reward From Scenario #99",
             "desc": "The next three times you would gain {POISON} prevent the condition."
         },
         "gh-154": {
-            "name": "Major Antidote",
+            "name": "Antídoto mayor",
             "source": "Reward from Scenario #105",
             "desc": "The next five times you would gain {POISON} prevent the condition."
         },
         "gh-155": {
-            "name": "Curseward Armor",
+            "name": "Armadura antimaldiciones",
             "source": "Reward from Scenario #108",
             "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck."
         },
         "gh-156": {
-            "name": "Elemental Claymore",
+            "name": "Claymore elemental",
             "source": "Unknown",
             "desc": "During your melee attack, {ANY_X} to add +2 {ATTACK} to a single attack."
         },
         "gh-157": {
-            "name": "Ancient Bow",
+            "name": "Arco antiguo",
             "source": "Scenario #107 (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
             "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack."
         },
         "gh-158": {
-            "name": "Rejuvenation Greaves",
+            "name": "Grebas de rejuvenecimiento",
             "source": "Scenario #111 (Treasure #82)",
             "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}."
         },
         "gh-159": {
-            "name": "Scroll of Haste",
+            "name": "Pergamino de premura",
             "source": "Scenario #103 (Treasure #81)",
             "desc": "During any one ally's movement, add +2 {MOVE} to the movement."
         },
         "gh-160": {
-            "name": "Cutpurse Dagger",
+            "name": "Daga de ratero",
             "source": "Unknown",
             "desc": "When you kill a monster during your turn, gain one money token."
         },
         "gh-161": {
-            "name": "Throwing Axe",
+            "name": "Hacha arrojadiza",
             "source": "Reward from Scenario #108",
             "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack."
         },
         "gh-162": {
-            "name": "Rift Device",
+            "name": "Dispositivo de apertura de fisuras",
             "source": "Reward from Scenario #112\nSection 62 “Mechanical Splendor” in book.",
             "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you."
         },
         "gh-163": {
-            "name": "Crystal Tiara",
+            "name": "Tiara de cristal",
             "source": "Reward from Scenario #110",
             "desc": "When you peform a long or short rest, gain {STRENGTHEN}."
         },
         "gh-164": {
-            "name": "Basin of Prophecy",
+            "name": "Cuenco de profecía",
             "source": "Reward from Solo Scenario - {DR}",
             "desc": "When you reveal cards from any deck, reveal one additional card."
         },
