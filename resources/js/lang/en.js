@@ -2797,30 +2797,174 @@ export default {
     },
     "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
     "personal_quests": {
-        "Seeker of Xorn": "Seeker of Xorn",
-        "Merchant Class": "Merchant Class",
-        "Greed is Good": "Greed is Good",
-        "Finding the Cure": "Finding the Cure",
-        "A Study of Anatomy": "A Study of Anatomy",
-        "Law Bringer": "Law Bringer",
-        "Pounds of Flesh": "Pounds of Flesh",
-        "Trophy Hunt": "Trophy Hunt",
-        "Eternal Wanderer": "Eternal Wanderer",
-        "Battle Legend": "Battle Legend",
-        "Implement of Light": "Implement of Light",
-        "Take Back the Trees": "Take Back the Trees",
-        "The Thin Places": "The Thin Places",
-        "Aberrant Slayer": "Aberrant Slayer",
-        "Fearless Stand": "Fearless Stand",
-        "Piety in All Things": "Piety in All Things",
-        "Vengeance": "Vengeance",
-        "Zealot of the Blood God": "Zealot of the Blood God",
-        "Goliath Toppler": "Goliath Toppler",
-        "The Fall of Man": "The Fall of Man",
-        "Augmented Abilities": "Augmented Abilities",
-        "Elemental Samples": "Elemental Samples",
-        "A Helping Hand": "A Helping Hand",
-        "The Perfect Poison": "The Perfect Poison",
+        "gh-510": {
+            "name": "Seeker of Xorn",
+            "progress": [
+                "Complete three Crypt scenarios.",
+                "Conclude {SCENARIO 52}.",
+            ]
+        },
+        "gh-511": {
+            "name": "Merchant Class",
+            "progress": [
+                "Own two {BODY} items.",
+                "Own two {HEAD} items.",
+                "Own two {LEGS} items.",
+                "Own three {ONE-HAND} or {TWO-HANDS} items.",
+                "Own four {SMALL-ITEM} items.",
+            ]
+        },
+        "gh-512": {
+            "name": "Greed is Good",
+            "progress": [
+                "Have 200 gold in your possession.",
+            ]
+        },
+        "gh-513": {
+            "name": "Finding the Cure",
+            "unlock": "Open envelope X",
+            "progress": [
+                "Kill eight Forest Imps.",
+                "Conclude {SCENARIO 59}.",
+            ]
+        },
+        "gh-514": {
+            "name": "A Study of Anatomy",
+            "progress": [
+                "Experience your party members becoming exhausted fifteen times.",
+            ]
+        },
+        "gh-515": {
+            "name": "Law Bringer",
+            "progress": [
+                "Kill twenty Bandits or Cultists.",
+            ]
+        },
+        "gh-516": {
+            "name": "Pounds of Flesh",
+            "progress": [
+                "Kill fifteen Vermlings.",
+            ]
+        },
+        "gh-517": {
+            "name": "Trophy Hunt",
+            "progress": [
+                "Kill twenty different types of monsters.",
+            ]
+        },
+        "gh-518": {
+            "name": "Eternal Wanderer",
+            "progress": [
+                "Complete fifteen different scenarios.",
+            ]
+        },
+        "gh-519": {
+            "name": "Battle Legend",
+            "progress": [
+                "Earn fifteen ✔ from completed battle goals.",
+            ]
+        },
+        "gh-520": {
+            "name": "Implement of Light",
+            "progress": [
+                "Find the Skullbane Axe in the Necromancer's Sanctum.",
+                "Use it to kill seven Living Bones, Living Corpses, or Living Spirits.",
+            ]
+        },
+        "gh-521": {
+            "name": "Take Back the Trees",
+            "progress": [
+                "Complete three scenarios in the Dagger Forest.",
+                "Conclude {SCENARIO 55}.",
+            ]
+        },
+        "gh-522": {
+            "name": "The Thin Places",
+            "progress": [
+                "Complete six side scenarios.",
+            ]
+        },
+        "gh-523": {
+            "name": "Aberrant Slayer",
+            "progress": [
+                "Kill one Flame Demon.",
+                "Kill one Frost Demon.",
+                "Kill one Wind Demon.",
+                "Kill one Earth Demon.",
+                "Kill one Night Demon.",
+                "Kill one Sun Demon.",
+            ]
+        },
+        "gh-524": {
+            "name": "Fearless Stand",
+            "progress": [
+                "Kill twenty elite monsters.",
+            ]
+        },
+        "gh-525": {
+            "name": "Piety in All Things",
+            "progress": [
+                "Donate 120 gold to the Sanctuary of the Great Oak.",
+            ]
+        },
+        "gh-526": {
+            "name": "Vengeance",
+            "unlock": "Open Envelope X",
+            "progress": [
+                "Complete four scenarios in Gloomhaven.",
+                "Conclude {SCENARIO 57}.",
+            ]
+        },
+        "gh-527": {
+            "name": "Zealot of the Blood God",
+            "progress": [
+                "Become exhausted twelve times.",
+            ]
+        },
+        "gh-528": {
+            "name": "Goliath Toppler",
+            "progress": [
+                "Complete four boss scenarios",
+            ]
+        },
+        "gh-529": {
+            "name": "The Fall of Man",
+            "progress": [
+                "Complete 2 Lingering Swamp scenarios.",
+                "Conclude {SCENARIO 61}.",
+            ]
+        },
+        "gh-530": {
+            "name": "Augmented Abilities",
+            "progress": [
+                "Purchase four enhancements.",
+            ]
+        },
+        "gh-531": {
+            "name": "Elemental Samples",
+            "progress": [
+                "Complete a scenario in Gloomhaven.",
+                "Complete a scenario in Dagger Forest.",
+                "Complete a scenario in Lingering Swamp",
+                "Complete a scenario in Watcher Mountains",
+                "Complete a scenario in Copperneck Mountains",
+                "Complete a scenario in Misty Sea.",
+            ]
+        },
+        "gh-532": {
+            "name": "A Helping Hand",
+            "progress": [
+                "Experience two other characters achieving their personal quests.",
+            ]
+        },
+        "gh-533": {
+            "name": "The Perfect Poison",
+            "progress": [
+                "Kill three Oozes.",
+                "Kill three Lurkers.",
+                "Kill three Spitting Drakes.",
+            ]
+        }
     },
     "characters": {
         "BR": {
