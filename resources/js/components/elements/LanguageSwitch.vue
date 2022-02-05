@@ -52,11 +52,13 @@ export default {
         this.setInitialLanguage();
     },
     mounted() {
-        this.select = new MDCSelect(c('.language-switch')[0]);
-        this.select.listen('MDCSelect:change', this.changeLanguage);
-
         if (this.current !== window.i18n.locale) {
             loadLanguageAsync(this.current);
+        }
+
+        if (c('.language-switch').length) {
+            this.select = new MDCSelect(c('.language-switch')[0]);
+            this.select.listen('MDCSelect:change', this.changeLanguage);
         }
     },
     destroyed() {

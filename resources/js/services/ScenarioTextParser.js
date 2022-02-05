@@ -2,8 +2,8 @@ export default class ScenarioTextParser {
     parse(text) {
         let list = collect({});
 
-        if (text.includes('Scenario #')) {
-            let scenarios = text.match(/Scenario #\d+/g);
+        if (text.includes('{SCENARIO')) {
+            let scenarios = text.match(/{SCENARIO \d+}/g) || [];
             scenarios.forEach((scenario) => {
                 const id = parseInt(scenario.replace(/\D/g, ''));
                 list.put(id, scenario);

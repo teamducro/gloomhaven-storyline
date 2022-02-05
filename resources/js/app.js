@@ -33,7 +33,9 @@ import localizedFormat from 'dayjs/plugin/localizedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import TreasureValidator from "./services/TreasureValidator";
 import Vue from 'vue';
-const { RayPlugin } = require('vue-ray/vue2');
+import LanguageSwitch from "./components/elements/LanguageSwitch";
+
+const {RayPlugin} = require('vue-ray/vue2');
 
 window._ = require('lodash');
 window.c = require('cash-dom');
@@ -50,7 +52,7 @@ Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
 Vue.use(VueScrollTo);
-Vue.use(RayPlugin, { interceptErrors: true, host: '127.0.0.1', port: 23517 });
+Vue.use(RayPlugin, {interceptErrors: true, host: '127.0.0.1', port: 23517});
 
 // Vue components
 const components = require.context('./components', true, /\.vue$/i);
@@ -245,6 +247,8 @@ window.app = new Vue({
             this.webpSupported = isWebpSupported();
             checkHasMouse(this.$bus);
             migrateVersion1Progress();
+            const languageSwitchComponent = Vue.extend(LanguageSwitch);
+            (new languageSwitchComponent()).$mount();
         }
     }
 });

@@ -31,7 +31,8 @@
                 <h3 class="mt-2">{{ quest.number }} {{ $t(quest.name) }}</h3>
 
                 <div v-for="(part, partIndex) in quest.progress">
-                    <add-links-and-icons class="mt-2 children-inline" :text="part.name"/>
+                    <add-links-and-icons class="mt-2 children-inline"
+                                         :text="$t(quest.translatedProgress+'.'+partIndex)"/>
                     <div v-if="part.type === 'checkbox'">
                         <checkbox v-for="(checked, valueIndex) in part.value" :key="'pq-'+partIndex+'-'+valueIndex"
                                   :group="'pq-'+partIndex"
