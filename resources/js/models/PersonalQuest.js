@@ -8,15 +8,28 @@ class PersonalQuest {
         this.number = '#' + String(data.id).padStart(3, '0');
         this._name = data.name;
         this.character_unlock = data.character_unlock;
-        this.unlock = data.unlock;
+        this._unlock = data.unlock;
         this.progress = [...data.progress];
         this.card = new Card('Q-' + this.id, game);
-        this.game = game;
-        this.translationKey = 'personal_quests';
+        this._game = game;
+        this.translationKey = `personal_quests.${this.game}-${this.id}`;
     }
 
     get name() {
-        return this.$tPrefix(this._name.replace("'", ''));
+        return this.$tPrefix('name');
+    }
+
+    get unlock() {
+        return this.$tPrefix('unlock');
+    }
+
+    get translatedProgress() {
+        return this.$tPrefix('progress');
+    }
+
+    get game() {
+        // FC uses GH PQ
+        return this._game === 'fc' ? 'gh' : this._game;
     }
 
     applyProgress(progress = []) {

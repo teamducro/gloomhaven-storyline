@@ -16,7 +16,7 @@
             },
             {
                 "type": "checkbox",
-                "name": "Conclude Scenario #52.",
+                "name": "Conclude {SCENARIO 52}.",
                 "value": [
                     0
                 ]
@@ -108,7 +108,7 @@
             },
             {
                 "type": "checkbox",
-                "name": "Conclude Scenario #59.",
+                "name": "Conclude {SCENARIO 59}.",
                 "value": [
                     0
                 ]
@@ -237,7 +237,7 @@
             },
             {
                 "type": "checkbox",
-                "name": "Conclude Scenario #55.",
+                "name": "Conclude {SCENARIO 55}.",
                 "value": [
                     0
                 ]
@@ -356,7 +356,7 @@
             },
             {
                 "type": "checkbox",
-                "name": "Conclude Scenario #57.",
+                "name": "Conclude {SCENARIO 57}.",
                 "value": [
                     0
                 ]
@@ -409,7 +409,7 @@
             },
             {
                 "type": "checkbox",
-                "name": "Conclude Scenario #61.",
+                "name": "Conclude {SCENARIO 61}.",
                 "value": [
                     0
                 ]
