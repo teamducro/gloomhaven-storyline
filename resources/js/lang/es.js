@@ -2679,100 +2679,100 @@ export default {
             "name": "Diseño “Alfanje de combustión” (Objeto 116)"
         },
         "gh-73": {
-            "name": "Diseño de objeto aleatorio"
+            "name": "Diseño de objeto aleatorio."
         },
         "gh-74": {
-            "name": "Diseño de objeto aleatorio"
+            "name": "Diseño de objeto aleatorio."
         },
         "gh-75": {
             "name": "Criptograma encontrado (Mira la página 121 del libro de escenarios)"
         },
         "fc-76": {
-            "name": "Suffer 3 damage, gain {WOUND} and 10 gold"
+            "name": "Sufre 3 de daño y HERIDA {WOUND}, obtén 10 de oro."
         },
         "fc-77": {
-            "name": "Gain “Major Cure Potion” (Objeto 090)"
+            "name": "Obtén “Poción de remedio mayor” (Objeto 090)."
         },
         "fc-78": {
-            "name": "“Ancient Bow” (Objeto 157)"
+            "name": "Diseño “Arco antiguo” (Objeto 157)."
         },
         "fc-79": {
-            "name": "Gain “Falcon Figurine” (Objeto 157)"
+            "name": "Obtén “Figura de halcón” (Objeto 157)."
         },
         "fc-80": {
-            "name": "Gain 1 ✓ and add Rift Event 19 to the deck"
+            "name": "Obtén 1 ✓ y añade el evento de Fisura 19 al mazo."
         },
         "fc-81": {
-            "name": "Gain “Scroll of Haste” (Objeto 159) and 10 gold"
+            "name": "Obtén “Pergamino de premura” (Objeto 159) y 10 de oro."
         },
         "fc-82": {
-            "name": "“Rejuvenation Greaves” (Objeto 158)"
+            "name": "Diseño “Grebas de rejuvenecimiento” (Objeto 158)."
         },
         "fc-83": {
-            "name": "Gain “Major Power Potion” (Objeto 041)"
+            "name": "Obtén “Poción de poder mayor” (Objeto 041)."
         },
         "fc-84": {
-            "name": "Gain “Mask of Terrors” (Objeto 066)"
+            "name": "Obtén “Máscara del terror” (Objeto 066)."
         },
         "fc-85": {
-            "name": "Suffer 3 damage, gain {POISON} and 10 gold"
+            "name": "Sufre 3 de daño y VENENO {POISON}, obtén 10 de oro."
         },
         "fc-86": {
-            "name": "Unlock Diviner {DR} Solo Scenario “Forecast of the Inevitable” (see page 25 of the main book)"
+            "name": "Desbloquea el escenario en solitario de {DR} “Una visión de los inevitable” (consulta la página 25 del libro principal)"
         },
         "fc-87": {
-            "name": "Suffer 2 damage, gain CURSE and 15 gold"
+            "name": "Sufre 2 de daño y MALDICIÓN {CURSE}, obtén 15 de oro."
         },
         "fc-88": {
-            "name": "Gain 1 ✓"
+            "name": "Obtén 1 ✓."
         },
         "fc-89": {
-            "name": "Gain “Second Chance Ring” (Objeto 070)"
+            "name": "Obtén “Anillo de segunda oportunidad” (Objeto 070)."
         },
         "fc-90": {
-            "name": "10 de oro para cada personaje, Read section 75 on page 49"
+            "name": "Lee la sección 75 de la página 25. \nCada personaje obtiene 10 de oro. \n5 de XP para cada personaje."
         },
         "fc-91": {
-            "name": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
+            "name": "Obtén 30 de oro y el logro de grupo “Oportunistas”. Añade el evento de Fisura 84 al mazo."
         },
         "fc-93": {
-            "name": "“Scroll of Haste” (Objeto 159)"
+            "name": "Obtén “Pergamino de premura” (Objeto 159)."
         },
         "fc-94": {
-            "name": "Gain 1 ✓ and add Rift Event 20 to the deck"
+            "name": "Obtén 1 ✓ y añade el evento de Fisura 20 al mazo."
         },
         "fc-95": {
-            "name": "Gain 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
+            "name": "Obtén 25 de oro y el logro de grupo “La caja Fuerte”. Añade el evento de Fisura 85 al mazo."
         },
         "fc-96": {
-            "name": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}"
+            "name": "Encuentras un antiguo tomo repleto de planos técnicos y de diseño de una gran variedad de máquinas exóticas. Hay una curiosa nota manuscrita en la cara interna de la cubierta: {NOTE_115}"
         },
         "jotl-1": {
-            "name": "Gain 10 experience"
+            "name": "Obtén 10 XP"
         },
         "jotl-2": {
-            "name": "“Ring of Strength” (Objeto 31)"
+            "name": "Obtén “Ring of Strength” (Objeto 31)"
         },
         "jotl-3": {
-            "name": "Gain 15 experience"
+            "name": "Obtén 15 XP"
         },
         "jotl-4": {
-            "name": "Gain 5 gold"
+            "name": "Obtén 5 de oro"
         },
         "jotl-5": {
-            "name": "Gain 1 ✔"
+            "name": "Obtén 1 ✔"
         },
         "jotl-6": {
-            "name": "Gain 10 gold"
+            "name": "Obtén 10 de oro"
         },
         "jotl-7": {
-            "name": "Gain 5 gold"
+            "name": "Obtén 5 de oro"
         },
         "jotl-8": {
-            "name": "Suffer 3 damage, gain {POISON,"
+            "name": "Sufre 3 de daño, VENENO {POISON},"
         },
         "jotl-9": {
-            "name": "Gain 5 gold"
+            "name": "Obtén 5 de oro"
         },
         "jotl-10": {
             "name": "“Fateful Compass” (Objeto 27)"
@@ -2781,16 +2781,16 @@ export default {
             "name": "“Ring of Haste” (Objeto 30)"
         },
         "jotl-12": {
-            "name": "Gain 5 gold"
+            "name": "Obtén 5 de oro"
         },
         "jotl-13": {
-            "name": "Gain 5 gold"
+            "name": "Obtén 5 de oro"
         },
         "jotl-14": {
-            "name": "Gain 3 money tokens"
+            "name": "Obtén 3 money tokens"
         },
         "jotl-15": {
-            "name": "Gain 1 ✔"
+            "name": "Obtén 1 ✔"
         },
         "jotl-16": {
             "name": "“Mana Potion” (Objeto 14)"
