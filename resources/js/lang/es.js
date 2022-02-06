@@ -1798,7 +1798,7 @@ export default {
         },
         "gh-70": {
             "name": "Anillo de Segunda Oportunidad",
-            "source": "Prosperidad nivel 9\nFC Challenge Scenario, Carta Fisura 12 (Tesoro #89)\nSección 103 -> 84 “Gateway to the Firmament” in book",
+            "source": "Prosperidad nivel 9\nFC Challenge Scenario, Evento Fisura 12 (Tesoro #89)\nSección 103 -> 84 “Gateway to the Firmament” in book",
             "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
         },
         "gh-71": {
