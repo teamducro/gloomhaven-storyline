@@ -1621,7 +1621,11 @@ export default {
         },
         "gh-35": {
             "name": "Figura de Halcón",
+<<<<<<< Updated upstream
             "source": "Prosperidad nivel 4\nRecompensa del escenario {SCENARIO 98} (Tesoro #79)",
+=======
+            "source": "Prosperidad nivel 4\n{SCENARIO 98}  (Treasure #79)",
+>>>>>>> Stashed changes
             "desc": "Summon Jade Falcon ({FLYING})",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
@@ -1651,8 +1655,13 @@ export default {
             "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 3 action instead of an {ATTACK} 2 action."
         },
         "gh-41": {
+<<<<<<< Updated upstream
             "name": "MPoción de Poder Mayor",
             "source": "Prosperidad nivel 5\n{SCENARIO 105} (Tesoro #83)",
+=======
+            "name": "Poción de Poder Mayor",
+            "source": "Prosperidad nivel 5\n{SCENARIO 105} (Treasure #83)",
+>>>>>>> Stashed changes
             "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
         },
         "gh-42": {
@@ -1708,7 +1717,11 @@ export default {
         },
         "gh-52": {
             "name": "Amuleto Protector",
+<<<<<<< Updated upstream
             "source": "Prosperidad nivel 7\nRecompensa del escenario{SCENARIO 109}",
+=======
+            "source": "Prosperidad nivel 7\nReward from {SCENARIO 109}",
+>>>>>>> Stashed changes
             "desc": "You are immune to {POISON} and {WOUND}."
         },
         "gh-53": {
@@ -1743,7 +1756,11 @@ export default {
         },
         "gh-59": {
             "name": "Gafas Telescópicas",
+<<<<<<< Updated upstream
             "source": "Prosperidad nivel 8\nOpción del escenario {SCENARIO 100}",
+=======
+            "source": "Prosperidad nivel 8\nOption from {SCENARIO 100}",
+>>>>>>> Stashed changes
             "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
         },
         "gh-60": {
@@ -1778,7 +1795,11 @@ export default {
         },
         "gh-66": {
             "name": "Máscara de Terror",
+<<<<<<< Updated upstream
             "source": "Prosperidad nivel 9\nRecompensa del escenario {SCENARIO 110} (Tesoro #84)",
+=======
+            "source": "Prosperidad nivel 9\n{SCENARIO 110}(Treasure #84)",
+>>>>>>> Stashed changes
             "desc": "During your melee attack, add {PUSH} 1."
         },
         "gh-67": {
@@ -1788,7 +1809,11 @@ export default {
         },
         "gh-68": {
             "name": "Alabarda",
+<<<<<<< Updated upstream
             "source": "Prosperidad nivel 9\nRecompensa del escenario {SCENARIO 111} (Tesoro #92)\nSection 132 -> g106 “Strangler's Park” in book",
+=======
+            "source": "Prosperidad nivel 9\n{SCENARIO 111} (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
+>>>>>>> Stashed changes
             "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
         },
         "gh-69": {
@@ -2238,7 +2263,7 @@ export default {
             "source": "Unknown",
             "desc": "During your melee attack, {ANY_X} to add +2 {ATTACK} to a single attack."
         },
-        "gh-157": {
+         "gh-157": {
             "name": "Arco antiguo",
             "source": "{SCENARIO 107} (Tesoro #78)\nSection 32 “Collapsed Atrium” in book",
             "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack."
