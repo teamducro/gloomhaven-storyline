@@ -1621,7 +1621,7 @@ export default {
         },
         "gh-35": {
             "name": "Figura de Halcón",
-            "source": "Prosperidad nivel 4\n{SCENARIO 98} (Treasure #79)",
+            "source": "Prosperidad nivel 4\nRecompensa del escenario {SCENARIO 98} (Tesoro #79)",
             "desc": "Summon Jade Falcon ({FLYING})",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
@@ -1652,7 +1652,7 @@ export default {
         },
         "gh-41": {
             "name": "MPoción de Poder Mayor",
-            "source": "Prosperidad nivel 5\n{SCENARIO 105} (Treasure #83)",
+            "source": "Prosperidad nivel 5\n{SCENARIO 105} (Tesoro #83)",
             "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
         },
         "gh-42": {
@@ -1688,7 +1688,7 @@ export default {
         },
         "gh-48": {
             "name": "Poción de Maná Mayor",
-            "source": "Prosperidad nivel 6\nReward from {SCENARIO 104}",
+            "source": "Prosperidad nivel 6\nRecompensa del escenario {SCENARIO 104}",
             "desc": "During your turn, create any two elements. {ANY} {ANY}"
         },
         "gh-49": {
@@ -1708,7 +1708,7 @@ export default {
         },
         "gh-52": {
             "name": "Amuleto Protector",
-            "source": "Prosperidad nivel 7\nReward from {SCENARIO 109}",
+            "source": "Prosperidad nivel 7\nRecompensa del escenario{SCENARIO 109}",
             "desc": "You are immune to {POISON} and {WOUND}."
         },
         "gh-53": {
@@ -1743,7 +1743,7 @@ export default {
         },
         "gh-59": {
             "name": "Gafas Telescópicas",
-            "source": "Prosperidad nivel 8\nOption from {SCENARIO 100}",
+            "source": "Prosperidad nivel 8\nOpción del escenario {SCENARIO 100}",
             "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
         },
         "gh-60": {
@@ -1778,7 +1778,7 @@ export default {
         },
         "gh-66": {
             "name": "Máscara de Terror",
-            "source": "Prosperidad nivel 9\n{SCENARIO 110} (Treasure #84)",
+            "source": "Prosperidad nivel 9\nRecompensa del escenario {SCENARIO 110} (Tesoro #84)",
             "desc": "During your melee attack, add {PUSH} 1."
         },
         "gh-67": {
@@ -1788,7 +1788,7 @@ export default {
         },
         "gh-68": {
             "name": "Alabarda",
-            "source": "Prosperidad nivel 9\nScenario #111 (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
+            "source": "Prosperidad nivel 9\nRecompensa del escenario {SCENARIO 111} (Tesoro #92)\nSection 132 -> g106 “Strangler's Park” in book",
             "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
         },
         "gh-69": {
@@ -1798,7 +1798,7 @@ export default {
         },
         "gh-70": {
             "name": "Anillo de Segunda Oportunidad",
-            "source": "Prosperidad nivel 9\nFC Challenge Scenario, Rift Card 12 (Treasure #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
+            "source": "Prosperidad nivel 9\nFC Challenge Scenario, Rift Card 12 (Tesoro #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
             "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
         },
         "gh-71": {
@@ -2463,229 +2463,229 @@ export default {
     },
     "treasures": {
         "gh-1": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-2": {
-            "name": "Gain “Tower Shield” (Objeto 032)"
+            "name": "Obtén “Pavés” (Objeto 032)"
         },
         "gh-3": {
-            "name": "Gain “Splintmail” (Objeto 044)"
+            "name": "Obtén “Loriga de láminas” (Objeto 044)"
         },
         "gh-4": {
-            "name": "Gain 15 Gold"
+            "name": "Obtén 15 de oro"
         },
         "gh-5": {
-            "name": "Gain “Chainmail” (Objeto 023)"
+            "name": "Obtén “Cota de malla” (Objeto 023)"
         },
         "gh-6": {
-            "name": "Gain “Hooked Chain” (Objeto 039)"
+            "name": "Obtén “Cadena con garfio” (Objeto 039)"
         },
         "gh-7": {
-            "name": "Random Side Scenario"
+            "name": "Escenario secundario aleatorio"
         },
         "gh-8": {
-            "name": "Gain 1 ✔"
+            "name": "Obtén 1 ✔"
         },
         "gh-9": {
-            "name": "Gain “Wave Crest” (Objeto 111)"
+            "name": "Obtén “Collar de las mareas” (Objeto 111)"
         },
         "gh-10": {
-            "name": "Gain 10 Experience"
+            "name": "Obtén 10 XP"
         },
         "gh-11": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-12": {
-            "name": "Gain “Magma Waders” (Objeto 099)"
+            "name": "Obtén “Botas de magma” (Objeto 099)"
         },
         "gh-13": {
-            "name": "Suffer 5 Damage and gain {POISON} and {WOUND}"
+            "name": "Sufre 5 de daño,VENENO {POISON} y HERIDA {WOUND}"
         },
         "gh-14": {
-            "name": "Gain 10 Experience"
+            "name": "Obtén 10 XP"
         },
         "gh-15": {
-            "name": "Gain “Pendant of Dark Pacts” (Objeto 045)"
+            "name": "Obtén “Colgante de Pactos siniestros” (Objeto 045)"
         },
         "gh-16": {
-            "name": "Gain 10 gold"
+            "name": "Obtén 10 de oro"
         },
         "gh-17": {
-            "name": "Gain 20 Gold"
+            "name": "Obtén 20 de oro"
         },
         "gh-18": {
-            "name": "Gain 15 gold"
+            "name": "Obtén 15 de oro"
         },
         "gh-19": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-20": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-21": {
-            "name": "Suffer 5 Damage"
+            "name": "Sufre 5 de daño"
         },
         "gh-22": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-23": {
-            "name": "Gain “Drakescale Armor” (Objeto 103)"
+            "name": "Obtén “Armadura de escamas de draco” (Objeto 103)"
         },
         "gh-24": {
-            "name": "Suffer 5 damage"
+            "name": "Sufre 5 de daño"
         },
         "gh-25": {
-            "name": "Gain 25 gold"
+            "name": "Obtén 25 de oro"
         },
         "gh-26": {
-            "name": "Gain 20 Gold"
+            "name": "Obtén 20 de oro"
         },
         "gh-27": {
-            "name": "Gain “Orb of Twilight” (Objeto 122)"
+            "name": "Obtén “Orbe del Crepúsculo” (Objeto 122)"
         },
         "gh-28": {
-            "name": "Gain 15 Gold"
+            "name": "Obtén 15 de oro"
         },
         "gh-29": {
-            "name": "Gain “Endurance Footwraps” (Objeto 097)"
+            "name": "Obtén “Sandalias de robustez” (Objeto 097)"
         },
         "gh-30": {
-            "name": "Gain 1 ✔"
+            "name": "Obtén 1 ✔"
         },
         "gh-31": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-32": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-33": {
-            "name": "Gain “Weighted Net” (Objeto 019)"
+            "name": "Obtén “Red contrapesada” (Objeto 019)"
         },
         "gh-34": {
-            "name": "Gain “Amulet of Life” (Objeto 024)"
+            "name": "Obtén “Amuleto de vida” (Objeto 024)"
         },
         "gh-35": {
-            "name": "Gain “Drakescale Boots” (Objeto 098)"
+            "name": "Obtén “Botas de escamas de draco” (Objeto 098)"
         },
         "gh-36": {
-            "name": "“Rocket Boots” design (Objeto 096)"
+            "name": "Diseño “Botas cohete” (Objeto 096)"
         },
         "gh-37": {
-            "name": "Gain 1 ✔"
+            "name": "Obtén 1 ✔"
         },
         "gh-38": {
-            "name": "“Ring of Skulls” design (Objeto 123)"
+            "name": "Diseño “Anillo de cráneos” (Objeto 123)"
         },
         "gh-39": {
-            "name": "Suffer 5 damage"
+            "name": "Sufre 5 de daño"
         },
         "gh-40": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-41": {
-            "name": "Gain “Black Knife” (Objeto 053)"
+            "name": "Obtén “Cuchillo de negro” (Objeto 053)"
         },
         "gh-42": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-43": {
-            "name": "Suffer 5 damage gain {POISON} and {WOUND}"
+            "name": "Sufre 5 de daño, VENENO {POISON} y HERIDA {WOUND}"
         },
         "gh-44": {
-            "name": "Random Side Scenario"
+            "name": "Escenario secundario aleatorio"
         },
         "gh-45": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-46": {
-            "name": "Suffer 3 damage and gain {POISON}"
+            "name": "Sufre 3 de daño y VENENO {POISON}"
         },
         "gh-47": {
-            "name": "Gain “Steam Armor” (Objeto 104)"
+            "name": "Obtén “Armadura a vapor” (Objeto 104)"
         },
         "gh-48": {
-            "name": "Gain 30 gold"
+            "name": "Obtén 30 de oro"
         },
         "gh-49": {
-            "name": "New Scenario: Lost Island (Scenario 17 at K-17)"
+            "name": "Nuevo escenario: Isla perdida (Escenario 17) (K-17)"
         },
         "gh-50": {
-            "name": "Gain “Second Skin” (Objeto 101)"
+            "name": "Obtén “Segunda piel” (Objeto 101)"
         },
         "gh-51": {
-            "name": "Random Side Scenario"
+            "name": "Escenario secundario aleatorio"
         },
         "gh-52": {
-            "name": "Gain “Heart of the Betrayer” (Objeto 131)"
+            "name": "Obtén “Corazón del Traidor” (Objeto 131)"
         },
         "gh-53": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-54": {
-            "name": "Gain “Doomed Compass” (Objeto 124)"
+            "name": "Obtén “Brújula maldita” (Objeto 124)"
         },
         "gh-55": {
-            "name": "Gain 1 ✔"
+            "name": "Obtén 1 ✔"
         },
         "gh-56": {
-            "name": "Gain “Star Earring” (Objeto 069)"
+            "name": "Obtén “Pendiente de estrella” (Objeto 069)"
         },
         "gh-57": {
-            "name": "Gain 15 gold"
+            "name": "Obtén 15 de oro"
         },
         "gh-58": {
-            "name": "Gain “Drakescale Helm” (Objeto 108)"
+            "name": "Obtén “Yelmo de escamas de draco” (Objeto 108)"
         },
         "gh-59": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-60": {
-            "name": "Gain “Skullbane Axe” (Objeto 113)"
+            "name": "Obtén “Hacha rompecráneos” (Objeto 113)"
         },
         "gh-61": {
-            "name": "Gain “Versatile Dagger” (Objeto 040)"
+            "name": "Obtén “Daga versátil” (Objeto 040)"
         },
         "gh-62": {
-            "name": "Gain “Helm of the Mountain” (Objeto 110) and “Mountain Hammer” (Objeto 115)"
+            "name": "Obtén “Yelmo de la montaña” (Objeto 110) y “Martillode la montaña” (Objeto 115)"
         },
         "gh-63": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-64": {
-            "name": "Gain 30 gold"
+            "name": "Obtén 30 de oro"
         },
         "gh-65": {
-            "name": "“Horned Helm” design (Objeto 107)"
+            "name": "Diseño “Yelmo con cuernos” (Objeto 107)"
         },
         "gh-66": {
-            "name": "Gain “Volatile Bomb” (Objeto 033)"
+            "name": "Obtén “Bomba volátil” (Objeto 033)"
         },
         "gh-67": {
-            "name": "Gain 10 Gold"
+            "name": "Obtén 10 de oro"
         },
         "gh-68": {
-            "name": "Gain “Helix Ring” (Objeto 130)"
+            "name": "Obtén “Anillo helicoidal” (Objeto 130)"
         },
         "gh-69": {
-            "name": "Gain “Robes of Summoning” (Objeto 100)"
+            "name": "Obtén “Túnica de invocación” (Objeto 100)"
         },
         "gh-70": {
-            "name": "Random Side Scenario"
+            "name": "Escenario secundario aleatorio"
         },
         "gh-71": {
-            "name": "Random Side Scenario"
+            "name": "Escenario secundario aleatorio"
         },
         "gh-72": {
-            "name": "“Fueled Falchion” design (Objeto 116)"
+            "name": "Diseño “Alfanje de combustión” (Objeto 116)"
         },
         "gh-73": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-74": {
-            "name": "Random Item Design"
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-75": {
-            "name": "Cryptogram Found (See scenario book page 121)"
+            "name": "Criptograma encontrado (Mira la página 121 del libro de escenarios)"
         },
         "fc-76": {
             "name": "Suffer 3 damage, gain {WOUND} and 10 gold"
