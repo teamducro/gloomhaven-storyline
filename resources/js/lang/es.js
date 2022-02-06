@@ -1621,11 +1621,7 @@ export default {
         },
         "gh-35": {
             "name": "Figura de Halcón",
-<<<<<<< Updated upstream
-            "source": "Prosperidad nivel 4\nRecompensa del escenario {SCENARIO 98} (Tesoro #79)",
-=======
-            "source": "Prosperidad nivel 4\n{SCENARIO 98}  (Treasure #79)",
->>>>>>> Stashed changes
+            "source": "Prosperidad nivel 4\nRecompensa de {SCENARIO 98} (Tesoro #79)",
             "desc": "Summon Jade Falcon ({FLYING})",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
@@ -1655,13 +1651,8 @@ export default {
             "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 3 action instead of an {ATTACK} 2 action."
         },
         "gh-41": {
-<<<<<<< Updated upstream
-            "name": "MPoción de Poder Mayor",
-            "source": "Prosperidad nivel 5\n{SCENARIO 105} (Tesoro #83)",
-=======
             "name": "Poción de Poder Mayor",
-            "source": "Prosperidad nivel 5\n{SCENARIO 105} (Treasure #83)",
->>>>>>> Stashed changes
+            "source": "Prosperidad nivel 5\nRecompensa de {SCENARIO 105} (Treasure #83)",
             "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
         },
         "gh-42": {
@@ -1697,7 +1688,7 @@ export default {
         },
         "gh-48": {
             "name": "Poción de Maná Mayor",
-            "source": "Prosperidad nivel 6\nRecompensa del escenario {SCENARIO 104}",
+            "source": "Prosperidad nivel 6\nRecompensa de {SCENARIO 104}",
             "desc": "During your turn, create any two elements. {ANY} {ANY}"
         },
         "gh-49": {
@@ -1717,11 +1708,7 @@ export default {
         },
         "gh-52": {
             "name": "Amuleto Protector",
-<<<<<<< Updated upstream
-            "source": "Prosperidad nivel 7\nRecompensa del escenario{SCENARIO 109}",
-=======
-            "source": "Prosperidad nivel 7\nReward from {SCENARIO 109}",
->>>>>>> Stashed changes
+            "source": "Prosperidad nivel 7\nRecompensa de {SCENARIO 109}",
             "desc": "You are immune to {POISON} and {WOUND}."
         },
         "gh-53": {
@@ -1756,11 +1743,7 @@ export default {
         },
         "gh-59": {
             "name": "Gafas Telescópicas",
-<<<<<<< Updated upstream
-            "source": "Prosperidad nivel 8\nOpción del escenario {SCENARIO 100}",
-=======
-            "source": "Prosperidad nivel 8\nOption from {SCENARIO 100}",
->>>>>>> Stashed changes
+            "source": "Prosperidad nivel 8\nOpción de {SCENARIO 100}",
             "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
         },
         "gh-60": {
@@ -1795,11 +1778,7 @@ export default {
         },
         "gh-66": {
             "name": "Máscara de Terror",
-<<<<<<< Updated upstream
-            "source": "Prosperidad nivel 9\nRecompensa del escenario {SCENARIO 110} (Tesoro #84)",
-=======
-            "source": "Prosperidad nivel 9\n{SCENARIO 110}(Treasure #84)",
->>>>>>> Stashed changes
+            "source": "Prosperidad nivel 9\nRecompensa de {SCENARIO 110} (Tesoro #84)",
             "desc": "During your melee attack, add {PUSH} 1."
         },
         "gh-67": {
@@ -1809,11 +1788,7 @@ export default {
         },
         "gh-68": {
             "name": "Alabarda",
-<<<<<<< Updated upstream
-            "source": "Prosperidad nivel 9\nRecompensa del escenario {SCENARIO 111} (Tesoro #92)\nSection 132 -> g106 “Strangler's Park” in book",
-=======
-            "source": "Prosperidad nivel 9\n{SCENARIO 111} (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
->>>>>>> Stashed changes
+            "source": "Prosperidad nivel 9\nRecompensa de {SCENARIO 111} (Tesoro #92)\nSección 132 -> 106 “Strangler's Park” in book",
             "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
         },
         "gh-69": {
@@ -1823,414 +1798,414 @@ export default {
         },
         "gh-70": {
             "name": "Anillo de Segunda Oportunidad",
-            "source": "Prosperidad nivel 9\nFC Challenge Scenario, Rift Card 12 (Tesoro #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
+            "source": "Prosperidad nivel 9\nFC Challenge Scenario, Carta Fisura 12 (Tesoro #89)\nSección 103 -> 84 “Gateway to the Firmament” in book",
             "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
         },
         "gh-71": {
             "name": "Botas de Levitación",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "Gain {FLYING}"
         },
         "gh-72": {
             "name": "Zapatos de Felicidad",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "If you move 6 or more hexes on your turn, gain {exp1}."
         },
         "gh-73": {
             "name": "Capa de Reaparición",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, perform a “{MOVE} 4, {JUMP}” action"
         },
         "gh-74": {
             "name": "Armadura Filosa",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "On the next three sources of damage from attacks targeting you, gain {SHIELD} 1, {Retaliate} 1. Add 4 {-1} to your attack modifier deck."
         },
         "gh-75": {
             "name": "Diadema de los Elementos",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, {ANY_X} to create any element. {ANY}"
         },
         "gh-76": {
             "name": "Almófar",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "While you are adjacent to three or more monsters, gain {SHIELD} 1. Add 1 {-1} to your attack modifier deck."
         },
         "gh-77": {
             "name": "Espada Gélida",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your melee attack, {ICE_X} to add +2 {ATTACK} to a single attack."
         },
         "gh-78": {
             "name": "Espada Tormentosa",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your melee attack, {WIND_X} to add +2 {ATTACK} to a single attack."
         },
         "gh-79": {
             "name": "Espada Incineradora",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your melee attack, {FIRE_X} to add +2 {ATTACK} to a single attack."
         },
         "gh-80": {
             "name": "Espada Sísmica",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your melee attack, {EARTH_X} to add +2 {ATTACK} to a single attack."
         },
         "gh-81": {
             "name": "Espada Brillante",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your melee attack, {LIGHT_X} to add +2 {ATTACK} to a single attack."
         },
         "gh-82": {
             "name": "Espada Nocturna",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your melee attack, {DARK_X} to add +2 {ATTACK} to a single attack."
         },
         "gh-83": {
             "name": "Varita de Escarcha",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, create Ice. {ICE}"
         },
         "gh-84": {
             "name": "Varita de Tormenta",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, create Wind. {WIND}"
         },
         "gh-85": {
             "name": "Varita de Incendio",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, create Fire. {FIRE}"
         },
         "gh-86": {
             "name": "Varita de Terremoto",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, create Earth. {EARTH}"
         },
         "gh-87": {
             "name": "Varita de Fulgor",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, create Light. {LIGHT}"
         },
         "gh-88": {
             "name": "Varita de Oscuridad",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, create Dark. {DARK}"
         },
         "gh-89": {
             "name": "Poción de Remedio Menor",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, remove one negative condition on yourself. This can be used while you have {STUN}."
         },
         "gh-90": {
             "name": "Poción de Remedio Mayor",
-            "source": "Random Item\n{SCENARIO 102} (Tesoro #77)",
+            "source": "Objeto aleatorio\nRecompensa de {SCENARIO 102} (Tesoro #77)",
             "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have {STUN}."
         },
         "gh-91": {
             "name": "Anillo de Acero",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "When damaged by an attack targeting you, gain {SHIELD} 4 for the attack."
         },
         "gh-92": {
             "name": "Anillo Atenuador",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "Before an enemy would consume an element, consume that element instead for no effect"
         },
         "gh-93": {
             "name": "Pergamino de Poder",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During an ally's attack, add +1 {ATTACK} to their entire attack action"
         },
         "gh-94": {
             "name": "Pergamino de Curación",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action"
         },
         "gh-95": {
             "name": "Pergamino de Resistencia",
-            "source": "Random Item",
+            "source": "Objeto aleatorio",
             "desc": "During your turn, an ally within {RANGE} 5 may {RECOVER} up to two of their discarded cards"
         },
         "gh-96": {
             "name": "Botas Cohete",
-            "source": "{SCENARIO 66} (Tesoro #36)",
+            "source": "Recompensa de {SCENARIO 66} (Tesoro #36)",
             "desc": "During your movement, add +3 {MOVE} and {JUMP} to a single movement"
         },
         "gh-97": {
             "name": "Sandalias de Robustez",
-            "source": "{SCENARIO 38} (Tesoro #29)",
+            "source": "Recompensa de {SCENARIO 38} (Tesoro #29)",
             "desc": "If you move 4 or more hexes on your turn, perform a “{HEAL} 1, Self” action."
         },
         "gh-98": {
             "name": "Botas de Escamas de Draco",
-            "source": "{SCENARIO 43} (Tesoro #35)",
+            "source": "Recompensa de {SCENARIO 43} (Tesoro #35)",
             "desc": "You are unaffected by difficult and hazardous terrain."
         },
         "gh-99": {
             "name": "Botas de Magma",
-            "source": "{SCENARIO 63} (Tesoro #12)",
+            "source": "Recompensa de {SCENARIO 63} (Tesoro #12)",
             "desc": "Ignore the damaging effects of hazardous terrain and perform a “{HEAL} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
         },
         "gh-100": {
             "name": "Túnica de Invocación",
-            "source": "{SCENARIO 31} (Tesoro #69)",
+            "source": "Recompensa de {SCENARIO 31} (Tesoro #69)",
             "desc": "During your turn, perform a “{HEAL} 2, target any summoned ally” action."
         },
         "gh-101": {
             "name": "Segunda Piel",
-            "source": "{SCENARIO 06} (Tesoro #50)",
+            "source": "Recompensa de {SCENARIO 06} (Tesoro #50)",
             "desc": "Remove two {MODIFIER_MINUS_ONE} from your attack modifier deck."
         },
         "gh-102": {
             "name": "Túnica de Sacrificio",
-            "source": "City Event 40",
+            "source": "Evento de ciudad 40",
             "desc": "During your ranged attack, suffer 3 damage to add +1 {ATTACK} to the entire Attack action."
         },
         "gh-103": {
             "name": "Armadura de Escamas de Draco",
-            "source": "{SCENARIO 34} (Tesoro #23)",
+            "source": "Recompensa de {SCENARIO 34} (Tesoro #23)",
             "desc": "You are immune to {POISON} and {WOUND}."
         },
         "gh-104": {
             "name": "Armadura a Vapor",
-            "source": "{SCENARIO 40} (Tesoro #47)",
+            "source": "Recompensa de {SCENARIO 40} (Tesoro #47)",
             "desc": "On the next five sources of damage from attacks targeting you, gain {SHIELD} 1."
         },
         "gh-105": {
             "name": "Mantón Pulgoso",
-            "source": "City Event 30",
+            "source": "Evento de ciudad 30",
             "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
             "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
         },
         "gh-106": {
             "name": "Collar de Dientes",
-            "source": "Road Event 05",
+            "source": "Evento de camino 05",
             "desc": "Any time you kill an enemy during your turn, perform a “{HEAL} 1, Self” action."
         },
         "gh-107": {
             "name": "Yelmo con Cuernos",
-            "source": "{SCENARIO 03} (Tesoro #65)",
+            "source": "Recompensa de {SCENARIO 03} (Tesoro #65)",
             "desc": "After moving 4 or more hexes on your turn, add +1 {ATTACK} to your next melee attack this turn.",
             "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
         },
         "gh-108": {
             "name": "Yelmo de Escamas de Draco",
-            "source": "{SCENARIO 25} (Tesoro #58)",
+            "source": "Recompensa de {SCENARIO 25} (Tesoro #58)",
             "desc": "Whenever you gain {MUDDLE}, gain {STRENGTHEN} instead."
         },
         "gh-109": {
             "name": "Capucha de Ladrón",
-            "source": "City Event 62",
+            "source": "Evento de ciudad 62",
             "desc": "During your “Loot 1” ability, perform a “Loot 2” ability instead."
         },
         "gh-110": {
             "name": "Yelmo de la Montaña",
-            "source": "{SCENARIO 82} (Tesoro #62)",
+            "source": "Recompensa de {SCENARIO 82} (Tesoro #62)",
             "desc": "When attacked, if {EARTH} is Strong, Immobilize the attacker."
         },
         "gh-111": {
             "name": "Collar de las Mareas",
-            "source": "{SCENARIO 64} (Tesoro #09)",
+            "source": "Recompensa de {SCENARIO 64} (Tesoro #09)",
             "desc": "When attacked, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
         },
         "gh-112": {
             "name": "Berbiquí Antigüo",
-            "source": "Reward From {SCENARIO 65}\nOption from {SCENARIO 100}",
+            "source": "Recompensa de {SCENARIO 65}\nOpción de {SCENARIO 100}",
             "desc": "During your melee attack, add +2 {ATTACK} and {PIERCE} 2 to the entire Attack action"
         },
         "gh-113": {
             "name": "Hacha Rompecráneos",
-            "source": "Reward From {SCENARIO 11}\nReward From {SCENARIO 12}",
+            "source": "Recompensa de {SCENARIO 11}\nRecompensa de {SCENARIO 12}",
             "desc": "During your melee attack targeting a Living Corpse, Living Spirit, or Living Bones, add +5 Attack to a single attack."
         },
         "gh-114": {
             "name": "Báculo de Xorn",
-            "source": "Reward from {SCENARIO 53}",
+            "source": "Recompensa de {SCENARIO 53}",
             "desc": "During your ranged attack, add {POISON} and {MUDDLE} to the entire Attack action"
         },
         "gh-115": {
             "name": "Martillo de la Montaña",
-            "source": "{SCENARIO 82} (Tesoro #62)",
+            "source": "Recompensa de {SCENARIO 82} (Tesoro #62)",
             "desc": "Summon Warrior Spirit",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-116": {
             "name": "Alfanje de Combustión",
-            "source": "{SCENARIO 23} (Tesoro #72)",
+            "source": "Recompensa de {SCENARIO 23} (Tesoro #72)",
             "desc": "During your single-target melee attack, the target and all enemies adjacent to the target suffer 1 damage"
         },
         "gh-117": {
             "name": "Hacha Sanguinaria",
-            "source": "City Event 53\nRoad Event 53",
+            "source": "Evento de ciudad 53\nEvento de camino 53",
             "desc": "During your melee attack, suffer 2 damage to add +1 {ATTACK} to the entire Attack action."
         },
         "gh-118": {
             "name": "Báculo de los Elementos",
-            "source": "City Event 57",
+            "source": "Evento de ciudad 57",
             "desc": "During your turn, create any element. {ANY}"
         },
         "gh-119": {
             "name": "Cráneo del Odio",
-            "source": "Reward From {SCENARIO 95}",
+            "source": "Recompensa de {SCENARIO 95}",
             "desc": "During your turn, {CURSE} all adjacent enemies."
         },
         "gh-120": {
             "name": "Báculo de Invocación",
-            "source": "Reward From {SCENARIO 88}",
+            "source": "Recompensa de {SCENARIO 88}",
             "desc": "During your turn, a summoned ally within {RANGE} 3 performs a “{MOVE} 3” action with you controlling the action."
         },
         "gh-121": {
             "name": "Orbe del Alba",
-            "source": "Reward From {SCENARIO 85}",
+            "source": "Recompensa de {SCENARIO 85}",
             "desc": "During your turn, {DARK_X} to create Light. {LIGHT}"
         },
         "gh-122": {
             "name": "Orbe del Crepúsculo",
-            "source": "{SCENARIO 89} (Tesoro #27)",
+            "source": "Recompensa de {SCENARIO 89} (Tesoro #27)",
             "desc": "During your turn, {LIGHT_X} to create Dark. {DARK}"
         },
         "gh-123": {
             "name": "Anillo de Cráneos",
-            "source": "{SCENARIO 04} (Tesoro #38)",
+            "source": "Recompensa de {SCENARIO 04} (Tesoro #38)",
             "desc": "Summon Skeleton",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-124": {
             "name": "Brújula Maldita",
-            "source": "{SCENARIO 93} (Tesoro #54)",
+            "source": "Recompensa de {SCENARIO 93} (Tesoro #54)",
             "desc": "During your turn, force an enemy within {RANGE} 5 to perform a “{MOVE} 2” action with you controlling the action."
         },
         "gh-125": {
             "name": "Engranaje Enigmático",
-            "source": "City Event 03\nOption from {SCENARIO 100}",
+            "source": "Evento de ciudad 03\nOpción de {SCENARIO 100}",
             "desc": "During your turn, disarm all traps within {RANGE} 2."
         },
         "gh-126": {
             "name": "Araña Mecánica",
-            "source": "City Event 43\nOption from {SCENARIO 100}",
+            "source": "Evento de ciudad 43\nOpción de {SCENARIO 100}",
             "desc": "During your turn, {POISON} all adjacent enemies."
         },
         "gh-127": {
             "name": "Araña Mecánica Gigante",
-            "source": "City Event 61",
+            "source": "Evento de ciudad 61",
             "desc": "During your turn, perform a “Loot 1” action."
         },
         "gh-128": {
             "name": "Incesario Negro",
-            "source": "Reward From {SCENARIO 90}",
+            "source": "Recompensa de {SCENARIO 90}",
             "desc": "During your turn, Muddle all enemies with {RANGE} 2."
         },
         "gh-129": {
             "name": "Carta Negra",
-            "source": "Road Event 51",
+            "source": "Evento de camino 51",
             "desc": "During your turn, place a character token on an adjacent normal or elite enemy. You add +1 {ATTACK} to all your attacks targeting this enemy."
         },
         "gh-130": {
             "name": "Anillo Helicoidal",
-            "source": "{SCENARIO 81} (Tesoro #68)",
+            "source": "Recompensa de {SCENARIO 81} (Tesoro #68)",
             "desc": "During your turn, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Self” action"
         },
         "gh-131": {
             "name": "Corazón del Traidor",
-            "source": "{SCENARIO 79} (Tesoro #52)",
+            "source": "Recompensa de {SCENARIO 79} (Tesoro #52)",
             "desc": "When attacked by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
             "faq": "This item cannot be used if there is no other enemy in range to be attacked."
         },
         "gh-132": {
             "name": "Núcleo de Energía",
-            "source": "{SCENARIO 67}",
+            "source": "Recompensa de {SCENARIO 67}",
             "desc": "Summon Steel Construct.",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-133": {
             "name": "Cristal Resonante",
-            "source": "{SCENARIO 84}",
+            "source": "Recompensa de {SCENARIO 84}",
             "desc": "During your turn, destroy an adjacent obstacle."
         },
         "gh-134": {
             "name": "Hoja Imponente",
-            "source": "Reward from Solo Scenario - {BR}",
+            "source": "Recompensa de escenario en solitario - {BR}",
             "desc": "Any time you kill an enemy during your turn, gain {SHIELD} 1 for the rest of the round."
         },
         "gh-135": {
             "name": "Rayo Concentrador",
-            "source": "Reward from Solo Scenario - {TI}",
+            "source": "Recompensa de escenario en solitario - {TI}",
             "desc": "During your Heal action, double the value of the Heal."
         },
         "gh-136": {
             "name": "Elixir Volátil",
-            "source": "Reward from Solo Scenario - {SW}",
+            "source": "Recompensa de escenario en solitario - {SW}",
             "desc": "During your ranged attack, add +2 {ATTACK} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made."
         },
         "gh-137": {
             "name": "Estilete Silencioso",
-            "source": "Reward from Solo Scenario - {SC}",
+            "source": "Recompensa de escenario en solitario - {SC}",
             "desc": "Any time you perform a melee attack, add {PIERCE} 1 to the Attack."
         },
         "gh-138": {
             "name": "Amuleto de Piedra",
-            "source": "Reward from Solo Scenario - {CH}",
+            "source": "Recompensa de escenario en solitario - {CH}",
             "desc": "During your action where an obstacle is created, create one additional obstacle and apply all effects of the action to it."
         },
         "gh-139": {
             "name": "Cuchillo Psíquico",
-            "source": "Reward from Solo Scenario - {MT}",
+            "source": "Recompensa de escenario en solitario - {MT}",
             "desc": "Any time you perform an Augment action, add +1 {ATTACK} to the entire action."
         },
         "gh-140": {
             "name": "Escudo del Sol",
-            "source": "Reward from Solo Scenario - {SK}",
+            "source": "Recompensa de escenario en solitario - {SK}",
             "desc": "When damaged by an attack, you may {LIGHT_X} to gain {SHIELD} 3 for the attack."
         },
         "gh-141": {
             "name": "Cinturón Multiusos",
-            "source": "Reward from Solo Scenario - {QM}",
+            "source": "Recompensa de escenario en solitario - {QM}",
             "desc": "During your turn, you or any one ally may {REFRESH} one of your spent or consumed items.",
             "faq": "This item cannot be refreshed."
         },
         "gh-142": {
             "name": "Ídolo de Fase",
-            "source": "Reward from Solo Scenario - {SU}",
+            "source": "Recompensa de escenario en solitario - {SU}",
             "desc": "When a summon you own is damaged by an attack, it suffers no damage instead."
         },
         "gh-143": {
             "name": "Elixir de Humo",
-            "source": "Reward from Solo Scenario - {NS}",
+            "source": "Recompensa de escenario en solitario - {NS}",
             "desc": "During your turn, gain {INVISIBLE} and create dark. {DARK}"
         },
         "gh-144": {
             "name": "Colgante de la Plaga",
-            "source": "Reward from Solo Scenario - {PH}",
+            "source": "Recompensa de escenario en solitario - {PH}",
             "desc": "During your turn, {POISON} and {CURSE} one enemy within {RANGE} 3."
         },
         "gh-145": {
             "name": "Máscara de la Muerte",
-            "source": "Reward from Solo Scenario - {BE}",
+            "source": "Recompensa de escenario en solitario - {BE}",
             "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {ATTACK} to the Attack."
         },
         "gh-146": {
             "name": "Laúd Magistral",
-            "source": "Reward from Solo Scenario - {SS}",
+            "source": "Recompensa de escenario en solitario - {SS}",
             "desc": "After performing any song action, immediately perform an Attack 2 or {MOVE} 2 action."
         },
         "gh-147": {
             "name": "Capa del Cazador",
-            "source": "Reward from Solo Scenario - {DS}",
+            "source": "Recompensa de escenario en solitario - {DS}",
             "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}."
         },
         "gh-148": {
             "name": "Bata del Doctor",
-            "source": "Reward from Solo Scenario - {SB}",
+            "source": "Recompensa de escenario en solitario - {SB}",
             "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal."
         },
         "gh-149": {
             "name": "Botas Elementales",
-            "source": "Reward from Solo Scenario - {EL}",
+            "source": "Recompensa de escenario en solitario - {EL}",
             "desc": "If you move 5 or more hexes on your turn, create any element. {ANY}"
         },
         "gh-150": {
             "name": "Vara de Mando",
-            "source": "Reward from Solo Scenario - {BT}",
+            "source": "Recompensa de escenario en solitario - {BT}",
             "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
         },
         "gh-151": {
@@ -2240,198 +2215,198 @@ export default {
         },
         "gh-152": {
             "name": "Anillo de dualidad",
-            "source": "Reward from {SCENARIO 97}\nSection 125 “A locked chest” in book",
+            "source": "Recompensa de {SCENARIO 97}\nSección 125 “A locked chest” in book",
             "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
         },
         "gh-153": {
             "name": "Antídoto menor"
-            "source": "Reward From {SCENARIO 99}",
+            "source": "Recompensa de {SCENARIO 99}",
             "desc": "The next three times you would gain {POISON} prevent the condition."
         },
         "gh-154": {
             "name": "Antídoto mayor"
-            "source": "Reward from {SCENARIO 105}",
+            "source": "Recompensa de {SCENARIO 105}",
             "desc": "The next five times you would gain {POISON} prevent the condition."
         },
         "gh-155": {
             "name": "Armadura antimaldiciones",
-            "source": "Reward from {SCENARIO 108}",
+            "source": "Recompensa de {SCENARIO 108}",
             "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck."
         },
         "gh-156": {
             "name": "Claymore elemental",
-            "source": "Unknown",
+            "source": "Desconocido",
             "desc": "During your melee attack, {ANY_X} to add +2 {ATTACK} to a single attack."
         },
          "gh-157": {
             "name": "Arco antiguo",
-            "source": "{SCENARIO 107} (Tesoro #78)\nSection 32 “Collapsed Atrium” in book",
+            "source": "Recompensa de {SCENARIO 107} (Tesoro #78)\nSección 32 “Collapsed Atrium” in book",
             "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack."
         },
         "gh-158": {
             "name": "Grebas de rejuvenecimiento",
-            "source": "{SCENARIO 111} (Tesoro #82)",
+            "source": "Recompensa de {SCENARIO 111} (Tesoro #82)",
             "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}."
         },
         "gh-159": {
             "name": "Pergamino de premura",
-            "source": "{SCENARIO 103} (Tesoro #81)",
+            "source": "Recompensa de {SCENARIO 103} (Tesoro #81)",
             "desc": "During any one ally's movement, add +2 {MOVE} to the movement."
         },
         "gh-160": {
             "name": "Daga de ratero",
-            "source": "Unknown",
+            "source": "Desconocido",
             "desc": "When you kill a monster during your turn, gain one money token."
         },
         "gh-161": {
             "name": "Hacha arrojadiza",
-            "source": "Reward from {SCENARIO 108}",
+            "source": "Recompensa de {SCENARIO 108}",
             "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack."
         },
         "gh-162": {
             "name": "Dispositivo de apertura de fisuras",
-            "source": "Reward from {SCENARIO 112}\nSection 62 “Mechanical Splendor” in book.",
+            "source": "Recompensa de {SCENARIO 112}\nSección 62 “Mechanical Splendor” in book.",
             "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you."
         },
         "gh-163": {
             "name": "Tiara de cristal",
-            "source": "Reward from {SCENARIO 110}",
+            "source": "Recompensa de {SCENARIO 110}",
             "desc": "When you peform a long or short rest, gain {STRENGTHEN}."
         },
         "gh-164": {
             "name": "Cuenco de profecía",
-            "source": "Reward from Solo Scenario - {DR}",
+            "source": "Recompensa de escenario en solitario - {DR}",
             "desc": "When you reveal cards from any deck, reveal one additional card."
         },
         "jotl_1": {
             "name": "Eagle-Eye Goggles",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "During your attack, gain Advantage on the entire Attack action."
         },
         "jotl_2": {
             "name": "Iron Helmet",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
         },
         "jotl_3": {
             "name": "Chain Armor",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "During your turn gain {SHIELD} 1 for the rest of the round"
         },
         "jotl_4": {
             "name": "Studded Leather",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
         },
         "jotl_5": {
             "name": "Weathered Boots",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "During your movement add +1 {MOVE} to a single movement."
         },
         "jotl_6": {
             "name": "Winged Shoes",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "During your movement, add {JUMP} to the entire Move Action.",
             "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
         },
         "jotl_7": {
             "name": "Heater Shield",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
         },
         "jotl_8": {
             "name": "Throwing Hammer",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "During your ranged attack, add {STUN} to a single attack"
         },
         "jotl_9": {
             "name": "Poison Dagger",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "During your melee attack, add {POISON} to a single attack."
         },
         "jotl_10": {
             "name": "Iron Spear",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes"
         },
         "jotl_11": {
             "name": "Healing Potion",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "During your turn, perform a “{HEAL} 3, Self” action."
         },
         "jotl_12": {
             "name": "Stamina Potion",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "During your turn, return one of your discarded cards to your hand."
         },
         "jotl_13": {
             "name": "Power Potion",
-            "source": "Reward from {SCENARIO 2}",
+            "source": "Recompensa de {SCENARIO 2}",
             "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
         },
         "jotl_14": {
             "name": "Mana Potion",
-            "source": "Reward from {SCENARIO 4}\n {SCENARIO 4} (Tesoro #16)",
+            "source": "Recompensa de {SCENARIO 4}\n {SCENARIO 4} (Tesoro #16)",
             "desc": "During your turn, infuse any one element. {ANY}"
         },
         "jotl_15": {
             "name": "Amulet of Life",
-            "source": "Reward from {SCENARIO 9}",
+            "source": "Recompensa de {SCENARIO 9}",
             "desc": "During your turn, “{HEAL} 1, Self” action."
         },
         "jotl_16": {
             "name": "Robes of Evocation",
-            "source": "Reward from {SCENARIO 9}",
+            "source": "Recompensa de {SCENARIO 9}",
             "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
         },
         "jotl_17": {
             "name": "Comfortable Shoes",
-            "source": "Reward from {SCENARIO 9}",
+            "source": "Recompensa de {SCENARIO 9}",
             "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
         },
         "jotl_18": {
             "name": "Battle-Axe",
-            "source": "Reward from {SCENARIO 9}",
+            "source": "Recompensa de {SCENARIO 9}",
             "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
         },
         "jotl_19": {
             "name": "Black Candle",
-            "source": "Reward from {SCENARIO 9}",
+            "source": "Recompensa de {SCENARIO 9}",
             "desc": "During your ranged attack, add {CURSE} to a single attack."
         },
         "jotl_20": {
             "name": "Stun Powder",
-            "source": "Reward from {SCENARIO 9}",
+            "source": "Recompensa de {SCENARIO 9}",
             "desc": "During your attack, add {STUN} to a single attack."
         },
         "jotl_21": {
             "name": "Hawk Helm",
-            "source": "Reward from {SCENARIO 15}",
+            "source": "Recompensa de {SCENARIO 15}",
             "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
         },
         "jotl_22": {
             "name": "Bladed Armor",
-            "source": "Reward from {SCENARIO 15}",
+            "source": "Recompensa de {SCENARIO 15}",
             "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack and the attacker suffers 2 damage."
         },
         "jotl_23": {
             "name": "Boots of Striding",
-            "source": "Reward from {SCENARIO 15}",
+            "source": "Recompensa de {SCENARIO 15}",
             "desc": "During your movement, add +2 {MOVE} to a single movement."
         },
         "jotl_24": {
             "name": "Volatile Bomb",
-            "source": "Reward from {SCENARIO 15}",
+            "source": "Recompensa de {SCENARIO 15}",
             "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
         },
         "jotl_25": {
             "name": "Barbed Chain",
-            "source": "Reward from {SCENARIO 15}",
+            "source": "Recompensa de {SCENARIO 15}",
             "desc": "During your ranged attack, add {PULL} 2 to a single attack."
         },
         "jotl_26": {
             "name": "Oak Charm",
-            "source": "Reward from {SCENARIO 15}",
+            "source": "Recompensa de {SCENARIO 15}",
             "desc": "During your turn, perform a “{BLESS}, {RANGE} 5” action."
         },
         "jotl_27": {
@@ -2441,13 +2416,13 @@ export default {
         },
         "jotl_28": {
             "name": "Flea-Bitten Shawl",
-            "source": "Reward from {SCENARIO 8}\nReward from {SCENARIO 12}",
+            "source": "Recompensa de {SCENARIO 8}\nRecompensa de {SCENARIO 12}",
             "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
             "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
         },
         "jotl_29": {
             "name": "Tower Shield",
-            "source": "Reward from {SCENARIO 16}",
+            "source": "Recompensa de {SCENARIO 16}",
             "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
         },
         "jotl_30": {
@@ -2457,7 +2432,7 @@ export default {
         },
         "jotl_31": {
             "name": "Ring of Strength",
-            "source": "Reward from {SCENARIO 19}\n{SCENARIO 18} (Tesoro #2)",
+            "source": "Recompensa de {SCENARIO 19}\n{SCENARIO 18} (Tesoro #2)",
             "desc": "During your turn, gain {STRENGTHEN}."
         },
         "jotl_32": {
@@ -2467,22 +2442,22 @@ export default {
         },
         "jotl_33": {
             "name": "Steel Ring",
-            "source": "Reward from {SCENARIO 22}",
+            "source": "Recompensa de {SCENARIO 22}",
             "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
         },
         "jotl_34": {
             "name": "Barbed Axe",
-            "source": "Reward from {SCENARIO 34}",
+            "source": "Recompensa de {SCENARIO 34}",
             "desc": "During your attack, add {WOUND} to the entire Attack Action."
         },
         "jotl_35": {
             "name": "Robes of Command",
-            "source": "Reward from {SCENARIO 24}",
+            "source": "Recompensa de {SCENARIO 24}",
             "desc": "During your turn, one adjacent ally may perform and “{ATTACK} 2” Action."
         },
         "jotl_36": {
             "name": "Jet Boots",
-            "source": "Reward from {SCENARIO 25}",
+            "source": "Recompensa de {SCENARIO 25}",
             "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."
         }
     },
