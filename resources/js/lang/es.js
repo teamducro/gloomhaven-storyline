@@ -240,6 +240,7 @@ export default {
     "Nr": "Ref",
     "Slot": "Espacio",
     "Cost": "Coste",
+    "Avail": "Disponible",
     "Use": "Uso",
     "Effect": "Efecto",
     "Shield": "Escudo",
@@ -2799,13 +2800,14 @@ export default {
             "name": "“Ring of Restoration” (Objeto 32)"
         }
     },
-    "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
+    "Add {x} {-1} to your attack modifier deck.": "Añade {x} {-1} a tu mazo de Modificadores de ataque.",
     "personal_quests": {
         "gh-510": {
-            "name": "Seeker of Xorn",
+            "name": "Buscador de Xorn",
+            "unlock": "Abre la caja {PH}",
             "progress": [
-                "Complete three Crypt scenarios.",
-                "Conclude {SCENARIO 52}.",
+                "Completa 3 escenarios que tengan en su nombre la palabra “Cripta”.",
+                "Desbloquea {SCENARIO 52} y sigue la cadena de aventuras hasta termianrla.",
             ]
         },
         "gh-511": {
@@ -2825,8 +2827,8 @@ export default {
             ]
         },
         "gh-513": {
-            "name": "Finding the Cure",
-            "unlock": "Open envelope X",
+            "name": "Hallar la cura",
+            "unlock": "Abre el sobre X",
             "progress": [
                 "Kill eight Forest Imps.",
                 "Conclude {SCENARIO 59}.",
@@ -2876,7 +2878,7 @@ export default {
             ]
         },
         "gh-521": {
-            "name": "Take Back the Trees",
+            "name": "Recupera los árboles",
             "progress": [
                 "Complete three scenarios in the Dagger Forest.",
                 "Conclude {SCENARIO 55}.",
@@ -2912,10 +2914,10 @@ export default {
             ]
         },
         "gh-526": {
-            "name": "Vengeance",
-            "unlock": "Open Envelope X",
+            "name": "Venganza",
+            "unlock": "Abre el sobre X",
             "progress": [
-                "Complete four scenarios in Gloomhaven.",
+                "Completa 4 escenarios en Gloomhaven.",
                 "Conclude {SCENARIO 57}.",
             ]
         },
@@ -2932,7 +2934,7 @@ export default {
             ]
         },
         "gh-529": {
-            "name": "The Fall of Man",
+            "name": "La caída del hombre",
             "progress": [
                 "Complete 2 Lingering Swamp scenarios.",
                 "Conclude {SCENARIO 61}.",
@@ -2972,7 +2974,7 @@ export default {
     },
     "characters": {
         "BR": {
-            "name": "Brute",
+            "name": "Salvaje",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Replace one {-1_WHITE} card with one {+1_WHITE} card",
@@ -2988,7 +2990,7 @@ export default {
             ]
         },
         "CH": {
-            "name": "Cragheart",
+            "name": "Corazón Hueco",
             "perks": [
                 "Remove four {+0_WHITE} cards",
                 "Replace one {-1_WHITE} card with one {+1_WHITE} card",
@@ -3003,7 +3005,7 @@ export default {
             ]
         },
         "SW": {
-            "name": "Spellweaver",
+            "name": "Tejedora de Hechizos",
             "perks": [
                 "Remove four {+0_WHITE} cards",
                 "Replace one {-1_WHITE} card with one {+1_WHITE} card",
@@ -3019,7 +3021,7 @@ export default {
             ]
         },
         "TI": {
-            "name": "Tinkerer",
+            "name": "Manitas",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Replace one {-2_WHITE} card with one {+0_WHITE} card",
@@ -3035,7 +3037,7 @@ export default {
             ]
         },
         "SC": {
-            "name": "Scoundrel",
+            "name": "Pícara",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Remove four {+0_WHITE} cards",
@@ -3051,7 +3053,7 @@ export default {
             ]
         },
         "MT": {
-            "name": "Mindthief",
+            "name": "Ladrona Mental",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Remove four {+0_WHITE} cards",
@@ -3068,7 +3070,7 @@ export default {
             ]
         },
         "DS": {
-            "name": "Doomstalker",
+            "name": "Cazador Silencioso",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Replace two {+0_WHITE} cards with two {+1_WHITE} cards",
@@ -3083,7 +3085,7 @@ export default {
             ]
         },
         "EL": {
-            "name": "Elementalist",
+            "name": "Elementalista",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Replace one {-1_WHITE} card with one {+1_WHITE} card",
@@ -3101,7 +3103,7 @@ export default {
             ]
         },
         "SB": {
-            "name": "Sawbones",
+            "name": "Matasanos",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Remove four {+0_WHITE} cards",
@@ -3115,7 +3117,7 @@ export default {
             ]
         },
         "SS": {
-            "name": "Soothsinger",
+            "name": "Melodiosa",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Remove one {-2_WHITE} card",
@@ -3132,7 +3134,7 @@ export default {
             ]
         },
         "SK": {
-            "name": "Sunkeeper",
+            "name": "Guardiana del Sol",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Remove four {+0_WHITE} cards",
@@ -3148,7 +3150,7 @@ export default {
             ]
         },
         "NS": {
-            "name": "Nightshroud",
+            "name": "Sudario Nocturno",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Remove four {+0_WHITE} cards",
@@ -3163,7 +3165,7 @@ export default {
             ]
         },
         "SU": {
-            "name": "Summoner",
+            "name": "Invocadora",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Replace one {-2_WHITE} card with one {+0_WHITE} card",
@@ -3193,7 +3195,7 @@ export default {
             ]
         },
         "QM": {
-            "name": "Quartermaster",
+            "name": "Intendente",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Remove four {+0_WHITE} cards",
@@ -3208,7 +3210,7 @@ export default {
             ]
         },
         "PH": {
-            "name": "Plagueherald",
+            "name": "Heraldo de la Plaga",
             "perks": [
                 "Replace one {-2_WHITE} card with one {+0_WHITE} card",
                 "Replace one {-1_WHITE} card with one {+1_WHITE} card",
@@ -3223,7 +3225,7 @@ export default {
             ]
         },
         "BT": {
-            "name": "Beast Tyrant",
+            "name": "Señor de las Bestias",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Replace one {-1_WHITE} card with one {+1_WHITE} card",
@@ -3236,7 +3238,7 @@ export default {
             ]
         },
         "BS": {
-            "name": "Bladeswarm",
+            "name": "Enjambre de Acero",
             "perks": [
                 "Remove one {-2_WHITE} cards",
                 "Remove four {+0_WHITE} cards",
@@ -3253,7 +3255,7 @@ export default {
             ]
         },
         "DR": {
-            "name": "Diviner",
+            "name": "Adivina",
             "perks": [
                 "Remove two {-1_WHITE} cards",
                 "Remove one {-2_WHITE} card",
