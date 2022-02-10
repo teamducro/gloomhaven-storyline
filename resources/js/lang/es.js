@@ -70,7 +70,7 @@ export default {
     "Search name or nr": "Busca nombre o número",
     "Gold": "Oro",
     "Level": "Nivel",
-    "Lvl": "Lvl",
+    "Lvl": "Nvl",
     "XP": "XP",
     "Perks": "Pericias",
     "Battle Goals": "Objetivos de batalla",
@@ -204,8 +204,8 @@ export default {
     "changelog": {
         "text": "Solo se incluyen características algo grandes, cada actualización trae correcciones de errores y mejoras a la app.!"
     },
-    "Version": "Version",
-    "Description": "Description",
+    "Version": "Versión",
+    "Description": "Descripción",
     "Release date": "Fecha de lanzamiento",
     "Received a campaign code?": "¿Recibió un código de campaña?",
     "Add Campaign": "Agregar campaña",
