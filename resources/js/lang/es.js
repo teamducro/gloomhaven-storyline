@@ -2986,7 +2986,7 @@ export default {
                 "Añade 1 carta {AGAIN} {DISARM} y 1 carta {AGAIN} {MUDDLE}",
                 "Añade 1 carta {AGAIN} AÑADIR {TARGET}",
                 "Añade 1 carta {+1_WHITE} {SHIELD}1, Personal",
-                "Ignora los efectos negativos de los objetos y Añade 1 carta {+1_WHITE}"
+                "Ignora los efectos negativos de los objetos y añade 1 carta {+1_WHITE}"
             ]
         },
         "CH": {
@@ -2994,7 +2994,7 @@ export default {
             "perks": [
                 "Retira 4 cartas {+0_WHITE}",
                 "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE}",
-                "Añade 1 carta {-2_WHITE} and two {+2_WHITE} cards",
+                "Añade 1 carta {-2_WHITE} y 2 cartas {+2_WHITE}",
                 "Añade 1 carta {+1_WHITE} {IMMOBILIZE}",
                 "Añade 1 carta {+2_WHITE} {MUDDLE}",
                 "Añade 2 cartas {AGAIN} {PUSH}2",
@@ -3057,7 +3057,7 @@ export default {
             "perks": [
                 "Retira 2 cartas {-1_WHITE}",
                 "Retira 4 cartas {+0_WHITE}",
-                "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
+                "Sustituye 2 cartas {+1_WHITE} por 2 cartas {+2_WHITE}",
                 "Sustituye 1 carta {-2_WHITE} por 1 carta {+0_WHITE}",
                 "Añade 1 carta {+2_WHITE} {ICE}",
                 "Añade 2 cartas {AGAIN} {+1_WHITE}",
@@ -3073,7 +3073,7 @@ export default {
             "name": "Cazador Silencioso",
             "perks": [
                 "Retira 2 cartas {-1_WHITE}",
-                "Replace two {+0_WHITE} cards with two {+1_WHITE} cards",
+                "Sustituye 2 cartas {+0_WHITE} por 2 cartas {+1_WHITE}",
                 "Añade 2 cartas {AGAIN} {+1_WHITE}",
                 "Añade 1 carta {+2_WHITE} {MUDDLE}",
                 "Añade 1 carta {+1_WHITE} {POISON}",
@@ -3094,8 +3094,8 @@ export default {
                 "Añade 3 cartas {+0_WHITE} {ICE}",
                 "Añade 3 cartas {+0_WHITE} {WIND}",
                 "Añade 3 cartas {+0_WHITE} {EARTH}",
-                "Replace two {+0_WHITE} card with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} card",
-                "Replace two {+0_WHITE} card with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} card",
+                "Sustituye 2 cartas {+0_WHITE} por 1 carta {+0_WHITE} {FIRE} y 1 carta {+0_WHITE} {EARTH} ",
+                "Sustituye 2 cartas {+0_WHITE} por 1 carta {+0_WHITE} {ICE} y 1 carta {+0_WHITE} {WIND}",
                 "Añade 2 cartas {+1_WHITE} {PUSH}1",
                 "Añade 1 carta {+1_WHITE} {WOUND}",
                 "Añade 1 carta {+0_WHITE} {STUN}",
@@ -3113,22 +3113,22 @@ export default {
                 "Añade 2 cartas {AGAIN} {WOUND}",
                 "Añade 1 carta {AGAIN} {STUN}",
                 "Añade 1 carta {AGAIN} {HEAL}3",
-                "Añade 1 carta {+0_WHITE} Refresh an item"
+                "Añade 1 carta {+0_WHITE} Reponer un objeto"
             ]
         },
         "SS": {
             "name": "Melodiosa",
             "perks": [
                 "Retira 2 cartas {-1_WHITE}",
-                "Remove one {-2_WHITE} card",
-                "Replace two {+1_WHITE} cards with one {+4_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {DISARM} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {WOUND} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {POISON} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
-                "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
-                "Replace one {-1_WHITE} card with one {+0_WHITE} {STUN} card",
+                "Retira 1 carta {-2_WHITE}",
+                "Sustituye 2 cartas {+1_WHITE} por 1 carta {+4_WHITE}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {IMMOBILIZE}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {DISARM}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {WOUND}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {POISON}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {CURSE}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+3_WHITE} {MUDDLE}",
+                "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {STUN}",
                 "Añade 3 cartas {AGAIN} {+1_WHITE}",
                 "Añade 2 cartas {AGAIN} {CURSE}"
             ]
@@ -3145,7 +3145,7 @@ export default {
                 "Añade 2 cartas {AGAIN} {STUN}",
                 "Añade 2 cartas {AGAIN} {LIGHT}",
                 "Añade 2 cartas {AGAIN} {SHIELD}1, Personal",
-                "Ignora los efectos negativos de los objetos y Añade 2 cartas {+1_WHITE}",
+                "Ignora los efectos negativos de los objetos y añade 2 cartas {+1_WHITE}",
                 "Ignora los efectos negativos de los escenarios"
             ]
         },
@@ -3155,7 +3155,7 @@ export default {
                 "Retira 2 cartas {-1_WHITE}",
                 "Retira 4 cartas {+0_WHITE}",
                 "Añade 1 carta {-1_WHITE} {DARK}",
-                "Replace one {-1_WHITE} {DARK} card with one {+1_WHITE} {DARK} card",
+                "Sustituye 1 carta {-1_WHITE} {DARK} por 1 carta {+1_WHITE} {DARK}",
                 "Añade 1 carta {+1_WHITE} {INVISIBLE}",
                 "Añade 3 cartas {AGAIN} {MUDDLE}",
                 "Añade 2 cartas {AGAIN} {HEAL}1",
@@ -3185,7 +3185,7 @@ export default {
                 "Retira 2 cartas {-1_WHITE}",
                 "Retira 4 cartas {+0_WHITE}",
                 "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE}",
-                "Replace one {+0_WHITE} card with one {AGAIN} {+2_WHITE} card",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {AGAIN} {+2_WHITE}",
                 "Añade 2 cartas {AGAIN} {WOUND}",
                 "Añade 1 carta {AGAIN} {STUN}",
                 "Añade 1 carta {AGAIN} {+1_WHITE} {DISARM}",
@@ -3205,7 +3205,7 @@ export default {
                 "Añade 2 cartas {AGAIN} {PIERCE}3",
                 "Añade 1 carta {AGAIN} {STUN}",
                 "Añade 1 carta {AGAIN} {TARGET}",
-                "Añade 1 carta {+0_WHITE} Refresh an item",
+                "Añade 1 carta {+0_WHITE} Reponer un objeto",
                 "Ignora los efectos negativos de los objetos y Añade 2 cartas {+1_WHITE}"
             ]
         },
@@ -3240,12 +3240,12 @@ export default {
         "BS": {
             "name": "Enjambre de Acero",
             "perks": [
-                "Remove one {-2_WHITE} cards",
+                "Retira 1 carta {-2_WHITE}",
                 "Retira 4 cartas {+0_WHITE}",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {WIND} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {EARTH} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {LIGHT} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {DARK} card",
+                "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {WIND}",
+                "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {EARTH}",
+                "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {LIGHT}",
+                "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {DARK}",
                 "Añade 2 cartas {AGAIN} {HEAL}1",
                 "Añade 1 carta {+1_WHITE} {WOUND}",
                 "Añade 1 carta {+1_WHITE} {POISON}",
@@ -3258,72 +3258,72 @@ export default {
             "name": "Adivina",
             "perks": [
                 "Retira 2 cartas {-1_WHITE}",
-                "Remove one {-2_WHITE} card",
-                "Replace two {+1_WHITE} cards with one {+3_WHITE} {SHIELD}1, Self card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1, Affect any ally card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {DARK} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT} card",
-                "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {REGENERATE}, Self card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {HEAL}2, Affect any ally card",
+                "Retira 1 carta {-2_WHITE}",
+                "Sustituye 2 cartas {+1_WHITE} por 1 carta {+3_WHITE} {SHIELD}1, Personal",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {SHIELD}1, Afecta a un aliado cualquiera",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {DARK}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {LIGHT}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+3_WHITE} {MUDDLE}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {CURSE}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {REGENERATE}, Personal",
+                "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {HEAL}2, Afecta a un aliado cualquiera",
                 "Añade 2 cartas {AGAIN} {HEAL}1, Personal",
                 "Añade 2 cartas {AGAIN} {CURSE}",
                 "Ignora los efectos negativos de los escenarios y añade 2 cartas {+1_WHITE}"
             ]
         },
         "RG": {
-            "name": "Red Guard",
+            "name": "Guardia Rojo",
             "perks": [
                 "Retira 4 cartas {+0_WHITE}",
                 "Retira 2 cartas {-1_WHITE}",
-                "Remove one {-2_WHITE} card and one {+1_WHITE} card",
+                "Retira 1 carta {-2_WHITE} y 1 carta {+1_WHITE}",
                 "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE}",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {LIGHT} card",
+                "Sustituye 1 carta {+1_WHITE} por 1 carta {+2_WHITE} {FIRE}",
+                "Sustituye 1 carta {+1_WHITE} por 1 carta {+2_WHITE} {LIGHT}",
                 "Añade 1 carta {+1_WHITE} {FIRE_LIGHT}",
                 "Añade 1 carta {+1_WHITE} {SHIELD} 1",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card"
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {IMMOBILIZE}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {WOUND}"
             ]
         },
         "DM": {
-            "name": "Demolitionist",
+            "name": "Demoledora",
             "perks": [
                 "Retira 4 cartas {+0_WHITE}",
                 "Retira 2 cartas {-1_WHITE}",
-                "Remove one {-2_WHITE} card and one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
-                "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card",
+                "Retira 1 carta {-2_WHITE} y 1 carta {+1_WHITE}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {MUDDLE}",
+                "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {POISON}",
                 "Añade 1 carta {+2_WHITE}",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {EARTH} card",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
-                "Añade 1 carta {+0_WHITE} All adjacent enemies suffer 1 damage"
+                "Sustituye 1 carta {+1_WHITE} por 1 carta {+2_WHITE} {EARTH}",
+                "Sustituye 1 carta {+1_WHITE} por 1 carta {+2_WHITE} {FIRE}",
+                "Añade 1 carta {+0_WHITE} Todos los enemigos adyacentes sufren 1 daño"
             ]
         },
         "HT": {
-            "name": "Hatchet",
+            "name": "Ejecutor",
             "perks": [
                 "Retira 2 cartas {-1_WHITE}",
-                "Remove one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {POISON} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {WOUND} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {PUSH}2 card",
-                "Remove one {+0_WHITE} card with one {+0_WHITE} {STUN} card",
-                "Remove one {+1_WHITE} card with one {+1_WHITE} {STUN} card",
+                "Retira 1 carta {+0_WHITE} y 1 carta {+2_WHITE} {MUDDLE}",
+                "Retira 1 carta {+0_WHITE} y 1 carta {+1_WHITE} {POISON}",
+                "Retira 1 carta {+0_WHITE} y 1 carta {+1_WHITE} {WOUND}",
+                "Retira 1 carta {+0_WHITE} y 1 carta {+1_WHITE} {IMMOBILIZE}",
+                "Retira 1 carta {+0_WHITE} y 1 carta {+1_WHITE} {PUSH}2",
+                "Retira 1 carta {+0_WHITE} y 1 carta {+0_WHITE} {STUN}",
+                "Retira 1 carta {+1_WHITE} y 1 carta {+1_WHITE} {STUN}",
                 "Añade 1 carta {+2_WHITE} {WIND}",
-                "Replace one {+1_WHITE} with one {+3_WHITE} card"
+                "Sustituye 1 carta {+1_WHITE} por 1 carta {+3_WHITE}"
             ]
         },
         "VW": {
-            "name": "Voidwarden",
+            "name": "Guardián del Vacío",
             "perks": [
                 "Retira 2 cartas {-1_WHITE}",
-                "Remove one {-2_WHITE} card",
-                "Replace one {+0_WHITE} with one {+1_WHITE} {DARK} card",
-                "Replace one {+0_WHITE} with one {+1_WHITE} {ICE} card",
-                "Replace one {-1_WHITE} with one {+0_WHITE} {HEAL}1 (Ally) card",
+                "Retira 1 carta {-2_WHITE}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {DARK}",
+                "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {ICE}",
+                "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {HEAL}1 (Ally)",
                 "Añade 1 carta {+1_WHITE} {HEAL}1 (Ally)",
                 "Añade 1 carta {+1_WHITE} {POISON}",
                 "Añade 1 carta {+3_WHITE}",
