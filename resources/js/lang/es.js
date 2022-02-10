@@ -307,6 +307,7 @@ export default {
     "Hidden Scenario": "Escenario Oculto",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
+    "Level up when youre back in town": "¡Sube de nivel cuando vuelvas a la ciudad!",
     "scenarios": {
         "gh-1": {
             "name": "Túmulo Negro"
