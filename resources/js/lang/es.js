@@ -75,6 +75,7 @@ export default {
     "Perks": "Pericias",
     "Battle Goals": "Objetivos de batalla",
     "You may select an additional perk!": "¡Puedes seleccionar una pericia adicional!",
+    "Level up when you're back in town!": "¡Sube de nivel cuando vuelvas a la ciudad!",
     "Number or Name": "Número o Nombre",
     "No items available": "No hay objetos disponibles",
     "Buy me a Beer": "¡Invítame a una cerveza!",
@@ -363,14 +364,14 @@ export default {
                 "15 de oro para cada personaje",
                 "-2 de reputación",
                 "+2 de prosperidad",
-                "Diseño “Hacha rompecráneos” (Objeto 113)"
+                "Diseño “Hacha Rompecráneos” (Objeto 113)"
             ]
         },
         "gh-12": {
             "name": "Plaza de Gloomhaven B",
             "rewards": [
                 "+4 de reputación",
-                "Diseño “Hacha rompecráneos” (Objeto 113)"
+                "Diseño “Hacha Rompecráneos” (Objeto 113)"
             ]
         },
         "gh-13": {
@@ -2641,7 +2642,7 @@ export default {
             "name": "Diseño de objeto aleatorio"
         },
         "gh-60": {
-            "name": "Obtén “Hacha rompecráneos” (Objeto 113)"
+            "name": "Obtén “Hacha Rompecráneos” (Objeto 113)"
         },
         "gh-61": {
             "name": "Obtén “Daga versátil” (Objeto 040)"
@@ -2813,104 +2814,104 @@ export default {
         "gh-511": {
             "name": "Merchant Class",
             "progress": [
-                "Own two {BODY} items.",
-                "Own two {HEAD} items.",
-                "Own two {LEGS} items.",
-                "Own three {ONE-HAND} or {TWO-HANDS} items.",
-                "Own four {SMALL-ITEM} items.",
+                "Posee 2 objetos {BODY}.",
+                "Posee 2 objetos {HEAD}.",
+                "Posee 2 objetos {LEGS}.",
+                "Posee 3 objetos {ONE-HAND} o {TWO-HANDS}.",
+                "Posee 4 objetos {SMALL-ITEM}.",
             ]
         },
         "gh-512": {
             "name": "Greed is Good",
             "progress": [
-                "Have 200 gold in your possession.",
+                "Ten 200 de oro en tu poder.",
             ]
         },
         "gh-513": {
             "name": "Hallar la cura",
             "unlock": "Abre el sobre X",
             "progress": [
-                "Kill eight Forest Imps.",
-                "Conclude {SCENARIO 59}.",
+                "Mata 8 Duendes del Bosque.",
+                "Desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta termianrla.",
             ]
         },
         "gh-514": {
             "name": "A Study of Anatomy",
             "progress": [
-                "Experience your party members becoming exhausted fifteen times.",
+                "Presencia que los miembros de su grupo se agotan 15 veces.",
             ]
         },
         "gh-515": {
             "name": "Law Bringer",
             "progress": [
-                "Kill twenty Bandits or Cultists.",
+                "Mata 20 Bandidos o Sectarios. ",
             ]
         },
         "gh-516": {
             "name": "Pounds of Flesh",
             "progress": [
-                "Kill fifteen Vermlings.",
+                "Mata 15 Infectores.",
             ]
         },
         "gh-517": {
             "name": "Trophy Hunt",
             "progress": [
-                "Kill twenty different types of monsters.",
+                "Mata 20 tipos diferentes de monstruos.",
             ]
         },
         "gh-518": {
             "name": "Eternal Wanderer",
             "progress": [
-                "Complete fifteen different scenarios.",
+                "Completa 15 escenarios diferentes.",
             ]
         },
         "gh-519": {
             "name": "Battle Legend",
             "progress": [
-                "Earn fifteen ✔ from completed battle goals.",
+                "Gana 15 ✔ completando objetivos de batalla.",
             ]
         },
         "gh-520": {
             "name": "Implement of Light",
             "progress": [
-                "Find the Skullbane Axe in the Necromancer's Sanctum.",
-                "Use it to kill seven Living Bones, Living Corpses, or Living Spirits.",
+                "Encuentra el Hacha Rompecráneos en el Santuario de la Nigromante.",
+                "Úsala para matar 7 Huesos Vivientes, Cadáver Viviente o Espíritu Viviente.",
             ]
         },
         "gh-521": {
             "name": "Recupera los árboles",
             "progress": [
-                "Complete three scenarios in the Dagger Forest.",
-                "Conclude {SCENARIO 55}.",
+                "Completa 3 escenarios en el Bosque de la Dagas.",
+                "Desbloquea {SCENARIO 55} y sigue la cadena de aventuras hasta termianrla.",
             ]
         },
         "gh-522": {
             "name": "The Thin Places",
             "progress": [
-                "Complete six side scenarios.",
+                "Completa 6 escenarios secundarios.",
             ]
         },
         "gh-523": {
             "name": "Aberrant Slayer",
             "progress": [
-                "Kill one Flame Demon.",
-                "Kill one Frost Demon.",
-                "Kill one Wind Demon.",
-                "Kill one Earth Demon.",
-                "Kill one Night Demon.",
-                "Kill one Sun Demon.",
+                "Mata 1 Demonio de Fuego.",
+                "Mata 1 Demonio de Hielo.",
+                "Mata 1 Demonio de Viento.",
+                "Mata 1 Demonio de Tierra.",
+                "Mata 1 Demonio de Noche.",
+                "Mata 1 Demonio de Sol.",
             ]
         },
         "gh-524": {
             "name": "Fearless Stand",
             "progress": [
-                "Kill twenty elite monsters.",
+                "Mata 20 monstruos de élite.",
             ]
         },
         "gh-525": {
             "name": "Piety in All Things",
             "progress": [
-                "Donate 120 gold to the Sanctuary of the Great Oak.",
+                "Dona 120 de oro al Santuario del Gran Roble.",
             ]
         },
         "gh-526": {
@@ -2918,57 +2919,57 @@ export default {
             "unlock": "Abre el sobre X",
             "progress": [
                 "Completa 4 escenarios en Gloomhaven.",
-                "Conclude {SCENARIO 57}.",
+                "Desbloquea {SCENARIO 57} y sigue la cadena de aventuras hasta termianrla.",
             ]
         },
         "gh-527": {
             "name": "Zealot of the Blood God",
             "progress": [
-                "Become exhausted twelve times.",
+                "Agotarse 12 veces.",
             ]
         },
         "gh-528": {
             "name": "Goliath Toppler",
             "progress": [
-                "Complete four boss scenarios",
+                "Completa 4 escenarios de jefe",
             ]
         },
         "gh-529": {
             "name": "La caída del hombre",
             "progress": [
-                "Complete 2 Lingering Swamp scenarios.",
-                "Conclude {SCENARIO 61}.",
+                "Completa 2 escenarios en Pantano Perenne.",
+                "Desbloquea {SCENARIO 61} y sigue la cadena de aventuras hasta termianrla.",
             ]
         },
         "gh-530": {
             "name": "Augmented Abilities",
             "progress": [
-                "Purchase four enhancements.",
+                "Compra 4 mejoras.",
             ]
         },
         "gh-531": {
             "name": "Elemental Samples",
             "progress": [
-                "Complete a scenario in Gloomhaven.",
-                "Complete a scenario in Dagger Forest.",
-                "Complete a scenario in Lingering Swamp",
-                "Complete a scenario in Watcher Mountains",
-                "Complete a scenario in Copperneck Mountains",
-                "Complete a scenario in Misty Sea.",
+                "Completa 1 escenario en Gloomhaven.",
+                "Completa 1 escenario en el Bosque de las Dagas.",
+                "Completa 1 escenario en Pantano Perenne",
+                "Completa 1 escenario en Montañas Guardianas",
+                "Completa 1 escenario en Montañas Cobrizas",
+                "Completa 1 escenario en Mar Brumoso.",
             ]
         },
         "gh-532": {
             "name": "A Helping Hand",
             "progress": [
-                "Experience two other characters achieving their personal quests.",
+                "Presencia a otros 2 personajes logrando sus misiones personales.",
             ]
         },
         "gh-533": {
             "name": "The Perfect Poison",
             "progress": [
-                "Kill three Oozes.",
-                "Kill three Lurkers.",
-                "Kill three Spitting Drakes.",
+                "Mata 3 Cieno.",
+                "Mata 3 Acechador.",
+                "Mata 3 Draco Escupidor.",
             ]
         }
     },
