@@ -126,6 +126,19 @@
                         ></notes>
                     </div>
 
+                    <div class="mt-8">
+                        <div class="mb-2 flex items-center">
+                            <h2>{{ $t('Retirement counter') }}</h2>
+                            <rollback v-show="!loading" ref="level-rollback"
+                                      :value.sync="character.retirements"></rollback>
+                        </div>
+                        <number-field :value.sync="character.retirements" :min="0" :max="20"
+                                      id="retirements" @change="store"></number-field>
+                        <p class="text-sm">
+                            {{ $t('Set this counter to the amount of characters your have retired.') }}
+                        </p>
+                    </div>
+
                     <div class="my-8">
                         <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
                                 class="mr-4 mdc-button mdc-button--raised">
