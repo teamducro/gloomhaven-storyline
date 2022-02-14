@@ -2808,108 +2808,125 @@ export default {
             "unlock": "Abre la caja {PH}",
             "progress": [
                 "Completa 3 escenarios que tengan en su nombre la palabra “Cripta”.",
-                "Desbloquea {SCENARIO 52} y sigue la cadena de aventuras hasta termianrla.",
+                "Después, desbloquea {SCENARIO 52} y sigue la cadena de aventuras hasta termianrla.",
             ]
         },
         "gh-511": {
-            "name": "Merchant Class",
+            "name": "Clase comerciante",
+            "unlock": "Abre la caja {QM}",
             "progress": [
-                "Posee 2 objetos {BODY}.",
-                "Posee 2 objetos {HEAD}.",
-                "Posee 2 objetos {LEGS}.",
-                "Posee 3 objetos {ONE-HAND} o {TWO-HANDS}.",
-                "Posee 4 objetos {SMALL-ITEM}.",
+                "Ten en propiedad:",
+                "2 objetos {HEAD},",
+                "2 objetos {BODY},",
+                "2 objetos {LEGS},",
+                "3 objetos {ONE-HAND} o {TWO-HANDS} y",
+                "4 objetos {SMALL-ITEM}.",
             ]
         },
         "gh-512": {
-            "name": "Greed is Good",
+            "name": "La codicia es buena",
+            "unlock": "Abre la caja {QM}",
             "progress": [
-                "Ten 200 de oro en tu poder.",
+                "Acumula 200 de oro.",
             ]
         },
         "gh-513": {
             "name": "Hallar la cura",
             "unlock": "Abre el sobre X",
             "progress": [
-                "Mata 8 Duendes del Bosque.",
-                "Desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta termianrla.",
+                "Mata a 8 Duendes del Bosque.",
+                "A continuación, desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta termianrla.",
             ]
         },
         "gh-514": {
             "name": "A Study of Anatomy",
+            "unlock": "Abre la caja {}",
             "progress": [
                 "Presencia que los miembros de su grupo se agotan 15 veces.",
             ]
         },
         "gh-515": {
             "name": "Law Bringer",
+            "unlock": "Abre la caja {}",
             "progress": [
-                "Mata 20 Bandidos o Sectarios. ",
+                "Mata a 20 Bandidos o Sectarios. ",
             ]
         },
         "gh-516": {
             "name": "Pounds of Flesh",
+            "unlock": "Abre la caja {}",
             "progress": [
-                "Mata 15 Infectores.",
+                "Mata a 15 Infectores.",
             ]
         },
         "gh-517": {
-            "name": "Trophy Hunt",
+            "name": "Trofeo de caza",
+            "unlock": "Abre la caja {BT}",
             "progress": [
-                "Mata 20 tipos diferentes de monstruos.",
+                "Mata a 20 tipos de monstruos distintos.",
             ]
         },
         "gh-518": {
-            "name": "Eternal Wanderer",
+            "name": "Eterno viajero",
+            "unlock": "Abre la caja {SU}",
             "progress": [
-                "Completa 15 escenarios diferentes.",
+                "Completa 15 escenarios distintos.",
             ]
         },
         "gh-519": {
-            "name": "Battle Legend",
+            "name": "Leyenda de las batallas",
+            "unlock": "Abre la caja {SS}",
             "progress": [
-                "Gana 15 ✔ completando objetivos de batalla.",
+                "Obtén 15 ✔ por objetivos de batalla completados.",
             ]
         },
         "gh-520": {
-            "name": "Implement of Light",
+            "name": "Instrumento de la luz",
+            "unlock": "Abre la caja {SK}",
             "progress": [
                 "Encuentra el Hacha Rompecráneos en el Santuario de la Nigromante.",
-                "Úsala para matar 7 Huesos Vivientes, Cadáver Viviente o Espíritu Viviente.",
+                "Úsala para matar 7 Huesos Vivientes, Cadáveres Vivientes o Espíritus Vivientes.",
             ]
         },
         "gh-521": {
             "name": "Recupera los árboles",
+            "unlock": "Abre la caja {DS}",
             "progress": [
                 "Completa 3 escenarios en el Bosque de la Dagas.",
-                "Desbloquea {SCENARIO 55} y sigue la cadena de aventuras hasta termianrla.",
+                "Después, desbloquea {SCENARIO 55} y sigue la cadena de aventuras hasta termianrla.",
             ]
         },
         "gh-522": {
-            "name": "The Thin Places",
+            "name": "Lugares enrarecidos",
+            "unlock": "Abre la caja {NS}",
             "progress": [
-                "Completa 6 escenarios secundarios.",
+                "Completa 6 escenarios secundarios",
+                "(aquellos con un números superior a 51).",
             ]
         },
         "gh-523": {
-            "name": "Aberrant Slayer",
+            "name": "Cazador de aberraciones",
+            "unlock": "Abre la caja {EL}",
             "progress": [
-                "Mata 1 Demonio de Fuego.",
-                "Mata 1 Demonio de Hielo.",
-                "Mata 1 Demonio de Viento.",
-                "Mata 1 Demonio de Tierra.",
-                "Mata 1 Demonio de Noche.",
-                "Mata 1 Demonio de Sol.",
+                "Mata a:",
+                "1 Demonio de Fuego,",
+                "1 Demonio de Hielo,",
+                "1 Demonio de Viento,",
+                "1 Demonio de Tierra,",
+                "1 Demonio de Noche y",
+                "1 Demonio de Sol.",
             ]
         },
         "gh-524": {
-            "name": "Fearless Stand",
+            "name": "Actitud intrépida",
+            "unlock": "Abre la caja {BT}",
             "progress": [
-                "Mata 20 monstruos de élite.",
+                "Mata a 20 monstruos de élite.",
             ]
         },
         "gh-525": {
-            "name": "Piety in All Things",
+            "name": "Devoción por todas las cosas",
+            "unlock": "Abre la caja {SB}",
             "progress": [
                 "Dona 120 de oro al Santuario del Gran Roble.",
             ]
@@ -2919,57 +2936,67 @@ export default {
             "unlock": "Abre el sobre X",
             "progress": [
                 "Completa 4 escenarios en Gloomhaven.",
-                "Desbloquea {SCENARIO 57} y sigue la cadena de aventuras hasta termianrla.",
+                "A continuación, desbloquea {SCENARIO 57} y sigue la cadena de aventuras hasta terminarla.",
             ]
         },
         "gh-527": {
-            "name": "Zealot of the Blood God",
+            "name": "Fanático del dios de la sangre",
+            "unlock": "Abre la caja {BE}",
             "progress": [
-                "Agotarse 12 veces.",
+                "Que tu personaje quede agotado 12 veces.",
             ]
         },
         "gh-528": {
-            "name": "Goliath Toppler",
+            "name": "Vencedor de Goliat",
+            "unlock": "Abre la caja {DS}",
             "progress": [
-                "Completa 4 escenarios de jefe",
+                "Completa 4 escenarios con jefes.",
             ]
         },
         "gh-529": {
             "name": "La caída del hombre",
+            "unlock": "Abre la caja {NS}",
             "progress": [
-                "Completa 2 escenarios en Pantano Perenne.",
-                "Desbloquea {SCENARIO 61} y sigue la cadena de aventuras hasta termianrla.",
+                "Completa 2 escenarios en el Pantano Perenne.",
+                "A continuación, desbloquea {SCENARIO 61} y sigue la cadena de aventuras hasta termianrla.",
             ]
         },
         "gh-530": {
-            "name": "Augmented Abilities",
+            "name": "Capacidades aumentadas",
+            "unlock": "Abre la caja {SU}",
             "progress": [
-                "Compra 4 mejoras.",
+                "Adquiere 4 mejoras",
+                "(Requiere el logro global “El poder de la mejora”).",
             ]
         },
         "gh-531": {
-            "name": "Elemental Samples",
+            "name": "Muestras elementales",
+            "unlock": "Abre la caja {EL}",
             "progress": [
-                "Completa 1 escenario en Gloomhaven.",
-                "Completa 1 escenario en el Bosque de las Dagas.",
-                "Completa 1 escenario en Pantano Perenne",
-                "Completa 1 escenario en Montañas Guardianas",
-                "Completa 1 escenario en Montañas Cobrizas",
-                "Completa 1 escenario en Mar Brumoso.",
+                "Completa 1 escenario en cada una de las siguientes zonas:",
+                "Gloomhaven,",
+                "Bosque de las Dagas,",
+                "Pantano Perenne,",
+                "Montañas Guardianas,",
+                "Montañas Cobrizas y",
+                "Mar Brumoso.",
             ]
         },
         "gh-532": {
-            "name": "A Helping Hand",
+            "name": "Una mano amiga",
+            "unlock": "Abre la caja {SS}",
             "progress": [
-                "Presencia a otros 2 personajes logrando sus misiones personales.",
+                "Sé testigo de cómo otros 2 personajes cumplen sus misiones personales.",
             ]
         },
         "gh-533": {
-            "name": "The Perfect Poison",
+            "name": "El veneno perfecto",
+            "unlock": "Abre la caja {PH}",
             "progress": [
-                "Mata 3 Cieno.",
-                "Mata 3 Acechador.",
-                "Mata 3 Draco Escupidor.",
+                "Mata a:",
+                "3 Cienos,",
+                "3 Acechadores y",
+                "3 Dracos Escupidores.",
             ]
         }
     },
