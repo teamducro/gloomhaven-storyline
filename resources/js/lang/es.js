@@ -2837,26 +2837,26 @@ export default {
             "unlock": "Abre el sobre X",
             "progress": [
                 "Mata a 8 Duendes del Bosque.",
-                "A continuación, desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta termianrla.",
+                "Después, desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta termianrla.",
             ]
         },
         "gh-514": {
-            "name": "A Study of Anatomy",
-            "unlock": "Abre la caja {}",
+            "name": "Estudios de anatomía",
+            "unlock": "Abre la caja {SB}",
             "progress": [
-                "Presencia que los miembros de su grupo se agotan 15 veces.",
+                "Sé testigo de 15 agotamientos de miembros de tu equipo.",
             ]
         },
         "gh-515": {
-            "name": "Law Bringer",
-            "unlock": "Abre la caja {}",
+            "name": "Defensor de la ley",
+            "unlock": "Abre la caja {SK}",
             "progress": [
                 "Mata a 20 Bandidos o Sectarios. ",
             ]
         },
         "gh-516": {
-            "name": "Pounds of Flesh",
-            "unlock": "Abre la caja {}",
+            "name": "Tributo de sangre",
+            "unlock": "Abre la caja {BE}",
             "progress": [
                 "Mata a 15 Infectores.",
             ]
