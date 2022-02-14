@@ -112,6 +112,8 @@ export default {
     "Not unlocked": "Sin desbloquear",
     "Locked": "Bloqueado",
     "Retire": "Retira",
+    "Retirement counter": "Contador de PJ retirados",
+    "Set this counter to the amount of characters your have retired. ": "Fija el contador en la cantidad de personajes que has retirado.",
     "Retired": "Retirado",
     "Remove": "Eliminar",
     "Unlocked": "Desbloqueado",
