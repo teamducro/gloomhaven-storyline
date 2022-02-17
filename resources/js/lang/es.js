@@ -3871,6 +3871,39 @@ export default {
                 "1": "{1}{2}",
                 "2": "{1}{2}{3}"
             }
+         },
+        "72": {
+            "name": "El trato del Concejal",
+            "sections": {
+                "1": "El bibliotecario Dominic, quiere entrar en el desarrollo de Gloomhaven y este enfrentamiento entre los comerciantes y los militares de la ciudad. Pide tu ayuda para obtener el respaldo de un poderoso comerciante para mantenerlo a salvo. Puede que tengas más suerte con el concejal Greymare.",
+                "2": "El concejal Greymare te pidió que neutralizaras la situación en su finca de Soto Cadáver. No estais seguros de que esta tierra vuelva a producir cultivos, pero neutralizásteis la amenaza. Esperáis que eso sea suficiente para que Greymare cumpla su parte del trato."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "73": {
+            "name": "Encuentra la historia del etérido",
+            "sections": {
+                "1": "Dominic descubrió que hay un registro escrito de la historia del etérido. Está en el Códice de Directivas. Se entregó una copia a Gloomhaven. Aparentemente, la caravana que lo llevaba fue atacada por un grupo de Inox cerca del extremo sur del Bosque de las Dagas. Dominic se enteró de la ubicación del campamento Inox por un guardia excapó, el libro aún puede estar ahí.",
+                "2": "Con los Inox muertos, examináis la cueva y encontráis un libro de gran tamaño deteriorado aunque aún se puede leer. Dominic se muestra contento y agradecido por encontrar el Códice y comenzará a estudiarlo inmediatamente."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "77": {
+            "name": "Infiltraros en La Vigilia",
+            "sections": {
+                "1": "El trabajo de Dominic ha sido destruido en su mayor parte por La Vigilia, quienes también confiscaron el Códice y su libro. Después de investigar, descubre que La Vigilia es un grupo de estafadores de cráneos pro militares que ocultan cualquier evidencia de la Agitación a todos los demás. Dominic te entregó un mapa del Distrito de Viajeros donde operan. Os pide recuperar el Códice y su libro.",
+                "2": "Al buscar en las bibliotecas de la cripta, encontráis el Códice y el libro de Dominic. Encuentras muchos otros textos en las estanterias: “Gólems y constructos”, El Algox del norte”, etc. Sin embargo, no hay tiempo para analizarlo todo."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
         }
     },
     "quest-fc": {
@@ -4151,7 +4184,7 @@ export default {
             "1": "All characters escaped",
             "2": "???",
             "title": "Escape from The Husk",
-            "text": "Did all characters escaped through an exit?"
+            "text": "Did all characters escape through an exit?"
         }
     }
 }
