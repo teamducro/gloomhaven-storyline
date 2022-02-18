@@ -44,7 +44,7 @@
                 <h1>{{ $t('Global') }} {{ $t('Achievements') }}</h1>
             </div>
             <div class="w-full flex justify-center">
-                <ul v-if="achievements" id="global-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
+                <ul v-if="achievements" id="global-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="global-list">
                     <li v-for="achievement in achievements.items"
                         v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
@@ -65,7 +65,7 @@
                 <h1>{{ $t('Party') }} {{ $t('Achievements') }}</h1>
             </div>
             <div class="w-full flex justify-center">
-                <ul v-if="achievements" id="party-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
+                <ul v-if="achievements" id="party-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="party-list">
                     <li v-for="achievement in achievements.items"
                         v-if="achievement.isParty() && achievement.awarded"
