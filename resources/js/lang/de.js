@@ -112,6 +112,8 @@ export default {
     "Locked": "Versperrt",
     "Retire": "in Ruhestand schicken",
     "Retired": "in Ruhestand geschickt",
+    "Retirement counter": "Retirement counter",
+    "Set this counter to the amount of characters your have retired": "Set this counter to the amount of characters your have retired.",
     "Remove": "Löschen",
     "Unlocked": "Unlocked",
     "Clear all": "Alles löschen",
@@ -240,6 +242,7 @@ export default {
     "Nr": "Nr",
     "Slot": "Slot",
     "Cost": "Kosten",
+    "Avail": "Verfügbar",
     "Use": "Nutzung",
     "Effect": "Effekt",
     "Shield": "Schild",
@@ -295,7 +298,7 @@ export default {
     "Dagger Forest": "Dolchwald",
     "Lingering Swamp": "Siechensumpf",
     "Watcher Mountains": "Wächtergebirge",
-    "Copperneck Mountains": "Kupferkamm",
+    "Copperneck Mountains": "Kupferkammgebirge",
     "Misty Sea": "Nebelmeer",
     "Crypt": "Krypta",
     "East Continent": "Östlicher Kontinent",
@@ -3573,8 +3576,8 @@ export default {
             "name": "Der Herzenswunsch",
             "sections": {
                 "1": "Einige eurer Kontakte im Heiligtum der Großen Eiche wissen von einem Tempel, der einer unsichtbaren Kraft gewidmet ist, die jede Frage beantworten wird, die man ihr stellt. Das ist die Gelegenheit für euch, euch euren Herzenswunsch zu erfüllen.",
-                "2": "Als ihr schließlich den Tempel erreicht hattet, vernahmt ihr eine Stimme:\"Ich kann um diese Zeit keine Besucher empfangen.\" Bevor ihr etwas erwidern konntet, materialisierte sich eine Gruppe von Steinkonstrukten vor euch. Aber ihr wolltet auf keinen Fall mit leeren Händen den Rückweg antreten. Nachdem ihr mit den Monstern fertig wart, bot euch die Stimme als Belohnung entweder große Macht, großen Reichtum oder aber einen Hinweis über den Aufenthaltsort der Nekormantin an.",
-                "3": "Große Macht war eure offensichtliche Wahl. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein im Kupferkamm, der eine Quelle großer Macht enthält.",
+                "2": "Als ihr schließlich den Tempel erreicht hattet, vernahmt ihr eine Stimme:\"Ich kann um diese Zeit keine Besucher empfangen.\" Bevor ihr etwas erwidern konntet, materialisierte sich eine Gruppe von Steinkonstrukten vor euch. Aber ihr wolltet auf keinen Fall mit leeren Händen den Rückweg antreten. Nachdem ihr mit den Monstern fertig wart, bot euch die Stimme entweder große Macht, großen Reichtum oder aber Aufschlüsse über den Aufenthaltsort der Nekormantin an.",
+                "3": "Große Macht war eure offensichtliche Wahl. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein im Kupferkammgebirge, der eine Quelle großer Macht enthält.",
                 "4": "Was für eine Art von Söldnern wärt ihr, wenn ihr nicht nach Reichtum und Bezahlung trachten würdet? Großer Reichtum war daher eure offensichtliche Wahl. Die Stimme erzählte euch von einer verlorenen Insel im Nebelmeer, die längst vergessene Schätze enthält.",
                 "5": "Macht und Reichtum bedeuten euch nichts, solange Jekserah noch am Leben ist. Ihr besteht darauf, dass die Stimme euch den Aufenthaltsort der ruchlosen Valrath verrät. Sie erzählte euch von einem Heiligtum, das in den Tiefen des Leichenwaldes versteckt ist."
             },
@@ -3588,8 +3591,8 @@ export default {
         "13": {
             "name": "Die Zauberin",
             "sections": {
-                "1": "Ihr habt Geschichten über eine Aesther-Zauberin in Gloomhaven gehört, die euch vielleicht bei euren Bemühungen helfen kann. Allerdings ist sie dafür bekannt, dass sie unmögliche Aufgaben im Austausch für einen Gefallen stellt. Unmöglich oder nicht, ihr braucht ihre Hilfe.",
-                "2": "Nach Berichten über eine Aesther-Zauberin im Kesselviertel habt ihr sie in einer verlassenen und heruntergekommenen Taverne gefunden: dem Krummknochen. Der Name der Aestherin ist Hail und sie schien ein wenig exzentrisch zu sein... vielleicht sogar ein wenig verrückt. Nach einigem Zögern willigte sie ein euch zu helfen, wenn ihr eine Kugel aus der Gefrorenen Höhle im Kupferkamm holen könntet. Die Kreaturen in der Höhle waren nicht gerade erfreut euch zu sehen, aber ihr machtet kurzen Prozess mit dieser Gefahr. Als der letzte Gegner tot war, nähertet ihr euch dem hinteren Teil der Kammer, wo eine kleine blaue Kugel über dem Boden schwebte. Ihr nahmt sie an euch und begabt euch auf den Weg zurück zum Krummknochen. Hail schien ziemlich verliebt in das Objekt zu sein und vielleicht ein wenig leichtsinnig darüber, wie gefährlich dieses Objekt war, das ihr mit euren bloßen Händen gehalten hattet. Hail verschwand mit der Kugel. Nach gefühlten Stunden des Wartens kehrte sie zurück und fragte beiläufig, ob sie an euch ein Experiment durchdürfen dürfe. Ihr seid ein wenig verblüfft, aber sie versichert euch, dass es sicher ist. Für eine große Menge Gold kann sie nun einige eurer Fähigkeiten verbessern. Was noch wichtiger ist: Sie ist auch bereit, euch einige weitere Gefallen zu tun."
+                "1": "Ihr habt Geschichten über eine Aesther-Zauberin in Gloomhaven gehört, die euch vielleicht bei euren Bemühungen helfen kann. Allerdings ist sie dafür bekannt, dass sie unmögliche Aufgaben im Austausch für Gefallen stellt. Unmöglich oder nicht, ihr braucht ihre Hilfe.",
+                "2": "Nach Berichten über eine Aesther-Zauberin im Kesselviertel habt ihr sie in einer verlassenen und heruntergekommenen Taverne gefunden: dem Krummknochen. Der Name der Aestherin ist Hail und sie schien ein wenig exzentrisch zu sein... vielleicht sogar ein wenig verrückt. Nach einigem Zögern willigte sie ein euch zu helfen, wenn ihr eine Kugel aus der Gefrorenen Höhle im Kupferkammgebirge holen könntet. Die Kreaturen in der Höhle waren nicht gerade erfreut euch zu sehen, aber ihr machtet kurzen Prozess mit dieser Gefahr. Als der letzte Gegner tot war, nähertet ihr euch dem hinteren Teil der Kammer, wo eine kleine blaue Kugel über dem Boden schwebte. Ihr nahmt sie an euch und begabt euch auf den Weg zurück zum Krummknochen. Hail schien ziemlich verliebt in das Objekt zu sein und vielleicht ein wenig leichtsinnig darüber, wie gefährlich dieses Objekt war, das ihr mit euren bloßen Händen gehalten hattet. Hail verschwand mit der Kugel. Nach gefühlten Stunden des Wartens kehrte sie zurück und fragte beiläufig, ob sie an euch ein Experiment durchdürfen dürfe. Ihr seid ein wenig verblüfft, aber sie versichert euch, dass es sicher ist. Für eine große Menge Gold kann sie nun einige eurer Fähigkeiten verbessern. Was noch wichtiger ist: Sie ist auch bereit, euch einige weitere Gefallen zu tun."
             },
             "stages": {
                 "0": "{1}",
@@ -3610,8 +3613,8 @@ export default {
         "15": {
             "name": "Es leben die Drachen",
             "sections": {
-                "1": "Ihr habt Berichte über große fliegende Kreaturen im Kupferkamm gehört. Könnte es sich dabei wirklich um Drachen handeln? Drachen könnten eine Bedrohung für die Stadt darstellen. Daher beschließt ihr, dieser Sache auf den Grund zu gehen.",
-                "2": "Euer Ziel ist der Icecrag, der höchste Berg im Kupferkamm. Auf eurem Weg wurdet ihr von einer Gruppe Inox und Dämonen überfallen. Ihr wart höchst verwundert über ein solches Bündnis, aber ihr ließt euch dadurch nicht von eurem Weg zu eurem Ziel abbringen.",
+                "1": "Ihr habt Berichte über große fliegende Kreaturen im Kupferkammgebirge gehört. Könnte es sich dabei wirklich um Drachen handeln? Drachen könnten eine Bedrohung für die Stadt darstellen. Daher beschließt ihr, dieser Sache auf den Grund zu gehen.",
+                "2": "Euer Ziel ist der Icecrag, der höchste Berg im Kupferkammgebirge. Auf eurem Weg wurdet ihr von einer Gruppe Inox und Dämonen überfallen. Ihr wart höchst verwundert über ein solches Bündnis, aber ihr ließt euch dadurch nicht von eurem Weg zu eurem Ziel abbringen.",
                 "3": "Der Aufstieg auf den Icecrag war zermürbend und beschwerlich. Ihr musstet euch gegen die Kälte, Wölfe und hungrige Draken erwehren. Aber ihr seid der Sache mit den Drachen auf den Grund gekommen. Auf dem Gipfel befand sich eine gigantische, sprechende Echse. Sie sprach mit einer harschen Stimme, die euch mit ihrer Eloquenz überraschte. \"Eine Gruppe von Savvas hat mich im Schlaf überrascht und mir eine meiner Flammendrüsen entfernt, vermutlich um sie zu studieren. Ich kann diese Beleidigung nicht ungestraft lassen und würde es sehr zu schätzen wissen, wenn ihr sie aus der Stadt zurückholt und dabei so viele von ihnen tötet, wie ihr könnt....oder, wenn ihr dem Klischee entsprechen wollt, könnt ihr mich einfach angreifen”, sagte die Kreatur mit einem Seufzer. \"Den Drachen erschlagen, die Prinzessin retten und so weiter. Nur habe ich keine Prinzessin, und ich bin auch kein Drache - nur ein Drake, der schon lange gelebt hat und sein Leben heute nicht beenden will. Wenn ihr mich also angreift, werde ich mich wehren und ihr werdet mit Sicherheit sterben\"."
             },
             "stages": {
@@ -3742,7 +3745,7 @@ export default {
         "25": {
             "name": "Die Stimme",
             "sections": {
-                "1": "In einer Höhle im Kupferkamm habt ihr eine Kreatur entdeckt, die nur als \"Die Stimme\" bekannt ist. Die Stimme wurde von einer mächtigen Kraft tief in der Erde gefangen gehalten. Sie bat euch um Eure Hilfe bei der Suche nach Gefäßen, die sie benötigt, um ihre körperliche Form wiederzuerlangen und ihre lange Gefangenschaft zu beenden.",
+                "1": "In einer Höhle im Kupferkammgebirge habt ihr eine Kreatur entdeckt, die nur als \"Die Stimme\" bekannt ist. Die Stimme wurde von einer mächtigen Kraft tief in der Erde gefangen gehalten. Sie bat euch um Eure Hilfe bei der Suche nach Gefäßen, die sie benötigt, um ihre körperliche Form wiederzuerlangen und ihre lange Gefangenschaft zu beenden.",
                 "2": "Ihr habt das erste Gefäß von einer Sekte militanter Harrower geborgen. Die Stimme hat euch zum Standort des zweiten Gefäß' geführt.",
                 "3": "Die Waffenkammer der Savvas war eine schwer zu kanckende Nuss, aber ihr habt es geschafft hineinzuschlüpfen, die notwendigen Gegenstände zu stehlen, und wieder herauzukommen, bevor die Wache euch überwältigt hat. Nur noch ein Gefäß bleibt nun übrig.",
                 "4": "Das letzte Gefäß wurde von einem Geflecht uralter Verteidigungsanlagen bewacht. Die Stimme zeigte euch einen Weg, diese Anlagen auszuschalten. Hierfür musstet ihr eine Reihe von Schaltern in der richtigen Reihenfolge betätigen. Daraufhin wurde eine schmale Leiter freigelegt, die in die Dunkelheit hinabführte. \"Der Weg zur Gruft ist frei.\", sagte die Stimme. \"Geht jetzt und holt euch was mir gehört.\"",
@@ -3939,7 +3942,7 @@ export default {
             "name": "Verdorbener Einfluß",
             "sections": {
                 "1": "Mit Hails Hilfe wurde das Artefakt von seinem verderblichen Einfluss gereinigt. Hail erwähnte jedoch drei Orte, die dem beschädigten Artefakt Energie entzogen. Ihr habt mindestens einen dieser Orte besucht und den verderblichen Einfluss dort zerstört. Wenn ihr den verderblichen Einfluss an allen drei Orten aufspürt und zerstört, kann Hail euch vielleicht mehr Informationen über die Verderbnis geben, die die Umgebung von Gloomhaven durchdringt.",
-                "2": "Ihr habt den verderblichen Einfluss in der Nebelsee, im Dolchwald und im Kupferkamm zerstört. Es ist Zeit, zu Hail zu gehen und dem Ganzen auf den Grund zu gehen.",
+                "2": "Ihr habt den verderblichen Einfluss in der Nebelsee, im Dolchwald und im Kupferkammgebirge zerstört. Es ist Zeit, zu Hail zu gehen und dem Ganzen auf den Grund zu gehen.",
                 "3": "Bevor Hail irgendetwas erklären konnte, bricht eine massive Säule aus schwarzem Sand aus dem Nordosten des Krummknochen hervor. Hail weist euch entschlossen auf die wirbelnde Sandmasse zu und reicht euch einen Beutel, der euch vor den schädlichen Auswirkungen schützen soll. Der Eintritt in den Strudel ist äußerst schmerzhaft, aber der Beutel füllt euch mit einem dumpfen Taubheitsgefühl. Schließlich findet ihr euch in einem großen steinernen Raum wieder, der mit seltsamen Runensymbolen bedeckt ist. Es herrscht eine unheimliche Kälte, und der dumpfe Schmerz der Leere hält an. \"Diejenigen, die mutig genug sind, diesen Raum zu betreten, werden die ersten sein, die zerrissen werden.\" Eine eindringliche Stimme hallt durch die Kammer um euch herum. \"Den Rest werde ich wie Wild jagen und verschlingen, aber ich glaube, ich werde das hier mehr genießen.\" Als sich eure Augen an das schwache Licht gewöhnen, seht ihr eine schemenhafte Gestalt in der Mitte des Raumes. Mit der Zeit gelingt es euch, sich auf das Bild eines Ästhers mit zwei langen, dünnen Klingen zu konzentrieren. \"Ich habe viele Jahre darauf gewartet, diese Ernte einzufahren\", sagt er mit einem boshaften Grinsen. \"Eine Zeit lang hatte ich mir eingeredet, dass es mir mehr Vergnügen bereiten würde, euch dabei zuzusehen, wie ihr euch langsam selbst umbringt, aber durch die Einmischung meiner Brüder und den Tod meiner Schützlinge bin ich zu meinem ursprünglichen Plan zurückgekehrt. Ich bin nicht unglücklich über die Entwicklung. Selbst die Geduld eines Unsterblichen hat ihre Grenzen.\" Der Aesther lässt seine Klingen in einem hypnotisierenden Tanz aufblitzen. \"Kommt, ihr tapferen Lämmer. Wer wird der Erste sein, der die Finsternis umarmt?\" Der Kampf tobt für eine gefühlte Ewigkeit, doch schließlich fallen zwei Schwerter mit einem scharfen Klingeln auf den Steinboden. Der Aesther bleibt schlaff stehen, ein Ausdruck des Schocks auf seinem verwundeten Gesicht. \"Wie könnt ihr es wagen?\", murmelt er. Die Stimme, die einst sanft und hypnotisch war, ist nun ernst und dunkel. \"Ich habe Tausende von Jahren gewartet, und ihr maßt euch an, mich um die Früchte meiner Arbeit zu bringen?\" Der Mund des Ästhers hängt schlaff herunter, aber die Gestalt steht immer noch, als würde sie von unsichtbaren Fäden hochgehalten. \"Ihr könnt meine Hülle zerstören und mich von dieser Ebene verbannen, aber es wird nie genug sein. Ich bin ewig. Ich werde zurückkehren. Ich werde mich noch einmal an dieser Welt laben!\" Bei diesen Worten sackt der Körper des Ästhers zu Boden und verschwindet aus dem Leben. Der dumpfe Schmerz lässt nach, und ihr steigt die Treppe hinauf, einem hellen und klaren Himmel entgegen. Die Erschütterungen und der Wirbel aus schwarzem Sand sind verschwunden und alle, die sich um die Leere versammelt haben, sehen sehr erleichtert aus, dass ihr wohlauf aus der Konfrontation herausgekommen seid. Ihr lasst die Menschen wissen, dass das Unheil, das über sie hereingebrochen war, nun abgewendet ist. Sie jubeln und feiern eure Stärke."
             },
             "stages": {

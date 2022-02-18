@@ -1,6 +1,6 @@
 <template>
     <div v-if="sheet" :key="sheetHash" class="pt-12 pb-4 px-4 md:px-8">
-        <div id="characters" class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
+        <div id="characters" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs class="hidden sm:block"
                   :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
@@ -124,6 +124,19 @@
                         <notes :value.sync="character.notes" id="notes" :label="$t('Notes')"
                                @change="store" :is-local-campaign="isLocalCampaign"
                         ></notes>
+                    </div>
+
+                    <div class="mt-8">
+                        <div class="mb-2 flex items-center">
+                            <h2>{{ $t('Retirement counter') }}</h2>
+                            <rollback v-show="!loading" ref="level-rollback"
+                                      :value.sync="character.retirements"></rollback>
+                        </div>
+                        <number-field :value.sync="character.retirements" :min="0" :max="20"
+                                      id="retirements" @change="store"></number-field>
+                        <p class="text-sm">
+                            {{ $t('Set this counter to the amount of characters your have retired.') }}
+                        </p>
                     </div>
 
                     <div class="my-8">

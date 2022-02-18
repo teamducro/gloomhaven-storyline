@@ -112,6 +112,8 @@ export default {
     "Locked": "Locked",
     "Retire": "Retire",
     "Retired": "Retired",
+    "Retirement counter": "Retirement counter",
+    "Set this counter to the amount of characters your have retired": "Set this counter to the amount of characters your have retired.",
     "Remove": "Supprimer",
     "Unlocked": "Unlocked",
     "Clear all": "Effacer tout",
@@ -168,7 +170,7 @@ export default {
     "Gloomhaven Storyline is available in multiple languages!": "Gloomhaven Storyline is available in multiple languages!",
     "If you like to contribute with translations.": "If you like to contribute with translations.",
     "Translations": "Translations",
-    "French": "French",
+    "French": "Francais",
     "Italian": "Italian",
     "German": "German",
     "Spanish": "Spanish",
@@ -232,40 +234,40 @@ export default {
     "Sticker": "Sticker",
     "State": "State",
     "Name": "Name",
-    "Region": "Region",
-    "Chapter": "Chapter",
-    "Looted": "Looted",
+    "Region": "Région",
+    "Chapter": "Chapitre",
+    "Looted": "Pillage",
     "Side": "Side",
-    "Card": "Card",
+    "Card": "Carte",
     "Nr": "Nr",
-    "Slot": "Slot",
-    "Cost": "Cost",
+    "Slot": "Emplacement",
+    "Cost": "Cout",
     "Use": "Use",
     "Effect": "Effect",
-    "Shield": "Shield",
-    "Heal": "Heal",
-    "Attack": "Attack",
-    "Range": "Range",
-    "Move": "Move",
-    "Jump": "Jump",
-    "Recover": "Recover",
-    "Refresh": "Refresh",
-    "Flying": "Flying",
-    "STRENGTHEN": "STRENGTHEN",
-    "PUSH": "PUSH",
-    "PULL": "PULL",
-    "IMMOBILIZE": "IMMOBILIZE",
+    "Shield": "Bouclier",
+    "Heal": "Soin",
+    "Attack": "Attaque",
+    "Range": "Portée",
+    "Move": "Déplacement",
+    "Jump": "Saut",
+    "Recover": "Récupérez",
+    "Refresh": "Rafraichissez",
+    "Flying": "Vol",
+    "STRENGTHEN": "RENFORCEMENT",
+    "PUSH": "POUSSEE",
+    "PULL": "TRACTION",
+    "IMMOBILIZE": "IMMOBILISATION",
     "INVISIBLE": "INVISIBLE",
-    "PIERCE": "PIERCE",
-    "STUN": "STUN",
-    "POISON": "POISON",
-    "WOUND": "WOUND",
-    "MUDDLE": "MUDDLE",
-    "CURSE": "CURSE",
-    "BLESS": "BLESS",
+    "PIERCE": "PERFORATION",
+    "STUN": "ETOURDISSEMENT",
+    "POISON": "EMPOISONNEMENT",
+    "WOUND": "BLESSURE",
+    "MUDDLE": "CONFUSION",
+    "CURSE": "MALEDICTION",
+    "BLESS": "BENEDICTION",
     "REGENERATE": "REGENERATE",
-    "DISARM": "DISARM",
-    "TARGET": "TARGET",
+    "DISARM": "DESARMEMENT",
+    "TARGET": "AJOUT CIBLE",
     "Intro": "Introduction",
     "The Merchant": "La Négociante",
     "Demon and Rift": "Démons et Failles",
@@ -280,7 +282,7 @@ export default {
     "Voice": "Voix",
     "Solo Scenarios": "Solo Scenarios",
     "Personal Quests": "Quêtes Personnelles",
-    "Personal Quest": "Personal Quest",
+    "Personal Quest": "Quête Personnelle",
     "Random Scenarios": "Scénarios Aléatoires",
     "Sealed": "Enveloppes",
     "Road Events": "Evènements de Route",
@@ -291,16 +293,16 @@ export default {
     "The rift device": "The rift device",
     "Tainted crypt": "Tainted crypt",
     "Corruption": "Corruption",
-    "Gloomhaven": "Gloomhaven",
-    "Dagger Forest": "Dagger Forest",
-    "Lingering Swamp": "Lingering Swamp",
-    "Watcher Mountains": "Watcher Mountains",
-    "Copperneck Mountains": "Copperneck Mountains",
-    "Misty Sea": "Misty Sea",
+    "Gloomhaven": "Havrenuit",
+    "Dagger Forest": "Foret des Dgaues",
+    "Lingering Swamp": "Marais Stagnant",
+    "Watcher Mountains": "Montagnes du Gardien",
+    "Copperneck Mountains": "Cretes de Cuivre",
+    "Misty Sea": "Mer de Brume",
     "Crypt": "Crypt",
     "East Continent": "East Continent",
-    "Serpents Kiss River": "Serpent’s Kiss River",
-    "Merchants Bay": "Merchant’s Bay",
+    "Serpents Kiss River": "Rivière du Baiser du Serpent",
+    "Merchants Bay": "Baie des Marchands",
     "East Coast": "East Coast",
     "different Dimension": "different Dimension",
     "and": "et",
@@ -1538,150 +1540,150 @@ export default {
     },
     "items": {
         "gh-1": {
-            "name": "Boots of Striding",
-            "source": "Prosperity 1",
-            "desc": "During your movement, add +2 {MOVE} to the movement.",
-            "faq": "Boots of Striding only add to the numerical value of an existing single movement ability. They do not give you a free movement action."
+            "name": "Bottes de Voyage",
+            "source": "Prospérité 1",
+            "desc": "Pendant votre déplacement, ajoutez +2 {MOVE} à un seul déplacement.",
+            "faq": "Les bottes de Voyage ne font qu'ajouter à la valeur numérique d'un mouvement unique existante. Ils ne vous donnent pas une action gratuite de mouvement."
         },
         "gh-2": {
-            "name": "Winged Shoes",
-            "source": "Prosperity 1",
-            "desc": "During your movement, add {JUMP} to the movement.",
+            "name": "Bottines Ailées",
+            "source": "Prospérité 1",
+            "desc": "Pendant votre déplacement, ajoutez {JUMP} à ce déplacement.",
             "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
         },
         "gh-3": {
-            "name": "Hide Armor",
-            "source": "Prosperity 1",
-            "desc": "On the next two sources of damage to you from attacks, gain {SHIELD} 1. Add 2 {-1} to your attack modifier deck.",
+            "name": "Armure de Peaux",
+            "source": "Prospérité 1",
+            "desc": "Pour les deux prochaines sources de dégats d'attaques vous ciblant, gagnez {SHIELD} 1. Ajouter 2 {-1} à votre deck de modificateur de combat.",
             "faq": "Hide Armor only grants the shield for the attack, not until the end of the round."
         },
         "gh-4": {
-            "name": "Leather Armor",
-            "source": "Prosperity 1",
-            "desc": "When attacked, the attacker gains Disadvantage on the attack.",
+            "name": "Armure de Cuir",
+            "source": "Prospérité 1",
+            "desc": "Lorsque vous etes attaqué, l'attaquant gagne Désavantage pour cette attaque.",
             "faq": "The Leather Armor must be used before the enemy draws an attack modifier card."
         },
         "gh-5": {
-            "name": "Cloak of Invisibility",
-            "source": "Prosperity 1",
-            "desc": "During your turn, gain {INVISIBLE}."
+            "name": "Cape d'Invisibilité",
+            "source": "Prospérité 1",
+            "desc": "Pendant votre tour, gagnez {INVISIBLE}."
         },
         "gh-6": {
-            "name": "Eagle-Eye Goggles",
-            "source": "Prosperity 1",
-            "desc": "During your attack, gain Advantage on the entire Attack action."
+            "name": "Jumelles Oeil-de-faucon",
+            "source": "Prospérité 1",
+            "desc": "Pendant votre attaque, gagnez Avantage pour la totalité de l'action d'Attaque."
         },
         "gh-7": {
-            "name": "Iron Helmet",
-            "source": "Prosperity 1",
-            "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+            "name": "Casque de fer",
+            "source": "Prospérité 1",
+            "desc": "Lorsque vous etes attaqué, traitez toutes carte Modificateur d'attaque {2X_WHITE} piochée par l'adversaire comme une carte {+0_WHITE} à la place."
         },
         "gh-8": {
-            "name": "Heater Shield",
-            "source": "Prosperity 1",
-            "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+            "name": "Ecu",
+            "source": "Prospérité 1",
+            "desc": "Lorsque vous subissez des dégats du fait d'une attaque, gagnez {SHIELD} 1 pour cette attaque."
         },
         "gh-9": {
-            "name": "Piercing Bow",
-            "source": "Prosperity 1",
-            "desc": "During your ranged attack, ignore all Shield values for the entire Attack action."
+            "name": "Arc Perforant",
+            "source": "Prospérité 1",
+            "desc": "Pendant votre attaque à distance, ignorez toutes les valeurs de Bouclier pour la totalité de l'action d'Attaque."
         },
         "gh-10": {
-            "name": "War Hammer",
-            "source": "Prosperity 1",
-            "desc": "During your melee attack, add {STUN} to the entire Attack action."
+            "name": "Marteau de Guerre",
+            "source": "Prospérité 1",
+            "desc": "Pendant votre attaque de de mélée, ajoutez {STUN} à la totalité de l'action d'Attaque."
         },
         "gh-11": {
-            "name": "Poison Dagger",
-            "source": "Prosperity 1",
-            "desc": "During your melee attack, add {POISON} to a single attack."
+            "name": "Dague Empoisonnée",
+            "source": "Prospérité 1",
+            "desc": "Pendant votre attaque de mélée, ajoutez {POISON} à une seule attaque."
         },
         "gh-12": {
-            "name": "Minor Healing Potion",
-            "source": "Prosperity 1",
-            "desc": "During your turn, perform a “{HEAL} 3, self” action."
+            "name": "Potion de soin mineur",
+            "source": "Prospérité 1",
+            "desc": "Pendant votre tour, effectuez une action de “{HEAL} 3, Sur vous-meme”."
         },
         "gh-13": {
-            "name": "Minor Stamina Potion",
-            "source": "Prosperity 1",
-            "desc": "During your turn, {RECOVER} up to two of your discarded cards.",
+            "name": "Potion d'Endurance Mineure",
+            "source": "Prospérité 1",
+            "desc": "Pendant votre tour, {RECOVER} une de vos cartes défaussées.",
             "faq": "[Errata] The item should allow you to recover only one discarded card. This is change in an upcoming expansion but may be used for the base game."
         },
         "gh-14": {
-            "name": "Minor Power Potion",
-            "source": "Prosperity 1",
-            "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+            "name": "Potion de Puissance Mineure",
+            "source": "Prospérité 1",
+            "desc": "Pendant votre attaquee, ajoutez +1 {ATTACK} à la totalité de votre action d'Attaque."
         },
         "gh-15": {
-            "name": "Boots of Speed",
-            "source": "Prosperity 2",
-            "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 10."
+            "name": "Bottes de Célérité",
+            "source": "Prospérité 2",
+            "desc": "Au début d'un round, après que toutes les cartes Capacité ont révélées, augmentez ou réduisez l'initiative de votre carte Principale de 10."
         },
         "gh-16": {
-            "name": "Cloak of Pockets",
-            "source": "Prosperity 2",
-            "desc": "You can carry two additional small items."
+            "name": "Cape Multipoches",
+            "source": "Prospérité 2",
+            "desc": "Vous pouvez vous équiper de jusqu'à deux objets supplémentaires."
         },
         "gh-17": {
-            "name": "Empowering Talisman",
-            "source": "Prosperity 2",
-            "desc": "During your turn, {REFRESH} one of your consumed small items."
+            "name": "Talisman de Puissance",
+            "source": "Prospérité 2",
+            "desc": "Pendant votre tour, {REFRESH} un de vos objets consommés."
         },
         "gh-18": {
-            "name": "Battle-Axe",
-            "source": "Prosperity 2",
-            "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+            "name": "Hache de Bataille",
+            "source": "Prospérité 2",
+            "desc": "Pendant votre action d'attaque de mélée sur une seul cible, transformez cette attaque en : {AOE.CONE_0_1}"
         },
         "gh-19": {
-            "name": "Weighted Net",
-            "source": "Prosperity 2",
-            "desc": "During your ranged attack, add {IMMOBILIZE} to a single attack."
+            "name": "Filet lesté",
+            "source": "Prospérité 2",
+            "desc": "Pendant votre attaque à distance, ajoutez {IMMOBILIZE} à une seule attaque."
         },
         "gh-20": {
-            "name": "Minor Mana Potion",
-            "source": "Prosperity 2",
-            "desc": "During your turn, create any element. {ANY}"
+            "name": "Potion de Mana Mineure",
+            "source": "Prospérité 2",
+            "desc": "Pendant votre tour, créez un élément au choix. {ANY}"
         },
         "gh-21": {
-            "name": "Stun Powder",
-            "source": "Prosperity 2",
-            "desc": "During your attack, add {STUN} to a single attack."
+            "name": "Poudre Etourdissante",
+            "source": "Prospérité 2",
+            "desc": "Pendant votre attaque, ajoutez {STUN} à une seul attaque."
         },
         "gh-22": {
-            "name": "Heavy Greaves",
-            "source": "Prosperity 3",
-            "desc": "You are immune to all forced movement caused by enemies or scenario effects. Add 1 {-1} to your attack modifier deck."
+            "name": "Jambières Lourdes",
+            "source": "Prospérité 3",
+            "desc": "Vous etes immunisé à tout déplacement forcé par des adversaires ou des mécanismes de scénario. Ajoutez 1 {-1} à votre deck de modificateur de combat."
         },
         "gh-23": {
-            "name": "Chainmail",
-            "source": "Prosperity 3",
-            "desc": "On the next three sources of damage to you from attacks, gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
+            "name": "Cotte de Maille",
+            "source": "Prospérité 3",
+            "desc": "Pour les trois prochaines sources de dégats d'attaques vous ciblant, gagnez {SHIELD} 1. Ajoutez 3 {-1} à votre deck de modificateur de combat.",
             "faq": "Chainmail only grants the shield for the attack, not until the end of the round."
         },
         "gh-24": {
-            "name": "Amulet of Life",
-            "source": "Prosperity 3",
-            "desc": "During your turn, {HEAL} 1 damage."
+            "name": "Amulette de Vie",
+            "source": "Prospérité 3",
+            "desc": "Pendant votre tour, effectuez une action de '{HEAL} 1 , Sur vous-meme'."
         },
         "gh-25": {
-            "name": "Jagged Sword",
-            "source": "Prosperity 3",
-            "desc": "During your melee attack, add {WOUND} to a single attack."
+            "name": "Epée Dentelée",
+            "source": "Prospérité 3",
+            "desc": "Pendant votre attaque de mélée, ajoutez {WOUND} à une seule attaque."
         },
         "gh-26": {
-            "name": "Long Spear",
-            "source": "Prosperity 3",
-            "desc": "Turn a single-target melee attack into the following: {AOE.LINE_0_1_1}"
+            "name": "Pique",
+            "source": "Prospérité 3",
+            "desc": "Pendant votre action d'attaque de mélée sur une seule cible, transformez cette attaque en : {AOE.LINE_0_1_1}"
         },
         "gh-27": {
-            "name": "Major Healing Potion",
-            "source": "Prosperity 3",
-            "desc": "During your turn, perform a “{HEAL} 5, self” action."
+            "name": "Potion de Soin Majeure",
+            "source": "Prospérité 3",
+            "desc": "Pendant votre tour, effectuez une action de '{HEAL} 5, Sur vous-meme'."
         },
         "gh-28": {
-            "name": "Moon Earring",
-            "source": "Prosperity 3",
-            "desc": "During your turn, {REFRESH} all of your spent items."
+            "name": "Boucle d'Oreille Lunaire",
+            "source": "Prospérité 3",
+            "desc": "Pendant votre tour, {REFRESH} tous vos objets dépensés."
         },
         "gh-29": {
             "name": "Comfortable Shoes",
@@ -1807,9 +1809,9 @@ export default {
             "desc": "You are immune to {POISON} and {WOUND}."
         },
         "gh-53": {
-            "name": "Black Knife",
+            "name": "Couteau Noir",
             "source": "Prosperity 7",
-            "desc": "During your melee attack, add {CURSE} to a single attack."
+            "desc": "Pendant votre attaque de mélée, ajoutez {CURSE} à une seule attaque."
         },
         "gh-54": {
             "name": "Staff of Eminence",
@@ -1952,9 +1954,9 @@ export default {
             "desc": "During your melee attack, {LIGHT_X} to add +2 {ATTACK} to a single attack."
         },
         "gh-82": {
-            "name": "Night Blade",
+            "name": "Lame de ténèbres",
             "source": "Random Item",
-            "desc": "During your melee attack, {DARK_X} to add +2 {ATTACK} to a single attack."
+            "desc": "Pendant votre attaque de mélée, {DARK_X} pour ajoutez +2 Attaque {ATTACK} à une seule attaque."
         },
         "gh-83": {
             "name": "Wand of Frost",
@@ -1982,9 +1984,9 @@ export default {
             "desc": "During your turn, create Light. {LIGHT}"
         },
         "gh-88": {
-            "name": "Wand of Darkness",
+            "name": "Baguette des ténèbres",
             "source": "Random Item",
-            "desc": "During your turn, create Dark. {DARK}"
+            "desc": "Pendant votre tour, créez l'élément {DARK}."
         },
         "gh-89": {
             "name": "Minor Cure Potion",
@@ -1997,9 +1999,9 @@ export default {
             "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have {STUN}."
         },
         "gh-91": {
-            "name": "Steel Ring",
+            "name": "Anneau d'Acier",
             "source": "Random Item",
-            "desc": "When damaged by an attack targeting you, gain {SHIELD} 4 for the attack."
+            "desc": "Lorsque vous subissez des dégats d'une attaque vous ciblant, gagnez {SHIELD} 4 pour cette attaque."
         },
         "gh-92": {
             "name": "Dampening Ring",
@@ -2007,9 +2009,9 @@ export default {
             "desc": "Before an enemy would consume an element, consume that element instead for no effect"
         },
         "gh-93": {
-            "name": "Scroll of Power",
+            "name": "Parchemin de Pouvoir",
             "source": "Random Item",
-            "desc": "During an ally's attack, add +1 {ATTACK} to their entire attack action"
+            "desc": "Pendant l'attaque d'un allié, ajoutez +1 Attaque {ATTACK} à la totalité de son action d'Attaque"
         },
         "gh-94": {
             "name": "Scroll of Healing",
@@ -2022,9 +2024,9 @@ export default {
             "desc": "During your turn, an ally within {RANGE} 5 may {RECOVER} up to two of their discarded cards"
         },
         "gh-96": {
-            "name": "Rocket Boots",
+            "name": "Bottes Fusée",
             "source": "{SCENARIO 66} (Trésor #36)",
-            "desc": "During your movement, add +3 {MOVE} and {JUMP} to a single movement"
+            "desc": "Pendant votre déplacement, ajoutez +3 {MOVE} et {JUMP} à un seul déplacement"
         },
         "gh-97": {
             "name": "Endurance Footwraps",
@@ -2037,9 +2039,9 @@ export default {
             "desc": "You are unaffected by difficult and hazardous terrain."
         },
         "gh-99": {
-            "name": "Magma Waders",
+            "name": "Cuissardes de Magma",
             "source": "{SCENARIO 63} (Trésor #12)",
-            "desc": "Ignore the damaging effects of hazardous terrain and perform a “{HEAL} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
+            "desc": "Ignorez les dégats infligés par les terrains dangereux et effectuez une action de '{HEAL} 2, Sur vous-meme' pendant n'importe quel tour où vous etes entré sur un hexagone de terrain dangereux."
         },
         "gh-100": {
             "name": "Robes of Summoning",
@@ -2078,9 +2080,9 @@ export default {
             "desc": "Any time you kill an enemy during your turn, perform a “{HEAL} 1, Self” action."
         },
         "gh-107": {
-            "name": "Horned Helm",
+            "name": "Casque à Cornes",
             "source": "{SCENARIO 03} (Trésor #65)",
-            "desc": "After moving 4 or more hexes on your turn, add +1 {ATTACK} to your next melee attack this turn.",
+            "desc": "Une fois par tour, après vous etre déplacé d'au moins 4 hexagones pendant votre tour, ajoutez +1 {ATTACK} à votre prochaine attaque de mélée ce tour-ci.",
             "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
         },
         "gh-108": {
@@ -2160,9 +2162,9 @@ export default {
             "desc": "During your turn, {LIGHT_X} to create Dark. {DARK}"
         },
         "gh-123": {
-            "name": "Ring of Skulls",
+            "name": "Anneau de Cranes",
             "source": "{SCENARIO 04} (Trésor #38)",
-            "desc": "Summon Skeleton",
+            "desc": "Invoquez Squelette",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-124": {
@@ -2196,9 +2198,9 @@ export default {
             "desc": "During your turn, place a character token on an adjacent normal or elite enemy. You add +1 {ATTACK} to all your attacks targeting this enemy."
         },
         "gh-130": {
-            "name": "Helix Ring",
+            "name": "Anneau Spiralé",
             "source": "{SCENARIO 81} (Trésor #68)",
-            "desc": "During your turn, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Self” action"
+            "desc": "Pendant votre tour, {LIGHT_X} {DARK_X} pour effectuez une action de '{HEAL} 25, Sur vous-meme'"
         },
         "gh-131": {
             "name": "Heart of the Betrayer",
@@ -3069,358 +3071,358 @@ export default {
         "BR": {
             "name": "Brute",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Add two {+1_WHITE} cards",
-                "Add one {+3_WHITE} card",
-                "Add three {AGAIN} {PUSH}1 cards",
-                "Add two {AGAIN} {PIERCE}3 cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
-                "Add one {AGAIN} ADD {TARGET} card",
-                "Add one {+1_WHITE} {SHIELD}1, Self card",
-                "Ignore negative item effects and add one {+1_WHITE} card"
+                "Retirer deux cartes {-1_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
+                "Ajouter deux cartes {+1_WHITE}",
+                "Ajouter une carte {+3_WHITE}",
+                "Ajouter trois cartes {AGAIN} {PUSH}1",
+                "Ajouter deux cartes {AGAIN} {PIERCE}3",
+                "Ajouter une carte {AGAIN} {STUN}",
+                "Ajouter une carte {AGAIN} {DISARM} et une carte {AGAIN} {MUDDLE}",
+                "Ajouter une carte {AGAIN} Ajouter {TARGET}",
+                "Ajouter une carte {+1_WHITE} {SHIELD}1, Sur vous-meme",
+                "Ignorer les effets négatifs des objets et Ajouter une carte {+1_WHITE}"
             ]
         },
         "CH": {
-            "name": "Cragheart",
+            "name": "Coeur de roche",
             "perks": [
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Add one {-2_WHITE} card and two {+2_WHITE} cards",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add one {+2_WHITE} {MUDDLE} card",
-                "Add two {AGAIN} {PUSH}2 cards",
-                "Add two {AGAIN} {EARTH} cards",
-                "Add two {AGAIN} {WIND} cards",
-                "Ignore negative item effects",
-                "Ignore negative scenario effects"
+                "Retirer quatre cartes {+0_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
+                "Ajouter une carte {-2_WHITE} et deux cartes {+2_WHITE}",
+                "Ajouter une carte {+1_WHITE} {IMMOBILIZE}",
+                "Ajouter une carte {+2_WHITE} {MUDDLE}",
+                "Ajouter deux cartes {AGAIN} {PUSH}2",
+                "Ajouter deux cartes {AGAIN} {EARTH}",
+                "Ajouter deux cartes {AGAIN} {WIND}",
+                "Ignorer les effets négatifs des objets",
+                "Ignorer les effets négatifs des scénarios"
             ]
         },
         "SW": {
-            "name": "Spellweaver",
+            "name": "Tisse-Sort",
             "perks": [
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Add two {+1_WHITE} cards",
-                "Add one {+0_WHITE} {STUN} card",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add one {+1_WHITE} {CURSE} card",
-                "Add one {+2_WHITE} {FIRE} card",
-                "Add one {+2_WHITE} {ICE} card",
-                "Add one {AGAIN} {EARTH} and one {AGAIN} {WIND} card",
-                "Add one {AGAIN} {LIGHT} and one {AGAIN} {DARK} card"
+                "Retirer quatre cartes {+0_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
+                "Ajouter deux cartes {+1_WHITE}",
+                "Ajouter une carte {+0_WHITE} {STUN}",
+                "Ajouter une carte {+1_WHITE} {WOUND}",
+                "Ajouter une carte {+1_WHITE} {IMMOBILIZE}",
+                "Ajouter une carte {+1_WHITE} {CURSE}",
+                "Ajouter une carte {+2_WHITE} {FIRE}",
+                "Ajouter une carte {+2_WHITE} {ICE}",
+                "Ajouter une carte {AGAIN} {EARTH} et une carte {AGAIN} {WIND}",
+                "Ajouter une carte {AGAIN} {LIGHT} et une carte {AGAIN} {DARK}"
             ]
         },
         "TI": {
-            "name": "Tinkerer",
+            "name": "Bricoleur",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Add two {+1_WHITE} cards",
-                "Add one {+3_WHITE} card",
-                "Add two {AGAIN} {FIRE} cards",
-                "Add three {AGAIN} {MUDDLE} cards",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add one {+1_WHITE} Heal {HEAL}2 card",
-                "Add one {+0_WHITE} ADD {TARGET} card",
-                "Ignore negative scenario effects"
+                "Retirer deux cartes {-1_WHITE}",
+                "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
+                "Ajouter deux cartes {+1_WHITE}",
+                "Ajouter une carte {+3_WHITE}",
+                "Ajouter deux cartes {AGAIN} {FIRE}",
+                "Ajouter trois cartes {AGAIN} {MUDDLE}",
+                "Ajouter une carte {+1_WHITE} {WOUND}",
+                "Ajouter une carte {+1_WHITE} {IMMOBILIZE}",
+                "Ajouter une carte {+1_WHITE} Heal {HEAL}2",
+                "Ajouter une carte {+0_WHITE} Ajouter une Cible {TARGET}",
+                "Ignorer les effets négatifs des scénarios"
             ]
         },
         "SC": {
-            "name": "Scoundrel",
+            "name": "Crapule",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add two {AGAIN} {PIERCE}3 cards",
-                "Add two {AGAIN} {POISON} cards",
-                "Add two {AGAIN} {MUDDLE} cards",
-                "Add one {AGAIN} {INVISIBLE} card",
-                "Ignore negative scenario effects"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer quatre cartes {+0_WHITE}",
+                "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE}",
+                "Ajouter deux cartes {AGAIN} {+1_WHITE}",
+                "Ajouter deux cartes {AGAIN} {PIERCE}3",
+                "Ajouter deux cartes {AGAIN} {POISON}",
+                "Ajouter deux cartes {AGAIN} {MUDDLE}",
+                "Ajouter une carte {AGAIN} {INVISIBLE}",
+                "Ignorer les effets négatifs des scénarios"
             ]
         },
         "MT": {
-            "name": "Mindthief",
+            "name": "Perce-Esprit",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Add one {+2_WHITE} {ICE} card",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add three {AGAIN} {PULL}1 cards",
-                "Add three {AGAIN} {MUDDLE} cards",
-                "Add two {AGAIN} {IMMOBILIZE} cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
-                "Ignore negative scenario effects"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer quatre cartes {+0_WHITE}",
+                "Remplacer deux cartes {+1_WHITE} par deux cartes {+2_WHITE}",
+                "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
+                "Ajouter une carte {+2_WHITE} {ICE}",
+                "Ajouter deux cartes {AGAIN} {+1_WHITE}",
+                "Ajouter trois cartes {AGAIN} {PULL}1",
+                "Ajouter trois cartes {AGAIN} {MUDDLE}",
+                "Ajouter deux cartse {AGAIN} {IMMOBILIZE}",
+                "Ajouter une carte {AGAIN} {STUN}",
+                "Ajouter une carte {AGAIN} {DISARM} et une carte {AGAIN} {MUDDLE}",
+                "Ignorer les effets négatifs des scénarios"
             ]
         },
         "DS": {
-            "name": "Doomstalker",
+            "name": "Condamneur",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace two {+0_WHITE} cards with two {+1_WHITE} cards",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add one {+2_WHITE} {MUDDLE} card",
-                "Add one {+1_WHITE} {POISON} card",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add one {+0_WHITE} {STUN} card",
-                "Add one {AGAIN} {TARGET} card",
-                "Ignore negative scenario effects"
+                "Retirer deux cartes {-1_WHITE} cartes",
+                "Remplacer deux cartes {+0_WHITE} par deux cartes {+1_WHITE}",
+                "Ajouter deux cartes {AGAIN} {+1_WHITE}",
+                "Ajouter une carte {+2_WHITE} {MUDDLE}",
+                "Ajouter une carte {+1_WHITE} {POISON}",
+                "Ajouter une carte {+1_WHITE} {WOUND}",
+                "Ajouter une carte {+1_WHITE} {IMMOBILIZE}",
+                "Ajouter une carte {+0_WHITE} {STUN}",
+                "Ajouter une carte {AGAIN} {TARGET}",
+                "Ignorer les effets négatifs des scénarios"
             ]
         },
         "EL": {
-            "name": "Elementalist",
+            "name": "Elémentaliste",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add three {+0_WHITE} {FIRE} cards",
-                "Add three {+0_WHITE} {ICE} cards",
-                "Add three {+0_WHITE} {WIND} cards",
-                "Add three {+0_WHITE} {EARTH} cards",
-                "Replace two {+0_WHITE} card with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} card",
-                "Replace two {+0_WHITE} card with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} card",
-                "Add two {+1_WHITE} {PUSH}1 cards",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+0_WHITE} {STUN} card",
-                "Add one {+0_WHITE} {TARGET} card"
+                "Retirer deux cartes {-1_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE}",
+                "Ajouter trois cartes {+0_WHITE} {FIRE}",
+                "Ajouter trois cartes {+0_WHITE} {ICE}",
+                "Ajouter trois cartes {+0_WHITE} {WIND}",
+                "Ajouter trois cartes {+0_WHITE} {EARTH}",
+                "Remplacer deux cartes {+0_WHITE} par une carte {+0_WHITE} {FIRE} et une carte {+0_WHITE} {EARTH}",
+                "Remplacer deux cartes {+0_WHITE} par une carte {+0_WHITE} {ICE} et une carte {+0_WHITE} {WIND}",
+                "Ajouter deux cartes {+1_WHITE} {PUSH}1",
+                "Ajouter une carte {+1_WHITE} {WOUND}",
+                "Ajouter une carte {+0_WHITE} {STUN}",
+                "Ajouter une carte {+0_WHITE} {TARGET}"
             ]
         },
         "SB": {
-            "name": "Sawbones",
+            "name": "Charcuteur",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add one {AGAIN} {+2_WHITE} card",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add two {AGAIN} {WOUND} cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add one {AGAIN} {HEAL}3 card",
-                "Add one {+0_WHITE} Refresh an item card"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer quatre cartes {+0_WHITE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE}",
+                "Ajouter une carte {AGAIN} {+2_WHITE}",
+                "Ajouter une carte {+1_WHITE} {IMMOBILIZE}",
+                "Ajouter deux cartes {AGAIN} {WOUND}",
+                "Ajouter une carte {AGAIN} {STUN}",
+                "Ajouter une carte {AGAIN} {HEAL}3",
+                "Ajouter une carte {+0_WHITE} Rafraichissement Objet"
             ]
         },
         "SS": {
-            "name": "Soothsinger",
+            "name": "Chante-Vrai",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove one {-2_WHITE} card",
-                "Replace two {+1_WHITE} cards with one {+4_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {DISARM} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {WOUND} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {POISON} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
-                "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
-                "Replace one {-1_WHITE} card with one {+0_WHITE} {STUN} card",
-                "Add three {AGAIN} {+1_WHITE} cards",
-                "Add two {AGAIN} {CURSE} cards"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer une carte {-2_WHITE}",
+                "Remplacer deux cartes {+1_WHITE} cartes par une carte {+4_WHITE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {IMMOBILIZE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {DISARM}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {WOUND}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {POISON}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {CURSE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+3_WHITE} {MUDDLE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {STUN}",
+                "Ajouter trois cartes {AGAIN} {+1_WHITE}",
+                "Ajouter deux cartes {AGAIN} {CURSE}"
             ]
         },
         "SK": {
-            "name": "Sunkeeper",
+            "name": "Gardienne du Soleil",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add two {AGAIN} {STUN} card",
-                "Add two {AGAIN} {LIGHT} cards",
-                "Add two {AGAIN} {SHIELD}1, Self cards",
-                "Ignore negative item effects and add two {+1_WHITE} cards",
-                "Ignore negative scenario effects"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer quatre cartes {+0_WHITE}",
+                "Remplacer une carte {-2_WHITE} carte par une carte {+0_WHITE}",
+                "Remplacer une carte {+0_WHITE} carte par une carte {+2_WHITE}",
+                "Ajouter deux cartes {AGAIN} {+1_WHITE}",
+                "Ajouter deux cartes {AGAIN} {HEAL}1",
+                "Ajouter deux cartes {AGAIN} {STUN}",
+                "Ajouter deux cartes {AGAIN} {LIGHT}",
+                "Ajouter deux cartes {AGAIN} {SHIELD}1, Sur vous-meme",
+                "Ignorer les effets négatifs des objets et Ajouter deux cartes {+1_WHITE}",
+                "Ignorer les effets négatifs des scénarios"
             ]
         },
         "NS": {
-            "name": "Nightshroud",
+            "name": "Voilsombre",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Add one {-1_WHITE} {DARK} card",
-                "Replace one {-1_WHITE} {DARK} card with one {+1_WHITE} {DARK} card",
-                "Add one {+1_WHITE} {INVISIBLE} card",
-                "Add three {AGAIN} {MUDDLE} cards",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add two {AGAIN} {CURSE} cards",
-                "Add one {AGAIN} {TARGET} card",
-                "Ignore negative scenario effects and add two {+1_WHITE} cards"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer quatre cartes {+0_WHITE}",
+                "Ajouter une carte {-1_WHITE} {DARK}",
+                "Remplacer une carte {-1_WHITE} {DARK} par une carte {+1_WHITE} {DARK}",
+                "Ajouter une carte {+1_WHITE} {INVISIBLE}",
+                "Ajouter trois cartes {AGAIN} {MUDDLE}",
+                "Ajouter deux cartes {AGAIN} {HEAL}1",
+                "Ajouter deux cartes {AGAIN} {CURSE}",
+                "Ajouter une carte {AGAIN} {TARGET}",
+                "Ignorer les effets négatifs des scénarios et Ajouter deux cartes {+1_WHITE}"
             ]
         },
         "SU": {
-            "name": "Summoner",
+            "name": "Invocateur",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Add one {+2_WHITE} card",
-                "Add two {AGAIN} {WOUND} cards",
-                "Add two {AGAIN} {POISON} cards",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add one {AGAIN} {FIRE} and one {AGAIN} {WIND} card",
-                "Add one {AGAIN} {DARK} and one {AGAIN} {EARTH} card",
-                "Ignore negative scenario effects and add two {+1_WHITE} cards"
+                "Retirer deux cartes {-1_WHITE}",
+                "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
+                "Ajouter une carte {+2_WHITE}",
+                "Ajouter deux cartes {AGAIN} {WOUND}",
+                "Ajouter deux cartes {AGAIN} {POISON}",
+                "Ajouter deux cartes {AGAIN} {HEAL}1",
+                "Ajouter une carte {AGAIN} {FIRE} et une carte {AGAIN} {WIND}",
+                "Ajouter une carte {AGAIN} {DARK} et une carte {AGAIN} {EARTH}",
+                "Ignorer les effets négatifs des scénarios et Ajouter deux cartes {+1_WHITE}"
             ]
         },
         "BE": {
-            "name": "Berserker",
+            "name": "Berseker",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {AGAIN} {+2_WHITE} card",
-                "Add two {AGAIN} {WOUND} cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add one {AGAIN} {+1_WHITE} {DISARM} card",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add one {+2_WHITE} {FIRE} card",
-                "Ignore negative item effects"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer quatre cartes {+0_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
+                "Remplacer une carte {+0_WHITE} par une carte {AGAIN} {+2_WHITE}",
+                "Ajouter deux cartes {AGAIN} {WOUND}",
+                "Ajouter une carte {AGAIN} {STUN}",
+                "Ajouter une carte {AGAIN} {+1_WHITE} {DISARM}",
+                "Ajouter deux cartes {AGAIN} {HEAL}1",
+                "Ajouter une carte {+2_WHITE} {FIRE}",
+                "Ignorer les effets négatifs des objets"
             ]
         },
         "QM": {
-            "name": "Quartermaster",
+            "name": "Intendant",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add three {AGAIN} {MUDDLE} cards",
-                "Add two {AGAIN} {PIERCE}3 cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add one {AGAIN} {TARGET} card",
-                "Add one {+0_WHITE} Refresh an item card",
-                "Ignore negative item effects and add two {+1_WHITE} cards"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer quatre cartes {+0_WHITE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE}",
+                "Ajouter deux cartes {AGAIN} {+1_WHITE}",
+                "Ajouter trois cartes {AGAIN} {MUDDLE}",
+                "Ajouter deux cartes {AGAIN} {PIERCE}3",
+                "Ajouter une carte {AGAIN} {STUN}",
+                "Ajouter une carte {AGAIN} {TARGET}",
+                "Ajouter une carte {+0_WHITE} Rafraichir une carte Objet",
+                "Ignorer les effets négatifs des objets et Ajouter deux cartes {+1_WHITE}"
             ]
         },
         "PH": {
-            "name": "Plagueherald",
+            "name": "Hérault du fléau",
             "perks": [
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add two {+1_WHITE} cards",
-                "Add one {+1_WHITE} {WIND} card",
-                "Add three {AGAIN} {POISON} cards",
-                "Add two {AGAIN} {CURSE} cards",
-                "Add two {AGAIN} {IMMOBILIZE} cards",
-                "Add one {AGAIN} {STUN} card",
-                "Ignore negative scenario effects and add one {+1_WHITE} card"
+                "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE}",
+                "Ajouter deux cartes {+1_WHITE}",
+                "Ajouter une carte {+1_WHITE} {WIND}",
+                "Ajouter trois cartes {AGAIN} {POISON}",
+                "Ajouter deux cartes {AGAIN} {CURSE}",
+                "Ajouter deux cartes {AGAIN} {IMMOBILIZE}",
+                "Ajouter une carte {AGAIN} {STUN}",
+                "Ignorer les effets négatifs des scénarios et Ajouter une carte {+1_WHITE}"
             ]
         },
         "BT": {
-            "name": "Beast Tyrant",
+            "name": "Maitre des betes",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add two {AGAIN} {EARTH} cards",
-                "Ignore negative scenario effects"
+                "Retirer deux cartes {-1_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE}",
+                "Ajouter une carte {+1_WHITE} {WOUND}",
+                "Ajouter une carte {+1_WHITE} {IMMOBILIZE}",
+                "Ajouter deux cartes {AGAIN} {HEAL}1",
+                "Ajouter deux cartes {AGAIN} {EARTH}",
+                "Ignorer les effets négatifs des scénarios"
             ]
         },
         "BS": {
             "name": "Bladeswarm",
             "perks": [
-                "Remove one {-2_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {WIND} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {EARTH} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {LIGHT} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {DARK} card",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+1_WHITE} {POISON} card",
-                "Add one {+2_WHITE} {MUDDLE} card",
-                "Ignore negative item effects and add one {+1_WHITE} card",
-                "Ignore negative scenario effects and add one {+1_WHITE} card"
+                "Retirer une carte {-2_WHITE}",
+                "Retirer quatre cartes {+0_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {WIND}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {EARTH}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {LIGHT}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {DARK}",
+                "Ajouter deux cartes {AGAIN} {HEAL}1",
+                "Ajouter une carte {+1_WHITE} {WOUND}",
+                "Ajouter une carte {+1_WHITE} {POISON}",
+                "Ajouter une carte {+2_WHITE} {MUDDLE}",
+                "Ignorer les effets négatifs des objets et Ajouter une carte {+1_WHITE}",
+                "Ignorer les effets négatifs des scénarios et Ajouter une carte {+1_WHITE}"
             ]
         },
         "DR": {
             "name": "Diviner",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove one {-2_WHITE} card",
-                "Replace two {+1_WHITE} cards with one {+3_WHITE} {SHIELD}1, Self card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1, Affect any ally card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {DARK} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT} card",
-                "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {REGENERATE}, Self card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {HEAL}2, Affect any ally card",
-                "Add two {AGAIN} {HEAL}1, Self cards",
-                "Add two {AGAIN} {CURSE} cards",
-                "Ignore negative scenario effects and add two {+1_WHITE} cards"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer une carte {-2_WHITE}",
+                "Remplacer deux cartes {+1_WHITE} par une carte {+3_WHITE} {SHIELD}1, Self carte",
+                "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {SHIELD}1, Affect any ally",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {DARK}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {LIGHT}",
+                "Remplacer une carte {+0_WHITE} par une carte {+3_WHITE} {MUDDLE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {CURSE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {REGENERATE}, Self carte",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {HEAL}2, Affect any ally",
+                "Ajouter deux cartes {AGAIN} {HEAL}1, Self",
+                "Ajouter deux cartes {AGAIN} {CURSE}",
+                "Ignorer les effets négatifs des scénarios et Ajouter deux cartes {+1_WHITE}"
             ]
         },
         "RG": {
-            "name": "Red Guard",
+            "name": "Garde Rouge",
             "perks": [
-                "Remove four {+0_WHITE} cards",
-                "Remove two {-1_WHITE} cards",
-                "Remove one {-2_WHITE} card and one {+1_WHITE} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {LIGHT} card",
-                "Add one {+1_WHITE} {FIRE_LIGHT} card",
-                "Add one {+1_WHITE} {SHIELD} 1 card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card"
+                "Retirer quatre cartes {+0_WHITE}",
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer une carte {-2_WHITE} et une carte {+1_WHITE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
+                "Remplacer une carte {+1_WHITE} par une carte {+2_WHITE} {FIRE}",
+                "Remplacer une carte {+1_WHITE} par une carte {+2_WHITE} {LIGHT}",
+                "Ajouter une carte {+1_WHITE} {FIRE_LIGHT}",
+                "Ajouter une carte {+1_WHITE} {SHIELD} 1",
+                "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {IMMOBILIZE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {WOUND}"
             ]
         },
         "DM": {
-            "name": "Demolitionist",
+            "name": "Artificier",
             "perks": [
-                "Remove four {+0_WHITE} cards",
-                "Remove two {-1_WHITE} cards",
-                "Remove one {-2_WHITE} card and one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
-                "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card",
-                "Add one {+2_WHITE} card",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {EARTH} card",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
-                "Add one {+0_WHITE} All adjacent enemies suffer 1 damage card"
+                "Retirer quatre cartes {+0_WHITE}",
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer une carte {-2_WHITE} et une carte {+1_WHITE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {MUDDLE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {POISON}",
+                "Ajouter une carte {+2_WHITE}",
+                "Remplacer une carte {+1_WHITE} par une carte {+2_WHITE} {EARTH}",
+                "Remplacer une carte {+1_WHITE} par une carte {+2_WHITE} {FIRE}",
+                "Ajouter une carte {+0_WHITE} Tous les ennemis adjacents subissent 1 dégât"
             ]
         },
         "HT": {
-            "name": "Hatchet",
+            "name": "Lanceur de hache",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {POISON} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {WOUND} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {PUSH}2 card",
-                "Remove one {+0_WHITE} card with one {+0_WHITE} {STUN} card",
-                "Remove one {+1_WHITE} card with one {+1_WHITE} {STUN} card",
-                "Add one {+2_WHITE} {WIND} card",
-                "Replace one {+1_WHITE} with one {+3_WHITE} card"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer une carte {+0_WHITE} carte par une carte {+2_WHITE} {MUDDLE}",
+                "Retirer une carte {+0_WHITE} carte par une carte {+1_WHITE} {POISON}",
+                "Retirer une carte {+0_WHITE} carte par une carte {+1_WHITE} {WOUND}",
+                "Retirer une carte {+0_WHITE} carte par une carte {+1_WHITE} {IMMOBILIZE}",
+                "Retirer une carte {+0_WHITE} carte par une carte {+1_WHITE} {PUSH}2",
+                "Retirer une carte {+0_WHITE} carte par une carte {+0_WHITE} {STUN}",
+                "Retirer une carte {+1_WHITE} carte par une carte {+1_WHITE} {STUN}",
+                "Ajouter une carte {+2_WHITE} {WIND}",
+                "Remplacer une carte {+1_WHITE} par une carte {+3_WHITE}"
             ]
         },
         "VW": {
-            "name": "Voidwarden",
+            "name": "Gardienne du néant",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove one {-2_WHITE} card",
-                "Replace one {+0_WHITE} with one {+1_WHITE} {DARK} card",
-                "Replace one {+0_WHITE} with one {+1_WHITE} {ICE} card",
-                "Replace one {-1_WHITE} with one {+0_WHITE} {HEAL}1 (Ally) card",
-                "Add one {+1_WHITE} {HEAL}1 (Ally) card",
-                "Add one {+1_WHITE} {POISON} card",
-                "Add one {+3_WHITE} card",
-                "Add one {+1_WHITE} {CURSE} card"
+                "Retirer deux cartes {-1_WHITE}",
+                "Retirer une carte {-2_WHITE}",
+                "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {DARK}",
+                "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {ICE}",
+                "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {HEAL}1 (Ally)",
+                "Ajouter une carte {+1_WHITE} {HEAL}1 (Ally)",
+                "Ajouter une carte {+1_WHITE} {POISON}",
+                "Ajouter une carte {+3_WHITE}",
+                "Ajouter une carte {+1_WHITE} {CURSE}"
             ]
         }
     },

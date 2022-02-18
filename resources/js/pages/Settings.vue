@@ -3,7 +3,7 @@
         <transfer></transfer>
         <snapshots></snapshots>
 
-        <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
+        <div class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left flex items-center">
                 <i class="material-icons mr-4" aria-hidden="true">language</i>
                 <span>{{ $t('Translations') }}</span>
@@ -21,7 +21,7 @@
             </p>
         </div>
 
-        <div id="reset" class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
+        <div id="reset" class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left flex items-center">
                 <i class="material-icons mr-4" aria-hidden="true">report_problem</i>
                 <span>{{ $t('Danger zone!') }}</span>

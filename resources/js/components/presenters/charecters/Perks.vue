@@ -51,7 +51,7 @@ export default {
             return collect(this.perks).flatten().filter().count();
         },
         minimalPerks() {
-            return this.character.level - 1 + Math.floor(collect(this.checks).filter().count() / 3);
+            return this.character.retirements + this.character.level - 1 + Math.floor(collect(this.checks).filter().count() / 3);
         }
     },
     methods: {

@@ -147,6 +147,9 @@ window.app = new Vue({
         this.$bus.$emit('open-donations');
 
         listenToCrtlS();
+
+        const languageSwitchComponent = Vue.extend(LanguageSwitch);
+        (new languageSwitchComponent()).$mount();
     },
     methods: {
         async campaignsChanged(shouldSync = true) {
@@ -247,8 +250,6 @@ window.app = new Vue({
             this.webpSupported = isWebpSupported();
             checkHasMouse(this.$bus);
             migrateVersion1Progress();
-            const languageSwitchComponent = Vue.extend(LanguageSwitch);
-            (new languageSwitchComponent()).$mount();
         }
     }
 });
