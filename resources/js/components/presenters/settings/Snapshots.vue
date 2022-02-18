@@ -1,5 +1,5 @@
 <template>
-    <div id="snapshots" class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
+    <div id="snapshots" class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
         <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left flex items-center">
             <i class="material-icons mr-4" aria-hidden="true">restore</i>
             {{ $t('snapshots.title') }}

@@ -48,7 +48,6 @@
             <data-table :columns="columns"
                         :sortable="sortable"
                         :data="scenarios.items"
-                        odd-class="bg-black2-10"
                         :initialSearch="applyFilter"
                         :sortFunctions="sortFunctions"
                         :translatable="translatable"

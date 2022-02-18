@@ -64,6 +64,10 @@ module.exports = {
                 required: '#E9A678',
                 gold: '#E2A246',
                 'light-gray': '#E0E0E0',
+                'dark-gray2': {
+                    60: 'rgba(23, 24, 25, .60)',
+                    75: 'rgba(23, 24, 25, .75)',
+                },
                 black2: {
                     10: 'rgba(0, 0, 0, .10)',
                     25: 'rgba(0, 0, 0, .25)',
