@@ -1449,13 +1449,13 @@ export default {
         "gh-1": {
             "name": "Botas de Zancadas",
             "source": "Prosperidad nivel 1",
-            "desc": "During your movement, add +2 {MOVE} to the movement.",
+            "desc": "Durante tu movimiento, añade {MOVE} +2 a un solo movimiento.",
             "faq": "Boots of Striding only add to the numerical value of an existing single movement ability. They do not give you a free movement action."
         },
         "gh-2": {
             "name": "Zapatos Alados",
             "source": "Prosperidad nivel 1",
-            "desc": "During your movement, add {JUMP} to the movement.",
+            "desc": "Durante tu movimiento, añade {JUMP} a un solo movimiento.",
             "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
         },
         "gh-3": {
@@ -1467,7 +1467,7 @@ export default {
         "gh-4": {
             "name": "Armadura de Cuero",
             "source": "Prosperidad nivel 1",
-            "desc": "When attacked, the attacker gains Disadvantage on the attack.",
+            "desc": "Cuando te ataquen, el atacante obtiene Desventaja en el ataque.",
             "faq": "The Leather Armor must be used before the enemy draws an attack modifier card."
         },
         "gh-5": {
@@ -1478,12 +1478,12 @@ export default {
         "gh-6": {
             "name": "Lentes Ojo de Águila",
             "source": "Prosperidad nivel 1",
-            "desc": "During your attack, gain Advantage on the entire Attack action."
+            "desc": "Durante tu ataque, obtén Ventaja en la acción de ataque entera."
         },
         "gh-7": {
             "name": "Yelmo de Hierro",
             "source": "Prosperidad nivel 1",
-            "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+            "desc": "Cuando te ataquen, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
         },
         "gh-8": {
             "name": "Escudo Triangular",
@@ -1519,7 +1519,7 @@ export default {
         "gh-14": {
             "name": "Poción de Poder Menor",
             "source": "Prosperidad nivel 1",
-            "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+            "desc": "Durante tu ataque, add +1 {ATTACK} to your entire Attack action."
         },
         "gh-15": {
             "name": "Botas de Velocidad",
@@ -1554,7 +1554,7 @@ export default {
         "gh-21": {
             "name": "Polvo Aturdidor",
             "source": "Prosperidad nivel 2",
-            "desc": "During your attack, add {STUN} to a single attack."
+            "desc": "Durante tu ataque, add {STUN} to a single attack."
         },
         "gh-22": {
             "name": "Grebas Pesadas",
@@ -1600,7 +1600,7 @@ export default {
         "gh-30": {
             "name": "Cuero Tachonado",
             "source": "Prosperidad nivel 4",
-            "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+            "desc": "Cuando te ataquen, el atacante obtiene Desventaja en el ataque and you gain {SHIELD} 1 for the attack."
         },
         "gh-31": {
             "name": "Yelmo de Halcón",
@@ -1632,12 +1632,12 @@ export default {
         "gh-36": {
             "name": "Botas de Carrera",
             "source": "Prosperidad nivel 5",
-            "desc": "During your movement, add +3 {MOVE} to the movement."
+            "desc": "Durante tu movimiento, add +3 {MOVE} to the movement."
         },
         "gh-37": {
             "name": "Túnica de Evocación",
             "source": "Prosperidad nivel 5",
-            "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+            "desc": "Durante tu ataque, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
         },
         "gh-38": {
             "name": "Bacinete Pesado",
@@ -1657,7 +1657,7 @@ export default {
         "gh-41": {
             "name": "Poción de Poder Mayor",
             "source": "Prosperidad nivel 5\nRecompensa de {SCENARIO 105} (Treasure #83)",
-            "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
+            "desc": "Durante tu ataque, add +2 {ATTACK} to your entire Attack action."
         },
         "gh-42": {
             "name": "Anillo de Premura",
@@ -1763,7 +1763,7 @@ export default {
         "gh-62": {
             "name": "Polvo de Mal de Ojo",
             "source": "Prosperidad nivel 8",
-            "desc": "During your attack, add {STUN}, {POISON}, and {CURSE} to a single attack."
+            "desc": "Durante tu ataque, add {STUN}, {POISON}, and {CURSE} to a single attack."
         },
         "gh-63": {
             "name": "Ojo de la Suerte",
@@ -1773,7 +1773,7 @@ export default {
         "gh-64": {
             "name": "Botas de Centella",
             "source": "Prosperidad nivel 9",
-            "desc": "During your movement, add +4 {MOVE} to the movement."
+            "desc": "Durante tu movimiento, add +4 {MOVE} to the movement."
         },
         "gh-65": {
             "name": "Arnés",
@@ -1933,7 +1933,7 @@ export default {
         "gh-96": {
             "name": "Botas Cohete",
             "source": "Recompensa de {SCENARIO 66} (Tesoro #36)",
-            "desc": "During your movement, add +3 {MOVE} and {JUMP} to a single movement"
+            "desc": "Durante tu movimiento, add +3 {MOVE} and {JUMP} to a single movement"
         },
         "gh-97": {
             "name": "Sandalias de Robustez",
@@ -2005,12 +2005,12 @@ export default {
         "gh-110": {
             "name": "Yelmo de la Montaña",
             "source": "Recompensa de {SCENARIO 82} (Tesoro #62)",
-            "desc": "When attacked, if {EARTH} is Strong, Immobilize the attacker."
+            "desc": "Cuando te ataquen, if {EARTH} is Strong, Immobilize the attacker."
         },
         "gh-111": {
             "name": "Collar de las Mareas",
             "source": "Recompensa de {SCENARIO 64} (Tesoro #09)",
-            "desc": "When attacked, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
+            "desc": "Cuando te ataquen, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
         },
         "gh-112": {
             "name": "Berbiquí Antigüo",
@@ -2112,7 +2112,7 @@ export default {
         "gh-131": {
             "name": "Corazón del Traidor",
             "source": "Recompensa de {SCENARIO 79} (Tesoro #52)",
-            "desc": "When attacked by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
+            "desc": "Cuando te ataquen by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
             "faq": "This item cannot be used if there is no other enemy in range to be attacked."
         },
         "gh-132": {
@@ -2139,7 +2139,7 @@ export default {
         "gh-136": {
             "name": "Elixir Volátil",
             "source": "Recompensa de escenario en solitario - {SW}",
-            "desc": "During your ranged attack, add +2 {ATTACK} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made."
+            "desc": "During your ranged attack, add +2 {ATTACK} and obtén Ventaja en la acción de ataque entera, but suffer 2 damage for each attack made."
         },
         "gh-137": {
             "name": "Estilete Silencioso",
@@ -2250,12 +2250,12 @@ export default {
         "gh-158": {
             "name": "Grebas de rejuvenecimiento",
             "source": "Recompensa de {SCENARIO 111} (Tesoro #82)",
-            "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}."
+            "desc": "Durante tu movimiento, añade {MOVE} +2 a un solo movimiento and gain {REGENERATE}."
         },
         "gh-159": {
             "name": "Pergamino de premura",
             "source": "Recompensa de {SCENARIO 103} (Tesoro #81)",
-            "desc": "During any one ally's movement, add +2 {MOVE} to the movement."
+            "desc": "During any one ally's movement, añade {MOVE} +2 a un solo movimiento."
         },
         "gh-160": {
             "name": "Daga de ratero",
@@ -2283,14 +2283,14 @@ export default {
             "desc": "When you reveal cards from any deck, reveal one additional card."
         },
         "jotl_1": {
-            "name": "Eagle-Eye Goggles",
+            "name": "Lentes Ojo de águila",
             "source": "Recompensa de {SCENARIO 2}",
-            "desc": "During your attack, gain Advantage on the entire Attack action."
+            "desc": "Durante tu ataque, obtén Ventaja en la acción de ataque entera."
         },
         "jotl_2": {
             "name": "Iron Helmet",
             "source": "Recompensa de {SCENARIO 2}",
-            "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+            "desc": "Cuando te ataquen, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
         },
         "jotl_3": {
             "name": "Chain Armor",
@@ -2300,17 +2300,17 @@ export default {
         "jotl_4": {
             "name": "Studded Leather",
             "source": "Recompensa de {SCENARIO 2}",
-            "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+            "desc": "Cuando te ataquen, el atacante obtiene Desventaja en el ataque and you gain {SHIELD} 1 for the attack."
         },
         "jotl_5": {
             "name": "Weathered Boots",
             "source": "Recompensa de {SCENARIO 2}",
-            "desc": "During your movement add +1 {MOVE} to a single movement."
+            "desc": "Durante tu movimiento, add +1 {MOVE} to a single movement."
         },
         "jotl_6": {
             "name": "Winged Shoes",
             "source": "Recompensa de {SCENARIO 2}",
-            "desc": "During your movement, add {JUMP} to the entire Move Action.",
+            "desc": "Durante tu movimiento, add {JUMP} to the entire Move Action.",
             "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
         },
         "jotl_7": {
@@ -2346,7 +2346,7 @@ export default {
         "jotl_13": {
             "name": "Power Potion",
             "source": "Recompensa de {SCENARIO 2}",
-            "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+            "desc": "Durante tu ataque, add +1 {ATTACK} to your entire Attack action."
         },
         "jotl_14": {
             "name": "Mana Potion",
@@ -2361,7 +2361,7 @@ export default {
         "jotl_16": {
             "name": "Robes of Evocation",
             "source": "Recompensa de {SCENARIO 9}",
-            "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+            "desc": "Durante tu ataque, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
         },
         "jotl_17": {
             "name": "Comfortable Shoes",
@@ -2381,7 +2381,7 @@ export default {
         "jotl_20": {
             "name": "Stun Powder",
             "source": "Recompensa de {SCENARIO 9}",
-            "desc": "During your attack, add {STUN} to a single attack."
+            "desc": "Durante tu ataque, add {STUN} to a single attack."
         },
         "jotl_21": {
             "name": "Hawk Helm",
@@ -2396,7 +2396,7 @@ export default {
         "jotl_23": {
             "name": "Boots of Striding",
             "source": "Recompensa de {SCENARIO 15}",
-            "desc": "During your movement, add +2 {MOVE} to a single movement."
+            "desc": "Durante tu movimiento, add +2 {MOVE} to a single movement."
         },
         "jotl_24": {
             "name": "Volatile Bomb",
@@ -2452,7 +2452,7 @@ export default {
         "jotl_34": {
             "name": "Barbed Axe",
             "source": "Recompensa de {SCENARIO 34}",
-            "desc": "During your attack, add {WOUND} to the entire Attack Action."
+            "desc": "Durante tu ataque, add {WOUND} to the entire Attack Action."
         },
         "jotl_35": {
             "name": "Robes of Command",
@@ -2462,7 +2462,7 @@ export default {
         "jotl_36": {
             "name": "Jet Boots",
             "source": "Recompensa de {SCENARIO 25}",
-            "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."
+            "desc": "Durante tu movimiento, add “+1 {MOVE} and {JUMP}” to a single movement."
         }
     },
     "treasures": {
