@@ -112,9 +112,9 @@ export default {
     "Not unlocked": "Sin desbloquear",
     "Locked": "Bloqueado",
     "Retire": "Retira",
+    "Retired": "Retirado",
     "Retirement counter": "Contador de PJ retirados",
     "Set this counter to the amount of characters your have retired. ": "Fija el contador en la cantidad de personajes que has retirado.",
-    "Retired": "Retirado",
     "Remove": "Eliminar",
     "Unlocked": "Desbloqueado",
     "Clear all": "Borrar todo",
@@ -939,12 +939,12 @@ export default {
             "name": "Un trabajo enrevesado",
             "rewards": [
                 [
-                    "175 de oro para cada personaje."
+                    "175 de oro para cada personaje.",
                     "Este dinero debe gastarse de inmediato en cualquier mejora de {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, o {DARK}"
                 ],
                 [
-                    "175 de oro para cada personaje."
-                    "Este dinero debe gastarse de inmediato en cualquier mejora de {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, o {DARK}"
+                    "175 de oro para cada personaje.",
+                    "Este dinero debe gastarse de inmediato en cualquier mejora de {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, o {DARK}",
                     "+ 1 de prosperidad"
                 ]
             ]
@@ -2223,12 +2223,12 @@ export default {
             "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
         },
         "gh-153": {
-            "name": "Antídoto menor"
+            "name": "Antídoto menor",
             "source": "Recompensa de {SCENARIO 99}",
             "desc": "The next three times you would gain {POISON} prevent the condition."
         },
         "gh-154": {
-            "name": "Antídoto mayor"
+            "name": "Antídoto mayor",
             "source": "Recompensa de {SCENARIO 105}",
             "desc": "The next five times you would gain {POISON} prevent the condition."
         },
@@ -2242,7 +2242,7 @@ export default {
             "source": "Desconocido",
             "desc": "During your melee attack, {ANY_X} to add +2 {ATTACK} to a single attack."
         },
-         "gh-157": {
+        "gh-157": {
             "name": "Arco antiguo",
             "source": "Recompensa de {SCENARIO 107} (Tesoro #78)\nSección 32 “Collapsed Atrium” in book",
             "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack."
@@ -3871,7 +3871,7 @@ export default {
                 "1": "{1}{2}",
                 "2": "{1}{2}{3}"
             }
-         },
+        },
         "72": {
             "name": "El trato del Concejal",
             "sections": {
