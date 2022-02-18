@@ -163,6 +163,33 @@ describe('Character', () => {
         cy.get('h2').contains('Personal Quest #510');
     });
 
+    it('It can track retirements', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+        utilities.scrollTo('80%');
+
+        let message = 'You may select an additional perk!';
+
+        cy.get('p').contains(message).should('not.exist');
+
+        cy.get(`input[aria-labelledby="level"]`).clear({force: true}).type('2{enter}');
+
+        cy.get('p').contains(message).should('exist');
+
+        cy.get(`input[aria-labelledby="retirements"]`).clear({force: true}).type('1{enter}');
+
+        cy.get('p').contains(message).should('exist');
+
+        cy.get('#perk-8-0').click();
+
+        cy.get('p').contains(message).should('exist');
+
+        cy.get('#perk-9-0').click();
+
+        cy.get('p').contains(message).should('not.exist');
+    });
+
     it('It stores the character sheet', () => {
         cy.visit('/tracker/#/characters');
         utilities.openCharacter();
@@ -182,6 +209,7 @@ describe('Character', () => {
         cy.get(`input[name="personal-quests"]`).click();
         cy.get('li').contains('#510 Seeker of Xorn').click();
         cy.get('#pq-0-0').click();
+        cy.get('input[aria-labelledby="retirements"]').clear({force: true}).type('2{enter}');
 
         cy.reload();
 
@@ -194,6 +222,7 @@ describe('Character', () => {
         cy.get('#notes').should('have.value', 'Foo Bar');
         cy.get('h3').contains('#510 Seeker of Xorn');
         cy.get('#pq-0-0').should('be.checked');
+        cy.get('input[aria-labelledby="retirements"]').should('have.value', '2');
     });
 
 });
