@@ -75,7 +75,7 @@ export default {
     "Perks": "Pericias",
     "Battle Goals": "Objetivos de batalla",
     "You may select an additional perk!": "¡Puedes seleccionar una pericia adicional!",
-    "Level up when you're back in town!": "¡Sube de nivel cuando vuelvas a la ciudad!",
+    "Level up when youre back in town": "¡Sube de nivel cuando vuelvas a la ciudad!",
     "Number or Name": "Número o Nombre",
     "No items available": "No hay objetos disponibles",
     "Buy me a Beer": "¡Invítame a una cerveza!",
