@@ -64,6 +64,7 @@ export default {
     "Clues": "Clues",
     "Open envelope": "Open envelope",
     "Open box": "Open box",
+    "Envelope X solution": "Envelope X solution",
     "Additional notes": "Additional notes",
     "Items": "Items",
     "Add Items": "Add Items",
@@ -2801,7 +2802,7 @@ export default {
             "name": "Seeker of Xorn",
             "progress": [
                 "Complete three Crypt scenarios.",
-                "Conclude {SCENARIO 52}.",
+                "Conclude {SCENARIO 52}."
             ]
         },
         "gh-511": {
@@ -2811,13 +2812,13 @@ export default {
                 "Own two {HEAD} items.",
                 "Own two {LEGS} items.",
                 "Own three {ONE-HAND} or {TWO-HANDS} items.",
-                "Own four {SMALL-ITEM} items.",
+                "Own four {SMALL-ITEM} items."
             ]
         },
         "gh-512": {
             "name": "Greed is Good",
             "progress": [
-                "Have 200 gold in your possession.",
+                "Have 200 gold in your possession."
             ]
         },
         "gh-513": {
@@ -2825,63 +2826,63 @@ export default {
             "unlock": "Open envelope X",
             "progress": [
                 "Kill eight Forest Imps.",
-                "Conclude {SCENARIO 59}.",
+                "Conclude {SCENARIO 59}."
             ]
         },
         "gh-514": {
             "name": "A Study of Anatomy",
             "progress": [
-                "Experience your party members becoming exhausted fifteen times.",
+                "Experience your party members becoming exhausted fifteen times."
             ]
         },
         "gh-515": {
             "name": "Law Bringer",
             "progress": [
-                "Kill twenty Bandits or Cultists.",
+                "Kill twenty Bandits or Cultists."
             ]
         },
         "gh-516": {
             "name": "Pounds of Flesh",
             "progress": [
-                "Kill fifteen Vermlings.",
+                "Kill fifteen Vermlings."
             ]
         },
         "gh-517": {
             "name": "Trophy Hunt",
             "progress": [
-                "Kill twenty different types of monsters.",
+                "Kill twenty different types of monsters."
             ]
         },
         "gh-518": {
             "name": "Eternal Wanderer",
             "progress": [
-                "Complete fifteen different scenarios.",
+                "Complete fifteen different scenarios."
             ]
         },
         "gh-519": {
             "name": "Battle Legend",
             "progress": [
-                "Earn fifteen ✔ from completed battle goals.",
+                "Earn fifteen ✔ from completed battle goals."
             ]
         },
         "gh-520": {
             "name": "Implement of Light",
             "progress": [
                 "Find the Skullbane Axe in the Necromancer's Sanctum.",
-                "Use it to kill seven Living Bones, Living Corpses, or Living Spirits.",
+                "Use it to kill seven Living Bones, Living Corpses, or Living Spirits."
             ]
         },
         "gh-521": {
             "name": "Take Back the Trees",
             "progress": [
                 "Complete three scenarios in the Dagger Forest.",
-                "Conclude {SCENARIO 55}.",
+                "Conclude {SCENARIO 55}."
             ]
         },
         "gh-522": {
             "name": "The Thin Places",
             "progress": [
-                "Complete six side scenarios.",
+                "Complete six side scenarios."
             ]
         },
         "gh-523": {
@@ -2892,19 +2893,19 @@ export default {
                 "Kill one Wind Demon.",
                 "Kill one Earth Demon.",
                 "Kill one Night Demon.",
-                "Kill one Sun Demon.",
+                "Kill one Sun Demon."
             ]
         },
         "gh-524": {
             "name": "Fearless Stand",
             "progress": [
-                "Kill twenty elite monsters.",
+                "Kill twenty elite monsters."
             ]
         },
         "gh-525": {
             "name": "Piety in All Things",
             "progress": [
-                "Donate 120 gold to the Sanctuary of the Great Oak.",
+                "Donate 120 gold to the Sanctuary of the Great Oak."
             ]
         },
         "gh-526": {
@@ -2912,32 +2913,32 @@ export default {
             "unlock": "Open Envelope X",
             "progress": [
                 "Complete four scenarios in Gloomhaven.",
-                "Conclude {SCENARIO 57}.",
+                "Conclude {SCENARIO 57}."
             ]
         },
         "gh-527": {
             "name": "Zealot of the Blood God",
             "progress": [
-                "Become exhausted twelve times.",
+                "Become exhausted twelve times."
             ]
         },
         "gh-528": {
             "name": "Goliath Toppler",
             "progress": [
-                "Complete four boss scenarios",
+                "Complete four boss scenarios"
             ]
         },
         "gh-529": {
             "name": "The Fall of Man",
             "progress": [
                 "Complete 2 Lingering Swamp scenarios.",
-                "Conclude {SCENARIO 61}.",
+                "Conclude {SCENARIO 61}."
             ]
         },
         "gh-530": {
             "name": "Augmented Abilities",
             "progress": [
-                "Purchase four enhancements.",
+                "Purchase four enhancements."
             ]
         },
         "gh-531": {
@@ -2948,13 +2949,13 @@ export default {
                 "Complete a scenario in Lingering Swamp",
                 "Complete a scenario in Watcher Mountains",
                 "Complete a scenario in Copperneck Mountains",
-                "Complete a scenario in Misty Sea.",
+                "Complete a scenario in Misty Sea."
             ]
         },
         "gh-532": {
             "name": "A Helping Hand",
             "progress": [
-                "Experience two other characters achieving their personal quests.",
+                "Experience two other characters achieving their personal quests."
             ]
         },
         "gh-533": {
@@ -2962,7 +2963,7 @@ export default {
             "progress": [
                 "Kill three Oozes.",
                 "Kill three Lurkers.",
-                "Kill three Spitting Drakes.",
+                "Kill three Spitting Drakes."
             ]
         }
     },

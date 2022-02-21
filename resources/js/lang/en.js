@@ -64,6 +64,7 @@ export default {
     "Clues": "Clues",
     "Open envelope": "Open envelope",
     "Open box": "Open box",
+    "Envelope X solution": "Envelope X solution",
     "Additional notes": "Additional notes",
     "Items": "Items",
     "Add Items": "Add Items",
