@@ -155,6 +155,7 @@ export default {
         "title": "Jouer à Havrenuit avec Gloomhaven Storyline",
         "text": "Pour jouer à Havrenuit, mes amis et moi nous réunissons une fois par semaine - une pause bienvenue dans notre vie de tout les jours. Chacun d'entre nous a apporté quelque chose pour renforcer notre plaisir de jouer à ce jeu. Ma contribution est ce diagramme intéractif, pour garder en mémoire nos progès à travers le jeu et faciliter le choix d'un nouveau scénario. Avec quelques boissons et snacks, nous sommes prêts à commencer."
     },
+    "Contributions": "Contributions",
     "contribute": {
         "text-1": "Support the project by joining the Patreon. You'll earn my deepest gratitude. You make it possible for me to maintain the tracker and keep the new features coming.",
         "text-2": "Patrons can create unlimited shared campaigns. In addition they can vote on new features and are notified when new features roll out!"
