@@ -233,6 +233,7 @@ export default {
     "fc": "Forgotten Circles",
     "Jaws of the Lion": "Jaws of the Lion",
     "jotl": "Jaws of the Lion",
+    "Availability": "Availability",
     "Sticker": "Sticker",
     "State": "State",
     "Name": "Name",
