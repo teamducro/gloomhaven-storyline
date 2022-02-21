@@ -1,6 +1,6 @@
 <template>
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
-        <div id="party" class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
+        <div id="party" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
@@ -298,10 +298,10 @@ export default {
             this.storySyncer.store();
         },
         draw(checkedItems, isCity = true) {
-            let id = [...checkedItems].sort((a, b) => 0.5 - Math.random())[0];
+            let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
             if (id) {
                 const card = (isCity ? 'C' : 'R') + '-' + id;
-                this.$bus.$emit('open-card', {id: card, game: this.game});
+                this.$bus.$emit('open-event-card', {id: card, game: this.game});
             }
         },
         removeCard(card) {

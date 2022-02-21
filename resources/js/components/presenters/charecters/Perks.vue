@@ -10,7 +10,7 @@
                           :checked="perks[perkIndex][index]"
                           @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
                 <p class="ml-2 mt-1 mb-1">
-                    <add-links-and-icons :text="perkDescription.desc"/>
+                    <add-links-and-icons :text="$t(perkDescription.desc)"/>
                 </p>
             </div>
         </div>
@@ -51,7 +51,7 @@ export default {
             return collect(this.perks).flatten().filter().count();
         },
         minimalPerks() {
-            return this.character.level - 1 + Math.floor(collect(this.checks).filter().count() / 3);
+            return this.character.retirements + this.character.level - 1 + Math.floor(collect(this.checks).filter().count() / 3);
         }
     },
     methods: {

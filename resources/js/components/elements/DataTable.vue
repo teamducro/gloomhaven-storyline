@@ -1,7 +1,7 @@
 <template>
     <div class="min-w-full rounded-lg overflow-hidden">
         <table class="min-w-full divide-y">
-            <thead class="bg-black2-25">
+            <thead class="bg-dark-gray2-75">
             <tr>
                 <th v-for="column in columns" scope="col"
                     class="px-1 py-2 md:p-3 text-left text-xs font-medium text-white uppercase tracking-wider"
@@ -39,13 +39,15 @@
             </tr>
             </tbody>
         </table>
-        <p class="px-1 md:px-3 pb-2 bg-black2-25" v-if="loaded && rows.length <= 0">
+        <p class="px-1 md:px-3 pb-2 bg-dark-gray2-75" v-if="loaded && rows.length <= 0">
             {{ noResults }}
         </p>
     </div>
 </template>
 
 <script>
+import Helpers from "../../services/Helpers";
+
 export default {
     props: {
         data: {
@@ -78,11 +80,11 @@ export default {
         },
         oddClass: {
             type: String,
-            default: ''
+            default: 'bg-dark-gray2-60'
         },
         evenClass: {
             type: String,
-            default: 'bg-black2-25'
+            default: 'bg-dark-gray2-75'
         },
         noResults: {
             type: String,
@@ -113,11 +115,18 @@ export default {
             const keys = Object.keys(this.search)
             let result = {}
             keys.forEach(key => {
-                const searchString = this.search[key]
+                const searchString = this.search[key];
                 if (!searchString) {
                     return
                 }
-                result[key] = (input) => (input ? input.toString().toLowerCase().includes(searchString.toString().toLowerCase()) : false);
+                result[key] = (input) => {
+                    if (!input) {
+                        return false;
+                    }
+                    
+                    input = this.translatable.includes(key) ? app.$t(input) : input;
+                    return Helpers.sanitize(input.toString()).includes(Helpers.sanitize(searchString.toString()));
+                }
             });
             return result;
         },

@@ -11,6 +11,13 @@ describe('Share', () => {
         utilities.isNodeIncomplete(4);
     });
 
+    it('It redirects to the correct page after sharing', () => {
+        cy.visit('#/shared/1/local/N4RozgjARAXKYBcQGMC+AaEBDA5gYQCVZQswBtKAcUIFkoBdDbaguubAdxAk2QHseIADYgADEywAFAGIBlYp268BmEeMxgATAsQomYAMw6kAS30AWYyDOogA/items');
+
+        cy.url().should('include', '/items');
+        cy.get('#items').contains('Boots of Striding');
+    });
+
     it('It shares the party sheet', () => {
         cy.visit('/tracker/#/shared/1/local/N4RozgjARAXKDGALAdgVwDboDQmVKOADvGpjmAC4gCWOFA2gLoC+OAhgOYDCASrKGzD0oAcV4BZKC3ZiekuCDYB3EBBzwA9mpDoQABlbhECRG3qqc2q5Zv6ce+47vOHLp672McAEwh7-ONTewFAA7NAwdmEATLBRoQDMcQ5hACzJWGEArBlhAGy5oaGFAByFAJy5JXpVEVElsZEpJUlNmSXpbVAlOV0lBX3FfWV9lV3lNeN1KeWNUeWt853zvfqGeABiGhoABABCbABOBCCE1HlZOIfRrqjmHu6PLizMQA');
         cy.visit('/tracker/#/party');

@@ -18,7 +18,7 @@
 
                     <div class="mdc-list w-40">
                         <p class="text-white text-sm">
-                            Add achievements gained by events other than completing scenarios manually.
+                            {{ $t('Add achievements gained by events other than completing scenarios manually') }}.
                         </p>
                         <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="achievement-to-add">
                             <span class="mdc-text-field__ripple"></span>
@@ -33,7 +33,7 @@
                             aria-orientation="vertical" tabindex="-1">
                             <li v-for="achievement in achievementsToAdd"
                                 class="mdc-list-item cursor-pointer" @click="addAchievement(achievement)">
-                                <span class="mdc-list-item__text">{{ achievement.name }}</span>
+                                <span class="mdc-list-item__text">{{ $t(achievement.name) }}</span>
                             </li>
                         </ul>
                     </div>
@@ -44,7 +44,7 @@
                 <h1>{{ $t('Global') }} {{ $t('Achievements') }}</h1>
             </div>
             <div class="w-full flex justify-center">
-                <ul v-if="achievements" id="global-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
+                <ul v-if="achievements" id="global-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="global-list">
                     <li v-for="achievement in achievements.items"
                         v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
@@ -53,7 +53,7 @@
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-75">
-                        {{ achievement.displayName }}
+                        {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
                     </span>
                         </template>
                     </li>
@@ -65,7 +65,7 @@
                 <h1>{{ $t('Party') }} {{ $t('Achievements') }}</h1>
             </div>
             <div class="w-full flex justify-center">
-                <ul v-if="achievements" id="party-achievements" class="mdc-list bg-black2-25 p-2 rounded-lg mt-4"
+                <ul v-if="achievements" id="party-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="party-list">
                     <li v-for="achievement in achievements.items"
                         v-if="achievement.isParty() && achievement.awarded"
@@ -74,7 +74,7 @@
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-75">
-                        {{ achievement.name }}
+                        {{ $t(achievement.name) }}
                     </span>
                         </template>
                     </li>

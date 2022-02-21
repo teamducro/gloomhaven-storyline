@@ -1,6 +1,6 @@
 <template>
     <div v-if="sheet" :key="sheetHash" class="pt-12 pb-4 px-4 md:px-8">
-        <div id="characters" class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
+        <div id="characters" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs class="hidden sm:block"
                   :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
@@ -10,7 +10,7 @@
             />
             <h1 class="hidden sm:inline-block mt-4 text-xl">{{ campaignName }}
                 <span v-if="character && selected"
-                      class="pl-4">{{ character.characterName }}</span>
+                      class="pl-4">{{ $t(character.characterName) }}</span>
             </h1>
 
             <add-character ref="add-character" :sheet="sheet" @create="create"/>
@@ -32,7 +32,7 @@
                                 <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="name-field">
                                     <span class="mdc-text-field__ripple"></span>
                                     <input class="mdc-text-field__input" aria-labelledby="name"
-                                           type="text" name="name" v-model="character.name" @change="store">
+                                           type="text" name="name" v-model="nameText" @change="store">
                                     <span class="mdc-floating-label" id="name">{{ $t('Name') }}</span>
                                     <span class="mdc-line-ripple"></span>
                                 </label>
@@ -85,13 +85,13 @@
                             >
                                 <span class="flex items-center mr-6" slot="label" slot-scope="{item}">
                                     <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                    <span>{{ items[item].number }} {{ items[item].name }}</span>
+                                    <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
                                 </span>
                                 <div slot="item" slot-scope="{item}"
                                      class="cursor-pointer flex items-center border-b border-white2-50 py-1"
                                      @click="openItemModel(item)">
                                     <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                    <span>{{ items[item].number }} {{ items[item].name }}</span>
+                                    <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
                                     <span @click.stop="$refs.items.deselect(item)"
                                           class="ml-auto material-icons">clear</span>
                                 </div>
@@ -104,10 +104,18 @@
                                 </button>
                             </router-link>
 
+                            <personal-quests v-if="game !== 'jotl'"
+                                             :quest.sync="character.quest"
+                                             :game="character.game"
+                                             :sheet="sheet"
+                                             @change="store"/>
+
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
-                            <perks :checks.sync="character.checks" :perks.sync="character.perks"
-                                   :character="character" @change="store"/>
+                            <perks :checks.sync="character.checks"
+                                   :perks.sync="character.perks"
+                                   :character="character"
+                                   @change="store"/>
                         </div>
                     </div>
 
@@ -116,6 +124,19 @@
                         <notes :value.sync="character.notes" id="notes" :label="$t('Notes')"
                                @change="store" :is-local-campaign="isLocalCampaign"
                         ></notes>
+                    </div>
+
+                    <div class="mt-8">
+                        <div class="mb-2 flex items-center">
+                            <h2>{{ $t('Retirement counter') }}</h2>
+                            <rollback v-show="!loading" ref="level-rollback"
+                                      :value.sync="character.retirements"></rollback>
+                        </div>
+                        <number-field :value.sync="character.retirements" :min="0" :max="20"
+                                      id="retirements" @change="store"></number-field>
+                        <p class="text-sm">
+                            {{ $t('Set this counter to the amount of characters your have retired.') }}
+                        </p>
                     </div>
 
                     <div class="my-8">
@@ -198,15 +219,18 @@ import ItemRepository from "../repositories/ItemRepository";
 import store from "store/dist/store.modern";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemAvailability from "../services/ItemAvailability";
+import Helpers from "../services/Helpers";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
+            game: null,
             sheet: null,
             sheetHash: null,
             selected: null,
             character: null,
+            nameText: null,
             campaignName: null,
             loading: true,
             sheetItems: {},
@@ -244,6 +268,7 @@ export default {
         async render() {
             this.loading = true;
 
+            this.game = app.game;
             this.sheet = this.sheetRepository.make(app.game);
             this.campaignName = this.getCampaignName();
 
@@ -325,6 +350,9 @@ export default {
             }
 
             if (this.character) {
+                this.nameText = this.character.name !== this.character.characterName
+                    ? this.character.name
+                    : this.$t(this.character.characterName);
                 this.selected = uuid;
                 this.refreshItems();
                 this.rerender();
@@ -337,6 +365,7 @@ export default {
         selectDemo() {
             this.selected = null;
             this.character = Character.make('demo', app.game, 'BR');
+            this.nameText = this.$t(this.character.characterName);
             this.rerender();
         },
         create(id) {
@@ -358,10 +387,13 @@ export default {
             this.refreshOutOfStockItems();
         },
         store() {
-            if (this.loading) {
+            if (this.loading || !this.selected) {
                 return;
             }
 
+            if (this.nameText !== this.character.name) {
+                this.character.name = this.nameText;
+            }
             this.character.store();
             this.storySyncer.store();
         },
@@ -396,7 +428,7 @@ export default {
             // This allows to find items based on id and it's name.
             return (id) => {
                 return id.toLowerCase().startsWith(query)
-                    || this.items[id].name.toLowerCase().replace('-', ' ').startsWith(query);
+                    || Helpers.sanitize(this.$t(this.items[id].name)).startsWith(query);
             }
         },
         renderHtml(html) {

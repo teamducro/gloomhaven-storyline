@@ -1,7 +1,7 @@
 <template xmlns="http://www.w3.org/1999/html">
     <div>
         <button type="button" @click="toggle"
-                class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 !bg-black2-50 rounded-full">
+                class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 !bg-dark-gray2-75 rounded-full">
             menu
         </button>
 
@@ -12,9 +12,6 @@
                 </a>
             </div>
             <div class="mdc-drawer__content">
-                <div v-if="showCampaignSwitch" class="m-2" style="width: calc(100% - 1em);">
-                    <campaign-switch ref="campaign-switch"></campaign-switch>
-                </div>
                 <div class="mdc-list-group">
                     <!--
                     <div v-if="user" class="mx-4 mb-4 flex items-center">
@@ -48,15 +45,8 @@
                             <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
                                 <inline-svg src="icons/story" class="mdc-list-item__graphic" aria-hidden="true"/>
                                 <span class="mdc-list-item__text">{{ $t('Storyline') }}</span>
-                                <button type="button" @click="expandGameSwitch = !expandGameSwitch; preventToggle()"
-                                        class="mdc-icon-button material-icons mdc-button--raised transition-transform transform rounded-full ml-auto p-0 !bg-transparent !text-white2-87 cursor-pointer"
-                                        :class="{'rotate-270': expandGameSwitch, 'rotate-90': !expandGameSwitch}">
-                                    play_circle_outline
-                                </button>
                             </router-link>
                         </li>
-
-                        <game-switch @click="toggle" v-if="expandGameSwitch"></game-switch>
 
                         <li @click="toggle">
                             <router-link to="/map" class="mdc-list-item" active-class="mdc-list-item--activated">
@@ -159,8 +149,11 @@
                         </li>
                     </ul>
                 </div>
+                <div v-if="showCampaignSwitch" class="m-2" style="width: calc(100% - 1em);">
+                    <campaign-switch ref="campaign-switch"></campaign-switch>
+                </div>
                 <div class="m-2" style="width: calc(100% - 1em);">
-                    <language-switch @help="toggle"></language-switch>
+                    <game-switch ref="game-switch"></game-switch>
                 </div>
             </div>
         </aside>
@@ -178,6 +171,7 @@ import {MDCDrawer} from "@material/drawer/component";
 import Helpers from "../../services/Helpers";
 import AuthRepository from "../../apiRepositories/AuthRepository";
 import StoryRepository from "../../repositories/StoryRepository";
+import {scrollTo} from 'scroll-js';
 
 const md5 = require('js-md5');
 
@@ -189,7 +183,6 @@ export default {
             user: null,
             currentRoute: null,
             stopToggle: false,
-            expandGameSwitch: false,
             loggedIn: Helpers.loggedIn(),
             showCampaignSwitch: false,
             auth: new AuthRepository(),
@@ -209,7 +202,6 @@ export default {
             this.drawer.open = !this.drawer.open;
             if (this.drawer.open) {
                 this.currentRoute = this.$router.currentRoute.path;
-                this.expandGameSwitch = false;
                 this.stopToggle = false;
 
                 // load campaign options

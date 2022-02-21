@@ -49,9 +49,7 @@
             this.emailField = new MDCTextField(this.$refs['email']);
         },
         destroyed() {
-            if (this.emailField) {
-                this.emailField.destroy();
-            }
+            this.emailField?.destroy();
         },
         methods: {
             requestLoginLink(e) {

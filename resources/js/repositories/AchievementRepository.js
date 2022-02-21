@@ -5,6 +5,7 @@ import {ScenarioState} from "../models/ScenarioState";
 import StorySyncer from "../services/StorySyncer";
 import GameData from "../services/GameData";
 import ScenarioCompletedService from "../services/ScenarioCompletedService";
+import Helpers from "../services/Helpers";
 
 export default class AchievementRepository {
 
@@ -95,12 +96,19 @@ export default class AchievementRepository {
     }
 
     lose(id) {
-        let achievement = this.find(id);
+        const achievement = this.find(id);
         achievement.lose();
     }
 
     find(id) {
-        return app.achievements.firstWhere('id', id);
+        const achievement = app.achievements.firstWhere('id', id);
+
+        if (!achievement) {
+            let message = 'Something went wrong, please refresh and try again.';
+            app.$bus.$emit('toast', message, false);
+        }
+
+        return achievement;
     }
 
     findMany(list) {
@@ -114,11 +122,11 @@ export default class AchievementRepository {
     }
 
     searchManual(query) {
-        query = query.trim().toLowerCase().replace('-', ' ');
+        query = Helpers.sanitize(query);
         return this.where((achievement) => {
             return achievement.is_manual
                 && !achievement.manual_awarded
-                && achievement.name.toLowerCase().replace('-', ' ').startsWith(query);
+                && Helpers.sanitize(achievement._name).startsWith(query);
         });
     }
 

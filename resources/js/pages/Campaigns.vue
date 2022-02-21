@@ -100,7 +100,7 @@
             </div>
         </template>
 
-        <div id="campaigns" class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
+        <div id="campaigns" class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left">
                 Campaigns
             </h1>
@@ -120,11 +120,11 @@
         </div>
 
         <div id="add-shared-campaign-container" class="m-auto w-full max-w-3xl lg:flex">
-            <div class="bg-black2-25 p-4 rounded-lg mt-8 lg:mr-4 lg:flex-1">
+            <div class="bg-dark-gray2-75 p-4 rounded-lg mt-8 lg:mr-4 lg:flex-1">
                 <add-shared-campaign :init-code="initCode"/>
             </div>
 
-            <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl lg:ml-4 lg:flex-1">
+            <div class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl lg:ml-4 lg:flex-1">
                 <request-login-link/>
             </div>
         </div>
@@ -193,7 +193,7 @@
             </div>
         </template>
 
-        <div class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
+        <div class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h2 class="text-xl">How does it work?</h2>
 
             <ul class="list-disc ml-4 leading-relaxed">
@@ -220,7 +220,7 @@
             </p>
         </div>
 
-        <div v-if="showPurchaseButton" class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
+        <div v-if="showPurchaseButton" class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h2 class="text-xl">Support the project</h2>
             <p class="text-base">
                 {{ !loggedIn ? '* ' : '' }}
@@ -231,7 +231,7 @@
                 <purchase class="inline link">purchasing a license.</purchase>
             </p>
         </div>
-        <div v-else class="bg-black2-25 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
+        <div v-else class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h2 class="text-xl">Thanks for joining the Patreon! 🤩</h2>
         </div>
     </div>

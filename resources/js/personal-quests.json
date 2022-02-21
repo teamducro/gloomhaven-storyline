@@ -1,0 +1,534 @@
+[
+    {
+        "id": 510,
+        "name": "Seeker of Xorn",
+        "character_unlock": "PH",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Complete three Crypt scenarios.",
+                "scenario_unlock": 52,
+                "value": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO 52}.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 511,
+        "name": "Merchant Class",
+        "character_unlock": "QM",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Own two {BODY} items.",
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Own two {HEAD} items.",
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Own two {LEGS} items.",
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Own three {ONE-HAND} or {TWO-HANDS} items.",
+                "value": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Own four {SMALL-ITEM} items.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 512,
+        "name": "Greed is Good",
+        "character_unlock": "QM",
+        "progress": [
+            {
+                "type": "number",
+                "name": "Have 200 gold in your possession.",
+                "value": 0,
+                "target": 200
+            }
+        ]
+    },
+    {
+        "id": 513,
+        "name": "Finding the Cure",
+        "unlock": "Open envelope X",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Kill eight Forest Imps.",
+                "scenario_unlock": 59,
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO 59}.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 514,
+        "name": "A Study of Anatomy",
+        "character_unlock": "SB",
+        "progress": [
+            {
+                "type": "number",
+                "name": "Experience your party members becoming exhausted fifteen times.",
+                "value": 0,
+                "target": 15
+            }
+        ]
+    },
+    {
+        "id": 515,
+        "name": "Law Bringer",
+        "character_unlock": "SK",
+        "progress": [
+            {
+                "type": "number",
+                "name": "Kill twenty Bandits or Cultists.",
+                "value": 0,
+                "target": 15
+            }
+        ]
+    },
+    {
+        "id": 516,
+        "name": "Pounds of Flesh",
+        "character_unlock": "BE",
+        "progress": [
+            {
+                "type": "number",
+                "name": "Kill fifteen Vermlings.",
+                "value": 0,
+                "target": 15
+            }
+        ]
+    },
+    {
+        "id": 517,
+        "name": "Trophy Hunt",
+        "character_unlock": "BT",
+        "progress": [
+            {
+                "type": "number",
+                "name": "Kill twenty different types of monsters.",
+                "value": 0,
+                "target": 20
+            }
+        ]
+    },
+    {
+        "id": 518,
+        "name": "Eternal Wanderer",
+        "character_unlock": "SU",
+        "progress": [
+            {
+                "type": "number",
+                "name": "Complete fifteen different scenarios.",
+                "value": 0,
+                "target": 15
+            }
+        ]
+    },
+    {
+        "id": 519,
+        "name": "Battle Legend",
+        "character_unlock": "SS",
+        "progress": [
+            {
+                "type": "number",
+                "name": "Earn fifteen ✔ from completed battle goals.",
+                "value": 0,
+                "target": 15
+            }
+        ]
+    },
+    {
+        "id": 520,
+        "name": "Implement of Light",
+        "character_unlock": "SK",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Find the Skullbane Axe in the Necromancer's Sanctum.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Use it to kill seven Living Bones, Living Corpses, or Living Spirits.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 521,
+        "name": "Take Back the Trees",
+        "character_unlock": "DS",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Complete three scenarios in the Dagger Forest.",
+                "scenario_unlock": 55,
+                "value": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO 55}.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 522,
+        "name": "The Thin Places",
+        "character_unlock": "NS",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Complete six side scenarios.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 523,
+        "name": "Aberrant Slayer",
+        "character_unlock": "EL",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Kill one Flame Demon.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Kill one Frost Demon.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Kill one Wind Demon.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Kill one Earth Demon.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Kill one Night Demon.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Kill one Sun Demon.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 524,
+        "name": "Fearless Stand",
+        "character_unlock": "BT",
+        "progress": [
+            {
+                "type": "number",
+                "name": "Kill twenty elite monsters.",
+                "value": 0,
+                "target": 20
+            }
+        ]
+    },
+    {
+        "id": 525,
+        "name": "Piety in All Things",
+        "character_unlock": "SB",
+        "progress": [
+            {
+                "type": "number",
+                "name": "Donate 120 gold to the Sanctuary of the Great Oak.",
+                "value": 0,
+                "target": 120
+            }
+        ]
+    },
+    {
+        "id": 526,
+        "name": "Vengeance",
+        "unlock": "Open Envelope X",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Complete four scenarios in Gloomhaven.",
+                "scenario_unlock": 57,
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO 57}.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 527,
+        "name": "Zealot of the Blood God",
+        "character_unlock": "BE",
+        "progress": [
+            {
+                "type": "number",
+                "name": "Become exhausted twelve times.",
+                "value": 0,
+                "target": 12
+            }
+        ]
+    },
+    {
+        "id": 528,
+        "name": "Goliath Toppler",
+        "character_unlock": "DS",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Complete four boss scenarios",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 529,
+        "name": "The Fall of Man",
+        "character_unlock": "NS",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Complete 2 Lingering Swamp scenarios.",
+                "scenario_unlock": 61,
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO 61}.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 530,
+        "name": "Augmented Abilities",
+        "character_unlock": "SU",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Purchase four enhancements.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 531,
+        "name": "Elemental Samples",
+        "character_unlock": "EL",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in Gloomhaven.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in Dagger Forest.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in Lingering Swamp",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in Watcher Mountains",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in Copperneck Mountains",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in Misty Sea.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 532,
+        "name": "A Helping Hand",
+        "character_unlock": "SS",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Experience two other characters achieving their personal quests.",
+                "value": [
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 533,
+        "name": "The Perfect Poison",
+        "character_unlock": "PH",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Kill three Oozes.",
+                "value": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Kill three Lurkers.",
+                "value": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Kill three Spitting Drakes.",
+                "value": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    }
+]

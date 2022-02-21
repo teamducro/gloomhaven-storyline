@@ -48,7 +48,6 @@
             <data-table :columns="columns"
                         :sortable="sortable"
                         :data="scenarios.items"
-                        odd-class="bg-black2-10"
                         :initialSearch="applyFilter"
                         :sortFunctions="sortFunctions"
                         :translatable="translatable"
@@ -62,6 +61,9 @@
                             :class="{'opacity-50': !row.is_side}">#{{ row.id }}
                         </td>
                     </template>
+                </template>
+                <template slot="name" slot-scope="{value, row}">
+                    {{ row.number }} {{ $t(value) }}
                 </template>
                 <template slot="image" slot-scope="{value, row}">
                     <webp :src="row.image()"
@@ -138,7 +140,7 @@ export default {
             this.columns = (new When).filter([
                 {id: 'image', name: 'Sticker'},
                 {id: 'state', name: 'State'},
-                {id: 'title', name: 'Name'},
+                {id: 'name', name: 'Name'},
                 new When(this.regions.length, {id: 'regions', name: 'Region', classes: 'hidden sm:table-cell'}),
                 {id: 'chapter_name', name: 'Chapter', classes: 'hidden md:table-cell'},
                 {id: 'lootedAllTreasures', name: 'Looted', classes: 'hidden xs:table-cell'},

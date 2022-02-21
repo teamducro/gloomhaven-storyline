@@ -10,6 +10,24 @@ export default {
     "Open source": "Open source",
     "Info": "Info",
     "Settings": "Einstellungen",
+    "transfer": {
+        "title": "Transfer campaign data",
+        "text": "Copy campaign data between campaigns can be done easily.",
+        "warning": {
+            "text": "Campaign data can only be transferred if you purchased a shared campaign."
+        }
+    },
+    "Please consider purchasing a license": "Please consider purchasing a license",
+    "Danger zone!": "Danger zone!",
+    "Alternatively you may": "Alternatively you may",
+    "a campaign link": "a campaign link",
+    "snapshots": {
+        "title": "Snapshots",
+        "text-1": "If you ever lose campaign progress you can use these automatic snapshots to revert unwanted changes!",
+        "text-2": "Snapshots are only available for shared campaigns because they're stored in the cloud.",
+        "only-owner": "Only owners of this campaign can manage snapshots",
+        "no-snapshots": "There are no snapshots yet"
+    },
     "Characters": "Charaktere",
     "Character sheet": "Charakter-Blatt",
     "Party sheet": "Gruppen-Blatt",
@@ -58,30 +76,8 @@ export default {
     "Battle Goals": "Kampfziele",
     "You may select an additional perk!": "Du erhälst eine zusätztliche Verbesserung!",
     "Number or Name": "Nummer oder Name",
-    "No items found": "Keine Gegenstände gefunden",
+    "No items available": "No items available",
     "Buy me a Beer": "Gib mir ein Bier aus!",
-    "Intro": "Einleitung",
-    "The Merchant": "Die Händlerin",
-    "Demon and Rift": "Dämonen und Risse",
-    "Sewers": "Kanalisation",
-    "Rebellion Rises": "Die Rebellion",
-    "Under Oceans": "Unter dem Ozean",
-    "Through": "Durch",
-    "Jungles": "Dschungel",
-    "Atop Mountains": "Auf den Bergen",
-    "Dragons": "Drachen",
-    "Voice": "Die Stimme",
-    "Personal Quests": "Persönliche Ziele",
-    "Random Scenarios": "Zufällige Szenarien",
-    "Sealed": "Versiegelt",
-    "Road Events": "Weg-Ereignisse",
-    "City Events": "Stadt-Ereignisse",
-    "Diviner": "Wahrsager",
-    "Orchid society": "Antriden-Gesellschaft",
-    "Citizens of Gloomhaven": "Bürger von Gloomhaven",
-    "The rift device": "Das Spalt-Gerät",
-    "Tainted crypt": "Verdorbene Krypta",
-    "Corruption": "Korruption",
     "Requirements": "Voraussetzungen",
     "Show treasures": "Schätze anzeigen",
     "Treasure": "Schatz",
@@ -116,7 +112,10 @@ export default {
     "Locked": "Versperrt",
     "Retire": "in Ruhestand schicken",
     "Retired": "in Ruhestand geschickt",
+    "Retirement counter": "Retirement counter",
+    "Set this counter to the amount of characters your have retired": "Set this counter to the amount of characters your have retired.",
     "Remove": "Löschen",
+    "Unlocked": "Unlocked",
     "Clear all": "Alles löschen",
     "Add Character": "Füge Charakter hinzu",
     "character-limit-message": "Dew to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
@@ -131,7 +130,8 @@ export default {
     "reset": {
         "text": "Bist du sicher, dass du alle Szenariodaten löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden."
     },
-    "share": {
+    "share": "share",
+    "share-modal": {
         "1": "Teile deine aktuelle lokale Storyline mit deinen Gruppenmitgliedern.",
         "2": "Link kopieren",
         "3": "oder teile ihn auf einer der folgenden Plattformen.",
@@ -154,9 +154,21 @@ export default {
         "title": "Verfolge deinen Handlungsstrang in Gloomhaven",
         "text": "Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Wir drücken dann die Pausetaste vom Alltag. Jeder von uns hat etwas dazu beigetragen, dass sich unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Spielfortschritte festzuhalten und uns die Auswahl eines neuen Szenarios zu erleichtern. Mit ein paar Getränken und Snacks sind wir bereit ins Abenteuer aufzubrechen."
     },
+    "contribute": {
+        "text-1": "Support the project by joining the Patreon. You'll earn my deepest gratitude. You make it possible for me to maintain the tracker and keep the new features coming.",
+        "text-2": "Patrons can create unlimited shared campaigns. In addition they can vote on new features and are notified when new features roll out!"
+    },
+    "support": {
+        "text-1": "Would you like to contribute by translating to your native language?",
+        "text-2": "For help or feedback, please consult the"
+    },
+    "send me an e-mail": "send me an e-mail",
+    "Please send me an e-mail": "Please send me an e-mail",
+    "or": "oder",
     "Welcome": "Willkommen",
     "Language": "Sprache",
-    "Help translating?": "Willst du bei der Übersetzung helfen?",
+    "Gloomhaven Storyline is available in multiple languages!": "Gloomhaven Storyline is available in multiple languages!",
+    "If you like to contribute with translations.": "If you like to contribute with translations.",
     "Translations": "Übersetzungen",
     "French": "Französisch",
     "Italian": "Italienisch",
@@ -176,10 +188,11 @@ export default {
             "1": "Vergiss nicht deinen Kampagnen-Fortschritt hin und wieder abzuspeichern. Das Feature \"manuell Teilen\" ist super dafür geeignet.",
             "2": "Die Bezahlversion beinhaltet automatische Backups. Du kannst immer dort weitermachen wo du aufgehört hast oder ungewollte Änderungen rückgängig machen. Deine Unterstützung deckt die Wartungs- und Weiterentwicklungskosten der App für die Community.",
             "3": "Bitte zieh den Kauf einer Lizenz in Betracht, es hilft ungemein.",
-            "title": "Automatische Backups!",
+            "title": "Automatische Backups!"
         },
         "close": "Verwende den Storyline-Tracker weiterhin."
     },
+    "faq": "FAQ",
     "Support": "Unterstützung",
     "Donate": "Spende",
     "local": "Lokale Kampagne",
@@ -189,6 +202,12 @@ export default {
     "Create snapshot": "Snapshot anlegen",
     "Reset campaign": "Kampagne zurücksetzen",
     "Change log": "Änderungsverzeichnis",
+    "changelog": {
+        "text": "Only somewhat big features are included, every update brings bug fixes and improvements to the app!"
+    },
+    "Version": "Version",
+    "Description": "Description",
+    "Release date": "Release date",
     "Received a campaign code?": "Has du einen Kampagnen-Code erhalten?",
     "Add Campaign": "Kampagne hinzufügen",
     "Your campaign has been synced!": "Deine Kampgne wurde synchronisiert!",
@@ -203,11 +222,15 @@ export default {
     "Change name": "Name ändern",
     "Fill in your email, you'll receive a link to sync your campaign.": "Trage deine Emailadresse ein. Du erhälst einen Link mit dem du deine Kampagne synchronisieren kannst.",
     "Submit": "Abschicken",
-    "The email is send to your inbox.": "Eine Email wurde an dein Postfach geschickt.",
+    "An email has been sent to your inbox.": "An email has been sent to your inbox.",
     "Selected Campaign": "Ausgewählte Kampagne",
+    "Selected Game": "Selected Game",
     "PRO": "PRO",
-    "Gloomhaven": "Gloomhaven",
+    "gh": "Gloomhaven",
     "Forgotten Circles": "Forgotten Circles",
+    "fc": "Forgotten Circles",
+    "Jaws of the Lion": "Jaws of the Lion",
+    "jotl": "Jaws of the Lion",
     "Sticker": "Sticker",
     "State": "Staat",
     "Name": "Name",
@@ -219,6 +242,7 @@ export default {
     "Nr": "Nr",
     "Slot": "Slot",
     "Cost": "Kosten",
+    "Avail": "Verfügbar",
     "Use": "Nutzung",
     "Effect": "Effekt",
     "Shield": "Schild",
@@ -245,12 +269,36 @@ export default {
     "REGENERATE": "RGENERIEREN",
     "DISARM": "ENTWAFFNEN",
     "TARGET": "ZIEL",
+    "Intro": "Einleitung",
+    "The Merchant": "Die Händlerin",
+    "Demon and Rift": "Dämonen und Risse",
+    "Sewers": "Kanalisation",
+    "Rebellion Rises": "Die Rebellion",
+    "Under Oceans": "Unter dem Ozean",
     "Through Jungles": "Durch die Dschungel",
+    "Through": "Durch",
+    "Jungles": "die Dschungel",
+    "Atop Mountains": "Auf den Bergen",
+    "Dragons": "Drachen",
+    "Voice": "Die Stimme",
     "Solo Scenarios": "Solo-Szenarien",
+    "Personal Quests": "Persönliche Ziele",
+    "Personal Quest": "Personal Quest",
+    "Random Scenarios": "Zufällige Szenarien",
+    "Sealed": "Versiegelt",
+    "Road Events": "Weg-Ereignisse",
+    "City Events": "Stadt-Ereignisse",
+    "Diviner": "Wahrsager",
+    "Orchid society": "Antriden-Gesellschaft",
+    "Citizens of Gloomhaven": "Bürger von Gloomhaven",
+    "The rift device": "Das Spalt-Gerät",
+    "Tainted crypt": "Verdorbene Krypta",
+    "Corruption": "Korruption",
+    "Gloomhaven": "Gloomhaven",
     "Dagger Forest": "Dolchwald",
     "Lingering Swamp": "Siechensumpf",
     "Watcher Mountains": "Wächtergebirge",
-    "Copperneck Mountains": "Kupferkamm",
+    "Copperneck Mountains": "Kupferkammgebirge",
     "Misty Sea": "Nebelmeer",
     "Crypt": "Krypta",
     "East Continent": "Östlicher Kontinent",
@@ -259,372 +307,3023 @@ export default {
     "East Coast": "Ostküste",
     "different Dimension": "verschiedene Dimension",
     "and": "und",
-    "or": "oder",
     "Hidden Scenario": "Verstecktes Szenario",
+    "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
+    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
+    "Level up when youre back in town": "Level up when you're back in town!",
     "scenarios": {
-        "Black Barrow": "Schwarzgrab",
-        "Barrow Lair": "Grabhöhle",
-        "Inox Encampment": "Inox-Lager",
-        "Crypt of the Damned": "Krypta der Verdammten",
-        "Ruinous Crypt": "Unheilvolle Krypta",
-        "Decaying Crypt": "Faulige Krypta",
-        "Vibrant Grotto": "Üppige Grotte",
-        "Gloomhaven Warehouse": "Lagerhaus von Gloomhaven",
-        "Diamond Mine": "Diamantenmine",
-        "Plane of Elemental Power": "Ebene der Elementarmächte",
-        "Gloomhaven Square A": "Gloomhaven-Platz A",
-        "Gloomhaven Square B": "Gloomhaven-Platz B",
-        "Temple of the Seer": "Tempel des Sehers",
-        "Frozen Hollow": "Frostsenke",
-        "Shrine of Strength": "Schrein der Stärke",
-        "Mountain Pass": "Gebirgspass",
-        "Lost Island": "Verschollene Insel",
-        "Abandoned Sewers": "Verlassene Kanalisation",
-        "Forgotten Crypt": "Vergessene Krypta",
-        "Necromancer's Sanctum": "Versteck der Nekromantin",
-        "Infernal Throne": "Höllenthron",
-        "Temple of the Elements": "Tempel der Elemente",
-        "Deep Ruins": "Tiefe Ruinen",
-        "Echo Chamber": "Echokammer",
-        "Icecrag Ascent": "Aufstieg zur Eisklippe",
-        "Ancient Cistern": "Die alte Zisterne",
-        "Ruinous Rift": "Unheilvoller Riss",
-        "Outer Ritual Chamber": "Äußere Ritualkammer",
-        "Sanctuary of Gloom": "Heiligtum des Grauens",
-        "Shrine of the Depths": "Schrein der Tiefe",
-        "Plane of Night": "Ebene der Nacht",
-        "Decrepit Wood": "Moderwald",
-        "Savvas Armory": "Savvas-Waffenkammer",
-        "Scorched Summit": "Versengter Gipfel",
-        "Gloomhaven Battlements A": "Zinnen von Gloomhaven A",
-        "Gloomhaven Battlements B": "Zinnen von Gloomhaven B",
-        "Doom Trench": "Schicksalsgraben",
-        "Slave Pens": "Sklavenpferche",
-        "Treacherous Divide": "Tückische Kluft",
-        "Ancient Defense Network": "Altes Verteidigungsnetzwerk",
-        "Timeworn Tomb": "Verfallenes Grab",
-        "Realm of the Voice": "Reich der Stimme",
-        "Drake Nest": "Drakennest",
-        "Tribal Assault": "Stammesangriff",
-        "Rebel Swamp": "Rebellensumpf",
-        "Nightmare Peak": "Alptraumspitze",
-        "Lair of the Unseeing Eye": "Hort des Blicklosen",
-        "Shadow Weald": "Schattenwald",
-        "Rebel's Stand": "Letzter Widerstand",
-        "Ghost Forrest": "Geisterfestung",
-        "The Void": "Die Leere",
-        "Noxious Cellar": "Verseuchter Keller",
-        "Crypt Basement": "Unter der Krypta",
-        "Palace of Ice": "Eispalast",
-        "Foggy Thicket": "Nebeldickicht",
-        "Bandit's Wood": "Banditenwald",
-        "Investigation": "Ermittlungen",
-        "Bloody Shack": "Blutige Hütte",
-        "Forgotten Grove": "Vergessener Hain",
-        "Alchemy Lab": "Alchemielabor",
-        "Fading Lighthouse": "Schwindender Leuchtturm",
-        "Pit of Souls": "Grube der Seelen",
-        "Magma Pit": "Lavagrube",
-        "Under Water Lagoon": "Unterwasserlagune",
-        "Sulfur Mine": "Schwefelmine",
-        "Clockwork Cove": "Zahnradbucht",
-        "Arcane Library": "Arkane Bibliothek",
-        "Toxic Moor": "Giftmoor",
-        "Well of the Unfortunate": "Brunnen der Glücklosen",
-        "Chained Isle": "Ketteninsel",
-        "Windswept Highlands": "Windumtostes Hochland",
-        "Oozing Grove": "Triefender Hain",
-        "Rockslide Ridge": "Felssturzklamm",
-        "Merchant Ship": "Handelsschiff",
-        "Overgrown Graveyard": "Überwucherter Friedhof",
-        "Harrower Hive": "Schwarmling-Nest",
-        "Vault of Secrets": "Kammer der Geheimnisse",
-        "Sacrifice Pit": "Opfergrube",
-        "Lost Temple": "Verschollener Tempel",
-        "Vigil Keep": "Wachtburg",
-        "Temple of the Eclipse": "Tempel des Zwielichts",
-        "Burning Mountain": "Brandberg",
-        "Shadows Within": "Schatten im Innern",
-        "Crystalline Cave": "Kristallhöhle",
-        "Sun Temple": "Sonnentempel",
-        "Harried Village": "Verwüstetes Dorf",
-        "Corrupted Cove": "Bucht der Fäulnis",
-        "Plane of Water": "Ebene des Wassers",
-        "Syndicate Hideout": "Syndikatsversteck",
-        "Demonic Rift": "Dämonischer Riss",
-        "Wild Melee": "Wilde Schlacht",
-        "Back Alley Brawl": "Gassenschlägerei",
-        "Sunken Vessel": "Versunkenes Schiff",
-        "Vermling Nest": "Ratzenbau",
-        "Payment Due": "Zahltag",
-        "Unexpected Visitors": "Unerwartete Besucher",
-        "Lore Untold": "Neigkeiten",
-        "Past in Flames": "Flammenmeer",
-        "Aftershocks": "Nachbeben",
-        "Shifting Gears": "Getrieberaum",
-        "Shrouded Crypt": "Verhüllte Krypta",
-        "Bazaar of Knowledge": "Bazar des Wissens",
-        "Where It Is Needed": "Wo Bedarf ist",
-        "A Gaping Wound": "Klaffende Wunde",
-        "Monstrosities of a Cult": "Kultische Monstrositäten",
-        "Intricate Work": "Komplexitäten",
-        "Mechanical Genius": "Mechanisches Genie",
-        "Prologue to the End": "Prolog des Endes",
-        "Epilogue of a War": "Epilog eines Krieges",
-        "A Circular Solution": "Eine runde Sache",
-        "The Shackles Loosen": "GeElockerte Fesseln",
-        "The Bottom of It": "Auf den Grund",
-        "The Lost Thread": "Verlorener Faden",
-        "Ink Not Yet Dry": "In der Schwebe",
-        "Future Uncertain": "Ungewisse Zukunft",
-        "Tower to the Stars": "Turm zu den Sternen"
+        "gh-1": {
+            "name": "Schwarzgrab"
+        },
+        "gh-2": {
+            "name": "Grabhöhle",
+            "rewards": [
+                "10 gold each",
+                "+1 prosperity"
+            ]
+        },
+        "gh-3": {
+            "name": "Inox-Lager",
+            "rewards": [
+                "15 gold each",
+                "+1 prosperity"
+            ]
+        },
+        "gh-4": {
+            "name": "Krypta der Verdammten"
+        },
+        "gh-5": {
+            "name": "Unheilvolle Krypta"
+        },
+        "gh-6": {
+            "name": "Faulige Krypta",
+            "rewards": [
+                "5 gold each"
+            ]
+        },
+        "gh-7": {
+            "name": "Üppige Grotte"
+        },
+        "gh-8": {
+            "name": "Lagerhaus von Gloomhaven",
+            "rewards": [
+                "+2 reputation"
+            ]
+        },
+        "gh-9": {
+            "name": "Diamantenmine",
+            "rewards": [
+                "20 gold each",
+                "+1 prosperity"
+            ]
+        },
+        "gh-10": {
+            "name": "Ebene der Elementarmächte"
+        },
+        "gh-11": {
+            "name": "Gloomhaven-Platz A",
+            "rewards": [
+                "15 gold each",
+                "-2 reputation",
+                "+2 prosperity",
+                "“Skullbane Axe” design (Item 113)"
+            ]
+        },
+        "gh-12": {
+            "name": "Gloomhaven-Platz B",
+            "rewards": [
+                "+4 reputation",
+                "“Skullbane Axe” design (Item 113)"
+            ]
+        },
+        "gh-13": {
+            "name": "Tempel des Sehers"
+        },
+        "gh-14": {
+            "name": "Frostsenke"
+        },
+        "gh-15": {
+            "name": "Schrein der Stärke",
+            "rewards": [
+                "20 experience each"
+            ]
+        },
+        "gh-16": {
+            "name": "Gebirgspass"
+        },
+        "gh-17": {
+            "name": "Verschollene Insel",
+            "rewards": [
+                "25 gold each"
+            ]
+        },
+        "gh-18": {
+            "name": "Verlassene Kanalisation"
+        },
+        "gh-19": {
+            "name": "Vergessene Krypta",
+            "rewards": [
+                "+1 prosperity"
+            ]
+        },
+        "gh-20": {
+            "name": "Versteck der Nekromantin",
+            "rewards": [
+                "20 gold each",
+                "+2 reputation",
+                "+1 prosperity"
+            ]
+        },
+        "gh-21": {
+            "name": "Höllenthron",
+            "rewards": [
+                "50 gold each",
+                "+1 prosperity",
+                "Add City Event 78 to the deck"
+            ]
+        },
+        "gh-22": {
+            "name": "Tempel der Elemente"
+        },
+        "gh-23": {
+            "name": "Tiefe Ruinen"
+        },
+        "gh-24": {
+            "name": "Echokammer"
+        },
+        "gh-25": {
+            "name": "Aufstieg zur Eisklippe"
+        },
+        "gh-26": {
+            "name": "Die alte Zisterne",
+            "rewards": [
+                "10 gold each",
+                "+1 reputation",
+                "+2 prosperity"
+            ]
+        },
+        "gh-27": {
+            "name": "Unheilvoller Riss",
+            "rewards": [
+                "+1 prosperity",
+                "100 gold each This money must immediately be spent on enhancements"
+            ]
+        },
+        "gh-28": {
+            "name": "Äußere Ritualkammer"
+        },
+        "gh-29": {
+            "name": "Heiligtum des Grauens",
+            "rewards": [
+                "15 experience each"
+            ]
+        },
+        "gh-30": {
+            "name": "Schrein der Tiefe",
+            "rewards": [
+                "10 gold each"
+            ]
+        },
+        "gh-31": {
+            "name": "Ebene der Nacht"
+        },
+        "gh-32": {
+            "name": "Moderwald"
+        },
+        "gh-33": {
+            "name": "Savvas-Waffenkammer"
+        },
+        "gh-34": {
+            "name": "Versengter Gipfel",
+            "rewards": [
+                "20 gold each",
+                "+2 reputation",
+                "+1 prosperity"
+            ]
+        },
+        "gh-35": {
+            "name": "Zinnen von Gloomhaven A",
+            "rewards": [
+                "30 gold each",
+                "5 reputation",
+                "-2 prosperity",
+                "Add City Event 79 to the deck"
+            ]
+        },
+        "gh-36": {
+            "name": "Zinnen von Gloomhaven B",
+            "rewards": [
+                "10 gold each",
+                "+4 reputation",
+                "Add City Event 78 to the deck"
+            ]
+        },
+        "gh-37": {
+            "name": "Schicksalsgraben"
+        },
+        "gh-38": {
+            "name": "Sklavenpferche",
+            "rewards": [
+                "+1 reputation"
+            ]
+        },
+        "gh-39": {
+            "name": "Tückische Kluft",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "gh-40": {
+            "name": "Altes Verteidigungsnetzwerk"
+        },
+        "gh-41": {
+            "name": "Verfallenes Grab",
+            "rewards": [
+                "50 gold each",
+                "25 experience each",
+                "2 ✔ each",
+                "+2 prosperity"
+            ]
+        },
+        "gh-42": {
+            "name": "Reich der Stimme",
+            "rewards": [
+                "{NOTE_42}"
+            ]
+        },
+        "gh-43": {
+            "name": "Drakennest"
+        },
+        "gh-44": {
+            "name": "Stammesangriff",
+            "rewards": [
+                "Open envelope {DS}",
+                "+2 reputation"
+            ]
+        },
+        "gh-45": {
+            "name": "Rebellensumpf",
+            "rewards": [
+                "20 gold each",
+                "-2 reputation"
+            ]
+        },
+        "gh-46": {
+            "name": "Alptraumspitze"
+        },
+        "gh-47": {
+            "name": "Hort des Blicklosen"
+        },
+        "gh-48": {
+            "name": "Schattenwald"
+        },
+        "gh-49": {
+            "name": "Letzter Widerstand",
+            "rewards": [
+                "50 gold each",
+                "-3 reputation"
+            ]
+        },
+        "gh-50": {
+            "name": "Geisterfestung",
+            "rewards": [
+                "+3 reputation",
+                "-2 prosperity"
+            ]
+        },
+        "gh-51": {
+            "name": "Die Leere",
+            "rewards": [
+                "+5 reputation",
+                "+5 prosperity",
+                "Add City Event 81 to the deck",
+                "Add Road Event 69 to the deck"
+            ]
+        },
+        "gh-52": {
+            "name": "Verseuchter Keller"
+        },
+        "gh-53": {
+            "name": "Unter der Krypta",
+            "rewards": [
+                "The Seeker of Xorn receives: “Staff of Xorn” (Item 114) The Seeker cannot sell this item."
+            ]
+        },
+        "gh-54": {
+            "name": "Eispalast",
+            "rewards": [
+                "Immediately retire the Seeker of Xorn",
+                "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
+                "Open envelope {PH}"
+            ]
+        },
+        "gh-55": {
+            "name": "Nebeldickicht",
+            "rewards": [
+                "10 collective gold"
+            ]
+        },
+        "gh-56": {
+            "name": "Banditenwald",
+            "rewards": [
+                "“Take Back the Trees” quest complete",
+                "Open envelope {DS}",
+                "10 gold each",
+                "+2 reputation"
+            ]
+        },
+        "gh-57": {
+            "name": "Ermittlungen",
+            "rewards": [
+                "+1 reputation"
+            ]
+        },
+        "gh-58": {
+            "name": "Blutige Hütte",
+            "rewards": [
+                "“Vengeance” quest complete",
+                "Open envelope X",
+                "+2 reputation"
+            ]
+        },
+        "gh-59": {
+            "name": "Vergessener Hain"
+        },
+        "gh-60": {
+            "name": "Alchemielabor",
+            "rewards": [
+                "“Finding the Cure” quest complete",
+                "Open envelope X",
+                "+1 prosperity"
+            ]
+        },
+        "gh-61": {
+            "name": "Schwindender Leuchtturm"
+        },
+        "gh-62": {
+            "name": "Grube der Seelen",
+            "rewards": [
+                "“The Fall of Man” quest complete",
+                "Open envelope {NS}",
+                "10 experience each"
+            ]
+        },
+        "gh-63": {
+            "name": "Lavagrube",
+            "rewards": [
+                "15 gold each"
+            ]
+        },
+        "gh-64": {
+            "name": "Unterwasserlagune",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "gh-65": {
+            "name": "Schwefelmine",
+            "rewards": [
+                "“Ancient Drill” design (Item 112)"
+            ]
+        },
+        "gh-66": {
+            "name": "Zahnradbucht"
+        },
+        "gh-67": {
+            "name": "Arkane Bibliothek",
+            "rewards": [
+                "“Power Core” (Item 132)"
+            ]
+        },
+        "gh-68": {
+            "name": "Giftmoor",
+            "rewards": [
+                "2 “Major Healing Potions” (Item 027)"
+            ]
+        },
+        "gh-69": {
+            "name": "Brunnen der Glücklosen",
+            "rewards": [
+                "15 gold each"
+            ]
+        },
+        "gh-70": {
+            "name": "Ketteninsel",
+            "rewards": [
+                "+2 prosperity"
+            ]
+        },
+        "gh-71": {
+            "name": "Windumtostes Hochland",
+            "rewards": [
+                "2 “Major Power Potions” (Item 041)"
+            ]
+        },
+        "gh-72": {
+            "name": "Triefender Hain",
+            "rewards": [
+                "+1 reputation",
+                "+1 prosperity"
+            ]
+        },
+        "gh-73": {
+            "name": "Felssturzklamm",
+            "rewards": [
+                "+1 reputation"
+            ]
+        },
+        "gh-74": {
+            "name": "Handelsschiff",
+            "rewards": [
+                "10 gold each",
+                "+2 prosperity"
+            ]
+        },
+        "gh-75": {
+            "name": "Überwucherter Friedhof",
+            "rewards": [
+                "60 gold each"
+            ]
+        },
+        "gh-76": {
+            "name": "Schwarmling-Nest"
+        },
+        "gh-77": {
+            "name": "Kammer der Geheimnisse",
+            "rewards": [
+                "5 experience each"
+            ]
+        },
+        "gh-78": {
+            "name": "Opfergrube",
+            "rewards": [
+                "+3 reputation"
+            ]
+        },
+        "gh-79": {
+            "name": "Verschollener Tempel",
+            "rewards": [
+                "15 gold each"
+            ]
+        },
+        "gh-80": {
+            "name": "Wachtburg",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "gh-81": {
+            "name": "Tempel des Zwielichts",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "gh-82": {
+            "name": "Brandberg",
+            "rewards": [
+                [
+                    "+1 reputation"
+                ],
+                [
+                    "-1 reputation",
+                    "-2 prosperity"
+                ]
+            ]
+        },
+        "gh-83": {
+            "name": "Schatten im Innern",
+            "rewards": [
+                "40 collective gold"
+            ]
+        },
+        "gh-84": {
+            "name": "Kristallhöhle",
+            "rewards": [
+                "“Resonant Crystal” (Item 133)",
+                "+1 prosperity"
+            ]
+        },
+        "gh-85": {
+            "name": "Sonnentempel",
+            "rewards": [
+                "“Orb of Dawn” (Item 121)"
+            ]
+        },
+        "gh-86": {
+            "name": "Verwüstetes Dorf",
+            "rewards": [
+                "+2 reputation"
+            ]
+        },
+        "gh-87": {
+            "name": "Bucht der Fäulnis",
+            "rewards": [
+                "+1 reputation",
+                "+1 prosperity"
+            ]
+        },
+        "gh-88": {
+            "name": "Ebene des Wassers",
+            "rewards": [
+                "“Staff of Summoning” (Item 120)"
+            ]
+        },
+        "gh-89": {
+            "name": "Syndikatsversteck",
+            "rewards": [
+                "50 collective gold"
+            ]
+        },
+        "gh-90": {
+            "name": "Dämonischer Riss",
+            "rewards": [
+                "“Black Censer” (Item 128)"
+            ]
+        },
+        "gh-91": {
+            "name": "Wilde Schlacht",
+            "rewards": [
+                "2 ✔ each"
+            ]
+        },
+        "gh-92": {
+            "name": "Gassenschlägerei",
+            "rewards": [
+                "10 gold each",
+                "-3 reputation"
+            ]
+        },
+        "gh-93": {
+            "name": "Versunkenes Schiff",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "gh-94": {
+            "name": "Ratzenbau"
+        },
+        "gh-95": {
+            "name": "Zahltag",
+            "rewards": [
+                "“Skull of Hatred” (Item 119)"
+            ]
+        },
+        "fc-96": {
+            "name": "Unerwartete Besucher",
+            "rewards": [
+                "10 experience each",
+                "Add City and Road Events 82 to their respective decks"
+            ]
+        },
+        "fc-97": {
+            "name": "Neigkeiten",
+            "rewards": [
+                "10 gold each",
+                "Add City Events 88, 89 and 90 to the deck"
+            ]
+        },
+        "fc-98": {
+            "name": "Flammenmeer",
+            "rewards": [
+                [
+                    "10 gold each",
+                    "+1 reputation",
+                    "+1 prosperity",
+                    "Add City Event 86 to the deck"
+                ],
+                [
+                    "5 gold each",
+                    "+1 reputation"
+                ],
+                [
+                    "5 gold each",
+                    "+1 reputation"
+                ]
+            ]
+        },
+        "fc-99": {
+            "name": "Nachbeben",
+            "rewards": [
+                [
+                    "5 gold each",
+                    "“Minor Antidote” (Item 153)"
+                ],
+                [
+                    "10 gold each",
+                    "+1 prosperity",
+                    "“Minor Antidote” (Item 153)"
+                ]
+            ]
+        },
+        "fc-100": {
+            "name": "Getrieberaum",
+            "rewards": [
+                "Choose to gain one of the following sets: “Telescopic Lens” (Item 059) and “Ancient Drill” (Item 112), OR “Curious Gear” (Item 125) and “Remote Spider” (Item 126)"
+            ]
+        },
+        "fc-101": {
+            "name": "Verhüllte Krypta",
+            "rewards": [
+                "20 collective gold",
+                "+1 reputation",
+                "+1 prosperity"
+            ]
+        },
+        "fc-102": {
+            "name": "Bazar des Wissens",
+            "rewards": [
+                "15 experience each",
+                "If no more than 2+C inhabitants were intimidated: +2 reputation Otherwise: -2 reputation"
+            ]
+        },
+        "fc-103": {
+            "name": "Wo Bedarf ist",
+            "rewards": [
+                "+2 prosperity",
+                "Add City Event 87 to the deck"
+            ]
+        },
+        "fc-104": {
+            "name": "Klaffende Wunde",
+            "rewards": [
+                "“Major Mana Potion” (Item 048)"
+            ]
+        },
+        "fc-105": {
+            "name": "Kultische Monstrositäten",
+            "rewards": [
+                "“Major Antidote” (Item 154)"
+            ]
+        },
+        "fc-106": {
+            "name": "Komplexitäten",
+            "rewards": [
+                [
+                    "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements"
+                ],
+                [
+                    "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements",
+                    "+ 1 prosperity"
+                ]
+            ]
+        },
+        "fc-107": {
+            "name": "Mechanisches Genie",
+            "rewards": [
+                "5 experience each"
+            ]
+        },
+        "fc-108": {
+            "name": "Prolog des Endes",
+            "rewards": [
+                [
+                    "“Curseward Armor” (Item 155)"
+                ],
+                [
+                    "2 “Throwing Axes” (Item 161)"
+                ],
+                [
+                    "“Curseward Armor” (Item 155)",
+                    "2 “Throwing Axes” (Item 161)"
+                ]
+            ]
+        },
+        "fc-109": {
+            "name": "Epilog eines Krieges",
+            "rewards": [
+                "10 experience each",
+                "“Protective Charm” (Item 052)"
+            ]
+        },
+        "fc-110": {
+            "name": "Eine runde Sache",
+            "rewards": [
+                "“Crystal Tiara” (Item 163)"
+            ]
+        },
+        "fc-111": {
+            "name": "GeElockerte Fesseln",
+            "rewards": [
+                [
+                    "5 experience each",
+                    "Add Rift Event 16 to the deck. Instead of shuffling this event into the whole deck, shuffle it into the top 3 cards"
+                ],
+                [
+                    "12 experience each",
+                    "1 ✓ each"
+                ]
+            ]
+        },
+        "fc-112": {
+            "name": "Auf den Grund",
+            "rewards": [
+                [
+                    "10 gold each",
+                    "5 experience each"
+                ],
+                [
+                    "25 collective gold",
+                    "5 experience each",
+                    "1 ✓ each"
+                ]
+            ]
+        },
+        "fc-113": {
+            "name": "Verlorener Faden",
+            "rewards": [
+                "135 gold each",
+                "This money must immediately be spent on any Move {MOVE}, Range {RANGE} or Jump {JUMP} enhancements",
+                "+1 prosperity"
+            ]
+        },
+        "fc-114": {
+            "name": "In der Schwebe",
+            "rewards": [
+                "Party Boon: Additional costs of enhancing an ability card based on the level of the card are now reduced by 5 gold per level."
+            ]
+        },
+        "fc-115": {
+            "name": "Ungewisse Zukunft",
+            "rewards": [
+                "+3 reputation",
+                "+1 prosperity",
+                "Retire the Aesther Diviner {DR}",
+                "Add City and Road Events 83 to their respective decks"
+            ]
+        },
+        "fc-200": {
+            "name": "Turm zu den Sternen",
+            "rewards": [
+                "15 gold each",
+                "1 ✓ each",
+                "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
+            ]
+        },
+        "fc-201": {
+            "name": "Forecast of the Inevitable",
+            "rewards": [
+                "“Wahrsagebecken” (Item 164)"
+            ]
+        },
+        "jotl-1": {
+            "name": "Roadside Ambush"
+        },
+        "jotl-2": {
+            "name": "A Hole in the Wall",
+            "rewards": [
+                "25 gold each",
+                "Add items 1-13 to the shop"
+            ]
+        },
+        "jotl-3": {
+            "name": "The Black Ship",
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        "jotl-4": {
+            "name": "A Ritual in Stone",
+            "rewards": [
+                "“Mana Potion” (Item 14)"
+            ]
+        },
+        "jotl-5": {
+            "name": "A Deeper Understanding",
+            "rewards": [
+                "25 experience each"
+            ]
+        },
+        "jotl-6": {
+            "name": "Corrupted Research",
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        "jotl-7": {
+            "name": "Sunken Tumor",
+            "rewards": [
+                "20 experience each"
+            ]
+        },
+        "jotl-8": {
+            "name": "Hidden Tumor"
+        },
+        "jotl-9": {
+            "name": "Explosive Evolution",
+            "rewards": [
+                "20 experience each",
+                "Add items 15-20 to the shop"
+            ]
+        },
+        "jotl-10": {
+            "name": "The Gauntlet",
+            "rewards": [
+                "15 experience each"
+            ]
+        },
+        "jotl-11": {
+            "name": "Defiled Sewers",
+            "rewards": [
+                "“Flea-Bitten Shawl” (Item 28)"
+            ]
+        },
+        "jotl-12": {
+            "name": "Beguiling Sewers",
+            "rewards": [
+                "“Flea-Bitten Shawl” (Item 28)"
+            ]
+        },
+        "jotl-13": {
+            "name": "Vile Harvest",
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        "jotl-14": {
+            "name": "Toxic Harvest",
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        "jotl-15": {
+            "name": "Tainted Blood",
+            "rewards": [
+                "10 gold each",
+                "Add items 21-26 to the shop"
+            ]
+        },
+        "jotl-16": {
+            "name": "Mixed Results",
+            "rewards": [
+                "15 experience each",
+                "“Tower Shield” (Item 29)"
+            ]
+        },
+        "jotl-17": {
+            "name": "Red Twilight",
+            "rewards": [
+                "25 experience each",
+                "30 gold each"
+            ]
+        },
+        "jotl-18": {
+            "name": "The Heist",
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        "jotl-19": {
+            "name": "Den of Thieves",
+            "rewards": [
+                "“Ring of Strength” (Item 31)"
+            ]
+        },
+        "jotl-20": {
+            "name": "Misplaced Goods",
+            "rewards": [
+                "10 gold each"
+            ]
+        },
+        "jotl-21": {
+            "name": "Agents of Chaos",
+            "rewards": [
+                "15 gold each"
+            ]
+        },
+        "jotl-22": {
+            "name": "Unfriendly Message",
+            "rewards": [
+                "“Steel Ring” (Item 33)"
+            ]
+        },
+        "jotl-23": {
+            "name": "Best of the Best",
+            "rewards": [
+                "“Barbed Axe” (Item 34)"
+            ]
+        },
+        "jotl-24": {
+            "name": "Warding the Void",
+            "rewards": [
+                "“Robes of Command” (Item 35)"
+            ]
+        },
+        "jotl-25": {
+            "name": "The Greatest Job in the World",
+            "rewards": [
+                "“Jet Boots” (Item 36)"
+            ]
+        }
     },
     "achievements": {
-        "First Steps": "Erste Schritte",
-        "Jekserahs Plans": "Jekserahs Pläne",
-        "Dark Bounty": "Finstere Beute",
-        "The Merchant Flees": "Geflohene Händlerin",
-        "The Dead Invade": "Invasion der Toten",
-        "A Demons Errand": "Dämonischer Auftrag",
-        "City Rule: Economic": "Stadtherrschaft: kaufmännisch",
-        "City Rule: Militaristic": "Stadtherrschaft: militärisch",
-        "End of the Invasion": "Ende der Invasion",
-        "The Power of Enhancement": "Macht der Verbesserung",
-        "Stonebreakers Censer": "Steinbrechers Rauchfass",
-        "The Rift Neutralized": "Riss neutralisiert",
-        "The Artifact: Recovered": "Artefakt: geborgen",
-        "The Artifact: Recovered (previously Lost)": "Artefakt: geborgen (vorher verloren)",
-        "The Artifact: Lost": "Artefakt: verloren",
-        "Ancient Technology": "Antike Technologie",
-        "Ancient Technology x2": "Antike Technologie x2",
-        "Ancient Technology x3": "Antike Technologie x3",
-        "Ancient Technology x4": "Antike Technologie x4",
-        "Ancient Technology x5": "Antike Technologie x5",
-        "Through the Ruins": "Durch die Ruinen",
-        "The Voices Command": "Befehl der Stimme",
-        "The Drakes Command": "Befehl des Draken",
-        "Following Clues": "Hinweisen folgen",
-        "An Invitation": "Eine Einladung",
-        "The Edge of Darkness": "Der Rand der Finsternis",
-        "The Scepter and the Voice": "Zepter und Stimme",
-        "Artifact: Cleansed": "Artefakt: geläutert",
-        "The Voices Treasure": "Der Schatz der Stimme",
-        "The Drakes Treasure": "Der Schatz des Draken",
-        "The Drake Slain": "Erlegter Draken",
-        "The Drake Aided": "Hilfe für den Draken",
-        "City Rule: Demonic": "Stadtherrschaft: dämonisch",
-        "Trough the Trench": "Durch den Graben",
-        "Redthorns Aid": "Rotdorns Hilfe",
-        "Across the Divide": "Jenseits der Kluft",
-        "The Voice Freed": "Befreite Stimme",
-        "The Voice Silenced": "Verstummte Stimme",
-        "Water-Breathing": "Wasseratmung",
-        "End of Corruption": "Ende der Verderbtheit",
-        "End of Corruption x2": "Ende der Verderbtheit x2",
-        "End of Corruption x3": "Ende der Verderbtheit x3",
-        "Annihilation of Order": "Auslöschung jeglicher Ordnung",
-        "End of Gloom": "Ende des Grauens",
-        "The Poisons Source": "Quelle des Gifts",
-        "Through the Nest": "Durch den Bau",
-        "A Map to Treasure": "Schatzkarte",
-        "Bad Business": "Schlechtes Geschäft",
-        "Sun-Blessed": "Sonnenverwöhnt",
-        "Sin-Ra": "Sin-Ra",
-        "Debt Collection": "Schuldeintreibung",
-        "Water Staff": "Stab des Wassers",
-        "Fishs Aid": "DIe Hilfe des Fischers",
-        "Tremors": "Erdbeben",
-        "High Sea Escort": "Hochsee-Eskorte",
-        "Grave Job": "Grab-Job",
-        "Northern Expedition": "Nördliche Expedition",
-        "Through the Portal": "Durch das Portal",
-        "Knowledge is Power": "Wissen ist Macht",
-        "Knowledge is Power x2": "Wissen ist Macht x2",
-        "Knowledge is Power x3": "Wissen ist Macht x3",
-        "Knowledge is Power x4": "Wissen ist Macht x4",
-        "Angels of Death": "Todesengel",
-        "Custodians": "Bewahrer",
-        "Hunted Prey": "Gehetzte Beute",
-        "Pieces of an Artifact": "Teile eines Artefakts",
-        "Pieces of an Artifact x2": "Teile eines Artefakts x2",
-        "Pieces of an Artifact x3": "Teile eines Artefakts x3",
-        "Guard Detail": "Wachdienst",
-        "Dimensional Equilibrium": "Dimensionalesgleichgewicht",
-        "Hunting the Hunter": "Jagd auf die Jägerin",
-        "Xangroths Aid": "Xangroths Hilfe",
-        "Diamaras Aid": "Diamaras Hilfe",
-        "Beauty in Freedom": "Schönheit in Freiheit",
-        "A Peril Averted": "Gefahr gebannt",
-        "A Peril Averted x2": "Gefahr gebannt x2",
-        "A Peril Averted x3": "Gefahr gebannt x3",
-        "A Peril Averted x4": "Gefahr gebannt x4",
-        "Mechanical Splendor": "Mechanische Pracht",
-        "Severed Ties": "Gekappte Verbindungen"
+        "gh-PFS": {
+            "name": "Erste Schritte"
+        },
+        "gh-PJP": {
+            "name": "Jekserahs Pläne"
+        },
+        "gh-PDB": {
+            "name": "Finstere Beute"
+        },
+        "gh-GTMF": {
+            "name": "Geflohene Händlerin"
+        },
+        "gh-GTDI": {
+            "name": "Invasion der Toten"
+        },
+        "gh-PADE": {
+            "name": "Dämonischer Auftrag"
+        },
+        "gh-GCRE": {
+            "name": "Stadtherrschaft: kaufmännisch"
+        },
+        "gh-GCRM": {
+            "name": "Stadtherrschaft: militärisch"
+        },
+        "gh-GEOI": {
+            "name": "Ende der Invasion"
+        },
+        "gh-GTPE": {
+            "name": "Macht der Verbesserung"
+        },
+        "gh-PSC": {
+            "name": "Steinbrechers Rauchfass"
+        },
+        "gh-GTRN": {
+            "name": "Riss neutralisiert"
+        },
+        "gh-GAR": {
+            "name": "Artefakt: geborgen"
+        },
+        "gh-GAR2": {
+            "name": "Artefakt: geborgen (vorher verloren)"
+        },
+        "gh-GAL": {
+            "name": "Artefakt: verloren"
+        },
+        "gh-GAT": {
+            "name": "Antike Technologie"
+        },
+        "gh-GAT2": {
+            "name": "Antike Technologie x2"
+        },
+        "gh-GAT3": {
+            "name": "Antike Technologie x3"
+        },
+        "gh-GAT4": {
+            "name": "Antike Technologie x4"
+        },
+        "gh-GAT5": {
+            "name": "Antike Technologie x5"
+        },
+        "gh-PTR": {
+            "name": "Durch die Ruinen"
+        },
+        "gh-PTVC": {
+            "name": "Befehl der Stimme"
+        },
+        "gh-PTDC": {
+            "name": "Befehl des Draken"
+        },
+        "gh-PFC": {
+            "name": "Hinweisen folgen"
+        },
+        "gh-PAI": {
+            "name": "Eine Einladung"
+        },
+        "gh-GTED": {
+            "name": "Der Rand der Finsternis"
+        },
+        "gh-PTSV": {
+            "name": "Zepter und Stimme"
+        },
+        "gh-GAC": {
+            "name": "Artefakt: geläutert"
+        },
+        "gh-PTVT": {
+            "name": "Der Schatz der Stimme"
+        },
+        "gh-PTDT": {
+            "name": "Der Schatz des Draken"
+        },
+        "gh-GTDS": {
+            "name": "Erlegter Draken"
+        },
+        "gh-GTDA": {
+            "name": "Hilfe für den Draken"
+        },
+        "gh-GCRD": {
+            "name": "Stadtherrschaft: dämonisch"
+        },
+        "gh-PTTT": {
+            "name": "Durch den Graben"
+        },
+        "gh-PRA": {
+            "name": "Rotdorns Hilfe"
+        },
+        "gh-PATD": {
+            "name": "Jenseits der Kluft"
+        },
+        "gh-GTVF": {
+            "name": "Befreite Stimme"
+        },
+        "gh-GTVS": {
+            "name": "Verstummte Stimme"
+        },
+        "gh-GWB": {
+            "name": "Wasseratmung"
+        },
+        "gh-GEOC": {
+            "name": "Ende der Verderbtheit"
+        },
+        "gh-GEOC2": {
+            "name": "Ende der Verderbtheit x2"
+        },
+        "gh-GEOC3": {
+            "name": "Ende der Verderbtheit x3"
+        },
+        "gh-GAOO": {
+            "name": "Auslöschung jeglicher Ordnung"
+        },
+        "gh-GEOG": {
+            "name": "Ende des Grauens"
+        },
+        "gh-PTTN": {
+            "name": "Durch den Bau"
+        },
+        "gh-PAMT": {
+            "name": "Schatzkarte"
+        },
+        "gh-PBB": {
+            "name": "Schlechtes Geschäft"
+        },
+        "gh-PTPS": {
+            "name": "Quelle des Gifts"
+        },
+        "gh-PSB": {
+            "name": "Sonnenverwöhnt"
+        },
+        "gh-PSR": {
+            "name": "Sin-Ra"
+        },
+        "gh-PDC": {
+            "name": "Schuldeintreibung"
+        },
+        "gh-PWS": {
+            "name": "Stab des Wassers"
+        },
+        "gh-PFA": {
+            "name": "DIe Hilfe des Fischers"
+        },
+        "gh-PT": {
+            "name": "Erdbeben"
+        },
+        "gh-PHSE": {
+            "name": "Hochsee-Eskorte"
+        },
+        "gh-PGJ": {
+            "name": "Grab-Job"
+        },
+        "gh-PNE": {
+            "name": "Nördliche Expedition"
+        },
+        "gh-GTTP": {
+            "name": "Durch das Portal"
+        },
+        "gh-GKIP": {
+            "name": "Wissen ist Macht"
+        },
+        "gh-GKIP2": {
+            "name": "Wissen ist Macht x2"
+        },
+        "gh-GKIP3": {
+            "name": "Wissen ist Macht x3"
+        },
+        "gh-GKIP4": {
+            "name": "Wissen ist Macht x4"
+        },
+        "gh-PAD": {
+            "name": "Todesengel"
+        },
+        "gh-PC": {
+            "name": "Bewahrer"
+        },
+        "gh-PHP": {
+            "name": "Gehetzte Beute"
+        },
+        "gh-GPOA": {
+            "name": "Teile eines Artefakts"
+        },
+        "gh-GPOA2": {
+            "name": "Teile eines Artefakts x2"
+        },
+        "gh-GPOA3": {
+            "name": "Teile eines Artefakts x3"
+        },
+        "gh-PGD": {
+            "name": "Wachdienst"
+        },
+        "gh-PDE": {
+            "name": "Dimensionalesgleichgewicht"
+        },
+        "gh-PHH": {
+            "name": "Jagd auf die Jägerin"
+        },
+        "gh-PXA": {
+            "name": "Xangroths Hilfe"
+        },
+        "gh-PDA": {
+            "name": "Diamaras Hilfe"
+        },
+        "gh-PBF": {
+            "name": "Schönheit in Freiheit"
+        },
+        "gh-GPA": {
+            "name": "Gefahr gebannt"
+        },
+        "gh-GPA2": {
+            "name": "Gefahr gebannt x2"
+        },
+        "gh-GPA3": {
+            "name": "Gefahr gebannt x3"
+        },
+        "gh-GPA4": {
+            "name": "Gefahr gebannt x4"
+        },
+        "gh-GMS": {
+            "name": "Mechanische Pracht"
+        },
+        "gh-GST": {
+            "name": "Gekappte Verbindungen"
+        }
     },
     "items": {
-        "Boots of Striding": "Wanderstiefel",
-        "Winged Shoes": "Flügelschuhe",
-        "Hide Armor": "Fellrüstung",
-        "Leather Armor": "Lederrüstung",
-        "Cloak of Invisibility": "Mantel der Unsichtbarkeit",
-        "Eagle-Eye Goggles": "Adleraugenbrille",
-        "Iron Helmet": "Eisenhelm",
-        "Heater Shield": "Dreieckschild",
-        "Piercing Bow": "Starkbogen",
-        "War Hammer": "Kriegshammer",
-        "Poison Dagger": "Giftdolch",
-        "Minor Healing Potion": "Kleiner Heiltrank",
-        "Minor Stamina Potion": "Kleiner Ausdauertrank",
-        "Minor Power Potion": "Kleiner Krafttrank",
-        "Boots of Speed": "Schnellläufer",
-        "Cloak of Pockets": "Taschenmantel",
-        "Empowering Talisman": "Ermächtigungstalisman",
-        "Battle-Axe": "Streitaxt",
-        "Weighted Net": "Wurfnetz",
-        "Minor Mana Potion": "Kleiner Manatrank",
-        "Stun Powder": "Betäubungspulver",
-        "Heavy Greaves": "Schwere Beinpanzer",
-        "Chainmail": "Kettenhemd",
-        "Amulet of Life": "Amulett des Lebens",
-        "Jagged Sword": "Zackenschwert",
-        "Long Spear": "Langspeer",
-        "Major Healing Potion": "Großer Heiltrank",
-        "Moon Earring": "Mond-Ohrring",
-        "Comfortable Shoes": "Bequeme Schuhe",
-        "Studded Leather": "Nietenrüstung",
-        "Hawk Helm": "Falkenhelm",
-        "Tower Shield": "Turmschild",
-        "Volatile Bomb": "Wurfbombe",
-        "Major Stamina Potion": "Großer Ausdauertrank",
-        "Falcon Figurine": "Falkenfigur",
-        "Boots of Dashing": "Laufstiefel",
-        "Robes of Evocation": "Robe der Anrufung",
-        "Heavy Basinet": "Beckenhaube",
-        "Hooked Chain": "Kettenhaken",
-        "Versatile Dagger": "Mehrzweckdolch",
-        "Major Power Potion": "Großer Krafttrank",
-        "Ring of Haste": "Ring der Eile",
-        "Boots of Quickness": "Flinkstiefel",
-        "Splintmail": "Spangenpanzer",
-        "Pendant of Dark Pacts": "Kette des Dunkelpaktes",
-        "Spiked Shield": "Stachelschild",
-        "Reaping Scythe": "Kriegssense",
-        "Major Mana Potion": "Großer Manatrank",
-        "Sun Earring": "Sonnen-Ohrring",
-        "Steel Sabatons": "Panzerschuhe",
-        "Shadow Armor": "Schattenrüstung",
-        "Protective Charm": "Schutzamulett",
-        "Black Knife": "Schwarzdolch",
-        "Staff of Eminence": "Stab des Ansehens",
-        "Super Healing Potion": "Überragender Heiltrank",
-        "Ring of Brutality": "Ring der Brutalität",
-        "Serene Sandals": "Sorglose Sandalen",
-        "Cloak of Phasing": "Phasenmantel",
-        "Telescopic Lens": "Teleskoplinse",
-        "Unstable Explosives": "Instabiler Sprengsatz",
-        "Wall Shield": "Setzschild",
-        "Doom Powder": "Schicksalspulver",
-        "Lucky Eye": "Glücksauge",
-        "Boots of Sprinting": "Sprintstiefel",
-        "Platemail": "Plattenpanzer",
-        "Mask of Terror": "Schreckensmaske",
-        "Balanced Blade": "Ausbalancierte Klinge",
-        "Halberd": "Hellebarde",
-        "Star Earring": "Stern-Ohrring",
-        "Second Chance Ring": "Ring der Chancen",
-        "Boots of Levitation": "Levitationsstiefel",
-        "Shoes of Happiness": "Schuhe der Heiterkeit",
-        "Blinking Cape": "Flirrender Umhang",
-        "Swordedge Armor": "Klingenrüstung",
-        "Circlet of Elements": "Reif der Elemente",
-        "Chain Hood": "Kettenhaube",
-        "Frigid Blade": "Frostklinge",
-        "Storm Blade": "Sturmklinge",
-        "Inferno Blade": "Infernoklinge",
-        "Tremor Blade": "Bebenklinge",
-        "Brilliant Blade": "Glanzklinge",
-        "Night Blade": "Nachtklinge",
-        "Wand of Frost": "Stab der Kälte",
-        "Wand of Storms": "Stab des Strums",
-        "Wand of Infernos": "Stab des Infernos",
-        "Wand of Tremors": "Stab des Bebens",
-        "Wand of Brilliance": "Stab des Glanzes",
-        "Wand of Darkness": "Stab der Nacht",
-        "Minor Cure Potion": "Kleiner Arzneitrank",
-        "Major Cure Potion": "Großer Arzneitrank",
-        "Steel Ring": "Stahlring",
-        "Dampening Ring": "Dämpfungsring",
-        "Scroll of Power": "Schrift der Kraft",
-        "Scroll of Healing": "Schrift der Heilung",
-        "Scroll of Stamina": "Schrift der Ausdauer",
-        "Rocket Boots": "Raketenstiefel",
-        "Endurance Footwraps": "Sandalen der Ausdauer",
-        "Drakescale Boots": "Drakenstiefel",
-        "Magma Waders": "Lavalatschen",
-        "Robes of Summoning": "Beschwörungsrobe",
-        "Second Skin": "Zweite Haut",
-        "Sacrificial Robes": "Opferrobe",
-        "Drakescale Armor": "Drakenrüstung",
-        "Steam Armor": "Dampfrüstung",
-        "Flea-Bitten Shawl": "Schäbiges Schultertuch",
-        "Necklace of Teeth": "Zahnkette",
-        "Horned Helm": "Hornhelm",
-        "Drakescale Helm": "Drakenhelm",
-        "Thiefs Hood": "Diebesgugel",
-        "Helm of the Mountain": "Helm der Berge",
-        "Wave Crest": "Gischtkrone",
-        "Ancient Drill": "Alter Bohrer",
-        "Skullbane Axe": "Schädelfluch",
-        "Staff of Xorn": "Stab des Xorn",
-        "Mountain Hammer": "Gebirgshammer",
-        "Fueled Falchion": "Flammenfalchion",
-        "Bloody Axe": "Blutaxt",
-        "Staff of Elements": "Stab der Elemente",
-        "Skull of Hatred": "Schädel des Hasses",
-        "Staff of Summoning": "Beschwörungsstab",
-        "Orb of Dawn": "Kugel des Morgens",
-        "Orb of Twilight": "Kugel des Zwielichts",
-        "Ring of Skulls": "Schädelring",
-        "Doomed Compass": "Schicksalskompass",
-        "Curious Gear": "Zahnrad",
-        "Remote Spider": "Mechanische Spinne",
-        "Giant Remote Spider": "Mechanische Riesenspinne",
-        "Black Censer": "Schwarzes Rauchfass",
-        "Black Card": "Schwarzkarte",
-        "Helix Ring": "Spiralring",
-        "Heart of the Betrayer": "Herz des Abtrünnigen",
-        "Power Core": "Energiekern",
-        "Resonant Crystal": "Resonanzkristall",
-        "Imposing Blade": "Imposante Klinge",
-        "Focusing Ray": "Fokusstrahl",
-        "Volatile Elixir": "Instabiles Elixier",
-        "Silent Stiletto": "Flüsterklinge",
-        "Stone Charm": "Steinamulett",
-        "Psychic Knife": "Astralmesser",
-        "Sun Shield": "Sonnenschild",
-        "Utility Belt": "Werkzeuggürtel",
-        "Phasing Idol": "Phasenfigur",
-        "Smoke Elixir": "Rauchelixier",
-        "Pendant of the Plague": "Seuchenbrosche",
-        "Mask of Death": "Todesmaske",
-        "Masters Lute": "Virtuosenlaute",
-        "Cloak of the Hunter": "Mantel des Jägers",
-        "Doctors Coat": "Arztkittel",
-        "Elemental Boots": "Elementarstiefel",
-        "Staff of Command": "Befehlsstab",
-        "Ring of Duality": "Ring der Dualität",
-        "Minor Antidote": "Kleines Gegengift",
-        "Major Antidote": "Großes Gegengift",
-        "Curseward Armor": "Fluchschutzrüstung",
-        "Elemental Claymore": "Elementarschwert",
-        "Ancient Bow": "Antiker Bogen",
-        "Rejuvenation Greaves": "Erfrischende Beinpanzer",
-        "Scroll of Haste": "Schrift der Eile",
-        "Cutpurse Dagger": "Beutelschneider",
-        "Throwing Axe": "Wurfaxt",
-        "Rift Device": "Riss-Apparat",
-        "Crystal Tiara": "Kristalldiadem",
-        "Basin of Prophecy": "Wahrsagebecken"
+        "gh-1": {
+            "name": "Wanderstiefel",
+            "source": "Prosperity 1",
+            "desc": "During your movement, add +2 {MOVE} to the movement.",
+            "faq": "Boots of Striding only add to the numerical value of an existing single movement ability. They do not give you a free movement action."
+        },
+        "gh-2": {
+            "name": "Flügelschuhe",
+            "source": "Prosperity 1",
+            "desc": "During your movement, add {JUMP} to the movement.",
+            "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
+        },
+        "gh-3": {
+            "name": "Fellrüstung",
+            "source": "Prosperity 1",
+            "desc": "On the next two sources of damage to you from attacks, gain {SHIELD} 1. Add 2 {-1} to your attack modifier deck.",
+            "faq": "Hide Armor only grants the shield for the attack, not until the end of the round."
+        },
+        "gh-4": {
+            "name": "Lederrüstung",
+            "source": "Prosperity 1",
+            "desc": "When attacked, the attacker gains Disadvantage on the attack.",
+            "faq": "The Leather Armor must be used before the enemy draws an attack modifier card."
+        },
+        "gh-5": {
+            "name": "Mantel der Unsichtbarkeit",
+            "source": "Prosperity 1",
+            "desc": "During your turn, gain {INVISIBLE}."
+        },
+        "gh-6": {
+            "name": "Adleraugenbrille",
+            "source": "Prosperity 1",
+            "desc": "During your attack, gain Advantage on the entire Attack action."
+        },
+        "gh-7": {
+            "name": "Eisenhelm",
+            "source": "Prosperity 1",
+            "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+        },
+        "gh-8": {
+            "name": "Dreieckschild",
+            "source": "Prosperity 1",
+            "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+        },
+        "gh-9": {
+            "name": "Starkbogen",
+            "source": "Prosperity 1",
+            "desc": "During your ranged attack, ignore all Shield values for the entire Attack action."
+        },
+        "gh-10": {
+            "name": "Kriegshammer",
+            "source": "Prosperity 1",
+            "desc": "During your melee attack, add {STUN} to the entire Attack action."
+        },
+        "gh-11": {
+            "name": "Giftdolch",
+            "source": "Prosperity 1",
+            "desc": "During your melee attack, add {POISON} to a single attack."
+        },
+        "gh-12": {
+            "name": "Kleiner Heiltrank",
+            "source": "Prosperity 1",
+            "desc": "During your turn, perform a “{HEAL} 3, self” action."
+        },
+        "gh-13": {
+            "name": "Kleiner Ausdauertrank",
+            "source": "Prosperity 1",
+            "desc": "During your turn, {RECOVER} up to two of your discarded cards.",
+            "faq": "[Errata] The item should allow you to recover only one discarded card. This is change in an upcoming expansion but may be used for the base game."
+        },
+        "gh-14": {
+            "name": "Kleiner Krafttrank",
+            "source": "Prosperity 1",
+            "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+        },
+        "gh-15": {
+            "name": "Schnellläufer",
+            "source": "Prosperity 2",
+            "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 10."
+        },
+        "gh-16": {
+            "name": "Taschenmantel",
+            "source": "Prosperity 2",
+            "desc": "You can carry two additional small items."
+        },
+        "gh-17": {
+            "name": "Ermächtigungstalisman",
+            "source": "Prosperity 2",
+            "desc": "During your turn, {REFRESH} one of your consumed small items."
+        },
+        "gh-18": {
+            "name": "Streitaxt",
+            "source": "Prosperity 2",
+            "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+        },
+        "gh-19": {
+            "name": "Wurfnetz",
+            "source": "Prosperity 2",
+            "desc": "During your ranged attack, add {IMMOBILIZE} to a single attack."
+        },
+        "gh-20": {
+            "name": "Kleiner Manatrank",
+            "source": "Prosperity 2",
+            "desc": "During your turn, create any element. {ANY}"
+        },
+        "gh-21": {
+            "name": "Betäubungspulver",
+            "source": "Prosperity 2",
+            "desc": "During your attack, add {STUN} to a single attack."
+        },
+        "gh-22": {
+            "name": "Schwere Beinpanzer",
+            "source": "Prosperity 3",
+            "desc": "You are immune to all forced movement caused by enemies or scenario effects. Add 1 {-1} to your attack modifier deck."
+        },
+        "gh-23": {
+            "name": "Kettenhemd",
+            "source": "Prosperity 3",
+            "desc": "On the next three sources of damage to you from attacks, gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
+            "faq": "Chainmail only grants the shield for the attack, not until the end of the round."
+        },
+        "gh-24": {
+            "name": "Amulett des Lebens",
+            "source": "Prosperity 3",
+            "desc": "During your turn, {HEAL} 1 damage."
+        },
+        "gh-25": {
+            "name": "Zackenschwert",
+            "source": "Prosperity 3",
+            "desc": "During your melee attack, add {WOUND} to a single attack."
+        },
+        "gh-26": {
+            "name": "Langspeer",
+            "source": "Prosperity 3",
+            "desc": "Turn a single-target melee attack into the following: {AOE.LINE_0_1_1}"
+        },
+        "gh-27": {
+            "name": "Großer Heiltrank",
+            "source": "Prosperity 3",
+            "desc": "During your turn, perform a “{HEAL} 5, self” action."
+        },
+        "gh-28": {
+            "name": "Mond-Ohrring",
+            "source": "Prosperity 3",
+            "desc": "During your turn, {REFRESH} all of your spent items."
+        },
+        "gh-29": {
+            "name": "Bequeme Schuhe",
+            "source": "Prosperity 4",
+            "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+        },
+        "gh-30": {
+            "name": "Nietenrüstung",
+            "source": "Prosperity 4",
+            "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+        },
+        "gh-31": {
+            "name": "Falkenhelm",
+            "source": "Prosperity 4",
+            "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
+        },
+        "gh-32": {
+            "name": "Turmschild",
+            "source": "Prosperity 4",
+            "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
+        },
+        "gh-33": {
+            "name": "Wurfbombe",
+            "source": "Prosperity 4",
+            "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+        },
+        "gh-34": {
+            "name": "Großer Ausdauertrank",
+            "source": "Prosperity 4",
+            "desc": "During your turn, {RECOVER} up to three of your discarded cards.",
+            "faq": "[Errata] The item should allow you to recover only two discarded cards. This is change in an upcoming expansion but may be used in the base game."
+        },
+        "gh-35": {
+            "name": "Falkenfigur",
+            "source": "Prosperity 4\n{SCENARIO 98} (Schatz #79)",
+            "desc": "Summon Jade Falcon ({FLYING})",
+            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        },
+        "gh-36": {
+            "name": "Laufstiefel",
+            "source": "Prosperity 5",
+            "desc": "During your movement, add +3 {MOVE} to the movement."
+        },
+        "gh-37": {
+            "name": "Robe der Anrufung",
+            "source": "Prosperity 5",
+            "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        },
+        "gh-38": {
+            "name": "Beckenhaube",
+            "source": "Prosperity 5",
+            "desc": "You are immune to {STUN} and {MUDDLE}. Add 2 {-1} to your attack modifier deck."
+        },
+        "gh-39": {
+            "name": "Kettenhaken",
+            "source": "Prosperity 5",
+            "desc": "During your ranged attack, add {PULL} 2 to the entire Attack action."
+        },
+        "gh-40": {
+            "name": "Mehrzweckdolch",
+            "source": "Prosperity 5",
+            "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 3 action instead of an {ATTACK} 2 action."
+        },
+        "gh-41": {
+            "name": "Großer Krafttrank",
+            "source": "Prosperity 5\n{SCENARIO 105} (Schatz #83)",
+            "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
+        },
+        "gh-42": {
+            "name": "Ring der Eile",
+            "source": "Prosperity 5",
+            "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of the card."
+        },
+        "gh-43": {
+            "name": "Flinkstiefel",
+            "source": "Prosperity 6",
+            "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 20."
+        },
+        "gh-44": {
+            "name": "Spangenpanzer",
+            "source": "Prosperity 6",
+            "desc": "On the next four sources of damage to you from attacks, gain {SHIELD} 1. Add 4 {-1} to your attack modifier deck."
+        },
+        "gh-45": {
+            "name": "Kette des Dunkelpaktes",
+            "source": "Prosperity 6",
+            "desc": "During your turn, {REFRESH} two of your consumed small items. Gain {CURSE}.",
+            "faq": "The perk that ignores item effects does not prevent you from being cursed."
+        },
+        "gh-46": {
+            "name": "Stachelschild",
+            "source": "Prosperity 6",
+            "desc": "When damaged by an attack, gain {SHIELD} 1 and Retaliate 2 for the attack."
+        },
+        "gh-47": {
+            "name": "Kriegssense",
+            "source": "Prosperity 6",
+            "desc": "During your single-target melee attack action, turn the attack into the following:  {AOE.CLEAVE_0_1}"
+        },
+        "gh-48": {
+            "name": "Großer Manatrank",
+            "source": "Prosperity 6\nReward from {SCENARIO 104}",
+            "desc": "During your turn, create any two elements. {ANY} {ANY}"
+        },
+        "gh-49": {
+            "name": "Sonnen-Ohrring",
+            "source": "Prosperity 6",
+            "desc": "During your turn, {REFRESH} all of your spent items and {HEAL} 3 damage."
+        },
+        "gh-50": {
+            "name": "Panzerschuhe",
+            "source": "Prosperity 7",
+            "desc": "If you move 1 or fewer hexes on your turn, gain {SHIELD} 1 for the round. Add 2 {-1} to your attack modifier deck."
+        },
+        "gh-51": {
+            "name": "Schattenrüstung",
+            "source": "Prosperity 7",
+            "desc": "When you are damaged by an attack, suffer no damage instead."
+        },
+        "gh-52": {
+            "name": "Schutzamulett",
+            "source": "Prosperity 7\nReward from {SCENARIO 109}",
+            "desc": "You are immune to {POISON} and {WOUND}."
+        },
+        "gh-53": {
+            "name": "Schwarzdolch",
+            "source": "Prosperity 7",
+            "desc": "During your melee attack, add {CURSE} to a single attack."
+        },
+        "gh-54": {
+            "name": "Stab des Ansehens",
+            "source": "Prosperity 7",
+            "desc": "During your ranged attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        },
+        "gh-55": {
+            "name": "Überragender Heiltrank",
+            "source": "Prosperity 7",
+            "desc": "During your turn, perform a “{HEAL} 7, self” action."
+        },
+        "gh-56": {
+            "name": "Ring der Brutalität",
+            "source": "Prosperity 7",
+            "desc": "At the end of your turn, play one card from your hand and immediately perform the top action of the card."
+        },
+        "gh-57": {
+            "name": "Sorglose Sandalen",
+            "source": "Prosperity 8",
+            "desc": "Whenever you use the default bottom of an ability card perform a {MOVE} 4 action instead of a {MOVE} 2 action."
+        },
+        "gh-58": {
+            "name": "Phasenmantel",
+            "source": "Prosperity 8",
+            "desc": "Gain {FLYING}. While occupying an obstacle hex, you are considered Invisible and cannot attack"
+        },
+        "gh-59": {
+            "name": "Teleskoplinse",
+            "source": "Prosperity 8\nOption from {SCENARIO 100}",
+            "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
+        },
+        "gh-60": {
+            "name": "Instabiler Sprengsatz",
+            "source": "Prosperity 8",
+            "desc": "Turn a single target ranged attack into the following: {AOE.CUBE_2_2}. All allies in the attack area suffer 3 damage."
+        },
+        "gh-61": {
+            "name": "Setzschild",
+            "source": "Prosperity 8",
+            "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
+        },
+        "gh-62": {
+            "name": "Schicksalspulver",
+            "source": "Prosperity 8",
+            "desc": "During your attack, add {STUN}, {POISON}, and {CURSE} to a single attack."
+        },
+        "gh-63": {
+            "name": "Glücksauge",
+            "source": "Prosperity 8",
+            "desc": "During your turn, {STRENGTHEN} yourself and all adjacent allies."
+        },
+        "gh-64": {
+            "name": "Sprintstiefel",
+            "source": "Prosperity 9",
+            "desc": "During your movement, add +4 {MOVE} to the movement."
+        },
+        "gh-65": {
+            "name": "Plattenpanzer",
+            "source": "Prosperity 9",
+            "desc": "On the next five sources of damage to you from attacks, gain {SHIELD} 1. Add 5 {-1} to your attack modifier deck."
+        },
+        "gh-66": {
+            "name": "Schreckensmaske",
+            "source": "Prosperity 9\n{SCENARIO 110} (Schatz #84)",
+            "desc": "During your melee attack, add {PUSH} 1."
+        },
+        "gh-67": {
+            "name": "Ausbalancierte Klinge",
+            "source": "Prosperity 9",
+            "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 4 instead of an {ATTACK} 2 action."
+        },
+        "gh-68": {
+            "name": "Hellebarde",
+            "source": "Prosperity 9\n{SCENARIO 111} (Schatz #92)\nSection 132 -> g106 “Strangler's Park” in book",
+            "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
+        },
+        "gh-69": {
+            "name": "Stern-Ohrring",
+            "source": "Prosperity 9",
+            "desc": "During your turn, {REFRESH} all of your spent items, {HEAL} 3 damage, and {RECOVER} up to two of your discarded cards."
+        },
+        "gh-70": {
+            "name": "Ring der Chancen",
+            "source": "Prosperity 9\nFC Challenge Scenario, Rift Card 12 (Schatz #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
+            "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
+        },
+        "gh-71": {
+            "name": "Levitationsstiefel",
+            "source": "Random Item",
+            "desc": "Gain {FLYING}"
+        },
+        "gh-72": {
+            "name": "Schuhe der Heiterkeit",
+            "source": "Random Item",
+            "desc": "If you move 6 or more hexes on your turn, gain {exp1}."
+        },
+        "gh-73": {
+            "name": "Flirrender Umhang",
+            "source": "Random Item",
+            "desc": "During your turn, perform a “{MOVE} 4, {JUMP}” action"
+        },
+        "gh-74": {
+            "name": "Klingenrüstung",
+            "source": "Random Item",
+            "desc": "On the next three sources of damage from attacks targeting you, gain {SHIELD} 1, {Retaliate} 1. Add 4 {-1} to your attack modifier deck."
+        },
+        "gh-75": {
+            "name": "Reif der Elemente",
+            "source": "Random Item",
+            "desc": "During your turn, {ANY_X} to create any element. {ANY}"
+        },
+        "gh-76": {
+            "name": "Kettenhaube",
+            "source": "Random Item",
+            "desc": "While you are adjacent to three or more monsters, gain {SHIELD} 1. Add 1 {-1} to your attack modifier deck."
+        },
+        "gh-77": {
+            "name": "Frostklinge",
+            "source": "Random Item",
+            "desc": "During your melee attack, {ICE_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh-78": {
+            "name": "Sturmklinge",
+            "source": "Random Item",
+            "desc": "During your melee attack, {WIND_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh-79": {
+            "name": "Infernoklinge",
+            "source": "Random Item",
+            "desc": "During your melee attack, {FIRE_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh-80": {
+            "name": "Bebenklinge",
+            "source": "Random Item",
+            "desc": "During your melee attack, {EARTH_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh-81": {
+            "name": "Glanzklinge",
+            "source": "Random Item",
+            "desc": "During your melee attack, {LIGHT_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh-82": {
+            "name": "Nachtklinge",
+            "source": "Random Item",
+            "desc": "During your melee attack, {DARK_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh-83": {
+            "name": "Stab der Kälte",
+            "source": "Random Item",
+            "desc": "During your turn, create Ice. {ICE}"
+        },
+        "gh-84": {
+            "name": "Stab des Strums",
+            "source": "Random Item",
+            "desc": "During your turn, create Wind. {WIND}"
+        },
+        "gh-85": {
+            "name": "Stab des Infernos",
+            "source": "Random Item",
+            "desc": "During your turn, create Fire. {FIRE}"
+        },
+        "gh-86": {
+            "name": "Stab des Bebens",
+            "source": "Random Item",
+            "desc": "During your turn, create Earth. {EARTH}"
+        },
+        "gh-87": {
+            "name": "Stab des Glanzes",
+            "source": "Random Item",
+            "desc": "During your turn, create Light. {LIGHT}"
+        },
+        "gh-88": {
+            "name": "Stab der Nacht",
+            "source": "Random Item",
+            "desc": "During your turn, create Dark. {DARK}"
+        },
+        "gh-89": {
+            "name": "Kleiner Arzneitrank",
+            "source": "Random Item",
+            "desc": "During your turn, remove one negative condition on yourself. This can be used while you have {STUN}."
+        },
+        "gh-90": {
+            "name": "Großer Arzneitrank",
+            "source": "Random Item\n{SCENARIO 102} (Schatz #77)",
+            "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have {STUN}."
+        },
+        "gh-91": {
+            "name": "Stahlring",
+            "source": "Random Item",
+            "desc": "When damaged by an attack targeting you, gain {SHIELD} 4 for the attack."
+        },
+        "gh-92": {
+            "name": "Dämpfungsring",
+            "source": "Random Item",
+            "desc": "Before an enemy would consume an element, consume that element instead for no effect"
+        },
+        "gh-93": {
+            "name": "Schrift der Kraft",
+            "source": "Random Item",
+            "desc": "During an ally's attack, add +1 {ATTACK} to their entire attack action"
+        },
+        "gh-94": {
+            "name": "Schrift der Heilung",
+            "source": "Random Item",
+            "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action"
+        },
+        "gh-95": {
+            "name": "Schrift der Ausdauer",
+            "source": "Random Item",
+            "desc": "During your turn, an ally within {RANGE} 5 may {RECOVER} up to two of their discarded cards"
+        },
+        "gh-96": {
+            "name": "Raketenstiefel",
+            "source": "{SCENARIO 66} (Schatz #36)",
+            "desc": "During your movement, add +3 {MOVE} and {JUMP} to a single movement"
+        },
+        "gh-97": {
+            "name": "Sandalen der Ausdauer",
+            "source": "{SCENARIO 38} (Schatz #29)",
+            "desc": "If you move 4 or more hexes on your turn, perform a “{HEAL} 1, Self” action."
+        },
+        "gh-98": {
+            "name": "Drakenstiefel",
+            "source": "{SCENARIO 43} (Schatz #35)",
+            "desc": "You are unaffected by difficult and hazardous terrain."
+        },
+        "gh-99": {
+            "name": "Lavalatschen",
+            "source": "{SCENARIO 63} (Schatz #12)",
+            "desc": "Ignore the damaging effects of hazardous terrain and perform a “{HEAL} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
+        },
+        "gh-100": {
+            "name": "Beschwörungsrobe",
+            "source": "{SCENARIO 31} (Schatz #69)",
+            "desc": "During your turn, perform a “{HEAL} 2, target any summoned ally” action."
+        },
+        "gh-101": {
+            "name": "Zweite Haut",
+            "source": "{SCENARIO 06} (Schatz #50)",
+            "desc": "Remove two {MODIFIER_MINUS_ONE} from your attack modifier deck."
+        },
+        "gh-102": {
+            "name": "Opferrobe",
+            "source": "City Event 40",
+            "desc": "During your ranged attack, suffer 3 damage to add +1 {ATTACK} to the entire Attack action."
+        },
+        "gh-103": {
+            "name": "Drakenrüstung",
+            "source": "{SCENARIO 34} (Schatz #23)",
+            "desc": "You are immune to {POISON} and {WOUND}."
+        },
+        "gh-104": {
+            "name": "Dampfrüstung",
+            "source": "{SCENARIO 40} (Schatz #47)",
+            "desc": "On the next five sources of damage from attacks targeting you, gain {SHIELD} 1."
+        },
+        "gh-105": {
+            "name": "Schäbiges Schultertuch",
+            "source": "City Event 30",
+            "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
+            "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
+        },
+        "gh-106": {
+            "name": "Zahnkette",
+            "source": "Road Event 05",
+            "desc": "Any time you kill an enemy during your turn, perform a “{HEAL} 1, Self” action."
+        },
+        "gh-107": {
+            "name": "Hornhelm",
+            "source": "{SCENARIO 03} (Schatz #65)",
+            "desc": "After moving 4 or more hexes on your turn, add +1 {ATTACK} to your next melee attack this turn.",
+            "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
+        },
+        "gh-108": {
+            "name": "Drakenhelm",
+            "source": "{SCENARIO 25} (Schatz #58)",
+            "desc": "Whenever you gain {MUDDLE}, gain {STRENGTHEN} instead."
+        },
+        "gh-109": {
+            "name": "Diebesgugel",
+            "source": "City Event 62",
+            "desc": "During your “Loot 1” ability, perform a “Loot 2” ability instead."
+        },
+        "gh-110": {
+            "name": "Helm der Berge",
+            "source": "{SCENARIO 82} (Schatz #62)",
+            "desc": "When attacked, if {EARTH} is Strong, Immobilize the attacker."
+        },
+        "gh-111": {
+            "name": "Gischtkrone",
+            "source": "{SCENARIO 64} (Schatz #09)",
+            "desc": "When attacked, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
+        },
+        "gh-112": {
+            "name": "Alter Bohrer",
+            "source": "Reward From {SCENARIO 65}\nOption from {SCENARIO 100}",
+            "desc": "During your melee attack, add +2 {ATTACK} and {PIERCE} 2 to the entire Attack action"
+        },
+        "gh-113": {
+            "name": "Schädelfluch",
+            "source": "Reward From {SCENARIO 11}\nReward From {SCENARIO 12}",
+            "desc": "During your melee attack targeting a Living Corpse, Living Spirit, or Living Bones, add +5 Attack to a single attack."
+        },
+        "gh-114": {
+            "name": "Stab des Xorn",
+            "source": "Reward from {SCENARIO 53}",
+            "desc": "During your ranged attack, add {POISON} and {MUDDLE} to the entire Attack action"
+        },
+        "gh-115": {
+            "name": "Gebirgshammer",
+            "source": "{SCENARIO 82} (Schatz #62)",
+            "desc": "Summon Warrior Spirit",
+            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        },
+        "gh-116": {
+            "name": "Flammenfalchion",
+            "source": "{SCENARIO 23} (Schatz #72)",
+            "desc": "During your single-target melee attack, the target and all enemies adjacent to the target suffer 1 damage"
+        },
+        "gh-117": {
+            "name": "Blutaxt",
+            "source": "City Event 53\nRoad Event 53",
+            "desc": "During your melee attack, suffer 2 damage to add +1 {ATTACK} to the entire Attack action."
+        },
+        "gh-118": {
+            "name": "Stab der Elemente",
+            "source": "City Event 57",
+            "desc": "During your turn, create any element. {ANY}"
+        },
+        "gh-119": {
+            "name": "Schädel des Hasses",
+            "source": "Reward From {SCENARIO 95}",
+            "desc": "During your turn, {CURSE} all adjacent enemies."
+        },
+        "gh-120": {
+            "name": "Beschwörungsstab",
+            "source": "Reward From {SCENARIO 88}",
+            "desc": "During your turn, a summoned ally within {RANGE} 3 performs a “{MOVE} 3” action with you controlling the action."
+        },
+        "gh-121": {
+            "name": "Kugel des Morgens",
+            "source": "Reward From {SCENARIO 85}",
+            "desc": "During your turn, {DARK_X} to create Light. {LIGHT}"
+        },
+        "gh-122": {
+            "name": "Kugel des Zwielichts",
+            "source": "{SCENARIO 89} (Schatz #27)",
+            "desc": "During your turn, {LIGHT_X} to create Dark. {DARK}"
+        },
+        "gh-123": {
+            "name": "Schädelring",
+            "source": "{SCENARIO 04} (Schatz #38)",
+            "desc": "Summon Skeleton",
+            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        },
+        "gh-124": {
+            "name": "Schicksalskompass",
+            "source": "{SCENARIO 93} (Schatz #54)",
+            "desc": "During your turn, force an enemy within {RANGE} 5 to perform a “{MOVE} 2” action with you controlling the action."
+        },
+        "gh-125": {
+            "name": "Zahnrad",
+            "source": "City Event 03\nOption from {SCENARIO 100}",
+            "desc": "During your turn, disarm all traps within {RANGE} 2."
+        },
+        "gh-126": {
+            "name": "Mechanische Spinne",
+            "source": "City Event 43\nOption from {SCENARIO 100}",
+            "desc": "During your turn, {POISON} all adjacent enemies."
+        },
+        "gh-127": {
+            "name": "Mechanische Riesenspinne",
+            "source": "City Event 61",
+            "desc": "During your turn, perform a “Loot 1” action."
+        },
+        "gh-128": {
+            "name": "Schwarzes Rauchfass",
+            "source": "Reward From {SCENARIO 90}",
+            "desc": "During your turn, Muddle all enemies with {RANGE} 2."
+        },
+        "gh-129": {
+            "name": "Schwarzkarte",
+            "source": "Road Event 51",
+            "desc": "During your turn, place a character token on an adjacent normal or elite enemy. You add +1 {ATTACK} to all your attacks targeting this enemy."
+        },
+        "gh-130": {
+            "name": "Spiralring",
+            "source": "{SCENARIO 81} (Schatz #68)",
+            "desc": "During your turn, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Self” action"
+        },
+        "gh-131": {
+            "name": "Herz des Abtrünnigen",
+            "source": "{SCENARIO 79} (Schatz #52)",
+            "desc": "When attacked by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
+            "faq": "This item cannot be used if there is no other enemy in range to be attacked."
+        },
+        "gh-132": {
+            "name": "Energiekern",
+            "source": "{SCENARIO 67}",
+            "desc": "Summon Steel Construct.",
+            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        },
+        "gh-133": {
+            "name": "Resonanzkristall",
+            "source": "{SCENARIO 84}",
+            "desc": "During your turn, destroy an adjacent obstacle."
+        },
+        "gh-134": {
+            "name": "Imposante Klinge",
+            "source": "Reward from Solo Scenario - {BR}",
+            "desc": "Any time you kill an enemy during your turn, gain {SHIELD} 1 for the rest of the round."
+        },
+        "gh-135": {
+            "name": "Fokusstrahl",
+            "source": "Reward from Solo Scenario - {TI}",
+            "desc": "During your Heal action, double the value of the Heal."
+        },
+        "gh-136": {
+            "name": "Instabiles Elixier",
+            "source": "Reward from Solo Scenario - {SW}",
+            "desc": "During your ranged attack, add +2 {ATTACK} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made."
+        },
+        "gh-137": {
+            "name": "Flüsterklinge",
+            "source": "Reward from Solo Scenario - {SC}",
+            "desc": "Any time you perform a melee attack, add {PIERCE} 1 to the Attack."
+        },
+        "gh-138": {
+            "name": "Steinamulett",
+            "source": "Reward from Solo Scenario - {CH}",
+            "desc": "During your action where an obstacle is created, create one additional obstacle and apply all effects of the action to it."
+        },
+        "gh-139": {
+            "name": "Astralmesser",
+            "source": "Reward from Solo Scenario - {MT}",
+            "desc": "Any time you perform an Augment action, add +1 {ATTACK} to the entire action."
+        },
+        "gh-140": {
+            "name": "Sonnenschild",
+            "source": "Reward from Solo Scenario - {SK}",
+            "desc": "When damaged by an attack, you may {LIGHT_X} to gain {SHIELD} 3 for the attack."
+        },
+        "gh-141": {
+            "name": "Werkzeuggürtel",
+            "source": "Reward from Solo Scenario - {QM}",
+            "desc": "During your turn, you or any one ally may {REFRESH} one of your spent or consumed items.",
+            "faq": "This item cannot be refreshed."
+        },
+        "gh-142": {
+            "name": "Phasenfigur",
+            "source": "Reward from Solo Scenario - {SU}",
+            "desc": "When a summon you own is damaged by an attack, it suffers no damage instead."
+        },
+        "gh-143": {
+            "name": "Rauchelixier",
+            "source": "Reward from Solo Scenario - {NS}",
+            "desc": "During your turn, gain {INVISIBLE} and create dark. {DARK}"
+        },
+        "gh-144": {
+            "name": "Seuchenbrosche",
+            "source": "Reward from Solo Scenario - {PH}",
+            "desc": "During your turn, {POISON} and {CURSE} one enemy within {RANGE} 3."
+        },
+        "gh-145": {
+            "name": "Todesmaske",
+            "source": "Reward from Solo Scenario - {BE}",
+            "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {ATTACK} to the Attack."
+        },
+        "gh-146": {
+            "name": "Virtuosenlaute",
+            "source": "Reward from Solo Scenario - {SS}",
+            "desc": "After performing any song action, immediately perform an Attack 2 or {MOVE} 2 action."
+        },
+        "gh-147": {
+            "name": "Mantel des Jägers",
+            "source": "Reward from Solo Scenario - {DS}",
+            "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}."
+        },
+        "gh-148": {
+            "name": "Arztkittel",
+            "source": "Reward from Solo Scenario - {SB}",
+            "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal."
+        },
+        "gh-149": {
+            "name": "Elementarstiefel",
+            "source": "Reward from Solo Scenario - {EL}",
+            "desc": "If you move 5 or more hexes on your turn, create any element. {ANY}"
+        },
+        "gh-150": {
+            "name": "Befehlsstab",
+            "source": "Reward from Solo Scenario - {BT}",
+            "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
+        },
+        "gh-151": {
+            "name": "Sword of the Sands",
+            "source": "Reward from Solo Scenario - {BS}",
+            "desc": "During your melee attack, add {POISON} and {WOUND} to the entire attack action."
+        },
+        "gh-152": {
+            "name": "Ring der Dualität",
+            "source": "Reward from {SCENARIO 97}\nSection 125 “A locked chest” in book",
+            "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
+        },
+        "gh-153": {
+            "name": "Kleines Gegengift",
+            "source": "Reward From {SCENARIO 99}",
+            "desc": "The next three times you would gain {POISON} prevent the condition."
+        },
+        "gh-154": {
+            "name": "Großes Gegengift",
+            "source": "Reward from {SCENARIO 105}",
+            "desc": "The next five times you would gain {POISON} prevent the condition."
+        },
+        "gh-155": {
+            "name": "Fluchschutzrüstung",
+            "source": "Reward from {SCENARIO 108}",
+            "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck."
+        },
+        "gh-156": {
+            "name": "Elementarschwert",
+            "source": "Unknown",
+            "desc": "During your melee attack, {ANY_X} to add +2 {ATTACK} to a single attack."
+        },
+        "gh-157": {
+            "name": "Antiker Bogen",
+            "source": "{SCENARIO 107} (Schatz #78)\nSection 32 “Collapsed Atrium” in book",
+            "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack."
+        },
+        "gh-158": {
+            "name": "Erfrischende Beinpanzer",
+            "source": "{SCENARIO 111} (Schatz #82)",
+            "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}."
+        },
+        "gh-159": {
+            "name": "Schrift der Eile",
+            "source": "{SCENARIO 103} (Schatz #81)",
+            "desc": "During any one ally's movement, add +2 {MOVE} to the movement."
+        },
+        "gh-160": {
+            "name": "Beutelschneider",
+            "source": "Unknown",
+            "desc": "When you kill a monster during your turn, gain one money token."
+        },
+        "gh-161": {
+            "name": "Wurfaxt",
+            "source": "Reward from {SCENARIO 108}",
+            "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack."
+        },
+        "gh-162": {
+            "name": "Riss-Apparat",
+            "source": "Reward from {SCENARIO 112}\nSection 62 “Mechanical Splendor” in book.",
+            "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you."
+        },
+        "gh-163": {
+            "name": "Kristalldiadem",
+            "source": "Reward from {SCENARIO 110}",
+            "desc": "When you peform a long or short rest, gain {STRENGTHEN}."
+        },
+        "gh-164": {
+            "name": "Wahrsagebecken",
+            "source": "Reward from Solo Scenario - {DR}",
+            "desc": "When you reveal cards from any deck, reveal one additional card."
+        },
+        "jotl_1": {
+            "name": "Eagle-Eye Goggles",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "During your attack, gain Advantage on the entire Attack action."
+        },
+        "jotl_2": {
+            "name": "Iron Helmet",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+        },
+        "jotl_3": {
+            "name": "Chain Armor",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "During your turn gain {SHIELD} 1 for the rest of the round"
+        },
+        "jotl_4": {
+            "name": "Studded Leather",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+        },
+        "jotl_5": {
+            "name": "Weathered Boots",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "During your movement add +1 {MOVE} to a single movement."
+        },
+        "jotl_6": {
+            "name": "Winged Shoes",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "During your movement, add {JUMP} to the entire Move Action.",
+            "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
+        },
+        "jotl_7": {
+            "name": "Heater Shield",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+        },
+        "jotl_8": {
+            "name": "Throwing Hammer",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "During your ranged attack, add {STUN} to a single attack"
+        },
+        "jotl_9": {
+            "name": "Poison Dagger",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "During your melee attack, add {POISON} to a single attack."
+        },
+        "jotl_10": {
+            "name": "Iron Spear",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes"
+        },
+        "jotl_11": {
+            "name": "Healing Potion",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "During your turn, perform a “{HEAL} 3, Self” action."
+        },
+        "jotl_12": {
+            "name": "Stamina Potion",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "During your turn, return one of your discarded cards to your hand."
+        },
+        "jotl_13": {
+            "name": "Power Potion",
+            "source": "Reward from {SCENARIO 2}",
+            "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+        },
+        "jotl_14": {
+            "name": "Mana Potion",
+            "source": "Reward from {SCENARIO 4}\n {SCENARIO 4} (Schatz #16)",
+            "desc": "During your turn, infuse any one element. {ANY}"
+        },
+        "jotl_15": {
+            "name": "Amulet of Life",
+            "source": "Reward from {SCENARIO 9}",
+            "desc": "During your turn, “{HEAL} 1, Self” action."
+        },
+        "jotl_16": {
+            "name": "Robes of Evocation",
+            "source": "Reward from {SCENARIO 9}",
+            "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        },
+        "jotl_17": {
+            "name": "Comfortable Shoes",
+            "source": "Reward from {SCENARIO 9}",
+            "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+        },
+        "jotl_18": {
+            "name": "Battle-Axe",
+            "source": "Reward from {SCENARIO 9}",
+            "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+        },
+        "jotl_19": {
+            "name": "Black Candle",
+            "source": "Reward from {SCENARIO 9}",
+            "desc": "During your ranged attack, add {CURSE} to a single attack."
+        },
+        "jotl_20": {
+            "name": "Stun Powder",
+            "source": "Reward from {SCENARIO 9}",
+            "desc": "During your attack, add {STUN} to a single attack."
+        },
+        "jotl_21": {
+            "name": "Hawk Helm",
+            "source": "Reward from {SCENARIO 15}",
+            "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
+        },
+        "jotl_22": {
+            "name": "Bladed Armor",
+            "source": "Reward from {SCENARIO 15}",
+            "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack and the attacker suffers 2 damage."
+        },
+        "jotl_23": {
+            "name": "Boots of Striding",
+            "source": "Reward from {SCENARIO 15}",
+            "desc": "During your movement, add +2 {MOVE} to a single movement."
+        },
+        "jotl_24": {
+            "name": "Volatile Bomb",
+            "source": "Reward from {SCENARIO 15}",
+            "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+        },
+        "jotl_25": {
+            "name": "Barbed Chain",
+            "source": "Reward from {SCENARIO 15}",
+            "desc": "During your ranged attack, add {PULL} 2 to a single attack."
+        },
+        "jotl_26": {
+            "name": "Oak Charm",
+            "source": "Reward from {SCENARIO 15}",
+            "desc": "During your turn, perform a “{BLESS}, {RANGE} 5” action."
+        },
+        "jotl_27": {
+            "name": "Fateful Compass",
+            "source": "{SCENARIO 3} (Schatz #10)",
+            "desc": "During your turn, force one enemy within {RANGE} 3 to peform a “{MOVE} 2” action with you controlling the action."
+        },
+        "jotl_28": {
+            "name": "Flea-Bitten Shawl",
+            "source": "Reward from {SCENARIO 8}\nReward from {SCENARIO 12}",
+            "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
+            "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
+        },
+        "jotl_29": {
+            "name": "Tower Shield",
+            "source": "Reward from {SCENARIO 16}",
+            "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
+        },
+        "jotl_30": {
+            "name": "Ring of Haste",
+            "source": "{SCENARIO 21} (Schatz #11)",
+            "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of that card."
+        },
+        "jotl_31": {
+            "name": "Ring of Strength",
+            "source": "Reward from {SCENARIO 19}\n{SCENARIO 18} (Schatz #2)",
+            "desc": "During your turn, gain {STRENGTHEN}."
+        },
+        "jotl_32": {
+            "name": "Ring of Restoration",
+            "source": "Misplaced Good #F from {SCENARIO 20}",
+            "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action."
+        },
+        "jotl_33": {
+            "name": "Steel Ring",
+            "source": "Reward from {SCENARIO 22}",
+            "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
+        },
+        "jotl_34": {
+            "name": "Barbed Axe",
+            "source": "Reward from {SCENARIO 34}",
+            "desc": "During your attack, add {WOUND} to the entire Attack Action."
+        },
+        "jotl_35": {
+            "name": "Robes of Command",
+            "source": "Reward from {SCENARIO 24}",
+            "desc": "During your turn, one adjacent ally may perform and “{ATTACK} 2” Action."
+        },
+        "jotl_36": {
+            "name": "Jet Boots",
+            "source": "Reward from {SCENARIO 25}",
+            "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."
+        }
+    },
+    "treasures": {
+        "gh-1": {
+            "name": "Random Item Design"
+        },
+        "gh-2": {
+            "name": "Gain “Tower Shield” (Item 032)"
+        },
+        "gh-3": {
+            "name": "Gain “Splintmail” (Item 044)"
+        },
+        "gh-4": {
+            "name": "Gain 15 Gold"
+        },
+        "gh-5": {
+            "name": "Gain “Chainmail” (Item 023)"
+        },
+        "gh-6": {
+            "name": "Gain “Hooked Chain” (Item 039)"
+        },
+        "gh-7": {
+            "name": "Random Side Scenario"
+        },
+        "gh-8": {
+            "name": "Gain 1 ✔"
+        },
+        "gh-9": {
+            "name": "Gain “Wave Crest” (Item 111)"
+        },
+        "gh-10": {
+            "name": "Gain 10 Experience"
+        },
+        "gh-11": {
+            "name": "Random Item Design"
+        },
+        "gh-12": {
+            "name": "Gain “Magma Waders” (Item 099)"
+        },
+        "gh-13": {
+            "name": "Suffer 5 Damage and gain {POISON} and {WOUND}"
+        },
+        "gh-14": {
+            "name": "Gain 10 Experience"
+        },
+        "gh-15": {
+            "name": "Gain “Pendant of Dark Pacts” (Item 045)"
+        },
+        "gh-16": {
+            "name": "Gain 10 gold"
+        },
+        "gh-17": {
+            "name": "Gain 20 Gold"
+        },
+        "gh-18": {
+            "name": "Gain 15 gold"
+        },
+        "gh-19": {
+            "name": "Random Item Design"
+        },
+        "gh-20": {
+            "name": "Random Item Design"
+        },
+        "gh-21": {
+            "name": "Suffer 5 Damage"
+        },
+        "gh-22": {
+            "name": "Random Item Design"
+        },
+        "gh-23": {
+            "name": "Gain “Drakescale Armor” (Item 103)"
+        },
+        "gh-24": {
+            "name": "Suffer 5 damage"
+        },
+        "gh-25": {
+            "name": "Gain 25 gold"
+        },
+        "gh-26": {
+            "name": "Gain 20 Gold"
+        },
+        "gh-27": {
+            "name": "Gain “Orb of Twilight” (Item 122)"
+        },
+        "gh-28": {
+            "name": "Gain 15 Gold"
+        },
+        "gh-29": {
+            "name": "Gain “Endurance Footwraps” (Item 097)"
+        },
+        "gh-30": {
+            "name": "Gain 1 ✔"
+        },
+        "gh-31": {
+            "name": "Random Item Design"
+        },
+        "gh-32": {
+            "name": "Random Item Design"
+        },
+        "gh-33": {
+            "name": "Gain “Weighted Net” (Item 019)"
+        },
+        "gh-34": {
+            "name": "Gain “Amulet of Life” (Item 024)"
+        },
+        "gh-35": {
+            "name": "Gain “Drakescale Boots” (Item 098)"
+        },
+        "gh-36": {
+            "name": "“Rocket Boots” design (Item 096)"
+        },
+        "gh-37": {
+            "name": "Gain 1 ✔"
+        },
+        "gh-38": {
+            "name": "“Ring of Skulls” design (Item 123)"
+        },
+        "gh-39": {
+            "name": "Suffer 5 damage"
+        },
+        "gh-40": {
+            "name": "Random Item Design"
+        },
+        "gh-41": {
+            "name": "Gain “Black Knife” (Item 053)"
+        },
+        "gh-42": {
+            "name": "Random Item Design"
+        },
+        "gh-43": {
+            "name": "Suffer 5 damage gain {POISON} and {WOUND}"
+        },
+        "gh-44": {
+            "name": "Random Side Scenario"
+        },
+        "gh-45": {
+            "name": "Random Item Design"
+        },
+        "gh-46": {
+            "name": "Suffer 3 damage and gain {POISON}"
+        },
+        "gh-47": {
+            "name": "Gain “Steam Armor” (Item 104)"
+        },
+        "gh-48": {
+            "name": "Gain 30 gold"
+        },
+        "gh-49": {
+            "name": "New Scenario: Lost Island (Scenario 17 at K-17)"
+        },
+        "gh-50": {
+            "name": "Gain “Second Skin” (Item 101)"
+        },
+        "gh-51": {
+            "name": "Random Side Scenario"
+        },
+        "gh-52": {
+            "name": "Gain “Heart of the Betrayer” (Item 131)"
+        },
+        "gh-53": {
+            "name": "Random Item Design"
+        },
+        "gh-54": {
+            "name": "Gain “Doomed Compass” (Item 124)"
+        },
+        "gh-55": {
+            "name": "Gain 1 ✔"
+        },
+        "gh-56": {
+            "name": "Gain “Star Earring” (Item 069)"
+        },
+        "gh-57": {
+            "name": "Gain 15 gold"
+        },
+        "gh-58": {
+            "name": "Gain “Drakescale Helm” (Item 108)"
+        },
+        "gh-59": {
+            "name": "Random Item Design"
+        },
+        "gh-60": {
+            "name": "Gain “Skullbane Axe” (Item 113)"
+        },
+        "gh-61": {
+            "name": "Gain “Versatile Dagger” (Item 040)"
+        },
+        "gh-62": {
+            "name": "Gain “Helm of the Mountain” (Item 110) and “Mountain Hammer” (Item 115)"
+        },
+        "gh-63": {
+            "name": "Random Item Design"
+        },
+        "gh-64": {
+            "name": "Gain 30 gold"
+        },
+        "gh-65": {
+            "name": "“Horned Helm” design (Item 107)"
+        },
+        "gh-66": {
+            "name": "Gain “Volatile Bomb” (Item 033)"
+        },
+        "gh-67": {
+            "name": "Gain 10 Gold"
+        },
+        "gh-68": {
+            "name": "Gain “Helix Ring” (Item 130)"
+        },
+        "gh-69": {
+            "name": "Gain “Robes of Summoning” (Item 100)"
+        },
+        "gh-70": {
+            "name": "Random Side Scenario"
+        },
+        "gh-71": {
+            "name": "Random Side Scenario"
+        },
+        "gh-72": {
+            "name": "“Fueled Falchion” design (Item 116)"
+        },
+        "gh-73": {
+            "name": "Random Item Design"
+        },
+        "gh-74": {
+            "name": "Random Item Design"
+        },
+        "gh-75": {
+            "name": "Cryptogram Found (See scenario book page 121)"
+        },
+        "fc-76": {
+            "name": "Suffer 3 damage, gain {WOUND} and 10 gold"
+        },
+        "fc-77": {
+            "name": "Gain “Major Cure Potion” (Item 090)"
+        },
+        "fc-78": {
+            "name": "“Ancient Bow” (Item 157)"
+        },
+        "fc-79": {
+            "name": "Gain “Falcon Figurine” (Item 157)"
+        },
+        "fc-80": {
+            "name": "Gain 1 ✓ and add Rift Event 19 to the deck"
+        },
+        "fc-81": {
+            "name": "Gain “Scroll of Haste” (Item 159) and 10 gold"
+        },
+        "fc-82": {
+            "name": "“Rejuvenation Greaves” (Item 158)"
+        },
+        "fc-83": {
+            "name": "Gain “Major Power Potion” (Item 041)"
+        },
+        "fc-84": {
+            "name": "Gain “Mask of Terrors” (Item 066)"
+        },
+        "fc-85": {
+            "name": "Suffer 3 damage, gain {POISON} and 10 gold"
+        },
+        "fc-86": {
+            "name": "Unlock Diviner {DR} Solo Scenario “Forecast of the Inevitable” (see page 25 of the main book)"
+        },
+        "fc-87": {
+            "name": "Suffer 2 damage, gain CURSE and 15 gold"
+        },
+        "fc-88": {
+            "name": "Gain 1 ✓"
+        },
+        "fc-89": {
+            "name": "Gain “Second Chance Ring” (Item 070)"
+        },
+        "fc-90": {
+            "name": "10 gold each, Read section 75 on page 49"
+        },
+        "fc-91": {
+            "name": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
+        },
+        "fc-93": {
+            "name": "“Scroll of Haste” (Item 159)"
+        },
+        "fc-94": {
+            "name": "Gain 1 ✓ and add Rift Event 20 to the deck"
+        },
+        "fc-95": {
+            "name": "Gain 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
+        },
+        "fc-96": {
+            "name": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}"
+        },
+        "jotl-1": {
+            "name": "Gain 10 experience"
+        },
+        "jotl-2": {
+            "name": "“Ring of Strength” (Item 31)"
+        },
+        "jotl-3": {
+            "name": "Gain 15 experience"
+        },
+        "jotl-4": {
+            "name": "Gain 5 gold"
+        },
+        "jotl-5": {
+            "name": "Gain 1 ✔"
+        },
+        "jotl-6": {
+            "name": "Gain 10 gold"
+        },
+        "jotl-7": {
+            "name": "Gain 5 gold"
+        },
+        "jotl-8": {
+            "name": "Suffer 3 damage, gain {POISON,"
+        },
+        "jotl-9": {
+            "name": "Gain 5 gold"
+        },
+        "jotl-10": {
+            "name": "“Fateful Compass” (Item 27)"
+        },
+        "jotl-11": {
+            "name": "“Ring of Haste” (Item 30)"
+        },
+        "jotl-12": {
+            "name": "Gain 5 gold"
+        },
+        "jotl-13": {
+            "name": "Gain 5 gold"
+        },
+        "jotl-14": {
+            "name": "Gain 3 money tokens"
+        },
+        "jotl-15": {
+            "name": "Gain 1 ✔"
+        },
+        "jotl-16": {
+            "name": "“Mana Potion” (Item 14)"
+        },
+        "jotl-X": {
+            "name": "“Ring of Restoration” (Item 32)"
+        }
+    },
+    "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
+    "personal_quests": {
+        "gh-510": {
+            "name": "Seeker of Xorn",
+            "progress": [
+                "Complete three Crypt scenarios.",
+                "Conclude {SCENARIO 52}.",
+            ]
+        },
+        "gh-511": {
+            "name": "Merchant Class",
+            "progress": [
+                "Own two {BODY} items.",
+                "Own two {HEAD} items.",
+                "Own two {LEGS} items.",
+                "Own three {ONE-HAND} or {TWO-HANDS} items.",
+                "Own four {SMALL-ITEM} items.",
+            ]
+        },
+        "gh-512": {
+            "name": "Greed is Good",
+            "progress": [
+                "Have 200 gold in your possession.",
+            ]
+        },
+        "gh-513": {
+            "name": "Finding the Cure",
+            "unlock": "Open envelope X",
+            "progress": [
+                "Kill eight Forest Imps.",
+                "Conclude {SCENARIO 59}.",
+            ]
+        },
+        "gh-514": {
+            "name": "A Study of Anatomy",
+            "progress": [
+                "Experience your party members becoming exhausted fifteen times.",
+            ]
+        },
+        "gh-515": {
+            "name": "Law Bringer",
+            "progress": [
+                "Kill twenty Bandits or Cultists.",
+            ]
+        },
+        "gh-516": {
+            "name": "Pounds of Flesh",
+            "progress": [
+                "Kill fifteen Vermlings.",
+            ]
+        },
+        "gh-517": {
+            "name": "Trophy Hunt",
+            "progress": [
+                "Kill twenty different types of monsters.",
+            ]
+        },
+        "gh-518": {
+            "name": "Eternal Wanderer",
+            "progress": [
+                "Complete fifteen different scenarios.",
+            ]
+        },
+        "gh-519": {
+            "name": "Battle Legend",
+            "progress": [
+                "Earn fifteen ✔ from completed battle goals.",
+            ]
+        },
+        "gh-520": {
+            "name": "Implement of Light",
+            "progress": [
+                "Find the Skullbane Axe in the Necromancer's Sanctum.",
+                "Use it to kill seven Living Bones, Living Corpses, or Living Spirits.",
+            ]
+        },
+        "gh-521": {
+            "name": "Take Back the Trees",
+            "progress": [
+                "Complete three scenarios in the Dagger Forest.",
+                "Conclude {SCENARIO 55}.",
+            ]
+        },
+        "gh-522": {
+            "name": "The Thin Places",
+            "progress": [
+                "Complete six side scenarios.",
+            ]
+        },
+        "gh-523": {
+            "name": "Aberrant Slayer",
+            "progress": [
+                "Kill one Flame Demon.",
+                "Kill one Frost Demon.",
+                "Kill one Wind Demon.",
+                "Kill one Earth Demon.",
+                "Kill one Night Demon.",
+                "Kill one Sun Demon.",
+            ]
+        },
+        "gh-524": {
+            "name": "Fearless Stand",
+            "progress": [
+                "Kill twenty elite monsters.",
+            ]
+        },
+        "gh-525": {
+            "name": "Piety in All Things",
+            "progress": [
+                "Donate 120 gold to the Sanctuary of the Great Oak.",
+            ]
+        },
+        "gh-526": {
+            "name": "Vengeance",
+            "unlock": "Open Envelope X",
+            "progress": [
+                "Complete four scenarios in Gloomhaven.",
+                "Conclude {SCENARIO 57}.",
+            ]
+        },
+        "gh-527": {
+            "name": "Zealot of the Blood God",
+            "progress": [
+                "Become exhausted twelve times.",
+            ]
+        },
+        "gh-528": {
+            "name": "Goliath Toppler",
+            "progress": [
+                "Complete four boss scenarios",
+            ]
+        },
+        "gh-529": {
+            "name": "The Fall of Man",
+            "progress": [
+                "Complete 2 Lingering Swamp scenarios.",
+                "Conclude {SCENARIO 61}.",
+            ]
+        },
+        "gh-530": {
+            "name": "Augmented Abilities",
+            "progress": [
+                "Purchase four enhancements.",
+            ]
+        },
+        "gh-531": {
+            "name": "Elemental Samples",
+            "progress": [
+                "Complete a scenario in Gloomhaven.",
+                "Complete a scenario in Dagger Forest.",
+                "Complete a scenario in Lingering Swamp",
+                "Complete a scenario in Watcher Mountains",
+                "Complete a scenario in Copperneck Mountains",
+                "Complete a scenario in Misty Sea.",
+            ]
+        },
+        "gh-532": {
+            "name": "A Helping Hand",
+            "progress": [
+                "Experience two other characters achieving their personal quests.",
+            ]
+        },
+        "gh-533": {
+            "name": "The Perfect Poison",
+            "progress": [
+                "Kill three Oozes.",
+                "Kill three Lurkers.",
+                "Kill three Spitting Drakes.",
+            ]
+        }
+    },
+    "characters": {
+        "BR": {
+            "name": "Brute",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Add two {+1_WHITE} cards",
+                "Add one {+3_WHITE} card",
+                "Add three {AGAIN} {PUSH}1 cards",
+                "Add two {AGAIN} {PIERCE}3 cards",
+                "Add one {AGAIN} {STUN} card",
+                "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
+                "Add one {AGAIN} ADD {TARGET} card",
+                "Add one {+1_WHITE} {SHIELD}1, Self card",
+                "Ignore negative item effects and add one {+1_WHITE} card"
+            ]
+        },
+        "CH": {
+            "name": "Cragheart",
+            "perks": [
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Add one {-2_WHITE} card and two {+2_WHITE} cards",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add one {+2_WHITE} {MUDDLE} card",
+                "Add two {AGAIN} {PUSH}2 cards",
+                "Add two {AGAIN} {EARTH} cards",
+                "Add two {AGAIN} {WIND} cards",
+                "Ignore negative item effects",
+                "Ignore negative scenario effects"
+            ]
+        },
+        "SW": {
+            "name": "Spellweaver",
+            "perks": [
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Add two {+1_WHITE} cards",
+                "Add one {+0_WHITE} {STUN} card",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add one {+1_WHITE} {CURSE} card",
+                "Add one {+2_WHITE} {FIRE} card",
+                "Add one {+2_WHITE} {ICE} card",
+                "Add one {AGAIN} {EARTH} and one {AGAIN} {WIND} card",
+                "Add one {AGAIN} {LIGHT} and one {AGAIN} {DARK} card"
+            ]
+        },
+        "TI": {
+            "name": "Tinkerer",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Add two {+1_WHITE} cards",
+                "Add one {+3_WHITE} card",
+                "Add two {AGAIN} {FIRE} cards",
+                "Add three {AGAIN} {MUDDLE} cards",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add one {+1_WHITE} Heal {HEAL}2 card",
+                "Add one {+0_WHITE} ADD {TARGET} card",
+                "Ignore negative scenario effects"
+            ]
+        },
+        "SC": {
+            "name": "Scoundrel",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add two {AGAIN} {+1_WHITE} cards",
+                "Add two {AGAIN} {PIERCE}3 cards",
+                "Add two {AGAIN} {POISON} cards",
+                "Add two {AGAIN} {MUDDLE} cards",
+                "Add one {AGAIN} {INVISIBLE} card",
+                "Ignore negative scenario effects"
+            ]
+        },
+        "MT": {
+            "name": "Mindthief",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Add one {+2_WHITE} {ICE} card",
+                "Add two {AGAIN} {+1_WHITE} cards",
+                "Add three {AGAIN} {PULL}1 cards",
+                "Add three {AGAIN} {MUDDLE} cards",
+                "Add two {AGAIN} {IMMOBILIZE} cards",
+                "Add one {AGAIN} {STUN} card",
+                "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
+                "Ignore negative scenario effects"
+            ]
+        },
+        "DS": {
+            "name": "Doomstalker",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace two {+0_WHITE} cards with two {+1_WHITE} cards",
+                "Add two {AGAIN} {+1_WHITE} cards",
+                "Add one {+2_WHITE} {MUDDLE} card",
+                "Add one {+1_WHITE} {POISON} card",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add one {+0_WHITE} {STUN} card",
+                "Add one {AGAIN} {TARGET} card",
+                "Ignore negative scenario effects"
+            ]
+        },
+        "EL": {
+            "name": "Elementalist",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add three {+0_WHITE} {FIRE} cards",
+                "Add three {+0_WHITE} {ICE} cards",
+                "Add three {+0_WHITE} {WIND} cards",
+                "Add three {+0_WHITE} {EARTH} cards",
+                "Replace two {+0_WHITE} card with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} card",
+                "Replace two {+0_WHITE} card with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} card",
+                "Add two {+1_WHITE} {PUSH}1 cards",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+0_WHITE} {STUN} card",
+                "Add one {+0_WHITE} {TARGET} card"
+            ]
+        },
+        "SB": {
+            "name": "Sawbones",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add one {AGAIN} {+2_WHITE} card",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add two {AGAIN} {WOUND} cards",
+                "Add one {AGAIN} {STUN} card",
+                "Add one {AGAIN} {HEAL}3 card",
+                "Add one {+0_WHITE} Refresh an item card"
+            ]
+        },
+        "SS": {
+            "name": "Soothsinger",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove one {-2_WHITE} card",
+                "Replace two {+1_WHITE} cards with one {+4_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {DISARM} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {WOUND} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {POISON} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
+                "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
+                "Replace one {-1_WHITE} card with one {+0_WHITE} {STUN} card",
+                "Add three {AGAIN} {+1_WHITE} cards",
+                "Add two {AGAIN} {CURSE} cards"
+            ]
+        },
+        "SK": {
+            "name": "Sunkeeper",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add two {AGAIN} {+1_WHITE} cards",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add two {AGAIN} {STUN} card",
+                "Add two {AGAIN} {LIGHT} cards",
+                "Add two {AGAIN} {SHIELD}1, Self cards",
+                "Ignore negative item effects and add two {+1_WHITE} cards",
+                "Ignore negative scenario effects"
+            ]
+        },
+        "NS": {
+            "name": "Nightshroud",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Add one {-1_WHITE} {DARK} card",
+                "Replace one {-1_WHITE} {DARK} card with one {+1_WHITE} {DARK} card",
+                "Add one {+1_WHITE} {INVISIBLE} card",
+                "Add three {AGAIN} {MUDDLE} cards",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add two {AGAIN} {CURSE} cards",
+                "Add one {AGAIN} {TARGET} card",
+                "Ignore negative scenario effects and add two {+1_WHITE} cards"
+            ]
+        },
+        "SU": {
+            "name": "Summoner",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Add one {+2_WHITE} card",
+                "Add two {AGAIN} {WOUND} cards",
+                "Add two {AGAIN} {POISON} cards",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add one {AGAIN} {FIRE} and one {AGAIN} {WIND} card",
+                "Add one {AGAIN} {DARK} and one {AGAIN} {EARTH} card",
+                "Ignore negative scenario effects and add two {+1_WHITE} cards"
+            ]
+        },
+        "BE": {
+            "name": "Berserker",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {AGAIN} {+2_WHITE} card",
+                "Add two {AGAIN} {WOUND} cards",
+                "Add one {AGAIN} {STUN} card",
+                "Add one {AGAIN} {+1_WHITE} {DISARM} card",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add one {+2_WHITE} {FIRE} card",
+                "Ignore negative item effects"
+            ]
+        },
+        "QM": {
+            "name": "Quartermaster",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add two {AGAIN} {+1_WHITE} cards",
+                "Add three {AGAIN} {MUDDLE} cards",
+                "Add two {AGAIN} {PIERCE}3 cards",
+                "Add one {AGAIN} {STUN} card",
+                "Add one {AGAIN} {TARGET} card",
+                "Add one {+0_WHITE} Refresh an item card",
+                "Ignore negative item effects and add two {+1_WHITE} cards"
+            ]
+        },
+        "PH": {
+            "name": "Plagueherald",
+            "perks": [
+                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add two {+1_WHITE} cards",
+                "Add one {+1_WHITE} {WIND} card",
+                "Add three {AGAIN} {POISON} cards",
+                "Add two {AGAIN} {CURSE} cards",
+                "Add two {AGAIN} {IMMOBILIZE} cards",
+                "Add one {AGAIN} {STUN} card",
+                "Ignore negative scenario effects and add one {+1_WHITE} card"
+            ]
+        },
+        "BT": {
+            "name": "Beast Tyrant",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+1_WHITE} {IMMOBILIZE} card",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add two {AGAIN} {EARTH} cards",
+                "Ignore negative scenario effects"
+            ]
+        },
+        "BS": {
+            "name": "Bladeswarm",
+            "perks": [
+                "Remove one {-2_WHITE} cards",
+                "Remove four {+0_WHITE} cards",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} {WIND} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} {EARTH} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} {LIGHT} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} {DARK} card",
+                "Add two {AGAIN} {HEAL}1 cards",
+                "Add one {+1_WHITE} {WOUND} card",
+                "Add one {+1_WHITE} {POISON} card",
+                "Add one {+2_WHITE} {MUDDLE} card",
+                "Ignore negative item effects and add one {+1_WHITE} card",
+                "Ignore negative scenario effects and add one {+1_WHITE} card"
+            ]
+        },
+        "DR": {
+            "name": "Diviner",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove one {-2_WHITE} card",
+                "Replace two {+1_WHITE} cards with one {+3_WHITE} {SHIELD}1, Self card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1, Affect any ally card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {DARK} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT} card",
+                "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {REGENERATE}, Self card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} {HEAL}2, Affect any ally card",
+                "Add two {AGAIN} {HEAL}1, Self cards",
+                "Add two {AGAIN} {CURSE} cards",
+                "Ignore negative scenario effects and add two {+1_WHITE} cards"
+            ]
+        },
+        "RG": {
+            "name": "Red Guard",
+            "perks": [
+                "Remove four {+0_WHITE} cards",
+                "Remove two {-1_WHITE} cards",
+                "Remove one {-2_WHITE} card and one {+1_WHITE} card",
+                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
+                "Replace one {+1_WHITE} card with one {+2_WHITE} {LIGHT} card",
+                "Add one {+1_WHITE} {FIRE_LIGHT} card",
+                "Add one {+1_WHITE} {SHIELD} 1 card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
+                "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card"
+            ]
+        },
+        "DM": {
+            "name": "Demolitionist",
+            "perks": [
+                "Remove four {+0_WHITE} cards",
+                "Remove two {-1_WHITE} cards",
+                "Remove one {-2_WHITE} card and one {+1_WHITE} card",
+                "Replace one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
+                "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card",
+                "Add one {+2_WHITE} card",
+                "Replace one {+1_WHITE} card with one {+2_WHITE} {EARTH} card",
+                "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
+                "Add one {+0_WHITE} All adjacent enemies suffer 1 damage card"
+            ]
+        },
+        "HT": {
+            "name": "Hatchet",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
+                "Remove one {+0_WHITE} card with one {+1_WHITE} {POISON} card",
+                "Remove one {+0_WHITE} card with one {+1_WHITE} {WOUND} card",
+                "Remove one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
+                "Remove one {+0_WHITE} card with one {+1_WHITE} {PUSH}2 card",
+                "Remove one {+0_WHITE} card with one {+0_WHITE} {STUN} card",
+                "Remove one {+1_WHITE} card with one {+1_WHITE} {STUN} card",
+                "Add one {+2_WHITE} {WIND} card",
+                "Replace one {+1_WHITE} with one {+3_WHITE} card"
+            ]
+        },
+        "VW": {
+            "name": "Voidwarden",
+            "perks": [
+                "Remove two {-1_WHITE} cards",
+                "Remove one {-2_WHITE} card",
+                "Replace one {+0_WHITE} with one {+1_WHITE} {DARK} card",
+                "Replace one {+0_WHITE} with one {+1_WHITE} {ICE} card",
+                "Replace one {-1_WHITE} with one {+0_WHITE} {HEAL}1 (Ally) card",
+                "Add one {+1_WHITE} {HEAL}1 (Ally) card",
+                "Add one {+1_WHITE} {POISON} card",
+                "Add one {+3_WHITE} card",
+                "Add one {+1_WHITE} {CURSE} card"
+            ]
+        }
     },
     "quest": {
         "1": {
@@ -775,8 +3474,8 @@ export default {
             "name": "Der Herzenswunsch",
             "sections": {
                 "1": "Einige eurer Kontakte im Heiligtum der Großen Eiche wissen von einem Tempel, der einer unsichtbaren Kraft gewidmet ist, die jede Frage beantworten wird, die man ihr stellt. Das ist die Gelegenheit für euch, euch euren Herzenswunsch zu erfüllen.",
-                "2": "Als ihr schließlich den Tempel erreicht hattet, vernahmt ihr eine Stimme:\"Ich kann um diese Zeit keine Besucher empfangen.\" Bevor ihr etwas erwidern konntet, materialisierte sich eine Gruppe von Steinkonstrukten vor euch. Aber ihr wolltet auf keinen Fall mit leeren Händen den Rückweg antreten. Nachdem ihr mit den Monstern fertig wart, bot euch die Stimme als Belohnung entweder große Macht, großen Reichtum oder aber einen Hinweis über den Aufenthaltsort der Nekormantin an.",
-                "3": "Große Macht war eure offensichtliche Wahl. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein im Kupferkamm, der eine Quelle großer Macht enthält.",
+                "2": "Als ihr schließlich den Tempel erreicht hattet, vernahmt ihr eine Stimme:\"Ich kann um diese Zeit keine Besucher empfangen.\" Bevor ihr etwas erwidern konntet, materialisierte sich eine Gruppe von Steinkonstrukten vor euch. Aber ihr wolltet auf keinen Fall mit leeren Händen den Rückweg antreten. Nachdem ihr mit den Monstern fertig wart, bot euch die Stimme entweder große Macht, großen Reichtum oder aber Aufschlüsse über den Aufenthaltsort der Nekormantin an.",
+                "3": "Große Macht war eure offensichtliche Wahl. Ihr seid nicht an Gold oder kleinlicher Rache interessiert. Das Einzige was zählt, ist die Kraft, euren Willen durchzusetzen. Die Stimme erzählte euch von einem Schrein im Kupferkammgebirge, der eine Quelle großer Macht enthält.",
                 "4": "Was für eine Art von Söldnern wärt ihr, wenn ihr nicht nach Reichtum und Bezahlung trachten würdet? Großer Reichtum war daher eure offensichtliche Wahl. Die Stimme erzählte euch von einer verlorenen Insel im Nebelmeer, die längst vergessene Schätze enthält.",
                 "5": "Macht und Reichtum bedeuten euch nichts, solange Jekserah noch am Leben ist. Ihr besteht darauf, dass die Stimme euch den Aufenthaltsort der ruchlosen Valrath verrät. Sie erzählte euch von einem Heiligtum, das in den Tiefen des Leichenwaldes versteckt ist."
             },
@@ -790,8 +3489,8 @@ export default {
         "13": {
             "name": "Die Zauberin",
             "sections": {
-                "1": "Ihr habt Geschichten über eine Aesther-Zauberin in Gloomhaven gehört, die euch vielleicht bei euren Bemühungen helfen kann. Allerdings ist sie dafür bekannt, dass sie unmögliche Aufgaben im Austausch für einen Gefallen stellt. Unmöglich oder nicht, ihr braucht ihre Hilfe.",
-                "2": "Nach Berichten über eine Aesther-Zauberin im Kesselviertel habt ihr sie in einer verlassenen und heruntergekommenen Taverne gefunden: dem Krummknochen. Der Name der Aestherin ist Hail und sie schien ein wenig exzentrisch zu sein... vielleicht sogar ein wenig verrückt. Nach einigem Zögern willigte sie ein euch zu helfen, wenn ihr eine Kugel aus der Gefrorenen Höhle im Kupferkamm holen könntet. Die Kreaturen in der Höhle waren nicht gerade erfreut euch zu sehen, aber ihr machtet kurzen Prozess mit dieser Gefahr. Als der letzte Gegner tot war, nähertet ihr euch dem hinteren Teil der Kammer, wo eine kleine blaue Kugel über dem Boden schwebte. Ihr nahmt sie an euch und begabt euch auf den Weg zurück zum Krummknochen. Hail schien ziemlich verliebt in das Objekt zu sein und vielleicht ein wenig leichtsinnig darüber, wie gefährlich dieses Objekt war, das ihr mit euren bloßen Händen gehalten hattet. Hail verschwand mit der Kugel. Nach gefühlten Stunden des Wartens kehrte sie zurück und fragte beiläufig, ob sie an euch ein Experiment durchdürfen dürfe. Ihr seid ein wenig verblüfft, aber sie versichert euch, dass es sicher ist. Für eine große Menge Gold kann sie nun einige eurer Fähigkeiten verbessern. Was noch wichtiger ist: Sie ist auch bereit, euch einige weitere Gefallen zu tun."
+                "1": "Ihr habt Geschichten über eine Aesther-Zauberin in Gloomhaven gehört, die euch vielleicht bei euren Bemühungen helfen kann. Allerdings ist sie dafür bekannt, dass sie unmögliche Aufgaben im Austausch für Gefallen stellt. Unmöglich oder nicht, ihr braucht ihre Hilfe.",
+                "2": "Nach Berichten über eine Aesther-Zauberin im Kesselviertel habt ihr sie in einer verlassenen und heruntergekommenen Taverne gefunden: dem Krummknochen. Der Name der Aestherin ist Hail und sie schien ein wenig exzentrisch zu sein... vielleicht sogar ein wenig verrückt. Nach einigem Zögern willigte sie ein euch zu helfen, wenn ihr eine Kugel aus der Gefrorenen Höhle im Kupferkammgebirge holen könntet. Die Kreaturen in der Höhle waren nicht gerade erfreut euch zu sehen, aber ihr machtet kurzen Prozess mit dieser Gefahr. Als der letzte Gegner tot war, nähertet ihr euch dem hinteren Teil der Kammer, wo eine kleine blaue Kugel über dem Boden schwebte. Ihr nahmt sie an euch und begabt euch auf den Weg zurück zum Krummknochen. Hail schien ziemlich verliebt in das Objekt zu sein und vielleicht ein wenig leichtsinnig darüber, wie gefährlich dieses Objekt war, das ihr mit euren bloßen Händen gehalten hattet. Hail verschwand mit der Kugel. Nach gefühlten Stunden des Wartens kehrte sie zurück und fragte beiläufig, ob sie an euch ein Experiment durchdürfen dürfe. Ihr seid ein wenig verblüfft, aber sie versichert euch, dass es sicher ist. Für eine große Menge Gold kann sie nun einige eurer Fähigkeiten verbessern. Was noch wichtiger ist: Sie ist auch bereit, euch einige weitere Gefallen zu tun."
             },
             "stages": {
                 "0": "{1}",
@@ -812,8 +3511,8 @@ export default {
         "15": {
             "name": "Es leben die Drachen",
             "sections": {
-                "1": "Ihr habt Berichte über große fliegende Kreaturen im Kupferkamm gehört. Könnte es sich dabei wirklich um Drachen handeln? Drachen könnten eine Bedrohung für die Stadt darstellen. Daher beschließt ihr, dieser Sache auf den Grund zu gehen.",
-                "2": "Euer Ziel ist der Icecrag, der höchste Berg im Kupferkamm. Auf eurem Weg wurdet ihr von einer Gruppe Inox und Dämonen überfallen. Ihr wart höchst verwundert über ein solches Bündnis, aber ihr ließt euch dadurch nicht von eurem Weg zu eurem Ziel abbringen.",
+                "1": "Ihr habt Berichte über große fliegende Kreaturen im Kupferkammgebirge gehört. Könnte es sich dabei wirklich um Drachen handeln? Drachen könnten eine Bedrohung für die Stadt darstellen. Daher beschließt ihr, dieser Sache auf den Grund zu gehen.",
+                "2": "Euer Ziel ist der Icecrag, der höchste Berg im Kupferkammgebirge. Auf eurem Weg wurdet ihr von einer Gruppe Inox und Dämonen überfallen. Ihr wart höchst verwundert über ein solches Bündnis, aber ihr ließt euch dadurch nicht von eurem Weg zu eurem Ziel abbringen.",
                 "3": "Der Aufstieg auf den Icecrag war zermürbend und beschwerlich. Ihr musstet euch gegen die Kälte, Wölfe und hungrige Draken erwehren. Aber ihr seid der Sache mit den Drachen auf den Grund gekommen. Auf dem Gipfel befand sich eine gigantische, sprechende Echse. Sie sprach mit einer harschen Stimme, die euch mit ihrer Eloquenz überraschte. \"Eine Gruppe von Savvas hat mich im Schlaf überrascht und mir eine meiner Flammendrüsen entfernt, vermutlich um sie zu studieren. Ich kann diese Beleidigung nicht ungestraft lassen und würde es sehr zu schätzen wissen, wenn ihr sie aus der Stadt zurückholt und dabei so viele von ihnen tötet, wie ihr könnt....oder, wenn ihr dem Klischee entsprechen wollt, könnt ihr mich einfach angreifen”, sagte die Kreatur mit einem Seufzer. \"Den Drachen erschlagen, die Prinzessin retten und so weiter. Nur habe ich keine Prinzessin, und ich bin auch kein Drache - nur ein Drake, der schon lange gelebt hat und sein Leben heute nicht beenden will. Wenn ihr mich also angreift, werde ich mich wehren und ihr werdet mit Sicherheit sterben\"."
             },
             "stages": {
@@ -944,7 +3643,7 @@ export default {
         "25": {
             "name": "Die Stimme",
             "sections": {
-                "1": "In einer Höhle im Kupferkamm habt ihr eine Kreatur entdeckt, die nur als \"Die Stimme\" bekannt ist. Die Stimme wurde von einer mächtigen Kraft tief in der Erde gefangen gehalten. Sie bat euch um Eure Hilfe bei der Suche nach Gefäßen, die sie benötigt, um ihre körperliche Form wiederzuerlangen und ihre lange Gefangenschaft zu beenden.",
+                "1": "In einer Höhle im Kupferkammgebirge habt ihr eine Kreatur entdeckt, die nur als \"Die Stimme\" bekannt ist. Die Stimme wurde von einer mächtigen Kraft tief in der Erde gefangen gehalten. Sie bat euch um Eure Hilfe bei der Suche nach Gefäßen, die sie benötigt, um ihre körperliche Form wiederzuerlangen und ihre lange Gefangenschaft zu beenden.",
                 "2": "Ihr habt das erste Gefäß von einer Sekte militanter Harrower geborgen. Die Stimme hat euch zum Standort des zweiten Gefäß' geführt.",
                 "3": "Die Waffenkammer der Savvas war eine schwer zu kanckende Nuss, aber ihr habt es geschafft hineinzuschlüpfen, die notwendigen Gegenstände zu stehlen, und wieder herauzukommen, bevor die Wache euch überwältigt hat. Nur noch ein Gefäß bleibt nun übrig.",
                 "4": "Das letzte Gefäß wurde von einem Geflecht uralter Verteidigungsanlagen bewacht. Die Stimme zeigte euch einen Weg, diese Anlagen auszuschalten. Hierfür musstet ihr eine Reihe von Schaltern in der richtigen Reihenfolge betätigen. Daraufhin wurde eine schmale Leiter freigelegt, die in die Dunkelheit hinabführte. \"Der Weg zur Gruft ist frei.\", sagte die Stimme. \"Geht jetzt und holt euch was mir gehört.\"",
@@ -1141,7 +3840,7 @@ export default {
             "name": "Verdorbener Einfluß",
             "sections": {
                 "1": "Mit Hails Hilfe wurde das Artefakt von seinem verderblichen Einfluss gereinigt. Hail erwähnte jedoch drei Orte, die dem beschädigten Artefakt Energie entzogen. Ihr habt mindestens einen dieser Orte besucht und den verderblichen Einfluss dort zerstört. Wenn ihr den verderblichen Einfluss an allen drei Orten aufspürt und zerstört, kann Hail euch vielleicht mehr Informationen über die Verderbnis geben, die die Umgebung von Gloomhaven durchdringt.",
-                "2": "Ihr habt den verderblichen Einfluss in der Nebelsee, im Dolchwald und im Kupferkamm zerstört. Es ist Zeit, zu Hail zu gehen und dem Ganzen auf den Grund zu gehen.",
+                "2": "Ihr habt den verderblichen Einfluss in der Nebelsee, im Dolchwald und im Kupferkammgebirge zerstört. Es ist Zeit, zu Hail zu gehen und dem Ganzen auf den Grund zu gehen.",
                 "3": "Bevor Hail irgendetwas erklären konnte, bricht eine massive Säule aus schwarzem Sand aus dem Nordosten des Krummknochen hervor. Hail weist euch entschlossen auf die wirbelnde Sandmasse zu und reicht euch einen Beutel, der euch vor den schädlichen Auswirkungen schützen soll. Der Eintritt in den Strudel ist äußerst schmerzhaft, aber der Beutel füllt euch mit einem dumpfen Taubheitsgefühl. Schließlich findet ihr euch in einem großen steinernen Raum wieder, der mit seltsamen Runensymbolen bedeckt ist. Es herrscht eine unheimliche Kälte, und der dumpfe Schmerz der Leere hält an. \"Diejenigen, die mutig genug sind, diesen Raum zu betreten, werden die ersten sein, die zerrissen werden.\" Eine eindringliche Stimme hallt durch die Kammer um euch herum. \"Den Rest werde ich wie Wild jagen und verschlingen, aber ich glaube, ich werde das hier mehr genießen.\" Als sich eure Augen an das schwache Licht gewöhnen, seht ihr eine schemenhafte Gestalt in der Mitte des Raumes. Mit der Zeit gelingt es euch, sich auf das Bild eines Ästhers mit zwei langen, dünnen Klingen zu konzentrieren. \"Ich habe viele Jahre darauf gewartet, diese Ernte einzufahren\", sagt er mit einem boshaften Grinsen. \"Eine Zeit lang hatte ich mir eingeredet, dass es mir mehr Vergnügen bereiten würde, euch dabei zuzusehen, wie ihr euch langsam selbst umbringt, aber durch die Einmischung meiner Brüder und den Tod meiner Schützlinge bin ich zu meinem ursprünglichen Plan zurückgekehrt. Ich bin nicht unglücklich über die Entwicklung. Selbst die Geduld eines Unsterblichen hat ihre Grenzen.\" Der Aesther lässt seine Klingen in einem hypnotisierenden Tanz aufblitzen. \"Kommt, ihr tapferen Lämmer. Wer wird der Erste sein, der die Finsternis umarmt?\" Der Kampf tobt für eine gefühlte Ewigkeit, doch schließlich fallen zwei Schwerter mit einem scharfen Klingeln auf den Steinboden. Der Aesther bleibt schlaff stehen, ein Ausdruck des Schocks auf seinem verwundeten Gesicht. \"Wie könnt ihr es wagen?\", murmelt er. Die Stimme, die einst sanft und hypnotisch war, ist nun ernst und dunkel. \"Ich habe Tausende von Jahren gewartet, und ihr maßt euch an, mich um die Früchte meiner Arbeit zu bringen?\" Der Mund des Ästhers hängt schlaff herunter, aber die Gestalt steht immer noch, als würde sie von unsichtbaren Fäden hochgehalten. \"Ihr könnt meine Hülle zerstören und mich von dieser Ebene verbannen, aber es wird nie genug sein. Ich bin ewig. Ich werde zurückkehren. Ich werde mich noch einmal an dieser Welt laben!\" Bei diesen Worten sackt der Körper des Ästhers zu Boden und verschwindet aus dem Leben. Der dumpfe Schmerz lässt nach, und ihr steigt die Treppe hinauf, einem hellen und klaren Himmel entgegen. Die Erschütterungen und der Wirbel aus schwarzem Sand sind verschwunden und alle, die sich um die Leere versammelt haben, sehen sehr erleichtert aus, dass ihr wohlauf aus der Konfrontation herausgekommen seid. Ihr lasst die Menschen wissen, dass das Unheil, das über sie hereingebrochen war, nun abgewendet ist. Sie jubeln und feiern eure Stärke."
             },
             "stages": {

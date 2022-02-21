@@ -167,7 +167,7 @@ export default {
                 // Show tooltip on hover
                 if (app.hasMouse && scenario.isVisible() && !$node.hasClass('has-tippy')) {
                     tippy($node[0], {
-                        content: scenario.title
+                        content: scenario.number + ' ' + this.$t(scenario.name)
                     });
                     $node.addClass('has-tippy');
                 }
