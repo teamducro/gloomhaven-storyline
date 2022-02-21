@@ -18,7 +18,7 @@
                         class="add-character flow-root"
                         :class="['order-'+sheet.characterOrder[id], sheet.characterOrder[id] === 0 ? 'mt-0' : 'mt-6']">
                         <a @click.stop.prevent="$emit('create', id)" href="#"
-                           class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-white hover:bg-black2-75 transition ease-in-out duration-150"
+                           class="-m-3 p-3 whitespace-nowrap flex items-center rounded-md text-base font-medium text-white hover:bg-black2-75 transition ease-in-out duration-150"
                            :class="{'text-white2-50 grayscale cursor-default': characterRepository.partyHasCharacter(sheet, id)}">
                             <character-icon class="flex-shrink-0 w-5 mr-2" :character="id"/>
                             <span>{{ $t(characterNames[id]) }}</span>
@@ -72,7 +72,7 @@ export default {
     methods: {
         render() {
             const characters = this.characterRepository.get(app.game);
-            this.characterNames = collect(characters).pluck('name').items;
+            this.characterNames = collect(characters).pluck('translatedName').items;
         },
         open() {
             this.$refs['add-character'].open()
