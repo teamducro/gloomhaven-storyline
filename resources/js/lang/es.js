@@ -1703,12 +1703,12 @@ export default {
         "gh-50": {
             "name": "Escarpes de Acero",
             "source": "Prosperidad nivel 7",
-            "desc": "If you move 1 or fewer hexes on your turn, obtén {SHIELD} 1 for the round. Add 2 {-1} a tu mazo de modificadores de ataque."
+            "desc": "Si te mueves 1 hexágono o menos en tu turno, obtén {SHIELD} 1 para el resto de la ronda. Añade 2 cartas {-1} a tu mazo de modificadores de ataque."
         },
         "gh-51": {
             "name": "Armadura Sombría",
             "source": "Prosperidad nivel 7",
-            "desc": "When you are damaged by an attack, suffer no damage instead."
+            "desc": "Cuando sufras daño por un ataque que te tome como objetivo, no sufres ningún daño en su lugar."
         },
         "gh-52": {
             "name": "Amuleto Protector",
@@ -1723,7 +1723,7 @@ export default {
         "gh-54": {
             "name": "Bastón de Eminencia",
             "source": "Prosperidad nivel 7",
-            "desc": "Durante tu ataque a distancia, {ANY_X} para añadir {ATTACK} +1 a la acción de ataque entera."
+            "desc": "Durante tu ataque a distancia, {ANY_X} para añadir {ATTACK} +1 a tu acción de ataque entera."
         },
         "gh-55": {
             "name": "Poción Curativa Suprema",
@@ -1733,27 +1733,27 @@ export default {
         "gh-56": {
             "name": "Anillo de Salvajismo",
             "source": "Prosperidad nivel 7",
-            "desc": "Al final de tu turno, juega 1 carta de tu mano and immediately perform the top action of the card."
+            "desc": "Al final de tu turno, juega 1 carta de tu mano y realiza de inmediato la acción superior de dicha carta."
         },
         "gh-57": {
             "name": "Sandalias de Serenidad",
             "source": "Prosperidad nivel 8",
-            "desc": "Whenever you use the default bottom of an ability card realiza una acción de {MOVE} 4 instead of a {MOVE} 2 action."
+            "desc": "Siempre que uses el efecto alternativo de la mitad inferior de una carta de Capacidad, realiza una acción de {MOVE} 4 en lugar de {MOVE} 2."
         },
         "gh-58": {
             "name": "Capa de Fase",
             "source": "Prosperidad nivel 8",
-            "desc": "Obtén {FLYING}. While occupying an obstacle hex, you are considered Invisible and cannot attack"
+            "desc": "Obtén {FLYING}. Mientras ocupes un hexágono de obstáculo, se considera que tienes {INVISIBLE} y no puedes atacar."
         },
         "gh-59": {
             "name": "Gafas Telescópicas",
             "source": "Prosperidad nivel 8\nOpción de {SCENARIO 100}",
-            "desc": "Durante tu ataque a distancia, añade {RANGE} +2 a tu acción de ataque entera"
+            "desc": "Durante tu ataque a distancia, añade {RANGE} +2 a la acción de ataque entera"
         },
         "gh-60": {
             "name": "Explosivos Inestables",
             "source": "Prosperidad nivel 8",
-            "desc": "Turn a single target ranged attack into the following: {AOE.CUBE_2_2}. All allies in the attack area suffer 3 damage."
+            "desc": "Durante tu ataque a distancia con un solo objetivo, convierte el ataque en: {AOE.CUBE_2_2}. Todos los aliados en la zona de ataque sufren 3 de daño."
         },
         "gh-61": {
             "name": "Scutum",
@@ -1763,47 +1763,47 @@ export default {
         "gh-62": {
             "name": "Polvo de Mal de Ojo",
             "source": "Prosperidad nivel 8",
-            "desc": "Durante tu ataque, añade {STUN}, {POISON}, y {CURSE} a un único ataque."
+            "desc": "Durante tu ataque, añade {STUN}, {POISON} y {CURSE} a un único ataque."
         },
         "gh-63": {
             "name": "Ojo de la Suerte",
             "source": "Prosperidad nivel 8",
-            "desc": "Durante tu turno, {STRENGTHEN} yourself and all adjacent allies."
+            "desc": "Durante tu turno, tú y todos tus aliados adyacentes obtenéis {STRENGTHEN}."
         },
         "gh-64": {
             "name": "Botas de Centella",
             "source": "Prosperidad nivel 9",
-            "desc": "Durante tu movimiento, add +4 {MOVE} to the movement."
+            "desc": "Durante tu movimiento, añade {MOVE} +4 a un solo movimiento."
         },
         "gh-65": {
             "name": "Arnés",
             "source": "Prosperidad nivel 9",
-            "desc": "On the next five sources of damage to you from attacks, obtén {SHIELD} 1. Add 5 {-1} a tu mazo de modificadores de ataque."
+            "desc": "Para las 5 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 5 cartas {-1} a tu mazo de modificadores de ataque."
         },
         "gh-66": {
             "name": "Máscara de Terror",
             "source": "Prosperidad nivel 9\nRecompensa de {SCENARIO 110} (Tesoro #84)",
-            "desc": "Durante tu ataque cuerpo a cuerpo, add {PUSH} 1."
+            "desc": "Durante tu ataque cuerpo a cuerpo, añade {PUSH} 1."
         },
         "gh-67": {
             "name": "Espada Equilibrada",
             "source": "Prosperidad nivel 9",
-            "desc": "Siempre que uses el efecto alternativo de la mitad superior de una carta de Capacidad, realiza una acción de {ATTACK} 4 instead of an {ATTACK} 2 action."
+            "desc": "Siempre que uses el efecto alternativo de la mitad superior de una carta de Capacidad, realiza una acción de {ATTACK} 4 en lugar de {ATTACK} 2."
         },
         "gh-68": {
             "name": "Alabarda",
             "source": "Prosperidad nivel 9\nRecompensa de {SCENARIO 111} (Tesoro #92)\nSección 132 -> 106 “Strangler's Park” in book",
-            "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
+            "desc": "Durante tu ataque cuerpo a cuerpo con un solo objetivo, puedes atacar a un único enemigo cualquiera a 2 hexágonos o menos."
         },
         "gh-69": {
             "name": "Pendiente de Estrella",
             "source": "Prosperidad nivel 9",
-            "desc": "Durante tu turno, {REFRESH} all of your spent items, {HEAL} 3 damage, and {RECOVER} up to two of your discarded cards."
+            "desc": "Durante tu turno, {REFRESH} todos tus objetos gastados, realiza una acción de “{HEAL} 3, Personal”, y {RECOVER} hasta 2 de tus cartas descartadas."
         },
         "gh-70": {
             "name": "Anillo de Segunda Oportunidad",
             "source": "Prosperidad nivel 9\nFC Challenge Scenario, Evento Fisura 12 (Tesoro #89)\nSección 103 -> 84 “Gateway to the Firmament” in book",
-            "desc": "Al final de tu turno, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
+            "desc": "Al final de tu turno, juega 2 cartas de tu mano y realiza un turno adicional durante esta ronda según la iniciativa de tu nueva carta principal (que debe ser posterior a tu iniciativa actual)."
         },
         "gh-71": {
             "name": "Botas de Levitación",
