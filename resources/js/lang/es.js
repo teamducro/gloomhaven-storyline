@@ -257,8 +257,8 @@ export default {
     "Range": "Alcance",
     "Move": "Movimiento",
     "Jump": "Salto",
-    "Recover": "Recuperar",
-    "Refresh": "Reponer",
+    "Recover": "Recupera",
+    "Refresh": "Repón",
     "Flying": "Vuelo",
     "STRENGTHEN": "FORTALECIMIENTO",
     "PUSH": "EMPUJÓN",
@@ -1529,12 +1529,12 @@ export default {
         "gh-16": {
             "name": "Capa de Bolsillos",
             "source": "Prosperidad nivel 2",
-            "desc": "Puedes llevar 2 objetos adicionales."
+            "desc": "Puedes llevar 2 objetos {SMALL-ITEM} adicionales."
         },
         "gh-17": {
             "name": "Talismán Reviltalizador",
             "source": "Prosperidad nivel 2",
-            "desc": "Durante tu turno, {REFRESH} 1 de tus objetos consumidos."
+            "desc": "Durante tu turno, {REFRESH} 1 de tus objetos {SMALL-ITEM} consumidos."
         },
         "gh-18": {
             "name": "Hacha de Batalla",
@@ -1667,38 +1667,38 @@ export default {
         "gh-43": {
             "name": "Botas de Aceleración",
             "source": "Prosperidad nivel 6",
-            "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 20."
+            "desc": "Al comienzo de una ronda, después de que se hayan revelado todas las cartas de Capacidad, aumenta o disminuye el valor de iniciativa de tu carta principal en 20."
         },
         "gh-44": {
             "name": "Lóriga de Láminas",
             "source": "Prosperidad nivel 6",
-            "desc": "On the next four sources of damage to you from attacks, obtén {SHIELD} 1. Add 4 {-1} a tu mazo de modificadores de ataque."
+            "desc": "Para las 4 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 4 cartas {-1} a tu mazo de modificadores de ataque."
         },
         "gh-45": {
             "name": "Colgante de Pactos Siniestros",
             "source": "Prosperidad nivel 6",
-            "desc": "Durante tu turno, {REFRESH} two of your consumed small items. Obtén {CURSE}.",
+            "desc": "Durante tu turno, {REFRESH} 2 de tus objetos {SMALL-ITEM} consumidos. Obtén {CURSE}.",
             "faq": "The perk that ignores item effects does not prevent you from being cursed."
         },
         "gh-46": {
             "name": "Escudo Erizo",
             "source": "Prosperidad nivel 6",
-            "desc": "Cuando sufras daño por un ataque, obtén {SHIELD} 1 and Retaliate 2 contra ese ataque."
+            "desc": "Cuando sufras daño por un ataque, obtén {SHIELD} 1 y {Retaliate} 2 contra ese ataque."
         },
         "gh-47": {
             "name": "Guadaña de Segador",
             "source": "Prosperidad nivel 6",
-            "desc": "During your single-target melee attack action, convierte el ataque en:  {AOE.CLEAVE_0_1}"
+            "desc": "Durante tu ataque cuerpo a cuerpo con un solo objetivo, convierte el ataque en: {AOE.CLEAVE_0_1}"
         },
         "gh-48": {
             "name": "Poción de Maná Mayor",
             "source": "Prosperidad nivel 6\nRecompensa de {SCENARIO 104}",
-            "desc": "Durante tu turno, crea any two elements. {ANY} {ANY}"
+            "desc": "Durante tu turno, crea 2 elementos cualquiera. {ANY} {ANY}"
         },
         "gh-49": {
             "name": "Pendiente de Sol",
             "source": "Prosperidad nivel 6",
-            "desc": "Durante tu turno, {REFRESH} all of your spent items and {HEAL} 3 damage."
+            "desc": "Durante tu turno, {REFRESH} todos tus objetos gastados y realiza una acción de “{HEAL} 3, Personal”."
         },
         "gh-50": {
             "name": "Escarpes de Acero",
@@ -2265,7 +2265,7 @@ export default {
         "gh-161": {
             "name": "Hacha arrojadiza",
             "source": "Recompensa de {SCENARIO 108}",
-            "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack."
+            "desc": "Durante tu ataque cuerpo a cuerpo con un solo objetivo, add {RANGE} 3 to the attack."
         },
         "gh-162": {
             "name": "Dispositivo de apertura de fisuras",
@@ -2371,7 +2371,7 @@ export default {
         "jotl_18": {
             "name": "Battle-Axe",
             "source": "Recompensa de {SCENARIO 9}",
-            "desc": "During your single-target melee attack action, convierte el ataque en: {AOE.CONE_0_1}"
+            "desc": "Durante tu ataque cuerpo a cuerpo con un solo objetivo, convierte el ataque en: {AOE.CONE_0_1}"
         },
         "jotl_19": {
             "name": "Black Candle",
@@ -2817,8 +2817,7 @@ export default {
             "name": "Clase comerciante",
             "unlock": "Abre la caja {QM}",
             "progress": [
-                "Ten en propiedad:",
-                "2 objetos {HEAD},",
+                "Ten en propiedad:/n2 objetos {HEAD},",
                 "2 objetos {BODY},",
                 "2 objetos {LEGS},",
                 "3 objetos {ONE-HAND} o {TWO-HANDS} y",
@@ -2910,8 +2909,7 @@ export default {
             "name": "Cazador de aberraciones",
             "unlock": "Abre la caja {EL}",
             "progress": [
-                "Mata a:",
-                "1 Demonio de Fuego,",
+                "Mata a:/n1 Demonio de Fuego,",
                 "1 Demonio de Hielo,",
                 "1 Demonio de Viento,",
                 "1 Demonio de Tierra,",
@@ -2975,8 +2973,7 @@ export default {
             "name": "Muestras elementales",
             "unlock": "Abre la caja {EL}",
             "progress": [
-                "Completa 1 escenario en cada una de las siguientes zonas:",
-                "Gloomhaven,",
+                "Completa 1 escenario en cada una de las siguientes zonas:/nGloomhaven,",
                 "Bosque de las Dagas,",
                 "Pantano Perenne,",
                 "Montañas Guardianas,",
@@ -2995,8 +2992,7 @@ export default {
             "name": "El veneno perfecto",
             "unlock": "Abre la caja {PH}",
             "progress": [
-                "Mata a:",
-                "3 Cienos,",
+                "Mata a:/n3 Cienos,",
                 "3 Acechadores y",
                 "3 Dracos Escupidores."
             ]
