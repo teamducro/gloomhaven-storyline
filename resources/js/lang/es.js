@@ -1590,17 +1590,17 @@ export default {
         "gh-28": {
             "name": "Pendiente de Luna",
             "source": "Prosperidad nivel 3",
-            "desc": "Durante tu turno, {REFRESH} all of your spent items."
+            "desc": "Durante tu turno, {REFRESH} todos tus objetos gastados."
         },
         "gh-29": {
             "name": "Zapatos Cómodos",
             "source": "Prosperidad nivel 4",
-            "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+            "desc": "Siempre que uses el efecto alternativo de la mitad inferior de una carta de Capacidad, realiza una acción de “{MOVE} 3” en lugar de “{MOVE} 2”."
         },
         "gh-30": {
             "name": "Cuero Tachonado",
             "source": "Prosperidad nivel 4",
-            "desc": "Cuando te ataquen, el atacante obtiene Desventaja en el ataque and you gain {SHIELD} 1 contra ese ataque."
+            "desc": "Cuando te ataquen, el atacante sufre Desventaja y tú obtienes {SHIELD} 1 contra el ataque."
         },
         "gh-31": {
             "name": "Yelmo de Halcón",
@@ -1615,18 +1615,18 @@ export default {
         "gh-33": {
             "name": "Bomba Volátil",
             "source": "Prosperidad nivel 4",
-            "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+            "desc": "Durante tu ataque a distancia con un solo objetivo, convierte el ataque en: {AOE.CONE_1_1}"
         },
         "gh-34": {
             "name": "Poción de Resistencia Mayor",
             "source": "Prosperidad nivel 4",
-            "desc": "Durante tu turno, {RECOVER} up to three of your discarded cards.",
+            "desc": "Durante tu turno, {RECOVER} hasta 3 de tus cartas descartadas.",
             "faq": "[Errata] The item should allow you to recover only two discarded cards. This is change in an upcoming expansion but may be used in the base game."
         },
         "gh-35": {
             "name": "Figura de Halcón",
             "source": "Prosperidad nivel 4\nRecompensa de {SCENARIO 98} (Tesoro #79)",
-            "desc": "Summon Jade Falcon ({FLYING})",
+            "desc": "Invocar Halcón de Jade ({FLYING})",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-36": {
@@ -1637,7 +1637,7 @@ export default {
         "gh-37": {
             "name": "Túnica de Evocación",
             "source": "Prosperidad nivel 5",
-            "desc": "Durante tu ataque, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+            "desc": "Durante tu ataque, {ANY_X} para añadir {ATTACK} +1 to the entire Attack action."
         },
         "gh-38": {
             "name": "Bacinete Pesado",
@@ -1688,12 +1688,12 @@ export default {
         "gh-47": {
             "name": "Guadaña de Segador",
             "source": "Prosperidad nivel 6",
-            "desc": "During your single-target melee attack action, turn the attack into the following:  {AOE.CLEAVE_0_1}"
+            "desc": "During your single-target melee attack action, convierte el ataque en:  {AOE.CLEAVE_0_1}"
         },
         "gh-48": {
             "name": "Poción de Maná Mayor",
             "source": "Prosperidad nivel 6\nRecompensa de {SCENARIO 104}",
-            "desc": "Durante tu turno, create any two elements. {ANY} {ANY}"
+            "desc": "Durante tu turno, crea any two elements. {ANY} {ANY}"
         },
         "gh-49": {
             "name": "Pendiente de Sol",
@@ -1723,12 +1723,12 @@ export default {
         "gh-54": {
             "name": "Bastón de Eminencia",
             "source": "Prosperidad nivel 7",
-            "desc": "Durante tu ataque a distancia, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+            "desc": "Durante tu ataque a distancia, {ANY_X} para añadir {ATTACK} +1 to the entire Attack action."
         },
         "gh-55": {
             "name": "Poción Curativa Suprema",
             "source": "Prosperidad nivel 7",
-            "desc": "Durante tu turno, perform a “{HEAL} 7, self” action."
+            "desc": "Durante tu turno, realiza una acción de “{HEAL} 7, Personal”."
         },
         "gh-56": {
             "name": "Anillo de Salvajismo",
@@ -1738,7 +1738,7 @@ export default {
         "gh-57": {
             "name": "Sandalias de Serenidad",
             "source": "Prosperidad nivel 8",
-            "desc": "Whenever you use the default bottom of an ability card perform a {MOVE} 4 action instead of a {MOVE} 2 action."
+            "desc": "Whenever you use the default bottom of an ability card realiza una acción de {MOVE} 4 instead of a {MOVE} 2 action."
         },
         "gh-58": {
             "name": "Capa de Fase",
@@ -1818,7 +1818,7 @@ export default {
         "gh-73": {
             "name": "Capa de Reaparición",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, perform a “{MOVE} 4, {JUMP}” action"
+            "desc": "Durante tu turno, realiza una acción de “{MOVE} 4, {JUMP}”."
         },
         "gh-74": {
             "name": "Armadura Filosa",
@@ -1828,7 +1828,7 @@ export default {
         "gh-75": {
             "name": "Diadema de los Elementos",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, {ANY_X} to create any element. {ANY}"
+            "desc": "Durante tu turno, {ANY_X} para crear cualquier elemento. {ANY}"
         },
         "gh-76": {
             "name": "Almófar",
@@ -1838,62 +1838,62 @@ export default {
         "gh-77": {
             "name": "Espada Gélida",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu ataque cuerpo a cuerpo, {ICE_X} to add +2 {ATTACK} a un único ataque."
+            "desc": "Durante tu ataque cuerpo a cuerpo, {ICE_X} para añadir {ATTACK} +2 a un único ataque."
         },
         "gh-78": {
             "name": "Espada Tormentosa",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu ataque cuerpo a cuerpo, {WIND_X} to add +2 {ATTACK} a un único ataque."
+            "desc": "Durante tu ataque cuerpo a cuerpo, {WIND_X} para añadir {ATTACK} +2 a un único ataque."
         },
         "gh-79": {
             "name": "Espada Incineradora",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu ataque cuerpo a cuerpo, {FIRE_X} to add +2 {ATTACK} a un único ataque."
+            "desc": "Durante tu ataque cuerpo a cuerpo, {FIRE_X} para añadir {ATTACK} +2 a un único ataque."
         },
         "gh-80": {
             "name": "Espada Sísmica",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu ataque cuerpo a cuerpo, {EARTH_X} to add +2 {ATTACK} a un único ataque."
+            "desc": "Durante tu ataque cuerpo a cuerpo, {EARTH_X} para añadir {ATTACK} +2 a un único ataque."
         },
         "gh-81": {
             "name": "Espada Brillante",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu ataque cuerpo a cuerpo, {LIGHT_X} to add +2 {ATTACK} a un único ataque."
+            "desc": "Durante tu ataque cuerpo a cuerpo, {LIGHT_X} para añadir {ATTACK} +2 a un único ataque."
         },
         "gh-82": {
             "name": "Espada Nocturna",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu ataque cuerpo a cuerpo, {DARK_X} to add +2 {ATTACK} a un único ataque."
+            "desc": "Durante tu ataque cuerpo a cuerpo, {DARK_X} para añadir {ATTACK} +2 a un único ataque."
         },
         "gh-83": {
             "name": "Varita de Escarcha",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, create Ice. {ICE}"
+            "desc": "Durante tu turno, crea Hielo. {ICE}"
         },
         "gh-84": {
             "name": "Varita de Tormenta",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, create Wind. {WIND}"
+            "desc": "Durante tu turno, crea Viento. {WIND}"
         },
         "gh-85": {
             "name": "Varita de Incendio",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, create Fire. {FIRE}"
+            "desc": "Durante tu turno, crea Fuego. {FIRE}"
         },
         "gh-86": {
             "name": "Varita de Terremoto",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, create Earth. {EARTH}"
+            "desc": "Durante tu turno, crea Tierra. {EARTH}"
         },
         "gh-87": {
             "name": "Varita de Fulgor",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, create Light. {LIGHT}"
+            "desc": "Durante tu turno, crea Luz. {LIGHT}"
         },
         "gh-88": {
             "name": "Varita de Oscuridad",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, create Dark. {DARK}"
+            "desc": "Durante tu turno, crea Oscuridad. {DARK}"
         },
         "gh-89": {
             "name": "Poción de Remedio Menor",
@@ -1923,7 +1923,7 @@ export default {
         "gh-94": {
             "name": "Pergamino de Curación",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, perform a “{HEAL} 3, {RANGE} 5” action"
+            "desc": "Durante tu turno, realiza una acción de “{HEAL} 3, {RANGE} 5”."
         },
         "gh-95": {
             "name": "Pergamino de Resistencia",
@@ -1938,22 +1938,22 @@ export default {
         "gh-97": {
             "name": "Sandalias de Robustez",
             "source": "Recompensa de {SCENARIO 38} (Tesoro #29)",
-            "desc": "If you move 4 or more hexes on your turn, perform a “{HEAL} 1, Self” action."
+            "desc": "Si te mueves 4 hexágonos o más en tu turno, realiza una acción de “{HEAL} 1, Personal”."
         },
         "gh-98": {
             "name": "Botas de Escamas de Draco",
             "source": "Recompensa de {SCENARIO 43} (Tesoro #35)",
-            "desc": "You are unaffected by difficult and hazardous terrain."
+            "desc": "No te afectan las piezas de terreno impracticable y peligroso."
         },
         "gh-99": {
             "name": "Botas de Magma",
             "source": "Recompensa de {SCENARIO 63} (Tesoro #12)",
-            "desc": "Ignore the damaging effects of hazardous terrain and perform a “{HEAL} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
+            "desc": "Ignore the damaging effects of hazardous terrain and realiza una acción de “{HEAL} 2, Personal” on any turn in which you have entered a hazardous terrain hex."
         },
         "gh-100": {
             "name": "Túnica de Invocación",
             "source": "Recompensa de {SCENARIO 31} (Tesoro #69)",
-            "desc": "Durante tu turno, perform a “{HEAL} 2, target any summoned ally” action."
+            "desc": "Durante tu turno, realiza una acción de “{HEAL} 2, con cualquier aliado invocado como objetivo”."
         },
         "gh-101": {
             "name": "Segunda Piel",
@@ -1963,7 +1963,7 @@ export default {
         "gh-102": {
             "name": "Túnica de Sacrificio",
             "source": "Evento de ciudad 40",
-            "desc": "Durante tu ataque a distancia, suffer 3 damage to add +1 {ATTACK} to the entire Attack action."
+            "desc": "Durante tu ataque a distancia, suffer 3 damage para añadir {ATTACK} +1 to the entire Attack action."
         },
         "gh-103": {
             "name": "Armadura de Escamas de Draco",
@@ -1984,7 +1984,7 @@ export default {
         "gh-106": {
             "name": "Collar de Dientes",
             "source": "Evento de camino 05",
-            "desc": "Any time you kill an enemy during your turn, perform a “{HEAL} 1, Self” action."
+            "desc": "Any time you kill an enemy during your turn, realiza una acción de “{HEAL} 1, Personal”."
         },
         "gh-107": {
             "name": "Yelmo con Cuernos",
@@ -2000,7 +2000,7 @@ export default {
         "gh-109": {
             "name": "Capucha de Ladrón",
             "source": "Evento de ciudad 62",
-            "desc": "During your “Loot 1” ability, perform a “Loot 2” ability instead."
+            "desc": "During your “Loot 1” ability, realiza una acción de “Loot 2” ability instead."
         },
         "gh-110": {
             "name": "Yelmo de la Montaña",
@@ -2010,7 +2010,7 @@ export default {
         "gh-111": {
             "name": "Collar de las Mareas",
             "source": "Recompensa de {SCENARIO 64} (Tesoro #09)",
-            "desc": "Cuando te ataquen, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
+            "desc": "Cuando te ataquen, if {ICE} is Strong, realiza una acción de “{PUSH} 2” targeting the attacker."
         },
         "gh-112": {
             "name": "Berbiquí Antigüo",
@@ -2020,7 +2020,7 @@ export default {
         "gh-113": {
             "name": "Hacha Rompecráneos",
             "source": "Recompensa de {SCENARIO 11}\nRecompensa de {SCENARIO 12}",
-            "desc": "Durante tu ataque cuerpo a cuerpo targeting a Living Corpse, Living Spirit, or Living Bones, add +5 Attack a un único ataque."
+            "desc": "Durante tu ataque cuerpo a cuerpo que tenga como objetivo a un Cadáver viviente, Espíritu viviente o Huesos vivientes, añade {ATTACK} +5 a un único ataque."
         },
         "gh-114": {
             "name": "Báculo de Xorn",
@@ -2030,7 +2030,7 @@ export default {
         "gh-115": {
             "name": "Martillo de la Montaña",
             "source": "Recompensa de {SCENARIO 82} (Tesoro #62)",
-            "desc": "Summon Warrior Spirit",
+            "desc": "Invocar Warrior Spirit",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-116": {
@@ -2041,12 +2041,12 @@ export default {
         "gh-117": {
             "name": "Hacha Sanguinaria",
             "source": "Evento de ciudad 53\nEvento de camino 53",
-            "desc": "Durante tu ataque cuerpo a cuerpo, suffer 2 damage to add +1 {ATTACK} to the entire Attack action."
+            "desc": "Durante tu ataque cuerpo a cuerpo, suffer 2 damage para añadir {ATTACK} +1 to the entire Attack action."
         },
         "gh-118": {
             "name": "Báculo de los Elementos",
             "source": "Evento de ciudad 57",
-            "desc": "Durante tu turno, create any element. {ANY}"
+            "desc": "Durante tu turno, crea any element. {ANY}"
         },
         "gh-119": {
             "name": "Cráneo del Odio",
@@ -2061,17 +2061,17 @@ export default {
         "gh-121": {
             "name": "Orbe del Alba",
             "source": "Recompensa de {SCENARIO 85}",
-            "desc": "Durante tu turno, {DARK_X} to create Light. {LIGHT}"
+            "desc": "Durante tu turno, {DARK_X} para crear Luz. {LIGHT}"
         },
         "gh-122": {
             "name": "Orbe del Crepúsculo",
             "source": "Recompensa de {SCENARIO 89} (Tesoro #27)",
-            "desc": "Durante tu turno, {LIGHT_X} to create Dark. {DARK}"
+            "desc": "Durante tu turno, {LIGHT_X} para crear Oscuridad. {DARK}"
         },
         "gh-123": {
             "name": "Anillo de Cráneos",
             "source": "Recompensa de {SCENARIO 04} (Tesoro #38)",
-            "desc": "Summon Skeleton",
+            "desc": "Invocar Skeleton",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-124": {
@@ -2082,7 +2082,7 @@ export default {
         "gh-125": {
             "name": "Engranaje Enigmático",
             "source": "Evento de ciudad 03\nOpción de {SCENARIO 100}",
-            "desc": "Durante tu turno, disarm all traps within {RANGE} 2."
+            "desc": "Durante tu turno, desactiva todas las trampas a {RANGE} 2."
         },
         "gh-126": {
             "name": "Araña Mecánica",
@@ -2092,7 +2092,7 @@ export default {
         "gh-127": {
             "name": "Araña Mecánica Gigante",
             "source": "Evento de ciudad 61",
-            "desc": "Durante tu turno, perform a “Loot 1” action."
+            "desc": "Durante tu turno, realiza una acción de “Loot 1”."
         },
         "gh-128": {
             "name": "Incesario Negro",
@@ -2107,7 +2107,7 @@ export default {
         "gh-130": {
             "name": "Anillo Helicoidal",
             "source": "Recompensa de {SCENARIO 81} (Tesoro #68)",
-            "desc": "Durante tu turno, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Self” action"
+            "desc": "Durante tu turno, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Personal” action"
         },
         "gh-131": {
             "name": "Corazón del Traidor",
@@ -2118,13 +2118,13 @@ export default {
         "gh-132": {
             "name": "Núcleo de Energía",
             "source": "Recompensa de {SCENARIO 67}",
-            "desc": "Summon Steel Construct.",
+            "desc": "Invocar Steel Construct.",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-133": {
             "name": "Cristal Resonante",
             "source": "Recompensa de {SCENARIO 84}",
-            "desc": "Durante tu turno, destroy an adjacent obstacle."
+            "desc": "Durante tu turno, destruye un obstáculo adyacente."
         },
         "gh-134": {
             "name": "Hoja Imponente",
@@ -2175,7 +2175,7 @@ export default {
         "gh-143": {
             "name": "Elixir de Humo",
             "source": "Recompensa de escenario en solitario - {NS}",
-            "desc": "Durante tu turno, obtén {INVISIBLE} and create dark. {DARK}"
+            "desc": "Durante tu turno, obtén {INVISIBLE} y crea Oscuridad. {DARK}"
         },
         "gh-144": {
             "name": "Colgante de la Plaga",
@@ -2240,7 +2240,7 @@ export default {
         "gh-156": {
             "name": "Claymore elemental",
             "source": "Desconocido",
-            "desc": "Durante tu ataque cuerpo a cuerpo, {ANY_X} to add +2 {ATTACK} a un único ataque."
+            "desc": "Durante tu ataque cuerpo a cuerpo, {ANY_X} para añadir {ATTACK} +2 a un único ataque."
         },
         "gh-157": {
             "name": "Arco antiguo",
@@ -2336,7 +2336,7 @@ export default {
         "jotl_11": {
             "name": "Healing Potion",
             "source": "Recompensa de {SCENARIO 2}",
-            "desc": "Durante tu turno, perform a “{HEAL} 3, Self” action."
+            "desc": "Durante tu turno, realiza una acción de “{HEAL} 3, Personal”."
         },
         "jotl_12": {
             "name": "Stamina Potion",
@@ -2356,22 +2356,22 @@ export default {
         "jotl_15": {
             "name": "Amulet of Life",
             "source": "Recompensa de {SCENARIO 9}",
-            "desc": "Durante tu turno, “{HEAL} 1, Self” action."
+            "desc": "Durante tu turno, “{HEAL} 1, Personal” action."
         },
         "jotl_16": {
             "name": "Robes of Evocation",
             "source": "Recompensa de {SCENARIO 9}",
-            "desc": "Durante tu ataque, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+            "desc": "Durante tu ataque, {ANY_X} para añadir {ATTACK} +1 to the entire Attack action."
         },
         "jotl_17": {
             "name": "Comfortable Shoes",
             "source": "Recompensa de {SCENARIO 9}",
-            "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+            "desc": "Whenever you use the default bottom of an ability card, realiza una acción de {MOVE} 3 instead of a {MOVE} 2 action."
         },
         "jotl_18": {
             "name": "Battle-Axe",
             "source": "Recompensa de {SCENARIO 9}",
-            "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+            "desc": "During your single-target melee attack action, convierte el ataque en: {AOE.CONE_0_1}"
         },
         "jotl_19": {
             "name": "Black Candle",
@@ -2401,7 +2401,7 @@ export default {
         "jotl_24": {
             "name": "Volatile Bomb",
             "source": "Recompensa de {SCENARIO 15}",
-            "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+            "desc": "Durante tu ataque a distancia con un solo objetivo, convierte el ataque en: {AOE.CONE_1_1}"
         },
         "jotl_25": {
             "name": "Barbed Chain",
@@ -2411,7 +2411,7 @@ export default {
         "jotl_26": {
             "name": "Oak Charm",
             "source": "Recompensa de {SCENARIO 15}",
-            "desc": "Durante tu turno, perform a “{BLESS}, {RANGE} 5” action."
+            "desc": "Durante tu turno, realiza una acción de “{BLESS}, {RANGE} 5”."
         },
         "jotl_27": {
             "name": "Fateful Compass",
@@ -2442,7 +2442,7 @@ export default {
         "jotl_32": {
             "name": "Ring of Restoration",
             "source": "Misplaced Good #F from {SCENARIO 20}",
-            "desc": "Durante tu turno, perform a “{HEAL} 3, {RANGE} 5” action."
+            "desc": "Durante tu turno, realiza una acción de “{HEAL} 3, {RANGE} 5”."
         },
         "jotl_33": {
             "name": "Steel Ring",
