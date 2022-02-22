@@ -18,7 +18,7 @@
                     class="mdc-list-item cursor-pointer whitespace-nowrap flex items-center"
                     :aria-selected="current === code"
                     :class="[code + (current === code ? 'mdc-list-item--selected': '')]">
-                    {{ games[code] }}
+                    {{ $t(games[code]) }}
                     <bedge v-if="beta.includes(code)" class="small white ml-2">BETA</bedge>
                 </li>
             </ul>

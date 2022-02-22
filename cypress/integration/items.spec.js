@@ -101,22 +101,22 @@ describe('Items', () => {
         cy.visit('/tracker/#/items');
         cy.get('#items').contains('Staff of Xorn');
 
-        // Incomplete scenario
+        // Incomplete scenar`io
         cy.visit('/tracker/#/story');
         utilities.openScenario(53);
         cy.get('#scenario-content label').contains('Incomplete').click();
         cy.get('a').contains('Staff of Xorn').should('not.exist');
         utilities.closeModel();
 
-        // The item is locked
+        // The item should still be unlocked
         cy.visit('/tracker/#/items');
-        cy.get('#items').contains('Staff of Xorn').should('not.exist');
+        cy.get('#items').contains('Staff of Xorn');
     });
 
     it('It opens scenario modal from item modal', () => {
         cy.visit('/tracker?states=52_c-53_c');
         cy.visit('/tracker/#/items');
-        utilities.scrollTo('100%');
+        utilities.scrollTo('100%', true);
         cy.get('#items tbody tr:last').click();
         cy.get('.mdc-dialog__content button').contains(53).click();
         cy.get('.mdc-dialog__content span').contains('Reward from').should('not.exist');

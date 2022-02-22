@@ -64,6 +64,7 @@ export default {
     "Clues": "Pistas",
     "Open envelope": "Abre el sobre",
     "Open box": "Abre la caja",
+    "Envelope X solution": "Envelope X solution",
     "Additional notes": "Notas",
     "Items": "Objetos",
     "Add Items": "Añade Objetos",
@@ -75,7 +76,6 @@ export default {
     "Perks": "Pericias",
     "Battle Goals": "Objetivos de batalla",
     "You may select an additional perk!": "¡Puedes seleccionar una pericia adicional!",
-    "Level up when you're back in town!": "¡Sube de nivel cuando vuelvas a la ciudad!",
     "Number or Name": "Número o Nombre",
     "No items available": "No hay objetos disponibles",
     "Buy me a Beer": "¡Invítame a una cerveza!",
@@ -114,7 +114,7 @@ export default {
     "Retire": "Retira",
     "Retired": "Retirado",
     "Retirement counter": "Contador de PJ retirados",
-    "Set this counter to the amount of characters your have retired. ": "Fija el contador en la cantidad de personajes que has retirado.",
+    "Set this counter to the amount of characters your have retired": "Set this counter to the amount of characters your have retired.",
     "Remove": "Eliminar",
     "Unlocked": "Desbloqueado",
     "Clear all": "Borrar todo",
@@ -155,6 +155,7 @@ export default {
         "title": "Juega a Gloomhaven con una app de seguimiento de la historia",
         "text": "Para jugar a Gloomhaven, mis amigos y yo nos juntamos una vez por semana. Pulsando el botón de pausa en nuestras vidas cotidianas. Cada uno de nosotros ha aportado algo para fortalecer nuestro disfrute del juego. Mi contribución es un diagrama de flujo interactivo, que permite hacer un seguimiento de nuestro progreso a lo largo del juego y hacer más fácil la elección de un nuevo escenario al que jugar. Con unas bebidas y unos aperitivos, estamos listos para empezar."
     },
+    "Contributions": "Contributions",
     "contribute": {
         "text-1": "Apoya el proyecto uniéndote a Patreon. Te ganarás mi más profundo agradecimiento. Haces que sea posible para mí mantener la app y desarrollar las nuevas funciones.",
         "text-2": "Los mecenas pueden crear campañas compartidas ilimitadas. ¡Además, pueden votar sobre nuevas funciones y recibir notificaciones cuando se implementen nuevas funciones!"
@@ -232,6 +233,7 @@ export default {
     "fc": "Círculos Olvidados",
     "Jaws of the Lion": "Fauces del León",
     "jotl": "Fauces del León",
+    "Availability": "Availability",
     "Sticker": "Pegatina",
     "State": "Estado",
     "Name": "Nombre",
@@ -311,6 +313,7 @@ export default {
     "Hidden Scenario": "Escenario Oculto",
     "Add achievements gained by events other than completing scenarios manually": "Agrega logros obtenidos por eventos aparte de de completar escenarios",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "Los números de ubicación en el texto de la historia son solo recordatorios. Ellos mismos no desbloquean nada.",
+    "Level up when youre back in town": "¡Sube de nivel cuando vuelvas a la ciudad!",
     "scenarios": {
         "gh-1": {
             "name": "Túmulo Negro"
@@ -1039,12 +1042,6 @@ export default {
                 "15 de oro para cada personaje",
                 "1 ✓ para cada personaje",
                 "Todos los personajes pueden añadir una nueva carta de su clase a su reserva de cartas activas. La carta seleccionada debe tener un nivel igual o inferior al nivel del personaje menos 2."
-            ]
-        },
-        "fc-201": {
-            "name": "Una visión de lo inevitable",
-            "rewards": [
-                "“Cuenco de profecía” (Objeto 164)"
             ]
         },
         "fc-201": {
@@ -2473,7 +2470,7 @@ export default {
             "name": "Obtén “Pavés” (Objeto 032)"
         },
         "gh-3": {
-            "name": "Obtén “Loriga de láminas” (Objeto 044)"
+            "name": "Obtén “Lóriga de Láminas” (Objeto 044)"
         },
         "gh-4": {
             "name": "Obtén 15 de oro"
@@ -2810,7 +2807,7 @@ export default {
             "unlock": "Abre la caja {PH}",
             "progress": [
                 "Completa 3 escenarios que tengan en su nombre la palabra “Cripta”.",
-                "Después, desbloquea {SCENARIO 52} y sigue la cadena de aventuras hasta termianrla.",
+                "Después, desbloquea {SCENARIO 52} y sigue la cadena de aventuras hasta termianrla."
             ]
         },
         "gh-511": {
@@ -2822,14 +2819,14 @@ export default {
                 "2 objetos {BODY},",
                 "2 objetos {LEGS},",
                 "3 objetos {ONE-HAND} o {TWO-HANDS} y",
-                "4 objetos {SMALL-ITEM}.",
+                "4 objetos {SMALL-ITEM}."
             ]
         },
         "gh-512": {
             "name": "La codicia es buena",
             "unlock": "Abre la caja {QM}",
             "progress": [
-                "Acumula 200 de oro.",
+                "Acumula 200 de oro."
             ]
         },
         "gh-513": {
@@ -2837,49 +2834,49 @@ export default {
             "unlock": "Abre el sobre X",
             "progress": [
                 "Mata a 8 Duendes del Bosque.",
-                "Después, desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta termianrla.",
+                "Después, desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta termianrla."
             ]
         },
         "gh-514": {
             "name": "Estudios de anatomía",
             "unlock": "Abre la caja {SB}",
             "progress": [
-                "Sé testigo de 15 agotamientos de miembros de tu equipo.",
+                "Sé testigo de 15 agotamientos de miembros de tu equipo."
             ]
         },
         "gh-515": {
             "name": "Defensor de la ley",
             "unlock": "Abre la caja {SK}",
             "progress": [
-                "Mata a 20 Bandidos o Sectarios. ",
+                "Mata a 20 Bandidos o Sectarios. "
             ]
         },
         "gh-516": {
             "name": "Tributo de sangre",
             "unlock": "Abre la caja {BE}",
             "progress": [
-                "Mata a 15 Infectores.",
+                "Mata a 15 Infectores."
             ]
         },
         "gh-517": {
             "name": "Trofeo de caza",
             "unlock": "Abre la caja {BT}",
             "progress": [
-                "Mata a 20 tipos de monstruos distintos.",
+                "Mata a 20 tipos de monstruos distintos."
             ]
         },
         "gh-518": {
             "name": "Eterno viajero",
             "unlock": "Abre la caja {SU}",
             "progress": [
-                "Completa 15 escenarios distintos.",
+                "Completa 15 escenarios distintos."
             ]
         },
         "gh-519": {
             "name": "Leyenda de las batallas",
             "unlock": "Abre la caja {SS}",
             "progress": [
-                "Obtén 15 ✔ por objetivos de batalla completados.",
+                "Obtén 15 ✔ por objetivos de batalla completados."
             ]
         },
         "gh-520": {
@@ -2887,7 +2884,7 @@ export default {
             "unlock": "Abre la caja {SK}",
             "progress": [
                 "Encuentra el Hacha Rompecráneos en el Santuario de la Nigromante.",
-                "Úsala para matar 7 Huesos Vivientes, Cadáveres Vivientes o Espíritus Vivientes.",
+                "Úsala para matar 7 Huesos Vivientes, Cadáveres Vivientes o Espíritus Vivientes."
             ]
         },
         "gh-521": {
@@ -2895,7 +2892,7 @@ export default {
             "unlock": "Abre la caja {DS}",
             "progress": [
                 "Completa 3 escenarios en el Bosque de la Dagas.",
-                "Después, desbloquea {SCENARIO 55} y sigue la cadena de aventuras hasta termianrla.",
+                "Después, desbloquea {SCENARIO 55} y sigue la cadena de aventuras hasta termianrla."
             ]
         },
         "gh-522": {
@@ -2903,7 +2900,7 @@ export default {
             "unlock": "Abre la caja {NS}",
             "progress": [
                 "Completa 6 escenarios secundarios",
-                "(aquellos con un números superior a 51).",
+                "(aquellos con un números superior a 51)."
             ]
         },
         "gh-523": {
@@ -2916,21 +2913,21 @@ export default {
                 "1 Demonio de Viento,",
                 "1 Demonio de Tierra,",
                 "1 Demonio de Noche y",
-                "1 Demonio de Sol.",
+                "1 Demonio de Sol."
             ]
         },
         "gh-524": {
             "name": "Actitud intrépida",
             "unlock": "Abre la caja {BT}",
             "progress": [
-                "Mata a 20 monstruos de élite.",
+                "Mata a 20 monstruos de élite."
             ]
         },
         "gh-525": {
             "name": "Devoción por todas las cosas",
             "unlock": "Abre la caja {SB}",
             "progress": [
-                "Dona 120 de oro al Santuario del Gran Roble.",
+                "Dona 120 de oro al Santuario del Gran Roble."
             ]
         },
         "gh-526": {
@@ -2938,21 +2935,21 @@ export default {
             "unlock": "Abre el sobre X",
             "progress": [
                 "Completa 4 escenarios en Gloomhaven.",
-                "A continuación, desbloquea {SCENARIO 57} y sigue la cadena de aventuras hasta terminarla.",
+                "A continuación, desbloquea {SCENARIO 57} y sigue la cadena de aventuras hasta terminarla."
             ]
         },
         "gh-527": {
             "name": "Fanático del dios de la sangre",
             "unlock": "Abre la caja {BE}",
             "progress": [
-                "Que tu personaje quede agotado 12 veces.",
+                "Que tu personaje quede agotado 12 veces."
             ]
         },
         "gh-528": {
             "name": "Vencedor de Goliat",
             "unlock": "Abre la caja {DS}",
             "progress": [
-                "Completa 4 escenarios con jefes.",
+                "Completa 4 escenarios con jefes."
             ]
         },
         "gh-529": {
@@ -2960,7 +2957,7 @@ export default {
             "unlock": "Abre la caja {NS}",
             "progress": [
                 "Completa 2 escenarios en el Pantano Perenne.",
-                "A continuación, desbloquea {SCENARIO 61} y sigue la cadena de aventuras hasta termianrla.",
+                "A continuación, desbloquea {SCENARIO 61} y sigue la cadena de aventuras hasta termianrla."
             ]
         },
         "gh-530": {
@@ -2968,7 +2965,7 @@ export default {
             "unlock": "Abre la caja {SU}",
             "progress": [
                 "Adquiere 4 mejoras",
-                "(Requiere el logro global “El poder de la mejora”).",
+                "(Requiere el logro global “El poder de la mejora”)."
             ]
         },
         "gh-531": {
@@ -2981,14 +2978,14 @@ export default {
                 "Pantano Perenne,",
                 "Montañas Guardianas,",
                 "Montañas Cobrizas y",
-                "Mar Brumoso.",
+                "Mar Brumoso."
             ]
         },
         "gh-532": {
             "name": "Una mano amiga",
             "unlock": "Abre la caja {SS}",
             "progress": [
-                "Sé testigo de cómo otros 2 personajes cumplen sus misiones personales.",
+                "Sé testigo de cómo otros 2 personajes cumplen sus misiones personales."
             ]
         },
         "gh-533": {
@@ -2998,7 +2995,7 @@ export default {
                 "Mata a:",
                 "3 Cienos,",
                 "3 Acechadores y",
-                "3 Dracos Escupidores.",
+                "3 Dracos Escupidores."
             ]
         }
     },
@@ -3360,6 +3357,11 @@ export default {
                 "Añade 1 carta {+1_WHITE} {CURSE}"
             ]
         }
+    },
+    "card_types": {
+        "R": "Road Event",
+        "C": "City Event",
+        "Q": "Personal Quest"
     },
     "quest": {
         "1": {

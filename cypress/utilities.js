@@ -151,9 +151,12 @@ export default {
     },
 
     // Call "cy.scrollTo" twice to make sure scrolling is performed as expected.
-    scrollTo(to) {
+    scrollTo(to, force = false) {
         cy.scrollTo(0, to);
         cy.wait(500);
         cy.scrollTo(0, to);
+        if (force) {
+            this.scrollTo(to, false);
+        }
     }
 }
