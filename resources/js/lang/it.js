@@ -3328,6 +3328,11 @@ export default {
             ]
         }
     },
+    "card_types": {
+        "R": "Road Event",
+        "C": "City Event",
+        "Q": "Personal Quest"
+    },
     "quest": {
         "1": {
             "name": "La Richiesta della Mercante",
