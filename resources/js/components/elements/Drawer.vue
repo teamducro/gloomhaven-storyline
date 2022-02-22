@@ -1,7 +1,7 @@
 <template xmlns="http://www.w3.org/1999/html">
     <div>
         <button type="button" @click="toggle"
-                class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 !bg-black2-50 rounded-full">
+                class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 !bg-dark-gray2-75 rounded-full">
             menu
         </button>
 
