@@ -1632,27 +1632,27 @@ export default {
         "gh-36": {
             "name": "Botas de Carrera",
             "source": "Prosperidad nivel 5",
-            "desc": "Durante tu movimiento, add +3 {MOVE} to the movement."
+            "desc": "Durante tu movimiento, añade {MOVE} +3 a un solo movimiento."
         },
         "gh-37": {
             "name": "Túnica de Evocación",
             "source": "Prosperidad nivel 5",
-            "desc": "Durante tu ataque, {ANY_X} para añadir {ATTACK} +1 to the entire Attack action."
+            "desc": "Durante tu ataque, {ANY_X} para añadir {ATTACK} +1 a la acción de ataque entera."
         },
         "gh-38": {
             "name": "Bacinete Pesado",
             "source": "Prosperidad nivel 5",
-            "desc": "You are immune to {STUN} and {MUDDLE}. Add 2 {-1} a tu mazo de modificadores de ataque."
+            "desc": "Eres inmune a {STUN} y {MUDDLE}. Añade 2 cartas {-1} a tu mazo de modificadores de ataque."
         },
         "gh-39": {
             "name": "Cadena con Garfio",
             "source": "Prosperidad nivel 5",
-            "desc": "Durante tu ataque a distancia, add {PULL} 2 to the entire Attack action."
+            "desc": "Durante tu ataque a distancia, añade {PULL} 2 a la acción de ataque entera."
         },
         "gh-40": {
             "name": "Daga Versátil",
             "source": "Prosperidad nivel 5",
-            "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 3 action instead of an {ATTACK} 2 action."
+            "desc": "Siempre que uses el efecto alternativo de la mitad superior de una carta de Capacidad, realiza una acción de {ATTACK} 3 en lugar de {ATTACK} 2."
         },
         "gh-41": {
             "name": "Poción de Poder Mayor",
@@ -1662,7 +1662,7 @@ export default {
         "gh-42": {
             "name": "Anillo de Premura",
             "source": "Prosperidad nivel 5",
-            "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of the card."
+            "desc": "Al final de tu turno, juega 1 carta de tu mano y realiza de inmediato la acción inferior de la carta."
         },
         "gh-43": {
             "name": "Botas de Aceleración",
@@ -1713,7 +1713,7 @@ export default {
         "gh-52": {
             "name": "Amuleto Protector",
             "source": "Prosperidad nivel 7\nRecompensa de {SCENARIO 109}",
-            "desc": "You are immune to {POISON} and {WOUND}."
+            "desc": "Eres inmune a {POISON} y {WOUND}."
         },
         "gh-53": {
             "name": "Cuchillo Negro",
@@ -1723,7 +1723,7 @@ export default {
         "gh-54": {
             "name": "Bastón de Eminencia",
             "source": "Prosperidad nivel 7",
-            "desc": "Durante tu ataque a distancia, {ANY_X} para añadir {ATTACK} +1 to the entire Attack action."
+            "desc": "Durante tu ataque a distancia, {ANY_X} para añadir {ATTACK} +1 a la acción de ataque entera."
         },
         "gh-55": {
             "name": "Poción Curativa Suprema",
@@ -1733,7 +1733,7 @@ export default {
         "gh-56": {
             "name": "Anillo de Salvajismo",
             "source": "Prosperidad nivel 7",
-            "desc": "At the end of your turn, play one card from your hand and immediately perform the top action of the card."
+            "desc": "Al final de tu turno, juega 1 carta de tu mano and immediately perform the top action of the card."
         },
         "gh-57": {
             "name": "Sandalias de Serenidad",
@@ -1788,7 +1788,7 @@ export default {
         "gh-67": {
             "name": "Espada Equilibrada",
             "source": "Prosperidad nivel 9",
-            "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 4 instead of an {ATTACK} 2 action."
+            "desc": "Siempre que uses el efecto alternativo de la mitad superior de una carta de Capacidad, realiza una acción de {ATTACK} 4 instead of an {ATTACK} 2 action."
         },
         "gh-68": {
             "name": "Alabarda",
@@ -1803,7 +1803,7 @@ export default {
         "gh-70": {
             "name": "Anillo de Segunda Oportunidad",
             "source": "Prosperidad nivel 9\nFC Challenge Scenario, Evento Fisura 12 (Tesoro #89)\nSección 103 -> 84 “Gateway to the Firmament” in book",
-            "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
+            "desc": "Al final de tu turno, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
         },
         "gh-71": {
             "name": "Botas de Levitación",
@@ -1963,12 +1963,12 @@ export default {
         "gh-102": {
             "name": "Túnica de Sacrificio",
             "source": "Evento de ciudad 40",
-            "desc": "Durante tu ataque a distancia, suffer 3 damage para añadir {ATTACK} +1 to the entire Attack action."
+            "desc": "Durante tu ataque a distancia, suffer 3 damage para añadir {ATTACK} +1 a la acción de ataque entera."
         },
         "gh-103": {
             "name": "Armadura de Escamas de Draco",
             "source": "Recompensa de {SCENARIO 34} (Tesoro #23)",
-            "desc": "You are immune to {POISON} and {WOUND}."
+            "desc": "Eres inmune a {POISON} y {WOUND}."
         },
         "gh-104": {
             "name": "Armadura a Vapor",
@@ -2015,7 +2015,7 @@ export default {
         "gh-112": {
             "name": "Berbiquí Antigüo",
             "source": "Recompensa de {SCENARIO 65}\nOpción de {SCENARIO 100}",
-            "desc": "Durante tu ataque cuerpo a cuerpo, add +2 {ATTACK} and {PIERCE} 2 to the entire Attack action"
+            "desc": "Durante tu ataque cuerpo a cuerpo, add +2 {ATTACK} and {PIERCE} 2 a la acción de ataque entera."
         },
         "gh-113": {
             "name": "Hacha Rompecráneos",
@@ -2025,7 +2025,7 @@ export default {
         "gh-114": {
             "name": "Báculo de Xorn",
             "source": "Recompensa de {SCENARIO 53}",
-            "desc": "Durante tu ataque a distancia, add {POISON} and {MUDDLE} to the entire Attack action"
+            "desc": "Durante tu ataque a distancia, add {POISON} and {MUDDLE} a la acción de ataque entera."
         },
         "gh-115": {
             "name": "Martillo de la Montaña",
@@ -2041,7 +2041,7 @@ export default {
         "gh-117": {
             "name": "Hacha Sanguinaria",
             "source": "Evento de ciudad 53\nEvento de camino 53",
-            "desc": "Durante tu ataque cuerpo a cuerpo, suffer 2 damage para añadir {ATTACK} +1 to the entire Attack action."
+            "desc": "Durante tu ataque cuerpo a cuerpo, suffer 2 damage para añadir {ATTACK} +1 a la acción de ataque entera."
         },
         "gh-118": {
             "name": "Báculo de los Elementos",
@@ -2210,7 +2210,7 @@ export default {
         "gh-150": {
             "name": "Vara de Mando",
             "source": "Recompensa de escenario en solitario - {BT}",
-            "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
+            "desc": "After performing a Command action, juega 1 carta de tu mano and immediately perform the same side of the card (top or bottom) as the Command action."
         },
         "gh-151": {
             "name": "Espada de las arenas",
@@ -2235,7 +2235,7 @@ export default {
         "gh-155": {
             "name": "Armadura antimaldiciones",
             "source": "Recompensa de {SCENARIO 108}",
-            "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} a tu mazo de modificadores de ataque."
+            "desc": "Eres inmune a {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} a tu mazo de modificadores de ataque."
         },
         "gh-156": {
             "name": "Claymore elemental",
@@ -2361,7 +2361,7 @@ export default {
         "jotl_16": {
             "name": "Robes of Evocation",
             "source": "Recompensa de {SCENARIO 9}",
-            "desc": "Durante tu ataque, {ANY_X} para añadir {ATTACK} +1 to the entire Attack action."
+            "desc": "Durante tu ataque, {ANY_X} para añadir {ATTACK} +1 a la acción de ataque entera."
         },
         "jotl_17": {
             "name": "Comfortable Shoes",
@@ -2432,7 +2432,7 @@ export default {
         "jotl_30": {
             "name": "Ring of Haste",
             "source": "{SCENARIO 21} (Tesoro #11)",
-            "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of that card."
+            "desc": "Al final de tu turno, juega 1 carta de tu mano and immediately perform the bottom action of that card."
         },
         "jotl_31": {
             "name": "Ring of Strength",
@@ -2452,7 +2452,7 @@ export default {
         "jotl_34": {
             "name": "Barbed Axe",
             "source": "Recompensa de {SCENARIO 34}",
-            "desc": "Durante tu ataque, add {WOUND} to the entire Attack Action."
+            "desc": "Durante tu ataque, añade {WOUND} a la acción de ataque entera."
         },
         "jotl_35": {
             "name": "Robes of Command",
