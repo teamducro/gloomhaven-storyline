@@ -64,6 +64,7 @@ export default {
     "Clues": "Hinweise",
     "Open envelope": "Öffnet Umschlag",
     "Open box": "Öffnet Box",
+    "Envelope X solution": "Envelope X solution",
     "Additional notes": "Notizen",
     "Items": "Gegenstände",
     "Add Items": "Fügt Gegenstände hinzu",
@@ -154,6 +155,7 @@ export default {
         "title": "Verfolge deinen Handlungsstrang in Gloomhaven",
         "text": "Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Wir drücken dann die Pausetaste vom Alltag. Jeder von uns hat etwas dazu beigetragen, dass sich unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Spielfortschritte festzuhalten und uns die Auswahl eines neuen Szenarios zu erleichtern. Mit ein paar Getränken und Snacks sind wir bereit ins Abenteuer aufzubrechen."
     },
+    "Contributions": "Contributions",
     "contribute": {
         "text-1": "Support the project by joining the Patreon. You'll earn my deepest gratitude. You make it possible for me to maintain the tracker and keep the new features coming.",
         "text-2": "Patrons can create unlimited shared campaigns. In addition they can vote on new features and are notified when new features roll out!"
@@ -231,6 +233,7 @@ export default {
     "fc": "Forgotten Circles",
     "Jaws of the Lion": "Jaws of the Lion",
     "jotl": "Jaws of the Lion",
+    "Availability": "Availability",
     "Sticker": "Sticker",
     "State": "Staat",
     "Name": "Name",
@@ -3426,6 +3429,11 @@ export default {
                 "Add one {+1_WHITE} {CURSE} card"
             ]
         }
+    },
+    "card_types": {
+        "R": "Road Event",
+        "C": "City Event",
+        "Q": "Personal Quest"
     },
     "quest": {
         "1": {
