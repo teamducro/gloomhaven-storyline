@@ -64,6 +64,7 @@ export default {
     "Clues": "Clues",
     "Open envelope": "Open envelope",
     "Open box": "Open box",
+    "Envelope X solution": "Envelope X solution",
     "Additional notes": "Additional notes",
     "Items": "Items",
     "Add Items": "Add Items",
@@ -112,6 +113,8 @@ export default {
     "Locked": "Locked",
     "Retire": "Retire",
     "Retired": "Retired",
+    "Retirement counter": "Retirement counter",
+    "Set this counter to the amount of characters your have retired": "Set this counter to the amount of characters your have retired.",
     "Remove": "Remove",
     "Unlocked": "Unlocked",
     "Clear all": "Clear all",
@@ -152,6 +155,7 @@ export default {
         "title": "Play Gloomhaven with a storyline tracker",
         "text": "To play Gloomhaven, my friends and I get together once a week. Hitting the pause button on our daily lives. Each one of us has delivered something to strengthen our joy in the game. My contribution is an interactive flowchart, to track our progress through the game and to make it easier to choose a new scenario to play. With some drinks and snacks, we are ready to begin."
     },
+    "Contributions": "Contributions",
     "contribute": {
         "text-1": "Support the project by joining the Patreon. You'll earn my deepest gratitude. You make it possible for me to maintain the tracker and keep the new features coming.",
         "text-2": "Patrons can create unlimited shared campaigns. In addition they can vote on new features and are notified when new features roll out!"
@@ -229,6 +233,7 @@ export default {
     "fc": "Forgotten Circles",
     "Jaws of the Lion": "Jaws of the Lion",
     "jotl": "Jaws of the Lion",
+    "Availability": "Availability",
     "Sticker": "Sticker",
     "State": "State",
     "Name": "Name",
@@ -240,6 +245,7 @@ export default {
     "Nr": "Nr",
     "Slot": "Slot",
     "Cost": "Cost",
+    "Avail": "Avail",
     "Use": "Use",
     "Effect": "Effect",
     "Shield": "Shield",
@@ -308,6 +314,7 @@ export default {
     "Hidden Scenario": "Hidden Scenario",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
+    "Level up when youre back in town": "Level up when you're back in town!",
     "scenarios": {
         "gh-1": {
             "name": "Black Barrow"
@@ -3324,6 +3331,11 @@ export default {
                 "Add one {+1_WHITE} {CURSE} card",
             ]
         }
+    },
+    "card_types": {
+        "R": "Road Event",
+        "C": "City Event",
+        "Q": "Personal Quest",
     },
     "quest": {
         "1": {

@@ -10,7 +10,7 @@
                 <span>{{ levels[level + 1] }} {{ $t('XP') }}</span>
             </div>
         </div>
-        <p v-if="progress >= 100">{{ $t('Level up when you\'re back in town!') }}</p>
+        <p v-if="progress >= 100">{{ $t('Level up when youre back in town') }}</p>
     </div>
 </template>
 

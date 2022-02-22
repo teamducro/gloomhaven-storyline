@@ -1,6 +1,6 @@
 <template xmlns:slot="http://www.w3.org/1999/html">
     <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
-        <div class="relative bg-black2-25 p-4 rounded-lg m-auto mt-4 max-w-party">
+        <div class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
@@ -76,7 +76,6 @@
                         :sortable="sortable"
                         :initialSearch="search"
                         :data="items.items"
-                        odd-class="bg-black2-10"
                         @rowClick="openItemModel"
                         :translatable="['name', 'desc']"
                         :noResults="$t('No items available')"

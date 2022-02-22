@@ -19,6 +19,7 @@ class Character {
         this.level = data.level || 1;
         this.xp = data.xp || 0;
         this.gold = data.gold || 0;
+        this.retirements = data.retirements || 0;
         this.items = {...data.items};
         this.notes = data.notes || '';
         this.checks = {...data.checks};
@@ -36,6 +37,7 @@ class Character {
             level: 'level',
             xp: 'xp',
             gold: 'gold',
+            retirements: 'retirements',
             items: {'items': {}},
             notes: 'notes',
             checks: {'checks': {}},

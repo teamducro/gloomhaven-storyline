@@ -65,6 +65,7 @@ export default {
     "Open envelope": "Abre el sobre",
     "Envelope X solution": "Solución sobre X",
     "Open box": "Abre la caja",
+    "Envelope X solution": "Envelope X solution",
     "Additional notes": "Notas",
     "Items": "Objetos",
     "Add Items": "Añade Objetos",
@@ -76,7 +77,6 @@ export default {
     "Perks": "Pericias",
     "Battle Goals": "Objetivos de batalla",
     "You may select an additional perk!": "¡Puedes seleccionar una pericia adicional!",
-    "Level up when you're back in town!": "¡Sube de nivel cuando vuelvas a la ciudad!",
     "Number or Name": "Número o Nombre",
     "No items available": "No hay objetos disponibles",
     "Buy me a Beer": "¡Invítame a una cerveza!",
@@ -113,9 +113,9 @@ export default {
     "Not unlocked": "Sin desbloquear",
     "Locked": "Bloqueado",
     "Retire": "Retira",
+    "Retired": "Retirado",
     "Retirement counter": "Contador de PJ retirados",
     "Set this counter to the amount of characters your have retired": "Fija el contador en la cantidad de personajes que has retirado",
-    "Retired": "Retirado",
     "Remove": "Eliminar",
     "Unlocked": "Desbloqueado",
     "Clear all": "Borrar todo",
@@ -156,6 +156,7 @@ export default {
         "title": "Juega a Gloomhaven con una app de seguimiento de la historia",
         "text": "Para jugar a Gloomhaven, mis amigos y yo nos juntamos una vez por semana. Pulsando el botón de pausa en nuestras vidas cotidianas. Cada uno de nosotros ha aportado algo para fortalecer nuestro disfrute del juego. Mi contribución es un diagrama de flujo interactivo, que permite hacer un seguimiento de nuestro progreso a lo largo del juego y hacer más fácil la elección de un nuevo escenario al que jugar. Con unas bebidas y unos aperitivos, estamos listos para empezar."
     },
+    "Contributions": "Contributions",
     "contribute": {
         "text-1": "Apoya el proyecto uniéndote a Patreon. Te ganarás mi más profundo agradecimiento. Haces que sea posible para mí mantener la app y desarrollar las nuevas funciones.",
         "text-2": "Los mecenas pueden crear campañas compartidas ilimitadas. ¡Además, pueden votar sobre nuevas funciones y recibir notificaciones cuando se implementen nuevas funciones!"
@@ -233,6 +234,7 @@ export default {
     "fc": "Círculos Olvidados",
     "Jaws of the Lion": "Fauces del León",
     "jotl": "Fauces del León",
+    "Availability": "Availability",
     "Sticker": "Pegatina",
     "State": "Estado",
     "Name": "Nombre",
@@ -314,6 +316,7 @@ export default {
     "Hidden Scenario": "Escenario Oculto",
     "Add achievements gained by events other than completing scenarios manually": "Agrega logros obtenidos por eventos aparte de de completar escenarios",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "Los números de ubicación en el texto de la historia son solo recordatorios. Ellos mismos no desbloquean nada.",
+    "Level up when youre back in town": "¡Sube de nivel cuando vuelvas a la ciudad!",
     "scenarios": {
         "gh-1": {
             "name": "Túmulo Negro"
@@ -942,12 +945,12 @@ export default {
             "name": "Un trabajo enrevesado",
             "rewards": [
                 [
-                    "175 de oro para cada personaje."
+                    "175 de oro para cada personaje.",
                     "Este dinero debe gastarse de inmediato en cualquier mejora de {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, o {DARK}"
                 ],
                 [
-                    "175 de oro para cada personaje."
-                    "Este dinero debe gastarse de inmediato en cualquier mejora de {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, o {DARK}"
+                    "175 de oro para cada personaje.",
+                    "Este dinero debe gastarse de inmediato en cualquier mejora de {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, o {DARK}",
                     "+ 1 de prosperidad"
                 ]
             ]
@@ -1042,12 +1045,6 @@ export default {
                 "15 de oro para cada personaje",
                 "1 ✓ para cada personaje",
                 "Todos los personajes pueden añadir una nueva carta de su clase a su reserva de cartas activas. La carta seleccionada debe tener un nivel igual o inferior al nivel del personaje menos 2."
-            ]
-        },
-        "fc-201": {
-            "name": "Una visión de lo inevitable",
-            "rewards": [
-                "“Cuenco de profecía” (Objeto 164)"
             ]
         },
         "fc-201": {
@@ -2226,12 +2223,12 @@ export default {
             "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
         },
         "gh-153": {
-            "name": "Antídoto menor"
+            "name": "Antídoto menor",
             "source": "Recompensa de {SCENARIO 99}",
             "desc": "The next three times you would gain {POISON} prevent the condition."
         },
         "gh-154": {
-            "name": "Antídoto mayor"
+            "name": "Antídoto mayor",
             "source": "Recompensa de {SCENARIO 105}",
             "desc": "The next five times you would gain {POISON} prevent the condition."
         },
@@ -2245,7 +2242,7 @@ export default {
             "source": "Desconocido",
             "desc": "During your melee attack, {ANY_X} to add +2 {ATTACK} to a single attack."
         },
-         "gh-157": {
+        "gh-157": {
             "name": "Arco antiguo",
             "source": "Recompensa de {SCENARIO 107} (Tesoro #78)\nSección 32 “Collapsed Atrium” in book",
             "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack."
@@ -2470,340 +2467,340 @@ export default {
     },
     "treasures": {
         "gh-1": {
-            "name": "Diseño de objeto aleatorio",
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-2": {
-            "name": "Obtén “Pavés” (Objeto 032)",
+            "name": "Obtén “Pavés” (Objeto 032)"
         },
         "gh-3": {
-            "name": "Obtén “Lóriga de Láminas” (Objeto 044)",
+            "name": "Obtén “Lóriga de Láminas” (Objeto 044)"
         },
         "gh-4": {
-            "name": "Obtén 15 de oro",
+            "name": "Obtén 15 de oro"
         },
         "gh-5": {
-            "name": "Obtén “Cota de malla” (Objeto 023)",
+            "name": "Obtén “Cota de malla” (Objeto 023)"
         },
         "gh-6": {
-            "name": "Obtén “Cadena con garfio” (Objeto 039)",
+            "name": "Obtén “Cadena con garfio” (Objeto 039)"
         },
         "gh-7": {
-            "name": "Escenario secundario aleatorio",
+            "name": "Escenario secundario aleatorio"
         },
         "gh-8": {
-            "name": "Obtén 1 ✔",
+            "name": "Obtén 1 ✔"
         },
         "gh-9": {
-            "name": "Obtén “Collar de las mareas” (Objeto 111)",
+            "name": "Obtén “Collar de las mareas” (Objeto 111)"
         },
         "gh-10": {
-            "name": "Obtén 10 XP",
+            "name": "Obtén 10 XP"
         },
         "gh-11": {
-            "name": "Diseño de objeo aleatorio",
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-12": {
-            "name": "Obtén “Botas de magma” (Objeto 099)",
+            "name": "Obtén “Botas de magma” (Objeto 099)"
         },
         "gh-13": {
-            "name": "Sufre 5 de daño,VENENO {POISON} y HERIDA {WOUND}",
+            "name": "Sufre 5 de daño,VENENO {POISON} y HERIDA {WOUND}"
         },
         "gh-14": {
-            "name": "Obtén 10 XP",
+            "name": "Obtén 10 XP"
         },
         "gh-15": {
-            "name": "Obtén “Colgante de Pactos siniestros” (Objeto 045)",
+            "name": "Obtén “Colgante de Pactos siniestros” (Objeto 045)"
         },
         "gh-16": {
-            "name": "Obtén 10 de oro",
+            "name": "Obtén 10 de oro"
         },
         "gh-17": {
-            "name": "Obtén 20 de oro",
+            "name": "Obtén 20 de oro"
         },
         "gh-18": {
-            "name": "Obtén 15 de oro",
+            "name": "Obtén 15 de oro"
         },
         "gh-19": {
-            "name": "Diseño de objeo aleatorio",
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-20": {
-            "name": "Diseño de objeo aleatorio",
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-21": {
-            "name": "Sufre 5 de daño",
+            "name": "Sufre 5 de daño"
         },
         "gh-22": {
-            "name": "Diseño de objeo aleatorio",
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-23": {
-            "name": "Obtén “Armadura de escamas de draco” (Objeto 103)",
+            "name": "Obtén “Armadura de escamas de draco” (Objeto 103)"
         },
         "gh-24": {
-            "name": "Sufre 5 de daño",
+            "name": "Sufre 5 de daño"
         },
         "gh-25": {
-            "name": "Obtén 25 de oro",
+            "name": "Obtén 25 de oro"
         },
         "gh-26": {
-            "name": "Obtén 20 de oro",
+            "name": "Obtén 20 de oro"
         },
         "gh-27": {
-            "name": "Obtén “Orbe del Crepúsculo” (Objeto 122)",
+            "name": "Obtén “Orbe del Crepúsculo” (Objeto 122)"
         },
         "gh-28": {
-            "name": "Obtén 15 de oro",
+            "name": "Obtén 15 de oro"
         },
         "gh-29": {
-            "name": "Obtén “Sandalias de robustez” (Objeto 097)",
+            "name": "Obtén “Sandalias de robustez” (Objeto 097)"
         },
         "gh-30": {
-            "name": "Obtén 1 ✔",
+            "name": "Obtén 1 ✔"
         },
         "gh-31": {
-            "name": "Diseño de objeo aleatorio",
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-32": {
-            "name": "Diseño de objeo aleatorio",
+            "name": "Diseño de objeo aleatorio"
         },
         "gh-33": {
-            "name": "Obtén “Red contrapesada” (Objeto 019)",
+            "name": "Obtén “Red contrapesada” (Objeto 019)"
         },
         "gh-34": {
-            "name": "Obtén “Amuleto de vida” (Objeto 024)",
+            "name": "Obtén “Amuleto de vida” (Objeto 024)"
         },
         "gh-35": {
-            "name": "Obtén “Botas de escamas de draco” (Objeto 098)",
+            "name": "Obtén “Botas de escamas de draco” (Objeto 098)"
         },
         "gh-36": {
-            "name": "Diseño “Botas cohete” (Objeto 096)",
+            "name": "Diseño “Botas cohete” (Objeto 096)"
         },
         "gh-37": {
-            "name": "Obtén 1 ✔",
+            "name": "Obtén 1 ✔"
         },
         "gh-38": {
-            "name": "Diseño “Anillo de cráneos” (Objeto 123)",
+            "name": "Diseño “Anillo de cráneos” (Objeto 123)"
         },
         "gh-39": {
-            "name": "Sufre 5 de daño",
+            "name": "Sufre 5 de daño"
         },
         "gh-40": {
-            "name": "Diseño de objeto aleatorio",
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-41": {
-            "name": "Obtén “Cuchillo de negro” (Objeto 053)",
+            "name": "Obtén “Cuchillo de negro” (Objeto 053)"
         },
         "gh-42": {
-            "name": "Diseño de objeto aleatorio",
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-43": {
-            "name": "Sufre 5 de daño, VENENO {POISON} y HERIDA {WOUND}",
+            "name": "Sufre 5 de daño, VENENO {POISON} y HERIDA {WOUND}"
         },
         "gh-44": {
-            "name": "Escenario secundario aleatorio",
+            "name": "Escenario secundario aleatorio"
         },
         "gh-45": {
-            "name": "Diseño de objeto aleatorio",
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-46": {
-            "name": "Sufre 3 de daño y VENENO {POISON}",
+            "name": "Sufre 3 de daño y VENENO {POISON}"
         },
         "gh-47": {
-            "name": "Obtén “Armadura a vapor” (Objeto 104)",
+            "name": "Obtén “Armadura a vapor” (Objeto 104)"
         },
         "gh-48": {
-            "name": "Obtén 30 de oro",
+            "name": "Obtén 30 de oro"
         },
         "gh-49": {
-            "name": "Nuevo escenario: Isla perdida {SCENARIO 17} (K-17)",
+            "name": "Nuevo escenario: Isla perdida {SCENARIO 17} (K-17)"
         },
         "gh-50": {
-            "name": "Obtén “Segunda piel” (Objeto 101)",
+            "name": "Obtén “Segunda piel” (Objeto 101)"
         },
         "gh-51": {
-            "name": "Escenario secundario aleatorio",
+            "name": "Escenario secundario aleatorio"
         },
         "gh-52": {
-            "name": "Obtén “Corazón del Traidor” (Objeto 131)",
+            "name": "Obtén “Corazón del Traidor” (Objeto 131)"
         },
         "gh-53": {
-            "name": "Diseño de objeto aleatorio",
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-54": {
-            "name": "Obtén “Brújula maldita” (Objeto 124)",
+            "name": "Obtén “Brújula maldita” (Objeto 124)"
         },
         "gh-55": {
-            "name": "Obtén 1 ✔",
+            "name": "Obtén 1 ✔"
         },
         "gh-56": {
-            "name": "Obtén “Pendiente de estrella” (Objeto 069)",
+            "name": "Obtén “Pendiente de estrella” (Objeto 069)"
         },
         "gh-57": {
-            "name": "Obtén 15 de oro",
+            "name": "Obtén 15 de oro"
         },
         "gh-58": {
-            "name": "Obtén “Yelmo de escamas de draco” (Objeto 108)",
+            "name": "Obtén “Yelmo de escamas de draco” (Objeto 108)"
         },
         "gh-59": {
-            "name": "Diseño de objeto aleatorio",
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-60": {
-            "name": "Obtén “Hacha Rompecráneos” (Objeto 113)",
+            "name": "Obtén “Hacha Rompecráneos” (Objeto 113)"
         },
         "gh-61": {
-            "name": "Obtén “Daga versátil” (Objeto 040)",
+            "name": "Obtén “Daga versátil” (Objeto 040)"
         },
         "gh-62": {
-            "name": "Obtén “Yelmo de la montaña” (Objeto 110) y “Martillode la montaña” (Objeto 115)",
+            "name": "Obtén “Yelmo de la montaña” (Objeto 110) y “Martillode la montaña” (Objeto 115)"
         },
         "gh-63": {
-            "name": "Diseño de objeto aleatorio",
+            "name": "Diseño de objeto aleatorio"
         },
         "gh-64": {
-            "name": "Obtén 30 de oro",
+            "name": "Obtén 30 de oro"
         },
         "gh-65": {
-            "name": "Diseño “Yelmo con cuernos” (Objeto 107)",
+            "name": "Diseño “Yelmo con cuernos” (Objeto 107)"
         },
         "gh-66": {
-            "name": "Obtén “Bomba volátil” (Objeto 033)",
+            "name": "Obtén “Bomba volátil” (Objeto 033)"
         },
         "gh-67": {
-            "name": "Obtén 10 de oro",
+            "name": "Obtén 10 de oro"
         },
         "gh-68": {
-            "name": "Obtén “Anillo helicoidal” (Objeto 130)",
+            "name": "Obtén “Anillo helicoidal” (Objeto 130)"
         },
         "gh-69": {
-            "name": "Obtén “Túnica de invocación” (Objeto 100)",
+            "name": "Obtén “Túnica de invocación” (Objeto 100)"
         },
         "gh-70": {
-            "name": "Escenario secundario aleatorio",
+            "name": "Escenario secundario aleatorio"
         },
         "gh-71": {
-            "name": "Escenario secundario aleatorio",
+            "name": "Escenario secundario aleatorio"
         },
         "gh-72": {
-            "name": "Diseño “Alfanje de combustión” (Objeto 116)",
+            "name": "Diseño “Alfanje de combustión” (Objeto 116)"
         },
         "gh-73": {
-            "name": "Diseño de objeto aleatorio.",
+            "name": "Diseño de objeto aleatorio."
         },
         "gh-74": {
-            "name": "Diseño de objeto aleatorio.",
+            "name": "Diseño de objeto aleatorio."
         },
         "gh-75": {
-            "name": "Criptograma encontrado (Mira la página 121 del libro de escenarios)",
+            "name": "Criptograma encontrado (Mira la página 121 del libro de escenarios)"
         },
         "fc-76": {
-            "name": "Sufre 3 de daño y HERIDA {WOUND}, obtén 10 de oro.",
+            "name": "Sufre 3 de daño y HERIDA {WOUND}, obtén 10 de oro."
         },
         "fc-77": {
-            "name": "Obtén “Poción de remedio mayor” (Objeto 090).",
+            "name": "Obtén “Poción de remedio mayor” (Objeto 090)."
         },
         "fc-78": {
-            "name": "Diseño “Arco antiguo” (Objeto 157).",
+            "name": "Diseño “Arco antiguo” (Objeto 157)."
         },
         "fc-79": {
-            "name": "Obtén “Figura de halcón” (Objeto 157).",
+            "name": "Obtén “Figura de halcón” (Objeto 157)."
         },
         "fc-80": {
-            "name": "Obtén 1 ✓ y añade el evento de Fisura 19 al mazo.",
+            "name": "Obtén 1 ✓ y añade el evento de Fisura 19 al mazo."
         },
         "fc-81": {
-            "name": "Obtén “Pergamino de premura” (Objeto 159) y 10 de oro.",
+            "name": "Obtén “Pergamino de premura” (Objeto 159) y 10 de oro."
         },
         "fc-82": {
-            "name": "Diseño “Grebas de rejuvenecimiento” (Objeto 158).",
+            "name": "Diseño “Grebas de rejuvenecimiento” (Objeto 158)."
         },
         "fc-83": {
-            "name": "Obtén “Poción de poder mayor” (Objeto 041).",
+            "name": "Obtén “Poción de poder mayor” (Objeto 041)."
         },
         "fc-84": {
-            "name": "Obtén “Máscara del terror” (Objeto 066).",
+            "name": "Obtén “Máscara del terror” (Objeto 066)."
         },
         "fc-85": {
-            "name": "Sufre 3 de daño y VENENO {POISON}, obtén 10 de oro.",
+            "name": "Sufre 3 de daño y VENENO {POISON}, obtén 10 de oro."
         },
         "fc-86": {
-            "name": "Desbloquea el escenario en solitario de {DR} “Una visión de los inevitable” (consulta la página 25 del libro principal)",
+            "name": "Desbloquea el escenario en solitario de {DR} “Una visión de los inevitable” (consulta la página 25 del libro principal)"
         },
         "fc-87": {
-            "name": "Sufre 2 de daño y MALDICIÓN {CURSE}, obtén 15 de oro.",
+            "name": "Sufre 2 de daño y MALDICIÓN {CURSE}, obtén 15 de oro."
         },
         "fc-88": {
-            "name": "Obtén 1 ✓.",
+            "name": "Obtén 1 ✓."
         },
         "fc-89": {
-            "name": "Obtén “Anillo de segunda oportunidad” (Objeto 070).",
+            "name": "Obtén “Anillo de segunda oportunidad” (Objeto 070)."
         },
         "fc-90": {
-            "name": "Lee la sección 75 de la página 25. \nCada personaje obtiene 10 de oro. \n5 de XP para cada personaje.",
+            "name": "Lee la sección 75 de la página 25. \nCada personaje obtiene 10 de oro. \n5 de XP para cada personaje."
         },
         "fc-91": {
-            "name": "Obtén 30 de oro y el logro de grupo “Oportunistas”. Añade el evento de Fisura 84 al mazo.",
+            "name": "Obtén 30 de oro y el logro de grupo “Oportunistas”. Añade el evento de Fisura 84 al mazo."
         },
         "fc-93": {
-            "name": "Obtén “Pergamino de premura” (Objeto 159).",
+            "name": "Obtén “Pergamino de premura” (Objeto 159)."
         },
         "fc-94": {
-            "name": "Obtén 1 ✓ y añade el evento de Fisura 20 al mazo.",
+            "name": "Obtén 1 ✓ y añade el evento de Fisura 20 al mazo."
         },
         "fc-95": {
-            "name": "Obtén 25 de oro y el logro de grupo “La caja Fuerte”. Añade el evento de Fisura 85 al mazo.",
+            "name": "Obtén 25 de oro y el logro de grupo “La caja Fuerte”. Añade el evento de Fisura 85 al mazo."
         },
         "fc-96": {
-            "name": "Encuentras un antiguo tomo repleto de planos técnicos y de diseño de una gran variedad de máquinas exóticas. Hay una curiosa nota manuscrita en la cara interna de la cubierta: {NOTE_115}",
+            "name": "Encuentras un antiguo tomo repleto de planos técnicos y de diseño de una gran variedad de máquinas exóticas. Hay una curiosa nota manuscrita en la cara interna de la cubierta: {NOTE_115}"
         },
         "jotl-1": {
-            "name": "Obtén 10 XP",
+            "name": "Obtén 10 XP"
         },
         "jotl-2": {
-            "name": "Obtén “Ring of Strength” (Objeto 31)",
+            "name": "Obtén “Ring of Strength” (Objeto 31)"
         },
         "jotl-3": {
-            "name": "Obtén 15 XP",
+            "name": "Obtén 15 XP"
         },
         "jotl-4": {
-            "name": "Obtén 5 de oro",
+            "name": "Obtén 5 de oro"
         },
         "jotl-5": {
-            "name": "Obtén 1 ✔",
+            "name": "Obtén 1 ✔"
         },
         "jotl-6": {
-            "name": "Obtén 10 de oro",
+            "name": "Obtén 10 de oro"
         },
         "jotl-7": {
-            "name": "Obtén 5 de oro",
+            "name": "Obtén 5 de oro"
         },
         "jotl-8": {
-            "name": "Sufre 3 de daño, VENENO {POISON},",
+            "name": "Sufre 3 de daño, VENENO {POISON},"
         },
         "jotl-9": {
-            "name": "Obtén 5 de oro",
+            "name": "Obtén 5 de oro"
         },
         "jotl-10": {
-            "name": "“Fateful Compass” (Objeto 27)",
+            "name": "“Fateful Compass” (Objeto 27)"
         },
         "jotl-11": {
-            "name": "“Ring of Haste” (Objeto 30)",
+            "name": "“Ring of Haste” (Objeto 30)"
         },
         "jotl-12": {
-            "name": "Obtén 5 de oro",
+            "name": "Obtén 5 de oro"
         },
         "jotl-13": {
-            "name": "Obtén 5 de oro",
+            "name": "Obtén 5 de oro"
         },
         "jotl-14": {
-            "name": "Obtén 3 money tokens",
+            "name": "Obtén 3 money tokens"
         },
         "jotl-15": {
-            "name": "Obtén 1 ✔",
+            "name": "Obtén 1 ✔"
         },
         "jotl-16": {
-            "name": "“Mana Potion” (Objeto 14)",
+            "name": "“Mana Potion” (Objeto 14)"
         },
         "jotl-X": {
-            "name": "“Ring of Restoration” (Objeto 32)",
+            "name": "“Ring of Restoration” (Objeto 32)"
         }
     },
     "Add {x} {-1} to your attack modifier deck.": "Añade {x} {-1} a tu mazo de Modificadores de ataque.",
@@ -2813,7 +2810,7 @@ export default {
             "unlock": "Abre la caja {PH}",
             "progress": [
                 "Completa 3 escenarios que tengan en su nombre la palabra “Cripta”.",
-                "Después, desbloquea {SCENARIO 52} y sigue la cadena de aventuras hasta termianrla.",
+                "Después, desbloquea {SCENARIO 52} y sigue la cadena de aventuras hasta termianrla."
             ]
         },
         "gh-511": {
@@ -2825,14 +2822,14 @@ export default {
                 "2 objetos {BODY},",
                 "2 objetos {LEGS},",
                 "3 objetos {ONE-HAND} o {TWO-HANDS} y",
-                "4 objetos {SMALL-ITEM}.",
+                "4 objetos {SMALL-ITEM}."
             ]
         },
         "gh-512": {
             "name": "La codicia es buena",
             "unlock": "Abre la caja {QM}",
             "progress": [
-                "Acumula 200 de oro.",
+                "Acumula 200 de oro."
             ]
         },
         "gh-513": {
@@ -2840,49 +2837,49 @@ export default {
             "unlock": "Abre el sobre X",
             "progress": [
                 "Mata a 8 Duendes del Bosque.",
-                "Después, desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta termianrla.",
+                "Después, desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta termianrla."
             ]
         },
         "gh-514": {
             "name": "Estudios de anatomía",
             "unlock": "Abre la caja {SB}",
             "progress": [
-                "Sé testigo de 15 agotamientos de miembros de tu equipo.",
+                "Sé testigo de 15 agotamientos de miembros de tu equipo."
             ]
         },
         "gh-515": {
             "name": "Defensor de la ley",
             "unlock": "Abre la caja {SK}",
             "progress": [
-                "Mata a 20 Bandidos o Sectarios. ",
+                "Mata a 20 Bandidos o Sectarios. "
             ]
         },
         "gh-516": {
             "name": "Tributo de sangre",
             "unlock": "Abre la caja {BE}",
             "progress": [
-                "Mata a 15 Infectores.",
+                "Mata a 15 Infectores."
             ]
         },
         "gh-517": {
             "name": "Trofeo de caza",
             "unlock": "Abre la caja {BT}",
             "progress": [
-                "Mata a 20 tipos de monstruos distintos.",
+                "Mata a 20 tipos de monstruos distintos."
             ]
         },
         "gh-518": {
             "name": "Eterno viajero",
             "unlock": "Abre la caja {SU}",
             "progress": [
-                "Completa 15 escenarios distintos.",
+                "Completa 15 escenarios distintos."
             ]
         },
         "gh-519": {
             "name": "Leyenda de las batallas",
             "unlock": "Abre la caja {SS}",
             "progress": [
-                "Obtén 15 ✔ por objetivos de batalla completados.",
+                "Obtén 15 ✔ por objetivos de batalla completados."
             ]
         },
         "gh-520": {
@@ -2890,7 +2887,7 @@ export default {
             "unlock": "Abre la caja {SK}",
             "progress": [
                 "Encuentra el Hacha Rompecráneos en el Santuario de la Nigromante.",
-                "Úsala para matar 7 Huesos Vivientes, Cadáveres Vivientes o Espíritus Vivientes.",
+                "Úsala para matar 7 Huesos Vivientes, Cadáveres Vivientes o Espíritus Vivientes."
             ]
         },
         "gh-521": {
@@ -2898,7 +2895,7 @@ export default {
             "unlock": "Abre la caja {DS}",
             "progress": [
                 "Completa 3 escenarios en el Bosque de la Dagas.",
-                "Después, desbloquea {SCENARIO 55} y sigue la cadena de aventuras hasta termianrla.",
+                "Después, desbloquea {SCENARIO 55} y sigue la cadena de aventuras hasta termianrla."
             ]
         },
         "gh-522": {
@@ -2906,7 +2903,7 @@ export default {
             "unlock": "Abre la caja {NS}",
             "progress": [
                 "Completa 6 escenarios secundarios",
-                "(aquellos con un números superior a 51).",
+                "(aquellos con un números superior a 51)."
             ]
         },
         "gh-523": {
@@ -2919,21 +2916,21 @@ export default {
                 "1 Demonio de Viento,",
                 "1 Demonio de Tierra,",
                 "1 Demonio de Noche y",
-                "1 Demonio de Sol.",
+                "1 Demonio de Sol."
             ]
         },
         "gh-524": {
             "name": "Actitud intrépida",
             "unlock": "Abre la caja {BT}",
             "progress": [
-                "Mata a 20 monstruos de élite.",
+                "Mata a 20 monstruos de élite."
             ]
         },
         "gh-525": {
             "name": "Devoción por todas las cosas",
             "unlock": "Abre la caja {SB}",
             "progress": [
-                "Dona 120 de oro al Santuario del Gran Roble.",
+                "Dona 120 de oro al Santuario del Gran Roble."
             ]
         },
         "gh-526": {
@@ -2941,21 +2938,21 @@ export default {
             "unlock": "Abre el sobre X",
             "progress": [
                 "Completa 4 escenarios en Gloomhaven.",
-                "A continuación, desbloquea {SCENARIO 57} y sigue la cadena de aventuras hasta terminarla.",
+                "A continuación, desbloquea {SCENARIO 57} y sigue la cadena de aventuras hasta terminarla."
             ]
         },
         "gh-527": {
             "name": "Fanático del dios de la sangre",
             "unlock": "Abre la caja {BE}",
             "progress": [
-                "Que tu personaje quede agotado 12 veces.",
+                "Que tu personaje quede agotado 12 veces."
             ]
         },
         "gh-528": {
             "name": "Vencedor de Goliat",
             "unlock": "Abre la caja {DS}",
             "progress": [
-                "Completa 4 escenarios con jefes.",
+                "Completa 4 escenarios con jefes."
             ]
         },
         "gh-529": {
@@ -2963,7 +2960,7 @@ export default {
             "unlock": "Abre la caja {NS}",
             "progress": [
                 "Completa 2 escenarios en el Pantano Perenne.",
-                "A continuación, desbloquea {SCENARIO 61} y sigue la cadena de aventuras hasta termianrla.",
+                "A continuación, desbloquea {SCENARIO 61} y sigue la cadena de aventuras hasta termianrla."
             ]
         },
         "gh-530": {
@@ -2971,7 +2968,7 @@ export default {
             "unlock": "Abre la caja {SU}",
             "progress": [
                 "Adquiere 4 mejoras",
-                "(Requiere el logro global “El poder de la mejora”).",
+                "(Requiere el logro global “El poder de la mejora”)."
             ]
         },
         "gh-531": {
@@ -2984,14 +2981,14 @@ export default {
                 "Pantano Perenne,",
                 "Montañas Guardianas,",
                 "Montañas Cobrizas y",
-                "Mar Brumoso.",
+                "Mar Brumoso."
             ]
         },
         "gh-532": {
             "name": "Una mano amiga",
             "unlock": "Abre la caja {SS}",
             "progress": [
-                "Sé testigo de cómo otros 2 personajes cumplen sus misiones personales.",
+                "Sé testigo de cómo otros 2 personajes cumplen sus misiones personales."
             ]
         },
         "gh-533": {
@@ -3001,7 +2998,7 @@ export default {
                 "Mata a:",
                 "3 Cienos,",
                 "3 Acechadores y",
-                "3 Dracos Escupidores.",
+                "3 Dracos Escupidores."
             ]
         }
     },
@@ -3363,6 +3360,11 @@ export default {
                 "Añade 1 carta {+1_WHITE} {CURSE}"
             ]
         }
+    },
+    "card_types": {
+        "R": "Road Event",
+        "C": "City Event",
+        "Q": "Personal Quest"
     },
     "quest": {
         "1": {
@@ -3874,7 +3876,7 @@ export default {
                 "1": "{1}{2}",
                 "2": "{1}{2}{3}"
             }
-         },
+        },
         "72": {
             "name": "El trato del Concejal",
             "sections": {

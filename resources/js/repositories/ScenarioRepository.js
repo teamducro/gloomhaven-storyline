@@ -32,8 +32,10 @@ export default class ScenarioRepository {
             this.scenarioCompletedService.complete(scenario);
         } else if (previousState === ScenarioState.complete && (scenario.isIncomplete() || scenario.isHidden())) {
             this.undoAchievements(scenario);
-            this.processRewardedItems(scenario, false);
             this.scenarioCompletedService.rollback(scenario);
+            // We can't automatically remove items, they may be obtained by other means,
+            // Items may be unchecked in the item database.
+            // this.processRewardedItems(scenario, false);
         }
 
         if (scenario.is_side && !scenario.required_by.isEmpty()) {
