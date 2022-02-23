@@ -276,6 +276,7 @@ export default {
     "REGENERATE": "REGENERACIÓN",
     "DISARM": "DESARME",
     "TARGET": "OBJETIVO",
+    "Teleport": "Teletransporte",
     "Doom": "Condena",
     "Intro": "Intro",
     "The Merchant": "La comerciante",
@@ -2222,22 +2223,22 @@ export default {
         "gh-152": {
             "name": "Anillo de dualidad",
             "source": "Recompensa de {SCENARIO 97}\nSección 125 “A locked chest” in book",
-            "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
+            "desc": "Después de realizar la acción superior de cualquier cartta de Capacidad, puedes realizar de inmediato la acción inferior de la misma carta. Este objeto no se puede usar si ambas acciones provocasen que la carta de perdiese, idicado por {consumed}."
         },
         "gh-153": {
             "name": "Antídoto menor",
             "source": "Recompensa de {SCENARIO 99}",
-            "desc": "The next three times you would gain {POISON} prevent the condition."
+            "desc": "Las siguientes 3 veces que vayas a sufrir {POISON} evitas sufrir ese estado."
         },
         "gh-154": {
             "name": "Antídoto mayor",
             "source": "Recompensa de {SCENARIO 105}",
-            "desc": "The next five times you would gain {POISON} prevent the condition."
+            "desc": "Las siguientes 5 veces que vayas a sufrir {POISON} evitas sufrir ese estado."
         },
         "gh-155": {
             "name": "Armadura antimaldiciones",
             "source": "Recompensa de {SCENARIO 108}",
-            "desc": "Eres inmune a {CURSE}, even if the item is spent. Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, gain {SHIELD} 1. Add 3 {-1} a tu mazo de modificadores de ataque."
+            "desc": "Eres inmune a {CURSE}, incluso si has gastado este objeto. Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 3 cartas {-1} a tu mazo de modificadores de ataque."
         },
         "gh-156": {
             "name": "Claymore elemental",
@@ -2252,37 +2253,37 @@ export default {
         "gh-158": {
             "name": "Grebas de rejuvenecimiento",
             "source": "Recompensa de {SCENARIO 111} (Tesoro #82)",
-            "desc": "Durante tu movimiento, añade {MOVE} +2 a un solo movimiento and gain {REGENERATE}."
+            "desc": "Durante tu movimiento, añade {MOVE} +2 al movimiento y obtén {REGENERATE}."
         },
         "gh-159": {
             "name": "Pergamino de premura",
             "source": "Recompensa de {SCENARIO 103} (Tesoro #81)",
-            "desc": "During any one ally's movement, añade {MOVE} +2 a un solo movimiento."
+            "desc": "Durante el movimiento de un aliado, añade {MOVE} +2 al movimiento."
         },
         "gh-160": {
             "name": "Daga de ratero",
             "source": "Desconocido",
-            "desc": "When you kill a monster during your turn, gain one money token."
+            "desc": "Cuando mates a un monstruo durante tu turno, obtén 1 ficha de Dinero."
         },
         "gh-161": {
             "name": "Hacha arrojadiza",
             "source": "Recompensa de {SCENARIO 108}",
-            "desc": "Durante tu ataque cuerpo a cuerpo con un solo objetivo, add {RANGE} 3 to the attack."
+            "desc": "Durante tu ataque cuerpo a cuerpo con un solo objetivo, añade {RANGE} 3 al ataque."
         },
         "gh-162": {
             "name": "Dispositivo de apertura de fisuras",
             "source": "Recompensa de {SCENARIO 112}\nSección 62 “Mechanical Splendor” in book.",
-            "desc": "Durante tu turno, Teleport to any unoccupied hex within 4 hexes of you."
+            "desc": "Durante tu turno, has un movimiento de Teletransporte a cualquier hexágono desocupado a 4 hexágonos o menos de ti."
         },
         "gh-163": {
             "name": "Tiara de cristal",
             "source": "Recompensa de {SCENARIO 110}",
-            "desc": "When you peform a long or short rest, obtén {STRENGTHEN}."
+            "desc": "Cuando realices un descanso largo o corto, obtén {STRENGTHEN}."
         },
         "gh-164": {
             "name": "Cuenco de profecía",
             "source": "Recompensa de escenario en solitario - {DR}",
-            "desc": "When you reveal cards from any deck, reveal one additional card."
+            "desc": "Cuando reveles cartas de cualquier mazo, revela 1 carta adicional."
         },
         "jotl_1": {
             "name": "Lentes Ojo de águila",
