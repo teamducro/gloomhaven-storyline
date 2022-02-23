@@ -234,7 +234,7 @@ export default {
     "fc": "Círculos Olvidados",
     "Jaws of the Lion": "Fauces del León",
     "jotl": "Fauces del León",
-    "Availability": "Availability",
+    "Availability": "Disponibilidad",
     "Sticker": "Pegatina",
     "State": "Estado",
     "Name": "Nombre",
