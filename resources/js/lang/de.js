@@ -11,22 +11,22 @@ export default {
     "Info": "Info",
     "Settings": "Einstellungen",
     "transfer": {
-        "title": "Transfer campaign data",
-        "text": "Copy campaign data between campaigns can be done easily.",
+        "title": "Kampagnen-Daten übertragen",
+        "text": "Das Kopieren von Kampagnen-Daten zwischen einzelnen Kampagnen ist einfach möglich.",
         "warning": {
-            "text": "Campaign data can only be transferred if you purchased a shared campaign."
+            "text": "Kampagnen-Daten können nur dann übertragen werden wenn Du eine teilbare Kampagne erworben hast."
         }
     },
-    "Please consider purchasing a license": "Please consider purchasing a license",
-    "Danger zone!": "Danger zone!",
-    "Alternatively you may": "Alternatively you may",
-    "a campaign link": "a campaign link",
+    "Please consider purchasing a license": "Bitte zieh den Kauf einer Lizenz in Betracht",
+    "Danger zone!": "Gefährlicher Bereich!",
+    "Alternatively you may": "Alternativ kannst du",
+    "a campaign link": "ein Kampagnen-Link",
     "snapshots": {
         "title": "Snapshots",
-        "text-1": "If you ever lose campaign progress you can use these automatic snapshots to revert unwanted changes!",
-        "text-2": "Snapshots are only available for shared campaigns because they're stored in the cloud.",
-        "only-owner": "Only owners of this campaign can manage snapshots",
-        "no-snapshots": "There are no snapshots yet"
+        "text-1": "Wenn du jemals den fortschritt deiner Kampagne verlierst kannst du diese automatischen Snapshots nutzen um sie auf einen früheren Zeitpunkt zurück zu setzen!",
+        "text-2": "Snapshots sind nur für teilbare Kampagnen verfügbar und werden in einer Cloud abgelegt.",
+        "only-owner": "Nur die Besitzer dieser Kampagne kann die Snapshots verwalten.",
+        "no-snapshots": "Es gibt noch keine Snapshots."
     },
     "Characters": "Charaktere",
     "Character sheet": "Charakter-Blatt",
@@ -40,9 +40,9 @@ export default {
     "The cost of items displayed is modified by this amount.": "Die Kosten der angezeigten Gegenstände wird um diese Höhe verändert.",
     "When 100 gold is donated, open envelope": "Wenn ihr 100 Gold gespendet habt, öffnet Umschlag",
     "gained prosperity checkbox by donations.": "Erhaltene Wohlstands-Checkbox pro Spende.",
-    "City Event Decks": "Stadt-Ereignis Decks",
+    "City Event Decks": "Stadt-Ereignis Deck",
     "Add city events": "Füge Stadt-Ereignisse hinzu",
-    "Road Event Decks": "Weg-Ereignis Decks",
+    "Road Event Decks": "Weg-Ereignis Deck",
     "Add road events": "Füge Weg-Ereignisse hinzu",
     "Draw": "Zieht",
     "Toggle": "Schaltet um",
@@ -76,7 +76,7 @@ export default {
     "Battle Goals": "Kampfziele",
     "You may select an additional perk!": "Du erhälst eine zusätztliche Verbesserung!",
     "Number or Name": "Nummer oder Name",
-    "No items available": "No items available",
+    "No items available": "Keine Gegenstände verfügbar",
     "Buy me a Beer": "Gib mir ein Bier aus!",
     "Requirements": "Voraussetzungen",
     "Show treasures": "Schätze anzeigen",
@@ -112,10 +112,10 @@ export default {
     "Locked": "Versperrt",
     "Retire": "in Ruhestand schicken",
     "Retired": "in Ruhestand geschickt",
-    "Retirement counter": "Retirement counter",
-    "Set this counter to the amount of characters your have retired": "Set this counter to the amount of characters your have retired.",
+    "Retirement counter": "Ruhestand-Zähler",
+    "Set this counter to the amount of characters your have retired": "Stell den Zähler auf die Anzahl der schon in Ruhestand geschickten Charaktere ein.",
     "Remove": "Löschen",
-    "Unlocked": "Unlocked",
+    "Unlocked": "Freigeschaltet",
     "Clear all": "Alles löschen",
     "Add Character": "Füge Charakter hinzu",
     "character-limit-message": "Dew to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
@@ -130,7 +130,7 @@ export default {
     "reset": {
         "text": "Bist du sicher, dass du alle Szenariodaten löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden."
     },
-    "share": "share",
+    "share": "teile",
     "share-modal": {
         "1": "Teile deine aktuelle lokale Storyline mit deinen Gruppenmitgliedern.",
         "2": "Link kopieren",
@@ -155,20 +155,20 @@ export default {
         "text": "Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Wir drücken dann die Pausetaste vom Alltag. Jeder von uns hat etwas dazu beigetragen, dass sich unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Spielfortschritte festzuhalten und uns die Auswahl eines neuen Szenarios zu erleichtern. Mit ein paar Getränken und Snacks sind wir bereit ins Abenteuer aufzubrechen."
     },
     "contribute": {
-        "text-1": "Support the project by joining the Patreon. You'll earn my deepest gratitude. You make it possible for me to maintain the tracker and keep the new features coming.",
-        "text-2": "Patrons can create unlimited shared campaigns. In addition they can vote on new features and are notified when new features roll out!"
+        "text-1": "Unterstütze das Projket indem du ein Patreon wirst und verdiene Dir meine tiefste Dankbarkeit. Du ermöglichst es mir dadurch diese Seite zu verbessern und weiter zu entwicklen.",
+        "text-2": "Patreons können unendlich viele teilbare Kampagnen erstellen. Zusätztlich können sie über neue Funktionalitäten abstimmen und werden informiert sobald diese dann ausgerollt werden!"
     },
     "support": {
-        "text-1": "Would you like to contribute by translating to your native language?",
-        "text-2": "For help or feedback, please consult the"
+        "text-1": "Du möchtest mir bei der Übersetzung in deine Muttersprache helfen?",
+        "text-2": "Für Hilfe und Feeback konsultiere bitte"
     },
-    "send me an e-mail": "send me an e-mail",
-    "Please send me an e-mail": "Please send me an e-mail",
+    "send me an e-mail": "schreib mir eine Email",
+    "Please send me an e-mail": "Bitte schreib mir eine Email",
     "or": "oder",
     "Welcome": "Willkommen",
     "Language": "Sprache",
-    "Gloomhaven Storyline is available in multiple languages!": "Gloomhaven Storyline is available in multiple languages!",
-    "If you like to contribute with translations.": "If you like to contribute with translations.",
+    "Gloomhaven Storyline is available in multiple languages!": "Gloomhaven Storyline ist in verschiedenen Sprachen verfügbar!",
+    "If you like to contribute with translations.": "Wenn Du bei der Übersetzung helfen möchtest.",
     "Translations": "Übersetzungen",
     "French": "Französisch",
     "Italian": "Italienisch",
@@ -203,11 +203,11 @@ export default {
     "Reset campaign": "Kampagne zurücksetzen",
     "Change log": "Änderungsverzeichnis",
     "changelog": {
-        "text": "Only somewhat big features are included, every update brings bug fixes and improvements to the app!"
+        "text": "Nur signifikante neue Features sind hier enthalten, aber jedes Update der App bringt Verbesserungen und Bugfixe mit sich!"
     },
     "Version": "Version",
-    "Description": "Description",
-    "Release date": "Release date",
+    "Description": "Beschreibung",
+    "Release date": "Datum der Veröffentlichung",
     "Received a campaign code?": "Has du einen Kampagnen-Code erhalten?",
     "Add Campaign": "Kampagne hinzufügen",
     "Your campaign has been synced!": "Deine Kampgne wurde synchronisiert!",
@@ -222,15 +222,15 @@ export default {
     "Change name": "Name ändern",
     "Fill in your email, you'll receive a link to sync your campaign.": "Trage deine Emailadresse ein. Du erhälst einen Link mit dem du deine Kampagne synchronisieren kannst.",
     "Submit": "Abschicken",
-    "An email has been sent to your inbox.": "An email has been sent to your inbox.",
+    "An email has been sent to your inbox.": "Eine Email wurde an Deine Adresse geschickt",
     "Selected Campaign": "Ausgewählte Kampagne",
-    "Selected Game": "Selected Game",
+    "Selected Game": "Ausgewähltes Spiel",
     "PRO": "PRO",
     "gh": "Gloomhaven",
     "Forgotten Circles": "Forgotten Circles",
     "fc": "Forgotten Circles",
-    "Jaws of the Lion": "Jaws of the Lion",
-    "jotl": "Jaws of the Lion",
+    "Jaws of the Lion": "Pranken des Löwen",
+    "jotl": "Pranken des Löwen",
     "Sticker": "Sticker",
     "State": "Staat",
     "Name": "Name",
@@ -308,9 +308,9 @@ export default {
     "different Dimension": "verschiedene Dimension",
     "and": "und",
     "Hidden Scenario": "Verstecktes Szenario",
-    "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
-    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
-    "Level up when youre back in town": "Level up when you're back in town!",
+    "Add achievements gained by events other than completing scenarios manually": "Hinzufügen von Erfolgen, die durch andere Ereignisse als das manuelle Abschließen von Szenarien erzielt wurden",
+    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "Die Szenariozahlen im Text sind nur zur Erinnerung, sie werden nicht freigeschaltet.",
+    "Level up when youre back in town": "Stufenanstieg bei der Rückkehr nach Gloomhaven",
     "scenarios": {
         "gh-1": {
             "name": "Schwarzgrab"
@@ -318,15 +318,15 @@ export default {
         "gh-2": {
             "name": "Grabhöhle",
             "rewards": [
-                "10 gold each",
-                "+1 prosperity"
+                "je 10 Gold",
+                "+1 Wohlstand"
             ]
         },
         "gh-3": {
             "name": "Inox-Lager",
             "rewards": [
-                "15 gold each",
-                "+1 prosperity"
+                "je 15 Gold",
+                "+1 Wohlstand"
             ]
         },
         "gh-4": {
@@ -338,7 +338,7 @@ export default {
         "gh-6": {
             "name": "Faulige Krypta",
             "rewards": [
-                "5 gold each"
+                "je 5 Gold"
             ]
         },
         "gh-7": {
@@ -347,14 +347,14 @@ export default {
         "gh-8": {
             "name": "Lagerhaus von Gloomhaven",
             "rewards": [
-                "+2 reputation"
+                "+2 Ansehen"
             ]
         },
         "gh-9": {
             "name": "Diamantenmine",
             "rewards": [
-                "20 gold each",
-                "+1 prosperity"
+                "je 20 Gold",
+                "+1 Wohlstand"
             ]
         },
         "gh-10": {
@@ -363,17 +363,17 @@ export default {
         "gh-11": {
             "name": "Gloomhaven-Platz A",
             "rewards": [
-                "15 gold each",
-                "-2 reputation",
-                "+2 prosperity",
-                "“Skullbane Axe” design (Item 113)"
+                "je 15 Gold",
+                "-2 Ansehen",
+                "+2 Wohlstand",
+                "“Schädelfluch” design (Item 113)"
             ]
         },
         "gh-12": {
             "name": "Gloomhaven-Platz B",
             "rewards": [
-                "+4 reputation",
-                "“Skullbane Axe” design (Item 113)"
+                "+4 Ansehen",
+                "“Schädelfluch” design (Item 113)"
             ]
         },
         "gh-13": {
@@ -385,7 +385,7 @@ export default {
         "gh-15": {
             "name": "Schrein der Stärke",
             "rewards": [
-                "20 experience each"
+                "je 20 Erfahrung"
             ]
         },
         "gh-16": {
@@ -394,7 +394,7 @@ export default {
         "gh-17": {
             "name": "Verschollene Insel",
             "rewards": [
-                "25 gold each"
+                "je 25 Gold"
             ]
         },
         "gh-18": {
@@ -403,23 +403,23 @@ export default {
         "gh-19": {
             "name": "Vergessene Krypta",
             "rewards": [
-                "+1 prosperity"
+                "+1 Wohlstand"
             ]
         },
         "gh-20": {
             "name": "Versteck der Nekromantin",
             "rewards": [
-                "20 gold each",
-                "+2 reputation",
-                "+1 prosperity"
+                "je 20 Gold",
+                "+2 Ansehen",
+                "+1 Wohlstand"
             ]
         },
         "gh-21": {
             "name": "Höllenthron",
             "rewards": [
-                "50 gold each",
-                "+1 prosperity",
-                "Add City Event 78 to the deck"
+                "je 50 Gold",
+                "+1 Wohlstand",
+                "Füge dem Deck Stadtereignis 78 hinzu"
             ]
         },
         "gh-22": {
@@ -437,16 +437,16 @@ export default {
         "gh-26": {
             "name": "Die alte Zisterne",
             "rewards": [
-                "10 gold each",
-                "+1 reputation",
-                "+2 prosperity"
+                "je 10 Gold",
+                "+1 Ansehen",
+                "+2 Wohlstand"
             ]
         },
         "gh-27": {
             "name": "Unheilvoller Riss",
             "rewards": [
-                "+1 prosperity",
-                "100 gold each This money must immediately be spent on enhancements"
+                "+1 Wohlstand",
+                "je 100 Gold. Das Gold muss sofort in Karten-Verbesserungen investiert werden."
             ]
         },
         "gh-28": {
@@ -455,13 +455,13 @@ export default {
         "gh-29": {
             "name": "Heiligtum des Grauens",
             "rewards": [
-                "15 experience each"
+                "je 15 Erfahrung"
             ]
         },
         "gh-30": {
             "name": "Schrein der Tiefe",
             "rewards": [
-                "10 gold each"
+                "je 10 Gold"
             ]
         },
         "gh-31": {
@@ -476,9 +476,9 @@ export default {
         "gh-34": {
             "name": "Versengter Gipfel",
             "rewards": [
-                "20 gold each",
-                "+2 reputation",
-                "+1 prosperity"
+                "je 20 Gold",
+                "+2 Ansehen",
+                "+1 Wohlstand"
             ]
         },
         "gh-35": {
