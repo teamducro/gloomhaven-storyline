@@ -241,6 +241,7 @@ export default {
     "Region": "Región",
     "Chapter": "Capítulo",
     "Looted": "Saqueado",
+    "Loot": "Saqueo",
     "Side": "Secundario",
     "Clear filter": "Borrar filtro",
     "Missed Treasures": "Tesoros Perdidos",
@@ -275,6 +276,7 @@ export default {
     "REGENERATE": "REGENERACIÓN",
     "DISARM": "DESARME",
     "TARGET": "OBJETIVO",
+    "Doom": "Condena",
     "Intro": "Intro",
     "The Merchant": "La comerciante",
     "Demon and Rift": "El demonio y la grieta",
@@ -1813,7 +1815,7 @@ export default {
         "gh-72": {
             "name": "Zapatos de Felicidad",
             "source": "Objeto aleatorio",
-            "desc": "If you move 6 or more hexes on your turn, obtén {exp1}."
+            "desc": "Si te mueves 6 hexágonos o más en tu turno, obtén {exp1}."
         },
         "gh-73": {
             "name": "Capa de Reaparición",
@@ -1823,7 +1825,7 @@ export default {
         "gh-74": {
             "name": "Armadura Filosa",
             "source": "Objeto aleatorio",
-            "desc": "On the next three sources of damage from attacks targeting you, obtén {SHIELD} 1, {Retaliate} 1. Add 4 {-1} a tu mazo de modificadores de ataque."
+            "desc": "Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1 y {Retaliate} 1. Añade 4 cartas {-1} a tu mazo de modificadores de ataque."
         },
         "gh-75": {
             "name": "Diadema de los Elementos",
@@ -1833,7 +1835,7 @@ export default {
         "gh-76": {
             "name": "Almófar",
             "source": "Objeto aleatorio",
-            "desc": "While you are adjacent to three or more monsters, obtén {SHIELD} 1. Add 1 {-1} a tu mazo de modificadores de ataque."
+            "desc": "Mientras estés adyacente a 3 o más monstruos, obtén {SHIELD} 1. Añade 1 carta {-1} a tu mazo de modificadores de ataque."
         },
         "gh-77": {
             "name": "Espada Gélida",
@@ -1873,7 +1875,7 @@ export default {
         "gh-84": {
             "name": "Varita de Tormenta",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, crea Viento. {WIND}"
+            "desc": "Durante tu turno, crea Aire. {WIND}"
         },
         "gh-85": {
             "name": "Varita de Incendio",
@@ -1898,27 +1900,27 @@ export default {
         "gh-89": {
             "name": "Poción de Remedio Menor",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, remove one negative condition on yourself. This can be used while you have {STUN}."
+            "desc": "Durante tu turno, elimina un estado negativo que sufras. Puedes usarla incluso mientras sufres {STUN}."
         },
         "gh-90": {
             "name": "Poción de Remedio Mayor",
             "source": "Objeto aleatorio\nRecompensa de {SCENARIO 102} (Tesoro #77)",
-            "desc": "Durante tu turno, remove all negative conditions on yourself. This can be used while you have {STUN}."
+            "desc": "Durante tu turno, elimina todos los estados negativos que sufras. Puedes usarla incluso mientras sufres {STUN}."
         },
         "gh-91": {
             "name": "Anillo de Acero",
             "source": "Objeto aleatorio",
-            "desc": "Cuando sufras daño por un ataque targeting you, obtén {SHIELD} 4 contra ese ataque."
+            "desc": "Cuando sufras daño por un ataque que te tome como objetivo, obtén {SHIELD} 4 contra ese ataque."
         },
         "gh-92": {
             "name": "Anillo Atenuador",
             "source": "Objeto aleatorio",
-            "desc": "Before an enemy would consume an element, consume that element instead for no effect"
+            "desc": "Antes de que un enemigo consuma un elemento, lo consumes tú sin que se produzca ningún efecto."
         },
         "gh-93": {
             "name": "Pergamino de Poder",
             "source": "Objeto aleatorio",
-            "desc": "During an ally's attack, add +1 {ATTACK} to their entire attack action"
+            "desc": "Durante el ataque de un aliado, añade {ATTACK} +1 a la acción de ataque entera."
         },
         "gh-94": {
             "name": "Pergamino de Curación",
@@ -1928,12 +1930,12 @@ export default {
         "gh-95": {
             "name": "Pergamino de Resistencia",
             "source": "Objeto aleatorio",
-            "desc": "Durante tu turno, an ally within {RANGE} 5 may {RECOVER} up to two of their discarded cards"
+            "desc": "Durante tu turno, un aliado a {RANGE} 5 puede {RECOVER} hasta 2 de sus cartas descartadas."
         },
         "gh-96": {
             "name": "Botas Cohete",
             "source": "Recompensa de {SCENARIO 66} (Tesoro #36)",
-            "desc": "Durante tu movimiento, add +3 {MOVE} and {JUMP} to a single movement"
+            "desc": "Durante tu movimiento, añade {MOVE} +3 y {JUMP} a un único movimiento."
         },
         "gh-97": {
             "name": "Sandalias de Robustez",
@@ -1948,7 +1950,7 @@ export default {
         "gh-99": {
             "name": "Botas de Magma",
             "source": "Recompensa de {SCENARIO 63} (Tesoro #12)",
-            "desc": "Ignore the damaging effects of hazardous terrain and realiza una acción de “{HEAL} 2, Personal” on any turn in which you have entered a hazardous terrain hex."
+            "desc": "Ignora los efectos de daño del terreno peligroso y realiza una acción de “{HEAL} 2, Personal” en cualquier turno en el que hayas entrado en un hexágono de terreno peligroso."
         },
         "gh-100": {
             "name": "Túnica de Invocación",
@@ -1958,12 +1960,12 @@ export default {
         "gh-101": {
             "name": "Segunda Piel",
             "source": "Recompensa de {SCENARIO 06} (Tesoro #50)",
-            "desc": "Retira 2 cartas {MODIFIER_MINUS_ONE} from your attack modifier deck."
+            "desc": "Retira 2 {MODIFIER_MINUS_ONE} de tu mazo de Modificadores de ataque"
         },
         "gh-102": {
             "name": "Túnica de Sacrificio",
             "source": "Evento de ciudad 40",
-            "desc": "Durante tu ataque a distancia, suffer 3 damage para añadir {ATTACK} +1 a la acción de ataque entera."
+            "desc": "Durante tu ataque a distancia, sufre 3 de daño para añadir {ATTACK} +1 a la acción de ataque entera."
         },
         "gh-103": {
             "name": "Armadura de Escamas de Draco",
@@ -1973,49 +1975,49 @@ export default {
         "gh-104": {
             "name": "Armadura a Vapor",
             "source": "Recompensa de {SCENARIO 40} (Tesoro #47)",
-            "desc": "On the next five sources of damage from attacks targeting you, obtén {SHIELD} 1."
+            "desc": "Para las 5 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1."
         },
         "gh-105": {
             "name": "Mantón Pulgoso",
             "source": "Evento de ciudad 30",
-            "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
+            "desc": "Se considera que tienes Iniciativa 99 a efectos de atención de los enemigos.",
             "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
         },
         "gh-106": {
             "name": "Collar de Dientes",
             "source": "Evento de camino 05",
-            "desc": "Any time you kill an enemy during your turn, realiza una acción de “{HEAL} 1, Personal”."
+            "desc": "Siempre que mates a un enemigo durante tu turno, realiza una acción de “{HEAL} 1, Personal”."
         },
         "gh-107": {
             "name": "Yelmo con Cuernos",
             "source": "Recompensa de {SCENARIO 03} (Tesoro #65)",
-            "desc": "After moving 4 or more hexes on your turn, add +1 {ATTACK} to your next melee attack this turn.",
+            "desc": "Después de mover 4 hexágonos o más en tu turno, añade {ATTACK} +1 a tu siguiente ataque cuerpo a cuerpo de este turno.",
             "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
         },
         "gh-108": {
             "name": "Yelmo de Escamas de Draco",
             "source": "Recompensa de {SCENARIO 25} (Tesoro #58)",
-            "desc": "Whenever you gain {MUDDLE}, obtén {STRENGTHEN} instead."
+            "desc": "Cuando vayas a sufrir {MUDDLE}, obtén {STRENGTHEN} en su lugar."
         },
         "gh-109": {
             "name": "Capucha de Ladrón",
             "source": "Evento de ciudad 62",
-            "desc": "During your “Loot 1” ability, realiza una acción de “Loot 2” ability instead."
+            "desc": "Al realizar una capacidad de “{Loot} 1”, realiza un “{Loot} 2” en su lugar."
         },
         "gh-110": {
             "name": "Yelmo de la Montaña",
             "source": "Recompensa de {SCENARIO 82} (Tesoro #62)",
-            "desc": "Cuando te ataquen, if {EARTH} is Strong, Immobilize the attacker."
+            "desc": "Cuando te ataquen, si {EARTH} está en la columna Fuerte, el atacante sufre {IMMOBILIZE}."
         },
         "gh-111": {
             "name": "Collar de las Mareas",
             "source": "Recompensa de {SCENARIO 64} (Tesoro #09)",
-            "desc": "Cuando te ataquen, if {ICE} is Strong, realiza una acción de “{PUSH} 2” targeting the attacker."
+            "desc": "Cuando te ataquen, si {ICE} está en la columna Fuerte, realiza una acción de “{PUSH} 2” con el atacante como objetivo."
         },
         "gh-112": {
             "name": "Berbiquí Antigüo",
             "source": "Recompensa de {SCENARIO 65}\nOpción de {SCENARIO 100}",
-            "desc": "Durante tu ataque cuerpo a cuerpo, add +2 {ATTACK} and {PIERCE} 2 a la acción de ataque entera."
+            "desc": "Durante tu ataque cuerpo a cuerpo, añade {ATTACK} +2 y {PIERCE} 2 a la acción de ataque entera."
         },
         "gh-113": {
             "name": "Hacha Rompecráneos",
@@ -2025,38 +2027,38 @@ export default {
         "gh-114": {
             "name": "Báculo de Xorn",
             "source": "Recompensa de {SCENARIO 53}",
-            "desc": "Durante tu ataque a distancia, add {POISON} and {MUDDLE} a la acción de ataque entera."
+            "desc": "Durante tu ataque a distancia, añade {POISON} y {MUDDLE} a la acción de ataque entera."
         },
         "gh-115": {
             "name": "Martillo de la Montaña",
             "source": "Recompensa de {SCENARIO 82} (Tesoro #62)",
-            "desc": "Invocar Warrior Spirit",
+            "desc": "Invocar Espíritu Guerrero",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-116": {
             "name": "Alfanje de Combustión",
             "source": "Recompensa de {SCENARIO 23} (Tesoro #72)",
-            "desc": "During your single-target melee attack, the target and all enemies adjacent to the target suffer 1 damage"
+            "desc": "Durante un ataque cuerpo a cuerpo que tenga un único objetivo,el objetivo y todos los enemigos adyacentes a él sufren 1 de daño."
         },
         "gh-117": {
             "name": "Hacha Sanguinaria",
             "source": "Evento de ciudad 53\nEvento de camino 53",
-            "desc": "Durante tu ataque cuerpo a cuerpo, suffer 2 damage para añadir {ATTACK} +1 a la acción de ataque entera."
+            "desc": "Durante tu ataque cuerpo a cuerpo, sufre 2 de daño para añadir {ATTACK} +1 a tu acción de ataque entera."
         },
         "gh-118": {
             "name": "Báculo de los Elementos",
             "source": "Evento de ciudad 57",
-            "desc": "Durante tu turno, crea any element. {ANY}"
+            "desc": "Durante tu turno, crea cualquier elemento. {ANY}"
         },
         "gh-119": {
             "name": "Cráneo del Odio",
             "source": "Recompensa de {SCENARIO 95}",
-            "desc": "Durante tu turno, {CURSE} all adjacent enemies."
+            "desc": "Durante tu turno, inflinge {CURSE} a todos los enemigos adyacentes."
         },
         "gh-120": {
             "name": "Báculo de Invocación",
             "source": "Recompensa de {SCENARIO 88}",
-            "desc": "Durante tu turno, a summoned ally within {RANGE} 3 performs a “{MOVE} 3” action with you controlling the action."
+            "desc": "Durante tu turno, un aliado invocado a {RANGE} 3 realiza una acción de “{MOVE} 3” controlada por ti."
         },
         "gh-121": {
             "name": "Orbe del Alba",
@@ -2071,13 +2073,13 @@ export default {
         "gh-123": {
             "name": "Anillo de Cráneos",
             "source": "Recompensa de {SCENARIO 04} (Tesoro #38)",
-            "desc": "Invocar Skeleton",
+            "desc": "Invocar Esqueleto",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-124": {
             "name": "Brújula Maldita",
             "source": "Recompensa de {SCENARIO 93} (Tesoro #54)",
-            "desc": "Durante tu turno, force an enemy within {RANGE} 5 to perform a “{MOVE} 2” action with you controlling the action."
+            "desc": "Durante tu turno, obliga a un enemigo a {RANGE} 5 a realizar una acción de “{MOVE} 2” controlada por ti."
         },
         "gh-125": {
             "name": "Engranaje Enigmático",
@@ -2087,38 +2089,38 @@ export default {
         "gh-126": {
             "name": "Araña Mecánica",
             "source": "Evento de ciudad 43\nOpción de {SCENARIO 100}",
-            "desc": "Durante tu turno, {POISON} all adjacent enemies."
+            "desc": "Durante tu turno, inflinge {POISON} a todos los enemigos adyacentes."
         },
         "gh-127": {
             "name": "Araña Mecánica Gigante",
             "source": "Evento de ciudad 61",
-            "desc": "Durante tu turno, realiza una acción de “Loot 1”."
+            "desc": "Durante tu turno, realiza una acción de “{Loot} 1”."
         },
         "gh-128": {
             "name": "Incesario Negro",
             "source": "Recompensa de {SCENARIO 90}",
-            "desc": "Durante tu turno, Muddle all enemies with {RANGE} 2."
+            "desc": "Durante tu turno, inflinge {MUDDLE} a todos los enemigos a {RANGE} 2."
         },
         "gh-129": {
             "name": "Carta Negra",
             "source": "Evento de camino 51",
-            "desc": "Durante tu turno, place a character token on an adjacent normal or elite enemy. You add +1 {ATTACK} to all your attacks targeting this enemy."
+            "desc": "Durante tu turno, coloca una ficha de Personaje sobre un enemigo normal o de élite adyacente. Añade {ATTACK} +1 a todos tus ataques que tengan como objetivo este enemigo."
         },
         "gh-130": {
             "name": "Anillo Helicoidal",
             "source": "Recompensa de {SCENARIO 81} (Tesoro #68)",
-            "desc": "Durante tu turno, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Personal” action"
+            "desc": "Durante tu turno, {LIGHT_X} {DARK_X} para realizar una acción de “{HEAL} 25, Personal”."
         },
         "gh-131": {
             "name": "Corazón del Traidor",
             "source": "Recompensa de {SCENARIO 79} (Tesoro #52)",
-            "desc": "Cuando te ataquen by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
+            "desc": "Cuando te ataque un enemigo adyacente normal, obliga al enemigo a atacar a uno de sus aliados a su alcance en su lugar.",
             "faq": "This item cannot be used if there is no other enemy in range to be attacked."
         },
         "gh-132": {
             "name": "Núcleo de Energía",
             "source": "Recompensa de {SCENARIO 67}",
-            "desc": "Invocar Steel Construct.",
+            "desc": "Invocar Gólem de acero.",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-133": {
@@ -2129,48 +2131,48 @@ export default {
         "gh-134": {
             "name": "Hoja Imponente",
             "source": "Recompensa de escenario en solitario - {BR}",
-            "desc": "Any time you kill an enemy during your turn, obtén {SHIELD} 1 for the rest of the round."
+            "desc": "Siempre que mates a un enemigo durante tu turno, obtén {SHIELD} 1 para el resto de la ronda."
         },
         "gh-135": {
             "name": "Rayo Concentrador",
             "source": "Recompensa de escenario en solitario - {TI}",
-            "desc": "During your Heal action, double the value of the Heal."
+            "desc": "Durante tu acción de Curación, duplica el valor de la curación."
         },
         "gh-136": {
             "name": "Elixir Volátil",
             "source": "Recompensa de escenario en solitario - {SW}",
-            "desc": "Durante tu ataque a distancia, add +2 {ATTACK} and obtén Ventaja en la acción de ataque entera, but suffer 2 damage for each attack made."
+            "desc": "Durante tu ataque a distancia, añade {ATTACK} +2 y gana Ventaja en la acción de ataque entera, pero sufre 2 de daño por cada ataque realizado."
         },
         "gh-137": {
             "name": "Estilete Silencioso",
             "source": "Recompensa de escenario en solitario - {SC}",
-            "desc": "Any time you perform a melee attack, add {PIERCE} 1 to the Attack."
+            "desc": "Siempre que realices una acción de ataque cuerpo a cuerpo, añade {PIERCE} 1 al ataque."
         },
         "gh-138": {
             "name": "Amuleto de Piedra",
             "source": "Recompensa de escenario en solitario - {CH}",
-            "desc": "During your action where an obstacle is created, create one additional obstacle and apply all effects of the action to it."
+            "desc": "Durante una de tus acciones en las que crees un obstáculo, crea 1 obstáculo adicional y aplícale todos los efectos de la acción."
         },
         "gh-139": {
             "name": "Cuchillo Psíquico",
             "source": "Recompensa de escenario en solitario - {MT}",
-            "desc": "Any time you perform an Augment action, add +1 {ATTACK} to the entire action."
+            "desc": "Siempre que vayas a hacer una acción de Aumento, añade {ATTACK} +1 a la acción entera."
         },
         "gh-140": {
             "name": "Escudo del Sol",
             "source": "Recompensa de escenario en solitario - {SK}",
-            "desc": "Cuando sufras daño por un ataque, you may {LIGHT_X} to gain {SHIELD} 3 contra ese ataque."
+            "desc": "Cuando sufras daño por un ataque, puedes {LIGHT_X} para obtener {SHIELD} 3 contra ese ataque."
         },
         "gh-141": {
             "name": "Cinturón Multiusos",
             "source": "Recompensa de escenario en solitario - {QM}",
-            "desc": "Durante tu turno, you or any one ally may {REFRESH} one of your spent or consumed items.",
+            "desc": "Durante tu turno, tú o 1 de tus aliados podéis: {REFRESH} 1 de vuestros objetos gastados o consumidos.",
             "faq": "This item cannot be refreshed."
         },
         "gh-142": {
             "name": "Ídolo de Fase",
             "source": "Recompensa de escenario en solitario - {SU}",
-            "desc": "When a summon you own is damaged by an attack, it suffers no damage instead."
+            "desc": "Cuando una de tus invocaciones sufra daño por un ataque, en vez de eso no sufre daño."
         },
         "gh-143": {
             "name": "Elixir de Humo",
@@ -2180,37 +2182,37 @@ export default {
         "gh-144": {
             "name": "Colgante de la Plaga",
             "source": "Recompensa de escenario en solitario - {PH}",
-            "desc": "Durante tu turno, {POISON} and {CURSE} one enemy within {RANGE} 3."
+            "desc": "Durante tu turno, inflinge {POISON} y {CURSE} a 1 enemigo a {RANGE} 3."
         },
         "gh-145": {
             "name": "Máscara de la Muerte",
             "source": "Recompensa de escenario en solitario - {BE}",
-            "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {ATTACK} to the Attack."
+            "desc": "Siempre que realices un ataque cuerpo a cuerpo y tengas exactamente 1 punto de vida, añade {ATTACK} +2 al ataque."
         },
         "gh-146": {
             "name": "Laúd Magistral",
             "source": "Recompensa de escenario en solitario - {SS}",
-            "desc": "After performing any song action, immediately perform an Attack 2 or {MOVE} 2 action."
+            "desc": "Después de realizar una acción de Canción, realiza de inmediato una acción de {ATTACK} 2 o {MOVE} 2."
         },
         "gh-147": {
             "name": "Capa del Cazador",
             "source": "Recompensa de escenario en solitario - {DS}",
-            "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}."
+            "desc": "Siempre que realices una acción de Condena, inflinge {MUDDLE} al objetivo de la Condena."
         },
         "gh-148": {
             "name": "Bata del Doctor",
             "source": "Recompensa de escenario en solitario - {SB}",
-            "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal."
+            "desc": "Siempre que un aliado realice una acción de Equipo de curación o Equipo de curación superior, añade {HEAL} +1 a su curación."
         },
         "gh-149": {
             "name": "Botas Elementales",
             "source": "Recompensa de escenario en solitario - {EL}",
-            "desc": "If you move 5 or more hexes on your turn, create any element. {ANY}"
+            "desc": "Si te mueves 5 hexágonos o más en tu turno, crea cualquier elemento. {ANY}"
         },
         "gh-150": {
             "name": "Vara de Mando",
             "source": "Recompensa de escenario en solitario - {BT}",
-            "desc": "After performing a Command action, juega 1 carta de tu mano and immediately perform the same side of the card (top or bottom) as the Command action."
+            "desc": "Después de realizar una acción de Orden, juega 1 carta de tu mano y realiza de inmediato la misma mitad (superior o inferior) de esa carta que hayas realizado con la carta de la acción de Orden."
         },
         "gh-151": {
             "name": "Espada de las arenas",
@@ -2235,7 +2237,7 @@ export default {
         "gh-155": {
             "name": "Armadura antimaldiciones",
             "source": "Recompensa de {SCENARIO 108}",
-            "desc": "Eres inmune a {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} a tu mazo de modificadores de ataque."
+            "desc": "Eres inmune a {CURSE}, even if the item is spent. Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, gain {SHIELD} 1. Add 3 {-1} a tu mazo de modificadores de ataque."
         },
         "gh-156": {
             "name": "Claymore elemental",
@@ -2305,7 +2307,7 @@ export default {
         "jotl_5": {
             "name": "Weathered Boots",
             "source": "Recompensa de {SCENARIO 2}",
-            "desc": "Durante tu movimiento, add +1 {MOVE} to a single movement."
+            "desc": "Durante tu movimiento, añade {MOVE} +1 a un único movimiento."
         },
         "jotl_6": {
             "name": "Winged Shoes",
@@ -2331,7 +2333,7 @@ export default {
         "jotl_10": {
             "name": "Iron Spear",
             "source": "Recompensa de {SCENARIO 2}",
-            "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes"
+            "desc": "Durante un ataque cuerpo a cuerpo que tenga un único objetivo, attack any one enemy wihin 2 hexes"
         },
         "jotl_11": {
             "name": "Healing Potion",
@@ -2396,7 +2398,7 @@ export default {
         "jotl_23": {
             "name": "Boots of Striding",
             "source": "Recompensa de {SCENARIO 15}",
-            "desc": "Durante tu movimiento, add +2 {MOVE} to a single movement."
+            "desc": "Durante tu movimiento, añade {MOVE} +2 a un único movimiento."
         },
         "jotl_24": {
             "name": "Volatile Bomb",
@@ -2462,7 +2464,7 @@ export default {
         "jotl_36": {
             "name": "Jet Boots",
             "source": "Recompensa de {SCENARIO 25}",
-            "desc": "Durante tu movimiento, add “+1 {MOVE} and {JUMP}” to a single movement."
+            "desc": "Durante tu movimiento, añade “{MOVE} +1 y {JUMP}” a un único movimiento."
         }
     },
     "treasures": {
