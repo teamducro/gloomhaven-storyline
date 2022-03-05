@@ -2719,7 +2719,7 @@ export default {
             "name": "Gain 30 gold"
         },
         "gh-49": {
-            "name": "New Scenario: Lost Island (Scenario 17 at K-17)"
+            "name": "New Scenario: {SCENARIO 17}",
         },
         "gh-50": {
             "name": "Gain “Second Skin” (Item 101)"

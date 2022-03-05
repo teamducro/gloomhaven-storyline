@@ -2622,7 +2622,7 @@ export default {
             "name": "Obtén 30 de oro"
         },
         "gh-49": {
-            "name": "Nuevo escenario: Isla perdida {SCENARIO 17} (K-17)"
+            "name": "Nuevo escenario: {SCENARIO 17}"
         },
         "gh-50": {
             "name": "Obtén “Segunda piel” (Objeto 101)"
