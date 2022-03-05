@@ -10,6 +10,8 @@ export default {
     "Open source": "Open source",
     "Info": "Info",
     "Settings": "Settings",
+    "Clear filter": "Clear filter",
+    "Missed Treasures": "Missed Treasures",
     "transfer": {
         "title": "Transfer campaign data",
         "text": "Copy campaign data between campaigns can be done easily.",
@@ -104,6 +106,11 @@ export default {
     "Conclusion": "Conclusion",
     "Gained from": "Gained from",
     "Required by": "Required by",
+    "hidden": "hidden",
+    "incomplete": "incomplete",
+    "complete": "complete",
+    "blocked": "blocked",
+    "required": "required",
     "Complete": "Complete",
     "Completed": "Completed",
     "Incomplete": "Incomplete",
@@ -272,6 +279,10 @@ export default {
     "REGENERATE": "REGENERATE",
     "DISARM": "DISARM",
     "TARGET": "TARGET",
+    "LOOT": "LOOT",
+    "Teleport": "Teleport",
+    "Doom": "Doom",
+    "Loot": "Loot",
     "Intro": "Intro",
     "The Merchant": "The Merchant",
     "Demon and Rift": "Demon and Rift",
@@ -2098,7 +2109,7 @@ export default {
         "gh-109": {
             "name": "Thief's Hood",
             "source": "City Event 62",
-            "desc": "During your “Loot 1” ability, perform a “Loot 2” ability instead."
+            "desc": "During your {LOOT 1} ability, perform a {LOOT 2} ability instead."
         },
         "gh-110": {
             "name": "Helm of the Mountain",
@@ -2190,7 +2201,7 @@ export default {
         "gh-127": {
             "name": "Giant Remote Spider",
             "source": "City Event 61",
-            "desc": "During your turn, perform a “Loot 1” action."
+            "desc": "During your turn, perform a {LOOT 1} action."
         },
         "gh-128": {
             "name": "Black Censer",
@@ -2293,7 +2304,7 @@ export default {
         "gh-147": {
             "name": "Cloak of the Hunter",
             "source": "Reward from Solo Scenario - {DS}",
-            "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}."
+            "desc": "Any time you perform a {DOOM} action, {MUDDLE} the target of the {DOOM}."
         },
         "gh-148": {
             "name": "Doctor's Coat",
@@ -2368,7 +2379,7 @@ export default {
         "gh-162": {
             "name": "Rift Device",
             "source": "Reward from {SCENARIO 112}\nSection 62 “Mechanical Splendor” in book.",
-            "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you.",
+            "desc": "During your turn, {TELEPORT} to any unoccupied hex within 4 hexes of you.",
         },
         "gh-163": {
             "name": "Crystal Tiara",
@@ -3245,7 +3256,7 @@ export default {
                 "Replace one {+0_WHITE} card with one {+2_WHITE} card",
                 "Add two {AGAIN} {+1_WHITE} cards",
                 "Add two {AGAIN} {HEAL}1 cards",
-                "Add two {AGAIN} {STUN} card",
+                "Add one {AGAIN} {STUN} card",
                 "Add two {AGAIN} {LIGHT} cards",
                 "Add two {AGAIN} {SHIELD}1, Self cards",
                 "Ignore negative item effects and add two {+1_WHITE} cards",

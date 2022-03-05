@@ -159,7 +159,7 @@ describe('Party', () => {
 
     it('it unlocks envelope X', () => {
         cy.visit('/tracker/#/party');
-        utilities.scrollTo('100%');
+        utilities.scrollTo('100%', true);
         cy.get('li.order-17 g[fill="#D39382"]').should('not.exist');
         cy.get('input#unlock8').click();
         utilities.scrollTo('100%');

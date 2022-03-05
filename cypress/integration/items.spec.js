@@ -66,7 +66,6 @@ describe('Items', () => {
         cy.get('a').contains('Ring of Skulls').click();
         cy.get('h2').contains('#123');
         utilities.closeModel();
-        utilities.closeModel();
 
         // The item is unlocked
         cy.visit('/tracker/#/items');
@@ -79,9 +78,9 @@ describe('Items', () => {
         cy.get('a').contains('Ring of Skulls').should('not.exist');
         utilities.closeModel();
 
-        // The item is locked
+        // The item should still be unlocked
         cy.visit('/tracker/#/items');
-        cy.get('#items').contains('Ring of Skulls').should('not.exist');
+        cy.get('#items').contains('Ring of Skulls');
     });
 
     it('It unlocks items from rewards', () => {
@@ -101,7 +100,7 @@ describe('Items', () => {
         cy.visit('/tracker/#/items');
         cy.get('#items').contains('Staff of Xorn');
 
-        // Incomplete scenar`io
+        // Incomplete scenario
         cy.visit('/tracker/#/story');
         utilities.openScenario(53);
         cy.get('#scenario-content label').contains('Incomplete').click();
