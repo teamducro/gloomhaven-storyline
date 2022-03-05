@@ -2575,226 +2575,226 @@ export default {
     },
     "treasures": {
         "gh-1": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-2": {
-            "name": "Gain “Tower Shield” (Item 032)"
+            "name": "“Pavois” (Objet 032)"
         },
         "gh-3": {
-            "name": "Gain “Splintmail” (Item 044)"
+            "name": "“Armure à éclisses” (Objet 044)"
         },
         "gh-4": {
-            "name": "Gain 15 Gold"
+            "name": "15 pièces d'or"
         },
         "gh-5": {
-            "name": "Gain “Chainmail” (Item 023)"
+            "name": "“Cotte de Maille” (Objet 023)"
         },
         "gh-6": {
-            "name": "Gain “Hooked Chain” (Item 039)"
+            "name": "“Chaine à Crochet” (Objet 039)"
         },
         "gh-7": {
-            "name": "Random Side Scenario"
+            "name": "Scénario Annexe aléatoire"
         },
         "gh-8": {
-            "name": "Gain 1 ✔"
+            "name": "1 ✔"
         },
         "gh-9": {
-            "name": "Gain “Wave Crest” (Item 111)"
+            "name": "“Crete des Vagues” (Objet 111)"
         },
         "gh-10": {
-            "name": "Gain 10 Experience"
+            "name": "10 XP"
         },
         "gh-11": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-12": {
-            "name": "Gain “Magma Waders” (Item 099)"
+            "name": "“Cuissardes de Magma” (Objet 099)"
         },
         "gh-13": {
-            "name": "Suffer 5 Damage and gain {POISON} and {WOUND}"
+            "name": "Subissez 5 dégats,{POISON} et {WOUND}"
         },
         "gh-14": {
-            "name": "Gain 10 Experience"
+            "name": "10 XP"
         },
         "gh-15": {
-            "name": "Gain “Pendant of Dark Pacts” (Item 045)"
+            "name": "“Pendentif des Pactes Obscurs” (Objet 045)"
         },
         "gh-16": {
-            "name": "Gain 10 gold"
+            "name": "10 pièces d'or"
         },
         "gh-17": {
-            "name": "Gain 20 Gold"
+            "name": "20 pièces d'or"
         },
         "gh-18": {
-            "name": "Gain 15 gold"
+            "name": "15 pièces d'or"
         },
         "gh-19": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-20": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-21": {
-            "name": "Suffer 5 Damage"
+            "name": "Subissez 5 dégats"
         },
         "gh-22": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-23": {
-            "name": "Gain “Drakescale Armor” (Item 103)"
+            "name": "“Armure d'écailles de Wyverne” (Objet 103)"
         },
         "gh-24": {
-            "name": "Suffer 5 damage"
+            "name": "Subissez 5 dégats"
         },
         "gh-25": {
-            "name": "Gain 25 gold"
+            "name": "25 pièces d'or"
         },
         "gh-26": {
-            "name": "Gain 20 Gold"
+            "name": "20 pièces d'or"
         },
         "gh-27": {
-            "name": "Gain “Orb of Twilight” (Item 122)"
+            "name": "“Orbe du Crépuscule” (Objet 122)"
         },
         "gh-28": {
-            "name": "Gain 15 Gold"
+            "name": "15 pièces d'or"
         },
         "gh-29": {
-            "name": "Gain “Endurance Footwraps” (Item 097)"
+            "name": "“Guetres d'Endurance” (Objet 097)"
         },
         "gh-30": {
-            "name": "Gain 1 ✔"
+            "name": "1 ✔"
         },
         "gh-31": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-32": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-33": {
-            "name": "Gain “Weighted Net” (Item 019)"
+            "name": "“Filet lesté” (Objet 019)"
         },
         "gh-34": {
-            "name": "Gain “Amulet of Life” (Item 024)"
+            "name": "“Amulette de Vie” (Objet 024)"
         },
         "gh-35": {
-            "name": "Gain “Drakescale Boots” (Item 098)"
+            "name": "“Bottes d'écailles de Wyverne” (Objet 098)"
         },
         "gh-36": {
-            "name": "“Rocket Boots” design (Item 096)"
+            "name": "Modèle d'objet de “Bottes Fusée” (Objet 096)"
         },
         "gh-37": {
-            "name": "Gain 1 ✔"
+            "name": "1 ✔"
         },
         "gh-38": {
-            "name": "“Ring of Skulls” design (Item 123)"
+            "name": "Modèle d'objet de l'“Anneau de Cranes” (Objet 123)"
         },
         "gh-39": {
-            "name": "Suffer 5 damage"
+            "name": "Subissez 5 dégats"
         },
         "gh-40": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-41": {
-            "name": "Gain “Black Knife” (Item 053)"
+            "name": "“Couteau Noir” (Objet 053)"
         },
         "gh-42": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-43": {
-            "name": "Suffer 5 damage gain {POISON} and {WOUND}"
+            "name": "Subissez 5 dégats {POISON} et {WOUND}"
         },
         "gh-44": {
-            "name": "Random Side Scenario"
+            "name": "Scénario Annexe aléatoire"
         },
         "gh-45": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-46": {
-            "name": "Suffer 3 damage and gain {POISON}"
+            "name": "Subissez 3 dégats et {POISON}"
         },
         "gh-47": {
-            "name": "Gain “Steam Armor” (Item 104)"
+            "name": "“Armure à Vapeur” (Objet 104)"
         },
         "gh-48": {
-            "name": "Gain 30 gold"
+            "name": "30 pièces d'or"
         },
         "gh-49": {
-            "name": "New Scenario: Lost Island (Scenario 17 at K-17)"
+            "name": "Nouveau scénario: {SCENARIO 17}"
         },
         "gh-50": {
-            "name": "Gain “Second Skin” (Item 101)"
+            "name": "“Deuxieme Peau” (Objet 101)"
         },
         "gh-51": {
-            "name": "Random Side Scenario"
+            "name": "Scénario Annexe aléatoire"
         },
         "gh-52": {
-            "name": "Gain “Heart of the Betrayer” (Item 131)"
+            "name": "“Coeur de Traitre” (Objet 131)"
         },
         "gh-53": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-54": {
-            "name": "Gain “Doomed Compass” (Item 124)"
+            "name": "“Compas Maudit” (Objet 124)"
         },
         "gh-55": {
-            "name": "Gain 1 ✔"
+            "name": "1 ✔"
         },
         "gh-56": {
-            "name": "Gain “Star Earring” (Item 069)"
+            "name": "“Boucle d'oreille étoilée” (Objet 069)"
         },
         "gh-57": {
-            "name": "Gain 15 gold"
+            "name": "15 pièces d'or"
         },
         "gh-58": {
-            "name": "Gain “Drakescale Helm” (Item 108)"
+            "name": "“Heaume d'écailles de Wyverne” (Objet 108)"
         },
         "gh-59": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-60": {
-            "name": "Gain “Skullbane Axe” (Item 113)"
+            "name": "“Hache Fléau des Crane” (Objet 113)"
         },
         "gh-61": {
-            "name": "Gain “Versatile Dagger” (Item 040)"
+            "name": "“Dague Providentielle” (Objet 040)"
         },
         "gh-62": {
-            "name": "Gain “Helm of the Mountain” (Item 110) and “Mountain Hammer” (Item 115)"
+            "name": "“Heaume de la Montagne” (Objet 110) et “Marteau de la Montagne” (Objet 115)"
         },
         "gh-63": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-64": {
-            "name": "Gain 30 gold"
+            "name": "30 pièces d'or"
         },
         "gh-65": {
-            "name": "“Horned Helm” design (Item 107)"
+            "name": "Modèle d'objet du “Casque à Cornes” (Objet 107)"
         },
         "gh-66": {
-            "name": "Gain “Volatile Bomb” (Item 033)"
+            "name": "“Bombe Explosive” (Objet 033)"
         },
         "gh-67": {
-            "name": "Gain 10 Gold"
+            "name": "10 pièces d'or"
         },
         "gh-68": {
-            "name": "Gain “Helix Ring” (Item 130)"
+            "name": "“Anneau Spiralé” (Objet 130)"
         },
         "gh-69": {
-            "name": "Gain “Robes of Summoning” (Item 100)"
+            "name": "“Robes d'Invocation” (Objet 100)"
         },
         "gh-70": {
-            "name": "Random Side Scenario"
+            "name": "Scénario Annexe aléatoire"
         },
         "gh-71": {
-            "name": "Random Side Scenario"
+            "name": "Scénario Annexe aléatoire"
         },
         "gh-72": {
-            "name": "“Fueled Falchion” design (Item 116)"
+            "name": "Modèle d'objet de “Fauchon Attisé” (Objet 116)"
         },
         "gh-73": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-74": {
-            "name": "Random Item Design"
+            "name": "Modèle d'objet aléatoire"
         },
         "gh-75": {
             "name": "Cryptogram Found (See scenario book page 121)"
@@ -2914,146 +2914,146 @@ export default {
     "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
     "personal_quests": {
         "gh-510": {
-            "name": "Seeker of Xorn",
+            "name": "Novice de Xorn",
             "progress": [
-                "Complete three Crypt scenarios.",
-                "Conclude {SCENARIO 52}."
+                "Accomplissez trois scénarios Crypte.",
+                "Finissez {SCENARIO 52}.",
             ]
         },
         "gh-511": {
-            "name": "Merchant Class",
+            "name": "Classe Marchande",
             "progress": [
-                "Own two {BODY} items.",
-                "Own two {HEAD} items.",
-                "Own two {LEGS} items.",
-                "Own three {ONE-HAND} or {TWO-HANDS} items.",
-                "Own four {SMALL-ITEM} items."
+                "Possédez deux objets {BODY}.",
+                "Possédez deux objets{HEAD}.",
+                "Possédez deux objets{LEGS}.",
+                "Possédez trois objets {ONE-HAND} or {TWO-HANDS}.",
+                "Possédez quatre objets {SMALL-ITEM}.",
             ]
         },
         "gh-512": {
-            "name": "Greed is Good",
+            "name": "Le Pouvoir de l'Avarice",
             "progress": [
-                "Have 200 gold in your possession."
+                "Possédez 200 pièces d'or.",
             ]
         },
         "gh-513": {
-            "name": "Finding the Cure",
-            "unlock": "Open envelope X",
+            "name": "Trouver le Reméde",
+            "unlock": "Ouvrez l'enveloppe X",
             "progress": [
-                "Kill eight Forest Imps.",
-                "Conclude {SCENARIO 59}."
+                "Eliminez huit Diablotins des Forets",
+                "Finissez {SCENARIO 59}.",
             ]
         },
         "gh-514": {
-            "name": "A Study of Anatomy",
+            "name": "Etude Anatomique",
             "progress": [
-                "Experience your party members becoming exhausted fifteen times."
+                "Voyez les membres de votre compagnie devenir épuisés douze fois.",
             ]
         },
         "gh-515": {
-            "name": "Law Bringer",
+            "name": "Soldat de la Loi",
             "progress": [
-                "Kill twenty Bandits or Cultists."
+                "Eliminez vingt Bandits et/ou Cultistes.",
             ]
         },
         "gh-516": {
-            "name": "Pounds of Flesh",
+            "name": "Une Livre de Chair",
             "progress": [
-                "Kill fifteen Vermlings."
+                "Eliminez quinze Vermlings.",
             ]
         },
         "gh-517": {
-            "name": "Trophy Hunt",
+            "name": "Chasseur de Trophées",
             "progress": [
-                "Kill twenty different types of monsters."
+                "Eliminez vingt types différents de monstres.",
             ]
         },
         "gh-518": {
-            "name": "Eternal Wanderer",
+            "name": "Voyageur Eternel",
             "progress": [
-                "Complete fifteen different scenarios."
+                "Accomplissez 15 scénarios différents.",
             ]
         },
         "gh-519": {
-            "name": "Battle Legend",
+            "name": "Guerrier Légendaire",
             "progress": [
-                "Earn fifteen ✔ from completed battle goals."
+                "Gagnez quinze ✔ grace à des objectifs de bataille réussis.",
             ]
         },
         "gh-520": {
-            "name": "Implement of Light",
+            "name": "Etre de Lumière",
             "progress": [
-                "Find the Skullbane Axe in the Necromancer's Sanctum.",
-                "Use it to kill seven Living Bones, Living Corpses, or Living Spirits."
+                "Trouvez la Hache Fléau des Cranes dans le sanctuaire de la Nécromancienne.",
+                "Utilisez-la pour éliminer sept Réanimés (Squellettes, Cadavres ou Esprits).",
             ]
         },
         "gh-521": {
-            "name": "Take Back the Trees",
+            "name": "Reprendre la foret",
             "progress": [
-                "Complete three scenarios in the Dagger Forest.",
-                "Conclude {SCENARIO 55}."
+                "Accomplissez trois scénarios dans la foret des Dagues.",
+                "Finissez {SCENARIO 55}.",
             ]
         },
         "gh-522": {
-            "name": "The Thin Places",
+            "name": "Les lieux Oppressants",
             "progress": [
-                "Complete six side scenarios."
+                "Accomplissez six scénarios annexes (dont le numéro est supérieur à 51).",
             ]
         },
         "gh-523": {
-            "name": "Aberrant Slayer",
+            "name": "Tueur d'aberrations",
             "progress": [
-                "Kill one Flame Demon.",
-                "Kill one Frost Demon.",
-                "Kill one Wind Demon.",
-                "Kill one Earth Demon.",
-                "Kill one Night Demon.",
-                "Kill one Sun Demon."
+                "Eliminez un Démon de Flamme.",
+                "Eliminez un Démon de Givre.",
+                "Eliminez un Démon du Vent.",
+                "Eliminez un Démon de Terre.",
+                "Eliminez un Démon de la Nuit.",
+                "Eliminez un Démon du Soleil.",
             ]
         },
         "gh-524": {
-            "name": "Fearless Stand",
+            "name": "Rempart des Opprimés",
             "progress": [
-                "Kill twenty elite monsters."
+                "Eliminez vingt monstres d'élite.",
             ]
         },
         "gh-525": {
-            "name": "Piety in All Things",
+            "name": "La piété en Toutes Choses",
             "progress": [
-                "Donate 120 gold to the Sanctuary of the Great Oak."
+                "Donnez 120 Pièces d'or au Sanctuaire du Grand Chene.",
             ]
         },
         "gh-526": {
             "name": "Vengeance",
-            "unlock": "Open Envelope X",
+            "unlock": "Ouvrez l'enveloppe X",
             "progress": [
-                "Complete four scenarios in Gloomhaven.",
-                "Conclude {SCENARIO 57}."
+                "Accomplissez quatre scénarios dans Havrenuit.",
+                "Finissez {SCENARIO 57}.",
             ]
         },
         "gh-527": {
             "name": "Zealot of the Blood God",
             "progress": [
-                "Become exhausted twelve times."
+                "Become exhausted twelve times.",
             ]
         },
         "gh-528": {
-            "name": "Goliath Toppler",
+            "name": "Graine de Héros",
             "progress": [
-                "Complete four boss scenarios"
+                "Accomplissez quatre scénarios avec un boss",
             ]
         },
         "gh-529": {
             "name": "The Fall of Man",
             "progress": [
                 "Complete 2 Lingering Swamp scenarios.",
-                "Conclude {SCENARIO 61}."
+                "Conclude {SCENARIO 61}.",
             ]
         },
         "gh-530": {
-            "name": "Augmented Abilities",
+            "name": "Capacités Amplifiées",
             "progress": [
-                "Purchase four enhancements."
+                "Achetez quatre améliorations.",
             ]
         },
         "gh-531": {
@@ -3064,13 +3064,13 @@ export default {
                 "Complete a scenario in Lingering Swamp",
                 "Complete a scenario in Watcher Mountains",
                 "Complete a scenario in Copperneck Mountains",
-                "Complete a scenario in Misty Sea."
+                "Complete a scenario in Misty Sea.",
             ]
         },
         "gh-532": {
-            "name": "A Helping Hand",
+            "name": "Une Main Tendue",
             "progress": [
-                "Experience two other characters achieving their personal quests."
+                "Soyez témoin de l'accomplissement de la quete personnelle de deux autres personnages.",
             ]
         },
         "gh-533": {
@@ -3078,7 +3078,7 @@ export default {
             "progress": [
                 "Kill three Oozes.",
                 "Kill three Lurkers.",
-                "Kill three Spitting Drakes."
+                "Kill three Spitting Drakes.",
             ]
         }
     },
