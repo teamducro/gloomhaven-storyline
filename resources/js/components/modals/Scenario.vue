@@ -51,6 +51,7 @@
                                       :animate="true"
                                       :alt="$t(scenario.name)"/>
                                 <character-icon v-if="scenario.solo" class="inline-block"
+                                                :key="scenario.id+scenario.solo"
                                                 :character="scenario.solo"/>
                             </div>
                         </div>

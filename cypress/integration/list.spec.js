@@ -9,7 +9,7 @@ describe('Scenario list', () => {
             cy.contains('#1 Black Barrow');
         });
 
-        utilities.assertTableCount('scenarios', 95);
+        utilities.assertTableCount('scenarios', 113);
     });
 
     it('It opens a scenario', () => {
@@ -36,7 +36,7 @@ describe('Scenario list', () => {
             cy.contains('#1 Black Barrow').should('not.be.visible');
         });
 
-        utilities.assertTableCount('scenarios', 1);
+        utilities.assertTableCount('scenarios', 7);
     });
 
     it('It filters on mist treasures', () => {
@@ -80,17 +80,29 @@ describe('Scenario list', () => {
     it('Only show scenarios from selected game', () => {
         cy.visit('/tracker/#/scenarios');
 
-        utilities.assertTableCount('scenarios', 95);
+        utilities.assertTableCount('scenarios', 113);
 
         utilities.switchGame('fc');
         cy.visit('/tracker/#/scenarios');
 
-        utilities.assertTableCount('scenarios', 21);
+        utilities.assertTableCount('scenarios', 22);
 
         utilities.switchGame('jotl');
         cy.visit('/tracker/#/scenarios');
 
         utilities.assertTableCount('scenarios', 25);
+    });
+
+    it('It filters solo scenarios', () => {
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('button').contains('filter_list').click();
+        cy.get('span').contains('Solo').click();
+        utilities.closeModel();
+
+        cy.get('#scenarios').contains('#1 ').should('not.be.visible');
+
+        cy.get('#scenarios').contains('Return to the Black Barrow').should('be.visible');
     });
 
 });

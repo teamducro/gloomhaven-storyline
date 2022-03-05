@@ -139,6 +139,17 @@ describe('Character', () => {
         cy.get('p').contains('Unlocked');
     });
 
+    it('It can open solo scenario', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+        utilities.scrollTo('60%');
+        cy.get('span').contains('Stone Defense').click();
+
+        cy.get('#scenario-content label').contains('Complete').click();
+        utilities.closeModel();
+    });
+
     it('It can draw a random personal quest', () => {
         cy.visit('/tracker/#/characters');
 

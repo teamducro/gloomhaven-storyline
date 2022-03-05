@@ -48,7 +48,7 @@ export default class ScenarioValidator {
                 this.needsValidating = true;
             }
         } else {
-            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked && (scenario.solo && this.sheet.characterUnlocks[scenario.solo] === false)) {
+            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked && (!scenario.solo || (scenario.solo && this.sheet.characterUnlocks[scenario.solo] === false))) {
                 this.scenarioRepository.setHidden(scenario);
                 this.needsValidating = true;
             }
