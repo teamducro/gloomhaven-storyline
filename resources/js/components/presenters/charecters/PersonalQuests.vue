@@ -75,7 +75,7 @@
 
 <script>
 import PersonalQuestRepository from "../../../repositories/PersonalQuestRepository";
-import PersonalQuestValidator from "../../../services/PersonalQuestValidator";
+import PersonalQuestValidator from "../../../validators/PersonalQuestValidator";
 import Helpers from "../../../services/Helpers";
 
 export default {

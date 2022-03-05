@@ -125,7 +125,7 @@ export default {
     },
 
     closeModel() {
-        cy.get('body').click('left', {force: true});
+        cy.get('button').contains('close').click({force: true});
     },
 
     isTracker() {
