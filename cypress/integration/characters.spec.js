@@ -135,6 +135,8 @@ describe('Character', () => {
         cy.get('#pq-0-2').click();
         cy.get('span').contains('Conclude 52 Noxious Cellar');
         cy.get('span').contains('Conclude Hidden Scenario').should('not.exist');
+        cy.get('#pq-0-2').click();
+        cy.get('#pq-0-2').click();
         cy.get('#pq-1-0').click();
         cy.get('p').contains('Unlocked');
     });
