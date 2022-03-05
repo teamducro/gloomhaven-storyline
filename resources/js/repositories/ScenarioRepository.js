@@ -23,6 +23,10 @@ export default class ScenarioRepository {
             scenario = this.find(scenario);
         }
 
+        if (!scenario) {
+            return;
+        }
+
         const previousState = scenario.state;
         scenario.state = state;
 

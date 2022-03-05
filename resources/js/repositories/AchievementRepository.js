@@ -19,6 +19,10 @@ export default class AchievementRepository {
     gain(id) {
         let achievement = this.find(id);
 
+        if (!achievement) {
+            return;
+        }
+
         // An achievement can require an other achievement
         if (achievement.requirement) {
             let fulfilledRequirements = app.achievements
@@ -74,6 +78,10 @@ export default class AchievementRepository {
     remove(id) {
         let achievement = this.find(id);
 
+        if (!achievement) {
+            return;
+        }
+
         // Gain the last achievement from the group because the current is lost.
         if (achievement.group) {
             let group = new AchievementGroup(achievement.group);
@@ -97,7 +105,7 @@ export default class AchievementRepository {
 
     lose(id) {
         const achievement = this.find(id);
-        achievement.lose();
+        achievement?.lose();
     }
 
     find(id) {
