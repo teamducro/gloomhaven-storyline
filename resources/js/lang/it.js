@@ -298,6 +298,7 @@ export default {
     "Atop Mountains": "Sulle Montagne",
     "Dragons": "Draghi",
     "Voice": "La Voce",
+    "Solo": "Solo",
     "Solo Scenarios": "Solo Scenarios",
     "Personal Quests": "Missioni personali",
     "Personal Quest": "Personal Quest",

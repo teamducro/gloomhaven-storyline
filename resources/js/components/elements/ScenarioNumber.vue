@@ -1,11 +1,11 @@
 <template>
-    <span>
+    <span class="cursor-pointer inline-flex" @click="open(scenario.id)">
         <button type="button" v-if="scenario.isVisible()"
-                @click="open(scenario.id)"
                 :class="classes">
-            {{ scenario.id }}
+            <character-icon class="hover:cursor-pointer" v-if="scenario.solo" :character="scenario.solo"/>
+            <span v-else>{{ scenario.id }}</span>
         </button>
-        <span v-if="showName">{{ $t(scenario.name) }}</span>
+        <span class="ml-2" v-if="showName">{{ $t(scenario.name) }}</span>
     </span>
 </template>
 
