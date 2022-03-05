@@ -14,7 +14,7 @@
                 <ul class="mdc-list overflow-y-auto" style="max-height: calc(100vh - 100px)"
                     ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
                     <li class="mdc-list-item cursor-pointer" @click="resetFilter(true)">
-                        <span class="mdc-list-item__text">Clear filter</span>
+                        <span class="mdc-list-item__text">{{ $t('Clear filter') }}</span>
                     </li>
 
                     <li role="separator" class="mdc-list-divider !my-2"></li>
@@ -23,12 +23,12 @@
                         class="mdc-list-item cursor-pointer"
                         :class="{'mdc-list-item--activated': stateFilter === state}"
                         @click="setStateFilter(state)">
-                        <span class="mdc-list-item__text capitalize">{{ state }}</span>
+                        <span class="mdc-list-item__text capitalize">{{ $t(state) }}</span>
                     </li>
                     <li class="mdc-list-item cursor-pointer"
                         :class="{'mdc-list-item--activated': missedTreasuresFilter}"
                         @click="setMissedTreasuresFilter">
-                        <span class="mdc-list-item__text">Missed Treasures</span>
+                        <span class="mdc-list-item__text">{{ $t('Missed Treasures') }}</span>
                     </li>
 
                     <li v-if="regions.length" role="separator" class="mdc-list-divider !my-2"></li>
@@ -38,7 +38,7 @@
                         class="mdc-list-item cursor-pointer"
                         :class="{'mdc-list-item--activated': regionFilter.includes(region.id)}"
                         @click="toggleRegionFilter(region.id)">
-                        <span class="mdc-list-item__text">{{ region.name }}</span>
+                        <span class="mdc-list-item__text">{{ $t(region.name) }}</span>
                     </li>
                 </ul>
             </dropdown>

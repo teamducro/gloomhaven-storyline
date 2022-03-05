@@ -1,10 +1,10 @@
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import AchievementRepository from "../repositories/AchievementRepository";
 import {ScenarioState} from "../models/ScenarioState";
-import QuestValidator from "./QuestValidator";
-import ChoiceService from "./ChoiceService";
+import QuestValidator from "../services/QuestValidator";
+import ChoiceService from "../services/ChoiceService";
 import AchievementValidator from "./AchievementValidator";
-import StorySyncer from "./StorySyncer";
+import StorySyncer from "../services/StorySyncer";
 
 export default class ScenarioValidator {
 

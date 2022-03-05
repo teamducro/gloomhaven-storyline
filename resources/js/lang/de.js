@@ -10,6 +10,8 @@ export default {
     "Open source": "Open source",
     "Info": "Info",
     "Settings": "Einstellungen",
+    "Clear filter": "Filter löschen",
+    "Missed Treasures": "Verpasste Schätze",
     "transfer": {
         "title": "Transfer campaign data",
         "text": "Copy campaign data between campaigns can be done easily.",
@@ -104,6 +106,11 @@ export default {
     "Conclusion": "Epilog",
     "Gained from": "Erhalten von",
     "Required by": "Benötigt für",
+    "hidden": "verstecktes",
+    "incomplete": "offen",
+    "complete": "abgeschlossen",
+    "blocked": "gesperrt",
+    "required": "benötigt",
     "Complete": "Abgeschlossen",
     "Completed": "Abgeschlossen",
     "Incomplete": "Offen",
@@ -272,6 +279,10 @@ export default {
     "REGENERATE": "RGENERIEREN",
     "DISARM": "ENTWAFFNEN",
     "TARGET": "ZIEL",
+    "LOOT": "LOOT",
+    "TELEPORT": "TELEPORT",
+    "Doom": "Doom",
+    "Loot": "Loot",
     "Intro": "Einleitung",
     "The Merchant": "Die Händlerin",
     "Demon and Rift": "Dämonen und Risse",
@@ -1995,7 +2006,7 @@ export default {
         "gh-109": {
             "name": "Diebesgugel",
             "source": "City Event 62",
-            "desc": "During your “Loot 1” ability, perform a “Loot 2” ability instead."
+            "desc": "During your {LOOT 1} ability, perform a {LOOT 2} ability instead."
         },
         "gh-110": {
             "name": "Helm der Berge",
@@ -2087,7 +2098,7 @@ export default {
         "gh-127": {
             "name": "Mechanische Riesenspinne",
             "source": "City Event 61",
-            "desc": "During your turn, perform a “Loot 1” action."
+            "desc": "During your turn, perform a {LOOT 1} action."
         },
         "gh-128": {
             "name": "Schwarzes Rauchfass",
@@ -2190,7 +2201,7 @@ export default {
         "gh-147": {
             "name": "Mantel des Jägers",
             "source": "Reward from Solo Scenario - {DS}",
-            "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}."
+            "desc": "Any time you perform a {DOOM} action, {MUDDLE} the target of the {DOOM}."
         },
         "gh-148": {
             "name": "Arztkittel",
@@ -2265,7 +2276,7 @@ export default {
         "gh-162": {
             "name": "Riss-Apparat",
             "source": "Reward from {SCENARIO 112}\nSection 62 “Mechanical Splendor” in book.",
-            "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you."
+            "desc": "During your turn, {TELEPORT} to any unoccupied hex within 4 hexes of you."
         },
         "gh-163": {
             "name": "Kristalldiadem",
@@ -3139,7 +3150,7 @@ export default {
                 "Replace one {+0_WHITE} card with one {+2_WHITE} card",
                 "Add two {AGAIN} {+1_WHITE} cards",
                 "Add two {AGAIN} {HEAL}1 cards",
-                "Add two {AGAIN} {STUN} card",
+                "Add one {AGAIN} {STUN} card",
                 "Add two {AGAIN} {LIGHT} cards",
                 "Add two {AGAIN} {SHIELD}1, Self cards",
                 "Ignore negative item effects and add two {+1_WHITE} cards",
