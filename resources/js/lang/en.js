@@ -3143,7 +3143,7 @@ export default {
                 "Replace one {+0_WHITE} card with one {+2_WHITE} card",
                 "Add two {AGAIN} {+1_WHITE} cards",
                 "Add two {AGAIN} {HEAL}1 cards",
-                "Add two {AGAIN} {STUN} card",
+                "Add one {AGAIN} {STUN} card",
                 "Add two {AGAIN} {LIGHT} cards",
                 "Add two {AGAIN} {SHIELD}1, Self cards",
                 "Ignore negative item effects and add two {+1_WHITE} cards",

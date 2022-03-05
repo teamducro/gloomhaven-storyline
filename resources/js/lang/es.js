@@ -3169,7 +3169,7 @@ export default {
                 "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE}",
                 "Añade 2 cartas {AGAIN} {+1_WHITE}",
                 "Añade 2 cartas {AGAIN} {HEAL}1",
-                "Añade 2 cartas {AGAIN} {STUN}",
+                "Añade 1 carta {AGAIN} {STUN}",
                 "Añade 2 cartas {AGAIN} {LIGHT}",
                 "Añade 2 cartas {AGAIN} {SHIELD}1, Personal",
                 "Ignora los efectos negativos de los objetos y añade 2 cartas {+1_WHITE}",
