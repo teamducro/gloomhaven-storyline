@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-12 pb-4 px-4 flex justify-center w-full">
+    <div class="pt-12 pb-4 px-2 sm:px-4 flex justify-center w-full">
 
         <div class="fixed right-0 top-0 mt-1 z-5">
             <dropdown ref="filter-dropdown" align="right">

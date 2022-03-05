@@ -1,5 +1,5 @@
 <template>
-    <div v-if="sheet" :key="sheetHash" class="pt-12 pb-4 px-4 md:px-8">
+    <div v-if="sheet" :key="sheetHash" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div id="characters" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs class="hidden sm:block"
