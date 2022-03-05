@@ -33,7 +33,7 @@ import localizedFormat from 'dayjs/plugin/localizedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import TreasureValidator from "./validators/TreasureValidator";
 import Vue from 'vue';
-import LanguageSwitch from "./components/elements/LanguageSwitch";
+import setInitialLanguage from "./services/app/setInitialLanguage";
 
 const {RayPlugin} = require('vue-ray/vue2');
 
@@ -147,9 +147,7 @@ window.app = new Vue({
         this.$bus.$emit('open-donations');
 
         listenToCrtlS();
-
-        const languageSwitchComponent = Vue.extend(LanguageSwitch);
-        (new languageSwitchComponent()).$mount();
+        setInitialLanguage();
     },
     methods: {
         async campaignsChanged(shouldSync = true) {

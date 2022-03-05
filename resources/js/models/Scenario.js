@@ -174,7 +174,7 @@ class Scenario {
     }
 
     hasMultipleLocations() {
-        return Object.keys(this._coordinates).includes(String(this.linked_from.first()));
+        return Object.keys(this._coordinates || {}).includes(String(this.linked_from.first()));
     }
 
     image() {
