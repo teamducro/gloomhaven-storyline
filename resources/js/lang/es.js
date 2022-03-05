@@ -66,7 +66,7 @@ export default {
     "Clues": "Pistas",
     "Open envelope": "Abre el sobre",
     "Open box": "Abre la caja",
-    "Envelope X solution": "Envelope X solution",
+    "Envelope X solution": "Solución sobre X",
     "Additional notes": "Notas",
     "Items": "Objetos",
     "Add Items": "Añade Objetos",
@@ -279,6 +279,10 @@ export default {
     "REGENERATE": "REGENERACIÓN",
     "DISARM": "DESARME",
     "TARGET": "OBJETIVO",
+    "LOOT": "SAQUEO",
+    "Teleport": "Teletransporte",
+    "Doom": "Condena",
+    "Loot": "Saqueo",
     "Intro": "Intro",
     "The Merchant": "La comerciante",
     "Demon and Rift": "El demonio y la grieta",
@@ -2004,7 +2008,7 @@ export default {
         "gh-109": {
             "name": "Capucha de Ladrón",
             "source": "Evento de ciudad 62",
-            "desc": "During your “Loot 1” ability, perform a “Loot 2” ability instead."
+            "desc": "During your {LOOT 1} ability, perform a {LOOT 2} ability instead."
         },
         "gh-110": {
             "name": "Yelmo de la Montaña",
@@ -2096,7 +2100,7 @@ export default {
         "gh-127": {
             "name": "Araña Mecánica Gigante",
             "source": "Evento de ciudad 61",
-            "desc": "During your turn, perform a “Loot 1” action."
+            "desc": "During your turn, perform a {LOOT 1} action."
         },
         "gh-128": {
             "name": "Incesario Negro",
@@ -2199,7 +2203,7 @@ export default {
         "gh-147": {
             "name": "Capa del Cazador",
             "source": "Recompensa de escenario en solitario - {DS}",
-            "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}."
+            "desc": "Any time you perform a {DOOM} action, {MUDDLE} the target of the {DOOM}."
         },
         "gh-148": {
             "name": "Bata del Doctor",
@@ -2274,7 +2278,7 @@ export default {
         "gh-162": {
             "name": "Dispositivo de apertura de fisuras",
             "source": "Recompensa de {SCENARIO 112}\nSección 62 “Mechanical Splendor” in book.",
-            "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you."
+            "desc": "During your turn, {TELEPORT} to any unoccupied hex within 4 hexes of you."
         },
         "gh-163": {
             "name": "Tiara de cristal",

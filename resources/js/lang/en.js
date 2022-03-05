@@ -279,6 +279,10 @@ export default {
     "REGENERATE": "REGENERATE",
     "DISARM": "DISARM",
     "TARGET": "TARGET",
+    "LOOT": "LOOT",
+    "Teleport": "Teleport",
+    "Doom": "Doom",
+    "Loot": "Loot",
     "Intro": "Intro",
     "The Merchant": "The Merchant",
     "Demon and Rift": "Demon and Rift",
@@ -2003,7 +2007,7 @@ export default {
         "gh-109": {
             "name": "Thief's Hood",
             "source": "City Event 62",
-            "desc": "During your “Loot 1” ability, perform a “Loot 2” ability instead."
+            "desc": "During your {LOOT 1} ability, perform a {LOOT 2} ability instead."
         },
         "gh-110": {
             "name": "Helm of the Mountain",
@@ -2095,7 +2099,7 @@ export default {
         "gh-127": {
             "name": "Giant Remote Spider",
             "source": "City Event 61",
-            "desc": "During your turn, perform a “Loot 1” action."
+            "desc": "During your turn, perform a {LOOT 1} action."
         },
         "gh-128": {
             "name": "Black Censer",
@@ -2198,7 +2202,7 @@ export default {
         "gh-147": {
             "name": "Cloak of the Hunter",
             "source": "Reward from Solo Scenario - {DS}",
-            "desc": "Any time you perform a {Doom} action, {MUDDLE} the target of the {Doom}."
+            "desc": "Any time you perform a {DOOM} action, {MUDDLE} the target of the {DOOM}."
         },
         "gh-148": {
             "name": "Doctor's Coat",
@@ -2273,7 +2277,7 @@ export default {
         "gh-162": {
             "name": "Rift Device",
             "source": "Reward from {SCENARIO 112}\nSection 62 “Mechanical Splendor” in book.",
-            "desc": "During your turn, Teleport to any unoccupied hex within 4 hexes of you.",
+            "desc": "During your turn, {TELEPORT} to any unoccupied hex within 4 hexes of you.",
         },
         "gh-163": {
             "name": "Crystal Tiara",
