@@ -121,7 +121,7 @@ export default {
     "Retire": "Retira",
     "Retired": "Retirado",
     "Retirement counter": "Contador de PJ retirados",
-    "Set this counter to the amount of characters your have retired": "Fija el contador en la cantidad de personajes que has retirado",
+    "Set this counter to the amount of characters you have retired": "Fija el contador en la cantidad de personajes que has retirado.",
     "Remove": "Eliminar",
     "Unlocked": "Desbloqueado",
     "Clear all": "Borrar todo",
@@ -285,6 +285,9 @@ export default {
     "LOOT": "SAQUEO",
     "Teleport": "Teletransporte",
     "Doom": "Condena",
+    "Augment": "Aumento",
+    "Song": "Canción",
+    "Command": "Orden",
     "Loot": "Saqueo",
     "Intro": "Intro",
     "The Merchant": "La comerciante",
@@ -2165,7 +2168,7 @@ export default {
         "gh-139": {
             "name": "Cuchillo Psíquico",
             "source": "Recompensa de escenario en solitario - {MT}",
-            "desc": "Siempre que vayas a hacer una acción de Aumento, añade {ATTACK} +1 a la acción entera."
+            "desc": "Siempre que vayas a hacer una acción de {AUGMENT}, añade {ATTACK} +1 a la acción entera."
         },
         "gh-140": {
             "name": "Escudo del Sol",
@@ -2201,7 +2204,7 @@ export default {
         "gh-146": {
             "name": "Laúd Magistral",
             "source": "Recompensa de escenario en solitario - {SS}",
-            "desc": "Después de realizar una acción de Canción, realiza de inmediato una acción de {ATTACK} 2 o {MOVE} 2."
+            "desc": "Después de realizar una acción de {SONG}, realiza de inmediato una acción de {ATTACK} 2 o {MOVE} 2."
         },
         "gh-147": {
             "name": "Capa del Cazador",
@@ -2221,7 +2224,7 @@ export default {
         "gh-150": {
             "name": "Vara de Mando",
             "source": "Recompensa de escenario en solitario - {BT}",
-            "desc": "Después de realizar una acción de Orden, juega 1 carta de tu mano y realiza de inmediato la misma mitad (superior o inferior) de esa carta que hayas realizado con la carta de la acción de Orden."
+            "desc": "Después de realizar una acción de {COMMAND}, juega 1 carta de tu mano y realiza de inmediato la misma mitad (superior o inferior) de esa carta que hayas realizado con la carta de la acción de {COMMAND}."
         },
         "gh-151": {
             "name": "Espada de las arenas",

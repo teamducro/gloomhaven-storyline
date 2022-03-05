@@ -121,7 +121,7 @@ export default {
     "Retire": "in Ruhestand schicken",
     "Retired": "in Ruhestand geschickt",
     "Retirement counter": "Retirement counter",
-    "Set this counter to the amount of characters your have retired": "Set this counter to the amount of characters your have retired.",
+    "Set this counter to the amount of characters you have retired": "Set this counter to the amount of characters you have retired.",
     "Remove": "Löschen",
     "Unlocked": "Unlocked",
     "Clear all": "Alles löschen",
@@ -282,6 +282,9 @@ export default {
     "LOOT": "LOOT",
     "TELEPORT": "TELEPORT",
     "Doom": "Doom",
+    "Augment": "Augment",
+    "Song": "Song",
+    "Command": "Command",
     "Loot": "Loot",
     "Intro": "Einleitung",
     "The Merchant": "Die Händlerin",
@@ -2262,7 +2265,7 @@ export default {
         "gh-139": {
             "name": "Astralmesser",
             "source": "Reward from Solo Scenario - {MT}",
-            "desc": "Any time you perform an Augment action, add +1 {ATTACK} to the entire action."
+            "desc": "Any time you perform an {AUGMENT} action, add +1 {ATTACK} to the entire action."
         },
         "gh-140": {
             "name": "Sonnenschild",
@@ -2298,7 +2301,7 @@ export default {
         "gh-146": {
             "name": "Virtuosenlaute",
             "source": "Reward from Solo Scenario - {SS}",
-            "desc": "After performing any song action, immediately perform an Attack 2 or {MOVE} 2 action."
+            "desc": "After performing any {SONG} action, immediately perform an {ATTACK} 2 or {MOVE} 2 action."
         },
         "gh-147": {
             "name": "Mantel des Jägers",
@@ -2308,7 +2311,7 @@ export default {
         "gh-148": {
             "name": "Arztkittel",
             "source": "Reward from Solo Scenario - {SB}",
-            "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal."
+            "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 {HEAL} to their Heal."
         },
         "gh-149": {
             "name": "Elementarstiefel",
@@ -2318,7 +2321,7 @@ export default {
         "gh-150": {
             "name": "Befehlsstab",
             "source": "Reward from Solo Scenario - {BT}",
-            "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
+            "desc": "After performing a {COMMAND} action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the {COMMAND} action."
         },
         "gh-151": {
             "name": "Sword of the Sands",

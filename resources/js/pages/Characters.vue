@@ -135,7 +135,7 @@
                         <number-field :value.sync="character.retirements" :min="0" :max="20"
                                       id="retirements" @change="store"></number-field>
                         <p class="text-sm">
-                            {{ $t('Set this counter to the amount of characters your have retired.') }}
+                            {{ $t('Set this counter to the amount of characters you have retired') }}
                         </p>
                     </div>
 
