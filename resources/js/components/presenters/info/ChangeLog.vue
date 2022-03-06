@@ -131,7 +131,7 @@ export default {
                     description: 'Updated Spanish, French and German translations',
                     date: dayjs('02-18-2022')
                 },
-                {version: 3.4, description: 'Add solo scenarios', date: dayjs('02-27-2022')},
+                {version: 3.4, description: 'Add solo scenarios', date: dayjs('03-06-2022')},
             ].reverse()
         }
     },
