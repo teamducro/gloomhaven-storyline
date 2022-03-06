@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-12 pb-4 px-4">
+    <div class="pt-12 pb-4 px-2 sm:px-4">
 
         <div v-if="paymentSuccess"
              class="w-full max-w-lg bg-white px-6 py-8 mt-8 mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:p-10">

@@ -121,7 +121,7 @@ export default {
     "Retire": "in Ruhestand schicken",
     "Retired": "in Ruhestand geschickt",
     "Retirement counter": "Retirement counter",
-    "Set this counter to the amount of characters your have retired": "Set this counter to the amount of characters your have retired.",
+    "Set this counter to the amount of characters you have retired": "Set this counter to the amount of characters you have retired.",
     "Remove": "Löschen",
     "Unlocked": "Unlocked",
     "Clear all": "Alles löschen",
@@ -282,6 +282,9 @@ export default {
     "LOOT": "LOOT",
     "TELEPORT": "TELEPORT",
     "Doom": "Doom",
+    "Augment": "Augment",
+    "Song": "Song",
+    "Command": "Command",
     "Loot": "Loot",
     "Intro": "Einleitung",
     "The Merchant": "Die Händlerin",
@@ -295,6 +298,7 @@ export default {
     "Atop Mountains": "Auf den Bergen",
     "Dragons": "Drachen",
     "Voice": "Die Stimme",
+    "Solo": "Solo",
     "Solo Scenarios": "Solo-Szenarien",
     "Personal Quests": "Persönliche Ziele",
     "Personal Quest": "Personal Quest",
@@ -860,6 +864,114 @@ export default {
             "name": "Zahltag",
             "rewards": [
                 "“Skull of Hatred” (Item 119)"
+            ]
+        },
+        "gh-202": {
+            "name": "Return to the Black Barrow",
+            "rewards": [
+                "“Imposing Blade” (Item 134)"
+            ]
+        },
+        "gh-203": {
+            "name": "An Unfortunate Intrusion",
+            "rewards": [
+                "“Focusing Ray” (Item 135)"
+            ]
+        },
+        "gh-204": {
+            "name": " Corrupted Laboratory",
+            "rewards": [
+                "“Volatile Elixir” (Item 136)"
+            ]
+        },
+        "gh-205": {
+            "name": "Armory Heist",
+            "rewards": [
+                "“Silent Stiletto” (Item 137)"
+            ]
+        },
+        "gh-206": {
+            "name": "Stone Defense",
+            "rewards": [
+                "“Stone Charm” (Item 138)"
+            ]
+        },
+        "gh-207": {
+            "name": "Rodent Liberation",
+            "rewards": [
+                "“Psychic Knife” (Item 139)"
+            ]
+        },
+        "gh-208": {
+            "name": "Caravan Escort",
+            "rewards": [
+                "“Sun Shield” (Item 140)"
+            ]
+        },
+        "gh-209": {
+            "name": "Unnatural Insults",
+            "rewards": [
+                "“Mask of Death” (Item 145)"
+            ]
+        },
+        "gh-210": {
+            "name": "Storage Fees",
+            "rewards": [
+                "“Utility Belt” (Item 141)"
+            ]
+        },
+        "gh-211": {
+            "name": "Plane of Wild Beasts",
+            "rewards": [
+                "“Phasing Idol” (Item 142)"
+            ]
+        },
+        "gh-212": {
+            "name": "Harvesting the Night",
+            "rewards": [
+                "“Smoke Elixir” (Item 143)"
+            ]
+        },
+        "gh-213": {
+            "name": "Plagued Crypt",
+            "rewards": [
+                "“Pendant of the Plague” (Item 144)"
+            ]
+        },
+        "gh-214": {
+            "name": "Battle of the Bards",
+            "rewards": [
+                "“Master’s Lute” (Item 146)"
+            ]
+        },
+        "gh-215": {
+            "name": "Corrupted Hunt",
+            "rewards": [
+                "“Cloak of the Hunter” (Item 147)"
+            ]
+        },
+        "gh-216": {
+            "name": "Aftermath",
+            "rewards": [
+                "“Doctor’s Coat” (Item 148)"
+            ]
+        },
+        "gh-217": {
+            "name": "Elemental Secrets",
+            "rewards": [
+                "“Elemental Boots” (Item 149)"
+            ]
+        },
+        "gh-218": {
+            "name": "The Caged Bear",
+            "rewards": [
+                "“Staff of Command” (Item 150)"
+            ]
+        },
+        "gh-219": {
+            "name": "The Sands of Time",
+            "rewards": [
+                "“Sword of the Sands” (Item 151)"
             ]
         },
         "fc-96": {
@@ -2160,7 +2272,7 @@ export default {
         "gh-139": {
             "name": "Astralmesser",
             "source": "Reward from Solo Scenario - {MT}",
-            "desc": "Any time you perform an Augment action, add +1 {ATTACK} to the entire action."
+            "desc": "Any time you perform an {AUGMENT} action, add +1 {ATTACK} to the entire action."
         },
         "gh-140": {
             "name": "Sonnenschild",
@@ -2196,7 +2308,7 @@ export default {
         "gh-146": {
             "name": "Virtuosenlaute",
             "source": "Reward from Solo Scenario - {SS}",
-            "desc": "After performing any song action, immediately perform an Attack 2 or {MOVE} 2 action."
+            "desc": "After performing any {SONG} action, immediately perform an {ATTACK} 2 or {MOVE} 2 action."
         },
         "gh-147": {
             "name": "Mantel des Jägers",
@@ -2206,7 +2318,7 @@ export default {
         "gh-148": {
             "name": "Arztkittel",
             "source": "Reward from Solo Scenario - {SB}",
-            "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal."
+            "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 {HEAL} to their Heal."
         },
         "gh-149": {
             "name": "Elementarstiefel",
@@ -2216,7 +2328,7 @@ export default {
         "gh-150": {
             "name": "Befehlsstab",
             "source": "Reward from Solo Scenario - {BT}",
-            "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
+            "desc": "After performing a {COMMAND} action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the {COMMAND} action."
         },
         "gh-151": {
             "name": "Sword of the Sands",

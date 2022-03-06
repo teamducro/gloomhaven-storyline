@@ -23,6 +23,10 @@ export default class ScenarioRepository {
             scenario = this.find(scenario);
         }
 
+        if (!scenario) {
+            return;
+        }
+
         const previousState = scenario.state;
         scenario.state = state;
 
@@ -261,6 +265,10 @@ export default class ScenarioRepository {
         return collect().wrap(list).map((id) => {
             return this.find(id);
         });
+    }
+
+    findSolo(characterId) {
+        return this.where((scenario) => scenario.solo === characterId).first();
     }
 
     where(filter) {
