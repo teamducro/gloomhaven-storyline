@@ -116,9 +116,9 @@
                                    :perks.sync="character.perks"
                                    :character="character"
                                    @change="store"/>
-                            <div class="mt-5 flex">
+                            <div v-if="soloScenario" class="mt-5 flex">
                                 <span class="font-title mr-2">{{ $t('Solo') }}:</span>
-                                <scenario-number :scenario="scenario" v-if="scenario" show-name/>
+                                <scenario-number :scenario="soloScenario" show-name/>
                             </div>
                         </div>
                     </div>
@@ -234,7 +234,7 @@ export default {
             sheetHash: null,
             selected: null,
             character: null,
-            scenario: null,
+            soloScenario: null,
             nameText: null,
             campaignName: null,
             loading: true,
@@ -296,7 +296,7 @@ export default {
             this.nameField = new MDCTextField(this.$refs['name-field']);
         },
         findSoloScenario() {
-            this.scenario = this.scenarioRepository.findSolo(this.character.id);
+            this.soloScenario = this.scenarioRepository.findSolo(this.character.id);
         },
         refreshItems() {
             if (this.character) {
@@ -382,7 +382,10 @@ export default {
                 return;
             }
 
-            this.sheet.characterUnlocks[id] = true;
+            if (!this.sheet.characterUnlocks[id]) {
+                this.sheet.characterUnlocks[id] = true;
+                this.scenarioRepository.scenarioValidator.validate();
+            }
             const character = this.characterRepository.createCharacter(this.sheet, id);
             this.select(character.uuid);
             this.store();

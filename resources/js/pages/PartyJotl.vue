@@ -42,7 +42,7 @@
                         <checkbox group="items"
                                   :checked="checked"
                                   :disabled="sheet.starterCharacters.includes(id)"
-                                  @change="(_, isChecked) => {sheet.characterUnlocks[id] = isChecked; store()}"></checkbox>
+                                  @change="(_, isChecked) => {sheet.characterUnlocks[id] = isChecked; scenarioRepository.scenarioValidator.validate(); store()}"></checkbox>
                         <span class="w-8 font-title">
                             <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
                         </span>
@@ -58,6 +58,7 @@
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetRepository from "../repositories/SheetRepository";
+import ScenarioRepository from "../repositories/ScenarioRepository";
 import PartyGh from "./PartyGh";
 
 export default {
@@ -71,7 +72,8 @@ export default {
             isLocalCampaign: true,
             game: 'jotl',
             storySyncer: new StorySyncer,
-            sheetRepository: new SheetRepository
+            sheetRepository: new SheetRepository,
+            scenarioRepository: new ScenarioRepository,
         }
     },
     mounted() {

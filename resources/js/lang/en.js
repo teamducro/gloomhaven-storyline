@@ -969,6 +969,12 @@ export default {
                 "“Staff of Command” (Item 150)"
             ]
         },
+        "gh-219": {
+            "name": "The Sands of Time",
+            "rewards": [
+                "“Sword of the Sands” (Item 151)"
+            ]
+        },
         "fc-96": {
             "name": "Unexpected Visitors",
             "rewards": [
