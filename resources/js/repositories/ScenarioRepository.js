@@ -267,6 +267,10 @@ export default class ScenarioRepository {
         });
     }
 
+    findSolo(characterId) {
+        return this.where((scenario) => scenario.solo === characterId).first();
+    }
+
     where(filter) {
         return this.get()
             ? this.get().filter(filter)

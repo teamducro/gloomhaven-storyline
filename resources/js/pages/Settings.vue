@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-12 pb-4 px-4">
+    <div class="pt-12 pb-4 px-2 sm:px-4">
         <transfer></transfer>
         <snapshots></snapshots>
 

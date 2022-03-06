@@ -5,11 +5,13 @@ import QuestValidator from "../services/QuestValidator";
 import ChoiceService from "../services/ChoiceService";
 import AchievementValidator from "./AchievementValidator";
 import StorySyncer from "../services/StorySyncer";
+import SheetRepository from "../repositories/SheetRepository";
 
 export default class ScenarioValidator {
 
     validate(shouldSync = true) {
         this.needsValidating = true;
+        this.sheet = (new SheetRepository).make(app.game);
         let count = 1;
 
         while (this.needsValidating) {
@@ -41,12 +43,12 @@ export default class ScenarioValidator {
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         if (scenario.isHidden()) {
-            if (states.has(ScenarioState.complete) || unlocked || scenario.root) {
+            if (states.has(ScenarioState.complete) || unlocked || scenario.root || (scenario.solo && this.sheet.characterUnlocks[scenario.solo])) {
                 this.scenarioRepository.setIncomplete(scenario);
                 this.needsValidating = true;
             }
         } else {
-            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked) {
+            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked && (!scenario.solo || (scenario.solo && this.sheet.characterUnlocks[scenario.solo] === false))) {
                 this.scenarioRepository.setHidden(scenario);
                 this.needsValidating = true;
             }

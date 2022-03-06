@@ -3,10 +3,13 @@
         <modal ref="modal">
             <template v-slot:body v-if="scenario">
                 <div id="scenario-title" class="pl-6 border-b border-white2-25"
-                     :class="{'pb-2': scenario.regions, 'pb-4': !scenario.regions}">
+                     :class="[scenario.regions ? 'pb-2' : 'pb-4']">
                     <h2 class="mdc-dialog__title p-0 leading-none">
-                        {{ scenario.number }} {{ scenario.isVisible() ? $t(scenario.name) : '' }}
-                        <span class="text-sm text-white2-50">{{ scenario.coordinates.name }}</span>
+                        <span v-if="!scenario.solo">{{ scenario.number }}</span>
+                        <span>{{ scenario.isVisible() ? $t(scenario.name) : '' }}</span>
+                        <span v-if="scenario.coordinates.name" class="text-sm text-white2-50">
+                            {{ scenario.coordinates.name }}
+                        </span>
                         <span class="absolute right-0 top-0">
                         <button type="button" data-mdc-dialog-action="close"
                                 class="mdc-button mt-4">
@@ -42,11 +45,14 @@
                                    @changed="stateChanged"
                             ></radio>
                             <div v-if="scenario.isVisible()"
-                                 class="hidden sm:block ml-auto w-20"
-                                 :class="{'sm:block': scenario.is_side, 'xs:block': !scenario.is_side}">
-                                <webp :src="scenario.image()"
+                                 class="hidden sm:block ml-auto"
+                                 :class="[scenario.is_side ? 'sm:block' : 'xs:block', scenario.solo ? 'w-12' : 'w-20']">
+                                <webp v-if="!scenario.solo" :src="scenario.image()"
                                       :animate="true"
                                       :alt="$t(scenario.name)"/>
+                                <character-icon v-if="scenario.solo" class="inline-block"
+                                                :key="scenario.id+scenario.solo"
+                                                :character="scenario.solo"/>
                             </div>
                         </div>
                     </div>
@@ -196,7 +202,7 @@
                                     <i class="material-icons mdc-button__icon">menu_book</i>
                                     <span class="mdc-button__label">{{ $t('Pages') }}</span>
                                 </button>
-                                <a v-if="virtualBoardUrl" :href="virtualBoardUrl" target="_blank">
+                                <a v-if="virtualBoardUrl && !scenario.solo" :href="virtualBoardUrl" target="_blank">
                                     <button class="mdc-button mdc-button--raised">
                                         <i class="material-icons mdc-button__icon transform rotate-180">style</i>
                                         <span class="mdc-button__label">{{ $t('Virtual Board') }}</span>
@@ -419,6 +425,7 @@ export default {
         async open(id) {
             await this.makeSureScenariosAreLoaded();
             const scenario = this.scenarioRepository.find(id);
+            console.log(scenario)
 
             // Can't open hidden scenario's for now.
             if (!scenario || (scenario.isHidden() && !scenario.is_side)) {
