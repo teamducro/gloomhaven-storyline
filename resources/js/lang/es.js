@@ -2813,18 +2813,18 @@ export default {
             "unlock": "Abre la caja {PH}",
             "progress": [
                 "Completa 3 escenarios que tengan en su nombre la palabra “Cripta”.",
-                "Después, desbloquea {SCENARIO 52} y sigue la cadena de aventuras hasta termianrla."
+                "Después, desbloquea {SCENARIO 52} y sigue la cadena de aventuras hasta terminarla."
             ]
         },
         "gh-511": {
             "name": "Clase comerciante",
             "unlock": "Abre la caja {QM}",
             "progress": [
-                "Ten en propiedad:/n2 objetos {HEAD},",
-                "2 objetos {BODY},",
-                "2 objetos {LEGS},",
-                "3 objetos {ONE-HAND} o {TWO-HANDS} y",
-                "4 objetos {SMALL-ITEM}."
+                "Ten en propiedad: 2 objetos {HEAD}",
+                "2 objetos {BODY}",
+                "2 objetos {LEGS}",
+                "3 objetos {ONE-HAND} o {TWO-HANDS}",
+                "y 4 objetos {SMALL-ITEM}."
             ]
         },
         "gh-512": {
@@ -2839,7 +2839,7 @@ export default {
             "unlock": "Abre el sobre X",
             "progress": [
                 "Mata a 8 Duendes del Bosque.",
-                "Después, desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta termianrla."
+                "Después, desbloquea {SCENARIO 59} y sigue la cadena de aventuras hasta terminarla."
             ]
         },
         "gh-514": {
@@ -2897,7 +2897,7 @@ export default {
             "unlock": "Abre la caja {DS}",
             "progress": [
                 "Completa 3 escenarios en el Bosque de la Dagas.",
-                "Después, desbloquea {SCENARIO 55} y sigue la cadena de aventuras hasta termianrla."
+                "Después, desbloquea {SCENARIO 55} y sigue la cadena de aventuras hasta terminarla."
             ]
         },
         "gh-522": {
@@ -2912,12 +2912,12 @@ export default {
             "name": "Cazador de aberraciones",
             "unlock": "Abre la caja {EL}",
             "progress": [
-                "Mata a:/n1 Demonio de Fuego,",
-                "1 Demonio de Hielo,",
-                "1 Demonio de Viento,",
-                "1 Demonio de Tierra,",
-                "1 Demonio de Noche y",
-                "1 Demonio de Sol."
+                "Mata a: 1 Demonio de Fuego",
+                "1 Demonio de Hielo",
+                "1 Demonio de Viento",
+                "1 Demonio de Tierra",
+                "1 Demonio de Noche",
+                "y 1 Demonio de Sol."
             ]
         },
         "gh-524": {
@@ -2961,7 +2961,7 @@ export default {
             "unlock": "Abre la caja {NS}",
             "progress": [
                 "Completa 2 escenarios en el Pantano Perenne.",
-                "A continuación, desbloquea {SCENARIO 61} y sigue la cadena de aventuras hasta termianrla."
+                "A continuación, desbloquea {SCENARIO 61} y sigue la cadena de aventuras hasta terminarla."
             ]
         },
         "gh-530": {
@@ -2976,12 +2976,12 @@ export default {
             "name": "Muestras elementales",
             "unlock": "Abre la caja {EL}",
             "progress": [
-                "Completa 1 escenario en cada una de las siguientes zonas:/nGloomhaven,",
-                "Bosque de las Dagas,",
-                "Pantano Perenne,",
-                "Montañas Guardianas,",
-                "Montañas Cobrizas y",
-                "Mar Brumoso."
+                "Completa 1 escenario en cada una de las siguientes zonas: Gloomhaven",
+                "Bosque de las Dagas",
+                "Pantano Perenne",
+                "Montañas Guardianas",
+                "Montañas Cobrizas",
+                "y Mar Brumoso."
             ]
         },
         "gh-532": {
@@ -2995,9 +2995,9 @@ export default {
             "name": "El veneno perfecto",
             "unlock": "Abre la caja {PH}",
             "progress": [
-                "Mata a:/n3 Cienos,",
-                "3 Acechadores y",
-                "3 Dracos Escupidores."
+                "Mata a: 3 Cienos",
+                "3 Acechadores",
+                "y 3 Dracos Escupidores."
             ]
         }
     },
@@ -3361,9 +3361,9 @@ export default {
         }
     },
     "card_types": {
-        "R": "Road Event",
-        "C": "City Event",
-        "Q": "Personal Quest"
+        "R": "Evento de Camino",
+        "C": "Evento de Ciudad",
+        "Q": "Misión Personal"
     },
     "quest": {
         "1": {
