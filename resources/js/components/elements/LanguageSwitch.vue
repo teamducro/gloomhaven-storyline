@@ -36,7 +36,7 @@ export default {
                 'en': 'English',
                 'fr': 'Français',
                 'it': 'Italiano',
-                'de': 'Deutsche',
+                'de': 'Deutsch',
                 'es': 'Español'
             },
             flags: {
