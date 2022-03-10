@@ -162,7 +162,7 @@ export default {
         "title": "Juega a Gloomhaven con una app de seguimiento de la historia",
         "text": "Para jugar a Gloomhaven, mis amigos y yo nos juntamos una vez por semana. Pulsando el botón de pausa en nuestras vidas cotidianas. Cada uno de nosotros ha aportado algo para fortalecer nuestro disfrute del juego. Mi contribución es un diagrama de flujo interactivo, que permite hacer un seguimiento de nuestro progreso a lo largo del juego y hacer más fácil la elección de un nuevo escenario al que jugar. Con unas bebidas y unos aperitivos, estamos listos para empezar."
     },
-    "Contributions": "Contributions",
+    "Contributions": "Contribuciones",
     "contribute": {
         "text-1": "Apoya el proyecto uniéndote a Patreon. Te ganarás mi más profundo agradecimiento. Haces que sea posible para mí mantener la app y desarrollar las nuevas funciones.",
         "text-2": "Los mecenas pueden crear campañas compartidas ilimitadas. ¡Además, pueden votar sobre nuevas funciones y recibir notificaciones cuando se implementen nuevas funciones!"
@@ -870,111 +870,111 @@ export default {
             ]
         },
         "gh-202": {
-            "name": "Return to the Black Barrow",
+            "name": "Regreso al Túmulo Negro",
             "rewards": [
-                "“Imposing Blade” (Item 134)"
+                "“Hoja Imponente” (Objeto 134)"
             ]
         },
         "gh-203": {
-            "name": "An Unfortunate Intrusion",
+            "name": "Una intrusión desafortunada",
             "rewards": [
-                "“Focusing Ray” (Item 135)"
+                "“Rayo concentrador” (Objeto 135)"
             ]
         },
         "gh-204": {
-            "name": " Corrupted Laboratory",
+            "name": "Laboratorio corrupto",
             "rewards": [
-                "“Volatile Elixir” (Item 136)"
+                "“Elixir volátil” (Objeto 136)"
             ]
         },
         "gh-205": {
-            "name": "Armory Heist",
+            "name": "Asalto a la armería",
             "rewards": [
-                "“Silent Stiletto” (Item 137)"
+                "“Estilete silencioso” (Objeto 137)"
             ]
         },
         "gh-206": {
-            "name": "Stone Defense",
+            "name": "Defensa de piedra",
             "rewards": [
-                "“Stone Charm” (Item 138)"
+                "“Amuleto de piedra” (Objeto 138)"
             ]
         },
         "gh-207": {
-            "name": "Rodent Liberation",
+            "name": "Liberación de roedores",
             "rewards": [
-                "“Psychic Knife” (Item 139)"
+                "“Cuchillo psíquico” (Objeto 139)"
             ]
         },
         "gh-208": {
-            "name": "Caravan Escort",
+            "name": "Escolta de caravana",
             "rewards": [
-                "“Sun Shield” (Item 140)"
+                "“Escudo del sol” (Objeto 140)"
             ]
         },
         "gh-209": {
-            "name": "Unnatural Insults",
+            "name": "Ofensas sobrenaturales",
             "rewards": [
-                "“Mask of Death” (Item 145)"
+                "“Máscara de la muerte” (Objeto 145)"
             ]
         },
         "gh-210": {
-            "name": "Storage Fees",
+            "name": "Tasas de almacenamiento",
             "rewards": [
-                "“Utility Belt” (Item 141)"
+                "“Cinturón multiusos” (Objeto 141)"
             ]
         },
         "gh-211": {
-            "name": "Plane of Wild Beasts",
+            "name": "Plano de las bestias salvajes",
             "rewards": [
-                "“Phasing Idol” (Item 142)"
+                "“Ídolo de fase” (Objeto 142)"
             ]
         },
         "gh-212": {
-            "name": "Harvesting the Night",
+            "name": "Cosechando la noche",
             "rewards": [
-                "“Smoke Elixir” (Item 143)"
+                "“Elixir de humo” (Objeto 143)"
             ]
         },
         "gh-213": {
-            "name": "Plagued Crypt",
+            "name": "Cripta plagada",
             "rewards": [
-                "“Pendant of the Plague” (Item 144)"
+                "“Colgante de la plaga” (Objeto 144)"
             ]
         },
         "gh-214": {
-            "name": "Battle of the Bards",
+            "name": "Batalla de los bardos",
             "rewards": [
-                "“Master’s Lute” (Item 146)"
+                "“Laúd magistral” (Objeto 146)"
             ]
         },
         "gh-215": {
-            "name": "Corrupted Hunt",
+            "name": "Caza corrupta",
             "rewards": [
-                "“Cloak of the Hunter” (Item 147)"
+                "“Capa del cazador” (Objeto 147)"
             ]
         },
         "gh-216": {
-            "name": "Aftermath",
+            "name": "Secuelas",
             "rewards": [
-                "“Doctor’s Coat” (Item 148)"
+                "“Bata de doctor” (Objeto 148)"
             ]
         },
         "gh-217": {
-            "name": "Elemental Secrets",
+            "name": "Secretos elementales",
             "rewards": [
-                "“Elemental Boots” (Item 149)"
+                "“Elemental Boots” (Objeto 149)"
             ]
         },
         "gh-218": {
-            "name": "The Caged Bear",
+            "name": "El oso enjaulado",
             "rewards": [
-                "“Staff of Command” (Item 150)"
+                "“Vara de mando” (Objeto 150)"
             ]
         },
         "gh-219": {
-            "name": "The Sands of Time",
+            "name": "Las arenas del tiempo",
             "rewards": [
-                "“Sword of the Sands” (Item 151)"
+                "“Espada de las arenas” (Objeto 151)"
             ]
         },
         "fc-96": {
