@@ -10,6 +10,8 @@ export default {
     "Open source": "Open source",
     "Info": "Información",
     "Settings": "Ajustes",
+    "Clear filter": "Borrar filtro",
+    "Missed Treasures": "Tesoros Perdidos",
     "transfer": {
         "title": "Transferir datos de campaña",
         "text": "La copia de datos entre campañas se puede hacer fácilmente .",
@@ -65,7 +67,6 @@ export default {
     "Open envelope": "Abre el sobre",
     "Envelope X solution": "Solución sobre X",
     "Open box": "Abre la caja",
-    "Envelope X solution": "Envelope X solution",
     "Additional notes": "Notas",
     "Items": "Objetos",
     "Add Items": "Añade Objetos",
@@ -105,6 +106,11 @@ export default {
     "Conclusion": "Conclusión",
     "Gained from": "Obtenido en",
     "Required by": "Necesario para",
+    "hidden": "escenario",
+    "incomplete": "incompleto",
+    "complete": "completo",
+    "blocked": "bloqueado",
+    "required": "necesario",
     "Complete": "Completo",
     "Completed": "Terminado",
     "Incomplete": "Incompleto",
@@ -115,7 +121,7 @@ export default {
     "Retire": "Retira",
     "Retired": "Retirado",
     "Retirement counter": "Contador de PJ retirados",
-    "Set this counter to the amount of characters your have retired": "Fija el contador en la cantidad de personajes que has retirado",
+    "Set this counter to the amount of characters you have retired": "Fija el contador en la cantidad de personajes que has retirado.",
     "Remove": "Eliminar",
     "Unlocked": "Desbloqueado",
     "Clear all": "Borrar todo",
@@ -276,8 +282,13 @@ export default {
     "REGENERATE": "REGENERACIÓN",
     "DISARM": "DESARME",
     "TARGET": "OBJETIVO",
+    "LOOT": "SAQUEO",
     "Teleport": "Teletransporte",
     "Doom": "Condena",
+    "Augment": "Aumento",
+    "Song": "Canción",
+    "Command": "Orden",
+    "Loot": "Saqueo",
     "Intro": "Intro",
     "The Merchant": "La comerciante",
     "Demon and Rift": "El demonio y la grieta",
@@ -290,6 +301,7 @@ export default {
     "Atop Mountains": "En lo alto de las montañas",
     "Dragons": "Dragones",
     "Voice": "La Voz",
+    "Solo": "Solitario",
     "Solo Scenarios": "Escenarios en solitario",
     "Personal Quests": "Misiones personales",
     "Personal Quest": "Misión personal",
@@ -855,6 +867,114 @@ export default {
             "name": "Cuenta pendiente",
             "rewards": [
                 "“Cráneo del odio” (Objeto 119)"
+            ]
+        },
+        "gh-202": {
+            "name": "Return to the Black Barrow",
+            "rewards": [
+                "“Imposing Blade” (Item 134)"
+            ]
+        },
+        "gh-203": {
+            "name": "An Unfortunate Intrusion",
+            "rewards": [
+                "“Focusing Ray” (Item 135)"
+            ]
+        },
+        "gh-204": {
+            "name": " Corrupted Laboratory",
+            "rewards": [
+                "“Volatile Elixir” (Item 136)"
+            ]
+        },
+        "gh-205": {
+            "name": "Armory Heist",
+            "rewards": [
+                "“Silent Stiletto” (Item 137)"
+            ]
+        },
+        "gh-206": {
+            "name": "Stone Defense",
+            "rewards": [
+                "“Stone Charm” (Item 138)"
+            ]
+        },
+        "gh-207": {
+            "name": "Rodent Liberation",
+            "rewards": [
+                "“Psychic Knife” (Item 139)"
+            ]
+        },
+        "gh-208": {
+            "name": "Caravan Escort",
+            "rewards": [
+                "“Sun Shield” (Item 140)"
+            ]
+        },
+        "gh-209": {
+            "name": "Unnatural Insults",
+            "rewards": [
+                "“Mask of Death” (Item 145)"
+            ]
+        },
+        "gh-210": {
+            "name": "Storage Fees",
+            "rewards": [
+                "“Utility Belt” (Item 141)"
+            ]
+        },
+        "gh-211": {
+            "name": "Plane of Wild Beasts",
+            "rewards": [
+                "“Phasing Idol” (Item 142)"
+            ]
+        },
+        "gh-212": {
+            "name": "Harvesting the Night",
+            "rewards": [
+                "“Smoke Elixir” (Item 143)"
+            ]
+        },
+        "gh-213": {
+            "name": "Plagued Crypt",
+            "rewards": [
+                "“Pendant of the Plague” (Item 144)"
+            ]
+        },
+        "gh-214": {
+            "name": "Battle of the Bards",
+            "rewards": [
+                "“Master’s Lute” (Item 146)"
+            ]
+        },
+        "gh-215": {
+            "name": "Corrupted Hunt",
+            "rewards": [
+                "“Cloak of the Hunter” (Item 147)"
+            ]
+        },
+        "gh-216": {
+            "name": "Aftermath",
+            "rewards": [
+                "“Doctor’s Coat” (Item 148)"
+            ]
+        },
+        "gh-217": {
+            "name": "Elemental Secrets",
+            "rewards": [
+                "“Elemental Boots” (Item 149)"
+            ]
+        },
+        "gh-218": {
+            "name": "The Caged Bear",
+            "rewards": [
+                "“Staff of Command” (Item 150)"
+            ]
+        },
+        "gh-219": {
+            "name": "The Sands of Time",
+            "rewards": [
+                "“Sword of the Sands” (Item 151)"
             ]
         },
         "fc-96": {
@@ -2003,7 +2123,7 @@ export default {
         "gh-109": {
             "name": "Capucha de Ladrón",
             "source": "Evento de ciudad 62",
-            "desc": "Al realizar una capacidad de “{Loot} 1”, realiza un “{Loot} 2” en su lugar."
+            "desc": "Al realizar una capacidad de {LOOT 1}, realiza un {LOOT 2} en su lugar."
         },
         "gh-110": {
             "name": "Yelmo de la Montaña",
@@ -2095,7 +2215,7 @@ export default {
         "gh-127": {
             "name": "Araña Mecánica Gigante",
             "source": "Evento de ciudad 61",
-            "desc": "Durante tu turno, realiza una acción de “{Loot} 1”."
+            "desc": "Durante tu turno, realiza una acción de {LOOT 1}."
         },
         "gh-128": {
             "name": "Incesario Negro",
@@ -2157,7 +2277,7 @@ export default {
         "gh-139": {
             "name": "Cuchillo Psíquico",
             "source": "Recompensa de escenario en solitario - {MT}",
-            "desc": "Siempre que vayas a hacer una acción de Aumento, añade {ATTACK} +1 a la acción entera."
+            "desc": "Siempre que vayas a hacer una acción de {AUGMENT}, añade {ATTACK} +1 a la acción entera."
         },
         "gh-140": {
             "name": "Escudo del Sol",
@@ -2193,12 +2313,12 @@ export default {
         "gh-146": {
             "name": "Laúd Magistral",
             "source": "Recompensa de escenario en solitario - {SS}",
-            "desc": "Después de realizar una acción de Canción, realiza de inmediato una acción de {ATTACK} 2 o {MOVE} 2."
+            "desc": "Después de realizar una acción de {SONG}, realiza de inmediato una acción de {ATTACK} 2 o {MOVE} 2."
         },
         "gh-147": {
             "name": "Capa del Cazador",
             "source": "Recompensa de escenario en solitario - {DS}",
-            "desc": "Siempre que realices una acción de Condena, inflinge {MUDDLE} al objetivo de la Condena."
+            "desc": "Siempre que realices una acción de {DOOM}, inflinge {MUDDLE} al objetivo de la {DOOM}."
         },
         "gh-148": {
             "name": "Bata del Doctor",
@@ -2213,7 +2333,7 @@ export default {
         "gh-150": {
             "name": "Vara de Mando",
             "source": "Recompensa de escenario en solitario - {BT}",
-            "desc": "Después de realizar una acción de Orden, juega 1 carta de tu mano y realiza de inmediato la misma mitad (superior o inferior) de esa carta que hayas realizado con la carta de la acción de Orden."
+            "desc": "Después de realizar una acción de {COMMAND}, juega 1 carta de tu mano y realiza de inmediato la misma mitad (superior o inferior) de esa carta que hayas realizado con la carta de la acción de {COMMAND}."
         },
         "gh-151": {
             "name": "Espada de las arenas",
@@ -2273,7 +2393,7 @@ export default {
         "gh-162": {
             "name": "Dispositivo de apertura de fisuras",
             "source": "Recompensa de {SCENARIO 112}\nSección 62 “Mechanical Splendor” in book.",
-            "desc": "Durante tu turno, has un movimiento de Teletransporte a cualquier hexágono desocupado a 4 hexágonos o menos de ti."
+            "desc": "Durante tu turno, has un movimiento de {TELEPORT} a cualquier hexágono desocupado a 4 hexágonos o menos de ti."
         },
         "gh-163": {
             "name": "Tiara de cristal",
@@ -2614,7 +2734,7 @@ export default {
             "name": "Obtén 30 de oro"
         },
         "gh-49": {
-            "name": "Nuevo escenario: Isla perdida {SCENARIO 17} (K-17)"
+            "name": "Nuevo escenario: {SCENARIO 17}"
         },
         "gh-50": {
             "name": "Obtén “Segunda piel” (Objeto 101)"
@@ -3171,7 +3291,7 @@ export default {
                 "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE}",
                 "Añade 2 cartas {AGAIN} {+1_WHITE}",
                 "Añade 2 cartas {AGAIN} {HEAL}1",
-                "Añade 2 cartas {AGAIN} {STUN}",
+                "Añade 1 carta {AGAIN} {STUN}",
                 "Añade 2 cartas {AGAIN} {LIGHT}",
                 "Añade 2 cartas {AGAIN} {SHIELD}1, Personal",
                 "Ignora los efectos negativos de los objetos y añade 2 cartas {+1_WHITE}",
