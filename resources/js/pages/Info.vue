@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-12 pb-4 px-4">
+    <div class="pt-12 pb-4 px-2 sm:px-4">
         <div id="info" class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-screen-sm">
             <h1 class="mb-4 text-xl">{{ $t('about us.title') }}</h1>
 

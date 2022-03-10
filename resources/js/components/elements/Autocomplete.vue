@@ -16,8 +16,9 @@
                 <ul v-if="list.length" class="mdc-list" aria-hidden="true"
                     aria-orientation="vertical" tabindex="-1">
                     <li v-for="(item, i) in items" :key="i"
-                        class="mdc-list-item cursor-pointer" @click="select(item)">
-                        <span class="mdc-list-item__text w-full">
+                        class="mdc-list-item" @click="select(item)">
+                        <span class="mdc-list-item__text w-full"
+                              :class="{'opacity-50': isDisabled(item)}">
                             <slot :name="slugify(item)">
                                 {{ item }}
                             </slot>
@@ -40,6 +41,7 @@ export default {
         id: {type: String},
         label: {type: String},
         list: {type: Array},
+        disabled: {type: Array},
         maxItems: {default: 10},
         width: {type: String, default: 'w-40'},
         autoClose: {type: Boolean, default: false},
@@ -86,7 +88,14 @@ export default {
 
             return this.list;
         },
+        isDisabled(item) {
+            return Array.isArray(this.disabled) && (this.disabled.includes(item) || this.disabled.includes(parseInt(item)));
+        },
         select(item) {
+            if (this.isDisabled(item)) {
+                return;
+            }
+
             this.$emit('change', item);
             if (this.autoClose) {
                 this.close();

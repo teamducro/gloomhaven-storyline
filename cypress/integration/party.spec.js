@@ -157,9 +157,20 @@ describe('Party', () => {
         cy.get('.mdc-dialog__content button').contains('Toggle B').parent().next().click();
     });
 
+    // it('It unlocked solo scenario after character is unlocked', () => {
+    //     cy.visit('/tracker/#/party');
+    //     utilities.scrollTo('100%', true);
+    //
+    //     cy.get('#character-SK').click();
+    //     cy.visit('/tracker/#/scenarios');
+    //
+    //     utilities.scrollTo('100%', true);
+    //     cy.get('#scenarios').contains('Caravan Escort').should('be.visible');
+    // });
+
     it('it unlocks envelope X', () => {
         cy.visit('/tracker/#/party');
-        utilities.scrollTo('100%');
+        utilities.scrollTo('100%', true);
         cy.get('li.order-17 g[fill="#D39382"]').should('not.exist');
         cy.get('input#unlock8').click();
         utilities.scrollTo('100%');

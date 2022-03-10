@@ -12,8 +12,9 @@ class Scenario {
         this.number = `#${this.id}`;
         this.root = data.root || false;
         this._name = data.name;
-        this._coordinates = data.coordinates;
+        this._coordinates = data.coordinates || {};
         this.is_side = data.is_side || false;
+        this.solo = data.solo || null;
         this.pages = data.pages || [];
         this.requirements = data.requirements || "";
         this.quests = data.quests || [];

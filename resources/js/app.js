@@ -1,5 +1,5 @@
 import ScenarioRepository from "./repositories/ScenarioRepository";
-import ScenarioValidator from "./services/ScenarioValidator";
+import ScenarioValidator from "./validators/ScenarioValidator";
 import SocialSharing from 'vue-social-sharing';
 import VueClipboard from 'vue-clipboard2';
 import ShareState from "./services/ShareState";
@@ -31,9 +31,9 @@ import polyfills from "./services/app/polyfills";
 import dayjs from "dayjs";
 import localizedFormat from 'dayjs/plugin/localizedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
-import TreasureValidator from "./services/TreasureValidator";
+import TreasureValidator from "./validators/TreasureValidator";
 import Vue from 'vue';
-import LanguageSwitch from "./components/elements/LanguageSwitch";
+import setInitialLanguage from "./services/app/setInitialLanguage";
 
 const {RayPlugin} = require('vue-ray/vue2');
 
@@ -147,9 +147,7 @@ window.app = new Vue({
         this.$bus.$emit('open-donations');
 
         listenToCrtlS();
-
-        const languageSwitchComponent = Vue.extend(LanguageSwitch);
-        (new languageSwitchComponent()).$mount();
+        setInitialLanguage();
     },
     methods: {
         async campaignsChanged(shouldSync = true) {

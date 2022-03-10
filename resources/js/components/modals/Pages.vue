@@ -6,7 +6,7 @@
                     <webp v-for="page in pages"
                           :src="pageSrc(page)"
                           :key="'page' + page"
-                          :alt="'Page #' + page"
+                          :alt="'Page #' + pageId(page)"
                           :class="{'md:w-1/2': hasMultiplePages}"/>
                 </div>
             </div>
@@ -43,7 +43,7 @@ export default {
             return this.pages.length > 1;
         },
         title() {
-            return this.$tc('Page', this.pages.length) + ' #' + this.pages.join(', ');
+            return this.$tc('Page', this.pages.length) + ' #' + this.pages.map(p => this.pageId(p)).join(', ');
         }
     },
     methods: {
@@ -61,6 +61,10 @@ export default {
             } else {
                 this.zoom.moveTo(0, 0);
             }
+        },
+        pageId(page) {
+            const n = page.lastIndexOf('/');
+            return page.substring(n + 1);
         },
         preload() {
             this.pages.forEach((page) => {

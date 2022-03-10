@@ -1,5 +1,5 @@
 <template>
-    <div v-if="sheet" class="pt-12 pb-4 px-4 md:px-8">
+    <div v-if="sheet" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div id="party" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
@@ -172,7 +172,7 @@
                                   :id="'character-'+id"
                                   :checked="checked"
                                   :disabled="sheet.starterCharacters.includes(id)"
-                                  @change="(_, isChecked) => {sheet.characterUnlocks[id] = isChecked; store()}"></checkbox>
+                                  @change="(_, isChecked) => {sheet.characterUnlocks[id] = isChecked; scenarioRepository.scenarioValidator.validate(); store()}"></checkbox>
                         <span class="w-8 font-title">
                             <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
                         </span>
@@ -189,6 +189,7 @@ import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
 import SheetRepository from "../repositories/SheetRepository";
+import ScenarioRepository from "../repositories/ScenarioRepository";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
@@ -249,7 +250,8 @@ export default {
             renderX: 0,
             game: 'gh',
             storySyncer: new StorySyncer,
-            sheetRepository: new SheetRepository
+            sheetRepository: new SheetRepository,
+            scenarioRepository: new ScenarioRepository
         }
     },
     watch: {

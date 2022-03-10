@@ -36,7 +36,7 @@ export default {
                 'en': 'English',
                 'fr': 'Français',
                 'it': 'Italiano',
-                'de': 'Deutsche',
+                'de': 'Deutsch',
                 'es': 'Español'
             },
             flags: {
@@ -73,7 +73,7 @@ export default {
             loadLanguageAsync(this.current);
             store.set('lang', this.current);
         },
-        setInitialLanguage() {
+        getInitialLanguage() {
             let lang = store.get('lang');
 
             if (!lang) {
@@ -84,7 +84,10 @@ export default {
                 }
             }
 
-            this.current = lang || window.i18n.locale;
+            return lang;
+        },
+        setInitialLanguage() {
+            this.current = this.getInitialLanguage() || window.i18n.locale;
         },
         validLanguage(lang) {
             return this.languages.hasOwnProperty(lang);
