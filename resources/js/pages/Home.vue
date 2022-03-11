@@ -191,11 +191,15 @@
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
-                            Forgotten circles and Jaws of the Lion can be tracked in Gloomhaven Storyline
+                            Forgotten circles and Jaws of the Lion can be tracked in Gloomhaven Storyline.
+                        </p>
+                        <p class="text-gray-500 mb-2">
+                            Solo scenarios of all the unlockable characters are also included!
                         </p>
                     </template>
                     <template v-slot:right>
-
+                        <webp src="/img/fc-jotl.jpg" class="w-full max-w-76 mx-auto rounded-md shadow-md"
+                              alt="Forgotten circles and Jaws of the Lion"/>
                     </template>
                 </two-column-content>
 

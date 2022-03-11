@@ -34,6 +34,7 @@ module.exports = {
                 '2px': '2px'
             },
             maxWidth: {
+                '76': '18.5rem',
                 'party': '1041px'
             },
             screens: {
