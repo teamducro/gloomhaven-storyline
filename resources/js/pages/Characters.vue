@@ -116,7 +116,7 @@
                                    :perks.sync="character.perks"
                                    :character="character"
                                    @change="store"/>
-                            <div v-if="soloScenario" class="mt-5 flex">
+                            <div v-if="soloScenario" :key="'solo-'+soloScenario.id" class="mt-5 flex">
                                 <span class="font-title mr-2">{{ $t('Solo') }}:</span>
                                 <scenario-number :scenario="soloScenario" show-name/>
                             </div>
