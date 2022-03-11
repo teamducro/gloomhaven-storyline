@@ -384,6 +384,7 @@ export default {
 
             if (!this.sheet.characterUnlocks[id]) {
                 this.sheet.characterUnlocks[id] = true;
+                this.sheet.store();
                 this.scenarioRepository.scenarioValidator.validate();
             }
             const character = this.characterRepository.createCharacter(this.sheet, id);

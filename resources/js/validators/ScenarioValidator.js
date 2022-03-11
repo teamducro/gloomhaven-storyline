@@ -43,12 +43,12 @@ export default class ScenarioValidator {
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         if (scenario.isHidden()) {
-            if (states.has(ScenarioState.complete) || unlocked || scenario.root || (scenario.solo && this.sheet.characterUnlocks[scenario.solo])) {
+            if (states.has(ScenarioState.complete) || unlocked || scenario.root || this.soloScenarioUnlocked(scenario)) {
                 this.scenarioRepository.setIncomplete(scenario);
                 this.needsValidating = true;
             }
         } else {
-            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked && (!scenario.solo || (scenario.solo && this.sheet.characterUnlocks[scenario.solo] === false))) {
+            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked && !this.soloScenarioUnlocked(scenario)) {
                 this.scenarioRepository.setHidden(scenario);
                 this.needsValidating = true;
             }
@@ -170,6 +170,16 @@ export default class ScenarioValidator {
 
     linkedStates(scenario) {
         return this.linkedScenarios(scenario).pluck('state', 'state');
+    }
+
+    soloScenarioUnlocked(scenario) {
+        if (!scenario.solo) {
+            return false;
+        }
+
+        const partyCharacters = collect(this.sheet.characters).pluck('id').toArray()
+
+        return this.sheet.characterUnlocks[scenario.solo] || partyCharacters.includes(scenario.solo)
     }
 
     get scenarioRepository() {
