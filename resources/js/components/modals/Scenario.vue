@@ -425,7 +425,6 @@ export default {
         async open(id) {
             await this.makeSureScenariosAreLoaded();
             const scenario = this.scenarioRepository.find(id);
-            console.log(scenario)
 
             // Can't open hidden scenario's for now.
             if (!scenario || (scenario.isHidden() && !scenario.is_side)) {

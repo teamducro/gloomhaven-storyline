@@ -172,7 +172,7 @@
                                   :id="'character-'+id"
                                   :checked="checked"
                                   :disabled="sheet.starterCharacters.includes(id)"
-                                  @change="(_, isChecked) => {sheet.characterUnlocks[id] = isChecked; scenarioRepository.scenarioValidator.validate(); store()}"></checkbox>
+                                  @change="(_, isChecked) => {unlockCharacter(id, isChecked)}"></checkbox>
                         <span class="w-8 font-title">
                             <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
                         </span>
@@ -290,6 +290,12 @@ export default {
             this.$refs['road-events']?.reset();
 
             this.loading = false;
+        },
+        unlockCharacter(id, isChecked) {
+            this.sheet.characterUnlocks[id] = isChecked;
+            this.sheet.store();
+            this.scenarioRepository.scenarioValidator.validate();
+            this.store();
         },
         store() {
             if (this.loading) {
