@@ -663,7 +663,7 @@ Erfahrungexport default {
         "gh-65": {
             "name": "Schwefelmine",
             "rewards": [
-                "“Alter Bohrer”-Design (Item 112)"
+                "“Alter Bohrer”-Design (Gegenstand 112)"
             ]
         },
         "gh-66": {
@@ -672,19 +672,19 @@ Erfahrungexport default {
         "gh-67": {
             "name": "Arkane Bibliothek",
             "rewards": [
-                "“Power Core” (Item 132)"
+                "“Energie Kern” (Gegensand 132)"
             ]
         },
         "gh-68": {
             "name": "Giftmoor",
             "rewards": [
-                "2 “Major Healing Potions” (Item 027)"
+                "2 “Großer Heiltrank” (Gegenstand 027)"
             ]
         },
         "gh-69": {
             "name": "Brunnen der Glücklosen",
             "rewards": [
-                "15 gold each"
+                "je 15 Gold"
             ]
         },
         "gh-70": {
@@ -696,7 +696,7 @@ Erfahrungexport default {
         "gh-71": {
             "name": "Windumtostes Hochland",
             "rewards": [
-                "2 “Major Power Potions” (Item 041)"
+                "2 “Großer Krafttrank” (Gegenstand 041)"
             ]
         },
         "gh-72": {
@@ -715,14 +715,14 @@ Erfahrungexport default {
         "gh-74": {
             "name": "Handelsschiff",
             "rewards": [
-                "10 gold each",
+                "je 10 Gold",
                 "+2 Wohlstand"
             ]
         },
         "gh-75": {
             "name": "Überwucherter Friedhof",
             "rewards": [
-                "60 gold each"
+                "je 60 Gold"
             ]
         },
         "gh-76": {
@@ -731,7 +731,7 @@ Erfahrungexport default {
         "gh-77": {
             "name": "Kammer der Geheimnisse",
             "rewards": [
-                "5 experience each"
+                "je 5 Erfahrung"
             ]
         },
         "gh-78": {
@@ -743,19 +743,19 @@ Erfahrungexport default {
         "gh-79": {
             "name": "Verschollener Tempel",
             "rewards": [
-                "15 gold each"
+                "je 15 Gold"
             ]
         },
         "gh-80": {
             "name": "Wachtburg",
             "rewards": [
-                "10 experience each"
+                "je 10 Erfahrung"
             ]
         },
         "gh-81": {
             "name": "Tempel des Zwielichts",
             "rewards": [
-                "10 experience each"
+                "je 10 Erfahrung"
             ]
         },
         "gh-82": {
@@ -773,20 +773,20 @@ Erfahrungexport default {
         "gh-83": {
             "name": "Schatten im Innern",
             "rewards": [
-                "40 collective gold"
+                "40 gemeinsames Gold"
             ]
         },
         "gh-84": {
             "name": "Kristallhöhle",
             "rewards": [
-                "“Resonant Crystal” (Item 133)",
+                "“Resonanzkristall” (Gegenstand 133)",
                 "+1 Wohlstand"
             ]
         },
         "gh-85": {
             "name": "Sonnentempel",
             "rewards": [
-                "“Orb of Dawn” (Item 121)"
+                "“Kugel des Morgens” (Gegenstand 121)"
             ]
         },
         "gh-86": {
@@ -805,38 +805,38 @@ Erfahrungexport default {
         "gh-88": {
             "name": "Ebene des Wassers",
             "rewards": [
-                "“Staff of Summoning” (Item 120)"
+                "“Beschwörungsstab” (Gegenstand 120)"
             ]
         },
         "gh-89": {
             "name": "Syndikatsversteck",
             "rewards": [
-                "50 collective gold"
+                "50 gemeinsames Gold"
             ]
         },
         "gh-90": {
             "name": "Dämonischer Riss",
             "rewards": [
-                "“Black Censer” (Item 128)"
+                "“Schwarzes Rauchfass” (Gegenstand 128)"
             ]
         },
         "gh-91": {
             "name": "Wilde Schlacht",
             "rewards": [
-                "2 ✔ each"
+                "je 2 ✔"
             ]
         },
         "gh-92": {
             "name": "Gassenschlägerei",
             "rewards": [
-                "10 gold each",
+                "je 10 Gold",
                 "-3 Ansehen"
             ]
         },
         "gh-93": {
             "name": "Versunkenes Schiff",
             "rewards": [
-                "10 experience each"
+                "je 10 Erfahrung"
             ]
         },
         "gh-94": {
@@ -845,38 +845,38 @@ Erfahrungexport default {
         "gh-95": {
             "name": "Zahltag",
             "rewards": [
-                "“Skull of Hatred” (Item 119)"
+                "“Schädel des Hasses” (Gegenstand 119)"
             ]
         },
         "fc-96": {
             "name": "Unerwartete Besucher",
             "rewards": [
-                "10 experience each",
-                "Add City and Road Events 82 to their respective decks"
+                "je 10 Erfahrung",
+                "Fügt Stadt- sowie Wegereignis 82 den enstsprechenden Decks hinzu"
             ]
         },
         "fc-97": {
-            "name": "Neigkeiten",
+            "name": "Neuigkeiten",
             "rewards": [
-                "10 gold each",
-                "Add City Events 88, 89 and 90 to the deck"
+                "je 10 Gold",
+                "Fügt die Stadtereignisse 88,89 und 90 dem Stadtereignis-Deck hinzu"
             ]
         },
         "fc-98": {
             "name": "Flammenmeer",
             "rewards": [
                 [
-                    "10 gold each",
+                    "je 10 Gold",
                     "+1 Ansehen",
                     "+1 Wohlstand",
-                    "Add City Event 86 to the deck"
+                    "Fügt Stadtereignis 86 dem Stadtereignis-Deck hinzu"
                 ],
                 [
-                    "5 gold each",
+                    "je 5 Gold",
                     "+1 Ansehen"
                 ],
                 [
-                    "5 gold each",
+                    "je 5 Gold",
                     "+1 Ansehen"
                 ]
             ]
@@ -885,7 +885,7 @@ Erfahrungexport default {
             "name": "Nachbeben",
             "rewards": [
                 [
-                    "5 gold each",
+                    "je 5 Gold",
                     "“Minor Antidote” (Item 153)"
                 ],
                 [
