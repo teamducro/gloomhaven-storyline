@@ -1,4 +1,4 @@
-export default {
+Erfahrungexport default {
     "Storyline": "Handlungsstrang",
     "Map": "Karte",
     "Scenario list": "Liste der Szenarien",
@@ -484,18 +484,18 @@ export default {
         "gh-35": {
             "name": "Zinnen von Gloomhaven A",
             "rewards": [
-                "30 gold each",
-                "5 reputation",
-                "-2 prosperity",
+                "je 30 Gold",
+                "+5 Ansehen",
+                "-2 Wohlstand",
                 "Add City Event 79 to the deck"
             ]
         },
         "gh-36": {
             "name": "Zinnen von Gloomhaven B",
             "rewards": [
-                "10 gold each",
-                "+4 reputation",
-                "Add City Event 78 to the deck"
+                "je 10 Gold",
+                "+4 Ansehen",
+                "Fügt Stadtereignis 78 dem Stadtereignis-Deck hinzu"
             ]
         },
         "gh-37": {
@@ -504,13 +504,13 @@ export default {
         "gh-38": {
             "name": "Sklavenpferche",
             "rewards": [
-                "+1 reputation"
+                "+1 Ansehen"
             ]
         },
         "gh-39": {
             "name": "Tückische Kluft",
             "rewards": [
-                "10 experience each"
+                "je 10 Erfahrung"
             ]
         },
         "gh-40": {
@@ -519,10 +519,10 @@ export default {
         "gh-41": {
             "name": "Verfallenes Grab",
             "rewards": [
-                "50 gold each",
-                "25 experience each",
-                "2 ✔ each",
-                "+2 prosperity"
+                "je 50 Gold",
+                "je 25 Erfahrung each",
+                "je 2 ✔",
+                "+2 Wohlstand"
             ]
         },
         "gh-42": {
@@ -537,15 +537,15 @@ export default {
         "gh-44": {
             "name": "Stammesangriff",
             "rewards": [
-                "Open envelope {DS}",
-                "+2 reputation"
+                "Öffnet Umschlag {DS}",
+                "+2 Ansehen"
             ]
         },
         "gh-45": {
             "name": "Rebellensumpf",
             "rewards": [
-                "20 gold each",
-                "-2 reputation"
+                "je 20 Gold",
+                "-2 Ansehen"
             ]
         },
         "gh-46": {
@@ -560,24 +560,24 @@ export default {
         "gh-49": {
             "name": "Letzter Widerstand",
             "rewards": [
-                "50 gold each",
-                "-3 reputation"
+                "je 50 Gold",
+                "-3 Ansehen"
             ]
         },
         "gh-50": {
             "name": "Geisterfestung",
             "rewards": [
-                "+3 reputation",
-                "-2 prosperity"
+                "+3 Ansehen",
+                "-2 Wohlstand"
             ]
         },
         "gh-51": {
             "name": "Die Leere",
             "rewards": [
-                "+5 reputation",
-                "+5 prosperity",
-                "Add City Event 81 to the deck",
-                "Add Road Event 69 to the deck"
+                "+5 Ansehen",
+                "+5 Wohlstand",
+                "Fügt Stadtereignis 81 dem Stadtereignis-Deck hinzu",
+                "Fügt Wegereignis 69 dem Wegereignis-Deck hinzu"
             ]
         },
         "gh-52": {
@@ -586,44 +586,44 @@ export default {
         "gh-53": {
             "name": "Unter der Krypta",
             "rewards": [
-                "The Seeker of Xorn receives: “Staff of Xorn” (Item 114) The Seeker cannot sell this item."
+                "Der Sucher Xorn's erhält: “Xorn's Stab” (Item 114) Der Sucher kann diesen Gegenstand nicht verkaufen."
             ]
         },
         "gh-54": {
             "name": "Eispalast",
             "rewards": [
-                "Immediately retire the Seeker of Xorn",
-                "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
-                "Open envelope {PH}"
+                "Der Sucher Xorn's geht sofort in den Ruhestand",
+                "Fügt anstelle der normalen Ruhestands-Ereignisse des Charakters das Stadt- sowie Wegereignis 59 den entsprechenden Decks hinzu",
+                "Öffnet Umschlag {PH}"
             ]
         },
         "gh-55": {
             "name": "Nebeldickicht",
             "rewards": [
-                "10 collective gold"
+                "10 gemeinsames Gold"
             ]
         },
         "gh-56": {
             "name": "Banditenwald",
             "rewards": [
-                "“Take Back the Trees” quest complete",
-                "Open envelope {DS}",
-                "10 gold each",
-                "+2 reputation"
+                "“Take Back the Trees”-Quest abgeschlossen",
+                "Öffnet Umschlag {DS}",
+                "je 10 Gold",
+                "+2 Ansehen"
             ]
         },
         "gh-57": {
             "name": "Ermittlungen",
             "rewards": [
-                "+1 reputation"
+                "+1 Ansehen"
             ]
         },
         "gh-58": {
             "name": "Blutige Hütte",
             "rewards": [
-                "“Vengeance” quest complete",
-                "Open envelope X",
-                "+2 reputation"
+                "Rache”-Quest abgeschlossen",
+                "Öffnet Umschlag X",
+                "+2 Ansehen"
             ]
         },
         "gh-59": {
@@ -632,9 +632,9 @@ export default {
         "gh-60": {
             "name": "Alchemielabor",
             "rewards": [
-                "“Finding the Cure” quest complete",
-                "Open envelope X",
-                "+1 prosperity"
+                "“Finding the Cure”-Quest abgeschlossen",
+                "Öffnet Umschlag X",
+                "+1 Wohlstand"
             ]
         },
         "gh-61": {
@@ -643,27 +643,27 @@ export default {
         "gh-62": {
             "name": "Grube der Seelen",
             "rewards": [
-                "“The Fall of Man” quest complete",
-                "Open envelope {NS}",
-                "10 experience each"
+                "“The Fall of Man”-Quest abgeschlossen",
+                "Öffnet Umschlag {NS}",
+                "je 10 Erfahrung"
             ]
         },
         "gh-63": {
             "name": "Lavagrube",
             "rewards": [
-                "15 gold each"
+                "je 15 Gold"
             ]
         },
         "gh-64": {
             "name": "Unterwasserlagune",
             "rewards": [
-                "10 experience each"
+                "je 10 Erfahrung"
             ]
         },
         "gh-65": {
             "name": "Schwefelmine",
             "rewards": [
-                "“Ancient Drill” design (Item 112)"
+                "“Alter Bohrer”-Design (Item 112)"
             ]
         },
         "gh-66": {
@@ -690,7 +690,7 @@ export default {
         "gh-70": {
             "name": "Ketteninsel",
             "rewards": [
-                "+2 prosperity"
+                "+2 Wohlstand"
             ]
         },
         "gh-71": {
@@ -702,21 +702,21 @@ export default {
         "gh-72": {
             "name": "Triefender Hain",
             "rewards": [
-                "+1 reputation",
-                "+1 prosperity"
+                "+1 Ansehen",
+                "+1 Wohlstand"
             ]
         },
         "gh-73": {
             "name": "Felssturzklamm",
             "rewards": [
-                "+1 reputation"
+                "+1 Ansehen"
             ]
         },
         "gh-74": {
             "name": "Handelsschiff",
             "rewards": [
                 "10 gold each",
-                "+2 prosperity"
+                "+2 Wohlstand"
             ]
         },
         "gh-75": {
@@ -737,7 +737,7 @@ export default {
         "gh-78": {
             "name": "Opfergrube",
             "rewards": [
-                "+3 reputation"
+                "+3 Ansehen"
             ]
         },
         "gh-79": {
@@ -762,11 +762,11 @@ export default {
             "name": "Brandberg",
             "rewards": [
                 [
-                    "+1 reputation"
+                    "+1 Ansehen"
                 ],
                 [
-                    "-1 reputation",
-                    "-2 prosperity"
+                    "-1 Ansehen",
+                    "-2 Wohlstand"
                 ]
             ]
         },
@@ -780,7 +780,7 @@ export default {
             "name": "Kristallhöhle",
             "rewards": [
                 "“Resonant Crystal” (Item 133)",
-                "+1 prosperity"
+                "+1 Wohlstand"
             ]
         },
         "gh-85": {
@@ -792,14 +792,14 @@ export default {
         "gh-86": {
             "name": "Verwüstetes Dorf",
             "rewards": [
-                "+2 reputation"
+                "+2 Ansehen"
             ]
         },
         "gh-87": {
             "name": "Bucht der Fäulnis",
             "rewards": [
-                "+1 reputation",
-                "+1 prosperity"
+                "+1 Ansehen",
+                "+1 Wohlstand"
             ]
         },
         "gh-88": {
@@ -830,7 +830,7 @@ export default {
             "name": "Gassenschlägerei",
             "rewards": [
                 "10 gold each",
-                "-3 reputation"
+                "-3 Ansehen"
             ]
         },
         "gh-93": {
@@ -867,17 +867,17 @@ export default {
             "rewards": [
                 [
                     "10 gold each",
-                    "+1 reputation",
-                    "+1 prosperity",
+                    "+1 Ansehen",
+                    "+1 Wohlstand",
                     "Add City Event 86 to the deck"
                 ],
                 [
                     "5 gold each",
-                    "+1 reputation"
+                    "+1 Ansehen"
                 ],
                 [
                     "5 gold each",
-                    "+1 reputation"
+                    "+1 Ansehen"
                 ]
             ]
         },
@@ -890,7 +890,7 @@ export default {
                 ],
                 [
                     "10 gold each",
-                    "+1 prosperity",
+                    "+1 Wohlstand",
                     "“Minor Antidote” (Item 153)"
                 ]
             ]
@@ -905,21 +905,21 @@ export default {
             "name": "Verhüllte Krypta",
             "rewards": [
                 "20 collective gold",
-                "+1 reputation",
-                "+1 prosperity"
+                "+1 Ansehen",
+                "+1 Wohlstand"
             ]
         },
         "fc-102": {
             "name": "Bazar des Wissens",
             "rewards": [
                 "15 experience each",
-                "If no more than 2+C inhabitants were intimidated: +2 reputation Otherwise: -2 reputation"
+                "If no more than 2+C inhabitants were intimidated: +2 Ansehen Otherwise: -2 Ansehen"
             ]
         },
         "fc-103": {
             "name": "Wo Bedarf ist",
             "rewards": [
-                "+2 prosperity",
+                "+2 Wohlstand",
                 "Add City Event 87 to the deck"
             ]
         },
@@ -943,7 +943,7 @@ export default {
                 ],
                 [
                     "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements",
-                    "+ 1 prosperity"
+                    "+ 1 Wohlstand"
                 ]
             ]
         },
@@ -1013,7 +1013,7 @@ export default {
             "rewards": [
                 "135 gold each",
                 "This money must immediately be spent on any Move {MOVE}, Range {RANGE} or Jump {JUMP} enhancements",
-                "+1 prosperity"
+                "+1 Wohlstand"
             ]
         },
         "fc-114": {
@@ -1025,8 +1025,8 @@ export default {
         "fc-115": {
             "name": "Ungewisse Zukunft",
             "rewards": [
-                "+3 reputation",
-                "+1 prosperity",
+                "+3 Ansehen",
+                "+1 Wohlstand",
                 "Retire the Aesther Diviner {DR}",
                 "Add City and Road Events 83 to their respective decks"
             ]
@@ -1440,361 +1440,361 @@ export default {
     "items": {
         "gh-1": {
             "name": "Wanderstiefel",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "During your movement, add +2 {MOVE} to the movement.",
             "faq": "Boots of Striding only add to the numerical value of an existing single movement ability. They do not give you a free movement action."
         },
         "gh-2": {
             "name": "Flügelschuhe",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "During your movement, add {JUMP} to the movement.",
             "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
         },
         "gh-3": {
             "name": "Fellrüstung",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "On the next two sources of damage to you from attacks, gain {SHIELD} 1. Add 2 {-1} to your attack modifier deck.",
             "faq": "Hide Armor only grants the shield for the attack, not until the end of the round."
         },
         "gh-4": {
             "name": "Lederrüstung",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "When attacked, the attacker gains Disadvantage on the attack.",
             "faq": "The Leather Armor must be used before the enemy draws an attack modifier card."
         },
         "gh-5": {
             "name": "Mantel der Unsichtbarkeit",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "During your turn, gain {INVISIBLE}."
         },
         "gh-6": {
             "name": "Adleraugenbrille",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "During your attack, gain Advantage on the entire Attack action."
         },
         "gh-7": {
             "name": "Eisenhelm",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
         },
         "gh-8": {
             "name": "Dreieckschild",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
         },
         "gh-9": {
             "name": "Starkbogen",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "During your ranged attack, ignore all Shield values for the entire Attack action."
         },
         "gh-10": {
             "name": "Kriegshammer",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "During your melee attack, add {STUN} to the entire Attack action."
         },
         "gh-11": {
             "name": "Giftdolch",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "During your melee attack, add {POISON} to a single attack."
         },
         "gh-12": {
             "name": "Kleiner Heiltrank",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "During your turn, perform a “{HEAL} 3, self” action."
         },
         "gh-13": {
             "name": "Kleiner Ausdauertrank",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "During your turn, {RECOVER} up to two of your discarded cards.",
             "faq": "[Errata] The item should allow you to recover only one discarded card. This is change in an upcoming expansion but may be used for the base game."
         },
         "gh-14": {
             "name": "Kleiner Krafttrank",
-            "source": "Prosperity 1",
+            "source": "Wohlstand 1",
             "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
         },
         "gh-15": {
             "name": "Schnellläufer",
-            "source": "Prosperity 2",
+            "source": "Wohlstand 2",
             "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 10."
         },
         "gh-16": {
             "name": "Taschenmantel",
-            "source": "Prosperity 2",
+            "source": "Wohlstand 2",
             "desc": "You can carry two additional small items."
         },
         "gh-17": {
             "name": "Ermächtigungstalisman",
-            "source": "Prosperity 2",
+            "source": "Wohlstand 2",
             "desc": "During your turn, {REFRESH} one of your consumed small items."
         },
         "gh-18": {
             "name": "Streitaxt",
-            "source": "Prosperity 2",
+            "source": "Wohlstand 2",
             "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
         },
         "gh-19": {
             "name": "Wurfnetz",
-            "source": "Prosperity 2",
+            "source": "Wohlstand 2",
             "desc": "During your ranged attack, add {IMMOBILIZE} to a single attack."
         },
         "gh-20": {
             "name": "Kleiner Manatrank",
-            "source": "Prosperity 2",
+            "source": "Wohlstand 2",
             "desc": "During your turn, create any element. {ANY}"
         },
         "gh-21": {
             "name": "Betäubungspulver",
-            "source": "Prosperity 2",
+            "source": "Wohlstand 2",
             "desc": "During your attack, add {STUN} to a single attack."
         },
         "gh-22": {
             "name": "Schwere Beinpanzer",
-            "source": "Prosperity 3",
+            "source": "Wohlstand 3",
             "desc": "You are immune to all forced movement caused by enemies or scenario effects. Add 1 {-1} to your attack modifier deck."
         },
         "gh-23": {
             "name": "Kettenhemd",
-            "source": "Prosperity 3",
+            "source": "Wohlstand 3",
             "desc": "On the next three sources of damage to you from attacks, gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
             "faq": "Chainmail only grants the shield for the attack, not until the end of the round."
         },
         "gh-24": {
             "name": "Amulett des Lebens",
-            "source": "Prosperity 3",
+            "source": "Wohlstand 3",
             "desc": "During your turn, {HEAL} 1 damage."
         },
         "gh-25": {
             "name": "Zackenschwert",
-            "source": "Prosperity 3",
+            "source": "Wohlstand 3",
             "desc": "During your melee attack, add {WOUND} to a single attack."
         },
         "gh-26": {
             "name": "Langspeer",
-            "source": "Prosperity 3",
+            "source": "Wohlstand 3",
             "desc": "Turn a single-target melee attack into the following: {AOE.LINE_0_1_1}"
         },
         "gh-27": {
             "name": "Großer Heiltrank",
-            "source": "Prosperity 3",
+            "source": "Wohlstand 3",
             "desc": "During your turn, perform a “{HEAL} 5, self” action."
         },
         "gh-28": {
             "name": "Mond-Ohrring",
-            "source": "Prosperity 3",
+            "source": "Wohlstand 3",
             "desc": "During your turn, {REFRESH} all of your spent items."
         },
         "gh-29": {
             "name": "Bequeme Schuhe",
-            "source": "Prosperity 4",
+            "source": "Wohlstand 4",
             "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
         },
         "gh-30": {
             "name": "Nietenrüstung",
-            "source": "Prosperity 4",
+            "source": "Wohlstand 4",
             "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
         },
         "gh-31": {
             "name": "Falkenhelm",
-            "source": "Prosperity 4",
+            "source": "Wohlstand 4",
             "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
         },
         "gh-32": {
             "name": "Turmschild",
-            "source": "Prosperity 4",
+            "source": "Wohlstand 4",
             "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
         },
         "gh-33": {
             "name": "Wurfbombe",
-            "source": "Prosperity 4",
+            "source": "Wohlstand 4",
             "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
         },
         "gh-34": {
             "name": "Großer Ausdauertrank",
-            "source": "Prosperity 4",
+            "source": "Wohlstand 4",
             "desc": "During your turn, {RECOVER} up to three of your discarded cards.",
             "faq": "[Errata] The item should allow you to recover only two discarded cards. This is change in an upcoming expansion but may be used in the base game."
         },
         "gh-35": {
             "name": "Falkenfigur",
-            "source": "Prosperity 4\n{SCENARIO 98} (Schatz #79)",
+            "source": "Wohlstand 4\n{SCENARIO 98} (Schatz #79)",
             "desc": "Summon Jade Falcon ({FLYING})",
             "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
         },
         "gh-36": {
             "name": "Laufstiefel",
-            "source": "Prosperity 5",
+            "source": "Wohlstand 5",
             "desc": "During your movement, add +3 {MOVE} to the movement."
         },
         "gh-37": {
             "name": "Robe der Anrufung",
-            "source": "Prosperity 5",
+            "source": "Wohlstand 5",
             "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
         },
         "gh-38": {
             "name": "Beckenhaube",
-            "source": "Prosperity 5",
+            "source": "Wohlstand 5",
             "desc": "You are immune to {STUN} and {MUDDLE}. Add 2 {-1} to your attack modifier deck."
         },
         "gh-39": {
             "name": "Kettenhaken",
-            "source": "Prosperity 5",
+            "source": "Wohlstand 5",
             "desc": "During your ranged attack, add {PULL} 2 to the entire Attack action."
         },
         "gh-40": {
             "name": "Mehrzweckdolch",
-            "source": "Prosperity 5",
+            "source": "Wohlstand 5",
             "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 3 action instead of an {ATTACK} 2 action."
         },
         "gh-41": {
             "name": "Großer Krafttrank",
-            "source": "Prosperity 5\n{SCENARIO 105} (Schatz #83)",
+            "source": "Wohlstand 5\n{SCENARIO 105} (Schatz #83)",
             "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
         },
         "gh-42": {
             "name": "Ring der Eile",
-            "source": "Prosperity 5",
+            "source": "Wohlstand 5",
             "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of the card."
         },
         "gh-43": {
             "name": "Flinkstiefel",
-            "source": "Prosperity 6",
+            "source": "Wohlstand 6",
             "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 20."
         },
         "gh-44": {
             "name": "Spangenpanzer",
-            "source": "Prosperity 6",
+            "source": "Wohlstand 6",
             "desc": "On the next four sources of damage to you from attacks, gain {SHIELD} 1. Add 4 {-1} to your attack modifier deck."
         },
         "gh-45": {
             "name": "Kette des Dunkelpaktes",
-            "source": "Prosperity 6",
+            "source": "Wohlstand 6",
             "desc": "During your turn, {REFRESH} two of your consumed small items. Gain {CURSE}.",
             "faq": "The perk that ignores item effects does not prevent you from being cursed."
         },
         "gh-46": {
             "name": "Stachelschild",
-            "source": "Prosperity 6",
+            "source": "Wohlstand 6",
             "desc": "When damaged by an attack, gain {SHIELD} 1 and Retaliate 2 for the attack."
         },
         "gh-47": {
             "name": "Kriegssense",
-            "source": "Prosperity 6",
+            "source": "Wohlstand 6",
             "desc": "During your single-target melee attack action, turn the attack into the following:  {AOE.CLEAVE_0_1}"
         },
         "gh-48": {
             "name": "Großer Manatrank",
-            "source": "Prosperity 6\nReward from {SCENARIO 104}",
+            "source": "Wohlstand 6\nReward from {SCENARIO 104}",
             "desc": "During your turn, create any two elements. {ANY} {ANY}"
         },
         "gh-49": {
             "name": "Sonnen-Ohrring",
-            "source": "Prosperity 6",
+            "source": "Wohlstand 6",
             "desc": "During your turn, {REFRESH} all of your spent items and {HEAL} 3 damage."
         },
         "gh-50": {
             "name": "Panzerschuhe",
-            "source": "Prosperity 7",
+            "source": "Wohlstand 7",
             "desc": "If you move 1 or fewer hexes on your turn, gain {SHIELD} 1 for the round. Add 2 {-1} to your attack modifier deck."
         },
         "gh-51": {
             "name": "Schattenrüstung",
-            "source": "Prosperity 7",
+            "source": "Wohlstand 7",
             "desc": "When you are damaged by an attack, suffer no damage instead."
         },
         "gh-52": {
             "name": "Schutzamulett",
-            "source": "Prosperity 7\nReward from {SCENARIO 109}",
+            "source": "Wohlstand 7\nReward from {SCENARIO 109}",
             "desc": "You are immune to {POISON} and {WOUND}."
         },
         "gh-53": {
             "name": "Schwarzdolch",
-            "source": "Prosperity 7",
+            "source": "Wohlstand 7",
             "desc": "During your melee attack, add {CURSE} to a single attack."
         },
         "gh-54": {
             "name": "Stab des Ansehens",
-            "source": "Prosperity 7",
+            "source": "Wohlstand 7",
             "desc": "During your ranged attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
         },
         "gh-55": {
             "name": "Überragender Heiltrank",
-            "source": "Prosperity 7",
+            "source": "Wohlstand 7",
             "desc": "During your turn, perform a “{HEAL} 7, self” action."
         },
         "gh-56": {
             "name": "Ring der Brutalität",
-            "source": "Prosperity 7",
+            "source": "Wohlstand 7",
             "desc": "At the end of your turn, play one card from your hand and immediately perform the top action of the card."
         },
         "gh-57": {
             "name": "Sorglose Sandalen",
-            "source": "Prosperity 8",
+            "source": "Wohlstand 8",
             "desc": "Whenever you use the default bottom of an ability card perform a {MOVE} 4 action instead of a {MOVE} 2 action."
         },
         "gh-58": {
             "name": "Phasenmantel",
-            "source": "Prosperity 8",
+            "source": "Wohlstand 8",
             "desc": "Gain {FLYING}. While occupying an obstacle hex, you are considered Invisible and cannot attack"
         },
         "gh-59": {
             "name": "Teleskoplinse",
-            "source": "Prosperity 8\nOption from {SCENARIO 100}",
+            "source": "Wohlstand 8\nOption from {SCENARIO 100}",
             "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
         },
         "gh-60": {
             "name": "Instabiler Sprengsatz",
-            "source": "Prosperity 8",
+            "source": "Wohlstand 8",
             "desc": "Turn a single target ranged attack into the following: {AOE.CUBE_2_2}. All allies in the attack area suffer 3 damage."
         },
         "gh-61": {
             "name": "Setzschild",
-            "source": "Prosperity 8",
+            "source": "Wohlstand 8",
             "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
         },
         "gh-62": {
             "name": "Schicksalspulver",
-            "source": "Prosperity 8",
+            "source": "Wohlstand 8",
             "desc": "During your attack, add {STUN}, {POISON}, and {CURSE} to a single attack."
         },
         "gh-63": {
             "name": "Glücksauge",
-            "source": "Prosperity 8",
+            "source": "Wohlstand 8",
             "desc": "During your turn, {STRENGTHEN} yourself and all adjacent allies."
         },
         "gh-64": {
             "name": "Sprintstiefel",
-            "source": "Prosperity 9",
+            "source": "Wohlstand 9",
             "desc": "During your movement, add +4 {MOVE} to the movement."
         },
         "gh-65": {
             "name": "Plattenpanzer",
-            "source": "Prosperity 9",
+            "source": "Wohlstand 9",
             "desc": "On the next five sources of damage to you from attacks, gain {SHIELD} 1. Add 5 {-1} to your attack modifier deck."
         },
         "gh-66": {
             "name": "Schreckensmaske",
-            "source": "Prosperity 9\n{SCENARIO 110} (Schatz #84)",
+            "source": "Wohlstand 9\n{SCENARIO 110} (Schatz #84)",
             "desc": "During your melee attack, add {PUSH} 1."
         },
         "gh-67": {
             "name": "Ausbalancierte Klinge",
-            "source": "Prosperity 9",
+            "source": "Wohlstand 9",
             "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 4 instead of an {ATTACK} 2 action."
         },
         "gh-68": {
             "name": "Hellebarde",
-            "source": "Prosperity 9\n{SCENARIO 111} (Schatz #92)\nSection 132 -> g106 “Strangler's Park” in book",
+            "source": "Wohlstand 9\n{SCENARIO 111} (Schatz #92)\nSection 132 -> g106 “Strangler's Park” in book",
             "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
         },
         "gh-69": {
             "name": "Stern-Ohrring",
-            "source": "Prosperity 9",
+            "source": "Wohlstand 9",
             "desc": "During your turn, {REFRESH} all of your spent items, {HEAL} 3 damage, and {RECOVER} up to two of your discarded cards."
         },
         "gh-70": {
             "name": "Ring der Chancen",
-            "source": "Prosperity 9\nFC Challenge Scenario, Rift Card 12 (Schatz #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
+            "source": "Wohlstand 9\nFC Challenge Scenario, Rift Card 12 (Schatz #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
             "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
         },
         "gh-71": {
