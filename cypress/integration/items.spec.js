@@ -66,7 +66,6 @@ describe('Items', () => {
         cy.get('a').contains('Ring of Skulls').click();
         cy.get('h2').contains('#123');
         utilities.closeModel();
-        utilities.closeModel();
 
         // The item is unlocked
         cy.visit('/tracker/#/items');
@@ -79,9 +78,9 @@ describe('Items', () => {
         cy.get('a').contains('Ring of Skulls').should('not.exist');
         utilities.closeModel();
 
-        // The item is locked
+        // The item should still be unlocked
         cy.visit('/tracker/#/items');
-        cy.get('#items').contains('Ring of Skulls').should('not.exist');
+        cy.get('#items').contains('Ring of Skulls');
     });
 
     it('It unlocks items from rewards', () => {
@@ -108,15 +107,15 @@ describe('Items', () => {
         cy.get('a').contains('Staff of Xorn').should('not.exist');
         utilities.closeModel();
 
-        // The item is locked
+        // The item should still be unlocked
         cy.visit('/tracker/#/items');
-        cy.get('#items').contains('Staff of Xorn').should('not.exist');
+        cy.get('#items').contains('Staff of Xorn');
     });
 
     it('It opens scenario modal from item modal', () => {
         cy.visit('/tracker?states=52_c-53_c');
         cy.visit('/tracker/#/items');
-        utilities.scrollTo('100%');
+        utilities.scrollTo('100%', true);
         cy.get('#items tbody tr:last').click();
         cy.get('.mdc-dialog__content button').contains(53).click();
         cy.get('.mdc-dialog__content span').contains('Reward from').should('not.exist');

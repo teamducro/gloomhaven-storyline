@@ -1396,7 +1396,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "Reward from Solo Scenario - {MT}",
-        "desc": "Any time you perform an Augment action, add +1 {ATTACK} to the entire action."
+        "desc": "Any time you perform an {AUGMENT} action, add +1 {ATTACK} to the entire action."
     },
     {
         "id": 140,
@@ -1464,7 +1464,7 @@
         "cost": 50,
         "slot": "Two Hands",
         "source": "Reward from Solo Scenario - {SS}",
-        "desc": "After performing any song action, immediately perform an Attack 2 or {MOVE} 2 action."
+        "desc": "After performing any {SONG} action, immediately perform an {ATTACK} 2 or {MOVE} 2 action."
     },
     {
         "id": 147,
@@ -1482,7 +1482,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "Reward from Solo Scenario - {SB}",
-        "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 Heal to their Heal."
+        "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 {HEAL} to their Heal."
     },
     {
         "id": 149,
@@ -1502,7 +1502,7 @@
         "slot": "Two Hands",
         "source": "Reward from Solo Scenario - {BT}",
         "spent": true,
-        "desc": "After performing a Command action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the Command action."
+        "desc": "After performing a {COMMAND} action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the {COMMAND} action."
     },
     {
         "id": 151,

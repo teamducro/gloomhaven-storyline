@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-12 pb-4 px-4 flex justify-center w-full">
+    <div class="pt-12 pb-4 px-2 sm:px-4 flex justify-center w-full">
 
         <div class="fixed right-0 top-0 mt-1 z-5">
             <dropdown ref="filter-dropdown" align="right">
@@ -14,7 +14,7 @@
                 <ul class="mdc-list overflow-y-auto" style="max-height: calc(100vh - 100px)"
                     ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
                     <li class="mdc-list-item cursor-pointer" @click="resetFilter(true)">
-                        <span class="mdc-list-item__text">Clear filter</span>
+                        <span class="mdc-list-item__text">{{ $t('Clear filter') }}</span>
                     </li>
 
                     <li role="separator" class="mdc-list-divider !my-2"></li>
@@ -23,12 +23,17 @@
                         class="mdc-list-item cursor-pointer"
                         :class="{'mdc-list-item--activated': stateFilter === state}"
                         @click="setStateFilter(state)">
-                        <span class="mdc-list-item__text capitalize">{{ state }}</span>
+                        <span class="mdc-list-item__text capitalize">{{ $t(state) }}</span>
                     </li>
                     <li class="mdc-list-item cursor-pointer"
-                        :class="{'mdc-list-item--activated': missedTreasuresFilter}"
-                        @click="setMissedTreasuresFilter">
-                        <span class="mdc-list-item__text">Missed Treasures</span>
+                        :class="{'mdc-list-item--activated': otherFilters.missedTreasures}"
+                        @click="setOtherFilter('missedTreasures')">
+                        <span class="mdc-list-item__text">{{ $t('Missed Treasures') }}</span>
+                    </li>
+                    <li class="mdc-list-item cursor-pointer"
+                        :class="{'mdc-list-item--activated': otherFilters.solo}"
+                        @click="setOtherFilter('solo')">
+                        <span class="mdc-list-item__text">{{ $t('Solo') }}</span>
                     </li>
 
                     <li v-if="regions.length" role="separator" class="mdc-list-divider !my-2"></li>
@@ -38,7 +43,7 @@
                         class="mdc-list-item cursor-pointer"
                         :class="{'mdc-list-item--activated': regionFilter.includes(region.id)}"
                         @click="toggleRegionFilter(region.id)">
-                        <span class="mdc-list-item__text">{{ region.name }}</span>
+                        <span class="mdc-list-item__text">{{ $t(region.name) }}</span>
                     </li>
                 </ul>
             </dropdown>
@@ -55,20 +60,21 @@
             >
                 <template slot="row" slot-scope="{row}">
                     <template v-if="row.isHidden()">
-                        <td @click="open(row)" colspan="2"></td>
-                        <td @click="open(row)"
-                            colspan="100" class="relative px-1 py-2 md:p-3 overflow-hidden"
+                        <td @click="open(row)" :colspan="row.solo ? 20 : 2"></td>
+                        <td @click="open(row)" v-if="!row.solo"
+                            colspan="20" class="relative px-1 py-2 md:p-3 overflow-hidden"
                             :class="{'opacity-50': !row.is_side}">#{{ row.id }}
                         </td>
                     </template>
                 </template>
                 <template slot="name" slot-scope="{value, row}">
-                    {{ row.number }} {{ $t(value) }}
+                    <span v-if="!row.solo">{{ row.number }}</span> {{ $t(value) }}
                 </template>
                 <template slot="image" slot-scope="{value, row}">
-                    <webp :src="row.image()"
+                    <webp v-if="!row.solo" :src="row.image()"
                           class="w-16 mr-4 my-1"
                           :alt="row.name"/>
+                    <character-icon class="w-12 inline-block" :character="row.solo" v-if="row.solo"/>
                 </template>
                 <template slot="state" slot-scope="{value, row}">
                     <i v-if="row.isRequired()"
@@ -89,19 +95,22 @@
 </template>
 
 <script>
-import {MDCList} from "@material/list/component";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import {ScenarioState} from "../models/ScenarioState";
 import When from "../services/When";
-import Helpers from "../services/Helpers";
+import CharacterIcon from "../components/elements/CharacterIcon";
 
 export default {
+    components: {CharacterIcon},
     data() {
         return {
             list: null,
             scenarios: null,
             regionFilter: [],
-            missedTreasuresFilter: null,
+            otherFilters: {
+                missedTreasures: false,
+                solo: false
+            },
             stateFilter: null,
             regions: [],
             columns: [],
@@ -161,7 +170,9 @@ export default {
             }
 
             // Filter is not applied
-            if (!this.regionFilter.length && !this.missedTreasuresFilter && !this.stateFilter) {
+            if (!this.regionFilter.length
+                && !Object.values(this.otherFilters).filter(s => s).length
+                && !this.stateFilter) {
                 return true;
             }
 
@@ -181,8 +192,10 @@ export default {
             // Apply other filters
             if (this.stateFilter) {
                 return scenario.state === this.stateFilter;
-            } else if (this.missedTreasuresFilter) {
+            } else if (this.otherFilters.missedTreasures) {
                 return scenario.missedTreasures;
+            } else if (this.otherFilters.solo) {
+                return scenario.solo;
             }
 
             return true;
@@ -214,10 +227,10 @@ export default {
                 ? this.regionFilter.splice(this.regionFilter.indexOf(id), 1)
                 : this.regionFilter.push(id);
         },
-        setMissedTreasuresFilter() {
-            if (!this.missedTreasuresFilter) {
+        setOtherFilter(filter) {
+            if (!this.otherFilters[filter]) {
                 this.resetFilter();
-                this.missedTreasuresFilter = true;
+                this.otherFilters[filter] = true;
             } else {
                 this.resetFilter();
             }
@@ -231,7 +244,7 @@ export default {
             }
         },
         resetFilter(clearRegions = false) {
-            this.missedTreasuresFilter = null;
+            Object.keys(this.otherFilters).forEach(filter => this.otherFilters[filter] = false);
             this.stateFilter = null;
             if (clearRegions) {
                 this.$refs['filter-dropdown'].close();

@@ -52,85 +52,86 @@ export default {
     data() {
         return {
             logs: [
-                {version: 1.0, description: 'Stable release.', date: dayjs('02-08-2020')},
-                {version: 1.1, description: 'Added quest summaries', date: dayjs('02-20-2020')},
-                {version: 1.2, description: 'Added treasures', date: dayjs('02-25-2020')},
+                {version: '1.0', description: 'Stable release.', date: dayjs('2020-02-08')},
+                {version: '1.1', description: 'Added quest summaries', date: dayjs('2020-02-20')},
+                {version: '1.2', description: 'Added treasures', date: dayjs('2020-02-25')},
                 {
-                    version: 1.3,
+                    version: '1.3',
                     description: 'Added some hidden scenario unlocks',
-                    date: dayjs('02-26-2020')
+                    date: dayjs('2020-02-26')
                 },
-                {version: 1.4, description: 'Menu', date: dayjs('03-05-2020')},
-                {version: 1.5, description: 'Scenario list view', date: dayjs('03-15-2020')},
-                {version: 1.6, description: 'Scenario filters', date: dayjs('03-18-2020')},
-                {version: 1.7, description: 'Tooltips', date: dayjs('03-22-2020')},
-                {version: 1.8, description: 'Side scenarios and donations', date: dayjs('03-27-2020')},
+                {version: '1.4', description: 'Menu', date: dayjs('2020-03-05')},
+                {version: '1.5', description: 'Scenario list view', date: dayjs('2020-03-15')},
+                {version: '1.6', description: 'Scenario filters', date: dayjs('2020-03-18')},
+                {version: '1.7', description: 'Tooltips', date: dayjs('2020-03-22')},
+                {version: '1.8', description: 'Side scenarios and donations', date: dayjs('2020-03-27')},
                 {
-                    version: 1.9,
+                    version: '1.9',
                     description: 'Map view, storyline colors and more filters',
-                    date: dayjs('04-03-2020')
+                    date: dayjs('2020-04-03')
                 },
                 {
-                    version: 1.10,
+                    version: '1.10',
                     description: 'Personal quests, city, road events',
-                    date: dayjs('04-04-2020')
+                    date: dayjs('2020-04-04')
                 },
-                {version: 1.11, description: 'Added a legend', date: dayjs('04-07-2020')},
-                {version: 1.12, description: 'Speed improvements', date: dayjs('04-08-2020')},
-                {version: 1.13, description: 'Multi language support', date: dayjs('04-21-2020')},
-                {version: 1.14, description: 'Achievement support', date: dayjs('05-12-2020')},
-                {version: 1.15, description: 'Achievement improvements', date: dayjs('05-18-2020')},
-                {version: 1.16, description: 'Language switcher', date: dayjs('05-18-2020')},
-                {version: 2.0, description: 'Synchronize progress', date: dayjs('07-06-2020')},
-                {version: 2.1, description: 'Party sheet', date: dayjs('08-31-2020')},
+                {version: '1.11', description: 'Added a legend', date: dayjs('2020-04-07')},
+                {version: '1.12', description: 'Speed improvements', date: dayjs('2020-04-08')},
+                {version: '1.13', description: 'Multi language support', date: dayjs('2020-04-21')},
+                {version: '1.14', description: 'Achievement support', date: dayjs('2020-05-12')},
+                {version: '1.15', description: 'Achievement improvements', date: dayjs('2020-05-18')},
+                {version: '1.16', description: 'Language switcher', date: dayjs('2020-05-18')},
+                {version: '2.0', description: 'Synchronize progress', date: dayjs('2020-07-06')},
+                {version: '2.1', description: 'Party sheet', date: dayjs('2020-08-31')},
                 {
-                    version: 2.2,
+                    version: '2.2',
                     description: 'Share party sheet in free version',
-                    date: dayjs('09-05-2020')
+                    date: dayjs('2020-09-05')
                 },
                 {
-                    version: 2.3,
+                    version: '2.3',
                     description: 'Sync progress after connection lost, sync messages in bottom right, ctrl+s support',
-                    date: dayjs('10-03-2020')
+                    date: dayjs('2020-10-03')
                 },
                 {
-                    version: 2.4,
+                    version: '2.4',
                     description: 'Virtual Gloomhaven Board support',
-                    date: dayjs('10-17-2020')
+                    date: dayjs('2020-10-17')
                 },
-                {version: 2.5, description: 'Launch website', date: dayjs('10-29-2020')},
+                {version: '2.5', description: 'Launch website', date: dayjs('2020-10-29')},
                 {
-                    version: 2.6,
+                    version: '2.6',
                     description: 'Added ability to add achievements manually (only gained by event cards)',
-                    date: dayjs('11-18-2020')
+                    date: dayjs('2020-11-18')
                 },
                 {
-                    version: 2.7,
+                    version: '2.7',
                     description: 'Snapshots and data transfer between campaigns',
-                    date: dayjs('12-26-2020')
+                    date: dayjs('2020-12-26')
                 },
-                {version: 2.8, description: 'Italian language', date: dayjs('01-15-2021')},
-                {version: 2.9, description: 'Item Database', date: dayjs('02-03-2021')},
-                {version: 2.10, description: 'Support for Forgotten Circles', date: dayjs('03-29-2021')},
+                {version: '2.8', description: 'Italian language', date: dayjs('2021-01-15')},
+                {version: '2.9', description: 'Item Database', date: dayjs('2021-02-03')},
+                {version: '2.10', description: 'Support for Forgotten Circles', date: dayjs('2021-03-29')},
                 {
-                    version: 2.11,
+                    version: '2.11',
                     description: 'Summaries for Forgotten Circles',
-                    date: dayjs('04-12-2021')
+                    date: dayjs('2021-04-12')
                 },
-                {version: 2.12, description: 'German language', date: dayjs('04-20-2021')},
-                {version: 2.13, description: 'New scenarios table', date: dayjs('04-22-2021')},
-                {version: 2.14, description: 'Spanish language', date: dayjs('05-01-2021')},
-                {version: 2.15, description: 'Draw event cards', date: dayjs('05-23-2021')},
-                {version: 2.16, description: 'Patreon', date: dayjs('06-09-2021')},
-                {version: 2.17, description: 'Character sheets', date: dayjs('08-14-2021')},
-                {version: 3.0, description: 'Jaws of the Lion', date: dayjs('10-08-2021')},
-                {version: 3.1, description: 'Personal quests', date: dayjs('11-25-2021')},
-                {version: 3.2, description: 'Add more translation support', date: dayjs('01-31-2022')},
+                {version: '2.12', description: 'German language', date: dayjs('2021-04-20')},
+                {version: '2.13', description: 'New scenarios table', date: dayjs('2021-04-22')},
+                {version: '2.14', description: 'Spanish language', date: dayjs('2021-05-01')},
+                {version: '2.15', description: 'Draw event cards', date: dayjs('2021-05-23')},
+                {version: '2.16', description: 'Patreon', date: dayjs('2021-06-09')},
+                {version: '2.17', description: 'Character sheets', date: dayjs('2021-08-14')},
+                {version: '3.0', description: 'Jaws of the Lion', date: dayjs('2021-10-08')},
+                {version: '3.1', description: 'Personal quests', date: dayjs('2021-11-25')},
+                {version: '3.2', description: 'Add more translation support', date: dayjs('2022-01-31')},
                 {
-                    version: 3.3,
+                    version: '3.3',
                     description: 'Updated Spanish, French and German translations',
-                    date: dayjs('02-18-2022')
+                    date: dayjs('2022-02-18')
                 },
+                {version: '3.4', description: 'Add solo scenarios', date: dayjs('2022-03-06')},
             ].reverse()
         }
     },

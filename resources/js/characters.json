@@ -3,6 +3,7 @@
         "BR": {
             "id": "BR",
             "name": "Brute",
+            "translatedName":  "characters.BR.name",
             "perks": [
                 {
                     "count": 1,
@@ -53,6 +54,7 @@
         "CH": {
             "id": "CH",
             "name": "Cragheart",
+            "translatedName": "characters.CH.name",
             "perks": [
                 {
                     "count": 1,
@@ -99,6 +101,7 @@
         "SW": {
             "id": "SW",
             "name": "Spellweaver",
+            "translatedName": "characters.SW.name",
             "perks": [
                 {
                     "count": 1,
@@ -149,6 +152,7 @@
         "TI": {
             "id": "TI",
             "name": "Tinkerer",
+            "translatedName": "characters.TI.name",
             "perks": [
                 {
                     "count": 2,
@@ -199,6 +203,7 @@
         "SC": {
             "id": "SC",
             "name": "Scoundrel",
+            "translatedName": "characters.SC.name",
             "perks": [
                 {
                     "count": 2,
@@ -249,6 +254,7 @@
         "MT": {
             "id": "MT",
             "name": "Mindthief",
+            "translatedName": "characters.MT.name",
             "perks": [
                 {
                     "count": 2,
@@ -303,6 +309,7 @@
         "DS": {
             "id": "DS",
             "name": "Doomstalker",
+            "translatedName": "characters.DS.name",
             "perks": [
                 {
                     "count": 2,
@@ -349,6 +356,7 @@
         "EL": {
             "id": "EL",
             "name": "Elementalist",
+            "translatedName": "characters.EL.name",
             "perks": [
                 {
                     "count": 2,
@@ -407,6 +415,7 @@
         "SB": {
             "id": "SB",
             "name": "Sawbones",
+            "translatedName": "characters.SB.name",
             "perks": [
                 {
                     "count": 2,
@@ -449,6 +458,7 @@
         "SS": {
             "id": "SS",
             "name": "Soothsinger",
+            "translatedName": "characters.SS.name",
             "perks": [
                 {
                     "count": 2,
@@ -503,6 +513,7 @@
         "SK": {
             "id": "SK",
             "name": "Sunkeeper",
+            "translatedName": "characters.SK.name",
             "perks": [
                 {
                     "count": 2,
@@ -530,7 +541,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Add two {AGAIN} {STUN} card"
+                    "desc": "Add one {AGAIN} {STUN} card"
                 },
                 {
                     "count": 2,
@@ -553,6 +564,7 @@
         "NS": {
             "id": "NS",
             "name": "Nightshroud",
+            "translatedName": "characters.NS.name",
             "perks": [
                 {
                     "count": 2,
@@ -599,6 +611,7 @@
         "SU": {
             "id": "SU",
             "name": "Summoner",
+            "translatedName": "characters.SU.name",
             "perks": [
                 {
                     "count": 1,
@@ -645,6 +658,7 @@
         "BE": {
             "id": "BE",
             "name": "Berserker",
+            "translatedName": "characters.BE.name",
             "perks": [
                 {
                     "count": 1,
@@ -691,6 +705,7 @@
         "QM": {
             "id": "QM",
             "name": "Quartermaster",
+            "translatedName": "characters.QM.name",
             "perks": [
                 {
                     "count": 2,
@@ -737,6 +752,7 @@
         "PH": {
             "id": "PH",
             "name": "Plagueherald",
+            "translatedName": "characters.PH.name",
             "perks": [
                 {
                     "count": 1,
@@ -783,6 +799,7 @@
         "BT": {
             "id": "BT",
             "name": "Beast Tyrant",
+            "translatedName": "characters.BT.name",
             "perks": [
                 {
                     "count": 1,
@@ -821,6 +838,7 @@
         "BS": {
             "id": "BS",
             "name": "Bladeswarm",
+            "translatedName": "characters.BS.name",
             "perks": [
                 {
                     "count": 1,
@@ -875,6 +893,7 @@
         "DR": {
             "id": "DR",
             "name": "Diviner",
+            "translatedName": "characters.DR.name",
             "perks": [
                 {
                     "count": 2,
@@ -933,6 +952,7 @@
         "RG": {
             "id": "RG",
             "name": "Red Guard",
+            "translatedName": "characters.RG.name",
             "perks": [
                 {
                     "count": 1,
@@ -979,6 +999,7 @@
         "DM": {
             "id": "DM",
             "name": "Demolitionist",
+            "translatedName": "characters.DM.name",
             "perks": [
                 {
                     "count": 1,
@@ -1021,6 +1042,7 @@
         "HT": {
             "id": "HT",
             "name": "Hatchet",
+            "translatedName": "characters.HT.name",
             "perks": [
                 {
                     "count": 2,
@@ -1067,6 +1089,7 @@
         "VW": {
             "id": "VW",
             "name": "Voidwarden",
+            "translatedName": "characters.VW.name",
             "perks": [
                 {
                     "count": 1,

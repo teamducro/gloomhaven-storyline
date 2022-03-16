@@ -1,15 +1,17 @@
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import AchievementRepository from "../repositories/AchievementRepository";
 import {ScenarioState} from "../models/ScenarioState";
-import QuestValidator from "./QuestValidator";
-import ChoiceService from "./ChoiceService";
+import QuestValidator from "../services/QuestValidator";
+import ChoiceService from "../services/ChoiceService";
 import AchievementValidator from "./AchievementValidator";
-import StorySyncer from "./StorySyncer";
+import StorySyncer from "../services/StorySyncer";
+import SheetRepository from "../repositories/SheetRepository";
 
 export default class ScenarioValidator {
 
     validate(shouldSync = true) {
         this.needsValidating = true;
+        this.sheet = (new SheetRepository).make(app.game);
         let count = 1;
 
         while (this.needsValidating) {
@@ -41,12 +43,12 @@ export default class ScenarioValidator {
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         if (scenario.isHidden()) {
-            if (states.has(ScenarioState.complete) || unlocked || scenario.root) {
+            if (states.has(ScenarioState.complete) || unlocked || scenario.root || this.soloScenarioUnlocked(scenario)) {
                 this.scenarioRepository.setIncomplete(scenario);
                 this.needsValidating = true;
             }
         } else {
-            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked) {
+            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked && !this.soloScenarioUnlocked(scenario)) {
                 this.scenarioRepository.setHidden(scenario);
                 this.needsValidating = true;
             }
@@ -168,6 +170,16 @@ export default class ScenarioValidator {
 
     linkedStates(scenario) {
         return this.linkedScenarios(scenario).pluck('state', 'state');
+    }
+
+    soloScenarioUnlocked(scenario) {
+        if (!scenario.solo) {
+            return false;
+        }
+
+        const partyCharacters = collect(this.sheet.characters).pluck('id').toArray()
+
+        return this.sheet.characterUnlocks[scenario.solo] || partyCharacters.includes(scenario.solo)
     }
 
     get scenarioRepository() {

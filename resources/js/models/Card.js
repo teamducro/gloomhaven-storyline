@@ -8,21 +8,8 @@ class Card {
         this.game = game;
     }
 
-    get title() {
-        if (this._title) {
-            return this._title;
-        }
-
-        switch (this.type) {
-            case "R":
-                return "Road Event #" + this.id;
-            case "C":
-                return "City Event #" + this.id;
-            case "Q":
-                return "Personal Quest #" + this.id;
-            default:
-                return "";
-        }
+    get translatedType() {
+        return `card_types.${this.type}`;
     }
 
     get images() {

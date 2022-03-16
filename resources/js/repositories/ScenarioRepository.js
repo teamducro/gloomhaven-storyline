@@ -1,6 +1,6 @@
 import AchievementRepository from "./AchievementRepository";
 import Scenario from "../models/Scenario";
-import ScenarioValidator from "../services/ScenarioValidator";
+import ScenarioValidator from "../validators/ScenarioValidator";
 import {ScenarioState} from "../models/ScenarioState";
 import ItemTextParser from "../services/ItemTextParser";
 import GameData from "../services/GameData";
@@ -23,6 +23,10 @@ export default class ScenarioRepository {
             scenario = this.find(scenario);
         }
 
+        if (!scenario) {
+            return;
+        }
+
         const previousState = scenario.state;
         scenario.state = state;
 
@@ -32,8 +36,8 @@ export default class ScenarioRepository {
             this.scenarioCompletedService.complete(scenario);
         } else if (previousState === ScenarioState.complete && (scenario.isIncomplete() || scenario.isHidden())) {
             this.undoAchievements(scenario);
-            this.processRewardedItems(scenario, false);
             this.scenarioCompletedService.rollback(scenario);
+            this.processRewardedItems(scenario, false);
         }
 
         if (scenario.is_side && !scenario.required_by.isEmpty()) {
@@ -177,11 +181,24 @@ export default class ScenarioRepository {
 
     processRewardedItems(scenario, checked = true) {
         const items = scenario.rewardItems();
+
+        // We can't automatically remove items, they may be obtained by other means,
+        // Items may be unchecked in the item database.
+        if (!checked) {
+            return;
+        }
+
         this.processItems(items, checked);
     }
 
     processTreasureItems(scenario, id, checked = true) {
         if (!scenario.treasures.has(id)) {
+            return;
+        }
+
+        // We can't automatically remove items, they may be obtained by other means,
+        // Items may be unchecked in the item database.
+        if (!checked) {
             return;
         }
 
@@ -248,6 +265,10 @@ export default class ScenarioRepository {
         return collect().wrap(list).map((id) => {
             return this.find(id);
         });
+    }
+
+    findSolo(characterId) {
+        return this.where((scenario) => scenario.solo === characterId).first();
     }
 
     where(filter) {
