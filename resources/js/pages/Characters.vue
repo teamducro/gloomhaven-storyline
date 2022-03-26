@@ -83,13 +83,14 @@
                                 @change="storeItems"
                                 ref="items"
                             >
-                                <span class="flex items-center mr-6" slot="label" slot-scope="{item}">
+                                <span class="flex items-center mr-6" slot="label" slot-scope="{item}"
+                                      v-if="items[item]">
                                     <webp :src="items[item].slot" width="20" class="mr-2"/>
                                     <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
                                 </span>
                                 <div slot="item" slot-scope="{item}"
                                      class="cursor-pointer flex items-center border-b border-white2-50 py-1"
-                                     @click="openItemModel(item)">
+                                     v-if="items[item]" @click="openItemModel(item)">
                                     <webp :src="items[item].slot" width="20" class="mr-2"/>
                                     <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
                                     <span @click.stop="$refs.items.deselect(item)"
@@ -438,10 +439,10 @@ export default {
             return store.get('selectedCharacter');
         },
         itemFilterClosure(query) {
-            // This allows to find items based on id and it's name.
+            // This allows to find items based on id and their name.
             return (id) => {
                 return id.toLowerCase().startsWith(query)
-                    || Helpers.sanitize(this.$t(this.items[id].name)).startsWith(query);
+                    || Helpers.sanitize(this.$t(this.items[id]?.name)).startsWith(query);
             }
         },
         renderHtml(html) {
