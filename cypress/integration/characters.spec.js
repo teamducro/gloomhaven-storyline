@@ -65,17 +65,23 @@ describe('Character', () => {
 
         utilities.openCharacter();
 
+        // Show first 10 items by default, can add them without typing anything
         cy.get('input[name="items"]').click();
         cy.get('li').contains('Boots of Striding').click();
         utilities.closeModel();
-
         cy.get('#items-bedges').contains('Boots of Striding');
 
-        cy.get('input[name="items"]').click().type('10{enter}');
-        cy.get('li').contains('War Hammer').click();
+        // Search items by their name
+        cy.get('input[name="items"]').click().type('Minor');
+        cy.get('li').contains('Minor Healing Potion').click();
         utilities.closeModel();
+        cy.get('#items-bedges').contains('Minor Healing Potion');
 
-        cy.get('#items-bedges').contains('War Hammer');
+        // Search items by their id
+        cy.get('input[name="items"]').click().clear().type('11{enter}');
+        cy.get('li').contains('Poison Dagger').click();
+        utilities.closeModel();
+        cy.get('#items-bedges').contains('Poison Dagger');
     });
 
     it('It can check perks', () => {
