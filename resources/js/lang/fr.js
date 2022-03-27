@@ -1496,6 +1496,9 @@ export default {
         "gh-GTTP": {
             "name": "Through the Portal"
         },
+        "gh-PO": {
+            "name": "Opportunistes",
+        },
         "gh-GKIP": {
             "name": "Knowledge is Power"
         },

@@ -1501,6 +1501,9 @@ export default {
         "gh-GTTP": {
             "name": "A través del portal"
         },
+        "gh-PO": {
+            "name": "Oportunistas",
+        },
         "gh-GKIP": {
             "name": "El conocimiento es poder"
         },
