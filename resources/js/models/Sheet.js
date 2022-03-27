@@ -91,6 +91,11 @@ class Sheet {
         for (let i = 0; i < 9; i++) {
             this.unlocks[i] = this.unlocks[i] || false;
         }
+
+        this.itemDesigns = this.removeInvalid(this.itemDesigns, 164);
+        this.city = this.removeInvalid(this.city, 90);
+        this.road = this.removeInvalid(this.road, 83);
+        this.unlocks = this.removeInvalid(this.unlocks, 9);
     }
 
     fillBlanksJotl() {
@@ -103,6 +108,9 @@ class Sheet {
                 this.city[i] = true;
             }
         }
+
+        this.itemDesigns = this.removeInvalid(this.itemDesigns, 36);
+        this.city = this.removeInvalid(this.city, 22);
     }
 
     fillRelations() {
@@ -140,6 +148,10 @@ class Sheet {
                 delete this.characterUnlocks[id];
             }
         });
+    }
+
+    removeInvalid(list, maxId) {
+        return collect(list).filter((value, key) => key > 0 && key <= maxId).all();
     }
 
     getHash() {
