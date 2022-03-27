@@ -454,6 +454,13 @@
         "x": 84.6
     },
     {
+        "id": "PO",
+        "name": "Opportunists",
+        "type": "Party",
+        "game": "gh",
+        "is_manual": true
+    },
+    {
         "id": "GKIP",
         "name": "Knowledge is Power",
         "type": "Global",
