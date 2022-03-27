@@ -3,7 +3,7 @@ export default class ItemTextParser {
         let list = collect({});
 
         if (text.includes('(')) {
-            let items = text.match(/(“.*”.+\(\w+ [\d]+\))/g) || [];
+            let items = text.match(/“[^”]+” \(\w+ [\d]+\)/g) || [];
             items.forEach((item) => {
                 const id = parseInt(item.replace(/\D/g, ''));
                 list.put(id, item);
