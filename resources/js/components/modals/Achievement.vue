@@ -1,6 +1,8 @@
 <template>
     <div>
-        <modal ref="modal" :title="achievement ? ($t(achievement.name) + (achievement.count > 1 ? ` (${achievement.count})` : '')) : ''" :titleDivider="true">
+        <modal ref="modal"
+               :title="achievement ? ($t(achievement.name) + (achievement.count > 1 ? ` (${achievement.count})` : '')) : ''"
+               :titleDivider="true">
             <template v-slot:content>
                 <div class="flex flex-row justify-between" v-if="achievement">
                     <div class="!my-4">
@@ -12,7 +14,7 @@
                                              :scenario="scenario" :key="scenario.id"/>
                         </h2>
 
-                        <template v-if="achievement.hasCard()">
+                        <template v-if="achievement.hasCard() && achievement.is_manual && achievement.manual_awarded">
                             <h2 class="text-white">{{ $t('Gained from') }}:</h2>
                             <cards :cards="achievement.cards"></cards>
                         </template>
