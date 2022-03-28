@@ -1,5 +1,5 @@
 <template>
-    <div v-if="sheet" :key="sheetHash" class="pt-12 pb-4 px-4 md:px-8">
+    <div v-if="sheet" :key="sheetHash" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div id="characters" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs class="hidden sm:block"
@@ -83,13 +83,14 @@
                                 @change="storeItems"
                                 ref="items"
                             >
-                                <span class="flex items-center mr-6" slot="label" slot-scope="{item}">
+                                <span class="flex items-center mr-6" slot="label" slot-scope="{item}"
+                                      v-if="items[item]">
                                     <webp :src="items[item].slot" width="20" class="mr-2"/>
                                     <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
                                 </span>
                                 <div slot="item" slot-scope="{item}"
                                      class="cursor-pointer flex items-center border-b border-white2-50 py-1"
-                                     @click="openItemModel(item)">
+                                     v-if="items[item]" @click="openItemModel(item)">
                                     <webp :src="items[item].slot" width="20" class="mr-2"/>
                                     <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
                                     <span @click.stop="$refs.items.deselect(item)"
@@ -116,6 +117,10 @@
                                    :perks.sync="character.perks"
                                    :character="character"
                                    @change="store"/>
+                            <div v-if="soloScenario" :key="'solo-'+soloScenario.id" class="mt-5 flex">
+                                <span class="font-title mr-2">{{ $t('Solo') }}:</span>
+                                <scenario-number :scenario="soloScenario" show-name/>
+                            </div>
                         </div>
                     </div>
 
@@ -135,7 +140,7 @@
                         <number-field :value.sync="character.retirements" :min="0" :max="20"
                                       id="retirements" @change="store"></number-field>
                         <p class="text-sm">
-                            {{ $t('Set this counter to the amount of characters your have retired.') }}
+                            {{ $t('Set this counter to the amount of characters you have retired') }}
                         </p>
                     </div>
 
@@ -230,6 +235,7 @@ export default {
             sheetHash: null,
             selected: null,
             character: null,
+            soloScenario: null,
             nameText: null,
             campaignName: null,
             loading: true,
@@ -289,6 +295,9 @@ export default {
                 this.nameField.destroy();
             }
             this.nameField = new MDCTextField(this.$refs['name-field']);
+        },
+        findSoloScenario() {
+            this.soloScenario = this.scenarioRepository.findSolo(this.character.id);
         },
         refreshItems() {
             if (this.character) {
@@ -354,6 +363,7 @@ export default {
                     ? this.character.name
                     : this.$t(this.character.characterName);
                 this.selected = uuid;
+                this.findSoloScenario();
                 this.refreshItems();
                 this.rerender();
                 this.storeSelected();
@@ -373,7 +383,11 @@ export default {
                 return;
             }
 
-            this.sheet.characterUnlocks[id] = true;
+            if (!this.sheet.characterUnlocks[id]) {
+                this.sheet.characterUnlocks[id] = true;
+                this.sheet.store();
+                this.scenarioRepository.scenarioValidator.validate();
+            }
             const character = this.characterRepository.createCharacter(this.sheet, id);
             this.select(character.uuid);
             this.store();
@@ -425,10 +439,10 @@ export default {
             return store.get('selectedCharacter');
         },
         itemFilterClosure(query) {
-            // This allows to find items based on id and it's name.
+            // This allows to find items based on id and their name.
             return (id) => {
                 return id.toLowerCase().startsWith(query)
-                    || Helpers.sanitize(this.$t(this.items[id].name)).startsWith(query);
+                    || Helpers.sanitize(this.$t(this.items[id]?.name)).startsWith(query);
             }
         },
         renderHtml(html) {

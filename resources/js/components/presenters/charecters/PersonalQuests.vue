@@ -9,6 +9,7 @@
             <autocomplete :label="$t('Search name or nr')"
                           id="personal-quests"
                           :list="Object.keys(quests)"
+                          :disabled="unavailableQuests"
                           :filter-closure="questFilterClosure"
                           :auto-close="true"
                           @change="(id) => {select(id)}"
@@ -75,7 +76,7 @@
 
 <script>
 import PersonalQuestRepository from "../../../repositories/PersonalQuestRepository";
-import PersonalQuestValidator from "../../../services/PersonalQuestValidator";
+import PersonalQuestValidator from "../../../validators/PersonalQuestValidator";
 import Helpers from "../../../services/Helpers";
 
 export default {
@@ -98,10 +99,24 @@ export default {
             this.validate();
         }
     },
-    computed: {},
+    computed: {
+        unavailableQuests() {
+            let unavailable = [];
+            Object.entries(this.sheet.characters).forEach(([id, character]) => {
+                if (character.quest?.id) {
+                    unavailable.push(character.quest?.id);
+                }
+            });
+
+            return unavailable;
+        }
+    },
     methods: {
         random() {
-            const quest = [...Object.values(this.quests)].sort((a, b) => 0.5 - Math.random())[0];
+            const id = [...Object.keys(this.quests)]
+                .filter(id => !this.unavailableQuests.includes(parseInt(id)))
+                .sort((a, b) => 0.5 - Math.random())[0];
+            const quest = this.quests[id];
             this.update(quest);
             this.goalMet = false;
         },

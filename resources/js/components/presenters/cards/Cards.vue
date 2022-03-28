@@ -3,7 +3,9 @@
         <template v-for="(card, index) in cards">
             <button class="mdc-button normal-case -ml-2"
                     @click="toggle(index)">
-                <span class="mdc-button__label font-title text-white">{{ card.title }}</span>
+                <span class="mdc-button__label font-title text-white">
+                    {{ $t(card.translatedType) }} #{{ card.id }}
+                </span>
                 <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
                    :class="{'rotate-0': expand[index], 'rotate-180': !expand[index]}">
                     keyboard_arrow_up
@@ -15,7 +17,7 @@
                           :key="card.id + '-' + index"
                           :src="image"
                           class="mb-4"
-                          :alt="card.title"/>
+                          :alt="$t(card.translatedType) + ' #' + card.id"/>
                 </div>
             </transition-expand>
         </template>
