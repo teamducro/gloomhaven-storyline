@@ -2732,11 +2732,7 @@ export default {
             "name": "Erhalte 30 Gold"
         },
         "gh-49": {
-<<<<<<< HEAD
-            "name": "Neues Szenario: Verlorene Insel (Szenario 17 bei K-17)"
-=======
-            "name": "New Scenario: {SCENARIO 17}",
->>>>>>> 3aa9b034dcd3464d85e553e1e84ed0a943a0784a
+            "name": "Neues Szenario: {SCENARIO 17}",
         },
         "gh-50": {
             "name": "Erhalte “Zweite Haut” (Gegenstand 101)"
@@ -3263,7 +3259,6 @@ export default {
         "SK": {
             "name": "Sonnenhüterin",
             "perks": [
-<<<<<<< HEAD
                 "Entferne zwei {-1_WHITE} Karten",
                 "Entferne vier {+0_WHITE} Karten",
                 "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
@@ -3275,19 +3270,6 @@ export default {
                 "Füge zwei {AGAIN} {SHIELD}1, selbst Karten hinzu",
                 "Ignoriere negative Gegenstandseffekte und füge zwei {+1_WHITE} Karten hinzu",
                 "Ignoriere negative Szenarioeffekte"
-=======
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add two {AGAIN} {LIGHT} cards",
-                "Add two {AGAIN} {SHIELD}1, Self cards",
-                "Ignore negative item effects and add two {+1_WHITE} cards",
-                "Ignore negative scenario effects"
->>>>>>> 3aa9b034dcd3464d85e553e1e84ed0a943a0784a
             ]
         },
         "NS": {
