@@ -51,6 +51,7 @@ export default {
     "5 Ancient Technology Global Achievements": "5x \"Alte Technologie\" globale Errungenschaft erhalten",
     "Gain The Drakes Command & The Drakes Treasure Party Achievements": "Erhaltet die Party-Errungenschaften \"Der Befehl des Draken\" & \"Der Schatz des Draken\"",
     "Add City Event 75 & Road Event 66": "Fügt Stadt-Ereignis 75 & Weg-Ereignis 66 hinzu",
+    "and gain The Drake Aided global achievement": "and gain “The Drake Aided” global achievement",
     "Donate +100 gold to the Sanctuary of the Great Oak": "Spendet mehr als 100 Gold im Tempel der Großen Eiche",
     "Have a party reputation of 10 or higher": "Erlangt ein Ansehen von 10 der mehr",
     "Have a party reputation of 20": "Erlangt ein Ansehen von 20",
@@ -4208,7 +4209,7 @@ export default {
         }
     },
     "prompts": {
-        "dragons": {
+        "dragon": {
             "1": "Bringt dem Draken den Schatz. Erhaltet die globale Errungenschaft \"Hilfe für den Draken\". Fügt dem Deck das Stadtereignis 75 und das Wegereignis 66 hinzu.",
             "2": "Helft dem Draken nicht.",
             "title": "Freund oder Feind",

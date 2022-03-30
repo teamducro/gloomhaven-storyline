@@ -9,21 +9,21 @@ class ChoiceService {
 
     getPromptConfig(scenario) {
         switch (scenario.prompt) {
-            case 'dragons':
-                let drakesTreasure = this.achievementRepository.find('PTDT');
+            case 'dragon':
                 let drakesCommand = this.achievementRepository.find('PTDC');
+                let drakesTreasure = this.achievementRepository.find('PTDT');
 
                 return new PromptConfig(scenario, {
                     options: 2,
-                    show: !this.isChoiceSet(scenario.prompt) && drakesCommand.awarded && drakesTreasure.awarded,
-                    promptAfter: false,
+                    // The prompt is shown after completion, so only one of the achievements is required to show the prompt, the other achievement is awarded after the prompt.
+                    show: drakesCommand.awarded || drakesTreasure.awarded,
                     callback: (value) => {
                         if (value === 1) {
                             this.achievementRepository.gain('GTDA');
                         } else {
                             this.achievementRepository.lose('GTDA');
                         }
-                        this.setChoice(scenario, value, false);
+                        this.setChoice(scenario, value);
                     }
                 });
 

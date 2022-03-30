@@ -354,7 +354,7 @@ export default {
                 }
             }
 
-            if (state === ScenarioState.complete && this.scenario.prompt && this.prompt.promptAfter) {
+            if (state === ScenarioState.complete && this.scenario.prompt && this.prompt?.promptAfter && this.prompt?.show) {
                 this.$refs['decision-prompt'].open();
             } else if (state === ScenarioState.complete && this.scenario.choices && this.scenario.choices.length > 1) {
                 this.$refs['choose'].open();
