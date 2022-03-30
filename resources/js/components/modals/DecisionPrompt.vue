@@ -65,7 +65,9 @@ export default {
     watch: {
         config: function (newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.togglePrompt(newVal.show || false);
+                if (!this.config.promptAfter) {
+                    this.togglePrompt(newVal.show || false);
+                }
             }
         }
     },

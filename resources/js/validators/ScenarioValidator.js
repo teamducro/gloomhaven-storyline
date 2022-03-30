@@ -23,6 +23,7 @@ export default class ScenarioValidator {
                 } else {
                     this.checkChoice(scenario);
                 }
+                this.resetPrompts(scenario);
                 this.checkRequired(scenario);
             });
             if (count > 4) {
@@ -87,7 +88,9 @@ export default class ScenarioValidator {
                 }
             }
         }
+    }
 
+    resetPrompts(scenario) {
         if (scenario.hasChoices && scenario.choice && scenario.isIncomplete()) {
             scenario.choice = null;
         }

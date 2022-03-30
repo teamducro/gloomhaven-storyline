@@ -51,6 +51,7 @@ export default {
     "5 Ancient Technology Global Achievements": "5x \"Alte Technologie\" globale Errungenschaft erhalten",
     "Gain The Drakes Command & The Drakes Treasure Party Achievements": "Erhaltet die Party-Errungenschaften \"Der Befehl des Draken\" & \"Der Schatz des Draken\"",
     "Add City Event 75 & Road Event 66": "Fügt Stadt-Ereignis 75 & Weg-Ereignis 66 hinzu",
+    "and gain The Drake Aided global achievement": "and gain “The Drake Aided” global achievement",
     "Donate +100 gold to the Sanctuary of the Great Oak": "Spendet mehr als 100 Gold im Tempel der Großen Eiche",
     "Have a party reputation of 10 or higher": "Erlangt ein Ansehen von 10 der mehr",
     "Have a party reputation of 20": "Erlangt ein Ansehen von 20",
@@ -328,7 +329,7 @@ export default {
     "Hidden Scenario": "Verstecktes Szenario",
     "Add achievements gained by events other than completing scenarios manually": "Hinzufügen von Erfolgen, die durch andere Ereignisse als das manuelle Abschließen von Szenarien erzielt wurden",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "Die Szenariozahlen im Text sind nur zur Erinnerung, sie werden nicht freigeschaltet.",
-    "Level up when youre back in town": "Stufenanstieg bei der Rückkehr nach Gloomhaven",
+    "Level up when youre back in town": "Steige eine Stufe auf, wenn du nach Gloomhaven zurückkehrst.",
     "scenarios": {
         "gh-1": {
             "name": "Schwarzgrab"
@@ -384,14 +385,14 @@ export default {
                 "je 15 Gold",
                 "-2 Ansehen",
                 "+2 Wohlstand",
-                "“Schädelfluch” design (Item 113)"
+                "“Schädelfluch”-Plan(Gegenstand 113)"
             ]
         },
         "gh-12": {
             "name": "Gloomhaven-Platz B",
             "rewards": [
                 "+4 Ansehen",
-                "“Schädelfluch” design (Item 113)"
+                "“Schädelfluch”-Plan (Gegenstand 113)"
             ]
         },
         "gh-13": {
@@ -437,7 +438,7 @@ export default {
             "rewards": [
                 "je 50 Gold",
                 "+1 Wohlstand",
-                "Füge dem Deck Stadtereignis 78 hinzu"
+                "Fügt Stadtereignis 78 dem Stadtereignis-Deck hinzu"
             ]
         },
         "gh-22": {
@@ -503,9 +504,9 @@ export default {
             "name": "Zinnen von Gloomhaven A",
             "rewards": [
                 "je 30 Gold",
-                "+5 Ansehen",
+                "-5 Ansehen",
                 "-2 Wohlstand",
-                "Add City Event 79 to the deck"
+                "Fügt Stadtereignis 79 dem Stadtereignis-Deck hinzu"
             ]
         },
         "gh-36": {
@@ -604,7 +605,7 @@ export default {
         "gh-53": {
             "name": "Unter der Krypta",
             "rewards": [
-                "Der Sucher Xorn's erhält: “Xorn's Stab” (Item 114) Der Sucher kann diesen Gegenstand nicht verkaufen."
+                "Der Sucher Xorn's erhält: “Xorn's Stab” (Gegenstand 114) Der Sucher kann diesen Gegenstand nicht verkaufen."
             ]
         },
         "gh-54": {
@@ -690,7 +691,7 @@ export default {
         "gh-67": {
             "name": "Arkane Bibliothek",
             "rewards": [
-                "“Energie Kern” (Gegensand 132)"
+                "“Energie Kern” (Gegenstand 132)"
             ]
         },
         "gh-68": {
@@ -1012,19 +1013,19 @@ export default {
             "rewards": [
                 [
                     "je 5 Gold",
-                    "“Minor Antidote” (Item 153)"
+                    "“Minor Antidote” (Gegenstand 153)"
                 ],
                 [
                     "10 gold each",
                     "+1 Wohlstand",
-                    "“Minor Antidote” (Item 153)"
+                    "“Minor Antidote” (Gegenstand 153)"
                 ]
             ]
         },
         "fc-100": {
             "name": "Getrieberaum",
             "rewards": [
-                "Choose to gain one of the following sets: “Telescopic Lens” (Item 059) and “Ancient Drill” (Item 112), OR “Curious Gear” (Item 125) and “Remote Spider” (Item 126)"
+                "Choose to gain one of the following sets: “Telescopic Lens” (Gegenstand 059) and “Ancient Drill” (Gegenstand 112), OR “Curious Gear” (Gegenstand 125) and “Remote Spider” (Gegenstand 126)"
             ]
         },
         "fc-101": {
@@ -1052,13 +1053,13 @@ export default {
         "fc-104": {
             "name": "Klaffende Wunde",
             "rewards": [
-                "“Major Mana Potion” (Item 048)"
+                "“Major Mana Potion” (Gegenstand 048)"
             ]
         },
         "fc-105": {
             "name": "Kultische Monstrositäten",
             "rewards": [
-                "“Major Antidote” (Item 154)"
+                "“Major Antidote” (Gegenstand 154)"
             ]
         },
         "fc-106": {
@@ -1083,14 +1084,14 @@ export default {
             "name": "Prolog des Endes",
             "rewards": [
                 [
-                    "“Curseward Armor” (Item 155)"
+                    "“Curseward Armor” (Gegenstand 155)"
                 ],
                 [
-                    "2 “Throwing Axes” (Item 161)"
+                    "2 “Throwing Axes” (Gegenstand 161)"
                 ],
                 [
-                    "“Curseward Armor” (Item 155)",
-                    "2 “Throwing Axes” (Item 161)"
+                    "“Curseward Armor” (Gegenstand 155)",
+                    "2 “Throwing Axes” (Gegenstand 161)"
                 ]
             ]
         },
@@ -1098,17 +1099,17 @@ export default {
             "name": "Epilog eines Krieges",
             "rewards": [
                 "10 experience each",
-                "“Protective Charm” (Item 052)"
+                "“Protective Charm” (Gegenstand 052)"
             ]
         },
         "fc-110": {
             "name": "Eine runde Sache",
             "rewards": [
-                "“Crystal Tiara” (Item 163)"
+                "“Crystal Tiara” (Gegenstand 163)"
             ]
         },
         "fc-111": {
-            "name": "GeElockerte Fesseln",
+            "name": "Gelockerte Fesseln",
             "rewards": [
                 [
                     "5 experience each",
@@ -1168,7 +1169,7 @@ export default {
         "fc-201": {
             "name": "Forecast of the Inevitable",
             "rewards": [
-                "“Wahrsagebecken” (Item 164)"
+                "“Wahrsagebecken” (Gegenstand 164)"
             ]
         },
         "jotl-1": {
@@ -1190,7 +1191,7 @@ export default {
         "jotl-4": {
             "name": "A Ritual in Stone",
             "rewards": [
-                "“Mana Potion” (Item 14)"
+                "“Mana Potion” (Gegenstand 14)"
             ]
         },
         "jotl-5": {
@@ -1230,13 +1231,13 @@ export default {
         "jotl-11": {
             "name": "Defiled Sewers",
             "rewards": [
-                "“Flea-Bitten Shawl” (Item 28)"
+                "“Flea-Bitten Shawl” (Gegenstand 28)"
             ]
         },
         "jotl-12": {
             "name": "Beguiling Sewers",
             "rewards": [
-                "“Flea-Bitten Shawl” (Item 28)"
+                "“Flea-Bitten Shawl” (Gegenstand 28)"
             ]
         },
         "jotl-13": {
@@ -1262,7 +1263,7 @@ export default {
             "name": "Mixed Results",
             "rewards": [
                 "15 experience each",
-                "“Tower Shield” (Item 29)"
+                "“Tower Shield” (Gegenstand 29)"
             ]
         },
         "jotl-17": {
@@ -1281,7 +1282,7 @@ export default {
         "jotl-19": {
             "name": "Den of Thieves",
             "rewards": [
-                "“Ring of Strength” (Item 31)"
+                "“Ring of Strength” (Gegenstand 31)"
             ]
         },
         "jotl-20": {
@@ -1299,25 +1300,25 @@ export default {
         "jotl-22": {
             "name": "Unfriendly Message",
             "rewards": [
-                "“Steel Ring” (Item 33)"
+                "“Steel Ring” (Gegenstand 33)"
             ]
         },
         "jotl-23": {
             "name": "Best of the Best",
             "rewards": [
-                "“Barbed Axe” (Item 34)"
+                "“Barbed Axe” (Gegenstand 34)"
             ]
         },
         "jotl-24": {
             "name": "Warding the Void",
             "rewards": [
-                "“Robes of Command” (Item 35)"
+                "“Robes of Command” (Gegenstand 35)"
             ]
         },
         "jotl-25": {
             "name": "The Greatest Job in the World",
             "rewards": [
-                "“Jet Boots” (Item 36)"
+                "“Jet Boots” (Gegenstand 36)"
             ]
         }
     },
@@ -2588,316 +2589,316 @@ export default {
     },
     "treasures": {
         "gh-1": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-2": {
-            "name": "Gain “Tower Shield” (Item 032)"
+            "name": "Erhalte “Turmschild” (Gegenstand 032)"
         },
         "gh-3": {
-            "name": "Gain “Splintmail” (Item 044)"
+            "name": "Erhalte “Spangenpanzer” (Gegenstand 044)"
         },
         "gh-4": {
-            "name": "Gain 15 Gold"
+            "name": "Erhalte 15 Gold"
         },
         "gh-5": {
-            "name": "Gain “Chainmail” (Item 023)"
+            "name": "Erhalte “Kettenhemd” (Gegenstand 023)"
         },
         "gh-6": {
-            "name": "Gain “Hooked Chain” (Item 039)"
+            "name": "Erhalte “Kettenhaken” (Gegenstand 039)"
         },
         "gh-7": {
-            "name": "Random Side Scenario"
+            "name": "Zufälliges Nebenszenario"
         },
         "gh-8": {
-            "name": "Gain 1 ✔"
+            "name": "Erhalte 1 ✔"
         },
         "gh-9": {
-            "name": "Gain “Wave Crest” (Item 111)"
+            "name": "Erhalte “Gischtkrone” (Gegenstand 111)"
         },
         "gh-10": {
-            "name": "Gain 10 Experience"
+            "name": "Erhalte 10 Erfahrung"
         },
         "gh-11": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-12": {
-            "name": "Gain “Magma Waders” (Item 099)"
+            "name": "Erhalte “Lavalatschen” (Gegenstand 099)"
         },
         "gh-13": {
-            "name": "Suffer 5 Damage and gain {POISON} and {WOUND}"
+            "name": "Erleide 5 Schaden und erhalte {POISON} und {WOUND}"
         },
         "gh-14": {
-            "name": "Gain 10 Experience"
+            "name": "Erhalte 10 Erfahrung"
         },
         "gh-15": {
-            "name": "Gain “Pendant of Dark Pacts” (Item 045)"
+            "name": "Erhalte “Kette des Dunkelpaktes” (Gegenstand 045)"
         },
         "gh-16": {
-            "name": "Gain 10 gold"
+            "name": "Erhalte 10 Gold"
         },
         "gh-17": {
-            "name": "Gain 20 Gold"
+            "name": "Erhalte 20 Gold"
         },
         "gh-18": {
-            "name": "Gain 15 gold"
+            "name": "Erhalte 15 Gold"
         },
         "gh-19": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-20": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-21": {
-            "name": "Suffer 5 Damage"
+            "name": "Erleide 5 Schaden"
         },
         "gh-22": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-23": {
-            "name": "Gain “Drakescale Armor” (Item 103)"
+            "name": "Erhalte “Drakenrüstung” (Gegenstand 103)"
         },
         "gh-24": {
-            "name": "Suffer 5 damage"
+            "name": "Erleide 5 Schaden"
         },
         "gh-25": {
-            "name": "Gain 25 gold"
+            "name": "Erhalte 25 Gold"
         },
         "gh-26": {
-            "name": "Gain 20 Gold"
+            "name": "Erhalte 20 Gold"
         },
         "gh-27": {
-            "name": "Gain “Orb of Twilight” (Item 122)"
+            "name": "Erhalte “Kugel des Zwielichts” (Gegenstand 122)"
         },
         "gh-28": {
-            "name": "Gain 15 Gold"
+            "name": "Erhalte 15 Gold"
         },
         "gh-29": {
-            "name": "Gain “Endurance Footwraps” (Item 097)"
+            "name": "Erhalte “Sandalen der Ausdauer” (Gegenstand 097)"
         },
         "gh-30": {
-            "name": "Gain 1 ✔"
+            "name": "Erhalte 1 ✔"
         },
         "gh-31": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-32": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-33": {
-            "name": "Gain “Weighted Net” (Item 019)"
+            "name": "Erhalte “Wurfnetz” (Gegenstand 019)"
         },
         "gh-34": {
-            "name": "Gain “Amulet of Life” (Item 024)"
+            "name": "Erhalte “Amulett des Lebens” (Gegenstand 024)"
         },
         "gh-35": {
-            "name": "Gain “Drakescale Boots” (Item 098)"
+            "name": "Erhalte “Drakenstiefel” (Gegenstand 098)"
         },
         "gh-36": {
-            "name": "“Rocket Boots” design (Item 096)"
+            "name": "“Raketenstiefel”-Plan (Gegenstand 096)"
         },
         "gh-37": {
-            "name": "Gain 1 ✔"
+            "name": "Erhalte 1 ✔"
         },
         "gh-38": {
-            "name": "“Ring of Skulls” design (Item 123)"
+            "name": "“Schädelring”-Plan (Gegenstand 123)"
         },
         "gh-39": {
-            "name": "Suffer 5 damage"
+            "name": "Erleide 5 Schaden"
         },
         "gh-40": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-41": {
-            "name": "Gain “Black Knife” (Item 053)"
+            "name": "Erhalte “Schwarzdolch” (Gegenstand 053)"
         },
         "gh-42": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-43": {
-            "name": "Suffer 5 damage gain {POISON} and {WOUND}"
+            "name": "Erleide 5 Schaden und erhalte {POISON} und {WOUND}"
         },
         "gh-44": {
-            "name": "Random Side Scenario"
+            "name": "Zufälliges Nebenszenario"
         },
         "gh-45": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplanv"
         },
         "gh-46": {
-            "name": "Suffer 3 damage and gain {POISON}"
+            "name": "Erleide 3 Schaden und erhalte {POISON}"
         },
         "gh-47": {
-            "name": "Gain “Steam Armor” (Item 104)"
+            "name": "Erhalte “Dampfrüstung” (Gegenstand 104)"
         },
         "gh-48": {
-            "name": "Gain 30 gold"
+            "name": "Erhalte 30 Gold"
         },
         "gh-49": {
-            "name": "New Scenario: {SCENARIO 17}",
+            "name": "Neues Szenario: {SCENARIO 17}",
         },
         "gh-50": {
-            "name": "Gain “Second Skin” (Item 101)"
+            "name": "Erhalte “Zweite Haut” (Gegenstand 101)"
         },
         "gh-51": {
-            "name": "Random Side Scenario"
+            "name": "Zufälliges Nebenszenario"
         },
         "gh-52": {
-            "name": "Gain “Heart of the Betrayer” (Item 131)"
+            "name": "Erhalte “Herz des Abtrünnigen” (Gegenstand 131)"
         },
         "gh-53": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-54": {
-            "name": "Gain “Doomed Compass” (Item 124)"
+            "name": "Erhalte “Schicksalskompass” (Gegenstand 124)"
         },
         "gh-55": {
-            "name": "Gain 1 ✔"
+            "name": "Erhalte 1 ✔"
         },
         "gh-56": {
-            "name": "Gain “Star Earring” (Item 069)"
+            "name": "Erhalte “Stern-Ohrring” (Gegenstand 069)"
         },
         "gh-57": {
-            "name": "Gain 15 gold"
+            "name": "Erhalte 15 Gold"
         },
         "gh-58": {
-            "name": "Gain “Drakescale Helm” (Item 108)"
+            "name": "Erhalte “Drakenhelm” (Gegenstand 108)"
         },
         "gh-59": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-60": {
-            "name": "Gain “Skullbane Axe” (Item 113)"
+            "name": "Erhalte “Schädelfluch” (Gegenstand 113)"
         },
         "gh-61": {
-            "name": "Gain “Versatile Dagger” (Item 040)"
+            "name": "Erhalte “Mehrzweckdolch” (Gegenstand 040)"
         },
         "gh-62": {
-            "name": "Gain “Helm of the Mountain” (Item 110) and “Mountain Hammer” (Item 115)"
+            "name": "Erhalte “Helm der Berge” (Gegenstand 110) and “Gebirgshammer” (Gegenstand 115)"
         },
         "gh-63": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-64": {
-            "name": "Gain 30 gold"
+            "name": "Erhalte 30 Gold"
         },
         "gh-65": {
-            "name": "“Horned Helm” design (Item 107)"
+            "name": "“Hornhelm”-Plan (Gegenstand 107)"
         },
         "gh-66": {
-            "name": "Gain “Volatile Bomb” (Item 033)"
+            "name": "Erhalte “Wurfbombe” (Gegenstand 033)"
         },
         "gh-67": {
-            "name": "Gain 10 Gold"
+            "name": "Erhalte 10 Gold"
         },
         "gh-68": {
-            "name": "Gain “Helix Ring” (Item 130)"
+            "name": "Erhalte “Spiralring” (Gegenstand 130)"
         },
         "gh-69": {
-            "name": "Gain “Robes of Summoning” (Item 100)"
+            "name": "Erhalte “Beschwörungsrobe” (Gegenstand 100)"
         },
         "gh-70": {
-            "name": "Random Side Scenario"
+            "name": "Zufälliges Nebenszenario"
         },
         "gh-71": {
-            "name": "Random Side Scenario"
+            "name": "Zufälliges Nebenszenario"
         },
         "gh-72": {
-            "name": "“Fueled Falchion” design (Item 116)"
+            "name": "“Flammenfalchion”-Plan (Gegenstand 116)"
         },
         "gh-73": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-74": {
-            "name": "Random Item Design"
+            "name": "Zufälliger Gegenstandsplan"
         },
         "gh-75": {
-            "name": "Cryptogram Found (See scenario book page 121)"
+            "name": "Kryptogramm gefunden (Siehe Szenariobuch auf Seite 121)"
         },
         "fc-76": {
-            "name": "Suffer 3 damage, gain {WOUND} and 10 gold"
+            "name": "Erleide 3 Schaden und erhalte {WOUND} und 10 Gold"
         },
         "fc-77": {
-            "name": "Gain “Major Cure Potion” (Item 090)"
+            "name": "Erhalte “Großer Arzneitrank” (Gegenstand 090)"
         },
         "fc-78": {
             "name": "“Ancient Bow” (Item 157)"
         },
         "fc-79": {
-            "name": "Gain “Falcon Figurine” (Item 157)"
+            "name": "Erhalte “Falcon Figurine” (Item 157)"
         },
         "fc-80": {
-            "name": "Gain 1 ✓ and add Rift Event 19 to the deck"
+            "name": "Erhalte 1 ✓ and add Rift Event 19 to the deck"
         },
         "fc-81": {
-            "name": "Gain “Scroll of Haste” (Item 159) and 10 gold"
+            "name": "Erhalte “Scroll of Haste” (Item 159) and 10 gold"
         },
         "fc-82": {
             "name": "“Rejuvenation Greaves” (Item 158)"
         },
         "fc-83": {
-            "name": "Gain “Major Power Potion” (Item 041)"
+            "name": "Erhalte “Major Power Potion” (Item 041)"
         },
         "fc-84": {
-            "name": "Gain “Mask of Terrors” (Item 066)"
+            "name": "Erhalte “Mask of Terrors” (Item 066)"
         },
         "fc-85": {
-            "name": "Suffer 3 damage, gain {POISON} and 10 gold"
+            "name": "Suffer 3 damage, Erhalte {POISON} and 10 gold"
         },
         "fc-86": {
             "name": "Unlock Diviner {DR} Solo Scenario “Forecast of the Inevitable” (see page 25 of the main book)"
         },
         "fc-87": {
-            "name": "Suffer 2 damage, gain CURSE and 15 gold"
+            "name": "Suffer 2 damage, Erhalte {CURSE} and 15 gold"
         },
         "fc-88": {
-            "name": "Gain 1 ✓"
+            "name": "Erhalte 1 ✓"
         },
         "fc-89": {
-            "name": "Gain “Second Chance Ring” (Item 070)"
+            "name": "Erhalte “Second Chance Ring” (Item 070)"
         },
         "fc-90": {
             "name": "10 gold each, Read section 75 on page 49"
         },
         "fc-91": {
-            "name": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
+            "name": "Erhalte 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
         },
         "fc-93": {
             "name": "“Scroll of Haste” (Item 159)"
         },
         "fc-94": {
-            "name": "Gain 1 ✓ and add Rift Event 20 to the deck"
+            "name": "Erhalte 1 ✓ and add Rift Event 20 to the deck"
         },
         "fc-95": {
-            "name": "Gain 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
+            "name": "Erhalte 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
         },
         "fc-96": {
             "name": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}"
         },
         "jotl-1": {
-            "name": "Gain 10 experience"
+            "name": "Erhalte 10 experience"
         },
         "jotl-2": {
             "name": "“Ring of Strength” (Item 31)"
         },
         "jotl-3": {
-            "name": "Gain 15 experience"
+            "name": "Erhalte 15 experience"
         },
         "jotl-4": {
-            "name": "Gain 5 gold"
+            "name": "Erhalte 5 gold"
         },
         "jotl-5": {
-            "name": "Gain 1 ✔"
+            "name": "Erhalte 1 ✔"
         },
         "jotl-6": {
-            "name": "Gain 10 gold"
+            "name": "Erhalte 10 gold"
         },
         "jotl-7": {
-            "name": "Gain 5 gold"
+            "name": "Erhalte 5 gold"
         },
         "jotl-8": {
-            "name": "Suffer 3 damage, gain {POISON,"
+            "name": "Suffer 3 damage, Erhalte {POISON,"
         },
         "jotl-9": {
-            "name": "Gain 5 gold"
+            "name": "Erhalte 5 gold"
         },
         "jotl-10": {
             "name": "“Fateful Compass” (Item 27)"
@@ -2906,16 +2907,16 @@ export default {
             "name": "“Ring of Haste” (Item 30)"
         },
         "jotl-12": {
-            "name": "Gain 5 gold"
+            "name": "Erhalte 5 gold"
         },
         "jotl-13": {
-            "name": "Gain 5 gold"
+            "name": "Erhalte 5 gold"
         },
         "jotl-14": {
-            "name": "Gain 3 money tokens"
+            "name": "Erhalte 3 money tokens"
         },
         "jotl-15": {
-            "name": "Gain 1 ✔"
+            "name": "Erhalte 1 ✔"
         },
         "jotl-16": {
             "name": "“Mana Potion” (Item 14)"
@@ -3097,360 +3098,360 @@ export default {
     },
     "characters": {
         "BR": {
-            "name": "Brute",
+            "name": "Barbar",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Add two {+1_WHITE} cards",
-                "Add one {+3_WHITE} card",
-                "Add three {AGAIN} {PUSH}1 cards",
-                "Add two {AGAIN} {PIERCE}3 cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
-                "Add one {AGAIN} ADD {TARGET} card",
-                "Add one {+1_WHITE} {SHIELD}1, Self card",
-                "Ignore negative item effects and add one {+1_WHITE} card"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
+                "Füge zwei {+1_WHITE} Karten hinzu",
+                "Füge eine {+3_WHITE} Karte hinzu",
+                "Füge drei {AGAIN} {PUSH}1 Karten hinzu",
+                "Füge zwei {AGAIN} {PIERCE}3 Karten hinzu",
+                "Füge eine {AGAIN} {STUN} Karte hinzu",
+                "Füge eine {AGAIN} {DISARM} Karte und eine {AGAIN} {MUDDLE} Karte hinzu",
+                "Füge eine {AGAIN} Tiel hinzufügen {TARGET} Karte hinzu",
+                "Füge eine {+1_WHITE} {SHIELD}1, selbst Karte hinzu",
+                "Ignoriere negative Gegenstandeffekte und füge eine {+1_WHITE} Karte hinzu"
             ]
         },
         "CH": {
-            "name": "Cragheart",
+            "name": "Felsenherz",
             "perks": [
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Add one {-2_WHITE} card and two {+2_WHITE} cards",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add one {+2_WHITE} {MUDDLE} card",
-                "Add two {AGAIN} {PUSH}2 cards",
-                "Add two {AGAIN} {EARTH} cards",
-                "Add two {AGAIN} {WIND} cards",
-                "Ignore negative item effects",
-                "Ignore negative scenario effects"
+                "Entferne vier {+0_WHITE} Karten",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
+                "Füge eine {-2_WHITE} Karte und zwei {+2_WHITE} Karten hinzu",
+                "Füge eine {+1_WHITE} {IMMOBILIZE} Karte hinzu",
+                "Füge eine {+2_WHITE} {MUDDLE} Karte hinzu",
+                "Füge zwei {AGAIN} {PUSH}2 Karten hinzu",
+                "Füge zwei {AGAIN} {EARTH} Karten hinzu",
+                "Füge zwei {AGAIN} {WIND} Karten hinzu",
+                "Ignoriere negative Gegenstandseffekte",
+                "Ignoriere negative Szenarioeffekte"
             ]
         },
         "SW": {
-            "name": "Spellweaver",
+            "name": "Spruchweberin",
             "perks": [
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Add two {+1_WHITE} cards",
-                "Add one {+0_WHITE} {STUN} card",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add one {+1_WHITE} {CURSE} card",
-                "Add one {+2_WHITE} {FIRE} card",
-                "Add one {+2_WHITE} {ICE} card",
-                "Add one {AGAIN} {EARTH} and one {AGAIN} {WIND} card",
-                "Add one {AGAIN} {LIGHT} and one {AGAIN} {DARK} card"
+                "Entferne vier {+0_WHITE} Karten",
+                "Ersetze eine {-1_WHITE} Karte mit einer {+1_WHITE} Karte",
+                "Füge zwei {+1_WHITE} Karten hinzu",
+                "Füge eine {+0_WHITE} {STUN} Karte hinzu",
+                "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
+                "Füge eine {+1_WHITE} {IMMOBILIZE} Karte hinzu",
+                "Füge eine {+1_WHITE} {CURSE} Karte hinzu",
+                "Füge eine {+2_WHITE} {FIRE} Karte hinzu",
+                "Füge eine {+2_WHITE} {ICE} Karte hinzu",
+                "Füge eine {AGAIN} {EARTH} und eine {AGAIN} {WIND} Karte hinzu",
+                "Füge eine {AGAIN} {LIGHT} und eine {AGAIN} {DARK} Karte hinzu"
             ]
         },
         "TI": {
-            "name": "Tinkerer",
+            "name": "Tüftler",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Add two {+1_WHITE} cards",
-                "Add one {+3_WHITE} card",
-                "Add two {AGAIN} {FIRE} cards",
-                "Add three {AGAIN} {MUDDLE} cards",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add one {+1_WHITE} Heal {HEAL}2 card",
-                "Add one {+0_WHITE} ADD {TARGET} card",
-                "Ignore negative scenario effects"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Ersetze eine {-2_WHITE} Karte mit einer {+0_WHITE} Karte",
+                "Füge zwei {+1_WHITE} Karten hinzu",
+                "Füge eine {+3_WHITE} Karte hinzu",
+                "Füge zwei {AGAIN} {FIRE} Karten hinzu",
+                "Add three {AGAIN} {MUDDLE} Karten hinzu",
+                "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
+                "Füge eine {+1_WHITE} {IMMOBILIZE} Karte hinzu",
+                "Füge eine {+1_WHITE} Heilung {HEAL}2 Karte hinzu",
+                "Füge eine {+0_WHITE} Ziel hinzufügen {TARGET} Karte hinzu",
+                "Ignoriere negative Szenarioeffekte"
             ]
         },
         "SC": {
-            "name": "Scoundrel",
+            "name": "Schurkin",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add two {AGAIN} {PIERCE}3 cards",
-                "Add two {AGAIN} {POISON} cards",
-                "Add two {AGAIN} {MUDDLE} cards",
-                "Add one {AGAIN} {INVISIBLE} card",
-                "Ignore negative scenario effects"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne vier {+0_WHITE} Karten",
+                "Ersetze eine {-2_WHITE} Karte mit einer {+0_WHITE} Karte",
+                "Ersetze eine {-1_WHITE} Karte mit einer {+1_WHITE} Karte",
+                "Ersetze eine {+0_WHITE} Karte mit einer {+2_WHITE} Karte",
+                "Füge zwei {AGAIN} {+1_WHITE} Karten hinzu",
+                "Füge zwei {AGAIN} {PIERCE}3 Karten hinzu",
+                "Füge zwei {AGAIN} {POISON} Karten hinzu",
+                "Füge zwei {AGAIN} {MUDDLE} Karten hinzu",
+                "Füge eine {AGAIN} {INVISIBLE} Karte hinzu",
+                "Ignoriere negative Szenarioeffekte"
             ]
         },
         "MT": {
-            "name": "Mindthief",
+            "name": "Gedankendiebin",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Add one {+2_WHITE} {ICE} card",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add three {AGAIN} {PULL}1 cards",
-                "Add three {AGAIN} {MUDDLE} cards",
-                "Add two {AGAIN} {IMMOBILIZE} cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
-                "Ignore negative scenario effects"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne vier {+0_WHITE} Karten",
+                "Ersetze zwei {+1_WHITE} Karten durch zwei {+2_WHITE} Karten",
+                "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
+                "Füge eine {+2_WHITE} {ICE} Karte hinzu",
+                "Füge zwei {AGAIN} {+1_WHITE} Karten hinzu",
+                "Füge drei {AGAIN} {PULL}1 Karten hinzu",
+                "Füge drei {AGAIN} {MUDDLE} Karten hinzu",
+                "Füge zwei {AGAIN} {IMMOBILIZE} Karten hinzu",
+                "Füge eine {AGAIN} {STUN} Karte hinzu",
+                "Füge eine {AGAIN} {DISARM} Karte und eine {AGAIN} {MUDDLE} Karte hinzu",
+                "Ignoriere negative Szenarioeffekte"
             ]
         },
         "DS": {
-            "name": "Doomstalker",
+            "name": "Schicksalsläufer",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace two {+0_WHITE} cards with two {+1_WHITE} cards",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add one {+2_WHITE} {MUDDLE} card",
-                "Add one {+1_WHITE} {POISON} card",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add one {+0_WHITE} {STUN} card",
-                "Add one {AGAIN} {TARGET} card",
-                "Ignore negative scenario effects"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Ersetze zwei {+0_WHITE} Karten durch zwei {+1_WHITE} Karten",
+                "Füge zwei {AGAIN} {+1_WHITE} Karten hinzu",
+                "Füge eine {+2_WHITE} {MUDDLE} Karte hinzu",
+                "Füge eine {+1_WHITE} {POISON} Karte hinzu",
+                "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
+                "Füge eine {+1_WHITE} {IMMOBILIZE} Karte hinzu",
+                "Füge eine {+0_WHITE} {STUN} Karte hinzu",
+                "Füge eine {AGAIN} {TARGET} Karte hinzu",
+                "Ignoriere negative Szenarioeffekte"
             ]
         },
         "EL": {
-            "name": "Elementalist",
+            "name": "Elementarist",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add three {+0_WHITE} {FIRE} cards",
-                "Add three {+0_WHITE} {ICE} cards",
-                "Add three {+0_WHITE} {WIND} cards",
-                "Add three {+0_WHITE} {EARTH} cards",
-                "Replace two {+0_WHITE} card with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} card",
-                "Replace two {+0_WHITE} card with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} card",
-                "Add two {+1_WHITE} {PUSH}1 cards",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+0_WHITE} {STUN} card",
-                "Add one {+0_WHITE} {TARGET} card"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} Karte",
+                "Füge drei {+0_WHITE} {FIRE} Karten hinzu",
+                "Füge drei {+0_WHITE} {ICE} Karten hinzu",
+                "Füge drei {+0_WHITE} {WIND} Karten hinzu",
+                "Füge drei {+0_WHITE} {EARTH} Karten hinzu",
+                "Ersetze zwei {+0_WHITE} Karten durch eine {+0_WHITE} {FIRE} und eine {+0_WHITE} {EARTH} Karte",
+                "Ersetze zwei {+0_WHITE} Karten durch eine {+0_WHITE} {ICE} und eine {+0_WHITE} {WIND} Karte",
+                "Füge zwei {+1_WHITE} {PUSH}1 Karten hinzu",
+                "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
+                "Füge eine {+0_WHITE} {STUN} Karte hinzu",
+                "Füge eine {+0_WHITE} {TARGET} Karte hinzu"
             ]
         },
         "SB": {
-            "name": "Sawbones",
+            "name": "Knochenflicker",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add one {AGAIN} {+2_WHITE} card",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add two {AGAIN} {WOUND} cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add one {AGAIN} {HEAL}3 card",
-                "Add one {+0_WHITE} Refresh an item card"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne vier {+0_WHITE} Karten",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} Karte",
+                "Füge eine {AGAIN} {+2_WHITE} Karte hinzu",
+                "Füge eine {+1_WHITE} {IMMOBILIZE} Karte hinzu",
+                "Füge zwei {AGAIN} {WOUND} Karten hinzu",
+                "Füge eine {AGAIN} {STUN} Karte hinzu",
+                "Füge eine {AGAIN} {HEAL}3 Karte hinzu",
+                "Füge eine {+0_WHITE} Gegenstand erneuern Karte hinzu"
             ]
         },
         "SS": {
-            "name": "Soothsinger",
+            "name": "Wahrsängerin",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove one {-2_WHITE} card",
-                "Replace two {+1_WHITE} cards with one {+4_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {DISARM} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {WOUND} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {POISON} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
-                "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
-                "Replace one {-1_WHITE} card with one {+0_WHITE} {STUN} card",
-                "Add three {AGAIN} {+1_WHITE} cards",
-                "Add two {AGAIN} {CURSE} cards"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne eine {-2_WHITE} Karte",
+                "Ersetze zwei {+1_WHITE} Karten durch eine {+4_WHITE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {IMMOBILIZE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {DISARM} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} {WOUND} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} {POISON} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} {CURSE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+3_WHITE} {MUDDLE} Karte",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {STUN} Karte",
+                "Füge drei {AGAIN} {+1_WHITE} Karten hinzu",
+                "Füge zwei {AGAIN} {CURSE} Karten hinzu"
             ]
         },
         "SK": {
-            "name": "Sunkeeper",
+            "name": "Sonnenhüterin",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add two {AGAIN} {LIGHT} cards",
-                "Add two {AGAIN} {SHIELD}1, Self cards",
-                "Ignore negative item effects and add two {+1_WHITE} cards",
-                "Ignore negative scenario effects"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne vier {+0_WHITE} Karten",
+                "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} Karte",
+                "Füge zwei {AGAIN} {+1_WHITE} Karten hinzu",
+                "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
+                "Füge zwei {AGAIN} {STUN} Karten hinzu",
+                "Füge zwei {AGAIN} {LIGHT} Karten hinzu",
+                "Füge zwei {AGAIN} {SHIELD}1, selbst Karten hinzu",
+                "Ignoriere negative Gegenstandseffekte und füge zwei {+1_WHITE} Karten hinzu",
+                "Ignoriere negative Szenarioeffekte"
             ]
         },
         "NS": {
-            "name": "Nightshroud",
+            "name": "Nachtschleier",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Add one {-1_WHITE} {DARK} card",
-                "Replace one {-1_WHITE} {DARK} card with one {+1_WHITE} {DARK} card",
-                "Add one {+1_WHITE} {INVISIBLE} card",
-                "Add three {AGAIN} {MUDDLE} cards",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add two {AGAIN} {CURSE} cards",
-                "Add one {AGAIN} {TARGET} card",
-                "Ignore negative scenario effects and add two {+1_WHITE} cards"
+                "Entferne vier {-1_WHITE} Karten",
+                "Entferne vier {+0_WHITE} Karten",
+                "Füge eine {-1_WHITE} {DARK} Karte hinzu",
+                "Ersetze eine {-1_WHITE} {DARK} Karte durch eine {+1_WHITE} {DARK} Karte",
+                "Füge eine {+1_WHITE} {INVISIBLE} Karte hinzu",
+                "Füge drei {AGAIN} {MUDDLE} Karten hinzu",
+                "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
+                "Füge zwei {AGAIN} {CURSE} Karten hinzu",
+                "Füge eine {AGAIN} {TARGET} Karte hinzu",
+                "Ignoriere negative Szenarioeffekte und füge zwei {+1_WHITE} Karten hinzu"
             ]
         },
         "SU": {
-            "name": "Summoner",
+            "name": "Ruferin",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Add one {+2_WHITE} card",
-                "Add two {AGAIN} {WOUND} cards",
-                "Add two {AGAIN} {POISON} cards",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add one {AGAIN} {FIRE} and one {AGAIN} {WIND} card",
-                "Add one {AGAIN} {DARK} and one {AGAIN} {EARTH} card",
-                "Ignore negative scenario effects and add two {+1_WHITE} cards"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
+                "Füge eine {+2_WHITE} Karte hinzu",
+                "Füge zwei {AGAIN} {WOUND} Karten hinzu",
+                "Füge zwei {AGAIN} {POISON} Karten hinzu",
+                "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
+                "Füge eine {AGAIN} {FIRE} und eine {AGAIN} {WIND} Karte hinzu",
+                "Füge eine {AGAIN} {DARK} und eine {AGAIN} {EARTH} Karte hinzu",
+                "Ignoriere negative Szenarioeffekte und füge zwei {+1_WHITE} Karten hinzu"
             ]
         },
         "BE": {
-            "name": "Berserker",
+            "name": "Berserkerin",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {AGAIN} {+2_WHITE} card",
-                "Add two {AGAIN} {WOUND} cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add one {AGAIN} {+1_WHITE} {DISARM} card",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add one {+2_WHITE} {FIRE} card",
-                "Ignore negative item effects"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne vier {+0_WHITE} Karten",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {AGAIN} {+2_WHITE} Karte",
+                "Füge zwei {AGAIN} {WOUND} Karten hinzu",
+                "Füge eine {AGAIN} {STUN} Karte hinzu",
+                "Füge eine {AGAIN} {+1_WHITE} {DISARM} Karte hinzu",
+                "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
+                "Füge eine {+2_WHITE} {FIRE} Karte hinzu",
+                "Ignoriere negative Gegenstandseffekte"
             ]
         },
         "QM": {
-            "name": "Quartermaster",
+            "name": "Quartiermeister",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add three {AGAIN} {MUDDLE} cards",
-                "Add two {AGAIN} {PIERCE}3 cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add one {AGAIN} {TARGET} card",
-                "Add one {+0_WHITE} Refresh an item card",
-                "Ignore negative item effects and add two {+1_WHITE} cards"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne vier {+0_WHITE} Karten",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} Karte",
+                "Füge zwei {AGAIN} {+1_WHITE} Karten hinzu",
+                "Füge drei {AGAIN} {MUDDLE} Karten hinzu",
+                "Füge zwei {AGAIN} {PIERCE}3 Karten hinzu",
+                "Füge eine {AGAIN} {STUN} Karte hinzu",
+                "Füge eine {AGAIN} {TARGET} Karte hinzu",
+                "Füge eine {+0_WHITE} Gegenstand erneuern Karte hinzu",
+                "Ignoriere negative Gegenstandseffekte und füge zwei {+1_WHITE} Karten hinzu"
             ]
         },
         "PH": {
-            "name": "Plagueherald",
+            "name": "Seuchenbringer",
             "perks": [
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add two {+1_WHITE} cards",
-                "Add one {+1_WHITE} {WIND} card",
-                "Add three {AGAIN} {POISON} cards",
-                "Add two {AGAIN} {CURSE} cards",
-                "Add two {AGAIN} {IMMOBILIZE} cards",
-                "Add one {AGAIN} {STUN} card",
-                "Ignore negative scenario effects and add one {+1_WHITE} card"
+                "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} Karte",
+                "Füge zwei {+1_WHITE} Karten hinzu",
+                "Füge eine {+1_WHITE} {WIND} Karte hinzu",
+                "Füge drei {AGAIN} {POISON} Karten hinzu",
+                "Füge zwei {AGAIN} {CURSE} Karten hinzu",
+                "Füge zwei {AGAIN} {IMMOBILIZE} Karten hinzu",
+                "Füge eine {AGAIN} {STUN} Karte hinzu",
+                "Ignoriere negative Szenarioeffekte und füge eine {+1_WHITE} Karte hinzu"
             ]
         },
         "BT": {
-            "name": "Beast Tyrant",
+            "name": "Bestienmeister",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+1_WHITE} {IMMOBILIZE} card",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add two {AGAIN} {EARTH} cards",
-                "Ignore negative scenario effects"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} Karte",
+                "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
+                "Füge eine {+1_WHITE} {IMMOBILIZE} Karte hinzu",
+                "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
+                "Füge zwei {AGAIN} {EARTH} Karten hinzu",
+                "Ignoriere negative Szenarioeffekte"
             ]
         },
         "BS": {
-            "name": "Bladeswarm",
+            "name": "Klingenschwarm",
             "perks": [
-                "Remove one {-2_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {WIND} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {EARTH} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {LIGHT} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {DARK} card",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add one {+1_WHITE} {WOUND} card",
-                "Add one {+1_WHITE} {POISON} card",
-                "Add one {+2_WHITE} {MUDDLE} card",
-                "Ignore negative item effects and add one {+1_WHITE} card",
-                "Ignore negative scenario effects and add one {+1_WHITE} card"
+                "Entferne eine {-2_WHITE} Karte",
+                "Entferne vier {+0_WHITE} Karten",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {WIND} Karte",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {EARTH} Karte",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {LIGHT} Karte",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {DARK} Karte",
+                "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
+                "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
+                "Füge eine {+1_WHITE} {POISON} Karte hinzu",
+                "Füge eine {+2_WHITE} {MUDDLE} Karte hinzu",
+                "Ignoriere negative Gegenstandseffekte und füge eine {+1_WHITE} Karte hinzu",
+                "Ignoriere negative Szenarioeffekte und füge eine {+1_WHITE} Karte hinzu"
             ]
         },
         "DR": {
-            "name": "Diviner",
+            "name": "Prophetin",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove one {-2_WHITE} card",
-                "Replace two {+1_WHITE} cards with one {+3_WHITE} {SHIELD}1, Self card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1, Affect any ally card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {DARK} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT} card",
-                "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {REGENERATE}, Self card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} {HEAL}2, Affect any ally card",
-                "Add two {AGAIN} {HEAL}1, Self cards",
-                "Add two {AGAIN} {CURSE} cards",
-                "Ignore negative scenario effects and add two {+1_WHITE} cards"
+                "Entferne zwei {-1_WHITE} cards",
+                "Entferne eine {-2_WHITE} card",
+                "Ersetze two {+1_WHITE} Karten durch eine {+3_WHITE} {SHIELD}1, Selbst Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {SHIELD}1, Verbündeter Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} {DARK} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} {LIGHT} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+3_WHITE} {MUDDLE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} {CURSE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} {REGENERATE}, Selbst Karte",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {HEAL}2, Verbündeter Karte",
+                "Füge zwei {AGAIN} {HEAL}1, Selbst Karten hinzu",
+                "Füge zwei {AGAIN} {CURSE} Karten hinzu",
+                "Ignoriere negative Szenarioeffekte und füge zwei {+1_WHITE} Karten hinzu"
             ]
         },
         "RG": {
-            "name": "Red Guard",
+            "name": "Rotgardist",
             "perks": [
-                "Remove four {+0_WHITE} cards",
-                "Remove two {-1_WHITE} cards",
-                "Remove one {-2_WHITE} card and one {+1_WHITE} card",
-                "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {LIGHT} card",
-                "Add one {+1_WHITE} {FIRE_LIGHT} card",
-                "Add one {+1_WHITE} {SHIELD} 1 card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
-                "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card"
+                "Entferne vier {+0_WHITE} Karten",
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne eine {-2_WHITE} Karte und eine {+1_WHITE} Karte",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
+                "Ersetze eine {+1_WHITE} Karte durch eine {+2_WHITE} {FIRE} Karte",
+                "Ersetze eine {+1_WHITE} Karte durch eine {+2_WHITE} {LIGHT} Karte",
+                "Füge eine {+1_WHITE} {FIRE_LIGHT} Karte hinzu",
+                "Füge eine {+1_WHITE} {SHIELD} 1 Karte hinzu",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {IMMOBILIZE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {WOUND} Karte"
             ]
         },
         "DM": {
-            "name": "Demolitionist",
+            "name": "Sprengmeisterin",
             "perks": [
-                "Remove four {+0_WHITE} cards",
-                "Remove two {-1_WHITE} cards",
-                "Remove one {-2_WHITE} card and one {+1_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
-                "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card",
-                "Add one {+2_WHITE} card",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {EARTH} card",
-                "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
-                "Add one {+0_WHITE} All adjacent enemies suffer 1 damage card"
+                "Entferne vier {+0_WHITE} Karten",
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne eine {-2_WHITE} Karte und eine {+1_WHITE} Karte",
+                "Ersetze eine {+0_WHITE}  Karte durch eine {+2_WHITE} {MUDDLE} Karte",
+                "Ersetze eine {-1_WHITE}  Karte durch eine {+0_WHITE} {POISON} Karte",
+                "Füge eine {+2_WHITE} Karte hinzu",
+                "Ersetze eine {+1_WHITE} Karte durch eine {+2_WHITE} {EARTH} Karte",
+                "Ersetze eine {+1_WHITE} Karte durch eine {+2_WHITE} {FIRE} Karte",
+                "Füge eine {+0_WHITE} Alle angrenzenden Gegner erleiden einen Schaden Karte hinzu"
             ]
         },
         "HT": {
-            "name": "Hatchet",
+            "name": "Axtwerfer",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {POISON} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {WOUND} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
-                "Remove one {+0_WHITE} card with one {+1_WHITE} {PUSH}2 card",
-                "Remove one {+0_WHITE} card with one {+0_WHITE} {STUN} card",
-                "Remove one {+1_WHITE} card with one {+1_WHITE} {STUN} card",
-                "Add one {+2_WHITE} {WIND} card",
-                "Replace one {+1_WHITE} with one {+3_WHITE} card"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne eine {+0_WHITE} Karte durch eine {+2_WHITE} {MUDDLE} Karte",
+                "Entferne eine {+0_WHITE} Karte durch eine {+1_WHITE} {POISON} Karte",
+                "Entferne eine {+0_WHITE} Karte durch eine {+1_WHITE} {WOUND} Karte",
+                "Entferne eine {+0_WHITE} Karte durch eine {+1_WHITE} {IMMOBILIZE} Karte",
+                "Entferne eine {+0_WHITE} Karte durch eine {+1_WHITE} {PUSH}2 Karte",
+                "Entferne eine {+0_WHITE} Karte durch eine {+0_WHITE} {STUN} Karte",
+                "Entferne eine {+1_WHITE} Karte durch eine {+1_WHITE} {STUN} Karte",
+                "Füge eine {+2_WHITE} {WIND} Karte hinzu",
+                "Ersetze eine {+1_WHITE} Karte durch eine {+3_WHITE} Karte"
             ]
         },
         "VW": {
-            "name": "Voidwarden",
+            "name": "Leerehüterin",
             "perks": [
-                "Remove two {-1_WHITE} cards",
-                "Remove one {-2_WHITE} card",
-                "Replace one {+0_WHITE} with one {+1_WHITE} {DARK} card",
-                "Replace one {+0_WHITE} with one {+1_WHITE} {ICE} card",
-                "Replace one {-1_WHITE} with one {+0_WHITE} {HEAL}1 (Ally) card",
-                "Add one {+1_WHITE} {HEAL}1 (Ally) card",
-                "Add one {+1_WHITE} {POISON} card",
-                "Add one {+3_WHITE} card",
-                "Add one {+1_WHITE} {CURSE} card"
+                "Entferne zwei {-1_WHITE} Karten",
+                "Entferne eine {-2_WHITE} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {DARK} Karte",
+                "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {ICE} Karte",
+                "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {HEAL}1 (Verbündeter) Karte",
+                "Füge eine {+1_WHITE} {HEAL}1 (Verbündeter) Karte hinzu",
+                "Füge eine {+1_WHITE} {POISON} Karte hinzu",
+                "Füge eine {+3_WHITE} Karte hinzu",
+                "Füge eine {+1_WHITE} {CURSE} Karte hinzu"
             ]
         }
     },
@@ -3646,8 +3647,8 @@ export default {
             "name": "Es leben die Drachen",
             "sections": {
                 "1": "Ihr habt Berichte über große fliegende Kreaturen im Kupferkammgebirge gehört. Könnte es sich dabei wirklich um Drachen handeln? Drachen könnten eine Bedrohung für die Stadt darstellen. Daher beschließt ihr, dieser Sache auf den Grund zu gehen.",
-                "2": "Euer Ziel ist der Icecrag, der höchste Berg im Kupferkammgebirge. Auf eurem Weg wurdet ihr von einer Gruppe Inox und Dämonen überfallen. Ihr wart höchst verwundert über ein solches Bündnis, aber ihr ließt euch dadurch nicht von eurem Weg zu eurem Ziel abbringen.",
-                "3": "Der Aufstieg auf den Icecrag war zermürbend und beschwerlich. Ihr musstet euch gegen die Kälte, Wölfe und hungrige Draken erwehren. Aber ihr seid der Sache mit den Drachen auf den Grund gekommen. Auf dem Gipfel befand sich eine gigantische, sprechende Echse. Sie sprach mit einer harschen Stimme, die euch mit ihrer Eloquenz überraschte. \"Eine Gruppe von Savvas hat mich im Schlaf überrascht und mir eine meiner Flammendrüsen entfernt, vermutlich um sie zu studieren. Ich kann diese Beleidigung nicht ungestraft lassen und würde es sehr zu schätzen wissen, wenn ihr sie aus der Stadt zurückholt und dabei so viele von ihnen tötet, wie ihr könnt....oder, wenn ihr dem Klischee entsprechen wollt, könnt ihr mich einfach angreifen”, sagte die Kreatur mit einem Seufzer. \"Den Drachen erschlagen, die Prinzessin retten und so weiter. Nur habe ich keine Prinzessin, und ich bin auch kein Drache - nur ein Drake, der schon lange gelebt hat und sein Leben heute nicht beenden will. Wenn ihr mich also angreift, werde ich mich wehren und ihr werdet mit Sicherheit sterben\"."
+                "2": "Euer Ziel ist die Eisklippe, der höchste Berg im Kupferkammgebirge. Auf eurem Weg wurdet ihr von einer Gruppe Inox und Dämonen überfallen. Ihr wart höchst verwundert über ein solches Bündnis, aber ihr ließt euch dadurch nicht von eurem Weg zu eurem Ziel abbringen.",
+                "3": "Der Aufstieg zur Eisklippe war zermürbend und beschwerlich. Ihr musstet euch gegen die Kälte, Wölfe und hungrige Draken erwehren. Aber ihr seid der Sache mit den Drachen auf den Grund gekommen. Auf dem Gipfel befand sich eine gigantische, sprechende Echse. Sie sprach mit einer harschen Stimme, die euch mit ihrer Eloquenz überraschte. \"Eine Gruppe von Savvas hat mich im Schlaf überrascht und mir eine meiner Flammendrüsen entfernt, vermutlich um sie zu studieren. Ich kann diese Beleidigung nicht ungestraft lassen und würde es sehr zu schätzen wissen, wenn ihr sie aus der Stadt zurückholt und dabei so viele von ihnen tötet, wie ihr könnt....oder, wenn ihr dem Klischee entsprechen wollt, könnt ihr mich einfach angreifen”, sagte die Kreatur mit einem Seufzer. \"Den Drachen erschlagen, die Prinzessin retten und so weiter. Nur habe ich keine Prinzessin, und ich bin auch kein Drache - nur ein Drake, der schon lange gelebt hat und sein Leben heute nicht beenden will. Wenn ihr mich also angreift, werde ich mich wehren und ihr werdet mit Sicherheit sterben\"."
             },
             "stages": {
                 "0": "{1}",
@@ -3738,7 +3739,7 @@ export default {
         "22": {
             "name": "Dinge hören",
             "sections": {
-                "1": "Die Inox und Dämonen, denen ihr auf dem Weg zum ?Icecrag? begegnetet, hatten unter ihren Habseligkeiten einige grobe Kritzeleien, auf denen eine \"Stimme\" erwähnt wurde. In der Nähe des Bergpasses befand sich eine Höhle, die nach euch zu rufen schien. Ihr spürt einen subtilen und starken Drang die Höhle zu erkunden.",
+                "1": "Die Inox und Dämonen, denen ihr auf dem Weg zur Eisklippe begegnetet, hatten unter ihren Habseligkeiten einige grobe Kritzeleien, auf denen eine \"Stimme\" erwähnt wurde. In der Nähe des Bergpasses befand sich eine Höhle, die nach euch zu rufen schien. Ihr spürt einen subtilen und starken Drang die Höhle zu erkunden.",
                 "2": "In der Höhle befindet sich eine mächtige Kreatur, die nur als \"Die Stimme\" bekannt ist. Mit ihrer Hilfe konntet ihr die dröhnende, knochenklappernde Stimme der Kreatur wiederherstellen. Sie bittet euch, sie zu befreien, aber die Motive \"Der Stimme\" bleiben unklar."
             },
             "stages": {
@@ -3811,7 +3812,7 @@ export default {
         "27": {
             "name": "Drachenschlächter",
             "sections": {
-                "1": "Hoch oben auf dem Icecrag hat der alte Drake euch um einen Gefallen gebeten. Hat er noch nicht von euch gehört? Es ist nicht eure Angewohnheit mit Echsen zu verhandeln. Es ist an der Zeit einen Draken zu töten.",
+                "1": "Hoch oben auf der Eisklippe hat der alte Drake euch um einen Gefallen gebeten. Hat er noch nicht von euch gehört? Es ist nicht eure Angewohnheit mit Echsen zu verhandeln. Es ist an der Zeit einen Draken zu töten.",
                 "2": "Wenn ihr es euch recht überlegt, könnte es sich als überaus nützlich erweisen einen Draken in eurer Schuld stehen zu haben. Also habt ihr euch entschieden dem alten Draken zu helfen. Immerhin war es der erste Drake, der nicht versuchgte euch zu fressen.",
                 "3": "Ihr hättet nie gedacht, dass ein \"Drache\" so abfällig sein würde, während er im Sterben liegt. Die Stadt bezahlte euch ein hübsches Sümmchen dafür, dass ihr den Draken erschlagen habt."
             },
@@ -4208,7 +4209,7 @@ export default {
         }
     },
     "prompts": {
-        "dragons": {
+        "dragon": {
             "1": "Bringt dem Draken den Schatz. Erhaltet die globale Errungenschaft \"Hilfe für den Draken\". Fügt dem Deck das Stadtereignis 75 und das Wegereignis 66 hinzu.",
             "2": "Helft dem Draken nicht.",
             "title": "Freund oder Feind",

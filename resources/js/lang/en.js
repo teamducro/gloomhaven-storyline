@@ -51,6 +51,7 @@ export default {
     "5 Ancient Technology Global Achievements": "5 “Ancient Technology” Global Achievements",
     "Gain The Drakes Command & The Drakes Treasure Party Achievements": "Gain “The Drake’s Command” & “The Drake’s Treasure” Party Achievements",
     "Add City Event 75 & Road Event 66": "Add City Event 75 & Road Event 66",
+    "and gain The Drake Aided global achievement": "and gain “The Drake Aided” global achievement",
     "Donate +100 gold to the Sanctuary of the Great Oak": "Donate +100 gold to the Sanctuary of the Great Oak",
     "Have a party reputation of 10 or higher": "Have a party reputation of 10 or higher",
     "Have a party reputation of 20": "Have a party reputation of 20",
@@ -4232,7 +4233,7 @@ export default {
         }
     },
     "prompts": {
-        "dragons": {
+        "dragon": {
             "1": "Return the treasure to the Drake. Gain the Global Achievement “The Drake Aided”. Add City Event 75 and Road Event 66 to the deck",
             "2": "Do not aid the Drake.",
             "title": "Friend or Foe",

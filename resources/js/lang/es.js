@@ -51,6 +51,7 @@ export default {
     "5 Ancient Technology Global Achievements": "Obtén 5 Logros Globales de “Tecnología Antigua”",
     "Gain The Drakes Command & The Drakes Treasure Party Achievements": "Obtén los logros de Grupo “La orden del Draco” y “El tesoro del Draco”",
     "Add City Event 75 & Road Event 66": "Añade el Evento de Ciudad 75 y Evento de Camino 66",
+    "and gain The Drake Aided global achievement": "and gain “The Drake Aided” global achievement",
     "Donate +100 gold to the Sanctuary of the Great Oak": "Dona un total de 100 de oro al Santuario del Gran Roble",
     "Have a party reputation of 10 or higher": "Ten una reputación de Grupo de 10 o más",
     "Have a party reputation of 20": "Ten una reputación de Grupo de 20",
@@ -4257,7 +4258,7 @@ export default {
         }
     },
     "prompts": {
-        "dragons": {
+        "dragon": {
             "1": "Devolvéis el tesoro al Draco. Obtienes el logro global “El Draco Auxiliado”. Agrega el Evento de Ciudad 75 y el Evento de Viaje 66 al mazo",
             "2": "No ayudásteis al Draco .",
             "title": "Amigo o enemigo",
