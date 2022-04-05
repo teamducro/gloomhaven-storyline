@@ -1,5 +1,5 @@
 <template>
-    <div id="map-container" class="h-screen w-screen overflow-hidden">
+    <div id="map-container" :key="'map-'+game" class="h-screen w-screen overflow-hidden">
         <webp src="/img/maps/background-lowres.jpg" :cover="true"
               highres="/img/maps/background-highres.jpg"
               alt="Gloomhaven map background" class="fixed"/>
@@ -12,12 +12,12 @@
                   alt="Gloomhaven map"
                   class="map"
                   :style="{
-                      'top': '-' + settings.yOffset + 'px'
+                      'top': '-'+settings.yOffset+'px'
                   }"/>
             <ul v-if="achievements">
                 <li v-for="achievement in achievements.items"
                     v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
-                    :key="achievement.id"
+                    :key="game+'-'+achievement.id"
                     class="absolute"
                     @click="openAchievement(achievement)"
                     :style="{
@@ -34,7 +34,7 @@
                 <webp v-for="scenario in scenarios.items"
                       v-if="scenario.isVisible() && (!scenario.root || scenario.id === 1 || (scenario.root && scenario.isComplete())) && scenario.coordinates.x > 0 && scenario.coordinates.y > 0"
                       :src="scenario.image()"
-                      :key="scenario.id"
+                      :key="game+'-'+scenario.id"
                       :id="'s' + scenario.id"
                       :animate="true"
                       :alt="$t(scenario.name)"
@@ -58,6 +58,7 @@ import GameData from "../services/GameData";
 export default {
     data() {
         return {
+            game: 'gh',
             map: null,
             $map: null,
             mapImages: null,
@@ -106,8 +107,9 @@ export default {
     },
     methods: {
         async loadMap() {
-            this.mapImages = this.gameData.map(app.game);
-            this.settings = this.gameData.mapSettings(app.game);
+            this.game = app.game;
+            this.mapImages = this.gameData.map(this.game);
+            this.settings = this.gameData.mapSettings(this.game);
 
             await this.$nextTick();
 
@@ -121,7 +123,7 @@ export default {
             this.centerMap();
         },
         setScenarios() {
-            this.mapImages = this.gameData.map(app.game);
+            this.mapImages = this.gameData.map(this.game);
             this.map.setMinZoom(this.scale());
 
             this.scenarios = app.scenarios;
