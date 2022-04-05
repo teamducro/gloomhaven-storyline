@@ -184,7 +184,7 @@ class Scenario {
         // Multiple scenarios on the same sticker
         if (this.coupled && this.isBlocked()) {
             if (this.scenarioRepository.find(this.coupled).isComplete()) {
-                sticker = '/img/scenarios/' + this.game + '/' + this.coupled + '_c' + '.png'
+                sticker = '/img/scenarios/' + this.game + '/' + this.coupled + (this.isComplete() ? '_c' : '') + '.png'
             }
         }
 
@@ -192,13 +192,8 @@ class Scenario {
         if (this.hasMultipleLocations()) {
             const from = this.scenarioRepository.prevScenarios(this)?.first()?.id;
             if (from) {
-                sticker = '/img/scenarios/' + this.game + '/' + this.id + '_' + from + '_c' + '.png'
+                sticker = '/img/scenarios/' + this.game + '/' + this.id + '_' + from + (this.isComplete() ? '_c' : '') + '.png'
             }
-        }
-
-        // Remove when completed scenario stickers are added for JotL
-        if (this.game === 'jotl') {
-            sticker = sticker.replace('_c', '');
         }
 
         return sticker;

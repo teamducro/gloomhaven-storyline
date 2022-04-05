@@ -131,4 +131,9 @@ describe('Items', () => {
         cy.get('#items tbody tr:first').click();
         cy.get('.mdc-dialog').contains('Availability: 1 / 2');
     });
+
+    // TODO: it can add items
+    // TODO: it can remove items
+    // TODO: it can buy items
+    // TODO: it can sell items
 });
