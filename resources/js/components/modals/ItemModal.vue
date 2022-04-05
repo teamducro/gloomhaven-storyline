@@ -58,7 +58,7 @@ export default {
             this.item = item;
 
             this.$refs['modal'].open();
-            this.$refs['buy-item'].refresh();
+            this.$refs['buy-item']?.refresh();
         },
         close() {
             this.unsetItem();
