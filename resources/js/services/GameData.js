@@ -95,12 +95,30 @@ export default class GameData {
         }
     }
 
-    scenarioStickerScale(game = 'gh') {
+    mapSettings(game = 'gh') {
         if (game === 'gh' || game === 'fc') {
-            return 0.79;
+            return {
+                stickerScale: 0.79,
+                yOffset: 184,
+                width: 2606,
+                height: 2155
+            };
         }
 
-        return 1;
+        return {
+            stickerScale: 1,
+            yOffset: 0,
+            width: 2486,
+            height: 1905
+        };
+    }
+
+    mapYOffset(game = 'gh') {
+        if (game === 'gh' || game === 'fc') {
+            return 184;
+        }
+
+        return 0;
     }
 
     storylineViewBox(game = 'gh') {

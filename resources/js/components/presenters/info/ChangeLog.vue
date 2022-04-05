@@ -133,6 +133,7 @@ export default {
                 },
                 {version: '3.4', description: 'Add solo scenarios', date: dayjs('2022-03-06')},
                 {version: '3.5', description: 'Buy and sell items', date: dayjs('2022-04-02')},
+                {version: '3.6', description: 'Jotl map with stickers', date: dayjs('2022-04-06')},
             ].reverse()
         }
     },

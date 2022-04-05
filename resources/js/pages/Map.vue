@@ -3,11 +3,17 @@
         <webp src="/img/maps/background-lowres.jpg" :cover="true"
               highres="/img/maps/background-highres.jpg"
               alt="Gloomhaven map background" class="fixed"/>
-        <div id="map">
+        <div id="map" :style="{
+                      'width': settings.width+'px',
+                      'height': settings.height+'px'
+                  }">
             <webp v-if="mapImages" :src="mapImages.lowres"
                   :highres="mapImages.highres"
                   alt="Gloomhaven map"
-                  class="map"/>
+                  class="map"
+                  :style="{
+                      'top': '-' + settings.yOffset + 'px'
+                  }"/>
             <ul v-if="achievements">
                 <li v-for="achievement in achievements.items"
                     v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
@@ -55,6 +61,12 @@ export default {
             map: null,
             $map: null,
             mapImages: null,
+            settings: {
+                stickerScale: 1,
+                yOffset: 0,
+                width: 0,
+                height: 0
+            },
             mapTouch: null,
             scenarios: null,
             achievements: null,
@@ -62,16 +74,8 @@ export default {
             gameData: new GameData
         }
     },
-    mounted() {
-        this.mapImages = this.gameData.map(app.game);
-
-        this.$map = document.getElementById('map');
-        this.map = panzoom(this.$map, {
-            minZoom: this.scale(),
-            maxZoom: 4,
-            bounds: true
-        });
-        this.centerMap();
+    async mounted() {
+        await this.loadMap();
 
         if (app.scenarios) {
             this.setScenarios();
@@ -90,11 +94,10 @@ export default {
             this.setAchievements();
         }
         this.$bus.$on('achievements-updated', this.setAchievements);
+        this.$bus.$on('game-selected', this.loadMap);
     },
     destroyed() {
-        if (this.map) {
-            this.map.dispose();
-        }
+        this.map?.dispose();
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
         if (this.mapTouch) {
@@ -102,6 +105,21 @@ export default {
         }
     },
     methods: {
+        async loadMap() {
+            this.mapImages = this.gameData.map(app.game);
+            this.settings = this.gameData.mapSettings(app.game);
+
+            await this.$nextTick();
+
+            this.$map = document.getElementById('map');
+            this.map?.dispose();
+            this.map = panzoom(this.$map, {
+                minZoom: this.scale(),
+                maxZoom: 4,
+                bounds: true
+            });
+            this.centerMap();
+        },
         setScenarios() {
             this.mapImages = this.gameData.map(app.game);
             this.map.setMinZoom(this.scale());
@@ -139,7 +157,7 @@ export default {
         centerMap() {
             const scale = this.scale();
             this.map.zoomTo(0, 0, scale);
-            const yOffset = 184 * scale;
+            const yOffset = this.settings.yOffset * scale;
 
             if (this.isLandscape()) {
                 const mapWidth = this.$map.offsetWidth * scale;
@@ -155,10 +173,10 @@ export default {
             return window.innerWidth > window.innerHeight;
         },
         scale() {
-            this.scenarioScale = this.gameData.scenarioStickerScale(app.game);
+            this.scenarioScale = this.settings.stickerScale;
 
             return this.isLandscape()
-                ? window.innerHeight / 2155
+                ? window.innerHeight / this.settings.width
                 : window.innerWidth / this.$map.offsetWidth;
         }
     }
@@ -167,12 +185,9 @@ export default {
 
 <style lang="scss">
 #map {
-    width: 2606px;
-    height: 2155px;
     position: relative;
 
     .map {
-        top: -184px;
         left: 0;
         width: 100%;
         position: absolute;
