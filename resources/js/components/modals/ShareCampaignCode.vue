@@ -1,5 +1,5 @@
 <template>
-    <modal ref="modal" :title="$t('share.title')" @closed="clearTimer">
+    <modal ref="modal" :title="$t('share-modal.title')" @closed="clearTimer">
         <template v-slot:content>
             <template v-if="story && story.is_shared">
                 <p>You are not the owner of this campaign, you can't share it with others.</p>
