@@ -27,6 +27,8 @@
 import {loadLanguageAsync} from "../../services/I18n-setup";
 import store from "store/dist/store.modern";
 import {MDCSelect} from "@material/select/component";
+import Helpers from "../../services/Helpers";
+import UserRepository from "../../apiRepositories/UserRepository";
 
 export default {
     data() {
@@ -45,7 +47,8 @@ export default {
                 'it': '🇮🇹',
                 'de': '🇩🇪',
                 'es': '🇪🇸'
-            }
+            },
+            userRepository: new UserRepository,
         }
     },
     beforeMount() {
@@ -53,7 +56,8 @@ export default {
     },
     mounted() {
         if (this.current !== window.i18n.locale) {
-            loadLanguageAsync(this.current);
+            loadLanguageAsync(this.current)
+                .then(() => this.updateUserLanguage())
         }
 
         if (c('.language-switch').length) {
@@ -72,6 +76,7 @@ export default {
             this.current = this.select.value;
             loadLanguageAsync(this.current);
             store.set('lang', this.current);
+            this.updateUserLanguage();
         },
         getInitialLanguage() {
             let lang = store.get('lang');
@@ -91,6 +96,14 @@ export default {
         },
         validLanguage(lang) {
             return this.languages.hasOwnProperty(lang);
+        },
+        updateUserLanguage(wait = true) {
+            if (Helpers.loggedIn() && typeof app.user?.lang === 'undefined' && wait === true) {
+                setTimeout(() => this.updateUserLanguage(false), 500);
+            } else if (Helpers.loggedIn() && app.user?.lang !== this.current) {
+                app.user.lang = this.current;
+                this.userRepository.update(app.user);
+            }
         }
     }
 }
