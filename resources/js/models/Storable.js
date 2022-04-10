@@ -20,7 +20,9 @@ export default {
 
     store() {
         app.campaignData[this.key()] = this.valuesToStore();
-        store.set(app.campaignId, app.campaignData);
+        const campaignData = _.clone(app.campaignData);
+        campaignData[this.key()] = this.valuesToStore();
+        store.set(app.campaignId, campaignData);
     },
 
     read() {

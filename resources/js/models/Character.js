@@ -93,7 +93,7 @@ class Character {
     valuesToStore() {
         let values = this.parentValuesToStore();
         values.checks = collect({...this.checks}).filter(v => v).all();
-        values.perks = collect({...this.perks}).filter(perks => (perks || []).filter(v => v)).all();
+        values.perks = collect({...this.perks}).map(perks => (perks || []).filter(v => v)).filter(v => v.length).all();
         values.items = collect({...this.items}).filter(v => v).all();
         values.quest = this.quest instanceof PersonalQuest ? this.quest.valuesToStore() : {};
         return values;
