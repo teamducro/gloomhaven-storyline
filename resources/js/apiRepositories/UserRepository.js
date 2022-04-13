@@ -11,6 +11,14 @@ export default class UserRepository extends ApiRepository {
         return new User(user);
     }
 
+    async update(user) {
+        const response = await this.api.put('user', user.postData());
+        user = response.data.data;
+        this.storeUser(user);
+
+        return new User(user);
+    }
+
     storeUser(user) {
         store.set('user', user);
     }

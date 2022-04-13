@@ -46,7 +46,7 @@ class Story extends Model {
     }
 
     makeHash() {
-        return md5(JSON.stringify(this.data));
+        return md5(this.postData().data);
     }
 
     postData() {

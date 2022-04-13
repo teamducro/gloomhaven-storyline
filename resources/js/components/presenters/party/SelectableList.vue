@@ -63,6 +63,10 @@ export default {
         width: String,
         items: Object,
         disabled: Array,
+        animations: {
+            type: Boolean,
+            default: true
+        },
         filterClosure: Function
     },
     data() {
@@ -122,7 +126,7 @@ export default {
         },
         rerender() {
             this.key++;
-            if (this.key > 1) {
+            if (this.key > 1 && this.animations) {
                 this.animationsEnabled = true;
             }
         },

@@ -7,10 +7,17 @@ class User extends Model {
 
         this.id;
         this.name;
+        this.lang;
         this.email;
         this.is_patron;
 
         this.map(properties)
+    }
+
+    postData() {
+        return {
+            lang: this.lang
+        }
     }
 
 }

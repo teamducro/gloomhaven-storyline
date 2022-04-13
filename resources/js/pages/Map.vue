@@ -14,7 +14,7 @@
                   :style="{
                       'top': '-'+settings.yOffset+'px'
                   }"/>
-            <ul v-if="achievements">
+            <ul v-if="achievements && achievements.count()">
                 <li v-for="achievement in achievements.items"
                     v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
                     :key="game+'-'+achievement.id"
@@ -30,7 +30,7 @@
                           :alt="$t(achievement.name)"/>
                 </li>
             </ul>
-            <template v-if="scenarios">
+            <template v-if="scenarios && scenarios.count()">
                 <webp v-for="scenario in scenarios.items"
                       v-if="scenario.isVisible() && (!scenario.root || scenario.id === 1 || (scenario.root && scenario.isComplete())) && scenario.coordinates.x > 0 && scenario.coordinates.y > 0"
                       :src="scenario.image()"
