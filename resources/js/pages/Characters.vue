@@ -78,6 +78,7 @@
                                 :items.sync="sheetItems"
                                 :disabled="outOfStockItems"
                                 :filter-closure="itemFilterClosure"
+                                :animations="false"
                                 width="w-auto"
                                 class="mb-2"
                                 @change="storeItems"
