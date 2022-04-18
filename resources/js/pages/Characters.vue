@@ -453,7 +453,7 @@ export default {
         },
         rerender() {
             this.refreshInputFields();
-            this.sheetHash = this.sheet.getHash();
+            this.sheetHash = this.sheet.makeHash();
         }
     }
 }

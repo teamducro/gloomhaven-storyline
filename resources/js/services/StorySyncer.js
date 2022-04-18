@@ -33,11 +33,26 @@ export default class StorySyncer {
         // Remove unneeded data
         delete data['character-demo'];
 
-        // Make sure only values to store are kept
         for (const key in data) {
-            for (const model in modelMap) {
-                if (key.startsWith(model)) {
-                    data[key] = new modelMap[model](data[key]).valuesToStore();
+            for (const modelName in modelMap) {
+                if (key.startsWith(modelName)) {
+                    const modelData = data[key];
+
+                    // Add game to the sheet data to prevent issues while updating the version.
+                    if (modelName === 'sheet') {
+                        modelData.game = key.includes('-') ? key.split('-')[1] : 'gh';
+                    }
+
+                    // Resolve an instance of the model
+                    let model = new modelMap[modelName](modelData);
+
+                    // If model is versionable, increase the version if it has changed.
+                    if (typeof model.hasChanged === "function" && model.hasChanged()) {
+                        model.increaseVersion();
+                    }
+
+                    // Make sure only values to store are kept
+                    data[key] = model.valuesToStore();
                 }
             }
         }
