@@ -3,6 +3,7 @@ import GameData from "../services/GameData";
 import PersonalQuestRepository from "../repositories/PersonalQuestRepository";
 import PersonalQuest from "./PersonalQuest";
 import UsesTranslations from "./UsesTranslations";
+import Versionable from "./Versionable";
 
 class Character {
 
@@ -13,6 +14,8 @@ class Character {
     constructor(data = {}) {
         this.uuid = data.uuid;
         this.id = data.id;
+        this.version = data.version;
+        this.hash = data.hash;
         this.name = data.name;
         this.characterName = null;
         this.perkDescriptions = [];
@@ -33,6 +36,8 @@ class Character {
         this.fieldsToStore = {
             uuid: 'uuid',
             id: 'id',
+            version: 'version',
+            hash: 'hash',
             name: 'name',
             level: 'level',
             xp: 'xp',
@@ -57,9 +62,11 @@ class Character {
     }
 
     readGameData() {
-        const data = this.gameData.characters(this.game)[this.id];
         this.characterName = this.$tPrefix('name');
-        this.perkDescriptions = data.perks;
+        if (this.id) {
+            const data = this.gameData.characters(this.game)[this.id];
+            this.perkDescriptions = data.perks;
+        }
     }
 
     fillBlanks() {
@@ -107,10 +114,11 @@ class Character {
 Object.assign(Character.prototype, {
     parentRead: Storable.read,
     parentValuesToStore: Storable.valuesToStore,
-    store: Storable.store,
+    parentStore: Storable.store,
     delete: Storable.delete,
 });
 
 Object.assign(Character.prototype, UsesTranslations);
+Object.assign(Character.prototype, Versionable);
 
 export default Character;

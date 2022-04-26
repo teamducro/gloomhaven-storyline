@@ -1,10 +1,8 @@
 import Storable from './Storable'
 import Character from "./Character";
-import GameData from "../services/GameData";
 import Helpers from "../services/Helpers";
 import CharacterRepository from "../repositories/CharacterRepository";
-
-const md5 = require('js-md5');
+import Versionable from "./Versionable";
 
 class Sheet {
 
@@ -13,6 +11,8 @@ class Sheet {
     }
 
     constructor(data = {}) {
+        this.version = data.version;
+        this.hash = data.hash;
         this.reputation = data.reputation || 0;
         this.donations = data.donations || 0;
         this.prosperityIndex = data.prosperityIndex || 1;
@@ -30,6 +30,8 @@ class Sheet {
 
         this.fieldsToStore = {
             reputation: 'reputation',
+            version: 'version',
+            hash: 'hash',
             donations: 'donations',
             prosperityIndex: 'prosperityIndex',
             itemDesigns: {'itemDesigns': {}},
@@ -117,12 +119,20 @@ class Sheet {
         for (const uuid in this.characters) {
             if (!(this.characters[uuid] instanceof Character)) {
                 this.characters[uuid] = Character.make(uuid, this.game);
+                // Character was removed, remove it from sheet
+                if (!this.characters[uuid].id) {
+                    delete this.characters[uuid];
+                }
             }
         }
 
         for (const uuid in this.archivedCharacters) {
             if (!(this.archivedCharacters[uuid] instanceof Character)) {
                 this.archivedCharacters[uuid] = Character.make(uuid, this.game);
+                // Character was removed, remove it from sheet
+                if (!this.archivedCharacters[uuid].id) {
+                    delete this.archivedCharacters[uuid];
+                }
             }
         }
     }
@@ -152,10 +162,6 @@ class Sheet {
 
     removeInvalid(list, maxId) {
         return collect(list).filter((value, key) => key > 0 && key <= maxId).all();
-    }
-
-    getHash() {
-        return md5(JSON.stringify(this));
     }
 
     read() {
@@ -239,7 +245,9 @@ class Sheet {
 Object.assign(Sheet.prototype, {
     parentRead: Storable.read,
     parentValuesToStore: Storable.valuesToStore,
-    store: Storable.store,
+    parentStore: Storable.store,
 });
+
+Object.assign(Sheet.prototype, Versionable);
 
 export default Sheet;
