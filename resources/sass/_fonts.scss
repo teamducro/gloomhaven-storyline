@@ -29,8 +29,15 @@
     src: url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
 }
 
+@font-face {
+    font-family: 'Material Icons Fallback';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Material-Icons-Fallback.woff2') format('woff2');
+}
+
 .material-icons {
-    font-family: 'Material Icons';
+    font-family: 'Material Icons', 'Material Icons Fallback', serif;
     font-weight: normal;
     font-style: normal;
     font-size: 24px;
