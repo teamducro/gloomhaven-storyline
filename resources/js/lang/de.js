@@ -25,9 +25,9 @@ export default {
     "a campaign link": "ein Kampagnen-Link",
     "snapshots": {
         "title": "Snapshots",
-        "text-1": "Wenn du jemals den fortschritt deiner Kampagne verlierst kannst du diese automatischen Snapshots nutzen um sie auf einen früheren Zeitpunkt zurück zu setzen!",
+        "text-1": "Wenn du jemals den Fortschritt deiner Kampagne verlierst, kannst du diese automatischen Snapshots nutzen um sie auf einen früheren Zeitpunkt zurück zu setzen!",
         "text-2": "Snapshots sind nur für teilbare Kampagnen verfügbar und werden in einer Cloud abgelegt.",
-        "only-owner": "Nur die Besitzer dieser Kampagne kann die Snapshots verwalten.",
+        "only-owner": "Nur der Besitzer dieser Kampagne kann die Snapshots verwalten.",
         "no-snapshots": "Es gibt noch keine Snapshots."
     },
     "Characters": "Charaktere",
@@ -66,7 +66,7 @@ export default {
     "Clues": "Hinweise",
     "Open envelope": "Öffnet Umschlag",
     "Open box": "Öffnet Box",
-    "Envelope X solution": "Envelope X solution",
+    "Envelope X solution": "Lösung Umschlag X",
     "Additional notes": "Notizen",
     "Items": "Gegenstände",
     "Add Items": "Fügt Gegenstände hinzu",
@@ -106,7 +106,7 @@ export default {
     "Conclusion": "Epilog",
     "Gained from": "Erhalten von",
     "Required by": "Benötigt für",
-    "hidden": "verstecktes",
+    "hidden": "versteckt",
     "incomplete": "offen",
     "complete": "abgeschlossen",
     "blocked": "gesperrt",
@@ -126,7 +126,7 @@ export default {
     "Unlocked": "Freigeschaltet",
     "Clear all": "Alles löschen",
     "Add Character": "Füge Charakter hinzu",
-    "character-limit-message": "Dew to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
+    "character-limit-message": "Aufgrund der Beschränkungen bei der gemeinsamen Nutzung von kostenlosen Kampagnen gibt es eine Zeichenbegrenzung für Notizen, für Pro-Benutzer gilt diese Begrenzung nicht",
     "Please consider purchasing a licence": "Nur Pro-Lizenz-Nutzer können beliebig viele Charaktere anlegen. Bitte zieh den Kauf einer solchen Lizenz in Betracht.",
     "retire-character": {
         "text": "Bist du sicher, dass du diesen Charakter in Ruhestand schicken willst? Er wird nicht endgültig gelöscht.",
@@ -149,7 +149,7 @@ export default {
         "local desc": "Die lokale Kampagne ist deine Gratis-Kampagne und wird auf deinem lokalen Endgerät gespeichert. Du kannst sie nicht automatisch mit deinen Gruppenmitgliedern synchronisieren."
     },
     "credits": {
-        "thanks": "Vielen Dank an diese Entwickler für ihre Beiträge.",
+        "thanks": "Vielen Dank an diese Entwickler für ihre Beiträge und Unterstützung.",
         "license": "Alle Inhalte bleiben unter Creative-Commons-Lizenz."
     },
     "Gloomhaven assets by": "Gloomhaven Ressourcen von",
@@ -162,7 +162,7 @@ export default {
         "title": "Verfolge deinen Handlungsstrang in Gloomhaven",
         "text": "Um Gloomhaven zu spielen, treffen sich meine Freunde und ich einmal pro Woche. Wir drücken dann die Pausetaste vom Alltag. Jeder von uns hat etwas dazu beigetragen, dass sich unsere Freude am Spiel erhöht. Mein Beitrag ist ein interaktives Flussdiagramm, um unsere Spielfortschritte festzuhalten und uns die Auswahl eines neuen Szenarios zu erleichtern. Mit ein paar Getränken und Snacks sind wir bereit ins Abenteuer aufzubrechen."
     },
-    "Contributions": "Contributions",
+    "Contributions": "Beiträge/Unterstützung",
     "contribute": {
         "text-1": "Unterstütze das Projket indem du ein Patreon wirst und verdiene Dir meine tiefste Dankbarkeit. Du ermöglichst es mir dadurch diese Seite zu verbessern und weiter zu entwicklen.",
         "text-2": "Patreons können unendlich viele teilbare Kampagnen erstellen. Zusätztlich können sie über neue Funktionalitäten abstimmen und werden informiert sobald diese dann ausgerollt werden!"
@@ -279,13 +279,13 @@ export default {
     "REGENERATE": "RGENERIEREN",
     "DISARM": "ENTWAFFNEN",
     "TARGET": "ZIEL",
-    "LOOT": "LOOT",
-    "TELEPORT": "TELEPORT",
+    "LOOT": "BEUTE",
+    "TELEPORT": "TELEPORTIEREN",
     "Doom": "Doom",
     "Augment": "Augment",
-    "Song": "Song",
-    "Command": "Command",
-    "Loot": "Loot",
+    "Song": "Lied",
+    "Command": "Befehl",
+    "Loot": "Beute",
     "Intro": "Einleitung",
     "The Merchant": "Die Händlerin",
     "Demon and Rift": "Dämonen und Risse",
@@ -301,7 +301,7 @@ export default {
     "Solo": "Solo",
     "Solo Scenarios": "Solo-Szenarien",
     "Personal Quests": "Persönliche Ziele",
-    "Personal Quest": "Personal Quest",
+    "Personal Quest": "Persönliches Ziel",
     "Random Scenarios": "Zufällige Szenarien",
     "Sealed": "Versiegelt",
     "Road Events": "Weg-Ereignisse",
@@ -437,7 +437,7 @@ export default {
             "rewards": [
                 "je 50 Gold",
                 "+1 Wohlstand",
-                "Fügt Stadtereignis 78 dem Stadtereignis-Deck hinzu"
+                "Fügt Stadt-Ereignis 78 dem Stadt-Ereignis-Deck hinzu"
             ]
         },
         "gh-22": {
@@ -505,7 +505,7 @@ export default {
                 "je 30 Gold",
                 "-5 Ansehen",
                 "-2 Wohlstand",
-                "Fügt Stadtereignis 79 dem Stadtereignis-Deck hinzu"
+                "Fügt Stadt-Ereignis 79 dem Stadt-Ereignis-Deck hinzu"
             ]
         },
         "gh-36": {
@@ -513,7 +513,7 @@ export default {
             "rewards": [
                 "je 10 Gold",
                 "+4 Ansehen",
-                "Fügt Stadtereignis 78 dem Stadtereignis-Deck hinzu"
+                "Fügt Stadt-Ereignis 78 dem Stadt-Ereignis-Deck hinzu"
             ]
         },
         "gh-37": {
@@ -594,7 +594,7 @@ export default {
             "rewards": [
                 "+5 Ansehen",
                 "+5 Wohlstand",
-                "Fügt Stadtereignis 81 dem Stadtereignis-Deck hinzu",
+                "Fügt Stadt-Ereignis 81 dem Stadt-Ereignis-Deck hinzu",
                 "Fügt Wegereignis 69 dem Wegereignis-Deck hinzu"
             ]
         },
@@ -985,7 +985,7 @@ export default {
             "name": "Neuigkeiten",
             "rewards": [
                 "je 10 Gold",
-                "Fügt die Stadtereignisse 88,89 und 90 dem Stadtereignis-Deck hinzu"
+                "Fügt die Stadt-Ereignisse 88,89 und 90 dem Stadt-Ereignis-Deck hinzu"
             ]
         },
         "fc-98": {
@@ -995,7 +995,7 @@ export default {
                     "je 10 Gold",
                     "+1 Ansehen",
                     "+1 Wohlstand",
-                    "Fügt Stadtereignis 86 dem Stadtereignis-Deck hinzu"
+                    "Fügt Stadt-Ereignis 86 dem Stadt-Ereignis-Deck hinzu"
                 ],
                 [
                     "je 5 Gold",
@@ -1570,682 +1570,682 @@ export default {
         "gh-1": {
             "name": "Wanderstiefel",
             "source": "Wohlstand 1",
-            "desc": "During your movement, add +2 {MOVE} to the movement.",
-            "faq": "Boots of Striding only add to the numerical value of an existing single movement ability. They do not give you a free movement action."
+            "desc": "Füge einer deiner Einzelbewegungen +2 {MOVE} hinzu.",
+            "faq": "Mit Hilfe des Gegenstandes modifizierst du lediglich den Wert einer einzelnen Bewegungsfertigkeit. Er ermöglicht keine eigenständige Bewegungsaktion!"
         },
         "gh-2": {
             "name": "Flügelschuhe",
             "source": "Wohlstand 1",
-            "desc": "During your movement, add {JUMP} to the movement.",
-            "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
+            "desc": "Füge während deiner Bewegung {JUMP} hinzu.",
+            "faq": "Die Schuhe kannst du nur für eine einzige Bewegungsfertigkeit verwenden, nicht für mehrere Bewegungsfertigkeiten einer Aktion (z. B. Bewegung, Angriff, Bewegung )."
         },
         "gh-3": {
             "name": "Fellrüstung",
             "source": "Wohlstand 1",
-            "desc": "On the next two sources of damage to you from attacks, gain {SHIELD} 1. Add 2 {-1} to your attack modifier deck.",
-            "faq": "Hide Armor only grants the shield for the attack, not until the end of the round."
+            "desc": "Erhalte gegen die nächsten 2 Schadensquellen bei Angriffen, die dich anvisieren, {SHIELD} 1. Füge deinem Angriffsmodifikator-Deck 2 {-1} hinzu.",
+            "faq": "Der Gegenstand gewährt den Schild nur für die Dauer des Angriffs, nicht bis zum Ende der Runde."
         },
         "gh-4": {
             "name": "Lederrüstung",
             "source": "Wohlstand 1",
-            "desc": "When attacked, the attacker gains Disadvantage on the attack.",
-            "faq": "The Leather Armor must be used before the enemy draws an attack modifier card."
+            "desc": "Wenn du angegriffen wirst, erhält der Angreifer Nachteil für diesen Angriff.",
+            "faq": "Die Lederrüstung musst du verwenden, bevor der Gegner seine Angriffsmodifikator-Karte zieht."
         },
         "gh-5": {
             "name": "Mantel der Unsichtbarkeit",
             "source": "Wohlstand 1",
-            "desc": "During your turn, gain {INVISIBLE}."
+            "desc": "Erhalte während deines Zugs {INVISIBLE}."
         },
         "gh-6": {
             "name": "Adleraugenbrille",
             "source": "Wohlstand 1",
-            "desc": "During your attack, gain Advantage on the entire Attack action."
+            "desc": "Erhalte während deiner gesamten Angriffsaktion Vorteil."
         },
         "gh-7": {
             "name": "Eisenhelm",
             "source": "Wohlstand 1",
-            "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+            "desc": "Wenn du angegriffen wirst, gilt jeder gezogene {2X_WHITE} Angriffsmodifikator des Gegners stattdessen als {+0_WHITE}."
         },
         "gh-8": {
             "name": "Dreieckschild",
             "source": "Wohlstand 1",
-            "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+            "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälst du {SHIELD} 1 für den Angriff."
         },
         "gh-9": {
             "name": "Starkbogen",
             "source": "Wohlstand 1",
-            "desc": "During your ranged attack, ignore all Shield values for the entire Attack action."
+            "desc": "Ignoriere bei deinem Fernangriff während der gesamten Aktion alle Schildwerte."
         },
         "gh-10": {
             "name": "Kriegshammer",
             "source": "Wohlstand 1",
-            "desc": "During your melee attack, add {STUN} to the entire Attack action."
+            "desc": "Füge bei deinem Nahkampfangriff der gesamten Aktion {STUN} hinzu."
         },
         "gh-11": {
             "name": "Giftdolch",
             "source": "Wohlstand 1",
-            "desc": "During your melee attack, add {POISON} to a single attack."
+            "desc": "Füge bei deinem Nahkampfangriff einem EInzelangriff {POISON} hinzu."
         },
         "gh-12": {
             "name": "Kleiner Heiltrank",
             "source": "Wohlstand 1",
-            "desc": "During your turn, perform a “{HEAL} 3, self” action."
+            "desc": "Wende während deines Zugs “{HEAL} 3” bei dir an."
         },
         "gh-13": {
             "name": "Kleiner Ausdauertrank",
             "source": "Wohlstand 1",
-            "desc": "During your turn, {RECOVER} up to two of your discarded cards.",
-            "faq": "[Errata] The item should allow you to recover only one discarded card. This is change in an upcoming expansion but may be used for the base game."
+            "desc": "Bekomme während deines zugs bis zu 1 deiner abgeworfenen Karten zurück {RECOVER}.",
+            "faq": "[Errata] In einer künftigen Gloomhaven-Erweiterung darfst du mit Hilfe des Gegenstands nur noch eine abgelegte Karte wiederherstellen. Optional darfst du den Gegenstand bereits im Grundspiel auf diese Weise verwenden."
         },
         "gh-14": {
             "name": "Kleiner Krafttrank",
             "source": "Wohlstand 1",
-            "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+            "desc": "Füge deiner gesamten Angriffsaktion +1 {ATTACK} hinzu."
         },
         "gh-15": {
             "name": "Schnellläufer",
             "source": "Wohlstand 2",
-            "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 10."
+            "desc": "Nachdem die Hauptkarten bei Rundenbeginn aufgedeckt wurden, erhöhe/verringere deinen Initiative-Wert um 10."
         },
         "gh-16": {
             "name": "Taschenmantel",
             "source": "Wohlstand 2",
-            "desc": "You can carry two additional small items."
+            "desc": "Du kannst 2 zusätzliche {SMALL-ITEM} Gegenstände tragen."
         },
         "gh-17": {
             "name": "Ermächtigungstalisman",
             "source": "Wohlstand 2",
-            "desc": "During your turn, {REFRESH} one of your consumed small items."
+            "desc": "{REFRESH} während deines Zugs einen deiner verbrauchten {SMALL-ITEM} Gegenstände."
         },
         "gh-18": {
             "name": "Streitaxt",
             "source": "Wohlstand 2",
-            "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+            "desc": "Verwandle deine nächste Einzelziel-Nahkampfangrifssaktion in folgendes: {AOE.CONE_0_1}"
         },
         "gh-19": {
             "name": "Wurfnetz",
             "source": "Wohlstand 2",
-            "desc": "During your ranged attack, add {IMMOBILIZE} to a single attack."
+            "desc": "Füge bei deinem Fernangriff einem Einzelangriff {IMMOBILIZE} hinzu."
         },
         "gh-20": {
             "name": "Kleiner Manatrank",
             "source": "Wohlstand 2",
-            "desc": "During your turn, create any element. {ANY}"
+            "desc": "Erzeuge während deines Zugs ein beliebiges Element. {ANY}"
         },
         "gh-21": {
             "name": "Betäubungspulver",
             "source": "Wohlstand 2",
-            "desc": "During your attack, add {STUN} to a single attack."
+            "desc": "Füge einem Einzelangriff {STUN} hinzu."
         },
         "gh-22": {
             "name": "Schwere Beinpanzer",
             "source": "Wohlstand 3",
-            "desc": "You are immune to all forced movement caused by enemies or scenario effects. Add 1 {-1} to your attack modifier deck."
+            "desc": "Du bist immun gegen erzwungene Bewegungen durch Gegner und Spielmechanik. Füge deinem Angriffsmodifikator-Deck 1 {-1} hinzu."
         },
         "gh-23": {
             "name": "Kettenhemd",
             "source": "Wohlstand 3",
-            "desc": "On the next three sources of damage to you from attacks, gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
-            "faq": "Chainmail only grants the shield for the attack, not until the end of the round."
+            "desc": "Erhalte gegen die nächsten 3 Schadensquellen bei Angriffen, die dich anvisieren, {SHIELD} 1. Füge deinem Angriffsmodifikator-Deck 3 {-1} hinzu.",
+            "faq": "Das Kettenhemd gewährt den Schild nur für die Dauer des Angriffs, nicht bis zum Ende der Runde."
         },
         "gh-24": {
             "name": "Amulett des Lebens",
             "source": "Wohlstand 3",
-            "desc": "During your turn, {HEAL} 1 damage."
+            "desc": "Wende währen deines Zugs “{HEAL} 1” bei dir an."
         },
         "gh-25": {
             "name": "Zackenschwert",
             "source": "Wohlstand 3",
-            "desc": "During your melee attack, add {WOUND} to a single attack."
+            "desc": "Füge bei deinem Nahkampfangriff einem Einzelangriff {WOUND} hinzu."
         },
         "gh-26": {
             "name": "Langspeer",
             "source": "Wohlstand 3",
-            "desc": "Turn a single-target melee attack into the following: {AOE.LINE_0_1_1}"
+            "desc": "Verwandle deine nächste Einzelziel-Nahkampfangriffsaktion in Folgendes: {AOE.LINE_0_1_1}"
         },
         "gh-27": {
             "name": "Großer Heiltrank",
             "source": "Wohlstand 3",
-            "desc": "During your turn, perform a “{HEAL} 5, self” action."
+            "desc": "Wende während deines Zugs “{HEAL} 5” bei dir an."
         },
         "gh-28": {
             "name": "Mond-Ohrring",
             "source": "Wohlstand 3",
-            "desc": "During your turn, {REFRESH} all of your spent items."
+            "desc": "{REFRESH} während deines Zugs alle deine abgenutzten Gegenstände."
         },
         "gh-29": {
             "name": "Bequeme Schuhe",
             "source": "Wohlstand 4",
-            "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+            "desc": "Die untere Standardaktion einer Fertigkeitskarte gilt als “{MOVE} 3” statt “{MOVE} 2”."
         },
         "gh-30": {
             "name": "Nietenrüstung",
             "source": "Wohlstand 4",
-            "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+            "desc": "Wenn du angegriffen wirst, erhhält für diesen Angriff der Angreifer Nachteil und du {SHIELD} 1."
         },
         "gh-31": {
             "name": "Falkenhelm",
             "source": "Wohlstand 4",
-            "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
+            "desc": "Füge bei deinem Fernangriff der gesamten Aktion +1 {RANGE} hinzu."
         },
         "gh-32": {
             "name": "Turmschild",
             "source": "Wohlstand 4",
-            "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
+            "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälst du {SHIELD} 2 für den Angriff."
         },
         "gh-33": {
             "name": "Wurfbombe",
             "source": "Wohlstand 4",
-            "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+            "desc": "Verwandle deine nächste Einzelziel-Fernagriffsaktion in Folgendes: {AOE.CONE_1_1}"
         },
         "gh-34": {
             "name": "Großer Ausdauertrank",
             "source": "Wohlstand 4",
-            "desc": "During your turn, {RECOVER} up to three of your discarded cards.",
-            "faq": "[Errata] The item should allow you to recover only two discarded cards. This is change in an upcoming expansion but may be used in the base game."
+            "desc": "Bekomme während deines Zugs bis zu 2 deiner abgeworfenen Karten zurück {RECOVER}.",
+            "faq": "[Errata] In einer künftigen Gloomhaven-Erweiterung darfst du mit Hilfe des Gegenstands nur noch 2 abgelegte Karten wiederherstellen. Optional darfst du den Gegenstand bereits im Grundspiel auf diese Weise verwenden."
         },
         "gh-35": {
             "name": "Falkenfigur",
             "source": "Wohlstand 4\n{SCENARIO 98} (Schatz #79)",
-            "desc": "Summon Jade Falcon ({FLYING})",
-            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+            "desc": "Beschwöre einen Jadefalken {FLYING}",
+            "faq": "Die Karte behandelst du wie einen dauerhaften Bonus und legst sie in den aktiven Bereich, bis der Beschworene getötet oder die Gegenstandskarte entfernt wird (endet die Beschwörung, wird der Gegenstand automatisch verbraucht). Erneuerst du den Gegenstand und existiert zu dieser Karte eine Beschwörung, verschwindet die beschworene Figur ebenfalls."
         },
         "gh-36": {
             "name": "Laufstiefel",
             "source": "Wohlstand 5",
-            "desc": "During your movement, add +3 {MOVE} to the movement."
+            "desc": "Füge einer deiner Einzelbewegungen +3 {MOVE} hinzu."
         },
         "gh-37": {
             "name": "Robe der Anrufung",
             "source": "Wohlstand 5",
-            "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+            "desc": "{ANY_X} bei deinem Angriff, um der gesamten Aktion +1 {ATTACK} hinzuzufügen."
         },
         "gh-38": {
             "name": "Beckenhaube",
             "source": "Wohlstand 5",
-            "desc": "You are immune to {STUN} and {MUDDLE}. Add 2 {-1} to your attack modifier deck."
+            "desc": "Du bist immun gegen {STUN} und {MUDDLE}. Füge deinem Angriffsmodifikator-Deck 2 {-1} hinzu."
         },
         "gh-39": {
             "name": "Kettenhaken",
             "source": "Wohlstand 5",
-            "desc": "During your ranged attack, add {PULL} 2 to the entire Attack action."
+            "desc": "Füge bei deinem Fernangriff der gesamten Aktion {PULL} 2 hinzu."
         },
         "gh-40": {
             "name": "Mehrzweckdolch",
             "source": "Wohlstand 5",
-            "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 3 action instead of an {ATTACK} 2 action."
+            "desc": "Die obere Standardaktion gilt als “{ATTACK} 3” anstatt “{ATTACK} 2”."
         },
         "gh-41": {
             "name": "Großer Krafttrank",
             "source": "Wohlstand 5\n{SCENARIO 105} (Schatz #83)",
-            "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
+            "desc": "Füge deiner gesamten Angriffsaktion +2 {ATTACK} hinzu."
         },
         "gh-42": {
             "name": "Ring der Eile",
             "source": "Wohlstand 5",
-            "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of the card."
+            "desc": "Spiele am Ende deines Zugs eine Handkate aus und wende die untere Aktion sofort an."
         },
         "gh-43": {
             "name": "Flinkstiefel",
             "source": "Wohlstand 6",
-            "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 20."
+            "desc": "Nachdem deine Hauptkarte bei Rundenbeginn aufgedeckt wurde, erhöhe/verringere ihren Initiative-Wert um 20."
         },
         "gh-44": {
             "name": "Spangenpanzer",
             "source": "Wohlstand 6",
-            "desc": "On the next four sources of damage to you from attacks, gain {SHIELD} 1. Add 4 {-1} to your attack modifier deck."
+            "desc": "Erhalte gegen die nächsten 4 Schadensquellen bei Angriffen, die dich anvisieren, {SHIELD} 1. Füge deinem Angriffsmodifikator-Deck 4 {-1} hinzu."
         },
         "gh-45": {
             "name": "Kette des Dunkelpaktes",
             "source": "Wohlstand 6",
-            "desc": "During your turn, {REFRESH} two of your consumed small items. Gain {CURSE}.",
-            "faq": "The perk that ignores item effects does not prevent you from being cursed."
+            "desc": "{REFRESH} während deines Zugs 2 deiner verbrauchten {SMALL-ITEM} Gegenstände. Erhalte {CURSE}.",
+            "faq": "Der Vorteil, der Gegenstandseffekte ignoriert, verhindert nicht, dass du verflucht werden kannst."
         },
         "gh-46": {
             "name": "Stachelschild",
             "source": "Wohlstand 6",
-            "desc": "When damaged by an attack, gain {SHIELD} 1 and Retaliate 2 for the attack."
+            "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälstdu {SHIELD} 1 und {Retaliate} 2 für den Angriff."
         },
         "gh-47": {
             "name": "Kriegssense",
             "source": "Wohlstand 6",
-            "desc": "During your single-target melee attack action, turn the attack into the following:  {AOE.CLEAVE_0_1}"
+            "desc": "Verwandle deine nächste Einzel-Nahkampfangriffsaktion in Folgendes: {AOE.CLEAVE_0_1}"
         },
         "gh-48": {
             "name": "Großer Manatrank",
-            "source": "Wohlstand 6\nReward from {SCENARIO 104}",
-            "desc": "During your turn, create any two elements. {ANY} {ANY}"
+            "source": "Wohlstand 6\nBelohnung von {SCENARIO 104}",
+            "desc": "Erzeuge während deines Zugs 2 beliebige Elemente. {ANY} {ANY}"
         },
         "gh-49": {
             "name": "Sonnen-Ohrring",
             "source": "Wohlstand 6",
-            "desc": "During your turn, {REFRESH} all of your spent items and {HEAL} 3 damage."
+            "desc": "{REFRESH} währnd deines Zugs alle deine abgenutzten Gegenständeund wende “{HEAL} 3” bei dir an."
         },
         "gh-50": {
             "name": "Panzerschuhe",
             "source": "Wohlstand 7",
-            "desc": "If you move 1 or fewer hexes on your turn, gain {SHIELD} 1 for the round. Add 2 {-1} to your attack modifier deck."
+            "desc": "Wenn du dich in deinem Zug 1 oder weniger Felder weit bewegst, erhälst du {SHIELD} 1 für die Runde. Füge deinem Angriffsmodifikator-Deck 2 {-1} hinzu."
         },
         "gh-51": {
             "name": "Schattenrüstung",
             "source": "Wohlstand 7",
-            "desc": "When you are damaged by an attack, suffer no damage instead."
+            "desc": "Wenn du durch einen Angriff, der dich anvisiert, Schaden erleiden würdest, erleidest du keinen Schaden."
         },
         "gh-52": {
             "name": "Schutzamulett",
-            "source": "Wohlstand 7\nReward from {SCENARIO 109}",
-            "desc": "You are immune to {POISON} and {WOUND}."
+            "source": "Wohlstand 7\nBelohnung von {SCENARIO 109}",
+            "desc": "Du bist immun gegen {POISON} und {WOUND}."
         },
         "gh-53": {
             "name": "Schwarzdolch",
             "source": "Wohlstand 7",
-            "desc": "During your melee attack, add {CURSE} to a single attack."
+            "desc": "Füge bei deinem Nahkampfangriff einem Einzelangriff {CURSE} hinzu."
         },
         "gh-54": {
             "name": "Stab des Ansehens",
             "source": "Wohlstand 7",
-            "desc": "During your ranged attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+            "desc": "{ANY_X} bei deinem Fernangriff, um der gesamten Aktion +1 {ATTACK} hinzuzufügen."
         },
         "gh-55": {
             "name": "Überragender Heiltrank",
             "source": "Wohlstand 7",
-            "desc": "During your turn, perform a “{HEAL} 7, self” action."
+            "desc": "Wende während deines Zugs “{HEAL} 7” bei dir an."
         },
         "gh-56": {
             "name": "Ring der Brutalität",
             "source": "Wohlstand 7",
-            "desc": "At the end of your turn, play one card from your hand and immediately perform the top action of the card."
+            "desc": "Spiele am ende deines zugs eine Handkarte aus und wende die obere Aktion sofort an."
         },
         "gh-57": {
             "name": "Sorglose Sandalen",
             "source": "Wohlstand 8",
-            "desc": "Whenever you use the default bottom of an ability card perform a {MOVE} 4 action instead of a {MOVE} 2 action."
+            "desc": "Die untere Standardaktion einer Fertigkeitskarte gilt als “{MOVE} 4” statt “{MOVE} 2”."
         },
         "gh-58": {
             "name": "Phasenmantel",
             "source": "Wohlstand 8",
-            "desc": "Gain {FLYING}. While occupying an obstacle hex, you are considered Invisible and cannot attack"
+            "desc": "Erhalte {FLYING}. Auf einem Hindernisfeld bist du {INVISIBLE} und kannst nicht angreifen."
         },
         "gh-59": {
             "name": "Teleskoplinse",
-            "source": "Wohlstand 8\nOption from {SCENARIO 100}",
-            "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
+            "source": "Wohlstand 8\nOption von {SCENARIO 100}",
+            "desc": "Füge bei deinem Fernangriff deiner gesamten Aktion +2 {RANGE} hinzu."
         },
         "gh-60": {
             "name": "Instabiler Sprengsatz",
             "source": "Wohlstand 8",
-            "desc": "Turn a single target ranged attack into the following: {AOE.CUBE_2_2}. All allies in the attack area suffer 3 damage."
+            "desc": "Verwandle deine nächste Einzelziel-Fernangriffsaktion in Folgendes: {AOE.CUBE_2_2}. Alle Verbündeten im Angriffsbereich erleiden 3 Schaden."
         },
         "gh-61": {
             "name": "Setzschild",
             "source": "Wohlstand 8",
-            "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
+            "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälst du {SHIELD} 4 für den Angriff."
         },
         "gh-62": {
             "name": "Schicksalspulver",
             "source": "Wohlstand 8",
-            "desc": "During your attack, add {STUN}, {POISON}, and {CURSE} to a single attack."
+            "desc": "Füge einem Einzelangriff {STUN}, {POISON}, und {CURSE} hinzu."
         },
         "gh-63": {
             "name": "Glücksauge",
             "source": "Wohlstand 8",
-            "desc": "During your turn, {STRENGTHEN} yourself and all adjacent allies."
+            "desc": "Gewährt während deines Zugs {STRENGTHEN} für dich selbst und alle angrenzenden Verbündeten."
         },
         "gh-64": {
             "name": "Sprintstiefel",
             "source": "Wohlstand 9",
-            "desc": "During your movement, add +4 {MOVE} to the movement."
+            "desc": "Füge einer deiner Einzelbewegungen +4 {MOVE} hinzu."
         },
         "gh-65": {
             "name": "Plattenpanzer",
             "source": "Wohlstand 9",
-            "desc": "On the next five sources of damage to you from attacks, gain {SHIELD} 1. Add 5 {-1} to your attack modifier deck."
+            "desc": "Erhalte gegen die nächsten 3 Schadensquellen bei Angriffen, die dich anvisieren, {SHIELD} 1. Füge deinem Angriffsmodifikator-Deck 5 {-1} hinzu."
         },
         "gh-66": {
             "name": "Schreckensmaske",
             "source": "Wohlstand 9\n{SCENARIO 110} (Schatz #84)",
-            "desc": "During your melee attack, add {PUSH} 1."
+            "desc": "Füge bei deinem Nahkampfangriff {PUSH} 1 hinzu."
         },
         "gh-67": {
             "name": "Ausbalancierte Klinge",
             "source": "Wohlstand 9",
-            "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 4 instead of an {ATTACK} 2 action."
+            "desc": "DIe obere Standardaktion gilt als {ATTACK} 4 anstatt {ATTACK} 2."
         },
         "gh-68": {
             "name": "Hellebarde",
-            "source": "Wohlstand 9\n{SCENARIO 111} (Schatz #92)\nSection 132 -> g106 “Strangler's Park” in book",
-            "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
+            "source": "Wohlstand 9\n{SCENARIO 111} (Schatz #92)\nSektion 132 -> g106 “Strangler's Park” im Buch",
+            "desc": "Du kannst während deiner Einzelkampfangriffsaktion einen beliebigen Gegner im Umkreis von 2 Feldern angreifen."
         },
         "gh-69": {
             "name": "Stern-Ohrring",
             "source": "Wohlstand 9",
-            "desc": "During your turn, {REFRESH} all of your spent items, {HEAL} 3 damage, and {RECOVER} up to two of your discarded cards."
+            "desc": "{REFRESH} während deines Zugs alle deine abgenutzten Gegenstände, wende “{HEAL} 3” auf dich an und bekomme bis zu 2 deiner abgeworfenen Karten zurück {RECOVER}."
         },
         "gh-70": {
             "name": "Ring der Chancen",
-            "source": "Wohlstand 9\nFC Challenge Scenario, Rift Card 12 (Schatz #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
-            "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
+            "source": "Wohlstand 9\nFC Herausforderungs-Szenario, Rift Karte 12 (Schatz #89)\Sektion 103 -> 84 “Gateway to the Firmament” im Buch",
+            "desc": "Spiele am Ende deines Zugs 2 Handkarten aus und führe in dieser Runde, basierend auf deiner neuen Hauptinitiative (die später als deine aktuelle Initiative sein muss) einen zusätzlichen Zug aus."
         },
         "gh-71": {
             "name": "Levitationsstiefel",
-            "source": "Random Item",
-            "desc": "Gain {FLYING}"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Erhalte {FLYING}."
         },
         "gh-72": {
             "name": "Schuhe der Heiterkeit",
-            "source": "Random Item",
-            "desc": "If you move 6 or more hexes on your turn, gain {exp1}."
+            "source": "Zufälliger Gegenstand",
+            "desc": "Wenn du dich in deinem Zug 6 oder mehr Felder weit bewegst, erhalte {exp1}."
         },
         "gh-73": {
             "name": "Flirrender Umhang",
-            "source": "Random Item",
-            "desc": "During your turn, perform a “{MOVE} 4, {JUMP}” action"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Wende währende deines zugs “{MOVE} 4, {JUMP}” an."
         },
         "gh-74": {
             "name": "Klingenrüstung",
-            "source": "Random Item",
-            "desc": "On the next three sources of damage from attacks targeting you, gain {SHIELD} 1, {Retaliate} 1. Add 4 {-1} to your attack modifier deck."
+            "source": "Zufälliger Gegenstand",
+            "desc": "Erhalte gegen die nächsten 3 Schadensquellen bei Angriffen, die dich anvisieren, {SHIELD} 1, {Retaliate} 1. Füge deinem Angriffsmodifikator-Deck 4 {-1} hinzu."
         },
         "gh-75": {
             "name": "Reif der Elemente",
-            "source": "Random Item",
-            "desc": "During your turn, {ANY_X} to create any element. {ANY}"
+            "source": "Zufälliger Gegenstand",
+            "desc": "{ANY_X} während deines Zugs, um ein beliebiges Element zu erzeugen. {ANY}"
         },
         "gh-76": {
             "name": "Kettenhaube",
-            "source": "Random Item",
-            "desc": "While you are adjacent to three or more monsters, gain {SHIELD} 1. Add 1 {-1} to your attack modifier deck."
+            "source": "Zufälliger Gegenstand",
+            "desc": "Solange du an 3 oder mehr Monster angrenzt, erhalte {SHIELD} 1. Füge deinem Angriffsmodifikator-Deck 1 {-1} hinzu."
         },
         "gh-77": {
             "name": "Frostklinge",
-            "source": "Random Item",
-            "desc": "During your melee attack, {ICE_X} to add +2 {ATTACK} to a single attack."
+            "source": "Zufälliger Gegenstand",
+            "desc": "{ICE_X} während deines Nahkampfangriffs für +2 {ATTACK} bei einem Einzelangriff."
         },
         "gh-78": {
             "name": "Sturmklinge",
-            "source": "Random Item",
-            "desc": "During your melee attack, {WIND_X} to add +2 {ATTACK} to a single attack."
+            "source": "Zufälliger Gegenstand",
+            "desc": "{WIND_X} während deines Nahkampfangriffs für +2 {ATTACK} bei einem Einzelangriff."
         },
         "gh-79": {
             "name": "Infernoklinge",
-            "source": "Random Item",
-            "desc": "During your melee attack, {FIRE_X} to add +2 {ATTACK} to a single attack."
+            "source": "Zufälliger Gegenstand",
+            "desc": "{FIRE_X} während deines Nahkampfangriffs für +2 {ATTACK} bei einem Einzelangriff."
         },
         "gh-80": {
             "name": "Bebenklinge",
-            "source": "Random Item",
-            "desc": "During your melee attack, {EARTH_X} to add +2 {ATTACK} to a single attack."
+            "source": "Zufälliger Gegenstand",
+            "desc": "{EARTH_X} während deines Nahkampfangriffs für +2 {ATTACK} bei einem Einzelangriff."
         },
         "gh-81": {
             "name": "Glanzklinge",
-            "source": "Random Item",
-            "desc": "During your melee attack, {LIGHT_X} to add +2 {ATTACK} to a single attack."
+            "source": "Zufälliger Gegenstand",
+            "desc": "{LIGHT_X} während deines Nahkampfangriffs für +2 {ATTACK} bei einem Einzelangriff."
         },
         "gh-82": {
             "name": "Nachtklinge",
-            "source": "Random Item",
-            "desc": "During your melee attack, {DARK_X} to add +2 {ATTACK} to a single attack."
+            "source": "Zufälliger Gegenstand",
+            "desc": "{DARK_X} während deines Nahkampfangriffs für +2 {ATTACK} bei einem Einzelangriff."
         },
         "gh-83": {
             "name": "Stab der Kälte",
-            "source": "Random Item",
-            "desc": "During your turn, create Ice. {ICE}"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Erzeuge währende deines Zugs einmal Eis. {ICE}"
         },
         "gh-84": {
-            "name": "Stab des Strums",
-            "source": "Random Item",
-            "desc": "During your turn, create Wind. {WIND}"
+            "name": "Stab des Sturms",
+            "source": "Zufälliger Gegenstand",
+            "desc": "Erzeuge währende deines Zugs einmal Luft. {WIND}"
         },
         "gh-85": {
             "name": "Stab des Infernos",
-            "source": "Random Item",
-            "desc": "During your turn, create Fire. {FIRE}"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Erzeuge währende deines Zugs einmal Feuer. {FIRE}"
         },
         "gh-86": {
             "name": "Stab des Bebens",
-            "source": "Random Item",
-            "desc": "During your turn, create Earth. {EARTH}"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Erzeuge während deines Zugs einmal Erde. {EARTH}"
         },
         "gh-87": {
             "name": "Stab des Glanzes",
-            "source": "Random Item",
-            "desc": "During your turn, create Light. {LIGHT}"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Erzeuge währende deines Zugs einmal Licht. {LIGHT}"
         },
         "gh-88": {
             "name": "Stab der Nacht",
-            "source": "Random Item",
-            "desc": "During your turn, create Dark. {DARK}"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Erzeuge während deines Zugs einmal Dunkel. {DARK}"
         },
         "gh-89": {
             "name": "Kleiner Arzneitrank",
-            "source": "Random Item",
-            "desc": "During your turn, remove one negative condition on yourself. This can be used while you have {STUN}."
+            "source": "Zufälliger Gegenstand",
+            "desc": "Entferne während deines Zugs einen negativen Zustand bei dir selbst. Kann trotz {STUN} verwendet werden."
         },
         "gh-90": {
             "name": "Großer Arzneitrank",
-            "source": "Random Item\n{SCENARIO 102} (Schatz #77)",
-            "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have {STUN}."
+            "source": "Zufälliger Gegenstand\n{SCENARIO 102} (Schatz #77)",
+            "desc": "Entferne während deines Zugs alle negativen Zustände bei dir selbst. Kann trotz {STUN} verwendet werden."
         },
         "gh-91": {
             "name": "Stahlring",
-            "source": "Random Item",
-            "desc": "When damaged by an attack targeting you, gain {SHIELD} 4 for the attack."
+            "source": "Zufälliger Gegenstand",
+            "desc": "Wenn du durch einen Angriff, der dich anvisiert, Schaden erleidest, erhälst du {SHIELD} 4 für den Angriff."
         },
         "gh-92": {
             "name": "Dämpfungsring",
-            "source": "Random Item",
-            "desc": "Before an enemy would consume an element, consume that element instead for no effect"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Wenn ein Gegner ein Element verbrauchen will, verbrauche es stattdessen selbst ohne Auswirkungen."
         },
         "gh-93": {
             "name": "Schrift der Kraft",
-            "source": "Random Item",
-            "desc": "During an ally's attack, add +1 {ATTACK} to their entire attack action"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Füge beim Angriff eines Verbündeten seiner gesamten Aktion +1 {ATTACK} hinzu."
         },
         "gh-94": {
             "name": "Schrift der Heilung",
-            "source": "Random Item",
-            "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Wende währende deines Zugs “{HEAL} 3, {RANGE} 5” an."
         },
         "gh-95": {
             "name": "Schrift der Ausdauer",
-            "source": "Random Item",
-            "desc": "During your turn, an ally within {RANGE} 5 may {RECOVER} up to two of their discarded cards"
+            "source": "Zufälliger Gegenstand",
+            "desc": "Während deines Zugs kann ein Verbündeter in {RANGE} 5 bis zu 2 seiner abgeworfenen Karten zurückbekommen {RECOVER}."
         },
         "gh-96": {
             "name": "Raketenstiefel",
             "source": "{SCENARIO 66} (Schatz #36)",
-            "desc": "During your movement, add +3 {MOVE} and {JUMP} to a single movement"
+            "desc": "Füge einer deiner Einzelbewegungen +3 {MOVE} und {JUMP} hinzu."
         },
         "gh-97": {
             "name": "Sandalen der Ausdauer",
             "source": "{SCENARIO 38} (Schatz #29)",
-            "desc": "If you move 4 or more hexes on your turn, perform a “{HEAL} 1, Self” action."
+            "desc": "Wenn du dich in deinem Zug 4 oder mehr Felder weit bewegst, wende “{HEAL} 1” bei dir an."
         },
         "gh-98": {
             "name": "Drakenstiefel",
             "source": "{SCENARIO 43} (Schatz #35)",
-            "desc": "You are unaffected by difficult and hazardous terrain."
+            "desc": "Schwieriges und gefährliches Gelände hat keinen Einfluss auf dich."
         },
         "gh-99": {
             "name": "Lavalatschen",
             "source": "{SCENARIO 63} (Schatz #12)",
-            "desc": "Ignore the damaging effects of hazardous terrain and perform a “{HEAL} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
+            "desc": "Ignoriere Schadenseffekte von gefährlichem Gelände und wende in jedem Zug, in dem du ein gefährliches Geländefeld betrittst “{HEAL} 2” bei dir an."
         },
         "gh-100": {
             "name": "Beschwörungsrobe",
             "source": "{SCENARIO 31} (Schatz #69)",
-            "desc": "During your turn, perform a “{HEAL} 2, target any summoned ally” action."
+            "desc": "Wende während deines Zugs “{HEAL} 2” bei einem beliebigen beschworenen Verbündeten an."
         },
         "gh-101": {
             "name": "Zweite Haut",
             "source": "{SCENARIO 06} (Schatz #50)",
-            "desc": "Remove two {MODIFIER_MINUS_ONE} from your attack modifier deck."
+            "desc": "Entferne 2 {MODIFIER_MINUS_ONE} aus deinem Angriffsmodifikator-Deck."
         },
         "gh-102": {
             "name": "Opferrobe",
-            "source": "City Event 40",
-            "desc": "During your ranged attack, suffer 3 damage to add +1 {ATTACK} to the entire Attack action."
+            "source": "Stad-Ereignis 40",
+            "desc": "Erleide bei deinem Fernkampfangriff 3 Schaden, um der gesamten Angriffsaktion +1 {ATTACK} hinzuzufügen."
         },
         "gh-103": {
             "name": "Drakenrüstung",
             "source": "{SCENARIO 34} (Schatz #23)",
-            "desc": "You are immune to {POISON} and {WOUND}."
+            "desc": "Du bist immun gegen {POISON} und {WOUND}."
         },
         "gh-104": {
             "name": "Dampfrüstung",
             "source": "{SCENARIO 40} (Schatz #47)",
-            "desc": "On the next five sources of damage from attacks targeting you, gain {SHIELD} 1."
+            "desc": "Erhalte gegen die nächsten 5 Schadensquellen bei Angriffen, die dich anvisieren, {SHIELD} 1."
         },
         "gh-105": {
             "name": "Schäbiges Schultertuch",
-            "source": "City Event 30",
-            "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
-            "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
+            "source": "Stadt-Ereignis 30",
+            "desc": "Für die Berechnung des Gegenerfokus ist dein Initiative-Wert 99.",
+            "faq": "Der Gegenstad ändert nicht tatsächlich den Initiative-Wert, zum Beispiel sind die eigenen Beschworenen nicht daon betroffen. Es wird lediglich die Monsterfokussierung betroffen."
         },
         "gh-106": {
             "name": "Zahnkette",
             "source": "Road Event 05",
-            "desc": "Any time you kill an enemy during your turn, perform a “{HEAL} 1, Self” action."
+            "desc": "Wann immer du während deines Zugs einen Gegner tötest, wende “{HEAL} 1” bei dir an."
         },
         "gh-107": {
             "name": "Hornhelm",
             "source": "{SCENARIO 03} (Schatz #65)",
-            "desc": "After moving 4 or more hexes on your turn, add +1 {ATTACK} to your next melee attack this turn.",
-            "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
+            "desc": "Nachdem du dich in deinem Zug 4 oder mehr Felder weit bewegt hast, füge deinem nächsten Nahkampfangriff in diesem Zug +1 {ATTACK} hinzu.",
+            "faq": "Den Bonus musst du in der Runde verwenden, in der du ihn bekommst. Du kannst ihn nicht aufsparen. Verfügst du während einer Aktion über mehrere Bewegungsfertigkeiten, darfst du den Gegenstand verwenden, sobald du dich mindestens 4 Felder weit bewegt hast. Aber selbst, wenn du dich in deinem Zug mehrmals mindestens 4 Felder weit bewegst, darfst du den Gegenstand dennoch nur ein einziges Mal benutzen."
         },
         "gh-108": {
             "name": "Drakenhelm",
             "source": "{SCENARIO 25} (Schatz #58)",
-            "desc": "Whenever you gain {MUDDLE}, gain {STRENGTHEN} instead."
+            "desc": "Wenn du eigentlich {MUDDLE} erhalten würdest, erhalte stattdessen {STRENGTHEN}."
         },
         "gh-109": {
             "name": "Diebesgugel",
-            "source": "City Event 62",
-            "desc": "During your {LOOT 1} ability, perform a {LOOT 2} ability instead."
+            "source": "Stadt-Ereignis 62",
+            "desc": "Wende bei deiner Fertigkeit “{LOOT 1}” stattdessen “{LOOT 2}”an."
         },
         "gh-110": {
             "name": "Helm der Berge",
             "source": "{SCENARIO 82} (Schatz #62)",
-            "desc": "When attacked, if {EARTH} is Strong, Immobilize the attacker."
+            "desc": "Wenn du angegriffen wirst, während {EARTH} stark ist, erhält der Angreifer Lähmung{IMMOBILIZE}."
         },
         "gh-111": {
             "name": "Gischtkrone",
             "source": "{SCENARIO 64} (Schatz #09)",
-            "desc": "When attacked, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
+            "desc": "Wenn du angegriffen wirst, während {ICE} stark ist, wende “SCHIEBEN{PUSH} 2” gegen den Angreifer an."
         },
         "gh-112": {
             "name": "Alter Bohrer",
-            "source": "Reward From {SCENARIO 65}\nOption from {SCENARIO 100}",
-            "desc": "During your melee attack, add +2 {ATTACK} and {PIERCE} 2 to the entire Attack action"
+            "source": "Belohnung von {SCENARIO 65}\nOption von {SCENARIO 100}",
+            "desc": "Füge bei deinem Nahkampfangriff der gesamten Aktion +2 Angriff{ATTACK} und DURCHSTECHEN{PIERCE} 2 hinzu."
         },
         "gh-113": {
             "name": "Schädelfluch",
             "source": "Reward From {SCENARIO 11}\nReward From {SCENARIO 12}",
-            "desc": "During your melee attack targeting a Living Corpse, Living Spirit, or Living Bones, add +5 Attack to a single attack."
+            "desc": "Füge bei deinem Nahkampfangriff, der Wandelnde Leiche/Seele/Skelett anvisiert, einem Einzelangriff +5 {ATTACK} hinzu."
         },
         "gh-114": {
             "name": "Stab des Xorn",
-            "source": "Reward from {SCENARIO 53}",
-            "desc": "During your ranged attack, add {POISON} and {MUDDLE} to the entire Attack action"
+            "source": "Belohnung von {SCENARIO 53}",
+            "desc": "Füge bei deinem Fernkampfangriff der gesamten Aktion {POISON} und {MUDDLE} hinzu."
         },
         "gh-115": {
             "name": "Gebirgshammer",
             "source": "{SCENARIO 82} (Schatz #62)",
-            "desc": "Summon Warrior Spirit",
-            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+            "desc": "Beschwöre einen Kriegergeist",
+            "faq": "Die Karte behandelst du wie einen dauerhaften Bonus und legst sie in den aktiven Bereich, bis der Beschworene getötet oder die Gegenstandskarte entfernt wird (endet die Beschwörung, wird der Gegenstand automatisch verbraucht). Erneuerst du den Gegenstand und existiert zu dieser Karte eine Beschwörung, verschwindet die beschworene Figur ebenfalls."
         },
         "gh-116": {
             "name": "Flammenfalchion",
             "source": "{SCENARIO 23} (Schatz #72)",
-            "desc": "During your single-target melee attack, the target and all enemies adjacent to the target suffer 1 damage"
+            "desc": "Bei deinem Einzelziel-Nahkampfangriff erleiden das Ziel und alle angrenzenden Gegner 1 Schaden."
         },
         "gh-117": {
             "name": "Blutaxt",
-            "source": "City Event 53\nRoad Event 53",
-            "desc": "During your melee attack, suffer 2 damage to add +1 {ATTACK} to the entire Attack action."
+            "source": "Stadt-Ereignis 53\nWeg-Ereignis 53",
+            "desc": "Erleide bei deinem Nahkampfangriff 2 Schaden, um der gesamten Aktion +1 {ATTACK} hinzuzufügen."
         },
         "gh-118": {
             "name": "Stab der Elemente",
-            "source": "City Event 57",
-            "desc": "During your turn, create any element. {ANY}"
+            "source": "Stadt-Ereignis 57",
+            "desc": "Erzeuge während deines Zugs ein beliebiges Element. {ANY}"
         },
         "gh-119": {
             "name": "Schädel des Hasses",
-            "source": "Reward From {SCENARIO 95}",
-            "desc": "During your turn, {CURSE} all adjacent enemies."
+            "source": "Belohnung von {SCENARIO 95}",
+            "desc": "Füge während deines Zugs {CURSE} bei allen angrenzenden Gegnern hinzu."
         },
         "gh-120": {
             "name": "Beschwörungsstab",
-            "source": "Reward From {SCENARIO 88}",
-            "desc": "During your turn, a summoned ally within {RANGE} 3 performs a “{MOVE} 3” action with you controlling the action."
+            "source": "Belohnung von {SCENARIO 88}",
+            "desc": "Während deines Zuges kann ein beschworener Verbündeter in {RANGE} 3 nach deinem Wunsch “{MOVE} 3” anwenden."
         },
         "gh-121": {
             "name": "Kugel des Morgens",
-            "source": "Reward From {SCENARIO 85}",
-            "desc": "During your turn, {DARK_X} to create Light. {LIGHT}"
+            "source": "Belohnung von {SCENARIO 85}",
+            "desc": "{DARK_X} während deines zugs, um einmal Licht zu erzeugen. {LIGHT}"
         },
         "gh-122": {
             "name": "Kugel des Zwielichts",
             "source": "{SCENARIO 89} (Schatz #27)",
-            "desc": "During your turn, {LIGHT_X} to create Dark. {DARK}"
+            "desc": "{LIGHT_X} während deines zugs, um einmal Dunkel zu erzeugen.{DARK}"
         },
         "gh-123": {
             "name": "Schädelring",
             "source": "{SCENARIO 04} (Schatz #38)",
-            "desc": "Summon Skeleton",
-            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+            "desc": "Beschwöre ein Gerippe",
+            "faq": "Die Karte behandelst du wie einen dauerhaften Bonus und legst sie in den aktiven Bereich, bis der Beschworene getötet oder die Gegenstandskarte entfernt wird (endet die Beschwörung, wird der Gegenstand automatisch verbraucht). Erneuerst du den Gegenstand und existiert zu dieser Karte eine Beschwörung, verschwindet die beschworene Figur ebenfalls."
         },
         "gh-124": {
             "name": "Schicksalskompass",
             "source": "{SCENARIO 93} (Schatz #54)",
-            "desc": "During your turn, force an enemy within {RANGE} 5 to perform a “{MOVE} 2” action with you controlling the action."
+            "desc": "Zwinge während deines Zugs einen Gegner in {RANGE} 5, nach deinem Wunsch “{MOVE} 2” anzuwenden."
         },
         "gh-125": {
             "name": "Zahnrad",
-            "source": "City Event 03\nOption from {SCENARIO 100}",
-            "desc": "During your turn, disarm all traps within {RANGE} 2."
+            "source": "Stadt-Ereignis 03\nOption von {SCENARIO 100}",
+            "desc": "Entschärfe während deines Zuges alle Fallen in Reichweite {RANGE} 2."
         },
         "gh-126": {
             "name": "Mechanische Spinne",
-            "source": "City Event 43\nOption from {SCENARIO 100}",
-            "desc": "During your turn, {POISON} all adjacent enemies."
+            "source": "Stadt-Ereignis 43\nOption von {SCENARIO 100}",
+            "desc": "Füge während deines Zuges {POISON} bei allen angrenzenden Gegnern hinzu."
         },
         "gh-127": {
             "name": "Mechanische Riesenspinne",
-            "source": "City Event 61",
-            "desc": "During your turn, perform a {LOOT 1} action."
+            "source": "Stadt-Ereignis 61",
+            "desc": "Wende währende deines Zuges “{LOOT 1}” an ."
         },
         "gh-128": {
             "name": "Schwarzes Rauchfass",
-            "source": "Reward From {SCENARIO 90}",
-            "desc": "During your turn, Muddle all enemies with {RANGE} 2."
+            "source": "Belohnung von {SCENARIO 90}",
+            "desc": "Füge während deines Zuges {MUDDLE} bei allen Gegnern in {RANGE} 2 hinzu."
         },
         "gh-129": {
             "name": "Schwarzkarte",
-            "source": "Road Event 51",
-            "desc": "During your turn, place a character token on an adjacent normal or elite enemy. You add +1 {ATTACK} to all your attacks targeting this enemy."
+            "source": "Weg-Ereignis 51",
+            "desc": "Lege während deines Zuges einen Charaktermarker auf einen angrenzenden normalen oder Elite-Gegner. Erhalte +1 {ATTACK} für deine Angriffe, die diesen Gegner anvisieren."
         },
         "gh-130": {
             "name": "Spiralring",
             "source": "{SCENARIO 81} (Schatz #68)",
-            "desc": "During your turn, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Self” action"
+            "desc": "{LIGHT_X} {DARK_X} während deines Zuges um “{HEAL} 25” bei dir anzuwenden."
         },
         "gh-131": {
             "name": "Herz des Abtrünnigen",
             "source": "{SCENARIO 79} (Schatz #52)",
-            "desc": "When attacked by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
-            "faq": "This item cannot be used if there is no other enemy in range to be attacked."
+            "desc": "Wenn du von einem angrenzenden normalen Gegner angegriffen wirst, zwinge ihn stattdessen, einen seiner Verbündeten anzugreifen.",
+            "faq": "Diesen Gegenstand kannst du nicht verwenden, wenn sich kein anderer Gegner in Reichweite befindet, den du angreifen darfst."
         },
         "gh-132": {
             "name": "Energiekern",
             "source": "{SCENARIO 67}",
-            "desc": "Summon Steel Construct.",
-            "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+            "desc": "Beschwöre ein Stahlkonstrukt.",
+            "faq": "Die Karte behandelst du wie einen dauerhaften Bonus und legst sie in den aktiven Bereich, bis der Beschworene getötet oder die Gegenstandskarte entfernt wird (endet die Beschwörung, wird der Gegenstand automatisch verbraucht). Erneuerst du den Gegenstand und existiert zu dieser Karte eine Beschwörung, verschwindet die beschworene Figur ebenfalls."
         },
         "gh-133": {
             "name": "Resonanzkristall",
             "source": "{SCENARIO 84}",
-            "desc": "During your turn, destroy an adjacent obstacle."
+            "desc": "Zerstöre während deines Zuges ein angrenzendes Hindernis."
         },
         "gh-134": {
             "name": "Imposante Klinge",
@@ -2286,7 +2286,7 @@ export default {
             "name": "Werkzeuggürtel",
             "source": "Reward from Solo Scenario - {QM}",
             "desc": "During your turn, you or any one ally may {REFRESH} one of your spent or consumed items.",
-            "faq": "This item cannot be refreshed."
+            "faq": "Diesen Gegenstand kannst du nicht erneuern."
         },
         "gh-142": {
             "name": "Phasenfigur",
@@ -2732,11 +2732,7 @@ export default {
             "name": "Erhalte 30 Gold"
         },
         "gh-49": {
-<<<<<<< HEAD
             "name": "Neues Szenario: Verlorene Insel (Szenario 17 bei K-17)"
-=======
-            "name": "New Scenario: {SCENARIO 17}",
->>>>>>> 3aa9b034dcd3464d85e553e1e84ed0a943a0784a
         },
         "gh-50": {
             "name": "Erhalte “Zweite Haut” (Gegenstand 101)"
@@ -3091,11 +3087,11 @@ export default {
             ]
         },
         "gh-533": {
-            "name": "The Perfect Poison",
+            "name": "Das perfekte Gift",
             "progress": [
-                "Kill three Oozes.",
-                "Kill three Lurkers.",
-                "Kill three Spitting Drakes."
+                "Töte drei Schleime.",
+                "Töte drei Pirscher.",
+                "Töte drei Speidraken."
             ]
         }
     },
@@ -3263,7 +3259,6 @@ export default {
         "SK": {
             "name": "Sonnenhüterin",
             "perks": [
-<<<<<<< HEAD
                 "Entferne zwei {-1_WHITE} Karten",
                 "Entferne vier {+0_WHITE} Karten",
                 "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
@@ -3275,19 +3270,6 @@ export default {
                 "Füge zwei {AGAIN} {SHIELD}1, selbst Karten hinzu",
                 "Ignoriere negative Gegenstandseffekte und füge zwei {+1_WHITE} Karten hinzu",
                 "Ignoriere negative Szenarioeffekte"
-=======
-                "Remove two {-1_WHITE} cards",
-                "Remove four {+0_WHITE} cards",
-                "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-                "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-                "Add two {AGAIN} {+1_WHITE} cards",
-                "Add two {AGAIN} {HEAL}1 cards",
-                "Add one {AGAIN} {STUN} card",
-                "Add two {AGAIN} {LIGHT} cards",
-                "Add two {AGAIN} {SHIELD}1, Self cards",
-                "Ignore negative item effects and add two {+1_WHITE} cards",
-                "Ignore negative scenario effects"
->>>>>>> 3aa9b034dcd3464d85e553e1e84ed0a943a0784a
             ]
         },
         "NS": {
@@ -3473,9 +3455,9 @@ export default {
         }
     },
     "card_types": {
-        "R": "Road Event",
-        "C": "City Event",
-        "Q": "Personal Quest"
+        "R": "Weg-Ereignis",
+        "C": "Stadt-Ereignis",
+        "Q": "Persönliche Quest"
     },
     "quest": {
         "1": {
@@ -3767,7 +3749,7 @@ export default {
         "23": {
             "name": "Schau mal wer da spricht",
             "sections": {
-                "1": "Die Stimme ist eine unglaublich mächtige Kreatur. Ihr müsst mehr über darüber herausfinden was immer sie wirklich ist und was ihre Motive sind.",
+                "1": "Die Stimme ist eine unglaublich mächtige Kreatur. Ihr müsst mehr darüber herausfinden was immer sie wirklich ist und was ihre Motive sind.",
                 "2": "Ein Quatryl-Gelehrter hat euch darauf hingewiesen, dass die Stimme ein mächtiger Dämon sein könnte, der aus gutem Grund in die Höhle verbannt wurde. Obwohl er sich über die Genauigkeit des Textes, auf den er sich bezog, nicht ganz sicher war, warnte er euch davor, die Stimme zu befreien. Dann wies er euch auf ein Zepter hin, das das Bindungsritual verstärken könnte. Ihr habt es aus einem Schrein am Rande des Verweilenden Sumpfes geholt. Es war mit dunklen Energien gefüllt, und die Stimme flehte euch an, das Zepter nicht in seine Kammer zu bringen. Die Stimme behauptet, dass ihr in die Irre geführt wurdet. Das müsst ihr aber selbst entscheiden."
             },
             "stages": {
@@ -4227,7 +4209,7 @@ export default {
     },
     "prompts": {
         "dragons": {
-            "1": "Bringt dem Draken den Schatz. Erhaltet die globale Errungenschaft \"Hilfe für den Draken\". Fügt dem Deck das Stadtereignis 75 und das Wegereignis 66 hinzu.",
+            "1": "Bringt dem Draken den Schatz. Erhaltet die globale Errungenschaft \"Hilfe für den Draken\". Fügt dem Deck das Stadt-Ereignis 75 und das Wegereignis 66 hinzu.",
             "2": "Helft dem Draken nicht.",
             "title": "Freund oder Feind",
             "text": "Ihr habt den Schatz des Draken geborgen. Händigt ihr den Schatz an ihn aus, oder befolgt ihr die Befehle des Kapitäns der Stadtwache und versucht in zu töten?"
