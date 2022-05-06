@@ -331,10 +331,10 @@ export default {
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
     "Level up when youre back in town": "Level up when you're back in town!",
+    "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
     "card_types": {
         "R": "Road Event",
         "C": "City Event",
         "Q": "Personal Quest",
-    },
-    "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
+    }
 }

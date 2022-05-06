@@ -122,7 +122,7 @@ export default {
     "Retire": "in Ruhestand schicken",
     "Retired": "in Ruhestand geschickt",
     "Retirement counter": "Ruhestand-Zähler",
-    "Set this counter to the amount of characters your have retired": "Stell den Zähler auf die Anzahl der schon in Ruhestand geschickten Charaktere ein.",
+    "Set this counter to the amount of characters you have retired": "Stell den Zähler auf die Anzahl der schon in Ruhestand geschickten Charaktere ein.",
     "Remove": "Löschen",
     "Unlocked": "Freigeschaltet",
     "Clear all": "Alles löschen",
@@ -281,7 +281,7 @@ export default {
     "DISARM": "ENTWAFFNEN",
     "TARGET": "ZIEL",
     "LOOT": "BEUTE",
-    "TELEPORT": "TELEPORTIEREN",
+    "Teleport": "Teleport",
     "Doom": "Doom",
     "Augment": "Augment",
     "Song": "Lied",
@@ -335,5 +335,5 @@ export default {
         "R": "Weg-Ereignis",
         "C": "Stadt-Ereignis",
         "Q": "Persönliche Quest"
-    },
+    }
 }

@@ -767,4 +767,5 @@ export default {
             }
         }
     },
+    "quest-jotl": {}
 }

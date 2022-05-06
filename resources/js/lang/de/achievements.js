@@ -174,7 +174,7 @@ export default {
         "name": "Durch das Portal"
     },
     "gh-PO": {
-        "name": "Opportunisten",
+        "name": "Opportunisten"
     },
     "gh-GKIP": {
         "name": "Wissen ist Macht"

@@ -144,7 +144,7 @@ export default {
         "name": "Erhalte 30 Gold"
     },
     "gh-49": {
-        "name": "Neues Szenario: {SCENARIO 17}",
+        "name": "Neues Szenario: {SCENARIO 17}"
     },
     "gh-50": {
         "name": "Erhalte “Zweite Haut” (Gegenstand 101)"

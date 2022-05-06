@@ -66,8 +66,8 @@ export default {
     "solved": "resuelto",
     "Clues": "Pistas",
     "Open envelope": "Abre el sobre",
-    "Envelope X solution": "Solución sobre X",
     "Open box": "Abre la caja",
+    "Envelope X solution": "Solución sobre X",
     "Additional notes": "Notas",
     "Items": "Objetos",
     "Add Items": "Añade Objetos",
@@ -248,10 +248,7 @@ export default {
     "Region": "Región",
     "Chapter": "Capítulo",
     "Looted": "Saqueado",
-    "Loot": "Saqueo",
     "Side": "Secundario",
-    "Clear filter": "Borrar filtro",
-    "Missed Treasures": "Tesoros Perdidos",
     "Card": "Carta",
     "Nr": "Ref",
     "Slot": "Espacio",
@@ -338,5 +335,5 @@ export default {
         "R": "Evento de Camino",
         "C": "Evento de Ciudad",
         "Q": "Misión Personal"
-    },
+    }
 }

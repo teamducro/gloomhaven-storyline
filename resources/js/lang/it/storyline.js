@@ -733,5 +733,6 @@ export default {
                 "1": "{1}{2}"
             }
         }
-    }
+    },
+    "quest-jotl": {}
 }

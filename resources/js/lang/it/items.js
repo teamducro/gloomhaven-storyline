@@ -835,184 +835,184 @@ export default {
         "source": "Reward from Solo Scenario - {DR}",
         "desc": "When you reveal cards from any deck, reveal one additional card."
     },
-    "jotl_1": {
+    "jotl-1": {
         "name": "Eagle-Eye Goggles",
         "source": "Reward from {SCENARIO 2}",
         "desc": "During your attack, gain Advantage on the entire Attack action."
     },
-    "jotl_2": {
+    "jotl-2": {
         "name": "Iron Helmet",
         "source": "Reward from {SCENARIO 2}",
         "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
     },
-    "jotl_3": {
+    "jotl-3": {
         "name": "Chain Armor",
         "source": "Reward from {SCENARIO 2}",
         "desc": "During your turn gain {SHIELD} 1 for the rest of the round"
     },
-    "jotl_4": {
+    "jotl-4": {
         "name": "Studded Leather",
         "source": "Reward from {SCENARIO 2}",
         "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
     },
-    "jotl_5": {
+    "jotl-5": {
         "name": "Weathered Boots",
         "source": "Reward from {SCENARIO 2}",
         "desc": "During your movement add +1 {MOVE} to a single movement."
     },
-    "jotl_6": {
+    "jotl-6": {
         "name": "Winged Shoes",
         "source": "Reward from {SCENARIO 2}",
         "desc": "During your movement, add {JUMP} to the entire Move Action.",
         "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
     },
-    "jotl_7": {
+    "jotl-7": {
         "name": "Heater Shield",
         "source": "Reward from {SCENARIO 2}",
         "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
     },
-    "jotl_8": {
+    "jotl-8": {
         "name": "Throwing Hammer",
         "source": "Reward from {SCENARIO 2}",
         "desc": "During your ranged attack, add {STUN} to a single attack"
     },
-    "jotl_9": {
+    "jotl-9": {
         "name": "Poison Dagger",
         "source": "Reward from {SCENARIO 2}",
         "desc": "During your melee attack, add {POISON} to a single attack."
     },
-    "jotl_10": {
+    "jotl-10": {
         "name": "Iron Spear",
         "source": "Reward from {SCENARIO 2}",
         "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes"
     },
-    "jotl_11": {
+    "jotl-11": {
         "name": "Healing Potion",
         "source": "Reward from {SCENARIO 2}",
         "desc": "During your turn, perform a “{HEAL} 3, Self” action."
     },
-    "jotl_12": {
+    "jotl-12": {
         "name": "Stamina Potion",
         "source": "Reward from {SCENARIO 2}",
         "desc": "During your turn, return one of your discarded cards to your hand."
     },
-    "jotl_13": {
+    "jotl-13": {
         "name": "Power Potion",
         "source": "Reward from {SCENARIO 2}",
         "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
     },
-    "jotl_14": {
+    "jotl-14": {
         "name": "Mana Potion",
-        "source": "Reward from {SCENARIO 4}\n {SCENARIO 4} (Tesoro #16)",
+        "source": "Reward from {SCENARIO 4}\n {SCENARIO 4} (Treasure #16)",
         "desc": "During your turn, infuse any one element. {ANY}"
     },
-    "jotl_15": {
+    "jotl-15": {
         "name": "Amulet of Life",
         "source": "Reward from {SCENARIO 9}",
         "desc": "During your turn, “{HEAL} 1, Self” action."
     },
-    "jotl_16": {
+    "jotl-16": {
         "name": "Robes of Evocation",
         "source": "Reward from {SCENARIO 9}",
         "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
     },
-    "jotl_17": {
+    "jotl-17": {
         "name": "Comfortable Shoes",
         "source": "Reward from {SCENARIO 9}",
         "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
     },
-    "jotl_18": {
+    "jotl-18": {
         "name": "Battle-Axe",
         "source": "Reward from {SCENARIO 9}",
         "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
     },
-    "jotl_19": {
+    "jotl-19": {
         "name": "Black Candle",
         "source": "Reward from {SCENARIO 9}",
         "desc": "During your ranged attack, add {CURSE} to a single attack."
     },
-    "jotl_20": {
+    "jotl-20": {
         "name": "Stun Powder",
         "source": "Reward from {SCENARIO 9}",
         "desc": "During your attack, add {STUN} to a single attack."
     },
-    "jotl_21": {
+    "jotl-21": {
         "name": "Hawk Helm",
         "source": "Reward from {SCENARIO 15}",
         "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
     },
-    "jotl_22": {
+    "jotl-22": {
         "name": "Bladed Armor",
         "source": "Reward from {SCENARIO 15}",
         "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack and the attacker suffers 2 damage."
     },
-    "jotl_23": {
+    "jotl-23": {
         "name": "Boots of Striding",
         "source": "Reward from {SCENARIO 15}",
         "desc": "During your movement, add +2 {MOVE} to a single movement."
     },
-    "jotl_24": {
+    "jotl-24": {
         "name": "Volatile Bomb",
         "source": "Reward from {SCENARIO 15}",
         "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
     },
-    "jotl_25": {
+    "jotl-25": {
         "name": "Barbed Chain",
         "source": "Reward from {SCENARIO 15}",
         "desc": "During your ranged attack, add {PULL} 2 to a single attack."
     },
-    "jotl_26": {
+    "jotl-26": {
         "name": "Oak Charm",
         "source": "Reward from {SCENARIO 15}",
         "desc": "During your turn, perform a “{BLESS}, {RANGE} 5” action."
     },
-    "jotl_27": {
+    "jotl-27": {
         "name": "Fateful Compass",
         "source": "{SCENARIO 3} (Tesoro #10)",
         "desc": "During your turn, force one enemy within {RANGE} 3 to peform a “{MOVE} 2” action with you controlling the action."
     },
-    "jotl_28": {
+    "jotl-28": {
         "name": "Flea-Bitten Shawl",
         "source": "Reward from {SCENARIO 8}\nReward from {SCENARIO 12}",
         "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
         "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
     },
-    "jotl_29": {
+    "jotl-29": {
         "name": "Tower Shield",
         "source": "Reward from {SCENARIO 16}",
         "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
     },
-    "jotl_30": {
+    "jotl-30": {
         "name": "Ring of Haste",
         "source": "{SCENARIO 21} (Tesoro #11)",
         "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of that card."
     },
-    "jotl_31": {
+    "jotl-31": {
         "name": "Ring of Strength",
         "source": "Reward from {SCENARIO 19}\n{SCENARIO 18} (Tesoro #2)",
         "desc": "During your turn, gain {STRENGTHEN}."
     },
-    "jotl_32": {
+    "jotl-32": {
         "name": "Ring of Restoration",
         "source": "Misplaced Good #F from {SCENARIO 20}",
         "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action."
     },
-    "jotl_33": {
+    "jotl-33": {
         "name": "Steel Ring",
         "source": "Reward from {SCENARIO 22}",
         "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
     },
-    "jotl_34": {
+    "jotl-34": {
         "name": "Barbed Axe",
         "source": "Reward from {SCENARIO 34}",
         "desc": "During your attack, add {WOUND} to the entire Attack Action."
     },
-    "jotl_35": {
+    "jotl-35": {
         "name": "Robes of Command",
         "source": "Reward from {SCENARIO 24}",
         "desc": "During your turn, one adjacent ally may perform and “{ATTACK} 2” Action."
     },
-    "jotl_36": {
+    "jotl-36": {
         "name": "Jet Boots",
         "source": "Reward from {SCENARIO 25}",
         "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."

@@ -281,7 +281,7 @@ export default {
     "DISARM": "DISARM",
     "TARGET": "TARGET",
     "LOOT": "LOOT",
-    "TELEPORT": "TELEPORT",
+    "Teleport": "Teleport",
     "Doom": "Doom",
     "Augment": "Augment",
     "Song": "Song",
@@ -335,5 +335,5 @@ export default {
         "R": "Road Event",
         "C": "City Event",
         "Q": "Personal Quest"
-    },
+    }
 }
