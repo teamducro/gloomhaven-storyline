@@ -2,16 +2,26 @@
 
 // For now, to run this [ "type": "module" ] needs to be added to package.json
 
-import en from './resources/js/lang/en.js'
 import fs from "fs"
 
 // Scan languages directory for language files
-fs.readdir('./resources/js/lang/', (err, files) => {
-    let otherLanguages = files.filter(file => file.endsWith('js') && file !== 'en.js');
+const folders = fs.readdirSync('./resources/js/lang/');
+const otherLanguages = folders.filter(dir => dir.length === 2 && dir !== 'en');
 
-    otherLanguages.forEach(async (file) => {
+const files = fs.readdirSync('./resources/js/lang/en/');
+const languageFiles = files.filter(file => file.endsWith('js') && file !== 'en.js');
+
+otherLanguages.forEach((dir) => {
+    console.log('--- ' + dir.toUpperCase() + ' ---');
+    languageFiles.forEach(async (file) => {
+        console.log(file);
+
+        // Read english language file
+        const enPath = './resources/js/lang/en/' + file
+        let en = (await import(enPath)).default
+
         // Read language file
-        const filePath = './resources/js/lang/' + file;
+        const filePath = './resources/js/lang/' + dir + '/' + file
         let lang = (await import(filePath)).default
 
         // Find missing keys

@@ -8,7 +8,7 @@ import AchievementRepository from "./repositories/AchievementRepository";
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';
 import VueAnalytics from 'vue-analytics';
-import i18nEn from "./lang/en";
+import i18nEn from "./lang/en/en";
 import Helpers from './services/Helpers';
 import store from "store/dist/store.modern";
 import UserRepository from "./apiRepositories/UserRepository";
