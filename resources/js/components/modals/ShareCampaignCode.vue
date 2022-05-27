@@ -93,11 +93,13 @@ export default {
             }
         },
         setUrl() {
-            let url = Helpers.inProduction()
-                ? process.env.MIX_APP_URL
-                : location.protocol + '//' + location.host;
+            const url = process.env.MIX_APP_URL;
+            const query = new URLSearchParams({
+                code: this.code.code,
+                to_page: location.hash.replace('#/', '')
+            }).toString();
 
-            this.url = url + `/?code=${this.code.code}#/campaigns`;
+            this.url = `${url}/?${query}#/campaigns`;
         }
     }
 }
