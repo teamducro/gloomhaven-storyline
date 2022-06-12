@@ -81,6 +81,7 @@ export default {
     "You may select an additional perk!": "You may select an additional perk!",
     "Number or Name": "Number or Name",
     "No items available": "No items available",
+    "Abilities": "Abilities",
     "Buy me a Beer": "Buy me a Beer!",
     "Requirements": "Requirements",
     "Show treasures": "Show treasures",

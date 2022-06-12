@@ -11,15 +11,17 @@
             <h1 class="hidden sm:inline-block mt-4 text-xl">{{ campaignName }}
                 <span v-if="character && selected"
                       class="pl-4">{{ $t(character.characterName) }}</span>
+                <span v-if="abilities"
+                      class="pl-4">{{ $t('Abilities') }}</span>
             </h1>
 
             <add-character ref="add-character" :sheet="sheet" @create="create"/>
 
             <div class="sm:mt-4 sm:flex">
-                <character-menu :selected="selected" :sheet="sheet" @select="select"
+                <character-menu :selected="selected" :abilities="abilities" :sheet="sheet" @select="select"
                                 :is-local-campaign="isLocalCampaign"/>
 
-                <div v-if="character" class="w-full relative sm:ml-8"
+                <div v-if="character && !abilities" class="w-full relative sm:ml-8"
                      :class="{'opacity-25': !selected}">
                     <div class="flex flex-col sheet-break-lg:flex-row sheet-break-lg:space-x-4">
                         <div class="w-full sheet-break-lg:w-1/2">
@@ -165,6 +167,9 @@
                         </button>
                     </div>
                 </div>
+                <div v-if="character && selected && abilities" class="w-full relative sm:ml-8">
+                    <abilities :character="character"></abilities>
+                </div>
             </div>
         </div>
 
@@ -235,6 +240,7 @@ export default {
             sheet: null,
             sheetHash: null,
             selected: null,
+            abilities: false,
             character: null,
             soloScenario: null,
             nameText: null,
@@ -352,7 +358,7 @@ export default {
                 this.selectDemo();
             }
         },
-        select(uuid) {
+        select(uuid, abilities = false) {
             if (this.sheet.characters[uuid]) {
                 this.character = this.sheet.characters[uuid];
             } else if (this.sheet.archivedCharacters[uuid]) {
@@ -364,13 +370,19 @@ export default {
                     ? this.character.name
                     : this.$t(this.character.characterName);
                 this.selected = uuid;
-                this.findSoloScenario();
-                this.refreshItems();
-                this.rerender();
-                this.storeSelected();
-                this.$nextTick(() => {
-                    this.resetRollback();
-                });
+                this.abilities = abilities;
+
+                if (this.abilities) {
+                    // refresh abilities
+                } else {
+                    this.findSoloScenario();
+                    this.refreshItems();
+                    this.rerender();
+                    this.storeSelected();
+                    this.$nextTick(() => {
+                        this.resetRollback();
+                    });
+                }
             }
         },
         selectDemo() {

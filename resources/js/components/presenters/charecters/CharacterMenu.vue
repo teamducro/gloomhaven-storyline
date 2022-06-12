@@ -8,11 +8,23 @@
                     {{ $t('Party sheet') }}
                 </option>
                 <optgroup :label="$t('Characters')">
-                    <option v-for="character in sheet.characters"
-                            :selected="selected === character.uuid"
+                    <template v-for="character in sheet.characters">
+                        <option
+                            :selected="selected === character.uuid && !abilities"
                             :value="character.uuid">
-                        {{ character.name === character.characterName ? $t(character.characterName) : character.name }}
-                    </option>
+                            {{
+                                character.name === character.characterName
+                                    ? $t(character.characterName)
+                                    : character.name
+                            }}
+                        </option>
+                        <option
+                            :selected="selected === character.uuid && abilities"
+                            :value="character.uuid+'|abilities'"
+                        >
+                            &nbsp;&nbsp;&nbsp;{{ $t('Abilities') }}
+                        </option>
+                    </template>
                 </optgroup>
                 <optgroup v-if="!isLocalCampaign && Object.keys(sheet.archivedCharacters).length"
                           :label="$t('Retired')">
@@ -28,7 +40,9 @@
             </select>
             <label v-if="selectedCharacter" for="mobile-character-menu" class="flex items-center">
                 <character-icon class="flex-shrink-0 w-5 mr-2" :character="selectedCharacter.id"/>
-                <span class="font-title">{{ selectedCharacter.name === selectedCharacter.characterName ? $t(selectedCharacter.characterName) : selectedCharacter.name }}</span>
+                <span class="font-title">{{
+                        selectedCharacter.name === selectedCharacter.characterName ? $t(selectedCharacter.characterName) : selectedCharacter.name
+                    }} {{ abilities ? $t('Abilities') : '' }}</span>
                 <span class="ml-auto material-icons">keyboard_arrow_down</span>
             </label>
         </div>
@@ -36,14 +50,27 @@
         <!-- Desktop menu -->
         <div class="hidden sm:block">
             <ul class="space-y-6 mb-4">
-                <li v-for="character in sheet.characters" :key="character.uuid" class="flow-root">
-                    <a @click.stop.prevent="select(character.uuid)" href="#"
-                       class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
-                       :class="{'text-white bg-black2-25': selected === character.uuid, 'text-white2-75': selected !== character.uuid}">
-                        <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
-                        <span class="overflow-hidden">{{ character.name === character.characterName ? $t(character.characterName) : character.name }}</span>
-                    </a>
-                </li>
+                <template v-for="character in sheet.characters">
+                    <li class="flow-root">
+                        <a @click.stop.prevent="select(character.uuid)" href="#"
+                           class="-m-3 p-2 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
+                           :class="[selected === character.uuid && !abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
+                            <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
+                            <span class="overflow-hidden">{{
+                                    character.name === character.characterName
+                                        ? $t(character.characterName)
+                                        : character.name
+                                }}</span>
+                        </a>
+                    </li>
+                    <li v-if="selected === character.uuid" class="flow-root">
+                        <a @click.stop.prevent="select(character.uuid, true)" href="#"
+                           class="-m-3 p-2 pl-9 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
+                           :class="[selected === character.uuid && abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
+                            <span class="overflow-hidden">{{ $t('Abilities') }}</span>
+                        </a>
+                    </li>
+                </template>
             </ul>
 
             <template v-if="!isLocalCampaign && Object.keys(sheet.archivedCharacters).length">
@@ -56,9 +83,13 @@
                         <li v-for="character in sheet.archivedCharacters" :key="character.uuid" class="flow-root">
                             <a @click.stop.prevent="select(character.uuid)" href="#"
                                class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
-                               :class="{'text-white bg-black2-25': selected === character.uuid, 'text-white2-75': selected !== character.uuid}">
+                               :class="[selected === character.uuid ? 'text-white bg-black2-25' : 'text-white2-75']">
                                 <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
-                                <span>{{ character.name === character.characterName ? $t(character.characterName) : character.name }}</span>
+                                <span>{{
+                                        character.name === character.characterName
+                                            ? $t(character.characterName)
+                                            : character.name
+                                    }}</span>
                             </a>
                         </li>
                     </ul>
@@ -72,6 +103,10 @@
 export default {
     props: {
         selected: String,
+        abilities: {
+            type: Boolean,
+            default: false
+        },
         sheet: Object,
         isLocalCampaign: Boolean
     },
@@ -87,19 +122,24 @@ export default {
         }
     },
     methods: {
-        select(uuid) {
-            if (this.selected === uuid) {
+        select(uuid, abilities = false) {
+            // Already on the selected page
+            if (this.selected === uuid && this.abilities === abilities) {
                 return;
             }
 
             if (uuid.length < 36) {
                 this.$router.push(uuid);
             } else {
-                this.$emit('select', uuid)
+                this.$emit('select', uuid, abilities);
             }
         },
         mobileSelect(e) {
-            this.select(e.target.value);
+            const valueParts = e.target.value.split('|');
+            const uuid = valueParts.shift();
+            const abilities = !!(valueParts.shift() || false);
+
+            this.select(uuid, abilities);
         }
     }
 }
