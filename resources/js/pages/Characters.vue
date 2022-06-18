@@ -110,7 +110,6 @@
 
                             <personal-quests v-if="game !== 'jotl'"
                                              :quest.sync="character.quest"
-                                             :game="character.game"
                                              :sheet="sheet"
                                              @change="store"/>
 

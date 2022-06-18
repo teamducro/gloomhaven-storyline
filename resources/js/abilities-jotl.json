@@ -1,0 +1,866 @@
+[
+    {
+        "name": "collateral damage",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 9,
+        "initiative": 15
+    },
+    {
+        "name": "crash protocol",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 2,
+        "initiative": 74
+    },
+    {
+        "name": "crushing weight",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1,
+        "initiative": 22
+    },
+    {
+        "name": "drill fist",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 6,
+        "initiative": 62
+    },
+    {
+        "name": "dust cloud",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 6,
+        "initiative": 15
+    },
+    {
+        "name": "explode",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1,
+        "initiative": 28
+    },
+    {
+        "name": "explosive blitz",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1,
+        "initiative": 19,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "extra fuel",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 4,
+        "initiative": 17
+    },
+    {
+        "name": "fire bombs",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 3,
+        "initiative": 24
+    },
+    {
+        "name": "gut punch",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 8,
+        "initiative": 26
+    },
+    {
+        "name": "implode",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1,
+        "initiative": 88,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "insult to injury",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 7,
+        "initiative": 64
+    },
+    {
+        "name": "knock out the support",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1,
+        "initiative": 20,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "level",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1.5,
+        "initiative": 61
+    },
+    {
+        "name": "lobbed charge",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1.5,
+        "initiative": 52
+    },
+    {
+        "name": "mech suit",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 5,
+        "initiative": 80
+    },
+    {
+        "name": "micro missiles",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 7,
+        "initiative": 16
+    },
+    {
+        "name": "nowhere to run",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 3,
+        "initiative": 39
+    },
+    {
+        "name": "one-two punch",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1,
+        "initiative": 66,
+        "variations": [
+            "a",
+            "b"
+        ]
+    },
+    {
+        "name": "piston punch",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1,
+        "initiative": 42,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "remote detonation",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 4,
+        "initiative": 63
+    },
+    {
+        "name": "robotic enhancement",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 2,
+        "initiative": 33
+    },
+    {
+        "name": "rubble",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1.5,
+        "initiative": 55
+    },
+    {
+        "name": "the bigger one",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1,
+        "initiative": 37
+    },
+    {
+        "name": "the big one",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1,
+        "initiative": 31,
+        "variations": [
+            "a",
+            "b"
+        ]
+    },
+    {
+        "name": "wholesale destruction",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 9,
+        "initiative": 34
+    },
+    {
+        "name": "windup",
+        "game": "jotl",
+        "character_id": "DM",
+        "level": 1,
+        "initiative": 77
+    },
+    {
+        "name": "bombardment",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 6,
+        "initiative": 54
+    },
+    {
+        "name": "brutalize",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 7,
+        "initiative": 22
+    },
+    {
+        "name": "camaraderie",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 8,
+        "initiative": 75
+    },
+    {
+        "name": "care package",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1.5,
+        "initiative": 30
+    },
+    {
+        "name": "center mass",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1,
+        "initiative": 24,
+        "variations": [
+            "a",
+            "b"
+        ]
+    },
+    {
+        "name": "close cuts",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1,
+        "initiative": 25,
+        "variations": [
+            "a",
+            "b"
+        ]
+    },
+    {
+        "name": "disorienting barrage",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1,
+        "initiative": 51,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "double throw",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1,
+        "initiative": 64,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "excessive force",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 7,
+        "initiative": 47
+    },
+    {
+        "name": "executioner's axe",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 9,
+        "initiative": 79
+    },
+    {
+        "name": "extra lift",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1.5,
+        "initiative": 21
+    },
+    {
+        "name": "fancy hat",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1.5,
+        "initiative": 12
+    },
+    {
+        "name": "fearsome efficiency",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 3,
+        "initiative": 58
+    },
+    {
+        "name": "follow through",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1,
+        "initiative": 39
+    },
+    {
+        "name": "heart seeker",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 9,
+        "initiative": 32
+    },
+    {
+        "name": "overwatch",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 4,
+        "initiative": 40
+    },
+    {
+        "name": "power pitch",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1,
+        "initiative": 60
+    },
+    {
+        "name": "quick turnaround",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 6,
+        "initiative": 11
+    },
+    {
+        "name": "repeat shot",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 2,
+        "initiative": 31
+    },
+    {
+        "name": "retrieval",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1,
+        "initiative": 46
+    },
+    {
+        "name": "ricochet",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 2,
+        "initiative": 56
+    },
+    {
+        "name": "ripped from the flesh",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 4,
+        "initiative": 20
+    },
+    {
+        "name": "second wind",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1,
+        "initiative": 18,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "sharpened blades",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 3,
+        "initiative": 44
+    },
+    {
+        "name": "shrapnel",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 8,
+        "initiative": 37
+    },
+    {
+        "name": "stopping power",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1,
+        "initiative": 35,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "the favorite",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 1,
+        "initiative": 17
+    },
+    {
+        "name": "the new favorite",
+        "game": "jotl",
+        "character_id": "HT",
+        "level": 5,
+        "initiative": 15
+    },
+    {
+        "name": "barbaric instincts",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 2,
+        "initiative": 12
+    },
+    {
+        "name": "blade dance",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1.5,
+        "initiative": 29
+    },
+    {
+        "name": "blinding sickle",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1,
+        "initiative": 87,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "burn away the dark",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 4,
+        "initiative": 31
+    },
+    {
+        "name": "desert night",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1,
+        "initiative": 90,
+        "variations": [
+            "a",
+            "b"
+        ]
+    },
+    {
+        "name": "fierce brilliance",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 6,
+        "initiative": 22
+    },
+    {
+        "name": "flame shroud",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1,
+        "initiative": 6
+    },
+    {
+        "name": "flaming sickle",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1,
+        "initiative": 63,
+        "variations": [
+            "a",
+            "b"
+        ]
+    },
+    {
+        "name": "flying sickle",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 6,
+        "initiative": 91
+    },
+    {
+        "name": "harvest sickle",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 2,
+        "initiative": 52
+    },
+    {
+        "name": "healing sands",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1,
+        "initiative": 32
+    },
+    {
+        "name": "honorable fury",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 9,
+        "initiative": 89
+    },
+    {
+        "name": "horns of the beast",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 7,
+        "initiative": 8
+    },
+    {
+        "name": "no fear",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 8,
+        "initiative": 1
+    },
+    {
+        "name": "precision strike",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1.5,
+        "initiative": 40
+    },
+    {
+        "name": "prismatic sickle",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 8,
+        "initiative": 70
+    },
+    {
+        "name": "radiant sickle",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 4,
+        "initiative": 79
+    },
+    {
+        "name": "sand devil",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 5,
+        "initiative": 55
+    },
+    {
+        "name": "shield of the desert",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1,
+        "initiative": 10
+    },
+    {
+        "name": "shield spikes",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1,
+        "initiative": 41,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "shocking advance",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1,
+        "initiative": 14,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "soaring shield",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 9,
+        "initiative": 11
+    },
+    {
+        "name": "strangling chain",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 3,
+        "initiative": 19
+    },
+    {
+        "name": "swift strength",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1,
+        "initiative": 16
+    },
+    {
+        "name": "twirling stabs",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1,
+        "initiative": 38,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "vicious ballet",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 7,
+        "initiative": 28
+    },
+    {
+        "name": "warmth of the sun",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 3,
+        "initiative": 23
+    },
+    {
+        "name": "warrior of the sun",
+        "game": "jotl",
+        "character_id": "RG",
+        "level": 1.5,
+        "initiative": 13
+    },
+    {
+        "name": "black boon",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 43,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "close to the abyss",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 72
+    },
+    {
+        "name": "cold embrace",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1.5,
+        "initiative": 71
+    },
+    {
+        "name": "commanding presence",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 3,
+        "initiative": 75
+    },
+    {
+        "name": "crushing cold",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 2,
+        "initiative": 86
+    },
+    {
+        "name": "empowered link",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 8,
+        "initiative": 59
+    },
+    {
+        "name": "eye of the void",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 9,
+        "initiative": 19
+    },
+    {
+        "name": "freeze the soul",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 58
+    },
+    {
+        "name": "gift of the void",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 89,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "give and take",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 2,
+        "initiative": 21
+    },
+    {
+        "name": "grasp of doom",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 36
+    },
+    {
+        "name": "hateful blast",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 7,
+        "initiative": 29
+    },
+    {
+        "name": "lull into oblivion",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 8,
+        "initiative": 11
+    },
+    {
+        "name": "lure of the void",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 67,
+        "variations": [
+            "a",
+            "b"
+        ]
+    },
+    {
+        "name": "master influence",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 83
+    },
+    {
+        "name": "possessed by fate",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 9,
+        "initiative": 66
+    },
+    {
+        "name": "resigned frenzy",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1.5,
+        "initiative": 26
+    },
+    {
+        "name": "sap warmth",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1.5,
+        "initiative": 59
+    },
+    {
+        "name": "savage instinct",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 4,
+        "initiative": 51
+    },
+    {
+        "name": "signs of the void",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 15
+    },
+    {
+        "name": "spirit hunger",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 7,
+        "initiative": 68
+    },
+    {
+        "name": "stand fast",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 5,
+        "initiative": 90
+    },
+    {
+        "name": "suggestion",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 23,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "surge of power",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 6,
+        "initiative": 81
+    },
+    {
+        "name": "taunting fate",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 3,
+        "initiative": 13
+    },
+    {
+        "name": "the last journey",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 4,
+        "initiative": 38
+    },
+    {
+        "name": "turn out the lights",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 49,
+        "variations": [
+            "a"
+        ]
+    },
+    {
+        "name": "wicked scratch",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 1,
+        "initiative": 68,
+        "variations": [
+            "a",
+            "b"
+        ]
+    },
+    {
+        "name": "withering conviction",
+        "game": "jotl",
+        "character_id": "VW",
+        "level": 6,
+        "initiative": 44
+    }
+]

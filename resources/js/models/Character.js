@@ -7,8 +7,8 @@ import Versionable from "./Versionable";
 
 class Character {
 
-    static make(uuid, game, id) {
-        return new Character({uuid, game, id});
+    static make(uuid, sheet_game, id) {
+        return new Character({uuid, sheet_game, id});
     }
 
     constructor(data = {}) {
@@ -28,6 +28,8 @@ class Character {
         this.checks = {...data.checks};
         this.perks = {...data.perks};
         this.quest = {...data.quest};
+        this.abilities = {...data.abilities};
+        this.sheet_game = data.sheet_game;
         this.game = data.game;
         this.gameData = new GameData;
         this.personalQuestRepository = new PersonalQuestRepository;
@@ -47,12 +49,13 @@ class Character {
             notes: 'notes',
             checks: {'checks': {}},
             perks: {'perks': {}},
-            quest: {'quest': {}}
+            quest: {'quest': {}},
+            abilities: {'abilities': {}},
         };
 
         this.read();
 
-        if (this.id && this.game && !this.name) {
+        if (this.id && this.sheet_game && !this.name) {
             this.new();
         }
     }

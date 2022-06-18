@@ -3,7 +3,8 @@
         "BR": {
             "id": "BR",
             "name": "Brute",
-            "translatedName":  "characters.BR.name",
+            "game": "gh",
+            "translatedName": "characters.BR.name",
             "perks": [
                 {
                     "count": 1,
@@ -54,6 +55,7 @@
         "CH": {
             "id": "CH",
             "name": "Cragheart",
+            "game": "gh",
             "translatedName": "characters.CH.name",
             "perks": [
                 {
@@ -101,6 +103,7 @@
         "SW": {
             "id": "SW",
             "name": "Spellweaver",
+            "game": "gh",
             "translatedName": "characters.SW.name",
             "perks": [
                 {
@@ -152,6 +155,7 @@
         "TI": {
             "id": "TI",
             "name": "Tinkerer",
+            "game": "gh",
             "translatedName": "characters.TI.name",
             "perks": [
                 {
@@ -203,6 +207,7 @@
         "SC": {
             "id": "SC",
             "name": "Scoundrel",
+            "game": "gh",
             "translatedName": "characters.SC.name",
             "perks": [
                 {
@@ -254,6 +259,7 @@
         "MT": {
             "id": "MT",
             "name": "Mindthief",
+            "game": "gh",
             "translatedName": "characters.MT.name",
             "perks": [
                 {
@@ -309,6 +315,7 @@
         "DS": {
             "id": "DS",
             "name": "Doomstalker",
+            "game": "gh",
             "translatedName": "characters.DS.name",
             "perks": [
                 {
@@ -356,6 +363,7 @@
         "EL": {
             "id": "EL",
             "name": "Elementalist",
+            "game": "gh",
             "translatedName": "characters.EL.name",
             "perks": [
                 {
@@ -415,6 +423,7 @@
         "SB": {
             "id": "SB",
             "name": "Sawbones",
+            "game": "gh",
             "translatedName": "characters.SB.name",
             "perks": [
                 {
@@ -458,6 +467,7 @@
         "SS": {
             "id": "SS",
             "name": "Soothsinger",
+            "game": "gh",
             "translatedName": "characters.SS.name",
             "perks": [
                 {
@@ -513,6 +523,7 @@
         "SK": {
             "id": "SK",
             "name": "Sunkeeper",
+            "game": "gh",
             "translatedName": "characters.SK.name",
             "perks": [
                 {
@@ -564,6 +575,7 @@
         "NS": {
             "id": "NS",
             "name": "Nightshroud",
+            "game": "gh",
             "translatedName": "characters.NS.name",
             "perks": [
                 {
@@ -611,6 +623,7 @@
         "SU": {
             "id": "SU",
             "name": "Summoner",
+            "game": "gh",
             "translatedName": "characters.SU.name",
             "perks": [
                 {
@@ -658,6 +671,7 @@
         "BE": {
             "id": "BE",
             "name": "Berserker",
+            "game": "gh",
             "translatedName": "characters.BE.name",
             "perks": [
                 {
@@ -705,6 +719,7 @@
         "QM": {
             "id": "QM",
             "name": "Quartermaster",
+            "game": "gh",
             "translatedName": "characters.QM.name",
             "perks": [
                 {
@@ -752,6 +767,7 @@
         "PH": {
             "id": "PH",
             "name": "Plagueherald",
+            "game": "gh",
             "translatedName": "characters.PH.name",
             "perks": [
                 {
@@ -799,6 +815,7 @@
         "BT": {
             "id": "BT",
             "name": "Beast Tyrant",
+            "game": "gh",
             "translatedName": "characters.BT.name",
             "perks": [
                 {
@@ -838,6 +855,7 @@
         "BS": {
             "id": "BS",
             "name": "Bladeswarm",
+            "game": "gh",
             "translatedName": "characters.BS.name",
             "perks": [
                 {
@@ -893,6 +911,7 @@
         "DR": {
             "id": "DR",
             "name": "Diviner",
+            "game": "fc",
             "translatedName": "characters.DR.name",
             "perks": [
                 {
@@ -952,6 +971,7 @@
         "RG": {
             "id": "RG",
             "name": "Red Guard",
+            "game": "jotl",
             "translatedName": "characters.RG.name",
             "perks": [
                 {
@@ -999,6 +1019,7 @@
         "DM": {
             "id": "DM",
             "name": "Demolitionist",
+            "game": "jotl",
             "translatedName": "characters.DM.name",
             "perks": [
                 {
@@ -1042,6 +1063,7 @@
         "HT": {
             "id": "HT",
             "name": "Hatchet",
+            "game": "jotl",
             "translatedName": "characters.HT.name",
             "perks": [
                 {
@@ -1089,6 +1111,7 @@
         "VW": {
             "id": "VW",
             "name": "Voidwarden",
+            "game": "jotl",
             "translatedName": "characters.VW.name",
             "perks": [
                 {
