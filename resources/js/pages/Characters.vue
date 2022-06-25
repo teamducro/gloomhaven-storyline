@@ -10,9 +10,9 @@
             />
             <h1 class="hidden sm:inline-block mt-4 text-xl">{{ campaignName }}
                 <span v-if="character && selected"
-                      class="pl-4">{{ $t(character.characterName) }}</span>
+                      class="pl-6">{{ $t(character.characterName) }}</span>
                 <span v-if="abilities"
-                      class="pl-4">{{ $t('Abilities') }}</span>
+                      class="pl-6">{{ $t('Abilities') }}</span>
             </h1>
 
             <add-character ref="add-character" :sheet="sheet" @create="create"/>
@@ -167,7 +167,7 @@
                     </div>
                 </div>
                 <div v-if="character && selected && abilities" class="w-full relative sm:ml-8">
-                    <abilities :character="character"></abilities>
+                    <abilities :character="character" @store="store"/>
                 </div>
             </div>
         </div>

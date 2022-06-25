@@ -22,6 +22,7 @@ module.exports = {
                 30: '7.5rem',
                 32: '8rem',
                 36: '9rem',
+                56: '14rem',
                 '1/2': '50%',
                 '1/4': '25%',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
@@ -36,6 +37,9 @@ module.exports = {
             maxWidth: {
                 '76': '18.5rem',
                 'party': '1041px'
+            },
+            minWidth: {
+                36: '9rem',
             },
             screens: {
                 xs: '430px',
@@ -68,6 +72,7 @@ module.exports = {
                 'dark-gray2': {
                     60: 'rgba(23, 24, 25, .60)',
                     75: 'rgba(23, 24, 25, .75)',
+                    100: 'rgba(23, 24, 25, 1)',
                 },
                 black2: {
                     10: 'rgba(0, 0, 0, .10)',

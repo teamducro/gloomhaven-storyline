@@ -45,10 +45,11 @@
 import GameData from "../../../services/GameData";
 import CharacterRepository from "../../../repositories/CharacterRepository";
 import charactersJson from "../../../characters.json";
+import Sheet from "../../../models/Sheet";
 
 export default {
     props: {
-        sheet: Object
+        sheet: Sheet
     },
     data() {
         return {
