@@ -1,4 +1,4 @@
-<template xmlns:slot="http://www.w3.org/1999/html">
+<template>
     <div v-if="sheet" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
