@@ -5,6 +5,7 @@
             "name": "Brute",
             "game": "gh",
             "translatedName": "characters.BR.name",
+            "abilityCount": 10,
             "perks": [
                 {
                     "count": 1,
@@ -57,6 +58,7 @@
             "name": "Cragheart",
             "game": "gh",
             "translatedName": "characters.CH.name",
+            "abilityCount": 11,
             "perks": [
                 {
                     "count": 1,
@@ -105,6 +107,7 @@
             "name": "Spellweaver",
             "game": "gh",
             "translatedName": "characters.SW.name",
+            "abilityCount": 8,
             "perks": [
                 {
                     "count": 1,
@@ -157,6 +160,7 @@
             "name": "Tinkerer",
             "game": "gh",
             "translatedName": "characters.TI.name",
+            "abilityCount": 12,
             "perks": [
                 {
                     "count": 2,
@@ -209,6 +213,7 @@
             "name": "Scoundrel",
             "game": "gh",
             "translatedName": "characters.SC.name",
+            "abilityCount": 9,
             "perks": [
                 {
                     "count": 2,
@@ -261,6 +266,7 @@
             "name": "Mindthief",
             "game": "gh",
             "translatedName": "characters.MT.name",
+            "abilityCount": 10,
             "perks": [
                 {
                     "count": 2,
@@ -317,6 +323,7 @@
             "name": "Doomstalker",
             "game": "gh",
             "translatedName": "characters.DS.name",
+            "abilityCount": 12,
             "perks": [
                 {
                     "count": 2,
@@ -365,6 +372,7 @@
             "name": "Elementalist",
             "game": "gh",
             "translatedName": "characters.EL.name",
+            "abilityCount": 10,
             "perks": [
                 {
                     "count": 2,
@@ -425,6 +433,7 @@
             "name": "Sawbones",
             "game": "gh",
             "translatedName": "characters.SB.name",
+            "abilityCount": 10,
             "perks": [
                 {
                     "count": 2,
@@ -469,6 +478,7 @@
             "name": "Soothsinger",
             "game": "gh",
             "translatedName": "characters.SS.name",
+            "abilityCount": 9,
             "perks": [
                 {
                     "count": 2,
@@ -525,6 +535,7 @@
             "name": "Sunkeeper",
             "game": "gh",
             "translatedName": "characters.SK.name",
+            "abilityCount": 11,
             "perks": [
                 {
                     "count": 2,
@@ -577,6 +588,7 @@
             "name": "Nightshroud",
             "game": "gh",
             "translatedName": "characters.NS.name",
+            "abilityCount": 9,
             "perks": [
                 {
                     "count": 2,
@@ -625,6 +637,7 @@
             "name": "Summoner",
             "game": "gh",
             "translatedName": "characters.SU.name",
+            "abilityCount": 9,
             "perks": [
                 {
                     "count": 1,
@@ -673,6 +686,7 @@
             "name": "Berserker",
             "game": "gh",
             "translatedName": "characters.BE.name",
+            "abilityCount": 10,
             "perks": [
                 {
                     "count": 1,
@@ -721,6 +735,7 @@
             "name": "Quartermaster",
             "game": "gh",
             "translatedName": "characters.QM.name",
+            "abilityCount": 9,
             "perks": [
                 {
                     "count": 2,
@@ -769,6 +784,7 @@
             "name": "Plagueherald",
             "game": "gh",
             "translatedName": "characters.PH.name",
+            "abilityCount": 11,
             "perks": [
                 {
                     "count": 1,
@@ -817,6 +833,7 @@
             "name": "Beast Tyrant",
             "game": "gh",
             "translatedName": "characters.BT.name",
+            "abilityCount": 10,
             "perks": [
                 {
                     "count": 1,
@@ -857,6 +874,7 @@
             "name": "Bladeswarm",
             "game": "gh",
             "translatedName": "characters.BS.name",
+            "abilityCount": 11,
             "perks": [
                 {
                     "count": 1,
@@ -913,6 +931,7 @@
             "name": "Diviner",
             "game": "fc",
             "translatedName": "characters.DR.name",
+            "abilityCount": 9,
             "perks": [
                 {
                     "count": 2,
@@ -973,6 +992,7 @@
             "name": "Red Guard",
             "game": "jotl",
             "translatedName": "characters.RG.name",
+            "abilityCount": 10,
             "perks": [
                 {
                     "count": 1,
@@ -1021,6 +1041,7 @@
             "name": "Demolitionist",
             "game": "jotl",
             "translatedName": "characters.DM.name",
+            "abilityCount": 9,
             "perks": [
                 {
                     "count": 1,
@@ -1065,6 +1086,7 @@
             "name": "Hatchet",
             "game": "jotl",
             "translatedName": "characters.HT.name",
+            "abilityCount": 10,
             "perks": [
                 {
                     "count": 2,
@@ -1113,6 +1135,7 @@
             "name": "Voidwarden",
             "game": "jotl",
             "translatedName": "characters.VW.name",
+            "abilityCount": 11,
             "perks": [
                 {
                     "count": 1,

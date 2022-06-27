@@ -1,14 +1,21 @@
 <template>
     <div class="mb-4">
 
-        <div class="sm:-mt-12 mb-2 flex justify-between sm:justify-end">
-            <div v-if="character.level < 9">
-                <checkbox-with-label
-                    id="show-all-abilities"
-                    :label="$t('Show all')"
-                    :checked.sync="showAll"/>
-            </div>
-            <div class="mr-12 sm:mr-0 sm:ml-4 mt-.5">
+        <div class="sm:-mt-12 mb-2 flex justify-start sm:justify-end">
+            <checkbox-with-label
+                id="stacked-abilities"
+                :checked.sync="stacked"
+            >
+                <label for="stacked-abilities">
+                    <i class="material-icons mdc-button__icon">layers</i>
+                </label>
+            </checkbox-with-label>
+            <checkbox-with-label v-if="character.level < 9"
+                                 class="ml-4"
+                                 id="show-all-abilities"
+                                 :label="$t('Show all')"
+                                 :checked.sync="showAll"/>
+            <div class="mr-12 ml-auto sm:mr-0 sm:ml-4 mt-.5">
                 <dropdown ref="ability-sort-dropdown" align="right">
                     <template v-slot:trigger>
                         <button class="mdc-button mdc-button--raised !bg-dark-gray2-75">
@@ -52,22 +59,24 @@
         </div>
 
         <div class="mb-2 flex flex-col sm:flex-row-reverse">
-            <div class="min-w-36">
-                <h2>{{ $t('Deck') }}</h2>
-                <div :key="abilitiesHash" class="flex flex-wrap sm:flex-nowrap sm:flex-col mb-56">
+            <div class="min-w-44">
+                <h2>{{ $t('Deck') }} {{ abilityCount }} / {{ character.abilityCount }}</h2>
+                <div class="flex flex-wrap sm:flex-nowrap sm:flex-col mb-56">
                     <ability v-for="ability in sortedAbilities" :key="'deck-'+ability.code"
                              v-if="(character.level+.5) >= ability.level && character.abilities[ability.code]"
                              :ability="ability" :selected="true" :stacked="true"
-                             group="deck" @selected="selected"/>
+                             group="deck" @selected="selected" @click="openModel"/>
                 </div>
             </div>
             <div class="flex-1">
                 <h2>{{ showAll ? $t('All') : $t('Available') }} {{ $t('Abilities').toLowerCase() }}</h2>
                 <div class="flex flex-wrap">
-                    <ability v-for="ability in sortedAbilities" :key="'available-'+ability.code"
+                    <ability v-for="ability in sortedAbilities"
+                             :key="'available-'+ability.code+'-'+abilityRenderKeys[ability.code]"
                              v-if="showAll || (character.level+.5) >= ability.level"
                              :ability="ability" :selected="character.abilities[ability.code]"
-                             group="available" @selected="selected"/>
+                             :stacked="stacked"
+                             group="available" @selected="selected" @click="openModel"/>
                 </div>
             </div>
         </div>
@@ -89,8 +98,9 @@ export default {
             showAll: false,
             sortByInitiative: false,
             asc: true,
+            stacked: false,
             abilities: collect([]),
-            abilitiesHash: '',
+            abilityRenderKeys: {},
             abilityRepository: new AbilityRepository
         }
     },
@@ -103,20 +113,28 @@ export default {
             return this.sortByInitiative
                 ? this.abilities.sortBy('name')[sortBy]('initiative')
                 : this.abilities.sortBy('name')[sortBy]('level');
+        },
+        abilityCount() {
+            return Object.keys(this.character.abilities).length;
         }
     },
     methods: {
-        selected(code, checked) {
+        async selected(code, checked) {
             if (checked) {
-                this.character.abilities[code] = true;
+                if (this.abilityCount < this.character.abilityCount) {
+                    Vue.set(this.character.abilities, code, true);
+                    this.$emit('store');
+                } else {
+                    Vue.set(this.abilityRenderKeys, code, (this.abilityRenderKeys[code] || 0) + 1);
+                    this.$bus.$emit('toast', this.$t('Deck is full'), false);
+                }
             } else {
-                delete this.character.abilities[code];
+                Vue.delete(this.character.abilities, code);
+                this.$emit('store');
             }
-            this.$emit('store');
-            this.rerender();
         },
-        rerender() {
-            this.abilitiesHash = md5(JSON.stringify(this.character.abilities));
+        openModel(group, code) {
+
         }
     }
 }

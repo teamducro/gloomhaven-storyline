@@ -1,6 +1,7 @@
 <template>
-    <div class="relative m-2" :class="[stacked ? 'h-6' :'']">
-        <webp :src="ability.image" class="rounded w-40 hover:cursor-pointer hover:shadow-white"/>
+    <div class="relative m-2" :class="[stacked ? 'h-6' :'']" @click="click">
+        <webp :src="ability.image"
+              class="rounded w-40 hover:cursor-pointer hover:shadow-white"/>
         <div v-if="!stacked" class="absolute bottom-0 left-0 pt-2 pr-2 rounded-tr-full bg-dark-gray2-100">
             <checkbox :checked="selected" @change="changed" :group="group" :id="group+'-'+ability.code"/>
         </div>
@@ -35,6 +36,9 @@ export default {
     methods: {
         changed(id, checked) {
             this.$emit('selected', this.ability.code, checked);
+        },
+        click() {
+            this.$emit('click', this.group, this.ability.code);
         }
     }
 }

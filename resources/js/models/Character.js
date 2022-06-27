@@ -29,6 +29,7 @@ class Character {
         this.perks = {...data.perks};
         this.quest = {...data.quest};
         this.abilities = {...data.abilities};
+        this.abilityCount = 0;
         this.sheet_game = data.sheet_game;
         this.game = data.game;
         this.gameData = new GameData;
@@ -69,6 +70,7 @@ class Character {
         if (this.id) {
             const data = this.gameData.characters(this.game)[this.id];
             this.perkDescriptions = data.perks;
+            this.abilityCount = data.abilityCount;
         }
     }
 

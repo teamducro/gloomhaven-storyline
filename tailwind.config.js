@@ -39,7 +39,7 @@ module.exports = {
                 'party': '1041px'
             },
             minWidth: {
-                36: '9rem',
+                44: '11rem',
             },
             screens: {
                 xs: '430px',

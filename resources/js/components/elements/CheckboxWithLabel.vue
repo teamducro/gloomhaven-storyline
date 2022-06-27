@@ -6,7 +6,9 @@
             :checked="isChecked"
             :disabled="disabled"
             @change="changed"></checkbox>
-        <label :for="id" :class="{'text-white2-25': disabled}">{{ label }}</label>
+        <slot>
+            <label :for="id" :class="{'text-white2-25': disabled}">{{ label }}</label>
+        </slot>
     </div>
 </template>
 
@@ -23,7 +25,8 @@ export default {
             type: String
         },
         label: {
-            type: String
+            type: String,
+            default: ''
         },
         checked: {
             type: Boolean,
