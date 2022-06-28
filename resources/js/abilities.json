@@ -935,23 +935,7 @@
         "id": 480
     },
     {
-        "name": "tattered wolf",
-        "game": "gh",
-        "character_id": "BT",
-        "level": 1,
-        "initiative": 81,
-        "id": 480
-    },
-    {
         "name": "soaring ally",
-        "game": "gh",
-        "character_id": "BT",
-        "level": 1.5,
-        "initiative": 77,
-        "id": 487
-    },
-    {
-        "name": "red falcon",
         "game": "gh",
         "character_id": "BT",
         "level": 1.5,
@@ -975,14 +959,6 @@
         "id": 497
     },
     {
-        "name": "monolith",
-        "game": "gh",
-        "character_id": "BT",
-        "level": 5,
-        "initiative": 95,
-        "id": 497
-    },
-    {
         "name": "storm sigil",
         "game": "gh",
         "character_id": "BT",
@@ -991,23 +967,7 @@
         "id": 500
     },
     {
-        "name": "wind totem",
-        "game": "gh",
-        "character_id": "BT",
-        "level": 7,
-        "initiative": 93,
-        "id": 500
-    },
-    {
         "name": "tribal sigil",
-        "game": "gh",
-        "character_id": "BT",
-        "level": 9,
-        "initiative": 91,
-        "id": 505
-    },
-    {
-        "name": "spirit banner",
         "game": "gh",
         "character_id": "BT",
         "level": 9,
@@ -1039,23 +999,7 @@
         "id": 479
     },
     {
-        "name": "green adder",
-        "game": "gh",
-        "character_id": "BT",
-        "level": 1,
-        "initiative": 79,
-        "id": 479
-    },
-    {
         "name": "vicious ally",
-        "game": "gh",
-        "character_id": "BT",
-        "level": 3,
-        "initiative": 86,
-        "id": 492
-    },
-    {
-        "name": "swamp alligator",
         "game": "gh",
         "character_id": "BT",
         "level": 3,
@@ -1367,14 +1311,6 @@
         "id": 378
     },
     {
-        "name": "war hawk",
-        "game": "gh",
-        "character_id": "DS",
-        "level": 1,
-        "initiative": 75,
-        "id": 378
-    },
-    {
         "name": "feral instincts",
         "game": "gh",
         "character_id": "DS",
@@ -1455,23 +1391,7 @@
         "id": 399
     },
     {
-        "name": "giant toad",
-        "game": "gh",
-        "character_id": "DS",
-        "level": 6,
-        "initiative": 82,
-        "id": 399
-    },
-    {
         "name": "predator and prey",
-        "game": "gh",
-        "character_id": "DS",
-        "level": 9,
-        "initiative": 86,
-        "id": 405
-    },
-    {
-        "name": "spitting cobra",
         "game": "gh",
         "character_id": "DS",
         "level": 9,
@@ -1559,23 +1479,7 @@
         "id": 389
     },
     {
-        "name": "vicious jackal",
-        "game": "gh",
-        "character_id": "DS",
-        "level": 1.5,
-        "initiative": 71,
-        "id": 389
-    },
-    {
         "name": "vital charge",
-        "game": "gh",
-        "character_id": "DS",
-        "level": 1,
-        "initiative": 78,
-        "id": 379
-    },
-    {
-        "name": "battle boar",
         "game": "gh",
         "character_id": "DS",
         "level": 1,
@@ -1656,14 +1560,6 @@
     },
     {
         "name": "ethereal manifestation",
-        "game": "gh",
-        "character_id": "EL",
-        "level": 9,
-        "initiative": 98,
-        "id": 474
-    },
-    {
-        "name": "mana sphere",
         "game": "gh",
         "character_id": "EL",
         "level": 9,
@@ -1784,14 +1680,6 @@
     },
     {
         "name": "simulacrum",
-        "game": "gh",
-        "character_id": "EL",
-        "level": 6,
-        "initiative": 94,
-        "id": 469
-    },
-    {
-        "name": "doppelganger",
         "game": "gh",
         "character_id": "EL",
         "level": 6,
@@ -1927,14 +1815,6 @@
         "id": 150
     },
     {
-        "name": "rat swarm",
-        "game": "gh",
-        "character_id": "MT",
-        "level": 1,
-        "initiative": 82,
-        "id": 150
-    },
-    {
         "name": "hostile takeover",
         "game": "gh",
         "character_id": "MT",
@@ -1952,14 +1832,6 @@
     },
     {
         "name": "many as one",
-        "game": "gh",
-        "character_id": "MT",
-        "level": 9,
-        "initiative": 91,
-        "id": 173
-    },
-    {
-        "name": "rat king",
         "game": "gh",
         "character_id": "MT",
         "level": 9,
@@ -2080,14 +1952,6 @@
     },
     {
         "name": "wretched creature",
-        "game": "gh",
-        "character_id": "MT",
-        "level": 2,
-        "initiative": 84,
-        "id": 159
-    },
-    {
-        "name": "monstrous rat",
         "game": "gh",
         "character_id": "MT",
         "level": 2,
@@ -3751,14 +3615,6 @@
         "id": 252
     },
     {
-        "name": "healing sprite",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 5,
-        "initiative": 81,
-        "id": 252
-    },
-    {
         "name": "divided mind",
         "game": "gh",
         "character_id": "SU",
@@ -3783,14 +3639,6 @@
         "id": 253
     },
     {
-        "name": "nail spheres",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 6,
-        "initiative": 97,
-        "id": 253
-    },
-    {
         "name": "ethereal vines",
         "game": "gh",
         "character_id": "SU",
@@ -3807,14 +3655,6 @@
         "id": 233
     },
     {
-        "name": "iron beast",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 1,
-        "initiative": 96,
-        "id": 233
-    },
-    {
         "name": "grasping the void",
         "game": "gh",
         "character_id": "SU",
@@ -3824,14 +3664,6 @@
     },
     {
         "name": "horned majesty",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 9,
-        "initiative": 80,
-        "id": 260
-    },
-    {
-        "name": "black unicorn",
         "game": "gh",
         "character_id": "SU",
         "level": 9,
@@ -3871,14 +3703,6 @@
         "id": 242
     },
     {
-        "name": "bat swarm",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 1.5,
-        "initiative": 90,
-        "id": 242
-    },
-    {
         "name": "living mountain",
         "game": "gh",
         "character_id": "SU",
@@ -3887,23 +3711,7 @@
         "id": 249
     },
     {
-        "name": "rock colossus",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 4,
-        "initiative": 88,
-        "id": 249
-    },
-    {
         "name": "living night",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 1,
-        "initiative": 82,
-        "id": 235
-    },
-    {
-        "name": "shadow wolves",
         "game": "gh",
         "character_id": "SU",
         "level": 1,
@@ -3927,23 +3735,7 @@
         "id": 255
     },
     {
-        "name": "void eater",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 7,
-        "initiative": 95,
-        "id": 255
-    },
-    {
         "name": "oozing manifestation",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 3,
-        "initiative": 86,
-        "id": 248
-    },
-    {
-        "name": "slime spirit",
         "game": "gh",
         "character_id": "SU",
         "level": 3,
@@ -3991,14 +3783,6 @@
         "id": 236
     },
     {
-        "name": "lava golem",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 1,
-        "initiative": 98,
-        "id": 236
-    },
-    {
         "name": "unwavering hand",
         "game": "gh",
         "character_id": "SU",
@@ -4015,14 +3799,6 @@
         "id": 243
     },
     {
-        "name": "living bomb",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 1.5,
-        "initiative": 94,
-        "id": 243
-    },
-    {
         "name": "wild animation",
         "game": "gh",
         "character_id": "SU",
@@ -4031,23 +3807,7 @@
         "id": 234
     },
     {
-        "name": "thorn shooter",
-        "game": "gh",
-        "character_id": "SU",
-        "level": 1,
-        "initiative": 92,
-        "id": 234
-    },
-    {
         "name": "aid from the ether",
-        "game": "gh",
-        "character_id": "SW",
-        "level": 1.5,
-        "initiative": 91,
-        "id": 71
-    },
-    {
-        "name": "mystic ally",
         "game": "gh",
         "character_id": "SW",
         "level": 1.5,
@@ -4207,14 +3967,6 @@
         "id": 80
     },
     {
-        "name": "burning avatar",
-        "game": "gh",
-        "character_id": "SW",
-        "level": 6,
-        "initiative": 96,
-        "id": 80
-    },
-    {
         "name": "mana bolt",
         "game": "gh",
         "character_id": "SW",
@@ -4311,14 +4063,6 @@
         "id": 49
     },
     {
-        "name": "battle bot",
-        "game": "gh",
-        "character_id": "TI",
-        "level": 4,
-        "initiative": 84,
-        "id": 49
-    },
-    {
         "name": "disintegration beam",
         "game": "gh",
         "character_id": "TI",
@@ -4375,14 +4119,6 @@
         "id": 31
     },
     {
-        "name": "decoy",
-        "game": "gh",
-        "character_id": "TI",
-        "level": 1,
-        "initiative": 74,
-        "id": 31
-    },
-    {
         "name": "harsh stimulants",
         "game": "gh",
         "character_id": "TI",
@@ -4432,14 +4168,6 @@
     },
     {
         "name": "murderous contraption",
-        "game": "gh",
-        "character_id": "TI",
-        "level": 7,
-        "initiative": 94,
-        "id": 55
-    },
-    {
-        "name": "kill bot",
         "game": "gh",
         "character_id": "TI",
         "level": 7,

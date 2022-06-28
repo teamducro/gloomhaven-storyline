@@ -120,14 +120,6 @@
         "id": 588
     },
     {
-        "name": "ghost falcons",
-        "game": "fc",
-        "character_id": "DR",
-        "level": 3,
-        "initiative": 80,
-        "id": 588
-    },
-    {
         "name": "ethereal vortex",
         "game": "fc",
         "character_id": "DR",
@@ -177,14 +169,6 @@
     },
     {
         "name": "planar fissure",
-        "game": "fc",
-        "character_id": "DR",
-        "level": 9,
-        "initiative": 75,
-        "id": 601
-    },
-    {
-        "name": "twilight archon",
         "game": "fc",
         "character_id": "DR",
         "level": 9,
