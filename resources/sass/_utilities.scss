@@ -6,10 +6,25 @@
     filter: grayscale(100);
 }
 
-@for $i from 1 through 30 {
+@for $i from 0 through 30 {
     .order-#{$i} {
         order: $i;
     }
+}
+
+@include media() using($screen) {
+    .#{$screen}\:order-0 {
+        order: 0;
+    }
+}
+
+.aspect-card {
+    aspect-ratio: 1/1.5;
+}
+
+.aspect-stacked-card {
+    aspect-ratio: 1/.25;
+    overflow-y: hidden;
 }
 
 div.hover\:shadow-white:hover {

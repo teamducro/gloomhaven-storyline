@@ -5,6 +5,17 @@ module.exports = {
     mode: 'jit',
     purge: ['./resources/**/*.html', './resources/**/*.vue', './resources/**/*.js', './resources/**/*.svg'],
     theme: {
+        screens: {
+            xs: '430px',
+            sm: '640px',
+            md: '768px',
+            md2: '896px',
+            lg: '1024px',
+            xl: '1280px',
+            '2xl': '1536px',
+            'sheet-break-lg': '872px',
+            lgh: {'raw': '(min-height: 600px)'}
+        },
         extend: {
             fontFamily: {default: ['Nyala', 'sans-serif'], title: ['Pirata One', 'Nyala', 'sans-serif']},
             inset: {
@@ -40,11 +51,6 @@ module.exports = {
             },
             minWidth: {
                 44: '11rem',
-            },
-            screens: {
-                xs: '430px',
-                'sheet-break-lg': '872px',
-                lgh: {'raw': '(min-height: 600px)'}
             },
             zIndex: {
                 1: '1',

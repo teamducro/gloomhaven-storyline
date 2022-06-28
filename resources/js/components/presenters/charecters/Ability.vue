@@ -1,9 +1,13 @@
 <template>
-    <div class="relative m-2" :class="[stacked ? 'h-6' :'']" @click="click">
-        <webp :src="ability.image"
-              class="rounded w-40 hover:cursor-pointer hover:shadow-white"/>
-        <div v-if="!stacked" class="absolute bottom-0 left-0 pt-2 pr-2 rounded-tr-full bg-dark-gray2-100">
+    <div class="relative hover:cursor-pointer hover:shadow-white" :class="[stacked ? 'aspect-stacked-card' :'']">
+        <webp :src="ability.image" :class="[stacked ? 'absolute' : '']" @click="click"
+              class="rounded w-full aspect-card"/>
+        <div v-if="active" class="absolute bg-dark-gray2-75"
+             :class="[stacked ? 'left-0 h-full flex items-center' : 'bottom-0 left-0 pt-2 pr-2 rounded-tr-full']">
             <checkbox :checked="selected" @change="changed" :group="group" :id="group+'-'+ability.code"/>
+        </div>
+        <div v-if="stacked" class="absolute w-7 bg-dark-gray2-75 right-0 h-full flex items-center px-2">
+            <strong class="font-title">{{ ability.initiative }}</strong>
         </div>
     </div>
 </template>
@@ -20,6 +24,10 @@ export default {
         selected: {
             type: Boolean,
             default: false
+        },
+        active: {
+            type: Boolean,
+            default: true
         },
         stacked: {
             type: Boolean,

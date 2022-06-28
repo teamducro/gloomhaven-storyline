@@ -51,7 +51,7 @@
         <div class="hidden sm:block">
             <ul class="space-y-6 mb-4">
                 <template v-for="character in sheet.characters">
-                    <li class="flow-root">
+                    <li class="flow-root" :key="'character-'+character.uuid">
                         <a @click.stop.prevent="select(character.uuid)" href="#"
                            class="-m-3 p-2 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                            :class="[selected === character.uuid && !abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
@@ -63,7 +63,8 @@
                                 }}</span>
                         </a>
                     </li>
-                    <li v-if="selected === character.uuid" class="flow-root">
+                    <li v-if="selected === character.uuid" class="flow-root"
+                        :key="'character-abilities-'+character.uuid">
                         <a @click.stop.prevent="select(character.uuid, true)" href="#"
                            class="-m-3 p-2 pl-9 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                            :class="[selected === character.uuid && abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
@@ -80,7 +81,8 @@
                     </template>
 
                     <ul class="space-y-6 mb-4">
-                        <li v-for="character in sheet.archivedCharacters" :key="character.uuid" class="flow-root">
+                        <li v-for="character in sheet.archivedCharacters"
+                            :key="'archived-character-'+character.uuid" class="flow-root">
                             <a @click.stop.prevent="select(character.uuid)" href="#"
                                class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                                :class="[selected === character.uuid ? 'text-white bg-black2-25' : 'text-white2-75']">

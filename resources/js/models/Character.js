@@ -17,7 +17,7 @@ class Character {
         this.version = data.version;
         this.hash = data.hash;
         this.name = data.name;
-        this.characterName = null;
+        this.characterName = null; // from translations
         this.perkDescriptions = [];
         this.level = data.level || 1;
         this.xp = data.xp || 0;
@@ -29,9 +29,9 @@ class Character {
         this.perks = {...data.perks};
         this.quest = {...data.quest};
         this.abilities = {...data.abilities};
-        this.abilityCount = 0;
+        this.abilityCount = 0; // from characters.json
         this.sheet_game = data.sheet_game;
-        this.game = data.game;
+        this.game = null; // from characters.json
         this.gameData = new GameData;
         this.personalQuestRepository = new PersonalQuestRepository;
         this.translationKey = '';
@@ -70,6 +70,7 @@ class Character {
         if (this.id) {
             const data = this.gameData.characters(this.game)[this.id];
             this.perkDescriptions = data.perks;
+            this.game = data.game;
             this.abilityCount = data.abilityCount;
         }
     }
