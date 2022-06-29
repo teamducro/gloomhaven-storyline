@@ -7,6 +7,7 @@ import treasures from "./treasures"
 import personal_quests from "./personal_quests"
 import characters from "./characters"
 import prompts from "./prompts"
+import abilities from "../en/abilities";
 
 export default {
     ...general,
@@ -31,5 +32,8 @@ export default {
     },
     "prompts": {
         ...prompts
+    },
+    "abilities": {
+        ...abilities
     }
 }

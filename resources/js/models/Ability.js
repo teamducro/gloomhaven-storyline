@@ -13,7 +13,7 @@ class Item {
         this.variations = data.variations ?? [];
         this.reference = data.reference ?? false;
         this.game = data.game;
-        this.translationKey = `abilities.${this.game}-${this.code}`;
+        this.translationKey = `abilities.${this.game}.${this.code}`;
     }
 
     get name() {
