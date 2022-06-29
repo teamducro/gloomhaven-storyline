@@ -182,8 +182,8 @@ export default {
                 this.prefs.stackedAvailable = true;
             }
         },
-        openModel(group, code) {
-
+        openModel(group, ability) {
+            this.$bus.$emit('open-ability-card', ability);
         }
     }
 }

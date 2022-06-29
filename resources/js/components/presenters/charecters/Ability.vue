@@ -1,8 +1,9 @@
 <template>
-    <div class="relative hover:cursor-pointer hover:shadow-white" :class="[stacked ? 'aspect-stacked-card' :'']">
-        <webp :src="ability.image" :class="[stacked ? 'absolute' : '']" @click="click"
+    <div class="relative hover:cursor-pointer hover:shadow-white" :class="[stacked ? 'aspect-stacked-card' :'']"
+         @click="click">
+        <webp :src="ability.image" :class="[stacked ? 'absolute' : '']"
               class="rounded w-full aspect-card"/>
-        <div v-if="active" class="absolute bg-dark-gray2-75"
+        <div v-if="active" class="absolute bg-dark-gray2-75" @click.stop=""
              :class="[stacked ? 'left-0 h-full flex items-center' : 'bottom-0 left-0 pt-2 pr-2 rounded-tr-full']">
             <checkbox :checked="selected" @change="changed" :group="group" :id="group+'-'+ability.code"/>
         </div>
@@ -46,7 +47,7 @@ export default {
             this.$emit('selected', this.ability.code, checked);
         },
         click() {
-            this.$emit('click', this.group, this.ability.code);
+            this.$emit('click', this.group, this.ability);
         }
     }
 }
