@@ -29,7 +29,7 @@
                             <template v-for="direction in [true, false]">
                                 <li class="mdc-list-item cursor-pointer"
                                     :class="{'mdc-list-item--activated': prefs.sortBy === sort && prefs.asc === direction}"
-                                    @click="prefs.sortBy = sort; prefs.asc = direction; $refs['ability-sort-dropdown'].close();">
+                                    @click="applySort(sort, direction)">
                                 <span class="flex justify-between w-full mdc-list-item__text capitalize">
                                     {{ $t(sort) }}
                                     <i class="ml-2 material-icons"
@@ -51,7 +51,7 @@
                 <div class="flex items-center space-x-4 mb-2">
                     <h2>{{ prefs.showAll ? $t('All') : $t('Available') }}</h2>
                     <i class="material-icons mdc-button__icon hover:cursor-pointer"
-                       @click="prefs.stackedAvailable = !prefs.stackedAvailable">
+                       @click="toggleStackedAvailable">
                         {{ prefs.stackedAvailable ? 'grid_view' : 'layers' }}
                     </i>
                     <i @click="toggleSide" class="hidden md:inline hover:cursor-pointer">
@@ -68,17 +68,17 @@
                              v-if="prefs.showAll || (character.level+.5) >= ability.level"
                              :ability="ability" :selected="character.abilities[ability.code]"
                              :active="(character.level+.5) >= ability.level"
-                             :stacked="prefs.stackedAvailable"
+                             :stacked="prefs.stackedAvailable" :animating="animatingAvailable"
                              group="available" @selected="selected" @click="openModel"/>
                 </div>
             </div>
 
             <!-- Deck -->
             <div :class="[prefs.deckSide ? '' : 'md:col-span-2 lg:col-span-3']">
-                <div class="flex items-center space-x-4 mb-2">
+                <div class="deck-header flex items-center space-x-4 mb-2">
                     <h2>{{ $t('Deck') }} {{ abilityCount }} / {{ character.abilityCount }}</h2>
                     <i class="material-icons mdc-button__icon hover:cursor-pointer"
-                       @click="prefs.stackedDeck = !prefs.stackedDeck">
+                       @click="toggleStackedDeck">
                         {{ prefs.stackedDeck ? 'grid_view' : 'layers' }}
                     </i>
                     <i @click="toggleSide" class="hidden md:inline hover:cursor-pointer">
@@ -92,7 +92,7 @@
                          prefs.deckSide ? 'grid-cols-2 xs:grid-cols-3 sm:grid-cols-2 md:grid-cols-1' : 'grid-cols-2 xs:grid-cols-3 sm:grid-cols-2 md2:grid-cols-3']">
                     <ability v-for="ability in sortedAbilities" :key="'deck-'+ability.code"
                              v-if="(character.level+.5) >= ability.level && character.abilities[ability.code]"
-                             :ability="ability" :selected="true" :stacked="prefs.stackedDeck"
+                             :ability="ability" :selected="true" :stacked="prefs.stackedDeck" :animating="animatingDeck"
                              group="deck" @selected="selected" @click="openModel"/>
                 </div>
             </div>
@@ -104,7 +104,7 @@
 <script>
 import Character from "../../../models/Character";
 import AbilityRepository from "../../../repositories/AbilityRepository";
-import md5 from "js-md5";
+import {Flip} from "gsap/Flip.js";
 import store from "store/dist/store.modern";
 
 export default {
@@ -121,6 +121,8 @@ export default {
                 stackedDeck: true,
                 stackedAvailable: false,
             },
+            animatingDeck: false,
+            animatingAvailable: false,
             sortByTypes: ['level', 'initiative'],
             abilities: collect([]),
             abilityRenderKeys: {},
@@ -172,15 +174,51 @@ export default {
                 this.$emit('store');
             }
         },
+        applySort(sort, direction) {
+            this.prefs.sortBy = sort;
+            this.prefs.asc = direction;
+            this.$refs['ability-sort-dropdown'].close();
+        },
         toggleSide() {
-            this.prefs.deckSide = !this.prefs.deckSide;
-            if (this.prefs.deckSide) {
-                this.prefs.stackedDeck = true;
-                this.prefs.stackedAvailable = false;
-            } else {
-                this.prefs.stackedDeck = false;
-                this.prefs.stackedAvailable = true;
-            }
+            this.animatingDeck = true;
+            this.animatingAvailable = true;
+            this.animate(() => {
+                this.prefs.deckSide = !this.prefs.deckSide;
+                if (this.prefs.deckSide) {
+                    this.prefs.stackedDeck = true;
+                    this.prefs.stackedAvailable = false;
+                } else {
+                    this.prefs.stackedDeck = false;
+                    this.prefs.stackedAvailable = true;
+                }
+            });
+        },
+        toggleStackedAvailable() {
+            this.animatingAvailable = true;
+            this.animate(() => {
+                this.prefs.stackedAvailable = !this.prefs.stackedAvailable
+            }, '.available.ability-card');
+        },
+        toggleStackedDeck() {
+            this.animatingDeck = true;
+            this.animate(() => {
+                this.prefs.stackedDeck = !this.prefs.stackedDeck
+            }, '.deck.ability-card');
+        },
+        async animate(closure, selector = '.deck-header, .ability-card') {
+            let state = Flip.getState(selector);
+            closure();
+            await this.$nextTick();
+            Flip.from(state, {
+                duration: 1,
+                ease: "power1.inOut",
+                absolute: true,
+                simple: true,
+                onComplete: () => {
+                    this.animatingDeck = false;
+                    this.animatingAvailable = false;
+                }
+            });
         },
         openModel(group, ability) {
             this.$bus.$emit('open-ability-card', ability);
