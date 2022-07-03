@@ -1,6 +1,6 @@
 <template>
     <div class="relative ability-card hover:cursor-pointer hover:shadow-white"
-         :class="[stacked ? 'aspect-stacked-card' :'', group]"
+         :class="[stacked ? 'aspect-stacked-card' :'', group, animating ? 'overflow-y-hidden' : '']"
          @click="click">
         <webp :src="ability.image" :class="[stacked ? 'absolute' : '']"
               class="rounded w-full aspect-card"/>
