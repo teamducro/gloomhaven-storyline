@@ -121,7 +121,7 @@
 
         <div id="add-shared-campaign-container" class="m-auto w-full max-w-3xl lg:flex">
             <div class="bg-dark-gray2-75 p-4 rounded-lg mt-8 lg:mr-4 lg:flex-1">
-                <add-shared-campaign :init-code="initCode"/>
+                <add-shared-campaign :init-code="initCode" :redirect-to-page="redirectToPage"/>
             </div>
 
             <div class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl lg:ml-4 lg:flex-1">
@@ -250,6 +250,7 @@ export default {
             user: null,
             paymentSuccess: false,
             initCode: '',
+            redirectToPage: 'story',
             receivedACampaignCode: false,
             url: process.env.MIX_APP_URL,
             storyRepository: new StoryRepository
@@ -287,7 +288,11 @@ export default {
             let parsed = queryString.parse(location.search);
 
             if (typeof parsed.code !== 'undefined') {
-                this.initCode = parsed.code
+                this.initCode = parsed.code.substring(0, 6);
+            }
+
+            if (typeof parsed.to_page !== 'undefined') {
+                this.redirectToPage = parsed.to_page.replace(/[^a-z-_]/gi, '');
             }
 
             if (typeof parsed['received-a-campaign-code'] !== 'undefined') {

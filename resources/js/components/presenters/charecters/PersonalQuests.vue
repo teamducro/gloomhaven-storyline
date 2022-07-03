@@ -82,7 +82,6 @@ import Helpers from "../../../services/Helpers";
 export default {
     props: {
         quest: Object,
-        game: String,
         sheet: Object
     },
     data() {
@@ -94,7 +93,7 @@ export default {
         }
     },
     mounted() {
-        this.quests = this.personalQuestRepository.fetch(this.game).keyBy('id').items;
+        this.quests = this.personalQuestRepository.fetch(this.sheet.game).keyBy('id').items;
         if (this.quest.id) {
             this.validate();
         }

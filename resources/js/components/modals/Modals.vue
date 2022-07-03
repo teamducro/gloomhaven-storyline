@@ -12,6 +12,7 @@
         <event-card></event-card>
         <default-card-modal></default-card-modal>
         <edit-campaign></edit-campaign>
+        <ability-modal></ability-modal>
     </div>
 </template>
 

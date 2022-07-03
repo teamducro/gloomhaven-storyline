@@ -34,9 +34,11 @@
 </template>
 
 <script>
+import Character from "../../../models/Character";
+
 export default {
     props: {
-        character: Object,
+        character: Character,
         perks: Object,
         checks: Object
     },

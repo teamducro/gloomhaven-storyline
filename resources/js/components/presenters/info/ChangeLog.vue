@@ -135,6 +135,7 @@ export default {
                 {version: '3.5', description: 'Buy and sell items', date: dayjs('2022-04-02')},
                 {version: '3.6', description: 'Jotl map with stickers', date: dayjs('2022-04-06')},
                 {version: '3.7', description: 'Improved synchronization between members', date: dayjs('2022-04-26')},
+                {version: '3.8', description: 'Add character abilities', date: dayjs('2022-06-04')},
             ].reverse()
         }
     },

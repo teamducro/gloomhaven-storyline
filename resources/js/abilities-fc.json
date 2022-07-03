@@ -1,0 +1,226 @@
+[
+    {
+        "name": "anguish and salvation",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 8,
+        "initiative": 21,
+        "id": 599
+    },
+    {
+        "name": "anticipate intricacies",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1,
+        "initiative": 79,
+        "id": 575
+    },
+    {
+        "name": "bad omen",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1.5,
+        "initiative": 66,
+        "id": 583
+    },
+    {
+        "name": "call of the nether",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 3,
+        "initiative": 43,
+        "id": 589
+    },
+    {
+        "name": "careful attunement",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 6,
+        "initiative": 7,
+        "id": 595
+    },
+    {
+        "name": "clairvoyance",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1,
+        "initiative": 8,
+        "id": 577
+    },
+    {
+        "name": "cleansing rite",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 4,
+        "initiative": 62,
+        "id": 591
+    },
+    {
+        "name": "curative flux",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 7,
+        "initiative": 40,
+        "id": 596
+    },
+    {
+        "name": "cursed ground",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1,
+        "initiative": 17,
+        "id": 582
+    },
+    {
+        "name": "deep contemplation",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 8,
+        "initiative": 91,
+        "id": 598
+    },
+    {
+        "name": "dimensional divide",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 5,
+        "initiative": 13,
+        "id": 593
+    },
+    {
+        "name": "dimensional transfer",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1,
+        "initiative": 57,
+        "id": 580
+    },
+    {
+        "name": "duality shards",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1.5,
+        "initiative": 39,
+        "id": 585
+    },
+    {
+        "name": "enfeebling hex",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 6,
+        "initiative": 52,
+        "id": 594
+    },
+    {
+        "name": "envision the course",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 3,
+        "initiative": 80,
+        "id": 588
+    },
+    {
+        "name": "ethereal vortex",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 7,
+        "initiative": 59,
+        "id": 597
+    },
+    {
+        "name": "gift of the void",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 2,
+        "initiative": 72,
+        "id": 587
+    },
+    {
+        "name": "hand of destiny",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 9,
+        "initiative": 96,
+        "id": 600
+    },
+    {
+        "name": "inspiration from beyond",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1.5,
+        "initiative": 23,
+        "id": 584
+    },
+    {
+        "name": "otherworldly journey",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1,
+        "initiative": 34,
+        "id": 578
+    },
+    {
+        "name": "peer into battle",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1,
+        "initiative": 82,
+        "id": 574
+    },
+    {
+        "name": "planar fissure",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 9,
+        "initiative": 75,
+        "id": 601
+    },
+    {
+        "name": "preordain the path",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 4,
+        "initiative": 87,
+        "id": 590
+    },
+    {
+        "name": "protective aura",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1,
+        "initiative": 13,
+        "id": 576
+    },
+    {
+        "name": "ray of light",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1,
+        "initiative": 48,
+        "id": 579
+    },
+    {
+        "name": "revitalizing fount",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 2,
+        "initiative": 21,
+        "id": 586
+    },
+    {
+        "name": "seal their fate",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 5,
+        "initiative": 37,
+        "id": 592
+    },
+    {
+        "name": "void snare",
+        "game": "fc",
+        "character_id": "DR",
+        "level": 1,
+        "initiative": 25,
+        "id": 581
+    }
+]

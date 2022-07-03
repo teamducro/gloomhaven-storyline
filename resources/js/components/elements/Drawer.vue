@@ -1,5 +1,5 @@
 <template xmlns="http://www.w3.org/1999/html">
-    <div>
+    <div v-cloak>
         <button type="button" @click="toggle"
                 class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 !bg-dark-gray2-75 rounded-full">
             menu

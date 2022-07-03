@@ -1,0 +1,32 @@
+// See Tailwind config for color definitions
+$primary: theme('colors.primary');
+$secondary: theme('colors.secondary');
+$background: theme('colors.background');
+$surface: theme('colors.surface');
+$complete: theme('colors.complete');
+$incomplete: theme('colors.incomplete');
+$required: theme('colors.required');
+
+// See Tailwind config for screen definitions
+$xs: 'only screen and (min-width: 430px)';
+$sm: 'only screen and (min-width: 640px)';
+$md: 'only screen and (min-width: 768px)';
+$md2: 'only screen and (min-width: 896px)';
+$lg: 'only screen and (min-width: 1024px)';
+$xl: 'only screen and (min-width: 1280px)';
+$screens: (
+    "xs": $xs,
+    "sm": $sm,
+    "md": $md,
+    "md2": $md2,
+    "lg": $lg,
+    "xl": $xl,
+);
+
+@mixin media() {
+    @each $screen, $media in $screens {
+        @media #{$media} {
+            @content($screen);
+        }
+    }
+}

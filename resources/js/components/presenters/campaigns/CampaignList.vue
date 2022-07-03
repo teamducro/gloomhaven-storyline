@@ -126,7 +126,7 @@ export default {
     },
     methods: {
         applyData() {
-            this.stories = app.stories;
+            this.stories = app.stories.sortBy('name');
             this.campaignId = app.campaignId;
         },
         select(campaignId) {
