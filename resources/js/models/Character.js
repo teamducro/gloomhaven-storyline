@@ -7,8 +7,8 @@ import Versionable from "./Versionable";
 
 class Character {
 
-    static make(uuid, game, id) {
-        return new Character({uuid, game, id});
+    static make(uuid, sheet_game, id) {
+        return new Character({uuid, sheet_game, id});
     }
 
     constructor(data = {}) {
@@ -17,7 +17,7 @@ class Character {
         this.version = data.version;
         this.hash = data.hash;
         this.name = data.name;
-        this.characterName = null;
+        this.characterName = null; // from translations
         this.perkDescriptions = [];
         this.level = data.level || 1;
         this.xp = data.xp || 0;
@@ -28,7 +28,10 @@ class Character {
         this.checks = {...data.checks};
         this.perks = {...data.perks};
         this.quest = {...data.quest};
-        this.game = data.game;
+        this.abilities = {...data.abilities};
+        this.abilityCount = 0; // from characters.json
+        this.sheet_game = data.sheet_game;
+        this.game = null; // from characters.json
         this.gameData = new GameData;
         this.personalQuestRepository = new PersonalQuestRepository;
         this.translationKey = '';
@@ -47,12 +50,13 @@ class Character {
             notes: 'notes',
             checks: {'checks': {}},
             perks: {'perks': {}},
-            quest: {'quest': {}}
+            quest: {'quest': {}},
+            abilities: {'abilities': {}},
         };
 
         this.read();
 
-        if (this.id && this.game && !this.name) {
+        if (this.id && this.sheet_game && !this.name) {
             this.new();
         }
     }
@@ -66,6 +70,8 @@ class Character {
         if (this.id) {
             const data = this.gameData.characters(this.game)[this.id];
             this.perkDescriptions = data.perks;
+            this.game = data.game;
+            this.abilityCount = data.abilityCount;
         }
     }
 

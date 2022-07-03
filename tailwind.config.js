@@ -5,6 +5,17 @@ module.exports = {
     mode: 'jit',
     purge: ['./resources/**/*.html', './resources/**/*.vue', './resources/**/*.js', './resources/**/*.svg'],
     theme: {
+        screens: {
+            xs: '430px',
+            sm: '640px',
+            md: '768px',
+            md2: '896px',
+            lg: '1024px',
+            xl: '1280px',
+            '2xl': '1536px',
+            'sheet-break-lg': '872px',
+            lgh: {'raw': '(min-height: 600px)'}
+        },
         extend: {
             fontFamily: {default: ['Nyala', 'sans-serif'], title: ['Pirata One', 'Nyala', 'sans-serif']},
             inset: {
@@ -22,6 +33,7 @@ module.exports = {
                 30: '7.5rem',
                 32: '8rem',
                 36: '9rem',
+                56: '14rem',
                 '1/2': '50%',
                 '1/4': '25%',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
@@ -37,10 +49,8 @@ module.exports = {
                 '76': '18.5rem',
                 'party': '1041px'
             },
-            screens: {
-                xs: '430px',
-                'sheet-break-lg': '872px',
-                lgh: {'raw': '(min-height: 600px)'}
+            minWidth: {
+                44: '11rem',
             },
             zIndex: {
                 1: '1',
@@ -68,6 +78,7 @@ module.exports = {
                 'dark-gray2': {
                     60: 'rgba(23, 24, 25, .60)',
                     75: 'rgba(23, 24, 25, .75)',
+                    100: 'rgba(23, 24, 25, 1)',
                 },
                 black2: {
                     10: 'rgba(0, 0, 0, .10)',

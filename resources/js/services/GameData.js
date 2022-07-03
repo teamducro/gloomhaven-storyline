@@ -7,6 +7,9 @@ import questsJotlJson from '../quests-jotl.json'
 import personalQuestsJson from '../personal-quests.json'
 import itemsJson from '../items.json'
 import itemsJotlJson from '../items-jotl.json'
+import abilitiesJson from '../abilities.json'
+import abilitiesFcJson from '../abilities-fc.json'
+import abilitiesJotlJson from '../abilities-jotl.json'
 import charactersJson from '../characters.json'
 
 export default class GameData {
@@ -71,6 +74,17 @@ export default class GameData {
                 return itemsJotlJson
             default:
                 return itemsJson
+        }
+    }
+
+    abilities(game) {
+        switch (game) {
+            case 'jotl':
+                return abilitiesJotlJson
+            case 'fc':
+                return abilitiesFcJson
+            default:
+                return abilitiesJson
         }
     }
 

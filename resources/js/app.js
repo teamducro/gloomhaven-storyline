@@ -34,6 +34,8 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import TreasureValidator from "./validators/TreasureValidator";
 import Vue from 'vue';
 import setInitialLanguage from "./services/app/setInitialLanguage";
+import {gsap} from "gsap";
+import {Flip} from "gsap/Flip.js";
 
 const {RayPlugin} = require('vue-ray/vue2');
 
@@ -53,6 +55,8 @@ VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
 Vue.use(VueScrollTo);
 Vue.use(RayPlugin, {interceptErrors: true, host: '127.0.0.1', port: 23517});
+
+gsap.registerPlugin(Flip);
 
 // Vue components
 const components = require.context('./components', true, /\.vue$/i);
