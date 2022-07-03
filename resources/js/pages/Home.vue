@@ -136,8 +136,8 @@
                             more, all in one place!
                         </p>
                         <p class="text-gray-500 mb-4">
-                            You may even track your City and Road Event Decks, this is especially useful for remote
-                            play!
+                            All ability cards of characters are available within the character sheet, in addition you
+                            can even track your City and Road Event Decks. This is especially useful for remote play!
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl+'/#/party'"
