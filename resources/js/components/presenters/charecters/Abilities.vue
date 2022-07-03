@@ -12,7 +12,7 @@
 
             <!-- Sort dropdown -->
             <div class="mr-12 ml-auto sm:mr-0 sm:ml-4 mt-.5">
-                <dropdown ref="ability-sort-dropdown" align="right">
+                <dropdown ref="ability-sort-dropdown" id="ability-sort-dropdown" align="right">
                     <template v-slot:trigger>
                         <button class="mdc-button mdc-button--raised !bg-dark-gray2-75">
                             <i class="material-icons mdc-button__icon">sort</i>
@@ -48,13 +48,13 @@
             <!-- Available abilities -->
             <div class="order-1 md:order-0"
                  :class="[prefs.deckSide ? 'md:col-span-2 lg:col-span-3' : '']">
-                <div class="flex items-center space-x-4 mb-2">
+                <div class="available-header flex items-center space-x-4 mb-2">
                     <h2>{{ prefs.showAll ? $t('All') : $t('Available') }}</h2>
                     <i class="material-icons mdc-button__icon hover:cursor-pointer"
                        @click="toggleStackedAvailable">
                         {{ prefs.stackedAvailable ? 'grid_view' : 'layers' }}
                     </i>
-                    <i @click="toggleSide" class="hidden md:inline hover:cursor-pointer">
+                    <i @click="toggleSide" class="side-toggle hidden md:inline hover:cursor-pointer">
                         <inline-svg :src="prefs.deckSide ? 'icons/collapse' : 'icons/expand'"/>
                     </i>
                 </div>
@@ -81,7 +81,7 @@
                        @click="toggleStackedDeck">
                         {{ prefs.stackedDeck ? 'grid_view' : 'layers' }}
                     </i>
-                    <i @click="toggleSide" class="hidden md:inline hover:cursor-pointer">
+                    <i @click="toggleSide" class="side-toggle hidden md:inline hover:cursor-pointer">
                         <inline-svg :src="prefs.deckSide ? 'icons/expand' : 'icons/collapse'"/>
                     </i>
                 </div>

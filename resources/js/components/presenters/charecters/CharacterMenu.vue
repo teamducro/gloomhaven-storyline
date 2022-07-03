@@ -48,7 +48,7 @@
         </div>
 
         <!-- Desktop menu -->
-        <div class="hidden sm:block">
+        <div id="desktop-character-menu" class="hidden sm:block">
             <ul class="space-y-6 mb-4">
                 <template v-for="character in sheet.characters">
                     <li class="flow-root" :key="'character-'+character.uuid">
