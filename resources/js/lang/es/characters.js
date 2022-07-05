@@ -266,18 +266,17 @@ export default {
     "BS": {
         "name": "Enjambre de Acero",
         "perks": [
-            "Retira 1 carta {-2_WHITE}",
-            "Retira 4 cartas {+0_WHITE}",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {WIND}",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {EARTH}",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {LIGHT}",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {DARK}",
-            "Añade 2 cartas {AGAIN} {HEAL}1",
-            "Añade 1 carta {+1_WHITE} {WOUND}",
-            "Añade 1 carta {+1_WHITE} {POISON}",
+            "Sustituye 1 carta {-2_WHITE} por 1 carta {+0_WHITE}",
+            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {WOUND}",
+            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {POISEN}",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {WIND}",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {EARTH}",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {LIGHT}",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {DARK}",
             "Añade 1 carta {+2_WHITE} {MUDDLE}",
+            "Añade 2 cartas {AGAIN} {HEAL}1",
             "Ignora los efectos negativos de los objetos y añade 1 carta {+1_WHITE}",
-            "Ignora los efectos negativos de los escenarios y añade 1 carta {+1_WHITE}"
+            "Ignora los efectos negativos de los escenarios y añade 2 cartas {+1_WHITE}"
         ]
     },
     "DR": {

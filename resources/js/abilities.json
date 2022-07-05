@@ -480,14 +480,6 @@
         "id": 644
     },
     {
-        "name": "lightning moths",
-        "game": "gh",
-        "character_id": "BS",
-        "level": 5,
-        "initiative": 80,
-        "id": 644
-    },
-    {
         "name": "blood drain",
         "game": "gh",
         "character_id": "BS",
@@ -520,14 +512,6 @@
         "id": 628
     },
     {
-        "name": "soul leeches",
-        "game": "gh",
-        "character_id": "BS",
-        "level": 1,
-        "initiative": 97,
-        "id": 628
-    },
-    {
         "name": "cyclone of blades",
         "game": "gh",
         "character_id": "BS",
@@ -537,14 +521,6 @@
     },
     {
         "name": "death march",
-        "game": "gh",
-        "character_id": "BS",
-        "level": 1,
-        "initiative": 84,
-        "id": 629
-    },
-    {
-        "name": "creeping beetles",
         "game": "gh",
         "character_id": "BS",
         "level": 1,
@@ -576,14 +552,6 @@
         "id": 630
     },
     {
-        "name": "angry wasps",
-        "game": "gh",
-        "character_id": "BS",
-        "level": 1,
-        "initiative": 88,
-        "id": 630
-    },
-    {
         "name": "focused scourge",
         "game": "gh",
         "character_id": "BS",
@@ -593,14 +561,6 @@
     },
     {
         "name": "fury of the horde",
-        "game": "gh",
-        "character_id": "BS",
-        "level": 7,
-        "initiative": 86,
-        "id": 648
-    },
-    {
-        "name": "rage hornets",
         "game": "gh",
         "character_id": "BS",
         "level": 7,
@@ -672,14 +632,6 @@
         "id": 640
     },
     {
-        "name": "bloat maggots",
-        "game": "gh",
-        "character_id": "BS",
-        "level": 3,
-        "initiative": 16,
-        "id": 640
-    },
-    {
         "name": "repulsive host",
         "game": "gh",
         "character_id": "BS",
@@ -736,14 +688,6 @@
         "id": 635
     },
     {
-        "name": "steel scarabs",
-        "game": "gh",
-        "character_id": "BS",
-        "level": 1.5,
-        "initiative": 94,
-        "id": 635
-    },
-    {
         "name": "vampiric tempest",
         "game": "gh",
         "character_id": "BS",
@@ -753,14 +697,6 @@
     },
     {
         "name": "wasteland",
-        "game": "gh",
-        "character_id": "BS",
-        "level": 9,
-        "initiative": 96,
-        "id": 652
-    },
-    {
-        "name": "rust vermin",
         "game": "gh",
         "character_id": "BS",
         "level": 9,
