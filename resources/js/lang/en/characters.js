@@ -266,18 +266,17 @@ export default {
     "BS": {
         "name": "Bladeswarm",
         "perks": [
-            "Remove one {-2_WHITE} cards",
-            "Remove four {+0_WHITE} cards",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} {WIND} card",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} {EARTH} card",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} {LIGHT} card",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} {DARK} card",
-            "Add two {AGAIN} {HEAL}1 cards",
-            "Add one {+1_WHITE} {WOUND} card",
-            "Add one {+1_WHITE} {POISON} card",
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {WOUND} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {POISEN} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {WIND} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {EARTH} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {LIGHT} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {DARK} card",
             "Add one {+2_WHITE} {MUDDLE} card",
+            "Add two {AGAIN} {HEAL}1 cards",
             "Ignore negative item effects and add one {+1_WHITE} card",
-            "Ignore negative scenario effects and add one {+1_WHITE} card",
+            "Ignore negative scenario effects and add one {+1_WHITE} card"
         ]
     },
     "DR": {

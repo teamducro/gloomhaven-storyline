@@ -266,25 +266,24 @@ export default {
     "BS": {
         "name": "Klingenschwarm",
         "perks": [
-            "Entferne eine {-2_WHITE} Karte",
-            "Entferne vier {+0_WHITE} Karten",
-            "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {WIND} Karte",
-            "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {EARTH} Karte",
-            "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {LIGHT} Karte",
-            "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {DARK} Karte",
+            "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
+            "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {WOUND} Karte",
+            "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {POISEN} Karte",
+            "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {WIND} Karte",
+            "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {EARTH} Karte",
+            "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {LIGHT} Karte",
+            "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {DARK} Karte",
+            "Füge eine {+2_WHITE} {MUDDLE} Karte",
             "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
-            "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
-            "Füge eine {+1_WHITE} {POISON} Karte hinzu",
-            "Füge eine {+2_WHITE} {MUDDLE} Karte hinzu",
-            "Ignoriere negative Gegenstandseffekte und füge eine {+1_WHITE} Karte hinzu",
+            "Ignoriere negative Gegenstandeffekte und füge eine {+1_WHITE} Karte hinzu",
             "Ignoriere negative Szenarioeffekte und füge eine {+1_WHITE} Karte hinzu"
         ]
     },
     "DR": {
         "name": "Prophetin",
         "perks": [
-            "Entferne zwei {-1_WHITE} cards",
-            "Entferne eine {-2_WHITE} card",
+            "Entferne zwei {-1_WHITE} Karten",
+            "Entferne eine {-2_WHITE} Karte",
             "Ersetze two {+1_WHITE} Karten durch eine {+3_WHITE} {SHIELD}1, Selbst Karte",
             "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {SHIELD}1, Verbündeter Karte",
             "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} {DARK} Karte",

@@ -6,7 +6,8 @@ describe('Home', () => {
         cy.visit('/');
 
         cy.get('#app').within(() => {
-            cy.contains('Gloomhaven Storyline Tracker!');
+            cy.contains('Gloomhaven Storyline Tracker');
+            cy.contains('The all in one campaign tracker');
             cy.contains('Contribute');
         });
     });

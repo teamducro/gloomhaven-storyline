@@ -266,16 +266,15 @@ export default {
     "BS": {
         "name": "Bladeswarm",
         "perks": [
-            "Retirer une carte {-2_WHITE}",
-            "Retirer quatre cartes {+0_WHITE}",
-            "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {WIND}",
-            "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {EARTH}",
-            "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {LIGHT}",
-            "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {DARK}",
-            "Ajouter deux cartes {AGAIN} {HEAL}1",
-            "Ajouter une carte {+1_WHITE} {WOUND}",
-            "Ajouter une carte {+1_WHITE} {POISON}",
+            "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
+            "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {WOUND}",
+            "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {POISEN}",
+            "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {WIND}",
+            "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {EARTH}",
+            "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {LIGHT}",
+            "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {DARK}",
             "Ajouter une carte {+2_WHITE} {MUDDLE}",
+            "Ajouter deux cartes {AGAIN} {HEAL}1",
             "Ignorer les effets négatifs des objets et Ajouter une carte {+1_WHITE}",
             "Ignorer les effets négatifs des scénarios et Ajouter une carte {+1_WHITE}"
         ]
