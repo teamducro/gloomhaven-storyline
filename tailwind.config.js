@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
     mode: 'jit',
-    purge: ['./resources/**/*.html', './resources/**/*.vue', './resources/**/*.js', './resources/**/*.svg'],
+    purge: ['./resources/**/*.{html,vue,js,svg}'],
     theme: {
         screens: {
             xs: '430px',
@@ -97,7 +97,7 @@ module.exports = {
                 green: {...colors.green, 50: 'rgba(100, 255, 100, .5)'},
                 yellow: {...colors.yellow, 50: 'rgba(236, 202, 75, .5)'},
                 gray: colors.coolGray,
-                characters: {
+                character: {
                     be: '#C5665E',
                     br: '#5E7EBD',
                     bs: '#D39382',

@@ -39,7 +39,9 @@
                 </option>
             </select>
             <label v-if="selectedCharacter" for="mobile-character-menu" class="flex items-center">
-                <character-icon class="flex-shrink-0 w-5 mr-2" :character="selectedCharacter.id"/>
+                <character-icon class="flex-shrink-0 w-5 mr-2"
+                                :key="'selected-character-icon-'+selectedCharacter.id"
+                                :character="selectedCharacter.id"/>
                 <span class="font-title">{{
                         selectedCharacter.name === selectedCharacter.characterName ? $t(selectedCharacter.characterName) : selectedCharacter.name
                     }} {{ abilities ? $t('Abilities') : '' }}</span>
