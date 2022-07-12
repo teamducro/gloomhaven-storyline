@@ -154,8 +154,10 @@ export default {
         cy.get('li.add-character').contains(character).click();
     },
 
-    openAbilities(character = 'Cragheart') {
-        this.openCharacter(character);
+    openAbilities(character = 'Cragheart', create = true) {
+        if (create) {
+            this.openCharacter(character);
+        }
 
         cy.get('#desktop-character-menu').contains('Abilities').click();
     },

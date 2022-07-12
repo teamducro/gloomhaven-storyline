@@ -9,7 +9,7 @@
                                  :checked.sync="prefs.showAll"/>
 
             <!-- Manage -->
-            <button @click="manageAvailable"
+            <button @click="manageAvailable" id="open-manage-abilities"
                     class="mdc-button mdc-button--raised !bg-dark-gray2-75 mt-.5 ml-2 sm:ml-4">
                 <inline-svg src="icons/level" class="mdc-button__icon !flex flex-col transition-colors"
                             :class="[hasAvailableSlots ? 'animate-color-'+character.id.toLowerCase() : '']"
