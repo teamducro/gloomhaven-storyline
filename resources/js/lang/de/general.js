@@ -136,6 +136,11 @@ export default {
     "Add Character": "Füge Charakter hinzu",
     "character-limit-message": "Aufgrund der Beschränkungen bei der gemeinsamen Nutzung von kostenlosen Kampagnen gibt es eine Zeichenbegrenzung für Notizen, für Pro-Benutzer gilt diese Begrenzung nicht",
     "Please consider purchasing a licence": "Nur Pro-Lizenz-Nutzer können beliebig viele Charaktere anlegen. Bitte zieh den Kauf einer solchen Lizenz in Betracht.",
+    "manage-abilities": {
+        "title": "Manage abilities for each level",
+        "text": "Select an ability card for each level, after choosing cards the available cards will be filtered accordingly.",
+        "level_1": "Please level {character} first before managing abilities."
+    },
     "retire-character": {
         "text": "Bist du sicher, dass du diesen Charakter in Ruhestand schicken willst? Er wird nicht endgültig gelöscht.",
         "upgrade": "Bist du sicher, dass du diesen Charakter endgültig löschen willst? Pro-Lizenz-Nutzer können einen Charakter in Ruhestand schicken ohne dass er endgültig entfernt wird."

@@ -29,6 +29,7 @@ class Character {
         this.perks = {...data.perks};
         this.quest = {...data.quest};
         this.abilities = {...data.abilities};
+        this.abilityPerLevel = {...data.abilityPerLevel};
         this.abilityCount = 0; // from characters.json
         this.sheet_game = data.sheet_game;
         this.game = null; // from characters.json
@@ -52,6 +53,7 @@ class Character {
             perks: {'perks': {}},
             quest: {'quest': {}},
             abilities: {'abilities': {}},
+            abilityPerLevel: {'abilityPerLevel': {}},
         };
 
         this.read();
@@ -87,6 +89,10 @@ class Character {
                 this.perks[index][i] = this.perks[index][i] || false;
             }
         })
+
+        for (let i = 2; i <= 9; i++) {
+            this.abilityPerLevel[i] = this.abilityPerLevel[i] || null;
+        }
     }
 
     fillRelations() {

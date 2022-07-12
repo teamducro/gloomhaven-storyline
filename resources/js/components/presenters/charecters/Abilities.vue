@@ -1,17 +1,24 @@
 <template>
     <div class="mb-4">
 
-        <div class="sm:-mt-12 mb-2 flex justify-start sm:justify-end">
+        <div class="md2:-mt-12 mb-2 flex flex-row justify-end">
 
             <!-- Show all toggle -->
-            <checkbox-with-label v-if="character.level < 9"
-                                 class="ml-4"
-                                 id="show-all-abilities"
+            <checkbox-with-label id="desktop-show-all-abilities" class="hidden md:flex"
                                  :label="$t('Show all')"
                                  :checked.sync="prefs.showAll"/>
 
+            <!-- Manage -->
+            <button @click="manageAvailable" id="open-manage-abilities"
+                    class="mdc-button mdc-button--raised !bg-dark-gray2-75 mt-.5 ml-2 sm:ml-4">
+                <inline-svg src="icons/level" class="mdc-button__icon !flex flex-col transition-colors"
+                            :class="[hasAvailableSlots ? 'animate-color-'+character.id.toLowerCase() : '']"
+                            classes="w-full"/>
+                <span class="mdc-button__label">{{ $t('Manage') }}</span>
+            </button>
+
             <!-- Sort dropdown -->
-            <div class="mr-12 ml-auto sm:mr-0 sm:ml-4 mt-.5">
+            <div class="mr-12 sm:mr-0 ml-2 sm:ml-4 mt-.5">
                 <dropdown ref="ability-sort-dropdown" id="ability-sort-dropdown" align="right">
                     <template v-slot:trigger>
                         <button class="mdc-button mdc-button--raised !bg-dark-gray2-75">
@@ -41,6 +48,7 @@
                     </ul>
                 </dropdown>
             </div>
+
         </div>
 
         <div class="grid gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
@@ -52,11 +60,15 @@
                     <h2>{{ prefs.showAll ? $t('All') : $t('Available') }}</h2>
                     <i class="material-icons mdc-button__icon hover:cursor-pointer"
                        @click="toggleStackedAvailable">
-                        {{ prefs.stackedAvailable ? 'grid_view' : 'layers' }}
+                        {{ prefs.stackedAvailable ? 'grid_view' : 'content_copy' }}
                     </i>
                     <i @click="toggleSide" class="side-toggle hidden md:inline hover:cursor-pointer">
                         <inline-svg :src="prefs.deckSide ? 'icons/collapse' : 'icons/expand'"/>
                     </i>
+                    <!-- Show all toggle -->
+                    <checkbox-with-label id="mobile-show-all-abilities" class="md:hidden"
+                                         :label="$t('Show all')"
+                                         :checked.sync="prefs.showAll"/>
                 </div>
 
                 <div class="grid gap-x-2"
@@ -79,7 +91,7 @@
                     <h2>{{ $t('Deck') }} {{ abilityCount }} / {{ character.abilityCount }}</h2>
                     <i class="material-icons mdc-button__icon hover:cursor-pointer"
                        @click="toggleStackedDeck">
-                        {{ prefs.stackedDeck ? 'grid_view' : 'layers' }}
+                        {{ prefs.stackedDeck ? 'grid_view' : 'content_copy' }}
                     </i>
                     <i @click="toggleSide" class="side-toggle hidden md:inline hover:cursor-pointer">
                         <inline-svg :src="prefs.deckSide ? 'icons/expand' : 'icons/collapse'"/>
@@ -98,19 +110,21 @@
             </div>
         </div>
 
+        <manage-abilities @store="store"></manage-abilities>
     </div>
 </template>
 
 <script>
 import Character from "../../../models/Character";
 import AbilityRepository from "../../../repositories/AbilityRepository";
-import {Flip} from "gsap/Flip.js";
 import store from "store/dist/store.modern";
+import Flip from "../../../mixins/Flip";
 
 export default {
     props: {
         character: Character
     },
+    mixins: [Flip],
     data() {
         return {
             prefs: {
@@ -146,8 +160,28 @@ export default {
         sortedAbilities() {
             const sortBy = this.prefs.asc ? 'sortBy' : 'sortByDesc'
             return this.prefs.sortBy === 'initiative'
-                ? this.abilities.sortBy('name')[sortBy]('initiative')
-                : this.abilities.sortBy('name')[sortBy]('level');
+                ? this.filteredAbilities.sortBy('name')[sortBy]('initiative')
+                : this.filteredAbilities.sortBy('name')[sortBy]('level');
+        },
+        hasAvailableSlots() {
+            return this.availableSlots.isNotEmpty();
+        },
+        availableSlots() {
+            return collect(this.character.abilityPerLevel).filter((abilityCode, level) => {
+                return level <= this.character.level && abilityCode === null;
+            });
+        },
+        selectedAbilities() {
+            return Object.values(this.character.abilityPerLevel).filter(a => a);
+        },
+        filteredAbilities() {
+            if (!this.prefs.showAll && this.selectedAbilities.length) {
+                return this.abilities.filter((ability) => {
+                    return ability.level < 2 || this.selectedAbilities.includes(ability.code);
+                });
+            } else {
+                return this.abilities;
+            }
         },
         abilityCount() {
             return Object.keys(this.character.abilities).length;
@@ -164,14 +198,14 @@ export default {
             if (checked) {
                 if (this.abilityCount < this.character.abilityCount) {
                     Vue.set(this.character.abilities, code, true);
-                    this.$emit('store');
+                    this.store();
                 } else {
                     Vue.set(this.abilityRenderKeys, code, (this.abilityRenderKeys[code] || 0) + 1);
                     this.$bus.$emit('toast', this.$t('Deck is full'), false);
                 }
             } else {
                 Vue.delete(this.character.abilities, code);
-                this.$emit('store');
+                this.store();
             }
         },
         applySort(sort, direction) {
@@ -179,10 +213,11 @@ export default {
             this.prefs.asc = direction;
             this.$refs['ability-sort-dropdown'].close();
         },
-        toggleSide() {
+        async toggleSide() {
             this.animatingDeck = true;
             this.animatingAvailable = true;
-            this.animate(() => {
+
+            await this.animate('.deck-header, .ability-card', () => {
                 this.prefs.deckSide = !this.prefs.deckSide;
                 if (this.prefs.deckSide) {
                     this.prefs.stackedDeck = true;
@@ -192,36 +227,36 @@ export default {
                     this.prefs.stackedAvailable = true;
                 }
             });
+
+            this.animatingDeck = false;
+            this.animatingAvailable = false;
         },
-        toggleStackedAvailable() {
+        async toggleStackedAvailable() {
             this.animatingAvailable = true;
-            this.animate(() => {
+
+            await this.animate('.available.ability-card', () => {
                 this.prefs.stackedAvailable = !this.prefs.stackedAvailable
-            }, '.available.ability-card');
-        },
-        toggleStackedDeck() {
-            this.animatingDeck = true;
-            this.animate(() => {
-                this.prefs.stackedDeck = !this.prefs.stackedDeck
-            }, '.deck.ability-card');
-        },
-        async animate(closure, selector = '.deck-header, .ability-card') {
-            let state = Flip.getState(selector);
-            closure();
-            await this.$nextTick();
-            Flip.from(state, {
-                duration: 1,
-                ease: "power1.inOut",
-                absolute: true,
-                simple: true,
-                onComplete: () => {
-                    this.animatingDeck = false;
-                    this.animatingAvailable = false;
-                }
             });
+
+            this.animatingAvailable = false;
+        },
+        async toggleStackedDeck() {
+            this.animatingDeck = true;
+
+            await this.animate('.deck.ability-card', () => {
+                this.prefs.stackedDeck = !this.prefs.stackedDeck
+            });
+
+            this.animatingDeck = false;
+        },
+        manageAvailable() {
+            this.$bus.$emit('open-manage-abilities', this.character);
         },
         openModel(group, ability) {
             this.$bus.$emit('open-ability-card', ability);
+        },
+        store() {
+            this.$emit('store');
         }
     }
 }

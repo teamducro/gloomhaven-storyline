@@ -33,7 +33,7 @@ describe('Abilities', () => {
 
         utilities.assertCount('.ability-card.available', 14);
 
-        cy.get('#show-all-abilities').click();
+        cy.get('#desktop-show-all-abilities').click();
 
         utilities.assertCount('.ability-card.available', 30);
     });
@@ -58,16 +58,16 @@ describe('Abilities', () => {
 
         cy.get('#available-avalanche').click();
 
-        cy.get('.available-header .material-icons').contains('layers').should('exist');
+        cy.get('.available-header .material-icons').contains('content_copy').should('exist');
         cy.get('.available-header .material-icons').contains('grid_view').should('not.exist');
-        cy.get('.deck-header .material-icons').contains('layers').should('not.exist');
+        cy.get('.deck-header .material-icons').contains('content_copy').should('not.exist');
         cy.get('.deck-header .material-icons').contains('grid_view').should('exist');
 
         cy.get('.available-header .side-toggle').click();
 
-        cy.get('.available-header .material-icons').contains('layers').should('not.exist');
+        cy.get('.available-header .material-icons').contains('content_copy').should('not.exist');
         cy.get('.available-header .material-icons').contains('grid_view').should('exist');
-        cy.get('.deck-header .material-icons').contains('layers').should('exist');
+        cy.get('.deck-header .material-icons').contains('content_copy').should('exist');
         cy.get('.deck-header .material-icons').contains('grid_view').should('not.exist');
 
         cy.get('.deck-header .side-toggle').click();
@@ -80,14 +80,59 @@ describe('Abilities', () => {
         utilities.openAbilities();
 
         cy.get('.available-header .material-icons').contains('grid_view').should('not.exist');
-        cy.get('.available-header .material-icons').contains('layers').click();
+        cy.get('.available-header .material-icons').contains('content_copy').click();
         cy.get('.available-header .material-icons').contains('grid_view').should('exist');
-        cy.get('.available-header .material-icons').contains('layers').should('not.exist');
+        cy.get('.available-header .material-icons').contains('content_copy').should('not.exist');
 
-        cy.get('.deck-header .material-icons').contains('layers').should('not.exist');
+        cy.get('.deck-header .material-icons').contains('content_copy').should('not.exist');
         cy.get('.deck-header .material-icons').contains('grid_view').click();
-        cy.get('.deck-header .material-icons').contains('layers').should('exist');
+        cy.get('.deck-header .material-icons').contains('content_copy').should('exist');
         cy.get('.deck-header .material-icons').contains('grid_view').should('not.exist');
+    });
+
+    it('It can\'t manage abilities at level 1', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openAbilities();
+
+        cy.get('button').contains('Manage').click();
+
+        cy.get('h2').contains('Manage abilities for each level');
+        cy.get('p').contains('Please level Cragheart first before managing abilities');
+        cy.get('.slot-2').should('not.exist');
+    });
+
+    it('It can manage abilities at higher levels', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+        cy.get('input[aria-labelledby="level"]').clear({force: true}).type('2{enter}');
+        utilities.openAbilities('Cragheart', false);
+
+        cy.get('#open-manage-abilities').click();
+
+        cy.get('h2').contains('Manage abilities for each level');
+        cy.get('p').contains('Select an ability card for each level, after choosing cards the available cards will be filtered accordingly');
+        cy.get('.slot-2 .border-dashed').should('exist');
+    });
+
+    it('It filters available abilities', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+        cy.get('input[aria-labelledby="level"]').clear({force: true}).type('2{enter}');
+        utilities.openAbilities('Cragheart', false);
+
+        cy.get('#open-manage-abilities').click();
+
+        cy.get('#manage-available-explosive-punch').click();
+        cy.get('.slot-2 .border-dashed').should('not.exist');
+        cy.get('.slot-2 #selected-available-explosive-punch').should('exist');
+
+        utilities.closeModel();
+
+        cy.get('#available-explosive-punch').should('exist');
+        cy.get('#available-sentient-growth').should('not.exist');
     });
 
 });

@@ -32,3 +32,13 @@ div.hover\:shadow-white:hover {
     -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+@include characters() using($character, $color) {
+    .border-character-#{$character} {
+        border-color: $color;
+    }
+
+    .text-character-#{$character} {
+        color: $color;
+    }
+}

@@ -136,6 +136,11 @@ export default {
     "Add Character": "Añade personaje",
     "character-limit-message": "Respecto a las limitaciones de uso compartido de las campañas gratuitas, hay un límite de caracteres en las notas. Los usuarios Pro no tienen este límite",
     "Please consider purchasing a licence": "Considere comprar una licencia",
+    "manage-abilities": {
+        "title": "Manage abilities for each level",
+        "text": "Select an ability card for each level, after choosing cards the available cards will be filtered accordingly.",
+        "level_1": "Please level {character} first before managing abilities."
+    },
     "retire-character": {
         "text": "¿Estás seguro de que quieres retirar este personaje? No se eliminará de forma permanente.",
         "upgrade": "¿Estás seguro de que deseas eliminar este personaje de forma permanente? Los usuarios Pro pueden retirar un personaje sin eliminarlo de forma permanente."

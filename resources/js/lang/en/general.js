@@ -136,6 +136,11 @@ export default {
     "Add Character": "Add Character",
     "character-limit-message": "Dew to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
     "Please consider purchasing a licence": "Please consider purchasing a licence",
+    "manage-abilities": {
+        "title": "Manage abilities for each level",
+        "text": "Select an ability card for each level, after choosing cards the available cards will be filtered accordingly.",
+        "level_1": "Please level {character} first before managing abilities."
+    },
     "retire-character": {
         "text": "Are you sure you want to retire this character? It's not removed permanently.",
         "upgrade": "Are you sure you want to permanently remove this character? Pro users may retire a character without removing it permanently."
