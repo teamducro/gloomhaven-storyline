@@ -133,7 +133,10 @@ module.exports = {
             },
             rotate: {
                 '270': '270deg',
-            }
+            },
+            transitionProperty: {
+                'layout': 'transform, width, height, margin, padding, background-color',
+            },
         },
         colors: {
             transparent: 'transparent',
