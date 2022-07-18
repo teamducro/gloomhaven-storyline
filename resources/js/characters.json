@@ -1229,11 +1229,11 @@
                 }
             ]
         },
-        "AF": {
-            "id": "AF",
+        "QA": {
+            "id": "QA",
             "name": "Artificer",
             "game": "cs",
-            "translatedName": "characters.AF.name",
+            "translatedName": "characters.QA.name",
             "abilityCount": 9,
             "perks": [
                 {
@@ -1278,11 +1278,11 @@
                 }
             ]
         },
-        "QB": {
-            "id": "QB",
+        "BM": {
+            "id": "BM",
             "name": "Bombard",
             "game": "cs",
-            "translatedName": "characters.QB.name",
+            "translatedName": "characters.BM.name",
             "abilityCount": 9,
             "perks":[
                 {
@@ -1442,11 +1442,11 @@
                 }
             ]
         },
-        "OC": {
-            "id": "OC",
+        "CT": {
+            "id": "CT",
             "name": "Chieftain",
             "game": "cs",
-            "translatedName": "characters.OC.name",
+            "translatedName": "characters.CT.name",
             "abilityCount": 10,
             "perks":[
                 {
@@ -1455,7 +1455,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {HEAL}1, {OC} card"
+                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {HEAL}1, {CT} card"
                 },
                 {
                     "count": 2,
@@ -1552,11 +1552,11 @@
                 }
             ]
         },
-        "HH": {
-            "id": "HH",
+        "HP": {
+            "id": "HP",
             "name": "Hierophant",
             "game": "cs",
-            "translatedName": "characters.HH.name",
+            "translatedName": "characters.HP.name",
             "abilityCount": 11,
             "perks": [
                 {
@@ -1605,11 +1605,11 @@
                 }
             ]
         },
-        "HP": {
-            "id": "HP",
+        "HO": {
+            "id": "HO",
             "name": "Hollowpact",
             "game": "cs",
-            "translatedName": "characters.HP.name",
+            "translatedName": "characters.HO.name",
             "abilityCount": 10,
             "perks": [
                 {
@@ -1650,11 +1650,11 @@
                 }
             ]
         },
-        "LL": {
-            "id": "LL",
+        "LU": {
+            "id": "LU",
             "name": "Luminary",
             "game": "cs",
-            "translatedName": "characters.LL.name",
+            "translatedName": "characters.LU.name",
             "abilityCount": 11,
             "perks": [
                 {
@@ -1858,11 +1858,11 @@
                 }
             ]
         },
-        "SR": {
-            "id": "SR",
+        "ST": {
+            "id": "ST",
             "name": "Starslinger",
             "game": "cs",
-            "translatedName": "characters.SR.name",
+            "translatedName": "characters.ST.name",
             "abilityCount": 10,
             "perks":[
                 {
@@ -1932,24 +1932,27 @@
         "PH",
         "BT",
         "BS",
+
         "DR",
+
         "RG",
         "DM",
         "HT",
         "VW",
+
         "AA",
-        "AF",
-        "QB",
         "BK",
+        "BM",
         "CG",
-        "OC",
+        "CT",
         "FK",
-        "HH",
-        "LL",
+        "HO",
         "HP",
+        "LU",
         "MF",
+        "QA",
         "RM",
         "SP",
-        "SR"
+        "ST"
     ]
 }
