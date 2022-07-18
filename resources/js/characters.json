@@ -196,7 +196,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Add one {+1_WHITE} Heal {HEAL}2 card"
+                    "desc": "Add one {+1_WHITE} {HEAL}2 card"
                 },
                 {
                     "count": 1,
@@ -404,11 +404,11 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Replace two {+0_WHITE} card with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} card"
+                    "desc": "Replace two {+0_WHITE} cards with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} cards"
                 },
                 {
                     "count": 1,
-                    "desc": "Replace two {+0_WHITE} card with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} card"
+                    "desc": "Replace two {+0_WHITE} cards with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} cards"
                 },
                 {
                     "count": 1,
@@ -886,7 +886,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {POISEN} card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card"
                 },
                 {
                     "count": 1,
