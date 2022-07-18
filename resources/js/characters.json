@@ -1181,7 +1181,7 @@
             "perks": [
                 {
                     "count": 1,
-                    "desc": "TODO:: "
+                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} \"Place one {COLONY} token of your choice on any empty hex within {RANGE}2\" card"
                 },
                 {
                     "count": 1,
