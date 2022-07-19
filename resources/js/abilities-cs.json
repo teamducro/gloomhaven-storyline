@@ -283,7 +283,7 @@
         "name": "ganging up",
         "game": "cs",
         "character_id": "CG",
-        "level": "X",
+        "level": 1.5,
         "initiative": 74,
         "id": "cs-069"
       },
@@ -347,7 +347,7 @@
         "name": "roundhouse swing",
         "game": "cs",
         "character_id": "CG",
-        "level": "X",
+        "level": 1.5,
         "initiative": 79,
         "id": "cs-070"
       },
@@ -435,7 +435,7 @@
         "name": "vigorous sway",
         "game": "cs",
         "character_id": "CG",
-        "level": "X",
+        "level": 1.5,
         "initiative": 52,
         "id": "cs-071"
       },
@@ -507,7 +507,7 @@
         "name": "hunter's mark",
         "game": "cs",
         "character_id": "CT",
-        "level": "X",
+        "level": 1.5,
         "initiative": 15,
         "id": "cs-099"
       },
@@ -563,7 +563,7 @@
         "name": "mounded sight",
         "game": "cs",
         "character_id": "CT",
-        "level": "X",
+        "level": 1.5,
         "initiative": 82,
         "id": "cs-100"
       },
@@ -571,7 +571,7 @@
         "name": "cavalry camel",
         "game": "cs",
         "character_id": "CT",
-        "level": "X",
+        "level": 1.5,
         "initiative": 82,
         "id": "cs-100"
       },
@@ -627,7 +627,7 @@
         "name": "prepared rations",
         "game": "cs",
         "character_id": "CT",
-        "level": "X",
+        "level": 1.5,
         "initiative": 91,
         "id": "cs-098"
       },
@@ -635,7 +635,7 @@
         "name": "pack mule",
         "game": "cs",
         "character_id": "CT",
-        "level": "X",
+        "level": 1.5,
         "initiative": 91,
         "id": "cs-098"
       },
@@ -843,7 +843,7 @@
         "name": "fiery charisma",
         "game": "cs",
         "character_id": "FK",
-        "level": "X",
+        "level": 1.5,
         "initiative": 25,
         "id": "cs-127"
       },
@@ -947,7 +947,7 @@
         "name": "loyal companion",
         "game": "cs",
         "character_id": "FK",
-        "level": "X",
+        "level": 1.5,
         "initiative": 81,
         "id": "cs-128"
       },
@@ -955,7 +955,7 @@
         "name": "spotted hound",
         "game": "cs",
         "character_id": "FK",
-        "level": "X",
+        "level": 1.5,
         "initiative": 81,
         "id": "cs-128"
       },
@@ -979,7 +979,7 @@
         "name": "practical tools",
         "game": "cs",
         "character_id": "FK",
-        "level": "X",
+        "level": 1.5,
         "initiative": 36,
         "id": "cs-129"
       },
@@ -1091,7 +1091,7 @@
         "name": "greed before need",
         "game": "cs",
         "character_id": "HO",
-        "level": "X",
+        "level": 1.5,
         "initiative": 33,
         "id": "cs-196"
       },
@@ -1099,7 +1099,7 @@
         "name": "hollow embrace",
         "game": "cs",
         "character_id": "HO",
-        "level": "X",
+        "level": 1.5,
         "initiative": 53,
         "id": "cs-195"
       },
@@ -1155,7 +1155,7 @@
         "name": "one with nothingness",
         "game": "cs",
         "character_id": "HO",
-        "level": "X",
+        "level": 1.5,
         "initiative": 31,
         "id": "cs-194"
       },
@@ -1439,7 +1439,7 @@
         "points": 1249,
         "game": "cs",
         "character_id": "HP",
-        "level": "X",
+        "level": 1.5,
         "initiative": 43,
         "id": "cs-157"
       },
@@ -1502,7 +1502,7 @@
         "points": 1256,
         "game": "cs",
         "character_id": "HP",
-        "level": "X",
+        "level": 1.5,
         "initiative": 11,
         "id": "cs-158"
       },
@@ -1547,7 +1547,7 @@
         "points": 1261,
         "game": "cs",
         "character_id": "HP",
-        "level": "X",
+        "level": 1.5,
         "initiative": 25,
         "id": "cs-159"
       },
