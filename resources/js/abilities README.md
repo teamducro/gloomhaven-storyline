@@ -1,3 +1,4 @@
+### abilities-cs.json
 To convert Abilities data from **worldhaven** to **Storyline**
 
 1. Download `character-ability-cards.js` from worldhaven: https://github.com/any2cards/worldhaven/blob/master/data/character-ability-cards.js
@@ -20,3 +21,16 @@ Pay special attention to `level`.
 | ---       | :-: |
 | level = x | 1.5 |
 | Certain characters have "auxilary" cards, such as SB or HP. These show up as "P" or "M" | 0.1 |
+
+
+### abilities.js
+
+1. Copy the cards from `abilities-cs.json`
+
+| Find | Replace |
+| --- | --- |
+| ^\s*"(game|char|level|init|id).*\n    | **delete**    |
+| ",                                    | "             |
+| \{\n(\s*"name": "([\w\-']*)\s?([\w\-']*)?\s?([\w\-']*)?\s?([\w\-']*)?")                  | "$2-$3-$4-$5": {\n$1     |
+| -{1,5}":                              | **delete**    |
+| ^\s*\{$\n                             | **delete**    |
