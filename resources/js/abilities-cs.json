@@ -214,5 +214,237 @@
         "level": 9,
         "initiative": 9,
         "id": "cs-028"
-    }
+    },
+    {
+        "name": "agonizing clamp",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 2,
+        "initiative": 57,
+        "id": "cs-072"
+      },
+      {
+        "name": "champion of chains",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 9,
+        "initiative": 10,
+        "id": "cs-086"
+      },
+      {
+        "name": "chokehold",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 22,
+        "id": "cs-060"
+      },
+      {
+        "name": "clamping snare",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 7,
+        "initiative": 27,
+        "id": "cs-082"
+      },
+      {
+        "name": "dizzying release",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 4,
+        "initiative": 24,
+        "id": "cs-076"
+      },
+      {
+        "name": "double k.o.",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 4,
+        "initiative": 92,
+        "id": "cs-077"
+      },
+      {
+        "name": "drag through dirt",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 30,
+        "id": "cs-061"
+      },
+      {
+        "name": "follow the chains",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 19,
+        "id": "cs-062"
+      },
+      {
+        "name": "ganging up",
+        "game": "cs",
+        "character_id": "CG",
+        "level": "X",
+        "initiative": 74,
+        "id": "cs-069"
+      },
+      {
+        "name": "impending power",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 5,
+        "initiative": 12,
+        "id": "cs-078"
+      },
+      {
+        "name": "iron thrust",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 2,
+        "initiative": 38,
+        "id": "cs-073"
+      },
+      {
+        "name": "latch and tow",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 3,
+        "initiative": 81,
+        "id": "cs-074"
+      },
+      {
+        "name": "locking links",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 41,
+        "id": "cs-063"
+      },
+      {
+        "name": "merciless beatdown",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 26,
+        "id": "cs-064"
+      },
+      {
+        "name": "meteor hammer",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 7,
+        "initiative": 45,
+        "id": "cs-083"
+      },
+      {
+        "name": "pivot and smash",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 8,
+        "initiative": 28,
+        "id": "cs-084"
+      },
+      {
+        "name": "roundhouse swing",
+        "game": "cs",
+        "character_id": "CG",
+        "level": "X",
+        "initiative": 79,
+        "id": "cs-070"
+      },
+      {
+        "name": "rusty spikes",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 18,
+        "id": "cs-065"
+      },
+      {
+        "name": "slamming shove",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 25,
+        "id": "cs-066"
+      },
+      {
+        "name": "spiked knuckles",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 66,
+        "id": "cs-067"
+      },
+      {
+        "name": "suffering steel",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 6,
+        "initiative": 9,
+        "id": "cs-080"
+      },
+      {
+        "name": "sweeping collision",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 3,
+        "initiative": 20,
+        "id": "cs-075"
+      },
+      {
+        "name": "syndicated assault",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 8,
+        "initiative": 68,
+        "id": "cs-085"
+      },
+      {
+        "name": "tighten the chains",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 5,
+        "initiative": 17,
+        "id": "cs-079"
+      },
+      {
+        "name": "titanic chainwhip",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 6,
+        "initiative": 29,
+        "id": "cs-081"
+      },
+      {
+        "name": "unending torment",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 9,
+        "initiative": 33,
+        "id": "cs-087"
+      },
+      {
+        "name": "untouchable keeper",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 14,
+        "id": "cs-059"
+      },
+      {
+        "name": "vigorous sway",
+        "game": "cs",
+        "character_id": "CG",
+        "level": "X",
+        "initiative": 52,
+        "id": "cs-071"
+      },
+      {
+        "name": "wrapped in metal",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 82,
+        "id": "cs-068"
+      }
 ]
