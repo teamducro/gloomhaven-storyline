@@ -1,0 +1,218 @@
+[
+    {
+        "name": "consistent firing",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 76,
+        "id": "cs-001"
+    },
+    {
+        "name": "double cannons",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 60,
+        "id": "cs-002"
+    },
+    {
+        "name": "exploding cannonball",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 88,
+        "id": "cs-003"
+    },
+    {
+        "name": "forceful bolt",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 63,
+        "id": "cs-004"
+    },
+    {
+        "name": "grappling hook",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 68,
+        "id": "cs-005"
+    },
+    {
+        "name": "ignited launch",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 81,
+        "id": "cs-006"
+    },
+    {
+        "name": "rolling into position",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 14,
+        "id": "cs-007"
+    },
+    {
+        "name": "unexpected bombshell",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 85,
+        "id": "cs-009"
+    },
+    {
+        "name": "chain grapnel",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1.5,
+        "initiative": 46,
+        "id": "cs-010"
+    },
+    {
+        "name": "man the cannon",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1.5,
+        "initiative": 21,
+        "id": "cs-011"
+    },
+    {
+        "name": "pillars of smoke",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1.5,
+        "initiative": 11,
+        "id": "cs-012"
+    },
+    {
+        "name": "distant retribution",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 2,
+        "initiative": 12,
+        "id": "cs-013"
+    },
+    {
+        "name": "rapid fire",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 2,
+        "initiative": 41,
+        "id": "cs-014"
+    },
+    {
+        "name": "stationary enhancements",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 3,
+        "initiative": 20,
+        "id": "cs-015"
+    },
+    {
+        "name": "twin blast",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 3,
+        "initiative": 80,
+        "id": "cs-016"
+    },
+    {
+        "name": "hurried repairs",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 4,
+        "initiative": 25,
+        "id": "cs-017"
+    },
+    {
+        "name": "powerful buckshot",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 4,
+        "initiative": 84,
+        "id": "cs-018"
+    },
+    {
+        "name": "unbreakable position",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 5,
+        "initiative": 15,
+        "id": "cs-019"
+    },
+    {
+        "name": "sharpened focus",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 5,
+        "initiative": 32,
+        "id": "cs-020"
+    },
+    {
+        "name": "meteoric blast",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 6,
+        "initiative": 26,
+        "id": "cs-021"
+    },
+    {
+        "name": "prolific perforation",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 6,
+        "initiative": 62,
+        "id": "cs-022"
+    },
+    {
+        "name": "airborne skyrock",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 7,
+        "initiative": 55,
+        "id": "cs-023"
+    },
+    {
+        "name": "ballistic barrage",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 7,
+        "initiative": 73,
+        "id": "cs-024"
+    },
+    {
+        "name": "defense mechanism",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 8,
+        "initiative": 18,
+        "id": "cs-025"
+    },
+    {
+        "name": "quadruple cannons",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 8,
+        "initiative": 86,
+        "id": "cs-026"
+    },
+    {
+        "name": "supercharged gunpowder",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 9,
+        "initiative": 90,
+        "id": "cs-027"
+    },
+    {
+        "name": "superior upgrade",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 9,
+        "initiative": 9,
+        "id": "cs-028"
+    }
+]
