@@ -2832,7 +2832,7 @@ export default {
           "clockwork-bombard": {
             "name": "clockwork bombard"
           },
-          "instant-relocation-matrix" {
+          "instant-relocation-matrix": {
             "name": "instant relocation matrix"
           },
           "jury-rigged-machine": {
@@ -2847,7 +2847,7 @@ export default {
           "clockwork-drone": {
             "name": "clockwork drone"
           },
-          "march-of-machines" {
+          "march-of-machines": {
             "name": "march of machines"
           },
           "oscillating-projector": {
