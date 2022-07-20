@@ -1,266 +1,233 @@
 [
     {
-        "id": "1",
-        "name": "",
-        "shortname": "orbofconfusion",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "id": "cs-1",
+        "name": "Orb of Confusion",
+        "shortname": "orb-of-confusion",
+        "count": 2,
+        "cost": 15,
+        "slot": "Small Item",
         "source": "",
         "spent": "",
         "consumed": "",
-        "desc": ""
+        "desc": "During your Attack ability, you may place one character token on this card to add {MUDDLE} to one attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
-        "item number": "item 2",
-        "id": "2",
-        "name": "",
+        "id": "cs-2",
+        "name": "Orb of Momentum",
         "shortname": "orbofmomentum",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 15,
+        "slot": "Small Item",
         "source": "",
         "spent": "",
         "consumed": "",
-        "desc": ""
+        "desc": "During your Move ability, you may place one character token on this card to add +1 {MOVE}. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
-        "item number": "item 3",
-        "id": "3",
-        "name": "",
+        "id": "cs-3",
+        "name": "Orb of Agilist",
         "shortname": "orbofagility",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 15,
+        "slot": "Small Item",
         "source": "",
         "spent": "",
         "consumed": "",
-        "desc": ""
+        "desc": "During your Move ability, you may place one character token on this card to add {JUMP}. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
-        "item number": "item 4",
-        "id": "4",
-        "name": "",
+        "id": "cs-4",
+        "name": "Orb of Vigor",
         "shortname": "orbofvigor",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
         "source": "",
         "spent": "",
         "consumed": "",
-        "desc": ""
+        "desc": "During your Attack ability, you may place one character token on this card to add +1 {ATTACK} to one attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
-        "item number": "item 5",
-        "id": "5",
-        "name": "",
+        "id": "cs-5",
+        "name": "Orb of Retribution",
         "shortname": "orbofretribution",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
         "source": "",
         "spent": "",
         "consumed": "",
-        "desc": ""
+        "desc": "When attacked by an adjacent enemy, you may place one character token on this card to gain {RETALIATE} 1 for the attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
-        "item number": "item 6",
-        "id": "6",
-        "name": "",
+        "id": "cs-6",
+        "name": "Orb of Infection",
         "shortname": "orbofinfection",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
         "source": "",
         "spent": "",
         "consumed": "",
-        "desc": ""
+        "desc": "During your Attack ability, you may place one character token on this card to add {POISON} to one attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
-        "item number": "item 7",
-        "id": "7",
-        "name": "",
+        "id": "cs-7",
+        "name": "Orb of Vitality",
         "shortname": "orbofvitality",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
         "source": "",
         "spent": "",
         "consumed": "",
-        "desc": ""
+        "desc": "During your turn, you may place one character token on this card to perform “{HEAL} 1, Self”. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
-        "item number": "item 8",
-        "id": "8",
-        "name": "",
+        "id": "cs-8",
+        "name": "Orb of Protection",
         "shortname": "orbofprotection",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
         "source": "",
         "spent": "",
         "consumed": "",
-        "desc": ""
+        "desc": "When damaged by an attack, you may place one character token on this card to gain {SHIELD} 1 for the attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
-        "item number": "item 9",
-        "id": "9",
-        "name": "",
+        "id": "cs-9",
+        "name": "Orb of Fortune",
         "shortname": "orboffortune",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
         "source": "",
         "spent": "",
         "consumed": "",
-        "desc": ""
+        "desc": "During your Attack ability, you may place one character token on this card to gain Advantage on one attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
-        "item number": "item 10",
-        "id": "10",
-        "name": "",
+        "id": "cs-10",
+        "name": "Orb of Despair",
         "shortname": "orbofdespair",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
         "source": "",
         "spent": "",
         "consumed": "",
         "desc": ""
     },
     {
-        "item number": "item 11",
-        "id": "11",
-        "name": "",
+        "id": "cs-11",
+        "name": "Pox Antidote",
         "shortname": "poxantidote",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 1,
+        "cost": 10,
+        "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
-        "desc": ""
+        "spent": true,
+        "desc": "During your turn, remove {INFECT} from Self or an adjacent ally."
     },
     {
-        "item number": "item 12",
-        "id": "12",
-        "name": "",
+        "id": "cs-12",
+        "name": "Trophy Helm",
         "shortname": "trophyhelm",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 1,
+        "cost": 60,
+        "slot": "Head",
         "source": "",
-        "spent": "",
-        "consumed": "",
-        "desc": ""
+        "desc": "Your attacks are unaffected by {RETALIATE}."
     },
     {
-        "item number": "item 13",
-        "id": "13",
-        "name": "",
+        "id": "cs-13",
+        "name": "War Pick",
         "shortname": "warpick",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 20,
+        "slot": "One Hand",
         "source": "",
-        "spent": "",
-        "consumed": "",
-        "desc": ""
+        "consumed": true,
+        "desc": "During your melee Attack ability, add {PIERCE} 4 to one attack."
     },
     {
-        "item number": "item 14",
-        "id": "14",
-        "name": "",
+        "id": "cs-14",
+        "name": "Chain Mace",
         "shortname": "chainmace",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 30,
+        "slot": "One Hand",
         "source": "",
-        "spent": "",
-        "consumed": "",
-        "desc": ""
+        "consumed": true,
+        "desc": "During your turn, perform “{ATTACK} 3, {RANGE} 2”."
     },
     {
-        "item number": "item 15",
-        "id": "15",
-        "name": "",
+        "id": "cs-15",
+        "name": "Draining Greaves",
         "shortname": "draininggreaves",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 50,
+        "slot": "Legs",
         "source": "",
-        "spent": "",
-        "consumed": "",
-        "desc": ""
+        "desc": "At the end of your turn, if you moved four or more hexes during your turn, one adjacent enemy suffers one damage."
     },
     {
-        "item number": "item 16",
-        "id": "16",
-        "name": "",
+        "id": "cs-16",
+        "name": "Shoes of Phasing",
         "shortname": "shoesofphasing",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 1,
+        "cost": 20,
+        "slot": "Legs",
         "source": "",
-        "spent": "",
-        "consumed": "",
-        "desc": ""
+        "desc": "During your Move abilities, you may move through enemies."
     },
     {
-        "item number": "item 17",
-        "id": "17",
-        "name": "",
+        "id": "cs-17",
+        "name": "Lightweight Boots",
         "shortname": "lightweightboots",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 40,
+        "slot": "Legs",
         "source": "",
-        "spent": "",
-        "consumed": "",
-        "desc": ""
+        "spent": true,
+        "desc": "During your Move ability, add +2 {MOVE} and {JUMP}."
     },
     {
-        "item number": "item 18",
-        "id": "18",
-        "name": "",
+        "id": "cs-18",
+        "name": "Bottled Moonlight",
         "shortname": "bottledmoonlight",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 50,
+        "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
-        "desc": ""
+        "consumed": true,
+        "burn": true,
+        "desc": "During your Heal ability, add +2 {HEAL} and {STRENGTHEN} to each Heal."
     },
     {
-        "item number": "item 19",
-        "id": "19",
-        "name": "",
+        "id": "cs-19",
+        "name": "Boots of Perpetuity",
         "shortname": "bootsofperpetuity",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 1,
+        "cost": 60,
+        "slot": "Legs",
         "source": "",
-        "spent": "",
-        "consumed": "",
-        "desc": ""
+        "desc": "You are immune to {IMMOBILIZE}.\nAt the end of your turn, if you moved zero hexes on your turn, perform “{MOVE} 1”."
     },
     {
-        "item number": "item 20",
-        "id": "20",
-        "name": "",
+        "id": "cs-20",
+        "name": "Curious Pendant",
         "shortname": "curiouspendant",
-        "count": "",
-        "cost": "",
-        "slot": "",
+        "count": 2,
+        "cost": 60,
+        "slot": "Head",
         "source": "",
-        "spent": "",
-        "consumed": "",
-        "desc": ""
+        "consumed": true,
+        "desc": "During your turn, {RECOVER} one lost card played this round."
     },
     {
-        "item number": "item 21",
-        "id": "21",
+        "id": "cs-21",
         "name": "",
         "shortname": "infraredgoggles",
         "count": "",
@@ -272,8 +239,7 @@
         "desc": ""
     },
     {
-        "item number": "item 22",
-        "id": "22",
+        "id": "cs-22",
         "name": "",
         "shortname": "steelhelmet",
         "count": "",
@@ -285,8 +251,7 @@
         "desc": ""
     },
     {
-        "item number": "item 23",
-        "id": "23",
+        "id": "cs-23",
         "name": "",
         "shortname": "wovenplatearmor",
         "count": "",
@@ -298,8 +263,7 @@
         "desc": ""
     },
     {
-        "item number": "item 24",
-        "id": "24",
+        "id": "cs-24",
         "name": "",
         "shortname": "mantleofpurity",
         "count": "",
@@ -311,8 +275,7 @@
         "desc": ""
     },
     {
-        "item number": "item 25",
-        "id": "25",
+        "id": "cs-25",
         "name": "",
         "shortname": "bonecladshawl",
         "count": "",
@@ -324,8 +287,7 @@
         "desc": ""
     },
     {
-        "item number": "item 26",
-        "id": "26",
+        "id": "cs-26",
         "name": "",
         "shortname": "silhouettecuirass",
         "count": "",
@@ -337,8 +299,7 @@
         "desc": ""
     },
     {
-        "item number": "item 27",
-        "id": "27",
+        "id": "cs-27",
         "name": "",
         "shortname": "translocationdevice",
         "count": "",
@@ -350,8 +311,7 @@
         "desc": ""
     },
     {
-        "item number": "item 28",
-        "id": "28",
+        "id": "cs-28",
         "name": "",
         "shortname": "alchemypotion",
         "count": "",
@@ -363,8 +323,7 @@
         "desc": ""
     },
     {
-        "item number": "item 29",
-        "id": "29",
+        "id": "cs-29",
         "name": "",
         "shortname": "intoxicatingpotion",
         "count": "",
@@ -376,8 +335,7 @@
         "desc": ""
     },
     {
-        "item number": "item 30",
-        "id": "30",
+        "id": "cs-30",
         "name": "",
         "shortname": "ironsnare",
         "count": "",
@@ -389,8 +347,7 @@
         "desc": ""
     },
     {
-        "item number": "item 31",
-        "id": "31",
+        "id": "cs-31",
         "name": "",
         "shortname": "concussionmine",
         "count": "",
@@ -402,8 +359,7 @@
         "desc": ""
     },
     {
-        "item number": "item 32",
-        "id": "32",
+        "id": "cs-32",
         "name": "",
         "shortname": "shiftingcompass",
         "count": "",
@@ -415,8 +371,7 @@
         "desc": ""
     },
     {
-        "item number": "item 33",
-        "id": "33",
+        "id": "cs-33",
         "name": "",
         "shortname": "batteringram",
         "count": "",
@@ -428,8 +383,7 @@
         "desc": ""
     },
     {
-        "item number": "item 34",
-        "id": "34",
+        "id": "cs-34",
         "name": "",
         "shortname": "clawtrap",
         "count": "",
@@ -441,8 +395,7 @@
         "desc": ""
     },
     {
-        "item number": "item 35",
-        "id": "35",
+        "id": "cs-35",
         "name": "",
         "shortname": "staffofretribution",
         "count": "",
@@ -454,8 +407,7 @@
         "desc": ""
     },
     {
-        "item number": "item 36",
-        "id": "36",
+        "id": "cs-36",
         "name": "",
         "shortname": "cursebloodblade",
         "count": "",
@@ -467,8 +419,7 @@
         "desc": ""
     },
     {
-        "item number": "item 37",
-        "id": "37",
+        "id": "cs-37",
         "name": "",
         "shortname": "drakescaleshield",
         "count": "",
@@ -480,8 +431,7 @@
         "desc": ""
     },
     {
-        "item number": "item 38",
-        "id": "38",
+        "id": "cs-38",
         "name": "",
         "shortname": "drakescaledagger",
         "count": "",
@@ -493,8 +443,7 @@
         "desc": ""
     },
     {
-        "item number": "item 39",
-        "id": "39",
+        "id": "cs-39",
         "name": "",
         "shortname": "hookshot",
         "count": "",
@@ -506,8 +455,7 @@
         "desc": ""
     },
     {
-        "item number": "item 40",
-        "id": "40",
+        "id": "cs-40",
         "name": "",
         "shortname": "moonleatherboots",
         "count": "",
@@ -519,8 +467,7 @@
         "desc": ""
     },
     {
-        "item number": "item 41",
-        "id": "41",
+        "id": "cs-41",
         "name": "",
         "shortname": "spiritlibation",
         "count": "",
@@ -532,8 +479,7 @@
         "desc": ""
     },
     {
-        "item number": "item 42",
-        "id": "42",
+        "id": "cs-42",
         "name": "",
         "shortname": "robeofsoothing",
         "count": "",
@@ -545,8 +491,7 @@
         "desc": ""
     },
     {
-        "item number": "item 43",
-        "id": "43",
+        "id": "cs-43",
         "name": "",
         "shortname": "resplendentmitre",
         "count": "",
@@ -558,8 +503,7 @@
         "desc": ""
     },
     {
-        "item number": "item 44",
-        "id": "44",
+        "id": "cs-44",
         "name": "",
         "shortname": "canisterprojectile",
         "count": "",
@@ -571,8 +515,7 @@
         "desc": ""
     },
     {
-        "item number": "item 45",
-        "id": "45",
+        "id": "cs-45",
         "name": "",
         "shortname": "chaincannon",
         "count": "",
@@ -584,8 +527,7 @@
         "desc": ""
     },
     {
-        "item number": "item 46",
-        "id": "46",
+        "id": "cs-46",
         "name": "",
         "shortname": "summonerswhistle",
         "count": "",
@@ -597,8 +539,7 @@
         "desc": ""
     },
     {
-        "item number": "item 47",
-        "id": "47",
+        "id": "cs-47",
         "name": "",
         "shortname": "naturearmlets",
         "count": "",
@@ -610,8 +551,7 @@
         "desc": ""
     },
     {
-        "item number": "item 48",
-        "id": "48",
+        "id": "cs-48",
         "name": "",
         "shortname": "testtube",
         "count": "",
@@ -623,8 +563,7 @@
         "desc": ""
     },
     {
-        "item number": "item 49",
-        "id": "49",
+        "id": "cs-49",
         "name": "",
         "shortname": "boostershot",
         "count": "",
@@ -636,8 +575,7 @@
         "desc": ""
     },
     {
-        "item number": "item 50",
-        "id": "50",
+        "id": "cs-50",
         "name": "",
         "shortname": "luminouscarapace",
         "count": "",
@@ -649,8 +587,7 @@
         "desc": ""
     },
     {
-        "item number": "item 51",
-        "id": "51",
+        "id": "cs-51",
         "name": "",
         "shortname": "flamingarmor",
         "count": "",
@@ -662,8 +599,7 @@
         "desc": ""
     },
     {
-        "item number": "item 52",
-        "id": "52",
+        "id": "cs-52",
         "name": "",
         "shortname": "flamingaxe",
         "count": "",
@@ -675,8 +611,7 @@
         "desc": ""
     },
     {
-        "item number": "item 53",
-        "id": "53",
+        "id": "cs-53",
         "name": "",
         "shortname": "fieldmortar",
         "count": "",
@@ -688,8 +623,7 @@
         "desc": ""
     },
     {
-        "item number": "item 54",
-        "id": "54",
+        "id": "cs-54",
         "name": "",
         "shortname": "vipertoothdagger",
         "count": "",
@@ -701,8 +635,7 @@
         "desc": ""
     },
     {
-        "item number": "item 55",
-        "id": "55",
+        "id": "cs-55",
         "name": "",
         "shortname": "ghostvipervenom",
         "count": "",
@@ -714,8 +647,7 @@
         "desc": ""
     },
     {
-        "item number": "item 56",
-        "id": "56",
+        "id": "cs-56",
         "name": "",
         "shortname": "clamptrap",
         "count": "",
@@ -727,8 +659,7 @@
         "desc": ""
     },
     {
-        "item number": "item 57",
-        "id": "57",
+        "id": "cs-57",
         "name": "",
         "shortname": "cleansedvoidheart",
         "count": "",
@@ -740,8 +671,7 @@
         "desc": ""
     },
     {
-        "item number": "item 58",
-        "id": "58",
+        "id": "cs-58",
         "name": "",
         "shortname": "dizzyingtincture",
         "count": "",
@@ -753,8 +683,7 @@
         "desc": ""
     },
     {
-        "item number": "item 59",
-        "id": "59",
+        "id": "cs-59",
         "name": "",
         "shortname": "drakesblood",
         "count": "",
@@ -766,8 +695,7 @@
         "desc": ""
     },
     {
-        "item number": "item 60",
-        "id": "60",
+        "id": "cs-60",
         "name": "",
         "shortname": "manamedicine",
         "count": "",
@@ -779,8 +707,7 @@
         "desc": ""
     },
     {
-        "item number": "item 61",
-        "id": "61",
+        "id": "cs-61",
         "name": "",
         "shortname": "ashsteelgauntlets",
         "count": "",
@@ -792,8 +719,7 @@
         "desc": ""
     },
     {
-        "item number": "item 62",
-        "id": "62",
+        "id": "cs-62",
         "name": "",
         "shortname": "smogemitter",
         "count": "",
@@ -805,8 +731,7 @@
         "desc": ""
     },
     {
-        "item number": "item 63",
-        "id": "63",
+        "id": "cs-63",
         "name": "",
         "shortname": "luckyhorseshoe",
         "count": "",
@@ -818,8 +743,7 @@
         "desc": ""
     },
     {
-        "item number": "item 64",
-        "id": "64",
+        "id": "cs-64",
         "name": "",
         "shortname": "mildkindledtonic",
         "count": "",
@@ -831,8 +755,7 @@
         "desc": ""
     },
     {
-        "item number": "item 65",
-        "id": "65",
+        "id": "cs-65",
         "name": "",
         "shortname": "rescueaxe",
         "count": "",
@@ -844,8 +767,7 @@
         "desc": ""
     },
     {
-        "item number": "item 66",
-        "id": "66",
+        "id": "cs-66",
         "name": "",
         "shortname": "ironmalleus",
         "count": "",
@@ -857,8 +779,7 @@
         "desc": ""
     },
     {
-        "item number": "item 67",
-        "id": "67",
+        "id": "cs-67",
         "name": "",
         "shortname": "pikehook",
         "count": "",
@@ -870,8 +791,7 @@
         "desc": ""
     },
     {
-        "item number": "item 68",
-        "id": "68",
+        "id": "cs-68",
         "name": "",
         "shortname": "explosivetonic",
         "count": "",
@@ -883,8 +803,7 @@
         "desc": ""
     },
     {
-        "item number": "item 69",
-        "id": "69",
+        "id": "cs-69",
         "name": "",
         "shortname": "spicykindledtonic",
         "count": "",
@@ -896,8 +815,7 @@
         "desc": ""
     },
     {
-        "item number": "item 70",
-        "id": "70",
+        "id": "cs-70",
         "name": "",
         "shortname": "utilityrope",
         "count": "",
@@ -909,8 +827,7 @@
         "desc": ""
     },
     {
-        "item number": "item 71",
-        "id": "71",
+        "id": "cs-71",
         "name": "",
         "shortname": "fireproofhelm",
         "count": "",
@@ -922,8 +839,7 @@
         "desc": ""
     },
     {
-        "item number": "item 72",
-        "id": "72",
+        "id": "cs-72",
         "name": "",
         "shortname": "woodenladder",
         "count": "",
@@ -935,8 +851,7 @@
         "desc": ""
     },
     {
-        "item number": "item 73",
-        "id": "73",
+        "id": "cs-73",
         "name": "",
         "shortname": "medicalkit",
         "count": "",
@@ -948,8 +863,7 @@
         "desc": ""
     },
     {
-        "item number": "item 74",
-        "id": "74",
+        "id": "cs-74",
         "name": "",
         "shortname": "mildbolsteringtonic",
         "count": "",
@@ -961,8 +875,7 @@
         "desc": ""
     },
     {
-        "item number": "item 75",
-        "id": "75",
+        "id": "cs-75",
         "name": "",
         "shortname": "medallionoftheoak",
         "count": "",
@@ -974,8 +887,7 @@
         "desc": ""
     },
     {
-        "item number": "item 76",
-        "id": "76",
+        "id": "cs-76",
         "name": "",
         "shortname": "cauterizingknife",
         "count": "",
@@ -987,8 +899,7 @@
         "desc": ""
     },
     {
-        "item number": "item 77",
-        "id": "77",
+        "id": "cs-77",
         "name": "",
         "shortname": "traumakit",
         "count": "",
@@ -1000,8 +911,7 @@
         "desc": ""
     },
     {
-        "item number": "item 78",
-        "id": "78",
+        "id": "cs-78",
         "name": "",
         "shortname": "scrollofcharisma",
         "count": "",
@@ -1013,8 +923,7 @@
         "desc": ""
     },
     {
-        "item number": "item 79",
-        "id": "79",
+        "id": "cs-79",
         "name": "",
         "shortname": "rescueshield",
         "count": "",
@@ -1026,8 +935,7 @@
         "desc": ""
     },
     {
-        "item number": "item 80",
-        "id": "80",
+        "id": "cs-80",
         "name": "",
         "shortname": "scrollofprotection",
         "count": "",
@@ -1039,8 +947,7 @@
         "desc": ""
     },
     {
-        "item number": "item 81",
-        "id": "81",
+        "id": "cs-81",
         "name": "",
         "shortname": "spicybolsteringtonic",
         "count": "",
@@ -1052,8 +959,7 @@
         "desc": ""
     },
     {
-        "item number": "item 82",
-        "id": "82",
+        "id": "cs-82",
         "name": "",
         "shortname": "scrollofcommand",
         "count": "",
@@ -1065,8 +971,7 @@
         "desc": ""
     },
     {
-        "item number": "item 83",
-        "id": "83",
+        "id": "cs-83",
         "name": "",
         "shortname": "sphereofcurrents",
         "count": "",
@@ -1078,8 +983,7 @@
         "desc": ""
     },
     {
-        "item number": "item 84",
-        "id": "84",
+        "id": "cs-84",
         "name": "",
         "shortname": "slugcrossbow",
         "count": "",
@@ -1091,8 +995,7 @@
         "desc": ""
     },
     {
-        "item number": "item 85",
-        "id": "85",
+        "id": "cs-85",
         "name": "",
         "shortname": "refinedslugcrossbow",
         "count": "",
@@ -1104,8 +1007,7 @@
         "desc": ""
     },
     {
-        "item number": "item 86",
-        "id": "86",
+        "id": "cs-86",
         "name": "",
         "shortname": "bulwarkbanner",
         "count": "",
@@ -1117,8 +1019,7 @@
         "desc": ""
     },
     {
-        "item number": "item 87",
-        "id": "87",
+        "id": "cs-87",
         "name": "",
         "shortname": "refinedbulwarkbanner",
         "count": "",
@@ -1130,8 +1031,7 @@
         "desc": ""
     },
     {
-        "item number": "item 88",
-        "id": "88",
+        "id": "cs-88",
         "name": "",
         "shortname": "remotebeetle",
         "count": "",
@@ -1143,8 +1043,7 @@
         "desc": ""
     },
     {
-        "item number": "item 89",
-        "id": "89",
+        "id": "cs-89",
         "name": "",
         "shortname": "refinedremotebeetle",
         "count": "",
@@ -1156,8 +1055,7 @@
         "desc": ""
     },
     {
-        "item number": "item 90",
-        "id": "90",
+        "id": "cs-90",
         "name": "",
         "shortname": "blazingboots",
         "count": "",
@@ -1169,8 +1067,7 @@
         "desc": ""
     },
     {
-        "item number": "item 91",
-        "id": "91",
+        "id": "cs-91",
         "name": "",
         "shortname": "refinedblazingboots",
         "count": "",
@@ -1182,8 +1079,7 @@
         "desc": ""
     },
     {
-        "item number": "item 92",
-        "id": "92",
+        "id": "cs-92",
         "name": "",
         "shortname": "viperblowgun",
         "count": "",
@@ -1195,8 +1091,7 @@
         "desc": ""
     },
     {
-        "item number": "item 93",
-        "id": "93",
+        "id": "cs-93",
         "name": "",
         "shortname": "refinedviperblowgun",
         "count": "",
@@ -1208,8 +1103,7 @@
         "desc": ""
     },
     {
-        "item number": "item 94",
-        "id": "94",
+        "id": "cs-94",
         "name": "",
         "shortname": "froststone",
         "count": "",
@@ -1221,8 +1115,7 @@
         "desc": ""
     },
     {
-        "item number": "item 95",
-        "id": "95",
+        "id": "cs-95",
         "name": "",
         "shortname": "stormstone",
         "count": "",
@@ -1234,8 +1127,7 @@
         "desc": ""
     },
     {
-        "item number": "item 96",
-        "id": "96",
+        "id": "cs-96",
         "name": "",
         "shortname": "infernostone",
         "count": "",
@@ -1247,8 +1139,7 @@
         "desc": ""
     },
     {
-        "item number": "item 97",
-        "id": "97",
+        "id": "cs-97",
         "name": "",
         "shortname": "tremorstone",
         "count": "",
@@ -1260,8 +1151,7 @@
         "desc": ""
     },
     {
-        "item number": "item 98",
-        "id": "98",
+        "id": "cs-98",
         "name": "",
         "shortname": "brilliantstone",
         "count": "",
@@ -1273,8 +1163,7 @@
         "desc": ""
     },
     {
-        "item number": "item 99",
-        "id": "99",
+        "id": "cs-99",
         "name": "",
         "shortname": "darkstone",
         "count": "",
@@ -1286,8 +1175,7 @@
         "desc": ""
     },
     {
-        "item number": "item 100",
-        "id": "100",
+        "id": "cs-100",
         "name": "",
         "shortname": "wonderstone",
         "count": "",
@@ -1299,8 +1187,7 @@
         "desc": ""
     },
     {
-        "item number": "item aa01",
-        "id": "aa01",
+        "id": "cs-aa01",
         "name": "",
         "shortname": "rockspinebulwark",
         "count": "",
@@ -1312,8 +1199,7 @@
         "desc": ""
     },
     {
-        "item number": "item aa02",
-        "id": "aa02",
+        "id": "cs-aa02",
         "name": "",
         "shortname": "ghostshimmerhoney",
         "count": "",
@@ -1325,8 +1211,7 @@
         "desc": ""
     },
     {
-        "item number": "item aa03",
-        "id": "aa03",
+        "id": "cs-aa03",
         "name": "",
         "shortname": "steelsilkspinneret",
         "count": "",
@@ -1338,8 +1223,7 @@
         "desc": ""
     },
     {
-        "item number": "item qa01",
-        "id": "qa01",
+        "id": "cs-qa01",
         "name": "",
         "shortname": "powermodulator",
         "count": "",
@@ -1351,8 +1235,7 @@
         "desc": ""
     },
     {
-        "item number": "item qa02",
-        "id": "qa02",
+        "id": "cs-qa02",
         "name": "",
         "shortname": "steelpistonhammer",
         "count": "",
@@ -1364,8 +1247,7 @@
         "desc": ""
     },
     {
-        "item number": "item qa03",
-        "id": "qa03",
+        "id": "cs-qa03",
         "name": "",
         "shortname": "spiderclimbgloves",
         "count": "",
@@ -1377,8 +1259,7 @@
         "desc": ""
     },
     {
-        "item number": "item qa04",
-        "id": "qa04",
+        "id": "cs-qa04",
         "name": "",
         "shortname": "gravityinversionpads",
         "count": "",
@@ -1390,8 +1271,7 @@
         "desc": ""
     },
     {
-        "item number": "item qa05",
-        "id": "qa05",
+        "id": "cs-qa05",
         "name": "",
         "shortname": "delicatemodel",
         "count": "",
@@ -1403,8 +1283,7 @@
         "desc": ""
     },
     {
-        "item number": "item qa06",
-        "id": "qa06",
+        "id": "cs-qa06",
         "name": "",
         "shortname": "auscudecofthemakers",
         "count": "",
@@ -1416,8 +1295,7 @@
         "desc": ""
     },
     {
-        "item number": "item rm01",
-        "id": "rm01",
+        "id": "cs-rm01",
         "name": "",
         "shortname": "serratededge",
         "count": "",
@@ -1429,8 +1307,7 @@
         "desc": ""
     },
     {
-        "item number": "item rm02",
-        "id": "rm02",
+        "id": "cs-rm02",
         "name": "",
         "shortname": "grislyboots",
         "count": "",
@@ -1442,8 +1319,7 @@
         "desc": ""
     },
     {
-        "item number": "item rm03",
-        "id": "rm03",
+        "id": "cs-rm03",
         "name": "",
         "shortname": "terrorscalesaber",
         "count": "",
@@ -1455,8 +1331,7 @@
         "desc": ""
     },
     {
-        "item number": "item rm04",
-        "id": "rm04",
+        "id": "cs-rm04",
         "name": "",
         "shortname": "terrorscalecrossblades",
         "count": "",
@@ -1468,8 +1343,7 @@
         "desc": ""
     },
     {
-        "item number": "item rm05",
-        "id": "rm05",
+        "id": "cs-rm05",
         "name": "",
         "shortname": "riteofruin",
         "count": "",
@@ -1481,8 +1355,7 @@
         "desc": ""
     },
     {
-        "item number": "item rm06",
-        "id": "rm06",
+        "id": "cs-rm06",
         "name": "",
         "shortname": "savagecuirass",
         "count": "",
