@@ -239,7 +239,7 @@ export default {
     "Forgotten Circles": "Forgotten Circles",
     "fc": "Forgotten Circles",
     "Jaws of the Lion": "Pranken des Löwen",
-    "jotl": "Pranken des Löwen",
+    "jotl": "PdL",
     "Availability": "Availability",
     "Sticker": "Sticker",
     "State": "Staat",
@@ -282,7 +282,7 @@ export default {
     "LOOT": "BEUTE",
     "TELEPORT": "TELEPORTIEREN",
     "Doom": "Doom",
-    "Augment": "Augment",
+    "Augment": "Verbesserung",
     "Song": "Lied",
     "Command": "Befehl",
     "Loot": "Beute",
@@ -978,7 +978,7 @@ export default {
             "name": "Unerwartete Besucher",
             "rewards": [
                 "je 10 Erfahrung",
-                "Fügt Stadt- sowie Wegereignis 82 den enstsprechenden Decks hinzu"
+                "Fügt Stadt- sowie Weg-Ereignis 82 den enstsprechenden Decks hinzu"
             ]
         },
         "fc-97": {
@@ -1012,25 +1012,25 @@ export default {
             "rewards": [
                 [
                     "je 5 Gold",
-                    "“Minor Antidote” (Gegenstand 153)"
+                    "“Kleines Gegengift” (Gegenstand 153)"
                 ],
                 [
-                    "10 gold each",
+                    "je 10 Gold",
                     "+1 Wohlstand",
-                    "“Minor Antidote” (Gegenstand 153)"
+                    "“Kleines Gegengift” (Gegenstand 153)"
                 ]
             ]
         },
         "fc-100": {
             "name": "Getrieberaum",
             "rewards": [
-                "Choose to gain one of the following sets: “Telescopic Lens” (Gegenstand 059) and “Ancient Drill” (Gegenstand 112), OR “Curious Gear” (Gegenstand 125) and “Remote Spider” (Gegenstand 126)"
+                "Wählt eines der folgenden Sets: “Teleskoplinse” (Gegenstand 59) und “Alter Bohrer” (Gegenstand 112), ODER “Zahnrad” (Gegenstand 125) und “Mechanische Spinne” (Gegenstand 126)"
             ]
         },
         "fc-101": {
             "name": "Verhüllte Krypta",
             "rewards": [
-                "20 collective gold",
+                "20 gemeinsames Gold",
                 "+1 Ansehen",
                 "+1 Wohlstand"
             ]
@@ -1038,37 +1038,37 @@ export default {
         "fc-102": {
             "name": "Bazar des Wissens",
             "rewards": [
-                "15 experience each",
-                "If no more than 2+C inhabitants were intimidated: +2 Ansehen Otherwise: -2 Ansehen"
+                "je 15 Erfahrung",
+                "Wenn nicht mehr als 2+C Einwohner eingeschüchtert wurden: +2 Ansehen Ansonsten: -2 Ansehen"
             ]
         },
         "fc-103": {
             "name": "Wo Bedarf ist",
             "rewards": [
                 "+2 Wohlstand",
-                "Add City Event 87 to the deck"
+                "Fügt Stadt-Ereignis 87 dem Stadt-Ereignis-Deck hinzu"
             ]
         },
         "fc-104": {
             "name": "Klaffende Wunde",
             "rewards": [
-                "“Major Mana Potion” (Gegenstand 048)"
+                "“Großer Manatrank” (Gegenstand 048)"
             ]
         },
         "fc-105": {
             "name": "Kultische Monstrositäten",
             "rewards": [
-                "“Major Antidote” (Gegenstand 154)"
+                "“Großes Gegengift” (Gegenstand 154)"
             ]
         },
         "fc-106": {
             "name": "Komplexitäten",
             "rewards": [
                 [
-                    "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements"
+                    "je 175 Gold, das Geld muss sofort für eine {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, oder {DARK} Verbesserung ausgegeben werden."
                 ],
                 [
-                    "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements",
+                    "je 175 Gold, das Geld muss sofort für eine {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, oder {DARK} Verbesserung ausgegeben werden.",
                     "+ 1 Wohlstand"
                 ]
             ]
@@ -1076,47 +1076,47 @@ export default {
         "fc-107": {
             "name": "Mechanisches Genie",
             "rewards": [
-                "5 experience each"
+                "je 5 Erfahrung"
             ]
         },
         "fc-108": {
             "name": "Prolog des Endes",
             "rewards": [
                 [
-                    "“Curseward Armor” (Gegenstand 155)"
+                    "“Fluchschutzrüstung” (Gegenstand 155)"
                 ],
                 [
-                    "2 “Throwing Axes” (Gegenstand 161)"
+                    "2x “Wurfaxt” (Gegenstand 161)"
                 ],
                 [
-                    "“Curseward Armor” (Gegenstand 155)",
-                    "2 “Throwing Axes” (Gegenstand 161)"
+                    "“Fluchschutzrüstung” (Gegenstand 155)",
+                    "2x “Wurfaxt” (Gegenstand 161)"
                 ]
             ]
         },
         "fc-109": {
             "name": "Epilog eines Krieges",
             "rewards": [
-                "10 experience each",
-                "“Protective Charm” (Gegenstand 052)"
+                "je 10 Erfahrung",
+                "“Schutzamulett” (Gegenstand 52)"
             ]
         },
         "fc-110": {
             "name": "Eine runde Sache",
             "rewards": [
-                "“Crystal Tiara” (Gegenstand 163)"
+                "“Kristalldiadem” (Gegenstand 163)"
             ]
         },
         "fc-111": {
             "name": "Gelockerte Fesseln",
             "rewards": [
                 [
-                    "5 experience each",
-                    "Add Rift Event 16 to the deck. Instead of shuffling this event into the whole deck, shuffle it into the top 3 cards"
+                    "je 5 Erfahrung",
+                    "Füge Spalt-Ereignis 16 dem Deck hinzu. Mische das Ereignis in die obersten drei Karten des Decks."
                 ],
                 [
-                    "12 experience each",
-                    "1 ✓ each"
+                    "je 12 Erfahrung",
+                    "je 1 ✓"
                 ]
             ]
         },
@@ -1124,28 +1124,28 @@ export default {
             "name": "Auf den Grund",
             "rewards": [
                 [
-                    "10 gold each",
-                    "5 experience each"
+                    "je 10 Gold",
+                    "je 5 Erfahrung"
                 ],
                 [
-                    "25 collective gold",
-                    "5 experience each",
-                    "1 ✓ each"
+                    "25 gemeinsames Gold",
+                    "je 5 Erfahrung",
+                    "je 1 ✓"
                 ]
             ]
         },
         "fc-113": {
             "name": "Verlorener Faden",
             "rewards": [
-                "135 gold each",
-                "This money must immediately be spent on any Move {MOVE}, Range {RANGE} or Jump {JUMP} enhancements",
+                "je 135 Gold",
+                "Dieses Geld muss sofort für eine Bewegung {MOVE}, Reichweite {RANGE} oder Springen {JUMP} Verbesserung ausgegeben werden.",
                 "+1 Wohlstand"
             ]
         },
         "fc-114": {
             "name": "In der Schwebe",
             "rewards": [
-                "Party Boon: Additional costs of enhancing an ability card based on the level of the card are now reduced by 5 gold per level."
+                "Gruppen-Segen: Zusätzliche Kosten für die Verbesserung einer Fähigkeitskarte, die auf der Stufe der Karte basieren, werden nun um 5 Gold pro Stufe reduziert."
             ]
         },
         "fc-115": {
@@ -1153,20 +1153,20 @@ export default {
             "rewards": [
                 "+3 Ansehen",
                 "+1 Wohlstand",
-                "Retire the Aesther Diviner {DR}",
-                "Add City and Road Events 83 to their respective decks"
+                "Schicke die Aesther-Prophetin {DR} in den Ruhestand",
+                "Fügt Stadt- und Weg-Ereignis 83 den entsprechenden Decks hinzu."
             ]
         },
         "fc-200": {
             "name": "Turm zu den Sternen",
             "rewards": [
-                "15 gold each",
-                "1 ✓ each",
-                "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
+                "je 15 Gold",
+                "je 1 ✓",
+                "Alle Charaktere können eine neue Karte ihrer Klasse zu ihrem aktiven Kartenpool hinzufügen. Die gewählte Karte muss eine Stufe haben, die gleich oder kleiner als die Stufe des Charakters minus 2 ist."
             ]
         },
         "fc-201": {
-            "name": "Forecast of the Inevitable",
+            "name": "Vorhersage des Unvermeidlichen",
             "rewards": [
                 "“Wahrsagebecken” (Gegenstand 164)"
             ]
@@ -2819,7 +2819,7 @@ export default {
             "name": "Erhalte “Großer Arzneitrank” (Gegenstand 090)"
         },
         "fc-78": {
-            "name": "“Ancient Bow” (Item 157)"
+            "name": "Erhalte “Ancient Bow” (Item 157)"
         },
         "fc-79": {
             "name": "Erhalte “Falcon Figurine” (Item 157)"
