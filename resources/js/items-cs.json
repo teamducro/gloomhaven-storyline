@@ -334,7 +334,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, force an enemy within Rang 5 to perform a “{MOVE} 2, Jump” ability with you controlling the ability."
+        "desc": "During your turn, force an enemy within Rang 5 to perform a “{MOVE} 2, {JUMP}” ability with you controlling the ability."
     },
     {
         "id": "cs-33",
@@ -497,7 +497,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "",
-        "desc": "While {Mounted} on a summon, you can aply your small items item effects to the summon instead."
+        "desc": "While {MOUNTED} on a summon, you can aply your small items item effects to the summon instead."
     },
     {
         "id": "cs-48",
@@ -508,7 +508,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, {anyX} to peforme one of the following: {MOVE} 2, Jump, {WIND} | {HEAL} 3, Self, {LIGHT} | {ATTACK} 2, {FIRE}."
+        "desc": "During your turn, {ANY_X} to peforme one of the following: {MOVE} 2, {JUMP}, {WIND} | {HEAL} 3, Self, {LIGHT} | {ATTACK} 2, {FIRE}."
     },
     {
         "id": "cs-49",
@@ -530,7 +530,7 @@
         "slot": "Body",
         "source": "",
         "spent": true,
-        "desc": "During your turn, when you {anyX} an element, do not move the consumed element to the Inter column."
+        "desc": "During your turn, when you {ANY_X} an element, do not move the consumed element to the Inter column."
     },
     {
         "id": "cs-51",
@@ -625,7 +625,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, remove all positive conditions from all enemies within {RANGE} 2.  This can be used on enemies that have {INVISIBLE}."
+        "desc": "During your turn, remove all positive conditions from all enemies within {RANGE} 2. This can be used on enemies that have {INVISIBLE}."
     },
     {
         "id": "cs-60",
@@ -636,7 +636,7 @@
         "slot": "Small Item",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform “{HEAL} 5, Self”. {any}"
+        "desc": "During your turn, peform “{HEAL} 5, Self”. {ANY}"
     },
     {
         "id": "cs-61",
@@ -723,7 +723,7 @@
         "cost": 35,
         "slot": "Small Item",
         "source": "",
-        "desc": "During your turn, peform: {WOUND} {RANGE} 3 {multi_attack.cone_1_1}"
+        "desc": "During your turn, peform: {WOUND} {RANGE} 3 {AOE.CONE_1_1}"
     },
     {
         "id": "cs-69",
@@ -972,7 +972,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Move ability, add Jump and double the value of the movement."
+        "desc": "During your Move ability, add {JUMP} and double the value of the movement."
     },
     {
         "id": "cs-92",
@@ -1071,7 +1071,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {any}. When there are two tokens on this card it is consumed {CONSUMED}."
+        "desc": "During your turn you may place one character token on this card to generate: {ANY}. When there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-aa01",
