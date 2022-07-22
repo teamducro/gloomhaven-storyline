@@ -224,7 +224,7 @@
         "cost": 30,
         "slot": "Head",
         "source": "",
-        "desc": "When attacked, consider any {modifier_plus_1} modifier card the enemy draws to be a {modifier_zero_circle} instead."
+        "desc": "When attacked, consider any {+1_WHITE} modifier card the enemy draws to be a {+0_WHITE} instead."
     },
     {
         "id": "cs-23",
@@ -796,7 +796,7 @@
         "slot": "Head",
         "source": "",
         "spent": true,
-        "desc": "When attacked this round, you and all adjacent allies consider any negative and {modifier_no_damage} attack modifiers drawn to be {modifier_zero_circle} instead."
+        "desc": "When attacked this round, you and all adjacent allies consider any negative and {modifier_no_damage} attack modifiers drawn to be {+0_WHITE} instead."
     },
     {
         "id": "cs-76",
