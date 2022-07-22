@@ -321,7 +321,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform \"Heal 5, POISON, Self\"."
+        "desc": "During your turn, peform “Heal 5, POISON, Self”."
     },
     {
         "id": "cs-30",
@@ -354,7 +354,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, force an enemy within Rang 5 to perform a \"Move 2, Jump\" ability with you controlling the ability."
+        "desc": "During your turn, force an enemy within Rang 5 to perform a “Move 2, Jump”ability with you controlling the ability."
     },
     {
         "id": "cs-33",
@@ -431,7 +431,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform \"Attack 2, Range 3, {PIERCE} 2\"."
+        "desc": "During your turn, peform “Attack 2, Range 3, {PIERCE} 2”."
     },
     {
         "id": "cs-40",
@@ -463,7 +463,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "Whenever you given an ally a {Prayer} ability card, that ally may peform \"Heal 2, Self\"."
+        "desc": "Whenever you given an ally a {Prayer} ability card, that ally may peform “Heal 2, Self”."
     },
     {
         "id": "cs-43",
@@ -496,7 +496,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform \"PULL 2, Self toward one enemy within Range 3\"."
+        "desc": "During your turn, peform “PULL 2, Self toward one enemy within Range 3”."
     },
     {
         "id": "cs-46",
@@ -656,7 +656,7 @@
         "slot": "Small Item",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform \"Heal 5, Self\". {any}"
+        "desc": "During your turn, peform “Heal 5, Self”. {any}"
     },
     {
         "id": "cs-61",
@@ -764,7 +764,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform \"PULL 2, Target one ally or enemy within Range 3.\""
+        "desc": "During your turn, peform “PULL 2, Target one ally or enemy within Range 3.”"
     },
     {
         "id": "cs-71",
@@ -774,7 +774,7 @@
         "cost": 50,
         "slot": "Head",
         "source": "",
-        "desc": "Whenever you would suffer damage from {WOUND} instead perform \"Heal 1, Self\""
+        "desc": "Whenever you would suffer damage from {WOUND} instead perform “Heal 1, Self”"
     },
     {
         "id": "cs-72",
@@ -794,7 +794,7 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "",
-        "desc": "Whenever you use the default top action of an ability card, you may perform a \"Heal 2, Range 1\" ability instead of an \"Attack 2\" ability."
+        "desc": "Whenever you use the default top action of an ability card, you may perform a “Heal 2, Range 1” ability instead of an “Attack 2” ability."
     },
     {
         "id": "cs-74",
@@ -1003,7 +1003,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, you may {earthX} to perform \"Attack 1, Range 3, POISON\"."
+        "desc": "During your turn, you may {earthX} to perform “Attack 1, Range 3, POISON”."
     },
     {
         "id": "cs-93",
@@ -1014,7 +1014,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, perform \"Attack 1, Range 4, POISON\". You may {earthX} to ADD TARGET."
+        "desc": "During your turn, perform “Attack 1, Range 4, POISON”. You may {earthX} to ADD TARGET."
     },
     {
         "id": "cs-94",
@@ -1243,7 +1243,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your attack ability gain {WOUND} to add +3 Attack to one attack. If you kill the target perform \"Heal 3, Self\"."
+        "desc": "During your attack ability gain {WOUND} to add +3 Attack to one attack. If you kill the target perform “Heal 3, Self”."
     },
     {
         "id": "cs-rm06",
