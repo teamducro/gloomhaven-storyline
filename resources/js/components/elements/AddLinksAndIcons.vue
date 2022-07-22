@@ -110,11 +110,15 @@ export default {
                     '{ICE_X}': '<webp src="/img/icons/elements/iceX.png" width="20" class="inline"/>',
                     '{WIND_X}': '<webp src="/img/icons/elements/windX.png" width="20" class="inline"/>',
                     '{LIGHT_X}': '<webp src="/img/icons/elements/lightX.png" width="20" class="inline"/>',
+                    
                     '{AOE.CLEAVE_0_1}': '<webp src="/img/icons/aoe/cleave_0_1.png" width="40" class="inline"/>',
                     '{AOE.CONE_0_1}': '<webp src="/img/icons/aoe/cone_0_1.png" width="40" class="inline"/>',
                     '{AOE.CONE_1_1}': '<webp src="/img/icons/aoe/cone_1_1.png" width="40" class="inline"/>',
                     '{AOE.CUBE_2_2}': '<webp src="/img/icons/aoe/cube_2_2.png" width="40" class="inline"/>',
                     '{AOE.LINE_0_1_1}': '<webp src="/img/icons/aoe/line_0_1_1.png" width="60" class="inline"/>',
+                    '{AOE.LINE_1_1}': '<webp src="/img/icons/aoe/line_1_1.png" width="60" class="inline"/>',
+                    '{AOE.LINE_1_1}': '<webp src="/img/icons/aoe/line_1_1.png" width="60" class="inline"/>',
+                    
                     '{STRENGTHEN}': this.$t('STRENGTHEN') + ' <webp src="/img/icons/status/strengthen.png" width="20" class="inline"/>',
                     '{PUSH}': this.$t('PUSH') + ' <webp src="/img/icons/status/push.png" width="20" class="inline"/>',
                     '{PULL}': this.$t('PULL') + ' <webp src="/img/icons/status/pull.png" width="20" class="inline"/>',

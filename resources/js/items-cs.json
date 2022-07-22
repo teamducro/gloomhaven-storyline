@@ -897,7 +897,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your single-target ranged Attack ability, turn the attack into the following: {multi_attack.line_1_1}."
+        "desc": "During your single-target ranged Attack ability, turn the attack into the following: {AOE.line_1_1}."
     },
     {
         "id": "cs-85",
@@ -908,7 +908,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your single-target ranged Attack ability, add +1 {ATTACK} and turn the attack into the following: {multi_attack.line_1_1}."
+        "desc": "During your single-target ranged Attack ability, add +1 {ATTACK} and turn the attack into the following: {AOE.line_1_1}."
     },
     {
         "id": "cs-86",
