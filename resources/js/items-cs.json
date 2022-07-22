@@ -431,7 +431,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform \"Attack 2, Range 3, PIERCE 2\"."
+        "desc": "During your turn, peform \"Attack 2, Range 3, {PIERCE} 2\"."
     },
     {
         "id": "cs-40",
@@ -485,7 +485,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your ranged Attack ability, add PIERCE 2 to one attack."
+        "desc": "During your ranged Attack ability, add {PIERCE} 2 to one attack."
     },
     {
         "id": "cs-45",
@@ -571,7 +571,7 @@
         "slot": "Two Hands",
         "source": "",
         "consumed": true,
-        "desc": "During your melee Attack ability, add +1 Attack and WOUND to all your attacks. {FIRE}"
+        "desc": "During your melee Attack ability, add +1 Attack and {WOUND} to all your attacks. {FIRE}"
     },
     {
         "id": "cs-53",
@@ -581,7 +581,7 @@
         "cost": 50,
         "slot": "Small Item",
         "source": "",
-        "desc": "Once each turn, during your turn, you may remove one condition from an adjacent figure and place that condition on this card if it is not already on this card. During your turn, one adjacent figure gains all conditions on this card, then consume {consumed} this item."
+        "desc": "Once each turn, during your turn, you may remove one condition from an adjacent figure and place that condition on this card if it is not already on this card. During your turn, one adjacent figure gains all conditions on this card, then consume {CONSUMED} this item."
     },
     {
         "id": "cs-54",
@@ -623,7 +623,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "You are immune to MUDDLE. At the end of each round, if you have WOUND gain REGENERATE."
+        "desc": "You are immune to MUDDLE. At the end of each round, if you have {WOUND} gain REGENERATE."
     },
     {
         "id": "cs-58",
@@ -733,7 +733,7 @@
         "slot": "Two Hands",
         "source": "",
         "spent": true,
-        "desc": "During your single-target melee Attack ability, add PIERCE 2 and PULL 1 to the attack and you may target one enemy within 2 hexes."
+        "desc": "During your single-target melee Attack ability, add {PIERCE} 2 and PULL 1 to the attack and you may target one enemy within 2 hexes."
     },
     {
         "id": "cs-68",
@@ -743,7 +743,7 @@
         "cost": 35,
         "slot": "Small Item",
         "source": "",
-        "desc": "During your turn, peform: WOUND Range 3 {multi_attack.cone_1_1}"
+        "desc": "During your turn, peform: {WOUND} Range 3 {multi_attack.cone_1_1}"
     },
     {
         "id": "cs-69",
@@ -774,7 +774,7 @@
         "cost": 50,
         "slot": "Head",
         "source": "",
-        "desc": "Whenever you would suffer damage from WOUND instead perform \"Heal 1, Self\""
+        "desc": "Whenever you would suffer damage from {WOUND} instead perform \"Heal 1, Self\""
     },
     {
         "id": "cs-72",
@@ -827,7 +827,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Heal ability, add +3 Heal and WOUND to each Heal."
+        "desc": "During your Heal ability, add +3 Heal and {WOUND} to each Heal."
     },
     {
         "id": "cs-77",
@@ -838,7 +838,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your Heal ability, double the value of each Heal. If this Heal ability removes WOUND, this item is spent instead of consumed."
+        "desc": "During your Heal ability, double the value of each Heal. If this Heal ability removes {WOUND}, this item is spent instead of consumed."
     },
     {
         "id": "cs-78",
@@ -1025,7 +1025,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {ICE}. When there are two tokens on this card it is consumed {consumed}."
+        "desc": "During your turn you may place one character token on this card to generate: {ICE}. When there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-95",
@@ -1036,7 +1036,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {WIND}. When there are two tokens on this card it is consumed {consumed}."
+        "desc": "During your turn you may place one character token on this card to generate: {WIND}. When there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-96",
@@ -1047,7 +1047,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {FIRE}. When there are two tokens on this card it is consumed {consumed}."
+        "desc": "During your turn you may place one character token on this card to generate: {FIRE}. When there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-97",
@@ -1058,7 +1058,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {EARTH}. When there are two tokens on this card it is consumed {consumed}."
+        "desc": "During your turn you may place one character token on this card to generate: {EARTH}. When there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-98",
@@ -1069,7 +1069,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {LIGHT}. When there are two tokens on this card it is consumed {consumed}."
+        "desc": "During your turn you may place one character token on this card to generate: {LIGHT}. When there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-99",
@@ -1080,7 +1080,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {DARK}. When there are two tokens on this card it is consumed {consumed}."
+        "desc": "During your turn you may place one character token on this card to generate: {DARK}. When there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-100",
@@ -1091,7 +1091,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {any}. When there are two tokens on this card it is consumed {consumed}."
+        "desc": "During your turn you may place one character token on this card to generate: {any}. When there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-aa01",
@@ -1199,7 +1199,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your melee attack ability, add RUPTURE to one attack."
+        "desc": "During your melee attack ability, add {RUPTURE} to one attack."
     },
     {
         "id": "cs-rm02",
@@ -1221,7 +1221,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your melee attack ability, add +1 Attack and PIERCE 2 to one attack targeting an enemy with WOUND or RUPTURE."
+        "desc": "During your melee attack ability, add +1 Attack and {PIERCE} 2 to one attack targeting an enemy with {WOUND} or {RUPTURE}."
     },
     {
         "id": "cs-rm04",
@@ -1243,7 +1243,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your attack ability gain WOUND to add +3 Attack to one attack. If you kill the target perform \"Heal 3, Self\"."
+        "desc": "During your attack ability gain {WOUND} to add +3 Attack to one attack. If you kill the target perform \"Heal 3, Self\"."
     },
     {
         "id": "cs-rm06",
@@ -1254,6 +1254,6 @@
         "slot": "Body",
         "source": "",
         "consumed": true,
-        "desc": "The next two times you would lose a card from your hand to negate suffering damage, discard it instead and gain WOUND."
+        "desc": "The next two times you would lose a card from your hand to negate suffering damage, discard it instead and gain {WOUND}."
     }
 ]
