@@ -1157,7 +1157,15 @@
         "cost": 50,
         "slot": "Small Item",
         "source": "",
-        "desc": "You Loot {LOOT} each hex this summon enters. You control this summon's actions."
+        "consumed": true,
+        "summon": {
+            "hp": 1,
+            "move": 1,
+            "attack": 0,
+            "range": 0
+        },
+        "desc": "Summon Scrap Collector\nYou Loot {LOOT} each hex this summon enters.\nYou control this summon's actions.",
+        "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
     },
     {
         "id": "cs-qa06",
