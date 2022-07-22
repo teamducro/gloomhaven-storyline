@@ -133,10 +133,23 @@ export default {
                     '{LOOT 1}': '“' + this.$t('Loot') + ' <webp src="/img/icons/general/loot_white.png" width="20" class="inline"/> 1”',
                     '{LOOT 2}': '“' + this.$t('Loot') + ' <webp src="/img/icons/general/loot_white.png" width="20" class="inline"/> 2”',
                     '{TELEPORT}': this.$t('Teleport') + ' <webp src="/img/icons/general/teleport.png" width="20" class="inline"/>',
-                    '{DOOM}': '<span class="text-characters-ds">' + this.$t('Doom') + '</span>',
+                    
                     '{AUGMENT}': '<span class="text-characters-mt">' + this.$t('Augment') + '</span>',
-                    '{SONG}': '<span class="text-characters-ss">' + this.$t('Song') + '</span>',
+                    '{COLONY}': '<span class="text-characters-aa">' + this.$t('Colony') + '</span>',
                     '{COMMAND}': '<span class="text-characters-bt">' + this.$t('Command') + '</span>',
+                    '{DOOM}': '<span class="text-characters-ds">' + this.$t('Doom') + '</span>',
+                    '{GLOW}': '<span class="text-characters-lu">' + this.$t('Glow') + '</span>',
+                    '{LADDER}': '<span class="text-characters-fk">' + this.$t('Ladder') + '</span>',
+                    '{MOUNTED}': '<span class="text-characters-ct">' + this.$t('Mounted') + '</span>',
+                    '{PROJECTILE}': '<span class="text-characters-bm">' + this.$t('Projectile') + '</span>',
+                    '{SATED}': '<span class="text-characters-rm">' + this.$t('Sated') + '</span>',
+                    '{SHACKLE}': '<span class="text-characters-cg">' + this.$t('Shackle') + '</span>',
+                    '{SONG}': '<span class="text-characters-ss">' + this.$t('Song') + '</span>',
+                    '{SPIRIT}': '<span class="text-characters-sp">' + this.$t('Spirit') + '</span>',
+                    '{VOID}': '<span class="text-characters-ho">' + this.$t('Void') + '</span>',
+                    '{VOIDSIGHT}': '<span class="text-characters-ho">' + this.$t('Voidsight') + '</span>',
+                    
+
                     '{-2_WHITE}': '<webp src="/img/icons/perks/-2_white.png" width="20" class="inline"/>',
                     '{-1_WHITE}': '<webp src="/img/icons/perks/-1_white.png" width="20" class="inline"/>',
                     '{+0_WHITE}': '<webp src="/img/icons/perks/+0_white.png" width="20" class="inline"/>',
@@ -148,6 +161,7 @@ export default {
                     '{AGAIN}': '<webp src="/img/icons/perks/again_white.png" width="20" class="inline"/>',
                     '{NOTE_115}': '<webp src="/img/notes/note-115.png" width="421"/>',
                     '{NOTE_42}': '<webp src="/img/notes/note-42.png" width="421"/>',
+
                     '{BODY}': '<webp src="/img/icons/equipment/body.png" alt="body" width="20"/>',
                     '{HEAD}': '<webp src="/img/icons/equipment/head.png" alt="head" width="20"/>',
                     '{LEGS}': '<webp src="/img/icons/equipment/legs.png" alt="legs" width="20"/>',
