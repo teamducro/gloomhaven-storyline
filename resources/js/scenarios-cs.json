@@ -1,0 +1,43 @@
+{
+    "scenarios": [
+        {
+            "root": true,
+            "id": 1,
+            "game": "gh",
+            "name": "Black Barrow",
+            "coordinates": {
+                "name": "G-10",
+                "x": 45.19126,
+                "y": 41.6
+            },
+            "pages": [
+                "gh/3"
+            ],
+            "chapter_id": 1,
+            "links_to": [
+                2
+            ],
+            "quests": [
+                1
+            ],
+            "treasures": {
+                "7": "Random Side Scenario"
+            },
+            "achievements_awarded": [
+                "PFS"
+            ]
+        }
+    ],
+    "chapters": [
+        {
+            "id": 1,
+            "name": "Intro"
+        }
+    ],
+    "regions": [
+        {
+            "id": 1,
+            "name": "Gloomhaven"
+        }
+    ]
+}
