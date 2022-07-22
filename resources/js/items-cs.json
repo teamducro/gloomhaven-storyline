@@ -234,8 +234,9 @@
         "cost": 20,
         "slot": "Head",
         "source": "",
-        "desc": "Gain Advantage on all attacks you peform while INVISIBLE."      },
-      {
+        "desc": "Gain Advantage on all attacks you peform while INVISIBLE."
+    },
+    {
         "id": "cs-22",
         "name": "Steel Helmet",
         "shortname": "steelhelmet",
@@ -243,8 +244,9 @@
         "cost": 30,
         "slot": "Head",
         "source": "",
-        "desc": "When attacked, consider any {modifier_plus_1} modifier card the enemy draws to be a {modifier_zero_circle} instead."      },
-      {
+        "desc": "When attacked, consider any {modifier_plus_1} modifier card the enemy draws to be a {modifier_zero_circle} instead."
+    },
+    {
         "id": "cs-23",
         "name": "Woven Plate Armor",
         "shortname": "wovenplatearmor",
@@ -253,8 +255,9 @@
         "slot": "Body",
         "source": "",
         "spent": true,
-        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain Shield 2 for the attack."      },
-      {
+        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain Shield 2 for the attack."
+    },
+    {
         "id": "cs-24",
         "name": "Mantle of Purity",
         "shortname": "mantleofpurity",
@@ -263,8 +266,9 @@
         "slot": "Body",
         "source": "",
         "spent": true,
-        "desc": "When you would gain one or more negative conditions, prevent the conditions."      },
-      {
+        "desc": "When you would gain one or more negative conditions, prevent the conditions."
+    },
+    {
         "id": "cs-25",
         "name": "Boneclad Shawl",
         "shortname": "bonecladshawl",
@@ -273,8 +277,9 @@
         "slot": "Body",
         "source": "",
         "spent": true,
-        "desc": "On the next two attacks targeting you peformed by adjacent enemies, gain Retaliate 2 for the attack."      },
-      {
+        "desc": "On the next two attacks targeting you peformed by adjacent enemies, gain Retaliate 2 for the attack."
+    },
+    {
         "id": "cs-26",
         "name": "Silhouette Cuirass",
         "shortname": "silhouettecuirass",
@@ -283,8 +288,9 @@
         "slot": "Body",
         "source": "",
         "consumed": true,
-        "desc": "When your hit poit would be reduced to 0 by an attack targeting you, instead suffer no damage and gain INVISIBLE."      },
-      {
+        "desc": "When your hit poit would be reduced to 0 by an attack targeting you, instead suffer no damage and gain INVISIBLE."
+    },
+    {
         "id": "cs-27",
         "name": "Translocation Device",
         "shortname": "translocationdevice",
@@ -293,8 +299,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, swap positions with one enemy within Range 5."      },
-      {
+        "desc": "During your turn, swap positions with one enemy within Range 5."
+    },
+    {
         "id": "cs-28",
         "name": "Alchemy Potion",
         "shortname": "alchemypotion",
@@ -303,8 +310,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, replace one adjacent obstacle tile with a money token."      },
-      {
+        "desc": "During your turn, replace one adjacent obstacle tile with a money token."
+    },
+    {
         "id": "cs-29",
         "name": "Intoxicating Potion",
         "shortname": "intoxicatingpotion",
@@ -313,8 +321,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform \"Heal 5, POISON, Self\"."      },
-      {
+        "desc": "During your turn, peform \"Heal 5, POISON, Self\"."
+    },
+    {
         "id": "cs-30",
         "name": "Iron Snare",
         "shortname": "ironsnare",
@@ -323,8 +332,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, create one IMMOBILIZE trap in an empty hex within Range 3."      },
-      {
+        "desc": "During your turn, create one IMMOBILIZE trap in an empty hex within Range 3."
+    },
+    {
         "id": "cs-31",
         "name": "Concussion Mine",
         "shortname": "concussionmine",
@@ -333,8 +343,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, create one STUN trap in an empty hex within Range 3."      },
-      {
+        "desc": "During your turn, create one STUN trap in an empty hex within Range 3."
+    },
+    {
         "id": "cs-32",
         "name": "Shifting Compass",
         "shortname": "shiftingcompass",
@@ -343,8 +354,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, force an enemy within Rang 5 to perform a \"Move 2, Jump\" ability with you controlling the ability."      },
-      {
+        "desc": "During your turn, force an enemy within Rang 5 to perform a \"Move 2, Jump\" ability with you controlling the ability."
+    },
+    {
         "id": "cs-33",
         "name": "Battering Ram",
         "shortname": "batteringram",
@@ -353,8 +365,9 @@
         "slot": "Two Hands",
         "source": "",
         "spent": true,
-        "desc": "During your melee Attack ability, add MUDDLE and PUSH 2 to all your attacks."      },
-      {
+        "desc": "During your melee Attack ability, add MUDDLE and PUSH 2 to all your attacks."
+    },
+    {
         "id": "cs-34",
         "name": "Claw Trap",
         "shortname": "clawtrap",
@@ -363,8 +376,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "At the end of your turn, create one 4 damage POISON trap in an adjacent empty hex."      },
-      {
+        "desc": "At the end of your turn, create one 4 damage POISON trap in an adjacent empty hex."
+    },
+    {
         "id": "cs-35",
         "name": "Staff of Retribution",
         "shortname": "staffofretribution",
@@ -373,8 +387,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "When attacked, gain Retaliate 1, Range 3 for the attack."      },
-      {
+        "desc": "When attacked, gain Retaliate 1, Range 3 for the attack."
+    },
+    {
         "id": "cs-36",
         "name": "Curseblood Blade",
         "shortname": "cursebloodblade",
@@ -383,8 +398,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your melee Attack ability, suffer 1 damage to add CURSE to all your attacks."      },
-      {
+        "desc": "During your melee Attack ability, suffer 1 damage to add CURSE to all your attacks."
+    },
+    {
         "id": "cs-37",
         "name": "Drakescale Shield",
         "shortname": "drakescaleshield",
@@ -393,8 +409,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "When attacked by an adjacent enemy, gain Retaliate 3 for the attack."      },
-      {
+        "desc": "When attacked by an adjacent enemy, gain Retaliate 3 for the attack."
+    },
+    {
         "id": "cs-38",
         "name": "Drakescale Dagger",
         "shortname": "drakescaledagger",
@@ -403,8 +420,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your melee Attack ability, do not draw an attack modifier card for one attack."      },
-      {
+        "desc": "During your melee Attack ability, do not draw an attack modifier card for one attack."
+    },
+    {
         "id": "cs-39",
         "name": "Hook Shot",
         "shortname": "hookshot",
@@ -413,8 +431,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform \"Attack 2, Range 3, PIERCE 2\"."      },
-      {
+        "desc": "During your turn, peform \"Attack 2, Range 3, PIERCE 2\"."
+    },
+    {
         "id": "cs-40",
         "name": "Moonleather Boots",
         "shortname": "moonleatherboots",
@@ -423,8 +442,9 @@
         "slot": "Legs",
         "source": "",
         "consumed": true,
-        "desc": "Add +1 Move to all your movement while you are at full health."      },
-      {
+        "desc": "Add +1 Move to all your movement while you are at full health."
+    },
+    {
         "id": "cs-41",
         "name": "Spirit Libation",
         "shortname": "spiritlibation",
@@ -433,8 +453,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn remove one damage token from one {Spirit} {cs-spirit-caller-token}. This {Spirit} may immediately take a turn without receiving a damage token."      },
-      {
+        "desc": "During your turn remove one damage token from one {Spirit} {cs-spirit-caller-token}. This {Spirit} may immediately take a turn without receiving a damage token."
+    },
+    {
         "id": "cs-42",
         "name": "Robe of Soothing",
         "shortname": "robeofsoothing",
@@ -442,8 +463,9 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "Whenever you given an ally a {Prayer} ability card, that ally may peform \"Heal 2, Self\"."      },
-      {
+        "desc": "Whenever you given an ally a {Prayer} ability card, that ally may peform \"Heal 2, Self\"."
+    },
+    {
         "id": "cs-43",
         "name": "Resplendent Mitre",
         "shortname": "resplendentmitre",
@@ -452,8 +474,9 @@
         "slot": "Head",
         "source": "",
         "spent": true,
-        "desc": "During your Heal action, add +2 Heal to each Heal."      },
-      {
+        "desc": "During your Heal action, add +2 Heal to each Heal."
+    },
+    {
         "id": "cs-44",
         "name": "Canister Projectile",
         "shortname": "canisterprojectile",
@@ -462,8 +485,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your ranged Attack ability, add PIERCE 2 to one attack."      },
-      {
+        "desc": "During your ranged Attack ability, add PIERCE 2 to one attack."
+    },
+    {
         "id": "cs-45",
         "name": "Chain Cannon",
         "shortname": "chaincannon",
@@ -472,8 +496,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform \"PULL 2, Self toward one enemy within Range 3\"."      },
-      {
+        "desc": "During your turn, peform \"PULL 2, Self toward one enemy within Range 3\"."
+    },
+    {
         "id": "cs-46",
         "name": "Summoner's Whistle",
         "shortname": "summonerswhistle",
@@ -482,8 +507,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, one summoned ally you own performs Move +0 Attack +0 with you controlling the abilities."      },
-      {
+        "desc": "During your turn, one summoned ally you own performs Move +0 Attack +0 with you controlling the abilities."
+    },
+    {
         "id": "cs-47",
         "name": "Nature Armlets",
         "shortname": "naturearmlets",
@@ -491,8 +517,9 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "",
-        "desc": "While {Mounted} on a summon, you can aply your small items item effects to the summon instead."      },
-      {
+        "desc": "While {Mounted} on a summon, you can aply your small items item effects to the summon instead."
+    },
+    {
         "id": "cs-48",
         "name": "Test Tube",
         "shortname": "testtube",
@@ -501,8 +528,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, {anyX} to peforme one of the following: Move 2, Jump, {wind} | Heal 3, Self, {light} | Attack 2, {fire}."      },
-      {
+        "desc": "During your turn, {anyX} to peforme one of the following: Move 2, Jump, {WIND} | Heal 3, Self, {LIGHT} | Attack 2, {FIRE}."
+    },
+    {
         "id": "cs-49",
         "name": "Booster Shot",
         "shortname": "boostershot",
@@ -511,8 +539,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, perform one of the following: Recover one discarded card | Heal 3, Self | Add +2 Attack to your next attack this turn."      },
-      {
+        "desc": "During your turn, perform one of the following: Recover one discarded card | Heal 3, Self | Add +2 Attack to your next attack this turn."
+    },
+    {
         "id": "cs-50",
         "name": "Luminous Carapace",
         "shortname": "luminouscarapace",
@@ -521,8 +550,9 @@
         "slot": "Body",
         "source": "",
         "spent": true,
-        "desc": "During your turn, when you {anyX} an element, do not move the consumed element to the Inter column."      },
-      {
+        "desc": "During your turn, when you {anyX} an element, do not move the consumed element to the Inter column."
+    },
+    {
         "id": "cs-51",
         "name": "Flaming Armor",
         "shortname": "flamingarmor",
@@ -530,8 +560,9 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "When attacked, you may {fireX} to gain Retaliate 3 for the attack."      },
-      {
+        "desc": "When attacked, you may {fireX} to gain Retaliate 3 for the attack."
+    },
+    {
         "id": "cs-52",
         "name": "Flaming Axe",
         "shortname": "flamingaxe",
@@ -540,8 +571,9 @@
         "slot": "Two Hands",
         "source": "",
         "consumed": true,
-        "desc": "During your melee Attack ability, add +1 Attack and WOUND to all your attacks. {fire}"      },
-      {
+        "desc": "During your melee Attack ability, add +1 Attack and WOUND to all your attacks. {FIRE}"
+    },
+    {
         "id": "cs-53",
         "name": "Field Mortar",
         "shortname": "fieldmortar",
@@ -549,8 +581,9 @@
         "cost": 50,
         "slot": "Small Item",
         "source": "",
-        "desc": "Once each turn, during your turn, you may remove one condition from an adjacent figure and place that condition on this card if it is not already on this card. During your turn, one adjacent figure gains all conditions on this card, then consume {consumed} this item."      },
-      {
+        "desc": "Once each turn, during your turn, you may remove one condition from an adjacent figure and place that condition on this card if it is not already on this card. During your turn, one adjacent figure gains all conditions on this card, then consume {consumed} this item."
+    },
+    {
         "id": "cs-54",
         "name": "Vipertooth Dagger",
         "shortname": "vipertoothdagger",
@@ -558,8 +591,9 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "",
-        "desc": "Gain Advantage on all your melee attacks while you are occupying difficult terrain."      },
-      {
+        "desc": "Gain Advantage on all your melee attacks while you are occupying difficult terrain."
+    },
+    {
         "id": "cs-55",
         "name": "Ghost Viper Venom",
         "shortname": "ghostvipervenom",
@@ -568,8 +602,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Attack ability, add POISON 2 to one attack."      },
-      {
+        "desc": "During your Attack ability, add POISON 2 to one attack."
+    },
+    {
         "id": "cs-56",
         "name": "Clamp Trap",
         "shortname": "clamptrap",
@@ -578,8 +613,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "At the end of your turn create one 3 damage IMMOBILIZE trap in an adjacent empty hex."      },
-      {
+        "desc": "At the end of your turn create one 3 damage IMMOBILIZE trap in an adjacent empty hex."
+    },
+    {
         "id": "cs-57",
         "name": "Cleansed Voidheart",
         "shortname": "cleansedvoidheart",
@@ -587,8 +623,9 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "You are immune to MUDDLE. At the end of each round, if you have WOUND gain REGENERATE."      },
-      {
+        "desc": "You are immune to MUDDLE. At the end of each round, if you have WOUND gain REGENERATE."
+    },
+    {
         "id": "cs-58",
         "name": "Dizzying Tincture",
         "shortname": "dizzyingtincture",
@@ -597,8 +634,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During you Attack ability, add DISARM to one attack."      },
-      {
+        "desc": "During you Attack ability, add DISARM to one attack."
+    },
+    {
         "id": "cs-59",
         "name": "Drakes Blood",
         "shortname": "drakesblood",
@@ -607,8 +645,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, remove all positive conditions from all enemies within Range 2.  This can be used on enemies that have INVISIBLE."      },
-      {
+        "desc": "During your turn, remove all positive conditions from all enemies within Range 2.  This can be used on enemies that have INVISIBLE."
+    },
+    {
         "id": "cs-60",
         "name": "Mana Medicine",
         "shortname": "manamedicine",
@@ -617,8 +656,9 @@
         "slot": "Small Item",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform \"Heal 5, Self\". {any}"      },
-      {
+        "desc": "During your turn, peform \"Heal 5, Self\". {any}"
+    },
+    {
         "id": "cs-61",
         "name": "Ashsteel Gauntlets",
         "shortname": "ashsteelgauntlets",
@@ -627,8 +667,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "You are immune to DISARM, even if this item is spent. During your turn gain Shield 1 for the round. {eot}"      },
-      {
+        "desc": "You are immune to DISARM, even if this item is spent. During your turn gain Shield 1 for the round. {eot}"
+    },
+    {
         "id": "cs-62",
         "name": "Smog Emitter",
         "shortname": "smogemitter",
@@ -637,8 +678,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "At the end of your turn, all enemies consider all empty hexes within Range 2 of you to be difficult terrain for the round. {eot}"      },
-      {
+        "desc": "At the end of your turn, all enemies consider all empty hexes within Range 2 of you to be difficult terrain for the round. {eot}"
+    },
+    {
         "id": "cs-63",
         "name": "Lucky Horseshoe",
         "shortname": "luckyhorseshoe",
@@ -647,8 +689,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "When you are damage by an attack targeting you, suffer half (rounded down) the damage instead."      },
-      {
+        "desc": "When you are damage by an attack targeting you, suffer half (rounded down) the damage instead."
+    },
+    {
         "id": "cs-64",
         "name": "Mild Kindled Tonic",
         "shortname": "mildkindledtonic",
@@ -657,8 +700,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "When an ally targets you with a Heal ability, remove one negative condition from yourself before the Heal and gain STRENGTHEN."      },
-      {
+        "desc": "When an ally targets you with a Heal ability, remove one negative condition from yourself before the Heal and gain STRENGTHEN."
+    },
+    {
         "id": "cs-65",
         "name": "Rescue Axe",
         "shortname": "rescueaxe",
@@ -667,8 +711,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your melee Attack ability, add +1 Attack and MUDDLE to one attack targeting an enemy adjacent to one of your allies."      },
-      {
+        "desc": "During your melee Attack ability, add +1 Attack and MUDDLE to one attack targeting an enemy adjacent to one of your allies."
+    },
+    {
         "id": "cs-66",
         "name": "Iron Malleus",
         "shortname": "ironmalleus",
@@ -677,8 +722,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your melee Attack ability, add +1 Attack and IMMOBILIZE to all your attacks."      },
-      {
+        "desc": "During your melee Attack ability, add +1 Attack and IMMOBILIZE to all your attacks."
+    },
+    {
         "id": "cs-67",
         "name": "Pike Hook",
         "shortname": "pikehook",
@@ -687,8 +733,9 @@
         "slot": "Two Hands",
         "source": "",
         "spent": true,
-        "desc": "During your single-target melee Attack ability, add PIERCE 2 and PULL 1 to the attack and you may target one enemy within 2 hexes."      },
-      {
+        "desc": "During your single-target melee Attack ability, add PIERCE 2 and PULL 1 to the attack and you may target one enemy within 2 hexes."
+    },
+    {
         "id": "cs-68",
         "name": "Explosive Tonic",
         "shortname": "explosivetonic",
@@ -696,8 +743,9 @@
         "cost": 35,
         "slot": "Small Item",
         "source": "",
-        "desc": "During your turn, peform: WOUND Range 3 {multi_attack.cone_1_1}"      },
-      {
+        "desc": "During your turn, peform: WOUND Range 3 {multi_attack.cone_1_1}"
+    },
+    {
         "id": "cs-69",
         "name": "Spicy Kindled Tonic",
         "shortname": "spicykindledtonic",
@@ -705,8 +753,9 @@
         "cost": 40,
         "slot": "Small Item",
         "source": "",
-        "desc": "On the next three Heal abilities targeting you, you may either first remove all negative conditions from yourself or gain STRENGTHEN."      },
-      {
+        "desc": "On the next three Heal abilities targeting you, you may either first remove all negative conditions from yourself or gain STRENGTHEN."
+    },
+    {
         "id": "cs-70",
         "name": "Utility Rope",
         "shortname": "utilityrope",
@@ -715,8 +764,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform \"PULL 2, Target one ally or enemy within Range 3.\""      },
-      {
+        "desc": "During your turn, peform \"PULL 2, Target one ally or enemy within Range 3.\""
+    },
+    {
         "id": "cs-71",
         "name": "Fireproof Helm",
         "shortname": "fireproofhelm",
@@ -724,8 +774,9 @@
         "cost": 50,
         "slot": "Head",
         "source": "",
-        "desc": "Whenever you would suffer damage from WOUND instead perform \"Heal 1, Self\""      },
-      {
+        "desc": "Whenever you would suffer damage from WOUND instead perform \"Heal 1, Self\""
+    },
+    {
         "id": "cs-72",
         "name": "Wooden Ladder",
         "shortname": "woodenladder",
@@ -733,8 +784,9 @@
         "cost": 50,
         "slot": "Two Hands",
         "source": "",
-        "desc": "Add +1 Range to all your ranged abilities peformed while adjacent to an obstacle. Whenever you enter a hex with a trap, you may choose not to spring the trap."      },
-      {
+        "desc": "Add +1 Range to all your ranged abilities peformed while adjacent to an obstacle. Whenever you enter a hex with a trap, you may choose not to spring the trap."
+    },
+    {
         "id": "cs-73",
         "name": "Medical Kit",
         "shortname": "medicalkit",
@@ -742,8 +794,9 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "",
-        "desc": "Whenever you use the default top action of an ability card, you may perform a \"Heal 2, Range 1\" ability instead of an \"Attack 2\" ability."      },
-      {
+        "desc": "Whenever you use the default top action of an ability card, you may perform a \"Heal 2, Range 1\" ability instead of an \"Attack 2\" ability."
+    },
+    {
         "id": "cs-74",
         "name": "Mild Bolstering Tonic",
         "shortname": "mildbolsteringtonic",
@@ -752,8 +805,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Heal ability targeting at least one ally, add +1 Heal and STRENGTHEN to each Heal."      },
-      {
+        "desc": "During your Heal ability targeting at least one ally, add +1 Heal and STRENGTHEN to each Heal."
+    },
+    {
         "id": "cs-75",
         "name": "Medallion of the Oak",
         "shortname": "medallionoftheoak",
@@ -762,8 +816,9 @@
         "slot": "Head",
         "source": "",
         "spent": true,
-        "desc": "When attacked this round, you and all adjacent allies consider any negative and {modifier_no_damage} attack modifiers drawn to be {modifier_zero_circle} instead."      },
-      {
+        "desc": "When attacked this round, you and all adjacent allies consider any negative and {modifier_no_damage} attack modifiers drawn to be {modifier_zero_circle} instead."
+    },
+    {
         "id": "cs-76",
         "name": "Cauterizing Knife",
         "shortname": "cauterizingknife",
@@ -772,8 +827,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Heal ability, add +3 Heal and WOUND to each Heal."      },
-      {
+        "desc": "During your Heal ability, add +3 Heal and WOUND to each Heal."
+    },
+    {
         "id": "cs-77",
         "name": "Trauma Kit",
         "shortname": "traumakit",
@@ -782,8 +838,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your Heal ability, double the value of each Heal. If this Heal ability removes WOUND, this item is spent instead of consumed."      },
-      {
+        "desc": "During your Heal ability, double the value of each Heal. If this Heal ability removes WOUND, this item is spent instead of consumed."
+    },
+    {
         "id": "cs-78",
         "name": "Scroll of Charisma",
         "shortname": "scrollofcharisma",
@@ -792,8 +849,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, one ally within Range 2 may perform one of the following: Attack 2| Move 2| Heal 2, Self."      },
-      {
+        "desc": "During your turn, one ally within Range 2 may perform one of the following: Attack 2| Move 2| Heal 2, Self."
+    },
+    {
         "id": "cs-79",
         "name": "Rescue Shield",
         "shortname": "rescueshield",
@@ -802,8 +860,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "When an adjacent ally is damage by an attack targeting them, that ally gains Shield 2 for the attack and removes all negative conditions applied by the attack."      },
-      {
+        "desc": "When an adjacent ally is damage by an attack targeting them, that ally gains Shield 2 for the attack and removes all negative conditions applied by the attack."
+    },
+    {
         "id": "cs-80",
         "name": "Scroll of Protection",
         "shortname": "scrollofprotection",
@@ -812,8 +871,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "When an ally within Range 5 would be damaged by an attack targeting them, they suffer no damage instead."      },
-      {
+        "desc": "When an ally within Range 5 would be damaged by an attack targeting them, they suffer no damage instead."
+    },
+    {
         "id": "cs-81",
         "name": "Spicy Bolstering Tonic",
         "shortname": "spicybolsteringtonic",
@@ -822,8 +882,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Heal ability targeting at least one ally add +2 Healm STRENGTHEN and BLESS to each Heal."      },
-      {
+        "desc": "During your Heal ability targeting at least one ally add +2 Healm STRENGTHEN and BLESS to each Heal."
+    },
+    {
         "id": "cs-82",
         "name": "Scroll of Command",
         "shortname": "scrollofcommand",
@@ -832,8 +893,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During you turn one ally within Range 3 may peform one of the following: Attack 3 | Move 3 | Heal 3, Self."      },
-      {
+        "desc": "During you turn one ally within Range 3 may peform one of the following: Attack 3 | Move 3 | Heal 3, Self."
+    },
+    {
         "id": "cs-83",
         "name": "Sphere of Currents",
         "shortname": "sphereofcurrents",
@@ -842,8 +904,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, create two water difficult terrain tiles in hexes within Range 3 that contain no overlay tiles. MUDDLE all figures within Range 3 occupying a water tile."      },
-      {
+        "desc": "During your turn, create two water difficult terrain tiles in hexes within Range 3 that contain no overlay tiles. MUDDLE all figures within Range 3 occupying a water tile."
+    },
+    {
         "id": "cs-84",
         "name": "Slug Crossbow",
         "shortname": "slugcrossbow",
@@ -852,8 +915,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your single-target ranged Attack ability, turn the attack into the following: {multi_attack.line_1_1}."      },
-      {
+        "desc": "During your single-target ranged Attack ability, turn the attack into the following: {multi_attack.line_1_1}."
+    },
+    {
         "id": "cs-85",
         "name": "Refined Slug Crossbow",
         "shortname": "refinedslugcrossbow",
@@ -862,8 +926,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your single-targetranged Attack ability, add +1 Attack and turn the attack into the following: {multi_attack.line_1_1}."      },
-      {
+        "desc": "During your single-targetranged Attack ability, add +1 Attack and turn the attack into the following: {multi_attack.line_1_1}."
+    },
+    {
         "id": "cs-86",
         "name": "Bulwark Banner",
         "shortname": "bulwarkbanner",
@@ -872,8 +937,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, you and all allies gain Shield 1 for the round. {eot}"      },
-      {
+        "desc": "During your turn, you and all allies gain Shield 1 for the round. {eot}"
+    },
+    {
         "id": "cs-87",
         "name": "Refined Bulwark Banner",
         "shortname": "refinedbulwarkbanner",
@@ -882,8 +948,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, all adjacent allies gain Shield {shield} equal to your current Shield value from abilities for the round. {eot}"      },
-      {
+        "desc": "During your turn, all adjacent allies gain Shield {shield} equal to your current Shield value from abilities for the round. {eot}"
+    },
+    {
         "id": "cs-88",
         "name": "Remote Beetle",
         "shortname": "remotebeetle",
@@ -892,8 +959,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, open one unlocked closed door within Range 2."      },
-      {
+        "desc": "During your turn, open one unlocked closed door within Range 2."
+    },
+    {
         "id": "cs-89",
         "name": "Refined Remote Beetle",
         "shortname": "refinedremotebeetle",
@@ -902,8 +970,9 @@
         "slot": "Small Item",
         "source": "",
         "spent": true,
-        "desc": "During your turn, open one unlocked closed door within Range 2."      },
-      {
+        "desc": "During your turn, open one unlocked closed door within Range 2."
+    },
+    {
         "id": "cs-90",
         "name": "Blazing Boots",
         "shortname": "blazingboots",
@@ -912,8 +981,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Move ability, double the value of the movement."      },
-      {
+        "desc": "During your Move ability, double the value of the movement."
+    },
+    {
         "id": "cs-91",
         "name": "Refined Blazing Boots",
         "shortname": "refinedblazingboots",
@@ -922,8 +992,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Move ability, add Jump and double the value of the movement."      },
-      {
+        "desc": "During your Move ability, add Jump and double the value of the movement."
+    },
+    {
         "id": "cs-92",
         "name": "Viper Blowgun",
         "shortname": "viperblowgun",
@@ -932,8 +1003,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, you may {earthX} to perform \"Attack 1, Range 3, POISON\"."      },
-      {
+        "desc": "During your turn, you may {earthX} to perform \"Attack 1, Range 3, POISON\"."
+    },
+    {
         "id": "cs-93",
         "name": "Refined Viper Blowgun",
         "shortname": "refinedviperblowgun",
@@ -942,8 +1014,9 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, perform \"Attack 1, Range 4, POISON\". You may {earthX} to ADD TARGET."      },
-      {
+        "desc": "During your turn, perform \"Attack 1, Range 4, POISON\". You may {earthX} to ADD TARGET."
+    },
+    {
         "id": "cs-94",
         "name": "Frost Stone",
         "shortname": "froststone",
@@ -952,8 +1025,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {ice}. When there are two tokens on this card it is consumed {consumed}."      },
-      {
+        "desc": "During your turn you may place one character token on this card to generate: {ICE}. When there are two tokens on this card it is consumed {consumed}."
+    },
+    {
         "id": "cs-95",
         "name": "Storm Stone",
         "shortname": "stormstone",
@@ -962,8 +1036,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {wind}. When there are two tokens on this card it is consumed {consumed}."      },
-      {
+        "desc": "During your turn you may place one character token on this card to generate: {WIND}. When there are two tokens on this card it is consumed {consumed}."
+    },
+    {
         "id": "cs-96",
         "name": "Inferno Stone",
         "shortname": "infernostone",
@@ -972,8 +1047,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {fire}. When there are two tokens on this card it is consumed {consumed}."      },
-      {
+        "desc": "During your turn you may place one character token on this card to generate: {FIRE}. When there are two tokens on this card it is consumed {consumed}."
+    },
+    {
         "id": "cs-97",
         "name": "Tremor Stone",
         "shortname": "tremorstone",
@@ -982,8 +1058,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {earth}. When there are two tokens on this card it is consumed {consumed}."      },
-      {
+        "desc": "During your turn you may place one character token on this card to generate: {EARTH}. When there are two tokens on this card it is consumed {consumed}."
+    },
+    {
         "id": "cs-98",
         "name": "Brilliant Stone",
         "shortname": "brilliantstone",
@@ -992,8 +1069,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {light}. When there are two tokens on this card it is consumed {consumed}."      },
-      {
+        "desc": "During your turn you may place one character token on this card to generate: {LIGHT}. When there are two tokens on this card it is consumed {consumed}."
+    },
+    {
         "id": "cs-99",
         "name": "Dark Stone",
         "shortname": "darkstone",
@@ -1002,8 +1080,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {dark}. When there are two tokens on this card it is consumed {consumed}."      },
-      {
+        "desc": "During your turn you may place one character token on this card to generate: {DARK}. When there are two tokens on this card it is consumed {consumed}."
+    },
+    {
         "id": "cs-100",
         "name": "Wonder Stone",
         "shortname": "wonderstone",
@@ -1012,8 +1091,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {any}. When there are two tokens on this card it is consumed {consumed}."      },
-      {
+        "desc": "During your turn you may place one character token on this card to generate: {any}. When there are two tokens on this card it is consumed {consumed}."
+    },
+    {
         "id": "cs-aa01",
         "name": "Rockspine Bulwark",
         "shortname": "rockspinebulwark",
@@ -1022,8 +1102,9 @@
         "slot": "Body",
         "source": "",
         "spent": true,
-        "desc": "On the next three sources of damage from attacks targeting you or an adjacent ally, the attacked figure gains Shield 1 for the attack."      },
-      {
+        "desc": "On the next three sources of damage from attacks targeting you or an adjacent ally, the attacked figure gains Shield 1 for the attack."
+    },
+    {
         "id": "cs-aa02",
         "name": "Ghostshimmer Honey",
         "shortname": "ghostshimmerhoney",
@@ -1032,8 +1113,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform Heal 3 REGENERATE Affect self and one adjacent ally."      },
-      {
+        "desc": "During your turn, peform Heal 3 REGENERATE Affect self and one adjacent ally."
+    },
+    {
         "id": "cs-aa03",
         "name": "Steelsilk Spinneret",
         "shortname": "steelsilkspinneret",
@@ -1042,8 +1124,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "The next two times an enemy suffers damage from attacking you, that enemy gains IMMOBILIZE."      },
-      {
+        "desc": "The next two times an enemy suffers damage from attacking you, that enemy gains IMMOBILIZE."
+    },
+    {
         "id": "cs-qa01",
         "name": "Power Modulator",
         "shortname": "powermodulator",
@@ -1052,8 +1135,9 @@
         "slot": "Two Hands",
         "source": "",
         "consumed": true,
-        "desc": "(X is 1, 2, 3) During your turn, forgo your top action to peform Attack {attack} X + 1 Range 2 Target {target} 4 - X."      },
-      {
+        "desc": "(X is 1, 2, 3) During your turn, forgo your top action to peform Attack {attack} X + 1 Range 2 Target {target} 4 - X."
+    },
+    {
         "id": "cs-qa02",
         "name": "Steel Piston Hammer",
         "shortname": "steelpistonhammer",
@@ -1062,8 +1146,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your melee Attack ability, add MUDDLE and PUSH 1 to a single attack."      },
-      {
+        "desc": "During your melee Attack ability, add MUDDLE and PUSH 1 to a single attack."
+    },
+    {
         "id": "cs-qa03",
         "name": "Spider Climb Gloves",
         "shortname": "spiderclimbgloves",
@@ -1071,8 +1156,9 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "",
-        "desc": "Your movement may enter and end in hexes containing obstacles as if you had Flying."      },
-      {
+        "desc": "Your movement may enter and end in hexes containing obstacles as if you had Flying."
+    },
+    {
         "id": "cs-qa04",
         "name": "Gravity Inversion Pads",
         "shortname": "gravityinversionpads",
@@ -1081,8 +1167,9 @@
         "slot": "Small Item",
         "source": "",
         "spent": true,
-        "desc": "Crate one trap in an empty hex within Range 3. If you or an ally trigger this trap, that figure gains Flying for the round. | Any enemy that enters a hex with this trap triggers it and loses Flying for the round."      },
-      {
+        "desc": "Crate one trap in an empty hex within Range 3. If you or an ally trigger this trap, that figure gains Flying for the round. | Any enemy that enters a hex with this trap triggers it and loses Flying for the round."
+    },
+    {
         "id": "cs-qa05",
         "name": "Delicate Model",
         "shortname": "delicatemodel",
@@ -1090,8 +1177,9 @@
         "cost": 50,
         "slot": "Small Item",
         "source": "",
-        "desc": "You Loot {loot} each hex this summon enters. You control this summon's actions."      },
-      {
+        "desc": "You Loot {loot} each hex this summon enters. You control this summon's actions."
+    },
+    {
         "id": "cs-qa06",
         "name": "Auscudec of the Makers",
         "shortname": "auscudecofthemakers",
@@ -1100,8 +1188,9 @@
         "slot": "Two Hands",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, forgo your top action to play a summon action from a card in your lost pile, ignoring two {scrapX}."      },
-      {
+        "desc": "During your turn, forgo your top action to play a summon action from a card in your lost pile, ignoring two {scrapX}."
+    },
+    {
         "id": "cs-rm01",
         "name": "Serrated Edge",
         "shortname": "serratededge",
@@ -1110,8 +1199,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your melee attack ability, add RUPTURE to one attack."      },
-      {
+        "desc": "During your melee attack ability, add RUPTURE to one attack."
+    },
+    {
         "id": "cs-rm02",
         "name": "Grisly Boots",
         "shortname": "grislyboots",
@@ -1120,8 +1210,9 @@
         "slot": "Legs",
         "source": "",
         "spent": true,
-        "desc": "After your move ability, peform PUSH Target one adjacent enemy. Add +1 PUSH if you have move 4 or more hexes this round."      },
-      {
+        "desc": "After your move ability, peform PUSH Target one adjacent enemy. Add +1 PUSH if you have move 4 or more hexes this round."
+    },
+    {
         "id": "cs-rm03",
         "name": "Terrorscale Saber",
         "shortname": "terrorscalesaber",
@@ -1130,8 +1221,9 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your melee attack ability, add +1 Attack and PIERCE 2 to one attack targeting an enemy with WOUND or RUPTURE."      },
-      {
+        "desc": "During your melee attack ability, add +1 Attack and PIERCE 2 to one attack targeting an enemy with WOUND or RUPTURE."
+    },
+    {
         "id": "cs-rm04",
         "name": "Terrorscale Crossblades",
         "shortname": "terrorscalecrossblades",
@@ -1140,8 +1232,9 @@
         "slot": "Two Hands",
         "source": "",
         "spent": true,
-        "desc": "On your next three melee attacks targeting enemies with at least one negative condition, gain Advantage."      },
-      {
+        "desc": "On your next three melee attacks targeting enemies with at least one negative condition, gain Advantage."
+    },
+    {
         "id": "cs-rm05",
         "name": "Rite of Ruin",
         "shortname": "riteofruin",
@@ -1150,8 +1243,9 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your attack ability gain WOUND to add +3 Attack to one attack. If you kill the target perform \"Heal 3, Self\"."      },
-      {
+        "desc": "During your attack ability gain WOUND to add +3 Attack to one attack. If you kill the target perform \"Heal 3, Self\"."
+    },
+    {
         "id": "cs-rm06",
         "name": "Savage Cuirass",
         "shortname": "savagecuirass",
@@ -1160,5 +1254,6 @@
         "slot": "Body",
         "source": "",
         "consumed": true,
-        "desc": "The next two times you would lose a card from your hand to negate suffering damage, discard it instead and gain WOUND."      }
+        "desc": "The next two times you would lose a card from your hand to negate suffering damage, discard it instead and gain WOUND."
+    }
 ]
