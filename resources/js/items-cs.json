@@ -332,7 +332,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, create one IMMOBILIZE trap in an empty hex within {RANGE} 3."
+        "desc": "During your turn, create one {IMMOBILIZE} trap in an empty hex within {RANGE} 3."
     },
     {
         "id": "cs-31",
@@ -365,7 +365,7 @@
         "slot": "Two Hands",
         "source": "",
         "spent": true,
-        "desc": "During your melee Attack ability, add MUDDLE and PUSH 2 to all your attacks."
+        "desc": "During your melee Attack ability, add {MUDDLE} and {PUSH} 2 to all your attacks."
     },
     {
         "id": "cs-34",
@@ -496,7 +496,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform “PULL 2, Self toward one enemy within {RANGE} 3”."
+        "desc": "During your turn, peform “{PULL} 2, Self toward one enemy within {RANGE} 3”."
     },
     {
         "id": "cs-46",
@@ -539,7 +539,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, perform one of the following: Recover one discarded card | Heal 3, Self | Add +2 Attack to your next attack this turn."
+        "desc": "During your turn, perform one of the following: {RECOVER} one discarded card | Heal 3, Self | Add +2 Attack to your next attack this turn."
     },
     {
         "id": "cs-50",
@@ -613,7 +613,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "At the end of your turn create one 3 damage IMMOBILIZE trap in an adjacent empty hex."
+        "desc": "At the end of your turn create one 3 damage {IMMOBILIZE} trap in an adjacent empty hex."
     },
     {
         "id": "cs-57",
@@ -623,7 +623,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "You are immune to MUDDLE. At the end of each round, if you have {WOUND} gain REGENERATE."
+        "desc": "You are immune to {MUDDLE}. At the end of each round, if you have {WOUND} gain REGENERATE."
     },
     {
         "id": "cs-58",
@@ -711,7 +711,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your melee Attack ability, add +1 Attack and MUDDLE to one attack targeting an enemy adjacent to one of your allies."
+        "desc": "During your melee Attack ability, add +1 Attack and {MUDDLE} to one attack targeting an enemy adjacent to one of your allies."
     },
     {
         "id": "cs-66",
@@ -722,7 +722,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your melee Attack ability, add +1 Attack and IMMOBILIZE to all your attacks."
+        "desc": "During your melee Attack ability, add +1 Attack and {IMMOBILIZE} to all your attacks."
     },
     {
         "id": "cs-67",
@@ -733,7 +733,7 @@
         "slot": "Two Hands",
         "source": "",
         "spent": true,
-        "desc": "During your single-target melee Attack ability, add {PIERCE} 2 and PULL 1 to the attack and you may target one enemy within 2 hexes."
+        "desc": "During your single-target melee Attack ability, add {PIERCE} 2 and {PULL} 1 to the attack and you may target one enemy within 2 hexes."
     },
     {
         "id": "cs-68",
@@ -764,7 +764,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform “PULL 2, Target one ally or enemy within {RANGE} 3.”"
+        "desc": "During your turn, peform “{PULL} 2, Target one ally or enemy within {RANGE} 3.”"
     },
     {
         "id": "cs-71",
@@ -904,7 +904,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, create two water difficult terrain tiles in hexes within {RANGE} 3 that contain no overlay tiles. MUDDLE all figures within {RANGE} 3 occupying a water tile."
+        "desc": "During your turn, create two water difficult terrain tiles in hexes within {RANGE} 3 that contain no overlay tiles. {MUDDLE} all figures within {RANGE} 3 occupying a water tile."
     },
     {
         "id": "cs-84",
@@ -1124,7 +1124,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "The next two times an enemy suffers damage from attacking you, that enemy gains IMMOBILIZE."
+        "desc": "The next two times an enemy suffers damage from attacking you, that enemy gains {IMMOBILIZE}."
     },
     {
         "id": "cs-qa01",
@@ -1146,7 +1146,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your melee Attack ability, add MUDDLE and PUSH 1 to a single attack."
+        "desc": "During your melee Attack ability, add {MUDDLE} and {PUSH} 1 to a single attack."
     },
     {
         "id": "cs-qa03",
