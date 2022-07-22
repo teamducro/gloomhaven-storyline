@@ -235,7 +235,7 @@
         "slot": "Body",
         "source": "",
         "spent": true,
-        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain Shield 2 for the attack."
+        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 2 for the attack."
     },
     {
         "id": "cs-24",
@@ -647,7 +647,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "You are immune to DISARM, even if this item is spent. During your turn gain Shield 1 for the round. {eot}"
+        "desc": "You are immune to DISARM, even if this item is spent. During your turn gain {SHIELD} 1 for the round. {eot}"
     },
     {
         "id": "cs-62",
@@ -840,7 +840,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "When an adjacent ally is damage by an attack targeting them, that ally gains Shield 2 for the attack and removes all negative conditions applied by the attack."
+        "desc": "When an adjacent ally is damage by an attack targeting them, that ally gains {SHIELD} 2 for the attack and removes all negative conditions applied by the attack."
     },
     {
         "id": "cs-80",
@@ -917,7 +917,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, you and all allies gain Shield 1 for the round. {eot}"
+        "desc": "During your turn, you and all allies gain {SHIELD} 1 for the round. {eot}"
     },
     {
         "id": "cs-87",
@@ -928,7 +928,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, all adjacent allies gain Shield {shield} equal to your current Shield value from abilities for the round. {eot}"
+        "desc": "During your turn, all adjacent allies gain {SHIELD} equal to your current Shield value from abilities for the round. {eot}"
     },
     {
         "id": "cs-88",
@@ -994,7 +994,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, perform “{ATTACK} 1, {RANGE} 4, {POISON}”. You may {EARTH_X} to ADD TARGET."
+        "desc": "During your turn, perform “{ATTACK} 1, {RANGE} 4, {POISON}”. You may {EARTH_X} to ADD {TARGET}."
     },
     {
         "id": "cs-94",
@@ -1082,7 +1082,7 @@
         "slot": "Body",
         "source": "",
         "spent": true,
-        "desc": "On the next three sources of damage from attacks targeting you or an adjacent ally, the attacked figure gains Shield 1 for the attack."
+        "desc": "On the next three sources of damage from attacks targeting you or an adjacent ally, the attacked figure gains {SHIELD} 1 for the attack."
     },
     {
         "id": "cs-aa02",
@@ -1115,7 +1115,7 @@
         "slot": "Two Hands",
         "source": "",
         "consumed": true,
-        "desc": "(X is 1, 2, 3) During your turn, forgo your top action to peform Attack {attack} X + 1 {RANGE} 2 Target {target} 4 - X."
+        "desc": "(X is 1, 2, 3)\nDuring your turn, forgo your top action to peform {ATTACK} X+1\n{RANGE} 2\n{TARGET} 4-X"
     },
     {
         "id": "cs-qa02",
@@ -1136,7 +1136,7 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "",
-        "desc": "Your movement may enter and end in hexes containing obstacles as if you had Flying."
+        "desc": "Your movement may enter and end in hexes containing obstacles as if you had {FLYING}."
     },
     {
         "id": "cs-qa04",
@@ -1147,7 +1147,7 @@
         "slot": "Small Item",
         "source": "",
         "spent": true,
-        "desc": "Create one trap in an empty hex within {RANGE} 3. If you or an ally trigger this trap, that figure gains Flying for the round. | Any enemy that enters a hex with this trap triggers it and loses Flying for the round."
+        "desc": "Create one trap in an empty hex within {RANGE} 3. If you or an ally trigger this trap, that figure gains {FLYING} for the round. | Any enemy that enters a hex with this trap triggers it and loses {FLYING} for the round."
     },
     {
         "id": "cs-qa05",
@@ -1168,7 +1168,7 @@
         "slot": "Two Hands",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, forgo your top action to play a summon action from a card in your lost pile, ignoring two {scrapX}."
+        "desc": "During your turn, forgo your top action to play a summon action from a card in your lost pile, ignoring two {SCRAP_X}."
     },
     {
         "id": "cs-rm01",
@@ -1190,7 +1190,7 @@
         "slot": "Legs",
         "source": "",
         "spent": true,
-        "desc": "After your move ability, peform PUSH Target one adjacent enemy. Add +1 PUSH if you have move 4 or more hexes this round."
+        "desc": "After your move ability, peform {PUSH} 1\nTarget one adjacent enemy\nAdd +1 {PUSH} if you have move 4 or more hexes this round."
     },
     {
         "id": "cs-rm03",
