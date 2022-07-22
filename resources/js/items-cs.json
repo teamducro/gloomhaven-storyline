@@ -204,6 +204,7 @@
         "slot": "Head",
         "source": "",
         "consumed": true,
+        "burn": true,
         "desc": "During your turn, {RECOVER} one lost card played this round."
     },
     {
@@ -224,6 +225,7 @@
         "cost": 30,
         "slot": "Head",
         "source": "",
+        "minusOneCardsAdded": 1,
         "desc": "When attacked, consider any {+1_WHITE} modifier card the enemy draws to be a {+0_WHITE} instead."
     },
     {
@@ -323,7 +325,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, create one STUN trap in an empty hex within {RANGE} 3."
+        "desc": "During your turn, create one {STUN} trap in an empty hex within {RANGE} 3."
     },
     {
         "id": "cs-32",
@@ -433,7 +435,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn remove one damage token from one {Spirit} {cs-spirit-caller-token}. This {Spirit} may immediately take a turn without receiving a damage token."
+        "desc": "During your turn remove one damage token from one {SPIRIT}. This {SPIRIT} may immediately take a turn without receiving a damage token."
     },
     {
         "id": "cs-42",
@@ -443,7 +445,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "Whenever you given an ally a {Prayer} ability card, that ally may peform “{HEAL} 2, Self”."
+        "desc": "Whenever you given an ally a {PRAYER} ability card, that ally may peform “{HEAL} 2, Self”."
     },
     {
         "id": "cs-43",
@@ -454,7 +456,7 @@
         "slot": "Head",
         "source": "",
         "spent": true,
-        "desc": "During your Heal action, add +2 Heal to each Heal."
+        "desc": "During your Heal action, add +2 {HEAL} to each Heal."
     },
     {
         "id": "cs-44",
@@ -497,7 +499,7 @@
         "cost": 50,
         "slot": "One Hand",
         "source": "",
-        "desc": "While {MOUNTED} on a summon, you can aply your small items item effects to the summon instead."
+        "desc": "While {MOUNTED} on a summon, you can apply your small {ITEM} effects to the summon instead."
     },
     {
         "id": "cs-48",
@@ -530,7 +532,7 @@
         "slot": "Body",
         "source": "",
         "spent": true,
-        "desc": "During your turn, when you {ANY_X} an element, do not move the consumed element to the Inter column."
+        "desc": "During your turn, when you {ANY_X} an element, do not move the consumed element to the Inert column."
     },
     {
         "id": "cs-51",
@@ -647,6 +649,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
+        "minusOneCardsAdded": 2,
         "desc": "You are immune to {DISARM}, even if this item is spent. During your turn gain {SHIELD} 1 for the round. {eot}"
     },
     {
@@ -807,7 +810,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Heal ability, add +3 Heal and {WOUND} to each Heal."
+        "desc": "During your Heal ability, add +3 {HEAL} and {WOUND} to each Heal."
     },
     {
         "id": "cs-77",
@@ -891,7 +894,6 @@
         "name": "Slug Crossbow",
         "shortname": "slugcrossbow",
         "count": 1,
-        "cost": null,
         "slot": "One Hand",
         "source": "",
         "consumed": true,
@@ -913,7 +915,6 @@
         "name": "Bulwark Banner",
         "shortname": "bulwarkbanner",
         "count": 1,
-        "cost": null,
         "slot": "One Hand",
         "source": "",
         "consumed": true,
@@ -935,7 +936,6 @@
         "name": "Remote Beetle",
         "shortname": "remotebeetle",
         "count": 1,
-        "cost": null,
         "slot": "Small Item",
         "source": "",
         "consumed": true,
@@ -957,7 +957,6 @@
         "name": "Blazing Boots",
         "shortname": "blazingboots",
         "count": 1,
-        "cost": null,
         "slot": "Small Item",
         "source": "",
         "consumed": true,
@@ -979,7 +978,6 @@
         "name": "Viper Blowgun",
         "shortname": "viperblowgun",
         "count": 1,
-        "cost": null,
         "slot": "One Hand",
         "source": "",
         "consumed": true,
@@ -1005,7 +1003,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {ICE}. When there are two tokens on this card it is consumed {CONSUMED}."
+        "desc": "During your turn you may place one character token on this card to generate: {ICE}.\nWhen there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-95",
@@ -1016,7 +1014,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {WIND}. When there are two tokens on this card it is consumed {CONSUMED}."
+        "desc": "During your turn you may place one character token on this card to generate: {WIND}.\nWhen there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-96",
@@ -1027,7 +1025,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {FIRE}. When there are two tokens on this card it is consumed {CONSUMED}."
+        "desc": "During your turn you may place one character token on this card to generate: {FIRE}.\nWhen there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-97",
@@ -1038,7 +1036,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {EARTH}. When there are two tokens on this card it is consumed {CONSUMED}."
+        "desc": "During your turn you may place one character token on this card to generate: {EARTH}.\nWhen there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-98",
@@ -1049,7 +1047,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {LIGHT}. When there are two tokens on this card it is consumed {CONSUMED}."
+        "desc": "During your turn you may place one character token on this card to generate: {LIGHT}.\nWhen there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-99",
@@ -1060,18 +1058,18 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {DARK}. When there are two tokens on this card it is consumed {CONSUMED}."
+        "desc": "During your turn you may place one character token on this card to generate: {DARK}.\nWhen there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-100",
         "name": "Wonder Stone",
         "shortname": "wonderstone",
         "count": 1,
-        "cost": 25,
+        "cost": 40,
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn you may place one character token on this card to generate: {ANY}. When there are two tokens on this card it is consumed {CONSUMED}."
+        "desc": "During your turn you may place one character token on this card to generate: {ANY}.\nWhen there are two tokens on this card it is consumed {CONSUMED}."
     },
     {
         "id": "cs-aa01",
@@ -1119,8 +1117,8 @@
     },
     {
         "id": "cs-qa02",
-        "name": "Steel Piston Hammer",
-        "shortname": "steelpistonhammer",
+        "name": "Steam Piston Hammer",
+        "shortname": "steampistonhammer",
         "count": 2,
         "cost": 30,
         "slot": "One Hand",
@@ -1147,7 +1145,7 @@
         "slot": "Small Item",
         "source": "",
         "spent": true,
-        "desc": "Create one trap in an empty hex within {RANGE} 3. If you or an ally trigger this trap, that figure gains {FLYING} for the round. | Any enemy that enters a hex with this trap triggers it and loses {FLYING} for the round."
+        "desc": "Create one trap in an empty hex within {RANGE} 3.\nIf you or an ally trigger this trap, that figure gains {FLYING} for the round. | Any enemy that enters a hex with this trap triggers it and loses {FLYING} for the round."
     },
     {
         "id": "cs-qa05",
@@ -1176,6 +1174,7 @@
         "slot": "Two Hands",
         "source": "",
         "consumed": true,
+        "burn": true,
         "desc": "During your turn, forgo your top action to play a summon action from a card in your lost pile, ignoring two {SCRAP_X}."
     },
     {
@@ -1227,7 +1226,7 @@
         "name": "Rite of Ruin",
         "shortname": "riteofruin",
         "count": 1,
-        "cost": 40,
+        "cost": 50,
         "slot": "Small Item",
         "source": "",
         "consumed": true,
