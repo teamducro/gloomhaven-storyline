@@ -234,7 +234,7 @@
         "cost": 20,
         "slot": "Head",
         "source": "",
-        "desc": "Gain Advantage on all attacks you peform while INVISIBLE."
+        "desc": "Gain Advantage on all attacks you peform while {INVISIBLE}."
     },
     {
         "id": "cs-22",
@@ -288,7 +288,7 @@
         "slot": "Body",
         "source": "",
         "consumed": true,
-        "desc": "When your hit poit would be reduced to 0 by an attack targeting you, instead suffer no damage and gain INVISIBLE."
+        "desc": "When your hit poit would be reduced to 0 by an attack targeting you, instead suffer no damage and gain {INVISIBLE}."
     },
     {
         "id": "cs-27",
@@ -299,7 +299,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, swap positions with one enemy within Range 5."
+        "desc": "During your turn, swap positions with one enemy within {RANGE} 5."
     },
     {
         "id": "cs-28",
@@ -332,7 +332,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, create one IMMOBILIZE trap in an empty hex within Range 3."
+        "desc": "During your turn, create one IMMOBILIZE trap in an empty hex within {RANGE} 3."
     },
     {
         "id": "cs-31",
@@ -343,7 +343,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, create one STUN trap in an empty hex within Range 3."
+        "desc": "During your turn, create one STUN trap in an empty hex within {RANGE} 3."
     },
     {
         "id": "cs-32",
@@ -387,7 +387,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "When attacked, gain Retaliate 1, Range 3 for the attack."
+        "desc": "When attacked, gain Retaliate 1, {RANGE} 3 for the attack."
     },
     {
         "id": "cs-36",
@@ -431,7 +431,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform “Attack 2, Range 3, {PIERCE} 2”."
+        "desc": "During your turn, peform “Attack 2, {RANGE} 3, {PIERCE} 2”."
     },
     {
         "id": "cs-40",
@@ -496,7 +496,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform “PULL 2, Self toward one enemy within Range 3”."
+        "desc": "During your turn, peform “PULL 2, Self toward one enemy within {RANGE} 3”."
     },
     {
         "id": "cs-46",
@@ -560,7 +560,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "When attacked, you may {fireX} to gain Retaliate 3 for the attack."
+        "desc": "When attacked, you may {FIRE_X} to gain Retaliate 3 for the attack."
     },
     {
         "id": "cs-52",
@@ -645,7 +645,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, remove all positive conditions from all enemies within Range 2.  This can be used on enemies that have INVISIBLE."
+        "desc": "During your turn, remove all positive conditions from all enemies within {RANGE} 2.  This can be used on enemies that have {INVISIBLE}."
     },
     {
         "id": "cs-60",
@@ -678,7 +678,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "At the end of your turn, all enemies consider all empty hexes within Range 2 of you to be difficult terrain for the round. {eot}"
+        "desc": "At the end of your turn, all enemies consider all empty hexes within {RANGE} 2 of you to be difficult terrain for the round. {eot}"
     },
     {
         "id": "cs-63",
@@ -743,7 +743,7 @@
         "cost": 35,
         "slot": "Small Item",
         "source": "",
-        "desc": "During your turn, peform: {WOUND} Range 3 {multi_attack.cone_1_1}"
+        "desc": "During your turn, peform: {WOUND} {RANGE} 3 {multi_attack.cone_1_1}"
     },
     {
         "id": "cs-69",
@@ -764,7 +764,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform “PULL 2, Target one ally or enemy within Range 3.”"
+        "desc": "During your turn, peform “PULL 2, Target one ally or enemy within {RANGE} 3.”"
     },
     {
         "id": "cs-71",
@@ -794,7 +794,7 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "",
-        "desc": "Whenever you use the default top action of an ability card, you may perform a “Heal 2, Range 1” ability instead of an “Attack 2” ability."
+        "desc": "Whenever you use the default top action of an ability card, you may perform a “Heal 2, {RANGE} 1” ability instead of an “Attack 2” ability."
     },
     {
         "id": "cs-74",
@@ -849,7 +849,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, one ally within Range 2 may perform one of the following: Attack 2| Move 2| Heal 2, Self."
+        "desc": "During your turn, one ally within {RANGE} 2 may perform one of the following: Attack 2| Move 2| Heal 2, Self."
     },
     {
         "id": "cs-79",
@@ -871,7 +871,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "When an ally within Range 5 would be damaged by an attack targeting them, they suffer no damage instead."
+        "desc": "When an ally within {RANGE} 5 would be damaged by an attack targeting them, they suffer no damage instead."
     },
     {
         "id": "cs-81",
@@ -893,7 +893,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During you turn one ally within Range 3 may peform one of the following: Attack 3 | Move 3 | Heal 3, Self."
+        "desc": "During you turn one ally within {RANGE} 3 may peform one of the following: Attack 3 | Move 3 | Heal 3, Self."
     },
     {
         "id": "cs-83",
@@ -904,7 +904,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, create two water difficult terrain tiles in hexes within Range 3 that contain no overlay tiles. MUDDLE all figures within Range 3 occupying a water tile."
+        "desc": "During your turn, create two water difficult terrain tiles in hexes within {RANGE} 3 that contain no overlay tiles. MUDDLE all figures within {RANGE} 3 occupying a water tile."
     },
     {
         "id": "cs-84",
@@ -959,7 +959,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, open one unlocked closed door within Range 2."
+        "desc": "During your turn, open one unlocked closed door within {RANGE} 2."
     },
     {
         "id": "cs-89",
@@ -970,7 +970,7 @@
         "slot": "Small Item",
         "source": "",
         "spent": true,
-        "desc": "During your turn, open one unlocked closed door within Range 2."
+        "desc": "During your turn, open one unlocked closed door within {RANGE} 2."
     },
     {
         "id": "cs-90",
@@ -1003,7 +1003,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, you may {earthX} to perform “Attack 1, Range 3, POISON”."
+        "desc": "During your turn, you may {EARTH_X} to perform “Attack 1, {RANGE} 3, POISON”."
     },
     {
         "id": "cs-93",
@@ -1014,7 +1014,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, perform “Attack 1, Range 4, POISON”. You may {earthX} to ADD TARGET."
+        "desc": "During your turn, perform “Attack 1, {RANGE} 4, POISON”. You may {EARTH_X} to ADD TARGET."
     },
     {
         "id": "cs-94",
@@ -1135,7 +1135,7 @@
         "slot": "Two Hands",
         "source": "",
         "consumed": true,
-        "desc": "(X is 1, 2, 3) During your turn, forgo your top action to peform Attack {attack} X + 1 Range 2 Target {target} 4 - X."
+        "desc": "(X is 1, 2, 3) During your turn, forgo your top action to peform Attack {attack} X + 1 {RANGE} 2 Target {target} 4 - X."
     },
     {
         "id": "cs-qa02",
@@ -1167,7 +1167,7 @@
         "slot": "Small Item",
         "source": "",
         "spent": true,
-        "desc": "Crate one trap in an empty hex within Range 3. If you or an ally trigger this trap, that figure gains Flying for the round. | Any enemy that enters a hex with this trap triggers it and loses Flying for the round."
+        "desc": "Create one trap in an empty hex within {RANGE} 3. If you or an ally trigger this trap, that figure gains Flying for the round. | Any enemy that enters a hex with this trap triggers it and loses Flying for the round."
     },
     {
         "id": "cs-qa05",
@@ -1177,7 +1177,7 @@
         "cost": 50,
         "slot": "Small Item",
         "source": "",
-        "desc": "You Loot {loot} each hex this summon enters. You control this summon's actions."
+        "desc": "You Loot {LOOT} each hex this summon enters. You control this summon's actions."
     },
     {
         "id": "cs-qa06",
