@@ -84,7 +84,7 @@
         "name": "Orb of Fortune",
         "shortname": "orboffortune",
         "count": 2,
-        "cost": 20,
+        "cost": 30,
         "slot": "Small Item",
         "source": "",
         "desc": "During your Attack ability, you may place one character token on this card to gain Advantage on one attack. When there are three tokens on this card, it is {CONSUMED}."
@@ -94,10 +94,10 @@
         "name": "Orb of Despair",
         "shortname": "orbofdespair",
         "count": 2,
-        "cost": 20,
+        "cost": 30,
         "slot": "Small Item",
         "source": "",
-        "desc": ""
+        "desc": "During your Attack ability, you may place one character token on this card to add {CURSE} to one attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
         "id": "cs-11",
