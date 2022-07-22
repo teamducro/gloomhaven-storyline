@@ -3,28 +3,230 @@
         {
             "root": true,
             "id": 1,
-            "game": "gh",
-            "name": "Black Barrow",
-            "coordinates": {
-                "name": "G-10",
-                "x": 45.19126,
-                "y": 41.6
-            },
+            "game": "cs",
+            "name": "The Dark Lake",
+            "coordinates": {},
             "pages": [
-                "gh/3"
+                "cs/13",
+                "cssb/2"
             ],
             "chapter_id": 1,
             "links_to": [
                 2
+            ]
+        },
+        {
+            "id": 2,
+            "game": "cs",
+            "name": "Underground Channels",
+            "coordinates": {},
+            "pages": [
+                "cs/14",
+                "cssb/3"
             ],
-            "quests": [
+            "chapter_id": 1,
+            "links_to": [
+                3
+            ],
+            "linked_from": [
                 1
+            ]
+        },
+        {
+            "id": 3,
+            "game": "cs",
+            "name": "Flooded Cavern",
+            "coordinates": {},
+            "pages": [
+                "cs/15",
+                "cssb/4"
             ],
-            "treasures": {
-                "7": "Random Side Scenario"
-            },
-            "achievements_awarded": [
-                "PFS"
+            "chapter_id": 1,
+            "links_to": [
+                4,
+                7
+            ],
+            "linked_from": [
+                2
+            ]
+        },
+        {
+            "id": 4,
+            "game": "cs",
+            "name": "Infected Warriors",
+            "coordinates": {},
+            "pages": [
+                "cs/16",
+                "cssb/5",
+                "cssb/6"
+            ],
+            "chapter_id": 2,
+            "links_to": [
+                5
+            ],
+            "linked_from": [
+                3
+            ]
+        },
+        {
+            "id": 5,
+            "game": "cs",
+            "name": "Blood of the Oozes",
+            "coordinates": {},
+            "pages": [
+                "cs/17",
+                "cssb/6"
+            ],
+            "chapter_id": 2,
+            "links_to": [
+                6
+            ],
+            "linked_from": [
+                4
+            ]
+        },
+        {
+            "id": 6,
+            "game": "cs",
+            "name": "Poisoned Water",
+            "coordinates": {},
+            "pages": [
+                "cs/18",
+                "cssb/6",
+                "cssb/7"
+            ],
+            "chapter_id": 2,
+            "linked_from": [
+                5
+            ]
+        },
+        {
+            "id": 7,
+            "game": "cs",
+            "name": "Golden Eggs",
+            "coordinates": {},
+            "pages": [
+                "cs/19",
+                "cssb/6",
+                "cssb/7"
+            ],
+            "chapter_id": 1,
+            "links_to": [
+                8,
+                10
+            ],
+            "linked_from": [
+                3
+            ]
+        },
+        {
+            "id": 8,
+            "game": "cs",
+            "name": "Shattered Fortress",
+            "coordinates": {},
+            "pages": [
+                "cs/20",
+                "cssb/7"
+            ],
+            "chapter_id": 1,
+            "links_to": [
+                9
+            ],
+            "linked_from": [
+                7
+            ]
+        },
+        {
+            "id": 9,
+            "game": "cs",
+            "name": "Rescue Mission",
+            "coordinates": {},
+            "pages": [
+                "cs/21",
+                "cssb/8",
+                "cssb/10",
+                "cssb/11a"
+            ],
+            "chapter_id": 1,
+            "links_to": [
+                13,
+                14
+            ],
+            "linked_from": [
+                8
+            ]
+        },
+        {
+            "id": 10,
+            "game": "cs",
+            "name": "Den of Monstrosity",
+            "coordinates": {},
+            "pages": [
+                "cs/22",
+                "cs/23",
+                "cssb/12",
+                "cssb/13"
+            ],
+            "chapter_id": 3,
+            "links_to": [
+                17,
+                19
+            ],
+            "linked_from": [
+                7
+            ]
+        },
+        {
+            "id": 19,
+            "game": "cs",
+            "name": "Elemental Experiments",
+            "coordinates": {},
+            "pages": [
+                "cs/33",
+                "cssb/19",
+                "cssb/20"
+            ],
+            "chapter_id": 3,
+            "links_to": [
+                23,
+                24,
+                25
+            ],
+            "linked_from": [
+                10
+            ]
+        },
+        {
+            "id": 25,
+            "game": "cs",
+            "name": "Brightspark, Behold!",
+            "coordinates": {},
+            "pages": [
+                "cs/40",
+                "cssb/26",
+                "cssb/27"
+            ],
+            "chapter_id": 3,
+            "links_to": [
+                31
+            ],
+            "linked_from": [
+                19
+            ]
+        },
+        {
+            "id": 31,
+            "game": "cs",
+            "name": "Eternal Portals",
+            "coordinates": {},
+            "pages": [
+                "cs/46",
+                "cssb/33",
+                "cssb/34"
+            ],
+            "chapter_id": 3,
+            "linked_from": [
+                25
             ]
         }
     ],
@@ -32,6 +234,46 @@
         {
             "id": 1,
             "name": "Intro"
+        },
+        {
+            "id": 2,
+            "name": "Infectious"
+        },
+        {
+            "id": 3,
+            "name": "Wonderous"
+        },
+        {
+            "id": 4,
+            "name": "Chilly"
+        },
+        {
+            "id": 5,
+            "name": "Sail"
+        },
+        {
+            "id": 6,
+            "name": "Tainted"
+        },
+        {
+            "id": 7,
+            "name": "Personal Quests"
+        },
+        {
+            "id": 8,
+            "name": "Road Events"
+        },
+        {
+            "id": 9,
+            "name": "City Events"
+        },
+        {
+            "id": 10,
+            "name": "Side Quests"
+        },
+        {
+            "id": 11,
+            "name": "Solo Quests"
         }
     ],
     "regions": [
