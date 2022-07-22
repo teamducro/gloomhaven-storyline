@@ -614,7 +614,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During you Attack ability, add DISARM to one attack."
+        "desc": "During you Attack ability, add {DISARM} to one attack."
     },
     {
         "id": "cs-59",
@@ -647,7 +647,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "You are immune to DISARM, even if this item is spent. During your turn gain {SHIELD} 1 for the round. {eot}"
+        "desc": "You are immune to {DISARM}, even if this item is spent. During your turn gain {SHIELD} 1 for the round. {eot}"
     },
     {
         "id": "cs-62",
