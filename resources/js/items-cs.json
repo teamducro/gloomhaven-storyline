@@ -277,7 +277,7 @@
         "slot": "Body",
         "source": "",
         "spent": true,
-        "desc": "On the next two attacks targeting you peformed by adjacent enemies, gain Retaliate 2 for the attack."
+        "desc": "On the next two attacks targeting you peformed by adjacent enemies, gain {RETALIATE} 2 for the attack."
     },
     {
         "id": "cs-26",
@@ -321,7 +321,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform “Heal 5, POISON, Self”."
+        "desc": "During your turn, peform “{HEAL} 5, {POISON}, Self”."
     },
     {
         "id": "cs-30",
@@ -376,7 +376,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "At the end of your turn, create one 4 damage POISON trap in an adjacent empty hex."
+        "desc": "At the end of your turn, create one 4 damage {POISON} trap in an adjacent empty hex."
     },
     {
         "id": "cs-35",
@@ -387,7 +387,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "When attacked, gain Retaliate 1, {RANGE} 3 for the attack."
+        "desc": "When attacked, gain {RETALIATE} 1, {RANGE} 3 for the attack."
     },
     {
         "id": "cs-36",
@@ -398,7 +398,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your melee Attack ability, suffer 1 damage to add CURSE to all your attacks."
+        "desc": "During your melee Attack ability, suffer 1 damage to add {CURSE} to all your attacks."
     },
     {
         "id": "cs-37",
@@ -409,7 +409,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "When attacked by an adjacent enemy, gain Retaliate 3 for the attack."
+        "desc": "When attacked by an adjacent enemy, gain {RETALIATE} 3 for the attack."
     },
     {
         "id": "cs-38",
@@ -431,7 +431,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform “Attack 2, {RANGE} 3, {PIERCE} 2”."
+        "desc": "During your turn, peform “{ATTACK} 2, {RANGE} 3, {PIERCE} 2”."
     },
     {
         "id": "cs-40",
@@ -463,7 +463,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "Whenever you given an ally a {Prayer} ability card, that ally may peform “Heal 2, Self”."
+        "desc": "Whenever you given an ally a {Prayer} ability card, that ally may peform “{HEAL} 2, Self”."
     },
     {
         "id": "cs-43",
@@ -528,7 +528,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, {anyX} to peforme one of the following: Move 2, Jump, {WIND} | Heal 3, Self, {LIGHT} | Attack 2, {FIRE}."
+        "desc": "During your turn, {anyX} to peforme one of the following: Move 2, Jump, {WIND} | {HEAL} 3, Self, {LIGHT} | {ATTACK} 2, {FIRE}."
     },
     {
         "id": "cs-49",
@@ -539,7 +539,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, perform one of the following: {RECOVER} one discarded card | Heal 3, Self | Add +2 Attack to your next attack this turn."
+        "desc": "During your turn, perform one of the following: {RECOVER} one discarded card | {HEAL} 3, Self | Add +2 Attack to your next attack this turn."
     },
     {
         "id": "cs-50",
@@ -560,7 +560,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "When attacked, you may {FIRE_X} to gain Retaliate 3 for the attack."
+        "desc": "When attacked, you may {FIRE_X} to gain {RETALIATE} 3 for the attack."
     },
     {
         "id": "cs-52",
@@ -602,7 +602,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Attack ability, add POISON 2 to one attack."
+        "desc": "During your Attack ability, add {POISON} 2 to one attack."
     },
     {
         "id": "cs-56",
@@ -656,7 +656,7 @@
         "slot": "Small Item",
         "source": "",
         "spent": true,
-        "desc": "During your turn, peform “Heal 5, Self”. {any}"
+        "desc": "During your turn, peform “{HEAL} 5, Self”. {any}"
     },
     {
         "id": "cs-61",
@@ -774,7 +774,7 @@
         "cost": 50,
         "slot": "Head",
         "source": "",
-        "desc": "Whenever you would suffer damage from {WOUND} instead perform “Heal 1, Self”"
+        "desc": "Whenever you would suffer damage from {WOUND} instead perform “{HEAL} 1, Self”"
     },
     {
         "id": "cs-72",
@@ -794,7 +794,7 @@
         "cost": 30,
         "slot": "One Hand",
         "source": "",
-        "desc": "Whenever you use the default top action of an ability card, you may perform a “Heal 2, {RANGE} 1” ability instead of an “Attack 2” ability."
+        "desc": "Whenever you use the default top action of an ability card, you may perform a “{HEAL} 2, {RANGE} 1” ability instead of an “{ATTACK} 2” ability."
     },
     {
         "id": "cs-74",
@@ -849,7 +849,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, one ally within {RANGE} 2 may perform one of the following: Attack 2| Move 2| Heal 2, Self."
+        "desc": "During your turn, one ally within {RANGE} 2 may perform one of the following: {ATTACK} 2| Move 2| {HEAL} 2, Self."
     },
     {
         "id": "cs-79",
@@ -893,7 +893,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During you turn one ally within {RANGE} 3 may peform one of the following: Attack 3 | Move 3 | Heal 3, Self."
+        "desc": "During you turn one ally within {RANGE} 3 may peform one of the following: {ATTACK} 3 | Move 3 | {HEAL} 3, Self."
     },
     {
         "id": "cs-83",
@@ -1003,7 +1003,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, you may {EARTH_X} to perform “Attack 1, {RANGE} 3, POISON”."
+        "desc": "During your turn, you may {EARTH_X} to perform “{ATTACK} 1, {RANGE} 3, {POISON}”."
     },
     {
         "id": "cs-93",
@@ -1014,7 +1014,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, perform “Attack 1, {RANGE} 4, POISON”. You may {EARTH_X} to ADD TARGET."
+        "desc": "During your turn, perform “{ATTACK} 1, {RANGE} 4, {POISON}”. You may {EARTH_X} to ADD TARGET."
     },
     {
         "id": "cs-94",
@@ -1113,7 +1113,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform Heal 3 REGENERATE Affect self and one adjacent ally."
+        "desc": "During your turn, peform {HEAL} 3 REGENERATE Affect self and one adjacent ally."
     },
     {
         "id": "cs-aa03",
@@ -1243,7 +1243,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your attack ability gain {WOUND} to add +3 Attack to one attack. If you kill the target perform “Heal 3, Self”."
+        "desc": "During your attack ability gain {WOUND} to add +3 Attack to one attack. If you kill the target perform “{HEAL} 3, Self”."
     },
     {
         "id": "cs-rm06",
