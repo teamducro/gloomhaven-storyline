@@ -603,7 +603,7 @@
         "cost": 50,
         "slot": "Body",
         "source": "",
-        "desc": "You are immune to {MUDDLE}. At the end of each round, if you have {WOUND} gain REGENERATE."
+        "desc": "You are immune to {MUDDLE}. At the end of each round, if you have {WOUND} gain {REGENERATE}."
     },
     {
         "id": "cs-58",
@@ -1093,7 +1093,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, peform {HEAL} 3 REGENERATE Affect self and one adjacent ally."
+        "desc": "During your turn, peform {HEAL} 3\n{REGENERATE}\nAffect self and one adjacent ally."
     },
     {
         "id": "cs-aa03",
