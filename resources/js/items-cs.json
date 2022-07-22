@@ -7,8 +7,6 @@
         "cost": 15,
         "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
         "desc": "During your Attack ability, you may place one character token on this card to add {MUDDLE} to one attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
@@ -19,8 +17,6 @@
         "cost": 15,
         "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
         "desc": "During your Move ability, you may place one character token on this card to add +1 {MOVE}. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
@@ -31,8 +27,6 @@
         "cost": 15,
         "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
         "desc": "During your Move ability, you may place one character token on this card to add {JUMP}. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
@@ -43,8 +37,6 @@
         "cost": 20,
         "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
         "desc": "During your Attack ability, you may place one character token on this card to add +1 {ATTACK} to one attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
@@ -55,8 +47,6 @@
         "cost": 20,
         "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
         "desc": "When attacked by an adjacent enemy, you may place one character token on this card to gain {RETALIATE} 1 for the attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
@@ -67,8 +57,6 @@
         "cost": 20,
         "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
         "desc": "During your Attack ability, you may place one character token on this card to add {POISON} to one attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
@@ -79,8 +67,6 @@
         "cost": 20,
         "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
         "desc": "During your turn, you may place one character token on this card to perform “{HEAL} 1, Self”. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
@@ -91,8 +77,6 @@
         "cost": 20,
         "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
         "desc": "When damaged by an attack, you may place one character token on this card to gain {SHIELD} 1 for the attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
@@ -103,8 +87,6 @@
         "cost": 20,
         "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
         "desc": "During your Attack ability, you may place one character token on this card to gain Advantage on one attack. When there are three tokens on this card, it is {CONSUMED}."
     },
     {
@@ -115,8 +97,6 @@
         "cost": 20,
         "slot": "Small Item",
         "source": "",
-        "spent": "",
-        "consumed": "",
         "desc": ""
     },
     {
