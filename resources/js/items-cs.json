@@ -334,7 +334,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, force an enemy within Rang 5 to perform a “Move 2, Jump”ability with you controlling the ability."
+        "desc": "During your turn, force an enemy within Rang 5 to perform a “{MOVE} 2, Jump” ability with you controlling the ability."
     },
     {
         "id": "cs-33",
@@ -487,7 +487,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, one summoned ally you own performs Move +0 Attack +0 with you controlling the abilities."
+        "desc": "During your turn, one summoned ally you own performs\n{MOVE} +0\n{ATTACK} +0\nwith you controlling the abilities."
     },
     {
         "id": "cs-47",
@@ -508,7 +508,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your turn, {anyX} to peforme one of the following: Move 2, Jump, {WIND} | {HEAL} 3, Self, {LIGHT} | {ATTACK} 2, {FIRE}."
+        "desc": "During your turn, {anyX} to peforme one of the following: {MOVE} 2, Jump, {WIND} | {HEAL} 3, Self, {LIGHT} | {ATTACK} 2, {FIRE}."
     },
     {
         "id": "cs-49",
@@ -519,7 +519,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, perform one of the following: {RECOVER} one discarded card | {HEAL} 3, Self | Add +2 Attack to your next attack this turn."
+        "desc": "During your turn, perform one of the following: {RECOVER} one discarded card | {HEAL} 3, Self | Add +2 {ATTACK} to your next attack this turn."
     },
     {
         "id": "cs-50",
@@ -551,7 +551,7 @@
         "slot": "Two Hands",
         "source": "",
         "consumed": true,
-        "desc": "During your melee Attack ability, add +1 Attack and {WOUND} to all your attacks. {FIRE}"
+        "desc": "During your melee Attack ability, add +1 {ATTACK} and {WOUND} to all your attacks. {FIRE}"
     },
     {
         "id": "cs-53",
@@ -680,7 +680,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "When an ally targets you with a Heal ability, remove one negative condition from yourself before the Heal and gain STRENGTHEN."
+        "desc": "When an ally targets you with a Heal ability, remove one negative condition from yourself before the Heal and gain {STRENGTHEN}."
     },
     {
         "id": "cs-65",
@@ -691,7 +691,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your melee Attack ability, add +1 Attack and {MUDDLE} to one attack targeting an enemy adjacent to one of your allies."
+        "desc": "During your melee Attack ability, add +1 {ATTACK} and {MUDDLE} to one attack targeting an enemy adjacent to one of your allies."
     },
     {
         "id": "cs-66",
@@ -702,7 +702,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your melee Attack ability, add +1 Attack and {IMMOBILIZE} to all your attacks."
+        "desc": "During your melee Attack ability, add +1 {ATTACK} and {IMMOBILIZE} to all your attacks."
     },
     {
         "id": "cs-67",
@@ -733,7 +733,7 @@
         "cost": 40,
         "slot": "Small Item",
         "source": "",
-        "desc": "On the next three Heal abilities targeting you, you may either first remove all negative conditions from yourself or gain STRENGTHEN."
+        "desc": "On the next three Heal abilities targeting you, you may either first remove all negative conditions from yourself or gain {STRENGTHEN}."
     },
     {
         "id": "cs-70",
@@ -785,7 +785,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Heal ability targeting at least one ally, add +1 Heal and STRENGTHEN to each Heal."
+        "desc": "During your Heal ability targeting at least one ally, add +1 Heal and {STRENGTHEN} to each Heal."
     },
     {
         "id": "cs-75",
@@ -829,7 +829,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your turn, one ally within {RANGE} 2 may perform one of the following: {ATTACK} 2| Move 2| {HEAL} 2, Self."
+        "desc": "During your turn, one ally within {RANGE} 2 may perform one of the following: {ATTACK} 2 | {MOVE} 2 | {HEAL} 2, Self."
     },
     {
         "id": "cs-79",
@@ -862,7 +862,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your Heal ability targeting at least one ally add +2 Healm STRENGTHEN and BLESS to each Heal."
+        "desc": "During your Heal ability targeting at least one ally add +2 {HEAL} {STRENGTHEN} and {BLESS} to each Heal."
     },
     {
         "id": "cs-82",
@@ -873,7 +873,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During you turn one ally within {RANGE} 3 may peform one of the following: {ATTACK} 3 | Move 3 | {HEAL} 3, Self."
+        "desc": "During you turn one ally within {RANGE} 3 may peform one of the following: {ATTACK} 3 | {MOVE} 3 | {HEAL} 3, Self."
     },
     {
         "id": "cs-83",
@@ -906,7 +906,7 @@
         "slot": "One Hand",
         "source": "",
         "consumed": true,
-        "desc": "During your single-targetranged Attack ability, add +1 Attack and turn the attack into the following: {multi_attack.line_1_1}."
+        "desc": "During your single-target ranged Attack ability, add +1 {ATTACK} and turn the attack into the following: {multi_attack.line_1_1}."
     },
     {
         "id": "cs-86",
@@ -1201,7 +1201,7 @@
         "slot": "One Hand",
         "source": "",
         "spent": true,
-        "desc": "During your melee attack ability, add +1 Attack and {PIERCE} 2 to one attack targeting an enemy with {WOUND} or {RUPTURE}."
+        "desc": "During your melee attack ability, add +1 {ATTACK} and {PIERCE} 2 to one attack targeting an enemy with {WOUND} or {RUPTURE}."
     },
     {
         "id": "cs-rm04",
@@ -1223,7 +1223,7 @@
         "slot": "Small Item",
         "source": "",
         "consumed": true,
-        "desc": "During your attack ability gain {WOUND} to add +3 Attack to one attack. If you kill the target perform “{HEAL} 3, Self”."
+        "desc": "During your attack ability gain {WOUND} to add +3 {ATTACK} to one attack. If you kill the target perform “{HEAL} 3, Self”."
     },
     {
         "id": "cs-rm06",
