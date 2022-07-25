@@ -474,6 +474,60 @@
             ]
         },
         {
+            "id": 28,
+            "game": "cs",
+            "name": "Fountain of Bones",
+            "coordinates": {},
+            "pages": [
+                "cs/43",
+                "cssb/30",
+                "cssb/31"
+            ],
+            "chapter_id": 6,
+            "links_to": [
+                29
+            ],
+            "linked_from": [
+                27
+            ]
+        },
+        {
+            "id": 29,
+            "game": "cs",
+            "name": "Burial Chamber",
+            "coordinates": {},
+            "pages": [
+                "cs/44",
+                "cssb/28",
+                "cssb/31"
+            ],
+            "chapter_id": 6,
+            "links_to": [
+                30
+            ],
+            "linked_from": [
+                28
+            ]
+        },
+        {
+            "id": 30,
+            "game": "cs",
+            "name": "Undead Terrors",
+            "coordinates": {},
+            "pages": [
+                "cs/45",
+                "cssb/32",
+                "cssb/33"
+            ],
+            "chapter_id": 6,
+            "links_to": [
+                32
+            ],
+            "linked_from": [
+                29
+            ]
+        },
+        {
             "id": 31,
             "game": "cs",
             "name": "Eternal Portals",
