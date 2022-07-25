@@ -398,6 +398,24 @@
             ]
         },
         {
+            "id": 24,
+            "game": "cs",
+            "name": "Eerie Grotto",
+            "coordinates": {},
+            "pages": [
+                "cs/39",
+                "cssb/25",
+                "cssb/26"
+            ],
+            "chapter_id": 4,
+            "links_to": [
+                26
+            ],
+            "linked_from": [
+                19
+            ]
+        },
+        {
             "id": 25,
             "game": "cs",
             "name": "Brightspark, Behold!",
@@ -420,6 +438,22 @@
               "lurker",
               "spitting-drake",
               "sun-demon"
+            ]
+        },
+        {
+            "id": 26,
+            "game": "cs",
+            "name": "Thermal Stone Peak",
+            "coordinates": {},
+            "pages": [
+                "cs/41",
+                "cssb/27",
+                "cssb/28"
+            ],
+            "chapter_id": 4,
+            "linked_from": [
+                23,
+                26
             ]
         },
         {
@@ -452,6 +486,7 @@
             "chapter_id": 3,
             "linked_from": [
                 25
+            ]
         },
         {
             "id": 32,
