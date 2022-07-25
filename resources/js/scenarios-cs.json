@@ -177,6 +177,70 @@
             ]
         },
         {
+            "id": 11,
+            "game": "cs",
+            "name": "Voyage Abound",
+            "coordinates": {},
+            "pages": [
+                "cs/24",
+                "cssb/13"
+            ],
+            "chapter_id": 5,
+            "links_to": [
+                12
+            ],
+            "linked_from": [
+                9
+            ]
+        },
+        {
+            "id": 12,
+            "game": "cs",
+            "name": "Uncovering the Source",
+            "coordinates": {},
+            "pages": [
+                "cs/25",
+                "cssb/13"
+            ],
+            "chapter_id": 5,
+            "links_to": [
+                15
+            "linked_from": [
+                11
+            ]
+        },
+        {
+            "id": 15,
+            "game": "cs",
+            "name": "Ambush of Beasts",
+            "coordinates": {},
+            "pages": [
+                "cs/28",
+                "cssb/16"
+            ],
+            "chapter_id": 5,
+            "links_to": [
+                16
+            ],
+            "linked_from": [
+                12
+            ]
+        },
+        {
+            "id": 16,
+            "game": "cs",
+            "name": "Preto Krisanta",
+            "coordinates": {},
+            "pages": [
+                "cs/29",
+                "cssb/16"
+            ],
+            "chapter_id": 5,
+            "linked_from": [
+                15
+            ]
+        },
+        {
             "id": 19,
             "game": "cs",
             "name": "Elemental Experiments",
