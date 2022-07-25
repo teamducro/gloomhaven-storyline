@@ -556,6 +556,107 @@
             "linked_from": [
                 30
             ]
+        },
+        {
+            "id": 33,
+            "game": "cs",
+            "name": "Siege Tower",
+            "coordinates": {},
+            "pages": [
+                "cs/48",
+                "cssb/36",
+                "cssb/37"
+            ],
+            "chapter_id": 7,
+            "links_to": [
+                34
+            ]
+        },
+        {
+            "id": 34,
+            "game": "cs",
+            "name": "Great Oak Escape",
+            "coordinates": {},
+            "pages": [
+                "cs/49",
+                "cssb/36",
+                "cssb/38"
+            ],
+            "chapter_id": 7,
+            "linked_from": [
+                33
+            ]
+        },
+        {
+            "id": 35,
+            "game": "cs",
+            "name": "Prison Riot",
+            "coordinates": {},
+            "pages": [
+                "cs/50",
+                "cssb/38",
+                "cssb/39"
+            ],
+            "chapter_id": 7,
+            "links_to": [
+                36
+            ]
+        },
+        {
+            "id": 36,
+            "game": "cs",
+            "name": "Hunters Bounty",
+            "coordinates": {},
+            "pages": [
+                "cs/51",
+                "cssb/40",
+                "cssb/41"
+            ],
+            "chapter_id": 7,
+            "linked_from": [
+                35
+            ]
+        },
+        {
+            "id": 37,
+            "game": "cs",
+            "name": "Burning Stones",
+            "coordinates": {},
+            "pages": [
+                "cs/52",
+                "cssb/41",
+                "cssb/42"
+            ],
+            "chapter_id": 7,
+            "links_to": [
+                38
+            ]
+        },
+        {
+            "id": 38,
+            "game": "cs",
+            "name": "Alters of Confusion",
+            "coordinates": {},
+            "pages": [
+                "cs/53",
+                "cssb/42",
+                "cssb/43"
+            ],
+            "chapter_id": 7,
+            "linked_from": [
+                37
+            ]
+        },
+        {
+            "id": 39,
+            "game": "cs",
+            "name": "Festering Mire",
+            "coordinates": {},
+            "pages": [
+                "cs/54",
+                "cssb/44",
+                "cssb/45"
+            ]
         }
     ],
     "chapters": [
