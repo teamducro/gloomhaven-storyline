@@ -982,6 +982,159 @@
                 "cssb/74"
             ],
             "chapter_id": 11,
+        },
+
+        {
+            "id": "AA1",
+            "game": "cs",
+            "name": "The Riches of the Steelsilk",
+            "coordinates": {},
+            "pages": [
+                "csao/5",
+                "csao/6"
+            ],
+            "chapter_id": 12,
+        },
+        {
+            "id": "AA2",
+            "game": "cs",
+            "name": "Malign Echoes",
+            "coordinates": {},
+            "pages": [
+                "csao/7",
+                "csao/8"
+            ],
+            "chapter_id": 12,
+        },
+        {
+            "id": "AA3",
+            "game": "cs",
+            "name": "Hive Guardian",
+            "solo": "AA",
+            "coordinates": {},
+            "pages": [
+                "csao/9",
+                "csao/10"
+            ],
+            "chapter_id": 11,
+        },
+
+        {
+            "id": "QA1",
+            "game": "cs",
+            "name": "Capstone Test",
+            "coordinates": {},
+            "pages": [
+                "csao/15",
+                "csao/16",
+                "csao/17"
+            ],
+            "chapter_id": 13,
+        },
+        {
+            "id": "QA2",
+            "game": "cs",
+            "name": "Mother Lode",
+            "coordinates": {},
+            "pages": [
+                "csao/18",
+                "csao/19",
+                "csao/20"
+            ],
+            "chapter_id": 13,
+        },
+        {
+            "id": "QA3",
+            "game": "cs",
+            "name": "Magnum Opus",
+            "solo": "QA",
+            "coordinates": {},
+            "pages": [
+                "csao/23",
+                "csao/24"
+            ],
+            "chapter_id": 11,
+        },
+
+        {
+            "id": "RM1",
+            "game": "cs",
+            "name": "Mind your Manners",
+            "coordinates": {},
+            "pages": [
+                "csao/29",
+                "csao/30"
+            ],
+            "chapter_id": 14,
+        },
+        {
+            "id": "RM2",
+            "game": "cs",
+            "name": "Sinking Kingdom",
+            "coordinates": {},
+            "pages": [
+                "csao/31",
+                "csao/32"
+            ],
+            "chapter_id": 14,
+        },
+        {
+            "id": "RM3",
+            "game": "cs",
+            "name": "Ruined Colony",
+            "coordinates": {},
+            "pages": [
+                "csao/33",
+                "csao/34"
+            ],
+            "chapter_id": 14,
+        },
+        {
+            "id": "RM4",
+            "game": "cs",
+            "name": "Terrorscale Lair",
+            "coordinates": {},
+            "pages": [
+                "csao/35",
+                "csao/36"
+            ],
+            "chapter_id": 14,
+        },
+        {
+            "id": "RM5",
+            "game": "cs",
+            "name": "Unseen Plight",
+            "coordinates": {},
+            "pages": [
+                "csao/37",
+                "csao/38",
+                "csao/39"
+            ],
+            "chapter_id": 14,
+        },
+        {
+            "id": "RM6",
+            "game": "cs",
+            "name": "The Fall of Shadow's Respite",
+            "solo": "RM",
+            "coordinates": {},
+            "pages": [
+                "csao/40",
+                "csao/41"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": "RM7",
+            "game": "cs",
+            "name": "Insatiable",
+            "coordinates": {},
+            "pages": [
+                "csao/42",
+                "csao/43",
+                "csao/44"
+            ],
+            "chapter_id": 14,
             ]
         }
     ],
