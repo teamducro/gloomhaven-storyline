@@ -657,6 +657,130 @@
                 "cssb/44",
                 "cssb/45"
             ]
+        },
+
+        {
+            "id": 40,
+            "game": "cs",
+            "name": "Smugglers Hideout",
+            "coordinates": {},
+            "pages": [
+                "cs/55",
+                "cssb/44",
+                "cssb/45"
+            ],
+            "chapter_id": 8,
+        },
+        {
+            "id": 41,
+            "game": "cs",
+            "name": "Curse of the Void",
+            "coordinates": {},
+            "pages": [
+                "cs/56",
+                "cssb/45",
+                "cssb/46"
+            ],
+            "chapter_id": 8,
+        },
+        {
+            "id": 42,
+            "game": "cs",
+            "name": "Unnatural Beasts",
+            "coordinates": {},
+            "pages": [
+                "cs/57",
+                "cssb/45",
+                "cssb/46",
+                "cssb/47"
+            ],
+            "chapter_id": 8,
+        },
+        {
+            "id": 43,
+            "game": "cs",
+            "name": "Mansion Maze",
+            "coordinates": {},
+            "pages": [
+                "cs/58",
+                "cssb/47",
+                "cssb/48"
+            ],
+            "chapter_id": 8,
+        },
+        {
+            "id": 44,
+            "game": "cs",
+            "name": "Haunted Manor",
+            "coordinates": {},
+            "pages": [
+                "cs/59",
+                "cssb/49",
+                "cssb/52"
+            ],
+            "chapter_id": 8,
+        },
+        {
+            "id": 45,
+            "game": "cs",
+            "name": "Defend the Swamp",
+            "coordinates": {},
+            "pages": [
+                "cs/60",
+                "cssb/50",
+                "cssb/51"
+            ],
+            "chapter_id": 8,
+        {
+            "id": 46,
+            "game": "cs",
+            "name": "Vermling Gardens",
+            "coordinates": {},
+            "pages": [
+                "cs/61",
+                "cssb/51"
+            ]
+        },
+        {
+            "id": 47,
+            "game": "cs",
+            "name": "Viper Marsh",
+            "coordinates": {},
+            "pages": [
+                "cs/62",
+                "cssb/54"
+            ]
+        },
+        {
+            "id": 48,
+            "game": "cs",
+            "name": "Forest Fire",
+            "coordinates": {},
+            "pages": [
+                "cs/63",
+                "cssb/52",
+                "cssb/56"
+            ]
+        },
+        {
+            "id": 49,
+            "game": "cs",
+            "name": "Oak Invasion A",
+            "coordinates": {},
+            "pages": [
+                "cs/64",
+                "cssb/55"
+            ]
+        },
+        {
+            "id": 50,
+            "game": "cs",
+            "name": "Oak Invasion B",
+            "coordinates": {},
+            "pages": [
+                "cs/65",
+                "cssb/56"
+            ]
         }
     ],
     "chapters": [
@@ -690,7 +814,7 @@
         },
         {
             "id": 8,
-            "name": "Road Events"
+            "name": "Events"
         },
         {
             "id": 9,
