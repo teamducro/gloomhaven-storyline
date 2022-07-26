@@ -11,6 +11,14 @@
                 "cssb/2"
             ],
             "chapter_id": 1,
+            "requirements": "Ooze Destroyed (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PCSOD"
+                    ]
+                }
+            ],
             "links_to": [
                 2
             ],

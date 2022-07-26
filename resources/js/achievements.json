@@ -626,5 +626,13 @@
         "type": "Global",
         "game": "gh",
         "x": 84.6
+    },
+    
+    {
+        "id": "PCSOD",
+        "name": "Ooze Destroyed",
+        "type": "Party",
+        "game": "cs",
+        "x": -1
     }
 ]
