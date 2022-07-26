@@ -13,6 +13,11 @@
             "chapter_id": 1,
             "links_to": [
                 2
+            ],
+            "monsters": [
+                "spitting-drake",
+                "vermling-scout",
+                "water-spirit"
             ]
         },
         {
@@ -30,6 +35,12 @@
             ],
             "linked_from": [
                 1
+            ],
+            "monsters": [
+                "deep-terror",
+                "inox-archer",
+                "inox-guard",
+                "water-spirit"
             ]
         },
         {
@@ -48,6 +59,11 @@
             ],
             "linked_from": [
                 2
+            ],
+            "monsters": [
+                "giant-viper",
+                "lurker",
+                "hydra-spirit"
             ]
         },
         {
@@ -66,6 +82,13 @@
             ],
             "linked_from": [
                 3
+            ],
+            "monsters": [
+              "city-archer",
+              "city-guard",
+              "blood-ooze",
+              "flaming-drake",
+              "toxic-imp"
             ]
         },
         {
@@ -83,6 +106,12 @@
             ],
             "linked_from": [
                 4
+            ],
+            "monsters": [
+              "blood-ooze",
+              "earth-demon",
+              "flaming-drake",
+              "toxic-imp"
             ]
         },
         {
@@ -98,6 +127,12 @@
             "chapter_id": 2,
             "linked_from": [
                 5
+            ],
+            "monsters": [
+              "blood-ooze",
+              "flaming-drake",
+              "toxic-imp",
+              "water-spirit"
             ]
         },
         {
@@ -117,6 +152,14 @@
             ],
             "linked_from": [
                 3
+            ],
+            "monsters": [
+              "cave-bear",
+              "forest-imp",
+              "giant-viper",
+              "hound",
+              "spitting-drake",
+              "rending-drake"
             ]
         },
         {
@@ -134,6 +177,11 @@
             ],
             "linked_from": [
                 7
+            ],
+            "monsters": [
+              "ancient-artillery",
+              "living-spirit",
+              "stone-golem"
             ]
         },
         {
@@ -154,6 +202,12 @@
             ],
             "linked_from": [
                 8
+            ],
+            "monsters": [
+              "ancient-artillery",
+              "cave-bear",
+              "city-archer",
+              "city-guard"
             ]
         },
         {
@@ -174,6 +228,10 @@
             ],
             "linked_from": [
                 7
+            ],
+            "monsters": [
+              "black-imp",
+              "lurker"
             ]
         },
         {
@@ -191,6 +249,13 @@
             ],
             "linked_from": [
                 9
+            ],
+            "monsters": [
+              "flame-demon",
+              "inox-archer",
+              "inox-guard",
+              "inox-shaman",
+              "night-demon"
             ]
         },
         {
@@ -208,6 +273,12 @@
             ],
             "linked_from": [
                 11
+            ],
+            "monsters": [
+              "flame-demon",
+              "giant-viper",
+              "rending-drake",
+              "spitting-drake"
             ]
         },
         {
@@ -222,6 +293,11 @@
             "chapter_id": 1,
             "linked_from": [
                 9
+            ],
+            "monsters": [
+              "living-corpse",
+              "lurker",
+              "ooze"
             ]
         },
         {
@@ -237,6 +313,12 @@
             "chapter_id": 1,
             "linked_from": [
                 9
+            ],
+            "monsters": [
+              "cultist",
+              "deep-terror",
+              "living-corpse",
+              "living-bones"
             ]
         },
         {
@@ -254,6 +336,13 @@
             ],
             "linked_from": [
                 12
+            ],
+            "monsters": [
+              "cave-bear",
+              "giant-viper",
+              "hound",
+              "lurker",
+              "rending-drake"
             ]
         },
         {
@@ -268,6 +357,12 @@
             "chapter_id": 5,
             "linked_from": [
                 15
+            ],
+            "monsters": [
+              "black-imp",
+              "flame-demon",
+              "night-demon",
+              "sun-demon"
             ]
         },
         {
@@ -287,6 +382,13 @@
             ],
             "linked_from": [
                 10
+            ],
+            "monsters": [
+              "earth-demon",
+              "flame-demon",
+              "frost-demon",
+              "savvas-icestorm",
+              "wind-demon"
             ]
         },
         {
@@ -306,6 +408,12 @@
             ],
             "linked_from": [
                 17
+            ],
+            "monsters": [
+              "black-imp",
+              "deep-terror",
+              "harrower-infester",
+              "night-demon"
             ]
         },
         {
@@ -326,6 +434,15 @@
             ],
             "linked_from": [
                 10
+            ],
+            "monsters": [
+              "earth-demon",
+              "flame-demon",
+              "frost-demon",
+              "night-demon",
+              "sun-demon",
+              "vermling-scout",
+              "wind-demon"
             ]
         },
         {
@@ -345,6 +462,12 @@
             ],
             "linked_from": [
                 18
+            ],
+            "monsters": [
+                "the-cultist",
+                "deep-terror",
+                "living-spirit",
+                "living-bones"
             ]
         },
         {
@@ -362,6 +485,10 @@
             ],
             "linked_from": [
                 18
+            ],
+            "monsters": [
+              "earth-demon",
+              "flame-demon"
             ]
         },
         {
@@ -377,6 +504,11 @@
             "chapter_id": 1,
             "linked_from": [
                 20
+            ],
+            "monsters": [
+              "black-imp",
+              "forest-imp",
+              "harrower-infester"
             ]
         },
         {
@@ -395,6 +527,11 @@
             ],
             "linked_from": [
                 19
+            ],
+            "monsters": [
+              "frozen-cadaver",
+              "hail-demon",
+              "harrower-icecrawlers"
             ]
         },
         {
@@ -413,6 +550,11 @@
             ],
             "linked_from": [
                 19
+            ],
+            "monsters": [
+              "frozen-cadaver",
+              "hail-demon",
+              "harrower-icecrawlers"
             ]
         },
         {
@@ -454,6 +596,11 @@
             "linked_from": [
                 23,
                 26
+            ],
+            "monsters": [
+              "frozen-cadaver",
+              "hail-demon",
+              "harrower-icecrawlers"
             ]
         },
         {
@@ -471,6 +618,11 @@
             ],
             "linked_from": [
                 21
+            ],
+            "monsters": [
+              "frost-demon",
+              "stone-golem",
+              "wind-demon"
             ]
         },
         {
@@ -489,6 +641,11 @@
             ],
             "linked_from": [
                 27
+            ],
+            "monsters": [
+              "cultist",
+              "living-bones",
+              "ooze"
             ]
         },
         {
@@ -507,6 +664,11 @@
             ],
             "linked_from": [
                 28
+            ],
+            "monsters": [
+              "living-bones",
+              "living-corpse",
+              "living-spirit"
             ]
         },
         {
@@ -525,6 +687,11 @@
             ],
             "linked_from": [
                 29
+            ],
+            "monsters": [
+              "black-imp",
+              "living-corpse",
+              "stone-golem"
             ]
         },
         {
@@ -540,6 +707,12 @@
             "chapter_id": 3,
             "linked_from": [
                 25
+            ],
+            "monsters": [
+              "harrower-infester",
+              "living-spirit",
+              "rending-drake",
+              "spitting-drake"
             ]
         },
         {
@@ -555,6 +728,14 @@
             "chapter_id": 1,
             "linked_from": [
                 30
+            ],
+            "monsters": [
+              "ancient-artillery",
+              "inox-archer",
+              "inox-bodyguard",
+              "inox-guard",
+              "living-bones",
+              "jekserah"
             ]
         },
         {
@@ -570,6 +751,12 @@
             "chapter_id": 7,
             "links_to": [
                 34
+            ],
+            "monsters": [
+              "inox-archer",
+              "inox-bodyguard",
+              "inox-guard",
+              "inox-shaman"
             ]
         },
         {
@@ -585,6 +772,12 @@
             "chapter_id": 7,
             "linked_from": [
                 33
+            ],
+            "monsters": [
+              "hound",
+              "inox-archer",
+              "inox-guard",
+              "inox-shaman"
             ]
         },
         {
@@ -600,6 +793,12 @@
             "chapter_id": 7,
             "links_to": [
                 36
+            ],
+            "monsters": [
+              "bandit-archer",
+              "bandit-guard",
+              "night-demon",
+              "wind-demon"
             ]
         },
         {
@@ -615,6 +814,11 @@
             "chapter_id": 7,
             "linked_from": [
                 35
+            ],
+            "monsters": [
+              "bandit-archer",
+              "bandit-guard",
+              "hound"
             ]
         },
         {
@@ -630,6 +834,13 @@
             "chapter_id": 7,
             "links_to": [
                 38
+            ],
+            "monsters": [
+              "flame-demon",
+              "frost-demon",
+              "night-demon",
+              "sun-demon",
+              "vermling-scout"
             ]
         },
         {
@@ -645,6 +856,12 @@
             "chapter_id": 7,
             "linked_from": [
                 37
+            ],
+            "monsters": [
+              "black-imp",
+              "living-spirit",
+              "night-demon",
+              "stone-golem"
             ]
         },
         {
@@ -658,6 +875,9 @@
                 "cssb/45"
             ],
             "chapter_id": 7,
+            "monsters": [
+              "earth-demon",
+              "giant-viper"
             ]
         },
 
@@ -672,6 +892,10 @@
                 "cssb/45"
             ],
             "chapter_id": 9,
+            "monsters": [
+              "rending-drake",
+              "spitting-drake"
+            ]
         },
         {
             "id": 41,
@@ -684,6 +908,10 @@
                 "cssb/46"
             ],
             "chapter_id": 9,
+            "monsters": [
+              "bandit-archer",
+              "bandit-guard"
+            ]
         },
         {
             "id": 42,
@@ -697,6 +925,11 @@
                 "cssb/47"
             ],
             "chapter_id": 9,
+            "monsters": [
+              "cave-bear",
+              "giant-viper",
+              "hound"
+            ]
         },
         {
             "id": 43,
@@ -709,6 +942,11 @@
                 "cssb/48"
             ],
             "chapter_id": 9,
+            "monsters": [
+              "ancient-artillery",
+              "city-guard",
+              "stone-golem"
+            ]
         },
         {
             "id": 44,
@@ -721,6 +959,11 @@
                 "cssb/52"
             ],
             "chapter_id": 9,
+            "monsters": [
+              "harrower-infester",
+              "living-spirit",
+              "night-demon"
+            ]
         },
         {
             "id": 45,
@@ -733,6 +976,12 @@
                 "cssb/51"
             ],
             "chapter_id": 8,
+            "monsters": [
+              "black-imp",
+              "land-leviathan",
+              "forest-imp"
+            ]
+        },
         {
             "id": 46,
             "game": "cs",
@@ -743,6 +992,11 @@
                 "cssb/51"
             ],
             "chapter_id": 8,
+            "monsters": [
+              "cave-bear",
+              "hound",
+              "vermling-scout",
+              "vermling-shaman"
             ]
         },
         {
@@ -755,6 +1009,10 @@
                 "cssb/54"
             ],
             "chapter_id": 8,
+            "monsters": [
+              "earth-demon",
+              "giant-viper",
+              "ooze"
             ]
         },
         {
@@ -768,6 +1026,12 @@
                 "cssb/56"
             ],
             "chapter_id": 8,
+            "monsters": [
+              "giant-viper",
+              "inox-archer",
+              "inox-guard",
+              "inox-shaman",
+              "spitting-drake"
             ]
         },
         {
@@ -780,6 +1044,13 @@
                 "cssb/55"
             ],
             "chapter_id": 9,
+            "monsters": [
+              "city-archer",
+              "city-guard",
+              "inox-archer",
+              "inox-bodyguard",
+              "inox-guard",
+              "inox-shaman"
             ]
         },
         {
@@ -792,6 +1063,14 @@
                 "cssb/56"
             ],
             "chapter_id": 9,
+            "monsters": [
+              "captain-of-the-guard",
+              "cave-bear",
+              "city-archer",
+              "city-guard",
+              "inox-archer",
+              "inox-guard"
+            ]
         },
         {
             "id": 51,
@@ -804,6 +1083,12 @@
                 "cssb/58"
             ],
             "chapter_id": 10,
+            "monsters": [
+              "flame-demon",
+              "sun-demon",
+              "vermling-scout",
+              "vermling-shaman"
+            ]
         },
         {
             "id": 52,
@@ -817,6 +1102,12 @@
                 "cssb/59"
             ],
             "chapter_id": 10,
+            "monsters": [
+              "black-imp",
+              "living-corpse",
+              "ooze",
+              "spitting-drake"
+            ]
         },
         {
             "id": 53,
@@ -829,6 +1120,11 @@
                 "cssb/61"
             ],
             "chapter_id": 10,
+            "monsters": [
+              "lurker",
+              "spitting-drake",
+              "water-spirit"
+            ]
         },
         {
             "id": 54,
@@ -841,6 +1137,10 @@
                 "cssb/62"
             ],
             "chapter_id": 10,
+            "monsters": [
+              "hanging-snake",
+              "dark-lurker"
+            ]
         },
         {
             "id": 55,
@@ -854,6 +1154,14 @@
                 "cssb/63"
             ],
             "chapter_id": 10,
+            "monsters": [
+              "bandit-archer",
+              "earth-demon",
+              "harrower-infester",
+              "living-bones",
+              "living-corpse",
+              "stone-golem"
+            ]
         },
 
         {
@@ -867,6 +1175,10 @@
                 "cssb/64"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "ancient-artillery",
+              "stone-golem"
+            ]
         },
         {
             "id": 57,
@@ -879,6 +1191,14 @@
                 "cssb/65"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "black-imp",
+              "deep-terror",
+              "hound",
+              "lurker",
+              "rending-drake",
+              "spitting-drake"
+            ]
         },
         {
             "id": 58,
@@ -890,6 +1210,10 @@
                 "cssb/66"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "bandit-archer",
+              "bandit-guard"
+            ]
         },
         {
             "id": 59,
@@ -901,6 +1225,13 @@
                 "cssb/67"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "cave-bear",
+              "giant-viper",
+              "hound",
+              "vermling-scout",
+              "vermling-shaman"
+            ]
         },
         {
             "id": 60,
@@ -913,6 +1244,12 @@
                 "cssb/69"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "flame-demon",
+              "rending-drake-cs",
+              "savvas-lavaflow",
+              "spitting-drake"
+            ]
         },
         {
             "id": 61,
@@ -924,6 +1261,13 @@
                 "cssb/69"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "ancient-artillery",
+              "black-imp",
+              "lurker",
+              "rending-drake",
+              "stone-golem"
+            ]
         },
         {
             "id": 62,
@@ -936,6 +1280,12 @@
                 "cssb/71"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "aesther-ashblade",
+              "cave-bear",
+              "forest-imp",
+              "vermling-shaman"
+            ]
         },
         {
             "id": 63,
@@ -947,6 +1297,14 @@
                 "cssb/72"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "cave-bear",
+              "giant-viper",
+              "inox-archer",
+              "living-corpse",
+              "living-spirit",
+              "stone-golem"
+            ]
         },
         {
             "id": 64,
@@ -959,6 +1317,10 @@
                 "cssb/73"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "deep-terror",
+              "lurker"
+            ]
         },
         {
             "id": 65,
@@ -971,6 +1333,9 @@
                 "cssb/74"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "vermling-shaman"
+            ]
         },
         {
             "id": 66,
@@ -982,6 +1347,14 @@
                 "cssb/74"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "city-archer",
+              "city-guard",
+              "earth-demon",
+              "harrower-infester",
+              "night-demon",
+              "sun-demon"
+            ]
         },
 
         {
@@ -994,6 +1367,14 @@
                 "csao/6"
             ],
             "chapter_id": 12,
+            "monsters": [
+              "harrower-aegis",
+              "hound",
+              "bandit-archer",
+              "bandit-guard",
+              "wind-demon",
+              "frost-demon"
+            ]
         },
         {
             "id": "AA2",
@@ -1005,6 +1386,13 @@
                 "csao/8"
             ],
             "chapter_id": 12,
+            "monsters": [
+              "giant-viper",
+              "ravenous-gharial",
+              "black-imp",
+              "harrower-aegis",
+              "harrower-infester"
+            ]
         },
         {
             "id": "AA3",
@@ -1017,6 +1405,14 @@
                 "csao/10"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "flame-demon",
+              "frost-demon",
+              "wind-demon",
+              "earth-demon",
+              "night-demon",
+              "sun-demon"
+            ]
         },
 
         {
@@ -1030,6 +1426,10 @@
                 "csao/17"
             ],
             "chapter_id": 13,
+            "monsters": [
+              "clockwork-soldier",
+              "clockwork-railcaster"
+            ]
         },
         {
             "id": "QA2",
@@ -1042,6 +1442,13 @@
                 "csao/20"
             ],
             "chapter_id": 13,
+            "monsters": [
+              "giant-viper",
+              "living-bones",
+              "ooze",
+              "living-corpse",
+              "living-spirit"
+            ]
         },
         {
             "id": "QA3",
@@ -1054,6 +1461,10 @@
                 "csao/24"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "clockwork-soldier",
+              "clockwork-railcaster"
+            ]
         },
 
         {
@@ -1066,6 +1477,12 @@
                 "csao/30"
             ],
             "chapter_id": 14,
+            "monsters": [
+              "bandit-guard-hired-muscle",
+              "bandit-archer-hired-muscle",
+              "inox-guard",
+              "inox-archer"
+            ]
         },
         {
             "id": "RM2",
@@ -1077,6 +1494,14 @@
                 "csao/32"
             ],
             "chapter_id": 14,
+            "monsters": [
+              "bandit-guard",
+              "bandit-archer",
+              "inox-guard",
+              "inox-archer",
+              "inox-bloodguard",
+              "goremyon-shatter-mind"
+            ]
         },
         {
             "id": "RM3",
@@ -1088,6 +1513,13 @@
                 "csao/34"
             ],
             "chapter_id": 14,
+            "monsters": [
+              "hound",
+              "giant-viper",
+              "cave-bear",
+              "ooze",
+              "gnashing-drake"
+            ]
         },
         {
             "id": "RM4",
@@ -1099,6 +1531,12 @@
                 "csao/36"
             ],
             "chapter_id": 14,
+            "monsters": [
+              "terrorscale-drake",
+              "gnashing-drake",
+              "spitting-drake",
+              "rending-drake"
+            ]
         },
         {
             "id": "RM5",
@@ -1111,6 +1549,10 @@
                 "csao/39"
             ],
             "chapter_id": 14,
+            "monsters": [
+              "ravenous-gharial",
+              "black-imp"
+            ]
         },
         {
             "id": "RM6",
@@ -1123,6 +1565,13 @@
                 "csao/41"
             ],
             "chapter_id": 11,
+            "monsters": [
+              "gnashing-drake",
+              "spitting-drake",
+              "rending-drake",
+              "vermling-scout-ally",
+              "vermling-shaman-ally"
+            ]
         },
         {
             "id": "RM7",
@@ -1135,6 +1584,12 @@
                 "csao/44"
             ],
             "chapter_id": 14,
+            "monsters": [
+              "hound",
+              "ruinmaw",
+              "vermling-shaman",
+              "vermling-scout",
+              "giant-viper"
             ]
         }
     ],
@@ -1182,6 +1637,18 @@
         {
             "id": 11,
             "name": "Solo Quests"
+        },
+        {
+            "id": 12,
+            "name": "Beetle Scenarios (Add-on)"
+        },
+        {
+            "id": 13,
+            "name": "Tools Scenarios (Add-on)"
+        },
+        {
+            "id": 14,
+            "name": "Bleeding Claw Scenarios (Add-on)"
         }
     ],
     "regions": [
