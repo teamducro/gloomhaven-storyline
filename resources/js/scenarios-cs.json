@@ -792,6 +792,196 @@
                 "cssb/56"
             ],
             "chapter_id": 9,
+        },
+        {
+            "id": 51,
+            "game": "cs",
+            "name": "Rodent Warehouse",
+            "coordinates": {},
+            "pages": [
+                "cs/66",
+                "cssb/57",
+                "cssb/58"
+            ],
+            "chapter_id": 10,
+        },
+        {
+            "id": 52,
+            "game": "cs",
+            "name": "Wishing Well",
+            "coordinates": {},
+            "pages": [
+                "cs/67",
+                "cssb/57",
+                "cssb/58",
+                "cssb/59"
+            ],
+            "chapter_id": 10,
+        },
+        {
+            "id": 53,
+            "game": "cs",
+            "name": "Cave of Currents",
+            "coordinates": {},
+            "pages": [
+                "cs/68",
+                "cssb/59",
+                "cssb/61"
+            ],
+            "chapter_id": 10,
+        },
+        {
+            "id": 54,
+            "game": "cs",
+            "name": "Lair of Horrors",
+            "coordinates": {},
+            "pages": [
+                "cs/69",
+                "cssb/61",
+                "cssb/62"
+            ],
+            "chapter_id": 10,
+        },
+        {
+            "id": 55,
+            "game": "cs",
+            "name": "Catacomb Plunder",
+            "coordinates": {},
+            "pages": [
+                "cs/70",
+                "cs/71",
+                "cssb/62",
+                "cssb/63"
+            ],
+            "chapter_id": 10,
+        },
+
+        {
+            "id": 56,
+            "game": "cs",
+            "name": "Disarm the Machine",
+            "coordinates": {},
+            "pages": [
+                "cs/72",
+                "cssb/63",
+                "cssb/64"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": 57,
+            "game": "cs",
+            "name": "Elemental Converter",
+            "coordinates": {},
+            "pages": [
+                "cs/73",
+                "cssb/64",
+                "cssb/65"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": 58,
+            "game": "cs",
+            "name": "Penitentiary Lockdown",
+            "coordinates": {},
+            "pages": [
+                "cs/74",
+                "cssb/66"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": 59,
+            "game": "cs",
+            "name": "Forest Invaders",
+            "coordinates": {},
+            "pages": [
+                "cs/75",
+                "cssb/67"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": 60,
+            "game": "cs",
+            "name": "Through the Fire and Flames",
+            "coordinates": {},
+            "pages": [
+                "cs/76",
+                "cssb/67",
+                "cssb/69"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": 61,
+            "game": "cs",
+            "name": "Archaic Preservation",
+            "coordinates": {},
+            "pages": [
+                "cs/77",
+                "cssb/69"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": 62,
+            "game": "cs",
+            "name": "Hallow Redemption",
+            "coordinates": {},
+            "pages": [
+                "cs/78",
+                "cssb/70",
+                "cssb/71"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": 63,
+            "game": "cs",
+            "name": "A Cornered Viper",
+            "coordinates": {},
+            "pages": [
+                "cs/79",
+                "cssb/72"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": 64,
+            "game": "cs",
+            "name": "Glowing Crystals",
+            "coordinates": {},
+            "pages": [
+                "cs/80",
+                "cssb/72",
+                "cssb/73"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": 65,
+            "game": "cs",
+            "name": "Glowing Crystals",
+            "coordinates": {},
+            "pages": [
+                "cs/81",
+                "cssb/73",
+                "cssb/74"
+            ],
+            "chapter_id": 11,
+        },
+        {
+            "id": 66,
+            "game": "cs",
+            "name": "Otherworldly Strangers",
+            "coordinates": {},
+            "pages": [
+                "cs/82",
+                "cssb/74"
+            ],
+            "chapter_id": 11,
             ]
         }
     ],
