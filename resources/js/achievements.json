@@ -675,5 +675,18 @@
         "name": "Feirgrin's Request",
         "type": "Party",
         "game": "cs"
+    },
+    {
+        "id": "PCSPL",
+        "name": "A Potion Lost",
+        "type": "Party",
+        "game": "cs"
+    },
+    {
+        "id": "PCSTM",
+        "name": "Take the Money",
+        "type": "Party",
+        "game": "cs"
     }
+    
 ]

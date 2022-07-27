@@ -47,12 +47,19 @@ export default {
         "2": "B: Assist the Humans",
         "3": "C: Fight both sides",
         "title": "Bloody Demon War",
-        "text": "Which side dit you choose?"
+        "text": "Which side did you choose?"
     },
     "escapeFromTheHusk": {
-        "1": "All characters escaped",
+        "1": "All characters escaped.",
         "2": "???",
         "title": "Escape from The Husk",
         "text": "Did all characters escape through an exit?"
+    },
+
+    "undeadTerrors" {
+        "1": "Give the potion to Selandre.",
+        "2": "Tell Selandre the potion was destroyed.",
+        "title": "Can you trust Selandre?",
+        "text": "Do you listen to Dominic's last words or your greed?"
     }
 }

@@ -819,6 +819,23 @@
             "linked_from": [
                 29
             ],
+            "prompt": "undeadTerrors",
+            "achievements_awarded_by_choice": [
+                [
+                    "PCSTM"
+                ],
+                [
+                    "PCSPL"
+                ]
+            ],
+            "rewards": [
+                [
+                    "70 collective gold"
+                ],
+                [
+                    "10 experience each"
+                ]
+            ],
             "monsters": [
                 "black-imp",
                 "living-corpse",
