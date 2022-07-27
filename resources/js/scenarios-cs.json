@@ -60,6 +60,10 @@
             "linked_from": [
                 2
             ],
+            "rewards": [
+                "10 experience each",
+                "+1 prosperity"
+            ],
             "monsters": [
                 "giant-viper",
                 "lurker",
@@ -78,10 +82,16 @@
             ],
             "chapter_id": 2,
             "links_to": [
-                5
+                5,
+                6
             ],
             "linked_from": [
                 3
+            ],
+            "rewards": [
+                "Gain “Slug Crossbow” (Item 84)",
+                "Each character gains one random “Orb” item (Item 1-10)",
+                "TODO:: gain slug cross bow... what is party goal?"
             ],
             "monsters": [
                 "city-archer",
@@ -106,6 +116,14 @@
             ],
             "linked_from": [
                 4
+            ],
+            "rewards": [
+                "Gain “Slug Crossbow” (Item 84)",
+                "Each character gains one random “Orb” item (Item 1-10)",
+                "TODO:: gain slug cross bow... what is party goal?"
+            ],
+            "achievements_awarded": [
+                "PCSOD"
             ],
             "monsters": [
                 "blood-ooze",
@@ -136,6 +154,11 @@
             "linked_from": [
                 5
             ],
+            "rewards": [
+                "+2 reputation",
+                "+1 prosperity",
+                "Gain “Stun Powder” (Item 21)"
+            ],
             "monsters": [
                 "blood-ooze",
                 "flaming-drake",
@@ -152,6 +175,7 @@
                 "cs/19",
                 "cssb/6",
                 "cssb/7"
+                "cssb/9"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -160,6 +184,13 @@
             ],
             "linked_from": [
                 3
+            ],
+            "rewards": [
+                "Gain 30 collective gold",
+                "Each character gains one random “Orb” item (Item 1-10)"
+            ],
+            "achievements_awarded": [
+                "PCSFM"
             ],
             "monsters": [
                 "cave-bear",
@@ -186,6 +217,10 @@
             "linked_from": [
                 7
             ],
+            "rewards": [
+                "Gain “Curious Pendant” (Item 20)",
+                "Each character gains one random “Orb” item (Item 1-10)"
+            ],
             "monsters": [
                 "ancient-artillery",
                 "living-spirit",
@@ -205,11 +240,16 @@
             ],
             "chapter_id": 1,
             "links_to": [
+                11,
                 13,
                 14
             ],
             "linked_from": [
                 8
+            ],
+            "rewards": [
+                "10 gold each",
+                "Gain “Smog Emitter” (Item 62)"
             ],
             "monsters": [
                 "ancient-artillery",
@@ -236,6 +276,10 @@
             ],
             "linked_from": [
                 7
+            ],
+            "rewards": [
+                "Gain “Minor Mana Potion” (Item 12)",
+                "Gain “Minor Healing Potion” (Item 20)"
             ],
             "monsters": [
                 "black-imp",
@@ -302,6 +346,11 @@
             "linked_from": [
                 9
             ],
+            "rewards": [
+                "Gain “Bulkwark Banner” (Item 85)",
+                "+1 prosperity",
+                "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\nIf there are non of these available in the shop, gain 20 gold instead"
+            ],
             "monsters": [
                 "living-corpse",
                 "lurker",
@@ -321,6 +370,10 @@
             "chapter_id": 1,
             "linked_from": [
                 9
+            ],
+            "rewards": [
+                "Gain “Remote Beetle” (Item 86)",
+                "15 experience each"
             ],
             "monsters": [
                 "cultist",
@@ -366,6 +419,10 @@
             "linked_from": [
                 15
             ],
+            "rewards": [
+                "10 gold each",
+                "One character gains one {+1_WHITE} enhancement to any Level 1 or X card"
+            ],
             "monsters": [
                 "black-imp",
                 "flame-demon",
@@ -390,6 +447,9 @@
             ],
             "linked_from": [
                 10
+            ],
+            "rewards": [
+                "+2 prosperity"
             ],
             "monsters": [
                 "earth-demon",
@@ -417,6 +477,9 @@
             "linked_from": [
                 17
             ],
+            "rewards": [
+                "100 gold each This money must immediately be spent on enhancements"
+            ],
             "monsters": [
                 "black-imp",
                 "deep-terror",
@@ -442,6 +505,9 @@
             ],
             "linked_from": [
                 10
+            ],
+            "rewards": [
+                "Gain “Major Mana Potion” (Item 48)"
             ],
             "monsters": [
                 "earth-demon",
@@ -479,6 +545,11 @@
             "linked_from": [
                 18
             ],
+            "rewards": [
+                "+1 reputation",
+                "+1 prosperity",
+                "Each character gains one random “Orb” item (Item 1-10)"
+            ],
             "monsters": [
                 "the-cultist",
                 "deep-terror",
@@ -502,6 +573,12 @@
             "linked_from": [
                 18
             ],
+            "achievements_awarded": [
+                "PCSFL"
+            ],
+            "rewards": [
+                "Gain “Magma Waders” (Item 99)"
+            ],
             "monsters": [
                 "earth-demon",
                 "flame-demon"
@@ -520,6 +597,9 @@
             "chapter_id": 1,
             "linked_from": [
                 20
+            ],
+            "rewards": [
+                "Each character gains +2 gold and 2 experience for each money token looted."
             ],
             "monsters": [
                 "black-imp",
@@ -544,6 +624,12 @@
             "linked_from": [
                 19
             ],
+            "achievements_awarded": [
+                "PCSFW"
+            ],
+            "rewards": [
+                "15 experience each"
+            ],
             "monsters": [
                 "frozen-cadaver",
                 "hail-demon",
@@ -567,6 +653,12 @@
             "linked_from": [
                 19
             ],
+            "achievements_awarded": [
+                "PCSFW"
+            ],
+            "rewards": [
+                "Each character gains one random “Orb” item (Item 1-10)"
+            ],
             "monsters": [
                 "frozen-cadaver",
                 "hail-demon",
@@ -589,6 +681,10 @@
             ],
             "linked_from": [
                 19
+            ],
+            "rewards": [
+                "+1 reputation",
+                "Add Road Event 57 to the deck"
             ],
             "monsters": [
                 "forest-imp",
@@ -621,6 +717,10 @@
                 23,
                 26
             ],
+            "rewards": [
+                "20 experience each",
+                "1 ✓ each"
+            ],
             "monsters": [
                 "frozen-cadaver",
                 "hail-demon",
@@ -642,6 +742,10 @@
             ],
             "linked_from": [
                 21
+            ],
+            "rewards": [
+                "10 gold each",
+                "Gain “Dizzying Tincture” (Item 58)"
             ],
             "monsters": [
                 "frost-demon",
@@ -665,6 +769,9 @@
             ],
             "linked_from": [
                 27
+            ],
+            "rewards": [
+                "1 ✓ each"
             ],
             "monsters": [
                 "cultist",

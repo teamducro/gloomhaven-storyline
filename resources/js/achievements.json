@@ -641,6 +641,12 @@
         "game": "cs"
     },
     {
+        "id": "PCSFM",
+        "name": "Follow the Money",
+        "type": "Party",
+        "game": "cs"
+    },
+    {
         "id": "PCSFW",
         "name": "Frozen Warrior",
         "type": "Party",
