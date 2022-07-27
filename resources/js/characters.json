@@ -1183,7 +1183,7 @@
             "perks": [
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} \"Place one {COLONY} token of your choice on any empty hex within {RANGE}2\" card"
+                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} “Place one {COLONY} token of your choice on any empty hex within {RANGE}2” card"
                 },
                 {
                     "count": 1,
@@ -1788,7 +1788,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Gain \"Poison Dagger\" (Item 011). You may carry one additional {ONE_HAND} item with \"Dagger\" in its name."
+                    "desc": "TODO:: Gain “Poison Dagger” (Item 011). You may carry one additional {ONE_HAND} item with “Dagger” in its name."
                 },
                 {
                     "count": 1,
