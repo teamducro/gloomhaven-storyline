@@ -632,7 +632,42 @@
         "id": "PCSOD",
         "name": "Ooze Destroyed",
         "type": "Party",
-        "game": "cs",
-        "x": -1
+        "game": "cs"
+    },
+    {
+        "id": "PCSFL",
+        "name": "Fallen Lava",
+        "type": "Party",
+        "game": "cs"
+    },
+    {
+        "id": "PCSFW",
+        "name": "Frozen Warrior",
+        "type": "Party",
+        "game": "cs"
+    },
+    {
+        "id": "PCSOA",
+        "name": "Oak Alliance",
+        "type": "Party",
+        "game": "cs"
+    },
+    {
+        "id": "PCSIA",
+        "name": "Inox Alliance",
+        "type": "Party",
+        "game": "cs"
+    },
+    {
+        "id": "PCSGB",
+        "name": "Guttermaw's Bounty",
+        "type": "Party",
+        "game": "cs"
+    },
+    {
+        "id": "PCSFR",
+        "name": "Feirgrin's Request",
+        "type": "Party",
+        "game": "cs"
     }
 ]

@@ -11,14 +11,6 @@
                 "cssb/2"
             ],
             "chapter_id": 1,
-            "requirements": "Ooze Destroyed (Party) COMPLETE",
-            "required_by": [
-                {
-                    "complete": [
-                        "PCSOD"
-                    ]
-                }
-            ],
             "links_to": [
                 2
             ],
@@ -92,11 +84,11 @@
                 3
             ],
             "monsters": [
-              "city-archer",
-              "city-guard",
-              "blood-ooze",
-              "flaming-drake",
-              "toxic-imp"
+                "city-archer",
+                "city-guard",
+                "blood-ooze",
+                "flaming-drake",
+                "toxic-imp"
             ]
         },
         {
@@ -116,10 +108,10 @@
                 4
             ],
             "monsters": [
-              "blood-ooze",
-              "earth-demon",
-              "flaming-drake",
-              "toxic-imp"
+                "blood-ooze",
+                "earth-demon",
+                "flaming-drake",
+                "toxic-imp"
             ]
         },
         {
@@ -132,15 +124,23 @@
                 "cssb/6",
                 "cssb/7"
             ],
+            "requirements": "Ooze Destroyed (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PCSOD"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "linked_from": [
                 5
             ],
             "monsters": [
-              "blood-ooze",
-              "flaming-drake",
-              "toxic-imp",
-              "water-spirit"
+                "blood-ooze",
+                "flaming-drake",
+                "toxic-imp",
+                "water-spirit"
             ]
         },
         {
@@ -162,12 +162,12 @@
                 3
             ],
             "monsters": [
-              "cave-bear",
-              "forest-imp",
-              "giant-viper",
-              "hound",
-              "spitting-drake",
-              "rending-drake"
+                "cave-bear",
+                "forest-imp",
+                "giant-viper",
+                "hound",
+                "spitting-drake",
+                "rending-drake"
             ]
         },
         {
@@ -187,9 +187,9 @@
                 7
             ],
             "monsters": [
-              "ancient-artillery",
-              "living-spirit",
-              "stone-golem"
+                "ancient-artillery",
+                "living-spirit",
+                "stone-golem"
             ]
         },
         {
@@ -212,10 +212,10 @@
                 8
             ],
             "monsters": [
-              "ancient-artillery",
-              "cave-bear",
-              "city-archer",
-              "city-guard"
+                "ancient-artillery",
+                "cave-bear",
+                "city-archer",
+                "city-guard"
             ]
         },
         {
@@ -238,8 +238,8 @@
                 7
             ],
             "monsters": [
-              "black-imp",
-              "lurker"
+                "black-imp",
+                "lurker"
             ]
         },
         {
@@ -259,11 +259,11 @@
                 9
             ],
             "monsters": [
-              "flame-demon",
-              "inox-archer",
-              "inox-guard",
-              "inox-shaman",
-              "night-demon"
+                "flame-demon",
+                "inox-archer",
+                "inox-guard",
+                "inox-shaman",
+                "night-demon"
             ]
         },
         {
@@ -283,10 +283,10 @@
                 11
             ],
             "monsters": [
-              "flame-demon",
-              "giant-viper",
-              "rending-drake",
-              "spitting-drake"
+                "flame-demon",
+                "giant-viper",
+                "rending-drake",
+                "spitting-drake"
             ]
         },
         {
@@ -303,9 +303,9 @@
                 9
             ],
             "monsters": [
-              "living-corpse",
-              "lurker",
-              "ooze"
+                "living-corpse",
+                "lurker",
+                "ooze"
             ]
         },
         {
@@ -323,10 +323,10 @@
                 9
             ],
             "monsters": [
-              "cultist",
-              "deep-terror",
-              "living-corpse",
-              "living-bones"
+                "cultist",
+                "deep-terror",
+                "living-corpse",
+                "living-bones"
             ]
         },
         {
@@ -346,11 +346,11 @@
                 12
             ],
             "monsters": [
-              "cave-bear",
-              "giant-viper",
-              "hound",
-              "lurker",
-              "rending-drake"
+                "cave-bear",
+                "giant-viper",
+                "hound",
+                "lurker",
+                "rending-drake"
             ]
         },
         {
@@ -367,10 +367,10 @@
                 15
             ],
             "monsters": [
-              "black-imp",
-              "flame-demon",
-              "night-demon",
-              "sun-demon"
+                "black-imp",
+                "flame-demon",
+                "night-demon",
+                "sun-demon"
             ]
         },
         {
@@ -392,11 +392,11 @@
                 10
             ],
             "monsters": [
-              "earth-demon",
-              "flame-demon",
-              "frost-demon",
-              "savvas-icestorm",
-              "wind-demon"
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "savvas-icestorm",
+                "wind-demon"
             ]
         },
         {
@@ -418,10 +418,10 @@
                 17
             ],
             "monsters": [
-              "black-imp",
-              "deep-terror",
-              "harrower-infester",
-              "night-demon"
+                "black-imp",
+                "deep-terror",
+                "harrower-infester",
+                "night-demon"
             ]
         },
         {
@@ -444,13 +444,13 @@
                 10
             ],
             "monsters": [
-              "earth-demon",
-              "flame-demon",
-              "frost-demon",
-              "night-demon",
-              "sun-demon",
-              "vermling-scout",
-              "wind-demon"
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "night-demon",
+                "sun-demon",
+                "vermling-scout",
+                "wind-demon"
             ]
         },
         {
@@ -463,6 +463,14 @@
                 "cs/35",
                 "cssb/20",
                 "cssb/21"
+            ],
+            "requirements": "Fallen Lava (Party) INCOMPLETE",
+            "required_by": [
+                {
+                    "incomplete": [
+                        "PCSFL"
+                    ]
+                }
             ],
             "chapter_id": 1,
             "links_to": [
@@ -495,8 +503,8 @@
                 18
             ],
             "monsters": [
-              "earth-demon",
-              "flame-demon"
+                "earth-demon",
+                "flame-demon"
             ]
         },
         {
@@ -514,9 +522,9 @@
                 20
             ],
             "monsters": [
-              "black-imp",
-              "forest-imp",
-              "harrower-infester"
+                "black-imp",
+                "forest-imp",
+                "harrower-infester"
             ]
         },
         {
@@ -537,9 +545,9 @@
                 19
             ],
             "monsters": [
-              "frozen-cadaver",
-              "hail-demon",
-              "harrower-icecrawlers"
+                "frozen-cadaver",
+                "hail-demon",
+                "harrower-icecrawlers"
             ]
         },
         {
@@ -560,9 +568,9 @@
                 19
             ],
             "monsters": [
-              "frozen-cadaver",
-              "hail-demon",
-              "harrower-icecrawlers"
+                "frozen-cadaver",
+                "hail-demon",
+                "harrower-icecrawlers"
             ]
         },
         {
@@ -583,11 +591,11 @@
                 19
             ],
             "monsters": [
-              "forest-imp",
-              "giant-viper",
-              "lurker",
-              "spitting-drake",
-              "sun-demon"
+                "forest-imp",
+                "giant-viper",
+                "lurker",
+                "spitting-drake",
+                "sun-demon"
             ]
         },
         {
@@ -600,15 +608,23 @@
                 "cssb/27",
                 "cssb/28"
             ],
+            "requirements": "Frozen Warrior (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PCSFW"
+                    ]
+                }
+            ],
             "chapter_id": 4,
             "linked_from": [
                 23,
                 26
             ],
             "monsters": [
-              "frozen-cadaver",
-              "hail-demon",
-              "harrower-icecrawlers"
+                "frozen-cadaver",
+                "hail-demon",
+                "harrower-icecrawlers"
             ]
         },
         {
@@ -628,9 +644,9 @@
                 21
             ],
             "monsters": [
-              "frost-demon",
-              "stone-golem",
-              "wind-demon"
+                "frost-demon",
+                "stone-golem",
+                "wind-demon"
             ]
         },
         {
@@ -651,9 +667,9 @@
                 27
             ],
             "monsters": [
-              "cultist",
-              "living-bones",
-              "ooze"
+                "cultist",
+                "living-bones",
+                "ooze"
             ]
         },
         {
@@ -674,9 +690,9 @@
                 28
             ],
             "monsters": [
-              "living-bones",
-              "living-corpse",
-              "living-spirit"
+                "living-bones",
+                "living-corpse",
+                "living-spirit"
             ]
         },
         {
@@ -697,9 +713,9 @@
                 29
             ],
             "monsters": [
-              "black-imp",
-              "living-corpse",
-              "stone-golem"
+                "black-imp",
+                "living-corpse",
+                "stone-golem"
             ]
         },
         {
@@ -717,10 +733,10 @@
                 25
             ],
             "monsters": [
-              "harrower-infester",
-              "living-spirit",
-              "rending-drake",
-              "spitting-drake"
+                "harrower-infester",
+                "living-spirit",
+                "rending-drake",
+                "spitting-drake"
             ]
         },
         {
@@ -738,12 +754,12 @@
                 30
             ],
             "monsters": [
-              "ancient-artillery",
-              "inox-archer",
-              "inox-bodyguard",
-              "inox-guard",
-              "living-bones",
-              "jekserah"
+                "ancient-artillery",
+                "inox-archer",
+                "inox-bodyguard",
+                "inox-guard",
+                "living-bones",
+                "jekserah"
             ]
         },
         {
@@ -751,20 +767,23 @@
             "game": "cs",
             "name": "Siege Tower",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/48",
                 "cssb/36",
                 "cssb/37"
             ],
-            "chapter_id": 7,
+            "requirements": "“Protect and Serve” personal quest",
+            "chapter_id": 101,
             "links_to": [
                 34
             ],
+            "cards": [],
             "monsters": [
-              "inox-archer",
-              "inox-bodyguard",
-              "inox-guard",
-              "inox-shaman"
+                "inox-archer",
+                "inox-bodyguard",
+                "inox-guard",
+                "inox-shaman"
             ]
         },
         {
@@ -777,15 +796,16 @@
                 "cssb/36",
                 "cssb/38"
             ],
-            "chapter_id": 7,
+            "requirements": "“Protect and Serve” personal quest",
+            "chapter_id": 101,
             "linked_from": [
                 33
             ],
             "monsters": [
-              "hound",
-              "inox-archer",
-              "inox-guard",
-              "inox-shaman"
+                "hound",
+                "inox-archer",
+                "inox-guard",
+                "inox-shaman"
             ]
         },
         {
@@ -793,20 +813,22 @@
             "game": "cs",
             "name": "Prison Riot",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/50",
                 "cssb/38",
                 "cssb/39"
             ],
-            "chapter_id": 7,
+            "requirements": "“Bandit Banisher” personal quest",
+            "chapter_id": 101,
             "links_to": [
                 36
             ],
             "monsters": [
-              "bandit-archer",
-              "bandit-guard",
-              "night-demon",
-              "wind-demon"
+                "bandit-archer",
+                "bandit-guard",
+                "night-demon",
+                "wind-demon"
             ]
         },
         {
@@ -814,19 +836,21 @@
             "game": "cs",
             "name": "Hunters Bounty",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/51",
                 "cssb/40",
                 "cssb/41"
             ],
-            "chapter_id": 7,
+            "requirements": "“Bandit Banisher” personal quest",
+            "chapter_id": 101,
             "linked_from": [
                 35
             ],
             "monsters": [
-              "bandit-archer",
-              "bandit-guard",
-              "hound"
+                "bandit-archer",
+                "bandit-guard",
+                "hound"
             ]
         },
         {
@@ -834,21 +858,23 @@
             "game": "cs",
             "name": "Burning Stones",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/52",
                 "cssb/41",
                 "cssb/42"
             ],
-            "chapter_id": 7,
+            "requirements": "“Natural Selection” personal quest",
+            "chapter_id": 101,
             "links_to": [
                 38
             ],
             "monsters": [
-              "flame-demon",
-              "frost-demon",
-              "night-demon",
-              "sun-demon",
-              "vermling-scout"
+                "flame-demon",
+                "frost-demon",
+                "night-demon",
+                "sun-demon",
+                "vermling-scout"
             ]
         },
         {
@@ -856,20 +882,22 @@
             "game": "cs",
             "name": "Alters of Confusion",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/53",
                 "cssb/42",
                 "cssb/43"
             ],
-            "chapter_id": 7,
+            "requirements": "“Natural Selection” personal quest",
+            "chapter_id": 101,
             "linked_from": [
                 37
             ],
             "monsters": [
-              "black-imp",
-              "living-spirit",
-              "night-demon",
-              "stone-golem"
+                "black-imp",
+                "living-spirit",
+                "night-demon",
+                "stone-golem"
             ]
         },
         {
@@ -877,32 +905,37 @@
             "game": "cs",
             "name": "Festering Mire",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/54",
                 "cssb/44",
                 "cssb/45"
             ],
-            "chapter_id": 7,
+            "requirements": "“An Adder Divides” personal quest",
+            "chapter_id": 101,
             "monsters": [
-              "earth-demon",
-              "giant-viper"
+                "earth-demon",
+                "giant-viper"
             ]
         },
-
         {
             "id": 40,
             "game": "cs",
             "name": "Smugglers Hideout",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/55",
                 "cssb/44",
                 "cssb/45"
             ],
-            "chapter_id": 9,
+            "chapter_id": 105,
+            "cards": [
+                "TODO:: City 43"
+            ],
             "monsters": [
-              "rending-drake",
-              "spitting-drake"
+                "rending-drake",
+                "spitting-drake"
             ]
         },
         {
@@ -910,15 +943,19 @@
             "game": "cs",
             "name": "Curse of the Void",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/56",
                 "cssb/45",
                 "cssb/46"
             ],
-            "chapter_id": 9,
+            "chapter_id": 105,
+            "cards": [
+                "TODO:: City 43"
+            ],
             "monsters": [
-              "bandit-archer",
-              "bandit-guard"
+                "bandit-archer",
+                "bandit-guard"
             ]
         },
         {
@@ -926,17 +963,21 @@
             "game": "cs",
             "name": "Unnatural Beasts",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/57",
                 "cssb/45",
                 "cssb/46",
                 "cssb/47"
             ],
-            "chapter_id": 9,
+            "chapter_id": 105,
+            "cards": [
+                "TODO:: City 1"
+            ],
             "monsters": [
-              "cave-bear",
-              "giant-viper",
-              "hound"
+                "cave-bear",
+                "giant-viper",
+                "hound"
             ]
         },
         {
@@ -944,16 +985,20 @@
             "game": "cs",
             "name": "Mansion Maze",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/58",
                 "cssb/47",
                 "cssb/48"
             ],
-            "chapter_id": 9,
+            "chapter_id": 105,
+            "cards": [
+                "TODO:: City 31"
+            ],
             "monsters": [
-              "ancient-artillery",
-              "city-guard",
-              "stone-golem"
+                "ancient-artillery",
+                "city-guard",
+                "stone-golem"
             ]
         },
         {
@@ -961,16 +1006,20 @@
             "game": "cs",
             "name": "Haunted Manor",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/59",
                 "cssb/49",
                 "cssb/52"
             ],
-            "chapter_id": 9,
+            "chapter_id": 105,
+            "cards": [
+                "TODO:: City 6"
+            ],
             "monsters": [
-              "harrower-infester",
-              "living-spirit",
-              "night-demon"
+                "harrower-infester",
+                "living-spirit",
+                "night-demon"
             ]
         },
         {
@@ -978,16 +1027,20 @@
             "game": "cs",
             "name": "Defend the Swamp",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/60",
                 "cssb/50",
                 "cssb/51"
             ],
-            "chapter_id": 8,
+            "chapter_id": 104,
+            "cards": [
+                "TODO:: Road 25"
+            ],
             "monsters": [
-              "black-imp",
-              "land-leviathan",
-              "forest-imp"
+                "black-imp",
+                "land-leviathan",
+                "forest-imp"
             ]
         },
         {
@@ -995,16 +1048,20 @@
             "game": "cs",
             "name": "Vermling Gardens",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/61",
                 "cssb/51"
             ],
-            "chapter_id": 8,
+            "chapter_id": 104,
+            "cards": [
+                "TODO:: Road 10"
+            ],
             "monsters": [
-              "cave-bear",
-              "hound",
-              "vermling-scout",
-              "vermling-shaman"
+                "cave-bear",
+                "hound",
+                "vermling-scout",
+                "vermling-shaman"
             ]
         },
         {
@@ -1012,15 +1069,19 @@
             "game": "cs",
             "name": "Viper Marsh",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/62",
                 "cssb/54"
             ],
-            "chapter_id": 8,
+            "chapter_id": 104,
+            "cards": [
+                "TODO:: Road 54"
+            ],
             "monsters": [
-              "earth-demon",
-              "giant-viper",
-              "ooze"
+                "earth-demon",
+                "giant-viper",
+                "ooze"
             ]
         },
         {
@@ -1028,18 +1089,22 @@
             "game": "cs",
             "name": "Forest Fire",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/63",
                 "cssb/52",
                 "cssb/56"
             ],
-            "chapter_id": 8,
+            "chapter_id": 104,
+            "cards": [
+                "TODO:: Road 52"
+            ],
             "monsters": [
-              "giant-viper",
-              "inox-archer",
-              "inox-guard",
-              "inox-shaman",
-              "spitting-drake"
+                "giant-viper",
+                "inox-archer",
+                "inox-guard",
+                "inox-shaman",
+                "spitting-drake"
             ]
         },
         {
@@ -1047,18 +1112,30 @@
             "game": "cs",
             "name": "Oak Invasion A",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/64",
                 "cssb/55"
             ],
-            "chapter_id": 9,
+            "requirements": "Oaks Alliance (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PCSOA"
+                    ]
+                }
+            ],
+            "chapter_id": 105,
+            "cards": [
+                "TODO:: City 42"
+            ],
             "monsters": [
-              "city-archer",
-              "city-guard",
-              "inox-archer",
-              "inox-bodyguard",
-              "inox-guard",
-              "inox-shaman"
+                "city-archer",
+                "city-guard",
+                "inox-archer",
+                "inox-bodyguard",
+                "inox-guard",
+                "inox-shaman"
             ]
         },
         {
@@ -1066,18 +1143,30 @@
             "game": "cs",
             "name": "Oak Invasion B",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/65",
                 "cssb/56"
             ],
-            "chapter_id": 9,
+            "requirements": "Inox Alliance (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PCSIA"
+                    ]
+                }
+            ],
+            "chapter_id": 105,
+            "cards": [
+                "TODO:: City 42"
+            ],
             "monsters": [
-              "captain-of-the-guard",
-              "cave-bear",
-              "city-archer",
-              "city-guard",
-              "inox-archer",
-              "inox-guard"
+                "captain-of-the-guard",
+                "cave-bear",
+                "city-archer",
+                "city-guard",
+                "inox-archer",
+                "inox-guard"
             ]
         },
         {
@@ -1085,6 +1174,7 @@
             "game": "cs",
             "name": "Rodent Warehouse",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/66",
                 "cssb/57",
@@ -1092,10 +1182,10 @@
             ],
             "chapter_id": 10,
             "monsters": [
-              "flame-demon",
-              "sun-demon",
-              "vermling-scout",
-              "vermling-shaman"
+                "flame-demon",
+                "sun-demon",
+                "vermling-scout",
+                "vermling-shaman"
             ]
         },
         {
@@ -1103,6 +1193,7 @@
             "game": "cs",
             "name": "Wishing Well",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/67",
                 "cssb/57",
@@ -1111,10 +1202,10 @@
             ],
             "chapter_id": 10,
             "monsters": [
-              "black-imp",
-              "living-corpse",
-              "ooze",
-              "spitting-drake"
+                "black-imp",
+                "living-corpse",
+                "ooze",
+                "spitting-drake"
             ]
         },
         {
@@ -1122,6 +1213,7 @@
             "game": "cs",
             "name": "Cave of Currents",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/68",
                 "cssb/59",
@@ -1129,9 +1221,9 @@
             ],
             "chapter_id": 10,
             "monsters": [
-              "lurker",
-              "spitting-drake",
-              "water-spirit"
+                "lurker",
+                "spitting-drake",
+                "water-spirit"
             ]
         },
         {
@@ -1139,6 +1231,7 @@
             "game": "cs",
             "name": "Lair of Horrors",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/69",
                 "cssb/61",
@@ -1146,8 +1239,8 @@
             ],
             "chapter_id": 10,
             "monsters": [
-              "hanging-snake",
-              "dark-lurker"
+                "hanging-snake",
+                "dark-lurker"
             ]
         },
         {
@@ -1155,6 +1248,7 @@
             "game": "cs",
             "name": "Catacomb Plunder",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/70",
                 "cs/71",
@@ -1163,29 +1257,30 @@
             ],
             "chapter_id": 10,
             "monsters": [
-              "bandit-archer",
-              "earth-demon",
-              "harrower-infester",
-              "living-bones",
-              "living-corpse",
-              "stone-golem"
+                "bandit-archer",
+                "earth-demon",
+                "harrower-infester",
+                "living-bones",
+                "living-corpse",
+                "stone-golem"
             ]
         },
-
         {
             "id": 56,
             "game": "cs",
             "name": "Disarm the Machine",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/72",
                 "cssb/63",
                 "cssb/64"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "BM Level 5",
             "monsters": [
-              "ancient-artillery",
-              "stone-golem"
+                "ancient-artillery",
+                "stone-golem"
             ]
         },
         {
@@ -1193,19 +1288,21 @@
             "game": "cs",
             "name": "Elemental Converter",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/73",
                 "cssb/64",
                 "cssb/65"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "BK Level 5",
             "monsters": [
-              "black-imp",
-              "deep-terror",
-              "hound",
-              "lurker",
-              "rending-drake",
-              "spitting-drake"
+                "black-imp",
+                "deep-terror",
+                "hound",
+                "lurker",
+                "rending-drake",
+                "spitting-drake"
             ]
         },
         {
@@ -1213,14 +1310,16 @@
             "game": "cs",
             "name": "Penitentiary Lockdown",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/74",
                 "cssb/66"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "CG Level 5",
             "monsters": [
-              "bandit-archer",
-              "bandit-guard"
+                "bandit-archer",
+                "bandit-guard"
             ]
         },
         {
@@ -1228,17 +1327,19 @@
             "game": "cs",
             "name": "Forest Invaders",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/75",
                 "cssb/67"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "CT Level 5",
             "monsters": [
-              "cave-bear",
-              "giant-viper",
-              "hound",
-              "vermling-scout",
-              "vermling-shaman"
+                "cave-bear",
+                "giant-viper",
+                "hound",
+                "vermling-scout",
+                "vermling-shaman"
             ]
         },
         {
@@ -1246,17 +1347,19 @@
             "game": "cs",
             "name": "Through the Fire and Flames",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/76",
                 "cssb/67",
                 "cssb/69"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "FK Level 5",
             "monsters": [
-              "flame-demon",
-              "rending-drake-cs",
-              "savvas-lavaflow",
-              "spitting-drake"
+                "flame-demon",
+                "rending-drake-cs",
+                "savvas-lavaflow",
+                "spitting-drake"
             ]
         },
         {
@@ -1264,17 +1367,19 @@
             "game": "cs",
             "name": "Archaic Preservation",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/77",
                 "cssb/69"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "HO Level 5",
             "monsters": [
-              "ancient-artillery",
-              "black-imp",
-              "lurker",
-              "rending-drake",
-              "stone-golem"
+                "ancient-artillery",
+                "black-imp",
+                "lurker",
+                "rending-drake",
+                "stone-golem"
             ]
         },
         {
@@ -1282,17 +1387,19 @@
             "game": "cs",
             "name": "Hallow Redemption",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/78",
                 "cssb/70",
                 "cssb/71"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "HO Level 5",
             "monsters": [
-              "aesther-ashblade",
-              "cave-bear",
-              "forest-imp",
-              "vermling-shaman"
+                "aesther-ashblade",
+                "cave-bear",
+                "forest-imp",
+                "vermling-shaman"
             ]
         },
         {
@@ -1300,18 +1407,20 @@
             "game": "cs",
             "name": "A Cornered Viper",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/79",
                 "cssb/72"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "HP Level 5",
             "monsters": [
-              "cave-bear",
-              "giant-viper",
-              "inox-archer",
-              "living-corpse",
-              "living-spirit",
-              "stone-golem"
+                "cave-bear",
+                "giant-viper",
+                "inox-archer",
+                "living-corpse",
+                "living-spirit",
+                "stone-golem"
             ]
         },
         {
@@ -1319,15 +1428,17 @@
             "game": "cs",
             "name": "Glowing Crystals",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/80",
                 "cssb/72",
                 "cssb/73"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "LU Level 5",
             "monsters": [
-              "deep-terror",
-              "lurker"
+                "deep-terror",
+                "lurker"
             ]
         },
         {
@@ -1335,14 +1446,16 @@
             "game": "cs",
             "name": "Glowing Crystals",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/81",
                 "cssb/73",
                 "cssb/74"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "SP Level 5",
             "monsters": [
-              "vermling-shaman"
+                "vermling-shaman"
             ]
         },
         {
@@ -1350,38 +1463,42 @@
             "game": "cs",
             "name": "Otherworldly Strangers",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "cs/82",
                 "cssb/74"
             ],
-            "chapter_id": 11,
+            "chapter_id": 100,
+            "requirements": "ST Level 5",
             "monsters": [
-              "city-archer",
-              "city-guard",
-              "earth-demon",
-              "harrower-infester",
-              "night-demon",
-              "sun-demon"
+                "city-archer",
+                "city-guard",
+                "earth-demon",
+                "harrower-infester",
+                "night-demon",
+                "sun-demon"
             ]
         },
-
         {
             "id": "AA1",
             "game": "cs",
             "name": "The Riches of the Steelsilk",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/5",
                 "csao/6"
             ],
+            "requirements": "“At All Costs” personal quest",
             "chapter_id": 12,
+            "cards": [],
             "monsters": [
-              "harrower-aegis",
-              "hound",
-              "bandit-archer",
-              "bandit-guard",
-              "wind-demon",
-              "frost-demon"
+                "harrower-aegis",
+                "hound",
+                "bandit-archer",
+                "bandit-guard",
+                "wind-demon",
+                "frost-demon"
             ]
         },
         {
@@ -1389,17 +1506,20 @@
             "game": "cs",
             "name": "Malign Echoes",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/7",
                 "csao/8"
             ],
+            "requirements": "“The Weight of Failure” personal quest",
             "chapter_id": 12,
+            "cards": [],
             "monsters": [
-              "giant-viper",
-              "ravenous-gharial",
-              "black-imp",
-              "harrower-aegis",
-              "harrower-infester"
+                "giant-viper",
+                "ravenous-gharial",
+                "black-imp",
+                "harrower-aegis",
+                "harrower-infester"
             ]
         },
         {
@@ -1408,35 +1528,40 @@
             "name": "Hive Guardian",
             "solo": "AA",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/9",
                 "csao/10"
             ],
-            "chapter_id": 11,
+            "requirements": "AA Level 5",
+            "chapter_id": 100,
+            "cards": [],
             "monsters": [
-              "flame-demon",
-              "frost-demon",
-              "wind-demon",
-              "earth-demon",
-              "night-demon",
-              "sun-demon"
+                "flame-demon",
+                "frost-demon",
+                "wind-demon",
+                "earth-demon",
+                "night-demon",
+                "sun-demon"
             ]
         },
-
         {
             "id": "QA1",
             "game": "cs",
             "name": "Capstone Test",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/15",
                 "csao/16",
                 "csao/17"
             ],
+            "requirements": "“Ingenious Inventor” personal quest and “Power Modulator” item equipped",
             "chapter_id": 13,
+            "cards": [],
             "monsters": [
-              "clockwork-soldier",
-              "clockwork-railcaster"
+                "clockwork-soldier",
+                "clockwork-railcaster"
             ]
         },
         {
@@ -1444,18 +1569,21 @@
             "game": "cs",
             "name": "Mother Lode",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/18",
                 "csao/19",
                 "csao/20"
             ],
+            "requirements": "“Scrap Diver” personal quest",
             "chapter_id": 13,
+            "cards": [],
             "monsters": [
-              "giant-viper",
-              "living-bones",
-              "ooze",
-              "living-corpse",
-              "living-spirit"
+                "giant-viper",
+                "living-bones",
+                "ooze",
+                "living-corpse",
+                "living-spirit"
             ]
         },
         {
@@ -1464,32 +1592,37 @@
             "name": "Magnum Opus",
             "solo": "QA",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/23",
                 "csao/24"
             ],
-            "chapter_id": 11,
+            "requirements": "QA Level 5",
+            "chapter_id": 100,
+            "cards": [],
             "monsters": [
-              "clockwork-soldier",
-              "clockwork-railcaster"
+                "clockwork-soldier",
+                "clockwork-railcaster"
             ]
         },
-
         {
             "id": "RM1",
             "game": "cs",
             "name": "Mind your Manners",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/29",
                 "csao/30"
             ],
+            "requirements": "“Brutal Enforcer” personal quest",
             "chapter_id": 14,
+            "cards": [],
             "monsters": [
-              "bandit-guard-hired-muscle",
-              "bandit-archer-hired-muscle",
-              "inox-guard",
-              "inox-archer"
+                "bandit-guard-hired-muscle",
+                "bandit-archer-hired-muscle",
+                "inox-guard",
+                "inox-archer"
             ]
         },
         {
@@ -1497,18 +1630,21 @@
             "game": "cs",
             "name": "Sinking Kingdom",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/31",
                 "csao/32"
             ],
+            "requirements": "“Brutal Enforcer” personal quest",
             "chapter_id": 14,
+            "cards": [],
             "monsters": [
-              "bandit-guard",
-              "bandit-archer",
-              "inox-guard",
-              "inox-archer",
-              "inox-bloodguard",
-              "goremyon-shatter-mind"
+                "bandit-guard",
+                "bandit-archer",
+                "inox-guard",
+                "inox-archer",
+                "inox-bloodguard",
+                "goremyon-shatter-mind"
             ]
         },
         {
@@ -1516,17 +1652,20 @@
             "game": "cs",
             "name": "Ruined Colony",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/33",
                 "csao/34"
             ],
+            "requirements": "“Apex Predator” personal quest",
             "chapter_id": 14,
+            "cards": [],
             "monsters": [
-              "hound",
-              "giant-viper",
-              "cave-bear",
-              "ooze",
-              "gnashing-drake"
+                "hound",
+                "giant-viper",
+                "cave-bear",
+                "ooze",
+                "gnashing-drake"
             ]
         },
         {
@@ -1534,16 +1673,19 @@
             "game": "cs",
             "name": "Terrorscale Lair",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/35",
                 "csao/36"
             ],
+            "requirements": "“Apex Predator” personal quest",
             "chapter_id": 14,
+            "cards": [],
             "monsters": [
-              "terrorscale-drake",
-              "gnashing-drake",
-              "spitting-drake",
-              "rending-drake"
+                "terrorscale-drake",
+                "gnashing-drake",
+                "spitting-drake",
+                "rending-drake"
             ]
         },
         {
@@ -1551,15 +1693,26 @@
             "game": "cs",
             "name": "Unseen Plight",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/37",
                 "csao/38",
                 "csao/39"
             ],
+            "requirements": "“Guttermaw's Bounty” (Party) COMPLETE or “Feirgrin's Request” (Party)",
+            "required_by": [
+                {
+                    "complete": [
+                        "GWB",
+                        "PWS"
+                    ]
+                }
+            ],
             "chapter_id": 14,
+            "cards": [],
             "monsters": [
-              "ravenous-gharial",
-              "black-imp"
+                "ravenous-gharial",
+                "black-imp"
             ]
         },
         {
@@ -1568,17 +1721,20 @@
             "name": "The Fall of Shadow's Respite",
             "solo": "RM",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/40",
                 "csao/41"
             ],
-            "chapter_id": 11,
+            "requirements": "RM Level 5",
+            "chapter_id": 100,
+            "cards": [],
             "monsters": [
-              "gnashing-drake",
-              "spitting-drake",
-              "rending-drake",
-              "vermling-scout-ally",
-              "vermling-shaman-ally"
+                "gnashing-drake",
+                "spitting-drake",
+                "rending-drake",
+                "vermling-scout-ally",
+                "vermling-shaman-ally"
             ]
         },
         {
@@ -1586,18 +1742,20 @@
             "game": "cs",
             "name": "Insatiable",
             "coordinates": {},
+            "is_side": true,
             "pages": [
                 "csao/42",
                 "csao/43",
                 "csao/44"
             ],
+            "requirements": "No Ruinmaw in party",
             "chapter_id": 14,
             "monsters": [
-              "hound",
-              "ruinmaw",
-              "vermling-shaman",
-              "vermling-scout",
-              "giant-viper"
+                "hound",
+                "ruinmaw",
+                "vermling-shaman",
+                "vermling-scout",
+                "giant-viper"
             ]
         }
     ],
@@ -1626,26 +1784,29 @@
             "id": 6,
             "name": "Tainted"
         },
+        
         {
-            "id": 7,
+            "id": 100,
+            "name": "Solo Quests"
+        },
+        {
+            "id": 101,
             "name": "Personal Quests"
         },
         {
-            "id": 8,
+            "id": 104,
             "name": "Road Events"
         },
         {
-            "id": 9,
+            "id": 105,
             "name": "City Events"
         },
         {
             "id": 10,
             "name": "Side Quests"
         },
-        {
-            "id": 11,
-            "name": "Solo Quests"
-        },
+        
+
         {
             "id": 12,
             "name": "Beetle Scenarios (Add-on)"
