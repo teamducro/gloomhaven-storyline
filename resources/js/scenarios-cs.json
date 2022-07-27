@@ -174,7 +174,7 @@
             "pages": [
                 "cs/19",
                 "cssb/6",
-                "cssb/7"
+                "cssb/7",
                 "cssb/9"
             ],
             "chapter_id": 1,
@@ -856,6 +856,9 @@
             "linked_from": [
                 25
             ],
+            "rewards": [
+                "1 ✓ each"
+            ],
             "monsters": [
                 "harrower-infester",
                 "living-spirit",
@@ -876,6 +879,10 @@
             "chapter_id": 1,
             "linked_from": [
                 30
+            ],
+            "rewards": [
+                "Read {PAGE} 75 (https://www.thecrimsonscales.com/endgame)",
+                "Password “Water Hydra”"
             ],
             "monsters": [
                 "ancient-artillery",
@@ -902,6 +909,10 @@
             "links_to": [
                 34
             ],
+            "rewards": [
+                "Gain “Blazing Boots” (Item 87)",
+                "+1 reputation"
+            ],
             "cards": [],
             "monsters": [
                 "inox-archer",
@@ -925,6 +936,12 @@
             "linked_from": [
                 33
             ],
+            "rewards": [
+                "Unlock Envelope {BM}",
+                "+2 reputation",
+                "All characters add one {BLESS} to their attack modifer deck for the next scenario"
+            ],
+            "cards": [],
             "monsters": [
                 "hound",
                 "inox-archer",
@@ -948,6 +965,7 @@
             "links_to": [
                 36
             ],
+            "cards": [],
             "monsters": [
                 "bandit-archer",
                 "bandit-guard",
@@ -971,6 +989,11 @@
             "linked_from": [
                 35
             ],
+            "rewards": [
+                "Unlock Envelope {CG}",
+                "10 gold each"
+            ],
+            "cards": [],
             "monsters": [
                 "bandit-archer",
                 "bandit-guard",
@@ -993,6 +1016,10 @@
             "links_to": [
                 38
             ],
+            "rewards": [
+                "Gain one random “Stone” item (Item 94-100)"
+            ],
+            "cards": [],
             "monsters": [
                 "flame-demon",
                 "frost-demon",
@@ -1017,6 +1044,10 @@
             "linked_from": [
                 37
             ],
+            "rewards": [
+                "Unlock Envelope {LU}"
+            ],
+            "cards": [],
             "monsters": [
                 "black-imp",
                 "living-spirit",
@@ -1037,6 +1068,12 @@
             ],
             "requirements": "“An Adder Divides” personal quest",
             "chapter_id": 101,
+            "rewards": [
+                "10 experience each",
+                "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
+                "“An Adder Divides” quest is not yet complete"
+            ],
+            "cards": [],
             "monsters": [
                 "earth-demon",
                 "giant-viper"
@@ -1054,6 +1091,9 @@
                 "cssb/45"
             ],
             "chapter_id": 105,
+            "rewards": [
+                "Gain 50 collective gold"
+            ],
             "cards": [
                 "TODO:: City 43"
             ],
@@ -1074,6 +1114,9 @@
                 "cssb/46"
             ],
             "chapter_id": 105,
+            "rewards": [
+                "Gain 50 collective gold"
+            ],
             "cards": [
                 "TODO:: City 43"
             ],
@@ -1095,6 +1138,10 @@
                 "cssb/47"
             ],
             "chapter_id": 105,
+            "rewards": [
+                "+1 reputation",
+                "10 experience each"
+            ],
             "cards": [
                 "TODO:: City 1"
             ],
@@ -1116,6 +1163,10 @@
                 "cssb/48"
             ],
             "chapter_id": 105,
+            "rewards": [
+                "+1 prosperity",
+                "Each character gains one random “Orb” item (Item 1-10)"
+            ],
             "cards": [
                 "TODO:: City 31"
             ],
@@ -1137,6 +1188,10 @@
                 "cssb/52"
             ],
             "chapter_id": 105,
+            "rewards": [
+                "20 gold each",
+                "Each character gains one random “Orb” item (Item 1-10)"
+            ],
             "cards": [
                 "TODO:: City 6"
             ],
@@ -1158,6 +1213,11 @@
                 "cssb/51"
             ],
             "chapter_id": 104,
+            "rewards": [
+                "+1 reputation",
+                "+1 prosperity",
+                "1 ✓ each"
+            ],
             "cards": [
                 "TODO:: Road 25"
             ],
@@ -1178,6 +1238,10 @@
                 "cssb/51"
             ],
             "chapter_id": 104,
+            "rewards": [
+                "+2 reputation",
+                "15 experience each"
+            ],
             "cards": [
                 "TODO:: Road 10"
             ],

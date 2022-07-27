@@ -687,6 +687,12 @@
         "name": "Take the Money",
         "type": "Party",
         "game": "cs"
+    },
+    {
+        "id": "PCSAM",
+        "name": "Accomplished Mercenaries",
+        "type": "Party",
+        "game": "cs"
     }
     
 ]

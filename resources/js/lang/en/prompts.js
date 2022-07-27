@@ -56,7 +56,7 @@ export default {
         "text": "Did all characters escape through an exit?"
     },
 
-    "undeadTerrors" {
+    "undeadTerrors": {
         "1": "Give the potion to Selandre.",
         "2": "Tell Selandre the potion was destroyed.",
         "title": "Can you trust Selandre?",
