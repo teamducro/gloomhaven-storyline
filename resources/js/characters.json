@@ -1324,6 +1324,10 @@
             "game": "cs",
             "translatedName": "characters.BM.name",
             "abilityCount": 9,
+            "starting_group": [
+                "cs_militant",
+                "cs_trailblazers"
+            ],
             "perks":[
                 {
                     "count": 1,
@@ -1385,6 +1389,10 @@
             "game": "cs",
             "translatedName": "characters.BK.name",
             "abilityCount": 11,
+            "starting_group": [
+                "cs_explorers",
+                "cs_trailblazers"
+            ],
             "perks":[
                 {
                     "count": 3,
@@ -1435,6 +1443,10 @@
             "game": "cs",
             "translatedName": "characters.CG.name",
             "abilityCount": 10,
+            "starting_group": [
+                "cs_protectors",
+                "cs_explorers"
+            ],
             "perks":[
                 {
                     "count": 2,
@@ -1488,6 +1500,10 @@
             "game": "cs",
             "translatedName": "characters.CT.name",
             "abilityCount": 10,
+            "starting_group": [
+                "cs_protectors",
+                "cs_naturalists"
+            ],
             "perks":[
                 {
                     "count": 1,
@@ -1541,6 +1557,10 @@
             "game": "cs",
             "translatedName": "characters.FK.name",
             "abilityCount": 10,
+            "starting_group": [
+                "cs_militant",
+                "cs_protectors"
+            ],
             "perks":[
                 {
                     "count": 1,
@@ -1598,6 +1618,10 @@
             "game": "cs",
             "translatedName": "characters.HP.name",
             "abilityCount": 11,
+            "starting_group": [
+                "cs_militant",
+                "cs_protectors"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -1651,6 +1675,10 @@
             "game": "cs",
             "translatedName": "characters.HO.name",
             "abilityCount": 10,
+            "starting_group": [
+                "cs_explorers",
+                "cs_naturalists"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -1696,6 +1724,10 @@
             "game": "cs",
             "translatedName": "characters.LU.name",
             "abilityCount": 11,
+            "starting_group": [
+                "cs_trailblazers",
+                "cs_naturalists"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -1753,6 +1785,10 @@
             "game": "cs",
             "translatedName": "characters.MF.name",
             "abilityCount": 10,
+            "starting_group": [
+                "cs_militant",
+                "cs_naturalists"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -1806,6 +1842,7 @@
             "game": "cs",
             "translatedName": "characters.RM.name",
             "abilityCount": 11,
+            "starting_group": [],
             "perks": [
                 {
                     "count": 1,
@@ -1851,6 +1888,7 @@
             "game": "cs",
             "translatedName": "characters.SP.name",
             "abilityCount": 10,
+            "starting_group": [],
             "perks":[
                 {
                     "count": 1,
@@ -1904,6 +1942,10 @@
             "game": "cs",
             "translatedName": "characters.ST.name",
             "abilityCount": 10,
+            "starting_group": [
+                "cs_explorers",
+                "cs_trailblazers"
+            ],
             "perks":[
                 {
                     "count": 2,
@@ -1994,5 +2036,12 @@
         "RM",
         "SP",
         "ST"
+    ],
+    "starting_group": [
+        "cs_militant",
+        "cs_protectors",
+        "cs_explorers",
+        "cs_trailblazers",
+        "cs_naturalists"
     ]
 }
