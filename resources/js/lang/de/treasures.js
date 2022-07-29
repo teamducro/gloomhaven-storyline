@@ -231,7 +231,7 @@ export default {
         "name": "Erhalte “Großer Arzneitrank” (Gegenstand 090)"
     },
     "fc-78": {
-        "name": "“Ancient Bow” (Item 157)"
+        "name": "Erhalte “Ancient Bow” (Item 157)"
     },
     "fc-79": {
         "name": "Erhalte “Falcon Figurine” (Item 157)"
