@@ -15,7 +15,7 @@
                 2
             ],
             "treasures": {
-                "11": ""
+                "11": "“Dizzying Tincture” (Item 58)"
             },
             "monsters": [
                 "spitting-drake",
@@ -40,7 +40,7 @@
                 1
             ],
             "treasures": {
-                "24": ""
+                "24": "One random “Stone” item (Item 94-100)"
             },
             "monsters": [
                 "deep-terror",
@@ -95,7 +95,7 @@
                 3
             ],
             "treasures": {
-                "18": ""
+                "18": "“Boneclad Shawl (Item 25)"
             },
             "rewards": [
                 "Gain “Slug Crossbow” (Item 84)",
@@ -227,7 +227,7 @@
                 7
             ],
             "treasures": {
-                "01": ""
+                "1": "“Drake's Blood” (Item 14)"
             },
             "rewards": [
                 "Gain “Curious Pendant” (Item 20)",
@@ -290,7 +290,7 @@
                 7
             ],
             "treasures": {
-                "10": ""
+                "10": "One random “Stone” item (Item 94-100)"
             },
             "rewards": [
                 "Gain “Minor Mana Potion” (Item 12)",
@@ -362,7 +362,7 @@
                 9
             ],
             "treasures": {
-                "7": ""
+                "7": "One random “Stone” item (Item 94-100)"
             },
             "rewards": [
                 "Gain “Bulkwark Banner” (Item 85)",
@@ -390,8 +390,8 @@
                 9
             ],
             "treasures": {
-                "8": "",
-                "9": ""
+                "8": "“Dizzying Tincture” (Item 58)",
+                "9": "“Orb of Fortune” (Item 9)"
             },
             "rewards": [
                 "Gain “Remote Beetle” (Item 86)",
@@ -421,7 +421,7 @@
                 12
             ],
             "treasures": {
-                "34": ""
+                "34": "Suffer hazardous terrain damage, gain {INVISIBLE}"
             },
             "monsters": [
                 "cave-bear",
@@ -445,7 +445,7 @@
                 15
             ],
             "treasures": {
-                "6": ""
+                "6": "Gain 20 gold and disarm all adjacent traps"
             },
             "rewards": [
                 "10 gold each",
@@ -477,8 +477,8 @@
                 10
             ],
             "treasures": {
-                "19": "",
-                "43": ""
+                "19": "Gain ✓ and generate a Wild Element",
+                "43": "10 experience and Refresh all spent items"
             },
             "rewards": [
                 "+2 prosperity"
@@ -510,7 +510,7 @@
                 17
             ],
             "treasures": {
-                "22": ""
+                "22": "“Boots of Perpetuity” (Item 19)"
             },
             "rewards": [
                 "100 gold each This money must immediately be spent on enhancements"
@@ -542,8 +542,8 @@
                 10
             ],
             "treasures": {
-                "39": "",
-                "16": ""
+                "39": "“Infrared Goggles” (Item 21)",
+                "16": "Perform “Heal 6, Self”, gain {POISON}"
             },
             "rewards": [
                 "Gain “Major Mana Potion” (Item 48)"
@@ -616,8 +616,8 @@
                 "PCSFL"
             ],
             "treasures": {
-                "4": "",
-                "36": ""
+                "4": "Gain 15 gold and Recover one lost card",
+                "36": "10 experience, gain {INVSIBLE}"
             },
             "rewards": [
                 "Gain “Magma Waders” (Item 99)"
@@ -642,8 +642,8 @@
                 20
             ],
             "treasures": {
-                "15": "",
-                "32": ""
+                "15": "“Shifting Compass” (Item 32)",
+                "32": "“Curious Pendant” (Item 20)"
             },
             "rewards": [
                 "Each character gains +2 gold and 2 experience for each money token looted."
@@ -675,7 +675,7 @@
                 "PCSFW"
             ],
             "treasures": {
-                "25": ""
+                "25": "“Draining Greaves” (Item 15)"
             },
             "rewards": [
                 "15 experience each"
@@ -707,7 +707,7 @@
                 "PCSFW"
             ],
             "treasures": {
-                "35": ""
+                "35": "“Curseblood Blade” (Item 36)"
             },
             "rewards": [
                 "Each character gains one random “Orb” item (Item 1-10)"
@@ -771,7 +771,7 @@
                 26
             ],
             "treasures": {
-                "13": ""
+                "13": "“Orb of Despair” (Item 10)"
             },
             "rewards": [
                 "20 experience each",
@@ -827,7 +827,7 @@
                 27
             ],
             "treasures": {
-                "12": ""
+                "12": "“Mana Medicine” (Item 60)"
             },
             "rewards": [
                 "1 ✓ each"
@@ -856,7 +856,7 @@
                 28
             ],
             "treasures": {
-                "03": ""
+                "3": "“Chain Mace” (Item 14)"
             },
             "monsters": [
                 "living-bones",
@@ -882,8 +882,8 @@
                 29
             ],
             "treasures": {
-                "38": "",
-                "17": ""
+                "38": "“War Pick” (Item 13)",
+                "17": "“Concussion Mine” (Item 31)"
             },
             "prompt": "undeadTerrors",
             "achievements_awarded_by_choice": [
@@ -1003,7 +1003,7 @@
                 33
             ],
             "treasures": {
-                "42": ""
+                "42": "“War Pick” (Item 13)"
             },
             "rewards": [
                 "Unlock Envelope {BM}",
@@ -1035,8 +1035,8 @@
                 36
             ],
             "treasures": {
-                "28": "",
-                "40": ""
+                "28": "“Chain Mace” (Item 14)",
+                "40": "One random “Stone” item (Item 94-100)"
             },
             "cards": [],
             "monsters": [
@@ -1063,8 +1063,8 @@
                 35
             ],
             "treasures": {
-                "2": "",
-                "30": ""
+                "2": "“Orb of Fortune” (Item 09)",
+                "30": "“Boneclad Shawl (Item 25)"
             },
             "rewards": [
                 "Unlock Envelope {CG}",
@@ -1094,7 +1094,7 @@
                 38
             ],
             "treasures": {
-                "26": ""
+                "26": "“Iron Snare” (Item 30)"
             },
             "rewards": [
                 "Gain one random “Stone” item (Item 94-100)"
@@ -1125,7 +1125,7 @@
                 37
             ],
             "treasures": {
-                "29": ""
+                "29": "“Woven Plate Armor” (Item 23)"
             },
             "rewards": [
                 "Unlock Envelope {LU}"
@@ -1152,7 +1152,7 @@
             "requirements": "“An Adder Divides” personal quest",
             "chapter_id": 101,
             "treasures": {
-                "46": ""
+                "46": "“Vipertooth Dagger” design (Item 54)"
             },
             "rewards": [
                 "10 experience each",
@@ -1178,7 +1178,7 @@
             ],
             "chapter_id": 105,
             "treasures": {
-                "21": ""
+                "21": "“Steel Helmet” (Item 22)"
             },
             "rewards": [
                 "Gain 50 collective gold"
@@ -1228,9 +1228,9 @@
             ],
             "chapter_id": 105,
             "treasures": {
-                "33": "",
-                "27": "",
-                "14": ""
+                "33": "25  gold, gain {POISON}",
+                "27": "“Woven Plate Armor” (Item 23)",
+                "14": "“Steel Helmet” (Item 22)"
             },
             "rewards": [
                 "+1 reputation",
@@ -1286,9 +1286,9 @@
             ],
             "chapter_id": 105,
             "treasures": {
-                "5": "",
-                "20": "",
-                "37": ""
+                "5": "“Concussion Mine” (Item 31)",
+                "20": "One random “Stone” item (Item 94-100)",
+                "37": "“Draining Greaves” (Item 15)"
             },
             "rewards": [
                 "20 gold each",
@@ -1562,7 +1562,7 @@
             ],
             "chapter_id": 10,
             "treasures": {
-                "23": ""
+                "23": "“Trophy Helmet” (Item 12)"
             },
             "rewards": [
                 "+1 reputation",
@@ -1587,8 +1587,8 @@
             ],
             "chapter_id": 10,
             "treasures": {
-                "44": "",
-                "31": ""
+                "44": "“Mana Medicine” (Item 60)",
+                "31": "“Drake's Blood” (Item 14)"
             },
             "rewards": [
                 "+1 prosperity",
@@ -1708,8 +1708,8 @@
             ],
             "chapter_id": 100,
             "treasures": {
-                "48": "",
-                "49": ""
+                "48": "15 gold",
+                "49": "“Magma Waders” (Item 99)"
             },
             "rewards": [
                 "Gain “Flaming Armor” (Item 51)"
