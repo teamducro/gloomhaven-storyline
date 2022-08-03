@@ -14,6 +14,9 @@
             "links_to": [
                 2
             ],
+            "treasures": {
+                "11": ""
+            },
             "monsters": [
                 "spitting-drake",
                 "vermling-scout",
@@ -36,6 +39,9 @@
             "linked_from": [
                 1
             ],
+            "treasures": {
+                "24": ""
+            },
             "monsters": [
                 "deep-terror",
                 "inox-archer",
@@ -88,6 +94,9 @@
             "linked_from": [
                 3
             ],
+            "treasures": {
+                "18": ""
+            },
             "rewards": [
                 "Gain “Slug Crossbow” (Item 84)",
                 "Each character gains one random “Orb” item (Item 1-10)",
@@ -217,6 +226,9 @@
             "linked_from": [
                 7
             ],
+            "treasures": {
+                "01": ""
+            },
             "rewards": [
                 "Gain “Curious Pendant” (Item 20)",
                 "Each character gains one random “Orb” item (Item 1-10)"
@@ -277,6 +289,9 @@
             "linked_from": [
                 7
             ],
+            "treasures": {
+                "10": ""
+            },
             "rewards": [
                 "Gain “Minor Mana Potion” (Item 12)",
                 "Gain “Minor Healing Potion” (Item 20)"
@@ -346,6 +361,9 @@
             "linked_from": [
                 9
             ],
+            "treasures": {
+                "7": ""
+            },
             "rewards": [
                 "Gain “Bulkwark Banner” (Item 85)",
                 "+1 prosperity",
@@ -371,6 +389,10 @@
             "linked_from": [
                 9
             ],
+            "treasures": {
+                "8": "",
+                "9": ""
+            },
             "rewards": [
                 "Gain “Remote Beetle” (Item 86)",
                 "15 experience each"
@@ -398,6 +420,9 @@
             "linked_from": [
                 12
             ],
+            "treasures": {
+                "34": ""
+            },
             "monsters": [
                 "cave-bear",
                 "giant-viper",
@@ -419,6 +444,9 @@
             "linked_from": [
                 15
             ],
+            "treasures": {
+                "6": ""
+            },
             "rewards": [
                 "10 gold each",
                 "One character gains one {+1_WHITE} enhancement to any Level 1 or X card"
@@ -448,6 +476,10 @@
             "linked_from": [
                 10
             ],
+            "treasures": {
+                "19": "",
+                "43": ""
+            },
             "rewards": [
                 "+2 prosperity"
             ],
@@ -477,6 +509,9 @@
             "linked_from": [
                 17
             ],
+            "treasures": {
+                "22": ""
+            },
             "rewards": [
                 "100 gold each This money must immediately be spent on enhancements"
             ],
@@ -506,6 +541,10 @@
             "linked_from": [
                 10
             ],
+            "treasures": {
+                "39": "",
+                "16": ""
+            },
             "rewards": [
                 "Gain “Major Mana Potion” (Item 48)"
             ],
@@ -576,6 +615,10 @@
             "achievements_awarded": [
                 "PCSFL"
             ],
+            "treasures": {
+                "4": "",
+                "36": ""
+            },
             "rewards": [
                 "Gain “Magma Waders” (Item 99)"
             ],
@@ -598,6 +641,10 @@
             "linked_from": [
                 20
             ],
+            "treasures": {
+                "15": "",
+                "32": ""
+            },
             "rewards": [
                 "Each character gains +2 gold and 2 experience for each money token looted."
             ],
@@ -627,6 +674,9 @@
             "achievements_awarded": [
                 "PCSFW"
             ],
+            "treasures": {
+                "25": ""
+            },
             "rewards": [
                 "15 experience each"
             ],
@@ -656,6 +706,9 @@
             "achievements_awarded": [
                 "PCSFW"
             ],
+            "treasures": {
+                "35": ""
+            },
             "rewards": [
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
@@ -717,6 +770,9 @@
                 23,
                 26
             ],
+            "treasures": {
+                "13": ""
+            },
             "rewards": [
                 "20 experience each",
                 "1 ✓ each"
@@ -770,6 +826,9 @@
             "linked_from": [
                 27
             ],
+            "treasures": {
+                "12": ""
+            },
             "rewards": [
                 "1 ✓ each"
             ],
@@ -796,6 +855,9 @@
             "linked_from": [
                 28
             ],
+            "treasures": {
+                "03": ""
+            },
             "monsters": [
                 "living-bones",
                 "living-corpse",
@@ -819,6 +881,10 @@
             "linked_from": [
                 29
             ],
+            "treasures": {
+                "38": "",
+                "17": ""
+            },
             "prompt": "undeadTerrors",
             "achievements_awarded_by_choice": [
                 [
@@ -936,6 +1002,9 @@
             "linked_from": [
                 33
             ],
+            "treasures": {
+                "42": ""
+            },
             "rewards": [
                 "Unlock Envelope {BM}",
                 "+2 reputation",
@@ -965,6 +1034,10 @@
             "links_to": [
                 36
             ],
+            "treasures": {
+                "28": "",
+                "40": ""
+            },
             "cards": [],
             "monsters": [
                 "bandit-archer",
@@ -989,6 +1062,10 @@
             "linked_from": [
                 35
             ],
+            "treasures": {
+                "2": "",
+                "30": ""
+            },
             "rewards": [
                 "Unlock Envelope {CG}",
                 "10 gold each"
@@ -1016,6 +1093,9 @@
             "links_to": [
                 38
             ],
+            "treasures": {
+                "26": ""
+            },
             "rewards": [
                 "Gain one random “Stone” item (Item 94-100)"
             ],
@@ -1044,6 +1124,9 @@
             "linked_from": [
                 37
             ],
+            "treasures": {
+                "29": ""
+            },
             "rewards": [
                 "Unlock Envelope {LU}"
             ],
@@ -1068,6 +1151,9 @@
             ],
             "requirements": "“An Adder Divides” personal quest",
             "chapter_id": 101,
+            "treasures": {
+                "46": ""
+            },
             "rewards": [
                 "10 experience each",
                 "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
@@ -1091,6 +1177,9 @@
                 "cssb/45"
             ],
             "chapter_id": 105,
+            "treasures": {
+                "21": ""
+            },
             "rewards": [
                 "Gain 50 collective gold"
             ],
@@ -1138,6 +1227,11 @@
                 "cssb/47"
             ],
             "chapter_id": 105,
+            "treasures": {
+                "33": "",
+                "27": "",
+                "14": ""
+            },
             "rewards": [
                 "+1 reputation",
                 "10 experience each"
@@ -1163,6 +1257,9 @@
                 "cssb/48"
             ],
             "chapter_id": 105,
+            "treasures": {
+                "41": ""
+            },
             "rewards": [
                 "+1 prosperity",
                 "Each character gains one random “Orb” item (Item 1-10)"
@@ -1188,6 +1285,11 @@
                 "cssb/52"
             ],
             "chapter_id": 105,
+            "treasures": {
+                "5": "",
+                "20": "",
+                "37": ""
+            },
             "rewards": [
                 "20 gold each",
                 "Each character gains one random “Orb” item (Item 1-10)"
@@ -1263,6 +1365,9 @@
                 "cssb/54"
             ],
             "chapter_id": 104,
+            "treasures": {
+                "47": "15 gold"
+            },
             "rewards": [
                 "Gain “Ghost Viper Venom” (Item 55)",
                 "+1 prosperity",
@@ -1385,6 +1490,9 @@
                 "cssb/58"
             ],
             "chapter_id": 10,
+            "treasures": {
+                "41": ""
+            },
             "rewards": [
                 "+1 reputation",
                 "30 gold each"
@@ -1453,6 +1561,9 @@
                 "cssb/62"
             ],
             "chapter_id": 10,
+            "treasures": {
+                "23": ""
+            },
             "rewards": [
                 "+1 reputation",
                 "30 gold each"
@@ -1475,6 +1586,10 @@
                 "cssb/63"
             ],
             "chapter_id": 10,
+            "treasures": {
+                "44": "",
+                "31": ""
+            },
             "rewards": [
                 "+1 prosperity",
                 "+1 reputation",
@@ -1592,6 +1707,10 @@
                 "cssb/69"
             ],
             "chapter_id": 100,
+            "treasures": {
+                "48": "",
+                "49": ""
+            },
             "rewards": [
                 "Gain “Flaming Armor” (Item 51)"
             ],
