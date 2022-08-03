@@ -1263,6 +1263,11 @@
                 "cssb/54"
             ],
             "chapter_id": 104,
+            "rewards": [
+                "Gain “Ghost Viper Venom” (Item 55)",
+                "+1 prosperity",
+                "10 gold each"
+            ],
             "cards": [
                 "TODO:: Road 54"
             ],
@@ -1284,6 +1289,10 @@
                 "cssb/56"
             ],
             "chapter_id": 104,
+            "rewards": [
+                "10 experience each",
+                "20 gold each"
+            ],
             "cards": [
                 "TODO:: Road 52"
             ],
@@ -1314,6 +1323,9 @@
                 }
             ],
             "chapter_id": 105,
+            "rewards": [
+                "During the next visit to Gloomhaven, donations to the Sanctuary  cost 0 gold"
+            ],
             "cards": [
                 "TODO:: City 42"
             ],
@@ -1345,6 +1357,10 @@
                 }
             ],
             "chapter_id": 105,
+            "rewards": [
+                "10 experience each",
+                "1 ✓ each"
+            ],
             "cards": [
                 "TODO:: City 42"
             ],
@@ -1369,6 +1385,10 @@
                 "cssb/58"
             ],
             "chapter_id": 10,
+            "rewards": [
+                "+1 reputation",
+                "30 gold each"
+            ],
             "monsters": [
                 "flame-demon",
                 "sun-demon",
@@ -1389,6 +1409,9 @@
                 "cssb/59"
             ],
             "chapter_id": 10,
+            "rewards": [
+                "Gain “Drakescale Shield” (Item 37)"
+            ],
             "monsters": [
                 "black-imp",
                 "living-corpse",
@@ -1408,6 +1431,10 @@
                 "cssb/61"
             ],
             "chapter_id": 10,
+            "rewards": [
+                "Gain “Sphere of Currents” (Item 83)",
+                "5 gold each"
+            ],
             "monsters": [
                 "lurker",
                 "spitting-drake",
@@ -1426,6 +1453,10 @@
                 "cssb/62"
             ],
             "chapter_id": 10,
+            "rewards": [
+                "+1 reputation",
+                "30 gold each"
+            ],
             "monsters": [
                 "hanging-snake",
                 "dark-lurker"
@@ -1444,6 +1475,11 @@
                 "cssb/63"
             ],
             "chapter_id": 10,
+            "rewards": [
+                "+1 prosperity",
+                "+1 reputation",
+                "10 experience each"
+            ],
             "monsters": [
                 "bandit-archer",
                 "earth-demon",
@@ -1465,6 +1501,9 @@
                 "cssb/64"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain “Chain Cannon” (Item 45)"
+            ],
             "requirements": "BM Level 5",
             "monsters": [
                 "ancient-artillery",
@@ -1483,6 +1522,9 @@
                 "cssb/65"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain “Test Tube” (Item 48)"
+            ],
             "requirements": "BK Level 5",
             "monsters": [
                 "black-imp",
@@ -1504,6 +1546,11 @@
                 "cssb/66"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain one of the following as an item and the other as an item design:",
+                "“Claw Trap” (Item 34)",
+                "“Clamp Trap” (Item 56)"
+            ],
             "requirements": "CG Level 5",
             "monsters": [
                 "bandit-archer",
@@ -1521,6 +1568,9 @@
                 "cssb/67"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain “Nature Armlets” (Item 47)"
+            ],
             "requirements": "CT Level 5",
             "monsters": [
                 "cave-bear",
@@ -1542,6 +1592,9 @@
                 "cssb/69"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain “Flaming Armor” (Item 51)"
+            ],
             "requirements": "FK Level 5",
             "monsters": [
                 "flame-demon",
@@ -1561,6 +1614,9 @@
                 "cssb/69"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain “Robe of Soothing” (Item 42)"
+            ],
             "requirements": "HO Level 5",
             "monsters": [
                 "ancient-artillery",
@@ -1582,6 +1638,9 @@
                 "cssb/71"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain “Cleansed Voidheart” (Item 57)"
+            ],
             "requirements": "HO Level 5",
             "monsters": [
                 "aesther-ashblade",
@@ -1601,6 +1660,9 @@
                 "cssb/72"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain “Field Mortar” (Item 53)"
+            ],
             "requirements": "HP Level 5",
             "monsters": [
                 "cave-bear",
@@ -1623,6 +1685,9 @@
                 "cssb/73"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain “Luminous Carapace” (Item 50)"
+            ],
             "requirements": "LU Level 5",
             "monsters": [
                 "deep-terror",
@@ -1641,6 +1706,9 @@
                 "cssb/74"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain “Spirit Libation” (Item 41)"
+            ],
             "requirements": "SP Level 5",
             "monsters": [
                 "vermling-shaman"
@@ -1657,6 +1725,9 @@
                 "cssb/74"
             ],
             "chapter_id": 100,
+            "rewards": [
+                "Gain “Moonleather Boots” (Item 40)"
+            ],
             "requirements": "ST Level 5",
             "monsters": [
                 "city-archer",
