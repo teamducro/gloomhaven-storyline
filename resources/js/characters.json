@@ -1273,6 +1273,7 @@
             "id": "QA",
             "name": "Artificer",
             "game": "cs",
+            "color": "#79bcda",
             "translatedName": "characters.QA.name",
             "abilityCount": 9,
             "perks": [
@@ -1322,6 +1323,7 @@
             "id": "BM",
             "name": "Bombard",
             "game": "cs",
+            "color": "#a59786",
             "translatedName": "characters.BM.name",
             "abilityCount": 9,
             "starting_group": [
@@ -1387,6 +1389,7 @@
             "id": "BK",
             "name": "Brightspark",
             "game": "cs",
+            "color": "#caad2e",
             "translatedName": "characters.BK.name",
             "abilityCount": 11,
             "starting_group": [
@@ -1441,6 +1444,7 @@
             "id": "CG",
             "name": "Chainguard",
             "game": "cs",
+            "color": "#ce6d2f",
             "translatedName": "characters.CG.name",
             "abilityCount": 10,
             "starting_group": [
@@ -1498,6 +1502,7 @@
             "id": "CT",
             "name": "Chieftain",
             "game": "cs",
+            "color": "#76c6c4",
             "translatedName": "characters.CT.name",
             "abilityCount": 10,
             "starting_group": [
@@ -1555,6 +1560,7 @@
             "id": "FK",
             "name": "Fire Knight",
             "game": "cs",
+            "color": "#cd2127",
             "translatedName": "characters.FK.name",
             "abilityCount": 10,
             "starting_group": [
@@ -1616,6 +1622,7 @@
             "id": "HP",
             "name": "Hierophant",
             "game": "cs",
+            "color": "#e65925",
             "translatedName": "characters.HP.name",
             "abilityCount": 11,
             "starting_group": [
@@ -1673,6 +1680,7 @@
             "id": "HO",
             "name": "Hollowpact",
             "game": "cs",
+            "color": "#a04aa5",
             "translatedName": "characters.HO.name",
             "abilityCount": 10,
             "starting_group": [
@@ -1722,6 +1730,7 @@
             "id": "LU",
             "name": "Luminary",
             "game": "cs",
+            "color": "#bf9eca",
             "translatedName": "characters.LU.name",
             "abilityCount": 11,
             "starting_group": [
@@ -1783,6 +1792,7 @@
             "id": "MF",
             "name": "Mirefoot",
             "game": "cs",
+            "color": "#ddde8b",
             "translatedName": "characters.MF.name",
             "abilityCount": 10,
             "starting_group": [
@@ -1840,6 +1850,7 @@
             "id": "RM",
             "name": "Ruinmaw",
             "game": "cs",
+            "color": "#c12729",
             "translatedName": "characters.RM.name",
             "abilityCount": 11,
             "starting_group": [],
@@ -1886,6 +1897,7 @@
             "id": "SP",
             "name": "Spirit Caller",
             "game": "cs",
+            "color": "#63bd57",
             "translatedName": "characters.SP.name",
             "abilityCount": 10,
             "starting_group": [],
@@ -1940,6 +1952,7 @@
             "id": "ST",
             "name": "Starslinger",
             "game": "cs",
+            "color": "#6d6fb3",
             "translatedName": "characters.ST.name",
             "abilityCount": 10,
             "starting_group": [
