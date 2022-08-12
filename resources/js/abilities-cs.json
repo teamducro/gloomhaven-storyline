@@ -1,0 +1,3239 @@
+[
+    {
+        "name": "consistent firing",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 76,
+        "id": "cs-001"
+    },
+    {
+        "name": "double cannons",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 60,
+        "id": "cs-002"
+    },
+    {
+        "name": "exploding cannonball",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 88,
+        "id": "cs-003"
+    },
+    {
+        "name": "forceful bolt",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 63,
+        "id": "cs-004"
+    },
+    {
+        "name": "grappling hook",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 68,
+        "id": "cs-005"
+    },
+    {
+        "name": "ignited launch",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 81,
+        "id": "cs-006"
+    },
+    {
+        "name": "rolling into position",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 14,
+        "id": "cs-007"
+    },
+    {
+        "name": "unexpected bombshell",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1,
+        "initiative": 85,
+        "id": "cs-009"
+    },
+    {
+        "name": "chain grapnel",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1.5,
+        "initiative": 46,
+        "id": "cs-010"
+    },
+    {
+        "name": "man the cannon",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1.5,
+        "initiative": 21,
+        "id": "cs-011"
+    },
+    {
+        "name": "pillars of smoke",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 1.5,
+        "initiative": 11,
+        "id": "cs-012"
+    },
+    {
+        "name": "distant retribution",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 2,
+        "initiative": 12,
+        "id": "cs-013"
+    },
+    {
+        "name": "rapid fire",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 2,
+        "initiative": 41,
+        "id": "cs-014"
+    },
+    {
+        "name": "stationary enhancements",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 3,
+        "initiative": 20,
+        "id": "cs-015"
+    },
+    {
+        "name": "twin blast",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 3,
+        "initiative": 80,
+        "id": "cs-016"
+    },
+    {
+        "name": "hurried repairs",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 4,
+        "initiative": 25,
+        "id": "cs-017"
+    },
+    {
+        "name": "powerful buckshot",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 4,
+        "initiative": 84,
+        "id": "cs-018"
+    },
+    {
+        "name": "unbreakable position",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 5,
+        "initiative": 15,
+        "id": "cs-019"
+    },
+    {
+        "name": "sharpened focus",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 5,
+        "initiative": 32,
+        "id": "cs-020"
+    },
+    {
+        "name": "meteoric blast",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 6,
+        "initiative": 26,
+        "id": "cs-021"
+    },
+    {
+        "name": "prolific perforation",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 6,
+        "initiative": 62,
+        "id": "cs-022"
+    },
+    {
+        "name": "airborne skyrock",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 7,
+        "initiative": 55,
+        "id": "cs-023"
+    },
+    {
+        "name": "ballistic barrage",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 7,
+        "initiative": 73,
+        "id": "cs-024"
+    },
+    {
+        "name": "defense mechanism",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 8,
+        "initiative": 18,
+        "id": "cs-025"
+    },
+    {
+        "name": "quadruple cannons",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 8,
+        "initiative": 86,
+        "id": "cs-026"
+    },
+    {
+        "name": "supercharged gunpowder",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 9,
+        "initiative": 90,
+        "id": "cs-027"
+    },
+    {
+        "name": "superior upgrade",
+        "game": "cs",
+        "character_id": "BM",
+        "level": 9,
+        "initiative": 9,
+        "id": "cs-028"
+    },
+    {
+        "name": "agonizing clamp",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 2,
+        "initiative": 57,
+        "id": "cs-072"
+      },
+      {
+        "name": "champion of chains",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 9,
+        "initiative": 10,
+        "id": "cs-086"
+      },
+      {
+        "name": "chokehold",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 22,
+        "id": "cs-060"
+      },
+      {
+        "name": "clamping snare",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 7,
+        "initiative": 27,
+        "id": "cs-082"
+      },
+      {
+        "name": "dizzying release",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 4,
+        "initiative": 24,
+        "id": "cs-076"
+      },
+      {
+        "name": "double k.o.",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 4,
+        "initiative": 92,
+        "id": "cs-077"
+      },
+      {
+        "name": "drag through dirt",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 30,
+        "id": "cs-061"
+      },
+      {
+        "name": "follow the chains",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 19,
+        "id": "cs-062"
+      },
+      {
+        "name": "ganging up",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1.5,
+        "initiative": 74,
+        "id": "cs-069"
+      },
+      {
+        "name": "impending power",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 5,
+        "initiative": 12,
+        "id": "cs-078"
+      },
+      {
+        "name": "iron thrust",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 2,
+        "initiative": 38,
+        "id": "cs-073"
+      },
+      {
+        "name": "latch and tow",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 3,
+        "initiative": 81,
+        "id": "cs-074"
+      },
+      {
+        "name": "locking links",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 41,
+        "id": "cs-063"
+      },
+      {
+        "name": "merciless beatdown",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 26,
+        "id": "cs-064"
+      },
+      {
+        "name": "meteor hammer",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 7,
+        "initiative": 45,
+        "id": "cs-083"
+      },
+      {
+        "name": "pivot and smash",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 8,
+        "initiative": 28,
+        "id": "cs-084"
+      },
+      {
+        "name": "roundhouse swing",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1.5,
+        "initiative": 79,
+        "id": "cs-070"
+      },
+      {
+        "name": "rusty spikes",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 18,
+        "id": "cs-065"
+      },
+      {
+        "name": "slamming shove",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 25,
+        "id": "cs-066"
+      },
+      {
+        "name": "spiked knuckles",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 66,
+        "id": "cs-067"
+      },
+      {
+        "name": "suffering steel",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 6,
+        "initiative": 9,
+        "id": "cs-080"
+      },
+      {
+        "name": "sweeping collision",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 3,
+        "initiative": 20,
+        "id": "cs-075"
+      },
+      {
+        "name": "syndicated assault",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 8,
+        "initiative": 68,
+        "id": "cs-085"
+      },
+      {
+        "name": "tighten the chains",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 5,
+        "initiative": 17,
+        "id": "cs-079"
+      },
+      {
+        "name": "titanic chainwhip",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 6,
+        "initiative": 29,
+        "id": "cs-081"
+      },
+      {
+        "name": "unending torment",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 9,
+        "initiative": 33,
+        "id": "cs-087"
+      },
+      {
+        "name": "untouchable keeper",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 14,
+        "id": "cs-059"
+      },
+      {
+        "name": "vigorous sway",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1.5,
+        "initiative": 52,
+        "id": "cs-071"
+      },
+      {
+        "name": "wrapped in metal",
+        "game": "cs",
+        "character_id": "CG",
+        "level": 1,
+        "initiative": 82,
+        "id": "cs-068"
+      },
+      {
+        "name": "agile predator",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 3,
+        "initiative": 90,
+        "id": "cs-104"
+      },
+      {
+        "name": "black panther",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 3,
+        "initiative": 90,
+        "id": "cs-104"
+      },
+      {
+        "name": "catastrophic cattle",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 88,
+        "id": "cs-088"
+      },
+      {
+        "name": "fighting bull",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 88,
+        "id": "cs-088"
+      },
+      {
+        "name": "ceremonial dance",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 2,
+        "initiative": 23,
+        "id": "cs-102"
+      },
+      {
+        "name": "chest thumper",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 5,
+        "initiative": 94,
+        "id": "cs-107"
+      },
+      {
+        "name": "lowland gorilla",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 5,
+        "initiative": 94,
+        "id": "cs-107"
+      },
+      {
+        "name": "hunter's mark",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1.5,
+        "initiative": 15,
+        "id": "cs-099"
+      },
+      {
+        "name": "impervious armor",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 7,
+        "initiative": 86,
+        "id": "cs-111"
+      },
+      {
+        "name": "battle rhinoceros",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 7,
+        "initiative": 86,
+        "id": "cs-111"
+      },
+      {
+        "name": "majestic mass",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 8,
+        "initiative": 86,
+        "id": "cs-113"
+      },
+      {
+        "name": "war elephant",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 8,
+        "initiative": 86,
+        "id": "cs-113"
+      },
+      {
+        "name": "master the reins",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 9,
+        "initiative": 30,
+        "id": "cs-115"
+      },
+      {
+        "name": "medicine shield",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 2,
+        "initiative": 19,
+        "id": "cs-101"
+      },
+      {
+        "name": "mounded sight",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1.5,
+        "initiative": 82,
+        "id": "cs-100"
+      },
+      {
+        "name": "cavalry camel",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1.5,
+        "initiative": 82,
+        "id": "cs-100"
+      },
+      {
+        "name": "one with nature",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 6,
+        "initiative": 33,
+        "id": "cs-109"
+      },
+      {
+        "name": "outrun the enemy",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 87,
+        "id": "cs-089"
+      },
+      {
+        "name": "speedy ostrich",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 87,
+        "id": "cs-089"
+      },
+      {
+        "name": "piercing darts",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 17,
+        "id": "cs-090"
+      },
+      {
+        "name": "pipe tomahawk",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 26,
+        "id": "cs-091"
+      },
+      {
+        "name": "positive reinforcement",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 5,
+        "initiative": 24,
+        "id": "cs-108"
+      },
+      {
+        "name": "prepared rations",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1.5,
+        "initiative": 91,
+        "id": "cs-098"
+      },
+      {
+        "name": "pack mule",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1.5,
+        "initiative": 91,
+        "id": "cs-098"
+      },
+      {
+        "name": "regal beast",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 9,
+        "initiative": 81,
+        "id": "cs-116"
+      },
+      {
+        "name": "sabretooth tiger",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 9,
+        "initiative": 81,
+        "id": "cs-116"
+      },
+      {
+        "name": "resurrection",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 32,
+        "id": "cs-092"
+      },
+      {
+        "name": "skinning knife",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 54,
+        "id": "cs-093"
+      },
+      {
+        "name": "slow and steady",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 93,
+        "id": "cs-094"
+      },
+      {
+        "name": "giant tortoise",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 93,
+        "id": "cs-094"
+      },
+      {
+        "name": "sniffing hound",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 80,
+        "id": "cs-096"
+      },
+      {
+        "name": "scout dog",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 80,
+        "id": "cs-096"
+      },
+      {
+        "name": "soul whisperer",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 57,
+        "id": "cs-097"
+      },
+      {
+        "name": "spiked muzzle",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 4,
+        "initiative": 47,
+        "id": "cs-106"
+      },
+      {
+        "name": "strapping bullwhip",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 7,
+        "initiative": 29,
+        "id": "cs-112"
+      },
+      {
+        "name": "sucker punch",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 1,
+        "initiative": 14,
+        "id": "cs-095"
+      },
+      {
+        "name": "take the reins",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 3,
+        "initiative": 40,
+        "id": "cs-103"
+      },
+      {
+        "name": "tribal blessing",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 8,
+        "initiative": 46,
+        "id": "cs-114"
+      },
+      {
+        "name": "venomous mayhem",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 6,
+        "initiative": 92,
+        "id": "cs-110"
+      },
+      {
+        "name": "cottonmouth snake",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 6,
+        "initiative": 92,
+        "id": "cs-110"
+      },
+      {
+        "name": "war paint",
+        "game": "cs",
+        "character_id": "CT",
+        "level": 4,
+        "initiative": 28,
+        "id": "cs-105"
+      },
+      {
+        "name": "backdraft",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 8,
+        "initiative": 38,
+        "id": "cs-142"
+      },
+      {
+        "name": "cauterize wound",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 8,
+        "initiative": 13,
+        "id": "cs-143"
+      },
+      {
+        "name": "collective combat",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1,
+        "initiative": 64,
+        "id": "cs-119"
+      },
+      {
+        "name": "combat medic",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1,
+        "initiative": 61,
+        "id": "cs-125"
+      },
+      {
+        "name": "combined effort",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1,
+        "initiative": 19,
+        "id": "cs-118"
+      },
+      {
+        "name": "controlled aggression",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1,
+        "initiative": 77,
+        "id": "cs-120"
+      },
+      {
+        "name": "coordinated attack",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1,
+        "initiative": 22,
+        "id": "cs-126"
+      },
+      {
+        "name": "crew integrity",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 3,
+        "initiative": 20,
+        "id": "cs-133"
+      },
+      {
+        "name": "fiery charisma",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1.5,
+        "initiative": 25,
+        "id": "cs-127"
+      },
+      {
+        "name": "fire whirl",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1,
+        "initiative": 51,
+        "id": "cs-123"
+      },
+      {
+        "name": "flaming axe",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 6,
+        "initiative": 23,
+        "id": "cs-138"
+      },
+      {
+        "name": "flashover",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 9,
+        "initiative": 96,
+        "id": "cs-144"
+      },
+      {
+        "name": "reigniting drakefiend",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 9,
+        "initiative": 96,
+        "id": "cs-144"
+      },
+      {
+        "name": "forcible entry",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1,
+        "initiative": 15,
+        "id": "cs-117"
+      },
+      {
+        "name": "heavy irons",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 2,
+        "initiative": 79,
+        "id": "cs-130"
+      },
+      {
+        "name": "hook and ladder",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 5,
+        "initiative": 32,
+        "id": "cs-136"
+      },
+      {
+        "name": "incident commander",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 9,
+        "initiative": 17,
+        "id": "cs-145"
+      },
+      {
+        "name": "jack of all trades",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 4,
+        "initiative": 27,
+        "id": "cs-134"
+      },
+      {
+        "name": "kindled tonic",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 4,
+        "initiative": 39,
+        "id": "cs-135"
+      },
+      {
+        "name": "ladder assault",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 3,
+        "initiative": 68,
+        "id": "cs-132"
+      },
+      {
+        "name": "light irons",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1,
+        "initiative": 30,
+        "id": "cs-124"
+      },
+      {
+        "name": "loyal companion",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1.5,
+        "initiative": 81,
+        "id": "cs-128"
+      },
+      {
+        "name": "spotted hound",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1.5,
+        "initiative": 81,
+        "id": "cs-128"
+      },
+      {
+        "name": "mutual aid",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 6,
+        "initiative": 44,
+        "id": "cs-139"
+      },
+      {
+        "name": "playing with fire",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1,
+        "initiative": 40,
+        "id": "cs-122"
+      },
+      {
+        "name": "practical tools",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1.5,
+        "initiative": 36,
+        "id": "cs-129"
+      },
+      {
+        "name": "rapid response",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 1,
+        "initiative": 12,
+        "id": "cs-121"
+      },
+      {
+        "name": "rolling flames",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 7,
+        "initiative": 53,
+        "id": "cs-140"
+      },
+      {
+        "name": "search and rescue",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 7,
+        "initiative": 18,
+        "id": "cs-141"
+      },
+      {
+        "name": "searing blaze",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 5,
+        "initiative": 75,
+        "id": "cs-137"
+      },
+      {
+        "name": "trauma care",
+        "game": "cs",
+        "character_id": "FK",
+        "level": 2,
+        "initiative": 31,
+        "id": "cs-131"
+      },
+      {
+        "name": "borrowed vitality",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1,
+        "initiative": 37,
+        "id": "cs-189"
+      },
+      {
+        "name": "channel the void",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1,
+        "initiative": 88,
+        "id": "cs-186"
+      },
+      {
+        "name": "empowered assault",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 3,
+        "initiative": 19,
+        "id": "cs-199"
+      },
+      {
+        "name": "enduring darkness",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 6,
+        "initiative": 26,
+        "id": "cs-205"
+      },
+      {
+        "name": "enervating strike",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1,
+        "initiative": 25,
+        "id": "cs-188"
+      },
+      {
+        "name": "entropy unleashed",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 8,
+        "initiative": 28,
+        "id": "cs-209"
+      },
+      {
+        "name": "find an opening",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1,
+        "initiative": 15,
+        "id": "cs-192"
+      },
+      {
+        "name": "gateway to the abyss",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 7,
+        "initiative": 66,
+        "id": "cs-208"
+      },
+      {
+        "name": "greed before need",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1.5,
+        "initiative": 33,
+        "id": "cs-196"
+      },
+      {
+        "name": "hollow embrace",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1.5,
+        "initiative": 53,
+        "id": "cs-195"
+      },
+      {
+        "name": "implosion",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 6,
+        "initiative": 49,
+        "id": "cs-206"
+      },
+      {
+        "name": "majestic malevolence",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 3,
+        "initiative": 89,
+        "id": "cs-200"
+      },
+      {
+        "name": "nether binding",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 2,
+        "initiative": 64,
+        "id": "cs-197"
+      },
+      {
+        "name": "nether blades",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1,
+        "initiative": 55,
+        "id": "cs-185"
+      },
+      {
+        "name": "no escape",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 9,
+        "initiative": 57,
+        "id": "cs-212"
+      },
+      {
+        "name": "obliterate",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 4,
+        "initiative": 13,
+        "id": "cs-202"
+      },
+      {
+        "name": "one with nothingness",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1.5,
+        "initiative": 31,
+        "id": "cs-194"
+      },
+      {
+        "name": "prescient voidmastery",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 9,
+        "initiative": 11,
+        "id": "cs-211"
+      },
+      {
+        "name": "reaching darkness",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1,
+        "initiative": 79,
+        "id": "cs-193"
+      },
+      {
+        "name": "ruinous barrage",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 7,
+        "initiative": 38,
+        "id": "cs-207"
+      },
+      {
+        "name": "sever reality",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 5,
+        "initiative": 78,
+        "id": "cs-204"
+      },
+      {
+        "name": "shrouded grasp",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 2,
+        "initiative": 23,
+        "id": "cs-198"
+      },
+      {
+        "name": "stalking quarry",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 5,
+        "initiative": 14,
+        "id": "cs-203"
+      },
+      {
+        "name": "tendrils of night",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 8,
+        "initiative": 44,
+        "id": "cs-210"
+      },
+      {
+        "name": "touch of the void",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1,
+        "initiative": 29,
+        "id": "cs-191"
+      },
+      {
+        "name": "untethered advance",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1,
+        "initiative": 46,
+        "id": "cs-190"
+      },
+      {
+        "name": "void-enhanced armory",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 4,
+        "initiative": 17,
+        "id": "cs-201"
+      },
+      {
+        "name": "void step",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1,
+        "initiative": 20,
+        "id": "cs-184"
+      },
+      {
+        "name": "withering deluge",
+        "game": "cs",
+        "character_id": "HO",
+        "level": 1,
+        "initiative": 47,
+        "id": "cs-187"
+      },
+      {
+        "name": "aspiration",
+        "game": "cs",
+        "character_id": "HP",
+        "level": 0.1,
+        "initiative": 50,
+        "id": "cs-176"
+      },
+      {
+        "name": "beacon of hope",
+        "points": 1230,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 4,
+        "initiative": 82,
+        "id": "cs-164"
+      },
+      {
+        "name": "bringer of miracles",
+        "points": 1231,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 9,
+        "initiative": 36,
+        "id": "cs-174"
+      },
+      {
+        "name": "chains of light",
+        "points": 1232,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 6,
+        "initiative": 31,
+        "id": "cs-168"
+      },
+      {
+        "name": "devotion",
+        "points": 1233,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 0.1,
+        "initiative": 50,
+        "id": "cs-177"
+      },
+      {
+        "name": "devout assistance",
+        "points": 1234,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 5,
+        "initiative": 37,
+        "id": "cs-166"
+      },
+      {
+        "name": "divine allegiance",
+        "points": 1235,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 2,
+        "initiative": 63,
+        "id": "cs-160"
+      },
+      {
+        "name": "encouraged conviction",
+        "points": 1236,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 3,
+        "initiative": 14,
+        "id": "cs-162"
+      },
+      {
+        "name": "expansive permanence",
+        "points": 1237,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 9,
+        "initiative": 9,
+        "id": "cs-175"
+      },
+      {
+        "name": "faith calling",
+        "points": 1238,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 13,
+        "id": "cs-146"
+      },
+      {
+        "name": "grace",
+        "points": 1239,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 0.1,
+        "initiative": 50,
+        "id": "cs-178"
+      },
+      {
+        "name": "harsh rebuke",
+        "points": 1240,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 44,
+        "id": "cs-147"
+      },
+      {
+        "name": "impetuous inquisition",
+        "points": 1241,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 28,
+        "id": "cs-148"
+      },
+      {
+        "name": "inner reflection",
+        "points": 1242,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 53,
+        "id": "cs-149"
+      },
+      {
+        "name": "inspired remedy",
+        "points": 1243,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 76,
+        "id": "cs-150"
+      },
+      {
+        "name": "lamentation",
+        "points": 1244,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 0.1,
+        "initiative": 50,
+        "id": "cs-179"
+      },
+      {
+        "name": "meditation",
+        "points": 1245,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 0.1,
+        "initiative": 50,
+        "id": "cs-180"
+      },
+      {
+        "name": "oaks embrace",
+        "points": 1246,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 84,
+        "id": "cs-151"
+      },
+      {
+        "name": "ordination",
+        "points": 1247,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 0.1,
+        "initiative": 50,
+        "id": "cs-181"
+      },
+      {
+        "name": "penitence",
+        "points": 1248,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 0.1,
+        "initiative": 50,
+        "id": "cs-182"
+      },
+      {
+        "name": "prosperous concord",
+        "points": 1249,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1.5,
+        "initiative": 43,
+        "id": "cs-157"
+      },
+      {
+        "name": "restoring faith",
+        "points": 1250,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 64,
+        "id": "cs-152"
+      },
+      {
+        "name": "revered protector",
+        "points": 1251,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 7,
+        "initiative": 15,
+        "id": "cs-170"
+      },
+      {
+        "name": "righteous atonement",
+        "points": 1252,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 8,
+        "initiative": 20,
+        "id": "cs-172"
+      },
+      {
+        "name": "rooted subjugation",
+        "points": 1253,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 4,
+        "initiative": 30,
+        "id": "cs-165"
+      },
+      {
+        "name": "sacred death",
+        "points": 1254,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 81,
+        "id": "cs-153"
+      },
+      {
+        "name": "salvation",
+        "points": 1255,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 0.1,
+        "initiative": 50,
+        "id": "cs-183"
+      },
+      {
+        "name": "soulful salvation",
+        "points": 1256,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1.5,
+        "initiative": 11,
+        "id": "cs-158"
+      },
+      {
+        "name": "soul strike",
+        "points": 1257,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 69,
+        "id": "cs-154"
+      },
+      {
+        "name": "spiritual gains",
+        "points": 1258,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 5,
+        "initiative": 94,
+        "id": "cs-167"
+      },
+      {
+        "name": "standing ground",
+        "points": 1259,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 22,
+        "id": "cs-155"
+      },
+      {
+        "name": "symphony of oppression",
+        "points": 1260,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 7,
+        "initiative": 86,
+        "id": "cs-171"
+      },
+      {
+        "name": "unruly repentance",
+        "points": 1261,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1.5,
+        "initiative": 25,
+        "id": "cs-159"
+      },
+      {
+        "name": "unstoppable force",
+        "points": 1262,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 6,
+        "initiative": 21,
+        "id": "cs-169"
+      },
+      {
+        "name": "vengeful veneration",
+        "points": 1263,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 8,
+        "initiative": 78,
+        "id": "cs-173"
+      },
+      {
+        "name": "vital bond",
+        "points": 1264,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 3,
+        "initiative": 48,
+        "id": "cs-163"
+      },
+      {
+        "name": "vocal sermon",
+        "points": 1265,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 1,
+        "initiative": 32,
+        "id": "cs-156"
+      },
+      {
+        "name": "weakened will",
+        "points": 1266,
+        "game": "cs",
+        "character_id": "HP",
+        "level": 2,
+        "initiative": 17,
+        "id": "cs-161"
+      },
+      {
+        "name": "blackened rage",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 3,
+        "initiative": 45,
+        "id": "cs-229"
+      },
+      {
+        "name": "blazing pincers",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 9,
+        "initiative": 59,
+        "id": "cs-241"
+      },
+      {
+        "name": "burning sparks",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1,
+        "initiative": 33,
+        "id": "cs-213"
+      },
+      {
+        "name": "chilling wave",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1,
+        "initiative": 39,
+        "id": "cs-214"
+      },
+      {
+        "name": "colorful wavelengths",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 5,
+        "initiative": 83,
+        "id": "cs-233"
+      },
+      {
+        "name": "darkened overcast",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 2,
+        "initiative": 10,
+        "id": "cs-227"
+      },
+      {
+        "name": "dominating illumination",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 8,
+        "initiative": 51,
+        "id": "cs-239"
+      },
+      {
+        "name": "empowering rays",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 4,
+        "initiative": 57,
+        "id": "cs-231"
+      },
+      {
+        "name": "encompassing aura",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 6,
+        "initiative": 11,
+        "id": "cs-235"
+      },
+      {
+        "name": "flickering lights",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1,
+        "initiative": 19,
+        "id": "cs-215"
+      },
+      {
+        "name": "floodlight",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 4,
+        "initiative": 71,
+        "id": "cs-232"
+      },
+      {
+        "name": "frosty glimmer",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1,
+        "initiative": 55,
+        "id": "cs-216"
+      },
+      {
+        "name": "gamma energy",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 7,
+        "initiative": 65,
+        "id": "cs-237"
+      },
+      {
+        "name": "heat waves",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1,
+        "initiative": 73,
+        "id": "cs-217"
+      },
+      {
+        "name": "imposing brilliance",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 6,
+        "initiative": 86,
+        "id": "cs-236"
+      },
+      {
+        "name": "light the way",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 9,
+        "initiative": 93,
+        "id": "cs-242"
+      },
+      {
+        "name": "gleaming squid",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 9,
+        "initiative": 93,
+        "id": "cs-242"
+      },
+      {
+        "name": "luminescence",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 2,
+        "initiative": 66,
+        "id": "cs-228"
+      },
+      {
+        "name": "moonbeam",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1,
+        "initiative": 85,
+        "id": "cs-218"
+      },
+      {
+        "name": "optical refraction",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 8,
+        "initiative": 37,
+        "id": "cs-240"
+      },
+      {
+        "name": "photonic defense",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 7,
+        "initiative": 9,
+        "id": "cs-238"
+      },
+      {
+        "name": "radiant glare",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1,
+        "initiative": 36,
+        "id": "cs-219"
+      },
+      {
+        "name": "shadow claws",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 5,
+        "initiative": 25,
+        "id": "cs-234"
+      },
+      {
+        "name": "shimmering scuttle",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1,
+        "initiative": 21,
+        "id": "cs-220"
+      },
+      {
+        "name": "shining diversion",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 3,
+        "initiative": 29,
+        "id": "cs-230"
+      },
+      {
+        "name": "soft glow",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1,
+        "initiative": 24,
+        "id": "cs-221"
+      },
+      {
+        "name": "solid light",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1.5,
+        "initiative": 12,
+        "id": "cs-224"
+      },
+      {
+        "name": "sparkling glow",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1.5,
+        "initiative": 27,
+        "id": "cs-225"
+      },
+      {
+        "name": "torrid radiation",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1,
+        "initiative": 76,
+        "id": "cs-222"
+      },
+      {
+        "name": "trickling sting",
+        "game": "cs",
+        "character_id": "LU",
+        "level": 1.5,
+        "initiative": 43,
+        "id": "cs-226"
+      },
+      {
+        "name": "airborne spores",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 2,
+        "initiative": 21,
+        "id": "cs-257" 
+      },
+      {
+        "name": "anticoagulant",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 6,
+        "initiative": 12,
+        "id": "cs-265" 
+      },
+      {
+        "name": "blood thinner",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 11,
+        "id": "cs-243" 
+      },
+      {
+        "name": "bogstep",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 16,
+        "id": "cs-244" 
+      },
+      {
+        "name": "complex toxicology",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 9,
+        "initiative": 35,
+        "id": "cs-271" 
+      },
+      {
+        "name": "compound toxin",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 5,
+        "initiative": 61,
+        "id": "cs-263" 
+      },
+      {
+        "name": "copperneck berries",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1.5,
+        "initiative": 70,
+        "id": "cs-255" 
+      },
+      {
+        "name": "death sentence",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 8,
+        "id": "cs-245" 
+      },
+      {
+        "name": "fireroot sap",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 4,
+        "initiative": 91,
+        "id": "cs-261" 
+      },
+      {
+        "name": "ground solvent",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 63,
+        "id": "cs-246" 
+      },
+      {
+        "name": "hide and seek",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 3,
+        "initiative": 43,
+        "id": "cs-259" 
+      },
+      {
+        "name": "lashing vines",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 13,
+        "id": "cs-247" 
+      },
+      {
+        "name": "flailing ivies",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 13,
+        "id": "cs-247" 
+      },
+      {
+        "name": "lingering swamp moss",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 9,
+        "initiative": 94,
+        "id": "cs-270" 
+      },
+      {
+        "name": "mudslide",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 18,
+        "id": "cs-252" 
+      },
+      {
+        "name": "neurotoxin",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 84,
+        "id": "cs-248" 
+      },
+      {
+        "name": "paralytic agent",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 76,
+        "id": "cs-249" 
+      },
+      {
+        "name": "personal poison",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 5,
+        "initiative": 86,
+        "id": "cs-262" 
+      },
+      {
+        "name": "potent mixture",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 3,
+        "initiative": 17,
+        "id": "cs-258" 
+      },
+      {
+        "name": "radiant forest fungi",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 4,
+        "initiative": 6,
+        "id": "cs-260" 
+      },
+      {
+        "name": "serpent's kiss",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 89,
+        "id": "cs-250" 
+      },
+      {
+        "name": "sinkhole",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1.5,
+        "initiative": 29,
+        "id": "cs-253" 
+      },
+      {
+        "name": "sludge bomb",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 7,
+        "initiative": 7,
+        "id": "cs-267" 
+      },
+      {
+        "name": "still river algae",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1,
+        "initiative": 9,
+        "id": "cs-251" 
+      },
+      {
+        "name": "tainted waters",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 6,
+        "initiative": 88,
+        "id": "cs-264" 
+      },
+      {
+        "name": "throwing daggers",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 2,
+        "initiative": 49,
+        "id": "cs-256" 
+      },
+      {
+        "name": "twist the blade",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 8,
+        "initiative": 19,
+        "id": "cs-269" 
+      },
+      {
+        "name": "volatile tonic",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 1.5,
+        "initiative": 31,
+        "id": "cs-254" 
+      },
+      {
+        "name": "whitefire balm",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 8,
+        "initiative": 20,
+        "id": "cs-268" 
+      },
+      {
+        "name": "wild stings",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 7,
+        "initiative": 71,
+        "id": "cs-266" 
+      },
+      {
+        "name": "crypt nettle",
+        "game": "cs",
+        "character_id": "MF",
+        "level": 7,
+        "initiative": 71,
+        "id": "cs-266" 
+      },
+      {
+        "name": "annihilating contraption",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 9,
+        "initiative": 89,
+        "id": "cs-QA-029"
+      },
+      {
+        "name": "clockwork ravager",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 9,
+        "initiative": 89,
+        "id": "cs-QA-029"
+      },
+      {
+        "name": "double-barrel railcaster",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 8,
+        "initiative": 37,
+        "id": "cs-QA-028"
+      },
+      {
+        "name": "elemental condenser",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 2,
+        "initiative": 4,
+        "id": "cs-QA-016"
+      },
+      {
+        "name": "energy transmission",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 4,
+        "initiative": "X5",
+        "id": "cs-QA-019"
+      },
+      {
+        "name": "fragmentation grenade",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 45,
+        "id": "cs-QA-005"
+      },
+      {
+        "name": "galvanic coil",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 6,
+        "initiative": "X7",
+        "id": "cs-QA-023"
+      },
+      {
+        "name": "gravity inverter module",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 20,
+        "id": "cs-QA-010"
+      },
+      {
+        "name": "improvised exosuit",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1.5,
+        "initiative": 90,
+        "id": "cs-QA-014"
+      },
+      {
+        "name": "hollow carapace",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1.5,
+        "initiative": 90,
+        "id": "cs-QA-014"
+      },
+      {
+        "name": "improvised mortar",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 93,
+        "id": "cs-QA-004"
+      },
+      {
+        "name": "clockwork bombard",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 93,
+        "id": "cs-QA-004"
+      },
+      {
+        "name": "instant relocation matrix",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 8,
+        "initiative": "X9",
+        "id": "cs-QA-027"
+      },
+      {
+        "name": "jury-rigged machine",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 88,
+        "id": "cs-QA-003"
+      },
+      {
+        "name": "clockwork soldier",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 88,
+        "id": "cs-QA-003"
+      },
+      {
+        "name": "launch skywards",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 5,
+        "initiative": 92,
+        "id": "cs-QA-021"
+      },
+      {
+        "name": "clockwork drone",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 5,
+        "initiative": 92,
+        "id": "cs-QA-021"
+      },
+      {
+        "name": "march of machines",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 6,
+        "initiative": 50,
+        "id": "cs-QA-024"
+      },
+      {
+        "name": "oscillating projector",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 5,
+        "initiative": 22,
+        "id": "cs-QA-022"
+      },
+      {
+        "name": "particle ray beam",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 36,
+        "id": "cs-QA-011"
+      },
+      {
+        "name": "perfected exosuit",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 9,
+        "initiative": 8,
+        "id": "cs-QA-030"
+      },
+      {
+        "name": "phase field emitter",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 12,
+        "id": "cs-QA-009"
+      },
+      {
+        "name": "power modulation",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1.5,
+        "initiative": "X1",
+        "id": "cs-QA-012"
+      },
+      {
+        "name": "ransack clutter",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 4,
+        "initiative": 18,
+        "id": "cs-QA-020"
+      },
+      {
+        "name": "recycle parts",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 24,
+        "id": "cs-QA-006"
+      },
+      {
+        "name": "reinforce armor",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 7,
+        "initiative": 26,
+        "id": "cs-QA-026"
+      },
+      {
+        "name": "remote control",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1.5,
+        "initiative": 37,
+        "id": "cs-QA-013"
+      },
+      {
+        "name": "repurpose leftovers",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 68,
+        "id": "cs-QA-007"
+      },
+      {
+        "name": "retrofit weapons",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 3,
+        "initiative": 60,
+        "id": "cs-QA-018"
+      },
+      {
+        "name": "salvage grappler",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 1,
+        "initiative": 46,
+        "id": "cs-QA-008"
+      },
+      {
+        "name": "seeker missiles",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 7,
+        "initiative": 77,
+        "id": "cs-QA-025"
+      },
+      {
+        "name": "clockwork rocket",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 7,
+        "initiative": 77,
+        "id": "cs-QA-025"
+      },
+      {
+        "name": "trajectory diverter",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 2,
+        "initiative": "X3",
+        "id": "cs-QA-015"
+      },
+      {
+        "name": "trudging bulwark",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 3,
+        "initiative": 73,
+        "id": "cs-QA-017"
+      },
+      {
+        "name": "clockwork guardian",
+        "game": "cs",
+        "character_id": "QA",
+        "level": 3,
+        "initiative": 73,
+        "id": "cs-QA-017"
+      },
+      {
+        "name": "belly of the beast",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 9,
+        "initiative": 38,
+        "id": "cs-RM-031"
+      },
+      {
+        "name": "berserk barrage",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 53,
+        "id": "cs-RM-003"
+      },
+      {
+        "name": "burning bile",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 45,
+        "id": "cs-RM-004"
+      },
+      {
+        "name": "caustic claws",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 78,
+        "id": "cs-RM-005"
+      },
+      {
+        "name": "cornered animal",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1.5,
+        "initiative": 12,
+        "id": "cs-RM-014"
+      },
+      {
+        "name": "corrosive spew",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 6,
+        "initiative": 50,
+        "id": "cs-RM-025"
+      },
+      {
+        "name": "devour whole",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 8,
+        "initiative": 69,
+        "id": "cs-RM-029"
+      },
+      {
+        "name": "easy prey",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 55,
+        "id": "cs-RM-006"
+      },
+      {
+        "name": "fatal frenzy",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 2,
+        "initiative": 40,
+        "id": "cs-RM-018"
+      },
+      {
+        "name": "feast of flesh",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 73,
+        "id": "cs-RM-007"
+      },
+      {
+        "name": "feral lunge",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 31,
+        "id": "cs-RM-008"
+      },
+      {
+        "name": "ferocious fling",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 3,
+        "initiative": 86,
+        "id": "cs-RM-020"
+      },
+      {
+        "name": "fight or flight",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 35,
+        "id": "cs-RM-009"
+      },
+      {
+        "name": "heartripper",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 8,
+        "initiative": 90,
+        "id": "cs-RM-030"
+      },
+      {
+        "name": "indomitable craving",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 7,
+        "initiative": 22,
+        "id": "cs-RM-027"
+      },
+      {
+        "name": "lie in wait",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 4,
+        "initiative": 15,
+        "id": "cs-RM-022"
+      },
+      {
+        "name": "nourishing meal",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 83,
+        "id": "cs-RM-010"
+      },
+      {
+        "name": "pouncing predator",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 6,
+        "initiative": 11,
+        "id": "cs-RM-026"
+      },
+      {
+        "name": "ravenous roar",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 4,
+        "initiative": 25,
+        "id": "cs-RM-021"
+      },
+      {
+        "name": "reckless attack",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 65,
+        "id": "cs-RM-011"
+      },
+      {
+        "name": "rend and mutilate",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 5,
+        "initiative": 74,
+        "id": "cs-RM-023"
+      },
+      {
+        "name": "rip and tear",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 9,
+        "initiative": 42,
+        "id": "cs-RM-032"
+      },
+      {
+        "name": "savage stalker",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 3,
+        "initiative": 20,
+        "id": "cs-RM-019"
+      },
+      {
+        "name": "scrape and scrounge",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1.5,
+        "initiative": 24,
+        "id": "cs-RM-015"
+      },
+      {
+        "name": "seize",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1.5,
+        "initiative": 29,
+       "id": "cs-RM-016"
+      },
+      {
+        "name": "slake thirst",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 2,
+        "initiative": 26,
+        "id": "cs-RM-017"
+      },
+      {
+        "name": "strip the flesh",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 17,
+        "id": "cs-RM-012"
+      },
+      {
+        "name": "survival instincts",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 7,
+        "initiative": 13,
+        "id": "cs-RM-028"
+      },
+      {
+        "name": "terrifying howl",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 1,
+        "initiative": 22,
+        "id": "cs-RM-013"
+      },
+      {
+        "name": "voracious hunter",
+        "game": "cs",
+        "character_id": "RM",
+        "level": 5,
+        "initiative": 32,
+        "id": "cs-RM-024"
+      },
+      {
+        "name": "burning pit",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 45,
+        "id": "cs-272" 
+      },
+      {
+        "name": "blazing fire",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 45,
+        "id": "cs-272" 
+      },
+      {
+        "name": "chilling slice",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 8,
+        "initiative": 66,
+        "id": "cs-297" 
+      },
+      {
+        "name": "circle of lifeless",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 8,
+        "initiative": 90,
+        "id": "cs-298" 
+      },
+      {
+        "name": "confidence ritual",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 30,
+        "id": "cs-273" 
+      },
+      {
+        "name": "death is not defeat",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 9,
+        "initiative": 97,
+        "id": "cs-299" 
+      },
+      {
+        "name": "decaying daggers",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 3,
+        "initiative": 28,
+        "id": "cs-287" 
+      },
+      {
+        "name": "dimmed defense",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 12,
+        "id": "cs-274" 
+      },
+      {
+        "name": "wall of shadows",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 12,
+        "id": "cs-274" 
+      },
+      {
+        "name": "eternal endurance",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 9,
+        "initiative": 6,
+        "id": "cs-300" 
+      },
+      {
+        "name": "wandering soul",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 9,
+        "initiative": 6,
+        "id": "cs-300" 
+      },
+      {
+        "name": "disembodied goliath",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 9,
+        "initiative": 6,
+        "id": "cs-300" 
+      },
+      {
+        "name": "ethereal canine",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 27,
+        "id": "cs-275" 
+      },
+      {
+        "name": "phantom hound",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 27,
+        "id": "cs-275" 
+      },
+      {
+        "name": "fear the reaper",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1.5,
+        "initiative": 91,
+        "id": "cs-282" 
+      },
+      {
+        "name": "deatheater",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1.5,
+        "initiative": 91,
+        "id": "cs-282" 
+      },
+      {
+        "name": "fierce loyalty",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 6,
+        "initiative": 20,
+        "id": "cs-293" 
+      },
+      {
+        "name": "mimicking sprite",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 6,
+        "initiative": 20,
+        "id": "cs-293" 
+      },
+      {
+        "name": "flurry of madness",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 2,
+        "initiative": 42,
+        "id": "cs-285" 
+      },
+      {
+        "name": "bat cloud",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 2,
+        "initiative": 42,
+        "id": "cs-285" 
+      },
+      {
+        "name": "forceful apparition",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1.5,
+        "initiative": 16,
+        "id": "cs-283" 
+      },
+      {
+        "name": "leeching phantasm",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1.5,
+        "initiative": 16,
+        "id": "cs-283" 
+      },
+      {
+        "name": "horde of bones",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 79,
+        "id": "cs-276" 
+      },
+      {
+        "name": "skeletal archer",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 79,
+        "id": "cs-276" 
+      },
+      {
+        "name": "horrific nightmare",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 6,
+        "initiative": 71,
+        "id": "cs-294" 
+      },
+      {
+        "name": "soul snatcher",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 6,
+        "initiative": 71,
+        "id": "cs-294" 
+      },
+      {
+        "name": "incorporeal transport",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 74,
+        "id": "cs-277" 
+      },
+      {
+        "name": "ghost carriage",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 74,
+        "id": "cs-277" 
+      },
+      {
+        "name": "midnight feast",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 80,
+        "id": "cs-278" 
+      },
+      {
+        "name": "rise from ashes",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 7,
+        "initiative": 55,
+        "id": "cs-295" 
+      },
+      {
+        "name": "glowing egg",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 7,
+        "initiative": 55,
+        "id": "cs-295" 
+      },
+      {
+        "name": "spectral phoenix",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 7,
+        "initiative": 55,
+        "id": "cs-296" 
+      },
+      {
+        "name": "shamanistic guard",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 7,
+        "initiative": 18,
+        "id": "cs-296" 
+      },
+      {
+        "name": "vengeful phantasm",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 7,
+        "initiative": 18,
+        "id": "cs-296" 
+      },
+      {
+        "name": "shrieking spirit",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 26,
+        "id": "cs-279" 
+      },
+      {
+        "name": "wailing banshee",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 26,
+        "id": "cs-279" 
+      },
+      {
+        "name": "smoky shroud",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 2,
+        "initiative": 81,
+        "id": "cs-286" 
+      },
+      {
+        "name": "mantle of darkness",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 2,
+        "initiative": 81,
+        "id": "cs-286" 
+      },
+      {
+        "name": "soul harvest",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 5,
+        "initiative": 15,
+        "id": "cs-291" 
+      },
+      {
+        "name": "spirit barrage",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 4,
+        "initiative": 51,
+        "id": "cs-289" 
+      },
+      {
+        "name": "spiritual energy",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 5,
+        "initiative": 34,
+        "id": "cs-292" 
+      },
+      {
+        "name": "imbued monolith",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 5,
+        "initiative": 34,
+        "id": "cs-292" 
+      },
+      {
+        "name": "spread disease",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 3,
+        "initiative": 47,
+        "id": "cs-288" 
+      },
+      {
+        "name": "leprous wraith",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 3,
+        "initiative": 47,
+        "id": "cs-288" 
+      },
+      {
+        "name": "toxic charm",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 59,
+        "id": "cs-280" 
+      },
+      {
+        "name": "unholy sacrifice",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1.5,
+        "initiative": 23,
+        "id": "cs-284" 
+      },
+      {
+        "name": "whistling winds",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 1,
+        "initiative": 82,
+        "id": "cs-281" 
+      },
+      {
+        "name": "white glow",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 4,
+        "initiative": 77,
+        "id": "cs-290" 
+      },
+      {
+        "name": "orb of light",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 4,
+        "initiative": 77,
+        "id": "cs-290" 
+      },
+      {
+        "name": "shifting discs",
+        "game": "cs",
+        "character_id": "SP",
+        "level": 4,
+        "initiative": 77,
+        "id": "cs-290" 
+      },
+      {
+        "name": "absolute magnitude",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 6,
+        "initiative": 20,
+        "id": "cs-322" 
+      },
+      {
+        "name": "absorbing light",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 3,
+        "initiative": 15,
+        "id": "cs-316" 
+      },
+      {
+        "name": "aligned constellations",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1,
+        "initiative": 32,
+        "id": "cs-301" 
+      },
+      {
+        "name": "blue moon",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 6,
+        "initiative": 79,
+        "id": "cs-323" 
+      },
+      {
+        "name": "celestial maneuver",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 8,
+        "initiative": 88,
+        "id": "cs-326" 
+      },
+      {
+        "name": "crashing flare",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1,
+        "initiative": 26,
+        "id": "cs-302" 
+      },
+      {
+        "name": "defying gravity",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 2,
+        "initiative": 22,
+        "id": "cs-314" 
+      },
+      {
+        "name": "diamond rings",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1,
+        "initiative": 35,
+        "id": "cs-303" 
+      },
+      {
+        "name": "earthshine",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1,
+        "initiative": 57,
+        "id": "cs-304" 
+      },
+      {
+        "name": "eonic blast",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 7,
+        "initiative": 50,
+        "id": "cs-324" 
+      },
+      {
+        "name": "equinox",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 4,
+        "initiative": 40,
+        "id": "cs-318" 
+      },
+      {
+        "name": "force field",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1.5,
+        "initiative": 9,
+        "id": "cs-311" 
+      },
+      {
+        "name": "gravitational flip",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1.5,
+        "initiative": 13,
+        "id": "cs-312" 
+      },
+      {
+        "name": "interplanar voyager",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 9,
+        "initiative": 24,
+        "id": "cs-328" 
+      },
+      {
+        "name": "light pollution",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1,
+        "initiative": 44,
+        "id": "cs-305" 
+      },
+      {
+        "name": "lost in the stars",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1.5,
+        "initiative": 6,
+        "id": "cs-313" 
+      },
+      {
+        "name": "lucky stars",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1,
+        "initiative": 74,
+        "id": "cs-306" 
+      },
+      {
+        "name": "luminous blitz",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1,
+        "initiative": 17,
+        "id": "cs-307" 
+      },
+      {
+        "name": "pierce the firmament",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 9,
+        "initiative": 33,
+        "id": "cs-329" 
+      },
+      {
+        "name": "plasmatic power",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 5,
+        "initiative": 10,
+        "id": "cs-321" 
+      },
+      {
+        "name": "proportional exchange",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 2,
+        "initiative": 84,
+        "id": "cs-315" 
+      },
+      {
+        "name": "shifting chasma",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 5,
+        "initiative": 28,
+        "id": "cs-320" 
+      },
+      {
+        "name": "shooting stars",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 3,
+        "initiative": 54,
+        "id": "cs-317" 
+      },
+      {
+        "name": "solar eclipse",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1,
+        "initiative": 60,
+        "id": "cs-308" 
+      },
+      {
+        "name": "starstruck",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1,
+        "initiative": 80,
+        "id": "cs-309" 
+      },
+      {
+        "name": "stone meteorite",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 7,
+        "initiative": 90,
+        "id": "cs-325" 
+      },
+      {
+        "name": "sungaze",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 8,
+        "initiative": 37,
+        "id": "cs-327" 
+      },
+      {
+        "name": "supernova",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 1,
+        "initiative": 30,
+        "id": "cs-310" 
+      },
+      {
+        "name": "wish upon a star",
+        "game": "cs",
+        "character_id": "ST",
+        "level": 4,
+        "initiative": 75,
+        "id": "cs-319" 
+      }
+]
