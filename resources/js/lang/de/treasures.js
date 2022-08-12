@@ -334,5 +334,152 @@ export default {
     },
     "jotl-X": {
         "name": "“Ring of Restoration” (Item 32)"
+    },
+    "cs-1": {
+        "name": "“Drake's Blood” (Item 14)"
+    },
+    "cs-2": {
+        "name": "“Orb of Fortune” (Item 09)"
+    },
+    "cs-3": {
+        "name": "“Chain Mace” (Item 14)"
+    },
+    "cs-4": {
+        "name": "Gain 15 gold and Recover one lost card"
+    },
+    "cs-5": {
+        "name": "“Concussion Mine” (Item 31)"
+    },
+    "cs-6": {
+        "name": "Gain 20 gold and disarm all adjacent traps"
+    },
+    "cs-7": {
+        "name": "One random “Stone” item (Item 94-100)"
+    },
+    "cs-8": {
+        "name": "“Dizzying Tincture” (Item 58)"
+    },
+    "cs-9": {
+        "name": "“Orb of Fortune” (Item 9)"
+    },
+    "cs-10": {
+        "name": "One random “Stone” item (Item 94-100)"
+    },
+    "cs-11": {
+        "name": "“Dizzying Tincture” (Item 58)"
+    },
+    "cs-12": {
+        "name": "“Mana Medicine” (Item 60)"
+    },
+    "cs-13": {
+        "name": "“Orb of Despair” (Item 10)"
+    },
+    "cs-14": {
+        "name": "“Steel Helmet” (Item 22)"
+    },
+    "cs-15": {
+        "name": "“Shifting Compass” (Item 32)"
+    },
+    "cs-16": {
+        "name": "Perform “Heal 6, Self”, gain {POISON}"
+    },
+    "cs-17": {
+        "name": "“Concussion Mine” (Item 31)"
+    },
+    "cs-18": {
+        "name": "“Boneclad Shawl (Item 25)"
+    },
+    "cs-19": {
+        "name": "Gain ✓ and generate a Wild Element"
+    },
+    "cs-20": {
+        "name": "One random “Stone” item (Item 94-100)"
+    },
+    "cs-21": {
+        "name": "“Steel Helmet” (Item 22)"
+    },
+    "cs-22": {
+        "name": "“Boots of Perpetuity” (Item 19)"
+    },
+    "cs-23": {
+        "name": "“Trophy Helmet” (Item 12)"
+    },
+    "cs-24": {
+        "name": "One random “Stone” item (Item 94-100)"
+    },
+    "cs-25": {
+        "name": "“Draining Greaves” (Item 15)"
+    },
+    "cs-26": {
+        "name": "“Iron Snare” (Item 30)"
+    },
+    "cs-27": {
+        "name": "“Woven Plate Armor” (Item 23)"
+    },
+    "cs-28": {
+        "name": "“Chain Mace” (Item 14)"
+    },
+    "cs-29": {
+        "name": "“Woven Plate Armor” (Item 23)"
+    },
+    "cs-30": {
+        "name": "“Boneclad Shawl (Item 25)"
+    },
+    "cs-31": {
+        "name": "“Drake's Blood” (Item 14)"
+    },
+    "cs-32": {
+        "name": "“Curious Pendant” (Item 20)"
+    },
+    "cs-33": {
+        "name": "25  gold, gain {POISON}"
+    },
+    "cs-34": {
+        "name": "Suffer hazardous terrain damage, gain {INVISIBLE}"
+    },
+    "cs-35": {
+        "name": "“Curseblood Blade” (Item 36)"
+    },
+    "cs-36": {
+        "name": "10 experience, gain {INVSIBLE}"
+    },
+    "cs-37": {
+        "name": "“Draining Greaves” (Item 15)"
+    },
+    "cs-38": {
+        "name": "“War Pick” (Item 13)"
+    },
+    "cs-39": {
+        "name": "“Infrared Goggles” (Item 21)"
+    },
+    "cs-40": {
+        "name": "One random “Stone” item (Item 94-100)"
+    },
+    "cs-41": {
+        "name": "“Ashsteel Gauntlets” (Item 61)"
+    },
+    "cs-42": {
+        "name": "“War Pick” (Item 13)"
+    },
+    "cs-43": {
+        "name": "10 experience and Refresh all spent items"
+    },
+    "cs-44": {
+        "name": "“Mana Medicine” (Item 60)"
+    },
+    "cs-45": {
+        "name": "One random “Stone” item (Item 94-100)"
+    },
+    "cs-46": {
+        "name": "“Vipertooth Dagger” design (Item 54)"
+    },
+    "cs-47": {
+        "name": "15 gold"
+    },
+    "cs-48": {
+        "name": "15 gold"
+    },
+    "cs-49": {
+        "name": "“Magma Waders” (Item 99)"
     }
 }
