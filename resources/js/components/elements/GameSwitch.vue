@@ -44,8 +44,9 @@ export default {
                 gh: this.$t('Gloomhaven'),
                 fc: this.$t('Forgotten Circles'),
                 jotl: this.$t('Jaws of the Lion'),
+                cs: this.$t('Crimson Scales'),
             },
-            beta: ['jotl']
+            beta: ['cs']
         }
     },
     mounted() {
