@@ -1215,7 +1215,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Add one {AGAIN} {RETALIATE}1, {RANGE}3 card"
+                    "desc": "Add one {AGAIN} {RETALIATE}1, {RANGE}3 card"
                 },
                 {
                     "count": 1,
@@ -1279,7 +1279,7 @@
             "perks": [
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} {ANY} card"
+                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} {ANY} card"
                 },
                 {
                     "count": 1,
@@ -1349,7 +1349,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {+1_WHITE} card with two {+1_WHITE} {RELALIATE}1 {RANGE}3 card"
+                    "desc": "Replace one {+1_WHITE} card with two {+1_WHITE} {RELALIATE}1 {RANGE}3 card"
                 },
                 {
                     "count": 1,
@@ -1407,11 +1407,11 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace two {+0_WHITE} cards with one {+1_WHITE} {HEAL}1, (Ally) {RANGE}2 card"
+                    "desc": "Replace two {+0_WHITE} cards with one {+1_WHITE} {HEAL}1, (Ally) {RANGE}2 card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace two {+0_WHITE} cards with one {+1_WHITE} {SHIELD}1, (Ally) {RANGE}2 card"
+                    "desc": "Replace two {+0_WHITE} cards with one {+1_WHITE} {SHIELD}1, (Ally) {RANGE}2 card"
                 },
                 {
                     "count": 2,
@@ -1482,7 +1482,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add one {+1_WHITE} Create a 2 damage trap in an empty hex within {RANGE}2 card"
+                    "desc": "Add one {+1_WHITE} Create a 2 damage trap in an empty hex within {RANGE}2 card"
                 },
                 {
                     "count": 1,
@@ -1524,7 +1524,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO::Replace one {-2_WHITE} card with one {-2_WHITE} {BLESS}, Self card"
+                    "desc": "Replace one {-2_WHITE} card with one {-2_WHITE} {BLESS}, Self card"
                 },
                 {
                     "count": 1,
@@ -1532,7 +1532,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO::Replace one {+0_WHITE} card with one {+X_WHITE}, where X is the number of summoned allies you own card"
+                    "desc": "Replace one {+0_WHITE} card with one {+X_WHITE}, where X is the number of summoned allies you own card"
                 },
                 {
                     "count": 1,
@@ -1578,7 +1578,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Replace two {+0_WHITE} cards with two {+0_WHITE} {+2_WHITE} if you are on {LADDER} cards"
+                    "desc": "TODO:: Replace two {+0_WHITE} cards with two {+0_WHITE} {+2_WHITE} if you are on {LADDER} cards"
                 },
                 {
                     "count": 1,
@@ -1714,11 +1714,11 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace two {+1_WHITE} cards with one {+3_WHITE} {REGENERATE}, Self card"
+                    "desc": "Replace two {+1_WHITE} cards with one {+3_WHITE} {REGENERATE}, Self card"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {+0_WHITE} card with one {+1_WHITE} Create a Void pit in an empty hex {RANGE}2 card"
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} Create a Void pit in an empty hex {RANGE}2 card"
                 },
                 {
                     "count": 1,
@@ -1810,7 +1810,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace two {+0_WHITE} cards with two {+X_WHITE}, where X is the poison value of the target cards"
+                    "desc": "Replace two {+0_WHITE} cards with two {+X_WHITE}, where X is the poison value of the target cards"
                 },
                 {
                     "count": 1,
@@ -1818,23 +1818,23 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {+0_WHITE} card with two Create difficult terrain in the hex occupied by the target cards"
+                    "desc": "Replace one {+0_WHITE} card with two Create difficult terrain in the hex occupied by the target cards"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {+1_WHITE} card with one {+0_WHITE} {2_WOUND} card"
+                    "desc": "Replace one {+1_WHITE} card with one {+0_WHITE} {2_WOUND} card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add four {AGAIN} {+0_WHITE} {+1_WHITE} if the target occupy difficult terrain cards"
+                    "desc": "Add four {AGAIN} {+0_WHITE} {+1_WHITE} if the target occupy difficult terrain cards"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add two {AGAIN} {INVISIBLE}, Self, if you occupy difficult terrain cards"
+                    "desc": "Add two {AGAIN} {INVISIBLE}, Self, if you occupy difficult terrain cards"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Gain “Poison Dagger” (Item 011). You may carry one additional {ONE_HAND} item with “Dagger” in its name."
+                    "desc": "Gain “Poison Dagger” (Item 011). You may carry one additional {ONE_HAND} item with “Dagger” in its name."
                 },
                 {
                     "count": 1,
@@ -1857,7 +1857,7 @@
             "perks": [
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} {RUPTURE} and {WOUND} card"
+                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} {RUPTURE} and {WOUND} card"
                 },
                 {
                     "count": 2,
@@ -1865,11 +1865,11 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {RUPTURE} card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {RUPTURE} card"
                 },
                 {
                     "count": 3,
-                    "desc": "TODO:: Replace one {+0_WHITE} card with one {+1_WHITE} Add {+3_WHITE} instead if the target has {RUPTURE} or {WOUND} card"
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} Add {+3_WHITE} instead if the target has {RUPTURE} or {WOUND} card"
                 },
                 {
                     "count": 3,
@@ -1885,7 +1885,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Whenever one of your abilities causes atleast one enemey to gain {RUPTURE}, immediately after that ability perform {MOVE}1"
+                    "desc": "Whenever one of your abilities causes atleast one enemey to gain {RUPTURE}, immediately after that ability perform {MOVE}1"
                 },
                 {
                     "count": 1,
@@ -1982,7 +1982,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Add one {+1_WHITE} {+3_WHITE} if you are at full health card"
+                    "desc": "Add one {+1_WHITE} {+3_WHITE} if you are at full health card"
                 },
                 {
                     "count": 1,
@@ -1990,15 +1990,15 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Add one {+1_WHITE} {HEAL}1 {RANGE}3 card"
+                    "desc": "Add one {+1_WHITE} {HEAL}1 {RANGE}3 card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add two {AGAIN} Force the target to perform {MOVE}1 cards"
+                    "desc": "Add two {AGAIN} Force the target to perform {MOVE}1 cards"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add one {AGAIN} {HEAL}1 {RANGE}1 card"
+                    "desc": "Add one {AGAIN} {HEAL}1 {RANGE}1 card"
                 },
                 {
                     "count": 1,
