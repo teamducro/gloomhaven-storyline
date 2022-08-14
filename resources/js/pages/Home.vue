@@ -186,7 +186,7 @@
                     <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2 transform rotate-180" aria-hidden="true">style</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                            Extensions
+                            Expansions
                         </h3>
                     </template>
                     <template v-slot:left>
