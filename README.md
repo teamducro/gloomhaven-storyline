@@ -89,6 +89,8 @@ Thanks to these creators for their content.
 - run `npm run dev` to compile project files and assets to the public directory.
 - during development run `npm run watch` to keep watching for changes, this compiles files when their updated.
 
+If everything is working correctly you can visit the tracker locally on: `https://gloomhaven-storyline.test/tracker`
+
 After changes are made, open a Pull Request into the develop branch for review. 
 
 All content remains under creative commons license BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
