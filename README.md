@@ -69,7 +69,7 @@ Thanks to these creators for their content.
 
 [Credits](https://gloomhaven-storyline.com/tracker?credits#/info)
 
-## How do I get set up? ###
+## How to build the tracker locally?
 
 *Setup local webserver using Laravel Valet* (feel free to use something else like mamp for a local webserver) 
 
