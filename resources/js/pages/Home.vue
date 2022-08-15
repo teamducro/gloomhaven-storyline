@@ -191,7 +191,8 @@
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
-                            Forgotten circles and Jaws of the Lion can be tracked in Gloomhaven Storyline.
+                            Forgotten circles, Jaws of the Lion and Crimson Scales can be tracked in Gloomhaven
+                            Storyline.
                         </p>
                         <p class="text-gray-500 mb-2">
                             Solo scenarios of all the unlockable characters are also included!
@@ -294,6 +295,14 @@
                         <p class="text-gray-800 px-6">
                             The tracker has support for Forgotten Circles
                         </p>
+
+                        <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
+                            <inline-svg src="icons/jotl" :classes="['w-6', 'h-6', 'mr-2']"/>
+                            Jaws of the Lion
+                        </div>
+                        <p class="text-gray-800 px-6">
+                            Jaws of the Lion is supported!
+                        </p>
                     </div>
                 </div>
 
@@ -313,11 +322,11 @@
                         </p>
 
                         <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
-                            <inline-svg src="icons/jotl" :classes="['w-6', 'h-6', 'mr-2']"/>
-                            Jaws of the Lion
+                            <inline-svg src="icons/cs" :classes="['w-6', 'h-6', 'mr-2']"/>
+                            Crimson Scales
                         </div>
                         <p class="text-gray-800 px-6">
-                            Jaws of the Lion is supported!
+                            The unofficial fanmade expansion Crimson Scales is available in the tracker.
                         </p>
                     </div>
                 </div>

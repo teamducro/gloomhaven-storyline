@@ -1171,13 +1171,11 @@
                 }
             ]
         },
-
         "AA": {
             "id": "AA",
             "name": "Amber Aegis",
             "name-spoilerfree": "Beetle",
             "game": "cs",
-            "color": "#f89521",
             "translatedName": "characters.AA.name",
             "abilityCount": 11,
             "perks": [
@@ -1229,51 +1227,12 @@
                     "count": 1,
                     "desc": "TODO:: Ignore negative scenario effects and add one {+X_WHITE}, where X is the number of active Cultivate {CULTIVATE} actions card"
                 }
-            ],
-            "stats": [
-                {
-                  "level": 1,
-                  "health": 12
-                },
-                {
-                  "level": 2,
-                  "health": 14
-                },
-                {
-                  "level": 3,
-                  "health": 17
-                },
-                {
-                  "level": 4,
-                  "health": 19
-                },
-                {
-                  "level": 5,
-                  "health": 22
-                },
-                {
-                  "level": 6,
-                  "health": 24
-                },
-                {
-                  "level": 7,
-                  "health": 27
-                },
-                {
-                  "level": 8,
-                  "health": 29
-                },
-                {
-                  "level": 9,
-                  "health": 32
-                }
             ]
         },
         "QA": {
             "id": "QA",
             "name": "Artificer",
             "game": "cs",
-            "color": "#79bcda",
             "translatedName": "characters.QA.name",
             "abilityCount": 9,
             "perks": [
@@ -1323,14 +1282,13 @@
             "id": "BM",
             "name": "Bombard",
             "game": "cs",
-            "color": "#a59786",
             "translatedName": "characters.BM.name",
             "abilityCount": 9,
             "starting_group": [
                 "cs_militant",
                 "cs_trailblazers"
             ],
-            "perks":[
+            "perks": [
                 {
                     "count": 1,
                     "desc": "Remove two {-1_WHITE} cards"
@@ -1389,14 +1347,13 @@
             "id": "BK",
             "name": "Brightspark",
             "game": "cs",
-            "color": "#caad2e",
             "translatedName": "characters.BK.name",
             "abilityCount": 11,
             "starting_group": [
                 "cs_explorers",
                 "cs_trailblazers"
             ],
-            "perks":[
+            "perks": [
                 {
                     "count": 3,
                     "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {ANYX} to add +2 {ATTACK} card"
@@ -1438,20 +1395,18 @@
                     "desc": "Ignore negative scenario effects and remove one {-1_WHITE} card"
                 }
             ]
-        }
-        ,
+        },
         "CG": {
             "id": "CG",
             "name": "Chainguard",
             "game": "cs",
-            "color": "#ce6d2f",
             "translatedName": "characters.CG.name",
             "abilityCount": 10,
             "starting_group": [
                 "cs_protectors",
                 "cs_explorers"
             ],
-            "perks":[
+            "perks": [
                 {
                     "count": 2,
                     "desc": "TODO:: Replace one {-1_WHITE} card with one {+1_WHITE} {SHACKLE} card"
@@ -1502,14 +1457,13 @@
             "id": "CT",
             "name": "Chieftain",
             "game": "cs",
-            "color": "#76c6c4",
             "translatedName": "characters.CT.name",
             "abilityCount": 10,
             "starting_group": [
                 "cs_protectors",
                 "cs_naturalists"
             ],
-            "perks":[
+            "perks": [
                 {
                     "count": 1,
                     "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card"
@@ -1560,14 +1514,13 @@
             "id": "FK",
             "name": "Fire Knight",
             "game": "cs",
-            "color": "#cd2127",
             "translatedName": "characters.FK.name",
             "abilityCount": 10,
             "starting_group": [
                 "cs_militant",
                 "cs_protectors"
             ],
-            "perks":[
+            "perks": [
                 {
                     "count": 1,
                     "desc": "Remove two {-1_WHITE} cards"
@@ -1622,7 +1575,6 @@
             "id": "HP",
             "name": "Hierophant",
             "game": "cs",
-            "color": "#e65925",
             "translatedName": "characters.HP.name",
             "abilityCount": 11,
             "starting_group": [
@@ -1680,7 +1632,6 @@
             "id": "HO",
             "name": "Hollowpact",
             "game": "cs",
-            "color": "#a04aa5",
             "translatedName": "characters.HO.name",
             "abilityCount": 10,
             "starting_group": [
@@ -1730,7 +1681,6 @@
             "id": "LU",
             "name": "Luminary",
             "game": "cs",
-            "color": "#bf9eca",
             "translatedName": "characters.LU.name",
             "abilityCount": 11,
             "starting_group": [
@@ -1792,7 +1742,6 @@
             "id": "MF",
             "name": "Mirefoot",
             "game": "cs",
-            "color": "#ddde8b",
             "translatedName": "characters.MF.name",
             "abilityCount": 10,
             "starting_group": [
@@ -1850,7 +1799,6 @@
             "id": "RM",
             "name": "Ruinmaw",
             "game": "cs",
-            "color": "#c12729",
             "translatedName": "characters.RM.name",
             "abilityCount": 11,
             "starting_group": [],
@@ -1897,11 +1845,10 @@
             "id": "SP",
             "name": "Spirit Caller",
             "game": "cs",
-            "color": "#63bd57",
             "translatedName": "characters.SP.name",
             "abilityCount": 10,
             "starting_group": [],
-            "perks":[
+            "perks": [
                 {
                     "count": 1,
                     "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} card and one {+1_WHITE} card"
@@ -1952,14 +1899,13 @@
             "id": "ST",
             "name": "Starslinger",
             "game": "cs",
-            "color": "#6d6fb3",
             "translatedName": "characters.ST.name",
             "abilityCount": 10,
             "starting_group": [
                 "cs_explorers",
                 "cs_trailblazers"
             ],
-            "perks":[
+            "perks": [
                 {
                     "count": 2,
                     "desc": "Replace two {+0_WHITE} cards with one {AGAIN} {HEAL}1, Self card"
@@ -2004,7 +1950,6 @@
                     "count": 1,
                     "desc": "Ignore negative scenario effects and remove one {+0_WHITE} card"
                 }
-                
             ]
         }
     },
@@ -2027,14 +1972,11 @@
         "PH",
         "BT",
         "BS",
-
         "DR",
-
         "RG",
         "DM",
         "HT",
         "VW",
-
         "AA",
         "BK",
         "BM",

@@ -64,6 +64,9 @@ export default {
             }
 
             return _.uniq(shopItems.concat(filteredItems));
+        },
+        calculateItemsCs(items, scenarioRepository) {
+            return Helpers.makeArrayWithNumbers(100);
         }
     }
 }

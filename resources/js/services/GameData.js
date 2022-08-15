@@ -7,6 +7,7 @@ import questsFcJson from '../quests-fc.json'
 import questsJotlJson from '../quests-jotl.json'
 import questsCsJson from '../quests-cs.json'
 import personalQuestsJson from '../personal-quests.json'
+import personalQuestsCsJson from '../personal-quests-cs.json'
 import itemsJson from '../items.json'
 import itemsJotlJson from '../items-jotl.json'
 import itemsCsJson from '../items-cs.json'
@@ -17,6 +18,10 @@ import abilitiesCsJson from '../abilities-cs.json'
 import charactersJson from '../characters.json'
 
 export default class GameData {
+    games() {
+        return ["gh", "fc", "jotl", "cs"]
+    }
+
     achievements(game) {
         switch (game) {
             case 'jotl':
@@ -103,6 +108,10 @@ export default class GameData {
 
     personalQuests(game) {
         switch (game) {
+            case 'jotl':
+                return []
+            case 'cs':
+                return personalQuestsCsJson
             default:
                 return personalQuestsJson
         }
@@ -114,6 +123,11 @@ export default class GameData {
         // GH uses the FC map
         if (game !== 'gh') {
             map = game;
+        }
+
+        // Games that do not support a map
+        if (['cs'].includes(map)) {
+            return null;
         }
 
         return {

@@ -1,6 +1,5 @@
 import slugify from "slugify";
 import UsesTranslations from "./UsesTranslations";
-import Character from "./Character";
 
 class Item {
 
@@ -50,13 +49,17 @@ class Item {
         return '/img/icons/equipment/' + slugify(this._slot, {lower: true}) + '.png';
     }
 
+    get code() {
+        return slugify(this._name.replaceAll("'", ''), {lower: true});
+    }
+
     get image() {
-        return '/img/items/' + this.game + '/' + slugify(this._name.replaceAll("'", ''), {lower: true}) + '.png';
+        return '/img/items/' + this.game + '/' + this.code + '.jpg';
     }
 
     get game() {
         // FC uses GH items
-        return  this._game === 'fc' ? 'gh' : this._game;
+        return this._game === 'fc' ? 'gh' : this._game;
     }
 }
 

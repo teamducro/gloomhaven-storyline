@@ -1904,7 +1904,6 @@
             "id": "AA3",
             "game": "cs",
             "name": "Hive Guardian",
-            "solo": "AA",
             "coordinates": {},
             "is_side": true,
             "pages": [
@@ -1968,7 +1967,6 @@
             "id": "QA3",
             "game": "cs",
             "name": "Magnum Opus",
-            "solo": "QA",
             "coordinates": {},
             "is_side": true,
             "pages": [
@@ -2097,7 +2095,6 @@
             "id": "RM6",
             "game": "cs",
             "name": "The Fall of Shadow's Respite",
-            "solo": "RM",
             "coordinates": {},
             "is_side": true,
             "pages": [
@@ -2162,7 +2159,6 @@
             "id": 6,
             "name": "Tainted"
         },
-
         {
             "id": 100,
             "name": "Solo Quests"
@@ -2183,7 +2179,6 @@
             "id": 10,
             "name": "Side Quests"
         },
-
         {
             "id": 12,
             "name": "Beetle Scenarios (Add-on)"

@@ -236,6 +236,10 @@ export default {
             "text": "Campaign data can only be transferred if you purchased a shared campaign."
         }
     },
+    "games-enabled": {
+        "title": "Enabled Games",
+        "text": "To hide games and it's characters enable only ones you own."
+    },
     "Please consider purchasing a license": "Please consider purchasing a license",
     "Danger zone!": "Danger zone!",
     "Alternatively you may": "Alternatively you may",

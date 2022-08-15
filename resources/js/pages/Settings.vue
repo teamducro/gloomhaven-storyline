@@ -1,5 +1,6 @@
 <template>
     <div class="pt-12 pb-4 px-2 sm:px-4">
+        <games-enabled></games-enabled>
         <transfer></transfer>
         <snapshots></snapshots>
 

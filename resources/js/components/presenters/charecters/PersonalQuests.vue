@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-4">
+    <div v-if="quests" class="mb-4">
 
         <div class="mb-2 flex items-center">
             <h2>{{ $t('Personal Quest') }}</h2>
@@ -86,7 +86,7 @@ export default {
     },
     data() {
         return {
-            quests: collect(),
+            quests: null,
             goalMet: false,
             personalQuestRepository: new PersonalQuestRepository,
             personalQuestValidator: new PersonalQuestValidator

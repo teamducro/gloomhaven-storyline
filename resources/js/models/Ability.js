@@ -1,6 +1,5 @@
 import slugify from "slugify";
 import UsesTranslations from "./UsesTranslations";
-import Character from "./Character";
 
 class Item {
 
@@ -21,7 +20,7 @@ class Item {
     }
 
     get code() {
-        return slugify(this._name.replaceAll("'", ''), {lower: true});
+        return slugify(this._name.replaceAll("'", '').replaceAll(".", ''), {lower: true});
     }
 
     get image() {

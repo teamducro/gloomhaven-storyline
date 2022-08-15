@@ -2,7 +2,6 @@
     {
         "id": 1,
         "name": "Orb of Confusion",
-        "shortname": "orb-of-confusion",
         "count": 2,
         "cost": 15,
         "slot": "Small Item",
@@ -11,7 +10,6 @@
     {
         "id": 2,
         "name": "Orb of Momentum",
-        "shortname": "orbofmomentum",
         "count": 2,
         "cost": 15,
         "slot": "Small Item",
@@ -19,8 +17,7 @@
     },
     {
         "id": 3,
-        "name": "Orb of Agilist",
-        "shortname": "orbofagility",
+        "name": "Orb of Agility",
         "count": 2,
         "cost": 15,
         "slot": "Small Item",
@@ -29,7 +26,6 @@
     {
         "id": 4,
         "name": "Orb of Vigor",
-        "shortname": "orbofvigor",
         "count": 2,
         "cost": 20,
         "slot": "Small Item",
@@ -38,7 +34,6 @@
     {
         "id": 5,
         "name": "Orb of Retribution",
-        "shortname": "orbofretribution",
         "count": 2,
         "cost": 20,
         "slot": "Small Item",
@@ -47,7 +42,6 @@
     {
         "id": 6,
         "name": "Orb of Infection",
-        "shortname": "orbofinfection",
         "count": 2,
         "cost": 20,
         "slot": "Small Item",
@@ -56,7 +50,6 @@
     {
         "id": 7,
         "name": "Orb of Vitality",
-        "shortname": "orbofvitality",
         "count": 2,
         "cost": 20,
         "slot": "Small Item",
@@ -65,7 +58,6 @@
     {
         "id": 8,
         "name": "Orb of Protection",
-        "shortname": "orbofprotection",
         "count": 2,
         "cost": 20,
         "slot": "Small Item",
@@ -74,7 +66,6 @@
     {
         "id": 9,
         "name": "Orb of Fortune",
-        "shortname": "orboffortune",
         "count": 2,
         "cost": 30,
         "slot": "Small Item",
@@ -83,7 +74,6 @@
     {
         "id": 10,
         "name": "Orb of Despair",
-        "shortname": "orbofdespair",
         "count": 2,
         "cost": 30,
         "slot": "Small Item",
@@ -92,7 +82,6 @@
     {
         "id": 11,
         "name": "Pox Antidote",
-        "shortname": "poxantidote",
         "count": 1,
         "cost": 10,
         "slot": "Small Item",
@@ -102,7 +91,6 @@
     {
         "id": 12,
         "name": "Trophy Helm",
-        "shortname": "trophyhelm",
         "count": 1,
         "cost": 60,
         "slot": "Head",
@@ -111,7 +99,6 @@
     {
         "id": 13,
         "name": "War Pick",
-        "shortname": "warpick",
         "count": 2,
         "cost": 20,
         "slot": "One Hand",
@@ -121,7 +108,6 @@
     {
         "id": 14,
         "name": "Chain Mace",
-        "shortname": "chainmace",
         "count": 2,
         "cost": 30,
         "slot": "One Hand",
@@ -131,7 +117,6 @@
     {
         "id": 15,
         "name": "Draining Greaves",
-        "shortname": "draininggreaves",
         "count": 2,
         "cost": 50,
         "slot": "Legs",
@@ -140,7 +125,6 @@
     {
         "id": 16,
         "name": "Shoes of Phasing",
-        "shortname": "shoesofphasing",
         "count": 1,
         "cost": 20,
         "slot": "Legs",
@@ -149,7 +133,6 @@
     {
         "id": 17,
         "name": "Lightweight Boots",
-        "shortname": "lightweightboots",
         "count": 2,
         "cost": 40,
         "slot": "Legs",
@@ -159,7 +142,6 @@
     {
         "id": 18,
         "name": "Bottled Moonlight",
-        "shortname": "bottledmoonlight",
         "count": 2,
         "cost": 50,
         "slot": "Small Item",
@@ -170,7 +152,6 @@
     {
         "id": 19,
         "name": "Boots of Perpetuity",
-        "shortname": "bootsofperpetuity",
         "count": 1,
         "cost": 60,
         "slot": "Legs",
@@ -179,7 +160,6 @@
     {
         "id": 20,
         "name": "Curious Pendant",
-        "shortname": "curiouspendant",
         "count": 2,
         "cost": 60,
         "slot": "Head",
@@ -190,7 +170,6 @@
     {
         "id": 21,
         "name": "Infrared Goggles",
-        "shortname": "infraredgoggles",
         "count": 1,
         "cost": 20,
         "slot": "Head",
@@ -199,7 +178,6 @@
     {
         "id": 22,
         "name": "Steel Helmet",
-        "shortname": "steelhelmet",
         "count": 2,
         "cost": 30,
         "slot": "Head",
@@ -209,7 +187,6 @@
     {
         "id": 23,
         "name": "Woven Plate Armor",
-        "shortname": "wovenplatearmor",
         "count": 2,
         "cost": 50,
         "slot": "Body",
@@ -219,7 +196,6 @@
     {
         "id": 24,
         "name": "Mantle of Purity",
-        "shortname": "mantleofpurity",
         "count": 2,
         "cost": 20,
         "slot": "Body",
@@ -229,7 +205,6 @@
     {
         "id": 25,
         "name": "Boneclad Shawl",
-        "shortname": "bonecladshawl",
         "count": 2,
         "cost": 30,
         "slot": "Body",
@@ -239,7 +214,6 @@
     {
         "id": 26,
         "name": "Silhouette Cuirass",
-        "shortname": "silhouettecuirass",
         "count": 1,
         "cost": 50,
         "slot": "Body",
@@ -249,7 +223,6 @@
     {
         "id": 27,
         "name": "Translocation Device",
-        "shortname": "translocationdevice",
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
@@ -259,7 +232,6 @@
     {
         "id": 28,
         "name": "Alchemy Potion",
-        "shortname": "alchemypotion",
         "count": 2,
         "cost": 20,
         "slot": "Small Item",
@@ -269,7 +241,6 @@
     {
         "id": 29,
         "name": "Intoxicating Potion",
-        "shortname": "intoxicatingpotion",
         "count": 1,
         "cost": 15,
         "slot": "Small Item",
@@ -279,7 +250,6 @@
     {
         "id": 30,
         "name": "Iron Snare",
-        "shortname": "ironsnare",
         "count": 1,
         "cost": 15,
         "slot": "Small Item",
@@ -289,7 +259,6 @@
     {
         "id": 31,
         "name": "Concussion Mine",
-        "shortname": "concussionmine",
         "count": 2,
         "cost": 20,
         "slot": "Small Item",
@@ -299,7 +268,6 @@
     {
         "id": 32,
         "name": "Shifting Compass",
-        "shortname": "shiftingcompass",
         "count": 1,
         "cost": 60,
         "slot": "Small Item",
@@ -309,7 +277,6 @@
     {
         "id": 33,
         "name": "Battering Ram",
-        "shortname": "batteringram",
         "count": 1,
         "cost": 30,
         "slot": "Two Hands",
@@ -319,7 +286,6 @@
     {
         "id": 34,
         "name": "Claw Trap",
-        "shortname": "clawtrap",
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
@@ -329,7 +295,6 @@
     {
         "id": 35,
         "name": "Staff of Retribution",
-        "shortname": "staffofretribution",
         "count": 1,
         "cost": 20,
         "slot": "One Hand",
@@ -339,7 +304,6 @@
     {
         "id": 36,
         "name": "Curseblood Blade",
-        "shortname": "cursebloodblade",
         "count": 1,
         "cost": 35,
         "slot": "One Hand",
@@ -349,7 +313,6 @@
     {
         "id": 37,
         "name": "Drakescale Shield",
-        "shortname": "drakescaleshield",
         "count": 2,
         "cost": 60,
         "slot": "One Hand",
@@ -359,7 +322,6 @@
     {
         "id": 38,
         "name": "Drakescale Dagger",
-        "shortname": "drakescaledagger",
         "count": 1,
         "cost": 20,
         "slot": "One Hand",
@@ -369,7 +331,6 @@
     {
         "id": 39,
         "name": "Hook Shot",
-        "shortname": "hookshot",
         "count": 1,
         "cost": 45,
         "slot": "One Hand",
@@ -379,7 +340,6 @@
     {
         "id": 40,
         "name": "Moonleather Boots",
-        "shortname": "moonleatherboots",
         "count": 1,
         "cost": 50,
         "slot": "Legs",
@@ -389,7 +349,6 @@
     {
         "id": 41,
         "name": "Spirit Libation",
-        "shortname": "spiritlibation",
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
@@ -399,7 +358,6 @@
     {
         "id": 42,
         "name": "Robe of Soothing",
-        "shortname": "robeofsoothing",
         "count": 1,
         "cost": 50,
         "slot": "Body",
@@ -408,7 +366,6 @@
     {
         "id": 43,
         "name": "Resplendent Mitre",
-        "shortname": "resplendentmitre",
         "count": 1,
         "cost": 40,
         "slot": "Head",
@@ -418,7 +375,6 @@
     {
         "id": 44,
         "name": "Canister Projectile",
-        "shortname": "canisterprojectile",
         "count": 1,
         "cost": 30,
         "slot": "One Hand",
@@ -428,7 +384,6 @@
     {
         "id": 45,
         "name": "Chain Cannon",
-        "shortname": "chaincannon",
         "count": 1,
         "cost": 50,
         "slot": "One Hand",
@@ -438,7 +393,6 @@
     {
         "id": 46,
         "name": "Summoner's Whistle",
-        "shortname": "summonerswhistle",
         "count": 1,
         "cost": 30,
         "slot": "Small Item",
@@ -448,7 +402,6 @@
     {
         "id": 47,
         "name": "Nature Armlets",
-        "shortname": "naturearmlets",
         "count": 1,
         "cost": 50,
         "slot": "One Hand",
@@ -457,7 +410,6 @@
     {
         "id": 48,
         "name": "Test Tube",
-        "shortname": "testtube",
         "count": 1,
         "cost": 50,
         "slot": "One Hand",
@@ -467,7 +419,6 @@
     {
         "id": 49,
         "name": "Booster Shot",
-        "shortname": "boostershot",
         "count": 1,
         "cost": 30,
         "slot": "Small Item",
@@ -477,7 +428,6 @@
     {
         "id": 50,
         "name": "Luminous Carapace",
-        "shortname": "luminouscarapace",
         "count": 1,
         "cost": 50,
         "slot": "Body",
@@ -487,7 +437,6 @@
     {
         "id": 51,
         "name": "Flaming Armor",
-        "shortname": "flamingarmor",
         "count": 1,
         "cost": 50,
         "slot": "Body",
@@ -496,7 +445,6 @@
     {
         "id": 52,
         "name": "Flaming Axe",
-        "shortname": "flamingaxe",
         "count": 1,
         "cost": 40,
         "slot": "Two Hands",
@@ -506,7 +454,6 @@
     {
         "id": 53,
         "name": "Field Mortar",
-        "shortname": "fieldmortar",
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
@@ -515,7 +462,6 @@
     {
         "id": 54,
         "name": "Vipertooth Dagger",
-        "shortname": "vipertoothdagger",
         "count": 1,
         "cost": 50,
         "slot": "One Hand",
@@ -524,7 +470,6 @@
     {
         "id": 55,
         "name": "Ghost Viper Venom",
-        "shortname": "ghostvipervenom",
         "count": 2,
         "cost": 25,
         "slot": "Small Item",
@@ -534,7 +479,6 @@
     {
         "id": 56,
         "name": "Clamp Trap",
-        "shortname": "clamptrap",
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
@@ -544,7 +488,6 @@
     {
         "id": 57,
         "name": "Cleansed Voidheart",
-        "shortname": "cleansedvoidheart",
         "count": 1,
         "cost": 50,
         "slot": "Body",
@@ -553,7 +496,6 @@
     {
         "id": 58,
         "name": "Dizzying Tincture",
-        "shortname": "dizzyingtincture",
         "count": 2,
         "cost": 15,
         "slot": "Small Item",
@@ -563,7 +505,6 @@
     {
         "id": 59,
         "name": "Drakes Blood",
-        "shortname": "drakesblood",
         "count": 2,
         "cost": 15,
         "slot": "Small Item",
@@ -573,7 +514,6 @@
     {
         "id": 60,
         "name": "Mana Medicine",
-        "shortname": "manamedicine",
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
@@ -583,7 +523,6 @@
     {
         "id": 61,
         "name": "Ashsteel Gauntlets",
-        "shortname": "ashsteelgauntlets",
         "count": 1,
         "cost": 60,
         "slot": "One Hand",
@@ -594,7 +533,6 @@
     {
         "id": 62,
         "name": "Smog Emitter",
-        "shortname": "smogemitter",
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
@@ -604,7 +542,6 @@
     {
         "id": 63,
         "name": "Lucky Horseshoe",
-        "shortname": "luckyhorseshoe",
         "count": 1,
         "cost": 15,
         "slot": "Small Item",
@@ -614,7 +551,6 @@
     {
         "id": 64,
         "name": "Mild Kindled Tonic",
-        "shortname": "mildkindledtonic",
         "count": 1,
         "cost": 20,
         "slot": "Small Item",
@@ -624,7 +560,6 @@
     {
         "id": 65,
         "name": "Rescue Axe",
-        "shortname": "rescueaxe",
         "count": 1,
         "cost": 20,
         "slot": "One Hand",
@@ -634,7 +569,6 @@
     {
         "id": 66,
         "name": "Iron Malleus",
-        "shortname": "ironmalleus",
         "count": 1,
         "cost": 25,
         "slot": "One Hand",
@@ -644,7 +578,6 @@
     {
         "id": 67,
         "name": "Pike Hook",
-        "shortname": "pikehook",
         "count": 1,
         "cost": 35,
         "slot": "Two Hands",
@@ -654,7 +587,6 @@
     {
         "id": 68,
         "name": "Explosive Tonic",
-        "shortname": "explosivetonic",
         "count": 1,
         "cost": 35,
         "slot": "Small Item",
@@ -663,7 +595,6 @@
     {
         "id": 69,
         "name": "Spicy Kindled Tonic",
-        "shortname": "spicykindledtonic",
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
@@ -672,7 +603,6 @@
     {
         "id": 70,
         "name": "Utility Rope",
-        "shortname": "utilityrope",
         "count": 1,
         "cost": 40,
         "slot": "One Hand",
@@ -682,7 +612,6 @@
     {
         "id": 71,
         "name": "Fireproof Helm",
-        "shortname": "fireproofhelm",
         "count": 1,
         "cost": 50,
         "slot": "Head",
@@ -691,7 +620,6 @@
     {
         "id": 72,
         "name": "Wooden Ladder",
-        "shortname": "woodenladder",
         "count": 1,
         "cost": 50,
         "slot": "Two Hands",
@@ -700,7 +628,6 @@
     {
         "id": 73,
         "name": "Medical Kit",
-        "shortname": "medicalkit",
         "count": 1,
         "cost": 30,
         "slot": "One Hand",
@@ -709,7 +636,6 @@
     {
         "id": 74,
         "name": "Mild Bolstering Tonic",
-        "shortname": "mildbolsteringtonic",
         "count": 1,
         "cost": 30,
         "slot": "Small Item",
@@ -719,7 +645,6 @@
     {
         "id": 75,
         "name": "Medallion of the Oak",
-        "shortname": "medallionoftheoak",
         "count": 1,
         "cost": 35,
         "slot": "Head",
@@ -729,7 +654,6 @@
     {
         "id": 76,
         "name": "Cauterizing Knife",
-        "shortname": "cauterizingknife",
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
@@ -739,7 +663,6 @@
     {
         "id": 77,
         "name": "Trauma Kit",
-        "shortname": "traumakit",
         "count": 1,
         "cost": 40,
         "slot": "One Hand",
@@ -749,7 +672,6 @@
     {
         "id": 78,
         "name": "Scroll of Charisma",
-        "shortname": "scrollofcharisma",
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
@@ -759,7 +681,6 @@
     {
         "id": 79,
         "name": "Rescue Shield",
-        "shortname": "rescueshield",
         "count": 1,
         "cost": 45,
         "slot": "One Hand",
@@ -769,7 +690,6 @@
     {
         "id": 80,
         "name": "Scroll of Protection",
-        "shortname": "scrollofprotection",
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
@@ -779,7 +699,6 @@
     {
         "id": 81,
         "name": "Spicy Bolstering Tonic",
-        "shortname": "spicybolsteringtonic",
         "count": 1,
         "cost": 60,
         "slot": "Small Item",
@@ -789,7 +708,6 @@
     {
         "id": 82,
         "name": "Scroll of Command",
-        "shortname": "scrollofcommand",
         "count": 1,
         "cost": 60,
         "slot": "Small Item",
@@ -799,7 +717,6 @@
     {
         "id": 83,
         "name": "Sphere of Currents",
-        "shortname": "sphereofcurrents",
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
@@ -809,7 +726,6 @@
     {
         "id": 84,
         "name": "Slug Crossbow",
-        "shortname": "slugcrossbow",
         "count": 1,
         "slot": "One Hand",
         "consumed": true,
@@ -818,7 +734,6 @@
     {
         "id": 85,
         "name": "Refined Slug Crossbow",
-        "shortname": "refinedslugcrossbow",
         "count": 1,
         "cost": 40,
         "slot": "One Hand",
@@ -828,7 +743,6 @@
     {
         "id": 86,
         "name": "Bulwark Banner",
-        "shortname": "bulwarkbanner",
         "count": 1,
         "slot": "One Hand",
         "consumed": true,
@@ -837,7 +751,6 @@
     {
         "id": 87,
         "name": "Refined Bulwark Banner",
-        "shortname": "refinedbulwarkbanner",
         "count": 1,
         "cost": 40,
         "slot": "One Hand",
@@ -847,7 +760,6 @@
     {
         "id": 88,
         "name": "Remote Beetle",
-        "shortname": "remotebeetle",
         "count": 1,
         "slot": "Small Item",
         "consumed": true,
@@ -856,7 +768,6 @@
     {
         "id": 89,
         "name": "Refined Remote Beetle",
-        "shortname": "refinedremotebeetle",
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
@@ -866,7 +777,6 @@
     {
         "id": 90,
         "name": "Blazing Boots",
-        "shortname": "blazingboots",
         "count": 1,
         "slot": "Small Item",
         "consumed": true,
@@ -875,7 +785,6 @@
     {
         "id": 91,
         "name": "Refined Blazing Boots",
-        "shortname": "refinedblazingboots",
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
@@ -885,7 +794,6 @@
     {
         "id": 92,
         "name": "Viper Blowgun",
-        "shortname": "viperblowgun",
         "count": 1,
         "slot": "One Hand",
         "consumed": true,
@@ -894,7 +802,6 @@
     {
         "id": 93,
         "name": "Refined Viper Blowgun",
-        "shortname": "refinedviperblowgun",
         "count": 1,
         "cost": 40,
         "slot": "One Hand",
@@ -904,7 +811,6 @@
     {
         "id": 94,
         "name": "Frost Stone",
-        "shortname": "froststone",
         "count": 1,
         "cost": 25,
         "slot": "Small Item",
@@ -914,7 +820,6 @@
     {
         "id": 95,
         "name": "Storm Stone",
-        "shortname": "stormstone",
         "count": 1,
         "cost": 25,
         "slot": "Small Item",
@@ -924,7 +829,6 @@
     {
         "id": 96,
         "name": "Inferno Stone",
-        "shortname": "infernostone",
         "count": 1,
         "cost": 25,
         "slot": "Small Item",
@@ -934,7 +838,6 @@
     {
         "id": 97,
         "name": "Tremor Stone",
-        "shortname": "tremorstone",
         "count": 1,
         "cost": 25,
         "slot": "Small Item",
@@ -944,7 +847,6 @@
     {
         "id": 98,
         "name": "Brilliant Stone",
-        "shortname": "brilliantstone",
         "count": 1,
         "cost": 25,
         "slot": "Small Item",
@@ -954,7 +856,6 @@
     {
         "id": 99,
         "name": "Dark Stone",
-        "shortname": "darkstone",
         "count": 1,
         "cost": 25,
         "slot": "Small Item",
@@ -964,7 +865,6 @@
     {
         "id": 100,
         "name": "Wonder Stone",
-        "shortname": "wonderstone",
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
@@ -974,7 +874,6 @@
     {
         "id": "aa01",
         "name": "Rockspine Bulwark",
-        "shortname": "rockspinebulwark",
         "count": 1,
         "cost": 35,
         "slot": "Body",
@@ -984,7 +883,6 @@
     {
         "id": "aa02",
         "name": "Ghostshimmer Honey",
-        "shortname": "ghostshimmerhoney",
         "count": 1,
         "cost": 35,
         "slot": "Small Item",
@@ -994,7 +892,6 @@
     {
         "id": "aa03",
         "name": "Steelsilk Spinneret",
-        "shortname": "steelsilkspinneret",
         "count": 1,
         "cost": 50,
         "slot": "One Hand",
@@ -1004,7 +901,6 @@
     {
         "id": "qa01",
         "name": "Power Modulator",
-        "shortname": "powermodulator",
         "count": 1,
         "cost": 50,
         "slot": "Two Hands",
@@ -1014,7 +910,6 @@
     {
         "id": "qa02",
         "name": "Steam Piston Hammer",
-        "shortname": "steampistonhammer",
         "count": 2,
         "cost": 30,
         "slot": "One Hand",
@@ -1024,7 +919,6 @@
     {
         "id": "qa03",
         "name": "Spider Climb Gloves",
-        "shortname": "spiderclimbgloves",
         "count": 2,
         "cost": 30,
         "slot": "One Hand",
@@ -1033,7 +927,6 @@
     {
         "id": "qa04",
         "name": "Gravity Inversion Pads",
-        "shortname": "gravityinversionpads",
         "count": 1,
         "cost": 40,
         "slot": "Small Item",
@@ -1043,7 +936,6 @@
     {
         "id": "qa05",
         "name": "Delicate Model",
-        "shortname": "delicatemodel",
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
@@ -1060,7 +952,6 @@
     {
         "id": "qa06",
         "name": "Auscudec of the Makers",
-        "shortname": "auscudecofthemakers",
         "count": 1,
         "cost": 50,
         "slot": "Two Hands",
@@ -1071,7 +962,6 @@
     {
         "id": "rm01",
         "name": "Serrated Edge",
-        "shortname": "serratededge",
         "count": 2,
         "cost": 25,
         "slot": "One Hand",
@@ -1081,7 +971,6 @@
     {
         "id": "rm02",
         "name": "Grisly Boots",
-        "shortname": "grislyboots",
         "count": 1,
         "cost": 20,
         "slot": "Legs",
@@ -1091,7 +980,6 @@
     {
         "id": "rm03",
         "name": "Terrorscale Saber",
-        "shortname": "terrorscalesaber",
         "count": 1,
         "cost": 40,
         "slot": "One Hand",
@@ -1101,7 +989,6 @@
     {
         "id": "rm04",
         "name": "Terrorscale Crossblades",
-        "shortname": "terrorscalecrossblades",
         "count": 1,
         "cost": 40,
         "slot": "Two Hands",
@@ -1111,7 +998,6 @@
     {
         "id": "rm05",
         "name": "Rite of Ruin",
-        "shortname": "riteofruin",
         "count": 1,
         "cost": 50,
         "slot": "Small Item",
@@ -1121,7 +1007,6 @@
     {
         "id": "rm06",
         "name": "Savage Cuirass",
-        "shortname": "savagecuirass",
         "count": 1,
         "cost": 50,
         "slot": "Body",

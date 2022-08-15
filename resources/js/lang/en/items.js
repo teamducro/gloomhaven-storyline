@@ -1026,7 +1026,7 @@ export default {
         "desc": "During your Move ability, you may place one character token on this card to add +1 {MOVE}. When there are three tokens on this card, it is {CONSUMED}."
     },
     "cs-3": {
-        "name": "Orb of Agilist",
+        "name": "Orb of Agility",
         "desc": "During your Move ability, you may place one character token on this card to add {JUMP}. When there are three tokens on this card, it is {CONSUMED}."
     },
     "cs-4": {

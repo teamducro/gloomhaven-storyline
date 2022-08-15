@@ -36,6 +36,7 @@ import Vue from 'vue';
 import setInitialLanguage from "./services/app/setInitialLanguage";
 import {gsap} from "gsap";
 import {Flip} from "gsap/Flip.js";
+import getEnabledGames from "./services/app/getEnabledGames";
 
 const {RayPlugin} = require('vue-ray/vue2');
 
@@ -105,7 +106,8 @@ window.app = new Vue({
     el: '#app',
     data() {
         return {
-            game: 'gh',
+            game: null,
+            enabledGames: {},
             scenarios: null,
             quests: null,
             achievements: null,
@@ -133,7 +135,6 @@ window.app = new Vue({
     },
     async mounted() {
         this.beforeBoot();
-
         await this.loadCampaignData(true);
         await this.$nextTick();
         await this.campaignsChanged();
@@ -245,6 +246,8 @@ window.app = new Vue({
         },
         beforeBoot() {
             polyfills();
+            this.enabledGames = getEnabledGames();
+            this.$bus.$on('enabled-games-changed', (enabledGames) => this.enabledGames = enabledGames);
             this.$bus.$on('orientation-changed', (isPortrait) => this.isPortrait = isPortrait);
             this.$bus.$on('has-mouse', (hasMouse) => this.hasMouse = hasMouse);
             checkOrientation(this.$bus);
@@ -252,6 +255,7 @@ window.app = new Vue({
             this.webpSupported = isWebpSupported();
             checkHasMouse(this.$bus);
             migrateVersion1Progress();
+            this.game = store.get('game') || 'gh';
         }
     }
 });
