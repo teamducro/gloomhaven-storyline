@@ -22,6 +22,10 @@ export default class GameData {
         return ["gh", "fc", "jotl", "cs"]
     }
 
+    beta() {
+        return ["cs"]
+    }
+
     achievements(game) {
         switch (game) {
             case 'jotl':

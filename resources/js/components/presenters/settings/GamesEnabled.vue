@@ -32,10 +32,11 @@ const md5 = require('js-md5');
 export default {
     data() {
         return {
-            games: {},
+            games: [],
             enabled: {},
             disabled: {},
-            listKey: ''
+            listKey: '',
+            beta: [],
         }
     },
     beforeMount() {
@@ -44,9 +45,11 @@ export default {
     methods: {
         init() {
             const enabledGames = this.readEnabled();
-            this.games = (new GameData).games();
-            this.games.forEach(code => {
-                this.enabled[code] = code in enabledGames ? enabledGames[code] : true;
+            const gameData = new GameData;
+            const beta = gameData.beta();
+            this.games = gameData.games();
+            this.games.forEach((code) => {
+                this.enabled[code] = code in enabledGames ? enabledGames[code] : !beta.includes(code);
                 this.disabled[code] = false;
             });
             this.checkDisabled();

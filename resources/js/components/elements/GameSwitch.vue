@@ -29,6 +29,7 @@
 <script>
 
 import {MDCSelect} from "@material/select/component";
+import GameData from "../../services/GameData";
 
 export default {
     props: {
@@ -41,10 +42,11 @@ export default {
         return {
             current: null,
             games: [],
-            beta: ['cs']
+            beta: []
         }
     },
     mounted() {
+        this.beta = (new GameData).beta();
         this.$bus.$on('campaigns-changed', this.setCurrent);
         this.$bus.$on('enabled-games-changed', this.setGames);
 
