@@ -54,5 +54,11 @@ export default {
         "2": "???",
         "title": "Escape from The Husk",
         "text": "Did all characters escape through an exit?"
+    },
+    "undeadTerrors": {
+        "1": "Give the potion to Selandre.",
+        "2": "Tell Selandre the potion was destroyed.",
+        "title": "Can you trust Selandre?",
+        "text": "Do you listen to Dominic's last words or your greed?"
     }
 }

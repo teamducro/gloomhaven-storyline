@@ -195,6 +195,9 @@ export default {
             let sheetItems;
             if (this.sheet.game === 'jotl') {
                 sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
+            }
+            if (this.sheet.game === 'cs') {
+                sheetItems = this.calculateItemsCs(this.sheet.itemDesigns, this.scenarioRepository);
             } else {
                 sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
             }

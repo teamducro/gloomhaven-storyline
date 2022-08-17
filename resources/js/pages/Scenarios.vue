@@ -99,6 +99,7 @@ import ScenarioRepository from "../repositories/ScenarioRepository";
 import {ScenarioState} from "../models/ScenarioState";
 import When from "../services/When";
 import CharacterIcon from "../components/elements/CharacterIcon";
+import GameData from "../services/GameData";
 
 export default {
     components: {CharacterIcon},
@@ -123,7 +124,9 @@ export default {
             sortable: ['image', 'state', 'title', 'regions', 'chapter_name', 'lootedAllTreasures', 'is_side'],
             translatable: ['chapter_name'],
             states: [ScenarioState.incomplete],
-            scenarioRepository: new ScenarioRepository()
+            hasImages: true,
+            scenarioRepository: new ScenarioRepository(),
+            gameData: new GameData()
         }
     },
     mounted() {
@@ -145,9 +148,10 @@ export default {
         async setScenarios() {
             this.scenarios = app.scenarios;
             this.regions = this.scenarioRepository.fetchRegionsWithScenarios().items;
+            this.hasImages = this.gameData.map(app.game) !== null;
 
             this.columns = (new When).filter([
-                {id: 'image', name: 'Sticker'},
+                new When(this.hasImages, {id: 'image', name: 'Sticker'}),
                 {id: 'state', name: 'State'},
                 {id: 'name', name: 'Name'},
                 new When(this.regions.length, {id: 'regions', name: 'Region', classes: 'hidden sm:table-cell'}),

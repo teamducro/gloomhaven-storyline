@@ -30,6 +30,8 @@ https://gloomhaven-storyline.com
   Gloomhaven storyline tracker features a Party Sheet!
 
   With it, you can track party-related info like reputation, donations, prosperity and more, all in one place!
+- **Character Sheet**\
+  Character stats like, perks, xp, gold, equipped items and even ability cards are easily managed in Gloomhaven storyline tracker. 
 - **Map view**\
   See all of the scenarios you've played and achievements you've gained, displayed on the original Gloomhaven map!
 
@@ -40,8 +42,8 @@ https://gloomhaven-storyline.com
   chests you missed.
 
   Using the filter feature, you can find just the scenario you need to complete your personal quest.
-- **Forgotten Circles**\
-  The tracker has support for Forgotten Circles
+- **Expansions**\
+  The tracker has support for Forgotten Circles and Jaws of the Lion
 - **Support for all modern devices**\
   Gloomhaven Storyline supports all modern devices and browsers. Easy to use on your smartphone.
 - **Multi language**\
@@ -66,5 +68,29 @@ Only somewhat big features are included, every update brings bug fixes and impro
 Thanks to these creators for their content.
 
 [Credits](https://gloomhaven-storyline.com/tracker?credits#/info)
+
+## How to build the tracker locally?
+
+*Setup local webserver using Laravel Valet* (feel free to use something else like mamp for a local webserver) 
+
+- Fork the project and clone it 
+- Install [Laravel Valet](https://laravel.com/docs/master/valet)
+- Navigate to project directory
+- run `valet link`
+- run `valet secure`
+
+*Setup project and install dependencies*
+
+- Install [node](https://nodejs.org/) (If you have trouble, use version: 16.14.2), the installation will include `npm`.
+- copy `.env.example` to `.env`
+- set the `MIX_WEB_URL` to your local website, for example: `MIX_WEB_URL=https://gloomhaven-storyline.test`
+- set `MIX_APP_URL` to the same domain and append `/tracker`, for example: `MIX_WEB_URL=https://gloomhaven-storyline.test/tracker`
+- run `npm install` from the project directory to install dependencies.
+- run `npm run dev` to compile project files and assets to the public directory.
+- during development run `npm run watch` to keep watching for changes, this compiles files when their updated.
+
+If everything is working correctly you can visit the tracker locally on: `https://gloomhaven-storyline.test/tracker`
+
+After changes are made, open a Pull Request into the develop branch for review. 
 
 All content remains under creative commons license BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)

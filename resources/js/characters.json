@@ -196,7 +196,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Add one {+1_WHITE} Heal {HEAL}2 card"
+                    "desc": "Add one {+1_WHITE} {HEAL}2 card"
                 },
                 {
                     "count": 1,
@@ -404,11 +404,11 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Replace two {+0_WHITE} card with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} card"
+                    "desc": "Replace two {+0_WHITE} cards with one {+0_WHITE} {FIRE} and one {+0_WHITE} {EARTH} cards"
                 },
                 {
                     "count": 1,
-                    "desc": "Replace two {+0_WHITE} card with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} card"
+                    "desc": "Replace two {+0_WHITE} cards with one {+0_WHITE} {ICE} and one {+0_WHITE} {WIND} cards"
                 },
                 {
                     "count": 1,
@@ -886,7 +886,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {POISEN} card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card"
                 },
                 {
                     "count": 1,
@@ -1170,6 +1170,787 @@
                     "desc": "Add one {+1_WHITE} {CURSE} card"
                 }
             ]
+        },
+        "AA": {
+            "id": "AA",
+            "name": "Amber Aegis",
+            "name-spoilerfree": "Beetle",
+            "game": "cs",
+            "translatedName": "characters.AA.name",
+            "abilityCount": 11,
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} “Place one {COLONY} token of your choice on any empty hex within {RANGE}2” card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+2_WHITE} {MUDDLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {POISON} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {+1_WHITE} {IMMOBILIZE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {AGAIN} {HEAL}3, Self and one {SHIELD}1, Self card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Add one {AGAIN} {RETALIATE}1, {RANGE}3 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: "
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative item effects and add one {+1_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Ignore negative scenario effects and add one {+X_WHITE}, where X is the number of active Cultivate {CULTIVATE} actions card"
+                }
+            ]
+        },
+        "QA": {
+            "id": "QA",
+            "name": "Artificer",
+            "game": "cs",
+            "translatedName": "characters.QA.name",
+            "abilityCount": 9,
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} {ANY} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {DISARM} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {PUSH}1 card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {PULL}1 card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+0_WHITE} Refresh a spent item card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1, Self card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {PIERCE}2 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+2_WHITE} card with one {+3_WHITE} {HEAL}2, Self card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+1_WHITE} with two {AGAIN} {+1_WHITE} {POISON} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+1_WHITE} cards with two {AGAIN} {+1_WHITE} {WOUND} cards"
+                }
+            ]
+        },
+        "BM": {
+            "id": "BM",
+            "name": "Bombard",
+            "game": "cs",
+            "translatedName": "characters.BM.name",
+            "abilityCount": 9,
+            "starting_group": [
+                "cs_militant",
+                "cs_trailblazers"
+            ],
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+0_WHITE} cards with two {AGAIN} {PIERCE}3 cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {+3_WHITE} if {PROJECTILE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+2_WHITE} {IMMOBILIZE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Replace one {+1_WHITE} card with two {+1_WHITE} {RELALIATE}1 {RANGE}3 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {+1_WHITE} {PULL}3, Self, toward the target cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+0_WHITE} {STRENGTHEN}, Self card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+0_WHITE} {STUN} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {SHIELD}1, Self cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {HEAL}1, Self cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and remove one {+0_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative item effects and remove one {+0_WHITE} card"
+                }
+            ]
+        },
+        "BK": {
+            "id": "BK",
+            "name": "Brightspark",
+            "game": "cs",
+            "translatedName": "characters.BK.name",
+            "abilityCount": 11,
+            "starting_group": [
+                "cs_explorers",
+                "cs_trailblazers"
+            ],
+            "perks": [
+                {
+                    "count": 3,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {ANYX} to add +2 {ATTACK} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-2_WHITE} {RECOVER} one random card from your discard pile card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace two {+0_WHITE} cards with one {+1_WHITE} {HEAL}1, (Ally) {RANGE}2 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Replace two {+0_WHITE} cards with one {+1_WHITE} {SHIELD}1, (Ally) {RANGE}2 card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {ANY} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {STRENGTHEN} (Ally) {RANGE}2 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {PUSH}1 or {PULL}1, {WIND} card and one {AGAIN} {IMMOBILIZE}, {ICE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} {HEAL}1, {RANGE}3, {ICE} card and one {AGAIN} {PIERCE}2, {FIRE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {AGAIN} {ANYX}:{ANY} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and remove one {-1_WHITE} card"
+                }
+            ]
+        },
+        "CG": {
+            "id": "CG",
+            "name": "Chainguard",
+            "game": "cs",
+            "translatedName": "characters.CG.name",
+            "abilityCount": 10,
+            "starting_group": [
+                "cs_protectors",
+                "cs_explorers"
+            ],
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+1_WHITE} {SHACKLE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE}, {+2_WHITE} if the target is {SHACKLE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace two {+0_WHITE} cards with one {AGAIN} {SHIELD}1, Self card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {RETALIATE}1, Self cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Add three {AGAIN} {SWING}3 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Add one {+1_WHITE} {DISARM} if the target iis {SHACKLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Add one {+1_WHITE} Create a 2 damage trap in an empty hex within {RANGE}2 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {HEAL}1, Self cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Add one {+2_WHITE} {SHACKLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and remove one {+0_WHITE} card"
+                }
+            ]
+        },
+        "CT": {
+            "id": "CT",
+            "name": "Chieftain",
+            "game": "cs",
+            "translatedName": "characters.CT.name",
+            "abilityCount": 10,
+            "starting_group": [
+                "cs_protectors",
+                "cs_naturalists"
+            ],
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {HEAL}1, {CT} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {HEAL}1, all summoned allies owned card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO::Replace one {-2_WHITE} card with one {-2_WHITE} {BLESS}, Self card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+0_WHITE} cards with one {+0_WHITE} {IMMOBILIZE} and {PUSH}1 card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO::Replace one {+0_WHITE} card with one {+X_WHITE}, where X is the number of summoned allies you own card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+1_WHITE} card with two {+1_WHITE} {AGAIN}{+1_WHITE} if summon is attacking card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+0_WHITE} {WOUND}, {PIERCE}1 card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {EARTH} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {PIERCE}2, ignore {RETALIATE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and add one {+1_WHITE} card"
+                }
+            ]
+        },
+        "FK": {
+            "id": "FK",
+            "name": "Fire Knight",
+            "game": "cs",
+            "translatedName": "characters.FK.name",
+            "abilityCount": 10,
+            "starting_group": [
+                "cs_militant",
+                "cs_protectors"
+            ],
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {STRENGTHEN} (Ally) card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace two {+0_WHITE} cards with two {+0_WHITE} {+2_WHITE} if you are on {LADDER} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {FIRE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+1_WHITE} cards with one {+2_WHITE} {FIRE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+1_WHITE} cards with one {+2_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {STRENGTHEN} (Ally) card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {HEAL}1, {RANGE}1 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {WOUND} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative item effects and add one {AGAIN} {FIRE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and add one {AGAIN} {FIRE} card"
+                }
+            ]
+        },
+        "HP": {
+            "id": "HP",
+            "name": "Hierophant",
+            "game": "cs",
+            "translatedName": "characters.HP.name",
+            "abilityCount": 11,
+            "starting_group": [
+                "cs_militant",
+                "cs_protectors"
+            ],
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove two {-1_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+0_WHITE} cards with one {AGAIN} {LIGHT} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+0_WHITE} cards with one {AGAIN} {EARTH} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {CURSE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1 (Ally) card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} Give one ally a 'Prayer' ability card and one {+0_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+1_WHITE} card with one {+3_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add two {AGAIN} {HEAL}1, Self or ally cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+1_WHITE} {WOUND} {MUDDLE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "At the start of your first turn each scenario, gain {BLESS}"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and remove one {+0_WHITE} card"
+                }
+            ]
+        },
+        "HO": {
+            "id": "HO",
+            "name": "Hollowpact",
+            "game": "cs",
+            "translatedName": "characters.HO.name",
+            "abilityCount": 10,
+            "starting_group": [
+                "cs_explorers",
+                "cs_naturalists"
+            ],
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {HEAL}2, self card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace two {+0_WHITE} cards with one {+0_WHITE} {VOIDSIGHT} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {-2_WHITE} {EARTH} card and two {+2_WHITE} {DARK} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Replace one {-1_WHITE} card with one {-2_WHITE} {STUN} and one {+0_WHITE} {VOIDSIGHT} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} {DISARM} card and one {-1_WHITE} {ANY} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace one {-1_WHITE} card with one {AGAIN} {+1_WHITE} {VOID} and one {AGAIN} {-1_WHITE} {CURSE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace two {+1_WHITE} cards with one {+3_WHITE} {REGENERATE}, Self card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace one {+0_WHITE} card with one {+1_WHITE} Create a Void pit in an empty hex {RANGE}2 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and add one {+0_WHITE} {WARD}, Self cards"
+                }
+            ]
+        },
+        "LU": {
+            "id": "LU",
+            "name": "Luminary",
+            "game": "cs",
+            "translatedName": "characters.LU.name",
+            "abilityCount": 11,
+            "starting_group": [
+                "cs_trailblazers",
+                "cs_naturalists"
+            ],
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Remove four {+0_WHITE} cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {ICE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {FIRE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {LIGHT} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {DARK} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-2_WHITE} Perform one {GLOW} ability card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {+0_WHITE} {ANY} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Add one {AGAIN} {+1_WHITE} {HEAL}1, Self card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Add one {+0_WHITE} {POISON}, Target all  enemies in the depicted {HEX_XXX} area card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and remove one {+0_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative item effects and add one {AGAIN} {ANYX}:{ANY} card"
+                }
+            ]
+        },
+        "MF": {
+            "id": "MF",
+            "name": "Mirefoot",
+            "game": "cs",
+            "translatedName": "characters.MF.name",
+            "abilityCount": 10,
+            "starting_group": [
+                "cs_militant",
+                "cs_naturalists"
+            ],
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Replace one {-2_WHITE} card with one {+0_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace two {+0_WHITE} cards with two {+X_WHITE}, where X is the poison value of the target cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {+1_WHITE} cards with two {+2_WHITE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace one {+0_WHITE} card with two Create difficult terrain in the hex occupied by the target cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace one {+1_WHITE} card with one {+0_WHITE} {2_WOUND} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Add four {AGAIN} {+0_WHITE} {+1_WHITE} if the target occupy difficult terrain cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Add two {AGAIN} {INVISIBLE}, Self, if you occupy difficult terrain cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Gain “Poison Dagger” (Item 011). You may carry one additional {ONE_HAND} item with “Dagger” in its name."
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore damage, and negative conditions and modifiers from Events, and remove one {-1_WHITE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and remove one {-1_WHITE} card"
+                }
+            ]
+        },
+        "RM": {
+            "id": "RM",
+            "name": "Ruinmaw",
+            "game": "cs",
+            "translatedName": "characters.RM.name",
+            "abilityCount": 11,
+            "starting_group": [],
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} {RUPTURE} and {WOUND} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {WOUND} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {RUPTURE} card"
+                },
+                {
+                    "count": 3,
+                    "desc": "TODO:: Replace one {+0_WHITE} card with one {+1_WHITE} Add {+3_WHITE} instead if the target has {RUPTURE} or {WOUND} card"
+                },
+                {
+                    "count": 3,
+                    "desc": "TODO:: Replace one {+0_WHITE} card with one {AGAIN} {HEAL}1, Self, {EMPOWER} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Once each scenario, become {SATED}"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Become {SATED} each time you lose a card to negate suffering damage"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Whenever one of your abilities causes atleast one enemey to gain {RUPTURE}, immediately after that ability perform {MOVE}1"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and remove one {-1_WHITE} card"
+                }
+            ]
+        },
+        "SP": {
+            "id": "SP",
+            "name": "Spirit Caller",
+            "game": "cs",
+            "translatedName": "characters.SP.name",
+            "abilityCount": 10,
+            "starting_group": [],
+            "perks": [
+                {
+                    "count": 1,
+                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} card and one {+1_WHITE} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {+2_WHITE} if a {SPIRIT} performed the attack card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} card and one {AGAIN} {POISON} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {WIND} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {DARK} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {PIERCE}2 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add three {AGAIN} {PIERCE}3 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {+1_WHITE} {CURSE} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add one {AGAIN} ADD {TARGET} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {PUSH}2 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and remove one {+0_WHITE} card"
+                }
+            ]
+        },
+        "ST": {
+            "id": "ST",
+            "name": "Starslinger",
+            "game": "cs",
+            "translatedName": "characters.ST.name",
+            "abilityCount": 10,
+            "starting_group": [
+                "cs_explorers",
+                "cs_trailblazers"
+            ],
+            "perks": [
+                {
+                    "count": 2,
+                    "desc": "Replace two {+0_WHITE} cards with one {AGAIN} {HEAL}1, Self card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} {DISARM} card and one {-1_WHITE} {INVISIBLE}, Self card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Replace two {-1_WHITE} cards with one {+0_WHITE} {DARK} card"
+                },
+                {
+                    "count": 2,
+                    "desc": "Replace one {-1_WHITE} cards with one {+1_WHITE} {LIGHT} card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Add one {AGAIN} {LOOT}1 card"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Add one {+1_WHITE} {+3_WHITE} if you are at full health card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Add two {AGAIN} {IMMOBILIZE} cards"
+                },
+                {
+                    "count": 2,
+                    "desc": "TODO:: Add one {+1_WHITE} {HEAL}1 {RANGE}3 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Add two {AGAIN} Force the target to perform {MOVE}1 cards"
+                },
+                {
+                    "count": 1,
+                    "desc": "TODO:: Add one {AGAIN} {HEAL}1 {RANGE}1 card"
+                },
+                {
+                    "count": 1,
+                    "desc": "Ignore negative scenario effects and remove one {+0_WHITE} card"
+                }
+            ]
         }
     },
     "order": [
@@ -1195,6 +1976,27 @@
         "RG",
         "DM",
         "HT",
-        "VW"
+        "VW",
+        "AA",
+        "BK",
+        "BM",
+        "CG",
+        "CT",
+        "FK",
+        "HO",
+        "HP",
+        "LU",
+        "MF",
+        "QA",
+        "RM",
+        "SP",
+        "ST"
+    ],
+    "starting_group": [
+        "cs_militant",
+        "cs_protectors",
+        "cs_explorers",
+        "cs_trailblazers",
+        "cs_naturalists"
     ]
 }
