@@ -124,8 +124,8 @@ export default {
                     '{AOE.CUBE_2_2}'        : '<webp src="/img/icons/aoe/cube_2_2.png" width="40" class="inline"/>',
                     '{AOE.LINE_0_1_1}'      : '<webp src="/img/icons/aoe/line_0_1_1.png" width="60" class="inline"/>',
                     '{AOE.LINE_1_1}'        : '<webp src="/img/icons/aoe/line_1_1.png" width="60" class="inline"/>',
-                    '{AOE.LINE_1_1}'        : '<webp src="/img/icons/aoe/line_1_1.png" width="60" class="inline"/>',
                     
+                    //Conditions
                     '{BANE}'        : this.$t('BANE')       + ' <webp src="/img/icons/status/bane.png" width="20" class="inline"/>',
                     '{BLESS}'       : this.$t('BLESS')      + ' <webp src="/img/icons/status/bless.png" width="20" class="inline"/>',
                     '{CHILL}'       : this.$t('CHILL')      + ' <webp src="/img/icons/status/chill.png" width="20" class="inline"/>',
@@ -143,6 +143,7 @@ export default {
                     '{PULL}'        : this.$t('PULL')       + ' <webp src="/img/icons/status/pull.png" width="20" class="inline"/>',
                     '{PUSH}'        : this.$t('PUSH')       + ' <webp src="/img/icons/status/push.png" width="20" class="inline"/>',
                     '{REGENERATE}'  : this.$t('REGENERATE') + ' <webp src="/img/icons/status/regenerate.png" width="20" class="inline"/>',
+                    '{RETALIATE}'   : this.$t('REGENERATE') + ' <webp src="/img/icons/status/retaliate.png" width="20" class="inline"/>',
                     '{RUPTURE}'     : this.$t('RUPTURE')    + ' <webp src="/img/icons/status/rupture.png" width="20" class="inline"/>',
                     '{STRENGTHEN}'  : this.$t('STRENGTHEN') + ' <webp src="/img/icons/status/strengthen.png" width="20" class="inline"/>',
                     '{STUN}'        : this.$t('STUN')       + ' <webp src="/img/icons/status/stun.png" width="20" class="inline"/>',
@@ -188,8 +189,9 @@ export default {
                     '{VOID}'                : '<span class="text-characters-ho">' + this.$t('Void')             + '</span>',
                     '{VOIDSIGHT}'           : '<span class="text-characters-ho">' + this.$t('Voidsight')        + '</span>',
 
-                    //Class Icons
+                    //Class Ability Icons
                     '{CULTIVATE_ICON}'              : '<webp src="/img/icons/status/cultivate.png" width="20" class="inline"/>',
+                    '{COLONY_ICON}'                 : '<webp src="/img/icons/status/colony.png" width="20" class="inline"/>',
                     '{DEATHSHROUD_SPIDER_ICON}'     : '<webp src="/img/icons/status/deathshroud.png" width="20" class="inline"/>',
                     '{FIRESPITTER_ANT_ICON}'        : '<webp src="/img/icons/status/firespitter.png" width="20" class="inline"/>',
                     '{GHOST_SHIMMER_BEE_ICON}'      : '<webp src="/img/icons/status/ghostshimmer.png" width="20" class="inline"/>',
@@ -198,13 +200,16 @@ export default {
                     '{MOUNT_ICON}'                  : '<webp src="/img/icons/status/mount.png" width="20" class="inline"/>',
                     '{PROJECTILE_ICON}'             : '<webp src="/img/icons/status/projectile.png" width="20" class="inline"/>',
                     '{ROCKSPINE_TERMITE_ICON}'      : '<webp src="/img/icons/status/rockspine.png" width="20" class="inline"/>',
+                    '{SATED_ICON}'                  : '<webp src="/img/icons/status/sated.png" width="20" class="inline"/>',
                     '{SCRAP_ICON}'                  : '<webp src="/img/icons/status/scrap.png" width="20" class="inline"/>',
                     '{SCRAP_X_ICON}'                : '<webp src="/img/icons/status/scrapX.png" width="20" class="inline"/>',
                     '{SHACKLE_ICON}'                : '<webp src="/img/icons/status/shackle.png" width="20" class="inline"/>',
                     '{SPIRIT_ICON}'                 : '<webp src="/img/icons/status/spirit.png" width="20" class="inline"/>',
                     '{VOID_ICON}'                   : '<webp src="/img/icons/status/void.png" width="20" class="inline"/>',
                     '{VOID_X_ICON}'                 : '<webp src="/img/icons/status/voidX.png" width="20" class="inline"/>',
+                    '{VOIDSIGHT_ICON}'              : '<webp src="/img/icons/status/voidsight.png" width="20" class="inline"/>',
                     
+                    //Damage Modifiers
                     '{-2_WHITE}'    : '<webp src="/img/icons/perks/-2_white.png" width="20" class="inline"/>',
                     '{-1_WHITE}'    : '<webp src="/img/icons/perks/-1_white.png" width="20" class="inline"/>',
                     '{+0_WHITE}'    : '<webp src="/img/icons/perks/+0_white.png" width="20" class="inline"/>',
@@ -215,9 +220,11 @@ export default {
                     '{+X_WHITE}'    : '<webp src="/img/icons/perks/+x_white.png" width="20" class="inline"/>',
                     '{2X_WHITE}'    : '<webp src="/img/icons/perks/2x_white.png" width="20" class="inline"/>',
                     '{AGAIN}'       : '<webp src="/img/icons/perks/again_white.png" width="20" class="inline"/>',
+
                     '{NOTE_115}'    : '<webp src="/img/notes/note-115.png" width="421"/>',
                     '{NOTE_42}'     : '<webp src="/img/notes/note-42.png" width="421"/>',
 
+                    //Items
                     '{BODY}'        : '<webp src="/img/icons/equipment/body.png" alt="body" width="20"/>',
                     '{HEAD}'        : '<webp src="/img/icons/equipment/head.png" alt="head" width="20"/>',
                     '{LEGS}'        : '<webp src="/img/icons/equipment/legs.png" alt="legs" width="20"/>',
