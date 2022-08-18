@@ -223,6 +223,7 @@ export default {
 
                     '{NOTE_115}'    : '<webp src="/img/notes/note-115.png" width="421"/>',
                     '{NOTE_42}'     : '<webp src="/img/notes/note-42.png" width="421"/>',
+                    '{PAGE}'        : this.$t('PAGE')     + ' <webp src="/img/icons/general/page.png" width="20" class="inline"/>',
 
                     //Items
                     '{BODY}'        : '<webp src="/img/icons/equipment/body.png" alt="body" width="20"/>',
