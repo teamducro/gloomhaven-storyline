@@ -115,6 +115,21 @@ class Sheet {
         this.city = this.removeInvalid(this.city, 22);
     }
 
+    fillBlanksCs() {
+        // for (let i = 26; i <= 36; i++) {
+        //     this.itemDesigns[i] = this.itemDesigns[i] || false;
+        // }
+
+        // if (!Object.keys(this.city).length) {
+        //     for (let i = 1; i <= 22; i++) {
+        //         this.city[i] = true;
+        //     }
+        // }
+
+        // this.itemDesigns = this.removeInvalid(this.itemDesigns, 36);
+        // this.city = this.removeInvalid(this.city, 22);
+    }
+
     fillRelations() {
         for (const uuid in this.characters) {
             if (!(this.characters[uuid] instanceof Character)) {
@@ -173,6 +188,9 @@ class Sheet {
             case 'jotl':
                 this.fillBlanksJotl();
                 break;
+            case 'cd':
+                this.fillBlanksCs();
+                break;
             default:
                 this.fillBlanksGH();
         }
@@ -214,6 +232,8 @@ class Sheet {
                 return ["DR", "BR", "CH", "SW", "TI", "SC", "MT"];
             case 'jotl':
                 return ["RG", "DM", "HT", "VW"];
+            case 'cs':
+                return [];
             default:
                 return ["BR", "CH", "SW", "TI", "SC", "MT"];
         }

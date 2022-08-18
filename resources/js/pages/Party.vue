@@ -1,5 +1,6 @@
-<template>
+<template v-if="game">
     <party-jotl v-if="game === 'jotl'"></party-jotl>
+    <party-cs v-else-if="game === 'cs'"></party-cs>
     <party-gh v-else></party-gh>
 </template>
 
@@ -7,12 +8,13 @@
 
 import PartyJotl from "./PartyJotl";
 import PartyGh from "./PartyGh";
+import PartyCs from "./PartyCs";
 
 export default {
-    components: {PartyJotl, PartyGh},
+    components: {PartyJotl, PartyGh, PartyCs},
     data() {
         return {
-            game: "gh"
+            game: null
         }
     },
     mounted() {

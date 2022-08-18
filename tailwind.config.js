@@ -121,6 +121,20 @@ module.exports = {
                     sw: '#B081B1',
                     ti: '#C2B698',
                     vw: '#C4C4BC',
+                    hp: '#D7D961',
+                    st: '#363786',
+                    fk: '#E82E2E',
+                    ho: '#552358',
+                    bk: '#B99E30',
+                    ct: '#76C6C3',
+                    sp: '#A5CE39',
+                    lu: '#915BA3',
+                    cg: '#CF6D30',
+                    bm: '#B6A691',
+                    aa: '#FBAB19',
+                    rm: '#5B1610',
+                    qa: '#2C8BB9',
+                    mf: '#E35F25'
                 }
             },
             boxShadow: {

@@ -106,8 +106,8 @@ export default {
         }
     },
     methods: {
-        async loadMap() {
-            this.game = app.game;
+        async loadMap(game) {
+            this.game = game || app.game;
             this.mapImages = this.gameData.map(this.game);
             this.settings = this.gameData.mapSettings(this.game);
 
@@ -124,6 +124,12 @@ export default {
         },
         setScenarios() {
             this.mapImages = this.gameData.map(this.game);
+
+            // Games that do not support a map view, for example: CS
+            if (this.mapImages === null) {
+                this.$router.replace('/');
+            }
+
             this.map.setMinZoom(this.scale());
 
             this.scenarios = app.scenarios;

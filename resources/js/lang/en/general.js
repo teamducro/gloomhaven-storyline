@@ -1,5 +1,4 @@
 export default {
-    
     "Sanctuary of the Great Oak": "Sanctuary of the Great Oak",
     "Gloomhaven Prosperity": "Gloomhaven Prosperity",
     "Prosperity Items": "Prosperity Items",
@@ -25,7 +24,7 @@ export default {
     "Have a party reputation of 10 or higher": "Have a party reputation of 10 or higher",
     "Have a party reputation of 20": "Have a party reputation of 20",
     "Retire a character": "Retire a character",
-    
+
     // Storyline App
     "Abilities": "Abilities",
     "Achievement": "Achievement | Achievements",
@@ -237,6 +236,10 @@ export default {
             "text": "Campaign data can only be transferred if you purchased a shared campaign."
         }
     },
+    "games-enabled": {
+        "title": "Enabled Games",
+        "text": "To hide games and it's characters enable only ones you own."
+    },
     "Please consider purchasing a license": "Please consider purchasing a license",
     "Danger zone!": "Danger zone!",
     "Alternatively you may": "Alternatively you may",
@@ -256,11 +259,12 @@ export default {
 
     // Game Editions
     "gh": "Gloomhaven",
-    "Forgotten Circles": "Forgotten Circles",
     "fc": "Forgotten Circles",
-    "Jaws of the Lion": "Jaws of the Lion",
+    "Forgotten Circles": "Forgotten Circles",
     "jotl": "Jaws of the Lion",
+    "Jaws of the Lion": "Jaws of the Lion",
     "cs": "Crimson Scales",
+    "Crimson Scales": "Crimson Scales",
 
     "Availability": "Availability",
     "Sticker": "Sticker",
@@ -342,7 +346,7 @@ export default {
     "Recover": "Recover",
     "Refresh": "Refresh",
 
-    //Conditions
+    // Conditions
     "BANE": "BANE",
     "BLESS": "BLESS",
     "CHILL": "CHILL",
@@ -368,34 +372,33 @@ export default {
     "WARD": "WARD",
     "WOUND": "WOUND",
 
-    //Class-colored Text
-    "Augment"       : "Augment",
-    "Colony"        : "Colony",
-    "Command"       : "Command",
-    "Cultivate"     : "Cultivate",
-    "Deathshroud"   : "Deathshroud Spider",
-    "Doom"          : "Doom",
-    "Firespitter"   : "Firespitter Ant",
-    "Ghostshimmer"  : "Ghostshimmer Bee",
-    "Glow"          : "Glow",
-    "Ladder"        : "Ladder",
-    "Mount"         : "Mount",
-    "Mounted"       : "Mounted",
-    "Prayer"        : "Prayer",
-    "Prayers"       : "Prayers",
-    "Projectile"    : "Projectile",
-    "Rockspine"     : "Rockspine Termite",
-    "Ruptured"      : "Ruptured",
-    "Sate"          : "Sate",
-    "Sated"         : "Sated",
-    "Scrap"         : "Scrap",
-    "Shackle"       : "Shackle",
-    "Shackled"      : "Shackled",
-    "Song"          : "Song",
-    "Spirit"        : "Spirit",
-    "Spirits"       : "Spirits",
-    "Timed"         : "Timed",
-    "Void"          : "Void Energy",
-    "Voidsight"     : "Voidsight"
-
+    // Class-colored Text
+    "Augment": "Augment",
+    "Colony": "Colony",
+    "Command": "Command",
+    "Cultivate": "Cultivate",
+    "Deathshroud": "Deathshroud Spider",
+    "Doom": "Doom",
+    "Firespitter": "Firespitter Ant",
+    "Ghostshimmer": "Ghostshimmer Bee",
+    "Glow": "Glow",
+    "Ladder": "Ladder",
+    "Mount": "Mount",
+    "Mounted": "Mounted",
+    "Prayer": "Prayer",
+    "Prayers": "Prayers",
+    "Projectile": "Projectile",
+    "Rockspine": "Rockspine Termite",
+    "Ruptured": "Ruptured",
+    "Sate": "Sate",
+    "Sated": "Sated",
+    "Scrap": "Scrap",
+    "Shackle": "Shackle",
+    "Shackled": "Shackled",
+    "Song": "Song",
+    "Spirit": "Spirit",
+    "Spirits": "Spirits",
+    "Timed": "Timed",
+    "Void": "Void Energy",
+    "Voidsight": "Voidsight"
 }

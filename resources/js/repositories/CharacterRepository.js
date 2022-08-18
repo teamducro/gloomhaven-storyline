@@ -25,7 +25,11 @@ export default class CharacterRepository {
             characters.forget("BS");
         }
 
-        return characters;
+        // Hide characters from inactive games
+        const games = _.uniq([app.game, ...app.enabledGames]);
+        characters = characters.values().whereIn('game', games);
+
+        return characters.keyBy('id');
     }
 
     partyHasCharacter(sheet, id) {

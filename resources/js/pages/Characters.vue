@@ -108,8 +108,7 @@
                                 </button>
                             </router-link>
 
-                            <personal-quests v-if="game !== 'jotl'"
-                                             :quest.sync="character.quest"
+                            <personal-quests :quest.sync="character.quest"
                                              :sheet="sheet"
                                              @change="store"/>
 

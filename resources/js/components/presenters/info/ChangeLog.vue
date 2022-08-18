@@ -137,6 +137,7 @@ export default {
                 {version: '3.7', description: 'Improved synchronization between members', date: dayjs('2022-04-26')},
                 {version: '3.8', description: 'Add character abilities', date: dayjs('2022-06-04')},
                 {version: '3.9', description: 'Manage abilities for each character level', date: dayjs('2022-06-13')},
+                {version: '3.10', description: 'Add beta support for Crimson Scales', date: dayjs('2022-07-17')},
             ].reverse()
         }
     },

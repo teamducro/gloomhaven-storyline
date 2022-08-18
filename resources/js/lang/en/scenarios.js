@@ -988,5 +988,468 @@ export default {
         "rewards": [
             "“Jet Boots” (Item 36)"
         ]
+    },
+    "cs-1": {
+        "name": "The Dark Lake"
+    },
+    "cs-2": {
+        "name": "Underground Channels"
+    },
+    "cs-3": {
+        "name": "Flooded Cavern",
+        "rewards": [
+            "10 experience each",
+            "+1 prosperity"
+        ]
+    },
+    "cs-4": {
+        "name": "Infected Warriors",
+        "rewards": [
+            "Gain “Slug Crossbow” (Item 84)",
+            "Each character gains one random “Orb” item (Item 1-10)",
+            "TODO:: gain slug cross bow... what is party goal?"
+        ]
+    },
+    "cs-5": {
+        "name": "Blood of the Oozes",
+        "rewards": [
+            "Gain “Slug Crossbow” (Item 84)",
+            "Each character gains one random “Orb” item (Item 1-10)",
+            "TODO:: gain slug cross bow... what is party goal?"
+        ]
+    },
+    "cs-6": {
+        "name": "Poisoned Water",
+        "rewards": [
+            "+2 reputation",
+            "+1 prosperity",
+            "Gain “Stun Powder” (Item 21)"
+        ]
+    },
+    "cs-7": {
+        "name": "Golden Eggs",
+        "rewards": [
+            "Gain 30 collective gold",
+            "Each character gains one random “Orb” item (Item 1-10)"
+        ]
+    },
+    "cs-8": {
+        "name": "Shattered Fortress",
+        "rewards": [
+            "Gain “Curious Pendant” (Item 20)",
+            "Each character gains one random “Orb” item (Item 1-10)"
+        ]
+    },
+    "cs-9": {
+        "name": "Rescue Mission",
+        "rewards": [
+            "10 gold each",
+            "Gain “Smog Emitter” (Item 62)"
+        ]
+    },
+    "cs-10": {
+        "name": "Den of Monstrosity",
+        "rewards": [
+            "Gain “Minor Mana Potion” (Item 12)",
+            "Gain “Minor Healing Potion” (Item 20)"
+        ]
+    },
+    "cs-11": {
+        "name": "Voyage Abound"
+    },
+    "cs-12": {
+        "name": "Uncovering the Source"
+    },
+    "cs-13": {
+        "name": "Corpse Cavern",
+        "rewards": [
+            "Gain “Bulkwark Banner” (Item 85)",
+            "+1 prosperity",
+            "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\\nIf there are non of these available in the shop, gain 20 gold instead"
+        ]
+    },
+    "cs-14": {
+        "name": "Cultist Cave",
+        "rewards": [
+            "Gain “Remote Beetle” (Item 86)",
+            "15 experience each"
+        ]
+    },
+    "cs-15": {
+        "name": "Ambush of Beasts"
+    },
+    "cs-16": {
+        "name": "Preto Krisanta",
+        "rewards": [
+            "10 gold each",
+            "One character gains one {+1_WHITE} enhancement to any Level 1 or X card"
+        ]
+    },
+    "cs-17": {
+        "name": "Orb Extraction",
+        "rewards": [
+            "+2 prosperity"
+        ]
+    },
+    "cs-18": {
+        "name": "Grab and Go",
+        "rewards": [
+            "100 gold each This money must immediately be spent on enhancements"
+        ]
+    },
+    "cs-19": {
+        "name": "Elemental Experiments",
+        "rewards": [
+            "Gain “Major Mana Potion” (Item 48)"
+        ]
+    },
+    "cs-20": {
+        "name": "Midnight Ritual",
+        "rewards": [
+            "+1 reputation",
+            "+1 prosperity",
+            "Each character gains one random “Orb” item (Item 1-10)"
+        ]
+    },
+    "cs-21": {
+        "name": "A Fiery Death",
+        "rewards": [
+            "Gain “Magma Waders” (Item 99)"
+        ]
+    },
+    "cs-22": {
+        "name": "Imp Temple",
+        "rewards": [
+            "Each character gains +2 gold and 2 experience for each money token looted."
+        ]
+    },
+    "cs-23": {
+        "name": "Icicle Chambers",
+        "rewards": [
+            "15 experience each"
+        ]
+    },
+    "cs-24": {
+        "name": "Eerie Grotto",
+        "rewards": [
+            "Each character gains one random “Orb” item (Item 1-10)"
+        ]
+    },
+    "cs-25": {
+        "name": "Brightspark, Behold!",
+        "rewards": [
+            "+1 reputation",
+            "Add Road Event 57 to the deck"
+        ]
+    },
+    "cs-26": {
+        "name": "Thermal Stone Peak",
+        "rewards": [
+            "20 experience each",
+            "1 ✓ each"
+        ]
+    },
+    "cs-27": {
+        "name": "Frostbite Cavern",
+        "rewards": [
+            "10 gold each",
+            "Gain “Dizzying Tincture” (Item 58)"
+        ]
+    },
+    "cs-28": {
+        "name": "Fountain of Bones",
+        "rewards": [
+            "1 ✓ each"
+        ]
+    },
+    "cs-29": {
+        "name": "Burial Chamber"
+    },
+    "cs-30": {
+        "name": "Undead Terrors",
+        "rewards": [
+            [
+                "70 collective gold"
+            ],
+            [
+                "10 experience each"
+            ]
+        ]
+    },
+    "cs-31": {
+        "name": "Eternal Portals",
+        "rewards": [
+            "1 ✓ each"
+        ]
+    },
+    "cs-32": {
+        "name": "Confronting the Past",
+        "rewards": [
+            "Read {PAGE} 75 (https://www.thecrimsonscales.com/endgame)",
+            "Password “Water Hydra”"
+        ]
+    },
+    "cs-33": {
+        "name": "Siege Tower",
+        "rewards": [
+            "Gain “Blazing Boots” (Item 87)",
+            "+1 reputation"
+        ]
+    },
+    "cs-34": {
+        "name": "Great Oak Escape",
+        "rewards": [
+            "Unlock Envelope {BM}",
+            "+2 reputation",
+            "All characters add one {BLESS} to their attack modifer deck for the next scenario"
+        ]
+    },
+    "cs-35": {
+        "name": "Prison Riot"
+    },
+    "cs-36": {
+        "name": "Hunters Bounty",
+        "rewards": [
+            "Unlock Envelope {CG}",
+            "10 gold each"
+        ]
+    },
+    "cs-37": {
+        "name": "Burning Stones",
+        "rewards": [
+            "Gain one random “Stone” item (Item 94-100)"
+        ]
+    },
+    "cs-38": {
+        "name": "Alters of Confusion",
+        "rewards": [
+            "Unlock Envelope {LU}"
+        ]
+    },
+    "cs-39": {
+        "name": "Festering Mire",
+        "rewards": [
+            "10 experience each",
+            "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
+            "“An Adder Divides” quest is not yet complete"
+        ]
+    },
+    "cs-40": {
+        "name": "Smugglers Hideout",
+        "rewards": [
+            "Gain 50 collective gold"
+        ]
+    },
+    "cs-41": {
+        "name": "Curse of the Void",
+        "rewards": [
+            "Gain 50 collective gold"
+        ]
+    },
+    "cs-42": {
+        "name": "Unnatural Beasts",
+        "rewards": [
+            "+1 reputation",
+            "10 experience each"
+        ]
+    },
+    "cs-43": {
+        "name": "Mansion Maze",
+        "rewards": [
+            "+1 prosperity",
+            "Each character gains one random “Orb” item (Item 1-10)"
+        ]
+    },
+    "cs-44": {
+        "name": "Haunted Manor",
+        "rewards": [
+            "20 gold each",
+            "Each character gains one random “Orb” item (Item 1-10)"
+        ]
+    },
+    "cs-45": {
+        "name": "Defend the Swamp",
+        "rewards": [
+            "+1 reputation",
+            "+1 prosperity",
+            "1 ✓ each"
+        ]
+    },
+    "cs-46": {
+        "name": "Vermling Gardens",
+        "rewards": [
+            "+2 reputation",
+            "15 experience each"
+        ]
+    },
+    "cs-47": {
+        "name": "Viper Marsh",
+        "rewards": [
+            "Gain “Ghost Viper Venom” (Item 55)",
+            "+1 prosperity",
+            "10 gold each"
+        ]
+    },
+    "cs-48": {
+        "name": "Forest Fire",
+        "rewards": [
+            "10 experience each",
+            "20 gold each"
+        ]
+    },
+    "cs-49": {
+        "name": "Oak Invasion A",
+        "rewards": [
+            "During the next visit to Gloomhaven, donations to the Sanctuary  cost 0 gold"
+        ]
+    },
+    "cs-50": {
+        "name": "Oak Invasion B",
+        "rewards": [
+            "10 experience each",
+            "1 ✓ each"
+        ]
+    },
+    "cs-51": {
+        "name": "Rodent Warehouse",
+        "rewards": [
+            "+1 reputation",
+            "30 gold each"
+        ]
+    },
+    "cs-52": {
+        "name": "Wishing Well",
+        "rewards": [
+            "Gain “Drakescale Shield” (Item 37)"
+        ]
+    },
+    "cs-53": {
+        "name": "Cave of Currents",
+        "rewards": [
+            "Gain “Sphere of Currents” (Item 83)",
+            "5 gold each"
+        ]
+    },
+    "cs-54": {
+        "name": "Lair of Horrors",
+        "rewards": [
+            "+1 reputation",
+            "30 gold each"
+        ]
+    },
+    "cs-55": {
+        "name": "Catacomb Plunder",
+        "rewards": [
+            "+1 prosperity",
+            "+1 reputation",
+            "10 experience each"
+        ]
+    },
+    "cs-56": {
+        "name": "Disarm the Machine",
+        "rewards": [
+            "Gain “Chain Cannon” (Item 45)"
+        ]
+    },
+    "cs-57": {
+        "name": "Elemental Converter",
+        "rewards": [
+            "Gain “Test Tube” (Item 48)"
+        ]
+    },
+    "cs-58": {
+        "name": "Penitentiary Lockdown",
+        "rewards": [
+            "Gain one of the following as an item and the other as an item design:",
+            "“Claw Trap” (Item 34)",
+            "“Clamp Trap” (Item 56)"
+        ]
+    },
+    "cs-59": {
+        "name": "Forest Invaders",
+        "rewards": [
+            "Gain “Nature Armlets” (Item 47)"
+        ]
+    },
+    "cs-60": {
+        "name": "Through the Fire and Flames",
+        "rewards": [
+            "Gain “Flaming Armor” (Item 51)"
+        ]
+    },
+    "cs-61": {
+        "name": "Archaic Preservation",
+        "rewards": [
+            "Gain “Robe of Soothing” (Item 42)"
+        ]
+    },
+    "cs-62": {
+        "name": "Hallow Redemption",
+        "rewards": [
+            "Gain “Cleansed Voidheart” (Item 57)"
+        ]
+    },
+    "cs-63": {
+        "name": "A Cornered Viper",
+        "rewards": [
+            "Gain “Field Mortar” (Item 53)"
+        ]
+    },
+    "cs-64": {
+        "name": "Glowing Crystals",
+        "rewards": [
+            "Gain “Luminous Carapace” (Item 50)"
+        ]
+    },
+    "cs-65": {
+        "name": "Glowing Crystals",
+        "rewards": [
+            "Gain “Spirit Libation” (Item 41)"
+        ]
+    },
+    "cs-66": {
+        "name": "Otherworldly Strangers",
+        "rewards": [
+            "Gain “Moonleather Boots” (Item 40)"
+        ]
+    },
+    "cs-AA1": {
+        "name": "The Riches of the Steelsilk"
+    },
+    "cs-AA2": {
+        "name": "Malign Echoes"
+    },
+    "cs-AA3": {
+        "name": "Hive Guardian"
+    },
+    "cs-QA1": {
+        "name": "Capstone Test"
+    },
+    "cs-QA2": {
+        "name": "Mother Lode"
+    },
+    "cs-QA3": {
+        "name": "Magnum Opus"
+    },
+    "cs-RM1": {
+        "name": "Mind your Manners"
+    },
+    "cs-RM2": {
+        "name": "Sinking Kingdom"
+    },
+    "cs-RM3": {
+        "name": "Ruined Colony"
+    },
+    "cs-RM4": {
+        "name": "Terrorscale Lair"
+    },
+    "cs-RM5": {
+        "name": "Unseen Plight"
+    },
+    "cs-RM6": {
+        "name": "The Fall of Shadow's Respite"
+    },
+    "cs-RM7": {
+        "name": "Insatiable"
     }
 }
