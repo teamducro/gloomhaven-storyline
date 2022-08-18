@@ -469,7 +469,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Add one {+0_WHITE} Refresh an item card"
+                    "desc": "Add one {+0_WHITE} {REFRESH} an item card"
                 }
             ]
         },
@@ -771,7 +771,7 @@
                 },
                 {
                     "count": 3,
-                    "desc": "Add one {+0_WHITE} Refresh an item card"
+                    "desc": "Add one {+0_WHITE} {REFRESH} an item card"
                 },
                 {
                     "count": 1,
@@ -1254,7 +1254,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Replace one {+0_WHITE} card with one {+0_WHITE} Refresh a spent item card"
+                    "desc": "Replace one {+0_WHITE} card with one {+0_WHITE} {REFRESH} a spent item card"
                 },
                 {
                     "count": 2,
