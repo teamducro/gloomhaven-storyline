@@ -67,12 +67,12 @@ export default {
         "2": "Two named enemies are killed",
         "3": "Three named enemies are killed",
         "title": "Test your Power Modulator",
-        "text": "How many named Enemies were you able to kill before exhausting?"
+        "text": "How many Named Enemies were you able to kill before exhausting?"
     },
     "unseenPlight": {
         "1": "Killed the Guttermaw, claiming Guttermaw's Bounty",
         "2": "Saved the children, fulfilling Feigrin's Request",
-        "title": "",
-        "text": ""
+        "title": "Broken Homes and Lairs",
+        "text": "Did you bring death or save lives?"
     },
 }
