@@ -98,9 +98,7 @@
                 "18": "“Boneclad Shawl (Item 25)"
             },
             "rewards": [
-                "Gain “Slug Crossbow” (Item 84)",
-                "Each character gains one random “Orb” item (Item 1-10)",
-                "TODO:: gain slug cross bow... what is party goal?"
+                "Each character gains one random “Orb” item (Item 1-10)"
             ],
             "monsters": [
                 "city-archer",
@@ -127,9 +125,7 @@
                 4
             ],
             "rewards": [
-                "Gain “Slug Crossbow” (Item 84)",
-                "Each character gains one random “Orb” item (Item 1-10)",
-                "TODO:: gain slug cross bow... what is party goal?"
+                "Each character gains one random “Orb” item (Item 1-10)"
             ],
             "achievements_awarded": [
                 "PCSOD"
@@ -166,7 +162,7 @@
             "rewards": [
                 "+2 reputation",
                 "+1 prosperity",
-                "Gain “Stun Powder” (Item 21)"
+                "“Stun Powder” (Item 21)"
             ],
             "monsters": [
                 "blood-ooze",
@@ -195,8 +191,7 @@
                 3
             ],
             "rewards": [
-                "Gain 30 collective gold",
-                "Each character gains one random “Orb” item (Item 1-10)"
+                "Gain 30 collective gold"
             ],
             "achievements_awarded": [
                 "PCSFM"
@@ -230,8 +225,7 @@
                 "1": "“Drake's Blood” (Item 14)"
             },
             "rewards": [
-                "Gain “Curious Pendant” (Item 20)",
-                "Each character gains one random “Orb” item (Item 1-10)"
+                "“Curious Pendant” (Item 20)"
             ],
             "monsters": [
                 "ancient-artillery",
@@ -261,7 +255,7 @@
             ],
             "rewards": [
                 "10 gold each",
-                "Gain “Smog Emitter” (Item 62)"
+                "“Smog Emitter” (Item 62)"
             ],
             "monsters": [
                 "ancient-artillery",
@@ -293,8 +287,8 @@
                 "10": "One random “Stone” item (Item 94-100)"
             },
             "rewards": [
-                "Gain “Minor Mana Potion” (Item 12)",
-                "Gain “Minor Healing Potion” (Item 20)"
+                "“Minor Mana Potion” (Item 12)",
+                "“Minor Healing Potion” (Item 20)"
             ],
             "monsters": [
                 "black-imp",
@@ -365,7 +359,6 @@
                 "7": "One random “Stone” item (Item 94-100)"
             },
             "rewards": [
-                "Gain “Bulkwark Banner” (Item 85)",
                 "+1 prosperity",
                 "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\nIf there are non of these available in the shop, gain 20 gold instead"
             ],
@@ -394,7 +387,7 @@
                 "9": "“Orb of Fortune” (Item 9)"
             },
             "rewards": [
-                "Gain “Remote Beetle” (Item 86)",
+                "“Remote Beetle” (Item 86)",
                 "15 experience each"
             ],
             "monsters": [
@@ -423,6 +416,10 @@
             "treasures": {
                 "34": "Suffer hazardous terrain damage, gain {INVISIBLE}"
             },
+            "rewards": [
+                "15 gold each",
+                "Each character gains one random “Orb” item (Item 1-10)"
+            ],
             "monsters": [
                 "cave-bear",
                 "giant-viper",
@@ -513,7 +510,7 @@
                 "22": "“Boots of Perpetuity” (Item 19)"
             },
             "rewards": [
-                "100 gold each This money must immediately be spent on enhancements"
+                "100 gold each. This money must immediately be spent on enhancements"
             ],
             "monsters": [
                 "black-imp",
@@ -546,7 +543,7 @@
                 "16": "Perform “Heal 6, Self”, gain {POISON}"
             },
             "rewards": [
-                "Gain “Major Mana Potion” (Item 48)"
+                "“Major Mana Potion” (Item 48)"
             ],
             "monsters": [
                 "earth-demon",
@@ -620,7 +617,7 @@
                 "36": "10 experience, gain {INVSIBLE}"
             },
             "rewards": [
-                "Gain “Magma Waders” (Item 99)"
+                "“Magma Waders” (Item 99)"
             ],
             "monsters": [
                 "earth-demon",
@@ -801,7 +798,7 @@
             ],
             "rewards": [
                 "10 gold each",
-                "Gain “Dizzying Tincture” (Item 58)"
+                "“Dizzying Tincture” (Item 58)"
             ],
             "monsters": [
                 "frost-demon",
@@ -976,7 +973,7 @@
                 34
             ],
             "rewards": [
-                "Gain “Blazing Boots” (Item 87)",
+                "“Blazing Boots” (Item 87)",
                 "+1 reputation"
             ],
             "cards": [],
@@ -1369,7 +1366,7 @@
                 "47": "15 gold"
             },
             "rewards": [
-                "Gain “Ghost Viper Venom” (Item 55)",
+                "“Ghost Viper Venom” (Item 55)",
                 "+1 prosperity",
                 "10 gold each"
             ],
@@ -1429,7 +1426,7 @@
             ],
             "chapter_id": 105,
             "rewards": [
-                "During the next visit to Gloomhaven, donations to the Sanctuary  cost 0 gold"
+                "During the next visit to Gloomhaven, donations to the Sanctuary cost 0 gold"
             ],
             "cards": [
                 "TODO:: City 42"
@@ -1518,7 +1515,7 @@
             ],
             "chapter_id": 10,
             "rewards": [
-                "Gain “Drakescale Shield” (Item 37)"
+                "“Drakescale Shield” (Item 37)"
             ],
             "monsters": [
                 "black-imp",
@@ -1540,7 +1537,7 @@
             ],
             "chapter_id": 10,
             "rewards": [
-                "Gain “Sphere of Currents” (Item 83)",
+                "“Sphere of Currents” (Item 83)",
                 "5 gold each"
             ],
             "monsters": [
@@ -1617,7 +1614,7 @@
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Chain Cannon” (Item 45)"
+                "“Chain Cannon” (Item 45)"
             ],
             "requirements": "BM Level 5",
             "monsters": [
@@ -1638,7 +1635,7 @@
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Test Tube” (Item 48)"
+                "“Test Tube” (Item 48)"
             ],
             "requirements": "BK Level 5",
             "monsters": [
@@ -1662,9 +1659,7 @@
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain one of the following as an item and the other as an item design:",
-                "“Claw Trap” (Item 34)",
-                "“Clamp Trap” (Item 56)"
+                "Gain one of the following as an item and the other as an item design: “Claw Trap” (Item 34), “Clamp Trap” (Item 56)"
             ],
             "requirements": "CG Level 5",
             "monsters": [
@@ -1684,7 +1679,7 @@
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Nature Armlets” (Item 47)"
+                "“Nature Armlets” (Item 47)"
             ],
             "requirements": "CT Level 5",
             "monsters": [
@@ -1712,7 +1707,7 @@
                 "49": "“Magma Waders” (Item 99)"
             },
             "rewards": [
-                "Gain “Flaming Armor” (Item 51)"
+                "“Flaming Armor” (Item 51)"
             ],
             "requirements": "FK Level 5",
             "monsters": [
@@ -1734,7 +1729,7 @@
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Robe of Soothing” (Item 42)"
+                "“Robe of Soothing” (Item 42)"
             ],
             "requirements": "HO Level 5",
             "monsters": [
@@ -1758,7 +1753,7 @@
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Cleansed Voidheart” (Item 57)"
+                "“Cleansed Voidheart” (Item 57)"
             ],
             "requirements": "HO Level 5",
             "monsters": [
@@ -1780,7 +1775,7 @@
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Field Mortar” (Item 53)"
+                "“Field Mortar” (Item 53)"
             ],
             "requirements": "HP Level 5",
             "monsters": [
@@ -1805,7 +1800,7 @@
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Luminous Carapace” (Item 50)"
+                "“Luminous Carapace” (Item 50)"
             ],
             "requirements": "LU Level 5",
             "monsters": [
@@ -1826,7 +1821,7 @@
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Spirit Libation” (Item 41)"
+                "“Spirit Libation” (Item 41)"
             ],
             "requirements": "SP Level 5",
             "monsters": [
@@ -1845,7 +1840,7 @@
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Moonleather Boots” (Item 40)"
+                "“Moonleather Boots” (Item 40)"
             ],
             "requirements": "ST Level 5",
             "monsters": [
@@ -1870,6 +1865,9 @@
             "requirements": "“At All Costs” personal quest",
             "chapter_id": 12,
             "cards": [],
+            "rewards": [
+                "“Rockspine Bulwark” (Item AA01)"
+            ],
             "monsters": [
                 "harrower-aegis",
                 "hound",
@@ -1892,6 +1890,9 @@
             "requirements": "“The Weight of Failure” personal quest",
             "chapter_id": 12,
             "cards": [],
+            "rewards": [
+                "“Ghostshimmer Honey” (Item AA02)"
+            ],
             "monsters": [
                 "giant-viper",
                 "ravenous-gharial",
@@ -1913,6 +1914,9 @@
             "requirements": "AA Level 5",
             "chapter_id": 100,
             "cards": [],
+            "rewards": [
+                "“Steelsilk Spinneret” (Item AA03)"
+            ],
             "monsters": [
                 "flame-demon",
                 "frost-demon",
@@ -1936,6 +1940,28 @@
             "requirements": "“Ingenious Inventor” personal quest and “Power Modulator” item equipped",
             "chapter_id": 13,
             "cards": [],
+            "rewards": [
+                [
+                    "“Ingenious Inventor” quest complete",
+                    "Open envelope {QA}",
+                    "“Steam Piston Hammer” design (Item QA02)",
+                    "“Spider Climb Gloves” design (Item QA03)"
+                ],
+                [
+                    "“Ingenious Inventor” quest complete",
+                    "Open envelope {QA}",
+                    "Gain one of the following: “Steam Piston Hammer” (Item QA02) OR “Spider Climb Gloves” (Item QA03)",
+                    "Add a copy of the chosen item to the city's available supply",
+                    "Add the other item to the random item design deck"
+                ],
+                [
+                    "“Ingenious Inventor” quest complete",
+                    "Open envelope {QA}",
+                    "“Steam Piston Hammer” (Item QA02)",
+                    "“Spider Climb Gloves” (Item QA03)",
+                    "Add copies to the city's available supply"
+                ],
+            ],
             "monsters": [
                 "clockwork-soldier",
                 "clockwork-railcaster"
@@ -1955,6 +1981,12 @@
             "requirements": "“Scrap Diver” personal quest",
             "chapter_id": 13,
             "cards": [],
+            "rewards": [
+                "“Scrap Diver” quest complete",
+                "Open envelope {QA}",
+                "15xA gold each (where A is the number of Ancient Scrap recovered",
+                "Add City Event QA-03 to the deck"
+            ],
             "monsters": [
                 "giant-viper",
                 "living-bones",
@@ -1976,6 +2008,9 @@
             "requirements": "QA Level 5",
             "chapter_id": 100,
             "cards": [],
+            "rewards": [
+                "“Auscudee of the Makers” (Item QA06)"
+            ],
             "monsters": [
                 "clockwork-soldier",
                 "clockwork-railcaster"
@@ -2014,6 +2049,11 @@
             "requirements": "“Brutal Enforcer” personal quest",
             "chapter_id": 14,
             "cards": [],
+            "rewards": [
+                "“Brutal Enforcer” quest complete",
+                "Open Envelope {RM}",
+                "+1 prosperity"
+            ],
             "monsters": [
                 "bandit-guard",
                 "bandit-archer",
@@ -2057,6 +2097,12 @@
             "requirements": "“Apex Predator” personal quest",
             "chapter_id": 14,
             "cards": [],
+            "rewards": [
+                "“Apex Predator” quest complete",
+                "Open Envelope {RM}",
+                "“Terrorscale Saber” design (Item RM03)",
+                "“Terrorscale Crossblades” design (Item RM04)",
+            ],
             "monsters": [
                 "terrorscale-drake",
                 "gnashing-drake",
@@ -2086,6 +2132,16 @@
             ],
             "chapter_id": 14,
             "cards": [],
+            "rewards": [
+                [
+                    "40 collective gold",
+                    "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+                ],
+                [
+                    "2 ✓ each"
+                    "“Lucky Eye” design (Item 063)",
+                ]
+            ],
             "monsters": [
                 "ravenous-gharial",
                 "black-imp"
@@ -2104,6 +2160,11 @@
             "requirements": "RM Level 5",
             "chapter_id": 100,
             "cards": [],
+            "rewards": [
+                "“Rite of Ruin” design (Item RM05)",
+                "If at least three Vermlings were alive at the end of the eighth round: 5 gold"
+                "If at least five Vermlings were alive at the end of the eighth round: ✓"
+            ],
             "monsters": [
                 "gnashing-drake",
                 "spitting-drake",
@@ -2125,6 +2186,10 @@
             ],
             "requirements": "No Ruinmaw in party",
             "chapter_id": 14,
+            "rewards": [
+                "10 experience each",
+                "“Savage Cuirass” design (Item RM06)",
+            ],
             "monsters": [
                 "hound",
                 "ruinmaw",
