@@ -98,6 +98,8 @@ export default {
                     
                     '{RECOVER}'             : this.$t('Recover')    + ' <webp src="/img/icons/general/recover_white.png" width="20" class="inline"/>',
                     '{REFRESH}'             : this.$t('Refresh')    + ' <webp src="/img/icons/general/refresh_white.png" width="20" class="inline"/>',
+                    '{CONSUMED}'            : this.$t('Consumed')   + ' <webp src="/img/icons/general/consumed_white.png" width="20" class="inline"/>',
+                    '{LOST}'                : this.$t('Lost')       + ' <webp src="/img/icons/general/lost_white.png" width="20" class="inline"/>',
                     
                     '{MODIFIER_MINUS_ONE}'  : '<webp src="/img/icons/general/modifier_minus_one_white.png" width="20" class="inline"/>',
                     '{-1}'                  : '<webp src="/img/icons/general/modifier_minus_one_white.png" width="20" class="inline"/>',
