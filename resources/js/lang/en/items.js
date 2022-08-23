@@ -773,7 +773,7 @@ export default {
     "gh-152": {
         "name": "Ring of Duality",
         "source": "Reward from {SCENARIO 97}\nSection 125 “A locked chest” in book",
-        "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {consumed}."
+        "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {CONSUMED}."
     },
     "gh-153": {
         "name": "Minor Antidote",
