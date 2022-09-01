@@ -65,7 +65,7 @@
                                 Gloomhaven Quest Log</a>
                         </li>
                         <li class="py-1">
-                                <span class="mr-1 block sm:inline">Map coordinates by
+                                <span class="mr-1 block sm:inline">Gloomhaven Map coordinates by
                                     <a class="link" target="_blank" rel="noreferrer"
                                        href="https://boardgamegeek.com/user/Dargalin">
                                         Dargalin</a>:
