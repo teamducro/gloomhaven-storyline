@@ -836,185 +836,185 @@ export default {
         "desc": "When you reveal cards from any deck, reveal one additional card."
     },
     "jotl-1": {
-        "name": "Eagle-Eye Goggles",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "During your attack, gain Advantage on the entire Attack action."
+        "name": "Jumelles Oeil-de-faucon",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Pendant votre attaque, gagnez Avantage pour la totalité de l'action d'attaque."
     },
     "jotl-2": {
-        "name": "Iron Helmet",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+        "name": "Casque de fer",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Lorsque vous êtes attaqué, traitez toutes carte Modificateur d'Attaque {2X_WHITE} piochée par l'adversaire comme une carte {+0_WHITE} à la place."
     },
     "jotl-3": {
-        "name": "Chain Armor",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "During your turn gain {SHIELD} 1 for the rest of the round"
+        "name": "Armure de Mailles",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Pendant votre tour gagnez Bouclier {SHIELD} 1 pour le reste du round"
     },
     "jotl-4": {
-        "name": "Studded Leather",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+        "name": "Cuir Clouté",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Lorsque vous êtes attaqué, avant de piocher une carte Modificateur d'Attaque, pour cette attaque l'attaquant gagne Désavantage et vous gagnez Bouclier {SHIELD} 1."
     },
     "jotl-5": {
-        "name": "Weathered Boots",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "During your movement add +1 {MOVE} to a single movement."
+        "name": "Bottes Patinées",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Pendant votre déplacement, ajoutez +1 Déplacement {MOVE} à un seul déplacement."
     },
     "jotl-6": {
-        "name": "Winged Shoes",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "During your movement, add {JUMP} to the entire Move Action.",
+        "name": "Bottines Ailées",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Pendant votre déplacment, ajoutez Saut {JUMP} à la totalité de l'action de déplacement.",
         "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
     },
     "jotl-7": {
-        "name": "Heater Shield",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+        "name": "Écu",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Lorsque vous subissez des dégâts d'une attaque, gagnez Bouclier {SHIELD} 1 pour cette attaque."
     },
     "jotl-8": {
-        "name": "Throwing Hammer",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "During your ranged attack, add {STUN} to a single attack"
+        "name": "Marteau de Lancer",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Pendant votre attaque à distance, ajoutez ÉTOURDISSEMENT {STUN} à une seule attaque"
     },
     "jotl-9": {
-        "name": "Poison Dagger",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "During your melee attack, add {POISON} to a single attack."
+        "name": "Dague Empoisonnée",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Pendant votre attaque de mêlée, ajoutez EMPOISONNEMENT {POISON} à une seule attaque."
     },
     "jotl-10": {
-        "name": "Iron Spear",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes"
+        "name": "Lance ferrée",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Pendant votre capacité d'Attaque de mêlée sur une seule cible, attaquez un adversaire situé à 2 hexagones ou moins."
     },
     "jotl-11": {
-        "name": "Healing Potion",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "During your turn, perform a “{HEAL} 3, Self” action."
+        "name": "Potion de Soin",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Pendant votre tour, effectuez une action “Soin {HEAL} 3, Sur vous-même”."
     },
     "jotl-12": {
-        "name": "Stamina Potion",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "During your turn, return one of your discarded cards to your hand."
+        "name": "Potion d'Endurance",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Pendant votre tour, remettez une de vos cartes défaussées dans votre main."
     },
     "jotl-13": {
-        "name": "Power Potion",
-        "source": "Reward from {SCENARIO 2}",
-        "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+        "name": "Potion de Puissance",
+        "source": "Récompense de {SCENARIO 2}",
+        "desc": "Pendant votre attaque ajoutez +1 Attaque {ATTACK} à la totalité de votre action d'Attaque."
     },
     "jotl-14": {
-        "name": "Mana Potion",
-        "source": "Reward from {SCENARIO 4}\n {SCENARIO 4} (Treasure #16)",
-        "desc": "During your turn, infuse any one element. {ANY}"
+        "name": "Potion de Mana",
+        "source": "Récompense de {SCENARIO 4}\n {SCENARIO 4} (Treasure #16)",
+        "desc": "Pendant votre tour, infusez un élément au choix. {ANY}"
     },
     "jotl-15": {
-        "name": "Amulet of Life",
-        "source": "Reward from {SCENARIO 9}",
-        "desc": "During your turn, “{HEAL} 1, Self” action."
+        "name": "Amulette de Vie",
+        "source": "Récompense de {SCENARIO 9}",
+        "desc": "Pendant votre tour, effectuz une action “Soin {HEAL} 1, Sur vous-même”."
     },
     "jotl-16": {
-        "name": "Robes of Evocation",
-        "source": "Reward from {SCENARIO 9}",
-        "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        "name": "Robes d'Évocation",
+        "source": "Récompense de {SCENARIO 9}",
+        "desc": "Pendant votre attaque, {ANY_X} pour ajoutez +1 Attaque {ATTACK} à la totalité de l'action d'attaque."
     },
     "jotl-17": {
-        "name": "Comfortable Shoes",
-        "source": "Reward from {SCENARIO 9}",
-        "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+        "name": "Poulaines Confortables",
+        "source": "Récompense de {SCENARIO 9}",
+        "desc": "Quand vous utilisez l'action inférieure par défaut d'une carte Capacité, effectuez une action “Déplacement {MOVE} 3” à la place d'une action “Déplacement {MOVE} 2”."
     },
     "jotl-18": {
-        "name": "Battle-Axe",
-        "source": "Reward from {SCENARIO 9}",
-        "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+        "name": "Hache de Bataille",
+        "source": "Récompense de {SCENARIO 9}",
+        "desc": "Pendant votre capacité d'Attaque de mêlée sur une seule cible, transformez cette attaque en: {AOE.CONE_0_1}"
     },
     "jotl-19": {
-        "name": "Black Candle",
-        "source": "Reward from {SCENARIO 9}",
-        "desc": "During your ranged attack, add {CURSE} to a single attack."
+        "name": "Chandelle Noire",
+        "source": "Récompense de {SCENARIO 9}",
+        "desc": "Pendant votre attque à distance, ajoutez MALÉDICTION {CURSE} à une seule attaque."
     },
     "jotl-20": {
-        "name": "Stun Powder",
-        "source": "Reward from {SCENARIO 9}",
-        "desc": "During your attack, add {STUN} to a single attack."
+        "name": "Poudre Étourdissante",
+        "source": "Récompense de {SCENARIO 9}",
+        "desc": "Pendant votre attaque, ajoutez ÉTOURDISSEMENT {STUN} à une seule attaque."
     },
     "jotl-21": {
-        "name": "Hawk Helm",
-        "source": "Reward from {SCENARIO 15}",
-        "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
+        "name": "Casque du faucon",
+        "source": "Récompense de {SCENARIO 15}",
+        "desc": "Pendant votre attaque à distance, ajoutez +1 Portée {RANGE} à la totalité de l'action d'Attaque."
     },
     "jotl-22": {
-        "name": "Bladed Armor",
-        "source": "Reward from {SCENARIO 15}",
-        "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack and the attacker suffers 2 damage."
+        "name": "Armure Tranchelame",
+        "source": "Récompense de {SCENARIO 15}",
+        "desc": "Lorsque vous subissez des dégâts du fait d'une attaque, gagnez Bouclier {SHIELD} 2 pour cette attaque et l'attaquant subit 2 dégâts."
     },
     "jotl-23": {
-        "name": "Boots of Striding",
-        "source": "Reward from {SCENARIO 15}",
-        "desc": "During your movement, add +2 {MOVE} to a single movement."
+        "name": "Bottes de Voyage",
+        "source": "Récompense de {SCENARIO 15}",
+        "desc": "Pendant votre déplacement, ajoutez +2 Déplacement {MOVE} à un seul déplacement."
     },
     "jotl-24": {
-        "name": "Volatile Bomb",
-        "source": "Reward from {SCENARIO 15}",
-        "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+        "name": "Bombe Explosive",
+        "source": "Récompense de {SCENARIO 15}",
+        "desc": "Pendant votre capacité d'Attaque à distance sur une seule cible, transformez cette attaque en: {AOE.CONE_1_1}"
     },
     "jotl-25": {
-        "name": "Barbed Chain",
-        "source": "Reward from {SCENARIO 15}",
-        "desc": "During your ranged attack, add {PULL} 2 to a single attack."
+        "name": "Chaîne à Crochet",
+        "source": "Récompense de {SCENARIO 15}",
+        "desc": "Pendant votre attaque à distance, ajoutez TRACTION {PULL} 2 à une seule attaque."
     },
     "jotl-26": {
-        "name": "Oak Charm",
-        "source": "Reward from {SCENARIO 15}",
-        "desc": "During your turn, perform a “{BLESS}, {RANGE} 5” action."
+        "name": "Charme du Chêne",
+        "source": "Récompense de {SCENARIO 15}",
+        "desc": "Pendant votre tour, effectuez une action “BÉNÉDICTION {BLESS}, Portée {RANGE} 5”."
     },
     "jotl-27": {
-        "name": "Fateful Compass",
+        "name": "Compas Maudit",
         "source": "{SCENARIO 3} (Treasure #10)",
-        "desc": "During your turn, force one enemy within {RANGE} 3 to peform a “{MOVE} 2” action with you controlling the action."
+        "desc": "Pendant votre tour, forcez un adversaire à Portée {RANGE} 3 à effectuer une action “Déplacement {MOVE} 2”. Vous contrôlez cette action."
     },
     "jotl-28": {
-        "name": "Flea-Bitten Shawl",
-        "source": "Reward from {SCENARIO 8}\nReward from {SCENARIO 12}",
-        "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
+        "name": "Châle Mité",
+        "source": "Récompense de {SCENARIO 8}\nRécompense de {SCENARIO 12}",
+        "desc": "Vous êtes considéré comme possédant une initiative de 99 pour ce qui concerne la focalisation des monstres.",
         "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
     },
     "jotl-29": {
-        "name": "Tower Shield",
-        "source": "Reward from {SCENARIO 16}",
-        "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
+        "name": "Pavois",
+        "source": "Récompense de {SCENARIO 16}",
+        "desc": "Lorsque vous subissez des dégâts d'une attaque, gagnez Bouclier {SHIELD} 2 pour cette attaque."
     },
     "jotl-30": {
-        "name": "Ring of Haste",
+        "name": "Anneau de Hâte",
         "source": "{SCENARIO 21} (Treasure #11)",
-        "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of that card."
+        "desc": "À la fin de votre tour, jouez une carte de votre main et effectuez immédiatement l'action inférieure de cette carte."
     },
     "jotl-31": {
-        "name": "Ring of Strength",
-        "source": "Reward from {SCENARIO 19}\n{SCENARIO 18} (Treasure #2)",
-        "desc": "During your turn, gain {STRENGTHEN}."
+        "name": "Anneau de force",
+        "source": "Récompense de {SCENARIO 19}\n{SCENARIO 18} (Treasure #2)",
+        "desc": "Pendant votre tour, gagnez RENFORCEMENT {STRENGTHEN}."
     },
     "jotl-32": {
-        "name": "Ring of Restoration",
+        "name": "Anneau de Récupération",
         "source": "Misplaced Good #F from {SCENARIO 20}",
-        "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action."
+        "desc": "Pendant votre tour, effectuez une action “Soin {HEAL} 3, Portée {RANGE} 5”."
     },
     "jotl-33": {
-        "name": "Steel Ring",
-        "source": "Reward from {SCENARIO 22}",
-        "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
+        "name": "Anneau d'Acier",
+        "source": "Récompense de {SCENARIO 22}",
+        "desc": "Lorsque vous subissez des dégâts d'une attaque, gagnez Bouclier {SHIELD} 4 pour cette attaque."
     },
     "jotl-34": {
-        "name": "Barbed Axe",
-        "source": "Reward from {SCENARIO 34}",
-        "desc": "During your attack, add {WOUND} to the entire Attack Action."
+        "name": "Hache Barbelée",
+        "source": "Récompense de {SCENARIO 34}",
+        "desc": "Pendant votre attaque, ajoutez BLESSURE {WOUND} à la totalité de cette action d'Attaque."
     },
     "jotl-35": {
-        "name": "Robes of Command",
-        "source": "Reward from {SCENARIO 24}",
-        "desc": "During your turn, one adjacent ally may perform and “{ATTACK} 2” Action."
+        "name": "Robes de Commandement",
+        "source": "Récompense de {SCENARIO 24}",
+        "desc": "Pendant votre tour, un allié adjacent peut effectuer une action “Attaque {ATTACK} 2”."
     },
     "jotl-36": {
-        "name": "Jet Boots",
-        "source": "Reward from {SCENARIO 25}",
-        "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."
+        "name": "Bottes à Propulsion",
+        "source": "Récompense de {SCENARIO 25}",
+        "desc": "Pendant votre déplacement, ajoutez +1 Déplacement {MOVE} et Saut {JUMP} à un seul déplacement."
     }
 }
