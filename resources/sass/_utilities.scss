@@ -6,8 +6,39 @@
     filter: grayscale(100);
 }
 
-@for $i from 1 through 30 {
+@for $i from 0 through 30 {
     .order-#{$i} {
         order: $i;
+    }
+}
+
+@include media() using($screen) {
+    .#{$screen}\:order-0 {
+        order: 0;
+    }
+}
+
+.aspect-card {
+    aspect-ratio: 1/1.5;
+}
+
+.aspect-stacked-card {
+    aspect-ratio: 1/.25;
+    overflow-y: hidden;
+}
+
+div.hover\:shadow-white:hover {
+    --tw-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@include characters() using($character, $color) {
+    .border-character-#{$character} {
+        border-color: $color;
+    }
+
+    .text-character-#{$character} {
+        color: $color;
     }
 }

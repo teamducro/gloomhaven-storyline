@@ -1,0 +1,65 @@
+// See Tailwind config for color definitions
+$primary: theme('colors.primary');
+$secondary: theme('colors.secondary');
+$background: theme('colors.background');
+$surface: theme('colors.surface');
+$complete: theme('colors.complete');
+$incomplete: theme('colors.incomplete');
+$required: theme('colors.required');
+
+// See Tailwind config for screen definitions
+$xs: 'only screen and (min-width: 430px)';
+$sm: 'only screen and (min-width: 640px)';
+$md: 'only screen and (min-width: 768px)';
+$md2: 'only screen and (min-width: 896px)';
+$lg: 'only screen and (min-width: 1024px)';
+$xl: 'only screen and (min-width: 1280px)';
+$screens: (
+    "xs": $xs,
+    "sm": $sm,
+    "md": $md,
+    "md2": $md2,
+    "lg": $lg,
+    "xl": $xl,
+);
+
+@mixin media() {
+    @each $screen, $media in $screens {
+        @media #{$media} {
+            @content($screen);
+        }
+    }
+}
+
+// See Tailwind config for character color definitions
+$characters: (
+    "be": #C5665E,
+    "br": #5E7EBD,
+    "bs": #D39382,
+    "bt": #A77766,
+    "ch": #8B9552,
+    "dm": #F7AB68,
+    "dr": #C3DBEB,
+    "ds": #77C1ED,
+    "el": #9F9E9E,
+    "ht": #8CD4E4,
+    "mt": #6B7C9B,
+    "ns": #9EA0C9,
+    "ph": #98C6BB,
+    "qm": #CE8D4A,
+    "rg": #F03C3C,
+    "sb": #DFDDD0,
+    "sc": #AFD085,
+    "sk": #EBC468,
+    "ss": #D78E87,
+    "su": #E186A3,
+    "sw": #B081B1,
+    "ti": #C2B698,
+    "vw": #C4C4BC,
+);
+
+@mixin characters() {
+    @each $character, $color in $characters {
+        @content($character, $color);
+    }
+}

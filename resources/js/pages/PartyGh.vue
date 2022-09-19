@@ -131,8 +131,10 @@
                                       :checked="sheet.unlocks[index]"
                                       @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
                         </td>
-                        <td class="w-full flex flex-wrap">
-                            <span class="whitespace-normal md:whitespace-nowrap">{{ unlock.goal }}</span>
+                        <td class="w-full flex items-center flex-wrap">
+                            <label :for="'unlock'+index" class="whitespace-normal md:whitespace-nowrap cursor-pointer">
+                                {{ unlock.goal }}
+                            </label>
                             <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
                                 <span class="material-icons mr-1">remove</span>
                                 <component v-bind:is="renderHtml(unlock.reward)"></component>
@@ -217,7 +219,7 @@ export default {
                 },
                 {
                     goal: this.$t('Gain The Drakes Command & The Drakes Treasure Party Achievements'),
-                    reward: this.$t('Add City Event 75 & Road Event 66')
+                    reward: this.$t('Add City Event 75 & Road Event 66') + '<br>' + this.$t('and gain The Drake Aided global achievement')
                 },
                 {
                     goal: this.$t('Donate +100 gold to the Sanctuary of the Great Oak'),

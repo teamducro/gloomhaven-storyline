@@ -136,8 +136,8 @@
                             more, all in one place!
                         </p>
                         <p class="text-gray-500 mb-4">
-                            You may even track your City and Road Event Decks, this is especially useful for remote
-                            play!
+                            All ability cards of characters are available within the character sheet, in addition you
+                            can even track your City and Road Event Decks. This is especially useful for remote play!
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl+'/#/party'"
@@ -186,12 +186,14 @@
                     <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2 transform rotate-180" aria-hidden="true">style</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
-                            Extensions
+                            Expansions
                         </h3>
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
-                            Forgotten circles and Jaws of the Lion can be tracked in Gloomhaven Storyline.
+                            Forgotten circles, Jaws of the Lion and Crimson Scales <span
+                            class="text-xs">(Beta)</span> can be tracked
+                            in Gloomhaven Storyline.
                         </p>
                         <p class="text-gray-500 mb-2">
                             Solo scenarios of all the unlockable characters are also included!
@@ -294,6 +296,14 @@
                         <p class="text-gray-800 px-6">
                             The tracker has support for Forgotten Circles
                         </p>
+
+                        <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
+                            <inline-svg src="icons/jotl" :classes="['w-6', 'h-6', 'mr-2']"/>
+                            Jaws of the Lion
+                        </div>
+                        <p class="text-gray-800 px-6">
+                            Jaws of the Lion is supported!
+                        </p>
                     </div>
                 </div>
 
@@ -313,11 +323,12 @@
                         </p>
 
                         <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
-                            <inline-svg src="icons/jotl" :classes="['w-6', 'h-6', 'mr-2']"/>
-                            Jaws of the Lion
+                            <inline-svg src="icons/cs" :classes="['w-6', 'h-6', 'mr-2']"/>
+                            Crimson Scales
+                            <span class="text-xs ml-2">(Beta)</span>
                         </div>
                         <p class="text-gray-800 px-6">
-                            Jaws of the Lion is supported!
+                            The unofficial fanmade expansion Crimson Scales is available in the tracker!
                         </p>
                     </div>
                 </div>
@@ -358,8 +369,8 @@
         <section class="container mx-auto text-center px-4 py-6 mb-12">
 
             <h1 class="w-full my-2 text-4xl lg:text-5xl lg:leading-tight font-bold leading-tight text-center text-white">
-                Enjoy
-                Gloomhaven</h1>
+                Enjoy Gloomhaven
+            </h1>
 
             <h3 class="my-4 text-3xl leading-tight">An organized campaign synchronized with your party!</h3>
 

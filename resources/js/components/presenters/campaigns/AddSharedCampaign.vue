@@ -39,6 +39,10 @@ export default {
         initCode: {
             type: String,
             default: ''
+        },
+        redirectToPage: {
+            type: String,
+            default: 'story'
         }
     },
     data() {
@@ -99,7 +103,7 @@ export default {
                 }, 5000);
 
                 if (isShared) {
-                    await this.$router.push('/story');
+                    await this.$router.push('/' + this.redirectToPage);
                 } else {
                     this.$scrollTo('#campaigns');
                 }

@@ -993,7 +993,7 @@
             "achievements_awarded": [
                 "PTDC"
             ],
-            "prompt": "dragons"
+            "prompt": "dragon"
         },
         {
             "id": 26,
@@ -1362,7 +1362,7 @@
                 "PTVT",
                 "PTDT"
             ],
-            "prompt": "dragons"
+            "prompt": "dragon"
         },
         {
             "id": 34,
@@ -3584,7 +3584,7 @@
             "name": "Plane of Wild Beasts",
             "solo": "SU",
             "pages": [
-                "gh/2/11"
+                "gh/2/12"
             ],
             "rewards": [
                 "“Phasing Idol” (Item 142)"

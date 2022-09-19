@@ -3,8 +3,19 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
     mode: 'jit',
-    purge: ['./resources/**/*.html', './resources/**/*.vue', './resources/**/*.js', './resources/**/*.svg'],
+    purge: ['./resources/**/*.{html,vue,js,svg}'],
     theme: {
+        screens: {
+            xs: '430px',
+            sm: '640px',
+            md: '768px',
+            md2: '896px',
+            lg: '1024px',
+            xl: '1280px',
+            '2xl': '1536px',
+            'sheet-break-lg': '872px',
+            lgh: {'raw': '(min-height: 600px)'}
+        },
         extend: {
             fontFamily: {default: ['Nyala', 'sans-serif'], title: ['Pirata One', 'Nyala', 'sans-serif']},
             inset: {
@@ -22,6 +33,7 @@ module.exports = {
                 30: '7.5rem',
                 32: '8rem',
                 36: '9rem',
+                56: '14rem',
                 '1/2': '50%',
                 '1/4': '25%',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',
@@ -37,10 +49,8 @@ module.exports = {
                 '76': '18.5rem',
                 'party': '1041px'
             },
-            screens: {
-                xs: '430px',
-                'sheet-break-lg': '872px',
-                lgh: {'raw': '(min-height: 600px)'}
+            minWidth: {
+                44: '11rem',
             },
             zIndex: {
                 1: '1',
@@ -68,6 +78,7 @@ module.exports = {
                 'dark-gray2': {
                     60: 'rgba(23, 24, 25, .60)',
                     75: 'rgba(23, 24, 25, .75)',
+                    100: 'rgba(23, 24, 25, 1)',
                 },
                 black2: {
                     10: 'rgba(0, 0, 0, .10)',
@@ -86,7 +97,7 @@ module.exports = {
                 green: {...colors.green, 50: 'rgba(100, 255, 100, .5)'},
                 yellow: {...colors.yellow, 50: 'rgba(236, 202, 75, .5)'},
                 gray: colors.coolGray,
-                characters: {
+                character: {
                     be: '#C5665E',
                     br: '#5E7EBD',
                     bs: '#D39382',
@@ -110,6 +121,20 @@ module.exports = {
                     sw: '#B081B1',
                     ti: '#C2B698',
                     vw: '#C4C4BC',
+                    hp: '#D7D961',
+                    st: '#363786',
+                    fk: '#E82E2E',
+                    ho: '#552358',
+                    bk: '#B99E30',
+                    ct: '#76C6C3',
+                    sp: '#A5CE39',
+                    lu: '#915BA3',
+                    cg: '#CF6D30',
+                    bm: '#B6A691',
+                    aa: '#FBAB19',
+                    rm: '#5B1610',
+                    qa: '#2C8BB9',
+                    mf: '#E35F25'
                 }
             },
             boxShadow: {
@@ -122,7 +147,10 @@ module.exports = {
             },
             rotate: {
                 '270': '270deg',
-            }
+            },
+            transitionProperty: {
+                'layout': 'transform, width, height, margin, padding, background-color',
+            },
         },
         colors: {
             transparent: 'transparent',

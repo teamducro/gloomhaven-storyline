@@ -5,7 +5,7 @@
                 <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="field">
                     <span class="mdc-text-field__ripple"></span>
                     <input class="mdc-text-field__input" :aria-labelledby="id"
-                           type="text" :name="id"
+                           type="text" :name="id" autocomplete="off"
                            v-model="query" @keyup="filter">
                     <span class="mdc-floating-label" :id="id">{{ label }}</span>
                     <span class="mdc-line-ripple"></span>

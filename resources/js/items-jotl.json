@@ -96,7 +96,7 @@
         "cost": 20,
         "slot": "One Hand",
         "source": "Reward from Scenario #2",
-        "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes",
+        "desc": "During your single-target melee Attack ability, attack any one enemy within 2 hexes",
         "spent": true
     },
     {

@@ -34,9 +34,11 @@
 </template>
 
 <script>
+import Character from "../../../models/Character";
+
 export default {
     props: {
-        character: Object,
+        character: Character,
         perks: Object,
         checks: Object
     },
@@ -51,7 +53,9 @@ export default {
             return collect(this.perks).flatten().filter().count();
         },
         minimalPerks() {
-            return this.character.retirements + this.character.level - 1 + Math.floor(collect(this.checks).filter().count() / 3);
+            return (this.character.retirements || 0)
+                + (this.character.level - 1)
+                + Math.floor(collect(this.checks).filter().count() / 3);
         }
     },
     methods: {

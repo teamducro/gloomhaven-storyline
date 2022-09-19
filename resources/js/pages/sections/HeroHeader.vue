@@ -5,9 +5,8 @@
                 <!--Left Col-->
                 <div class="flex flex-col w-full md:w-1/2 md:pr-2 justify-center items-start text-center md:text-left">
                     <p class="uppercase tracking-loose w-full">Find the right scenario to play</p>
-                    <h1 class="my-4 text-5xl font-bold leading-tight">Gloomhaven Storyline Tracker!</h1>
-                    <p class="leading-normal text-2xl mb-8">Keep track of your progress of completed and unlocked
-                        scenarios!</p>
+                    <h1 class="my-4 text-5xl font-bold leading-tight">Gloomhaven Storyline Tracker</h1>
+                    <p class="leading-normal text-2xl mb-8">The all in one campaign tracker</p>
 
                     <div
                         class="flex flex-col w-full lg:flex-row items-center md:items-start justify-center lg:justify-start">

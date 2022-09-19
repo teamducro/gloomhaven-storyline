@@ -132,10 +132,14 @@ export default {
         cy.url().should('include', '/tracker');
     },
 
-    assertTableCount(table, count) {
-        cy.get('#' + table + ' tbody tr').should(($list) => {
+    assertCount(selector, count) {
+        cy.get(selector).should(($list) => {
             expect($list).to.have.length(count);
         });
+    },
+
+    assertTableCount(table, count) {
+        this.assertCount('#' + table + ' tbody tr', count);
     },
 
     switchGame(game) {
@@ -148,6 +152,14 @@ export default {
     openCharacter(character = 'Cragheart') {
         cy.get('.items-to-add-dropdown').click();
         cy.get('li.add-character').contains(character).click();
+    },
+
+    openAbilities(character = 'Cragheart', create = true) {
+        if (create) {
+            this.openCharacter(character);
+        }
+
+        cy.get('#desktop-character-menu').contains('Abilities').click();
     },
 
     // Call "cy.scrollTo" twice to make sure scrolling is performed as expected.

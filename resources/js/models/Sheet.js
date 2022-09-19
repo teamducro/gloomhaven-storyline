@@ -1,10 +1,8 @@
 import Storable from './Storable'
 import Character from "./Character";
-import GameData from "../services/GameData";
 import Helpers from "../services/Helpers";
 import CharacterRepository from "../repositories/CharacterRepository";
-
-const md5 = require('js-md5');
+import Versionable from "./Versionable";
 
 class Sheet {
 
@@ -13,6 +11,8 @@ class Sheet {
     }
 
     constructor(data = {}) {
+        this.version = data.version;
+        this.hash = data.hash;
         this.reputation = data.reputation || 0;
         this.donations = data.donations || 0;
         this.prosperityIndex = data.prosperityIndex || 1;
@@ -30,6 +30,8 @@ class Sheet {
 
         this.fieldsToStore = {
             reputation: 'reputation',
+            version: 'version',
+            hash: 'hash',
             donations: 'donations',
             prosperityIndex: 'prosperityIndex',
             itemDesigns: {'itemDesigns': {}},
@@ -113,16 +115,39 @@ class Sheet {
         this.city = this.removeInvalid(this.city, 22);
     }
 
+    fillBlanksCs() {
+        // for (let i = 26; i <= 36; i++) {
+        //     this.itemDesigns[i] = this.itemDesigns[i] || false;
+        // }
+
+        // if (!Object.keys(this.city).length) {
+        //     for (let i = 1; i <= 22; i++) {
+        //         this.city[i] = true;
+        //     }
+        // }
+
+        // this.itemDesigns = this.removeInvalid(this.itemDesigns, 36);
+        // this.city = this.removeInvalid(this.city, 22);
+    }
+
     fillRelations() {
         for (const uuid in this.characters) {
             if (!(this.characters[uuid] instanceof Character)) {
                 this.characters[uuid] = Character.make(uuid, this.game);
+                // Character was removed, remove it from sheet
+                if (!this.characters[uuid].id) {
+                    delete this.characters[uuid];
+                }
             }
         }
 
         for (const uuid in this.archivedCharacters) {
             if (!(this.archivedCharacters[uuid] instanceof Character)) {
                 this.archivedCharacters[uuid] = Character.make(uuid, this.game);
+                // Character was removed, remove it from sheet
+                if (!this.archivedCharacters[uuid].id) {
+                    delete this.archivedCharacters[uuid];
+                }
             }
         }
     }
@@ -154,10 +179,6 @@ class Sheet {
         return collect(list).filter((value, key) => key > 0 && key <= maxId).all();
     }
 
-    getHash() {
-        return md5(JSON.stringify(this));
-    }
-
     read() {
         this.parentRead();
         this.migrateCharacterUnlocks();
@@ -166,6 +187,9 @@ class Sheet {
         switch (this.game) {
             case 'jotl':
                 this.fillBlanksJotl();
+                break;
+            case 'cd':
+                this.fillBlanksCs();
                 break;
             default:
                 this.fillBlanksGH();
@@ -208,6 +232,8 @@ class Sheet {
                 return ["DR", "BR", "CH", "SW", "TI", "SC", "MT"];
             case 'jotl':
                 return ["RG", "DM", "HT", "VW"];
+            case 'cs':
+                return [];
             default:
                 return ["BR", "CH", "SW", "TI", "SC", "MT"];
         }
@@ -239,7 +265,9 @@ class Sheet {
 Object.assign(Sheet.prototype, {
     parentRead: Storable.read,
     parentValuesToStore: Storable.valuesToStore,
-    store: Storable.store,
+    parentStore: Storable.store,
 });
+
+Object.assign(Sheet.prototype, Versionable);
 
 export default Sheet;

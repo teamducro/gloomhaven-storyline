@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-4">
+    <div v-if="quests" class="mb-4">
 
         <div class="mb-2 flex items-center">
             <h2>{{ $t('Personal Quest') }}</h2>
@@ -82,19 +82,18 @@ import Helpers from "../../../services/Helpers";
 export default {
     props: {
         quest: Object,
-        game: String,
         sheet: Object
     },
     data() {
         return {
-            quests: collect(),
+            quests: null,
             goalMet: false,
             personalQuestRepository: new PersonalQuestRepository,
             personalQuestValidator: new PersonalQuestValidator
         }
     },
     mounted() {
-        this.quests = this.personalQuestRepository.fetch(this.game).keyBy('id').items;
+        this.quests = this.personalQuestRepository.fetch(this.sheet.game).keyBy('id').items;
         if (this.quest.id) {
             this.validate();
         }

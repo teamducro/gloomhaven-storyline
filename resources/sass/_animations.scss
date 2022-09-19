@@ -69,3 +69,27 @@
         transform: rotate(540deg);
     }
 }
+
+@include characters() using($character, $color) {
+    .animate-color-#{$character} {
+        animation: color-#{$character} 3s linear infinite;
+    }
+
+    @keyframes color-#{$character} {
+        0% {
+            color: currentColor;
+        }
+        45% {
+            color: currentColor;
+        }
+        50% {
+            @apply text-character-#{$character}
+        }
+        55% {
+            color: currentColor;
+        }
+        100% {
+            color: currentColor;
+        }
+    }
+}

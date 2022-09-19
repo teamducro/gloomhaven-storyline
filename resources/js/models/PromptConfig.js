@@ -1,7 +1,7 @@
 class PromptConfig {
     constructor(scenario = null, config = {}) {
         this.name = scenario ? scenario.prompt : '';
-        this.show = false;
+        this.show = true;
         this.title = scenario ? `prompts.${scenario.prompt}.title` : '';
         this.text = scenario ? `prompts.${scenario.prompt}.text` : '';
         this.scenario = scenario;

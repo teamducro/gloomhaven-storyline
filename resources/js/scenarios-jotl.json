@@ -7,8 +7,8 @@
             "name": "Roadside Ambush",
             "coordinates": {
                 "name": "B-1",
-                "x": 0,
-                "y": 0
+                "x": 0.6333024405,
+                "y": 19.67741935
             },
             "chapter_id": 1,
             "links_to": [
@@ -21,8 +21,8 @@
             "name": "A Hole in the Wall",
             "coordinates": {
                 "name": "B-1",
-                "x": 0,
-                "y": 0
+                "x": 5.15909793,
+                "y": 27.23790323
             },
             "chapter_id": 1,
             "linked_from": [
@@ -45,8 +45,8 @@
             "name": "The Black Ship",
             "coordinates": {
                 "name": "D-5",
-                "x": 0,
-                "y": 0
+                "x": 43.21902997,
+                "y": 48.75
             },
             "chapter_id": 1,
             "linked_from": [
@@ -68,8 +68,8 @@
             "name": "A Ritual in Stone",
             "coordinates": {
                 "name": "C-2",
-                "x": 0,
-                "y": 0
+                "x": 11.22953352,
+                "y": 33.00403226
             },
             "chapter_id": 1,
             "linked_from": [
@@ -91,8 +91,8 @@
             "name": "A Deeper Understanding",
             "coordinates": {
                 "name": "C-2",
-                "x": 0,
-                "y": 0
+                "x": 14.38059932,
+                "y": 38.46774194
             },
             "chapter_id": 1,
             "linked_from": [
@@ -114,8 +114,8 @@
             "name": "Corrupted Research",
             "coordinates": {
                 "name": "B-4",
-                "x": 0,
-                "y": 0
+                "x": 32.43744208,
+                "y": 24.69758065
             },
             "chapter_id": 2,
             "linked_from": [
@@ -135,8 +135,8 @@
             "name": "Sunken Tumor",
             "coordinates": {
                 "name": "D-2",
-                "x": 0,
-                "y": 0
+                "x": 16.45041705,
+                "y": 54.29435484
             },
             "chapter_id": 2,
             "blocks_on": [
@@ -165,8 +165,8 @@
             "name": "Hidden Tumor",
             "coordinates": {
                 "name": "C-4",
-                "x": 0,
-                "y": 0
+                "x": 37.79734322,
+                "y": 41.89516129
             },
             "chapter_id": 2,
             "blocks_on": [
@@ -193,13 +193,13 @@
             "coordinates": {
                 "7": {
                     "name": "C-4",
-                    "x": 0,
-                    "y": 0
+                    "x": 37.85912882,
+                    "y": 42.03629032
                 },
                 "8": {
                     "name": "D-2",
-                    "x": 0,
-                    "y": 0
+                    "x": 16.46586345,
+                    "y": 53.68951613
                 }
             },
             "chapter_id": 2,
@@ -224,8 +224,8 @@
             "name": "The Gauntlet",
             "coordinates": {
                 "name": "E-2",
-                "x": 0,
-                "y": 0
+                "x": 15.678097,
+                "y": 69.75806452
             },
             "chapter_id": 2,
             "linked_from": [
@@ -248,8 +248,8 @@
             "name": "Defiled Sewers",
             "coordinates": {
                 "name": "D-2",
-                "x": 0,
-                "y": 0
+                "x": 16.92925548,
+                "y": 45.34274194
             },
             "blocks_on": [
                 {
@@ -276,8 +276,8 @@
             "name": "Beguiling Sewers",
             "coordinates": {
                 "name": "B-5",
-                "x": 0,
-                "y": 0
+                "x": 42.72474513,
+                "y": 23.26612903
             },
             "blocks_on": [
                 {
@@ -304,8 +304,8 @@
             "name": "Vile Harvest",
             "coordinates": {
                 "name": "D-3",
-                "x": 0,
-                "y": 0
+                "x": 26.64504171,
+                "y": 47.21774194
             },
             "chapter_id": 2,
             "linked_from": [
@@ -327,8 +327,8 @@
             "name": "Toxic Harvest",
             "coordinates": {
                 "name": "B-4",
-                "x": 0,
-                "y": 0
+                "x": 37.62743281,
+                "y": 31.25
             },
             "chapter_id": 2,
             "linked_from": [
@@ -350,8 +350,8 @@
             "name": "Tainted Blood",
             "coordinates": {
                 "name": "C-4",
-                "x": 0,
-                "y": 0
+                "x": 31.61878282,
+                "y": 35.60483871
             },
             "chapter_id": 2,
             "linked_from": [
@@ -372,8 +372,8 @@
             "name": "Mixed Results",
             "coordinates": {
                 "name": "B-4",
-                "x": 0,
-                "y": 0
+                "x": 30.69199876,
+                "y": 19.25403226
             },
             "chapter_id": 2,
             "linked_from": [
@@ -393,8 +393,8 @@
             "name": "Red Twilight",
             "coordinates": {
                 "name": "C-6",
-                "x": 0,
-                "y": 0
+                "x": 59.66944702,
+                "y": 37.35887097
             },
             "chapter_id": 2,
             "linked_from": [
@@ -414,8 +414,8 @@
             "name": "The Heist",
             "coordinates": {
                 "name": "A-5",
-                "x": 0,
-                "y": 0
+                "x": 44.43929564,
+                "y": 15.26209677
             },
             "chapter_id": 2,
             "linked_from": [
@@ -437,8 +437,8 @@
             "name": "Den of Thieves",
             "coordinates": {
                 "name": "A-5",
-                "x": 0,
-                "y": 0
+                "x": 9.592215014,
+                "y": 49.55645161
             },
             "chapter_id": 2,
             "linked_from": [
@@ -454,8 +454,8 @@
             "name": "Misplaced Goods",
             "coordinates": {
                 "name": "C-5",
-                "x": 0,
-                "y": 0
+                "x": 47.96107507,
+                "y": 39.33467742
             },
             "is_side": true,
             "chapter_id": 3,
@@ -472,8 +472,8 @@
             "name": "Agents of Chaos",
             "coordinates": {
                 "name": "C-9",
-                "x": 0,
-                "y": 0
+                "x": 80.93914118,
+                "y": 39.67741935
             },
             "is_side": true,
             "chapter_id": 3,
@@ -490,8 +490,8 @@
             "name": "Unfriendly Message",
             "coordinates": {
                 "name": "D-1",
-                "x": 0,
-                "y": 0
+                "x": 0.8804448563,
+                "y": 44.23387097
             },
             "is_side": true,
             "chapter_id": 4,
@@ -505,8 +505,8 @@
             "name": "Best of the Best",
             "coordinates": {
                 "name": "B-5",
-                "x": 0,
-                "y": 0
+                "x": 45.79857893,
+                "y": 30.12096774
             },
             "is_side": true,
             "chapter_id": 4,
@@ -520,8 +520,8 @@
             "name": "Warding the Void",
             "coordinates": {
                 "name": "A-3",
-                "x": 0,
-                "y": 0
+                "x": 24.46709917,
+                "y": 8.225806452
             },
             "is_side": true,
             "chapter_id": 4,
@@ -535,8 +535,8 @@
             "name": "The Greatest Job in the World",
             "coordinates": {
                 "name": "C-7",
-                "x": 0,
-                "y": 0
+                "x": 66.09514983,
+                "y": 35.08064516
             },
             "is_side": true,
             "chapter_id": 4,

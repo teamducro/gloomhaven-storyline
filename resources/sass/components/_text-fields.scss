@@ -1,3 +1,7 @@
+label[for]:hover {
+    @apply cursor-pointer;
+}
+
 .mdc-text-field:hover::before {
     opacity: 0.04;
 }

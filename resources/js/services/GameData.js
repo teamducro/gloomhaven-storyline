@@ -1,18 +1,35 @@
 import achievementsJson from '../achievements.json'
 import scenariosJson from '../scenarios.json'
 import scenariosJotlJson from '../scenarios-jotl.json'
+import scenariosCsJson from '../scenarios-cs.json'
 import questsJson from '../quests.json'
-import questsFCJson from '../quests-fc.json'
+import questsFcJson from '../quests-fc.json'
 import questsJotlJson from '../quests-jotl.json'
+import questsCsJson from '../quests-cs.json'
 import personalQuestsJson from '../personal-quests.json'
+import personalQuestsCsJson from '../personal-quests-cs.json'
 import itemsJson from '../items.json'
 import itemsJotlJson from '../items-jotl.json'
+import itemsCsJson from '../items-cs.json'
+import abilitiesJson from '../abilities.json'
+import abilitiesFcJson from '../abilities-fc.json'
+import abilitiesJotlJson from '../abilities-jotl.json'
+import abilitiesCsJson from '../abilities-cs.json'
 import charactersJson from '../characters.json'
 
 export default class GameData {
+    games() {
+        return ["gh", "fc", "jotl", "cs"]
+    }
+
+    beta() {
+        return ["cs"]
+    }
+
     achievements(game) {
         switch (game) {
             case 'jotl':
+            case 'cs':
                 return []
             default:
                 return achievementsJson
@@ -49,6 +66,8 @@ export default class GameData {
         switch (game) {
             case 'jotl':
                 return scenariosJotlJson
+            case 'cs':
+                return scenariosCsJson
             default:
                 return scenariosJson
         }
@@ -57,9 +76,11 @@ export default class GameData {
     quests(game) {
         switch (game) {
             case 'fc':
-                return questsFCJson
+                return questsFcJson
             case 'jotl':
                 return questsJotlJson
+            case 'cs':
+                return questsCsJson
             default:
                 return questsJson
         }
@@ -69,13 +90,32 @@ export default class GameData {
         switch (game) {
             case 'jotl':
                 return itemsJotlJson
+            case 'cs':
+                return itemsCsJson
             default:
                 return itemsJson
         }
     }
 
+    abilities(game) {
+        switch (game) {
+            case 'jotl':
+                return abilitiesJotlJson
+            case 'fc':
+                return abilitiesFcJson
+            case 'cs':
+                return abilitiesCsJson
+            default:
+                return abilitiesJson
+        }
+    }
+
     personalQuests(game) {
         switch (game) {
+            case 'jotl':
+                return []
+            case 'cs':
+                return personalQuestsCsJson
             default:
                 return personalQuestsJson
         }
@@ -89,18 +129,41 @@ export default class GameData {
             map = game;
         }
 
+        // Games that do not support a map
+        if (['cs'].includes(map)) {
+            return null;
+        }
+
         return {
             lowres: `/img/maps/${map}/lowres.jpg`,
             highres: `/img/maps/${map}/highres.jpg`
         }
     }
 
-    scenarioStickerScale(game = 'gh') {
+    mapSettings(game = 'gh') {
         if (game === 'gh' || game === 'fc') {
-            return 0.79;
+            return {
+                stickerScale: 0.79,
+                yOffset: 184,
+                width: 2606,
+                height: 2155
+            };
         }
 
-        return 1;
+        return {
+            stickerScale: 1,
+            yOffset: 0,
+            width: 2486,
+            height: 1905
+        };
+    }
+
+    mapYOffset(game = 'gh') {
+        if (game === 'gh' || game === 'fc') {
+            return 184;
+        }
+
+        return 0;
     }
 
     storylineViewBox(game = 'gh') {

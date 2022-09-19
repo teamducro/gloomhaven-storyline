@@ -28,6 +28,7 @@ class Scenario {
         this.hasChoices = typeof data.choices !== 'undefined';
         this._state = ScenarioState.hidden;
         this.notes = "";
+        this.faq = [];
         this.links_to = collect(data.links_to);
         this.linked_from = collect(data.linked_from);
         this.coupled = data.coupled;
@@ -184,7 +185,7 @@ class Scenario {
         // Multiple scenarios on the same sticker
         if (this.coupled && this.isBlocked()) {
             if (this.scenarioRepository.find(this.coupled).isComplete()) {
-                sticker = '/img/scenarios/' + this.game + '/' + this.coupled + '_c' + '.png'
+                sticker = '/img/scenarios/' + this.game + '/' + this.coupled + (this.isComplete() ? '_c' : '') + '.png'
             }
         }
 
@@ -192,13 +193,8 @@ class Scenario {
         if (this.hasMultipleLocations()) {
             const from = this.scenarioRepository.prevScenarios(this)?.first()?.id;
             if (from) {
-                sticker = '/img/scenarios/' + this.game + '/' + this.id + '_' + from + '_c' + '.png'
+                sticker = '/img/scenarios/' + this.game + '/' + this.id + '_' + from + (this.isComplete() ? '_c' : '') + '.png'
             }
-        }
-
-        // Remove when completed scenario stickers are added for JotL
-        if (this.game === 'jotl') {
-            sticker = sticker.replace('_c', '');
         }
 
         return sticker;
