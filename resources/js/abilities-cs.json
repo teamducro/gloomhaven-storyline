@@ -240,6 +240,14 @@
         "initiative": "63"
     },
     {
+        "id": "cs-686",
+        "game": "cs",
+        "name": "razorweb puppetry",
+        "character_id": "AA",
+        "level": "m",
+        "initiative": "39"
+    },
+    {
         "id": "cs-029",
         "game": "cs",
         "name": "acquire funding",
@@ -480,6 +488,14 @@
         "initiative": "30"
     },
     {
+        "id": "cs-676",
+        "game": "cs",
+        "name": "creative sparks",
+        "character_id": "BK",
+        "level": "m",
+        "initiative": "40"
+    },
+    {
         "id": "cs-023",
         "game": "cs",
         "name": "airborne skyrocket",
@@ -702,6 +718,14 @@
         "character_id": "BM",
         "level": 1,
         "initiative": "85"
+    },
+    {
+        "id": "cs-675",
+        "game": "cs",
+        "name": "pummeling chain",
+        "character_id": "BM",
+        "level": "m",
+        "initiative": "17"
     },
     {
         "id": "cs-072",
@@ -936,6 +960,14 @@
         "initiative": "82"
     },
     {
+        "id": "cs-677",
+        "game": "cs",
+        "name": "rope pit",
+        "character_id": "CG",
+        "level": "m",
+        "initiative": "32"
+    },
+    {
         "id": "cs-104",
         "game": "cs",
         "name": "agile predator",
@@ -1166,6 +1198,14 @@
         "character_id": "CT",
         "level": 4,
         "initiative": "28"
+    },
+    {
+        "id": "cs-678",
+        "game": "cs",
+        "name": "call of the wild",
+        "character_id": "CT",
+        "level": "m",
+        "initiative": "10"
     },
     {
         "id": "cs-142",
@@ -1400,6 +1440,14 @@
         "initiative": "31"
     },
     {
+        "id": "cs-679",
+        "game": "cs",
+        "name": "improvised methods",
+        "character_id": "FK",
+        "level": "m",
+        "initiative": "16"
+    },
+    {
         "id": "cs-189",
         "game": "cs",
         "name": "borrowed vitality",
@@ -1630,6 +1678,14 @@
         "character_id": "HO",
         "level": 1,
         "initiative": "47"
+    },
+    {
+        "id": "cs-681",
+        "game": "cs",
+        "name": "the void consumes",
+        "character_id": "HO",
+        "level": "m",
+        "initiative": "35"
     },
     {
         "id": "cs-176",
@@ -1936,6 +1992,14 @@
         "initiative": "17"
     },
     {
+        "id": "cs-680",
+        "game": "cs",
+        "name": "uplifting ascension",
+        "character_id": "HP",
+        "level": "m",
+        "initiative": "80"
+    },
+    {
         "id": "cs-229",
         "game": "cs",
         "name": "blackened rage",
@@ -2176,6 +2240,14 @@
         "initiative": "40"
     },
     {
+        "id": "cs-682",
+        "game": "cs",
+        "name": "drawn into the light",
+        "character_id": "LU",
+        "level": "m",
+        "initiative": "47"
+    },
+    {
         "id": "cs-257",
         "game": "cs",
         "name": "airborne spores",
@@ -2408,6 +2480,14 @@
         "initiative": "71"
     },
     {
+        "id": "cs-683",
+        "game": "cs",
+        "name": "giant slayer",
+        "character_id": "MF",
+        "level": "m",
+        "initiative": "22"
+    },
+    {
         "id": "cs-QA-029",
         "game": "cs",
         "name": "annihilating contraption",
@@ -2630,6 +2710,14 @@
         "character_id": "QA",
         "level": 3,
         "initiative": "73"
+    },
+    {
+        "id": "cs-687",
+        "game": "cs",
+        "name": "adaptive engineering",
+        "character_id": "QA",
+        "level": "m",
+        "initiative": "75"
     },
     {
         "id": "cs-RM-031",
@@ -2872,6 +2960,14 @@
         "initiative": "32"
     },
     {
+        "id": "cs-688",
+        "game": "cs",
+        "name": "blood rite",
+        "character_id": "RM",
+        "level": "m",
+        "initiative": "67"
+    },
+    {
         "id": "cs-272",
         "game": "cs",
         "name": "burning pit",
@@ -3104,6 +3200,14 @@
         "initiative": "77"
     },
     {
+        "id": "cs-684",
+        "game": "cs",
+        "name": "terror of the deep",
+        "character_id": "SP",
+        "level": "m",
+        "initiative": "33"
+    },
+    {
         "id": "cs-322",
         "game": "cs",
         "name": "absolute magnitude",
@@ -3334,5 +3438,13 @@
         "character_id": "ST",
         "level": 4,
         "initiative": "75"
+    },
+    {
+        "id": "cs-685",
+        "game": "cs",
+        "name": "deflection",
+        "character_id": "ST",
+        "level": "m",
+        "initiative": "46"
     }
 ]
