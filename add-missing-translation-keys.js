@@ -24,10 +24,14 @@ otherLanguages.forEach((dir) => {
         const filePath = './resources/js/lang/' + dir + '/' + file
         let lang = (await import(filePath)).default
 
-        // Find missing keys
-        const diff = Object.keys(en).diff(Object.keys(lang))
+        if (lang === undefined) {
+            lang = {}
+        }
 
         let outputObject = {};
+
+        // Find missing keys
+        const diff = Object.keys(en).diff(Object.keys(lang))
 
         // Replace missing keys from English and preserve order
         Object.keys(en).forEach(key => {

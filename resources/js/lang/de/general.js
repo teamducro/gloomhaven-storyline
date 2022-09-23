@@ -232,6 +232,10 @@ export default {
             "text": "Kampagnen-Daten können nur dann übertragen werden wenn Du eine teilbare Kampagne erworben hast."
         }
     },
+    "games-enabled": {
+        "title": "Aktivierte Spiele",
+        "text": "Um Spiele und ihre Charaktere zu verstecken, aktivieren Sie nur diejenigen, die Sie besitzen."
+    },
     "Please consider purchasing a license": "Bitte zieh den Kauf einer Lizenz in Betracht",
     "Danger zone!": "Gefährlicher Bereich!",
     "Alternatively you may": "Alternativ kannst du",
@@ -328,6 +332,7 @@ export default {
     "Move": "Bewegung",
     "Jump": "Springen",
     "Flying": "Fliegend",
+    "Retaliate": "Regeln",
     "Recover": "Wiedererhalten",
     "Refresh": "Erneuern",
     "BANE": "BANE",

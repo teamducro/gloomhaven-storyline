@@ -342,6 +342,7 @@ export default {
     "Move": "Move",
     "Jump": "Jump",
     "Flying": "Flying",
+    "Retaliate": "Retaliate",
 
     "Recover": "Recover",
     "Refresh": "Refresh",

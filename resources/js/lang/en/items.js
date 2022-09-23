@@ -82,12 +82,12 @@ export default {
     "gh-16": {
         "name": "Cloak of Pockets",
         "source": "Prosperity 2",
-        "desc": "You can carry two additional small items."
+        "desc": "You can carry two additional {SMALL-ITEM} items."
     },
     "gh-17": {
         "name": "Empowering Talisman",
         "source": "Prosperity 2",
-        "desc": "During your turn, {REFRESH} one of your consumed small items."
+        "desc": "During your turn, {REFRESH} one of your consumed {SMALL-ITEM} items."
     },
     "gh-18": {
         "name": "Battle-Axe",
@@ -230,13 +230,13 @@ export default {
     "gh-45": {
         "name": "Pendant of Dark Pacts",
         "source": "Prosperity 6",
-        "desc": "During your turn, {REFRESH} two of your consumed small items. Gain {CURSE}.",
+        "desc": "During your turn, {REFRESH} two of your consumed {SMALL-ITEM} items. Gain {CURSE}.",
         "faq": "The perk that ignores item effects does not prevent you from being cursed."
     },
     "gh-46": {
         "name": "Spiked Shield",
         "source": "Prosperity 6",
-        "desc": "When damaged by an attack, gain {SHIELD} 1 and Retaliate 2 for the attack."
+        "desc": "When damaged by an attack, gain {SHIELD} 1 and {RETALIATE} 2 for the attack."
     },
     "gh-47": {
         "name": "Reaping Scythe",
@@ -296,7 +296,7 @@ export default {
     "gh-58": {
         "name": "Cloak of Phasing",
         "source": "Prosperity 8",
-        "desc": "Gain {FLYING}. While occupying an obstacle hex, you are considered Invisible and cannot attack"
+        "desc": "Gain {FLYING}. While occupying an obstacle hex, you are considered {INVISIBLE} and cannot attack"
     },
     "gh-59": {
         "name": "Telescopic Lens",
@@ -376,7 +376,7 @@ export default {
     "gh-74": {
         "name": "Swordedge Armor",
         "source": "Random Item",
-        "desc": "On the next three sources of damage from attacks targeting you, gain {SHIELD} 1, {Retaliate} 1. Add 4 {-1} to your attack modifier deck."
+        "desc": "On the next three sources of damage from attacks targeting you, gain {SHIELD} 1, {RETALIATE} 1. Add 4 {-1} to your attack modifier deck."
     },
     "gh-75": {
         "name": "Circlet of Elements",
@@ -511,7 +511,7 @@ export default {
     "gh-101": {
         "name": "Second Skin",
         "source": "{SCENARIO 06} (Treasure #50)",
-        "desc": "Remove two {MODIFIER_MINUS_ONE} from your attack modifier deck."
+        "desc": "Remove two {-1} from your attack modifier deck."
     },
     "gh-102": {
         "name": "Sacrificial Robes",
@@ -558,7 +558,7 @@ export default {
     "gh-110": {
         "name": "Helm of the Mountain",
         "source": "{SCENARIO 82} (Treasure #62)",
-        "desc": "When attacked, if {EARTH} is Strong, Immobilize the attacker."
+        "desc": "When attacked, if {EARTH} is Strong, {IMMOBILIZE} the attacker."
     },
     "gh-111": {
         "name": "Wave Crest",
@@ -650,7 +650,7 @@ export default {
     "gh-128": {
         "name": "Black Censer",
         "source": "Reward From {SCENARIO 90}",
-        "desc": "During your turn, Muddle all enemies with {RANGE} 2."
+        "desc": "During your turn, {MUDDLE} all enemies with {RANGE} 2."
     },
     "gh-129": {
         "name": "Black Card",

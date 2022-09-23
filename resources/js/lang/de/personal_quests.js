@@ -166,5 +166,173 @@ export default {
             "Töte drei Pirscher.",
             "Töte drei Speidraken."
         ]
+    },
+    "cs-330": {
+        "name": "Protect and Serve",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-331": {
+        "name": "Weapons Specialist",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-332": {
+        "name": "Experimentation",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-333": {
+        "name": "Thrill Seeker",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-334": {
+        "name": "Trap Setter",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-335": {
+        "name": "Bandit Banisher",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-336": {
+        "name": "Creatures in the light",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-337": {
+        "name": "Experienced leader",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-338": {
+        "name": "Adrenaline Spike",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-339": {
+        "name": "Mutual Support",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-340": {
+        "name": "Thy be Blessed",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-341": {
+        "name": "Spiritual Cains",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-342": {
+        "name": "The Path of Agony",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-343": {
+        "name": "The Oying of light",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-344": {
+        "name": "Natural Selection",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-345": {
+        "name": "Predator and Prey",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-346": {
+        "name": "An Adder Divides",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-347": {
+        "name": "Field Research",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-348": {
+        "name": "Conjurers Hand",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-349": {
+        "name": "No Rest for the Wicked",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-350": {
+        "name": "Health First",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-351": {
+        "name": "Limitless Searching",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-aa-001": {
+        "name": "At All Costs",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-aa-002": {
+        "name": "The Weight of failure",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-qa-001": {
+        "name": "Ingenious Inventor",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-qa-002": {
+        "name": "Scrap Diver",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-rm-001": {
+        "name": "Brutal Enforcer",
+        "progress": [
+            "Goal met"
+        ]
+    },
+    "cs-rm-002": {
+        "name": "Apex Predator",
+        "progress": [
+            "Goal met"
+        ]
     }
 }
