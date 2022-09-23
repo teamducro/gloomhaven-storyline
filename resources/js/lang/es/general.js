@@ -232,6 +232,10 @@ export default {
             "text": "Los datos de la campaña solo se pueden transferir si compró una campaña compartida."
         }
     },
+    "games-enabled": {
+        "title": "Juegos habilitados",
+        "text": "Para ocultar juegos y sus personajes, habilite solo los que posee."
+    },
     "Please consider purchasing a license": "Por favor considere comprar una licencia ",
     "Danger zone!": "Zona Peligrosa!",
     "Alternatively you may": "Alternativamente, puede",
@@ -328,6 +332,7 @@ export default {
     "Move": "Movimiento",
     "Jump": "Salto",
     "Flying": "Vuelo",
+    "Retaliate": "Tomar represalias",
     "Recover": "Recupera",
     "Refresh": "Repón",
     "BANE": "BANE",
