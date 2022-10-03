@@ -26,6 +26,19 @@
                 :prosperity.sync="prosperity"
                 @change="store"/>
 
+            <div class="w-full mt-8">
+                <h2>{{ $t('Prosperity Items') }}</h2>
+                <ul class="flex flex-row flex-wrap -mx-2">
+                    <li v-for="(items, index) in prosperityItems" class="flex items-center">
+                        <checkbox group="items"
+                                  :disabled="true"
+                                  :checked="prosperity > index"
+                                  @change="store"></checkbox>
+                        <span class="w-16 font-title">{{ items }}</span>
+                    </li>
+                </ul>
+            </div>
+
             <router-link to="/items">
                 <button class="mdc-button origin-left transform scale-90 mdc-button--raised pr-1">
                     <i class="material-icons mdc-button__icon transform rotate-180">style</i>
