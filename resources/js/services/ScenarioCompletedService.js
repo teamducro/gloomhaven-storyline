@@ -69,7 +69,7 @@ class ScenarioCompletedService {
     }
 
     findScenariosWithChosenScenario(id) {
-        return this.scenarioRepository.get().where('_choice', id);
+        return this.scenarioRepository.whereKeyValue('_choice', id);
     }
 
     get scenarioRepository() {

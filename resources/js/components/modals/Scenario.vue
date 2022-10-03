@@ -59,7 +59,7 @@
 
                     <template v-if="scenario.isVisible()">
 
-                        <div v-if="scenario.requirements">
+                        <div v-if="scenario.quirements || scenario.solo">
                             <div class="flex flex-wrap" style="margin-left: -2px;">
                                 <div class="w-full flex items-center">
                                     <i v-if="scenario.isRequired() || scenario.isBlocked()"
@@ -72,7 +72,7 @@
                                     <requirement :conditions="scenario.required_by"
                                                  v-if="scenario.required_by.isNotEmpty()"
                                                  :scenarioState="scenario.state"></requirement>
-                                    <span v-else>{{ scenario.requirements }}</span>
+                                    <component v-else v-bind:is="renderHtml(scenario.requirements)"></component>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                             {{ $t('No treasures available') }}.
                         </p>
 
-                        <template if="achievements" v-for="(x, is_global) in achievements">
+                        <template id="achievements" v-for="(x, is_global) in achievements">
                             <template v-for="(y, is_awarded) in x">
                                 <div class="my-2 flex flex-col items-start"
                                      v-if="!y.isEmpty()">
@@ -447,6 +447,10 @@ export default {
                 });
             }
 
+            if (this.scenario.solo) {
+                this.scenario.requirements = `<div class="flex items-center"><character-icon class="inline-block w-5 mr-2" :character="'${this.scenario.solo}'" :show-name="true"/> level 5</div>`
+            }
+
             this.rerenderStateSelection();
 
             await this.$nextTick();
@@ -505,6 +509,11 @@ export default {
                 }
                 waitForScenarios();
             });
+        },
+        renderHtml(html) {
+            return {
+                template: `${html}`
+            };
         }
     }
 }

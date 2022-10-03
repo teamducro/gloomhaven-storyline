@@ -241,5 +241,38 @@ export default {
     },
     "gh-GST": {
         "name": "Gekappte Verbindungen"
+    },
+    "cs-PCSOD": {
+        "name": "Ooze Destroyed",
+    },
+    "cs-PCSFL": {
+        "name": "Fallen Lava",
+    },
+    "cs-PCSFM": {
+        "name": "Follow the Money",
+    },
+    "cs-PCSFW": {
+        "name": "Frozen Warrior",
+    },
+    "cs-PCSOA": {
+        "name": "Oak Alliance",
+    },
+    "cs-PCSIA": {
+        "name": "Inox Alliance",
+    },
+    "cs-PCSGB": {
+        "name": "Guttermaw's Bounty",
+    },
+    "cs-PCSFR": {
+        "name": "Feirgrin's Request",
+    },
+    "cs-PCSPL": {
+        "name": "A Potion Lost",
+    },
+    "cs-PCSTM": {
+        "name": "Take the Money",
+    },
+    "cs-PCSAM": {
+        "name": "Accomplished Mercenaries",
     }
 }

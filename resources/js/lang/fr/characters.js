@@ -268,7 +268,7 @@ export default {
         "perks": [
             "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {WOUND}",
-            "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {POISEN}",
+            "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {POISON}",
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {WIND}",
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {EARTH}",
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {LIGHT}",

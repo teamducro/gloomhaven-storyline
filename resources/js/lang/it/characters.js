@@ -268,7 +268,7 @@ export default {
         "perks": [
             "Replace one {-2_WHITE} card with one {+0_WHITE} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} {WOUND} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {POISEN} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card",
             "Replace one {+0_WHITE} card with one {+1_WHITE} {WIND} card",
             "Replace one {+0_WHITE} card with one {+1_WHITE} {EARTH} card",
             "Replace one {+0_WHITE} card with one {+1_WHITE} {LIGHT} card",

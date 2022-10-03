@@ -251,14 +251,7 @@ export default class ScenarioRepository {
     }
 
     find(id) {
-        const scenario = app.scenarios.firstWhere('id', parseInt(id));
-
-        if (!scenario) {
-            let message = 'Something went wrong, please refresh and try again.';
-            app.$bus.$emit('toast', message, false);
-        }
-
-        return scenario;
+        return this.get().firstWhere('id', parseInt(id));
     }
 
     findMany(list) {
@@ -268,17 +261,23 @@ export default class ScenarioRepository {
     }
 
     findSolo(characterId) {
-        return this.where((scenario) => scenario.solo === characterId).first();
+        return this.whereKeyValue("solo", characterId).first();
     }
 
     where(filter) {
-        return this.get()
-            ? this.get().filter(filter)
-            : collect();
+        return this.get().filter(filter);
+    }
+
+    whereKeyValue(key, value) {
+        return this.get().where(key, value);
     }
 
     get() {
-        return app.scenarios
+        return app.scenarios || collect();
+    }
+
+    whereState(state) {
+        return this.whereKeyValue("state", state);
     }
 
     awardedFrom(achievement) {

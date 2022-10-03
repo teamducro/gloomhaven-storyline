@@ -10,6 +10,8 @@ export default {
     "Add city events": "Add city events",
     "Road Event Decks": "Road Event Decks",
     "Add road events": "Add road events",
+    "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.",
+    "completed scenarios": "completed scenarios",
 
     // Achievements
     "5 Ancient Technology Global Achievements": "5 “Ancient Technology” Global Achievements",
@@ -100,6 +102,7 @@ export default {
     "Treasure": "Treasure | Treasures",
     "Treasures": "Treasures",
     "Unlocked": "Unlocked",
+    "unlocked": "unlocked",
     "Unlocks": "Unlocks",
     "Virtual Board": "Virtual Board",
     "XP": "XP",

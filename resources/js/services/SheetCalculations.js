@@ -30,13 +30,20 @@ export default {
 
             return donationProsperity;
         },
-        prosperityBreaks() {
-            return collect({
-                1: 1, 5: 2, 10: 3, 16: 4, 23: 5, 31: 6, 40: 7, 51: 8, 65: 9
-            });
+        prosperityBreaks(game) {
+            switch (game) {
+                case 'cs':
+                    return collect({
+                        1: 1, 4: 2, 9: 3, 15: 4, 22: 5, 30: 6, 39: 7, 50: 8, 60: 9
+                    });
+                default:
+                    return collect({
+                        1: 1, 5: 2, 10: 3, 16: 4, 23: 5, 31: 6, 40: 7, 51: 8, 65: 9
+                    });
+            }
         },
-        calculateProsperity(prosperityIndex) {
-            return this.prosperityBreaks()
+        calculateProsperity(prosperityIndex, game) {
+            return this.prosperityBreaks(game)
                 .filter((prosperity, index) => prosperityIndex >= index)
                 .last();
         },
@@ -65,7 +72,7 @@ export default {
 
             return _.uniq(shopItems.concat(filteredItems));
         },
-        calculateItemsCs(items, scenarioRepository) {
+        calculateItemsCs(items, prosperityIndex) {
             return Helpers.makeArrayWithNumbers(100);
         }
     }
