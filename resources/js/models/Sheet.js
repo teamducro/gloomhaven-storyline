@@ -116,6 +116,22 @@ class Sheet {
     }
 
     fillBlanksCs() {
+        for (let i = 0; i < 15; i++) {
+            this.unlocks[i] = this.unlocks[i] || false;
+        }
+
+        if (!Object.keys(this.city).length) {
+            for (let i = 1; i <= 30; i++) {
+                this.city[i] = true;
+            }
+        }
+
+        if (!Object.keys(this.road).length) {
+            for (let i = 1; i <= 30; i++) {
+                this.road[i] = true;
+            }
+        }
+
         // for (let i = 26; i <= 36; i++) {
         //     this.itemDesigns[i] = this.itemDesigns[i] || false;
         // }
@@ -182,17 +198,17 @@ class Sheet {
     read() {
         this.parentRead();
         this.migrateCharacterUnlocks();
-        this.migrateEnvelopeXResult();
 
         switch (this.game) {
             case 'jotl':
                 this.fillBlanksJotl();
                 break;
-            case 'cd':
+            case 'cs':
                 this.fillBlanksCs();
                 break;
             default:
                 this.fillBlanksGH();
+                this.migrateEnvelopeXResult();
         }
 
         this.fillCharacterUnlocks();
