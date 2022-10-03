@@ -1,19 +1,25 @@
 <template>
-    <span class="cursor-pointer inline-flex" @click="open(scenario.id)">
-        <button type="button" v-if="scenario.isVisible()"
+    <span v-if="s" class="cursor-pointer inline-flex" @click="open(s.id)">
+        <button type="button" v-if="s.isVisible() || s.is_side"
                 :class="classes">
-            <character-icon class="hover:cursor-pointer" v-if="scenario.solo" :character="scenario.solo"/>
-            <span v-else>{{ scenario.id }}</span>
+            <character-icon class="hover:cursor-pointer" v-if="s.solo" :character="s.solo"/>
+            <span v-else>{{ s.id }}</span>
         </button>
-        <span class="ml-2" v-if="showName">{{ $t(scenario.name) }}</span>
+        <span class="ml-2" v-if="showName">{{ $t(s.name) }}</span>
     </span>
 </template>
 
 <script>
+import ScenarioRepository from "../../repositories/ScenarioRepository";
+import Scenario from "../../models/Scenario";
+
 export default {
     props: {
         scenario: {
-            type: Object
+            type: Scenario
+        },
+        id: {
+            type: Number
         },
         isSmall: {
             type: Boolean,
@@ -25,14 +31,25 @@ export default {
         }
     },
     data() {
-        return {};
+        return {
+            s: null,
+            scenarioRepository: new ScenarioRepository(),
+        };
+    },
+    mounted() {
+        if (this.scenario) {
+            this.s = this.scenario;
+        }
+        if (!this.scenario && this.id) {
+            this.s = this.scenarioRepository.find(this.id);
+        }
     },
     computed: {
         classes() {
             let classes = {
                 'is-small': this.isSmall
             };
-            classes[this.scenario.state] = true;
+            classes[this.s.state] = true;
 
             return classes;
         }
@@ -40,7 +57,7 @@ export default {
     methods: {
         open() {
             this.$bus.$emit('open-scenario', {
-                id: this.scenario.id
+                id: this.s.id
             });
         }
     }
@@ -52,6 +69,10 @@ button {
 
     &.is-small {
         @apply text-xs h-6 w-6 leading-6;
+    }
+
+    &.hidden {
+        @apply block opacity-50;
     }
 
     &.incomplete {

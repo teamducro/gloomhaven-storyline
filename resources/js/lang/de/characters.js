@@ -268,7 +268,7 @@ export default {
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {WOUND} Karte",
-            "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {POISEN} Karte",
+            "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {POISON} Karte",
             "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {WIND} Karte",
             "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {EARTH} Karte",
             "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {LIGHT} Karte",

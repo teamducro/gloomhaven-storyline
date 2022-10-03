@@ -29,7 +29,6 @@ export default class GameData {
     achievements(game) {
         switch (game) {
             case 'jotl':
-            case 'cs':
                 return []
             default:
                 return achievementsJson
@@ -177,6 +176,11 @@ export default class GameData {
                 return {
                     portrait: '-100 0 500 500',
                     landscape: '-100 -70 500 500'
+                }
+            case 'cs':
+                return {
+                    portrait: '0 0 370 540',
+                    landscape: '0 -40 530 370'
                 }
             default:
                 return {

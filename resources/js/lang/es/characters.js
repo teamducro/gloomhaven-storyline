@@ -268,7 +268,7 @@ export default {
         "perks": [
             "Sustituye 1 carta {-2_WHITE} por 1 carta {+0_WHITE}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {WOUND}",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {POISEN}",
+            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {POISON}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {WIND}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {EARTH}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {LIGHT}",

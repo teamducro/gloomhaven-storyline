@@ -36,18 +36,7 @@
             </div>
 
             <div class="w-full mt-8">
-                <ul class="flex flex-row flex-wrap -mx-2">
-                    <li v-for="(checked, id) in sheet.characterUnlocks" :key="id" class="flex items-center"
-                        :class="'order-'+sheet.characterOrder[id]">
-                        <checkbox group="items"
-                                  :checked="checked"
-                                  :disabled="sheet.starterCharacters.includes(id)"
-                                  @change="(_, isChecked) => {unlockCharacter(id, isChecked)}"></checkbox>
-                        <span class="w-8 font-title">
-                            <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
-                        </span>
-                    </li>
-                </ul>
+                <unlock-characters :sheet="sheet" @change="store"></unlock-characters>
             </div>
 
         </div>

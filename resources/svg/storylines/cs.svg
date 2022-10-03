@@ -1,0 +1,644 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="530" height="540" version="1.1">
+    <style>svg { background-color: #999; }
+        text { font-family: "Pirata One", "Nyala", sans-serif; fill: white;
+        }
+        text.label { font-size: 10px; }
+        .line { fill: none; }
+        .arrow { fill: white; }
+        .line, .arrow { stroke: white; }
+        .scenario { cursor: pointer; }
+
+        circle.node { fill: black; stroke: white; transform: translate(-10.8px, 0); }
+        circle.node + text { font-size: 11px; transform: translate(0px, 9px); }
+        circle.node ~ .blocked { font-size: 16px; font-family: Arial, sans-serif; transform: translate(-10px, -5px); }
+        circle.node ~ .required { font-size: 12px; font-weight: bold; transform: translate(-7px, -5px); }
+    </style>
+    <g class="layer">
+        <title>Layer 1</title>
+        <g class="chapter" id="chapter2">
+            <rect fill="#111" height="51.7" opacity="0.7" rx="10" ry="10" stroke="#000" width="113.63" x="26.33"
+                  y="61.63"/>
+            <text class="label" x="32" y="104">{{ $t("Infectious") }}</text>
+        </g>
+        <g class="chapter" id="chapter3">
+            <rect fill="#111" height="51.23" opacity="0.7" rx="10" ry="10" stroke="#000" width="157.37" x="186.53"
+                  y="7.62"/>
+            <text class="label" x="194.9" y="21">{{ $t("Wondrous") }}</text>
+        </g>
+        <g class="chapter" id="chapter4">
+            <rect fill="#111" height="87.21" opacity="0.7" rx="10" ry="10" stroke="#000" width="76.39" x="267.28"
+                  y="65.39"/>
+            <text class="label" x="272.5" y="145">{{ $t("Chilly") }}</text>
+        </g>
+        <g class="chapter" id="chapter5">
+            <rect fill="#111" height="87.69" opacity="0.7" rx="10" ry="10" stroke="#000" width="76.21" x="25.84"
+                  y="121.65"/>
+            <text class="label" text-anchor="middle" x="60" y="202">{{ $t("Sail") }}</text>
+        </g>
+        <g class="chapter" id="chapter6">
+            <rect fill="#111" height="87.51" opacity="0.7" rx="10" ry="10" stroke="#000" width="76.5" x="267"
+                  y="160.29"/>
+            <text class="label" x="273.5" y="241.5">{{ $t("Tainted") }}</text>
+        </g>
+        <g class="scenario" id="node1">
+            <circle class="node" cx="52.89" cy="40.43" r="10.8"/>
+            <text x="40.5" y="36.12">1</text>
+        </g>
+        <g class="edge edge1" id="edge1-2" transform="rotate(-90 62 40.985)">
+            <path class="line" d="m62.25,32.22l0,13.76"/>
+            <path class="arrow" d="m62.25,49.75l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node2">
+            <circle class="node" cx="93.06" cy="40" r="10.8"/>
+            <text x="80" y="36.39">2</text>
+        </g>
+        <g class="edge edge2" id="2-3" transform="rotate(-90 102 40.995)">
+            <path class="line" d="m102.25,32.23l0,13.76"/>
+            <path class="arrow" d="m102.25,49l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node3">
+            <circle class="node" cx="132.45" cy="40.14" r="10.8"/>
+            <text x="119.5" y="35.83">3</text>
+        </g>
+        <g class="edge edge3" id="3-7" transform="rotate(-90 141.5 40.995)">
+            <path class="line" d="m141.75,32.23l0,13.76"/>
+            <path class="arrow" d="m141.75,49l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="edge edge3" id="3-4">
+            <path class="line" d="m121.75,51.23l0,13.76"/>
+            <path class="arrow" d="m121.75,67.76l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node4">
+            <circle class="node" cx="132.6" cy="79.42" r="10.8"/>
+            <text x="119.5" y="75.11">4</text>
+        </g>
+        <g class="edge edge4" id="4-5" transform="rotate(90 102.245 79.495)">
+            <path class="line" d="m102.25,70.73l0,13.76"/>
+            <path class="arrow" d="m102.25,88.26l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node5">
+            <circle class="node" cx="92.95" cy="79.25" r="10.8"/>
+            <text x="80" y="74.94">5</text>
+        </g>
+        <g class="edge edge5" id="5-6" transform="rotate(90 62.5 79.25)">
+            <path class="line" d="m62.5,70.49l0,13.76"/>
+            <path class="arrow" d="m62.5,88.02l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node6">
+            <circle class="node" cx="53.1" cy="78.98" r="10.8"/>
+            <text x="40" y="74.66">6</text>
+            <text x="38" y="74.66" class="required">!</text>
+        </g>
+        <g class="scenario" id="node7">
+            <circle class="node" cx="172.19" cy="40.62" r="10.8"/>
+            <text x="159.25" y="36.31">7</text>
+        </g>
+        <g class="edge edge7" id="7-8">
+            <path class="line" d="m161.76,51.23l0,13.76"/>
+            <path class="arrow" d="m161.76,67.76l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="edge edge7" id="7-10">
+            <path class="line" d="m181.62,31.11l0,19.26" transform="rotate(-90 181.615 40.745)"/>
+            <path class="arrow" d="m192.51,43.26l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"
+                  transform="rotate(-90 192.5 40.75)"/>
+        </g>
+        <g class="scenario" id="node8">
+            <circle class="node" cx="172.6" cy="79.6" r="10.8"/>
+            <text x="159.5" y="75.28">8</text>
+        </g>
+        <g class="edge edge8" id="8-9">
+            <path class="line" d="m161.51,90.23l0,34.76"/>
+            <path class="arrow" d="m161.51,127.76l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node9">
+            <circle class="node" cx="172.6" cy="139.62" r="10.8"/>
+            <text x="159.5" y="135.31">9</text>
+        </g>
+        <g class="edge edge9" id="9-14">
+            <path class="line" d="m161.76,150.23l0,13.76"/>
+            <path class="arrow" d="m161.76,167l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="edge edge9" id="9-13">
+            <path class="line" d="m141.82,141.21l0,30.84" transform="rotate(46.0594 141.82 156.626)"/>
+            <path class="arrow" d="m129.82,170l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"
+                  transform="rotate(46.0594 129.811 168.193)"/>
+        </g>
+        <g class="edge edge9" id="9-11">
+            <path class="line" d="m124.13,112.13l0,53.76" transform="rotate(90 124.135 139.005)"/>
+            <path class="arrow" d="m96.01,141.51l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"
+                  transform="rotate(90 96 139)"/>
+        </g>
+        <g class="scenario" id="node10">
+            <circle class="node" cx="217.04" cy="40.25" r="10.8"/>
+            <text x="202.5" y="35.94">10</text>
+        </g>
+        <g class="edge edge10" id="10-17">
+            <path class="line" d="m205.51,50.73l0,13.76"/>
+            <path class="arrow" d="m205.51,67.5l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="edge edge10" id="10-19" transform="rotate(-90 226 40.995)">
+            <path class="line" d="m226.25,32.23l0,13.76"/>
+            <path class="arrow" d="m226.25,49l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node11">
+            <circle class="node" cx="92.94" cy="139.38" r="10.8"/>
+            <text x="79.5" y="135.05">11</text>
+        </g>
+        <g class="edge edge11" id="11-12" transform="rotate(90 62.495 139.245)">
+            <path class="line" d="m62.5,130.48l0,13.76"/>
+            <path class="arrow" d="m62.5,148.01l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node12">
+            <circle class="node" cx="53.44" cy="139.61" r="10.8"/>
+            <text x="39" y="135.64">12</text>
+        </g>
+        <g class="edge edge12" id="12-15">
+            <path class="line" d="m42.76,150.23l0,13.76"/>
+            <path class="arrow" d="m42.76,167l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node13">
+            <circle class="node" cx="132.19" cy="178.6" r="10.8"/>
+            <text x="117.8" y="174.28">13</text>
+        </g>
+        <g class="scenario" id="node14">
+            <circle class="node" cx="173.3" cy="178.6" r="10.8"/>
+            <text x="159" y="174.29">14</text>
+        </g>
+        <g class="scenario" id="node15">
+            <circle class="node" cx="53.37" cy="178.48" r="10.8"/>
+            <text x="39" y="174.16">15</text>
+        </g>
+        <g class="edge edge15" id="15-16" transform="rotate(-90 62.25 179.245)">
+            <path class="line" d="m62.5,170.48l0,13.76"/>
+            <path class="arrow" d="m62.5,188.01l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node16">
+            <circle class="node" cx="93.26" cy="178.62" r="10.8"/>
+            <text x="79" y="174.31">16</text>
+        </g>
+        <g class="scenario" id="node17">
+            <circle class="node" cx="216.91" cy="79.6" r="10.8"/>
+            <text x="202.5" y="75.28">17</text>
+        </g>
+        <g class="edge edge17" id="17-18">
+            <path class="line" d="m205.51,90.73l0,34.26"/>
+            <path class="arrow" d="m205.51,128l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node18">
+            <circle class="node" cx="216.85" cy="139.82" r="10.8"/>
+            <text x="202.5" y="135.5">18</text>
+        </g>
+        <g class="edge edge18" id="18-21" transform="rotate(-90 225.5 140.745)">
+            <path class="line" d="m225.75,131.98l0,13.76"/>
+            <path class="arrow" d="m225.75,149l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="edge edge18" id="18-20">
+            <path class="line" d="m206.51,150.48l0,13.76"/>
+            <path class="arrow" d="m206.51,167.01l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node19">
+            <circle class="node" cx="256.45" cy="40.51" r="10.8"/>
+            <text x="242.5" y="36.2">19</text>
+        </g>
+        <g class="edge edge19" id="19-25">
+            <path class="line" d="m263.36,33.86l0,13.76" transform="rotate(-90 263.365 40.745)"/>
+            <path class="arrow" d="m271.51,42.26l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"
+                  transform="rotate(-90 271.5 40.75)"/>
+        </g>
+        <g class="edge edge19" id="19-24">
+            <path class="line" d="m284.19,27.27l0,64.19" transform="rotate(-64.6387 284.192 59.3627)"/>
+            <path class="arrow" d="m314.33,76.16l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"
+                  transform="rotate(-64.6387 314.324 73.6457)"/>
+        </g>
+        <g class="edge edge19" id="19-23">
+            <path class="line" d="m263.57,44.48l0,32.52" transform="rotate(-42.9539 263.571 60.7452)"/>
+            <path class="arrow" d="m275.51,76.08l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"
+                  transform="rotate(-42.9539 275.504 73.5694)"/>
+        </g>
+        <g class="scenario" id="node20">
+            <circle class="node" cx="217.9" cy="178.78" r="10.8"/>
+            <text x="202.5" y="174.81">20</text>
+            <text x="200.5" y="174.81" class="required">!</text>
+        </g>
+        <g class="edge edge20" id="20-22">
+            <path class="line" d="m206.51,189.48l0,13.76"/>
+            <path class="arrow" d="m206.51,206.21l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node21">
+            <circle class="node" cx="256.21" cy="139.5" r="10.8"/>
+            <text x="242" y="135.17">21</text>
+        </g>
+        <g class="edge edge21" id="21-27">
+            <path class="line" d="m244.76,150.48l0,13.76"/>
+            <path class="arrow" d="m244.76,167.51l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node22">
+            <circle class="node" cx="217.62" cy="218.15" r="10.8"/>
+            <text x="202.5" y="213.83">22</text>
+        </g>
+        <g class="scenario" id="node23">
+            <circle class="node" cx="296.06" cy="83.2" r="10.8"/>
+            <text x="281" y="78.88">23</text>
+        </g>
+        <g class="edge edge23" id="23-26" transform="rotate(-90 305 104.5)">
+            <path class="line" d="m307.24,87.41l0,29.79" transform="rotate(47.9001 307.244 102.304)"/>
+            <path class="arrow" d="m295.26,115.64l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"
+                  transform="rotate(47.9001 295.256 113.13)"/>
+        </g>
+        <g class="scenario" id="node24">
+            <circle class="node" cx="334.76" cy="83.5" r="10.8"/>
+            <text x="319.4" y="79.19">24</text>
+        </g>
+        <g class="edge edge24" id="24-26">
+            <path class="line" d="m324,94.49l0,13.76"/>
+            <path class="arrow" d="m324,112.02l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node25">
+            <circle class="node" cx="295.76" cy="40.6" r="10.8"/>
+            <text x="280.4" y="36.28">25</text>
+        </g>
+        <g class="edge edge25" id="25-31" transform="rotate(-90 304.25 40.995)">
+            <path class="line" d="m304.5,32.23l0,13.76"/>
+            <path class="arrow" d="m304.5,49l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node26">
+            <circle class="node" cx="334.91" cy="123.35" r="10.8"/>
+            <text x="319.5" y="119.38">26</text>
+            <text x="317.5" y="119.38" class="required">!</text>
+        </g>
+        <g class="scenario" id="node27">
+            <circle class="node" cx="256.06" cy="179" r="10.8"/>
+            <text x="241" y="174.67">27</text>
+        </g>
+        <g class="edge edge27" id="27-28" transform="rotate(-90 264.75 179.245)">
+            <path class="line" d="m265,170.48l0,13.76"/>
+            <path class="arrow" d="m265,188.01l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node28">
+            <circle class="node" cx="295.92" cy="178.95" r="10.8"/>
+            <text x="280.5" y="174.64">28</text>
+        </g>
+        <g class="edge edge28" id="28-29" transform="rotate(-90 304.5 179.245)">
+            <path class="line" d="m304.75,170.48l0,13.76"/>
+            <path class="arrow" d="m304.75,187.01l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node29">
+            <circle class="node" cx="334.5" cy="178.61" r="10.8"/>
+            <text x="319" y="174.64">29</text>
+        </g>
+        <g class="edge edge29" id="29-30">
+            <path class="line" d="m306.46,182.84l0,29.79" transform="rotate(47.9001 306.457 197.73)"/>
+            <path class="arrow" d="m294.47,210.57l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"
+                  transform="rotate(47.9001 294.469 208.556)"/>
+        </g>
+        <g class="scenario" id="node30">
+            <circle class="node" cx="295.78" cy="218.36" r="10.8"/>
+            <text x="280.5" y="214.05">30</text>
+        </g>
+        <g class="edge edge30" id="30-32" transform="rotate(90 265.495 218.745)">
+            <path class="line" d="m265.5,209.98l0,13.76"/>
+            <path class="arrow" d="m265.5,227.51l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+        </g>
+        <g class="scenario" id="node31">
+            <circle class="node" cx="334.97" cy="40.74" r="10.8"/>
+            <text x="320" y="36.42">31</text>
+        </g>
+        <g class="scenario" id="node32">
+            <circle class="node" cx="255.78" cy="218.23" r="10.8"/>
+            <text x="240.5" y="213.92">32</text>
+        </g>
+
+        <g class="landscape" transform="matrix(1 0 0 1 0 0)">
+            <!--chapter101-->
+            <rect fill="#111" height="88.7" opacity="0.7" rx="10" ry="10" stroke="#000" width="141" x="364.28" y="8.1"/>
+            <text class="label chapter" id="chapter101" x="373.5" y="90">{{ $t("Personal Quests") }}</text>
+            <g class="scenario" id="node33">
+                <circle class="node" cx="394.94" cy="26.56" r="10.8"/>
+                <text x="379.5" y="22.25">33</text>
+            </g>
+            <g class="edge edge33" id="33-34">
+                <path class="line" d="m384,37.23l0,13.76"/>
+                <path class="arrow" d="m384,54l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+            </g>
+            <g class="scenario" id="node34">
+                <circle class="node" cx="395.1" cy="66.25" r="10.8"/>
+                <text x="379.5" y="62.28">34</text>
+            </g>
+            <g class="scenario" id="node35">
+                <circle class="node" cx="427.35" cy="26.49" r="10.8"/>
+                <text x="412" y="22.17">35</text>
+            </g>
+            <g class="edge edge35" id="35-36">
+                <path class="line" d="m416.76,37.23l0,13.76"/>
+                <path class="arrow" d="m416.76,54l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+            </g>
+            <g class="scenario" id="node36">
+                <circle class="node" cx="427.88" cy="65.91" r="10.8"/>
+                <text x="412.5" y="61.94">36</text>
+            </g>
+            <g class="scenario" id="node37">
+                <circle class="node" cx="460.84" cy="26.29" r="10.8"/>
+                <text x="445.5" y="21.98">37</text>
+            </g>
+            <g class="edge edge37" id="37-38">
+                <path class="line" d="m449.88,37.23l0,13.76"/>
+                <path class="arrow" d="m449.88,54l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+            </g>
+            <g class="scenario" id="node38">
+                <circle class="node" cx="460.84" cy="66.24" r="10.8"/>
+                <text x="445.5" y="61.92">38</text>
+            </g>
+            <g class="scenario" id="node39">
+                <circle class="node" cx="493.12" cy="26.7" r="10.8"/>
+                <text x="477.7" y="22.39">39</text>
+            </g>
+        </g>
+
+        <g class="landscape">
+            <!--chapter102-->
+            <rect fill="#111" height="55.48" opacity="0.7" rx="10" ry="10" stroke="#000" width="140.5" x="364.41"
+                  y="106.12"/>
+            <text class="label chapter" id="chapter102" x="374" y="152.55">{{ $t("Road Events") }}</text>
+            <g class="scenario" id="node45">
+                <circle class="node" cx="427.49" cy="125.49" r="10.8"/>
+                <text x="411.67" y="121.17">45</text>
+            </g>
+            <g class="scenario" id="node46">
+                <circle class="node" cx="460.69" cy="125.22" r="10.8"/>
+                <text x="445.2" y="120.89">46</text>
+            </g>
+            <g class="scenario" id="node47">
+                <circle class="node" cx="493.19" cy="125.8" r="10.8"/>
+                <text x="477.7" y="121.48">47</text>
+            </g>
+            <g class="scenario" id="node48">
+                <circle class="node" cx="394.19" cy="125.75" r="10.8"/>
+                <text x="378.7" y="121.42">48</text>
+            </g>
+        </g>
+
+        <g class="landscape" transform="matrix(1 0 0 1 0 0)">
+            <!--chapter103-->
+            <rect fill="#111" height="86.48" opacity="0.7" rx="10" ry="10" stroke="#000" width="140.5" x="364.41"
+                  y="172.12"/>
+            <text class="label chapter" id="chapter103" x="374" y="248.55">{{ $t("City Events") }}</text>
+            <g class="scenario" id="node40">
+                <circle class="node" cx="394.77" cy="191.73" r="10.8"/>
+                <text x="379.5" y="187.42">40</text>
+            </g>
+            <g class="scenario" id="node41">
+                <circle class="node" cx="427.3" cy="191.24" r="10.8"/>
+                <text x="412.5" y="186.91">41</text>
+            </g>
+            <g class="scenario" id="node42">
+                <circle class="node" cx="460.8" cy="191.38" r="10.8"/>
+                <text x="444.95" y="187.05">42</text>
+            </g>
+            <g class="scenario" id="node43">
+                <circle class="node" cx="492.97" cy="191.82" r="10.8"/>
+                <text x="477" y="187.5">43</text>
+            </g>
+            <g class="scenario" id="node44">
+                <circle class="node" cx="395.02" cy="221.78" r="10.8"/>
+                <text x="379.2" y="217.47">44</text>
+            </g>
+            <g class="scenario" id="node49">
+                <circle class="node" cx="427.62" cy="221.66" r="10.8"/>
+                <text x="411.78" y="217.7">49</text>
+                <text x="409.78" y="217.7" class="required">!</text>
+            </g>
+            <g class="scenario" id="node50">
+                <circle class="node" cx="460.85" cy="221.02" r="10.8"/>
+                <text x="445" y="216.7">50</text>
+                <text x="443" y="216.7" class="required">!</text>
+            </g>
+        </g>
+
+        <g class="landscape">
+            <!--chapter104-->
+            <rect fill="#111" height="82.48" opacity="0.7" rx="10" ry="10" stroke="#000" width="140.1" x="364.56"
+                  y="268.35"/>
+            <text class="label chapter" id="chapter104" x="372.5" y="343.01">{{ $t("Side Quests") }}</text>
+            <g class="scenario" id="node51">
+                <circle class="node" cx="395.01" cy="286.65" r="10.8"/>
+                <text x="379.62" y="282.65">51</text>
+            </g>
+            <g class="scenario" id="node52">
+                <circle class="node" cx="427.96" cy="286.75" r="10.8"/>
+                <text x="412.57" y="282.75">52</text>
+            </g>
+            <g class="scenario" id="node53">
+                <circle class="node" cx="460.96" cy="285.97" r="10.8"/>
+                <text x="445.57" y="281.97">53</text>
+            </g>
+            <g class="scenario" id="node54">
+                <circle class="node" cx="493.46" cy="285.75" r="10.8"/>
+                <text x="478.07" y="281.75">54</text>
+            </g>
+            <g class="scenario" id="node55">
+                <circle class="node" cx="395.14" cy="316.75" r="10.8"/>
+                <text x="379.75" y="312.75">55</text>
+            </g>
+        </g>
+
+        <g class="legend landscape">
+            <rect fill="#111" height="86" opacity="0.7" rx="10" ry="10" stroke="#000" width="318" x="26"
+                  y="259.5"/>
+            <text class="label campaign-name" x="35.5" y="275"/>
+            <g class="scenario incomplete">
+                <circle class="node" cx="53.5" cy="294.5" fill="black" r="10.8"/>
+                <text fill="black" x="41.5" y="290.5">I</text>
+            </g>
+            <text class="label" fill="black" x="60.83" y="298.5">{{ $t("Incomplete") }}</text>
+            <g class="scenario blocked">
+                <circle class="node" cx="148.5" cy="295.5" r="10.8"/>
+                <text fill="black" x="135.5" y="291.5">B</text>
+                <text class="blocked" x="135.5" y="291.5">×</text>
+            </g>
+            <text class="label" fill="black" x="154.19" y="299.51">{{ $t("Blocked") }}</text>
+            <g class="scenario complete">
+                <circle class="node" cx="233.5" cy="295.5" r="10.8"/>
+                <text fill="black" x="220.5" y="291.5">C</text>
+            </g>
+            <text class="label" fill="black" x="240.38" y="300.51">{{ $t("Completed") }}</text>
+            <g class="scenario required">
+                <circle class="node" cx="53.5" cy="325" r="10.8"/>
+                <text fill="black" x="40.5" y="321">R</text>
+                <text class="required" x="38.5" y="321">!</text>
+            </g>
+            <text class="label" fill="black" x="60.19" y="329">{{ $t("Required") }}</text>
+            <g class="scenario opacity-50">
+                <circle class="node" cx="148.5" cy="325.5" r="10.8"/>
+                <text fill="black" x="135.5" y="321.5">N</text>
+            </g>
+            <text class="label" fill="black" x="155.69" y="329.51">{{ $t("Not unlocked") }}
+            </text>
+        </g>
+
+        <g class="portrait" transform="matrix(1 0 0 1 0 0)">
+            <!--chapter101-->
+            <rect fill="#111" height="88.7" opacity="0.7" rx="10" ry="10" stroke="#000" width="141" x="26.28"
+                  y="259.1"/>
+            <text class="label chapter" id="chapter101" x="35.5" y="342">{{ $t("Personal Quests") }}</text>
+            <g class="scenario" id="node33">
+                <circle class="node" cx="56.94" cy="277.56" r="10.8"/>
+                <text x="41.5" y="273.25">33</text>
+            </g>
+            <g class="edge edge33" id="33-34">
+                <path class="line" d="m46,288.23l0,13.76"/>
+                <path class="arrow" d="m46,305l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+            </g>
+            <g class="scenario" id="node34">
+                <circle class="node" cx="57.1" cy="317.25" r="10.8"/>
+                <text x="41.5" y="313.28">34</text>
+            </g>
+            <g class="scenario" id="node35">
+                <circle class="node" cx="89.35" cy="277.49" r="10.8"/>
+                <text x="74" y="273.17">35</text>
+            </g>
+            <g class="edge edge35" id="35-36">
+                <path class="line" d="m78.76,288.23l0,13.76"/>
+                <path class="arrow" d="m78.76,305l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+            </g>
+            <g class="scenario" id="node36">
+                <circle class="node" cx="89.88" cy="316.91" r="10.8"/>
+                <text x="74.5" y="312.94">36</text>
+            </g>
+            <g class="scenario" id="node37">
+                <circle class="node" cx="122.84" cy="277.29" r="10.8"/>
+                <text x="107.5" y="272.98">37</text>
+            </g>
+            <g class="edge edge37" id="37-38">
+                <path class="line" d="m111.88,288.23l0,13.76"/>
+                <path class="arrow" d="m111.88,305l-2.52,-5.03l2.52,1.26l2.51,-1.26l-2.51,5.03z"/>
+            </g>
+            <g class="scenario" id="node38">
+                <circle class="node" cx="122.84" cy="317.24" r="10.8"/>
+                <text x="107.5" y="312.92">38</text>
+            </g>
+            <g class="scenario" id="node39">
+                <circle class="node" cx="155.12" cy="277.7" r="10.8"/>
+                <text x="139.7" y="273.39">39</text>
+            </g>
+        </g>
+
+        <g class="portrait" transform="matrix(1 0 0 1 0 0)">
+            <!--chapter102-->
+            <rect fill="#111" height="55.48" opacity="0.7" rx="10" ry="10" stroke="#000" width="140.5" x="203.41"
+                  y="259.12"/>
+            <text class="label chapter" id="chapter102" x="213" y="305.55">{{ $t("Road Events") }}</text>
+            <g class="scenario" id="node45">
+                <circle class="node" cx="266.49" cy="278.49" r="10.8"/>
+                <text x="250.67" y="274.17">45</text>
+            </g>
+            <g class="scenario" id="node46">
+                <circle class="node" cx="299.69" cy="278.22" r="10.8"/>
+                <text x="284.2" y="273.89">46</text>
+            </g>
+            <g class="scenario" id="node47">
+                <circle class="node" cx="332.19" cy="278.8" r="10.8"/>
+                <text x="316.7" y="274.48">47</text>
+            </g>
+            <g class="scenario" id="node48">
+                <circle class="node" cx="233.19" cy="278.75" r="10.8"/>
+                <text x="217.7" y="274.42">48</text>
+            </g>
+        </g>
+
+        <g class="portrait">
+            <!--chapter103-->
+            <rect fill="#111" height="86.48" opacity="0.7" rx="10" ry="10" stroke="#000" width="140.5" x="26.41"
+                  y="358.12"/>
+            <text class="label chapter" id="chapter103" x="36" y="434.55">{{ $t("City Events") }}</text>
+            <g class="scenario" id="node40">
+                <circle class="node" cx="56.77" cy="377.73" r="10.8"/>
+                <text x="41.5" y="373.42">40</text>
+            </g>
+            <g class="scenario" id="node41">
+                <circle class="node" cx="89.3" cy="377.24" r="10.8"/>
+                <text x="74.5" y="372.91">41</text>
+            </g>
+            <g class="scenario" id="node42">
+                <circle class="node" cx="122.8" cy="377.38" r="10.8"/>
+                <text x="106.95" y="373.05">42</text>
+            </g>
+            <g class="scenario" id="node43">
+                <circle class="node" cx="154.97" cy="377.82" r="10.8"/>
+                <text x="139" y="373.5">43</text>
+            </g>
+            <g class="scenario" id="node44">
+                <circle class="node" cx="57.02" cy="407.78" r="10.8"/>
+                <text x="41.2" y="403.47">44</text>
+            </g>
+            <g class="scenario" id="node49">
+                <circle class="node" cx="89.62" cy="407.66" r="10.8"/>
+                <text x="73.78" y="403.7">49</text>
+                <text class="required" x="71.78" y="403.7">!</text>
+            </g>
+            <g class="scenario" id="node50">
+                <circle class="node" cx="122.85" cy="407.02" r="10.8"/>
+                <text x="107" y="402.7">50</text>
+                <text class="required" x="105" y="402.7">!</text>
+            </g>
+        </g>
+
+        <g class="portrait">
+            <!--chapter104-->
+            <rect fill="#111" height="82.48" opacity="0.7" rx="10" ry="10" stroke="#000" width="140.1" x="203.56"
+                  y="324.35"/>
+            <text class="label chapter" id="chapter104" x="211.5" y="399.01">{{ $t("Side Quests") }}</text>
+            <g class="scenario" id="node51">
+                <circle class="node" cx="234.01" cy="342.65" r="10.8"/>
+                <text x="218.62" y="338.65">51</text>
+            </g>
+            <g class="scenario" id="node52">
+                <circle class="node" cx="266.96" cy="342.75" r="10.8"/>
+                <text x="251.57" y="338.75">52</text>
+            </g>
+            <g class="scenario" id="node53">
+                <circle class="node" cx="299.96" cy="341.97" r="10.8"/>
+                <text x="284.57" y="337.97">53</text>
+            </g>
+            <g class="scenario" id="node54">
+                <circle class="node" cx="332.46" cy="341.75" r="10.8"/>
+                <text x="317.07" y="337.75">54</text>
+            </g>
+            <g class="scenario" id="node55">
+                <circle class="node" cx="234.14" cy="372.75" r="10.8"/>
+                <text x="218.75" y="368.75">55</text>
+            </g>
+        </g>
+
+        <g class="legend portrait">
+            <rect fill="#111" height="86" opacity="0.7" rx="10" ry="10" stroke="#000" width="318" x="26" y="455"/>
+            <text class="label campaign-name" x="35.5" y="470.5"/>
+            <g class="scenario incomplete">
+                <circle class="node" cx="53.5" cy="490" fill="black" r="10.8"/>
+                <text fill="black" x="41.5" y="486">I</text>
+            </g>
+            <text class="label" fill="black" x="60.83" y="494">{{ $t("Incomplete") }}</text>
+            <g class="scenario blocked">
+                <circle class="node" cx="148.5" cy="491" r="10.8"/>
+                <text fill="black" x="135.5" y="487">B</text>
+                <text class="blocked" x="135.5" y="487">×</text>
+            </g>
+            <text class="label" fill="black" x="154.19" y="495.01">{{ $t("Blocked") }}</text>
+            <g class="scenario complete">
+                <circle class="node" cx="233.5" cy="491" r="10.8"/>
+                <text fill="black" x="220.5" y="487">C</text>
+            </g>
+            <text class="label" fill="black" x="240.38" y="496.01">{{ $t("Completed") }}</text>
+            <g class="scenario required">
+                <circle class="node" cx="53.5" cy="520.5" r="10.8"/>
+                <text fill="black" x="40.5" y="516.5">R</text>
+                <text class="required" x="38.5" y="516.5">!</text>
+            </g>
+            <text class="label" fill="black" x="60.19" y="524.5">{{ $t("Required") }}</text>
+            <g class="scenario opacity-50">
+                <circle class="node" cx="148.5" cy="521" r="10.8"/>
+                <text fill="black" x="135.5" y="517">N</text>
+            </g>
+            <text class="label" fill="black" x="155.69" y="525.01">{{ $t("Not unlocked") }}</text>
+        </g>
+    </g>
+</svg>

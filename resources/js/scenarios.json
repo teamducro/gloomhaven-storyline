@@ -939,7 +939,7 @@
                 "gh/32",
                 "gh/33"
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "links_to": [
                 32,
                 30
@@ -1193,7 +1193,7 @@
                     ]
                 }
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "links_to": [
                 42
             ],
@@ -1298,7 +1298,7 @@
                     ]
                 }
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "links_to": [
                 33,
                 40
@@ -1696,7 +1696,7 @@
                     ]
                 }
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "links_to": [
                 41
             ],
@@ -1744,7 +1744,7 @@
                     ]
                 }
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "linked_from": [
                 40
             ],
@@ -1797,7 +1797,7 @@
                     ]
                 }
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "linked_from": [
                 30
             ],
@@ -2811,7 +2811,7 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "20": "Random Item Design"
             },
@@ -2847,7 +2847,7 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "53": "Random Item Design"
             },
@@ -2919,7 +2919,7 @@
             "pages": [
                 "gh/99"
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "region_ids": [
                 1
             ],
@@ -2952,7 +2952,7 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "52": "Gain “Heart of the Betrayer” (Item 131)"
             },
@@ -2982,7 +2982,7 @@
                 "gh/101",
                 "gh/102"
             ],
-            "chapter_id": 104,
+            "chapter_id": 102,
             "region_ids": [
                 4
             ],
@@ -3006,7 +3006,7 @@
             "pages": [
                 "gh/103"
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "68": "Gain “Helix Ring” (Item 130)"
             },
@@ -3033,7 +3033,7 @@
             "pages": [
                 "gh/104"
             ],
-            "chapter_id": 104,
+            "chapter_id": 102,
             "treasures": {
                 "62": "Gain “Helm of the Mountain” (Item 110) and “Mountain Hammer” (Item 115)"
             },
@@ -3075,7 +3075,7 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "region_ids": [
                 1
             ],
@@ -3137,7 +3137,7 @@
                 "gh/107",
                 "gh/108"
             ],
-            "chapter_id": 104,
+            "chapter_id": 102,
             "region_ids": [
                 4
             ],
@@ -3164,7 +3164,7 @@
                 "gh/108",
                 "gh/109"
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "links_to": [
                 87
             ],
@@ -3203,7 +3203,7 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "linked_from": [
                 86
             ],
@@ -3240,7 +3240,7 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "8": "Gain 1 ✔",
                 "37": "Gain 1 ✔"
@@ -3277,7 +3277,7 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "13": "Suffer 5 Damage and gain {POISON} and {WOUND}",
                 "27": "Gain “Orb of Twilight” (Item 122)",
@@ -3307,7 +3307,7 @@
             "pages": [
                 "gh/113"
             ],
-            "chapter_id": 104,
+            "chapter_id": 102,
             "treasures": {
                 "19": "Random Item Design"
             },
@@ -3331,7 +3331,7 @@
             "pages": [
                 "gh/114"
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "region_ids": [
                 2
             ],
@@ -3363,7 +3363,7 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "region_ids": [
                 1
             ],
@@ -3398,7 +3398,7 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "54": "Gain “Doomed Compass” (Item 124)"
             },
@@ -3425,7 +3425,7 @@
             "pages": [
                 "gh/117"
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "links_to": [
                 95
             ],
@@ -3457,7 +3457,7 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "linked_from": [
                 94
             ],
