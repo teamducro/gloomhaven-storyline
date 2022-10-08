@@ -59,7 +59,7 @@
 
                     <template v-if="scenario.isVisible()">
 
-                        <div v-if="scenario.quirements || scenario.solo">
+                        <div v-if="scenario.requirements || scenario.solo">
                             <div class="flex flex-wrap" style="margin-left: -2px;">
                                 <div class="w-full flex items-center">
                                     <i v-if="scenario.isRequired() || scenario.isBlocked()"
