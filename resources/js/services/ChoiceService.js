@@ -100,6 +100,7 @@ class ChoiceService {
                 });
 
             case 'bloodyWar':
+            case 'capstoneTest':
                 return new PromptConfig(scenario, {
                     options: 3,
                     callback: (value) => {
@@ -112,6 +113,7 @@ class ChoiceService {
             case 'escapeFromTheHusk':
             case 'directingBeams':
             case 'undeadTerrors':
+            case 'unseenPlight':
             default:
                 return new PromptConfig(scenario, {
                     options: 2,

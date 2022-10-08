@@ -1,4 +1,5 @@
 export default {
+    // Gloomhaven
     "dragon": {
         "1": "Return the treasure to the Drake. Gain the Global Achievement “The Drake Aided”. Add City Event 75 and Road Event 66 to the deck",
         "2": "Do not aid the Drake.",
@@ -11,6 +12,7 @@ export default {
         "title": "Escape The Burning Mountain",
         "text": "You looted the treasure. Do you dare to escape the rumbling volcano and keep the retrieved items?"
     },
+    // Forgotten Circles
     "merchantsBay": {
         "1": "You recovered both scrolls.",
         "2": "You failed to recover the Record of the Journey.",
@@ -55,14 +57,14 @@ export default {
         "title": "Escape from The Husk",
         "text": "Did all characters escape through an exit?"
     },
-
+    // Crimson Scales
     "undeadTerrors": {
         "1": "Give the potion to Selandre.",
         "2": "Tell Selandre the potion was destroyed.",
         "title": "Can you trust Selandre?",
         "text": "Do you listen to Dominic's last words or your greed?"
     },
-    "capstoneTest":{
+    "capstoneTest": {
         "1": "One named enemy is killed",
         "2": "Two named enemies are killed",
         "3": "Three named enemies are killed",
