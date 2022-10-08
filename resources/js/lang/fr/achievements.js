@@ -243,36 +243,36 @@ export default {
         "name": "Severed Ties"
     },
     "cs-PCSOD": {
-        "name": "Ooze Destroyed",
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "Fallen Lava",
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "Follow the Money",
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "Frozen Warrior",
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "Oak Alliance",
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "Inox Alliance",
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "Guttermaw's Bounty",
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "Feirgrin's Request",
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "A Potion Lost",
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "Take the Money",
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "Accomplished Mercenaries",
+        "name": "Accomplished Mercenaries"
     }
 }

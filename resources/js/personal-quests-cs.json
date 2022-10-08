@@ -6,7 +6,24 @@
         "progress": [
             {
                 "type": "checkbox",
-                "name": "Goal met",
+                "name": "Kill ten Inox.",
+                "scenario_unlock": 33,
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO 33}.",
                 "value": [
                     0
                 ]
@@ -19,11 +36,10 @@
         "character_unlock": "BM",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Consume fifteen {ONE-HAND} or {TWO-HANDS} items",
+                "value": 0,
+                "target": 15
             }
         ]
     },
@@ -33,11 +49,10 @@
         "character_unlock": "BK",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Play 30 cards for their lost {LOST} action.",
+                "value": 0,
+                "target": 30
             }
         ]
     },
@@ -47,11 +62,10 @@
         "character_unlock": "BK",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Reveal a room tile by opening a door twenty times.",
+                "value": 0,
+                "target": 20
             }
         ]
     },
@@ -61,11 +75,10 @@
         "character_unlock": "CG",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Disarm or cause an enemy to sprint a trap during your turn fifteen times.",
+                "value": 0,
+                "target": 15
             }
         ]
     },
@@ -75,8 +88,15 @@
         "character_unlock": "CG",
         "progress": [
             {
+                "type": "number",
+                "name": "Kill ten Guards or Archers.",
+                "scenario_unlock": 35,
+                "value": 0,
+                "target": 10
+            },
+            {
                 "type": "checkbox",
-                "name": "Goal met",
+                "name": "Conclude {SCENARIO 35}.",
                 "value": [
                     0
                 ]
@@ -85,15 +105,14 @@
     },
     {
         "id": "336",
-        "name": "Creatures in the light",
+        "name": "Creatures in the Night",
         "character_unlock": "CT",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Kill twenty Oozes, Forest Imps, or Black Imps.",
+                "value": 0,
+                "target": 10
             }
         ]
     },
@@ -103,11 +122,10 @@
         "character_unlock": "CT",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Complete twelve scenarios with at least 12 experience points.",
+                "value": 0,
+                "target": 12
             }
         ]
     },
@@ -117,11 +135,10 @@
         "character_unlock": "FK",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Kill an enemy and loots its money token in the same round fifteen times.",
+                "value": 0,
+                "target": 15
             }
         ]
     },
@@ -131,11 +148,10 @@
         "character_unlock": "FK",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Kill 30 enemies adjacent to any of your allies.",
+                "value": 0,
+                "target": 30
             }
         ]
     },
@@ -145,11 +161,10 @@
         "character_unlock": "HP",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Draw a {BLESS} card twelve times during an attack.",
+                "value": 0,
+                "target": 12
             }
         ]
     },
@@ -159,11 +174,10 @@
         "character_unlock": "HP",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Spend 200 gold on enhancements.",
+                "value": 0,
+                "target": 200
             }
         ]
     },
@@ -173,25 +187,23 @@
         "character_unlock": "HO",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Experience an ally or enemy dying or becoming exhausted during its own turn 13 times.",
+                "value": 0,
+                "target": 13
             }
         ]
     },
     {
         "id": "343",
-        "name": "The Oying of light",
+        "name": "The Dying of Light",
         "character_unlock": "HO",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Kill thirty enemies while {DARK} is Strong or Waning. Elite kills count double.",
+                "value": 0,
+                "target": 30
             }
         ]
     },
@@ -202,7 +214,43 @@
         "progress": [
             {
                 "type": "checkbox",
-                "name": "Goal met",
+                "name": "Generate {FIRE} twice.",
+                "scenario_unlock": 37,
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Generate {ICE} twice.",
+                "scenario_unlock": 37,
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Generate {LIGHT} twice.",
+                "scenario_unlock": 37,
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Generate {DARK} twice.",
+                "scenario_unlock": 37,
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO 37}.",
                 "value": [
                     0
                 ]
@@ -215,11 +263,10 @@
         "character_unlock": "LU",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Kill two or more enemies in the same turn fifteen times.",
+                "value": 0,
+                "target": 15
             }
         ]
     },
@@ -230,7 +277,20 @@
         "progress": [
             {
                 "type": "checkbox",
-                "name": "Goal met",
+                "name": "Occupy difficult terrain in 6 different scenarios.",
+                "scenario_unlock": 39,
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO 39}.",
                 "value": [
                     0
                 ]
@@ -243,11 +303,10 @@
         "character_unlock": "MF",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Poison {POISON} twenty different types of monsters.",
+                "value": 0,
+                "target": 20
             }
         ]
     },
@@ -257,11 +316,10 @@
         "character_unlock": "SP",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Kill ten summoned monsters.",
+                "value": 0,
+                "target": 10
             }
         ]
     },
@@ -271,11 +329,10 @@
         "character_unlock": "SP",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Complete ten scenarios without long resting.",
+                "value": 0,
+                "target": 10
             }
         ]
     },
@@ -285,11 +342,10 @@
         "character_unlock": "ST",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Complete seven scenarios ending at full health.",
+                "value": 0,
+                "target": 7
             }
         ]
     },
@@ -299,11 +355,10 @@
         "character_unlock": "ST",
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Goal met",
-                "value": [
-                    0
-                ]
+                "type": "number",
+                "name": "Loot 30 money tokens.",
+                "value": 0,
+                "target": 30
             }
         ]
     },
@@ -313,8 +368,16 @@
         "character_unlock": "AA",
         "progress": [
             {
+                "type": "number",
+                "name": "Experience 8 scenarios where you negate damage by losing a card as normal while adjacent to an ally.",
+                "scenario_unlock": "AA1",
+                "value": [
+                    0
+                ]
+            },
+            {
                 "type": "checkbox",
-                "name": "Goal met",
+                "name": "Conclude {SCENARIO AA1}.",
                 "value": [
                     0
                 ]
@@ -328,7 +391,22 @@
         "progress": [
             {
                 "type": "checkbox",
-                "name": "Goal met",
+                "name": "Complete 8 scenarios without exhausting and with 2 or less HP.",
+                "scenario_unlock": "AA2",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO AA2}",
                 "value": [
                     0
                 ]
@@ -342,7 +420,21 @@
         "progress": [
             {
                 "type": "checkbox",
-                "name": "Goal met",
+                "name": "Immediately gain “Power Modulator” (Item QA-01)",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "number",
+                "name": "Kill 12 enemies with “Power Modulator” (Item QA-01)",
+                "scenario_unlock": "QA1",
+                "value": 0,
+                "target": 12
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO QA1}",
                 "value": [
                     0
                 ]
@@ -356,7 +448,31 @@
         "progress": [
             {
                 "type": "checkbox",
-                "name": "Goal met",
+                "name": "Loot two or more money tokens with a single action eight times.",
+                "scenario_unlock": "QA2",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Loot two treasure tiles.",
+                "scenario_unlock": "QA2",
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO QA2}.",
                 "value": [
                     0
                 ]
@@ -370,7 +486,21 @@
         "progress": [
             {
                 "type": "checkbox",
-                "name": "Goal met",
+                "name": "Gain “Serrated Edge” design (Item RM-01).",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "number",
+                "name": "Apply {WOUND} or {RUPTURE} to thirty enemies.",
+                "scenario_unlock": "RM1",
+                "value": 0,
+                "target": 30
+            },
+            {
+                "type": "checkbox",
+                "name": "Conclude {SCENARIO RM1}.",
                 "value": [
                     0
                 ]
@@ -383,8 +513,15 @@
         "character_unlock": "RM",
         "progress": [
             {
+                "type": "number",
+                "name": "Experience twenty rounds where, during or after your perform an action with a {CONSUMED}, an enemy dies.",
+                "scenario_unlock": "RM3",
+                "value": 0,
+                "target": 20
+            },
+            {
                 "type": "checkbox",
-                "name": "Goal met",
+                "name": "Conclude {SCENARIO RM3}.",
                 "value": [
                     0
                 ]

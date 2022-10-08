@@ -72,8 +72,9 @@ export default {
         addCharacterIcons(text) {
             const characters = this.gameData.characterOrder(app.game);
 
-            if (text.match(new RegExp(characters.join('|'))) !== null) {
+            if (text.match(new RegExp('{' + characters.join('|'))) !== null) {
                 characters.forEach((character) => {
+                    text = text.replace(`{${character}_CIRCLE}`, `<span class="rounded-full border border-white inline-flex"><character-icon class="w-4" character="${character}" /></span>`);
                     text = text.replace(`{${character}}`, `<character-icon class="w-6 -ml-1 -mb-2 inline-block" character="${character}" />`);
                 });
             }
@@ -83,7 +84,7 @@ export default {
         addIcons(text) {
             if (text.includes('{')) {
                 collect({
-                    //Ability Enhancements
+                    // Ability Enhancements
                     '{SHIELD}': this.$t('Shield') + ' <webp src="/img/icons/general/shield.png" width="20" class="inline"/>',
                     '{HEAL}': this.$t('Heal') + ' <webp src="/img/icons/general/heal.png" width="20" class="inline"/>',
                     '{ATTACK}': this.$t('Attack') + ' <webp src="/img/icons/general/attack.png" width="20" class="inline"/>',
@@ -91,11 +92,17 @@ export default {
                     '{MOVE}': this.$t('Move') + ' <webp src="/img/icons/general/move.png" width="20" class="inline"/>',
                     '{JUMP}': this.$t('Jump') + ' <webp src="/img/icons/general/jump.png" width="20" class="inline"/>',
                     '{FLYING}': this.$t('Flying') + ' <webp src="/img/icons/general/flying.png" width="20" class="inline"/>',
-                    '{RETALIATE}': this.$t('Retaliate') + ' <webp src="/img/icons/general/retaliate.png" width="20" class="inline"/>',
+                    '{RETALIATE}': this.$t('REGENERATE') + ' <webp src="/img/icons/general/retaliate.png" width="20" class="inline"/>',
+                    '{SWING}': this.$t('SWING') + ' <webp src="/img/icons/general/swing.png" width="20" class="inline"/>',
+                    '{TELEPORT}': this.$t('TELEPORT') + ' <webp src="/img/icons/general/teleport.png" width="20" class="inline"/>',
+                    '{TARGET}': this.$t('TARGET') + ' <webp src="/img/icons/general/target.png" width="20" class="inline"/>',
 
                     '{RECOVER}': this.$t('Recover') + ' <webp src="/img/icons/general/recover_white.png" width="20" class="inline"/>',
                     '{REFRESH}': this.$t('Refresh') + ' <webp src="/img/icons/general/refresh_white.png" width="20" class="inline"/>',
+                    '{CONSUMED}': this.$t('Consumed') + ' <webp src="/img/icons/general/consumed_white.png" width="20" class="inline"/>',
+                    '{LOST}': this.$t('Lost') + ' <webp src="/img/icons/general/lost_white.png" width="20" class="inline"/>',
 
+                    '{MODIFIER_MINUS_ONE}': '<webp src="/img/icons/general/modifier_minus_one_white.png" width="20" class="inline"/>',
                     '{-1}': '<webp src="/img/icons/general/modifier_minus_one_white.png" width="20" class="inline"/>',
 
                     // Elements
@@ -112,7 +119,6 @@ export default {
                     '{ANY_X}': '<webp src="/img/icons/elements/anyX.png" width="20" class="inline"/>',
                     '{DARK_X}': '<webp src="/img/icons/elements/darkX.png" width="20" class="inline"/>',
                     '{EARTH_X}': '<webp src="/img/icons/elements/earthX.png" width="20" class="inline"/>',
-                    '{EARTH_FIRE_X}': '<webp src="/img/icons/elements/earth_fireX.png" width="40" class="inline"/>',
                     '{FIRE_X}': '<webp src="/img/icons/elements/fireX.png" width="20" class="inline"/>',
                     '{ICE_X}': '<webp src="/img/icons/elements/iceX.png" width="20" class="inline"/>',
                     '{WIND_X}': '<webp src="/img/icons/elements/windX.png" width="20" class="inline"/>',
@@ -124,10 +130,11 @@ export default {
                     '{AOE.CUBE_2_2}': '<webp src="/img/icons/aoe/cube_2_2.png" width="40" class="inline"/>',
                     '{AOE.LINE_0_1_1}': '<webp src="/img/icons/aoe/line_0_1_1.png" width="60" class="inline"/>',
                     '{AOE.LINE_1_1}': '<webp src="/img/icons/aoe/line_1_1.png" width="60" class="inline"/>',
-                    '{AOE.LINE_1_1}': '<webp src="/img/icons/aoe/line_1_1.png" width="60" class="inline"/>',
 
+                    // Conditions
                     '{BANE}': this.$t('BANE') + ' <webp src="/img/icons/status/bane.png" width="20" class="inline"/>',
                     '{BLESS}': this.$t('BLESS') + ' <webp src="/img/icons/status/bless.png" width="20" class="inline"/>',
+                    '{BRITTLE}': this.$t('BRITTLE') + ' <webp src="/img/icons/status/brittle.png" width="20" class="inline"/>',
                     '{CHILL}': this.$t('CHILL') + ' <webp src="/img/icons/status/chill.png" width="20" class="inline"/>',
                     '{CURSE}': this.$t('CURSE') + ' <webp src="/img/icons/status/curse.png" width="20" class="inline"/>',
                     '{DISARM}': this.$t('DISARM') + ' <webp src="/img/icons/status/disarm.png" width="20" class="inline"/>',
@@ -146,65 +153,52 @@ export default {
                     '{RUPTURE}': this.$t('RUPTURE') + ' <webp src="/img/icons/status/rupture.png" width="20" class="inline"/>',
                     '{STRENGTHEN}': this.$t('STRENGTHEN') + ' <webp src="/img/icons/status/strengthen.png" width="20" class="inline"/>',
                     '{STUN}': this.$t('STUN') + ' <webp src="/img/icons/status/stun.png" width="20" class="inline"/>',
-                    '{SWING}': this.$t('SWING') + ' <webp src="/img/icons/status/swing.png" width="20" class="inline"/>',
-                    '{TARGET}': this.$t('TARGET') + ' <webp src="/img/icons/status/target.png" width="20" class="inline"/>',
-                    '{TELEPORT}': this.$t('TELEPORT') + ' <webp src="/img/icons/general/teleport.png" width="20" class="inline"/>',
                     '{WARD}': this.$t('WARD') + ' <webp src="/img/icons/status/ward.png" width="20" class="inline"/>',
                     '{WOUND}': this.$t('WOUND') + ' <webp src="/img/icons/status/wound.png" width="20" class="inline"/>',
-
                     '{POISON_2}': this.$t('POISON') + ' <webp src="/img/icons/status/poison-2.png" width="20" class="inline"/>',
                     '{POISON_3}': this.$t('POISON') + ' <webp src="/img/icons/status/poison-3.png" width="20" class="inline"/>',
                     '{POISON_4}': this.$t('POISON') + ' <webp src="/img/icons/status/poison-4.png" width="20" class="inline"/>',
                     '{WOUND_2}': this.$t('WOUND') + ' <webp src="/img/icons/status/wound-2.png" width="20" class="inline"/>',
                     '{WOUND_3}': this.$t('WOUND') + ' <webp src="/img/icons/status/wound-3.png" width="20" class="inline"/>',
 
-                    //Class-colored Text
-                    '{AUGMENT}': '<span class="text-characters-mt">' + this.$t('Augment') + '</span>',
-                    '{COLONY}': '<span class="text-characters-aa">' + this.$t('Colony') + '</span>',
-                    '{COMMAND}': '<span class="text-characters-bt">' + this.$t('Command') + '</span>',
-                    '{CULTIVATE}': '<span class="text-characters-aa">' + this.$t('Cultivate') + '</span>',
-                    '{DEATHSHROUD_SPIDER}': '<span class="text-characters-aa">' + this.$t('Deathshroud') + '</span>',
-                    '{DOOM}': '<span class="text-characters-ds">' + this.$t('Doom') + '</span>',
-                    '{FIRESPITTER_ANT}': '<span class="text-characters-aa">' + this.$t('Firespitter') + '</span>',
-                    '{GHOST_SHIMMER_BEE}': '<span class="text-characters-aa">' + this.$t('Ghostshimmer') + '</span>',
-                    '{GLOW}': '<span class="text-characters-lu">' + this.$t('Glow') + '</span>',
-                    '{LADDER}': '<span class="text-characters-fk">' + this.$t('Ladder') + '</span>',
-                    '{MOUNT}': '<span class="text-characters-ct">' + this.$t('Mount') + '</span>',
-                    '{MOUNTED}': '<span class="text-characters-ct">' + this.$t('Mounted') + '</span>',
-                    '{PRAYER}': '<span class="text-characters-hp">' + this.$t('Prayer') + '</span>',
-                    '{PRAYERS}': '<span class="text-characters-hp">' + this.$t('Prayers') + '</span>',
-                    '{PROJECTILE}': '<span class="text-characters-bm">' + this.$t('Projectile') + '</span>',
-                    '{ROCKSPINE_TERMITE}': '<span class="text-characters-aa">' + this.$t('Rockspine') + '</span>',
-                    '{RUPTURED}': '<span class="text-characters-aa">' + this.$t('Ruptured') + '</span>',
-                    '{SATE}': '<span class="text-characters-rm">' + this.$t('Sate') + '</span>',
-                    '{SATED}': '<span class="text-characters-rm">' + this.$t('Sated') + '</span>',
-                    '{SCRAP}': '<span class="text-characters-qa">' + this.$t('Scrap') + '</span>',
-                    '{SHACKLE}': '<span class="text-characters-cg">' + this.$t('Shackle') + '</span>',
-                    '{SHACKLED}': '<span class="text-characters-cg">' + this.$t('Shackled') + '</span>',
-                    '{SONG}': '<span class="text-characters-ss">' + this.$t('Song') + '</span>',
-                    '{SPIRIT}': '<span class="text-characters-sp">' + this.$t('Spirit') + '</span>',
-                    '{SPIRITS}': '<span class="text-characters-sp">' + this.$t('Spirits') + '</span>',
-                    '{TIMED}': '<span class="text-characters-qa">' + this.$t('Timed') + '</span>',
-                    '{VOID}': '<span class="text-characters-ho">' + this.$t('Void') + '</span>',
-                    '{VOIDSIGHT}': '<span class="text-characters-ho">' + this.$t('Voidsight') + '</span>',
+                    // Class-colored Text
+                    '{COLONY}': '<span class="text-character-aa">' + this.$t('Colony') + '</span>',
+                    '{CULTIVATE}': '<span class="text-character-aa">' + this.$t('Cultivate') + '</span>',
+                    '{DEATHSHROUD_SPIDER}': '<span class="text-character-aa">' + this.$t('Deathshroud') + '</span>',
+                    '{FIRESPITTER_ANT}': '<span class="text-character-aa">' + this.$t('Firespitter') + '</span>',
+                    '{GHOST_SHIMMER_BEE}': '<span class="text-character-aa">' + this.$t('Ghostshimmer') + '</span>',
+                    '{ROCKSPINE_TERMITE}': '<span class="text-character-aa">' + this.$t('Rockspine') + '</span>',
+                    '{RUPTURED}': '<span class="text-character-aa">' + this.$t('Ruptured') + '</span>',
+                    '{AUGMENT}': '<span class="text-character-mt">' + this.$t('Augment') + '</span>',
+                    '{COMMAND}': '<span class="text-character-bt">' + this.$t('Command') + '</span>',
+                    '{DOOM}': '<span class="text-character-ds">' + this.$t('Doom') + '</span>',
+                    '{GLOW}': '<span class="text-character-lu">' + this.$t('Glow') + '</span>',
+                    '{LADDER}': '<span class="text-character-fk">' + this.$t('Ladder') + '</span>',
+                    '{MOUNT}': '<span class="text-character-ct">' + this.$t('Mount') + '</span>',
+                    '{MOUNTED}': '<span class="text-character-ct">' + this.$t('Mounted') + '</span>',
+                    '{PRAYER}': '<span class="text-character-hp">' + this.$t('Prayer') + '</span>',
+                    '{PRAYERS}': '<span class="text-character-hp">' + this.$t('Prayers') + '</span>',
+                    '{PROJECTILE}': '<span class="text-character-bm">' + this.$t('Projectile') + '</span>',
+                    '{SATE}': '<span class="text-character-rm">' + this.$t('Sate') + '</span>',
+                    '{SATED}': '<span class="text-character-rm">' + this.$t('Sated') + '</span>',
+                    '{SCRAP}': '<span class="text-character-qa">' + this.$t('Scrap') + '</span>',
+                    '{SHACKLE}': '<span class="text-character-cg">' + this.$t('Shackle') + '</span>',
+                    '{SHACKLED}': '<span class="text-character-cg">' + this.$t('Shackled') + '</span>',
+                    '{SONG}': '<span class="text-character-ss">' + this.$t('Song') + '</span>',
+                    '{SPIRIT}': '<span class="text-character-sp">' + this.$t('Spirit') + '</span>',
+                    '{SPIRITS}': '<span class="text-character-sp">' + this.$t('Spirits') + '</span>',
+                    '{TIMED}': '<span class="text-character-qa">' + this.$t('Timed') + '</span>',
+                    '{VOID}': '<span class="text-character-ho">' + this.$t('Void') + '</span>',
+                    '{VOIDSIGHT}': '<span class="text-character-ho">' + this.$t('Voidsight') + '</span>',
 
-                    //Class Icons
-                    '{CULTIVATE_ICON}': '<webp src="/img/icons/status/cultivate.png" width="20" class="inline"/>',
+                    // Class Ability Icons
+                    '{COLONY_ICON}': '<webp src="/img/icons/status/colony.png" width="20" class="inline"/>',
                     '{DEATHSHROUD_SPIDER_ICON}': '<webp src="/img/icons/status/deathshroud.png" width="20" class="inline"/>',
                     '{FIRESPITTER_ANT_ICON}': '<webp src="/img/icons/status/firespitter.png" width="20" class="inline"/>',
                     '{GHOST_SHIMMER_BEE_ICON}': '<webp src="/img/icons/status/ghostshimmer.png" width="20" class="inline"/>',
-                    '{GLOW_ICON}': '<webp src="/img/icons/status/glow.png" width="20" class="inline"/>',
-                    '{LADDER_ICON}': '<webp src="/img/icons/status/ladder.png" width="20" class="inline"/>',
-                    '{MOUNT_ICON}': '<webp src="/img/icons/status/mount.png" width="20" class="inline"/>',
-                    '{PROJECTILE_ICON}': '<webp src="/img/icons/status/projectile.png" width="20" class="inline"/>',
-                    '{ROCKSPINE_TERMITE_ICON}': '<webp src="/img/icons/status/rockspine.png" width="20" class="inline"/>',
-                    '{SCRAP_ICON}': '<webp src="/img/icons/status/scrap.png" width="20" class="inline"/>',
-                    '{SCRAP_X_ICON}': '<webp src="/img/icons/status/scrapX.png" width="20" class="inline"/>',
-                    '{SHACKLE_ICON}': '<webp src="/img/icons/status/shackle.png" width="20" class="inline"/>',
-                    '{SPIRIT_ICON}': '<webp src="/img/icons/status/spirit.png" width="20" class="inline"/>',
-                    '{VOID_ICON}': '<webp src="/img/icons/status/void.png" width="20" class="inline"/>',
-                    '{VOID_X_ICON}': '<webp src="/img/icons/status/voidX.png" width="20" class="inline"/>',
+                    '{VOIDSIGHT_ICON}': '<webp src="/img/icons/status/voidsight.png" width="20" class="inline"/>',
 
+                    // Damage Modifiers
                     '{-2_WHITE}': '<webp src="/img/icons/perks/-2_white.png" width="20" class="inline"/>',
                     '{-1_WHITE}': '<webp src="/img/icons/perks/-1_white.png" width="20" class="inline"/>',
                     '{+0_WHITE}': '<webp src="/img/icons/perks/+0_white.png" width="20" class="inline"/>',
@@ -215,9 +209,12 @@ export default {
                     '{+X_WHITE}': '<webp src="/img/icons/perks/+x_white.png" width="20" class="inline"/>',
                     '{2X_WHITE}': '<webp src="/img/icons/perks/2x_white.png" width="20" class="inline"/>',
                     '{AGAIN}': '<webp src="/img/icons/perks/again_white.png" width="20" class="inline"/>',
+
                     '{NOTE_115}': '<webp src="/img/notes/note-115.png" width="421"/>',
                     '{NOTE_42}': '<webp src="/img/notes/note-42.png" width="421"/>',
+                    '{PAGE}': this.$t('PAGE') + ' <webp src="/img/icons/general/page.png" width="20" class="opacity-80 inline"/>',
 
+                    // Items
                     '{BODY}': '<webp src="/img/icons/equipment/body.png" alt="body" width="20"/>',
                     '{HEAD}': '<webp src="/img/icons/equipment/head.png" alt="head" width="20"/>',
                     '{LEGS}': '<webp src="/img/icons/equipment/legs.png" alt="legs" width="20"/>',
