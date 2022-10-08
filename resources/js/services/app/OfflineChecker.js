@@ -1,4 +1,3 @@
-import dayjs from "dayjs";
 import ApiService from "../ApiService";
 
 export default class OfflineChecker {
@@ -16,7 +15,7 @@ export default class OfflineChecker {
     }
 
     check() {
-        this.apiService.head('/ping?t=' + dayjs().format('x'))
+        this.apiService.head('/ping?t=' + Date.now())
             .then(() => {
                 if (this.isOffline) {
                     this.$bus.$emit('toast', 'Back online!');
