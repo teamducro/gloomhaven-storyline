@@ -1178,7 +1178,7 @@ export default {
     "cs-32": {
         "name": "Confronting the Past",
         "rewards": [
-            "Read {PAGE} 75 (<a class=\"desc-link\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
+            "Read {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
             "Password “Water Hydra”"
         ]
     },
