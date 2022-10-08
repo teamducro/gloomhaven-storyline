@@ -358,7 +358,7 @@ export default {
     "AA": {
         "name": "Amber Aegis",
         "perks": [
-            "Replace one {-2_WHITE} card with one {-1_WHITE} “Place one {COLONY} {COLONY_TOKEN} token of your choice on any empty hex within {RANGE}2” card",
+            "Replace one {-2_WHITE} card with one {-1_WHITE} “Place one {COLONY} {COLONY_ICON} token of your choice on any empty hex within {RANGE}2” card",
             "Remove two {-1_WHITE} cards",
             "Remove four {+0_WHITE} cards",
             "Replace one {-1_WHITE} card with one {+2_WHITE} {MUDDLE} card",
@@ -369,7 +369,7 @@ export default {
             "Add one {AGAIN} {RETALIATE}1, {RANGE}3 card",
             "Add one {+2_WHITE} {EARTH_FIRE} card",
             "Ignore negative item effects and add one {+1_WHITE} card",
-            "Ignore negative scenario effects and add one “{+X_WHITE}, where X is the number of active {CULTIVATE} {CULTIVATE_ICON} actions” card"
+            "Ignore negative scenario effects and add one “{+X_WHITE}, where X is the number of active {CULTIVATE} {AA_CIRCLE} actions” card"
         ]
     },
     "QA": {
@@ -392,7 +392,7 @@ export default {
         "perks": [
             "Remove two {-1_WHITE} cards",
             "Replace two {+0_WHITE} cards with two {AGAIN} {PIERCE}3 cards",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{+3_WHITE} if {PROJECTILE} {PROJECTILE_ICON}” card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{+3_WHITE} if {PROJECTILE} {BM_CIRCLE}” card",
             "Add one {+2_WHITE} {IMMOBILIZE} card",
             "Replace one {+1_WHITE} card with two {+1_WHITE} “{RELALIATE}1 {RANGE}3” card",
             "Add two {+1_WHITE} “{PULL}3, Self, toward the target” cards",
@@ -423,16 +423,16 @@ export default {
     "CG": {
         "name": "Chainguard",
         "perks": [
-            "Replace one {-1_WHITE} card with one {+1_WHITE} “{SHACKLE} {SHACKLE_ICON}” card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{+2_WHITE} if the target is {SHACKLED} {SHACKLE_ICON}” card",
+            "Replace one {-1_WHITE} card with one {+1_WHITE} “{SHACKLE} {CG_CIRCLE}” card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{+2_WHITE} if the target is {SHACKLED} {CG_CIRCLE}” card",
             "Replace two {+0_WHITE} cards with one {AGAIN} “{SHIELD}1, Self” card",
             "Add two {AGAIN} “{RETALIATE}1, Self” cards",
             "Add three {AGAIN} {SWING}3 cards",
             "Replace one {+1_WHITE} card with one {+2_WHITE} {WOUND} card",
-            "Add one {+1_WHITE} “{DISARM} if the target is {SHACKLED} {SHACKLE_ICON}” card",
+            "Add one {+1_WHITE} “{DISARM} if the target is {SHACKLED} {CG_CIRCLE}” card",
             "Add one {+1_WHITE} “Create a 2 damage trap in an empty hex within {RANGE}2” card",
             "Add two {AGAIN} “{HEAL}1, Self” cards",
-            "Add one {+2_WHITE} “{SHACKLE} {SHACKLE_ICON}” card",
+            "Add one {+2_WHITE} “{SHACKLE} {CG_CIRCLE}” card",
             "Ignore negative scenario effects and remove one {+0_WHITE} card"
         ]
     },
@@ -457,7 +457,7 @@ export default {
         "perks": [
             "Remove two {-1_WHITE} cards",
             "Replace one {-1_WHITE} card with one {+0_WHITE} “{STRENGTHEN} (Ally)” card",
-            "Replace two {+0_WHITE} cards with two {+0_WHITE} “{+2_WHITE} if you are on {LADDER} {LADDER_ICON}” cards",
+            "Replace two {+0_WHITE} cards with two {+0_WHITE} “{+2_WHITE} if you are on {LADDER} {FK_CIRCLE}” cards",
             "Replace one {+0_WHITE} card with one {+1_WHITE} {FIRE} card",
             "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card",
             "Replace two {+1_WHITE} cards with one {+2_WHITE} {FIRE} card",
@@ -493,7 +493,7 @@ export default {
             "Add one {-2_WHITE} {EARTH} card and two {+2_WHITE} {DARK} cards",
             "Replace one {-1_WHITE} card with one {-2_WHITE} {STUN} and one {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}” card",
             "Replace one {-2_WHITE} card with one {+0_WHITE} {DISARM} card and one {-1_WHITE} {ANY} card",
-            "Replace one {-1_WHITE} card with one {AGAIN} {+1_WHITE} “{VOID_ICON} and one {AGAIN} {-1_WHITE} {CURSE}” card",
+            "Replace one {-1_WHITE} card with one {AGAIN} {+1_WHITE} “{HO_CIRCLE} and one {AGAIN} {-1_WHITE} {CURSE}” card",
             "Replace two {+1_WHITE} cards with one {+3_WHITE} “{REGENERATE}, Self” card",
             "Replace one {+0_WHITE} card with one {+1_WHITE} “Create a Void pit in an empty hex {RANGE}2” card",
             "Ignore negative scenario effects and add one {+0_WHITE} “{WARD}, Self” cards"
@@ -508,7 +508,7 @@ export default {
             "Replace one {-1_WHITE} card with one {+0_WHITE} {FIRE} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} {LIGHT} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} {DARK} card",
-            "Replace one {-2_WHITE} card with one {-2_WHITE} “Perform one {GLOW} {GLOW_ICON} ability” card",
+            "Replace one {-2_WHITE} card with one {-2_WHITE} “Perform one {GLOW} {LU_CIRCLE} ability” card",
             "Add one {+0_WHITE} {ANY} card",
             "Add one {AGAIN} {+1_WHITE} “{HEAL}1, Self” card",
             "TODO:: Add one {+0_WHITE} “{POISON}, Target all  enemies in the depicted {AOE.CLEAVE_0_1} area” card",
@@ -540,8 +540,8 @@ export default {
             "Replace one {-1_WHITE} card with one {+0_WHITE} {RUPTURE} card",
             "Replace one {+0_WHITE} card with one {+1_WHITE} “Add {+3_WHITE} instead if the target has {RUPTURE} or {WOUND}” card",
             "Replace one {+0_WHITE} card with one {AGAIN} “{HEAL}1, Self, {EMPOWER}” card",
-            "Once each scenario, become {SATED_ICON} after collecting your 5th loot token",
-            "Become {SATED_ICON} each time you lose a card to negate suffering damage",
+            "Once each scenario, become {RM_CIRCLE} after collecting your 5th loot token",
+            "Become {RM_CIRCLE} each time you lose a card to negate suffering damage",
             "Whenever one of your abilities causes at least one enemey to gain {RUPTURE}, immediately after that ability perform “{MOVE}1",
             "Ignore negative scenario effects and remove one {-1_WHITE} card"
         ]
@@ -550,7 +550,7 @@ export default {
         "name": "Spirit Caller",
         "perks": [
             "Replace one {-2_WHITE} card with one {-1_WHITE} card and one {+1_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SPIRIT_ICON} performed the attack” card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SP_CIRCLE} performed the attack” card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} card and one {AGAIN} {POISON} card",
             "Replace one {+0_WHITE} card with one {+1_WHITE} {WIND} card",
             "Replace one {+0_WHITE} card with one {+1_WHITE} {DARK} card",

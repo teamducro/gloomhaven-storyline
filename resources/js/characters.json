@@ -1253,7 +1253,7 @@
             "perks": [
                 {
                     "count": 1,
-                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} “Place one {COLONY} {COLONY_TOKEN} token of your choice on any empty hex within {RANGE}2” card"
+                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} “Place one {COLONY} {COLONY_ICON} token of your choice on any empty hex within {RANGE}2” card"
                 },
                 {
                     "count": 1,
@@ -1297,7 +1297,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Ignore negative scenario effects and add one “{+X_WHITE}, where X is the number of active {CULTIVATE} {CULTIVATE_ICON} actions” card"
+                    "desc": "Ignore negative scenario effects and add one “{+X_WHITE}, where X is the number of active {CULTIVATE} {AA_CIRCLE} actions” card"
                 }
             ]
         },
@@ -1374,7 +1374,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{+3_WHITE} if {PROJECTILE} {PROJECTILE_ICON}” card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{+3_WHITE} if {PROJECTILE} {BM_CIRCLE}” card"
                 },
                 {
                     "count": 2,
@@ -1484,11 +1484,11 @@
             "perks": [
                 {
                     "count": 2,
-                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} “{SHACKLE} {SHACKLE_ICON}” card"
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} “{SHACKLE} {CG_CIRCLE}” card"
                 },
                 {
                     "count": 2,
-                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{+2_WHITE} if the target is {SHACKLED} {SHACKLE_ICON}” card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{+2_WHITE} if the target is {SHACKLED} {CG_CIRCLE}” card"
                 },
                 {
                     "count": 2,
@@ -1508,7 +1508,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Add one {+1_WHITE} “{DISARM} if the target is {SHACKLED} {SHACKLE_ICON}” card"
+                    "desc": "Add one {+1_WHITE} “{DISARM} if the target is {SHACKLED} {CG_CIRCLE}” card"
                 },
                 {
                     "count": 1,
@@ -1520,7 +1520,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Add one {+2_WHITE} “{SHACKLE} {SHACKLE_ICON}” card"
+                    "desc": "Add one {+2_WHITE} “{SHACKLE} {CG_CIRCLE}” card"
                 },
                 {
                     "count": 1,
@@ -1606,7 +1606,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Replace two {+0_WHITE} cards with two {+0_WHITE} “{+2_WHITE} if you are on {LADDER} {LADDER_ICON}” cards"
+                    "desc": "Replace two {+0_WHITE} cards with two {+0_WHITE} “{+2_WHITE} if you are on {LADDER} {FK_CIRCLE}” cards"
                 },
                 {
                     "count": 1,
@@ -1736,7 +1736,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Replace one {-1_WHITE} card with one {AGAIN} {+1_WHITE} “{VOID_ICON} and one {AGAIN} {-1_WHITE} {CURSE}” card"
+                    "desc": "Replace one {-1_WHITE} card with one {AGAIN} {+1_WHITE} “{HO_CIRCLE} and one {AGAIN} {-1_WHITE} {CURSE}” card"
                 },
                 {
                     "count": 2,
@@ -1789,7 +1789,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Replace one {-2_WHITE} card with one {-2_WHITE} “Perform one {GLOW} {GLOW_ICON} ability” card"
+                    "desc": "Replace one {-2_WHITE} card with one {-2_WHITE} “Perform one {GLOW} {LU_CIRCLE} ability” card"
                 },
                 {
                     "count": 2,
@@ -1902,11 +1902,11 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Once each scenario, become {SATED_ICON} after collecting your 5th loot token"
+                    "desc": "Once each scenario, become {RM_CIRCLE} after collecting your 5th loot token"
                 },
                 {
                     "count": 1,
-                    "desc": "Become {SATED_ICON} each time you lose a card to negate suffering damage"
+                    "desc": "Become {RM_CIRCLE} each time you lose a card to negate suffering damage"
                 },
                 {
                     "count": 1,
@@ -1932,7 +1932,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SPIRIT_ICON} performed the attack” card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SP_CIRCLE} performed the attack” card"
                 },
                 {
                     "count": 2,
