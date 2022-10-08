@@ -1185,7 +1185,7 @@ export default {
     "cs-32": {
         "name": "Confronting the Past",
         "rewards": [
-            "Read {PAGE} 75 (https://www.thecrimsonscales.com/endgame)",
+            "Read {PAGE} 75 (<a class=\"desc-link\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
             "Password “Water Hydra”"
         ]
     },
@@ -1414,42 +1414,112 @@ export default {
         ]
     },
     "cs-AA1": {
-        "name": "The Riches of the Steelsilk"
+        "name": "The Riches of the Steelsilk",
+        "rewards": [
+            "“Rockspine Bulwark” (Item AA01)"
+        ]
     },
     "cs-AA2": {
-        "name": "Malign Echoes"
+        "name": "Malign Echoes",
+        "rewards": [
+            "“Ghostshimmer Honey” (Item AA02)"
+        ]
     },
     "cs-AA3": {
-        "name": "Hive Guardian"
+        "name": "Hive Guardian",
+        "rewards": [
+            "“Steelsilk Spinneret” (Item AA03)"
+        ]
     },
     "cs-QA1": {
-        "name": "Capstone Test"
+        "name": "Capstone Test",
+        "rewards": [
+            [
+                "“Ingenious Inventor” quest complete",
+                "Open envelope {QA}",
+                "“Steam Piston Hammer” design (Item QA02)",
+                "“Spider Climb Gloves” design (Item QA03)"
+            ],
+            [
+                "“Ingenious Inventor” quest complete",
+                "Open envelope {QA}",
+                "Gain one of the following: “Steam Piston Hammer” (Item QA02) OR “Spider Climb Gloves” (Item QA03)",
+                "Add a copy of the chosen item to the city's available supply",
+                "Add the other item to the random item design deck"
+            ],
+            [
+                "“Ingenious Inventor” quest complete",
+                "Open envelope {QA}",
+                "“Steam Piston Hammer” (Item QA02)",
+                "“Spider Climb Gloves” (Item QA03)",
+                "Add copies to the city's available supply"
+            ],
+        ]
     },
     "cs-QA2": {
-        "name": "Mother Lode"
+        "name": "Mother Lode",
+        "rewards": [
+            "“Scrap Diver” quest complete",
+            "Open envelope {QA}",
+            "15xA gold each (where A is the number of Ancient Scrap recovered",
+            "Add City Event QA-03 to the deck"
+        ]
     },
     "cs-QA3": {
-        "name": "Magnum Opus"
+        "name": "Magnum Opus",
+        "rewards": [
+            "“Auscudee of the Makers” (Item QA06)"
+        ]
     },
     "cs-RM1": {
         "name": "Mind your Manners"
     },
     "cs-RM2": {
-        "name": "Sinking Kingdom"
+        "name": "Sinking Kingpin",
+        "rewards": [
+            "“Brutal Enforcer” quest complete",
+            "Open Envelope {RM}",
+            "+1 prosperity"
+        ]
     },
     "cs-RM3": {
         "name": "Ruined Colony"
     },
     "cs-RM4": {
-        "name": "Terrorscale Lair"
+        "name": "Terrorscale Lair",
+        "rewards": [
+            "“Apex Predator” quest complete",
+            "Open Envelope {RM}",
+            "“Terrorscale Saber” design (Item RM03)",
+            "“Terrorscale Crossblades” design (Item RM04)",
+        ]
     },
     "cs-RM5": {
-        "name": "Unseen Plight"
+        "name": "Unseen Plight",
+        "rewards": [
+            [
+                "40 collective gold",
+                "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+            ],
+            [
+                "2 ✓ each",
+                "“Lucky Eye” design (Item 063)",
+            ]
+        ]
     },
     "cs-RM6": {
-        "name": "The Fall of Shadow's Respite"
+        "name": "The Fall of Shadow's Respite",
+        "rewards": [
+            "“Rite of Ruin” design (Item RM05)",
+            "If at least three Vermlings were alive at the end of the eighth round: 5 gold",
+            "If at least five Vermlings were alive at the end of the eighth round: ✓"
+        ]
     },
     "cs-RM7": {
-        "name": "Insatiable"
+        "name": "Insatiable",
+        "rewards": [
+            "10 experience each",
+            "“Savage Cuirass” design (Item RM06)",
+        ]
     }
 }

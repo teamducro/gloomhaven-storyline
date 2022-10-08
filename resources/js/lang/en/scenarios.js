@@ -1178,7 +1178,7 @@ export default {
     "cs-32": {
         "name": "Confronting the Past",
         "rewards": [
-            "Read {PAGE} 75 (https://www.thecrimsonscales.com/endgame)",
+            "Read {PAGE} 75 (<a class=\"desc-link\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
             "Password “Water Hydra”"
         ]
     },
@@ -1493,7 +1493,7 @@ export default {
                 "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
             ],
             [
-                "2 ✓ each"
+                "2 ✓ each",
                 "“Lucky Eye” design (Item 063)",
             ]
         ]
@@ -1502,7 +1502,7 @@ export default {
         "name": "The Fall of Shadow's Respite",
         "rewards": [
             "“Rite of Ruin” design (Item RM05)",
-            "If at least three Vermlings were alive at the end of the eighth round: 5 gold"
+            "If at least three Vermlings were alive at the end of the eighth round: 5 gold",
             "If at least five Vermlings were alive at the end of the eighth round: ✓"
         ]
     },

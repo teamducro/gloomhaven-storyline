@@ -944,7 +944,7 @@
                 30
             ],
             "rewards": [
-                "Read {PAGE} 75 (https://www.thecrimsonscales.com/endgame)",
+                "Read {PAGE} 75 (<a class=\"desc-link\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
                 "Password “Water Hydra”"
             ],
             "monsters": [
