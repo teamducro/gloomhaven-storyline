@@ -244,7 +244,7 @@
         "game": "cs",
         "name": "razorweb puppetry",
         "character_id": "AA",
-        "level": "m",
+        "level": 1.5,
         "initiative": "39"
     },
     {
@@ -492,7 +492,7 @@
         "game": "cs",
         "name": "creative sparks",
         "character_id": "BK",
-        "level": "m",
+        "level": 1.5,
         "initiative": "40"
     },
     {
@@ -724,7 +724,7 @@
         "game": "cs",
         "name": "pummeling chain",
         "character_id": "BM",
-        "level": "m",
+        "level": 1.5,
         "initiative": "17"
     },
     {
@@ -964,7 +964,7 @@
         "game": "cs",
         "name": "rope pit",
         "character_id": "CG",
-        "level": "m",
+        "level": 1.5,
         "initiative": "32"
     },
     {
@@ -1204,7 +1204,7 @@
         "game": "cs",
         "name": "call of the wild",
         "character_id": "CT",
-        "level": "m",
+        "level": 1.5,
         "initiative": "10"
     },
     {
@@ -1444,7 +1444,7 @@
         "game": "cs",
         "name": "improvised methods",
         "character_id": "FK",
-        "level": "m",
+        "level": 1.5,
         "initiative": "16"
     },
     {
@@ -1684,7 +1684,7 @@
         "game": "cs",
         "name": "the void consumes",
         "character_id": "HO",
-        "level": "m",
+        "level": 1.5,
         "initiative": "35"
     },
     {
@@ -1996,7 +1996,7 @@
         "game": "cs",
         "name": "uplifting ascension",
         "character_id": "HP",
-        "level": "m",
+        "level": 1.5,
         "initiative": "80"
     },
     {
@@ -2244,7 +2244,7 @@
         "game": "cs",
         "name": "drawn into the light",
         "character_id": "LU",
-        "level": "m",
+        "level": 1.5,
         "initiative": "47"
     },
     {
@@ -2484,7 +2484,7 @@
         "game": "cs",
         "name": "giant slayer",
         "character_id": "MF",
-        "level": "m",
+        "level": 1.5,
         "initiative": "22"
     },
     {
@@ -2716,7 +2716,7 @@
         "game": "cs",
         "name": "adaptive engineering",
         "character_id": "QA",
-        "level": "m",
+        "level": 1.5,
         "initiative": "75"
     },
     {
@@ -2964,7 +2964,7 @@
         "game": "cs",
         "name": "blood rite",
         "character_id": "RM",
-        "level": "m",
+        "level": 1.5,
         "initiative": "67"
     },
     {
@@ -3204,7 +3204,7 @@
         "game": "cs",
         "name": "terror of the deep",
         "character_id": "SP",
-        "level": "m",
+        "level": 1.5,
         "initiative": "33"
     },
     {
@@ -3444,7 +3444,7 @@
         "game": "cs",
         "name": "deflection",
         "character_id": "ST",
-        "level": "m",
+        "level": 1.5,
         "initiative": "46"
     }
 ]
