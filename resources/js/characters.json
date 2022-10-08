@@ -6,6 +6,9 @@
             "game": "gh",
             "translatedName": "characters.BR.name",
             "abilityCount": 10,
+            "starting_group": [
+                "gh_unlocked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -59,6 +62,9 @@
             "game": "gh",
             "translatedName": "characters.CH.name",
             "abilityCount": 11,
+            "starting_group": [
+                "gh_unlocked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -108,6 +114,9 @@
             "game": "gh",
             "translatedName": "characters.SW.name",
             "abilityCount": 8,
+            "starting_group": [
+                "gh_unlocked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -161,6 +170,9 @@
             "game": "gh",
             "translatedName": "characters.TI.name",
             "abilityCount": 12,
+            "starting_group": [
+                "gh_unlocked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -214,6 +226,9 @@
             "game": "gh",
             "translatedName": "characters.SC.name",
             "abilityCount": 9,
+            "starting_group": [
+                "gh_unlocked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -267,6 +282,9 @@
             "game": "gh",
             "translatedName": "characters.MT.name",
             "abilityCount": 10,
+            "starting_group": [
+                "gh_unlocked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -324,6 +342,9 @@
             "game": "gh",
             "translatedName": "characters.DS.name",
             "abilityCount": 12,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -373,6 +394,9 @@
             "game": "gh",
             "translatedName": "characters.EL.name",
             "abilityCount": 10,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -434,6 +458,9 @@
             "game": "gh",
             "translatedName": "characters.SB.name",
             "abilityCount": 10,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -469,7 +496,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Add one {+0_WHITE} Refresh an item card"
+                    "desc": "Add one {+0_WHITE} {REFRESH} an item card"
                 }
             ]
         },
@@ -479,6 +506,9 @@
             "game": "gh",
             "translatedName": "characters.SS.name",
             "abilityCount": 9,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -536,6 +566,9 @@
             "game": "gh",
             "translatedName": "characters.SK.name",
             "abilityCount": 11,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -589,6 +622,9 @@
             "game": "gh",
             "translatedName": "characters.NS.name",
             "abilityCount": 9,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -638,6 +674,9 @@
             "game": "gh",
             "translatedName": "characters.SU.name",
             "abilityCount": 9,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -687,6 +726,9 @@
             "game": "gh",
             "translatedName": "characters.BE.name",
             "abilityCount": 10,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -736,6 +778,9 @@
             "game": "gh",
             "translatedName": "characters.QM.name",
             "abilityCount": 9,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -771,7 +816,7 @@
                 },
                 {
                     "count": 3,
-                    "desc": "Add one {+0_WHITE} Refresh an item card"
+                    "desc": "Add one {+0_WHITE} {REFRESH} an item card"
                 },
                 {
                     "count": 1,
@@ -785,6 +830,9 @@
             "game": "gh",
             "translatedName": "characters.PH.name",
             "abilityCount": 11,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -834,6 +882,9 @@
             "game": "gh",
             "translatedName": "characters.BT.name",
             "abilityCount": 10,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -875,6 +926,9 @@
             "game": "gh",
             "translatedName": "characters.BS.name",
             "abilityCount": 11,
+            "starting_group": [
+                "gh_locked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -928,6 +982,9 @@
             "game": "fc",
             "translatedName": "characters.DR.name",
             "abilityCount": 9,
+            "starting_group": [
+                "fc_unlocked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -989,6 +1046,9 @@
             "game": "jotl",
             "translatedName": "characters.RG.name",
             "abilityCount": 10,
+            "starting_group": [
+                "jotl_unlocked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -1038,6 +1098,9 @@
             "game": "jotl",
             "translatedName": "characters.DM.name",
             "abilityCount": 9,
+            "starting_group": [
+                "jotl_unlocked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -1083,6 +1146,9 @@
             "game": "jotl",
             "translatedName": "characters.HT.name",
             "abilityCount": 10,
+            "starting_group": [
+                "jotl_unlocked"
+            ],
             "perks": [
                 {
                     "count": 2,
@@ -1132,6 +1198,9 @@
             "game": "jotl",
             "translatedName": "characters.VW.name",
             "abilityCount": 11,
+            "starting_group": [
+                "jotl_unlocked"
+            ],
             "perks": [
                 {
                     "count": 1,
@@ -1178,10 +1247,13 @@
             "game": "cs",
             "translatedName": "characters.AA.name",
             "abilityCount": 11,
+            "starting_group": [
+                "cs_addon"
+            ],
             "perks": [
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} “Place one {COLONY} token of your choice on any empty hex within {RANGE}2” card"
+                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} “Place one {COLONY} {COLONY_TOKEN} token of your choice on any empty hex within {RANGE}2” card"
                 },
                 {
                     "count": 1,
@@ -1213,11 +1285,11 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Add one {AGAIN} {RETALIATE}1, {RANGE}3 card"
+                    "desc": "Add one {AGAIN} {RETALIATE}1, {RANGE}3 card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: "
+                    "desc": "Add one {+2_WHITE} {EARTH_FIRE} card"
                 },
                 {
                     "count": 1,
@@ -1225,7 +1297,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Ignore negative scenario effects and add one {+X_WHITE}, where X is the number of active Cultivate {CULTIVATE} actions card"
+                    "desc": "Ignore negative scenario effects and add one “{+X_WHITE}, where X is the number of active {CULTIVATE} {CULTIVATE_ICON} actions” card"
                 }
             ]
         },
@@ -1235,10 +1307,13 @@
             "game": "cs",
             "translatedName": "characters.QA.name",
             "abilityCount": 9,
+            "starting_group": [
+                "cs_addon"
+            ],
             "perks": [
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} {ANY} card"
+                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} {ANY} card"
                 },
                 {
                     "count": 1,
@@ -1254,7 +1329,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Replace one {+0_WHITE} card with one {+0_WHITE} Refresh a spent item card"
+                    "desc": "Replace one {+0_WHITE} card with one {+0_WHITE} {REFRESH} a spent item card"
                 },
                 {
                     "count": 2,
@@ -1299,7 +1374,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {+3_WHITE} if {PROJECTILE} card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{+3_WHITE} if {PROJECTILE} {PROJECTILE_ICON}” card"
                 },
                 {
                     "count": 2,
@@ -1307,15 +1382,15 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {+1_WHITE} card with two {+1_WHITE} {RELALIATE}1 {RANGE}3 card"
+                    "desc": "Replace one {+1_WHITE} card with two {+1_WHITE} “{RELALIATE}1 {RANGE}3” card"
                 },
                 {
                     "count": 1,
-                    "desc": "Add two {+1_WHITE} {PULL}3, Self, toward the target cards"
+                    "desc": "Add two {+1_WHITE} “{PULL}3, Self, toward the target” cards"
                 },
                 {
                     "count": 1,
-                    "desc": "Add one {+0_WHITE} {STRENGTHEN}, Self card"
+                    "desc": "Add one {+0_WHITE} “{STRENGTHEN}, Self” card"
                 },
                 {
                     "count": 1,
@@ -1327,11 +1402,11 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Add two {AGAIN} {SHIELD}1, Self cards"
+                    "desc": "Add two {AGAIN} “{SHIELD}1, Self” cards"
                 },
                 {
                     "count": 1,
-                    "desc": "Add two {AGAIN} {HEAL}1, Self cards"
+                    "desc": "Add two {AGAIN} “{HEAL}1, Self” cards"
                 },
                 {
                     "count": 1,
@@ -1356,19 +1431,19 @@
             "perks": [
                 {
                     "count": 3,
-                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {ANYX} to add +2 {ATTACK} card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{ANY_X} to add +2 {ATTACK}” card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-2_WHITE} {RECOVER} one random card from your discard pile card"
+                    "desc": "Replace one {-2_WHITE} card with one {-2_WHITE} “{RECOVER} one random card from your discard pile” card"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace two {+0_WHITE} cards with one {+1_WHITE} {HEAL}1, (Ally) {RANGE}2 card"
+                    "desc": "Replace two {+0_WHITE} cards with one {+1_WHITE} “{HEAL}1, (Ally) {RANGE}2” card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace two {+0_WHITE} cards with one {+1_WHITE} {SHIELD}1, (Ally) {RANGE}2 card"
+                    "desc": "Replace two {+0_WHITE} cards with one {+1_WHITE} “{SHIELD}1, (Ally) {RANGE}2” card"
                 },
                 {
                     "count": 2,
@@ -1376,19 +1451,19 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Add one {+1_WHITE} {STRENGTHEN} (Ally) {RANGE}2 card"
+                    "desc": "Add one {+1_WHITE} “{STRENGTHEN} (Ally) {RANGE}2” card"
                 },
                 {
                     "count": 1,
-                    "desc": "Add one {AGAIN} {PUSH}1 or {PULL}1, {WIND} card and one {AGAIN} {IMMOBILIZE}, {ICE} card"
+                    "desc": "Add one {AGAIN} “{PUSH}1 or {PULL}1, {WIND}” card and one {AGAIN} “{IMMOBILIZE}, {ICE}” card"
                 },
                 {
                     "count": 1,
-                    "desc": "Add one {AGAIN} {HEAL}1, {RANGE}3, {ICE} card and one {AGAIN} {PIERCE}2, {FIRE} card"
+                    "desc": "Add one {AGAIN} “{HEAL}1, {RANGE}3, {ICE}” card and one {AGAIN} “{PIERCE}2, {FIRE}” card"
                 },
                 {
                     "count": 1,
-                    "desc": "Add three {AGAIN} {ANYX}:{ANY} cards"
+                    "desc": "Add three {AGAIN} “{ANY_X}:{ANY}” cards"
                 },
                 {
                     "count": 1,
@@ -1409,23 +1484,23 @@
             "perks": [
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+1_WHITE} {SHACKLE} card"
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} “{SHACKLE} {SHACKLE_ICON}” card"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE}, {+2_WHITE} if the target is {SHACKLE} card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{+2_WHITE} if the target is {SHACKLED} {SHACKLE_ICON}” card"
                 },
                 {
                     "count": 2,
-                    "desc": "Replace two {+0_WHITE} cards with one {AGAIN} {SHIELD}1, Self card"
+                    "desc": "Replace two {+0_WHITE} cards with one {AGAIN} “{SHIELD}1, Self” card"
                 },
                 {
                     "count": 1,
-                    "desc": "Add two {AGAIN} {RETALIATE}1, Self cards"
+                    "desc": "Add two {AGAIN} “{RETALIATE}1, Self” cards"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add three {AGAIN} {SWING}3 cards"
+                    "desc": "Add three {AGAIN} {SWING}3 cards"
                 },
                 {
                     "count": 1,
@@ -1433,19 +1508,19 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add one {+1_WHITE} {DISARM} if the target iis {SHACKLE} card"
+                    "desc": "Add one {+1_WHITE} “{DISARM} if the target is {SHACKLED} {SHACKLE_ICON}” card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add one {+1_WHITE} Create a 2 damage trap in an empty hex within {RANGE}2 card"
+                    "desc": "Add one {+1_WHITE} “Create a 2 damage trap in an empty hex within {RANGE}2” card"
                 },
                 {
                     "count": 1,
-                    "desc": "Add two {AGAIN} {HEAL}1, Self cards"
+                    "desc": "Add two {AGAIN} “{HEAL}1, Self” cards"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Add one {+2_WHITE} {SHACKLE} card"
+                    "desc": "Add one {+2_WHITE} “{SHACKLE} {SHACKLE_ICON}” card"
                 },
                 {
                     "count": 1,
@@ -1470,27 +1545,27 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {HEAL}1, {CT} card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{HEAL}1, {CT}” card"
                 },
                 {
                     "count": 2,
-                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {HEAL}1, all summoned allies owned card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{HEAL}1, all summoned allies owned” card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO::Replace one {-2_WHITE} card with one {-2_WHITE} {BLESS}, Self card"
+                    "desc": "Replace one {-2_WHITE} card with one {-2_WHITE} “{BLESS}, Self” card"
                 },
                 {
                     "count": 1,
-                    "desc": "Replace two {+0_WHITE} cards with one {+0_WHITE} {IMMOBILIZE} and {PUSH}1 card"
+                    "desc": "Replace two {+0_WHITE} cards with one {+0_WHITE} “{IMMOBILIZE} and {PUSH}1” card"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO::Replace one {+0_WHITE} card with one {+X_WHITE}, where X is the number of summoned allies you own card"
+                    "desc": "Replace one {+0_WHITE} card with one “{+X_WHITE}, where X is the number of summoned allies you own” card"
                 },
                 {
                     "count": 1,
-                    "desc": "Replace one {+1_WHITE} card with two {+1_WHITE} {AGAIN}{+1_WHITE} if summon is attacking card"
+                    "desc": "Replace one {+1_WHITE} card with two {+1_WHITE} “{AGAIN}{+1_WHITE} if summon is attacking” card"
                 },
                 {
                     "count": 1,
@@ -1502,7 +1577,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Add two {AGAIN} {PIERCE}2, ignore {RETALIATE} cards"
+                    "desc": "Add two {AGAIN} “{PIERCE}2, ignore {RETALIATE}” cards"
                 },
                 {
                     "count": 1,
@@ -1527,11 +1602,11 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {STRENGTHEN} (Ally) card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{STRENGTHEN} (Ally)” card"
                 },
                 {
                     "count": 2,
-                    "desc": "Replace two {+0_WHITE} cards with two {+0_WHITE} {+2_WHITE} if you are on {LADDER} cards"
+                    "desc": "Replace two {+0_WHITE} cards with two {+0_WHITE} “{+2_WHITE} if you are on {LADDER} {LADDER_ICON}” cards"
                 },
                 {
                     "count": 1,
@@ -1551,11 +1626,11 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Add one {+1_WHITE} {STRENGTHEN} (Ally) card"
+                    "desc": "Add one {+1_WHITE} “{STRENGTHEN} (Ally)” card"
                 },
                 {
                     "count": 2,
-                    "desc": "Add two {AGAIN} {HEAL}1, {RANGE}1 cards"
+                    "desc": "Add two {AGAIN} “{HEAL}1, {RANGE}1” cards"
                 },
                 {
                     "count": 1,
@@ -1600,11 +1675,11 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1 (Ally) card"
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} “{SHIELD}1 (Ally)” card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} Give one ally a 'Prayer' ability card and one {+0_WHITE} card"
+                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} “Give one ally a '{PRAYER}' ability card” and one {+0_WHITE} card"
                 },
                 {
                     "count": 2,
@@ -1612,7 +1687,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Add two {AGAIN} {HEAL}1, Self or ally cards"
+                    "desc": "Add two {AGAIN} “{HEAL}1, Self or Ally” cards"
                 },
                 {
                     "count": 2,
@@ -1641,11 +1716,11 @@
             "perks": [
                 {
                     "count": 2,
-                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {HEAL}2, self card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{HEAL}2, self” card"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace two {+0_WHITE} cards with one {+0_WHITE} {VOIDSIGHT} cards"
+                    "desc": "Replace two {+0_WHITE} cards with one {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}” cards"
                 },
                 {
                     "count": 2,
@@ -1653,7 +1728,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {-1_WHITE} card with one {-2_WHITE} {STUN} and one {+0_WHITE} {VOIDSIGHT} card"
+                    "desc": "Replace one {-1_WHITE} card with one {-2_WHITE} {STUN} and one {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}” card"
                 },
                 {
                     "count": 1,
@@ -1661,19 +1736,19 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {-1_WHITE} card with one {AGAIN} {+1_WHITE} {VOID} and one {AGAIN} {-1_WHITE} {CURSE} card"
+                    "desc": "Replace one {-1_WHITE} card with one {AGAIN} {+1_WHITE} “{VOID_ICON} and one {AGAIN} {-1_WHITE} {CURSE}” card"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace two {+1_WHITE} cards with one {+3_WHITE} {REGENERATE}, Self card"
+                    "desc": "Replace two {+1_WHITE} cards with one {+3_WHITE} “{REGENERATE}, Self” card"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {+0_WHITE} card with one {+1_WHITE} Create a Void pit in an empty hex {RANGE}2 card"
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} “Create a Void pit in an empty hex {RANGE}2” card"
                 },
                 {
                     "count": 1,
-                    "desc": "Ignore negative scenario effects and add one {+0_WHITE} {WARD}, Self cards"
+                    "desc": "Ignore negative scenario effects and add one {+0_WHITE} “{WARD}, Self” cards"
                 }
             ]
         },
@@ -1714,7 +1789,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-2_WHITE} Perform one {GLOW} ability card"
+                    "desc": "Replace one {-2_WHITE} card with one {-2_WHITE} “Perform one {GLOW} {GLOW_ICON} ability” card"
                 },
                 {
                     "count": 2,
@@ -1722,11 +1797,11 @@
                 },
                 {
                     "count": 2,
-                    "desc": "Add one {AGAIN} {+1_WHITE} {HEAL}1, Self card"
+                    "desc": "Add one {AGAIN} {+1_WHITE} “{HEAL}1, Self” card"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Add one {+0_WHITE} {POISON}, Target all  enemies in the depicted {HEX_XXX} area card"
+                    "desc": "TODO:: Add one {+0_WHITE} “{POISON}, Target all  enemies in the depicted {AOE.CLEAVE_0_1} area” card"
                 },
                 {
                     "count": 1,
@@ -1734,7 +1809,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Ignore negative item effects and add one {AGAIN} {ANYX}:{ANY} card"
+                    "desc": "Ignore negative item effects and add one {AGAIN} “{ANY_X}:{ANY}” card"
                 }
             ]
         },
@@ -1759,7 +1834,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace two {+0_WHITE} cards with two {+X_WHITE}, where X is the poison value of the target cards"
+                    "desc": "Replace two {+0_WHITE} cards with two “{+X_WHITE}, where X is the poison value of the target” cards"
                 },
                 {
                     "count": 1,
@@ -1767,23 +1842,23 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {+0_WHITE} card with two Create difficult terrain in the hex occupied by the target cards"
+                    "desc": "Replace one {+0_WHITE} card with two {AGAIN} “Create difficult terrain in the hex occupied by the target” cards"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {+1_WHITE} card with one {+0_WHITE} {2_WOUND} card"
+                    "desc": "Replace one {+1_WHITE} card with one {+0_WHITE} {WOUND_2} card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add four {AGAIN} {+0_WHITE} {+1_WHITE} if the target occupy difficult terrain cards"
+                    "desc": "Add four {AGAIN} {+0_WHITE} “{+1_WHITE} if the target occupy difficult terrain” cards"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add two {AGAIN} {INVISIBLE}, Self, if you occupy difficult terrain cards"
+                    "desc": "Add two {AGAIN} “{INVISIBLE}, Self, if you occupy difficult terrain” cards"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Gain “Poison Dagger” (Item 011). You may carry one additional {ONE_HAND} item with “Dagger” in its name."
+                    "desc": "Gain “Poison Dagger” (Item 011). You may carry one additional {ONE-HAND} item with “Dagger” in its name."
                 },
                 {
                     "count": 1,
@@ -1801,11 +1876,13 @@
             "game": "cs",
             "translatedName": "characters.RM.name",
             "abilityCount": 11,
-            "starting_group": [],
+            "starting_group": [
+                "cs_addon"
+            ],
             "perks": [
                 {
                     "count": 1,
-                    "desc": "TODO:: Replace one {-2_WHITE} card with one {-1_WHITE} {RUPTURE} and {WOUND} card"
+                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} {RUPTURE} and {WOUND} card"
                 },
                 {
                     "count": 2,
@@ -1813,27 +1890,27 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {RUPTURE} card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {RUPTURE} card"
                 },
                 {
                     "count": 3,
-                    "desc": "TODO:: Replace one {+0_WHITE} card with one {+1_WHITE} Add {+3_WHITE} instead if the target has {RUPTURE} or {WOUND} card"
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} “Add {+3_WHITE} instead if the target has {RUPTURE} or {WOUND}” card"
                 },
                 {
                     "count": 3,
-                    "desc": "TODO:: Replace one {+0_WHITE} card with one {AGAIN} {HEAL}1, Self, {EMPOWER} card"
+                    "desc": "Replace one {+0_WHITE} card with one {AGAIN} “{HEAL}1, Self, {EMPOWER}” card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Once each scenario, become {SATED}"
+                    "desc": "Once each scenario, become {SATED_ICON} after collecting your 5th loot token"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Become {SATED} each time you lose a card to negate suffering damage"
+                    "desc": "Become {SATED_ICON} each time you lose a card to negate suffering damage"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Whenever one of your abilities causes atleast one enemey to gain {RUPTURE}, immediately after that ability perform {MOVE}1"
+                    "desc": "Whenever one of your abilities causes at least one enemey to gain {RUPTURE}, immediately after that ability perform “{MOVE}1"
                 },
                 {
                     "count": 1,
@@ -1855,7 +1932,7 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Replace one {-1_WHITE} card with one {+0_WHITE} {+2_WHITE} if a {SPIRIT} performed the attack card"
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SPIRIT_ICON} performed the attack” card"
                 },
                 {
                     "count": 2,
@@ -1908,11 +1985,11 @@
             "perks": [
                 {
                     "count": 2,
-                    "desc": "Replace two {+0_WHITE} cards with one {AGAIN} {HEAL}1, Self card"
+                    "desc": "Replace two {+0_WHITE} cards with one {AGAIN} “{HEAL}1, Self” card"
                 },
                 {
                     "count": 1,
-                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} {DISARM} card and one {-1_WHITE} {INVISIBLE}, Self card"
+                    "desc": "Replace one {-2_WHITE} card with one {-1_WHITE} {DISARM} card and one {-1_WHITE} “{INVISIBLE}, Self” card"
                 },
                 {
                     "count": 1,
@@ -1924,11 +2001,11 @@
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add one {AGAIN} {LOOT}1 card"
+                    "desc": "Add one {AGAIN} “{LOOT 1}” card"
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Add one {+1_WHITE} {+3_WHITE} if you are at full health card"
+                    "desc": "Add one {+1_WHITE} “{+3_WHITE} if you are at full health” card"
                 },
                 {
                     "count": 1,
@@ -1936,15 +2013,15 @@
                 },
                 {
                     "count": 2,
-                    "desc": "TODO:: Add one {+1_WHITE} {HEAL}1 {RANGE}3 card"
+                    "desc": "Add one {+1_WHITE} “{HEAL}1 {RANGE}3” card"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add two {AGAIN} Force the target to perform {MOVE}1 cards"
+                    "desc": "Add two {AGAIN} “Force the target to perform `{MOVE}1`” cards"
                 },
                 {
                     "count": 1,
-                    "desc": "TODO:: Add one {AGAIN} {HEAL}1 {RANGE}1 card"
+                    "desc": "Add one {AGAIN} “{HEAL}1 {RANGE}1” card"
                 },
                 {
                     "count": 1,
@@ -1978,13 +2055,13 @@
         "HT",
         "VW",
         "AA",
-        "BK",
         "BM",
+        "BK",
         "CG",
         "CT",
         "FK",
-        "HO",
         "HP",
+        "HO",
         "LU",
         "MF",
         "QA",
@@ -1993,10 +2070,15 @@
         "ST"
     ],
     "starting_group": [
+        "gh_unlocked",
+        "gh_locked",
+        "jotl_unlocked",
+        "fc_unlocked",
         "cs_militant",
         "cs_protectors",
         "cs_explorers",
         "cs_trailblazers",
-        "cs_naturalists"
+        "cs_naturalists",
+        "cs_addon"
     ]
 }
