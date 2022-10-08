@@ -1455,7 +1455,7 @@ export default {
                 "“Steam Piston Hammer” (Item QA02)",
                 "“Spider Climb Gloves” (Item QA03)",
                 "Add copies to the city's available supply"
-            ],
+            ]
         ]
     },
     "cs-QA2": {
@@ -1493,7 +1493,7 @@ export default {
             "“Apex Predator” quest complete",
             "Open Envelope {RM}",
             "“Terrorscale Saber” design (Item RM03)",
-            "“Terrorscale Crossblades” design (Item RM04)",
+            "“Terrorscale Crossblades” design (Item RM04)"
         ]
     },
     "cs-RM5": {
@@ -1505,7 +1505,7 @@ export default {
             ],
             [
                 "2 ✓ each",
-                "“Lucky Eye” design (Item 063)",
+                "“Lucky Eye” design (Item 063)"
             ]
         ]
     },
@@ -1521,7 +1521,7 @@ export default {
         "name": "Insatiable",
         "rewards": [
             "10 experience each",
-            "“Savage Cuirass” design (Item RM06)",
+            "“Savage Cuirass” design (Item RM06)"
         ]
     }
 }

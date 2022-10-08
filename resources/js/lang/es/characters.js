@@ -139,7 +139,7 @@ export default {
             "Añade 2 cartas {AGAIN} {WOUND}",
             "Añade 1 carta {AGAIN} {STUN}",
             "Añade 1 carta {AGAIN} {HEAL}3",
-            "Añade 1 carta {+0_WHITE} Reponer un objeto"
+            "Añade 1 carta {+0_WHITE} {REFRESH} un objeto"
         ]
     },
     "SS": {
@@ -231,7 +231,7 @@ export default {
             "Añade 2 cartas {AGAIN} {PIERCE}3",
             "Añade 1 carta {AGAIN} {STUN}",
             "Añade 1 carta {AGAIN} {TARGET}",
-            "Añade 1 carta {+0_WHITE} Reponer un objeto",
+            "Añade 1 carta {+0_WHITE} {REFRESH} un objeto",
             "Ignora los efectos negativos de los objetos y Añade 2 cartas {+1_WHITE}"
         ]
     },

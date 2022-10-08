@@ -60,5 +60,18 @@ export default {
         "2": "Tell Selandre the potion was destroyed.",
         "title": "Can you trust Selandre?",
         "text": "Do you listen to Dominic's last words or your greed?"
+    },
+    "capstoneTest": {
+        "1": "One named enemy is killed",
+        "2": "Two named enemies are killed",
+        "3": "Three named enemies are killed",
+        "title": "Test your Power Modulator",
+        "text": "How many Named Enemies were you able to kill before exhausting?"
+    },
+    "unseenPlight": {
+        "1": "Killed the Guttermaw, claiming Guttermaw's Bounty",
+        "2": "Saved the children, fulfilling Feigrin's Request",
+        "title": "Broken Homes and Lairs",
+        "text": "Did you bring death or save lives?"
     }
 }

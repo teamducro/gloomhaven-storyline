@@ -139,7 +139,7 @@ export default {
             "Füge zwei {AGAIN} {WOUND} Karten hinzu",
             "Füge eine {AGAIN} {STUN} Karte hinzu",
             "Füge eine {AGAIN} {HEAL}3 Karte hinzu",
-            "Füge eine {+0_WHITE} Gegenstand erneuern Karte hinzu"
+            "Füge eine {+0_WHITE} {REFRESH} Karte hinzu"
         ]
     },
     "SS": {
@@ -231,7 +231,7 @@ export default {
             "Füge zwei {AGAIN} {PIERCE}3 Karten hinzu",
             "Füge eine {AGAIN} {STUN} Karte hinzu",
             "Füge eine {AGAIN} {TARGET} Karte hinzu",
-            "Füge eine {+0_WHITE} Gegenstand erneuern Karte hinzu",
+            "Füge eine {+0_WHITE} {REFRESH} Karte hinzu",
             "Ignoriere negative Gegenstandseffekte und füge zwei {+1_WHITE} Karten hinzu"
         ]
     },

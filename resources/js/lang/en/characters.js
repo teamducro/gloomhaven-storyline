@@ -139,7 +139,7 @@ export default {
             "Add two {AGAIN} {WOUND} cards",
             "Add one {AGAIN} {STUN} card",
             "Add one {AGAIN} {HEAL}3 card",
-            "Add one {+0_WHITE} Refresh an item card",
+            "Add one {+0_WHITE} {REFRESH} an item card",
         ]
     },
     "SS": {
@@ -231,7 +231,7 @@ export default {
             "Add two {AGAIN} {PIERCE}3 cards",
             "Add one {AGAIN} {STUN} card",
             "Add one {AGAIN} {TARGET} card",
-            "Add one {+0_WHITE} Refresh an item card",
+            "Add one {+0_WHITE} {REFRESH} an item card",
             "Ignore negative item effects and add two {+1_WHITE} cards",
         ]
     },
