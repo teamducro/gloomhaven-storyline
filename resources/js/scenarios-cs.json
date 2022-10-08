@@ -574,6 +574,13 @@
                     ]
                 }
             ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        "PCSFL"
+                    ]
+                }
+            ],
             "chapter_id": 1,
             "links_to": [
                 22

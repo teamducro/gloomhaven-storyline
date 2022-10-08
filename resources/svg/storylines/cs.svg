@@ -218,7 +218,7 @@
         <g class="scenario" id="node20">
             <circle class="node" cx="217.9" cy="178.78" r="10.8"/>
             <text x="202.5" y="174.81">20</text>
-            <text x="200.5" y="174.81" class="required">!</text>
+            <text x="202.5" y="174.81" class="blocked">×</text>
         </g>
         <g class="edge edge20" id="20-22">
             <path class="line" d="m206.51,189.48l0,13.76"/>
