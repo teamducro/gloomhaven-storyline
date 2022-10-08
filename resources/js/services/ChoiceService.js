@@ -8,6 +8,10 @@ class ChoiceService {
     }
 
     getPromptConfig(scenario) {
+        if (!scenario.prompt) {
+            return undefined;
+        }
+
         switch (scenario.prompt) {
             case 'dragon':
                 let drakesCommand = this.achievementRepository.find('PTDC');
@@ -108,6 +112,7 @@ class ChoiceService {
             case 'escapeFromTheHusk':
             case 'directingBeams':
             case 'undeadTerrors':
+            default:
                 return new PromptConfig(scenario, {
                     options: 2,
                     callback: (value) => {
@@ -115,8 +120,6 @@ class ChoiceService {
                     }
                 });
         }
-
-        return undefined;
     }
 
     setChoice(scenario, value, setComplete = true) {
