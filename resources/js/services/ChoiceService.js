@@ -27,14 +27,6 @@ class ChoiceService {
                     }
                 });
 
-            case 'burningMountain':
-                return new PromptConfig(scenario, {
-                    options: 2,
-                    callback: (value) => {
-                        this.setChoice(scenario, value);
-                    }
-                });
-
             case 'merchantsBay':
                 return new PromptConfig(scenario, {
                     options: 3,
@@ -81,14 +73,6 @@ class ChoiceService {
                     }
                 });
 
-            case 'searchPiecesOfAnArtifact':
-                return new PromptConfig(scenario, {
-                    options: 2,
-                    callback: (value) => {
-                        this.setChoice(scenario, value);
-                    }
-                });
-
             case 'aftershocks':
                 return new PromptConfig(scenario, {
                     options: 2,
@@ -119,15 +103,11 @@ class ChoiceService {
                     }
                 });
 
+            case 'burningMountain':
+            case 'searchPiecesOfAnArtifact':
             case 'escapeFromTheHusk':
-                return new PromptConfig(scenario, {
-                    options: 2,
-                    callback: (value) => {
-                        this.setChoice(scenario, value);
-                    }
-                });
-
             case 'directingBeams':
+            case 'undeadTerrors':
                 return new PromptConfig(scenario, {
                     options: 2,
                     callback: (value) => {
