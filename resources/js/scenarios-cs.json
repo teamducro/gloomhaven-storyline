@@ -976,7 +976,9 @@
                 "“Blazing Boots” (Item 87)",
                 "+1 reputation"
             ],
-            "cards": [],
+            "cards": [
+                "Q-330"
+            ],
             "monsters": [
                 "inox-archer",
                 "inox-bodyguard",
@@ -1007,7 +1009,9 @@
                 "+2 reputation",
                 "All characters add one {BLESS} to their attack modifer deck for the next scenario"
             ],
-            "cards": [],
+            "cards": [
+                "Q-330"
+            ],
             "monsters": [
                 "hound",
                 "inox-archer",
@@ -1035,7 +1039,9 @@
                 "28": "“Chain Mace” (Item 14)",
                 "40": "One random “Stone” item (Item 94-100)"
             },
-            "cards": [],
+            "cards": [
+                "Q-335"
+            ],
             "monsters": [
                 "bandit-archer",
                 "bandit-guard",
@@ -1066,7 +1072,9 @@
                 "Unlock Envelope {CG}",
                 "10 gold each"
             ],
-            "cards": [],
+            "cards": [
+                "Q-335"
+            ],
             "monsters": [
                 "bandit-archer",
                 "bandit-guard",
@@ -1095,7 +1103,9 @@
             "rewards": [
                 "Gain one random “Stone” item (Item 94-100)"
             ],
-            "cards": [],
+            "cards": [
+                "Q-344"
+            ],
             "monsters": [
                 "flame-demon",
                 "frost-demon",
@@ -1125,7 +1135,9 @@
             "rewards": [
                 "Unlock Envelope {LU}"
             ],
-            "cards": [],
+            "cards": [
+                "Q-344"
+            ],
             "monsters": [
                 "black-imp",
                 "living-spirit",
@@ -1154,7 +1166,9 @@
                 "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
                 "“An Adder Divides” quest is not yet complete"
             ],
-            "cards": [],
+            "cards": [
+                "Q-346"
+            ],
             "monsters": [
                 "earth-demon",
                 "giant-viper"
@@ -1179,7 +1193,7 @@
                 "Gain 50 collective gold"
             ],
             "cards": [
-                "TODO:: City 43"
+                "C-43"
             ],
             "monsters": [
                 "rending-drake",
@@ -1202,7 +1216,7 @@
                 "Gain 50 collective gold"
             ],
             "cards": [
-                "TODO:: City 43"
+                "C-43"
             ],
             "monsters": [
                 "bandit-archer",
@@ -1232,7 +1246,6 @@
                 "10 experience each"
             ],
             "cards": [
-                "TODO:: City 1"
             ],
             "monsters": [
                 "cave-bear",
@@ -1260,7 +1273,7 @@
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
             "cards": [
-                "TODO:: City 31"
+                "C-31"
             ],
             "monsters": [
                 "ancient-artillery",
@@ -1290,7 +1303,7 @@
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
             "cards": [
-                "TODO:: City 6"
+                "C-6"
             ],
             "monsters": [
                 "harrower-infester",
@@ -1316,7 +1329,7 @@
                 "1 ✓ each"
             ],
             "cards": [
-                "TODO:: Road 25"
+                "R-25"
             ],
             "monsters": [
                 "black-imp",
@@ -1340,7 +1353,7 @@
                 "15 experience each"
             ],
             "cards": [
-                "TODO:: Road 10"
+                "R-10"
             ],
             "monsters": [
                 "cave-bear",
@@ -1369,7 +1382,7 @@
                 "10 gold each"
             ],
             "cards": [
-                "TODO:: Road 54"
+                "R-54"
             ],
             "monsters": [
                 "earth-demon",
@@ -1394,7 +1407,7 @@
                 "20 gold each"
             ],
             "cards": [
-                "TODO:: Road 52"
+                "R-52"
             ],
             "monsters": [
                 "giant-viper",
@@ -1427,7 +1440,7 @@
                 "During the next visit to Gloomhaven, donations to the Sanctuary cost 0 gold"
             ],
             "cards": [
-                "TODO:: City 42"
+                "C-42"
             ],
             "monsters": [
                 "city-archer",
@@ -1462,7 +1475,7 @@
                 "1 ✓ each"
             ],
             "cards": [
-                "TODO:: City 42"
+                "C-42"
             ],
             "monsters": [
                 "captain-of-the-guard",
@@ -1862,7 +1875,6 @@
             ],
             "requirements": "“At All Costs” personal quest",
             "chapter_id": 12,
-            "cards": [],
             "rewards": [
                 "“Rockspine Bulwark” (Item AA01)"
             ],
@@ -1887,7 +1899,6 @@
             ],
             "requirements": "“The Weight of Failure” personal quest",
             "chapter_id": 12,
-            "cards": [],
             "rewards": [
                 "“Ghostshimmer Honey” (Item AA02)"
             ],
@@ -1910,7 +1921,6 @@
                 "csao/10"
             ],
             "chapter_id": 100,
-            "cards": [],
             "rewards": [
                 "“Steelsilk Spinneret” (Item AA03)"
             ],
@@ -1936,7 +1946,6 @@
             ],
             "requirements": "“Ingenious Inventor” personal quest and “Power Modulator” item equipped",
             "chapter_id": 13,
-            "cards": [],
             "rewards": [
                 [
                     "“Ingenious Inventor” quest complete",
@@ -1957,7 +1966,7 @@
                     "“Steam Piston Hammer” (Item QA02)",
                     "“Spider Climb Gloves” (Item QA03)",
                     "Add copies to the city's available supply"
-                ],
+                ]
             ],
             "monsters": [
                 "clockwork-soldier",
@@ -1977,7 +1986,6 @@
             ],
             "requirements": "“Scrap Diver” personal quest",
             "chapter_id": 13,
-            "cards": [],
             "rewards": [
                 "“Scrap Diver” quest complete",
                 "Open envelope {QA}",
@@ -2003,7 +2011,6 @@
                 "csao/24"
             ],
             "chapter_id": 100,
-            "cards": [],
             "rewards": [
                 "“Auscudee of the Makers” (Item QA06)"
             ],
@@ -2024,7 +2031,6 @@
             ],
             "requirements": "“Brutal Enforcer” personal quest",
             "chapter_id": 14,
-            "cards": [],
             "monsters": [
                 "bandit-guard-hired-muscle",
                 "bandit-archer-hired-muscle",
@@ -2044,7 +2050,6 @@
             ],
             "requirements": "“Brutal Enforcer” personal quest",
             "chapter_id": 14,
-            "cards": [],
             "rewards": [
                 "“Brutal Enforcer” quest complete",
                 "Open Envelope {RM}",
@@ -2071,7 +2076,6 @@
             ],
             "requirements": "“Apex Predator” personal quest",
             "chapter_id": 14,
-            "cards": [],
             "monsters": [
                 "hound",
                 "giant-viper",
@@ -2092,12 +2096,11 @@
             ],
             "requirements": "“Apex Predator” personal quest",
             "chapter_id": 14,
-            "cards": [],
             "rewards": [
                 "“Apex Predator” quest complete",
                 "Open Envelope {RM}",
                 "“Terrorscale Saber” design (Item RM03)",
-                "“Terrorscale Crossblades” design (Item RM04)",
+                "“Terrorscale Crossblades” design (Item RM04)"
             ],
             "monsters": [
                 "terrorscale-drake",
@@ -2127,15 +2130,14 @@
                 }
             ],
             "chapter_id": 14,
-            "cards": [],
             "rewards": [
                 [
                     "40 collective gold",
                     "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
                 ],
                 [
-                    "2 ✓ each"
-                    "“Lucky Eye” design (Item 063)",
+                    "2 ✓ each",
+                    "“Lucky Eye” design (Item 063)"
                 ]
             ],
             "monsters": [
@@ -2154,10 +2156,9 @@
                 "csao/41"
             ],
             "chapter_id": 100,
-            "cards": [],
             "rewards": [
                 "“Rite of Ruin” design (Item RM05)",
-                "If at least three Vermlings were alive at the end of the eighth round: 5 gold"
+                "If at least three Vermlings were alive at the end of the eighth round: 5 gold",
                 "If at least five Vermlings were alive at the end of the eighth round: ✓"
             ],
             "monsters": [
@@ -2183,7 +2184,7 @@
             "chapter_id": 14,
             "rewards": [
                 "10 experience each",
-                "“Savage Cuirass” design (Item RM06)",
+                "“Savage Cuirass” design (Item RM06)"
             ],
             "monsters": [
                 "hound",
