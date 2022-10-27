@@ -140,6 +140,18 @@
 
                         <li role="separator" class="mdc-list-divider !my-2"></li>
 
+                    </ul>
+                </div>
+
+                <div v-if="showCampaignSwitch" class="m-2" style="width: calc(100% - 1em);">
+                    <campaign-switch ref="campaign-switch"></campaign-switch>
+                </div>
+                <div class="m-2" style="width: calc(100% - 1em);">
+                    <game-switch ref="game-switch"></game-switch>
+                </div>
+
+                <div class="mdc-list-group">
+                    <ul>
                         <li v-if="!loggedIn" class="py-4 pl-4 flex" @click="toggle">
                             <become-patron-button transparent></become-patron-button>
                         </li>
@@ -148,12 +160,6 @@
                             <donate></donate>
                         </li>
                     </ul>
-                </div>
-                <div v-if="showCampaignSwitch" class="m-2" style="width: calc(100% - 1em);">
-                    <campaign-switch ref="campaign-switch"></campaign-switch>
-                </div>
-                <div class="m-2" style="width: calc(100% - 1em);">
-                    <game-switch ref="game-switch"></game-switch>
                 </div>
             </div>
         </aside>
