@@ -1,5 +1,5 @@
 <template xmlns="http://www.w3.org/1999/html">
-    <div v-show="games.length > 1" ref="game-switch" class="game-switch mdc-select w-full"
+    <div ref="game-switch" class="game-switch mdc-select w-full"
          :class="{'with-transparency': withTransparency}">
         <span class="mdc-list-item absolute z-1 pointer-events-none !text-xs !-mt-2 !text-white2-60">
             {{ $t('Selected Game') }}
