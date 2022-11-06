@@ -52,7 +52,7 @@ export default {
     },
     data() {
         return {
-            shop: 0,
+            shop: this.calculateCostModifier(this.sheet.reputation),
             scenarioRepository: new ScenarioRepository
         }
     },
