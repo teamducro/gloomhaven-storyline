@@ -319,11 +319,10 @@ export default {
                     sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
                 }
 
-                this.items = this.itemRepository.findMany(sheetItems).keyBy('id').items;
+                this.items = this.itemRepository.findMany(sheetItems).items;
+
                 sheetItems.forEach(id => {
-                    if (!isNaN(id)) {
-                        this.sheetItems[id] = !!this.character.items[id];
-                    }
+                    this.sheetItems[id] = !!this.character.items[id];
                 });
 
                 this.refreshOutOfStockItems();

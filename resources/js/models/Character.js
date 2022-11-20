@@ -77,6 +77,15 @@ class Character {
         }
     }
 
+    migrateItemIds() {
+        Object.keys(this.items).forEach(id => {
+            if (!isNaN(id)) {
+                this.items[this.game+'-'+id] = this.items[id];
+                delete this.items[id];
+            }
+        });
+    }
+
     fillBlanks() {
         for (let i = 0; i <= 17; i++) {
             this.checks[i] = this.checks[i] || false;
@@ -105,6 +114,7 @@ class Character {
         this.parentRead();
         this.translationKey = 'characters.' + this.id;
         this.readGameData();
+        this.migrateItemIds();
         this.fillBlanks();
         this.fillRelations();
     }

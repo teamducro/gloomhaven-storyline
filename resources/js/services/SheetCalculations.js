@@ -51,7 +51,9 @@ export default {
             let filteredItems = collect(items).filter().keys().all().map(Number)
             const prosperityMap = [14, 21, 28, 35, 42, 49, 56, 63, 70];
             let prosperityItems = Helpers.makeArrayWithNumbers(prosperityMap[this.calculateProsperity(prosperityIndex) - 1])
-            return _.uniq(prosperityItems.concat(filteredItems));
+            return this.prependGame('gh',
+                _.uniq(prosperityItems.concat(filteredItems))
+            );
         },
         calculateItemsJotl(items, scenarioRepository) {
             let filteredItems = collect(items).filter().keys().all().map(Number)
@@ -70,10 +72,17 @@ export default {
                 }
             }
 
-            return _.uniq(shopItems.concat(filteredItems));
+            return this.prependGame('jotl',
+                _.uniq(shopItems.concat(filteredItems))
+            );
         },
         calculateItemsCs(items, prosperityIndex) {
-            return Helpers.makeArrayWithNumbers(100);
+            return this.prependGame('cs',
+                Helpers.makeArrayWithNumbers(100)
+            );
+        },
+        prependGame(game, items) {
+            return items.map(id => game + '-' + id);
         }
     }
 }
