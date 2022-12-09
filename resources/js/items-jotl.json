@@ -13,7 +13,7 @@
         "id": 2,
         "name": "Iron Helmet",
         "count": 2,
-        "cost": 10,
+        "cost": 20,
         "slot": "Head",
         "source": "Reward from Scenario #2",
         "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
