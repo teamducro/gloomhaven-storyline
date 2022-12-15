@@ -1,5 +1,5 @@
 <template>
-    <div v-if="quests" class="mb-4">
+    <div v-if="quests && Object.keys(quests).length" class="mb-4">
 
         <div class="mb-2 flex items-center">
             <h2>{{ $t('Personal Quest') }}</h2>
