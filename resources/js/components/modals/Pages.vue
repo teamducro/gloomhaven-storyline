@@ -1,13 +1,13 @@
 <template>
     <div>
         <modal ref="modal" :title="title" :full-screen="true">
-            <div slot="content" class="w-full h-full outline-none">
-                <div id="pages" class="flex flex-col md:flex-row">
+            <div slot="content" class="w-full h-full overflow-y-scroll outline-none">
+                <div id="pages" class="grid grid-cols-1 md:grid-cols-2 gap-0">
                     <webp v-for="page in pages"
                           :src="pageSrc(page)"
                           :key="'page' + page"
                           :alt="'Page #' + pageId(page)"
-                          :class="{'md:w-1/2': hasMultiplePages}"/>
+                          class="w-full"/>
                 </div>
             </div>
         </modal>
@@ -31,13 +31,6 @@ export default {
             preloadImage: new PreloadImage()
         }
     },
-    mounted() {
-        this.zoom = panzoom(document.querySelector('#pages'), {
-            minZoom: 1,
-            maxZoom: 4,
-            bounds: true
-        });
-    },
     computed: {
         hasMultiplePages() {
             return this.pages.length > 1;
@@ -52,15 +45,6 @@ export default {
         },
         open() {
             this.$refs['modal'].open();
-            this.centerPage();
-        },
-        centerPage() {
-            const pageWidth = 700;
-            if (!this.hasMultiplePages && window.innerWidth > pageWidth) {
-                this.zoom.moveTo((window.innerWidth - pageWidth) / 2, 0);
-            } else {
-                this.zoom.moveTo(0, 0);
-            }
         },
         pageId(page) {
             const n = page.lastIndexOf('/');
