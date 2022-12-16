@@ -75,7 +75,7 @@
             <data-table :columns="columns"
                         :sortable="sortable"
                         :initialSearch="search"
-                        :data="items.items"
+                        :data="items.values().items"
                         @rowClick="openItemModel"
                         :translatable="['name', 'desc']"
                         :noResults="$t('No items available')"

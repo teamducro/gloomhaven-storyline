@@ -453,10 +453,11 @@ export default {
             return store.get('selectedCharacter');
         },
         itemFilterClosure(query) {
-            // This allows to find items based on id and their name.
+            // This allows to find items based on id or their name.
             return (id) => {
-                return id.toLowerCase().startsWith(query)
-                    || Helpers.sanitize(this.$t(this.items[id]?.name)).startsWith(query);
+                const number = id.split('-').pop();
+                return number.toLowerCase().startsWith(query)
+                    || Helpers.sanitize(this.$t(this.items[id]?.name)).includes(query);
             }
         },
         renderHtml(html) {

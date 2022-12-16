@@ -77,9 +77,8 @@ export default {
             );
         },
         calculateItemsCs(items, prosperityIndex) {
-            return this.prependGame('cs',
-                Helpers.makeArrayWithNumbers(100)
-            );
+            // CS uses the GH "base" items and adds a few more
+            return this.calculateItemsGh(items, prosperityIndex);
         },
         prependGame(game, items) {
             return items.map(id => game + '-' + id);

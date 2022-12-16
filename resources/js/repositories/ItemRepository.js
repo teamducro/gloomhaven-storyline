@@ -11,6 +11,10 @@ export default class ItemRepository {
     }
 
     find(id) {
+        // If id is numeric, prepend the current game
+        if (!isNaN(id)) {
+            id = app.game + '-' + id;
+        }
         return app.items ? app.items.get(id) : null;
     }
 

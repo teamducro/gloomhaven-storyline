@@ -4,8 +4,7 @@ import UsesTranslations from "./UsesTranslations";
 class Item {
 
     constructor(data, game) {
-        this.id = data.id;
-        // this.id = game + '-' + data.id;
+        this.id = game + '-' + data.id;
         this.number = '#' + String(data.id).padStart(3, '0');
         this._name = data.name;
         this.cost = data.cost;
