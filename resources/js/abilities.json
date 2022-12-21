@@ -2490,7 +2490,7 @@
         "name": "refreshment",
         "game": "gh",
         "character_id": "QM",
-        "level": 2,
+        "level": 7,
         "initiative": 95,
         "id": 217
     },
@@ -2498,7 +2498,7 @@
         "name": "reforge",
         "game": "gh",
         "character_id": "QM",
-        "level": 7,
+        "level": 2,
         "initiative": 89,
         "id": 228
     },
