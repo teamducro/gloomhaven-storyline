@@ -53,28 +53,28 @@
                     <div class="-mt-px flex divide-x divide-gray-500">
                         <div v-if="!story.has_expired && !story.is_shared" class="w-0 flex-1 flex">
                             <a href="#" @click.prevent="$bus.$emit('open-edit-campaign-modal', story)"
-                               class="relative mt-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
+                               class="relative mt-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-primary">
                                 <span class="material-icons">settings</span>
                                 <span class="ml-2 sm:ml-3">{{ $t('Edit') }}</span>
                             </a>
                         </div>
                         <div v-if="!story.has_expired && !story.is_shared" class="mt-px w-0 flex-1 flex">
                             <a href="#" @click.prevent="share(story)"
-                               class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
+                               class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-primary">
                                 <span class="material-icons">share</span>
                                 <span class="ml-2 sm:ml-3">{{ $t('Share') }}</span>
                             </a>
                         </div>
                         <div v-if="story.is_shared" class="mt-px w-0 flex-1 flex">
                             <a href="#" @click.prevent="unlink(story)"
-                               class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
+                               class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-primary">
                                 <span class=" material-icons">link_off</span>
                                 <span class="ml-2 sm:ml-3">{{ $t('Unlink') }}</span>
                             </a>
                         </div>
                         <purchase v-if="!story.is_shared && showPurchaseButton"
                                   :story-id="story.id" class="mt-px w-0 flex-1 flex">
-                            <a class="cursor-pointer relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-br-lg hover:bg-surface">
+                            <a class="cursor-pointer relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent rounded-b-lg hover:bg-primary">
                                 <template v-if="story.has_expired || story.expires_soon">
                                     <span class="material-icons">replay</span>
                                     <span class="ml-2 sm:ml-3">{{ $t('Renew') }}</span>
