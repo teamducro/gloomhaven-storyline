@@ -164,7 +164,8 @@ export default {
     "German": "Deutsch",
     "Spanish": "Spanisch",
     "Campaigns": "Kampagnen",
-    "Buy shared campaign": "Kaufe eine teilbare Kampagne",
+    "Buy shared campaign": "Kaufe eine neue teilbare Kampagne",
+    "Kaufen Sie eine neue gemeinsame Kampagne": "Kaufen Sie eine neue gemeinsame Kampagne",
     "Add shared campaign": "Füge eine teilbare Kampagne hinzu",
     "donations": {
         "1": {
