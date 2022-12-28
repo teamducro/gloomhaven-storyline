@@ -65,6 +65,10 @@ module.exports = {
             colors: {
                 primary: '#3771E0',
                 'primary-dark': '#2356b7',
+                'primary2': {
+                    20: 'rgba(55, 113, 224, .20)',
+                    30: 'rgba(55, 113, 224, .30)',
+                },
                 secondary: '#018786',
                 patreon: '#ff424d',
                 background: '#000',
