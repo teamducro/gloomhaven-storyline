@@ -23,7 +23,7 @@ export default {
                 this.$bus.$emit('campaign-selected', id);
                 this.$bus.$emit('toast', 'Imported campaign progress successful.');
             } else {
-                this.$bus.$emit('toast', 'This shared link is incompatible with this version of the Gloomhaven Storyline Tracker. Please use the most recent version and request a new link.', false);
+                this.$bus.$emit('toast', 'This shared link is incompatible with this version of the Gloomhaven Storyline Tracker. Please request a new link from the <a href="/tracker/#/campaigns" class="underline">campaigns page</a>.', false);
             }
 
             await this.$nextTick();
