@@ -87,13 +87,13 @@ export default {
         "name": "El tesoro de la Voz"
     },
     "gh-PTDT": {
-        "name": "El tesoro del draco"
+        "name": "El tesoro del Draco"
     },
     "gh-GTDS": {
-        "name": "El draco ejecutado"
+        "name": "El Draco ejecutado"
     },
     "gh-GTDA": {
-        "name": "El draco auxiliado"
+        "name": "El Draco auxiliado"
     },
     "gh-GCRD": {
         "name": "Gobierno de la ciudad: Demoníaco"
