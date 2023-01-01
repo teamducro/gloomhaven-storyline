@@ -195,14 +195,18 @@ export default {
         },
         refreshItems() {
             let sheetItems;
+
+            // Get all manual unlocked items from the sheet, prefixed with the current game.
+            const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.sheet.game);
+
+            // Add auto unlocked items, based on prosperity level or completed scenarios.
             if (this.sheet.game === 'jotl') {
-                sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
+                sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
             }
-            else if (this.sheet.game === 'cs') {
-                sheetItems = this.calculateItemsCs(this.sheet.itemDesigns, this.sheet.prosperityIndex);
-            } else {
-                sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+            else {
+                sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
             }
+
             this.items = this.itemRepository.findMany(sheetItems);
         },
         changeItem(id, isChecked) {

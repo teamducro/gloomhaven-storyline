@@ -136,14 +136,10 @@ class Sheet {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
         }
 
-        // if (!Object.keys(this.city).length) {
-        //     for (let i = 1; i <= 22; i++) {
-        //         this.city[i] = true;
-        //     }
-        // }
-
-        // this.itemDesigns = this.removeInvalid(this.itemDesigns, 36);
-        // this.city = this.removeInvalid(this.city, 22);
+        this.itemDesigns = this.removeInvalid(this.itemDesigns, 100);
+        this.city = this.removeInvalid(this.city, 60);
+        this.road = this.removeInvalid(this.road, 60);
+        this.unlocks = this.removeInvalid(this.unlocks, 14);
     }
 
     fillRelations() {
@@ -267,6 +263,7 @@ class Sheet {
         return this._characterOrder;
     }
 
+    // The key used in local storage
     key() {
         switch (this.game) {
             case 'gh':
