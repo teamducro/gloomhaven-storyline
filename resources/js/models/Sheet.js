@@ -249,7 +249,7 @@ class Sheet {
             case 'jotl':
                 return ["RG", "DM", "HT", "VW"];
             case 'cs':
-                return [];
+                return ["BM", "BK", "CG", "CT", "FK", "HP", "HO", "LU", "MF", "ST"];
             default:
                 return ["BR", "CH", "SW", "TI", "SC", "MT"];
         }
