@@ -28,6 +28,12 @@ export default class ItemRepository {
         return app.items.filter(filter);
     }
 
+    fromGame(game) {
+        return this.where((item) => {
+            return item.game === game;
+        })
+    }
+
     get gameData() {
         return this._gameData || (this._gameData = new GameData());
     }

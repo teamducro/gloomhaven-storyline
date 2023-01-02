@@ -17,6 +17,8 @@ class Sheet {
         this.donations = data.donations || 0;
         this.prosperityIndex = data.prosperityIndex || 1;
         this.itemDesigns = {...data.itemDesigns};
+        this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
+        this.crossGameItems = {...data.crossGameItems};
         this.city = {...data.city};
         this.road = {...data.road};
         this.notes = data.notes || '';
@@ -43,6 +45,12 @@ class Sheet {
             characterUnlocks: {'characterUnlocks': {}},
             characters: {'characters': {}},
             archivedCharacters: {'archivedCharacters': {}},
+            crossGameItemsEnabled: 'crossGameItemsEnabled',
+            crossGameItems: {'crossGameItems': {
+                    'gh': false,
+                    'jotl': false,
+                    'cs': false,
+            }}
         };
 
         this.read();

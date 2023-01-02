@@ -320,9 +320,22 @@ export default {
                     sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
                 }
 
-                this.items = this.itemRepository.findMany(sheetItems).items;
+                // Find items from base game.
+                let items = this.itemRepository.findMany(sheetItems);
 
-                sheetItems.forEach(id => {
+                // Add items from other games, if enabled.
+                if (this.sheet.crossGameItemsEnabled) {
+                    const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
+                    otherGames.forEach(game => {
+                        if (game !== this.sheet.game) {
+                            items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                        }
+                    });
+                }
+
+                this.items = items.all()
+
+                Object.keys(this.items).forEach(id => {
                     this.sheetItems[id] = !!this.character.items[id];
                 });
 
