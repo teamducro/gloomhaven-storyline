@@ -7,7 +7,7 @@
             :disabled="disabled"
             @change="changed"></checkbox>
         <slot>
-            <label :for="id" :class="{'text-white2-25': disabled}">{{ label }}</label>
+            <label :for="id" class="font-bold" :class="{'text-white2-25': disabled}">{{ label }}</label>
         </slot>
     </div>
 </template>

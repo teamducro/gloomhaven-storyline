@@ -67,6 +67,7 @@ export default {
     "Locked": "Locked",
     "Lost": "Lost",
     "Lvl": "Lvl",
+    "Enable items from other games": "Enable items from other games",
     "No items available": "No items available",
     "No treasures available": "No treasures available",
     "Not unlocked": "Not unlocked",

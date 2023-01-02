@@ -23,7 +23,7 @@ export default class GameData {
     }
 
     beta() {
-        return ["cs"]
+        return []
     }
 
     achievements(game) {
