@@ -152,7 +152,7 @@ export default {
         },
 
         questFilterClosure(query) {
-            // This allows to find items based on id and it's name.
+            // This allows to find personal quests based on id or their name.
             return (id) => {
                 return id.toLowerCase().startsWith(query)
                     || Helpers.sanitize(this.quests[id]._name).startsWith(query);

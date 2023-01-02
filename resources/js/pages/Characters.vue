@@ -273,6 +273,9 @@ export default {
             // Reference sheet hash so the value is recalculated when the sheet is updated.
             this.sheetHash;
             return this.selected in this.sheet.archivedCharacters;
+        },
+        currentGame() {
+            return this.sheet.game === 'fc' ? 'gh' : this.sheet.game;
         }
     },
     methods: {
@@ -309,21 +312,34 @@ export default {
                 let sheetItems;
                 this.sheetItems = {};
 
-                if (this.sheet.game === 'jotl') {
-                    sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
-                }
-                if (this.sheet.game === 'cs') {
-                    sheetItems = this.calculateItemsCs(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                // Get all manual unlocked items from the sheet, prefixed with the current game.
+                const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.currentGame);
+
+                // Add auto unlocked items, based on prosperity level or completed scenarios.
+                if (this.currentGame === 'jotl') {
+                    sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
                 }
                 else {
-                    sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                    sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
                 }
 
-                this.items = this.itemRepository.findMany(sheetItems).keyBy('id').items;
-                sheetItems.forEach(id => {
-                    if (!isNaN(id)) {
-                        this.sheetItems[id] = !!this.character.items[id];
-                    }
+                // Find items from base game.
+                let items = this.itemRepository.findMany(sheetItems);
+
+                // Add items from other games, if enabled.
+                if (this.sheet.crossGameItemsEnabled) {
+                    const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
+                    otherGames.forEach(game => {
+                        if (game !== this.currentGame) {
+                            items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                        }
+                    });
+                }
+
+                this.items = items.all()
+
+                Object.keys(this.items).forEach(id => {
+                    this.sheetItems[id] = !!this.character.items[id];
                 });
 
                 this.refreshOutOfStockItems();
@@ -454,10 +470,11 @@ export default {
             return store.get('selectedCharacter');
         },
         itemFilterClosure(query) {
-            // This allows to find items based on id and their name.
+            // This allows to find items based on id or their name.
             return (id) => {
-                return id.toLowerCase().startsWith(query)
-                    || Helpers.sanitize(this.$t(this.items[id]?.name)).startsWith(query);
+                const number = id.split('-').pop();
+                return number.toLowerCase().startsWith(query)
+                    || Helpers.sanitize(this.$t(this.items[id]?.name)).includes(query);
             }
         },
         renderHtml(html) {

@@ -38,6 +38,7 @@ export default {
                     defaultValue = modelKey[key];
                     modelKey = key;
                 }
+
                 this[modelKey] = model[storeKey] || defaultValue;
             });
         }

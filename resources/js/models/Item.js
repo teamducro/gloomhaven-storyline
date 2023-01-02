@@ -4,7 +4,7 @@ import UsesTranslations from "./UsesTranslations";
 class Item {
 
     constructor(data, game) {
-        this.id = data.id;
+        this.id = game + '-' + data.id;
         this.number = '#' + String(data.id).padStart(3, '0');
         this._name = data.name;
         this.cost = data.cost;
@@ -17,7 +17,7 @@ class Item {
         this.spent = data.spent || false;
         this.consumed = data.consumed || false;
         this._game = game;
-        this.translationKey = `items.${this.game}-${this.id}`;
+        this.translationKey = `items.${this.id}`;
     }
 
     get name() {

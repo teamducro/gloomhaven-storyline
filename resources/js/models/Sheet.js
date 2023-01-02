@@ -17,6 +17,8 @@ class Sheet {
         this.donations = data.donations || 0;
         this.prosperityIndex = data.prosperityIndex || 1;
         this.itemDesigns = {...data.itemDesigns};
+        this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
+        this.crossGameItems = {...data.crossGameItems};
         this.city = {...data.city};
         this.road = {...data.road};
         this.notes = data.notes || '';
@@ -43,6 +45,8 @@ class Sheet {
             characterUnlocks: {'characterUnlocks': {}},
             characters: {'characters': {}},
             archivedCharacters: {'archivedCharacters': {}},
+            crossGameItemsEnabled: 'crossGameItemsEnabled',
+            crossGameItems: {'crossGameItems': {}}
         };
 
         this.read();
@@ -132,18 +136,14 @@ class Sheet {
             }
         }
 
-        // for (let i = 26; i <= 36; i++) {
-        //     this.itemDesigns[i] = this.itemDesigns[i] || false;
-        // }
+        for (let i = 1; i <= 100; i++) {
+            this.itemDesigns[i] = this.itemDesigns[i] || false;
+        }
 
-        // if (!Object.keys(this.city).length) {
-        //     for (let i = 1; i <= 22; i++) {
-        //         this.city[i] = true;
-        //     }
-        // }
-
-        // this.itemDesigns = this.removeInvalid(this.itemDesigns, 36);
-        // this.city = this.removeInvalid(this.city, 22);
+        this.itemDesigns = this.removeInvalid(this.itemDesigns, 100);
+        this.city = this.removeInvalid(this.city, 60);
+        this.road = this.removeInvalid(this.road, 60);
+        this.unlocks = this.removeInvalid(this.unlocks, 14);
     }
 
     fillRelations() {
@@ -191,6 +191,16 @@ class Sheet {
         });
     }
 
+    fillDefaultCrossGameItems() {
+        if (_.isEmpty(this.crossGameItems)) {
+                this.crossGameItems = {
+                'gh': false,
+                'jotl': false,
+                'cs': false,
+            }
+        }
+    }
+
     removeInvalid(list, maxId) {
         return collect(list).filter((value, key) => key > 0 && key <= maxId).all();
     }
@@ -213,6 +223,7 @@ class Sheet {
 
         this.fillCharacterUnlocks();
         this.fillRelations();
+        this.fillDefaultCrossGameItems();
     }
 
     // characterUnlocks used to be stored in key characters, migrate them to be backwards compatible.
@@ -249,7 +260,7 @@ class Sheet {
             case 'jotl':
                 return ["RG", "DM", "HT", "VW"];
             case 'cs':
-                return [];
+                return ["BM", "BK", "CG", "CT", "FK", "HP", "HO", "LU", "MF", "ST"];
             default:
                 return ["BR", "CH", "SW", "TI", "SC", "MT"];
         }
@@ -267,6 +278,7 @@ class Sheet {
         return this._characterOrder;
     }
 
+    // The key used in local storage
     key() {
         switch (this.game) {
             case 'gh':
