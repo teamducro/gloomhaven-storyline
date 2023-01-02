@@ -42,9 +42,8 @@
                                              @change="refreshItems();store()"/>
 
                             <ul v-if="sheet.crossGameItemsEnabled">
-                                <li v-for="code in Object.keys(sheet.crossGameItems)">
-                                    <checkbox-with-label v-if="code !== currentGame"
-                                                         :id="code+'-items'"
+                                <li v-for="code in Object.keys(sheet.crossGameItems)" v-if="code !== currentGame">
+                                    <checkbox-with-label :id="code+'-items'"
                                                          :label="$t(code)"
                                                          :checked.sync="sheet.crossGameItems[code]"
                                                          @change="refreshItems();store()"/>

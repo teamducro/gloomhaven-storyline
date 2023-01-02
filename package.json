@@ -10,8 +10,7 @@
         "hot": "mix watch --hot",
         "prod": "npm run production;",
         "production": "mix --production",
-        "test": "cypress run",
-        "test:open": "cypress open",
+        "test": "cypress open",
         "lang": "./add-missing-translation-keys.js",
         "watch-poll": ""
     },
