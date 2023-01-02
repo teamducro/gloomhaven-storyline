@@ -38,11 +38,8 @@ export default {
                     defaultValue = modelKey[key];
                     modelKey = key;
                 }
-                if (_.isObject(model[storeKey]) && _.isEmpty(model[storeKey])) {
-                    this[modelKey] = defaultValue || model[storeKey];
-                } else {
-                    this[modelKey] = model[storeKey] || defaultValue;
-                }
+
+                this[modelKey] = model[storeKey] || defaultValue;
             });
         }
     },

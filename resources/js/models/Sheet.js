@@ -46,11 +46,7 @@ class Sheet {
             characters: {'characters': {}},
             archivedCharacters: {'archivedCharacters': {}},
             crossGameItemsEnabled: 'crossGameItemsEnabled',
-            crossGameItems: {'crossGameItems': {
-                    'gh': false,
-                    'jotl': false,
-                    'cs': false,
-            }}
+            crossGameItems: {'crossGameItems': {}}
         };
 
         this.read();
@@ -195,6 +191,16 @@ class Sheet {
         });
     }
 
+    fillDefaultCrossGameItems() {
+        if (_.isEmpty(this.crossGameItems)) {
+                this.crossGameItems = {
+                'gh': false,
+                'jotl': false,
+                'cs': false,
+            }
+        }
+    }
+
     removeInvalid(list, maxId) {
         return collect(list).filter((value, key) => key > 0 && key <= maxId).all();
     }
@@ -217,6 +223,7 @@ class Sheet {
 
         this.fillCharacterUnlocks();
         this.fillRelations();
+        this.fillDefaultCrossGameItems();
     }
 
     // characterUnlocks used to be stored in key characters, migrate them to be backwards compatible.
