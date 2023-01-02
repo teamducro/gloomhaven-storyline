@@ -186,7 +186,10 @@ window.app = new Vue({
         async fetchItems() {
             let items = {}
             this.enabledGames.forEach((game) => {
-                items = {...items, ...this.itemRepository.fetch(game).items};
+                // FC uses GH items
+                if (game !== 'fc') {
+                    items = {...items, ...this.itemRepository.fetch(game).items};
+                }
             })
             this.items = collect(items);
             await this.$nextTick();
