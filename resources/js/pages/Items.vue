@@ -241,8 +241,6 @@ export default {
             // Find items from base game.
             let items = this.itemRepository.findMany(sheetItems);
 
-            console.log(this.sheet.crossGameItemsEnabled)
-
             // Add items from other games, if enabled.
             if (this.sheet.crossGameItemsEnabled) {
                 const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
