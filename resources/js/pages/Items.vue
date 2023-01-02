@@ -43,7 +43,7 @@
 
                             <ul v-if="sheet.crossGameItemsEnabled">
                                 <li v-for="code in Object.keys(sheet.crossGameItems)">
-                                    <checkbox-with-label v-if="code !== sheet.game"
+                                    <checkbox-with-label v-if="code !== currentGame"
                                                          :id="code+'-items'"
                                                          :label="$t(code)"
                                                          :checked.sync="sheet.crossGameItems[code]"
@@ -202,11 +202,14 @@ export default {
             ]
 
             // Remove the game column cross game items isn't enabled or if the selected game isn't CS.
-            if (this.sheet && this.sheet.game !== 'cs' && !this.sheet.crossGameItemsEnabled) {
+            if (this.sheet && this.currentGame !== 'cs' && !this.sheet.crossGameItemsEnabled) {
                 columns = columns.filter(column => column.id !== 'game');
             }
 
             return columns;
+        },
+        currentGame() {
+            return this.sheet.game === 'fc' ? 'gh' : this.sheet.game;
         }
     },
     methods: {
@@ -228,10 +231,10 @@ export default {
             let sheetItems;
 
             // Get all manual unlocked items from the sheet, prefixed with the current game.
-            const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.sheet.game);
+            const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.currentGame);
 
             // Add auto unlocked items, based on prosperity level or completed scenarios.
-            if (this.sheet.game === 'jotl') {
+            if (this.currentGame === 'jotl') {
                 sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
             }
             else {
@@ -245,7 +248,7 @@ export default {
             if (this.sheet.crossGameItemsEnabled) {
                 const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
                 otherGames.forEach(game => {
-                    if (game !== this.sheet.game) {
+                    if (game !== this.currentGame) {
                         items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
                     }
                 });

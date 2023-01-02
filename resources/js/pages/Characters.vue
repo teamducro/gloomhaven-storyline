@@ -273,6 +273,9 @@ export default {
             // Reference sheet hash so the value is recalculated when the sheet is updated.
             this.sheetHash;
             return this.selected in this.sheet.archivedCharacters;
+        },
+        currentGame() {
+            return this.sheet.game === 'fc' ? 'gh' : this.sheet.game;
         }
     },
     methods: {
@@ -310,10 +313,10 @@ export default {
                 this.sheetItems = {};
 
                 // Get all manual unlocked items from the sheet, prefixed with the current game.
-                const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.sheet.game);
+                const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.currentGame);
 
                 // Add auto unlocked items, based on prosperity level or completed scenarios.
-                if (this.sheet.game === 'jotl') {
+                if (this.currentGame === 'jotl') {
                     sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
                 }
                 else {
@@ -327,7 +330,7 @@ export default {
                 if (this.sheet.crossGameItemsEnabled) {
                     const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
                     otherGames.forEach(game => {
-                        if (game !== this.sheet.game) {
+                        if (game !== this.currentGame) {
                             items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
                         }
                     });
