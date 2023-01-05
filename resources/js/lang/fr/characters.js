@@ -330,13 +330,13 @@ export default {
         "name": "Lanceur de hache",
         "perks": [
             "Retirer deux cartes {-1_WHITE}",
-            "Retirer une carte {+0_WHITE} carte par une carte {+2_WHITE} {MUDDLE}",
-            "Retirer une carte {+0_WHITE} carte par une carte {+1_WHITE} {POISON}",
-            "Retirer une carte {+0_WHITE} carte par une carte {+1_WHITE} {WOUND}",
-            "Retirer une carte {+0_WHITE} carte par une carte {+1_WHITE} {IMMOBILIZE}",
-            "Retirer une carte {+0_WHITE} carte par une carte {+1_WHITE} {PUSH}2",
-            "Retirer une carte {+0_WHITE} carte par une carte {+0_WHITE} {STUN}",
-            "Retirer une carte {+1_WHITE} carte par une carte {+1_WHITE} {STUN}",
+            "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {MUDDLE}",
+            "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {POISON}",
+            "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {WOUND}",
+            "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {IMMOBILIZE}",
+            "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {PUSH}2",
+            "Remplacer une carte {+0_WHITE} par une carte {+0_WHITE} {STUN}",
+            "Remplacer une carte {+1_WHITE} par une carte {+1_WHITE} {STUN}",
             "Ajouter une carte {+2_WHITE} {WIND}",
             "Remplacer une carte {+1_WHITE} par une carte {+3_WHITE}"
         ]

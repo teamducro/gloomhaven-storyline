@@ -330,13 +330,13 @@ export default {
         "name": "Ejecutor",
         "perks": [
             "Retira 2 cartas {-1_WHITE}",
-            "Retira 1 carta {+0_WHITE} y 1 carta {+2_WHITE} {MUDDLE}",
-            "Retira 1 carta {+0_WHITE} y 1 carta {+1_WHITE} {POISON}",
-            "Retira 1 carta {+0_WHITE} y 1 carta {+1_WHITE} {WOUND}",
-            "Retira 1 carta {+0_WHITE} y 1 carta {+1_WHITE} {IMMOBILIZE}",
-            "Retira 1 carta {+0_WHITE} y 1 carta {+1_WHITE} {PUSH}2",
-            "Retira 1 carta {+0_WHITE} y 1 carta {+0_WHITE} {STUN}",
-            "Retira 1 carta {+1_WHITE} y 1 carta {+1_WHITE} {STUN}",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {MUDDLE}",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {POISON}",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {WOUND}",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {IMMOBILIZE}",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {PUSH}2",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+0_WHITE} {STUN}",
+            "Sustituye 1 carta {+1_WHITE} por 1 carta {+1_WHITE} {STUN}",
             "Añade 1 carta {+2_WHITE} {WIND}",
             "Sustituye 1 carta {+1_WHITE} por 1 carta {+3_WHITE}"
         ]

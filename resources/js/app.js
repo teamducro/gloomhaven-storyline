@@ -184,7 +184,14 @@ window.app = new Vue({
             return true;
         },
         async fetchItems() {
-            this.items = this.itemRepository.fetch(this.game);
+            let items = {}
+            this.enabledGames.forEach((game) => {
+                // FC uses GH items
+                if (game !== 'fc') {
+                    items = {...items, ...this.itemRepository.fetch(game).items};
+                }
+            })
+            this.items = collect(items);
             await this.$nextTick();
             this.$bus.$emit('items-updated');
 

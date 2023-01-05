@@ -114,7 +114,7 @@ export default class ScenarioValidator {
     checkRequired(scenario) {
         // Skip when no linked scenarios are completed, scenario is hidden or was completed before
         let states = this.linkedStates(scenario);
-        if (states.has(ScenarioState.complete) === false || scenario.isHidden() || scenario.isComplete()) {
+        if ((!scenario.is_side && states.has(ScenarioState.complete) === false) || scenario.isHidden() || scenario.isComplete()) {
             return;
         }
 

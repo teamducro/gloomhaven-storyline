@@ -81,6 +81,9 @@ export default {
             }
         },
         webp(url) {
+            if (!url) {
+                return '';
+            }
             return url.split('.').slice(0, -1) + '.webp';
         },
         error() {

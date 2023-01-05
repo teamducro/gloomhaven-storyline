@@ -4,24 +4,34 @@ import GameData from "../services/GameData";
 export default class ItemRepository {
 
     fetch(game) {
-        return collect(this.gameData.items(game)).map((item) => {
+        return collect(this.gameData.items(game)).mapWithKeys((item) => {
             item = new Item(item, game);
-            return item;
+            return [item.id, item];
         });
     }
 
     find(id) {
-        return app.items ? app.items.firstWhere('id', parseInt(id)) : null;
+        // If id is numeric, prepend the current game
+        if (!isNaN(id)) {
+            id = app.game + '-' + id;
+        }
+        return app.items ? app.items.get(id) : null;
     }
 
     findMany(list) {
-        return collect().wrap(list).map((id) => {
-            return this.find(id);
+        return collect().wrap(list).mapWithKeys((id) => {
+            return [id, this.find(id)];
         }).filter();
     }
 
     where(filter) {
         return app.items.filter(filter);
+    }
+
+    fromGame(game) {
+        return this.where((item) => {
+            return item.game === game;
+        })
     }
 
     get gameData() {

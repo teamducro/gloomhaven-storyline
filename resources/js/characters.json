@@ -1156,31 +1156,31 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Remove one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card"
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card"
                 },
                 {
                     "count": 1,
-                    "desc": "Remove one {+0_WHITE} card with one {+1_WHITE} {POISON} card"
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {POISON} card"
                 },
                 {
                     "count": 1,
-                    "desc": "Remove one {+0_WHITE} card with one {+1_WHITE} {WOUND} card"
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card"
                 },
                 {
                     "count": 1,
-                    "desc": "Remove one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card"
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card"
                 },
                 {
                     "count": 1,
-                    "desc": "Remove one {+0_WHITE} card with one {+1_WHITE} {PUSH}2 card"
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {PUSH}2 card"
                 },
                 {
                     "count": 1,
-                    "desc": "Remove one {+0_WHITE} card with one {+0_WHITE} {STUN} card"
+                    "desc": "Replace one {+0_WHITE} card with one {+0_WHITE} {STUN} card"
                 },
                 {
                     "count": 1,
-                    "desc": "Remove one {+1_WHITE} card with one {+1_WHITE} {STUN} card"
+                    "desc": "Replace one {+1_WHITE} card with one {+1_WHITE} {STUN} card"
                 },
                 {
                     "count": 3,
