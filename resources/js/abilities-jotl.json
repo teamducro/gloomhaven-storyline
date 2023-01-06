@@ -180,15 +180,15 @@
         "name": "the bigger one",
         "game": "jotl",
         "character_id": "DM",
-        "level": 1,
-        "initiative": 37
+        "level": 8,
+        "initiative": 31
     },
     {
         "name": "the big one",
         "game": "jotl",
         "character_id": "DM",
         "level": 1,
-        "initiative": 31,
+        "initiative": 37,
         "variations": [
             "a",
             "b"
