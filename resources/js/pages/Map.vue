@@ -56,6 +56,7 @@ import tippy from "tippy.js";
 import GameData from "../services/GameData";
 
 export default {
+    inject: ['appData'],
     data() {
         return {
             game: 'gh',
@@ -107,7 +108,7 @@ export default {
     },
     methods: {
         async loadMap(game) {
-            this.game = game || app.game;
+            this.game = game || this.appData.game;
             this.mapImages = this.gameData.map(this.game);
             this.settings = this.gameData.mapSettings(this.game);
 

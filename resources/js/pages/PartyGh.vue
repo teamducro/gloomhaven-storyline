@@ -225,8 +225,6 @@ export default {
         async render() {
             this.loading = true;
 
-            console.log(this.appData.story);
-
             this.sheet = this.sheetRepository.make(this.appData.game);
             this.campaignName = this.getCampaignName();
 

@@ -279,8 +279,8 @@ export default {
         async render() {
             this.loading = true;
 
-            this.game = app.game;
-            this.sheet = this.sheetRepository.make(app.game);
+            this.game = this.appData.game;
+            this.sheet = this.sheetRepository.make(this.appData.game);
             this.campaignName = this.getCampaignName();
 
             // Unregistered users can't archive characters
@@ -399,7 +399,7 @@ export default {
         },
         selectDemo() {
             this.selected = null;
-            this.character = Character.make('demo', app.game, 'BR');
+            this.character = Character.make('demo', this.appData.game, 'BR');
             this.nameText = this.$t(this.character.characterName);
             this.rerender();
         },

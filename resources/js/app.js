@@ -108,18 +108,16 @@ window.app = new Vue({
         const appData = {}
 
         Object.defineProperty(appData, "game", {
-            enumerable: true,
             get: () => this.game,
         })
 
         Object.defineProperty(appData, "story", {
-            enumerable: true,
             get: () => this.story,
         })
 
+        // This shorthand is needed to use it in vue templates
         Object.defineProperty(appData, "read_only", {
-            enumerable: true,
-            get: () => this.story ? this.story.read_only : false,
+            get: () => this.story?.read_only,
         })
 
         return {

@@ -48,6 +48,7 @@ import charactersJson from "../../../characters.json";
 import Sheet from "../../../models/Sheet";
 
 export default {
+    inject: ['appData'],
     props: {
         sheet: Sheet
     },
@@ -74,7 +75,7 @@ export default {
     },
     methods: {
         render() {
-            const characters = this.characterRepository.get(app.game);
+            const characters = this.characterRepository.get(this.appData.game);
             this.characterNames = collect(characters).pluck('translatedName').items;
         },
         open() {

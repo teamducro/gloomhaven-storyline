@@ -32,6 +32,7 @@ import {MDCSelect} from "@material/select/component";
 import GameData from "../../services/GameData";
 
 export default {
+    inject: ['appData'],
     props: {
         withTransparency: {
             type: Boolean,
@@ -64,7 +65,7 @@ export default {
             document.querySelector('.game-switch .mdc-select__selected-text').click();
         },
         setCurrent() {
-            this.current = app.game;
+            this.current = this.appData.game;
         },
         setGames(enabledGames) {
             this.games = enabledGames || app.enabledGames;

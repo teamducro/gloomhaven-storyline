@@ -216,7 +216,7 @@ export default {
         async render() {
             this.loading = true;
 
-            this.sheet = this.sheetRepository.make(app.game);
+            this.sheet = this.sheetRepository.make(this.appData.game);
             this.costModifier = this.calculateCostModifier(this.sheet.reputation || 0);
             this.campaignName = this.getCampaignName();
             this.itemAvailability = new ItemAvailability(this.sheet);

@@ -54,7 +54,7 @@ export default {
     },
     computed: {
         isDisabled() {
-            return this.disabled || (this.autoDisable && this.appData.story?.read_only);
+            return this.disabled || (this.autoDisable && this.appData.read_only);
         }
     },
     methods: {

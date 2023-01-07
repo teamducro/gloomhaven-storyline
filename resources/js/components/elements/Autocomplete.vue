@@ -68,7 +68,7 @@ export default {
     },
     computed: {
         isFieldDisabled() {
-            return this.autoDisable && this.appData.story?.read_only;
+            return this.autoDisable && this.appData.read_only;
         }
     },
     watch: {

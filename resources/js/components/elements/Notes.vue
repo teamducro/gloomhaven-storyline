@@ -81,7 +81,7 @@ export default {
             return this.isLocalCampaign ? 140 : 1000;
         },
         isDisabled() {
-            return this.disabled || (this.autoDisable && this.appData.story?.read_only);
+            return this.disabled || (this.autoDisable && this.appData.read_only);
         }
     },
     watch: {

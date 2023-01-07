@@ -129,8 +129,8 @@ export default {
     },
     methods: {
         async setAchievements() {
-            this.enabled = app.game !== 'jotl';
-            this.game = app.game;
+            this.game = this.appData.game;
+            this.enabled = this.game !== 'jotl';
             this.achievements = app.achievements.sortBy('name');
 
             await this.$nextTick();

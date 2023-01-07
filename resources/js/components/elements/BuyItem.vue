@@ -139,7 +139,7 @@ export default {
             }
         },
         getCharacters() {
-            const sheet = this.sheetRepository.make(app.game);
+            const sheet = this.sheetRepository.make(this.appData.game);
             this.characters = collect(sheet.characters);
             this.costModifier = this.calculateCostModifier(sheet.reputation);
         },
