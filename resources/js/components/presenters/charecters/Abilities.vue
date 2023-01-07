@@ -5,11 +5,11 @@
 
             <!-- Show all toggle -->
             <checkbox-with-label id="desktop-show-all-abilities" class="hidden md:flex"
-                                 :label="$t('Show all')"
+                                 :label="$t('Show all')" :auto-disable="false"
                                  :checked.sync="prefs.showAll"/>
 
             <!-- Manage -->
-            <button @click="manageAvailable" id="open-manage-abilities"
+            <button @click="manageAvailable" id="open-manage-abilities" :disabled="appData.read_only"
                     class="mdc-button mdc-button--raised !bg-dark-gray2-75 mt-.5 ml-2 sm:ml-4">
                 <inline-svg src="icons/level" class="mdc-button__icon !flex flex-col transition-colors"
                             :class="[hasAvailableSlots ? 'animate-color-'+character.id.toLowerCase() : '']"
@@ -67,7 +67,7 @@
                     </i>
                     <!-- Show all toggle -->
                     <checkbox-with-label id="mobile-show-all-abilities" class="md:hidden"
-                                         :label="$t('Show all')"
+                                         :label="$t('Show all')" :auto-disable="false"
                                          :checked.sync="prefs.showAll"/>
                 </div>
 
@@ -121,6 +121,7 @@ import store from "store/dist/store.modern";
 import Flip from "../../../mixins/Flip";
 
 export default {
+    inject: ['appData'],
     props: {
         character: Character
     },

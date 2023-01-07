@@ -130,6 +130,14 @@ export default {
         "3": "or share it on one of the following platforms.",
         "title": "Share Gloomhaven Storyline Tracker"
     },
+    "share-campaign-code": {
+        "not-allowed": "You are not the owner of this campaign, you can't share it with others.",
+        "1": "Share the following campaign code with your party members to enable progress sync across all your devices!",
+        "2": "Valid until",
+        "3": "The code is valid for one week.",
+        "4": "When enabled, users who use this code won't be able to edit the storyline.",
+    },
+    "Read only mode": "Read only mode",
     "campaign page": {
         "local desc": "The local campaign is your free campaign, it is stored on your device and cannot be synchronized automatically between members."
     },

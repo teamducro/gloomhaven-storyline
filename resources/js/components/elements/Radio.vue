@@ -6,7 +6,7 @@
                    :id="Number.isInteger(id) ? group+id : id"
                    :name="group"
                    :checked="isChecked"
-                   :disabled="disabled"
+                   :disabled="isDisabled"
                    @change="changed">
             <div class="mdc-radio__background">
                 <div class="mdc-radio__outer-circle"></div>
@@ -20,6 +20,7 @@
 
 <script>
 export default {
+    inject: ['appData'],
     props: {
         id: {
             type: [String, Number]
@@ -37,7 +38,11 @@ export default {
         disabled: {
             type: Boolean,
             default: false
-        }
+        },
+        autoDisable: {
+            type: Boolean,
+            default: true
+        },
     },
     data() {
         return {
@@ -46,6 +51,11 @@ export default {
     },
     mounted() {
         this.isChecked = this.checked;
+    },
+    computed: {
+        isDisabled() {
+            return this.disabled || (this.autoDisable && this.appData.story?.read_only);
+        }
     },
     methods: {
         changed() {

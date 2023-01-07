@@ -2,7 +2,7 @@
     <div v-if="enabled">
         <div class="pt-16 pb-4 px-4 flex flex-col">
 
-            <div class="fixed right-0 top-0 mt-1 z-5">
+            <div v-if="!appData.read_only" class="fixed right-0 top-0 mt-1 z-5">
                 <dropdown ref="achievement-to-add-dropdown" align="right"
                           @open="dropDownClose = true"
                           @close="dropDownClose = false"
@@ -93,6 +93,7 @@ import {MDCList} from "@material/list/component";
 import {MDCTextField} from "@material/textfield/component";
 
 export default {
+    inject: ['appData'],
     data() {
         return {
             enabled: true,

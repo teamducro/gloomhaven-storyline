@@ -16,6 +16,7 @@
                                      :label="$t(code)"
                                      :checked.sync="enabled[code]"
                                      :disabled="disabled[code]"
+                                     :auto-disable="false"
                                      @change="store"/>
             </li>
         </ul>

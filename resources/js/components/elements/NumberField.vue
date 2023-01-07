@@ -2,7 +2,7 @@
     <div class="number-field-container">
         <label class="mdc-text-field mdc-text-field--outlined" ref="field">
             <input type="text" :value="number" @change="numberChanged" :aria-labelledby="id"
-                   class="mdc-text-field__input font-title text-xl">
+                   class="mdc-text-field__input font-title text-xl" :disabled="isDisabled">
             <span class="mdc-notched-outline">
                 <span class="mdc-notched-outline__leading"></span>
                 <span class="mdc-notched-outline__notch">
@@ -11,7 +11,7 @@
                 <span class="mdc-notched-outline__trailing"></span>
             </span>
         </label>
-        <div class="absolute h-full right-0 top-0 p-1">
+        <div class="absolute h-full right-0 top-0 p-1" :class="{'text-gray-400': isDisabled}">
             <div class="flex flex-col h-full">
                 <button class="h-1/2 no-select" @click="add" :class="{'text-gray-400': number === max}">
                     <span class="material-icons">add</span>
@@ -28,6 +28,7 @@
 import {MDCTextField} from "@material/textfield/component";
 
 export default {
+    inject: ['appData'],
     props: {
         id: {
             type: String
@@ -51,7 +52,15 @@ export default {
         max: {
             type: Number,
             default: null
-        }
+        },
+        disabled: {
+            type: Boolean,
+            default: false
+        },
+        autoDisable: {
+            type: Boolean,
+            default: true
+        },
     },
     data() {
         return {
@@ -63,6 +72,11 @@ export default {
         this.number = this.value;
         this.field = new MDCTextField(this.$refs['field']);
     },
+    computed: {
+        isDisabled() {
+            return this.disabled || (this.autoDisable && this.appData.story?.read_only);
+        }
+    },
     watch: {
         value: function (value) {
             this.number = value;
@@ -73,12 +87,24 @@ export default {
     },
     methods: {
         add() {
+            if (this.isDisabled) {
+                return;
+            }
+
             this.number = this.number + this.step;
         },
         subtract() {
+            if (this.isDisabled) {
+                return;
+            }
+
             this.number = this.number - this.step;
         },
         numberChanged(e) {
+            if (this.isDisabled) {
+                return;
+            }
+
             this.number = e.target.value;
             if (this.number === '-' || this.number === '') {
                 this.number = 0;

@@ -22,21 +22,21 @@
 
             <div class="flex">
                 <button v-if="!owns" class="mdc-button mdc-button--raised mr-2"
-                        :disabled="!hasEnoughCash || !availability" @click="buy">
+                        :disabled="appData.read_only || !hasEnoughCash || !availability" @click="buy">
                     <i class="material-icons mdc-button__icon">euro</i>
                     <span class="mdc-button__label">{{ $t('Buy') }}</span>
                 </button>
                 <button v-if="!owns" class="mdc-button mdc-button--raised mr-2"
-                        :disabled="!availability" @click="add">
+                        :disabled="appData.read_only || !availability" @click="add">
                     <i class="material-icons mdc-button__icon">add</i>
                     <span class="mdc-button__label">{{ $t('Add') }}</span>
                 </button>
-                <button v-if="owns" class="mdc-button mdc-button--raised mr-2"
+                <button v-if="owns" class="mdc-button mdc-button--raised mr-2" :disabled="appData.read_only"
                         @click="sell">
                     <i class="material-icons mdc-button__icon">local_offer</i>
                     <span class="mdc-button__label">{{ $t('Sell') }}</span>
                 </button>
-                <button v-if="owns" class="mdc-button mdc-button--raised mr-2"
+                <button v-if="owns" class="mdc-button mdc-button--raised mr-2" :disabled="appData.read_only"
                         @click="remove">
                     <i class="material-icons mdc-button__icon">remove</i>
                     <span class="mdc-button__label">{{ $t('Remove') }}</span>
@@ -54,6 +54,7 @@ import SheetCalculations from "../../services/SheetCalculations";
 import SheetRepository from "../../repositories/SheetRepository";
 
 export default {
+    inject: ['appData'],
     mixins: [SheetCalculations],
     props: {
         item: {

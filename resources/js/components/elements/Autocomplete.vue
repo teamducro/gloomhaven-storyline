@@ -1,10 +1,10 @@
 <template>
     <div>
-        <dropdown ref="dropdown" align="left" :should-toggle="false">
+        <dropdown ref="dropdown" align="left" :should-toggle="false" :auto-disable="true">
             <template v-slot:trigger>
                 <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="field">
                     <span class="mdc-text-field__ripple"></span>
-                    <input class="mdc-text-field__input" :aria-labelledby="id"
+                    <input class="mdc-text-field__input" :aria-labelledby="id" :disabled="isFieldDisabled"
                            type="text" :name="id" autocomplete="off"
                            v-model="query" @keyup="filter">
                     <span class="mdc-floating-label" :id="id">{{ label }}</span>
@@ -36,12 +36,14 @@ import Slugify from "../../services/Slugify";
 import Helpers from "../../services/Helpers";
 
 export default {
+    inject: ['appData'],
     mixins: [Slugify],
     props: {
         id: {type: String},
         label: {type: String},
         list: {type: Array},
         disabled: {type: Array},
+        autoDisable: {type: Boolean, default: true},
         maxItems: {default: 10},
         width: {type: String, default: 'w-40'},
         autoClose: {type: Boolean, default: false},
@@ -63,6 +65,11 @@ export default {
     },
     mounted() {
         this.field = new MDCTextField(this.$refs['field']);
+    },
+    computed: {
+        isFieldDisabled() {
+            return this.autoDisable && this.appData.story?.read_only;
+        }
     },
     watch: {
         list: {

@@ -5,6 +5,7 @@
             :group="group"
             :checked="isChecked"
             :disabled="disabled"
+            :auto-disable="autoDisable"
             @change="changed"></checkbox>
         <slot>
             <label :for="id" class="font-bold" :class="{'text-white2-25': disabled}">{{ label }}</label>
@@ -35,7 +36,11 @@ export default {
         disabled: {
             type: Boolean,
             default: false
-        }
+        },
+        autoDisable: {
+            type: Boolean,
+            default: true
+        },
     },
     data() {
         return {
@@ -43,6 +48,8 @@ export default {
         }
     },
     mounted() {
+        console.log(this.id);
+        console.log(this.autoDisable ? 1 : 0);
         this.isChecked = this.checked;
     },
     watch: {

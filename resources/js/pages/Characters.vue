@@ -15,7 +15,7 @@
                       class="pl-6">{{ $t('Abilities') }}</span>
             </h1>
 
-            <add-character ref="add-character" :sheet="sheet" @create="create"/>
+            <add-character v-if="!appData.read_only" ref="add-character" :sheet="sheet" @create="create"/>
 
             <div class="sm:mt-4 sm:flex">
                 <character-menu :selected="selected" :abilities="abilities" :sheet="sheet" @select="select"
@@ -31,13 +31,8 @@
 
                             <div class="mb-4">
                                 <h2 class="mb-2">{{ $t('Name') }}</h2>
-                                <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="name-field">
-                                    <span class="mdc-text-field__ripple"></span>
-                                    <input class="mdc-text-field__input" aria-labelledby="name"
-                                           type="text" name="name" v-model="nameText" @change="store">
-                                    <span class="mdc-floating-label" id="name">{{ $t('Name') }}</span>
-                                    <span class="mdc-line-ripple"></span>
-                                </label>
+                                <text-field id="name" ref="name-field" :label="$t('Name')"
+                                            :value.sync="nameText" @change="store"></text-field>
                             </div>
 
                             <div class="flex flex-wrap">
@@ -147,18 +142,18 @@
 
                     <div class="my-8">
                         <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
-                                class="mr-4 mdc-button mdc-button--raised">
+                                class="mr-4 mdc-button mdc-button--raised" :disabled="appData.read_only">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
                             <span class="mdc-button__label">{{ $t('Retire') }}</span>
                         </button>
                         <button v-if="isArchived" @click="$refs['remove-character'].open()" type="button"
-                                class="mdc-button mdc-button--raised">
+                                class="mdc-button mdc-button--raised" :disabled="appData.read_only">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
                             <span class="mdc-button__label">{{ $t('Remove') }}</span>
                         </button>
                         <button v-if="isArchived" type="button"
                                 @click="restore"
-                                :disabled="characterRepository.partyHasCharacter(sheet, character.id)"
+                                :disabled="appData.read_only || characterRepository.partyHasCharacter(sheet, character.id)"
                                 class="ml-4 mdc-button mdc-button--raised">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
                             <span class="mdc-button__label">{{ $t('Restore') }}</span>
@@ -207,7 +202,7 @@
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
                     <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                 </button>
-                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
+                <button type="button"  class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="remove">
                     <span class="mdc-button__label text-red-700">{{ $t('Remove') }}</span>
                 </button>
@@ -229,8 +224,11 @@ import store from "store/dist/store.modern";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemAvailability from "../services/ItemAvailability";
 import Helpers from "../services/Helpers";
+import TextField from "../components/elements/TextField.vue";
 
 export default {
+    components: {TextField},
+    inject: ['appData'],
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
@@ -248,7 +246,6 @@ export default {
             items: collect(),
             itemAvailability: null,
             outOfStockItems: [],
-            nameField: null,
             isLocalCampaign: true,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
@@ -299,10 +296,7 @@ export default {
         async refreshInputFields() {
             await this.$nextTick();
 
-            if (this.nameField) {
-                this.nameField.destroy();
-            }
-            this.nameField = new MDCTextField(this.$refs['name-field']);
+            this.$refs['name-field'].refresh();
         },
         findSoloScenario() {
             this.soloScenario = this.scenarioRepository.findSolo(this.character.id);

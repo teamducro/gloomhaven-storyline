@@ -9,7 +9,7 @@
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
-            <div v-if="Object.keys(sheet.itemDesigns).length" class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
+            <div v-if="!appData.read_only && Object.keys(sheet.itemDesigns).length" class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
                 <dropdown class="items-to-add-dropdown" align="right" width=""
                           @open="dropDownClose = true"
                           @close="dropDownClose = false">
@@ -147,6 +147,7 @@ import ItemAvailability from "../services/ItemAvailability";
 import GameData from "../services/GameData";
 
 export default {
+    inject: ['appData'],
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {

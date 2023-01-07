@@ -2,7 +2,7 @@
     <div class="text-field-container">
         <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="field">
             <span class="mdc-text-field__ripple"></span>
-            <input class="mdc-text-field__input" :aria-labelledby="id"
+            <input class="mdc-text-field__input" :aria-labelledby="id" :disabled="isDisabled"
                    type="text" :name="id" :value="text" @change="textChanged">
             <span class="mdc-floating-label" :id="id"
                   :class="{'mdc-floating-label--float-above': text.length}">{{ label }}</span>
@@ -15,6 +15,7 @@
 import {MDCTextField} from "@material/textfield/component";
 
 export default {
+    inject: ['appData'],
     props: {
         id: {
             type: String
@@ -30,7 +31,15 @@ export default {
         max: {
             type: Number,
             default: null
-        }
+        },
+        disabled: {
+            type: Boolean,
+            default: false
+        },
+        autoDisable: {
+            type: Boolean,
+            default: true
+        },
     },
     data() {
         return {
@@ -41,6 +50,11 @@ export default {
     mounted() {
         this.text = this.value;
         this.field = new MDCTextField(this.$refs['field']);
+    },
+    computed: {
+        isDisabled() {
+            return this.disabled || (this.autoDisable && this.appData.story?.read_only);
+        }
     },
     watch: {
         value: function (value) {
@@ -64,6 +78,12 @@ export default {
                 this.$emit('update:value', this.text);
                 this.$emit('change', this.text);
             }
+        },
+        refresh() {
+            if (this.field) {
+                this.field.destroy();
+            }
+            this.field = new MDCTextField(this.$refs['field']);
         }
     }
 }

@@ -39,7 +39,7 @@
                     ref="city-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, true)" :disabled="!checkedItems.length"
+                        <button @click="draw(checkedItems, true)" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
@@ -55,7 +55,7 @@
                     ref="road-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, false)" :disabled="!checkedItems.length"
+                        <button @click="draw(checkedItems, false)" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
@@ -122,6 +122,7 @@ import {ScenarioState} from "../models/ScenarioState";
 export default {
     components: {ScenarioNumber},
     mixins: [GetCampaignName, SheetCalculations],
+    inject: ['appData'],
     data() {
         return {
             sheet: null,
@@ -206,7 +207,7 @@ export default {
         async render() {
             this.loading = true;
 
-            this.sheet = this.sheetRepository.make(app.game);
+            this.sheet = this.sheetRepository.make(this.appData.game);
             this.campaignName = this.getCampaignName();
 
             this.isLocalCampaign = app.campaignId === 'local';
