@@ -52,6 +52,16 @@ describe('Storyline', () => {
         utilities.isNodeHidden(2);
     });
 
+    it('It cant complete scenarios in read only mode', () => {
+        cy.visit('/tracker');
+
+        utilities.setReadOnly().then(() => {
+            utilities.completeScenario(1);
+
+            utilities.isNodeHidden(2);
+        });
+    });
+
     it('It reveals chapters', () => {
         let alerted = false;
         cy.on('window:alert', message => alerted = message);

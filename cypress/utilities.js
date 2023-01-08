@@ -38,6 +38,19 @@ export default {
         );
     },
 
+    setReadOnly() {
+        return cy.wrap(
+            new Promise((fulfilled) => {
+                cy.window().then((window) => {
+                    window.app.story = {
+                        read_only: true
+                    }
+                    fulfilled();
+                });
+            })
+        );
+    },
+
     isNodeVisible(id) {
         cy.get('#node' + id).should(($node) => {
             expect($node).css('display', 'inline');

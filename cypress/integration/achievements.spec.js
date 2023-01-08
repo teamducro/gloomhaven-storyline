@@ -142,4 +142,12 @@ describe('Achievements', () => {
 
         cy.get('.mdc-dialog__title').contains('End of Corruption (3)');
     })
+
+    it('cant add achievements in read only mode', () => {
+        cy.visit('/tracker/#/achievements');
+
+        utilities.setReadOnly().then(() => {
+            cy.get('button').contains('add').should('not.exist');
+        });
+    });
 });
