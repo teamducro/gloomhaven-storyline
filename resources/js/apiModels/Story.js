@@ -17,6 +17,7 @@ class Story extends Model {
         this.expires_at;
         this.has_expired;
         this.is_shared;
+        this.read_only;
         this.is_new;
         this.updated_at;
         this.token;

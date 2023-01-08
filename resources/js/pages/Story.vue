@@ -19,6 +19,7 @@ import GetCampaignName from "../services/GetCampaignName";
 import GameData from "../services/GameData";
 
 export default {
+    inject: ['appData'],
     mixins: [GetCampaignName],
     watch: {
         $route(to, from) {
@@ -66,7 +67,7 @@ export default {
     },
     methods: {
         render() {
-            this.game = app.game;
+            this.game = this.appData.game;
 
             if (this.setStoryline()) {
                 return this.rerender();
@@ -90,7 +91,7 @@ export default {
             this.zoom = await zoom('#storyline');
         },
         renderOrientation() {
-            const viewBoxes = this.gameData.storylineViewBox(app.game);
+            const viewBoxes = this.gameData.storylineViewBox(this.appData.game);
 
             if (this.isPortrait) {
                 c('#storyline .landscape').remove();
@@ -214,8 +215,8 @@ export default {
             c('.campaign-name').text(this.campaignName);
         },
         setStoryline() {
-            if (this.storyline !== app.game) {
-                this.storyline = app.game;
+            if (this.storyline !== this.appData.game) {
+                this.storyline = this.appData.game;
                 return true;
             }
         },

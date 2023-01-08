@@ -4,7 +4,7 @@
                class="mdc-checkbox__native-control"
                :name="group"
                v-model="isChecked"
-               :disabled="disabled"
+               :disabled="isDisabled"
                :id="id"
                @change="changed"/>
         <div class="mdc-checkbox__background">
@@ -22,6 +22,7 @@
 
 <script>
 export default {
+    inject: ['appData'],
     props: {
         id: {
             type: String,
@@ -38,7 +39,11 @@ export default {
         disabled: {
             type: Boolean,
             default: false
-        }
+        },
+        autoDisable: {
+            type: Boolean,
+            default: true
+        },
     },
     data() {
         return {
@@ -47,6 +52,11 @@ export default {
     },
     mounted() {
         this.isChecked = this.checked;
+    },
+    computed: {
+        isDisabled() {
+            return this.disabled || (this.autoDisable && this.appData.read_only);
+        }
     },
     watch: {
         checked: function (isChecked) {
