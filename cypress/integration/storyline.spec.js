@@ -109,6 +109,17 @@ describe('Storyline', () => {
         utilities.closeModel();
     });
 
+    it('It blocks required side scenarios', () => {
+        cy.visit('/tracker?states=1_c-64_i');
+
+        utilities.isNodeRequired(64);
+        utilities.openScenario(64);
+        cy.get('#complete').should(($radio) => {
+            expect($radio).attr('disabled', 'disabled');
+        });
+        utilities.closeModel();
+    });
+
     it('It unlocks required scenarios', () => {
         cy.visit('/tracker?states=1_c-2_c-3_c-8_c');
 
@@ -122,6 +133,24 @@ describe('Storyline', () => {
         });
 
         utilities.openScenario(7);
+        cy.get('#complete')
+            .should('not.have.attr', 'disabled');
+        utilities.closeModel();
+    });
+
+    it('It unlocks required side scenarios', () => {
+        cy.visit('/tracker?states=1_c-2_c-4_c-6_c-7_c-8_c-14_c-20_c-18_c-64_i');
+
+        utilities.isNodeRequired(64);
+
+        utilities.completeScenario(43);
+
+        utilities.isNodeVisible(64);
+        cy.get('#node64 .required').should(($radio) => {
+            expect($radio).css('display', 'none');
+        });
+
+        utilities.openScenario(64);
         cy.get('#complete')
             .should('not.have.attr', 'disabled');
         utilities.closeModel();
