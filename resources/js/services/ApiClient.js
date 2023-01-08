@@ -1,7 +1,7 @@
 import store from "store/dist/store.modern";
 import Csrf from "./Csrf";
 
-export default class ApiService {
+export default class ApiClient {
 
     constructor() {
         this.useToken = true;

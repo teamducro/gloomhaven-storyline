@@ -11,6 +11,7 @@ import GameData from "../../services/GameData";
 import ItemRepository from "../../repositories/ItemRepository";
 
 export default {
+    inject: ['appData'],
     props: {
         text: {
             type: String,
@@ -70,7 +71,7 @@ export default {
             return text;
         },
         addCharacterIcons(text) {
-            const characters = this.gameData.characterOrder(app.game);
+            const characters = this.gameData.characterOrder(this.appData.game);
 
             if (text.match(new RegExp('{' + characters.join('|'))) !== null) {
                 characters.forEach((character) => {

@@ -182,7 +182,7 @@
                                 @leave="notesLeft">
                                 <div v-if="notesIsOpen" ref="notes"
                                      class="mdc-text-field mdc-text-field--textarea w-full">
-                                    <textarea id="notes" @change="noteChanged" v-model="scenario.notes"
+                                    <textarea id="notes" @change="noteChanged" v-model="scenario.notes" :disabled="appData.read_only"
                                               class="mdc-text-field__input" rows="4" cols="40"></textarea>
                                     <div class="mdc-notched-outline">
                                         <div class="mdc-notched-outline__leading"></div>
@@ -273,6 +273,7 @@ const md5 = require('js-md5');
 const queryString = require('query-string');
 
 export default {
+    inject: ['appData'],
     components: {Cards},
     data() {
         return {

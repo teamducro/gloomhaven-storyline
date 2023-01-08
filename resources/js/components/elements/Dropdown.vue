@@ -21,6 +21,7 @@
 
 <script>
 export default {
+    inject: ['appData'],
     props: {
         width: {
             default: () => {
@@ -29,10 +30,16 @@ export default {
         },
         align: {default: 'left'},
         shouldToggle: {default: true},
+        autoDisable: {default: false},
     },
     data() {
         return {
             isOpen: false
+        }
+    },
+    computed: {
+        isDisabled() {
+            return this.autoDisable && this.appData.read_only;
         }
     },
     watch: {
@@ -59,6 +66,10 @@ export default {
             }
         },
         open() {
+            if (this.isDisabled) {
+                return;
+            }
+
             this.isOpen = true;
         },
         close() {

@@ -11,6 +11,7 @@ import PartyGh from "./PartyGh";
 import PartyCs from "./PartyCs";
 
 export default {
+    inject: ['appData'],
     components: {PartyJotl, PartyGh, PartyCs},
     data() {
         return {
@@ -27,7 +28,7 @@ export default {
     },
     methods: {
         async render() {
-            this.game = app.game;
+            this.game = this.appData.game;
         }
     }
 }

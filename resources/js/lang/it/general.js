@@ -63,6 +63,7 @@ export default {
     "Locked": "Locked",
     "Lost": "Perdute",
     "Lvl": "Lvl",
+    "Enable items from other games": "Enable items from other games",
     "No items available": "No items available",
     "No treasures available": "Nessun tesoro disponibile",
     "Not unlocked": "Non sbloccato",
@@ -91,6 +92,7 @@ export default {
     "Search name or nr": "Search name or nr",
     "Set this counter to the amount of characters you have retired": "Set this counter to the amount of characters you have retired.",
     "Show all": "Show all",
+    "Manage": "Manage",
     "Show treasures": "Mostra tesori",
     "solved": "solved",
     "Summary": "Riassunto",
@@ -125,6 +127,14 @@ export default {
         "3": "O condividila su una di queste piattaforme",
         "title": "Condividi Gloomhaven Storyline Tracker"
     },
+    "share-campaign-code": {
+        "1": "Share the following campaign code with your party members to enable progress sync across all your devices!",
+        "2": "Valid until",
+        "3": "The code is valid for one week.",
+        "4": "When enabled, users who use this code won't be able to edit the storyline.",
+        "not-allowed": "You are not the owner of this campaign, you can't share it with others."
+    },
+    "Read only mode": "Read only mode",
     "campaign page": {
         "local desc": "The local campaign is your free campaign, it is stored on your device and cannot be synchronized automatically between members."
     },

@@ -182,6 +182,7 @@ import GameData from "../../services/GameData";
 const md5 = require('js-md5');
 
 export default {
+    inject: ['appData'],
     data() {
         return {
             game: null,
@@ -234,7 +235,7 @@ export default {
             location.reload();
         },
         setGame(game) {
-            this.game = game || app.game;
+            this.game = game || this.appData.game;
             this.hasMap = this.gameData.map(this.game) !== null;
         },
         setUser() {

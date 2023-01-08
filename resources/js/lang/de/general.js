@@ -63,6 +63,7 @@ export default {
     "Locked": "Versperrt",
     "Lost": "Verloren",
     "Lvl": "St",
+    "Enable items from other games": "Enable items from other games",
     "No items available": "Keine Gegenstände verfügbar",
     "No treasures available": "Keine Schätze verfügbar",
     "Not unlocked": "Nicht freigeschaltet",
@@ -91,6 +92,7 @@ export default {
     "Search name or nr": "Suche Name oder Nr",
     "Set this counter to the amount of characters you have retired": "Stell den Zähler auf die Anzahl der schon in Ruhestand geschickten Charaktere ein.",
     "Show all": "Show all",
+    "Manage": "Manage",
     "Show treasures": "Schätze anzeigen",
     "solved": "gelöst",
     "Summary": "Zusammenfassung",
@@ -125,6 +127,14 @@ export default {
         "3": "oder teile ihn auf einer der folgenden Plattformen.",
         "title": "Gloomhaven-Storyline-Tracker teilen"
     },
+    "share-campaign-code": {
+        "1": "Share the following campaign code with your party members to enable progress sync across all your devices!",
+        "2": "Valid until",
+        "3": "The code is valid for one week.",
+        "4": "When enabled, users who use this code won't be able to edit the storyline.",
+        "not-allowed": "You are not the owner of this campaign, you can't share it with others."
+    },
+    "Read only mode": "Read only mode",
     "campaign page": {
         "local desc": "Die lokale Kampagne ist deine Gratis-Kampagne und wird auf deinem lokalen Endgerät gespeichert. Du kannst sie nicht automatisch mit deinen Gruppenmitgliedern synchronisieren."
     },
@@ -165,7 +175,6 @@ export default {
     "Spanish": "Spanisch",
     "Campaigns": "Kampagnen",
     "Buy shared campaign": "Kaufe eine neue teilbare Kampagne",
-    "Kaufen Sie eine neue gemeinsame Kampagne": "Kaufen Sie eine neue gemeinsame Kampagne",
     "Add shared campaign": "Füge eine teilbare Kampagne hinzu",
     "donations": {
         "1": {
