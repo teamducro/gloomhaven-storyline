@@ -51,7 +51,7 @@ export default {
     "Envelope X solution": "Solución sobre X",
     "Envelope": "Sobre",
     "Gained from": "Obtenido en",
-    "Global": "Global",
+    "Global": "Globales",
     "Gold": "Oro",
     "hidden": "escenario",
     "incomplete": "incompleto",
@@ -63,6 +63,7 @@ export default {
     "Locked": "Bloqueado",
     "Lost": "Perdido",
     "Lvl": "Nvl",
+    "Manage": "Gestión",
     "No items available": "No hay objetos disponibles",
     "No treasures available": "No hay tesoros disponibles",
     "Not unlocked": "Sin desbloquear",
@@ -104,7 +105,7 @@ export default {
     "XP": "XP",
     "You may select an additional perk!": "¡Puedes seleccionar una pericia adicional!",
     "manage-abilities": {
-        "title": "Administrar capacidades para cada nivel.",
+        "title": "Gestiona las cartas de capacidad para cada nivel.",
         "text": "Seleccione una carta de capacidad para cada nivel, después de elegir la carta, las cartas disponibles se filtrarán en consecuencia.",
         "level_1": "Sube el nivel de {character} primero antes de administrar laa cartas de capacidad."
     },
