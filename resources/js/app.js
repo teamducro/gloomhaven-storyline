@@ -104,9 +104,30 @@ window.app = new Vue({
     i18n,
     router,
     el: '#app',
+    provide() {
+        const appData = {}
+
+        Object.defineProperty(appData, "game", {
+            get: () => this.game,
+        })
+
+        Object.defineProperty(appData, "story", {
+            get: () => this.story,
+        })
+
+        // This shorthand is needed to use it in vue templates
+        Object.defineProperty(appData, "read_only", {
+            get: () => this.story?.read_only,
+        })
+
+        return {
+            appData,
+        }
+    },
     data() {
         return {
             game: null,
+            story: null,
             enabledGames: {},
             scenarios: null,
             quests: null,
@@ -162,6 +183,7 @@ window.app = new Vue({
                 this.fetchItems(),
             ]);
 
+            this.story = this.stories.firstWhere('campaignId', this.campaignId);
             this.$bus.$emit('campaigns-changed');
         },
         async fetchAchievements() {
@@ -200,6 +222,7 @@ window.app = new Vue({
         switchLocal(campaignId = 'local') {
             this.campaignId = campaignId;
             store.set('campaignId', this.campaignId);
+            this.story = null
         },
         async switchGame(game) {
             this.game = game;

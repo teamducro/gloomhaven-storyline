@@ -139,6 +139,7 @@ export default {
                 {version: '3.9', description: 'Manage abilities for each character level', date: dayjs('2022-06-13')},
                 {version: '3.10', description: 'Add beta support for Crimson Scales', date: dayjs('2022-07-17')},
                 {version: '3.11', description: 'Crimson Scales out of beta and add support to use items across games', date: dayjs('2023-01-02')},
+                {version: '3.12', description: 'A read only sharing option for shared campaigns', date: dayjs('2023-01-09')},
             ].reverse()
         }
     },

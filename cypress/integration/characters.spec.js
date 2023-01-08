@@ -243,4 +243,22 @@ describe('Character', () => {
         cy.get('input[aria-labelledby="retirements"]').should('have.value', '2');
     });
 
+    it('cant update characters in read only mode', () => {
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter();
+
+        utilities.setReadOnly().then(() => {
+            cy.get('input[name="name"]').should('be.disabled');
+            cy.get('input[aria-labelledby="level"]').should('be.disabled');
+            cy.get('input[aria-labelledby="xp"]').should('be.disabled');
+            cy.get('input[aria-labelledby="gold"]').should('be.disabled');
+            cy.get('#perk-0-0').should('be.disabled');
+            cy.get('input[name="items"]').should('be.disabled');
+            cy.get('#notes').should('be.disabled');
+            cy.get('input[aria-labelledby="personal-quests"]').should('be.disabled');
+            cy.get('input[aria-labelledby="retirements"]').should('be.disabled');
+            cy.get('.items-to-add-dropdown').should('not.exist');
+        });
+    });
+
 });

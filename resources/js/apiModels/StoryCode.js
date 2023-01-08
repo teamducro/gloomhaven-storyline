@@ -7,6 +7,7 @@ class StoryCode extends Model {
         super();
 
         this.code;
+        this.read_only;
         this.created_at;
         this.expires_at;
 

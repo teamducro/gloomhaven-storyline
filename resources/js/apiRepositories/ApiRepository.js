@@ -1,9 +1,9 @@
-import ApiService from "../services/ApiService";
+import ApiClient from "../services/ApiClient";
 
 export default class ApiRepository {
 
     constructor() {
-        this.api = new ApiService();
+        this.api = new ApiClient();
     }
 
 }

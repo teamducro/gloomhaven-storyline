@@ -1,11 +1,11 @@
-import ApiService from "../ApiService";
+import ApiClient from "../ApiClient";
 
 export default class OfflineChecker {
     constructor($bus) {
         this.$bus = $bus;
         this.isOffline = false;
         this.checkEverySeconds = 60;
-        this.apiService = new ApiService;
+        this.apiService = new ApiClient;
     }
 
     handle() {

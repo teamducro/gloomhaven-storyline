@@ -8,4 +8,12 @@ export default class StoryRepository extends ApiRepository {
 
         return new StoryCode(code);
     }
+    async update(story, readOnly = false) {
+        const response = await this.api.put('story-code/' + story.id, {
+            read_only: readOnly,
+        });
+        const code = response.data.data;
+
+        return new StoryCode(code);
+    }
 }

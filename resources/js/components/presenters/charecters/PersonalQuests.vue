@@ -21,7 +21,7 @@
 
             <div class="mx-4">{{ $t('or') }}</div>
 
-            <button @click="random" class="mdc-button origin-left transform scale-90 mdc-button--raised">
+            <button @click="random" :disabled="appData.read_only" class="mdc-button origin-left transform scale-90 mdc-button--raised">
                 <i class="material-icons mdc-button__icon">launch</i>
                 <span class="mdc-button__label">{{ $t('Draw') }}</span>
             </button>
@@ -80,6 +80,7 @@ import PersonalQuestValidator from "../../../validators/PersonalQuestValidator";
 import Helpers from "../../../services/Helpers";
 
 export default {
+    inject: ['appData'],
     props: {
         quest: Object,
         sheet: Object

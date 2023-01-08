@@ -2,7 +2,7 @@
     <div>
         <div class="relative mdc-text-field mdc-text-field--textarea w-full"
              :ref="id">
-        <textarea :id="id" @change="changed" @keyup="keyup" v-model="text" :disabled="disabled" :max="max"
+        <textarea :id="id" @change="changed" @keyup="keyup" v-model="text" :disabled="isDisabled" :max="max"
                   class="mdc-text-field__input" rows="4" cols="40"></textarea>
 
             <span class="absolute bottom-0 right-0 mr-2 mb-1"
@@ -32,6 +32,7 @@
 import {MDCTextField} from "@material/textfield/component";
 
 export default {
+    inject: ['appData'],
     props: {
         id: {
             type: String
@@ -46,6 +47,10 @@ export default {
         disabled: {
             type: Boolean,
             default: false
+        },
+        autoDisable: {
+            type: Boolean,
+            default: true
         },
         isLocalCampaign: {
             type: Boolean,
@@ -74,6 +79,9 @@ export default {
     computed: {
         max() {
             return this.isLocalCampaign ? 140 : 1000;
+        },
+        isDisabled() {
+            return this.disabled || (this.autoDisable && this.appData.read_only);
         }
     },
     watch: {
