@@ -39,14 +39,16 @@ export default {
                 'fr': 'Français',
                 'it': 'Italiano',
                 'de': 'Deutsch',
-                'es': 'Español'
+                'es': 'Español',
+                'pl': 'Polski'
             },
             flags: {
                 'en': '🇺🇸',
                 'fr': '🇫🇷',
                 'it': '🇮🇹',
                 'de': '🇩🇪',
-                'es': '🇪🇸'
+                'es': '🇪🇸',
+                'pl': '🇵🇱'
             },
             userRepository: new UserRepository,
         }
