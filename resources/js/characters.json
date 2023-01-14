@@ -12,47 +12,125 @@
             "perks": [
                 {
                     "count": 1,
-                    "desc": "Remove two {-1_WHITE} cards"
+                    "desc": "Remove two {-1_WHITE} cards",
+                    "modifiers": [
+                        {
+                            "type": "remove",
+                            "count": 2,
+                            "card": "-1"
+                        }
+                    ]
                 },
                 {
                     "count": 1,
-                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card"
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                    "modifiers": [
+                        {
+                            "type": "remove",
+                            "card": "-1"
+                        },
+                        {
+                            "type": "add",
+                            "card": "+1"
+                        }
+                    ]
                 },
                 {
                     "count": 2,
-                    "desc": "Add two {+1_WHITE} cards"
+                    "desc": "Add two {+1_WHITE} cards",
+                    "modifiers": [
+                        {
+                            "type": "add",
+                            "count": 2,
+                            "card": "+1"
+                        }
+                    ]
                 },
                 {
                     "count": 1,
-                    "desc": "Add one {+3_WHITE} card"
+                    "desc": "Add one {+3_WHITE} card",
+                    "modifiers": [
+                        {
+                            "type": "add",
+                            "card": "br_+3"
+                        }
+                    ]
                 },
                 {
                     "count": 2,
-                    "desc": "Add three {AGAIN} {PUSH}1 cards"
+                    "desc": "Add three {AGAIN} {PUSH}1 cards",
+                    "modifiers": [
+                        {
+                            "type": "add",
+                            "count": 3,
+                            "card": "br_again_push_1"
+                        }
+                    ]
                 },
                 {
                     "count": 1,
-                    "desc": "Add two {AGAIN} {PIERCE}3 cards"
+                    "desc": "Add two {AGAIN} {PIERCE}3 cards",
+                    "modifiers": [
+                        {
+                            "type": "add",
+                            "count": 2,
+                            "card": "br_again_pierce_3"
+                        }
+                    ]
                 },
                 {
                     "count": 2,
-                    "desc": "Add one {AGAIN} {STUN} card"
+                    "desc": "Add one {AGAIN} {STUN} card",
+                    "modifiers": [
+                        {
+                            "type": "add",
+                            "card": "br_again_stun"
+                        }
+                    ]
                 },
                 {
                     "count": 1,
-                    "desc": "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card"
+                    "desc": "Add one {AGAIN} {DISARM} card and one {AGAIN} {MUDDLE} card",
+                    "modifiers": [
+                        {
+                            "type": "add",
+                            "card": "br_again_disarm"
+                        },
+                        {
+                            "type": "add",
+                            "card": "br_again_muddle"
+                        }
+                    ]
                 },
                 {
                     "count": 2,
-                    "desc": "Add one {AGAIN} ADD {TARGET} card"
+                    "desc": "Add one {AGAIN} ADD {TARGET} card",
+                    "modifiers": [
+                        {
+                            "type": "add",
+                            "card": "br_again_target"
+                        }
+                    ]
                 },
                 {
                     "count": 1,
-                    "desc": "Add one {+1_WHITE} {SHIELD}1, Self card"
+                    "desc": "Add one {+1_WHITE} {SHIELD}1, Self card",
+                    "modifiers": [
+                        {
+                            "type": "add",
+                            "card": "br_+1_shield_1"
+                        }
+                    ]
                 },
                 {
                     "count": 1,
-                    "desc": "Ignore negative item effects and add one {+1_WHITE} card"
+                    "desc": "Ignore negative item effects and add one {+1_WHITE} card",
+                    "modifiers": [
+                        {
+                            "type": "add",
+                            "card": "+1"
+                        }
+                    ]
                 }
             ]
         },
