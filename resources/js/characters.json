@@ -52,7 +52,7 @@
                     "modifiers": [
                         {
                             "type": "add",
-                            "card": "br_+3"
+                            "card": "+3"
                         }
                     ]
                 },
@@ -63,7 +63,7 @@
                         {
                             "type": "add",
                             "count": 3,
-                            "card": "br_again_push_1"
+                            "card": "push1_again"
                         }
                     ]
                 },
@@ -74,7 +74,7 @@
                         {
                             "type": "add",
                             "count": 2,
-                            "card": "br_again_pierce_3"
+                            "card": "pierce3_again"
                         }
                     ]
                 },
@@ -84,7 +84,7 @@
                     "modifiers": [
                         {
                             "type": "add",
-                            "card": "br_again_stun"
+                            "card": "stun_again"
                         }
                     ]
                 },
@@ -94,11 +94,11 @@
                     "modifiers": [
                         {
                             "type": "add",
-                            "card": "br_again_disarm"
+                            "card": "disarm_again"
                         },
                         {
                             "type": "add",
-                            "card": "br_again_muddle"
+                            "card": "muddle_again"
                         }
                     ]
                 },
@@ -108,7 +108,7 @@
                     "modifiers": [
                         {
                             "type": "add",
-                            "card": "br_again_target"
+                            "card": "target_again"
                         }
                     ]
                 },
@@ -118,7 +118,7 @@
                     "modifiers": [
                         {
                             "type": "add",
-                            "card": "br_+1_shield_1"
+                            "card": "+1_shield1"
                         }
                     ]
                 },

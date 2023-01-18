@@ -1,0 +1,66 @@
+{
+    "base": [
+        {
+            "code": "+0",
+            "icon": "{+0_WHITE}"
+        },
+        {
+            "code": "+1",
+            "icon": "{+1_WHITE}"
+        },
+        {
+            "code": "+2",
+            "icon": "{+2_WHITE}"
+        },
+        {
+            "code": "-1",
+            "icon": "{-1_WHITE}"
+        },
+        {
+            "code": "-2",
+            "icon": "{-2_WHITE}"
+        },
+        {
+            "code": "x2",
+            "icon": "{x2_WHITE}"
+        },
+        {
+            "code": "mis",
+            "icon": "{min_WHITE}"
+        }
+    ],
+    "BR": [
+        {
+            "code": "+3",
+            "icon": "{+3_WHITE}"
+        },
+        {
+            "code": "push1_again",
+            "icon": "{AGAIN} {PUSH}1"
+        },
+        {
+            "code": "pierce3_again",
+            "icon": "{AGAIN} {PIERCE}3"
+        },
+        {
+            "code": "stun_again",
+            "icon": "{AGAIN} {STUN}"
+        },
+        {
+            "code": "disarm_again",
+            "icon": "{AGAIN} {DISARM}"
+        },
+        {
+            "code": "muddle_again",
+            "icon": "{AGAIN} {DISARM}"
+        },
+        {
+            "code": "target_again",
+            "icon": "{AGAIN} ADD {TARGET}"
+        },
+        {
+            "code": "+1_shield1",
+            "icon": "{+1_WHITE} {SHIELD}1"
+        }
+    ]
+}
