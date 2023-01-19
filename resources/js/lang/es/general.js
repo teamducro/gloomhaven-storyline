@@ -242,7 +242,8 @@ export default {
         "title": "Transferir datos de campaña",
         "text": "La copia de datos entre campañas se puede hacer fácilmente .",
         "warning": {
-            "text": "Los datos de la campaña solo se pueden transferir si compró una campaña compartida."
+            "text": "Los datos de la campaña solo se pueden transferir si compró una campaña compartida.",
+            "read-only": "La transferencia de datos de campaña no está disponible en modo de solo lectura."
         }
     },
     "games-enabled": {
