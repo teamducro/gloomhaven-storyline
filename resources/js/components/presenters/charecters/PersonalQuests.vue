@@ -27,7 +27,7 @@
             </button>
         </div>
 
-        <div v-if="quest.id" class="flex justify-between">
+        <div v-if="quest.id && (!sheet.hidePersonalQuests || !hidden)" class="flex justify-between">
             <div class="flex flex-col">
                 <h3 class="mt-2">{{ quest.number }} {{ $t(quest.name) }}</h3>
 
@@ -58,7 +58,7 @@
                 </div>
 
                 <div>
-                    <button @click.prevent="remove" type="button"
+                    <button @click.prevent="remove" type="button" :disabled="appData.read_only"
                             class="my-4 mdc-button mdc-button--raised">
                         <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
                         <span class="mdc-button__label">{{ $t('Remove') + ' ' + quest.number }}</span>
@@ -71,6 +71,20 @@
             </div>
         </div>
 
+        <div v-if="quest.id && sheet.hidePersonalQuests && hidden" class="flex">
+            <button @click.prevent="hidden = !hidden" type="button"
+                    class="mdc-button origin-left transform scale-75 mdc-button--raised">
+                <i class="material-icons mdc-button__icon" aria-hidden="true">bolt</i>
+                <span class="mdc-button__label">{{ $t('Show personal quest') }}</span>
+            </button>
+        </div>
+
+        <checkbox-with-label id="hide-personal-quests"
+                             class="my-2"
+                             :label="$t('Hide personal quests')"
+                             :checked.sync="sheet.hidePersonalQuests"
+                             @change="store"/>
+
     </div>
 </template>
 
@@ -78,6 +92,7 @@
 import PersonalQuestRepository from "../../../repositories/PersonalQuestRepository";
 import PersonalQuestValidator from "../../../validators/PersonalQuestValidator";
 import Helpers from "../../../services/Helpers";
+import StorySyncer from "../../../services/StorySyncer";
 
 export default {
     inject: ['appData'],
@@ -89,6 +104,8 @@ export default {
         return {
             quests: null,
             goalMet: false,
+            hidden: true,
+            storySyncer: new StorySyncer,
             personalQuestRepository: new PersonalQuestRepository,
             personalQuestValidator: new PersonalQuestValidator
         }
@@ -130,6 +147,7 @@ export default {
             this.$emit('change', {});
         },
         update(quest) {
+            this.hidden = false;
             this.$emit('update:quest', quest);
             this.$emit('change', quest);
         },
@@ -151,7 +169,6 @@ export default {
         openCard() {
             this.$bus.$emit('open-default-card', this.quest.card);
         },
-
         questFilterClosure(query) {
             // This allows to find personal quests based on id or their name.
             return (id) => {
@@ -159,6 +176,14 @@ export default {
                     || Helpers.sanitize(this.quests[id]._name).startsWith(query);
             }
         },
+        store() {
+            if (!this.quests) {
+                return;
+            }
+
+            this.sheet.store();
+            this.storySyncer.store();
+        }
     }
 }
 </script>
