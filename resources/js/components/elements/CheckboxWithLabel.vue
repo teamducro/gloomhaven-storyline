@@ -48,8 +48,6 @@ export default {
         }
     },
     mounted() {
-        console.log(this.id);
-        console.log(this.autoDisable ? 1 : 0);
         this.isChecked = this.checked;
     },
     watch: {

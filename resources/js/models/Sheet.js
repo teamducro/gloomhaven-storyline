@@ -19,6 +19,7 @@ class Sheet {
         this.itemDesigns = {...data.itemDesigns};
         this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
         this.crossGameItems = {...data.crossGameItems};
+        this.c = data.hidePersonalQuests || false;
         this.city = {...data.city};
         this.road = {...data.road};
         this.notes = data.notes || '';
@@ -46,6 +47,7 @@ class Sheet {
             characters: {'characters': {}},
             archivedCharacters: {'archivedCharacters': {}},
             crossGameItemsEnabled: 'crossGameItemsEnabled',
+            hidePersonalQuests: 'hidePersonalQuests',
             crossGameItems: {'crossGameItems': {}}
         };
 
