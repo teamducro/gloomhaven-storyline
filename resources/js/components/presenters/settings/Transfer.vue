@@ -19,7 +19,11 @@
             </div>
         </alert>
 
-        <template v-if="hasMultipleStories">
+        <alert v-if="campaignId && appData.read_only" type="warning">
+            {{ $t('transfer.warning.read-only') }}
+        </alert>
+
+        <template v-if="hasMultipleStories && !appData.read_only">
             <div class="mt-4 flex flex-col md:flex-row md:items-center w-full">
                 <div class="my-4 md:mr-4 md:my-0">
                     <campaign-switch ref="campaign-switch" :with-transparency="false"></campaign-switch>
@@ -70,6 +74,7 @@ import {MDCSelect} from "@material/select/component";
 import StoryRepository from "../../../repositories/StoryRepository";
 
 export default {
+    inject: ['appData'],
     props: {},
     data() {
         return {
