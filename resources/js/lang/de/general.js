@@ -242,7 +242,8 @@ export default {
         "title": "Kampagnen-Daten übertragen",
         "text": "Das Kopieren von Kampagnen-Daten zwischen einzelnen Kampagnen ist einfach möglich.",
         "warning": {
-            "text": "Kampagnen-Daten können nur dann übertragen werden wenn Du eine teilbare Kampagne erworben hast."
+            "text": "Kampagnen-Daten können nur dann übertragen werden wenn Du eine teilbare Kampagne erworben hast.",
+            "read-only": "Die Übertragung von Kampagnendaten ist im Nur-Lesen-Modus nicht verfügbar."
         }
     },
     "games-enabled": {
