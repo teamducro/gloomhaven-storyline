@@ -119,7 +119,10 @@
                                    :character="character"
                                    @change="store"/>
 
-                            <attack-modifier-deck :perks="character.perks" :perkDescriptions="character.perkDescriptions" :character="character"/>
+                            <attack-modifier-deck :perks="character.perks"
+                                                  :perkDescriptions="character.perkDescriptions"
+                                                  :character="character"
+                                                  :playerIndex="playerIndex"/>
 
                             <div v-if="soloScenario" :key="'solo-'+soloScenario.id" class="my-5 flex">
                                 <span class="font-title mr-2">{{ $t('Solo') }}:</span>
@@ -274,6 +277,15 @@ export default {
         },
         currentGame() {
             return this.sheet.game === 'fc' ? 'gh' : this.sheet.game;
+        },
+        playerIndex() {
+            if (this.sheet.characters[this.character.uuid]) {
+                return Object.keys(this.sheet.characters).indexOf(this.character.uuid);
+            }
+            if (this.sheet.archivedCharacters[this.character.uuid]) {
+                return Object.keys(this.sheet.archivedCharacters).indexOf(this.character.uuid);
+            }
+            return 1;
         }
     },
     methods: {

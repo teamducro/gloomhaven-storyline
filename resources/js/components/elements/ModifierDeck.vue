@@ -1,11 +1,7 @@
 <template>
     <div class="mb-4">
-        <a class="cursor-pointer inline-block relative" @click="open">
-            <webp :src="backImage" class="w-32 z-1 relative"/>
-            <webp :src="backImage" class="w-32 absolute z-0 top-0 left-0" style="transform: rotate(-5deg);"/>
-            <webp :src="backImage" class="w-32 absolute z-0 top-0 left-0" style="transform: rotate(-2deg);"/>
-            <webp :src="backImage" class="w-32 absolute z-0 top-0 left-0" style="transform: rotate(2deg);"/>
-            <webp :src="backImage" class="w-32 absolute z-0 top-0 left-0" style="transform: rotate(5deg);"/>
+        <a class="cursor-pointer" @click="open">
+            <card-stack :src="backImage"/>
         </a>
     </div>
 </template>
@@ -13,8 +9,10 @@
 <script>
 
 import {Collection} from "collect.js";
+import CardStack from "./CardStack.vue";
 
 export default {
+    components: {CardStack},
     props: {
         perks: Object,
         perkDescriptions: Array,

@@ -2,10 +2,12 @@
     <div>
         <modal ref="modal" title="Attack modifier deck">
             <div v-if="deck" slot="content" class="w-full h-full flex flex-col outline-none">
-                <ul>
-                    <li v-for="(card, i) in deck">
-                        <add-links-and-icons :text="card.icon"/>
-                        <span class="pl-2 font-bold">{{ card.count }}</span>
+                <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-2">
+                    <li v-for="(card, i) in deck" class="relative">
+                        <card-stack :src="card.image" :count="card.count"/>
+                        <span class="absolute z-1 bg-dark-gray2-75 bottom-0 left-0 pl-1 pt-2 pr-2 rounded-tr-full font-title text-xl text-white">
+                            {{ card.count }}x
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -15,10 +17,7 @@
 
 <script>
 
-import AddLinksAndIcons from "../elements/AddLinksAndIcons.vue";
-
 export default {
-    components: {AddLinksAndIcons},
     data() {
         return {
             deck: null

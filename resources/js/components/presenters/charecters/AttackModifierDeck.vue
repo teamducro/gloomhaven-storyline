@@ -16,7 +16,11 @@ export default {
     props: {
         character: Character,
         perkDescriptions: Array,
-        perks: Object
+        perks: Object,
+        playerIndex: {
+            type: Number,
+            default: 1
+        }
     },
     data() {
         return {
@@ -37,8 +41,11 @@ export default {
 
     },
     computed: {
+        playerNumber() {
+            return this.playerIndex % 4 + 1
+        },
         availableCards() {
-            return this.modifierRepository.get(this.character)
+            return this.modifierRepository.get(this.character, this.playerNumber)
         }
     },
     methods: {
