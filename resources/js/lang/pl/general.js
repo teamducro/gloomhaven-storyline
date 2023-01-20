@@ -179,6 +179,7 @@ export default {
     "German": "Niemiecki",
     "Spanish": "Hiszpański",
     "Campaigns": "Kampanie",
+    "Campaign code": "Kod kampanii",
     "Buy shared campaign": "Zakup nowej współdzielonej kampanii",
     "Add shared campaign": "Dodaj współdzieloną kampanię",
     "donations": {
@@ -214,7 +215,6 @@ export default {
     "Release date": "Data wydania",
     "Received a campaign code?": "Otrzymałeś kod kampanii?",
     "Fill in your campaign code, you\'ll get access to the shared campaign.": "Wpisz swój kod kampanii, aby uzyskać dostęp do udostępnionej kampanii.",
-    "Campaign code": "Kod kampanii",
     "Add Campaign": "Dodaj kampanię",
     "Your campaign has been synced!": "Twoja kampania została zsynchronizowana!",
     "Expired": "Wygasła",
