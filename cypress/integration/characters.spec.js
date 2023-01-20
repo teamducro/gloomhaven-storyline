@@ -92,6 +92,12 @@ describe('Character', () => {
         for (let i = 0; i <= 9; i++) {
             cy.get(`#perk-${i}-0`).click();
         }
+
+        utilities.scrollTo('60%');
+        cy.get('#open-modifier-deck').click();
+        cy.contains('Attack modifier deck');
+
+        utilities.assertCount('.mdc-dialog__content ul.grid li', 12);
     });
 
     it('It can check battle goals', () => {
