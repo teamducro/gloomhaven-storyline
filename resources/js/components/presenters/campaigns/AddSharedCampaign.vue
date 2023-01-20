@@ -10,7 +10,7 @@
                 <span class="mdc-text-field__ripple"></span>
                 <input class="mdc-text-field__input" aria-labelledby="code-label"
                        v-model="code" type="text" name="code">
-                <span class="mdc-floating-label" id="code-label">Campaign code</span>
+                <span class="mdc-floating-label" id="code-label">{{ $t('Campaign code') }}</span>
                 <span class="mdc-line-ripple"></span>
             </label>
             <div class="relative">
