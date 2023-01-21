@@ -53,7 +53,7 @@
                         <character-icon class="w-6 -mb-2 inline-block" :character="quest.character_unlock"/>
                     </p>
                     <p v-else-if="quest.unlock">
-                        {{ $t('quest.unlock') }}
+                        {{ $t(quest.unlock) }}
                     </p>
                 </div>
 

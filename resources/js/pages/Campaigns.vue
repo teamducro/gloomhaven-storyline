@@ -102,7 +102,7 @@
 
         <div id="campaigns" class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left">
-                Campaigns
+                {{ $t('Campaigns') }}
             </h1>
 
             <campaign-list :user="user"></campaign-list>

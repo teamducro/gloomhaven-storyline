@@ -174,6 +174,7 @@ export default {
     "German": "German",
     "Spanish": "Spanish",
     "Campaigns": "Campaigns",
+    "Campaign code": "Campaign code",
     "Buy shared campaign": "Buy shared campaign",
     "Add shared campaign": "Add shared campaign",
     "donations": {

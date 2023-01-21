@@ -10,6 +10,12 @@ export default {
     isNumeric(number) {
         return !isNaN(parseFloat(number)) && isFinite(number);
     },
+    start(string, search) {
+        if (!string.startsWith(search)) {
+            string = search + string;
+        }
+        return string;
+    },
     reverse(obj) {
         return Object.assign({}, ...Object.entries(obj).map(([a, b]) => ({[b]: a})));
     },
