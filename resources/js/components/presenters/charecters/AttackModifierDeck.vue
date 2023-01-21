@@ -26,12 +26,12 @@ export default {
         return {
             backImage: '/img/attack-modifiers/base/back.jpg',
             defaultDeck: {
-                "+0": 6,
-                "+1": 5,
-                "+2": 1,
-                "-1": 5,
-                "-2": 1,
-                "x2": 1,
+                "plus0": 6,
+                "plus1": 5,
+                "plus2": 1,
+                "minus1": 5,
+                "minus2": 1,
+                "times2": 1,
                 "mis": 1,
             },
             modifierRepository: new AttackModifierRepository

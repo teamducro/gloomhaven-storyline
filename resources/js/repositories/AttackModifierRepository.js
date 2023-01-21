@@ -5,18 +5,16 @@ import ModifierCard from "../models/ModifierCard";
 export default class AttackModifierRepository {
     get(character, playerNumber = 1) {
         const baseCards = this.gameData.attackModifierDeck().base
-            .map(card => {
-                card = new ModifierCard(card);
-                card.path = 'img/attack-modifiers/p'+playerNumber;
-                return card
+            .map(code => {
+                const path = 'p'+playerNumber;
+                return new ModifierCard({code, path});
             })
 
         const characterCards = (this.gameData.attackModifierDeck()[character.id] || [])
-            .map(card => {
-                card = new ModifierCard(card);
-                card.path = 'img/attack-modifiers/'+character.id;
-                return card
-            });
+            .map(code => {
+                const path = character.id;
+                return new ModifierCard({code, path});
+            })
 
         return collect(baseCards.concat(characterCards)).keyBy('code');
     }

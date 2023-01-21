@@ -31,7 +31,6 @@ export default {
     },
     methods: {
         async open(deck) {
-            console.log(deck);
             this.deck = deck;
             this.$refs['modal'].open();
         },

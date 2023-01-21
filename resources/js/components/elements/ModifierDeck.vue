@@ -9,10 +9,8 @@
 <script>
 
 import {Collection} from "collect.js";
-import CardStack from "./CardStack.vue";
 
 export default {
-    components: {CardStack},
     props: {
         perks: Object,
         perkDescriptions: Array,
@@ -40,16 +38,21 @@ export default {
                     }
 
                     // If the perk is checked, apply the modifiers
-                    perkDescription.modifiers?.forEach((modifier) => {
+                    perkDescription.cards?.forEach((card, index) => {
                         // Add cards to the deck
-                        if (modifier.type === 'add') {
-                            deck[modifier.card] = (deck[modifier.card] || 0) + (modifier.count || 1);
+                        if (perkDescription.type === 'add') {
+                            this.addCard(deck, card);
                         }
                         // Remove cards from the deck
-                        else {
-                            deck[modifier.card] = (deck[modifier.card] || 0) - (modifier.count || 1);
-                            if (deck[modifier.card] <= 0) {
-                                delete deck[modifier.card];
+                        else if (perkDescription.type === 'remove') {
+                            this.removeCard(deck, card);
+                        }
+                        // Replace cards in the deck
+                        else if (perkDescription.type === 'replace') {
+                            if (index === 0) {
+                                this.removeCard(deck, card);
+                            } else {
+                                this.addCard(deck, card);
                             }
                         }
                     });
@@ -71,6 +74,15 @@ export default {
     methods: {
         open() {
             this.$bus.$emit('open-modifier-deck', this.deck);
+        },
+        addCard(deck, card) {
+            deck[card.code] = (deck[card.code] || 0) + (card.count || 1);
+        },
+        removeCard(deck, card) {
+            deck[card.code] = (deck[card.code] || 0) - (card.count || 1);
+            if (deck[card.code] <= 0) {
+                delete deck[card.code];
+            }
         }
     }
 }

@@ -1,0 +1,215 @@
+{
+    "base": [
+        "plus0",
+        "plus1",
+        "plus2",
+        "minus1",
+        "minus2",
+        "times2",
+        "mis"
+    ],
+    "BR": [
+        "plus3",
+        "plus0_push1_rolling",
+        "plus0_pierce3_rolling",
+        "plus0_stun_rolling",
+        "plus0_disarm_rolling",
+        "plus0_muddle_rolling",
+        "plus0_target1_rolling",
+        "plus1_shield1"
+    ],
+    "CH": [
+        "plus1_immobilize",
+        "plus2_muddle",
+        "plus0_push2_rolling",
+        "plus0_earth_rolling",
+        "plus0_air_rolling"
+    ],
+    "SW": [
+        "plus0_stun",
+        "plus1_wound",
+        "plus1_immobilize",
+        "plus1_curse",
+        "plus2_fire",
+        "plus2_ice",
+        "plus0_earth_rolling",
+        "plus0_air_rolling",
+        "plus0_light_rolling",
+        "plus0_dark_rolling"
+    ],
+    "TI": [
+        "plus3",
+        "plus0_fire_rolling",
+        "plus0_muddle_rolling",
+        "plus1_wound",
+        "plus1_immobilize",
+        "plus1_heal2",
+        "plus0_target1"
+    ],
+    "SC": [
+        "plus1_rolling",
+        "plus0_pierce3_rolling",
+        "plus0_poison_rolling",
+        "plus0_muddle_rolling",
+        "plus0_invisible_rolling"
+    ],
+    "MT": [
+        "plus2_ice",
+        "plus1_rolling",
+        "plus0_pull1_rolling",
+        "plus0_muddle_rolling",
+        "plus0_immobilize_rolling",
+        "plus0_stun_rolling",
+        "plus0_disarm_rolling"
+    ],
+    "DS": [
+        "plus1_rolling",
+        "plus2_muddle",
+        "plus1_poison",
+        "plus1_wound",
+        "plus1_immobilize",
+        "plus0_stun",
+        "plus0_target1_rolling"
+    ],
+    "EL": [
+        "plus0_fire",
+        "plus0_ice",
+        "plus0_air",
+        "plus0_earth",
+        "plus1_push1",
+        "plus1_wound",
+        "plus0_stun",
+        "plus0_target1"
+    ],
+    "SB": [
+        "plus2_rolling",
+        "plus1_immobilize",
+        "plus0_wound_rolling",
+        "plus0_stun_rolling",
+        "plus0_heal3_rolling",
+        "plus0_refreshitem"
+    ],
+    "SS": [
+        "plus4",
+        "plus1_immobilize",
+        "plus1_disarm",
+        "plus2_wound",
+        "plus2_poison",
+        "plus2_curse",
+        "plus3_muddle",
+        "plus0_stun",
+        "plus1_rolling",
+        "plus0_curse_rolling"
+    ],
+    "SK": [
+        "plus1_rolling",
+        "plus0_heal1_rolling",
+        "plus0_stun_rolling",
+        "plus0_light_rolling",
+        "plus0_shield1_rolling"
+    ],
+    "NS": [
+        "minus1_dark",
+        "plus1_dark",
+        "plus1_invisible",
+        "plus0_muddle_rolling",
+        "plus0_heal1_rolling",
+        "plus0_curse_rolling",
+        "plus0_target1_rolling"
+    ],
+    "SU": [
+        "plus0_wound_rolling",
+        "plus0_poison_rolling",
+        "plus0_heal1_rolling",
+        "plus0_fire_rolling",
+        "plus0_air_rolling",
+        "plus0_dark_rolling",
+        "plus0_earth_rolling"
+    ],
+    "BE": [
+        "plus2_rolling",
+        "plus0_wound_rolling",
+        "plus0_stun_rolling",
+        "plus1_disarm_rolling",
+        "plus0_heal1_rolling",
+        "plus2_fire"
+    ],
+    "QM": [
+        "plus1_rolling",
+        "plus0_muddle_rolling",
+        "plus0_pierce3_rolling",
+        "plus0_stun_rolling",
+        "plus0_target1_rolling",
+        "plus0_refreshItemundefined"
+    ],
+    "PH": [
+        "plus1_air",
+        "plus0_poison_rolling",
+        "plus0_curse_rolling",
+        "plus0_immobilize_rolling",
+        "plus0_stun_rolling"
+    ],
+    "BT": [
+        "plus1_wound",
+        "plus1_immobilize",
+        "plus0_heal1_rolling",
+        "plus0_earth_rolling"
+    ],
+    "BS": [
+        "plus0_wound",
+        "plus0_poison",
+        "plus1_air",
+        "plus1_earth",
+        "plus1_light",
+        "plus1_dark",
+        "plus2_muddle",
+        "plus0_heal1_rolling"
+    ],
+    "DR": [
+        "plus3_shield1",
+        "plus1_shield1",
+        "plus2_dark",
+        "plus2_light",
+        "plus3_muddle",
+        "plus2_curse",
+        "plus2_regenerate",
+        "plus1_heal2",
+        "plus0_heal1_rolling",
+        "plus0_curse_rolling"
+    ],
+    "RG": [
+        "plus2_fire",
+        "plus2_light",
+        "plus1_fire_light",
+        "plus1_shield1",
+        "plus1_immobilize",
+        "plus1_wound"
+    ],
+    "DM": [
+        "plus2_muddle",
+        "plus0_poison",
+        "plus2_earth",
+        "plus2_fire",
+        "plus0_damage1"
+    ],
+    "HT": [
+        "plus2_muddle",
+        "plus1_poison",
+        "plus1_wound",
+        "plus1_immobilize",
+        "plus1_push2",
+        "plus0_stun",
+        "plus1_stun",
+        "plus2_air",
+        "plus3"
+    ],
+    "VW": [
+        "plus1_dark",
+        "plus1_ice",
+        "plus0_heal1",
+        "plus1_heal1",
+        "plus1_poison",
+        "plus3",
+        "plus1_curse"
+    ]
+}
