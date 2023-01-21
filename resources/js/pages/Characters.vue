@@ -119,7 +119,8 @@
                                    :character="character"
                                    @change="store"/>
 
-                            <attack-modifier-deck :perks="character.perks"
+                            <attack-modifier-deck v-if="character.game !== 'cs'"
+                                                  :perks="character.perks"
                                                   :perkDescriptions="character.perkDescriptions"
                                                   :character="character"
                                                   :playerIndex="playerIndex"/>

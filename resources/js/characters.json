@@ -3476,7 +3476,8 @@
                                 "type": "plus0",
                                 "effects": [
                                     {
-                                        "type": "refreshItem"
+                                        "type": "refresh",
+                                        "value": "item"
                                     }
                                 ]
                             }
