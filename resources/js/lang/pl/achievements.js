@@ -1,246 +1,246 @@
 export default {
     "gh-PFS": {
-        "name": "First Steps",
+        "name": "Pierwsze Kroki",
     },
     "gh-PJP": {
-        "name": "Jekserah's Plans",
+        "name": "Plany Jeksery",
     },
     "gh-PDB": {
-        "name": "Dark Bounty",
+        "name": "Ciemna Nagroda",
     },
     "gh-GTMF": {
-        "name": "The Merchant Flees",
+        "name": "Ucieczka Handlarki",
     },
     "gh-GTDI": {
-        "name": "The Dead Invade",
+        "name": "Inwazja Trupów",
     },
     "gh-PADE": {
-        "name": "A Demon's Errand",
+        "name": "Posłańcy Demona",
     },
     "gh-GCRE": {
-        "name": "City Rule: Economic",
+        "name": "Władze Miasta: Kupieckie",
     },
     "gh-GCRM": {
-        "name": "City Rule: Militaristic",
+        "name": "Władze Miasta: Wojskowe",
     },
     "gh-GEOI": {
-        "name": "End of the Invasion",
+        "name": "Koniec Inwazji",
     },
     "gh-GTPE": {
-        "name": "The Power of Enhancement",
+        "name": "Potęga Wzmocnienia",
     },
     "gh-PSC": {
-        "name": "Stonebreaker's Censer",
+        "name": "Kadzielnica Skałoma",
     },
     "gh-GTRN": {
-        "name": "The Rift Neutralized",
+        "name": "Szczelina Zneutralizowana",
     },
     "gh-GAR": {
-        "name": "The Artifact: Recovered",
+        "name": "Artefakt: Odzyskany",
     },
     "gh-GAR2": {
-        "name": "The Artifact: Recovered (previously Lost)",
+        "name": "Artefakt: Odzyskany (wcześniej Utracony)",
     },
     "gh-GAL": {
-        "name": "The Artifact: Lost",
+        "name": "Artefakt: Utracony",
     },
     "gh-GAT": {
-        "name": "Ancient Technology",
+        "name": "Starożytna Technologia",
     },
     "gh-GAT2": {
-        "name": "Ancient Technology x2",
+        "name": "Starożytna Technologia x2",
     },
     "gh-GAT3": {
-        "name": "Ancient Technology x3",
+        "name": "Starożytna Technologia x3",
     },
     "gh-GAT4": {
-        "name": "Ancient Technology x4",
+        "name": "Starożytna Technologia x4",
     },
     "gh-GAT5": {
-        "name": "Ancient Technology x5",
+        "name": "Starożytna Technologia x5",
     },
     "gh-PTR": {
-        "name": "Through the Ruins",
+        "name": "Ścieżka przez ruiny",
     },
     "gh-PTVC": {
-        "name": "The Voice's Command",
+        "name": "Rozkaz Głosu",
     },
     "gh-PTDC": {
-        "name": "The Drake's Command",
+        "name": "Rozkaz Drakona",
     },
     "gh-PFC": {
-        "name": "Following Clues",
+        "name": "Tropem Wskazówek",
     },
     "gh-PAI": {
-        "name": "An Invitation",
+        "name": "Zaproszenie",
     },
     "gh-GTED": {
-        "name": "The Edge of Darkness",
+        "name": "Kraniec Ciemności",
     },
     "gh-PTSV": {
-        "name": "The Scepter and the Voice",
+        "name": "Berło i Głos",
     },
     "gh-GAC": {
-        "name": "Artifact: Cleansed",
+        "name": "Artefakt: Oczyszczony",
     },
     "gh-PTVT": {
-        "name": "The Voices Treasure",
+        "name": "Skarb Głosu",
     },
     "gh-PTDT": {
-        "name": "The Drakes Treasure",
+        "name": "Skarb Drakona",
     },
     "gh-GTDS": {
-        "name": "The Drake Slain",
+        "name": "Drakon Zabity",
     },
     "gh-GTDA": {
-        "name": "The Drake Aided",
+        "name": "Przysługa dla Drakona",
     },
     "gh-GCRD": {
-        "name": "City Rule: Demonic",
+        "name": "Władze Miasta: Demoniczne",
     },
     "gh-PTTT": {
-        "name": "Through the Trench",
+        "name": "Przeprawa Przez Rów",
     },
     "gh-PRA": {
-        "name": "Redthorn's Aid",
+        "name": "Pomoc Czerwonego Ciernia",
     },
     "gh-PATD": {
-        "name": "Across the Divide",
+        "name": "Nad Przepaścią",
     },
     "gh-GTVF": {
-        "name": "The Voice Freed",
+        "name": "Głos Uwolniony",
     },
     "gh-GTVS": {
-        "name": "The Voice Silenced",
+        "name": "Głos Uciszony",
     },
     "gh-GWB": {
-        "name": "Water-Breathing",
+        "name": "Oddychanie Wodą",
     },
     "gh-GEOC": {
-        "name": "End of Corruption",
+        "name": "Koniec Spaczenia",
     },
     "gh-GEOC2": {
-        "name": "End of Corruption x2",
+        "name": "Koniec Spaczenia x2",
     },
     "gh-GEOC3": {
-        "name": "End of Corruption x3",
+        "name": "Koniec Spaczenia x3",
     },
     "gh-GAOO": {
-        "name": "Annihilation of Order",
+        "name": "Unicestwienie Zakonu",
     },
     "gh-GEOG": {
-        "name": "End of Gloom",
+        "name": "Koniec Mroku",
     },
     "gh-PTTN": {
-        "name": "Through the Nest",
+        "name": "Przeprawa Przez Gniazdo",
     },
     "gh-PAMT": {
-        "name": "A Map to Treasure",
+        "name": "Mapa do Skarbu",
     },
     "gh-PBB": {
-        "name": "Bad Business",
+        "name": "Kiepska Sprawa",
     },
     "gh-PTPS": {
-        "name": "The Poison's Source",
+        "name": "Źródło Skażenia",
     },
     "gh-PSB": {
-        "name": "Sun-Blessed",
+        "name": "Błogosławieństwo Słońca",
     },
     "gh-PSR": {
         "name": "Sin-Ra",
     },
     "gh-PDC": {
-        "name": "Debt Collection",
+        "name": "Egzekucja Długu",
     },
     "gh-PWS": {
-        "name": "Water Staff",
+        "name": "Kostur Wody",
     },
     "gh-PFA": {
-        "name": "Fish's Aid",
+        "name": "Pomoc Ryby",
     },
     "gh-PT": {
-        "name": "Tremors",
+        "name": "Wstrząsy",
     },
     "gh-PHSE": {
-        "name": "High Sea Escort",
+        "name": "Morska Eskorta",
     },
     "gh-PGJ": {
-        "name": "Grave Job",
+        "name": "Praca dla Grabarza",
     },
     "gh-PNE": {
-        "name": "Northern Expedition",
+        "name": "Ekspedycja na północ",
     },
     "gh-GTTP": {
-        "name": "Through the Portal",
+        "name": "Poprzez portal",
     },
     "gh-PO": {
-        "name": "Opportunists",
+        "name": "Oportuniści",
     },
     "gh-GKIP": {
-        "name": "Knowledge is Power",
+        "name": "Wiedza to potęga",
     },
     "gh-GKIP2": {
-        "name": "Knowledge is Power x2",
+        "name": "Wiedza to potęga x2",
     },
     "gh-GKIP3": {
-        "name": "Knowledge is Power x3",
+        "name": "Wiedza to potęga x3",
     },
     "gh-GKIP4": {
-        "name": "Knowledge is Power x4",
+        "name": "Wiedza to potęga x4",
     },
     "gh-PAD": {
-        "name": "Angels of Death",
+        "name": "Anioły Śmierci",
     },
     "gh-PC": {
-        "name": "Custodians",
+        "name": "Opiekunowie",
     },
     "gh-PHP": {
-        "name": "Hunted Prey",
+        "name": "Zwierzyna łowna",
     },
     "gh-GPOA": {
-        "name": "Pieces of an Artifact",
+        "name": "Fragmenty Artefaktu",
     },
     "gh-GPOA2": {
-        "name": "Pieces of an Artifact x2",
+        "name": "Fragmenty Artefaktu x2",
     },
     "gh-GPOA3": {
-        "name": "Pieces of an Artifact x3",
+        "name": "Fragmenty Artefaktu x3",
     },
     "gh-PGD": {
-        "name": "Guard Detail",
+        "name": "Służba strażnicza",
     },
     "gh-PDE": {
-        "name": "Dimensional Equilibrium",
+        "name": "Międzywymiarowa równowaga",
     },
     "gh-PHH": {
-        "name": "Hunting the Hunter",
+        "name": "Łowy na łowcę",
     },
     "gh-PXA": {
-        "name": "Xangroth's Aid",
+        "name": "Pomoc Xangrotowi",
     },
     "gh-PDA": {
-        "name": "Diamara's Aid",
+        "name": "Pomoc Diamarze",
     },
     "gh-PBF": {
-        "name": "Beauty in Freedom",
+        "name": "Piękno wolności",
     },
     "gh-GPA": {
-        "name": "A Peril Averted",
+        "name": "Zagrożenie powstrzymane",
     },
     "gh-GPA2": {
-        "name": "A Peril Averted x2",
+        "name": "Zagrożenie powstrzymane x2",
     },
     "gh-GPA3": {
-        "name": "A Peril Averted x3",
+        "name": "Zagrożenie powstrzymane x3",
     },
     "gh-GPA4": {
-        "name": "A Peril Averted x4",
+        "name": "Zagrożenie powstrzymane x4",
     },
     "gh-GMS": {
-        "name": "Mechanical Splendor",
+        "name": "Mechaniczny splendor",
     },
     "gh-GST": {
-        "name": "Severed Ties",
+        "name": "Zerwane więzy",
     },
 
     "cs-PCSOD": {

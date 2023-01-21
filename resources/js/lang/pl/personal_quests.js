@@ -1,170 +1,169 @@
 export default {
     "gh-510": {
-        "name": "Seeker of Xorn",
+        "name": "Poszukiwacz Xorna",
         "progress": [
-            "Complete three Crypt scenarios.",
-            "Conclude {SCENARIO 52}.",
+            "Ukończ 3 scenariusze w „Kryptach”.",
+            "Przejdź {SCENARIO 52}",
         ]
     },
     "gh-511": {
-        "name": "Merchant Class",
+        "name": "Kupcy rządzą",
         "progress": [
-            "Own two {BODY} items.",
-            "Own two {HEAD} items.",
-            "Own two {LEGS} items.",
-            "Own three {ONE-HAND} or {TWO-HANDS} items.",
-            "Own four {SMALL-ITEM} items.",
+            "Posiadaj 2 przedmioty {HEAD}.",
+            "Posiadaj 2 przedmioty {BODY}.",
+            "Posiadaj 2 przedmioty {LEGS}.",
+            "Posiadaj 3 przedmioty {ONE-HAND} albo {TWO-HANDS}.",
+            "Posiadaj 4 przedmioty {SMALL-ITEM}.",
         ]
     },
     "gh-512": {
-        "name": "Greed is Good",
+        "name": "Chciwość jest dobra",
         "progress": [
-            "Have 200 gold in your possession.",
+            "Posiadaj 200 sztuk złota.",
         ]
     },
     "gh-513": {
-        "name": "Finding the Cure",
-        "unlock": "Open envelope X",
+        "name": "Szukając lekarstwa",
+        "unlock": "Otwórz pudełko X",
         "progress": [
-            "Kill eight Forest Imps.",
-            "Conclude {SCENARIO 59}.",
+            "Zabij 8 leśnych chochlików.",
+            "Przejdź {SCENARIO 59}.",
         ]
     },
     "gh-514": {
-        "name": "A Study of Anatomy",
+        "name": "Studium we krwi",
         "progress": [
-            "Experience your party members becoming exhausted fifteen times.",
+            "15 razy bądź świadkiem, jak członek drużyny pada z wyczerpania.",
         ]
     },
     "gh-515": {
-        "name": "Law Bringer",
+        "name": "Krzewiciel prawa",
         "progress": [
-            "Kill twenty Bandits or Cultists.",
+            "Zabij 20 Bandytów lub Kultystów.",
         ]
     },
     "gh-516": {
-        "name": "Pounds of Flesh",
+        "name": "Oko za oko",
         "progress": [
-            "Kill fifteen Vermlings.",
+            "Zabij 15 Szczuroków.",
         ]
     },
     "gh-517": {
-        "name": "Trophy Hunt",
+        "name": "Polowanie na trofea",
         "progress": [
-            "Kill twenty different types of monsters.",
+            "Zabij 20 różnych rodzajów potworów.",
         ]
     },
     "gh-518": {
-        "name": "Eternal Wanderer",
+        "name": "Wieczny wędrowiec",
         "progress": [
-            "Complete fifteen different scenarios.",
+            "Ukończ 15 różnych scenariuszy.",
         ]
     },
     "gh-519": {
-        "name": "Battle Legend",
+        "name": "Bitewna legenda",
         "progress": [
-            "Earn fifteen ✔ from completed battle goals.",
+            "Zdobądź 15 ✔ za wykonanie celów bitewnych.",
         ]
     },
     "gh-520": {
-        "name": "Implement of Light",
+        "name": "Narzędzie Światłości",
         "progress": [
-            "Find the Skullbane Axe in the Necromancer's Sanctum.",
-            "Use it to kill seven Living Bones, Living Corpses, or Living Spirits.",
+            "Znajdź Topór Czaszkozguby w {SCENARIO 20}.",
+            "Zabij nim 7 Ożywionych Kości, Ożywionych Trupów lub Ożywionych Duchów.",
         ]
     },
     "gh-521": {
-        "name": "Take Back the Trees",
+        "name": "Bratnia pomoc",
         "progress": [
-            "Complete three scenarios in the Dagger Forest.",
-            "Conclude {SCENARIO 55}.",
+            "Ukończ 3 scenariusze w Lesie Sztyletów.",
+            "Przejdź {SCENARIO 55}.",
         ]
     },
     "gh-522": {
-        "name": "The Thin Places",
+        "name": "Ulotne Miejsce",
         "progress": [
-            "Complete six side scenarios.",
+            "Ukończ 6 scenariuszy pobocznych.",
         ]
     },
     "gh-523": {
-        "name": "Aberrant Slayer",
+        "name": "Tępiciel aberracji",
         "progress": [
-            "Kill one Flame Demon.",
-            "Kill one Frost Demon.",
-            "Kill one Wind Demon.",
-            "Kill one Earth Demon.",
-            "Kill one Night Demon.",
-            "Kill one Sun Demon.",
+            "Zabij Demona Płomieni.",
+            "Zabij Demona Mrozu.",
+            "Zabij Demona Wiatru.",
+            "Zabij Demona Ziemi.",
+            "Zabij Demona Nocy.",
+            "Zabij Demona Słońca.",
         ]
     },
     "gh-524": {
-        "name": "Fearless Stand",
+        "name": "Nieustraszona postawa",
         "progress": [
-            "Kill twenty elite monsters.",
+            "Zabij 20 elitarnych przeciwników.",
         ]
     },
     "gh-525": {
-        "name": "Piety in All Things",
+        "name": "Pobożność we wszystkim",
         "progress": [
-            "Donate 120 gold to the Sanctuary of the Great Oak.",
+            "Przekaż 120 sztuk złota na Sanktuarium Wielkiego Dębu.",
         ]
     },
     "gh-526": {
-        "name": "Vengeance",
-        "unlock": "Open Envelope X",
+        "name": "Pomsta",
+        "unlock": "Otwórz pudełko X",
         "progress": [
-            "Complete four scenarios in Gloomhaven.",
-            "Conclude {SCENARIO 57}.",
+            "Ukończ 4 scenariusze w Gloomhaven.",
+            "Przejdź {SCENARIO 57}.",
         ]
     },
     "gh-527": {
-        "name": "Zealot of the Blood God",
+        "name": "Fanatyk boga krwi",
         "progress": [
-            "Become exhausted twelve times.",
+            "20 razy doprowadź do swojego wyczerpania.",
         ]
     },
     "gh-528": {
-        "name": "Goliath Toppler",
+        "name": "Pogromca goliatów",
         "progress": [
-            "Complete four boss scenarios",
+            "Ukończ 4 scenariusze z bossami.",
         ]
     },
     "gh-529": {
-        "name": "The Fall of Man",
+        "name": "Upadek człowieka",
         "progress": [
-            "Complete 2 Lingering Swamp scenarios.",
-            "Conclude {SCENARIO 61}.",
+            "Ukończ 2 scenariusze na Bezkresnych Bagnach.",
+            "Przejdź {SCENARIO 61}.",
         ]
     },
     "gh-530": {
-        "name": "Augmented Abilities",
+        "name": "Wzmocnione zdolności",
         "progress": [
-            "Purchase four enhancements.",
+            "Kup 4 ulepszenia.",
         ]
     },
     "gh-531": {
-        "name": "Elemental Samples",
+        "name": "Próbki żywiołów",
         "progress": [
-            "Complete a scenario in Gloomhaven.",
-            "Complete a scenario in Dagger Forest.",
-            "Complete a scenario in Lingering Swamp",
-            "Complete a scenario in Watcher Mountains",
-            "Complete a scenario in Copperneck Mountains",
-            "Complete a scenario in Misty Sea.",
+            "Ukończ scenariusz w Gloomhaven.",
+            "Ukończ scenariusz w Las Sztyletów.",
+            "Ukończ scenariusz w Bezkresne Bagna.",
+            "Ukończ scenariusz w Góry Obserwowania.",
+            "Ukończ scenariusz w Morze Mgieł.",
         ]
     },
     "gh-532": {
-        "name": "A Helping Hand",
+        "name": "Pomocna dłoń",
         "progress": [
-            "Experience two other characters achieving their personal quests.",
+            "Bądź świadkiem osiągnięcia osobistych celów przez dwie inne postacie.",
         ]
     },
     "gh-533": {
-        "name": "The Perfect Poison",
+        "name": "Trucizna doskonała",
         "progress": [
-            "Kill three Oozes.",
-            "Kill three Lurkers.",
-            "Kill three Spitting Drakes.",
+            "Zabij 3 Szlamy.",
+            "Zabij 3 Czyhacze.",
+            "Zabij 3 Plujące Drakony.",
         ]
     },
     "cs-330": {

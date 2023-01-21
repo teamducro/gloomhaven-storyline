@@ -1,488 +1,488 @@
 export default {
     "gh-1": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-2": {
-        "name": "Gain “Tower Shield” (Item 032)",
+        "name": "Otrzymujesz „Ciężką Tarczę” (przedmiot 032).",
     },
     "gh-3": {
-        "name": "Gain “Splintmail” (Item 044)",
+        "name": "Otrzymujesz „Zbroję Karacenową” (przedmiot 044).",
     },
     "gh-4": {
-        "name": "Gain 15 Gold",
+        "name": "Otrzymujesz 15 szt. złota.",
     },
     "gh-5": {
-        "name": "Gain “Chainmail” (Item 023)",
+        "name": "Otrzymujesz „Kolczugę” (przedmiot 023).",
     },
     "gh-6": {
-        "name": "Gain “Hooked Chain” (Item 039)",
+        "name": "Otrzymujesz „Łańcuch z Hakiem” (przedmiot 039).",
     },
     "gh-7": {
-        "name": "Random Side Scenario",
+        "name": "Losowy scenariusz poboczny.",
     },
     "gh-8": {
-        "name": "Gain 1 ✔",
+        "name": "Otrzymujesz 1 ✔.",
     },
     "gh-9": {
-        "name": "Gain “Wave Crest” (Item 111)",
+        "name": "Otrzymujesz „Kolię Fal” (przedmiot 111).",
     },
     "gh-10": {
-        "name": "Gain 10 Experience",
+        "name": "Otrzymujesz 10 pkt. doświadczenia.",
     },
     "gh-11": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-12": {
-        "name": "Gain “Magma Waders” (Item 099)",
+        "name": "Otrzymujesz „Lawoczłapy” (przedmiot 099).",
     },
     "gh-13": {
-        "name": "Suffer 5 Damage and gain {POISON} and {WOUND}",
+        "name": "Otrzymujesz 5 obrażeń, {POISON} i {WOUND}.",
     },
     "gh-14": {
-        "name": "Gain 10 Experience",
+        "name": "Otrzymujesz 10 pkt. doświadczenia.",
     },
     "gh-15": {
-        "name": "Gain “Pendant of Dark Pacts” (Item 045)",
+        "name": "Otrzymujesz „Wisior Mrocznych Paktów” (przedmiot 045).",
     },
     "gh-16": {
-        "name": "Gain 10 gold",
+        "name": "Otrzymujesz 10 szt. złota.",
     },
     "gh-17": {
-        "name": "Gain 20 Gold",
+        "name": "Otrzymujesz 20 szt. złota.",
     },
     "gh-18": {
-        "name": "Gain 15 gold",
+        "name": "Otrzymujesz 15 szt. złota.",
     },
     "gh-19": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-20": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-21": {
-        "name": "Suffer 5 Damage",
+        "name": "Otrzymujesz 5 obrażeń.",
     },
     "gh-22": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-23": {
-        "name": "Gain “Drakescale Armor” (Item 103)",
+        "name": "Otrzymujesz „Zbroję Smoczej Łuski” (przedmiot 103).",
     },
     "gh-24": {
-        "name": "Suffer 5 damage",
+        "name": "Otrzymujesz 5 obrażeń.",
     },
     "gh-25": {
-        "name": "Gain 25 gold",
+        "name": "Otrzymujesz 25 szt. złota.",
     },
     "gh-26": {
-        "name": "Gain 20 Gold",
+        "name": "Otrzymujesz 20 szt. złota.",
     },
     "gh-27": {
-        "name": "Gain “Orb of Twilight” (Item 122)",
+        "name": "Otrzymujesz „Kulę Zmierzchu” (przedmiot 122).",
     },
     "gh-28": {
-        "name": "Gain 15 Gold",
+        "name": "Otrzymujesz 15 szt. złota.",
     },
     "gh-29": {
-        "name": "Gain “Endurance Footwraps” (Item 097)",
+        "name": "Otrzymujesz „Onuce Wytrzymałości” (przedmiot 097).",
     },
     "gh-30": {
-        "name": "Gain 1 ✔",
+        "name": "Otrzymujesz 1 ✔.",
     },
     "gh-31": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-32": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-33": {
-        "name": "Gain “Weighted Net” (Item 019)",
+        "name": "Otrzymujesz „Wyważoną Sieć” (przedmiot 019).",
     },
     "gh-34": {
-        "name": "Gain “Amulet of Life” (Item 024)",
+        "name": "Otrzymujesz „Amulet Życia” (przedmiot 024).",
     },
     "gh-35": {
-        "name": "Gain “Drakescale Boots” (Item 098)",
+        "name": "Otrzymujesz „Buty Smoczej Łuski” (przedmiot 098).",
     },
     "gh-36": {
-        "name": "“Rocket Boots” design (Item 096)",
+        "name": "Schemat „Rakietowych Butów” (przedmiot 096).",
     },
     "gh-37": {
-        "name": "Gain 1 ✔",
+        "name": "Otrzymujesz 1 ✔.",
     },
     "gh-38": {
-        "name": "“Ring of Skulls” design (Item 123)",
+        "name": "Schemat „Pierścienia Czaszek” (przedmiot 123).",
     },
     "gh-39": {
-        "name": "Suffer 5 damage",
+        "name": "Otrzymujesz 5 obrażeń.",
     },
     "gh-40": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-41": {
-        "name": "Gain “Black Knife” (Item 053)",
+        "name": "Otrzymujesz „Czarny Sztylet” (przedmiot 053).",
     },
     "gh-42": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-43": {
-        "name": "Suffer 5 damage gain {POISON} and {WOUND}",
+        "name": "Otrzymujesz 5 obrażeń, {POISON} i {WOUND}.",
     },
     "gh-44": {
-        "name": "Random Side Scenario",
+        "name": "Losowy scenariusz poboczny.",
     },
     "gh-45": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-46": {
-        "name": "Suffer 3 damage and gain {POISON}",
+        "name": "Otrzymujesz 3 obrażenia i {POISON}.",
     },
     "gh-47": {
-        "name": "Gain “Steam Armor” (Item 104)",
+        "name": "Otrzymujesz „Zbroję Parową” (przedmiot 104).",
     },
     "gh-48": {
-        "name": "Gain 30 gold",
+        "name": "Otrzymujesz 30 szt. złota.",
     },
     "gh-49": {
-        "name": "New Scenario: {SCENARIO 17}",
+        "name": "Nowy scenariusz: {SCENARIO 17}.",
     },
     "gh-50": {
-        "name": "Gain “Second Skin” (Item 101)",
+        "name": "Otrzymujesz „Druga Skórę” (przedmiot 101).",
     },
     "gh-51": {
-        "name": "Random Side Scenario",
+        "name": "Losowy scenariusz poboczny.",
     },
     "gh-52": {
-        "name": "Gain “Heart of the Betrayer” (Item 131)",
+        "name": "Otrzymujesz „Serce Zdrajcy” (przedmiot 131).",
     },
     "gh-53": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-54": {
-        "name": "Gain “Doomed Compass” (Item 124)",
+        "name": "Otrzymujesz „Przeklęty Kompas” (przedmiot 124).",
     },
     "gh-55": {
-        "name": "Gain 1 ✔",
+        "name": "Otrzymujesz 1 ✔.",
     },
     "gh-56": {
-        "name": "Gain “Star Earring” (Item 069)",
+        "name": "Otrzymujesz „Gwiezdny Kolczyk” (przedmiot 069).",
     },
     "gh-57": {
-        "name": "Gain 15 gold",
+        "name": "Otrzymujesz 15 szt. złota.",
     },
     "gh-58": {
-        "name": "Gain “Drakescale Helm” (Item 108)",
+        "name": "Otrzymujesz „Hełm Smoczej Łuski” (przedmiot 108).",
     },
     "gh-59": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-60": {
-        "name": "Gain “Skullbane Axe” (Item 113)",
+        "name": "Schemat „Topora Czaszkozguby” (przedmiot 113).",
     },
     "gh-61": {
-        "name": "Gain “Versatile Dagger” (Item 040)",
+        "name": "Otrzymujesz „Uniwersalny Sztylet” (przedmiot 040).",
     },
     "gh-62": {
-        "name": "Gain “Helm of the Mountain” (Item 110) and “Mountain Hammer” (Item 115)",
+        "name": "Otrzymujesz „Hełm z Góry” (przedmiot 110) i „Górski Młot” (przedmiot 115).",
     },
     "gh-63": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-64": {
-        "name": "Gain 30 gold",
+        "name": "Otrzymujesz 30 szt. złota.",
     },
     "gh-65": {
-        "name": "“Horned Helm” design (Item 107)",
+        "name": "Schemat „Rogatego Hełmu” (przedmiot 107).",
     },
     "gh-66": {
-        "name": "Gain “Volatile Bomb” (Item 033)",
+        "name": "Otrzymujesz „Niestabilną Bombę” (przedmiot 033).",
     },
     "gh-67": {
-        "name": "Gain 10 Gold",
+        "name": "Otrzymujesz 10 szt. złota.",
     },
     "gh-68": {
-        "name": "Gain “Helix Ring” (Item 130)",
+        "name": "Otrzymujesz „Pierścień Spirali” (przedmiot 130).",
     },
     "gh-69": {
-        "name": "Gain “Robes of Summoning” (Item 100)",
+        "name": "Otrzymujesz „Szaty Przywołania” (przedmiot 100).",
     },
     "gh-70": {
-        "name": "Random Side Scenario",
+        "name": "Losowy scenariusz poboczny.",
     },
     "gh-71": {
-        "name": "Random Side Scenario",
+        "name": "Losowy scenariusz poboczny.",
     },
     "gh-72": {
-        "name": "“Fueled Falchion” design (Item 116)",
+        "name": "Schemat „Płomienny Falcjon” (przedmiot 116).",
     },
     "gh-73": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-74": {
-        "name": "Random Item Design",
+        "name": "Losowy schemat przedmiotu.",
     },
     "gh-75": {
-        "name": "Cryptogram Found (See scenario book page 121)",
+        "name": "Znaleziono Kryptogram (Patrz Księga Scenariuszy strona 121).",
     },
     "fc-76": {
-        "name": "Suffer 3 damage, gain {WOUND} and 10 gold",
+        "name": "Otrzymujesz 3 punkty obrażeń, {WOUND} oraz 10 szt. złota.",
     },
     "fc-77": {
-        "name": "Gain “Major Cure Potion” (Item 090)",
+        "name": "Otrzymujesz „Większą Miksturę Zdrowia” (przedmiot 090).",
     },
     "fc-78": {
-        "name": "“Ancient Bow” (Item 157)",
+        "name": "Schemat „Pradawnego Łuku” (przedmiot 157).",
     },
     "fc-79": {
-        "name": "Gain “Falcon Figurine” (Item 157)",
+        "name": "Otrzymujesz „Figurkę Sokoła” (przedmiot 035).",
     },
     "fc-80": {
-        "name": "Gain 1 ✓ and add Rift Event 19 to the deck",
+        "name": "Otrzymujesz 1 ✓ oraz dodajesz do talii wydarzenie szczelinowe 19.",
     },
     "fc-81": {
-        "name": "Gain “Scroll of Haste” (Item 159) and 10 gold",
+        "name": "Otrzymujesz „Zwój Pośpiechu” (przedmiot 159) oraz 10 szt. złota.",
     },
     "fc-82": {
-        "name": "“Rejuvenation Greaves” (Item 158)",
+        "name": "Schemat „Nagolenników Odnowienia” (przedmiot 158).",
     },
     "fc-83": {
-        "name": "Gain “Major Power Potion” (Item 041)",
+        "name": "Otrzymujesz „Większą Miksturę Mocy” (przedmiot 041).",
     },
     "fc-84": {
-        "name": "Gain “Mask of Terrors” (Item 066)",
+        "name": "Otrzymujesz „Maskę Grozy” (przedmiot 066).",
     },
     "fc-85": {
-        "name": "Suffer 3 damage, gain {POISON} and 10 gold",
+        "name": "Otrzymujesz 3 punkty obrażenia, {POISON} oraz 10 szt. złota.",
     },
     "fc-86": {
-        "name": "Unlock Diviner {DR} Solo Scenario “Forecast of the Inevitable” (see page 25 of the main book)",
+        "name": "Znajdujesz dziwną i intrygującą książkę o medytacji Orchidów. Odblokuj {DR} solowy scenariusz „Zapowiedź nieuniknionego” (patrz strona 25).",
     },
     "fc-87": {
-        "name": "Suffer 2 damage, gain CURSE and 15 gold",
+        "name": "Otrzymujesz 2 punkty obrażeń, {CURSE} oraz 15 szt. złota.",
     },
     "fc-88": {
-        "name": "Gain 1 ✓",
+        "name": "Otrzymujesz 1 ✓.",
     },
     "fc-89": {
-        "name": "Gain “Second Chance Ring” (Item 070)",
+        "name": "Otrzymujesz „Pierścień Drugiej Szansy” (przedmiot 070).",
     },
     "fc-90": {
-        "name": "10 gold each, Read section 75 on page 49",
+        "name": "przeczytaj sekcję 75 na stronie 49",
     },
     "fc-91": {
-        "name": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck",
+        "name": "Otrzymujesz 30 szt. złota oraz osiągnięcie drużyny: „Oportuniści”. Dodajesz do talii wydarzenie miejskie 84.",
+    },
+    "fc-92": {
+        "name": "Otrzymujesz „Halabardę” (przedmiot 068).",
     },
     "fc-93": {
-        "name": "Gain “Scroll of Haste” (Item 159)",
-    },
-    "fc-93": {
-        "name": "“Scroll of Haste” (Item 159)",
+        "name": "Otrzymujesz „Zwój Pośpiechu” (przedmiot 159).",
     },
     "fc-94": {
-        "name": "Gain 1 ✓ and add Rift Event 20 to the deck",
+        "name": "Otrzymujesz 1 ✓ oraz dodajesz do talii wydarzenie szczelinowe 20.",
     },
     "fc-95": {
-        "name": "Gain 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck",
+        "name": "Otrzymujesz 25 szt. złota oraz osiągnięcie drużynowe: „Skrytka”. Dodajesz do talii wydarzenie miejskie 85.",
     },
     "fc-96": {
-        "name": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}",
+        "name": "Znajdujesz starą księgę pełną rysunków technicznych oraz schematów rozmaitych egzotycznych maszyn. Na okładce znajduje się dziwna, odręczna notatka: {NOTE_115}.",
     },
     "jotl-1": {
-        "name": "Gain 10 experience"
+        "name": "Otrzymujesz 10 pkt. doświadczenia"
     },
     "jotl-2": {
-        "name": "“Ring of Strength” (Item 31)"
+        "name": "„Ring of Strength” (przedmiot 31)"
     },
     "jotl-3": {
-        "name": "Gain 15 experience"
+        "name": "Otrzymujesz 15 pkt. doświadczenia"
     },
     "jotl-4": {
-        "name": "Gain 5 gold"
+        "name": "Otrzymujesz 5 szt. złota"
     },
     "jotl-5": {
-        "name": "Gain 1 ✔"
+        "name": "Otrzymujesz 1 ✔"
     },
     "jotl-6": {
-        "name": "Gain 10 gold"
+        "name": "Otrzymujesz 10 szt. złota"
     },
     "jotl-7": {
-        "name": "Gain 5 gold"
+        "name": "Otrzymujesz 5 szt. złota"
     },
     "jotl-8": {
-        "name": "Suffer 3 damage, gain {POISON,"
+        "name": "Suffer 3 damage, Otrzymujesz {POISON,"
     },
     "jotl-9": {
-        "name": "Gain 5 gold"
+        "name": "Otrzymujesz 5 szt. złota"
     },
     "jotl-10": {
-        "name": "“Fateful Compass” (Item 27)"
+        "name": "„Fateful Compass” (przedmiot 27)"
     },
     "jotl-11": {
-        "name": "“Ring of Haste” (Item 30)"
+        "name": "„Ring of Haste” (przedmiot 30)"
     },
     "jotl-12": {
-        "name": "Gain 5 gold"
+        "name": "Otrzymujesz 5 szt. złota"
     },
     "jotl-13": {
-        "name": "Gain 5 gold"
+        "name": "Otrzymujesz 5 szt. złota"
     },
     "jotl-14": {
-        "name": "Gain 3 money tokens"
+        "name": "Otrzymujesz 3 money tokens"
     },
     "jotl-15": {
-        "name": "Gain 1 ✔"
+        "name": "Otrzymujesz 1 ✔"
     },
     "jotl-16": {
-        "name": "“Mana Potion” (Item 14)"
+        "name": "„Mana Potion” (przedmiot 14)"
     },
     "jotl-X": {
-        "name": "“Ring of Restoration” (Item 32)"
+        "name": "„Ring of Restoration” (przedmiot 32)"
     },
     "cs-1": {
-        "name": "“Drake's Blood” (Item 14)"
+        "name": "„Drake's Blood” (przedmiot 14)"
     },
     "cs-2": {
-        "name": "“Orb of Fortune” (Item 09)"
+        "name": "„Orb of Fortune” (przedmiot 09)"
     },
     "cs-3": {
-        "name": "“Chain Mace” (Item 14)"
+        "name": "„Chain Mace” (przedmiot 14)"
     },
     "cs-4": {
-        "name": "Gain 15 gold and Recover one lost card"
+        "name": "Otrzymujesz 15 szt. złota i odzyskaj jedną utraconą kartę"
     },
     "cs-5": {
-        "name": "“Concussion Mine” (Item 31)"
+        "name": "„Concussion Mine” (przedmiot 31)"
     },
     "cs-6": {
-        "name": "Gain 20 gold and disarm all adjacent traps"
+        "name": "Otrzymujesz 20 szt. złota i rozbrajasz wszystkie sąsiadujące pułapki"
     },
     "cs-7": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-8": {
-        "name": "“Dizzying Tincture” (Item 58)"
+        "name": "„Dizzying Tincture” (przedmiot 58)"
     },
     "cs-9": {
-        "name": "“Orb of Fortune” (Item 9)"
+        "name": "„Orb of Fortune” (przedmiot 9)"
     },
     "cs-10": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-11": {
-        "name": "“Dizzying Tincture” (Item 58)"
+        "name": "„Dizzying Tincture” (przedmiot 58)"
     },
     "cs-12": {
-        "name": "“Mana Medicine” (Item 60)"
+        "name": "„Mana Medicine” (przedmiot 60)"
     },
     "cs-13": {
-        "name": "“Orb of Despair” (Item 10)"
+        "name": "„Orb of Despair” (przedmiot 10)"
     },
     "cs-14": {
-        "name": "“Steel Helmet” (Item 22)"
+        "name": "„Steel Helmet” (przedmiot 22)"
     },
     "cs-15": {
-        "name": "“Shifting Compass” (Item 32)"
+        "name": "„Shifting Compass” (przedmiot 32)"
     },
     "cs-16": {
-        "name": "Perform “Heal 6, Self”, gain {POISON}"
+        "name": "Wykonaj „Leczenie 6, na siebie”, otrzymujesz {POISON}"
     },
     "cs-17": {
-        "name": "“Concussion Mine” (Item 31)"
+        "name": "„Concussion Mine” (przedmiot 31)"
     },
     "cs-18": {
-        "name": "“Boneclad Shawl” (Item 25)"
+        "name": "„Boneclad Shawl” (przedmiot 25)"
     },
     "cs-19": {
-        "name": "Gain ✓ and generate a Wild Element"
+        "name": "Otrzymujesz ✓ i generujesz Wild Element"
     },
     "cs-20": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-21": {
-        "name": "“Steel Helmet” (Item 22)"
+        "name": "„Steel Helmet” (przedmiot 22)"
     },
     "cs-22": {
-        "name": "“Boots of Perpetuity” (Item 19)"
+        "name": "„Boots of Perpetuity” (przedmiot 19)"
     },
     "cs-23": {
-        "name": "“Trophy Helmet” (Item 12)"
+        "name": "„Trophy Helmet” (przedmiot 12)"
     },
     "cs-24": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-25": {
-        "name": "“Draining Greaves” (Item 15)"
+        "name": "„Draining Greaves” (przedmiot 15)"
     },
     "cs-26": {
-        "name": "“Iron Snare” (Item 30)"
+        "name": "„Iron Snare” (przedmiot 30)"
     },
     "cs-27": {
-        "name": "“Woven Plate Armor” (Item 23)"
+        "name": "„Woven Plate Armor” (przedmiot 23)"
     },
     "cs-28": {
-        "name": "“Chain Mace” (Item 14)"
+        "name": "„Chain Mace” (przedmiot 14)"
     },
     "cs-29": {
-        "name": "“Woven Plate Armor” (Item 23)"
+        "name": "„Woven Plate Armor” (przedmiot 23)"
     },
     "cs-30": {
-        "name": "“Boneclad Shawl (Item 25)"
+        "name": "„Boneclad Shawl” (przedmiot 25)"
     },
     "cs-31": {
-        "name": "“Drake's Blood” (Item 14)"
+        "name": "„Drake's Blood” (przedmiot 14)"
     },
     "cs-32": {
-        "name": "“Curious Pendant” (Item 20)"
+        "name": "„Curious Pendant” (przedmiot 20)"
     },
     "cs-33": {
-        "name": "25  gold, gain {POISON}"
+        "name": "25  szt. złota, otrzymujesz {POISON}"
     },
     "cs-34": {
         "name": "Suffer hazardous terrain damage, gain {INVISIBLE}"
     },
     "cs-35": {
-        "name": "“Curseblood Blade” (Item 36)"
+        "name": "„Curseblood Blade” (przedmiot 36)"
     },
     "cs-36": {
-        "name": "10 experience, gain {INVSIBLE}"
+        "name": "10 pkt. doświadczenia, otrzymujesz {INVSIBLE}"
     },
     "cs-37": {
-        "name": "“Draining Greaves” (Item 15)"
+        "name": "„Draining Greaves” (przedmiot 15)"
     },
     "cs-38": {
-        "name": "“War Pick” (Item 13)"
+        "name": "„War Pick” (przedmiot 13)"
     },
     "cs-39": {
-        "name": "“Infrared Goggles” (Item 21)"
+        "name": "„Infrared Goggles” (przedmiot 21)"
     },
     "cs-40": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-41": {
-        "name": "“Ashsteel Gauntlets” (Item 61)"
+        "name": "„Ashsteel Gauntlets” (przedmiot 61)"
     },
     "cs-42": {
-        "name": "“War Pick” (Item 13)"
+        "name": "„War Pick” (przedmiot 13)"
     },
     "cs-43": {
-        "name": "10 experience and Refresh all spent items"
+        "name": "10 pkt. doświadczenia i odśwież wszystkie wykorzystane przedmioty"
     },
     "cs-44": {
-        "name": "“Mana Medicine” (Item 60)"
+        "name": "„Mana Medicine” (przedmiot 60)"
     },
     "cs-45": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-46": {
-        "name": "“Vipertooth Dagger” design (Item 54)"
+        "name": "Schemat „Vipertooth Dagger” (przedmiot 54)"
     },
     "cs-47": {
-        "name": "15 gold"
+        "name": "15 szt. złota"
     },
     "cs-48": {
-        "name": "15 gold"
+        "name": "15 szt. złota"
     },
     "cs-49": {
-        "name": "“Magma Waders” (Item 99)"
+        "name": "„Magma Waders” (przedmiot 99)"
     }
 }
