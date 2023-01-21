@@ -140,6 +140,7 @@ export default {
                 {version: '3.10', description: 'Add beta support for Crimson Scales', date: dayjs('2022-07-17')},
                 {version: '3.11', description: 'Crimson Scales out of beta and add support to use items across games', date: dayjs('2023-01-02')},
                 {version: '3.12', description: 'A read only sharing option for shared campaigns', date: dayjs('2023-01-09')},
+                {version: '3.13', description: 'Added attack modifier cards to character sheets', date: dayjs('2023-01-21')},
             ].reverse()
         }
     },
