@@ -548,7 +548,7 @@ export default {
         ]
     },
     "gh-204": {
-        "name": " Corrupted Laboratory",
+        "name": "Corrupted Laboratory",
         "rewards": [
             "“Volatile Elixir” (Item 136)"
         ]

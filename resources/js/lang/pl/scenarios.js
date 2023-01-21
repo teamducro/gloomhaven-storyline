@@ -1,843 +1,843 @@
 export default {
     "gh-1": {
-        "name": "Black Barrow"
+        "name": "Czarny Kurhan"
     },
     "gh-2": {
-        "name": "Barrow Lair",
+        "name": "Kryjówka w Kurhanie",
         "rewards": [
-            "10 gold each",
-            "+1 prosperity"
+            "Po 10 szt. złota dla każdego",
+            "+1 do dobrobytu"
         ]
     },
     "gh-3": {
-        "name": "Inox Encampment",
+        "name": "Obozowisko Inoksów",
         "rewards": [
-            "15 gold each",
-            "+1 prosperity"
+            "Po 15 szt. złota dla każdego",
+            "+1 do dobrobytu"
         ]
     },
     "gh-4": {
-        "name": "Crypt of the Damned",
+        "name": "Krypta Potępionych",
     },
     "gh-5": {
-        "name": "Ruinous Crypt",
+        "name": "Zrujnowana krypta",
     },
     "gh-6": {
-        "name": "Decaying Crypt",
+        "name": "Murszejąca krypta",
         "rewards": [
-            "5 gold each"
+            "Po 5 szt. złota dla każdego"
         ]
     },
     "gh-7": {
-        "name": "Vibrant Grotto",
+        "name": "Zarośnięta grota",
     },
     "gh-8": {
-        "name": "Gloomhaven Warehouse",
+        "name": "Magazyn w Gloomhaven",
         "rewards": [
-            "+2 reputation"
+            "+2 do reputacji"
         ]
     },
     "gh-9": {
-        "name": "Diamond Mine",
+        "name": "Kopalnia Diamentów",
         "rewards": [
-            "20 gold each",
-            "+1 prosperity"
+            "Po 20 szt. złota dla każdego",
+            "+1 do dobrobytu"
         ]
     },
     "gh-10": {
-        "name": "Plane of Elemental Power",
+        "name": "Sfera Mocy Żywiołów",
     },
     "gh-11": {
-        "name": "Gloomhaven Square A",
+        "name": "Rynek Gloomhaven A",
         "rewards": [
-            "15 gold each",
-            "-2 reputation",
-            "+2 prosperity",
-            "“Skullbane Axe” design (Item 113)"
+            "Po 15 szt. złota dla każdego",
+            "-2 do reputacji",
+            "+2 do dobrobytu",
+            "Schemat „Topora Czaszkozguby” (przedmiot 113)"
         ]
     },
     "gh-12": {
-        "name": "Gloomhaven Square B",
+        "name": "Rynek Gloomhaven B",
         "rewards": [
-            "+4 reputation",
-            "“Skullbane Axe” design (Item 113)"
+            "+4 do reputacji",
+            "Schemat „Topora Czaszkozguby” (przedmiot 113)"
         ]
     },
     "gh-13": {
-        "name": "Temple of the Seer",
+        "name": "Świątynia Proroctw",
     },
     "gh-14": {
-        "name": "Frozen Hollow",
+        "name": "Lodowa Pieczara",
     },
     "gh-15": {
-        "name": "Shrine of Strength",
+        "name": "Kaplica Siły",
         "rewards": [
-            "20 experience each"
+            "Po 20 pkt. doświadczenia dla każdego"
         ]
     },
     "gh-16": {
-        "name": "Mountain Pass",
+        "name": "Górska przełęcz",
     },
     "gh-17": {
-        "name": "Lost Island",
+        "name": "Zaginiona wyspa",
         "rewards": [
-            "25 gold each"
+            "Po 25 szt. złota dla każdego"
         ]
     },
     "gh-18": {
-        "name": "Abandoned Sewers",
+        "name": "Opuszczone kanały",
     },
     "gh-19": {
-        "name": "Forgotten Crypt",
+        "name": "Zapomniana krypta",
         "rewards": [
-            "+1 prosperity"
+            "+1 do dobrobytu"
         ]
     },
     "gh-20": {
-        "name": "Necromancers Sanctum",
+        "name": "Pracownia Nekromantki",
         "rewards": [
-            "20 gold each",
-            "+2 reputation",
-            "+1 prosperity"
+            "Po 20 szt. złota dla każdego",
+            "+2 do reputacji",
+            "+1 do dobrobytu"
         ]
     },
     "gh-21": {
-        "name": "Infernal Throne",
+        "name": "Piekielny Tron",
         "rewards": [
-            "50 gold each",
-            "+1 prosperity",
-            "Add City Event 78 to the deck"
+            "Po 50 szt. złota dla każdego",
+            "+1 do dobrobytu",
+            "Do talii należy dodać wydarzenie miejskie 78"
         ]
     },
     "gh-22": {
-        "name": "Temple of Elements",
+        "name": "Świątynia Żywiołów",
     },
     "gh-23": {
-        "name": "Deep Ruins",
+        "name": "Podziemne ruiny",
     },
     "gh-24": {
-        "name": "Echo Chamber",
+        "name": "Komnata Echa",
     },
     "gh-25": {
-        "name": "Icecrag Ascent",
+        "name": "Lodowa grań",
     },
     "gh-26": {
-        "name": "Ancient Cistern",
+        "name": "Starożytny zbiornik",
         "rewards": [
-            "10 gold each",
-            "+1 reputation",
-            "+2 prosperity"
+            "Po 10 szt. złota dla każdego",
+            "+1 do reputacji",
+            "+2 do dobrobytu"
         ]
     },
     "gh-27": {
-        "name": "Ruinous Rift",
+        "name": "Niebezpieczna szczelina",
         "rewards": [
-            "+1 prosperity",
-            "100 gold each This money must immediately be spent on enhancements"
+            "+1 do dobrobytu",
+            "Po 100 szt. złota dla każdego Pieniądze te należy natychmiast wydać na wzmocnienia.",
         ]
     },
     "gh-28": {
-        "name": "Outer Ritual Chamber",
+        "name": "Zewnętrzna komnata rytualna",
     },
     "gh-29": {
-        "name": "Sanctuary of Gloom",
+        "name": "Sanktuarium Mroku",
         "rewards": [
-            "15 experience each"
+            "Po 15 pkt. doświadczenia dla każdego"
         ]
     },
     "gh-30": {
-        "name": "Shrine of the Depths",
+        "name": "Kaplica Głębin",
         "rewards": [
-            "10 gold each"
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "gh-31": {
-        "name": "Plane of Night",
+        "name": "Sfera Nocy",
     },
     "gh-32": {
-        "name": "Decrepit Wood",
+        "name": "Próchniejący Las",
     },
     "gh-33": {
-        "name": "Savvas Armory",
+        "name": "Zbrojownia Sawasów",
     },
     "gh-34": {
-        "name": "Scorched Summit",
+        "name": "Spalony Szczyt",
         "rewards": [
-            "20 gold each",
-            "+2 reputation",
-            "+1 prosperity"
+            "Po 20 szt. złota dla każdego",
+            "+2 do reputacji",
+            "+1 do dobrobytu"
         ]
     },
     "gh-35": {
-        "name": "Gloomhaven Battlements A",
+        "name": "Blanki Gloomhaven A",
         "rewards": [
-            "30 gold each",
-            "5 reputation",
-            "-2 prosperity",
-            "Add City Event 79 to the deck"
+            "Po 30 szt. złota dla każdego",
+            "-5 do reputacji",
+            "-2 do dobrobytu",
+            "Do talii należy dodać wydarzenie miejskie 79."
         ]
     },
     "gh-36": {
-        "name": "Gloomhaven Battlements B",
+        "name": "Blanki Gloomhaven B",
         "rewards": [
-            "10 gold each",
-            "+4 reputation",
-            "Add City Event 78 to the deck"
+            "Po 10 szt. złota dla każdego",
+            "+4 do reputacji",
+            "Do talii należy dodać wydarzenie miejskie 78."
         ]
     },
     "gh-37": {
-        "name": "Doom Trench",
+        "name": "Rów Zagłady",
     },
     "gh-38": {
-        "name": "Slave Pens",
+        "name": "Obóz Niewolników",
         "rewards": [
-            "+1 reputation"
+            "+1 do reputacji"
         ]
     },
     "gh-39": {
-        "name": "Treacherous Divide",
+        "name": "Zdradliwa Przepaść",
         "rewards": [
-            "10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "gh-40": {
-        "name": "Ancient Defense Network",
+        "name": "Starożytny System Obronny",
     },
     "gh-41": {
-        "name": "Timeworn Tomb",
+        "name": "Prastary Grobowiec",
         "rewards": [
-            "50 gold each",
-            "25 experience each",
-            "2 ✔ each",
-            "+2 prosperity"
+            "Po 50 szt. złota dla każdego",
+            "Po 25 pkt. doświadczenia dla każdego",
+            "Po 2 ✔ dla każdego",
+            "+2 do dobrobytu"
         ]
     },
     "gh-42": {
-        "name": "Realm of the Voice",
+        "name": "Kraina Głosu",
         "rewards": [
             "{NOTE_42}"
         ]
     },
     "gh-43": {
-        "name": "Drake Nest",
+        "name": "Gniazdo Drakona",
     },
     "gh-44": {
-        "name": "Tribal Assault",
+        "name": "Plemienne Natarcie",
         "rewards": [
-            "Open envelope {DS}",
-            "+2 reputation"
+            "Otwórzcie kopertę {DS}",
+            "+2 do reputacji"
         ]
     },
     "gh-45": {
-        "name": "Rebel Swamp",
+        "name": "Mokradła Rebeliantów",
         "rewards": [
-            "20 gold each",
-            "-2 reputation"
+            "Po 20 szt. złota dla każdego",
+            "-2 do reputacji"
         ]
     },
     "gh-46": {
-        "name": "Nightmare Peak",
+        "name": "Koszmarny Wierch",
     },
     "gh-47": {
-        "name": "Lair of the Unseeing Eye",
+        "name": "Legowisko Niewidzącego Oka",
     },
     "gh-48": {
-        "name": "Shadow Weald",
+        "name": "Głusza Cieni",
     },
     "gh-49": {
-        "name": "Rebels Stand",
+        "name": "Bastion Rebeliantów",
         "rewards": [
-            "50 gold each",
-            "-3 reputation"
+            "Po 50 szt. złota dla każdego",
+            "-3 do reputacji"
         ]
     },
     "gh-50": {
-        "name": "Ghost Forrest",
+        "name": "Twierdza Duchów",
         "rewards": [
-            "+3 reputation",
-            "-2 prosperity"
+            "+3 do reputacji",
+            "-2 do dobrobytu"
         ]
     },
     "gh-51": {
-        "name": "The Void",
+        "name": "Pustka",
         "rewards": [
-            "+5 reputation",
-            "+5 prosperity",
-            "Add City Event 81 to the deck",
-            "Add Road Event 69 to the deck"
+            "+5 do reputacji",
+            "+5 do dobrobytu",
+            "Do talii należy dodać wydarzenie miejskie 81",
+            "Do talii należy dodać wydarzenie na szlaku 69",
         ]
     },
     "gh-52": {
-        "name": "Noxious Cellar",
+        "name": "Trująca piwnica",
     },
     "gh-53": {
-        "name": "Crypt Basement",
+        "name": "Podziemia Krypty",
         "rewards": [
-            "The Seeker of Xorn receives: “Staff of Xorn” (Item 114) The Seeker cannot sell this item."
+            "Poszukiwacz Xorna otrzymuje: „Kostur Xorna” (przedmiot 114) Poszukiwacz nie może sprzedać tego przedmiotu."
         ]
     },
     "gh-54": {
-        "name": "Palace of Ice",
+        "name": "Lodowy Pałac",
         "rewards": [
-            "Immediately retire the Seeker of Xorn",
-            "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
-            "Open envelope {PH}"
+            "Poszukiwacz Xorna kończy przygodę.",
+            "Zamiast zwykłych wydarzeń zakończenia przygody danej klasy do talii należy dodać wydarzenie na szlaku oraz miejskie 59.",
+            "Otwórzcie kopertę {PH}"
         ]
     },
     "gh-55": {
-        "name": "Foggy Thicket",
+        "name": "Zamglony gąszcz",
         "rewards": [
-            "10 collective gold"
+            "10 szt. złota do podziału"
         ]
     },
     "gh-56": {
-        "name": "Bandits Wood",
+        "name": "Las Bandytów",
         "rewards": [
-            "“Take Back the Trees” quest complete",
-            "Open envelope {DS}",
-            "10 gold each",
-            "+2 reputation"
+            "Zadanie „Bratnia pomoc” wykonane",
+            "Otwórzcie kopertę {DS}",
+            "Po 10 szt. złota dla każdego",
+            "+2 do reputacji"
         ]
     },
     "gh-57": {
-        "name": "Investigation",
+        "name": "Dochodzenie",
         "rewards": [
-            "+1 reputation"
+            "+1 do reputacji"
         ]
     },
     "gh-58": {
-        "name": "Bloody Shack",
+        "name": "Krwawa Chata",
         "rewards": [
-            "“Vengeance” quest complete",
-            "Open envelope X",
-            "+2 reputation"
+            "Zadanie „Pomsta” wykonane",
+            "Otwórzcie kopertę X",
+            "+2 do reputacji"
         ]
     },
     "gh-59": {
-        "name": "Forgotten Grove",
+        "name": "Zapomniany gaj",
     },
     "gh-60": {
-        "name": "Alchemy Lab",
+        "name": "Laboratorium alchemiczne",
         "rewards": [
-            "“Finding the Cure” quest complete",
-            "Open envelope X",
-            "+1 prosperity"
+            "Zadanie „Szukając lekarstwa” wykonane",
+            "Otwórzcie kopertę X",
+            "+1 do dobrobytu"
         ]
     },
     "gh-61": {
-        "name": "Fading Lighthouse",
+        "name": "Znikająca latarnia",
     },
     "gh-62": {
-        "name": "Pit of Souls",
+        "name": "Czeluść Dusz",
         "rewards": [
-            "“The Fall of Man” quest complete",
-            "Open envelope {NS}",
-            "10 experience each"
+            "Zadanie „Upadek człowieka” wykonane",
+            "Otwórzcie kopertę {NS}",
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "gh-63": {
-        "name": "Magma Pit",
+        "name": "Czeluść magmy",
         "rewards": [
-            "15 gold each"
+            "Po 15 szt. złota dla każdego"
         ]
     },
     "gh-64": {
-        "name": "Under Water Lagoon",
+        "name": "Podwodna Laguna",
         "rewards": [
-            "10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "gh-65": {
-        "name": "Sulfur Mine",
+        "name": "Kopalnia Siarki",
         "rewards": [
-            "“Ancient Drill” design (Item 112)"
+            "Schemat „Pradawnego Wiertła” (przedmiot 112)"
         ]
     },
     "gh-66": {
-        "name": "Clockwork Cove",
+        "name": "Mechaniczna Zatoka",
     },
     "gh-67": {
-        "name": "Arcane Library",
+        "name": "Tajemna Biblioteka",
         "rewards": [
-            "“Power Core” (Item 132)"
+            "„Rdzeń Mocy” (przedmiot 132)"
         ]
     },
     "gh-68": {
-        "name": "Toxic Moor",
+        "name": "Toksyczne Wrzosowisko",
         "rewards": [
-            "2 “Major Healing Potions” (Item 027)"
+            "2 „Większe Mikstury Leczenia” (przedmiot 027)"
         ]
     },
     "gh-69": {
-        "name": "Well of the Unfortunate",
+        "name": "Studnia Nieszczęśników",
         "rewards": [
-            "15 gold each"
+            "Po 15 szt. złota dla każdego"
         ]
     },
     "gh-70": {
-        "name": "Chained Isle",
+        "name": "Wyspa Łańcuchów",
         "rewards": [
-            "+2 prosperity"
+            "+2 do dobrobytu"
         ]
     },
     "gh-71": {
-        "name": "Windswept Highlands",
+        "name": "Wichrowe Wyżyny",
         "rewards": [
-            "2 “Major Power Potions” (Item 041)"
+            "2 „Większe Mikstury Mocy” (przedmiot 041)"
         ]
     },
     "gh-72": {
-        "name": "Oozing Grove",
+        "name": "Zaszlamiony sad",
         "rewards": [
-            "+1 reputation",
-            "+1 prosperity"
+            "+1 do reputacji",
+            "+1 do dobrobytu"
         ]
     },
     "gh-73": {
-        "name": "Rockslide Ridge",
+        "name": "Góra Lawin",
         "rewards": [
-            "+1 reputation"
+            "+1 do reputacji"
         ]
     },
     "gh-74": {
-        "name": "Merchant Ship",
+        "name": "Kupiecki statek",
         "rewards": [
-            "10 gold each",
-            "+2 prosperity"
+            "Po 10 szt. złota dla każdego",
+            "+2 do dobrobytu"
         ]
     },
     "gh-75": {
-        "name": "Overgrown Graveyard",
+        "name": "Zarośnięty cmentarz",
         "rewards": [
-            "60 gold each"
+            "Po 60 szt. złota dla każdego"
         ]
     },
     "gh-76": {
-        "name": "Harrower Hive",
+        "name": "Gniazdo Dreszczowców",
     },
     "gh-77": {
-        "name": "Vault of Secrets",
+        "name": "Krypta Tajemnic",
         "rewards": [
-            "5 experience each"
+            "Po 5 pkt. doświadczenia dla każdego"
         ]
     },
     "gh-78": {
-        "name": "Sacrifice Pit",
+        "name": "Jama ofiarna",
         "rewards": [
-            "+3 reputation"
+            "+3 do reputacji"
         ]
     },
     "gh-79": {
-        "name": "Lost Temple",
+        "name": "Zaginiona Świątynia",
         "rewards": [
-            "15 gold each"
+            "Po 15 szt. złota dla każdego"
         ]
     },
     "gh-80": {
-        "name": "Vigil Keep",
+        "name": "Twierdza Czuwających",
         "rewards": [
-            "10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "gh-81": {
-        "name": "Temple of the Eclipse",
+        "name": "Świątynia Zaćmienia",
         "rewards": [
-            "10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "gh-82": {
-        "name": "Burning Mountain",
+        "name": "Płonąca Góra",
         "rewards": [
             [
-                "+1 reputation"
+                "+1 do reputacji"
             ],
             [
-                "-1 reputation",
-                "-2 prosperity"
+                "-1 do reputacji",
+                "-2 do dobrobytu"
             ]
         ],
     },
     "gh-83": {
-        "name": "Shadows Within",
+        "name": "Wewnętrzne Cienie",
         "rewards": [
-            "40 collective gold"
+            "40 szt. złota do podziału"
         ]
     },
     "gh-84": {
-        "name": "Crystalline Cave",
+        "name": "Kryształowa Grota",
         "rewards": [
-            "“Resonant Crystal” (Item 133)",
-            "+1 prosperity"
+            "„Rezonujący Kryształ” (przedmiot 133)",
+            "+1 do dobrobytu"
         ],
     },
     "gh-85": {
-        "name": "Sun Temple",
+        "name": "Świątynia Słońca",
         "rewards": [
-            "“Orb of Dawn” (Item 121)"
+            "„Kula Brzasku” (przedmiot 121)"
         ]
     },
     "gh-86": {
-        "name": "Harried Village",
+        "name": "Spustoszona Wioska",
         "rewards": [
-            "+2 reputation"
+            "+2 do reputacji"
         ]
     },
     "gh-87": {
-        "name": "Corrupted Cove",
+        "name": "Skażona Zatoczka",
         "rewards": [
-            "+1 reputation",
-            "+1 prosperity"
+            "+1 do reputacji",
+            "+1 do dobrobytu"
         ]
     },
     "gh-88": {
-        "name": "Plane of Water",
+        "name": "Sfera Wody",
         "rewards": [
-            "“Staff of Summoning” (Item 120)"
+            "„Kostur Przywołania” (przedmiot 120)"
         ]
     },
     "gh-89": {
-        "name": "Syndicate Hideout",
+        "name": "Kryjówka Syndykatu",
         "rewards": [
-            "50 collective gold"
+            "50 szt. złota do podziału"
         ]
     },
     "gh-90": {
-        "name": "Demonic Rift",
+        "name": "Szczelina Demonów",
         "rewards": [
-            "“Black Censer” (Item 128)"
+            "„Czarna Kadzielnica” (przedmiot 128)"
         ]
     },
     "gh-91": {
-        "name": "Wild Melee",
+        "name": "Dzika Bijatyka",
         "rewards": [
-            "2 ✔ each"
+            "Po 2 ✔ dla każdego"
         ]
     },
     "gh-92": {
-        "name": "Back Alley Brawl",
+        "name": "Bójka w Zaułku",
         "rewards": [
-            "10 gold each",
-            "-3 reputation"
+            "Po 10 szt. złota dla każdego",
+            "-3 do reputacji"
         ]
     },
     "gh-93": {
-        "name": "Sunken Vessel",
+        "name": "Zatopiony statek",
         "rewards": [
-            "10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "gh-94": {
-        "name": "Vermling Nest",
+        "name": "Gniazdo Szczuroków",
     },
     "gh-95": {
-        "name": "Payment Due",
+        "name": "Czas Zapłaty",
         "rewards": [
-            "“Skull of Hatred” (Item 119)"
+            "„Czaszka Nienawiści” (przedmiot 119)"
         ]
     },
     "gh-202": {
-        "name": "Return to the Black Barrow",
+        "name": "Powrót do Czarnego Kurhanu",
         "rewards": [
-            "“Imposing Blade” (Item 134)"
+            "„Imponujące Ostrze” (przedmiot 134)"
         ]
     },
     "gh-203": {
-        "name": "An Unfortunate Intrusion",
+        "name": "Pechowy najazd",
         "rewards": [
-            "“Focusing Ray” (Item 135)"
+            "„Dozownik Mikstur” (przedmiot 135)"
         ]
     },
     "gh-204": {
-        "name": " Corrupted Laboratory",
+        "name": "Spaczone laboratorium",
         "rewards": [
-            "“Volatile Elixir” (Item 136)"
+            "„Niestabilny Eliksir” (przedmiot 136)"
         ]
     },
     "gh-205": {
-        "name": "Armory Heist",
+        "name": "Skok na zbrojownię",
         "rewards": [
-            "“Silent Stiletto” (Item 137)"
+            "„Sztylet Skrytobójcy” (przedmiot 137)"
         ]
     },
     "gh-206": {
-        "name": "Stone Defense",
+        "name": "Kamienna obrona",
         "rewards": [
-            "“Stone Charm” (Item 138)"
+            "„Kamienna Tiara” (przedmiot 138)"
         ]
     },
     "gh-207": {
-        "name": "Rodent Liberation",
+        "name": "Wyzwolenie gryzoni",
         "rewards": [
-            "“Psychic Knife” (Item 139)"
+            "„Mistyczny Nóż” (przedmiot 139)"
         ]
     },
     "gh-208": {
-        "name": "Caravan Escort",
+        "name": "Ochrona karawany",
         "rewards": [
-            "“Sun Shield” (Item 140)"
+            "„Słoneczna Tarcza” (przedmiot 140)"
         ]
     },
     "gh-209": {
-        "name": "Unnatural Insults",
+        "name": "Nienaturalna zniewaga",
         "rewards": [
-            "“Mask of Death” (Item 145)"
+            "„Maska Śmierci” (przedmiot 145)"
         ]
     },
     "gh-210": {
-        "name": "Storage Fees",
+        "name": "Opłata magazynowa",
         "rewards": [
-            "“Utility Belt” (Item 141)"
+            "„Pas Narzędziowy” (przedmiot 141)"
         ]
     },
     "gh-211": {
-        "name": "Plane of Wild Beasts",
+        "name": "Strefa dzikich bestii",
         "rewards": [
-            "“Phasing Idol” (Item 142)"
+            "„Fazujący Bożek” (przedmiot 142)"
         ]
     },
     "gh-212": {
-        "name": "Harvesting the Night",
+        "name": "Żniwa nocy",
         "rewards": [
-            "“Smoke Elixir” (Item 143)"
+            "„Eliksir Cienia” (przedmiot 143)"
         ]
     },
     "gh-213": {
-        "name": "Plagued Crypt",
+        "name": "Krypta zarazy",
         "rewards": [
-            "“Pendant of the Plague” (Item 144)"
+            "„Medalion Zarazy” (przedmiot 144)"
         ]
     },
     "gh-214": {
-        "name": "Battle of the Bards",
+        "name": "Bitwa bardów",
         "rewards": [
-            "“Master’s Lute” (Item 146)"
+            "„Mistrzowska Lutnia” (przedmiot 146)"
         ]
     },
     "gh-215": {
-        "name": "Corrupted Hunt",
+        "name": "Spaczone łowy",
         "rewards": [
-            "“Cloak of the Hunter” (Item 147)"
+            "„Płaszcz Łowcy” (przedmiot 147)"
         ]
     },
     "gh-216": {
-        "name": "Aftermath",
+        "name": "Pokłosie",
         "rewards": [
-            "“Doctor’s Coat” (Item 148)"
+            "„Fartuch Lekarski” (przedmiot 148)"
         ]
     },
     "gh-217": {
-        "name": "Elemental Secrets",
+        "name": "Tajemnice żywiołów",
         "rewards": [
-            "“Elemental Boots” (Item 149)"
+            "„Buty Żywiołów” (przedmiot 149)"
         ]
     },
     "gh-218": {
-        "name": "The Caged Bear",
+        "name": "Niedźwiedź w klatce",
         "rewards": [
-            "“Staff of Command” (Item 150)"
+            "„Różdżka Posłuszeństwa” (przedmiot 150)"
         ]
     },
     "gh-219": {
         "name": "The Sands of Time",
         "rewards": [
-            "“Sword of the Sands” (Item 151)"
+            "„Sword of the Sands” (przedmiot 151)"
         ]
     },
     "fc-96": {
-        "name": "Unexpected Visitors",
+        "name": "Nieoczekiwani goście",
         "rewards": [
-            "10 experience each",
-            "Add City and Road Events 82 to their respective decks"
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Dodaj do odpowiednich talii wydarzenie miejskie 82 oraz na szlaku 82"
         ]
     },
     "fc-97": {
-        "name": "Lore Untold",
+        "name": "Wiedza nieopisana",
         "rewards": [
-            "10 gold each",
-            "Add City Events 88, 89 and 90 to the deck"
+            "Po 10 szt. złota dla każdego",
+            "Do talii należy dodać wydarzenie miejskie 88, 89 oraz 90"
         ]
     },
     "fc-98": {
-        "name": "Past in Flames",
+        "name": "Przeszłość w płomieniach",
         "rewards": [
             [
-                "10 gold each",
-                "+1 reputation",
-                "+1 prosperity",
-                "Add City Event 86 to the deck"
+                "Po 10 szt. złota dla każdego",
+                "+1 do reputacji",
+                "+1 do dobrobytu",
+                "Do talii należy dodać wydarzenie miejskie 86"
             ],
             [
-                "5 gold each",
-                "+1 reputation"
+                "Po 5 szt. złota dla każdego",
+                "+1 do reputacji"
             ],
             [
-                "5 gold each",
-                "+1 reputation"
+                "Po 5 szt. złota dla każdego",
+                "+1 do reputacji"
             ]
         ],
     },
     "fc-99": {
-        "name": "Aftershocks",
+        "name": "Wstrząsy wtórne",
         "rewards": [
             [
-                "5 gold each",
-                "“Minor Antidote” (Item 153)"
+                "Po 5 szt. złota dla każdego",
+                "Schemat „Mniejszego Antidotum” (przedmiot 153)"
             ],
             [
-                "10 gold each",
-                "+1 prosperity",
-                "“Minor Antidote” (Item 153)"
+                "Po 10 szt. złota dla każdego",
+                "+1 do dobrobytu",
+                "Schemat „Mniejszego Antidotum” (przedmiot 153)"
             ]
         ],
     },
     "fc-100": {
-        "name": "Shifting Gears",
+        "name": "Ruchome tryby",
         "rewards": [
-            "Choose to gain one of the following sets: “Telescopic Lens” (Item 059) and “Ancient Drill” (Item 112), OR “Curious Gear” (Item 125) and “Remote Spider” (Item 126)"
+            "Wybierz jedno z poniższych: „Monokular Teleskopowy” (przedmiot 059), „Pradawne Wiertło” (przedmiot 112), „Osobliwa Zębatka” (przedmiot 125) ALBO „Mechaniczny Pająk” (przedmiot 126)"
         ],
     },
     "fc-101": {
-        "name": "Shrouded Crypt",
+        "name": "Zasnuta krypta",
         "rewards": [
-            "20 collective gold",
-            "+1 reputation",
-            "+1 prosperity"
+            "20 szt. złota do podziału",
+            "+1 do reputacji",
+            "+1 do dobrobytu"
         ]
     },
     "fc-102": {
-        "name": "Bazaar of Knowledge",
+        "name": "Bazar Wiedzy",
         "rewards": [
-            "15 experience each",
-            "If no more than 2+C inhabitants were intimidated: +2 reputation Otherwise: -2 reputation"
+            "Po 15 pkt. doświadczenia dla każdego",
+            "Jeżeli zastraszonych zostało mniej niż 2+P mieszkańców: +2 do reputacji. W innym przypadku: -2 do reputacji"
         ]
     },
     "fc-103": {
-        "name": "Where It Is Needed",
+        "name": "Tam, gdzie jest potrzebna",
         "rewards": [
-            "+2 prosperity",
-            "Add City Event 87 to the deck"
+            "+2 do dobrobytu",
+            "Do talii należy dodać wydarzenie miejskie 87"
         ]
     },
     "fc-104": {
-        "name": "A Gaping Wound",
+        "name": "Ziejąca rana",
         "rewards": [
-            "“Major Mana Potion” (Item 048)"
+            "„Większa Mikstura Many” (przedmiot 048)"
         ]
     },
     "fc-105": {
-        "name": "Monstrosities of a Cult",
+        "name": "Potworności z kultu",
         "rewards": [
-            "“Major Antidote” (Item 154)"
+            "Schemat „Większego Antidotum” (przedmiot 154)"
         ]
     },
     "fc-106": {
-        "name": "Intricate Work",
+        "name": "Misterne dzieło",
         "rewards": [
             [
-                "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements"
+                "Po 175 szt. złota dla każdego, Pieniądze te trzeba natychmiast wydać na dowolne wzmocnienie {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, albo {DARK}"
             ],
             [
-                "175 gold each, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements",
-                "+ 1 prosperity"
+                "Po 175 szt. złota dla każdego, Pieniądze te trzeba natychmiast wydać na dowolne wzmocnienie {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, albo {DARK}",
+                "+ 1 do dobrobytu"
             ]
         ],
     },
     "fc-107": {
-        "name": "Mechanical Genius",
+        "name": "Mechaniczny geniusz",
         "rewards": [
-            "5 experience each"
+            "Po 5 pkt. doświadczenia dla każdego"
         ]
     },
     "fc-108": {
-        "name": "Prologue to the End",
+        "name": "Prolog końca",
         "rewards": [
             [
-                "“Curseward Armor” (Item 155)"
+                "„Zbroja Rozbicia Klątw” (przedmiot 155)"
             ],
             [
-                "2 “Throwing Axes” (Item 161)"
+                "2 „Miotane Topory” (przedmiot 161)"
             ],
             [
-                "“Curseward Armor” (Item 155)",
-                "2 “Throwing Axes” (Item 161)"
+                "„Zbroja Rozbicia Klątw” (przedmiot 155)",
+                "2 „Miotane Topory” (przedmiot 161)"
             ]
         ],
     },
     "fc-109": {
-        "name": "Epilogue of a War",
+        "name": "Epilog wojny",
         "rewards": [
-            "10 experience each",
-            "“Protective Charm” (Item 052)"
+            "Po 10 pkt. doświadczenia dla każdego",
+            "„Ochronny Amulet” (przedmiot 052)"
         ]
     },
     "fc-110": {
-        "name": "A Circular Solution",
+        "name": "Okrągłe rozwiązanie",
         "rewards": [
-            "“Crystal Tiara” (Item 163)"
+            "„Kryształowa Tiara” (przedmiot 163)"
         ]
     },
     "fc-111": {
-        "name": "The Shackles Loosen",
+        "name": "Okowy słabną",
         "rewards": [
             [
-                "5 experience each",
-                "Add Rift Event 16 to the deck. Instead of shuffling this event into the whole deck, shuffle it into the top 3 cards"
+                "Po 5 pkt. doświadczenia dla każdego",
+                "Dodaj do talii wydarzenie szczelinowe 16. Zamiast wtasować je do całej talii, wtasuj je między 3 górne kary"
             ],
             [
-                "12 experience each",
-                "1 ✓ each"
+                "Po 12 pkt. doświadczenia dla każdego",
+                "Po 1 ✔ dla każdego"
             ]
         ],
     },
     "fc-112": {
-        "name": "The Bottom of It",
+        "name": "Sedno sprawy",
         "rewards": [
             [
-                "10 gold each",
-                "5 experience each"
+                "Po 10 szt. złota dla każdego",
+                "Po 5 pkt. doświadczenia dla każdego"
             ],
             [
-                "25 collective gold",
-                "5 experience each",
-                "1 ✓ each"
+                "25 szt. złota do podziału",
+                "Po 5 pkt. doświadczenia dla każdego",
+                "Po 1 ✔ dla każdego"
             ]
         ],
     },
     "fc-113": {
-        "name": "The Lost Thread",
+        "name": "Zagubiona nić",
         "rewards": [
-            "135 gold each",
-            "This money must immediately be spent on any Move {MOVE}, Range {RANGE} or Jump {JUMP} enhancements",
-            "+1 prosperity"
+            "Po 135 szt. złota dla każdego",
+            "Pieniądze te trzeba natychmiast wydać na dowolne wzmocnienia Ruchu {MOVE}, Zasięgu {RANGE} albo Skoku {JUMP}",
+            "+1 do dobrobytu"
         ]
     },
     "fc-114": {
-        "name": "Ink Not Yet Dry",
+        "name": "Atrament wciąż schnie",
         "rewards": [
-            "Party Boon: Additional costs of enhancing an ability card based on the level of the card are now reduced by 5 gold per level."
+            "Profit dla drużyny: Dodatkowy kosz wzmocnienia karty zdolności zależny od jej poziomu jest od teraz zmniejszony o 5 sztuk złota na poziom"
         ]
     },
     "fc-115": {
-        "name": "Future Uncertain",
+        "name": "Niepewna przyszłość",
         "rewards": [
-            "+3 reputation",
-            "+1 prosperity",
-            "Retire the Aesther Diviner {DR}",
-            "Add City and Road Events 83 to their respective decks"
+            "+3 do reputacji",
+            "+1 do dobrobytu",
+            "Postać Esterii Wieszczki {DR} przechodzi w stan spoczynku",
+            "Dodaj do odpowiednich talii wydarzenie miejskie 83 oraz na szlaku 83"
         ]
     },
     "fc-200": {
-        "name": "Tower to the Stars",
+        "name": "Wieża do gwiazd",
         "rewards": [
-            "15 gold each",
-            "1 ✓ each",
-            "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
+            "Po 15 szt. złota dla każdego",
+            "Po 1 ✔ dla każdego",
+            "Wszystkie postacie mogą dodać jedną nową kartę ze swojej klasy do aktywnej puli kart. Wybrana karta musi być na poziomie mniejszym lub równym poziomowi postaci minus 2"
         ]
     },
     "fc-201": {
-        "name": "Forecast of the Inevitable",
+        "name": "Zapowiedź nieuniknionego",
         "rewards": [
-            "“Basin of Prophecy” (Item 164)"
+            "„Misa Przepowiedni” (przedmiot 164)"
         ]
     },
     "jotl-1": {
@@ -846,38 +846,38 @@ export default {
     "jotl-2": {
         "name": "A Hole in the Wall",
         "rewards": [
-            "25 gold each",
+            "Po 25 szt. złota dla każdego",
             "Add items 1-13 to the shop"
         ]
     },
     "jotl-3": {
         "name": "The Black Ship",
         "rewards": [
-            "1 ✔ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "jotl-4": {
         "name": "A Ritual in Stone",
         "rewards": [
-            "“Mana Potion” (Item 14)"
+            "„Mana Potion” (przedmiot 14)"
         ]
     },
     "jotl-5": {
         "name": "A Deeper Understanding",
         "rewards": [
-            "25 experience each"
+            "Po 25 pkt. doświadczenia dla każdego"
         ]
     },
     "jotl-6": {
         "name": "Corrupted Research",
         "rewards": [
-            "1 ✔ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "jotl-7": {
         "name": "Sunken Tumor",
         "rewards": [
-            "20 experience each"
+            "Po 20 pkt. doświadczenia dla każdego"
         ]
     },
     "jotl-8": {
@@ -886,107 +886,107 @@ export default {
     "jotl-9": {
         "name": "Explosive Evolution",
         "rewards": [
-            "20 experience each",
+            "Po 20 pkt. doświadczenia dla każdego",
             "Add items 15-20 to the shop"
         ]
     },
     "jotl-10": {
         "name": "The Gauntlet",
         "rewards": [
-            "15 experience each"
+            "Po 15 pkt. doświadczenia dla każdego"
         ]
     },
     "jotl-11": {
         "name": "Defiled Sewers",
         "rewards": [
-            "“Flea-Bitten Shawl” (Item 28)"
+            "„Flea-Bitten Shawl” (przedmiot 28)"
         ]
     },
     "jotl-12": {
         "name": "Beguiling Sewers",
         "rewards": [
-            "“Flea-Bitten Shawl” (Item 28)"
+            "„Flea-Bitten Shawl” (przedmiot 28)"
         ]
     },
     "jotl-13": {
         "name": "Vile Harvest",
         "rewards": [
-            "1 ✔ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "jotl-14": {
         "name": "Toxic Harvest",
         "rewards": [
-            "1 ✔ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "jotl-15": {
         "name": "Tainted Blood",
         "rewards": [
-            "10 gold each",
+            "Po 10 szt. złota dla każdego",
             "Add items 21-26 to the shop"
         ]
     },
     "jotl-16": {
         "name": "Mixed Results",
         "rewards": [
-            "15 experience each",
-            "“Tower Shield” (Item 29)"
+            "Po 15 pkt. doświadczenia dla każdego",
+            "„Tower Shield” (przedmiot 29)"
         ]
     },
     "jotl-17": {
         "name": "Red Twilight",
         "rewards": [
-            "25 experience each",
-            "30 gold each"
+            "Po 25 pkt. doświadczenia dla każdego",
+            "Po 30 szt. złota dla każdego"
         ]
     },
     "jotl-18": {
         "name": "The Heist",
         "rewards": [
-            "10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "jotl-19": {
         "name": "Den of Thieves",
         "rewards": [
-            "“Ring of Strength” (Item 31)"
+            "„Ring of Strength” (przedmiot 31)"
         ]
     },
     "jotl-20": {
         "name": "Misplaced Goods",
         "rewards": [
-            "10 gold each"
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "jotl-21": {
         "name": "Agents of Chaos",
         "rewards": [
-            "15 gold each"
+            "Po 15 szt. złota dla każdego"
         ]
     },
     "jotl-22": {
         "name": "Unfriendly Message",
         "rewards": [
-            "“Steel Ring” (Item 33)"
+            "„Steel Ring” (przedmiot 33)"
         ]
     },
     "jotl-23": {
         "name": "Best of the Best",
         "rewards": [
-            "“Barbed Axe” (Item 34)"
+            "„Barbed Axe” (przedmiot 34)"
         ]
     },
     "jotl-24": {
         "name": "Warding the Void",
         "rewards": [
-            "“Robes of Command” (Item 35)"
+            "„Robes of Command” (przedmiot 35)"
         ]
     },
     "jotl-25": {
         "name": "The Greatest Job in the World",
         "rewards": [
-            "“Jet Boots” (Item 36)"
+            "„Jet Boots” (przedmiot 36)"
         ]
     },
     "cs-1": {
@@ -998,14 +998,14 @@ export default {
     "cs-3": {
         "name": "Flooded Cavern",
         "rewards": [
-            "10 experience each",
-            "+1 prosperity"
+            "Po 10 pkt. doświadczenia dla każdego",
+            "+1 do dobrobytu"
         ]
     },
     "cs-4": {
         "name": "Infected Warriors",
         "rewards": [
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "Each character gains one random „Orb” item (przedmiot 1-10)"
         ]
     },
     "cs-5": {
@@ -1014,9 +1014,9 @@ export default {
     "cs-6": {
         "name": "Poisoned Water",
         "rewards": [
-            "+2 reputation",
-            "+1 prosperity",
-            "“Stun Powder” (Item 21)"
+            "+2 do reputacji",
+            "+1 do dobrobytu",
+            "„Stun Powder” (przedmiot 21)"
         ]
     },
     "cs-7": {
@@ -1028,21 +1028,21 @@ export default {
     "cs-8": {
         "name": "Shattered Fortress",
         "rewards": [
-            "“Curious Pendant” (Item 20)"
+            "„Curious Pendant” (przedmiot 20)"
         ]
     },
     "cs-9": {
         "name": "Rescue Mission",
         "rewards": [
-            "10 gold each",
-            "“Smog Emitter” (Item 62)"
+            "Po 10 szt. złota dla każdego",
+            "„Smog Emitter” (przedmiot 62)"
         ]
     },
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "“Minor Mana Potion” (Item 12)",
-            "“Minor Healing Potion” (Item 20)"
+            "„Minor Mana Potion” (przedmiot 12)",
+            "„Minor Healing Potion” (przedmiot 20)"
         ]
     },
     "cs-11": {
@@ -1054,60 +1054,60 @@ export default {
     "cs-13": {
         "name": "Corpse Cavern",
         "rewards": [
-            "+1 prosperity",
-            "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\nIf there are none of these available in the shop, gain 20 gold instead"
+            "+1 do dobrobytu",
+            "Each character gains one of the following: „Major Stamina Potion” (przedmiot 34), „Major Power Potion” (przedmiot 41), „Major Mana Potion” (przedmiot 48)\nIf there are none of these available in the shop, gain 20 gold instead"
         ]
     },
     "cs-14": {
         "name": "Cultist Cave",
         "rewards": [
-            "15 experience each"
+            "Po 15 pkt. doświadczenia dla każdego"
         ]
     },
     "cs-15": {
         "name": "Ambush of Beasts",
         "rewards": [
-            "15 gold each",
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "Po 15 szt. złota dla każdego",
+            "Each character gains one random „Orb” item (przedmiot 1-10)"
         ]
     },
     "cs-16": {
         "name": "Preto Krisanta",
         "rewards": [
-            "10 gold each",
+            "Po 10 szt. złota dla każdego",
             "One character gains one {+1_WHITE} enhancement to any Level 1 or X card"
         ]
     },
     "cs-17": {
         "name": "Orb Extraction",
         "rewards": [
-            "+2 prosperity"
+            "+2 do dobrobytu"
         ]
     },
     "cs-18": {
         "name": "Grab and Go",
         "rewards": [
-            "100 gold each. This money must immediately be spent on enhancements"
+            "Po 100 szt. złota dla każdego. Pieniądze te należy natychmiast wydać na wzmocnienia."
         ]
     },
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "“Major Mana Potion” (Item 48)"
+            "„Major Mana Potion” (przedmiot 48)"
         ]
     },
     "cs-20": {
         "name": "Midnight Ritual",
         "rewards": [
-            "+1 reputation",
-            "+1 prosperity",
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "+1 do reputacji",
+            "+1 do dobrobytu",
+            "Each character gains one random „Orb” item (przedmiot 1-10)"
         ]
     },
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "“Magma Waders” (Item 99)"
+            "„Magma Waders” (przedmiot 99)"
         ]
     },
     "cs-22": {
@@ -1119,40 +1119,40 @@ export default {
     "cs-23": {
         "name": "Icicle Chambers",
         "rewards": [
-            "15 experience each"
+            "Po 15 pkt. doświadczenia dla każdego"
         ]
     },
     "cs-24": {
         "name": "Eerie Grotto",
         "rewards": [
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "Each character gains one random „Orb” item (przedmiot 1-10)"
         ]
     },
     "cs-25": {
         "name": "Brightspark, Behold!",
         "rewards": [
-            "+1 reputation",
-            "Add Road Event 57 to the deck"
+            "+1 do reputacji",
+            "Do talii należy dodać wydarzenie na szlaku 57"
         ]
     },
     "cs-26": {
         "name": "Thermal Stone Peak",
         "rewards": [
-            "20 experience each",
-            "1 ✓ each"
+            "Po 20 pkt. doświadczenia dla każdego",
+            "Po 1 ✔ dla każdego"
         ]
     },
     "cs-27": {
         "name": "Frostbite Cavern",
         "rewards": [
-            "10 gold each",
-            "“Dizzying Tincture” (Item 58)"
+            "Po 10 szt. złota dla każdego",
+            "„Dizzying Tincture” (przedmiot 58)"
         ]
     },
     "cs-28": {
         "name": "Fountain of Bones",
         "rewards": [
-            "1 ✓ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "cs-29": {
@@ -1162,38 +1162,38 @@ export default {
         "name": "Undead Terrors",
         "rewards": [
             [
-                "70 collective gold"
+                "70 szt. złota do podziału"
             ],
             [
-                "10 experience each"
+                "Po 10 pkt. doświadczenia dla każdego"
             ]
         ]
     },
     "cs-31": {
         "name": "Eternal Portals",
         "rewards": [
-            "1 ✓ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "cs-32": {
         "name": "Confronting the Past",
         "rewards": [
             "Read {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
-            "Password “Water Hydra”"
+            "Password „Water Hydra”"
         ]
     },
     "cs-33": {
         "name": "Siege Tower",
         "rewards": [
-            "“Blazing Boots” (Item 87)",
-            "+1 reputation"
+            "„Blazing Boots” (przedmiot 87)",
+            "+1 do reputacji"
         ]
     },
     "cs-34": {
         "name": "Great Oak Escape",
         "rewards": [
             "Unlock Envelope {BM}",
-            "+2 reputation",
+            "+2 do reputacji",
             "All characters add one {BLESS} to their attack modifer deck for the next scenario"
         ]
     },
@@ -1204,13 +1204,13 @@ export default {
         "name": "Hunters Bounty",
         "rewards": [
             "Unlock Envelope {CG}",
-            "10 gold each"
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "cs-37": {
         "name": "Burning Stones",
         "rewards": [
-            "Gain one random “Stone” item (Item 94-100)"
+            "Gain one random „Stone” item (przedmiot 94-100)"
         ]
     },
     "cs-38": {
@@ -1222,9 +1222,9 @@ export default {
     "cs-39": {
         "name": "Festering Mire",
         "rewards": [
-            "10 experience each",
+            "Po 10 pkt. doświadczenia dla każdego",
             "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
-            "“An Adder Divides” quest is not yet complete"
+            "„An Adder Divides” quest is not yet complete"
         ]
     },
     "cs-40": {
@@ -1242,52 +1242,52 @@ export default {
     "cs-42": {
         "name": "Unnatural Beasts",
         "rewards": [
-            "+1 reputation",
-            "10 experience each"
+            "+1 do reputacji",
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "cs-43": {
         "name": "Mansion Maze",
         "rewards": [
-            "+1 prosperity",
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "+1 do dobrobytu",
+            "Each character gains one random „Orb” item (przedmiot 1-10)"
         ]
     },
     "cs-44": {
         "name": "Haunted Manor",
         "rewards": [
-            "20 gold each",
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "Po 20 szt. złota dla każdego",
+            "Each character gains one random „Orb” item (przedmiot 1-10)"
         ]
     },
     "cs-45": {
         "name": "Defend the Swamp",
         "rewards": [
-            "+1 reputation",
-            "+1 prosperity",
-            "1 ✓ each"
+            "+1 do reputacji",
+            "+1 do dobrobytu",
+            "Po 1 ✔ dla każdego"
         ]
     },
     "cs-46": {
         "name": "Vermling Gardens",
         "rewards": [
-            "+2 reputation",
-            "15 experience each"
+            "+2 do reputacji",
+            "Po 15 pkt. doświadczenia dla każdego"
         ]
     },
     "cs-47": {
         "name": "Viper Marsh",
         "rewards": [
-            "“Ghost Viper Venom” (Item 55)",
-            "+1 prosperity",
-            "10 gold each"
+            "„Ghost Viper Venom” (przedmiot 55)",
+            "+1 do dobrobytu",
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "cs-48": {
         "name": "Forest Fire",
         "rewards": [
-            "10 experience each",
-            "20 gold each"
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Po 20 szt. złota dla każdego"
         ]
     },
     "cs-49": {
@@ -1299,150 +1299,150 @@ export default {
     "cs-50": {
         "name": "Oak Invasion B",
         "rewards": [
-            "10 experience each",
-            "1 ✓ each"
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Po 1 ✔ dla każdego"
         ]
     },
     "cs-51": {
         "name": "Rodent Warehouse",
         "rewards": [
-            "+1 reputation",
-            "30 gold each"
+            "+1 do reputacji",
+            "Po 30 szt. złota dla każdego"
         ]
     },
     "cs-52": {
         "name": "Wishing Well",
         "rewards": [
-            "“Drakescale Shield” (Item 37)"
+            "„Drakescale Shield” (przedmiot 37)"
         ]
     },
     "cs-53": {
         "name": "Cave of Currents",
         "rewards": [
-            "“Sphere of Currents” (Item 83)",
-            "5 gold each"
+            "„Sphere of Currents” (przedmiot 83)",
+            "Po 5 szt. złota dla każdego"
         ]
     },
     "cs-54": {
         "name": "Lair of Horrors",
         "rewards": [
-            "+1 reputation",
-            "30 gold each"
+            "+1 do reputacji",
+            "Po 30 szt. złota dla każdego"
         ]
     },
     "cs-55": {
         "name": "Catacomb Plunder",
         "rewards": [
-            "+1 prosperity",
-            "+1 reputation",
-            "10 experience each"
+            "+1 do dobrobytu",
+            "+1 do reputacji",
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "cs-56": {
         "name": "Disarm the Machine",
         "rewards": [
-            "“Chain Cannon” (Item 45)"
+            "„Chain Cannon” (przedmiot 45)"
         ]
     },
     "cs-57": {
         "name": "Elemental Converter",
         "rewards": [
-            "“Test Tube” (Item 48)"
+            "„Test Tube” (przedmiot 48)"
         ]
     },
     "cs-58": {
         "name": "Penitentiary Lockdown",
         "rewards": [
-            "Gain one of the following as an item and the other as an item design: “Claw Trap” (Item 34), “Clamp Trap” (Item 56)"
+            "Gain one of the following as an item and the other as an item design: „Claw Trap” (przedmiot 34), „Clamp Trap” (przedmiot 56)"
         ]
     },
     "cs-59": {
         "name": "Forest Invaders",
         "rewards": [
-            "“Nature Armlets” (Item 47)"
+            "„Nature Armlets” (przedmiot 47)"
         ]
     },
     "cs-60": {
         "name": "Through the Fire and Flames",
         "rewards": [
-            "“Flaming Armor” (Item 51)"
+            "„Flaming Armor” (przedmiot 51)"
         ]
     },
     "cs-61": {
         "name": "Archaic Preservation",
         "rewards": [
-            "“Robe of Soothing” (Item 42)"
+            "„Robe of Soothing” (przedmiot 42)"
         ]
     },
     "cs-62": {
         "name": "Hallow Redemption",
         "rewards": [
-            "“Cleansed Voidheart” (Item 57)"
+            "„Cleansed Voidheart” (przedmiot 57)"
         ]
     },
     "cs-63": {
         "name": "A Cornered Viper",
         "rewards": [
-            "“Field Mortar” (Item 53)"
+            "„Field Mortar” (przedmiot 53)"
         ]
     },
     "cs-64": {
         "name": "Glowing Crystals",
         "rewards": [
-            "“Luminous Carapace” (Item 50)"
+            "„Luminous Carapace” (przedmiot 50)"
         ]
     },
     "cs-65": {
         "name": "Glowing Crystals",
         "rewards": [
-            "“Spirit Libation” (Item 41)"
+            "„Spirit Libation” (przedmiot 41)"
         ]
     },
     "cs-66": {
         "name": "Otherworldly Strangers",
         "rewards": [
-            "“Moonleather Boots” (Item 40)"
+            "„Moonleather Boots” (przedmiot 40)"
         ]
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
         "rewards": [
-            "“Rockspine Bulwark” (Item AA01)"
+            "„Rockspine Bulwark” (przedmiot AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
         "rewards": [
-            "“Ghostshimmer Honey” (Item AA02)"
+            "„Ghostshimmer Honey” (przedmiot AA02)"
         ]
     },
     "cs-AA3": {
         "name": "Hive Guardian",
         "rewards": [
-            "“Steelsilk Spinneret” (Item AA03)"
+            "„Steelsilk Spinneret” (przedmiot AA03)"
         ]
     },
     "cs-QA1": {
         "name": "Capstone Test",
         "rewards": [
             [
-                "“Ingenious Inventor” quest complete",
-                "Open envelope {QA}",
-                "“Steam Piston Hammer” design (Item QA02)",
-                "“Spider Climb Gloves” design (Item QA03)"
+                "„Ingenious Inventor” quest complete",
+                "Otwórzcie kopertę {QA}",
+                "„Steam Piston Hammer” design (przedmiot QA02)",
+                "„Spider Climb Gloves” design (przedmiot QA03)"
             ],
             [
-                "“Ingenious Inventor” quest complete",
-                "Open envelope {QA}",
-                "Gain one of the following: “Steam Piston Hammer” (Item QA02) OR “Spider Climb Gloves” (Item QA03)",
+                "„Ingenious Inventor” quest complete",
+                "Otwórzcie kopertę {QA}",
+                "Gain one of the following: „Steam Piston Hammer” (przedmiot QA02) OR „Spider Climb Gloves” (przedmiot QA03)",
                 "Add a copy of the chosen item to the city's available supply",
                 "Add the other item to the random item design deck"
             ],
             [
-                "“Ingenious Inventor” quest complete",
-                "Open envelope {QA}",
-                "“Steam Piston Hammer” (Item QA02)",
-                "“Spider Climb Gloves” (Item QA03)",
+                "„Ingenious Inventor” quest complete",
+                "Otwórzcie kopertę {QA}",
+                "„Steam Piston Hammer” (przedmiot QA02)",
+                "„Spider Climb Gloves” (przedmiot QA03)",
                 "Add copies to the city's available supply"
             ],
         ]
@@ -1450,16 +1450,16 @@ export default {
     "cs-QA2": {
         "name": "Mother Lode",
         "rewards": [
-            "“Scrap Diver” quest complete",
-            "Open envelope {QA}",
+            "„Scrap Diver” quest complete",
+            "Otwórzcie kopertę {QA}",
             "15xA gold each (where A is the number of Ancient Scrap recovered",
-            "Add City Event QA-03 to the deck"
+            "Do talii należy dodać wydarzenie miejskie QA-03"
         ]
     },
     "cs-QA3": {
         "name": "Magnum Opus",
         "rewards": [
-            "“Auscudee of the Makers” (Item QA06)"
+            "„Auscudee of the Makers” (przedmiot QA06)"
         ]
     },
     "cs-RM1": {
@@ -1468,9 +1468,9 @@ export default {
     "cs-RM2": {
         "name": "Sinking Kingpin",
         "rewards": [
-            "“Brutal Enforcer” quest complete",
-            "Open Envelope {RM}",
-            "+1 prosperity"
+            "„Brutal Enforcer” quest complete",
+            "Otwórzcie kopertę {RM}",
+            "+1 do dobrobytu"
         ]
     },
     "cs-RM3": {
@@ -1479,29 +1479,29 @@ export default {
     "cs-RM4": {
         "name": "Terrorscale Lair",
         "rewards": [
-            "“Apex Predator” quest complete",
-            "Open Envelope {RM}",
-            "“Terrorscale Saber” design (Item RM03)",
-            "“Terrorscale Crossblades” design (Item RM04)",
+            "„Apex Predator” quest complete",
+            "Otwórzcie kopertę {RM}",
+            "„Terrorscale Saber” design (przedmiot RM03)",
+            "„Terrorscale Crossblades” design (przedmiot RM04)",
         ]
     },
     "cs-RM5": {
         "name": "Unseen Plight",
         "rewards": [
             [
-                "40 collective gold",
-                "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+                "40 szt. złota do podziału",
+                "„Studded Leather” design (przedmiot 030) OR „Boots of Dashing” design (przedmiot 036)"
             ],
             [
-                "2 ✓ each",
-                "“Lucky Eye” design (Item 063)",
+                "Po 2 ✔ dla każdego",
+                "„Lucky Eye” design (przedmiot 063)",
             ]
         ]
     },
     "cs-RM6": {
         "name": "The Fall of Shadow's Respite",
         "rewards": [
-            "“Rite of Ruin” design (Item RM05)",
+            "„Rite of Ruin” design (przedmiot RM05)",
             "If at least three Vermlings were alive at the end of the eighth round: 5 gold",
             "If at least five Vermlings were alive at the end of the eighth round: ✓"
         ]
@@ -1509,8 +1509,8 @@ export default {
     "cs-RM7": {
         "name": "Insatiable",
         "rewards": [
-            "10 experience each",
-            "“Savage Cuirass” design (Item RM06)",
+            "Po 10 pkt. doświadczenia dla każdego",
+            "„Savage Cuirass” design (przedmiot RM06)",
         ]
     }
 }

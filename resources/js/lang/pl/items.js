@@ -1,839 +1,839 @@
 export default {
     "gh-1": {
-        "name": "Boots of Striding",
-        "source": "Prosperity 1",
-        "desc": "During your movement, add +2 {MOVE} to the movement.",
-        "faq": "Boots of Striding only add to the numerical value of an existing single movement ability. They do not give you a free movement action."
+        "name": "Buty Raźnego Kroku",
+        "source": "Dobrobyt 1",
+        "desc": "Podczas poruszania się dodaj +2 do {MOVE} dla pojedynczego ruchu.",
+        "faq": "Buty Raźnego Kroku zwiększają tylko wartość istniejącej zdolności pojedynczego ruchu. Nie dają ci darmowej akcji ruchu."
     },
     "gh-2": {
-        "name": "Winged Shoes",
-        "source": "Prosperity 1",
-        "desc": "During your movement, add {JUMP} to the movement.",
-        "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
+        "name": "Uskrzydlone Buty",
+        "source": "Dobrobyt 1",
+        "desc": "Podczas poruszania się dodaj {JUMP} do twojego ruchu.",
+        "faq": "Uskrzydlone Buty mogą być użyte tylko dla pojedynczej zdolności ruchu, nie dla wielu zdolności ruchu w ramach jednej akcji (np. Akcja z Ruchem, Atak, Ruch)."
     },
     "gh-3": {
-        "name": "Hide Armor",
-        "source": "Prosperity 1",
-        "desc": "On the next two sources of damage to you from attacks, gain {SHIELD} 1. Add 2 {-1} to your attack modifier deck.",
-        "faq": "Hide Armor only grants the shield for the attack, not until the end of the round."
+        "name": "Juchtowa Zbroja",
+        "source": "Dobrobyt 1",
+        "desc": "W dwóch następnych przypadkach otrzymywanie obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1. Dodaj 2 {-1} do swojej talli modyfikatorów ataku.",
+        "faq": "Juchtowa Zbroja przyznaje tarczę tylko na ten atak, nie do końca rundy."
     },
     "gh-4": {
-        "name": "Leather Armor",
-        "source": "Prosperity 1",
-        "desc": "When attacked, the attacker gains Disadvantage on the attack.",
-        "faq": "The Leather Armor must be used before the enemy draws an attack modifier card."
+        "name": "Skórzana Zbroja",
+        "source": "Dobrobyt 1",
+        "desc": "Kiedy jesteś atakowany, atakujący otrzymuje Niekorzyść na ten atak.",
+        "faq": "Skórzana Zbroja musi zostać użyta zanim wróg wylosuje kartę modyfikatora ataku."
     },
     "gh-5": {
-        "name": "Cloak of Invisibility",
-        "source": "Prosperity 1",
-        "desc": "During your turn, gain {INVISIBLE}."
+        "name": "Peleryna Niewidzialności",
+        "source": "Dobrobyt 1",
+        "desc": "Podczas twojej tury zyskujesz {INVISIBLE}."
     },
     "gh-6": {
-        "name": "Eagle-Eye Goggles",
-        "source": "Prosperity 1",
-        "desc": "During your attack, gain Advantage on the entire Attack action."
+        "name": "Gogle Sokolego Wzroku",
+        "source": "Dobrobyt 1",
+        "desc": "Podczas twojego ataku zyskujesz Korzyść na całą twoją akcję ataku."
     },
     "gh-7": {
-        "name": "Iron Helmet",
-        "source": "Prosperity 1",
-        "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+        "name": "Stalowy Hełm",
+        "source": "Dobrobyt 1",
+        "desc": "Kiedy jesteś atakowany rozpatrz każdy dobrany modyfikator ataku {2X_WHITE} wroga jako {+0_WHITE}."
     },
     "gh-8": {
-        "name": "Heater Shield",
-        "source": "Prosperity 1",
-        "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+        "name": "Kuta Tarcza",
+        "source": "Dobrobyt 1",
+        "desc": "Kiedy otrzymujesz obrażenia z ataku zyskujesz {SHIELD} 1 na ten atak."
     },
     "gh-9": {
-        "name": "Piercing Bow",
-        "source": "Prosperity 1",
-        "desc": "During your ranged attack, ignore all Shield values for the entire Attack action."
+        "name": "Łuk Przebicia",
+        "source": "Dobrobyt 1",
+        "desc": "Podczas twojego ataku dystansowego, zignoruj wszystkie wartości {SHIELD} wroga dla całej twojej akcji ataku."
     },
     "gh-10": {
-        "name": "War Hammer",
-        "source": "Prosperity 1",
-        "desc": "During your melee attack, add {STUN} to the entire Attack action."
+        "name": "Młot Bojowy",
+        "source": "Dobrobyt 1",
+        "desc": "Podczas twojego ataku wręcz dodaj {STUN} dla całej twojej akcji ataku."
     },
     "gh-11": {
-        "name": "Poison Dagger",
-        "source": "Prosperity 1",
-        "desc": "During your melee attack, add {POISON} to a single attack."
+        "name": "Zatruty Sztylet",
+        "source": "Dobrobyt 1",
+        "desc": "Podczas twojego ataku wręcz dodaj {POISON} dla twojego pojedynczego ataku."
     },
     "gh-12": {
-        "name": "Minor Healing Potion",
-        "source": "Prosperity 1",
-        "desc": "During your turn, perform a “{HEAL} 3, self” action."
+        "name": "Mniejsza Mikstura Leczenia",
+        "source": "Dobrobyt 1",
+        "desc": "Podczas twojej tury wykonaj akcję „{HEAL} 3, na siebie”."
     },
     "gh-13": {
-        "name": "Minor Stamina Potion",
-        "source": "Prosperity 1",
-        "desc": "During your turn, {RECOVER} up to two of your discarded cards.",
-        "faq": "[Errata] The item should allow you to recover only one discarded card. This is change in an upcoming expansion but may be used for the base game."
+        "name": "Mniejsza Mikstura Wytrzymałości",
+        "source": "Dobrobyt 1",
+        "desc": "Podczas twojej tury {RECOVER} do dwóch twoich odrzuconych kart.",
+        "faq": "[Errata] Przedmiot powinien umożliwiać odzyskanie tylko jednej odrzuconej karty. Jest to zmiana w nadchodzącym rozszerzeniu, ale może być wykorzystana w grze podstawowej."
     },
     "gh-14": {
-        "name": "Minor Power Potion",
-        "source": "Prosperity 1",
-        "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+        "name": "Mniejsza Mikstura Mocy",
+        "source": "Dobrobyt 1",
+        "desc": "Podczas twojego ataku dodaj +1 {ATTACK} dla całej twojej akcji ataku"
     },
     "gh-15": {
-        "name": "Boots of Speed",
-        "source": "Prosperity 2",
-        "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 10."
+        "name": "Buty Szybkości",
+        "source": "Dobrobyt 2",
+        "desc": "Na początku rundy, po odsłonięciu wszystkich kart zdolności, podnieś lub obniż wartość inicjatywy twojej karty wiodącej o 10."
     },
     "gh-16": {
-        "name": "Cloak of Pockets",
-        "source": "Prosperity 2",
-        "desc": "You can carry two additional {SMALL-ITEM} items."
+        "name": "Płaszcz z Kieszeniami",
+        "source": "Dobrobyt 2",
+        "desc": "Możesz unieść dwa dodatkowe przedmioty {SMALL-ITEM}."
     },
     "gh-17": {
-        "name": "Empowering Talisman",
-        "source": "Prosperity 2",
-        "desc": "During your turn, {REFRESH} one of your consumed {SMALL-ITEM} items."
+        "name": "Talizman Wzmocnienia",
+        "source": "Dobrobyt 2",
+        "desc": "Podczas twojej tury możesz odświeżyć {REFRESH} jeden ze zużytych przedmiotów {SMALL-ITEM}."
     },
     "gh-18": {
-        "name": "Battle-Axe",
-        "source": "Prosperity 2",
-        "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+        "name": "Topór Bojowy",
+        "source": "Dobrobyt 2",
+        "desc": "Podczas twojej akcji ataku wręcz na pojedynczy cel zamień ten atak na następujący: {AOE.CONE_0_1}"
     },
     "gh-19": {
-        "name": "Weighted Net",
-        "source": "Prosperity 2",
-        "desc": "During your ranged attack, add {IMMOBILIZE} to a single attack."
+        "name": "Wyważona Sieć",
+        "source": "Dobrobyt 2",
+        "desc": "Podczas twojego ataku dystansowego dodaj {IMMOBILIZE} dla pojedynczego ataku."
     },
     "gh-20": {
-        "name": "Minor Mana Potion",
-        "source": "Prosperity 2",
-        "desc": "During your turn, create any element. {ANY}"
+        "name": "Mniejsza Mikstura Many",
+        "source": "Dobrobyt 2",
+        "desc": "Podczas twojej tury stwórz dowolny żywioł {ANY}."
     },
     "gh-21": {
-        "name": "Stun Powder",
-        "source": "Prosperity 2",
-        "desc": "During your attack, add {STUN} to a single attack."
+        "name": "Proch Ogłuszenia",
+        "source": "Dobrobyt 2",
+        "desc": "Podczas twojego ataku dodaj {STUN} dla pojedynczego ataku."
     },
     "gh-22": {
-        "name": "Heavy Greaves",
-        "source": "Prosperity 3",
-        "desc": "You are immune to all forced movement caused by enemies or scenario effects. Add 1 {-1} to your attack modifier deck."
+        "name": "Ciężkie Nagolenniki",
+        "source": "Dobrobyt 3",
+        "desc": "Zyskujesz odporność na każdy wymuszony ruch wywołany przez wrogów lub efekty scenariusza. Dodaj 1 {-1} do swojej talii modyfikatorów ataku."
     },
     "gh-23": {
-        "name": "Chainmail",
-        "source": "Prosperity 3",
-        "desc": "On the next three sources of damage to you from attacks, gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
-        "faq": "Chainmail only grants the shield for the attack, not until the end of the round."
+        "name": "Kolczuga",
+        "source": "Dobrobyt 3",
+        "desc": "W trzech następnych przypadkach otrzymanie obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD}. Dodaj 3 {-1} do swojej talii modyfikatorów ataku.",
+        "faq": "Kolczuga przyznaje tarczę tylko na ten atak, nie do końca rundy."
     },
     "gh-24": {
-        "name": "Amulet of Life",
-        "source": "Prosperity 3",
-        "desc": "During your turn, {HEAL} 1 damage."
+        "name": "Amulet Życia",
+        "source": "Dobrobyt 3",
+        "desc": "Podczas twojej tury wykonaj akcję „{HEAL} 1, na siebie”."
     },
     "gh-25": {
-        "name": "Jagged Sword",
-        "source": "Prosperity 3",
-        "desc": "During your melee attack, add {WOUND} to a single attack."
+        "name": "Ząbkowany Miecz",
+        "source": "Dobrobyt 3",
+        "desc": "Podczas twojego ataku wręcz dodaj {WOUND} dla twojego pojedynczego ataku."
     },
     "gh-26": {
-        "name": "Long Spear",
-        "source": "Prosperity 3",
-        "desc": "Turn a single-target melee attack into the following: {AOE.LINE_0_1_1}"
+        "name": "Długi Oszczep",
+        "source": "Dobrobyt 3",
+        "desc": "Podczas twojej akcji ataku wręcz w pojedynczy cel zamień ten atak na następujący: {AOE.LINE_0_1_1}"
     },
     "gh-27": {
-        "name": "Major Healing Potion",
-        "source": "Prosperity 3",
-        "desc": "During your turn, perform a “{HEAL} 5, self” action."
+        "name": "Większa Mikstura Leczenia",
+        "source": "Dobrobyt 3",
+        "desc": "Podczas twojej tury wykonaj akcję „{HEAL} 5, na siebie”."
     },
     "gh-28": {
-        "name": "Moon Earring",
-        "source": "Prosperity 3",
-        "desc": "During your turn, {REFRESH} all of your spent items."
+        "name": "Księżycowy Kolczyk",
+        "source": "Dobrobyt 3",
+        "desc": "Podczas twojej tury możesz odświeżyć {REFRESH} wszystkie wykorzystane przedmioty."
     },
     "gh-29": {
-        "name": "Comfortable Shoes",
-        "source": "Prosperity 4",
-        "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+        "name": "Wygodne Ciżmy",
+        "source": "Dobrobyt 4",
+        "desc": "Za każdym razem gdy użyjesz dolnej bazowej akcji  z karty zdolności, wykonaj akcję {MOVE} 3 zamiast  {MOVE} 2."
     },
     "gh-30": {
-        "name": "Studded Leather",
-        "source": "Prosperity 4",
-        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+        "name": "Ćwiekowana Zbroja",
+        "source": "Dobrobyt 4",
+        "desc": "Kiedy jesteś atakowany, atakujący otrzymuje Niekorzyść, a ty zyskujesz {SHIELD} 1 na ten atak."
     },
     "gh-31": {
-        "name": "Hawk Helm",
-        "source": "Prosperity 4",
-        "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
+        "name": "Hełm Jastrzębia",
+        "source": "Dobrobyt 4",
+        "desc": "Podczas twojego ataku dystansowego dodaj +1 do {RANGE} na całą twoją akcję ataku."
     },
     "gh-32": {
-        "name": "Tower Shield",
-        "source": "Prosperity 4",
-        "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
+        "name": "Ciężka Tarcza",
+        "source": "Dobrobyt 4",
+        "desc": "Kiedy otrzymujesz obrażenia z ataku zyskujesz {SHIELD} 2 na ten atak."
     },
     "gh-33": {
-        "name": "Volatile Bomb",
-        "source": "Prosperity 4",
-        "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+        "name": "Niestabilna Bomba",
+        "source": "Dobrobyt 4",
+        "desc": "Podczas twojej akcji ataku dystansowego w pojedynczy cel zamień ten atak na następujący: {AOE.CONE_1_1}"
     },
     "gh-34": {
-        "name": "Major Stamina Potion",
-        "source": "Prosperity 4",
-        "desc": "During your turn, {RECOVER} up to three of your discarded cards.",
-        "faq": "[Errata] The item should allow you to recover only two discarded cards. This is change in an upcoming expansion but may be used in the base game."
+        "name": "Większa Mikstura Wytrzymałości",
+        "source": "Dobrobyt 4",
+        "desc": "Podczas twojej tury {RECOVER} do trzech twoich odrzuconych kart.",
+        "faq": "[Errata] Przedmiot powinien umożliwiać odzyskanie tylko dwóch odrzuconych kart. Jest to zmiana w nadchodzącym rozszerzeniu, ale może być użyta w grze podstawowej."
     },
     "gh-35": {
-        "name": "Falcon Figurine",
-        "source": "Prosperity 4\n{SCENARIO 98} (Treasure #79)",
-        "desc": "Summon Jade Falcon ({FLYING})",
-        "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        "name": "Figurka Sokoła",
+        "source": "Dobrobyt 4\n{SCENARIO 98} (Skarb #79)",
+        "desc": "Przywołaj ({FLYING})",
+        "faq": "Karta jest traktowana jak trwały bonus, idzie w aktywny obszar, dopóki przywołaniec nie zostanie zabity lub karta nie zostanie usunięta (usuwając przywołańca i zużywając przedmiot). Jeśli karta zostanie odświeżona i istnieje aktywny przywołaniec z karty, aktywny przywołaniec znika."
     },
     "gh-36": {
-        "name": "Boots of Dashing",
-        "source": "Prosperity 5",
-        "desc": "During your movement, add +3 {MOVE} to the movement."
+        "name": "Buty Żwawości",
+        "source": "Dobrobyt 5",
+        "desc": "Podczas poruszania się dodaj +3 do {MOVE} dla pojedynczego ruchu."
     },
     "gh-37": {
-        "name": "Robes of Evocation",
-        "source": "Prosperity 5",
-        "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        "name": "Szata Ewokacji",
+        "source": "Dobrobyt 5",
+        "desc": "Podczas twojego ataku {ANY_X}, aby dodać +1 do {ATTACK} dla całej twojej akcji ataku."
     },
     "gh-38": {
-        "name": "Heavy Basinet",
-        "source": "Prosperity 5",
-        "desc": "You are immune to {STUN} and {MUDDLE}. Add 2 {-1} to your attack modifier deck."
+        "name": "Ciężki Basinet",
+        "source": "Dobrobyt 5",
+        "desc": "Posiadasz odporność na {STUN} i {MUDDLE}. Dodaj 2 {-1} do swojej talii modyfikatorów ataku."
     },
     "gh-39": {
-        "name": "Hooked Chain",
-        "source": "Prosperity 5",
-        "desc": "During your ranged attack, add {PULL} 2 to the entire Attack action."
+        "name": "Łańcuch z Hakiem",
+        "source": "Dobrobyt 5",
+        "desc": "Podczas twojego ataku dystansowego, dodaj {PULL} 2 dla całej akcji ataku."
     },
     "gh-40": {
-        "name": "Versatile Dagger",
-        "source": "Prosperity 5",
-        "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 3 action instead of an {ATTACK} 2 action."
+        "name": "Uniwersalny Sztylet",
+        "source": "Dobrobyt 5",
+        "desc": "Za każdym razem gdy użyjesz górnej bazowej akcji z karty zdolności, wykonaj akcję {ATTACK} 3 zamiast {ATTACK} 2."
     },
     "gh-41": {
-        "name": "Major Power Potion",
-        "source": "Prosperity 5\n{SCENARIO 105} (Treasure #83)",
-        "desc": "During your attack, add +2 {ATTACK} to your entire Attack action."
+        "name": "Większa Mikstura Mocy",
+        "source": "Dobrobyt 5\n{SCENARIO 105} (Skarb #83)",
+        "desc": "Podczas twojego ataku dodaj +2 {ATTACK} dla całej twojej akcji ataku."
     },
     "gh-42": {
-        "name": "Ring of Haste",
-        "source": "Prosperity 5",
-        "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of the card."
+        "name": "Pierścień Pośpiechu",
+        "source": "Dobrobyt 5",
+        "desc": "Na końcu twojej tury zagraj jedną kartę z ręki i natychmiast wykonaj dolną akcję z tej karty."
     },
     "gh-43": {
-        "name": "Boots of Quickness",
-        "source": "Prosperity 6",
-        "desc": "At the beginning of a round, after all ability cards have been revealed, increase or decrease your leading initiative value by 20."
+        "name": "Buty Inicjatywy",
+        "source": "Dobrobyt 6",
+        "desc": "Na początku rundy, po odsłonięciu wszystkich kart zdolności, podnieś lub obniż wartość inicjatywy twojej karty wiodącej o 20."
     },
     "gh-44": {
-        "name": "Splintmail",
-        "source": "Prosperity 6",
-        "desc": "On the next four sources of damage to you from attacks, gain {SHIELD} 1. Add 4 {-1} to your attack modifier deck."
+        "name": "Zbroja Karacenowa",
+        "source": "Dobrobyt 6",
+        "desc": "W czterech następnych przypadkach otrzymania obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1. Dodaj 4 {-1} do swojej talii modyfikatorów ataku."
     },
     "gh-45": {
-        "name": "Pendant of Dark Pacts",
-        "source": "Prosperity 6",
-        "desc": "During your turn, {REFRESH} two of your consumed {SMALL-ITEM} items. Gain {CURSE}.",
-        "faq": "The perk that ignores item effects does not prevent you from being cursed."
+        "name": "Wisior Mrocznych Paktów",
+        "source": "Dobrobyt 6",
+        "desc": "Podczas twojej tury możesz {REFRESH} dwa zużyte przedmioty {SMALL-ITEM}. Zyskujesz {CURSE}.",
+        "faq": "Profit, który ignoruje efekty przedmiotów, nie chroni przed byciem przeklętym."
     },
     "gh-46": {
-        "name": "Spiked Shield",
-        "source": "Prosperity 6",
-        "desc": "When damaged by an attack, gain {SHIELD} 1 and {RETALIATE} 2 for the attack."
+        "name": "Kolczasta Tarcza",
+        "source": "Dobrobyt 6",
+        "desc": "Kiedy otrzymujesz obrażenia z ataku, zyskujesz {SHIELD} 1 i {RETALIATE} 2 na ten atak."
     },
     "gh-47": {
-        "name": "Reaping Scythe",
-        "source": "Prosperity 6",
-        "desc": "During your single-target melee attack action, turn the attack into the following:  {AOE.CLEAVE_0_1}"
+        "name": "Kosa Bojowa",
+        "source": "Dobrobyt 6",
+        "desc": "Podczas twojej akcji ataku wręcz w pojedynczy cel zamień ten atak na następujący: {AOE.CLEAVE_0_1}"
     },
     "gh-48": {
-        "name": "Major Mana Potion",
-        "source": "Prosperity 6\nReward from {SCENARIO 104}",
-        "desc": "During your turn, create any two elements. {ANY} {ANY}"
+        "name": "Większa Mikstura Many",
+        "source": "Dobrobyt 6\nNagroda w {SCENARIO 104}",
+        "desc": "Podczas twojej tury stwórz dwa dowolne żywioły. {ANY} {ANY}"
     },
     "gh-49": {
-        "name": "Sun Earring",
-        "source": "Prosperity 6",
-        "desc": "During your turn, {REFRESH} all of your spent items and {HEAL} 3 damage."
+        "name": "Kolczyk Słońca",
+        "source": "Dobrobyt 6",
+        "desc": "Podczas twojej tury możesz {REFRESH} wszystkie twoje wykorzystane przedmioty oraz wykonać akcję „{HEAL} 3, na siebie”."
     },
     "gh-50": {
-        "name": "Steel Sabatons",
-        "source": "Prosperity 7",
-        "desc": "If you move 1 or fewer hexes on your turn, gain {SHIELD} 1 for the round. Add 2 {-1} to your attack modifier deck."
+        "name": "Stalowe Sabatony",
+        "source": "Dobrobyt 7",
+        "desc": "Jeśli w twojej turze poruszysz się o 1 pole lub mniej, zyskujesz {SHIELD} 1 na tę rundę. Dodaj 2 {-1} do swojej talii modyfikatorów ataku."
     },
     "gh-51": {
-        "name": "Shadow Armor",
-        "source": "Prosperity 7",
-        "desc": "When you are damaged by an attack, suffer no damage instead."
+        "name": "Zbroja Cienia",
+        "source": "Dobrobyt 7",
+        "desc": "Kiedy otrzymasz obrażenia z ataku wymierzonego w ciebie, zignoruj je."
     },
     "gh-52": {
-        "name": "Protective Charm",
-        "source": "Prosperity 7\nReward from {SCENARIO 109}",
-        "desc": "You are immune to {POISON} and {WOUND}."
+        "name": "Talizman Ochrony",
+        "source": "Dobrobyt 7\nNagroda w {SCENARIO 109}",
+        "desc": "Posiadasz odporność na {POISON} i {WOUND}."
     },
     "gh-53": {
-        "name": "Black Knife",
-        "source": "Prosperity 7",
-        "desc": "During your melee attack, add {CURSE} to a single attack."
+        "name": "Czarny Sztylet",
+        "source": "Dobrobyt 7",
+        "desc": "Podczas twojego ataku wręcz dodaj {CURSE} dla twojego pojedynczego ataku."
     },
     "gh-54": {
-        "name": "Staff of Eminence",
-        "source": "Prosperity 7",
-        "desc": "During your ranged attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        "name": "Kostur Wyniosłości",
+        "source": "Dobrobyt 7",
+        "desc": "Podczas twojego ataku dystansowego {ANY_X}, aby dodać +1 do {ATTACK} dla całej akcji ataku."
     },
     "gh-55": {
-        "name": "Super Healing Potion",
-        "source": "Prosperity 7",
-        "desc": "During your turn, perform a “{HEAL} 7, self” action."
+        "name": "Super Mikstura Leczenia",
+        "source": "Dobrobyt 7",
+        "desc": "Podczas twojej tury wykonaj akcję  „{HEAL} 7, na siebie”."
     },
     "gh-56": {
-        "name": "Ring of Brutality",
-        "source": "Prosperity 7",
-        "desc": "At the end of your turn, play one card from your hand and immediately perform the top action of the card."
+        "name": "Pierścień Brutalności",
+        "source": "Dobrobyt 7",
+        "desc": "Na końcu twojej tury zagraj jedną kartę z ręki i natychmiast wykonaj górną akcję z tej karty."
     },
     "gh-57": {
-        "name": "Serene Sandals",
-        "source": "Prosperity 8",
-        "desc": "Whenever you use the default bottom of an ability card perform a {MOVE} 4 action instead of a {MOVE} 2 action."
+        "name": "Letnie Sandały",
+        "source": "Dobrobyt 8",
+        "desc": "Za każdym razem gdy użyjesz dolnej bazowej akcji z karty zdolności, wykonaj akcję {MOVE} 4 zamiast {MOVE} 2."
     },
     "gh-58": {
-        "name": "Cloak of Phasing",
-        "source": "Prosperity 8",
-        "desc": "Gain {FLYING}. While occupying an obstacle hex, you are considered {INVISIBLE} and cannot attack"
+        "name": "Peleryna Fazowania",
+        "source": "Dobrobyt 8",
+        "desc": "Zyskujesz {FLYING}. Kiedy zajmujesz pole z przeszkodą, jesteś {INVISIBLE} i nie możesz atakować."
     },
     "gh-59": {
-        "name": "Telescopic Lens",
-        "source": "Prosperity 8\nOption from {SCENARIO 100}",
-        "desc": "During your ranged attack, add +2 {RANGE} to your entire Attack action"
+        "name": "Monokular Teleskopowy",
+        "source": "Dobrobyt 8\nOption from {SCENARIO 100}",
+        "desc": "Podczas twojego ataku dystansowego, dodaj +2 do {RANGE} dla całej twojej akcji ataku."
     },
     "gh-60": {
-        "name": "Unstable Explosives",
-        "source": "Prosperity 8",
-        "desc": "Turn a single target ranged attack into the following: {AOE.CUBE_2_2}. All allies in the attack area suffer 3 damage."
+        "name": "Niestabilne Materiały Wybuchowe",
+        "source": "Dobrobyt 8",
+        "desc": "Podczas twojej akcji ataku dystansowego w pojedynczy cel zamień ten atak na następujący: {AOE.CUBE_2_2}. Wszyscy sojusznicy znajdujący się na obszarze rażenia otrzymują 3 obrażenia."
     },
     "gh-61": {
-        "name": "Wall Shield",
-        "source": "Prosperity 8",
-        "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
+        "name": "Pawęż",
+        "source": "Dobrobyt 8",
+        "desc": "Kiedy otrzymujesz obrażenia z ataku zyskujesz {SHIELD} 4 na ten atak."
     },
     "gh-62": {
-        "name": "Doom Powder",
-        "source": "Prosperity 8",
-        "desc": "During your attack, add {STUN}, {POISON}, and {CURSE} to a single attack."
+        "name": "Proch Zguby",
+        "source": "Dobrobyt 8",
+        "desc": "Podczas twojego ataku dodaj {STUN}, {POISON} oraz {CURSE} dla pojedyńczego ataku."
     },
     "gh-63": {
-        "name": "Lucky Eye",
-        "source": "Prosperity 8",
-        "desc": "During your turn, {STRENGTHEN} yourself and all adjacent allies."
+        "name": "Szczęśliwe Oko",
+        "source": "Dobrobyt 8",
+        "desc": "Podczas twojej tury {STRENGTHEN} siebie oraz wszystkich sąsiadujących sojuszników."
     },
     "gh-64": {
-        "name": "Boots of Sprinting",
-        "source": "Prosperity 9",
-        "desc": "During your movement, add +4 {MOVE} to the movement."
+        "name": "Buty Sprintu",
+        "source": "Dobrobyt 9",
+        "desc": "Podczas poruszania się dodaj +4 do {MOVE} dla pojedynczego ruchu."
     },
     "gh-65": {
-        "name": "Platemail",
-        "source": "Prosperity 9",
-        "desc": "On the next five sources of damage to you from attacks, gain {SHIELD} 1. Add 5 {-1} to your attack modifier deck."
+        "name": "Zbroja Płytowa",
+        "source": "Dobrobyt 9",
+        "desc": "W pięciu następnych przypadkach otrzymania obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1. Dodaj 5 {-1} do swojej talii modyfikatorów ataku."
     },
     "gh-66": {
-        "name": "Mask of Terror",
-        "source": "Prosperity 9\n{SCENARIO 110} (Treasure #84)",
-        "desc": "During your melee attack, add {PUSH} 1."
+        "name": "Maska Grozy",
+        "source": "Dobrobyt 9\n{SCENARIO 110} (Skarb #84)",
+        "desc": "Podczas twojego ataku wręcz dodaj {PUSH} 1."
     },
     "gh-67": {
-        "name": "Balanced Blade",
-        "source": "Prosperity 9",
-        "desc": "Whenever you use the default top of an ability card, perform an {ATTACK} 4 instead of an {ATTACK} 2 action."
+        "name": "Wyważone Ostrze",
+        "source": "Dobrobyt 9",
+        "desc": "Za każdym razem gdy użyjesz górnej bazowej akcji z karty zdolności, wykonaj akcję {ATTACK} 4 zamiast {ATTACK} 2."
     },
     "gh-68": {
-        "name": "Halberd",
-        "source": "Prosperity 9\n{SCENARIO 111} (Treasure #92)\nSection 132 -> g106 “Strangler's Park” in book",
-        "desc": "During your single target melee attack, you can attack and single enemy within 2 hexes."
+        "name": "Halabarda",
+        "source": "Dobrobyt 9\n{SCENARIO 111} (Skarb #92)\nSection 132 -> g106 „Strangler's Park” in book",
+        "desc": "Podczas twojej akcji ataku wręcz w pojedynczy cel, możesz zaatakować dowolnego pojedynczego wroga w zasięgu 2 pól."
     },
     "gh-69": {
-        "name": "Star Earring",
-        "source": "Prosperity 9",
-        "desc": "During your turn, {REFRESH} all of your spent items, {HEAL} 3 damage, and {RECOVER} up to two of your discarded cards."
+        "name": "Gwiezdny Kolczyk",
+        "source": "Dobrobyt 9",
+        "desc": "Podczas twojej tury {REFRESH} wszystkie twoje wykorzystane przedmioty, wykonaj akcję „{HEAL} 3, na siebie” oraz {RECOVER} do dwóch twoich odrzuconych kart."
     },
     "gh-70": {
-        "name": "Second Chance Ring",
-        "source": "Prosperity 9\nFC Challenge Scenario, Rift Card 12 (Treasure #89)\nSection 103 -> 84 “Gateway to the Firmament” in book",
-        "desc": "At the end of your turn, play two cards from your hand and perform an additional turn this round based on your new leading initiative (which must be later than your previous initiative)."
+        "name": "Pierścień Drugiej Szansy",
+        "source": "Dobrobyt 9\nFC Challenge Scenario, Rift Card 12 (Skarb #89)\nSection 103 -> 84 „Gateway to the Firmament” in book",
+        "desc": "Na końcu twojej tury zagraj dwie karty z ręki i wykonaj dodatkową turę w tej rundzie, w oparciu o nową wartość inicjatywy z użytej wiodącej karty (która musi być późniejsza niż obecna wartość początkowa)."
     },
     "gh-71": {
-        "name": "Boots of Levitation",
-        "source": "Random Item",
-        "desc": "Gain {FLYING}"
+        "name": "Buty Lewitacji",
+        "source": "Losowy przedmiot",
+        "desc": "Zyskujesz {FLYING}."
     },
     "gh-72": {
-        "name": "Shoes of Happiness",
-        "source": "Random Item",
-        "desc": "If you move 6 or more hexes on your turn, gain {exp1}."
+        "name": "Buty Szczęścia",
+        "source": "Losowy przedmiot",
+        "desc": "Jeśli poruszysz się o 6 lub więcej pól w twojej turze zyskujesz {exp1}."
     },
     "gh-73": {
-        "name": "Blinking Cape",
-        "source": "Random Item",
-        "desc": "During your turn, perform a “{MOVE} 4, {JUMP}” action"
+        "name": "Kaptur Teleportacji",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury wykonaj {MOVE} 4, ze {JUMP}”."
     },
     "gh-74": {
-        "name": "Swordedge Armor",
-        "source": "Random Item",
-        "desc": "On the next three sources of damage from attacks targeting you, gain {SHIELD} 1, {RETALIATE} 1. Add 4 {-1} to your attack modifier deck."
+        "name": "Zbroja Ostrej Klingi",
+        "source": "Losowy przedmiot",
+        "desc": "W trzech następnych przypadkach otrzymania obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1, {RETALIATE} 1. Dodaj 4 {-1} do swojej talii modyfikatorów ataku."
     },
     "gh-75": {
-        "name": "Circlet of Elements",
-        "source": "Random Item",
-        "desc": "During your turn, {ANY_X} to create any element. {ANY}"
+        "name": "Diadem Żywiołów",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury {ANY_X}, aby stworzyć dowolny żywioł. {ANY}"
     },
     "gh-76": {
-        "name": "Chain Hood",
-        "source": "Random Item",
-        "desc": "While you are adjacent to three or more monsters, gain {SHIELD} 1. Add 1 {-1} to your attack modifier deck."
+        "name": "Kolczy Czepiec",
+        "source": "Losowy przedmiot",
+        "desc": "Kiedy sąsiadujesz z trzema lub więcej wrogami, zyskujesz {SHIELD} 1. Dodaj 1 {-1} do swojej talii modyfikatorów ataku."
     },
     "gh-77": {
-        "name": "Frigid Blade",
-        "source": "Random Item",
-        "desc": "During your melee attack, {ICE_X} to add +2 {ATTACK} to a single attack."
+        "name": "Ostrze Chłodu",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojego ataku wręcz {ICE_X}, aby dodać +2 do {ATTACK} dla pojedynczego ataku."
     },
     "gh-78": {
-        "name": "Storm Blade",
-        "source": "Random Item",
-        "desc": "During your melee attack, {WIND_X} to add +2 {ATTACK} to a single attack."
+        "name": "Ostrze Burzy",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojego ataku wręcz {WIND_X}, aby dodać +2 do {ATTACK} dla pojedynczego ataku."
     },
     "gh-79": {
-        "name": "Inferno Blade",
-        "source": "Random Item",
-        "desc": "During your melee attack, {FIRE_X} to add +2 {ATTACK} to a single attack."
+        "name": "Ostrze Płomieni",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojego ataku wręcz {FIRE_X}, aby dodać +2 do {ATTACK} dla pojedynczego ataku."
     },
     "gh-80": {
-        "name": "Tremor Blade",
-        "source": "Random Item",
-        "desc": "During your melee attack, {EARTH_X} to add +2 {ATTACK} to a single attack."
+        "name": "Ostrze Wstrząsów",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojego ataku wręcz {EARTH_X}, aby dodać +2 do {ATTACK} dla pojedynczego ataku."
     },
     "gh-81": {
-        "name": "Brilliant Blade",
-        "source": "Random Item",
-        "desc": "During your melee attack, {LIGHT_X} to add +2 {ATTACK} to a single attack."
+        "name": "Ostrze Błyskotliwości",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojego ataku wręcz {LIGHT_X}, aby dodać +2 do {ATTACK} dla pojedynczego ataku."
     },
     "gh-82": {
-        "name": "Night Blade",
-        "source": "Random Item",
-        "desc": "During your melee attack, {DARK_X} to add +2 {ATTACK} to a single attack."
+        "name": "Ostrze Nocy",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojego ataku wręcz {DARK_X}, aby dodać +2 do {ATTACK} dla pojedynczego ataku."
     },
     "gh-83": {
-        "name": "Wand of Frost",
-        "source": "Random Item",
-        "desc": "During your turn, create Ice. {ICE}"
+        "name": "Różdżka Chłodu",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury stwórz Lód. {ICE}"
     },
     "gh-84": {
-        "name": "Wand of Storms",
-        "source": "Random Item",
-        "desc": "During your turn, create Wind. {WIND}"
+        "name": "Różdżka Burzy",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury stwórz Powietrze. {WIND}"
     },
     "gh-85": {
-        "name": "Wand of Infernos",
-        "source": "Random Item",
-        "desc": "During your turn, create Fire. {FIRE}"
+        "name": "Różdżka Płomieni",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury stwórz Ogień. {FIRE}"
     },
     "gh-86": {
-        "name": "Wand of Tremors",
-        "source": "Random Item",
-        "desc": "During your turn, create Earth. {EARTH}"
+        "name": "Różdżka Wstrząsów",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury stwórz Ziemię. {EARTH}"
     },
     "gh-87": {
-        "name": "Wand of Brilliance",
-        "source": "Random Item",
-        "desc": "During your turn, create Light. {LIGHT}"
+        "name": "Różdżka Błyskotliwości",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury stwórz Światło. {LIGHT}"
     },
     "gh-88": {
-        "name": "Wand of Darkness",
-        "source": "Random Item",
-        "desc": "During your turn, create Dark. {DARK}"
+        "name": "Różdżka Ciemności",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury stwórz Ciemność. {DARK}"
     },
     "gh-89": {
-        "name": "Minor Cure Potion",
-        "source": "Random Item",
-        "desc": "During your turn, remove one negative condition on yourself. This can be used while you have {STUN}."
+        "name": "Mniejsza Mikstura Zdrowia",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury usuń z siebie jeden negatywny stan. Mikstura może być użyta, nawet jeśli jesteś pod wpływem {STUN}."
     },
     "gh-90": {
-        "name": "Major Cure Potion",
-        "source": "Random Item\n{SCENARIO 102} (Treasure #77)",
-        "desc": "During your turn, remove all negative conditions on yourself. This can be used while you have {STUN}."
+        "name": "Większa Mikstura Zdrowia",
+        "source": "Losowy przedmiot\n{SCENARIO 102} (Skarb #77)",
+        "desc": "Podczas twojej tury usuń z siebie wszystkie negatywne stany. Mikstura może być użyta, nawet jeśli jesteś pod wpływem {STUN}."
     },
     "gh-91": {
-        "name": "Steel Ring",
-        "source": "Random Item",
-        "desc": "When damaged by an attack targeting you, gain {SHIELD} 4 for the attack."
+        "name": "Stalowy Pierścień",
+        "source": "Losowy przedmiot",
+        "desc": "Kiedy otrzymujesz obrażenia z ataku, którego jesteś celem zyskujesz {SHIELD} 4 na ten atak."
     },
     "gh-92": {
-        "name": "Dampening Ring",
-        "source": "Random Item",
-        "desc": "Before an enemy would consume an element, consume that element instead for no effect"
+        "name": "Pierścień Rozmycia",
+        "source": "Losowy przedmiot",
+        "desc": "Zanim przeciwnik wykorzysta żywioł, zużyj ten żywioł, aby nie miał efektu."
     },
     "gh-93": {
-        "name": "Scroll of Power",
-        "source": "Random Item",
-        "desc": "During an ally's attack, add +1 {ATTACK} to their entire attack action"
+        "name": "Zwój Mocy",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas ataku twojego sojusznika dodaj +1 do {ATTACK} dla całej jego akcji ataku."
     },
     "gh-94": {
-        "name": "Scroll of Healing",
-        "source": "Random Item",
-        "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action"
+        "name": "Zwój Leczenia",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury wykonaj akcję „{HEAL} 3, {RANGE} 5”."
     },
     "gh-95": {
-        "name": "Scroll of Stamina",
-        "source": "Random Item",
-        "desc": "During your turn, an ally within {RANGE} 5 may {RECOVER} up to two of their discarded cards"
+        "name": "Zwój Wytrzymałości",
+        "source": "Losowy przedmiot",
+        "desc": "Podczas twojej tury sojusznik w {RANGE} 5 może {RECOVER} do dwóch swoich odrzuconych kart."
     },
     "gh-96": {
-        "name": "Rocket Boots",
-        "source": "{SCENARIO 66} (Treasure #36)",
-        "desc": "During your movement, add +3 {MOVE} and {JUMP} to a single movement"
+        "name": "Rakietowe Buty",
+        "source": "{SCENARIO 66} (Skarb #36)",
+        "desc": "Podczas poruszania się dodaj +3 do {MOVE} oraz {JUMP} dla pojedynczego ruchu."
     },
     "gh-97": {
-        "name": "Endurance Footwraps",
-        "source": "{SCENARIO 38} (Treasure #29)",
-        "desc": "If you move 4 or more hexes on your turn, perform a “{HEAL} 1, Self” action."
+        "name": "Onuce Wytrzymałości",
+        "source": "{SCENARIO 38} (Skarb #29)",
+        "desc": "Jeśli w twojej turze poruszysz się o cztery lub więcej pola, wykonaj akcję „{HEAL} 1, na siebie”."
     },
     "gh-98": {
-        "name": "Drakescale Boots",
-        "source": "{SCENARIO 43} (Treasure #35)",
-        "desc": "You are unaffected by difficult and hazardous terrain."
+        "name": "Buty Smoczej Łuski",
+        "source": "{SCENARIO 43} (Skarb #35)",
+        "desc": "Trudny i niebezpieczny teren nie wywiera na ciebie wpływu."
     },
     "gh-99": {
-        "name": "Magma Waders",
-        "source": "{SCENARIO 63} (Treasure #12)",
-        "desc": "Ignore the damaging effects of hazardous terrain and perform a “{HEAL} 2, Self” action on any turn in which you have entered a hazardous terrain hex."
+        "name": "Lawoczłapy",
+        "source": "{SCENARIO 63} (Skarb #12)",
+        "desc": "Ignoruj szkodliwe efekty niebezpiecznego terenu i wykonaj akcję: „{HEAL} 2, na siebie” kiedy na taki wejdziesz."
     },
     "gh-100": {
-        "name": "Robes of Summoning",
-        "source": "{SCENARIO 31} (Treasure #69)",
-        "desc": "During your turn, perform a “{HEAL} 2, target any summoned ally” action."
+        "name": "Szata Przywołania",
+        "source": "{SCENARIO 31} (Skarb #69)",
+        "desc": "Podczas twojej tury wykonaj „{HEAL} 2”, której celem jest dowolny przywołany sojusznik."
     },
     "gh-101": {
-        "name": "Second Skin",
-        "source": "{SCENARIO 06} (Treasure #50)",
-        "desc": "Remove two {-1} from your attack modifier deck."
+        "name": "Druga Skóra",
+        "source": "{SCENARIO 06} (Skarb #50)",
+        "desc": "Usuń dwie kart {-1} z twojej talii modyfikatorów ataku."
     },
     "gh-102": {
-        "name": "Sacrificial Robes",
+        "name": "Szata Ofiarna",
         "source": "City Event 40",
-        "desc": "During your ranged attack, suffer 3 damage to add +1 {ATTACK} to the entire Attack action."
+        "desc": "Podczas twojego ataku dystansowego przyjmij 3 obrażenia, aby dodać +1 do {ATTACK} dla całej akcji ataku."
     },
     "gh-103": {
-        "name": "Drakescale Armor",
-        "source": "{SCENARIO 34} (Treasure #23)",
-        "desc": "You are immune to {POISON} and {WOUND}."
+        "name": "Zbroja Smoczej Łuski",
+        "source": "{SCENARIO 34} (Skarb #23)",
+        "desc": "Posiadasz odporność na {POISON} i {WOUND}."
     },
     "gh-104": {
-        "name": "Steam Armor",
-        "source": "{SCENARIO 40} (Treasure #47)",
-        "desc": "On the next five sources of damage from attacks targeting you, gain {SHIELD} 1."
+        "name": "Zbroja Parowa",
+        "source": "{SCENARIO 40} (Skarb #47)",
+        "desc": "W pięciu następnych przypadkach otrzymywania obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1."
     },
     "gh-105": {
-        "name": "Flea-Bitten Shawl",
+        "name": "Zapchlona Derka",
         "source": "City Event 30",
-        "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
-        "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
+        "desc": "Gdy wrogowie skupiają się na celu, traktują cię, jakby twoja inicjatywa wynosiła 99.",
+        "faq": "Przedmiot nie zmienia inicjatywy postaci, więc nie wpływa na inicjatywę ich przywołańców. Zmienia jedynie to, jak potwory traktują postać podczas oceny skupienia."
     },
     "gh-106": {
-        "name": "Necklace of Teeth",
+        "name": "Zębowy Naszyjnik",
         "source": "Road Event 05",
-        "desc": "Any time you kill an enemy during your turn, perform a “{HEAL} 1, Self” action."
+        "desc": "Za każdym razem gdy zabijesz wroga podczas twojej tury, wykonaj akcję „{HEAL} 1, na siebie”."
     },
     "gh-107": {
-        "name": "Horned Helm",
-        "source": "{SCENARIO 03} (Treasure #65)",
-        "desc": "After moving 4 or more hexes on your turn, add +1 {ATTACK} to your next melee attack this turn.",
-        "faq": "This bonus must be used on the turn it is gained. It cannot be saved. If you perform multiple move abilities, you may use the item as long as you have moved a total of at least 4 hexes. The item can only be used once during your turn even if you move 4 hexes multiple times during your turn."
+        "name": "Rogaty Hełm",
+        "source": "{SCENARIO 03} (Skarb #65)",
+        "desc": "Po przejściu 4 lub więcej pól dodaj +1 do {ATTACK} dla twojego następnego ataku wręcz w tej turze.",
+        "faq": "Ten bonus musi być wykorzystany w turze, w której został zdobyty. Nie można go zachować. Jeśli wykonujesz umiejętność wielokrotnego ruchu, możesz używać tego przedmiotu tak długo, jak długo poruszasz się łącznie o co najmniej 4 heksy. Przedmiot może być użyty tylko raz podczas twojej tury, nawet jeśli poruszysz się o 4 heksy wiele razy podczas twojej tury."
     },
     "gh-108": {
-        "name": "Drakescale Helm",
-        "source": "{SCENARIO 25} (Treasure #58)",
-        "desc": "Whenever you gain {MUDDLE}, gain {STRENGTHEN} instead."
+        "name": "Hełm Smoczej Łuski",
+        "source": "{SCENARIO 25} (Skarb #58)",
+        "desc": "Za każdym razem gdy masz zyskać {MUDDLE} zyskujesz {STRENGTHEN}."
     },
     "gh-109": {
-        "name": "Thief's Hood",
+        "name": "Złodziejski Kaptur",
         "source": "City Event 62",
-        "desc": "During your {LOOT 1} ability, perform a {LOOT 2} ability instead."
+        "desc": "Wykonując akcję {LOOT 1}, wykonaj zamiast tego {LOOT 2}."
     },
     "gh-110": {
-        "name": "Helm of the Mountain",
-        "source": "{SCENARIO 82} (Treasure #62)",
-        "desc": "When attacked, if {EARTH} is Strong, {IMMOBILIZE} the attacker."
+        "name": "Hełm z Góry",
+        "source": "{SCENARIO 82} (Skarb #62)",
+        "desc": "Kiedy jesteś atakowany i żywioł {EARTH} jest silny. {IMMOBILIZE} atakującego."
     },
     "gh-111": {
-        "name": "Wave Crest",
-        "source": "{SCENARIO 64} (Treasure #09)",
-        "desc": "When attacked, if {ICE} is Strong, perform a “{PUSH} 2” action targeting the attacker."
+        "name": "Kolia Fal",
+        "source": "{SCENARIO 64} (Skarb #09)",
+        "desc": "Kiedy jesteś atakowany i żywioł {ICE} jest silny, wykonaj {PUSH} 2 którego celem jest atakujący."
     },
     "gh-112": {
-        "name": "Ancient Drill",
-        "source": "Reward From {SCENARIO 65}\nOption from {SCENARIO 100}",
-        "desc": "During your melee attack, add +2 {ATTACK} and {PIERCE} 2 to the entire Attack action"
+        "name": "Pradawne Wiertło",
+        "source": "Nagroda w {SCENARIO 65}\nOption from {SCENARIO 100}",
+        "desc": "Podczas twojego ataku wręcz dodaj +2 do {ATTACK} oraz {PIERCE} 2 dla całej akcji ataku."
     },
     "gh-113": {
-        "name": "Skullbane Axe",
-        "source": "Reward From {SCENARIO 11}\nReward From {SCENARIO 12}",
-        "desc": "During your melee attack targeting a Living Corpse, Living Spirit, or Living Bones, add +5 Attack to a single attack."
+        "name": "Topór Czaszkozguby",
+        "source": "Nagroda w {SCENARIO 11}\nNagroda w {SCENARIO 12}",
+        "desc": "Podczas ataku wręcz wymierzonego w Ożywione Zwłoki, Ożywione Dusze lub Ożywione Kości, dodaj +5 do {ATTACK} dla pojedynczego ataku."
     },
     "gh-114": {
-        "name": "Staff of Xorn",
-        "source": "Reward from {SCENARIO 53}",
-        "desc": "During your ranged attack, add {POISON} and {MUDDLE} to the entire Attack action"
+        "name": "Kostur Xorna",
+        "source": "Nagroda w {SCENARIO 53}",
+        "desc": "Podczas ataku dystansowego dodaj {POISON} i {MUDDLE} dla całej akcji ataku."
     },
     "gh-115": {
-        "name": "Mountain Hammer",
-        "source": "{SCENARIO 82} (Treasure #62)",
-        "desc": "Summon Warrior Spirit",
-        "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        "name": "Górski Młot",
+        "source": "{SCENARIO 82} (Skarb #62)",
+        "desc": "Przywołaj Ducha Wojownika",
+        "faq": "Karta jest traktowana jak trwały bonus, idzie w aktywny obszar, dopóki przywołaniec nie zostanie zabity lub karta nie zostanie usunięta (usuwając przywołańca i zużywając przedmiot). Jeśli karta zostanie odświeżona i istnieje aktywny przywołaniec z karty, aktywny przywołaniec znika."
     },
     "gh-116": {
-        "name": "Fueled Falchion",
-        "source": "{SCENARIO 23} (Treasure #72)",
-        "desc": "During your single-target melee attack, the target and all enemies adjacent to the target suffer 1 damage"
+        "name": "Płomienny Falcjon",
+        "source": "{SCENARIO 23} (Skarb #72)",
+        "desc": "Podczas twojej akcji ataku wręcz w pojedynczy cel, ten cel oraz wszyscy sąsiadujący z nim wrogowie otrzymują 1 obrażenie."
     },
     "gh-117": {
-        "name": "Bloody Axe",
+        "name": "Krwawy Topór",
         "source": "City Event 53\nRoad Event 53",
-        "desc": "During your melee attack, suffer 2 damage to add +1 {ATTACK} to the entire Attack action."
+        "desc": "Podczas twojego ataku wręcz przyjmij 2 obrażenia, aby dodać +1 do {ATTACK} na całą akcję ataku."
     },
     "gh-118": {
-        "name": "Staff of Elements",
+        "name": "Kostur Żywiołów",
         "source": "City Event 57",
-        "desc": "During your turn, create any element. {ANY}"
+        "desc": "Podczas twojej tury stwórz dowolny żywioł. {ANY}"
     },
     "gh-119": {
-        "name": "Skull of Hatred",
-        "source": "Reward From {SCENARIO 95}",
-        "desc": "During your turn, {CURSE} all adjacent enemies."
+        "name": "Czaszka Nienawiści",
+        "source": "Nagroda w {SCENARIO 95}",
+        "desc": "Podczas twojej tury rzuć {CURSE} na wszystkich sąsiadujących wrogów."
     },
     "gh-120": {
-        "name": "Staff of Summoning",
-        "source": "Reward From {SCENARIO 88}",
-        "desc": "During your turn, a summoned ally within {RANGE} 3 performs a “{MOVE} 3” action with you controlling the action."
+        "name": "Kostur Przywołania",
+        "source": "Nagroda w {SCENARIO 88}",
+        "desc": "Podczas twojej tury przywołany sojusznik w {RANGE} 3 wykonuje kontrolowaną przez ciebie akcję „{MOVE} 3”."
     },
     "gh-121": {
-        "name": "Orb of Dawn",
-        "source": "Reward From {SCENARIO 85}",
-        "desc": "During your turn, {DARK_X} to create Light. {LIGHT}"
+        "name": "Kula Brzasku",
+        "source": "Nagroda w {SCENARIO 85}",
+        "desc": "Podczas twojej tury {DARK_X}, aby stworzyć światło. {LIGHT}"
     },
     "gh-122": {
-        "name": "Orb of Twilight",
-        "source": "{SCENARIO 89} (Treasure #27)",
-        "desc": "During your turn, {LIGHT_X} to create Dark. {DARK}"
+        "name": "Kula Zmierzchu",
+        "source": "{SCENARIO 89} (Skarb #27)",
+        "desc": "Podczas twojej tury {LIGHT_X}, aby stworzyć ciemność. {DARK}"
     },
     "gh-123": {
-        "name": "Ring of Skulls",
-        "source": "{SCENARIO 04} (Treasure #38)",
-        "desc": "Summon Skeleton",
-        "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        "name": "Pierścień Czaszek",
+        "source": "{SCENARIO 04} (Skarb #38)",
+        "desc": "Przywołaj Szkielet",
+        "faq": "Karta jest traktowana jak trwały bonus, idzie w aktywny obszar, dopóki przywołaniec nie zostanie zabity lub karta nie zostanie usunięta (usuwając przywołańca i zużywając przedmiot). Jeśli karta zostanie odświeżona i istnieje aktywny przywołaniec z karty, aktywny przywołaniec znika."
     },
     "gh-124": {
-        "name": "Doomed Compass",
-        "source": "{SCENARIO 93} (Treasure #54)",
-        "desc": "During your turn, force an enemy within {RANGE} 5 to perform a “{MOVE} 2” action with you controlling the action."
+        "name": "Przeklęty Kompas",
+        "source": "{SCENARIO 93} (Skarb #54)",
+        "desc": "Podczas twojej tury zmuś wroga w {RANGE} 5, aby wykonał akcję „{MOVE} 2”. Ty kontrolujesz tę akcję."
     },
     "gh-125": {
-        "name": "Curious Gear",
+        "name": "Osobliwa Zębatka",
         "source": "City Event 03\nOption from {SCENARIO 100}",
-        "desc": "During your turn, disarm all traps within {RANGE} 2."
+        "desc": "Podczas twojej tury, rozbrój wszystkie pułapki w {RANGE} 2."
     },
     "gh-126": {
-        "name": "Remote Spider",
+        "name": "Mechaniczny Pająk",
         "source": "City Event 43\nOption from {SCENARIO 100}",
-        "desc": "During your turn, {POISON} all adjacent enemies."
+        "desc": "Podczas twojej tury {POISON} wszystkich sąsiadujących wrogów."
     },
     "gh-127": {
-        "name": "Giant Remote Spider",
+        "name": "Wielki Mechaniczny Pająk",
         "source": "City Event 61",
-        "desc": "During your turn, perform a {LOOT 1} action."
+        "desc": "Podczas twojej tury wykonaj akcję {LOOT 1}."
     },
     "gh-128": {
-        "name": "Black Censer",
-        "source": "Reward From {SCENARIO 90}",
-        "desc": "During your turn, {MUDDLE} all enemies with {RANGE} 2."
+        "name": "Czarna Kadzielnica",
+        "source": "Nagroda w {SCENARIO 90}",
+        "desc": "Podczas twojej tury wywołaj {MUDDLE} u wszystkich wrogów w {RANGE} 2."
     },
     "gh-129": {
-        "name": "Black Card",
+        "name": "Czarna Karta",
         "source": "Road Event 51",
-        "desc": "During your turn, place a character token on an adjacent normal or elite enemy. You add +1 {ATTACK} to all your attacks targeting this enemy."
+        "desc": "Podczas twojej tury umieść żeton postaci na sąsiadującym normalnym bądź elitarnym wrogu. Dodaj +1 do {ATTACK} dla wszystkich twoich ataków, których celem jest ten wróg."
     },
     "gh-130": {
-        "name": "Helix Ring",
-        "source": "{SCENARIO 81} (Treasure #68)",
-        "desc": "During your turn, {LIGHT_X} {DARK_X} to perform a “{HEAL} 25, Self” action"
+        "name": "Pierścień Spirali",
+        "source": "{SCENARIO 81} (Skarb #68)",
+        "desc": "Podczas twojej tury {LIGHT_X} {DARK_X}, aby wykonać akcję „{HEAL} 25, na siebie”."
     },
     "gh-131": {
-        "name": "Heart of the Betrayer",
-        "source": "{SCENARIO 79} (Treasure #52)",
-        "desc": "When attacked by an adjacent normal enemy, force the enemy to attack one of its allies within its range instead.",
-        "faq": "This item cannot be used if there is no other enemy in range to be attacked."
+        "name": "Serce Zdrajcy",
+        "source": "{SCENARIO 79} (Skarb #52)",
+        "desc": "Kiedy jesteś atakowany przez sąsiadującego normalnego wroga, w zamian atakuje on jednego ze swoich sojuszników w jego zasięgu.",
+        "faq": "Ten przedmiot nie może być użyty, jeśli w zasięgu nie ma innego wroga, którego można zaatakować."
     },
     "gh-132": {
-        "name": "Power Core",
+        "name": "Rdzeń Mocy",
         "source": "{SCENARIO 67}",
-        "desc": "Summon Steel Construct.",
-        "faq": "The card is treated like a persistent bonus, going in the active area until the summon is killed or the card is removed (removing the summon and consuming the item). If the card is refreshed and there is an active summon from the card, the active summon disappears."
+        "desc": "Przywołaj Stalowy Konstrukt",
+        "faq": "Karta jest traktowana jak trwały bonus, idzie w aktywny obszar, dopóki przywołaniec nie zostanie zabity lub karta nie zostanie usunięta (usuwając przywołańca i zużywając przedmiot). Jeśli karta zostanie odświeżona i istnieje aktywny przywołaniec z karty, aktywny przywołaniec znika."
     },
     "gh-133": {
-        "name": "Resonant Crystal",
+        "name": "Rezonujący Kryształ",
         "source": "{SCENARIO 84}",
-        "desc": "During your turn, destroy an adjacent obstacle."
+        "desc": "Podczas twojej tury zniszcz sąsiadującą przeszkodę."
     },
     "gh-134": {
-        "name": "Imposing Blade",
-        "source": "Reward from Solo Scenario - {BR}",
-        "desc": "Any time you kill an enemy during your turn, gain {SHIELD} 1 for the rest of the round."
+        "name": "Imponujące Ostrze",
+        "source": "Nagroda w Solo Scenario - {BR}",
+        "desc": "Za każdym razem gdy zabijesz wroga podczas twojej tury zyskujesz {SHIELD} 1 do końca rundy."
     },
     "gh-135": {
-        "name": "Focusing Ray",
-        "source": "Reward from Solo Scenario - {TI}",
-        "desc": "During your Heal action, double the value of the Heal."
+        "name": "Dozownik Mikstur",
+        "source": "Nagroda w Solo Scenario - {TI}",
+        "desc": "Podczas twojej akcji {HEAL} podwajasz liczbę odzyskanych PŻ."
     },
     "gh-136": {
-        "name": "Volatile Elixir",
-        "source": "Reward from Solo Scenario - {SW}",
-        "desc": "During your ranged attack, add +2 {ATTACK} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made."
+        "name": "Niestabilny Eliksir",
+        "source": "Nagroda w Solo Scenario - {SW}",
+        "desc": "Podczas twojego ataku dystansowego dodaj +2 do {ATTACK} oraz zyskaj Korzyść na całą akcję ataku, ale otrzymujesz 2 obrażenia za każdy wykonany atak."
     },
     "gh-137": {
-        "name": "Silent Stiletto",
-        "source": "Reward from Solo Scenario - {SC}",
-        "desc": "Any time you perform a melee attack, add {PIERCE} 1 to the Attack."
+        "name": "Sztylet Skrytobójcy",
+        "source": "Nagroda w Solo Scenario - {SC}",
+        "desc": "Za każdym razem gdy wykonujesz atak wręcz dodaj {PIERCE} 1 dla tego ataku."
     },
     "gh-138": {
-        "name": "Stone Charm",
-        "source": "Reward from Solo Scenario - {CH}",
-        "desc": "During your action where an obstacle is created, create one additional obstacle and apply all effects of the action to it."
+        "name": "Kamienna Tiara",
+        "source": "Nagroda w Solo Scenario - {CH}",
+        "desc": "Podczas akcji, w której tworzysz przeszkodę, stwórz dodatkową przeszkodę i zastosuj dla niej te same efekty."
     },
     "gh-139": {
-        "name": "Psychic Knife",
-        "source": "Reward from Solo Scenario - {MT}",
-        "desc": "Any time you perform an {AUGMENT} action, add +1 {ATTACK} to the entire action."
+        "name": "Mistyczny Nóż",
+        "source": "Nagroda w Solo Scenario - {MT}",
+        "desc": "Za każdym razem gdy wykonujesz {AUGMENT}, dodaj +1 do {ATTACK} dla całej akcji."
     },
     "gh-140": {
-        "name": "Sun Shield",
-        "source": "Reward from Solo Scenario - {SK}",
-        "desc": "When damaged by an attack, you may {LIGHT_X} to gain {SHIELD} 3 for the attack."
+        "name": "Słoneczna Tarcza",
+        "source": "Nagroda w Solo Scenario - {SK}",
+        "desc": "Kiedy otrzymujesz obrażenia, możesz {LIGHT_X}, aby zyskać {SHIELD} 3 na ten atak."
     },
     "gh-141": {
-        "name": "Utility Belt",
-        "source": "Reward from Solo Scenario - {QM}",
-        "desc": "During your turn, you or any one ally may {REFRESH} one of your spent or consumed items.",
+        "name": "Pas Narzędziowy",
+        "source": "Nagroda w Solo Scenario - {QM}",
+        "desc": "Podczas twojej tury, ty albo jeden z twoich sojuszników możecie {REFRESH} jeden z swoich wykorzystanych albo zużytych przedmiotów.",
         "faq": "This item cannot be refreshed."
     },
     "gh-142": {
-        "name": "Phasing Idol",
-        "source": "Reward from Solo Scenario - {SU}",
-        "desc": "When a summon you own is damaged by an attack, it suffers no damage instead."
+        "name": "Fazujący Bożek",
+        "source": "Nagroda w Solo Scenario - {SU}",
+        "desc": "Kiedy twój przywołany sojusznik jest atakowany i ma otrzymać obrażenia, zignoruj je."
     },
     "gh-143": {
-        "name": "Smoke Elixir",
-        "source": "Reward from Solo Scenario - {NS}",
-        "desc": "During your turn, gain {INVISIBLE} and create dark. {DARK}"
+        "name": "Eliksir Cienia",
+        "source": "Nagroda w Solo Scenario - {NS}",
+        "desc": "Podczas twojej tury zyskaj {INVISIBLE} i stwórz ciemność. {DARK}"
     },
     "gh-144": {
-        "name": "Pendant of the Plague",
-        "source": "Reward from Solo Scenario - {PH}",
-        "desc": "During your turn, {POISON} and {CURSE} one enemy within {RANGE} 3."
+        "name": "Medalion Zarazy",
+        "source": "Nagroda w Solo Scenario - {PH}",
+        "desc": "Podczas twojej tury {POISON} i rzuć {CURSE} na jednego wroga w {RANGE} 3."
     },
     "gh-145": {
-        "name": "Mask of Death",
-        "source": "Reward from Solo Scenario - {BE}",
-        "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {ATTACK} to the Attack."
+        "name": "Maska Śmierci",
+        "source": "Nagroda w Solo Scenario - {BE}",
+        "desc": "Za każdym razem gdy wykonujesz atak wręcz i masz dokładnie 1 punkt życia, dodaj +2 do {ATTACK}."
     },
     "gh-146": {
-        "name": "Master's Lute",
-        "source": "Reward from Solo Scenario - {SS}",
-        "desc": "After performing any {SONG} action, immediately perform an {ATTACK} 2 or {MOVE} 2 action."
+        "name": "Mistrzowska Lutnia",
+        "source": "Nagroda w Solo Scenario - {SS}",
+        "desc": "Po wykonaniu dowolnej {SONG} natychmiast wykonaj akcję {ATTACK} 2 albo {MOVE} 2."
     },
     "gh-147": {
-        "name": "Cloak of the Hunter",
-        "source": "Reward from Solo Scenario - {DS}",
-        "desc": "Any time you perform a {DOOM} action, {MUDDLE} the target of the {DOOM}."
+        "name": "Płaszcz Łowcy",
+        "source": "Nagroda w Solo Scenario - {DS}",
+        "desc": "Za każdym razem gdy rzucisz na przeciwnika {DOOM} przeciwnik ten zostaje {MUDDLE}."
     },
     "gh-148": {
-        "name": "Doctor's Coat",
-        "source": "Reward from Solo Scenario - {SB}",
-        "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 {HEAL} to their Heal."
+        "name": "Fartuch Lekarski",
+        "source": "Nagroda w Solo Scenario - {SB}",
+        "desc": "Za każdym razem gdy twój sojusznik wykorzysta w grze Zestaw Medyczny bądź Duży Zestaw Medyczny, zyskujesz +1 do {HEAL}."
     },
     "gh-149": {
-        "name": "Elemental Boots",
-        "source": "Reward from Solo Scenario - {EL}",
-        "desc": "If you move 5 or more hexes on your turn, create any element. {ANY}"
+        "name": "Buty Żywiołów",
+        "source": "Nagroda w Solo Scenario - {EL}",
+        "desc": "Jeżeli w czasie twojej tury poruszysz się o 5 lub więcej pól, stwórz dowolny żywioł. {ANY}"
     },
     "gh-150": {
-        "name": "Staff of Command",
-        "source": "Reward from Solo Scenario - {BT}",
-        "desc": "After performing a {COMMAND} action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the {COMMAND} action."
+        "name": "Różdżka Posłuszeństwa",
+        "source": "Nagroda w Solo Scenario - {BT}",
+        "desc": "Po wydaniu {COMMAND} wykorzystaj w grze jedną kartę z ręki i natychmiast rozpatrz tę samą stronę kart (górną lub dolną) jako akcję {COMMAND}."
     },
     "gh-151": {
         "name": "Sword of the Sands",
-        "source": "Reward from Solo Scenario - {BS}",
-        "desc": "During your melee attack, add {POISON} and {WOUND} to the entire attack action."
+        "source": "Nagroda w Solo Scenario - {BS}",
+        "desc": "Podczas twojego ataku wręcz dodaj {POISON} i {WOUND} dla całej akcji ataku."
     },
     "gh-152": {
-        "name": "Ring of Duality",
-        "source": "Reward from {SCENARIO 97}\nSection 125 “A locked chest” in book",
-        "desc": "After performing the top action of any ability card, you may immediately peform the bottom action of the same card. This item cannot be used if both actions trigger a lot card icon {CONSUMED}."
+        "name": "Pierścień Dwoistości",
+        "source": "Nagroda w {SCENARIO 97}\nSection 125 „A locked chest” in book",
+        "desc": "Po wykonaniu górnej akcji dowolnej karty zdolności możesz natychmiast wykonać dolną akcję z tej samej karty. Przedmiotu tego nie można użyć, jeśli obie akcje spowodowałyby utratę {CONSUMED} karty."
     },
     "gh-153": {
-        "name": "Minor Antidote",
-        "source": "Reward From {SCENARIO 99}",
-        "desc": "The next three times you would gain {POISON} prevent the condition."
+        "name": "Mniejsze Antidotum",
+        "source": "Nagroda w {SCENARIO 99}",
+        "desc": "Zapobiegasz trzem następnym przypadkom otrzymania stanu {POISON}."
     },
     "gh-154": {
-        "name": "Major Antidote",
-        "source": "Reward from {SCENARIO 105}",
-        "desc": "The next five times you would gain {POISON} prevent the condition."
+        "name": "Większe Antidotum",
+        "source": "Nagroda w {SCENARIO 105}",
+        "desc": "Zapobiegasz pięciu następnym przypadkom otrzymania stanu {POISON}."
     },
     "gh-155": {
-        "name": "Curseward Armor",
-        "source": "Reward from {SCENARIO 108}",
-        "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
+        "name": "Zbroja Rozbicia Klątw",
+        "source": "Nagroda w {SCENARIO 108}",
+        "desc": "Posiadasz teraz odporność na {CURSE}, nawet jeśli przedmiot ten zostanie wykorzystany. W trzech następnych przypadkach otrzymania obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1. Dodaj 3 {-1} do swojej talii modyfikatorów ataku.",
     },
     "gh-156": {
-        "name": "Elemental Claymore",
+        "name": "Półtorak Żywiołów",
         "source": "Unknown",
-        "desc": "During your melee attack, {ANY_X} to add +2 {ATTACK} to a single attack."
+        "desc": "Podczas twojego ataku wręcz {ANY_X}, aby dodać +2 do {ATTACK} dla pojedynczego ataku."
     },
     "gh-157": {
-        "name": "Ancient Bow",
-        "source": "{SCENARIO 107} (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
-        "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack.",
+        "name": "Starożytny Łuk",
+        "source": "{SCENARIO 107} (Skarb #78)\nSection 32 „Collapsed Atrium” in book",
+        "desc": "Podczas twojego ataku dystansowego, dodaj +2 do {ATTACK}, {CURSE} oraz {WOUND} dla pojedynczego ataku.",
     },
     "gh-158": {
-        "name": "Rejuvenation Greaves",
-        "source": "{SCENARIO 111} (Treasure #82)",
-        "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}.",
+        "name": "Nagolenniki Odnowienia",
+        "source": "{SCENARIO 111} (Skarb #82)",
+        "desc": "Podczas poruszania się dodaj +2 do {MOVE} i zyskaj {REGENERATE}.",
     },
     "gh-159": {
-        "name": "Scroll of Haste",
-        "source": "{SCENARIO 103} (Treasure #81)",
-        "desc": "During any one ally's movement, add +2 {MOVE} to the movement.",
+        "name": "Zwój Pośpiechu",
+        "source": "{SCENARIO 103} (Skarb #81)",
+        "desc": "Podczas poruszania się jednego z sojuszników dodaj +2 do tego {MOVE}.",
     },
     "gh-160": {
-        "name": "Cutpurse Dagger",
+        "name": "Sztylet Rzezimieszka",
         "source": "Unknown",
-        "desc": "When you kill a monster during your turn, gain one money token.",
+        "desc": "Kiedy zabijesz wroga podczas twojej tury, zyskujesz jeden żeton pieniędzy.",
     },
     "gh-161": {
-        "name": "Throwing Axe",
-        "source": "Reward from {SCENARIO 108}",
-        "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack.",
+        "name": "Miotany Topór",
+        "source": "Nagroda w {SCENARIO 108}",
+        "desc": "Podczas twojej akcji ataku wręcz w pojedynczy cel dodaj {RANGE} 3 dla tego ataku.",
     },
     "gh-162": {
-        "name": "Rift Device",
-        "source": "Reward from {SCENARIO 112}\nSection 62 “Mechanical Splendor” in book.",
-        "desc": "During your turn, {TELEPORT} to any unoccupied hex within 4 hexes of you.",
+        "name": "Urządzenie Szczelinowe",
+        "source": "Nagroda w {SCENARIO 112}\nSection 62 „Mechanical Splendor” in book.",
+        "desc": "Podczas twojej tury możesz się {TELEPORT} na dowolne, niezajęte pole w odległości 4 pól od ciebie.",
     },
     "gh-163": {
-        "name": "Crystal Tiara",
-        "source": "Reward from {SCENARIO 110}",
-        "desc": "When you peform a long or short rest, gain {STRENGTHEN}."
+        "name": "Kryształowa Tiara",
+        "source": "Nagroda w {SCENARIO 110}",
+        "desc": "Kiedy wykonujesz długi albo krótki odpoczynek, zyskujesz {STRENGTHEN}."
     },
     "gh-164": {
-        "name": "Basin of Prophecy",
-        "source": "Reward from Solo Scenario - {DR}",
-        "desc": "When you reveal cards from any deck, reveal one additional card."
+        "name": "Misa Przepowiedni",
+        "source": "Nagroda w Solo Scenario - {DR}",
+        "desc": "Kiedy odsłaniasz karty z dowolnej talii, odsłoń jedną dodatkową kartę."
     },
     "jotl-1": {
         "name": "Eagle-Eye Goggles",
