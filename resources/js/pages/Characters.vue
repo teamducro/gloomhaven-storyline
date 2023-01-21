@@ -107,24 +107,29 @@
                                              :sheet="sheet"
                                              @change="store"/>
 
+                            <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
+                            <notes :value.sync="character.notes" id="notes" :label="$t('Notes')"
+                                   @change="store" :is-local-campaign="isLocalCampaign"
+                            ></notes>
+
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
                             <perks :checks.sync="character.checks"
                                    :perks.sync="character.perks"
                                    :character="character"
                                    @change="store"/>
-                            <div v-if="soloScenario" :key="'solo-'+soloScenario.id" class="mt-5 flex">
+
+                            <attack-modifier-deck v-if="character.game !== 'cs'"
+                                                  :perks="character.perks"
+                                                  :perkDescriptions="character.perkDescriptions"
+                                                  :character="character"
+                                                  :playerIndex="playerIndex"/>
+
+                            <div v-if="soloScenario" :key="'solo-'+soloScenario.id" class="my-5 flex">
                                 <span class="font-title mr-2">{{ $t('Solo') }}:</span>
                                 <scenario-number :scenario="soloScenario" show-name/>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="w-full">
-                        <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
-                        <notes :value.sync="character.notes" id="notes" :label="$t('Notes')"
-                               @change="store" :is-local-campaign="isLocalCampaign"
-                        ></notes>
                     </div>
 
                     <div class="mt-8">
@@ -273,6 +278,15 @@ export default {
         },
         currentGame() {
             return this.sheet.game === 'fc' ? 'gh' : this.sheet.game;
+        },
+        playerIndex() {
+            if (this.sheet.characters[this.character.uuid]) {
+                return Object.keys(this.sheet.characters).indexOf(this.character.uuid);
+            }
+            if (this.sheet.archivedCharacters[this.character.uuid]) {
+                return Object.keys(this.sheet.archivedCharacters).indexOf(this.character.uuid);
+            }
+            return 1;
         }
     },
     methods: {

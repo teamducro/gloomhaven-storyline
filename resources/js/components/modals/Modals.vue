@@ -1,21 +1,24 @@
 <template>
     <div>
-        <scenario></scenario>
-        <achievement></achievement>
-        <share></share>
-        <share-campaign-code></share-campaign-code>
-        <reset></reset>
-        <donations></donations>
-        <toast></toast>
-        <confirm-transfer></confirm-transfer>
-        <item-modal></item-modal>
-        <event-card></event-card>
-        <default-card-modal></default-card-modal>
-        <edit-campaign></edit-campaign>
-        <ability-modal></ability-modal>
+        <scenario/>
+        <achievement/>
+        <share/>
+        <share-campaign-code/>
+        <reset/>
+        <donations/>
+        <toast/>
+        <confirm-transfer/>
+        <item-modal/>
+        <event-card/>
+        <default-card-modal/>
+        <edit-campaign/>
+        <ability-modal/>
+        <modifier-deck-modal/>
     </div>
 </template>
 
 <script>
-export default {}
+export default {
+
+}
 </script>
