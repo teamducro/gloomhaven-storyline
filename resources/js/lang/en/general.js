@@ -61,6 +61,7 @@ export default {
     "incomplete": "incomplete",
     "Incomplete": "Incomplete",
     "initiative": "initiative",
+    "Initiative": "Initiative",
     "Items": "Items",
     "level": "level",
     "Level": "Level",
