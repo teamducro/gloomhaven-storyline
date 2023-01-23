@@ -94,7 +94,9 @@ window.i18n = new VueI18n({
     messages: {
         en: i18nEn
     },
-    silentTranslationWarn: true
+    silentTranslationWarn: true,
+    font: 'Pirata One',
+    fallbackFont: 'Pirata One'
 });
 
 // event bus
