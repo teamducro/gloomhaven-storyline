@@ -57,6 +57,7 @@ export default {
     "incomplete": "incompleto",
     "Incomplete": "Incompleto",
     "initiative": "initiative",
+    "Initiative": "Initiative",
     "Items": "Items",
     "level": "level",
     "Level": "Level",

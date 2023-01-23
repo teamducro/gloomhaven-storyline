@@ -57,6 +57,7 @@ export default {
     "incomplete": "incompleto",
     "Incomplete": "Incompleto",
     "initiative": "iniciativa",
+    "Initiative": "Iniciativa",
     "Items": "Objetos",
     "level": "nivel",
     "Level": "Nivel",

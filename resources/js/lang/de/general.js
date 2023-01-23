@@ -57,6 +57,7 @@ export default {
     "incomplete": "offen",
     "Incomplete": "Offen",
     "initiative": "initiative",
+    "Initiative": "Initiative",
     "Items": "Gegenstände",
     "level": "stufe",
     "Level": "Stufe",
