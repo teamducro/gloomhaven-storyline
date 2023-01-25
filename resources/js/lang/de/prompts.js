@@ -1,6 +1,6 @@
 export default {
     "dragon": {
-        "1": "Bringt dem Draken den Schatz. Erhaltet die globale Errungenschaft \"Hilfe für den Draken\". Fügt dem Deck das Stadtereignis 75 und das Wegereignis 66 hinzu.",
+        "1": "Bringt dem Draken den Schatz. Erhaltet die globale Errungenschaft \"Hilfe für den Draken\". Fügt dem Deck das Stadt-Ereignis 75 und das Weg-Ereignis 66 hinzu.",
         "2": "Helft dem Draken nicht.",
         "title": "Freund oder Feind",
         "text": "Ihr habt den Schatz des Draken geborgen. Händigt ihr den Schatz an ihn aus, oder befolgt ihr die Befehle des Kapitäns der Stadtwache und versucht in zu töten?"

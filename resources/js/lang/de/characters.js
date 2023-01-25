@@ -57,7 +57,7 @@ export default {
             "Add three {AGAIN} {MUDDLE} Karten hinzu",
             "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
             "Füge eine {+1_WHITE} {IMMOBILIZE} Karte hinzu",
-            "Füge eine {+1_WHITE} Heilung {HEAL}2 Karte hinzu",
+            "Füge eine {+1_WHITE} {HEAL}2 Karte hinzu",
             "Füge eine {+0_WHITE} Ziel hinzufügen {TARGET} Karte hinzu",
             "Ignoriere negative Szenarioeffekte"
         ]

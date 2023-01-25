@@ -1,91 +1,91 @@
 export default {
     "gh": {
         "blood-pact": {
-            "name": "blood pact"
+            "name": "Blutschwur"
         },
         "bone-breaker": {
-            "name": "bone breaker"
+            "name": "Knochenbrecher"
         },
         "bounce-back": {
-            "name": "bounce back"
+            "name": "Auf die Beine"
         },
         "break-the-chains": {
-            "name": "break the chains"
+            "name": "Gesprengte Ketten"
         },
         "burning-hatred": {
-            "name": "burning hatred"
+            "name": "Brennender Hass"
         },
         "careless-charge": {
-            "name": "careless charge"
+            "name": "Leichtsinniger Vorstoß"
         },
         "cauterize": {
-            "name": "cauterize"
+            "name": "Ausbrennen"
         },
         "dazing-wound": {
-            "name": "dazing wound"
+            "name": "Benebelnde Wunde"
         },
         "defiance-of-death": {
-            "name": "defiance of death"
+            "name": "Todesverachtung"
         },
         "devil-horns": {
-            "name": "devil horns"
+            "name": "Teufelshörner"
         },
         "fatal-fury": {
-            "name": "fatal fury"
+            "name": "Tödlicher Zorn"
         },
         "final-fight": {
-            "name": "final fight"
+            "name": "Endkampf"
         },
         "flurry-of-axes": {
-            "name": "flurry of axes"
+            "name": "Axtwirbel"
         },
         "from-the-brink": {
-            "name": "from the brink"
+            "name": "Rand des Abgrunds"
         },
         "furious-aid": {
-            "name": "furious aid"
+            "name": "Wütende Hilfe"
         },
         "glass-hammer": {
-            "name": "glass hammer"
+            "name": "Glashammer"
         },
         "growing-rage": {
-            "name": "growing rage"
+            "name": "Wachsende Wut"
         },
         "immortality": {
-            "name": "immortality"
+            "name": "Unsterblichkeit"
         },
         "numb-the-pain": {
-            "name": "numb the pain"
+            "name": "Schmerzbetäubung"
         },
         "reckless-offensive": {
-            "name": "reckless offensive"
+            "name": "Waghalsige Offensive"
         },
         "resolute-stand": {
-            "name": "resolute stand"
+            "name": "Fester Stand"
         },
         "seeing-red": {
-            "name": "seeing red"
+            "name": "Weißglut"
         },
         "shiny-distraction": {
-            "name": "shiny distraction"
+            "name": "Glänzende Ablenkung"
         },
         "spiked-armor": {
-            "name": "spiked armor"
+            "name": "Stachelrüstung"
         },
         "strength-in-agony": {
-            "name": "strength in agony"
+            "name": "Stärke durch Schmerz"
         },
         "the-maw-of-madness": {
-            "name": "the maw of madness"
+            "name": "Schlund des Wahnsinns"
         },
         "unbridled-power": {
-            "name": "unbridled power"
+            "name": "Ungezügelte Macht"
         },
         "unstoppable-destruction": {
-            "name": "unstoppable destruction"
+            "name": "Unaufhaltsame Zerstörung"
         },
         "vengeful-barrage": {
-            "name": "vengeful barrage"
+            "name": "Rachefeldzug"
         },
         "balanced-measure": {
             "name": "balanced measure"
@@ -1264,7 +1264,7 @@ export default {
             "name": "booming proclamation"
         },
         "call-to-action": {
-            "name": "call to action"
+            "name": "Motivationsruf"
         },
         "captivating-performance": {
             "name": "captivating performance"
@@ -1279,22 +1279,22 @@ export default {
             "name": "crippling chorus"
         },
         "defensive-ditty": {
-            "name": "defensive ditty"
+            "name": "Defensive Weise"
         },
         "disorienting-dirge": {
-            "name": "disorienting dirge"
+            "name": "Verwirrende Klage"
         },
         "echoing-aria": {
-            "name": "echoing aria"
+            "name": "Widerhallende Arie"
         },
         "inspiring-anthem": {
             "name": "inspiring anthem"
         },
         "marching-beat": {
-            "name": "marching beat"
+            "name": "Marschtakt"
         },
         "melody-and-harmony": {
-            "name": "melody and harmony"
+            "name": "Melodie und Harmonie"
         },
         "mobilizing-measure": {
             "name": "mobilizing measure"
@@ -1303,10 +1303,10 @@ export default {
             "name": "nightmare serenade"
         },
         "nimble-knife": {
-            "name": "nimble knife"
+            "name": "Flinke Klinge"
         },
         "power-ballad": {
-            "name": "power ballad"
+            "name": "Kraftballade"
         },
         "provoke-terror": {
             "name": "provoke terror"
@@ -1318,31 +1318,31 @@ export default {
             "name": "shadow puppets"
         },
         "singing-arrow": {
-            "name": "singing arrow"
+            "name": "Singender Pfeil"
         },
         "song-of-speed": {
-            "name": "song of speed"
+            "name": "Gesang der Eile"
         },
         "soothing-lullaby": {
-            "name": "soothing lullaby"
+            "name": "Sanftes Schlaflied"
         },
         "throw-voice": {
-            "name": "throw voice"
+            "name": "Bauchrednerin"
         },
         "tranquil-trill": {
             "name": "tranquil trill"
         },
         "tuning-the-outcome": {
-            "name": "tuning the outcome"
+            "name": "Verwandeltes Ergebnis"
         },
         "unending-chant": {
-            "name": "unending chant"
+            "name": "Endloser Choral"
         },
         "warding-dagger": {
-            "name": "warding dagger"
+            "name": "Wehrdolch"
         },
         "wistful-wounding": {
-            "name": "wistful wounding"
+            "name": "Wehmutswunde"
         },
         "biting-wind": {
             "name": "biting wind"
