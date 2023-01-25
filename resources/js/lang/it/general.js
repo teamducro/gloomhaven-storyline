@@ -57,6 +57,7 @@ export default {
     "incomplete": "incompleto",
     "Incomplete": "Incompleto",
     "initiative": "initiative",
+    "Initiative": "Initiative",
     "Items": "Items",
     "level": "level",
     "Level": "Level",
@@ -174,6 +175,7 @@ export default {
     "German": "German",
     "Spanish": "Spanish",
     "Campaigns": "Campaigns",
+    "Campaign code": "Campaign code",
     "Buy shared campaign": "Buy shared campaign",
     "Add shared campaign": "Add shared campaign",
     "donations": {

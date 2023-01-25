@@ -57,6 +57,7 @@ export default {
     "incomplete": "offen",
     "Incomplete": "Offen",
     "initiative": "initiative",
+    "Initiative": "Initiative",
     "Items": "Gegenstände",
     "level": "stufe",
     "Level": "Stufe",
@@ -174,6 +175,7 @@ export default {
     "German": "Deutsch",
     "Spanish": "Spanisch",
     "Campaigns": "Kampagnen",
+    "Campaign code": "Kampagnencode",
     "Buy shared campaign": "Kaufe eine neue teilbare Kampagne",
     "Add shared campaign": "Füge eine teilbare Kampagne hinzu",
     "donations": {
