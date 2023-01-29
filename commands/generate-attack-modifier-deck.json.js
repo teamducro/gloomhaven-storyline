@@ -3,7 +3,7 @@
 // For now, to run this [ "type": "module" ] needs to be added to package.json
 
 import fs from "fs"
-import characters from "./resources/js/characters.json" assert {type: "json"};
+import characters from "../resources/js/characters.json" assert {type: "json"};
 
 // Default attack modifier deck
 let decks = {
@@ -40,7 +40,7 @@ for (const [id, character] of Object.entries(characters.characters)) {
 
 // Write json to file
 const output = JSON.stringify(decks, null, 4)
-const filePath = './resources/js/attack-modifier-decks.json'
+const filePath = '../resources/js/attack-modifier-decks.json'
 fs.writeFile(filePath, output, (err) => {
     if (err) throw err;
 });

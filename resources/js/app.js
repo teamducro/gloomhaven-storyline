@@ -37,6 +37,7 @@ import setInitialLanguage from "./services/app/setInitialLanguage";
 import {gsap} from "gsap";
 import {Flip} from "gsap/Flip.js";
 import getEnabledGames from "./services/app/getEnabledGames";
+import BaseUrl from "./mixins/BaseUrl";
 
 const {RayPlugin} = require('vue-ray/vue2');
 
@@ -101,6 +102,7 @@ window.i18n = new VueI18n({
 Vue.prototype.$bus = new Vue;
 
 window.app = new Vue({
+    mixins: [BaseUrl],
     i18n,
     router,
     el: '#app',
@@ -162,7 +164,7 @@ window.app = new Vue({
 
         (new ShareState).loadOldLink();
 
-        document.getElementById('bg').style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
+        document.getElementById('bg').style['background-image'] = `url('${this.baseUrl}/img/background-highres.jpg'), url('${this.baseUrl}/img/background-lowres.jpg')`;
 
         this.$bus.$on('game-selected', this.switchGame);
         this.$bus.$on('campaign-selected', this.switchCampaign);

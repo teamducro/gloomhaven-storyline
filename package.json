@@ -11,9 +11,9 @@
         "prod": "npm run production;",
         "production": "mix --production",
         "test": "cypress open",
-        "lang": "./add-missing-translation-keys.js",
-        "attack-modifiers": "./generate-attack-modifier-deck.json.js",
-        "watch-poll": ""
+        "lang": "commands/add-missing-translation-keys.js",
+        "attack-modifiers": "commands/generate-attack-modifier-deck.json.js",
+        "cdn": "s3cmd sync --acl-public --delete-removed ./resources/img s3://gh-storyline"
     },
     "repository": {
         "type": "git",
