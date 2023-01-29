@@ -11,8 +11,8 @@
         "prod": "npm run production;",
         "production": "mix --production",
         "test": "cypress open",
-        "lang": "./add-missing-translation-keys.js",
-        "attack-modifiers": "./generate-attack-modifier-deck.json.js",
+        "lang": "commands/add-missing-translation-keys.js",
+        "attack-modifiers": "commands/generate-attack-modifier-deck.json.js",
         "watch-poll": ""
     },
     "repository": {
