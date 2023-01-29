@@ -1,11 +1,11 @@
 <template>
-    <transition name="fade" v-if="animate">
+    <transition name="fade" v-if="source && animate">
         <img v-show="isLoaded" :src="baseUrl+source" :alt="alt"
              :class="imageClasses"
              :width="width"
              @error=" this.error" @load="loaded"/>
     </transition>
-    <img v-else :src="baseUrl+source" :alt="alt"
+    <img v-else-if="source" :src="baseUrl+source" :alt="alt"
          :loading="lazy ? 'lazy' : 'auto'"
          :class="imageClasses"
          :width="width"

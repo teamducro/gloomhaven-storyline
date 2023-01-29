@@ -13,7 +13,7 @@
         "test": "cypress open",
         "lang": "commands/add-missing-translation-keys.js",
         "attack-modifiers": "commands/generate-attack-modifier-deck.json.js",
-        "cdn": "s3cmd sync --acl-public --delete-removed ./resources/img s3://gh-storyline"
+        "cdn": "s3cmd sync --acl-public --delete-removed --add-header=\"Cache-Control:max-age=2592000\" ./resources/img s3://gh-storyline"
     },
     "repository": {
         "type": "git",
