@@ -45,7 +45,7 @@
 
                     <button @click="remove"
                             class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                        <img width="26" src="/img/icons/remove-card.png" :alt="'Remove #' + card.id"/>
+                        <img width="26" :src="baseUrl+'/img/icons/remove-card.png'" :alt="'Remove #' + card.id"/>
                     </button>
                 </div>
             </div>
@@ -59,9 +59,11 @@ import Card from "../../models/Card";
 import FlipCard from "../elements/FlipCard";
 import PreloadImage from "../../services/PreloadImage";
 import Helpers from "../../services/Helpers";
+import BaseUrl from "../../mixins/BaseUrl";
 
 export default {
     components: {FlipCard},
+    mixins: [BaseUrl],
     data() {
         return {
             card: null,

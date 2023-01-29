@@ -1,11 +1,11 @@
 <template>
     <transition name="fade" v-if="animate">
-        <img v-show="isLoaded" :src="source" :alt="alt"
+        <img v-show="isLoaded" :src="baseUrl+source" :alt="alt"
              :class="imageClasses"
              :width="width"
              @error=" this.error" @load="loaded"/>
     </transition>
-    <img v-else :src="source" :alt="alt"
+    <img v-else :src="baseUrl+source" :alt="alt"
          :loading="lazy ? 'lazy' : 'auto'"
          :class="imageClasses"
          :width="width"
@@ -14,8 +14,10 @@
 
 <script>
 import PreloadImage from "../../services/PreloadImage";
+import BaseUrl from "../../mixins/BaseUrl";
 
 export default {
+    mixins: [BaseUrl],
     props: {
         src: {
             type: String

@@ -1,8 +1,8 @@
 <template>
     <div class="flex">
         <a v-clipboard:copy="url" class="cursor-pointer mr-2 copied">
-            <img :src="`/img/icons/copy-link${black ? '-black' : ''}.png`" alt="copy-link"
-                 :srcset="`/img/icons/copy-link${black ? '-black' : ''}@2x.png 2x`"
+            <img :src="`${baseUrl}/img/icons/copy-link${black ? '-black' : ''}.png`" alt="copy-link"
+                 :srcset="`${baseUrl}/img/icons/copy-link${black ? '-black' : ''}@2x.png 2x`"
                  class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
         </a>
         <share-network
@@ -18,8 +18,8 @@
                     'ml-auto': network === 'reddit' && marginCenter,
                     'mr-2': networks.length-1 !== networks.indexOf(network)
                 }">
-            <img :src="`/img/icons/${network}${black ? '-black' : ''}.png`" :alt="network"
-                 :srcset="`/img/icons/${network}${black ? '-black' : ''}@2x.png 2x`"
+            <img :src="`${baseUrl}/img/icons/${network}${black ? '-black' : ''}.png`" :alt="network"
+                 :srcset="`${baseUrl}/img/icons/${network}${black ? '-black' : ''}@2x.png 2x`"
                  class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
         </share-network>
     </div>
@@ -27,8 +27,10 @@
 
 <script>
     import tippy from "tippy.js";
+    import BaseUrl from "../../mixins/BaseUrl";
 
     export default {
+        mixins: [BaseUrl],
         props: {
             url: {
                 type: String
