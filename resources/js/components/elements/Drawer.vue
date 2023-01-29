@@ -34,7 +34,7 @@
                                    aria-hidden="true">supervisor_account</i>
                                 <span class="mdc-list-item__text">
                                     {{ $t('Campaigns') }}
-                                    <span v-if="!user" class="ml-2 text-gold font-bold">{{ $t('PRO') }}</span>
+                                    <span v-if="!user" class="ml-2 text-gold font-bold">{{ $t('Pro') }}</span>
                                 </span>
                             </router-link>
                         </li>

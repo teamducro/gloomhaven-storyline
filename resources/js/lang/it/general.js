@@ -226,7 +226,7 @@ export default {
     "An email has been sent to your inbox.": "An email has been sent to your inbox.",
     "Selected Campaign": "Selected Campaign",
     "Selected Game": "Selected Game",
-    "PRO": "PRO",
+    "Pro": "Pro",
     "Storyline": "Campagna",
     "Map": "Mappa",
     "Scenario list": "Lista degli Scenari",
