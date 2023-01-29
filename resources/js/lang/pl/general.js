@@ -232,7 +232,7 @@ export default {
     "An email has been sent to your inbox.": "Wiadomość e-mail została wysłana na Twoją skrzynkę odbiorczą.",
     "Selected Campaign": "Wybrana kampania",
     "Selected Game": "Wybrana gra",
-    "PRO": "PRO",
+    "Pro": "Pro",
     "Storyline": "Fabuła",
     "Map": "Mapa",
     "Scenario list": "Lista scenariuszy",
