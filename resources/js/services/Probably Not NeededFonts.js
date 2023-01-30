@@ -5,8 +5,8 @@ const defaultFonts = ['Pirata One']; // default font
 const supportedFonts = ['Pirata One', 'Nyala', 'sans-serif', 'Arial', 'Calibri'];
 
 function setFont(font) {
-    i18n.font = font;
-    app.$i18n.font = font;
+    i18n.current_font = font;
+    app.$i18n.current_font = font;
     // axios.defaults.headers.common['Accept-Language'] = lang;
     // document.querySelector('html').setAttribute('lang', lang);
     console.log(`Updated font to: ${font}`);
@@ -20,7 +20,7 @@ export function loadFontAsync(font) {
     }
 
     // If the same language
-    if (i18n.font === font) {
+    if (i18n.current_font === font) {
         return Promise.resolve(setFont(font));
     }
 

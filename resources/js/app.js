@@ -95,8 +95,6 @@ window.i18n = new VueI18n({
         en: i18nEn
     },
     silentTranslationWarn: true,
-    font: 'Pirata One',
-    fallbackFont: 'Pirata One'
 });
 
 // event bus
@@ -142,6 +140,7 @@ window.app = new Vue({
             stories: collect(),
             campaignId: 'local',
             campaignData: {},
+            font: null,
 
             scenarioRepository: new ScenarioRepository,
             questRepository: new QuestRepository,
@@ -176,6 +175,7 @@ window.app = new Vue({
 
         listenToCrtlS();
         setInitialLanguage();
+        setInitialFont();
     },
     methods: {
         async campaignsChanged(shouldSync = true) {

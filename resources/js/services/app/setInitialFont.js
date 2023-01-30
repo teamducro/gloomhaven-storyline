@@ -5,8 +5,7 @@ import {loadFontAsync} from "../Fonts";
 export default function setInitialFont() {
     const fontSwitchClass = Vue.extend(FontSwitch);
     const fontSwitchComponent = new fontSwitchClass;
-    const initialFont = fontSwitchComponent.getInitialFont();
-    if (initialFont !== window.i18n.fallbackLocale) {
-        loadFontAsync(initialFont);
+    if (store.get('font') == null || store.get('font') == undefined) {
+        fontSwitchComponent.setInitialFont();
     }
 }

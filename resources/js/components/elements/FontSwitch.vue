@@ -27,12 +27,14 @@
 <script>
 // TODO - Asses service worker and font loading
 // import {loadLanguageAsync} from "../../services/I18n-setup";
-import {loadFontAsync} from "../../services/Fonts";
+// import {loadFontAsync} from "../../services/Fonts";
 
 import store from "store/dist/store.modern";
 import {MDCSelect} from "@material/select/component";
 import Helpers from "../../services/Helpers";
 import UserRepository from "../../apiRepositories/UserRepository";
+
+// const md5 = require('js-md5');
 
 export default {
     data() {
@@ -54,10 +56,8 @@ export default {
 
     },
     mounted() {
-        console.log('default font');
-        if (this.current !== this.default_font) {
-            loadFontAsync(this.current)
-                .then(() => this.updateUserFont())
+        if (this.current !== store.get('font')) {
+            this.updateUserFont();
         }
 
         if (c('.font-switch').length) {
@@ -74,25 +74,27 @@ export default {
         },
         changeFont() {
             this.current = this.select.value;
-            loadFontAsync(this.current);
+            console.log('changeFont', this.current);
             store.set('font', this.current);
             this.updateUserFont();
         },
+        getFont() {
+            return store.get('font');
+        },
         getInitialFont() {
             let font = store.get('font');
-
+            console.log('initial font', font);
             if (!font) {
-                const locale = navigator.font.substring(0, 2);
-                if (this.validFont(locale)) {
-                    font = locale;
-                    store.set('font', font);
+                const default_font = this.default_font;
+                if (this.validFont(default_font)) {
+                    console.log('set initial font', default_font);
+                    store.set('font', default_font);
                 }
             }
-
             return font;
         },
         setInitialFont() {
-            this.current = this.getInitialFont() || window.i18n.locale;
+            this.current = this.getInitialFont();
         },
         validFont(font) {
             return this.fonts.hasOwnProperty(font);
@@ -104,7 +106,15 @@ export default {
                 app.user.font = this.current;
                 this.userRepository.update(app.user);
             }
-        }
+            this.rerender();
+        },
+        rerender() {
+            const stylesheet = document.styleSheets[1];
+            const boxParaRuleBody = [...stylesheet.cssRules].find((r) => r.selectorText === "html, body");
+            boxParaRuleBody.style.setProperty('font-family', this.current);
+            const boxParaRuleHeaders = [...stylesheet.cssRules].find((r) => r.selectorText === "h1, h2, h3");
+            boxParaRuleHeaders.style.setProperty('font-family', this.current);
+        },
     }
 }
 </script>
