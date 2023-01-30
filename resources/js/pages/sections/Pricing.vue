@@ -167,7 +167,7 @@
                                                    class="block cursor-default w-full text-center rounded-lg border border-transparent bg-gray-400 px-6 py-3 text-base leading-6 font-medium text-gray-900 hover:text-gray-600 focus:outline-none transition ease-in-out duration-150"
                                                    @click.prevent="() => {}"
                                                    aria-describedby="tier-frosthaven">
-                                                    Coming soon
+                                                    First half of 2023
                                                 </a>
                                             </div>
                                         </div>
