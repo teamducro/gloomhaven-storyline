@@ -1,9 +1,10 @@
 export default class PreloadImage {
     handle(url, success) {
         let image = new Image();
-        image.src = this.webp(url);
+        const baseUrl = process.env.MIX_CDN_URL || '';
+        image.src = baseUrl + this.webp(url);
         image.onerror = () => {
-            image.src = url;
+            image.src = baseUrl + url;
             image.onerror = null;
         };
 
