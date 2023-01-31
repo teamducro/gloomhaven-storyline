@@ -16,6 +16,7 @@ import abilitiesFcJson from '../abilities-fc.json'
 import abilitiesJotlJson from '../abilities-jotl.json'
 import abilitiesCsJson from '../abilities-cs.json'
 import charactersJson from '../characters.json'
+import attackModifierDecksJson from '../attack-modifier-decks.json'
 
 export default class GameData {
     games() {
@@ -118,6 +119,14 @@ export default class GameData {
             default:
                 return personalQuestsJson
         }
+    }
+
+    attackModifierDeck() {
+        return attackModifierDecksJson
+    }
+
+    test() {
+        return 'test'
     }
 
     map(game = 'gh') {
