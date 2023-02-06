@@ -275,6 +275,8 @@ export default {
 
     // Game Editions
     "gh": "Gloomhaven",
+    "fh": "Frosthaven",
+    "Frosthaven": "Frosthaven",
     "fc": "Forgotten Circles",
     "Forgotten Circles": "Forgotten Circles",
     "jotl": "Jaws of the Lion",

@@ -1,5 +1,6 @@
 import achievementsJson from '../achievements.json'
 import scenariosJson from '../scenarios.json'
+import scenariosFhJson from '../scenarios-fh.json'
 import scenariosJotlJson from '../scenarios-jotl.json'
 import scenariosCsJson from '../scenarios-cs.json'
 import questsJson from '../quests.json'
@@ -20,11 +21,11 @@ import attackModifierDecksJson from '../attack-modifier-decks.json'
 
 export default class GameData {
     games() {
-        return ["gh", "fc", "jotl", "cs"]
+        return ["gh", "fh", "fc", "jotl", "cs"]
     }
 
     beta() {
-        return []
+        return ["fh"]
     }
 
     achievements(game) {
@@ -64,6 +65,8 @@ export default class GameData {
 
     _scenarioData(game) {
         switch (game) {
+            case 'fh':
+                return scenariosFhJson
             case 'jotl':
                 return scenariosJotlJson
             case 'cs':
@@ -190,6 +193,11 @@ export default class GameData {
                 return {
                     portrait: '0 0 370 540',
                     landscape: '0 -40 530 370'
+                }
+            case 'fh':
+                return {
+                    portrait: '-0.5 -0.5 2964 2503',
+                    landscape: '-0.5 -0.5 2964 2503'
                 }
             default:
                 return {

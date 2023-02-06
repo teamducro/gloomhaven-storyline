@@ -989,6 +989,420 @@ export default {
             "“Jet Boots” (Item 36)"
         ]
     },
+    "fh-0": {
+        "name": "Howling in the Snow"
+    },
+    "fh-1": {
+        "name": "A Town in Flames"
+    },
+    "fh-2": {
+        "name": "Algox Scouting"
+    },
+    "fh-3": {
+        "name": "Algox Offensive"
+    },
+    "fh-4": {
+        "name": "Heart of Ice"
+    },
+    "fh-5": {
+        "name": "Frozen Crypt"
+    },
+    "fh-6": {
+        "name": "Avalanche"
+    },
+    "fh-7": {
+        "name": "Edge of the World"
+    },
+    "fh-8": {
+        "name": "Crystal Trench"
+    },
+    "fh-9": {
+        "name": "Glowing Catacombs"
+    },
+    "fh-10": {
+        "name": "Crystal Enclosure"
+    },
+    "fh-11": {
+        "name": "Snowscorn Peak"
+    },
+    "fh-12": {
+        "name": "Temple Entrance"
+    },
+    "fh-13": {
+        "name": "Frozen Fjord"
+    },
+    "fh-14": {
+        "name": "Jagged Shoals"
+    },
+    "fh-15": {
+        "name": "Ancient Spire"
+    },
+    "fh-16": {
+        "name": "Derelict Elevator"
+    },
+    "fh-17": {
+        "name": "Haunted Vault"
+    },
+    "fh-18": {
+        "name": "Crystal Fields"
+    },
+    "fh-19": {
+        "name": "Skyhall"
+    },
+    "fh-20": {
+        "name": "Temple of Liberation"
+    },
+    "fh-21": {
+        "name": "Realm of Endless Frost"
+    },
+    "fh-22": {
+        "name": "Ice Floes"
+    },
+    "fh-23": {
+        "name": "Spire Basement"
+    },
+    "fh-24": {
+        "name": "Upper Spire"
+    },
+    "fh-25": {
+        "name": "Rusted Tunnels"
+    },
+    "fh-26": {
+        "name": "Quatryl Library"
+    },
+    "fh-27": {
+        "name": "Depths of Delirium"
+    },
+    "fh-28": {
+        "name": "Summit Meeting"
+    },
+    "fh-29": {
+        "name": "War of the Spire A"
+    },
+    "fh-30": {
+        "name": "War of the Spire B"
+    },
+    "fh-31": {
+        "name": "Crackling Tunnel"
+    },
+    "fh-32": {
+        "name": "Ravens' Roost"
+    },
+    "fh-33": {
+        "name": "Thawed Wood"
+    },
+    "fh-34": {
+        "name": "Top of the Spire"
+    },
+    "fh-35": {
+        "name": "Scrap Pit"
+    },
+    "fh-36": {
+        "name": "Buried Ducts"
+    },
+    "fh-37": {
+        "name": "The Dead Mile"
+    },
+    "fh-38": {
+        "name": "The Way Forward"
+    },
+    "fh-39": {
+        "name": "Corrupted Camp"
+    },
+    "fh-40": {
+        "name": "Relief Effort"
+    },
+    "fh-41": {
+        "name": "Unfettered Shard"
+    },
+    "fh-42": {
+        "name": "Sunless Trench"
+    },
+    "fh-43": {
+        "name": "Overrun Barricade"
+    },
+    "fh-44": {
+        "name": "Nerve Center"
+    },
+    "fh-45": {
+        "name": "Living Glacier"
+    },
+    "fh-46": {
+        "name": "Dead Pass"
+    },
+    "fh-47": {
+        "name": "Carrion Ridge"
+    },
+    "fh-48": {
+        "name": "Blizzard island"
+    },
+    "fh-49": {
+        "name": "Beneath Sea and Stone"
+    },
+    "fh-50": {
+        "name": "Explosive Descent"
+    },
+    "fh-51": {
+        "name": "Orphan's Halls"
+    },
+    "fh-52": {
+        "name": "Fleeting Permanence"
+    },
+    "fh-53": {
+        "name": "Underwater Throne"
+    },
+    "fh-54": {
+        "name": "Among the Wreckage"
+    },
+    "fh-55": {
+        "name": "Change of Heart"
+    },
+    "fh-56": {
+        "name": "Call of the Harbinger"
+    },
+    "fh-57": {
+        "name": "Sanctuary of Snow"
+    },
+    "fh-58": {
+        "name": "Orphan's Core"
+    },
+    "fh-59": {
+        "name": "Automation Uprising"
+    },
+    "fh-60": {
+        "name": "Uniting the Crown"
+    },
+    "fh-61": {
+        "name": "Life and Death"
+    },
+    "fh-62": {
+        "name": "The Unfettered Seal"
+    },
+    "fh-63": {
+        "name": "The Savvas Seal"
+    },
+    "fh-64": {
+        "name": "The Frosthaven Seal"
+    },
+    "fh-65": {
+        "name": "A Strong Foundation"
+    },
+    "fh-66": {
+        "name": "Elemental Cores"
+    },
+    "fh-67": {
+        "name": "Core Attunement"
+    },
+    "fh-68": {
+        "name": "The Face of Torment"
+    },
+    "fh-69": {
+        "name": "Sacred Soil"
+    },
+    "fh-70": {
+        "name": "The True Oak"
+    },
+    "fh-71": {
+        "name": "Invasion of the Dock"
+    },
+    "fh-72": {
+        "name": "A Giant Block of Ice"
+    },
+    "fh-73": {
+        "name": "Flotsam"
+    },
+    "fh-74": {
+        "name": "Gaps in the Road"
+    },
+    "fh-75": {
+        "name": "Infiltraiting the Lair"
+    },
+    "fh-76": {
+        "name": "Apotheosis"
+    },
+    "fh-77": {
+        "name": "Fish King's Ascension"
+    },
+    "fh-78": {
+        "name": "The Lurker Problem"
+    },
+    "fh-79": {
+        "name": "Relic"
+    },
+    "fh-80": {
+        "name": "Relic Renewed"
+    },
+    "fh-81": {
+        "name": "Ruinous Research Lab"
+    },
+    "fh-82": {
+        "name": "Expedition North"
+    },
+    "fh-83": {
+        "name": "Rising Brine"
+    },
+    "fh-84": {
+        "name": "Here There Be Oozes"
+    },
+    "fh-85": {
+        "name": "Deadly Pastimes"
+    },
+    "fh-86": {
+        "name": "The Lady in White"
+    },
+    "fh-87": {
+        "name": "The Collection"
+    },
+    "fh-88": {
+        "name": "Collection's Capstone"
+    },
+    "fh-89": {
+        "name": "A Contained Fire"
+    },
+    "fh-90": {
+        "name": "Frozen Treasure"
+    },
+    "fh-91": {
+        "name": "Shoreline Scramble"
+    },
+    "fh-92": {
+        "name": "Sinking Ship"
+    },
+    "fh-93": {
+        "name": "Midwinter Brawl"
+    },
+    "fh-94": {
+        "name": "A Grand View"
+    },
+    "fh-95": {
+        "name": "To Burry the Dead"
+    },
+    "fh-96": {
+        "name": "Underground Station"
+    },
+    "fh-97": {
+        "name": "Program Control Nexus"
+    },
+    "fh-98": {
+        "name": "Collapsing Vent"
+    },
+    "fh-99": {
+        "name": "Prison Break"
+    },
+    "fh-100": {
+        "name": "Inside the Swarm"
+    },
+    "fh-101": {
+        "name": "Harrower Library"
+    },
+    "fh-102": {
+        "name": "Into the Black"
+    },
+    "fh-103": {
+        "name": "The Lead Door"
+    },
+    "fh-104": {
+        "name": "Ruins of the Solstice"
+    },
+    "fh-105": {
+        "name": "Ruins of the Equinox"
+    },
+    "fh-106": {
+        "name": "The Tempus Forge"
+    },
+    "fh-107": {
+        "name": "My Private Empire"
+    },
+    "fh-108": {
+        "name": "Lustrous Pit"
+    },
+    "fh-109": {
+        "name": "Furious Factory"
+    },
+    "fh-110": {
+        "name": "Guardian's Temple"
+    },
+    "fh-111": {
+        "name": "Ice Cave"
+    },
+    "fh-112": {
+        "name": "Raised by Wolves"
+    },
+    "fh-113": {
+        "name": "Lush Grotto"
+    },
+    "fh-114": {
+        "name": "Work Freeze"
+    },
+    "fh-115": {
+        "name": "Pylon Problems"
+    },
+    "fh-116": {
+        "name": "Caravan Guards"
+    },
+    "fh-117": {
+        "name": "A Waiting Game"
+    },
+    "fh-118": {
+        "name": "Lurker Necromancy"
+    },
+    "fh-119": {
+        "name": "Radiant Dust"
+    },
+    "fh-120": {
+        "name": "Under the Influence"
+    },
+    "fh-121": {
+        "name": "Black Memories"
+    },
+    "fh-122": {
+        "name": "The Eternal Crave"
+    },
+    "fh-123": {
+        "name": "The Titan"
+    },
+    "fh-124": {
+        "name": "A Growing Problem"
+    },
+    "fh-125": {
+        "name": "The Longest Second"
+    },
+    "fh-126": {
+        "name": "Joseph the Lion"
+    },
+    "fh-127": {
+        "name": "Derelict Freighter"
+    },
+    "fh-128": {
+        "name": "A Tall Drunken Tale"
+    },
+    "fh-129": {
+        "name": "How to Lay an Ambush"
+    },
+    "fh-130": {
+        "name": "And Then, a Stream"
+    },
+    "fh-131": {
+        "name": "The Dancing Iceberg"
+    },
+    "fh-132": {
+        "name": "Temple of Feline Power"
+    },
+    "fh-133": {
+        "name": "Bolt"
+    },
+    "fh-134": {
+        "name": "Tower of Knowledge"
+    },
+    "fh-135": {
+        "name": "Belara's Keep"
+    },
+    "fh-136": {
+        "name": "Abandoned Hideout"
+    },
+    "fh-137": {
+        "name": "Pirate Queen's Haul"
+    },
     "cs-1": {
         "name": "The Dark Lake"
     },
