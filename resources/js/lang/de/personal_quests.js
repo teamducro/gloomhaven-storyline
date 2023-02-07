@@ -1,9 +1,9 @@
 export default {
     "gh-510": {
-        "name": "Seeker of Xorn",
+        "name": "Suche nach Xorn",
         "progress": [
-            "Complete three Crypt scenarios.",
-            "Conclude {SCENARIO 52}."
+            "Schließe drei \"Krypta\"-Szenarien ab.",
+            "Schalte dann {SCENARIO 52} frei und schließe die Suche ab."
         ]
     },
     "gh-511": {
@@ -17,60 +17,60 @@ export default {
         ]
     },
     "gh-512": {
-        "name": "Greed is Good",
+        "name": "Gute Gier",
         "progress": [
-            "Have 200 gold in your possession."
+            "Besitze 200 Gold."
         ]
     },
     "gh-513": {
-        "name": "Finding the Cure",
-        "unlock": "Open envelope X",
+        "name": "Suche nach Heilung",
+        "unlock": "Öffne Umschlag X",
         "progress": [
-            "Kill eight Forest Imps.",
-            "Conclude {SCENARIO 59}."
+            "Töte acht Waldwichte.",
+            "Schalte dann {SCENARIO 59} frei und schließe die Suche ab."
         ]
     },
     "gh-514": {
-        "name": "A Study of Anatomy",
+        "name": "Anatomische Studien",
         "progress": [
-            "Experience your party members becoming exhausted fifteen times."
+            "Erlebe 15 Mal, wie Mitglieder deiner Gruppe erschöpft werden."
         ]
     },
     "gh-515": {
-        "name": "Law Bringer",
+        "name": "Recht und Ordnung",
         "progress": [
-            "Kill twenty Bandits or Cultists."
+            "Töte 20 Banditen oder Kultisten."
         ]
     },
     "gh-516": {
-        "name": "Pounds of Flesh",
+        "name": "Wehrhaftes Fleisch",
         "progress": [
-            "Kill fifteen Vermlings."
+            "Töte 15 Ratzen."
         ]
     },
     "gh-517": {
-        "name": "Trophy Hunt",
+        "name": "Trophäenjagd",
         "progress": [
-            "Kill twenty different types of monsters."
+            "Töte 20 verschiedene Arten vom Monstern."
         ]
     },
     "gh-518": {
-        "name": "Eternal Wanderer",
+        "name": "Ewige Wanderschaft",
         "progress": [
-            "Complete fifteen different scenarios."
+            "Schließe 15 verschiedene Szenarien ab."
         ]
     },
     "gh-519": {
-        "name": "Battle Legend",
+        "name": "Kampflegende",
         "progress": [
-            "Earn fifteen ✔ from completed battle goals."
+            "Verdiene 15 ✔ durch abgeschlossene Kampfziele."
         ]
     },
     "gh-520": {
-        "name": "Implement of Light",
+        "name": "Werkzeug ddes Lichts",
         "progress": [
-            "Find the Skullbane Axe in the Necromancer's Sanctum.",
-            "Use it to kill seven Living Bones, Living Corpses, or Living Spirits."
+            "Finde den Schädelfluch im Verstck der Nekromantin.",
+            "Töte damit 7 Wandelnde Skelette, Wandelnde Leichen oder Wandelnde Seelen."
         ]
     },
     "gh-521": {
@@ -81,82 +81,82 @@ export default {
         ]
     },
     "gh-522": {
-        "name": "The Thin Places",
+        "name": "Hauchdünn",
         "progress": [
-            "Complete six side scenarios."
+            "Schließe 6 Nebenszenarien ab (Szenarionummer > 51)."
         ]
     },
     "gh-523": {
-        "name": "Aberrant Slayer",
+        "name": "Tilgung des Unnatürlichen",
         "progress": [
-            "Kill one Flame Demon.",
-            "Kill one Frost Demon.",
-            "Kill one Wind Demon.",
-            "Kill one Earth Demon.",
-            "Kill one Night Demon.",
-            "Kill one Sun Demon."
+            "Töte einen Flammendämon.",
+            "Töte einen Frostdämon.",
+            "Töte einen Windddämon.",
+            "Töte einen Erddämon.",
+            "Töte einen Nachtdämon.",
+            "Töte einen Sonnendämon."
         ]
     },
     "gh-524": {
-        "name": "Fearless Stand",
+        "name": "Unerschrocken",
         "progress": [
-            "Kill twenty elite monsters."
+            "Töte 20 Elite-Monster."
         ]
     },
     "gh-525": {
-        "name": "Piety in All Things",
+        "name": "Voller Frömmigkeit",
         "progress": [
-            "Donate 120 gold to the Sanctuary of the Great Oak."
+            "Spende 120 Gold an den Tempel der großen Eiche."
         ]
     },
     "gh-526": {
-        "name": "Vengeance",
-        "unlock": "Open Envelope X",
+        "name": "Rachefeldzug",
+        "unlock": "Öffne Umschlag X",
         "progress": [
-            "Complete four scenarios in Gloomhaven.",
-            "Conclude {SCENARIO 57}."
+            "Schließe 4 Szenarien in Gloomhaven ab.",
+            "Schalte dann {SCENARIO 57} frei und schließe die Suche ab."
         ]
     },
     "gh-527": {
-        "name": "Zealot of the Blood God",
+        "name": "Für den Blutgott",
         "progress": [
-            "Become exhausted twelve times."
+            "Werde 12 Mal erschöpft."
         ]
     },
     "gh-528": {
-        "name": "Goliath Toppler",
+        "name": "Sturz der Giganten",
         "progress": [
-            "Complete four boss scenarios"
+            "Schließe 4 Boss-Szenarien ab."
         ]
     },
     "gh-529": {
-        "name": "The Fall of Man",
+        "name": "Vergangene Zivilisation",
         "progress": [
-            "Complete 2 Lingering Swamp scenarios.",
-            "Conclude {SCENARIO 61}."
+            "Schließe 2 Szenarien im Siechensumpf ab.",
+            "Schalte dann {SCENARIO 61} frei und schließe die Suche ab."
         ]
     },
     "gh-530": {
-        "name": "Augmented Abilities",
+        "name": "Verbesserte Fertigkeiten",
         "progress": [
-            "Purchase four enhancements."
+            "Kaufe 4 Verbesserungen (erfordert globalen Erfolg \"Macht der Verbesserung\")"
         ]
     },
     "gh-531": {
-        "name": "Elemental Samples",
+        "name": "Elementarproben",
         "progress": [
-            "Complete a scenario in Gloomhaven.",
-            "Complete a scenario in Dagger Forest.",
-            "Complete a scenario in Lingering Swamp",
-            "Complete a scenario in Watcher Mountains",
-            "Complete a scenario in Copperneck Mountains",
-            "Complete a scenario in Misty Sea."
+            "Schließe ein Szenario in Gloomhaven ab.",
+            "Schließe ein Szenario im Dolchwald ab.",
+            "Schließe ein Szenario im Siechensumpf ab.",
+            "Schließe ein Szenario im Wächtergebirge ab.",
+            "Schließe ein Szenario im Kupferkamm ab.",
+            "Schließe ein Szenario im Nebelmeer ab.."
         ]
     },
     "gh-532": {
-        "name": "A Helping Hand",
+        "name": "Helfende Hand",
         "progress": [
-            "Experience two other characters achieving their personal quests."
+            "Erlebe, wie 2 andere Charaktere ihre persönlichen Quests abschließen."
         ]
     },
     "gh-533": {
