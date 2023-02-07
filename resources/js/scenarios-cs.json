@@ -7,8 +7,8 @@
             "name": "The Dark Lake",
             "coordinates": {},
             "pages": [
-                "cs/13",
-                "cssb/2"
+                "cs/1/13",
+                "cs/2/2"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -29,8 +29,8 @@
             "name": "Underground Channels",
             "coordinates": {},
             "pages": [
-                "cs/14",
-                "cssb/3"
+                "cs/1/14",
+                "cs/2/3"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -55,8 +55,8 @@
             "name": "Flooded Cavern",
             "coordinates": {},
             "pages": [
-                "cs/15",
-                "cssb/4"
+                "cs/1/15",
+                "cs/2/4"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -82,9 +82,9 @@
             "name": "Infected Warriors",
             "coordinates": {},
             "pages": [
-                "cs/16",
-                "cssb/5",
-                "cssb/6"
+                "cs/1/16",
+                "cs/2/5",
+                "cs/2/6"
             ],
             "chapter_id": 2,
             "links_to": [
@@ -98,9 +98,7 @@
                 "18": "“Boneclad Shawl (Item 25)"
             },
             "rewards": [
-                "Gain “Slug Crossbow” (Item 84)",
-                "Each character gains one random “Orb” item (Item 1-10)",
-                "TODO:: gain slug cross bow... what is party goal?"
+                "Each character gains one random “Orb” item (Item 1-10)"
             ],
             "monsters": [
                 "city-archer",
@@ -116,8 +114,8 @@
             "name": "Blood of the Oozes",
             "coordinates": {},
             "pages": [
-                "cs/17",
-                "cssb/6"
+                "cs/1/17",
+                "cs/2/6"
             ],
             "chapter_id": 2,
             "links_to": [
@@ -127,9 +125,7 @@
                 4
             ],
             "rewards": [
-                "Gain “Slug Crossbow” (Item 84)",
-                "Each character gains one random “Orb” item (Item 1-10)",
-                "TODO:: gain slug cross bow... what is party goal?"
+                "Each character gains one random “Orb” item (Item 1-10)"
             ],
             "achievements_awarded": [
                 "PCSOD"
@@ -147,9 +143,9 @@
             "name": "Poisoned Water",
             "coordinates": {},
             "pages": [
-                "cs/18",
-                "cssb/6",
-                "cssb/7"
+                "cs/1/18",
+                "cs/2/6",
+                "cs/2/7"
             ],
             "requirements": "Ooze Destroyed (Party) COMPLETE",
             "required_by": [
@@ -166,7 +162,7 @@
             "rewards": [
                 "+2 reputation",
                 "+1 prosperity",
-                "Gain “Stun Powder” (Item 21)"
+                "“Stun Powder” (Item 21)"
             ],
             "monsters": [
                 "blood-ooze",
@@ -181,10 +177,10 @@
             "name": "Golden Eggs",
             "coordinates": {},
             "pages": [
-                "cs/19",
-                "cssb/6",
-                "cssb/7",
-                "cssb/9"
+                "cs/1/19",
+                "cs/2/6",
+                "cs/2/7",
+                "cs/2/9"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -195,8 +191,7 @@
                 3
             ],
             "rewards": [
-                "Gain 30 collective gold",
-                "Each character gains one random “Orb” item (Item 1-10)"
+                "Gain 30 collective gold"
             ],
             "achievements_awarded": [
                 "PCSFM"
@@ -216,8 +211,8 @@
             "name": "Shattered Fortress",
             "coordinates": {},
             "pages": [
-                "cs/20",
-                "cssb/7"
+                "cs/1/20",
+                "cs/2/7"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -230,8 +225,7 @@
                 "1": "“Drake's Blood” (Item 14)"
             },
             "rewards": [
-                "Gain “Curious Pendant” (Item 20)",
-                "Each character gains one random “Orb” item (Item 1-10)"
+                "“Curious Pendant” (Item 20)"
             ],
             "monsters": [
                 "ancient-artillery",
@@ -245,10 +239,10 @@
             "name": "Rescue Mission",
             "coordinates": {},
             "pages": [
-                "cs/21",
-                "cssb/8",
-                "cssb/10",
-                "cssb/11a"
+                "cs/1/21",
+                "cs/2/8",
+                "cs/2/10",
+                "cs/2/11a"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -261,7 +255,7 @@
             ],
             "rewards": [
                 "10 gold each",
-                "Gain “Smog Emitter” (Item 62)"
+                "“Smog Emitter” (Item 62)"
             ],
             "monsters": [
                 "ancient-artillery",
@@ -276,10 +270,10 @@
             "name": "Den of Monstrosity",
             "coordinates": {},
             "pages": [
-                "cs/22",
-                "cs/23",
-                "cssb/12",
-                "cssb/13"
+                "cs/1/22",
+                "cs/1/23",
+                "cs/2/12",
+                "cs/2/13"
             ],
             "chapter_id": 3,
             "links_to": [
@@ -293,8 +287,8 @@
                 "10": "One random “Stone” item (Item 94-100)"
             },
             "rewards": [
-                "Gain “Minor Mana Potion” (Item 12)",
-                "Gain “Minor Healing Potion” (Item 20)"
+                "“Minor Mana Potion” (Item 12)",
+                "“Minor Healing Potion” (Item 20)"
             ],
             "monsters": [
                 "black-imp",
@@ -307,8 +301,8 @@
             "name": "Voyage Abound",
             "coordinates": {},
             "pages": [
-                "cs/24",
-                "cssb/13"
+                "cs/1/24",
+                "cs/2/13"
             ],
             "chapter_id": 5,
             "links_to": [
@@ -331,8 +325,8 @@
             "name": "Uncovering the Source",
             "coordinates": {},
             "pages": [
-                "cs/25",
-                "cssb/13"
+                "cs/1/25",
+                "cs/2/13"
             ],
             "chapter_id": 5,
             "links_to": [
@@ -354,8 +348,8 @@
             "name": "Corpse Cavern",
             "coordinates": {},
             "pages": [
-                "cs/26",
-                "cssb/14"
+                "cs/1/26",
+                "cs/2/14"
             ],
             "chapter_id": 1,
             "linked_from": [
@@ -365,7 +359,6 @@
                 "7": "One random “Stone” item (Item 94-100)"
             },
             "rewards": [
-                "Gain “Bulkwark Banner” (Item 85)",
                 "+1 prosperity",
                 "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\nIf there are non of these available in the shop, gain 20 gold instead"
             ],
@@ -381,9 +374,9 @@
             "name": "Cultist Cave",
             "coordinates": {},
             "pages": [
-                "cs/27",
-                "cssb/15",
-                "cssb/16"
+                "cs/1/27",
+                "cs/2/15",
+                "cs/2/16"
             ],
             "chapter_id": 1,
             "linked_from": [
@@ -394,7 +387,7 @@
                 "9": "“Orb of Fortune” (Item 9)"
             },
             "rewards": [
-                "Gain “Remote Beetle” (Item 86)",
+                "“Remote Beetle” (Item 86)",
                 "15 experience each"
             ],
             "monsters": [
@@ -410,8 +403,8 @@
             "name": "Ambush of Beasts",
             "coordinates": {},
             "pages": [
-                "cs/28",
-                "cssb/16"
+                "cs/1/28",
+                "cs/2/16"
             ],
             "chapter_id": 5,
             "links_to": [
@@ -423,6 +416,10 @@
             "treasures": {
                 "34": "Suffer hazardous terrain damage, gain {INVISIBLE}"
             },
+            "rewards": [
+                "15 gold each",
+                "Each character gains one random “Orb” item (Item 1-10)"
+            ],
             "monsters": [
                 "cave-bear",
                 "giant-viper",
@@ -437,8 +434,8 @@
             "name": "Preto Krisanta",
             "coordinates": {},
             "pages": [
-                "cs/29",
-                "cssb/16"
+                "cs/1/29",
+                "cs/2/16"
             ],
             "chapter_id": 5,
             "linked_from": [
@@ -464,10 +461,10 @@
             "name": "Orb Extraction",
             "coordinates": {},
             "pages": [
-                "cs/30",
-                "cs/31",
-                "cssb/17",
-                "cssb/18"
+                "cs/1/30",
+                "cs/1/31",
+                "cs/2/17",
+                "cs/2/18"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -497,9 +494,9 @@
             "name": "Grab and Go",
             "coordinates": {},
             "pages": [
-                "cs/32",
-                "cssb/18",
-                "cssb/19"
+                "cs/1/32",
+                "cs/2/18",
+                "cs/2/19"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -513,7 +510,7 @@
                 "22": "“Boots of Perpetuity” (Item 19)"
             },
             "rewards": [
-                "100 gold each This money must immediately be spent on enhancements"
+                "100 gold each. This money must immediately be spent on enhancements"
             ],
             "monsters": [
                 "black-imp",
@@ -528,9 +525,9 @@
             "name": "Elemental Experiments",
             "coordinates": {},
             "pages": [
-                "cs/33",
-                "cssb/19",
-                "cssb/20"
+                "cs/1/33",
+                "cs/2/19",
+                "cs/2/20"
             ],
             "chapter_id": 3,
             "links_to": [
@@ -546,7 +543,7 @@
                 "16": "Perform “Heal 6, Self”, gain {POISON}"
             },
             "rewards": [
-                "Gain “Major Mana Potion” (Item 48)"
+                "“Major Mana Potion” (Item 48)"
             ],
             "monsters": [
                 "earth-demon",
@@ -564,15 +561,22 @@
             "name": "Midnight Ritual",
             "coordinates": {},
             "pages": [
-                "cs/34",
-                "cs/35",
-                "cssb/20",
-                "cssb/21"
+                "cs/1/34",
+                "cs/1/35",
+                "cs/2/20",
+                "cs/2/21"
             ],
             "requirements": "Fallen Lava (Party) INCOMPLETE",
             "required_by": [
                 {
                     "incomplete": [
+                        "PCSFL"
+                    ]
+                }
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
                         "PCSFL"
                     ]
                 }
@@ -602,8 +606,8 @@
             "name": "A Fiery Death",
             "coordinates": {},
             "pages": [
-                "cs/36",
-                "cssb/21"
+                "cs/1/36",
+                "cs/2/21"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -620,7 +624,7 @@
                 "36": "10 experience, gain {INVSIBLE}"
             },
             "rewards": [
-                "Gain “Magma Waders” (Item 99)"
+                "“Magma Waders” (Item 99)"
             ],
             "monsters": [
                 "earth-demon",
@@ -633,9 +637,9 @@
             "name": "Imp Temple",
             "coordinates": {},
             "pages": [
-                "cs/37",
-                "cssb/22",
-                "cssb/23"
+                "cs/1/37",
+                "cs/2/22",
+                "cs/2/23"
             ],
             "chapter_id": 1,
             "linked_from": [
@@ -660,9 +664,9 @@
             "name": "Icicle Chambers",
             "coordinates": {},
             "pages": [
-                "cs/38",
-                "cssb/23",
-                "cssb/24"
+                "cs/1/38",
+                "cs/2/23",
+                "cs/2/24"
             ],
             "chapter_id": 4,
             "links_to": [
@@ -692,9 +696,9 @@
             "name": "Eerie Grotto",
             "coordinates": {},
             "pages": [
-                "cs/39",
-                "cssb/25",
-                "cssb/26"
+                "cs/1/39",
+                "cs/2/25",
+                "cs/2/26"
             ],
             "chapter_id": 4,
             "links_to": [
@@ -724,9 +728,9 @@
             "name": "Brightspark, Behold!",
             "coordinates": {},
             "pages": [
-                "cs/40",
-                "cssb/26",
-                "cssb/27"
+                "cs/1/40",
+                "cs/2/26",
+                "cs/2/27"
             ],
             "chapter_id": 3,
             "links_to": [
@@ -753,9 +757,9 @@
             "name": "Thermal Stone Peak",
             "coordinates": {},
             "pages": [
-                "cs/41",
-                "cssb/27",
-                "cssb/28"
+                "cs/1/41",
+                "cs/2/27",
+                "cs/2/28"
             ],
             "requirements": "Frozen Warrior (Party) COMPLETE",
             "required_by": [
@@ -768,7 +772,7 @@
             "chapter_id": 4,
             "linked_from": [
                 23,
-                26
+                24
             ],
             "treasures": {
                 "13": "“Orb of Despair” (Item 10)"
@@ -789,8 +793,8 @@
             "name": "Frostbite Cavern",
             "coordinates": {},
             "pages": [
-                "cs/42",
-                "cssb/29"
+                "cs/1/42",
+                "cs/2/29"
             ],
             "chapter_id": 1,
             "links_to": [
@@ -801,7 +805,7 @@
             ],
             "rewards": [
                 "10 gold each",
-                "Gain “Dizzying Tincture” (Item 58)"
+                "“Dizzying Tincture” (Item 58)"
             ],
             "monsters": [
                 "frost-demon",
@@ -815,9 +819,9 @@
             "name": "Fountain of Bones",
             "coordinates": {},
             "pages": [
-                "cs/43",
-                "cssb/30",
-                "cssb/31"
+                "cs/1/43",
+                "cs/2/30",
+                "cs/2/31"
             ],
             "chapter_id": 6,
             "links_to": [
@@ -844,9 +848,9 @@
             "name": "Burial Chamber",
             "coordinates": {},
             "pages": [
-                "cs/44",
-                "cssb/28",
-                "cssb/31"
+                "cs/1/44",
+                "cs/2/28",
+                "cs/2/31"
             ],
             "chapter_id": 6,
             "links_to": [
@@ -870,9 +874,9 @@
             "name": "Undead Terrors",
             "coordinates": {},
             "pages": [
-                "cs/45",
-                "cssb/32",
-                "cssb/33"
+                "cs/1/45",
+                "cs/2/32",
+                "cs/2/33"
             ],
             "chapter_id": 6,
             "links_to": [
@@ -914,9 +918,9 @@
             "name": "Eternal Portals",
             "coordinates": {},
             "pages": [
-                "cs/46",
-                "cssb/33",
-                "cssb/34"
+                "cs/1/46",
+                "cs/2/33",
+                "cs/2/34"
             ],
             "chapter_id": 3,
             "linked_from": [
@@ -938,16 +942,16 @@
             "name": "Confronting the Past",
             "coordinates": {},
             "pages": [
-                "cs/47",
-                "cssb/34",
-                "cssb/35"
+                "cs/1/47",
+                "cs/2/34",
+                "cs/2/35"
             ],
             "chapter_id": 1,
             "linked_from": [
                 30
             ],
             "rewards": [
-                "Read {PAGE} 75 (https://www.thecrimsonscales.com/endgame)",
+                "Read {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
                 "Password “Water Hydra”"
             ],
             "monsters": [
@@ -966,9 +970,9 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/48",
-                "cssb/36",
-                "cssb/37"
+                "cs/1/48",
+                "cs/2/36",
+                "cs/2/37"
             ],
             "requirements": "“Protect and Serve” personal quest",
             "chapter_id": 101,
@@ -976,10 +980,12 @@
                 34
             ],
             "rewards": [
-                "Gain “Blazing Boots” (Item 87)",
+                "“Blazing Boots” (Item 87)",
                 "+1 reputation"
             ],
-            "cards": [],
+            "cards": [
+                "Q-330"
+            ],
             "monsters": [
                 "inox-archer",
                 "inox-bodyguard",
@@ -993,9 +999,9 @@
             "name": "Great Oak Escape",
             "coordinates": {},
             "pages": [
-                "cs/49",
-                "cssb/36",
-                "cssb/38"
+                "cs/1/49",
+                "cs/2/36",
+                "cs/2/38"
             ],
             "requirements": "“Protect and Serve” personal quest",
             "chapter_id": 101,
@@ -1010,7 +1016,9 @@
                 "+2 reputation",
                 "All characters add one {BLESS} to their attack modifer deck for the next scenario"
             ],
-            "cards": [],
+            "cards": [
+                "Q-330"
+            ],
             "monsters": [
                 "hound",
                 "inox-archer",
@@ -1025,9 +1033,9 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/50",
-                "cssb/38",
-                "cssb/39"
+                "cs/1/50",
+                "cs/2/38",
+                "cs/2/39"
             ],
             "requirements": "“Bandit Banisher” personal quest",
             "chapter_id": 101,
@@ -1038,7 +1046,9 @@
                 "28": "“Chain Mace” (Item 14)",
                 "40": "One random “Stone” item (Item 94-100)"
             },
-            "cards": [],
+            "cards": [
+                "Q-335"
+            ],
             "monsters": [
                 "bandit-archer",
                 "bandit-guard",
@@ -1051,11 +1061,10 @@
             "game": "cs",
             "name": "Hunters Bounty",
             "coordinates": {},
-            "is_side": true,
             "pages": [
-                "cs/51",
-                "cssb/40",
-                "cssb/41"
+                "cs/1/51",
+                "cs/2/40",
+                "cs/2/41"
             ],
             "requirements": "“Bandit Banisher” personal quest",
             "chapter_id": 101,
@@ -1070,7 +1079,9 @@
                 "Unlock Envelope {CG}",
                 "10 gold each"
             ],
-            "cards": [],
+            "cards": [
+                "Q-335"
+            ],
             "monsters": [
                 "bandit-archer",
                 "bandit-guard",
@@ -1084,9 +1095,9 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/52",
-                "cssb/41",
-                "cssb/42"
+                "cs/1/52",
+                "cs/2/41",
+                "cs/2/42"
             ],
             "requirements": "“Natural Selection” personal quest",
             "chapter_id": 101,
@@ -1099,7 +1110,9 @@
             "rewards": [
                 "Gain one random “Stone” item (Item 94-100)"
             ],
-            "cards": [],
+            "cards": [
+                "Q-344"
+            ],
             "monsters": [
                 "flame-demon",
                 "frost-demon",
@@ -1113,11 +1126,10 @@
             "game": "cs",
             "name": "Alters of Confusion",
             "coordinates": {},
-            "is_side": true,
             "pages": [
-                "cs/53",
-                "cssb/42",
-                "cssb/43"
+                "cs/1/53",
+                "cs/2/42",
+                "cs/2/43"
             ],
             "requirements": "“Natural Selection” personal quest",
             "chapter_id": 101,
@@ -1130,7 +1142,9 @@
             "rewards": [
                 "Unlock Envelope {LU}"
             ],
-            "cards": [],
+            "cards": [
+                "Q-344"
+            ],
             "monsters": [
                 "black-imp",
                 "living-spirit",
@@ -1145,9 +1159,9 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/54",
-                "cssb/44",
-                "cssb/45"
+                "cs/1/54",
+                "cs/2/44",
+                "cs/2/45"
             ],
             "requirements": "“An Adder Divides” personal quest",
             "chapter_id": 101,
@@ -1159,7 +1173,9 @@
                 "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
                 "“An Adder Divides” quest is not yet complete"
             ],
-            "cards": [],
+            "cards": [
+                "Q-346"
+            ],
             "monsters": [
                 "earth-demon",
                 "giant-viper"
@@ -1172,11 +1188,11 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/55",
-                "cssb/44",
-                "cssb/45"
+                "cs/1/55",
+                "cs/2/44",
+                "cs/2/45"
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "21": "“Steel Helmet” (Item 22)"
             },
@@ -1184,7 +1200,7 @@
                 "Gain 50 collective gold"
             ],
             "cards": [
-                "TODO:: City 43"
+                "C-43"
             ],
             "monsters": [
                 "rending-drake",
@@ -1198,16 +1214,16 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/56",
-                "cssb/45",
-                "cssb/46"
+                "cs/1/56",
+                "cs/2/45",
+                "cs/2/46"
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "rewards": [
                 "Gain 50 collective gold"
             ],
             "cards": [
-                "TODO:: City 43"
+                "C-43"
             ],
             "monsters": [
                 "bandit-archer",
@@ -1221,12 +1237,12 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/57",
-                "cssb/45",
-                "cssb/46",
-                "cssb/47"
+                "cs/1/57",
+                "cs/2/45",
+                "cs/2/46",
+                "cs/2/47"
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "33": "25  gold, gain {POISON}",
                 "27": "“Woven Plate Armor” (Item 23)",
@@ -1237,7 +1253,6 @@
                 "10 experience each"
             ],
             "cards": [
-                "TODO:: City 1"
             ],
             "monsters": [
                 "cave-bear",
@@ -1252,11 +1267,11 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/58",
-                "cssb/47",
-                "cssb/48"
+                "cs/1/58",
+                "cs/2/47",
+                "cs/2/48"
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "41": "“Ashsteel Gauntlets” (Item 61)"
             },
@@ -1265,7 +1280,7 @@
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
             "cards": [
-                "TODO:: City 31"
+                "C-31"
             ],
             "monsters": [
                 "ancient-artillery",
@@ -1280,11 +1295,11 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/59",
-                "cssb/49",
-                "cssb/52"
+                "cs/1/59",
+                "cs/2/49",
+                "cs/2/52"
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "treasures": {
                 "5": "“Concussion Mine” (Item 31)",
                 "20": "One random “Stone” item (Item 94-100)",
@@ -1295,7 +1310,7 @@
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
             "cards": [
-                "TODO:: City 6"
+                "C-6"
             ],
             "monsters": [
                 "harrower-infester",
@@ -1310,18 +1325,18 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/60",
-                "cssb/50",
-                "cssb/51"
+                "cs/1/60",
+                "cs/2/50",
+                "cs/2/51"
             ],
-            "chapter_id": 104,
+            "chapter_id": 102,
             "rewards": [
                 "+1 reputation",
                 "+1 prosperity",
                 "1 ✓ each"
             ],
             "cards": [
-                "TODO:: Road 25"
+                "R-25"
             ],
             "monsters": [
                 "black-imp",
@@ -1336,16 +1351,16 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/61",
-                "cssb/51"
+                "cs/1/61",
+                "cs/2/51"
             ],
-            "chapter_id": 104,
+            "chapter_id": 102,
             "rewards": [
                 "+2 reputation",
                 "15 experience each"
             ],
             "cards": [
-                "TODO:: Road 10"
+                "R-10"
             ],
             "monsters": [
                 "cave-bear",
@@ -1361,20 +1376,20 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/62",
-                "cssb/54"
+                "cs/1/62",
+                "cs/2/54"
             ],
-            "chapter_id": 104,
+            "chapter_id": 102,
             "treasures": {
                 "47": "15 gold"
             },
             "rewards": [
-                "Gain “Ghost Viper Venom” (Item 55)",
+                "“Ghost Viper Venom” (Item 55)",
                 "+1 prosperity",
                 "10 gold each"
             ],
             "cards": [
-                "TODO:: Road 54"
+                "R-54"
             ],
             "monsters": [
                 "earth-demon",
@@ -1389,17 +1404,17 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/63",
-                "cssb/52",
-                "cssb/56"
+                "cs/1/63",
+                "cs/2/52",
+                "cs/2/56"
             ],
-            "chapter_id": 104,
+            "chapter_id": 102,
             "rewards": [
                 "10 experience each",
                 "20 gold each"
             ],
             "cards": [
-                "TODO:: Road 52"
+                "R-52"
             ],
             "monsters": [
                 "giant-viper",
@@ -1416,8 +1431,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/64",
-                "cssb/55"
+                "cs/1/64",
+                "cs/2/55"
             ],
             "requirements": "Oaks Alliance (Party) COMPLETE",
             "required_by": [
@@ -1427,12 +1442,12 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "rewards": [
-                "During the next visit to Gloomhaven, donations to the Sanctuary  cost 0 gold"
+                "During the next visit to Gloomhaven, donations to the Sanctuary cost 0 gold"
             ],
             "cards": [
-                "TODO:: City 42"
+                "C-42"
             ],
             "monsters": [
                 "city-archer",
@@ -1450,8 +1465,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/65",
-                "cssb/56"
+                "cs/1/65",
+                "cs/2/56"
             ],
             "requirements": "Inox Alliance (Party) COMPLETE",
             "required_by": [
@@ -1461,13 +1476,13 @@
                     ]
                 }
             ],
-            "chapter_id": 105,
+            "chapter_id": 103,
             "rewards": [
                 "10 experience each",
                 "1 ✓ each"
             ],
             "cards": [
-                "TODO:: City 42"
+                "C-42"
             ],
             "monsters": [
                 "captain-of-the-guard",
@@ -1485,11 +1500,11 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/66",
-                "cssb/57",
-                "cssb/58"
+                "cs/1/66",
+                "cs/2/57",
+                "cs/2/58"
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "treasures": {
                 "41": "“Ashsteel Gauntlets” (Item 61)"
             },
@@ -1511,14 +1526,14 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/67",
-                "cssb/57",
-                "cssb/58",
-                "cssb/59"
+                "cs/1/67",
+                "cs/2/57",
+                "cs/2/58",
+                "cs/2/59"
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "rewards": [
-                "Gain “Drakescale Shield” (Item 37)"
+                "“Drakescale Shield” (Item 37)"
             ],
             "monsters": [
                 "black-imp",
@@ -1534,13 +1549,13 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/68",
-                "cssb/59",
-                "cssb/61"
+                "cs/1/68",
+                "cs/2/59",
+                "cs/2/61"
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "rewards": [
-                "Gain “Sphere of Currents” (Item 83)",
+                "“Sphere of Currents” (Item 83)",
                 "5 gold each"
             ],
             "monsters": [
@@ -1556,11 +1571,11 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/69",
-                "cssb/61",
-                "cssb/62"
+                "cs/1/69",
+                "cs/2/61",
+                "cs/2/62"
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "treasures": {
                 "23": "“Trophy Helmet” (Item 12)"
             },
@@ -1580,12 +1595,12 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "cs/70",
-                "cs/71",
-                "cssb/62",
-                "cssb/63"
+                "cs/1/70",
+                "cs/1/71",
+                "cs/2/62",
+                "cs/2/63"
             ],
-            "chapter_id": 10,
+            "chapter_id": 104,
             "treasures": {
                 "44": "“Mana Medicine” (Item 60)",
                 "31": "“Drake's Blood” (Item 14)"
@@ -1610,16 +1625,16 @@
             "name": "Disarm the Machine",
             "coordinates": {},
             "is_side": true,
+            "solo": "BM",
             "pages": [
-                "cs/72",
-                "cssb/63",
-                "cssb/64"
+                "cs/1/72",
+                "cs/2/63",
+                "cs/2/64"
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Chain Cannon” (Item 45)"
+                "“Chain Cannon” (Item 45)"
             ],
-            "requirements": "BM Level 5",
             "monsters": [
                 "ancient-artillery",
                 "stone-golem"
@@ -1631,16 +1646,16 @@
             "name": "Elemental Converter",
             "coordinates": {},
             "is_side": true,
+            "solo": "BK",
             "pages": [
-                "cs/73",
-                "cssb/64",
-                "cssb/65"
+                "cs/1/73",
+                "cs/2/64",
+                "cs/2/65"
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Test Tube” (Item 48)"
+                "“Test Tube” (Item 48)"
             ],
-            "requirements": "BK Level 5",
             "monsters": [
                 "black-imp",
                 "deep-terror",
@@ -1656,17 +1671,15 @@
             "name": "Penitentiary Lockdown",
             "coordinates": {},
             "is_side": true,
+            "solo": "CG",
             "pages": [
-                "cs/74",
-                "cssb/66"
+                "cs/1/74",
+                "cs/2/66"
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain one of the following as an item and the other as an item design:",
-                "“Claw Trap” (Item 34)",
-                "“Clamp Trap” (Item 56)"
+                "Gain one of the following as an item and the other as an item design: “Claw Trap” (Item 34), “Clamp Trap” (Item 56)"
             ],
-            "requirements": "CG Level 5",
             "monsters": [
                 "bandit-archer",
                 "bandit-guard"
@@ -1678,15 +1691,15 @@
             "name": "Forest Invaders",
             "coordinates": {},
             "is_side": true,
+            "solo": "CT",
             "pages": [
-                "cs/75",
-                "cssb/67"
+                "cs/1/75",
+                "cs/2/67"
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Nature Armlets” (Item 47)"
+                "“Nature Armlets” (Item 47)"
             ],
-            "requirements": "CT Level 5",
             "monsters": [
                 "cave-bear",
                 "giant-viper",
@@ -1701,10 +1714,11 @@
             "name": "Through the Fire and Flames",
             "coordinates": {},
             "is_side": true,
+            "solo": "FK",
             "pages": [
-                "cs/76",
-                "cssb/67",
-                "cssb/69"
+                "cs/1/76",
+                "cs/2/67",
+                "cs/2/69"
             ],
             "chapter_id": 100,
             "treasures": {
@@ -1712,9 +1726,8 @@
                 "49": "“Magma Waders” (Item 99)"
             },
             "rewards": [
-                "Gain “Flaming Armor” (Item 51)"
+                "“Flaming Armor” (Item 51)"
             ],
-            "requirements": "FK Level 5",
             "monsters": [
                 "flame-demon",
                 "rending-drake-cs",
@@ -1728,15 +1741,15 @@
             "name": "Archaic Preservation",
             "coordinates": {},
             "is_side": true,
+            "solo": "HP",
             "pages": [
-                "cs/77",
-                "cssb/69"
+                "cs/1/77",
+                "cs/2/69"
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Robe of Soothing” (Item 42)"
+                "“Robe of Soothing” (Item 42)"
             ],
-            "requirements": "HO Level 5",
             "monsters": [
                 "ancient-artillery",
                 "black-imp",
@@ -1751,16 +1764,16 @@
             "name": "Hallow Redemption",
             "coordinates": {},
             "is_side": true,
+            "solo": "HO",
             "pages": [
-                "cs/78",
-                "cssb/70",
-                "cssb/71"
+                "cs/1/78",
+                "cs/2/70",
+                "cs/2/71"
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Cleansed Voidheart” (Item 57)"
+                "“Cleansed Voidheart” (Item 57)"
             ],
-            "requirements": "HO Level 5",
             "monsters": [
                 "aesther-ashblade",
                 "cave-bear",
@@ -1774,15 +1787,15 @@
             "name": "A Cornered Viper",
             "coordinates": {},
             "is_side": true,
+            "solo": "MF",
             "pages": [
-                "cs/79",
-                "cssb/72"
+                "cs/1/79",
+                "cs/2/72"
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Field Mortar” (Item 53)"
+                "“Field Mortar” (Item 53)"
             ],
-            "requirements": "HP Level 5",
             "monsters": [
                 "cave-bear",
                 "giant-viper",
@@ -1798,16 +1811,16 @@
             "name": "Glowing Crystals",
             "coordinates": {},
             "is_side": true,
+            "solo": "LU",
             "pages": [
-                "cs/80",
-                "cssb/72",
-                "cssb/73"
+                "cs/1/80",
+                "cs/2/72",
+                "cs/2/73"
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Luminous Carapace” (Item 50)"
+                "“Luminous Carapace” (Item 50)"
             ],
-            "requirements": "LU Level 5",
             "monsters": [
                 "deep-terror",
                 "lurker"
@@ -1819,16 +1832,16 @@
             "name": "Glowing Crystals",
             "coordinates": {},
             "is_side": true,
+            "solo": "SP",
             "pages": [
-                "cs/81",
-                "cssb/73",
-                "cssb/74"
+                "cs/1/81",
+                "cs/2/73",
+                "cs/2/74"
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Spirit Libation” (Item 41)"
+                "“Spirit Libation” (Item 41)"
             ],
-            "requirements": "SP Level 5",
             "monsters": [
                 "vermling-shaman"
             ]
@@ -1839,15 +1852,15 @@
             "name": "Otherworldly Strangers",
             "coordinates": {},
             "is_side": true,
+            "solo": "ST",
             "pages": [
-                "cs/82",
-                "cssb/74"
+                "cs/1/82",
+                "cs/2/74"
             ],
             "chapter_id": 100,
             "rewards": [
-                "Gain “Moonleather Boots” (Item 40)"
+                "“Moonleather Boots” (Item 40)"
             ],
-            "requirements": "ST Level 5",
             "monsters": [
                 "city-archer",
                 "city-guard",
@@ -1869,7 +1882,9 @@
             ],
             "requirements": "“At All Costs” personal quest",
             "chapter_id": 12,
-            "cards": [],
+            "rewards": [
+                "“Rockspine Bulwark” (Item AA01)"
+            ],
             "monsters": [
                 "harrower-aegis",
                 "hound",
@@ -1891,7 +1906,9 @@
             ],
             "requirements": "“The Weight of Failure” personal quest",
             "chapter_id": 12,
-            "cards": [],
+            "rewards": [
+                "“Ghostshimmer Honey” (Item AA02)"
+            ],
             "monsters": [
                 "giant-viper",
                 "ravenous-gharial",
@@ -1910,9 +1927,10 @@
                 "csao/9",
                 "csao/10"
             ],
-            "requirements": "AA Level 5",
             "chapter_id": 100,
-            "cards": [],
+            "rewards": [
+                "“Steelsilk Spinneret” (Item AA03)"
+            ],
             "monsters": [
                 "flame-demon",
                 "frost-demon",
@@ -1935,7 +1953,29 @@
             ],
             "requirements": "“Ingenious Inventor” personal quest and “Power Modulator” item equipped",
             "chapter_id": 13,
-            "cards": [],
+            "rewards": [
+                [
+                    "“Ingenious Inventor” quest complete",
+                    "Open envelope {QA}",
+                    "“Steam Piston Hammer” design (Item QA02)",
+                    "“Spider Climb Gloves” design (Item QA03)"
+                ],
+                [
+                    "“Ingenious Inventor” quest complete",
+                    "Open envelope {QA}",
+                    "Gain one of the following: “Steam Piston Hammer” (Item QA02) OR “Spider Climb Gloves” (Item QA03)",
+                    "Add a copy of the chosen item to the city's available supply",
+                    "Add the other item to the random item design deck"
+                ],
+                [
+                    "“Ingenious Inventor” quest complete",
+                    "Open envelope {QA}",
+                    "“Steam Piston Hammer” (Item QA02)",
+                    "“Spider Climb Gloves” (Item QA03)",
+                    "Add copies to the city's available supply"
+                ]
+            ],
+            "prompt": "capstoneTest",
             "monsters": [
                 "clockwork-soldier",
                 "clockwork-railcaster"
@@ -1954,7 +1994,12 @@
             ],
             "requirements": "“Scrap Diver” personal quest",
             "chapter_id": 13,
-            "cards": [],
+            "rewards": [
+                "“Scrap Diver” quest complete",
+                "Open envelope {QA}",
+                "15xA gold each (where A is the number of Ancient Scrap recovered",
+                "Add City Event QA-03 to the deck"
+            ],
             "monsters": [
                 "giant-viper",
                 "living-bones",
@@ -1973,9 +2018,10 @@
                 "csao/23",
                 "csao/24"
             ],
-            "requirements": "QA Level 5",
             "chapter_id": 100,
-            "cards": [],
+            "rewards": [
+                "“Auscudee of the Makers” (Item QA06)"
+            ],
             "monsters": [
                 "clockwork-soldier",
                 "clockwork-railcaster"
@@ -1993,7 +2039,6 @@
             ],
             "requirements": "“Brutal Enforcer” personal quest",
             "chapter_id": 14,
-            "cards": [],
             "monsters": [
                 "bandit-guard-hired-muscle",
                 "bandit-archer-hired-muscle",
@@ -2013,7 +2058,11 @@
             ],
             "requirements": "“Brutal Enforcer” personal quest",
             "chapter_id": 14,
-            "cards": [],
+            "rewards": [
+                "“Brutal Enforcer” quest complete",
+                "Open Envelope {RM}",
+                "+1 prosperity"
+            ],
             "monsters": [
                 "bandit-guard",
                 "bandit-archer",
@@ -2035,7 +2084,6 @@
             ],
             "requirements": "“Apex Predator” personal quest",
             "chapter_id": 14,
-            "cards": [],
             "monsters": [
                 "hound",
                 "giant-viper",
@@ -2056,7 +2104,12 @@
             ],
             "requirements": "“Apex Predator” personal quest",
             "chapter_id": 14,
-            "cards": [],
+            "rewards": [
+                "“Apex Predator” quest complete",
+                "Open Envelope {RM}",
+                "“Terrorscale Saber” design (Item RM03)",
+                "“Terrorscale Crossblades” design (Item RM04)"
+            ],
             "monsters": [
                 "terrorscale-drake",
                 "gnashing-drake",
@@ -2085,7 +2138,17 @@
                 }
             ],
             "chapter_id": 14,
-            "cards": [],
+            "rewards": [
+                [
+                    "40 collective gold",
+                    "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+                ],
+                [
+                    "2 ✓ each",
+                    "“Lucky Eye” design (Item 063)"
+                ]
+            ],
+            "prompt": "unseenPlight",
             "monsters": [
                 "ravenous-gharial",
                 "black-imp"
@@ -2101,9 +2164,12 @@
                 "csao/40",
                 "csao/41"
             ],
-            "requirements": "RM Level 5",
             "chapter_id": 100,
-            "cards": [],
+            "rewards": [
+                "“Rite of Ruin” design (Item RM05)",
+                "If at least three Vermlings were alive at the end of the eighth round: 5 gold",
+                "If at least five Vermlings were alive at the end of the eighth round: ✓"
+            ],
             "monsters": [
                 "gnashing-drake",
                 "spitting-drake",
@@ -2125,6 +2191,10 @@
             ],
             "requirements": "No Ruinmaw in party",
             "chapter_id": 14,
+            "rewards": [
+                "10 experience each",
+                "“Savage Cuirass” design (Item RM06)"
+            ],
             "monsters": [
                 "hound",
                 "ruinmaw",
@@ -2168,15 +2238,15 @@
             "name": "Personal Quests"
         },
         {
-            "id": 104,
+            "id": 102,
             "name": "Road Events"
         },
         {
-            "id": 105,
+            "id": 103,
             "name": "City Events"
         },
         {
-            "id": 10,
+            "id": 104,
             "name": "Side Quests"
         },
         {

@@ -51,3 +51,11 @@
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
 }
+
+a.desc-link {
+    font-style: italic;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

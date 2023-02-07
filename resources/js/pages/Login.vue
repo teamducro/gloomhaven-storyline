@@ -37,7 +37,7 @@ export default {
                 this.$router.replace('/story');
             }).catch(e => {
                 // throw e;
-                this.$bus.$emit('toast', 'This link is invalid or has expired, please restore your purchase on the campaign page.', false);
+                this.$bus.$emit('toast', 'This link is invalid or has expired, please restore your purchase on the <a href="/tracker/#/campaigns" class="underline">campaigns page</a>.', false);
                 this.$router.replace('/story');
             });
         },

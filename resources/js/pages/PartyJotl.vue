@@ -19,7 +19,7 @@
                     ref="city-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, true)" :disabled="!checkedItems.length"
+                        <button @click="draw(checkedItems, true)" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
@@ -36,18 +36,7 @@
             </div>
 
             <div class="w-full mt-8">
-                <ul class="flex flex-row flex-wrap -mx-2">
-                    <li v-for="(checked, id) in sheet.characterUnlocks" :key="id" class="flex items-center"
-                        :class="'order-'+sheet.characterOrder[id]">
-                        <checkbox group="items"
-                                  :checked="checked"
-                                  :disabled="sheet.starterCharacters.includes(id)"
-                                  @change="(_, isChecked) => {unlockCharacter(id, isChecked)}"></checkbox>
-                        <span class="w-8 font-title">
-                            <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
-                        </span>
-                    </li>
-                </ul>
+                <unlock-characters :sheet="sheet" @change="store"></unlock-characters>
             </div>
 
         </div>
@@ -64,6 +53,7 @@ import PartyGh from "./PartyGh";
 export default {
     extends: PartyGh,
     mixins: [GetCampaignName],
+    inject: ['appData'],
     data() {
         return {
             sheet: null,
@@ -90,7 +80,7 @@ export default {
         async render() {
             this.loading = true;
 
-            this.sheet = this.sheetRepository.make(app.game);
+            this.sheet = this.sheetRepository.make(this.appData.game);
             this.campaignName = this.getCampaignName();
 
             this.isLocalCampaign = app.campaignId === 'local';

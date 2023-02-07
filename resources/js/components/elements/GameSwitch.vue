@@ -1,5 +1,5 @@
 <template xmlns="http://www.w3.org/1999/html">
-    <div v-show="games.length > 1" ref="game-switch" class="game-switch mdc-select w-full"
+    <div ref="game-switch" class="game-switch mdc-select w-full"
          :class="{'with-transparency': withTransparency}">
         <span class="mdc-list-item absolute z-1 pointer-events-none !text-xs !-mt-2 !text-white2-60">
             {{ $t('Selected Game') }}
@@ -32,6 +32,7 @@ import {MDCSelect} from "@material/select/component";
 import GameData from "../../services/GameData";
 
 export default {
+    inject: ['appData'],
     props: {
         withTransparency: {
             type: Boolean,
@@ -64,7 +65,7 @@ export default {
             document.querySelector('.game-switch .mdc-select__selected-text').click();
         },
         setCurrent() {
-            this.current = app.game;
+            this.current = this.appData.game;
         },
         setGames(enabledGames) {
             this.games = enabledGames || app.enabledGames;

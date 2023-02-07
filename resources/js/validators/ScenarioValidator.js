@@ -14,6 +14,7 @@ export default class ScenarioValidator {
         this.sheet = (new SheetRepository).make(app.game);
         let count = 1;
 
+        // Validate all scenarios
         while (this.needsValidating) {
             this.needsValidating = false;
             app.scenarios.each((scenario) => {
@@ -26,14 +27,21 @@ export default class ScenarioValidator {
                 this.resetPrompts(scenario);
                 this.checkRequired(scenario);
             });
+
+            // Prevent infinite loop
             if (count > 4) {
                 this.needsValidating = false;
             }
             count++;
         }
 
+        // Validate all achievements
         this.achievementValidator.validate();
+
+        // Validate all quest summaries
         this.questValidator.validate();
+
+        // Sync story with server
         if (shouldSync) {
             this.storySyncer.store();
         }
@@ -106,7 +114,7 @@ export default class ScenarioValidator {
     checkRequired(scenario) {
         // Skip when no linked scenarios are completed, scenario is hidden or was completed before
         let states = this.linkedStates(scenario);
-        if (states.has(ScenarioState.complete) === false || scenario.isHidden() || scenario.isComplete()) {
+        if ((!scenario.is_side && states.has(ScenarioState.complete) === false) || scenario.isHidden() || scenario.isComplete()) {
             return;
         }
 

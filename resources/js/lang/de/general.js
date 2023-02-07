@@ -9,7 +9,9 @@ export default {
     "City Event Decks": "Stadt-Ereignis Deck",
     "Add city events": "Fügt Stadt-Ereignisse hinzu",
     "Road Event Decks": "Weg-Ereignis Deck",
-    "Add road events": "Fügt Weg-Ereignisse hinzu",
+    "Add road events": "Füge Weg-Ereignisse hinzu",
+    "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.",
+    "completed scenarios": "abgeschlossene Szenarien",
     "5 Ancient Technology Global Achievements": "5x “Alte Technologie” globale Errungenschaft erhalten",
     "Add City Event 75 & Road Event 66": "Fügt Stadt-Ereignis 75 & Weg-Ereignis 66 hinzu",
     "Add City Event 76 & Road Event 67": "Fügt Stadt-Ereignis 76 & Weg-Ereignis 67 hinzu",
@@ -54,13 +56,15 @@ export default {
     "hidden": "versteckt",
     "incomplete": "offen",
     "Incomplete": "Offen",
-    "initiative": "Initiative",
+    "initiative": "initiative",
+    "Initiative": "Initiative",
     "Items": "Gegenstände",
     "level": "stufe",
     "Level": "Stufe",
     "Locked": "Versperrt",
     "Lost": "Verloren",
     "Lvl": "St",
+    "Enable items from other games": "Enable items from other games",
     "No items available": "Keine Gegenstände verfügbar",
     "No treasures available": "Keine Schätze verfügbar",
     "Not unlocked": "Nicht freigeschaltet",
@@ -89,6 +93,7 @@ export default {
     "Search name or nr": "Suche nach Name oder Nr",
     "Set this counter to the amount of characters you have retired": "Stell den Zähler auf die Anzahl der schon in Ruhestand geschickten Charaktere ein.",
     "Show all": "Alles anzeigen",
+    "Manage": "Manage",
     "Show treasures": "Schätze anzeigen",
     "solved": "gelöst",
     "Summary": "Zusammenfassung",
@@ -96,6 +101,7 @@ export default {
     "Treasure": "Schatz",
     "Treasures": "Schätze",
     "Unlocked": "Freigeschaltet",
+    "unlocked": "freigeschaltet",
     "Unlocks": "Schaltet frei",
     "Virtual Board": "Virtuelles Spielbrett",
     "XP": "EP",
@@ -122,6 +128,14 @@ export default {
         "3": "oder teile ihn auf einer der folgenden Plattformen.",
         "title": "Gloomhaven-Storyline-Tracker teilen"
     },
+    "share-campaign-code": {
+        "1": "Share the following campaign code with your party members to enable progress sync across all your devices!",
+        "2": "Valid until",
+        "3": "The code is valid for one week.",
+        "4": "When enabled, users who use this code won't be able to edit the storyline.",
+        "not-allowed": "You are not the owner of this campaign, you can't share it with others."
+    },
+    "Read only mode": "Read only mode",
     "campaign page": {
         "local desc": "Die lokale Kampagne ist deine Gratis-Kampagne und wird auf deinem lokalen Endgerät gespeichert. Du kannst sie nicht automatisch mit deinen Gruppenmitgliedern synchronisieren."
     },
@@ -161,7 +175,8 @@ export default {
     "German": "Deutsch",
     "Spanish": "Spanisch",
     "Campaigns": "Kampagnen",
-    "Buy shared campaign": "Kaufe eine teilbare Kampagne",
+    "Campaign code": "Kampagnencode",
+    "Buy shared campaign": "Kaufe eine neue teilbare Kampagne",
     "Add shared campaign": "Füge eine teilbare Kampagne hinzu",
     "donations": {
         "1": {
@@ -229,8 +244,13 @@ export default {
         "title": "Kampagnen-Daten übertragen",
         "text": "Das Kopieren von Kampagnen-Daten zwischen einzelnen Kampagnen ist einfach möglich.",
         "warning": {
-            "text": "Kampagnen-Daten können nur dann übertragen werden, wenn Du eine teilbare Kampagne erworben hast."
+            "text": "Kampagnen-Daten können nur dann übertragen werden, wenn Du eine teilbare Kampagne erworben hast.",
+            "read-only": "Die Übertragung von Kampagnendaten ist im Nur-Lesen-Modus nicht verfügbar."
         }
+    },
+    "games-enabled": {
+        "title": "Aktivierte Spiele",
+        "text": "Um Spiele und ihre Charaktere zu verstecken, aktivieren Sie nur diejenigen, die Sie besitzen."
     },
     "Please consider purchasing a license": "Bitte zieh den Kauf einer Lizenz in Betracht",
     "Danger zone!": "Gefahrenzone!",
@@ -288,6 +308,8 @@ export default {
     "Solo Scenarios": "Solo-Szenarien",
     "Personal Quests": "Persönliche Ziele",
     "Personal Quest": "Persönliches Ziel",
+    "Hide personal quests": "Persönliche Ziele ausblenden",
+    "Show personal quest": "Persönliches Ziel anzeigen",
     "Random Scenarios": "Zufällige Szenarien",
     "Sealed": "Versiegelt",
     "Road Events": "Weg-Ereignisse",
@@ -328,6 +350,7 @@ export default {
     "Move": "Bewegung",
     "Jump": "Springen",
     "Flying": "Fliegend",
+    "Retaliate": "Regeln",
     "Recover": "Wiedererhalten",
     "Refresh": "Erneuern",
     "BANE": "BANE",

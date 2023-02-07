@@ -157,16 +157,16 @@ describe('Party', () => {
         cy.get('.mdc-dialog__content button').contains('Toggle B').parent().next().click();
     });
 
-    // it('It unlocked solo scenario after character is unlocked', () => {
-    //     cy.visit('/tracker/#/party');
-    //     utilities.scrollTo('100%', true);
-    //
-    //     cy.get('#character-SK').click();
-    //     cy.visit('/tracker/#/scenarios');
-    //
-    //     utilities.scrollTo('100%', true);
-    //     cy.get('#scenarios').contains('Caravan Escort').should('be.visible');
-    // });
+    it('It unlocked solo scenario after character is unlocked', () => {
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+
+        cy.get('#character-SK').click();
+        cy.visit('/tracker/#/scenarios');
+
+        utilities.scrollTo('100%', true);
+        cy.get('#scenarios').contains('Caravan Escort').should('be.visible');
+    });
 
     it('it unlocks envelope X', () => {
         cy.visit('/tracker/#/party');
@@ -184,5 +184,22 @@ describe('Party', () => {
         utilities.scrollTo('0%');
         utilities.openCharacter('Bladeswarm');
         cy.get('h1').contains('Bladeswarm');
+    });
+
+    it('cant update party sheet in read only mode', () => {
+        cy.visit('/tracker/#/party');
+
+        utilities.setReadOnly().then(() => {
+            cy.get('input[aria-labelledby="reputation"]').should('be.disabled');
+            cy.get('input[aria-labelledby="donations"]').should('be.disabled');
+            cy.get('input#p-65').should('be.disabled');
+            utilities.scrollTo('40%');
+            cy.get('input[aria-labelledby="city-events"]').should('be.disabled');
+            cy.get('input[aria-labelledby="road-events"]').should('be.disabled');
+            utilities.scrollTo('80%');
+            cy.get('#notes').should('be.disabled');
+            cy.get('#unlock0').should('be.disabled');
+            cy.get('#character-DS').should('be.disabled');
+        });
     });
 });

@@ -9,54 +9,22 @@
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
-            <div class="mt-4 flex flex-col sm:flex-row">
-                <div class="mb-8 sm:mb-0 sm:mr-4">
-                    <div class="mb-2 flex items-center">
-                        <h2>{{ $t('Reputation') }}</h2>
-                        <rollback v-show="!loading" ref="reputation-rollback"
-                                  :value.sync="sheet.reputation"></rollback>
-                    </div>
-                    <number-field :value.sync="sheet.reputation" :min="-20" :max="20" :id="'reputation'"
-                                  @change="store"></number-field>
-                </div>
-                <div>
-                    <h2 class="mb-2">{{ $t('Shop modifier') }}</h2>
-                    <span class="font-title text-lg">{{ shop }} {{ $t('Gold') }}</span>
-                    <p class="text-sm">
-                        {{ $t('Modify the cost of items when buying by this amount.') }}
-                    </p>
-                </div>
-            </div>
-
-            <div class="w-full mt-8">
-                <div class="mb-2 flex items-center">
-                    <h2>{{ $t('Sanctuary of the Great Oak') }}</h2>
-                    <rollback v-show="!loading" ref="donations-rollback"
-                              :value.sync="sheet.donations"></rollback>
-                </div>
-                <number-field :value.sync="sheet.donations" :min="0" :step="10" :id="'donations'"
-                              @change="store"></number-field>
-                <p v-if="sheet.donations <= 100" class="mt-2 text-sm">
-                    {{ $t('When 100 gold is donated, open envelope') }} <span class="font-title">B</span>
-                </p>
-                <p class="mt-2" v-if="donationProsperity">
-                    <span class="font-title">{{ donationProsperity }}</span>
-                    {{ $t('gained prosperity checkbox by donations.') }}
-                </p>
-            </div>
-
-            <div class="w-full mt-8">
-                <div class="mb-2 flex items-center">
-                    <h2>{{ $t('Gloomhaven Prosperity') }}</h2>
-                    <rollback v-show="!loading" ref="prosperity-rollback"
-                              :value.sync="sheet.prosperityIndex"
-                              @change="store"></rollback>
-                </div>
-                <prosperity class="-mx-2"
-                            :prosperityIndex.sync="sheet.prosperityIndex"
-                            :prosperity.sync="prosperity"
-                            @change="store"></prosperity>
-            </div>
+            <reputation-section
+                ref="reputation"
+                :sheet="sheet"
+                :loading="loading"
+                @change="store"/>
+            <donations-section
+                ref="donations"
+                :sheet="sheet"
+                :loading="loading"
+                @change="store"/>
+            <prosperity-section
+                ref="prosperity"
+                :sheet="sheet"
+                :loading="loading"
+                :prosperity.sync="prosperity"
+                @change="store"/>
 
             <div class="w-full mt-8">
                 <h2>{{ $t('Prosperity Items') }}</h2>
@@ -88,7 +56,7 @@
                     ref="city-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, true)" :disabled="!checkedItems.length"
+                        <button @click="draw(checkedItems, true)" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
@@ -104,7 +72,7 @@
                     ref="road-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, false)" :disabled="!checkedItems.length"
+                        <button @click="draw(checkedItems, false)" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
@@ -167,19 +135,7 @@
                     </tr>
                 </table>
 
-                <ul class="flex flex-row flex-wrap -mx-2" :key="'b'+renderX">
-                    <li v-for="(checked, id) in sheet.characterUnlocks" :key="id" class="flex items-center"
-                        :class="'order-'+sheet.characterOrder[id]">
-                        <checkbox group="items"
-                                  :id="'character-'+id"
-                                  :checked="checked"
-                                  :disabled="sheet.starterCharacters.includes(id)"
-                                  @change="(_, isChecked) => {unlockCharacter(id, isChecked)}"></checkbox>
-                        <span class="w-8 font-title">
-                            <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
-                        </span>
-                    </li>
-                </ul>
+                <unlock-characters :sheet="sheet" @change="store" :key="'b'+renderX"/>
             </div>
 
         </div>
@@ -195,11 +151,10 @@ import ScenarioRepository from "../repositories/ScenarioRepository";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations],
+    inject: ['appData'],
     data() {
         return {
             sheet: null,
-            shop: 0,
-            donationProsperity: 0,
             prosperity: 1,
             prosperityItems: [
                 '001–014',
@@ -256,14 +211,6 @@ export default {
             scenarioRepository: new ScenarioRepository
         }
     },
-    watch: {
-        'sheet.reputation': function () {
-            this.shop = this.calculateCostModifier(this.sheet.reputation);
-        },
-        'sheet.donations': function () {
-            this.donationProsperity = this.calculateDonationProsperity(this.sheet.donations);
-        }
-    },
     mounted() {
         this.render();
 
@@ -278,26 +225,20 @@ export default {
         async render() {
             this.loading = true;
 
-            this.sheet = this.sheetRepository.make(app.game);
+            this.sheet = this.sheetRepository.make(this.appData.game);
             this.campaignName = this.getCampaignName();
 
             this.isLocalCampaign = app.campaignId === 'local';
 
             await this.$nextTick();
 
-            this.$refs['reputation-rollback']?.reset();
-            this.$refs['donations-rollback']?.reset();
-            this.$refs['prosperity-rollback']?.reset();
+            this.$refs['reputation']?.reset();
+            this.$refs['donations']?.reset();
+            this.$refs['prosperity']?.reset();
             this.$refs['city-events']?.reset();
             this.$refs['road-events']?.reset();
 
             this.loading = false;
-        },
-        unlockCharacter(id, isChecked) {
-            this.sheet.characterUnlocks[id] = isChecked;
-            this.sheet.store();
-            this.scenarioRepository.scenarioValidator.validate();
-            this.store();
         },
         store() {
             if (this.loading) {

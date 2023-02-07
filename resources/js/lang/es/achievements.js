@@ -87,13 +87,13 @@ export default {
         "name": "El tesoro de la Voz"
     },
     "gh-PTDT": {
-        "name": "El tesoro del draco"
+        "name": "El tesoro del Draco"
     },
     "gh-GTDS": {
-        "name": "El draco ejecutado"
+        "name": "El Draco ejecutado"
     },
     "gh-GTDA": {
-        "name": "El draco auxiliado"
+        "name": "El Draco auxiliado"
     },
     "gh-GCRD": {
         "name": "Gobierno de la ciudad: Demoníaco"
@@ -241,5 +241,38 @@ export default {
     },
     "gh-GST": {
         "name": "Lazos cortados"
+    },
+    "cs-PCSOD": {
+        "name": "Ooze Destroyed"
+    },
+    "cs-PCSFL": {
+        "name": "Fallen Lava"
+    },
+    "cs-PCSFM": {
+        "name": "Follow the Money"
+    },
+    "cs-PCSFW": {
+        "name": "Frozen Warrior"
+    },
+    "cs-PCSOA": {
+        "name": "Oak Alliance"
+    },
+    "cs-PCSIA": {
+        "name": "Inox Alliance"
+    },
+    "cs-PCSGB": {
+        "name": "Guttermaw's Bounty"
+    },
+    "cs-PCSFR": {
+        "name": "Feirgrin's Request"
+    },
+    "cs-PCSPL": {
+        "name": "A Potion Lost"
+    },
+    "cs-PCSTM": {
+        "name": "Take the Money"
+    },
+    "cs-PCSAM": {
+        "name": "Accomplished Mercenaries"
     }
 }

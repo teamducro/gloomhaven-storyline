@@ -5,9 +5,10 @@
             :group="group"
             :checked="isChecked"
             :disabled="disabled"
+            :auto-disable="autoDisable"
             @change="changed"></checkbox>
         <slot>
-            <label :for="id" :class="{'text-white2-25': disabled}">{{ label }}</label>
+            <label :for="id" class="font-bold" :class="{'text-white2-25': disabled}">{{ label }}</label>
         </slot>
     </div>
 </template>
@@ -35,7 +36,11 @@ export default {
         disabled: {
             type: Boolean,
             default: false
-        }
+        },
+        autoDisable: {
+            type: Boolean,
+            default: true
+        },
     },
     data() {
         return {

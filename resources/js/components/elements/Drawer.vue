@@ -34,7 +34,7 @@
                                    aria-hidden="true">supervisor_account</i>
                                 <span class="mdc-list-item__text">
                                     {{ $t('Campaigns') }}
-                                    <span v-if="!user" class="ml-2 text-gold font-bold">{{ $t('PRO') }}</span>
+                                    <span v-if="!user" class="ml-2 text-gold font-bold">{{ $t('Pro') }}</span>
                                 </span>
                             </router-link>
                         </li>
@@ -140,6 +140,18 @@
 
                         <li role="separator" class="mdc-list-divider !my-2"></li>
 
+                    </ul>
+                </div>
+
+                <div v-if="showCampaignSwitch" class="m-2" style="width: calc(100% - 1em);">
+                    <campaign-switch ref="campaign-switch"></campaign-switch>
+                </div>
+                <div class="m-2" style="width: calc(100% - 1em);">
+                    <game-switch ref="game-switch"></game-switch>
+                </div>
+
+                <div class="mdc-list-group">
+                    <ul>
                         <li v-if="!loggedIn" class="py-4 pl-4 flex" @click="toggle">
                             <become-patron-button transparent></become-patron-button>
                         </li>
@@ -148,12 +160,6 @@
                             <donate></donate>
                         </li>
                     </ul>
-                </div>
-                <div v-if="showCampaignSwitch" class="m-2" style="width: calc(100% - 1em);">
-                    <campaign-switch ref="campaign-switch"></campaign-switch>
-                </div>
-                <div class="m-2" style="width: calc(100% - 1em);">
-                    <game-switch ref="game-switch"></game-switch>
                 </div>
             </div>
         </aside>
@@ -176,6 +182,7 @@ import GameData from "../../services/GameData";
 const md5 = require('js-md5');
 
 export default {
+    inject: ['appData'],
     data() {
         return {
             game: null,
@@ -228,7 +235,7 @@ export default {
             location.reload();
         },
         setGame(game) {
-            this.game = game || app.game;
+            this.game = game || this.appData.game;
             this.hasMap = this.gameData.map(this.game) !== null;
         },
         setUser() {

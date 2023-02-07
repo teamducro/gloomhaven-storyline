@@ -35,6 +35,11 @@ export default class StoryRepository extends ApiRepository {
     }
 
     async update(story) {
+        // Don't update the story if it's shared in read-only mode
+        if (story.read_only) {
+            return story;
+        }
+
         const data = story.postData();
 
         window.app.$bus.$emit('toast', 'Saving progress...');
@@ -88,7 +93,7 @@ export default class StoryRepository extends ApiRepository {
         return this.find(story, false);
     }
 
-    // If local campaign is newer then remote campaign, update it
+    // If local campaign is newer than remote campaign, update it
     async updateStoryIfNeeded(response, token = null) {
         let remoteStory = new Story(response);
         const localStory = this.getStory(remoteStory.id);

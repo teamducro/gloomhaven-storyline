@@ -2109,7 +2109,7 @@
         {
             "id": 50,
             "game": "gh",
-            "name": "Ghost Forrest",
+            "name": "Ghost Fortress",
             "coordinates": {
                 "name": "C-17",
                 "x": 75.74444,
@@ -2795,7 +2795,7 @@
             "game": "gh",
             "name": "Merchant Ship",
             "coordinates": {
-                "name": "!14",
+                "name": "I-14",
                 "x": 64.18455,
                 "y": 52.95
             },
@@ -3495,7 +3495,7 @@
         {
             "id": 204,
             "game": "gh",
-            "name": " Corrupted Laboratory",
+            "name": "Corrupted Laboratory",
             "solo": "SW",
             "pages": [
                 "gh/2/4"

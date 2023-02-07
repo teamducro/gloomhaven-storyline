@@ -10,6 +10,8 @@ export default {
     "Add city events": "Add city events",
     "Road Event Decks": "Road Event Decks",
     "Add road events": "Add road events",
+    "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.",
+    "completed scenarios": "completed scenarios",
 
     // Achievements
     "5 Ancient Technology Global Achievements": "5 “Ancient Technology” Global Achievements",
@@ -59,12 +61,14 @@ export default {
     "incomplete": "incomplete",
     "Incomplete": "Incomplete",
     "initiative": "initiative",
+    "Initiative": "Initiative",
     "Items": "Items",
     "level": "level",
     "Level": "Level",
     "Locked": "Locked",
     "Lost": "Lost",
     "Lvl": "Lvl",
+    "Enable items from other games": "Enable items from other games",
     "No items available": "No items available",
     "No treasures available": "No treasures available",
     "Not unlocked": "Not unlocked",
@@ -93,6 +97,7 @@ export default {
     "Search name or nr": "Search name or nr",
     "Set this counter to the amount of characters you have retired": "Set this counter to the amount of characters you have retired.",
     "Show all": "Show all",
+    "Manage": "Manage",
     "Show treasures": "Show treasures",
     "solved": "solved",
     "Summary": "Summary",
@@ -100,6 +105,7 @@ export default {
     "Treasure": "Treasure | Treasures",
     "Treasures": "Treasures",
     "Unlocked": "Unlocked",
+    "unlocked": "unlocked",
     "Unlocks": "Unlocks",
     "Virtual Board": "Virtual Board",
     "XP": "XP",
@@ -126,6 +132,14 @@ export default {
         "3": "or share it on one of the following platforms.",
         "title": "Share Gloomhaven Storyline Tracker"
     },
+    "share-campaign-code": {
+        "not-allowed": "You are not the owner of this campaign, you can't share it with others.",
+        "1": "Share the following campaign code with your party members to enable progress sync across all your devices!",
+        "2": "Valid until",
+        "3": "The code is valid for one week.",
+        "4": "When enabled, users who use this code won't be able to edit the storyline.",
+    },
+    "Read only mode": "Read only mode",
     "campaign page": {
         "local desc": "The local campaign is your free campaign, it is stored on your device and cannot be synchronized automatically between members."
     },
@@ -165,7 +179,8 @@ export default {
     "German": "German",
     "Spanish": "Spanish",
     "Campaigns": "Campaigns",
-    "Buy shared campaign": "Buy shared campaign",
+    "Campaign code": "Campaign code",
+    "Buy shared campaign": "Buy new shared campaign",
     "Add shared campaign": "Add shared campaign",
     "donations": {
         "1": {
@@ -215,7 +230,7 @@ export default {
     "An email has been sent to your inbox.": "An email has been sent to your inbox.",
     "Selected Campaign": "Selected Campaign",
     "Selected Game": "Selected Game",
-    "PRO": "PRO",
+    "Pro": "Pro",
     "Storyline": "Storyline",
     "Map": "Map",
     "Scenario list": "Scenario list",
@@ -233,7 +248,8 @@ export default {
         "title": "Transfer campaign data",
         "text": "Copy campaign data between campaigns can be done easily.",
         "warning": {
-            "text": "Campaign data can only be transferred if you purchased a shared campaign."
+            "text": "Campaign data can only be transferred if you purchased a shared campaign.",
+            "read-only": "Transfer campaign data is not available in read only mode."
         }
     },
     "games-enabled": {
@@ -299,6 +315,8 @@ export default {
     "Solo Scenarios": "Solo Scenarios",
     "Personal Quests": "Personal Quests",
     "Personal Quest": "Personal Quest",
+    "Hide personal quests": "Hide personal quests",
+    "Show personal quest": "Show personal quest",
     "Random Scenarios": "Random Scenarios",
     "Sealed": "Sealed",
     "Road Events": "Road Events",
@@ -342,6 +360,7 @@ export default {
     "Move": "Move",
     "Jump": "Jump",
     "Flying": "Flying",
+    "Retaliate": "Retaliate",
 
     "Recover": "Recover",
     "Refresh": "Refresh",

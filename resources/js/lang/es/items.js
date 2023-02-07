@@ -236,7 +236,7 @@ export default {
     "gh-46": {
         "name": "Escudo Erizo",
         "source": "Prosperidad nivel 6",
-        "desc": "Cuando sufras daño por un ataque, obtén {SHIELD} 1 y {Retaliate} 2 contra ese ataque."
+        "desc": "Cuando sufras daño por un ataque, obtén {SHIELD} 1 y {RETALIATE} 2 contra ese ataque."
     },
     "gh-47": {
         "name": "Guadaña de Segador",
@@ -376,7 +376,7 @@ export default {
     "gh-74": {
         "name": "Armadura Filosa",
         "source": "Objeto aleatorio",
-        "desc": "Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1 y {Retaliate} 1. Añade 4 cartas {-1} a tu mazo de modificadores de ataque."
+        "desc": "Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1 y {RETALIATE} 1. Añade 4 cartas {-1} a tu mazo de modificadores de ataque."
     },
     "gh-75": {
         "name": "Diadema de los Elementos",
@@ -511,7 +511,7 @@ export default {
     "gh-101": {
         "name": "Segunda Piel",
         "source": "Recompensa de {SCENARIO 06} (Tesoro #50)",
-        "desc": "Retira 2 {MODIFIER_MINUS_ONE} de tu mazo de Modificadores de ataque"
+        "desc": "Retira 2 {-1} de tu mazo de Modificadores de ataque"
     },
     "gh-102": {
         "name": "Túnica de Sacrificio",
@@ -1016,5 +1016,465 @@ export default {
         "name": "Jet Boots",
         "source": "Recompensa de {SCENARIO 25}",
         "desc": "Durante tu movimiento, añade “{MOVE} +1 y {JUMP}” a un único movimiento."
+    },
+    "cs-1": {
+        "name": "Orb of Confusion",
+        "desc": "During your Attack ability, you may place one character token on this card to add {MUDDLE} to one attack. When there are three tokens on this card, it is {CONSUMED}."
+    },
+    "cs-2": {
+        "name": "Orb of Momentum",
+        "desc": "During your Move ability, you may place one character token on this card to add +1 {MOVE}. When there are three tokens on this card, it is {CONSUMED}."
+    },
+    "cs-3": {
+        "name": "Orb of Agility",
+        "desc": "During your Move ability, you may place one character token on this card to add {JUMP}. When there are three tokens on this card, it is {CONSUMED}."
+    },
+    "cs-4": {
+        "name": "Orb of Vigor",
+        "desc": "During your Attack ability, you may place one character token on this card to add +1 {ATTACK} to one attack. When there are three tokens on this card, it is {CONSUMED}."
+    },
+    "cs-5": {
+        "name": "Orb of Retribution",
+        "desc": "When attacked by an adjacent enemy, you may place one character token on this card to gain {RETALIATE} 1 for the attack. When there are three tokens on this card, it is {CONSUMED}."
+    },
+    "cs-6": {
+        "name": "Orb of Infection",
+        "desc": "During your Attack ability, you may place one character token on this card to add {POISON} to one attack. When there are three tokens on this card, it is {CONSUMED}."
+    },
+    "cs-7": {
+        "name": "Orb of Vitality",
+        "desc": "During your turn, you may place one character token on this card to perform “{HEAL} 1, Self”. When there are three tokens on this card, it is {CONSUMED}."
+    },
+    "cs-8": {
+        "name": "Orb of Protection",
+        "desc": "When damaged by an attack, you may place one character token on this card to gain {SHIELD} 1 for the attack. When there are three tokens on this card, it is {CONSUMED}."
+    },
+    "cs-9": {
+        "name": "Orb of Fortune",
+        "desc": "During your Attack ability, you may place one character token on this card to gain Advantage on one attack. When there are three tokens on this card, it is {CONSUMED}."
+    },
+    "cs-10": {
+        "name": "Orb of Despair",
+        "desc": "During your Attack ability, you may place one character token on this card to add {CURSE} to one attack. When there are three tokens on this card, it is {CONSUMED}."
+    },
+    "cs-11": {
+        "name": "Pox Antidote",
+        "desc": "During your turn, remove {INFECT} from Self or an adjacent ally."
+    },
+    "cs-12": {
+        "name": "Trophy Helm",
+        "desc": "Your attacks are unaffected by {RETALIATE}."
+    },
+    "cs-13": {
+        "name": "War Pick",
+        "desc": "During your melee Attack ability, add {PIERCE} 4 to one attack."
+    },
+    "cs-14": {
+        "name": "Chain Mace",
+        "desc": "During your turn, perform “{ATTACK} 3, {RANGE} 2”."
+    },
+    "cs-15": {
+        "name": "Draining Greaves",
+        "desc": "At the end of your turn, if you moved four or more hexes during your turn, one adjacent enemy suffers one damage."
+    },
+    "cs-16": {
+        "name": "Shoes of Phasing",
+        "desc": "During your Move abilities, you may move through enemies."
+    },
+    "cs-17": {
+        "name": "Lightweight Boots",
+        "desc": "During your Move ability, add +2 {MOVE} and {JUMP}."
+    },
+    "cs-18": {
+        "name": "Bottled Moonlight",
+        "desc": "During your Heal ability, add +2 {HEAL} and {STRENGTHEN} to each Heal."
+    },
+    "cs-19": {
+        "name": "Boots of Perpetuity",
+        "desc": "You are immune to {IMMOBILIZE}.\\nAt the end of your turn, if you moved zero hexes on your turn, perform “{MOVE} 1”."
+    },
+    "cs-20": {
+        "name": "Curious Pendant",
+        "desc": "During your turn, {RECOVER} one lost card played this round."
+    },
+    "cs-21": {
+        "name": "Infrared Goggles",
+        "desc": "Gain Advantage on all attacks you peform while {INVISIBLE}."
+    },
+    "cs-22": {
+        "name": "Steel Helmet",
+        "desc": "When attacked, consider any {+1_WHITE} modifier card the enemy draws to be a {+0_WHITE} instead."
+    },
+    "cs-23": {
+        "name": "Woven Plate Armor",
+        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 2 for the attack."
+    },
+    "cs-24": {
+        "name": "Mantle of Purity",
+        "desc": "When you would gain one or more negative conditions, prevent the conditions."
+    },
+    "cs-25": {
+        "name": "Boneclad Shawl",
+        "desc": "On the next two attacks targeting you peformed by adjacent enemies, gain {RETALIATE} 2 for the attack."
+    },
+    "cs-26": {
+        "name": "Silhouette Cuirass",
+        "desc": "When your hit poit would be reduced to 0 by an attack targeting you, instead suffer no damage and gain {INVISIBLE}."
+    },
+    "cs-27": {
+        "name": "Translocation Device",
+        "desc": "During your turn, swap positions with one enemy within {RANGE} 5."
+    },
+    "cs-28": {
+        "name": "Alchemy Potion",
+        "desc": "During your turn, replace one adjacent obstacle tile with a money token."
+    },
+    "cs-29": {
+        "name": "Intoxicating Potion",
+        "desc": "During your turn, peform “{HEAL} 5, {POISON}, Self”."
+    },
+    "cs-30": {
+        "name": "Iron Snare",
+        "desc": "During your turn, create one {IMMOBILIZE} trap in an empty hex within {RANGE} 3."
+    },
+    "cs-31": {
+        "name": "Concussion Mine",
+        "desc": "During your turn, create one {STUN} trap in an empty hex within {RANGE} 3."
+    },
+    "cs-32": {
+        "name": "Shifting Compass",
+        "desc": "During your turn, force an enemy within Rang 5 to perform a “{MOVE} 2, {JUMP}” ability with you controlling the ability."
+    },
+    "cs-33": {
+        "name": "Battering Ram",
+        "desc": "During your melee Attack ability, add {MUDDLE} and {PUSH} 2 to all your attacks."
+    },
+    "cs-34": {
+        "name": "Claw Trap",
+        "desc": "At the end of your turn, create one 4 damage {POISON} trap in an adjacent empty hex."
+    },
+    "cs-35": {
+        "name": "Staff of Retribution",
+        "desc": "When attacked, gain {RETALIATE} 1, {RANGE} 3 for the attack."
+    },
+    "cs-36": {
+        "name": "Curseblood Blade",
+        "desc": "During your melee Attack ability, suffer 1 damage to add {CURSE} to all your attacks."
+    },
+    "cs-37": {
+        "name": "Drakescale Shield",
+        "desc": "When attacked by an adjacent enemy, gain {RETALIATE} 3 for the attack."
+    },
+    "cs-38": {
+        "name": "Drakescale Dagger",
+        "desc": "During your melee Attack ability, do not draw an attack modifier card for one attack."
+    },
+    "cs-39": {
+        "name": "Hook Shot",
+        "desc": "During your turn, peform “{ATTACK} 2, {RANGE} 3, {PIERCE} 2”."
+    },
+    "cs-40": {
+        "name": "Moonleather Boots",
+        "desc": "Add +1 Move to all your movement while you are at full health."
+    },
+    "cs-41": {
+        "name": "Spirit Libation",
+        "desc": "During your turn remove one damage token from one {SPIRIT}. This {SPIRIT} may immediately take a turn without receiving a damage token."
+    },
+    "cs-42": {
+        "name": "Robe of Soothing",
+        "desc": "Whenever you given an ally a {PRAYER} ability card, that ally may peform “{HEAL} 2, Self”."
+    },
+    "cs-43": {
+        "name": "Resplendent Mitre",
+        "desc": "During your Heal action, add +2 {HEAL} to each Heal."
+    },
+    "cs-44": {
+        "name": "Canister Projectile",
+        "desc": "During your ranged Attack ability, add {PIERCE} 2 to one attack."
+    },
+    "cs-45": {
+        "name": "Chain Cannon",
+        "desc": "During your turn, peform “{PULL} 2, Self toward one enemy within {RANGE} 3”."
+    },
+    "cs-46": {
+        "name": "Summoner's Whistle",
+        "desc": "During your turn, one summoned ally you own performs\\n{MOVE} +0\\n{ATTACK} +0\\nwith you controlling the abilities."
+    },
+    "cs-47": {
+        "name": "Nature Armlets",
+        "desc": "While {MOUNTED} on a summon, you can apply your small {ITEM} effects to the summon instead."
+    },
+    "cs-48": {
+        "name": "Test Tube",
+        "desc": "During your turn, {ANY_X} to peforme one of the following: {MOVE} 2, {JUMP}, {WIND} | {HEAL} 3, Self, {LIGHT} | {ATTACK} 2, {FIRE}."
+    },
+    "cs-49": {
+        "name": "Booster Shot",
+        "desc": "During your turn, perform one of the following: {RECOVER} one discarded card | {HEAL} 3, Self | Add +2 {ATTACK} to your next attack this turn."
+    },
+    "cs-50": {
+        "name": "Luminous Carapace",
+        "desc": "During your turn, when you {ANY_X} an element, do not move the consumed element to the Inert column."
+    },
+    "cs-51": {
+        "name": "Flaming Armor",
+        "desc": "When attacked, you may {FIRE_X} to gain {RETALIATE} 3 for the attack."
+    },
+    "cs-52": {
+        "name": "Flaming Axe",
+        "desc": "During your melee Attack ability, add +1 {ATTACK} and {WOUND} to all your attacks. {FIRE}"
+    },
+    "cs-53": {
+        "name": "Field Mortar",
+        "desc": "Once each turn, during your turn, you may remove one condition from an adjacent figure and place that condition on this card if it is not already on this card. During your turn, one adjacent figure gains all conditions on this card, then consume {CONSUMED} this item."
+    },
+    "cs-54": {
+        "name": "Vipertooth Dagger",
+        "desc": "Gain Advantage on all your melee attacks while you are occupying difficult terrain."
+    },
+    "cs-55": {
+        "name": "Ghost Viper Venom",
+        "desc": "During your Attack ability, add {POISON} 2 to one attack."
+    },
+    "cs-56": {
+        "name": "Clamp Trap",
+        "desc": "At the end of your turn create one 3 damage {IMMOBILIZE} trap in an adjacent empty hex."
+    },
+    "cs-57": {
+        "name": "Cleansed Voidheart",
+        "desc": "You are immune to {MUDDLE}. At the end of each round, if you have {WOUND} gain {REGENERATE}."
+    },
+    "cs-58": {
+        "name": "Dizzying Tincture",
+        "desc": "During you Attack ability, add {DISARM} to one attack."
+    },
+    "cs-59": {
+        "name": "Drakes Blood",
+        "desc": "During your turn, remove all positive conditions from all enemies within {RANGE} 2. This can be used on enemies that have {INVISIBLE}."
+    },
+    "cs-60": {
+        "name": "Mana Medicine",
+        "desc": "During your turn, peform “{HEAL} 5, Self”. {ANY}"
+    },
+    "cs-61": {
+        "name": "Ashsteel Gauntlets",
+        "desc": "You are immune to {DISARM}, even if this item is spent. During your turn gain {SHIELD} 1 for the round. {eot}"
+    },
+    "cs-62": {
+        "name": "Smog Emitter",
+        "desc": "At the end of your turn, all enemies consider all empty hexes within {RANGE} 2 of you to be difficult terrain for the round. {eot}"
+    },
+    "cs-63": {
+        "name": "Lucky Horseshoe",
+        "desc": "When you are damage by an attack targeting you, suffer half (rounded down) the damage instead."
+    },
+    "cs-64": {
+        "name": "Mild Kindled Tonic",
+        "desc": "When an ally targets you with a Heal ability, remove one negative condition from yourself before the Heal and gain {STRENGTHEN}."
+    },
+    "cs-65": {
+        "name": "Rescue Axe",
+        "desc": "During your melee Attack ability, add +1 {ATTACK} and {MUDDLE} to one attack targeting an enemy adjacent to one of your allies."
+    },
+    "cs-66": {
+        "name": "Iron Malleus",
+        "desc": "During your melee Attack ability, add +1 {ATTACK} and {IMMOBILIZE} to all your attacks."
+    },
+    "cs-67": {
+        "name": "Pike Hook",
+        "desc": "During your single-target melee Attack ability, add {PIERCE} 2 and {PULL} 1 to the attack and you may target one enemy within 2 hexes."
+    },
+    "cs-68": {
+        "name": "Explosive Tonic",
+        "desc": "During your turn, peform: {WOUND} {RANGE} 3 {AOE.CONE_1_1}"
+    },
+    "cs-69": {
+        "name": "Spicy Kindled Tonic",
+        "desc": "On the next three Heal abilities targeting you, you may either first remove all negative conditions from yourself or gain {STRENGTHEN}."
+    },
+    "cs-70": {
+        "name": "Utility Rope",
+        "desc": "During your turn, peform “{PULL} 2, Target one ally or enemy within {RANGE} 3.”"
+    },
+    "cs-71": {
+        "name": "Fireproof Helm",
+        "desc": "Whenever you would suffer damage from {WOUND} instead perform “{HEAL} 1, Self”"
+    },
+    "cs-72": {
+        "name": "Wooden Ladder",
+        "desc": "Add +1 Range to all your ranged abilities peformed while adjacent to an obstacle. Whenever you enter a hex with a trap, you may choose not to spring the trap."
+    },
+    "cs-73": {
+        "name": "Medical Kit",
+        "desc": "Whenever you use the default top action of an ability card, you may perform a “{HEAL} 2, {RANGE} 1” ability instead of an “{ATTACK} 2” ability."
+    },
+    "cs-74": {
+        "name": "Mild Bolstering Tonic",
+        "desc": "During your Heal ability targeting at least one ally, add +1 Heal and {STRENGTHEN} to each Heal."
+    },
+    "cs-75": {
+        "name": "Medallion of the Oak",
+        "desc": "When attacked this round, you and all adjacent allies consider any negative and {modifier_no_damage} attack modifiers drawn to be {+0_WHITE} instead."
+    },
+    "cs-76": {
+        "name": "Cauterizing Knife",
+        "desc": "During your Heal ability, add +3 {HEAL} and {WOUND} to each Heal."
+    },
+    "cs-77": {
+        "name": "Trauma Kit",
+        "desc": "During your Heal ability, double the value of each Heal. If this Heal ability removes {WOUND}, this item is spent instead of consumed."
+    },
+    "cs-78": {
+        "name": "Scroll of Charisma",
+        "desc": "During your turn, one ally within {RANGE} 2 may perform one of the following: {ATTACK} 2 | {MOVE} 2 | {HEAL} 2, Self."
+    },
+    "cs-79": {
+        "name": "Rescue Shield",
+        "desc": "When an adjacent ally is damage by an attack targeting them, that ally gains {SHIELD} 2 for the attack and removes all negative conditions applied by the attack."
+    },
+    "cs-80": {
+        "name": "Scroll of Protection",
+        "desc": "When an ally within {RANGE} 5 would be damaged by an attack targeting them, they suffer no damage instead."
+    },
+    "cs-81": {
+        "name": "Spicy Bolstering Tonic",
+        "desc": "During your Heal ability targeting at least one ally add +2 {HEAL} {STRENGTHEN} and {BLESS} to each Heal."
+    },
+    "cs-82": {
+        "name": "Scroll of Command",
+        "desc": "During you turn one ally within {RANGE} 3 may peform one of the following: {ATTACK} 3 | {MOVE} 3 | {HEAL} 3, Self."
+    },
+    "cs-83": {
+        "name": "Sphere of Currents",
+        "desc": "During your turn, create two water difficult terrain tiles in hexes within {RANGE} 3 that contain no overlay tiles. {MUDDLE} all figures within {RANGE} 3 occupying a water tile."
+    },
+    "cs-84": {
+        "name": "Slug Crossbow",
+        "desc": "During your single-target ranged Attack ability, turn the attack into the following: {AOE.line_1_1}."
+    },
+    "cs-85": {
+        "name": "Refined Slug Crossbow",
+        "desc": "During your single-target ranged Attack ability, add +1 {ATTACK} and turn the attack into the following: {AOE.line_1_1}."
+    },
+    "cs-86": {
+        "name": "Bulwark Banner",
+        "desc": "During your turn, you and all allies gain {SHIELD} 1 for the round. {eot}"
+    },
+    "cs-87": {
+        "name": "Refined Bulwark Banner",
+        "desc": "During your turn, all adjacent allies gain {SHIELD} equal to your current Shield value from abilities for the round. {eot}"
+    },
+    "cs-88": {
+        "name": "Remote Beetle",
+        "desc": "During your turn, open one unlocked closed door within {RANGE} 2."
+    },
+    "cs-89": {
+        "name": "Refined Remote Beetle",
+        "desc": "During your turn, open one unlocked closed door within {RANGE} 2."
+    },
+    "cs-90": {
+        "name": "Blazing Boots",
+        "desc": "During your Move ability, double the value of the movement."
+    },
+    "cs-91": {
+        "name": "Refined Blazing Boots",
+        "desc": "During your Move ability, add {JUMP} and double the value of the movement."
+    },
+    "cs-92": {
+        "name": "Viper Blowgun",
+        "desc": "During your turn, you may {EARTH_X} to perform “{ATTACK} 1, {RANGE} 3, {POISON}”."
+    },
+    "cs-93": {
+        "name": "Refined Viper Blowgun",
+        "desc": "During your turn, perform “{ATTACK} 1, {RANGE} 4, {POISON}”. You may {EARTH_X} to ADD {TARGET}."
+    },
+    "cs-94": {
+        "name": "Frost Stone",
+        "desc": "During your turn you may place one character token on this card to generate: {ICE}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+    },
+    "cs-95": {
+        "name": "Storm Stone",
+        "desc": "During your turn you may place one character token on this card to generate: {WIND}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+    },
+    "cs-96": {
+        "name": "Inferno Stone",
+        "desc": "During your turn you may place one character token on this card to generate: {FIRE}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+    },
+    "cs-97": {
+        "name": "Tremor Stone",
+        "desc": "During your turn you may place one character token on this card to generate: {EARTH}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+    },
+    "cs-98": {
+        "name": "Brilliant Stone",
+        "desc": "During your turn you may place one character token on this card to generate: {LIGHT}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+    },
+    "cs-99": {
+        "name": "Dark Stone",
+        "desc": "During your turn you may place one character token on this card to generate: {DARK}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+    },
+    "cs-100": {
+        "name": "Wonder Stone",
+        "desc": "During your turn you may place one character token on this card to generate: {ANY}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+    },
+    "cs-aa01": {
+        "name": "Rockspine Bulwark",
+        "desc": "On the next three sources of damage from attacks targeting you or an adjacent ally, the attacked figure gains {SHIELD} 1 for the attack."
+    },
+    "cs-aa02": {
+        "name": "Ghostshimmer Honey",
+        "desc": "During your turn, peform {HEAL} 3\\n{REGENERATE}\\nAffect self and one adjacent ally."
+    },
+    "cs-aa03": {
+        "name": "Steelsilk Spinneret",
+        "desc": "The next two times an enemy suffers damage from attacking you, that enemy gains {IMMOBILIZE}."
+    },
+    "cs-qa01": {
+        "name": "Power Modulator",
+        "desc": "(X is 1, 2, 3)\\nDuring your turn, forgo your top action to peform {ATTACK} X+1\\n{RANGE} 2\\n{TARGET} 4-X"
+    },
+    "cs-qa02": {
+        "name": "Steam Piston Hammer",
+        "desc": "During your melee Attack ability, add {MUDDLE} and {PUSH} 1 to a single attack."
+    },
+    "cs-qa03": {
+        "name": "Spider Climb Gloves",
+        "desc": "Your movement may enter and end in hexes containing obstacles as if you had {FLYING}."
+    },
+    "cs-qa04": {
+        "name": "Gravity Inversion Pads",
+        "desc": "Create one trap in an empty hex within {RANGE} 3.\\nIf you or an ally trigger this trap, that figure gains {FLYING} for the round. | Any enemy that enters a hex with this trap triggers it and loses {FLYING} for the round."
+    },
+    "cs-qa05": {
+        "name": "Delicate Model",
+        "desc": "Summon Scrap Collector\\nYou Loot {LOOT} each hex this summon enters.\\nYou control this summon's actions."
+    },
+    "cs-qa06": {
+        "name": "Auscudec of the Makers",
+        "desc": "During your turn, forgo your top action to play a summon action from a card in your lost pile, ignoring two {SCRAP_X}."
+    },
+    "cs-rm01": {
+        "name": "Serrated Edge",
+        "desc": "During your melee attack ability, add {RUPTURE} to one attack."
+    },
+    "cs-rm02": {
+        "name": "Grisly Boots",
+        "desc": "After your move ability, peform {PUSH} 1\\nTarget one adjacent enemy\\nAdd +1 {PUSH} if you have move 4 or more hexes this round."
+    },
+    "cs-rm03": {
+        "name": "Terrorscale Saber",
+        "desc": "During your melee attack ability, add +1 {ATTACK} and {PIERCE} 2 to one attack targeting an enemy with {WOUND} or {RUPTURE}."
+    },
+    "cs-rm04": {
+        "name": "Terrorscale Crossblades",
+        "desc": "On your next three melee attacks targeting enemies with at least one negative condition, gain Advantage."
+    },
+    "cs-rm05": {
+        "name": "Rite of Ruin",
+        "desc": "During your attack ability gain {WOUND} to add +3 {ATTACK} to one attack. If you kill the target perform “{HEAL} 3, Self”."
+    },
+    "cs-rm06": {
+        "name": "Savage Cuirass",
+        "desc": "The next two times you would lose a card from your hand to negate suffering damage, discard it instead and gain {WOUND}."
     }
 }

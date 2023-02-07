@@ -1,22 +1,22 @@
 <template>
-    <a href="#" @click.prevent="navigateToPlayer" :class="{'cursor-default': !player}">
+    <span @click="navigateToPlayer" :class="{'cursor-pointer': player}">
         <inline-svg v-if="svg"
                     :src="'characters/' + svg"
                     :classes="['h-full', 'w-full']"/>
         <span v-if="showName && name">
             {{ name }}
         </span>
-    </a>
+    </span>
 </template>
 
 <script>
 import GameData from "../../services/GameData";
-import Helpers from "../../services/Helpers";
+import Character from "../../models/Character";
 
 export default {
     props: {
         character: {
-            type: Object | String
+            type: Character | String
         },
         player: {
             type: Object | String,
@@ -50,6 +50,8 @@ export default {
     methods: {
         async navigateToPlayer(e) {
             if (this.player) {
+                e.preventDefault();
+
                 // Only navigate to characters page if not already there
                 if (!this.$router.currentRoute.path.includes('/characters')) {
                     await this.$router.push('/characters');

@@ -15,7 +15,7 @@
                       class="pl-6">{{ $t('Abilities') }}</span>
             </h1>
 
-            <add-character ref="add-character" :sheet="sheet" @create="create"/>
+            <add-character v-if="!appData.read_only" ref="add-character" :sheet="sheet" @create="create"/>
 
             <div class="sm:mt-4 sm:flex">
                 <character-menu :selected="selected" :abilities="abilities" :sheet="sheet" @select="select"
@@ -31,13 +31,8 @@
 
                             <div class="mb-4">
                                 <h2 class="mb-2">{{ $t('Name') }}</h2>
-                                <label class="flex-1 mdc-text-field mdc-text-field--filled" ref="name-field">
-                                    <span class="mdc-text-field__ripple"></span>
-                                    <input class="mdc-text-field__input" aria-labelledby="name"
-                                           type="text" name="name" v-model="nameText" @change="store">
-                                    <span class="mdc-floating-label" id="name">{{ $t('Name') }}</span>
-                                    <span class="mdc-line-ripple"></span>
-                                </label>
+                                <text-field id="name" ref="name-field" :label="$t('Name')"
+                                            :value.sync="nameText" @change="store"></text-field>
                             </div>
 
                             <div class="flex flex-wrap">
@@ -112,24 +107,29 @@
                                              :sheet="sheet"
                                              @change="store"/>
 
+                            <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
+                            <notes :value.sync="character.notes" id="notes" :label="$t('Notes')"
+                                   @change="store" :is-local-campaign="isLocalCampaign"
+                            ></notes>
+
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
                             <perks :checks.sync="character.checks"
                                    :perks.sync="character.perks"
                                    :character="character"
                                    @change="store"/>
-                            <div v-if="soloScenario" :key="'solo-'+soloScenario.id" class="mt-5 flex">
+
+                            <attack-modifier-deck v-if="character.game !== 'cs'"
+                                                  :perks="character.perks"
+                                                  :perkDescriptions="character.perkDescriptions"
+                                                  :character="character"
+                                                  :playerIndex="playerIndex"/>
+
+                            <div v-if="soloScenario" :key="'solo-'+soloScenario.id" class="my-5 flex">
                                 <span class="font-title mr-2">{{ $t('Solo') }}:</span>
                                 <scenario-number :scenario="soloScenario" show-name/>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="w-full">
-                        <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
-                        <notes :value.sync="character.notes" id="notes" :label="$t('Notes')"
-                               @change="store" :is-local-campaign="isLocalCampaign"
-                        ></notes>
                     </div>
 
                     <div class="mt-8">
@@ -147,18 +147,18 @@
 
                     <div class="my-8">
                         <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
-                                class="mr-4 mdc-button mdc-button--raised">
+                                class="mr-4 mdc-button mdc-button--raised" :disabled="appData.read_only">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
                             <span class="mdc-button__label">{{ $t('Retire') }}</span>
                         </button>
                         <button v-if="isArchived" @click="$refs['remove-character'].open()" type="button"
-                                class="mdc-button mdc-button--raised">
+                                class="mdc-button mdc-button--raised" :disabled="appData.read_only">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
                             <span class="mdc-button__label">{{ $t('Remove') }}</span>
                         </button>
                         <button v-if="isArchived" type="button"
                                 @click="restore"
-                                :disabled="characterRepository.partyHasCharacter(sheet, character.id)"
+                                :disabled="appData.read_only || characterRepository.partyHasCharacter(sheet, character.id)"
                                 class="ml-4 mdc-button mdc-button--raised">
                             <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
                             <span class="mdc-button__label">{{ $t('Restore') }}</span>
@@ -207,7 +207,7 @@
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
                     <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                 </button>
-                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
+                <button type="button"  class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="remove">
                     <span class="mdc-button__label text-red-700">{{ $t('Remove') }}</span>
                 </button>
@@ -229,8 +229,11 @@ import store from "store/dist/store.modern";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemAvailability from "../services/ItemAvailability";
 import Helpers from "../services/Helpers";
+import TextField from "../components/elements/TextField.vue";
 
 export default {
+    components: {TextField},
+    inject: ['appData'],
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
@@ -248,7 +251,6 @@ export default {
             items: collect(),
             itemAvailability: null,
             outOfStockItems: [],
-            nameField: null,
             isLocalCampaign: true,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
@@ -273,14 +275,26 @@ export default {
             // Reference sheet hash so the value is recalculated when the sheet is updated.
             this.sheetHash;
             return this.selected in this.sheet.archivedCharacters;
+        },
+        currentGame() {
+            return this.sheet.game === 'fc' ? 'gh' : this.sheet.game;
+        },
+        playerIndex() {
+            if (this.sheet.characters[this.character.uuid]) {
+                return Object.keys(this.sheet.characters).indexOf(this.character.uuid);
+            }
+            if (this.sheet.archivedCharacters[this.character.uuid]) {
+                return Object.keys(this.sheet.archivedCharacters).indexOf(this.character.uuid);
+            }
+            return 1;
         }
     },
     methods: {
         async render() {
             this.loading = true;
 
-            this.game = app.game;
-            this.sheet = this.sheetRepository.make(app.game);
+            this.game = this.appData.game;
+            this.sheet = this.sheetRepository.make(this.appData.game);
             this.campaignName = this.getCampaignName();
 
             // Unregistered users can't archive characters
@@ -296,10 +310,7 @@ export default {
         async refreshInputFields() {
             await this.$nextTick();
 
-            if (this.nameField) {
-                this.nameField.destroy();
-            }
-            this.nameField = new MDCTextField(this.$refs['name-field']);
+            this.$refs['name-field'].refresh();
         },
         findSoloScenario() {
             this.soloScenario = this.scenarioRepository.findSolo(this.character.id);
@@ -309,17 +320,34 @@ export default {
                 let sheetItems;
                 this.sheetItems = {};
 
-                if (this.sheet.game === 'jotl') {
-                    sheetItems = this.calculateItemsJotl(this.sheet.itemDesigns, this.scenarioRepository);
-                } else {
-                    sheetItems = this.calculateItemsGh(this.sheet.itemDesigns, this.sheet.prosperityIndex);
+                // Get all manual unlocked items from the sheet, prefixed with the current game.
+                const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.currentGame);
+
+                // Add auto unlocked items, based on prosperity level or completed scenarios.
+                if (this.currentGame === 'jotl') {
+                    sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
+                }
+                else {
+                    sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
                 }
 
-                this.items = this.itemRepository.findMany(sheetItems).keyBy('id').items;
-                sheetItems.forEach(id => {
-                    if (!isNaN(id)) {
-                        this.sheetItems[id] = !!this.character.items[id];
-                    }
+                // Find items from base game.
+                let items = this.itemRepository.findMany(sheetItems);
+
+                // Add items from other games, if enabled.
+                if (this.sheet.crossGameItemsEnabled) {
+                    const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
+                    otherGames.forEach(game => {
+                        if (game !== this.currentGame) {
+                            items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                        }
+                    });
+                }
+
+                this.items = items.all()
+
+                Object.keys(this.items).forEach(id => {
+                    this.sheetItems[id] = !!this.character.items[id];
                 });
 
                 this.refreshOutOfStockItems();
@@ -385,7 +413,7 @@ export default {
         },
         selectDemo() {
             this.selected = null;
-            this.character = Character.make('demo', app.game, 'BR');
+            this.character = Character.make('demo', this.appData.game, 'BR');
             this.nameText = this.$t(this.character.characterName);
             this.rerender();
         },
@@ -450,10 +478,11 @@ export default {
             return store.get('selectedCharacter');
         },
         itemFilterClosure(query) {
-            // This allows to find items based on id and their name.
+            // This allows to find items based on id or their name.
             return (id) => {
-                return id.toLowerCase().startsWith(query)
-                    || Helpers.sanitize(this.$t(this.items[id]?.name)).startsWith(query);
+                const number = id.split('-').pop();
+                return number.toLowerCase().startsWith(query)
+                    || Helpers.sanitize(this.$t(this.items[id]?.name)).includes(query);
             }
         },
         renderHtml(html) {

@@ -12,53 +12,66 @@ export default {
         "text": "Saqueasteis el tesoro. ¿Intentáis escapar con todos los artefactos pese a las advertencias?"
     },
     "merchantsBay": {
-        "1": "You recovered both scrolls.",
-        "2": "You failed to recover the Record of the Journey.",
-        "3": "You failed to recover the Record of Accounts.",
-        "title": "The Merchant’s Bay",
-        "text": "You doused the flames and disposed the interlopers. How many records were you able to save?"
+        "1": "Recuperasteis ambos pergaminos.",
+        "2": "No pudisteis recuperar el Registro del Periplo.",
+        "3": "No pudisteis recuperar el Registro de Transacciones.",
+        "title": "La Bahía del comerciante",
+        "text": "Apagasteis las llamas y eliminasteis a los intrusos. ¿Cuántos registros pudisteis salvar?"
     },
     "shiftingGears": {
-        "1": "All enemies are killed.",
+        "1": "Todos los enemigos son asesinados.",
         "2": "???",
-        "title": "Bastian’s workshop",
-        "text": "Did you manage to kill all enemies?"
+        "title": "Taller de Bastian",
+        "text": "¿Conseguisteis matar a todos los enemigos?"
     },
     "searchPiecesOfAnArtifact": {
-        "1": "All enemies are killed.",
-        "2": "Found more pieces of the rift device.",
-        "title": "Search pieces of the rift device",
-        "text": "Did you manage to kill all enemies?"
+        "1": "Todos los enemigos son asesinados.",
+        "2": "Encontrais más piezas del dispositivo de apertura de fisuras.",
+        "title": "Buscando piezas del dispositivo de apertura de fisuras",
+        "text": "¿Conseguisteis matar a todos los enemigos?"
     },
     "directingBeams": {
-        "1": "All four beams are directed at the fountain",
-        "2": "Survived for fourteen rounds",
-        "title": "Directing Beams",
-        "text": "Did you direct the beams to the fountain?"
+        "1": "Los cuatro haces fueron dirigidos a la fuente.",
+        "2": "Sobrevivisteis durante catorce rondas",
+        "title": "Dirigiendo los haces de luz",
+        "text": "¿Dirigisteis los haces hacia la fuente?"
     },
     "aftershocks": {
-        "1": "Exactly four civilians are alive.",
-        "2": "Five or more civilians are alive.",
-        "title": "Protect the civilians",
-        "text": "How many Valraths were you able to bring to safety?"
+        "1": "Exactamente cuatro ciudadanos están vivos.",
+        "2": "Cinco o más ciudadanos están vivos.",
+        "title": "Proteger a los ciudadanos",
+        "text": "¿Cuántos ciudadanos pudisteis poner a salvo?"
     },
     "bloodyWar": {
-        "1": "A: Assist the Valraths",
-        "2": "B: Assist the Humans",
-        "3": "C: Fight both sides",
-        "title": "Bloody Demon War",
-        "text": "Which side dit you choose?"
+        "1": "A: Ayudasteis a los Valrath",
+        "2": "B: Ayudasteis a los Humanos",
+        "3": "C: Luchasteis contra los 2 bandos",
+        "title": "Guerra de los Demonios",
+        "text": "¿Qué bando elegiste?"
     },
     "escapeFromTheHusk": {
-        "1": "All characters escaped",
+        "1": "Todos los personajes escaparon",
         "2": "???",
-        "title": "Escape from The Husk",
-        "text": "Did all characters escape through an exit?"
+        "title": "Escapar de El Vacuo",
+        "text": "¿Todos los personajes escaparon por una salida?"
     },
     "undeadTerrors": {
-        "1": "Give the potion to Selandre.",
-        "2": "Tell Selandre the potion was destroyed.",
-        "title": "Can you trust Selandre?",
-        "text": "Do you listen to Dominic's last words or your greed?"
+        "1": "Le dáis la poción a Selandre.",
+        "2": "Le decis a Selandre que la poción fue destruida.",
+        "title": "¿Podéis confiar en Selandre?",
+        "text": "¿Escucháis las últimas palabras de Dominic o escucháis a vuestra codicia?"
+    },
+    "capstoneTest": {
+        "1": "Un enemigo con nombre es asesinado",
+        "2": "Dos enemigos con nombre son asesinados",
+        "3": "Tres enemigos con nombre son asesinados",
+        "title": "Probad vuestro modulador de potencia",
+        "text": "¿Cuántos enemigos con nombre pudisteis matar antes de agotaros?"
+    },
+    "unseenPlight": {
+        "1": "Habéis matado a Guttermaw, reclamando su recompensa.",
+        "2": "Salvásteis a los niños, cumpliendo la solicitud de Feigrin",
+        "title": "Casas y guaridas rotas",
+        "text": "¿Trajisteis la muerte o salvasteis vidas?"
     }
 }

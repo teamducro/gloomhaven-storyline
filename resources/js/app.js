@@ -37,6 +37,7 @@ import setInitialLanguage from "./services/app/setInitialLanguage";
 import {gsap} from "gsap";
 import {Flip} from "gsap/Flip.js";
 import getEnabledGames from "./services/app/getEnabledGames";
+import BaseUrl from "./mixins/BaseUrl";
 
 const {RayPlugin} = require('vue-ray/vue2');
 
@@ -101,12 +102,34 @@ window.i18n = new VueI18n({
 Vue.prototype.$bus = new Vue;
 
 window.app = new Vue({
+    mixins: [BaseUrl],
     i18n,
     router,
     el: '#app',
+    provide() {
+        const appData = {}
+
+        Object.defineProperty(appData, "game", {
+            get: () => this.game,
+        })
+
+        Object.defineProperty(appData, "story", {
+            get: () => this.story,
+        })
+
+        // This shorthand is needed to use it in vue templates
+        Object.defineProperty(appData, "read_only", {
+            get: () => this.story?.read_only,
+        })
+
+        return {
+            appData,
+        }
+    },
     data() {
         return {
             game: null,
+            story: null,
             enabledGames: {},
             scenarios: null,
             quests: null,
@@ -141,7 +164,7 @@ window.app = new Vue({
 
         (new ShareState).loadOldLink();
 
-        document.getElementById('bg').style['background-image'] = "url('/img/background-highres.jpg'), url('/img/background-lowres.jpg')";
+        document.getElementById('bg').style['background-image'] = `url('${this.baseUrl}/img/background-highres.jpg'), url('${this.baseUrl}/img/background-lowres.jpg')`;
 
         this.$bus.$on('game-selected', this.switchGame);
         this.$bus.$on('campaign-selected', this.switchCampaign);
@@ -162,6 +185,7 @@ window.app = new Vue({
                 this.fetchItems(),
             ]);
 
+            this.story = this.stories.firstWhere('campaignId', this.campaignId);
             this.$bus.$emit('campaigns-changed');
         },
         async fetchAchievements() {
@@ -184,7 +208,14 @@ window.app = new Vue({
             return true;
         },
         async fetchItems() {
-            this.items = this.itemRepository.fetch(this.game);
+            let items = {}
+            this.enabledGames.forEach((game) => {
+                // FC uses GH items
+                if (game !== 'fc') {
+                    items = {...items, ...this.itemRepository.fetch(game).items};
+                }
+            })
+            this.items = collect(items);
             await this.$nextTick();
             this.$bus.$emit('items-updated');
 
@@ -193,6 +224,7 @@ window.app = new Vue({
         switchLocal(campaignId = 'local') {
             this.campaignId = campaignId;
             store.set('campaignId', this.campaignId);
+            this.story = null
         },
         async switchGame(game) {
             this.game = game;

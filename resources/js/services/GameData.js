@@ -16,6 +16,7 @@ import abilitiesFcJson from '../abilities-fc.json'
 import abilitiesJotlJson from '../abilities-jotl.json'
 import abilitiesCsJson from '../abilities-cs.json'
 import charactersJson from '../characters.json'
+import attackModifierDecksJson from '../attack-modifier-decks.json'
 
 export default class GameData {
     games() {
@@ -23,13 +24,12 @@ export default class GameData {
     }
 
     beta() {
-        return ["cs"]
+        return []
     }
 
     achievements(game) {
         switch (game) {
             case 'jotl':
-            case 'cs':
                 return []
             default:
                 return achievementsJson
@@ -121,6 +121,14 @@ export default class GameData {
         }
     }
 
+    attackModifierDeck() {
+        return attackModifierDecksJson
+    }
+
+    test() {
+        return 'test'
+    }
+
     map(game = 'gh') {
         let map = 'fc';
 
@@ -177,6 +185,11 @@ export default class GameData {
                 return {
                     portrait: '-100 0 500 500',
                     landscape: '-100 -70 500 500'
+                }
+            case 'cs':
+                return {
+                    portrait: '0 0 370 540',
+                    landscape: '0 -40 530 370'
                 }
             default:
                 return {

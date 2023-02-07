@@ -8,6 +8,10 @@ class ChoiceService {
     }
 
     getPromptConfig(scenario) {
+        if (!scenario.prompt) {
+            return undefined;
+        }
+
         switch (scenario.prompt) {
             case 'dragon':
                 let drakesCommand = this.achievementRepository.find('PTDC');
@@ -23,14 +27,6 @@ class ChoiceService {
                         } else {
                             this.achievementRepository.lose('GTDA');
                         }
-                        this.setChoice(scenario, value);
-                    }
-                });
-
-            case 'burningMountain':
-                return new PromptConfig(scenario, {
-                    options: 2,
-                    callback: (value) => {
                         this.setChoice(scenario, value);
                     }
                 });
@@ -81,14 +77,6 @@ class ChoiceService {
                     }
                 });
 
-            case 'searchPiecesOfAnArtifact':
-                return new PromptConfig(scenario, {
-                    options: 2,
-                    callback: (value) => {
-                        this.setChoice(scenario, value);
-                    }
-                });
-
             case 'aftershocks':
                 return new PromptConfig(scenario, {
                     options: 2,
@@ -112,6 +100,7 @@ class ChoiceService {
                 });
 
             case 'bloodyWar':
+            case 'capstoneTest':
                 return new PromptConfig(scenario, {
                     options: 3,
                     callback: (value) => {
@@ -119,15 +108,13 @@ class ChoiceService {
                     }
                 });
 
+            case 'burningMountain':
+            case 'searchPiecesOfAnArtifact':
             case 'escapeFromTheHusk':
-                return new PromptConfig(scenario, {
-                    options: 2,
-                    callback: (value) => {
-                        this.setChoice(scenario, value);
-                    }
-                });
-
             case 'directingBeams':
+            case 'undeadTerrors':
+            case 'unseenPlight':
+            default:
                 return new PromptConfig(scenario, {
                     options: 2,
                     callback: (value) => {
@@ -135,8 +122,6 @@ class ChoiceService {
                     }
                 });
         }
-
-        return undefined;
     }
 
     setChoice(scenario, value, setComplete = true) {

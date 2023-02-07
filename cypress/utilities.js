@@ -38,6 +38,19 @@ export default {
         );
     },
 
+    setReadOnly() {
+        return cy.wrap(
+            new Promise((fulfilled) => {
+                cy.window().then((window) => {
+                    window.app.story = {
+                        read_only: true
+                    }
+                    fulfilled();
+                });
+            })
+        );
+    },
+
     isNodeVisible(id) {
         cy.get('#node' + id).should(($node) => {
             expect($node).css('display', 'inline');
@@ -125,7 +138,17 @@ export default {
     },
 
     closeModel() {
-        cy.get('button').contains('close').click({force: true});
+        cy.get("body").then($body => {
+            if ($body.find('.mdc-dialog.mdc-dialog--open button[data-mdc-dialog-action=close]').length > 0) {
+                cy.get('.mdc-dialog.mdc-dialog--open button[data-mdc-dialog-action=close]')
+                    .each($closeButton => {
+                        $closeButton.trigger('click')
+                    });
+            }
+            else {
+                cy.get('body').click('left', {force: true});
+            }
+        });
     },
 
     isTracker() {

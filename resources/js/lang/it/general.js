@@ -10,6 +10,8 @@ export default {
     "Add city events": "Add city events",
     "Road Event Decks": "Road Event Decks",
     "Add road events": "Add road events",
+    "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.",
+    "completed scenarios": "scenari completati",
     "5 Ancient Technology Global Achievements": "5 “Ancient Technology” Global Achievements",
     "Add City Event 75 & Road Event 66": "Add City Event 75 & Road Event 66",
     "Add City Event 76 & Road Event 67": "Add City Event 76 & Road Event 67",
@@ -55,12 +57,14 @@ export default {
     "incomplete": "incompleto",
     "Incomplete": "Incompleto",
     "initiative": "initiative",
+    "Initiative": "Initiative",
     "Items": "Items",
     "level": "level",
     "Level": "Level",
     "Locked": "Locked",
     "Lost": "Perdute",
     "Lvl": "Lvl",
+    "Enable items from other games": "Enable items from other games",
     "No items available": "No items available",
     "No treasures available": "Nessun tesoro disponibile",
     "Not unlocked": "Non sbloccato",
@@ -89,6 +93,7 @@ export default {
     "Search name or nr": "Search name or nr",
     "Set this counter to the amount of characters you have retired": "Set this counter to the amount of characters you have retired.",
     "Show all": "Show all",
+    "Manage": "Manage",
     "Show treasures": "Mostra tesori",
     "solved": "solved",
     "Summary": "Riassunto",
@@ -96,6 +101,7 @@ export default {
     "Treasure": "Tesoro | Tesori",
     "Treasures": "Tesori",
     "Unlocked": "Unlocked",
+    "unlocked": "unlocked",
     "Unlocks": "Unlocks",
     "Virtual Board": "Virtual Board",
     "XP": "XP",
@@ -122,6 +128,14 @@ export default {
         "3": "O condividila su una di queste piattaforme",
         "title": "Condividi Gloomhaven Storyline Tracker"
     },
+    "share-campaign-code": {
+        "1": "Share the following campaign code with your party members to enable progress sync across all your devices!",
+        "2": "Valid until",
+        "3": "The code is valid for one week.",
+        "4": "When enabled, users who use this code won't be able to edit the storyline.",
+        "not-allowed": "You are not the owner of this campaign, you can't share it with others."
+    },
+    "Read only mode": "Read only mode",
     "campaign page": {
         "local desc": "The local campaign is your free campaign, it is stored on your device and cannot be synchronized automatically between members."
     },
@@ -161,6 +175,7 @@ export default {
     "German": "German",
     "Spanish": "Spanish",
     "Campaigns": "Campaigns",
+    "Campaign code": "Campaign code",
     "Buy shared campaign": "Buy shared campaign",
     "Add shared campaign": "Add shared campaign",
     "donations": {
@@ -211,7 +226,7 @@ export default {
     "An email has been sent to your inbox.": "An email has been sent to your inbox.",
     "Selected Campaign": "Selected Campaign",
     "Selected Game": "Selected Game",
-    "PRO": "PRO",
+    "Pro": "Pro",
     "Storyline": "Campagna",
     "Map": "Mappa",
     "Scenario list": "Lista degli Scenari",
@@ -229,8 +244,13 @@ export default {
         "title": "Transfer campaign data",
         "text": "Copy campaign data between campaigns can be done easily.",
         "warning": {
-            "text": "Campaign data can only be transferred if you purchased a shared campaign."
+            "text": "Campaign data can only be transferred if you purchased a shared campaign.",
+            "read-only": "Transfer campaign data is not available in read only mode."
         }
+    },
+    "games-enabled": {
+        "title": "Giochi abilitati",
+        "text": "Per nascondere i giochi e i suoi personaggi, abilita solo quelli che possiedi."
     },
     "Please consider purchasing a license": "Please consider purchasing a license",
     "Danger zone!": "Danger zone!",
@@ -288,6 +308,8 @@ export default {
     "Solo Scenarios": "Solo Scenarios",
     "Personal Quests": "Missioni personali",
     "Personal Quest": "Personal Quest",
+    "Hide personal quests": "Hide personal quests",
+    "Show personal quest": "Show personal quest",
     "Random Scenarios": "Scenari casuali",
     "Sealed": "Sigillati",
     "Road Events": "Eventi di strada",
@@ -328,6 +350,7 @@ export default {
     "Move": "Move",
     "Jump": "Jump",
     "Flying": "Flying",
+    "Retaliate": "Vendicarsi",
     "Recover": "Recover",
     "Refresh": "Refresh",
     "BANE": "BANE",

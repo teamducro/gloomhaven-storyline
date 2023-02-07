@@ -1,5 +1,5 @@
 <template>
-    <div v-if="sheet" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
+    <div v-if="sheet && !loading" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div id="party" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
             <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
@@ -11,22 +11,99 @@
 
             Party sheet is in working progress.
 
+            <reputation-section
+                ref="reputation"
+                :sheet="sheet"
+                :loading="loading"
+                @change="store"/>
+            <donations-section
+                ref="donations"
+                :sheet="sheet"
+                :loading="loading"
+                :threshold="0"
+                @change="store"/>
+            <prosperity-section
+                ref="prosperity"
+                :sheet="sheet"
+                :loading="loading"
+                :prosperity.sync="prosperity"
+                @change="store"/>
+
+            <div class="lg:flex">
+                <selectable-list
+                    id="city-events"
+                    :title="$t('City Event Decks')"
+                    :label="$t('Add city events')"
+                    :items.sync="sheet.city"
+                    @change="store"
+                    ref="city-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, true)" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+                <selectable-list
+                    id="road-events"
+                    :title="$t('Road Event Decks')"
+                    :label="$t('Add road events')"
+                    :items.sync="sheet.road"
+                    @change="store"
+                    ref="road-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, false)" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+            </div>
+
+            <div class="w-full mt-8">
+                <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
+                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
+                       @change="store" :is-local-campaign="isLocalCampaign"
+                ></notes>
+            </div>
+
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Unlocks') }}</h2>
 
-                <ul class="flex flex-row flex-wrap -mx-2">
-                    <li v-for="(checked, id) in sheet.characterUnlocks" :key="id" class="flex items-center"
-                        :class="'order-'+sheet.characterOrder[id]">
-                        <checkbox group="items"
-                                  :id="'character-'+id"
-                                  :checked="checked"
-                                  :disabled="sheet.starterCharacters.includes(id)"
-                                  @change="(_, isChecked) => {unlockCharacter(id, isChecked)}"></checkbox>
-                        <span class="w-8 font-title">
-                            <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
-                        </span>
-                    </li>
-                </ul>
+                <p>
+                    {{
+                        $t('Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.')
+                    }}</p>
+                <p>
+                    {{ completedCount }} {{ $t('completed scenarios') }},
+                    {{ unlockCount }} {{ $t('unlocked') }}.
+                </p>
+
+                <div class="w-full mb-4 grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-4">
+                    <div v-for="(unlock, index) in unlocks" :key="'unlock'+index"
+                         class="flex items-center border-b border-gray-600">
+                        <div class="-ml-2">
+                            <checkbox group="unlocks"
+                                      :id="'unlock'+index"
+                                      :checked="sheet.unlocks[index]"
+                                      @change="(_, isChecked) => {unlockChecked(index, isChecked)}"></checkbox>
+                        </div>
+                        <div class="w-full flex items-center flex-wrap">
+                            <label :for="'unlock'+index" class="cursor-pointer">
+                                <component v-bind:is="renderHtml(unlock.reward)"></component>
+                            </label>
+                            <scenario-number class="ml-2" v-if="unlock.scenario"
+                                             :id="unlock.scenario"
+                                             show-name/>
+                        </div>
+                    </div>
+                </div>
+
+                <unlock-characters :sheet="sheet" @change="store"/>
             </div>
 
         </div>
@@ -39,16 +116,70 @@ import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import ScenarioNumber from "../components/elements/ScenarioNumber";
+import {ScenarioState} from "../models/ScenarioState";
 
 export default {
+    components: {ScenarioNumber},
     mixins: [GetCampaignName, SheetCalculations],
+    inject: ['appData'],
     data() {
         return {
             sheet: null,
             campaignName: null,
+            prosperity: 0,
             loading: true,
             isLocalCampaign: true,
             game: 'cs',
+            unlocks: [
+                {
+                    reward: 'Gain +3 Prosperity'
+                },
+                {
+                    reward: 'Add City and Road Event 59 to the top of the corresponding decks'
+                },
+                {
+                    reward: 'Gain +3 Prosperity'
+                },
+                {
+                    reward: 'Add City and Road Event 60 to the top of the corresponding decks'
+                },
+                {
+                    reward: 'Gain +3 Prosperity'
+                },
+                {
+                    reward: 'Unlock',
+                    scenario: 51
+                },
+                {
+                    reward: 'Gain +3 Prosperity'
+                },
+                {
+                    reward: 'Unlock',
+                    scenario: 52
+                },
+                {
+                    reward: 'Gain +3 Prosperity'
+                },
+                {
+                    reward: 'Unlock',
+                    scenario: 53
+                },
+                {
+                    reward: 'Gain +3 Prosperity'
+                },
+                {
+                    reward: 'Unlock',
+                    scenario: 54
+                },
+                {
+                    reward: 'Gain +3 Prosperity'
+                },
+                {
+                    reward: 'Unlock',
+                    scenario: 55
+                }
+            ],
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
             scenarioRepository: new ScenarioRepository
@@ -60,6 +191,14 @@ export default {
         this.$bus.$on('campaigns-changed', this.render);
         this.$bus.$on('remove-card', this.removeCard);
     },
+    computed: {
+        completedCount() {
+            return this.scenarioRepository.whereState(ScenarioState.complete).count();
+        },
+        unlockCount() {
+            return parseInt(this.completedCount / 5) + 1
+        }
+    },
     destroyed() {
         this.$bus.$off('campaigns-changed', this.render);
         this.$bus.$off('remove-card', this.removeCard);
@@ -68,7 +207,7 @@ export default {
         async render() {
             this.loading = true;
 
-            this.sheet = this.sheetRepository.make(app.game);
+            this.sheet = this.sheetRepository.make(this.appData.game);
             this.campaignName = this.getCampaignName();
 
             this.isLocalCampaign = app.campaignId === 'local';
@@ -80,11 +219,15 @@ export default {
 
             this.loading = false;
         },
-        unlockCharacter(id, isChecked) {
-            this.sheet.characterUnlocks[id] = isChecked;
-            this.sheet.store();
-            this.scenarioRepository.scenarioValidator.validate();
-            this.store();
+        unlockChecked(index, isChecked) {
+            if (this.unlocks[index].scenario) {
+                const state = isChecked
+                    ? ScenarioState.incomplete
+                    : ScenarioState.hidden;
+                this.scenarioRepository.changeState(this.unlocks[index].scenario, state);
+            }
+            this.sheet.unlocks[index] = isChecked;
+            this.store()
         },
         store() {
             if (this.loading) {

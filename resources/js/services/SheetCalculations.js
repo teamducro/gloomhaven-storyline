@@ -30,24 +30,36 @@ export default {
 
             return donationProsperity;
         },
-        prosperityBreaks() {
-            return collect({
-                1: 1, 5: 2, 10: 3, 16: 4, 23: 5, 31: 6, 40: 7, 51: 8, 65: 9
-            });
+        prosperityBreaks(game) {
+            switch (game) {
+                case 'cs':
+                    return collect({
+                        1: 1, 4: 2, 9: 3, 15: 4, 22: 5, 30: 6, 39: 7, 50: 8, 60: 9
+                    });
+                default:
+                    return collect({
+                        1: 1, 5: 2, 10: 3, 16: 4, 23: 5, 31: 6, 40: 7, 51: 8, 65: 9
+                    });
+            }
         },
-        calculateProsperity(prosperityIndex) {
-            return this.prosperityBreaks()
+        calculateProsperity(prosperityIndex, game) {
+            return this.prosperityBreaks(game)
                 .filter((prosperity, index) => prosperityIndex >= index)
                 .last();
         },
-        calculateItemsGh(items, prosperityIndex) {
+        unlockedItems(items, game = 'gh') {
             let filteredItems = collect(items).filter().keys().all().map(Number)
+            return this.prependGame(game, filteredItems);
+        },
+        // CS uses the GH "base" items and adds a few more
+        calculateItemsGh(unlockedItems, prosperityIndex) {
             const prosperityMap = [14, 21, 28, 35, 42, 49, 56, 63, 70];
             let prosperityItems = Helpers.makeArrayWithNumbers(prosperityMap[this.calculateProsperity(prosperityIndex) - 1])
-            return _.uniq(prosperityItems.concat(filteredItems));
+            prosperityItems = this.prependGame('gh', prosperityItems);
+
+            return _.uniq(prosperityItems.concat(unlockedItems));
         },
-        calculateItemsJotl(items, scenarioRepository) {
-            let filteredItems = collect(items).filter().keys().all().map(Number)
+        calculateItemsJotl(unlockedItems, scenarioRepository) {
             let shopItems = [];
 
             let itemRewards = {
@@ -63,10 +75,12 @@ export default {
                 }
             }
 
-            return _.uniq(shopItems.concat(filteredItems));
+            shopItems = this.prependGame('jotl', shopItems);
+
+            return _.uniq(shopItems.concat(unlockedItems));
         },
-        calculateItemsCs(items, scenarioRepository) {
-            return Helpers.makeArrayWithNumbers(100);
+        prependGame(game, items) {
+            return items.map(id => game + '-' + id);
         }
     }
 }

@@ -92,6 +92,12 @@ describe('Character', () => {
         for (let i = 0; i <= 9; i++) {
             cy.get(`#perk-${i}-0`).click();
         }
+
+        utilities.scrollTo('60%');
+        cy.get('#open-modifier-deck').click();
+        cy.contains('Attack modifier deck');
+
+        utilities.assertCount('.mdc-dialog__content ul.grid li', 12);
     });
 
     it('It can check battle goals', () => {
@@ -109,9 +115,8 @@ describe('Character', () => {
 
     it('It can\'t add more items then there is stock', () => {
         // Campaign with Brute and Cragheart #001 Boots of Striding
-        cy.visit('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxASwL4BpwBmAxjAJwBsyqGO+YUwCAhgE5FSYBuApgCYDCUVkyJpuLMFTwJ2w0eICqAOwA2AeyIBrSSgQAhAErIQcXAn4AJY6YQBlAOrWzAFQCSTu-w8BZZ9bwgsowALADMABxE4XCkwTAEoXBxwXBw4TAARrxw5DAA7OThAAykBMFE5EwZecj6RmahRTHBTOR5MERMebwwwQBMRNwwTKVwMMXlTMHcGX3cYbWWCNJEmGgAnlQIiEgmZn0eoR7BHgCsHpS7NjVXZuEepB5wRU87e9sHt9tHX0lP579Lu84Ddgfdfo8vn0XlC3jY+p93n0fkiTlCAUigfDQfDwUjIe9Gv58JheMAAgAHTA2FhqJi8LZw-aHY5nC4eHF3B5PGHApkfJ4omx-X4Y4VYswgp544UE+G8+H8hEeZEqtFIsX7CUIPqcnUy-ZyhoKgIAV3JKyELBEYhYvQiUWa8USyVS6SyOXyhRKZQqVRujHY3C0OnJZggahUDKQRTMpNqhgQcbEAFtQ9tiQgVNweCpkDYlEwU9wEyxTWIkwgKeJtFsYQBtEBFAC6kuQjZbzKQHfwnYQPw7rYQaJ7TaHAMHZkuo77N0nCHBM6HkPnz3bY+kptN8aQw4d0VizqSvTdmWyuQKxVK5Uq1UrAA8Kcgipa5LaYI1mq12p1ur0BkMIwEGMEydNMszzD8gZQMGtYoNIEZRs+cbRuYVjJtwaaMpm2a5vmZiFsWizWtA3CsGglbViwcGMA2Y5tt2Ta9r2Q6fPOA5MfRw7rrGXETlx06cbOPFDouXErhuZhbju-ZNLE34dF0PT9IMwyjOMRSTOBcwLGYj7Ptg2BAA');
+        cy.visit('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxASwL4BpwBmAxjAJwBsyqGO+YUwCAhgE5FSYBuApgCYDCUVkyJpuLMFTwJ2w0eICqAOwA2AeyIBrSSgQAhAErIQcXAn4AJY6YQBlAOrWzAFQCSTu-w8BZZ9bwgsowALADMABxE4XCkwTAEoXBxwXBw4TAARrxw5DAA7OThAAykBMFE5EwZecj6RmahRTHBTOR5MERMebwwwQBMRNwwTKVwMMXlTMHcGX3cYbWWCNJEmGgAnlQIiEgmZn0eoR7BHgCsHpS7NjVXZuEepB5wRU87e9sHt9tHX0lP579Lu84Ddgfdfo8vn0XlC3jY+p93n0fkiTlCAUigfDQfDwUjIe9Gv58JheMAAgAHTA2FhqJi8LZw-aHY5nC4eHF3B5PGHApkfJ4omx-X4Y4VYswgp544UE+G8+H8hEeZEqtFIsX7CUIPqcnUy-ZyhoKgIAV3JKyELBEYhYvQiUWa8USyVS6SyOXyhRKZQqVRujHY3C0OnJZggahUDKQRTMpNqhgQcbEAFtQ9tiQgVNweCpkDYlEwU9wEyxTWIkwgKeJtFsYQBtEBFAC6kuQjZbzKQHfwnYQPw7rYQaJ7TaHAMHZkuo77N0nCHBM6HkPnz3bY+kptN8aQw4d0VizqSvTdmWyuQKxVK5Uq1UrAA8Kcgipa5LaYI1mq12p1ur0BkMIwEGMEydNMszzD8gZQMGtYoNIEZRs+cbRuYVjJtwaaMpm2a5vmZiFsWizWtA3CsGglbViwcGMA2Y5tt2Ta9r2Q6fPOA5MfRw7rrGXETlx06cbOPFDouXErhuZhbju-ZNLE34dF0PT9IMwyjOMRSTOBcwLGYj7Ptg2BAA/characters');
 
-        cy.visit('/tracker/#/characters');
         utilities.openCharacter('Spellweaver');
 
         cy.get('input[name="items"]').click();
@@ -200,7 +205,7 @@ describe('Character', () => {
 
         cy.get('p').contains(message).should('exist');
 
-        cy.get('#perk-8-0').click();
+        cy.get('#perk-8-0').click({force: true});
 
         cy.get('p').contains(message).should('exist');
 
@@ -217,7 +222,7 @@ describe('Character', () => {
         cy.get('input[aria-labelledby="level"]').clear({force: true}).type('2{enter}');
         cy.get('input[aria-labelledby="xp"]').clear({force: true}).type('50{enter}');
         cy.get('input[aria-labelledby="gold"]').clear({force: true}).type('50{enter}');
-        cy.get('#perk-0-0').click();
+        cy.get('#perk-0-0').click({force: true});
         cy.get('input[name="items"]').click();
         cy.get('li').contains('Boots of Striding').click();
         utilities.closeModel();
@@ -242,6 +247,24 @@ describe('Character', () => {
         cy.get('h3').contains('#510 Seeker of Xorn');
         cy.get('#pq-0-0').should('be.checked');
         cy.get('input[aria-labelledby="retirements"]').should('have.value', '2');
+    });
+
+    it('cant update characters in read only mode', () => {
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter();
+
+        utilities.setReadOnly().then(() => {
+            cy.get('input[name="name"]').should('be.disabled');
+            cy.get('input[aria-labelledby="level"]').should('be.disabled');
+            cy.get('input[aria-labelledby="xp"]').should('be.disabled');
+            cy.get('input[aria-labelledby="gold"]').should('be.disabled');
+            cy.get('#perk-0-0').should('be.disabled');
+            cy.get('input[name="items"]').should('be.disabled');
+            cy.get('#notes').should('be.disabled');
+            cy.get('input[aria-labelledby="personal-quests"]').should('be.disabled');
+            cy.get('input[aria-labelledby="retirements"]').should('be.disabled');
+            cy.get('.items-to-add-dropdown').should('not.exist');
+        });
     });
 
 });

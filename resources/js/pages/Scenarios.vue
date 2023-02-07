@@ -102,6 +102,7 @@ import CharacterIcon from "../components/elements/CharacterIcon";
 import GameData from "../services/GameData";
 
 export default {
+    inject: ['appData'],
     components: {CharacterIcon},
     data() {
         return {
@@ -148,7 +149,7 @@ export default {
         async setScenarios() {
             this.scenarios = app.scenarios;
             this.regions = this.scenarioRepository.fetchRegionsWithScenarios().items;
-            this.hasImages = this.gameData.map(app.game) !== null;
+            this.hasImages = this.gameData.map(this.appData.game) !== null;
 
             this.columns = (new When).filter([
                 new When(this.hasImages, {id: 'image', name: 'Sticker'}),
@@ -169,7 +170,7 @@ export default {
         },
         applyFilter(scenario) {
             // Only show scenarios from selected game (GH/FC)
-            if (scenario.game && app.game && scenario.game !== app.game) {
+            if (scenario.game && this.appData.game && scenario.game !== this.appData.game) {
                 return false;
             }
 

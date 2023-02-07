@@ -4,6 +4,7 @@ import PersonalQuestRepository from "../repositories/PersonalQuestRepository";
 import PersonalQuest from "./PersonalQuest";
 import UsesTranslations from "./UsesTranslations";
 import Versionable from "./Versionable";
+import ModifierCard from "./ModifierCard";
 
 class Character {
 
@@ -71,10 +72,35 @@ class Character {
         this.characterName = this.$tPrefix('name');
         if (this.id) {
             const data = this.gameData.characters(this.game)[this.id];
-            this.perkDescriptions = data.perks;
+
             this.game = data.game;
             this.abilityCount = data.abilityCount;
+
+            this.perkDescriptions = data.perks.map((perk) => {
+                perk.cards = perk.cards?.map((card) => {
+                    if (card instanceof ModifierCard) {
+                        return card;
+                    }
+
+                    return new ModifierCard({
+                        path: this.id,
+                        count: card.count,
+                        ...card.attackModifier
+                    })
+                });
+
+                return perk;
+            });
         }
+    }
+
+    migrateItemIds() {
+        Object.keys(this.items).forEach(id => {
+            if (!isNaN(id)) {
+                this.items[this.game + '-' + id] = this.items[id];
+                delete this.items[id];
+            }
+        });
     }
 
     fillBlanks() {
@@ -105,6 +131,7 @@ class Character {
         this.parentRead();
         this.translationKey = 'characters.' + this.id;
         this.readGameData();
+        this.migrateItemIds();
         this.fillBlanks();
         this.fillRelations();
     }
