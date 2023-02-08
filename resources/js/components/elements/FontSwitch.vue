@@ -16,6 +16,7 @@
                 <li v-for="(name, font) in fonts"
                     :key="font" :data-value="font"
                     class="mdc-list-item cursor-pointer"
+                    :style="{'font-family': font}"
                     :aria-selected="font === current"
                     :class="{'mdc-list-item--selected': font === current}">{{ name }}
                 </li>
