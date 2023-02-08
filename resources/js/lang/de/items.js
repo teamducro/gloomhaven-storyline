@@ -681,17 +681,17 @@ export default {
     },
     "gh-134": {
         "name": "Imposante Klinge",
-        "source": "Reward from Solo Scenario - {BR}",
+        "source": "Belohnung von Solo-Szenario - {BR}",
         "desc": "Any time you kill an enemy during your turn, gain {SHIELD} 1 for the rest of the round."
     },
     "gh-135": {
         "name": "Fokusstrahl",
-        "source": "Reward from Solo Scenario - {TI}",
+        "source": "Belohnung von Solo-Szenario - {TI}",
         "desc": "During your Heal action, double the value of the Heal."
     },
     "gh-136": {
         "name": "Instabiles Elixier",
-        "source": "Reward from Solo Scenario - {SW}",
+        "source": "Belohnung von Solo-Szenario - {SW}",
         "desc": "During your ranged attack, add +2 {ATTACK} and gain Advantage on the entire Attack action, but suffer 2 damage for each attack made."
     },
     "gh-137": {
@@ -701,33 +701,33 @@ export default {
     },
     "gh-138": {
         "name": "Steinamulett",
-        "source": "Reward from Solo Scenario - {CH}",
-        "desc": "During your action where an obstacle is created, create one additional obstacle and apply all effects of the action to it."
+        "source": "Belohnung von Solo-Szenario - {CH}",
+        "desc": "Erschaffe während deiner Aktion zur Erschaffung eines Hindernisses ein zusätzliches Hindernis mit allen Effekten der Aktion."
     },
     "gh-139": {
         "name": "Astralmesser",
-        "source": "Reward from Solo Scenario - {MT}",
+        "source": "Belohnung von Solo-Szenario - {MT}",
         "desc": "Any time you perform an {AUGMENT} action, add +1 {ATTACK} to the entire action."
     },
     "gh-140": {
         "name": "Sonnenschild",
-        "source": "Reward from Solo Scenario - {SK}",
+        "source": "Belohnung von Solo-Szenario - {SK}",
         "desc": "When damaged by an attack, you may {LIGHT_X} to gain {SHIELD} 3 for the attack."
     },
     "gh-141": {
         "name": "Werkzeuggürtel",
-        "source": "Reward from Solo Scenario - {QM}",
+        "source": "Belohnung von Solo-Szenario - {QM}",
         "desc": "During your turn, you or any one ally may {REFRESH} one of your spent or consumed items.",
         "faq": "Diesen Gegenstand kannst du nicht erneuern."
     },
     "gh-142": {
         "name": "Phasenfigur",
-        "source": "Reward from Solo Scenario - {SU}",
+        "source": "Belohnung von Solo-Szenario - {SU}",
         "desc": "When a summon you own is damaged by an attack, it suffers no damage instead."
     },
     "gh-143": {
         "name": "Rauchelixier",
-        "source": "Reward from Solo Scenario - {NS}",
+        "source": "Belohnung von Solo-Szenario - {NS}",
         "desc": "During your turn, gain {INVISIBLE} and create dark. {DARK}"
     },
     "gh-144": {
@@ -737,37 +737,37 @@ export default {
     },
     "gh-145": {
         "name": "Todesmaske",
-        "source": "Reward from Solo Scenario - {BE}",
+        "source": "Belohnung von Solo-Szenario - {BE}",
         "desc": "Any time you perform a melee attack and you have exactly 1 hit point, add +2 {ATTACK} to the Attack."
     },
     "gh-146": {
         "name": "Virtuosenlaute",
-        "source": "Reward from Solo Scenario - {SS}",
+        "source": "Belohnung von Solo-Szenario - {SS}",
         "desc": "After performing any {SONG} action, immediately perform an {ATTACK} 2 or {MOVE} 2 action."
     },
     "gh-147": {
         "name": "Mantel des Jägers",
-        "source": "Reward from Solo Scenario - {DS}",
+        "source": "Belohnung von Solo-Szenario - {DS}",
         "desc": "Any time you perform a {DOOM} action, {MUDDLE} the target of the {DOOM}."
     },
     "gh-148": {
         "name": "Arztkittel",
-        "source": "Reward from Solo Scenario - {SB}",
+        "source": "Belohnung von Solo-Szenario - {SB}",
         "desc": "Any time an ally performs a Medical Pack or Large Medical Pack action, they add +1 {HEAL} to their Heal."
     },
     "gh-149": {
         "name": "Elementarstiefel",
-        "source": "Reward from Solo Scenario - {EL}",
+        "source": "Belohnung von Solo-Szenario - {EL}",
         "desc": "If you move 5 or more hexes on your turn, create any element. {ANY}"
     },
     "gh-150": {
         "name": "Befehlsstab",
-        "source": "Reward from Solo Scenario - {BT}",
+        "source": "Belohnung von Solo-Szenario - {BT}",
         "desc": "After performing a {COMMAND} action, play one card from your hand and immediately perform the same side of the card (top or bottom) as the {COMMAND} action."
     },
     "gh-151": {
         "name": "Sword of the Sands",
-        "source": "Reward from Solo Scenario - {BS}",
+        "source": "Belohnung von Solo-Szenario - {BS}",
         "desc": "During your melee attack, add {POISON} and {WOUND} to the entire attack action."
     },
     "gh-152": {
