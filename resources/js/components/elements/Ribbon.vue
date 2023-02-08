@@ -1,7 +1,7 @@
 <template>
     <div class="ribbon">
         <webp width="40" height="92" src="/img/pro.png" @loaded="isLoaded = true"/>
-        <div v-if="isLoaded" class="text">
+        <div v-if="isLoaded" class="text font-title">
             <slot></slot>
         </div>
     </div>
@@ -26,7 +26,7 @@
             font-size: .9rem;
             @apply absolute transform -rotate-90;
             top: 2.2rem;
-            left: .45rem;
+            left: .6rem;
         }
     }
 </style>
