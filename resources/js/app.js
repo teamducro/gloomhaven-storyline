@@ -177,7 +177,6 @@ window.app = new Vue({
 
         listenToCrtlS();
         setInitialLanguage();
-        setInitialFont();
     },
     methods: {
         async campaignsChanged(shouldSync = true) {

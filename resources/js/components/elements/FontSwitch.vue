@@ -53,11 +53,10 @@ export default {
         }
     },
     beforeMount() {
-        this.setInitialFont();
-
+        this.init();
     },
     mounted() {
-        if (this.current !== store.get('font')) {
+        if (this.current !== this.getFont()) {
             this.updateUserFont();
         }
 
@@ -74,6 +73,7 @@ export default {
             document.querySelector('.font-switch .mdc-select__selected-text').click();
         },
         changeFont() {
+            console.log('this.select.value', this.select.value);
             this.current = this.select.value;
             console.log('changeFont', this.current);
             store.set('font', this.current);
@@ -83,7 +83,7 @@ export default {
             return store.get('font');
         },
         getInitialFont() {
-            let font = store.get('font');
+            let font = this.getFont();
             console.log('initial font', font);
             if (!font) {
                 const default_font = this.default_font;
@@ -94,8 +94,13 @@ export default {
             }
             return font;
         },
-        setInitialFont() {
-            this.current = this.getInitialFont();
+        init() {
+            console.log('this.current', this.current);
+            const initial_font = this.getInitialFont();
+            if (this.current != initial_font) {
+                this.current = initial_font;
+                this.updateUserFont();
+            }
         },
         validFont(font) {
             return this.fonts.hasOwnProperty(font);
