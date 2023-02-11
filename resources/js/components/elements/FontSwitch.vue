@@ -116,10 +116,15 @@ export default {
         },
         rerender() {
             const stylesheet = document.styleSheets[1];
-            const boxParaRuleBody = [...stylesheet.cssRules].find((r) => r.selectorText === "html, body");
-            boxParaRuleBody.style.setProperty('font-family', this.current);
-            const boxParaRuleHeaders = [...stylesheet.cssRules].find((r) => r.selectorText === "h1, h2, h3");
-            boxParaRuleHeaders.style.setProperty('font-family', this.current);
+
+            const css_class_selectors = ['html, body', 'h1, h2, h3', 'div[class*="mdc-"]'];
+
+            css_class_selectors.forEach(selector => {
+                console.log('selector', selector);
+                [...stylesheet.cssRules].find((r) => r.selectorText === selector).style.setProperty('font-family', this.current);
+
+                console.log('selector', selector);
+            });
         },
     }
 }
