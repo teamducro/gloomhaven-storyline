@@ -4,8 +4,6 @@
             <i class="mdc-select__dropdown-icon"></i>
             <div class="mdc-select__selected-text">
                 {{ fonts[current] }}
-                <!-- {{ fonts['Pirata One'] }}
-                {{ current }} -->
             </div>
             <span class="mdc-floating-label mdc-floating-label--float-above">{{ $t('Font') }}</span>
             <div class="mdc-line-ripple"></div>
@@ -26,9 +24,6 @@
 </template>
 
 <script>
-// TODO - Asses service worker and font loading
-// import {loadLanguageAsync} from "../../services/I18n-setup";
-// import {loadFontAsync} from "../../services/Fonts";
 
 import store from "store/dist/store.modern";
 import {MDCSelect} from "@material/select/component";
@@ -40,11 +35,11 @@ import UserRepository from "../../apiRepositories/UserRepository";
 export default {
     data() {
         return {
-            default_font: 'Pirata One',
+            default_font: 'Nyala',
             current: null,
             fonts: {
-                'Pirata One': 'Pirata One',
                 'Nyala': 'Nyala',
+                'Pirata One': 'Pirata One',
                 'sans-serif': 'Sans Serif',
                 'Arial': 'Arial',
                 'Calibri': 'Calibri'
@@ -56,7 +51,7 @@ export default {
         this.init();
     },
     mounted() {
-        if (this.current !== this.getFont()) {
+        if (this.current !== store.get('font')) {
             this.updateUserFont();
         }
 
@@ -80,10 +75,11 @@ export default {
             this.updateUserFont();
         },
         getFont() {
+            this.init();
             return store.get('font');
         },
         getInitialFont() {
-            let font = this.getFont();
+            let font = store.get('font');
             console.log('initial font', font);
             if (!font) {
                 const default_font = this.default_font;
@@ -117,11 +113,14 @@ export default {
         rerender() {
             const stylesheet = document.styleSheets[1];
 
-            const css_class_selectors = ['html, body', 'h1, h2, h3', 'div[class*="mdc-"]'];
+            const css_class_selectors = ['html, body', 'h1, h2, h3', '.font-title','div[class*="mdc-"]', '#storyline text'];
 
             css_class_selectors.forEach(selector => {
                 console.log('selector', selector);
-                [...stylesheet.cssRules].find((r) => r.selectorText === selector).style.setProperty('font-family', this.current);
+                const cssRule = [...stylesheet.cssRules].find((r) => r.selectorText === selector)
+                if (cssRule) {
+                    cssRule.style.setProperty('font-family', this.current, 'important');
+                }
 
                 console.log('selector', selector);
             });
