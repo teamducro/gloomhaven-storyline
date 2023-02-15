@@ -30,8 +30,6 @@ import {MDCSelect} from "@material/select/component";
 import Helpers from "../../services/Helpers";
 import UserRepository from "../../apiRepositories/UserRepository";
 
-// const md5 = require('js-md5');
-
 export default {
     data() {
         return {
@@ -113,7 +111,7 @@ export default {
         rerender() {
             const stylesheet = document.styleSheets[1];
 
-            const css_class_selectors = ['html, body', 'h1, h2, h3', '.font-title','div[class*="mdc-"]', '#storyline text'];
+            const css_class_selectors = ['html, body', 'h1, h2, h3', '.font-title', '.font-default','div[class*="mdc-"]', '#storyline text', '.bedge'];
 
             css_class_selectors.forEach(selector => {
                 console.log('selector', selector);
