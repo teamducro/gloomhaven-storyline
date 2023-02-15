@@ -9,7 +9,7 @@ export default {
             "Aggiungi tre carte {AGAIN} {PUSH}",
             "Aggiungi due carte {AGAIN} {PIERCE}",
             "Aggiungi una carta {AGAIN} {STUN}",
-            "Aggiiungi una carta {AGAIN} {DISARM} e una carta {AGAIN} {MUDDLE}",
+            "Aggiungi una carta {AGAIN} {DISARM} e una carta {AGAIN} {MUDDLE}",
             "Aggiungi una carta {AGAIN} AGGIUNGERE {TARGET}",
             "Aggiungi una carta {+1_WHITE} {SHIELD}1, Se Stesso",
             "Ignora gli effetti negativi degli oggetti e aggiungi una carta {+1_WHITE}"
@@ -58,7 +58,7 @@ export default {
             "Aggiungi una carta {+1_WHITE} {WOUND}",
             "Aggiungi una carta {+1_WHITE} {IMMOBILIZE}",
             "Aggiungi una carta {+1_WHITE} Cura {HEAL}2",
-            "Aggiungi una carta {+0_WHITE} AGGIUNGI {TARGET}",
+            "Aggiungi una carta {+0_WHITE} {TARGET}",
             "Ignora gli effetti negativi dello scenario"
         ]
     },
