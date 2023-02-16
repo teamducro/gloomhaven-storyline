@@ -57,7 +57,6 @@ export default {
         this.setInitialLanguage();
     },
     mounted() {
-        console.log('window.i18n.locale', window.i18n.locale);
         if (this.current !== window.i18n.locale) {
             loadLanguageAsync(this.current)
                 .then(() => this.updateUserLanguage())

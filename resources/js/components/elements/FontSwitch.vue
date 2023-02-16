@@ -66,9 +66,7 @@ export default {
             document.querySelector('.font-switch .mdc-select__selected-text').click();
         },
         changeFont() {
-            console.log('this.select.value', this.select.value);
             this.current = this.select.value;
-            console.log('changeFont', this.current);
             store.set('font', this.current);
             this.updateUserFont();
         },
@@ -78,18 +76,15 @@ export default {
         },
         getInitialFont() {
             let font = store.get('font');
-            console.log('initial font', font);
             if (!font) {
                 const default_font = this.default_font;
                 if (this.validFont(default_font)) {
-                    console.log('set initial font', default_font);
                     store.set('font', default_font);
                 }
             }
             return font;
         },
         init() {
-            console.log('this.current', this.current);
             const initial_font = this.getInitialFont();
             if (this.current != initial_font) {
                 this.current = initial_font;
@@ -114,13 +109,10 @@ export default {
             const css_class_selectors = ['html, body', 'h1, h2, h3', '.font-title', '.font-default','div[class*="mdc-"]', '#storyline text', '.bedge'];
 
             css_class_selectors.forEach(selector => {
-                console.log('selector', selector);
                 const cssRule = [...stylesheet.cssRules].find((r) => r.selectorText === selector)
                 if (cssRule) {
                     cssRule.style.setProperty('font-family', this.current, 'important');
                 }
-
-                console.log('selector', selector);
             });
         },
     }
