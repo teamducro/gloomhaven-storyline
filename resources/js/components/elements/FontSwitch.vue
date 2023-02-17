@@ -100,10 +100,9 @@ export default {
             else {
                 this.settings.current = this.defaultFont;
                 store.set('font', this.settings);
-                fontSettings = this.settings;
             }
 
-            return fontSettings.current;
+            return this.settings.current;
         },
         init() {
             const initialFont = this.getInitialFont();
