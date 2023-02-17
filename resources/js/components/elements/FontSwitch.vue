@@ -141,12 +141,3 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.font-switch {
-    .mdc-select__anchor {
-        &, &:before, &:after {
-            background-color: transparent !important;
-        }
-    }
-}
-</style>
