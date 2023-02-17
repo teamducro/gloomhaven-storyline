@@ -14,9 +14,7 @@ $mdc-theme-text-secondary-on-background: rgba(255, 255, 255, 0.54);
 $mdc-theme-text-hint-on-background: rgba(255, 255, 255, 0.38);
 $mdc-theme-text-disabled-on-background: rgba(255, 255, 255, 0.38);
 $mdc-theme-text-icon-on-background: rgba(255, 255, 255, 0.38);
-// TODO - Double check this is correct
 $mdc-typography-font-family: revert;
-// $mdc-typography-font-family: 'Nyala', sans-serif;
 
 @import "~@material/theme/mdc-theme";
 @import "~@material/button/mdc-button";

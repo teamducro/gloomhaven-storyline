@@ -1,25 +1,37 @@
 <template>
-    <div class="font-switch mdc-select w-full">
-        <div class="mdc-select__anchor w-full">
-            <i class="mdc-select__dropdown-icon"></i>
-            <div class="mdc-select__selected-text">
-                {{ fonts[current] }}
+    <div>
+        <div ref="font-switch" class="font-switch mdc-select w-full mb-4">
+            <div class="mdc-select__anchor w-full">
+                <i class="mdc-select__dropdown-icon"></i>
+                <div class="mdc-select__selected-text">
+                    {{ fonts[settings.current] }}
+                </div>
+                <span class="mdc-floating-label mdc-floating-label--float-above">{{ $t('Font') }}</span>
+                <div class="mdc-line-ripple"></div>
             </div>
-            <span class="mdc-floating-label mdc-floating-label--float-above">{{ $t('Font') }}</span>
-            <div class="mdc-line-ripple"></div>
-        </div>
 
-        <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class" style="min-width: 240px">
-            <ul class="mdc-list">
-                <li v-for="(name, font) in fonts"
-                    :key="font" :data-value="font"
-                    class="mdc-list-item cursor-pointer"
-                    :style="{'font-family': font}"
-                    :aria-selected="font === current"
-                    :class="{'mdc-list-item--selected': font === current}">{{ name }}
-                </li>
-            </ul>
+            <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class" style="min-width: 240px">
+                <ul class="mdc-list">
+                    <li v-for="(name, font) in fonts"
+                        :key="font" :data-value="font"
+                        class="mdc-list-item cursor-pointer"
+                        :style="{'font-family': font}"
+                        :aria-selected="font === settings.current"
+                        :class="{'mdc-list-item--selected': font === settings.current}">{{ name }}
+                    </li>
+                </ul>
+            </div>
         </div>
+        <checkbox-with-label id="font-apply-headers"
+                             :label="$t('Apply font to headers')"
+                             :checked.sync="settings.headers"
+                             :auto-disable="false"
+                             @change="changeFont"/>
+        <checkbox-with-label id="font-apply-storyline"
+                             :label="$t('Apply font to storyline')"
+                             :checked.sync="settings.storyline"
+                             :auto-disable="false"
+                             @change="changeFont"/>
     </div>
 </template>
 
@@ -27,36 +39,31 @@
 
 import store from "store/dist/store.modern";
 import {MDCSelect} from "@material/select/component";
-import Helpers from "../../services/Helpers";
-import UserRepository from "../../apiRepositories/UserRepository";
 
 export default {
     data() {
         return {
-            default_font: 'Nyala',
-            current: null,
+            defaultFont: 'Nyala',
+            settings: {
+                current: 'Nyala',
+                headers: false,
+                storyline: false
+            },
             fonts: {
                 'Nyala': 'Nyala',
                 'Pirata One': 'Pirata One',
                 'sans-serif': 'Sans Serif',
                 'Arial': 'Arial',
                 'Calibri': 'Calibri'
-            },
-            userRepository: new UserRepository,
+            }
         }
     },
     beforeMount() {
         this.init();
     },
     mounted() {
-        if (this.current !== store.get('font')) {
-            this.updateUserFont();
-        }
-
-        if (c('.font-switch').length) {
-            this.select = new MDCSelect(c('.font-switch')[0]);
-            this.select.listen('MDCSelect:change', this.changeFont);
-        }
+        this.select = new MDCSelect(this.$refs['font-switch']);
+        this.select.listen('MDCSelect:change', this.changeFont);
     },
     destroyed() {
         this.select?.destroy()
@@ -66,54 +73,70 @@ export default {
             document.querySelector('.font-switch .mdc-select__selected-text').click();
         },
         changeFont() {
-            this.current = this.select.value;
-            store.set('font', this.current);
-            this.updateUserFont();
+            const font = this.select.value;
+
+            // Ignore invalid fonts
+            if (!this.validateFont(font)) {
+                return;
+            }
+
+            // Apply font and store it in local storage
+            this.settings.current = font;
+            store.set('font', this.settings);
+            this.rerender();
         },
         getFont() {
             this.init();
-            return store.get('font');
+            return this.settings;
         },
         getInitialFont() {
-            let font = store.get('font');
-            if (!font) {
-                const default_font = this.default_font;
-                if (this.validFont(default_font)) {
-                    store.set('font', default_font);
-                }
+            let fontSettings = store.get('font');
+
+            // Apply font settings from local storage
+            if (typeof fontSettings === 'object') {
+                this.settings = fontSettings;
             }
-            return font;
+            // Otherwise use default font settings
+            else {
+                this.settings.current = this.defaultFont;
+                store.set('font', this.settings);
+                fontSettings = this.settings;
+            }
+
+            return fontSettings.current;
         },
         init() {
-            const initial_font = this.getInitialFont();
-            if (this.current != initial_font) {
-                this.current = initial_font;
-                this.updateUserFont();
-            }
-        },
-        validFont(font) {
-            return this.fonts.hasOwnProperty(font);
-        },
-        updateUserFont(wait = true) {
-            if (Helpers.loggedIn() && typeof app.user?.font === 'undefined' && wait === true) {
-                setTimeout(() => this.updateUserFont(false), 500);
-            } else if (Helpers.loggedIn() && app.user?.font !== this.current) {
-                app.user.font = this.current;
-                this.userRepository.update(app.user);
+            const initialFont = this.getInitialFont();
+            if (this.settings.current != initialFont) {
+                this.settings.current = initialFont;
             }
             this.rerender();
         },
+        validateFont(font) {
+            return this.fonts.hasOwnProperty(font);
+        },
         rerender() {
             const stylesheet = document.styleSheets[1];
+            const titleFont = 'Pirata One';
 
-            const css_class_selectors = ['html, body', 'h1, h2, h3', '.font-title', '.font-default','div[class*="mdc-"]', '#storyline text', '.bedge'];
+            const cssSelectors = ['html, body', '.font-title', '.font-default', 'div[class*="mdc-"], .bedge', 'h1, h2, h3', '#storyline text'];
+            const cssSelectorsWithFonts = Object.fromEntries(cssSelectors.map(selector => [selector, this.settings.current]));
 
-            css_class_selectors.forEach(selector => {
+            if (!this.settings.headers) {
+                cssSelectorsWithFonts['h1, h2, h3'] = titleFont;
+                cssSelectorsWithFonts['.font-title'] = titleFont;
+            }
+
+            if (!this.settings.storyline) {
+                cssSelectorsWithFonts['#storyline text'] = titleFont;
+            }
+
+            for (let [selector, font] of Object.entries(cssSelectorsWithFonts)) {
                 const cssRule = [...stylesheet.cssRules].find((r) => r.selectorText === selector)
                 if (cssRule) {
-                    cssRule.style.setProperty('font-family', this.current, 'important');
+                    cssRule.style.setProperty('font-family', font, 'important');
                 }
-            });
+            };
         },
     }
 }

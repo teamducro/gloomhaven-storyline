@@ -60,10 +60,6 @@ a.desc-link {
     }
 }
 
-div[class*="mdc-"] {
-    font-family: 'Nyala', sans-serif;
-}
-
-.bedge {
-    font-family: 'Nyala', sans-serif;
+div[class*="mdc-"], .bedge {
+    @apply font-default;
 }
