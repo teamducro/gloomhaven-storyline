@@ -69,7 +69,7 @@
                                 <inline-svg style="width: 16px" src="icons/achievements"
                                             class="mdc-list-item__graphic ml-1"
                                             aria-hidden="true"/>
-                                <span class="mdc-list-item__text">{{ $t('Achievements') }}</span>
+                                <span class="mdc-list-item__text pl-1">{{ $t('Achievements') }}</span>
                             </router-link>
                         </li>
 
