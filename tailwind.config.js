@@ -17,7 +17,10 @@ module.exports = {
             lgh: {'raw': '(min-height: 600px)'}
         },
         extend: {
-            fontFamily: {default: ['Nyala', 'sans-serif'], title: ['Pirata One', 'Nyala', 'sans-serif']},
+            fontFamily: {
+                default: ['Nyala', 'sans-serif'],
+                title: ['Pirata One', 'Nyala', 'sans-serif']
+            },
             inset: {
                 '1/2': '50%',
                 'area-inset-top': 'env(safe-area-inset-top, 0)',

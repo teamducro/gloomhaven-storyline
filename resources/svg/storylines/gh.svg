@@ -14,7 +14,7 @@
         circle.node ~ .required { font-size: 12px; font-weight: bold; transform: translate(-7px, -5px); }
     </style>
     <g class="chapter intro" id="chapter1">
-        <rect width="40.84322" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#000"
+        <rect width="47" height="75.851692" x="7.7796607" y="240.52119" rx="10" ry="10" stroke="#000"
               fill="#111" opacity="0.7"/>
         <text class="label" x="30" y="278">{{ $t('Intro') }}</text>
     </g>
