@@ -8,6 +8,7 @@ describe('Settings', () => {
         cy.contains('Transfer campaign data');
         cy.contains('Snapshots');
         cy.contains('Translations');
+        cy.contains('Font');
         cy.contains('Danger zone!');
     });
 

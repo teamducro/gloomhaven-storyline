@@ -84,7 +84,7 @@ Thanks to these creators for their content.
 - Install [node](https://nodejs.org/) (If you have trouble, use version: 16.14.2), the installation will include `npm`.
 - copy `.env.example` to `.env`
 - set the `MIX_WEB_URL` to your local website, for example: `MIX_WEB_URL=https://gloomhaven-storyline.test`
-- set `MIX_APP_URL` to the same domain and append `/tracker`, for example: `MIX_WEB_URL=https://gloomhaven-storyline.test/tracker`
+- set `MIX_APP_URL` to the same domain and append `/tracker`, for example: `MIX_APP_URL=https://gloomhaven-storyline.test/tracker`
 - run `npm install` from the project directory to install dependencies.
 - run `npm run dev` to compile project files and assets to the public directory.
 - during development run `npm run watch` to keep watching for changes, this compiles files when their updated.
