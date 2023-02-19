@@ -9,3 +9,4 @@ npm-debug.log
 /cypress/videos
 /cypress/screenshots
 /cypress/fixtures
+.vscode

@@ -37,6 +37,7 @@ import setInitialLanguage from "./services/app/setInitialLanguage";
 import {gsap} from "gsap";
 import {Flip} from "gsap/Flip.js";
 import getEnabledGames from "./services/app/getEnabledGames";
+import getFont from "./services/app/getFont";
 import BaseUrl from "./mixins/BaseUrl";
 
 const {RayPlugin} = require('vue-ray/vue2');
@@ -142,6 +143,7 @@ window.app = new Vue({
             stories: collect(),
             campaignId: 'local',
             campaignData: {},
+            font: null,
 
             scenarioRepository: new ScenarioRepository,
             questRepository: new QuestRepository,
@@ -288,6 +290,7 @@ window.app = new Vue({
             checkHasMouse(this.$bus);
             migrateVersion1Progress();
             this.game = store.get('game') || 'gh';
+            getFont();
         }
     }
 });
