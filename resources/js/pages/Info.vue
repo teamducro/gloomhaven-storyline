@@ -19,9 +19,6 @@
                     <becomePatronButton class="mt-8 flex justify-start"></becomePatronButton>
                     <donate class="mt-8"></donate>
                 </div>
-                <div class="mt-8 sm:mt-0 sm:ml-12 sm:flex sm:items-end">
-                    <webp src="/img/character-sheets.png" width="225"></webp>
-                </div>
             </div>
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Support') }}</h2>
