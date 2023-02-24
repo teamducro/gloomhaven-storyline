@@ -28,40 +28,52 @@
         cursor: pointer;
     }
 
-    circle.node {
+    .node {
         fill: black;
         stroke: white;
-        transform: translate(-10.8px, 0);
     }
 
-    circle.node + text {
-        font-size: 11px;
-        transform: translate(0px, 9px);
-    }
-
-    circle.node ~ .blocked {
+    .node ~ .blocked {
         font-size: 16px;
         font-family: Arial, sans-serif;
         transform: translate(-10px, -5px);
     }
 
-    circle.node ~ .required {
+    .node ~ .require {
         font-size: 12px;
         font-weight: bold;
         transform: translate(-7px, -5px);
+    }
+
+    // The following is a hack to fix the positioning of the nodes in the storyline
+    &.storyline-gh, &.storyline-fc, &.storyline-jotl, &.storyline-cs {
+        .node {
+            transform: translate(-10.8px, 0);
+        }
+
+        .node + text {
+            font-size: 11px;
+            transform: translate(0px, 9px);
+        }
+    }
+
+    &.storyline-fh {
+        .node + text {
+            transform: translate(0px, 4px);
+        }
     }
 
     .scenario {
         &.incomplete {
             stroke-width: 2;
 
-            circle.node {
+            .node {
                 stroke: $complete;
             }
         }
 
         &.blocked {
-            circle.node {
+            .node {
                 stroke: $incomplete;
 
                 ~ .blocked {
@@ -71,7 +83,7 @@
         }
 
         &.required {
-            circle.node {
+            .node {
                 stroke: $required;
 
                 ~ .required {
