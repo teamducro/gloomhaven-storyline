@@ -33,6 +33,8 @@ export default class GameData {
         switch (game) {
             case 'jotl':
                 return []
+            case 'fh':
+                return []
             default:
                 return achievementsJson
         }
