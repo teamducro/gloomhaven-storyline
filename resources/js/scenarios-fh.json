@@ -8,827 +8,1370 @@
             "chapter_id": 1,
             "treasures": {
                 "47": "Gain 5 xp"
-            }
+            },
+            "links_to": [
+                1
+            ]
         },
         {
             "id": 1,
-            "name":  "A Town in Flames",
+            "name": "A Town in Flames",
             "game": "fh",
-            "chapter_id": 1
+            "chapter_id": 1,
+            "linked_from": [
+                0
+            ]
         },
         {
             "id": 2,
-            "name":  "Algox Scouting",
+            "name": "Algox Scouting",
             "game": "fh",
-            "chapter_id": 1
+            "chapter_id": 1,
+            "links_to": [
+                4
+            ],
+            "linked_from": [
+                1
+            ]
         },
         {
             "id": 3,
-            "name":  "Algox Offensive",
+            "name": "Algox Offensive",
             "game": "fh",
-            "chapter_id": 1
+            "chapter_id": 1,
+            "links_to": [
+                4
+            ],
+            "linked_from": [
+                1
+            ]
         },
         {
             "id": 4,
-            "name":  "Heart of Ice",
+            "name": "Heart of Ice",
             "game": "fh",
-            "chapter_id": 1
+            "chapter_id": 1,
+            "links_to": [
+                5,
+                6,
+                7,
+                8
+            ],
+            "linked_from": [
+                2,
+                3
+            ]
         },
         {
             "id": 5,
-            "name":  "Frozen Crypt",
+            "name": "Frozen Crypt",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                9,
+                10
+            ],
+            "linked_from": [
+                4
+            ]
         },
         {
             "id": 6,
-            "name":  "Avalanche",
+            "name": "Avalanche",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                11,
+                12
+            ],
+            "linked_from": [
+                4
+            ]
         },
         {
             "id": 7,
-            "name":  "Edge of the World",
+            "name": "Edge of the World",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                13,
+                14
+            ],
+            "linked_from": [
+                4
+            ]
         },
         {
             "id": 8,
-            "name":  "Crystal Trench",
+            "name": "Crystal Trench",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                15,
+                16
+            ],
+            "linked_from": [
+                4
+            ]
         },
         {
             "id": 9,
-            "name":  "Glowing Catacombs",
+            "name": "Glowing Catacombs",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                17
+            ],
+            "linked_from": [
+                5
+            ]
         },
         {
             "id": 10,
-            "name":  "Crystal Enclosure",
+            "name": "Crystal Enclosure",
             "game": "fh",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                18
+            ],
+            "linked_from": [
+                5
+            ]
         },
         {
             "id": 11,
-            "name":  "Snowscorn Peak",
+            "name": "Snowscorn Peak",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                19
+            ],
+            "linked_from": [
+                6
+            ]
         },
         {
             "id": 12,
-            "name":  "Temple Entrance",
+            "name": "Temple Entrance",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                20
+            ],
+            "linked_from": [
+                6
+            ]
         },
         {
             "id": 13,
-            "name":  "Frozen Fjord",
+            "name": "Frozen Fjord",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                32
+            ],
+            "linked_from": [
+                7
+            ]
         },
         {
             "id": 14,
-            "name":  "Jagged Shoals",
+            "name": "Jagged Shoals",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                22
+            ],
+            "linked_from": [
+                7
+            ]
         },
         {
             "id": 15,
-            "name":  "Ancient Spire",
+            "name": "Ancient Spire",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                23,
+                24
+            ],
+            "linked_from": [
+                8
+            ]
         },
         {
             "id": 16,
-            "name":  "Derelict Elevator",
+            "name": "Derelict Elevator",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                25,
+                26
+            ],
+            "linked_from": [
+                8
+            ]
         },
         {
             "id": 17,
-            "name":  "Haunted Vault",
+            "name": "Haunted Vault",
             "game": "fh",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                27
+            ],
+            "linked_from": [
+                9
+            ]
         },
         {
             "id": 18,
-            "name":  "Crystal Fields",
+            "name": "Crystal Fields",
             "game": "fh",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                28,
+                29
+            ],
+            "linked_from": [
+                18
+            ]
         },
         {
             "id": 19,
-            "name":  "Skyhall",
+            "name": "Skyhall",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                30,
+                28
+            ],
+            "linked_from": [
+                11
+            ]
         },
         {
             "id": 20,
-            "name":  "Temple of Liberation",
+            "name": "Temple of Liberation",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                31
+            ],
+            "linked_from": [
+                12
+            ]
         },
         {
             "id": 21,
-            "name":  "Realm of Endless Frost",
+            "name": "Realm of Endless Frost",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "linked_from": [
+                13
+            ]
         },
         {
             "id": 22,
-            "name":  "Ice Floes",
+            "name": "Ice Floes",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                33
+            ],
+            "linked_from": [
+                14
+            ]
         },
         {
             "id": 23,
-            "name":  "Spire Basement",
+            "name": "Spire Basement",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "linked_from": [
+                23,
+                24
+            ]
         },
         {
             "id": 24,
-            "name":  "Upper Spire",
+            "name": "Upper Spire",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                34
+            ],
+            "linked_from": [
+                15
+            ]
         },
         {
             "id": 25,
-            "name":  "Rusted Tunnels",
+            "name": "Rusted Tunnels",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                35
+            ],
+            "linked_from": [
+                16
+            ]
         },
         {
             "id": 26,
-            "name":  "Quatryl Library",
+            "name": "Quatryl Library",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                36,
+                37
+            ],
+            "linked_from": [
+                16
+            ]
         },
         {
             "id": 27,
-            "name":  "Depths of Delirium",
+            "name": "Depths of Delirium",
             "game": "fh",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "linked_from": [
+                17
+            ]
         },
         {
             "id": 28,
-            "name":  "Summit Meeting",
+            "name": "Summit Meeting",
             "game": "fh",
-            "chapter_id": 5
+            "chapter_id": 5,
+            "links_to": [
+                38
+            ],
+            "linked_from": [
+                18,
+                19
+            ]
         },
         {
             "id": 29,
-            "name":  "War of the Spire A",
+            "name": "War of the Spire A",
             "game": "fh",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                39
+            ],
+            "linked_from": [
+                18
+            ]
         },
         {
             "id": 30,
-            "name":  "War of the Spire B",
+            "name": "War of the Spire B",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                40
+            ],
+            "linked_from": [
+                19
+            ]
         },
         {
             "id": 31,
-            "name":  "Crackling Tunnel",
+            "name": "Crackling Tunnel",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                41
+            ],
+            "linked_from": [
+                20
+            ]
         },
         {
             "id": 32,
-            "name":  "Ravens' Roost",
+            "name": "Ravens' Roost",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "linked_from": [
+                13
+            ]
         },
         {
             "id": 33,
-            "name":  "Thawed Wood",
+            "name": "Thawed Wood",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                42
+            ],
+            "linked_from": [
+                22
+            ]
         },
         {
             "id": 34,
-            "name":  "Top of the Spire",
+            "name": "Top of the Spire",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "linked_from": [
+                23,
+                24
+            ]
         },
         {
             "id": 35,
-            "name":  "Scrap Pit",
+            "name": "Scrap Pit",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                43
+            ],
+            "linked_from": [
+                25
+            ]
         },
         {
             "id": 36,
-            "name":  "Buried Ducts",
+            "name": "Buried Ducts",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                44
+            ],
+            "linked_from": [
+                26
+            ]
         },
         {
             "id": 37,
-            "name":  "The Dead Mile",
+            "name": "The Dead Mile",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                44
+            ],
+            "linked_from": [
+                26
+            ]
         },
         {
             "id": 38,
-            "name":  "The Way Forward",
+            "name": "The Way Forward",
             "game": "fh",
-            "chapter_id": 5
+            "chapter_id": 5,
+            "links_to": [
+                45,
+                46
+            ],
+            "linked_from": [
+                28
+            ]
         },
         {
             "id": 39,
-            "name":  "Corrupted Camp",
+            "name": "Corrupted Camp",
             "game": "fh",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                47
+            ],
+            "linked_from": [
+                29
+            ]
         },
         {
             "id": 40,
-            "name":  "Relief Effort",
+            "name": "Relief Effort",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                48
+            ],
+            "linked_from": [
+                30
+            ]
         },
         {
             "id": 41,
-            "name":  "Unfettered Shard",
+            "name": "Unfettered Shard",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "linked_from": [
+                31
+            ]
         },
         {
             "id": 42,
-            "name":  "Sunless Trench",
+            "name": "Sunless Trench",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                49,
+                50
+            ],
+            "linked_from": [
+                33
+            ]
         },
         {
             "id": 43,
-            "name":  "Overrun Barricade",
+            "name": "Overrun Barricade",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                51
+            ],
+            "linked_from": [
+                35
+            ]
         },
         {
             "id": 44,
-            "name":  "Nerve Center",
+            "name": "Nerve Center",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                58,
+                59
+            ],
+            "linked_from": [
+                36,
+                37
+            ]
         },
         {
             "id": 45,
-            "name":  "Living Glacier",
+            "name": "Living Glacier",
             "game": "fh",
-            "chapter_id": 5
+            "chapter_id": 5,
+            "links_to": [
+                52
+            ],
+            "linked_from": [
+                38
+            ]
         },
         {
             "id": 46,
-            "name":  "Dead Pass",
+            "name": "Dead Pass",
             "game": "fh",
-            "chapter_id": 5
+            "chapter_id": 5,
+            "links_to": [
+                52
+            ],
+            "linked_from": [
+                38
+            ]
         },
         {
             "id": 47,
-            "name":  "Carrion Ridge",
+            "name": "Carrion Ridge",
             "game": "fh",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "links_to": [
+                56
+            ],
+            "linked_from": [
+                39
+            ]
         },
         {
             "id": 48,
-            "name":  "Blizzard island",
+            "name": "Blizzard island",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "links_to": [
+                57
+            ],
+            "linked_from": [
+                40
+            ]
         },
         {
             "id": 49,
-            "name":  "Beneath Sea and Stone",
+            "name": "Beneath Sea and Stone",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                53
+            ],
+            "linked_from": [
+                42
+            ]
         },
         {
             "id": 50,
-            "name":  "Explosive Descent",
+            "name": "Explosive Descent",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                54
+            ],
+            "linked_from": [
+                42
+            ]
         },
         {
             "id": 51,
-            "name":  "Orphan's Halls",
+            "name": "Orphan's Halls",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "links_to": [
+                58,
+                59
+            ],
+            "linked_from": [
+                43
+            ]
         },
         {
             "id": 52,
-            "name":  "Fleeting Permanence",
+            "name": "Fleeting Permanence",
             "game": "fh",
-            "chapter_id": 5
+            "chapter_id": 5,
+            "links_to": [
+                55
+            ],
+            "linked_from": [
+                45,
+                46
+            ]
         },
         {
             "id": 53,
-            "name":  "Underwater Throne",
+            "name": "Underwater Throne",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                60
+            ],
+            "linked_from": [
+                49
+            ]
         },
         {
             "id": 54,
-            "name":  "Among the Wreckage",
+            "name": "Among the Wreckage",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "links_to": [
+                60
+            ],
+            "linked_from": [
+                50
+            ]
         },
         {
             "id": 55,
-            "name":  "Change of Heart",
+            "name": "Change of Heart",
             "game": "fh",
-            "chapter_id": 5
+            "chapter_id": 5,
+            "linked_from": [
+                52
+            ]
         },
         {
             "id": 56,
-            "name":  "Call of the Harbinger",
+            "name": "Call of the Harbinger",
             "game": "fh",
-            "chapter_id": 2
+            "chapter_id": 2,
+            "linked_from": [
+                47
+            ]
         },
         {
             "id": 57,
-            "name":  "Sanctuary of Snow",
+            "name": "Sanctuary of Snow",
             "game": "fh",
-            "chapter_id": 4
+            "chapter_id": 4,
+            "linked_from": [
+                48
+            ]
         },
         {
             "id": 58,
-            "name":  "Orphan's Core",
+            "name": "Orphan's Core",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "linked_from": [
+                44,
+                51
+            ]
         },
         {
             "id": 59,
-            "name":  "Automation Uprising",
+            "name": "Automation Uprising",
             "game": "fh",
-            "chapter_id": 6
+            "chapter_id": 6,
+            "linked_from": [
+                44,
+                51
+            ]
         },
         {
             "id": 60,
-            "name":  "Uniting the Crown",
+            "name": "Uniting the Crown",
             "game": "fh",
-            "chapter_id": 3
+            "chapter_id": 3,
+            "linked_from": [
+                53,
+                54
+            ]
         },
         {
             "id": 61,
-            "name":  "Life and Death",
+            "name": "Life and Death",
             "game": "fh",
-            "chapter_id": 8
+            "chapter_id": 8,
+            "links_to": [
+                62
+            ]
         },
         {
             "id": 62,
-            "name":  "The Unfettered Seal",
+            "name": "The Unfettered Seal",
             "game": "fh",
-            "chapter_id": 8
+            "chapter_id": 8,
+            "links_to": [
+                63
+            ],
+            "linked_from": [
+                61
+            ]
         },
         {
             "id": 63,
-            "name":  "The Savvas Seal",
+            "name": "The Savvas Seal",
             "game": "fh",
-            "chapter_id": 8
+            "chapter_id": 8,
+            "links_to": [
+                64
+            ],
+            "linked_from": [
+                62
+            ]
         },
         {
             "id": 64,
-            "name":  "The Frosthaven Seal",
+            "name": "The Frosthaven Seal",
             "game": "fh",
-            "chapter_id": 8
+            "chapter_id": 8,
+            "linked_from": [
+                63
+            ]
         },
         {
             "id": 65,
-            "name":  "A Strong Foundation",
+            "name": "A Strong Foundation",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                66
+            ]
         },
         {
             "id": 66,
-            "name":  "Elemental Cores",
+            "name": "Elemental Cores",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                67
+            ],
+            "linked_from": [
+                66
+            ]
         },
         {
             "id": 67,
-            "name":  "Core Attunement",
+            "name": "Core Attunement",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                68
+            ],
+            "linked_from": [
+                66
+            ]
         },
         {
             "id": 68,
-            "name":  "The Face of Torment",
+            "name": "The Face of Torment",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "linked_from": [
+                67
+            ]
         },
         {
             "id": 69,
-            "name":  "Sacred Soil",
+            "name": "Sacred Soil",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                70
+            ]
         },
         {
             "id": 70,
-            "name":  "The True Oak",
+            "name": "The True Oak",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "linked_from": [
+                69
+            ]
         },
         {
             "id": 71,
-            "name":  "Invasion of the Dock",
+            "name": "Invasion of the Dock",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                72
+            ]
         },
         {
             "id": 72,
-            "name":  "A Giant Block of Ice",
+            "name": "A Giant Block of Ice",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                73
+            ],
+            "linked_from": [
+                71
+            ]
         },
         {
             "id": 73,
-            "name":  "Flotsam",
+            "name": "Flotsam",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                74
+            ],
+            "linked_from": [
+                72
+            ]
         },
         {
             "id": 74,
-            "name":  "Gaps in the Road",
+            "name": "Gaps in the Road",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                75,
+                76
+            ],
+            "linked_from": [
+                73
+            ]
         },
         {
             "id": 75,
-            "name":  "Infiltraiting the Lair",
+            "name": "Infiltraiting the Lair",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                77
+            ],
+            "linked_from": [
+                74
+            ]
         },
         {
             "id": 76,
-            "name":  "Apotheosis",
+            "name": "Apotheosis",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "links_to": [
+                77
+            ],
+            "linked_from": [
+                74
+            ]
         },
         {
             "id": 77,
-            "name":  "Fish King's Ascension",
+            "name": "Fish King's Ascension",
             "game": "fh",
-            "chapter_id": 7
+            "chapter_id": 7,
+            "linked_from": [
+                75,
+                76
+            ]
         },
         {
             "id": 78,
-            "name":  "The Lurker Problem",
+            "name": "The Lurker Problem",
             "game": "fh",
             "chapter_id": 11
         },
         {
             "id": 79,
-            "name":  "Relic",
+            "name": "Relic",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                80
+            ]
         },
         {
             "id": 80,
-            "name":  "Relic Renewed",
+            "name": "Relic Renewed",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "linked_from": [
+                79
+            ]
         },
         {
             "id": 81,
-            "name":  "Ruinous Research Lab",
+            "name": "Ruinous Research Lab",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 82,
-            "name":  "Expedition North",
+            "name": "Expedition North",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 83,
-            "name":  "Rising Brine",
+            "name": "Rising Brine",
             "game": "fh",
             "chapter_id": 11
         },
         {
             "id": 84,
-            "name":  "Here There Be Oozes",
+            "name": "Here There Be Oozes",
             "game": "fh",
             "chapter_id": 11
         },
         {
             "id": 85,
-            "name":  "Deadly Pastimes",
+            "name": "Deadly Pastimes",
             "game": "fh",
             "chapter_id": 11
         },
         {
             "id": 86,
-            "name":  "The Lady in White",
+            "name": "The Lady in White",
             "game": "fh",
             "chapter_id": 11
         },
         {
             "id": 87,
-            "name":  "The Collection",
+            "name": "The Collection",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                88
+            ]
         },
         {
             "id": 88,
-            "name":  "Collection's Capstone",
+            "name": "Collection's Capstone",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "linked_from": [
+                87
+            ]
         },
         {
             "id": 89,
-            "name":  "A Contained Fire",
+            "name": "A Contained Fire",
             "game": "fh",
             "chapter_id": 11
         },
         {
             "id": 90,
-            "name":  "Frozen Treasure",
+            "name": "Frozen Treasure",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                91
+            ]
         },
         {
             "id": 91,
-            "name":  "Shoreline Scramble",
+            "name": "Shoreline Scramble",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "linked_from": [
+                90
+            ]
         },
         {
             "id": 92,
-            "name":  "Sinking Ship",
+            "name": "Sinking Ship",
             "game": "fh",
             "chapter_id": 11
         },
         {
             "id": 93,
-            "name":  "Midwinter Brawl",
+            "name": "Midwinter Brawl",
             "game": "fh",
             "chapter_id": 11
         },
         {
             "id": 94,
-            "name":  "A Grand View",
+            "name": "A Grand View",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                95
+            ]
         },
         {
             "id": 95,
-            "name":  "To Burry the Dead",
+            "name": "To Burry the Dead",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "linked_from": [
+                94
+            ]
         },
         {
             "id": 96,
-            "name":  "Underground Station",
+            "name": "Underground Station",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                97
+            ]
         },
         {
             "id": 97,
-            "name":  "Program Control Nexus",
+            "name": "Program Control Nexus",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                98
+            ],
+            "linked_from": [
+                96
+            ]
         },
         {
             "id": 98,
-            "name":  "Collapsing Vent",
+            "name": "Collapsing Vent",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "linked_from": [
+                97
+            ]
         },
         {
             "id": 99,
-            "name":  "Prison Break",
+            "name": "Prison Break",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                100
+            ]
         },
         {
             "id": 100,
-            "name":  "Inside the Swarm",
+            "name": "Inside the Swarm",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                101
+            ],
+            "linked_from": [
+                99
+            ]
         },
         {
             "id": 101,
-            "name":  "Harrower Library",
+            "name": "Harrower Library",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                102
+            ],
+            "linked_from": [
+                100
+            ]
         },
         {
             "id": 102,
-            "name":  "Into the Black",
+            "name": "Into the Black",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                103
+            ],
+            "linked_from": [
+                101
+            ]
         },
         {
             "id": 103,
-            "name":  "The Lead Door",
+            "name": "The Lead Door",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "linked_from": [
+                102
+            ]
         },
         {
             "id": 104,
-            "name":  "Ruins of the Solstice",
+            "name": "Ruins of the Solstice",
             "game": "fh",
-            "chapter_id": 9
+            "chapter_id": 9,
+            "links_to": [
+                105
+            ]
         },
         {
             "id": 105,
-            "name":  "Ruins of the Equinox",
+            "name": "Ruins of the Equinox",
             "game": "fh",
-            "chapter_id": 9
+            "chapter_id": 9,
+            "links_to": [
+                106
+            ],
+            "linked_from": [
+                104
+            ]
         },
         {
             "id": 106,
-            "name":  "The Tempus Forge",
+            "name": "The Tempus Forge",
             "game": "fh",
-            "chapter_id": 9
+            "chapter_id": 9,
+            "linked_from": [
+                105
+            ]
         },
         {
             "id": 107,
-            "name":  "My Private Empire",
+            "name": "My Private Empire",
             "game": "fh",
             "chapter_id": 9
         },
         {
             "id": 108,
-            "name":  "Lustrous Pit",
+            "name": "Lustrous Pit",
             "game": "fh",
             "chapter_id": 9
         },
         {
             "id": 109,
-            "name":  "Furious Factory",
+            "name": "Furious Factory",
             "game": "fh",
             "chapter_id": 9
         },
         {
             "id": 110,
-            "name":  "Guardian's Temple",
+            "name": "Guardian's Temple",
             "game": "fh",
             "chapter_id": 9
         },
         {
             "id": 111,
-            "name":  "Ice Cave",
+            "name": "Ice Cave",
             "game": "fh",
             "chapter_id": 9
         },
         {
             "id": 112,
-            "name":  "Raised by Wolves",
+            "name": "Raised by Wolves",
             "game": "fh",
             "chapter_id": 9
         },
         {
             "id": 113,
-            "name":  "Lush Grotto",
+            "name": "Lush Grotto",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 114,
-            "name":  "Work Freeze",
+            "name": "Work Freeze",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [
+                115
+            ]
         },
         {
             "id": 115,
-            "name":  "Pylon Problems",
+            "name": "Pylon Problems",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [
+                116
+            ],
+            "linked_from": [
+                114
+            ]
         },
         {
             "id": 116,
-            "name":  "Caravan Guards",
+            "name": "Caravan Guards",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "linked_from": [
+                115
+            ]
         },
         {
             "id": 117,
-            "name":  "A Waiting Game",
+            "name": "A Waiting Game",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 118,
-            "name":  "Lurker Necromancy",
+            "name": "Lurker Necromancy",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 119,
-            "name":  "Radiant Dust",
+            "name": "Radiant Dust",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 120,
-            "name":  "Under the Influence",
+            "name": "Under the Influence",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [
+                121
+            ]
         },
         {
             "id": 121,
-            "name":  "Black Memories",
+            "name": "Black Memories",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "linked_from": [
+                120
+            ]
         },
         {
             "id": 122,
-            "name":  "The Eternal Crave",
+            "name": "The Eternal Crave",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 123,
-            "name":  "The Titan",
+            "name": "The Titan",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 124,
-            "name":  "A Growing Problem",
+            "name": "A Growing Problem",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [
+                125
+            ]
         },
         {
             "id": 125,
-            "name":  "The Longest Second",
+            "name": "The Longest Second",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "linked_from": [
+                124
+            ]
         },
         {
             "id": 126,
-            "name":  "Joseph the Lion",
+            "name": "Joseph the Lion",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 127,
-            "name":  "Derelict Freighter",
+            "name": "Derelict Freighter",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 128,
-            "name":  "A Tall Drunken Tale",
+            "name": "A Tall Drunken Tale",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [
+                129
+            ]
         },
         {
             "id": 129,
-            "name":  "How to Lay an Ambush",
+            "name": "How to Lay an Ambush",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "links_to": [
+                130
+            ],
+            "linked_from": [
+                128
+            ]
         },
         {
             "id": 130,
-            "name":  "And Then, a Stream",
+            "name": "And Then, a Stream",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "linked_from": [
+                129
+            ]
         },
         {
             "id": 131,
-            "name":  "The Dancing Iceberg",
+            "name": "The Dancing Iceberg",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 132,
-            "name":  "Temple of Feline Power",
+            "name": "Temple of Feline Power",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "links_to": [
+                133
+            ]
         },
         {
             "id": 133,
-            "name":  "Bolt",
+            "name": "Bolt",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "linked_from": [
+                132
+            ]
         },
         {
             "id": 134,
-            "name":  "Tower of Knowledge",
+            "name": "Tower of Knowledge",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 135,
-            "name":  "Belara's Keep",
+            "name": "Belara's Keep",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 136,
-            "name":  "Abandoned Hideout",
+            "name": "Abandoned Hideout",
             "game": "fh",
             "chapter_id": 10
         },
         {
             "id": 137,
-            "name":  "Pirate Queen's Haul",
+            "name": "Pirate Queen's Haul",
             "game": "fh",
             "chapter_id": 10
         }
@@ -880,6 +1423,5 @@
         }
     ],
     "regions": [
-
     ]
 }
