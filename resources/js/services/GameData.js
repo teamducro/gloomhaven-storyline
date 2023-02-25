@@ -6,6 +6,7 @@ import scenariosCsJson from '../scenarios-cs.json'
 import questsJson from '../quests.json'
 import questsFcJson from '../quests-fc.json'
 import questsJotlJson from '../quests-jotl.json'
+import questsFhJson from '../quests-fh.json'
 import questsCsJson from '../quests-cs.json'
 import personalQuestsJson from '../personal-quests.json'
 import personalQuestsCsJson from '../personal-quests-cs.json'
@@ -78,14 +79,18 @@ export default class GameData {
 
     quests(game) {
         switch (game) {
-            case 'fc':
-                return questsFcJson
+            case 'gh':
+                return questsJson
             case 'jotl':
                 return questsJotlJson
+            case 'fh':
+                return questsFhJson
+            case 'fc':
+                return questsFcJson
             case 'cs':
                 return questsCsJson
             default:
-                return questsJson
+                return []
         }
     }
 
