@@ -34,15 +34,11 @@
     }
 
     .node ~ .blocked {
-        font-size: 16px;
         font-family: Arial, sans-serif;
-        transform: translate(-10px, -5px);
     }
 
     .node ~ .require {
-        font-size: 12px;
         font-weight: bold;
-        transform: translate(-7px, -5px);
     }
 
     // The following is a hack to fix the positioning of the nodes in the storyline
@@ -55,11 +51,31 @@
             font-size: 11px;
             transform: translate(0px, 9px);
         }
+
+        .node ~ .blocked {
+            font-size: 16px;
+            transform: translate(-10px, -5px);
+        }
+
+        .node ~ .require {
+            font-size: 12px;
+            transform: translate(-7px, -5px);
+        }
     }
 
     &.storyline-fh {
         .node + text {
             transform: translate(0px, 4px);
+        }
+
+        .node ~ .blocked {
+            font-size: 60px;
+            transform: translate(-45px, -45px);
+        }
+
+        .node ~ .require {
+            font-size: 45px;
+            transform: translate(-45px, -45px);
         }
     }
 

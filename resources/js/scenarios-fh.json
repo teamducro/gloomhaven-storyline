@@ -35,6 +35,13 @@
             ],
             "linked_from": [
                 1
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        3
+                    ]
+                }
             ]
         },
         {
@@ -50,6 +57,13 @@
             ],
             "linked_from": [
                 1
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        2
+                    ]
+                }
             ]
         },
         {
@@ -75,7 +89,7 @@
             "id": 5,
             "name": "Frozen Crypt",
             "game": "fh",
-            "chapter_id": 6,
+            "chapter_id": 2,
             "treasures": [
                 46
             ],
@@ -133,7 +147,7 @@
             "id": 9,
             "name": "Glowing Catacombs",
             "game": "fh",
-            "chapter_id": 6,
+            "chapter_id": 2,
             "treasures": [
                 9
             ],
@@ -274,7 +288,7 @@
                 29
             ],
             "linked_from": [
-                18
+                10
             ]
         },
         {
@@ -358,6 +372,13 @@
             ],
             "linked_from": [
                 16
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        26
+                    ]
+                }
             ]
         },
         {
@@ -374,6 +395,13 @@
             ],
             "linked_from": [
                 16
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        25
+                    ]
+                }
             ]
         },
         {
@@ -403,6 +431,18 @@
             "linked_from": [
                 18,
                 19
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        29
+                    ]
+                },
+                {
+                    "complete": [
+                        30
+                    ]
+                }
             ]
         },
         {
@@ -418,6 +458,13 @@
             ],
             "linked_from": [
                 18
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        28
+                    ]
+                }
             ]
         },
         {
@@ -433,6 +480,13 @@
             ],
             "linked_from": [
                 19
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        28
+                    ]
+                }
             ]
         },
         {
@@ -510,6 +564,13 @@
             ],
             "linked_from": [
                 26
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        37
+                    ]
+                }
             ]
         },
         {
@@ -525,6 +586,13 @@
             ],
             "linked_from": [
                 26
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        36
+                    ]
+                }
             ]
         },
         {
@@ -811,6 +879,13 @@
             "linked_from": [
                 44,
                 51
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        59
+                    ]
+                }
             ]
         },
         {
@@ -824,6 +899,13 @@
             "linked_from": [
                 44,
                 51
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        58
+                    ]
+                }
             ]
         },
         {
