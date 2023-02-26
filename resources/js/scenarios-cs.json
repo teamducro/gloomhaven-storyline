@@ -14,9 +14,9 @@
             "links_to": [
                 2
             ],
-            "treasures": {
-                "11": "“Dizzying Tincture” (Item 58)"
-            },
+            "treasures": [
+                11
+            ],
             "monsters": [
                 "spitting-drake",
                 "vermling-scout",
@@ -39,9 +39,9 @@
             "linked_from": [
                 1
             ],
-            "treasures": {
-                "24": "One random “Stone” item (Item 94-100)"
-            },
+            "treasures": [
+                24
+            ],
             "monsters": [
                 "deep-terror",
                 "inox-archer",
@@ -94,9 +94,9 @@
             "linked_from": [
                 3
             ],
-            "treasures": {
-                "18": "“Boneclad Shawl (Item 25)"
-            },
+            "treasures": [
+                18
+            ],
             "rewards": [
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
@@ -221,9 +221,9 @@
             "linked_from": [
                 7
             ],
-            "treasures": {
-                "1": "“Drake's Blood” (Item 14)"
-            },
+            "treasures": [
+                1
+            ],
             "rewards": [
                 "“Curious Pendant” (Item 20)"
             ],
@@ -283,9 +283,9 @@
             "linked_from": [
                 7
             ],
-            "treasures": {
-                "10": "One random “Stone” item (Item 94-100)"
-            },
+            "treasures": [
+                10
+            ],
             "rewards": [
                 "“Minor Mana Potion” (Item 12)",
                 "“Minor Healing Potion” (Item 20)"
@@ -355,9 +355,9 @@
             "linked_from": [
                 9
             ],
-            "treasures": {
-                "7": "One random “Stone” item (Item 94-100)"
-            },
+            "treasures": [
+                7
+            ],
             "rewards": [
                 "+1 prosperity",
                 "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\nIf there are non of these available in the shop, gain 20 gold instead"
@@ -382,10 +382,10 @@
             "linked_from": [
                 9
             ],
-            "treasures": {
-                "8": "“Dizzying Tincture” (Item 58)",
-                "9": "“Orb of Fortune” (Item 9)"
-            },
+            "treasures": [
+                8,
+                9
+            ],
             "rewards": [
                 "“Remote Beetle” (Item 86)",
                 "15 experience each"
@@ -413,9 +413,9 @@
             "linked_from": [
                 12
             ],
-            "treasures": {
-                "34": "Suffer hazardous terrain damage, gain {INVISIBLE}"
-            },
+            "treasures": [
+                34
+            ],
             "rewards": [
                 "15 gold each",
                 "Each character gains one random “Orb” item (Item 1-10)"
@@ -441,9 +441,9 @@
             "linked_from": [
                 15
             ],
-            "treasures": {
-                "6": "Gain 20 gold and disarm all adjacent traps"
-            },
+            "treasures": [
+                6
+            ],
             "rewards": [
                 "10 gold each",
                 "One character gains one {+1_WHITE} enhancement to any Level 1 or X card"
@@ -473,10 +473,10 @@
             "linked_from": [
                 10
             ],
-            "treasures": {
-                "19": "Gain ✓ and generate a Wild Element",
-                "43": "10 experience and Refresh all spent items"
-            },
+            "treasures": [
+                19,
+                43
+            ],
             "rewards": [
                 "+2 prosperity"
             ],
@@ -506,9 +506,9 @@
             "linked_from": [
                 17
             ],
-            "treasures": {
-                "22": "“Boots of Perpetuity” (Item 19)"
-            },
+            "treasures": [
+                22
+            ],
             "rewards": [
                 "100 gold each. This money must immediately be spent on enhancements"
             ],
@@ -538,10 +538,10 @@
             "linked_from": [
                 10
             ],
-            "treasures": {
-                "39": "“Infrared Goggles” (Item 21)",
-                "16": "Perform “Heal 6, Self”, gain {POISON}"
-            },
+            "treasures": [
+                39,
+                16
+            ],
             "rewards": [
                 "“Major Mana Potion” (Item 48)"
             ],
@@ -619,10 +619,10 @@
             "achievements_awarded": [
                 "PCSFL"
             ],
-            "treasures": {
-                "4": "Gain 15 gold and Recover one lost card",
-                "36": "10 experience, gain {INVSIBLE}"
-            },
+            "treasures": [
+                4,
+                36
+            ],
             "rewards": [
                 "“Magma Waders” (Item 99)"
             ],
@@ -645,10 +645,10 @@
             "linked_from": [
                 20
             ],
-            "treasures": {
-                "15": "“Shifting Compass” (Item 32)",
-                "32": "“Curious Pendant” (Item 20)"
-            },
+            "treasures": [
+                15,
+                32
+            ],
             "rewards": [
                 "Each character gains +2 gold and 2 experience for each money token looted."
             ],
@@ -678,9 +678,9 @@
             "achievements_awarded": [
                 "PCSFW"
             ],
-            "treasures": {
-                "25": "“Draining Greaves” (Item 15)"
-            },
+            "treasures": [
+                25
+            ],
             "rewards": [
                 "15 experience each"
             ],
@@ -710,9 +710,9 @@
             "achievements_awarded": [
                 "PCSFW"
             ],
-            "treasures": {
-                "35": "“Curseblood Blade” (Item 36)"
-            },
+            "treasures": [
+                35
+            ],
             "rewards": [
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
@@ -774,9 +774,9 @@
                 23,
                 24
             ],
-            "treasures": {
-                "13": "“Orb of Despair” (Item 10)"
-            },
+            "treasures": [
+                13
+            ],
             "rewards": [
                 "20 experience each",
                 "1 ✓ each"
@@ -830,9 +830,9 @@
             "linked_from": [
                 27
             ],
-            "treasures": {
-                "12": "“Mana Medicine” (Item 60)"
-            },
+            "treasures": [
+                12
+            ],
             "rewards": [
                 "1 ✓ each"
             ],
@@ -859,9 +859,9 @@
             "linked_from": [
                 28
             ],
-            "treasures": {
-                "3": "“Chain Mace” (Item 14)"
-            },
+            "treasures": [
+                3
+            ],
             "monsters": [
                 "living-bones",
                 "living-corpse",
@@ -885,10 +885,10 @@
             "linked_from": [
                 29
             ],
-            "treasures": {
-                "38": "“War Pick” (Item 13)",
-                "17": "“Concussion Mine” (Item 31)"
-            },
+            "treasures": [
+                38,
+                17
+            ],
             "prompt": "undeadTerrors",
             "achievements_awarded_by_choice": [
                 [
@@ -1008,9 +1008,9 @@
             "linked_from": [
                 33
             ],
-            "treasures": {
-                "42": "“War Pick” (Item 13)"
-            },
+            "treasures": [
+                42
+            ],
             "rewards": [
                 "Unlock Envelope {BM}",
                 "+2 reputation",
@@ -1042,10 +1042,10 @@
             "links_to": [
                 36
             ],
-            "treasures": {
-                "28": "“Chain Mace” (Item 14)",
-                "40": "One random “Stone” item (Item 94-100)"
-            },
+            "treasures": [
+                28,
+                40
+            ],
             "cards": [
                 "Q-335"
             ],
@@ -1071,10 +1071,10 @@
             "linked_from": [
                 35
             ],
-            "treasures": {
-                "2": "“Orb of Fortune” (Item 09)",
-                "30": "“Boneclad Shawl (Item 25)"
-            },
+            "treasures": [
+                2,
+                30
+            ],
             "rewards": [
                 "Unlock Envelope {CG}",
                 "10 gold each"
@@ -1104,9 +1104,9 @@
             "links_to": [
                 38
             ],
-            "treasures": {
-                "26": "“Iron Snare” (Item 30)"
-            },
+            "treasures": [
+                26
+            ],
             "rewards": [
                 "Gain one random “Stone” item (Item 94-100)"
             ],
@@ -1136,9 +1136,9 @@
             "linked_from": [
                 37
             ],
-            "treasures": {
-                "29": "“Woven Plate Armor” (Item 23)"
-            },
+            "treasures": [
+                29
+            ],
             "rewards": [
                 "Unlock Envelope {LU}"
             ],
@@ -1165,9 +1165,9 @@
             ],
             "requirements": "“An Adder Divides” personal quest",
             "chapter_id": 101,
-            "treasures": {
-                "46": "“Vipertooth Dagger” design (Item 54)"
-            },
+            "treasures": [
+                46
+            ],
             "rewards": [
                 "10 experience each",
                 "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
@@ -1193,9 +1193,9 @@
                 "cs/2/45"
             ],
             "chapter_id": 103,
-            "treasures": {
-                "21": "“Steel Helmet” (Item 22)"
-            },
+            "treasures": [
+                21
+            ],
             "rewards": [
                 "Gain 50 collective gold"
             ],
@@ -1243,11 +1243,11 @@
                 "cs/2/47"
             ],
             "chapter_id": 103,
-            "treasures": {
-                "33": "25  gold, gain {POISON}",
-                "27": "“Woven Plate Armor” (Item 23)",
-                "14": "“Steel Helmet” (Item 22)"
-            },
+            "treasures": [
+                33,
+                27,
+                14
+            ],
             "rewards": [
                 "+1 reputation",
                 "10 experience each"
@@ -1272,9 +1272,9 @@
                 "cs/2/48"
             ],
             "chapter_id": 103,
-            "treasures": {
-                "41": "“Ashsteel Gauntlets” (Item 61)"
-            },
+            "treasures": [
+                41
+            ],
             "rewards": [
                 "+1 prosperity",
                 "Each character gains one random “Orb” item (Item 1-10)"
@@ -1300,11 +1300,11 @@
                 "cs/2/52"
             ],
             "chapter_id": 103,
-            "treasures": {
-                "5": "“Concussion Mine” (Item 31)",
-                "20": "One random “Stone” item (Item 94-100)",
-                "37": "“Draining Greaves” (Item 15)"
-            },
+            "treasures": [
+                5,
+                20,
+                37
+            ],
             "rewards": [
                 "20 gold each",
                 "Each character gains one random “Orb” item (Item 1-10)"
@@ -1380,9 +1380,9 @@
                 "cs/2/54"
             ],
             "chapter_id": 102,
-            "treasures": {
-                "47": "15 gold"
-            },
+            "treasures": [
+                47
+            ],
             "rewards": [
                 "“Ghost Viper Venom” (Item 55)",
                 "+1 prosperity",
@@ -1505,9 +1505,9 @@
                 "cs/2/58"
             ],
             "chapter_id": 104,
-            "treasures": {
-                "41": "“Ashsteel Gauntlets” (Item 61)"
-            },
+            "treasures": [
+                41
+            ],
             "rewards": [
                 "+1 reputation",
                 "30 gold each"
@@ -1576,9 +1576,9 @@
                 "cs/2/62"
             ],
             "chapter_id": 104,
-            "treasures": {
-                "23": "“Trophy Helmet” (Item 12)"
-            },
+            "treasures": [
+                23
+            ],
             "rewards": [
                 "+1 reputation",
                 "30 gold each"
@@ -1601,10 +1601,10 @@
                 "cs/2/63"
             ],
             "chapter_id": 104,
-            "treasures": {
-                "44": "“Mana Medicine” (Item 60)",
-                "31": "“Drake's Blood” (Item 14)"
-            },
+            "treasures": [
+                44,
+                31
+            ],
             "rewards": [
                 "+1 prosperity",
                 "+1 reputation",
@@ -1721,10 +1721,10 @@
                 "cs/2/69"
             ],
             "chapter_id": 100,
-            "treasures": {
-                "48": "15 gold",
-                "49": "“Magma Waders” (Item 99)"
-            },
+            "treasures": [
+                48,
+                49
+            ],
             "rewards": [
                 "“Flaming Armor” (Item 51)"
             ],

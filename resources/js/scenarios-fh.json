@@ -6,9 +6,9 @@
             "name": "Howling in the Snow",
             "game": "fh",
             "chapter_id": 1,
-            "treasures": {
-                "47": "Gain 5 xp"
-            },
+            "treasures": [
+                47
+            ],
             "links_to": [
                 1
             ]
@@ -27,6 +27,9 @@
             "name": "Algox Scouting",
             "game": "fh",
             "chapter_id": 1,
+            "treasures": [
+                32
+            ],
             "links_to": [
                 4
             ],
@@ -39,6 +42,9 @@
             "name": "Algox Offensive",
             "game": "fh",
             "chapter_id": 1,
+            "treasures": [
+                18
+            ],
             "links_to": [
                 4
             ],
@@ -51,6 +57,9 @@
             "name": "Heart of Ice",
             "game": "fh",
             "chapter_id": 1,
+            "treasures": [
+                70
+            ],
             "links_to": [
                 5,
                 6,
@@ -67,6 +76,9 @@
             "name": "Frozen Crypt",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                46
+            ],
             "links_to": [
                 9,
                 10
@@ -93,6 +105,9 @@
             "name": "Edge of the World",
             "game": "fh",
             "chapter_id": 3,
+            "treasures": [
+                44
+            ],
             "links_to": [
                 13,
                 14
@@ -119,6 +134,9 @@
             "name": "Glowing Catacombs",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                9
+            ],
             "links_to": [
                 17
             ],
@@ -131,6 +149,10 @@
             "name": "Crystal Enclosure",
             "game": "fh",
             "chapter_id": 2,
+            "treasures": [
+                46,
+                71
+            ],
             "links_to": [
                 18
             ],
@@ -143,6 +165,9 @@
             "name": "Snowscorn Peak",
             "game": "fh",
             "chapter_id": 4,
+            "treasures": [
+                71
+            ],
             "links_to": [
                 19
             ],
@@ -155,6 +180,9 @@
             "name": "Temple Entrance",
             "game": "fh",
             "chapter_id": 4,
+            "treasures": [
+                9
+            ],
             "links_to": [
                 20
             ],
@@ -167,6 +195,9 @@
             "name": "Frozen Fjord",
             "game": "fh",
             "chapter_id": 3,
+            "treasures": [
+                49
+            ],
             "links_to": [
                 32
             ],
@@ -179,6 +210,9 @@
             "name": "Jagged Shoals",
             "game": "fh",
             "chapter_id": 3,
+            "treasures": [
+                64
+            ],
             "links_to": [
                 22
             ],
@@ -191,6 +225,9 @@
             "name": "Ancient Spire",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                40
+            ],
             "links_to": [
                 23,
                 24
@@ -204,6 +241,9 @@
             "name": "Derelict Elevator",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                77
+            ],
             "links_to": [
                 25,
                 26
@@ -310,6 +350,9 @@
             "name": "Rusted Tunnels",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                74
+            ],
             "links_to": [
                 35
             ],
@@ -322,6 +365,9 @@
             "name": "Quatryl Library",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                73
+            ],
             "links_to": [
                 36,
                 37
@@ -335,6 +381,10 @@
             "name": "Depths of Delirium",
             "game": "fh",
             "chapter_id": 2,
+            "treasures": [
+                36,
+                24
+            ],
             "linked_from": [
                 17
             ]
@@ -344,6 +394,9 @@
             "name": "Summit Meeting",
             "game": "fh",
             "chapter_id": 5,
+            "treasures": [
+                48
+            ],
             "links_to": [
                 38
             ],
@@ -357,6 +410,9 @@
             "name": "War of the Spire A",
             "game": "fh",
             "chapter_id": 2,
+            "treasures": [
+                45
+            ],
             "links_to": [
                 39
             ],
@@ -369,6 +425,9 @@
             "name": "War of the Spire B",
             "game": "fh",
             "chapter_id": 4,
+            "treasures": [
+                45
+            ],
             "links_to": [
                 40
             ],
@@ -381,6 +440,10 @@
             "name": "Crackling Tunnel",
             "game": "fh",
             "chapter_id": 4,
+            "treasures": [
+                25,
+                26
+            ],
             "links_to": [
                 41
             ],
@@ -393,6 +456,9 @@
             "name": "Ravens' Roost",
             "game": "fh",
             "chapter_id": 3,
+            "treasures": [
+                67
+            ],
             "linked_from": [
                 13
             ]
@@ -424,6 +490,9 @@
             "name": "Scrap Pit",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                61
+            ],
             "links_to": [
                 43
             ],
@@ -448,6 +517,9 @@
             "name": "The Dead Mile",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                61
+            ],
             "links_to": [
                 44
             ],
@@ -460,6 +532,9 @@
             "name": "The Way Forward",
             "game": "fh",
             "chapter_id": 5,
+            "treasures": [
+                16
+            ],
             "links_to": [
                 45,
                 46
@@ -473,6 +548,9 @@
             "name": "Corrupted Camp",
             "game": "fh",
             "chapter_id": 2,
+            "treasures": [
+                41
+            ],
             "links_to": [
                 47
             ],
@@ -485,6 +563,9 @@
             "name": "Relief Effort",
             "game": "fh",
             "chapter_id": 4,
+            "treasures": [
+                41
+            ],
             "links_to": [
                 48
             ],
@@ -545,6 +626,9 @@
             "name": "Living Glacier",
             "game": "fh",
             "chapter_id": 5,
+            "treasures": [
+                15
+            ],
             "links_to": [
                 52
             ],
@@ -569,6 +653,9 @@
             "name": "Carrion Ridge",
             "game": "fh",
             "chapter_id": 2,
+            "treasures": [
+                15
+            ],
             "links_to": [
                 56
             ],
@@ -593,6 +680,9 @@
             "name": "Beneath Sea and Stone",
             "game": "fh",
             "chapter_id": 3,
+            "treasures": [
+                5
+            ],
             "links_to": [
                 53
             ],
@@ -617,6 +707,9 @@
             "name": "Orphan's Halls",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                56
+            ],
             "links_to": [
                 58,
                 59
@@ -630,6 +723,11 @@
             "name": "Fleeting Permanence",
             "game": "fh",
             "chapter_id": 5,
+            "treasures": [
+                28,
+                43,
+                66
+            ],
             "links_to": [
                 55
             ],
@@ -655,6 +753,10 @@
             "name": "Among the Wreckage",
             "game": "fh",
             "chapter_id": 3,
+            "treasures": [
+                5,
+                63
+            ],
             "links_to": [
                 60
             ],
@@ -667,6 +769,9 @@
             "name": "Change of Heart",
             "game": "fh",
             "chapter_id": 5,
+            "treasures": [
+                41
+            ],
             "linked_from": [
                 52
             ]
@@ -676,6 +781,9 @@
             "name": "Call of the Harbinger",
             "game": "fh",
             "chapter_id": 2,
+            "treasures": [
+                4
+            ],
             "linked_from": [
                 47
             ]
@@ -685,6 +793,9 @@
             "name": "Sanctuary of Snow",
             "game": "fh",
             "chapter_id": 4,
+            "treasures": [
+                53
+            ],
             "linked_from": [
                 48
             ]
@@ -694,6 +805,9 @@
             "name": "Orphan's Core",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                81
+            ],
             "linked_from": [
                 44,
                 51
@@ -704,6 +818,9 @@
             "name": "Automation Uprising",
             "game": "fh",
             "chapter_id": 6,
+            "treasures": [
+                7
+            ],
             "linked_from": [
                 44,
                 51
@@ -724,6 +841,9 @@
             "name": "Life and Death",
             "game": "fh",
             "chapter_id": 8,
+            "treasures": [
+                76
+            ],
             "links_to": [
                 62
             ]
@@ -733,6 +853,9 @@
             "name": "The Unfettered Seal",
             "game": "fh",
             "chapter_id": 8,
+            "treasures": [
+                21
+            ],
             "links_to": [
                 63
             ],
@@ -745,6 +868,9 @@
             "name": "The Savvas Seal",
             "game": "fh",
             "chapter_id": 8,
+            "treasures": [
+                72
+            ],
             "links_to": [
                 64
             ],
@@ -766,6 +892,9 @@
             "name": "A Strong Foundation",
             "game": "fh",
             "chapter_id": 7,
+            "treasures": [
+                39
+            ],
             "links_to": [
                 66
             ]
@@ -799,6 +928,9 @@
             "name": "The Face of Torment",
             "game": "fh",
             "chapter_id": 7,
+            "treasures": [
+                59
+            ],
             "linked_from": [
                 67
             ]
@@ -817,6 +949,9 @@
             "name": "The True Oak",
             "game": "fh",
             "chapter_id": 7,
+            "treasures": [
+                82
+            ],
             "linked_from": [
                 69
             ]
@@ -826,6 +961,10 @@
             "name": "Invasion of the Dock",
             "game": "fh",
             "chapter_id": 7,
+            "treasures": [
+                22,
+                23
+            ],
             "links_to": [
                 72
             ]
@@ -835,6 +974,9 @@
             "name": "A Giant Block of Ice",
             "game": "fh",
             "chapter_id": 7,
+            "treasures": [
+                37
+            ],
             "links_to": [
                 73
             ],
@@ -847,6 +989,9 @@
             "name": "Flotsam",
             "game": "fh",
             "chapter_id": 7,
+            "treasures": [
+                33
+            ],
             "links_to": [
                 74
             ],
@@ -872,6 +1017,11 @@
             "name": "Infiltraiting the Lair",
             "game": "fh",
             "chapter_id": 7,
+            "treasures": [
+                20,
+                51,
+                55
+            ],
             "links_to": [
                 77
             ],
@@ -884,6 +1034,10 @@
             "name": "Apotheosis",
             "game": "fh",
             "chapter_id": 7,
+            "treasures": [
+                2,
+                55
+            ],
             "links_to": [
                 77
             ],
@@ -905,13 +1059,20 @@
             "id": 78,
             "name": "The Lurker Problem",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "treasures": [
+                58,
+                13
+            ]
         },
         {
             "id": 79,
             "name": "Relic",
             "game": "fh",
             "chapter_id": 11,
+            "treasures": [
+                8
+            ],
             "links_to": [
                 80
             ]
@@ -921,6 +1082,10 @@
             "name": "Relic Renewed",
             "game": "fh",
             "chapter_id": 11,
+            "treasures": [
+                62,
+                69
+            ],
             "linked_from": [
                 79
             ]
@@ -929,7 +1094,10 @@
             "id": 81,
             "name": "Ruinous Research Lab",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "treasures": [
+                19
+            ]
         },
         {
             "id": 82,
@@ -959,13 +1127,20 @@
             "id": 86,
             "name": "The Lady in White",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "treasures": [
+                17
+            ]
         },
         {
             "id": 87,
             "name": "The Collection",
             "game": "fh",
             "chapter_id": 11,
+            "treasures": [
+                27,
+                38
+            ],
             "links_to": [
                 88
             ]
@@ -975,6 +1150,9 @@
             "name": "Collection's Capstone",
             "game": "fh",
             "chapter_id": 11,
+            "treasures": [
+                6
+            ],
             "linked_from": [
                 87
             ]
@@ -983,7 +1161,10 @@
             "id": 89,
             "name": "A Contained Fire",
             "game": "fh",
-            "chapter_id": 11
+            "chapter_id": 11,
+            "treasures": [
+                42
+            ]
         },
         {
             "id": 90,
@@ -1020,6 +1201,10 @@
             "name": "A Grand View",
             "game": "fh",
             "chapter_id": 11,
+            "treasures": [
+                12,
+                29
+            ],
             "links_to": [
                 95
             ]
@@ -1038,6 +1223,9 @@
             "name": "Underground Station",
             "game": "fh",
             "chapter_id": 11,
+            "treasures": [
+                10
+            ],
             "links_to": [
                 97
             ]
@@ -1059,6 +1247,10 @@
             "name": "Collapsing Vent",
             "game": "fh",
             "chapter_id": 11,
+            "treasures": [
+                35,
+                65
+            ],
             "linked_from": [
                 97
             ]
@@ -1077,6 +1269,9 @@
             "name": "Inside the Swarm",
             "game": "fh",
             "chapter_id": 11,
+            "treasures": [
+                79
+            ],
             "links_to": [
                 101
             ],
@@ -1157,19 +1352,29 @@
             "id": 108,
             "name": "Lustrous Pit",
             "game": "fh",
-            "chapter_id": 9
+            "chapter_id": 9,
+            "treasures": [
+                3,
+                68
+            ]
         },
         {
             "id": 109,
             "name": "Furious Factory",
             "game": "fh",
-            "chapter_id": 9
+            "chapter_id": 9,
+            "treasures": [
+                80
+            ]
         },
         {
             "id": 110,
             "name": "Guardian's Temple",
             "game": "fh",
-            "chapter_id": 9
+            "chapter_id": 9,
+            "treasures": [
+                75
+            ]
         },
         {
             "id": 111,
@@ -1242,6 +1447,9 @@
             "name": "Under the Influence",
             "game": "fh",
             "chapter_id": 10,
+            "treasures": [
+                50
+            ],
             "links_to": [
                 121
             ]
@@ -1259,13 +1467,19 @@
             "id": 122,
             "name": "The Eternal Crave",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "treasures": [
+                31
+            ]
         },
         {
             "id": 123,
             "name": "The Titan",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "treasures": [
+                52
+            ]
         },
         {
             "id": 124,
@@ -1281,6 +1495,9 @@
             "name": "The Longest Second",
             "game": "fh",
             "chapter_id": 10,
+            "treasures": [
+                14
+            ],
             "linked_from": [
                 124
             ]
@@ -1295,13 +1512,19 @@
             "id": 127,
             "name": "Derelict Freighter",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "treasures": [
+                30
+            ]
         },
         {
             "id": 128,
             "name": "A Tall Drunken Tale",
             "game": "fh",
             "chapter_id": 10,
+            "treasures": [
+                54
+            ],
             "links_to": [
                 129
             ]
@@ -1311,6 +1534,9 @@
             "name": "How to Lay an Ambush",
             "game": "fh",
             "chapter_id": 10,
+            "treasures": [
+                78
+            ],
             "links_to": [
                 130
             ],
@@ -1323,6 +1549,9 @@
             "name": "And Then, a Stream",
             "game": "fh",
             "chapter_id": 10,
+            "treasures": [
+                11
+            ],
             "linked_from": [
                 129
             ]
@@ -1347,6 +1576,9 @@
             "name": "Bolt",
             "game": "fh",
             "chapter_id": 11,
+            "treasures": [
+                34
+            ],
             "linked_from": [
                 132
             ]
@@ -1367,7 +1599,10 @@
             "id": 136,
             "name": "Abandoned Hideout",
             "game": "fh",
-            "chapter_id": 10
+            "chapter_id": 10,
+            "treasures": [
+                83
+            ]
         },
         {
             "id": 137,

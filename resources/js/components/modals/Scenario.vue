@@ -87,10 +87,10 @@
                         </div>
 
                         <div class="my-2"
-                             v-if="(scenario.isComplete() || treasuresVisible) && scenario.treasures.isNotEmpty()">
+                             v-if="(scenario.isComplete() || treasuresVisible) && scenario.treasures.length">
                             <h2 class="text-white">{{ $t('Treasures') }}</h2>
-                            <div v-if="scenario.treasures.isNotEmpty()"
-                                 v-for="(treasure, id) in scenario.treasures.items" :key="'treasure-'+id"
+                            <div v-if="scenario.treasures.length"
+                                 v-for="id in scenario.treasures" :key="'treasure-'+id"
                                  class="flex items-center -ml-2">
                                 <checkbox-with-label
                                     :id="'treasure-'+id"
@@ -103,7 +103,7 @@
                             </div>
                         </div>
                         <p class="mb-2"
-                           v-if="!scenario.isComplete() && scenario.treasures.isEmpty() && treasuresVisible">
+                           v-if="!scenario.isComplete() && !scenario.treasures.length && treasuresVisible">
                             {{ $t('No treasures available') }}.
                         </p>
 

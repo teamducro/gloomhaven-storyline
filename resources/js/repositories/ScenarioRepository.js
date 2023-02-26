@@ -87,6 +87,7 @@ export default class ScenarioRepository {
     }
 
     unlockTreasure(scenario, id, checked = true) {
+        id = parseInt(id);
         scenario.unlockTreasure(id, checked);
 
         this.processTreasureItems(scenario, id, checked);
@@ -192,7 +193,7 @@ export default class ScenarioRepository {
     }
 
     processTreasureItems(scenario, id, checked = true) {
-        if (!scenario.treasures.has(id)) {
+        if (!scenario.treasures.includes(id)) {
             return;
         }
 
@@ -202,7 +203,8 @@ export default class ScenarioRepository {
             return;
         }
 
-        let items = (new ItemTextParser).ids(scenario.treasures.get(id));
+        const treasureText = i18n.t(`treasures.${scenario.game}-${id}.name`);
+        let items = (new ItemTextParser).ids(treasureText);
         this.processItems(items, checked);
     }
 

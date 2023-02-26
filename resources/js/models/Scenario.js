@@ -34,7 +34,7 @@ class Scenario {
         this.coupled = data.coupled;
         this.required_by = collect(data.required_by);
         this.blocks_on = collect(data.blocks_on);
-        this.treasures = collect(data.treasures);
+        this.treasures = data.treasures || [];
         this.treasures_from = collect(data.treasures_from);
         this.treasures_to = collect(data.treasures_to);
         this.unlockedTreasures = [];
@@ -129,7 +129,7 @@ class Scenario {
             return this.lockTreasure(id);
         }
 
-        if (!this.treasures.has(id) || this.isTreasureUnlocked(id)) {
+        if (!this.treasures.includes(id) || this.isTreasureUnlocked(id)) {
             return;
         }
 
@@ -138,7 +138,7 @@ class Scenario {
     }
 
     lockTreasure(id) {
-        if (!this.treasures.has(id) || !this.isTreasureUnlocked(id)) {
+        if (!this.treasures.includes(id) || !this.isTreasureUnlocked(id)) {
             return;
         }
 
@@ -155,11 +155,11 @@ class Scenario {
     }
 
     get missedTreasures() {
-        return this.isComplete() && this.treasures.count() > this.unlockedTreasures.length;
+        return this.isComplete() && this.treasures.length > this.unlockedTreasures.length;
     }
 
     get lootedAllTreasures() {
-        return this.treasures.count() > 0 && this.treasures.count() === this.unlockedTreasures.length;
+        return this.treasures.length > 0 && this.treasures.length === this.unlockedTreasures.length;
     }
 
     hasCard() {
