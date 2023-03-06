@@ -118,7 +118,7 @@ export default {
             const stylesheet = document.styleSheets[1];
             const titleFont = 'Pirata One';
 
-            const cssSelectors = ['html, body', '.font-title', '.font-default', 'div[class*="mdc-"], .bedge', 'h1, h2, h3', '#storyline text'];
+            const cssSelectors = ['html, body', '.font-title', '.font-default', 'div[class*="mdc-"]', 'h1, h2, h3', '#storyline text'];
             const cssSelectorsWithFonts = Object.fromEntries(cssSelectors.map(selector => [selector, this.settings.current]));
 
             if (!this.settings.headers) {
