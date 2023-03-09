@@ -138,6 +138,14 @@ class Sheet {
             }
         }
 
+        for (let i = 1; i <= 60; i++) {
+            this.city[i] = this.city[i] || false;
+        }
+
+        for (let i = 1; i <= 60; i++) {
+            this.road[i] = this.road[i] || false;
+        }
+
         for (let i = 1; i <= 100; i++) {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
         }
