@@ -245,9 +245,7 @@ export default {
             }
         },
         removeCard(card) {
-            const type = card.type === 'R' ? 'road' : 'city';
-            this.sheet[type][card.id] = false;
-
+            this.sheet[card.folder][card.id] = false;
             this.store();
         },
         renderHtml(html) {

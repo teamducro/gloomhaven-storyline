@@ -12,7 +12,7 @@ export default {
             "Dodaj jedną kartę {AGAIN} {DISARM} oraz jedną kartę {AGAIN} {MUDDLE}",
             "Dodaj jedną kartę {AGAIN} ADD {TARGET}",
             "Dodaj jedną kartę {+1_WHITE} {SHIELD}1, na siebie",
-            "Zignoruj negatywne efekty przedmiotu oraz dodaj jedną kartę {+1_WHITE}",
+            "Zignoruj negatywne efekty przedmiotu oraz dodaj jedną kartę {+1_WHITE}"
         ]
     },
     "CH": {
@@ -27,7 +27,7 @@ export default {
             "Dodaj dwie karty {AGAIN} {EARTH}",
             "Dodaj dwie karty {AGAIN} {WIND}",
             "Zignoruj negatywne efekty przedmiotu",
-            "Zignoruj negatywne efekty scenariusza",
+            "Zignoruj negatywne efekty scenariusza"
         ]
     },
     "SW": {
@@ -43,7 +43,7 @@ export default {
             "Dodaj jedną kartę {+2_WHITE} {FIRE}",
             "Dodaj jedną kartę {+2_WHITE} {ICE}",
             "Dodaj jedną kartę {AGAIN} {EARTH} i jedną kartę {AGAIN} {WIND}",
-            "Dodaj jedną kartę {AGAIN} {LIGHT} i jedną kartę {AGAIN} {DARK}",
+            "Dodaj jedną kartę {AGAIN} {LIGHT} i jedną kartę {AGAIN} {DARK}"
         ]
     },
     "TI": {
@@ -59,7 +59,7 @@ export default {
             "Dodaj jedną kartę {+1_WHITE} {IMMOBILIZE}",
             "Dodaj jedną kartę {+1_WHITE} {HEAL}2",
             "Dodaj jedną kartę {+0_WHITE} DODATKOWY {TARGET}",
-            "Zignoruj negatywne efekty scenariusza",
+            "Zignoruj negatywne efekty scenariusza"
         ]
     },
     "SC": {
@@ -75,7 +75,7 @@ export default {
             "Dodaj dwie karty {AGAIN} {POISON}",
             "Dodaj dwie karty {AGAIN} {MUDDLE}",
             "Dodaj jedną kartę {AGAIN} {INVISIBLE}",
-            "Zignoruj negatywne efekty scenariusza",
+            "Zignoruj negatywne efekty scenariusza"
         ]
     },
     "MT": {
@@ -92,7 +92,7 @@ export default {
             "Dodaj dwie karty {AGAIN} {IMMOBILIZE}",
             "Dodaj jedną kartę {AGAIN} {STUN}",
             "Dodaj jedną kartę {AGAIN} {DISARM} oraz jedną kartę {AGAIN} {MUDDLE}",
-            "Zignoruj negatywne efekty scenariusza",
+            "Zignoruj negatywne efekty scenariusza"
         ]
     },
     "DS": {
@@ -107,7 +107,7 @@ export default {
             "Dodaj jedną kartę {+1_WHITE} {IMMOBILIZE}",
             "Dodaj jedną kartę {+0_WHITE} {STUN}",
             "Dodaj jedną kartę {AGAIN} {TARGET}",
-            "Zignoruj negatywne efekty scenariusza",
+            "Zignoruj negatywne efekty scenariusza"
         ]
     },
     "EL": {
@@ -125,7 +125,7 @@ export default {
             "Dodaj dwie karty {+1_WHITE} {PUSH}1",
             "Dodaj jedną kartę {+1_WHITE} {WOUND}",
             "Dodaj jedną kartę {+0_WHITE} {STUN}",
-            "Dodaj jedną kartę {+0_WHITE} {TARGET}",
+            "Dodaj jedną kartę {+0_WHITE} {TARGET}"
         ]
     },
     "SB": {
@@ -139,7 +139,7 @@ export default {
             "Dodaj dwie karty {AGAIN} {WOUND}",
             "Dodaj jedną kartę {AGAIN} {STUN}",
             "Dodaj jedną kartę {AGAIN} {HEAL}3",
-            "Dodaj jedną kartę {+0_WHITE} {REFRESH} przedmiot",
+            "Dodaj jedną kartę {+0_WHITE} {REFRESH} przedmiot"
         ]
     },
     "SS": {
@@ -156,7 +156,7 @@ export default {
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+3_WHITE} {MUDDLE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {STUN}",
             "Dodaj trzy karty {AGAIN} {+1_WHITE}",
-            "Dodaj dwie karty {AGAIN} {CURSE}",
+            "Dodaj dwie karty {AGAIN} {CURSE}"
         ]
     },
     "SK": {
@@ -172,7 +172,7 @@ export default {
             "Dodaj dwie karty {AGAIN} {LIGHT}",
             "Dodaj dwie karty {AGAIN} {SHIELD}1, na siebie",
             "Zignoruj negatywne efekty przedmiotu oraz dodaj dwie karty {+1_WHITE}",
-            "Zignoruj negatywne efekty scenariusza",
+            "Zignoruj negatywne efekty scenariusza"
         ]
     },
     "NS": {
@@ -187,7 +187,7 @@ export default {
             "Dodaj dwie karty {AGAIN} {HEAL}1",
             "Dodaj dwie karty {AGAIN} {CURSE}",
             "Dodaj jedną kartę {AGAIN} {TARGET}",
-            "Zignoruj negatywne efekty scenariusza i dodaj dwie karty {+1_WHITE}",
+            "Zignoruj negatywne efekty scenariusza i dodaj dwie karty {+1_WHITE}"
         ]
     },
     "SU": {
@@ -202,7 +202,7 @@ export default {
             "Dodaj dwie karty {AGAIN} {HEAL}1",
             "Dodaj jedną kartę {AGAIN} {FIRE} i jedną kartę {AGAIN} {WIND}",
             "Dodaj jedną kartę {AGAIN} {DARK} i jedną kartę {AGAIN} {EARTH}",
-            "Zignoruj negatywne efekty scenariusza i dodaj dwie karty {+1_WHITE}",
+            "Zignoruj negatywne efekty scenariusza i dodaj dwie karty {+1_WHITE}"
         ]
     },
     "BE": {
@@ -217,7 +217,7 @@ export default {
             "Dodaj jedną kartę {AGAIN} {+1_WHITE} {DISARM}",
             "Dodaj dwie karty {AGAIN} {HEAL}1",
             "Dodaj jedną kartę {+2_WHITE} {FIRE}",
-            "Zignoruj negatywne efekty przedmiotu",
+            "Zignoruj negatywne efekty przedmiotu"
         ]
     },
     "QM": {
@@ -232,7 +232,7 @@ export default {
             "Dodaj jedną kartę {AGAIN} {STUN}",
             "Dodaj jedną kartę {AGAIN} {TARGET}",
             "Dodaj jedną kartę {+0_WHITE} {REFRESH} przedmiot",
-            "Zignoruj negatywne efekty przedmiotu oraz dodaj dwie karty {+1_WHITE}",
+            "Zignoruj negatywne efekty przedmiotu oraz dodaj dwie karty {+1_WHITE}"
         ]
     },
     "PH": {
@@ -247,7 +247,7 @@ export default {
             "Dodaj dwie karty {AGAIN} {CURSE}",
             "Dodaj dwie karty {AGAIN} {IMMOBILIZE}",
             "Dodaj jedną kartę {AGAIN} {STUN}",
-            "Zignoruj negatywne efekty scenariusza i dodaj jedną kartę {+1_WHITE}",
+            "Zignoruj negatywne efekty scenariusza i dodaj jedną kartę {+1_WHITE}"
         ]
     },
     "BT": {
@@ -260,7 +260,7 @@ export default {
             "Dodaj jedną kartę {+1_WHITE} {IMMOBILIZE}",
             "Dodaj dwie karty {AGAIN} {HEAL}1",
             "Dodaj dwie karty {AGAIN} {EARTH}",
-            "Zignoruj negatywne efekty scenariusza",
+            "Zignoruj negatywne efekty scenariusza"
         ]
     },
     "BS": {
@@ -294,7 +294,7 @@ export default {
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} {HEAL}2, na sojusznika",
             "Dodaj dwie karty {AGAIN} {HEAL}1, na siebie",
             "Dodaj dwie karty {AGAIN} {CURSE}",
-            "Zignoruj negatywne efekty scenariusza i dodaj dwie karty {+1_WHITE}",
+            "Zignoruj negatywne efekty scenariusza i dodaj dwie karty {+1_WHITE}"
         ]
     },
     "RG": {
@@ -309,7 +309,7 @@ export default {
             "Dodaj jedną kartę {+1_WHITE} {FIRE_LIGHT}",
             "Dodaj jedną kartę {+1_WHITE} {SHIELD} 1",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {IMMOBILIZE}",
-            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {WOUND}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {WOUND}"
         ]
     },
     "DM": {
@@ -323,7 +323,7 @@ export default {
             "Dodaj jedną kartę {+2_WHITE}",
             "Zastąp jedną kartę {+1_WHITE} jedną kartą {+2_WHITE} {EARTH}",
             "Zastąp jedną kartę {+1_WHITE} jedną kartą {+2_WHITE} {FIRE}",
-            "Dodaj jedną kartę {+0_WHITE} Wszyscy sąsiadujący przeciwnicy otrzymują 1 obrażenie",
+            "Dodaj jedną kartę {+0_WHITE} Wszyscy sąsiadujący przeciwnicy otrzymują 1 obrażenie"
         ]
     },
     "HT": {
@@ -338,7 +338,7 @@ export default {
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} {STUN}",
             "Zastąp jedną kartę {+1_WHITE} jedną kartą {+1_WHITE} {STUN}",
             "Dodaj jedną kartę {+2_WHITE} {WIND}",
-            "Zastąp jedną kartę {+1_WHITE} jedną kartą {+3_WHITE}",
+            "Zastąp jedną kartę {+1_WHITE} jedną kartą {+3_WHITE}"
         ]
     },
     "VW": {
@@ -352,7 +352,7 @@ export default {
             "Dodaj jedną kartę {+1_WHITE} {HEAL}1 (Sojusznik)",
             "Dodaj jedną kartę {+1_WHITE} {POISON}",
             "Dodaj jedną kartę {+3_WHITE}",
-            "Dodaj jedną kartę {+1_WHITE} {CURSE}",
+            "Dodaj jedną kartę {+1_WHITE} {CURSE}"
         ]
     },
     "AA": {

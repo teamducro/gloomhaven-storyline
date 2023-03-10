@@ -10,6 +10,8 @@ export default {
     "Add city events": "Añade Evento de Ciudad",
     "Road Event Decks": "Mazo de Eventos de Camino",
     "Add road events": "Añade Evento de Camino",
+    "Rift Event Decks": "Rift Event Decks",
+    "Add rift events": "Add rift events",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Cada vez que tu grupo complete con éxito cinco escenarios, marca cualquiera de las casillas y obtén la recompensa correspondiente.",
     "completed scenarios": "escenarios terminados",
     "5 Ancient Technology Global Achievements": "Obtén 5 Logros Globales de “Tecnología Antigua”",
@@ -341,7 +343,8 @@ export default {
     "card_types": {
         "R": "Evento de Camino",
         "C": "Evento de Ciudad",
-        "Q": "Misión Personal"
+        "Q": "Misión Personal",
+        "RIFT": "Rift"
     },
     "Shield": "Escudo",
     "Heal": "Curación",

@@ -19,7 +19,7 @@
                     ref="city-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, true)" :disabled="appData.read_only || !checkedItems.length"
+                        <button @click="draw(checkedItems, 'C')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
