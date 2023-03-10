@@ -17,10 +17,10 @@ export default {
         ]
     },
     "gh-4": {
-        "name": "Krypta Potępionych",
+        "name": "Krypta Potępionych"
     },
     "gh-5": {
-        "name": "Zrujnowana krypta",
+        "name": "Zrujnowana krypta"
     },
     "gh-6": {
         "name": "Murszejąca krypta",
@@ -29,7 +29,7 @@ export default {
         ]
     },
     "gh-7": {
-        "name": "Zarośnięta grota",
+        "name": "Zarośnięta grota"
     },
     "gh-8": {
         "name": "Magazyn w Gloomhaven",
@@ -45,7 +45,7 @@ export default {
         ]
     },
     "gh-10": {
-        "name": "Sfera Mocy Żywiołów",
+        "name": "Sfera Mocy Żywiołów"
     },
     "gh-11": {
         "name": "Rynek Gloomhaven A",
@@ -64,10 +64,10 @@ export default {
         ]
     },
     "gh-13": {
-        "name": "Świątynia Proroctw",
+        "name": "Świątynia Proroctw"
     },
     "gh-14": {
-        "name": "Lodowa Pieczara",
+        "name": "Lodowa Pieczara"
     },
     "gh-15": {
         "name": "Kaplica Siły",
@@ -76,7 +76,7 @@ export default {
         ]
     },
     "gh-16": {
-        "name": "Górska przełęcz",
+        "name": "Górska przełęcz"
     },
     "gh-17": {
         "name": "Zaginiona wyspa",
@@ -85,7 +85,7 @@ export default {
         ]
     },
     "gh-18": {
-        "name": "Opuszczone kanały",
+        "name": "Opuszczone kanały"
     },
     "gh-19": {
         "name": "Zapomniana krypta",
@@ -110,16 +110,16 @@ export default {
         ]
     },
     "gh-22": {
-        "name": "Świątynia Żywiołów",
+        "name": "Świątynia Żywiołów"
     },
     "gh-23": {
-        "name": "Podziemne ruiny",
+        "name": "Podziemne ruiny"
     },
     "gh-24": {
-        "name": "Komnata Echa",
+        "name": "Komnata Echa"
     },
     "gh-25": {
-        "name": "Lodowa grań",
+        "name": "Lodowa grań"
     },
     "gh-26": {
         "name": "Starożytny zbiornik",
@@ -133,11 +133,11 @@ export default {
         "name": "Niebezpieczna szczelina",
         "rewards": [
             "+1 do dobrobytu",
-            "Po 100 szt. złota dla każdego Pieniądze te należy natychmiast wydać na wzmocnienia.",
+            "Po 100 szt. złota dla każdego Pieniądze te należy natychmiast wydać na wzmocnienia."
         ]
     },
     "gh-28": {
-        "name": "Zewnętrzna komnata rytualna",
+        "name": "Zewnętrzna komnata rytualna"
     },
     "gh-29": {
         "name": "Sanktuarium Mroku",
@@ -152,13 +152,13 @@ export default {
         ]
     },
     "gh-31": {
-        "name": "Sfera Nocy",
+        "name": "Sfera Nocy"
     },
     "gh-32": {
-        "name": "Próchniejący Las",
+        "name": "Próchniejący Las"
     },
     "gh-33": {
-        "name": "Zbrojownia Sawasów",
+        "name": "Zbrojownia Sawasów"
     },
     "gh-34": {
         "name": "Spalony Szczyt",
@@ -186,7 +186,7 @@ export default {
         ]
     },
     "gh-37": {
-        "name": "Rów Zagłady",
+        "name": "Rów Zagłady"
     },
     "gh-38": {
         "name": "Obóz Niewolników",
@@ -201,7 +201,7 @@ export default {
         ]
     },
     "gh-40": {
-        "name": "Starożytny System Obronny",
+        "name": "Starożytny System Obronny"
     },
     "gh-41": {
         "name": "Prastary Grobowiec",
@@ -219,7 +219,7 @@ export default {
         ]
     },
     "gh-43": {
-        "name": "Gniazdo Drakona",
+        "name": "Gniazdo Drakona"
     },
     "gh-44": {
         "name": "Plemienne Natarcie",
@@ -236,13 +236,13 @@ export default {
         ]
     },
     "gh-46": {
-        "name": "Koszmarny Wierch",
+        "name": "Koszmarny Wierch"
     },
     "gh-47": {
-        "name": "Legowisko Niewidzącego Oka",
+        "name": "Legowisko Niewidzącego Oka"
     },
     "gh-48": {
-        "name": "Głusza Cieni",
+        "name": "Głusza Cieni"
     },
     "gh-49": {
         "name": "Bastion Rebeliantów",
@@ -264,11 +264,11 @@ export default {
             "+5 do reputacji",
             "+5 do dobrobytu",
             "Do talii należy dodać wydarzenie miejskie 81",
-            "Do talii należy dodać wydarzenie na szlaku 69",
+            "Do talii należy dodać wydarzenie na szlaku 69"
         ]
     },
     "gh-52": {
-        "name": "Trująca piwnica",
+        "name": "Trująca piwnica"
     },
     "gh-53": {
         "name": "Podziemia Krypty",
@@ -314,7 +314,7 @@ export default {
         ]
     },
     "gh-59": {
-        "name": "Zapomniany gaj",
+        "name": "Zapomniany gaj"
     },
     "gh-60": {
         "name": "Laboratorium alchemiczne",
@@ -325,7 +325,7 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Znikająca latarnia",
+        "name": "Znikająca latarnia"
     },
     "gh-62": {
         "name": "Czeluść Dusz",
@@ -354,7 +354,7 @@ export default {
         ]
     },
     "gh-66": {
-        "name": "Mechaniczna Zatoka",
+        "name": "Mechaniczna Zatoka"
     },
     "gh-67": {
         "name": "Tajemna Biblioteka",
@@ -413,7 +413,7 @@ export default {
         ]
     },
     "gh-76": {
-        "name": "Gniazdo Dreszczowców",
+        "name": "Gniazdo Dreszczowców"
     },
     "gh-77": {
         "name": "Krypta Tajemnic",
@@ -455,7 +455,7 @@ export default {
                 "-1 do reputacji",
                 "-2 do dobrobytu"
             ]
-        ],
+        ]
     },
     "gh-83": {
         "name": "Wewnętrzne Cienie",
@@ -468,7 +468,7 @@ export default {
         "rewards": [
             "„Rezonujący Kryształ” (przedmiot 133)",
             "+1 do dobrobytu"
-        ],
+        ]
     },
     "gh-85": {
         "name": "Świątynia Słońca",
@@ -527,7 +527,7 @@ export default {
         ]
     },
     "gh-94": {
-        "name": "Gniazdo Szczuroków",
+        "name": "Gniazdo Szczuroków"
     },
     "gh-95": {
         "name": "Czas Zapłaty",
@@ -674,7 +674,7 @@ export default {
                 "Po 5 szt. złota dla każdego",
                 "+1 do reputacji"
             ]
-        ],
+        ]
     },
     "fc-99": {
         "name": "Wstrząsy wtórne",
@@ -688,13 +688,13 @@ export default {
                 "+1 do dobrobytu",
                 "Schemat „Mniejszego Antidotum” (przedmiot 153)"
             ]
-        ],
+        ]
     },
     "fc-100": {
         "name": "Ruchome tryby",
         "rewards": [
             "Wybierz jedno z poniższych: „Monokular Teleskopowy” (przedmiot 059), „Pradawne Wiertło” (przedmiot 112), „Osobliwa Zębatka” (przedmiot 125) ALBO „Mechaniczny Pająk” (przedmiot 126)"
-        ],
+        ]
     },
     "fc-101": {
         "name": "Zasnuta krypta",
@@ -740,7 +740,7 @@ export default {
                 "Po 175 szt. złota dla każdego, Pieniądze te trzeba natychmiast wydać na dowolne wzmocnienie {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, albo {DARK}",
                 "+ 1 do dobrobytu"
             ]
-        ],
+        ]
     },
     "fc-107": {
         "name": "Mechaniczny geniusz",
@@ -761,7 +761,7 @@ export default {
                 "„Zbroja Rozbicia Klątw” (przedmiot 155)",
                 "2 „Miotane Topory” (przedmiot 161)"
             ]
-        ],
+        ]
     },
     "fc-109": {
         "name": "Epilog wojny",
@@ -787,7 +787,7 @@ export default {
                 "Po 12 pkt. doświadczenia dla każdego",
                 "Po 1 ✔ dla każdego"
             ]
-        ],
+        ]
     },
     "fc-112": {
         "name": "Sedno sprawy",
@@ -801,7 +801,7 @@ export default {
                 "Po 5 pkt. doświadczenia dla każdego",
                 "Po 1 ✔ dla każdego"
             ]
-        ],
+        ]
     },
     "fc-113": {
         "name": "Zagubiona nić",
@@ -841,7 +841,7 @@ export default {
         ]
     },
     "jotl-1": {
-        "name": "Roadside Ambush",
+        "name": "Roadside Ambush"
     },
     "jotl-2": {
         "name": "A Hole in the Wall",
@@ -881,7 +881,7 @@ export default {
         ]
     },
     "jotl-8": {
-        "name": "Hidden Tumor",
+        "name": "Hidden Tumor"
     },
     "jotl-9": {
         "name": "Explosive Evolution",
@@ -1444,7 +1444,7 @@ export default {
                 "„Steam Piston Hammer” (przedmiot QA02)",
                 "„Spider Climb Gloves” (przedmiot QA03)",
                 "Add copies to the city's available supply"
-            ],
+            ]
         ]
     },
     "cs-QA2": {
@@ -1482,7 +1482,7 @@ export default {
             "„Apex Predator” quest complete",
             "Otwórzcie kopertę {RM}",
             "„Terrorscale Saber” design (przedmiot RM03)",
-            "„Terrorscale Crossblades” design (przedmiot RM04)",
+            "„Terrorscale Crossblades” design (przedmiot RM04)"
         ]
     },
     "cs-RM5": {
@@ -1494,7 +1494,7 @@ export default {
             ],
             [
                 "Po 2 ✔ dla każdego",
-                "„Lucky Eye” design (przedmiot 063)",
+                "„Lucky Eye” design (przedmiot 063)"
             ]
         ]
     },
@@ -1510,7 +1510,7 @@ export default {
         "name": "Insatiable",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego",
-            "„Savage Cuirass” design (przedmiot RM06)",
+            "„Savage Cuirass” design (przedmiot RM06)"
         ]
     }
 }

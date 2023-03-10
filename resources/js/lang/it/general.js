@@ -10,6 +10,8 @@ export default {
     "Add city events": "Aggiungi eventi città",
     "Road Event Decks": "Mazzo Eventi Strada",
     "Add road events": "Aggiungi eventi strada",
+    "Rift Event Decks": "Rift Event Decks",
+    "Add rift events": "Add rift events",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Ogni volta che il gruppo completa con successo 5 scenari, spunta una di queste caselle e ottieni la ricompensa corrispondente",
     "completed scenarios": "scenari completati",
     "5 Ancient Technology Global Achievements": "5 Traguardi Globali Tecnologia Antica",
@@ -336,12 +338,13 @@ export default {
     "Hidden Scenario": "Scenario nascosto",
     "Add achievements gained by events other than completing scenarios manually": "Aggiungi manualmente traguardi ottenuti da eventi diversi dal completamento di scenari",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "I numeri dei luoghi nel testo della storia sono solo promemoria. Essi da soli non sbloccano nulla.",
-    "Level up when you're back in town": "Sali di livello quando torni in città!",
+    "Level up when youre back in town": "Level up when you're back in town!",
     "Add {x} {-1} to your attack modifier deck.": "Aggiungi {x} {-1} al tuo mazzo modificatore di attacco.",
     "card_types": {
         "R": "Evento Strada",
         "C": "Evento Città",
-        "Q": "Missione Personale"
+        "Q": "Missione Personale",
+        "RIFT": "Rift"
     },
     "Shield": "Scudo",
     "Heal": "Cura",

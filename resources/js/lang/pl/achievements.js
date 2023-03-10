@@ -1,279 +1,278 @@
 export default {
     "gh-PFS": {
-        "name": "Pierwsze Kroki",
+        "name": "Pierwsze Kroki"
     },
     "gh-PJP": {
-        "name": "Plany Jeksery",
+        "name": "Plany Jeksery"
     },
     "gh-PDB": {
-        "name": "Ciemna Nagroda",
+        "name": "Ciemna Nagroda"
     },
     "gh-GTMF": {
-        "name": "Ucieczka Handlarki",
+        "name": "Ucieczka Handlarki"
     },
     "gh-GTDI": {
-        "name": "Inwazja Trupów",
+        "name": "Inwazja Trupów"
     },
     "gh-PADE": {
-        "name": "Posłańcy Demona",
+        "name": "Posłańcy Demona"
     },
     "gh-GCRE": {
-        "name": "Władze Miasta: Kupieckie",
+        "name": "Władze Miasta: Kupieckie"
     },
     "gh-GCRM": {
-        "name": "Władze Miasta: Wojskowe",
+        "name": "Władze Miasta: Wojskowe"
     },
     "gh-GEOI": {
-        "name": "Koniec Inwazji",
+        "name": "Koniec Inwazji"
     },
     "gh-GTPE": {
-        "name": "Potęga Wzmocnienia",
+        "name": "Potęga Wzmocnienia"
     },
     "gh-PSC": {
-        "name": "Kadzielnica Skałoma",
+        "name": "Kadzielnica Skałoma"
     },
     "gh-GTRN": {
-        "name": "Szczelina Zneutralizowana",
+        "name": "Szczelina Zneutralizowana"
     },
     "gh-GAR": {
-        "name": "Artefakt: Odzyskany",
+        "name": "Artefakt: Odzyskany"
     },
     "gh-GAR2": {
-        "name": "Artefakt: Odzyskany (wcześniej Utracony)",
+        "name": "Artefakt: Odzyskany (wcześniej Utracony)"
     },
     "gh-GAL": {
-        "name": "Artefakt: Utracony",
+        "name": "Artefakt: Utracony"
     },
     "gh-GAT": {
-        "name": "Starożytna Technologia",
+        "name": "Starożytna Technologia"
     },
     "gh-GAT2": {
-        "name": "Starożytna Technologia x2",
+        "name": "Starożytna Technologia x2"
     },
     "gh-GAT3": {
-        "name": "Starożytna Technologia x3",
+        "name": "Starożytna Technologia x3"
     },
     "gh-GAT4": {
-        "name": "Starożytna Technologia x4",
+        "name": "Starożytna Technologia x4"
     },
     "gh-GAT5": {
-        "name": "Starożytna Technologia x5",
+        "name": "Starożytna Technologia x5"
     },
     "gh-PTR": {
-        "name": "Ścieżka przez ruiny",
+        "name": "Ścieżka przez ruiny"
     },
     "gh-PTVC": {
-        "name": "Rozkaz Głosu",
+        "name": "Rozkaz Głosu"
     },
     "gh-PTDC": {
-        "name": "Rozkaz Drakona",
+        "name": "Rozkaz Drakona"
     },
     "gh-PFC": {
-        "name": "Tropem Wskazówek",
+        "name": "Tropem Wskazówek"
     },
     "gh-PAI": {
-        "name": "Zaproszenie",
+        "name": "Zaproszenie"
     },
     "gh-GTED": {
-        "name": "Kraniec Ciemności",
+        "name": "Kraniec Ciemności"
     },
     "gh-PTSV": {
-        "name": "Berło i Głos",
+        "name": "Berło i Głos"
     },
     "gh-GAC": {
-        "name": "Artefakt: Oczyszczony",
+        "name": "Artefakt: Oczyszczony"
     },
     "gh-PTVT": {
-        "name": "Skarb Głosu",
+        "name": "Skarb Głosu"
     },
     "gh-PTDT": {
-        "name": "Skarb Drakona",
+        "name": "Skarb Drakona"
     },
     "gh-GTDS": {
-        "name": "Drakon Zabity",
+        "name": "Drakon Zabity"
     },
     "gh-GTDA": {
-        "name": "Przysługa dla Drakona",
+        "name": "Przysługa dla Drakona"
     },
     "gh-GCRD": {
-        "name": "Władze Miasta: Demoniczne",
+        "name": "Władze Miasta: Demoniczne"
     },
     "gh-PTTT": {
-        "name": "Przeprawa Przez Rów",
+        "name": "Przeprawa Przez Rów"
     },
     "gh-PRA": {
-        "name": "Pomoc Czerwonego Ciernia",
+        "name": "Pomoc Czerwonego Ciernia"
     },
     "gh-PATD": {
-        "name": "Nad Przepaścią",
+        "name": "Nad Przepaścią"
     },
     "gh-GTVF": {
-        "name": "Głos Uwolniony",
+        "name": "Głos Uwolniony"
     },
     "gh-GTVS": {
-        "name": "Głos Uciszony",
+        "name": "Głos Uciszony"
     },
     "gh-GWB": {
-        "name": "Oddychanie Wodą",
+        "name": "Oddychanie Wodą"
     },
     "gh-GEOC": {
-        "name": "Koniec Spaczenia",
+        "name": "Koniec Spaczenia"
     },
     "gh-GEOC2": {
-        "name": "Koniec Spaczenia x2",
+        "name": "Koniec Spaczenia x2"
     },
     "gh-GEOC3": {
-        "name": "Koniec Spaczenia x3",
+        "name": "Koniec Spaczenia x3"
     },
     "gh-GAOO": {
-        "name": "Unicestwienie Zakonu",
+        "name": "Unicestwienie Zakonu"
     },
     "gh-GEOG": {
-        "name": "Koniec Mroku",
+        "name": "Koniec Mroku"
     },
     "gh-PTTN": {
-        "name": "Przeprawa Przez Gniazdo",
+        "name": "Przeprawa Przez Gniazdo"
     },
     "gh-PAMT": {
-        "name": "Mapa do Skarbu",
+        "name": "Mapa do Skarbu"
     },
     "gh-PBB": {
-        "name": "Kiepska Sprawa",
+        "name": "Kiepska Sprawa"
     },
     "gh-PTPS": {
-        "name": "Źródło Skażenia",
+        "name": "Źródło Skażenia"
     },
     "gh-PSB": {
-        "name": "Błogosławieństwo Słońca",
+        "name": "Błogosławieństwo Słońca"
     },
     "gh-PSR": {
-        "name": "Sin-Ra",
+        "name": "Sin-Ra"
     },
     "gh-PDC": {
-        "name": "Egzekucja Długu",
+        "name": "Egzekucja Długu"
     },
     "gh-PWS": {
-        "name": "Kostur Wody",
+        "name": "Kostur Wody"
     },
     "gh-PFA": {
-        "name": "Pomoc Ryby",
+        "name": "Pomoc Ryby"
     },
     "gh-PT": {
-        "name": "Wstrząsy",
+        "name": "Wstrząsy"
     },
     "gh-PHSE": {
-        "name": "Morska Eskorta",
+        "name": "Morska Eskorta"
     },
     "gh-PGJ": {
-        "name": "Praca dla Grabarza",
+        "name": "Praca dla Grabarza"
     },
     "gh-PNE": {
-        "name": "Ekspedycja na północ",
+        "name": "Ekspedycja na północ"
     },
     "gh-GTTP": {
-        "name": "Poprzez portal",
+        "name": "Poprzez portal"
     },
     "gh-PO": {
-        "name": "Oportuniści",
+        "name": "Oportuniści"
     },
     "gh-GKIP": {
-        "name": "Wiedza to potęga",
+        "name": "Wiedza to potęga"
     },
     "gh-GKIP2": {
-        "name": "Wiedza to potęga x2",
+        "name": "Wiedza to potęga x2"
     },
     "gh-GKIP3": {
-        "name": "Wiedza to potęga x3",
+        "name": "Wiedza to potęga x3"
     },
     "gh-GKIP4": {
-        "name": "Wiedza to potęga x4",
+        "name": "Wiedza to potęga x4"
     },
     "gh-PAD": {
-        "name": "Anioły Śmierci",
+        "name": "Anioły Śmierci"
     },
     "gh-PC": {
-        "name": "Opiekunowie",
+        "name": "Opiekunowie"
     },
     "gh-PHP": {
-        "name": "Zwierzyna łowna",
+        "name": "Zwierzyna łowna"
     },
     "gh-GPOA": {
-        "name": "Fragmenty Artefaktu",
+        "name": "Fragmenty Artefaktu"
     },
     "gh-GPOA2": {
-        "name": "Fragmenty Artefaktu x2",
+        "name": "Fragmenty Artefaktu x2"
     },
     "gh-GPOA3": {
-        "name": "Fragmenty Artefaktu x3",
+        "name": "Fragmenty Artefaktu x3"
     },
     "gh-PGD": {
-        "name": "Służba strażnicza",
+        "name": "Służba strażnicza"
     },
     "gh-PDE": {
-        "name": "Międzywymiarowa równowaga",
+        "name": "Międzywymiarowa równowaga"
     },
     "gh-PHH": {
-        "name": "Łowy na łowcę",
+        "name": "Łowy na łowcę"
     },
     "gh-PXA": {
-        "name": "Pomoc Xangrotowi",
+        "name": "Pomoc Xangrotowi"
     },
     "gh-PDA": {
-        "name": "Pomoc Diamarze",
+        "name": "Pomoc Diamarze"
     },
     "gh-PBF": {
-        "name": "Piękno wolności",
+        "name": "Piękno wolności"
     },
     "gh-GPA": {
-        "name": "Zagrożenie powstrzymane",
+        "name": "Zagrożenie powstrzymane"
     },
     "gh-GPA2": {
-        "name": "Zagrożenie powstrzymane x2",
+        "name": "Zagrożenie powstrzymane x2"
     },
     "gh-GPA3": {
-        "name": "Zagrożenie powstrzymane x3",
+        "name": "Zagrożenie powstrzymane x3"
     },
     "gh-GPA4": {
-        "name": "Zagrożenie powstrzymane x4",
+        "name": "Zagrożenie powstrzymane x4"
     },
     "gh-GMS": {
-        "name": "Mechaniczny splendor",
+        "name": "Mechaniczny splendor"
     },
     "gh-GST": {
-        "name": "Zerwane więzy",
+        "name": "Zerwane więzy"
     },
-
     "cs-PCSOD": {
-        "name": "Ooze Destroyed",
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "Fallen Lava",
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "Follow the Money",
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "Frozen Warrior",
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "Oak Alliance",
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "Inox Alliance",
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "Guttermaw's Bounty",
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "Feirgrin's Request",
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "A Potion Lost",
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "Take the Money",
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "Accomplished Mercenaries",
+        "name": "Accomplished Mercenaries"
     }
 }

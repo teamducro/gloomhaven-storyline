@@ -5,10 +5,10 @@
 import fs from "fs"
 
 // Scan languages directory for language files
-const folders = fs.readdirSync('../resources/js/lang/');
+const folders = fs.readdirSync('resources/js/lang/');
 const otherLanguages = folders.filter(dir => dir.length === 2 && dir !== 'en');
 
-const files = fs.readdirSync('../resources/js/lang/en/');
+const files = fs.readdirSync('resources/js/lang/en/');
 const languageFiles = files.filter(file => file.endsWith('js') && file !== 'en.js');
 
 otherLanguages.forEach((dir) => {
@@ -40,7 +40,7 @@ otherLanguages.forEach((dir) => {
 
         // Write modified file
         const output = 'export default ' + JSON.stringify(outputObject, null, 4)
-        fs.writeFile(filePath, output, (err) => {
+        fs.writeFile(filePath.replace('../', ''), output, (err) => {
             if (err) throw err;
         });
     })

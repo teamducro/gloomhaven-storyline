@@ -22,6 +22,7 @@ class Sheet {
         this.c = data.hidePersonalQuests || false;
         this.city = {...data.city};
         this.road = {...data.road};
+        this.rift = {...data.rift}; // FC
         this.notes = data.notes || '';
         this.unlocks = {...data.unlocks};
         this.xResult = data.xResult || '';
@@ -40,6 +41,7 @@ class Sheet {
             itemDesigns: {'itemDesigns': {}},
             city: {'city': {}},
             road: {'road': {}},
+            rift: {'rift': {}},
             notes: {'notes': ''},
             unlocks: {'unlocks': {}},
             xResult: {'xResult': ''},
@@ -92,6 +94,10 @@ class Sheet {
             this.road[i] = this.road[i] || false;
         }
 
+        for (let i = 1; i <= 20; i++) {
+            this.rift[i] = this.rift[i] || false;
+        }
+
         // FC
         this.road[82] = this.road[82] || false;
         this.road[83] = this.road[83] || false;
@@ -136,6 +142,14 @@ class Sheet {
             for (let i = 1; i <= 30; i++) {
                 this.road[i] = true;
             }
+        }
+
+        for (let i = 1; i <= 60; i++) {
+            this.city[i] = this.city[i] || false;
+        }
+
+        for (let i = 1; i <= 60; i++) {
+            this.road[i] = this.road[i] || false;
         }
 
         for (let i = 1; i <= 100; i++) {
@@ -248,6 +262,7 @@ class Sheet {
         values.itemDesigns = collect({...this.itemDesigns}).filter(v => v).all();
         values.city = collect({...this.city}).filter(v => v).all();
         values.road = collect({...this.road}).filter(v => v).all();
+        values.rift = collect({...this.rift}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();
         values.characterUnlocks = collect({...this.characterUnlocks}).filter(v => v).all();
         values.characters = collect({...this.characters}).mapWithKeys(character => [character.uuid, character.id]).all();
