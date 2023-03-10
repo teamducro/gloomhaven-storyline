@@ -56,7 +56,7 @@
                     ref="city-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, true)" :disabled="appData.read_only || !checkedItems.length"
+                        <button @click="draw(checkedItems, 'C')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
@@ -72,7 +72,24 @@
                     ref="road-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, false)" :disabled="appData.read_only || !checkedItems.length"
+                        <button @click="draw(checkedItems, 'R')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+                <selectable-list
+                    v-if="sheet.game === 'fc'"
+                    id="rift-events"
+                    :title="$t('Rift Event Decks')"
+                    :label="$t('Add rift events')"
+                    :items.sync="sheet.rift"
+                    @change="store"
+                    ref="rift-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'RIFT')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
@@ -205,7 +222,6 @@ export default {
             loading: true,
             isLocalCampaign: true,
             renderX: 0,
-            game: 'gh',
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
             scenarioRepository: new ScenarioRepository
@@ -237,6 +253,7 @@ export default {
             this.$refs['prosperity']?.reset();
             this.$refs['city-events']?.reset();
             this.$refs['road-events']?.reset();
+            this.$refs['rift-events']?.reset();
 
             this.loading = false;
         },
@@ -248,17 +265,16 @@ export default {
             this.sheet.store();
             this.storySyncer.store();
         },
-        draw(checkedItems, isCity = true) {
+        draw(checkedItems, type) {
             let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
+            console.log(this.game, this.appData.game)
             if (id) {
-                const card = (isCity ? 'C' : 'R') + '-' + id;
-                this.$bus.$emit('open-event-card', {id: card, game: this.game});
+                const card = type + '-' + id;
+                this.$bus.$emit('open-event-card', {id: card, game: this.appData.game});
             }
         },
         removeCard(card) {
-            const type = card.type === 'R' ? 'road' : 'city';
-            this.sheet[type][card.id] = false;
-
+            this.sheet[card.folder][card.id] = false;
             this.store();
         },
         renderHtml(html) {

@@ -10,6 +10,8 @@ export default {
     "Add city events": "Add city events",
     "Road Event Decks": "Road Event Decks",
     "Add road events": "Add road events",
+    "Rift Event Decks": "Rift Event Decks",
+    "Add rift events": "Add rift events",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.",
     "completed scenarios": "completed scenarios",
 
@@ -350,6 +352,7 @@ export default {
         "R": "Road Event",
         "C": "City Event",
         "Q": "Personal Quest",
+        "RIFT": "Rift",
     },
 
     //Ability Enhancements
