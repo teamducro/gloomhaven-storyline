@@ -218,7 +218,7 @@ class Sheet {
     }
 
     removeInvalid(list, maxId) {
-        return collect(list).filter((value, key) => key > 0 && key <= maxId).all();
+        return collect(list).filter((value, key) => key >= 0 && key <= maxId).all();
     }
 
     read() {
