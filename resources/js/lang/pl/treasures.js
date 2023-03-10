@@ -1,291 +1,288 @@
 export default {
     "gh-1": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-2": {
-        "name": "Otrzymujesz „Ciężką Tarczę” (przedmiot 032).",
+        "name": "Otrzymujesz „Ciężką Tarczę” (przedmiot 032)."
     },
     "gh-3": {
-        "name": "Otrzymujesz „Zbroję Karacenową” (przedmiot 044).",
+        "name": "Otrzymujesz „Zbroję Karacenową” (przedmiot 044)."
     },
     "gh-4": {
-        "name": "Otrzymujesz 15 szt. złota.",
+        "name": "Otrzymujesz 15 szt. złota."
     },
     "gh-5": {
-        "name": "Otrzymujesz „Kolczugę” (przedmiot 023).",
+        "name": "Otrzymujesz „Kolczugę” (przedmiot 023)."
     },
     "gh-6": {
-        "name": "Otrzymujesz „Łańcuch z Hakiem” (przedmiot 039).",
+        "name": "Otrzymujesz „Łańcuch z Hakiem” (przedmiot 039)."
     },
     "gh-7": {
-        "name": "Losowy scenariusz poboczny.",
+        "name": "Losowy scenariusz poboczny."
     },
     "gh-8": {
-        "name": "Otrzymujesz 1 ✔.",
+        "name": "Otrzymujesz 1 ✔."
     },
     "gh-9": {
-        "name": "Otrzymujesz „Kolię Fal” (przedmiot 111).",
+        "name": "Otrzymujesz „Kolię Fal” (przedmiot 111)."
     },
     "gh-10": {
-        "name": "Otrzymujesz 10 pkt. doświadczenia.",
+        "name": "Otrzymujesz 10 pkt. doświadczenia."
     },
     "gh-11": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-12": {
-        "name": "Otrzymujesz „Lawoczłapy” (przedmiot 099).",
+        "name": "Otrzymujesz „Lawoczłapy” (przedmiot 099)."
     },
     "gh-13": {
-        "name": "Otrzymujesz 5 obrażeń, {POISON} i {WOUND}.",
+        "name": "Otrzymujesz 5 obrażeń, {POISON} i {WOUND}."
     },
     "gh-14": {
-        "name": "Otrzymujesz 10 pkt. doświadczenia.",
+        "name": "Otrzymujesz 10 pkt. doświadczenia."
     },
     "gh-15": {
-        "name": "Otrzymujesz „Wisior Mrocznych Paktów” (przedmiot 045).",
+        "name": "Otrzymujesz „Wisior Mrocznych Paktów” (przedmiot 045)."
     },
     "gh-16": {
-        "name": "Otrzymujesz 10 szt. złota.",
+        "name": "Otrzymujesz 10 szt. złota."
     },
     "gh-17": {
-        "name": "Otrzymujesz 20 szt. złota.",
+        "name": "Otrzymujesz 20 szt. złota."
     },
     "gh-18": {
-        "name": "Otrzymujesz 15 szt. złota.",
+        "name": "Otrzymujesz 15 szt. złota."
     },
     "gh-19": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-20": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-21": {
-        "name": "Otrzymujesz 5 obrażeń.",
+        "name": "Otrzymujesz 5 obrażeń."
     },
     "gh-22": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-23": {
-        "name": "Otrzymujesz „Zbroję Smoczej Łuski” (przedmiot 103).",
+        "name": "Otrzymujesz „Zbroję Smoczej Łuski” (przedmiot 103)."
     },
     "gh-24": {
-        "name": "Otrzymujesz 5 obrażeń.",
+        "name": "Otrzymujesz 5 obrażeń."
     },
     "gh-25": {
-        "name": "Otrzymujesz 25 szt. złota.",
+        "name": "Otrzymujesz 25 szt. złota."
     },
     "gh-26": {
-        "name": "Otrzymujesz 20 szt. złota.",
+        "name": "Otrzymujesz 20 szt. złota."
     },
     "gh-27": {
-        "name": "Otrzymujesz „Kulę Zmierzchu” (przedmiot 122).",
+        "name": "Otrzymujesz „Kulę Zmierzchu” (przedmiot 122)."
     },
     "gh-28": {
-        "name": "Otrzymujesz 15 szt. złota.",
+        "name": "Otrzymujesz 15 szt. złota."
     },
     "gh-29": {
-        "name": "Otrzymujesz „Onuce Wytrzymałości” (przedmiot 097).",
+        "name": "Otrzymujesz „Onuce Wytrzymałości” (przedmiot 097)."
     },
     "gh-30": {
-        "name": "Otrzymujesz 1 ✔.",
+        "name": "Otrzymujesz 1 ✔."
     },
     "gh-31": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-32": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-33": {
-        "name": "Otrzymujesz „Wyważoną Sieć” (przedmiot 019).",
+        "name": "Otrzymujesz „Wyważoną Sieć” (przedmiot 019)."
     },
     "gh-34": {
-        "name": "Otrzymujesz „Amulet Życia” (przedmiot 024).",
+        "name": "Otrzymujesz „Amulet Życia” (przedmiot 024)."
     },
     "gh-35": {
-        "name": "Otrzymujesz „Buty Smoczej Łuski” (przedmiot 098).",
+        "name": "Otrzymujesz „Buty Smoczej Łuski” (przedmiot 098)."
     },
     "gh-36": {
-        "name": "Schemat „Rakietowych Butów” (przedmiot 096).",
+        "name": "Schemat „Rakietowych Butów” (przedmiot 096)."
     },
     "gh-37": {
-        "name": "Otrzymujesz 1 ✔.",
+        "name": "Otrzymujesz 1 ✔."
     },
     "gh-38": {
-        "name": "Schemat „Pierścienia Czaszek” (przedmiot 123).",
+        "name": "Schemat „Pierścienia Czaszek” (przedmiot 123)."
     },
     "gh-39": {
-        "name": "Otrzymujesz 5 obrażeń.",
+        "name": "Otrzymujesz 5 obrażeń."
     },
     "gh-40": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-41": {
-        "name": "Otrzymujesz „Czarny Sztylet” (przedmiot 053).",
+        "name": "Otrzymujesz „Czarny Sztylet” (przedmiot 053)."
     },
     "gh-42": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-43": {
-        "name": "Otrzymujesz 5 obrażeń, {POISON} i {WOUND}.",
+        "name": "Otrzymujesz 5 obrażeń, {POISON} i {WOUND}."
     },
     "gh-44": {
-        "name": "Losowy scenariusz poboczny.",
+        "name": "Losowy scenariusz poboczny."
     },
     "gh-45": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-46": {
-        "name": "Otrzymujesz 3 obrażenia i {POISON}.",
+        "name": "Otrzymujesz 3 obrażenia i {POISON}."
     },
     "gh-47": {
-        "name": "Otrzymujesz „Zbroję Parową” (przedmiot 104).",
+        "name": "Otrzymujesz „Zbroję Parową” (przedmiot 104)."
     },
     "gh-48": {
-        "name": "Otrzymujesz 30 szt. złota.",
+        "name": "Otrzymujesz 30 szt. złota."
     },
     "gh-49": {
-        "name": "Nowy scenariusz: {SCENARIO 17}.",
+        "name": "Nowy scenariusz: {SCENARIO 17}."
     },
     "gh-50": {
-        "name": "Otrzymujesz „Druga Skórę” (przedmiot 101).",
+        "name": "Otrzymujesz „Druga Skórę” (przedmiot 101)."
     },
     "gh-51": {
-        "name": "Losowy scenariusz poboczny.",
+        "name": "Losowy scenariusz poboczny."
     },
     "gh-52": {
-        "name": "Otrzymujesz „Serce Zdrajcy” (przedmiot 131).",
+        "name": "Otrzymujesz „Serce Zdrajcy” (przedmiot 131)."
     },
     "gh-53": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-54": {
-        "name": "Otrzymujesz „Przeklęty Kompas” (przedmiot 124).",
+        "name": "Otrzymujesz „Przeklęty Kompas” (przedmiot 124)."
     },
     "gh-55": {
-        "name": "Otrzymujesz 1 ✔.",
+        "name": "Otrzymujesz 1 ✔."
     },
     "gh-56": {
-        "name": "Otrzymujesz „Gwiezdny Kolczyk” (przedmiot 069).",
+        "name": "Otrzymujesz „Gwiezdny Kolczyk” (przedmiot 069)."
     },
     "gh-57": {
-        "name": "Otrzymujesz 15 szt. złota.",
+        "name": "Otrzymujesz 15 szt. złota."
     },
     "gh-58": {
-        "name": "Otrzymujesz „Hełm Smoczej Łuski” (przedmiot 108).",
+        "name": "Otrzymujesz „Hełm Smoczej Łuski” (przedmiot 108)."
     },
     "gh-59": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-60": {
-        "name": "Schemat „Topora Czaszkozguby” (przedmiot 113).",
+        "name": "Schemat „Topora Czaszkozguby” (przedmiot 113)."
     },
     "gh-61": {
-        "name": "Otrzymujesz „Uniwersalny Sztylet” (przedmiot 040).",
+        "name": "Otrzymujesz „Uniwersalny Sztylet” (przedmiot 040)."
     },
     "gh-62": {
-        "name": "Otrzymujesz „Hełm z Góry” (przedmiot 110) i „Górski Młot” (przedmiot 115).",
+        "name": "Otrzymujesz „Hełm z Góry” (przedmiot 110) i „Górski Młot” (przedmiot 115)."
     },
     "gh-63": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-64": {
-        "name": "Otrzymujesz 30 szt. złota.",
+        "name": "Otrzymujesz 30 szt. złota."
     },
     "gh-65": {
-        "name": "Schemat „Rogatego Hełmu” (przedmiot 107).",
+        "name": "Schemat „Rogatego Hełmu” (przedmiot 107)."
     },
     "gh-66": {
-        "name": "Otrzymujesz „Niestabilną Bombę” (przedmiot 033).",
+        "name": "Otrzymujesz „Niestabilną Bombę” (przedmiot 033)."
     },
     "gh-67": {
-        "name": "Otrzymujesz 10 szt. złota.",
+        "name": "Otrzymujesz 10 szt. złota."
     },
     "gh-68": {
-        "name": "Otrzymujesz „Pierścień Spirali” (przedmiot 130).",
+        "name": "Otrzymujesz „Pierścień Spirali” (przedmiot 130)."
     },
     "gh-69": {
-        "name": "Otrzymujesz „Szaty Przywołania” (przedmiot 100).",
+        "name": "Otrzymujesz „Szaty Przywołania” (przedmiot 100)."
     },
     "gh-70": {
-        "name": "Losowy scenariusz poboczny.",
+        "name": "Losowy scenariusz poboczny."
     },
     "gh-71": {
-        "name": "Losowy scenariusz poboczny.",
+        "name": "Losowy scenariusz poboczny."
     },
     "gh-72": {
-        "name": "Schemat „Płomienny Falcjon” (przedmiot 116).",
+        "name": "Schemat „Płomienny Falcjon” (przedmiot 116)."
     },
     "gh-73": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-74": {
-        "name": "Losowy schemat przedmiotu.",
+        "name": "Losowy schemat przedmiotu."
     },
     "gh-75": {
-        "name": "Znaleziono Kryptogram (Patrz Księga Scenariuszy strona 121).",
+        "name": "Znaleziono Kryptogram (Patrz Księga Scenariuszy strona 121)."
     },
     "fc-76": {
-        "name": "Otrzymujesz 3 punkty obrażeń, {WOUND} oraz 10 szt. złota.",
+        "name": "Otrzymujesz 3 punkty obrażeń, {WOUND} oraz 10 szt. złota."
     },
     "fc-77": {
-        "name": "Otrzymujesz „Większą Miksturę Zdrowia” (przedmiot 090).",
+        "name": "Otrzymujesz „Większą Miksturę Zdrowia” (przedmiot 090)."
     },
     "fc-78": {
-        "name": "Schemat „Pradawnego Łuku” (przedmiot 157).",
+        "name": "Schemat „Pradawnego Łuku” (przedmiot 157)."
     },
     "fc-79": {
-        "name": "Otrzymujesz „Figurkę Sokoła” (przedmiot 035).",
+        "name": "Otrzymujesz „Figurkę Sokoła” (przedmiot 035)."
     },
     "fc-80": {
-        "name": "Otrzymujesz 1 ✓ oraz dodajesz do talii wydarzenie szczelinowe 19.",
+        "name": "Otrzymujesz 1 ✓ oraz dodajesz do talii wydarzenie szczelinowe 19."
     },
     "fc-81": {
-        "name": "Otrzymujesz „Zwój Pośpiechu” (przedmiot 159) oraz 10 szt. złota.",
+        "name": "Otrzymujesz „Zwój Pośpiechu” (przedmiot 159) oraz 10 szt. złota."
     },
     "fc-82": {
-        "name": "Schemat „Nagolenników Odnowienia” (przedmiot 158).",
+        "name": "Schemat „Nagolenników Odnowienia” (przedmiot 158)."
     },
     "fc-83": {
-        "name": "Otrzymujesz „Większą Miksturę Mocy” (przedmiot 041).",
+        "name": "Otrzymujesz „Większą Miksturę Mocy” (przedmiot 041)."
     },
     "fc-84": {
-        "name": "Otrzymujesz „Maskę Grozy” (przedmiot 066).",
+        "name": "Otrzymujesz „Maskę Grozy” (przedmiot 066)."
     },
     "fc-85": {
-        "name": "Otrzymujesz 3 punkty obrażenia, {POISON} oraz 10 szt. złota.",
+        "name": "Otrzymujesz 3 punkty obrażenia, {POISON} oraz 10 szt. złota."
     },
     "fc-86": {
-        "name": "Znajdujesz dziwną i intrygującą książkę o medytacji Orchidów. Odblokuj {DR} solowy scenariusz „Zapowiedź nieuniknionego” (patrz strona 25).",
+        "name": "Znajdujesz dziwną i intrygującą książkę o medytacji Orchidów. Odblokuj {DR} solowy scenariusz „Zapowiedź nieuniknionego” (patrz strona 25)."
     },
     "fc-87": {
-        "name": "Otrzymujesz 2 punkty obrażeń, {CURSE} oraz 15 szt. złota.",
+        "name": "Otrzymujesz 2 punkty obrażeń, {CURSE} oraz 15 szt. złota."
     },
     "fc-88": {
-        "name": "Otrzymujesz 1 ✓.",
+        "name": "Otrzymujesz 1 ✓."
     },
     "fc-89": {
-        "name": "Otrzymujesz „Pierścień Drugiej Szansy” (przedmiot 070).",
+        "name": "Otrzymujesz „Pierścień Drugiej Szansy” (przedmiot 070)."
     },
     "fc-90": {
-        "name": "przeczytaj sekcję 75 na stronie 49",
+        "name": "przeczytaj sekcję 75 na stronie 49"
     },
     "fc-91": {
-        "name": "Otrzymujesz 30 szt. złota oraz osiągnięcie drużyny: „Oportuniści”. Dodajesz do talii wydarzenie miejskie 84.",
-    },
-    "fc-92": {
-        "name": "Otrzymujesz „Halabardę” (przedmiot 068).",
+        "name": "Otrzymujesz 30 szt. złota oraz osiągnięcie drużyny: „Oportuniści”. Dodajesz do talii wydarzenie miejskie 84."
     },
     "fc-93": {
-        "name": "Otrzymujesz „Zwój Pośpiechu” (przedmiot 159).",
+        "name": "Otrzymujesz „Zwój Pośpiechu” (przedmiot 159)."
     },
     "fc-94": {
-        "name": "Otrzymujesz 1 ✓ oraz dodajesz do talii wydarzenie szczelinowe 20.",
+        "name": "Otrzymujesz 1 ✓ oraz dodajesz do talii wydarzenie szczelinowe 20."
     },
     "fc-95": {
-        "name": "Otrzymujesz 25 szt. złota oraz osiągnięcie drużynowe: „Skrytka”. Dodajesz do talii wydarzenie miejskie 85.",
+        "name": "Otrzymujesz 25 szt. złota oraz osiągnięcie drużynowe: „Skrytka”. Dodajesz do talii wydarzenie miejskie 85."
     },
     "fc-96": {
-        "name": "Znajdujesz starą księgę pełną rysunków technicznych oraz schematów rozmaitych egzotycznych maszyn. Na okładce znajduje się dziwna, odręczna notatka: {NOTE_115}.",
+        "name": "Znajdujesz starą księgę pełną rysunków technicznych oraz schematów rozmaitych egzotycznych maszyn. Na okładce znajduje się dziwna, odręczna notatka: {NOTE_115}."
     },
     "jotl-1": {
         "name": "Otrzymujesz 10 pkt. doświadczenia"

@@ -6,15 +6,14 @@ export default {
     "The cost of items displayed is modified by this amount.": "Koszt wyświetlanych przedmiotów jest modyfikowany o tę kwotę.",
     "When 100 gold is donated, open envelope": "Po przekazaniu 100 sztuk złota, otwórz kopertę",
     "gained prosperity checkbox by donations.": "pole dobrobytu zdobyte poprzez datki.",
-    "gained prosperity checkboxes by donations.": "pola dobrobytu zdobyte poprzez datki.",
     "City Event Decks": "Talia zdarzeń miejskich",
     "Add city events": "Dodaj zdarzenie miejskie",
     "Road Event Decks": "Talia zdarzeń na szlaku",
     "Add road events": "Dodaj zdarzenie na szlaku",
+    "Rift Event Decks": "Rift Event Decks",
+    "Add rift events": "Add rift events",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Za każdym razem, gdy Twoja drużyna pomyślnie ukończy pięć scenariuszy, zaznacz jedno z pól i zdobądź odpowiednią nagrodę.",
     "completed scenarios": "ukończone scenariusze",
-
-    // Achievements
     "5 Ancient Technology Global Achievements": "Zdobycie 5 osiągnięć globalnych „Starożytna Technologia”",
     "Add City Event 75 & Road Event 66": "Dodaj do talii zdarzenie miejskie 75 oraz zdarzenie na szlaku 66",
     "Add City Event 76 & Road Event 67": "Dodaj do talii zdarzenie miejskie 76 oraz zdarzenie na szlaku 67",
@@ -27,8 +26,6 @@ export default {
     "Have a party reputation of 10 or higher": "Reputacja drużyny na poziomie 10 lub wyższym",
     "Have a party reputation of 20": "Reputacja drużyny na poziomie 20 lub wyższym",
     "Retire a character": "Postać przechodzi w stan spoczynku",
-
-    // Storyline App
     "Abilities": "Zdolności",
     "Achievement": "Osiągnięcie | Osiągnięcia",
     "Achievements": "Osiągnięcia",
@@ -134,11 +131,11 @@ export default {
         "title": "Udostępnij Gloomhaven Storyline Tracker"
     },
     "share-campaign-code": {
-        "not-allowed": "Nie jesteś właścicielem tej kampanii, nie możesz udostępniać jej innym.",
         "1": "Udostępnij poniższy kod kampanii członkom drużyny, aby umożliwić synchronizację postępów na wszystkich urządzeniach!",
         "2": "Ważne do",
         "3": "Kod jest ważny przez tydzień.",
         "4": "Gdy ta opcja jest włączona, użytkownicy korzystający z tego kodu nie będą mogli edytować fabuły.",
+        "not-allowed": "Nie jesteś właścicielem tej kampanii, nie możesz udostępniać jej innym."
     },
     "Read only mode": "Tryb tylko do odczytu",
     "campaign page": {
@@ -215,7 +212,6 @@ export default {
     "Description": "Opis",
     "Release date": "Data wydania",
     "Received a campaign code?": "Otrzymałeś kod kampanii?",
-    "Fill in your campaign code, you\'ll get access to the shared campaign.": "Wpisz swój kod kampanii, aby uzyskać dostęp do udostępnionej kampanii.",
     "Add Campaign": "Dodaj kampanię",
     "Your campaign has been synced!": "Twoja kampania została zsynchronizowana!",
     "Expired": "Wygasła",
@@ -273,8 +269,6 @@ export default {
     "Party sheet": "Dziennik drużyny",
     "Reputation": "Reputacja",
     "Shop modifier": "Modyfikacje cen sklepowych",
-
-    // Game Editions
     "gh": "Gloomhaven",
     "fc": "Forgotten Circles (Zapomniane kręgi)",
     "Forgotten Circles": "Forgotten Circles (Zapomniane kręgi)",
@@ -282,7 +276,6 @@ export default {
     "Jaws of the Lion": "Jaws of the Lion (Szczęki Lwa)",
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
-
     "Availability": "Dostępność",
     "Sticker": "Naklejka",
     "State": "Stan",
@@ -316,6 +309,8 @@ export default {
     "Solo Scenarios": "Scenariusze dla jednego gracza",
     "Personal Quests": "Cele życiowe",
     "Personal Quest": "Cel życiowy",
+    "Hide personal quests": "Hide personal quests",
+    "Show personal quest": "Show personal quest",
     "Random Scenarios": "Losowe scenariusze",
     "Sealed": "Zapieczętowane",
     "Road Events": "Zdarzenia na szlaku",
@@ -339,7 +334,6 @@ export default {
     "East Coast": "Wschodnie Wybrzeże",
     "different Dimension": "inny wymiar",
     "and": "i",
-    "or": "lub",
     "Hidden Scenario": "Ukryty scenariusz",
     "Add achievements gained by events other than completing scenarios manually": "Dodaj osiągnięcia zdobyte przez wydarzenia inne niż ręczne ukończenie scenariuszy",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "Numery lokalizacji w tekście historii to tylko przypomnienia. Same w sobie niczego nie odblokowują.",
@@ -349,9 +343,8 @@ export default {
         "R": "Zdarzenie na szlaku",
         "C": "Zdarzenie w mieście",
         "Q": "Cel życiowy",
+        "RIFT": "Rift"
     },
-
-    //Ability Enhancements
     "Shield": "Tarcza",
     "Heal": "Leczenie",
     "Attack": "Atak",
@@ -360,11 +353,8 @@ export default {
     "Jump": "Skok",
     "Flying": "Latanie",
     "Retaliate": "Odwet",
-
     "Recover": "Odzyskanie",
     "Refresh": "Odświeżenie",
-
-    // Conditions
     "BANE": "BANE",
     "BLESS": "BŁOGOSŁAWIEŃSTWO",
     "CHILL": "CHILL",
@@ -389,8 +379,6 @@ export default {
     "TELEPORT": "TELEPORT",
     "WARD": "WARD",
     "WOUND": "ZRANIENIE",
-
-    // Class-colored Text
     "Augment": "Augment",
     "Colony": "Colony",
     "Command": "Command",

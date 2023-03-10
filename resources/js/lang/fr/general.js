@@ -10,6 +10,8 @@ export default {
     "Add city events": "Ajouter des évènements de ville",
     "Road Event Decks": "Paquet d'évènements de route",
     "Add road events": "Ajouter des évènements de route",
+    "Rift Event Decks": "Rift Event Decks",
+    "Add rift events": "Add rift events",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.",
     "completed scenarios": "scénarios terminés",
     "5 Ancient Technology Global Achievements": "5 Hauts Faits 'Ancienne Technologie'.",
@@ -341,7 +343,8 @@ export default {
     "card_types": {
         "R": "Road Event",
         "C": "City Event",
-        "Q": "Personal Quest"
+        "Q": "Personal Quest",
+        "RIFT": "Rift"
     },
     "Shield": "Bouclier",
     "Heal": "Soin",

@@ -10,6 +10,8 @@ export default {
     "Add city events": "Fügt Stadt-Ereignisse hinzu",
     "Road Event Decks": "Weg-Ereignis Deck",
     "Add road events": "Füge Weg-Ereignisse hinzu",
+    "Rift Event Decks": "Rift Event Decks",
+    "Add rift events": "Add rift events",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.",
     "completed scenarios": "abgeschlossene Szenarien",
     "5 Ancient Technology Global Achievements": "5x “Alte Technologie” globale Errungenschaft erhalten",
@@ -226,7 +228,7 @@ export default {
     "An email has been sent to your inbox.": "Eine Email wurde an Deine Adresse geschickt",
     "Selected Campaign": "Ausgewählte Kampagne",
     "Selected Game": "Ausgewähltes Spiel",
-    "PRO": "PRO",
+    "Pro": "Pro",
     "Storyline": "Handlungsstrang",
     "Map": "Karte",
     "Scenario list": "Liste der Szenarien",
@@ -341,7 +343,8 @@ export default {
     "card_types": {
         "R": "Weg-Ereignis",
         "C": "Stadt-Ereignis",
-        "Q": "Persönliche Quest"
+        "Q": "Persönliche Quest",
+        "RIFT": "Rift"
     },
     "Shield": "Schild",
     "Heal": "Heilung",

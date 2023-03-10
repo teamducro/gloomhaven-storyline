@@ -788,7 +788,7 @@ export default {
     "gh-155": {
         "name": "Zbroja Rozbicia Klątw",
         "source": "Nagroda w {SCENARIO 108}",
-        "desc": "Posiadasz teraz odporność na {CURSE}, nawet jeśli przedmiot ten zostanie wykorzystany. W trzech następnych przypadkach otrzymania obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1. Dodaj 3 {-1} do swojej talii modyfikatorów ataku.",
+        "desc": "Posiadasz teraz odporność na {CURSE}, nawet jeśli przedmiot ten zostanie wykorzystany. W trzech następnych przypadkach otrzymania obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1. Dodaj 3 {-1} do swojej talii modyfikatorów ataku."
     },
     "gh-156": {
         "name": "Półtorak Żywiołów",
@@ -798,32 +798,32 @@ export default {
     "gh-157": {
         "name": "Starożytny Łuk",
         "source": "{SCENARIO 107} (Skarb #78)\nSection 32 „Collapsed Atrium” in book",
-        "desc": "Podczas twojego ataku dystansowego, dodaj +2 do {ATTACK}, {CURSE} oraz {WOUND} dla pojedynczego ataku.",
+        "desc": "Podczas twojego ataku dystansowego, dodaj +2 do {ATTACK}, {CURSE} oraz {WOUND} dla pojedynczego ataku."
     },
     "gh-158": {
         "name": "Nagolenniki Odnowienia",
         "source": "{SCENARIO 111} (Skarb #82)",
-        "desc": "Podczas poruszania się dodaj +2 do {MOVE} i zyskaj {REGENERATE}.",
+        "desc": "Podczas poruszania się dodaj +2 do {MOVE} i zyskaj {REGENERATE}."
     },
     "gh-159": {
         "name": "Zwój Pośpiechu",
         "source": "{SCENARIO 103} (Skarb #81)",
-        "desc": "Podczas poruszania się jednego z sojuszników dodaj +2 do tego {MOVE}.",
+        "desc": "Podczas poruszania się jednego z sojuszników dodaj +2 do tego {MOVE}."
     },
     "gh-160": {
         "name": "Sztylet Rzezimieszka",
         "source": "Unknown",
-        "desc": "Kiedy zabijesz wroga podczas twojej tury, zyskujesz jeden żeton pieniędzy.",
+        "desc": "Kiedy zabijesz wroga podczas twojej tury, zyskujesz jeden żeton pieniędzy."
     },
     "gh-161": {
         "name": "Miotany Topór",
         "source": "Nagroda w {SCENARIO 108}",
-        "desc": "Podczas twojej akcji ataku wręcz w pojedynczy cel dodaj {RANGE} 3 dla tego ataku.",
+        "desc": "Podczas twojej akcji ataku wręcz w pojedynczy cel dodaj {RANGE} 3 dla tego ataku."
     },
     "gh-162": {
         "name": "Urządzenie Szczelinowe",
         "source": "Nagroda w {SCENARIO 112}\nSection 62 „Mechanical Splendor” in book.",
-        "desc": "Podczas twojej tury możesz się {TELEPORT} na dowolne, niezajęte pole w odległości 4 pól od ciebie.",
+        "desc": "Podczas twojej tury możesz się {TELEPORT} na dowolne, niezajęte pole w odległości 4 pól od ciebie."
     },
     "gh-163": {
         "name": "Kryształowa Tiara",
@@ -848,7 +848,7 @@ export default {
     "jotl-3": {
         "name": "Chain Armor",
         "source": "Reward from {SCENARIO 2}",
-        "desc": "During your turn gain {SHIELD} 1 for the rest of the round",
+        "desc": "During your turn gain {SHIELD} 1 for the rest of the round"
     },
     "jotl-4": {
         "name": "Studded Leather",
@@ -874,7 +874,7 @@ export default {
     "jotl-8": {
         "name": "Throwing Hammer",
         "source": "Reward from {SCENARIO 2}",
-        "desc": "During your ranged attack, add {STUN} to a single attack",
+        "desc": "During your ranged attack, add {STUN} to a single attack"
     },
     "jotl-9": {
         "name": "Poison Dagger",
@@ -884,7 +884,7 @@ export default {
     "jotl-10": {
         "name": "Iron Spear",
         "source": "Reward from {SCENARIO 2}",
-        "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes",
+        "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes"
     },
     "jotl-11": {
         "name": "Healing Potion",
