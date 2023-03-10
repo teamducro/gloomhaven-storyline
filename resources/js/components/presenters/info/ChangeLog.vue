@@ -142,6 +142,7 @@ export default {
                 {version: '3.12', description: 'A read only sharing option for shared campaigns', date: dayjs('2023-01-09')},
                 {version: '3.13', description: 'Added attack modifier cards to character sheets', date: dayjs('2023-01-21')},
                 {version: '3.14', description: 'Change font', date: dayjs('2023-02-19')},
+                {version: '3.15', description: 'Added missing Rift event cards to Forgotten Circles', date: dayjs('2023-03-10')},
             ].reverse()
         }
     },
