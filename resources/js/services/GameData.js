@@ -166,6 +166,13 @@ export default class GameData {
                 width: 2606,
                 height: 2155
             };
+        } else if (game == 'fh') {
+            return {
+                stickerScale: 0.7,
+                yOffset: 0,
+                width: 2500,
+                height: 3159
+            };
         }
 
         return {
