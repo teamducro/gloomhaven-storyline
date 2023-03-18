@@ -52,6 +52,10 @@ export default class GameData {
         return this._scenarioData(game).chapters
     }
 
+    overlays(game) {
+        return this._scenarioData(game).overlays || []
+    }
+
     characters(game) {
         switch (game) {
             default:

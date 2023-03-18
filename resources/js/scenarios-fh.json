@@ -2430,5 +2430,52 @@
         }
     ],
     "regions": [
+    ],
+    "overlays": [
+        {
+            "id": "W",
+            "coordinates": {
+                "name": "M7",
+                "x": 29.78,
+                "y": 28.38
+            },
+            "linked_from": [
+                2,
+                3
+            ]
+        },
+        {
+            "id": "X",
+            "coordinates": {
+                "name": "C7",
+                "x": 74.62,
+                "y": 25.74
+            },
+            "linked_from": [
+                8
+            ]
+        },
+        {
+            "id": "Y",
+            "coordinates": {
+                "name": "C10",
+                "x": 66.06,
+                "y": 36.42
+            },
+            "linked_from": [
+                16
+            ]
+        },
+        {
+            "id": "Z",
+            "coordinates": {
+                "name": "F2",
+                "x": 55.47,
+                "y": 9.79
+            },
+            "linked_from": [
+                42
+            ]
+        }
     ]
 }
