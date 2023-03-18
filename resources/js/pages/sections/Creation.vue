@@ -10,7 +10,7 @@
 
             <div class="flex flex-wrap">
                 <div class="w-full sm:w-5/6 md:w-1/2 md:p-6">
-                    <h2 class="mb-4 text-2xl text-gray-800">Why dit I create this app?</h2>
+                    <h2 class="mb-4 text-2xl text-gray-800">Why did I create this app?</h2>
                     <p class="text-gray-500 mb-2">
                         Remembering what happened in the scenario's leading up to the unlocked scenarios can be a
                         challenge. Gloomhaven Storyline helps you to stay immersed in the story instead of randomly
@@ -20,7 +20,7 @@
                         There are great scenario charts made by the community, but it is a bit of a spoiler to see an
                         overview of all the scenarios you are yet to play. Reading through the introductions and
                         conclusions of the scenarios takes up a bit of unnecessary time, also.
-                        The Gloomhaven community comes to the resque with written summaries of the sub-stories for every
+                        The Gloomhaven community comes to the rescue with written summaries of the sub-stories for every
                         scenario. These are displayed on scenarios as a summary of how you got there.
                     </p>
                     <p class="text-gray-500 mb-2">

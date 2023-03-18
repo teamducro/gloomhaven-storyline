@@ -27,7 +27,7 @@
                             View a summary of the storyline for each state of a scenario.
                         </p>
                         <p class="text-gray-500 mb-4">
-                            To prevent spoilers we only include a summery up-to the current scenario.
+                            To prevent spoilers we only include a summary up-to the current scenario.
                             The conclusion of a scenario is added after it has been completed.
                         </p>
                         <p class="mb-4">
