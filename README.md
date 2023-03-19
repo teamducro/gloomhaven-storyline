@@ -9,7 +9,7 @@ https://gloomhaven-storyline.com
 - **Summaries**\
   View a summary of the storyline for each state of a scenario.
 
-  To prevent spoilers we only include a summery up-to the current scenario. The conclusion of a scenario is added after
+  To prevent spoilers we only include a summary up-to the current scenario. The conclusion of a scenario is added after
   it has been completed.
 - **Clear and organized**\
   Use the neat Flowchart overview of your completed and unlocked scenarios to keep track of your progress. The scenarios
