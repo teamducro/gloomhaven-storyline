@@ -67,8 +67,7 @@
                 2
             ],
             "rewards": [
-                "10 experience each",
-                "+1 prosperity"
+                "10 experience each"
             ],
             "monsters": [
                 "giant-viper",
@@ -1603,7 +1602,7 @@
             "chapter_id": 104,
             "treasures": {
                 "44": "“Mana Medicine” (Item 60)",
-                "31": "“Drake's Blood” (Item 14)"
+                "31": "“Drake's Blood” (Item 59)"
             },
             "rewards": [
                 "+1 prosperity",
