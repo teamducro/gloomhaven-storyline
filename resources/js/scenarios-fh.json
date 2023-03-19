@@ -28,6 +28,10 @@
                 "y": 58.14
             },
             "chapter_id": 1,
+            "links_to": [
+                2,
+                3
+            ],
             "linked_from": [
                 0
             ]
