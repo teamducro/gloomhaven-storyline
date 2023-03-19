@@ -30,6 +30,20 @@
                           :alt="$t(achievement.name)"/>
                 </li>
             </ul>
+
+            <webp v-for="overlay in overlays"
+                  :src="'/img/overlays/'+game+'/'+overlay.id+'.png'"
+                  :key="game+'-'+overlay.id"
+                  :id="'o' + overlay.id"
+                  :animate="true"
+                  :alt="$t(overlay.id)"
+                  class="absolute scenario"
+                  :style="{
+                      'left': overlay.coordinates.x + '%',
+                      'top': overlay.coordinates.y + '%',
+                      'transform': 'scale('+scenarioScale+')'
+                  }"/>
+
             <template v-if="scenarios && scenarios.count()">
                 <webp v-for="scenario in scenarios.items"
                       v-if="scenario.isVisible() && (!scenario.root || scenario.id === 1 || (scenario.root && scenario.isComplete())) && scenario.coordinates.x > 0 && scenario.coordinates.y > 0"
@@ -72,6 +86,7 @@ export default {
             mapTouch: null,
             scenarios: null,
             achievements: null,
+            overlays: null,
             scenarioScale: 1,
             gameData: new GameData
         }
@@ -134,6 +149,10 @@ export default {
             this.map.setMinZoom(this.scale());
 
             this.scenarios = app.scenarios;
+
+            this.overlays = this.gameData.overlays(this.game).filter((overlay) => {
+                return this.scenarios.items.some((scenario) => overlay.linked_from.includes(scenario.id) && scenario.isComplete());
+            });
 
             // Show tooltip on hover
             if (this.scenarios) {
