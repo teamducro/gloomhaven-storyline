@@ -19,6 +19,7 @@
             ]
         },
         {
+            "root": true,
             "id": 1,
             "name": "A Town in Flames",
             "game": "fh",
