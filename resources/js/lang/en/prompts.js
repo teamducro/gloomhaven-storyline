@@ -77,4 +77,11 @@ export default {
         "title": "Broken Homes and Lairs",
         "text": "Did you bring death or save lives?"
     },
+    // Frosthaven
+    "algoxAltercation": {
+        "1": "Snowdancer is dead.",
+        "2": "Frozen Fist is dead.",
+        "title": "Algox altercation",
+        "text": "Which side did you choose?"
+    },
 }

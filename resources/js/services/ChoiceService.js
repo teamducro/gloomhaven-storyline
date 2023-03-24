@@ -108,6 +108,26 @@ class ChoiceService {
                     }
                 });
 
+            case 'algoxAltercation':
+                return new PromptConfig(scenario, {
+                    options: 2,
+                    callback: (value) => {
+                        if (value) {
+                            if (value === 1) {
+                                this.scenarioRepository.choose(scenario, '5,7,8');
+                            }
+                            if (value === 2) {
+                                this.scenarioRepository.choose(scenario, '6,7,8');
+                            }
+                        } else {
+                            // reset
+                            this.scenarioRepository.choose(scenario, null);
+                            [5,6,7,8].forEach((id) => this.scenarioRepository.setHidden(id));
+                        }
+
+                        this.setChoice(scenario, value);
+                    }
+                });
             case 'burningMountain':
             case 'searchPiecesOfAnArtifact':
             case 'escapeFromTheHusk':
