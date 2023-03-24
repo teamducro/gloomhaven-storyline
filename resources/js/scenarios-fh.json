@@ -35,6 +35,9 @@
             ],
             "linked_from": [
                 0
+            ],
+            "rewards": [
+                "Gain 2 + X morale, where X is the number of City Guards still on the map."
             ]
         },
         {
@@ -62,6 +65,9 @@
                         3
                     ]
                 }
+            ],
+            "rewards": [
+                "Gain 1 ✔ each."
             ]
         },
         {
@@ -89,6 +95,9 @@
                         2
                     ]
                 }
+            ],
+            "rewards": [
+                "Gain 1 ✔ each."
             ]
         },
         {
@@ -110,10 +119,27 @@
                 7,
                 8
             ],
+            "choices": [
+                5,
+                6,
+                7,
+                8
+            ],
             "linked_from": [
                 2,
                 3
-            ]
+            ],
+            "rewards": [
+                [
+                    "Unlock [#] class box.",
+                    "Gain 1 morale and 1 prosperity."
+                ],
+                [
+                    "Unlock [#] class box.",
+                    "Gain 1 morale and 1 prosperity."
+                ]
+            ],
+            "prompt": "algoxAltercation"
         },
         {
             "id": 5,
@@ -134,6 +160,9 @@
             ],
             "linked_from": [
                 4
+            ],
+            "rewards": [
+                "Gain 2 Lumber collective"
             ]
         },
         {
@@ -152,6 +181,9 @@
             ],
             "linked_from": [
                 4
+            ],
+            "rewards": [
+                "Gain 2 Metal collective"
             ]
         },
         {
@@ -173,6 +205,9 @@
             ],
             "linked_from": [
                 4
+            ],
+            "rewards": [
+                "10 experience each"
             ]
         },
         {
@@ -191,6 +226,9 @@
             ],
             "linked_from": [
                 4
+            ],
+            "rewards": [
+                "Gain 1 collective Lumber and 2 collective Hides"
             ]
         },
         {
@@ -211,6 +249,9 @@
             ],
             "linked_from": [
                 5
+            ],
+            "rewards": [
+                "Gain 2 collective Corpscap"
             ]
         },
         {
@@ -232,6 +273,9 @@
             ],
             "linked_from": [
                 5
+            ],
+            "rewards": [
+                "Gain 1 morale and 1 inspiration."
             ]
         },
         {
@@ -252,6 +296,9 @@
             ],
             "linked_from": [
                 6
+            ],
+            "rewards": [
+                "Gain 1 morale and 1 inspiration."
             ]
         },
         {
@@ -272,6 +319,9 @@
             ],
             "linked_from": [
                 6
+            ],
+            "rewards": [
+                "Gain 15xp each"
             ]
         },
         {
@@ -292,6 +342,9 @@
             ],
             "linked_from": [
                 7
+            ],
+            "rewards":[
+                "Gain “Dead Raven” (item 233)"
             ]
         },
         {
@@ -312,6 +365,9 @@
             ],
             "linked_from": [
                 7
+            ],
+            "rewards": [
+                "Unlock Coral class OR Sea Weed class"
             ]
         },
         {
@@ -333,6 +389,9 @@
             ],
             "linked_from": [
                 8
+            ],
+            "rewards": [
+                "1 lumer, 1 metal, 1 hide"
             ]
         },
         {
@@ -354,6 +413,9 @@
             ],
             "linked_from": [
                 8
+            ],
+            "rewards": [
+                "5xp, 1 inspiration,"
             ]
         },
         {
@@ -371,6 +433,9 @@
             ],
             "linked_from": [
                 9
+            ],
+            "rewards": [
+                "2 checks"
             ]
         },
         {
@@ -389,6 +454,9 @@
             ],
             "linked_from": [
                 10
+            ],
+            "rewards": [
+                "1 morale, random item blueprint"
             ]
         },
         {
@@ -407,6 +475,9 @@
             ],
             "linked_from": [
                 11
+            ],
+            "rewards": [
+                "1 morale, random item blueprint"
             ]
         },
         {
@@ -424,6 +495,9 @@
             ],
             "linked_from": [
                 12
+            ],
+            "rewards": [
+                "15 gold each"
             ]
         },
         {
@@ -438,6 +512,9 @@
             "chapter_id": 3,
             "linked_from": [
                 13
+            ],
+            "rewards": [
+                "2 prosperity"
             ]
         },
         {
@@ -455,6 +532,9 @@
             ],
             "linked_from": [
                 14
+            ],
+            "rewards": [
+                "lose n lumber, 15xp"
             ]
         },
         {
@@ -470,6 +550,9 @@
             "linked_from": [
                 23,
                 24
+            ],
+            "rewards": [
+                "random item blueprint"
             ]
         },
         {
@@ -487,6 +570,9 @@
             ],
             "linked_from": [
                 15
+            ],
+            "rewards": [
+                "random item blueprint"
             ]
         },
         {
@@ -514,6 +600,9 @@
                         26
                     ]
                 }
+            ],
+            "rewards": [
+                "2 lumber, 2 metal"
             ]
         },
         {
@@ -542,6 +631,9 @@
                         25
                     ]
                 }
+            ],
+            "rewards": [
+                "10xp,"
             ]
         },
         {
@@ -560,6 +652,9 @@
             ],
             "linked_from": [
                 17
+            ],
+            "rewards": [
+                "10xp, check, Coral Shard sticker"
             ]
         },
         {
@@ -593,6 +688,9 @@
                         30
                     ]
                 }
+            ],
+            "rewards": [
+                "lose morale,"
             ]
         },
         {
@@ -620,6 +718,9 @@
                         28
                     ]
                 }
+            ],
+            "rewards": [
+                "3 morale, “Destroyer of Icespeakers” sticker"
             ]
         },
         {
@@ -647,6 +748,9 @@
                         28
                     ]
                 }
+            ],
+            "rewards": [
+                "3 morale, “Destroyer of Snowspeakers” sticker"
             ]
         },
         {
@@ -668,6 +772,9 @@
             ],
             "linked_from": [
                 20
+            ],
+            "rewards": [
+                "5xp, 10 gold each"
             ]
         },
         {
@@ -685,6 +792,10 @@
             ],
             "linked_from": [
                 13
+            ],
+            "rewards": [
+                "Gain “Feathered CLoak” (item 69)",
+                "“Into the Forest” sticker"
             ]
         },
         {
@@ -702,6 +813,10 @@
             ],
             "linked_from": [
                 22
+            ],
+            "rewards": [
+                "5xp per unrevealed dowsing rune",
+                "Gain “Ember Energy Source” (item 244)"
             ]
         },
         {
@@ -717,6 +832,9 @@
             "linked_from": [
                 23,
                 24
+            ],
+            "rewards": [
+                "“Coral Shard” Sticker"
             ]
         },
         {
@@ -737,6 +855,9 @@
             ],
             "linked_from": [
                 25
+            ],
+            "rewards": [
+                "2 lumber, 2 metal, 2 hide"
             ]
         },
         {
@@ -761,6 +882,9 @@
                         37
                     ]
                 }
+            ],
+            "rewards": [
+                "3 lumber, 3 metal"
             ]
         },
         {
@@ -788,6 +912,9 @@
                         36
                     ]
                 }
+            ],
+            "rewards": [
+                "3 lumber, 3 metal"
             ]
         },
         {
@@ -809,6 +936,9 @@
             ],
             "linked_from": [
                 28
+            ],
+            "rewards": [
+                "10xp, check, 1 inspiration"
             ]
         },
         {
@@ -829,6 +959,9 @@
             ],
             "linked_from": [
                 29
+            ],
+            "rewards": [
+                "lose 1 inspiration, +2 loot cards for each charactor"
             ]
         },
         {
@@ -849,6 +982,9 @@
             ],
             "linked_from": [
                 30
+            ],
+            "rewards": [
+                "lose 1 inspiration, +2 loot cards for each charactor"
             ]
         },
         {
@@ -863,6 +999,9 @@
             "chapter_id": 4,
             "linked_from": [
                 31
+            ],
+            "rewards": [
+                "15 gold each, 2 Axenuts, “Coral Shard” sticker"
             ]
         },
         {
@@ -881,6 +1020,9 @@
             ],
             "linked_from": [
                 33
+            ],
+            "rewards": [
+                "2 checks, “Coral shard” sticker"
             ]
         },
         {
@@ -898,6 +1040,9 @@
             ],
             "linked_from": [
                 35
+            ],
+            "rewards": [
+                "10xp"
             ]
         },
         {
@@ -917,6 +1062,10 @@
             "linked_from": [
                 36,
                 37
+            ],
+            "rewards": [
+                "5 gold",
+                "Gain “Energizing Baton” (item 73)"
             ]
         },
         {
@@ -937,6 +1086,9 @@
             ],
             "linked_from": [
                 38
+            ],
+            "rewards": [
+                "1 morale, check"
             ]
         },
         {
@@ -954,6 +1106,9 @@
             ],
             "linked_from": [
                 38
+            ],
+            "rewards": [
+                "1 morale, 10xp,"
             ]
         },
         {
@@ -974,6 +1129,9 @@
             ],
             "linked_from": [
                 39
+            ],
+            "rewards": [
+                "10 gold, 2 lumber"
             ]
         },
         {
@@ -991,6 +1149,9 @@
             ],
             "linked_from": [
                 40
+            ],
+            "rewards": [
+                "10xp, 2 metal"
             ]
         },
         {
@@ -1011,6 +1172,9 @@
             ],
             "linked_from": [
                 42
+            ],
+            "rewards": [
+                "5xp, 1 inspiration"
             ]
         },
         {
@@ -1028,6 +1192,9 @@
             ],
             "linked_from": [
                 42
+            ],
+            "rewards": [
+                "lose 2 inspiration, gain 4 lumber+4 metal"
             ]
         },
         {
@@ -1049,6 +1216,10 @@
             ],
             "linked_from": [
                 43
+            ],
+            "rewards": [
+                "10xp",
+                "Gain “Shock Grenades blueprint” (item 74)"
             ]
         },
         {
@@ -1072,6 +1243,9 @@
             "linked_from": [
                 45,
                 46
+            ],
+            "rewards": [
+                "1 morale, 1 inspiration"
             ]
         },
         {
@@ -1089,6 +1263,9 @@
             ],
             "linked_from": [
                 49
+            ],
+            "rewards": [
+                "2 checks, Coral Shard sticker"
             ]
         },
         {
@@ -1110,6 +1287,9 @@
             ],
             "linked_from": [
                 50
+            ],
+            "rewards": [
+                "2 checks, Coral Shard sticker"
             ]
         },
         {
@@ -1127,6 +1307,9 @@
             ],
             "linked_from": [
                 52
+            ],
+            "rewards": [
+                "2 morale, 2 prosperity, unlock fist or snowflake, “friend of frostspeakers” sticker, +50 card to town guard deck"
             ]
         },
         {
@@ -1144,6 +1327,9 @@
             ],
             "linked_from": [
                 47
+            ],
+            "rewards": [
+                "1 morale, 1 inspiration, unlock fist class, “Friend of Icespeakers” sticker, +50 card to town guard deck"
             ]
         },
         {
@@ -1161,6 +1347,9 @@
             ],
             "linked_from": [
                 48
+            ],
+            "rewards": [
+                "1 morale, 1 inspiration, unlock snowflake class, “Friend of Icespeakers” sticker, +50 card to town guard deck"
             ]
         },
         {
@@ -1186,6 +1375,9 @@
                         59
                     ]
                 }
+            ],
+            "rewards": [
+                "1 morale, “Key Card” (item 246), 3 lumber, 3 metal, 3 hides, prism class, “unfettered deacivation” sticker, +50 card to town guard deck"
             ]
         },
         {
@@ -1211,6 +1403,9 @@
                         58
                     ]
                 }
+            ],
+            "rewards": [
+                "2 morale, 2 prosperity, gain “Key Card” (item 246), prism class, “unfettered allies” sticker, +50 card to town guard deck"
             ]
         },
         {
@@ -1226,6 +1421,9 @@
             "linked_from": [
                 53,
                 54
+            ],
+            "rewards": [
+                "2 morale, 1 prosperity, 30xp, Unlock Coral class OR Sea Weed class, Crown reunited sticker, +50 card to town guard deck"
             ]
         },
         {
@@ -1243,6 +1441,9 @@
             ],
             "links_to": [
                 62
+            ],
+            "rewards": [
+                "unlock Shards class"
             ]
         },
         {
@@ -1263,6 +1464,9 @@
             ],
             "linked_from": [
                 61
+            ],
+            "rewards": [
+                "1 prosperity"
             ]
         },
         {
@@ -1283,6 +1487,9 @@
             ],
             "linked_from": [
                 62
+            ],
+            "rewards": [
+                "2 prosperity,"
             ]
         },
         {
@@ -1297,6 +1504,9 @@
             "chapter_id": 8,
             "linked_from": [
                 63
+            ],
+            "rewards": [
+                "3 morale, 3 prosperity, 3 checks each"
             ]
         },
         {
@@ -1314,6 +1524,9 @@
             ],
             "links_to": [
                 66
+            ],
+            "rewards": [
+                "2 lumber, 2 metal"
             ]
         },
         {
@@ -1331,6 +1544,9 @@
             ],
             "linked_from": [
                 66
+            ],
+            "rewards": [
+                "“Elemental Stone” (item 212)"
             ]
         },
         {
@@ -1348,6 +1564,9 @@
             ],
             "linked_from": [
                 66
+            ],
+            "rewards": [
+                "1 morale, 1 prosperity"
             ]
         },
         {
@@ -1365,6 +1584,9 @@
             ],
             "linked_from": [
                 67
+            ],
+            "rewards": [
+                "(3 weeks) 50 gold each for enhancements, if building 44 is built"
             ]
         },
         {
@@ -1379,6 +1601,9 @@
             "chapter_id": 7,
             "links_to": [
                 70
+            ],
+            "rewards": [
+                "Arrowvine, Axenut, Flamenut"
             ]
         },
         {
@@ -1396,6 +1621,9 @@
             ],
             "linked_from": [
                 69
+            ],
+            "rewards": [
+                "1 Prosperity"
             ]
         },
         {
@@ -1414,6 +1642,9 @@
             ],
             "links_to": [
                 72
+            ],
+            "rewards": [
+                "damage even building between 71-89 & 10xp"
             ]
         },
         {
@@ -1434,6 +1665,9 @@
             ],
             "linked_from": [
                 71
+            ],
+            "rewards": [
+                "check"
             ]
         },
         {
@@ -1454,6 +1688,9 @@
             ],
             "linked_from": [
                 72
+            ],
+            "rewards": [
+                "3 wood + optional friend of the fish king sticker"
             ]
         },
         {
@@ -1472,6 +1709,9 @@
             ],
             "linked_from": [
                 73
+            ],
+            "rewards": [
+                "random item blueprint"
             ]
         },
         {
@@ -1494,6 +1734,9 @@
             ],
             "linked_from": [
                 74
+            ],
+            "rewards": [
+                "10 gold,"
             ]
         },
         {
@@ -1515,6 +1758,9 @@
             ],
             "linked_from": [
                 74
+            ],
+            "rewards": [
+                "“Wave Blade” (item 201)"
             ]
         },
         {
@@ -1530,6 +1776,9 @@
             "linked_from": [
                 75,
                 76
+            ],
+            "rewards": [
+                "“Wave Blade” (item 201)"
             ]
         },
         {
@@ -1545,6 +1794,9 @@
             "treasures": [
                 58,
                 13
+            ],
+            "rewards": [
+                "10xp"
             ]
         },
         {
@@ -1562,6 +1814,9 @@
             ],
             "links_to": [
                 80
+            ],
+            "rewards": [
+                "3 morale"
             ]
         },
         {
@@ -1580,6 +1835,9 @@
             ],
             "linked_from": [
                 79
+            ],
+            "rewards": [
+                "2 lumber, 2 metal, 2 hides, 2 morale"
             ]
         },
         {
@@ -1594,6 +1852,9 @@
             "chapter_id": 10,
             "treasures": [
                 19
+            ],
+            "rewards": [
+                "1 prosperity, “Aesther Robe blueprint” (item 70)"
             ]
         },
         {
@@ -1605,7 +1866,10 @@
                 "x": 20.7,
                 "y": 34.03
             },
-            "chapter_id": 10
+            "chapter_id": 10,
+            "rewards": [
+                "2 prosperity+3 forgotten cirlces items (153,159,161) OR ???"
+            ]
         },
         {
             "id": 83,
@@ -1616,7 +1880,10 @@
                 "x": 67.76,
                 "y": 20.76
             },
-            "chapter_id": 11
+            "chapter_id": 11,
+            "rewards": [
+                "“Giant Piranha Pig Spine” (item 202)"
+            ]
         },
         {
             "id": 84,
@@ -1627,7 +1894,10 @@
                 "x": 11.5,
                 "y": 24.72
             },
-            "chapter_id": 11
+            "chapter_id": 11,
+            "rewards": [
+                "item 234 (ooze vial), brummix sticker"
+            ]
         },
         {
             "id": 85,
@@ -1638,7 +1908,10 @@
                 "x": 24.14,
                 "y": 25.88
             },
-            "chapter_id": 11
+            "chapter_id": 11,
+            "rewards": [
+                "15xp, check"
+            ]
         },
         {
             "id": 86,
@@ -1652,6 +1925,9 @@
             "chapter_id": 11,
             "treasures": [
                 17
+            ],
+            "rewards": [
+                "2 morale"
             ]
         },
         {
@@ -1670,6 +1946,9 @@
             ],
             "links_to": [
                 88
+            ],
+            "rewards": [
+                "1-2 inspiration,"
             ]
         },
         {
@@ -1687,6 +1966,9 @@
             ],
             "linked_from": [
                 87
+            ],
+            "rewards": [
+                "2 morale"
             ]
         },
         {
@@ -1701,6 +1983,9 @@
             "chapter_id": 11,
             "treasures": [
                 42
+            ],
+            "rewards": [
+                "2 Rockroot, 2 lumber"
             ]
         },
         {
@@ -1715,6 +2000,9 @@
             "chapter_id": 11,
             "links_to": [
                 91
+            ],
+            "rewards": [
+                "check, 10 gold per numbered token looted, lose 10 gold or 5 gold + muddle & curse"
             ]
         },
         {
@@ -1729,6 +2017,9 @@
             "chapter_id": 11,
             "linked_from": [
                 90
+            ],
+            "rewards": [
+                "2 lumber, 1 morale"
             ]
         },
         {
@@ -1740,7 +2031,10 @@
                 "x": 50.92,
                 "y": 19.38
             },
-            "chapter_id": 11
+            "chapter_id": 11,
+            "rewards": [
+                "lose 2.5 loot per charactor, HE-RO-IC-S pet after 1 week if building 88 is built"
+            ]
         },
         {
             "id": 93,
@@ -1751,7 +2045,10 @@
                 "x": 55.47,
                 "y": 32.17
             },
-            "chapter_id": 11
+            "chapter_id": 11,
+            "rewards": [
+                "“Small Rat” (Item 235) OR “Roasted Fowl” (item 79)"
+            ]
         },
         {
             "id": 94,
@@ -1769,6 +2066,9 @@
             ],
             "links_to": [
                 95
+            ],
+            "rewards": [
+                "10xp"
             ]
         },
         {
@@ -1783,6 +2083,9 @@
             "chapter_id": 11,
             "linked_from": [
                 94
+            ],
+            "rewards": [
+                "1 morale, 10 gold"
             ]
         },
         {
@@ -1800,6 +2103,9 @@
             ],
             "links_to": [
                 97
+            ],
+            "rewards": [
+                "1 morale, 5xp"
             ]
         },
         {
@@ -1817,6 +2123,9 @@
             ],
             "linked_from": [
                 96
+            ],
+            "rewards": [
+                "5 metal,"
             ]
         },
         {
@@ -1835,6 +2144,9 @@
             ],
             "linked_from": [
                 97
+            ],
+            "rewards": [
+                "1 prosperity"
             ]
         },
         {
@@ -1849,6 +2161,9 @@
             "chapter_id": 11,
             "links_to": [
                 100
+            ],
+            "rewards": [
+                "10 gold"
             ]
         },
         {
@@ -1869,6 +2184,9 @@
             ],
             "linked_from": [
                 99
+            ],
+            "rewards": [
+                "all loot is $, 5 gold, 10xp"
             ]
         },
         {
@@ -1886,6 +2204,9 @@
             ],
             "linked_from": [
                 100
+            ],
+            "rewards": [
+                "check, 10xp,"
             ]
         },
         {
@@ -1903,6 +2224,9 @@
             ],
             "linked_from": [
                 101
+            ],
+            "rewards": [
+                "all loot is gold, 20xp,"
             ]
         },
         {
@@ -1917,6 +2241,9 @@
             "chapter_id": 11,
             "linked_from": [
                 102
+            ],
+            "rewards": [
+                "loot is $, check, 30xp,10 gold"
             ]
         },
         {
@@ -1931,6 +2258,9 @@
             "chapter_id": 9,
             "links_to": [
                 105
+            ],
+            "rewards": [
+                "2 Snowthistle"
             ]
         },
         {
@@ -1948,6 +2278,9 @@
             ],
             "linked_from": [
                 104
+            ],
+            "rewards": [
+                "2 Flamefruit"
             ]
         },
         {
@@ -1962,6 +2295,9 @@
             "chapter_id": 9,
             "linked_from": [
                 105
+            ],
+            "rewards": [
+                "“Key of Seasons” (item 213)"
             ]
         },
         {
@@ -1973,7 +2309,10 @@
                 "x": 45.98,
                 "y": 39.6
             },
-            "chapter_id": 9
+            "chapter_id": 9,
+            "rewards": [
+                "gain 1 material resource per completed episode OR gain 5 + “Cup of Ventillion” (item 214)"
+            ]
         },
         {
             "id": 108,
@@ -1988,6 +2327,9 @@
             "treasures": [
                 3,
                 68
+            ],
+            "rewards": [
+                "2 morale, 2 inspiration"
             ]
         },
         {
@@ -2002,6 +2344,9 @@
             "chapter_id": 9,
             "treasures": [
                 80
+            ],
+            "rewards": [
+                "5 metal"
             ]
         },
         {
@@ -2016,6 +2361,9 @@
             "chapter_id": 9,
             "treasures": [
                 75
+            ],
+            "rewards": [
+                "“Rose Guantlet” blueprint (item 75)"
             ]
         },
         {
@@ -2027,7 +2375,10 @@
                 "x": 24.92,
                 "y": 11.38
             },
-            "chapter_id": 9
+            "chapter_id": 9,
+            "rewards": [
+                "“Cracked Mirror” (item 236)"
+            ]
         },
         {
             "id": 112,
@@ -2038,7 +2389,10 @@
                 "x": 66.0,
                 "y": 57.9
             },
-            "chapter_id": 9
+            "chapter_id": 9,
+            "rewards": [
+                "15xp"
+            ]
         },
         {
             "id": 113,
@@ -2049,7 +2403,10 @@
                 "x": 58.8,
                 "y": 38.5
             },
-            "chapter_id": 10
+            "chapter_id": 10,
+            "rewards": [
+                "4 herb resources"
+            ]
         },
         {
             "id": 114,
@@ -2063,6 +2420,9 @@
             "chapter_id": 10,
             "links_to": [
                 115
+            ],
+            "rewards": [
+                "5 hides"
             ]
         },
         {
@@ -2080,6 +2440,9 @@
             ],
             "linked_from": [
                 114
+            ],
+            "rewards": [
+                "15xp"
             ]
         },
         {
@@ -2094,6 +2457,9 @@
             "chapter_id": 10,
             "linked_from": [
                 115
+            ],
+            "rewards": [
+                "based on success level: 1 morale, 1 lumber, 1 metal, 1 hide, 2 material resources each, 10xp, random item blueprint, 1 prosperity, 2 morale"
             ]
         },
         {
@@ -2105,7 +2471,10 @@
                 "x": 64.53,
                 "y": 30.4
             },
-            "chapter_id": 10
+            "chapter_id": 10,
+            "rewards": [
+                "4 hide, 10 gold each"
+            ]
         },
         {
             "id": 118,
@@ -2116,7 +2485,10 @@
                 "x": 63.45,
                 "y": 22.83
             },
-            "chapter_id": 10
+            "chapter_id": 10,
+            "rewards": [
+                "“Amulet of Eternal Life” (Item 66), loot cards for each token"
+            ]
         },
         {
             "id": 119,
@@ -2127,7 +2499,10 @@
                 "x": 15.84,
                 "y": 10.88
             },
-            "chapter_id": 10
+            "chapter_id": 10,
+            "rewards": [
+                "trade in “dust” for “Scepter of Control” (item 203) &/or a material resource &/or herb resource"
+            ]
         },
         {
             "id": 120,
@@ -2144,6 +2519,9 @@
             ],
             "links_to": [
                 121
+            ],
+            "rewards": [
+                "1 morale, 2 lumber"
             ]
         },
         {
@@ -2158,6 +2536,9 @@
             "chapter_id": 10,
             "linked_from": [
                 120
+            ],
+            "rewards": [
+                "2 morale OR item 193 OR 3 inspiration"
             ]
         },
         {
@@ -2172,6 +2553,9 @@
             "chapter_id": 10,
             "treasures": [
                 31
+            ],
+            "rewards": [
+                "10 gold each OR??? 15xp, check mark"
             ]
         },
         {
@@ -2186,6 +2570,9 @@
             "chapter_id": 10,
             "treasures": [
                 52
+            ],
+            "rewards": [
+                "1 morale, 1 inspiration"
             ]
         },
         {
@@ -2200,6 +2587,9 @@
             "chapter_id": 10,
             "links_to": [
                 125
+            ],
+            "rewards": [
+                "15xp,"
             ]
         },
         {
@@ -2217,6 +2607,9 @@
             ],
             "linked_from": [
                 124
+            ],
+            "rewards": [
+                "“Temporal Amulet” (item 194)"
             ]
         },
         {
@@ -2228,7 +2621,10 @@
                 "x": 80.3,
                 "y": 59.18
             },
-            "chapter_id": 10
+            "chapter_id": 10,
+            "rewards": [
+                "10 gold"
+            ]
         },
         {
             "id": 127,
@@ -2242,6 +2638,9 @@
             "chapter_id": 10,
             "treasures": [
                 30
+            ],
+            "rewards": [
+                "based on # of crates looted: 10 gold, 2 lumber, “Tri-Corner Hat” (item 195), 1 prosperity"
             ]
         },
         {
@@ -2259,6 +2658,9 @@
             ],
             "links_to": [
                 129
+            ],
+            "rewards": [
+                "1 morale OR 2 morale OR 3 morale + “Befuddling Mug” (item 215)"
             ]
         },
         {
@@ -2279,6 +2681,9 @@
             ],
             "linked_from": [
                 128
+            ],
+            "rewards": [
+                "check,"
             ]
         },
         {
@@ -2296,6 +2701,9 @@
             ],
             "linked_from": [
                 129
+            ],
+            "rewards": [
+                "lose 3 morale, gain 1 prosperity, 10 gold OR 5 collective gold per token carried"
             ]
         },
         {
@@ -2307,7 +2715,10 @@
                 "x": 44.43,
                 "y": 13.81
             },
-            "chapter_id": 10
+            "chapter_id": 10,
+            "rewards": [
+                "10xp, item 237"
+            ]
         },
         {
             "id": 132,
@@ -2321,6 +2732,9 @@
             "chapter_id": 11,
             "links_to": [
                 133
+            ],
+            "rewards": [
+                "1 inspiration"
             ]
         },
         {
@@ -2338,6 +2752,9 @@
             ],
             "linked_from": [
                 132
+            ],
+            "rewards": [
+                "“Cracked Idol” (item 238)"
             ]
         },
         {
@@ -2349,7 +2766,10 @@
                 "x": 12.03,
                 "y": 10.6
             },
-            "chapter_id": 10
+            "chapter_id": 10,
+            "rewards": [
+                "“Tome of Conflict” (item 219)"
+            ]
         },
         {
             "id": 135,
@@ -2360,7 +2780,10 @@
                 "x": 24.23,
                 "y": 21.55
             },
-            "chapter_id": 10
+            "chapter_id": 10,
+            "rewards": [
+                "2 morale, 2 prosperity, 1 inspiration, “Belara's quill” (tem 220)"
+            ]
         },
         {
             "id": 136,
@@ -2374,6 +2797,9 @@
             "chapter_id": 10,
             "treasures": [
                 83
+            ],
+            "rewards": [
+                "20 gold apiece, “Ancient” Coin (item 245)"
             ]
         },
         {
@@ -2385,7 +2811,10 @@
                 "x": 71.86,
                 "y": 19.58
             },
-            "chapter_id": 10
+            "chapter_id": 10,
+            "rewards": [
+                "2 prosperity, 3 morale, 30 gold each, upgrade a money loot with a +1"
+            ]
         }
     ],
     "chapters": [
