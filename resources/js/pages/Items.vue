@@ -249,7 +249,13 @@ export default {
                 const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
                 otherGames.forEach(game => {
                     if (game !== this.currentGame) {
-                        items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                        if (game === 'gh' && this.currentGame !== 'jotl') {
+                            const ghItems = this.calculateItemsGh([], this.sheet.prosperityIndex);
+                            items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
+                        } else {
+                            // Add all items for games without prosperity.
+                            items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                        }
                     }
                 });
             }
