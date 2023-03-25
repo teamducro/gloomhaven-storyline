@@ -2,2270 +2,2927 @@
     "scenarios": [
         {
             "root": true,
-            "id": 1,
-            "game": "cs",
-            "name": "The Dark Lake",
-            "coordinates": {},
-            "pages": [
-                "cs/1/13",
-                "cs/2/2"
+            "id": 0,
+            "name": "Howling in the Snow",
+            "game": "fh",
+            "coordinates": {
+                "name": "N6",
+                "x": 30.55,
+                "y": 26.75
+            },
+            "chapter_id": 1,
+            "treasures": [
+                47
             ],
+            "links_to": [
+                1
+            ]
+        },
+        {
+            "root": true,
+            "id": 1,
+            "name": "A Town in Flames",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 36.6,
+                "y": 58.14
+            },
             "chapter_id": 1,
             "links_to": [
-                2
+                2,
+                3
             ],
-            "treasures": [
-                11
+            "linked_from": [
+                0
             ],
-            "monsters": [
-                "spitting-drake",
-                "vermling-scout",
-                "water-spirit"
+            "rewards": [
+                "Gain 2 + X morale, where X is the number of City Guards still on the map."
             ]
         },
         {
             "id": 2,
-            "game": "cs",
-            "name": "Underground Channels",
-            "coordinates": {},
-            "pages": [
-                "cs/1/14",
-                "cs/2/3"
-            ],
+            "name": "Algox Scouting",
+            "game": "fh",
+            "coordinates": {
+                "name": "K8",
+                "x": 41.52,
+                "y": 33.15
+            },
             "chapter_id": 1,
+            "treasures": [
+                32
+            ],
             "links_to": [
-                3
+                4
             ],
             "linked_from": [
                 1
             ],
-            "treasures": [
-                24
+            "blocks_on": [
+                {
+                    "complete": [
+                        3
+                    ]
+                }
             ],
-            "monsters": [
-                "deep-terror",
-                "inox-archer",
-                "inox-guard",
-                "water-spirit"
+            "rewards": [
+                "Gain 1 ✔ each"
             ]
         },
         {
             "id": 3,
-            "game": "cs",
-            "name": "Flooded Cavern",
-            "coordinates": {},
-            "pages": [
-                "cs/1/15",
-                "cs/2/4"
-            ],
+            "name": "Algox Offensive",
+            "game": "fh",
+            "coordinates": {
+                "name": "L7",
+                "x": 40.36,
+                "y": 30.51
+            },
             "chapter_id": 1,
+            "treasures": [
+                18
+            ],
             "links_to": [
-                4,
-                7
+                4
             ],
             "linked_from": [
-                2
+                1
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        2
+                    ]
+                }
             ],
             "rewards": [
-                "10 experience each",
-                "+1 prosperity"
-            ],
-            "monsters": [
-                "giant-viper",
-                "lurker",
-                "hydra-spirit"
+                "Gain 1 ✔ each"
             ]
         },
         {
             "id": 4,
-            "game": "cs",
-            "name": "Infected Warriors",
-            "coordinates": {},
-            "pages": [
-                "cs/1/16",
-                "cs/2/5",
-                "cs/2/6"
+            "name": "Heart of Ice",
+            "game": "fh",
+            "coordinates": {
+                "name": "M8",
+                "x": 35.05,
+                "y": 33.34
+            },
+            "chapter_id": 1,
+            "treasures": [
+                70
             ],
-            "chapter_id": 2,
             "links_to": [
                 5,
-                6
+                6,
+                7,
+                8
+            ],
+            "choices": [
+                5,
+                6,
+                7,
+                8
             ],
             "linked_from": [
+                2,
                 3
             ],
-            "treasures": [
-                18
-            ],
             "rewards": [
-                "Each character gains one random “Orb” item (Item 1-10)"
+                [
+                    "Unlock [#] class box.",
+                    "Gain 1 morale",
+                    "Gain 1 prosperity"
+                ],
+                [
+                    "Unlock [#] class box.",
+                    "Gain 1 morale",
+                    "Gain 1 prosperity"
+                ]
             ],
-            "monsters": [
-                "city-archer",
-                "city-guard",
-                "blood-ooze",
-                "flaming-drake",
-                "toxic-imp"
-            ]
+            "prompt": "algoxAltercation"
         },
         {
             "id": 5,
-            "game": "cs",
-            "name": "Blood of the Oozes",
-            "coordinates": {},
-            "pages": [
-                "cs/1/17",
-                "cs/2/6"
-            ],
+            "name": "Frozen Crypt",
+            "game": "fh",
+            "coordinates": {
+                "name": "I6",
+                "x": 50.23,
+                "y": 29.77
+            },
             "chapter_id": 2,
+            "treasures": [
+                46
+            ],
             "links_to": [
-                6
+                9,
+                10
             ],
             "linked_from": [
                 4
             ],
             "rewards": [
-                "Each character gains one random “Orb” item (Item 1-10)"
-            ],
-            "achievements_awarded": [
-                "PCSOD"
-            ],
-            "monsters": [
-                "blood-ooze",
-                "earth-demon",
-                "flaming-drake",
-                "toxic-imp"
+                "Gain 2 Lumber collective"
             ]
         },
         {
             "id": 6,
-            "game": "cs",
-            "name": "Poisoned Water",
-            "coordinates": {},
-            "pages": [
-                "cs/1/18",
-                "cs/2/6",
-                "cs/2/7"
+            "name": "Avalanche",
+            "game": "fh",
+            "coordinates": {
+                "name": "L8",
+                "x": 38.41,
+                "y": 35.37
+            },
+            "chapter_id": 4,
+            "links_to": [
+                11,
+                12
             ],
-            "requirements": "Ooze Destroyed (Party) COMPLETE",
-            "required_by": [
-                {
-                    "complete": [
-                        "PCSOD"
-                    ]
-                }
-            ],
-            "chapter_id": 2,
             "linked_from": [
-                5
+                4
             ],
             "rewards": [
-                "+2 reputation",
-                "+1 prosperity",
-                "“Stun Powder” (Item 21)"
-            ],
-            "monsters": [
-                "blood-ooze",
-                "flaming-drake",
-                "toxic-imp",
-                "water-spirit"
+                "Gain 2 Metal collective"
             ]
         },
         {
             "id": 7,
-            "game": "cs",
-            "name": "Golden Eggs",
-            "coordinates": {},
-            "pages": [
-                "cs/1/19",
-                "cs/2/6",
-                "cs/2/7",
-                "cs/2/9"
+            "name": "Edge of the World",
+            "game": "fh",
+            "coordinates": {
+                "name": "K3",
+                "x": 44.97,
+                "y": 17.4
+            },
+            "chapter_id": 3,
+            "treasures": [
+                44
             ],
-            "chapter_id": 1,
             "links_to": [
-                8,
-                10
+                13,
+                14
             ],
             "linked_from": [
-                3
+                4
             ],
             "rewards": [
-                "Gain 30 collective gold"
-            ],
-            "achievements_awarded": [
-                "PCSFM"
-            ],
-            "monsters": [
-                "cave-bear",
-                "forest-imp",
-                "giant-viper",
-                "hound",
-                "spitting-drake",
-                "rending-drake"
+                "10 experience each"
             ]
         },
         {
             "id": 8,
-            "game": "cs",
-            "name": "Shattered Fortress",
-            "coordinates": {},
-            "pages": [
-                "cs/1/20",
-                "cs/2/7"
-            ],
-            "chapter_id": 1,
+            "name": "Crystal Trench",
+            "game": "fh",
+            "coordinates": {
+                "name": "G8",
+                "x": 61.0,
+                "y": 35.66
+            },
+            "chapter_id": 6,
             "links_to": [
-                9
+                15,
+                16
             ],
             "linked_from": [
-                7
-            ],
-            "treasures": [
-                1
+                4
             ],
             "rewards": [
-                "“Curious Pendant” (Item 20)"
-            ],
-            "monsters": [
-                "ancient-artillery",
-                "living-spirit",
-                "stone-golem"
+                "Gain 1 collective Lumber and 2 collective Hides"
             ]
         },
         {
             "id": 9,
-            "game": "cs",
-            "name": "Rescue Mission",
-            "coordinates": {},
-            "pages": [
-                "cs/1/21",
-                "cs/2/8",
-                "cs/2/10",
-                "cs/2/11a"
+            "name": "Glowing Catacombs",
+            "game": "fh",
+            "coordinates": {
+                "name": "J6",
+                "x": 49.24,
+                "y": 26.62
+            },
+            "chapter_id": 2,
+            "treasures": [
+                9
             ],
-            "chapter_id": 1,
             "links_to": [
-                11,
-                13,
-                14
+                17
+            ],
+            "linked_from": [
+                5
+            ],
+            "rewards": [
+                "Gain 2 collective Corpscap"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Crystal Enclosure",
+            "game": "fh",
+            "coordinates": {
+                "name": "F6",
+                "x": 63.96,
+                "y": 27.95
+            },
+            "chapter_id": 2,
+            "treasures": [
+                46,
+                71
+            ],
+            "links_to": [
+                18
+            ],
+            "linked_from": [
+                5
+            ],
+            "rewards": [
+                "Gain 1 morale and 1 inspiration."
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Snowscorn Peak",
+            "game": "fh",
+            "coordinates": {
+                "name": "M6",
+                "x": 34.25,
+                "y": 29.59
+            },
+            "chapter_id": 4,
+            "treasures": [
+                71
+            ],
+            "links_to": [
+                19
+            ],
+            "linked_from": [
+                6
+            ],
+            "rewards": [
+                "Gain 1 morale and 1 inspiration."
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Temple Entrance",
+            "game": "fh",
+            "coordinates": {
+                "name": "K8",
+                "x": 43.0,
+                "y": 35.63
+            },
+            "chapter_id": 4,
+            "treasures": [
+                9
+            ],
+            "links_to": [
+                20
+            ],
+            "linked_from": [
+                6
+            ],
+            "rewards": [
+                "Gain 15xp each"
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Frozen Fjord",
+            "game": "fh",
+            "coordinates": {
+                "name": "O2",
+                "x": 27.06,
+                "y": 14.48
+            },
+            "chapter_id": 3,
+            "treasures": [
+                49
+            ],
+            "links_to": [
+                32
+            ],
+            "linked_from": [
+                7
+            ],
+            "rewards":[
+                "Gain “Dead Raven” (item 233)"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Jagged Shoals",
+            "game": "fh",
+            "coordinates": {
+                "name": "L2",
+                "x": 38.94,
+                "y": 13.6
+            },
+            "chapter_id": 3,
+            "treasures": [
+                64
+            ],
+            "links_to": [
+                22
+            ],
+            "linked_from": [
+                7
+            ],
+            "rewards": [
+                "Choose one: Unlock Coral class OR Unlock Sea Weed class box.",
+                "Gain “Coral Shard” and “Shard Seeker” campaign stickers.",
+                "Add event WO-81 to the winter outpost deck."
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Ancient Spire",
+            "game": "fh",
+            "coordinates": {
+                "name": "D7",
+                "x": 74.35,
+                "y": 32.05
+            },
+            "chapter_id": 6,
+            "treasures": [
+                40
+            ],
+            "links_to": [
+                23,
+                24
             ],
             "linked_from": [
                 8
             ],
             "rewards": [
-                "10 gold each",
-                "“Smog Emitter” (Item 62)"
-            ],
-            "monsters": [
-                "ancient-artillery",
-                "cave-bear",
-                "city-archer",
-                "city-guard"
-            ]
-        },
-        {
-            "id": 10,
-            "game": "cs",
-            "name": "Den of Monstrosity",
-            "coordinates": {},
-            "pages": [
-                "cs/1/22",
-                "cs/1/23",
-                "cs/2/12",
-                "cs/2/13"
-            ],
-            "chapter_id": 3,
-            "links_to": [
-                17,
-                19
-            ],
-            "linked_from": [
-                7
-            ],
-            "treasures": [
-                10
-            ],
-            "rewards": [
-                "“Minor Mana Potion” (Item 12)",
-                "“Minor Healing Potion” (Item 20)"
-            ],
-            "monsters": [
-                "black-imp",
-                "lurker"
-            ]
-        },
-        {
-            "id": 11,
-            "game": "cs",
-            "name": "Voyage Abound",
-            "coordinates": {},
-            "pages": [
-                "cs/1/24",
-                "cs/2/13"
-            ],
-            "chapter_id": 5,
-            "links_to": [
-                12
-            ],
-            "linked_from": [
-                9
-            ],
-            "monsters": [
-                "flame-demon",
-                "inox-archer",
-                "inox-guard",
-                "inox-shaman",
-                "night-demon"
-            ]
-        },
-        {
-            "id": 12,
-            "game": "cs",
-            "name": "Uncovering the Source",
-            "coordinates": {},
-            "pages": [
-                "cs/1/25",
-                "cs/2/13"
-            ],
-            "chapter_id": 5,
-            "links_to": [
-                15
-            ],
-            "linked_from": [
-                11
-            ],
-            "monsters": [
-                "flame-demon",
-                "giant-viper",
-                "rending-drake",
-                "spitting-drake"
-            ]
-        },
-        {
-            "id": 13,
-            "game": "cs",
-            "name": "Corpse Cavern",
-            "coordinates": {},
-            "pages": [
-                "cs/1/26",
-                "cs/2/14"
-            ],
-            "chapter_id": 1,
-            "linked_from": [
-                9
-            ],
-            "treasures": [
-                7
-            ],
-            "rewards": [
-                "+1 prosperity",
-                "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\nIf there are non of these available in the shop, gain 20 gold instead"
-            ],
-            "monsters": [
-                "living-corpse",
-                "lurker",
-                "ooze"
-            ]
-        },
-        {
-            "id": 14,
-            "game": "cs",
-            "name": "Cultist Cave",
-            "coordinates": {},
-            "pages": [
-                "cs/1/27",
-                "cs/2/15",
-                "cs/2/16"
-            ],
-            "chapter_id": 1,
-            "linked_from": [
-                9
-            ],
-            "treasures": [
-                8,
-                9
-            ],
-            "rewards": [
-                "“Remote Beetle” (Item 86)",
-                "15 experience each"
-            ],
-            "monsters": [
-                "cultist",
-                "deep-terror",
-                "living-corpse",
-                "living-bones"
-            ]
-        },
-        {
-            "id": 15,
-            "game": "cs",
-            "name": "Ambush of Beasts",
-            "coordinates": {},
-            "pages": [
-                "cs/1/28",
-                "cs/2/16"
-            ],
-            "chapter_id": 5,
-            "links_to": [
-                16
-            ],
-            "linked_from": [
-                12
-            ],
-            "treasures": [
-                34
-            ],
-            "rewards": [
-                "15 gold each",
-                "Each character gains one random “Orb” item (Item 1-10)"
-            ],
-            "monsters": [
-                "cave-bear",
-                "giant-viper",
-                "hound",
-                "lurker",
-                "rending-drake"
+                "Gain 1 lumber",
+                "Gain 1 metal",
+                "Gain 1 hide"
             ]
         },
         {
             "id": 16,
-            "game": "cs",
-            "name": "Preto Krisanta",
-            "coordinates": {},
-            "pages": [
-                "cs/1/29",
-                "cs/2/16"
-            ],
-            "chapter_id": 5,
-            "linked_from": [
-                15
-            ],
+            "name": "Derelict Elevator",
+            "game": "fh",
+            "coordinates": {
+                "name": "F10",
+                "x": 65.3,
+                "y": 40.7
+            },
+            "chapter_id": 6,
             "treasures": [
-                6
+                77
+            ],
+            "links_to": [
+                25,
+                26
+            ],
+            "linked_from": [
+                8
             ],
             "rewards": [
-                "10 gold each",
-                "One character gains one {+1_WHITE} enhancement to any Level 1 or X card"
-            ],
-            "monsters": [
-                "black-imp",
-                "flame-demon",
-                "night-demon",
-                "sun-demon"
+                "Gain 5xp each",
+                "Gain 1 inspiration"
             ]
         },
         {
             "id": 17,
-            "game": "cs",
-            "name": "Orb Extraction",
-            "coordinates": {},
-            "pages": [
-                "cs/1/30",
-                "cs/1/31",
-                "cs/2/17",
-                "cs/2/18"
-            ],
-            "chapter_id": 1,
+            "name": "Haunted Vault",
+            "game": "fh",
+            "coordinates": {
+                "name": "H6",
+                "x": 53.65,
+                "y": 28.14
+            },
+            "chapter_id": 2,
             "links_to": [
-                18
+                27
             ],
             "linked_from": [
-                10
-            ],
-            "treasures": [
-                19,
-                43
+                9
             ],
             "rewards": [
-                "+2 prosperity"
-            ],
-            "monsters": [
-                "earth-demon",
-                "flame-demon",
-                "frost-demon",
-                "savvas-icestorm",
-                "wind-demon"
+                "Gain 1 ✔ each"
             ]
         },
         {
             "id": 18,
-            "game": "cs",
-            "name": "Grab and Go",
-            "coordinates": {},
-            "pages": [
-                "cs/1/32",
-                "cs/2/18",
-                "cs/2/19"
-            ],
-            "chapter_id": 1,
+            "name": "Crystal Fields",
+            "game": "fh",
+            "coordinates": {
+                "name": "E7",
+                "x": 68.67,
+                "y": 29.34
+            },
+            "chapter_id": 2,
             "links_to": [
-                20,
-                21
-            ],
-            "linked_from": [
-                17
-            ],
-            "treasures": [
-                22
-            ],
-            "rewards": [
-                "100 gold each. This money must immediately be spent on enhancements"
-            ],
-            "monsters": [
-                "black-imp",
-                "deep-terror",
-                "harrower-infester",
-                "night-demon"
-            ]
-        },
-        {
-            "id": 19,
-            "game": "cs",
-            "name": "Elemental Experiments",
-            "coordinates": {},
-            "pages": [
-                "cs/1/33",
-                "cs/2/19",
-                "cs/2/20"
-            ],
-            "chapter_id": 3,
-            "links_to": [
-                23,
-                24,
-                25
+                28,
+                29
             ],
             "linked_from": [
                 10
             ],
-            "treasures": [
-                39,
-                16
+            "rewards": [
+                "Gain 1 morale",
+                "Gain one random item blueprint"
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Skyhall",
+            "game": "fh",
+            "coordinates": {
+                "name": "N7",
+                "x": 31.73,
+                "y": 31.23
+            },
+            "chapter_id": 4,
+            "links_to": [
+                30,
+                28
+            ],
+            "linked_from": [
+                11
             ],
             "rewards": [
-                "“Major Mana Potion” (Item 48)"
-            ],
-            "monsters": [
-                "earth-demon",
-                "flame-demon",
-                "frost-demon",
-                "night-demon",
-                "sun-demon",
-                "vermling-scout",
-                "wind-demon"
+                "Gain 1 morale",
+                "Gain one random item blueprint"
             ]
         },
         {
             "id": 20,
-            "game": "cs",
-            "name": "Midnight Ritual",
-            "coordinates": {},
-            "pages": [
-                "cs/1/34",
-                "cs/1/35",
-                "cs/2/20",
-                "cs/2/21"
-            ],
-            "requirements": "Fallen Lava (Party) INCOMPLETE",
-            "required_by": [
-                {
-                    "incomplete": [
-                        "PCSFL"
-                    ]
-                }
-            ],
-            "blocks_on": [
-                {
-                    "complete": [
-                        "PCSFL"
-                    ]
-                }
-            ],
-            "chapter_id": 1,
+            "name": "Temple of Liberation",
+            "game": "fh",
+            "coordinates": {
+                "name": "L9",
+                "x": 40.47,
+                "y": 38.72
+            },
+            "chapter_id": 4,
             "links_to": [
-                22
+                31
             ],
             "linked_from": [
-                18
+                12
             ],
             "rewards": [
-                "+1 reputation",
-                "+1 prosperity",
-                "Each character gains one random “Orb” item (Item 1-10)"
-            ],
-            "monsters": [
-                "the-cultist",
-                "deep-terror",
-                "living-spirit",
-                "living-bones"
+                "Gain 15 gold each"
             ]
         },
         {
             "id": 21,
-            "game": "cs",
-            "name": "A Fiery Death",
-            "coordinates": {},
-            "pages": [
-                "cs/1/36",
-                "cs/2/21"
-            ],
-            "chapter_id": 1,
-            "links_to": [
-                27
-            ],
+            "name": "Realm of Endless Frost",
+            "game": "fh",
+            "coordinates": {
+                "name": "N1",
+                "x": 30.32,
+                "y": 11.02
+            },
+            "chapter_id": 3,
             "linked_from": [
-                18
-            ],
-            "achievements_awarded": [
-                "PCSFL"
-            ],
-            "treasures": [
-                4,
-                36
+                13
             ],
             "rewards": [
-                "“Magma Waders” (Item 99)"
-            ],
-            "monsters": [
-                "earth-demon",
-                "flame-demon"
+                "Gain 2 prosperity"
             ]
         },
         {
             "id": 22,
-            "game": "cs",
-            "name": "Imp Temple",
-            "coordinates": {},
-            "pages": [
-                "cs/1/37",
-                "cs/2/22",
-                "cs/2/23"
+            "name": "Ice Floes",
+            "game": "fh",
+            "coordinates": {
+                "name": "I2",
+                "x": 53.13,
+                "y": 15.22
+            },
+            "chapter_id": 3,
+            "links_to": [
+                33
             ],
-            "chapter_id": 1,
             "linked_from": [
-                20
-            ],
-            "treasures": [
-                15,
-                32
+                14
             ],
             "rewards": [
-                "Each character gains +2 gold and 2 experience for each money token looted."
-            ],
-            "monsters": [
-                "black-imp",
-                "forest-imp",
-                "harrower-infester"
+                "Lose 1 collective Lumber for each set of five hexes with water tiles on tile 7-G",
+                "Gain 15 xp each"
             ]
         },
         {
             "id": 23,
-            "game": "cs",
-            "name": "Icicle Chambers",
-            "coordinates": {},
-            "pages": [
-                "cs/1/38",
-                "cs/2/23",
-                "cs/2/24"
-            ],
-            "chapter_id": 4,
-            "links_to": [
-                26
-            ],
-            "linked_from": [
-                19
-            ],
-            "achievements_awarded": [
-                "PCSFW"
-            ],
-            "treasures": [
-                25
-            ],
-            "rewards": [
-                "15 experience each"
-            ],
-            "monsters": [
-                "frozen-cadaver",
-                "hail-demon",
-                "harrower-icecrawlers"
-            ]
-        },
-        {
-            "id": 24,
-            "game": "cs",
-            "name": "Eerie Grotto",
-            "coordinates": {},
-            "pages": [
-                "cs/1/39",
-                "cs/2/25",
-                "cs/2/26"
-            ],
-            "chapter_id": 4,
-            "links_to": [
-                26
-            ],
-            "linked_from": [
-                19
-            ],
-            "achievements_awarded": [
-                "PCSFW"
-            ],
-            "treasures": [
-                35
-            ],
-            "rewards": [
-                "Each character gains one random “Orb” item (Item 1-10)"
-            ],
-            "monsters": [
-                "frozen-cadaver",
-                "hail-demon",
-                "harrower-icecrawlers"
-            ]
-        },
-        {
-            "id": 25,
-            "game": "cs",
-            "name": "Brightspark, Behold!",
-            "coordinates": {},
-            "pages": [
-                "cs/1/40",
-                "cs/2/26",
-                "cs/2/27"
-            ],
-            "chapter_id": 3,
-            "links_to": [
-                31
-            ],
-            "linked_from": [
-                19
-            ],
-            "rewards": [
-                "+1 reputation",
-                "Add Road Event 57 to the deck"
-            ],
-            "monsters": [
-                "forest-imp",
-                "giant-viper",
-                "lurker",
-                "spitting-drake",
-                "sun-demon"
-            ]
-        },
-        {
-            "id": 26,
-            "game": "cs",
-            "name": "Thermal Stone Peak",
-            "coordinates": {},
-            "pages": [
-                "cs/1/41",
-                "cs/2/27",
-                "cs/2/28"
-            ],
-            "requirements": "Frozen Warrior (Party) COMPLETE",
-            "required_by": [
-                {
-                    "complete": [
-                        "PCSFW"
-                    ]
-                }
-            ],
-            "chapter_id": 4,
+            "name": "Spire Basement",
+            "game": "fh",
+            "coordinates": {
+                "name": "B8",
+                "x": 76.92,
+                "y": 33.78
+            },
+            "chapter_id": 6,
             "linked_from": [
                 23,
                 24
             ],
-            "treasures": [
-                13
+            "rewards": [
+                "Gain one random item blueprint"
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Upper Spire",
+            "game": "fh",
+            "coordinates": {
+                "name": "D6",
+                "x": 74.8,
+                "y": 29.93
+            },
+            "chapter_id": 6,
+            "links_to": [
+                34
+            ],
+            "linked_from": [
+                15
             ],
             "rewards": [
-                "20 experience each",
-                "1 ✓ each"
+                "Gain one random item blueprint"
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Rusted Tunnels",
+            "game": "fh",
+            "coordinates": {
+                "name": "E10",
+                "x": 69.08,
+                "y": 37.95
+            },
+            "chapter_id": 6,
+            "treasures": [
+                74
             ],
-            "monsters": [
-                "frozen-cadaver",
-                "hail-demon",
-                "harrower-icecrawlers"
+            "links_to": [
+                35
+            ],
+            "linked_from": [
+                16
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        26
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 2 lumber",
+                "Gain 2 metal"
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Quatryl Library",
+            "game": "fh",
+            "coordinates": {
+                "name": "E10",
+                "x": 68.77,
+                "y": 41.89
+            },
+            "chapter_id": 6,
+            "treasures": [
+                73
+            ],
+            "links_to": [
+                36,
+                37
+            ],
+            "linked_from": [
+                16
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        25
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 10 px each"
             ]
         },
         {
             "id": 27,
-            "game": "cs",
-            "name": "Frostbite Cavern",
-            "coordinates": {},
-            "pages": [
-                "cs/1/42",
-                "cs/2/29"
-            ],
-            "chapter_id": 1,
-            "links_to": [
-                28
+            "name": "Depths of Delirium",
+            "game": "fh",
+            "coordinates": {
+                "name": "H6",
+                "x": 55.4,
+                "y": 26.67
+            },
+            "chapter_id": 2,
+            "treasures": [
+                36,
+                24
             ],
             "linked_from": [
-                21
+                17
             ],
             "rewards": [
-                "10 gold each",
-                "“Dizzying Tincture” (Item 58)"
-            ],
-            "monsters": [
-                "frost-demon",
-                "stone-golem",
-                "wind-demon"
+                "Gain 10 xp",
+                "Gain 1 ✓ each",
+                "Gain “Coral Shard” campaign sticker"
             ]
         },
         {
             "id": 28,
-            "game": "cs",
-            "name": "Fountain of Bones",
-            "coordinates": {},
-            "pages": [
-                "cs/1/43",
-                "cs/2/30",
-                "cs/2/31"
+            "name": "Summit Meeting",
+            "game": "fh",
+            "coordinates": {
+                "name": "J8",
+                "x": 49.4,
+                "y": 34.65
+            },
+            "chapter_id": 5,
+            "treasures": [
+                48
             ],
-            "chapter_id": 6,
             "links_to": [
-                29
+                38
             ],
             "linked_from": [
-                27
+                18,
+                19
             ],
-            "treasures": [
-                12
+            "blocks_on": [
+                {
+                    "complete": [
+                        29
+                    ]
+                },
+                {
+                    "complete": [
+                        30
+                    ]
+                }
             ],
             "rewards": [
-                "1 ✓ each"
-            ],
-            "monsters": [
-                "cultist",
-                "living-bones",
-                "ooze"
+                "lose morale,"
             ]
         },
         {
             "id": 29,
-            "game": "cs",
-            "name": "Burial Chamber",
-            "coordinates": {},
-            "pages": [
-                "cs/1/44",
-                "cs/2/28",
-                "cs/2/31"
+            "name": "War of the Spire A",
+            "game": "fh",
+            "coordinates": {
+                "name": "F8",
+                "x": 65.93,
+                "y": 32.55
+            },
+            "chapter_id": 2,
+            "treasures": [
+                45
             ],
-            "chapter_id": 6,
             "links_to": [
-                30
+                39
             ],
             "linked_from": [
-                28
+                18
             ],
-            "treasures": [
-                3
+            "blocks_on": [
+                {
+                    "complete": [
+                        28
+                    ]
+                }
             ],
-            "monsters": [
-                "living-bones",
-                "living-corpse",
-                "living-spirit"
+            "rewards": [
+                "3 morale, “Destroyer of Icespeakers” sticker"
             ]
         },
         {
             "id": 30,
-            "game": "cs",
-            "name": "Undead Terrors",
-            "coordinates": {},
-            "pages": [
-                "cs/1/45",
-                "cs/2/32",
-                "cs/2/33"
+            "name": "War of the Spire B",
+            "game": "fh",
+            "coordinates": {
+                "name": "E8",
+                "x": 70.54,
+                "y": 32.86
+            },
+            "chapter_id": 4,
+            "treasures": [
+                45
             ],
-            "chapter_id": 6,
             "links_to": [
-                32
+                40
             ],
             "linked_from": [
-                29
+                19
             ],
-            "treasures": [
-                38,
-                17
-            ],
-            "prompt": "undeadTerrors",
-            "achievements_awarded_by_choice": [
-                [
-                    "PCSTM"
-                ],
-                [
-                    "PCSPL"
-                ]
+            "blocks_on": [
+                {
+                    "complete": [
+                        28
+                    ]
+                }
             ],
             "rewards": [
-                [
-                    "70 collective gold"
-                ],
-                [
-                    "10 experience each"
-                ]
-            ],
-            "monsters": [
-                "black-imp",
-                "living-corpse",
-                "stone-golem"
+                "3 morale, “Destroyer of Snowspeakers” sticker"
             ]
         },
         {
             "id": 31,
-            "game": "cs",
-            "name": "Eternal Portals",
-            "coordinates": {},
-            "pages": [
-                "cs/1/46",
-                "cs/2/33",
-                "cs/2/34"
+            "name": "Crackling Tunnel",
+            "game": "fh",
+            "coordinates": {
+                "name": "F10",
+                "x": 56.35,
+                "y": 40.97
+            },
+            "chapter_id": 4,
+            "treasures": [
+                25,
+                26
             ],
-            "chapter_id": 3,
+            "links_to": [
+                41
+            ],
             "linked_from": [
-                25
+                20
             ],
             "rewards": [
-                "1 ✓ each"
-            ],
-            "monsters": [
-                "harrower-infester",
-                "living-spirit",
-                "rending-drake",
-                "spitting-drake"
+                "5xp, 10 gold each"
             ]
         },
         {
             "id": 32,
-            "game": "cs",
-            "name": "Confronting the Past",
-            "coordinates": {},
-            "pages": [
-                "cs/1/47",
-                "cs/2/34",
-                "cs/2/35"
+            "name": "Ravens' Roost",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q3",
+                "x": 19.24,
+                "y": 17.14
+            },
+            "chapter_id": 3,
+            "treasures": [
+                67
             ],
-            "chapter_id": 1,
             "linked_from": [
-                30
+                13
             ],
             "rewards": [
-                "Read {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
-                "Password “Water Hydra”"
-            ],
-            "monsters": [
-                "ancient-artillery",
-                "inox-archer",
-                "inox-bodyguard",
-                "inox-guard",
-                "living-bones",
-                "jekserah"
+                "Gain “Feathered CLoak” (item 69)",
+                "“Into the Forest” sticker"
             ]
         },
         {
             "id": 33,
-            "game": "cs",
-            "name": "Siege Tower",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/48",
-                "cs/2/36",
-                "cs/2/37"
-            ],
-            "requirements": "“Protect and Serve” personal quest",
-            "chapter_id": 101,
+            "name": "Thawed Wood",
+            "game": "fh",
+            "coordinates": {
+                "name": "R2",
+                "x": 11.1,
+                "y": 14.2
+            },
+            "chapter_id": 3,
             "links_to": [
-                34
+                42
+            ],
+            "linked_from": [
+                22
             ],
             "rewards": [
-                "“Blazing Boots” (Item 87)",
-                "+1 reputation"
-            ],
-            "cards": [
-                "Q-330"
-            ],
-            "monsters": [
-                "inox-archer",
-                "inox-bodyguard",
-                "inox-guard",
-                "inox-shaman"
+                "5xp per unrevealed dowsing rune",
+                "Gain “Ember Energy Source” (item 244)"
             ]
         },
         {
             "id": 34,
-            "game": "cs",
-            "name": "Great Oak Escape",
-            "coordinates": {},
-            "pages": [
-                "cs/1/49",
-                "cs/2/36",
-                "cs/2/38"
-            ],
-            "requirements": "“Protect and Serve” personal quest",
-            "chapter_id": 101,
+            "name": "Top of the Spire",
+            "game": "fh",
+            "coordinates": {
+                "name": "C6",
+                "x": 75.38,
+                "y": 28.09
+            },
+            "chapter_id": 6,
             "linked_from": [
-                33
-            ],
-            "treasures": [
-                42
+                23,
+                24
             ],
             "rewards": [
-                "Unlock Envelope {BM}",
-                "+2 reputation",
-                "All characters add one {BLESS} to their attack modifer deck for the next scenario"
-            ],
-            "cards": [
-                "Q-330"
-            ],
-            "monsters": [
-                "hound",
-                "inox-archer",
-                "inox-guard",
-                "inox-shaman"
+                "“Coral Shard” Sticker"
             ]
         },
         {
             "id": 35,
-            "game": "cs",
-            "name": "Prison Riot",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/50",
-                "cs/2/38",
-                "cs/2/39"
-            ],
-            "requirements": "“Bandit Banisher” personal quest",
-            "chapter_id": 101,
-            "links_to": [
-                36
-            ],
+            "name": "Scrap Pit",
+            "game": "fh",
+            "coordinates": {
+                "name": "C10",
+                "x": 73.65,
+                "y": 43.23
+            },
+            "chapter_id": 6,
             "treasures": [
-                28,
-                40
+                61
             ],
-            "cards": [
-                "Q-335"
+            "links_to": [
+                43
             ],
-            "monsters": [
-                "bandit-archer",
-                "bandit-guard",
-                "night-demon",
-                "wind-demon"
+            "linked_from": [
+                25
+            ],
+            "rewards": [
+                "2 lumber, 2 metal, 2 hide"
             ]
         },
         {
             "id": 36,
-            "game": "cs",
-            "name": "Hunters Bounty",
-            "coordinates": {},
-            "pages": [
-                "cs/1/51",
-                "cs/2/40",
-                "cs/2/41"
+            "name": "Buried Ducts",
+            "game": "fh",
+            "coordinates": {
+                "name": "C9",
+                "x": 77.14,
+                "y": 39.44
+            },
+            "chapter_id": 6,
+            "links_to": [
+                44
             ],
-            "requirements": "“Bandit Banisher” personal quest",
-            "chapter_id": 101,
             "linked_from": [
-                35
+                26
             ],
-            "treasures": [
-                2,
-                30
+            "blocks_on": [
+                {
+                    "complete": [
+                        37
+                    ]
+                }
             ],
             "rewards": [
-                "Unlock Envelope {CG}",
-                "10 gold each"
-            ],
-            "cards": [
-                "Q-335"
-            ],
-            "monsters": [
-                "bandit-archer",
-                "bandit-guard",
-                "hound"
+                "3 lumber, 3 metal"
             ]
         },
         {
             "id": 37,
-            "game": "cs",
-            "name": "Burning Stones",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/52",
-                "cs/2/41",
-                "cs/2/42"
-            ],
-            "requirements": "“Natural Selection” personal quest",
-            "chapter_id": 101,
-            "links_to": [
-                38
-            ],
+            "name": "The Dead Mile",
+            "game": "fh",
+            "coordinates": {
+                "name": "C11",
+                "x": 76.8,
+                "y": 43.4
+            },
+            "chapter_id": 6,
             "treasures": [
+                61
+            ],
+            "links_to": [
+                44
+            ],
+            "linked_from": [
                 26
             ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        36
+                    ]
+                }
+            ],
             "rewards": [
-                "Gain one random “Stone” item (Item 94-100)"
-            ],
-            "cards": [
-                "Q-344"
-            ],
-            "monsters": [
-                "flame-demon",
-                "frost-demon",
-                "night-demon",
-                "sun-demon",
-                "vermling-scout"
+                "3 lumber, 3 metal"
             ]
         },
         {
             "id": 38,
-            "game": "cs",
-            "name": "Alters of Confusion",
-            "coordinates": {},
-            "pages": [
-                "cs/1/53",
-                "cs/2/42",
-                "cs/2/43"
-            ],
-            "requirements": "“Natural Selection” personal quest",
-            "chapter_id": 101,
-            "linked_from": [
-                37
-            ],
+            "name": "The Way Forward",
+            "game": "fh",
+            "coordinates": {
+                "name": "G8",
+                "x": 59.08,
+                "y": 33.33
+            },
+            "chapter_id": 5,
             "treasures": [
-                29
+                16
+            ],
+            "links_to": [
+                45,
+                46
+            ],
+            "linked_from": [
+                28
             ],
             "rewards": [
-                "Unlock Envelope {LU}"
-            ],
-            "cards": [
-                "Q-344"
-            ],
-            "monsters": [
-                "black-imp",
-                "living-spirit",
-                "night-demon",
-                "stone-golem"
+                "10xp, check, 1 inspiration"
             ]
         },
         {
             "id": 39,
-            "game": "cs",
-            "name": "Festering Mire",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/54",
-                "cs/2/44",
-                "cs/2/45"
-            ],
-            "requirements": "“An Adder Divides” personal quest",
-            "chapter_id": 101,
+            "name": "Corrupted Camp",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q4",
+                "x": 16.55,
+                "y": 20.44
+            },
+            "chapter_id": 2,
             "treasures": [
-                46
+                41
+            ],
+            "links_to": [
+                47
+            ],
+            "linked_from": [
+                29
             ],
             "rewards": [
-                "10 experience each",
-                "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
-                "“An Adder Divides” quest is not yet complete"
-            ],
-            "cards": [
-                "Q-346"
-            ],
-            "monsters": [
-                "earth-demon",
-                "giant-viper"
+                "lose 1 inspiration, +2 loot cards for each charactor"
             ]
         },
         {
             "id": 40,
-            "game": "cs",
-            "name": "Smugglers Hideout",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/55",
-                "cs/2/44",
-                "cs/2/45"
-            ],
-            "chapter_id": 103,
+            "name": "Relief Effort",
+            "game": "fh",
+            "coordinates": {
+                "name": "H9",
+                "x": 53.8,
+                "y": 38.05
+            },
+            "chapter_id": 4,
             "treasures": [
-                21
+                41
+            ],
+            "links_to": [
+                48
+            ],
+            "linked_from": [
+                30
             ],
             "rewards": [
-                "Gain 50 collective gold"
-            ],
-            "cards": [
-                "C-43"
-            ],
-            "monsters": [
-                "rending-drake",
-                "spitting-drake"
+                "lose 1 inspiration, +2 loot cards for each charactor"
             ]
         },
         {
             "id": 41,
-            "game": "cs",
-            "name": "Curse of the Void",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/56",
-                "cs/2/45",
-                "cs/2/46"
+            "name": "Unfettered Shard",
+            "game": "fh",
+            "coordinates": {
+                "name": "E12",
+                "x": 65.8,
+                "y": 46.2
+            },
+            "chapter_id": 4,
+            "linked_from": [
+                31
             ],
-            "chapter_id": 103,
             "rewards": [
-                "Gain 50 collective gold"
-            ],
-            "cards": [
-                "C-43"
-            ],
-            "monsters": [
-                "bandit-archer",
-                "bandit-guard"
+                "15 gold each, 2 Axenuts, “Coral Shard” sticker"
             ]
         },
         {
             "id": 42,
-            "game": "cs",
-            "name": "Unnatural Beasts",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/57",
-                "cs/2/45",
-                "cs/2/46",
-                "cs/2/47"
+            "name": "Sunless Trench",
+            "game": "fh",
+            "coordinates": {
+                "name": "J1",
+                "x": 46.15,
+                "y": 10.91
+            },
+            "chapter_id": 3,
+            "links_to": [
+                49,
+                50
             ],
-            "chapter_id": 103,
-            "treasures": [
-                33,
-                27,
-                14
+            "linked_from": [
+                33
             ],
             "rewards": [
-                "+1 reputation",
-                "10 experience each"
-            ],
-            "cards": [
-            ],
-            "monsters": [
-                "cave-bear",
-                "giant-viper",
-                "hound"
+                "2 checks, “Coral shard” sticker"
             ]
         },
         {
             "id": 43,
-            "game": "cs",
-            "name": "Mansion Maze",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/58",
-                "cs/2/47",
-                "cs/2/48"
+            "name": "Overrun Barricade",
+            "game": "fh",
+            "coordinates": {
+                "name": "C9",
+                "x": 75.46,
+                "y": 38.65
+            },
+            "chapter_id": 6,
+            "links_to": [
+                51
             ],
-            "chapter_id": 103,
-            "treasures": [
-                41
+            "linked_from": [
+                35
             ],
             "rewards": [
-                "+1 prosperity",
-                "Each character gains one random “Orb” item (Item 1-10)"
-            ],
-            "cards": [
-                "C-31"
-            ],
-            "monsters": [
-                "ancient-artillery",
-                "city-guard",
-                "stone-golem"
+                "10xp"
             ]
         },
         {
             "id": 44,
-            "game": "cs",
-            "name": "Haunted Manor",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/59",
-                "cs/2/49",
-                "cs/2/52"
+            "name": "Nerve Center",
+            "game": "fh",
+            "coordinates": {
+                "name": "B10",
+                "x": 79.85,
+                "y": 41.45
+            },
+            "chapter_id": 6,
+            "links_to": [
+                58,
+                59
             ],
-            "chapter_id": 103,
-            "treasures": [
-                5,
-                20,
+            "linked_from": [
+                36,
                 37
             ],
             "rewards": [
-                "20 gold each",
-                "Each character gains one random “Orb” item (Item 1-10)"
-            ],
-            "cards": [
-                "C-6"
-            ],
-            "monsters": [
-                "harrower-infester",
-                "living-spirit",
-                "night-demon"
+                "5 gold",
+                "Gain “Energizing Baton” (item 73)"
             ]
         },
         {
             "id": 45,
-            "game": "cs",
-            "name": "Defend the Swamp",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/60",
-                "cs/2/50",
-                "cs/2/51"
+            "name": "Living Glacier",
+            "game": "fh",
+            "coordinates": {
+                "name": "C3",
+                "x": 78.5,
+                "y": 18.6
+            },
+            "chapter_id": 5,
+            "treasures": [
+                15
             ],
-            "chapter_id": 102,
+            "links_to": [
+                52
+            ],
+            "linked_from": [
+                38
+            ],
             "rewards": [
-                "+1 reputation",
-                "+1 prosperity",
-                "1 ✓ each"
-            ],
-            "cards": [
-                "R-25"
-            ],
-            "monsters": [
-                "black-imp",
-                "land-leviathan",
-                "forest-imp"
+                "1 morale, check"
             ]
         },
         {
             "id": 46,
-            "game": "cs",
-            "name": "Vermling Gardens",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/61",
-                "cs/2/51"
+            "name": "Dead Pass",
+            "game": "fh",
+            "coordinates": {
+                "name": "B12",
+                "x": 79.53,
+                "y": 48.73
+            },
+            "chapter_id": 5,
+            "links_to": [
+                52
             ],
-            "chapter_id": 102,
+            "linked_from": [
+                38
+            ],
             "rewards": [
-                "+2 reputation",
-                "15 experience each"
-            ],
-            "cards": [
-                "R-10"
-            ],
-            "monsters": [
-                "cave-bear",
-                "hound",
-                "vermling-scout",
-                "vermling-shaman"
+                "1 morale, 10xp,"
             ]
         },
         {
             "id": 47,
-            "game": "cs",
-            "name": "Viper Marsh",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/62",
-                "cs/2/54"
-            ],
-            "chapter_id": 102,
+            "name": "Carrion Ridge",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q5",
+                "x": 9.94,
+                "y": 21.84
+            },
+            "chapter_id": 2,
             "treasures": [
-                47
+                15
+            ],
+            "links_to": [
+                56
+            ],
+            "linked_from": [
+                39
             ],
             "rewards": [
-                "“Ghost Viper Venom” (Item 55)",
-                "+1 prosperity",
-                "10 gold each"
-            ],
-            "cards": [
-                "R-54"
-            ],
-            "monsters": [
-                "earth-demon",
-                "giant-viper",
-                "ooze"
+                "10 gold, 2 lumber"
             ]
         },
         {
             "id": 48,
-            "game": "cs",
-            "name": "Forest Fire",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/63",
-                "cs/2/52",
-                "cs/2/56"
+            "name": "Blizzard island",
+            "game": "fh",
+            "coordinates": {
+                "name": "D2",
+                "x": 69.9,
+                "y": 13.9
+            },
+            "chapter_id": 4,
+            "links_to": [
+                57
             ],
-            "chapter_id": 102,
+            "linked_from": [
+                40
+            ],
             "rewards": [
-                "10 experience each",
-                "20 gold each"
-            ],
-            "cards": [
-                "R-52"
-            ],
-            "monsters": [
-                "giant-viper",
-                "inox-archer",
-                "inox-guard",
-                "inox-shaman",
-                "spitting-drake"
+                "10xp, 2 metal"
             ]
         },
         {
             "id": 49,
-            "game": "cs",
-            "name": "Oak Invasion A",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/64",
-                "cs/2/55"
+            "name": "Beneath Sea and Stone",
+            "game": "fh",
+            "coordinates": {
+                "name": "G3",
+                "x": 58.15,
+                "y": 15.98
+            },
+            "chapter_id": 3,
+            "treasures": [
+                5
             ],
-            "requirements": "Oaks Alliance (Party) COMPLETE",
-            "required_by": [
-                {
-                    "complete": [
-                        "PCSOA"
-                    ]
-                }
+            "links_to": [
+                53
             ],
-            "chapter_id": 103,
+            "linked_from": [
+                42
+            ],
             "rewards": [
-                "During the next visit to Gloomhaven, donations to the Sanctuary cost 0 gold"
-            ],
-            "cards": [
-                "C-42"
-            ],
-            "monsters": [
-                "city-archer",
-                "city-guard",
-                "inox-archer",
-                "inox-bodyguard",
-                "inox-guard",
-                "inox-shaman"
+                "5xp, 1 inspiration"
             ]
         },
         {
             "id": 50,
-            "game": "cs",
-            "name": "Oak Invasion B",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/65",
-                "cs/2/56"
+            "name": "Explosive Descent",
+            "game": "fh",
+            "coordinates": {
+                "name": "G1",
+                "x": 60.14,
+                "y": 11.04
+            },
+            "chapter_id": 3,
+            "links_to": [
+                54
             ],
-            "requirements": "Inox Alliance (Party) COMPLETE",
-            "required_by": [
-                {
-                    "complete": [
-                        "PCSIA"
-                    ]
-                }
+            "linked_from": [
+                42
             ],
-            "chapter_id": 103,
             "rewards": [
-                "10 experience each",
-                "1 ✓ each"
-            ],
-            "cards": [
-                "C-42"
-            ],
-            "monsters": [
-                "captain-of-the-guard",
-                "cave-bear",
-                "city-archer",
-                "city-guard",
-                "inox-archer",
-                "inox-guard"
+                "lose 2 inspiration, gain 4 lumber+4 metal"
             ]
         },
         {
             "id": 51,
-            "game": "cs",
-            "name": "Rodent Warehouse",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/66",
-                "cs/2/57",
-                "cs/2/58"
-            ],
-            "chapter_id": 104,
+            "name": "Orphan's Halls",
+            "game": "fh",
+            "coordinates": {
+                "name": "B9",
+                "x": 80.87,
+                "y": 37.9
+            },
+            "chapter_id": 6,
             "treasures": [
-                41
+                56
+            ],
+            "links_to": [
+                58,
+                59
+            ],
+            "linked_from": [
+                43
             ],
             "rewards": [
-                "+1 reputation",
-                "30 gold each"
-            ],
-            "monsters": [
-                "flame-demon",
-                "sun-demon",
-                "vermling-scout",
-                "vermling-shaman"
+                "10xp",
+                "Gain “Shock Grenades blueprint” (item 74)"
             ]
         },
         {
             "id": 52,
-            "game": "cs",
-            "name": "Wishing Well",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/67",
-                "cs/2/57",
-                "cs/2/58",
-                "cs/2/59"
+            "name": "Fleeting Permanence",
+            "game": "fh",
+            "coordinates": {
+                "name": "G7",
+                "x": 58.65,
+                "y": 30.97
+            },
+            "chapter_id": 5,
+            "treasures": [
+                28,
+                43,
+                66
             ],
-            "chapter_id": 104,
+            "links_to": [
+                55
+            ],
+            "linked_from": [
+                45,
+                46
+            ],
             "rewards": [
-                "“Drakescale Shield” (Item 37)"
-            ],
-            "monsters": [
-                "black-imp",
-                "living-corpse",
-                "ooze",
-                "spitting-drake"
+                "1 morale, 1 inspiration"
             ]
         },
         {
             "id": 53,
-            "game": "cs",
-            "name": "Cave of Currents",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/68",
-                "cs/2/59",
-                "cs/2/61"
+            "name": "Underwater Throne",
+            "game": "fh",
+            "coordinates": {
+                "name": "E2",
+                "x": 65.55,
+                "y": 14.36
+            },
+            "chapter_id": 3,
+            "links_to": [
+                60
             ],
-            "chapter_id": 104,
+            "linked_from": [
+                49
+            ],
             "rewards": [
-                "“Sphere of Currents” (Item 83)",
-                "5 gold each"
-            ],
-            "monsters": [
-                "lurker",
-                "spitting-drake",
-                "water-spirit"
+                "2 checks, Coral Shard sticker"
             ]
         },
         {
             "id": 54,
-            "game": "cs",
-            "name": "Lair of Horrors",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/69",
-                "cs/2/61",
-                "cs/2/62"
-            ],
-            "chapter_id": 104,
+            "name": "Among the Wreckage",
+            "game": "fh",
+            "coordinates": {
+                "name": "F1",
+                "x": 65.28,
+                "y": 11.17
+            },
+            "chapter_id": 3,
             "treasures": [
-                23
+                5,
+                63
+            ],
+            "links_to": [
+                60
+            ],
+            "linked_from": [
+                50
             ],
             "rewards": [
-                "+1 reputation",
-                "30 gold each"
-            ],
-            "monsters": [
-                "hanging-snake",
-                "dark-lurker"
+                "2 checks, Coral Shard sticker"
             ]
         },
         {
             "id": 55,
-            "game": "cs",
-            "name": "Catacomb Plunder",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "cs/1/70",
-                "cs/1/71",
-                "cs/2/62",
-                "cs/2/63"
-            ],
-            "chapter_id": 104,
+            "name": "Change of Heart",
+            "game": "fh",
+            "coordinates": {
+                "name": "M8",
+                "x": 34.63,
+                "y": 32.45
+            },
+            "chapter_id": 5,
             "treasures": [
-                44,
-                31
+                41
+            ],
+            "linked_from": [
+                52
             ],
             "rewards": [
-                "+1 prosperity",
-                "+1 reputation",
-                "10 experience each"
-            ],
-            "monsters": [
-                "bandit-archer",
-                "earth-demon",
-                "harrower-infester",
-                "living-bones",
-                "living-corpse",
-                "stone-golem"
+                "2 morale, Gain 2 prosperity, unlock fist or snowflake, “friend of frostspeakers” sticker, +50 card to town guard deck"
             ]
         },
         {
             "id": 56,
-            "game": "cs",
-            "name": "Disarm the Machine",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "BM",
-            "pages": [
-                "cs/1/72",
-                "cs/2/63",
-                "cs/2/64"
+            "name": "Call of the Harbinger",
+            "game": "fh",
+            "coordinates": {
+                "name": "R4",
+                "x": 11.34,
+                "y": 19.43
+            },
+            "chapter_id": 2,
+            "treasures": [
+                4
             ],
-            "chapter_id": 100,
+            "linked_from": [
+                47
+            ],
             "rewards": [
-                "“Chain Cannon” (Item 45)"
-            ],
-            "monsters": [
-                "ancient-artillery",
-                "stone-golem"
+                "1 morale, 1 inspiration, unlock fist class, “Friend of Icespeakers” sticker, +50 card to town guard deck"
             ]
         },
         {
             "id": 57,
-            "game": "cs",
-            "name": "Elemental Converter",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "BK",
-            "pages": [
-                "cs/1/73",
-                "cs/2/64",
-                "cs/2/65"
+            "name": "Sanctuary of Snow",
+            "game": "fh",
+            "coordinates": {
+                "name": "D1",
+                "x": 71.37,
+                "y": 11.15
+            },
+            "chapter_id": 4,
+            "treasures": [
+                53
             ],
-            "chapter_id": 100,
+            "linked_from": [
+                48
+            ],
             "rewards": [
-                "“Test Tube” (Item 48)"
-            ],
-            "monsters": [
-                "black-imp",
-                "deep-terror",
-                "hound",
-                "lurker",
-                "rending-drake",
-                "spitting-drake"
+                "1 morale, 1 inspiration, unlock snowflake class, “Friend of Icespeakers” sticker, +50 card to town guard deck"
             ]
         },
         {
             "id": 58,
-            "game": "cs",
-            "name": "Penitentiary Lockdown",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "CG",
-            "pages": [
-                "cs/1/74",
-                "cs/2/66"
+            "name": "Orphan's Core",
+            "game": "fh",
+            "coordinates": {
+                "name": "A10",
+                "x": 83.59,
+                "y": 40.3
+            },
+            "chapter_id": 6,
+            "treasures": [
+                81
             ],
-            "chapter_id": 100,
+            "linked_from": [
+                44,
+                51
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        59
+                    ]
+                }
+            ],
             "rewards": [
-                "Gain one of the following as an item and the other as an item design: “Claw Trap” (Item 34), “Clamp Trap” (Item 56)"
-            ],
-            "monsters": [
-                "bandit-archer",
-                "bandit-guard"
+                "1 morale, “Key Card” (item 246), 3 lumber, 3 metal, 3 hides, prism class, “unfettered deacivation” sticker, +50 card to town guard deck"
             ]
         },
         {
             "id": 59,
-            "game": "cs",
-            "name": "Forest Invaders",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "CT",
-            "pages": [
-                "cs/1/75",
-                "cs/2/67"
+            "name": "Automation Uprising",
+            "game": "fh",
+            "coordinates": {
+                "name": "A11",
+                "x": 80.55,
+                "y": 43.24
+            },
+            "chapter_id": 6,
+            "treasures": [
+                7
             ],
-            "chapter_id": 100,
+            "linked_from": [
+                44,
+                51
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        58
+                    ]
+                }
+            ],
             "rewards": [
-                "“Nature Armlets” (Item 47)"
-            ],
-            "monsters": [
-                "cave-bear",
-                "giant-viper",
-                "hound",
-                "vermling-scout",
-                "vermling-shaman"
+                "2 morale, Gain 2 prosperity, gain “Key Card” (item 246), prism class, “unfettered allies” sticker, +50 card to town guard deck"
             ]
         },
         {
             "id": 60,
-            "game": "cs",
-            "name": "Through the Fire and Flames",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "FK",
-            "pages": [
-                "cs/1/76",
-                "cs/2/67",
-                "cs/2/69"
-            ],
-            "chapter_id": 100,
-            "treasures": [
-                48,
-                49
+            "name": "Uniting the Crown",
+            "game": "fh",
+            "coordinates": {
+                "name": "G2",
+                "x": 60.87,
+                "y": 12.7
+            },
+            "chapter_id": 3,
+            "linked_from": [
+                53,
+                54
             ],
             "rewards": [
-                "“Flaming Armor” (Item 51)"
-            ],
-            "monsters": [
-                "flame-demon",
-                "rending-drake-cs",
-                "savvas-lavaflow",
-                "spitting-drake"
+                "2 morale, Gain 1 prosperity, 30xp, Unlock Coral class OR Sea Weed class, Crown reunited sticker, +50 card to town guard deck"
             ]
         },
         {
             "id": 61,
-            "game": "cs",
-            "name": "Archaic Preservation",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "HP",
-            "pages": [
-                "cs/1/77",
-                "cs/2/69"
+            "name": "Life and Death",
+            "game": "fh",
+            "coordinates": {
+                "name": "I11",
+                "x": 53.2,
+                "y": 44.9
+            },
+            "chapter_id": 8,
+            "treasures": [
+                76
             ],
-            "chapter_id": 100,
+            "links_to": [
+                62
+            ],
             "rewards": [
-                "“Robe of Soothing” (Item 42)"
-            ],
-            "monsters": [
-                "ancient-artillery",
-                "black-imp",
-                "lurker",
-                "rending-drake",
-                "stone-golem"
+                "unlock Shards class"
             ]
         },
         {
             "id": 62,
-            "game": "cs",
-            "name": "Hallow Redemption",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "HO",
-            "pages": [
-                "cs/1/78",
-                "cs/2/70",
-                "cs/2/71"
+            "name": "The Unfettered Seal",
+            "game": "fh",
+            "coordinates": {
+                "name": "B8",
+                "x": 82.95,
+                "y": 36.11
+            },
+            "chapter_id": 8,
+            "treasures": [
+                21
             ],
-            "chapter_id": 100,
+            "links_to": [
+                63
+            ],
+            "linked_from": [
+                61
+            ],
             "rewards": [
-                "“Cleansed Voidheart” (Item 57)"
-            ],
-            "monsters": [
-                "aesther-ashblade",
-                "cave-bear",
-                "forest-imp",
-                "vermling-shaman"
+                "Gain 1 prosperity"
             ]
         },
         {
             "id": 63,
-            "game": "cs",
-            "name": "A Cornered Viper",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "MF",
-            "pages": [
-                "cs/1/79",
-                "cs/2/72"
+            "name": "The Savvas Seal",
+            "game": "fh",
+            "coordinates": {
+                "name": "G12",
+                "x": 58.48,
+                "y": 47.77
+            },
+            "chapter_id": 8,
+            "treasures": [
+                72
             ],
-            "chapter_id": 100,
+            "links_to": [
+                64
+            ],
+            "linked_from": [
+                62
+            ],
             "rewards": [
-                "“Field Mortar” (Item 53)"
-            ],
-            "monsters": [
-                "cave-bear",
-                "giant-viper",
-                "inox-archer",
-                "living-corpse",
-                "living-spirit",
-                "stone-golem"
+                "Gain 2 prosperity,"
             ]
         },
         {
             "id": 64,
-            "game": "cs",
-            "name": "Glowing Crystals",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "LU",
-            "pages": [
-                "cs/1/80",
-                "cs/2/72",
-                "cs/2/73"
+            "name": "The Frosthaven Seal",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 33.07,
+                "y": 73.07
+            },
+            "chapter_id": 8,
+            "linked_from": [
+                63
             ],
-            "chapter_id": 100,
             "rewards": [
-                "“Luminous Carapace” (Item 50)"
-            ],
-            "monsters": [
-                "deep-terror",
-                "lurker"
+                "3 morale, Gain 3 prosperity, 3 checks each"
             ]
         },
         {
             "id": 65,
-            "game": "cs",
-            "name": "Glowing Crystals",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "SP",
-            "pages": [
-                "cs/1/81",
-                "cs/2/73",
-                "cs/2/74"
+            "name": "A Strong Foundation",
+            "game": "fh",
+            "coordinates": {
+                "name": "L4",
+                "x": 38.7,
+                "y": 22.47
+            },
+            "chapter_id": 7,
+            "treasures": [
+                39
             ],
-            "chapter_id": 100,
+            "links_to": [
+                66
+            ],
             "rewards": [
-                "“Spirit Libation” (Item 41)"
-            ],
-            "monsters": [
-                "vermling-shaman"
+                "2 lumber, 2 metal"
             ]
         },
         {
             "id": 66,
-            "game": "cs",
-            "name": "Otherworldly Strangers",
-            "coordinates": {},
-            "is_side": true,
-            "solo": "ST",
-            "pages": [
-                "cs/1/82",
-                "cs/2/74"
+            "name": "Elemental Cores",
+            "game": "fh",
+            "coordinates": {
+                "name": "L4",
+                "x": 35.08,
+                "y": 20.08
+            },
+            "chapter_id": 7,
+            "links_to": [
+                67
             ],
-            "chapter_id": 100,
+            "linked_from": [
+                66
+            ],
             "rewards": [
-                "“Moonleather Boots” (Item 40)"
-            ],
-            "monsters": [
-                "city-archer",
-                "city-guard",
-                "earth-demon",
-                "harrower-infester",
-                "night-demon",
-                "sun-demon"
+                "“Elemental Stone” (item 212)"
             ]
         },
         {
-            "id": "AA1",
-            "game": "cs",
-            "name": "The Riches of the Steelsilk",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/5",
-                "csao/6"
+            "id": 67,
+            "name": "Core Attunement",
+            "game": "fh",
+            "coordinates": {
+                "name": "K4",
+                "x": 40.54,
+                "y": 20.2
+            },
+            "chapter_id": 7,
+            "links_to": [
+                68
             ],
-            "requirements": "“At All Costs” personal quest",
-            "chapter_id": 12,
+            "linked_from": [
+                66
+            ],
             "rewards": [
-                "“Rockspine Bulwark” (Item AA01)"
-            ],
-            "monsters": [
-                "harrower-aegis",
-                "hound",
-                "bandit-archer",
-                "bandit-guard",
-                "wind-demon",
-                "frost-demon"
+                "1 morale, Gain 1 prosperity"
             ]
         },
         {
-            "id": "AA2",
-            "game": "cs",
-            "name": "Malign Echoes",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/7",
-                "csao/8"
+            "id": 68,
+            "name": "The Face of Torment",
+            "game": "fh",
+            "coordinates": {
+                "name": "L3",
+                "x": 40.37,
+                "y": 15.87
+            },
+            "chapter_id": 7,
+            "treasures": [
+                59
             ],
-            "requirements": "“The Weight of Failure” personal quest",
-            "chapter_id": 12,
+            "linked_from": [
+                67
+            ],
             "rewards": [
-                "“Ghostshimmer Honey” (Item AA02)"
-            ],
-            "monsters": [
-                "giant-viper",
-                "ravenous-gharial",
-                "black-imp",
-                "harrower-aegis",
-                "harrower-infester"
+                "(3 weeks) 50 gold each for enhancements, if building 44 is built"
             ]
         },
         {
-            "id": "AA3",
-            "game": "cs",
-            "name": "Hive Guardian",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/9",
-                "csao/10"
+            "id": 69,
+            "name": "Sacred Soil",
+            "game": "fh",
+            "coordinates": {
+                "name": "P2",
+                "x": 20.93,
+                "y": 14.05
+            },
+            "chapter_id": 7,
+            "links_to": [
+                70
             ],
-            "chapter_id": 100,
             "rewards": [
-                "“Steelsilk Spinneret” (Item AA03)"
-            ],
-            "monsters": [
-                "flame-demon",
-                "frost-demon",
-                "wind-demon",
-                "earth-demon",
-                "night-demon",
-                "sun-demon"
+                "Arrowvine, Axenut, Flamenut"
             ]
         },
         {
-            "id": "QA1",
-            "game": "cs",
-            "name": "Capstone Test",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/15",
-                "csao/16",
-                "csao/17"
+            "id": 70,
+            "name": "The True Oak",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q2",
+                "x": 16.67,
+                "y": 13.25
+            },
+            "chapter_id": 7,
+            "treasures": [
+                82
             ],
-            "requirements": "“Ingenious Inventor” personal quest and “Power Modulator” item equipped",
-            "chapter_id": 13,
+            "linked_from": [
+                69
+            ],
             "rewards": [
-                [
-                    "“Ingenious Inventor” quest complete",
-                    "Open envelope {QA}",
-                    "“Steam Piston Hammer” design (Item QA02)",
-                    "“Spider Climb Gloves” design (Item QA03)"
-                ],
-                [
-                    "“Ingenious Inventor” quest complete",
-                    "Open envelope {QA}",
-                    "Gain one of the following: “Steam Piston Hammer” (Item QA02) OR “Spider Climb Gloves” (Item QA03)",
-                    "Add a copy of the chosen item to the city's available supply",
-                    "Add the other item to the random item design deck"
-                ],
-                [
-                    "“Ingenious Inventor” quest complete",
-                    "Open envelope {QA}",
-                    "“Steam Piston Hammer” (Item QA02)",
-                    "“Spider Climb Gloves” (Item QA03)",
-                    "Add copies to the city's available supply"
-                ]
-            ],
-            "prompt": "capstoneTest",
-            "monsters": [
-                "clockwork-soldier",
-                "clockwork-railcaster"
+                "Gain 1 Prosperity"
             ]
         },
         {
-            "id": "QA2",
-            "game": "cs",
-            "name": "Mother Lode",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/18",
-                "csao/19",
-                "csao/20"
+            "id": 71,
+            "name": "Invasion of the Dock",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 76.77,
+                "y": 75.7
+            },
+            "chapter_id": 7,
+            "treasures": [
+                22,
+                23
             ],
-            "requirements": "“Scrap Diver” personal quest",
-            "chapter_id": 13,
+            "links_to": [
+                72
+            ],
             "rewards": [
-                "“Scrap Diver” quest complete",
-                "Open envelope {QA}",
-                "15xA gold each (where A is the number of Ancient Scrap recovered",
-                "Add City Event QA-03 to the deck"
-            ],
-            "monsters": [
-                "giant-viper",
-                "living-bones",
-                "ooze",
-                "living-corpse",
-                "living-spirit"
+                "damage even building between 71-89 & 10xp"
             ]
         },
         {
-            "id": "QA3",
-            "game": "cs",
-            "name": "Magnum Opus",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/23",
-                "csao/24"
+            "id": 72,
+            "name": "A Giant Block of Ice",
+            "game": "fh",
+            "coordinates": {
+                "name": "A5",
+                "x": 84.8,
+                "y": 24.85
+            },
+            "chapter_id": 7,
+            "treasures": [
+                37
             ],
-            "chapter_id": 100,
+            "links_to": [
+                73
+            ],
+            "linked_from": [
+                71
+            ],
             "rewards": [
-                "“Auscudee of the Makers” (Item QA06)"
-            ],
-            "monsters": [
-                "clockwork-soldier",
-                "clockwork-railcaster"
+                "check"
             ]
         },
         {
-            "id": "RM1",
-            "game": "cs",
-            "name": "Mind your Manners",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/29",
-                "csao/30"
+            "id": 73,
+            "name": "Flotsam",
+            "game": "fh",
+            "coordinates": {
+                "name": "D3",
+                "x": 74.57,
+                "y": 16.95
+            },
+            "chapter_id": 7,
+            "treasures": [
+                33
             ],
-            "requirements": "“Brutal Enforcer” personal quest",
-            "chapter_id": 14,
-            "monsters": [
-                "bandit-guard-hired-muscle",
-                "bandit-archer-hired-muscle",
-                "inox-guard",
-                "inox-archer"
-            ]
-        },
-        {
-            "id": "RM2",
-            "game": "cs",
-            "name": "Sinking Kingdom",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/31",
-                "csao/32"
+            "links_to": [
+                74
             ],
-            "requirements": "“Brutal Enforcer” personal quest",
-            "chapter_id": 14,
+            "linked_from": [
+                72
+            ],
             "rewards": [
-                "“Brutal Enforcer” quest complete",
-                "Open Envelope {RM}",
-                "+1 prosperity"
-            ],
-            "monsters": [
-                "bandit-guard",
-                "bandit-archer",
-                "inox-guard",
-                "inox-archer",
-                "inox-bloodguard",
-                "goremyon-shatter-mind"
+                "3 wood + optional friend of the fish king sticker"
             ]
         },
         {
-            "id": "RM3",
-            "game": "cs",
-            "name": "Ruined Colony",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/33",
-                "csao/34"
+            "id": 74,
+            "name": "Gaps in the Road",
+            "game": "fh",
+            "coordinates": {
+                "name": "G6",
+                "x": 60.15,
+                "y": 28.51
+            },
+            "chapter_id": 7,
+            "links_to": [
+                75,
+                76
             ],
-            "requirements": "“Apex Predator” personal quest",
-            "chapter_id": 14,
-            "monsters": [
-                "hound",
-                "giant-viper",
-                "cave-bear",
-                "ooze",
-                "gnashing-drake"
-            ]
-        },
-        {
-            "id": "RM4",
-            "game": "cs",
-            "name": "Terrorscale Lair",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/35",
-                "csao/36"
+            "linked_from": [
+                73
             ],
-            "requirements": "“Apex Predator” personal quest",
-            "chapter_id": 14,
             "rewards": [
-                "“Apex Predator” quest complete",
-                "Open Envelope {RM}",
-                "“Terrorscale Saber” design (Item RM03)",
-                "“Terrorscale Crossblades” design (Item RM04)"
-            ],
-            "monsters": [
-                "terrorscale-drake",
-                "gnashing-drake",
-                "spitting-drake",
-                "rending-drake"
+                "Gain one random item blueprint"
             ]
         },
         {
-            "id": "RM5",
-            "game": "cs",
-            "name": "Unseen Plight",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/37",
-                "csao/38",
-                "csao/39"
+            "id": 75,
+            "name": "Infiltraiting the Lair",
+            "game": "fh",
+            "coordinates": {
+                "name": "C2",
+                "x": 76.05,
+                "y": 12.71
+            },
+            "chapter_id": 7,
+            "treasures": [
+                20,
+                51,
+                55
             ],
-            "requirements": "“Guttermaw's Bounty” (Party) COMPLETE or “Feirgrin's Request” (Party)",
-            "required_by": [
-                {
-                    "complete": [
-                        "GWB",
-                        "PWS"
-                    ]
-                }
+            "links_to": [
+                77
             ],
-            "chapter_id": 14,
+            "linked_from": [
+                74
+            ],
             "rewards": [
-                [
-                    "40 collective gold",
-                    "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
-                ],
-                [
-                    "2 ✓ each",
-                    "“Lucky Eye” design (Item 063)"
-                ]
-            ],
-            "prompt": "unseenPlight",
-            "monsters": [
-                "ravenous-gharial",
-                "black-imp"
+                "10 gold,"
             ]
         },
         {
-            "id": "RM6",
-            "game": "cs",
-            "name": "The Fall of Shadow's Respite",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/40",
-                "csao/41"
+            "id": 76,
+            "name": "Apotheosis",
+            "game": "fh",
+            "coordinates": {
+                "name": "B2",
+                "x": 80.63,
+                "y": 14.12
+            },
+            "chapter_id": 7,
+            "treasures": [
+                2,
+                55
             ],
-            "chapter_id": 100,
+            "links_to": [
+                77
+            ],
+            "linked_from": [
+                74
+            ],
             "rewards": [
-                "“Rite of Ruin” design (Item RM05)",
-                "If at least three Vermlings were alive at the end of the eighth round: 5 gold",
-                "If at least five Vermlings were alive at the end of the eighth round: ✓"
-            ],
-            "monsters": [
-                "gnashing-drake",
-                "spitting-drake",
-                "rending-drake",
-                "vermling-scout-ally",
-                "vermling-shaman-ally"
+                "“Wave Blade” (item 201)"
             ]
         },
         {
-            "id": "RM7",
-            "game": "cs",
-            "name": "Insatiable",
-            "coordinates": {},
-            "is_side": true,
-            "pages": [
-                "csao/42",
-                "csao/43",
-                "csao/44"
+            "id": 77,
+            "name": "Fish King's Ascension",
+            "game": "fh",
+            "coordinates": {
+                "name": "B1",
+                "x": 79.85,
+                "y": 11.0
+            },
+            "chapter_id": 7,
+            "linked_from": [
+                75,
+                76
             ],
-            "requirements": "No Ruinmaw in party",
-            "chapter_id": 14,
             "rewards": [
-                "10 experience each",
-                "“Savage Cuirass” design (Item RM06)"
+                "“Wave Blade” (item 201)"
+            ]
+        },
+        {
+            "id": 78,
+            "name": "The Lurker Problem",
+            "game": "fh",
+            "coordinates": {
+                "name": "H5",
+                "x": 55.15,
+                "y": 23.82
+            },
+            "chapter_id": 11,
+            "treasures": [
+                58,
+                13
             ],
-            "monsters": [
-                "hound",
-                "ruinmaw",
-                "vermling-shaman",
-                "vermling-scout",
-                "giant-viper"
+            "rewards": [
+                "10xp"
+            ]
+        },
+        {
+            "id": 79,
+            "name": "Relic",
+            "game": "fh",
+            "coordinates": {
+                "name": "B5",
+                "x": 80.22,
+                "y": 25.75
+            },
+            "chapter_id": 11,
+            "treasures": [
+                8
+            ],
+            "links_to": [
+                80
+            ],
+            "rewards": [
+                "3 morale"
+            ]
+        },
+        {
+            "id": 80,
+            "name": "Relic Renewed",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 17.97,
+                "y": 58.28
+            },
+            "chapter_id": 11,
+            "treasures": [
+                62,
+                69
+            ],
+            "linked_from": [
+                79
+            ],
+            "rewards": [
+                "2 lumber, 2 metal, 2 hides, 2 morale"
+            ]
+        },
+        {
+            "id": 81,
+            "name": "Ruinous Research Lab",
+            "game": "fh",
+            "coordinates": {
+                "name": "A12",
+                "x": 83.67,
+                "y": 46.7
+            },
+            "chapter_id": 10,
+            "treasures": [
+                19
+            ],
+            "rewards": [
+                "Gain 1 prosperity, “Aesther Robe blueprint” (item 70)"
+            ]
+        },
+        {
+            "id": 82,
+            "name": "Expedition North",
+            "game": "fh",
+            "coordinates": {
+                "name": "P8",
+                "x": 20.7,
+                "y": 34.03
+            },
+            "chapter_id": 10,
+            "rewards": [
+                "Gain 2 prosperity+3 forgotten cirlces items (153,159,161) OR ???"
+            ]
+        },
+        {
+            "id": 83,
+            "name": "Rising Brine",
+            "game": "fh",
+            "coordinates": {
+                "name": "E3",
+                "x": 67.76,
+                "y": 20.76
+            },
+            "chapter_id": 11,
+            "rewards": [
+                "“Giant Piranha Pig Spine” (item 202)"
+            ]
+        },
+        {
+            "id": 84,
+            "name": "Here There Be Oozes",
+            "game": "fh",
+            "coordinates": {
+                "name": "R5",
+                "x": 11.5,
+                "y": 24.72
+            },
+            "chapter_id": 11,
+            "rewards": [
+                "item 234 (ooze vial), brummix sticker"
+            ]
+        },
+        {
+            "id": 85,
+            "name": "Deadly Pastimes",
+            "game": "fh",
+            "coordinates": {
+                "name": "O5",
+                "x": 24.14,
+                "y": 25.88
+            },
+            "chapter_id": 11,
+            "rewards": [
+                "15xp, check"
+            ]
+        },
+        {
+            "id": 86,
+            "name": "The Lady in White",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 71.0,
+                "y": 60.4
+            },
+            "chapter_id": 11,
+            "treasures": [
+                17
+            ],
+            "rewards": [
+                "2 morale"
+            ]
+        },
+        {
+            "id": 87,
+            "name": "The Collection",
+            "game": "fh",
+            "coordinates": {
+                "name": "J7",
+                "x": 47.06,
+                "y": 31.16
+            },
+            "chapter_id": 11,
+            "treasures": [
+                27,
+                38
+            ],
+            "links_to": [
+                88
+            ],
+            "rewards": [
+                "1-2 inspiration,"
+            ]
+        },
+        {
+            "id": 88,
+            "name": "Collection's Capstone",
+            "game": "fh",
+            "coordinates": {
+                "name": "I7",
+                "x": 52.28,
+                "y": 32.32
+            },
+            "chapter_id": 11,
+            "treasures": [
+                6
+            ],
+            "linked_from": [
+                87
+            ],
+            "rewards": [
+                "2 morale"
+            ]
+        },
+        {
+            "id": 89,
+            "name": "A Contained Fire",
+            "game": "fh",
+            "coordinates": {
+                "name": "G10",
+                "x": 61.7,
+                "y": 38.9
+            },
+            "chapter_id": 11,
+            "treasures": [
+                42
+            ],
+            "rewards": [
+                "2 Rockroot, 2 lumber"
+            ]
+        },
+        {
+            "id": 90,
+            "name": "Frozen Treasure",
+            "game": "fh",
+            "coordinates": {
+                "name": "I3",
+                "x": 49.65,
+                "y": 17.54
+            },
+            "chapter_id": 11,
+            "links_to": [
+                91
+            ],
+            "rewards": [
+                "check, 10 gold per numbered token looted, lose 10 gold or 5 gold + muddle & curse"
+            ]
+        },
+        {
+            "id": 91,
+            "name": "Shoreline Scramble",
+            "game": "fh",
+            "coordinates": {
+                "name": "J4",
+                "x": 45.44,
+                "y": 21.75
+            },
+            "chapter_id": 11,
+            "linked_from": [
+                90
+            ],
+            "rewards": [
+                "2 lumber, 1 morale"
+            ]
+        },
+        {
+            "id": 92,
+            "name": "Sinking Ship",
+            "game": "fh",
+            "coordinates": {
+                "name": "I4",
+                "x": 50.92,
+                "y": 19.38
+            },
+            "chapter_id": 11,
+            "rewards": [
+                "lose 2.5 loot per charactor, HE-RO-IC-S pet after 1 week if building 88 is built"
+            ]
+        },
+        {
+            "id": 93,
+            "name": "Midwinter Brawl",
+            "game": "fh",
+            "coordinates": {
+                "name": "H7",
+                "x": 55.47,
+                "y": 32.17
+            },
+            "chapter_id": 11,
+            "rewards": [
+                "“Small Rat” (Item 235) OR “Roasted Fowl” (item 79)"
+            ]
+        },
+        {
+            "id": 94,
+            "name": "A Grand View",
+            "game": "fh",
+            "coordinates": {
+                "name": "B6",
+                "x": 81.16,
+                "y": 27.9
+            },
+            "chapter_id": 11,
+            "treasures": [
+                12,
+                29
+            ],
+            "links_to": [
+                95
+            ],
+            "rewards": [
+                "10xp"
+            ]
+        },
+        {
+            "id": 95,
+            "name": "To Bury the Dead",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 23.97,
+                "y": 61.51
+            },
+            "chapter_id": 11,
+            "linked_from": [
+                94
+            ],
+            "rewards": [
+                "1 morale, 10 gold"
+            ]
+        },
+        {
+            "id": 96,
+            "name": "Underground Station",
+            "game": "fh",
+            "coordinates": {
+                "name": "E11",
+                "x": 70.17,
+                "y": 44.85
+            },
+            "chapter_id": 11,
+            "treasures": [
+                10
+            ],
+            "links_to": [
+                97
+            ],
+            "rewards": [
+                "1 morale, 5xp"
+            ]
+        },
+        {
+            "id": 97,
+            "name": "Program Control Nexus",
+            "game": "fh",
+            "coordinates": {
+                "name": "D12",
+                "x": 71.03,
+                "y": 48.0
+            },
+            "chapter_id": 11,
+            "links_to": [
+                98
+            ],
+            "linked_from": [
+                96
+            ],
+            "rewards": [
+                "5 metal,"
+            ]
+        },
+        {
+            "id": 98,
+            "name": "Collapsing Vent",
+            "game": "fh",
+            "coordinates": {
+                "name": "E12",
+                "x": 67.2,
+                "y": 48.8
+            },
+            "chapter_id": 11,
+            "treasures": [
+                35,
+                65
+            ],
+            "linked_from": [
+                97
+            ],
+            "rewards": [
+                "Gain 1 prosperity"
+            ]
+        },
+        {
+            "id": 99,
+            "name": "Prison Break",
+            "game": "fh",
+            "coordinates": {
+                "name": "A4",
+                "x": 84.06,
+                "y": 21.51
+            },
+            "chapter_id": 11,
+            "links_to": [
+                100
+            ],
+            "rewards": [
+                "10 gold"
+            ]
+        },
+        {
+            "id": 100,
+            "name": "Inside the Swarm",
+            "game": "fh",
+            "coordinates": {
+                "name": "A3",
+                "x": 84.38,
+                "y": 18.2
+            },
+            "chapter_id": 11,
+            "treasures": [
+                79
+            ],
+            "links_to": [
+                101
+            ],
+            "linked_from": [
+                99
+            ],
+            "rewards": [
+                "all loot is $, 5 gold, 10xp"
+            ]
+        },
+        {
+            "id": 101,
+            "name": "Harrower Library",
+            "game": "fh",
+            "coordinates": {
+                "name": "O3",
+                "x": 24.68,
+                "y": 18.25
+            },
+            "chapter_id": 11,
+            "links_to": [
+                102
+            ],
+            "linked_from": [
+                100
+            ],
+            "rewards": [
+                "check, 10xp,"
+            ]
+        },
+        {
+            "id": 102,
+            "name": "Into the Black",
+            "game": "fh",
+            "coordinates": {
+                "name": "R7",
+                "x": 15.8,
+                "y": 30.4
+            },
+            "chapter_id": 11,
+            "links_to": [
+                103
+            ],
+            "linked_from": [
+                101
+            ],
+            "rewards": [
+                "all loot is gold, 20xp,"
+            ]
+        },
+        {
+            "id": 103,
+            "name": "The Lead Door",
+            "game": "fh",
+            "coordinates": {
+                "name": "R8",
+                "x": 13.58,
+                "y": 33.88
+            },
+            "chapter_id": 11,
+            "linked_from": [
+                102
+            ],
+            "rewards": [
+                "loot is $, check, 30xp,10 gold"
+            ]
+        },
+        {
+            "id": 104,
+            "name": "Ruins of the Solstice",
+            "game": "fh",
+            "coordinates": {
+                "name": "E5",
+                "x": 69.93,
+                "y": 23.53
+            },
+            "chapter_id": 9,
+            "links_to": [
+                105
+            ],
+            "rewards": [
+                "2 Snowthistle"
+            ]
+        },
+        {
+            "id": 105,
+            "name": "Ruins of the Equinox",
+            "game": "fh",
+            "coordinates": {
+                "name": "H11",
+                "x": 57.96,
+                "y": 44.68
+            },
+            "chapter_id": 9,
+            "links_to": [
+                106
+            ],
+            "linked_from": [
+                104
+            ],
+            "rewards": [
+                "2 Flamefruit"
+            ]
+        },
+        {
+            "id": 106,
+            "name": "The Tempus Forge",
+            "game": "fh",
+            "coordinates": {
+                "name": "M5",
+                "x": 36.83,
+                "y": 24.85
+            },
+            "chapter_id": 9,
+            "linked_from": [
+                105
+            ],
+            "rewards": [
+                "“Key of Seasons” (item 213)"
+            ]
+        },
+        {
+            "id": 107,
+            "name": "My Private Empire",
+            "game": "fh",
+            "coordinates": {
+                "name": "J10",
+                "x": 45.98,
+                "y": 39.6
+            },
+            "chapter_id": 9,
+            "rewards": [
+                "gain 1 material resource per completed episode OR gain 5 + “Cup of Ventillion” (item 214)"
+            ]
+        },
+        {
+            "id": 108,
+            "name": "Lustrous Pit",
+            "game": "fh",
+            "coordinates": {
+                "name": "C12",
+                "x": 76.05,
+                "y": 48.2
+            },
+            "chapter_id": 9,
+            "treasures": [
+                3,
+                68
+            ],
+            "rewards": [
+                "2 morale, 2 inspiration"
+            ]
+        },
+        {
+            "id": 109,
+            "name": "Furious Factory",
+            "game": "fh",
+            "coordinates": {
+                "name": "C8",
+                "x": 71.66,
+                "y": 35.49
+            },
+            "chapter_id": 9,
+            "treasures": [
+                80
+            ],
+            "rewards": [
+                "5 metal"
+            ]
+        },
+        {
+            "id": 110,
+            "name": "Guardian's Temple",
+            "game": "fh",
+            "coordinates": {
+                "name": "R6",
+                "x": 13.25,
+                "y": 27.9
+            },
+            "chapter_id": 9,
+            "treasures": [
+                75
+            ],
+            "rewards": [
+                "“Rose Guantlet” blueprint (item 75)"
+            ]
+        },
+        {
+            "id": 111,
+            "name": "Ice Cave",
+            "game": "fh",
+            "coordinates": {
+                "name": "O1",
+                "x": 24.92,
+                "y": 11.38
+            },
+            "chapter_id": 9,
+            "rewards": [
+                "“Cracked Mirror” (item 236)"
+            ]
+        },
+        {
+            "id": 112,
+            "name": "Raised by Wolves",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 66.0,
+                "y": 57.9
+            },
+            "chapter_id": 9,
+            "rewards": [
+                "15xp"
+            ]
+        },
+        {
+            "id": 113,
+            "name": "Lush Grotto",
+            "game": "fh",
+            "coordinates": {
+                "name": "G9",
+                "x": 58.8,
+                "y": 38.5
+            },
+            "chapter_id": 10,
+            "rewards": [
+                "4 herb resources"
+            ]
+        },
+        {
+            "id": 114,
+            "name": "Work Freeze",
+            "game": "fh",
+            "coordinates": {
+                "name": "O7",
+                "x": 25.05,
+                "y": 30.2
+            },
+            "chapter_id": 10,
+            "links_to": [
+                115
+            ],
+            "rewards": [
+                "5 hides"
+            ]
+        },
+        {
+            "id": 115,
+            "name": "Pylon Problems",
+            "game": "fh",
+            "coordinates": {
+                "name": "O8",
+                "x": 27.36,
+                "y": 33.19
+            },
+            "chapter_id": 10,
+            "links_to": [
+                116
+            ],
+            "linked_from": [
+                114
+            ],
+            "rewards": [
+                "15xp"
+            ]
+        },
+        {
+            "id": 116,
+            "name": "Caravan Guards",
+            "game": "fh",
+            "coordinates": {
+                "name": "O8",
+                "x": 24.02,
+                "y": 35.41
+            },
+            "chapter_id": 10,
+            "linked_from": [
+                115
+            ],
+            "rewards": [
+                "based on success level: 1 morale, 1 lumber, 1 metal, 1 hide, 2 material resources each, 10xp, Gain one random item blueprint, Gain 1 prosperity, 2 morale"
+            ]
+        },
+        {
+            "id": 117,
+            "name": "A Waiting Game",
+            "game": "fh",
+            "coordinates": {
+                "name": "F7",
+                "x": 64.53,
+                "y": 30.4
+            },
+            "chapter_id": 10,
+            "rewards": [
+                "4 hide, 10 gold each"
+            ]
+        },
+        {
+            "id": 118,
+            "name": "Lurker Necromancy",
+            "game": "fh",
+            "coordinates": {
+                "name": "F4",
+                "x": 63.45,
+                "y": 22.83
+            },
+            "chapter_id": 10,
+            "rewards": [
+                "“Amulet of Eternal Life” (Item 66), loot cards for each token"
+            ]
+        },
+        {
+            "id": 119,
+            "name": "Radiant Dust",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q1",
+                "x": 15.84,
+                "y": 10.88
+            },
+            "chapter_id": 10,
+            "rewards": [
+                "trade in “dust” for “Scepter of Control” (item 203) &/or a material resource &/or herb resource"
+            ]
+        },
+        {
+            "id": 120,
+            "name": "Under the Influence",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 10.9,
+                "y": 77.88
+            },
+            "chapter_id": 10,
+            "treasures": [
+                50
+            ],
+            "links_to": [
+                121
+            ],
+            "rewards": [
+                "1 morale, 2 lumber"
+            ]
+        },
+        {
+            "id": 121,
+            "name": "Black Memories",
+            "game": "fh",
+            "coordinates": {
+                "name": "C13",
+                "x": 75.75,
+                "y": 50.89
+            },
+            "chapter_id": 10,
+            "linked_from": [
+                120
+            ],
+            "rewards": [
+                "2 morale OR item 193 OR 3 inspiration"
+            ]
+        },
+        {
+            "id": 122,
+            "name": "The Eternal Crave",
+            "game": "fh",
+            "coordinates": {
+                "name": "H10",
+                "x": 52.64,
+                "y": 41.34
+            },
+            "chapter_id": 10,
+            "treasures": [
+                31
+            ],
+            "rewards": [
+                "10 gold each OR??? 15xp, check mark"
+            ]
+        },
+        {
+            "id": 123,
+            "name": "The Titan",
+            "game": "fh",
+            "coordinates": {
+                "name": "K5",
+                "x": 43.56,
+                "y": 24.16
+            },
+            "chapter_id": 10,
+            "treasures": [
+                52
+            ],
+            "rewards": [
+                "1 morale, 1 inspiration"
+            ]
+        },
+        {
+            "id": 124,
+            "name": "A Growing Problem",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 74.48,
+                "y": 62.66
+            },
+            "chapter_id": 10,
+            "links_to": [
+                125
+            ],
+            "rewards": [
+                "15xp,"
+            ]
+        },
+        {
+            "id": 125,
+            "name": "The Longest Second",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 78.8,
+                "y": 61.37
+            },
+            "chapter_id": 10,
+            "treasures": [
+                14
+            ],
+            "linked_from": [
+                124
+            ],
+            "rewards": [
+                "“Temporal Amulet” (item 194)"
+            ]
+        },
+        {
+            "id": 126,
+            "name": "Joseph the Lion",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 80.3,
+                "y": 59.18
+            },
+            "chapter_id": 10,
+            "rewards": [
+                "10 gold"
+            ]
+        },
+        {
+            "id": 127,
+            "name": "Derelict Freighter",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 60.5,
+                "y": 81.85
+            },
+            "chapter_id": 10,
+            "treasures": [
+                30
+            ],
+            "rewards": [
+                "based on # of crates looted: 10 gold, 2 lumber, “Tri-Corner Hat” (item 195), Gain 1 prosperity"
+            ]
+        },
+        {
+            "id": 128,
+            "name": "A Tall Drunken Tale",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 55.2,
+                "y": 73.6
+            },
+            "chapter_id": 10,
+            "treasures": [
+                54
+            ],
+            "links_to": [
+                129
+            ],
+            "rewards": [
+                "1 morale OR 2 morale OR 3 morale + “Befuddling Mug” (item 215)"
+            ]
+        },
+        {
+            "id": 129,
+            "name": "How to Lay an Ambush",
+            "game": "fh",
+            "coordinates": {
+                "name": "J9",
+                "x": 49.5,
+                "y": 37.8
+            },
+            "chapter_id": 10,
+            "treasures": [
+                78
+            ],
+            "links_to": [
+                130
+            ],
+            "linked_from": [
+                128
+            ],
+            "rewards": [
+                "check,"
+            ]
+        },
+        {
+            "id": 130,
+            "name": "And Then, a Stream",
+            "game": "fh",
+            "coordinates": {
+                "name": "H8",
+                "x": 54.5,
+                "y": 35.6
+            },
+            "chapter_id": 10,
+            "treasures": [
+                11
+            ],
+            "linked_from": [
+                129
+            ],
+            "rewards": [
+                "lose 3 morale, gain Gain 1 prosperity, 10 gold OR 5 collective gold per token carried"
+            ]
+        },
+        {
+            "id": 131,
+            "name": "The Dancing Iceberg",
+            "game": "fh",
+            "coordinates": {
+                "name": "K2",
+                "x": 44.43,
+                "y": 13.81
+            },
+            "chapter_id": 10,
+            "rewards": [
+                "10xp, item 237"
+            ]
+        },
+        {
+            "id": 132,
+            "name": "Temple of Feline Power",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q6",
+                "x": 19.54,
+                "y": 29.14
+            },
+            "chapter_id": 11,
+            "links_to": [
+                133
+            ],
+            "rewards": [
+                "1 inspiration"
+            ]
+        },
+        {
+            "id": 133,
+            "name": "Bolt",
+            "game": "fh",
+            "coordinates": {
+                "name": "P6",
+                "x": 21.12,
+                "y": 27.03
+            },
+            "chapter_id": 11,
+            "treasures": [
+                34
+            ],
+            "linked_from": [
+                132
+            ],
+            "rewards": [
+                "“Cracked Idol” (item 238)"
+            ]
+        },
+        {
+            "id": 134,
+            "name": "Tower of Knowledge",
+            "game": "fh",
+            "coordinates": {
+                "name": "R1",
+                "x": 12.03,
+                "y": 10.6
+            },
+            "chapter_id": 10,
+            "rewards": [
+                "“Tome of Conflict” (item 219)"
+            ]
+        },
+        {
+            "id": 135,
+            "name": "Belara's Keep",
+            "game": "fh",
+            "coordinates": {
+                "name": "O4",
+                "x": 24.23,
+                "y": 21.55
+            },
+            "chapter_id": 10,
+            "rewards": [
+                "2 morale, Gain 2 prosperity, 1 inspiration, “Belara's quill” (tem 220)"
+            ]
+        },
+        {
+            "id": 136,
+            "name": "Abandoned Hideout",
+            "game": "fh",
+            "coordinates": {
+                "name": "I2",
+                "x": 46.88,
+                "y": 14.83
+            },
+            "chapter_id": 10,
+            "treasures": [
+                83
+            ],
+            "rewards": [
+                "20 gold apiece, “Ancient” Coin (item 245)"
+            ]
+        },
+        {
+            "id": 137,
+            "name": "Pirate Queen's Haul",
+            "game": "fh",
+            "coordinates": {
+                "name": "D3",
+                "x": 71.86,
+                "y": 19.58
+            },
+            "chapter_id": 10,
+            "rewards": [
+                "Gain 2 prosperity, 3 morale, 30 gold each, upgrade a money loot with a +1"
             ]
         }
     ],
     "chapters": [
         {
-            "id": 1,
-            "name": "Intro"
+            "-id": 1,
+            "name": "Introduction"
         },
         {
-            "id": 2,
-            "name": "Infectious"
+            "-id": 2,
+            "name": "Algox"
         },
         {
-            "id": 3,
-            "name": "Wonderous"
+            "-id": 3,
+            "name": "Lurker"
         },
         {
-            "id": 4,
-            "name": "Chilly"
+            "-id": 4,
+            "name": "Algox"
         },
         {
-            "id": 5,
-            "name": "Sail"
+            "-id": 5,
+            "name": "Algox"
         },
         {
-            "id": 6,
-            "name": "Tainted"
+            "-id": 6,
+            "name": "Unfettered"
         },
         {
-            "id": 100,
-            "name": "Solo Quests"
-        },
-        {
-            "id": 101,
+            "-id": 7,
             "name": "Personal Quests"
         },
         {
-            "id": 102,
-            "name": "Road Events"
+            "-id": 8,
+            "name": "Puzzle Book"
         },
         {
-            "id": 103,
-            "name": "City Events"
+            "-id": 9,
+            "name": "Random Scenarios"
         },
         {
-            "id": 104,
-            "name": "Side Quests"
+            "-id": 10,
+            "name": "Other"
         },
         {
-            "id": 12,
-            "name": "Beetle Scenarios (Add-on)"
-        },
-        {
-            "id": 13,
-            "name": "Tools Scenarios (Add-on)"
-        },
-        {
-            "id": 14,
-            "name": "Bleeding Claw Scenarios (Add-on)"
+            "-id": 11,
+            "name": "Job Postings"
         }
     ],
     "regions": [
+    ],
+    "overlays": [
         {
-            "id": 1,
-            "name": "Gloomhaven"
+            "id": "W",
+            "coordinates": {
+                "name": "M7",
+                "x": 29.78,
+                "y": 28.38
+            },
+            "linked_from": [
+                2,
+                3
+            ]
+        },
+        {
+            "id": "X",
+            "coordinates": {
+                "name": "C7",
+                "x": 74.62,
+                "y": 25.74
+            },
+            "linked_from": [
+                8
+            ]
+        },
+        {
+            "id": "Y",
+            "coordinates": {
+                "name": "C10",
+                "x": 66.06,
+                "y": 36.42
+            },
+            "linked_from": [
+                16
+            ]
+        },
+        {
+            "id": "Z",
+            "coordinates": {
+                "name": "F2",
+                "x": 55.47,
+                "y": 9.79
+            },
+            "linked_from": [
+                42
+            ]
         }
     ]
 }
