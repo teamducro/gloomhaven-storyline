@@ -107,6 +107,16 @@
                             {{ $t('No treasures available') }}.
                         </p>
 
+                        <div class="my-2" v-if="scenario.loot && Object.keys(scenario.loot).length > 0">
+                            <h2 class="text-white">{{ $t('Loot') }}</h2>
+                            <ul class="mt-2">
+                                <li class="flex" v-if="value > 0" v-for="(value, type) in scenario.loot" :key="type">
+                                    <inline-svg :src="'resources/'+type" class="mr-2 text-white"/>
+                                    {{ $t(type) }} x {{ value }}
+                                </li>
+                            </ul>
+                        </div>
+
                         <template id="achievements" v-for="(x, is_global) in achievements">
                             <template v-for="(y, is_awarded) in x">
                                 <div class="my-2 flex flex-col items-start"

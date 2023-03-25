@@ -221,7 +221,24 @@ export default {
                     '{LEGS}': '<webp src="/img/icons/equipment/legs.png" alt="legs" width="20"/>',
                     '{SMALL-ITEM}': '<webp src="/img/icons/equipment/small-item.png" alt="small-item" width="20"/>',
                     '{ONE-HAND}': '<webp src="/img/icons/equipment/one-hand.png" alt="one-hand" width="20"/>',
-                    '{TWO-HANDS}': '<webp src="/img/icons/equipment/two-hands.png" alt="two-hands" width="20"/>'
+                    '{TWO-HANDS}': '<webp src="/img/icons/equipment/two-hands.png" alt="two-hands" width="20"/>',
+
+                    // Resources
+                    '{CORPSECAP}': '<inline-svg src="resources/corpsecap"/>',
+                    '{ALGOX}': '<inline-svg src="resources/algox"/>',
+                    '{ARROWVINE}': '<inline-svg src="resources/arrowvine"/>',
+                    '{AXENUT}': '<inline-svg src="resources/axenut"/>',
+                    '{FLAMEFRUIT}': '<inline-svg src="resources/flamefruit"/>',
+                    '{COINS}': '<inline-svg src="resources/coins"/>',
+                    '{GOLD}': '<inline-svg src="resources/gold"/>',
+                    '{HIDE}': '<inline-svg src="resources/hide"/>',
+                    '{LUMBER}': '<inline-svg src="resources/lumber"/>',
+                    '{LURKERS}': '<inline-svg src="resources/lurkers"/>',
+                    '{METAL}': '<inline-svg src="resources/metal"/>',
+                    '{TREASURE}': '<inline-svg src="resources/random-item-treasure"/>',
+                    '{ROCKROOT}': '<inline-svg src="resources/rockroot"/>',
+                    '{SNOWTHISTLE}': '<inline-svg src="resources/snowthistle"/>',
+                    '{UNFETTERED}': '<inline-svg src="resources/unfettered"/>',
                 }).each((icon, key) => {
                     text = text.replaceAll(key, icon);
                 });

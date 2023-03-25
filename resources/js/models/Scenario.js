@@ -37,6 +37,7 @@ class Scenario {
         this.treasures = data.treasures || [];
         this.treasures_from = collect(data.treasures_from);
         this.treasures_to = collect(data.treasures_to);
+        this.loot = data.loot || {};
         this.unlockedTreasures = [];
         this.achievements_from_treasures = collect(data.achievements_from_treasures);
         this._rewards = collect(data.rewards);
