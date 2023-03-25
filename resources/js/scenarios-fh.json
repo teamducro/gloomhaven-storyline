@@ -16,7 +16,13 @@
             ],
             "links_to": [
                 1
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2
+            }
         },
         {
             "root": true,
@@ -38,7 +44,15 @@
             ],
             "rewards": [
                 "Gain 2 + X morale, where X is the number of City Guards still on the map."
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 5,
+                "metal": 3,
+                "hide": 3,
+                "rockroot": 1,
+                "snowthistle": 2
+            }
         },
         {
             "id": 2,
@@ -68,7 +82,15 @@
             ],
             "rewards": [
                 "Gain 1 ✔ each"
-            ]
+            ],
+            "loot": {
+                "coins": 4,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
         },
         {
             "id": 3,
@@ -98,7 +120,15 @@
             ],
             "rewards": [
                 "Gain 1 ✔ each"
-            ]
+            ],
+            "loot": {
+                "coins": 4,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
         },
         {
             "id": 4,
@@ -141,7 +171,15 @@
                     "Gain 1 prosperity"
                 ]
             ],
-            "prompt": "algoxAltercation"
+            "prompt": "algoxAltercation",
+            "loot": {
+                "coins": 6,
+                "lumber": 3,
+                "metal": 5,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 2
+            }
         },
         {
             "id": 5,
@@ -165,7 +203,15 @@
             ],
             "rewards": [
                 "Gain 2 Lumber collective"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 4,
+                "metal": 3,
+                "hide": 1,
+                "corpsecap": 2,
+                "rockroot": 2
+            }
         },
         {
             "id": 6,
@@ -186,7 +232,16 @@
             ],
             "rewards": [
                 "Gain 2 Metal collective"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 4,
+                "metal": 1,
+                "hide": 1,
+                "arrowvine": 2,
+                "axenut": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 7,
@@ -210,7 +265,15 @@
             ],
             "rewards": [
                 "10 experience each"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "axenut": 1,
+                "snowthistle": 2
+            }
         },
         {
             "id": 8,
@@ -218,7 +281,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "G8",
-                "x": 61.0,
+                "x": 61,
                 "y": 35.66
             },
             "chapter_id": 6,
@@ -231,7 +294,15 @@
             ],
             "rewards": [
                 "Gain 1 collective Lumber and 2 collective Hides"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 5,
+                "hide": 5,
+                "arrowvine": 1,
+                "axenut": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 9,
@@ -254,7 +325,14 @@
             ],
             "rewards": [
                 "Gain 2 collective Corpscap"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 5,
+                "metal": 3,
+                "corpsecap": 1,
+                "rockroot": 2
+            }
         },
         {
             "id": 10,
@@ -278,7 +356,14 @@
             ],
             "rewards": [
                 "Gain 1 morale and 1 inspiration."
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "hide": 3,
+                "arrowvine": 2,
+                "axenut": 2
+            }
         },
         {
             "id": 11,
@@ -301,7 +386,15 @@
             ],
             "rewards": [
                 "Gain 1 morale and 1 inspiration."
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 4,
+                "metal": 3,
+                "hide": 3,
+                "axenut": 2,
+                "flamefruit": 1
+            }
         },
         {
             "id": 12,
@@ -309,7 +402,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "K8",
-                "x": 43.0,
+                "x": 43,
                 "y": 35.63
             },
             "chapter_id": 4,
@@ -324,7 +417,14 @@
             ],
             "rewards": [
                 "Gain 15xp each"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 4,
+                "corpsecap": 1,
+                "rockroot": 2
+            }
         },
         {
             "id": 13,
@@ -345,9 +445,17 @@
             "linked_from": [
                 7
             ],
-            "rewards":[
+            "rewards": [
                 "Gain “Dead Raven” (item 233)"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "hide": 3,
+                "arrowvine": 2,
+                "flamefruit": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 14,
@@ -372,7 +480,14 @@
                 "Choose one: Unlock Coral class OR Unlock Sea Weed class box.",
                 "Gain “Coral Shard” and “Shard Seeker” campaign stickers.",
                 "Add event WO-81 to the winter outpost deck."
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 4,
+                "metal": 2,
+                "hide": 5,
+                "snowthistle": 2
+            }
         },
         {
             "id": 15,
@@ -398,7 +513,15 @@
                 "Gain 1 lumber",
                 "Gain 1 metal",
                 "Gain 1 hide"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 5,
+                "hide": 2,
+                "corpsecap": 1,
+                "flamefruit": 1
+            }
         },
         {
             "id": 16,
@@ -423,7 +546,13 @@
             "rewards": [
                 "Gain 5xp each",
                 "Gain 1 inspiration"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 5,
+                "rockroot": 2
+            }
         },
         {
             "id": 17,
@@ -443,7 +572,13 @@
             ],
             "rewards": [
                 "Gain 1 ✔ each"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 5,
+                "metal": 2,
+                "corpsecap": 2
+            }
         },
         {
             "id": 18,
@@ -465,7 +600,16 @@
             "rewards": [
                 "Gain 1 morale",
                 "Gain one random item blueprint"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 3,
+                "metal": 2,
+                "hide": 5,
+                "arrowvine": 2,
+                "corpsecap": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 19,
@@ -487,7 +631,15 @@
             "rewards": [
                 "Gain 1 morale",
                 "Gain one random item blueprint"
-            ]
+            ],
+            "loot": {
+                "coins": 11,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 20,
@@ -507,7 +659,14 @@
             ],
             "rewards": [
                 "Gain 15 gold each"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 5,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
         },
         {
             "id": 21,
@@ -524,7 +683,15 @@
             ],
             "rewards": [
                 "Gain 2 prosperity"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 4,
+                "metal": 3,
+                "hide": 3,
+                "flamefruit": 1,
+                "snowthistle": 2
+            }
         },
         {
             "id": 22,
@@ -545,7 +712,13 @@
             "rewards": [
                 "Lose 1 collective Lumber for each set of five hexes with water tiles on tile 7-G",
                 "Gain 15 xp each"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 5,
+                "hide": 2,
+                "arrowvine": 2
+            }
         },
         {
             "id": 23,
@@ -563,7 +736,14 @@
             ],
             "rewards": [
                 "Gain one random item blueprint"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 4,
+                "corpsecap": 2,
+                "flamefruit": 1
+            }
         },
         {
             "id": 24,
@@ -583,7 +763,15 @@
             ],
             "rewards": [
                 "Gain one random item blueprint"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "axenut": 2,
+                "flamefruit": 1
+            }
         },
         {
             "id": 25,
@@ -614,7 +802,14 @@
             "rewards": [
                 "Gain 2 lumber",
                 "Gain 2 metal"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 4,
+                "arrowvine": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 26,
@@ -645,7 +840,14 @@
             ],
             "rewards": [
                 "Gain 10 px each"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 4,
+                "arrowvine": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 27,
@@ -668,7 +870,13 @@
                 "Gain 10 xp",
                 "Gain 1 ✓ each",
                 "Gain “Coral Shard” campaign sticker"
-            ]
+            ],
+            "loot": {
+                "coins": 13,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2
+            }
         },
         {
             "id": 28,
@@ -704,7 +912,15 @@
             ],
             "rewards": [
                 "lose morale,"
-            ]
+            ],
+            "loot": {
+                "coins": 11,
+                "lumber": 2,
+                "hide": 3,
+                "arrowvine": 1,
+                "axenut": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 29,
@@ -734,7 +950,15 @@
             ],
             "rewards": [
                 "3 morale, “Destroyer of Icespeakers” sticker"
-            ]
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "axenut": 1,
+                "snowthistle": 2
+            }
         },
         {
             "id": 30,
@@ -764,7 +988,15 @@
             ],
             "rewards": [
                 "3 morale, “Destroyer of Snowspeakers” sticker"
-            ]
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "axenut": 1,
+                "snowthistle": 2
+            }
         },
         {
             "id": 31,
@@ -788,7 +1020,15 @@
             ],
             "rewards": [
                 "5xp, 10 gold each"
-            ]
+            ],
+            "loot": {
+                "coins": 11,
+                "lumber": 2,
+                "metal": 3,
+                "arrowvine": 1,
+                "flamefruit": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 32,
@@ -809,7 +1049,14 @@
             "rewards": [
                 "Gain “Feathered CLoak” (item 69)",
                 "“Into the Forest” sticker"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "hide": 3,
+                "axenut": 2,
+                "flamefruit": 2
+            }
         },
         {
             "id": 33,
@@ -830,7 +1077,15 @@
             "rewards": [
                 "5xp per unrevealed dowsing rune",
                 "Gain “Ember Energy Source” (item 244)"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 5,
+                "hide": 3,
+                "axenut": 2,
+                "flamefruit": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 34,
@@ -848,7 +1103,8 @@
             ],
             "rewards": [
                 "“Coral Shard” Sticker"
-            ]
+            ],
+            "loot": {}
         },
         {
             "id": 35,
@@ -871,7 +1127,14 @@
             ],
             "rewards": [
                 "2 lumber, 2 metal, 2 hide"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "metal": 5,
+                "hide": 2,
+                "rockroot": 2
+            }
         },
         {
             "id": 36,
@@ -898,7 +1161,13 @@
             ],
             "rewards": [
                 "3 lumber, 3 metal"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 3,
+                "metal": 5,
+                "arrowvine": 2
+            }
         },
         {
             "id": 37,
@@ -928,7 +1197,14 @@
             ],
             "rewards": [
                 "3 lumber, 3 metal"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "metal": 3,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
         },
         {
             "id": 38,
@@ -952,7 +1228,14 @@
             ],
             "rewards": [
                 "10xp, check, 1 inspiration"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 5,
+                "hide": 3,
+                "arrowvine": 1,
+                "axenut": 2
+            }
         },
         {
             "id": 39,
@@ -975,7 +1258,15 @@
             ],
             "rewards": [
                 "lose 1 inspiration, +2 loot cards for each charactor"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 4,
+                "metal": 2,
+                "hide": 3,
+                "flamefruit": 1,
+                "snowthistle": 2
+            }
         },
         {
             "id": 40,
@@ -998,7 +1289,15 @@
             ],
             "rewards": [
                 "lose 1 inspiration, +2 loot cards for each charactor"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "metal": 4,
+                "hide": 2,
+                "arrowvine": 2,
+                "flamefruit": 1
+            }
         },
         {
             "id": 41,
@@ -1015,7 +1314,15 @@
             ],
             "rewards": [
                 "15 gold each, 2 Axenuts, “Coral Shard” sticker"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "corpsecap": 2,
+                "rockroot": 2
+            }
         },
         {
             "id": 42,
@@ -1036,7 +1343,14 @@
             ],
             "rewards": [
                 "2 checks, “Coral shard” sticker"
-            ]
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "metal": 2,
+                "flamefruit": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 43,
@@ -1056,7 +1370,14 @@
             ],
             "rewards": [
                 "10xp"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 4,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
         },
         {
             "id": 44,
@@ -1079,7 +1400,14 @@
             "rewards": [
                 "5 gold",
                 "Gain “Energizing Baton” (item 73)"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 4,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
         },
         {
             "id": 45,
@@ -1102,7 +1430,14 @@
             ],
             "rewards": [
                 "1 morale, check"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "hide": 5,
+                "flamefruit": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 46,
@@ -1122,7 +1457,15 @@
             ],
             "rewards": [
                 "1 morale, 10xp,"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 47,
@@ -1145,7 +1488,15 @@
             ],
             "rewards": [
                 "10 gold, 2 lumber"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "metal": 2,
+                "hide": 2,
+                "flamefruit": 2,
+                "rockroot": 2
+            }
         },
         {
             "id": 48,
@@ -1165,7 +1516,15 @@
             ],
             "rewards": [
                 "10xp, 2 metal"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 5,
+                "corpsecap": 2,
+                "snowthistle": 2
+            }
         },
         {
             "id": 49,
@@ -1188,7 +1547,13 @@
             ],
             "rewards": [
                 "5xp, 1 inspiration"
-            ]
+            ],
+            "loot": {
+                "coins": 13,
+                "metal": 3,
+                "hide": 2,
+                "snowthistle": 2
+            }
         },
         {
             "id": 50,
@@ -1208,7 +1573,13 @@
             ],
             "rewards": [
                 "lose 2 inspiration, gain 4 lumber+4 metal"
-            ]
+            ],
+            "loot": {
+                "coins": 13,
+                "lumber": 2,
+                "hide": 3,
+                "arrowvine": 2
+            }
         },
         {
             "id": 51,
@@ -1233,7 +1604,14 @@
             "rewards": [
                 "10xp",
                 "Gain “Shock Grenades blueprint” (item 74)"
-            ]
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "metal": 4,
+                "arrowvine": 1,
+                "flamefruit": 1
+            }
         },
         {
             "id": 52,
@@ -1259,7 +1637,15 @@
             ],
             "rewards": [
                 "1 morale, 1 inspiration"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 5,
+                "corpsecap": 2,
+                "snowthistle": 2
+            }
         },
         {
             "id": 53,
@@ -1279,7 +1665,15 @@
             ],
             "rewards": [
                 "2 checks, Coral Shard sticker"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 3,
+                "arrowvine": 2,
+                "axenut": 2
+            }
         },
         {
             "id": 54,
@@ -1303,7 +1697,15 @@
             ],
             "rewards": [
                 "2 checks, Coral Shard sticker"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 3,
+                "arrowvine": 2,
+                "axenut": 2
+            }
         },
         {
             "id": 55,
@@ -1323,7 +1725,15 @@
             ],
             "rewards": [
                 "2 morale, Gain 2 prosperity, unlock fist or snowflake, “friend of frostspeakers” sticker, +50 card to town guard deck"
-            ]
+            ],
+            "loot": {
+                "coins": 3,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 2
+            }
         },
         {
             "id": 56,
@@ -1343,7 +1753,15 @@
             ],
             "rewards": [
                 "1 morale, 1 inspiration, unlock fist class, “Friend of Icespeakers” sticker, +50 card to town guard deck"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 5,
+                "metal": 2,
+                "hide": 2,
+                "flamefruit": 2,
+                "rockroot": 2
+            }
         },
         {
             "id": 57,
@@ -1363,7 +1781,8 @@
             ],
             "rewards": [
                 "1 morale, 1 inspiration, unlock snowflake class, “Friend of Icespeakers” sticker, +50 card to town guard deck"
-            ]
+            ],
+            "loot": {}
         },
         {
             "id": 58,
@@ -1391,7 +1810,14 @@
             ],
             "rewards": [
                 "1 morale, “Key Card” (item 246), 3 lumber, 3 metal, 3 hides, prism class, “unfettered deacivation” sticker, +50 card to town guard deck"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 2,
+                "metal": 4,
+                "corpsecap": 1,
+                "flamefruit": 1
+            }
         },
         {
             "id": 59,
@@ -1419,7 +1845,13 @@
             ],
             "rewards": [
                 "2 morale, Gain 2 prosperity, gain “Key Card” (item 246), prism class, “unfettered allies” sticker, +50 card to town guard deck"
-            ]
+            ],
+            "loot": {
+                "coins": 11,
+                "metal": 4,
+                "axenut": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 60,
@@ -1437,7 +1869,16 @@
             ],
             "rewards": [
                 "2 morale, Gain 1 prosperity, 30xp, Unlock Coral class OR Sea Weed class, Crown reunited sticker, +50 card to town guard deck"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "arrowvine": 1,
+                "axenut": 1,
+                "corpsecap": 1,
+                "flamefruit": 1,
+                "rockroot": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 61,
@@ -1457,7 +1898,15 @@
             ],
             "rewards": [
                 "unlock Shards class"
-            ]
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "corpsecap": 2,
+                "rockroot": 2
+            }
         },
         {
             "id": 62,
@@ -1480,7 +1929,15 @@
             ],
             "rewards": [
                 "Gain 1 prosperity"
-            ]
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "arrowvine": 2,
+                "snowthistle": 2
+            }
         },
         {
             "id": 63,
@@ -1503,7 +1960,15 @@
             ],
             "rewards": [
                 "Gain 2 prosperity,"
-            ]
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "corpsecap": 2,
+                "rockroot": 2
+            }
         },
         {
             "id": 64,
@@ -1520,7 +1985,15 @@
             ],
             "rewards": [
                 "3 morale, Gain 3 prosperity, 3 checks each"
-            ]
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "axenut": 2,
+                "flamefruit": 2
+            }
         },
         {
             "id": 65,
@@ -1540,7 +2013,15 @@
             ],
             "rewards": [
                 "2 lumber, 2 metal"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 4,
+                "arrowvine": 2,
+                "snowthistle": 2
+            }
         },
         {
             "id": 66,
@@ -1560,7 +2041,19 @@
             ],
             "rewards": [
                 "“Elemental Stone” (item 212)"
-            ]
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "axenut": 1,
+                "corpsecap": 1,
+                "flamefruit": 1,
+                "rockroot": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 67,
@@ -1580,7 +2073,13 @@
             ],
             "rewards": [
                 "1 morale, Gain 1 prosperity"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3
+            }
         },
         {
             "id": 68,
@@ -1600,7 +2099,12 @@
             ],
             "rewards": [
                 "(3 weeks) 50 gold each for enhancements, if building 44 is built"
-            ]
+            ],
+            "loot": {
+                "lumber": 5,
+                "metal": 5,
+                "hide": 5
+            }
         },
         {
             "id": 69,
@@ -1617,7 +2121,14 @@
             ],
             "rewards": [
                 "Arrowvine, Axenut, Flamenut"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 5,
+                "hide": 4,
+                "axenut": 2,
+                "flamefruit": 1
+            }
         },
         {
             "id": 70,
@@ -1637,7 +2148,14 @@
             ],
             "rewards": [
                 "Gain 1 Prosperity"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "hide": 3,
+                "axenut": 2,
+                "flamefruit": 2
+            }
         },
         {
             "id": 71,
@@ -1658,7 +2176,13 @@
             ],
             "rewards": [
                 "damage even building between 71-89 & 10xp"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4
+            }
         },
         {
             "id": 72,
@@ -1681,7 +2205,13 @@
             ],
             "rewards": [
                 "check"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 3,
+                "metal": 3,
+                "corpsecap": 2
+            }
         },
         {
             "id": 73,
@@ -1704,7 +2234,14 @@
             ],
             "rewards": [
                 "3 wood + optional friend of the fish king sticker"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 5,
+                "hide": 3,
+                "arrowvine": 2,
+                "flamefruit": 1
+            }
         },
         {
             "id": 74,
@@ -1725,7 +2262,15 @@
             ],
             "rewards": [
                 "Gain one random item blueprint"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "metal": 2,
+                "hide": 3,
+                "arrowvine": 2,
+                "flamefruit": 1
+            }
         },
         {
             "id": 75,
@@ -1750,7 +2295,14 @@
             ],
             "rewards": [
                 "10 gold,"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "metal": 2,
+                "hide": 5,
+                "axenut": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 76,
@@ -1774,7 +2326,14 @@
             ],
             "rewards": [
                 "“Wave Blade” (item 201)"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "metal": 2,
+                "hide": 5,
+                "axenut": 1,
+                "snowthistle": 2
+            }
         },
         {
             "id": 77,
@@ -1783,7 +2342,7 @@
             "coordinates": {
                 "name": "B1",
                 "x": 79.85,
-                "y": 11.0
+                "y": 11
             },
             "chapter_id": 7,
             "linked_from": [
@@ -1792,7 +2351,15 @@
             ],
             "rewards": [
                 "“Wave Blade” (item 201)"
-            ]
+            ],
+            "loot": {
+                "coins": 4,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "corpsecap": 2,
+                "flamefruit": 2
+            }
         },
         {
             "id": 78,
@@ -1810,7 +2377,15 @@
             ],
             "rewards": [
                 "10xp"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 4,
+                "arrowvine": 2,
+                "rockroot": 2
+            }
         },
         {
             "id": 79,
@@ -1830,7 +2405,14 @@
             ],
             "rewards": [
                 "3 morale"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 5,
+                "hide": 2,
+                "corpsecap": 2
+            }
         },
         {
             "id": 80,
@@ -1851,7 +2433,15 @@
             ],
             "rewards": [
                 "2 lumber, 2 metal, 2 hides, 2 morale"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 3,
+                "hide": 2,
+                "axenut": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 81,
@@ -1868,7 +2458,14 @@
             ],
             "rewards": [
                 "Gain 1 prosperity, “Aesther Robe blueprint” (item 70)"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 2,
+                "metal": 5,
+                "hide": 2,
+                "rockroot": 1
+            }
         },
         {
             "id": 82,
@@ -1882,7 +2479,13 @@
             "chapter_id": 10,
             "rewards": [
                 "Gain 2 prosperity+3 forgotten cirlces items (153,159,161) OR ???"
-            ]
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 1,
+                "rockroot": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 83,
@@ -1896,7 +2499,16 @@
             "chapter_id": 11,
             "rewards": [
                 "“Giant Piranha Pig Spine” (item 202)"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "arrowvine": 2,
+                "flamefruit": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 84,
@@ -1910,7 +2522,13 @@
             "chapter_id": 11,
             "rewards": [
                 "item 234 (ooze vial), brummix sticker"
-            ]
+            ],
+            "loot": {
+                "coins": 15,
+                "lumber": 3,
+                "metal": 3,
+                "corpsecap": 2
+            }
         },
         {
             "id": 85,
@@ -1924,7 +2542,15 @@
             "chapter_id": 11,
             "rewards": [
                 "15xp, check"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 2,
+                "metal": 3,
+                "hide": 4,
+                "rockroot": 2,
+                "snowthistle": 1
+            }
         },
         {
             "id": 86,
@@ -1932,7 +2558,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 71.0,
+                "x": 71,
                 "y": 60.4
             },
             "chapter_id": 11,
@@ -1941,7 +2567,15 @@
             ],
             "rewards": [
                 "2 morale"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 4,
+                "hide": 2,
+                "arrowvine": 2,
+                "axenut": 1,
+                "flamefruit": 1
+            }
         },
         {
             "id": 87,
@@ -1962,7 +2596,16 @@
             ],
             "rewards": [
                 "1-2 inspiration,"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 3,
+                "arrowvine": 1,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 88,
@@ -1982,7 +2625,15 @@
             ],
             "rewards": [
                 "2 morale"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 4,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 89,
@@ -1999,7 +2650,15 @@
             ],
             "rewards": [
                 "2 Rockroot, 2 lumber"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "arrowvine": 2,
+                "flamefruit": 1
+            }
         },
         {
             "id": 90,
@@ -2016,7 +2675,13 @@
             ],
             "rewards": [
                 "check, 10 gold per numbered token looted, lose 10 gold or 5 gold + muddle & curse"
-            ]
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "hide": 4,
+                "snowthistle": 2
+            }
         },
         {
             "id": 91,
@@ -2033,7 +2698,14 @@
             ],
             "rewards": [
                 "2 lumber, 1 morale"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 4,
+                "hide": 4,
+                "flamefruit": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 92,
@@ -2047,7 +2719,15 @@
             "chapter_id": 11,
             "rewards": [
                 "lose 2.5 loot per charactor, HE-RO-IC-S pet after 1 week if building 88 is built"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 4,
+                "metal": 3,
+                "hide": 2,
+                "axenut": 2,
+                "flamefruit": 1
+            }
         },
         {
             "id": 93,
@@ -2061,7 +2741,15 @@
             "chapter_id": 11,
             "rewards": [
                 "“Small Rat” (Item 235) OR “Roasted Fowl” (item 79)"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 4,
+                "metal": 2,
+                "hide": 2,
+                "axenut": 1,
+                "flamefruit": 1
+            }
         },
         {
             "id": 94,
@@ -2082,7 +2770,14 @@
             ],
             "rewards": [
                 "10xp"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 3,
+                "metal": 5,
+                "arrowvine": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 95,
@@ -2099,7 +2794,14 @@
             ],
             "rewards": [
                 "1 morale, 10 gold"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 2,
+                "corpsecap": 2,
+                "snowthistle": 2
+            }
         },
         {
             "id": 96,
@@ -2119,7 +2821,14 @@
             ],
             "rewards": [
                 "1 morale, 5xp"
-            ]
+            ],
+            "loot": {
+                "coins": 14,
+                "lumber": 1,
+                "metal": 3,
+                "axenut": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 97,
@@ -2128,7 +2837,7 @@
             "coordinates": {
                 "name": "D12",
                 "x": 71.03,
-                "y": 48.0
+                "y": 48
             },
             "chapter_id": 11,
             "links_to": [
@@ -2139,7 +2848,12 @@
             ],
             "rewards": [
                 "5 metal,"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 4
+            }
         },
         {
             "id": 98,
@@ -2160,7 +2874,14 @@
             ],
             "rewards": [
                 "Gain 1 prosperity"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 1,
+                "metal": 4,
+                "hide": 3,
+                "rockroot": 2
+            }
         },
         {
             "id": 99,
@@ -2177,7 +2898,14 @@
             ],
             "rewards": [
                 "10 gold"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "arrowvine": 2
+            }
         },
         {
             "id": 100,
@@ -2200,7 +2928,10 @@
             ],
             "rewards": [
                 "all loot is $, 5 gold, 10xp"
-            ]
+            ],
+            "loot": {
+                "coins": 15
+            }
         },
         {
             "id": 101,
@@ -2220,7 +2951,16 @@
             ],
             "rewards": [
                 "check, 10xp,"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "arrowvine": 1,
+                "rockroot": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 102,
@@ -2240,7 +2980,10 @@
             ],
             "rewards": [
                 "all loot is gold, 20xp,"
-            ]
+            ],
+            "loot": {
+                "coins": 15
+            }
         },
         {
             "id": 103,
@@ -2257,7 +3000,10 @@
             ],
             "rewards": [
                 "loot is $, check, 30xp,10 gold"
-            ]
+            ],
+            "loot": {
+                "coins": 15
+            }
         },
         {
             "id": 104,
@@ -2274,7 +3020,15 @@
             ],
             "rewards": [
                 "2 Snowthistle"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 2,
+                "axenut": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 105,
@@ -2294,7 +3048,15 @@
             ],
             "rewards": [
                 "2 Flamefruit"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 2,
+                "corpsecap": 1,
+                "flamefruit": 1
+            }
         },
         {
             "id": 106,
@@ -2311,7 +3073,15 @@
             ],
             "rewards": [
                 "“Key of Seasons” (item 213)"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "arrowvine": 2,
+                "rockroot": 2
+            }
         },
         {
             "id": 107,
@@ -2325,7 +3095,15 @@
             "chapter_id": 9,
             "rewards": [
                 "gain 1 material resource per completed episode OR gain 5 + “Cup of Ventillion” (item 214)"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "metal": 3,
+                "arrowvine": 1,
+                "axenut": 1,
+                "flamefruit": 1
+            }
         },
         {
             "id": 108,
@@ -2343,7 +3121,15 @@
             ],
             "rewards": [
                 "2 morale, 2 inspiration"
-            ]
+            ],
+            "loot": {
+                "coins": 15,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 109,
@@ -2360,7 +3146,14 @@
             ],
             "rewards": [
                 "5 metal"
-            ]
+            ],
+            "loot": {
+                "coins": 11,
+                "lumber": 2,
+                "metal": 4,
+                "flamefruit": 1,
+                "rockroot": 2
+            }
         },
         {
             "id": 110,
@@ -2377,7 +3170,15 @@
             ],
             "rewards": [
                 "“Rose Guantlet” blueprint (item 75)"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 2,
+                "metal": 3,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 111,
@@ -2391,7 +3192,15 @@
             "chapter_id": 9,
             "rewards": [
                 "“Cracked Mirror” (item 236)"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 1,
+                "metal": 3,
+                "hide": 3,
+                "arrowvine": 2,
+                "corpsecap": 1
+            }
         },
         {
             "id": 112,
@@ -2399,13 +3208,21 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 66.0,
+                "x": 66,
                 "y": 57.9
             },
             "chapter_id": 9,
             "rewards": [
                 "15xp"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 1,
+                "metal": 3,
+                "hide": 5,
+                "axenut": 1,
+                "rockroot": 2
+            }
         },
         {
             "id": 113,
@@ -2419,7 +3236,17 @@
             "chapter_id": 10,
             "rewards": [
                 "4 herb resources"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "arrowvine": 2,
+                "axenut": 1,
+                "corpsecap": 1,
+                "flamefruit": 1,
+                "rockroot": 2,
+                "snowthistle": 2
+            }
         },
         {
             "id": 114,
@@ -2436,7 +3263,14 @@
             ],
             "rewards": [
                 "5 hides"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "metal": 3,
+                "hide": 4,
+                "axenut": 1,
+                "snowthistle": 2
+            }
         },
         {
             "id": 115,
@@ -2456,7 +3290,16 @@
             ],
             "rewards": [
                 "15xp"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "arrowvine": 1,
+                "rockroot": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 116,
@@ -2473,7 +3316,16 @@
             ],
             "rewards": [
                 "based on success level: 1 morale, 1 lumber, 1 metal, 1 hide, 2 material resources each, 10xp, Gain one random item blueprint, Gain 1 prosperity, 2 morale"
-            ]
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "arrowvine": 1,
+                "axenut": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 117,
@@ -2487,7 +3339,15 @@
             "chapter_id": 10,
             "rewards": [
                 "4 hide, 10 gold each"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 4,
+                "hide": 6,
+                "arrowvine": 2,
+                "axenut": 1,
+                "flamefruit": 1
+            }
         },
         {
             "id": 118,
@@ -2501,7 +3361,15 @@
             "chapter_id": 10,
             "rewards": [
                 "“Amulet of Eternal Life” (Item 66), loot cards for each token"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "rockroot": 1,
+                "snowthistle": 2
+            }
         },
         {
             "id": 119,
@@ -2515,7 +3383,8 @@
             "chapter_id": 10,
             "rewards": [
                 "trade in “dust” for “Scepter of Control” (item 203) &/or a material resource &/or herb resource"
-            ]
+            ],
+            "loot": {}
         },
         {
             "id": 120,
@@ -2535,7 +3404,13 @@
             ],
             "rewards": [
                 "1 morale, 2 lumber"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4
+            }
         },
         {
             "id": 121,
@@ -2552,7 +3427,15 @@
             ],
             "rewards": [
                 "2 morale OR item 193 OR 3 inspiration"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 2,
+                "axenut": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 122,
@@ -2569,7 +3452,15 @@
             ],
             "rewards": [
                 "10 gold each OR??? 15xp, check mark"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 4,
+                "axenut": 1,
+                "rockroot": 2
+            }
         },
         {
             "id": 123,
@@ -2586,7 +3477,14 @@
             ],
             "rewards": [
                 "1 morale, 1 inspiration"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 2,
+                "metal": 6,
+                "flamefruit": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 124,
@@ -2603,7 +3501,15 @@
             ],
             "rewards": [
                 "15xp,"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 4,
+                "metal": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 125,
@@ -2623,7 +3529,15 @@
             ],
             "rewards": [
                 "“Temporal Amulet” (item 194)"
-            ]
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
         },
         {
             "id": 126,
@@ -2637,7 +3551,15 @@
             "chapter_id": 10,
             "rewards": [
                 "10 gold"
-            ]
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 2,
+                "flamefruit": 1,
+                "snowthistle": 2
+            }
         },
         {
             "id": 127,
@@ -2654,7 +3576,13 @@
             ],
             "rewards": [
                 "based on # of crates looted: 10 gold, 2 lumber, “Tri-Corner Hat” (item 195), Gain 1 prosperity"
-            ]
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 6,
+                "metal": 4,
+                "hide": 4
+            }
         },
         {
             "id": 128,
@@ -2674,7 +3602,16 @@
             ],
             "rewards": [
                 "1 morale OR 2 morale OR 3 morale + “Befuddling Mug” (item 215)"
-            ]
+            ],
+            "loot": {
+                "coins": 2,
+                "lumber": 3,
+                "metal": 1,
+                "hide": 8,
+                "arrowvine": 1,
+                "flamefruit": 2,
+                "snowthistle": 1
+            }
         },
         {
             "id": 129,
@@ -2697,7 +3634,15 @@
             ],
             "rewards": [
                 "check,"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 4,
+                "metal": 2,
+                "hide": 2,
+                "axenut": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 130,
@@ -2717,7 +3662,15 @@
             ],
             "rewards": [
                 "lose 3 morale, gain Gain 1 prosperity, 10 gold OR 5 collective gold per token carried"
-            ]
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 5,
+                "metal": 2,
+                "hide": 3,
+                "arrowvine": 2,
+                "flamefruit": 1
+            }
         },
         {
             "id": 131,
@@ -2731,7 +3684,8 @@
             "chapter_id": 10,
             "rewards": [
                 "10xp, item 237"
-            ]
+            ],
+            "loot": {}
         },
         {
             "id": 132,
@@ -2748,7 +3702,15 @@
             ],
             "rewards": [
                 "1 inspiration"
-            ]
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "corpsecap": 1
+            }
         },
         {
             "id": 133,
@@ -2768,7 +3730,15 @@
             ],
             "rewards": [
                 "“Cracked Idol” (item 238)"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "corpsecap": 1,
+                "rockroot": 2
+            }
         },
         {
             "id": 134,
@@ -2782,7 +3752,14 @@
             "chapter_id": 10,
             "rewards": [
                 "“Tome of Conflict” (item 219)"
-            ]
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "arrowvine": 1
+            }
         },
         {
             "id": 135,
@@ -2796,7 +3773,15 @@
             "chapter_id": 10,
             "rewards": [
                 "2 morale, Gain 2 prosperity, 1 inspiration, “Belara's quill” (tem 220)"
-            ]
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 2,
+                "corpsecap": 1,
+                "flamefruit": 1
+            }
         },
         {
             "id": 136,
@@ -2813,7 +3798,14 @@
             ],
             "rewards": [
                 "20 gold apiece, “Ancient” Coin (item 245)"
-            ]
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "hide": 4,
+                "arrowvine": 1,
+                "snowthistle": 1
+            }
         },
         {
             "id": 137,
@@ -2827,7 +3819,13 @@
             "chapter_id": 10,
             "rewards": [
                 "Gain 2 prosperity, 3 morale, 30 gold each, upgrade a money loot with a +1"
-            ]
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4
+            }
         }
     ],
     "chapters": [
@@ -2876,8 +3874,7 @@
             "name": "Job Postings"
         }
     ],
-    "regions": [
-    ],
+    "regions": [],
     "overlays": [
         {
             "id": "W",
