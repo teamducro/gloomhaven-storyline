@@ -24,13 +24,31 @@ describe('Items', () => {
         cy.get('#items').contains('Circlet of Elements').should('not.exist');
     });
 
-    it('It can search items', () => {
+    it('It can search items by name', () => {
         cy.visit('/tracker/#/items');
 
         utilities.assertTableCount('items', 14);
 
         cy.get('[name="item-search"]').type('boots');
         utilities.assertTableCount('items', 1);
+    });
+
+    it('It can search items by id', () => {
+        cy.visit('/tracker/#/items');
+
+        utilities.assertTableCount('items', 14);
+
+        cy.get('[name="item-search"]').type('3');
+        utilities.assertTableCount('items', 2);
+    });
+
+    it('It can search items by desc', () => {
+        cy.visit('/tracker/#/items');
+
+        utilities.assertTableCount('items', 14);
+
+        cy.get('[name="item-search"]').type('move');
+        utilities.assertTableCount('items', 2);
     });
 
     it('It can filter items', () => {

@@ -92,7 +92,7 @@ export default {
     "Retirement counter": "Retirement counter",
     "Reward": "Récompense | Récompenses",
     "Rewards": "Récompenses",
-    "Search name or nr": "Search name or nr",
+    "Search": "Recherche",
     "Set this counter to the amount of characters you have retired": "Set this counter to the amount of characters you have retired.",
     "Show all": "Show all",
     "Manage": "Manage",
