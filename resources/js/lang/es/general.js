@@ -92,7 +92,7 @@ export default {
     "Retirement counter": "Contador de PJ retirados",
     "Reward": "Recompensa | Recompensas",
     "Rewards": "Recompensas",
-    "Search name or nr": "Busca nombre o número",
+    "Search": "Buscar",
     "Set this counter to the amount of characters you have retired": "Fija el contador en la cantidad de personajes que has retirado.",
     "Show all": "Mostrar todo",
     "Manage": "Gestión",

@@ -92,7 +92,7 @@ export default {
     "Retirement counter": "Licznik emerytur",
     "Reward": "Nagroda | Nagrody",
     "Rewards": "Nagrody",
-    "Search name or nr": "Wyszukaj nazwę lub nr",
+    "Search": "Szukaj",
     "Set this counter to the amount of characters you have retired": "Ustaw liczbę postaci które przeszły w stan spoczynku.",
     "Show all": "Pokaż wszystkie",
     "Manage": "Zarządzaj",
