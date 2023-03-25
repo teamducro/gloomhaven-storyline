@@ -96,7 +96,7 @@ export default {
     "Retirement counter": "Retirement counter",
     "Reward": "Reward | Rewards",
     "Rewards": "Rewards",
-    "Search name or nr": "Search name or nr",
+    "Search": "Search",
     "Set this counter to the amount of characters you have retired": "Set this counter to the amount of characters you have retired.",
     "Show all": "Show all",
     "Manage": "Manage",

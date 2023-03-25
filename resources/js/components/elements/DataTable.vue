@@ -112,22 +112,37 @@ export default {
             }
 
             // Build search functions per column
-            const keys = Object.keys(this.search)
+            const colNames = Object.keys(this.search)
             let result = {}
-            keys.forEach(key => {
-                const searchString = this.search[key];
+            colNames.forEach(colName => {
+                const searchString = this.search[colName];
                 if (!searchString) {
                     return
                 }
-                result[key] = (input) => {
-                    if (!input) {
+
+                const searchFunc = (colVal, colName) => {
+                    if (!colVal) {
                         return false;
                     }
-                    
-                    input = this.translatable.includes(key) ? app.$t(input) : input;
-                    return Helpers.sanitize(input.toString()).includes(Helpers.sanitize(searchString.toString()));
+
+                    colVal = this.translatable.includes(colName) ? app.$t(colVal) : colVal;
+                    return Helpers.sanitize(colVal.toString()).includes(Helpers.sanitize(searchString.toString()));
+                }
+
+                // If column name contains a comma, it's a multi-column search, at least one column must match
+                if (colName.includes(',')) {
+                    const multiColNames = colName.split(',')
+                    multiColNames.forEach((col) => {
+                        result[col] = (_, __, row) => {
+                            return multiColNames.some((col) => searchFunc(row[col], col))
+                        }
+                    })
+                // Single column search
+                } else {
+                    result[colName] = searchFunc
                 }
             });
+
             return result;
         },
         filteredData() {
@@ -142,7 +157,7 @@ export default {
             const searchedColumns = Object.keys(search)
             const colMatch = (row, colName) => {
                 const colVal = row[colName]
-                return search[colName](colVal)
+                return search[colName](colVal, colName, row)
             }
             const rowMatch = (row) => (
                 !searchedColumns.some(col => !colMatch(row, col))

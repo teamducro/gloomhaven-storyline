@@ -92,7 +92,7 @@ export default {
     "Retirement counter": "Ruhestand-Zähler",
     "Reward": "Belohnung",
     "Rewards": "Belohnungen",
-    "Search name or nr": "Suche nach Name oder Nr",
+    "Search": "Suche",
     "Set this counter to the amount of characters you have retired": "Stell den Zähler auf die Anzahl der schon in Ruhestand geschickten Charaktere ein.",
     "Show all": "Alles anzeigen",
     "Manage": "Manage",

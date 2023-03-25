@@ -252,7 +252,7 @@ export default {
         ]
     },
     "gh-50": {
-        "name": "Ghost Forrest",
+        "name": "Ghost Fortress",
         "rewards": [
             "+3 reputation",
             "-2 prosperity"

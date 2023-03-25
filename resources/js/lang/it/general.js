@@ -92,7 +92,7 @@ export default {
     "Retirement counter": "Contatore ritiri",
     "Reward": "Ricompensa",
     "Rewards": "Ricompense",
-    "Search name or nr": "Cerca nome o numero",
+    "Search": "Ricerca",
     "Set this counter to the amount of characters you have retired": "Imposta questo contatore al numero di personaggi che hai ritirato.",
     "Show all": "Mostra tutto",
     "Manage": "Gestisci",

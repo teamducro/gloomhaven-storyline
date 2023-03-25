@@ -71,7 +71,7 @@
                         <input class="mdc-text-field__input" aria-labelledby="item-search"
                                type="text" name="item-search"
                                v-model="query" @keyup="applySearch">
-                        <span class="mdc-floating-label" id="item-search">{{ $t('Search name or nr') }}</span>
+                        <span class="mdc-floating-label" id="item-search">{{ $t('Search') }}</span>
                         <span class="mdc-line-ripple"></span>
                     </label>
                 </div>
@@ -249,7 +249,13 @@ export default {
                 const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
                 otherGames.forEach(game => {
                     if (game !== this.currentGame) {
-                        items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                        if (game === 'gh' && this.currentGame !== 'jotl') {
+                            const ghItems = this.calculateItemsGh([], this.sheet.prosperityIndex);
+                            items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
+                        } else {
+                            // Add all items for games without prosperity.
+                            items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                        }
                     }
                 });
             }
@@ -272,10 +278,10 @@ export default {
         },
         applySearch() {
             Vue.delete(this.search, 'number');
-            Vue.delete(this.search, 'name');
+            Vue.delete(this.search, 'name,desc');
 
             if (this.query) {
-                Vue.set(this.search, isNaN(this.query) ? 'name' : 'number', this.query);
+                Vue.set(this.search, isNaN(this.query) ? 'name,desc' : 'number', this.query);
             }
         },
         applyFilter(filter) {
