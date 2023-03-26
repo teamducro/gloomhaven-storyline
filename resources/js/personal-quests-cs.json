@@ -5,21 +5,11 @@
         "character_unlock": "BM",
         "progress": [
             {
-                "type": "checkbox",
+                "type": "number",
                 "name": "Kill ten Inox.",
                 "scenario_unlock": 33,
-                "value": [
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]
+                "value": 0,
+                "target": 10
             },
             {
                 "type": "checkbox",
