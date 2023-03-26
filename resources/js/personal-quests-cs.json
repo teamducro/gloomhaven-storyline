@@ -196,14 +196,14 @@
     },
     {
         "id": "343",
-        "name": "The Dying of Light",
+        "name": "Cruel Dominion",
         "character_unlock": "HO",
         "progress": [
             {
                 "type": "number",
-                "name": "Kill thirty enemies while {DARK} is Strong or Waning. Elite kills count double.",
+                "name": "Complete 10 scenarios during which you kill an enemy who has a negative condition.",
                 "value": 0,
-                "target": 30
+                "target": 10
             }
         ]
     },
