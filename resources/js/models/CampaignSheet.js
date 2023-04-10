@@ -14,7 +14,7 @@ class CampaignSheet {
         this.hash = data.hash;
 
         // Sheet fields
-        this.calender = data.calender || {
+        this.calendar = data.calendar || {
             week: 0,
             sections: {
                 5: [32.3],
@@ -29,17 +29,7 @@ class CampaignSheet {
         this.checks = {...data.checks};
         this.perks = {...data.perks};
         this.morale = data.morale || 0;
-        this.resources = data.resources || {
-            lumber: 0,
-            metal: 0,
-            hide: 0,
-            arrowvine: 0,
-            axenut: 0,
-            corpsecap: 0,
-            flamefruit: 0,
-            rockroot: 0,
-            snowthistle: 0
-        };
+        this.resources = data.resources || {};
         this.soldiers = data.soldiers || 0;
         this.inspiration = data.inspiration || 0;
         this.totalDefense = data.totalDefense || 0;
@@ -70,7 +60,18 @@ class CampaignSheet {
             hash: 'hash',
 
             // Sheet fields
-            calender: 'calender',
+            calendar: {'calendar': {
+                    week: 0,
+                    sections: {
+                        5: [32.3],
+                        10: [183.3, 21.4],
+                        20: [129.3],
+                        25: [183.3],
+                        30: [183.3],
+                        40: [184.1],
+                        60: [137.2],
+                    }
+                }},
             checks: {'checks': {}},
             perks: {'perks': {}},
             morale: 'morale',

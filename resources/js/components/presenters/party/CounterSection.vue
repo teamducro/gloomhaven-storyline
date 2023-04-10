@@ -2,12 +2,12 @@
     <div class="">
         <div class="mb-2 flex items-center">
             <slot name="title">
-                <add-links-and-icons class="flex items-center gap-2" tag="h2" :text="title"/>
+                <add-links-and-icons class="text-white flex items-center gap-2" tag="h2" :text="title"/>
             </slot>
             <rollback :loading="loading" ref="rollback"
                       :value.sync="currentValue"/>
         </div>
-        <number-field :value.sync="currentValue" :min="min" :max="max" :id="slugify(title)"/>
+        <number-field :value.sync="currentValue" :step="step" :min="min" :max="max" :id="slugify(title)"/>
     </div>
 </template>
 
@@ -28,6 +28,10 @@ export default {
         loading: {
             type: Boolean,
             default: false
+        },
+        step: {
+            type: Number,
+            default: 1
         },
         min: {
             type: Number,

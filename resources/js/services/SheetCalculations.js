@@ -2,8 +2,18 @@ import Helpers from "./Helpers";
 
 export default {
     methods: {
+        calculateDefense(morale) {
+            if (!morale) return 0;
+            if (morale <= 2) return -10;
+            if (morale <= 4) return -5;
+            if (morale <= 7) return 0;
+            if (morale <= 10) return 5;
+            if (morale <= 13) return 10;
+            if (morale <= 20) return 15;
+            return 0;
+        },
         calculateCostModifier(reputation) {
-            if (typeof reputation === 'undefined') {
+            if (!reputation) {
                 return 0;
             }
 

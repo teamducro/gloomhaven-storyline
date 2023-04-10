@@ -43,15 +43,9 @@ export default {
             const item = data.item || this.itemRepository.find(data.id);
             this.open(item);
         });
-        this.$bus.$on('open-scenario', (data) => {
-            this.close();
-        });
-        this.$bus.$on('close-item', () => {
-            this.close();
-        });
-        this.$bus.$on('game-selected', () => {
-            this.unsetItem();
-        });
+        this.$bus.$on('open-scenario', this.close);
+        this.$bus.$on('close-item', this.close);
+        this.$bus.$on('game-selected', this.unsetItem);
     },
     methods: {
         open(item) {

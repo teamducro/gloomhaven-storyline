@@ -55,6 +55,9 @@ module.exports = {
             minWidth: {
                 44: '11rem',
             },
+            minHeight: {
+                8: '2rem',
+            },
             zIndex: {
                 1: '1',
                 5: '5'
@@ -148,6 +151,11 @@ module.exports = {
                 'slight-white': '0px 0px 20px 5px rgba(255,255,255,0.1)',
                 white: '0px 0px 20px 5px rgba(255,255,255,0.2)',
             },
+            outline: {
+                gray: '1px solid #727272',
+                'orange-900': '1px solid #7b341e',
+                'blue-900': '1px solid #2a4365',
+        },
             margin: {
                 7: '1.75rem',
                 18: '4.5rem'
@@ -158,6 +166,9 @@ module.exports = {
             transitionProperty: {
                 'layout': 'transform, width, height, margin, padding, background-color',
             },
+            gridTemplateColumns: {
+                '20': 'repeat(20, minmax(0, 1fr))',
+            }
         },
         colors: {
             transparent: 'transparent',
@@ -188,6 +199,7 @@ module.exports = {
                 700: '#c05621',
                 800: '#9c4221',
                 900: '#7b341e',
+                1000: '#3d1910',
             },
             yellow: {
                 100: '#fffff0',
@@ -232,6 +244,7 @@ module.exports = {
                 700: '#2b6cb0',
                 800: '#2c5282',
                 900: '#2a4365',
+                1000: '#131d2c',
             },
             indigo: {
                 100: '#ebf4ff',

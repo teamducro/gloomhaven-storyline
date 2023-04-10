@@ -51,13 +51,13 @@ export default {
         }
     },
     methods: {
-        changed(prosperity, isChecked) {
-            let s = parseInt(prosperity.split('-')[1]);
+        changed(soldier, isChecked) {
+            let s = parseInt(soldier.split('-')[1]);
             if (!isChecked) {
                 s = s - 1;
             }
             this.sheet.soldiers = s;
-            this.$emit('change');
+            this.$emit('change', s);
         },
         reset() {
             this.$refs['rollback']?.reset();

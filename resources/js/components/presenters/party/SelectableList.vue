@@ -51,12 +51,10 @@
 
 <script>
 import Slugify from "../../../services/Slugify";
-import Bedge from "../../elements/Bedge";
 import Helpers from "../../../services/Helpers";
 
 export default {
     inject: ['appData'],
-    components: {Bedge},
     mixins: [Slugify],
     props: {
         id: String,

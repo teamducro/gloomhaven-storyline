@@ -9,6 +9,15 @@
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
+            <calendar-section
+                ref="calendar"
+                :calendar.sync="sheet.calendar"
+                :loading="loading"
+                @change="store"
+            />
+
+            <morale-section :sheet="sheet" :loading="loading" @change="store" />
+
             <resources-section
                 ref="resources"
                 :resources.sync="sheet.resources"
@@ -46,17 +55,17 @@
                 :prosperity.sync="prosperity"
                 @change="store"/>
 
-            <div class="lg:flex">
+            <div class="lg:flex" v-if="isSummer">
                 <selectable-list
-                    id="city-events"
+                    id="summer-city-events"
                     :title="$t('City Event Decks')"
                     :label="$t('Add city events')"
-                    :items.sync="sheet.city"
+                    :items.sync="sheet.summerOutpost"
                     @change="store"
-                    ref="city-events"
+                    ref="summer-city-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, 'C')" :disabled="appData.read_only || !checkedItems.length"
+                        <button @click="draw(checkedItems, 'SO')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
@@ -64,15 +73,50 @@
                     </template>
                 </selectable-list>
                 <selectable-list
-                    id="road-events"
+                    id="summer-road-events"
                     :title="$t('Road Event Decks')"
                     :label="$t('Add road events')"
-                    :items.sync="sheet.road"
+                    :items.sync="sheet.summerRoad"
                     @change="store"
-                    ref="road-events"
+                    ref="summer-road-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, 'R')" :disabled="appData.read_only || !checkedItems.length"
+                        <button @click="draw(checkedItems, 'SR')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+            </div>
+
+            <div class="lg:flex" v-else>
+                <selectable-list
+                    id="winter-city-events"
+                    :title="$t('City Event Decks')"
+                    :label="$t('Add city events')"
+                    :items.sync="sheet.winterOutpost"
+                    @change="store"
+                    ref="winter-city-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'WO')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+                <selectable-list
+                    id="winter-road-events"
+                    :title="$t('Road Event Decks')"
+                    :label="$t('Add road events')"
+                    :items.sync="sheet.winterRoad"
+                    @change="store"
+                    ref="winter-road-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'WR')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
@@ -99,26 +143,16 @@ import SheetCalculations from "../services/SheetCalculations";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ResourcesSection from "../components/presenters/party/ResourcesSection.vue";
+import MoraleSection from "../components/presenters/party/MoraleSection.vue";
 
 export default {
-    components: {ResourcesSection},
+    components: {MoraleSection, ResourcesSection},
     mixins: [GetCampaignName, SheetCalculations],
     inject: ['appData'],
     data() {
         return {
             sheet: null,
             prosperity: 1,
-            prosperityItems: [
-                '001–014',
-                '015–021',
-                '022–028',
-                '029–035',
-                '036–042',
-                '043–049',
-                '050–056',
-                '057–063',
-                '064–070'
-            ],
             campaignName: null,
             loading: true,
             isLocalCampaign: true,
@@ -137,6 +171,12 @@ export default {
     destroyed() {
         this.$bus.$off('campaigns-changed', this.render);
         this.$bus.$off('remove-card', this.removeCard);
+    },
+    computed: {
+        isSummer() {
+            const remainder = this.sheet.calendar.week % 20;
+            return (remainder % 20 >= 0 && remainder % 20 <= 9);
+        }
     },
     methods: {
         async render() {

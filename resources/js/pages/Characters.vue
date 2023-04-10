@@ -379,17 +379,7 @@ export default {
             this.$refs['level-rollback'].reset();
             this.$refs['xp-rollback'].reset();
             this.$refs['gold-rollback'].reset();
-
-            // Resources for FH
-            this.$refs['resource-lumber']?.reset();
-            this.$refs['resource-metal']?.reset();
-            this.$refs['resource-hide']?.reset();
-            this.$refs['resource-arrowvine']?.reset();
-            this.$refs['resource-axenut']?.reset();
-            this.$refs['resource-corpsecap']?.reset();
-            this.$refs['resource-flamefruit']?.reset();
-            this.$refs['resource-rockroot']?.reset();
-            this.$refs['resource-snowthistle']?.reset();
+            this.$refs['resources']?.reset();
         },
         selectDefault() {
             const storedUuid = this.readSelected();

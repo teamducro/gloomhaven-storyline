@@ -26,12 +26,14 @@
 
 <script>
 import {MDCTextField} from "@material/textfield/component";
+import Helpers from "../../services/Helpers";
 
 export default {
     inject: ['appData'],
     props: {
         id: {
-            type: String
+            type: String,
+            required: true
         },
         label: {
             type: String,
@@ -60,7 +62,7 @@ export default {
         autoDisable: {
             type: Boolean,
             default: true
-        },
+        }
     },
     data() {
         return {
@@ -75,6 +77,9 @@ export default {
     computed: {
         isDisabled() {
             return this.disabled || (this.autoDisable && this.appData.read_only);
+        },
+        isFloat() {
+            return Helpers.isFloat(this.step);
         }
     },
     watch: {
@@ -113,7 +118,11 @@ export default {
         },
         validateNumber() {
             if (this.number !== '-' && this.number !== '') {
-                this.number = parseInt(this.number);
+                if (this.isFloat) {
+                    this.number = parseFloat(String(this.number).replace(',', '.'));
+                } else {
+                    this.number = parseInt(this.number);
+                }
                 if (!this.number) {
                     this.number = 0;
                 }
@@ -121,6 +130,8 @@ export default {
 
             if (this.step > 1) {
                 this.number = Math.ceil(this.number / this.step) * this.step;
+            } else if (this.step < 1) {
+                this.number = Number(this.number.toFixed(1));
             }
 
             if (this.max !== null && this.number > this.max) {
@@ -129,7 +140,7 @@ export default {
                 this.number = this.min;
             }
 
-            if (Number.isInteger(this.number)) {
+            if (Helpers.isNumeric(this.number)) {
                 this.$emit('update:value', this.number);
                 this.$emit('change', this.number);
             }

@@ -41,8 +41,6 @@ import getFont from "./services/app/getFont";
 import BaseUrl from "./mixins/BaseUrl";
 import {Game} from "./models/Game";
 
-const {RayPlugin} = require('vue-ray/vue2');
-
 window._ = require('lodash');
 window.c = require('cash-dom');
 window.Vue = Vue;
@@ -58,7 +56,6 @@ Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
 Vue.use(VueScrollTo);
-Vue.use(RayPlugin, {interceptErrors: true, host: '127.0.0.1', port: 23517});
 
 gsap.registerPlugin(Flip);
 

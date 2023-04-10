@@ -3,33 +3,32 @@
         <div class="mb-8 sm:mb-0 sm:mr-4">
             <div class="mb-2 flex items-center">
                 <slot name="title">
-                    <h2>{{ $t('Reputation') }}</h2>
+                    <h2>{{ $t('Morale') }}</h2>
                 </slot>
                 <rollback :loading="loading" ref="rollback"
-                          :value.sync="sheet.reputation"/>
+                          :value.sync="sheet.morale"/>
             </div>
-            <number-field :value.sync="sheet.reputation" :min="min" :max="max" id="reputation"
+            <number-field :value.sync="sheet.morale" :min="min" :max="max" id="morale"
                           @change="$emit('change')"/>
         </div>
-        <div v-if="hasShopModifier">
-            <h2 class="mb-2">{{ $t('Shop modifier') }}</h2>
-            <span class="font-title text-lg">{{ shop }} {{ $t('Gold') }}</span>
-            <p class="text-sm">
-                {{ $t('Modify the cost of items when buying by this amount.') }}
-            </p>
+        <div>
+            <h2 class="mb-2">{{ $t('Defense') }}</h2>
+            <span v-if="sheet.morale > 0" class="font-title text-lg">{{ defense >= 0 ? '+'+defense : defense }}</span>
         </div>
     </div>
 </template>
 
 <script>
 import Sheet from "../../../models/Sheet";
+import ScenarioRepository from "../../../repositories/ScenarioRepository";
 import SheetCalculations from "../../../services/SheetCalculations";
+import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
     mixins: [SheetCalculations],
     props: {
         sheet: {
-            type: Sheet,
+            type: Sheet|CampaignSheet,
             required: true
         },
         loading: {
@@ -38,25 +37,22 @@ export default {
         },
         min: {
             type: Number,
-            default: -20
+            default: 0
         },
         max: {
             type: Number,
             default: 20
-        },
-        hasShopModifier: {
-            type: Boolean,
-            default: true
         }
     },
     data() {
         return {
-            shop: this.calculateCostModifier(this.sheet.reputation)
+            defense: this.calculateDefense(this.sheet.morale),
+            scenarioRepository: new ScenarioRepository
         }
     },
     watch: {
-        'sheet.reputation': function () {
-            this.shop = this.calculateCostModifier(this.sheet.reputation);
+        'sheet.morale': function () {
+            this.defense = this.calculateDefense(this.sheet.morale);
         }
     },
     methods: {

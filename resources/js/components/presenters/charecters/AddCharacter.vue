@@ -46,11 +46,12 @@ import GameData from "../../../services/GameData";
 import CharacterRepository from "../../../repositories/CharacterRepository";
 import charactersJson from "../../../characters.json";
 import Sheet from "../../../models/Sheet";
+import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
     inject: ['appData'],
     props: {
-        sheet: Sheet
+        sheet: Sheet|CampaignSheet
     },
     data() {
         return {
