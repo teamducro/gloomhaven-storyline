@@ -16,6 +16,10 @@ export default {
         text: {
             type: String,
             required: true
+        },
+        tag: {
+            type: String,
+            default: 'span'
         }
     },
     data() {
@@ -43,7 +47,7 @@ export default {
                         scenarios
                     }
                 },
-                template: `<span>${output}</span>`
+                template: `<${this.tag}>${output}</${this.tag}>`
             };
         },
         addItemLinks(text) {
@@ -105,6 +109,7 @@ export default {
 
                     '{MODIFIER_MINUS_ONE}': '<webp src="/img/icons/general/modifier_minus_one_white.png" width="20" class="inline"/>',
                     '{-1}': '<webp src="/img/icons/general/modifier_minus_one_white.png" width="20" class="inline"/>',
+                    '{SOLDIER}': '<inline-svg src="icons/soldier"/>',
 
                     // Elements
                     '{ANY}': '<webp src="/img/icons/elements/any.png" width="20" class="inline"/>',

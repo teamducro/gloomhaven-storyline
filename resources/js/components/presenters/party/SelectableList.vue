@@ -2,9 +2,9 @@
     <div class="w-full mt-8">
         <div class="mb-2 flex items-center">
             <h2>{{ title }}</h2>
-            <rollback v-show="rollbackLoaded" ref="rollback"
+            <rollback :loading="rollbackLoaded" ref="rollback"
                       :value="items"
-                      @change="rolledBack"></rollback>
+                      @change="rolledBack"/>
         </div>
         <div class="flex items-center">
             <autocomplete

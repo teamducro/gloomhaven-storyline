@@ -911,7 +911,7 @@
                 }
             ],
             "rewards": [
-                "lose morale,"
+                "Lose 1 morale"
             ],
             "loot": {
                 "coins": 11,
@@ -949,7 +949,8 @@
                 }
             ],
             "rewards": [
-                "3 morale, “Destroyer of Icespeakers” sticker"
+                "Gain 3 morale",
+                "“Destroyer of Icespeakers” sticker"
             ],
             "loot": {
                 "coins": 12,

@@ -3,7 +3,7 @@
         <div id="characters" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party min-h-screen">
 
             <tabs class="hidden sm:block"
-                  :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
+                  :tabs="[sheet.game === Game.fh ? $t('Campaign sheet') : $t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
                   :urls="['party', 'characters', 'items']"
                   :active="$t('Characters')"
@@ -68,6 +68,12 @@
                                 <level-progress-bar :level="character.level" :xp="character.xp"/>
                             </div>
 
+                            <resources-section v-if="sheet.game === Game.fh"
+                                ref="resources"
+                                :resources.sync="character.resources"
+                                :loading="loading"
+                                @change="store"/>
+
                             <selectable-list
                                 id="items"
                                 :title="$t('Items')"
@@ -119,7 +125,7 @@
                                    :character="character"
                                    @change="store"/>
 
-                            <attack-modifier-deck v-if="character.game !== 'cs'"
+                            <attack-modifier-deck v-if="character.game !== Game.cs"
                                                   :perks="character.perks"
                                                   :perkDescriptions="character.perkDescriptions"
                                                   :character="character"
@@ -230,6 +236,7 @@ import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemAvailability from "../services/ItemAvailability";
 import Helpers from "../services/Helpers";
 import TextField from "../components/elements/TextField.vue";
+import {Game} from "../models/Game";
 
 export default {
     components: {TextField},
@@ -237,7 +244,6 @@ export default {
     mixins: [GetCampaignName, SheetCalculations],
     data() {
         return {
-            game: null,
             sheet: null,
             sheetHash: null,
             selected: null,
@@ -271,13 +277,16 @@ export default {
         this.$bus.$off('select-character', this.select);
     },
     computed: {
+        Game() {
+            return Game
+        },
         isArchived() {
             // Reference sheet hash so the value is recalculated when the sheet is updated.
             this.sheetHash;
             return this.selected in this.sheet.archivedCharacters;
         },
         currentGame() {
-            return this.sheet.game === 'fc' ? 'gh' : this.sheet.game;
+            return this.sheet.game === Game.fc ? Game.gh : this.sheet.game;
         },
         playerIndex() {
             if (this.sheet.characters[this.character.uuid]) {
@@ -293,7 +302,6 @@ export default {
         async render() {
             this.loading = true;
 
-            this.game = this.appData.game;
             this.sheet = this.sheetRepository.make(this.appData.game);
             this.campaignName = this.getCampaignName();
 
@@ -324,7 +332,7 @@ export default {
                 const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.currentGame);
 
                 // Add auto unlocked items, based on prosperity level or completed scenarios.
-                if (this.currentGame === 'jotl') {
+                if (this.currentGame === Game.jotl) {
                     sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
                 }
                 else {
@@ -337,9 +345,9 @@ export default {
                 // Add items from other games, if enabled.
                 if (this.sheet.crossGameItemsEnabled) {
                     const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
-                    otherGames.forEach(game => {
-                        if (game !== this.currentGame) {
-                            items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                    otherGames.forEach(otherGame => {
+                        if (otherGame !== this.currentGame) {
+                            items = collect({...items.all(), ...this.itemRepository.fromGame(otherGame).all()});
                         }
                     });
                 }
@@ -371,6 +379,17 @@ export default {
             this.$refs['level-rollback'].reset();
             this.$refs['xp-rollback'].reset();
             this.$refs['gold-rollback'].reset();
+
+            // Resources for FH
+            this.$refs['resource-lumber']?.reset();
+            this.$refs['resource-metal']?.reset();
+            this.$refs['resource-hide']?.reset();
+            this.$refs['resource-arrowvine']?.reset();
+            this.$refs['resource-axenut']?.reset();
+            this.$refs['resource-corpsecap']?.reset();
+            this.$refs['resource-flamefruit']?.reset();
+            this.$refs['resource-rockroot']?.reset();
+            this.$refs['resource-snowthistle']?.reset();
         },
         selectDefault() {
             const storedUuid = this.readSelected();

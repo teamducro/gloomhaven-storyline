@@ -2,7 +2,7 @@
     <div v-if="sheet" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
+            <tabs :tabs="[sheet.game === Game.fh ? $t('Campaign sheet') : $t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
                   :urls="['party', 'characters', 'items']"
                   :active="$t('Items')"
@@ -144,7 +144,7 @@ import ItemRepository from "../repositories/ItemRepository";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemAvailability from "../services/ItemAvailability";
-import GameData from "../services/GameData";
+import {Game} from "../models/Game";
 
 export default {
     inject: ['appData'],
@@ -188,6 +188,9 @@ export default {
         this.$bus.$off('campaigns-changed', this.render);
     },
     computed: {
+        Game() {
+            return Game
+        },
         columns() {
             let columns = [
                 {id: 'image', name: 'Card', classes: 'hidden sm:table-cell'},

@@ -19,21 +19,22 @@ import abilitiesJotlJson from '../abilities-jotl.json'
 import abilitiesCsJson from '../abilities-cs.json'
 import charactersJson from '../characters.json'
 import attackModifierDecksJson from '../attack-modifier-decks.json'
+import {Game} from "../models/Game";
 
 export default class GameData {
     games() {
-        return ["gh", "fh", "fc", "jotl", "cs"]
+        return Game.games()
     }
 
     beta() {
-        return ["fh"]
+        return [Game.fh]
     }
 
     achievements(game) {
         switch (game) {
-            case 'jotl':
+            case Game.jotl:
                 return []
-            case 'fh':
+            case Game.fh:
                 return []
             default:
                 return achievementsJson
@@ -72,11 +73,11 @@ export default class GameData {
 
     _scenarioData(game) {
         switch (game) {
-            case 'fh':
+            case Game.fh:
                 return scenariosFhJson
-            case 'jotl':
+            case Game.jotl:
                 return scenariosJotlJson
-            case 'cs':
+            case Game.cs:
                 return scenariosCsJson
             default:
                 return scenariosJson
@@ -85,15 +86,15 @@ export default class GameData {
 
     quests(game) {
         switch (game) {
-            case 'gh':
+            case Game.gh:
                 return questsJson
-            case 'jotl':
+            case Game.jotl:
                 return questsJotlJson
-            case 'fh':
+            case Game.fh:
                 return questsFhJson
-            case 'fc':
+            case Game.fc:
                 return questsFcJson
-            case 'cs':
+            case Game.cs:
                 return questsCsJson
             default:
                 return []
@@ -102,9 +103,9 @@ export default class GameData {
 
     items(game) {
         switch (game) {
-            case 'jotl':
+            case Game.jotl:
                 return itemsJotlJson
-            case 'cs':
+            case Game.cs:
                 return itemsCsJson
             default:
                 return itemsJson
@@ -113,11 +114,11 @@ export default class GameData {
 
     abilities(game) {
         switch (game) {
-            case 'jotl':
+            case Game.jotl:
                 return abilitiesJotlJson
-            case 'fc':
+            case Game.fc:
                 return abilitiesFcJson
-            case 'cs':
+            case Game.cs:
                 return abilitiesCsJson
             default:
                 return abilitiesJson
@@ -126,9 +127,9 @@ export default class GameData {
 
     personalQuests(game) {
         switch (game) {
-            case 'jotl':
+            case Game.jotl:
                 return []
-            case 'cs':
+            case Game.cs:
                 return personalQuestsCsJson
             default:
                 return personalQuestsJson
@@ -143,16 +144,16 @@ export default class GameData {
         return 'test'
     }
 
-    map(game = 'gh') {
-        let map = 'fc';
+    map(game = Game.gh) {
+        let map = Game.fc;
 
         // GH uses the FC map
-        if (game !== 'gh') {
+        if (game !== Game.gh) {
             map = game;
         }
 
         // Games that do not support a map
-        if (['cs'].includes(map)) {
+        if ([Game.cs].includes(map)) {
             return null;
         }
 
@@ -162,15 +163,15 @@ export default class GameData {
         }
     }
 
-    mapSettings(game = 'gh') {
-        if (game === 'gh' || game === 'fc') {
+    mapSettings(game = Game.gh) {
+        if (game === Game.gh || game === Game.fc) {
             return {
                 stickerScale: 0.79,
                 yOffset: 184,
                 width: 2606,
                 height: 2155
             };
-        } else if (game == 'fh') {
+        } else if (game == Game.fh) {
             return {
                 stickerScale: 0.7,
                 yOffset: 0,
@@ -187,32 +188,32 @@ export default class GameData {
         };
     }
 
-    mapYOffset(game = 'gh') {
-        if (game === 'gh' || game === 'fc') {
+    mapYOffset(game = Game.gh) {
+        if (game === Game.gh || game === Game.fc) {
             return 184;
         }
 
         return 0;
     }
 
-    storylineViewBox(game = 'gh') {
+    storylineViewBox(game = Game.gh) {
         switch (game) {
-            case 'fc':
+            case Game.fc:
                 return {
                     portrait: '0 0 560 600',
                     landscape: '0 -40 560 600'
                 }
-            case 'jotl':
+            case Game.jotl:
                 return {
                     portrait: '-100 0 500 500',
                     landscape: '-100 -70 500 500'
                 }
-            case 'cs':
+            case Game.cs:
                 return {
                     portrait: '0 0 370 540',
                     landscape: '0 -40 530 370'
                 }
-            case 'fh':
+            case Game.fh:
                 return {
                     portrait: '-0.5 -0.5 2964 2503',
                     landscape: '-0.5 -0.5 2964 2503'

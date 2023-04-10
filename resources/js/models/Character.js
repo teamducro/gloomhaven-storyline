@@ -23,6 +23,17 @@ class Character {
         this.level = data.level || 1;
         this.xp = data.xp || 0;
         this.gold = data.gold || 0;
+        this.resources = data.resources || {
+            lumber: 0,
+            metal: 0,
+            hide: 0,
+            arrowvine: 0,
+            axenut: 0,
+            corpsecap: 0,
+            flamefruit: 0,
+            rockroot: 0,
+            snowthistle: 0
+        };
         this.retirements = data.retirements || 0;
         this.items = {...data.items};
         this.notes = data.notes || '';
@@ -49,6 +60,7 @@ class Character {
             gold: 'gold',
             retirements: 'retirements',
             items: {'items': {}},
+            resources: {'resources': {}},
             notes: 'notes',
             checks: {'checks': {}},
             perks: {'perks': {}},

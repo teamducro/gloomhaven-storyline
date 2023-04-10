@@ -39,6 +39,7 @@ import {Flip} from "gsap/Flip.js";
 import getEnabledGames from "./services/app/getEnabledGames";
 import getFont from "./services/app/getFont";
 import BaseUrl from "./mixins/BaseUrl";
+import {Game} from "./models/Game";
 
 const {RayPlugin} = require('vue-ray/vue2');
 
@@ -213,7 +214,7 @@ window.app = new Vue({
             let items = {}
             this.enabledGames.forEach((game) => {
                 // FC uses GH items
-                if (game !== 'fc') {
+                if (game !== Game.fc) {
                     items = {...items, ...this.itemRepository.fetch(game).items};
                 }
             })
@@ -248,7 +249,7 @@ window.app = new Vue({
 
             this.campaignData = store.get(this.campaignId) || {};
             this.campaignData = migrateVersion2Progress(this.campaignData);
-            this.game = store.get('game') || 'gh';
+            this.game = store.get('game') || Game.gh;
             this.stories = this.storyRepository.getStories();
             if (Helpers.loggedIn()) {
                 this.user = this.userRepository.getUser();
@@ -289,7 +290,7 @@ window.app = new Vue({
             this.webpSupported = isWebpSupported();
             checkHasMouse(this.$bus);
             migrateVersion1Progress();
-            this.game = store.get('game') || 'gh';
+            this.game = store.get('game') || Game.gh;
             getFont();
         }
     }

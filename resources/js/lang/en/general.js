@@ -272,6 +272,7 @@ export default {
     "Characters": "Characters",
     "Character sheet": "Character sheet",
     "Party sheet": "Party sheet",
+    "Campaign sheet": "Campaign sheet",
     "Reputation": "Reputation",
     "Shop modifier": "Shop modifier",
     "corpsecap": "Corpsecap",

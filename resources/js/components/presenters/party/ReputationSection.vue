@@ -5,11 +5,11 @@
                 <slot name="title">
                     <h2>{{ $t('Reputation') }}</h2>
                 </slot>
-                <rollback v-show="!loading" ref="rollback"
-                          :value.sync="sheet.reputation"></rollback>
+                <rollback :loading="loading" ref="rollback"
+                          :value.sync="sheet.reputation"/>
             </div>
             <number-field :value.sync="sheet.reputation" :min="min" :max="max" :id="'reputation'"
-                          @change="$emit('change')"></number-field>
+                          @change="$emit('change')"/>
         </div>
         <div v-if="hasShopModifier">
             <h2 class="mb-2">{{ $t('Shop modifier') }}</h2>
