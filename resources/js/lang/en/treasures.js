@@ -484,5 +484,8 @@ export default {
     },
     "cs-49": {
         "name": "“Magma Waders” (Item 99)"
+    },
+    "cs-50": {
+        "name": "“Bottled Moonlight” (Item 18)"
     }
 }
