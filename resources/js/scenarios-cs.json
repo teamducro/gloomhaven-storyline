@@ -1876,8 +1876,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/5",
-                "csao/6"
+                "cs/3/5",
+                "cs/3/6"
             ],
             "requirements": "“At All Costs” personal quest",
             "chapter_id": 12,
@@ -1900,8 +1900,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/7",
-                "csao/8"
+                "cs/3/7",
+                "cs/3/8"
             ],
             "requirements": "“The Weight of Failure” personal quest",
             "chapter_id": 12,
@@ -1923,8 +1923,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/9",
-                "csao/10"
+                "cs/3/9",
+                "cs/3/10"
             ],
             "chapter_id": 100,
             "rewards": [
@@ -1946,9 +1946,9 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/15",
-                "csao/16",
-                "csao/17"
+                "cs/3/15",
+                "cs/3/16",
+                "cs/3/17"
             ],
             "requirements": "“Ingenious Inventor” personal quest and “Power Modulator” item equipped",
             "chapter_id": 13,
@@ -1987,9 +1987,9 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/18",
-                "csao/19",
-                "csao/20"
+                "cs/3/18",
+                "cs/3/19",
+                "cs/3/20"
             ],
             "requirements": "“Scrap Diver” personal quest",
             "chapter_id": 13,
@@ -2014,8 +2014,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/23",
-                "csao/24"
+                "cs/3/23",
+                "cs/3/24"
             ],
             "chapter_id": 100,
             "rewards": [
@@ -2033,8 +2033,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/29",
-                "csao/30"
+                "cs/3/29",
+                "cs/3/30"
             ],
             "requirements": "“Brutal Enforcer” personal quest",
             "chapter_id": 14,
@@ -2052,8 +2052,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/31",
-                "csao/32"
+                "cs/3/31",
+                "cs/3/32"
             ],
             "requirements": "“Brutal Enforcer” personal quest",
             "chapter_id": 14,
@@ -2078,8 +2078,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/33",
-                "csao/34"
+                "cs/3/33",
+                "cs/3/34"
             ],
             "requirements": "“Apex Predator” personal quest",
             "chapter_id": 14,
@@ -2098,8 +2098,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/35",
-                "csao/36"
+                "cs/3/35",
+                "cs/3/36"
             ],
             "requirements": "“Apex Predator” personal quest",
             "chapter_id": 14,
@@ -2123,9 +2123,9 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/37",
-                "csao/38",
-                "csao/39"
+                "cs/3/37",
+                "cs/3/38",
+                "cs/3/39"
             ],
             "requirements": "“Guttermaw's Bounty” (Party) COMPLETE or “Feirgrin's Request” (Party)",
             "required_by": [
@@ -2160,8 +2160,8 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/40",
-                "csao/41"
+                "cs/3/40",
+                "cs/3/41"
             ],
             "chapter_id": 100,
             "rewards": [
@@ -2184,9 +2184,9 @@
             "coordinates": {},
             "is_side": true,
             "pages": [
-                "csao/42",
-                "csao/43",
-                "csao/44"
+                "cs/3/42",
+                "cs/3/43",
+                "cs/3/44"
             ],
             "requirements": "No Ruinmaw in party",
             "chapter_id": 14,
