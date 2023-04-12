@@ -114,10 +114,10 @@ class ChoiceService {
                     callback: (value) => {
                         if (value) {
                             if (value === 1) {
-                                this.scenarioRepository.choose(scenario, '5,7,8');
+                                this.scenarioRepository.choose(scenario, '6,7,8');
                             }
                             if (value === 2) {
-                                this.scenarioRepository.choose(scenario, '6,7,8');
+                                this.scenarioRepository.choose(scenario, '5,7,8');
                             }
                         } else {
                             // reset
