@@ -123,6 +123,9 @@
             "linked_from": [
                 4
             ],
+            "treasures": {
+                "45": "Gain one random “Stone” item (Item 94-100)"
+            },
             "rewards": [
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
