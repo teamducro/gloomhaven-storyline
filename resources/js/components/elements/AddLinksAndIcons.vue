@@ -240,10 +240,25 @@ export default {
                     '{LUMBER}': '<inline-svg src="resources/lumber"/>',
                     '{LURKERS}': '<inline-svg src="resources/lurkers"/>',
                     '{METAL}': '<inline-svg src="resources/metal"/>',
+                    '{PROSPERITY}': '<inline-svg src="icons/prosperity"/>',
                     '{TREASURE}': '<inline-svg src="resources/random-item-treasure"/>',
                     '{ROCKROOT}': '<inline-svg src="resources/rockroot"/>',
                     '{SNOWTHISTLE}': '<inline-svg src="resources/snowthistle"/>',
                     '{UNFETTERED}': '<inline-svg src="resources/unfettered"/>',
+
+                    // Buildings
+                    '{DOWNTIME}': '<inline-svg src="icons/downtime"/>',
+                    '{OPERATIONS}': '<inline-svg src="icons/operations"/>',
+                    '{REPAIR}': '<inline-svg src="icons/repair"/>',
+                    '{UPGRADE}': '<inline-svg src="icons/upgrade"/>',
+                    '{WRECKED}': '<inline-svg src="icons/wrecked"/>',
+
+                    // Without the words
+                    '{ATTACK.img}': '<webp src="/img/icons/general/attack.png" width="20" class="inline"/>',
+                    '{BLESS.img}': '<webp src="/img/icons/status/bless.png" width="20" class="inline"/>',
+                    '{CURSE.img}': '<webp src="/img/icons/status/curse.png" width="20" class="inline"/>',
+                    '{DISARM.img}': '<webp src="/img/icons/status/disarm.png" width="20" class="inline"/>',
+
                 }).each((icon, key) => {
                     text = text.replaceAll(key, icon);
                 });

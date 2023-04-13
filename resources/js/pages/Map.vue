@@ -59,6 +59,21 @@
                           'transform': 'scale('+scenarioScale+')'
                       }"/>
             </template>
+            
+            <template v-if="buildings && buildings.count()">
+                <webp v-for="building in buildings.items.filter(b => b.isUnlocked())"
+                      :src="building.image()"
+                      :key="game+'-b'+building.id"
+                      :id="'b' + building.id"
+                      :animate="true"
+                      :alt="$t(building.name)"
+                      class="absolute scenario"
+                      :style="{
+                          'left': building.coordinates.x + '%',
+                          'top': building.coordinates.y + '%',
+                          'transform': 'scale('+scenarioScale+')'
+                      }"/>
+            </template>
         </div>
     </div>
 </template>
@@ -87,6 +102,7 @@ export default {
             scenarios: null,
             achievements: null,
             overlays: null,
+            buildings: null,
             scenarioScale: 1,
             gameData: new GameData
         }
@@ -112,11 +128,17 @@ export default {
         }
         this.$bus.$on('achievements-updated', this.setAchievements);
         this.$bus.$on('game-selected', this.loadMap);
+        
+        if (app.buildings) {
+            this.setBuildings();
+        }
+        this.$bus.$on('buildings-updated', this.setBuildings);
     },
     destroyed() {
         this.map?.dispose();
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
+        this.$bus.$off('buildings-updated', this.setBuildings);
         if (this.mapTouch) {
             this.mapTouch.destroy();
         }
@@ -169,6 +191,9 @@ export default {
         },
         setAchievements() {
             this.achievements = app.achievements;
+        },
+        setBuildings() {
+            this.buildings = app.buildings;
         },
         scenarioClicked(e) {
             let id = parseInt(e.target.id.replace('s', ''));

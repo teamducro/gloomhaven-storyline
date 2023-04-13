@@ -3922,5 +3922,1432 @@
                 42
             ]
         }
+    ],
+    "buildings": [
+        {
+            "id": 5,
+            "name": "Mining Camp",
+            "game": "fh",
+            "unlocked": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively buy up to 1 {METAL} for 2 gold",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 4, 2, 1, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 2, 0],
+                    "coordinates": {
+                        "x": 13.25,
+                        "y": 61.2
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively buy up to 2 {METAL} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 49.2",
+                    "upgrade_cost": [3, 6, 3, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 2, 1],
+                    "coordinates": {
+                        "x": 13.06,
+                        "y": 61.14
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Collectively buy up to 3 {METAL} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 8, 5, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 13.0,
+                        "y": 61.0
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Collectively buy up to 4 {METAL} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [7, 10, 6, 3, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 12.7,
+                        "y": 60.8
+                    }
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Hunting Lodge",
+            "game": "fh",
+            "unlocked": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively buy up to 1 {HIDE} for 2 gold",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 172.3",
+                    "upgrade_cost": [1, 4, 1, 2, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 0, 1],
+                    "coordinates": {
+                        "x": 32.4,
+                        "y": 81.2
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively buy up to 2 {HIDE} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [3, 6, 2, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 31.95,
+                        "y": 80.96
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Collectively buy up to 3 {HIDE} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 8, 2, 5, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 2],
+                    "coordinates": {
+                        "x": 31.53,
+                        "y": 80.75
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Collectively buy up to 4 {HIDE} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [7, 10, 3, 6, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 1, 2],
+                    "coordinates": {
+                        "x": 31.27,
+                        "y": 80.6
+                    }
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Logging Camp",
+            "game": "fh",
+            "unlocked": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively buy up to 1 {LUMBER} for 2 gold",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 2, 3, 2, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 0],
+                    "coordinates": {
+                        "x": 58.8,
+                        "y": 63.5
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively buy up to 2 {LUMBER} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [3, 4, 5, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 58.6,
+                        "y": 63.0
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Collectively buy up to 3 {LUMBER} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 6, 6, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 58.36,
+                        "y": 62.92
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Collectively buy up to 4 {LUMBER} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [7, 8, 8, 3, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 58.16,
+                        "y": 62.72
+                    }
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Inn",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 35.2,
+                        "y": 68.7
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively buy 1 material resource for 2 gold",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 151.2",
+                    "upgrade_cost": [2, 4, 4, 4, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 33.46,
+                        "y": 66.56
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively buy up to 2 different material resources for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [4, 5, 5, 5, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 33.13,
+                        "y": 66.3
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Collectively buy up to 3 different material resources for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 6, 6, 6, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 32.65,
+                        "y": 65.75
+                    }
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Garden",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 20.37,
+                        "y": 76.95
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Plant herbs OR Gain 1 herb from each planted plot",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 78.4",
+                    "upgrade_cost": [1, 3, 0, 0, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 0, 0],
+                    "coordinates": {
+                        "x": 17.9,
+                        "y": 74.6
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Plant herbs OR Gain 1 herb from each planted plot",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, +1 plot",
+                    "upgrade_cost": [2, 4, 2, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 0],
+                    "coordinates": {
+                        "x": 17.9,
+                        "y": 74.6
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Gain 1 collective herb from each planted plot, then plant herbs",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 3, 3, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 17.9,
+                        "y": 74.6
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Gain 1 collective herb from each planted plot, then plant herbs",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, +1 plot",
+                    "upgrade_cost": [7, 6, 3, 3, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 17.9,
+                        "y": 74.6
+                    }
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Craftsman",
+            "game": "fh",
+            "built": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 1 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "Add items 001 to 010 to the item supply",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 0],
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 1 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 011 to 015 to the item supply",
+                    "upgrade_cost": [1, 2, 2, 1, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 1],
+                    "coordinates": {
+                        "x": 26.55,
+                        "y": 79.95
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 1 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 016 to 020 to the item supply",
+                    "upgrade_cost": [2, 3, 2, 2, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 26.27,
+                        "y": 79.78
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 2 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 021 to 025 to the item supply",
+                    "upgrade_cost": [3, 4, 3, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 26.0,
+                        "y": 79.63
+                    }
+                },
+                {
+                    "level": 5,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 2 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 026 to 030 to the item supply",
+                    "upgrade_cost": [4, 5, 3, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 25.7,
+                        "y": 79.5
+                    }
+                },
+                {
+                    "level": 6,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 2 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 031 to 035 to the item supply",
+                    "upgrade_cost": [5, 6, 4, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 2, 1],
+                    "coordinates": {
+                        "x": 23.7,
+                        "y": 79.2
+                    }
+                },
+                {
+                    "level": 7,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 3 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 036 to 040 to the item supply",
+                    "upgrade_cost": [6, 7, 4, 4, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 1],
+                    "coordinates": {
+                        "x": 23.5,
+                        "y": 79.1
+                    }
+                },
+                {
+                    "level": 8,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 3 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 041 to 045 to the item supply",
+                    "upgrade_cost": [7, 8, 5, 4, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 23.4,
+                        "y": 78.78
+                    }
+                },
+                {
+                    "level": 9,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 3 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 046 to 050 to the item supply",
+                    "upgrade_cost": [8, 9, 5, 5, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 23.4,
+                        "y": 78.74
+                    }
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Alchemist",
+            "game": "fh",
+            "built": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "Brew 2-herb potions",
+                    "wrecked": "Characters cannot use potions",
+                    "passive": "",
+                    "rewards": "",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 0],
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "Brew and distill 2-herb potions",
+                    "wrecked": "Characters cannot use potions",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 2, 2, 1, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 1],
+                    "coordinates": {
+                        "x": 41.0,
+                        "y": 66.26
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "Brew and distill 2- and 3-herb potions",
+                    "wrecked": "Characters cannot use potions",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 183.5",
+                    "upgrade_cost": [4, 4, 4, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 39.86,
+                        "y": 64.46
+                    }
+                }
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Trading Post",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 38.95,
+                        "y": 63.45
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "Buy up to one item",
+                    "wrecked": "Lose 5 collective gold",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 25.2",
+                    "upgrade_cost": [2, 2, 2, 1, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 0],
+                    "coordinates": {
+                        "x": 38.4,
+                        "y": 62.54
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "Buy up to two items",
+                    "wrecked": "Lose 10 collective gold",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 12.4",
+                    "upgrade_cost": [3, 3, 3, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 1, 1],
+                    "coordinates": {
+                        "x": 38.2,
+                        "y": 62.45
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "Buy up to three items",
+                    "wrecked": "Lose 15 collective gold",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 38.3",
+                    "upgrade_cost": [5, 4, 3, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 38.08,
+                        "y": 62.0
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "",
+                    "downtime": "Buy up to four items",
+                    "wrecked": "Lose 20 collective gold",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 196.2",
+                    "upgrade_cost": [7, 5, 4, 4, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 37.6,
+                        "y": 61.74
+                    }
+                }
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Jeweler",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 30.55,
+                        "y": 64.45
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Damage any one building",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 31.3",
+                    "upgrade_cost": [4, 3, 2, 4, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 2, 1],
+                    "coordinates": {
+                        "x": 28.77,
+                        "y": 63.94
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Damage any one building",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 160 to 163 to the item supply",
+                    "upgrade_cost": [6, 3, 6, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 3, 1],
+                    "coordinates": {
+                        "x": 28.6,
+                        "y": 63.45
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Damage any one building",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 164 to 167 to the item supply",
+                    "upgrade_cost": [8, 2, 10, 3, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [1, 4, 1],
+                    "coordinates": {
+                        "x": 28.12,
+                        "y": 62.72
+                    }
+                }
+            ]
+        },
+        {
+            "id": 42,
+            "name": "Temple of the Great Oak",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 34.86,
+                        "y": 75.89
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.img}x2",
+                    "downtime": "",
+                    "wrecked": "Each character starts the next scenario with {CURSE.img}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 192.5",
+                    "upgrade_cost": [1, 4, 2, 2, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 34.0,
+                        "y": 74.0
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.img}x2",
+                    "downtime": "",
+                    "wrecked": "Each character starts the next scenario with {CURSE.img}",
+                    "passive": "",
+                    "rewards": "+3 prosperity",
+                    "upgrade_cost": [4, 3, 6, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 33.4,
+                        "y": 73.4
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.img}x2",
+                    "downtime": "",
+                    "wrecked": "Each character starts the next scenario with {CURSE.img}",
+                    "passive": "",
+                    "rewards": "+5 prosperity",
+                    "upgrade_cost": [7, 4, 10, 4, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 1],
+                    "coordinates": {
+                        "x": 33.06,
+                        "y": 73.14
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.img}x2",
+                    "downtime": "",
+                    "wrecked": "Each character starts the next scenario with {CURSE.img}",
+                    "passive": "",
+                    "rewards": "",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 1],
+                    "coordinates": {
+                        "x": 32.48,
+                        "y": 72.49
+                    }
+                }
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Enhancer",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 26.6,
+                        "y": 76.5
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "Buy enhancements",
+                    "wrecked": "Each character starts the next scenario with {DISARM.img}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 193.1",
+                    "upgrade_cost": [1, 3, 4, 0, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 2, 0],
+                    "coordinates": {
+                        "x": 26.38,
+                        "y": 76.1
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "Buy enhancements",
+                    "wrecked": "Each character starts the next scenario with {DISARM.img}",
+                    "passive": "Reduce all enhancement costs by 10 gold",
+                    "rewards": "+1 prosperity, read section 157.2",
+                    "upgrade_cost": [3, 4, 5, 0, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 2, 0],
+                    "coordinates": {
+                        "x": 26.1,
+                        "y": 75.32
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "Buy enhancements",
+                    "wrecked": "Each character starts the next scenario with {DISARM.img}",
+                    "passive": "Reduce all enhancement costs by 10 gold and level penalties by 10 gold per level",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 4, 4, 4, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 2, 1],
+                    "coordinates": {
+                        "x": 25.5,
+                        "y": 75.0
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "",
+                    "downtime": "Buy enhancements",
+                    "wrecked": "Each character starts the next scenario with {DISARM.img}",
+                    "passive": "Reduce all enhancement costs by 10 gold, level penalties by 10 gold per level, and repeat penalties by 25 gold per enhancement",
+                    "rewards": "+1 prosperity, read section 56.3",
+                    "upgrade_cost": [7, 5, 6, 6, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 23.26,
+                        "y": 73.54
+                    }
+                }
+            ]
+        },
+        {
+            "id": 65,
+            "name": "Metal Depot",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 25.4,
+                        "y": 66.62
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively sell up to 1 {METAL} for 5 gold",
+                    "downtime": "Lose 2 collective {METAL}",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [3, 2, 6, 2, 10, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 2, 1],
+                    "coordinates": {
+                        "x": 23.64,
+                        "y": 65.4
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively sell up to 2 {METAL} for 5 gold each",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {METAL}",
+                    "passive": "",
+                    "rewards": "+2 prosperity",
+                    "upgrade_cost": [7, 5, 5, 5, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [1, 3, 1],
+                    "coordinates": {
+                        "x": 23.44,
+                        "y": 65.28
+                    }
+                }
+            ]
+        },
+        {
+            "id": 67,
+            "name": "Lumber Depot",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 53.3,
+                        "y": 68.02
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively sell up to 1 {LUMBER} for 5 gold",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {LUMBER}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 144.3",
+                    "upgrade_cost": [3, 6, 2, 2, 10, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 52.22,
+                        "y": 66.88
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively sell up to 2 {LUMBER} for 5 gold each",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {LUMBER}",
+                    "passive": "",
+                    "rewards": "+2 prosperity",
+                    "upgrade_cost": [7, 5, 5, 5, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 51.8,
+                        "y": 66.04
+                    }
+                }
+            ]
+        },
+        {
+            "id": 72,
+            "name": "Hide Depot",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 42.14,
+                        "y": 77.66
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively sell up to 1 {HIDE} for 5 gold",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 173.1",
+                    "upgrade_cost": [3, 2, 2, 6, 10, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 1, 2],
+                    "coordinates": {
+                        "x": 41.9,
+                        "y": 75.3
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively sell up to 2 {HIDE} for 5 gold each",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+2 prosperity",
+                    "upgrade_cost": [7, 5, 5, 5, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [1, 1, 3],
+                    "coordinates": {
+                        "x": 41.76,
+                        "y": 74.84
+                    }
+                }
+            ]
+        },
+        {
+            "id": 74,
+            "name": "Tavern",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 51.8,
+                        "y": 79.7
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 morale",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 160.2",
+                    "upgrade_cost": [2, 2, 2, 1, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 0],
+                    "coordinates": {
+                        "x": 50.8,
+                        "y": 78.1
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 morale",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 35.3",
+                    "upgrade_cost": [4, 4, 3, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 0],
+                    "coordinates": {
+                        "x": 45.82,
+                        "y": 77.26
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 morale",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 113.1",
+                    "upgrade_cost": [6, 6, 4, 2, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 45.56,
+                        "y": 76.97
+                    }
+                }
+            ]
+        },
+        {
+            "id": 81,
+            "name": "Hall of Revelry",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 19,
+                        "y": 70.86
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 morale",
+                    "passive": "When the trials deck is complete, read section 187.1",
+                    "rewards": "+1 prosperity, read section 178.2",
+                    "upgrade_cost": [5, 6, 6, 6, 10, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 16.1,
+                        "y": 68.38
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 morale",
+                    "passive": "Access to Tholos’ Favours",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 15.9,
+                        "y": 67.65
+                    }
+                }
+            ]
+        },
+        {
+            "id": 83,
+            "name": "Library",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 26.98,
+                        "y": 71.16
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 inspiration",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 190.3",
+                    "upgrade_cost": [2, 3, 2, 0, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 0],
+                    "coordinates": {
+                        "x": 26.66,
+                        "y": 70.26
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 inspiration",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 116.3",
+                    "upgrade_cost": [4, 4, 4, 1, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 0],
+                    "coordinates": {
+                        "x": 26.4,
+                        "y": 69.15
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 inspiration",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 89.2",
+                    "upgrade_cost": [2, 3, 2, 0, 10, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 26.06,
+                        "y": 68.5
+                    }
+                }
+            ]
+        },
+        {
+            "id": 84,
+            "name": "Workshop",
+            "game": "fh",
+            "built": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 collective {LUMBER}",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": 85,
+            "name": "Carpenter",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 51.25,
+                        "y": 64.4
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose any 1 collective resource",
+                    "passive": "Reduce all construction costs by 1 material resource",
+                    "rewards": "+1 prosperity, read section 7.3",
+                    "upgrade_cost": [2, 4, 3, 2, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 50.62,
+                        "y": 63.85
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose any 1 collective resource",
+                    "passive": "Reduce all construction costs by 1 material resource and the extra construction cost by 1 morale",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [2, 4, 3, 2, 10, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 49.4,
+                        "y": 62.94
+                    }
+                }
+            ]
+        },
+        {
+            "id": 88,
+            "name": "Stables",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 69.26,
+                        "y": 75.93
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Characters cannot use pets",
+                    "passive": "Bring one pet into each scenario. Capacity: 4",
+                    "rewards": "+1 prosperity, read section 3.1",
+                    "upgrade_cost": [2, 6, 2, 2, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [3, 1, 0],
+                    "coordinates": {
+                        "x": 68.8,
+                        "y": 75.06
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Characters cannot use pets",
+                    "passive": "Bring one pet into each scenario. Capacity: 8",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [4, 4, 5, 5, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 68.44,
+                        "y": 74.61
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Characters cannot use pets",
+                    "passive": "Bring two pets into each scenario. Capacity: 8",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [6, 6, 7, 6, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 67.87,
+                        "y": 74.41
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Characters cannot use pets",
+                    "passive": "Bring two pets into each scenario. Capacity: 12",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [8, 8, 8, 8, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 3, 3],
+                    "coordinates": {
+                        "x": 67.7,
+                        "y": 73.98
+                    }
+                }
+            ]
+        },
+        {
+            "id": 90,
+            "name": "Town Hall",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 47.15,
+                        "y": 70.18
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Cannot complete challenges",
+                    "passive": "Draw one challenge and keep up to one. When the challenge deck is complete, read section 190.1",
+                    "rewards": "+1 prosperity, read section 189.1",
+                    "upgrade_cost": [2, 2, 2, 1, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 2, 0],
+                    "coordinates": {
+                        "x": 46.45,
+                        "y": 68.74
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Cannot complete challenges",
+                    "passive": "Draw two challenges and keep up to one. When the challenge deck is complete, read section 190.1",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [4, 3, 3, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 43.6,
+                        "y": 68.08
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Cannot complete challenges",
+                    "passive": "Draw three challenges and keep up to two. When the challenge deck is complete, read section 190.1",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [6, 4, 5, 4, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 42.6,
+                        "y": 67.64
+                    }
+                }
+            ]
+        },
+        {
+            "id": 98,
+            "name": "Barracks",
+            "game": "fh",
+            "built": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively train up to 1 soldier for 3 gold and 1 material resource",
+                    "downtime": "",
+                    "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
+                    "passive": "Capacity: 4, Effect: advantage and -5{ATTACK.img}",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 0],
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively train up to 1 soldier for 3 gold and 1 material resource",
+                    "downtime": "",
+                    "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
+                    "passive": "Capacity: 6, Effect: advantage and -15{ATTACK.img}",
+                    "rewards": "+1 prosperity, +2 soldiers",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 2, 1],
+                    "coordinates": {
+                        "x": 71.96,
+                        "y": 66.94
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Collectively train up to 2 soldiers for 3 gold and 1 material resource each",
+                    "downtime": "",
+                    "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
+                    "passive": "Capacity: 8, Effect: advantage and -25{ATTACK.img}",
+                    "rewards": "+1 prosperity, +2 soldiers",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 2, 1],
+                    "coordinates": {
+                        "x": 71.5,
+                        "y": 66.66
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Collectively train up to 2 soldiers for 3 gold and 1 material resource each",
+                    "downtime": "",
+                    "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
+                    "passive": "Capacity: 10, Effect: advantage and -35{ATTACK.img}",
+                    "rewards": "+1 prosperity, +2 soldiers",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 3, 1],
+                    "coordinates": {
+                        "x": 71.35,
+                        "y": 64.4
+                    }
+                }
+            ]
+        }
     ]
 }

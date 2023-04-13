@@ -19,6 +19,7 @@ import VueScrollTo from "vue-scrollto";
 import StorySyncer from "./services/StorySyncer";
 import OfflineChecker from "./services/app/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
+import BuildingRepository from "./repositories/BuildingRepository";
 import * as Sentry from "@sentry/vue";
 import {Integrations} from "@sentry/tracing";
 import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
@@ -134,6 +135,7 @@ window.app = new Vue({
             quests: null,
             achievements: null,
             items: null,
+            buildings: null,
             webpSupported: true,
             hasMouse: false,
             isPortrait: true,
@@ -147,6 +149,7 @@ window.app = new Vue({
             questRepository: new QuestRepository,
             achievementRepository: new AchievementRepository,
             itemRepository: new ItemRepository,
+            buildingRepository: new BuildingRepository,
             userRepository: new UserRepository,
             storyRepository: new StoryRepository,
             echo: new EchoService,
@@ -183,6 +186,7 @@ window.app = new Vue({
                 this.fetchAchievements(),
                 this.fetchScenarios(shouldSync),
                 this.fetchItems(),
+                this.fetchBuildings(),
             ]);
 
             this.story = this.stories.firstWhere('campaignId', this.campaignId);
@@ -218,6 +222,13 @@ window.app = new Vue({
             this.items = collect(items);
             await this.$nextTick();
             this.$bus.$emit('items-updated');
+
+            return true;
+        },
+        async fetchBuildings() {
+            this.buildings = this.buildingRepository.fetch(this.game);
+            await this.$nextTick();
+            this.$bus.$emit('buildings-updated');
 
             return true;
         },

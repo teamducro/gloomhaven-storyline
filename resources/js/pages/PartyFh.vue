@@ -125,6 +125,11 @@
                 </selectable-list>
             </div>
 
+            <buildings-section
+                ref="buildings"
+                :loading="loading"
+                @change="store"/>
+
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
                 <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
@@ -144,9 +149,10 @@ import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ResourcesSection from "../components/presenters/party/ResourcesSection.vue";
 import MoraleSection from "../components/presenters/party/MoraleSection.vue";
+import BuildingsSection from "../components/presenters/party/BuildingsSection.vue";
 
 export default {
-    components: {MoraleSection, ResourcesSection},
+    components: {MoraleSection, ResourcesSection, BuildingsSection},
     mixins: [GetCampaignName, SheetCalculations],
     inject: ['appData'],
     data() {
