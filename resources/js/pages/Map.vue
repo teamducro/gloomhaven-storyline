@@ -61,7 +61,7 @@
             </template>
             
             <template v-if="buildings && buildings.count()">
-                <webp v-for="building in buildings.items.filter(b => b.isUnlocked())"
+                <webp v-for="building in buildings.items.filter(filteredBuildings)"
                       :src="building.image()"
                       :key="game+'-b'+building.id"
                       :id="'b' + building.id"
@@ -231,7 +231,17 @@ export default {
             return this.isLandscape()
                 ? window.innerHeight / this.settings.width
                 : window.innerWidth / this.$map.offsetWidth;
-        }
+        },
+        filteredBuildings(building) {
+            // Building 42 should be hidden if scenario 64 is active
+            if (this.game =='fh' && building.id === 42) {
+                let blocker = this.scenarios.items.find(s => s.id === 64);
+                if (blocker.isVisible() && !blocker.isComplete()) {
+                    return false;
+                }
+            }
+            return building.isUnlocked();
+        },
     }
 }
 </script>
