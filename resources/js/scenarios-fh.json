@@ -5057,7 +5057,7 @@
                     "wrecked": "Lose 1 inspiration",
                     "passive": "",
                     "rewards": "+1 prosperity, read section 89.2",
-                    "upgrade_cost": [2, 3, 2, 0, 10, 0],
+                    "upgrade_cost": [6, 2, 5, 5, 0, 0],
                     "damage_cost": 4,
                     "wrecked_cost": [2, 2, 2],
                     "coordinates": {
