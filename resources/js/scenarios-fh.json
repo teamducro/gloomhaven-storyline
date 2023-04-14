@@ -5131,7 +5131,7 @@
                     "wrecked": "Lose any 1 collective resource",
                     "passive": "Reduce all construction costs by 1 material resource and the extra construction cost by 1 morale",
                     "rewards": "+1 prosperity",
-                    "upgrade_cost": [2, 4, 3, 2, 10, 0],
+                    "upgrade_cost": [5, 6, 5, 4, 0, 0],
                     "damage_cost": 3,
                     "wrecked_cost": [3, 2, 2],
                     "coordinates": {
