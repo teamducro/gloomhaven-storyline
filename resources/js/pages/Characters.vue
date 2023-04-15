@@ -3,9 +3,9 @@
         <div id="characters" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party min-h-screen">
 
             <tabs class="hidden sm:block"
-                  :tabs="[sheet.game === Game.fh ? $t('Campaign sheet') : $t('Party sheet'), $t('Characters'), $t('Items')]"
-                  :icons="['assignment', 'person', 'style']"
-                  :urls="['party', 'characters', 'items']"
+                  :tabs="[sheet.game === Game.fh ? $t('Campaign sheet') : $t('Party sheet'), $t('Characters'), $t('Items'), ...(sheet.game === Game.fh ? [$t('Buildings')] : [])]"
+                  :icons="['assignment', 'person', 'style', ...(sheet.game === Game.fh ? ['home'] : [])]"
+                  :urls="['party', 'characters', 'items', ...(sheet.game === Game.fh ? ['buildings'] : [])]"
                   :active="$t('Characters')"
             />
             <h1 class="hidden sm:inline-block mt-4 text-xl">{{ campaignName }}

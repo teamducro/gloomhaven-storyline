@@ -2,9 +2,9 @@
     <div v-if="sheet" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[sheet.game === Game.fh ? $t('Campaign sheet') : $t('Party sheet'), $t('Characters'), $t('Items')]"
-                  :icons="['assignment', 'person', 'style']"
-                  :urls="['party', 'characters', 'items']"
+            <tabs :tabs="[sheet.game === Game.fh ? $t('Campaign sheet') : $t('Party sheet'), $t('Characters'), $t('Items'), ...(sheet.game === Game.fh ? [$t('Buildings')] : [])]"
+                  :icons="['assignment', 'person', 'style', ...(sheet.game === Game.fh ? ['home'] : [])]"
+                  :urls="['party', 'characters', 'items', ...(sheet.game === Game.fh ? ['buildings'] : [])]"
                   :active="$t('Items')"
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>

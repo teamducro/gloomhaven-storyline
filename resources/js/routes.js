@@ -8,6 +8,7 @@ const Login = () => import("./pages/Login");
 const Party = () => import("./pages/Party");
 const Characters = () => import("./pages/Characters");
 const Items = () => import("./pages/Items");
+const Buildings = () => import("./pages/Buildings");
 const Shared = () => import("./pages/Shared");
 const Settings = () => import("./pages/Settings");
 
@@ -22,6 +23,7 @@ export default [
     {path: '/party', component: Party},
     {path: '/characters', component: Characters},
     {path: '/items', component: Items},
+    {path: '/buildings', component: Buildings},
     {path: '/login/:id/:token', component: Login},
     {path: '/settings', component: Settings},
     {path: '/shared/:version/:id/:storage/:path?', component: Shared},

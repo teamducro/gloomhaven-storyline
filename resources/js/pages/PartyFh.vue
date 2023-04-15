@@ -2,9 +2,9 @@
     <div v-if="sheet" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div id="party" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[$t('Campaign sheet'), $t('Characters'), $t('Items')]"
-                  :icons="['assignment', 'person', 'style']"
-                  :urls="['party', 'characters', 'items']"
+            <tabs :tabs="[$t('Campaign sheet'), $t('Characters'), $t('Items'), $t('Buildings')]"
+                  :icons="['assignment', 'person', 'style', 'home']"
+                  :urls="['party', 'characters', 'items', 'buildings']"
                   :active="$t('Campaign sheet')"
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
@@ -125,11 +125,6 @@
                 </selectable-list>
             </div>
 
-            <buildings-section
-                ref="buildings"
-                :loading="loading"
-                @change="store"/>
-
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
                 <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
@@ -149,10 +144,9 @@ import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ResourcesSection from "../components/presenters/party/ResourcesSection.vue";
 import MoraleSection from "../components/presenters/party/MoraleSection.vue";
-import BuildingsSection from "../components/presenters/party/BuildingsSection.vue";
 
 export default {
-    components: {MoraleSection, ResourcesSection, BuildingsSection},
+    components: {MoraleSection, ResourcesSection},
     mixins: [GetCampaignName, SheetCalculations],
     inject: ['appData'],
     data() {

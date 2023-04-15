@@ -1,13 +1,41 @@
 <template>
     <div class="w-full mt-8">
-        <slot name="title">
-            <h2 class="mb-2">{{ $t('Buildings') }}</h2>
-        </slot>
+        <h2 class="mb-2">{{ $t('Overlay Stickers') }}</h2>
+        <autocomplete
+            :label="$t('Add overlay stickers')"
+            id="overlays"
+            :list="overlays.items.map(o => o.id)"
+            @change="toggleOverlay">
+            <template v-for="overlay in overlays" v-slot:[slugify(overlay.id)]>
+                <div class="w-full flex items-center justify-between" :key="overlay.id">
+                    <slot name="label" :item="overlay.id">
+                        <span>{{ overlayDisplayName(overlay, false) }}</span>
+                    </slot>
+                    <span class="material-icons">
+                        {{ overlay.present ? 'check_circle_outline' : 'radio_button_unchecked' }}
+                    </span>
+                </div>
+            </template>
+        </autocomplete>
+        <div id="overlay-badges" class="mb-12">
+            <span v-for="overlay in overlays.filter(overlay => overlay.present)" :key="overlay.id">
+                <bedge class="mr-2 mt-2 white rounded-md animate__animated"
+                        :class="{
+                            'cursor-pointer': !appData.read_only,
+                        }"
+                        @click="(e) => {toggleOverlay(overlay.id)}">
+                    {{ overlayDisplayName(overlay) }}
+                    <span class="ml-1" v-if="!appData.read_only">×</span>
+                </bedge>
+            </span>
+        </div>
+        <h2 class="mb-2">{{ $t('Buildings') }}</h2>
         <autocomplete
             :label="$t('Add buildings')"
             id="buildings"
             :list="buildings.items.map(b => b.id.toString())"
-            @change="toggle">
+            @change="toggle"
+            class="mb-8">
             <template v-for="building in buildings" v-slot:[slugify(building.id)]>
                 <div class="w-full flex items-center justify-between" :key="building.id">
                     <slot name="label" :item="building.id">
@@ -95,6 +123,7 @@
                     </button>
                 </div>
             </div>
+            <h3 class="mb-2">{{ $t('Available') }}</h3>
             <div v-for="building in availableBuildings" :key="building.key()" class="grid xs:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
                 <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-background">
                     {{ building.id }} {{ $t(building.name) }} {{ $t('Lvl.') }} 0
@@ -115,6 +144,7 @@
                     </button>
                 </div>
             </div>
+            <h3 class="mb-2">{{ $t('Walls') }}</h3>
             <div v-for="overlay in overlays.filter(overlay => !overlay.present && overlay._name === 'Wall')"
                     :key="overlay.key()" class="grid xs:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
                 <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-background">
@@ -136,34 +166,6 @@
                     </button>
                 </div>
             </div>
-        </div>
-        <autocomplete
-            :label="$t('Add overlay stickers')"
-            id="overlays"
-            :list="overlays.items.map(o => o.id)"
-            @change="toggleOverlay">
-            <template v-for="overlay in overlays" v-slot:[slugify(overlay.id)]>
-                <div class="w-full flex items-center justify-between" :key="overlay.id">
-                    <slot name="label" :item="overlay.id">
-                        <span>{{ overlayDisplayName(overlay, false) }}</span>
-                    </slot>
-                    <span class="material-icons">
-                        {{ overlay.present ? 'check_circle_outline' : 'radio_button_unchecked' }}
-                    </span>
-                </div>
-            </template>
-        </autocomplete>
-        <div id="overlay-badges">
-            <span v-for="overlay in overlays.filter(overlay => overlay.present)" :key="overlay.id">
-                <bedge class="mr-2 mt-2 white rounded-md animate__animated"
-                        :class="{
-                            'cursor-pointer': !appData.read_only,
-                        }"
-                        @click="(e) => {toggleOverlay(overlay.id)}">
-                    {{ overlayDisplayName(overlay) }}
-                    <span class="ml-1" v-if="!appData.read_only">×</span>
-                </bedge>
-            </span>
         </div>
         <modal ref="boat-modal" :title="$t('Name your Boat')">
             <template v-slot:content>
