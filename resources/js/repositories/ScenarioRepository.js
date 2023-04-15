@@ -6,6 +6,7 @@ import ItemTextParser from "../services/ItemTextParser";
 import GameData from "../services/GameData";
 import ScenarioCompletedService from "../services/ScenarioCompletedService";
 import SheetRepository from "./SheetRepository";
+import OverlayRepository from "./OverlayRepository";
 
 export default class ScenarioRepository {
     fetch(game) {
@@ -163,6 +164,9 @@ export default class ScenarioRepository {
                 this.achievementRepository.lose(achievement);
             })
         }
+        this.overlayRepository.findLinkedFrom(scenario).each(overlay => {
+            this.overlayRepository.add(overlay.id);
+        });
     }
 
     undoAchievements(scenario) {
@@ -178,6 +182,9 @@ export default class ScenarioRepository {
                 }
             })
         }
+        this.overlayRepository.findLinkedFrom(scenario).each(overlay => {
+            this.overlayRepository.remove(overlay.id);
+        });
     }
 
     processRewardedItems(scenario, checked = true) {
@@ -380,6 +387,10 @@ export default class ScenarioRepository {
 
     get sheetRepository() {
         return this._sheetRepository || (this._sheetRepository = new SheetRepository());
+    }
+    
+    get overlayRepository() {
+        return this._overlayRepository || (this._overlayRepository = new OverlayRepository());
     }
 
     get scenarioCompletedService() {

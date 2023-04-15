@@ -129,16 +129,21 @@ export default {
         this.$bus.$on('achievements-updated', this.setAchievements);
         this.$bus.$on('game-selected', this.loadMap);
         
+        if (app.overlays) {
+            this.setOverlays();
+        }
         if (app.buildings) {
             this.setBuildings();
         }
         this.$bus.$on('buildings-updated', this.setBuildings);
+        this.$bus.$on('overlays-updated', this.setOverlays);
     },
     destroyed() {
         this.map?.dispose();
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
         this.$bus.$off('buildings-updated', this.setBuildings);
+        this.$bus.$off('overlays-updated', this.setOverlays);
         if (this.mapTouch) {
             this.mapTouch.destroy();
         }
@@ -172,10 +177,6 @@ export default {
 
             this.scenarios = app.scenarios;
 
-            this.overlays = this.gameData.overlays(this.game).filter((overlay) => {
-                return this.scenarios.items.some((scenario) => overlay.linked_from?.includes(scenario.id) && scenario.isComplete());
-            });
-
             // Show tooltip on hover
             if (this.scenarios) {
                 this.scenarios.each((scenario) => {
@@ -194,6 +195,9 @@ export default {
         },
         setBuildings() {
             this.buildings = app.buildings;
+        },
+        setOverlays() {
+            this.overlays = app.overlays.filter(overlay => overlay.present);
         },
         scenarioClicked(e) {
             let id = parseInt(e.target.id.replace('s', ''));
