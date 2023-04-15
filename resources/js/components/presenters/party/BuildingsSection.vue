@@ -129,6 +129,17 @@
                 </bedge>
             </span>
         </div>
+        <modal ref="boat-modal" :title="$t('Name your Boat')">
+            <template v-slot:content>
+                <p class="mb-3">“{{ $t('Now, whaddya call this beauty? G’head, pick a name. Bad luck to set forth on an unnamed vessel!') }}”</p>
+                <text-field id="boat-name" :label="$t('Boat Name')" :value.sync="boatName" @keyup.enter="saveBoatName" />
+            </template>
+            <template v-slot:buttons>
+                <button type="button" class="mdc-button mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="yes" @click="saveBoatName">
+                    <span class="mdc-button__label">{{ $t('Confirm') }}</span>
+                </button>
+            </template>
+        </modal>
     </div>
 </template>
 
@@ -150,6 +161,7 @@ export default {
         return {
             buildingRepository: new BuildingRepository(),
             overlayRepository: new OverlayRepository(),
+            boatName: "",
         };
     },
     computed: {
@@ -201,10 +213,20 @@ export default {
             let overlay = this.overlayRepository.find(id);
             if (!overlay.present) {
                 this.overlayRepository.add(overlay.id);
+
+                if (overlay.game === 'fh' && overlay.id === 'A') {
+                    this.openBoatModal();
+                }
             } else {
                 this.overlayRepository.remove(overlay.id);
             }
         },
+        openBoatModal() {
+            this.$refs['boat-modal'].open();
+        },
+        saveBoatName() {
+            this.overlayRepository.find('A').name = this.boatName || 'Boat';
+        }
     }
 }
 </script>
