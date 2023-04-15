@@ -4,7 +4,7 @@
             <h2 class="mb-2">{{ $t('Buildings') }}</h2>
         </slot>
         <autocomplete
-            label="Add buildings"
+            :label="$t('Add buildings')"
             id="buildings"
             :list="buildings.items.map(b => b.id.toString())"
             @change="toggle">
@@ -101,14 +101,44 @@
                 </div>
             </div>
         </div>
+        <autocomplete
+            :label="$t('Add overlay stickers')"
+            id="overlays"
+            :list="overlays.items.map(o => o.id)"
+            @change="toggleOverlays">
+            <template v-for="overlay in overlays" v-slot:[slugify(overlay.id)]>
+                <div class="w-full flex items-center justify-between" :key="overlay.id">
+                    <slot name="label" :item="overlay.id">
+                        <span>{{ overlayDisplayName(overlay, false) }}</span>
+                    </slot>
+                    <span class="material-icons">
+                        {{ overlay.present ? 'check_circle_outline' : 'radio_button_unchecked' }}
+                    </span>
+                </div>
+            </template>
+        </autocomplete>
+        <div id="overlay-badges">
+            <span v-for="overlay in overlays.filter(overlay => overlay.present)" :key="overlay.id">
+                <bedge class="mr-2 mt-2 white rounded-md animate__animated"
+                        :class="{
+                            'cursor-pointer': !appData.read_only,
+                        }"
+                        @click="(e) => {toggleOverlays(overlay.id)}">
+                    {{ overlayDisplayName(overlay) }}
+                    <span class="ml-1" v-if="!appData.read_only">×</span>
+                </bedge>
+            </span>
+        </div>
     </div>
 </template>
 
 <script>
 import Slugify from "../../../services/Slugify";
 import BuildingRepository from "../../../repositories/BuildingRepository";
+import OverlayRepository from "../../../repositories/OverlayRepository";
 
 export default {
+    inject: ['appData'],
     mixins: [Slugify],
     props: {
         loading: {
@@ -119,11 +149,15 @@ export default {
     data() {
         return {
             buildingRepository: new BuildingRepository(),
+            overlayRepository: new OverlayRepository(),
         };
     },
     computed: {
         buildings() {
             return this.buildingRepository.get();
+        },
+        overlays() {
+            return this.overlayRepository.get();
         },
         activeBuildings() {
             return this.buildingRepository.where(b => !b.isLocked() && !b.isAvailable());
@@ -156,7 +190,21 @@ export default {
         },
         repair(building) {
             this.buildingRepository.setBuilt(building);
-        }
+        },
+        overlayDisplayName(overlay, showName = true) {
+            // Replace "G_red" with "G (red)"
+            let id = overlay.id.replace(/_(.*)/, showName ? '' : ' ($1)');
+            // Put name in brackets if present
+            return id + ((this.$t(overlay.name) && showName) ? ` (${this.$t(overlay.name)})`: '');
+        },
+        toggleOverlays(id) {
+            let overlay = this.overlayRepository.find(id);
+            if (!overlay.present) {
+                this.overlayRepository.add(overlay.id);
+            } else {
+                this.overlayRepository.remove(overlay.id);
+            }
+        },
     }
 }
 </script>
