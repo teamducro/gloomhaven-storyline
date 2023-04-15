@@ -173,7 +173,7 @@ export default {
             this.scenarios = app.scenarios;
 
             this.overlays = this.gameData.overlays(this.game).filter((overlay) => {
-                return this.scenarios.items.some((scenario) => overlay.linked_from.includes(scenario.id) && scenario.isComplete());
+                return this.scenarios.items.some((scenario) => overlay.linked_from?.includes(scenario.id) && scenario.isComplete());
             });
 
             // Show tooltip on hover

@@ -3878,6 +3878,118 @@
     "regions": [],
     "overlays": [
         {
+            "id": "A",
+            "name": "Boat",
+            "coordinates": {
+                "x": 65.7,
+                "y": 80.05
+            }
+        },
+        {
+            "id": "B",
+            "name": "Sled",
+            "coordinates": {
+                "x": 62.2,
+                "y": 77.46
+            }
+        },
+        {
+            "id": "C",
+            "name": "Climbing Gear",
+            "coordinates": {
+                "x": 57.35,
+                "y": 82.46
+            }
+        },
+        {
+            "id": "D",
+            "name": "Ice Spike",
+            "coordinates": {
+                "x": 52.3,
+                "y": 56.18
+            }
+        },
+        {
+            "id": "E",
+            "name": "Portcullis",
+            "coordinates": {
+                "x": 42.3,
+                "y": 59.8
+            }
+        },
+        {
+            "id": "F",
+            "name": "Statue",
+            "coordinates": {
+                "x": 31.0,
+                "y": 73.3
+            }
+        },
+        {
+            "id": "G_red",
+            "name": "Red Well",
+            "coordinates": {
+                "x": 41.25,
+                "y": 71.93
+            }
+        },
+        {
+            "id": "G_blue",
+            "name": "Blue Well",
+            "coordinates": {
+                "x": 41.3,
+                "y": 71.9
+            }
+        },
+        {
+            "id": "H",
+            "name": "Stage",
+            "coordinates": {
+                "x": 68.08,
+                "y": 67.75
+            }
+        },
+        {
+            "id": "J",
+            "name": "Wall",
+            "coordinates": {
+                "x": 28.14,
+                "y": 60.46
+            }
+        },
+        {
+            "id": "K",
+            "name": "Wall",
+            "coordinates": {
+                "x": 35.2,
+                "y": 85.88
+            }
+        },
+        {
+            "id": "L",
+            "name": "Wall",
+            "coordinates": {
+                "x": 11.52,
+                "y": 72.96
+            }
+        },
+        {
+            "id": "M",
+            "name": "Wall",
+            "coordinates": {
+                "x": 19.2,
+                "y": 78.98
+            }
+        },
+        {
+            "id": "N",
+            "name": "Wall",
+            "coordinates": {
+                "x": 52.11,
+                "y": 59.94
+            }
+        },
+        {
             "id": "W",
             "coordinates": {
                 "name": "M7",

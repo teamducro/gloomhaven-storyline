@@ -153,7 +153,7 @@ class Building {
         if (this.coordinates.x === 0 && this.coordinates.y === 0) {
             return '';
         }
-        return '/img/outpost/' + this.game + '/' + this.id + '_L' + this.level + '.png';
+        return '/img/buildings/' + this.game + '/' + this.id + '_L' + this.level + '.png';
     }
 
     key() {
