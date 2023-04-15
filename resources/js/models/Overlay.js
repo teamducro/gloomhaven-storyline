@@ -6,7 +6,7 @@ class Overlay {
     constructor(data) {
         this.id = data.id;
         this._name = data.name;
-        this.present = data.present || false;
+        this._present = data.present || false;
         this.coordinates = data.coordinates || {};
         this.linkedFrom = collect(data.linked_from || []);
         this.game = data.game;
@@ -14,7 +14,7 @@ class Overlay {
 
         this.fieldsToStore = {
             "name": "_name", // Because the name of the Boat is customisable
-            "present": "present",
+            "present": "_present",
         };
 
         this.read();
@@ -33,7 +33,19 @@ class Overlay {
         if (this.game == 'fh' && this.id == 'A') {
             return this._name;
         }
-        return this.$tPrefix('name');
+        return this._name ? this.$tPrefix('name') : '';
+    }
+
+    set present(present) {
+        if (this._present === present) {
+            return;
+        }
+        this._present = present;
+        this.store();
+    }
+
+    get present() {
+        return this._present;
     }
 
     image() {
