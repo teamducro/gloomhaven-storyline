@@ -3884,7 +3884,9 @@
             "coordinates": {
                 "x": 65.7,
                 "y": 80.05
-            }
+            },
+            "icon": "{BOAT}",
+            "upgrade_cost": [1, 4, 1, 2, 0, 0]
         },
         {
             "id": "B",
@@ -3893,7 +3895,9 @@
             "coordinates": {
                 "x": 62.2,
                 "y": 77.46
-            }
+            },
+            "icon": "{SLED}",
+            "upgrade_cost": [1, 3, 2, 1, 0, 0]
         },
         {
             "id": "C",
@@ -3902,7 +3906,9 @@
             "coordinates": {
                 "x": 57.35,
                 "y": 82.46
-            }
+            },
+            "icon": "{CLIMBING_GEAR}",
+            "upgrade_cost": [1, 1, 3, 2, 0, 0]
         },
         {
             "id": "D",
@@ -3965,7 +3971,8 @@
             "coordinates": {
                 "x": 28.14,
                 "y": 60.46
-            }
+            },
+            "upgrade_cost": [1, 4, 0, 0, 10, 0]
         },
         {
             "id": "K",
@@ -3974,7 +3981,8 @@
             "coordinates": {
                 "x": 35.2,
                 "y": 85.88
-            }
+            },
+            "upgrade_cost": [2, 3, 2, 2, 10, 0]
         },
         {
             "id": "L",
@@ -3983,7 +3991,8 @@
             "coordinates": {
                 "x": 11.52,
                 "y": 72.96
-            }
+            },
+            "upgrade_cost": [3, 5, 2, 1, 10, 0]
         },
         {
             "id": "M",
@@ -3992,7 +4001,8 @@
             "coordinates": {
                 "x": 19.2,
                 "y": 78.98
-            }
+            },
+            "upgrade_cost": [4, 4, 3, 3, 10, 0]
         },
         {
             "id": "N",
@@ -4001,7 +4011,8 @@
             "coordinates": {
                 "x": 52.11,
                 "y": 59.94
-            }
+            },
+            "upgrade_cost": [6, 6, 3, 2, 10, 0]
         },
         {
             "id": "W",
@@ -5215,7 +5226,7 @@
                     "operations": "",
                     "downtime": "",
                     "wrecked": "Lose 1 collective {LUMBER}",
-                    "passive": "",
+                    "passive": "Each of the following is an upgrade that can be built in any order.",
                     "rewards": "+1 prosperity",
                     "upgrade_cost": [1, 0, 0, 0, 0, 0],
                     "damage_cost": 2,

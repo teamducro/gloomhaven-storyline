@@ -9,6 +9,8 @@ class Overlay {
         this._present = data.present || false;
         this.coordinates = data.coordinates || {};
         this.linkedFrom = collect(data.linked_from || []);
+        this.icon = data.icon || null;
+        this.upgradeCost = data.upgrade_cost || null;
         this.game = data.game;
         this.translationKey = `overlays.${this.game}-${this.id}`;
 

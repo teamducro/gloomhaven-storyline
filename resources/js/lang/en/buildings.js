@@ -626,7 +626,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Lose 1 collective {LUMBER}",
-                "passive": "",
+                "passive": "Each of the following is an upgrade that can be built in any order.",
                 "rewards": "+1 prosperity",
             }
         ]

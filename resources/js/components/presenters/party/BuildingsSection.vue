@@ -56,6 +56,21 @@
                             {{ $t('Upgrade') }}
                         </div>
                     </button>
+                    <div v-else-if="building.game === 'fh' && building.id === 84" class="flex flex-col gap-2">
+                        <button v-for="overlay in overlays.filter(overlay => !overlay.present && overlay.icon)"
+                            @click="toggleOverlay(overlay.id)" :disabled="building.isWrecked()" :key="overlay.id" class="mdc-button mdc-button--raised h-auto p-1">
+                            <add-links-and-icons :text="overlay.icon"/>
+                            <div class="bg-dark-background inline-grid grid-cols-4 gap-px ml-1">
+                                <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
+                                <add-links-and-icons text="{LUMBER}" class="outline-gray p-1"/>
+                                <add-links-and-icons text="{METAL}" class="outline-gray p-1"/>
+                                <add-links-and-icons text="{HIDE}" class="outline-gray p-1"/>
+                                <template v-for="(cost, i) in overlay.upgradeCost.slice(0, 4)">
+                                    <div :key="i" class="outline-gray text-center">{{ cost }}</div>
+                                </template>
+                            </div>
+                        </button>
+                    </div>
                 </div>
                 <div class="outline-gray row-span-2 flex flex-col items-center justify-center p-2">
                     <div v-if="!building.isWrecked()" class="flex items-center mb-1">
@@ -100,12 +115,33 @@
                     </button>
                 </div>
             </div>
+            <div v-for="overlay in overlays.filter(overlay => !overlay.present && overlay._name === 'Wall')"
+                    :key="overlay.key()" class="grid xs:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
+                <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-background">
+                    {{ $t(overlay.name) }} {{ overlay.id }}
+                </div>
+                <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-background">
+                    <button @click="toggleOverlay(overlay.id)" class="mdc-button mdc-button--raised h-auto p-1">
+                        <add-links-and-icons text="{UPGRADE}"/>
+                        <div class="bg-dark-background inline-grid grid-cols-5 gap-px ml-1">
+                            <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
+                            <add-links-and-icons text="{LUMBER}" class="outline-gray p-1"/>
+                            <add-links-and-icons text="{METAL}" class="outline-gray p-1"/>
+                            <add-links-and-icons text="{HIDE}" class="outline-gray p-1"/>
+                            <add-links-and-icons text="{COINS}" class="outline-gray p-1"/>
+                            <template v-for="(cost, i) in overlay.upgradeCost.slice(0, 5)">
+                                <div :key="i" class="outline-gray text-center">{{ cost }}</div>
+                            </template>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </div>
         <autocomplete
             :label="$t('Add overlay stickers')"
             id="overlays"
             :list="overlays.items.map(o => o.id)"
-            @change="toggleOverlays">
+            @change="toggleOverlay">
             <template v-for="overlay in overlays" v-slot:[slugify(overlay.id)]>
                 <div class="w-full flex items-center justify-between" :key="overlay.id">
                     <slot name="label" :item="overlay.id">
@@ -123,7 +159,7 @@
                         :class="{
                             'cursor-pointer': !appData.read_only,
                         }"
-                        @click="(e) => {toggleOverlays(overlay.id)}">
+                        @click="(e) => {toggleOverlay(overlay.id)}">
                     {{ overlayDisplayName(overlay) }}
                     <span class="ml-1" v-if="!appData.read_only">×</span>
                 </bedge>
@@ -209,7 +245,7 @@ export default {
             // Put name in brackets if present
             return id + ((this.$t(overlay.name) && showName) ? ` (${this.$t(overlay.name)})`: '');
         },
-        toggleOverlays(id) {
+        toggleOverlay(id) {
             let overlay = this.overlayRepository.find(id);
             if (!overlay.present) {
                 this.overlayRepository.add(overlay.id);

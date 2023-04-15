@@ -252,6 +252,9 @@ export default {
                     '{REPAIR}': '<inline-svg src="icons/repair"/>',
                     '{UPGRADE}': '<inline-svg src="icons/upgrade"/>',
                     '{WRECKED}': '<inline-svg src="icons/wrecked"/>',
+                    '{BOAT}': '<inline-svg src="icons/boat"/>',
+                    '{SLED}': '<inline-svg src="icons/sled"/>',
+                    '{CLIMBING_GEAR}': '<inline-svg src="icons/climbing-gear"/>',
 
                     // Without the words
                     '{ATTACK.img}': '<webp src="/img/icons/general/attack.png" width="20" class="inline"/>',
