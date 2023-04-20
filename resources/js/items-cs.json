@@ -778,7 +778,7 @@
         "id": 90,
         "name": "Blazing Boots",
         "count": 1,
-        "slot": "Small Item",
+        "slot": "Legs",
         "consumed": true,
         "desc": "During your Move ability, double the value of the movement."
     },
@@ -787,7 +787,7 @@
         "name": "Refined Blazing Boots",
         "count": 1,
         "cost": 40,
-        "slot": "Small Item",
+        "slot": "Legs",
         "consumed": true,
         "desc": "During your Move ability, add {JUMP} and double the value of the movement."
     },
