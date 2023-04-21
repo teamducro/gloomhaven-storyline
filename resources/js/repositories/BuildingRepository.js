@@ -7,10 +7,10 @@ export default class BuildingRepository {
         return collect(this.gameData.buildings(game)).map((building) => {
             // Set starting buildings
             if (building.unlocked) {
-                building.state = "available";
+                building.state = BuildingState.available;
             }
             if (building.built) {
-                building.state = "built";
+                building.state = BuildingState.built;
                 building.level = 1;
             }
             return new Building(building);
