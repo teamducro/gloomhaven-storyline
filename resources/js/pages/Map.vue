@@ -75,9 +75,9 @@
                       }"/>
             </template>
 
-            <p v-if="game == 'fh' && overlays?.contains('id','A')"
+            <p v-if="game === 'fh' && overlays && overlays.contains('id','A')"
                 class="absolute text-center text-gray-800 font-title text-xs"
-                style="left: 69.8%; top: 85.05%; width: 165px;">{{ overlays?.where('id','A').first().name }}</p>
+                style="left: 69.8%; top: 85.05%; width: 165px;">{{ overlays.where('id','A').first().name }}</p>
         </div>
     </div>
 </template>
