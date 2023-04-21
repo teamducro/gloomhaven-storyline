@@ -40,7 +40,8 @@ export default {
                 'it': 'Italiano',
                 'de': 'Deutsch',
                 'es': 'Español',
-                'pl': 'Polski'
+                'pl': 'Polski',
+                'ru': 'Pусский'
             },
             flags: {
                 'en': '🇺🇸',
@@ -48,7 +49,8 @@ export default {
                 'it': '🇮🇹',
                 'de': '🇩🇪',
                 'es': '🇪🇸',
-                'pl': '🇵🇱'
+                'pl': '🇵🇱',
+                'ru': '🇷🇺'
             },
             userRepository: new UserRepository,
         }
