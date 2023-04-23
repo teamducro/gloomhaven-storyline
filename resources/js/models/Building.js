@@ -74,6 +74,11 @@ class Building {
         return this.level >= this.levels.length - 1;
     }
 
+    get upgraded() {
+        // The level 1 buildings without sticker coordinates have not been upgraded
+        return this.level > 0 && !(this.coordinates.x === 0 && this.coordinates.y === 0);
+    }
+
     get name() {
         return this.$tPrefix('name');
     }

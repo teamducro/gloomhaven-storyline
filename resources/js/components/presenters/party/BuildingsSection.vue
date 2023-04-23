@@ -67,7 +67,7 @@
                     <add-links-and-icons text="{WRECKED}" class="mb-1"/>
                     <add-links-and-icons class="inline-icons" :text="$t(building.wrecked) || '-'"/>
                 </div>
-                <div class="outline-gray row-span-2 flex items-center justify-center p-2">
+                <div class="outline-gray row-span-2 flex flex-col items-center justify-center p-2">
                     <button v-if="!building.completed" :disabled="building.isWrecked()" @click="upgrade(building)" class="mdc-button mdc-button--raised" :class="{ 'h-auto p-1': !building.lockedUpgrade }">
                         <add-links-and-icons text="{UPGRADE}"/>
                         <div v-if="!building.lockedUpgrade" class="bg-dark-background inline-grid grid-cols-4 gap-px ml-1">
@@ -99,6 +99,9 @@
                             </div>
                         </button>
                     </div>
+                    <button v-if="building.upgraded" class="mdc-button -mb-2" @click="downgrade(building)">
+                        <span class="material-icons mr-1">replay</span> {{ $t('Downgrade') }}
+                    </button>
                 </div>
                 <div class="outline-gray row-span-2 flex flex-col items-center justify-center p-2">
                     <div v-if="!building.isWrecked()" class="flex items-center mb-1">
@@ -234,6 +237,13 @@ export default {
                 this.buildingRepository.setBuilt(building);
             }
             building.level += 1;
+        },
+        downgrade(building) {
+            building.level -= 1;
+            if (building.level <= 0) {
+                building.level = 0;
+                this.buildingRepository.setAvailable(building);
+            }
         },
         wreck(building) {
             this.buildingRepository.setWrecked(building);
