@@ -126,7 +126,7 @@
                     </button>
                 </div>
             </div>
-            <h3 class="mb-2">{{ $t('Available') }}</h3>
+            <h3 v-if="availableBuildings.count()" class="mb-2">{{ $t('Available') }}</h3>
             <div v-for="building in availableBuildings" :key="building.key()" class="grid xs:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
                 <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-background">
                     {{ building.id }} {{ $t(building.name) }} {{ $t('Lvl.') }} 0
@@ -147,7 +147,7 @@
                     </button>
                 </div>
             </div>
-            <h3 class="mb-2">{{ $t('Walls') }}</h3>
+            <h3 v-if="overlays.some(overlay => !overlay.present && overlay._name === 'Wall')" class="mb-2">{{ $t('Walls') }}</h3>
             <div v-for="overlay in overlays.filter(overlay => !overlay.present && overlay._name === 'Wall')"
                     :key="overlay.key()" class="grid xs:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
                 <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-background">
@@ -188,6 +188,7 @@
 import Slugify from "../../../services/Slugify";
 import BuildingRepository from "../../../repositories/BuildingRepository";
 import OverlayRepository from "../../../repositories/OverlayRepository";
+import {BuildingState} from "../../../models/BuildingState";
 
 export default {
     inject: ['appData'],
@@ -216,7 +217,7 @@ export default {
             return this.buildingRepository.where(b => !b.isLocked() && !b.isAvailable());
         },
         availableBuildings() {
-            return this.buildingRepository.whereState('available');
+            return this.buildingRepository.whereState(BuildingState.available);
         }
     },
     methods: {
