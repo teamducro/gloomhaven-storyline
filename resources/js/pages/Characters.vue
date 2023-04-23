@@ -2,12 +2,19 @@
     <div v-if="sheet" :key="sheetHash" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div id="characters" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party min-h-screen">
 
-            <tabs class="hidden sm:block"
-                  :tabs="[sheet.game === Game.fh ? $t('Campaign sheet') : $t('Party sheet'), $t('Characters'), $t('Items')]"
+            <tabs v-if="sheet.game === Game.fh" class="hidden sm:block"
+                  :tabs="[$t('Campaign sheet'), $t('Characters'), $t('Items'), $t('Buildings')]"
+                  :icons="['assignment', 'person', 'style', 'home']"
+                  :urls="['party', 'characters', 'items', 'buildings']"
+                  :active="$t('Characters')"
+            />
+            <tabs v-else class="hidden sm:block"
+                  :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
                   :urls="['party', 'characters', 'items']"
                   :active="$t('Characters')"
             />
+            
             <h1 class="hidden sm:inline-block mt-4 text-xl">{{ campaignName }}
                 <span v-if="character && selected"
                       class="pl-6">{{ $t(character.characterName) }}</span>

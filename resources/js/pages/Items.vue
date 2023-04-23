@@ -2,11 +2,17 @@
     <div v-if="sheet" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[sheet.game === Game.fh ? $t('Campaign sheet') : $t('Party sheet'), $t('Characters'), $t('Items')]"
+            <tabs v-if="sheet.game === Game.fh" :tabs="[$t('Campaign sheet'), $t('Characters'), $t('Items'), $t('Buildings')]"
+                  :icons="['assignment', 'person', 'style', 'home']"
+                  :urls="['party', 'characters', 'items', 'buildings']"
+                  :active="$t('Items')"
+            />
+            <tabs v-else :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
                   :urls="['party', 'characters', 'items']"
                   :active="$t('Items')"
             />
+
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
             <div v-if="!appData.read_only && Object.keys(sheet.itemDesigns).length" class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">

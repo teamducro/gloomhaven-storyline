@@ -59,6 +59,25 @@
                           'transform': 'scale('+scenarioScale+')'
                       }"/>
             </template>
+            
+            <template v-if="buildings && buildings.count()">
+                <webp v-for="building in buildings.items.filter(filteredBuildings)"
+                      :src="building.image()"
+                      :key="game+'-b'+building.id"
+                      :id="'b' + building.id"
+                      :animate="true"
+                      :alt="$t(building.name)"
+                      class="absolute scenario"
+                      :style="{
+                          'left': building.coordinates.x + '%',
+                          'top': building.coordinates.y + '%',
+                          'transform': 'scale('+scenarioScale+')'
+                      }"/>
+            </template>
+
+            <p v-if="game === 'fh' && overlays && overlays.contains('id','A')"
+                class="absolute text-center text-gray-800 font-title text-xs"
+                style="left: 69.8%; top: 85.05%; width: 165px;">{{ overlays.where('id','A').first().name }}</p>
         </div>
     </div>
 </template>
@@ -87,6 +106,7 @@ export default {
             scenarios: null,
             achievements: null,
             overlays: null,
+            buildings: null,
             scenarioScale: 1,
             gameData: new GameData
         }
@@ -112,11 +132,22 @@ export default {
         }
         this.$bus.$on('achievements-updated', this.setAchievements);
         this.$bus.$on('game-selected', this.loadMap);
+        
+        if (app.overlays) {
+            this.setOverlays();
+        }
+        if (app.buildings) {
+            this.setBuildings();
+        }
+        this.$bus.$on('buildings-updated', this.setBuildings);
+        this.$bus.$on('overlays-updated', this.setOverlays);
     },
     destroyed() {
         this.map?.dispose();
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
+        this.$bus.$off('buildings-updated', this.setBuildings);
+        this.$bus.$off('overlays-updated', this.setOverlays);
         if (this.mapTouch) {
             this.mapTouch.destroy();
         }
@@ -150,10 +181,6 @@ export default {
 
             this.scenarios = app.scenarios;
 
-            this.overlays = this.gameData.overlays(this.game).filter((overlay) => {
-                return this.scenarios.items.some((scenario) => overlay.linked_from.includes(scenario.id) && scenario.isComplete());
-            });
-
             // Show tooltip on hover
             if (this.scenarios) {
                 this.scenarios.each((scenario) => {
@@ -169,6 +196,12 @@ export default {
         },
         setAchievements() {
             this.achievements = app.achievements;
+        },
+        setBuildings() {
+            this.buildings = app.buildings;
+        },
+        setOverlays() {
+            this.overlays = app.overlays.filter(overlay => overlay.present);
         },
         scenarioClicked(e) {
             let id = parseInt(e.target.id.replace('s', ''));
@@ -206,7 +239,17 @@ export default {
             return this.isLandscape()
                 ? window.innerHeight / this.settings.width
                 : window.innerWidth / this.$map.offsetWidth;
-        }
+        },
+        filteredBuildings(building) {
+            // Building 42 should be hidden if scenario 64 is active
+            if (this.game =='fh' && building.id === 42) {
+                let blocker = this.scenarios.items.find(s => s.id === 64);
+                if (blocker.isVisible() && !blocker.isComplete()) {
+                    return false;
+                }
+            }
+            return building.isUnlocked();
+        },
     }
 }
 </script>

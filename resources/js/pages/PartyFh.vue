@@ -2,9 +2,9 @@
     <div v-if="sheet" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div id="party" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[$t('Campaign sheet'), $t('Characters'), $t('Items')]"
-                  :icons="['assignment', 'person', 'style']"
-                  :urls="['party', 'characters', 'items']"
+            <tabs :tabs="[$t('Campaign sheet'), $t('Characters'), $t('Items'), $t('Buildings')]"
+                  :icons="['assignment', 'person', 'style', 'home']"
+                  :urls="['party', 'characters', 'items', 'buildings']"
                   :active="$t('Campaign sheet')"
             />
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>

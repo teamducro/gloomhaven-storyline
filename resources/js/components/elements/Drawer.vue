@@ -99,6 +99,13 @@
                             </router-link>
                         </li>
 
+                        <li v-if="hasBuildings" @click="toggle">
+                            <router-link to="/buildings" class="mdc-list-item" active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+                                <span class="mdc-list-item__text">{{ $t('Buildings') }}</span>
+                            </router-link>
+                        </li>
+
                         <li role="separator" class="mdc-list-divider !my-2"></li>
                     </ul>
                 </div>
@@ -193,6 +200,7 @@ export default {
         return {
             game: null,
             hasMap: true,
+            hasBuildings: false,
             drawer: null,
             list: null,
             user: null,
@@ -243,6 +251,7 @@ export default {
         setGame(game) {
             this.game = game || this.appData.game;
             this.hasMap = this.gameData.map(this.game) !== null;
+            this.hasBuildings = !!this.gameData.buildings(this.game)?.length;
         },
         setUser() {
             this.user = app.user;
