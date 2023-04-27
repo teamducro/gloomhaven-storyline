@@ -104,7 +104,7 @@ export default {
         updateUserLanguage(wait = true) {
             if (Helpers.loggedIn() && typeof app.user?.lang === 'undefined' && wait === true) {
                 setTimeout(() => this.updateUserLanguage(false), 500);
-            } else if (Helpers.loggedIn() && app.user?.lang !== this.current) {
+            } else if (Helpers.loggedIn() && app.user && app.user.lang !== this.current) {
                 app.user.lang = this.current;
                 this.userRepository.update(app.user);
             }
