@@ -1890,7 +1890,8 @@
                 "x": 53.2,
                 "y": 44.9
             },
-            "chapter_id": 8,
+            "is_side": true,
+            "chapter_id": 108,
             "treasures": [
                 76
             ],
@@ -1918,7 +1919,7 @@
                 "x": 82.95,
                 "y": 36.11
             },
-            "chapter_id": 8,
+            "chapter_id": 108,
             "treasures": [
                 21
             ],
@@ -1949,7 +1950,7 @@
                 "x": 58.48,
                 "y": 47.77
             },
-            "chapter_id": 8,
+            "chapter_id": 108,
             "treasures": [
                 72
             ],
@@ -1980,7 +1981,7 @@
                 "x": 33.07,
                 "y": 73.07
             },
-            "chapter_id": 8,
+            "chapter_id": 108,
             "linked_from": [
                 63
             ],
@@ -2005,7 +2006,8 @@
                 "x": 38.7,
                 "y": 22.47
             },
-            "chapter_id": 7,
+            "is_side": true,
+            "chapter_id": 107,
             "treasures": [
                 39
             ],
@@ -2033,7 +2035,7 @@
                 "x": 35.08,
                 "y": 20.08
             },
-            "chapter_id": 7,
+            "chapter_id": 107,
             "links_to": [
                 67
             ],
@@ -2065,7 +2067,7 @@
                 "x": 40.54,
                 "y": 20.2
             },
-            "chapter_id": 7,
+            "chapter_id": 107,
             "links_to": [
                 68
             ],
@@ -2091,7 +2093,7 @@
                 "x": 40.37,
                 "y": 15.87
             },
-            "chapter_id": 7,
+            "chapter_id": 107,
             "treasures": [
                 59
             ],
@@ -2116,7 +2118,8 @@
                 "x": 20.93,
                 "y": 14.05
             },
-            "chapter_id": 7,
+            "is_side": true,
+            "chapter_id": 107,
             "links_to": [
                 70
             ],
@@ -2140,7 +2143,7 @@
                 "x": 16.67,
                 "y": 13.25
             },
-            "chapter_id": 7,
+            "chapter_id": 107,
             "treasures": [
                 82
             ],
@@ -2167,7 +2170,8 @@
                 "x": 76.77,
                 "y": 75.7
             },
-            "chapter_id": 7,
+            "is_side": true,
+            "chapter_id": 107,
             "treasures": [
                 22,
                 23
@@ -2194,7 +2198,7 @@
                 "x": 84.8,
                 "y": 24.85
             },
-            "chapter_id": 7,
+            "chapter_id": 107,
             "treasures": [
                 37
             ],
@@ -2223,7 +2227,7 @@
                 "x": 74.57,
                 "y": 16.95
             },
-            "chapter_id": 7,
+            "chapter_id": 107,
             "treasures": [
                 33
             ],
@@ -2253,7 +2257,7 @@
                 "x": 60.15,
                 "y": 28.51
             },
-            "chapter_id": 7,
+            "chapter_id": 107,
             "links_to": [
                 75,
                 76
@@ -2282,7 +2286,7 @@
                 "x": 76.05,
                 "y": 12.71
             },
-            "chapter_id": 7,
+            "chapter_id": 107,
             "treasures": [
                 20,
                 51,
@@ -2314,7 +2318,7 @@
                 "x": 80.63,
                 "y": 14.12
             },
-            "chapter_id": 7,
+            "chapter_id": 107,
             "treasures": [
                 2,
                 55
@@ -2345,7 +2349,7 @@
                 "x": 79.85,
                 "y": 11
             },
-            "chapter_id": 7,
+            "chapter_id": 107,
             "linked_from": [
                 75,
                 76
@@ -2371,7 +2375,8 @@
                 "x": 55.15,
                 "y": 23.82
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "treasures": [
                 58,
                 13
@@ -2397,7 +2402,8 @@
                 "x": 80.22,
                 "y": 25.75
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "treasures": [
                 8
             ],
@@ -2424,7 +2430,7 @@
                 "x": 17.97,
                 "y": 58.28
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "treasures": [
                 62,
                 69
@@ -2453,7 +2459,8 @@
                 "x": 83.67,
                 "y": 46.7
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "treasures": [
                 19
             ],
@@ -2477,7 +2484,8 @@
                 "x": 20.7,
                 "y": 34.03
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "rewards": [
                 "Gain 2 prosperity+3 forgotten cirlces items (153,159,161) OR ???"
             ],
@@ -2497,7 +2505,8 @@
                 "x": 67.76,
                 "y": 20.76
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "rewards": [
                 "“Giant Piranha Pig Spine” (item 202)"
             ],
@@ -2520,7 +2529,8 @@
                 "x": 11.5,
                 "y": 24.72
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "rewards": [
                 "item 234 (ooze vial), brummix sticker"
             ],
@@ -2540,7 +2550,8 @@
                 "x": 24.14,
                 "y": 25.88
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "rewards": [
                 "15xp, check"
             ],
@@ -2562,7 +2573,7 @@
                 "x": 71,
                 "y": 60.4
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "treasures": [
                 17
             ],
@@ -2587,7 +2598,8 @@
                 "x": 47.06,
                 "y": 31.16
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "treasures": [
                 27,
                 38
@@ -2617,7 +2629,7 @@
                 "x": 52.28,
                 "y": 32.32
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "treasures": [
                 6
             ],
@@ -2645,7 +2657,8 @@
                 "x": 61.7,
                 "y": 38.9
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "treasures": [
                 42
             ],
@@ -2670,7 +2683,8 @@
                 "x": 49.65,
                 "y": 17.54
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "links_to": [
                 91
             ],
@@ -2693,7 +2707,7 @@
                 "x": 45.44,
                 "y": 21.75
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "linked_from": [
                 90
             ],
@@ -2717,7 +2731,8 @@
                 "x": 50.92,
                 "y": 19.38
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "rewards": [
                 "lose 2.5 loot per charactor, HE-RO-IC-S pet after 1 week if building 88 is built"
             ],
@@ -2739,7 +2754,8 @@
                 "x": 55.47,
                 "y": 32.17
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "rewards": [
                 "“Small Rat” (Item 235) OR “Roasted Fowl” (item 79)"
             ],
@@ -2761,7 +2777,8 @@
                 "x": 81.16,
                 "y": 27.9
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "treasures": [
                 12,
                 29
@@ -2789,7 +2806,7 @@
                 "x": 23.97,
                 "y": 61.51
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "linked_from": [
                 94
             ],
@@ -2813,7 +2830,8 @@
                 "x": 70.17,
                 "y": 44.85
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "treasures": [
                 10
             ],
@@ -2840,7 +2858,7 @@
                 "x": 71.03,
                 "y": 48
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "links_to": [
                 98
             ],
@@ -2865,7 +2883,7 @@
                 "x": 67.2,
                 "y": 48.8
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "treasures": [
                 35,
                 65
@@ -2893,7 +2911,8 @@
                 "x": 84.06,
                 "y": 21.51
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "links_to": [
                 100
             ],
@@ -2917,7 +2936,7 @@
                 "x": 84.38,
                 "y": 18.2
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "treasures": [
                 79
             ],
@@ -2943,7 +2962,7 @@
                 "x": 24.68,
                 "y": 18.25
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "links_to": [
                 102
             ],
@@ -2972,7 +2991,7 @@
                 "x": 15.8,
                 "y": 30.4
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "links_to": [
                 103
             ],
@@ -2995,7 +3014,7 @@
                 "x": 13.58,
                 "y": 33.88
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "linked_from": [
                 102
             ],
@@ -3015,7 +3034,8 @@
                 "x": 69.93,
                 "y": 23.53
             },
-            "chapter_id": 9,
+            "is_side": true,
+            "chapter_id": 109,
             "links_to": [
                 105
             ],
@@ -3040,7 +3060,7 @@
                 "x": 57.96,
                 "y": 44.68
             },
-            "chapter_id": 9,
+            "chapter_id": 109,
             "links_to": [
                 106
             ],
@@ -3068,7 +3088,7 @@
                 "x": 36.83,
                 "y": 24.85
             },
-            "chapter_id": 9,
+            "chapter_id": 109,
             "linked_from": [
                 105
             ],
@@ -3093,7 +3113,8 @@
                 "x": 45.98,
                 "y": 39.6
             },
-            "chapter_id": 9,
+            "is_side": true,
+            "chapter_id": 109,
             "rewards": [
                 "gain 1 material resource per completed episode OR gain 5 + “Cup of Ventillion” (item 214)"
             ],
@@ -3115,7 +3136,8 @@
                 "x": 76.05,
                 "y": 48.2
             },
-            "chapter_id": 9,
+            "is_side": true,
+            "chapter_id": 109,
             "treasures": [
                 3,
                 68
@@ -3141,7 +3163,8 @@
                 "x": 71.66,
                 "y": 35.49
             },
-            "chapter_id": 9,
+            "is_side": true,
+            "chapter_id": 109,
             "treasures": [
                 80
             ],
@@ -3165,7 +3188,8 @@
                 "x": 13.25,
                 "y": 27.9
             },
-            "chapter_id": 9,
+            "is_side": true,
+            "chapter_id": 109,
             "treasures": [
                 75
             ],
@@ -3190,7 +3214,8 @@
                 "x": 24.92,
                 "y": 11.38
             },
-            "chapter_id": 9,
+            "is_side": true,
+            "chapter_id": 109,
             "rewards": [
                 "“Cracked Mirror” (item 236)"
             ],
@@ -3212,7 +3237,8 @@
                 "x": 66,
                 "y": 57.9
             },
-            "chapter_id": 9,
+            "is_side": true,
+            "chapter_id": 109,
             "rewards": [
                 "15xp"
             ],
@@ -3234,7 +3260,8 @@
                 "x": 58.8,
                 "y": 38.5
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "rewards": [
                 "4 herb resources"
             ],
@@ -3258,7 +3285,8 @@
                 "x": 25.05,
                 "y": 30.2
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "links_to": [
                 115
             ],
@@ -3282,7 +3310,7 @@
                 "x": 27.36,
                 "y": 33.19
             },
-            "chapter_id": 10,
+            "chapter_id": 110,
             "links_to": [
                 116
             ],
@@ -3311,7 +3339,7 @@
                 "x": 24.02,
                 "y": 35.41
             },
-            "chapter_id": 10,
+            "chapter_id": 110,
             "linked_from": [
                 115
             ],
@@ -3337,7 +3365,8 @@
                 "x": 64.53,
                 "y": 30.4
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "rewards": [
                 "4 hide, 10 gold each"
             ],
@@ -3359,7 +3388,8 @@
                 "x": 63.45,
                 "y": 22.83
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "rewards": [
                 "“Amulet of Eternal Life” (Item 66), loot cards for each token"
             ],
@@ -3381,7 +3411,8 @@
                 "x": 15.84,
                 "y": 10.88
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "rewards": [
                 "trade in “dust” for “Scepter of Control” (item 203) &/or a material resource &/or herb resource"
             ],
@@ -3396,7 +3427,8 @@
                 "x": 10.9,
                 "y": 77.88
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "treasures": [
                 50
             ],
@@ -3422,7 +3454,7 @@
                 "x": 75.75,
                 "y": 50.89
             },
-            "chapter_id": 10,
+            "chapter_id": 110,
             "linked_from": [
                 120
             ],
@@ -3447,7 +3479,8 @@
                 "x": 52.64,
                 "y": 41.34
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "treasures": [
                 31
             ],
@@ -3472,7 +3505,8 @@
                 "x": 43.56,
                 "y": 24.16
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "treasures": [
                 52
             ],
@@ -3496,7 +3530,8 @@
                 "x": 74.48,
                 "y": 62.66
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "links_to": [
                 125
             ],
@@ -3521,7 +3556,7 @@
                 "x": 78.8,
                 "y": 61.37
             },
-            "chapter_id": 10,
+            "chapter_id": 110,
             "treasures": [
                 14
             ],
@@ -3549,7 +3584,8 @@
                 "x": 80.3,
                 "y": 59.18
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "rewards": [
                 "10 gold"
             ],
@@ -3571,7 +3607,8 @@
                 "x": 60.5,
                 "y": 81.85
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "treasures": [
                 30
             ],
@@ -3594,7 +3631,8 @@
                 "x": 55.2,
                 "y": 73.6
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "treasures": [
                 54
             ],
@@ -3623,7 +3661,7 @@
                 "x": 49.5,
                 "y": 37.8
             },
-            "chapter_id": 10,
+            "chapter_id": 110,
             "treasures": [
                 78
             ],
@@ -3654,7 +3692,7 @@
                 "x": 54.5,
                 "y": 35.6
             },
-            "chapter_id": 10,
+            "chapter_id": 110,
             "treasures": [
                 11
             ],
@@ -3682,7 +3720,8 @@
                 "x": 44.43,
                 "y": 13.81
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "rewards": [
                 "10xp, item 237"
             ],
@@ -3697,7 +3736,8 @@
                 "x": 19.54,
                 "y": 29.14
             },
-            "chapter_id": 11,
+            "is_side": true,
+            "chapter_id": 111,
             "links_to": [
                 133
             ],
@@ -3722,7 +3762,7 @@
                 "x": 21.12,
                 "y": 27.03
             },
-            "chapter_id": 11,
+            "chapter_id": 111,
             "treasures": [
                 34
             ],
@@ -3750,7 +3790,8 @@
                 "x": 12.03,
                 "y": 10.6
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "rewards": [
                 "“Tome of Conflict” (item 219)"
             ],
@@ -3771,7 +3812,8 @@
                 "x": 24.23,
                 "y": 21.55
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "rewards": [
                 "2 morale, Gain 2 prosperity, 1 inspiration, “Belara's quill” (tem 220)"
             ],
@@ -3793,7 +3835,8 @@
                 "x": 46.88,
                 "y": 14.83
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "treasures": [
                 83
             ],
@@ -3817,7 +3860,8 @@
                 "x": 71.86,
                 "y": 19.58
             },
-            "chapter_id": 10,
+            "is_side": true,
+            "chapter_id": 110,
             "rewards": [
                 "Gain 2 prosperity, 3 morale, 30 gold each, upgrade a money loot with a +1"
             ],

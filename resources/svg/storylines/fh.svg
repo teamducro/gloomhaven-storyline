@@ -15,48 +15,48 @@
     </style>
     <g>
         <g class="chapter intro" id="chapter1">
-            <rect x="1" y="181" width="320" height="560" rx="32" ry="32" fill="#111" stroke="#000" stroke-width="3"/>
+            <rect x="1" y="181" width="320" height="560" rx="32" ry="32" fill="#111" stroke="#000" stroke-width="3" opacity="0.7"/>
             <text class="label" x="43" y="250" font-size="46px">Introduction</text>
         </g>
         <g class="chapter" id="chapter2">
-            <rect x="1" y="821" width="320" height="880" rx="32" ry="32" fill="#111" stroke="#1ba1e2" stroke-width="3"/>
+            <rect x="1" y="821" width="320" height="880" rx="32" ry="32" fill="#111" stroke="#1ba1e2" stroke-width="3" opacity="0.7"/>
             <text class="label" x="43" y="890" font-size="46px">Algox</text>
         </g>
         <g class="chapter" id="chapter3">
-            <rect x="481" y="101" width="800" height="480" rx="32" ry="32" fill="#111" stroke="#000" stroke-width="3"/>
+            <rect x="481" y="101" width="800" height="480" rx="32" ry="32" fill="#111" stroke="#000" stroke-width="3" opacity="0.7"/>
             <text class="label" x="721" y="170" font-size="46px" text-anchor="middle">Lurker</text>
         </g>
         <g class="chapter" id="chapter4">
-            <rect x="481" y="741" width="800" height="480" rx="32" ry="32" fill="#111" stroke="#004080" stroke-width="3"/>
+            <rect x="481" y="741" width="800" height="480" rx="32" ry="32" fill="#111" stroke="#004080" stroke-width="3" opacity="0.7"/>
             <text class="label" x="1239" y="995" font-size="46px" text-anchor="end">Algox</text>
         </g>
         <g class="chapter" id="chapter5">
-            <rect x="481" y="1301" width="800" height="320" rx="32" ry="32" fill="#111" stroke="#8080c0" stroke-width="3"/>
+            <rect x="481" y="1301" width="800" height="320" rx="32" ry="32" fill="#111" stroke="#8080c0" stroke-width="3" opacity="0.7"/>
             <text class="label" x="533" y="1580" font-size="46px">Algox</text>
         </g>
         <g class="chapter" id="chapter6">
-            <rect x="1361" y="421" width="640" height="960" rx="32" ry="32" fill="#111" stroke="#008a00" stroke-width="3"/>
+            <rect x="1361" y="421" width="640" height="960" rx="32" ry="32" fill="#111" stroke="#008a00" stroke-width="3" opacity="0.7"/>
             <text class="label" x="1413" y="490" font-size="46px">Unfettered</text>
         </g>
-        <g class="chapter" id="chapter7">
-            <rect x="2161" y="101" width="640" height="640" rx="32" ry="32" fill="#111" stroke="#a20025" stroke-width="3"/>
-            <text class="label" x="2203" y="355" font-size="46px">Personal Quests</text>
+        <g>
+            <rect x="2161" y="101" width="640" height="640" rx="32" ry="32" fill="#111" stroke="#a20025" stroke-width="3" opacity="0.7"/>
+            <text class="label chapter" id="chapter107" x="2203" y="355" font-size="46px">Personal Quests</text>
         </g>
-        <g class="chapter" id="chapter8">
-            <rect x="2161" y="821" width="640" height="240" rx="32" ry="32" fill="#111" stroke="#e3c800" stroke-width="3"/>
-            <text class="label" x="2203" y="890" font-size="46px">Puzzle Book</text>
+        <g>
+            <rect x="2161" y="821" width="640" height="240" rx="32" ry="32" fill="#111" stroke="#e3c800" stroke-width="3" opacity="0.7"/>
+            <text class="label chapter" id="chapter108" x="2203" y="890" font-size="46px">Puzzle Book</text>
         </g>
-        <g class="chapter" id="chapter9">
-            <rect x="2161" y="1141" width="800" height="400" rx="32" ry="32" fill="#111" stroke="#a0522d" stroke-width="3"/>
-            <text class="label" x="2203" y="1210" font-size="46px">Random Scenarios</text>
+        <g>
+            <rect x="2161" y="1141" width="800" height="400" rx="32" ry="32" fill="#111" stroke="#a0522d" stroke-width="3" opacity="0.7"/>
+            <text class="label chapter" id="chapter109" x="2203" y="1210" font-size="46px">Random Scenarios</text>
         </g>
-        <g class="chapter" id="chapter10">
-            <rect x="1" y="1781" width="1120" height="720" rx="32" ry="32" fill="#111" stroke="#f8cecc" stroke-width="3"/>
-            <text class="label" x="43" y="1850" font-size="46px">Other</text>
+        <g>
+            <rect x="1" y="1781" width="1120" height="720" rx="32" ry="32" fill="#111" stroke="#f8cecc" stroke-width="3" opacity="0.7"/>
+            <text class="label chapter" id="chapter110" x="43" y="1850" font-size="46px">Other</text>
         </g>
-        <g class="chapter" id="chapter11">
-            <rect x="1201" y="1701" width="960" height="800" rx="32" ry="32" fill="#111" stroke="#fa6800" stroke-width="3"/>
-            <text class="label" x="1243" y="1800" font-size="46px">Job Postings</text>
+        <g>
+            <rect x="1201" y="1701" width="960" height="800" rx="32" ry="32" fill="#111" stroke="#fa6800" stroke-width="3" opacity="0.7"/>
+            <text class="label chapter" id="chapter111" x="1243" y="1800" font-size="46px">Job Postings</text>
         </g>
         <g class="edge edge0" id="edge0-1">
             <path d="M 81 384 L 81 450.9" stroke-width="3" stroke-miterlimit="10" class="line"/>
