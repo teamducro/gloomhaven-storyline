@@ -3875,47 +3875,47 @@
     ],
     "chapters": [
         {
-            "-id": 1,
+            "id": 1,
             "name": "Introduction"
         },
         {
-            "-id": 2,
+            "id": 2,
             "name": "Algox"
         },
         {
-            "-id": 3,
+            "id": 3,
             "name": "Lurker"
         },
         {
-            "-id": 4,
+            "id": 4,
             "name": "Algox"
         },
         {
-            "-id": 5,
+            "id": 5,
             "name": "Algox"
         },
         {
-            "-id": 6,
+            "id": 6,
             "name": "Unfettered"
         },
         {
-            "-id": 7,
+            "id": 107,
             "name": "Personal Quests"
         },
         {
-            "-id": 8,
+            "id": 108,
             "name": "Puzzle Book"
         },
         {
-            "-id": 9,
+            "id": 109,
             "name": "Random Scenarios"
         },
         {
-            "-id": 10,
+            "id": 110,
             "name": "Other"
         },
         {
-            "-id": 11,
+            "id": 111,
             "name": "Job Postings"
         }
     ],
