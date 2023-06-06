@@ -4,8 +4,4 @@ export const Game = Object.freeze({
     "fc": "fc",
     "jotl": "jotl",
     "cs": "cs",
-
-    games() {
-        return Object.getOwnPropertyNames(this);
-    }
 });

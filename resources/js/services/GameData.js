@@ -23,7 +23,7 @@ import {Game} from "../models/Game";
 
 export default class GameData {
     games() {
-        return Game.games()
+        return Object.getOwnPropertyNames(Game)
     }
 
     beta() {
