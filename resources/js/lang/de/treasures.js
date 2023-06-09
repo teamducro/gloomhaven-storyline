@@ -224,7 +224,7 @@ export default {
     "gh-75": {
         "name": "Kryptogramm gefunden (Siehe Szenariobuch auf Seite 121)"
     },
-    "fc-76": {
+   "fc-76": {
         "name": "Erleide 3 Schaden und erhalte {WOUND} und 10 Gold"
     },
     "fc-77": {
@@ -234,7 +234,7 @@ export default {
         "name": "Erhalte “Alter Bohrer” (Gegenstand 157)"
     },
     "fc-79": {
-        "name": "Erhalte “Falkenfigur” (Gegenstand 157)"
+        "name": "Erhalte “Falkenfigur” (Gegenstand 035)"
     },
     "fc-80": {
         "name": "Erhalte 1 ✓ und füge dem Deck Riss-Ereignis 19 hinzu"
@@ -252,13 +252,13 @@ export default {
         "name": "Erhalte “Schreckensmaske” (Gegenstand 066)"
     },
     "fc-85": {
-        "name": "Erleide 3 Schaden, erhalte GIFT {POISON} and 10 Gold"
+        "name": "Erleide 3 Schaden, erhalte {POISON} und 10 Gold"
     },
     "fc-86": {
         "name": "Schalte {DR} Solo-Szenario “Ausblick auf das Unausweichliche” frei (s.Seite 25)"
     },
     "fc-87": {
-        "name": "Erleide 2 Schaden, erhalte FLUCH {CURSE} und 15 Gold"
+        "name": "Erleide 2 Schaden, erhalte {CURSE} und 15 Gold"
     },
     "fc-88": {
         "name": "Erhalte 1 ✓"
