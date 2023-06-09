@@ -231,58 +231,61 @@ export default {
         "name": "Erhalte “Großer Arzneitrank” (Gegenstand 090)"
     },
     "fc-78": {
-        "name": "Erhalte “Ancient Bow” (Item 157)"
+        "name": "Erhalte “Alter Bohrer” (Gegenstand 157)"
     },
     "fc-79": {
-        "name": "Erhalte “Falcon Figurine” (Item 157)"
+        "name": "Erhalte “Falkenfigur” (Gegenstand 157)"
     },
     "fc-80": {
-        "name": "Erhalte 1 ✓ and add Rift Event 19 to the deck"
+        "name": "Erhalte 1 ✓ und füge dem Deck Riss-Ereignis 19 hinzu"
     },
     "fc-81": {
-        "name": "Erhalte “Scroll of Haste” (Item 159) and 10 gold"
+        "name": "Erhalte “Schrift der Eile” (Gegenstand 159) und 10 Gold"
     },
     "fc-82": {
-        "name": "“Rejuvenation Greaves” (Item 158)"
+        "name": "Gegenstandsplan “Erfrischende Beinpanzer” (Gegenstand 158)"
     },
     "fc-83": {
-        "name": "Erhalte “Major Power Potion” (Item 041)"
+        "name": "Erhalte “Großer Krafttrank” (Gegenstand 041)"
     },
     "fc-84": {
-        "name": "Erhalte “Mask of Terrors” (Item 066)"
+        "name": "Erhalte “Schreckensmaske” (Gegenstand 066)"
     },
     "fc-85": {
-        "name": "Suffer 3 damage, Erhalte {POISON} and 10 gold"
+        "name": "Erleide 3 Schaden, erhalte GIFT {POISON} and 10 Gold"
     },
     "fc-86": {
-        "name": "Unlock Diviner {DR} Solo Scenario “Forecast of the Inevitable” (see page 25 of the main book)"
+        "name": "Schalte {DR} Solo-Szenario “Ausblick auf das Unausweichliche” frei (s.Seite 25)"
     },
     "fc-87": {
-        "name": "Suffer 2 damage, Erhalte {CURSE} and 15 gold"
+        "name": "Erleide 2 Schaden, erhalte FLUCH {CURSE} und 15 Gold"
     },
     "fc-88": {
         "name": "Erhalte 1 ✓"
     },
     "fc-89": {
-        "name": "Erhalte “Second Chance Ring” (Item 070)"
+        "name": "Erhalte “Ring der Chancen” (Gegenstand 070)"
     },
     "fc-90": {
-        "name": "10 gold each, Read section 75 on page 49"
+        "name": "Lies Abschnitt 75 auf Seite 49"
     },
     "fc-91": {
-        "name": "Erhalte 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
+        "name": "Erhalte 30 und den Gruppenerfolg “Opportunisten” Füge dem Deck Stadt-Ereignis 84 hinzu"
+    },
+    "fc-92": {
+        "name": "Erhalte “Hellebarde” (Gegenstand 068)"
     },
     "fc-93": {
-        "name": "“Scroll of Haste” (Item 159)"
+        "name": "Erhalte “Schrift der Eile” (Gegenstand 159)"
     },
     "fc-94": {
-        "name": "Erhalte 1 ✓ and add Rift Event 20 to the deck"
+        "name": "Erhalte 1 ✓ und füge dem Deck Riss-Ereignis 20 hinzu"
     },
     "fc-95": {
-        "name": "Erhalte 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
+        "name": "Erhalte 25 Gold und den Gruppenerfolg “Geldschatulle“. Füge dem Deck Stadt-Ereignis 58 hinzu"
     },
     "fc-96": {
-        "name": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}"
+        "name": "Du findest einen alten Folianten mit technischen Zeichnungen und Entwürfen für eine Vielzahl von exotischen Maschinen. Eim Einband findest du eine eigentümliche handschriftliche Notiz: {NOTE_115}"
     },
     "jotl-1": {
         "name": "Erhalte 10 experience"
