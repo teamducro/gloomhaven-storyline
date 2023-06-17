@@ -277,7 +277,7 @@ export default {
     "gh": "Gloomhaven",
     "fc": "Forgotten Circles",
     "Forgotten Circles": "Forgotten Circles",
-    "jotl": "PdL",
+    "jotl": "Pranken des Löwen",
     "Jaws of the Lion": "Pranken des Löwen",
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
