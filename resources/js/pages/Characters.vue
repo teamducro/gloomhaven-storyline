@@ -240,6 +240,7 @@ import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
 import store from "store/dist/store.modern";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import BuildingRepository from "../repositories/BuildingRepository";
 import ItemAvailability from "../services/ItemAvailability";
 import Helpers from "../services/Helpers";
 import TextField from "../components/elements/TextField.vue";
@@ -268,6 +269,7 @@ export default {
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
             scenarioRepository: new ScenarioRepository,
+            buildingRepository: new BuildingRepository,
             characterRepository: new CharacterRepository,
             itemRepository: new ItemRepository
         }
@@ -341,6 +343,9 @@ export default {
                 // Add auto unlocked items, based on prosperity level or completed scenarios.
                 if (this.currentGame === Game.jotl) {
                     sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
+                }
+                else if (this.currentGame === Game.fh) {
+                    sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
                 }
                 else {
                     sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
