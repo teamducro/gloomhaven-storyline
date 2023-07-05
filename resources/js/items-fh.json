@@ -2466,7 +2466,7 @@
         "count": 1,
         "cost": 0,
         "slot": "One Hand",
-        "source": "Reward from Solo Scenario #01",
+        "source": "Reward from Solo Scenario - {DF}",
         "desc": "Duing your attack ability, move one character token on one of your peristent abilities backward one slot and add +X {ATTACK.fh} to one attack, where X is the nuber of active peristent abilities.",
         "consumed": true
     },
@@ -2476,7 +2476,7 @@
         "count": 1,
         "cost": 0,
         "slot": "Small Item",
-        "source": "Reward from Solo Scenario #02",
+        "source": "Reward from Solo Scenario - {BB}",
         "desc": "During our turn, perform one of the two following abilities: Lose one card from your hand to gain 3 {TIME_ICON}. -2 {TIME_ICON} : {RECOVER.fh} up to two of your discarded cards",
         "lost": true,
         "consumed": true
@@ -2487,7 +2487,7 @@
         "count": 1,
         "cost": 0,
         "slot": "One Hand",
-        "source": "Reward from Solo Scenario #03",
+        "source": "Reward from Solo Scenario - {BN}",
         "desc": "During your turn perform: {ATTACK.fh} 2 {RANGE.fh} 3. All your banners are treated as additionally occupying the hex of the attack target of their bonuses and that hex is treated as occupied by an ally this round. {ROUND}",
         "consumed": true
     },
@@ -2497,7 +2497,7 @@
         "count": 1,
         "cost": 0,
         "slot": "One Hand",
-        "source": "Reward from Solo Scenario #04",
+        "source": "Reward from Solo Scenario - {DW}",
         "desc": "Place one {SHADOW_ICON} in an adjacent hex. {DARK}",
         "consumed": true
     },
@@ -2507,7 +2507,7 @@
         "count": 1,
         "cost": 0,
         "slot": "One Hand",
-        "source": "Reward from Solo Scenario #05",
+        "source": "Reward from Solo Scenario - {BO}",
         "desc": "On the next three deaths of any of your summons, {EARTH_OR_DARK} and perform: {HEAL.fh} 2 self",
         "consumed": true
     },
@@ -2517,7 +2517,7 @@
         "count": 1,
         "cost": 0,
         "slot": "Head",
-        "source": "Reward from Solo Scenario #06",
+        "source": "Reward from Solo Scenario - {GM}",
         "desc": "During your ranged attack ability while in {RANGED_ICON}, gain advantage for one attack, then flip this card over.",
         "backDesc": "When an enemy performs an attack targeting you while you are in {MELEE_ICON}, the attacker gains disadvantage, then flip this card over."
     },
@@ -2527,7 +2527,7 @@
         "count": 1,
         "cost": 0,
         "slot": "Two Hands",
-        "source": "Reward from Solo Scenario #07",
+        "source": "Reward from Solo Scenario - {IF}",
         "desc": "During your turn, activate all your {INFUSION_ICON} as if you just performed a {INFUSION_ICON} action.",
         "consumed": true
     },
@@ -2537,7 +2537,7 @@
         "count": 1,
         "cost": 0,
         "slot": "Small Item",
-        "source": "Reward from Solo Scenario #08",
+        "source": "Reward from Solo Scenario - {PY}",
         "desc": "During your turn, you may create either one 1-hex obstacle or hazardous terrain tile in an empty tile within {RANGE.fh} 2. {FIRE_OR_EARTH}",
         "consumed": true
     },
@@ -2547,7 +2547,7 @@
         "count": 1,
         "cost": 0,
         "slot": "Small Item",
-        "source": "Reward from Solo Scenario #09",
+        "source": "Reward from Solo Scenario - {SH}",
         "desc": "Gain 3 {RESONANCE_ICON}. {WIND_OR_EARTH}",
         "lost": true,
         "consumed": true
@@ -2558,7 +2558,7 @@
         "count": 1,
         "cost": 0,
         "slot": "One Hand",
-        "source": "Reward from Solo Scenario #10",
+        "source": "Reward from Solo Scenario - {TR}",
         "desc": "When you create a trap, place a character token on it.  Monsters do not treat the trap as negative. Remvoe the token when you {RECOVER.fh} this item. {PERSISTENT}",
         "spent": true
     },
@@ -2568,7 +2568,7 @@
         "count": 1,
         "cost": 0,
         "slot": "Small Item",
-        "source": "Reward from Solo Scenario #11",
+        "source": "Reward from Solo Scenario - {PC}",
         "desc": "When you suffer damage, if your hit point value is reduced to below half your maximum, perform: {HEAL.fh} 7 self, {CURSE.fh} This heal is not affect by and cannot remove negative conditions.",
         "consumed": true
     },
@@ -2578,7 +2578,7 @@
         "count": 1,
         "cost": 0,
         "slot": "One Hand",
-        "source": "Reward from Solo Scenario #12",
+        "source": "Reward from Solo Scenario - {SD}",
         "desc": "During an attack ability you grant an ally, add {PUSH.fh} 2 to one of their attacks, then flip this card over.",
         "backDesc": "During your attack ability you, add {PULL.fh} 2 to one attack, then flip this card over."
     },
@@ -2588,7 +2588,7 @@
         "count": 1,
         "cost": 0,
         "slot": "One Hand",
-        "source": "Reward from Solo Scenario #13",
+        "source": "Reward from Solo Scenario - {FF}",
         "desc": "During your attack ability, add {BRITTLE.fh} to one attack and create one 1-hex icy terrain tile in the featureless hex occupied by the target.",
         "consumed": true
     },
@@ -2598,7 +2598,7 @@
         "count": 1,
         "cost": 0,
         "slot": "Small Item",
-        "source": "Reward from Solo Scenario #14",
+        "source": "Reward from Solo Scenario - {HV}",
         "desc": "Remove all damage and negative conditions from one of your summons, then {TRANSFER_ICON} to that summon.",
         "consumed": true
     },
@@ -2608,7 +2608,7 @@
         "count": 1,
         "cost": 0,
         "slot": "Legs",
-        "source": "Reward from Solo Scenario #15",
+        "source": "Reward from Solo Scenario - {MM}",
         "desc": "During your move ability, when you have {PRESSURE_HIGH_ICON} or {PRESSURE_OVER_ICON}, add +1 {MOVE.fh}, then flip this card over at the end of your turn.",
         "backDesc": "During your turn when you have {PRESSURE_LOW_ICON}, perform: {MUDDLE.fh} {RANGE.fh} 1 then flip this card over at the end of your turn."
     },
@@ -2618,7 +2618,7 @@
         "count": 1,
         "cost": 0,
         "slot": "One Hand",
-        "source": "Reward from Solo Scenario #16",
+        "source": "Reward from Solo Scenario - {DP}",
         "desc": "Whenever you gain {INVISIBLE.fh} or peform a teleport ability while you have {INVISIBLE.fh}, after the ability perform: {MUDDLE.fh} {RANGE.fh} 1"
     },
     {
@@ -2627,7 +2627,7 @@
         "count": 1,
         "cost": 0,
         "slot": "Head",
-        "source": "Reward from Solo Scenario #17",
+        "source": "Reward from Solo Scenario - {CR}",
         "desc": "When you rest, you may keep up to three {TIDE_ICON} cards in your active area. {LIGHT_OR_DARK}",
         "lost": true,
         "consumed": true

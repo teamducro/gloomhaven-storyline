@@ -577,5 +577,73 @@ export default {
             "Add one {AGAIN} “{HEAL}1 {RANGE}1” card",
             "Ignore negative scenario effects and remove one {+0_WHITE} card"
         ]
+    },
+    "DF": {
+        "name": "Drifter",
+        "perks": []
+    },
+    "BB": {
+        "name": "Blinkblade",
+        "perks": []
+    },
+    "BN": {
+        "name": "Banner Spear",
+        "perks": []
+    },
+    "DW": {
+        "name": "Deathwalker",
+        "perks": []
+    },
+    "BO": {
+        "name": "Boneshaper",
+        "perks": []
+    },
+    "GM": {
+        "name": "Geminate",
+        "perks": []
+    },
+    "IF": {
+        "name": "Infuser",
+        "perks": []
+    },
+    "PY": {
+        "name": "Pyroclast",
+        "perks": []
+    },
+    "SH": {
+        "name": "Shattersong",
+        "perks": []
+    },
+    "TR": {
+        "name": "Trapper",
+        "perks": []
+    },
+    "PC": {
+        "name": "Pain Conduit",
+        "perks": []
+    },
+    "SD": {
+        "name": "Snowdancer",
+        "perks": []
+    },
+    "FF": {
+        "name": "Frozen Fist",
+        "perks": []
+    },
+    "HV": {
+        "name": "HIVE",
+        "perks": []
+    },
+    "MM": {
+        "name": "Metal Mosaic",
+        "perks": []
+    },
+    "DP": {
+        "name": "Deepwraith",
+        "perks": []
+    },
+    "CR": {
+        "name": "Crashing Tide",
+        "perks": []
     }
 }

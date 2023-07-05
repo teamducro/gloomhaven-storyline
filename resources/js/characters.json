@@ -6208,6 +6208,193 @@
                     "desc": "Ignore negative scenario effects and remove one {+0_WHITE} card"
                 }
             ]
+        },
+        "DF": {
+            "id": "DF",
+            "name": "Drifter",
+            "game": "fh",
+            "translatedName": "characters.DF.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_unlocked"
+            ],
+            "perks": []
+        },
+        "BB": {
+            "id": "BB",
+            "name": "Blinkblade",
+            "game": "fh",
+            "translatedName": "characters.BB.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_unlocked"
+            ],
+            "perks": []
+        },
+        "BN": {
+            "id": "BN",
+            "name": "Banner Spear",
+            "game": "fh",
+            "translatedName": "characters.BN.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_unlocked"
+            ],
+            "perks": []
+        },
+        "DW": {
+            "id": "DW",
+            "name": "Deathwalker",
+            "game": "fh",
+            "translatedName": "characters.DW.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_unlocked"
+            ],
+            "perks": []
+        },
+        "BO": {
+            "id": "BO",
+            "name": "Boneshaper",
+            "game": "fh",
+            "translatedName": "characters.BO.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_unlocked"
+            ],
+            "perks": []
+        },
+        "GM": {
+            "id": "GM",
+            "name": "Geminate",
+            "game": "fh",
+            "translatedName": "characters.GM.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_unlocked"
+            ],
+            "perks": []
+        },
+        "IF": {
+            "id": "IF",
+            "name": "Infuser",
+            "game": "fh",
+            "translatedName": "characters.IF.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
+        },
+        "PY": {
+            "id": "PY",
+            "name": "Pyroclast",
+            "game": "fh",
+            "translatedName": "characters.PY.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
+        },
+        "SH": {
+            "id": "SH",
+            "name": "Shattersong",
+            "game": "fh",
+            "translatedName": "characters.SH.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
+        },
+        "TR": {
+            "id": "TR",
+            "name": "Trapper",
+            "game": "fh",
+            "translatedName": "characters.TR.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
+        },
+        "PC": {
+            "id": "PC",
+            "name": "Pain Conduit",
+            "game": "fh",
+            "translatedName": "characters.PC.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
+        },
+        "SD": {
+            "id": "SD",
+            "name": "Snowdancer",
+            "game": "fh",
+            "translatedName": "characters.SD.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
+        },
+        "FF": {
+            "id": "FF",
+            "name": "Frozen Fist",
+            "game": "fh",
+            "translatedName": "characters.FF.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
+        },
+        "HV": {
+            "id": "HV",
+            "name": "HIVE",
+            "game": "fh",
+            "translatedName": "characters.HV.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
+        },
+        "MM": {
+            "id": "MM",
+            "name": "Metal Mosaic",
+            "game": "fh",
+            "translatedName": "characters.MM.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
+        },
+        "DP": {
+            "id": "DP",
+            "name": "Deepwraith",
+            "game": "fh",
+            "translatedName": "characters.DP.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
+        },
+        "CR": {
+            "id": "CR",
+            "name": "Crashing Tide",
+            "game": "fh",
+            "translatedName": "characters.CR.name",
+            "abilityCount": 0,
+            "starting_group": [
+                "fh_locked"
+            ],
+            "perks": []
         }
     },
     "order": [
@@ -6247,7 +6434,24 @@
         "QA",
         "RM",
         "SP",
-        "ST"
+        "ST",
+        "DF",
+        "BB",
+        "BN",
+        "DW",
+        "BO",
+        "GM",
+        "IF",
+        "PY",
+        "SH",
+        "TR",
+        "PC",
+        "SD",
+        "FF",
+        "HV",
+        "MM",
+        "DP",
+        "CR"
     ],
     "starting_group": [
         "gh_unlocked",
@@ -6259,6 +6463,8 @@
         "cs_explorers",
         "cs_trailblazers",
         "cs_naturalists",
-        "cs_addon"
+        "cs_addon",
+        "fh_unlocked",
+        "fh_locked"
     ]
 }

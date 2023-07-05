@@ -2723,90 +2723,90 @@ export default {
     },
     "fh-248": {
         "name": "Wanderer's Club",
-        "source": "Reward from Solo Scenario #01",
+        "source": "Reward from Solo Scenario - {DF}",
         "desc": "Duing your attack ability, move one character token on one of your peristent abilities backward one slot and add +X {ATTACK.fh} to one attack, where X is the nuber of active peristent abilities."
     },
     "fh-249": {
         "name": "Recalibration Trigger",
-        "source": "Reward from Solo Scenario #02",
+        "source": "Reward from Solo Scenario - {BB}",
         "desc": "During our turn, perform one of the two following abilities: Lose one card from your hand to gain 3 {TIME_ICON}. -2 {TIME_ICON} : {RECOVER.fh} up to two of your discarded cards"
     },
     "fh-250": {
         "name": "Spear of Justice",
-        "source": "Reward from Solo Scenario #03",
+        "source": "Reward from Solo Scenario - {BN}",
         "desc": "During your turn perform: {ATTACK.fh} 2 {RANGE.fh} 3. All your banners are treated as additionally occupying the hex of the attack target of their bonuses and that hex is treated as occupied by an ally this round. {ROUND}"
     },
     "fh-251": {
         "name": "Soul Urn",
-        "source": "Reward from Solo Scenario #04",
+        "source": "Reward from Solo Scenario - {DW}",
         "desc": "Place one {SHADOW_ICON} in an adjacent hex. {DARK}"
     },
     "fh-252": {
         "name": "Black Earth Codex",
-        "source": "Reward from Solo Scenario #05",
+        "source": "Reward from Solo Scenario - {BO}",
         "desc": "On the next three deaths of any of your summons, {EARTH_OR_DARK} and perform: {HEAL.fh} 2 self"
     },
     "fh-253": {
         "name": "Mask of Duality",
-        "source": "Reward from Solo Scenario #06",
+        "source": "Reward from Solo Scenario - {GM}",
         "desc": "During your ranged attack ability while in {RANGED_ICON}, gain advantage for one attack, then flip this card over.",
         "backDesc":"When an enemy performs an attack targeting you while you are in {MELEE_ICON}, the attacker gains disadvantage, then flip this card over."
     },
     "fh-254": {
         "name": "Ancestral Blade",
-        "source": "Reward from Solo Scenario #07",
+        "source": "Reward from Solo Scenario - {IF}",
         "desc": "During your turn, activate all your {INFUSION_ICON} as if you just performed a {INFUSION_ICON} action."
     },
     "fh-255": {
         "name": "Mountain's Heart",
-        "source": "Reward from Solo Scenario #08",
+        "source": "Reward from Solo Scenario - {PY}",
         "desc": "During your turn, you may create either one 1-hex obstacle or hazardous terrain tile in an empty tile within {RANGE.fh} 2. {FIRE_OR_EARTH}"
     },
     "fh-256": {
         "name": "Sonorous Shard",
-        "source": "Reward from Solo Scenario #09",
+        "source": "Reward from Solo Scenario - {SH}",
         "desc": "Gain 3 {RESONANCE_ICON}. {WIND_OR_EARTH}"
     },
     "fh-257": {
         "name": "Sly Camouflage",
-        "source": "Reward from Solo Scenario #10",
+        "source": "Reward from Solo Scenario - {TR}",
         "desc": "When you create a trap, place a character token on it.  Monsters do not treat the trap as negative. Remvoe the token when you {RECOVER.fh} this item. {PERSISTENT}"
     },
     "fh-258": {
         "name": "Skull of Agony",
-        "source": "Reward from Solo Scenario #11",
+        "source": "Reward from Solo Scenario - {PC}",
         "desc": "When you suffer damage, if your hit point value is reduced to below half your maximum, perform: {HEAL.fh} 7 self, {CURSE.fh} This heal is not affect by and cannot remove negative conditions."
     },
     "fh-259": {
         "name": "Storm Carving",
-        "source": "Reward from Solo Scenario #12",
+        "source": "Reward from Solo Scenario - {SD}",
         "desc": "During an attack ability you grant an ally, add {PUSH.fh} 2 to one of their attacks, then flip this card over.",
         "backDesc":"During your attack ability you, add {PULL.fh} 2 to one attack, then flip this card over."
     },
     "fh-260": {
         "name": "Freezing Orb",
-        "source": "Reward from Solo Scenario #13",
+        "source": "Reward from Solo Scenario - {FF}",
         "desc": "During your attack ability, add {BRITTLE.fh} to one attack and create one 1-hex icy terrain tile in the featureless hex occupied by the target."
     },
     "fh-261": {
         "name": "Energized Module",
-        "source": "Reward from Solo Scenario #14",
+        "source": "Reward from Solo Scenario - {HV}",
         "desc": "Remove all damage and negative conditions from one of your summons, then {TRANSFER_ICON} to that summon."
     },
     "fh-262": {
         "name": "Exhaust Boots",
-        "source": "Reward from Solo Scenario #15",
+        "source": "Reward from Solo Scenario - {MM}",
         "desc": "During your move ability, when you have {PRESSURE_HIGH_ICON} or {PRESSURE_OVER_ICON}, add +1 {MOVE.fh}, then flip this card over at the end of your turn.",
         "backDesc":"During your turn when you have {PRESSURE_LOW_ICON}, perform: {MUDDLE.fh} {RANGE.fh} 1 then flip this card over at the end of your turn."
     },
     "fh-263": {
         "name": "Warlords Skull",
-        "source": "Reward from Solo Scenario #16",
+        "source": "Reward from Solo Scenario - {DP}",
         "desc": "Whenever you gain {INVISIBLE.fh} or peform a teleport ability while you have {INVISIBLE.fh}, after the ability perform: {MUDDLE.fh} {RANGE.fh} 1"
     },
     "fh-264": {
         "name": "Spiraled Medallion",
-        "source": "Reward from Solo Scenario #17",
+        "source": "Reward from Solo Scenario - {CR}",
         "desc": "When you rest, you may keep up to three {TIDE_ICON} cards in your active area. {LIGHT_OR_DARK}"
     }
 }
