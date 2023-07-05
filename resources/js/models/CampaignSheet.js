@@ -232,7 +232,7 @@ class CampaignSheet {
     get starterCharacters() {
         switch (this.game) {
             default:
-                return ["BR", "CH", "SW", "TI", "SC", "MT"];
+                return ["DF", "BB", "BN", "DW", "BO", "GM"];
         }
     }
 
