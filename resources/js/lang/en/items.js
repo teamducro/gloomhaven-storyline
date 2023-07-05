@@ -2248,7 +2248,7 @@ export default {
         "desc": "During your single-target melee attack ability, change the targeting of the ability to: *line_0_1_1*"
     },
     "fh-154": {
-        "name": "volatile Bomb",
+        "name": "Volatile Bomb",
         "source": "Trading Post 4",
         "desc": "During your single-target ranged attack ability, change the targeting of the ability to: {AOE.CONE_1_1}"
     },
