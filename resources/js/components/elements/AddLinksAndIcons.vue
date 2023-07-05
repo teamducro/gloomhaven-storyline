@@ -325,6 +325,7 @@ export default {
                     '{CHECK}': '<webp src="/img/icons/general/check.png" width="20" class="inline" alt="' + this.$t('check mark') + '"/>',
                     '{ROUND}': '<webp src="/img/icons/general/eot_white.png" width="20" class="inline" alt="' + this.$t('Round bonus') + '"/>',
                     '{PERSISTENT}': '<webp src="/img/icons/general/ongoing_white.png" width="20" class="inline" alt="' + this.$t('Persistent bonus') + '"/>',
+                    '{ITEM}': '<webp src="/img/icons/general/item.png" width="10" class="inline" alt="' + this.$t('Item') + '"/>',
 
                 }).each((icon, key) => {
                     text = text.replaceAll(key, icon);
