@@ -142,7 +142,7 @@
     {
         "id": 15,
         "name": "Reinforced Shield",
-        "count": 1,
+        "count": 2,
         "resources": { "item": [10], "lumber": 1 },
         "slot": "One Hand",
         "source": "Craftsman 2",
