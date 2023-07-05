@@ -73,6 +73,12 @@ export default {
 
             return _.uniq(prosperityItems.concat(unlockedItems));
         },
+        calculateItemsFh(unlockedItems, prosperityIndex) {
+            let prosperityItems = Helpers.makeArrayWithNumbers(264)
+            prosperityItems = this.prependGame('fh', prosperityItems);
+
+            return _.uniq(prosperityItems.concat(unlockedItems));
+        },
         calculateItemsJotl(unlockedItems, scenarioRepository) {
             let shopItems = [];
 

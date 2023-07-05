@@ -13,6 +13,7 @@ import personalQuestsCsJson from '../personal-quests-cs.json'
 import itemsJson from '../items.json'
 import itemsJotlJson from '../items-jotl.json'
 import itemsCsJson from '../items-cs.json'
+import itemsFhJson from '../items-fh.json'
 import abilitiesJson from '../abilities.json'
 import abilitiesFcJson from '../abilities-fc.json'
 import abilitiesJotlJson from '../abilities-jotl.json'
@@ -111,6 +112,8 @@ export default class GameData {
                 return itemsJotlJson
             case Game.cs:
                 return itemsCsJson
+            case Game.fh:
+                return itemsFhJson
             default:
                 return itemsJson
         }

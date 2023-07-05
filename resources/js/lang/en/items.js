@@ -1476,5 +1476,1337 @@ export default {
     "cs-rm06": {
         "name": "Savage Cuirass",
         "desc": "The next two times you would lose a card from your hand to negate suffering damage, discard it instead and gain {WOUND}."
+    },
+    "fh-1": {
+        "name": "Spyglass",
+        "source": "Craftsman 1",
+        "desc": "During your attack ability, gain advantage on one attack."
+    },
+    "fh-2": {
+        "name": "Crude Helmet",
+        "source": "Craftsman 1",
+        "desc": "When you are attacked, treat any {2X_MODIFIER} attack modifier card the enemy draws as a {+1_MODIFIER} instead."
+    },
+    "fh-3": {
+        "name": "Traveling Cloak",
+        "source": "Craftsman 1",
+        "desc": "At the start of the scenario increase your maximum hit point value by 1."
+    },
+    "fh-4": {
+        "name": "Crude Hide Armor",
+        "source": "Craftsman 1",
+        "desc": "On the next two attacks targeting you, the attacker gains disadvantage."
+    },
+    "fh-5": {
+        "name": "Crude Boots",
+        "source": "Craftsman 1",
+        "desc": "During your move ability, add +1 {MOVE.fh}"
+    },
+    "fh-6": {
+        "name": "Flexible Slippers",
+        "source": "Craftsman 1",
+        "desc": "During your end-of-turn looting, loot an adjacent hex instead of the hex you occupy."
+    },
+    "fh-7": {
+        "name": "Crude Bow",
+        "source": "Craftsman 1",
+        "desc": "During your turn, add +1 {RANGE.fh} to one of your ranged attacks."
+    },
+    "fh-8": {
+        "name": "Crude Spear",
+        "source": "Craftsman 1",
+        "desc": "During your turn, one of your single-target melee attack abilities may target an enemy two hexes away."
+    },
+    "fh-9": {
+        "name": "Protective Scepter",
+        "source": "Craftsman 1",
+        "desc": "During you turn, grant one ally within {RANGE.fh} 2: {SHIELD.fh} 1. {ROUND}"
+    },
+    "fh-10": {
+        "name": "Crude Shield",
+        "source": "Craftsman 1",
+        "desc": "When an enemy would apply a negative condition to you, prevent the condition"
+    },
+    "fh-11": {
+        "name": "Simple Charm",
+        "source": "Craftsman 2",
+        "desc": "At the start of the scenario remove one {-1_MODIFIER} modifier card from your attack modifier deck."
+    },
+    "fh-12": {
+        "name": "Crude Chain Armor",
+        "source": "Craftsman 2",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 2 for the attack."
+    },
+    "fh-13": {
+        "name": "Dancing Slippers",
+        "source": "Craftsman 2",
+        "desc": "After you suffer {DAMAGE.fh} from an attack, perform: {MOVE.fh} 2"
+    },
+    "fh-14": {
+        "name": "Heavy Sword",
+        "source": "Craftsman 2",
+        "desc": "During your melee attack ability, add +1 {ATTACK.fh} to one attack."
+    },
+    "fh-15": {
+        "name": "Reinforced Shield",
+        "source": "Craftsman 2",
+        "desc": "When an enemy would apply a negative condition to you, prevent the condition."
+    },
+    "fh-16": {
+        "name": "Inspiring Helmet",
+        "source": "Craftsman 3",
+        "desc": "During your turn, grant all adjacent allies: {MOVE.fh} 2"
+    },
+    "fh-17": {
+        "name": "Cured Leather Armor",
+        "source": "Craftsman 3\nTreasure 50",
+        "desc": "On the next two attacks targeting you, the attacker gains disadvantage."
+    },
+    "fh-18": {
+        "name": "Rough Boots",
+        "source": "Craftsman 3",
+        "desc": "During your turn add +1 {MOVE.fh} to all your move abilities."
+    },
+    "fh-19": {
+        "name": "Ringing Hammer",
+        "source": "Craftsman 3",
+        "desc": "During your attack ability add {MUDDLE.fh} to all your attacks."
+    },
+    "fh-20": {
+        "name": "Well Strung Bow",
+        "source": "Craftsman 3",
+        "desc": "During your turn, add +1 {RANGE.fh} to all your ranged attacks."
+    },
+    "fh-21": {
+        "name": "Chain Hood",
+        "source": "Craftsman 4",
+        "desc": "While you are adjacent to tree or more enemies, gain {SHIELD.fh} 1."
+    },
+    "fh-22": {
+        "name": "Heavy Chain Armor",
+        "source": "Craftsman 4",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 3 for the attack."
+    },
+    "fh-23": {
+        "name": "Sturdy Greaves",
+        "source": "Craftsman 4",
+        "desc": "At the start of your turn, add -2 {MOVE.fh} to all your move abilities to gain {SHIELD.fh} this round. {ROUND}"
+    },
+    "fh-24": {
+        "name": "Corrupted Blade",
+        "source": "Craftsman 4\nWR-04",
+        "desc": "During your melee attack ability, add {WOUND.fh}, {POISON.fh}, {MUDDLE.fh} to one attack."
+    },
+    "fh-25": {
+        "name": "Soothing Scepter",
+        "source": "Craftsman 4",
+        "desc": "During your turn, perform {REGENERATE.fh} {TARGET.fh} 1 ally, {RANGE.fh} 2"
+    },
+    "fh-26": {
+        "name": "Truesight Lenses",
+        "source": "Craftsman 5",
+        "desc": "During your attack ability, treat all negative and {NULL_MODIFIER} modifier cards as {+0_MODIFIER} instead."
+    },
+    "fh-27": {
+        "name": "Cloak of Warding",
+        "source": "Craftsman 5\nSR-17",
+        "desc": "Immediately after an enemy ends its move ability adjacent to you, perform {PUSH.fh} 1 {TARGET.fh} the enemy"
+    },
+    "fh-28": {
+        "name": "Sturdy Boots",
+        "source": "Craftsman 5",
+        "desc": "During your turn add +1 {MOVE.fh} to all your move abilities and ignor difficult terrain."
+    },
+    "fh-29": {
+        "name": "Cleaving Axe",
+        "source": "Craftsman 5",
+        "desc": "After your melee attack, one enemy adjacent to the target suffers {DAMAGE.fh} 2."
+    },
+    "fh-30": {
+        "name": "Parrying Gauntlet",
+        "source": "Craftsman 5",
+        "desc": "Immediately after an enemy ends its move ability adjacent to you, perform {ATTACK.fh} 3 {TARGET.fh} the enemy"
+    },
+    "fh-31": {
+        "name": "Deathproof Charm",
+        "source": "Craftsman 6\nWR-37\nSO-11",
+        "desc": "When you suffer {DAMAGE.fh} from any source, negate the {DAMAGE.fh}."
+    },
+    "fh-32": {
+        "name": "Shell Armor",
+        "source": "Craftsman 6",
+        "desc": "During yur turn, perform {WARD.fh} self"
+    },
+    "fh-33": {
+        "name": "Volatile Boots",
+        "source": "Craftsman 6",
+        "desc": "Up to once each turn during your move ability, add +1 {MOVE.fh}, then flip this card over at the end of your turn.",
+        "backDesc": "Up to once each turn during your move ability, suffer {DAMAGE.fh} 1, then flip this card over at the end of your turn."
+    },
+    "fh-34": {
+        "name": "Shrapnel Bomb",
+        "source": "Craftsman 6",
+        "desc": "After your ranged attack, all enemies adjacent to the target suffer {DAMAGE.fh} 2."
+    },
+    "fh-35": {
+        "name": "Kite Shield",
+        "source": "Craftsman 6",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack and prevent any negative conditions from the attack."
+    },
+    "fh-36": {
+        "name": "Plumed Helmet",
+        "source": "Craftsman 7",
+        "desc": "When you are attacked by an attack with disadvantage, treat all {+0_MODIFIER} and {+1_MODIFIER} attack modifier cards as {-1_MODIFIER}."
+    },
+    "fh-37": {
+        "name": "Ghost Cloak",
+        "source": "Craftsman 7\nSR-36",
+        "desc": "During your turn suffer {DAMAGE.fh} 3 to perform {INVISIBLE.fh} self"
+    },
+    "fh-38": {
+        "name": "Duelists Shoes",
+        "source": "Craftsman 7",
+        "desc": "During your turn, perform: {MOVE.fh} 2 This movement must end adjacent to an enemy."
+    },
+    "fh-39": {
+        "name": "Abyss Axe",
+        "source": "Craftsman 7",
+        "desc": "During your attack ability, add +3 {ATTACK.fh} and {PIERCE.fh} 1 to one attack targeting a Frozen Corpse, Ice Wraith, or Living Doom."
+    },
+    "fh-40": {
+        "name": "Heartstrike Bow",
+        "source": "Craftsman 7",
+        "desc": "During your turn, add +1 {ATTACK.fh} and +2 {RANGE.fh} to one of your ranged attacks."
+    },
+    "fh-41": {
+        "name": "Intricate Charm",
+        "source": "Craftsman 8",
+        "desc": "At the start of the scenario remove one {+0_MODIFIER} and one {-1_MODIFIER} modifier card from your attack modifier deck."
+    },
+    "fh-42": {
+        "name": "Ornate Armor",
+        "source": "Craftsman 8",
+        "desc": "On the next two sources of {DAMAGE.fh} from attacks targeting you gain {SHIELD.fh} 2 for the attacks."
+    },
+    "fh-43": {
+        "name": "Kicking Boots",
+        "source": "Craftsman 8",
+        "desc": "During your melee attack ability, add {PUSH.fh} 2 to one attack."
+    },
+    "fh-44": {
+        "name": "Sword of Absolution",
+        "source": "Craftsman 8",
+        "desc": "When you would gain {POISON.fh} or {CURSE.fh}, gain {BLESS.fh} instead."
+    },
+    "fh-45": {
+        "name": "Master Scepter",
+        "source": "Craftsman 8",
+        "desc": "During your turn, perform: {HEAL.fh} 1 {TARGET.fh} 1 ally, {RANGE.fh} 2, {WARD.fh} "
+    },
+    "fh-46": {
+        "name": "Double-Lens Goggles",
+        "source": "Craftsman 9",
+        "desc": "During your attack ability, gain advantage on all attacks and treat all {+0_MODIFIER} and {-1_MODIFIER} modifier cards as {+1_MODIFIER} instead."
+    },
+    "fh-47": {
+        "name": "Robes of Doom",
+        "source": "Craftsman 9\nWR-34",
+        "desc": "On the next two sources of {DAMAGE.fh} from attacks targeting you, suffer {DAMAGE.fh} 3 to give the attacker {BRITTLE.fh}."
+    },
+    "fh-48": {
+        "name": "Living Shoes",
+        "source": "Craftsman 9",
+        "desc": "After an ally's heal ability targeting you, perform: {MOVE.fh} 2"
+    },
+    "fh-49": {
+        "name": "Cruel Dagger",
+        "source": "Craftsman 9",
+        "desc": "During your melee attack ability, add +1 {ATTACK.fh} and {WOUND.fh} to one attack."
+    },
+    "fh-50": {
+        "name": "Shield of Reciprocity",
+        "source": "Craftsman 9",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack and flip this card over.",
+        "backDesc": "During your melee attack ability, add {PIERCE.fh} 1 to one attack and flip this card over.",
+    },
+    "fh-51": {
+        "name": "Spiked Collar",
+        "source": "Random Blueprint\nSO-48",
+        "desc": "During your turn perform {WOUND.fh} self"
+    },
+    "fh-52": {
+        "name": "Laser Lens",
+        "source": "Random Blueprint",
+        "desc": "During your turn, {FIRE_X} to cause up to two enemies within {RANGE.fh} 4 to suffer {DAMAGE.fh} 1."
+    },
+    "fh-53": {
+        "name": "Hobnail Boots",
+        "source": "Random Blueprint",
+        "desc": "After you move 4 or more hexes during your turn, gain {RETALIATE.fh} 1 for the round."
+    },
+    "fh-54": {
+        "name": "Restful Slippers",
+        "source": "Random Blueprint",
+        "desc": "During your short rest, instead of randomly losing one card from your discard pile, randomly draw three cards from your discard pile and choose one to lose."
+    },
+    "fh-55": {
+        "name": "Biting Gauntlet",
+        "source": "Random Blueprint",
+        "desc": "When you are attacked by an adjacent enemy, gain {RETALIATE.fh} 2 for the attack."
+    },
+    "fh-56": {
+        "name": "Scavenger's Magnet",
+        "source": "Random Blueprint",
+        "desc": "During your turn, {EARTH_X} to loot one adjacent loot token."
+    },
+    "fh-57": {
+        "name": "Shovel",
+        "source": "Random Blueprint",
+        "desc": "During your turn, destroy one adjacent obstacle, hazardous terrain, difficult terrain, icy terrain, or trap tile."
+    },
+    "fh-58": {
+        "name": "Slippery Sword",
+        "source": "Random Blueprint",
+        "desc": "During your melee attack abiluty, add +2 {ATTACK.fh} to one attack. After the ability, gain {DISARM.fh}."
+    },
+    "fh-59": {
+        "name": "Charm of Expertise",
+        "source": "Random Blueprint",
+        "desc": "At the start of the scenario, for the scenario, gain one 1-mark perk from your character sheet which you have not yet gained."
+    },
+    "fh-60": {
+        "name": "Cloak of Many Pockets",
+        "source": "Random Blueprint",
+        "desc": "At the start of the scenario, bring up to two additional {SMALL-ITEM} items."
+    },
+    "fh-61": {
+        "name": "Spiked Shell",
+        "source": "Random Blueprint",
+        "desc": "Immediately after you are attacked by an adjacent enemy, that enemy suffers {DAMAGE.fh} X, where is X is your {SHIELD.fh} value for the attack."
+    },
+    "fh-62": {
+        "name": "Everlasting Boots",
+        "source": "Random Blueprint",
+        "desc": "During your move ability, add +1 {MOVE.fh} and gain {REGENERATE.fh}"
+    },
+    "fh-63": {
+        "name": "Shadow Stompers",
+        "source": "Random Blueprint",
+        "desc": "During your move ability, {DARK_X} add +2 {MOVE.fh}"
+    },
+    "fh-64": {
+        "name": "Detonator",
+        "source": "Random Blueprint",
+        "desc": "When one of your summons is killed, all enemies adjacent to it suffer {DAMAGE.fh} 2 and gain {WOUND.fh}."
+    },
+    "fh-65": {
+        "name": "Rust Powder",
+        "source": "Random Blueprint",
+        "desc": "During your turn, place a character token on one normal or elite enemy within {RANGE.fh} 3.  That enemy gains -1 {SHIELD.fh} for the scenario. {PERSISTENT}"
+    },
+    "fh-66": {
+        "name": "Amulet of Eternal Life",
+        "source": "Scenario 188",
+        "desc": "At the start of your rest, perform: {HEAL.fh} 1 self"
+    },
+    "fh-67": {
+        "name": "Converging Lenses",
+        "source": "unknown",
+        "desc": "When you are attacked, add +1 {ATTACK.fh} to attack to instead of drawing an attack modifier card and flip this card over.",
+        "backDesc": "During you attack ability add +1 {ATTACK.fh} to one attack instead of drawing an attack modifier card and flip this card over."
+    },
+    "fh-68": {
+        "name": "Scaled Armor",
+        "source": "Treasure 22",
+        "desc": "On the next three sources of 2 or fewer {DAMAGE.fh} you would suffer, negate the {DAMAGE.fh}."
+    },
+    "fh-69": {
+        "name": "Feathered Cloak",
+        "source": "Scenario 32",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, {WIND_X} to gain {SHIELD.fh} 3 for the attack."
+    },
+    "fh-70": {
+        "name": "Aesther Robe",
+        "source": "Scenario 81",
+        "desc": "When you suffer {DAMAGE.fh} from {RETALIATE.fh}, reduce the {DAMAGE.fh} to 1. If it already 1, reduce it to 0 instead."
+    },
+    "fh-71": {
+        "name": "Bone Boots",
+        "source": "Treasure 49",
+        "desc": "After your ability where you kill an enemy, perform: {MOVE.fh} 4"
+    },
+    "fh-72": {
+        "name": "Oak Staff",
+        "source": "Treasure 82",
+        "desc": "During your turn, {LIGHT_X} to perform: {BLESS.fh} {RANGE.fh} 3"
+    },
+    "fh-73": {
+        "name": "Energizing Baton",
+        "source": "Scenario 44",
+        "desc": "When you apply a positive condition to an ally, a different ally within {RANGE.fh} 3 gains the same condition."
+    },
+    "fh-74": {
+        "name": "Shock Grenades",
+        "source": "Scenario 51",
+        "desc": "During your turn, perform {MUDDLE.fh} {RANGE.fh} 2 {AOE.CONE_1_1}"
+    },
+    "fh-75": {
+        "name": "Rose Gauntlet",
+        "source": "Scenario 110",
+        "desc": "After any ally within {RANGE.fh} 2 suffers {DAMAGE.fh} from an attack, remove all negative conditions from the ally then perform: {HEAL.fh} 3 {TARGET.fh} the ally, {PULL.fh} 1"
+    },
+    "fh-76": {
+        "name": "Horn of Command",
+        "source": "Treasure 70",
+        "desc": "During one of your summons' turns, decide how it peforms it's abilities."
+    },
+    "fh-77": {
+        "name": "Chaos Cannon",
+        "source": "Treasure 40",
+        "desc": "During you turn, replace one 1-hex obstacle, hazardous terrain, difficult terrain, or icy terrain tile in an unoccupied hex withing {RANGE.fh} 2 with a different type of tile listed above."
+    },
+    "fh-78": {
+        "name": "Balanced Scales",
+        "source": "Treasure 31",
+        "desc": "Once each turn, during your attack ability, gain advantage on one attack, then flip this card over at the end of your turn.",
+        "backDesc": "Once each turn, during your attack ability, gain disadvantage on one attack, then flip this card over at the end of your turn."
+    },
+    "fh-79": {
+        "name": "Roasted Fowl",
+        "source": "Scenario 93",
+        "desc": "During you turn, add +1 {ATTACK.fh} to all your attacks and perform: {HEAL.fh} 2 self"
+    },
+    "fh-80": {
+        "name": "Living Stone",
+        "source": "Treasure 72",
+        "desc": "When you would suffer 4 or fewer {DAMAGE.fh} from attack, negate the {DAMAGE.fh} and perform {HEAL.fh} X self wheee x is the amount of damage you would have suffered."
+    },
+    "fh-81": {
+        "name": "Pain Simulacrum",
+        "source": "Treasure 59",
+        "desc": "When you suffer 5 or fewer {DAMAGE.fh} from an attack, one enemy within {RANGE.fh} 2 also suffers the same amount of {DAMAGE.fh}."
+    },
+    "fh-82": {
+        "name": "Mechanical Cube",
+        "source": "Both Treasure 62 and 69",
+        "desc": "During your move ability, after you enter any one hex, give {IMMOBILIZE.fh} to all adjacent enemies."
+    },
+    "fh-83": {
+        "name": "Healing Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {HEAL.fh} 3 self"
+    },
+    "fh-84": {
+        "name": "Stamina Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, {RECOVER.fh} one level 1 card from your discard pile."
+    },
+    "fh-85": {
+        "name": "Power Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, add +1 {ATTACK.fh} to all your attacks."
+    },
+    "fh-86": {
+        "name": "Element Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, {ANY}"
+    },
+    "fh-87": {
+        "name": "Cure Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, remove one negative condition you have.  This item can be used while you have {IMPAIR.fh} or {STUN.fh}."
+    },
+    "fh-88": {
+        "name": "Fireshield Potion",
+        "source": "Alchemy",
+        "desc": "During your turn perform {RETALIATE.fh} 1 {RANGE.fh} 3 {ROUND}"
+    },
+    "fh-89": {
+        "name": "Stoneskin Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {WARD.fh} self"
+    },
+    "fh-90": {
+        "name": "Muscle Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {STRENGTHEN.fh} self"
+    },
+    "fh-91": {
+        "name": "Holy Water",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {BLESS.fh} self"
+    },
+    "fh-92": {
+        "name": "Renewing Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, {RECOVER.fh} up to two of your spent items."
+    },
+    "fh-93": {
+        "name": "Glancing Potion",
+        "source": "Alchemy",
+        "desc": "When you reveal a {NULL_MODIFIER} attack modifier card from your attack modifier deck, treat it as a {+0_MODIFIER} instead."
+    },
+    "fh-94": {
+        "name": "Frenzy Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, perform: {ATTACK.fh} 2"
+    },
+    "fh-95": {
+        "name": "Poison Vial",
+        "source": "Alchemy\nSR-14",
+        "desc": "During your turn, perform {POISON.fh} {RANGE.fh} 1"
+    },
+    "fh-96": {
+        "name": "Flame Vial",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {WOUND.fh} {RANGE.fh} 1"
+    },
+    "fh-97": {
+        "name": "Explosive Vial",
+        "source": "Alchemy",
+        "desc": "During your turn, one enemy withing {RANGE.fh} 2 suffers {DAMAGE.fh} 2."
+    },
+    "fh-98": {
+        "name": "Unhealthy Mixture",
+        "source": "Alchemy\nWO-10",
+        "desc": "During your turn, perform {WOUND.fh}, {POISON.fh} self"
+    },
+    "fh-99": {
+        "name": "Major Healing Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {HEAL.fh} 6 self"
+    },
+    "fh-100": {
+        "name": "Major Stamina Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, {RECOVER.fh} one card from your discard pile."
+    },
+    "fh-101": {
+        "name": "Major Power Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, add +2 {ATTACK.fh} to all your attacks."
+    },
+    "fh-102": {
+        "name": "Major Element Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, {ANY} {ANY}"
+    },
+    "fh-103": {
+        "name": "Major Cure Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, remove all negative conditions you have.  This item can be used while you have {IMPAIR.fh} or {STUN.fh}."
+    },
+    "fh-104": {
+        "name": "Swiftness Potion",
+        "source": "Alchemy",
+        "desc": "During your move ability, add +3 {MOVE.fh} and {JUMP.fh}."
+    },
+    "fh-105": {
+        "name": "Major Fireshield Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, perform, {RETALIATE.fh} 2 {RANGE.fh} 3 {ROUND}"
+    },
+    "fh-106": {
+        "name": "Stonewall Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {WARD.fh} {TARGET.fh} 2 adjacent allies and self"
+    },
+    "fh-107": {
+        "name": "Vigor Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {STRENGTHEN.fh} {TARGET.fh} 2 adjacent allies and self"
+    },
+    "fh-108": {
+        "name": "Holy Rain",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {BLESS.fh} {TARGET.fh} 2 adjacent allies and self"
+    },
+    "fh-109": {
+        "name": "Major Renewing Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, {RECOVER.fh} up to one of your lost 2-herb potions."
+    },
+    "fh-110": {
+        "name": "Precision Potion",
+        "source": "Alchemy",
+        "desc": "When you reveal a {NULL_MODIFIER} attack modifier card from your attack modifier deck, treat it as a {+2_MODIFIER} instead."
+    },
+    "fh-111": {
+        "name": "Major Frenzy Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, perform: {ATTACK.fh} 4"
+    },
+    "fh-112": {
+        "name": "Hammer Potion",
+        "source": "Alchemy",
+        "desc": "During your turn suffer {DAMAGE.fh} 10."
+    },
+    "fh-113": {
+        "name": "Expertise Potion",
+        "source": "Alchemy",
+        "desc": "At the start of your turn, discard one of your played cards to perform both the top and bottom actions of your other played card. At most one action can trigger a {CONSUMED.fh} icon."
+    },
+    "fh-114": {
+        "name": "Foresight Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, reveal the top card of one monster ability deck. You may place the card on the bottom of the deck."
+    },
+    "fh-115": {
+        "name": "Infusion Potion",
+        "source": "Alchemy",
+        "desc": "During your turn, ignore one elemental consumption symbol on an action you played and gain its effect."
+    },
+    "fh-116": {
+        "name": "Plague Flask",
+        "source": "Alchemy",
+        "desc": "During your turn perform, {POISON.fh} {RANGE.fh} 1 {AOE.CONE_1_1}"
+    },
+    "fh-117": {
+        "name": "Inferno Flask",
+        "source": "Alchemy",
+        "desc": "During your turn perform, {WOUND.fh} {RANGE.fh} 1 {AOE.CONE_1_1}"
+    },
+    "fh-118": {
+        "name": "Fulminant Flask",
+        "source": "Alchemy",
+        "desc": "During your turn, one enemy within {RANGE.fh} 2 suffers {DAMAGE.fh} 4."
+    },
+    "fh-119": {
+        "name": "Deadly Mixture",
+        "source": "Alchemy",
+        "desc": "During your turn, perform: {WOUND.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh} self"
+    },
+    "fh-120": {
+        "name": "Amulet of Life",
+        "source": "Initially Available",
+        "desc": "During your turn, perform {HEAL.fh} 1 self"
+    },
+    "fh-121": {
+        "name": "Circlet of Elements",
+        "source": "Initially Available",
+        "desc": "During your turn, perform {ANY_X}: {ANY}"
+    },
+    "fh-122": {
+        "name": "Warden's Robes",
+        "source": "Initially Available",
+        "desc": "When one of your summons suffers {DAMAGE.fh} from an attack, that summons gains {SHIELD.fh} 2 for the attack."
+    },
+    "fh-123": {
+        "name": "Leather Armor",
+        "source": "Initially Available",
+        "desc": "When you are attacked, before drawing an attack modifier car, the attacker gains disadvantage on the attack."
+    },
+    "fh-124": {
+        "name": "Winged Shoes",
+        "source": "Initially Available",
+        "desc": "During your turn, add {JUMP.fh} to all your move abilities."
+    },
+    "fh-125": {
+        "name": "Boots of Speed",
+        "source": "Initially Available",
+        "desc": "During ordering of initiative after all ability card have been revealed, increase or decrease your initiative by 10."
+    },
+    "fh-126": {
+        "name": "Weighted Net",
+        "source": "Initially Available",
+        "desc": "During your ranged attack ability, add {IMMOBILIZE.fh} to one attack."
+    },
+    "fh-127": {
+        "name": "Poison Dagger",
+        "source": "Initially Available",
+        "desc": "During your melee attack ability, add {POISON.fh} to one attack."
+    },
+    "fh-128": {
+        "name": "Heater Shield",
+        "source": "Initially Available",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack."
+    },
+    "fh-129": {
+        "name": "Eagle-Eye Goggles",
+        "source": "Trading Post 2",
+        "desc": "During your attack ability, gain advantage on all attacks."
+    },
+    "fh-130": {
+        "name": "Iron Helmet",
+        "source": "Trading Post 2",
+        "desc": "When you are attacked, treat any {2X_MODIFIER} attack modifier card the enemy draws as a {+0_MODIFIER} instead."
+    },
+    "fh-131": {
+        "name": "Chainmail",
+        "source": "Trading Post 2",
+        "desc": "On the next three sources of {DAMAGE.fh} from attacks targeting you, you gain {SHIELD.fh} 1 for the attacks."
+    },
+    "fh-132": {
+        "name": "Cloak of Pockets",
+        "source": "Trading Post 2",
+        "desc": "At the start of the scenario, bring one additional {SMALL-ITEM} items."
+    },
+    "fh-133": {
+        "name": "Nimble Legguards",
+        "source": "Trading Post 2",
+        "desc": "When an adjacent ally would be targeted by an attack, you are targeted instead, regardless of range and line-of-sight."
+    },
+    "fh-134": {
+        "name": "Comfortable Shoes",
+        "source": "Trading Post 2",
+        "desc": "When you use the basic bottom action of an ability card, perform {MOVE.fh} 3 instead of {MOVE.fh} 2."
+    },
+    "fh-135": {
+        "name": "Armorbane Bow",
+        "source": "Trading Post 2",
+        "desc": "During your attack, add {PIERCE.fh} 3 to all your ranged attacks."
+    },
+    "fh-136": {
+        "name": "Battle Axe",
+        "source": "Trading Post 2",
+        "desc": "During your single-target melee attack ability, change the targeting of the ability to: *cone_0_1*"
+    },
+    "fh-137": {
+        "name": "Tower Shield",
+        "source": "Trading Post 2",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 2 for the attack."
+    },
+    "fh-138": {
+        "name": "Heavy Basinet",
+        "source": "Trading Post 3",
+        "desc": "When an enemy would give you {DISARM.fh}, {STUN.fh}, or {MUDDLE.fh}, prevent the condition."
+    },
+    "fh-139": {
+        "name": "Horned Helm",
+        "source": "Trading Post 3",
+        "desc": "After your move 4 or more hexes on your turn, add +1 {ATTACK.fh} to your next melee attack this turn."
+    },
+    "fh-140": {
+        "name": "Mantle of Summoning",
+        "source": "Trading Post 3",
+        "desc": "During your turn, grant one of your summons: {SHIELD.fh} 2. {ROUND}"
+    },
+    "fh-141": {
+        "name": "Studded Leather",
+        "source": "Trading Post 3",
+        "desc": "When you are attacked, before drawing an attack modifier car, the attacker gains disadvantage on the attack and you gain {SHIELD.fh} 1 for the attack."
+    },
+    "fh-142": {
+        "name": "Boots of Quickness",
+        "source": "Trading Post 3",
+        "desc": "During ordering of initiative after all ability card have been revealed, increase or decrease your initiative by 20."
+    },
+    "fh-143": {
+        "name": "Endurance Footwraps",
+        "source": "Trading Post 3",
+        "desc": "After you move 4 or more hexes during your turn, after the move ability perform: {HEAL.fh} 1 self."
+    },
+    "fh-144": {
+        "name": "Staff of Eminence",
+        "source": "Trading Post 3",
+        "desc": "During your turn, {ANY_X} to add +1 {ATTACK.fh} to all your attacks."
+    },
+    "fh-145": {
+        "name": "Versatile Dagger",
+        "source": "Trading Post 3",
+        "desc": "When you use the basic top action of an ability card, perform {ATTACK.fh} 3 instead of {ATTACK.fh} 2."
+    },
+    "fh-146": {
+        "name": "Hooked Chain",
+        "source": "Trading Post 3",
+        "desc": "Duiring your attack, add {PULL.fh} 2 to all your ranged attacks."
+    },
+    "fh-147": {
+        "name": "Mask of Terror",
+        "source": "Trading Post 4",
+        "desc": "During your melee attack, add {PUSH.fh} 1."
+    },
+    "fh-148": {
+        "name": "Circlet of Sanctity",
+        "source": "Trading Post 4",
+        "desc": "After the next three attacks targeting an ally within {RANGE.fh} 2, flip this card over.",
+        "backDesc":"During your turn, perform: {WARD.fh} {RANGE.fh}3 then flip this card over."
+    },
+    "fh-149": {
+        "name": "Platemail",
+        "source": "Trading Post 4",
+        "desc": "On the next five sources of {DAMAGE.fh} from attacks targeting you, you gain {SHIELD.fh} 1 for the attacks."
+    },
+    "fh-150": {
+        "name": "Robes of the Oak",
+        "source": "Trading Post 4",
+        "desc": "During your turn, perform: {HEAL.fh} 3 {TARGET.fh} 1 ally, {RANGE.fh} 1 "
+    },
+    "fh-151": {
+        "name": "Serene Sandals",
+        "source": "Trading Post 4",
+        "desc": "When you use the basic bottom action of an ability card, perform {MOVE.fh} 4 instead of {MOVE.fh} 2."
+    },
+    "fh-152": {
+        "name": "Steel Sabatons",
+        "source": "Trading Post 4",
+        "desc": "At the end of your turn, if you have moved 1 or fewer hexes during your turn, gain {SHIELD.fh} 1 for the round."
+    },
+    "fh-153": {
+        "name": "Long Spear",
+        "source": "Trading Post 4",
+        "desc": "During your single-target melee attack ability, change the targeting of the ability to: *line_0_1_1*"
+    },
+    "fh-154": {
+        "name": "volatile Bomb",
+        "source": "Trading Post 4",
+        "desc": "During your single-target ranged attack ability, change the targeting of the ability to: {AOE.CONE_1_1}"
+    },
+    "fh-155": {
+        "name": "Wall Shield",
+        "source": "Trading Post 4",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 4 for the attack."
+    },
+    "fh-156": {
+        "name": "Moon Earring",
+        "source": "Jeweler 1",
+        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items."
+    },
+    "fh-157": {
+        "name": "Steel Ring",
+        "source": "Jeweler 1",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 4 for the attack."
+    },
+    "fh-158": {
+        "name": "Deep Earth Brooch",
+        "source": "Jeweler 1",
+        "desc": "During your turn, perform {EARTH_OR_DARK_X}: {HEAL.fh} 3 self, {WARD.fh}"
+    },
+    "fh-159": {
+        "name": "Glorious Bracelet",
+        "source": "Jeweler 1",
+        "desc": "After your attack ability during which one enemy suffered at least {DAMAGE.fh} 6, perform: {BLESS.fh}, {BLESS.fh} self"
+    },
+    "fh-160": {
+        "name": "Sun Earring",
+        "source": "Jeweler 2",
+        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items, and perform {HEAL.fh} 2 self."
+    },
+    "fh-161": {
+        "name": "Strategists Ring",
+        "source": "Jeweler 2",
+        "desc": "At the end of your turn, play one card from your hand and perform all persistent and mandatory abilities on either the top or bottom action of the card."
+    },
+    "fh-162": {
+        "name": "Howling Ice Brooch",
+        "source": "Jeweler 2",
+        "desc": "During your turn, perform {ICE_OR_WIND_X}: {ATTACK.fh} 3 {RANGE.fh} 3, {IMMOBILIZE.fh}"
+    },
+    "fh-163": {
+        "name": "Stunning Bracelet",
+        "source": "Jeweler 2",
+        "desc": "During your turn, give {STUN.fh} to half (rounded up) the enemies adjacent to you."
+    },
+    "fh-164": {
+        "name": "Star Earring",
+        "source": "Jeweler 3",
+        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items, choose which card to lose during the rest, and perform {HEAL.fh} 2 self."
+    },
+    "fh-165": {
+        "name": "Ring of Haste",
+        "source": "Jeweler 3",
+        "desc": "At the end of you turn, play one card from your hand and perform the bottom action of the card."
+    },
+    "fh-166": {
+        "name": "Blazing Sun Brooch",
+        "source": "Jeweler 3",
+        "desc": "During your turn, perform {FIRE_OR_LIGHT_X}: {ATTACK.fh} 3 {DISARM.fh}"
+    },
+    "fh-167": {
+        "name": "Attractive Bracelet",
+        "source": "Jeweler 3\nWR-10",
+        "desc": "At the start of the enemy's turn, before it determines its focus, perform: {PULL.fh} 4 {TARGET.fh} the enemy, {RANGE.fh} 5, {MUDDLE.fh}"
+    },
+    "fh-168": {
+        "name": "Circlet of Eyes",
+        "source": "Loot Deck Random",
+        "desc": "During your ranged attack ability, add +1 {TARGET.fh}."
+    },
+    "fh-169": {
+        "name": "Fateful Charm",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, reveal the top card of your attack modifier deck.  You may place the card on the bottom of the deck."
+    },
+    "fh-170": {
+        "name": "Eye of Truth",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, reveal the top card of each monster ability deck."
+    },
+    "fh-171": {
+        "name": "Rejuvenating Charm",
+        "source": "Loot Deck Random",
+        "desc": "Whenever you lose a card to negate {DAMAGE.fh}, {RECOVER.fh} up to one card from your discard pile and gain {REGENERATE.fh}."
+    },
+    "fh-172": {
+        "name": "Cap of Premonition",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, look at the top four cards of your attack modifier deck and put them back in any order."
+    },
+    "fh-173": {
+        "name": "Multi Colored Cloak",
+        "source": "Loot Deck Random",
+        "desc": "When attacked: {ANY}."
+    },
+    "fh-174": {
+        "name": "Magnetic Cape",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, perform: {TELEPORT.fh} 20 This teleport must end in a hex adjacent to one of your allies."
+    },
+    "fh-175": {
+        "name": "Mirrored Armor",
+        "source": "Loot Deck Random",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, the attacker suffers and equal amount of {DAMAGE.fh}."
+    },
+    "fh-176": {
+        "name": "Blinking Cape",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, perform: {TELEPORT.fh} 4 This teleport must end in a hex adjacent to one of your enemies."
+    },
+    "fh-177": {
+        "name": "Boots of Transference",
+        "source": "Loot Deck Random",
+        "desc": "When you spring a trap by entering its hex, you may apply its effects to a figure withing {RANGE.fh} 3 instead of yourself."
+    },
+    "fh-178": {
+        "name": "Tranquil Shoes",
+        "source": "Loot Deck Random",
+        "desc": "At the start of your turn in which your initiative is 60 or higher and you are not performing a long rest, perform {HEAL.fh} 1 self."
+    },
+    "fh-179": {
+        "name": "Burst Boots",
+        "source": "Loot Deck Random",
+        "desc": "During your move ability, add +4 {MOVE.fh}.  After the move ability gain {IMMOBILIZE.fh}."
+    },
+    "fh-180": {
+        "name": "Boots of Greed",
+        "source": "Loot Deck Random",
+        "desc": "When you loot two or more tokens at once, peform: {BLESS.fh} self."
+    },
+    "fh-181": {
+        "name": "Translocation Rod",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, designate two allies or any two normal or elite monsters. Each designated figure simultaneously {TELEPORT.fh} to the hex occupied by the other designated figure."
+    },
+    "fh-182": {
+        "name": "Wing Clippers",
+        "source": "Loot Deck Random",
+        "desc": "Afer your melee attack , place a character token on the target. The target loses {FLYING.fh}. {PERSISTENT}"
+    },
+    "fh-183": {
+        "name": "Decanter of Mists",
+        "source": "Loot Deck Random\nTreasure 16",
+        "desc": "During your turn, all figures gain disadvantage on and add 1 {RANGE.fh} to all ranged attacks this round. {ROUND}"
+    },
+    "fh-184": {
+        "name": "Flashing Axe",
+        "source": "Loot Deck Random",
+        "desc": "During your multi-target melee attack ability, add +1 {TARGET.fh}."
+    },
+    "fh-185": {
+        "name": "Mirrored Knife",
+        "source": "Loot Deck Random",
+        "desc": "During your melee attack ability, add all negative conditions you have except {BRITTLE.fh}, {BANE.fh} and {STUN.fh} to one attack."
+    },
+    "fh-186": {
+        "name": "Wild Growth Seeds",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, create one 1-hex obstacle in an adjacent empty hex."
+    },
+    "fh-187": {
+        "name": "Dangerous Gear",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, create one {DAMAGE.fh} 3 trap in an adjacent empty hex."
+    },
+    "fh-188": {
+        "name": "Freezing Crystal",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, create one 1-hex hazardous terrain, icy terrain, or water tile in an adjacent featureless hex."
+    },
+    "fh-189": {
+        "name": "Ring of the Night",
+        "source": "Loot Deck Random",
+        "desc": "During your, perform {DARK_X} {ANY_X}: {INVISIBLE.fh} self"
+    },
+    "fh-190": {
+        "name": "White Card",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, place a character token on one normal or elite enemy withing {RANGE.fh} 3. This enemy adds -1 {ATTACK.fh} to all its attacks. {PERSISTENT}."
+    },
+    "fh-191": {
+        "name": "Corrupted Scroll",
+        "source": "Loot Deck Random",
+        "desc": "During your, perform {HEAL.fh} 5 {RANGE.fh} 5 {POISON.fh} {TARGET.fh} the target of the heal ability"
+    },
+    "fh-192": {
+        "name": "Enticing Bell",
+        "source": "Loot Deck Random",
+        "desc": "At the end of your turn, designate one enemy withing {RANGE.fh} 3. You are its primary focus and it does not avoid negative hexes when determining movement this round. {ROUND}"
+    },
+    "fh-193": {
+        "name": "Mind Thieving Helmet",
+        "source": "Scenario 121",
+        "desc": "During your turn, control one enemy withing {RANGE.fh} 3: {ATTACK.fh} 3"
+    },
+    "fh-194": {
+        "name": "Temporal Amulet",
+        "source": "Scenario 125",
+        "desc": "During ordering of initiative after all ability card have been revealed, increase or decrease a monster set's initiative by 30."
+    },
+    "fh-195": {
+        "name": "Tri-Corner Hat",
+        "source": "Treasure 83\nScenario 127",
+        "desc": "During your turn add +1 {RANGE.fh} and {PIERCE.fh} 1 to one of your ranged attacks."
+    },
+    "fh-196": {
+        "name": "Choker of Sacrifice",
+        "source": "SR-26",
+        "desc": "During your turn, discard one loot card except Random Item to perform: {HEAL.fh} 5 {RANGE.fh} 2, {WARD.fh}"
+    },
+    "fh-197": {
+        "name": "Aesther Diadem",
+        "source": "WO-77",
+        "desc": "After ordering of initiative, exchange a card in your hand for one which you have played. Your initiative is unaffected."
+    },
+    "fh-198": {
+        "name": "Hunter's Necklace",
+        "source": "WR-36",
+        "desc": "During your turn, perform {PULL.fh} 3 {RANGE.fh} 4"
+    },
+    "fh-199": {
+        "name": "Opulent Shoes",
+        "source": "Treasure 6\nTreasure 78",
+        "desc": "At the start of the scenario, consider yourself to be your summons in initiative order when determining monster focus for the remainder of the scenario."
+    },
+    "fh-200": {
+        "name": "Eventide Scepter",
+        "source": "Treasure 4",
+        "desc": "During your heal ability targeting an ally, {LIGHT_X} to add {REGENERATE.fh} to one heal and flip this card over.",
+        "backDesc":"During your attack ability, {DARK_X} to add {CURSE.fh} to one attack and flip this card over."
+    },
+    "fh-201": {
+        "name": "Wave Blade",
+        "source": "Scenario 76\nScenario 77",
+        "desc": "Diromg your attack ability performed while occupying or ad adjacent to a hex with a water tile, add {PUSH.fh} 1 and {IMMOBILIZE.fh} to one attack."
+    },
+    "fh-202": {
+        "name": "Giant Piranha Pig Spine",
+        "source": "Scenario 83",
+        "desc": "During your melee attack ability, add {PIERCE.fh} 2 and {WOUND.fh} to one attack."
+    },
+    "fh-203": {
+        "name": "Scepter of Control",
+        "source": "Scenario 119",
+        "desc": "After your ability control one target: {MOVE.fh} 2"
+    },
+    "fh-204": {
+        "name": "Severed Claw",
+        "source": "Treasure 5",
+        "desc": "During your turn, one adjacent normal or elite enemy suffers {DAMAGE.fh} to their {SHIELD.fh} value."
+    },
+    "fh-205": {
+        "name": "Harpoon",
+        "source": "Treasure 55",
+        "desc": "During your, perform {ATTACK.fh} 2 {RANGE.fh}, {PULL.fh} 2"
+    },
+    "fh-206": {
+        "name": "Giant Sword",
+        "source": "Treasure 42\nSO-30",
+        "desc": "During your melee attack ability, if you have not move this round, add +2 {ATTACK.fh} to one attack, and you may perform no move abilites this turn."
+    },
+    "fh-207": {
+        "name": "Fishhook",
+        "source": "Treasure 13",
+        "desc": "After your attack, if the target's current hit point is 3 or less, give the target {BANE.fh}"
+    },
+    "fh-208": {
+        "name": "Titan Nail",
+        "source": "Treasure 52",
+        "desc": "During your attack ability add {PIERCE.fh} 3 to one attack targeting an enemy whose current hit point value is 4 or less."
+    },
+    "fh-209": {
+        "name": "Sword of Mastery",
+        "source": "SR-35",
+        "desc": "During your melee attack ability, give advantage on one atrack.  For each master you have completed also add one following to the attack: +1 {ATTACK.fh}, {WOUND.fh}, or {POISON.fh}. "
+    },
+    "fh-210": {
+        "name": "Tanjo",
+        "source": "SO-39",
+        "desc": "During your turn, add +3 {ATTACK.fh} to all your attacks performed by Lurkers targeting you this round. {ROUND}"
+    },
+    "fh-211": {
+        "name": "Boom Barrel",
+        "source": "Boat Event 11",
+        "desc": "During your turn, designate one adjacent hex.  At the end of your turn, all figures withing {RANGE.fh} 2 of the designated hex suffer {DAMAGE.fh} 1."
+    },
+    "fh-212": {
+        "name": "Elemental Stone",
+        "source": "Scenario 66",
+        "desc": "After ordering of initiative, choose one element. This element cannot be infused or consume by any monster this round. {ROUND}"
+    },
+    "fh-213": {
+        "name": "Key of Seasons",
+        "source": "Scenario 106",
+        "desc": "During your attack ability {ICE_X} to add {IMMOBILIZE.fh} to one attack, then flip this card over at the end of your turn.",
+        "backDesc":"During your attack ability {FIRE_X} to add {WOUND.fh} to one attack, then flip this card over at the end of your turn."
+    },
+    "fh-214": {
+        "name": "Cup of Ventillion",
+        "source": "Scenario 107",
+        "desc": "During your heal ability add one positive condition you have to one heal."
+    },
+    "fh-215": {
+        "name": "Befuddling Mug",
+        "source": "Scenario 128",
+        "desc": "During your, add +1 {ATTACK.fh} and {MUDDLE.fh} to all your attacks. At the end of your turn, perform: {MUDDLE.fh} self"
+    },
+    "fh-216": {
+        "name": "Tome of Elements",
+        "source": "SR-48 or WR-46 Event Chain",
+        "desc": "During your turn, {FIRE} {ICE} {WIND} {EARTH} {LIGHT} {DARK} Elements do not move from strong to waning at the end of this round. {ROUND}"
+    },
+    "fh-217": {
+        "name": "Tome of Time",
+        "source": "SR-49 or WR-47 Event Chain",
+        "desc": "During ordering of initiative after all ability card have been revealed, shuffle all monster ability decks and draw a new card for each active monster set."
+    },
+    "fh-218": {
+        "name": "Tome of Life",
+        "source": "SR-47 or WR-45 Event Chain",
+        "desc": "During your turn, remove all conditions from all figures then grant all figures: {HEAL.fh} 2 self"
+    },
+    "fh-219": {
+        "name": "Tome of Conflict",
+        "source": "Scenario 134\n",
+        "desc": "During your turn all figures gain {STRENGTHEN.fh}. Until any monster is killed, the first attack modifier card drawn for every attack is treated as rolling. {PERSISTENT}"
+    },
+    "fh-220": {
+        "name": "Belaras Quill",
+        "source": "Scenario 135",
+        "desc": "During your turn, {RECOVER.fh} up to one Tome item."
+    },
+    "fh-221": {
+        "name": "Ice Shiv",
+        "source": "Treasure 84",
+        "desc": "During your melee attack ability, {ICE_X} to add {PIERCE.fh} 3 to one attack."
+    },
+    "fh-222": {
+        "name": "Black Box",
+        "source": "Treasure 36",
+        "desc": "During yor turn, discard two cards from your hand to perform: {HEAL.fh} 6 self"
+    },
+    "fh-223": {
+        "name": "Lightning Rod",
+        "source": "Treasure 26",
+        "desc": "After ordering of initiative, all monsters consider you to be first in initiative order when determining focus this round. {ROUND}"
+    },
+    "fh-224": {
+        "name": "Armor of Empathy",
+        "source": "unknown",
+        "desc": "After the next three attacks targeting you, flip this card over.",
+        "backDesc":"During your turn, perform {HEAL.fh} 3 {TARGET.fh} 1 ally, {RANGE.fh} 3, {BLESS.fh} then flip this card over."
+    },
+    "fh-225": {
+        "name": "Algox Carving",
+        "source": "Treasure 41",
+        "desc": "During your melee attack ability, {EARTH_X} to add +1 {ATTACK.fh} to one attack and flip this card over.",
+        "backDesc":"During your melee attack ability, {WIND_X} to add {PUSH.fh} 2 to one attack and flip this card over."
+    },
+    "fh-226": {
+        "name": "Unfettered Arm",
+        "source": "Treasure 81\nWR-22",
+        "desc": "During your attack ability, double the numerical value of the next attack modifier card you draw. {2X_MODIFIER} and {NULL_MODIFIER} modifier cards are unaffected."
+    },
+    "fh-227": {
+        "name": "Data Drive",
+        "source": "Treasure 7",
+        "desc": "When you short rest, place half (rounded down) of your discard pile on this item, lose of the remaining cards randomly as normal, then draw the cards on this item."
+    },
+    "fh-228": {
+        "name": "Extendable Pole",
+        "source": "Treasure 35",
+        "desc": "During your turn, open one unlocked door while withing {RANGE.fh} 2."
+    },
+    "fh-229": {
+        "name": "Exquisite Map",
+        "source": "SO-42",
+        "desc": "During your turn grant one ally withing {RANGE.fh} 3: {MOVE.fh} 3"
+    },
+    "fh-230": {
+        "name": "Examination Glass",
+        "source": "SR-26",
+        "desc": "After you draw one loot card, draw one additional card, keep one, and place the other on either the top or bottom of the loot deck."
+    },
+    "fh-231": {
+        "name": "Skinning Knife",
+        "source": "WR-16",
+        "desc": "When you gain a loot token, gain 3 `hide` instead of drawning a loot card."
+    },
+    "fh-232": {
+        "name": "Orchid Wand",
+        "source": "WR-12",
+        "desc": "During your turn lose 1 morale to perform: {BLESS.fh} {TARGET.fh} all allies and self"
+    },
+    "fh-233": {
+        "name": "Dead Raven",
+        "source": "Scenario 13",
+        "desc": "During you ally's ranged attack ability, add {MUDDLE.fh} and {CURSE.fh} to one attack."
+    },
+    "fh-234": {
+        "name": "ooze vial",
+        "source": "Scenario 84",
+        "desc": "During your turn, create one {POISON.fh}, {IMMOBILIZE.fh} trap in an empty hex within {RANGE.fh} 2."
+    },
+    "fh-235": {
+        "name": "Small Rat",
+        "source": "Scenario 93",
+        "desc": "During your turn, loot one loot token within {RANGE.fh} 2."
+    },
+    "fh-236": {
+        "name": "Cracked Mirror",
+        "source": "Scenario 111",
+        "desc": "During your turn, lose one card from your hand to {RECOVER.fh} one card from your loot pile of equal of lower level."
+    },
+    "fh-237": {
+        "name": "Mesmerizing Seashell",
+        "source": "Scenario 131",
+        "desc": "During your turn, choose one of six directions. You and all figures withing {RANGE.fh} 2 are forced to simultaneously move 2 hexes in the chosen directon."
+    },
+    "fh-238": {
+        "name": "Cracked Idol",
+        "source": "Scenario 133",
+        "desc": "When you would become exhausted from suffering {DAMAGE.fh}, set your hit point value to 1 instead."
+    },
+    "fh-239": {
+        "name": "Eye of the Storm",
+        "source": "Treasure 53",
+        "desc": "During your turn, all allies and enemies within {RANGE.fh} 2 suffer {DAMAGE.fh} 1."
+    },
+    "fh-240": {
+        "name": "Demons Gem",
+        "source": "SO-53 event chain",
+        "desc": "When you fail a scenario, still earn all {CHECK} from your battle goal if it was completed."
+    },
+    "fh-241": {
+        "name": "Shimmering Powder",
+        "source": "SR-26",
+        "desc": "After you draw one loot card, draw one additional loot card."
+    },
+    "fh-242": {
+        "name": "Lucky Dice",
+        "source": "SO-4",
+        "desc": "During your attack ability, treat the next three attack modifier cards you draw as rolling"
+    },
+    "fh-243": {
+        "name": "Cursed Rock",
+        "source": "WR-3",
+        "desc": "This item cannot be sold and must be brought into and used every scenario. At the start of the scenario perform: {CURSE.fh}, {BLESS.fh} self"
+    },
+    "fh-244": {
+        "name": "Ember Energy Source",
+        "source": "Scenario 33",
+        "desc": "During your turn, increase the printed {ATTACK.fh}, {MOVE.fh}, {TARGET.fh}, or {RANGE.fh} numerical value on one of your abilities by 1."
+    },
+    "fh-245": {
+        "name": "Ancient Coin",
+        "source": "Scenario 136\nBuilding 74\nLoot Cards",
+        "desc": ""
+    },
+    "fh-246": {
+        "name": "Key Card",
+        "source": "Scenario 58\nScenario 59",
+        "desc": ""
+    },
+    "fh-247": {
+        "name": "Trainer's Net",
+        "source": "Stables",
+        "desc": "During your turn, capture an adjacent enemy whose hit point value is 1 or 2."
+    },
+    "fh-248": {
+        "name": "Wanderer's Club",
+        "source": "Reward from Solo Scenario #01",
+        "desc": "Duing your attack ability, move one character token on one of your peristent abilities backward one slot and add +X {ATTACK.fh} to one attack, where X is the nuber of active peristent abilities."
+    },
+    "fh-249": {
+        "name": "Recalibration Trigger",
+        "source": "Reward from Solo Scenario #02",
+        "desc": "During our turn, perform one of the two following abilities: Lose one card from your hand to gain 3 {TIME_ICON}. -2 {TIME_ICON} : {RECOVER.fh} up to two of your discarded cards"
+    },
+    "fh-250": {
+        "name": "Spear of Justice",
+        "source": "Reward from Solo Scenario #03",
+        "desc": "During your turn perform: {ATTACK.fh} 2 {RANGE.fh} 3. All your banners are treated as additionally occupying the hex of the attack target of their bonuses and that hex is treated as occupied by an ally this round. {ROUND}"
+    },
+    "fh-251": {
+        "name": "Soul Urn",
+        "source": "Reward from Solo Scenario #04",
+        "desc": "Place one {SHADOW_ICON} in an adjacent hex. {DARK}"
+    },
+    "fh-252": {
+        "name": "Black Earth Codex",
+        "source": "Reward from Solo Scenario #05",
+        "desc": "On the next three deaths of any of your summons, {EARTH_OR_DARK} and perform: {HEAL.fh} 2 self"
+    },
+    "fh-253": {
+        "name": "Mask of Duality",
+        "source": "Reward from Solo Scenario #06",
+        "desc": "During your ranged attack ability while in {RANGED_ICON}, gain advantage for one attack, then flip this card over.",
+        "backDesc":"When an enemy performs an attack targeting you while you are in {MELEE_ICON}, the attacker gains disadvantage, then flip this card over."
+    },
+    "fh-254": {
+        "name": "Ancestral Blade",
+        "source": "Reward from Solo Scenario #07",
+        "desc": "During your turn, activate all your {INFUSION_ICON} as if you just performed a {INFUSION_ICON} action."
+    },
+    "fh-255": {
+        "name": "Mountain's Heart",
+        "source": "Reward from Solo Scenario #08",
+        "desc": "During your turn, you may create either one 1-hex obstacle or hazardous terrain tile in an empty tile within {RANGE.fh} 2. {FIRE_OR_EARTH}"
+    },
+    "fh-256": {
+        "name": "Sonorous Shard",
+        "source": "Reward from Solo Scenario #09",
+        "desc": "Gain 3 {RESONANCE_ICON}. {WIND_OR_EARTH}"
+    },
+    "fh-257": {
+        "name": "Sly Camouflage",
+        "source": "Reward from Solo Scenario #10",
+        "desc": "When you create a trap, place a character token on it.  Monsters do not treat the trap as negative. Remvoe the token when you {RECOVER.fh} this item. {PERSISTENT}"
+    },
+    "fh-258": {
+        "name": "Skull of Agony",
+        "source": "Reward from Solo Scenario #11",
+        "desc": "When you suffer damage, if your hit point value is reduced to below half your maximum, perform: {HEAL.fh} 7 self, {CURSE.fh} This heal is not affect by and cannot remove negative conditions."
+    },
+    "fh-259": {
+        "name": "Storm Carving",
+        "source": "Reward from Solo Scenario #12",
+        "desc": "During an attack ability you grant an ally, add {PUSH.fh} 2 to one of their attacks, then flip this card over.",
+        "backDesc":"During your attack ability you, add {PULL.fh} 2 to one attack, then flip this card over."
+    },
+    "fh-260": {
+        "name": "Freezing Orb",
+        "source": "Reward from Solo Scenario #13",
+        "desc": "During your attack ability, add {BRITTLE.fh} to one attack and create one 1-hex icy terrain tile in the featureless hex occupied by the target."
+    },
+    "fh-261": {
+        "name": "Energized Module",
+        "source": "Reward from Solo Scenario #14",
+        "desc": "Remove all damage and negative conditions from one of your summons, then {TRANSFER_ICON} to that summon."
+    },
+    "fh-262": {
+        "name": "Exhaust Boots",
+        "source": "Reward from Solo Scenario #15",
+        "desc": "During your move ability, when you have {PRESSURE_HIGH_ICON} or {PRESSURE_OVER_ICON}, add +1 {MOVE.fh}, then flip this card over at the end of your turn.",
+        "backDesc":"During your turn when you have {PRESSURE_LOW_ICON}, perform: {MUDDLE.fh} {RANGE.fh} 1 then flip this card over at the end of your turn."
+    },
+    "fh-263": {
+        "name": "Warlords Skull",
+        "source": "Reward from Solo Scenario #16",
+        "desc": "Whenever you gain {INVISIBLE.fh} or peform a teleport ability while you have {INVISIBLE.fh}, after the ability perform: {MUDDLE.fh} {RANGE.fh} 1"
+    },
+    "fh-264": {
+        "name": "Spiraled Medallion",
+        "source": "Reward from Solo Scenario #17",
+        "desc": "When you rest, you may keep up to three {TIDE_ICON} cards in your active area. {LIGHT_OR_DARK}"
     }
 }
