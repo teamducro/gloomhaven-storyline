@@ -125,7 +125,8 @@
                         <span class="inline-block mr-2">
                             {{ row.count - itemAvailability.uses(row.id) }}/{{ row.count }}
                         </span>
-                        <span class="inline-block md:hidden">{{ row.cost + costModifier }}</span>
+                        <add-links-and-icons v-if="row.cost && isNaN(row.cost)" :text="getResourceCost(row.cost).replaceAll('<br>', ' ')" class="resources inline-block md:hidden"/>
+                        <span v-else class="inline-block md:hidden">{{ isNaN(row.cost) ? '-' : (row.cost + costModifier) }}</span>
                     </span>
                 </span>
                 <span slot="cost" slot-scope="{value}">
