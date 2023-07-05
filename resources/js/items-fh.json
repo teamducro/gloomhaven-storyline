@@ -183,7 +183,7 @@
     {
         "id": 19,
         "name": "Ringing Hammer",
-        "count": 1,
+        "count": 2,
         "resources": { "lumber": 1, "metal": 1, "axenut": 1 },
         "slot": "One Hand",
         "source": "Craftsman 3",
@@ -194,7 +194,7 @@
     {
         "id": 20,
         "name": "Well Strung Bow",
-        "count": 1,
+        "count": 2,
         "resources": { "item": [7], "arrowvine": 1 },
         "slot": "Two Hands",
         "source": "Craftsman 3",
@@ -225,7 +225,7 @@
     {
         "id": 23,
         "name": "Sturdy Greaves",
-        "count": 1,
+        "count": 2,
         "resources": { "metal": 2, "hide": 2 },
         "slot": "Legs",
         "source": "Craftsman 4",
@@ -246,7 +246,7 @@
     {
         "id": 25,
         "name": "Soothing Scepter",
-        "count": 1,
+        "count": 2,
         "resources": { "lumber": 1, "hide": 1, "rockroot": 1 },
         "slot": "One Hand",
         "source": "Craftsman 4",
@@ -316,7 +316,7 @@
     {
         "id": 32,
         "name": "Shell Armor",
-        "count": 1,
+        "count": 2,
         "resources": { "lumber": 1, "metal": 2, "hide": 2 },
         "slot": "Body",
         "source": "Craftsman 6",
@@ -376,7 +376,7 @@
     {
         "id": 38,
         "name": "Duelists Shoes",
-        "count": 1,
+        "count": 2,
         "resources": { "item": [13, 113] },
         "slot": "Legs",
         "source": "Craftsman 7",
@@ -396,7 +396,7 @@
     {
         "id": 40,
         "name": "Heartstrike Bow",
-        "count": 1,
+        "count": 2,
         "resources": { "item": [20, 85], "lumber": 1 },
         "slot": "Two Hands",
         "source": "Craftsman 7",
@@ -1361,7 +1361,7 @@
     {
         "id": 137,
         "name": "Tower Shield",
-        "count": 1,
+        "count": 2,
         "cost": 35,
         "slot": "One Hand",
         "source": "Trading Post 2",
@@ -1382,7 +1382,7 @@
     {
         "id": 139,
         "name": "Horned Helm",
-        "count": 1,
+        "count": 2,
         "cost": 50,
         "slot": "Head",
         "source": "Trading Post 3",
@@ -1449,7 +1449,7 @@
     {
         "id": 146,
         "name": "Hooked Chain",
-        "count": 1,
+        "count": 2,
         "cost": 35,
         "slot": "Two Hands",
         "source": "Trading Post 3",
