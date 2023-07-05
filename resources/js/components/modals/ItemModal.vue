@@ -5,6 +5,8 @@
                 <div class="flex-1 mr-3">
                     <webp :src="item.image" :alt="$t(item.name)"
                           class="w-full rounded-lg sm:rounded-xl" style="max-width: 400px;"/>
+                    <webp v-if="item.backImage" :src="item.backImage" :alt="$t(item.name)"
+                          class="w-full rounded-lg sm:rounded-xl" style="max-width: 400px;"/>
                 </div>
 
                 <div class="flex-1 space-y-2">

@@ -129,6 +129,15 @@ export default {
                     '{ICE_X}': '<webp src="/img/icons/elements/iceX.png" width="20" class="inline"/>',
                     '{WIND_X}': '<webp src="/img/icons/elements/windX.png" width="20" class="inline"/>',
                     '{LIGHT_X}': '<webp src="/img/icons/elements/lightX.png" width="20" class="inline"/>',
+                    
+                    // TODO: Frosthaven mixed element icons (also Frosthaven-style icons for consumed elements).
+                    '{EARTH_OR_DARK}': '<webp src="/img/icons/elements/earth.png" width="20" class="inline"/>/<webp src="/img/icons/elements/dark.png" width="20" class="inline"/>',
+                    '{EARTH_OR_DARK_X}': '<webp src="/img/icons/elements/earthX.png" width="20" class="inline"/>/<webp src="/img/icons/elements/darkX.png" width="20" class="inline"/>',
+                    '{FIRE_OR_EARTH}': '<webp src="/img/icons/elements/fire.png" width="20" class="inline"/>/<webp src="/img/icons/elements/earth.png" width="20" class="inline"/>',
+                    '{FIRE_OR_LIGHT_X}': '<webp src="/img/icons/elements/fireX.png" width="20" class="inline"/>/<webp src="/img/icons/elements/lightX.png" width="20" class="inline"/>',
+                    '{ICE_OR_WIND_X}': '<webp src="/img/icons/elements/iceX.png" width="20" class="inline"/>/<webp src="/img/icons/elements/windX.png" width="20" class="inline"/>',
+                    '{WIND_OR_EARTH}': '<webp src="/img/icons/elements/wind.png" width="20" class="inline"/>/<webp src="/img/icons/elements/earth.png" width="20" class="inline"/>',
+                    '{LIGHT_OR_DARK}': '<webp src="/img/icons/elements/light.png" width="20" class="inline"/>/<webp src="/img/icons/elements/dark.png" width="20" class="inline"/>',
 
                     '{AOE.CLEAVE_0_1}': '<webp src="/img/icons/aoe/cleave_0_1.png" width="40" class="inline"/>',
                     '{AOE.CONE_0_1}': '<webp src="/img/icons/aoe/cone_0_1.png" width="40" class="inline"/>',
@@ -146,6 +155,7 @@ export default {
                     '{DISARM}': this.$t('DISARM') + ' <webp src="/img/icons/status/disarm.png" width="20" class="inline"/>',
                     '{EMPOWER}': this.$t('EMPOWER') + ' <webp src="/img/icons/status/empower.png" width="20" class="inline"/>',
                     '{IMMOBILIZE}': this.$t('IMMOBILIZE') + ' <webp src="/img/icons/status/immobilize.png" width="20" class="inline"/>',
+                    '{IMPAIR}': this.$t('IMPAIR') + ' <webp src="/img/icons/status/impair.png" width="20" class="inline"/>',
                     '{INFECT}': this.$t('INFECT') + ' <webp src="/img/icons/status/infect.png" width="20" class="inline"/>',
                     '{INVISIBLE}': this.$t('INVISIBLE') + ' <webp src="/img/icons/status/invisible.png" width="20" class="inline"/>',
                     '{LOOT 1}': '“' + this.$t('Loot') + ' <webp src="/img/icons/general/loot_white.png" width="20" class="inline"/> 1”',
@@ -203,6 +213,17 @@ export default {
                     '{FIRESPITTER_ANT_ICON}': '<webp src="/img/icons/status/firespitter.png" width="20" class="inline"/>',
                     '{GHOST_SHIMMER_BEE_ICON}': '<webp src="/img/icons/status/ghostshimmer.png" width="20" class="inline"/>',
                     '{VOIDSIGHT_ICON}': '<webp src="/img/icons/status/voidsight.png" width="20" class="inline"/>',
+                    '{TIME_ICON}': '<webp src="/img/icons/status/time.png" width="20" class="inline" alt="' + this.$t('Time') + '"/>',
+                    '{SHADOW_ICON}': '<webp src="/img/icons/status/shadow.png" width="20" class="inline" alt="' + this.$t('Shadow') + '"/>',
+                    '{RANGED_ICON}': '<webp src="/img/icons/status/ranged.png" width="20" class="inline" alt="' + this.$t('Ranged mode') + '"/>',
+                    '{MELEE_ICON}': '<webp src="/img/icons/status/melee.png" width="20" class="inline" alt="' + this.$t('Melee mode') + '"/>',
+                    '{INFUSION_ICON}': '<webp src="/img/icons/status/infusion.png" width="20" class="inline" alt="' + this.$t('Infusion') + '"/>',
+                    '{RESONANCE_ICON}': '<webp src="/img/icons/status/resonance.png" width="20" class="inline" alt="' + this.$t('Resonance') + '"/>',
+                    '{TRANSFER_ICON}': '<webp src="/img/icons/status/transfer.png" width="30" class="inline" alt="' + this.$t('Transfer') + '"/>',
+                    '{PRESSURE_OVER_ICON}': '<webp src="/img/icons/status/pressure_over.png" width="20" class="inline" alt="' + this.$t('Over pressure') + '"/>',
+                    '{PRESSURE_HIGH_ICON}': '<webp src="/img/icons/status/pressure_high.png" width="20" class="inline" alt="' + this.$t('High pressure') + '"/>',
+                    '{PRESSURE_LOW_ICON}': '<webp src="/img/icons/status/pressure_low.png" width="20" class="inline" alt="' + this.$t('Low pressure') + '"/>',
+                    '{TIDE_ICON}': '<webp src="/img/icons/status/tide.png" width="20" class="inline" alt="' + this.$t('Tide') + '"/>',
 
                     // Damage Modifiers
                     '{-2_WHITE}': '<webp src="/img/icons/perks/-2_white.png" width="20" class="inline"/>',
@@ -221,12 +242,12 @@ export default {
                     '{PAGE}': this.$t('PAGE') + ' <webp src="/img/icons/general/page.png" width="20" class="opacity-80 inline"/>',
 
                     // Items
-                    '{BODY}': '<webp src="/img/icons/equipment/body.png" alt="body" width="20"/>',
-                    '{HEAD}': '<webp src="/img/icons/equipment/head.png" alt="head" width="20"/>',
-                    '{LEGS}': '<webp src="/img/icons/equipment/legs.png" alt="legs" width="20"/>',
-                    '{SMALL-ITEM}': '<webp src="/img/icons/equipment/small-item.png" alt="small-item" width="20"/>',
-                    '{ONE-HAND}': '<webp src="/img/icons/equipment/one-hand.png" alt="one-hand" width="20"/>',
-                    '{TWO-HANDS}': '<webp src="/img/icons/equipment/two-hands.png" alt="two-hands" width="20"/>',
+                    '{BODY}': '<webp src="/img/icons/equipment/body.png" alt="body" width="20" class="inline"/>',
+                    '{HEAD}': '<webp src="/img/icons/equipment/head.png" alt="head" width="20" class="inline"/>',
+                    '{LEGS}': '<webp src="/img/icons/equipment/legs.png" alt="legs" width="20" class="inline"/>',
+                    '{SMALL-ITEM}': '<webp src="/img/icons/equipment/small-item.png" alt="small-item" width="20" class="inline"/>',
+                    '{ONE-HAND}': '<webp src="/img/icons/equipment/one-hand.png" alt="one-hand" width="20" class="inline"/>',
+                    '{TWO-HANDS}': '<webp src="/img/icons/equipment/two-hands.png" alt="two-hands" width="20" class="inline"/>',
 
                     // Resources
                     '{CORPSECAP}': '<inline-svg src="resources/corpsecap"/>',
@@ -256,11 +277,55 @@ export default {
                     '{SLED}': '<inline-svg src="icons/sled"/>',
                     '{CLIMBING_GEAR}': '<inline-svg src="icons/climbing-gear"/>',
 
-                    // Without the words
-                    '{ATTACK.img}': '<webp src="/img/icons/general/attack.png" width="20" class="inline"/>',
-                    '{BLESS.img}': '<webp src="/img/icons/status/bless.png" width="20" class="inline"/>',
-                    '{CURSE.img}': '<webp src="/img/icons/status/curse.png" width="20" class="inline"/>',
-                    '{DISARM.img}': '<webp src="/img/icons/status/disarm.png" width="20" class="inline"/>',
+                    // Frosthaven (icons only) ability enhancements
+                    '{DAMAGE.fh}': '<webp src="/img/icons/general/damage.png" width="20" class="inline" alt="' + this.$t('DAMAGE') + '"/>',
+                    '{SHIELD.fh}': '<webp src="/img/icons/general/shield_fh.png" width="20" class="inline" alt="' + this.$t('SHIELD') + '"/>',
+                    '{HEAL.fh}': '<webp src="/img/icons/general/heal.png" width="20" class="inline" alt="' + this.$t('HEAL') + '"/>',
+                    '{ATTACK.fh}': '<webp src="/img/icons/general/attack.png" width="20" class="inline" alt="' + this.$t('ATTACK') + '"/>',
+                    '{RANGE.fh}': '<webp src="/img/icons/general/range_fh.png" width="20" class="inline" alt="' + this.$t('RANGE') + '"/>',
+                    '{MOVE.fh}': '<webp src="/img/icons/general/move_fh.png" width="20" class="inline" alt="' + this.$t('MOVE') + '"/>',
+                    '{JUMP.fh}': '<webp src="/img/icons/general/jump_fh.png" width="20" class="inline" alt="' + this.$t('JUMP') + '"/>',
+                    '{FLYING.fh}': '<webp src="/img/icons/general/flying_fh.png" width="20" class="inline" alt="' + this.$t('FLYING') + '"/>',
+                    '{RETALIATE.fh}': '<webp src="/img/icons/general/retaliate.png" width="20" class="inline" alt="' + this.$t('RETALIATE') + '"/>',
+                    '{TELEPORT.fh}': '<webp src="/img/icons/general/teleport_fh.png" width="20" class="inline" alt="' + this.$t('TELEPORT') + '"/>',
+                    '{TARGET.fh}': '<webp src="/img/icons/general/target.png" width="20" class="inline" alt="' + this.$t('TARGET') + '"/>',
+                    
+                    '{RECOVER.fh}': '<webp src="/img/icons/general/recover_white.png" width="20" class="inline" alt="' + this.$t('RECOVER') + '"/>',
+                    '{CONSUMED.fh}': '<webp src="/img/icons/general/consumed_white.png" width="20" class="inline" alt="' + this.$t('CONSUMED') + '"/>',
+
+                    // Frosthaven (icons only) conditions
+                    '{BANE.fh}': '<webp src="/img/icons/status/bane_fh.png" width="20" class="inline" alt="' + this.$t('BANE') + '"/>',
+                    '{BLESS.fh}': '<webp src="/img/icons/status/bless.png" width="20" class="inline" alt="' + this.$t('BLESS') + '"/>',
+                    '{BRITTLE.fh}': '<webp src="/img/icons/status/brittle.png" width="20" class="inline" alt="' + this.$t('BRITTLE') + '"/>',
+                    '{CURSE.fh}': '<webp src="/img/icons/status/curse.png" width="20" class="inline" alt="' + this.$t('CURSE') + '"/>',
+                    '{DISARM.fh}': '<webp src="/img/icons/status/disarm.png" width="20" class="inline" alt="' + this.$t('DISARM') + '"/>',
+                    '{IMMOBILIZE.fh}': '<webp src="/img/icons/status/immobilize.png" width="20" class="inline" alt="' + this.$t('IMMOBILIZE') + '"/>',
+                    '{IMPAIR.fh}': '<webp src="/img/icons/status/impair.png" width="20" class="inline" alt="' + this.$t('IMPAIR') + '"/>',
+                    '{INVISIBLE.fh}': '<webp src="/img/icons/status/invisible.png" width="20" class="inline" alt="' + this.$t('INVISIBLE') + '"/>',
+                    '{MUDDLE.fh}': '<webp src="/img/icons/status/muddle.png" width="20" class="inline" alt="' + this.$t('MUDDLE') + '"/>',
+                    '{PIERCE.fh}': '<webp src="/img/icons/status/pierce.png" width="20" class="inline" alt="' + this.$t('PIERCE') + '"/>',
+                    '{POISON.fh}': '<webp src="/img/icons/status/poison.png" width="20" class="inline" alt="' + this.$t('POISON') + '"/>',
+                    '{PULL.fh}': '<webp src="/img/icons/status/pull_fh.png" width="20" class="inline" alt="' + this.$t('PULL') + '"/>',
+                    '{PUSH.fh}': '<webp src="/img/icons/status/push_fh.png" width="20" class="inline" alt="' + this.$t('PUSH') + '"/>',
+                    '{REGENERATE.fh}': '<webp src="/img/icons/status/regenerate.png" width="20" class="inline" alt="' + this.$t('REGENERATE') + '"/>',
+                    '{STRENGTHEN.fh}': '<webp src="/img/icons/status/strengthen.png" width="20" class="inline" alt="' + this.$t('STRENGTHEN') + '"/>',
+                    '{STUN.fh}': '<webp src="/img/icons/status/stun.png" width="20" class="inline" alt="' + this.$t('STUN') + '"/>',
+                    '{WARD.fh}': '<webp src="/img/icons/status/ward_fh.png" width="20" class="inline" alt="' + this.$t('WARD') + '"/>',
+                    '{WOUND.fh}': '<webp src="/img/icons/status/wound_fh.png" width="20" class="inline" alt="' + this.$t('WOUND') + '"/>',
+
+                    // TODO: Replace these with coloured icons instead of using the perk icons, as per the Frosthaven item cards
+                    '{-1_MODIFIER}': '<webp src="/img/icons/perks/-1_white.png" width="20" class="inline" alt="-1"/>',
+                    '{+0_MODIFIER}': '<webp src="/img/icons/perks/+0_white.png" width="20" class="inline" alt="+0"/>',
+                    '{+1_MODIFIER}': '<webp src="/img/icons/perks/+1_white.png" width="20" class="inline" alt="+1"/>',
+                    '{+2_MODIFIER}': '<webp src="/img/icons/perks/+2_white.png" width="20" class="inline" alt="+2"/>',
+                    '{2X_MODIFIER}': '<webp src="/img/icons/perks/2x_white.png" width="20" class="inline" alt="2x"/>',
+                    '{NULL_MODIFIER}': '<webp src="/img/icons/perks/null_white.png" width="20" class="inline" alt="0x"/>',
+
+                    // Bonuses
+                    '{CHECK}': '<webp src="/img/icons/general/check.png" width="20" class="inline" alt="' + this.$t('check mark') + '"/>',
+                    '{ROUND}': '<webp src="/img/icons/general/eot_white.png" width="20" class="inline" alt="' + this.$t('Round bonus') + '"/>',
+                    '{PERSISTENT}': '<webp src="/img/icons/general/ongoing_white.png" width="20" class="inline" alt="' + this.$t('Persistent bonus') + '"/>',
+                    '{ITEM}': '<webp src="/img/icons/general/item.png" width="10" class="inline" alt="' + this.$t('Item') + '"/>',
 
                 }).each((icon, key) => {
                     text = text.replaceAll(key, icon);

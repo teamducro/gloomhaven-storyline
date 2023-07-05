@@ -281,10 +281,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.inline-icons :deep(div), .inline-icons :deep(svg) {
+.inline-icons ::v-deep div, .inline-icons ::v-deep svg {
     @apply inline;
 }
-.materials :deep(svg) {
+.materials ::v-deep svg {
     @apply h-3 w-3;
 }
 </style>
