@@ -36,6 +36,14 @@
     src: url('../fonts/Material-Icons-Fallback.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'Moyenage';
+    src: url('../fonts/Moyenage.woff2') format('woff2'),
+    url('../fonts/Moyenage.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .material-icons {
     font-family: 'Material Icons', 'Material Icons Fallback', serif;
     font-weight: normal;

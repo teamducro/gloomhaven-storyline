@@ -169,169 +169,185 @@ export default {
     "cs-330": {
         "name": "Protect and Serve",
         "progress": [
-            "Goal met"
+            "Kill ten Inox.",
+            "Conclude {SCENARIO 33}."
         ]
     },
     "cs-331": {
         "name": "Weapons Specialist",
         "progress": [
-            "Goal met"
+            "Consume fifteen {ONE-HAND} or {TWO-HANDS} items"
         ]
     },
     "cs-332": {
         "name": "Experimentation",
         "progress": [
-            "Goal met"
+            "Play 30 cards for their lost {LOST} action."
         ]
     },
     "cs-333": {
         "name": "Thrill Seeker",
         "progress": [
-            "Goal met"
+            "Reveal a room tile by opening a door twenty times.",
         ]
     },
     "cs-334": {
         "name": "Trap Setter",
         "progress": [
-            "Goal met"
+            "Disarm or cause an enemy to sprint a trap during your turn fifteen times.",
         ]
     },
     "cs-335": {
         "name": "Bandit Banisher",
         "progress": [
-            "Goal met"
+            "Kill ten Guards or Archers.",
+            "Conclude {SCENARIO 35}.",
         ]
     },
     "cs-336": {
         "name": "Creatures in the light",
         "progress": [
-            "Goal met"
+            "Kill twenty Oozes, Forest Imps, or Black Imps.",
         ]
     },
     "cs-337": {
         "name": "Experienced leader",
         "progress": [
-            "Goal met"
+            "Complete twelve scenarios with at least 12 experience points.",
         ]
     },
     "cs-338": {
         "name": "Adrenaline Spike",
         "progress": [
-            "Goal met"
+            "Kill an enemy and loots its money token in the same round fifteen times.",
         ]
     },
     "cs-339": {
         "name": "Mutual Support",
         "progress": [
-            "Goal met"
+            "Kill 30 enemies adjacent to any of your allies.",
         ]
     },
     "cs-340": {
         "name": "Thy be Blessed",
         "progress": [
-            "Goal met"
+            "Draw a {BLESS} card twelve times during an attack.",
         ]
     },
     "cs-341": {
         "name": "Spiritual Cains",
         "progress": [
-            "Goal met"
+            "Spend 200 gold on enhancements.",
         ]
     },
     "cs-342": {
         "name": "The Path of Agony",
         "progress": [
-            "Goal met"
+            "Experience an ally or enemy dying or becoming exhausted during its own turn 13 times.",
         ]
     },
     "cs-343": {
-        "name": "The Oying of light",
+        "name": "Cruel Dominion",
         "progress": [
-            "Goal met"
+            "Complete 10 scenarios during which you kill an enemy who has a negative condition.",
         ]
     },
     "cs-344": {
         "name": "Natural Selection",
         "progress": [
-            "Goal met"
+            "Generate {FIRE} twice.",
+            "Generate {ICE} twice.",
+            "Generate {LIGHT} twice.",
+            "Generate {DARK} twice.",
+            "Conclude {SCENARIO 37}.",
         ]
     },
     "cs-345": {
         "name": "Predator and Prey",
         "progress": [
-            "Goal met"
+            "Kill two or more enemies in the same turn fifteen times.",
         ]
     },
     "cs-346": {
         "name": "An Adder Divides",
         "progress": [
-            "Goal met"
+            "Occupy difficult terrain in 6 different scenarios.",
+            "Conclude {SCENARIO 39}.",
         ]
     },
     "cs-347": {
         "name": "Field Research",
         "progress": [
-            "Goal met"
+            "Poison {POISON} twenty different types of monsters.",
         ]
     },
     "cs-348": {
         "name": "Conjurers Hand",
         "progress": [
-            "Goal met"
+            "Kill ten summoned monsters.",
         ]
     },
     "cs-349": {
         "name": "No Rest for the Wicked",
         "progress": [
-            "Goal met"
+            "Complete ten scenarios without long resting.",
         ]
     },
     "cs-350": {
         "name": "Health First",
         "progress": [
-            "Goal met"
+            "Complete seven scenarios ending at full health.",
         ]
     },
     "cs-351": {
         "name": "Limitless Searching",
         "progress": [
-            "Goal met"
+            "Loot 30 money tokens.",
         ]
     },
     "cs-aa-001": {
         "name": "At All Costs",
         "progress": [
-            "Goal met"
+            "Experience 8 scenarios where you negate damage by losing a card as normal while adjacent to an ally.",
+            "Conclude {SCENARIO AA1}.",
         ]
     },
     "cs-aa-002": {
         "name": "The Weight of failure",
         "progress": [
-            "Goal met"
+            "Complete 8 scenarios without exhausting and with 2 or less HP.",
+            "Conclude {SCENARIO AA2}",
         ]
     },
     "cs-qa-001": {
         "name": "Ingenious Inventor",
         "progress": [
-            "Goal met"
+            "Immediately gain “Power Modulator” (Item QA-01)",
+            "Kill 12 enemies with “Power Modulator” (Item QA-01)",
+            "Conclude {SCENARIO QA1}",
         ]
     },
     "cs-qa-002": {
         "name": "Scrap Diver",
         "progress": [
-            "Goal met"
+            "Loot two or more money tokens with a single action eight times.",
+            "Loot two treasure tiles.",
+            "Conclude {SCENARIO QA2}.",
         ]
     },
     "cs-rm-001": {
         "name": "Brutal Enforcer",
         "progress": [
-            "Goal met"
+            "Gain “Serrated Edge” design (Item RM-01).",
+            "Apply {WOUND} or {RUPTURE} to thirty enemies.",
+            "Conclude {SCENARIO RM1}.",
         ]
     },
     "cs-rm-002": {
         "name": "Apex Predator",
         "progress": [
-            "Goal met"
+            "Experience twenty rounds where, during or after your perform an action with a {CONSUMED}, an enemy dies.",
+            "Conclude {SCENARIO RM3}.",
         ]
     }
 }

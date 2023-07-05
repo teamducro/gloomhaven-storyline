@@ -54,7 +54,8 @@ export default {
                 'Pirata One': 'Pirata One',
                 'sans-serif': 'Sans Serif',
                 'Arial': 'Arial',
-                'Calibri': 'Calibri'
+                'Calibri': 'Calibri',
+                'Moyenage': 'Moyenage'
             }
         }
     },

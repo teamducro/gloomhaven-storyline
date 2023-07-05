@@ -841,152 +841,155 @@ export default {
         ]
     },
     "jotl-1": {
-        "name": "Roadside Ambush"
+        "name": "Straßenraub"
     },
     "jotl-2": {
-        "name": "A Hole in the Wall",
+        "name": "Mauerloch",
         "rewards": [
-            "25 gold each",
-            "Add items 1-13 to the shop"
+            "Je 25 Gold",
+            "Gegenstandsladen öffnen (Gegenstände 01-13)"
         ]
     },
     "jotl-3": {
-        "name": "The Black Ship",
+        "name": "Das schwarze Schiff",
         "rewards": [
-            "1 ✔ each"
+            "Jeder Charakter erhält eine Verbesserung 1 ✔ "
         ]
     },
     "jotl-4": {
-        "name": "A Ritual in Stone",
+        "name": "Ritual der Steine",
         "rewards": [
-            "“Mana Potion” (Gegenstand 14)"
+            "“Manatrank” (Gegenstand 14)"
         ]
     },
     "jotl-5": {
-        "name": "A Deeper Understanding",
+        "name": "Tieferes Verständnis",
         "rewards": [
-            "25 experience each"
+            "Je 25 Erfahrung"
         ]
     },
     "jotl-6": {
-        "name": "Corrupted Research",
+        "name": "Verdorbene Forschung",
         "rewards": [
-            "1 ✔ each"
+            "Je 1 ✔"
         ]
     },
     "jotl-7": {
-        "name": "Sunken Tumor",
+        "name": "Versunkenes Geschwür",
         "rewards": [
-            "20 experience each"
+            "Je 20 Erfahrung"
         ]
     },
     "jotl-8": {
-        "name": "Hidden Tumor"
+        "name": "Verstecktes Geschwür",
+        "rewards": [
+            "Je 20 Erfahrung"
+        ]
     },
     "jotl-9": {
         "name": "Explosive Evolution",
         "rewards": [
-            "20 experience each",
-            "Add items 15-20 to the shop"
+            "Je 20 Erfahrung",
+            "Fügt dem Laden die Gegenstände 15-20 hinzu"
         ]
     },
     "jotl-10": {
-        "name": "The Gauntlet",
+        "name": "Das Wagnis",
         "rewards": [
-            "15 experience each"
+            "Je 15 Erfahrung"
         ]
     },
     "jotl-11": {
-        "name": "Defiled Sewers",
+        "name": "Geschändete Kanalisation",
         "rewards": [
-            "“Flea-Bitten Shawl” (Gegenstand 28)"
+            "“Schäbiges Schultertuch” (Gegenstand 28)"
         ]
     },
     "jotl-12": {
-        "name": "Beguiling Sewers",
+        "name": "Trügerische Kanalisation",
         "rewards": [
-            "“Flea-Bitten Shawl” (Gegenstand 28)"
+            "“Schäbiges Schultertuch” (Gegenstand 28)"
         ]
     },
     "jotl-13": {
-        "name": "Vile Harvest",
+        "name": "Abscheuliche Ernte",
         "rewards": [
-            "1 ✔ each"
+            "Je 1 ✔"
         ]
     },
     "jotl-14": {
-        "name": "Toxic Harvest",
+        "name": "Giftige Ernte",
         "rewards": [
-            "1 ✔ each"
+            "Je 1 ✔"
         ]
     },
     "jotl-15": {
-        "name": "Tainted Blood",
+        "name": "Beflecktes Blut",
         "rewards": [
-            "10 gold each",
-            "Add items 21-26 to the shop"
+            "Je 10 Gold",
+            "Fügt dem Laden die Gegenstände 21-26 hinzu"
         ]
     },
     "jotl-16": {
-        "name": "Mixed Results",
+        "name": "Testergebnisse",
         "rewards": [
-            "15 experience each",
-            "“Tower Shield” (Gegenstand 29)"
+            "Je 15 Erfahrung",
+            "“Turmschild” (Gegenstand 29)"
         ]
     },
     "jotl-17": {
-        "name": "Red Twilight",
+        "name": "Rotes Zwielicht",
         "rewards": [
-            "25 experience each",
-            "30 gold each"
+            "Je 25 Erfahrung",
+            "Je 30 Gold"
         ]
     },
     "jotl-18": {
-        "name": "The Heist",
+        "name": "Der Raubzug",
         "rewards": [
-            "10 experience each"
+            "Je 10 Erfahrung"
         ]
     },
     "jotl-19": {
-        "name": "Den of Thieves",
+        "name": "Diebesnest",
         "rewards": [
-            "“Ring of Strength” (Gegenstand 31)"
+            "“Ring der Stärke” (Gegenstand 31)"
         ]
     },
     "jotl-20": {
-        "name": "Misplaced Goods",
+        "name": "Warenverkehr",
         "rewards": [
-            "10 gold each"
+            "Je 10 Gold"
         ]
     },
     "jotl-21": {
-        "name": "Agents of Chaos",
+        "name": "Handlanger des Chaos",
         "rewards": [
-            "15 gold each"
+            "Je 15 Gold"
         ]
     },
     "jotl-22": {
-        "name": "Unfriendly Message",
+        "name": "Eindeutige Botschaft",
         "rewards": [
-            "“Steel Ring” (Gegenstand 33)"
+            "“Stahlring” (Gegenstand 33)"
         ]
     },
     "jotl-23": {
-        "name": "Best of the Best",
+        "name": "Einsame Spitze",
         "rewards": [
-            "“Barbed Axe” (Gegenstand 34)"
+            "“Zackenaxt” (Gegenstand 34)"
         ]
     },
     "jotl-24": {
-        "name": "Warding the Void",
+        "name": "Hüter der Leere",
         "rewards": [
-            "“Robes of Command” (Gegenstand 35)"
+            "“Befehlsrobe” (Gegenstand 35)"
         ]
     },
     "jotl-25": {
-        "name": "The Greatest Job in the World",
+        "name": "Der beste Beruf der Welt",
         "rewards": [
-            "“Jet Boots” (Gegenstand 36)"
+            "“Raketenstiefel” (Gegenstand 36)"
         ]
     },
     "cs-1": {

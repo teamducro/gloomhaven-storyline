@@ -196,7 +196,7 @@ export default {
             return this.scenarioRepository.whereState(ScenarioState.complete).count();
         },
         unlockCount() {
-            return parseInt(this.completedCount / 5) + 1
+            return parseInt(this.completedCount / 5)
         }
     },
     destroyed() {
