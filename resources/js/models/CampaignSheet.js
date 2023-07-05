@@ -130,6 +130,18 @@ class CampaignSheet {
         for (let i = 1; i <= 30; i++) {
             this.winterOutpost[i] = true;
         }
+        
+        for (let i = 51; i <= 119; i++) {
+            this.itemDesigns[i] = this.itemDesigns[i] || false;
+        }
+        for (let i = 168; i <= 246; i++) {
+            this.itemDesigns[i] = this.itemDesigns[i] || false;
+        }
+        for (let i = 248; i <= 264; i++) {
+            this.itemDesigns[i] = this.itemDesigns[i] || false;
+        }
+
+        this.itemDesigns = this.removeInvalid(this.itemDesigns, 264);
     }
 
     fillCharacterUnlocks() {

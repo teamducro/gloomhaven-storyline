@@ -154,6 +154,7 @@ import SheetCalculations from "../services/SheetCalculations";
 import ItemRepository from "../repositories/ItemRepository";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import BuildingRepository from "../repositories/BuildingRepository";
 import ItemAvailability from "../services/ItemAvailability";
 import {Game} from "../models/Game";
 
@@ -181,6 +182,7 @@ export default {
             storySyncer: new StorySyncer,
             itemRepository: new ItemRepository,
             scenarioRepository: new ScenarioRepository,
+            buildingRepository: new BuildingRepository,
             sheetRepository: new SheetRepository,
         }
     },
@@ -252,7 +254,7 @@ export default {
                 sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
             }
             else if (this.currentGame === 'fh') {
-                sheetItems = this.calculateItemsFh(unlockedItems, this.scenarioRepository);
+                sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
             }
             else {
                 sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
