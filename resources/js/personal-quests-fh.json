@@ -162,7 +162,15 @@
         "progress": [
             {
                 "type": "checkbox",
-                "name": "Immediately unlock {SCENARIO 65} and follow it to a conclusion.",
+                "name": "Immediately unlock {SCENARIO 65}.",
+                "scenario_unlock": 65,
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Follow {SCENARIO 65} to a conclusion.",
                 "value": [
                     0
                 ]
@@ -251,7 +259,15 @@
         "progress": [
             {
                 "type": "checkbox",
-                "name": "Immediately unlock {SCENARIO 71} and follow it to a conclusion.",
+                "name": "Immediately unlock {SCENARIO 71}.",
+                "scenario_unlock": 71,
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Follow {SCENARIO 71} to a conclusion.",
                 "value": [
                     0
                 ]

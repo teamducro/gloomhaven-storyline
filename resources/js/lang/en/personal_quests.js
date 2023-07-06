@@ -402,7 +402,8 @@ export default {
         "name": "Aesther Outpost",
         "building_unlocks": [44, 88],
         "progress": [
-            "Immediately unlock {SCENARIO 65} and follow it to a conclusion.",
+            "Immediately unlock {SCENARIO 65}.",
+            "Follow {SCENARIO 65} to a conclusion.",
         ]
     },
     "fh-8": {
@@ -439,7 +440,8 @@ export default {
         "name": "Threat from the Deep",
         "building_unlocks": [90, 42],
         "progress": [
-            "Immediately unlock {SCENARIO 71} and follow it to a conclusion.",
+            "Immediately unlock {SCENARIO 71}.",
+            "Follow {SCENARIO 71} to a conclusion.",
         ]
     },
     "fh-13": {
