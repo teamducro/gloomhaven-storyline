@@ -16,6 +16,7 @@ export default class PersonalQuestRepository {
     make(questData) {
         const quest = this.find(questData.id, questData.game);
         quest.applyProgress(questData.progress);
+        quest.unlockedBuilding = questData.unlockedBuilding;
 
         return quest;
     }
