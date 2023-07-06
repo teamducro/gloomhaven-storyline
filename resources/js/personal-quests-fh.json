@@ -365,8 +365,8 @@
         "building_unlocks": [81, 67],
         "progress": [
             {
-                "type": "checkbox",
-                "name": "Earn 16 {CHECK} from comleted battle goals.",
+                "type": "number",
+                "name": "Earn 16 {CHECK} from completed battle goals.",
                 "value": 0,
                 "target": 16
             }
@@ -380,8 +380,16 @@
             {
                 "type": "checkbox",
                 "name": "Complete eight side scenarios (numbered 65 or higher).",
-                "value": 0,
-                "target": 8
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             }
         ]
     },
@@ -392,7 +400,7 @@
         "progress": [
             {
                 "type": "checkbox",
-                "name": "Gain Abyss Axe blueprint (039) and use it to kill ten Frozen Corpses, Ice Wraiths, and/or Living Dooms.",
+                "name": "Gain “Abyss Axe” (Item 039) blueprint and use it to kill ten Frozen Corpses, Ice Wraiths, and/or Living Dooms.",
                 "value": [
                     0,
                     0,

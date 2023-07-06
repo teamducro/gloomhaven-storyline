@@ -203,7 +203,7 @@ export default {
 </script>
 
 <style lang="scss">
-.children-inline > img {
+.children-inline > img, .children-inline div, .children-inline svg {
     @apply inline;
 }
 </style>

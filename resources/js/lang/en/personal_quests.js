@@ -478,7 +478,7 @@ export default {
         "name": "Battle Legend",
         "building_unlocks": [81, 67],
         "progress": [
-            "Earn 16 {CHECK} from comleted battle goals.",
+            "Earn 16 {CHECK} from completed battle goals.",
         ]
     },
     "fh-18": {
@@ -492,7 +492,7 @@ export default {
         "name": "Quiet the Dead Places",
         "building_unlocks": [81, 67],
         "progress": [
-            "Gain Abyss Axe blueprint (039) and use it to kill ten Frozen Corpses, Ice Wraiths, and/or Living Dooms.",
+            "Gain “Abyss Axe” (Item 039) blueprint and use it to kill ten Frozen Corpses, Ice Wraiths, and/or Living Dooms.",
         ]
     },
     "fh-20": {
