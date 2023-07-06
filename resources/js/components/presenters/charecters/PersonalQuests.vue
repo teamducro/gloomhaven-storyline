@@ -151,6 +151,8 @@ export default {
             this.goalMet = false;
         },
         remove() {
+            this.quest.resetProgress();
+            this.update(this.quest);
             this.$emit('update:quest', {});
             this.$emit('change', {});
         },
