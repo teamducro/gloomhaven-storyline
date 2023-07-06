@@ -10,6 +10,7 @@ import questsFhJson from '../quests-fh.json'
 import questsCsJson from '../quests-cs.json'
 import personalQuestsJson from '../personal-quests.json'
 import personalQuestsCsJson from '../personal-quests-cs.json'
+import personalQuestsFhJson from '../personal-quests-fh.json'
 import itemsJson from '../items.json'
 import itemsJotlJson from '../items-jotl.json'
 import itemsCsJson from '../items-cs.json'
@@ -138,6 +139,8 @@ export default class GameData {
                 return []
             case Game.cs:
                 return personalQuestsCsJson
+            case Game.fh:
+                return personalQuestsFhJson
             default:
                 return personalQuestsJson
         }
