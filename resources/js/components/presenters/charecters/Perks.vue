@@ -3,12 +3,16 @@
         <h2 class="mb-2">{{ $t('Perks') }}</h2>
         <div class="mb-4">
             <div class="flex" v-for="(perkDescription, perkIndex) in character.perkDescriptions">
-                <checkbox v-for="(perk, index) in perks[perkIndex]"
+                <div v-for="(perk, index) in perks[perkIndex]"
                           v-if="index < perkDescription.count"
-                          :key="'perk-'+perkIndex+'-'+index" group="perks"
-                          :id="'perk-'+perkIndex+'-'+index"
+                          :key="'perk-'+perkIndex+'-'+index"
+                          class="checkbox-groups">
+                    <checkbox v-for="i in perkDescription.size"
+                          :key="i" group="perks"
+                          :id="'perk-'+perkIndex+'-'+index+'-'+i"
                           :checked="perks[perkIndex][index]"
                           @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
+                </div>
                 <p class="ml-2 mt-1 mb-1">
                     <add-links-and-icons :text="$t(perkDescription.desc)"/>
                 </p>
@@ -50,7 +54,7 @@ export default {
     },
     computed: {
         perkCount() {
-            return collect(this.perks).flatten().filter().count();
+            return Object.entries(this.perks).reduce((sum, [i, perk]) => sum + this.character.perkDescriptions[i].size * perk.filter(Boolean).length, 0);
         },
         minimalPerks() {
             return (this.character.retirements || 0)
@@ -74,3 +78,20 @@ export default {
     }
 }
 </script>
+
+<style scoped lang="scss">
+.checkbox-groups {
+    display: flex;
+    padding: 12px;
+}
+.checkbox-groups .mdc-checkbox {
+    margin: -12px;
+}
+.checkbox-groups .mdc-checkbox:not(:first-child) ::v-deep .mdc-checkbox__background {
+    border-left-color: transparent;
+}
+.checkbox-groups .mdc-checkbox:not(:last-child) ::v-deep .mdc-checkbox__background {
+    border-right-style: dotted;
+}
+
+</style>
