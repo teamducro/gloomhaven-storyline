@@ -228,9 +228,9 @@
         "into_the_breach",
         "iron_will",
         "plus0_heal1self_rolling",
-        "plus0_shield1",
+        "plus0_shield1_rolling",
         "plus1_disarm",
-        "plus1_plusally",
+        "plus1_plus1ally",
         "plus1_rolling",
         "plus2_push1",
         "tireless_leadership"
@@ -317,7 +317,7 @@
         "plus1_push3",
         "plus1_regenerate_rolling",
         "plus1_wound",
-        "pluso_pierce3_rolling",
+        "plus0_pierce3_rolling",
         "revitalizing_swarm",
         "times2_brittle",
         "unstable_equilibrium"
