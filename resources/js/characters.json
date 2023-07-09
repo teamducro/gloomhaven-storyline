@@ -6214,7 +6214,7 @@
             "name": "Drifter",
             "game": "fh",
             "translatedName": "characters.DF.name",
-            "abilityCount": 0,
+            "abilityCount": 12,
             "starting_group": [
                 "fh_unlocked"
             ],
@@ -6225,7 +6225,7 @@
             "name": "Blinkblade",
             "game": "fh",
             "translatedName": "characters.BB.name",
-            "abilityCount": 0,
+            "abilityCount": 10,
             "starting_group": [
                 "fh_unlocked"
             ],
@@ -6236,7 +6236,7 @@
             "name": "Banner Spear",
             "game": "fh",
             "translatedName": "characters.BN.name",
-            "abilityCount": 0,
+            "abilityCount": 10,
             "starting_group": [
                 "fh_unlocked"
             ],
@@ -6247,7 +6247,7 @@
             "name": "Deathwalker",
             "game": "fh",
             "translatedName": "characters.DW.name",
-            "abilityCount": 0,
+            "abilityCount": 11,
             "starting_group": [
                 "fh_unlocked"
             ],
@@ -6258,7 +6258,7 @@
             "name": "Boneshaper",
             "game": "fh",
             "translatedName": "characters.BO.name",
-            "abilityCount": 0,
+            "abilityCount": 12,
             "starting_group": [
                 "fh_unlocked"
             ],
@@ -6269,7 +6269,7 @@
             "name": "Geminate",
             "game": "fh",
             "translatedName": "characters.GE.name",
-            "abilityCount": 0,
+            "abilityCount": 14,
             "starting_group": [
                 "fh_unlocked"
             ],
@@ -6280,7 +6280,7 @@
             "name": "Infuser",
             "game": "fh",
             "translatedName": "characters.IF.name",
-            "abilityCount": 0,
+            "abilityCount": 11,
             "starting_group": [
                 "fh_locked"
             ],
@@ -6291,7 +6291,7 @@
             "name": "Pyroclast",
             "game": "fh",
             "translatedName": "characters.PY.name",
-            "abilityCount": 0,
+            "abilityCount": 10,
             "starting_group": [
                 "fh_locked"
             ],
@@ -6302,7 +6302,7 @@
             "name": "Shattersong",
             "game": "fh",
             "translatedName": "characters.SH.name",
-            "abilityCount": 0,
+            "abilityCount": 10,
             "starting_group": [
                 "fh_locked"
             ],
@@ -6313,7 +6313,7 @@
             "name": "Trapper",
             "game": "fh",
             "translatedName": "characters.TA.name",
-            "abilityCount": 0,
+            "abilityCount": 9,
             "starting_group": [
                 "fh_locked"
             ],
@@ -6324,7 +6324,7 @@
             "name": "Pain Conduit",
             "game": "fh",
             "translatedName": "characters.PC.name",
-            "abilityCount": 0,
+            "abilityCount": 10,
             "starting_group": [
                 "fh_locked"
             ],
@@ -6335,7 +6335,7 @@
             "name": "Snowdancer",
             "game": "fh",
             "translatedName": "characters.SD.name",
-            "abilityCount": 0,
+            "abilityCount": 11,
             "starting_group": [
                 "fh_locked"
             ],
@@ -6346,7 +6346,7 @@
             "name": "Frozen Fist",
             "game": "fh",
             "translatedName": "characters.FF.name",
-            "abilityCount": 0,
+            "abilityCount": 8,
             "starting_group": [
                 "fh_locked"
             ],
@@ -6357,7 +6357,7 @@
             "name": "HIVE",
             "game": "fh",
             "translatedName": "characters.HV.name",
-            "abilityCount": 0,
+            "abilityCount": 11,
             "starting_group": [
                 "fh_locked"
             ],
@@ -6368,7 +6368,7 @@
             "name": "Metal Mosaic",
             "game": "fh",
             "translatedName": "characters.ME.name",
-            "abilityCount": 0,
+            "abilityCount": 9,
             "starting_group": [
                 "fh_locked"
             ],
@@ -6379,7 +6379,7 @@
             "name": "Deepwraith",
             "game": "fh",
             "translatedName": "characters.DT.name",
-            "abilityCount": 0,
+            "abilityCount": 10,
             "starting_group": [
                 "fh_locked"
             ],
@@ -6390,7 +6390,7 @@
             "name": "Crashing Tide",
             "game": "fh",
             "translatedName": "characters.CR.name",
-            "abilityCount": 0,
+            "abilityCount": 12,
             "starting_group": [
                 "fh_locked"
             ],
