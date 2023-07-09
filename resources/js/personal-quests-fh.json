@@ -242,6 +242,7 @@
     {
         "id": 11,
         "name": "Refined Tastes",
+        "required_building_level": [21, 0],
         "building_unlocks": [39, 72],
         "progress": [
             {
@@ -255,6 +256,7 @@
     {
         "id": 12,
         "name": "Threat from the Deep",
+        "required_building_level": [24, 0],
         "building_unlocks": [90, 42],
         "progress": [
             {
@@ -277,6 +279,7 @@
     {
         "id": 13,
         "name": "End the Trickery",
+        "required_building_level": [37, 0],
         "building_unlocks": [44, 74],
         "progress": [
             {
@@ -305,6 +308,7 @@
     {
         "id": 14,
         "name": "Eternal Wanderer",
+        "required_building_level": [39, 0],
         "building_unlocks": [37, 72],
         "progress": [
             {
@@ -347,6 +351,7 @@
     {
         "id": 15,
         "name": "Continued Prosperity",
+        "required_building_level": [42, 0],
         "building_unlocks": [65, 85],
         "progress": [
             {
@@ -360,6 +365,7 @@
     {
         "id": 16,
         "name": "Prepared for the Worst",
+        "required_building_level": [44, 0],
         "building_unlocks": [85, 88],
         "progress": [
             {
@@ -378,6 +384,7 @@
     {
         "id": 17,
         "name": "Battle Legend",
+        "required_building_level": [74, 0],
         "building_unlocks": [81, 67],
         "progress": [
             {
@@ -391,6 +398,7 @@
     {
         "id": 18,
         "name": "Let Them Be",
+        "required_building_level": [81, 0],
         "building_unlocks": [44, 67],
         "progress": [
             {
@@ -412,6 +420,7 @@
     {
         "id": 19,
         "name": "Quiet the Dead Places",
+        "required_building_level": [83, 0],
         "building_unlocks": [81, 67],
         "progress": [
             {
@@ -435,6 +444,7 @@
     {
         "id": 20,
         "name": "Return to Simplicity",
+        "required_building_level": [85, 0],
         "building_unlocks": [24, 21],
         "progress": [
             {
@@ -463,6 +473,7 @@
     {
         "id": 21,
         "name": "The Study of Life",
+        "required_building_level": [88, 0],
         "building_unlocks": [39, 72],
         "progress": [
             {
@@ -484,6 +495,7 @@
     {
         "id": 22,
         "name": "The Greatest Challenge",
+        "required_building_level": [90, 0],
         "building_unlocks": [37, 83],
         "progress": [
             {
@@ -509,6 +521,7 @@
     {
         "id": 23,
         "name": "The Chosen One",
+        "required_building_level": [81, 1],
         "unlock": "Open envelope A",
         "progress": [
             {

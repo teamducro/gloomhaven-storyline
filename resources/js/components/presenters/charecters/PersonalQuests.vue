@@ -109,7 +109,6 @@ export default {
     },
     data() {
         return {
-            quests: null,
             goalMet: false,
             hidden: true,
             storySyncer: new StorySyncer,
@@ -119,12 +118,14 @@ export default {
         }
     },
     mounted() {
-        this.quests = this.personalQuestRepository.fetch(this.sheet.game).keyBy('id').items;
         if (this.quest.id) {
             this.validate();
         }
     },
     computed: {
+        quests() {
+            return this.personalQuestRepository.unlockedQuests(this.sheet.game).keyBy('id').items;
+        },
         unavailableQuests() {
             let unavailable = [];
             Object.entries(this.sheet.characters).forEach(([id, character]) => {

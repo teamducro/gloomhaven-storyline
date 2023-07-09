@@ -10,6 +10,7 @@ class PersonalQuest {
         this.character_unlock = data.character_unlock;
         this.building_unlocks = data.building_unlocks;
         this._unlock = data.unlock;
+        this.requiredBuildingLevel = data.required_building_level;
         this.progress = [...data.progress];
         this.card = new Card('Q-' + this.id, game);
         // Store already unlocked building so that subsequent validations don't unlock the alt. building
