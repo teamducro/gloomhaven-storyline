@@ -1,7 +1,7 @@
 <template>
     <ul class="flex flex-row flex-wrap -mx-2">
         <li v-for="(checked, id) in sheet.characterUnlocks" :key="id" class="flex items-center"
-            :class="'order-['+sheet.characterOrder[id]+']'">
+            :class="'order-'+sheet.characterOrder[id]">
             <checkbox group="items"
                       :id="'character-'+id"
                       :checked="checked"
@@ -16,12 +16,13 @@
 
 <script>
 import Sheet from "../../../models/Sheet";
+import CampaignSheet from "../../../models/CampaignSheet";
 import ScenarioRepository from "../../../repositories/ScenarioRepository";
 
 export default {
     props: {
         sheet: {
-            type: Sheet,
+            type: [Sheet, CampaignSheet],
             required: true
         }
     },
