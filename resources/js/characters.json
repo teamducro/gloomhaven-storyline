@@ -6264,11 +6264,11 @@
             ],
             "perks": []
         },
-        "GM": {
-            "id": "GM",
+        "GE": {
+            "id": "GE",
             "name": "Geminate",
             "game": "fh",
-            "translatedName": "characters.GM.name",
+            "translatedName": "characters.GE.name",
             "abilityCount": 0,
             "starting_group": [
                 "fh_unlocked"
@@ -6308,11 +6308,11 @@
             ],
             "perks": []
         },
-        "TR": {
-            "id": "TR",
+        "TA": {
+            "id": "TA",
             "name": "Trapper",
             "game": "fh",
-            "translatedName": "characters.TR.name",
+            "translatedName": "characters.TA.name",
             "abilityCount": 0,
             "starting_group": [
                 "fh_locked"
@@ -6363,22 +6363,22 @@
             ],
             "perks": []
         },
-        "MM": {
-            "id": "MM",
+        "ME": {
+            "id": "ME",
             "name": "Metal Mosaic",
             "game": "fh",
-            "translatedName": "characters.MM.name",
+            "translatedName": "characters.ME.name",
             "abilityCount": 0,
             "starting_group": [
                 "fh_locked"
             ],
             "perks": []
         },
-        "DP": {
-            "id": "DP",
+        "DT": {
+            "id": "DT",
             "name": "Deepwraith",
             "game": "fh",
-            "translatedName": "characters.DP.name",
+            "translatedName": "characters.DT.name",
             "abilityCount": 0,
             "starting_group": [
                 "fh_locked"

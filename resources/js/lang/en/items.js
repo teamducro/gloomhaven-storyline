@@ -2748,7 +2748,7 @@ export default {
     },
     "fh-253": {
         "name": "Mask of Duality",
-        "source": "Reward from Solo Scenario - {GM}",
+        "source": "Reward from Solo Scenario - {GE}",
         "desc": "During your ranged attack ability while in {RANGED_ICON}, gain advantage for one attack, then flip this card over.",
         "backDesc":"When an enemy performs an attack targeting you while you are in {MELEE_ICON}, the attacker gains disadvantage, then flip this card over."
     },
@@ -2769,7 +2769,7 @@ export default {
     },
     "fh-257": {
         "name": "Sly Camouflage",
-        "source": "Reward from Solo Scenario - {TR}",
+        "source": "Reward from Solo Scenario - {TA}",
         "desc": "When you create a trap, place a character token on it.  Monsters do not treat the trap as negative. Remvoe the token when you {RECOVER.fh} this item. {PERSISTENT}"
     },
     "fh-258": {
@@ -2795,13 +2795,13 @@ export default {
     },
     "fh-262": {
         "name": "Exhaust Boots",
-        "source": "Reward from Solo Scenario - {MM}",
+        "source": "Reward from Solo Scenario - {ME}",
         "desc": "During your move ability, when you have {PRESSURE_HIGH_ICON} or {PRESSURE_OVER_ICON}, add +1 {MOVE.fh}, then flip this card over at the end of your turn.",
         "backDesc":"During your turn when you have {PRESSURE_LOW_ICON}, perform: {MUDDLE.fh} {RANGE.fh} 1 then flip this card over at the end of your turn."
     },
     "fh-263": {
         "name": "Warlords Skull",
-        "source": "Reward from Solo Scenario - {DP}",
+        "source": "Reward from Solo Scenario - {DT}",
         "desc": "Whenever you gain {INVISIBLE.fh} or peform a teleport ability while you have {INVISIBLE.fh}, after the ability perform: {MUDDLE.fh} {RANGE.fh} 1"
     },
     "fh-264": {

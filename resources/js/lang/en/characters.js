@@ -598,7 +598,7 @@ export default {
         "name": "Boneshaper",
         "perks": []
     },
-    "GM": {
+    "GE": {
         "name": "Geminate",
         "perks": []
     },
@@ -614,7 +614,7 @@ export default {
         "name": "Shattersong",
         "perks": []
     },
-    "TR": {
+    "TA": {
         "name": "Trapper",
         "perks": []
     },
@@ -634,11 +634,11 @@ export default {
         "name": "HIVE",
         "perks": []
     },
-    "MM": {
+    "ME": {
         "name": "Metal Mosaic",
         "perks": []
     },
-    "DP": {
+    "DT": {
         "name": "Deepwraith",
         "perks": []
     },
