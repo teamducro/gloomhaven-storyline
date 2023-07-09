@@ -1403,6 +1403,108 @@ export default {
     "fh-137": {
         "name": "Pirate Queen's Haul"
     },
+    "fh-201": {
+        "name": "Wonder of Nature",
+        "rewards": [
+            "“Wanderer's Club” (Item 248)"
+        ]
+    },
+    "fh-202": {
+        "name": "Race Against the Clock",
+        "rewards": [
+            "“Recalibration Trigger” (Item 249)"
+        ]
+    },
+    "fh-203": {
+        "name": "Scouting Ambush",
+        "rewards": [
+            "“Spear of Justice” (Item 250)"
+        ]
+    },
+    "fh-204": {
+        "name": "The Dead of Night",
+        "rewards": [
+            "“Soul Urn” (Item 251)"
+        ]
+    },
+    "fh-205": {
+        "name": "Bones in the Dirt",
+        "rewards": [
+            "“Black Earth Codex” (Item 252)"
+        ]
+    },
+    "fh-206": {
+        "name": "Divide and Conquer",
+        "rewards": [
+            "“Mask of Duality” (Item 253)"
+        ]
+    },
+    "fh-207": {
+        "name": "Path of Ancestry",
+        "rewards": [
+            "“Ancestral Blade” (Item 254)"
+        ]
+    },
+    "fh-208": {
+        "name": "Crumbling Descent",
+        "rewards": [
+            "“Mountain's Heart” (Item 255)"
+        ]
+    },
+    "fh-209": {
+        "name": "Tuning the Resonance",
+        "rewards": [
+            "“Sonorous Shard” (Item 256)"
+        ]
+    },
+    "fh-210": {
+        "name": "A Magnificent Trap",
+        "rewards": [
+            "“Sly Camouflage” (Item 257)"
+        ]
+    },
+    "fh-211": {
+        "name": "A Collection of Suffering",
+        "rewards": [
+            "“Skull of Agony” (Item 258)"
+        ]
+    },
+    "fh-212": {
+        "name": "Fighting Snow with Snow",
+        "rewards": [
+            "“Storm Carving” (Item 259)"
+        ]
+    },
+    "fh-213": {
+        "name": "Under the Ice",
+        "rewards": [
+            "“Freezing Orb” (Item 260)"
+        ]
+    },
+    "fh-214": {
+        "name": "Recharge",
+        "rewards": [
+            "“Energized Module” (Item 261)"
+        ]
+    },
+    "fh-215": {
+        "name": "Boiler Room",
+        "rewards": [
+            "“Exhaust Boots” (Item 262)"
+        ]
+    },
+    "fh-216": {
+        "name": "Wet Work",
+        "rewards": [
+            "“Warlord's Skull” (Item 263)"
+        ]
+    },
+    "fh-217": {
+        "name": "Crash Against the Waves",
+        "rewards": [
+            "“Spiraled Medallion” (Item 264)"
+        ]
+    },
     "cs-1": {
         "name": "The Dark Lake"
     },
