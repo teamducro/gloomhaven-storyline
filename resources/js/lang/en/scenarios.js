@@ -1059,8 +1059,7 @@ export default {
     "fh-7": {
         "name": "Edge of the World",
         "rewards": [
-            "10 experience each",
-            "Gain “Coral Shard” campaign sticker"
+            "10 experience each"
         ]
     },
     "fh-8": {
@@ -1106,7 +1105,6 @@ export default {
         "name": "Jagged Shoals",
         "rewards": [
             "Choose one: Unlock {CR} class box OR unlock {DT} class box",
-            "Gain “Coral Shard” and “Shard Seeker” campaign stickers",
             "Add event WO-81 to the winter outpost deck"
         ]
     },
@@ -1198,7 +1196,6 @@ export default {
         "rewards": [
             "Gain 10 experience each",
             "Gain 1 ✔ each",
-            "Gain “Coral Shard” campaign sticker",
             "Ancient Technology"
         ]
     },
@@ -1212,7 +1209,6 @@ export default {
         "name": "War of the Spire A",
         "rewards": [
             "Gain 3 morale",
-            "Gain “Destroyer of the Icespeakers” campaign sticker",
             "Remove all {ALGOX} events from all outpost event decks",
             "Add event WO-68 to the winter outpost deck",
             "Add 46.3 to the calendar in five weeks"
@@ -1238,8 +1234,7 @@ export default {
     "fh-32": {
         "name": "Ravens' Roost",
         "rewards": [
-            "Gain “Feathered Cloak” (Item 69) blueprint",
-            "Gain “Into the Forest” campaign sticker"
+            "Gain “Feathered Cloak” (Item 69) blueprint"
         ]
     },
     "fh-33": {
@@ -1251,10 +1246,7 @@ export default {
         ]
     },
     "fh-34": {
-        "name": "Top of the Spire",
-        "rewards": [
-            "Gain “Coral Shard” campaign sticker"
-        ]
+        "name": "Top of the Spire"
     },
     "fh-35": {
         "name": "Scrap Pit",
@@ -1305,7 +1297,6 @@ export default {
         "rewards": [
             "Gain 15 gold each",
             "Gain 2 collective {AXENUT}",
-            "Gain “Coral Shard” campaign sticker",
             "Ancient Technology"
         ]
     },
@@ -1313,7 +1304,6 @@ export default {
         "name": "Sunless Trench",
         "rewards": [
             "Gain 2 ✔ each",
-            "Gain “Coral Shard” campaign sticker",
             "Add event B-16 to the boat deck",
             "Add 114.2 to the calendar in three weeks"
         ]
@@ -1391,15 +1381,13 @@ export default {
     "fh-53": {
         "name": "Underwater Throne",
         "rewards": [
-            "Gain 2 ✔ each",
-            "Gain “Coral Shard” campaign sticker"
+            "Gain 2 ✔ each"
         ]
     },
     "fh-54": {
         "name": "Among the Wreckage",
         "rewards": [
-            "Gain 2 ✔ each",
-            "Gain “Coral Shard” campaign sticker"
+            "Gain 2 ✔ each"
         ]
     },
     "fh-55": {
@@ -1408,7 +1396,6 @@ export default {
             "Gain 2 morale",
             "Gain 2 prosperity",
             "Unlock whichever class box is still locked: {FF} or {SD}",
-            "Gain “Friend of the Frostspeakers” campaign sticker",
             "Remove all {ALGOX} events from all outpost event decks",
             "Add events WO-66 and WO-67 to the winter outpost deck",
             "Add one +50 card to town guard deck"
@@ -1420,7 +1407,6 @@ export default {
             "Gain 1 morale",
             "Gain 1 inspiration",
             "Unlock {FF} class box",
-            "Gain “Friend of the Icespeakers” campaign sticker",
             "Add event SO-51 to the summer outpost deck",
             "Add one +50 card to town guard deck"
         ]
@@ -1431,7 +1417,6 @@ export default {
             "Gain 1 morale",
             "Gain 1 inspiration",
             "Unlock {SD} class box",
-            "Gain “Friend of the Snowspeakers” campaign sticker",
             "Add event WO-68 to the winter outpost deck",
             "Add one +50 card to town guard deck"
         ]
@@ -1445,7 +1430,6 @@ export default {
             "Gain 3 collective {METAL}",
             "Gain 3 collective {HIDE}",
             "Unlock {HV} class box",
-            "Gain “Unfettered Deacivated” campaign sticker",
             "Remove all {UNFETTERED} events from all outpost event decks",
             "Add events WO-64 and WO-65 to the winter outpost deck",
             "Add one +50 card to town guard deck"
@@ -1458,7 +1442,6 @@ export default {
             "Gain 2 prosperity",
             "Gain “Key Card” (Item 246)",
             "Unlock {HV} class box",
-            "Gain “Unfettered Allies” campaign sticker",
             "Remove all {UNFETTERED} events from all outpost event decks",
             "Add event SO-49 to the summer outpost deck and event WO-63 to the winter outpost deck",
             "Add one +50 card to town guard deck"
@@ -1471,7 +1454,6 @@ export default {
             "Gain 1 prosperity",
             "Gain 30 experience each",
             "Unlock whichever class box is still locked: {CR} or {DT}",
-            "Gain “Crown Reunited” campaign sticker",
             "Remove all {LURKERS} events from all outpost event decks",
             "Add event SO-48 to the summer outpost deck and event B-17 to the boat deck",
             "Add one +50 card to town guard deck"
@@ -1566,15 +1548,8 @@ export default {
     "fh-73": {
         "name": "Flotsam",
         "rewards": [
-            [
-                "Gain 3 collective {LUMBER}",
-                "Gain “Friend of the Fish King” campaign sticker",
-                "Add 146.1 to the calendar in five weeks"
-            ],
-            [
-                "Gain 3 collective {LUMBER}",
-                "Add 146.1 to the calendar in five weeks"
-            ]
+            "Gain 3 collective {LUMBER}",
+            "Add 146.1 to the calendar in five weeks"
         ]
     },
     "fh-74": {
@@ -1653,8 +1628,7 @@ export default {
     "fh-84": {
         "name": "Here There Be Oozes",
         "rewards": [
-            "Gain “Ooze Vial” (Item 234)",
-            "Gain “Brummix” campaign sticker"
+            "Gain “Ooze Vial” (Item 234)"
         ]
     },
     "fh-85": {

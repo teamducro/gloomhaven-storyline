@@ -89,13 +89,13 @@
                 <ul v-if="achievements" id="campaign-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="campaign-list">
                     <li v-for="achievement in achievements.items"
-                        v-if="achievement.isCampaign() && achievement.awarded"
+                        v-if="achievement.isCampaign() && achievement.awarded && !achievement.hidden"
                         :key="achievement.id"
                         class="mdc-list-item h-auto cursor-pointer"
                         :tabindex="achievement.id">
                         <template>
                     <span class="mdc-list-item__text opacity-75">
-                        {{ $t(achievement.name) }}
+                        {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
                     </span>
                         </template>
                     </li>
@@ -193,7 +193,7 @@ export default {
                 this.campaignList = MDCList.attachTo(this.$refs['campaign-list']);
                 this.campaignList.listen('MDCList:action', (event) => {
                     const id = this.achievements.filter((a) => {
-                        return a.isCampaign() && a.awarded;
+                        return a.isCampaign() && a.awarded && !a.hidden;
                     }).get(event.detail.index).id;
                     this.open(this.achievementRepository.find(id));
                 });

@@ -3,120 +3,135 @@
         "id": "CFIS",
         "name": "Friend of the Icespeakers",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CFSS",
         "name": "Friend of the Snowspeakers",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CFFS",
         "name": "Friend of the Frostspeakers",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CDIS",
         "name": "Destroyer of the Icespeakers",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CDSS",
         "name": "Destroyer of the Snowspeakers",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CFFK",
         "name": "Friend of the Fish King",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CCU",
         "name": "Crown United",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CUA",
         "name": "Unfettered Allies",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CUD",
         "name": "Unfettered Deactivated",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CITF",
         "name": "Into the Forest",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CFP",
         "name": "Firepepper",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "is_manual": true,
+        "cards": [
+            "SR-13"
+        ]
     },
     {
         "id": "CSS",
         "name": "Shard Seeker",
         "type": "Campaign",
-        "game": "fh",
-        "is_manual": true
+        "game": "fh"
     },
     {
         "id": "CEJ",
         "name": "Empty Jar",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "is_manual": true,
+        "cards": [
+            "SR-34"
+        ],
+        "group": "JAR"
     },
     {
         "id": "CBJ",
         "name": "Bug in a Jar",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "is_manual": true,
+        "cards": [
+            "SR-7"
+        ],
+        "group": "JAR"
     },
     {
         "id": "CUC",
         "name": "Uncharged Core",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "is_manual": true,
+        "cards": [
+            "WR-12",
+            "WR-15"
+        ],
+        "group": "CORE"
     },
     {
         "id": "CCC",
         "name": "Charged Core",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "is_manual": true,
+        "cards": [
+            "SR-18",
+            "WR-14"
+        ],
+        "group": "CORE"
     },
     {
         "id": "CHF",
         "name": "Harvest Festival",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "is_manual": true,
+        "cards": [
+            "SO-19",
+            "SO-36",
+            "WO-61"
+        ]
     },
     {
         "id": "CBT",
@@ -129,35 +144,39 @@
             "CBT4",
             "CBT5"
         ],
-        "is_manual": true
+        "is_manual": true,
+        "cards": [
+            "SO-11",
+            "WR-42"
+        ]
     },
     {
         "id": "CBT2",
         "name": "Brummix Tracks x2",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "hidden": true
     },
     {
         "id": "CBT3",
         "name": "Brummix Tracks x3",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "hidden": true
     },
     {
         "id": "CBT4",
         "name": "Brummix Tracks x4",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "hidden": true
     },
     {
         "id": "CBT5",
         "name": "Brummix Tracks x5",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "hidden": true
     },
     {
         "id": "CCCS",
@@ -170,42 +189,41 @@
             "CCCS4",
             "CCCS5",
             "CCCS6"
-        ],
-        "is_manual": true
+        ]
     },
     {
         "id": "CCCS2",
         "name": "Coral Crown Shard x2",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "hidden": true
     },
     {
         "id": "CCCS3",
         "name": "Coral Crown Shard x3",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "hidden": true
     },
     {
         "id": "CCCS4",
         "name": "Coral Crown Shard x4",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "hidden": true
     },
     {
         "id": "CCCS5",
         "name": "Coral Crown Shard x5",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "hidden": true
     },
     {
         "id": "CCCS6",
         "name": "Coral Crown Shard x6",
         "type": "Campaign",
         "game": "fh",
-        "is_manual": true
+        "hidden": true
     }
 ]

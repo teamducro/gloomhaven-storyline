@@ -370,6 +370,11 @@ export default {
         "C": "City Event",
         "Q": "Personal Quest",
         "RIFT": "Rift",
+        "SR": "Summer Road",
+        "SO": "Summer Outpost",
+        "WR": "Winter Road",
+        "WR": "Winter Outpost",
+        "B": "Boat",
     },
 
     //Ability Enhancements

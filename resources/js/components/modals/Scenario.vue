@@ -123,7 +123,7 @@
                                      v-if="!y.isEmpty()">
                                     <h2 class="text-white">
                                         {{ is_awarded ? '' : $t('Lost') }}
-                                        {{ is_global ? $t('Global') : $t('Party') }}
+                                        {{ scenario.game === 'fh' ? '' : (is_global ? $t('Global') : $t('Party')) }}
                                         {{ $tc('Achievement', y.count()) }}
                                     </h2>
                                     <div v-for="achievement in y"
@@ -332,8 +332,8 @@ export default {
                     .where('_awarded', '=', false);
 
                 return [[
-                    lost.where('type', '=', 'Party'),
-                    awarded.where('type', '=', 'Party')
+                    lost.where('type', '!=', 'Global'),
+                    awarded.where('type', '!=', 'Global')
                 ], [
                     lost.where('type', '=', 'Global'),
                     awarded.where('type', '=', 'Global')
