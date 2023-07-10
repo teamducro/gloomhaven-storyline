@@ -120,21 +120,36 @@ class CampaignSheet {
         for (let i = 1; i <= 20; i++) {
             this.summerRoad[i] = true;
         }
+        for (let i = 21; i <= 52; i++) {
+            this.summerRoad[i] = this.summerRoad[i] || false;
+        }
 
         for (let i = 1; i <= 20; i++) {
             this.summerOutpost[i] = true;
+        }
+        for (let i = 21; i <= 65; i++) {
+            this.summerOutpost[i] = this.summerOutpost[i] || false;
         }
 
         for (let i = 1; i <= 20; i++) {
             this.winterRoad[i] = true;
         }
+        for (let i = 21; i <= 49; i++) {
+            this.winterRoad[i] = this.winterRoad[i] || false;
+        }
 
         for (let i = 1; i <= 20; i++) {
             this.winterOutpost[i] = true;
         }
+        for (let i = 21; i <= 81; i++) {
+            this.winterOutpost[i] = this.winterOutpost[i] || false;
+        }
 
         for (let i = 1; i <= 13; i++) {
             this.boat[i] = true;
+        }
+        for (let i = 14; i <= 19; i++) {
+            this.boat[i] = this.boat[i] || false;
         }
         
         for (let i = 51; i <= 119; i++) {
