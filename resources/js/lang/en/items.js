@@ -2535,7 +2535,7 @@ export default {
     },
     "fh-211": {
         "name": "Boom Barrel",
-        "source": "Boat Event 11",
+        "source": "B-11",
         "desc": "During your turn, designate one adjacent hex.  At the end of your turn, all figures withing {RANGE.fh} 2 of the designated hex suffer {DAMAGE.fh} 1."
     },
     "fh-212": {

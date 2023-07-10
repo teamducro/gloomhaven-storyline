@@ -57,12 +57,12 @@
 
             <div class="lg:flex" v-if="isSummer">
                 <selectable-list
-                    id="summer-city-events"
-                    :title="$t('City Event Decks')"
-                    :label="$t('Add city events')"
+                    id="summer-outpost-events"
+                    :title="$t('Summer Outpost Event Decks')"
+                    :label="$t('Add summer outpost events')"
                     :items.sync="sheet.summerOutpost"
                     @change="store"
-                    ref="summer-city-events"
+                    ref="summer-outpost-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
                         <button @click="draw(checkedItems, 'SO')" :disabled="appData.read_only || !checkedItems.length"
@@ -74,8 +74,8 @@
                 </selectable-list>
                 <selectable-list
                     id="summer-road-events"
-                    :title="$t('Road Event Decks')"
-                    :label="$t('Add road events')"
+                    :title="$t('Summer Road Event Decks')"
+                    :label="$t('Add summer road events')"
                     :items.sync="sheet.summerRoad"
                     @change="store"
                     ref="summer-road-events"
@@ -88,16 +88,33 @@
                         </button>
                     </template>
                 </selectable-list>
+                <selectable-list
+                    v-if="boatBuilt"
+                    id="boat-events"
+                    :title="$t('Boat Event Decks')"
+                    :label="$t('Add boat events')"
+                    :items.sync="sheet.boat"
+                    @change="store"
+                    ref="boat-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'B')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
             </div>
 
             <div class="lg:flex" v-else>
                 <selectable-list
-                    id="winter-city-events"
-                    :title="$t('City Event Decks')"
-                    :label="$t('Add city events')"
+                    id="winter-outpost-events"
+                    :title="$t('Winter Outpost Event Decks')"
+                    :label="$t('Add winter outpost events')"
                     :items.sync="sheet.winterOutpost"
                     @change="store"
-                    ref="winter-city-events"
+                    ref="winter-outpost-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
                         <button @click="draw(checkedItems, 'WO')" :disabled="appData.read_only || !checkedItems.length"
@@ -109,14 +126,31 @@
                 </selectable-list>
                 <selectable-list
                     id="winter-road-events"
-                    :title="$t('Road Event Decks')"
-                    :label="$t('Add road events')"
+                    :title="$t('Winter Road Event Decks')"
+                    :label="$t('Add winter road events')"
                     :items.sync="sheet.winterRoad"
                     @change="store"
                     ref="winter-road-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
                         <button @click="draw(checkedItems, 'WR')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+                <selectable-list
+                    v-if="boatBuilt"
+                    id="boat-events"
+                    :title="$t('Boat Event Decks')"
+                    :label="$t('Add boat events')"
+                    :items.sync="sheet.boat"
+                    @change="store"
+                    ref="boat-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'B')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
@@ -146,6 +180,7 @@ import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import OverlayRepository from "../repositories/OverlayRepository";
 import ResourcesSection from "../components/presenters/party/ResourcesSection.vue";
 import MoraleSection from "../components/presenters/party/MoraleSection.vue";
 
@@ -163,7 +198,8 @@ export default {
             renderX: 0,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
-            scenarioRepository: new ScenarioRepository
+            scenarioRepository: new ScenarioRepository,
+            overlayRepository: new OverlayRepository,
         }
     },
     mounted() {
@@ -180,6 +216,9 @@ export default {
         isSummer() {
             const remainder = this.sheet.calendar.week % 20;
             return (remainder % 20 >= 0 && remainder % 20 <= 9);
+        },
+        boatBuilt() {
+            return this.overlayRepository.find('A')?.present;
         }
     },
     methods: {

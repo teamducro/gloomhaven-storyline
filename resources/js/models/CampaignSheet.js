@@ -38,6 +38,7 @@ class CampaignSheet {
         this.summerOutpost = {...data.summerOutpost};
         this.winterRoad = {...data.winterRoad};
         this.winterOutpost = {...data.winterOutpost};
+        this.boat = {...data.boat};
         this.notes = data.notes || '';
         this.unlocks = {...data.unlocks};
 
@@ -84,6 +85,7 @@ class CampaignSheet {
             summerOutpost: {'summerOutpost': {}},
             winterRoad: {'winterRoad': {}},
             winterOutpost: {'winterOutpost': {}},
+            boat: {'boat': {}},
             notes: {'notes': ''},
             unlocks: {'unlocks': {}},
 
@@ -115,20 +117,24 @@ class CampaignSheet {
             this.checks[i] = this.checks[i] || false;
         }
 
-        for (let i = 1; i <= 30; i++) {
+        for (let i = 1; i <= 20; i++) {
             this.summerRoad[i] = true;
         }
 
-        for (let i = 1; i <= 30; i++) {
+        for (let i = 1; i <= 20; i++) {
             this.summerOutpost[i] = true;
         }
 
-        for (let i = 1; i <= 30; i++) {
+        for (let i = 1; i <= 20; i++) {
             this.winterRoad[i] = true;
         }
 
-        for (let i = 1; i <= 30; i++) {
+        for (let i = 1; i <= 20; i++) {
             this.winterOutpost[i] = true;
+        }
+
+        for (let i = 1; i <= 13; i++) {
+            this.boat[i] = true;
         }
         
         for (let i = 51; i <= 119; i++) {
