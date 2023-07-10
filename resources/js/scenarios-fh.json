@@ -3841,7 +3841,7 @@
                 83
             ],
             "rewards": [
-                "20 gold apiece, “Ancient” Coin (item 245)"
+                "20 gold apiece, “Ancient Coin” (item 245)"
             ],
             "loot": {
                 "coins": 8,
@@ -3870,6 +3870,210 @@
                 "lumber": 4,
                 "metal": 4,
                 "hide": 4
+            }
+        },
+        {
+            "id": 201,
+            "name": "Wonder of Nature",
+            "game": "fh",
+            "solo": "DF",
+            "rewards": [
+                "“Wanderer's Club” (Item 248)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 202,
+            "name": "Race Against the Clock",
+            "game": "fh",
+            "solo": "BB",
+            "rewards": [
+                "“Recalibration Trigger” (Item 249)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 203,
+            "name": "Scouting Ambush",
+            "game": "fh",
+            "solo": "BN",
+            "rewards": [
+                "“Spear of Justice” (Item 250)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 204,
+            "name": "The Dead of Night",
+            "game": "fh",
+            "solo": "DW",
+            "rewards": [
+                "“Soul Urn” (Item 251)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 205,
+            "name": "Bones in the Dirt",
+            "game": "fh",
+            "solo": "BO",
+            "rewards": [
+                "“Black Earth Codex” (Item 252)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 206,
+            "name": "Divide and Conquer",
+            "game": "fh",
+            "solo": "GE",
+            "rewards": [
+                "“Mask of Duality” (Item 253)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 207,
+            "name": "Path of Ancestry",
+            "game": "fh",
+            "solo": "IF",
+            "rewards": [
+                "“Ancestral Blade” (Item 254)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 208,
+            "name": "Crumbling Descent",
+            "game": "fh",
+            "solo": "PY",
+            "rewards": [
+                "“Mountain's Heart” (Item 255)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 209,
+            "name": "Tuning the Resonance",
+            "game": "fh",
+            "solo": "SH",
+            "rewards": [
+                "“Sonorous Shard” (Item 256)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 210,
+            "name": "A Magnificent Trap",
+            "game": "fh",
+            "solo": "TA",
+            "rewards": [
+                "“Sly Camouflage” (Item 257)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 211,
+            "name": "A Collection of Suffering",
+            "game": "fh",
+            "solo": "PC",
+            "rewards": [
+                "“Skull of Agony” (Item 258)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 212,
+            "name": "Fighting Snow with Snow",
+            "game": "fh",
+            "solo": "SD",
+            "rewards": [
+                "“Storm Carving” (Item 259)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 213,
+            "name": "Under the Ice",
+            "game": "fh",
+            "solo": "FF",
+            "rewards": [
+                "“Freezing Orb” (Item 260)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 214,
+            "name": "Recharge",
+            "game": "fh",
+            "solo": "HV",
+            "rewards": [
+                "“Energized Module” (Item 261)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 215,
+            "name": "Boiler Room",
+            "game": "fh",
+            "solo": "ME",
+            "rewards": [
+                "“Exhaust Boots” (Item 262)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 216,
+            "name": "Wet Work",
+            "game": "fh",
+            "solo": "DT",
+            "rewards": [
+                "“Warlord's Skull” (Item 263)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 217,
+            "name": "Crash Against the Waves",
+            "game": "fh",
+            "solo": "CR",
+            "rewards": [
+                "“Spiraled Medallion” (Item 264)"
+            ],
+            "loot": {
+                "coins": 15
             }
         }
     ],

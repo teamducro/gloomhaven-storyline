@@ -104,6 +104,7 @@ export default {
 
                     '{RECOVER}': this.$t('Recover') + ' <webp src="/img/icons/general/recover_white.png" width="20" class="inline"/>',
                     '{REFRESH}': this.$t('Refresh') + ' <webp src="/img/icons/general/refresh_white.png" width="20" class="inline"/>',
+                    '{SPENT}': this.$t('Spent') + ' <webp src="/img/icons/general/spent_white.png" width="20" class="inline"/>',
                     '{CONSUMED}': this.$t('Consumed') + ' <webp src="/img/icons/general/consumed_white.png" width="20" class="inline"/>',
                     '{LOST}': this.$t('Lost') + ' <webp src="/img/icons/general/lost_white.png" width="20" class="inline"/>',
 
@@ -134,9 +135,15 @@ export default {
                     '{EARTH_OR_DARK}': '<webp src="/img/icons/elements/earth.png" width="20" class="inline"/>/<webp src="/img/icons/elements/dark.png" width="20" class="inline"/>',
                     '{EARTH_OR_DARK_X}': '<webp src="/img/icons/elements/earthX.png" width="20" class="inline"/>/<webp src="/img/icons/elements/darkX.png" width="20" class="inline"/>',
                     '{FIRE_OR_EARTH}': '<webp src="/img/icons/elements/fire.png" width="20" class="inline"/>/<webp src="/img/icons/elements/earth.png" width="20" class="inline"/>',
+                    '{FIRE_OR_WIND}': '<webp src="/img/icons/elements/fire.png" width="20" class="inline"/>/<webp src="/img/icons/elements/wind.png" width="20" class="inline"/>',
                     '{FIRE_OR_LIGHT_X}': '<webp src="/img/icons/elements/fireX.png" width="20" class="inline"/>/<webp src="/img/icons/elements/lightX.png" width="20" class="inline"/>',
+                    '{ICE_OR_EARTH}': '<webp src="/img/icons/elements/ice.png" width="20" class="inline"/>/<webp src="/img/icons/elements/earth.png" width="20" class="inline"/>',
+                    '{ICE_OR_EARTH_X}': '<webp src="/img/icons/elements/iceX.png" width="20" class="inline"/>/<webp src="/img/icons/elements/earthX.png" width="20" class="inline"/>',
+                    '{ICE_OR_WIND}': '<webp src="/img/icons/elements/ice.png" width="20" class="inline"/>/<webp src="/img/icons/elements/wind.png" width="20" class="inline"/>',
                     '{ICE_OR_WIND_X}': '<webp src="/img/icons/elements/iceX.png" width="20" class="inline"/>/<webp src="/img/icons/elements/windX.png" width="20" class="inline"/>',
                     '{WIND_OR_EARTH}': '<webp src="/img/icons/elements/wind.png" width="20" class="inline"/>/<webp src="/img/icons/elements/earth.png" width="20" class="inline"/>',
+                    '{WIND_OR_LIGHT}': '<webp src="/img/icons/elements/wind.png" width="20" class="inline"/>/<webp src="/img/icons/elements/light.png" width="20" class="inline"/>',
+                    '{WIND_OR_DARK}': '<webp src="/img/icons/elements/wind.png" width="20" class="inline"/>/<webp src="/img/icons/elements/dark.png" width="20" class="inline"/>',
                     '{LIGHT_OR_DARK}': '<webp src="/img/icons/elements/light.png" width="20" class="inline"/>/<webp src="/img/icons/elements/dark.png" width="20" class="inline"/>',
 
                     '{AOE.CLEAVE_0_1}': '<webp src="/img/icons/aoe/cleave_0_1.png" width="40" class="inline"/>',
@@ -178,6 +185,7 @@ export default {
                     '{WOUND_3}': this.$t('WOUND') + ' <webp src="/img/icons/status/wound-3.png" width="20" class="inline"/>',
 
                     // Class-colored Text
+                    '{BANNER}': '<span class="text-character-bn">' + this.$t('Banner') + '</span>',
                     '{COLONY}': '<span class="text-character-aa">' + this.$t('Colony') + '</span>',
                     '{CULTIVATE}': '<span class="text-character-aa">' + this.$t('Cultivate') + '</span>',
                     '{DEATHSHROUD_SPIDER}': '<span class="text-character-aa">' + this.$t('Deathshroud') + '</span>',
@@ -188,6 +196,7 @@ export default {
                     '{AUGMENT}': '<span class="text-character-mt">' + this.$t('Augment') + '</span>',
                     '{COMMAND}': '<span class="text-character-bt">' + this.$t('Command') + '</span>',
                     '{DOOM}': '<span class="text-character-ds">' + this.$t('Doom') + '</span>',
+                    '{FAST}': '<span class="text-character-bb">' + this.$t('Fast') + '</span>',
                     '{GLOW}': '<span class="text-character-lu">' + this.$t('Glow') + '</span>',
                     '{LADDER}': '<span class="text-character-fk">' + this.$t('Ladder') + '</span>',
                     '{MOUNT}': '<span class="text-character-ct">' + this.$t('Mount') + '</span>',
@@ -200,12 +209,14 @@ export default {
                     '{SCRAP}': '<span class="text-character-qa">' + this.$t('Scrap') + '</span>',
                     '{SHACKLE}': '<span class="text-character-cg">' + this.$t('Shackle') + '</span>',
                     '{SHACKLED}': '<span class="text-character-cg">' + this.$t('Shackled') + '</span>',
+                    '{SLOW}': '<span class="text-character-bb">' + this.$t('Slow') + '</span>',
                     '{SONG}': '<span class="text-character-ss">' + this.$t('Song') + '</span>',
                     '{SPIRIT}': '<span class="text-character-sp">' + this.$t('Spirit') + '</span>',
                     '{SPIRITS}': '<span class="text-character-sp">' + this.$t('Spirits') + '</span>',
                     '{TIMED}': '<span class="text-character-qa">' + this.$t('Timed') + '</span>',
                     '{VOID}': '<span class="text-character-ho">' + this.$t('Void') + '</span>',
                     '{VOIDSIGHT}': '<span class="text-character-ho">' + this.$t('Voidsight') + '</span>',
+                    '{WAVE}': '<span class="text-character-sh">' + this.$t('Wave') + '</span>',
 
                     // Class Ability Icons
                     '{COLONY_ICON}': '<webp src="/img/icons/status/colony.png" width="20" class="inline"/>',
@@ -223,6 +234,9 @@ export default {
                     '{PRESSURE_OVER_ICON}': '<webp src="/img/icons/status/pressure_over.png" width="20" class="inline" alt="' + this.$t('Over pressure') + '"/>',
                     '{PRESSURE_HIGH_ICON}': '<webp src="/img/icons/status/pressure_high.png" width="20" class="inline" alt="' + this.$t('High pressure') + '"/>',
                     '{PRESSURE_LOW_ICON}': '<webp src="/img/icons/status/pressure_low.png" width="20" class="inline" alt="' + this.$t('Low pressure') + '"/>',
+                    '{PRESSURE_UP_ICON}': '<webp src="/img/icons/status/pressure_up.png" width="20" class="inline" alt="' + this.$t('Low pressure') + '"/>',
+                    '{PRESSURE_DOWN_ICON}': '<webp src="/img/icons/status/pressure_down.png" width="20" class="inline" alt="' + this.$t('Low pressure') + '"/>',
+                    '{TROPHY_ICON}': '<webp src="/img/icons/status/trophy.png" width="20" class="inline" alt="' + this.$t('Tide') + '"/>',
                     '{TIDE_ICON}': '<webp src="/img/icons/status/tide.png" width="20" class="inline" alt="' + this.$t('Tide') + '"/>',
 
                     // Damage Modifiers
@@ -291,7 +305,10 @@ export default {
                     '{TARGET.fh}': '<webp src="/img/icons/general/target.png" width="20" class="inline" alt="' + this.$t('TARGET') + '"/>',
                     
                     '{RECOVER.fh}': '<webp src="/img/icons/general/recover_white.png" width="20" class="inline" alt="' + this.$t('RECOVER') + '"/>',
+                    '{REFRESH.fh}': '<webp src="/img/icons/general/refresh_white.png" width="20" class="inline" alt="' + this.$t('REFRESH') + '"/>',
+                    '{SPENT.fh}': '<webp src="/img/icons/general/spent_white.png" width="20" class="inline" alt="' + this.$t('SPENT') + '"/>',
                     '{CONSUMED.fh}': '<webp src="/img/icons/general/consumed_white.png" width="20" class="inline" alt="' + this.$t('CONSUMED') + '"/>',
+                    '{LOST.fh}': '<webp src="/img/icons/general/lost_white.png" width="20" class="inline" alt="' + this.$t('LOST') + '"/>',
 
                     // Frosthaven (icons only) conditions
                     '{BANE.fh}': '<webp src="/img/icons/status/bane_fh.png" width="20" class="inline" alt="' + this.$t('BANE') + '"/>',

@@ -19,6 +19,7 @@ import abilitiesJson from '../abilities.json'
 import abilitiesFcJson from '../abilities-fc.json'
 import abilitiesJotlJson from '../abilities-jotl.json'
 import abilitiesCsJson from '../abilities-cs.json'
+import abilitiesFhJson from '../abilities-fh.json'
 import charactersJson from '../characters.json'
 import attackModifierDecksJson from '../attack-modifier-decks.json'
 import {Game} from "../models/Game";
@@ -128,6 +129,8 @@ export default class GameData {
                 return abilitiesFcJson
             case Game.cs:
                 return abilitiesCsJson
+            case Game.fh:
+                return abilitiesFhJson
             default:
                 return abilitiesJson
         }
