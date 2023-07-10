@@ -5554,8 +5554,8 @@
                 {
                     "level": 1,
                     "operations": "Collectively sell up to 1 {METAL} for 5 gold",
-                    "downtime": "Lose 2 collective {METAL}",
-                    "wrecked": "",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {METAL}",
                     "passive": "",
                     "rewards": "+1 prosperity",
                     "upgrade_cost": [3, 2, 6, 2, 10, 0],

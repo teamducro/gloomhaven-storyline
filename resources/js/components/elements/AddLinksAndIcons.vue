@@ -285,6 +285,7 @@ export default {
                     '{DOWNTIME}': '<inline-svg src="icons/downtime"/>',
                     '{OPERATIONS}': '<inline-svg src="icons/operations"/>',
                     '{REPAIR}': '<inline-svg src="icons/repair"/>',
+                    '{BUILD}': '<inline-svg src="icons/build"/>',
                     '{UPGRADE}': '<inline-svg src="icons/upgrade"/>',
                     '{WRECKED}': '<inline-svg src="icons/wrecked"/>',
                     '{BOAT}': '<inline-svg src="icons/boat"/>',

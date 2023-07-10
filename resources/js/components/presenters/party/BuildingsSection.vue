@@ -48,9 +48,10 @@
             </template>
         </autocomplete>
         <div>
-            <div v-for="building in activeBuildings" :key="building.key()" class="bg-dark-background grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
-                <div class="outline-gray row-span-2 sm:col-span-2 lg:col-span-1 flex items-center p-3">
-                    {{ building.id }} {{ $t(building.name) }} {{ $t('Lvl.') }} {{ building.level }}
+            <div v-for="building in activeBuildings" :key="building.key()" class="bg-dark-gray2-60 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
+                <div class="outline-gray row-span-2 sm:col-span-2 lg:col-span-1 flex flex-col items-center justify-center p-3">
+                    <img v-if="building.image()" :src="building.image()" class="h-12" :alt="building.name + ' ' + $t('Lvl.') + ' ' + building.level">
+                    <span>{{ building.id }} {{ $t(building.name) }} {{ $t('Lvl.') }} {{ building.level }}</span>
                 </div>
                 <template v-if="!building.isWrecked()">
                     <div class="outline-gray flex flex-col items-center p-2 md:row-start-3 lg:row-start-auto" :class="{ 'row-span-2': !$t(building.passive) }">
@@ -128,12 +129,12 @@
             </div>
             <h3 v-if="availableBuildings.count()" class="mb-2">{{ $t('Available') }}</h3>
             <div v-for="building in availableBuildings" :key="building.key()" class="grid xs:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
-                <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-background">
+                <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-gray2-60">
                     {{ building.id }} {{ $t(building.name) }} {{ $t('Lvl.') }} 0
                 </div>
-                <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-background">
+                <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-gray2-60">
                     <button @click="upgrade(building)" class="mdc-button mdc-button--raised h-auto p-1">
-                        <add-links-and-icons text="{UPGRADE}"/>
+                        <add-links-and-icons text="{BUILD}"/>
                         <div class="bg-dark-background inline-grid grid-cols-5 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
                             <add-links-and-icons text="{LUMBER}" class="outline-gray p-1"/>
@@ -150,12 +151,12 @@
             <h3 v-if="overlays.some(overlay => !overlay.present && overlay._name === 'Wall')" class="mb-2">{{ $t('Walls') }}</h3>
             <div v-for="overlay in overlays.filter(overlay => !overlay.present && overlay._name === 'Wall')"
                     :key="overlay.key()" class="grid xs:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
-                <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-background">
+                <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-gray2-60">
                     {{ $t(overlay.name) }} {{ overlay.id }}
                 </div>
-                <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-background">
+                <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-gray2-60">
                     <button @click="toggleOverlay(overlay.id)" class="mdc-button mdc-button--raised h-auto p-1">
-                        <add-links-and-icons text="{UPGRADE}"/>
+                        <add-links-and-icons text="{BUILD}"/>
                         <div class="bg-dark-background inline-grid grid-cols-5 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
                             <add-links-and-icons text="{LUMBER}" class="outline-gray p-1"/>
