@@ -30,6 +30,20 @@
                 </div>
             </template>
         </div>
+        <h2 v-if="masteries" class="mt-4 mb-2">{{ $t('Masteries') }}</h2>
+        <div v-if="masteries" class="mb-4">
+            <div v-for="(masteryDescription, masteryIndex) in character.masteryDescriptions"
+                :key="'mastery-'+masteryIndex"
+                class="flex items-center">
+                <checkbox group="masteries"
+                        :id="'mastery-'+masteryIndex"
+                        :checked="masteries[masteryIndex]"
+                        @change="(id, isChecked) => {changedMasteries(masteryIndex, isChecked)}"></checkbox>
+                <p class="ml-2 mt-1 mb-1">
+                    <add-links-and-icons :text="$t(masteryDescription)"/>
+                </p>
+            </div>
+        </div>
 
         <p v-if="perkCount < minimalPerks">
             {{ $t('You may select an additional perk!') }}
@@ -44,7 +58,8 @@ export default {
     props: {
         character: Character,
         perks: Object,
-        checks: Object
+        checks: Object,
+        masteries: Object
     },
     data() {
         return {}
@@ -59,6 +74,7 @@ export default {
         minimalPerks() {
             return (this.character.retirements || 0)
                 + (this.character.level - 1)
+                + collect(this.masteries).filter().count()
                 + Math.floor(collect(this.checks).filter().count() / 3);
         }
     },
@@ -73,6 +89,12 @@ export default {
             let perks = {...this.perks};
             perks[perkIndex][index] = isChecked;
             this.$emit('update:perks', perks);
+            this.$emit('change');
+        },
+        changedMasteries(masteryIndex, isChecked) {
+            let masteries = {...this.masteries};
+            masteries[masteryIndex] = isChecked;
+            this.$emit('update:masteries', masteries);
             this.$emit('change');
         }
     }

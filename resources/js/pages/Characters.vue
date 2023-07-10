@@ -129,6 +129,7 @@
                         <div class="w-full sheet-break-lg:w-1/2">
                             <perks :checks.sync="character.checks"
                                    :perks.sync="character.perks"
+                                   :masteries.sync="character.masteries"
                                    :character="character"
                                    @change="store"/>
 

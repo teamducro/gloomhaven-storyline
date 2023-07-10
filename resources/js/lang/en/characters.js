@@ -580,6 +580,10 @@ export default {
     },
     "DF": {
         "name": "Drifter",
+        "masteries": [
+            "End a scenario with your character tokens on the last slots of four persistent abilities",
+            "Never perform a move ability or attack with a value less than 4, and perform at least one move or attack ability each round"
+        ],
         "perks": [
             "Replace one {-1_WHITE} card with one {+1_WHITE} card",
             "Replace one {-2_WHITE} card with one {+0_WHITE} card",
@@ -598,6 +602,10 @@ export default {
     },
     "BB": {
         "name": "Blinkblade",
+        "masteries": [
+            "Declare {FAST} for seven consecutive rounds",
+            "Never be targeted by an attack"
+        ],
         "perks": [
             "Remove one {-2_WHITE} card",
             "Replace one {-1_WHITE} card with one {+1_WHITE} card",
@@ -614,6 +622,10 @@ export default {
     },
     "BN": {
         "name": "Banner Spear",
+        "masteries": [
+            "Attack at least three enemies with each of three different area of effect attack abilities",
+            "Perform a {BANNER} summon ability on your first turn, keep the banner alive and within {RANGE.fh}3 of you for the entire scenario"
+        ],
         "perks": [
             "Replace one {-1_WHITE} card with one “{SHIELD.fh}1” {AGAIN} card",
             "Replace one {+0_WHITE} card with one {+1_WHITE} “Add +1{ATTACK.fh} for each ally adjacent to the target” card",
@@ -629,6 +641,10 @@ export default {
     },
     "DW": {
         "name": "Deathwalker",
+        "masteries": [
+            "Remove seven {SHADOW_ICON} in one round",
+            "Place or remove at least one {SHADOW_ICON} each round"
+        ],
         "perks": [
             "Remove two {-1_WHITE} cards",
             "Replace one {-2_WHITE} card with one {+0_WHITE} card",
@@ -645,6 +661,10 @@ export default {
     },
     "BO": {
         "name": "Boneshaper",
+        "masteries": [
+            "Kill at least fifteen of your summons",
+            "Play a summon action on your first turn, have the summon kill at least six enemies, and keep it alive for the entire scenario"
+        ],
         "perks": [
             "Replace one {-1_WHITE} card with one {+0_WHITE} {CURSE.fh} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON.fh} card",
@@ -660,6 +680,10 @@ export default {
     },
     "GE": {
         "name": "Geminate",
+        "masteries": [
+            "Switch forms each round",
+            "Lose at least one ability card each round"
+        ],
         "perks": [
             "Replace one {-2_WHITE} card with one {+0_WHITE} card",
             "Replace one {-1_WHITE} with one {+0_WHITE} “{ANY_X}: {ANY}” card",
@@ -677,6 +701,10 @@ export default {
     },
     "IF": {
         "name": "Infuser",
+        "masteries": [
+            "Have five active {INFUSION_ICON} bonuses",
+            "Kill at least four enemies, but never attack"
+        ],
         "perks": [
             "Replace one {-2_WHITE} card with one {-1_WHITE} card and one {-1_WHITE} {WIND} {EARTH} {DARK} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} {WIND_OR_EARTH} card",
@@ -693,6 +721,10 @@ export default {
     },
     "PY": {
         "name": "Pyroclast",
+        "masteries": [
+            "Create or destroy at least one obstacle or hazardous terrain tile each round",
+            "Move enemies through six diffrerent hexes of hazardous terrain you created in one turn"
+        ],
         "perks": [
             "Remove two {-1_WHITE} cards",
             "Remove one {-2_WHITE} card",
@@ -710,6 +742,10 @@ export default {
     },
     "SH": {
         "name": "Shattersong",
+        "masteries": [
+            "Always have 0 {RESONANCE_ICON} directly before you gain {RESONANCE_ICON} at the end of each of your turns",
+            "Spend 5 {RESONANCE_ICON} on each of five different {WAVE} abilities"
+        ],
         "perks": [
             "Remove four {+0_WHITE} cards",
             "Replace two {-1_WHITE} cards with two {+0_WHITE} “Reveal the top card of the target's monster ability deck” cards",
@@ -726,6 +762,10 @@ export default {
     },
     "TA": {
         "name": "Trapper",
+        "masteries": [
+            "Have one {HEAL.fh} trap on the map with a value of at least 20",
+            "Move enemies through seven or more traps with one ability"
+        ],
         "perks": [
             "Remove one {-2_WHITE} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} “Create one {HEAL.fh}2 trap in an empty hex adjacent to the target” card",
@@ -741,6 +781,10 @@ export default {
     },
     "PC": {
         "name": "Pain Conduit",
+        "masteries": [
+            "Cause other figures to suffer a total of at least {DAMAGE.fh}40 in one round",
+            "Start a turn with {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} and {MUDDLE.fh}"
+        ],
         "perks": [
             "Remove two {-1_WHITE} cards",
             "Replace one {-2_WHITE} card with one {+2_WHITE} {CURSE.fh} {CURSE.fh} card",
@@ -758,6 +802,10 @@ export default {
     },
     "SD": {
         "name": "Snowdancer",
+        "masteries": [
+            "Cause at least one ally or enemy to move each round",
+            "Ensure the first ally to suffer {DAMAGE.fh} each round, directly before suffering the {DAMAGE.fh}, has at least one condition you applied"
+        ],
         "perks": [
             "Replace one {-1_WHITE} card with one {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} {IMMOBILIZE.fh} card",
@@ -772,6 +820,10 @@ export default {
     },
     "FF": {
         "name": "Frozen Fist",
+        "masteries": [
+            "{RECOVER.fh} at least one card from your discard pile each round",
+            "Enter at least ten different hexes with one move ability, then cause one enemy to suffer at least {DAMAGE.fh}10 with one attack ability in the same turn"
+        ],
         "perks": [
             "Replace one {-1_WHITE} card with one {+0_WHITE} {DISARM.fh} card",
             "Replace one {-1_WHITE} card with one {+1_WHITE} card",
@@ -788,6 +840,10 @@ export default {
     },
     "HV": {
         "name": "HIVE",
+        "masteries": [
+            "{TRANSFER_ICON} each round",
+            "{TRANSFER_ICON} into four different summons in one round"
+        ],
         "perks": [
             "Remove one {-2_WHITE} card and one {+1_WHITE} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} “After this attack ability, grant one of your summons: {MOVE.fh}2” card",
@@ -803,6 +859,10 @@ export default {
     },
     "ME": {
         "name": "Metal Mosaic",
+        "masteries": [
+            "Never attack",
+            "For four consecutive rounds, move the pressure gague up or down three levels from where it started the round ({PRESSURE_LOW_ICON} to {PRESSURE_HIGH_ICON}, or vice versa)"
+        ],
         "perks": [
             "Replace one {-1_WHITE} card with one {+0_WHITE} “{PRESSURE_UP_ICON} or {PRESSURE_DOWN_ICON}” card",
             "Replace one {-1_WHITE} card with one “{SHIELD.fh}1” {AGAIN} card",
@@ -818,6 +878,10 @@ export default {
     },
     "DT": {
         "name": "Deepwraith",
+        "masteries": [
+            "Perform all your attacks with advantage",
+            "Infuse {DARK} each round"
+        ],
         "perks": [
             "Remove two {-1_WHITE} cards",
             "Replace one {-1_WHITE} card with one {+0_WHITE} {DISARM.fh} card",
@@ -835,6 +899,10 @@ export default {
     },
     "CR": {
         "name": "Crashing Tide",
+        "masteries": [
+            "Never suffer damage from attacks, and be targeted by at least five attacks",
+            "At the start of each of your rests, have more active {TIDE_ICON} than cards in your discard pile"
+        ],
         "perks": [
             "Replace one {-1_WHITE} card with two {PIERCE.fh}3 {AGAIN} cards",
             "Replace one {-1_WHITE} card with one {+0_WHITE} “+1{TARGET.fh}” card",

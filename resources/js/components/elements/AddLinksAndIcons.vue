@@ -185,6 +185,7 @@ export default {
                     '{WOUND_3}': this.$t('WOUND') + ' <webp src="/img/icons/status/wound-3.png" width="20" class="inline"/>',
 
                     // Class-colored Text
+                    '{BANNER}': '<span class="text-character-bn">' + this.$t('Banner') + '</span>',
                     '{COLONY}': '<span class="text-character-aa">' + this.$t('Colony') + '</span>',
                     '{CULTIVATE}': '<span class="text-character-aa">' + this.$t('Cultivate') + '</span>',
                     '{DEATHSHROUD_SPIDER}': '<span class="text-character-aa">' + this.$t('Deathshroud') + '</span>',
@@ -195,6 +196,7 @@ export default {
                     '{AUGMENT}': '<span class="text-character-mt">' + this.$t('Augment') + '</span>',
                     '{COMMAND}': '<span class="text-character-bt">' + this.$t('Command') + '</span>',
                     '{DOOM}': '<span class="text-character-ds">' + this.$t('Doom') + '</span>',
+                    '{FAST}': '<span class="text-character-bb">' + this.$t('Fast') + '</span>',
                     '{GLOW}': '<span class="text-character-lu">' + this.$t('Glow') + '</span>',
                     '{LADDER}': '<span class="text-character-fk">' + this.$t('Ladder') + '</span>',
                     '{MOUNT}': '<span class="text-character-ct">' + this.$t('Mount') + '</span>',
@@ -207,12 +209,14 @@ export default {
                     '{SCRAP}': '<span class="text-character-qa">' + this.$t('Scrap') + '</span>',
                     '{SHACKLE}': '<span class="text-character-cg">' + this.$t('Shackle') + '</span>',
                     '{SHACKLED}': '<span class="text-character-cg">' + this.$t('Shackled') + '</span>',
+                    '{SLOW}': '<span class="text-character-bb">' + this.$t('Slow') + '</span>',
                     '{SONG}': '<span class="text-character-ss">' + this.$t('Song') + '</span>',
                     '{SPIRIT}': '<span class="text-character-sp">' + this.$t('Spirit') + '</span>',
                     '{SPIRITS}': '<span class="text-character-sp">' + this.$t('Spirits') + '</span>',
                     '{TIMED}': '<span class="text-character-qa">' + this.$t('Timed') + '</span>',
                     '{VOID}': '<span class="text-character-ho">' + this.$t('Void') + '</span>',
                     '{VOIDSIGHT}': '<span class="text-character-ho">' + this.$t('Voidsight') + '</span>',
+                    '{WAVE}': '<span class="text-character-sh">' + this.$t('Wave') + '</span>',
 
                     // Class Ability Icons
                     '{COLONY_ICON}': '<webp src="/img/icons/status/colony.png" width="20" class="inline"/>',

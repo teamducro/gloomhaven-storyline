@@ -6218,6 +6218,10 @@
             "starting_group": [
                 "fh_unlocked"
             ],
+            "masteries": [
+                "End a scenario with your character tokens on the last slots of four persistent abilities",
+                "Never perform a move ability or attack with a value less than 4, and perform at least one move or attack ability each round"
+            ],
             "perks": [
                 {
                     "type": "replace",
@@ -6431,6 +6435,10 @@
             "starting_group": [
                 "fh_unlocked"
             ],
+            "masteries": [
+                "Declare {FAST} for seven consecutive rounds",
+                "Never be targeted by an attack"
+            ],
             "perks": [
                 {
                     "type": "remove",
@@ -6616,6 +6624,10 @@
             "starting_group": [
                 "fh_unlocked"
             ],
+            "masteries": [
+                "Attack at least three enemies with each of three different area of effect attack abilities",
+                "Perform a {BANNER} summon ability on your first turn, keep the banner alive and within {RANGE.fh}3 of you for the entire scenario"
+            ],
             "perks": [
                 {
                     "type": "replace",
@@ -6770,6 +6782,10 @@
             "abilityCount": 11,
             "starting_group": [
                 "fh_unlocked"
+            ],
+            "masteries": [
+                "Remove seven {SHADOW_ICON} in one round",
+                "Place or remove at least one {SHADOW_ICON} each round"
             ],
             "perks": [
                 {
@@ -6943,6 +6959,10 @@
             "starting_group": [
                 "fh_unlocked"
             ],
+            "masteries": [
+                "Kill at least fifteen of your summons",
+                "Play a summon action on your first turn, have the summon kill at least six enemies, and keep it alive for the entire scenario"
+            ],
             "perks": [
                 {
                     "type": "replace",
@@ -7109,6 +7129,10 @@
             "abilityCount": 14,
             "starting_group": [
                 "fh_unlocked"
+            ],
+            "masteries": [
+                "Switch forms each round",
+                "Lose at least one ability card each round"
             ],
             "perks": [
                 {
@@ -7301,6 +7325,10 @@
             "starting_group": [
                 "fh_locked"
             ],
+            "masteries": [
+                "Have five active {INFUSION_ICON} bonuses",
+                "Kill at least four enemies, but never attack"
+            ],
             "perks": [
                 {
                     "type": "replace",
@@ -7484,6 +7512,10 @@
             "abilityCount": 10,
             "starting_group": [
                 "fh_locked"
+            ],
+            "masteries": [
+                "Create or destroy at least one obstacle or hazardous terrain tile each round",
+                "Move enemies through six diffrerent hexes of hazardous terrain you created in one turn"
             ],
             "perks": [
                 {
@@ -7670,6 +7702,10 @@
             "starting_group": [
                 "fh_locked"
             ],
+            "masteries": [
+                "Always have 0 {RESONANCE_ICON} directly before you gain {RESONANCE_ICON} at the end of each of your turns",
+                "Spend 5 {RESONANCE_ICON} on each of five different {WAVE} abilities"
+            ],
             "perks": [
                 {
                     "type": "remove",
@@ -7842,6 +7878,10 @@
             "starting_group": [
                 "fh_locked"
             ],
+            "masteries": [
+                "Have one {HEAL.fh} trap on the map with a value of at least 20",
+                "Move enemies through seven or more traps with one ability"
+            ],
             "perks": [
                 {
                     "type": "remove",
@@ -8000,6 +8040,10 @@
             "abilityCount": 10,
             "starting_group": [
                 "fh_locked"
+            ],
+            "masteries": [
+                "Cause other figures to suffer a total of at least {DAMAGE.fh}40 in one round",
+                "Start a turn with {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} and {MUDDLE.fh}"
             ],
             "perks": [
                 {
@@ -8200,6 +8244,10 @@
             "starting_group": [
                 "fh_locked"
             ],
+            "masteries": [
+                "Cause at least one ally or enemy to move each round",
+                "Ensure the first ally to suffer {DAMAGE.fh} each round, directly before suffering the {DAMAGE.fh}, has at least one condition you applied"
+            ],
             "perks": [
                 {
                     "type": "replace",
@@ -8352,6 +8400,10 @@
             "abilityCount": 8,
             "starting_group": [
                 "fh_locked"
+            ],
+            "masteries": [
+                "{RECOVER.fh} at least one card from your discard pile each round",
+                "Enter at least ten different hexes with one move ability, then cause one enemy to suffer at least {DAMAGE.fh}10 with one attack ability in the same turn"
             ],
             "perks": [
                 {
@@ -8545,6 +8597,10 @@
             "starting_group": [
                 "fh_locked"
             ],
+            "masteries": [
+                "{TRANSFER_ICON} each round",
+                "{TRANSFER_ICON} into four different summons in one round"
+            ],
             "perks": [
                 {
                     "type": "remove",
@@ -8704,6 +8760,10 @@
             "abilityCount": 9,
             "starting_group": [
                 "fh_locked"
+            ],
+            "masteries": [
+                "Never attack",
+                "For four consecutive rounds, move the pressure gague up or down three levels from where it started the round ({PRESSURE_LOW_ICON} to {PRESSURE_HIGH_ICON}, or vice versa)"
             ],
             "perks": [
                 {
@@ -8876,6 +8936,10 @@
             "abilityCount": 10,
             "starting_group": [
                 "fh_locked"
+            ],
+            "masteries": [
+                "Perform all your attacks with advantage",
+                "Infuse {DARK} each round"
             ],
             "perks": [
                 {
@@ -9081,6 +9145,10 @@
             "abilityCount": 12,
             "starting_group": [
                 "fh_locked"
+            ],
+            "masteries": [
+                "Never suffer damage from attacks, and be targeted by at least five attacks",
+                "At the start of each of your rests, have more active {TIDE_ICON} than cards in your discard pile"
             ],
             "perks": [
                 {
