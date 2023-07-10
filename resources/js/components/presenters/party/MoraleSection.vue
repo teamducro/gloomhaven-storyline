@@ -13,7 +13,8 @@
         </div>
         <div>
             <h2 class="mb-2">{{ $t('Defense') }}</h2>
-            <span v-if="sheet.morale > 0" class="font-title text-lg">{{ defense >= 0 ? '+'+defense : defense }}</span>
+            <p v-if="sheet.morale > 0" class="font-title text-lg">{{ $t('From morale') + ': ' + (defense >= 0 ? '+'+defense : defense) }}</p>
+            <p v-if="wallDefense > 0" class="font-title text-lg">{{ $t('From walls') + ': +' + wallDefense }}</p>
         </div>
     </div>
 </template>
@@ -21,6 +22,7 @@
 <script>
 import Sheet from "../../../models/Sheet";
 import ScenarioRepository from "../../../repositories/ScenarioRepository";
+import OverlayRepository from "../../../repositories/OverlayRepository";
 import SheetCalculations from "../../../services/SheetCalculations";
 import CampaignSheet from "../../../models/CampaignSheet";
 
@@ -47,7 +49,13 @@ export default {
     data() {
         return {
             defense: this.calculateDefense(this.sheet.morale),
-            scenarioRepository: new ScenarioRepository
+            scenarioRepository: new ScenarioRepository,
+            overlayRepository: new OverlayRepository,
+        }
+    },
+    computed: {
+        wallDefense() {
+            return this.overlayRepository.where(o => o._name == 'Wall' && o.present).count() * 5;
         }
     },
     watch: {
