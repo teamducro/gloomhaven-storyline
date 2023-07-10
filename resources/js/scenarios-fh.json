@@ -2397,8 +2397,11 @@
                 "Gain 3 collective {LUMBER}",
                 "Add 146.1 to the calendar in five weeks"
             ],
-            "achievements_awarded": [
-                "CFFK"
+            "achievements_awarded_by_choice": [
+                [
+                    "CFFK"
+                ],
+                []
             ],
             "prompt": "friendOfTheFishKing",
             "loot": {
@@ -2997,6 +3000,11 @@
             "rewards": [
                 "Gain 10 experience each"
             ],
+            "achievements_from_treasures": {
+                "12": [
+                    "CBT"
+                ]
+            },
             "loot": {
                 "coins": 9,
                 "lumber": 3,
