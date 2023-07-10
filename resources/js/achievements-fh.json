@@ -1,0 +1,211 @@
+[
+    {
+        "id": "CFIS",
+        "name": "Friend of the Icespeakers",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CFSS",
+        "name": "Friend of the Snowspeakers",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CFFS",
+        "name": "Friend of the Frostspeakers",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CDIS",
+        "name": "Destroyer of the Icespeakers",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CDSS",
+        "name": "Destroyer of the Snowspeakers",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CFFK",
+        "name": "Friend of the Fish King",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CCU",
+        "name": "Crown United",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CUA",
+        "name": "Unfettered Allies",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CUD",
+        "name": "Unfettered Deactivated",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CITF",
+        "name": "Into the Forest",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CFP",
+        "name": "Firepepper",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CSS",
+        "name": "Shard Seeker",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CEJ",
+        "name": "Empty Jar",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CBJ",
+        "name": "Bug in a Jar",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CUC",
+        "name": "Uncharged Core",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CCC",
+        "name": "Charged Core",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CHF",
+        "name": "Harvest Festival",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CBT",
+        "name": "Brummix Tracks",
+        "type": "Campaign",
+        "game": "fh",
+        "upgrades": [
+            "CBT2",
+            "CBT3",
+            "CBT4",
+            "CBT5"
+        ],
+        "is_manual": true
+    },
+    {
+        "id": "CBT2",
+        "name": "Brummix Tracks x2",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CBT3",
+        "name": "Brummix Tracks x3",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CBT4",
+        "name": "Brummix Tracks x4",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CBT5",
+        "name": "Brummix Tracks x5",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CCCS",
+        "name": "Coral Crown Shard",
+        "type": "Campaign",
+        "game": "fh",
+        "upgrades": [
+            "CCCS2",
+            "CCCS3",
+            "CCCS4",
+            "CCCS5",
+            "CCCS6"
+        ],
+        "is_manual": true
+    },
+    {
+        "id": "CCCS2",
+        "name": "Coral Crown Shard x2",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CCCS3",
+        "name": "Coral Crown Shard x3",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CCCS4",
+        "name": "Coral Crown Shard x4",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CCCS5",
+        "name": "Coral Crown Shard x5",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    },
+    {
+        "id": "CCCS6",
+        "name": "Coral Crown Shard x6",
+        "type": "Campaign",
+        "game": "fh",
+        "is_manual": true
+    }
+]

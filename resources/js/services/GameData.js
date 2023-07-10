@@ -1,4 +1,5 @@
 import achievementsJson from '../achievements.json'
+import achievementsFhJson from '../achievements-fh.json'
 import scenariosJson from '../scenarios.json'
 import scenariosFhJson from '../scenarios-fh.json'
 import scenariosJotlJson from '../scenarios-jotl.json'
@@ -38,7 +39,7 @@ export default class GameData {
             case Game.jotl:
                 return []
             case Game.fh:
-                return []
+                return achievementsFhJson
             default:
                 return achievementsJson
         }

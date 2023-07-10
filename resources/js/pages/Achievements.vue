@@ -40,10 +40,10 @@
                 </dropdown>
             </div>
 
-            <div class="w-full flex justify-center">
+            <div v-if="appData.game !== 'fh'" class="w-full flex justify-center">
                 <h1>{{ $t('Global') }} {{ $t('Achievements') }}</h1>
             </div>
-            <div class="w-full flex justify-center">
+            <div v-if="appData.game !== 'fh'" class="w-full flex justify-center">
                 <ul v-if="achievements" id="global-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="global-list">
                     <li v-for="achievement in achievements.items"
@@ -60,7 +60,7 @@
                 </ul>
             </div>
         </div>
-        <div class="pt-4 pb-4 px-4 flex flex-wrap">
+        <div v-if="appData.game !== 'fh'" class="pt-4 pb-4 px-4 flex flex-wrap">
             <div class="w-full flex justify-center">
                 <h1>{{ $t('Party') }} {{ $t('Achievements') }}</h1>
             </div>
@@ -69,6 +69,27 @@
                     ref="party-list">
                     <li v-for="achievement in achievements.items"
                         v-if="achievement.isParty() && achievement.awarded"
+                        :key="achievement.id"
+                        class="mdc-list-item h-auto cursor-pointer"
+                        :tabindex="achievement.id">
+                        <template>
+                    <span class="mdc-list-item__text opacity-75">
+                        {{ $t(achievement.name) }}
+                    </span>
+                        </template>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div v-else class="pt-4 pb-4 px-4 flex flex-wrap">
+            <div class="w-full flex justify-center">
+                <h1>{{ $t('Campaign') }} {{ $t('Stickers') }}</h1>
+            </div>
+            <div class="w-full flex justify-center">
+                <ul v-if="achievements" id="campaign-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
+                    ref="campaign-list">
+                    <li v-for="achievement in achievements.items"
+                        v-if="achievement.isCampaign() && achievement.awarded"
                         :key="achievement.id"
                         class="mdc-list-item h-auto cursor-pointer"
                         :tabindex="achievement.id">
@@ -100,6 +121,7 @@ export default {
             game: 'gh',
             globalList: null,
             partyList: null,
+            campaignList: null,
             achievements: null,
             regionFilter: null,
             missedTreasuresFilter: null,
@@ -124,6 +146,9 @@ export default {
         }
         if (this.partyList) {
             this.partyList.destroy();
+        }
+        if (this.campaignList) {
+            this.campaignList.destroy();
         }
         this.$bus.$off('achievements-updated', this.setAchievements);
     },
@@ -156,6 +181,19 @@ export default {
                 this.partyList.listen('MDCList:action', (event) => {
                     const id = this.achievements.filter((a) => {
                         return a.isParty() && a.awarded;
+                    }).get(event.detail.index).id;
+                    this.open(this.achievementRepository.find(id));
+                });
+            }
+            
+            if (this.campaignList) {
+                this.campaignList.destroy();
+            }
+            if (this.$refs['campaign-list']) {
+                this.campaignList = MDCList.attachTo(this.$refs['campaign-list']);
+                this.campaignList.listen('MDCList:action', (event) => {
+                    const id = this.achievements.filter((a) => {
+                        return a.isCampaign() && a.awarded;
                     }).get(event.detail.index).id;
                     this.open(this.achievementRepository.find(id));
                 });
