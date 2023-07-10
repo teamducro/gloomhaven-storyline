@@ -43,8 +43,26 @@
                 0
             ],
             "rewards": [
-                "Gain 2 + X morale, where X is the number of City Guards still on the map."
+                [
+                    "Gain 2 morale"
+                ],
+                [
+                    "Gain 3 morale"
+                ],
+                [
+                    "Gain 4 morale"
+                ],
+                [
+                    "Gain 5 morale"
+                ],
+                [
+                    "Gain 6 morale"
+                ],
+                [
+                    "Gain 7 morale"
+                ]
             ],
+            "prompt": "startingMorale",
             "loot": {
                 "coins": 6,
                 "lumber": 5,
@@ -161,14 +179,16 @@
             ],
             "rewards": [
                 [
-                    "Unlock [#] class box.",
+                    "Unlock {FF} class box",
                     "Gain 1 morale",
-                    "Gain 1 prosperity"
+                    "Gain 1 prosperity",
+                    "Add 156.1 to the calendar in four weeks"
                 ],
                 [
-                    "Unlock [#] class box.",
+                    "Unlock {SD} class box",
                     "Gain 1 morale",
-                    "Gain 1 prosperity"
+                    "Gain 1 prosperity",
+                    "Add 156.1 to the calendar in four weeks"
                 ]
             ],
             "prompt": "algoxAltercation",
@@ -202,7 +222,7 @@
                 4
             ],
             "rewards": [
-                "Gain 2 Lumber collective"
+                "Gain 2 collective {LUMBER}"
             ],
             "loot": {
                 "coins": 6,
@@ -231,7 +251,7 @@
                 4
             ],
             "rewards": [
-                "Gain 2 Metal collective"
+                "Gain 2 collective {METAL}"
             ],
             "loot": {
                 "coins": 9,
@@ -264,7 +284,8 @@
                 4
             ],
             "rewards": [
-                "10 experience each"
+                "10 experience each",
+                "Gain “Coral Shard” campaign sticker"
             ],
             "loot": {
                 "coins": 6,
@@ -293,7 +314,8 @@
                 4
             ],
             "rewards": [
-                "Gain 1 collective Lumber and 2 collective Hides"
+                "Gain 1 collective {LUMBER}",
+                "Gain 2 collective {HIDE}"
             ],
             "loot": {
                 "coins": 6,
@@ -324,7 +346,7 @@
                 5
             ],
             "rewards": [
-                "Gain 2 collective Corpscap"
+                "Gain 2 collective {CORPSECAP}"
             ],
             "loot": {
                 "coins": 8,
@@ -355,7 +377,8 @@
                 5
             ],
             "rewards": [
-                "Gain 1 morale and 1 inspiration."
+                "Gain 1 morale",
+                "Gain 1 inspiration"
             ],
             "loot": {
                 "coins": 8,
@@ -385,7 +408,8 @@
                 6
             ],
             "rewards": [
-                "Gain 1 morale and 1 inspiration."
+                "Gain 1 morale",
+                "Gain 1 inspiration"
             ],
             "loot": {
                 "coins": 6,
@@ -416,7 +440,7 @@
                 6
             ],
             "rewards": [
-                "Gain 15xp each"
+                "Gain 15 experience each"
             ],
             "loot": {
                 "coins": 8,
@@ -446,7 +470,7 @@
                 7
             ],
             "rewards": [
-                "Gain “Dead Raven” (item 233)"
+                "Gain “Dead Raven” (Item 233)"
             ],
             "loot": {
                 "coins": 7,
@@ -477,9 +501,9 @@
                 7
             ],
             "rewards": [
-                "Choose one: Unlock Coral class OR Unlock Sea Weed class box.",
-                "Gain “Coral Shard” and “Shard Seeker” campaign stickers.",
-                "Add event WO-81 to the winter outpost deck."
+                "Choose one: Unlock {CR} class box OR unlock {DT} class box",
+                "Gain “Coral Shard” and “Shard Seeker” campaign stickers",
+                "Add event WO-81 to the winter outpost deck"
             ],
             "loot": {
                 "coins": 7,
@@ -510,9 +534,9 @@
                 8
             ],
             "rewards": [
-                "Gain 1 lumber",
-                "Gain 1 metal",
-                "Gain 1 hide"
+                "Gain 1 collective {LUMBER}",
+                "Gain 1 collective {METAL}",
+                "Gain 1 collective {HIDE}"
             ],
             "loot": {
                 "coins": 8,
@@ -544,7 +568,7 @@
                 8
             ],
             "rewards": [
-                "Gain 5xp each",
+                "Gain 5 experience each",
                 "Gain 1 inspiration"
             ],
             "loot": {
@@ -599,7 +623,8 @@
             ],
             "rewards": [
                 "Gain 1 morale",
-                "Gain one random item blueprint"
+                "Gain one random item blueprint",
+                "Add 122.3 to the calendar in four weeks"
             ],
             "loot": {
                 "coins": 6,
@@ -630,7 +655,8 @@
             ],
             "rewards": [
                 "Gain 1 morale",
-                "Gain one random item blueprint"
+                "Gain one random item blueprint",
+                "Add 54.3 to the calendar in four weeks"
             ],
             "loot": {
                 "coins": 11,
@@ -710,8 +736,9 @@
                 14
             ],
             "rewards": [
-                "Lose 1 collective Lumber for each set of five hexes with water tiles on tile 7-G",
-                "Gain 15 xp each"
+                "Lose 1 collective {LUMBER} for each set of five hexes with water tiles on tile 7-G",
+                "Gain 15 experience each",
+                "Add 62.2 to the calendar in two weeks"
             ],
             "loot": {
                 "coins": 10,
@@ -800,8 +827,9 @@
                 }
             ],
             "rewards": [
-                "Gain 2 lumber",
-                "Gain 2 metal"
+                "Gain 2 collective {LUMBER}",
+                "Gain 2 collective {METAL}",
+                "Add 128.2 to the calendar in four weeks"
             ],
             "loot": {
                 "coins": 10,
@@ -839,7 +867,7 @@
                 }
             ],
             "rewards": [
-                "Gain 10 px each"
+                "Gain 10 experience each"
             ],
             "loot": {
                 "coins": 10,
@@ -867,9 +895,10 @@
                 17
             ],
             "rewards": [
-                "Gain 10 xp",
-                "Gain 1 ✓ each",
-                "Gain “Coral Shard” campaign sticker"
+                "Gain 10 experience each",
+                "Gain 1 ✔ each",
+                "Gain “Coral Shard” campaign sticker",
+                "Ancient Technology"
             ],
             "loot": {
                 "coins": 13,
@@ -950,7 +979,10 @@
             ],
             "rewards": [
                 "Gain 3 morale",
-                "“Destroyer of Icespeakers” sticker"
+                "Gain “Destroyer of the Icespeakers” campaign sticker",
+                "Remove all {ALGOX} events from all outpost event decks",
+                "Add event WO-68 to the winter outpost deck",
+                "Add 46.3 to the calendar in five weeks"
             ],
             "loot": {
                 "coins": 12,
@@ -988,7 +1020,11 @@
                 }
             ],
             "rewards": [
-                "3 morale, “Destroyer of Snowspeakers” sticker"
+                "Gain 3 morale",
+                "Gain “Destroyer of the Snowspeakers” sticker",
+                "Remove all {ALGOX} events from all outpost event decks",
+                "Add event WO-69 to the winter outpost deck",
+                "Add 34.2 to the calendar in five weeks"
             ],
             "loot": {
                 "coins": 12,
@@ -1020,7 +1056,8 @@
                 20
             ],
             "rewards": [
-                "5xp, 10 gold each"
+                "Gain 5 experience each",
+                "Gain 10 gold each"
             ],
             "loot": {
                 "coins": 11,
@@ -1048,8 +1085,8 @@
                 13
             ],
             "rewards": [
-                "Gain “Feathered CLoak” (item 69)",
-                "“Into the Forest” sticker"
+                "Gain “Feathered Cloak” (Item 69) blueprint",
+                "Gain “Into the Forest” campaign sticker"
             ],
             "loot": {
                 "coins": 7,
@@ -1076,8 +1113,9 @@
                 22
             ],
             "rewards": [
-                "5xp per unrevealed dowsing rune",
-                "Gain “Ember Energy Source” (item 244)"
+                "Gain 5 experience each for each unrevealed dowsing rune",
+                "Gain “Ember Energy Source” (Item 244)",
+                "Add 135.1 to the calendar in three weeks"
             ],
             "loot": {
                 "coins": 8,
@@ -1103,7 +1141,7 @@
                 24
             ],
             "rewards": [
-                "“Coral Shard” Sticker"
+                "Gain “Coral Shard” campaign sticker"
             ],
             "loot": {}
         },
@@ -1127,7 +1165,9 @@
                 25
             ],
             "rewards": [
-                "2 lumber, 2 metal, 2 hide"
+                "Gain 2 collective {LUMBER}",
+                "Gain 2 collective {METAL}",
+                "Gain 2 collective {HIDE}"
             ],
             "loot": {
                 "coins": 7,
@@ -1161,7 +1201,8 @@
                 }
             ],
             "rewards": [
-                "3 lumber, 3 metal"
+                "Gain 3 collective {LUMBER}",
+                "Gain 3 collective {METAL}"
             ],
             "loot": {
                 "coins": 9,
@@ -1197,7 +1238,8 @@
                 }
             ],
             "rewards": [
-                "3 lumber, 3 metal"
+                "Gain 3 collective {LUMBER}",
+                "Gain 3 collective {METAL}"
             ],
             "loot": {
                 "coins": 10,
@@ -1228,7 +1270,9 @@
                 28
             ],
             "rewards": [
-                "10xp, check, 1 inspiration"
+                "Gain 10 experience each",
+                "Gain 1 ✔ each",
+                "Gain 1 inspiration"
             ],
             "loot": {
                 "coins": 8,
@@ -1258,7 +1302,8 @@
                 29
             ],
             "rewards": [
-                "lose 1 inspiration, +2 loot cards for each charactor"
+                "Lose 1 inspiration",
+                "Gain 2 additional loot cards each"
             ],
             "loot": {
                 "coins": 10,
@@ -1289,7 +1334,8 @@
                 30
             ],
             "rewards": [
-                "lose 1 inspiration, +2 loot cards for each charactor"
+                "Lose 1 inspiration",
+                "Gain 2 additional loot cards each"
             ],
             "loot": {
                 "coins": 10,
@@ -1314,7 +1360,10 @@
                 31
             ],
             "rewards": [
-                "15 gold each, 2 Axenuts, “Coral Shard” sticker"
+                "Gain 15 gold each",
+                "Gain 2 collective {AXENUT}",
+                "Gain “Coral Shard” campaign sticker",
+                "Ancient Technology"
             ],
             "loot": {
                 "coins": 9,
@@ -1343,7 +1392,10 @@
                 33
             ],
             "rewards": [
-                "2 checks, “Coral shard” sticker"
+                "Gain 2 ✔ each",
+                "Gain “Coral Shard” campaign sticker",
+                "Add event B-16 to the boat deck",
+                "Add 114.2 to the calendar in three weeks"
             ],
             "loot": {
                 "coins": 12,
@@ -1370,7 +1422,7 @@
                 35
             ],
             "rewards": [
-                "10xp"
+                "Gain 10 experience each"
             ],
             "loot": {
                 "coins": 8,
@@ -1394,14 +1446,19 @@
                 58,
                 59
             ],
+            "choices": [
+                58,
+                59
+            ],
             "linked_from": [
                 36,
                 37
             ],
             "rewards": [
-                "5 gold",
-                "Gain “Energizing Baton” (item 73)"
+                "Gain 5 gold each",
+                "Gain “Energizing Baton” (Item 73) blueprint"
             ],
+            "prompt": "finalNegotiation",
             "loot": {
                 "coins": 8,
                 "lumber": 2,
@@ -1430,7 +1487,8 @@
                 38
             ],
             "rewards": [
-                "1 morale, check"
+                "Gain 1 morale",
+                "Gain 1 ✔ each"
             ],
             "loot": {
                 "coins": 10,
@@ -1457,7 +1515,8 @@
                 38
             ],
             "rewards": [
-                "1 morale, 10xp,"
+                "Gain 1 morale",
+                "Gain 10 experience each"
             ],
             "loot": {
                 "coins": 9,
@@ -1488,7 +1547,8 @@
                 39
             ],
             "rewards": [
-                "10 gold, 2 lumber"
+                "Gain 10 gold each",
+                "Gain 2 collective {LUMBER}"
             ],
             "loot": {
                 "coins": 7,
@@ -1516,7 +1576,8 @@
                 40
             ],
             "rewards": [
-                "10xp, 2 metal"
+                "Gain 10 gold each",
+                "Gain 2 collective {METAL}"
             ],
             "loot": {
                 "coins": 7,
@@ -1547,7 +1608,8 @@
                 42
             ],
             "rewards": [
-                "5xp, 1 inspiration"
+                "Gain 5 experience each",
+                "Gain 1 inspiration"
             ],
             "loot": {
                 "coins": 13,
@@ -1573,7 +1635,9 @@
                 42
             ],
             "rewards": [
-                "lose 2 inspiration, gain 4 lumber+4 metal"
+                "Lose 2 inspiration",
+                "Gain 4 collective {LUMBER}",
+                "Gain 4 collective {METAL}"
             ],
             "loot": {
                 "coins": 13,
@@ -1599,13 +1663,18 @@
                 58,
                 59
             ],
+            "choices": [
+                58,
+                59
+            ],
             "linked_from": [
                 43
             ],
             "rewards": [
-                "10xp",
-                "Gain “Shock Grenades blueprint” (item 74)"
+                "Gain 10 experience each",
+                "Gain “Shock Grenades” (Item 74) blueprint"
             ],
+            "prompt": "finalNegotiation",
             "loot": {
                 "coins": 12,
                 "lumber": 2,
@@ -1637,7 +1706,8 @@
                 46
             ],
             "rewards": [
-                "1 morale, 1 inspiration"
+                "Gain 1 morale",
+                "Gain 1 inspiration"
             ],
             "loot": {
                 "coins": 6,
@@ -1665,7 +1735,8 @@
                 49
             ],
             "rewards": [
-                "2 checks, Coral Shard sticker"
+                "Gain 2 ✔ each",
+                "Gain “Coral Shard” campaign sticker"
             ],
             "loot": {
                 "coins": 8,
@@ -1697,7 +1768,8 @@
                 50
             ],
             "rewards": [
-                "2 checks, Coral Shard sticker"
+                "Gain 2 ✔ each",
+                "Gain “Coral Shard” campaign sticker"
             ],
             "loot": {
                 "coins": 8,
@@ -1725,7 +1797,13 @@
                 52
             ],
             "rewards": [
-                "2 morale, Gain 2 prosperity, unlock fist or snowflake, “friend of frostspeakers” sticker, +50 card to town guard deck"
+                "Gain 2 morale",
+                "Gain 2 prosperity",
+                "Unlock whichever class box is still locked: {FF} or {SD}",
+                "Gain “Friend of the Frostspeakers” campaign sticker",
+                "Remove all {ALGOX} events from all outpost event decks",
+                "Add events WO-66 and WO-67 to the winter outpost deck",
+                "Add one +50 card to town guard deck"
             ],
             "loot": {
                 "coins": 3,
@@ -1753,7 +1831,12 @@
                 47
             ],
             "rewards": [
-                "1 morale, 1 inspiration, unlock fist class, “Friend of Icespeakers” sticker, +50 card to town guard deck"
+                "Gain 1 morale",
+                "Gain 1 inspiration",
+                "Unlock {FF} class box",
+                "Gain “Friend of the Icespeakers” campaign sticker",
+                "Add event SO-51 to the summer outpost deck",
+                "Add one +50 card to town guard deck"
             ],
             "loot": {
                 "coins": 6,
@@ -1781,7 +1864,12 @@
                 48
             ],
             "rewards": [
-                "1 morale, 1 inspiration, unlock snowflake class, “Friend of Icespeakers” sticker, +50 card to town guard deck"
+                "Gain 1 morale",
+                "Gain 1 inspiration",
+                "Unlock {SD} class box",
+                "Gain “Friend of the Snowspeakers” campaign sticker",
+                "Add event WO-68 to the winter outpost deck",
+                "Add one +50 card to town guard deck"
             ],
             "loot": {}
         },
@@ -1810,7 +1898,16 @@
                 }
             ],
             "rewards": [
-                "1 morale, “Key Card” (item 246), 3 lumber, 3 metal, 3 hides, prism class, “unfettered deacivation” sticker, +50 card to town guard deck"
+                "Gain 1 morale",
+                "Gain “Key Card” (Item 246)",
+                "Gain 3 collective {LUMBER}",
+                "Gain 3 collective {METAL}",
+                "Gain 3 collective {HIDE}",
+                "Unlock {HV} class box",
+                "Gain “Unfettered Deacivated” campaign sticker",
+                "Remove all {UNFETTERED} events from all outpost event decks",
+                "Add events WO-64 and WO-65 to the winter outpost deck",
+                "Add one +50 card to town guard deck"
             ],
             "loot": {
                 "coins": 6,
@@ -1845,7 +1942,14 @@
                 }
             ],
             "rewards": [
-                "2 morale, Gain 2 prosperity, gain “Key Card” (item 246), prism class, “unfettered allies” sticker, +50 card to town guard deck"
+                "Gain 2 morale",
+                "Gain 2 prosperity",
+                "Gain “Key Card” (Item 246)",
+                "Unlock {HV} class box",
+                "Gain “Unfettered Allies” campaign sticker",
+                "Remove all {UNFETTERED} events from all outpost event decks",
+                "Add event SO-49 to the summer outpost deck and event WO-63 to the winter outpost deck",
+                "Add one +50 card to town guard deck"
             ],
             "loot": {
                 "coins": 11,
@@ -1869,7 +1973,14 @@
                 54
             ],
             "rewards": [
-                "2 morale, Gain 1 prosperity, 30xp, Unlock Coral class OR Sea Weed class, Crown reunited sticker, +50 card to town guard deck"
+                "Gain 2 morale",
+                "Gain 1 prosperity",
+                "Gain 30 experience each",
+                "Unlock whichever class box is still locked: {CR} or {DT}",
+                "Gain “Crown Reunited” campaign sticker",
+                "Remove all {LURKERS} events from all outpost event decks",
+                "Add event SO-48 to the summer outpost deck and event B-17 to the boat deck",
+                "Add one +50 card to town guard deck"
             ],
             "loot": {
                 "coins": 8,
@@ -1899,7 +2010,8 @@
                 62
             ],
             "rewards": [
-                "unlock Shards class"
+                "Unlock {SH} class box",
+                "Add section 140.3 to the calendar in one week"
             ],
             "loot": {
                 "coins": 5,
@@ -1961,7 +2073,7 @@
                 62
             ],
             "rewards": [
-                "Gain 2 prosperity,"
+                "Gain 2 prosperity"
             ],
             "loot": {
                 "coins": 5,
@@ -1986,7 +2098,9 @@
                 63
             ],
             "rewards": [
-                "3 morale, Gain 3 prosperity, 3 checks each"
+                "Gain 3 morale",
+                "Gain 3 prosperity",
+                "Gain 3 ✔ each"
             ],
             "loot": {
                 "coins": 5,
@@ -2015,7 +2129,9 @@
                 66
             ],
             "rewards": [
-                "2 lumber, 2 metal"
+                "Gain 2 collective {LUMBER}",
+                "Gain 2 collective {METAL}",
+                "Add 95.4 to the calendar in six weeks"
             ],
             "loot": {
                 "coins": 8,
@@ -2043,7 +2159,8 @@
                 66
             ],
             "rewards": [
-                "“Elemental Stone” (item 212)"
+                "Gain “Elemental Stone” (Item 212)",
+                "Add 29.3 to the calendar in six weeks"
             ],
             "loot": {
                 "coins": 12,
@@ -2075,7 +2192,8 @@
                 66
             ],
             "rewards": [
-                "1 morale, Gain 1 prosperity"
+                "Gain 1 morale",
+                "Gain 1 prosperity"
             ],
             "loot": {
                 "coins": 8,
@@ -2101,7 +2219,8 @@
                 67
             ],
             "rewards": [
-                "(3 weeks) 50 gold each for enhancements, if building 44 is built"
+                "“Aesther Outpost” personal quest complete",
+                "Add 133.1 to the calendar in two weeks"
             ],
             "loot": {
                 "lumber": 5,
@@ -2124,7 +2243,10 @@
                 70
             ],
             "rewards": [
-                "Arrowvine, Axenut, Flamenut"
+                "Gain 1 {ARROWVINE}",
+                "Gain 1 {AXENUT}",
+                "Gain 1 {FLAMEFRUIT}",
+                "Add 15.4 to the calendar in three weeks"
             ],
             "loot": {
                 "coins": 8,
@@ -2151,6 +2273,7 @@
                 69
             ],
             "rewards": [
+                "“The True Oak” personal quest complete",
                 "Gain 1 Prosperity"
             ],
             "loot": {
@@ -2180,7 +2303,9 @@
                 72
             ],
             "rewards": [
-                "damage even building between 71-89 & 10xp"
+                "Damage any one even building between 71 and 89",
+                "Gain 10 experience each",
+                "Add 149.5 to the calendar in five weeks"
             ],
             "loot": {
                 "coins": 8,
@@ -2209,7 +2334,7 @@
                 71
             ],
             "rewards": [
-                "check"
+                "Gain 1 ✔ each"
             ],
             "loot": {
                 "coins": 9,
@@ -2238,8 +2363,17 @@
                 72
             ],
             "rewards": [
-                "3 wood + optional friend of the fish king sticker"
+                [
+                    "Gain 3 collective {LUMBER}",
+                    "Gain “Friend of the Fish King” campaign sticker",
+                    "Add 146.1 to the calendar in five weeks"
+                ],
+                [
+                    "Gain 3 collective {LUMBER}",
+                    "Add 146.1 to the calendar in five weeks"
+                ]
             ],
+            "prompt": "friendOfTheFishKing",
             "loot": {
                 "coins": 9,
                 "lumber": 5,
@@ -2299,7 +2433,7 @@
                 74
             ],
             "rewards": [
-                "10 gold,"
+                "Gain 10 gold each"
             ],
             "loot": {
                 "coins": 8,
@@ -2326,12 +2460,21 @@
             "links_to": [
                 77
             ],
+            "choices": [
+                77
+            ],
             "linked_from": [
                 74
             ],
             "rewards": [
-                "“Wave Blade” (item 201)"
+                [
+                    "“Threat from the Deep” personal quest complete",
+                    "Gain “Wave Blade” (Item 201)",
+                    "Add event B-18 to the boat deck"
+                ],
+                []
             ],
+            "prompt": "acceptTheAscension",
             "loot": {
                 "coins": 9,
                 "metal": 2,
@@ -2355,7 +2498,9 @@
                 76
             ],
             "rewards": [
-                "“Wave Blade” (item 201)"
+                "“Threat from the Deep” personal quest complete",
+                "Gain “Wave Blade” (Item 201)",
+                "Add event B-19 to the boat deck"
             ],
             "loot": {
                 "coins": 4,
@@ -2382,7 +2527,7 @@
                 13
             ],
             "rewards": [
-                "10xp"
+                "Gain 10 experience each"
             ],
             "loot": {
                 "coins": 6,
@@ -2411,7 +2556,8 @@
                 80
             ],
             "rewards": [
-                "3 morale"
+                "Gain 3 morale",
+                "Add 45.2 to the calendar in three weeks"
             ],
             "loot": {
                 "coins": 8,
@@ -2439,7 +2585,10 @@
                 79
             ],
             "rewards": [
-                "2 lumber, 2 metal, 2 hides, 2 morale"
+                "Gain 2 collective {LUMBER}",
+                "Gain 2 collective {METAL}",
+                "Gain 2 collective {HIDE}",
+                "Gain 2 morale"
             ],
             "loot": {
                 "coins": 8,
@@ -2465,7 +2614,8 @@
                 19
             ],
             "rewards": [
-                "Gain 1 prosperity, “Aesther Robe blueprint” (item 70)"
+                "Gain 1 prosperity",
+                "Gain “Aesther Robe” (Item 70) blueprint"
             ],
             "loot": {
                 "coins": 9,
@@ -2487,7 +2637,8 @@
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
-                "Gain 2 prosperity+3 forgotten cirlces items (153,159,161) OR ???"
+                "Gain 2 prosperity",
+                "Add the following Forgotten Circles items to the Frosthaven supply: 153, 159, and 161"
             ],
             "loot": {
                 "coins": 12,
@@ -2508,7 +2659,7 @@
             "is_side": true,
             "chapter_id": 111,
             "rewards": [
-                "“Giant Piranha Pig Spine” (item 202)"
+                "Gain “Giant Piranha Pig Spine” (Item 202)"
             ],
             "loot": {
                 "coins": 7,
@@ -2532,7 +2683,8 @@
             "is_side": true,
             "chapter_id": 111,
             "rewards": [
-                "item 234 (ooze vial), brummix sticker"
+                "Gain “Ooze Vial” (Item 234)",
+                "Gain “Brummix” campaign sticker"
             ],
             "loot": {
                 "coins": 15,
@@ -2553,7 +2705,8 @@
             "is_side": true,
             "chapter_id": 111,
             "rewards": [
-                "15xp, check"
+                "Gain 15 experience each",
+                "Gain 1 ✔ each"
             ],
             "loot": {
                 "coins": 7,
@@ -2578,7 +2731,7 @@
                 17
             ],
             "rewards": [
-                "2 morale"
+                "Gain 2 morale"
             ],
             "loot": {
                 "coins": 10,
@@ -2608,8 +2761,14 @@
                 88
             ],
             "rewards": [
-                "1-2 inspiration,"
+                [
+                    "Gain 2 inspiration"
+                ],
+                [
+                    "Gain 1 inspiration"
+                ]
             ],
+            "prompt": "brothersSurvival",
             "loot": {
                 "coins": 8,
                 "lumber": 2,
@@ -2637,7 +2796,7 @@
                 87
             ],
             "rewards": [
-                "2 morale"
+                "Gain 2 morale"
             ],
             "loot": {
                 "coins": 8,
@@ -2663,7 +2822,8 @@
                 42
             ],
             "rewards": [
-                "2 Rockroot, 2 lumber"
+                "Gain 2 collective {ROCKROOT}",
+                "Gain 2 collective {LUMBER}"
             ],
             "loot": {
                 "coins": 10,
@@ -2689,8 +2849,19 @@
                 91
             ],
             "rewards": [
-                "check, 10 gold per numbered token looted, lose 10 gold or 5 gold + muddle & curse"
+                [
+                    "Gain 1 ✔ each",
+                    "Each character gains 10 gold for each numbered token they looted",
+                    "Lose 10 collective gold"
+                ],
+                [
+                    "Gain 1 ✔ each",
+                    "Each character gains 10 gold for each numbered token they looted",
+                    "Lose 5 collective gold",
+                    "All characters start the next scenario with {MUDDLE.fh} and {CURSE.fh}"
+                ]
             ],
+            "prompt": "rattuscasShare",
             "loot": {
                 "coins": 5,
                 "lumber": 4,
@@ -2712,7 +2883,8 @@
                 90
             ],
             "rewards": [
-                "2 lumber, 1 morale"
+                "Gain 2 collective {LUMBER}",
+                "Gain 1 morale"
             ],
             "loot": {
                 "coins": 10,
@@ -2734,7 +2906,8 @@
             "is_side": true,
             "chapter_id": 111,
             "rewards": [
-                "lose 2.5 loot per charactor, HE-RO-IC-S pet after 1 week if building 88 is built"
+                "Collectively lose 5xC/2 loot tokens. Loot tokens are then traded in for loot cards",
+                "Add 181.2 to the calendar in one week"
             ],
             "loot": {
                 "coins": 7,
@@ -2757,8 +2930,14 @@
             "is_side": true,
             "chapter_id": 111,
             "rewards": [
-                "“Small Rat” (Item 235) OR “Roasted Fowl” (item 79)"
+                [
+                    "Gain “Small Rat” (Item 235)"
+                ],
+                [
+                    "Gain “Roasted Fowl” (Item 79)"
+                ]
             ],
+            "prompt": "peaceNegotiations",
             "loot": {
                 "coins": 9,
                 "lumber": 4,
@@ -2787,7 +2966,7 @@
                 95
             ],
             "rewards": [
-                "10xp"
+                "Gain 10 experience each"
             ],
             "loot": {
                 "coins": 9,
@@ -2811,7 +2990,8 @@
                 94
             ],
             "rewards": [
-                "1 morale, 10 gold"
+                "Gain 1 morale",
+                "Gain 10 gold each"
             ],
             "loot": {
                 "coins": 8,
@@ -2839,7 +3019,8 @@
                 97
             ],
             "rewards": [
-                "1 morale, 5xp"
+                "Gain 1 morale",
+                "Gain 5 experience each"
             ],
             "loot": {
                 "coins": 14,
@@ -2866,7 +3047,7 @@
                 96
             ],
             "rewards": [
-                "5 metal,"
+                "Gain 5 collective {METAL}"
             ],
             "loot": {
                 "coins": 10,
@@ -2917,7 +3098,7 @@
                 100
             ],
             "rewards": [
-                "10 gold"
+                "Gain 10 gold each"
             ],
             "loot": {
                 "coins": 10,
@@ -2947,7 +3128,8 @@
                 99
             ],
             "rewards": [
-                "all loot is $, 5 gold, 10xp"
+                "Gain 5 gold each",
+                "Gain 10 experience each"
             ],
             "loot": {
                 "coins": 15
@@ -2970,7 +3152,8 @@
                 100
             ],
             "rewards": [
-                "check, 10xp,"
+                "Gain 1 ✔ each",
+                "Gain 10 experience each"
             ],
             "loot": {
                 "coins": 8,
@@ -2999,7 +3182,7 @@
                 101
             ],
             "rewards": [
-                "all loot is gold, 20xp,"
+                "Gain 20 experience each"
             ],
             "loot": {
                 "coins": 15
@@ -3019,7 +3202,9 @@
                 102
             ],
             "rewards": [
-                "loot is $, check, 30xp,10 gold"
+                "Gain 1 ✔ each",
+                "Gain 30 experience each",
+                "Gain 10 gold each"
             ],
             "loot": {
                 "coins": 15
@@ -3040,7 +3225,8 @@
                 105
             ],
             "rewards": [
-                "2 Snowthistle"
+                "Gain 2 collective {SNOWTHISTLE}",
+                "Add event WR-49 to the winter road deck"
             ],
             "loot": {
                 "coins": 10,
@@ -3068,7 +3254,8 @@
                 104
             ],
             "rewards": [
-                "2 Flamefruit"
+                "Gain 2 collective {FLAMEFRUIT}",
+                "Add 159.4 to the calendar in four weeks"
             ],
             "loot": {
                 "coins": 10,
@@ -3093,7 +3280,7 @@
                 105
             ],
             "rewards": [
-                "“Key of Seasons” (item 213)"
+                "Gain “Key of Seasons” (Item 213)"
             ],
             "loot": {
                 "coins": 7,
@@ -3116,8 +3303,24 @@
             "is_side": true,
             "chapter_id": 109,
             "rewards": [
-                "gain 1 material resource per completed episode OR gain 5 + “Cup of Ventillion” (item 214)"
+                [
+                    "Gain any 1 collective material resource"
+                ],
+                [
+                    "Gain any 2 collective material resources"
+                ],
+                [
+                    "Gain any 3 collective material resources"
+                ],
+                [
+                    "Gain any 4 collective material resources"
+                ],
+                [
+                    "Gain any 5 collective material resources",
+                    "Gain “Cup of Ventillion” (Item 214)"
+                ]
             ],
+            "prompt": "episodesOvercome",
             "loot": {
                 "coins": 10,
                 "lumber": 3,
@@ -3143,7 +3346,8 @@
                 68
             ],
             "rewards": [
-                "2 morale, 2 inspiration"
+                "Gain 2 morale",
+                "Gain 2 inspiration"
             ],
             "loot": {
                 "coins": 15,
@@ -3169,7 +3373,7 @@
                 80
             ],
             "rewards": [
-                "5 metal"
+                "Gain 5 collective {METAL}"
             ],
             "loot": {
                 "coins": 11,
@@ -3194,7 +3398,7 @@
                 75
             ],
             "rewards": [
-                "“Rose Guantlet” blueprint (item 75)"
+                "Gain “Rose Guantlet” (Item 75) blueprint"
             ],
             "loot": {
                 "coins": 6,
@@ -3217,7 +3421,7 @@
             "is_side": true,
             "chapter_id": 109,
             "rewards": [
-                "“Cracked Mirror” (item 236)"
+                "Gain “Cracked Mirror” (Item 236)"
             ],
             "loot": {
                 "coins": 10,
@@ -3240,7 +3444,7 @@
             "is_side": true,
             "chapter_id": 109,
             "rewards": [
-                "15xp"
+                "Gain 15 experience each"
             ],
             "loot": {
                 "coins": 8,
@@ -3263,7 +3467,7 @@
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
-                "4 herb resources"
+                "Gain any 4 collective herb resources"
             ],
             "loot": {
                 "coins": 8,
@@ -3291,7 +3495,8 @@
                 115
             ],
             "rewards": [
-                "5 hides"
+                "Gain 5 collective {HIDE}",
+                "Add 86.1 to the calendar in four weeks"
             ],
             "loot": {
                 "coins": 10,
@@ -3318,8 +3523,36 @@
                 114
             ],
             "rewards": [
-                "15xp"
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in one week"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in two weeks"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in three weeks"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in four weeks"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in five weeks"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in six weeks"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in seven weeks"
+                ]
             ],
+            "prompt": "pylonsDestroyed",
             "loot": {
                 "coins": 8,
                 "lumber": 3,
@@ -3344,8 +3577,45 @@
                 115
             ],
             "rewards": [
-                "based on success level: 1 morale, 1 lumber, 1 metal, 1 hide, 2 material resources each, 10xp, Gain one random item blueprint, Gain 1 prosperity, 2 morale"
+                [
+                    "Gain 1 morale"
+                ],
+                [
+                    "Gain 1 morale",
+                    "Gain 1 collective {LUMBER}",
+                    "Gain 1 collective {METAL}",
+                    "Gain 1 collective {HIDE}"
+                ],
+                [
+                    "Gain 1 morale",
+                    "Gain 1 collective {LUMBER}",
+                    "Gain 1 collective {METAL}",
+                    "Gain 1 collective {HIDE}",
+                    "Gain any 2 material resources each",
+                    "Gain 10 experience each"
+                ],
+                [
+                    "Gain 1 morale",
+                    "Gain 1 collective {LUMBER}",
+                    "Gain 1 collective {METAL}",
+                    "Gain 1 collective {HIDE}",
+                    "Gain any 2 material resources each",
+                    "Gain 10 experience each",
+                    "Gain one random item blueprint"
+                ],
+                [
+                    "Gain 1 morale",
+                    "Gain 1 collective {LUMBER}",
+                    "Gain 1 collective {METAL}",
+                    "Gain 1 collective {HIDE}",
+                    "Gain any 2 material resources each",
+                    "Gain 10 experience each",
+                    "Gain one random item blueprint",
+                    "Gain 1 prosperity",
+                    "Gain 2 morale"
+                ]
             ],
+            "prompt": "wagonsEscaped",
             "loot": {
                 "coins": 5,
                 "lumber": 4,
@@ -3368,7 +3638,8 @@
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
-                "4 hide, 10 gold each"
+                "Gain 4 collective {HIDE}",
+                "Gain 10 gold each"
             ],
             "loot": {
                 "coins": 6,
@@ -3391,7 +3662,8 @@
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
-                "“Amulet of Eternal Life” (Item 66), loot cards for each token"
+                "Gain “Amulet of Eternal Life” (Item 66) blueprint",
+                "Trade all tokens in for loot cards"
             ],
             "loot": {
                 "coins": 8,
@@ -3414,7 +3686,9 @@
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
-                "trade in “dust” for “Scepter of Control” (item 203) &/or a material resource &/or herb resource"
+                "Spend 7 remaining dust to gain “Scepter of Control” (Item 203)",
+                "Spend 1 remaining dust to gain any 1 material resource",
+                "Spend 2 remaining dust to gain any 1 herb resource"
             ],
             "loot": {}
         },
@@ -3436,7 +3710,9 @@
                 121
             ],
             "rewards": [
-                "1 morale, 2 lumber"
+                "Gain 1 morale",
+                "Gain 2 collective {LUMBER}",
+                "Add 76.3 to the calendar in ten weeks"
             ],
             "loot": {
                 "coins": 8,
@@ -3459,8 +3735,17 @@
                 120
             ],
             "rewards": [
-                "2 morale OR item 193 OR 3 inspiration"
+                [
+                    "Add 184.3 to the calendar in six weeks"
+                ],
+                [
+                    "Gain “Mind-Thieving Helmet” (Item 193)"
+                ],
+                [
+                    "Gain 2 morale"
+                ]
             ],
+            "prompt": "mindtheifsWill",
             "loot": {
                 "coins": 9,
                 "lumber": 3,
@@ -3485,8 +3770,15 @@
                 31
             ],
             "rewards": [
-                "10 gold each OR??? 15xp, check mark"
+                [
+                    "Gain 10 gold each"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Gain 1 ✔ each"
+                ]
             ],
+            "prompt": "hungryMawDead",
             "loot": {
                 "coins": 6,
                 "lumber": 3,
@@ -3511,7 +3803,8 @@
                 52
             ],
             "rewards": [
-                "1 morale, 1 inspiration"
+                "Gain 1 morale",
+                "Gain 1 inspiration"
             ],
             "loot": {
                 "coins": 9,
@@ -3536,7 +3829,7 @@
                 125
             ],
             "rewards": [
-                "15xp,"
+                "Gain 15 experience each"
             ],
             "loot": {
                 "coins": 10,
@@ -3564,7 +3857,7 @@
                 124
             ],
             "rewards": [
-                "“Temporal Amulet” (item 194)"
+                "Gain “Temporal Amulet” (Item 194)"
             ],
             "loot": {
                 "coins": 9,
@@ -3587,7 +3880,7 @@
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
-                "10 gold"
+                "Gain 10 gold each"
             ],
             "loot": {
                 "coins": 5,
@@ -3613,8 +3906,26 @@
                 30
             ],
             "rewards": [
-                "based on # of crates looted: 10 gold, 2 lumber, “Tri-Corner Hat” (item 195), Gain 1 prosperity"
+                [
+                    "Gain 10 collective gold"
+                ],
+                [
+                    "Gain 10 collective gold",
+                    "Gain 2 collective {LUMBER}"
+                ],
+                [
+                    "Gain 10 collective gold",
+                    "Gain 2 collective {LUMBER}",
+                    "Gain “Tri-Corner Hat” 195"
+                ],
+                [
+                    "Gain 10 collective gold",
+                    "Gain 2 collective {LUMBER}",
+                    "Gain “Tri-Corner Hat” 195",
+                    "Gain 1 prosperity"
+                ]
             ],
+            "prompt": "cratesLooted",
             "loot": {
                 "coins": 5,
                 "lumber": 6,
@@ -3640,8 +3951,21 @@
                 129
             ],
             "rewards": [
-                "1 morale OR 2 morale OR 3 morale + “Befuddling Mug” (item 215)"
+                [
+                    "Gain 1 morale",
+                    "Add 100.3 to the calendar in three weeks"
+                ],
+                [
+                    "Gain 2 morale",
+                    "Add 100.3 to the calendar in three weeks"
+                ],
+                [
+                    "Gain 3 morale",
+                    "Gain “Befuddling Mug” (Item 215)",
+                    "Add 100.3 to the calendar in three weeks"
+                ]
             ],
+            "prompt": "embellismentsCompleted",
             "loot": {
                 "coins": 2,
                 "lumber": 3,
@@ -3672,7 +3996,7 @@
                 128
             ],
             "rewards": [
-                "check,"
+                "Gain 1 ✔ each"
             ],
             "loot": {
                 "coins": 10,
@@ -3700,8 +4024,16 @@
                 129
             ],
             "rewards": [
-                "lose 3 morale, gain Gain 1 prosperity, 10 gold OR 5 collective gold per token carried"
+                [
+                    "Lose 3 morale",
+                    "Gain 1 prosperity",
+                    "Gain 10 collective gold for each token carried"
+                ],
+                [
+                    "Gain 5 collective gold for each token carried"
+                ]
             ],
+            "prompt": "sunAgatesReturned",
             "loot": {
                 "coins": 6,
                 "lumber": 5,
@@ -3723,7 +4055,8 @@
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
-                "10xp, item 237"
+                "Gain 10 experience each",
+                "Gain “Mesmerizing Seashell” (Item 237)"
             ],
             "loot": {}
         },
@@ -3742,7 +4075,7 @@
                 133
             ],
             "rewards": [
-                "1 inspiration"
+                "Gain 1 inspiration"
             ],
             "loot": {
                 "coins": 12,
@@ -3770,7 +4103,7 @@
                 132
             ],
             "rewards": [
-                "“Cracked Idol” (item 238)"
+                "Gain “Cracked Idol” (Item 238)"
             ],
             "loot": {
                 "coins": 7,
@@ -3793,7 +4126,7 @@
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
-                "“Tome of Conflict” (item 219)"
+                "Gain “Tome of Conflict” (Item 219)"
             ],
             "loot": {
                 "coins": 10,
@@ -3815,7 +4148,10 @@
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
-                "2 morale, Gain 2 prosperity, 1 inspiration, “Belara's quill” (tem 220)"
+                "Gain 2 morale",
+                "Gain 2 prosperity",
+                "Gain 1 inspiration",
+                "Gain “Belara's quill” (Item 220)"
             ],
             "loot": {
                 "coins": 7,
@@ -3841,7 +4177,8 @@
                 83
             ],
             "rewards": [
-                "20 gold apiece, “Ancient Coin” (item 245)"
+                "Gain 20 gold each",
+                "Gain “Ancient Coin” (Item 245)"
             ],
             "loot": {
                 "coins": 8,
@@ -3863,7 +4200,10 @@
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
-                "Gain 2 prosperity, 3 morale, 30 gold each, upgrade a money loot with a +1"
+                "Gain 2 prosperity",
+                "Gain 3 morale",
+                "Gain 30 gold each",
+                "Add one +1 sticker to a money loot card"
             ],
             "loot": {
                 "coins": 12,

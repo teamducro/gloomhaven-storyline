@@ -128,12 +128,101 @@ class ChoiceService {
                         this.setChoice(scenario, value);
                     }
                 });
+            
+            case 'finalNegotiation':
+                return new PromptConfig(scenario, {
+                    options: 2,
+                    callback: (value) => {
+                        if (value) {
+                            if (value === 1) {
+                                this.scenarioRepository.choose(scenario, 59);
+                            }
+                            if (value === 2) {
+                                this.scenarioRepository.choose(scenario, 58);
+                            }
+                        } else {
+                            // reset
+                            this.scenarioRepository.choose(scenario, null);
+                            [58, 59].forEach((id) => this.scenarioRepository.setHidden(id));
+                        }
+                        this.setChoice(scenario, value);
+                    }
+                });
+
+            case 'acceptTheAscension':
+                return new PromptConfig(scenario, {
+                    options: 2,
+                    callback: (value) => {
+                        if (value) {
+                            if (value === 1) {
+                                this.scenarioRepository.choose(scenario, null);
+                            }
+                            if (value === 2) {
+                                this.scenarioRepository.choose(scenario, 77);
+                            }
+                        } else {
+                            // reset
+                            this.scenarioRepository.choose(scenario, null);
+                            [77].forEach((id) => this.scenarioRepository.setHidden(id));
+                        }
+                        this.setChoice(scenario, value);
+                    }
+                });
+            
+            case 'mindtheifsWill':
+            case 'embellismentsCompleted':
+                return new PromptConfig(scenario, {
+                    options: 3,
+                    callback: (value) => {
+                        this.setChoice(scenario, value);
+                    }
+                });
+            
+            case 'cratesLooted':
+                return new PromptConfig(scenario, {
+                    options: 4,
+                    callback: (value) => {
+                        this.setChoice(scenario, value);
+                    }
+                });
+            
+            case 'episodesOvercome':
+            case 'wagonsEscaped':
+                return new PromptConfig(scenario, {
+                    options: 5,
+                    callback: (value) => {
+                        this.setChoice(scenario, value);
+                    }
+                });
+            
+            case 'startingMorale':
+                return new PromptConfig(scenario, {
+                    options: 6,
+                    callback: (value) => {
+                        this.setChoice(scenario, value);
+                    }
+                });
+            
+            case 'pylonsDestroyed':
+                return new PromptConfig(scenario, {
+                    options: 7,
+                    callback: (value) => {
+                        this.setChoice(scenario, value);
+                    }
+                });
+            
             case 'burningMountain':
             case 'searchPiecesOfAnArtifact':
             case 'escapeFromTheHusk':
             case 'directingBeams':
             case 'undeadTerrors':
             case 'unseenPlight':
+            case 'friendOfTheFishKing':
+            case 'brothersSurvival':
+            case 'rattuscasShare':
+            case 'peaceNegotiations':
+            case 'hungryMawDead':
+            case 'sunAgatesReturned':
             default:
                 return new PromptConfig(scenario, {
                     options: 2,
