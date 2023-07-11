@@ -146,6 +146,8 @@ export default {
         this.map?.dispose();
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
+        this.$bus.$off('achievements-updated', this.setAchievements);
+        this.$bus.$off('game-selected', this.loadMap);
         this.$bus.$off('buildings-updated', this.setBuildings);
         this.$bus.$off('overlays-updated', this.setOverlays);
         if (this.mapTouch) {
