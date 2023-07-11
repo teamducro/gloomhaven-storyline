@@ -229,8 +229,8 @@ export default class GameData {
                 }
             case Game.fh:
                 return {
-                    portrait: '-0.5 -0.5 2964 2503',
-                    landscape: '-0.5 -0.5 2964 2503'
+                    portrait: '-20 -40 718 691',
+                    landscape: '-20 -40 718 691'
                 }
             default:
                 return {

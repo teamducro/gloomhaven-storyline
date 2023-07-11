@@ -38,8 +38,8 @@
 <div id="bg"></div>
 <div id="app" v-cloak>
     <div class="relative logo">
-        <webp class="" src="/img/gloomhaven-logo.png" alt="Gloomhaven"
-              width="250" height="37"></webp>
+        <webp v-if="game === 'fh'" class="" src="/img/frosthaven-logo.png" alt="Frosthaven" width="250" height="37"></webp>
+        <webp v-else class="" src="/img/gloomhaven-logo.png" alt="Gloomhaven" width="250" height="37"></webp>
         <ribbon v-if="user">Pro</ribbon>
     </div>
     <drawer>
