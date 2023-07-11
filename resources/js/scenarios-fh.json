@@ -762,6 +762,9 @@
                 "y": 33.78
             },
             "chapter_id": 6,
+            "links_to": [
+                34
+            ],
             "linked_from": [
                 15
             ],
@@ -2842,6 +2845,7 @@
                 "x": 71,
                 "y": 60.4
             },
+            "is_side": true,
             "chapter_id": 111,
             "treasures": [
                 17
