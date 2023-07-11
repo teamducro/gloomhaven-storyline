@@ -359,5 +359,11 @@ export default {
     },
     "fh-CCCS6": {
         "name": "Coral Crown Shard x6",
+    },
+    "fh-PHOI": {
+        "name": "Heart of Ice",
+    },
+    "fh-PHOS": {
+        "name": "Heart of Snow",
     }
 }

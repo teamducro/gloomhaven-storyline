@@ -225,5 +225,19 @@
         "type": "Campaign",
         "game": "fh",
         "hidden": true
+    },
+    {
+        "id": "PHOI",
+        "name": "Heart of Ice",
+        "type": "Party",
+        "game": "fh",
+        "hidden": true
+    },
+    {
+        "id": "PHOS",
+        "name": "Heart of Snow",
+        "type": "Party",
+        "game": "fh",
+        "hidden": true
     }
 ]

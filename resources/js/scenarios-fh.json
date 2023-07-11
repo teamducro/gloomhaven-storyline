@@ -763,8 +763,7 @@
             },
             "chapter_id": 6,
             "linked_from": [
-                23,
-                24
+                15
             ],
             "rewards": [
                 "Gain one random item blueprint"
@@ -891,6 +890,14 @@
                 "x": 55.4,
                 "y": 26.67
             },
+            "requirements": "Shard Seeker (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CSS"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "treasures": [
                 36,
@@ -1030,10 +1037,12 @@
             ],
             "rewards": [
                 "Gain 3 morale",
-                "Gain “Destroyer of the Snowspeakers” sticker",
                 "Remove all {ALGOX} events from all outpost event decks",
                 "Add event WO-69 to the winter outpost deck",
                 "Add 34.2 to the calendar in five weeks"
+            ],
+            "achievements_awarded": [
+                "CDSS"
             ],
             "loot": {
                 "coins": 12,
@@ -1116,6 +1125,14 @@
                 "x": 11.1,
                 "y": 14.2
             },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
             "chapter_id": 3,
             "links_to": [
                 42
@@ -1302,6 +1319,14 @@
                 "x": 16.55,
                 "y": 20.44
             },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
             "chapter_id": 2,
             "treasures": [
                 41
@@ -1366,6 +1391,14 @@
                 "x": 65.8,
                 "y": 46.2
             },
+            "requirements": "Shard Seeker (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CSS"
+                    ]
+                }
+            ],
             "chapter_id": 4,
             "linked_from": [
                 31
@@ -1505,6 +1538,9 @@
                 "Gain 1 morale",
                 "Gain 1 ✔ each"
             ],
+            "achievements_awarded": [
+                "PHOI"
+            ],
             "loot": {
                 "coins": 10,
                 "lumber": 3,
@@ -1532,6 +1568,9 @@
             "rewards": [
                 "Gain 1 morale",
                 "Gain 10 experience each"
+            ],
+            "achievements_awarded": [
+                "PHOS"
             ],
             "loot": {
                 "coins": 9,
@@ -1622,6 +1661,13 @@
             "linked_from": [
                 42
             ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        50
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 5 experience each",
                 "Gain 1 inspiration"
@@ -1648,6 +1694,13 @@
             ],
             "linked_from": [
                 42
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        49
+                    ]
+                }
             ],
             "rewards": [
                 "Lose 2 inspiration",
@@ -1707,6 +1760,15 @@
                 "x": 58.65,
                 "y": 30.97
             },
+            "requirements": "Heart of Ice (Party) COMPLETE and Heart of Snow (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PHOI",
+                        "PHOS"
+                    ]
+                }
+            ],
             "chapter_id": 5,
             "treasures": [
                 28,
@@ -2187,7 +2249,7 @@
                 67
             ],
             "linked_from": [
-                66
+                65
             ],
             "rewards": [
                 "Gain “Elemental Stone” (Item 212)",
@@ -2268,6 +2330,14 @@
                 "x": 20.93,
                 "y": 14.05
             },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
             "is_side": true,
             "chapter_id": 107,
             "links_to": [
@@ -2450,6 +2520,13 @@
                 "x": 76.05,
                 "y": 12.71
             },
+            "blocks_on": [
+                {
+                    "incomplete": [
+                        "CFFK"
+                    ]
+                }
+            ],
             "chapter_id": 107,
             "treasures": [
                 20,
@@ -2482,6 +2559,13 @@
                 "x": 80.63,
                 "y": 14.12
             },
+            "blocks_on": [
+                {
+                    "complete": [
+                        "CFFK"
+                    ]
+                }
+            ],
             "chapter_id": 107,
             "treasures": [
                 2,
@@ -3181,6 +3265,14 @@
                 "x": 24.68,
                 "y": 18.25
             },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
             "chapter_id": 111,
             "links_to": [
                 102
@@ -3720,6 +3812,14 @@
                 "x": 15.84,
                 "y": 10.88
             },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
@@ -4160,6 +4260,14 @@
                 "x": 12.03,
                 "y": 10.6
             },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
             "is_side": true,
             "chapter_id": 110,
             "rewards": [
