@@ -2,7 +2,7 @@
     <div class="w-full mt-8">
         <div class="mb-2 flex items-center">
             <h2>{{ title }}</h2>
-            <rollback :loading="rollbackLoaded" ref="rollback"
+            <rollback :loading="!rollbackLoaded" ref="rollback"
                       :value="items"
                       @change="rolledBack"/>
         </div>
