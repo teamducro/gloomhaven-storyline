@@ -238,10 +238,11 @@ export default {
             this.$refs['total-defense']?.reset();
             this.$refs['soldiers']?.reset();
             this.$refs['prosperity']?.reset();
-            // this.$refs['summer-road']?.reset();
-            // this.$refs['summer-outpost']?.reset();
-            // this.$refs['winter-road']?.reset();
-            // this.$refs['winter-outpost']?.reset();
+            this.$refs['summer-road-events']?.reset();
+            this.$refs['summer-outpost-events']?.reset();
+            this.$refs['winter-road-events']?.reset();
+            this.$refs['winter-outpost-events']?.reset();
+            this.$refs['boat-events']?.reset();
 
             this.loading = false;
         },
