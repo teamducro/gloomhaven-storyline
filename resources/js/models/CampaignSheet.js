@@ -271,7 +271,7 @@ class CampaignSheet {
 
     // The key used in local storage
     key() {
-        return 'sheet-' + this.game;
+        return 'campaign-' + this.game;
     }
 }
 

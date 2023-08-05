@@ -34,6 +34,14 @@ export default class GameData {
         return [Game.fh]
     }
 
+    purchasable() {
+        return [Game.gh, Game.fh]
+    }
+
+    free() {
+        return this.games().filter(game => !this.purchasable().includes(game))
+    }
+
     achievements(game) {
         switch (game) {
             case Game.jotl:

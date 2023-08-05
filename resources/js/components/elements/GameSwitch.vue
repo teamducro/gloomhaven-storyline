@@ -23,13 +23,16 @@
                 </li>
             </ul>
         </div>
+        <purchase v-if="story" ref="purchase"
+                  :story-id="story.id" :showTrigger="false"></purchase>
     </div>
 </template>
 
 <script>
 
-import {MDCSelect} from "@material/select/component";
-import GameData from "../../services/GameData";
+import {MDCSelect} from "@material/select/component"
+import GameData from "../../services/GameData"
+import StoryRepository from "../../repositories/StoryRepository"
 
 export default {
     inject: ['appData'],
@@ -42,38 +45,66 @@ export default {
     data() {
         return {
             current: null,
+            story: null,
             games: [],
-            beta: []
+            beta: [],
+            storyRepository: new StoryRepository,
+            gameData: new GameData
         }
     },
     mounted() {
-        this.beta = (new GameData).beta();
-        this.$bus.$on('campaigns-changed', this.setCurrent);
-        this.$bus.$on('enabled-games-changed', this.setGames);
+        this.beta = this.gameData.beta()
+        this.$bus.$on('campaigns-changed', this.setCurrent)
+        this.$bus.$on('game-selected', this.setSelected)
+        this.$bus.$on('enabled-games-changed', this.setGames)
 
-        this.select = new MDCSelect(this.$refs['game-switch']);
-        this.select.listen('MDCSelect:change', this.selected);
+        this.select = new MDCSelect(this.$refs['game-switch'])
+        this.select.listen('MDCSelect:change', this.selected)
     },
     destroyed() {
-        this.select?.destroy();
+        this.select?.destroy()
 
-        this.$bus.$off('campaigns-changed', this.setCurrent);
-        this.$bus.$off('enabled-games-changed', this.setGames);
+        this.$bus.$off('campaigns-changed', this.setCurrent)
+        this.$bus.$off('game-selected', this.setSelected)
+        this.$bus.$off('enabled-games-changed', this.setGames)
     },
     methods: {
         open() {
-            document.querySelector('.game-switch .mdc-select__selected-text').click();
+            document.querySelector('.game-switch .mdc-select__selected-text').click()
         },
         setCurrent() {
-            this.current = this.appData.game;
+            this.current = this.appData.game
+            this.story = this.storyRepository.current()
+
+            if (this.isNotAvailable(this.current)) {
+                this.current = this.story.games[0]
+                this.$bus.$emit('game-selected', this.current)
+            }
         },
         setGames(enabledGames) {
-            this.games = enabledGames || app.enabledGames;
+            this.games = enabledGames || app.enabledGames
+        },
+        isNotAvailable(code) {
+            return this.story && this.gameData.purchasable().includes(code) && !this.story?.games.includes(code)
         },
         selected(event) {
-            const code = event?.detail?.value;
-            if (this.current !== code) {
-                this.$bus.$emit('game-selected', code);
+            const code = event?.detail?.value
+
+            if (this.isNotAvailable(code)) {
+                // This prevent this game from being selected
+                this.setSelected(this.current)
+
+                // The game is not purchased yet
+                this.$refs.purchase.openExpandModal(code)
+            }
+
+            else if (this.current !== code) {
+                this.$bus.$emit('game-selected', code)
+            }
+        },
+        setSelected(code) {
+            if (this.select.selectedIndex !== this.games.indexOf(code)) {
+                this.select.selectedIndex = this.games.indexOf(code)
             }
         }
     }

@@ -3,6 +3,8 @@ import ApiStoryRepository from "../apiRepositories/StoryRepository";
 import dayjs from "dayjs";
 import Sheet from "../models/Sheet";
 import Character from "../models/Character";
+import CampaignSheet from "../models/CampaignSheet";
+import {Game} from "../models/Game";
 
 export default class StorySyncer {
     store(force = false) {
@@ -28,19 +30,26 @@ export default class StorySyncer {
     getStoryData() {
         // clone data to prevent references
         const data = _.clone(app.campaignData);
-        const modelMap = {'sheet': Sheet, 'character': Character};
-
-        // Remove unneeded data
-        delete data['character-demo'];
+        const modelMap = {
+            'sheet': Sheet,
+            'campaign': CampaignSheet,
+            'character': Character
+        };
 
         for (const key in data) {
+            // Remove undefined values
+            if (key.endsWith('-undefined') || key === 'character-demo') {
+                delete data[key];
+                continue;
+            }
+
             for (const modelName in modelMap) {
                 if (key.startsWith(modelName)) {
                     const modelData = data[key];
 
                     // Add game to the sheet data to prevent issues while updating the version.
-                    if (modelName === 'sheet') {
-                        modelData.game = key.includes('-') ? key.split('-')[1] : 'gh';
+                    if (modelName === 'sheet' || modelName === 'campaign') {
+                        modelData.game = key.includes('-') ? key.split('-')[1] : Game.gh;
                     }
 
                     // Resolve an instance of the model
