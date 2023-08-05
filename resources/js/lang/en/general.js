@@ -390,7 +390,7 @@ export default {
         "SR": "Summer Road",
         "SO": "Summer Outpost",
         "WR": "Winter Road",
-        "WR": "Winter Outpost",
+        "WO": "Winter Outpost",
         "B": "Boat",
     },
 

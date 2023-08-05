@@ -34,7 +34,7 @@ class Card {
             'SR': 'summerRoad',
             'SO': 'summerOutpost',
             'WR': 'winterRoad',
-            'WR': 'winterOutpost',
+            'WO': 'winterOutpost',
             'B': 'boat',
         };
 
