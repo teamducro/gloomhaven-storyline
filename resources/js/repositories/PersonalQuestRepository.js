@@ -20,7 +20,7 @@ export default class PersonalQuestRepository {
                 return true;
             }
             let requiredBuilding = this.buildingRepository.find(quest.requiredBuildingLevel[0]);
-            return requiredBuilding.isUnlocked() && requiredBuilding.level >= quest.requiredBuildingLevel[1];
+            return requiredBuilding?.isUnlocked() && requiredBuilding.level >= quest.requiredBuildingLevel[1];
         });
     }
 
