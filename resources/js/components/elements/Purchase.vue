@@ -11,6 +11,7 @@
                         <td><checkbox group="purchasable-games"
                                       :id="'game-'+game"
                                       :checked="games.includes(game)"
+                                      :auto-disable="false"
                                       @change="(id, isChecked) => {changedGames(game, isChecked)}"></checkbox>
                         </td>
                         <td class="pr-2"><label :for="'game-'+game">{{ $t(game) }}</label></td>
