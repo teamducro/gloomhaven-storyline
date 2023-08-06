@@ -26,8 +26,8 @@
                     <span class="mdc-button__label text-white2-75">{{ $t('Cancel') }}</span>
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
-                        @click="purchase">
-                    <span class="mdc-button__label text-primary">{{ $t('Purchase') }}</span>
+                        @click="purchase" :disabled="!games.length">
+                    <span class="mdc-button__label text-primary" :class="!games.length ? 'opacity-50' : ''">{{ $t('Purchase') }}</span>
                 </button>
             </template>
         </modal>
@@ -67,6 +67,10 @@ export default {
         showTrigger: {
             type: Boolean,
             default: true
+        },
+        preselect: {
+            type: String,
+            default: null
         }
     },
     computed: {
@@ -97,6 +101,10 @@ export default {
             }
             this.expand = null
 
+            if (this.games.length === 0 && this.preselect) {
+                this.games = [this.preselect]
+            }
+
             this.$refs['purchase-modal'].open();
         },
         openExpandModal(game) {
@@ -119,7 +127,7 @@ export default {
             await this.purchase()
         },
         async purchase() {
-            if (this.purchasing) {
+            if (this.purchasing || this.games.length === 0) {
                 return;
             }
             this.purchasing = true;
