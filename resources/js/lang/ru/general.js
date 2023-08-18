@@ -14,8 +14,6 @@ export default {
     "Add rift events": "Добавить карты событий «Портал»",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Каждый раз, когда ваш отряд успешно завершает 5 сценариев, проверьте любую из коробочек и получите соответствующую награду.",
     "completed scenarios": "выполненных сценариев",
-
-    // Achievements
     "5 Ancient Technology Global Achievements": "5 раз получено общее достижение «Древняя технология»",
     "Add City Event 75 & Road Event 66": "Добавьте в колоду «Город» карту события 75, а в колоду «Дорога» — карту события 66",
     "Add City Event 76 & Road Event 67": "Добавьте в колоду «Город» карту события 76, а в колоду «Дорога» — карту события 67",
@@ -28,8 +26,6 @@ export default {
     "Have a party reputation of 10 or higher": "Репутация отряда равна 10 или больше",
     "Have a party reputation of 20": "Репутация отряда равна 20",
     "Retire a character": "Персонаж ушёл на покой",
-
-    // Storyline App
     "Abilities": "Способности",
     "Achievement": "Достижение | Достижения",
     "Achievements": "Достижения",
@@ -96,7 +92,7 @@ export default {
     "Retirement counter": "Ушедшие на покой",
     "Reward": "Награда | Награды",
     "Rewards": "Награды",
-    "Search name or nr": "Search name or nr",
+    "Search": "Search",
     "Set this counter to the amount of characters you have retired": "Укажите сколько ваших персонажей ушло на покой.",
     "Show all": "Показать всё",
     "Manage": "Изменить",
@@ -127,6 +123,22 @@ export default {
     "reset": {
         "text": "Вы уверены, что хотите обнулить все данные о пройденных сценариях?"
     },
+    "purchase": {
+        "new_text": "You are purchasing a new shared campaign license, please select one or more games.",
+        "renew_text": "You are renewing your existing shared campaign license, please select one or more games.",
+        "following_free": "The following games are included for free",
+        "expand_title": {
+            "gh": "Unlock Gloomhaven for a New Adventure",
+            "fh": "Unlock Frosthaven for a New Adventure"
+        },
+        "expand_text": {
+            "gh": "You've selected Gloomhaven but you don't have access to it yet.",
+            "fh": "You've selected Frosthaven but you don't have access to it yet.",
+            "general": "Ready for a new adventure? Add it to your existing shared campaign license."
+        },
+        "local": "Or use the free local version instead.",
+        "Go to local": "Go to local"
+    },
     "share": "поделиться",
     "share-modal": {
         "1": "Подлитесь своей локальной кампанией с членами вашего отряда.",
@@ -135,11 +147,11 @@ export default {
         "title": "Поделиться Gloomhaven Storyline Tracker"
     },
     "share-campaign-code": {
-        "not-allowed": "Вы не можете поделиться этой кампанией, поскольку не являетесь её создателем.",
         "1": "Поделитесь кодом кампании с членами вашего отряда, чтобы включить синхронизацию прогресса на всех ваших устройствах!",
         "2": "Доступно до",
         "3": "Код действителен одну неделю.",
         "4": "Когда включено, пользователи, использующие этот код, не смогут вносить изменения в кампанию.",
+        "not-allowed": "Вы не можете поделиться этой кампанией, поскольку не являетесь её создателем."
     },
     "Read only mode": "Режим «Только для чтения»",
     "campaign page": {
@@ -183,6 +195,7 @@ export default {
     "Campaigns": "Кампании",
     "Campaign code": "Код кампании",
     "Buy shared campaign": "Buy new shared campaign",
+    "Renew shared campaign": "Renew shared campaign",
     "Add shared campaign": "Add shared campaign",
     "donations": {
         "1": {
@@ -272,18 +285,32 @@ export default {
     "Characters": "Персонажи",
     "Character sheet": "Листы персонажей",
     "Party sheet": "Отряд",
+    "Campaign sheet": "Campaign sheet",
     "Reputation": "Репутация",
     "Shop modifier": "Скидка/надбавка",
-
-    // Game Editions
+    "corpsecap": "Corpsecap",
+    "algox": "Algox",
+    "arrowvine": "Arrowvine",
+    "axenut": "Axenut",
+    "flamefruit": "Flamefruit",
+    "coins": "Coins",
+    "gold": "Gold",
+    "hide": "Hide",
+    "lumber": "Lumber",
+    "lurkers": "Lurkers",
+    "metal": "Metal",
+    "rockroot": "Rockroot",
+    "snowthistle": "Snowthistle",
+    "unfettered": "Unfettered",
     "gh": "Мрачная гавань",
+    "fh": "Frosthaven",
+    "Frosthaven": "Frosthaven",
     "fc": "Забытые круги",
     "Forgotten Circles": "Забытые круги",
     "jotl": "Челюсти льва",
     "Jaws of the Lion": "Челюсти льва",
     "cs": "Багровая чешуя",
     "Crimson Scales": "Багровая чешуя",
-
     "Availability": "Доступность",
     "Sticker": "Наклейка",
     "State": "State",
@@ -342,7 +369,6 @@ export default {
     "East Coast": "East Coast",
     "different Dimension": "different Dimension",
     "and": "and",
-    "or": "or",
     "Hidden Scenario": "Скрытый сценарий",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
@@ -352,10 +378,8 @@ export default {
         "R": "Road Event",
         "C": "City Event",
         "Q": "Personal Quest",
-        "RIFT": "Rift",
+        "RIFT": "Rift"
     },
-
-    //Ability Enhancements
     "Shield": "Shield",
     "Heal": "Heal",
     "Attack": "Attack",
@@ -364,11 +388,8 @@ export default {
     "Jump": "Jump",
     "Flying": "Flying",
     "Retaliate": "Retaliate",
-
     "Recover": "Recover",
     "Refresh": "Refresh",
-
-    // Conditions
     "BANE": "BANE",
     "BLESS": "BLESS",
     "CHILL": "CHILL",
@@ -393,8 +414,6 @@ export default {
     "TELEPORT": "TELEPORT",
     "WARD": "WARD",
     "WOUND": "WOUND",
-
-    // Class-colored Text
     "Augment": "Augment",
     "Colony": "Colony",
     "Command": "Command",

@@ -123,6 +123,22 @@ export default {
     "reset": {
         "text": "Czy na pewno chcesz usunąć wszystkie dane scenariusza?"
     },
+    "purchase": {
+        "new_text": "You are purchasing a new shared campaign license, please select one or more games.",
+        "renew_text": "You are renewing your existing shared campaign license, please select one or more games.",
+        "following_free": "The following games are included for free",
+        "expand_title": {
+            "gh": "Unlock Gloomhaven for a New Adventure",
+            "fh": "Unlock Frosthaven for a New Adventure"
+        },
+        "expand_text": {
+            "gh": "You've selected Gloomhaven but you don't have access to it yet.",
+            "fh": "You've selected Frosthaven but you don't have access to it yet.",
+            "general": "Ready for a new adventure? Add it to your existing shared campaign license."
+        },
+        "local": "Or use the free local version instead.",
+        "Go to local": "Go to local"
+    },
     "share": "udostępnić",
     "share-modal": {
         "1": "Podziel się swoją aktualną lokalną rozgrywką z członkami drużyny.",
@@ -179,6 +195,7 @@ export default {
     "Campaigns": "Kampanie",
     "Campaign code": "Kod kampanii",
     "Buy shared campaign": "Zakup nowej współdzielonej kampanii",
+    "Renew shared campaign": "Renew shared campaign",
     "Add shared campaign": "Dodaj współdzieloną kampanię",
     "donations": {
         "1": {
@@ -267,9 +284,26 @@ export default {
     "Characters": "Postaci",
     "Character sheet": "Dziennik postaci",
     "Party sheet": "Dziennik drużyny",
+    "Campaign sheet": "Campaign sheet",
     "Reputation": "Reputacja",
     "Shop modifier": "Modyfikacje cen sklepowych",
+    "corpsecap": "Corpsecap",
+    "algox": "Algox",
+    "arrowvine": "Arrowvine",
+    "axenut": "Axenut",
+    "flamefruit": "Flamefruit",
+    "coins": "Coins",
+    "gold": "Gold",
+    "hide": "Hide",
+    "lumber": "Lumber",
+    "lurkers": "Lurkers",
+    "metal": "Metal",
+    "rockroot": "Rockroot",
+    "snowthistle": "Snowthistle",
+    "unfettered": "Unfettered",
     "gh": "Gloomhaven",
+    "fh": "Frosthaven",
+    "Frosthaven": "Frosthaven",
     "fc": "Forgotten Circles (Zapomniane kręgi)",
     "Forgotten Circles": "Forgotten Circles (Zapomniane kręgi)",
     "jotl": "Jaws of the Lion (Szczęki Lwa)",
