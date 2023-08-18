@@ -274,5 +274,95 @@ export default {
     },
     "cs-PCSAM": {
         "name": "Accomplished Mercenaries"
+    },
+    "fh-CFIS": {
+        "name": "Friend of the Icespeakers"
+    },
+    "fh-CFSS": {
+        "name": "Friend of the Snowspeakers"
+    },
+    "fh-CFFS": {
+        "name": "Friend of the Frostspeakers"
+    },
+    "fh-CDIS": {
+        "name": "Destroyer of the Icespeakers"
+    },
+    "fh-CDSS": {
+        "name": "Destroyer of the Snowspeakers"
+    },
+    "fh-CFFK": {
+        "name": "Friend of the Fish King"
+    },
+    "fh-CCU": {
+        "name": "Crown United"
+    },
+    "fh-CUA": {
+        "name": "Unfettered Allies"
+    },
+    "fh-CUD": {
+        "name": "Unfettered Deactivated"
+    },
+    "fh-CITF": {
+        "name": "Into the Forest"
+    },
+    "fh-CFP": {
+        "name": "Firepepper"
+    },
+    "fh-CSS": {
+        "name": "Shard Seeker"
+    },
+    "fh-CEJ": {
+        "name": "Empty Jar"
+    },
+    "fh-CBJ": {
+        "name": "Bug in a Jar"
+    },
+    "fh-CUC": {
+        "name": "Uncharged Core"
+    },
+    "fh-CCC": {
+        "name": "Charged Core"
+    },
+    "fh-CHF": {
+        "name": "Harvest Festival"
+    },
+    "fh-CBT": {
+        "name": "Brummix Tracks"
+    },
+    "fh-CBT2": {
+        "name": "Brummix Tracks x2"
+    },
+    "fh-CBT3": {
+        "name": "Brummix Tracks x3"
+    },
+    "fh-CBT4": {
+        "name": "Brummix Tracks x4"
+    },
+    "fh-CBT5": {
+        "name": "Brummix Tracks x5"
+    },
+    "fh-CCCS": {
+        "name": "Coral Crown Shard"
+    },
+    "fh-CCCS2": {
+        "name": "Coral Crown Shard x2"
+    },
+    "fh-CCCS3": {
+        "name": "Coral Crown Shard x3"
+    },
+    "fh-CCCS4": {
+        "name": "Coral Crown Shard x4"
+    },
+    "fh-CCCS5": {
+        "name": "Coral Crown Shard x5"
+    },
+    "fh-CCCS6": {
+        "name": "Coral Crown Shard x6"
+    },
+    "fh-PHOI": {
+        "name": "Heart of Ice"
+    },
+    "fh-PHOS": {
+        "name": "Heart of Snow"
     }
 }

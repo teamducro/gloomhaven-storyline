@@ -3474,5 +3474,1639 @@ export default {
         "wish-upon-a-star": {
             "name": "wish upon a star"
         }
+    },
+    "fh": {
+        "blurry-jab": {
+            "name": "blurry jab"
+        },
+        "borrowed-time": {
+            "name": "borrowed time"
+        },
+        "breakneck-speed": {
+            "name": "breakneck speed"
+        },
+        "cascading-reaction": {
+            "name": "cascading reaction"
+        },
+        "double-time": {
+            "name": "double time"
+        },
+        "drive-recharge": {
+            "name": "drive recharge"
+        },
+        "experimental-adjustment": {
+            "name": "experimental adjustment"
+        },
+        "fastest-alive": {
+            "name": "fastest alive"
+        },
+        "flashing-flurry": {
+            "name": "flashing flurry"
+        },
+        "fractured-timeline": {
+            "name": "fractured timeline"
+        },
+        "hit-and-run": {
+            "name": "hit and run"
+        },
+        "kinetic-transfer": {
+            "name": "kinetic transfer"
+        },
+        "make-it-count": {
+            "name": "make it count"
+        },
+        "overdrive": {
+            "name": "overdrive"
+        },
+        "phasing-blades": {
+            "name": "phasing blades"
+        },
+        "potential-energy": {
+            "name": "potential energy"
+        },
+        "power-leak": {
+            "name": "power leak"
+        },
+        "precision-timing": {
+            "name": "precision timing"
+        },
+        "quantum-uncertainty": {
+            "name": "quantum uncertainty"
+        },
+        "reckless-augmentation": {
+            "name": "reckless augmentation"
+        },
+        "reverse-the-flow": {
+            "name": "reverse the flow"
+        },
+        "rushed-to-the-end": {
+            "name": "rushed to the end"
+        },
+        "sand-in-the-hourglass": {
+            "name": "sand in the hourglass"
+        },
+        "sap-speed": {
+            "name": "sap speed"
+        },
+        "stab-them-all": {
+            "name": "stab them all"
+        },
+        "systems-reboot": {
+            "name": "systems reboot"
+        },
+        "temporal-displacement": {
+            "name": "temporal displacement"
+        },
+        "the-knife's-edge": {
+            "name": "the knife's edge"
+        },
+        "twin-strike": {
+            "name": "twin strike"
+        },
+        "air-support": {
+            "name": "air support"
+        },
+        "trained-falcon": {
+            "name": "trained falcon"
+        },
+        "at-all-costs": {
+            "name": "at all costs"
+        },
+        "reinforcement": {
+            "name": "reinforcement"
+        },
+        "barricade": {
+            "name": "barricade"
+        },
+        "banner-of-valor": {
+            "name": "banner of valor"
+        },
+        "boldening-blow": {
+            "name": "boldening blow"
+        },
+        "bolstering-shout": {
+            "name": "bolstering shout"
+        },
+        "combined-effort": {
+            "name": "combined effort"
+        },
+        "deflecting-maneuver": {
+            "name": "deflecting maneuver"
+        },
+        "driving-inspiration": {
+            "name": "driving inspiration"
+        },
+        "banner-of-hope": {
+            "name": "banner of hope"
+        },
+        "explosive-epicenter": {
+            "name": "explosive epicenter"
+        },
+        "hail-of-spears": {
+            "name": "hail of spears"
+        },
+        "head-of-the-hammer": {
+            "name": "head of the hammer"
+        },
+        "hold-the-line": {
+            "name": "hold the line"
+        },
+        "incendiary-throw": {
+            "name": "incendiary throw"
+        },
+        "torch-bearer": {
+            "name": "torch bearer"
+        },
+        "javelin": {
+            "name": "javelin"
+        },
+        "lead-from-afar": {
+            "name": "lead from afar"
+        },
+        "longbowman": {
+            "name": "longbowman"
+        },
+        "let-them-come": {
+            "name": "let them come"
+        },
+        "banner-of-courage": {
+            "name": "banner of courage"
+        },
+        "meat-grinder": {
+            "name": "meat grinder"
+        },
+        "pincer-movement": {
+            "name": "pincer movement"
+        },
+        "pinning-charge": {
+            "name": "pinning charge"
+        },
+        "rallying-cry": {
+            "name": "rallying cry"
+        },
+        "banner-of-strength": {
+            "name": "banner of strength"
+        },
+        "regroup": {
+            "name": "regroup"
+        },
+        "resolved-courage": {
+            "name": "resolved courage"
+        },
+        "set-for-the-charge": {
+            "name": "set for the charge"
+        },
+        "sweeping-aid": {
+            "name": "sweeping aid"
+        },
+        "take-no-prisoners": {
+            "name": "take no prisoners"
+        },
+        "banner-of-doom": {
+            "name": "banner of doom"
+        },
+        "taunting-howl": {
+            "name": "taunting howl"
+        },
+        "tip-of-the-spear": {
+            "name": "tip of the spear"
+        },
+        "tri-thrust": {
+            "name": "tri-thrust"
+        },
+        "unbreakable-wall": {
+            "name": "unbreakable wall"
+        },
+        "angry-spirits": {
+            "name": "angry spirits"
+        },
+        "wraith": {
+            "name": "wraith"
+        },
+        "approach-oblivion": {
+            "name": "approach oblivion"
+        },
+        "behold-the-shrouded-sun": {
+            "name": "behold the shrouded sun"
+        },
+        "bone-dagger": {
+            "name": "bone dagger"
+        },
+        "command-the-wretched": {
+            "name": "command the wretched"
+        },
+        "critical-failure": {
+            "name": "critical failure"
+        },
+        "damned-horde": {
+            "name": "damned horde"
+        },
+        "shambling-skeleton": {
+            "name": "shambling skeleton"
+        },
+        "dark-tidings": {
+            "name": "dark tidings"
+        },
+        "decaying-will": {
+            "name": "decaying will"
+        },
+        "endless-numbers": {
+            "name": "endless numbers"
+        },
+        "bone-horde": {
+            "name": "bone horde"
+        },
+        "eternal-torment": {
+            "name": "eternal torment"
+        },
+        "exploding-corpse": {
+            "name": "exploding corpse"
+        },
+        "fell-remedy": {
+            "name": "fell remedy"
+        },
+        "flesh-shield": {
+            "name": "flesh shield"
+        },
+        "flow-of-the-black-river": {
+            "name": "flow of the black river"
+        },
+        "grave-digging": {
+            "name": "grave digging"
+        },
+        "life-in-death": {
+            "name": "life in death"
+        },
+        "malicious-conversion": {
+            "name": "malicious conversion"
+        },
+        "putrid-cloud": {
+            "name": "putrid cloud"
+        },
+        "recycled-limbs": {
+            "name": "recycled limbs"
+        },
+        "returned-servant": {
+            "name": "returned servant"
+        },
+        "rotting-multitude": {
+            "name": "rotting multitude"
+        },
+        "two-shambling-skeletons": {
+            "name": "two shambling skeletons"
+        },
+        "solid-bones": {
+            "name": "solid bones"
+        },
+        "soul-claim": {
+            "name": "soul claim"
+        },
+        "transfer-of-essence": {
+            "name": "transfer of essence"
+        },
+        "twisted-decree": {
+            "name": "twisted decree"
+        },
+        "unearthed-horror": {
+            "name": "unearthed horror"
+        },
+        "raging-corpse": {
+            "name": "raging corpse"
+        },
+        "unforgivable-methods": {
+            "name": "unforgivable methods"
+        },
+        "stitched-atrocity": {
+            "name": "stitched atrocity"
+        },
+        "unholy-prowess": {
+            "name": "unholy prowess"
+        },
+        "skeleton-sorcerer": {
+            "name": "skeleton sorcerer"
+        },
+        "wailing-from-beyond": {
+            "name": "wailing from beyond"
+        },
+        "wrath-of-the-turned-earth": {
+            "name": "wrath of the turned earth"
+        },
+        "blood-in-the-water": {
+            "name": "blood in the water"
+        },
+        "chaotic-refraction": {
+            "name": "chaotic refraction"
+        },
+        "cleansing-swell": {
+            "name": "cleansing swell"
+        },
+        "clean-sweep": {
+            "name": "clean sweep"
+        },
+        "crashing-surge": {
+            "name": "crashing surge"
+        },
+        "cresting-force": {
+            "name": "cresting force"
+        },
+        "crush-armor": {
+            "name": "crush armor"
+        },
+        "death-on-all-sides": {
+            "name": "death on all sides"
+        },
+        "down-to-the-depths": {
+            "name": "down to the depths"
+        },
+        "drown-beneath-the-waves": {
+            "name": "drown beneath the waves"
+        },
+        "dug-in": {
+            "name": "dug in"
+        },
+        "ebb-and-flow": {
+            "name": "ebb and flow"
+        },
+        "endless-cycle": {
+            "name": "endless cycle"
+        },
+        "high-tide": {
+            "name": "high tide"
+        },
+        "low-tide": {
+            "name": "low tide"
+        },
+        "mighty-claws": {
+            "name": "mighty claws"
+        },
+        "overwhelming-wave": {
+            "name": "overwhelming wave"
+        },
+        "pool-of-power": {
+            "name": "pool of power"
+        },
+        "powerful-pincer": {
+            "name": "powerful pincer"
+        },
+        "rancid-brine": {
+            "name": "rancid brine"
+        },
+        "rising-flood": {
+            "name": "rising flood"
+        },
+        "sharp-chitin": {
+            "name": "sharp chitin"
+        },
+        "shuck": {
+            "name": "shuck"
+        },
+        "skitter": {
+            "name": "skitter"
+        },
+        "smashing-torrent": {
+            "name": "smashing torrent"
+        },
+        "sodden-soil": {
+            "name": "sodden soil"
+        },
+        "soft-flesh": {
+            "name": "soft flesh"
+        },
+        "submerge": {
+            "name": "submerge"
+        },
+        "tidal-blast": {
+            "name": "tidal blast"
+        },
+        "twilight-grasp": {
+            "name": "twilight grasp"
+        },
+        "undertow": {
+            "name": "undertow"
+        },
+        "accurate-strikes": {
+            "name": "accurate strikes"
+        },
+        "against-all-odds": {
+            "name": "against all odds"
+        },
+        "bloodletting": {
+            "name": "bloodletting"
+        },
+        "break-through": {
+            "name": "break through"
+        },
+        "chunk-of-flesh": {
+            "name": "chunk of flesh"
+        },
+        "consume-stamina": {
+            "name": "consume stamina"
+        },
+        "continuous-health": {
+            "name": "continuous health"
+        },
+        "crushing-weight": {
+            "name": "crushing weight"
+        },
+        "deadly-shot": {
+            "name": "deadly shot"
+        },
+        "destructive-fury": {
+            "name": "destructive fury"
+        },
+        "draining-arrows": {
+            "name": "draining arrows"
+        },
+        "dual-bow": {
+            "name": "dual bow"
+        },
+        "ever-forward": {
+            "name": "ever forward"
+        },
+        "everlasting": {
+            "name": "everlasting"
+        },
+        "fierce-barrage": {
+            "name": "fierce barrage"
+        },
+        "fortitude": {
+            "name": "fortitude"
+        },
+        "gift-of-the-prey": {
+            "name": "gift of the prey"
+        },
+        "inevitable-conclusion": {
+            "name": "inevitable conclusion"
+        },
+        "like-the-wind": {
+            "name": "like the wind"
+        },
+        "no-remorse": {
+            "name": "no remorse"
+        },
+        "precision-aim": {
+            "name": "precision aim"
+        },
+        "prudent-preparation": {
+            "name": "prudent preparation"
+        },
+        "relentless": {
+            "name": "relentless"
+        },
+        "shockwave": {
+            "name": "shockwave"
+        },
+        "survivalist": {
+            "name": "survivalist"
+        },
+        "sustained-momentum": {
+            "name": "sustained momentum"
+        },
+        "unbreakable": {
+            "name": "unbreakable"
+        },
+        "unending-fight": {
+            "name": "unending fight"
+        },
+        "use-every-part": {
+            "name": "use every part"
+        },
+        "vile-assault": {
+            "name": "vile assault"
+        },
+        "violent-inheritance": {
+            "name": "violent inheritance"
+        },
+        "black-night-of-the-deep": {
+            "name": "black night of the deep"
+        },
+        "black-scythe": {
+            "name": "black scythe"
+        },
+        "claw-of-doom": {
+            "name": "claw of doom"
+        },
+        "consume-the-helpless": {
+            "name": "consume the helpless"
+        },
+        "crippling-terror": {
+            "name": "crippling terror"
+        },
+        "crushing-darkness": {
+            "name": "crushing darkness"
+        },
+        "death-spiral": {
+            "name": "death spiral"
+        },
+        "dire-frenzy": {
+            "name": "dire frenzy"
+        },
+        "extra-decoration": {
+            "name": "extra decoration"
+        },
+        "grim-trophies": {
+            "name": "grim trophies"
+        },
+        "hasten-the-end": {
+            "name": "hasten the end"
+        },
+        "haunting-brutality": {
+            "name": "haunting brutality"
+        },
+        "hollow-aura": {
+            "name": "hollow aura"
+        },
+        "ink-cloud": {
+            "name": "ink cloud"
+        },
+        "lacerating-stabs": {
+            "name": "lacerating stabs"
+        },
+        "lie-in-wait": {
+            "name": "lie in wait"
+        },
+        "mantle-of-dread": {
+            "name": "mantle of dread"
+        },
+        "morbid-camouflage": {
+            "name": "morbid camouflage"
+        },
+        "pinning-spines": {
+            "name": "pinning spines"
+        },
+        "rip-from-the-bone": {
+            "name": "rip from the bone"
+        },
+        "skewer-the-flesh": {
+            "name": "skewer the flesh"
+        },
+        "skull-collection": {
+            "name": "skull collection"
+        },
+        "slipping-into-death": {
+            "name": "slipping into death"
+        },
+        "soul-hunger": {
+            "name": "soul hunger"
+        },
+        "staring-into-the-abyss": {
+            "name": "staring into the abyss"
+        },
+        "succumb-to-fear": {
+            "name": "succumb to fear"
+        },
+        "the-remorseless-deep": {
+            "name": "the remorseless deep"
+        },
+        "tumultuous-panic": {
+            "name": "tumultuous panic"
+        },
+        "unseen-horror": {
+            "name": "unseen horror"
+        },
+        "anger-of-the-dead": {
+            "name": "anger of the dead"
+        },
+        "black-barrage": {
+            "name": "black barrage"
+        },
+        "black-lance": {
+            "name": "black lance"
+        },
+        "call-of-doom": {
+            "name": "call of doom"
+        },
+        "call-to-the-abyss": {
+            "name": "call to the abyss"
+        },
+        "dark-fog": {
+            "name": "dark fog"
+        },
+        "dead-bolt": {
+            "name": "dead bolt"
+        },
+        "deepening-despair": {
+            "name": "deepening despair"
+        },
+        "dominate": {
+            "name": "dominate"
+        },
+        "eclipse": {
+            "name": "eclipse"
+        },
+        "fleeting-dusk": {
+            "name": "fleeting dusk"
+        },
+        "fluid-night": {
+            "name": "fluid night"
+        },
+        "forceful-spirits": {
+            "name": "forceful spirits"
+        },
+        "frozen-in-fear": {
+            "name": "frozen in fear"
+        },
+        "hungry-grasps": {
+            "name": "hungry grasps"
+        },
+        "lashing-tendrils": {
+            "name": "lashing tendrils"
+        },
+        "lingering-rot": {
+            "name": "lingering rot"
+        },
+        "medium": {
+            "name": "medium"
+        },
+        "proliferation-of-the-abyss": {
+            "name": "proliferation of the abyss"
+        },
+        "pulled-across": {
+            "name": "pulled across"
+        },
+        "rest-in-the-shade": {
+            "name": "rest in the shade"
+        },
+        "restless-spirits": {
+            "name": "restless spirits"
+        },
+        "ritual-sacrifice": {
+            "name": "ritual sacrifice"
+        },
+        "shadow-step": {
+            "name": "shadow step"
+        },
+        "strength-of-the-abyss": {
+            "name": "strength of the abyss"
+        },
+        "sunless-apparition": {
+            "name": "sunless apparition"
+        },
+        "shadow-beast": {
+            "name": "shadow beast"
+        },
+        "the-night-takes-shape": {
+            "name": "the night takes shape"
+        },
+        "shadow-horror": {
+            "name": "shadow horror"
+        },
+        "vengeful-storm": {
+            "name": "vengeful storm"
+        },
+        "wave-of-anguish": {
+            "name": "wave of anguish"
+        },
+        "when-your-time-comes": {
+            "name": "when your time comes"
+        },
+        "bring-down-the-mountain": {
+            "name": "bring down the mountain"
+        },
+        "cold-boulder": {
+            "name": "cold boulder"
+        },
+        "crushing-crystals": {
+            "name": "crushing crystals"
+        },
+        "draw-of-the-bedrock": {
+            "name": "draw of the bedrock"
+        },
+        "draw-strength": {
+            "name": "draw strength"
+        },
+        "encased-punch": {
+            "name": "encased punch"
+        },
+        "freezing-shell": {
+            "name": "freezing shell"
+        },
+        "frost-eruption": {
+            "name": "frost eruption"
+        },
+        "frozen-over": {
+            "name": "frozen over"
+        },
+        "frozen-spike": {
+            "name": "frozen spike"
+        },
+        "fury-of-the-mountain": {
+            "name": "fury of the mountain"
+        },
+        "gift-of-the-mountain": {
+            "name": "gift of the mountain"
+        },
+        "glacier-slam": {
+            "name": "glacier slam"
+        },
+        "ice-blast": {
+            "name": "ice blast"
+        },
+        "ice-uppercut": {
+            "name": "ice uppercut"
+        },
+        "lacerating-eruption": {
+            "name": "lacerating eruption"
+        },
+        "one-with-the-mountain": {
+            "name": "one with the mountain"
+        },
+        "packed-solid": {
+            "name": "packed solid"
+        },
+        "piercing-pummel": {
+            "name": "piercing pummel"
+        },
+        "preserved-fury": {
+            "name": "preserved fury"
+        },
+        "primal-bellow": {
+            "name": "primal bellow"
+        },
+        "seeing-stars": {
+            "name": "seeing stars"
+        },
+        "shard-launch": {
+            "name": "shard launch"
+        },
+        "shattering-blow": {
+            "name": "shattering blow"
+        },
+        "the-mountain's-fist": {
+            "name": "the mountain's fist"
+        },
+        "thick-frost": {
+            "name": "thick frost"
+        },
+        "voice-from-below": {
+            "name": "voice from below"
+        },
+        "accelerated-metabolism": {
+            "name": "accelerated metabolism"
+        },
+        "alluring-pheromones": {
+            "name": "alluring pheromones"
+        },
+        "changeling's-boon": {
+            "name": "changeling's boon"
+        },
+        "chitinous-horde": {
+            "name": "chitinous horde"
+        },
+        "corrosive-acids": {
+            "name": "corrosive acids"
+        },
+        "drag-down": {
+            "name": "drag down"
+        },
+        "dragonfly-surge": {
+            "name": "dragonfly surge"
+        },
+        "draining-pincers": {
+            "name": "draining pincers"
+        },
+        "feeding-frenzy": {
+            "name": "feeding frenzy"
+        },
+        "firefly-swarm": {
+            "name": "firefly swarm"
+        },
+        "flailing-tendrils": {
+            "name": "flailing tendrils"
+        },
+        "formless-grace": {
+            "name": "formless grace"
+        },
+        "hail-of-thorns": {
+            "name": "hail of thorns"
+        },
+        "harbinger-of-ruin": {
+            "name": "harbinger of ruin"
+        },
+        "harvest-the-essence": {
+            "name": "harvest the essence"
+        },
+        "hirudotherapy": {
+            "name": "hirudotherapy"
+        },
+        "hornbeetle-carapace": {
+            "name": "hornbeetle carapace"
+        },
+        "hornet-stingers": {
+            "name": "hornet stingers"
+        },
+        "icebound-quills": {
+            "name": "icebound quills"
+        },
+        "into-my-embrace": {
+            "name": "into my embrace"
+        },
+        "locust-host": {
+            "name": "locust host"
+        },
+        "luminous-descent": {
+            "name": "luminous descent"
+        },
+        "mandible-storm": {
+            "name": "mandible storm"
+        },
+        "mind-spike": {
+            "name": "mind spike"
+        },
+        "oscillating-entity": {
+            "name": "oscillating entity"
+        },
+        "reckless-jab": {
+            "name": "reckless jab"
+        },
+        "reshape-the-guise": {
+            "name": "reshape the guise"
+        },
+        "scarab-flight": {
+            "name": "scarab flight"
+        },
+        "selfless-offering": {
+            "name": "selfless offering"
+        },
+        "smoldering-hatred": {
+            "name": "smoldering hatred"
+        },
+        "thresh-and-flail": {
+            "name": "thresh and flail"
+        },
+        "two-pronged-entrapment": {
+            "name": "two-pronged entrapment"
+        },
+        "venomous-barbs": {
+            "name": "venomous barbs"
+        },
+        "voice-of-salvation": {
+            "name": "voice of salvation"
+        },
+        "aimed-assault": {
+            "name": "aimed assault"
+        },
+        "sniper-turret": {
+            "name": "sniper turret"
+        },
+        "burning-slash": {
+            "name": "burning slash"
+        },
+        "code-geminate": {
+            "name": "code geminate"
+        },
+        "coiled-limbs": {
+            "name": "coiled limbs"
+        },
+        "leaper": {
+            "name": "leaper"
+        },
+        "disassemble": {
+            "name": "disassemble"
+        },
+        "divergent-destruction": {
+            "name": "divergent destruction"
+        },
+        "faceless-entity": {
+            "name": "faceless entity"
+        },
+        "force-field": {
+            "name": "force field"
+        },
+        "dampening-unit": {
+            "name": "dampening unit"
+        },
+        "heavy-metal": {
+            "name": "heavy metal"
+        },
+        "sledge-driver": {
+            "name": "sledge driver"
+        },
+        "high-impact-projectiles": {
+            "name": "high impact projectiles"
+        },
+        "hijack": {
+            "name": "hijack"
+        },
+        "hunter-killer": {
+            "name": "hunter-killer"
+        },
+        "jackal-mech": {
+            "name": "jackal mech"
+        },
+        "interference": {
+            "name": "interference"
+        },
+        "launch-pod": {
+            "name": "launch pod"
+        },
+        "long-range-missile": {
+            "name": "long-range missile"
+        },
+        "mortar-shells": {
+            "name": "mortar shells"
+        },
+        "bombardier": {
+            "name": "bombardier"
+        },
+        "net-dispersal": {
+            "name": "net dispersal"
+        },
+        "trapping-unit": {
+            "name": "trapping unit"
+        },
+        "plague-protocol": {
+            "name": "plague protocol"
+        },
+        "toxin-distributor": {
+            "name": "toxin distributor"
+        },
+        "plated-defense": {
+            "name": "plated defense"
+        },
+        "armored-tank": {
+            "name": "armored tank"
+        },
+        "prepare-for-deployment": {
+            "name": "prepare for deployment"
+        },
+        "rapid-fire": {
+            "name": "rapid fire"
+        },
+        "machine-bolter": {
+            "name": "machine bolter"
+        },
+        "reaper-function": {
+            "name": "reaper function"
+        },
+        "reassemble": {
+            "name": "reassemble"
+        },
+        "recall": {
+            "name": "recall"
+        },
+        "reconstructive-aid": {
+            "name": "reconstructive aid"
+        },
+        "repair-drone": {
+            "name": "repair drone"
+        },
+        "remote-control": {
+            "name": "remote control"
+        },
+        "shocking-pulse": {
+            "name": "shocking pulse"
+        },
+        "arcing-generator": {
+            "name": "arcing generator"
+        },
+        "spinning-blades": {
+            "name": "spinning blades"
+        },
+        "sword-propeller": {
+            "name": "sword propeller"
+        },
+        "swarming-bulwark": {
+            "name": "swarming bulwark"
+        },
+        "shield-spider": {
+            "name": "shield spider"
+        },
+        "triage-program": {
+            "name": "triage program"
+        },
+        "ancient-rites-of-power": {
+            "name": "ancient rites of power"
+        },
+        "battle-prowess": {
+            "name": "battle prowess"
+        },
+        "boon-of-the-tempest": {
+            "name": "boon of the tempest"
+        },
+        "bounty-of-the-earth": {
+            "name": "bounty of the earth"
+        },
+        "caress-of-the-night": {
+            "name": "caress of the night"
+        },
+        "coalescing-darkness": {
+            "name": "coalescing darkness"
+        },
+        "crystalline-aegis": {
+            "name": "crystalline aegis"
+        },
+        "desperate-throw": {
+            "name": "desperate throw"
+        },
+        "diamondization": {
+            "name": "diamondization"
+        },
+        "emerald-edge": {
+            "name": "emerald edge"
+        },
+        "formless-bladestorm": {
+            "name": "formless bladestorm"
+        },
+        "gale-barrage": {
+            "name": "gale barrage"
+        },
+        "gemstone-resonance": {
+            "name": "gemstone resonance"
+        },
+        "guide-the-flow": {
+            "name": "guide the flow"
+        },
+        "imbue-with-life": {
+            "name": "imbue with life"
+        },
+        "animated-claymore": {
+            "name": "animated claymore"
+        },
+        "malachite-shockwave": {
+            "name": "malachite shockwave"
+        },
+        "obsidian-spear": {
+            "name": "obsidian spear"
+        },
+        "onyx-shards": {
+            "name": "onyx shards"
+        },
+        "propulsive-tailwind": {
+            "name": "propulsive tailwind"
+        },
+        "reinforced-riposte": {
+            "name": "reinforced riposte"
+        },
+        "remote-impact": {
+            "name": "remote impact"
+        },
+        "rising-momentum": {
+            "name": "rising momentum"
+        },
+        "sky-splitting-strike": {
+            "name": "sky-splitting strike"
+        },
+        "slashing-cyclone": {
+            "name": "slashing cyclone"
+        },
+        "stoic-vigilance": {
+            "name": "stoic vigilance"
+        },
+        "swift-pivot": {
+            "name": "swift pivot"
+        },
+        "torrential-cleave": {
+            "name": "torrential cleave"
+        },
+        "unstoppable-impulse": {
+            "name": "unstoppable impulse"
+        },
+        "untether-the-shackles": {
+            "name": "untether the shackles"
+        },
+        "spiritbound-falchion": {
+            "name": "spiritbound falchion"
+        },
+        "veil-of-protection": {
+            "name": "veil of protection"
+        },
+        "ancient-drill": {
+            "name": "ancient drill"
+        },
+        "beam-axe": {
+            "name": "beam axe"
+        },
+        "bronze-plating": {
+            "name": "bronze plating"
+        },
+        "cryogenic-hibernation": {
+            "name": "cryogenic hibernation"
+        },
+        "curious-gear": {
+            "name": "curious gear"
+        },
+        "curious-machinery": {
+            "name": "curious machinery"
+        },
+        "electrical-discharge": {
+            "name": "electrical discharge"
+        },
+        "energy-conversion": {
+            "name": "energy conversion"
+        },
+        "heat-conduction": {
+            "name": "heat conduction"
+        },
+        "heated-drill": {
+            "name": "heated drill"
+        },
+        "magnetic-field": {
+            "name": "magnetic field"
+        },
+        "memory-drive": {
+            "name": "memory drive"
+        },
+        "piston-barrage": {
+            "name": "piston barrage"
+        },
+        "polarity-shift": {
+            "name": "polarity shift"
+        },
+        "power-core": {
+            "name": "power core"
+        },
+        "pressure-build-up": {
+            "name": "pressure build-up"
+        },
+        "processing": {
+            "name": "processing"
+        },
+        "radiation": {
+            "name": "radiation"
+        },
+        "recursion": {
+            "name": "recursion"
+        },
+        "release-valve": {
+            "name": "release valve"
+        },
+        "rocket-boots": {
+            "name": "rocket boots"
+        },
+        "scalding-blast": {
+            "name": "scalding blast"
+        },
+        "steam-armor": {
+            "name": "steam armor"
+        },
+        "steam-core": {
+            "name": "steam core"
+        },
+        "steel-piston": {
+            "name": "steel piston"
+        },
+        "stress-vents": {
+            "name": "stress vents"
+        },
+        "super-heat-transfer": {
+            "name": "super heat transfer"
+        },
+        "unstable-core": {
+            "name": "unstable core"
+        },
+        "blood-ritual": {
+            "name": "blood ritual"
+        },
+        "burned-at-both-ends": {
+            "name": "burned at both ends"
+        },
+        "chained-by-despair": {
+            "name": "chained by despair"
+        },
+        "chained-by-spite": {
+            "name": "chained by spite"
+        },
+        "cleansing-fire": {
+            "name": "cleansing fire"
+        },
+        "delayed-malady": {
+            "name": "delayed malady"
+        },
+        "down-to-the-dirt": {
+            "name": "down to the dirt"
+        },
+        "explosive-wounds": {
+            "name": "explosive wounds"
+        },
+        "hopelessness": {
+            "name": "hopelessness"
+        },
+        "infection-purge": {
+            "name": "infection purge"
+        },
+        "line-of-transference": {
+            "name": "line of transference"
+        },
+        "mirrored-misery": {
+            "name": "mirrored misery"
+        },
+        "penance": {
+            "name": "penance"
+        },
+        "phantom-limb": {
+            "name": "phantom limb"
+        },
+        "pleasure-in-pain": {
+            "name": "pleasure in pain"
+        },
+        "redemption": {
+            "name": "redemption"
+        },
+        "reject-the-gift": {
+            "name": "reject the gift"
+        },
+        "reprisal": {
+            "name": "reprisal"
+        },
+        "reversal-of-fate": {
+            "name": "reversal of fate"
+        },
+        "scarred-effigy": {
+            "name": "scarred effigy"
+        },
+        "flesh-fiend": {
+            "name": "flesh fiend"
+        },
+        "shared-affliction": {
+            "name": "shared affliction"
+        },
+        "swift-vengeance": {
+            "name": "swift vengeance"
+        },
+        "the-agony-of-others": {
+            "name": "the agony of others"
+        },
+        "the-end-of-everything": {
+            "name": "the end of everything"
+        },
+        "transferred-injury": {
+            "name": "transferred injury"
+        },
+        "unending-torment": {
+            "name": "unending torment"
+        },
+        "unstable-effigy": {
+            "name": "unstable effigy"
+        },
+        "flesh-bomb": {
+            "name": "flesh bomb"
+        },
+        "wracked-with-pain": {
+            "name": "wracked with pain"
+        },
+        "calamity": {
+            "name": "calamity"
+        },
+        "cinder-lance": {
+            "name": "cinder lance"
+        },
+        "cloud-of-ash": {
+            "name": "cloud of ash"
+        },
+        "cooling": {
+            "name": "cooling"
+        },
+        "deep-fury": {
+            "name": "deep fury"
+        },
+        "erupting-rage": {
+            "name": "erupting rage"
+        },
+        "eruption": {
+            "name": "eruption"
+        },
+        "feed-the-beast": {
+            "name": "feed the beast"
+        },
+        "flowing-fire": {
+            "name": "flowing fire"
+        },
+        "force-of-the-earth": {
+            "name": "force of the earth"
+        },
+        "hand-of-flame": {
+            "name": "hand of flame"
+        },
+        "hardened-spike": {
+            "name": "hardened spike"
+        },
+        "heat-wave": {
+            "name": "heat wave"
+        },
+        "igneous-path": {
+            "name": "igneous path"
+        },
+        "lava-bomb": {
+            "name": "lava bomb"
+        },
+        "liquid-stone": {
+            "name": "liquid stone"
+        },
+        "living-magma": {
+            "name": "living magma"
+        },
+        "magma-orbs": {
+            "name": "magma orbs"
+        },
+        "melted-armor": {
+            "name": "melted armor"
+        },
+        "metamorphic-rock": {
+            "name": "metamorphic rock"
+        },
+        "obsidian-shield": {
+            "name": "obsidian shield"
+        },
+        "quenched-rage": {
+            "name": "quenched rage"
+        },
+        "rain-of-fire": {
+            "name": "rain of fire"
+        },
+        "return-to-the-source": {
+            "name": "return to the source"
+        },
+        "searing-smoke": {
+            "name": "searing smoke"
+        },
+        "stone-armor": {
+            "name": "stone armor"
+        },
+        "swelter": {
+            "name": "swelter"
+        },
+        "under-pressure": {
+            "name": "under pressure"
+        },
+        "wildfire": {
+            "name": "wildfire"
+        },
+        "birds-in-a-tempest": {
+            "name": "birds in a tempest"
+        },
+        "2-white-owls": {
+            "name": "2 white owls"
+        },
+        "biting-frost": {
+            "name": "biting frost"
+        },
+        "blinding-vortex": {
+            "name": "blinding vortex"
+        },
+        "blizzard": {
+            "name": "blizzard"
+        },
+        "chilling-impact": {
+            "name": "chilling impact"
+        },
+        "cold-snap": {
+            "name": "cold snap"
+        },
+        "cold-therapy": {
+            "name": "cold therapy"
+        },
+        "cross-winds": {
+            "name": "cross winds"
+        },
+        "enticing-breeze": {
+            "name": "enticing breeze"
+        },
+        "freezing-storm": {
+            "name": "freezing storm"
+        },
+        "frigid-growth": {
+            "name": "frigid growth"
+        },
+        "frozen-brand": {
+            "name": "frozen brand"
+        },
+        "gathering-force": {
+            "name": "gathering force"
+        },
+        "lifting-gust": {
+            "name": "lifting gust"
+        },
+        "nature's-breath": {
+            "name": "nature's breath"
+        },
+        "snow-fox": {
+            "name": "snow fox"
+        },
+        "polar-vortex": {
+            "name": "polar vortex"
+        },
+        "refreshing-flurry": {
+            "name": "refreshing flurry"
+        },
+        "polar-cat": {
+            "name": "polar cat"
+        },
+        "shifting-snow": {
+            "name": "shifting snow"
+        },
+        "snowball": {
+            "name": "snowball"
+        },
+        "snowblind": {
+            "name": "snowblind"
+        },
+        "storm-wall": {
+            "name": "storm wall"
+        },
+        "surging-blow": {
+            "name": "surging blow"
+        },
+        "the-endless-white": {
+            "name": "the endless white"
+        },
+        "the-spirit's-call": {
+            "name": "the spirit's call"
+        },
+        "tornado": {
+            "name": "tornado"
+        },
+        "whipping-gale": {
+            "name": "whipping gale"
+        },
+        "whiteout": {
+            "name": "whiteout"
+        },
+        "white-winds": {
+            "name": "white winds"
+        },
+        "winds-of-change": {
+            "name": "winds of change"
+        },
+        "zephyr-barrier": {
+            "name": "zephyr barrier"
+        },
+        "barbaric-yawp": {
+            "name": "barbaric yawp"
+        },
+        "befuddling-bellow": {
+            "name": "befuddling bellow"
+        },
+        "calamitous-yawp": {
+            "name": "calamitous yawp"
+        },
+        "cloaking-refraction": {
+            "name": "cloaking refraction"
+        },
+        "concentrated-blast": {
+            "name": "concentrated blast"
+        },
+        "devastating-shout": {
+            "name": "devastating shout"
+        },
+        "din-of-battle": {
+            "name": "din of battle"
+        },
+        "elemental-pulse": {
+            "name": "elemental pulse"
+        },
+        "empowering-note": {
+            "name": "empowering note"
+        },
+        "empowering-pulse": {
+            "name": "empowering pulse"
+        },
+        "feedback": {
+            "name": "feedback"
+        },
+        "forceful-vibrations": {
+            "name": "forceful vibrations"
+        },
+        "foreboding-tremors": {
+            "name": "foreboding tremors"
+        },
+        "future-sense": {
+            "name": "future sense"
+        },
+        "heartening-harmony": {
+            "name": "heartening harmony"
+        },
+        "illuminative-tone": {
+            "name": "illuminative tone"
+        },
+        "lifting-voice": {
+            "name": "lifting voice"
+        },
+        "precious-gems": {
+            "name": "precious gems"
+        },
+        "resonant-frequency": {
+            "name": "resonant frequency"
+        },
+        "shape-the-path": {
+            "name": "shape the path"
+        },
+        "shrieking-chakram": {
+            "name": "shrieking chakram"
+        },
+        "soft-spots": {
+            "name": "soft spots"
+        },
+        "sonic-shock": {
+            "name": "sonic shock"
+        },
+        "sound-therapy": {
+            "name": "sound therapy"
+        },
+        "stealth-vibrations": {
+            "name": "stealth vibrations"
+        },
+        "transparency": {
+            "name": "transparency"
+        },
+        "unrelenting-wail": {
+            "name": "unrelenting wail"
+        },
+        "unsustainable-wave": {
+            "name": "unsustainable wave"
+        },
+        "violent-vibrations": {
+            "name": "violent vibrations"
+        },
+        "boar-catcher": {
+            "name": "boar catcher"
+        },
+        "cage-of-thorns": {
+            "name": "cage of thorns"
+        },
+        "caltrops": {
+            "name": "caltrops"
+        },
+        "dangerous-cargo": {
+            "name": "dangerous cargo"
+        },
+        "dangerous-ground": {
+            "name": "dangerous ground"
+        },
+        "dismantle": {
+            "name": "dismantle"
+        },
+        "electrified-net": {
+            "name": "electrified net"
+        },
+        "enticing-bait": {
+            "name": "enticing bait"
+        },
+        "exploding-decoy": {
+            "name": "exploding decoy"
+        },
+        "extra-teeth": {
+            "name": "extra teeth"
+        },
+        "flurry-of-nails": {
+            "name": "flurry of nails"
+        },
+        "foxhole": {
+            "name": "foxhole"
+        },
+        "defense-grid": {
+            "name": "defense grid"
+        },
+        "furry-facade": {
+            "name": "furry facade"
+        },
+        "shaggy-lure": {
+            "name": "shaggy lure"
+        },
+        "grasping-hazards": {
+            "name": "grasping hazards"
+        },
+        "honeypot": {
+            "name": "honeypot"
+        },
+        "improvised-improvement": {
+            "name": "improvised improvement"
+        },
+        "lure-of-the-snare": {
+            "name": "lure of the snare"
+        },
+        "magnetic-shards": {
+            "name": "magnetic shards"
+        },
+        "mother-of-all-traps": {
+            "name": "mother of all traps"
+        },
+        "path-of-pain": {
+            "name": "path of pain"
+        },
+        "persistent-pitfalls": {
+            "name": "persistent pitfalls"
+        },
+        "proficient-hunter": {
+            "name": "proficient hunter"
+        },
+        "pyrotechnics": {
+            "name": "pyrotechnics"
+        },
+        "spike-pit": {
+            "name": "spike pit"
+        },
+        "spike-strip": {
+            "name": "spike strip"
+        },
+        "spring-loaded": {
+            "name": "spring-loaded"
+        },
+        "stalker's-spoils": {
+            "name": "stalker's spoils"
+        },
+        "unavoidable-outcome": {
+            "name": "unavoidable outcome"
+        }
     }
 }

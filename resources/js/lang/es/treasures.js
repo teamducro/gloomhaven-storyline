@@ -484,5 +484,260 @@ export default {
     },
     "cs-50": {
         "name": "“Bottled Moonlight” (Item 18)"
+    },
+    "fh-1": {
+        "name": "Gain four loot cards."
+    },
+    "fh-2": {
+        "name": "Suffer 3 damage, then gain {MUDDLE}"
+    },
+    "fh-3": {
+        "name": "Gain a random item blueprint."
+    },
+    "fh-4": {
+        "name": "Gain Eventide Scepter 200."
+    },
+    "fh-5": {
+        "name": "Gain Severed Claw 204."
+    },
+    "fh-6": {
+        "name": "Gain Opulent Shoes 199."
+    },
+    "fh-7": {
+        "name": "Gain Data Drive 227."
+    },
+    "fh-8": {
+        "name": "Gain three loot cards."
+    },
+    "fh-9": {
+        "name": "Unlock a random side scenario."
+    },
+    "fh-10": {
+        "name": "Gain three loot cards."
+    },
+    "fh-11": {
+        "name": "Gain a random item blueprint."
+    },
+    "fh-12": {
+        "name": "You find the remains of Camilla and her paintings of a majestic horned creature. Gain “Brummix” campaign sticker and add s 99.1 to the campaign calendar in three weeks."
+    },
+    "fh-13": {
+        "name": "Gain Fishhook 207."
+    },
+    "fh-14": {
+        "name": "Gain a random item blueprint."
+    },
+    "fh-15": {
+        "name": "Unlock a random side scenario."
+    },
+    "fh-16": {
+        "name": "Gain Decanter of Mists 183."
+    },
+    "fh-17": {
+        "name": "Gain 3 Lumber."
+    },
+    "fh-18": {
+        "name": "Gain three loot cards."
+    },
+    "fh-19": {
+        "name": "Gain 1 Axenut, 1 Corpsecap, and 1 Flamefruit."
+    },
+    "fh-20": {
+        "name": "Gain four loot cards."
+    },
+    "fh-21": {
+        "name": "Gain Detonator blueprint 064."
+    },
+    "fh-22": {
+        "name": "Gain Scaled Armor blueprint 068."
+    },
+    "fh-23": {
+        "name": "Unlock a random side scenario."
+    },
+    "fh-24": {
+        "name": "Gain Bane."
+    },
+    "fh-25": {
+        "name": "Gain 1 Corpsecap and 1 Flamefruit."
+    },
+    "fh-26": {
+        "name": "Gain Lightning Rod 223."
+    },
+    "fh-27": {
+        "name": "Gain two loot cards and {POISON}."
+    },
+    "fh-28": {
+        "name": "Gain four loot cards."
+    },
+    "fh-29": {
+        "name": "Gain 2 Lumber 2 Hide."
+    },
+    "fh-30": {
+        "name": "Gain four loot cards."
+    },
+    "fh-31": {
+        "name": "Gain Balanced Scales blueprint 078."
+    },
+    "fh-32": {
+        "name": "Gain three loot cards."
+    },
+    "fh-33": {
+        "name": "Gain 3 Lumber."
+    },
+    "fh-34": {
+        "name": "Gain 1 ✔."
+    },
+    "fh-35": {
+        "name": "Gain Extendable Pole 228."
+    },
+    "fh-36": {
+        "name": "Gain Black Box 222."
+    },
+    "fh-37": {
+        "name": "Gain three loot cards."
+    },
+    "fh-38": {
+        "name": "Gain a random item blueprint."
+    },
+    "fh-39": {
+        "name": "Unlock a random side scenario."
+    },
+    "fh-40": {
+        "name": "Gain Chaos Cannon blueprint 077."
+    },
+    "fh-41": {
+        "name": "Gain Algox Carving 225."
+    },
+    "fh-42": {
+        "name": "Gain Giant Sword 206."
+    },
+    "fh-43": {
+        "name": "Gain four loot cards."
+    },
+    "fh-44": {
+        "name": "Gain a random item blueprint."
+    },
+    "fh-45": {
+        "name": "Gain 2 Lumber 2 Metal."
+    },
+    "fh-46": {
+        "name": "Gain three loot cards."
+    },
+    "fh-47": {
+        "name": "Gain 5 Experience."
+    },
+    "fh-48": {
+        "name": "Gain three loot cards."
+    },
+    "fh-49": {
+        "name": "Gain Bone Boots blueprint 071"
+    },
+    "fh-50": {
+        "name": "Gain Cured Hide Armor 017."
+    },
+    "fh-51": {
+        "name": "Read 78.1."
+    },
+    "fh-52": {
+        "name": "Gain Titan Nail 208."
+    },
+    "fh-53": {
+        "name": "Gain Eye of the Storm 239."
+    },
+    "fh-54": {
+        "name": "Treasure chest? There was no treasure chest there. Maybe you should slow down on the drink."
+    },
+    "fh-55": {
+        "name": "Gain Harpoon 205."
+    },
+    "fh-56": {
+        "name": "Gain a random item blueprint."
+    },
+    "fh-57": {
+        "name": "What’s this? An empty chest with a lead trapdoor at the bottom . You make note of the location so you can return with Gem’s help later. Unlock The Lead Door 103."
+    },
+    "fh-58": {
+        "name": "Gain a random item blueprint."
+    },
+    "fh-59": {
+        "name": "Gain Pain Simulacrum blueprint 081."
+    },
+    "fh-60": {
+        "name": "Gain three loot cards."
+    },
+    "fh-61": {
+        "name": "Unlock a random side scenario."
+    },
+    "fh-62": {
+        "name": "Gain Mechanical Cube blueprint 082 when you find the other half of this blueprint."
+    },
+    "fh-63": {
+        "name": "Gain five loot cards."
+    },
+    "fh-64": {
+        "name": "Gain 3 Lumber."
+    },
+    "fh-65": {
+        "name": "Gain 15 Money."
+    },
+    "fh-66": {
+        "name": "Suffer 2 damage, then gain Brittle."
+    },
+    "fh-67": {
+        "name": "Unlock a random side scenario."
+    },
+    "fh-68": {
+        "name": "Gain 4 Metal."
+    },
+    "fh-69": {
+        "name": "Gain Mechanical Cube blueprint 082 when you find the other half of this blueprint."
+    },
+    "fh-70": {
+        "name": "Gain Horn of Command blueprint 076."
+    },
+    "fh-71": {
+        "name": "Gain four loot cards."
+    },
+    "fh-72": {
+        "name": "Gain Living Stone blueprint 080."
+    },
+    "fh-73": {
+        "name": "Gain a random item blueprint."
+    },
+    "fh-74": {
+        "name": "Gain a random item blueprint."
+    },
+    "fh-75": {
+        "name": "Gain 1 ✔."
+    },
+    "fh-76": {
+        "name": "Unlock a random side scenario."
+    },
+    "fh-77": {
+        "name": "Gain three loot cards."
+    },
+    "fh-78": {
+        "name": "Gain Opulent Shoes 199."
+    },
+    "fh-79": {
+        "name": "Gain 10 Experience."
+    },
+    "fh-80": {
+        "name": "Gain 15 Experience."
+    },
+    "fh-81": {
+        "name": "Gain Unfettered Arm 226."
+    },
+    "fh-82": {
+        "name": "Gain Oak Staff blueprint 072."
+    },
+    "fh-83": {
+        "name": "Gain Tri-Corner Hat 195."
+    },
+    "fh-84": {
+        "name": "Gain Ice Shiv 221."
+    },
+    "fh-85": {
+        "name": "Gain 10 money."
     }
 }
