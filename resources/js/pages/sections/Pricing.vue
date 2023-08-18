@@ -135,7 +135,7 @@
                                                 id="tier-frosthaven">
                                                 <webp class="" src="/img/frosthaven-logo.png" alt="Frosthaven logo"
                                                       width="250" height="37"></webp>
-                                                Pro
+                                                <span>Pro <span class="text-xs">(Beta)</span></span>
                                             </h3>
                                             <div class="font-title mt-4 flex items-center justify-center">
                                                 <span
