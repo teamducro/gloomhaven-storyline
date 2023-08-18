@@ -1,0 +1,6231 @@
+{
+    "scenarios": [
+        {
+            "root": true,
+            "id": 0,
+            "name": "Howling in the Snow",
+            "game": "fh",
+            "coordinates": {
+                "name": "N6",
+                "x": 30.55,
+                "y": 26.75
+            },
+            "chapter_id": 1,
+            "treasures": [
+                47
+            ],
+            "links_to": [
+                1
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2
+            }
+        },
+        {
+            "root": true,
+            "id": 1,
+            "name": "A Town in Flames",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 36.6,
+                "y": 58.14
+            },
+            "chapter_id": 1,
+            "links_to": [
+                2,
+                3
+            ],
+            "linked_from": [
+                0
+            ],
+            "rewards": [
+                [
+                    "Gain 2 morale"
+                ],
+                [
+                    "Gain 3 morale"
+                ],
+                [
+                    "Gain 4 morale"
+                ],
+                [
+                    "Gain 5 morale"
+                ],
+                [
+                    "Gain 6 morale"
+                ],
+                [
+                    "Gain 7 morale"
+                ]
+            ],
+            "prompt": "startingMorale",
+            "loot": {
+                "coins": 6,
+                "lumber": 5,
+                "metal": 3,
+                "hide": 3,
+                "rockroot": 1,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 2,
+            "name": "Algox Scouting",
+            "game": "fh",
+            "coordinates": {
+                "name": "K8",
+                "x": 41.52,
+                "y": 33.15
+            },
+            "chapter_id": 1,
+            "treasures": [
+                32
+            ],
+            "links_to": [
+                4
+            ],
+            "linked_from": [
+                1
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        3
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 1 ✔ each"
+            ],
+            "loot": {
+                "coins": 4,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 3,
+            "name": "Algox Offensive",
+            "game": "fh",
+            "coordinates": {
+                "name": "L7",
+                "x": 40.36,
+                "y": 30.51
+            },
+            "chapter_id": 1,
+            "treasures": [
+                18
+            ],
+            "links_to": [
+                4
+            ],
+            "linked_from": [
+                1
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        2
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 1 ✔ each"
+            ],
+            "loot": {
+                "coins": 4,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 4,
+            "name": "Heart of Ice",
+            "game": "fh",
+            "coordinates": {
+                "name": "M8",
+                "x": 35.05,
+                "y": 33.34
+            },
+            "chapter_id": 1,
+            "treasures": [
+                70
+            ],
+            "links_to": [
+                5,
+                6,
+                7,
+                8
+            ],
+            "choices": [
+                5,
+                6,
+                7,
+                8
+            ],
+            "linked_from": [
+                2,
+                3
+            ],
+            "rewards": [
+                [
+                    "Unlock {FF} class box",
+                    "Gain 1 morale",
+                    "Gain 1 prosperity",
+                    "Add 156.1 to the calendar in four weeks"
+                ],
+                [
+                    "Unlock {SD} class box",
+                    "Gain 1 morale",
+                    "Gain 1 prosperity",
+                    "Add 156.1 to the calendar in four weeks"
+                ]
+            ],
+            "prompt": "algoxAltercation",
+            "loot": {
+                "coins": 6,
+                "lumber": 3,
+                "metal": 5,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 5,
+            "name": "Frozen Crypt",
+            "game": "fh",
+            "coordinates": {
+                "name": "I6",
+                "x": 50.23,
+                "y": 29.77
+            },
+            "chapter_id": 2,
+            "treasures": [
+                46
+            ],
+            "links_to": [
+                9,
+                10
+            ],
+            "linked_from": [
+                4
+            ],
+            "rewards": [
+                "Gain 2 collective {LUMBER}"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 4,
+                "metal": 3,
+                "hide": 1,
+                "corpsecap": 2,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 6,
+            "name": "Avalanche",
+            "game": "fh",
+            "coordinates": {
+                "name": "L8",
+                "x": 38.41,
+                "y": 35.37
+            },
+            "chapter_id": 4,
+            "links_to": [
+                11,
+                12
+            ],
+            "linked_from": [
+                4
+            ],
+            "rewards": [
+                "Gain 2 collective {METAL}"
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 4,
+                "metal": 1,
+                "hide": 1,
+                "arrowvine": 2,
+                "axenut": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 7,
+            "name": "Edge of the World",
+            "game": "fh",
+            "coordinates": {
+                "name": "K3",
+                "x": 44.97,
+                "y": 17.4
+            },
+            "chapter_id": 3,
+            "treasures": [
+                44
+            ],
+            "links_to": [
+                13,
+                14
+            ],
+            "linked_from": [
+                4
+            ],
+            "rewards": [
+                "10 experience each"
+            ],
+            "achievements_awarded": [
+                "CCCS"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "axenut": 1,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 8,
+            "name": "Crystal Trench",
+            "game": "fh",
+            "coordinates": {
+                "name": "G8",
+                "x": 61,
+                "y": 35.66
+            },
+            "chapter_id": 6,
+            "links_to": [
+                15,
+                16
+            ],
+            "linked_from": [
+                4
+            ],
+            "rewards": [
+                "Gain 1 collective {LUMBER}",
+                "Gain 2 collective {HIDE}"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 5,
+                "hide": 5,
+                "arrowvine": 1,
+                "axenut": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 9,
+            "name": "Glowing Catacombs",
+            "game": "fh",
+            "coordinates": {
+                "name": "J6",
+                "x": 49.24,
+                "y": 26.62
+            },
+            "chapter_id": 2,
+            "treasures": [
+                9
+            ],
+            "links_to": [
+                17
+            ],
+            "linked_from": [
+                5
+            ],
+            "rewards": [
+                "Gain 2 collective {CORPSECAP}"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 5,
+                "metal": 3,
+                "corpsecap": 1,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 10,
+            "name": "Crystal Enclosure",
+            "game": "fh",
+            "coordinates": {
+                "name": "F6",
+                "x": 63.96,
+                "y": 27.95
+            },
+            "chapter_id": 2,
+            "treasures": [
+                46,
+                71
+            ],
+            "links_to": [
+                18
+            ],
+            "linked_from": [
+                5
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 1 inspiration"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "hide": 3,
+                "arrowvine": 2,
+                "axenut": 2
+            }
+        },
+        {
+            "id": 11,
+            "name": "Snowscorn Peak",
+            "game": "fh",
+            "coordinates": {
+                "name": "M6",
+                "x": 34.25,
+                "y": 29.59
+            },
+            "chapter_id": 4,
+            "treasures": [
+                71
+            ],
+            "links_to": [
+                19
+            ],
+            "linked_from": [
+                6
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 1 inspiration"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 4,
+                "metal": 3,
+                "hide": 3,
+                "axenut": 2,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 12,
+            "name": "Temple Entrance",
+            "game": "fh",
+            "coordinates": {
+                "name": "K8",
+                "x": 43,
+                "y": 35.63
+            },
+            "chapter_id": 4,
+            "treasures": [
+                9
+            ],
+            "links_to": [
+                20
+            ],
+            "linked_from": [
+                6
+            ],
+            "rewards": [
+                "Gain 15 experience each"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 4,
+                "corpsecap": 1,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 13,
+            "name": "Frozen Fjord",
+            "game": "fh",
+            "coordinates": {
+                "name": "O2",
+                "x": 27.06,
+                "y": 14.48
+            },
+            "chapter_id": 3,
+            "treasures": [
+                49
+            ],
+            "links_to": [
+                32
+            ],
+            "linked_from": [
+                7
+            ],
+            "rewards": [
+                "Gain “Dead Raven” (Item 233)"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "hide": 3,
+                "arrowvine": 2,
+                "flamefruit": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 14,
+            "name": "Jagged Shoals",
+            "game": "fh",
+            "coordinates": {
+                "name": "L2",
+                "x": 38.94,
+                "y": 13.6
+            },
+            "chapter_id": 3,
+            "treasures": [
+                64
+            ],
+            "links_to": [
+                22
+            ],
+            "linked_from": [
+                7
+            ],
+            "rewards": [
+                "Choose one: Unlock {CR} class box OR unlock {DT} class box",
+                "Add event WO-81 to the winter outpost deck"
+            ],
+            "achievements_awarded": [
+                "CCCS",
+                "CSS"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 4,
+                "metal": 2,
+                "hide": 5,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 15,
+            "name": "Ancient Spire",
+            "game": "fh",
+            "coordinates": {
+                "name": "D7",
+                "x": 74.35,
+                "y": 32.05
+            },
+            "chapter_id": 6,
+            "treasures": [
+                40
+            ],
+            "links_to": [
+                23,
+                24
+            ],
+            "linked_from": [
+                8
+            ],
+            "rewards": [
+                "Gain 1 collective {LUMBER}",
+                "Gain 1 collective {METAL}",
+                "Gain 1 collective {HIDE}"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 5,
+                "hide": 2,
+                "corpsecap": 1,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 16,
+            "name": "Derelict Elevator",
+            "game": "fh",
+            "coordinates": {
+                "name": "F10",
+                "x": 65.3,
+                "y": 40.7
+            },
+            "chapter_id": 6,
+            "treasures": [
+                77
+            ],
+            "links_to": [
+                25,
+                26
+            ],
+            "linked_from": [
+                8
+            ],
+            "rewards": [
+                "Gain 5 experience each",
+                "Gain 1 inspiration"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 5,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 17,
+            "name": "Haunted Vault",
+            "game": "fh",
+            "coordinates": {
+                "name": "H6",
+                "x": 53.65,
+                "y": 28.14
+            },
+            "chapter_id": 2,
+            "links_to": [
+                27
+            ],
+            "linked_from": [
+                9
+            ],
+            "rewards": [
+                "Gain 1 ✔ each"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 5,
+                "metal": 2,
+                "corpsecap": 2
+            }
+        },
+        {
+            "id": 18,
+            "name": "Crystal Fields",
+            "game": "fh",
+            "coordinates": {
+                "name": "E7",
+                "x": 68.67,
+                "y": 29.34
+            },
+            "chapter_id": 2,
+            "links_to": [
+                28,
+                29
+            ],
+            "linked_from": [
+                10
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain one random item blueprint",
+                "Add 122.3 to the calendar in four weeks"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 3,
+                "metal": 2,
+                "hide": 5,
+                "arrowvine": 2,
+                "corpsecap": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 19,
+            "name": "Skyhall",
+            "game": "fh",
+            "coordinates": {
+                "name": "N7",
+                "x": 31.73,
+                "y": 31.23
+            },
+            "chapter_id": 4,
+            "links_to": [
+                30,
+                28
+            ],
+            "linked_from": [
+                11
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain one random item blueprint",
+                "Add 54.3 to the calendar in four weeks"
+            ],
+            "loot": {
+                "coins": 11,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 20,
+            "name": "Temple of Liberation",
+            "game": "fh",
+            "coordinates": {
+                "name": "L9",
+                "x": 40.47,
+                "y": 38.72
+            },
+            "chapter_id": 4,
+            "links_to": [
+                31
+            ],
+            "linked_from": [
+                12
+            ],
+            "rewards": [
+                "Gain 15 gold each"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 5,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 21,
+            "name": "Realm of Endless Frost",
+            "game": "fh",
+            "coordinates": {
+                "name": "N1",
+                "x": 30.32,
+                "y": 11.02
+            },
+            "chapter_id": 3,
+            "linked_from": [
+                13
+            ],
+            "rewards": [
+                "Gain 2 prosperity"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 4,
+                "metal": 3,
+                "hide": 3,
+                "flamefruit": 1,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 22,
+            "name": "Ice Floes",
+            "game": "fh",
+            "coordinates": {
+                "name": "I2",
+                "x": 53.13,
+                "y": 15.22
+            },
+            "chapter_id": 3,
+            "links_to": [
+                33
+            ],
+            "linked_from": [
+                14
+            ],
+            "rewards": [
+                "Lose 1 collective {LUMBER} for each set of five hexes with water tiles on tile 7-G",
+                "Gain 15 experience each",
+                "Add 62.2 to the calendar in two weeks"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 5,
+                "hide": 2,
+                "arrowvine": 2
+            }
+        },
+        {
+            "id": 23,
+            "name": "Spire Basement",
+            "game": "fh",
+            "coordinates": {
+                "name": "B8",
+                "x": 76.92,
+                "y": 33.78
+            },
+            "chapter_id": 6,
+            "links_to": [
+                34
+            ],
+            "linked_from": [
+                15
+            ],
+            "rewards": [
+                "Gain one random item blueprint"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 4,
+                "corpsecap": 2,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 24,
+            "name": "Upper Spire",
+            "game": "fh",
+            "coordinates": {
+                "name": "D6",
+                "x": 74.8,
+                "y": 29.93
+            },
+            "chapter_id": 6,
+            "links_to": [
+                34
+            ],
+            "linked_from": [
+                15
+            ],
+            "rewards": [
+                "Gain one random item blueprint"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "axenut": 2,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 25,
+            "name": "Rusted Tunnels",
+            "game": "fh",
+            "coordinates": {
+                "name": "E10",
+                "x": 69.08,
+                "y": 37.95
+            },
+            "chapter_id": 6,
+            "treasures": [
+                74
+            ],
+            "links_to": [
+                35
+            ],
+            "linked_from": [
+                16
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        26
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 2 collective {LUMBER}",
+                "Gain 2 collective {METAL}",
+                "Add 128.2 to the calendar in four weeks"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 4,
+                "arrowvine": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 26,
+            "name": "Quatryl Library",
+            "game": "fh",
+            "coordinates": {
+                "name": "E10",
+                "x": 68.77,
+                "y": 41.89
+            },
+            "chapter_id": 6,
+            "treasures": [
+                73
+            ],
+            "links_to": [
+                36,
+                37
+            ],
+            "linked_from": [
+                16
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        25
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 10 experience each"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 4,
+                "arrowvine": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 27,
+            "name": "Depths of Delirium",
+            "game": "fh",
+            "coordinates": {
+                "name": "H6",
+                "x": 55.4,
+                "y": 26.67
+            },
+            "requirements": "Shard Seeker (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CSS"
+                    ]
+                }
+            ],
+            "chapter_id": 2,
+            "treasures": [
+                36,
+                24
+            ],
+            "linked_from": [
+                17
+            ],
+            "rewards": [
+                "Gain 10 experience each",
+                "Gain 1 ✔ each",
+                "Ancient Technology"
+            ],
+            "achievements_awarded": [
+                "CCCS"
+            ],
+            "loot": {
+                "coins": 13,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2
+            }
+        },
+        {
+            "id": 28,
+            "name": "Summit Meeting",
+            "game": "fh",
+            "coordinates": {
+                "name": "J8",
+                "x": 49.4,
+                "y": 34.65
+            },
+            "chapter_id": 5,
+            "treasures": [
+                48
+            ],
+            "links_to": [
+                38
+            ],
+            "linked_from": [
+                18,
+                19
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        29
+                    ]
+                },
+                {
+                    "complete": [
+                        30
+                    ]
+                }
+            ],
+            "rewards": [
+                "Lose 1 morale"
+            ],
+            "loot": {
+                "coins": 11,
+                "lumber": 2,
+                "hide": 3,
+                "arrowvine": 1,
+                "axenut": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 29,
+            "name": "War of the Spire A",
+            "game": "fh",
+            "coordinates": {
+                "name": "F8",
+                "x": 65.93,
+                "y": 32.55
+            },
+            "chapter_id": 2,
+            "treasures": [
+                45
+            ],
+            "links_to": [
+                39
+            ],
+            "linked_from": [
+                18
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        28
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 3 morale",
+                "Remove all {ALGOX} events from all outpost event decks",
+                "Add event WO-68 to the winter outpost deck",
+                "Add 46.3 to the calendar in five weeks"
+            ],
+            "achievements_awarded": [
+                "CDIS"
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "axenut": 1,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 30,
+            "name": "War of the Spire B",
+            "game": "fh",
+            "coordinates": {
+                "name": "E8",
+                "x": 70.54,
+                "y": 32.86
+            },
+            "chapter_id": 4,
+            "treasures": [
+                45
+            ],
+            "links_to": [
+                40
+            ],
+            "linked_from": [
+                19
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        28
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 3 morale",
+                "Remove all {ALGOX} events from all outpost event decks",
+                "Add event WO-69 to the winter outpost deck",
+                "Add 34.2 to the calendar in five weeks"
+            ],
+            "achievements_awarded": [
+                "CDSS"
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "axenut": 1,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 31,
+            "name": "Crackling Tunnel",
+            "game": "fh",
+            "coordinates": {
+                "name": "F10",
+                "x": 56.35,
+                "y": 40.97
+            },
+            "chapter_id": 4,
+            "treasures": [
+                25,
+                26
+            ],
+            "links_to": [
+                41
+            ],
+            "linked_from": [
+                20
+            ],
+            "rewards": [
+                "Gain 5 experience each",
+                "Gain 10 gold each"
+            ],
+            "loot": {
+                "coins": 11,
+                "lumber": 2,
+                "metal": 3,
+                "arrowvine": 1,
+                "flamefruit": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 32,
+            "name": "Ravens' Roost",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q3",
+                "x": 19.24,
+                "y": 17.14
+            },
+            "chapter_id": 3,
+            "treasures": [
+                67
+            ],
+            "linked_from": [
+                13
+            ],
+            "rewards": [
+                "Gain “Feathered Cloak” (Item 69) blueprint"
+            ],
+            "achievements_awarded": [
+                "CITF"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "hide": 3,
+                "axenut": 2,
+                "flamefruit": 2
+            }
+        },
+        {
+            "id": 33,
+            "name": "Thawed Wood",
+            "game": "fh",
+            "coordinates": {
+                "name": "R2",
+                "x": 11.1,
+                "y": 14.2
+            },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
+            "chapter_id": 3,
+            "links_to": [
+                42
+            ],
+            "linked_from": [
+                22
+            ],
+            "rewards": [
+                "Gain 5 experience each for each unrevealed dowsing rune",
+                "Gain “Ember Energy Source” (Item 244)",
+                "Add 135.1 to the calendar in three weeks"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 5,
+                "hide": 3,
+                "axenut": 2,
+                "flamefruit": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 34,
+            "name": "Top of the Spire",
+            "game": "fh",
+            "coordinates": {
+                "name": "C6",
+                "x": 75.38,
+                "y": 28.09
+            },
+            "chapter_id": 6,
+            "linked_from": [
+                23,
+                24
+            ],
+            "achievements_awarded": [
+                "CCCS"
+            ],
+            "loot": {}
+        },
+        {
+            "id": 35,
+            "name": "Scrap Pit",
+            "game": "fh",
+            "coordinates": {
+                "name": "C10",
+                "x": 73.65,
+                "y": 43.23
+            },
+            "chapter_id": 6,
+            "treasures": [
+                61
+            ],
+            "links_to": [
+                43
+            ],
+            "linked_from": [
+                25
+            ],
+            "rewards": [
+                "Gain 2 collective {LUMBER}",
+                "Gain 2 collective {METAL}",
+                "Gain 2 collective {HIDE}"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "metal": 5,
+                "hide": 2,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 36,
+            "name": "Buried Ducts",
+            "game": "fh",
+            "coordinates": {
+                "name": "C9",
+                "x": 77.14,
+                "y": 39.44
+            },
+            "chapter_id": 6,
+            "links_to": [
+                44
+            ],
+            "linked_from": [
+                26
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        37
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 3 collective {LUMBER}",
+                "Gain 3 collective {METAL}"
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 3,
+                "metal": 5,
+                "arrowvine": 2
+            }
+        },
+        {
+            "id": 37,
+            "name": "The Dead Mile",
+            "game": "fh",
+            "coordinates": {
+                "name": "C11",
+                "x": 76.8,
+                "y": 43.4
+            },
+            "chapter_id": 6,
+            "treasures": [
+                61
+            ],
+            "links_to": [
+                44
+            ],
+            "linked_from": [
+                26
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        36
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 3 collective {LUMBER}",
+                "Gain 3 collective {METAL}"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "metal": 3,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 38,
+            "name": "The Way Forward",
+            "game": "fh",
+            "coordinates": {
+                "name": "G8",
+                "x": 59.08,
+                "y": 33.33
+            },
+            "chapter_id": 5,
+            "treasures": [
+                16
+            ],
+            "links_to": [
+                45,
+                46
+            ],
+            "linked_from": [
+                28
+            ],
+            "rewards": [
+                "Gain 10 experience each",
+                "Gain 1 ✔ each",
+                "Gain 1 inspiration"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 5,
+                "hide": 3,
+                "arrowvine": 1,
+                "axenut": 2
+            }
+        },
+        {
+            "id": 39,
+            "name": "Corrupted Camp",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q4",
+                "x": 16.55,
+                "y": 20.44
+            },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
+            "chapter_id": 2,
+            "treasures": [
+                41
+            ],
+            "links_to": [
+                47
+            ],
+            "linked_from": [
+                29
+            ],
+            "rewards": [
+                "Lose 1 inspiration",
+                "Gain 2 additional loot cards each"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 4,
+                "metal": 2,
+                "hide": 3,
+                "flamefruit": 1,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 40,
+            "name": "Relief Effort",
+            "game": "fh",
+            "coordinates": {
+                "name": "H9",
+                "x": 53.8,
+                "y": 38.05
+            },
+            "chapter_id": 4,
+            "treasures": [
+                41
+            ],
+            "links_to": [
+                48
+            ],
+            "linked_from": [
+                30
+            ],
+            "rewards": [
+                "Lose 1 inspiration",
+                "Gain 2 additional loot cards each"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "metal": 4,
+                "hide": 2,
+                "arrowvine": 2,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 41,
+            "name": "Unfettered Shard",
+            "game": "fh",
+            "coordinates": {
+                "name": "E12",
+                "x": 65.8,
+                "y": 46.2
+            },
+            "requirements": "Shard Seeker (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CSS"
+                    ]
+                }
+            ],
+            "chapter_id": 4,
+            "linked_from": [
+                31
+            ],
+            "rewards": [
+                "Gain 15 gold each",
+                "Gain 2 collective {AXENUT}",
+                "Ancient Technology"
+            ],
+            "achievements_awarded": [
+                "CCCS"
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "corpsecap": 2,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 42,
+            "name": "Sunless Trench",
+            "game": "fh",
+            "coordinates": {
+                "name": "J1",
+                "x": 46.15,
+                "y": 10.91
+            },
+            "chapter_id": 3,
+            "links_to": [
+                49,
+                50
+            ],
+            "linked_from": [
+                33
+            ],
+            "rewards": [
+                "Gain 2 ✔ each",
+                "Add event B-16 to the boat deck",
+                "Add 114.2 to the calendar in three weeks"
+            ],
+            "achievements_awarded": [
+                "CCCS"
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "metal": 2,
+                "flamefruit": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 43,
+            "name": "Overrun Barricade",
+            "game": "fh",
+            "coordinates": {
+                "name": "C9",
+                "x": 75.46,
+                "y": 38.65
+            },
+            "chapter_id": 6,
+            "links_to": [
+                51
+            ],
+            "linked_from": [
+                35
+            ],
+            "rewards": [
+                "Gain 10 experience each"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 4,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 44,
+            "name": "Nerve Center",
+            "game": "fh",
+            "coordinates": {
+                "name": "B10",
+                "x": 79.85,
+                "y": 41.45
+            },
+            "chapter_id": 6,
+            "links_to": [
+                58,
+                59
+            ],
+            "choices": [
+                58,
+                59
+            ],
+            "linked_from": [
+                36,
+                37
+            ],
+            "rewards": [
+                "Gain 5 gold each",
+                "Gain “Energizing Baton” (Item 73) blueprint"
+            ],
+            "prompt": "finalNegotiation",
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 4,
+                "arrowvine": 2,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 45,
+            "name": "Living Glacier",
+            "game": "fh",
+            "coordinates": {
+                "name": "C3",
+                "x": 78.5,
+                "y": 18.6
+            },
+            "chapter_id": 5,
+            "treasures": [
+                15
+            ],
+            "links_to": [
+                52
+            ],
+            "linked_from": [
+                38
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 1 ✔ each"
+            ],
+            "achievements_awarded": [
+                "PHOI"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "hide": 5,
+                "flamefruit": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 46,
+            "name": "Dead Pass",
+            "game": "fh",
+            "coordinates": {
+                "name": "B12",
+                "x": 79.53,
+                "y": 48.73
+            },
+            "chapter_id": 5,
+            "links_to": [
+                52
+            ],
+            "linked_from": [
+                38
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 10 experience each"
+            ],
+            "achievements_awarded": [
+                "PHOS"
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 47,
+            "name": "Carrion Ridge",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q5",
+                "x": 9.94,
+                "y": 21.84
+            },
+            "chapter_id": 2,
+            "treasures": [
+                15
+            ],
+            "links_to": [
+                56
+            ],
+            "linked_from": [
+                39
+            ],
+            "rewards": [
+                "Gain 10 gold each",
+                "Gain 2 collective {LUMBER}"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "metal": 2,
+                "hide": 2,
+                "flamefruit": 2,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 48,
+            "name": "Blizzard island",
+            "game": "fh",
+            "coordinates": {
+                "name": "D2",
+                "x": 69.9,
+                "y": 13.9
+            },
+            "chapter_id": 4,
+            "links_to": [
+                57
+            ],
+            "linked_from": [
+                40
+            ],
+            "rewards": [
+                "Gain 10 gold each",
+                "Gain 2 collective {METAL}"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 5,
+                "corpsecap": 2,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 49,
+            "name": "Beneath Sea and Stone",
+            "game": "fh",
+            "coordinates": {
+                "name": "G3",
+                "x": 58.15,
+                "y": 15.98
+            },
+            "chapter_id": 3,
+            "treasures": [
+                5
+            ],
+            "links_to": [
+                53
+            ],
+            "linked_from": [
+                42
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        50
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 5 experience each",
+                "Gain 1 inspiration"
+            ],
+            "loot": {
+                "coins": 13,
+                "metal": 3,
+                "hide": 2,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 50,
+            "name": "Explosive Descent",
+            "game": "fh",
+            "coordinates": {
+                "name": "G1",
+                "x": 60.14,
+                "y": 11.04
+            },
+            "chapter_id": 3,
+            "links_to": [
+                54
+            ],
+            "linked_from": [
+                42
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        49
+                    ]
+                }
+            ],
+            "rewards": [
+                "Lose 2 inspiration",
+                "Gain 4 collective {LUMBER}",
+                "Gain 4 collective {METAL}"
+            ],
+            "loot": {
+                "coins": 13,
+                "lumber": 2,
+                "hide": 3,
+                "arrowvine": 2
+            }
+        },
+        {
+            "id": 51,
+            "name": "Orphan's Halls",
+            "game": "fh",
+            "coordinates": {
+                "name": "B9",
+                "x": 80.87,
+                "y": 37.9
+            },
+            "chapter_id": 6,
+            "treasures": [
+                56
+            ],
+            "links_to": [
+                58,
+                59
+            ],
+            "choices": [
+                58,
+                59
+            ],
+            "linked_from": [
+                43
+            ],
+            "rewards": [
+                "Gain 10 experience each",
+                "Gain “Shock Grenades” (Item 74) blueprint"
+            ],
+            "prompt": "finalNegotiation",
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "metal": 4,
+                "arrowvine": 1,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 52,
+            "name": "Fleeting Permanence",
+            "game": "fh",
+            "coordinates": {
+                "name": "G7",
+                "x": 58.65,
+                "y": 30.97
+            },
+            "requirements": "Heart of Ice (Party) COMPLETE and Heart of Snow (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PHOI",
+                        "PHOS"
+                    ]
+                }
+            ],
+            "chapter_id": 5,
+            "treasures": [
+                28,
+                43,
+                66
+            ],
+            "links_to": [
+                55
+            ],
+            "linked_from": [
+                45,
+                46
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 1 inspiration"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 5,
+                "corpsecap": 2,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 53,
+            "name": "Underwater Throne",
+            "game": "fh",
+            "coordinates": {
+                "name": "E2",
+                "x": 65.55,
+                "y": 14.36
+            },
+            "chapter_id": 3,
+            "links_to": [
+                60
+            ],
+            "linked_from": [
+                49
+            ],
+            "rewards": [
+                "Gain 2 ✔ each"
+            ],
+            "achievements_awarded": [
+                "CCCS"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 3,
+                "arrowvine": 2,
+                "axenut": 2
+            }
+        },
+        {
+            "id": 54,
+            "name": "Among the Wreckage",
+            "game": "fh",
+            "coordinates": {
+                "name": "F1",
+                "x": 65.28,
+                "y": 11.17
+            },
+            "chapter_id": 3,
+            "treasures": [
+                5,
+                63
+            ],
+            "links_to": [
+                60
+            ],
+            "linked_from": [
+                50
+            ],
+            "rewards": [
+                "Gain 2 ✔ each"
+            ],
+            "achievements_awarded": [
+                "CCCS"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 3,
+                "arrowvine": 2,
+                "axenut": 2
+            }
+        },
+        {
+            "id": 55,
+            "name": "Change of Heart",
+            "game": "fh",
+            "coordinates": {
+                "name": "M8",
+                "x": 34.63,
+                "y": 32.45
+            },
+            "chapter_id": 5,
+            "treasures": [
+                41
+            ],
+            "linked_from": [
+                52
+            ],
+            "rewards": [
+                "Gain 2 morale",
+                "Gain 2 prosperity",
+                "Unlock whichever class box is still locked: {FF} or {SD}",
+                "Remove all {ALGOX} events from all outpost event decks",
+                "Add events WO-66 and WO-67 to the winter outpost deck",
+                "Add one +50 card to town guard deck"
+            ],
+            "achievements_awarded": [
+                "CFFS"
+            ],
+            "loot": {
+                "coins": 3,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 56,
+            "name": "Call of the Harbinger",
+            "game": "fh",
+            "coordinates": {
+                "name": "R4",
+                "x": 11.34,
+                "y": 19.43
+            },
+            "chapter_id": 2,
+            "treasures": [
+                4
+            ],
+            "linked_from": [
+                47
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 1 inspiration",
+                "Unlock {FF} class box",
+                "Add event SO-51 to the summer outpost deck",
+                "Add one +50 card to town guard deck"
+            ],
+            "achievements_awarded": [
+                "CFIS"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 5,
+                "metal": 2,
+                "hide": 2,
+                "flamefruit": 2,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 57,
+            "name": "Sanctuary of Snow",
+            "game": "fh",
+            "coordinates": {
+                "name": "D1",
+                "x": 71.37,
+                "y": 11.15
+            },
+            "chapter_id": 4,
+            "treasures": [
+                53
+            ],
+            "linked_from": [
+                48
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 1 inspiration",
+                "Unlock {SD} class box",
+                "Add event WO-68 to the winter outpost deck",
+                "Add one +50 card to town guard deck"
+            ],
+            "achievements_awarded": [
+                "CFSS"
+            ],
+            "loot": {}
+        },
+        {
+            "id": 58,
+            "name": "Orphan's Core",
+            "game": "fh",
+            "coordinates": {
+                "name": "A10",
+                "x": 83.59,
+                "y": 40.3
+            },
+            "chapter_id": 6,
+            "treasures": [
+                81
+            ],
+            "linked_from": [
+                44,
+                51
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        59
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain “Key Card” (Item 246)",
+                "Gain 3 collective {LUMBER}",
+                "Gain 3 collective {METAL}",
+                "Gain 3 collective {HIDE}",
+                "Unlock {HV} class box",
+                "Remove all {UNFETTERED} events from all outpost event decks",
+                "Add events WO-64 and WO-65 to the winter outpost deck",
+                "Add one +50 card to town guard deck"
+            ],
+            "achievements_awarded": [
+                "CUD"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 2,
+                "metal": 4,
+                "corpsecap": 1,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 59,
+            "name": "Automation Uprising",
+            "game": "fh",
+            "coordinates": {
+                "name": "A11",
+                "x": 80.55,
+                "y": 43.24
+            },
+            "chapter_id": 6,
+            "treasures": [
+                7
+            ],
+            "linked_from": [
+                44,
+                51
+            ],
+            "blocks_on": [
+                {
+                    "complete": [
+                        58
+                    ]
+                }
+            ],
+            "rewards": [
+                "Gain 2 morale",
+                "Gain 2 prosperity",
+                "Gain “Key Card” (Item 246)",
+                "Unlock {HV} class box",
+                "Remove all {UNFETTERED} events from all outpost event decks",
+                "Add event SO-49 to the summer outpost deck and event WO-63 to the winter outpost deck",
+                "Add one +50 card to town guard deck"
+            ],
+            "achievements_awarded": [
+                "CUA"
+            ],
+            "loot": {
+                "coins": 11,
+                "metal": 4,
+                "axenut": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 60,
+            "name": "Uniting the Crown",
+            "game": "fh",
+            "coordinates": {
+                "name": "G2",
+                "x": 60.87,
+                "y": 12.7
+            },
+            "chapter_id": 3,
+            "linked_from": [
+                53,
+                54
+            ],
+            "rewards": [
+                "Gain 2 morale",
+                "Gain 1 prosperity",
+                "Gain 30 experience each",
+                "Unlock whichever class box is still locked: {CR} or {DT}",
+                "Remove all {LURKERS} events from all outpost event decks",
+                "Add event SO-48 to the summer outpost deck and event B-17 to the boat deck",
+                "Add one +50 card to town guard deck"
+            ],
+            "achievements_awarded": [
+                "CCU"
+            ],
+            "loot": {
+                "coins": 8,
+                "arrowvine": 1,
+                "axenut": 1,
+                "corpsecap": 1,
+                "flamefruit": 1,
+                "rockroot": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 61,
+            "name": "Life and Death",
+            "game": "fh",
+            "coordinates": {
+                "name": "I11",
+                "x": 53.2,
+                "y": 44.9
+            },
+            "is_side": true,
+            "chapter_id": 108,
+            "treasures": [
+                76
+            ],
+            "links_to": [
+                62
+            ],
+            "rewards": [
+                "Unlock {SH} class box",
+                "Add section 140.3 to the calendar in one week"
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "corpsecap": 2,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 62,
+            "name": "The Unfettered Seal",
+            "game": "fh",
+            "coordinates": {
+                "name": "B8",
+                "x": 82.95,
+                "y": 36.11
+            },
+            "chapter_id": 108,
+            "treasures": [
+                21
+            ],
+            "links_to": [
+                63
+            ],
+            "linked_from": [
+                61
+            ],
+            "rewards": [
+                "Gain 1 prosperity"
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "arrowvine": 2,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 63,
+            "name": "The Savvas Seal",
+            "game": "fh",
+            "coordinates": {
+                "name": "G12",
+                "x": 58.48,
+                "y": 47.77
+            },
+            "chapter_id": 108,
+            "treasures": [
+                72
+            ],
+            "links_to": [
+                64
+            ],
+            "linked_from": [
+                62
+            ],
+            "rewards": [
+                "Gain 2 prosperity"
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "corpsecap": 2,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 64,
+            "name": "The Frosthaven Seal",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 33.07,
+                "y": 73.07
+            },
+            "chapter_id": 108,
+            "linked_from": [
+                63
+            ],
+            "rewards": [
+                "Gain 3 morale",
+                "Gain 3 prosperity",
+                "Gain 3 ✔ each"
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "axenut": 2,
+                "flamefruit": 2
+            }
+        },
+        {
+            "id": 65,
+            "name": "A Strong Foundation",
+            "game": "fh",
+            "coordinates": {
+                "name": "L4",
+                "x": 38.7,
+                "y": 22.47
+            },
+            "is_side": true,
+            "chapter_id": 107,
+            "treasures": [
+                39
+            ],
+            "links_to": [
+                66
+            ],
+            "rewards": [
+                "Gain 2 collective {LUMBER}",
+                "Gain 2 collective {METAL}",
+                "Add 95.4 to the calendar in six weeks"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 4,
+                "arrowvine": 2,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 66,
+            "name": "Elemental Cores",
+            "game": "fh",
+            "coordinates": {
+                "name": "L4",
+                "x": 35.08,
+                "y": 20.08
+            },
+            "chapter_id": 107,
+            "links_to": [
+                67
+            ],
+            "linked_from": [
+                65
+            ],
+            "rewards": [
+                "Gain “Elemental Stone” (Item 212)",
+                "Add 29.3 to the calendar in six weeks"
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "axenut": 1,
+                "corpsecap": 1,
+                "flamefruit": 1,
+                "rockroot": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 67,
+            "name": "Core Attunement",
+            "game": "fh",
+            "coordinates": {
+                "name": "K4",
+                "x": 40.54,
+                "y": 20.2
+            },
+            "chapter_id": 107,
+            "links_to": [
+                68
+            ],
+            "linked_from": [
+                66
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 1 prosperity"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3
+            }
+        },
+        {
+            "id": 68,
+            "name": "The Face of Torment",
+            "game": "fh",
+            "coordinates": {
+                "name": "L3",
+                "x": 40.37,
+                "y": 15.87
+            },
+            "chapter_id": 107,
+            "treasures": [
+                59
+            ],
+            "linked_from": [
+                67
+            ],
+            "rewards": [
+                "“Aesther Outpost” personal quest complete",
+                "Add 133.1 to the calendar in two weeks"
+            ],
+            "loot": {
+                "lumber": 5,
+                "metal": 5,
+                "hide": 5
+            }
+        },
+        {
+            "id": 69,
+            "name": "Sacred Soil",
+            "game": "fh",
+            "coordinates": {
+                "name": "P2",
+                "x": 20.93,
+                "y": 14.05
+            },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
+            "is_side": true,
+            "chapter_id": 107,
+            "links_to": [
+                70
+            ],
+            "rewards": [
+                "Gain 1 {ARROWVINE}",
+                "Gain 1 {AXENUT}",
+                "Gain 1 {FLAMEFRUIT}",
+                "Add 15.4 to the calendar in three weeks"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 5,
+                "hide": 4,
+                "axenut": 2,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 70,
+            "name": "The True Oak",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q2",
+                "x": 16.67,
+                "y": 13.25
+            },
+            "chapter_id": 107,
+            "treasures": [
+                82
+            ],
+            "linked_from": [
+                69
+            ],
+            "rewards": [
+                "“The True Oak” personal quest complete",
+                "Gain 1 Prosperity"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "hide": 3,
+                "axenut": 2,
+                "flamefruit": 2
+            }
+        },
+        {
+            "id": 71,
+            "name": "Invasion of the Dock",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 76.77,
+                "y": 75.7
+            },
+            "is_side": true,
+            "chapter_id": 107,
+            "treasures": [
+                22,
+                23
+            ],
+            "links_to": [
+                72
+            ],
+            "rewards": [
+                "Damage any one even building between 71 and 89",
+                "Gain 10 experience each",
+                "Add 149.5 to the calendar in five weeks"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4
+            }
+        },
+        {
+            "id": 72,
+            "name": "A Giant Block of Ice",
+            "game": "fh",
+            "coordinates": {
+                "name": "A5",
+                "x": 84.8,
+                "y": 24.85
+            },
+            "chapter_id": 107,
+            "treasures": [
+                37
+            ],
+            "links_to": [
+                73
+            ],
+            "linked_from": [
+                71
+            ],
+            "rewards": [
+                "Gain 1 ✔ each"
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 3,
+                "metal": 3,
+                "corpsecap": 2
+            }
+        },
+        {
+            "id": 73,
+            "name": "Flotsam",
+            "game": "fh",
+            "coordinates": {
+                "name": "D3",
+                "x": 74.57,
+                "y": 16.95
+            },
+            "chapter_id": 107,
+            "treasures": [
+                33
+            ],
+            "links_to": [
+                74
+            ],
+            "linked_from": [
+                72
+            ],
+            "rewards": [
+                "Gain 3 collective {LUMBER}",
+                "Add 146.1 to the calendar in five weeks"
+            ],
+            "achievements_awarded_by_choice": [
+                [
+                    "CFFK"
+                ],
+                []
+            ],
+            "prompt": "friendOfTheFishKing",
+            "loot": {
+                "coins": 9,
+                "lumber": 5,
+                "hide": 3,
+                "arrowvine": 2,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 74,
+            "name": "Gaps in the Road",
+            "game": "fh",
+            "coordinates": {
+                "name": "G6",
+                "x": 60.15,
+                "y": 28.51
+            },
+            "chapter_id": 107,
+            "links_to": [
+                75,
+                76
+            ],
+            "linked_from": [
+                73
+            ],
+            "rewards": [
+                "Gain one random item blueprint"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 5,
+                "metal": 2,
+                "hide": 3,
+                "arrowvine": 2,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 75,
+            "name": "Infiltraiting the Lair",
+            "game": "fh",
+            "coordinates": {
+                "name": "C2",
+                "x": 76.05,
+                "y": 12.71
+            },
+            "blocks_on": [
+                {
+                    "incomplete": [
+                        "CFFK"
+                    ]
+                }
+            ],
+            "chapter_id": 107,
+            "treasures": [
+                20,
+                51,
+                55
+            ],
+            "links_to": [
+                77
+            ],
+            "linked_from": [
+                74
+            ],
+            "rewards": [
+                "Gain 10 gold each"
+            ],
+            "loot": {
+                "coins": 8,
+                "metal": 2,
+                "hide": 5,
+                "axenut": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 76,
+            "name": "Apotheosis",
+            "game": "fh",
+            "coordinates": {
+                "name": "B2",
+                "x": 80.63,
+                "y": 14.12
+            },
+            "blocks_on": [
+                {
+                    "complete": [
+                        "CFFK"
+                    ]
+                }
+            ],
+            "chapter_id": 107,
+            "treasures": [
+                2,
+                55
+            ],
+            "links_to": [
+                77
+            ],
+            "choices": [
+                77
+            ],
+            "linked_from": [
+                74
+            ],
+            "rewards": [
+                [
+                    "“Threat from the Deep” personal quest complete",
+                    "Gain “Wave Blade” (Item 201)",
+                    "Add event B-18 to the boat deck"
+                ],
+                []
+            ],
+            "prompt": "acceptTheAscension",
+            "loot": {
+                "coins": 9,
+                "metal": 2,
+                "hide": 5,
+                "axenut": 1,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 77,
+            "name": "Fish King's Ascension",
+            "game": "fh",
+            "coordinates": {
+                "name": "B1",
+                "x": 79.85,
+                "y": 11
+            },
+            "chapter_id": 107,
+            "linked_from": [
+                75,
+                76
+            ],
+            "rewards": [
+                "“Threat from the Deep” personal quest complete",
+                "Gain “Wave Blade” (Item 201)",
+                "Add event B-19 to the boat deck"
+            ],
+            "loot": {
+                "coins": 4,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "corpsecap": 2,
+                "flamefruit": 2
+            }
+        },
+        {
+            "id": 78,
+            "name": "The Lurker Problem",
+            "game": "fh",
+            "coordinates": {
+                "name": "H5",
+                "x": 55.15,
+                "y": 23.82
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "treasures": [
+                58,
+                13
+            ],
+            "rewards": [
+                "Gain 10 experience each"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 4,
+                "arrowvine": 2,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 79,
+            "name": "Relic",
+            "game": "fh",
+            "coordinates": {
+                "name": "B5",
+                "x": 80.22,
+                "y": 25.75
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "treasures": [
+                8
+            ],
+            "links_to": [
+                80
+            ],
+            "rewards": [
+                "Gain 3 morale",
+                "Add 45.2 to the calendar in three weeks"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 5,
+                "hide": 2,
+                "corpsecap": 2
+            }
+        },
+        {
+            "id": 80,
+            "name": "Relic Renewed",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 17.97,
+                "y": 58.28
+            },
+            "chapter_id": 111,
+            "treasures": [
+                62,
+                69
+            ],
+            "linked_from": [
+                79
+            ],
+            "rewards": [
+                "Gain 2 collective {LUMBER}",
+                "Gain 2 collective {METAL}",
+                "Gain 2 collective {HIDE}",
+                "Gain 2 morale"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 3,
+                "hide": 2,
+                "axenut": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 81,
+            "name": "Ruinous Research Lab",
+            "game": "fh",
+            "coordinates": {
+                "name": "A12",
+                "x": 83.67,
+                "y": 46.7
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "treasures": [
+                19
+            ],
+            "rewards": [
+                "Gain 1 prosperity",
+                "Gain “Aesther Robe” (Item 70) blueprint"
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 2,
+                "metal": 5,
+                "hide": 2,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 82,
+            "name": "Expedition North",
+            "game": "fh",
+            "coordinates": {
+                "name": "P8",
+                "x": 20.7,
+                "y": 34.03
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "rewards": [
+                "Gain 2 prosperity",
+                "Add the following Forgotten Circles items to the Frosthaven supply: 153, 159, and 161"
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 1,
+                "rockroot": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 83,
+            "name": "Rising Brine",
+            "game": "fh",
+            "coordinates": {
+                "name": "E3",
+                "x": 67.76,
+                "y": 20.76
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "rewards": [
+                "Gain “Giant Piranha Pig Spine” (Item 202)"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "arrowvine": 2,
+                "flamefruit": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 84,
+            "name": "Here There Be Oozes",
+            "game": "fh",
+            "coordinates": {
+                "name": "R5",
+                "x": 11.5,
+                "y": 24.72
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "rewards": [
+                "Gain “Ooze Vial” (Item 234)"
+            ],
+            "achievements_awarded": [
+                "CBT"
+            ],
+            "loot": {
+                "coins": 15,
+                "lumber": 3,
+                "metal": 3,
+                "corpsecap": 2
+            }
+        },
+        {
+            "id": 85,
+            "name": "Deadly Pastimes",
+            "game": "fh",
+            "coordinates": {
+                "name": "O5",
+                "x": 24.14,
+                "y": 25.88
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "rewards": [
+                "Gain 15 experience each",
+                "Gain 1 ✔ each"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 2,
+                "metal": 3,
+                "hide": 4,
+                "rockroot": 2,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 86,
+            "name": "The Lady in White",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 71,
+                "y": 60.4
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "treasures": [
+                17
+            ],
+            "rewards": [
+                "Gain 2 morale"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 4,
+                "hide": 2,
+                "arrowvine": 2,
+                "axenut": 1,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 87,
+            "name": "The Collection",
+            "game": "fh",
+            "coordinates": {
+                "name": "J7",
+                "x": 47.06,
+                "y": 31.16
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "treasures": [
+                27,
+                38
+            ],
+            "links_to": [
+                88
+            ],
+            "rewards": [
+                [
+                    "Gain 2 inspiration"
+                ],
+                [
+                    "Gain 1 inspiration"
+                ]
+            ],
+            "prompt": "brothersSurvival",
+            "loot": {
+                "coins": 8,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 3,
+                "arrowvine": 1,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 88,
+            "name": "Collection's Capstone",
+            "game": "fh",
+            "coordinates": {
+                "name": "I7",
+                "x": 52.28,
+                "y": 32.32
+            },
+            "chapter_id": 111,
+            "treasures": [
+                6
+            ],
+            "linked_from": [
+                87
+            ],
+            "rewards": [
+                "Gain 2 morale"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 4,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 89,
+            "name": "A Contained Fire",
+            "game": "fh",
+            "coordinates": {
+                "name": "G10",
+                "x": 61.7,
+                "y": 38.9
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "treasures": [
+                42
+            ],
+            "rewards": [
+                "Gain 2 collective {ROCKROOT}",
+                "Gain 2 collective {LUMBER}"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "arrowvine": 2,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 90,
+            "name": "Frozen Treasure",
+            "game": "fh",
+            "coordinates": {
+                "name": "I3",
+                "x": 49.65,
+                "y": 17.54
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "links_to": [
+                91
+            ],
+            "rewards": [
+                [
+                    "Gain 1 ✔ each",
+                    "Each character gains 10 gold for each numbered token they looted",
+                    "Lose 10 collective gold"
+                ],
+                [
+                    "Gain 1 ✔ each",
+                    "Each character gains 10 gold for each numbered token they looted",
+                    "Lose 5 collective gold",
+                    "All characters start the next scenario with {MUDDLE.fh} and {CURSE.fh}"
+                ]
+            ],
+            "prompt": "rattuscasShare",
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "hide": 4,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 91,
+            "name": "Shoreline Scramble",
+            "game": "fh",
+            "coordinates": {
+                "name": "J4",
+                "x": 45.44,
+                "y": 21.75
+            },
+            "chapter_id": 111,
+            "linked_from": [
+                90
+            ],
+            "rewards": [
+                "Gain 2 collective {LUMBER}",
+                "Gain 1 morale"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 4,
+                "hide": 4,
+                "flamefruit": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 92,
+            "name": "Sinking Ship",
+            "game": "fh",
+            "coordinates": {
+                "name": "I4",
+                "x": 50.92,
+                "y": 19.38
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "rewards": [
+                "Collectively lose 5xC/2 loot tokens. Loot tokens are then traded in for loot cards",
+                "Add 181.2 to the calendar in one week"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 4,
+                "metal": 3,
+                "hide": 2,
+                "axenut": 2,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 93,
+            "name": "Midwinter Brawl",
+            "game": "fh",
+            "coordinates": {
+                "name": "H7",
+                "x": 55.47,
+                "y": 32.17
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "rewards": [
+                [
+                    "Gain “Small Rat” (Item 235)"
+                ],
+                [
+                    "Gain “Roasted Fowl” (Item 79)"
+                ]
+            ],
+            "prompt": "peaceNegotiations",
+            "loot": {
+                "coins": 9,
+                "lumber": 4,
+                "metal": 2,
+                "hide": 2,
+                "axenut": 1,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 94,
+            "name": "A Grand View",
+            "game": "fh",
+            "coordinates": {
+                "name": "B6",
+                "x": 81.16,
+                "y": 27.9
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "treasures": [
+                12,
+                29
+            ],
+            "links_to": [
+                95
+            ],
+            "rewards": [
+                "Gain 10 experience each"
+            ],
+            "achievements_from_treasures": {
+                "12": [
+                    "CBT"
+                ]
+            },
+            "loot": {
+                "coins": 9,
+                "lumber": 3,
+                "metal": 5,
+                "arrowvine": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 95,
+            "name": "To Bury the Dead",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 23.97,
+                "y": 61.51
+            },
+            "chapter_id": 111,
+            "linked_from": [
+                94
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 10 gold each"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 2,
+                "corpsecap": 2,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 96,
+            "name": "Underground Station",
+            "game": "fh",
+            "coordinates": {
+                "name": "E11",
+                "x": 70.17,
+                "y": 44.85
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "treasures": [
+                10
+            ],
+            "links_to": [
+                97
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 5 experience each"
+            ],
+            "loot": {
+                "coins": 14,
+                "lumber": 1,
+                "metal": 3,
+                "axenut": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 97,
+            "name": "Program Control Nexus",
+            "game": "fh",
+            "coordinates": {
+                "name": "D12",
+                "x": 71.03,
+                "y": 48
+            },
+            "chapter_id": 111,
+            "links_to": [
+                98
+            ],
+            "linked_from": [
+                96
+            ],
+            "rewards": [
+                "Gain 5 collective {METAL}"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 4
+            }
+        },
+        {
+            "id": 98,
+            "name": "Collapsing Vent",
+            "game": "fh",
+            "coordinates": {
+                "name": "E12",
+                "x": 67.2,
+                "y": 48.8
+            },
+            "chapter_id": 111,
+            "treasures": [
+                35,
+                65
+            ],
+            "linked_from": [
+                97
+            ],
+            "rewards": [
+                "Gain 1 prosperity"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 1,
+                "metal": 4,
+                "hide": 3,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 99,
+            "name": "Prison Break",
+            "game": "fh",
+            "coordinates": {
+                "name": "A4",
+                "x": 84.06,
+                "y": 21.51
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "links_to": [
+                100
+            ],
+            "rewards": [
+                "Gain 10 gold each"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "arrowvine": 2
+            }
+        },
+        {
+            "id": 100,
+            "name": "Inside the Swarm",
+            "game": "fh",
+            "coordinates": {
+                "name": "A3",
+                "x": 84.38,
+                "y": 18.2
+            },
+            "chapter_id": 111,
+            "treasures": [
+                79
+            ],
+            "links_to": [
+                101
+            ],
+            "linked_from": [
+                99
+            ],
+            "rewards": [
+                "Gain 5 gold each",
+                "Gain 10 experience each"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 101,
+            "name": "Harrower Library",
+            "game": "fh",
+            "coordinates": {
+                "name": "O3",
+                "x": 24.68,
+                "y": 18.25
+            },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
+            "chapter_id": 111,
+            "links_to": [
+                102
+            ],
+            "linked_from": [
+                100
+            ],
+            "rewards": [
+                "Gain 1 ✔ each",
+                "Gain 10 experience each"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "arrowvine": 1,
+                "rockroot": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 102,
+            "name": "Into the Black",
+            "game": "fh",
+            "coordinates": {
+                "name": "R7",
+                "x": 15.8,
+                "y": 30.4
+            },
+            "chapter_id": 111,
+            "links_to": [
+                103
+            ],
+            "linked_from": [
+                101
+            ],
+            "rewards": [
+                "Gain 20 experience each"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 103,
+            "name": "The Lead Door",
+            "game": "fh",
+            "coordinates": {
+                "name": "R8",
+                "x": 13.58,
+                "y": 33.88
+            },
+            "chapter_id": 111,
+            "linked_from": [
+                102
+            ],
+            "rewards": [
+                "Gain 1 ✔ each",
+                "Gain 30 experience each",
+                "Gain 10 gold each"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 104,
+            "name": "Ruins of the Solstice",
+            "game": "fh",
+            "coordinates": {
+                "name": "E5",
+                "x": 69.93,
+                "y": 23.53
+            },
+            "is_side": true,
+            "chapter_id": 109,
+            "links_to": [
+                105
+            ],
+            "rewards": [
+                "Gain 2 collective {SNOWTHISTLE}",
+                "Add event WR-49 to the winter road deck"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 2,
+                "axenut": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 105,
+            "name": "Ruins of the Equinox",
+            "game": "fh",
+            "coordinates": {
+                "name": "H11",
+                "x": 57.96,
+                "y": 44.68
+            },
+            "chapter_id": 109,
+            "links_to": [
+                106
+            ],
+            "linked_from": [
+                104
+            ],
+            "rewards": [
+                "Gain 2 collective {FLAMEFRUIT}",
+                "Add 159.4 to the calendar in four weeks"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 2,
+                "corpsecap": 1,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 106,
+            "name": "The Tempus Forge",
+            "game": "fh",
+            "coordinates": {
+                "name": "M5",
+                "x": 36.83,
+                "y": 24.85
+            },
+            "chapter_id": 109,
+            "linked_from": [
+                105
+            ],
+            "rewards": [
+                "Gain “Key of Seasons” (Item 213)"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "arrowvine": 2,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 107,
+            "name": "My Private Empire",
+            "game": "fh",
+            "coordinates": {
+                "name": "J10",
+                "x": 45.98,
+                "y": 39.6
+            },
+            "is_side": true,
+            "chapter_id": 109,
+            "rewards": [
+                [
+                    "Gain any 1 collective material resource"
+                ],
+                [
+                    "Gain any 2 collective material resources"
+                ],
+                [
+                    "Gain any 3 collective material resources"
+                ],
+                [
+                    "Gain any 4 collective material resources"
+                ],
+                [
+                    "Gain any 5 collective material resources",
+                    "Gain “Cup of Ventillion” (Item 214)"
+                ]
+            ],
+            "prompt": "episodesOvercome",
+            "loot": {
+                "coins": 10,
+                "lumber": 3,
+                "metal": 3,
+                "arrowvine": 1,
+                "axenut": 1,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 108,
+            "name": "Lustrous Pit",
+            "game": "fh",
+            "coordinates": {
+                "name": "C12",
+                "x": 76.05,
+                "y": 48.2
+            },
+            "is_side": true,
+            "chapter_id": 109,
+            "treasures": [
+                3,
+                68
+            ],
+            "rewards": [
+                "Gain 2 morale",
+                "Gain 2 inspiration"
+            ],
+            "loot": {
+                "coins": 15,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 109,
+            "name": "Furious Factory",
+            "game": "fh",
+            "coordinates": {
+                "name": "C8",
+                "x": 71.66,
+                "y": 35.49
+            },
+            "is_side": true,
+            "chapter_id": 109,
+            "treasures": [
+                80
+            ],
+            "rewards": [
+                "Gain 5 collective {METAL}"
+            ],
+            "loot": {
+                "coins": 11,
+                "lumber": 2,
+                "metal": 4,
+                "flamefruit": 1,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 110,
+            "name": "Guardian's Temple",
+            "game": "fh",
+            "coordinates": {
+                "name": "R6",
+                "x": 13.25,
+                "y": 27.9
+            },
+            "is_side": true,
+            "chapter_id": 109,
+            "treasures": [
+                75
+            ],
+            "rewards": [
+                "Gain “Rose Guantlet” (Item 75) blueprint"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 2,
+                "metal": 3,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 111,
+            "name": "Ice Cave",
+            "game": "fh",
+            "coordinates": {
+                "name": "O1",
+                "x": 24.92,
+                "y": 11.38
+            },
+            "is_side": true,
+            "chapter_id": 109,
+            "rewards": [
+                "Gain “Cracked Mirror” (Item 236)"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 1,
+                "metal": 3,
+                "hide": 3,
+                "arrowvine": 2,
+                "corpsecap": 1
+            }
+        },
+        {
+            "id": 112,
+            "name": "Raised by Wolves",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 66,
+                "y": 57.9
+            },
+            "is_side": true,
+            "chapter_id": 109,
+            "rewards": [
+                "Gain 15 experience each"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 1,
+                "metal": 3,
+                "hide": 5,
+                "axenut": 1,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 113,
+            "name": "Lush Grotto",
+            "game": "fh",
+            "coordinates": {
+                "name": "G9",
+                "x": 58.8,
+                "y": 38.5
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "rewards": [
+                "Gain any 4 collective herb resources"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "arrowvine": 2,
+                "axenut": 1,
+                "corpsecap": 1,
+                "flamefruit": 1,
+                "rockroot": 2,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 114,
+            "name": "Work Freeze",
+            "game": "fh",
+            "coordinates": {
+                "name": "O7",
+                "x": 25.05,
+                "y": 30.2
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "links_to": [
+                115
+            ],
+            "rewards": [
+                "Gain 5 collective {HIDE}",
+                "Add 86.1 to the calendar in four weeks"
+            ],
+            "loot": {
+                "coins": 10,
+                "metal": 3,
+                "hide": 4,
+                "axenut": 1,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 115,
+            "name": "Pylon Problems",
+            "game": "fh",
+            "coordinates": {
+                "name": "O8",
+                "x": 27.36,
+                "y": 33.19
+            },
+            "chapter_id": 110,
+            "links_to": [
+                116
+            ],
+            "linked_from": [
+                114
+            ],
+            "rewards": [
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in one week"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in two weeks"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in three weeks"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in four weeks"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in five weeks"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in six weeks"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Add 66.2 to the calendar in seven weeks"
+                ]
+            ],
+            "prompt": "pylonsDestroyed",
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "arrowvine": 1,
+                "rockroot": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 116,
+            "name": "Caravan Guards",
+            "game": "fh",
+            "coordinates": {
+                "name": "O8",
+                "x": 24.02,
+                "y": 35.41
+            },
+            "chapter_id": 110,
+            "linked_from": [
+                115
+            ],
+            "rewards": [
+                [
+                    "Gain 1 morale"
+                ],
+                [
+                    "Gain 1 morale",
+                    "Gain 1 collective {LUMBER}",
+                    "Gain 1 collective {METAL}",
+                    "Gain 1 collective {HIDE}"
+                ],
+                [
+                    "Gain 1 morale",
+                    "Gain 1 collective {LUMBER}",
+                    "Gain 1 collective {METAL}",
+                    "Gain 1 collective {HIDE}",
+                    "Gain any 2 material resources each",
+                    "Gain 10 experience each"
+                ],
+                [
+                    "Gain 1 morale",
+                    "Gain 1 collective {LUMBER}",
+                    "Gain 1 collective {METAL}",
+                    "Gain 1 collective {HIDE}",
+                    "Gain any 2 material resources each",
+                    "Gain 10 experience each",
+                    "Gain one random item blueprint"
+                ],
+                [
+                    "Gain 1 morale",
+                    "Gain 1 collective {LUMBER}",
+                    "Gain 1 collective {METAL}",
+                    "Gain 1 collective {HIDE}",
+                    "Gain any 2 material resources each",
+                    "Gain 10 experience each",
+                    "Gain one random item blueprint",
+                    "Gain 1 prosperity",
+                    "Gain 2 morale"
+                ]
+            ],
+            "prompt": "wagonsEscaped",
+            "loot": {
+                "coins": 5,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4,
+                "arrowvine": 1,
+                "axenut": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 117,
+            "name": "A Waiting Game",
+            "game": "fh",
+            "coordinates": {
+                "name": "F7",
+                "x": 64.53,
+                "y": 30.4
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "rewards": [
+                "Gain 4 collective {HIDE}",
+                "Gain 10 gold each"
+            ],
+            "loot": {
+                "coins": 6,
+                "lumber": 4,
+                "hide": 6,
+                "arrowvine": 2,
+                "axenut": 1,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 118,
+            "name": "Lurker Necromancy",
+            "game": "fh",
+            "coordinates": {
+                "name": "F4",
+                "x": 63.45,
+                "y": 22.83
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "rewards": [
+                "Gain “Amulet of Eternal Life” (Item 66) blueprint",
+                "Trade all tokens in for loot cards"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "rockroot": 1,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 119,
+            "name": "Radiant Dust",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q1",
+                "x": 15.84,
+                "y": 10.88
+            },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
+            "is_side": true,
+            "chapter_id": 110,
+            "rewards": [
+                "Spend 7 remaining dust to gain “Scepter of Control” (Item 203)",
+                "Spend 1 remaining dust to gain any 1 material resource",
+                "Spend 2 remaining dust to gain any 1 herb resource"
+            ],
+            "loot": {}
+        },
+        {
+            "id": 120,
+            "name": "Under the Influence",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 10.9,
+                "y": 77.88
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "treasures": [
+                50
+            ],
+            "links_to": [
+                121
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 2 collective {LUMBER}",
+                "Add 76.3 to the calendar in ten weeks"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4
+            }
+        },
+        {
+            "id": 121,
+            "name": "Black Memories",
+            "game": "fh",
+            "coordinates": {
+                "name": "C13",
+                "x": 75.75,
+                "y": 50.89
+            },
+            "chapter_id": 110,
+            "linked_from": [
+                120
+            ],
+            "rewards": [
+                [
+                    "Add 184.3 to the calendar in six weeks"
+                ],
+                [
+                    "Gain “Mind-Thieving Helmet” (Item 193)"
+                ],
+                [
+                    "Gain 2 morale"
+                ]
+            ],
+            "prompt": "mindtheifsWill",
+            "loot": {
+                "coins": 9,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 2,
+                "axenut": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 122,
+            "name": "The Eternal Crave",
+            "game": "fh",
+            "coordinates": {
+                "name": "H10",
+                "x": 52.64,
+                "y": 41.34
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "treasures": [
+                31
+            ],
+            "rewards": [
+                [
+                    "Gain 10 gold each"
+                ],
+                [
+                    "Gain 15 experience each",
+                    "Gain 1 ✔ each"
+                ]
+            ],
+            "prompt": "hungryMawDead",
+            "loot": {
+                "coins": 6,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 4,
+                "axenut": 1,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 123,
+            "name": "The Titan",
+            "game": "fh",
+            "coordinates": {
+                "name": "K5",
+                "x": 43.56,
+                "y": 24.16
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "treasures": [
+                52
+            ],
+            "rewards": [
+                "Gain 1 morale",
+                "Gain 1 inspiration"
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 2,
+                "metal": 6,
+                "flamefruit": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 124,
+            "name": "A Growing Problem",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 74.48,
+                "y": 62.66
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "links_to": [
+                125
+            ],
+            "rewards": [
+                "Gain 15 experience each"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 4,
+                "metal": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 125,
+            "name": "The Longest Second",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 78.8,
+                "y": 61.37
+            },
+            "chapter_id": 110,
+            "treasures": [
+                14
+            ],
+            "linked_from": [
+                124
+            ],
+            "rewards": [
+                "Gain “Temporal Amulet” (Item 194)"
+            ],
+            "loot": {
+                "coins": 9,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "corpsecap": 1,
+                "rockroot": 1
+            }
+        },
+        {
+            "id": 126,
+            "name": "Joseph the Lion",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 80.3,
+                "y": 59.18
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "rewards": [
+                "Gain 10 gold each"
+            ],
+            "loot": {
+                "coins": 5,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 2,
+                "flamefruit": 1,
+                "snowthistle": 2
+            }
+        },
+        {
+            "id": 127,
+            "name": "Derelict Freighter",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 60.5,
+                "y": 81.85
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "treasures": [
+                30
+            ],
+            "rewards": [
+                [
+                    "Gain 10 collective gold"
+                ],
+                [
+                    "Gain 10 collective gold",
+                    "Gain 2 collective {LUMBER}"
+                ],
+                [
+                    "Gain 10 collective gold",
+                    "Gain 2 collective {LUMBER}",
+                    "Gain “Tri-Corner Hat” 195"
+                ],
+                [
+                    "Gain 10 collective gold",
+                    "Gain 2 collective {LUMBER}",
+                    "Gain “Tri-Corner Hat” 195",
+                    "Gain 1 prosperity"
+                ]
+            ],
+            "prompt": "cratesLooted",
+            "loot": {
+                "coins": 5,
+                "lumber": 6,
+                "metal": 4,
+                "hide": 4
+            }
+        },
+        {
+            "id": 128,
+            "name": "A Tall Drunken Tale",
+            "game": "fh",
+            "coordinates": {
+                "name": "FR",
+                "x": 55.2,
+                "y": 73.6
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "treasures": [
+                54
+            ],
+            "links_to": [
+                129
+            ],
+            "rewards": [
+                [
+                    "Gain 1 morale",
+                    "Add 100.3 to the calendar in three weeks"
+                ],
+                [
+                    "Gain 2 morale",
+                    "Add 100.3 to the calendar in three weeks"
+                ],
+                [
+                    "Gain 3 morale",
+                    "Gain “Befuddling Mug” (Item 215)",
+                    "Add 100.3 to the calendar in three weeks"
+                ]
+            ],
+            "prompt": "embellismentsCompleted",
+            "loot": {
+                "coins": 2,
+                "lumber": 3,
+                "metal": 1,
+                "hide": 8,
+                "arrowvine": 1,
+                "flamefruit": 2,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 129,
+            "name": "How to Lay an Ambush",
+            "game": "fh",
+            "coordinates": {
+                "name": "J9",
+                "x": 49.5,
+                "y": 37.8
+            },
+            "chapter_id": 110,
+            "treasures": [
+                78
+            ],
+            "links_to": [
+                130
+            ],
+            "linked_from": [
+                128
+            ],
+            "rewards": [
+                "Gain 1 ✔ each"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 4,
+                "metal": 2,
+                "hide": 2,
+                "axenut": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 130,
+            "name": "And Then, a Stream",
+            "game": "fh",
+            "coordinates": {
+                "name": "H8",
+                "x": 54.5,
+                "y": 35.6
+            },
+            "chapter_id": 110,
+            "treasures": [
+                11
+            ],
+            "linked_from": [
+                129
+            ],
+            "rewards": [
+                [
+                    "Lose 3 morale",
+                    "Gain 1 prosperity",
+                    "Gain 10 collective gold for each token carried"
+                ],
+                [
+                    "Gain 5 collective gold for each token carried"
+                ]
+            ],
+            "prompt": "sunAgatesReturned",
+            "loot": {
+                "coins": 6,
+                "lumber": 5,
+                "metal": 2,
+                "hide": 3,
+                "arrowvine": 2,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 131,
+            "name": "The Dancing Iceberg",
+            "game": "fh",
+            "coordinates": {
+                "name": "K2",
+                "x": 44.43,
+                "y": 13.81
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "rewards": [
+                "Gain 10 experience each",
+                "Gain “Mesmerizing Seashell” (Item 237)"
+            ],
+            "loot": {}
+        },
+        {
+            "id": 132,
+            "name": "Temple of Feline Power",
+            "game": "fh",
+            "coordinates": {
+                "name": "Q6",
+                "x": 19.54,
+                "y": 29.14
+            },
+            "is_side": true,
+            "chapter_id": 111,
+            "links_to": [
+                133
+            ],
+            "rewards": [
+                "Gain 1 inspiration"
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 2,
+                "metal": 2,
+                "hide": 2,
+                "arrowvine": 1,
+                "corpsecap": 1
+            }
+        },
+        {
+            "id": 133,
+            "name": "Bolt",
+            "game": "fh",
+            "coordinates": {
+                "name": "P6",
+                "x": 21.12,
+                "y": 27.03
+            },
+            "chapter_id": 111,
+            "treasures": [
+                34
+            ],
+            "linked_from": [
+                132
+            ],
+            "rewards": [
+                "Gain “Cracked Idol” (Item 238)"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 3,
+                "metal": 3,
+                "hide": 3,
+                "corpsecap": 1,
+                "rockroot": 2
+            }
+        },
+        {
+            "id": 134,
+            "name": "Tower of Knowledge",
+            "game": "fh",
+            "coordinates": {
+                "name": "R1",
+                "x": 12.03,
+                "y": 10.6
+            },
+            "requirements": "Into the Forest (Campaign) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "CITF"
+                    ]
+                }
+            ],
+            "is_side": true,
+            "chapter_id": 110,
+            "rewards": [
+                "Gain “Tome of Conflict” (Item 219)"
+            ],
+            "loot": {
+                "coins": 10,
+                "lumber": 2,
+                "metal": 4,
+                "hide": 2,
+                "arrowvine": 1
+            }
+        },
+        {
+            "id": 135,
+            "name": "Belara's Keep",
+            "game": "fh",
+            "coordinates": {
+                "name": "O4",
+                "x": 24.23,
+                "y": 21.55
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "rewards": [
+                "Gain 2 morale",
+                "Gain 2 prosperity",
+                "Gain 1 inspiration",
+                "Gain “Belara's quill” (Item 220)"
+            ],
+            "loot": {
+                "coins": 7,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 2,
+                "corpsecap": 1,
+                "flamefruit": 1
+            }
+        },
+        {
+            "id": 136,
+            "name": "Abandoned Hideout",
+            "game": "fh",
+            "coordinates": {
+                "name": "I2",
+                "x": 46.88,
+                "y": 14.83
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "treasures": [
+                83
+            ],
+            "rewards": [
+                "Gain 20 gold each",
+                "Gain “Ancient Coin” (Item 245)"
+            ],
+            "loot": {
+                "coins": 8,
+                "lumber": 4,
+                "hide": 4,
+                "arrowvine": 1,
+                "snowthistle": 1
+            }
+        },
+        {
+            "id": 137,
+            "name": "Pirate Queen's Haul",
+            "game": "fh",
+            "coordinates": {
+                "name": "D3",
+                "x": 71.86,
+                "y": 19.58
+            },
+            "is_side": true,
+            "chapter_id": 110,
+            "rewards": [
+                "Gain 2 prosperity",
+                "Gain 3 morale",
+                "Gain 30 gold each",
+                "Add one +1 sticker to a money loot card"
+            ],
+            "loot": {
+                "coins": 12,
+                "lumber": 4,
+                "metal": 4,
+                "hide": 4
+            }
+        },
+        {
+            "id": 201,
+            "name": "Wonder of Nature",
+            "game": "fh",
+            "solo": "DF",
+            "rewards": [
+                "“Wanderer's Club” (Item 248)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 202,
+            "name": "Race Against the Clock",
+            "game": "fh",
+            "solo": "BB",
+            "rewards": [
+                "“Recalibration Trigger” (Item 249)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 203,
+            "name": "Scouting Ambush",
+            "game": "fh",
+            "solo": "BN",
+            "rewards": [
+                "“Spear of Justice” (Item 250)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 204,
+            "name": "The Dead of Night",
+            "game": "fh",
+            "solo": "DW",
+            "rewards": [
+                "“Soul Urn” (Item 251)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 205,
+            "name": "Bones in the Dirt",
+            "game": "fh",
+            "solo": "BO",
+            "rewards": [
+                "“Black Earth Codex” (Item 252)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 206,
+            "name": "Divide and Conquer",
+            "game": "fh",
+            "solo": "GE",
+            "rewards": [
+                "“Mask of Duality” (Item 253)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 207,
+            "name": "Path of Ancestry",
+            "game": "fh",
+            "solo": "IF",
+            "rewards": [
+                "“Ancestral Blade” (Item 254)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 208,
+            "name": "Crumbling Descent",
+            "game": "fh",
+            "solo": "PY",
+            "rewards": [
+                "“Mountain's Heart” (Item 255)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 209,
+            "name": "Tuning the Resonance",
+            "game": "fh",
+            "solo": "SH",
+            "rewards": [
+                "“Sonorous Shard” (Item 256)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 210,
+            "name": "A Magnificent Trap",
+            "game": "fh",
+            "solo": "TA",
+            "rewards": [
+                "“Sly Camouflage” (Item 257)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 211,
+            "name": "A Collection of Suffering",
+            "game": "fh",
+            "solo": "PC",
+            "rewards": [
+                "“Skull of Agony” (Item 258)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 212,
+            "name": "Fighting Snow with Snow",
+            "game": "fh",
+            "solo": "SD",
+            "rewards": [
+                "“Storm Carving” (Item 259)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 213,
+            "name": "Under the Ice",
+            "game": "fh",
+            "solo": "FF",
+            "rewards": [
+                "“Freezing Orb” (Item 260)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 214,
+            "name": "Recharge",
+            "game": "fh",
+            "solo": "HV",
+            "rewards": [
+                "“Energized Module” (Item 261)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 215,
+            "name": "Boiler Room",
+            "game": "fh",
+            "solo": "ME",
+            "rewards": [
+                "“Exhaust Boots” (Item 262)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 216,
+            "name": "Wet Work",
+            "game": "fh",
+            "solo": "DT",
+            "rewards": [
+                "“Warlord's Skull” (Item 263)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        },
+        {
+            "id": 217,
+            "name": "Crash Against the Waves",
+            "game": "fh",
+            "solo": "CR",
+            "rewards": [
+                "“Spiraled Medallion” (Item 264)"
+            ],
+            "loot": {
+                "coins": 15
+            }
+        }
+    ],
+    "chapters": [
+        {
+            "id": 1,
+            "name": "Introduction"
+        },
+        {
+            "id": 2,
+            "name": "Algox"
+        },
+        {
+            "id": 3,
+            "name": "Lurker"
+        },
+        {
+            "id": 4,
+            "name": "Algox"
+        },
+        {
+            "id": 5,
+            "name": "Algox"
+        },
+        {
+            "id": 6,
+            "name": "Unfettered"
+        },
+        {
+            "id": 107,
+            "name": "Personal Quests"
+        },
+        {
+            "id": 108,
+            "name": "Puzzle Book"
+        },
+        {
+            "id": 109,
+            "name": "Random Scenarios"
+        },
+        {
+            "id": 110,
+            "name": "Other"
+        },
+        {
+            "id": 111,
+            "name": "Job Postings"
+        }
+    ],
+    "regions": [],
+    "overlays": [
+        {
+            "id": "A",
+            "name": "Boat",
+            "game": "fh",
+            "coordinates": {
+                "x": 65.7,
+                "y": 80.05
+            },
+            "icon": "{BOAT}",
+            "upgrade_cost": [1, 4, 1, 2, 0, 0]
+        },
+        {
+            "id": "B",
+            "name": "Sled",
+            "game": "fh",
+            "coordinates": {
+                "x": 62.2,
+                "y": 77.46
+            },
+            "icon": "{SLED}",
+            "upgrade_cost": [1, 3, 2, 1, 0, 0]
+        },
+        {
+            "id": "C",
+            "name": "Climbing Gear",
+            "game": "fh",
+            "coordinates": {
+                "x": 57.35,
+                "y": 82.46
+            },
+            "icon": "{CLIMBING_GEAR}",
+            "upgrade_cost": [1, 1, 3, 2, 0, 0]
+        },
+        {
+            "id": "D",
+            "name": "Ice Spike",
+            "game": "fh",
+            "coordinates": {
+                "x": 52.3,
+                "y": 56.18
+            }
+        },
+        {
+            "id": "E",
+            "name": "Portcullis",
+            "game": "fh",
+            "coordinates": {
+                "x": 42.3,
+                "y": 59.8
+            }
+        },
+        {
+            "id": "F",
+            "name": "Statue",
+            "game": "fh",
+            "coordinates": {
+                "x": 31.0,
+                "y": 73.3
+            }
+        },
+        {
+            "id": "G_red",
+            "name": "Red Well",
+            "game": "fh",
+            "coordinates": {
+                "x": 41.25,
+                "y": 71.93
+            }
+        },
+        {
+            "id": "G_blue",
+            "name": "Blue Well",
+            "game": "fh",
+            "coordinates": {
+                "x": 41.3,
+                "y": 71.9
+            }
+        },
+        {
+            "id": "H",
+            "name": "Stage",
+            "game": "fh",
+            "coordinates": {
+                "x": 68.08,
+                "y": 67.75
+            }
+        },
+        {
+            "id": "J",
+            "name": "Wall",
+            "game": "fh",
+            "coordinates": {
+                "x": 28.14,
+                "y": 60.46
+            },
+            "upgrade_cost": [1, 4, 0, 0, 10, 0]
+        },
+        {
+            "id": "K",
+            "name": "Wall",
+            "game": "fh",
+            "coordinates": {
+                "x": 35.2,
+                "y": 85.88
+            },
+            "upgrade_cost": [2, 3, 2, 2, 10, 0]
+        },
+        {
+            "id": "L",
+            "name": "Wall",
+            "game": "fh",
+            "coordinates": {
+                "x": 11.52,
+                "y": 72.96
+            },
+            "upgrade_cost": [3, 5, 2, 1, 10, 0]
+        },
+        {
+            "id": "M",
+            "name": "Wall",
+            "game": "fh",
+            "coordinates": {
+                "x": 19.2,
+                "y": 78.98
+            },
+            "upgrade_cost": [4, 4, 3, 3, 10, 0]
+        },
+        {
+            "id": "N",
+            "name": "Wall",
+            "game": "fh",
+            "coordinates": {
+                "x": 52.11,
+                "y": 59.94
+            },
+            "upgrade_cost": [6, 6, 3, 2, 10, 0]
+        },
+        {
+            "id": "W",
+            "game": "fh",
+            "coordinates": {
+                "name": "M7",
+                "x": 29.78,
+                "y": 28.38
+            },
+            "linked_from": [
+                2,
+                3
+            ]
+        },
+        {
+            "id": "X",
+            "game": "fh",
+            "coordinates": {
+                "name": "C7",
+                "x": 74.62,
+                "y": 25.74
+            },
+            "linked_from": [
+                8
+            ]
+        },
+        {
+            "id": "Y",
+            "game": "fh",
+            "coordinates": {
+                "name": "C10",
+                "x": 66.06,
+                "y": 36.42
+            },
+            "linked_from": [
+                16
+            ]
+        },
+        {
+            "id": "Z",
+            "game": "fh",
+            "coordinates": {
+                "name": "F2",
+                "x": 55.47,
+                "y": 9.79
+            },
+            "linked_from": [
+                42
+            ]
+        }
+    ],
+    "buildings": [
+        {
+            "id": 5,
+            "name": "Mining Camp",
+            "game": "fh",
+            "unlocked": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively buy up to 1 {METAL} for 2 gold",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 4, 2, 1, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 2, 0],
+                    "coordinates": {
+                        "x": 13.25,
+                        "y": 61.2
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively buy up to 2 {METAL} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 49.2",
+                    "upgrade_cost": [3, 6, 3, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 2, 1],
+                    "coordinates": {
+                        "x": 13.06,
+                        "y": 61.14
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Collectively buy up to 3 {METAL} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 8, 5, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 13.0,
+                        "y": 61.0
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Collectively buy up to 4 {METAL} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [7, 10, 6, 3, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 12.7,
+                        "y": 60.8
+                    }
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Hunting Lodge",
+            "game": "fh",
+            "unlocked": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively buy up to 1 {HIDE} for 2 gold",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 172.3",
+                    "upgrade_cost": [1, 4, 1, 2, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 0, 1],
+                    "coordinates": {
+                        "x": 32.4,
+                        "y": 81.2
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively buy up to 2 {HIDE} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [3, 6, 2, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 31.95,
+                        "y": 80.96
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Collectively buy up to 3 {HIDE} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 8, 2, 5, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 2],
+                    "coordinates": {
+                        "x": 31.53,
+                        "y": 80.75
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Collectively buy up to 4 {HIDE} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [7, 10, 3, 6, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 1, 2],
+                    "coordinates": {
+                        "x": 31.27,
+                        "y": 80.6
+                    }
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Logging Camp",
+            "game": "fh",
+            "unlocked": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively buy up to 1 {LUMBER} for 2 gold",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 2, 3, 2, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 0],
+                    "coordinates": {
+                        "x": 58.8,
+                        "y": 63.5
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively buy up to 2 {LUMBER} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [3, 4, 5, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 58.6,
+                        "y": 63.0
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Collectively buy up to 3 {LUMBER} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 6, 6, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 58.36,
+                        "y": 62.92
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Collectively buy up to 4 {LUMBER} for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [7, 8, 8, 3, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 58.16,
+                        "y": 62.72
+                    }
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Inn",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 35.2,
+                        "y": 68.7
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively buy 1 material resource for 2 gold",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 151.2",
+                    "upgrade_cost": [2, 4, 4, 4, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 33.46,
+                        "y": 66.56
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively buy up to 2 different material resources for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [4, 5, 5, 5, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 33.13,
+                        "y": 66.3
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Collectively buy up to 3 different material resources for 2 gold each",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 6, 6, 6, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 32.65,
+                        "y": 65.75
+                    }
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Garden",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 20.37,
+                        "y": 76.95
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Plant herbs OR Gain 1 herb from each planted plot",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 78.4",
+                    "upgrade_cost": [1, 3, 0, 0, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 0, 0],
+                    "coordinates": {
+                        "x": 17.9,
+                        "y": 74.6
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Plant herbs OR Gain 1 herb from each planted plot",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, +1 plot",
+                    "upgrade_cost": [2, 4, 2, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 0],
+                    "coordinates": {
+                        "x": 17.9,
+                        "y": 74.6
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Gain 1 collective herb from each planted plot, then plant herbs",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 3, 3, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 17.9,
+                        "y": 74.6
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Gain 1 collective herb from each planted plot, then plant herbs",
+                    "downtime": "",
+                    "wrecked": "",
+                    "passive": "",
+                    "rewards": "+1 prosperity, +1 plot",
+                    "upgrade_cost": [7, 6, 3, 3, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 17.9,
+                        "y": 74.6
+                    }
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Craftsman",
+            "game": "fh",
+            "built": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 1 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "Add items 001 to 010 to the item supply",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 0],
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 1 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 011 to 015 to the item supply",
+                    "upgrade_cost": [1, 2, 2, 1, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 1],
+                    "coordinates": {
+                        "x": 26.55,
+                        "y": 79.95
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 1 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 016 to 020 to the item supply",
+                    "upgrade_cost": [2, 3, 2, 2, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 26.27,
+                        "y": 79.78
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 2 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 021 to 025 to the item supply",
+                    "upgrade_cost": [3, 4, 3, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 26.0,
+                        "y": 79.63
+                    }
+                },
+                {
+                    "level": 5,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 2 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 026 to 030 to the item supply",
+                    "upgrade_cost": [4, 5, 3, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 25.7,
+                        "y": 79.5
+                    }
+                },
+                {
+                    "level": 6,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 2 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 031 to 035 to the item supply",
+                    "upgrade_cost": [5, 6, 4, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 2, 1],
+                    "coordinates": {
+                        "x": 23.7,
+                        "y": 79.2
+                    }
+                },
+                {
+                    "level": 7,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 3 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 036 to 040 to the item supply",
+                    "upgrade_cost": [6, 7, 4, 4, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 1],
+                    "coordinates": {
+                        "x": 23.5,
+                        "y": 79.1
+                    }
+                },
+                {
+                    "level": 8,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 3 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 041 to 045 to the item supply",
+                    "upgrade_cost": [7, 8, 5, 4, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 23.4,
+                        "y": 78.78
+                    }
+                },
+                {
+                    "level": 9,
+                    "operations": "",
+                    "downtime": "Craft items",
+                    "wrecked": "Lose 3 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 046 to 050 to the item supply",
+                    "upgrade_cost": [8, 9, 5, 5, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 23.4,
+                        "y": 78.74
+                    }
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Alchemist",
+            "game": "fh",
+            "built": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "Brew 2-herb potions",
+                    "wrecked": "Characters cannot use potions",
+                    "passive": "",
+                    "rewards": "",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 0],
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "Brew and distill 2-herb potions",
+                    "wrecked": "Characters cannot use potions",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 2, 2, 1, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 1],
+                    "coordinates": {
+                        "x": 41.0,
+                        "y": 66.26
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "Brew and distill 2- and 3-herb potions",
+                    "wrecked": "Characters cannot use potions",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 183.5",
+                    "upgrade_cost": [4, 4, 4, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 39.86,
+                        "y": 64.46
+                    }
+                }
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Trading Post",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 38.95,
+                        "y": 63.45
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "Buy up to one item",
+                    "wrecked": "Lose 5 collective gold",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 25.2",
+                    "upgrade_cost": [2, 2, 2, 1, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 0],
+                    "coordinates": {
+                        "x": 38.4,
+                        "y": 62.54
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "Buy up to two items",
+                    "wrecked": "Lose 10 collective gold",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 12.4",
+                    "upgrade_cost": [3, 3, 3, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 1, 1],
+                    "coordinates": {
+                        "x": 38.2,
+                        "y": 62.45
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "Buy up to three items",
+                    "wrecked": "Lose 15 collective gold",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 38.3",
+                    "upgrade_cost": [5, 4, 3, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 38.08,
+                        "y": 62.0
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "",
+                    "downtime": "Buy up to four items",
+                    "wrecked": "Lose 20 collective gold",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 196.2",
+                    "upgrade_cost": [7, 5, 4, 4, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 37.6,
+                        "y": 61.74
+                    }
+                }
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Jeweler",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 30.55,
+                        "y": 64.45
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Damage any one building",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 31.3",
+                    "upgrade_cost": [4, 3, 2, 4, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 2, 1],
+                    "coordinates": {
+                        "x": 28.77,
+                        "y": 63.94
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Damage any one building",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 160 to 163 to the item supply",
+                    "upgrade_cost": [6, 3, 6, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 3, 1],
+                    "coordinates": {
+                        "x": 28.6,
+                        "y": 63.45
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Damage any one building",
+                    "passive": "",
+                    "rewards": "+1 prosperity, Add items 164 to 167 to the item supply",
+                    "upgrade_cost": [8, 2, 10, 3, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [1, 4, 1],
+                    "coordinates": {
+                        "x": 28.12,
+                        "y": 62.72
+                    }
+                }
+            ]
+        },
+        {
+            "id": 42,
+            "name": "Temple of the Great Oak",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 34.86,
+                        "y": 75.89
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                    "downtime": "",
+                    "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 192.5",
+                    "upgrade_cost": [1, 4, 2, 2, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 34.0,
+                        "y": 74.0
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                    "downtime": "",
+                    "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                    "passive": "",
+                    "rewards": "+3 prosperity",
+                    "upgrade_cost": [4, 3, 6, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 33.4,
+                        "y": 73.4
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                    "downtime": "",
+                    "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                    "passive": "",
+                    "rewards": "+5 prosperity",
+                    "upgrade_cost": [7, 4, 10, 4, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 1],
+                    "coordinates": {
+                        "x": 33.06,
+                        "y": 73.14
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                    "downtime": "",
+                    "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                    "passive": "",
+                    "rewards": "",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 1],
+                    "coordinates": {
+                        "x": 32.48,
+                        "y": 72.49
+                    }
+                }
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Enhancer",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 26.6,
+                        "y": 76.5
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "Buy enhancements",
+                    "wrecked": "Each character starts the next scenario with {DISARM.fh}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 193.1",
+                    "upgrade_cost": [1, 3, 4, 0, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 2, 0],
+                    "coordinates": {
+                        "x": 26.38,
+                        "y": 76.1
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "Buy enhancements",
+                    "wrecked": "Each character starts the next scenario with {DISARM.fh}",
+                    "passive": "Reduce all enhancement costs by 10 gold",
+                    "rewards": "+1 prosperity, read section 157.2",
+                    "upgrade_cost": [3, 4, 5, 0, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 2, 0],
+                    "coordinates": {
+                        "x": 26.1,
+                        "y": 75.32
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "Buy enhancements",
+                    "wrecked": "Each character starts the next scenario with {DISARM.fh}",
+                    "passive": "Reduce all enhancement costs by 10 gold and level penalties by 10 gold per level",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 4, 4, 4, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 2, 1],
+                    "coordinates": {
+                        "x": 25.5,
+                        "y": 75.0
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "",
+                    "downtime": "Buy enhancements",
+                    "wrecked": "Each character starts the next scenario with {DISARM.fh}",
+                    "passive": "Reduce all enhancement costs by 10 gold, level penalties by 10 gold per level, and repeat penalties by 25 gold per enhancement",
+                    "rewards": "+1 prosperity, read section 56.3",
+                    "upgrade_cost": [7, 5, 6, 6, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 23.26,
+                        "y": 73.54
+                    }
+                }
+            ]
+        },
+        {
+            "id": 65,
+            "name": "Metal Depot",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 25.4,
+                        "y": 66.62
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively sell up to 1 {METAL} for 5 gold",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {METAL}",
+                    "passive": "",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [3, 2, 6, 2, 10, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 2, 1],
+                    "coordinates": {
+                        "x": 23.64,
+                        "y": 65.4
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively sell up to 2 {METAL} for 5 gold each",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {METAL}",
+                    "passive": "",
+                    "rewards": "+2 prosperity",
+                    "upgrade_cost": [7, 5, 5, 5, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [1, 3, 1],
+                    "coordinates": {
+                        "x": 23.44,
+                        "y": 65.28
+                    }
+                }
+            ]
+        },
+        {
+            "id": 67,
+            "name": "Lumber Depot",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 53.3,
+                        "y": 68.02
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively sell up to 1 {LUMBER} for 5 gold",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {LUMBER}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 144.3",
+                    "upgrade_cost": [3, 6, 2, 2, 10, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 52.22,
+                        "y": 66.88
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively sell up to 2 {LUMBER} for 5 gold each",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {LUMBER}",
+                    "passive": "",
+                    "rewards": "+2 prosperity",
+                    "upgrade_cost": [7, 5, 5, 5, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 51.8,
+                        "y": 66.04
+                    }
+                }
+            ]
+        },
+        {
+            "id": 72,
+            "name": "Hide Depot",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 42.14,
+                        "y": 77.66
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively sell up to 1 {HIDE} for 5 gold",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 173.1",
+                    "upgrade_cost": [3, 2, 2, 6, 10, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 1, 2],
+                    "coordinates": {
+                        "x": 41.9,
+                        "y": 75.3
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively sell up to 2 {HIDE} for 5 gold each",
+                    "downtime": "",
+                    "wrecked": "Lose 2 collective {HIDE}",
+                    "passive": "",
+                    "rewards": "+2 prosperity",
+                    "upgrade_cost": [7, 5, 5, 5, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [1, 1, 3],
+                    "coordinates": {
+                        "x": 41.76,
+                        "y": 74.84
+                    }
+                }
+            ]
+        },
+        {
+            "id": 74,
+            "name": "Tavern",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 51.8,
+                        "y": 79.7
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 morale",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 160.2",
+                    "upgrade_cost": [2, 2, 2, 1, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 0],
+                    "coordinates": {
+                        "x": 50.8,
+                        "y": 78.1
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 morale",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 35.3",
+                    "upgrade_cost": [4, 4, 3, 2, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 0],
+                    "coordinates": {
+                        "x": 45.82,
+                        "y": 77.26
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 morale",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 113.1",
+                    "upgrade_cost": [6, 6, 4, 2, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 45.56,
+                        "y": 76.97
+                    }
+                }
+            ]
+        },
+        {
+            "id": 81,
+            "name": "Hall of Revelry",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 19,
+                        "y": 70.86
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 morale",
+                    "passive": "When the trials deck is complete, read section 187.1",
+                    "rewards": "+1 prosperity, read section 178.2",
+                    "upgrade_cost": [5, 6, 6, 6, 10, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 16.1,
+                        "y": 68.38
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 morale",
+                    "passive": "Access to Tholos’ Favours",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 15.9,
+                        "y": 67.65
+                    }
+                }
+            ]
+        },
+        {
+            "id": 83,
+            "name": "Library",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 26.98,
+                        "y": 71.16
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 inspiration",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 190.3",
+                    "upgrade_cost": [2, 3, 2, 0, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 0],
+                    "coordinates": {
+                        "x": 26.66,
+                        "y": 70.26
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 inspiration",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 116.3",
+                    "upgrade_cost": [4, 4, 4, 1, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 0],
+                    "coordinates": {
+                        "x": 26.4,
+                        "y": 69.15
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 inspiration",
+                    "passive": "",
+                    "rewards": "+1 prosperity, read section 89.2",
+                    "upgrade_cost": [6, 2, 5, 5, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 26.06,
+                        "y": 68.5
+                    }
+                }
+            ]
+        },
+        {
+            "id": 84,
+            "name": "Workshop",
+            "game": "fh",
+            "built": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose 1 collective {LUMBER}",
+                    "passive": "Each of the following is an upgrade that can be built in any order.",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": 85,
+            "name": "Carpenter",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 51.25,
+                        "y": 64.4
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose any 1 collective resource",
+                    "passive": "Reduce all construction costs by 1 material resource",
+                    "rewards": "+1 prosperity, read section 7.3",
+                    "upgrade_cost": [2, 4, 3, 2, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 1, 1],
+                    "coordinates": {
+                        "x": 50.62,
+                        "y": 63.85
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Lose any 1 collective resource",
+                    "passive": "Reduce all construction costs by 1 material resource and the extra construction cost by 1 morale",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [5, 6, 5, 4, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 49.4,
+                        "y": 62.94
+                    }
+                }
+            ]
+        },
+        {
+            "id": 88,
+            "name": "Stables",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 69.26,
+                        "y": 75.93
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Characters cannot use pets",
+                    "passive": "Bring one pet into each scenario. Capacity: 4",
+                    "rewards": "+1 prosperity, read section 3.1",
+                    "upgrade_cost": [2, 6, 2, 2, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [3, 1, 0],
+                    "coordinates": {
+                        "x": 68.8,
+                        "y": 75.06
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Characters cannot use pets",
+                    "passive": "Bring one pet into each scenario. Capacity: 8",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [4, 4, 5, 5, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 1, 1],
+                    "coordinates": {
+                        "x": 68.44,
+                        "y": 74.61
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Characters cannot use pets",
+                    "passive": "Bring two pets into each scenario. Capacity: 8",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [6, 6, 7, 6, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [3, 2, 2],
+                    "coordinates": {
+                        "x": 67.87,
+                        "y": 74.41
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Characters cannot use pets",
+                    "passive": "Bring two pets into each scenario. Capacity: 12",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [8, 8, 8, 8, 0, 1],
+                    "damage_cost": 4,
+                    "wrecked_cost": [3, 3, 3],
+                    "coordinates": {
+                        "x": 67.7,
+                        "y": 73.98
+                    }
+                }
+            ]
+        },
+        {
+            "id": 90,
+            "name": "Town Hall",
+            "game": "fh",
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 47.15,
+                        "y": 70.18
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Cannot complete challenges",
+                    "passive": "Draw one challenge and keep up to one. When the challenge deck is complete, read section 190.1",
+                    "rewards": "+1 prosperity, read section 189.1",
+                    "upgrade_cost": [2, 2, 2, 1, 10, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [2, 2, 0],
+                    "coordinates": {
+                        "x": 46.45,
+                        "y": 68.74
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Cannot complete challenges",
+                    "passive": "Draw two challenges and keep up to one. When the challenge deck is complete, read section 190.1",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [4, 3, 3, 3, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [2, 2, 1],
+                    "coordinates": {
+                        "x": 43.6,
+                        "y": 68.08
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "",
+                    "downtime": "",
+                    "wrecked": "Cannot complete challenges",
+                    "passive": "Draw three challenges and keep up to two. When the challenge deck is complete, read section 190.1",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [6, 4, 5, 4, 0, 0],
+                    "damage_cost": 4,
+                    "wrecked_cost": [2, 2, 2],
+                    "coordinates": {
+                        "x": 42.6,
+                        "y": 67.64
+                    }
+                }
+            ]
+        },
+        {
+            "id": 98,
+            "name": "Barracks",
+            "game": "fh",
+            "built": true,
+            "levels": [
+                {
+                    "level": 0,
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 1,
+                    "operations": "Collectively train up to 1 soldier for 3 gold and 1 material resource",
+                    "downtime": "",
+                    "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
+                    "passive": "Capacity: 4, Effect: advantage and -5{ATTACK.fh}",
+                    "rewards": "+1 prosperity",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 1, 0],
+                    "coordinates": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "level": 2,
+                    "operations": "Collectively train up to 1 soldier for 3 gold and 1 material resource",
+                    "downtime": "",
+                    "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
+                    "passive": "Capacity: 6, Effect: advantage and -15{ATTACK.fh}",
+                    "rewards": "+1 prosperity, +2 soldiers",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 2,
+                    "wrecked_cost": [1, 2, 1],
+                    "coordinates": {
+                        "x": 71.96,
+                        "y": 66.94
+                    }
+                },
+                {
+                    "level": 3,
+                    "operations": "Collectively train up to 2 soldiers for 3 gold and 1 material resource each",
+                    "downtime": "",
+                    "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
+                    "passive": "Capacity: 8, Effect: advantage and -25{ATTACK.fh}",
+                    "rewards": "+1 prosperity, +2 soldiers",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 2, 1],
+                    "coordinates": {
+                        "x": 71.5,
+                        "y": 66.66
+                    }
+                },
+                {
+                    "level": 4,
+                    "operations": "Collectively train up to 2 soldiers for 3 gold and 1 material resource each",
+                    "downtime": "",
+                    "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
+                    "passive": "Capacity: 10, Effect: advantage and -35{ATTACK.fh}",
+                    "rewards": "+1 prosperity, +2 soldiers",
+                    "upgrade_cost": [1, 0, 0, 0, 0, 0],
+                    "damage_cost": 3,
+                    "wrecked_cost": [1, 3, 1],
+                    "coordinates": {
+                        "x": 71.35,
+                        "y": 64.4
+                    }
+                }
+            ]
+        }
+    ]
+}

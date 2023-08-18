@@ -84,15 +84,10 @@ class Svg {
     }
 
     stripScriptsAndStyles() {
-        let scripts = Array.from(this.svg.getElementsByTagName('script'));
-        let styles = Array.from(this.svg.getElementsByTagName('style'));
-
-        for (let script of scripts) {
-            this.svg.removeChild(script);
-        }
-        for (let style of styles) {
-            this.svg.removeChild(style);
-        }
+        ['defs', 'script', 'style'].forEach((tag) => {
+            Array.from(this.svg.getElementsByTagName(tag))
+                .forEach((el) => this.svg.removeChild(el));
+        })
     }
 }
 </script>

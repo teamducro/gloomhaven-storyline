@@ -30,6 +30,20 @@
                           :alt="$t(achievement.name)"/>
                 </li>
             </ul>
+
+            <webp v-for="overlay in overlays"
+                  :src="'/img/overlays/'+game+'/'+overlay.id+'.png'"
+                  :key="game+'-'+overlay.id"
+                  :id="'o' + overlay.id"
+                  :animate="true"
+                  :alt="$t(overlay.id)"
+                  class="absolute scenario"
+                  :style="{
+                      'left': overlay.coordinates.x + '%',
+                      'top': overlay.coordinates.y + '%',
+                      'transform': 'scale('+scenarioScale+')'
+                  }"/>
+
             <template v-if="scenarios && scenarios.count()">
                 <webp v-for="scenario in scenarios.items"
                       v-if="scenario.isVisible() && (!scenario.root || scenario.id === 1 || (scenario.root && scenario.isComplete())) && scenario.coordinates.x > 0 && scenario.coordinates.y > 0"
@@ -45,6 +59,25 @@
                           'transform': 'scale('+scenarioScale+')'
                       }"/>
             </template>
+            
+            <template v-if="buildings && buildings.count()">
+                <webp v-for="building in buildings.items.filter(filteredBuildings)"
+                      :src="building.image()"
+                      :key="game+'-b'+building.id"
+                      :id="'b' + building.id"
+                      :animate="true"
+                      :alt="$t(building.name)"
+                      class="absolute scenario"
+                      :style="{
+                          'left': building.coordinates.x + '%',
+                          'top': building.coordinates.y + '%',
+                          'transform': 'scale('+scenarioScale+')'
+                      }"/>
+            </template>
+
+            <p v-if="game === 'fh' && overlays && overlays.contains('id','A')"
+                class="absolute text-center text-gray-800 font-title text-xs"
+                style="left: 69.8%; top: 85.05%; width: 165px;">{{ overlays.where('id','A').first().name }}</p>
         </div>
     </div>
 </template>
@@ -72,6 +105,8 @@ export default {
             mapTouch: null,
             scenarios: null,
             achievements: null,
+            overlays: null,
+            buildings: null,
             scenarioScale: 1,
             gameData: new GameData
         }
@@ -97,11 +132,24 @@ export default {
         }
         this.$bus.$on('achievements-updated', this.setAchievements);
         this.$bus.$on('game-selected', this.loadMap);
+        
+        if (app.overlays) {
+            this.setOverlays();
+        }
+        if (app.buildings) {
+            this.setBuildings();
+        }
+        this.$bus.$on('buildings-updated', this.setBuildings);
+        this.$bus.$on('overlays-updated', this.setOverlays);
     },
     destroyed() {
         this.map?.dispose();
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
+        this.$bus.$off('achievements-updated', this.setAchievements);
+        this.$bus.$off('game-selected', this.loadMap);
+        this.$bus.$off('buildings-updated', this.setBuildings);
+        this.$bus.$off('overlays-updated', this.setOverlays);
         if (this.mapTouch) {
             this.mapTouch.destroy();
         }
@@ -151,6 +199,12 @@ export default {
         setAchievements() {
             this.achievements = app.achievements;
         },
+        setBuildings() {
+            this.buildings = app.buildings;
+        },
+        setOverlays() {
+            this.overlays = app.overlays.filter(overlay => overlay.present);
+        },
         scenarioClicked(e) {
             let id = parseInt(e.target.id.replace('s', ''));
             this.open(id);
@@ -187,7 +241,17 @@ export default {
             return this.isLandscape()
                 ? window.innerHeight / this.settings.width
                 : window.innerWidth / this.$map.offsetWidth;
-        }
+        },
+        filteredBuildings(building) {
+            // Building 42 should be hidden if scenario 64 is active
+            if (this.game =='fh' && building.id === 42) {
+                let blocker = this.scenarios.items.find(s => s.id === 64);
+                if (blocker.isVisible() && !blocker.isComplete()) {
+                    return false;
+                }
+            }
+            return building.isUnlocked();
+        },
     }
 }
 </script>

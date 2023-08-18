@@ -1,6 +1,6 @@
 <template>
     <transition name="fade">
-        <div v-if="show" class="toast fixed right-0 bottom-0 mr-4 mb-4"
+        <div v-if="show" class="toast fixed right-0 bottom-0 mr-4 mb-4 z-1"
              @mouseover="hoverStart"
              @mouseleave="hoverEnd"
              @touchstart="hoverStart"

@@ -8,7 +8,7 @@
     <meta name="description"
           content="This Gloomhaven Storyline Tracker enables you to register what scenarios are finished and read the story for each new unlocked scenario!">
     <meta name="keywords"
-          content="Gloomhaven,storyline tracker,storyline,party sheet,road event,city event,treasures,scenario">
+          content="Gloomhaven,Frosthaven,forgotten circles,jaws of the lion,storyline tracker,storyline,party sheet,road event,city event,treasures,scenario">
     <meta name="author" content="Daniël Ducro">
 
     <title>Gloomhaven storyline</title>
@@ -37,11 +37,7 @@
 <body>
 <div id="bg"></div>
 <div id="app" v-cloak>
-    <div class="relative logo">
-        <webp class="" src="/img/gloomhaven-logo.png" alt="Gloomhaven"
-              width="250" height="37"></webp>
-        <ribbon v-if="user">Pro</ribbon>
-    </div>
+    <top-logo :game="game" :user="user"></top-logo>
     <drawer>
         <template v-slot:content>
             <router-view></router-view>

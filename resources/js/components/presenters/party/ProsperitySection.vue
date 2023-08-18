@@ -2,22 +2,20 @@
     <div class="w-full mt-8">
         <div class="mb-2 flex items-center">
             <slot name="title">
-                <h2>{{ $t('Gloomhaven Prosperity') }}</h2>
+                <h2>{{ $t(sheet.game == 'fh' ? 'Frosthaven' : 'Gloomhaven') + ' ' + $t('Prosperity') }}</h2>
             </slot>
-            <rollback v-show="!loading" ref="rollback"
-                      :value.sync="sheet.prosperityIndex"></rollback>
+            <rollback :loading="loading" ref="rollback"
+                      :value.sync="sheet.prosperityIndex"/>
         </div>
         <div class="flex flex-wrap">
             <div class="flex flex-col items-center justify-end"
                  v-for="p in max">
                 <span class="font-title -mb-1" v-if="breaks.get(p)">{{ breaks.get(p) }}</span>
                 <checkbox :style="!breaks.get(p) ? 'transform: scale(0.7)' : ''"
-                          class="-m-1"
-                          :id="'p-'+p"
-                          group="prosperity"
+                          class="-m-1" :id="'p-'+p" group="prosperity"
                           :disabled="p===1"
                           :checked="checked[p]"
-                          @change="changed"></checkbox>
+                          @change="changed"/>
             </div>
         </div>
     </div>
@@ -26,12 +24,13 @@
 <script>
 import Sheet from "../../../models/Sheet";
 import SheetCalculations from "../../../services/SheetCalculations";
+import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
     mixins: [SheetCalculations],
     props: {
         sheet: {
-            type: Sheet,
+            type: Sheet|CampaignSheet,
             required: true
         },
         loading: {

@@ -1,9 +1,11 @@
 import Sheet from "../models/Sheet";
+import CampaignSheet from "../models/CampaignSheet";
+import {Game} from "../models/Game";
 
 export default class SheetRepository {
 
     make(game) {
-        return Sheet.make(game);
+        return game === Game.fh ? CampaignSheet.make(game) : Sheet.make(game);
     }
 
     data(game) {
@@ -12,8 +14,8 @@ export default class SheetRepository {
 
     key(game) {
         switch (game) {
-            case 'gh':
-            case 'fc':
+            case Game.gh:
+            case Game.fc:
                 return 'sheet';
             default:
                 return 'sheet-' + game;

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+     viewBox="-10 0 970 1000">
+    <g transform="matrix(1 0 0 -1 0 800)">
+        <path fill="currentColor"
+              d="M149 259l91 -91l-49 -50l-141 141l141 141l49 -49zM720 450l-191 -191l191 -190l-240 -240l-50 50l191 189l-381 381l141 141l50 -49l-92 -91l141 -142l141 142l-190 190l49 49zM339 69l91 -91l-49 -50l-141 141l141 140l49 -49zM910 259l-142 -142l-142 142l142 142z"/>
+    </g>
+</svg>

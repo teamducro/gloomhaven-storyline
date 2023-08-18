@@ -6,6 +6,7 @@ import ItemTextParser from "../services/ItemTextParser";
 import GameData from "../services/GameData";
 import ScenarioCompletedService from "../services/ScenarioCompletedService";
 import SheetRepository from "./SheetRepository";
+import OverlayRepository from "./OverlayRepository";
 
 export default class ScenarioRepository {
     fetch(game) {
@@ -87,6 +88,7 @@ export default class ScenarioRepository {
     }
 
     unlockTreasure(scenario, id, checked = true) {
+        id = parseInt(id);
         scenario.unlockTreasure(id, checked);
 
         this.processTreasureItems(scenario, id, checked);
@@ -162,6 +164,9 @@ export default class ScenarioRepository {
                 this.achievementRepository.lose(achievement);
             })
         }
+        this.overlayRepository.findLinkedFrom(scenario).each(overlay => {
+            this.overlayRepository.add(overlay.id);
+        });
     }
 
     undoAchievements(scenario) {
@@ -177,6 +182,9 @@ export default class ScenarioRepository {
                 }
             })
         }
+        this.overlayRepository.findLinkedFrom(scenario).each(overlay => {
+            this.overlayRepository.remove(overlay.id);
+        });
     }
 
     processRewardedItems(scenario, checked = true) {
@@ -192,7 +200,7 @@ export default class ScenarioRepository {
     }
 
     processTreasureItems(scenario, id, checked = true) {
-        if (!scenario.treasures.has(id)) {
+        if (!scenario.treasures.includes(id)) {
             return;
         }
 
@@ -202,7 +210,8 @@ export default class ScenarioRepository {
             return;
         }
 
-        let items = (new ItemTextParser).ids(scenario.treasures.get(id));
+        const treasureText = i18n.t(`treasures.${scenario.game}-${id}.name`);
+        let items = (new ItemTextParser).ids(treasureText);
         this.processItems(items, checked);
     }
 
@@ -378,6 +387,10 @@ export default class ScenarioRepository {
 
     get sheetRepository() {
         return this._sheetRepository || (this._sheetRepository = new SheetRepository());
+    }
+    
+    get overlayRepository() {
+        return this._overlayRepository || (this._overlayRepository = new OverlayRepository());
     }
 
     get scenarioCompletedService() {

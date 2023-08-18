@@ -127,6 +127,22 @@ export default {
     "reset": {
         "text": "Are you sure you want to remove all scenario data?"
     },
+    "purchase": {
+        "new_text": "You are purchasing a new shared campaign license, please select one or more games.",
+        "renew_text": "You are renewing your existing shared campaign license, please select one or more games.",
+        "following_free": "The following games are included for free",
+        "expand_title": {
+            "gh": "Unlock Gloomhaven for a New Adventure",
+            "fh": "Unlock Frosthaven for a New Adventure",
+        },
+        "expand_text": {
+            "gh": "You've selected Gloomhaven but you don't have access to it yet.",
+            "fh": "You've selected Frosthaven but you don't have access to it yet.",
+            "general": "Ready for a new adventure? Add it to your existing shared campaign license."
+        },
+        "local": "Or use the free local version instead.",
+        "Go to local": "Go to local",
+    },
     "share": "share",
     "share-modal": {
         "1": "Share your current local storyline with your party members.",
@@ -183,6 +199,7 @@ export default {
     "Campaigns": "Campaigns",
     "Campaign code": "Campaign code",
     "Buy shared campaign": "Buy new shared campaign",
+    "Renew shared campaign": "Renew shared campaign",
     "Add shared campaign": "Add shared campaign",
     "donations": {
         "1": {
@@ -272,11 +289,28 @@ export default {
     "Characters": "Characters",
     "Character sheet": "Character sheet",
     "Party sheet": "Party sheet",
+    "Campaign sheet": "Campaign sheet",
     "Reputation": "Reputation",
     "Shop modifier": "Shop modifier",
+    "corpsecap": "Corpsecap",
+    "algox": "Algox",
+    "arrowvine": "Arrowvine",
+    "axenut": "Axenut",
+    "flamefruit": "Flamefruit",
+    "coins": "Coins",
+    "gold": "Gold",
+    "hide": "Hide",
+    "lumber": "Lumber",
+    "lurkers": "Lurkers",
+    "metal": "Metal",
+    "rockroot": "Rockroot",
+    "snowthistle": "Snowthistle",
+    "unfettered": "Unfettered",
 
     // Game Editions
     "gh": "Gloomhaven",
+    "fh": "Frosthaven",
+    "Frosthaven": "Frosthaven",
     "fc": "Forgotten Circles",
     "Forgotten Circles": "Forgotten Circles",
     "jotl": "Jaws of the Lion",
@@ -353,6 +387,11 @@ export default {
         "C": "City Event",
         "Q": "Personal Quest",
         "RIFT": "Rift",
+        "SR": "Summer Road",
+        "SO": "Summer Outpost",
+        "WR": "Winter Road",
+        "WO": "Winter Outpost",
+        "B": "Boat",
     },
 
     //Ability Enhancements

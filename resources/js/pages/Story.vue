@@ -5,7 +5,7 @@
             :key="storylineKey"
             :src="'storylines/'+storyline"
             id="storyline"
-            :classes="['h-screen', 'w-screen']"
+            :classes="['h-screen', 'w-screen', 'storyline-'+game]"
         />
     </div>
 </template>
@@ -111,7 +111,6 @@ export default {
 
                 let $edges = c('.edge' + scenario.id);
                 $edges.hide();
-
                 if (scenario.isHidden()) {
                     $node.hide();
                 }

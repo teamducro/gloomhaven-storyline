@@ -23,10 +23,22 @@ class Character {
         this.level = data.level || 1;
         this.xp = data.xp || 0;
         this.gold = data.gold || 0;
+        this.resources = data.resources || {
+            lumber: 0,
+            metal: 0,
+            hide: 0,
+            arrowvine: 0,
+            axenut: 0,
+            corpsecap: 0,
+            flamefruit: 0,
+            rockroot: 0,
+            snowthistle: 0
+        };
         this.retirements = data.retirements || 0;
         this.items = {...data.items};
         this.notes = data.notes || '';
         this.checks = {...data.checks};
+        this.masteries = {...data.masteries};
         this.perks = {...data.perks};
         this.quest = {...data.quest};
         this.abilities = {...data.abilities};
@@ -49,8 +61,10 @@ class Character {
             gold: 'gold',
             retirements: 'retirements',
             items: {'items': {}},
+            resources: {'resources': {}},
             notes: 'notes',
             checks: {'checks': {}},
+            masteries: {'masteries': {}},
             perks: {'perks': {}},
             quest: {'quest': {}},
             abilities: {'abilities': {}},
@@ -75,6 +89,7 @@ class Character {
 
             this.game = data.game;
             this.abilityCount = data.abilityCount;
+            this.masteryDescriptions = (data.masteries || []).map((mastery, index) => this.$tPrefix('masteries.' + index));
 
             this.perkDescriptions = data.perks.map((perk) => {
                 perk.cards = perk.cards?.map((card) => {
@@ -88,6 +103,14 @@ class Character {
                         ...card.attackModifier
                     })
                 });
+
+                if (perk.count === 0.5) {
+                    perk.size = 2;
+                } else if (perk.count === 0.3) {
+                    perk.size = 3;
+                } else {
+                    perk.size = 1;
+                }
 
                 return perk;
             });
@@ -107,6 +130,10 @@ class Character {
         for (let i = 0; i <= 17; i++) {
             this.checks[i] = this.checks[i] || false;
         }
+
+        this.masteryDescriptions.forEach((mastery, index) => {
+            this.masteries[index] = this.masteries[index] || false;
+        });
 
         this.perkDescriptions.forEach((perk, index) => {
             perk.desc = this.$tPrefix('perks.' + index);
@@ -139,6 +166,7 @@ class Character {
     valuesToStore() {
         let values = this.parentValuesToStore();
         values.checks = collect({...this.checks}).filter(v => v).all();
+        values.masteries = collect({...this.masteries}).filter(v => v).all();
         values.perks = collect({...this.perks}).map(perks => (perks || []).filter(v => v)).filter(v => v.length).all();
         values.items = collect({...this.items}).filter(v => v).all();
         values.quest = this.quest instanceof PersonalQuest ? this.quest.valuesToStore() : {};

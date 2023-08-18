@@ -13,44 +13,57 @@ class Sheet {
     constructor(data = {}) {
         this.version = data.version;
         this.hash = data.hash;
+
+        // Sheet fields
         this.reputation = data.reputation || 0;
         this.donations = data.donations || 0;
         this.prosperityIndex = data.prosperityIndex || 1;
-        this.itemDesigns = {...data.itemDesigns};
-        this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
-        this.crossGameItems = {...data.crossGameItems};
-        this.c = data.hidePersonalQuests || false;
         this.city = {...data.city};
         this.road = {...data.road};
         this.rift = {...data.rift}; // FC
         this.notes = data.notes || '';
         this.unlocks = {...data.unlocks};
+
+        // Items
+        this.itemDesigns = {...data.itemDesigns};
+        this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
+        this.crossGameItems = {...data.crossGameItems};
+
+        // Characters
         this.xResult = data.xResult || '';
         this.characterUnlocks = {...data.characterUnlocks};
         this.characters = {...data.characters};
         this.archivedCharacters = {...data.archivedCharacters};
+        this.c = data.hidePersonalQuests || false;
+
         this.game = data.game;
         this.characterRepository = new CharacterRepository();
 
         this.fieldsToStore = {
-            reputation: 'reputation',
             version: 'version',
             hash: 'hash',
+
+            // Sheet fields
+            reputation: 'reputation',
             donations: 'donations',
             prosperityIndex: 'prosperityIndex',
-            itemDesigns: {'itemDesigns': {}},
             city: {'city': {}},
             road: {'road': {}},
             rift: {'rift': {}},
             notes: {'notes': ''},
             unlocks: {'unlocks': {}},
+
+            // Items
+            itemDesigns: {'itemDesigns': {}},
+            crossGameItemsEnabled: 'crossGameItemsEnabled',
+            crossGameItems: {'crossGameItems': {}},
+
+            // Characters
             xResult: {'xResult': ''},
             characterUnlocks: {'characterUnlocks': {}},
             characters: {'characters': {}},
             archivedCharacters: {'archivedCharacters': {}},
-            crossGameItemsEnabled: 'crossGameItemsEnabled',
             hidePersonalQuests: 'hidePersonalQuests',
-            crossGameItems: {'crossGameItems': {}}
         };
 
         this.read();
@@ -213,6 +226,7 @@ class Sheet {
                 'gh': false,
                 'jotl': false,
                 'cs': false,
+                'fh': false,
             }
         }
     }

@@ -1,8 +1,10 @@
 <template>
-    <transition name="fade">
-        <span v-if="this.stack.length > 1" @click="rollback"
-              class="material-icons cursor-pointer ml-2">replay</span>
-    </transition>
+    <span class="flex ml-2 w-5" :class="{'invisible': invisible}">
+        <transition name="fade">
+            <span v-if="this.stack.length > 1" @click="rollback"
+                  class="material-icons cursor-pointer">replay</span>
+        </transition>
+    </span>
 </template>
 
 <script>
@@ -10,16 +12,26 @@ export default {
     props: {
         value: {
             default: 0
-        }
+        },
+        loading: {
+            type: Boolean,
+            default: true
+        },
     },
     data() {
         return {
             current: null,
             stack: [],
-            rollingBack: false
+            rollingBack: false,
+            invisible: true
         }
     },
     watch: {
+        loading: function () {
+            setTimeout(() => {
+                this.invisible = this.loading;
+            }, 500);
+        },
         value: {
             handler(val) {
                 this.set(val);

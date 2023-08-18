@@ -1,0 +1,545 @@
+[
+    {
+        "id": 1,
+        "name": "The Study of Plants",
+        "building_unlocks": [24, 42],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Personally collect five different types of herbs through loot tokens.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Searching for the Oak",
+        "building_unlocks": [24, 42],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Personally loot eight total lumber cards through loot tokens.",
+                "scenario_unlock": 69,
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Unlock {SCENARIO 69} and follow it to a conclusion.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Merchant Class",
+        "building_unlocks": [37, 74],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Own 3 {HEAD} items.",
+                "value": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Own 3 {BODY} items.",
+                "value": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Own 3 {LEGS} items.",
+                "value": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Own 3 {ONE-HAND} and/or {TWO-HANDS} items.",
+                "value": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Own 4 {SMALL-ITEM} items.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Greed is Good",
+        "building_unlocks": [37, 74],
+        "progress": [
+            {
+                "type": "number",
+                "name": "Have 80+20xL gold in your possession, where L is the prosperity level.",
+                "value": 0,
+                "target": 100
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Build, not Destroy",
+        "building_unlocks": [85, 21],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Experience the construction of twelve different buildings or building upgrades.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Team Building",
+        "building_unlocks": [85, 21],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "During eight different outpost phases, read a person's name in an event or section.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Aesther Outpost",
+        "building_unlocks": [44, 88],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Immediately unlock {SCENARIO 65}.",
+                "scenario_unlock": 65,
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Follow {SCENARIO 65} to a conclusion.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Dangerous Game",
+        "building_unlocks": [44, 88],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Kill two Algox Guards.",
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Kill two Lurker Clawcrushers.",
+                "value": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Kill two Robotic Boltshooters.",
+                "value": [
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Life Lessons",
+        "building_unlocks": [90, 83],
+        "progress": [
+            {
+                "type": "number",
+                "name": "Gain 150 experience from ability cards.",
+                "value": 0,
+                "target": 150
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Explore the Reaches",
+        "building_unlocks": [90, 83],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Comlete five different scenarios that require {BOAT}, {CLIMBING_GEAR}, or {SLED}.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Refined Tastes",
+        "required_building_level": [21, 0],
+        "building_unlocks": [39, 72],
+        "progress": [
+            {
+                "type": "number",
+                "name": "Own items whose crafting costs include a total of at least fifteen items.",
+                "value": 0,
+                "target": 15
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Threat from the Deep",
+        "required_building_level": [24, 0],
+        "building_unlocks": [90, 42],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Immediately unlock {SCENARIO 71}.",
+                "scenario_unlock": 71,
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Follow {SCENARIO 71} to a conclusion.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "End the Trickery",
+        "required_building_level": [37, 0],
+        "building_unlocks": [44, 74],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Kill fifteem Imps.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Eternal Wanderer",
+        "required_building_level": [39, 0],
+        "building_unlocks": [37, 72],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in the Whitefire Wood.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in the Copperneck Mountains.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in the Radiant Forest.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in the Crystal Fields.",
+                "value": [
+                    0
+                ]
+            },
+            {
+                "type": "checkbox",
+                "name": "Complete a scenario in the Biting Sea.",
+                "value": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Continued Prosperity",
+        "required_building_level": [42, 0],
+        "building_unlocks": [65, 85],
+        "progress": [
+            {
+                "type": "number",
+                "name": "Donate 70 gold to the Temple of the Great Oak.",
+                "value": 0,
+                "target": 70
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Prepared for the Worst",
+        "required_building_level": [44, 0],
+        "building_unlocks": [85, 88],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Purchase five enhancements.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Battle Legend",
+        "required_building_level": [74, 0],
+        "building_unlocks": [81, 67],
+        "progress": [
+            {
+                "type": "number",
+                "name": "Earn 16 {CHECK} from completed battle goals.",
+                "value": 0,
+                "target": 16
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Let Them Be",
+        "required_building_level": [81, 0],
+        "building_unlocks": [44, 67],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Complete eight side scenarios (numbered 65 or higher).",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Quiet the Dead Places",
+        "required_building_level": [83, 0],
+        "building_unlocks": [81, 67],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Gain “Abyss Axe” (Item 039) blueprint and use it to kill ten Frozen Corpses, Ice Wraiths, and/or Living Dooms.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Return to Simplicity",
+        "required_building_level": [85, 0],
+        "building_unlocks": [24, 21],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Kill fifteen Ruined Machines.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "name": "The Study of Life",
+        "required_building_level": [88, 0],
+        "building_unlocks": [39, 72],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Capture 8 enemies.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "The Greatest Challenge",
+        "required_building_level": [90, 0],
+        "building_unlocks": [37, 83],
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Complete twelve challenges.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "The Chosen One",
+        "required_building_level": [81, 1],
+        "unlock": "Open envelope A",
+        "progress": [
+            {
+                "type": "checkbox",
+                "name": "Experience 10 allies exhaust during scenarios you otherwise complete.",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    }
+]

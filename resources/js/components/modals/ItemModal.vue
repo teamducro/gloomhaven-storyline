@@ -5,6 +5,8 @@
                 <div class="flex-1 mr-3">
                     <webp :src="item.image" :alt="$t(item.name)"
                           class="w-full rounded-lg sm:rounded-xl" style="max-width: 400px;"/>
+                    <webp v-if="item.backImage" :src="item.backImage" :alt="$t(item.name)"
+                          class="w-full rounded-lg sm:rounded-xl" style="max-width: 400px;"/>
                 </div>
 
                 <div class="flex-1 space-y-2">
@@ -43,15 +45,9 @@ export default {
             const item = data.item || this.itemRepository.find(data.id);
             this.open(item);
         });
-        this.$bus.$on('open-scenario', (data) => {
-            this.close();
-        });
-        this.$bus.$on('close-item', () => {
-            this.close();
-        });
-        this.$bus.$on('game-selected', () => {
-            this.unsetItem();
-        });
+        this.$bus.$on('open-scenario', this.close);
+        this.$bus.$on('close-item', this.close);
+        this.$bus.$on('game-selected', this.unsetItem);
     },
     methods: {
         open(item) {

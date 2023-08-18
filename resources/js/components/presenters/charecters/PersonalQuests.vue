@@ -52,6 +52,12 @@
                         {{ $t('Unlocked') }}:
                         <character-icon class="w-6 -mb-2 inline-block" :character="quest.character_unlock"/>
                     </p>
+                    <p v-else-if="quest.building_unlocks && quest.unlockedBuilding">
+                        {{ $t('Unlocked') + ': ' + unlockedBuildingName() }}
+                    </p>
+                    <p v-else-if="quest.building_unlocks">
+                        {{ $t('Unlocked: One random scenario and one random item blueprint') }}
+                    </p>
                     <p v-else-if="quest.unlock">
                         {{ $t(quest.unlock) }}
                     </p>
@@ -91,6 +97,7 @@
 <script>
 import PersonalQuestRepository from "../../../repositories/PersonalQuestRepository";
 import PersonalQuestValidator from "../../../validators/PersonalQuestValidator";
+import BuildingRepository from "../../../repositories/BuildingRepository";
 import Helpers from "../../../services/Helpers";
 import StorySyncer from "../../../services/StorySyncer";
 
@@ -102,21 +109,23 @@ export default {
     },
     data() {
         return {
-            quests: null,
             goalMet: false,
             hidden: true,
             storySyncer: new StorySyncer,
             personalQuestRepository: new PersonalQuestRepository,
-            personalQuestValidator: new PersonalQuestValidator
+            personalQuestValidator: new PersonalQuestValidator,
+            buildingRepository: new BuildingRepository,
         }
     },
     mounted() {
-        this.quests = this.personalQuestRepository.fetch(this.sheet.game).keyBy('id').items;
         if (this.quest.id) {
             this.validate();
         }
     },
     computed: {
+        quests() {
+            return this.personalQuestRepository.unlockedQuests(this.sheet.game).keyBy('id').items;
+        },
         unavailableQuests() {
             let unavailable = [];
             Object.entries(this.sheet.characters).forEach(([id, character]) => {
@@ -143,6 +152,8 @@ export default {
             this.goalMet = false;
         },
         remove() {
+            this.quest.resetProgress();
+            this.update(this.quest);
             this.$emit('update:quest', {});
             this.$emit('change', {});
         },
@@ -165,6 +176,7 @@ export default {
         },
         validate() {
             this.goalMet = this.personalQuestValidator.validate(this.quest, this.sheet);
+            this.update(this.quest);
         },
         openCard() {
             this.$bus.$emit('open-default-card', this.quest.card);
@@ -175,6 +187,9 @@ export default {
                 return id.toLowerCase().startsWith(query)
                     || Helpers.sanitize(this.quests[id]._name).startsWith(query);
             }
+        },
+        unlockedBuildingName() {
+            return this.$t('Building') + ' ' + this.quest.unlockedBuilding + ' (' + this.$t(this.buildingRepository.find(this.quest.unlockedBuilding)?.name) + ')';
         },
         store() {
             if (!this.quests) {
@@ -189,7 +204,7 @@ export default {
 </script>
 
 <style lang="scss">
-.children-inline > img {
+.children-inline > img, .children-inline div, .children-inline svg {
     @apply inline;
 }
 </style>

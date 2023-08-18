@@ -13,6 +13,7 @@ class Story extends Model {
         this.id;
         this.name;
         this.data;
+        this.games;
         this.hash;
         this.expires_at;
         this.has_expired;
@@ -53,7 +54,8 @@ class Story extends Model {
     postData() {
         return {
             data: JSON.stringify(this.data),
-            name: this.name
+            name: this.name,
+            game: app.game
         }
     }
 

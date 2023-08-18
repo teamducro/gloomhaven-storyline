@@ -46,6 +46,10 @@ class Achievement {
         return this.type === 'Party';
     }
 
+    isCampaign() {
+        return this.type === 'Campaign';
+    }
+
     gain() {
         if (!this.awarded) {
             this._awarded = true;

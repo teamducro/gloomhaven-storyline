@@ -1,0 +1,4386 @@
+[
+    {
+        "name": "blurry jab",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1,
+        "initiative": "20/50",
+        "id": 32
+    },
+    {
+        "name": "borrowed time",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1.5,
+        "initiative": "02/32",
+        "id": 44
+    },
+    {
+        "name": "breakneck speed",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 5,
+        "initiative": "03/33",
+        "id": 51
+    },
+    {
+        "name": "cascading reaction",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1,
+        "initiative": "19/49",
+        "id": 40
+    },
+    {
+        "name": "double time",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 3,
+        "initiative": "22/52",
+        "id": 48
+    },
+    {
+        "name": "drive recharge",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1,
+        "initiative": "69/99",
+        "id": 39
+    },
+    {
+        "name": "experimental adjustment",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1.5,
+        "initiative": "12/42",
+        "id": 42
+    },
+    {
+        "name": "fastest alive",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 8,
+        "initiative": "01/31",
+        "id": 58
+    },
+    {
+        "name": "flashing flurry",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 5,
+        "initiative": "40/70",
+        "id": 52
+    },
+    {
+        "name": "fractured timeline",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 9,
+        "initiative": "55/85",
+        "id": 60
+    },
+    {
+        "name": "hit and run",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1,
+        "initiative": "41/71",
+        "id": 38
+    },
+    {
+        "name": "kinetic transfer",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1,
+        "initiative": "36/66",
+        "id": 35
+    },
+    {
+        "name": "make it count",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 3,
+        "initiative": "51/81",
+        "id": 47
+    },
+    {
+        "name": "overdrive",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1,
+        "initiative": "60/90",
+        "id": 36
+    },
+    {
+        "name": "phasing blades",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 7,
+        "initiative": "63/93",
+        "id": 55
+    },
+    {
+        "name": "potential energy",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 4,
+        "initiative": "32/62",
+        "id": 50
+    },
+    {
+        "name": "power leak",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1,
+        "initiative": "17/47",
+        "id": 37
+    },
+    {
+        "name": "precision timing",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 4,
+        "initiative": "15/45",
+        "id": 49
+    },
+    {
+        "name": "quantum uncertainty",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 8,
+        "initiative": "35/65",
+        "id": 57
+    },
+    {
+        "name": "reckless augmentation",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 2,
+        "initiative": "10/40",
+        "id": 46
+    },
+    {
+        "name": "reverse the flow",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 9,
+        "initiative": "58/88",
+        "id": 59
+    },
+    {
+        "name": "rushed to the end",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 7,
+        "initiative": "32/62",
+        "id": 56
+    },
+    {
+        "name": "sand in the hourglass",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1.5,
+        "initiative": "52/82",
+        "id": 43
+    },
+    {
+        "name": "sap speed",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1,
+        "initiative": "45/75",
+        "id": 34
+    },
+    {
+        "name": "stab them all",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 6,
+        "initiative": "04/34",
+        "id": 53
+    },
+    {
+        "name": "systems reboot",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 2,
+        "initiative": "57/87",
+        "id": 45
+    },
+    {
+        "name": "temporal displacement",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1,
+        "initiative": "44/74",
+        "id": 41
+    },
+    {
+        "name": "the knife's edge",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 6,
+        "initiative": "65/95",
+        "id": 54
+    },
+    {
+        "name": "twin strike",
+        "game": "fh",
+        "character_id": "BB",
+        "level": 1,
+        "initiative": "24/54",
+        "id": 33
+    },
+    {
+        "name": "air support",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 4,
+        "initiative": 20,
+        "id": 79
+    },
+    {
+        "name": "trained falcon",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 4,
+        "initiative": 20,
+        "id": 79
+    },
+    {
+        "name": "at all costs",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 60,
+        "id": 61
+    },
+    {
+        "name": "reinforcement",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 60,
+        "id": 61
+    },
+    {
+        "name": "barricade",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 6,
+        "initiative": 16,
+        "id": 82
+    },
+    {
+        "name": "banner of valor",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 6,
+        "initiative": 16,
+        "id": 82
+    },
+    {
+        "name": "boldening blow",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 4,
+        "initiative": 72,
+        "id": 78
+    },
+    {
+        "name": "bolstering shout",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 6,
+        "initiative": 75,
+        "id": 83
+    },
+    {
+        "name": "combined effort",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 32,
+        "id": 67
+    },
+    {
+        "name": "deflecting maneuver",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 15,
+        "id": 65
+    },
+    {
+        "name": "driving inspiration",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1.5,
+        "initiative": 18,
+        "id": 73
+    },
+    {
+        "name": "banner of hope",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1.5,
+        "initiative": 18,
+        "id": 73
+    },
+    {
+        "name": "explosive epicenter",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 5,
+        "initiative": 78,
+        "id": 80
+    },
+    {
+        "name": "hail of spears",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 9,
+        "initiative": 44,
+        "id": 89
+    },
+    {
+        "name": "head of the hammer",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 3,
+        "initiative": 87,
+        "id": 77
+    },
+    {
+        "name": "hold the line",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 5,
+        "initiative": 5,
+        "id": 81
+    },
+    {
+        "name": "incendiary throw",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1.5,
+        "initiative": 22,
+        "id": 72
+    },
+    {
+        "name": "torch bearer",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1.5,
+        "initiative": 22,
+        "id": 72
+    },
+    {
+        "name": "javelin",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 21,
+        "id": 64
+    },
+    {
+        "name": "lead from afar",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 7,
+        "initiative": 80,
+        "id": 85
+    },
+    {
+        "name": "longbowman",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 7,
+        "initiative": 80,
+        "id": 85
+    },
+    {
+        "name": "let them come",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 3,
+        "initiative": 24,
+        "id": 76
+    },
+    {
+        "name": "banner of courage",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 3,
+        "initiative": 24,
+        "id": 76
+    },
+    {
+        "name": "meat grinder",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 2,
+        "initiative": 62,
+        "id": 74
+    },
+    {
+        "name": "pincer movement",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 69,
+        "id": 69
+    },
+    {
+        "name": "pinning charge",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 2,
+        "initiative": 17,
+        "id": 75
+    },
+    {
+        "name": "rallying cry",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 71,
+        "id": 62
+    },
+    {
+        "name": "banner of strength",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 71,
+        "id": 62
+    },
+    {
+        "name": "regroup",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 25,
+        "id": 70
+    },
+    {
+        "name": "resolved courage",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1.5,
+        "initiative": 10,
+        "id": 71
+    },
+    {
+        "name": "set for the charge",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 6,
+        "id": 68
+    },
+    {
+        "name": "sweeping aid",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 8,
+        "initiative": 73,
+        "id": 86
+    },
+    {
+        "name": "take no prisoners",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 9,
+        "initiative": 85,
+        "id": 88
+    },
+    {
+        "name": "banner of doom",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 9,
+        "initiative": 85,
+        "id": 88
+    },
+    {
+        "name": "taunting howl",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 8,
+        "initiative": 11,
+        "id": 87
+    },
+    {
+        "name": "tip of the spear",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 67,
+        "id": 66
+    },
+    {
+        "name": "tri-thrust",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 7,
+        "initiative": 27,
+        "id": 84
+    },
+    {
+        "name": "unbreakable wall",
+        "game": "fh",
+        "character_id": "BN",
+        "level": 1,
+        "initiative": 83,
+        "id": 63
+    },
+    {
+        "name": "angry spirits",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 76,
+        "id": 126
+    },
+    {
+        "name": "wraith",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 76,
+        "id": 126
+    },
+    {
+        "name": "approach oblivion",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1.5,
+        "initiative": 53,
+        "id": 132
+    },
+    {
+        "name": "behold the shrouded sun",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 9,
+        "initiative": 10,
+        "id": 150
+    },
+    {
+        "name": "bone dagger",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 2,
+        "initiative": 29,
+        "id": 136
+    },
+    {
+        "name": "command the wretched",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 83,
+        "id": 129
+    },
+    {
+        "name": "critical failure",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 4,
+        "initiative": 95,
+        "id": 139
+    },
+    {
+        "name": "damned horde",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 71,
+        "id": 122
+    },
+    {
+        "name": "shambling skeleton",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 71,
+        "id": 122
+    },
+    {
+        "name": "dark tidings",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 43,
+        "id": 125
+    },
+    {
+        "name": "decaying will",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 46,
+        "id": 124
+    },
+    {
+        "name": "endless numbers",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 8,
+        "initiative": 86,
+        "id": 147
+    },
+    {
+        "name": "bone horde",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 8,
+        "initiative": 86,
+        "id": 147
+    },
+    {
+        "name": "eternal torment",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 70,
+        "id": 130
+    },
+    {
+        "name": "exploding corpse",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1.5,
+        "initiative": 21,
+        "id": 133
+    },
+    {
+        "name": "fell remedy",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 30,
+        "id": 127
+    },
+    {
+        "name": "flesh shield",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 4,
+        "initiative": 16,
+        "id": 140
+    },
+    {
+        "name": "flow of the black river",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 18,
+        "id": 128
+    },
+    {
+        "name": "grave digging",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 3,
+        "initiative": 96,
+        "id": 137
+    },
+    {
+        "name": "shambling skeleton",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 3,
+        "initiative": 96,
+        "id": 137
+    },
+    {
+        "name": "life in death",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 91,
+        "id": 120
+    },
+    {
+        "name": "shambling skeleton",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 91,
+        "id": 120
+    },
+    {
+        "name": "malicious conversion",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 26,
+        "id": 131
+    },
+    {
+        "name": "putrid cloud",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 3,
+        "initiative": 28,
+        "id": 138
+    },
+    {
+        "name": "recycled limbs",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 7,
+        "initiative": 52,
+        "id": 145
+    },
+    {
+        "name": "returned servant",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 81,
+        "id": 121
+    },
+    {
+        "name": "shambling skeleton",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 81,
+        "id": 121
+    },
+    {
+        "name": "rotting multitude",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 6,
+        "initiative": 66,
+        "id": 143
+    },
+    {
+        "name": "two shambling skeletons",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 6,
+        "initiative": 66,
+        "id": 143
+    },
+    {
+        "name": "solid bones",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 5,
+        "initiative": 32,
+        "id": 142
+    },
+    {
+        "name": "soul claim",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 7,
+        "initiative": 23,
+        "id": 146
+    },
+    {
+        "name": "transfer of essence",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1,
+        "initiative": 62,
+        "id": 123
+    },
+    {
+        "name": "twisted decree",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 6,
+        "initiative": 85,
+        "id": 144
+    },
+    {
+        "name": "unearthed horror",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 2,
+        "initiative": 94,
+        "id": 135
+    },
+    {
+        "name": "raging corpse",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 2,
+        "initiative": 94,
+        "id": 135
+    },
+    {
+        "name": "unforgivable methods",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 5,
+        "initiative": 98,
+        "id": 141
+    },
+    {
+        "name": "stitched atrocity",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 5,
+        "initiative": 98,
+        "id": 141
+    },
+    {
+        "name": "unholy prowess",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 9,
+        "initiative": 97,
+        "id": 149
+    },
+    {
+        "name": "skeleton sorcerer",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 9,
+        "initiative": 97,
+        "id": 149
+    },
+    {
+        "name": "wailing from beyond",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 8,
+        "initiative": 73,
+        "id": 148
+    },
+    {
+        "name": "wrath of the turned earth",
+        "game": "fh",
+        "character_id": "BO",
+        "level": 1.5,
+        "initiative": 80,
+        "id": 134
+    },
+    {
+        "name": "blood in the water",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 2,
+        "initiative": 53,
+        "id": 490
+    },
+    {
+        "name": "chaotic refraction",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 4,
+        "initiative": 26,
+        "id": 493
+    },
+    {
+        "name": "cleansing swell",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 45,
+        "id": 481
+    },
+    {
+        "name": "clean sweep",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 4,
+        "initiative": 65,
+        "id": 494
+    },
+    {
+        "name": "crashing surge",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 34,
+        "id": 483
+    },
+    {
+        "name": "cresting force",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 87,
+        "id": 482
+    },
+    {
+        "name": "crush armor",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1.5,
+        "initiative": 42,
+        "id": 488
+    },
+    {
+        "name": "death on all sides",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 8,
+        "initiative": 73,
+        "id": 501
+    },
+    {
+        "name": "down to the depths",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 74,
+        "id": 478
+    },
+    {
+        "name": "drown beneath the waves",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 7,
+        "initiative": 9,
+        "id": 500
+    },
+    {
+        "name": "dug in",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 7,
+        "initiative": 76,
+        "id": 499
+    },
+    {
+        "name": "ebb and flow",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 8,
+        "initiative": 24,
+        "id": 502
+    },
+    {
+        "name": "endless cycle",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 3,
+        "initiative": 8,
+        "id": 492
+    },
+    {
+        "name": "high tide",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 9,
+        "initiative": 90,
+        "id": 503
+    },
+    {
+        "name": "low tide",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 9,
+        "initiative": 10,
+        "id": 504
+    },
+    {
+        "name": "mighty claws",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 23,
+        "id": 484
+    },
+    {
+        "name": "overwhelming wave",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 86,
+        "id": 474
+    },
+    {
+        "name": "pool of power",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 41,
+        "id": 479
+    },
+    {
+        "name": "powerful pincer",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 6,
+        "initiative": 70,
+        "id": 497
+    },
+    {
+        "name": "rancid brine",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 62,
+        "id": 476
+    },
+    {
+        "name": "rising flood",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1.5,
+        "initiative": 49,
+        "id": 486
+    },
+    {
+        "name": "sharp chitin",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 25,
+        "id": 477
+    },
+    {
+        "name": "shuck",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 3,
+        "initiative": 55,
+        "id": 491
+    },
+    {
+        "name": "skitter",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 51,
+        "id": 480
+    },
+    {
+        "name": "smashing torrent",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 2,
+        "initiative": 79,
+        "id": 489
+    },
+    {
+        "name": "sodden soil",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 5,
+        "initiative": 17,
+        "id": 496
+    },
+    {
+        "name": "soft flesh",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 75,
+        "id": 475
+    },
+    {
+        "name": "submerge",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1,
+        "initiative": 68,
+        "id": 485
+    },
+    {
+        "name": "tidal blast",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 5,
+        "initiative": 71,
+        "id": 495
+    },
+    {
+        "name": "twilight grasp",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 6,
+        "initiative": 33,
+        "id": 498
+    },
+    {
+        "name": "undertow",
+        "game": "fh",
+        "character_id": "CR",
+        "level": 1.5,
+        "initiative": 15,
+        "id": 487
+    },
+    {
+        "name": "accurate strikes",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 6,
+        "initiative": 56,
+        "id": 24
+    },
+    {
+        "name": "against all odds",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 8,
+        "initiative": 37,
+        "id": 28
+    },
+    {
+        "name": "bloodletting",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 65,
+        "id": 11
+    },
+    {
+        "name": "break through",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 5,
+        "initiative": 34,
+        "id": 23
+    },
+    {
+        "name": "chunk of flesh",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 4,
+        "initiative": 62,
+        "id": 20
+    },
+    {
+        "name": "consume stamina",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 6,
+        "initiative": 21,
+        "id": 25
+    },
+    {
+        "name": "continuous health",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 61,
+        "id": 4
+    },
+    {
+        "name": "crushing weight",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 71,
+        "id": 1
+    },
+    {
+        "name": "deadly shot",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 32,
+        "id": 10
+    },
+    {
+        "name": "destructive fury",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1.5,
+        "initiative": 19,
+        "id": 15
+    },
+    {
+        "name": "draining arrows",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 23,
+        "id": 8
+    },
+    {
+        "name": "dual bow",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 3,
+        "initiative": 26,
+        "id": 19
+    },
+    {
+        "name": "ever forward",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 2,
+        "initiative": 67,
+        "id": 17
+    },
+    {
+        "name": "everlasting",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 9,
+        "initiative": 96,
+        "id": 30
+    },
+    {
+        "name": "fierce barrage",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 3,
+        "initiative": 32,
+        "id": 18
+    },
+    {
+        "name": "fortitude",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1.5,
+        "initiative": 31,
+        "id": 13
+    },
+    {
+        "name": "gift of the prey",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 4,
+        "initiative": 40,
+        "id": 21
+    },
+    {
+        "name": "inevitable conclusion",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 8,
+        "initiative": 29,
+        "id": 29
+    },
+    {
+        "name": "like the wind",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 7,
+        "initiative": 77,
+        "id": 26
+    },
+    {
+        "name": "no remorse",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1.5,
+        "initiative": 20,
+        "id": 14
+    },
+    {
+        "name": "precision aim",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 66,
+        "id": 3
+    },
+    {
+        "name": "prudent preparation",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 14,
+        "id": 9
+    },
+    {
+        "name": "relentless",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 89,
+        "id": 5
+    },
+    {
+        "name": "shockwave",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 2,
+        "initiative": 17,
+        "id": 16
+    },
+    {
+        "name": "survivalist",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 5,
+        "initiative": 91,
+        "id": 22
+    },
+    {
+        "name": "sustained momentum",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 76,
+        "id": 2
+    },
+    {
+        "name": "unbreakable",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 90,
+        "id": 6
+    },
+    {
+        "name": "unending fight",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 7,
+        "initiative": 25,
+        "id": 27
+    },
+    {
+        "name": "use every part",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 9,
+        "initiative": 18,
+        "id": 31
+    },
+    {
+        "name": "vile assault",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 27,
+        "id": 7
+    },
+    {
+        "name": "violent inheritance",
+        "game": "fh",
+        "character_id": "DF",
+        "level": 1,
+        "initiative": 70,
+        "id": 12
+    },
+    {
+        "name": "black night of the deep",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 9,
+        "initiative": 26,
+        "id": 472
+    },
+    {
+        "name": "black scythe",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1,
+        "initiative": 45,
+        "id": 453
+    },
+    {
+        "name": "claw of doom",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 6,
+        "initiative": 30,
+        "id": 466
+    },
+    {
+        "name": "consume the helpless",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 9,
+        "initiative": 12,
+        "id": 473
+    },
+    {
+        "name": "crippling terror",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 3,
+        "initiative": 15,
+        "id": 460
+    },
+    {
+        "name": "crushing darkness",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 4,
+        "initiative": 40,
+        "id": 462
+    },
+    {
+        "name": "death spiral",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 5,
+        "initiative": 48,
+        "id": 465
+    },
+    {
+        "name": "dire frenzy",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 7,
+        "initiative": 26,
+        "id": 469
+    },
+    {
+        "name": "extra decoration",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 5,
+        "initiative": 92,
+        "id": 464
+    },
+    {
+        "name": "grim trophies",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 4,
+        "initiative": 18,
+        "id": 463
+    },
+    {
+        "name": "hasten the end",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 7,
+        "initiative": 65,
+        "id": 468
+    },
+    {
+        "name": "haunting brutality",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1.5,
+        "initiative": 23,
+        "id": 457
+    },
+    {
+        "name": "hollow aura",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1,
+        "initiative": 88,
+        "id": 446
+    },
+    {
+        "name": "ink cloud",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1,
+        "initiative": 28,
+        "id": 449
+    },
+    {
+        "name": "lacerating stabs",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1,
+        "initiative": 14,
+        "id": 450
+    },
+    {
+        "name": "lie in wait",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 2,
+        "initiative": 98,
+        "id": 459
+    },
+    {
+        "name": "mantle of dread",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1,
+        "initiative": 96,
+        "id": 452
+    },
+    {
+        "name": "morbid camouflage",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1.5,
+        "initiative": 31,
+        "id": 456
+    },
+    {
+        "name": "pinning spines",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 3,
+        "initiative": 25,
+        "id": 461
+    },
+    {
+        "name": "rip from the bone",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 8,
+        "initiative": 11,
+        "id": 471
+    },
+    {
+        "name": "skewer the flesh",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1,
+        "initiative": 86,
+        "id": 447
+    },
+    {
+        "name": "skull collection",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1,
+        "initiative": 22,
+        "id": 445
+    },
+    {
+        "name": "slipping into death",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 2,
+        "initiative": 89,
+        "id": 458
+    },
+    {
+        "name": "soul hunger",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1.5,
+        "initiative": 91,
+        "id": 455
+    },
+    {
+        "name": "staring into the abyss",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1,
+        "initiative": 63,
+        "id": 451
+    },
+    {
+        "name": "succumb to fear",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1,
+        "initiative": 20,
+        "id": 448
+    },
+    {
+        "name": "the remorseless deep",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 6,
+        "initiative": 22,
+        "id": 467
+    },
+    {
+        "name": "tumultuous panic",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 1,
+        "initiative": 66,
+        "id": 454
+    },
+    {
+        "name": "unseen horror",
+        "game": "fh",
+        "character_id": "DT",
+        "level": 8,
+        "initiative": 19,
+        "id": 470
+    },
+    {
+        "name": "anger of the dead",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 14,
+        "id": 91
+    },
+    {
+        "name": "black barrage",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 28,
+        "id": 95
+    },
+    {
+        "name": "black lance",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 9,
+        "initiative": 16,
+        "id": 119
+    },
+    {
+        "name": "call of doom",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 32,
+        "id": 96
+    },
+    {
+        "name": "call to the abyss",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 82,
+        "id": 90
+    },
+    {
+        "name": "dark fog",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 46,
+        "id": 94
+    },
+    {
+        "name": "dead bolt",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 3,
+        "initiative": 88,
+        "id": 106
+    },
+    {
+        "name": "deepening despair",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 2,
+        "initiative": 11,
+        "id": 105
+    },
+    {
+        "name": "dominate",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 5,
+        "initiative": 29,
+        "id": 111
+    },
+    {
+        "name": "eclipse",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 86,
+        "id": 97
+    },
+    {
+        "name": "fleeting dusk",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 4,
+        "initiative": 36,
+        "id": 108
+    },
+    {
+        "name": "fluid night",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 24,
+        "id": 93
+    },
+    {
+        "name": "forceful spirits",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1.5,
+        "initiative": 34,
+        "id": 102
+    },
+    {
+        "name": "frozen in fear",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 8,
+        "initiative": 21,
+        "id": 117
+    },
+    {
+        "name": "hungry grasps",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 7,
+        "initiative": 25,
+        "id": 115
+    },
+    {
+        "name": "lashing tendrils",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 8,
+        "initiative": 80,
+        "id": 116
+    },
+    {
+        "name": "lingering rot",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 64,
+        "id": 98
+    },
+    {
+        "name": "medium",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 5,
+        "initiative": 55,
+        "id": 110
+    },
+    {
+        "name": "proliferation of the abyss",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 7,
+        "initiative": 38,
+        "id": 114
+    },
+    {
+        "name": "pulled across",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 4,
+        "initiative": 77,
+        "id": 109
+    },
+    {
+        "name": "rest in the shade",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1.5,
+        "initiative": 26,
+        "id": 103
+    },
+    {
+        "name": "restless spirits",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 2,
+        "initiative": 20,
+        "id": 104
+    },
+    {
+        "name": "ritual sacrifice",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 3,
+        "initiative": 13,
+        "id": 107
+    },
+    {
+        "name": "shadow step",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 19,
+        "id": 99
+    },
+    {
+        "name": "strength of the abyss",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 50,
+        "id": 100
+    },
+    {
+        "name": "sunless apparition",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 96,
+        "id": 92
+    },
+    {
+        "name": "shadow beast",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1,
+        "initiative": 96,
+        "id": 92
+    },
+    {
+        "name": "the night takes shape",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 6,
+        "initiative": 94,
+        "id": 112
+    },
+    {
+        "name": "shadow horror",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 6,
+        "initiative": 94,
+        "id": 112
+    },
+    {
+        "name": "vengeful storm",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 6,
+        "initiative": 18,
+        "id": 113
+    },
+    {
+        "name": "wave of anguish",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 1.5,
+        "initiative": 58,
+        "id": 101
+    },
+    {
+        "name": "when your time comes",
+        "game": "fh",
+        "character_id": "DW",
+        "level": 9,
+        "initiative": 72,
+        "id": 118
+    },
+    {
+        "name": "bring down the mountain",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 9,
+        "initiative": 9,
+        "id": 385
+    },
+    {
+        "name": "cold boulder",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1,
+        "initiative": 70,
+        "id": 361
+    },
+    {
+        "name": "crushing crystals",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 2,
+        "initiative": 67,
+        "id": 372
+    },
+    {
+        "name": "draw of the bedrock",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 2,
+        "initiative": 10,
+        "id": 371
+    },
+    {
+        "name": "draw strength",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 8,
+        "initiative": 28,
+        "id": 384
+    },
+    {
+        "name": "encased punch",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1,
+        "initiative": 19,
+        "id": 364
+    },
+    {
+        "name": "freezing shell",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1.5,
+        "initiative": 17,
+        "id": 370
+    },
+    {
+        "name": "frost eruption",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1,
+        "initiative": 61,
+        "id": 362
+    },
+    {
+        "name": "frozen over",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 3,
+        "initiative": 20,
+        "id": 374
+    },
+    {
+        "name": "frozen spike",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 9,
+        "initiative": 33,
+        "id": 386
+    },
+    {
+        "name": "fury of the mountain",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1,
+        "initiative": 23,
+        "id": 363
+    },
+    {
+        "name": "gift of the mountain",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 7,
+        "initiative": 73,
+        "id": 381
+    },
+    {
+        "name": "glacier slam",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 6,
+        "initiative": 84,
+        "id": 380
+    },
+    {
+        "name": "ice blast",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1,
+        "initiative": 32,
+        "id": 367
+    },
+    {
+        "name": "ice uppercut",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 5,
+        "initiative": 15,
+        "id": 378
+    },
+    {
+        "name": "lacerating eruption",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 3,
+        "initiative": 51,
+        "id": 373
+    },
+    {
+        "name": "one with the mountain",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1,
+        "initiative": 83,
+        "id": 360
+    },
+    {
+        "name": "packed solid",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 4,
+        "initiative": 55,
+        "id": 376
+    },
+    {
+        "name": "piercing pummel",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1,
+        "initiative": 30,
+        "id": 366
+    },
+    {
+        "name": "preserved fury",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 5,
+        "initiative": 49,
+        "id": 377
+    },
+    {
+        "name": "primal bellow",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1.5,
+        "initiative": 84,
+        "id": 369
+    },
+    {
+        "name": "seeing stars",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 7,
+        "initiative": 29,
+        "id": 382
+    },
+    {
+        "name": "shard launch",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1.5,
+        "initiative": 52,
+        "id": 368
+    },
+    {
+        "name": "shattering blow",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 8,
+        "initiative": 18,
+        "id": 383
+    },
+    {
+        "name": "the mountain's fist",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 4,
+        "initiative": 16,
+        "id": 375
+    },
+    {
+        "name": "thick frost",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 6,
+        "initiative": 21,
+        "id": 379
+    },
+    {
+        "name": "voice from below",
+        "game": "fh",
+        "character_id": "FF",
+        "level": 1,
+        "initiative": 22,
+        "id": 365
+    },
+    {
+        "name": "accelerated metabolism",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 8,
+        "initiative": 85,
+        "id": 181
+    },
+    {
+        "name": "alluring pheromones",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 7,
+        "initiative": 49,
+        "id": 180
+    },
+    {
+        "name": "changeling's boon",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 40,
+        "id": 154
+    },
+    {
+        "name": "chitinous horde",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 5,
+        "initiative": 15,
+        "id": 176
+    },
+    {
+        "name": "corrosive acids",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 6,
+        "initiative": 28,
+        "id": 177
+    },
+    {
+        "name": "drag down",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 34,
+        "id": 156
+    },
+    {
+        "name": "dragonfly surge",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 3,
+        "initiative": 50,
+        "id": 172
+    },
+    {
+        "name": "draining pincers",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 72,
+        "id": 152
+    },
+    {
+        "name": "feeding frenzy",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1.5,
+        "initiative": 62,
+        "id": 159
+    },
+    {
+        "name": "firefly swarm",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 76,
+        "id": 162
+    },
+    {
+        "name": "flailing tendrils",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 12,
+        "id": 155
+    },
+    {
+        "name": "formless grace",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 5,
+        "initiative": 75,
+        "id": 175
+    },
+    {
+        "name": "hail of thorns",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 88,
+        "id": 166
+    },
+    {
+        "name": "harbinger of ruin",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 9,
+        "initiative": 11,
+        "id": 183
+    },
+    {
+        "name": "harvest the essence",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 60,
+        "id": 165
+    },
+    {
+        "name": "hirudotherapy",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 6,
+        "initiative": 92,
+        "id": 178
+    },
+    {
+        "name": "hornbeetle carapace",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 20,
+        "id": 157
+    },
+    {
+        "name": "hornet stingers",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 23,
+        "id": 153
+    },
+    {
+        "name": "icebound quills",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 14,
+        "id": 151
+    },
+    {
+        "name": "into my embrace",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 36,
+        "id": 161
+    },
+    {
+        "name": "locust host",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 2,
+        "initiative": 23,
+        "id": 170
+    },
+    {
+        "name": "luminous descent",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 4,
+        "initiative": 67,
+        "id": 174
+    },
+    {
+        "name": "mandible storm",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 3,
+        "initiative": 30,
+        "id": 171
+    },
+    {
+        "name": "mind spike",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 18,
+        "id": 164
+    },
+    {
+        "name": "oscillating entity",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 8,
+        "initiative": 55,
+        "id": 182
+    },
+    {
+        "name": "reckless jab",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1.5,
+        "initiative": 38,
+        "id": 158
+    },
+    {
+        "name": "reshape the guise",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1.5,
+        "initiative": 38,
+        "id": 168
+    },
+    {
+        "name": "scarab flight",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 30,
+        "id": 163
+    },
+    {
+        "name": "selfless offering",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1,
+        "initiative": 27,
+        "id": 160
+    },
+    {
+        "name": "smoldering hatred",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 1.5,
+        "initiative": 32,
+        "id": 167
+    },
+    {
+        "name": "thresh and flail",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 4,
+        "initiative": 43,
+        "id": 173
+    },
+    {
+        "name": "two-pronged entrapment",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 7,
+        "initiative": 21,
+        "id": 179
+    },
+    {
+        "name": "venomous barbs",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 2,
+        "initiative": 17,
+        "id": 169
+    },
+    {
+        "name": "voice of salvation",
+        "game": "fh",
+        "character_id": "GE",
+        "level": 9,
+        "initiative": 39,
+        "id": 184
+    },
+    {
+        "name": "aimed assault",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 88,
+        "id": 391
+    },
+    {
+        "name": "sniper turret",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 88,
+        "id": 391
+    },
+    {
+        "name": "burning slash",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 8,
+        "initiative": 29,
+        "id": 414
+    },
+    {
+        "name": "code geminate",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 5,
+        "initiative": 28,
+        "id": 408
+    },
+    {
+        "name": "coiled limbs",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 82,
+        "id": 390
+    },
+    {
+        "name": "leaper",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 82,
+        "id": 390
+    },
+    {
+        "name": "disassemble",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 9,
+        "initiative": 20,
+        "id": 416
+    },
+    {
+        "name": "divergent destruction",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 4,
+        "initiative": 22,
+        "id": 406
+    },
+    {
+        "name": "faceless entity",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 12,
+        "id": 393
+    },
+    {
+        "name": "force field",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 2,
+        "initiative": 78,
+        "id": 401
+    },
+    {
+        "name": "dampening unit",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 2,
+        "initiative": 78,
+        "id": 401
+    },
+    {
+        "name": "heavy metal",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 9,
+        "initiative": 76,
+        "id": 415
+    },
+    {
+        "name": "sledge driver",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 9,
+        "initiative": 76,
+        "id": 415
+    },
+    {
+        "name": "high impact projectiles",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 16,
+        "id": 396
+    },
+    {
+        "name": "hijack",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 3,
+        "initiative": 40,
+        "id": 404
+    },
+    {
+        "name": "hunter-killer",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 84,
+        "id": 389
+    },
+    {
+        "name": "jackal mech",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 84,
+        "id": 389
+    },
+    {
+        "name": "interference",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 21,
+        "id": 397
+    },
+    {
+        "name": "launch pod",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 77,
+        "id": 392
+    },
+    {
+        "name": "long-range missile",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 2,
+        "initiative": 19,
+        "id": 402
+    },
+    {
+        "name": "mortar shells",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 7,
+        "initiative": 85,
+        "id": 411
+    },
+    {
+        "name": "bombardier",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 7,
+        "initiative": 85,
+        "id": 411
+    },
+    {
+        "name": "net dispersal",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 5,
+        "initiative": 94,
+        "id": 407
+    },
+    {
+        "name": "trapping unit",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 5,
+        "initiative": 94,
+        "id": 407
+    },
+    {
+        "name": "plague protocol",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 4,
+        "initiative": 98,
+        "id": 405
+    },
+    {
+        "name": "toxin distributor",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 4,
+        "initiative": 98,
+        "id": 405
+    },
+    {
+        "name": "plated defense",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 80,
+        "id": 387
+    },
+    {
+        "name": "armored tank",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 80,
+        "id": 387
+    },
+    {
+        "name": "prepare for deployment",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 64,
+        "id": 394
+    },
+    {
+        "name": "rapid fire",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 3,
+        "initiative": 92,
+        "id": 403
+    },
+    {
+        "name": "machine bolter",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 3,
+        "initiative": 92,
+        "id": 403
+    },
+    {
+        "name": "reaper function",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 32,
+        "id": 395
+    },
+    {
+        "name": "reassemble",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1.5,
+        "initiative": 27,
+        "id": 400
+    },
+    {
+        "name": "recall",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 7,
+        "initiative": 91,
+        "id": 412
+    },
+    {
+        "name": "reconstructive aid",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 90,
+        "id": 388
+    },
+    {
+        "name": "repair drone",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1,
+        "initiative": 90,
+        "id": 388
+    },
+    {
+        "name": "remote control",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1.5,
+        "initiative": 48,
+        "id": 399
+    },
+    {
+        "name": "shocking pulse",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1.5,
+        "initiative": 86,
+        "id": 398
+    },
+    {
+        "name": "arcing generator",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 1.5,
+        "initiative": 86,
+        "id": 398
+    },
+    {
+        "name": "spinning blades",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 6,
+        "initiative": 79,
+        "id": 409
+    },
+    {
+        "name": "sword propeller",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 6,
+        "initiative": 79,
+        "id": 409
+    },
+    {
+        "name": "swarming bulwark",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 8,
+        "initiative": 96,
+        "id": 413
+    },
+    {
+        "name": "shield spider",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 8,
+        "initiative": 96,
+        "id": 413
+    },
+    {
+        "name": "triage program",
+        "game": "fh",
+        "character_id": "HV",
+        "level": 6,
+        "initiative": 13,
+        "id": 410
+    },
+    {
+        "name": "ancient rites of power",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 9,
+        "initiative": 94,
+        "id": 213
+    },
+    {
+        "name": "battle prowess",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1.5,
+        "initiative": 78,
+        "id": 197
+    },
+    {
+        "name": "boon of the tempest",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 28,
+        "id": 185
+    },
+    {
+        "name": "bounty of the earth",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 23,
+        "id": 186
+    },
+    {
+        "name": "caress of the night",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 87,
+        "id": 187
+    },
+    {
+        "name": "coalescing darkness",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 4,
+        "initiative": 85,
+        "id": 203
+    },
+    {
+        "name": "crystalline aegis",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1.5,
+        "initiative": 17,
+        "id": 198
+    },
+    {
+        "name": "desperate throw",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 4,
+        "initiative": 16,
+        "id": 204
+    },
+    {
+        "name": "diamondization",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 7,
+        "initiative": 10,
+        "id": 209
+    },
+    {
+        "name": "emerald edge",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 70,
+        "id": 189
+    },
+    {
+        "name": "formless bladestorm",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 33,
+        "id": 188
+    },
+    {
+        "name": "gale barrage",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 6,
+        "initiative": 44,
+        "id": 208
+    },
+    {
+        "name": "gemstone resonance",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 5,
+        "initiative": 30,
+        "id": 205
+    },
+    {
+        "name": "guide the flow",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 3,
+        "initiative": 35,
+        "id": 202
+    },
+    {
+        "name": "imbue with life",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1.5,
+        "initiative": 42,
+        "id": 196
+    },
+    {
+        "name": "animated claymore",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1.5,
+        "initiative": 42,
+        "id": 196
+    },
+    {
+        "name": "malachite shockwave",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 7,
+        "initiative": 68,
+        "id": 210
+    },
+    {
+        "name": "obsidian spear",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 5,
+        "initiative": 84,
+        "id": 206
+    },
+    {
+        "name": "onyx shards",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 20,
+        "id": 191
+    },
+    {
+        "name": "propulsive tailwind",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 6,
+        "initiative": 91,
+        "id": 207
+    },
+    {
+        "name": "reinforced riposte",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 3,
+        "initiative": 18,
+        "id": 201
+    },
+    {
+        "name": "remote impact",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 2,
+        "initiative": 72,
+        "id": 200
+    },
+    {
+        "name": "rising momentum",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 25,
+        "id": 194
+    },
+    {
+        "name": "sky-splitting strike",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 9,
+        "initiative": 50,
+        "id": 214
+    },
+    {
+        "name": "slashing cyclone",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 14,
+        "id": 193
+    },
+    {
+        "name": "stoic vigilance",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 12,
+        "id": 195
+    },
+    {
+        "name": "swift pivot",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 8,
+        "initiative": 8,
+        "id": 212
+    },
+    {
+        "name": "torrential cleave",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 83,
+        "id": 190
+    },
+    {
+        "name": "unstoppable impulse",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 1,
+        "initiative": 56,
+        "id": 192
+    },
+    {
+        "name": "untether the shackles",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 8,
+        "initiative": 61,
+        "id": 211
+    },
+    {
+        "name": "spiritbound falchion",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 8,
+        "initiative": 61,
+        "id": 211
+    },
+    {
+        "name": "veil of protection",
+        "game": "fh",
+        "character_id": "IF",
+        "level": 2,
+        "initiative": 47,
+        "id": 199
+    },
+    {
+        "name": "ancient drill",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1,
+        "initiative": 90,
+        "id": 418
+    },
+    {
+        "name": "beam axe",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1,
+        "initiative": 29,
+        "id": 423
+    },
+    {
+        "name": "bronze plating",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 2,
+        "initiative": 18,
+        "id": 430
+    },
+    {
+        "name": "cryogenic hibernation",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 7,
+        "initiative": 19,
+        "id": 440
+    },
+    {
+        "name": "curious gear",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1.5,
+        "initiative": 12,
+        "id": 428
+    },
+    {
+        "name": "curious machinery",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 8,
+        "initiative": 11,
+        "id": 442
+    },
+    {
+        "name": "electrical discharge",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 3,
+        "initiative": 26,
+        "id": 432
+    },
+    {
+        "name": "energy conversion",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 4,
+        "initiative": 23,
+        "id": 433
+    },
+    {
+        "name": "heat conduction",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 5,
+        "initiative": 11,
+        "id": 436
+    },
+    {
+        "name": "heated drill",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 7,
+        "initiative": 80,
+        "id": 439
+    },
+    {
+        "name": "magnetic field",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 4,
+        "initiative": 21,
+        "id": 434
+    },
+    {
+        "name": "memory drive",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1,
+        "initiative": 64,
+        "id": 424
+    },
+    {
+        "name": "piston barrage",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 8,
+        "initiative": 33,
+        "id": 441
+    },
+    {
+        "name": "polarity shift",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 9,
+        "initiative": 79,
+        "id": 443
+    },
+    {
+        "name": "power core",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1,
+        "initiative": 83,
+        "id": 420
+    },
+    {
+        "name": "pressure build-up",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1,
+        "initiative": 20,
+        "id": 422
+    },
+    {
+        "name": "processing",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1.5,
+        "initiative": 95,
+        "id": 426
+    },
+    {
+        "name": "radiation",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 5,
+        "initiative": 37,
+        "id": 435
+    },
+    {
+        "name": "recursion",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1.5,
+        "initiative": 50,
+        "id": 427
+    },
+    {
+        "name": "release valve",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 2,
+        "initiative": 30,
+        "id": 429
+    },
+    {
+        "name": "rocket boots",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1,
+        "initiative": 22,
+        "id": 419
+    },
+    {
+        "name": "scalding blast",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 6,
+        "initiative": 45,
+        "id": 437
+    },
+    {
+        "name": "steam armor",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1,
+        "initiative": 17,
+        "id": 417
+    },
+    {
+        "name": "steam core",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 6,
+        "initiative": 71,
+        "id": 438
+    },
+    {
+        "name": "steel piston",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1,
+        "initiative": 40,
+        "id": 421
+    },
+    {
+        "name": "stress vents",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 3,
+        "initiative": 15,
+        "id": 431
+    },
+    {
+        "name": "super heat transfer",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 1,
+        "initiative": 25,
+        "id": 425
+    },
+    {
+        "name": "unstable core",
+        "game": "fh",
+        "character_id": "ME",
+        "level": 9,
+        "initiative": 10,
+        "id": 444
+    },
+    {
+        "name": "blood ritual",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 56,
+        "id": 306
+    },
+    {
+        "name": "burned at both ends",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 3,
+        "initiative": 30,
+        "id": 316
+    },
+    {
+        "name": "chained by despair",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 5,
+        "initiative": 15,
+        "id": 321
+    },
+    {
+        "name": "chained by spite",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 5,
+        "initiative": 15,
+        "id": 320
+    },
+    {
+        "name": "cleansing fire",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 64,
+        "id": 309
+    },
+    {
+        "name": "delayed malady",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1.5,
+        "initiative": 90,
+        "id": 311
+    },
+    {
+        "name": "down to the dirt",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 4,
+        "initiative": 39,
+        "id": 319
+    },
+    {
+        "name": "explosive wounds",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 43,
+        "id": 308
+    },
+    {
+        "name": "hopelessness",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 6,
+        "initiative": 83,
+        "id": 322
+    },
+    {
+        "name": "infection purge",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 2,
+        "initiative": 45,
+        "id": 315
+    },
+    {
+        "name": "line of transference",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 25,
+        "id": 302
+    },
+    {
+        "name": "mirrored misery",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 4,
+        "initiative": 72,
+        "id": 318
+    },
+    {
+        "name": "penance",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 7,
+        "initiative": 12,
+        "id": 325
+    },
+    {
+        "name": "phantom limb",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 6,
+        "initiative": 75,
+        "id": 323
+    },
+    {
+        "name": "pleasure in pain",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1.5,
+        "initiative": 47,
+        "id": 313
+    },
+    {
+        "name": "redemption",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 8,
+        "initiative": 33,
+        "id": 328
+    },
+    {
+        "name": "reject the gift",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 7,
+        "initiative": 20,
+        "id": 324
+    },
+    {
+        "name": "reprisal",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 3,
+        "initiative": 70,
+        "id": 317
+    },
+    {
+        "name": "reversal of fate",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 2,
+        "initiative": 23,
+        "id": 314
+    },
+    {
+        "name": "scarred effigy",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 19,
+        "id": 307
+    },
+    {
+        "name": "flesh fiend",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 19,
+        "id": 307
+    },
+    {
+        "name": "shared affliction",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 61,
+        "id": 301
+    },
+    {
+        "name": "swift vengeance",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 21,
+        "id": 310
+    },
+    {
+        "name": "the agony of others",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 78,
+        "id": 304
+    },
+    {
+        "name": "the end of everything",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 9,
+        "initiative": 99,
+        "id": 329
+    },
+    {
+        "name": "transferred injury",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 74,
+        "id": 303
+    },
+    {
+        "name": "unending torment",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1,
+        "initiative": 29,
+        "id": 305
+    },
+    {
+        "name": "unstable effigy",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1.5,
+        "initiative": 18,
+        "id": 312
+    },
+    {
+        "name": "flesh bomb",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 1.5,
+        "initiative": 18,
+        "id": 312
+    },
+    {
+        "name": "wave of anguish",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 8,
+        "initiative": 68,
+        "id": 326
+    },
+    {
+        "name": "wracked with pain",
+        "game": "fh",
+        "character_id": "PC",
+        "level": 8,
+        "initiative": 22,
+        "id": 327
+    },
+    {
+        "name": "calamity",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 9,
+        "initiative": 35,
+        "id": 243
+    },
+    {
+        "name": "cinder lance",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 8,
+        "initiative": 90,
+        "id": 241
+    },
+    {
+        "name": "cloud of ash",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1,
+        "initiative": 23,
+        "id": 224
+    },
+    {
+        "name": "cooling",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1,
+        "initiative": 75,
+        "id": 215
+    },
+    {
+        "name": "deep fury",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 2,
+        "initiative": 38,
+        "id": 229
+    },
+    {
+        "name": "erupting rage",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 7,
+        "initiative": 70,
+        "id": 238
+    },
+    {
+        "name": "eruption",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1,
+        "initiative": 47,
+        "id": 218
+    },
+    {
+        "name": "feed the beast",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 8,
+        "initiative": 27,
+        "id": 240
+    },
+    {
+        "name": "flowing fire",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1,
+        "initiative": 20,
+        "id": 217
+    },
+    {
+        "name": "force of the earth",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1.5,
+        "initiative": 15,
+        "id": 226
+    },
+    {
+        "name": "hand of flame",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 4,
+        "initiative": 29,
+        "id": 232
+    },
+    {
+        "name": "hardened spike",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 3,
+        "initiative": 80,
+        "id": 231
+    },
+    {
+        "name": "heat wave",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 4,
+        "initiative": 8,
+        "id": 233
+    },
+    {
+        "name": "igneous path",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1,
+        "initiative": 18,
+        "id": 220
+    },
+    {
+        "name": "lava bomb",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1,
+        "initiative": 53,
+        "id": 219
+    },
+    {
+        "name": "liquid stone",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1,
+        "initiative": 28,
+        "id": 223
+    },
+    {
+        "name": "living magma",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 3,
+        "initiative": 22,
+        "id": 230
+    },
+    {
+        "name": "magma orbs",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 5,
+        "initiative": 82,
+        "id": 235
+    },
+    {
+        "name": "melted armor",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1,
+        "initiative": 62,
+        "id": 222
+    },
+    {
+        "name": "metamorphic rock",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1.5,
+        "initiative": 68,
+        "id": 227
+    },
+    {
+        "name": "obsidian shield",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 6,
+        "initiative": 19,
+        "id": 237
+    },
+    {
+        "name": "quenched rage",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1,
+        "initiative": 30,
+        "id": 216
+    },
+    {
+        "name": "rain of fire",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 5,
+        "initiative": 21,
+        "id": 234
+    },
+    {
+        "name": "return to the source",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 6,
+        "initiative": 14,
+        "id": 236
+    },
+    {
+        "name": "searing smoke",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 2,
+        "initiative": 45,
+        "id": 228
+    },
+    {
+        "name": "stone armor",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 9,
+        "initiative": 9,
+        "id": 242
+    },
+    {
+        "name": "swelter",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 7,
+        "initiative": 32,
+        "id": 239
+    },
+    {
+        "name": "under pressure",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1,
+        "initiative": 85,
+        "id": 221
+    },
+    {
+        "name": "wildfire",
+        "game": "fh",
+        "character_id": "PY",
+        "level": 1.5,
+        "initiative": 72,
+        "id": 225
+    },
+    {
+        "name": "birds in a tempest",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 2,
+        "initiative": 18,
+        "id": 344
+    },
+    {
+        "name": "2 white owls",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 2,
+        "initiative": 18,
+        "id": 344
+    },
+    {
+        "name": "biting frost",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 4,
+        "initiative": 16,
+        "id": 349
+    },
+    {
+        "name": "blinding vortex",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1.5,
+        "initiative": 31,
+        "id": 342
+    },
+    {
+        "name": "blizzard",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 71,
+        "id": 330
+    },
+    {
+        "name": "chilling impact",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 31,
+        "id": 332
+    },
+    {
+        "name": "cold snap",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 3,
+        "initiative": 86,
+        "id": 346
+    },
+    {
+        "name": "cold therapy",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 20,
+        "id": 340
+    },
+    {
+        "name": "cross winds",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 32,
+        "id": 338
+    },
+    {
+        "name": "enticing breeze",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 76,
+        "id": 331
+    },
+    {
+        "name": "freezing storm",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 7,
+        "initiative": 81,
+        "id": 354
+    },
+    {
+        "name": "frigid growth",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 70,
+        "id": 339
+    },
+    {
+        "name": "frozen brand",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 6,
+        "initiative": 33,
+        "id": 353
+    },
+    {
+        "name": "gathering force",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 89,
+        "id": 333
+    },
+    {
+        "name": "lifting gust",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 27,
+        "id": 335
+    },
+    {
+        "name": "nature's breath",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 90,
+        "id": 334
+    },
+    {
+        "name": "snow fox",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 90,
+        "id": 334
+    },
+    {
+        "name": "polar vortex",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 3,
+        "initiative": 61,
+        "id": 347
+    },
+    {
+        "name": "refreshing flurry",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 6,
+        "initiative": 95,
+        "id": 352
+    },
+    {
+        "name": "polar cat",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 6,
+        "initiative": 95,
+        "id": 352
+    },
+    {
+        "name": "shifting snow",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 5,
+        "initiative": 17,
+        "id": 351
+    },
+    {
+        "name": "snowball",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 23,
+        "id": 336
+    },
+    {
+        "name": "snowblind",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 9,
+        "initiative": 83,
+        "id": 359
+    },
+    {
+        "name": "storm wall",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 7,
+        "initiative": 30,
+        "id": 355
+    },
+    {
+        "name": "surging blow",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 8,
+        "initiative": 73,
+        "id": 356
+    },
+    {
+        "name": "the endless white",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 8,
+        "initiative": 5,
+        "id": 357
+    },
+    {
+        "name": "the spirit's call",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1.5,
+        "initiative": 45,
+        "id": 343
+    },
+    {
+        "name": "tornado",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 2,
+        "initiative": 59,
+        "id": 345
+    },
+    {
+        "name": "whipping gale",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 5,
+        "initiative": 79,
+        "id": 350
+    },
+    {
+        "name": "whiteout",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1,
+        "initiative": 21,
+        "id": 337
+    },
+    {
+        "name": "white winds",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 1.5,
+        "initiative": 11,
+        "id": 341
+    },
+    {
+        "name": "winds of change",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 9,
+        "initiative": 15,
+        "id": 358
+    },
+    {
+        "name": "zephyr barrier",
+        "game": "fh",
+        "character_id": "SD",
+        "level": 4,
+        "initiative": 40,
+        "id": 348
+    },
+    {
+        "name": "barbaric yawp",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 9,
+        "initiative": 66,
+        "id": 271
+    },
+    {
+        "name": "befuddling bellow",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 2,
+        "initiative": 18,
+        "id": 258
+    },
+    {
+        "name": "calamitous yawp",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1.5,
+        "initiative": 65,
+        "id": 254
+    },
+    {
+        "name": "cloaking refraction",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 7,
+        "initiative": 11,
+        "id": 268
+    },
+    {
+        "name": "concentrated blast",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 4,
+        "initiative": 38,
+        "id": 261
+    },
+    {
+        "name": "devastating shout",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1,
+        "initiative": 68,
+        "id": 253
+    },
+    {
+        "name": "din of battle",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1.5,
+        "initiative": 14,
+        "id": 255
+    },
+    {
+        "name": "elemental pulse",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 4,
+        "initiative": 25,
+        "id": 262
+    },
+    {
+        "name": "empowering note",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 5,
+        "initiative": 45,
+        "id": 264
+    },
+    {
+        "name": "empowering pulse",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1,
+        "initiative": 22,
+        "id": 252
+    },
+    {
+        "name": "feedback",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 8,
+        "initiative": 24,
+        "id": 270
+    },
+    {
+        "name": "forceful vibrations",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1,
+        "initiative": 27,
+        "id": 247
+    },
+    {
+        "name": "foreboding tremors",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1,
+        "initiative": 21,
+        "id": 249
+    },
+    {
+        "name": "future sense",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 6,
+        "initiative": 28,
+        "id": 266
+    },
+    {
+        "name": "heartening harmony",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1,
+        "initiative": 30,
+        "id": 246
+    },
+    {
+        "name": "illuminative tone",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1.5,
+        "initiative": 72,
+        "id": 256
+    },
+    {
+        "name": "lifting voice",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1,
+        "initiative": 29,
+        "id": 245
+    },
+    {
+        "name": "precious gems",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1,
+        "initiative": 10,
+        "id": 251
+    },
+    {
+        "name": "resonant frequency",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1,
+        "initiative": 88,
+        "id": 248
+    },
+    {
+        "name": "shape the path",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 3,
+        "initiative": 40,
+        "id": 259
+    },
+    {
+        "name": "shrieking chakram",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 5,
+        "initiative": 8,
+        "id": 263
+    },
+    {
+        "name": "soft spots",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 8,
+        "initiative": 47,
+        "id": 269
+    },
+    {
+        "name": "sonic shock",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1,
+        "initiative": 58,
+        "id": 250
+    },
+    {
+        "name": "sound therapy",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 7,
+        "initiative": 73,
+        "id": 267
+    },
+    {
+        "name": "stealth vibrations",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 3,
+        "initiative": 35,
+        "id": 260
+    },
+    {
+        "name": "transparency",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 2,
+        "initiative": 13,
+        "id": 257
+    },
+    {
+        "name": "unrelenting wail",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 1,
+        "initiative": 26,
+        "id": 244
+    },
+    {
+        "name": "unsustainable wave",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 6,
+        "initiative": 36,
+        "id": 265
+    },
+    {
+        "name": "violent vibrations",
+        "game": "fh",
+        "character_id": "SH",
+        "level": 9,
+        "initiative": 5,
+        "id": 272
+    },
+    {
+        "name": "boar catcher",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1,
+        "initiative": 20,
+        "id": 275
+    },
+    {
+        "name": "cage of thorns",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 6,
+        "initiative": 55,
+        "id": 294
+    },
+    {
+        "name": "caltrops",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1,
+        "initiative": 25,
+        "id": 273
+    },
+    {
+        "name": "dangerous cargo",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 9,
+        "initiative": 23,
+        "id": 299
+    },
+    {
+        "name": "dangerous ground",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 4,
+        "initiative": 31,
+        "id": 289
+    },
+    {
+        "name": "dismantle",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1.5,
+        "initiative": 72,
+        "id": 282
+    },
+    {
+        "name": "electrified net",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1,
+        "initiative": 53,
+        "id": 277
+    },
+    {
+        "name": "enticing bait",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1,
+        "initiative": 30,
+        "id": 279
+    },
+    {
+        "name": "exploding decoy",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1,
+        "initiative": 62,
+        "id": 280
+    },
+    {
+        "name": "extra teeth",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 3,
+        "initiative": 22,
+        "id": 287
+    },
+    {
+        "name": "flurry of nails",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1,
+        "initiative": 68,
+        "id": 281
+    },
+    {
+        "name": "foxhole",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 7,
+        "initiative": 90,
+        "id": 296
+    },
+    {
+        "name": "defense grid",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 7,
+        "initiative": 90,
+        "id": 296
+    },
+    {
+        "name": "furry facade",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1,
+        "initiative": 85,
+        "id": 274
+    },
+    {
+        "name": "shaggy lure",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1,
+        "initiative": 85,
+        "id": 274
+    },
+    {
+        "name": "grasping hazards",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 7,
+        "initiative": 8,
+        "id": 295
+    },
+    {
+        "name": "honeypot",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1,
+        "initiative": 18,
+        "id": 278
+    },
+    {
+        "name": "improvised improvement",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1.5,
+        "initiative": 58,
+        "id": 284
+    },
+    {
+        "name": "lure of the snare",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 5,
+        "initiative": 59,
+        "id": 291
+    },
+    {
+        "name": "magnetic shards",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 8,
+        "initiative": 37,
+        "id": 298
+    },
+    {
+        "name": "mother of all traps",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 9,
+        "initiative": 86,
+        "id": 300
+    },
+    {
+        "name": "path of pain",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 2,
+        "initiative": 38,
+        "id": 286
+    },
+    {
+        "name": "persistent pitfalls",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 6,
+        "initiative": 13,
+        "id": 293
+    },
+    {
+        "name": "proficient hunter",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 5,
+        "initiative": 26,
+        "id": 292
+    },
+    {
+        "name": "pyrotechnics",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 3,
+        "initiative": 80,
+        "id": 288
+    },
+    {
+        "name": "spike pit",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1,
+        "initiative": 47,
+        "id": 276
+    },
+    {
+        "name": "spike strip",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 8,
+        "initiative": 67,
+        "id": 297
+    },
+    {
+        "name": "spring-loaded",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 1.5,
+        "initiative": 15,
+        "id": 283
+    },
+    {
+        "name": "stalker's spoils",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 4,
+        "initiative": 10,
+        "id": 290
+    },
+    {
+        "name": "unavoidable outcome",
+        "game": "fh",
+        "character_id": "TA",
+        "level": 2,
+        "initiative": 45,
+        "id": 285
+    }
+]

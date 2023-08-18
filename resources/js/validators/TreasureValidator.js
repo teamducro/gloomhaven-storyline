@@ -9,8 +9,8 @@ export default class TreasureValidator {
     }
 
     checkUnlockedItem(scenario) {
-        if (scenario.treasures.isNotEmpty()) {
-            scenario.treasures.each((name, id) => {
+        if (scenario.treasures.length) {
+            scenario.treasures.forEach(id => {
                 this.scenarioRepository.processTreasureItems(scenario, id, scenario.isTreasureUnlocked(id));
             });
         }

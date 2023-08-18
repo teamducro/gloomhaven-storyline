@@ -16,7 +16,7 @@
                 <ul class="flex flex-col py-4 px-3">
                     <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" v-if="unlocked"
                         class="add-character flow-root"
-                        :class="['order-'+sheet.characterOrder[id], sheet.characterOrder[id] === 0 ? 'mt-0' : 'mt-6']">
+                        :class="['order-'+sheet.characterOrder[id], sheet.characterOrder[id] == 0 ? 'mt-0' : 'mt-6']">
                         <a @click.stop.prevent="$emit('create', id)" href="#"
                            class="-m-3 p-3 whitespace-nowrap flex items-center rounded-md text-base font-medium text-white hover:bg-black2-75 transition ease-in-out duration-150"
                            :class="{'text-white2-50 grayscale cursor-default': characterRepository.partyHasCharacter(sheet, id)}">
@@ -46,11 +46,12 @@ import GameData from "../../../services/GameData";
 import CharacterRepository from "../../../repositories/CharacterRepository";
 import charactersJson from "../../../characters.json";
 import Sheet from "../../../models/Sheet";
+import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
     inject: ['appData'],
     props: {
-        sheet: Sheet
+        sheet: Sheet|CampaignSheet
     },
     data() {
         return {
@@ -84,9 +85,3 @@ export default {
     }
 }
 </script>
-
-<style scoped lang="scss">
-.add-character.order-0 {
-    @apply mt-0;
-}
-</style>

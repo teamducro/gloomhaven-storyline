@@ -14,6 +14,7 @@
         <edit-campaign/>
         <ability-modal/>
         <modifier-deck-modal/>
+        <calendar-week-modal/>
     </div>
 </template>
 

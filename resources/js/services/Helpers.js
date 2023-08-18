@@ -7,8 +7,11 @@ export default {
     loggedIn() {
         return typeof (new AccessToken).get() === 'string'
     },
+    isFloat(number) {
+        return !Number.isInteger(parseFloat(number)) && isFinite(number)
+    },
     isNumeric(number) {
-        return !isNaN(parseFloat(number)) && isFinite(number);
+        return !isNaN(parseFloat(number)) && isFinite(number)
     },
     start(string, search) {
         if (!string.startsWith(search)) {

@@ -1,0 +1,280 @@
+<svg width="678" height="651" version="1.1" viewBox="0 0 678 651" xmlns="http://www.w3.org/2000/svg" text-anchor="middle" dominant-baseline="central">
+ <style>
+svg { background: grey; }
+text { fill: white; font-family: "Pirata One", "Nyala", sans-serif; font-size: 12px; }
+.node { stroke: white; }
+.line { fill: none; stroke: white; }
+.arrow { fill: white; stroke: white; }
+.scenario { cursor: pointer; }
+.blocked { font-size: 20px; transform: translate(-12px, -16px); fill: #a13c2f; }
+.required { transform: translate(-14px, -12px); fill: #e9a678; }
+ </style>
+ <g class="chapter intro" id="chapter1">
+  <rect x="96" y="12" width="96" height="168" rx="10" ry="10" fill="#111" fill-opacity=".7" stroke="#e4dedd"/>
+  <text class="label" x="113" y="26">Intro</text>
+ </g>
+ <g class="chapter" id="chapter2">
+  <path d="m22 192c-5.54 0-10 4.46-10 10v94l0.12164 195c3e-3 5.54 4.46 10 10 10h28c5.54 0 10.005-4.46 10-10l-0.12164-135v-40c0-5.54 4.46-10 10-10h26l8 2e-5h24c5.54 0 10-4.46 10-10v-94c0-5.54-4.46-10-10-10z" fill="#111" fill-opacity=".7" stroke="#7cc3d7"/>
+  <text class="label" x="110" y="288">Algox</text>
+ </g>
+ <g class="chapter" id="chapter3">
+  <rect x="204" y="12" width="198" height="168" rx="10" ry="10" fill="#111" fill-opacity=".7" stroke="#865888"/>
+  <text class="label" x="285" y="120">Lurkers</text>
+ </g>
+ <g class="chapter" id="chapter4">
+  <path d="m160 192c-5.54 0-10 4.46-10 10v94c0 5.54 4.46 10 10 10h24l20-2e-5h14c5.54 0 10 4.46 10 10v175c0 5.54 4.46 10 10 10h28c5.54 0 10-4.46 10-10v-289c0-5.54-4.46-10-10-10z" fill="#111" fill-opacity=".7" stroke="#31446a"/>
+  <text class="label" x="174" y="288">Algox</text>
+ </g>
+ <g class="chapter" id="chapter5">
+  <rect x="96" y="318.5" width="96" height="182.5" rx="10" ry="10" fill="#111" fill-opacity=".7" stroke="#3b7194"/>
+  <text class="label" x="118" y="360">Algox</text>
+ </g>
+ <g class="chapter" id="chapter6">
+  <rect x="288" y="192" width="156" height="309" rx="10" ry="10" fill="#111" fill-opacity=".7" stroke="#409347"/>
+  <text class="label" x="410" y="454">Unfettered</text>
+ </g>
+ <rect x="477" y="24" width="186" height="153" rx="10" ry="10" fill="#111" fill-opacity=".7" stroke="#b92e30"/><text class="label" x="523" y="160">Personal Quests</text>
+ <rect x="501" y="192" width="165" height="63" rx="10" ry="10" fill="#111" fill-opacity=".7" stroke="#c8a559"/><text class="label" x="627" y="240">Puzzle Book</text>
+ <rect x="540" y="270" width="126" height="135" rx="10" ry="10" fill="#111" fill-opacity=".7" stroke="#795d3f"/><text class="label" x="618" y="390">Random Scenarios</text>
+ <rect x="12" y="513" width="384" height="126" rx="10" ry="10" fill="#111" fill-opacity=".7" stroke="#c86d33"/><text class="label" x="359" y="621">Job Postings</text>
+ <rect x="462" y="420" width="204" height="219" rx="10" ry="10" fill="#111" fill-opacity=".7" stroke="#fde1bf"/><text class="label" x="639" y="624">Other</text>
+ <g class="edge edge0" id="edge0-1"><path class="line" d="m144 48v15"/><path class="arrow" d="m144 62.517-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge1" id="edge1-2"><path class="line" d="m144 87v24h-12"/><path class="arrow" d="m134.51 108.48-2.5168 2.5168 2.5168 2.5168 2.5168-2.5168z"/></g>
+ <g class="edge edge1" id="edge1-3"><path class="line" d="m156 111h-12v-24"/><path class="arrow" d="m153.49 108.48 2.5168 2.5168-2.5168 2.5168-2.5168-2.5168z"/></g>
+ <g class="edge edge2" id="edge2-4"><path class="line" d="m120 123v9h24v12"/><path class="arrow" d="m144 143.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge3" id="edge3-4"><path class="line" d="m168 123v9h-24v12"/><path class="arrow" d="m144 143.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge4" id="edge4-5"><path class="line" d="m144 168v48h-18"/><path class="arrow" d="m126.48 216 5.0336 2.5168-1.2584-2.5168 1.2584-2.5168z"/></g>
+ <g class="edge edge4" id="edge4-6"><path class="line" d="m162 216h-18v-48"/><path class="arrow" d="m161.52 216-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge4" id="edge4-7"><path class="line" d="m153 153h45v-39h18"/><path class="arrow" d="m215.52 114-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge4" id="edge4-8"><path class="line" d="m153 159h15v27h174v18"/><path class="arrow" d="m342 203.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge5" id="edge5-9"><path class="line" d="m102 216h-15"/><path class="arrow" d="m87.483 216 5.0336 2.5168-1.2584-2.5168 1.2584-2.5168z"/></g>
+ <g class="edge edge5" id="edge5-10"><path class="line" d="m114 228v18"/><path class="arrow" d="m114 245.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge6" id="edge6-11"><path class="line" d="m174 228v18"/><path class="arrow" d="m174 245.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge6" id="edge6-12"><path class="line" d="m186 216h15"/><path class="arrow" d="m200.52 216-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge7" id="edge7-13"><path class="line" d="m240 114h12v-27"/><path class="arrow" d="m252 87.483-2.5168 5.0336 2.5168-1.2584 2.5168 1.2584z"/></g>
+ <g class="edge edge7" id="edge7-14"><path class="line" d="m228 126v18"/><path class="arrow" d="m228 143.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge8" id="edge8-15"><path class="line" d="m354 216h15"/><path class="arrow" d="m368.52 216-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge8" id="edge8-16"><path class="line" d="m342 228v18"/><path class="arrow" d="m342 245.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge9" id="edge9-17"><path class="line" d="m63 216h-15"/><path class="arrow" d="m48.483 216 5.0336 2.5168-1.2584-2.5168 1.2584-2.5168z"/></g>
+ <g class="edge edge10" id="edge10-18"><path class="line" d="m102 258-15 0"/><path class="arrow" d="m87.483 258 5.0336 2.5168-1.2584-2.5168 1.2584-2.5168z"/></g>
+ <g class="edge edge11" id="edge11-19"><path class="line" d="m186 258 15 0"/><path class="arrow" d="m200.52 258-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge12" id="edge12-28"><path class="line" d="m225 216h15"/><path class="arrow" d="m239.52 216-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge13" id="edge13-21"><path class="line" d="m240 75h-12v-27"/><path class="arrow" d="m228 48.483-2.5168 5.0336 2.5168-1.2584 2.5168 1.2584z"/></g>
+ <g class="edge edge13" id="edge13-32"><path class="line" d="m264 75h12v-27"/><path class="arrow" d="m276 48.483-2.5168 5.0336 2.5168-1.2584 2.5168 1.2584z"/></g>
+ <g class="edge edge14" id="edge14-22"><path class="line" d="m240 156h18"/><path class="arrow" d="m257.52 156-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge15" id="edge15-23"><path class="line" d="m381 228v18"/><path class="arrow" d="m381 245.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge15" id="edge15-24"><path class="line" d="m393 216h15"/><path class="arrow" d="m407.52 216-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge16" id="edge16-25"><path class="line" d="m342 270v30h-18"/><path class="arrow" d="m326.51 297.48-2.5168 2.5168 2.5168 2.5168 2.5168-2.5168z"/></g>
+ <g class="edge edge16" id="edge16-26"><path class="line" d="m360 300h-18v-30"/><path class="arrow" d="m357.49 297.48 2.5168 2.5168-2.5168 2.5168-2.5168-2.5168z"/></g>
+ <g class="edge edge17" id="edge17-27"><path class="line" d="m36 228v18"/><path class="arrow" d="m36 245.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge18" id="edge18-28"><path class="line" d="m75 270v72h57"/><path class="arrow" d="m129.49 339.48 2.5168 2.5168-2.5168 2.5168-2.5168-2.5168z"/></g>
+ <g class="edge edge18" id="edge18-29"><path class="line" d="m75 270v72h-27"/><path class="arrow" d="m50.509 339.48-2.5168 2.5168 2.5168 2.5168 2.5168-2.5168z"/></g>
+ <g class="edge edge19" id="edge19-28"><path class="line" d="m213 270v72h-57"/><path class="arrow" d="m158.51 339.48-2.5168 2.5168 2.5168 2.5168 2.5168-2.5168z"/></g>
+ <g class="edge edge19" id="edge19-30"><path class="line" d="m213 270v72h27"/><path class="arrow" d="m237.49 339.48 2.5168 2.5168-2.5168 2.5168-2.5168-2.5168z"/></g>
+ <g class="edge edge20" id="edge20-31"><path class="line" d="m252 228v18"/><path class="arrow" d="m252 245.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge22" id="edge22-33"><path class="line" d="m282 156h18"/><path class="arrow" d="m299.52 156-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge23" id="edge23-34"><path class="line" d="m393 258h15"/><path class="arrow" d="m407.52 258-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge24" id="edge24-34"><path class="line" d="m420 228v18"/><path class="arrow" d="m420 245.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge25" id="edge25-35"><path class="line" d="m312 312v18"/><path class="arrow" d="m312 329.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge26" id="edge26-36"><path class="line" d="m372 312v54h-12"/><path class="arrow" d="m362.51 363.48-2.5168 2.5168 2.5168 2.5168 2.5168-2.5168z"/></g>
+ <g class="edge edge26" id="edge26-37"><path class="line" d="m384 366h-12v-54"/><path class="arrow" d="m381.49 363.48 2.5168 2.5168-2.5168 2.5168-2.5168-2.5168z"/></g>
+ <g class="edge edge28" id="edge28-38"><path class="line" d="m144 354v15"/><path class="arrow" d="m144 368.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge29" id="edge29-39"><path class="line" d="m36 354v21"/><path class="arrow" d="m36 374.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge30" id="edge30-40"><path class="line" d="m252 354v21"/><path class="arrow" d="m252 374.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge31" id="edge31-41"><path class="line" d="m252 270v18"/><path class="arrow" d="m252 287.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge33" id="edge33-42"><path class="line" d="m324 156h18"/><path class="arrow" d="m341.52 156-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge35" id="edge35-43"><path class="line" d="m312 354 0 21"/><path class="arrow" d="m312 374.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge36" id="edge36-44"><path class="line" d="m348 378v12h24v30"/><path class="arrow" d="m372 419.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge37" id="edge37-44"><path class="line" d="m396 378v12h-24v30"/><path class="arrow" d="m372 419.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge38" id="edge38-45"><path class="line" d="m132 381h-12v18"/><path class="arrow" d="m120 398.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge38" id="edge38-46"><path class="line" d="m156 381h12v18"/><path class="arrow" d="m168 398.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge39" id="edge39-47"><path class="line" d="m36 399v21"/><path class="arrow" d="m36 419.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge40" id="edge40-48"><path class="line" d="m252 399v21"/><path class="arrow" d="m252 419.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge42" id="edge42-49"><path class="line" d="m354 144v-30h-12"/><path class="arrow" d="m344.51 111.48-2.5168 2.5168 2.5168 2.5168 2.5168-2.5168z"/></g>
+ <g class="edge edge42" id="edge42-50"><path class="line" d="m366 114h-12v30"/><path class="arrow" d="m363.49 111.48 2.5168 2.5168-2.5168 2.5168-2.5168-2.5168z"/></g>
+ <g class="edge edge43" id="edge43-51"><path class="line" d="m312 399v21"/><path class="arrow" d="m312 419.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge44" id="edge44-58"><path class="line" d="m324 477h18v-45h18"/><path class="arrow" d="m326.51 474.48-2.5168 2.5168 2.5168 2.5168 2.5168-2.5168z"/></g>
+ <g class="edge edge44" id="edge44-59"><path class="line" d="m360 477h-18v-45h18"/><path class="arrow" d="m357.49 474.48 2.5168 2.5168-2.5168 2.5168-2.5168-2.5168z"/></g>
+ <g class="edge edge45" id="edge45-52"><path class="line" d="m120 423v18h12"/><path class="arrow" d="m131.52 441-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge46" id="edge46-52"><path class="line" d="m168 423v18h-12"/><path class="arrow" d="m156.48 441 5.0336 2.5168-1.2584-2.5168 1.2584-2.5168z"/></g>
+ <g class="edge edge47" id="edge47-56"><path class="line" d="m36 444v21"/><path class="arrow" d="m36 464.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge48" id="edge48-57"><path class="line" d="m252 444v21"/><path class="arrow" d="m252 464.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge49" id="edge49-53"><path class="line" d="m330 84v18"/><path class="arrow" d="m330 84.483-2.5168 5.0336 2.5168-1.2584 2.5168 1.2584z"/></g>
+ <g class="edge edge50" id="edge50-54"><path class="line" d="m378 84v18"/><path class="arrow" d="m378 84.483-2.5168 5.0336 2.5168-1.2584 2.5168 1.2584z"/></g>
+ <g class="edge edge51" id="edge51-58"><path class="line" d="m324 477h18v-45h-18"/><path class="arrow" d="m326.51 474.48-2.5168 2.5168 2.5168 2.5168 2.5168-2.5168z"/></g>
+ <g class="edge edge51" id="edge51-59"><path class="line" d="m360 477h-18v-45h-18"/><path class="arrow" d="m357.49 474.48 2.5168 2.5168-2.5168 2.5168-2.5168-2.5168z"/></g>
+ <g class="edge edge52" id="edge52-55"><path class="line" d="m144 453v12"/><path class="arrow" d="m144 464.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge53" id="edge53-60"><path class="line" d="m330 60v-24h12"/><path class="arrow" d="m341.52 36-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge54" id="edge54-60"><path class="line" d="m378 60v-24h-12"/><path class="arrow" d="m366.48 36 5.0336 2.5168-1.2584-2.5168 1.2584-2.5168z"/></g>
+ <g class="edge edge61" id="edge61-62"><path class="line" d="m537 216h15"/><path class="arrow" d="m551.52 216-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge62" id="edge62-63"><path class="line" d="m576 216h15"/><path class="arrow" d="m590.52 216-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge63" id="edge63-64"><path class="line" d="m615 216h15"/><path class="arrow" d="m629.52 216-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge65" id="edge65-66"><path class="line" d="m513 48h15"/><path class="arrow" d="m527.52 48-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge66" id="edge66-67"><path class="line" d="m552 48h15"/><path class="arrow" d="m566.52 48-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge67" id="edge67-68"><path class="line" d="m591 48h15"/><path class="arrow" d="m605.52 48-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge69" id="edge69-70"><path class="line" d="m513 84h15"/><path class="arrow" d="m527.52 84-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge71" id="edge71-72"><path class="line" d="m513 120h15"/><path class="arrow" d="m527.52 120-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge72" id="edge72-73"><path class="line" d="m548.79 111.89 21.4-19.754"/><path class="arrow" d="m569.73 92.56-1.9778 5.2688-0.78953-2.7009-2.6344-0.98889z"/></g>
+ <g class="edge edge73" id="edge73-74"><path class="line" d="m591 84h15"/><path class="arrow" d="m605.52 84-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge74" id="edge74-75"><path class="line" d="m618 96v24h-9"/><path class="arrow" d="m611.51 117.48-2.5168 2.5168 2.5168 2.5168 2.5168-2.5168z"/></g>
+ <g class="edge edge74" id="edge74-76"><path class="line" d="m627 120h-9v-24"/><path class="arrow" d="m624.49 117.48 2.5168 2.5168-2.5168 2.5168-2.5168-2.5168z"/></g>
+ <g class="edge edge75" id="edge75-77"><path class="line" d="m597 132v21h9"/><path class="arrow" d="m605.52 153-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge76" id="edge76-77"><path class="line" d="m639 132v21h-9"/><path class="arrow" d="m630.48 153 5.0336 2.5168-1.2584-2.5168 1.2584-2.5168z"/></g>
+ <g class="edge edge79" id="edge79-80"><path class="line" d="m36 588v15"/><path class="arrow" d="m36 602.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge87" id="edge87-88"><path class="line" d="m114 588v15"/><path class="arrow" d="m114 602.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge90" id="edge90-91"><path class="line" d="m153 588v15"/><path class="arrow" d="m153 602.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge94" id="edge94-95"><path class="line" d="m204 615h15"/><path class="arrow" d="m218.52 615-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge96" id="edge96-97"><path class="line" d="m243 537h15"/><path class="arrow" d="m257.52 537-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge97" id="edge97-98"><path class="line" d="m282 537h15"/><path class="arrow" d="m296.52 537-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge99" id="edge99-100"><path class="line" d="m243 576h15"/><path class="arrow" d="m257.52 576-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge100" id="edge100-101"><path class="line" d="m282 576h15"/><path class="arrow" d="m296.52 576-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge101" id="edge101-102"><path class="line" d="m309 588v15"/><path class="arrow" d="m309 602.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge102" id="edge102-103"><path class="line" d="m297 615h-15"/><path class="arrow" d="m282.48 615 5.0336 2.5168 -1.2584-2.5168 1.2584-2.5168z"/></g>
+ <g class="edge edge104" id="edge104-105"><path class="line" d="m576 294h15"/><path class="arrow" d="m590.52 294-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge105" id="edge105-106"><path class="line" d="m615 294h15"/><path class="arrow" d="m629.52 294-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge114" id="edge114-115"><path class="line" d="m576 444h15"/><path class="arrow" d="m590.52 444-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge115" id="edge115-116"><path class="line" d="m615 444h15"/><path class="arrow" d="m629.52 444-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge120" id="edge120-121"><path class="line" d="m642 495v15"/><path class="arrow" d="m642 509.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="edge edge124" id="edge124-125"><path class="line" d="m576 522h15"/><path class="arrow" d="m590.52 522-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge128" id="edge128-129"><path class="line" d="m576 561h15"/><path class="arrow" d="m590.52 561-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge129" id="edge129-130"><path class="line" d="m615 561h15"/><path class="arrow" d="m629.52 561-5.0336 2.5168 1.2584-2.5168-1.2584-2.5168z"/></g>
+ <g class="edge edge132" id="edge132-133"><path class="line" d="m348 549v15"/><path class="arrow" d="m348 563.52-2.5168-5.0336 2.5168 1.2584 2.5168-1.2584z"/></g>
+ <g class="scenario" id="node0"><circle class="node" cx="144" cy="36" r="12"/><text x="144" y="36">0</text></g>
+ <g class="scenario" id="node1"><circle class="node" cx="144" cy="75" r="12"/><text x="144" y="75">1</text></g>
+ <g class="scenario" id="node2"><circle class="node" cx="120" cy="111" r="12"/><text x="120" y="111">2</text><text x="120" y="111" class="blocked">×</text></g>
+ <g class="scenario" id="node3"><circle class="node" cx="168" cy="111" r="12"/><text x="168" y="111">3</text><text x="168" y="111" class="blocked">×</text></g>
+ <g class="scenario" id="node4"><circle class="node" cx="144" cy="156" r="12"/><text x="144" y="156">4</text></g>
+ <g class="scenario" id="node5"><circle class="node" cx="114" cy="216" r="12"/><text x="114" y="216">5</text></g>
+ <g class="scenario" id="node6"><circle class="node" cx="174" cy="216" r="12"/><text x="174" y="216">6</text></g>
+ <g class="scenario" id="node7"><circle class="node" cx="228" cy="114" r="12"/><text x="228" y="114">7</text></g>
+ <g class="scenario" id="node8"><circle class="node" cx="342" cy="216" r="12"/><text x="342" y="216">8</text></g>
+ <g class="scenario" id="node9"><circle class="node" cx="75" cy="216" r="12"/><text x="75" y="216">9</text></g>
+ <g class="scenario" id="node10"><circle class="node" cx="114" cy="258" r="12"/><text x="114" y="258">10</text></g>
+ <g class="scenario" id="node11"><circle class="node" cx="174" cy="258" r="12"/><text x="174" y="258">11</text></g>
+ <g class="scenario" id="node12"><circle class="node" cx="213" cy="216" r="12"/><text x="213" y="216">12</text></g>
+ <g class="scenario" id="node13"><circle class="node" cx="252" cy="75" r="12"/><text x="252" y="75">13</text></g>
+ <g class="scenario" id="node14"><circle class="node" cx="228" cy="156" r="12"/><text x="228" y="156">14</text></g>
+ <g class="scenario" id="node15"><circle class="node" cx="381" cy="216" r="12"/><text x="381" y="216">15</text></g>
+ <g class="scenario" id="node16"><circle class="node" cx="342" cy="258" r="12"/><text x="342" y="258">16</text></g>
+ <g class="scenario" id="node17"><circle class="node" cx="36" cy="216" r="12"/><text x="36" y="216">17</text></g>
+ <g class="scenario" id="node18"><circle class="node" cx="75" cy="258" r="12"/><text x="75" y="258">18</text></g>
+ <g class="scenario" id="node19"><circle class="node" cx="213" cy="258" r="12"/><text x="213" y="258">19</text></g>
+ <g class="scenario" id="node20"><circle class="node" cx="252" cy="216" r="12"/><text x="252" y="216">20</text></g>
+ <g class="scenario" id="node21"><circle class="node" cx="228" cy="36" r="12"/><text x="228" y="36">21</text></g>
+ <g class="scenario" id="node22"><circle class="node" cx="270" cy="156" r="12"/><text x="270" y="156">22</text></g>
+ <g class="scenario" id="node23"><circle class="node" cx="381" cy="258" r="12"/><text x="381" y="258">23</text></g>
+ <g class="scenario" id="node24"><circle class="node" cx="420" cy="216" r="12"/><text x="420" y="216">24</text></g>
+ <g class="scenario" id="node25"><circle class="node" cx="312" cy="300" r="12"/><text x="312" y="300">25</text><text x="312" y="300" class="blocked">×</text></g>
+ <g class="scenario" id="node26"><circle class="node" cx="372" cy="300" r="12"/><text x="372" y="300">26</text><text x="372" y="300" class="blocked">×</text></g>
+ <g class="scenario" id="node27"><circle class="node" cx="36" cy="258" r="12"/><text x="36" y="258">27</text><text x="36" y="258" class="required">!</text></g>
+ <g class="scenario" id="node28"><circle class="node" cx="144" cy="342" r="12"/><text x="144" y="342">28</text><text x="144" y="342" class="blocked">×</text></g>
+ <g class="scenario" id="node29"><circle class="node" cx="36" cy="342" r="12"/><text x="36" y="342">29</text><text x="36" y="342" class="blocked">×</text></g>
+ <g class="scenario" id="node30"><circle class="node" cx="252" cy="342" r="12"/><text x="252" y="342">30</text><text x="252" y="342" class="blocked">×</text></g>
+ <g class="scenario" id="node31"><circle class="node" cx="252" cy="258" r="12"/><text x="252" y="258">31</text></g>
+ <g class="scenario" id="node32"><circle class="node" cx="276" cy="36" r="12"/><text x="276" y="36">32</text></g>
+ <g class="scenario" id="node33"><circle class="node" cx="312" cy="156" r="12"/><text x="312" y="156">33</text><text x="312" y="156" class="required">!</text></g>
+ <g class="scenario" id="node34"><circle class="node" cx="420" cy="258" r="12"/><text x="420" y="258">34</text></g>
+ <g class="scenario" id="node35"><circle class="node" cx="312" cy="342" r="12"/><text x="312" y="342">35</text></g>
+ <g class="scenario" id="node36"><circle class="node" cx="348" cy="366" r="12"/><text x="348" y="366">36</text><text x="348" y="366" class="blocked">×</text></g>
+ <g class="scenario" id="node37"><circle class="node" cx="396" cy="366" r="12"/><text x="396" y="366">37</text><text x="396" y="366" class="blocked">×</text></g>
+ <g class="scenario" id="node38"><circle class="node" cx="144" cy="381" r="12"/><text x="144" y="381">38</text></g>
+ <g class="scenario" id="node39"><circle class="node" cx="36" cy="387" r="12"/><text x="36" y="387">39</text><text x="36" y="387" class="required">!</text></g>
+ <g class="scenario" id="node40"><circle class="node" cx="252" cy="387" r="12"/><text x="252" y="387">40</text></g>
+ <g class="scenario" id="node41"><circle class="node" cx="252" cy="300" r="12"/><text x="252" y="300">41</text><text x="252" y="300" class="required">!</text></g>
+ <g class="scenario" id="node42"><circle class="node" cx="354" cy="156" r="12"/><text x="354" y="156">42</text></g>
+ <g class="scenario" id="node43"><circle class="node" cx="312" cy="387" r="12"/><text x="312" y="387">43</text></g>
+ <g class="scenario" id="node44"><circle class="node" cx="372" cy="432" r="12"/><text x="372" y="432">44</text></g>
+ <g class="scenario" id="node45"><circle class="node" cx="120" cy="411" r="12"/><text x="120" y="411">45</text></g>
+ <g class="scenario" id="node46"><circle class="node" cx="168" cy="411" r="12"/><text x="168" y="411">46</text></g>
+ <g class="scenario" id="node47"><circle class="node" cx="36" cy="432" r="12"/><text x="36" y="432">47</text></g>
+ <g class="scenario" id="node48"><circle class="node" cx="252" cy="432" r="12"/><text x="252" y="432">48</text></g>
+ <g class="scenario" id="node49"><circle class="node" cx="330" cy="114" r="12"/><text x="330" y="114">49</text><text x="330" y="114" class="blocked">×</text></g>
+ <g class="scenario" id="node50"><circle class="node" cx="378" cy="114" r="12"/><text x="378" y="114">50</text><text x="378" y="114" class="blocked">×</text></g>
+ <g class="scenario" id="node51"><circle class="node" cx="312" cy="432" r="12"/><text x="312" y="432">51</text></g>
+ <g class="scenario" id="node52"><circle class="node" cx="144" cy="441" r="12"/><text x="144" y="441">52</text><text x="144" y="441" class="required">!</text></g>
+ <g class="scenario" id="node53"><circle class="node" cx="330" cy="72" r="12"/><text x="330" y="72">53</text></g>
+ <g class="scenario" id="node54"><circle class="node" cx="378" cy="72" r="12"/><text x="378" y="72">54</text></g>
+ <g class="scenario" id="node55"><circle class="node" cx="144" cy="477" r="12"/><text x="144" y="477">55</text></g>
+ <g class="scenario" id="node56"><circle class="node" cx="36" cy="477" r="12"/><text x="36" y="477">56</text></g>
+ <g class="scenario" id="node57"><circle class="node" cx="252" cy="477" r="12"/><text x="252" y="477">57</text></g>
+ <g class="scenario" id="node58"><circle class="node" cx="312" cy="477" r="12"/><text x="312" y="477">58</text><text x="312" y="477" class="blocked">×</text></g>
+ <g class="scenario" id="node59"><circle class="node" cx="372" cy="477" r="12"/><text x="372" y="477">59</text><text x="372" y="477" class="blocked">×</text></g>
+ <g class="scenario" id="node60"><circle class="node" cx="354" cy="36" r="12"/><text x="354" y="36">60</text></g>
+ <g class="scenario" id="node61"><circle class="node" cx="525" cy="216" r="12"/><text x="525" y="216">61</text></g>
+ <g class="scenario" id="node62"><circle class="node" cx="564" cy="216" r="12"/><text x="564" y="216">62</text></g>
+ <g class="scenario" id="node63"><circle class="node" cx="603" cy="216" r="12"/><text x="603" y="216">63</text></g>
+ <g class="scenario" id="node64"><circle class="node" cx="642" cy="216" r="12"/><text x="642" y="216">64</text></g>
+ <g class="scenario" id="node65"><circle class="node" cx="501" cy="48" r="12"/><text x="501" y="48">65</text></g>
+ <g class="scenario" id="node66"><circle class="node" cx="540" cy="48" r="12"/><text x="540" y="48">66</text></g>
+ <g class="scenario" id="node67"><circle class="node" cx="579" cy="48" r="12"/><text x="579" y="48">67</text></g>
+ <g class="scenario" id="node68"><circle class="node" cx="618" cy="48" r="12"/><text x="618" y="48">68</text></g>
+ <g class="scenario" id="node69"><circle class="node" cx="501" cy="84" r="12"/><text x="501" y="84">69</text><text x="501" y="84" class="required">!</text></g>
+ <g class="scenario" id="node70"><circle class="node" cx="540" cy="84" r="12"/><text x="540" y="84">70</text></g>
+ <g class="scenario" id="node71"><circle class="node" cx="501" cy="120" r="12"/><text x="501" y="120">71</text></g>
+ <g class="scenario" id="node72"><circle class="node" cx="540" cy="120" r="12"/><text x="540" y="120">72</text></g>
+ <g class="scenario" id="node73"><circle class="node" cx="579" cy="84" r="12"/><text x="579" y="84">73</text></g>
+ <g class="scenario" id="node74"><circle class="node" cx="618" cy="84" r="12"/><text x="618" y="84">74</text></g>
+ <g class="scenario" id="node75"><circle class="node" cx="597" cy="120" r="12"/><text x="597" y="120">75</text><text x="597" y="120" class="blocked">×</text></g>
+ <g class="scenario" id="node76"><circle class="node" cx="639" cy="120" r="12"/><text x="639" y="120">76</text><text x="639" y="120" class="blocked">×</text></g>
+ <g class="scenario" id="node77"><circle class="node" cx="618" cy="153" r="12"/><text x="618" y="153">77</text></g>
+ <g class="scenario" id="node78"><circle class="node" cx="36" cy="537" r="12"/><text x="36" y="537">78</text></g>
+ <g class="scenario" id="node79"><circle class="node" cx="36" cy="576" r="12"/><text x="36" y="576">79</text></g>
+ <g class="scenario" id="node80"><circle class="node" cx="36" cy="615" r="12"/><text x="36" y="615">80</text></g>
+ <g class="scenario" id="node81"><circle class="node" cx="486" cy="444" r="12"/><text x="486" y="444">81</text></g>
+ <g class="scenario" id="node82"><circle class="node" cx="486" cy="483" r="12"/><text x="486" y="483">82</text></g>
+ <g class="scenario" id="node83"><circle class="node" cx="75" cy="537" r="12"/><text x="75" y="537">83</text></g>
+ <g class="scenario" id="node84"><circle class="node" cx="75" cy="576" r="12"/><text x="75" y="576">84</text></g>
+ <g class="scenario" id="node85"><circle class="node" cx="75" cy="615" r="12"/><text x="75" y="615">85</text></g>
+ <g class="scenario" id="node86"><circle class="node" cx="114" cy="537" r="12"/><text x="114" y="537">86</text></g>
+ <g class="scenario" id="node87"><circle class="node" cx="114" cy="576" r="12"/><text x="114" y="576">87</text></g>
+ <g class="scenario" id="node88"><circle class="node" cx="114" cy="615" r="12"/><text x="114" y="615">88</text></g>
+ <g class="scenario" id="node89"><circle class="node" cx="153" cy="537" r="12"/><text x="153" y="537">89</text></g>
+ <g class="scenario" id="node90"><circle class="node" cx="153" cy="576" r="12"/><text x="153" y="576">90</text></g>
+ <g class="scenario" id="node91"><circle class="node" cx="153" cy="615" r="12"/><text x="153" y="615">91</text></g>
+ <g class="scenario" id="node92"><circle class="node" cx="192" cy="537" r="12"/><text x="192" y="537">92</text></g>
+ <g class="scenario" id="node93"><circle class="node" cx="192" cy="576" r="12"/><text x="192" y="576">93</text></g>
+ <g class="scenario" id="node94"><circle class="node" cx="192" cy="615" r="12"/><text x="192" y="615">94</text></g>
+ <g class="scenario" id="node95"><circle class="node" cx="231" cy="615" r="12"/><text x="231" y="615">95</text></g>
+ <g class="scenario" id="node96"><circle class="node" cx="231" cy="537" r="12"/><text x="231" y="537">96</text></g>
+ <g class="scenario" id="node97"><circle class="node" cx="270" cy="537" r="12"/><text x="270" y="537">97</text></g>
+ <g class="scenario" id="node98"><circle class="node" cx="309" cy="537" r="12"/><text x="309" y="537">98</text></g>
+ <g class="scenario" id="node99"><circle class="node" cx="231" cy="576" r="12"/><text x="231" y="576">99</text></g>
+ <g class="scenario" id="node100"><circle class="node" cx="270" cy="576" r="12"/><text x="270" y="576">100</text></g>
+ <g class="scenario" id="node101"><circle class="node" cx="309" cy="576" r="12"/><text x="309" y="576">101</text><text x="309" y="576" class="required">!</text></g>
+ <g class="scenario" id="node102"><circle class="node" cx="309" cy="615" r="12"/><text x="309" y="615">102</text></g>
+ <g class="scenario" id="node103"><circle class="node" cx="270" cy="615" r="12"/><text x="270" y="615">103</text></g>
+ <g class="scenario" id="node104"><circle class="node" cx="564" cy="294" r="12"/><text x="564" y="294">104</text></g>
+ <g class="scenario" id="node105"><circle class="node" cx="603" cy="294" r="12"/><text x="603" y="294">105</text></g>
+ <g class="scenario" id="node106"><circle class="node" cx="642" cy="294" r="12"/><text x="642" y="294">106</text></g>
+ <g class="scenario" id="node107"><circle class="node" cx="564" cy="330" r="12"/><text x="564" y="330">107</text></g>
+ <g class="scenario" id="node108"><circle class="node" cx="603" cy="330" r="12"/><text x="603" y="330">108</text></g>
+ <g class="scenario" id="node109"><circle class="node" cx="642" cy="330" r="12"/><text x="642" y="330">109</text></g>
+ <g class="scenario" id="node110"><circle class="node" cx="564" cy="366" r="12"/><text x="564" y="366">110</text></g>
+ <g class="scenario" id="node111"><circle class="node" cx="603" cy="366" r="12"/><text x="603" y="366">111</text></g>
+ <g class="scenario" id="node112"><circle class="node" cx="642" cy="366" r="12"/><text x="642" y="366">112</text></g>
+ <g class="scenario" id="node113"><circle class="node" cx="525" cy="444" r="12"/><text x="525" y="444">113</text></g>
+ <g class="scenario" id="node114"><circle class="node" cx="564" cy="444" r="12"/><text x="564" y="444">114</text></g>
+ <g class="scenario" id="node115"><circle class="node" cx="603" cy="444" r="12"/><text x="603" y="444">115</text></g>
+ <g class="scenario" id="node116"><circle class="node" cx="642" cy="444" r="12"/><text x="642" y="444">116</text></g>
+ <g class="scenario" id="node117"><circle class="node" cx="525" cy="483" r="12"/><text x="525" y="483">117</text></g>
+ <g class="scenario" id="node118"><circle class="node" cx="564" cy="483" r="12"/><text x="564" y="483">118</text></g>
+ <g class="scenario" id="node119"><circle class="node" cx="603" cy="483" r="12"/><text x="603" y="483">119</text><text x="603" y="483" class="required">!</text></g>
+ <g class="scenario" id="node120"><circle class="node" cx="642" cy="483" r="12"/><text x="642" y="483">120</text></g>
+ <g class="scenario" id="node121"><circle class="node" cx="642" cy="522" r="12"/><text x="642" y="522">121</text></g>
+ <g class="scenario" id="node122"><circle class="node" cx="486" cy="522" r="12"/><text x="486" y="522">122</text></g>
+ <g class="scenario" id="node123"><circle class="node" cx="525" cy="522" r="12"/><text x="525" y="522">123</text></g>
+ <g class="scenario" id="node124"><circle class="node" cx="564" cy="522" r="12"/><text x="564" y="522">124</text></g>
+ <g class="scenario" id="node125"><circle class="node" cx="603" cy="522" r="12"/><text x="603" y="522">125</text></g>
+ <g class="scenario" id="node126"><circle class="node" cx="486" cy="561" r="12"/><text x="486" y="561">126</text></g>
+ <g class="scenario" id="node127"><circle class="node" cx="525" cy="561" r="12"/><text x="525" y="561">127</text></g>
+ <g class="scenario" id="node128"><circle class="node" cx="564" cy="561" r="12"/><text x="564" y="561">128</text></g>
+ <g class="scenario" id="node129"><circle class="node" cx="603" cy="561" r="12"/><text x="603" y="561">129</text></g>
+ <g class="scenario" id="node130"><circle class="node" cx="642" cy="561" r="12"/><text x="642" y="561">130</text></g>
+ <g class="scenario" id="node131"><circle class="node" cx="486" cy="600" r="12"/><text x="486" y="600">131</text></g>
+ <g class="scenario" id="node132"><circle class="node" cx="348" cy="537" r="12"/><text x="348" y="537">132</text></g>
+ <g class="scenario" id="node133"><circle class="node" cx="348" cy="576" r="12"/><text x="348" y="576">133</text></g>
+ <g class="scenario" id="node134"><circle class="node" cx="525" cy="600" r="12"/><text x="525" y="600">134</text><text x="525" y="600" class="required">!</text></g>
+ <g class="scenario" id="node135"><circle class="node" cx="564" cy="600" r="12"/><text x="564" y="600">135</text></g>
+ <g class="scenario" id="node136"><circle class="node" cx="603" cy="600" r="12"/><text x="603" y="600">136</text></g>
+ <g class="scenario" id="node137"><circle class="node" cx="642" cy="600" r="12"/><text x="642" y="600">137</text></g>
+</svg>
