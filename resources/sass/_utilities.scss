@@ -6,7 +6,7 @@
     filter: grayscale(100);
 }
 
-@for $i from 0 through 40 {
+@for $i from 0 through 100 {
     .order-#{$i} {
         order: $i;
     }

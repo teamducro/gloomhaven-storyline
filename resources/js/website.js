@@ -9,6 +9,8 @@ import Alert from "./components/elements/Alert";
 import EmailMe from "./components/elements/EmailMe";
 import InlineSvg from "./components/elements/InlineSvg";
 import Purchase from "./components/elements/Purchase";
+import Modal from "./components/modals/Modal";
+import Checkbox from "./components/elements/Checkbox";
 import ShareIcons from "./components/elements/ShareIcons";
 import Toast from "./components/elements/Toast";
 import Webp from "./components/elements/Webp";
@@ -16,6 +18,8 @@ import TopMenu from "./pages/sections/TopMenu";
 import SiteFooter from "./pages/sections/SiteFooter";
 import BecomePatronButton from "./components/elements/BecomePatronButton";
 import Vue from 'vue';
+import VueI18n from "vue-i18n";
+import i18nEn from "./lang/en/en";
 
 window.Vue = Vue;
 window.axios = require('axios').default.create({
@@ -32,6 +36,8 @@ Vue.component('alert', Alert);
 Vue.component('email-me', EmailMe);
 Vue.component('inline-svg', InlineSvg);
 Vue.component('purchase', Purchase);
+Vue.component('modal', Modal);
+Vue.component('checkbox', Checkbox);
 Vue.component('share-icons', ShareIcons);
 Vue.component('toast', Toast);
 Vue.component('webp', Webp);
@@ -58,12 +64,29 @@ if (Helpers.inProduction() && process.env.MIX_GA_ID) {
     });
 }
 
+// Multi Language
+Vue.use(VueI18n);
+window.i18n = new VueI18n({
+    locale: 'en',
+    fallbackLocale: 'en',
+    messages: {
+        en: i18nEn
+    },
+    silentTranslationWarn: true
+});
+
 // event bus
 Vue.prototype.$bus = new Vue;
 
 window.app = new Vue({
     router,
+    i18n,
     el: '#app',
+    provide() {
+        return {
+            appData: {}
+        }
+    },
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,

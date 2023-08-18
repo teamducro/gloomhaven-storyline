@@ -1,5 +1,6 @@
 <template v-if="game">
-    <party-jotl v-if="game === 'jotl'"></party-jotl>
+    <party-fh v-if="game === 'fh'"></party-fh>
+    <party-jotl v-else-if="game === 'jotl'"></party-jotl>
     <party-cs v-else-if="game === 'cs'"></party-cs>
     <party-gh v-else></party-gh>
 </template>
@@ -9,10 +10,11 @@
 import PartyJotl from "./PartyJotl";
 import PartyGh from "./PartyGh";
 import PartyCs from "./PartyCs";
+import PartyFh from "./PartyFh";
 
 export default {
     inject: ['appData'],
-    components: {PartyJotl, PartyGh, PartyCs},
+    components: {PartyFh, PartyJotl, PartyGh, PartyCs},
     data() {
         return {
             game: null

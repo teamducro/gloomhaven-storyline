@@ -350,5 +350,179 @@ export default {
             "Experience twenty rounds where, during or after your perform an action with a {CONSUMED}, an enemy dies.",
             "Conclude {SCENARIO RM3}.",
         ]
+    },
+    "fh-1": {
+        "name": "The Study of Plants",
+        "building_unlocks": [24, 42],
+        "progress": [
+            "Personally collect five different types of herbs through loot tokens.",
+        ]
+    },
+    "fh-2": {
+        "name": "Searching for the Oak",
+        "building_unlocks": [24, 42],
+        "progress": [
+            "Personally loot eight total lumber cards through loot tokens.",
+            "Unlock {SCENARIO 69} and follow it to a conclusion.",
+        ]
+    },
+    "fh-3": {
+        "name": "Merchant Class",
+        "building_unlocks": [37, 74],
+        "progress": [
+            "Own 3 {HEAD} items.",
+            "Own 3 {BODY} items.",
+            "Own 3 {LEGS} items.",
+            "Own 3 {ONE-HAND} and/or {TWO-HANDS} items.",
+            "Own 4 {SMALL-ITEM} items.",
+        ]
+    },
+    "fh-4": {
+        "name": "Greed is Good",
+        "building_unlocks": [37, 74],
+        "progress": [
+            "Have 80+20xL gold in your possession, where L is the prosperity level.",
+        ]
+    },
+    "fh-5": {
+        "name": "Build, not Destroy",
+        "building_unlocks": [85, 21],
+        "progress": [
+            "Experience the construction of twelve different buildings or building upgrades.",
+        ]
+    },
+    "fh-6": {
+        "name": "Team Building",
+        "building_unlocks": [85, 21],
+        "progress": [
+            "During eight different outpost phases, read a person's name in an event or section.",
+        ]
+    },
+    "fh-7": {
+        "name": "Aesther Outpost",
+        "building_unlocks": [44, 88],
+        "progress": [
+            "Immediately unlock {SCENARIO 65}.",
+            "Follow {SCENARIO 65} to a conclusion.",
+        ]
+    },
+    "fh-8": {
+        "name": "Dangerous Game",
+        "building_unlocks": [44, 88],
+        "progress": [
+            "Kill two Algox Guards.",
+            "Kill two Lurker Clawcrushers.",
+            "Kill two Robotic Boltshooters.",
+        ]
+    },
+    "fh-9": {
+        "name": "Life Lessons",
+        "building_unlocks": [90, 83],
+        "progress": [
+            "Gain 150 experience from ability cards.",
+        ]
+    },
+    "fh-10": {
+        "name": "Explore the Reaches",
+        "building_unlocks": [90, 83],
+        "progress": [
+            "Comlete five different scenarios that require {BOAT}, {CLIMBING_GEAR}, or {SLED}.",
+        ]
+    },
+    "fh-11": {
+        "name": "Refined Tastes",
+        "building_unlocks": [39, 72],
+        "progress": [
+            "Own items whose crafting costs include a total of at least fifteen items.",
+        ]
+    },
+    "fh-12": {
+        "name": "Threat from the Deep",
+        "building_unlocks": [90, 42],
+        "progress": [
+            "Immediately unlock {SCENARIO 71}.",
+            "Follow {SCENARIO 71} to a conclusion.",
+        ]
+    },
+    "fh-13": {
+        "name": "End the Trickery",
+        "building_unlocks": [44, 74],
+        "progress": [
+            "Kill fifteem Imps.",
+        ]
+    },
+    "fh-14": {
+        "name": "Eternal Wanderer",
+        "building_unlocks": [37, 72],
+        "progress": [
+            "Complete a scenario in the Whitefire Wood.",
+            "Complete a scenario in the Copperneck Mountains.",
+            "Complete a scenario in the Radiant Forest.",
+            "Complete a scenario in the Crystal Fields.",
+            "Complete a scenario in the Biting Sea.",
+        ]
+    },
+    "fh-15": {
+        "name": "Continued Prosperity",
+        "building_unlocks": [65, 85],
+        "progress": [
+            "Donate 70 gold to the Temple of the Great Oak.",
+        ]
+    },
+    "fh-16": {
+        "name": "Prepared for the Worst",
+        "building_unlocks": [85, 88],
+        "progress": [
+            "Purchase five enhancements.",
+        ]
+    },
+    "fh-17": {
+        "name": "Battle Legend",
+        "building_unlocks": [81, 67],
+        "progress": [
+            "Earn 16 {CHECK} from completed battle goals.",
+        ]
+    },
+    "fh-18": {
+        "name": "Let Them Be",
+        "building_unlocks": [44, 67],
+        "progress": [
+            "Complete eight side scenarios (numbered 65 or higher).",
+        ]
+    },
+    "fh-19": {
+        "name": "Quiet the Dead Places",
+        "building_unlocks": [81, 67],
+        "progress": [
+            "Gain “Abyss Axe” (Item 039) blueprint and use it to kill ten Frozen Corpses, Ice Wraiths, and/or Living Dooms.",
+        ]
+    },
+    "fh-20": {
+        "name": "Return to Simplicity",
+        "building_unlocks": [24, 21],
+        "progress": [
+            "Kill fifteen Ruined Machines.",
+        ]
+    },
+    "fh-21": {
+        "name": "The Study of Life",
+        "building_unlocks": [39, 72],
+        "progress": [
+            "Capture 8 enemies.",
+        ]
+    },
+    "fh-22": {
+        "name": "The Greatest Challenge",
+        "building_unlocks": [37, 83],
+        "progress": [
+            "Complete twelve challenges.",
+        ]
+    },
+    "fh-23": {
+        "name": "The Chosen One",
+        "unlock": "Open envelope A",
+        "progress": [
+            "Experience 10 allies exhaust during scenarios you otherwise complete.",
+        ]
     }
 }

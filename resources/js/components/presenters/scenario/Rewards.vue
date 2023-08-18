@@ -5,7 +5,7 @@
             {{ $tc('Reward', rewards.length) }}
         </h2>
         <!--        <add-links-and-icons :text="scenario.rewards.join(', ')"/>-->
-        <add-links-and-icons :text="rewards.join(', ')"/>
+        <add-links-and-icons :text="rewards.join(', ')" class="inline-icons"/>
     </div>
 </template>
 
@@ -26,3 +26,9 @@ export default {
     }
 }
 </script>
+
+<style scoped lang="scss">
+.inline-icons ::v-deep div, .inline-icons ::v-deep svg {
+    display: inline;
+}
+</style>

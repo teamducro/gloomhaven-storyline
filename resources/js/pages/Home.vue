@@ -191,9 +191,8 @@
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
-                            Forgotten circles, Jaws of the Lion and Crimson Scales <span
-                            class="text-xs">(Beta)</span> can be tracked
-                            in Gloomhaven Storyline.
+                            Frosthaven, Forgotten circles, Jaws of the Lion and Crimson Scales
+                            can be tracked in Gloomhaven Storyline.
                         </p>
                         <p class="text-gray-500 mb-2">
                             Solo scenarios of all the unlockable characters are also included!
@@ -325,7 +324,6 @@
                         <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
                             <inline-svg src="icons/cs" :classes="['w-6', 'h-6', 'mr-2']"/>
                             Crimson Scales
-                            <span class="text-xs ml-2">(Beta)</span>
                         </div>
                         <p class="text-gray-800 px-6">
                             The unofficial fanmade expansion Crimson Scales is available in the tracker!

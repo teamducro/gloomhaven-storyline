@@ -7,11 +7,12 @@ class Item {
         this.id = game + '-' + data.id;
         this.number = '#' + String(data.id).padStart(3, '0');
         this._name = data.name;
-        this.cost = data.cost;
+        this.cost = data.cost || data.resources;
         this.count = data.count;
         this._slot = data.slot;
         this._source = data.source;
         this._desc = data.desc;
+        this._backDesc = data.backDesc;
         this.minusOneCardsAdded = data.minusOneCardsAdded || 0;
         this._faq = data.faq;
         this.spent = data.spent || false;
@@ -26,6 +27,10 @@ class Item {
 
     get desc() {
         return this.$tPrefix('desc');
+    }
+
+    get backDesc() {
+        return this._backDesc && this.$tPrefix('backDesc');
     }
 
     get source() {
@@ -46,6 +51,7 @@ class Item {
     }
 
     get slot() {
+        if (!this._slot) { return ''; }
         return '/img/icons/equipment/' + slugify(this._slot, {lower: true}) + '.png';
     }
 
@@ -55,6 +61,10 @@ class Item {
 
     get image() {
         return '/img/items/' + this.game + '/' + this.code + '.jpg';
+    }
+
+    get backImage() {
+        return this._backDesc && '/img/items/' + this.game + '/' + this.code + '-back.jpg';
     }
 
     get game() {

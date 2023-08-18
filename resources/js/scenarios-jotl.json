@@ -31,9 +31,9 @@
             "links_to": [
                 3
             ],
-            "treasures": {
-                "14": "Gain 3 money tokens"
-            },
+            "treasures": [
+                14
+            ],
             "rewards": [
                 "25 gold each",
                 "Add items 1-13 to the shop"
@@ -55,9 +55,9 @@
             "links_to": [
                 4
             ],
-            "treasures": {
-                "10": "“Fateful Compass” (Item 27)"
-            },
+            "treasures": [
+                10
+            ],
             "rewards": [
                 "1 ✔ each"
             ]
@@ -78,9 +78,9 @@
             "links_to": [
                 5
             ],
-            "treasures": {
-                "16": "“Mana Potion” (Item 14)"
-            },
+            "treasures": [
+                16
+            ],
             "rewards": [
                 "“Mana Potion” (Item 14)"
             ]
@@ -101,9 +101,9 @@
             "links_to": [
                 6
             ],
-            "treasures": {
-                "9": "Gain 5 gold"
-            },
+            "treasures": [
+                9
+            ],
             "rewards": [
                 "25 experience each"
             ]
@@ -152,9 +152,9 @@
             "links_to": [
                 9
             ],
-            "treasures": {
-                "12": "Gain 5 gold"
-            },
+            "treasures": [
+                12
+            ],
             "rewards": [
                 "20 experience each"
             ]
@@ -182,9 +182,9 @@
             "links_to": [
                 9
             ],
-            "treasures": {
-                "4": "Gain 5 gold"
-            }
+            "treasures": [
+                4
+            ]
         },
         {
             "id": 9,
@@ -210,9 +210,9 @@
             "links_to": [
                 10
             ],
-            "treasures": {
-                "1": "Gain 10 experience"
-            },
+            "treasures": [
+                1
+            ],
             "rewards": [
                 "20 experience each",
                 "Add items 15-20 to the shop"
@@ -235,9 +235,9 @@
                 11,
                 12
             ],
-            "treasures": {
-                "8": "Suffer 3 damage, gain {POISON}"
-            },
+            "treasures": [
+                8
+            ],
             "rewards": [
                 "15 experience each"
             ]
@@ -314,9 +314,9 @@
             "links_to": [
                 15
             ],
-            "treasures": {
-                "5": "Gain 1 ✔"
-            },
+            "treasures": [
+                5
+            ],
             "rewards": [
                 "1 ✔ each"
             ]
@@ -337,9 +337,9 @@
             "links_to": [
                 15
             ],
-            "treasures": {
-                "15": "Gain 1 ✔"
-            },
+            "treasures": [
+                15
+            ],
             "rewards": [
                 "1 ✔ each"
             ]
@@ -400,9 +400,9 @@
             "linked_from": [
                 16
             ],
-            "treasures": {
-                "3": "Gain 15 experience"
-            },
+            "treasures": [
+                3
+            ],
             "rewards": [
                 "25 experience each",
                 "30 gold each"
@@ -421,12 +421,12 @@
             "linked_from": [
                 12
             ],
-            "treasures": {
-                "2": "“Ring of Strength” (Item 31)",
-                "6": "Gain 10 gold",
-                "7": "Gain 5 gold",
-                "13": "Gain 5 gold"
-            },
+            "treasures": [
+                2,
+                6,
+                7,
+                13
+            ],
             "rewards": [
                 "10 experience each"
             ]
@@ -459,9 +459,9 @@
             },
             "is_side": true,
             "chapter_id": 3,
-            "treasures": {
-                "X": "“Ring of Restoration” (Item 32)"
-            },
+            "treasures": [
+                "X"
+            ],
             "rewards": [
                 "10 gold each"
             ]
@@ -477,9 +477,9 @@
             },
             "is_side": true,
             "chapter_id": 3,
-            "treasures": {
-                "11": "“Ring of Haste” (Item 30)"
-            },
+            "treasures": [
+                11
+            ],
             "rewards": [
                 "15 gold each"
             ]

@@ -20,9 +20,9 @@
             "quests": [
                 1
             ],
-            "treasures": {
-                "7": "Random Side Scenario"
-            },
+            "treasures": [
+                7
+            ],
             "achievements_awarded": [
                 "PFS"
             ]
@@ -59,9 +59,9 @@
             "quests": [
                 1
             ],
-            "treasures": {
-                "67": "Gain 10 Gold"
-            },
+            "treasures": [
+                67
+            ],
             "rewards": [
                 "10 gold each",
                 "+1 prosperity"
@@ -106,9 +106,9 @@
             "quests": [
                 2
             ],
-            "treasures": {
-                "65": "“Horned Helm” design (Item 107)"
-            },
+            "treasures": [
+                65
+            ],
             "region_ids": [
                 2
             ],
@@ -142,10 +142,10 @@
             "quests": [
                 3
             ],
-            "treasures": {
-                "38": "“Ring of Skulls” design (Item 123)",
-                "46": "Suffer 3 damage and gain {POISON}"
-            },
+            "treasures": [
+                38,
+                46
+            ],
             "region_ids": [
                 7
             ]
@@ -174,10 +174,10 @@
             "quests": [
                 4
             ],
-            "treasures": {
-                "4": "Gain 15 Gold",
-                "28": "Gain 15 Gold"
-            },
+            "treasures": [
+                4,
+                28
+            ],
             "region_ids": [
                 7
             ]
@@ -205,9 +205,9 @@
             "quests": [
                 3
             ],
-            "treasures": {
-                "50": "Gain “Second Skin” (Item 101)"
-            },
+            "treasures": [
+                50
+            ],
             "region_ids": [
                 7
             ],
@@ -298,9 +298,9 @@
             "quests": [
                 6
             ],
-            "treasures": {
-                "51": "Random Side Scenario"
-            },
+            "treasures": [
+                51
+            ],
             "region_ids": [
                 1
             ],
@@ -398,9 +398,9 @@
             "quests": [
                 8
             ],
-            "treasures": {
-                "11": "Random Item Design"
-            },
+            "treasures": [
+                11
+            ],
             "achievements_awarded": [
                 "PADE"
             ]
@@ -445,9 +445,9 @@
             "quests": [
                 10
             ],
-            "treasures": {
-                "5": " Gain “Chainmail” (Item 023)"
-            },
+            "treasures": [
+                5
+            ],
             "region_ids": [
                 1
             ],
@@ -503,9 +503,9 @@
             "quests": [
                 11
             ],
-            "treasures": {
-                "34": "Gain “Amulet of Life” (Item 024)"
-            },
+            "treasures": [
+                34
+            ],
             "region_ids": [
                 1
             ],
@@ -546,9 +546,9 @@
             "quests": [
                 12
             ],
-            "treasures": {
-                "10": "Gain 10 Experience"
-            },
+            "treasures": [
+                10
+            ],
             "region_ids": [
                 4
             ]
@@ -574,9 +574,9 @@
             "quests": [
                 13
             ],
-            "treasures": {
-                "26": "Gain 20 Gold"
-            },
+            "treasures": [
+                26
+            ],
             "region_ids": [
                 5
             ],
@@ -636,9 +636,9 @@
             "quests": [
                 15
             ],
-            "treasures": {
-                "1": "Random Item Design"
-            },
+            "treasures": [
+                1
+            ],
             "region_ids": [
                 5
             ]
@@ -662,9 +662,9 @@
             "quests": [
                 16
             ],
-            "treasures": {
-                "71": "Random Side Scenario"
-            },
+            "treasures": [
+                71
+            ],
             "treasures_from": [
                 37
             ],
@@ -702,9 +702,9 @@
             "quests": [
                 17
             ],
-            "treasures": {
-                "63": "Random Item Design"
-            },
+            "treasures": [
+                63
+            ],
             "region_ids": [
                 1
             ]
@@ -740,9 +740,9 @@
             "quests": [
                 18
             ],
-            "treasures": {
-                "17": "Gain 20 Gold"
-            },
+            "treasures": [
+                17
+            ],
             "region_ids": [
                 3,
                 7
@@ -788,9 +788,9 @@
             "quests": [
                 9
             ],
-            "treasures": {
-                "60": "Gain “Skullbane Axe” (Item 113)"
-            },
+            "treasures": [
+                60
+            ],
             "rewards": [
                 "20 gold each",
                 "+2 reputation",
@@ -832,9 +832,9 @@
             "quests": [
                 19
             ],
-            "treasures": {
-                "15": "Gain “Pendant of Dark Pacts” (Item 045)"
-            },
+            "treasures": [
+                15
+            ],
             "achievements_awarded": [
                 "GTRN",
                 "GAR2"
@@ -884,9 +884,9 @@
                 20,
                 28
             ],
-            "treasures": {
-                "21": "Suffer 5 Damage"
-            },
+            "treasures": [
+                21
+            ],
             "achievements_awarded": [
                 "GAR"
             ]
@@ -914,10 +914,10 @@
             "quests": [
                 21
             ],
-            "treasures": {
-                "39": "Suffer 5 damage",
-                "72": "“Fueled Falchion” design (Item 116)"
-            },
+            "treasures": [
+                39,
+                72
+            ],
             "region_ids": [
                 1
             ],
@@ -950,9 +950,9 @@
             "quests": [
                 22
             ],
-            "treasures": {
-                "70": "Random Side Scenario"
-            },
+            "treasures": [
+                70
+            ],
             "region_ids": [
                 5
             ],
@@ -984,9 +984,9 @@
             "quests": [
                 15
             ],
-            "treasures": {
-                "58": "Gain “Drakescale Helm” (Item 108)"
-            },
+            "treasures": [
+                58
+            ],
             "region_ids": [
                 5
             ],
@@ -1031,9 +1031,9 @@
             "quests": [
                 17
             ],
-            "treasures": {
-                "66": "Gain “Volatile Bomb” (Item 033)"
-            },
+            "treasures": [
+                66
+            ],
             "region_ids": [
                 1
             ],
@@ -1115,9 +1115,9 @@
             "quests": [
                 3
             ],
-            "treasures": {
-                "32": "Random Item Design"
-            },
+            "treasures": [
+                32
+            ],
             "region_ids": [
                 2
             ],
@@ -1152,9 +1152,9 @@
             "quests": [
                 3
             ],
-            "treasures": {
-                "41": "Gain “Black Knife” (Item 053)"
-            },
+            "treasures": [
+                41
+            ],
             "region_ids": [
                 2
             ],
@@ -1261,9 +1261,9 @@
             "quests": [
                 24
             ],
-            "treasures": {
-                "69": "Gain “Robes of Summoning” (Item 100)"
-            },
+            "treasures": [
+                69
+            ],
             "region_ids": [
                 1
             ],
@@ -1401,9 +1401,9 @@
             "quests": [
                 27
             ],
-            "treasures": {
-                "23": "Gain “Drakescale Armor” (Item 103)"
-            },
+            "treasures": [
+                23
+            ],
             "region_ids": [
                 5
             ],
@@ -1466,9 +1466,9 @@
             "quests": [
                 28
             ],
-            "treasures": {
-                "61": "Gain “Versatile Dagger” (Item 040)"
-            },
+            "treasures": [
+                61
+            ],
             "region_ids": [
                 1
             ],
@@ -1530,9 +1530,9 @@
             "quests": [
                 28
             ],
-            "treasures": {
-                "2": "Gain “Tower Shield” (Item 032)"
-            },
+            "treasures": [
+                2
+            ],
             "region_ids": [
                 1
             ],
@@ -1578,9 +1578,9 @@
             "quests": [
                 30
             ],
-            "treasures": {
-                "49": "New Scenario: Lost Island (Scenario 17 at K-17)"
-            },
+            "treasures": [
+                49
+            ],
             "treasures_to": {
                 "49": [
                     17
@@ -1617,9 +1617,9 @@
             "quests": [
                 31
             ],
-            "treasures": {
-                "29": "Gain “Endurance Footwraps” (Item 097)"
-            },
+            "treasures": [
+                29
+            ],
             "region_ids": [
                 2
             ],
@@ -1654,9 +1654,9 @@
             "quests": [
                 32
             ],
-            "treasures": {
-                "73": "Random Item Design"
-            },
+            "treasures": [
+                73
+            ],
             "region_ids": [
                 5
             ],
@@ -1706,9 +1706,9 @@
             "quests": [
                 25
             ],
-            "treasures": {
-                "47": "Gain “Steam Armor” (Item 104)"
-            },
+            "treasures": [
+                47
+            ],
             "region_ids": [
                 5
             ],
@@ -1751,9 +1751,9 @@
             "quests": [
                 25
             ],
-            "treasures": {
-                "24": "Suffer 5 damage"
-            },
+            "treasures": [
+                24
+            ],
             "region_ids": [
                 5
             ],
@@ -1804,10 +1804,10 @@
             "quests": [
                 33
             ],
-            "treasures": {
-                "30": "Gain 1 ✔",
-                "55": "Gain 1 ✔"
-            },
+            "treasures": [
+                30,
+                55
+            ],
             "region_ids": [
                 5
             ],
@@ -1849,9 +1849,9 @@
             "quests": [
                 34
             ],
-            "treasures": {
-                "35": "Gain “Drakescale Boots” (Item 098)"
-            },
+            "treasures": [
+                35
+            ],
             "region_ids": [
                 2
             ],
@@ -1926,9 +1926,9 @@
             "quests": [
                 36
             ],
-            "treasures": {
-                "74": "Random Item Design"
-            },
+            "treasures": [
+                74
+            ],
             "region_ids": [
                 3
             ],
@@ -1967,9 +1967,9 @@
             "quests": [
                 32
             ],
-            "treasures": {
-                "48": "Gain 30 gold"
-            },
+            "treasures": [
+                48
+            ],
             "region_ids": [
                 5
             ],
@@ -2007,10 +2007,10 @@
             "quests": [
                 30
             ],
-            "treasures": {
-                "18": "Gain 15 gold",
-                "57": "Gain 15 gold"
-            },
+            "treasures": [
+                18,
+                57
+            ],
             "region_ids": [
                 6
             ],
@@ -2048,9 +2048,9 @@
             "quests": [
                 31
             ],
-            "treasures": {
-                "64": "Gain 30 gold"
-            },
+            "treasures": [
+                64
+            ],
             "region_ids": [
                 2
             ],
@@ -2092,9 +2092,9 @@
             "quests": [
                 37
             ],
-            "treasures": {
-                "44": "Random Side Scenario"
-            },
+            "treasures": [
+                44
+            ],
             "region_ids": [
                 3
             ],
@@ -2184,9 +2184,9 @@
             "quests": [
                 39
             ],
-            "treasures": {
-                "56": "Gain “Star Earring” (Item 069)"
-            },
+            "treasures": [
+                56
+            ],
             "region_ids": [
                 1
             ],
@@ -2247,9 +2247,9 @@
             "linked_from": [
                 52
             ],
-            "treasures": {
-                "31": "Random Item Design"
-            },
+            "treasures": [
+                31
+            ],
             "region_ids": [
                 7
             ],
@@ -2277,9 +2277,9 @@
             "linked_from": [
                 53
             ],
-            "treasures": {
-                "25": "Gain 25 gold"
-            },
+            "treasures": [
+                25
+            ],
             "region_ids": [
                 5
             ],
@@ -2337,9 +2337,9 @@
             "linked_from": [
                 55
             ],
-            "treasures": {
-                "45": "Random Item Design"
-            },
+            "treasures": [
+                45
+            ],
             "region_ids": [
                 2
             ],
@@ -2371,10 +2371,10 @@
             "links_to": [
                 58
             ],
-            "treasures": {
-                "3": "Gain “Splintmail” (Item 044)",
-                "22": "Random Item Design"
-            },
+            "treasures": [
+                3,
+                22
+            ],
             "region_ids": [
                 1
             ],
@@ -2512,9 +2512,9 @@
             "linked_from": [
                 61
             ],
-            "treasures": {
-                "59": "Random Item Design"
-            },
+            "treasures": [
+                59
+            ],
             "region_ids": [
                 3
             ],
@@ -2541,9 +2541,9 @@
                 "gh/81"
             ],
             "chapter_id": 102,
-            "treasures": {
-                "12": "Gain “Magma Waders” (Item 099)"
-            },
+            "treasures": [
+                12
+            ],
             "region_ids": [
                 4
             ],
@@ -2573,9 +2573,9 @@
                 }
             ],
             "chapter_id": 102,
-            "treasures": {
-                "9": "Gain “Wave Crest” (Item 111)"
-            },
+            "treasures": [
+                9
+            ],
             "region_ids": [
                 6
             ],
@@ -2623,10 +2623,10 @@
                 "gh/85"
             ],
             "chapter_id": 102,
-            "treasures": {
-                "16": "Gain 10 gold",
-                "36": "“Rocket Boots” design (Item 096)"
-            },
+            "treasures": [
+                16,
+                36
+            ],
             "region_ids": [
                 5
             ],
@@ -2648,9 +2648,9 @@
                 "gh/86"
             ],
             "chapter_id": 102,
-            "treasures": {
-                "14": "Gain 10 Experience"
-            },
+            "treasures": [
+                14
+            ],
             "achievements_awarded": [
                 "GAT"
             ],
@@ -2672,9 +2672,9 @@
                 "gh/87"
             ],
             "chapter_id": 102,
-            "treasures": {
-                "33": "Gain “Weighted Net” (Item 019)"
-            },
+            "treasures": [
+                33
+            ],
             "region_ids": [
                 3
             ],
@@ -2715,9 +2715,9 @@
                 "gh/90"
             ],
             "chapter_id": 102,
-            "treasures": {
-                "6": "Gain “Hooked Chain” (Item 039)"
-            },
+            "treasures": [
+                6
+            ],
             "region_ids": [
                 6
             ],
@@ -2812,9 +2812,9 @@
                 }
             ],
             "chapter_id": 105,
-            "treasures": {
-                "20": "Random Item Design"
-            },
+            "treasures": [
+                20
+            ],
             "region_ids": [
                 6
             ],
@@ -2848,9 +2848,9 @@
                 }
             ],
             "chapter_id": 105,
-            "treasures": {
-                "53": "Random Item Design"
-            },
+            "treasures": [
+                53
+            ],
             "cards": [
                 "C-77"
             ],
@@ -2874,9 +2874,9 @@
             ],
             "requirements": "Bravery",
             "chapter_id": 103,
-            "treasures": {
-                "75": "Cryptogram Found (See scenario book page 121)"
-            },
+            "treasures": [
+                75
+            ],
             "region_ids": [
                 4
             ]
@@ -2953,9 +2953,9 @@
                 }
             ],
             "chapter_id": 105,
-            "treasures": {
-                "52": "Gain “Heart of the Betrayer” (Item 131)"
-            },
+            "treasures": [
+                52
+            ],
             "region_ids": [
                 3
             ],
@@ -3007,9 +3007,9 @@
                 "gh/103"
             ],
             "chapter_id": 105,
-            "treasures": {
-                "68": "Gain “Helix Ring” (Item 130)"
-            },
+            "treasures": [
+                68
+            ],
             "region_ids": [
                 2
             ],
@@ -3034,9 +3034,9 @@
                 "gh/104"
             ],
             "chapter_id": 104,
-            "treasures": {
-                "62": "Gain “Helm of the Mountain” (Item 110) and “Mountain Hammer” (Item 115)"
-            },
+            "treasures": [
+                62
+            ],
             "region_ids": [
                 4
             ],
@@ -3108,9 +3108,9 @@
                 }
             ],
             "chapter_id": 103,
-            "treasures": {
-                "42": "Random Item Design"
-            },
+            "treasures": [
+                42
+            ],
             "region_ids": [
                 5
             ],
@@ -3207,9 +3207,9 @@
             "linked_from": [
                 86
             ],
-            "treasures": {
-                "40": "Random Item Design"
-            },
+            "treasures": [
+                40
+            ],
             "cards": [
                 "C-47"
             ],
@@ -3241,10 +3241,10 @@
                 }
             ],
             "chapter_id": 105,
-            "treasures": {
-                "8": "Gain 1 ✔",
-                "37": "Gain 1 ✔"
-            },
+            "treasures": [
+                8,
+                37
+            ],
             "region_ids": [
                 1
             ],
@@ -3278,11 +3278,11 @@
                 }
             ],
             "chapter_id": 105,
-            "treasures": {
-                "13": "Suffer 5 Damage and gain {POISON} and {WOUND}",
-                "27": "Gain “Orb of Twilight” (Item 122)",
-                "43": "Suffer 5 damage gain {POISON} and {WOUND}"
-            },
+            "treasures": [
+                13,
+                27,
+                43
+            ],
             "region_ids": [
                 1
             ],
@@ -3308,9 +3308,9 @@
                 "gh/113"
             ],
             "chapter_id": 104,
-            "treasures": {
-                "19": "Random Item Design"
-            },
+            "treasures": [
+                19
+            ],
             "cards": [
                 "R-44"
             ],
@@ -3399,9 +3399,9 @@
                 }
             ],
             "chapter_id": 105,
-            "treasures": {
-                "54": "Gain “Doomed Compass” (Item 124)"
-            },
+            "treasures": [
+                54
+            ],
             "region_ids": [
                 6
             ],
@@ -3717,9 +3717,9 @@
                 97
             ],
             "requirements": "End of Gloom (Global) COMPLETE",
-            "treasures": {
-                "91": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
-            },
+            "treasures": [
+                91
+            ],
             "achievements_awarded": [
                 "GTTP"
             ],
@@ -3802,9 +3802,9 @@
             "linked_from": [
                 97
             ],
-            "treasures": {
-                "79": "Gain “Falcon Figurine” (Item 157)"
-            },
+            "treasures": [
+                79
+            ],
             "achievements_awarded": [
                 "GKIP"
             ],
@@ -3866,9 +3866,9 @@
             "linked_from": [
                 97
             ],
-            "treasures": {
-                "95": "Gain 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
-            },
+            "treasures": [
+                95
+            ],
             "achievements_awarded": [
                 "GKIP"
             ],
@@ -3921,10 +3921,10 @@
             "linked_from": [
                 97
             ],
-            "treasures": {
-                "76": "Suffer 3 damage, gain {WOUND} and 10 gold",
-                "85": "Suffer 3 damage, gain {POISON} and 10 gold"
-            },
+            "treasures": [
+                76,
+                85
+            ],
             "choices": [
                 106,
                 107
@@ -3978,9 +3978,9 @@
             "achievements_awarded": [
                 "GKIP"
             ],
-            "treasures": {
-                "93": "Gain “Scroll of Haste” (Item 159)"
-            },
+            "treasures": [
+                93
+            ],
             "rewards": [
                 "20 collective gold",
                 "+1 reputation",
@@ -4038,10 +4038,10 @@
             "linked_from": [
                 98
             ],
-            "treasures": {
-                "77": "Gain “Major Cure Potion” (Item 090)",
-                "86": "Unlock Diviner {DR} Solo Scenario “Forecast of the Inevitable"
-            },
+            "treasures": [
+                77,
+                86
+            ],
             "rewards": [
                 "15 experience each",
                 "If no more than 2+C inhabitants were intimidated: +2 reputation Otherwise: -2 reputation"
@@ -4098,9 +4098,9 @@
             "achievements_awarded": [
                 "PGD"
             ],
-            "treasures": {
-                "81": "Gain “Scroll of Haste” (Item 159) and 10 gold"
-            },
+            "treasures": [
+                81
+            ],
             "rewards": [
                 "+2 prosperity",
                 "Add City Event 87 to the deck"
@@ -4158,9 +4158,9 @@
             "achievements_awarded": [
                 "PDE"
             ],
-            "treasures": {
-                "87": "Suffer 2 damage, gain CURSE and 15 gold"
-            },
+            "treasures": [
+                87
+            ],
             "rewards": [
                 "“Major Mana Potion” (Item 048)"
             ]
@@ -4222,10 +4222,10 @@
             "linked_from": [
                 99
             ],
-            "treasures": {
-                "83": "Gain “Major Power Potion” (Item 041)",
-                "88": "Gain “Second Chance Ring” (Item 070)"
-            },
+            "treasures": [
+                83,
+                88
+            ],
             "rewards": [
                 "“Major Antidote” (Item 154)"
             ]
@@ -4363,10 +4363,10 @@
             "linked_from": [
                 100
             ],
-            "treasures": {
-                "78": "“Ancient Bow” (Item 157)",
-                "90": "10 gold each, Read section 75 on page 49"
-            },
+            "treasures": [
+                78,
+                90
+            ],
             "achievements_from_treasures": {
                 "90": [
                     "GPOA"
@@ -4495,10 +4495,10 @@
             "linked_from": [
                 101
             ],
-            "treasures": {
-                "80": "Gain 1 ✓ and add Rift Event 19 to the deck",
-                "94": "Gain 1 ✓ and add Rift Event 20 to the deck"
-            },
+            "treasures": [
+                80,
+                94
+            ],
             "rewards": [
                 "10 experience each",
                 "“Protective Charm” (Item 052)"
@@ -4540,9 +4540,9 @@
             "achievements_awarded": [
                 "GPA"
             ],
-            "treasures": {
-                "84": "Gain “Mask of Terrors” (Item 066)"
-            },
+            "treasures": [
+                84
+            ],
             "rewards": [
                 "“Crystal Tiara” (Item 163)"
             ]
@@ -4586,9 +4586,9 @@
                 104,
                 105
             ],
-            "treasures": {
-                "82": "“Rejuvenation Greaves” (Item 158)"
-            },
+            "treasures": [
+                82
+            ],
             "achievements_awarded_by_choice": [
                 [
                     "PHP"
@@ -4792,9 +4792,9 @@
             "achievements_awarded": [
                 "GST"
             ],
-            "treasures": {
-                "96": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}"
-            },
+            "treasures": [
+                96
+            ],
             "rewards": [
                 "+3 reputation",
                 "+1 prosperity",
@@ -4818,9 +4818,9 @@
             "achievements_awarded": [
                 "PBF"
             ],
-            "treasures": {
-                "93": "“Scroll of Haste” (Item 159)"
-            },
+            "treasures": [
+                93
+            ],
             "rewards": [
                 "15 gold each",
                 "1 ✓ each",

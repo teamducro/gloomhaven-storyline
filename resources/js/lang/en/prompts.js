@@ -77,4 +77,120 @@ export default {
         "title": "Broken Homes and Lairs",
         "text": "Did you bring death or save lives?"
     },
+    // Frosthaven
+    "startingMorale": {
+        "1": "0",
+        "2": "1",
+        "3": "2",
+        "4": "3",
+        "5": "4",
+        "6": "5",
+        "title": "Starting Morale",
+        "text": "How many City Guards are still on the map?"
+    },
+    "algoxAltercation": {
+        "1": "Snowdancer is dead.",
+        "2": "Frozen Fist is dead.",
+        "title": "Algox altercation",
+        "text": "Which side did you choose?"
+    },
+    "finalNegotiation": {
+        "1": "Try to broker peace with the automatons",
+        "2": "Destroy them",
+        "title": "Final Negotiation",
+        "text": "Which path will you choose?"
+    },
+    "friendOfTheFishKing": {
+        "1": "Yes",
+        "2": "No",
+        "title": "Friend of the Fish King",
+        "text": "Did you agree to the Fish King's proposition?"
+    },
+    "acceptTheAscension": {
+        "1": "Yes",
+        "2": "No",
+        "title": "Accept the Ascension",
+        "text": "Did you accept the Fish King's ascension?"
+    },
+    "brothersSurvival": {
+        "1": "Yes",
+        "2": "No",
+        "title": "Brother' Survival",
+        "text": "Did both brothers survive?"
+    },
+    "rattuscasShare": {
+        "1": "Yes",
+        "2": "No",
+        "title": "Rattusca's Share",
+        "text": "Did you give Rattusca her share?"
+    },
+    "peaceNegotiations": {
+        "1": "Support Scabwit (Vermlings)",
+        "2": "Support Yoglang (Algox)",
+        "title": "Peace Negotiations",
+        "text": "Who did you support in the brawl?"
+    },
+    "episodesOvercome": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "title": "Episodes Overcome",
+        "text": "How many episodes did you overcome?"
+    },
+    "pylonsDestroyed": {
+        "1": "0",
+        "2": "1",
+        "3": "2",
+        "4": "3",
+        "5": "4",
+        "6": "5",
+        "7": "6",
+        "title": "Pylons Destroyed",
+        "text": "How many pylons were destroyed?"
+    },
+    "wagonsEscaped": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "title": "Wagons Escaped",
+        "text": "How many wagons escaped?"
+    },
+    "mindtheifsWill": {
+        "1": "Automaton destroyed, technology given to vermlings",
+        "2": "Automaton destroyed, technology kept",
+        "3": "Mind control device disabled",
+        "title": "Mindtheif's Will",
+        "text": "What did you do with the mind control device?"
+    },
+    "hungryMawDead": {
+        "1": "Yes",
+        "2": "No",
+        "title": "Hungry Maw Dead",
+        "text": "Is the Hungry Maw dead?"
+    },
+    "cratesLooted": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "title": "Crates Looted",
+        "text": "How many crates did you loot?"
+    },
+    "embellismentsCompleted": {
+        "1": "Seven or fewer",
+        "2": "Eight to fifteen",
+        "3": "Sixteen or more",
+        "title": "Embellisments Completed",
+        "text": "How many embellisments did you complete?"
+    },
+    "sunAgatesReturned": {
+        "1": "Yes",
+        "2": "No",
+        "title": "Sun Agates Returned",
+        "text": "Did you return the sun agates to Derrick?"
+    },
 }

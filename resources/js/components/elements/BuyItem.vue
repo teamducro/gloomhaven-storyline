@@ -24,7 +24,7 @@
                 <button v-if="!owns" class="mdc-button mdc-button--raised mr-2"
                         :disabled="appData.read_only || !hasEnoughCash || !availability" @click="buy">
                     <i class="material-icons mdc-button__icon">euro</i>
-                    <span class="mdc-button__label">{{ $t('Buy') }}</span>
+                    <span class="mdc-button__label">{{ cost ? (isNaN(cost) ? $t('Craft') : $t('Buy')) : $t('Get') }}</span>
                 </button>
                 <button v-if="!owns" class="mdc-button mdc-button--raised mr-2"
                         :disabled="appData.read_only || !availability" @click="add">
@@ -94,19 +94,52 @@ export default {
             return this.character?.items[this.item.id]
         },
         hasEnoughCash() {
+            if (!this.item.cost) {
+                return true;
+            }
+            if (isNaN(this.item.cost)) {
+                return Object.entries(this.item.cost).every(([k, v]) => {
+                    if (k == 'item') {
+                        return v.every(i => this.character.items[this.appData.game + '-' + i]);
+                    } else {
+                        return this.character.resources[k] >= v;
+                    }
+                });
+            }
             return this.character.gold >= this.cost;
         },
         cost() {
             return this.item.cost + this.costModifier;
         },
         sellPrice() {
+            if (!this.item.cost) {
+                return 0;
+            }
+            if (isNaN(this.item.cost)) {
+                return Object.entries(this.item.cost).reduce((sum, [k, v]) => sum + (k == 'item' ? v.length : v), 0) * 2;
+            }
             return Math.floor(this.item.cost / 2);
         }
     },
     methods: {
         buy() {
             if (this.hasEnoughCash) {
-                this.character.gold -= this.cost;
+                if (!this.item.cost) {
+                    // pass
+                } else if (isNaN(this.item.cost)) {
+                    for (let [k, v] of Object.entries(this.item.cost)) {
+                        if (k == 'item') {
+                            for (let itemId of v) {
+                                this.character.items[this.appData.game + '-' + itemId] = false;
+                            }
+                            this.store();
+                        } else {
+                            this.character.resources[k] -= v;
+                        }
+                    }
+                } else {
+                    this.character.gold -= this.cost;
+                }
                 this.add();
             }
         },

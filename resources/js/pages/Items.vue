@@ -2,11 +2,17 @@
     <div v-if="sheet" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
 
-            <tabs :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
+            <tabs v-if="sheet.game === Game.fh" :tabs="[$t('Campaign sheet'), $t('Characters'), $t('Items'), $t('Buildings')]"
+                  :icons="['assignment', 'person', 'style', 'home']"
+                  :urls="['party', 'characters', 'items', 'buildings']"
+                  :active="$t('Items')"
+            />
+            <tabs v-else :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
                   :urls="['party', 'characters', 'items']"
                   :active="$t('Items')"
             />
+
             <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
 
             <div v-if="!appData.read_only && Object.keys(sheet.itemDesigns).length" class="absolute right-0 top-0 mt-14 sm:mt-4 mr-4 z-5">
@@ -92,6 +98,7 @@
 
             <data-table :columns="columns"
                         :sortable="sortable"
+                        :sortFunctions="{ cost: sortCosts, name: sortNames }"
                         :initialSearch="search"
                         :data="items.values().items"
                         @rowClick="openItemModel"
@@ -118,17 +125,22 @@
                         <span class="inline-block mr-2">
                             {{ row.count - itemAvailability.uses(row.id) }}/{{ row.count }}
                         </span>
-                        <span class="inline-block md:hidden">{{ row.cost + costModifier }}</span>
+                        <add-links-and-icons v-if="row.cost && isNaN(row.cost)" :text="getResourceCost(row.cost).replaceAll('<br>', ' ')" class="resources inline-block md:hidden"/>
+                        <span v-else class="inline-block md:hidden">{{ isNaN(row.cost) ? '-' : (row.cost + costModifier) }}</span>
                     </span>
                 </span>
                 <span slot="cost" slot-scope="{value}">
-                    {{ value + costModifier }}
+                    <add-links-and-icons v-if="value && isNaN(value)" :text="getResourceCost(value)" class="resources"/>
+                    <template v-else>{{ isNaN(value) ? '-' : (value + costModifier) }}</template>
                 </span>
                 <template slot="availability" slot-scope="{value, row}">
                     {{ row.count - itemAvailability.uses(row.id) }} / {{ row.count }}
                 </template>
-                <template slot="desc" slot-scope="{value}">
+                <template slot="desc" slot-scope="{value, row}">
+                    <p v-if="row.backDesc">{{ $t('Front') }}:</p>
                     <add-links-and-icons :text="$t(value)"/>
+                    <p v-if="row.backDesc">{{ $t('Back') }}:</p>
+                    <add-links-and-icons v-if="row.backDesc" :text="$t(row.backDesc)"/>
                 </template>
             </data-table>
         </div>
@@ -143,8 +155,9 @@ import SheetCalculations from "../services/SheetCalculations";
 import ItemRepository from "../repositories/ItemRepository";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import BuildingRepository from "../repositories/BuildingRepository";
 import ItemAvailability from "../services/ItemAvailability";
-import GameData from "../services/GameData";
+import {Game} from "../models/Game";
 
 export default {
     inject: ['appData'],
@@ -170,6 +183,7 @@ export default {
             storySyncer: new StorySyncer,
             itemRepository: new ItemRepository,
             scenarioRepository: new ScenarioRepository,
+            buildingRepository: new BuildingRepository,
             sheetRepository: new SheetRepository,
         }
     },
@@ -188,6 +202,9 @@ export default {
         this.$bus.$off('campaigns-changed', this.render);
     },
     computed: {
+        Game() {
+            return Game
+        },
         columns() {
             let columns = [
                 {id: 'image', name: 'Card', classes: 'hidden sm:table-cell'},
@@ -236,6 +253,9 @@ export default {
             // Add auto unlocked items, based on prosperity level or completed scenarios.
             if (this.currentGame === 'jotl') {
                 sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
+            }
+            else if (this.currentGame === 'fh') {
+                sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
             }
             else {
                 sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
@@ -297,6 +317,26 @@ export default {
             this.selectedItem = item;
             await this.$nextTick();
             this.$bus.$emit('open-item', {item});
+        },
+        getResourceCost(cost) {
+            return Object.entries(cost).map(([k, v]) => k == 'item' ? v.map(i => `{ITEM}${i}`).join('<br>') : `{${k.toUpperCase()}}` + (v > 1 ? ` x ${v}` : '')).join('<br>');
+        },
+        getCostAsValue(cost) {
+            if (!cost) {
+                return 0;
+            }
+            if (!isNaN(cost)) {
+                return cost;
+            }
+            // Craftable items sell for (each resource or item used to craft) x2, x4 because purchasable items are sold for half their value
+            return Object.entries({...cost}).reduce((sum, [k, v]) => sum + (k == 'item' ? v.length : v), 0) * 4;
+        },
+        sortCosts(a, b) {
+            return this.getCostAsValue(a.cost) - this.getCostAsValue(b.cost);
+        },
+        sortNames(a, b) {
+            // Sort by translation, not key
+            return new Intl.Collator().compare(this.$t(a.name), this.$t(b.name));
         }
     }
 }
@@ -311,5 +351,8 @@ export default {
         width: calc(100vw - 6.8rem);
         max-width: 1006px;
     }
+}
+.resources div, .resources svg {
+    @apply inline w-4 h-4;
 }
 </style>

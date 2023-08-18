@@ -24,40 +24,68 @@
         cursor: pointer;
     }
 
-    circle.node {
+    .node {
         fill: black;
         stroke: white;
-        transform: translate(-10.8px, 0);
     }
 
-    circle.node + text {
-        font-size: 11px;
-        transform: translate(0px, 9px);
-    }
-
-    circle.node ~ .blocked {
-        font-size: 16px;
+    .node ~ .blocked {
         font-family: Arial, sans-serif;
-        transform: translate(-10px, -5px);
     }
 
-    circle.node ~ .required {
-        font-size: 12px;
+    .node ~ .require {
         font-weight: bold;
-        transform: translate(-7px, -5px);
+    }
+
+    // The following is a hack to fix the positioning of the nodes in the storyline
+    &.storyline-gh, &.storyline-fc, &.storyline-jotl, &.storyline-cs {
+        .node {
+            transform: translate(-10.8px, 0);
+        }
+
+        .node + text {
+            font-size: 11px;
+            transform: translate(0px, 9px);
+        }
+
+        .node ~ .blocked {
+            font-size: 16px;
+            transform: translate(-10px, -5px);
+        }
+
+        .node ~ .require {
+            font-size: 12px;
+            transform: translate(-7px, -5px);
+        }
+    }
+
+    &.storyline-fh {
+        .node + text, text.label {
+            font-size: 12px;
+        }
+
+        .node ~ .blocked {
+            font-size: 20px;
+            transform: translate(-12px, -16px);
+        }
+
+        .node ~ .required {
+            font-size: 12px;
+            transform: translate(-14px, -12px);
+        }
     }
 
     .scenario {
         &.incomplete {
             stroke-width: 2;
 
-            circle.node {
+            .node {
                 stroke: $complete;
             }
         }
 
         &.blocked {
-            circle.node {
+            .node {
                 stroke: $incomplete;
 
                 ~ .blocked {
@@ -67,7 +95,7 @@
         }
 
         &.required {
-            circle.node {
+            .node {
                 stroke: $required;
 
                 ~ .required {

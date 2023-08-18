@@ -29,6 +29,11 @@ mix.i18n()
             includePaths: ['./node_modules']
         }
     })
+    .sass('resources/sass/website-theme.scss', 'css', {
+        sassOptions: {
+            includePaths: ['./node_modules']
+        }
+    })
     .copyDirectory('resources/public', 'public')
     .copyDirectory('resources/img', 'public/img')
     .copyDirectory('resources/svg', 'public/svg')

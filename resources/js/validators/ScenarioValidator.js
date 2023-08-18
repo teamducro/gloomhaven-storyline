@@ -123,13 +123,16 @@ export default class ScenarioValidator {
             let complete = condition.complete || [];
             let completeCheck = !!complete.length && this.checkCompleteConditions(complete);
 
+            let incomplete = condition.incomplete || [];
+            let incompleteCheck = !!incomplete.length && this.checkIncompleteConditions(incomplete);
+
             let lost = condition.lost || [];
             let lostCheck = lost.length && lost.every((achievementId) => {
                 let achievement = this.achievementRepository.find(achievementId) || {};
                 return achievement.lost;
             });
 
-            return completeCheck || lostCheck;
+            return completeCheck || incompleteCheck || lostCheck;
         });
 
         if (shouldBeBlocked) {

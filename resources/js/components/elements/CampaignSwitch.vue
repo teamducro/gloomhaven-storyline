@@ -19,13 +19,13 @@
                     {{ $t('local') }}
                     <span class="ml-4 mt-1 cloud-off"></span>
                 </li>
-                <li v-for="(story) in stories.items"
+                <li v-for="story in stories.items"
                     :key="story.campaignId" :data-value="story.campaignId"
                     class="mdc-list-item cursor-pointer whitespace-nowrap flex items-center"
-                    :aria-selected="current === story.campaignId"
-                    :class="{'mdc-list-item--selected': current === story.campaignId}">
+                    :aria-selected="campaignId === story.campaignId"
+                    :class="{'mdc-list-item--selected': campaignId === story.campaignId}">
                     {{ story.name }}
-                    <span class="ml-4 mt-1 cloud-on"></span>
+                    <span class="ml-4 mt-1" :class="story.has_expired ? 'cloud-off' : 'cloud-on'"/>
                 </li>
             </ul>
         </div>
@@ -54,7 +54,7 @@ export default {
     },
     mounted() {
         this.select = new MDCSelect(this.$refs['campaign-switch']);
-        this.select.listen('MDCSelect:change', this.campaignSelected);
+        this.select.listen('MDCSelect:change', this.selected);
 
         this.$bus.$on('campaigns-changed', this.applyData);
     },
@@ -71,12 +71,24 @@ export default {
             this.campaignId = app.campaignId;
             this.stories = app.stories;
             const story = this.storyRepository.current()
-            if (story) {
-                this.current = story.name;
+            this.current = story?.name ?? 'local';
+
+            const index = this.current === 'local' ? 0
+                : this.stories.items.findIndex(story => story.campaignId === this.campaignId) + 1;
+            if (this.select.selectedIndex !== index) {
+                this.select.selectedIndex = index
             }
         },
-        campaignSelected() {
-            this.$bus.$emit('campaign-selected', this.select.value);
+        selected(event) {
+            const index = event?.detail?.index
+            const campaignId = index === 0 ? 'local' : this.stories.items[index - 1].campaignId;
+            this.$bus.$emit('campaign-selected', campaignId);
+
+            let name = (campaignId === 'local')
+                ? this.$t('local')
+                : this.storyRepository.find(campaignId).name;
+
+            this.$bus.$emit('toast', `"${name}" selected!`);
         }
     }
 }

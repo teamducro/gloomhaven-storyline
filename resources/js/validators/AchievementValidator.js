@@ -10,7 +10,9 @@ class AchievementValidator {
 
     validate() {
         if (this.validateOneTime) {
-            this.checkCityRule();
+            if (app.game !== 'fh') {
+                this.checkCityRule();
+            }
             this.fixAchievementGroups();
             this.checkMissingManualAchievements();
         }

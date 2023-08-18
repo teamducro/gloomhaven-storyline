@@ -19,6 +19,8 @@ import VueScrollTo from "vue-scrollto";
 import StorySyncer from "./services/StorySyncer";
 import OfflineChecker from "./services/app/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
+import BuildingRepository from "./repositories/BuildingRepository";
+import OverlayRepository from "./repositories/OverlayRepository";
 import * as Sentry from "@sentry/vue";
 import {Integrations} from "@sentry/tracing";
 import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
@@ -39,6 +41,7 @@ import {Flip} from "gsap/Flip.js";
 import getEnabledGames from "./services/app/getEnabledGames";
 import getFont from "./services/app/getFont";
 import BaseUrl from "./mixins/BaseUrl";
+import {Game} from "./models/Game";
 
 window._ = require('lodash');
 window.c = require('cash-dom');
@@ -133,6 +136,8 @@ window.app = new Vue({
             quests: null,
             achievements: null,
             items: null,
+            buildings: null,
+            overlays: null,
             webpSupported: true,
             hasMouse: false,
             isPortrait: true,
@@ -146,6 +151,8 @@ window.app = new Vue({
             questRepository: new QuestRepository,
             achievementRepository: new AchievementRepository,
             itemRepository: new ItemRepository,
+            buildingRepository: new BuildingRepository,
+            overlayRepository: new OverlayRepository,
             userRepository: new UserRepository,
             storyRepository: new StoryRepository,
             echo: new EchoService,
@@ -182,6 +189,8 @@ window.app = new Vue({
                 this.fetchAchievements(),
                 this.fetchScenarios(shouldSync),
                 this.fetchItems(),
+                this.fetchBuildings(),
+                this.fetchOverlays(),
             ]);
 
             this.story = this.stories.firstWhere('campaignId', this.campaignId);
@@ -210,13 +219,27 @@ window.app = new Vue({
             let items = {}
             this.enabledGames.forEach((game) => {
                 // FC uses GH items
-                if (game !== 'fc') {
+                if (game !== Game.fc) {
                     items = {...items, ...this.itemRepository.fetch(game).items};
                 }
             })
             this.items = collect(items);
             await this.$nextTick();
             this.$bus.$emit('items-updated');
+
+            return true;
+        },
+        async fetchBuildings() {
+            this.buildings = this.buildingRepository.fetch(this.game);
+            await this.$nextTick();
+            this.$bus.$emit('buildings-updated');
+
+            return true;
+        },
+        async fetchOverlays() {
+            this.overlays = this.overlayRepository.fetch(this.game);
+            await this.$nextTick();
+            this.$bus.$emit('overlays-updated');
 
             return true;
         },
@@ -245,7 +268,7 @@ window.app = new Vue({
 
             this.campaignData = store.get(this.campaignId) || {};
             this.campaignData = migrateVersion2Progress(this.campaignData);
-            this.game = store.get('game') || 'gh';
+            this.game = store.get('game') || Game.gh;
             this.stories = this.storyRepository.getStories();
             if (Helpers.loggedIn()) {
                 this.user = this.userRepository.getUser();
@@ -286,7 +309,7 @@ window.app = new Vue({
             this.webpSupported = isWebpSupported();
             checkHasMouse(this.$bus);
             migrateVersion1Progress();
-            this.game = store.get('game') || 'gh';
+            this.game = store.get('game') || Game.gh;
             getFont();
         }
     }

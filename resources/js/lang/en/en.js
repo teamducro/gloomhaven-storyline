@@ -8,6 +8,8 @@ import personal_quests from "./personal_quests"
 import characters from "./characters"
 import prompts from "./prompts"
 import abilities from "./abilities"
+import buildings from "./buildings"
+import overlays from "./overlays"
 
 export default {
     ...general,
@@ -35,5 +37,11 @@ export default {
     },
     "abilities": {
         ...abilities
-    }
+    },
+    "buildings": {
+        ...buildings
+    },
+    "overlays": {
+        ...overlays
+    },
 }

@@ -4,6 +4,7 @@ export default class StoryRepository {
     }
 
     find(id) {
-        return app.stories.firstWhere('campaignId', id);
+        const campaignId = Number.isInteger(id) ? '_' + id : id;
+        return app.stories.firstWhere('campaignId', campaignId);
     }
 }

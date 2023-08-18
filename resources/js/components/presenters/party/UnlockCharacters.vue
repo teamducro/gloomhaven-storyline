@@ -16,12 +16,13 @@
 
 <script>
 import Sheet from "../../../models/Sheet";
+import CampaignSheet from "../../../models/CampaignSheet";
 import ScenarioRepository from "../../../repositories/ScenarioRepository";
 
 export default {
     props: {
         sheet: {
-            type: Sheet,
+            type: [Sheet, CampaignSheet],
             required: true
         }
     },

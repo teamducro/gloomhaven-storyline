@@ -1,36 +1,53 @@
 import achievementsJson from '../achievements.json'
+import achievementsFhJson from '../achievements-fh.json'
 import scenariosJson from '../scenarios.json'
+import scenariosFhJson from '../scenarios-fh.json'
 import scenariosJotlJson from '../scenarios-jotl.json'
 import scenariosCsJson from '../scenarios-cs.json'
 import questsJson from '../quests.json'
 import questsFcJson from '../quests-fc.json'
 import questsJotlJson from '../quests-jotl.json'
+import questsFhJson from '../quests-fh.json'
 import questsCsJson from '../quests-cs.json'
 import personalQuestsJson from '../personal-quests.json'
 import personalQuestsCsJson from '../personal-quests-cs.json'
+import personalQuestsFhJson from '../personal-quests-fh.json'
 import itemsJson from '../items.json'
 import itemsJotlJson from '../items-jotl.json'
 import itemsCsJson from '../items-cs.json'
+import itemsFhJson from '../items-fh.json'
 import abilitiesJson from '../abilities.json'
 import abilitiesFcJson from '../abilities-fc.json'
 import abilitiesJotlJson from '../abilities-jotl.json'
 import abilitiesCsJson from '../abilities-cs.json'
+import abilitiesFhJson from '../abilities-fh.json'
 import charactersJson from '../characters.json'
 import attackModifierDecksJson from '../attack-modifier-decks.json'
+import {Game} from "../models/Game";
 
 export default class GameData {
     games() {
-        return ["gh", "fc", "jotl", "cs"]
+        return Object.getOwnPropertyNames(Game)
     }
 
     beta() {
-        return []
+        return [Game.fh]
+    }
+
+    purchasable() {
+        return [Game.gh, Game.fh]
+    }
+
+    free() {
+        return this.games().filter(game => !this.purchasable().includes(game))
     }
 
     achievements(game) {
         switch (game) {
-            case 'jotl':
+            case Game.jotl:
                 return []
+            case Game.fh:
+                return achievementsFhJson
             default:
                 return achievementsJson
         }
@@ -46,6 +63,14 @@ export default class GameData {
 
     chapters(game) {
         return this._scenarioData(game).chapters
+    }
+
+    overlays(game) {
+        return this._scenarioData(game).overlays || []
+    }
+
+    buildings(game) {
+        return this._scenarioData(game).buildings || []
     }
 
     characters(game) {
@@ -64,9 +89,11 @@ export default class GameData {
 
     _scenarioData(game) {
         switch (game) {
-            case 'jotl':
+            case Game.fh:
+                return scenariosFhJson
+            case Game.jotl:
                 return scenariosJotlJson
-            case 'cs':
+            case Game.cs:
                 return scenariosCsJson
             default:
                 return scenariosJson
@@ -75,23 +102,29 @@ export default class GameData {
 
     quests(game) {
         switch (game) {
-            case 'fc':
-                return questsFcJson
-            case 'jotl':
+            case Game.gh:
+                return questsJson
+            case Game.jotl:
                 return questsJotlJson
-            case 'cs':
+            case Game.fh:
+                return questsFhJson
+            case Game.fc:
+                return questsFcJson
+            case Game.cs:
                 return questsCsJson
             default:
-                return questsJson
+                return []
         }
     }
 
     items(game) {
         switch (game) {
-            case 'jotl':
+            case Game.jotl:
                 return itemsJotlJson
-            case 'cs':
+            case Game.cs:
                 return itemsCsJson
+            case Game.fh:
+                return itemsFhJson
             default:
                 return itemsJson
         }
@@ -99,12 +132,14 @@ export default class GameData {
 
     abilities(game) {
         switch (game) {
-            case 'jotl':
+            case Game.jotl:
                 return abilitiesJotlJson
-            case 'fc':
+            case Game.fc:
                 return abilitiesFcJson
-            case 'cs':
+            case Game.cs:
                 return abilitiesCsJson
+            case Game.fh:
+                return abilitiesFhJson
             default:
                 return abilitiesJson
         }
@@ -112,10 +147,12 @@ export default class GameData {
 
     personalQuests(game) {
         switch (game) {
-            case 'jotl':
+            case Game.jotl:
                 return []
-            case 'cs':
+            case Game.cs:
                 return personalQuestsCsJson
+            case Game.fh:
+                return personalQuestsFhJson
             default:
                 return personalQuestsJson
         }
@@ -129,16 +166,16 @@ export default class GameData {
         return 'test'
     }
 
-    map(game = 'gh') {
-        let map = 'fc';
+    map(game = Game.gh) {
+        let map = Game.fc;
 
         // GH uses the FC map
-        if (game !== 'gh') {
+        if (game !== Game.gh) {
             map = game;
         }
 
         // Games that do not support a map
-        if (['cs'].includes(map)) {
+        if ([Game.cs].includes(map)) {
             return null;
         }
 
@@ -148,13 +185,20 @@ export default class GameData {
         }
     }
 
-    mapSettings(game = 'gh') {
-        if (game === 'gh' || game === 'fc') {
+    mapSettings(game = Game.gh) {
+        if (game === Game.gh || game === Game.fc) {
             return {
                 stickerScale: 0.79,
                 yOffset: 184,
                 width: 2606,
                 height: 2155
+            };
+        } else if (game == Game.fh) {
+            return {
+                stickerScale: 0.7,
+                yOffset: 0,
+                width: 2500,
+                height: 3159
             };
         }
 
@@ -166,30 +210,35 @@ export default class GameData {
         };
     }
 
-    mapYOffset(game = 'gh') {
-        if (game === 'gh' || game === 'fc') {
+    mapYOffset(game = Game.gh) {
+        if (game === Game.gh || game === Game.fc) {
             return 184;
         }
 
         return 0;
     }
 
-    storylineViewBox(game = 'gh') {
+    storylineViewBox(game = Game.gh) {
         switch (game) {
-            case 'fc':
+            case Game.fc:
                 return {
                     portrait: '0 0 560 600',
                     landscape: '0 -40 560 600'
                 }
-            case 'jotl':
+            case Game.jotl:
                 return {
                     portrait: '-100 0 500 500',
                     landscape: '-100 -70 500 500'
                 }
-            case 'cs':
+            case Game.cs:
                 return {
                     portrait: '0 0 370 540',
                     landscape: '0 -40 530 370'
+                }
+            case Game.fh:
+                return {
+                    portrait: '-20 -40 718 691',
+                    landscape: '-20 -40 718 691'
                 }
             default:
                 return {

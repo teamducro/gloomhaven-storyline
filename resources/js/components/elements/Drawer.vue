@@ -77,7 +77,7 @@
                             <router-link to="/party" class="mdc-list-item"
                                          active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">assignment</i>
-                                <span class="mdc-list-item__text">{{ $t('Party sheet') }}</span>
+                                <span class="mdc-list-item__text">{{ game === Game.fh ? $t('Campaign sheet') : $t('Party sheet') }}</span>
                             </router-link>
                         </li>
 
@@ -96,6 +96,13 @@
                                 <i class="material-icons mdc-list-item__graphic transform rotate-180"
                                    aria-hidden="true">style</i>
                                 <span class="mdc-list-item__text">{{ $t('Items') }}</span>
+                            </router-link>
+                        </li>
+
+                        <li v-if="hasBuildings" @click="toggle">
+                            <router-link to="/buildings" class="mdc-list-item" active-class="mdc-list-item--activated">
+                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+                                <span class="mdc-list-item__text">{{ $t('Buildings') }}</span>
                             </router-link>
                         </li>
 
@@ -178,15 +185,22 @@ import Helpers from "../../services/Helpers";
 import AuthRepository from "../../apiRepositories/AuthRepository";
 import StoryRepository from "../../repositories/StoryRepository";
 import GameData from "../../services/GameData";
+import {Game} from "../../models/Game";
 
 const md5 = require('js-md5');
 
 export default {
+    computed: {
+        Game() {
+            return Game
+        }
+    },
     inject: ['appData'],
     data() {
         return {
             game: null,
             hasMap: true,
+            hasBuildings: false,
             drawer: null,
             list: null,
             user: null,
@@ -237,6 +251,7 @@ export default {
         setGame(game) {
             this.game = game || this.appData.game;
             this.hasMap = this.gameData.map(this.game) !== null;
+            this.hasBuildings = !!this.gameData.buildings(this.game)?.length;
         },
         setUser() {
             this.user = app.user;

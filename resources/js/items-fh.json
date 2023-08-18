@@ -1,0 +1,2635 @@
+[
+    {
+        "id": 1,
+        "name": "Spyglass",
+        "count": 2,
+        "resources": { "metal": 1 },
+        "slot": "Head",
+        "source": "Craftsman 1",
+        "desc": "During your attack ability, gain advantage on one attack.",
+        "spent": true
+    },
+    {
+        "id": 2,
+        "name": "Crude Helmet",
+        "count": 2,
+        "resources": { "metal": 1 },
+        "slot": "Head",
+        "source": "Craftsman 1",
+        "desc": "When you are attacked, treat any {2X_MODIFIER} attack modifier card the enemy draws as a {+1_MODIFIER} instead."
+    },
+    {
+        "id": 3,
+        "name": "Traveling Cloak",
+        "count": 2,
+        "resources": { "hide": 1 },
+        "slot": "Body",
+        "source": "Craftsman 1",
+        "desc": "At the start of the scenario increase your maximum hit point value by 1."
+    },
+    {
+        "id": 4,
+        "name": "Crude Hide Armor",
+        "count": 2,
+        "resources": { "hide": 2 },
+        "slot": "Body",
+        "source": "Craftsman 1",
+        "desc": "On the next two attacks targeting you, the attacker gains disadvantage.",
+        "spent": true,
+        "minusOneCardsAdded": 1
+    },
+    {
+        "id": 5,
+        "name": "Crude Boots",
+        "count": 2,
+        "resources": { "hide": 2 },
+        "slot": "Legs",
+        "source": "Craftsman 1",
+        "desc": "During your move ability, add +1 {MOVE.fh}",
+        "spent": true
+    },
+    {
+        "id": 6,
+        "name": "Flexible Slippers",
+        "count": 2,
+        "resources": { "hide": 1 },
+        "slot": "Legs",
+        "source": "Craftsman 1",
+        "desc": "During your end-of-turn looting, loot an adjacent hex instead of the hex you occupy.",
+        "spent": true
+    },
+    {
+        "id": 7,
+        "name": "Crude Bow",
+        "count": 2,
+        "resources": { "lumber": 1 },
+        "slot": "Two Hands",
+        "source": "Craftsman 1",
+        "desc": "During your turn, add +1 {RANGE.fh} to one of your ranged attacks.",
+        "spent": true
+    },
+    {
+        "id": 8,
+        "name": "Crude Spear",
+        "count": 2,
+        "resources": { "lumber": 1, "metal": 1 },
+        "slot": "Two Hands",
+        "source": "Craftsman 1",
+        "desc": "During your turn, one of your single-target melee attack abilities may target an enemy two hexes away.",
+        "spent": true
+    },
+    {
+        "id": 9,
+        "name": "Protective Scepter",
+        "count": 2,
+        "resources": { "lumber": 1, "hide": 1 },
+        "slot": "One Hand",
+        "source": "Craftsman 1",
+        "desc": "During you turn, grant one ally within {RANGE.fh} 2: {SHIELD.fh} 1. {ROUND}",
+        "spent": true
+    },
+    {
+        "id": 10,
+        "name": "Crude Shield",
+        "count": 2,
+        "resources": { "metal": 1 },
+        "slot": "One Hand",
+        "source": "Craftsman 1",
+        "desc": "When an enemy would apply a negative condition to you, prevent the condition",
+        "minusOneCardsAdded": 1,
+        "consumed": true
+    },
+    {
+        "id": 11,
+        "name": "Simple Charm",
+        "count": 2,
+        "resources": { "metal": 2 },
+        "slot": "Head",
+        "source": "Craftsman 2",
+        "desc": "At the start of the scenario remove one {-1_MODIFIER} modifier card from your attack modifier deck."
+    },
+    {
+        "id": 12,
+        "name": "Crude Chain Armor",
+        "count": 2,
+        "resources": { "metal": 1 },
+        "slot": "Body",
+        "source": "Craftsman 2",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 2 for the attack.",
+        "spent": true,
+        "minusOneCardsAdded": 1
+    },
+    {
+        "id": 13,
+        "name": "Dancing Slippers",
+        "count": 2,
+        "resources": { "hide": 1, "snowthistle": 1 },
+        "slot": "Legs",
+        "source": "Craftsman 2",
+        "desc": "After you suffer {DAMAGE.fh} from an attack, perform: {MOVE.fh} 2",
+        "spent": true
+    },
+    {
+        "id": 14,
+        "name": "Heavy Sword",
+        "count": 2,
+        "resources": { "metal": 1, "hide": 1 },
+        "slot": "One Hand",
+        "source": "Craftsman 2",
+        "desc": "During your melee attack ability, add +1 {ATTACK.fh} to one attack.",
+        "spent": true
+    },
+    {
+        "id": 15,
+        "name": "Reinforced Shield",
+        "count": 2,
+        "resources": { "item": [10], "lumber": 1 },
+        "slot": "One Hand",
+        "source": "Craftsman 2",
+        "desc": "When an enemy would apply a negative condition to you, prevent the condition.",
+        "spent": true,
+        "minusOneCardsAdded": 2
+    },
+    {
+        "id": 16,
+        "name": "Inspiring Helmet",
+        "count": 2,
+        "resources": { "item": [2], "metal": 1, "hide": 1 },
+        "slot": "Head",
+        "source": "Craftsman 3",
+        "desc": "During your turn, grant all adjacent allies: {MOVE.fh} 2",
+        "consumed": true
+    },
+    {
+        "id": 17,
+        "name": "Cured Leather Armor",
+        "count": 2,
+        "resources": { "item": [4, 8] },
+        "slot": "Body",
+        "source": "Craftsman 3\nTreasure 50",
+        "desc": "On the next two attacks targeting you, the attacker gains disadvantage.",
+        "spent": true
+    },
+    {
+        "id": 18,
+        "name": "Rough Boots",
+        "count": 2,
+        "resources": { "item": [5], "hide": 1 },
+        "slot": "Legs",
+        "source": "Craftsman 3",
+        "desc": "During your turn add +1 {MOVE.fh} to all your move abilities.",
+        "spent": true
+    },
+    {
+        "id": 19,
+        "name": "Ringing Hammer",
+        "count": 2,
+        "resources": { "lumber": 1, "metal": 1, "axenut": 1 },
+        "slot": "One Hand",
+        "source": "Craftsman 3",
+        "desc": "During your attack ability add {MUDDLE.fh} to all your attacks.",
+        "minusOneCardsAdded": 1,
+        "spent": true
+    },
+    {
+        "id": 20,
+        "name": "Well Strung Bow",
+        "count": 2,
+        "resources": { "item": [7], "arrowvine": 1 },
+        "slot": "Two Hands",
+        "source": "Craftsman 3",
+        "desc": "During your turn, add +1 {RANGE.fh} to all your ranged attacks.",
+        "spent": true
+    },
+    {
+        "id": 21,
+        "name": "Chain Hood",
+        "count": 2,
+        "resources": { "metal": 3, "hide": 1 },
+        "slot": "Head",
+        "source": "Craftsman 4",
+        "desc": "While you are adjacent to tree or more enemies, gain {SHIELD.fh} 1.",
+        "minusOneCardsAdded": 1
+    },
+    {
+        "id": 22,
+        "name": "Heavy Chain Armor",
+        "count": 2,
+        "resources": { "item": [12], "metal": 1 },
+        "slot": "Body",
+        "source": "Craftsman 4",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 3 for the attack.",
+        "minusOneCardsAdded": 2,
+        "spent": true
+    },
+    {
+        "id": 23,
+        "name": "Sturdy Greaves",
+        "count": 2,
+        "resources": { "metal": 2, "hide": 2 },
+        "slot": "Legs",
+        "source": "Craftsman 4",
+        "desc": "At the start of your turn, add -2 {MOVE.fh} to all your move abilities to gain {SHIELD.fh} this round. {ROUND}",
+        "minusOneCardsAdded": 2,
+        "spent": true
+    },
+    {
+        "id": 24,
+        "name": "Corrupted Blade",
+        "count": 2,
+        "resources": { "item": [14, 98] },
+        "slot": "One Hand",
+        "source": "Craftsman 4\nWR-04",
+        "desc": "During your melee attack ability, add {WOUND.fh}, {POISON.fh}, {MUDDLE.fh} to one attack.",
+        "consumed": true
+    },
+    {
+        "id": 25,
+        "name": "Soothing Scepter",
+        "count": 2,
+        "resources": { "lumber": 1, "hide": 1, "rockroot": 1 },
+        "slot": "One Hand",
+        "source": "Craftsman 4",
+        "desc": "During your turn, perform {REGENERATE.fh} {TARGET.fh} 1 ally, {RANGE.fh} 2",
+        "spent": true
+    },
+    {
+        "id": 26,
+        "name": "Truesight Lenses",
+        "count": 2,
+        "resources": { "metal": 1, "hide": 1 },
+        "slot": "Head",
+        "source": "Craftsman 5",
+        "desc": "During your attack ability, treat all negative and {NULL_MODIFIER} modifier cards as {+0_MODIFIER} instead.",
+        "spent": true
+    },
+    {
+        "id": 27,
+        "name": "Cloak of Warding",
+        "count": 2,
+        "resources": { "item": [3, 91], "hide": 1 },
+        "slot": "Body",
+        "source": "Craftsman 5\nSR-17",
+        "desc": "Immediately after an enemy ends its move ability adjacent to you, perform {PUSH.fh} 1 {TARGET.fh} the enemy",
+        "consumed": true
+    },
+    {
+        "id": 28,
+        "name": "Sturdy Boots",
+        "count": 2,
+        "resources": { "item": [18], "hide": 1 },
+        "slot": "Legs",
+        "source": "Craftsman 5",
+        "desc": "During your turn add +1 {MOVE.fh} to all your move abilities and ignor difficult terrain.",
+        "spent": true
+    },
+    {
+        "id": 29,
+        "name": "Cleaving Axe",
+        "count": 2,
+        "resources": { "lumber": 1, "metal": 2 },
+        "slot": "Two Hands",
+        "source": "Craftsman 5",
+        "desc": "After your melee attack, one enemy adjacent to the target suffers {DAMAGE.fh} 2.",
+        "spent": true
+    },
+    {
+        "id": 30,
+        "name": "Parrying Gauntlet",
+        "count": 2,
+        "resources": { "metal": 1, "hide": 1 },
+        "slot": "One Hand",
+        "source": "Craftsman 5",
+        "desc": "Immediately after an enemy ends its move ability adjacent to you, perform {ATTACK.fh} 3 {TARGET.fh} the enemy",
+        "consumed": true
+    },
+    {
+        "id": 31,
+        "name": "Deathproof Charm",
+        "count": 2,
+        "resources": { "item": [11, 106] },
+        "slot": "Head",
+        "source": "Craftsman 6\nWR-37\nSO-11",
+        "desc": "When you suffer {DAMAGE.fh} from any source, negate the {DAMAGE.fh}.",
+        "consumed": true
+    },
+    {
+        "id": 32,
+        "name": "Shell Armor",
+        "count": 2,
+        "resources": { "lumber": 1, "metal": 2, "hide": 2 },
+        "slot": "Body",
+        "source": "Craftsman 6",
+        "desc": "During yur turn, perform {WARD.fh} self",
+        "spent": true
+    },
+    {
+        "id": 33,
+        "name": "Volatile Boots",
+        "count": 2,
+        "resources": { "item": [18, 96], "metal": 1 },
+        "slot": "Legs",
+        "source": "Craftsman 6",
+        "desc": "Up to once each turn during your move ability, add +1 {MOVE.fh}, then flip this card over at the end of your turn.",
+        "backDesc": "Up to once each turn during your move ability, suffer {DAMAGE.fh} 1, then flip this card over at the end of your turn."
+    },
+    {
+        "id": 34,
+        "name": "Shrapnel Bomb",
+        "count": 2,
+        "resources": { "item": [97], "metal": 2 },
+        "slot": "One Hand",
+        "source": "Craftsman 6",
+        "desc": "After your ranged attack, all enemies adjacent to the target suffer {DAMAGE.fh} 2.",
+        "consumed": true
+    },
+    {
+        "id": 35,
+        "name": "Kite Shield",
+        "count": 2,
+        "resources": { "lumber": 2, "metal": 1 },
+        "slot": "One Hand",
+        "source": "Craftsman 6",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack and prevent any negative conditions from the attack.",
+        "minusOneCardsAdded": 2,
+        "spent": true
+    },
+    {
+        "id": 36,
+        "name": "Plumed Helmet",
+        "count": 2,
+        "resources": { "item": [16], "hide": 1, "snowthistle": 1 },
+        "slot": "Head",
+        "source": "Craftsman 7",
+        "desc": "When you are attacked by an attack with disadvantage, treat all {+0_MODIFIER} and {+1_MODIFIER} attack modifier cards as {-1_MODIFIER}."
+    },
+    {
+        "id": 37,
+        "name": "Ghost Cloak",
+        "count": 2,
+        "resources": { "item": [3, 114], "corpsecap": 1 },
+        "slot": "Body",
+        "source": "Craftsman 7\nSR-36",
+        "desc": "During your turn suffer {DAMAGE.fh} 3 to perform {INVISIBLE.fh} self",
+        "consumed": true
+    },
+    {
+        "id": 38,
+        "name": "Duelists Shoes",
+        "count": 2,
+        "resources": { "item": [13, 113] },
+        "slot": "Legs",
+        "source": "Craftsman 7",
+        "desc": "During your turn, perform: {MOVE.fh} 2 This movement must end adjacent to an enemy.",
+        "spent": true
+    },
+    {
+        "id": 39,
+        "name": "Abyss Axe",
+        "count": 2,
+        "resources": { "item": [29, 101, 112] },
+        "slot": "Two Hands",
+        "source": "Craftsman 7",
+        "desc": "During your attack ability, add +3 {ATTACK.fh} and {PIERCE.fh} 1 to one attack targeting a Frozen Corpse, Ice Wraith, or Living Doom.",
+        "spent": true
+    },
+    {
+        "id": 40,
+        "name": "Heartstrike Bow",
+        "count": 2,
+        "resources": { "item": [20, 85], "lumber": 1 },
+        "slot": "Two Hands",
+        "source": "Craftsman 7",
+        "desc": "During your turn, add +1 {ATTACK.fh} and +2 {RANGE.fh} to one of your ranged attacks.",
+        "spent": true
+    },
+    {
+        "id": 41,
+        "name": "Intricate Charm",
+        "count": 2,
+        "resources": { "item": [11, 110], "metal": 1 },
+        "slot": "Head",
+        "source": "Craftsman 8",
+        "desc": "At the start of the scenario remove one {+0_MODIFIER} and one {-1_MODIFIER} modifier card from your attack modifier deck."
+    },
+    {
+        "id": 42,
+        "name": "Ornate Armor",
+        "count": 2,
+        "resources": { "item": [112], "metal": 3 },
+        "slot": "Body",
+        "source": "Craftsman 8",
+        "desc": "On the next two sources of {DAMAGE.fh} from attacks targeting you gain {SHIELD.fh} 2 for the attacks.",
+        "minusOneCardsAdded": 4,
+        "spent": true
+    },
+    {
+        "id": 43,
+        "name": "Kicking Boots",
+        "count": 2,
+        "resources": { "item": [28, 90], "metal": 1 },
+        "slot": "Legs",
+        "source": "Craftsman 8",
+        "desc": "During your melee attack ability, add {PUSH.fh} 2 to one attack.",
+        "spent": true
+    },
+    {
+        "id": 44,
+        "name": "Sword of Absolution",
+        "count": 2,
+        "resources": { "item": [24, 101] },
+        "slot": "One Hand",
+        "source": "Craftsman 8",
+        "desc": "When you would gain {POISON.fh} or {CURSE.fh}, gain {BLESS.fh} instead.",
+        "spent": true
+    },
+    {
+        "id": 45,
+        "name": "Master Scepter",
+        "count": 2,
+        "resources": { "item": [9, 25] },
+        "slot": "One Hand",
+        "source": "Craftsman 8",
+        "desc": "During your turn, perform: {HEAL.fh} 1 {TARGET.fh} 1 ally, {RANGE.fh} 2, {WARD.fh} ",
+        "spent": true
+    },
+    {
+        "id": 46,
+        "name": "Double-Lens Goggles",
+        "count": 2,
+        "resources": { "item": [26, 129], "hide": 1 },
+        "slot": "Head",
+        "source": "Craftsman 9",
+        "desc": "During your attack ability, gain advantage on all attacks and treat all {+0_MODIFIER} and {-1_MODIFIER} modifier cards as {+1_MODIFIER} instead.",
+        "spent": true
+    },
+    {
+        "id": 47,
+        "name": "Robes of Doom",
+        "count": 2,
+        "resources": { "item": [27, 119, 162] },
+        "slot": "Body",
+        "source": "Craftsman 9\nWR-34",
+        "desc": "On the next two sources of {DAMAGE.fh} from attacks targeting you, suffer {DAMAGE.fh} 3 to give the attacker {BRITTLE.fh}.",
+        "spent": true
+    },
+    {
+        "id": 48,
+        "name": "Living Shoes",
+        "count": 2,
+        "resources": { "item": [13], "hide": 2, "flamefruit": 1 },
+        "slot": "Legs",
+        "source": "Craftsman 9",
+        "desc": "After an ally's heal ability targeting you, perform: {MOVE.fh} 2"
+    },
+    {
+        "id": 49,
+        "name": "Cruel Dagger",
+        "count": 2,
+        "resources": { "item": [111, 145], "metal": 1 },
+        "slot": "One Hand",
+        "source": "Craftsman 9",
+        "desc": "During your melee attack ability, add +1 {ATTACK.fh} and {WOUND.fh} to one attack.",
+        "spent": true
+    },
+    {
+        "id": 50,
+        "name": "Shield of Reciprocity",
+        "count": 2,
+        "resources": { "item": [35, 105, 161], "metal": 1 },
+        "slot": "One Hand",
+        "source": "Craftsman 9",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack and flip this card over.",
+        "backDesc": "During your melee attack ability, add {PIERCE.fh} 1 to one attack and flip this card over.",
+        "minusOneCardsAdded": 3
+    },
+    {
+        "id": 51,
+        "name": "Spiked Collar",
+        "count": 2,
+        "resources": { "item": [11], "flamefruit": 1 },
+        "slot": "Head",
+        "source": "Random Blueprint\nSO-48",
+        "desc": "During your turn perform {WOUND.fh} self",
+        "spent": true
+    },
+    {
+        "id": 52,
+        "name": "Laser Lens",
+        "count": 2,
+        "resources": { "item": [97, 129] },
+        "slot": "Head",
+        "source": "Random Blueprint",
+        "desc": "During your turn, {FIRE_X} to cause up to two enemies within {RANGE.fh} 4 to suffer {DAMAGE.fh} 1.",
+        "spent": true
+    },
+    {
+        "id": 53,
+        "name": "Hobnail Boots",
+        "count": 2,
+        "resources": { "item": [18, 88], "metal": 1 },
+        "slot": "Legs",
+        "source": "Random Blueprint",
+        "desc": "After you move 4 or more hexes during your turn, gain {RETALIATE.fh} 1 for the round."
+    },
+    {
+        "id": 54,
+        "name": "Restful Slippers",
+        "count": 2,
+        "resources": { "item": [6, 92], "snowthistle": 1 },
+        "slot": "Legs",
+        "source": "Random Blueprint",
+        "desc": "During your short rest, instead of randomly losing one card from your discard pile, randomly draw three cards from your discard pile and choose one to lose.",
+        "spent": true
+    },
+    {
+        "id": 55,
+        "name": "Biting Gauntlet",
+        "count": 2,
+        "resources": { "item": [94], "metal": 1, "hide": 1 },
+        "slot": "One Hand",
+        "source": "Random Blueprint",
+        "desc": "When you are attacked by an adjacent enemy, gain {RETALIATE.fh} 2 for the attack.",
+        "spent": true
+    },
+    {
+        "id": 56,
+        "name": "Scavenger's Magnet",
+        "count": 2,
+        "resources": { "lumber": 1, "metal": 1 },
+        "slot": "One Hand",
+        "source": "Random Blueprint",
+        "desc": "During your turn, {EARTH_X} to loot one adjacent loot token.",
+        "spent": true
+    },
+    {
+        "id": 57,
+        "name": "Shovel",
+        "count": 2,
+        "resources": { "lumber": 1, "metal": 1 },
+        "slot": "One Hand",
+        "source": "Random Blueprint",
+        "desc": "During your turn, destroy one adjacent obstacle, hazardous terrain, difficult terrain, icy terrain, or trap tile.",
+        "consumed": false
+    },
+    {
+        "id": 58,
+        "name": "Slippery Sword",
+        "count": 2,
+        "resources": { "item": [14, 85, 90] },
+        "slot": "One Hand",
+        "source": "Random Blueprint",
+        "desc": "During your melee attack abiluty, add +2 {ATTACK.fh} to one attack. After the ability, gain {DISARM.fh}.",
+        "spent": true
+    },
+    {
+        "id": 59,
+        "name": "Charm of Expertise",
+        "count": 2,
+        "resources": { "item": [11, 113] },
+        "slot": "Head",
+        "source": "Random Blueprint",
+        "desc": "At the start of the scenario, for the scenario, gain one 1-mark perk from your character sheet which you have not yet gained."
+    },
+    {
+        "id": 60,
+        "name": "Cloak of Many Pockets",
+        "count": 2,
+        "resources": { "item": [132], "hide": 3 },
+        "slot": "Body",
+        "source": "Random Blueprint",
+        "desc": "At the start of the scenario, bring up to two additional {SMALL-ITEM} items."
+    },
+    {
+        "id": 61,
+        "name": "Spiked Shell",
+        "count": 2,
+        "resources": { "item": [32, 105], "metal": 1 },
+        "slot": "Body",
+        "source": "Random Blueprint",
+        "desc": "Immediately after you are attacked by an adjacent enemy, that enemy suffers {DAMAGE.fh} X, where is X is your {SHIELD.fh} value for the attack.",
+        "spent": true
+    },
+    {
+        "id": 62,
+        "name": "Everlasting Boots",
+        "count": 2,
+        "resources": { "item": [28, 99] },
+        "slot": "Legs",
+        "source": "Random Blueprint",
+        "desc": "During your move ability, add +1 {MOVE.fh} and gain {REGENERATE.fh}",
+        "spent": true
+    },
+    {
+        "id": 63,
+        "name": "Shadow Stompers",
+        "count": 2,
+        "resources": { "item": [13, 158] },
+        "slot": "Legs",
+        "source": "Random Blueprint",
+        "desc": "During your move ability, {DARK_X} add +2 {MOVE.fh}",
+        "spent": true
+    },
+    {
+        "id": 64,
+        "name": "Detonator",
+        "count": 2,
+        "resources": { "item": [96, 112], "metal": 1 },
+        "slot": "One Hand",
+        "source": "Random Blueprint",
+        "desc": "When one of your summons is killed, all enemies adjacent to it suffer {DAMAGE.fh} 2 and gain {WOUND.fh}.",
+        "consumed": true
+    },
+    {
+        "id": 65,
+        "name": "Rust Powder",
+        "count": 2,
+        "resources": { "item": [157], "corpsecap": 1 },
+        "slot": "Small Item",
+        "source": "Random Blueprint",
+        "desc": "During your turn, place a character token on one normal or elite enemy within {RANGE.fh} 3.  That enemy gains -1 {SHIELD.fh} for the scenario. {PERSISTENT}",
+        "consumed": true
+    },
+    {
+        "id": 66,
+        "name": "Amulet of Eternal Life",
+        "count": 2,
+        "resources": { "item": [109, 120] },
+        "slot": "Head",
+        "source": "Scenario 188",
+        "desc": "At the start of your rest, perform: {HEAL.fh} 1 self"
+    },
+    {
+        "id": 67,
+        "name": "Converging Lenses",
+        "count": 2,
+        "resources": { "item": [1, 93], "metal": 1 },
+        "slot": "Head",
+        "source": "unknown",
+        "desc": "When you are attacked, add +1 {ATTACK.fh} to attack to instead of drawing an attack modifier card and flip this card over.",
+        "backDesc": "During you attack ability add +1 {ATTACK.fh} to one attack instead of drawing an attack modifier card and flip this card over."
+    },
+    {
+        "id": 68,
+        "name": "Scaled Armor",
+        "count": 2,
+        "resources": { "item": [89, 123] },
+        "slot": "Body",
+        "source": "Treasure 22",
+        "desc": "On the next three sources of 2 or fewer {DAMAGE.fh} you would suffer, negate the {DAMAGE.fh}.",
+        "consumed": true
+    },
+    {
+        "id": 69,
+        "name": "Feathered Cloak",
+        "count": 2,
+        "resources": { "item": [3, 233] },
+        "slot": "Body",
+        "source": "Scenario 32",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, {WIND_X} to gain {SHIELD.fh} 3 for the attack.",
+        "spent": true
+    },
+    {
+        "id": 70,
+        "name": "Aesther Robe",
+        "count": 2,
+        "resources": { "item": [27, 113] },
+        "slot": "Body",
+        "source": "Scenario 81",
+        "desc": "When you suffer {DAMAGE.fh} from {RETALIATE.fh}, reduce the {DAMAGE.fh} to 1. If it already 1, reduce it to 0 instead."
+    },
+    {
+        "id": 71,
+        "name": "Bone Boots",
+        "count": 2,
+        "resources": { "item": [18], "corpsecap": 1 },
+        "slot": "Legs",
+        "source": "Treasure 49",
+        "desc": "After your ability where you kill an enemy, perform: {MOVE.fh} 4",
+        "consumed": true
+    },
+    {
+        "id": 72,
+        "name": "Oak Staff",
+        "count": 2,
+        "resources": { "item": [91], "lumber": 1 },
+        "slot": "Two Hands",
+        "source": "Treasure 82",
+        "desc": "During your turn, {LIGHT_X} to perform: {BLESS.fh} {RANGE.fh} 3",
+        "spent": true
+    },
+    {
+        "id": 73,
+        "name": "Energizing Baton",
+        "count": 2,
+        "resources": { "item": [101], "metal": 2 },
+        "slot": "One Hand",
+        "source": "Scenario 44",
+        "desc": "When you apply a positive condition to an ally, a different ally within {RANGE.fh} 3 gains the same condition.",
+        "spent": true
+    },
+    {
+        "id": 74,
+        "name": "Shock Grenades",
+        "count": 2,
+        "resources": { "item": [19, 97] },
+        "slot": "One Hand",
+        "source": "Scenario 51",
+        "desc": "During your turn, perform {MUDDLE.fh} {RANGE.fh} 2 {AOE.CONE_1_1}",
+        "spent": true
+    },
+    {
+        "id": 75,
+        "name": "Rose Gauntlet",
+        "count": 2,
+        "resources": { "item": [30], "flamefruit": 1, "snowthistle": 1 },
+        "slot": "One Hand",
+        "source": "Scenario 110",
+        "desc": "After any ally within {RANGE.fh} 2 suffers {DAMAGE.fh} from an attack, remove all negative conditions from the ally then perform: {HEAL.fh} 3 {TARGET.fh} the ally, {PULL.fh} 1",
+        "consumed": true
+    },
+    {
+        "id": 76,
+        "name": "Horn of Command",
+        "count": 2,
+        "resources": { "metal": 1, "hide": 1, "rockroot": 1 },
+        "slot": "One Hand",
+        "source": "Treasure 70",
+        "desc": "During one of your summons' turns, decide how it peforms it's abilities.",
+        "spent": true
+    },
+    {
+        "id": 77,
+        "name": "Chaos Cannon",
+        "count": 2,
+        "resources": { "item": [86], "metal": 2 },
+        "slot": "One Hand",
+        "source": "Treasure 40",
+        "desc": "During you turn, replace one 1-hex obstacle, hazardous terrain, difficult terrain, or icy terrain tile in an unoccupied hex withing {RANGE.fh} 2 with a different type of tile listed above.",
+        "consumed": true
+    },
+    {
+        "id": 78,
+        "name": "Balanced Scales",
+        "count": 2,
+        "resources": { "item": [110], "metal": 1, "hide": 1 },
+        "slot": "One Hand",
+        "source": "Treasure 31",
+        "desc": "Once each turn, during your attack ability, gain advantage on one attack, then flip this card over at the end of your turn.",
+        "backDesc": "Once each turn, during your attack ability, gain disadvantage on one attack, then flip this card over at the end of your turn."
+    },
+    {
+        "id": 79,
+        "name": "Roasted Fowl",
+        "count": 2,
+        "resources": { "hide": 2, "flamefruit": 1, "snowthistle": 1 },
+        "slot": "Small Item",
+        "source": "Scenario 93",
+        "desc": "During you turn, add +1 {ATTACK.fh} to all your attacks and perform: {HEAL.fh} 2 self",
+        "consumed": true
+    },
+    {
+        "id": 80,
+        "name": "Living Stone",
+        "count": 2,
+        "resources": { "item": [99, 156], "rockroot": 1 },
+        "slot": "Small Item",
+        "source": "Treasure 72",
+        "desc": "When you would suffer 4 or fewer {DAMAGE.fh} from attack, negate the {DAMAGE.fh} and perform {HEAL.fh} X self wheee x is the amount of damage you would have suffered.",
+        "consumed": true
+    },
+    {
+        "id": 81,
+        "name": "Pain Simulacrum",
+        "count": 2,
+        "resources": { "item": [97], "hide": 2 },
+        "slot": "Small Item",
+        "source": "Treasure 59",
+        "desc": "When you suffer 5 or fewer {DAMAGE.fh} from an attack, one enemy within {RANGE.fh} 2 also suffers the same amount of {DAMAGE.fh}.",
+        "consumed": true
+    },
+    {
+        "id": 82,
+        "name": "Mechanical Cube",
+        "count": 2,
+        "resources": { "item": [112], "metal": 2 },
+        "slot": "Small Item",
+        "source": "Both Treasure 62 and 69",
+        "desc": "During your move ability, after you enter any one hex, give {IMMOBILIZE.fh} to all adjacent enemies.",
+        "consumed": true
+    },
+    {
+        "id": 83,
+        "name": "Healing Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "rockroot": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {HEAL.fh} 3 self",
+        "consumed": true
+    },
+    {
+        "id": 84,
+        "name": "Stamina Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "snowthistle": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, {RECOVER.fh} one level 1 card from your discard pile.",
+        "consumed": true,
+        "lost": true
+    },
+    {
+        "id": 85,
+        "name": "Power Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "axenut": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, add +1 {ATTACK.fh} to all your attacks.",
+        "consumed": true
+    },
+    {
+        "id": 86,
+        "name": "Element Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, {ANY}",
+        "consumed": true
+    },
+    {
+        "id": 87,
+        "name": "Cure Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "corpsecap": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, remove one negative condition you have.  This item can be used while you have {IMPAIR.fh} or {STUN.fh}.",
+        "consumed": true
+    },
+    {
+        "id": 88,
+        "name": "Fireshield Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn perform {RETALIATE.fh} 1 {RANGE.fh} 3 {ROUND}",
+        "consumed": true
+    },
+    {
+        "id": 89,
+        "name": "Stoneskin Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "corpsecap": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {WARD.fh} self",
+        "consumed": true
+    },
+    {
+        "id": 90,
+        "name": "Muscle Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {STRENGTHEN.fh} self",
+        "consumed": true
+    },
+    {
+        "id": 91,
+        "name": "Holy Water",
+        "count": 2,
+        "resources": { "corpsecap": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {BLESS.fh} self",
+        "consumed": true
+    },
+    {
+        "id": 92,
+        "name": "Renewing Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "snowthistle": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, {RECOVER.fh} up to two of your spent items.",
+        "consumed": true
+    },
+    {
+        "id": 93,
+        "name": "Glancing Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "axenut": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "When you reveal a {NULL_MODIFIER} attack modifier card from your attack modifier deck, treat it as a {+0_MODIFIER} instead.",
+        "consumed": true
+    },
+    {
+        "id": 94,
+        "name": "Frenzy Potion",
+        "count": 2,
+        "resources": { "corpsecap": 1, "axenut": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform: {ATTACK.fh} 2",
+        "consumed": true
+    },
+    {
+        "id": 95,
+        "name": "Poison Vial",
+        "count": 2,
+        "resources": { "snowthistle": 1, "corpsecap": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy\nSR-14",
+        "desc": "During your turn, perform {POISON.fh} {RANGE.fh} 1",
+        "consumed": true
+    },
+    {
+        "id": 96,
+        "name": "Flame Vial",
+        "count": 2,
+        "resources": { "snowthistle": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {WOUND.fh} {RANGE.fh} 1",
+        "consumed": true
+    },
+    {
+        "id": 97,
+        "name": "Explosive Vial",
+        "count": 2,
+        "resources": { "snowthistle": 1, "axenut": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, one enemy withing {RANGE.fh} 2 suffers {DAMAGE.fh} 2.",
+        "consumed": true
+    },
+    {
+        "id": 98,
+        "name": "Unhealthy Mixture",
+        "count": 2,
+        "resources": { "any": 2 },
+        "slot": "Small Item",
+        "source": "Alchemy\nWO-10",
+        "desc": "During your turn, perform {WOUND.fh}, {POISON.fh} self",
+        "consumed": true
+    },
+    {
+        "id": 99,
+        "name": "Major Healing Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "rockroot": 1, "snowthistle": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {HEAL.fh} 6 self",
+        "consumed": true
+    },
+    {
+        "id": 100,
+        "name": "Major Stamina Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "snowthistle": 1, "axenut": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, {RECOVER.fh} one card from your discard pile.",
+        "consumed": true,
+        "lost": true
+    },
+    {
+        "id": 101,
+        "name": "Major Power Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "axenut": 1, "corpsecap": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, add +2 {ATTACK.fh} to all your attacks.",
+        "consumed": true
+    },
+    {
+        "id": 102,
+        "name": "Major Element Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "axenut": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, {ANY} {ANY}",
+        "consumed": true
+    },
+    {
+        "id": 103,
+        "name": "Major Cure Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "corpsecap": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, remove all negative conditions you have.  This item can be used while you have {IMPAIR.fh} or {STUN.fh}.",
+        "consumed": true
+    },
+    {
+        "id": 104,
+        "name": "Swiftness Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "axenut": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your move ability, add +3 {MOVE.fh} and {JUMP.fh}.",
+        "consumed": true
+    },
+    {
+        "id": 105,
+        "name": "Major Fireshield Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "rockroot": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform, {RETALIATE.fh} 2 {RANGE.fh} 3 {ROUND}",
+        "consumed": true
+    },
+    {
+        "id": 106,
+        "name": "Stonewall Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "rockroot": 1, "axenut": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {WARD.fh} {TARGET.fh} 2 adjacent allies and self",
+        "consumed": true
+    },
+    {
+        "id": 107,
+        "name": "Vigor Potion",
+        "count": 2,
+        "resources": { "arrowvine": 1, "rockroot": 1, "corpsecap": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {STRENGTHEN.fh} {TARGET.fh} 2 adjacent allies and self",
+        "consumed": true
+    },
+    {
+        "id": 108,
+        "name": "Holy Rain",
+        "count": 2,
+        "resources": { "arrowvine": 1, "snowthistle": 1, "corpsecap": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform {BLESS.fh} {TARGET.fh} 2 adjacent allies and self",
+        "consumed": true
+    },
+    {
+        "id": 109,
+        "name": "Major Renewing Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "snowthistle": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, {RECOVER.fh} up to one of your lost 2-herb potions.",
+        "consumed": true
+    },
+    {
+        "id": 110,
+        "name": "Precision Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "snowthistle": 1, "corpsecap": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "When you reveal a {NULL_MODIFIER} attack modifier card from your attack modifier deck, treat it as a {+2_MODIFIER} instead.",
+        "consumed": true
+    },
+    {
+        "id": 111,
+        "name": "Major Frenzy Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "axenut": 1, "corpsecap": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform: {ATTACK.fh} 4",
+        "consumed": true
+    },
+    {
+        "id": 112,
+        "name": "Hammer Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "snowthistle": 1, "axenut": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn suffer {DAMAGE.fh} 10.",
+        "consumed": true
+    },
+    {
+        "id": 113,
+        "name": "Expertise Potion",
+        "count": 2,
+        "resources": { "rockroot": 1, "corpsecap": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "At the start of your turn, discard one of your played cards to perform both the top and bottom actions of your other played card. At most one action can trigger a {CONSUMED.fh} icon.",
+        "consumed": true
+    },
+    {
+        "id": 114,
+        "name": "Foresight Potion",
+        "count": 2,
+        "resources": { "snowthistle": 1, "corpsecap": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, reveal the top card of one monster ability deck. You may place the card on the bottom of the deck.",
+        "consumed": true
+    },
+    {
+        "id": 115,
+        "name": "Infusion Potion",
+        "count": 2,
+        "resources": { "axenut": 1, "corpsecap": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, ignore one elemental consumption symbol on an action you played and gain its effect.",
+        "consumed": true
+    },
+    {
+        "id": 116,
+        "name": "Plague Flask",
+        "count": 2,
+        "resources": { "snowthistle": 1, "axenut": 1, "corpsecap": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn perform, {POISON.fh} {RANGE.fh} 1 {AOE.CONE_1_1}",
+        "consumed": true
+    },
+    {
+        "id": 117,
+        "name": "Inferno Flask",
+        "count": 2,
+        "resources": { "snowthistle": 1, "axenut": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn perform, {WOUND.fh} {RANGE.fh} 1 {AOE.CONE_1_1}",
+        "consumed": true
+    },
+    {
+        "id": 118,
+        "name": "Fulminant Flask",
+        "count": 2,
+        "resources": { "arrowvine": 1, "snowthistle": 1, "flamefruit": 1 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, one enemy within {RANGE.fh} 2 suffers {DAMAGE.fh} 4.",
+        "consumed": true
+    },
+    {
+        "id": 119,
+        "name": "Deadly Mixture",
+        "count": 2,
+        "resources": { "any": 3 },
+        "slot": "Small Item",
+        "source": "Alchemy",
+        "desc": "During your turn, perform: {WOUND.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh} self",
+        "consumed": true
+    },
+    {
+        "id": 120,
+        "name": "Amulet of Life",
+        "count": 2,
+        "cost": 15,
+        "slot": "Head",
+        "source": "Initially Available",
+        "desc": "During your turn, perform {HEAL.fh} 1 self",
+        "spent": true
+    },
+    {
+        "id": 121,
+        "name": "Circlet of Elements",
+        "count": 2,
+        "cost": 25,
+        "slot": "Head",
+        "source": "Initially Available",
+        "desc": "During your turn, perform {ANY_X}: {ANY}"
+    },
+    {
+        "id": 122,
+        "name": "Warden's Robes",
+        "count": 2,
+        "cost": 30,
+        "slot": "Body",
+        "source": "Initially Available",
+        "desc": "When one of your summons suffers {DAMAGE.fh} from an attack, that summons gains {SHIELD.fh} 2 for the attack.",
+        "spent": true
+    },
+    {
+        "id": 123,
+        "name": "Leather Armor",
+        "count": 2,
+        "cost": 15,
+        "slot": "Body",
+        "source": "Initially Available",
+        "desc": "When you are attacked, before drawing an attack modifier car, the attacker gains disadvantage on the attack.",
+        "spent": true
+    },
+    {
+        "id": 124,
+        "name": "Winged Shoes",
+        "count": 2,
+        "cost": 15,
+        "slot": "Legs",
+        "source": "Initially Available",
+        "desc": "During your turn, add {JUMP.fh} to all your move abilities.",
+        "spent": true
+    },
+    {
+        "id": 125,
+        "name": "Boots of Speed",
+        "count": 2,
+        "cost": 30,
+        "slot": "Legs",
+        "source": "Initially Available",
+        "desc": "During ordering of initiative after all ability card have been revealed, increase or decrease your initiative by 10.",
+        "spent": true
+    },
+    {
+        "id": 126,
+        "name": "Weighted Net",
+        "count": 2,
+        "cost": 20,
+        "slot": "Two Hands",
+        "source": "Initially Available",
+        "desc": "During your ranged attack ability, add {IMMOBILIZE.fh} to one attack.",
+        "spent": true
+    },
+    {
+        "id": 127,
+        "name": "Poison Dagger",
+        "count": 2,
+        "cost": 15,
+        "slot": "One Hand",
+        "source": "Initially Available",
+        "desc": "During your melee attack ability, add {POISON.fh} to one attack.",
+        "spent": true
+    },
+    {
+        "id": 128,
+        "name": "Heater Shield",
+        "count": 2,
+        "cost": 15,
+        "slot": "One Hand",
+        "source": "Initially Available",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack.",
+        "spent": true
+    },
+    {
+        "id": 129,
+        "name": "Eagle-Eye Goggles",
+        "count": 2,
+        "cost": 30,
+        "slot": "Head",
+        "source": "Trading Post 2",
+        "desc": "During your attack ability, gain advantage on all attacks.",
+        "spent": true
+    },
+    {
+        "id": 130,
+        "name": "Iron Helmet",
+        "count": 2,
+        "cost": 20,
+        "slot": "Head",
+        "source": "Trading Post 2",
+        "desc": "When you are attacked, treat any {2X_MODIFIER} attack modifier card the enemy draws as a {+0_MODIFIER} instead.",
+        "minusOneCardsAdded": 1
+    },
+    {
+        "id": 131,
+        "name": "Chainmail",
+        "count": 2,
+        "cost": 25,
+        "slot": "Body",
+        "source": "Trading Post 2",
+        "desc": "On the next three sources of {DAMAGE.fh} from attacks targeting you, you gain {SHIELD.fh} 1 for the attacks.",
+        "spent": true,
+        "minusOneCardsAdded": 3
+    },
+    {
+        "id": 132,
+        "name": "Cloak of Pockets",
+        "count": 2,
+        "cost": 30,
+        "slot": "Body",
+        "source": "Trading Post 2",
+        "desc": "At the start of the scenario, bring one additional {SMALL-ITEM} items."
+    },
+    {
+        "id": 133,
+        "name": "Nimble Legguards",
+        "count": 2,
+        "cost": 20,
+        "slot": "Legs",
+        "source": "Trading Post 2",
+        "desc": "When an adjacent ally would be targeted by an attack, you are targeted instead, regardless of range and line-of-sight.",
+        "spent": true
+    },
+    {
+        "id": 134,
+        "name": "Comfortable Shoes",
+        "count": 2,
+        "cost": 30,
+        "slot": "Legs",
+        "source": "Trading Post 2",
+        "desc": "When you use the basic bottom action of an ability card, perform {MOVE.fh} 3 instead of {MOVE.fh} 2."
+    },
+    {
+        "id": 135,
+        "name": "Armorbane Bow",
+        "count": 2,
+        "cost": 30,
+        "slot": "Two Hands",
+        "source": "Trading Post 2",
+        "desc": "During your attack, add {PIERCE.fh} 3 to all your ranged attacks.",
+        "consumed": true
+    },
+    {
+        "id": 136,
+        "name": "Battle Axe",
+        "count": 2,
+        "cost": 20,
+        "slot": "Two Hands",
+        "source": "Trading Post 2",
+        "desc": "During your single-target melee attack ability, change the targeting of the ability to: {AOE.CONE_0_1}",
+        "consumed": true
+    },
+    {
+        "id": 137,
+        "name": "Tower Shield",
+        "count": 2,
+        "cost": 35,
+        "slot": "One Hand",
+        "source": "Trading Post 2",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 2 for the attack.",
+        "minusOneCardsAdded": 1,
+        "spent": true
+    },
+    {
+        "id": 138,
+        "name": "Heavy Basinet",
+        "count": 2,
+        "cost": 30,
+        "slot": "Head",
+        "source": "Trading Post 3",
+        "desc": "When an enemy would give you {DISARM.fh}, {STUN.fh}, or {MUDDLE.fh}, prevent the condition.",
+        "minusOneCardsAdded": 2
+    },
+    {
+        "id": 139,
+        "name": "Horned Helm",
+        "count": 2,
+        "cost": 50,
+        "slot": "Head",
+        "source": "Trading Post 3",
+        "desc": "After your move 4 or more hexes on your turn, add +1 {ATTACK.fh} to your next melee attack this turn."
+    },
+    {
+        "id": 140,
+        "name": "Mantle of Summoning",
+        "count": 2,
+        "cost": 40,
+        "slot": "Body",
+        "source": "Trading Post 3",
+        "desc": "During your turn, grant one of your summons: {SHIELD.fh} 2. {ROUND}",
+        "spent": true
+    },
+    {
+        "id": 141,
+        "name": "Studded Leather",
+        "count": 2,
+        "cost": 20,
+        "slot": "Body",
+        "source": "Trading Post 3",
+        "desc": "When you are attacked, before drawing an attack modifier car, the attacker gains disadvantage on the attack and you gain {SHIELD.fh} 1 for the attack.",
+        "spent": true
+    },
+    {
+        "id": 142,
+        "name": "Boots of Quickness",
+        "count": 2,
+        "cost": 50,
+        "slot": "Legs",
+        "source": "Trading Post 3",
+        "desc": "During ordering of initiative after all ability card have been revealed, increase or decrease your initiative by 20.",
+        "spent": true
+    },
+    {
+        "id": 143,
+        "name": "Endurance Footwraps",
+        "count": 2,
+        "cost": 40,
+        "slot": "Legs",
+        "source": "Trading Post 3",
+        "desc": "After you move 4 or more hexes during your turn, after the move ability perform: {HEAL.fh} 1 self."
+    },
+    {
+        "id": 144,
+        "name": "Staff of Eminence",
+        "count": 2,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Trading Post 3",
+        "desc": "During your turn, {ANY_X} to add +1 {ATTACK.fh} to all your attacks.",
+        "spent": true
+    },
+    {
+        "id": 145,
+        "name": "Versatile Dagger",
+        "count": 2,
+        "cost": 25,
+        "slot": "One Hand",
+        "source": "Trading Post 3",
+        "desc": "When you use the basic top action of an ability card, perform {ATTACK.fh} 3 instead of {ATTACK.fh} 2."
+    },
+    {
+        "id": 146,
+        "name": "Hooked Chain",
+        "count": 2,
+        "cost": 35,
+        "slot": "Two Hands",
+        "source": "Trading Post 3",
+        "desc": "Duiring your attack, add {PULL.fh} 2 to all your ranged attacks.",
+        "spent": true
+    },
+    {
+        "id": 147,
+        "name": "Mask of Terror",
+        "count": 2,
+        "cost": 60,
+        "slot": "Head",
+        "source": "Trading Post 4",
+        "desc": "During your melee attack, add {PUSH.fh} 1."
+    },
+    {
+        "id": 148,
+        "name": "Circlet of Sanctity",
+        "count": 2,
+        "cost": 45,
+        "slot": "Head",
+        "source": "Trading Post 4",
+        "desc": "After the next three attacks targeting an ally within {RANGE.fh} 2, flip this card over.",
+        "backDesc": "During your turn, perform: {WARD.fh} {RANGE.fh}3 then flip this card over."
+    },
+    {
+        "id": 149,
+        "name": "Platemail",
+        "count": 2,
+        "cost": 50,
+        "slot": "Body",
+        "source": "Trading Post 4",
+        "desc": "On the next five sources of {DAMAGE.fh} from attacks targeting you, you gain {SHIELD.fh} 1 for the attacks.",
+        "spent": true,
+        "minusOneCardsAdded": 5
+    },
+    {
+        "id": 150,
+        "name": "Robes of the Oak",
+        "count": 2,
+        "cost": 30,
+        "slot": "Body",
+        "source": "Trading Post 4",
+        "desc": "During your turn, perform: {HEAL.fh} 3 {TARGET.fh} 1 ally, {RANGE.fh} 1 ",
+        "spent": true
+    },
+    {
+        "id": 151,
+        "name": "Serene Sandals",
+        "count": 2,
+        "cost": 75,
+        "slot": "Legs",
+        "source": "Trading Post 4",
+        "desc": "When you use the basic bottom action of an ability card, perform {MOVE.fh} 4 instead of {MOVE.fh} 2."
+    },
+    {
+        "id": 152,
+        "name": "Steel Sabatons",
+        "count": 2,
+        "cost": 55,
+        "slot": "Legs",
+        "source": "Trading Post 4",
+        "desc": "At the end of your turn, if you have moved 1 or fewer hexes during your turn, gain {SHIELD.fh} 1 for the round.",
+        "minusOneCardsAdded": 2
+    },
+    {
+        "id": 153,
+        "name": "Long Spear",
+        "count": 2,
+        "cost": 40,
+        "slot": "Two Hands",
+        "source": "Trading Post 4",
+        "desc": "During your single-target melee attack ability, change the targeting of the ability to: {AOE.LINE_0_1_1}",
+        "spent": true
+    },
+    {
+        "id": 154,
+        "name": "Volatile Bomb",
+        "count": 2,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Trading Post 4",
+        "desc": "During your single-target ranged attack ability, change the targeting of the ability to: {AOE.CONE_1_1}",
+        "consumed": true
+    },
+    {
+        "id": 155,
+        "name": "Wall Shield",
+        "count": 2,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Trading Post 4",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 4 for the attack.",
+        "spent": true,
+        "minusOneCardsAdded": 2
+    },
+    {
+        "id": 156,
+        "name": "Moon Earring",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
+        "source": "Jeweler 1",
+        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items.",
+        "consumed": true
+    },
+    {
+        "id": 157,
+        "name": "Steel Ring",
+        "count": 2,
+        "cost": 20,
+        "slot": "Small Item",
+        "source": "Jeweler 1",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 4 for the attack.",
+        "consumed": true
+    },
+    {
+        "id": 158,
+        "name": "Deep Earth Brooch",
+        "count": 2,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Jeweler 1",
+        "desc": "During your turn, perform {EARTH_OR_DARK_X}: {HEAL.fh} 3 self, {WARD.fh}",
+        "consumed": true
+    },
+    {
+        "id": 159,
+        "name": "Glorious Bracelet",
+        "count": 2,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Jeweler 1",
+        "desc": "After your attack ability during which one enemy suffered at least {DAMAGE.fh} 6, perform: {BLESS.fh}, {BLESS.fh} self",
+        "consumed": true
+    },
+    {
+        "id": 160,
+        "name": "Sun Earring",
+        "count": 2,
+        "cost": 35,
+        "slot": "Small Item",
+        "source": "Jeweler 2",
+        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items, and perform {HEAL.fh} 2 self.",
+        "consumed": true
+    },
+    {
+        "id": 161,
+        "name": "Strategists Ring",
+        "count": 2,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Jeweler 2",
+        "desc": "At the end of your turn, play one card from your hand and perform all persistent and mandatory abilities on either the top or bottom action of the card.",
+        "consumed": true
+    },
+    {
+        "id": 162,
+        "name": "Howling Ice Brooch",
+        "count": 2,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Jeweler 2",
+        "desc": "During your turn, perform {ICE_OR_WIND_X}: {ATTACK.fh} 3 {RANGE.fh} 3, {IMMOBILIZE.fh}",
+        "consumed": true
+    },
+    {
+        "id": 163,
+        "name": "Stunning Bracelet",
+        "count": 2,
+        "cost": 35,
+        "slot": "Small Item",
+        "source": "Jeweler 2",
+        "desc": "During your turn, give {STUN.fh} to half (rounded up) the enemies adjacent to you.",
+        "consumed": true
+    },
+    {
+        "id": 164,
+        "name": "Star Earring",
+        "count": 2,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Jeweler 3",
+        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items, choose which card to lose during the rest, and perform {HEAL.fh} 2 self.",
+        "consumed": true
+    },
+    {
+        "id": 165,
+        "name": "Ring of Haste",
+        "count": 2,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Jeweler 3",
+        "desc": "At the end of you turn, play one card from your hand and perform the bottom action of the card.",
+        "consumed": true
+    },
+    {
+        "id": 166,
+        "name": "Blazing Sun Brooch",
+        "count": 2,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Jeweler 3",
+        "desc": "During your turn, perform {FIRE_OR_LIGHT_X}: {ATTACK.fh} 3 {DISARM.fh}",
+        "consumed": true
+    },
+    {
+        "id": 167,
+        "name": "Attractive Bracelet",
+        "count": 2,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Jeweler 3\nWR-10",
+        "desc": "At the start of the enemy's turn, before it determines its focus, perform: {PULL.fh} 4 {TARGET.fh} the enemy, {RANGE.fh} 5, {MUDDLE.fh}",
+        "consumed": true
+    },
+    {
+        "id": 168,
+        "name": "Circlet of Eyes",
+        "count": 1,
+        "cost": 50,
+        "slot": "Head",
+        "source": "Loot Deck Random",
+        "desc": "During your ranged attack ability, add +1 {TARGET.fh}.",
+        "consumed": true
+    },
+    {
+        "id": 169,
+        "name": "Fateful Charm",
+        "count": 1,
+        "cost": 30,
+        "slot": "Head",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, reveal the top card of your attack modifier deck.  You may place the card on the bottom of the deck.",
+        "spent": true
+    },
+    {
+        "id": 170,
+        "name": "Eye of Truth",
+        "count": 1,
+        "cost": 25,
+        "slot": "Head",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, reveal the top card of each monster ability deck.",
+        "consumed": true
+    },
+    {
+        "id": 171,
+        "name": "Rejuvenating Charm",
+        "count": 1,
+        "cost": 20,
+        "slot": "Head",
+        "source": "Loot Deck Random",
+        "desc": "Whenever you lose a card to negate {DAMAGE.fh}, {RECOVER.fh} up to one card from your discard pile and gain {REGENERATE.fh}."
+    },
+    {
+        "id": 172,
+        "name": "Cap of Premonition",
+        "count": 1,
+        "cost": 25,
+        "slot": "Head",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, look at the top four cards of your attack modifier deck and put them back in any order.",
+        "consumed": true
+    },
+    {
+        "id": 173,
+        "name": "Multi Colored Cloak",
+        "count": 1,
+        "cost": 20,
+        "slot": "Body",
+        "source": "Loot Deck Random",
+        "desc": "When attacked: {ANY}.",
+        "spent": true
+    },
+    {
+        "id": 174,
+        "name": "Magnetic Cape",
+        "count": 1,
+        "cost": 40,
+        "slot": "Body",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, perform: {TELEPORT.fh} 20 This teleport must end in a hex adjacent to one of your allies.",
+        "consumed": true
+    },
+    {
+        "id": 175,
+        "name": "Mirrored Armor",
+        "count": 1,
+        "cost": 35,
+        "slot": "Body",
+        "source": "Loot Deck Random",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, the attacker suffers and equal amount of {DAMAGE.fh}.",
+        "consumed": true,
+        "minusOneCardsAdded": 2
+    },
+    {
+        "id": 176,
+        "name": "Blinking Cape",
+        "count": 1,
+        "cost": 50,
+        "slot": "Body",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, perform: {TELEPORT.fh} 4 This teleport must end in a hex adjacent to one of your enemies.",
+        "consumed": true
+    },
+    {
+        "id": 177,
+        "name": "Boots of Transference",
+        "count": 1,
+        "cost": 40,
+        "slot": "Legs",
+        "source": "Loot Deck Random",
+        "desc": "When you spring a trap by entering its hex, you may apply its effects to a figure withing {RANGE.fh} 3 instead of yourself.",
+        "consumed": true
+    },
+    {
+        "id": 178,
+        "name": "Tranquil Shoes",
+        "count": 1,
+        "cost": 40,
+        "slot": "Legs",
+        "source": "Loot Deck Random",
+        "desc": "At the start of your turn in which your initiative is 60 or higher and you are not performing a long rest, perform {HEAL.fh} 1 self."
+    },
+    {
+        "id": 179,
+        "name": "Burst Boots",
+        "count": 1,
+        "cost": 25,
+        "slot": "Legs",
+        "source": "Loot Deck Random",
+        "desc": "During your move ability, add +4 {MOVE.fh}.  After the move ability gain {IMMOBILIZE.fh}.",
+        "consumed": true
+    },
+    {
+        "id": 180,
+        "name": "Boots of Greed",
+        "count": 1,
+        "cost": 35,
+        "slot": "Legs",
+        "source": "Loot Deck Random",
+        "desc": "When you loot two or more tokens at once, peform: {BLESS.fh} self."
+    },
+    {
+        "id": 181,
+        "name": "Translocation Rod",
+        "count": 1,
+        "cost": 30,
+        "slot": "Two Hands",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, designate two allies or any two normal or elite monsters. Each designated figure simultaneously {TELEPORT.fh} to the hex occupied by the other designated figure.",
+        "consumed": true
+    },
+    {
+        "id": 182,
+        "name": "Wing Clippers",
+        "count": 1,
+        "cost": 40,
+        "slot": "Two Hands",
+        "source": "Loot Deck Random",
+        "desc": "Afer your melee attack , place a character token on the target. The target loses {FLYING.fh}. {PERSISTENT}",
+        "spent": true
+    },
+    {
+        "id": 183,
+        "name": "Decanter of Mists",
+        "count": 1,
+        "cost": 35,
+        "slot": "One Hand",
+        "source": "Loot Deck Random\nTreasure 16",
+        "desc": "During your turn, all figures gain disadvantage on and add 1 {RANGE.fh} to all ranged attacks this round. {ROUND}",
+        "consumed": true
+    },
+    {
+        "id": 184,
+        "name": "Flashing Axe",
+        "count": 1,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Loot Deck Random",
+        "desc": "During your multi-target melee attack ability, add +1 {TARGET.fh}.",
+        "consumed": true
+    },
+    {
+        "id": 185,
+        "name": "Mirrored Knife",
+        "count": 1,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Loot Deck Random",
+        "desc": "During your melee attack ability, add all negative conditions you have except {BRITTLE.fh}, {BANE.fh} and {STUN.fh} to one attack.",
+        "spent": true
+    },
+    {
+        "id": 186,
+        "name": "Wild Growth Seeds",
+        "count": 1,
+        "cost": 20,
+        "slot": "Small Item",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, create one 1-hex obstacle in an adjacent empty hex.",
+        "consumed": true
+    },
+    {
+        "id": 187,
+        "name": "Dangerous Gear",
+        "count": 1,
+        "cost": 25,
+        "slot": "Small Item",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, create one {DAMAGE.fh} 3 trap in an adjacent empty hex.",
+        "consumed": true
+    },
+    {
+        "id": 188,
+        "name": "Freezing Crystal",
+        "count": 1,
+        "cost": 35,
+        "slot": "Small Item",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, create one 1-hex hazardous terrain, icy terrain, or water tile in an adjacent featureless hex.",
+        "consumed": true
+    },
+    {
+        "id": 189,
+        "name": "Ring of the Night",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Loot Deck Random",
+        "desc": "During your, perform {DARK_X} {ANY_X}: {INVISIBLE.fh} self",
+        "consumed": true
+    },
+    {
+        "id": 190,
+        "name": "White Card",
+        "count": 1,
+        "cost": 20,
+        "slot": "Small Item",
+        "source": "Loot Deck Random",
+        "desc": "During your turn, place a character token on one normal or elite enemy withing {RANGE.fh} 3. This enemy adds -1 {ATTACK.fh} to all its attacks. {PERSISTENT}.",
+        "consumed": true
+    },
+    {
+        "id": 191,
+        "name": "Corrupted Scroll",
+        "count": 1,
+        "cost": 25,
+        "slot": "Small Item",
+        "source": "Loot Deck Random",
+        "desc": "During your, perform {HEAL.fh} 5 {RANGE.fh} 5 {POISON.fh} {TARGET.fh} the target of the heal ability",
+        "consumed": true
+    },
+    {
+        "id": 192,
+        "name": "Enticing Bell",
+        "count": 1,
+        "cost": 25,
+        "slot": "Small Item",
+        "source": "Loot Deck Random",
+        "desc": "At the end of your turn, designate one enemy withing {RANGE.fh} 3. You are its primary focus and it does not avoid negative hexes when determining movement this round. {ROUND}",
+        "consumed": true
+    },
+    {
+        "id": 193,
+        "name": "Mind Thieving Helmet",
+        "count": 1,
+        "cost": 30,
+        "slot": "Head",
+        "source": "Scenario 121",
+        "desc": "During your turn, control one enemy withing {RANGE.fh} 3: {ATTACK.fh} 3",
+        "consumed": true
+    },
+    {
+        "id": 194,
+        "name": "Temporal Amulet",
+        "count": 1,
+        "cost": 30,
+        "slot": "Head",
+        "source": "Scenario 125",
+        "desc": "During ordering of initiative after all ability card have been revealed, increase or decrease a monster set's initiative by 30."
+    },
+    {
+        "id": 195,
+        "name": "Tri-Corner Hat",
+        "count": 2,
+        "cost": 30,
+        "slot": "Head",
+        "source": "Treasure 83\nScenario 127",
+        "desc": "During your turn add +1 {RANGE.fh} and {PIERCE.fh} 1 to one of your ranged attacks.",
+        "spent": true
+    },
+    {
+        "id": 196,
+        "name": "Choker of Sacrifice",
+        "count": 1,
+        "cost": 30,
+        "slot": "Head",
+        "source": "SR-26",
+        "desc": "During your turn, discard one loot card except Random Item to perform: {HEAL.fh} 5 {RANGE.fh} 2, {WARD.fh}",
+        "consumed": true
+    },
+    {
+        "id": 197,
+        "name": "Aesther Diadem",
+        "count": 1,
+        "cost": 30,
+        "slot": "Head",
+        "source": "WO-77",
+        "desc": "After ordering of initiative, exchange a card in your hand for one which you have played. Your initiative is unaffected.",
+        "consumed": true
+    },
+    {
+        "id": 198,
+        "name": "Hunter's Necklace",
+        "count": 1,
+        "cost": 35,
+        "slot": "Head",
+        "source": "WR-36",
+        "desc": "During your turn, perform {PULL.fh} 3 {RANGE.fh} 4",
+        "consumed": true
+    },
+    {
+        "id": 199,
+        "name": "Opulent Shoes",
+        "count": 2,
+        "cost": 30,
+        "slot": "Legs",
+        "source": "Treasure 6\nTreasure 78",
+        "desc": "At the start of the scenario, consider yourself to be your summons in initiative order when determining monster focus for the remainder of the scenario."
+    },
+    {
+        "id": 200,
+        "name": "Eventide Scepter",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Treasure 4",
+        "desc": "During your heal ability targeting an ally, {LIGHT_X} to add {REGENERATE.fh} to one heal and flip this card over.",
+        "backDesc": "During your attack ability, {DARK_X} to add {CURSE.fh} to one attack and flip this card over."
+    },
+    {
+        "id": 201,
+        "name": "Wave Blade",
+        "count": 1,
+        "cost": 50,
+        "slot": "Two Hands",
+        "source": "Scenario 76\nScenario 77",
+        "desc": "Diromg your attack ability performed while occupying or ad adjacent to a hex with a water tile, add {PUSH.fh} 1 and {IMMOBILIZE.fh} to one attack.",
+        "spent": true
+    },
+    {
+        "id": 202,
+        "name": "Giant Piranha Pig Spine",
+        "count": 1,
+        "cost": 40,
+        "slot": "Two Hands",
+        "source": "Scenario 83",
+        "desc": "During your melee attack ability, add {PIERCE.fh} 2 and {WOUND.fh} to one attack.",
+        "spent": true
+    },
+    {
+        "id": 203,
+        "name": "Scepter of Control",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Scenario 119",
+        "desc": "After your ability control one target: {MOVE.fh} 2",
+        "consumed": true
+    },
+    {
+        "id": 204,
+        "name": "Severed Claw",
+        "count": 1,
+        "cost": 35,
+        "slot": "One Hand",
+        "source": "Treasure 5",
+        "desc": "During your turn, one adjacent normal or elite enemy suffers {DAMAGE.fh} to their {SHIELD.fh} value.",
+        "consumed": true,
+        "minusOneCardsAdded": 1
+    },
+    {
+        "id": 205,
+        "name": "Harpoon",
+        "count": 1,
+        "cost": 30,
+        "slot": "Two Hands",
+        "source": "Treasure 55",
+        "desc": "During your, perform {ATTACK.fh} 2 {RANGE.fh}, {PULL.fh} 2",
+        "consumed": true
+    },
+    {
+        "id": 206,
+        "name": "Giant Sword",
+        "count": 1,
+        "cost": 40,
+        "slot": "Two Hands",
+        "source": "Treasure 42\nSO-30",
+        "desc": "During your melee attack ability, if you have not move this round, add +2 {ATTACK.fh} to one attack, and you may perform no move abilites this turn.",
+        "spent": true,
+        "minusOneCardsAdded": 3
+    },
+    {
+        "id": 207,
+        "name": "Fishhook",
+        "count": 1,
+        "cost": 25,
+        "slot": "Two Hands",
+        "source": "Treasure 13",
+        "desc": "After your attack, if the target's current hit point is 3 or less, give the target {BANE.fh}",
+        "spent": true
+    },
+    {
+        "id": 208,
+        "name": "Titan Nail",
+        "count": 1,
+        "cost": 35,
+        "slot": "Two Hands",
+        "source": "Treasure 52",
+        "desc": "During your attack ability add {PIERCE.fh} 3 to one attack targeting an enemy whose current hit point value is 4 or less.",
+        "spent": true
+    },
+    {
+        "id": 209,
+        "name": "Sword of Mastery",
+        "count": 1,
+        "cost": 60,
+        "slot": "Two Hands",
+        "source": "SR-35",
+        "desc": "During your melee attack ability, give advantage on one atrack.  For each master you have completed also add one following to the attack: +1 {ATTACK.fh}, {WOUND.fh}, or {POISON.fh}. ",
+        "spent": true
+    },
+    {
+        "id": 210,
+        "name": "Tanjo",
+        "count": 1,
+        "cost": 30,
+        "slot": "Two Hands",
+        "source": "SO-39",
+        "desc": "During your turn, add +3 {ATTACK.fh} to all your attacks performed by Lurkers targeting you this round. {ROUND}",
+        "spent": true
+    },
+    {
+        "id": 211,
+        "name": "Boom Barrel",
+        "count": 1,
+        "cost": 30,
+        "slot": "Two Hands",
+        "source": "B-11",
+        "desc": "During your turn, designate one adjacent hex.  At the end of your turn, all figures withing {RANGE.fh} 2 of the designated hex suffer {DAMAGE.fh} 1.",
+        "consumed": true
+    },
+    {
+        "id": 212,
+        "name": "Elemental Stone",
+        "count": 1,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Scenario 66",
+        "desc": "After ordering of initiative, choose one element. This element cannot be infused or consume by any monster this round. {ROUND}",
+        "spent": true
+    },
+    {
+        "id": 213,
+        "name": "Key of Seasons",
+        "count": 1,
+        "cost": 70,
+        "slot": "One Hand",
+        "source": "Scenario 106",
+        "desc": "During your attack ability {ICE_X} to add {IMMOBILIZE.fh} to one attack, then flip this card over at the end of your turn.",
+        "backDesc": "During your attack ability {FIRE_X} to add {WOUND.fh} to one attack, then flip this card over at the end of your turn."
+    },
+    {
+        "id": 214,
+        "name": "Cup of Ventillion",
+        "count": 1,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Scenario 107",
+        "desc": "During your heal ability add one positive condition you have to one heal.",
+        "spent": true
+    },
+    {
+        "id": 215,
+        "name": "Befuddling Mug",
+        "count": 1,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Scenario 128",
+        "desc": "During your, add +1 {ATTACK.fh} and {MUDDLE.fh} to all your attacks. At the end of your turn, perform: {MUDDLE.fh} self",
+        "consumed": true
+    },
+    {
+        "id": 216,
+        "name": "Tome of Elements",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "SR-48 or WR-46 Event Chain",
+        "desc": "During your turn, {FIRE} {ICE} {WIND} {EARTH} {LIGHT} {DARK} Elements do not move from strong to waning at the end of this round. {ROUND}",
+        "consumed": true
+    },
+    {
+        "id": 217,
+        "name": "Tome of Time",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "SR-49 or WR-47 Event Chain",
+        "desc": "During ordering of initiative after all ability card have been revealed, shuffle all monster ability decks and draw a new card for each active monster set.",
+        "consumed": true
+    },
+    {
+        "id": 218,
+        "name": "Tome of Life",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "SR-47 or WR-45 Event Chain",
+        "desc": "During your turn, remove all conditions from all figures then grant all figures: {HEAL.fh} 2 self",
+        "consumed": true
+    },
+    {
+        "id": 219,
+        "name": "Tome of Conflict",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Scenario 134\n",
+        "desc": "During your turn all figures gain {STRENGTHEN.fh}. Until any monster is killed, the first attack modifier card drawn for every attack is treated as rolling. {PERSISTENT}",
+        "consumed": true
+    },
+    {
+        "id": 220,
+        "name": "Belaras Quill",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "Scenario 135",
+        "desc": "During your turn, {RECOVER.fh} up to one Tome item.",
+        "consumed": true
+    },
+    {
+        "id": 221,
+        "name": "Ice Shiv",
+        "count": 1,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Treasure 84",
+        "desc": "During your melee attack ability, {ICE_X} to add {PIERCE.fh} 3 to one attack.",
+        "spent": true
+    },
+    {
+        "id": 222,
+        "name": "Black Box",
+        "count": 1,
+        "cost": 30,
+        "slot": "One Hand",
+        "source": "Treasure 36",
+        "desc": "During yor turn, discard two cards from your hand to perform: {HEAL.fh} 6 self",
+        "spent": true
+    },
+    {
+        "id": 223,
+        "name": "Lightning Rod",
+        "count": 1,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Treasure 26",
+        "desc": "After ordering of initiative, all monsters consider you to be first in initiative order when determining focus this round. {ROUND}",
+        "spent": true
+    },
+    {
+        "id": 224,
+        "name": "Armor of Empathy",
+        "count": 1,
+        "cost": 40,
+        "slot": "Body",
+        "source": "unknown",
+        "desc": "After the next three attacks targeting you, flip this card over.",
+        "backDesc": "During your turn, perform {HEAL.fh} 3 {TARGET.fh} 1 ally, {RANGE.fh} 3, {BLESS.fh} then flip this card over."
+    },
+    {
+        "id": 225,
+        "name": "Algox Carving",
+        "count": 1,
+        "cost": 60,
+        "slot": "Body",
+        "source": "Treasure 41",
+        "desc": "During your melee attack ability, {EARTH_X} to add +1 {ATTACK.fh} to one attack and flip this card over.",
+        "backDesc": "During your melee attack ability, {WIND_X} to add {PUSH.fh} 2 to one attack and flip this card over."
+    },
+    {
+        "id": 226,
+        "name": "Unfettered Arm",
+        "count": 1,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Treasure 81\nWR-22",
+        "desc": "During your attack ability, double the numerical value of the next attack modifier card you draw. {2X_MODIFIER} and {NULL_MODIFIER} modifier cards are unaffected.",
+        "spent": true
+    },
+    {
+        "id": 227,
+        "name": "Data Drive",
+        "count": 1,
+        "cost": 40,
+        "slot": "One Hand",
+        "source": "Treasure 7",
+        "desc": "When you short rest, place half (rounded down) of your discard pile on this item, lose of the remaining cards randomly as normal, then draw the cards on this item.",
+        "spent": true
+    },
+    {
+        "id": 228,
+        "name": "Extendable Pole",
+        "count": 1,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "Treasure 35",
+        "desc": "During your turn, open one unlocked door while withing {RANGE.fh} 2.",
+        "spent": true
+    },
+    {
+        "id": 229,
+        "name": "Exquisite Map",
+        "count": 1,
+        "cost": 50,
+        "slot": "One Hand",
+        "source": "SO-42",
+        "desc": "During your turn grant one ally withing {RANGE.fh} 3: {MOVE.fh} 3",
+        "consumed": true
+    },
+    {
+        "id": 230,
+        "name": "Examination Glass",
+        "count": 1,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "SR-26",
+        "desc": "After you draw one loot card, draw one additional card, keep one, and place the other on either the top or bottom of the loot deck.",
+        "consumed": true
+    },
+    {
+        "id": 231,
+        "name": "Skinning Knife",
+        "count": 1,
+        "cost": 15,
+        "slot": "One Hand",
+        "source": "WR-16",
+        "desc": "When you gain a loot token, gain 3 `hide` instead of drawning a loot card.",
+        "consumed": true
+    },
+    {
+        "id": 232,
+        "name": "Orchid Wand",
+        "count": 1,
+        "cost": 20,
+        "slot": "One Hand",
+        "source": "WR-12",
+        "desc": "During your turn lose 1 morale to perform: {BLESS.fh} {TARGET.fh} all allies and self",
+        "consumed": true
+    },
+    {
+        "id": 233,
+        "name": "Dead Raven",
+        "count": 1,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Scenario 13",
+        "desc": "During you ally's ranged attack ability, add {MUDDLE.fh} and {CURSE.fh} to one attack.",
+        "consumed": true
+    },
+    {
+        "id": 234,
+        "name": "ooze vial",
+        "count": 1,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Scenario 84",
+        "desc": "During your turn, create one {POISON.fh}, {IMMOBILIZE.fh} trap in an empty hex within {RANGE.fh} 2.",
+        "consumed": true
+    },
+    {
+        "id": 235,
+        "name": "Small Rat",
+        "count": 1,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "Scenario 93",
+        "desc": "During your turn, loot one loot token within {RANGE.fh} 2.",
+        "consumed": true
+    },
+    {
+        "id": 236,
+        "name": "Cracked Mirror",
+        "count": 1,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Scenario 111",
+        "desc": "During your turn, lose one card from your hand to {RECOVER.fh} one card from your loot pile of equal of lower level.",
+        "consumed": true
+    },
+    {
+        "id": 237,
+        "name": "Mesmerizing Seashell",
+        "count": 1,
+        "cost": 45,
+        "slot": "Small Item",
+        "source": "Scenario 131",
+        "desc": "During your turn, choose one of six directions. You and all figures withing {RANGE.fh} 2 are forced to simultaneously move 2 hexes in the chosen directon.",
+        "consumed": true
+    },
+    {
+        "id": 238,
+        "name": "Cracked Idol",
+        "count": 1,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "Scenario 133",
+        "desc": "When you would become exhausted from suffering {DAMAGE.fh}, set your hit point value to 1 instead.",
+        "consumed": true
+    },
+    {
+        "id": 239,
+        "name": "Eye of the Storm",
+        "count": 1,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "Treasure 53",
+        "desc": "During your turn, all allies and enemies within {RANGE.fh} 2 suffer {DAMAGE.fh} 1.",
+        "consumed": true
+    },
+    {
+        "id": 240,
+        "name": "Demons Gem",
+        "count": 1,
+        "cost": 15,
+        "slot": "Small Item",
+        "source": "SO-53 event chain",
+        "desc": "When you fail a scenario, still earn all {CHECK} from your battle goal if it was completed.",
+        "consumed": true
+    },
+    {
+        "id": 241,
+        "name": "Shimmering Powder",
+        "count": 1,
+        "cost": 40,
+        "slot": "Small Item",
+        "source": "SR-26",
+        "desc": "After you draw one loot card, draw one additional loot card.",
+        "consumed": true
+    },
+    {
+        "id": 242,
+        "name": "Lucky Dice",
+        "count": 1,
+        "cost": 30,
+        "slot": "Small Item",
+        "source": "SO-4",
+        "desc": "During your attack ability, treat the next three attack modifier cards you draw as rolling",
+        "consumed": true
+    },
+    {
+        "id": 243,
+        "name": "Cursed Rock",
+        "count": 1,
+        "cost": 10,
+        "slot": "Small Item",
+        "source": "WR-3",
+        "desc": "This item cannot be sold and must be brought into and used every scenario. At the start of the scenario perform: {CURSE.fh}, {BLESS.fh} self",
+        "consumed": true
+    },
+    {
+        "id": 244,
+        "name": "Ember Energy Source",
+        "count": 1,
+        "cost": 50,
+        "slot": "Small Item",
+        "source": "Scenario 33",
+        "desc": "During your turn, increase the printed {ATTACK.fh}, {MOVE.fh}, {TARGET.fh}, or {RANGE.fh} numerical value on one of your abilities by 1.",
+        "consumed": true
+    },
+    {
+        "id": 245,
+        "name": "Ancient Coin",
+        "count": 4,
+        "cost": 0,
+        "source": "Scenario 136\nBuilding 74\nLoot Cards",
+        "desc": ""
+    },
+    {
+        "id": 246,
+        "name": "Key Card",
+        "count": 1,
+        "cost": 0,
+        "source": "Scenario 58\nScenario 59",
+        "desc": ""
+    },
+    {
+        "id": 247,
+        "name": "Trainers Net",
+        "count": 1,
+        "cost": 10,
+        "slot": "One Hand",
+        "source": "Stables",
+        "desc": "During your turn, capture an adjacent enemy whose hit point value is 1 or 2.",
+        "consumed": true
+    },
+    {
+        "id": 248,
+        "name": "Wanderer's Club",
+        "count": 1,
+        "cost": 0,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario - {DF}",
+        "desc": "Duing your attack ability, move one character token on one of your peristent abilities backward one slot and add +X {ATTACK.fh} to one attack, where X is the nuber of active peristent abilities.",
+        "consumed": true
+    },
+    {
+        "id": 249,
+        "name": "Recalibration Trigger",
+        "count": 1,
+        "cost": 0,
+        "slot": "Small Item",
+        "source": "Reward from Solo Scenario - {BB}",
+        "desc": "During our turn, perform one of the two following abilities: Lose one card from your hand to gain 3 {TIME_ICON}. -2 {TIME_ICON} : {RECOVER.fh} up to two of your discarded cards",
+        "lost": true,
+        "consumed": true
+    },
+    {
+        "id": 250,
+        "name": "Spear of Justice",
+        "count": 1,
+        "cost": 0,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario - {BN}",
+        "desc": "During your turn perform: {ATTACK.fh} 2 {RANGE.fh} 3. All your banners are treated as additionally occupying the hex of the attack target of their bonuses and that hex is treated as occupied by an ally this round. {ROUND}",
+        "consumed": true
+    },
+    {
+        "id": 251,
+        "name": "Soul Urn",
+        "count": 1,
+        "cost": 0,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario - {DW}",
+        "desc": "Place one {SHADOW_ICON} in an adjacent hex. {DARK}",
+        "consumed": true
+    },
+    {
+        "id": 252,
+        "name": "Black Earth Codex",
+        "count": 1,
+        "cost": 0,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario - {BO}",
+        "desc": "On the next three deaths of any of your summons, {EARTH_OR_DARK} and perform: {HEAL.fh} 2 self",
+        "consumed": true
+    },
+    {
+        "id": 253,
+        "name": "Mask of Duality",
+        "count": 1,
+        "cost": 0,
+        "slot": "Head",
+        "source": "Reward from Solo Scenario - {GE}",
+        "desc": "During your ranged attack ability while in {RANGED_ICON}, gain advantage for one attack, then flip this card over.",
+        "backDesc": "When an enemy performs an attack targeting you while you are in {MELEE_ICON}, the attacker gains disadvantage, then flip this card over."
+    },
+    {
+        "id": 254,
+        "name": "Ancestral Blade",
+        "count": 1,
+        "cost": 0,
+        "slot": "Two Hands",
+        "source": "Reward from Solo Scenario - {IF}",
+        "desc": "During your turn, activate all your {INFUSION_ICON} as if you just performed a {INFUSION_ICON} action.",
+        "consumed": true
+    },
+    {
+        "id": 255,
+        "name": "Mountain's Heart",
+        "count": 1,
+        "cost": 0,
+        "slot": "Small Item",
+        "source": "Reward from Solo Scenario - {PY}",
+        "desc": "During your turn, you may create either one 1-hex obstacle or hazardous terrain tile in an empty tile within {RANGE.fh} 2. {FIRE_OR_EARTH}",
+        "consumed": true
+    },
+    {
+        "id": 256,
+        "name": "Sonorous Shard",
+        "count": 1,
+        "cost": 0,
+        "slot": "Small Item",
+        "source": "Reward from Solo Scenario - {SH}",
+        "desc": "Gain 3 {RESONANCE_ICON}. {WIND_OR_EARTH}",
+        "lost": true,
+        "consumed": true
+    },
+    {
+        "id": 257,
+        "name": "Sly Camouflage",
+        "count": 1,
+        "cost": 0,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario - {TA}",
+        "desc": "When you create a trap, place a character token on it.  Monsters do not treat the trap as negative. Remvoe the token when you {RECOVER.fh} this item. {PERSISTENT}",
+        "spent": true
+    },
+    {
+        "id": 258,
+        "name": "Skull of Agony",
+        "count": 1,
+        "cost": 0,
+        "slot": "Small Item",
+        "source": "Reward from Solo Scenario - {PC}",
+        "desc": "When you suffer damage, if your hit point value is reduced to below half your maximum, perform: {HEAL.fh} 7 self, {CURSE.fh} This heal is not affect by and cannot remove negative conditions.",
+        "consumed": true
+    },
+    {
+        "id": 259,
+        "name": "Storm Carving",
+        "count": 1,
+        "cost": 0,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario - {SD}",
+        "desc": "During an attack ability you grant an ally, add {PUSH.fh} 2 to one of their attacks, then flip this card over.",
+        "backDesc": "During your attack ability you, add {PULL.fh} 2 to one attack, then flip this card over."
+    },
+    {
+        "id": 260,
+        "name": "Freezing Orb",
+        "count": 1,
+        "cost": 0,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario - {FF}",
+        "desc": "During your attack ability, add {BRITTLE.fh} to one attack and create one 1-hex icy terrain tile in the featureless hex occupied by the target.",
+        "consumed": true
+    },
+    {
+        "id": 261,
+        "name": "Energized Module",
+        "count": 1,
+        "cost": 0,
+        "slot": "Small Item",
+        "source": "Reward from Solo Scenario - {HV}",
+        "desc": "Remove all damage and negative conditions from one of your summons, then {TRANSFER_ICON} to that summon.",
+        "consumed": true
+    },
+    {
+        "id": 262,
+        "name": "Exhaust Boots",
+        "count": 1,
+        "cost": 0,
+        "slot": "Legs",
+        "source": "Reward from Solo Scenario - {ME}",
+        "desc": "During your move ability, when you have {PRESSURE_HIGH_ICON} or {PRESSURE_OVER_ICON}, add +1 {MOVE.fh}, then flip this card over at the end of your turn.",
+        "backDesc": "During your turn when you have {PRESSURE_LOW_ICON}, perform: {MUDDLE.fh} {RANGE.fh} 1 then flip this card over at the end of your turn."
+    },
+    {
+        "id": 263,
+        "name": "Warlords Skull",
+        "count": 1,
+        "cost": 0,
+        "slot": "One Hand",
+        "source": "Reward from Solo Scenario - {DT}",
+        "desc": "Whenever you gain {INVISIBLE.fh} or peform a teleport ability while you have {INVISIBLE.fh}, after the ability perform: {MUDDLE.fh} {RANGE.fh} 1"
+    },
+    {
+        "id": 264,
+        "name": "Spiraled Medallion",
+        "count": 1,
+        "cost": 0,
+        "slot": "Head",
+        "source": "Reward from Solo Scenario - {CR}",
+        "desc": "When you rest, you may keep up to three {TIDE_ICON} cards in your active area. {LIGHT_OR_DARK}",
+        "lost": true,
+        "consumed": true
+    }
+]

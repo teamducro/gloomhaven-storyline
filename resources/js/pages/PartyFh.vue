@@ -1,0 +1,286 @@
+<template>
+    <div v-if="sheet" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
+        <div id="party" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party">
+
+            <tabs :tabs="[$t('Campaign sheet'), $t('Characters'), $t('Items'), $t('Buildings')]"
+                  :icons="['assignment', 'person', 'style', 'home']"
+                  :urls="['party', 'characters', 'items', 'buildings']"
+                  :active="$t('Campaign sheet')"
+            />
+            <h1 class="mt-4 text-xl">{{ campaignName }}</h1>
+
+            <calendar-section
+                ref="calendar"
+                :calendar.sync="sheet.calendar"
+                :loading="loading"
+                @change="store"
+            />
+
+            <morale-section :sheet="sheet" :loading="loading" @change="store" />
+
+            <resources-section
+                ref="resources"
+                :resources.sync="sheet.resources"
+                :loading="loading"
+                @change="store"/>
+
+            <div class="mt-4 flex flex-wrap">
+                <counter-section
+                    class="mb-4 mr-4"
+                    ref="inspiration"
+                    :title="$t('Inspiration')"
+                    :value.sync="sheet.inspiration"
+                    :loading="loading"
+                    @change="store"/>
+
+                <counter-section
+                    class="mb-4 mr-4"
+                    ref="total-defense"
+                    :title="$t('Total Defense')"
+                    :value.sync="sheet.totalDefense"
+                    :loading="loading"
+                    @change="store"/>
+
+                <soldiers-section
+                    ref="soldiers"
+                    :sheet="sheet"
+                    :loading="loading"
+                    @change="store"/>
+            </div>
+
+            <prosperity-section
+                ref="prosperity"
+                :sheet="sheet"
+                :loading="loading"
+                :prosperity.sync="prosperity"
+                @change="store"/>
+
+            <div class="lg:flex" v-if="isSummer">
+                <selectable-list
+                    id="summer-outpost-events"
+                    :title="$t('Summer Outpost Event Decks')"
+                    :label="$t('Add summer outpost events')"
+                    :items.sync="sheet.summerOutpost"
+                    @change="store"
+                    ref="summer-outpost-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'SO')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+                <selectable-list
+                    id="summer-road-events"
+                    :title="$t('Summer Road Event Decks')"
+                    :label="$t('Add summer road events')"
+                    :items.sync="sheet.summerRoad"
+                    @change="store"
+                    ref="summer-road-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'SR')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+                <selectable-list
+                    v-if="boatBuilt"
+                    id="boat-events"
+                    :title="$t('Boat Event Decks')"
+                    :label="$t('Add boat events')"
+                    :items.sync="sheet.boat"
+                    @change="store"
+                    ref="boat-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'B')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+            </div>
+
+            <div class="lg:flex" v-else>
+                <selectable-list
+                    id="winter-outpost-events"
+                    :title="$t('Winter Outpost Event Decks')"
+                    :label="$t('Add winter outpost events')"
+                    :items.sync="sheet.winterOutpost"
+                    @change="store"
+                    ref="winter-outpost-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'WO')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+                <selectable-list
+                    id="winter-road-events"
+                    :title="$t('Winter Road Event Decks')"
+                    :label="$t('Add winter road events')"
+                    :items.sync="sheet.winterRoad"
+                    @change="store"
+                    ref="winter-road-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'WR')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+                <selectable-list
+                    v-if="boatBuilt"
+                    id="boat-events"
+                    :title="$t('Boat Event Decks')"
+                    :label="$t('Add boat events')"
+                    :items.sync="sheet.boat"
+                    @change="store"
+                    ref="boat-events"
+                >
+                    <template slot="after-field" slot-scope="{checkedItems}">
+                        <button @click="draw(checkedItems, 'B')" :disabled="appData.read_only || !checkedItems.length"
+                                class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">launch</i>
+                            <span class="mdc-button__label">{{ $t('Draw') }}</span>
+                        </button>
+                    </template>
+                </selectable-list>
+            </div>
+
+            <div class="w-full mt-8">
+                <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
+                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
+                       @change="store" :is-local-campaign="isLocalCampaign"
+                ></notes>
+            </div>
+
+            <div class="w-full mt-8">
+                <unlock-characters :sheet="sheet" @change="store" :key="'b'+renderX"/>
+            </div>
+
+        </div>
+    </div>
+</template>
+
+<script>
+import StorySyncer from "../services/StorySyncer";
+import GetCampaignName from "../services/GetCampaignName";
+import SheetCalculations from "../services/SheetCalculations";
+import SheetRepository from "../repositories/SheetRepository";
+import ScenarioRepository from "../repositories/ScenarioRepository";
+import OverlayRepository from "../repositories/OverlayRepository";
+import ResourcesSection from "../components/presenters/party/ResourcesSection.vue";
+import MoraleSection from "../components/presenters/party/MoraleSection.vue";
+
+export default {
+    components: {MoraleSection, ResourcesSection},
+    mixins: [GetCampaignName, SheetCalculations],
+    inject: ['appData'],
+    data() {
+        return {
+            sheet: null,
+            prosperity: 1,
+            campaignName: null,
+            loading: true,
+            isLocalCampaign: true,
+            renderX: 0,
+            storySyncer: new StorySyncer,
+            sheetRepository: new SheetRepository,
+            scenarioRepository: new ScenarioRepository,
+            overlayRepository: new OverlayRepository,
+        }
+    },
+    mounted() {
+        this.render();
+
+        this.$bus.$on('campaigns-changed', this.render);
+        this.$bus.$on('remove-card', this.removeCard);
+    },
+    destroyed() {
+        this.$bus.$off('campaigns-changed', this.render);
+        this.$bus.$off('remove-card', this.removeCard);
+    },
+    computed: {
+        isSummer() {
+            const remainder = this.sheet.calendar.week % 20;
+            return (remainder % 20 >= 0 && remainder % 20 <= 9);
+        },
+        boatBuilt() {
+            return this.overlayRepository.find('A')?.present;
+        }
+    },
+    methods: {
+        async render() {
+            this.loading = true;
+
+            this.sheet = this.sheetRepository.make(this.appData.game);
+            this.campaignName = this.getCampaignName();
+
+            this.isLocalCampaign = app.campaignId === 'local';
+
+            await this.$nextTick();
+
+            this.$refs['resources']?.reset();
+            this.$refs['morale']?.reset();
+            this.$refs['inspiration']?.reset();
+            this.$refs['total-defense']?.reset();
+            this.$refs['soldiers']?.reset();
+            this.$refs['prosperity']?.reset();
+            this.$refs['summer-road-events']?.reset();
+            this.$refs['summer-outpost-events']?.reset();
+            this.$refs['winter-road-events']?.reset();
+            this.$refs['winter-outpost-events']?.reset();
+            this.$refs['boat-events']?.reset();
+
+            this.loading = false;
+        },
+        store() {
+            if (this.loading) {
+                return;
+            }
+
+            this.sheet.store();
+            this.storySyncer.store();
+        },
+        draw(checkedItems, type) {
+            let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
+            if (id) {
+                const card = type + '-' + id;
+                this.$bus.$emit('open-event-card', {id: card, game: this.appData.game});
+            }
+        },
+        removeCard(card) {
+            this.sheet[card.folder][card.id] = false;
+            this.store();
+        },
+        renderHtml(html) {
+            return {
+                template: `<span>${html}</span>`
+            };
+        },
+        async xResultChanged(xResult) {
+            this.sheet.xResult = xResult;
+            this.store();
+            await this.$nextTick();
+            this.sheet.fillCharacterUnlocks();
+            await this.$nextTick();
+            this.rerenderX();
+        },
+        rerenderX() {
+            this.renderX++;
+        }
+    }
+}
+</script>

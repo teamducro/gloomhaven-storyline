@@ -39,6 +39,11 @@
                               :src="achievement.image"
                               :animate="true"
                               :alt="$t(achievement.name)"/>
+                        <webp class="w-20 ml-auto"
+                              v-if="achievement.isCampaign()"
+                              :src="achievement.image"
+                              :animate="true"
+                              :alt="$t(achievement.name)"/>
                     </div>
                 </div>
             </template>
