@@ -151,11 +151,14 @@ class CampaignSheet {
         for (let i = 14; i <= 19; i++) {
             this.boat[i] = this.boat[i] || false;
         }
-        
+
+        [24,27,31,37,47].forEach((id) => {
+            this.itemDesigns[id] = this.itemDesigns[id] || false;
+        })
         for (let i = 51; i <= 119; i++) {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
         }
-        for (let i = 168; i <= 246; i++) {
+        for (let i = 167; i <= 246; i++) {
             this.itemDesigns[i] = this.itemDesigns[i] || false;
         }
         for (let i = 248; i <= 264; i++) {
