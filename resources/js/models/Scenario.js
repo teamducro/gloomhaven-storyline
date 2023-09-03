@@ -14,6 +14,7 @@ class Scenario {
         this._name = data.name;
         this._coordinates = data.coordinates || {};
         this.is_side = data.is_side || false;
+        this.complexity = data.complexity || 0;
         this.solo = data.solo || null;
         this.pages = data.pages || [];
         this.requirements = data.requirements || "";

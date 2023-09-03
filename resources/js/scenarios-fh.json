@@ -11,6 +11,7 @@
                 "y": 26.75
             },
             "chapter_id": 1,
+            "complexity": 1,
             "treasures": [
                 47
             ],
@@ -35,6 +36,7 @@
                 "y": 58.14
             },
             "chapter_id": 1,
+            "complexity": 1,
             "links_to": [
                 2,
                 3
@@ -82,6 +84,7 @@
                 "y": 33.15
             },
             "chapter_id": 1,
+            "complexity": 1,
             "treasures": [
                 32
             ],
@@ -119,7 +122,8 @@
                 "x": 40.36,
                 "y": 30.51
             },
-            "chapter_id": 1,
+            "chapter_id": 2,
+            "complexity": 1,
             "treasures": [
                 18
             ],
@@ -157,7 +161,8 @@
                 "x": 35.05,
                 "y": 33.34
             },
-            "chapter_id": 1,
+            "chapter_id": 2,
+            "complexity": 1,
             "treasures": [
                 70
             ],
@@ -211,6 +216,7 @@
                 "y": 29.77
             },
             "chapter_id": 2,
+            "complexity": 2,
             "treasures": [
                 46
             ],
@@ -243,6 +249,7 @@
                 "y": 35.37
             },
             "chapter_id": 4,
+            "complexity": 2,
             "links_to": [
                 11,
                 12
@@ -273,6 +280,7 @@
                 "y": 17.4
             },
             "chapter_id": 3,
+            "complexity": 1,
             "treasures": [
                 44
             ],
@@ -308,6 +316,7 @@
                 "y": 35.66
             },
             "chapter_id": 6,
+            "complexity": 1,
             "links_to": [
                 15,
                 16
@@ -338,6 +347,7 @@
                 "y": 26.62
             },
             "chapter_id": 2,
+            "complexity": 1,
             "treasures": [
                 9
             ],
@@ -368,6 +378,7 @@
                 "y": 27.95
             },
             "chapter_id": 2,
+            "complexity": 2,
             "treasures": [
                 46,
                 71
@@ -400,6 +411,7 @@
                 "y": 29.59
             },
             "chapter_id": 4,
+            "complexity": 2,
             "treasures": [
                 71
             ],
@@ -432,6 +444,7 @@
                 "y": 35.63
             },
             "chapter_id": 4,
+            "complexity": 1,
             "treasures": [
                 9
             ],
@@ -462,6 +475,7 @@
                 "y": 14.48
             },
             "chapter_id": 3,
+            "complexity": 2,
             "treasures": [
                 49
             ],
@@ -493,6 +507,7 @@
                 "y": 13.6
             },
             "chapter_id": 3,
+            "complexity": 2,
             "treasures": [
                 64
             ],
@@ -528,6 +543,7 @@
                 "y": 32.05
             },
             "chapter_id": 6,
+            "complexity": 2,
             "treasures": [
                 40
             ],
@@ -562,6 +578,7 @@
                 "y": 40.7
             },
             "chapter_id": 6,
+            "complexity": 3,
             "treasures": [
                 77
             ],
@@ -593,6 +610,7 @@
                 "y": 28.14
             },
             "chapter_id": 2,
+            "complexity": 3,
             "links_to": [
                 27
             ],
@@ -619,6 +637,7 @@
                 "y": 29.34
             },
             "chapter_id": 2,
+            "complexity": 1,
             "links_to": [
                 28,
                 29
@@ -651,6 +670,7 @@
                 "y": 31.23
             },
             "chapter_id": 4,
+            "complexity": 3,
             "links_to": [
                 30,
                 28
@@ -682,6 +702,7 @@
                 "y": 38.72
             },
             "chapter_id": 4,
+            "complexity": 3,
             "links_to": [
                 31
             ],
@@ -709,6 +730,7 @@
                 "y": 11.02
             },
             "chapter_id": 3,
+            "complexity": 3,
             "linked_from": [
                 13
             ],
@@ -734,6 +756,7 @@
                 "y": 15.22
             },
             "chapter_id": 3,
+            "complexity": 2,
             "links_to": [
                 33
             ],
@@ -762,6 +785,7 @@
                 "y": 33.78
             },
             "chapter_id": 6,
+            "complexity": 1,
             "links_to": [
                 34
             ],
@@ -789,6 +813,7 @@
                 "y": 29.93
             },
             "chapter_id": 6,
+            "complexity": 2,
             "links_to": [
                 34
             ],
@@ -817,6 +842,7 @@
                 "y": 37.95
             },
             "chapter_id": 6,
+            "complexity": 2,
             "treasures": [
                 74
             ],
@@ -856,6 +882,7 @@
                 "y": 41.89
             },
             "chapter_id": 6,
+            "complexity": 2,
             "treasures": [
                 73
             ],
@@ -902,6 +929,7 @@
                 }
             ],
             "chapter_id": 2,
+            "complexity": 2,
             "treasures": [
                 36,
                 24
@@ -934,6 +962,7 @@
                 "y": 34.65
             },
             "chapter_id": 5,
+            "complexity": 3,
             "treasures": [
                 48
             ],
@@ -978,6 +1007,7 @@
                 "y": 32.55
             },
             "chapter_id": 2,
+            "complexity": 2,
             "treasures": [
                 45
             ],
@@ -1022,6 +1052,7 @@
                 "y": 32.86
             },
             "chapter_id": 4,
+            "complexity": 2,
             "treasures": [
                 45
             ],
@@ -1066,6 +1097,7 @@
                 "y": 40.97
             },
             "chapter_id": 4,
+            "complexity": 2,
             "treasures": [
                 25,
                 26
@@ -1099,6 +1131,7 @@
                 "y": 17.14
             },
             "chapter_id": 3,
+            "complexity": 2,
             "treasures": [
                 67
             ],
@@ -1137,6 +1170,7 @@
                 }
             ],
             "chapter_id": 3,
+            "complexity": 3,
             "links_to": [
                 42
             ],
@@ -1167,6 +1201,7 @@
                 "y": 28.09
             },
             "chapter_id": 6,
+            "complexity": 2,
             "linked_from": [
                 23,
                 24
@@ -1186,6 +1221,7 @@
                 "y": 43.23
             },
             "chapter_id": 6,
+            "complexity": 2,
             "treasures": [
                 61
             ],
@@ -1218,6 +1254,7 @@
                 "y": 39.44
             },
             "chapter_id": 6,
+            "complexity": 1,
             "links_to": [
                 44
             ],
@@ -1252,6 +1289,7 @@
                 "y": 43.4
             },
             "chapter_id": 6,
+            "complexity": 1,
             "treasures": [
                 61
             ],
@@ -1290,6 +1328,7 @@
                 "y": 33.33
             },
             "chapter_id": 5,
+            "complexity": 3,
             "treasures": [
                 16
             ],
@@ -1331,6 +1370,7 @@
                 }
             ],
             "chapter_id": 2,
+            "complexity": 3,
             "treasures": [
                 41
             ],
@@ -1363,6 +1403,7 @@
                 "y": 38.05
             },
             "chapter_id": 4,
+            "complexity": 2,
             "treasures": [
                 41
             ],
@@ -1403,6 +1444,7 @@
                 }
             ],
             "chapter_id": 4,
+            "complexity": 2,
             "linked_from": [
                 31
             ],
@@ -1433,6 +1475,7 @@
                 "y": 10.91
             },
             "chapter_id": 3,
+            "complexity": 1,
             "links_to": [
                 49,
                 50
@@ -1466,6 +1509,7 @@
                 "y": 38.65
             },
             "chapter_id": 6,
+            "complexity": 2,
             "links_to": [
                 51
             ],
@@ -1493,6 +1537,7 @@
                 "y": 41.45
             },
             "chapter_id": 6,
+            "complexity": 2,
             "links_to": [
                 58,
                 59
@@ -1528,6 +1573,7 @@
                 "y": 18.6
             },
             "chapter_id": 5,
+            "complexity": 1,
             "treasures": [
                 15
             ],
@@ -1562,6 +1608,7 @@
                 "y": 48.73
             },
             "chapter_id": 5,
+            "complexity": 2,
             "links_to": [
                 52
             ],
@@ -1593,7 +1640,8 @@
                 "x": 9.94,
                 "y": 21.84
             },
-            "chapter_id": 2,
+            "chapter_id": 1,
+            "complexity": 2,
             "treasures": [
                 15
             ],
@@ -1626,6 +1674,7 @@
                 "y": 13.9
             },
             "chapter_id": 4,
+            "complexity": 2,
             "links_to": [
                 57
             ],
@@ -1655,6 +1704,7 @@
                 "y": 15.98
             },
             "chapter_id": 3,
+            "complexity": 3,
             "treasures": [
                 5
             ],
@@ -1692,6 +1742,7 @@
                 "y": 11.04
             },
             "chapter_id": 3,
+            "complexity": 2,
             "links_to": [
                 54
             ],
@@ -1727,6 +1778,7 @@
                 "y": 37.9
             },
             "chapter_id": 6,
+            "complexity": 3,
             "treasures": [
                 56
             ],
@@ -1773,6 +1825,7 @@
                 }
             ],
             "chapter_id": 5,
+            "complexity": 2,
             "treasures": [
                 28,
                 43,
@@ -1808,6 +1861,7 @@
                 "y": 14.36
             },
             "chapter_id": 3,
+            "complexity": 2,
             "links_to": [
                 60
             ],
@@ -1839,6 +1893,7 @@
                 "y": 11.17
             },
             "chapter_id": 3,
+            "complexity": 2,
             "treasures": [
                 5,
                 63
@@ -1874,6 +1929,7 @@
                 "y": 32.45
             },
             "chapter_id": 5,
+            "complexity": 2,
             "treasures": [
                 41
             ],
@@ -1910,6 +1966,7 @@
                 "y": 19.43
             },
             "chapter_id": 2,
+            "complexity": 3,
             "treasures": [
                 4
             ],
@@ -1945,6 +2002,7 @@
                 "y": 11.15
             },
             "chapter_id": 4,
+            "complexity": 3,
             "treasures": [
                 53
             ],
@@ -1973,6 +2031,7 @@
                 "y": 40.3
             },
             "chapter_id": 6,
+            "complexity": 3,
             "treasures": [
                 81
             ],
@@ -2019,6 +2078,7 @@
                 "y": 43.24
             },
             "chapter_id": 6,
+            "complexity": 2,
             "treasures": [
                 7
             ],
@@ -2062,6 +2122,7 @@
                 "y": 12.7
             },
             "chapter_id": 3,
+            "complexity": 2,
             "linked_from": [
                 53,
                 54
@@ -2099,6 +2160,7 @@
             },
             "is_side": true,
             "chapter_id": 108,
+            "complexity": 2,
             "treasures": [
                 76
             ],
@@ -2128,6 +2190,7 @@
                 "y": 36.11
             },
             "chapter_id": 108,
+            "complexity": 3,
             "treasures": [
                 21
             ],
@@ -2159,6 +2222,7 @@
                 "y": 47.77
             },
             "chapter_id": 108,
+            "complexity": 3,
             "treasures": [
                 72
             ],
@@ -2190,6 +2254,7 @@
                 "y": 73.07
             },
             "chapter_id": 108,
+            "complexity": 3,
             "linked_from": [
                 63
             ],
@@ -2218,6 +2283,7 @@
             },
             "is_side": true,
             "chapter_id": 107,
+            "complexity": 1,
             "treasures": [
                 39
             ],
@@ -2248,6 +2314,7 @@
                 "y": 20.08
             },
             "chapter_id": 107,
+            "complexity": 2,
             "links_to": [
                 67
             ],
@@ -2281,6 +2348,7 @@
                 "y": 20.2
             },
             "chapter_id": 107,
+            "complexity": 2,
             "links_to": [
                 68
             ],
@@ -2308,6 +2376,7 @@
                 "y": 15.87
             },
             "chapter_id": 107,
+            "complexity": 2,
             "treasures": [
                 59
             ],
@@ -2343,6 +2412,7 @@
             ],
             "is_side": true,
             "chapter_id": 107,
+            "complexity": 2,
             "links_to": [
                 70
             ],
@@ -2370,6 +2440,7 @@
                 "y": 13.25
             },
             "chapter_id": 107,
+            "complexity": 1,
             "treasures": [
                 82
             ],
@@ -2399,6 +2470,7 @@
             },
             "is_side": true,
             "chapter_id": 107,
+            "complexity": 3,
             "treasures": [
                 22,
                 23
@@ -2428,6 +2500,7 @@
                 "y": 24.85
             },
             "chapter_id": 107,
+            "complexity": 2,
             "treasures": [
                 37
             ],
@@ -2457,6 +2530,7 @@
                 "y": 16.95
             },
             "chapter_id": 107,
+            "complexity": 2,
             "treasures": [
                 33
             ],
@@ -2495,6 +2569,7 @@
                 "y": 28.51
             },
             "chapter_id": 107,
+            "complexity": 2,
             "links_to": [
                 75,
                 76
@@ -2531,6 +2606,7 @@
                 }
             ],
             "chapter_id": 107,
+            "complexity": 2,
             "treasures": [
                 20,
                 51,
@@ -2570,6 +2646,7 @@
                 }
             ],
             "chapter_id": 107,
+            "complexity": 3,
             "treasures": [
                 2,
                 55
@@ -2610,6 +2687,7 @@
                 "y": 11
             },
             "chapter_id": 107,
+            "complexity": 3,
             "linked_from": [
                 75,
                 76
@@ -2639,6 +2717,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 2,
             "treasures": [
                 58,
                 13
@@ -2666,6 +2745,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 3,
             "treasures": [
                 8
             ],
@@ -2694,6 +2774,7 @@
                 "y": 58.28
             },
             "chapter_id": 111,
+            "complexity": 2,
             "treasures": [
                 62,
                 69
@@ -2727,6 +2808,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 3,
             "treasures": [
                 19
             ],
@@ -2753,6 +2835,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 2,
             "rewards": [
                 "Gain 2 prosperity",
                 "Add the following Forgotten Circles items to the Frosthaven supply: 153, 159, and 161"
@@ -2775,6 +2858,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 2,
             "rewards": [
                 "Gain “Giant Piranha Pig Spine” (Item 202)"
             ],
@@ -2799,6 +2883,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 3,
             "rewards": [
                 "Gain “Ooze Vial” (Item 234)"
             ],
@@ -2823,6 +2908,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 3,
             "rewards": [
                 "Gain 15 experience each",
                 "Gain 1 ✔ each"
@@ -2847,6 +2933,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 2,
             "treasures": [
                 17
             ],
@@ -2873,6 +2960,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 1,
             "treasures": [
                 27,
                 38
@@ -2909,6 +2997,7 @@
                 "y": 32.32
             },
             "chapter_id": 111,
+            "complexity": 2,
             "treasures": [
                 6
             ],
@@ -2938,6 +3027,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 2,
             "treasures": [
                 42
             ],
@@ -2965,6 +3055,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 2,
             "links_to": [
                 91
             ],
@@ -2999,6 +3090,7 @@
                 "y": 21.75
             },
             "chapter_id": 111,
+            "complexity": 2,
             "linked_from": [
                 90
             ],
@@ -3025,6 +3117,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 3,
             "rewards": [
                 "Collectively lose 5xC/2 loot tokens. Loot tokens are then traded in for loot cards",
                 "Add 181.2 to the calendar in one week"
@@ -3049,6 +3142,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 2,
             "rewards": [
                 [
                     "Gain “Small Rat” (Item 235)"
@@ -3078,6 +3172,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 3,
             "treasures": [
                 12,
                 29
@@ -3111,6 +3206,7 @@
                 "y": 61.51
             },
             "chapter_id": 111,
+            "complexity": 2,
             "linked_from": [
                 94
             ],
@@ -3137,6 +3233,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 2,
             "treasures": [
                 10
             ],
@@ -3165,6 +3262,7 @@
                 "y": 48
             },
             "chapter_id": 111,
+            "complexity": 3,
             "links_to": [
                 98
             ],
@@ -3190,6 +3288,7 @@
                 "y": 48.8
             },
             "chapter_id": 111,
+            "complexity": 1,
             "treasures": [
                 35,
                 65
@@ -3219,6 +3318,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 1,
             "links_to": [
                 100
             ],
@@ -3243,6 +3343,7 @@
                 "y": 18.2
             },
             "chapter_id": 111,
+            "complexity": 3,
             "treasures": [
                 79
             ],
@@ -3278,6 +3379,7 @@
                 }
             ],
             "chapter_id": 111,
+            "complexity": 1,
             "links_to": [
                 102
             ],
@@ -3308,6 +3410,7 @@
                 "y": 30.4
             },
             "chapter_id": 111,
+            "complexity": 3,
             "links_to": [
                 103
             ],
@@ -3331,6 +3434,7 @@
                 "y": 33.88
             },
             "chapter_id": 111,
+            "complexity": 2,
             "linked_from": [
                 102
             ],
@@ -3354,6 +3458,7 @@
             },
             "is_side": true,
             "chapter_id": 109,
+            "complexity": 2,
             "links_to": [
                 105
             ],
@@ -3380,6 +3485,7 @@
                 "y": 44.68
             },
             "chapter_id": 109,
+            "complexity": 2,
             "links_to": [
                 106
             ],
@@ -3409,6 +3515,7 @@
                 "y": 24.85
             },
             "chapter_id": 109,
+            "complexity": 2,
             "linked_from": [
                 105
             ],
@@ -3435,6 +3542,7 @@
             },
             "is_side": true,
             "chapter_id": 109,
+            "complexity": 2,
             "rewards": [
                 [
                     "Gain any 1 collective material resource"
@@ -3474,6 +3582,7 @@
             },
             "is_side": true,
             "chapter_id": 109,
+            "complexity": 2,
             "treasures": [
                 3,
                 68
@@ -3502,6 +3611,7 @@
             },
             "is_side": true,
             "chapter_id": 109,
+            "complexity": 3,
             "treasures": [
                 80
             ],
@@ -3527,6 +3637,7 @@
             },
             "is_side": true,
             "chapter_id": 109,
+            "complexity": 2,
             "treasures": [
                 75
             ],
@@ -3553,6 +3664,7 @@
             },
             "is_side": true,
             "chapter_id": 109,
+            "complexity": 3,
             "rewards": [
                 "Gain “Cracked Mirror” (Item 236)"
             ],
@@ -3576,6 +3688,7 @@
             },
             "is_side": true,
             "chapter_id": 109,
+            "complexity": 1,
             "rewards": [
                 "Gain 15 experience each"
             ],
@@ -3599,6 +3712,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 1,
             "rewards": [
                 "Gain any 4 collective herb resources"
             ],
@@ -3624,6 +3738,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 2,
             "links_to": [
                 115
             ],
@@ -3649,6 +3764,7 @@
                 "y": 33.19
             },
             "chapter_id": 110,
+            "complexity": 2,
             "links_to": [
                 116
             ],
@@ -3706,6 +3822,7 @@
                 "y": 35.41
             },
             "chapter_id": 110,
+            "complexity": 2,
             "linked_from": [
                 115
             ],
@@ -3770,6 +3887,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 2,
             "rewards": [
                 "Gain 4 collective {HIDE}",
                 "Gain 10 gold each"
@@ -3794,6 +3912,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 1,
             "rewards": [
                 "Gain “Amulet of Eternal Life” (Item 66) blueprint",
                 "Trade all tokens in for loot cards"
@@ -3826,6 +3945,7 @@
             ],
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 2,
             "rewards": [
                 "Spend 7 remaining dust to gain “Scepter of Control” (Item 203)",
                 "Spend 1 remaining dust to gain any 1 material resource",
@@ -3844,6 +3964,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 1,
             "treasures": [
                 50
             ],
@@ -3872,6 +3993,7 @@
                 "y": 50.89
             },
             "chapter_id": 110,
+            "complexity": 3,
             "linked_from": [
                 120
             ],
@@ -3907,6 +4029,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 2,
             "treasures": [
                 31
             ],
@@ -3940,6 +4063,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 3,
             "treasures": [
                 52
             ],
@@ -3966,6 +4090,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 2,
             "links_to": [
                 125
             ],
@@ -3991,6 +4116,7 @@
                 "y": 61.37
             },
             "chapter_id": 110,
+            "complexity": 2,
             "treasures": [
                 14
             ],
@@ -4020,6 +4146,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 2,
             "rewards": [
                 "Gain 10 gold each"
             ],
@@ -4043,6 +4170,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 1,
             "treasures": [
                 30
             ],
@@ -4085,6 +4213,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 3,
             "treasures": [
                 54
             ],
@@ -4127,6 +4256,7 @@
                 "y": 37.8
             },
             "chapter_id": 110,
+            "complexity": 3,
             "treasures": [
                 78
             ],
@@ -4158,6 +4288,7 @@
                 "y": 35.6
             },
             "chapter_id": 110,
+            "complexity": 3,
             "treasures": [
                 11
             ],
@@ -4195,6 +4326,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 3,
             "rewards": [
                 "Gain 10 experience each",
                 "Gain “Mesmerizing Seashell” (Item 237)"
@@ -4212,6 +4344,7 @@
             },
             "is_side": true,
             "chapter_id": 111,
+            "complexity": 2,
             "links_to": [
                 133
             ],
@@ -4237,6 +4370,7 @@
                 "y": 27.03
             },
             "chapter_id": 111,
+            "complexity": 2,
             "treasures": [
                 34
             ],
@@ -4274,6 +4408,7 @@
             ],
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 3,
             "rewards": [
                 "Gain “Tome of Conflict” (Item 219)"
             ],
@@ -4296,6 +4431,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 3,
             "rewards": [
                 "Gain 2 morale",
                 "Gain 2 prosperity",
@@ -4322,6 +4458,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 2,
             "treasures": [
                 83
             ],
@@ -4348,6 +4485,7 @@
             },
             "is_side": true,
             "chapter_id": 110,
+            "complexity": 1,
             "rewards": [
                 "Gain 2 prosperity",
                 "Gain 3 morale",

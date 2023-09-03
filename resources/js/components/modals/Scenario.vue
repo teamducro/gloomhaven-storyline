@@ -22,6 +22,20 @@
                     </span>
                 </div>
 
+                <div v-if="scenario.complexity"
+                     class="absolute left-6 border-l border-b border-r border-white2-25-no-alpha bg-white2-10"
+                     style="top: 65px">
+                    <div class="flex relative p-0">
+                        <div class="corner-bottom-left"></div>
+                        <div class="corner-bottom-right"></div>
+                        <span v-for="index in 3" class="rounded-full border block h-1.5 w-1.5 m-1"
+                              :class="{
+                            'bg-white border-transparent': index <= scenario.complexity,
+                            'border-white2-25': index > scenario.complexity
+                        }"></span>
+                    </div>
+                </div>
+
                 <div class="mdc-dialog__content" id="scenario-content">
                     <div class="xs:flex w-full -ml-2 mb-2">
                         <radio v-if="scenario.is_side"
@@ -534,5 +548,29 @@ export default {
 .mdc-notched-outline__notch {
     border-right: none;
     border-left: none;
+}
+.corner-bottom-left {
+    &:before {
+        position:absolute; left:-1px; bottom:-1px; content:'';
+        border-bottom: 6px solid rgb(74, 75, 76);
+        border-right: 6px solid transparent;
+    }
+    &:after {
+        position:absolute; left:-2px; bottom:-2px; content:'';
+        border-bottom: 6px solid #111;
+        border-right: 6px solid transparent;
+    }
+}
+.corner-bottom-right {
+    &:before {
+        position:absolute; right:-1px; bottom:-1px; content:'';
+        border-bottom: 6px solid rgb(74, 75, 76);
+        border-left: 6px solid transparent;
+    }
+    &:after {
+        position:absolute; right:-2px; bottom:-2px; content:'';
+        border-bottom: 6px solid #111;
+        border-left: 6px solid transparent;
+    }
 }
 </style>
