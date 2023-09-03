@@ -129,9 +129,9 @@ export default class ScenarioRepository {
         if (scenario.treasures_from.count()) {
             return this.findMany(scenario.treasures_from)
                 .filter((treasureScenario) => {
-                    let treasure = treasureScenario.treasures_to.filter((treasure) => {
+                    const treasure = parseInt(treasureScenario.treasures_to.filter((treasure) => {
                         return treasure.includes(scenario.id);
-                    }).keys().first();
+                    }).keys().first());
 
                     return treasure && treasureScenario.isTreasureUnlocked(treasure);
                 });
