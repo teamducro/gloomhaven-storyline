@@ -117,36 +117,46 @@ class CampaignSheet {
             this.checks[i] = this.checks[i] || false;
         }
 
-        for (let i = 1; i <= 20; i++) {
-            this.summerRoad[i] = true;
+        if (!Object.keys(this.summerRoad).length) {
+            for (let i = 1; i <= 20; i++) {
+                this.summerRoad[i] = true;
+            }
         }
         for (let i = 21; i <= 52; i++) {
             this.summerRoad[i] = this.summerRoad[i] || false;
         }
 
-        for (let i = 1; i <= 20; i++) {
-            this.summerOutpost[i] = true;
+        if (!Object.keys(this.summerOutpost).length) {
+            for (let i = 1; i <= 20; i++) {
+                this.summerOutpost[i] = true;
+            }
         }
         for (let i = 21; i <= 65; i++) {
             this.summerOutpost[i] = this.summerOutpost[i] || false;
         }
 
-        for (let i = 1; i <= 20; i++) {
-            this.winterRoad[i] = true;
+        if (!Object.keys(this.winterRoad).length) {
+            for (let i = 1; i <= 20; i++) {
+                this.winterRoad[i] = true;
+            }
         }
         for (let i = 21; i <= 49; i++) {
             this.winterRoad[i] = this.winterRoad[i] || false;
         }
 
-        for (let i = 1; i <= 20; i++) {
-            this.winterOutpost[i] = true;
+        if (!Object.keys(this.winterOutpost).length) {
+            for (let i = 1; i <= 20; i++) {
+                this.winterOutpost[i] = true;
+            }
         }
         for (let i = 21; i <= 81; i++) {
             this.winterOutpost[i] = this.winterOutpost[i] || false;
         }
 
-        for (let i = 1; i <= 13; i++) {
-            this.boat[i] = true;
+        if (!Object.keys(this.boat).length) {
+            for (let i = 1; i <= 13; i++) {
+                this.boat[i] = true;
+            }
         }
         for (let i = 14; i <= 19; i++) {
             this.boat[i] = this.boat[i] || false;
