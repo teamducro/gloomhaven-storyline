@@ -244,4 +244,16 @@ describe('Storyline', () => {
         }
     });
 
+    it('unlocks scenarios from treasures', () => {
+        cy.visit('/tracker#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxAYwL4BpzQwBMADEcqhgJZ4GykDMF41tk9JALM+iDfu2IkArD1YDCpAGxi+bSSQDss-uABmmGAE4ZKFnPwBDCAGEASs0NgA2ggDi5gLIIAurUMOzzvYYDuIOHxMAHtAkAAbEBJ3AAUAMQBlS38wkLDI6Il6WRwsmCY9XgAjeVhuQoxcuhhRCqxSmF1KeqMYgCkY5ICg0PwM2IARACEu1N6IqIaADhz3OwAVRzjRnvTJvOU6qsE4AtBMKDhhAUqGuHLm7cIj2aMFmIBRFaxx-rzSW+q4EhUzrV+8nAmvpVDsZlsGkRwc1QZI9vorvRgbxETBOPCUXMAILzZ5pPpRfAAW0M6xAhhi8wsPhSqwJmXJ8RMeNeZMERHIEKMECxZlxPhs9l5CFwQuZbjuwpphJeJAJcAaDEQXOqDFqlAQACcAKYARwArlQdQATBCK5FoLV6w0ms2S5nSsZrBmCBibS6K6EIxX-OqqClmLEs50NTgXEGhr28f12ADqI0ddImDIp8zTwfpofdEcB2d4UDYalgPz9hdgyphZaEFZz6g4nMrAiLQgx4jrQnD0arpHVtbAzekAPAACtgmhwvAh2BMGBJ6WBDOahaDOBF8I823p7PhFHN2vfY3V7OpCXD1vGjWuwvjw2+4upK2V+epJ298flzRsEA/story');
+        utilities.isNodeHidden(17);
+
+        // Unlock treasure
+        utilities.openScenario(37);
+        cy.get('#treasure-49').click();
+        utilities.closeModel();
+
+        utilities.isNodeIncomplete(17);
+    });
+
 });
