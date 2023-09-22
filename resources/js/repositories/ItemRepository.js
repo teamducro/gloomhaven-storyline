@@ -11,10 +11,7 @@ export default class ItemRepository {
     }
 
     find(id) {
-        // If id is numeric, prepend the current game
-        if (!isNaN(id)) {
-            id = app.game + '-' + id;
-        }
+        id = this.prefixGame(id);
         return app.items ? app.items.get(id) : null;
     }
 
@@ -32,6 +29,17 @@ export default class ItemRepository {
         return this.where((item) => {
             return item.game === game;
         })
+    }
+
+    // If id is numeric, prepend the current game
+    prefixGame(id) {
+        if (!isNaN(id)) {
+            // FC uses GH items
+            const game = app.game === 'fc' ? 'gh' : app.game;
+            id = game + '-' + id;
+        }
+
+        return id;
     }
 
     get gameData() {

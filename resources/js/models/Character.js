@@ -131,9 +131,11 @@ class Character {
             this.checks[i] = this.checks[i] || false;
         }
 
-        this.masteryDescriptions.forEach((mastery, index) => {
-            this.masteries[index] = this.masteries[index] || false;
-        });
+        if (this.masteryDescriptions) {
+            this.masteryDescriptions.forEach((mastery, index) => {
+                this.masteries[index] = this.masteries[index] || false;
+            });
+        }
 
         this.perkDescriptions.forEach((perk, index) => {
             perk.desc = this.$tPrefix('perks.' + index);

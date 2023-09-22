@@ -85,7 +85,7 @@ export default {
             this.games = enabledGames || app.enabledGames
         },
         isNotAvailable(code) {
-            return this.story && this.gameData.purchasable().includes(code) && !this.story?.games.includes(code)
+            return this.story && this.gameData.purchasable().includes(code) && !this.story?.games?.includes(code)
         },
         selected(event) {
             const code = event?.detail?.value
