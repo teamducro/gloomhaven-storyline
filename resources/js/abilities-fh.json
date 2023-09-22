@@ -240,14 +240,6 @@
         "id": 79
     },
     {
-        "name": "trained falcon",
-        "game": "fh",
-        "character_id": "BN",
-        "level": 4,
-        "initiative": 20,
-        "id": 79
-    },
-    {
         "name": "at all costs",
         "game": "fh",
         "character_id": "BN",
@@ -256,23 +248,7 @@
         "id": 61
     },
     {
-        "name": "reinforcement",
-        "game": "fh",
-        "character_id": "BN",
-        "level": 1,
-        "initiative": 60,
-        "id": 61
-    },
-    {
         "name": "barricade",
-        "game": "fh",
-        "character_id": "BN",
-        "level": 6,
-        "initiative": 16,
-        "id": 82
-    },
-    {
-        "name": "banner of valor",
         "game": "fh",
         "character_id": "BN",
         "level": 6,
@@ -320,14 +296,6 @@
         "id": 73
     },
     {
-        "name": "banner of hope",
-        "game": "fh",
-        "character_id": "BN",
-        "level": 1.5,
-        "initiative": 18,
-        "id": 73
-    },
-    {
         "name": "explosive epicenter",
         "game": "fh",
         "character_id": "BN",
@@ -368,14 +336,6 @@
         "id": 72
     },
     {
-        "name": "torch bearer",
-        "game": "fh",
-        "character_id": "BN",
-        "level": 1.5,
-        "initiative": 22,
-        "id": 72
-    },
-    {
         "name": "javelin",
         "game": "fh",
         "character_id": "BN",
@@ -392,23 +352,7 @@
         "id": 85
     },
     {
-        "name": "longbowman",
-        "game": "fh",
-        "character_id": "BN",
-        "level": 7,
-        "initiative": 80,
-        "id": 85
-    },
-    {
         "name": "let them come",
-        "game": "fh",
-        "character_id": "BN",
-        "level": 3,
-        "initiative": 24,
-        "id": 76
-    },
-    {
-        "name": "banner of courage",
         "game": "fh",
         "character_id": "BN",
         "level": 3,
@@ -441,14 +385,6 @@
     },
     {
         "name": "rallying cry",
-        "game": "fh",
-        "character_id": "BN",
-        "level": 1,
-        "initiative": 71,
-        "id": 62
-    },
-    {
-        "name": "banner of strength",
         "game": "fh",
         "character_id": "BN",
         "level": 1,
@@ -496,14 +432,6 @@
         "id": 88
     },
     {
-        "name": "banner of doom",
-        "game": "fh",
-        "character_id": "BN",
-        "level": 9,
-        "initiative": 85,
-        "id": 88
-    },
-    {
         "name": "taunting howl",
         "game": "fh",
         "character_id": "BN",
@@ -537,14 +465,6 @@
     },
     {
         "name": "angry spirits",
-        "game": "fh",
-        "character_id": "BO",
-        "level": 1,
-        "initiative": 76,
-        "id": 126
-    },
-    {
-        "name": "wraith",
         "game": "fh",
         "character_id": "BO",
         "level": 1,
@@ -600,14 +520,6 @@
         "id": 122
     },
     {
-        "name": "shambling skeleton",
-        "game": "fh",
-        "character_id": "BO",
-        "level": 1,
-        "initiative": 71,
-        "id": 122
-    },
-    {
         "name": "dark tidings",
         "game": "fh",
         "character_id": "BO",
@@ -625,14 +537,6 @@
     },
     {
         "name": "endless numbers",
-        "game": "fh",
-        "character_id": "BO",
-        "level": 8,
-        "initiative": 86,
-        "id": 147
-    },
-    {
-        "name": "bone horde",
         "game": "fh",
         "character_id": "BO",
         "level": 8,
@@ -688,23 +592,7 @@
         "id": 137
     },
     {
-        "name": "shambling skeleton",
-        "game": "fh",
-        "character_id": "BO",
-        "level": 3,
-        "initiative": 96,
-        "id": 137
-    },
-    {
         "name": "life in death",
-        "game": "fh",
-        "character_id": "BO",
-        "level": 1,
-        "initiative": 91,
-        "id": 120
-    },
-    {
-        "name": "shambling skeleton",
         "game": "fh",
         "character_id": "BO",
         "level": 1,
@@ -744,23 +632,7 @@
         "id": 121
     },
     {
-        "name": "shambling skeleton",
-        "game": "fh",
-        "character_id": "BO",
-        "level": 1,
-        "initiative": 81,
-        "id": 121
-    },
-    {
         "name": "rotting multitude",
-        "game": "fh",
-        "character_id": "BO",
-        "level": 6,
-        "initiative": 66,
-        "id": 143
-    },
-    {
-        "name": "two shambling skeletons",
         "game": "fh",
         "character_id": "BO",
         "level": 6,
@@ -808,14 +680,6 @@
         "id": 135
     },
     {
-        "name": "raging corpse",
-        "game": "fh",
-        "character_id": "BO",
-        "level": 2,
-        "initiative": 94,
-        "id": 135
-    },
-    {
         "name": "unforgivable methods",
         "game": "fh",
         "character_id": "BO",
@@ -824,23 +688,7 @@
         "id": 141
     },
     {
-        "name": "stitched atrocity",
-        "game": "fh",
-        "character_id": "BO",
-        "level": 5,
-        "initiative": 98,
-        "id": 141
-    },
-    {
         "name": "unholy prowess",
-        "game": "fh",
-        "character_id": "BO",
-        "level": 9,
-        "initiative": 97,
-        "id": 149
-    },
-    {
-        "name": "skeleton sorcerer",
         "game": "fh",
         "character_id": "BO",
         "level": 9,
@@ -2344,14 +2192,6 @@
         "id": 391
     },
     {
-        "name": "sniper turret",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 1,
-        "initiative": 88,
-        "id": 391
-    },
-    {
         "name": "burning slash",
         "game": "fh",
         "character_id": "HV",
@@ -2369,14 +2209,6 @@
     },
     {
         "name": "coiled limbs",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 1,
-        "initiative": 82,
-        "id": 390
-    },
-    {
-        "name": "leaper",
         "game": "fh",
         "character_id": "HV",
         "level": 1,
@@ -2416,23 +2248,7 @@
         "id": 401
     },
     {
-        "name": "dampening unit",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 2,
-        "initiative": 78,
-        "id": 401
-    },
-    {
         "name": "heavy metal",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 9,
-        "initiative": 76,
-        "id": 415
-    },
-    {
-        "name": "sledge driver",
         "game": "fh",
         "character_id": "HV",
         "level": 9,
@@ -2457,14 +2273,6 @@
     },
     {
         "name": "hunter-killer",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 1,
-        "initiative": 84,
-        "id": 389
-    },
-    {
-        "name": "jackal mech",
         "game": "fh",
         "character_id": "HV",
         "level": 1,
@@ -2504,23 +2312,7 @@
         "id": 411
     },
     {
-        "name": "bombardier",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 7,
-        "initiative": 85,
-        "id": 411
-    },
-    {
         "name": "net dispersal",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 5,
-        "initiative": 94,
-        "id": 407
-    },
-    {
-        "name": "trapping unit",
         "game": "fh",
         "character_id": "HV",
         "level": 5,
@@ -2536,23 +2328,7 @@
         "id": 405
     },
     {
-        "name": "toxin distributor",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 4,
-        "initiative": 98,
-        "id": 405
-    },
-    {
         "name": "plated defense",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 1,
-        "initiative": 80,
-        "id": 387
-    },
-    {
-        "name": "armored tank",
         "game": "fh",
         "character_id": "HV",
         "level": 1,
@@ -2569,14 +2345,6 @@
     },
     {
         "name": "rapid fire",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 3,
-        "initiative": 92,
-        "id": 403
-    },
-    {
-        "name": "machine bolter",
         "game": "fh",
         "character_id": "HV",
         "level": 3,
@@ -2616,14 +2384,6 @@
         "id": 388
     },
     {
-        "name": "repair drone",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 1,
-        "initiative": 90,
-        "id": 388
-    },
-    {
         "name": "remote control",
         "game": "fh",
         "character_id": "HV",
@@ -2640,14 +2400,6 @@
         "id": 398
     },
     {
-        "name": "arcing generator",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 1.5,
-        "initiative": 86,
-        "id": 398
-    },
-    {
         "name": "spinning blades",
         "game": "fh",
         "character_id": "HV",
@@ -2656,23 +2408,7 @@
         "id": 409
     },
     {
-        "name": "sword propeller",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 6,
-        "initiative": 79,
-        "id": 409
-    },
-    {
         "name": "swarming bulwark",
-        "game": "fh",
-        "character_id": "HV",
-        "level": 8,
-        "initiative": 96,
-        "id": 413
-    },
-    {
-        "name": "shield spider",
         "game": "fh",
         "character_id": "HV",
         "level": 8,
@@ -2808,14 +2544,6 @@
         "id": 196
     },
     {
-        "name": "animated claymore",
-        "game": "fh",
-        "character_id": "IF",
-        "level": 1.5,
-        "initiative": 42,
-        "id": 196
-    },
-    {
         "name": "malachite shockwave",
         "game": "fh",
         "character_id": "IF",
@@ -2921,14 +2649,6 @@
     },
     {
         "name": "untether the shackles",
-        "game": "fh",
-        "character_id": "IF",
-        "level": 8,
-        "initiative": 61,
-        "id": 211
-    },
-    {
-        "name": "spiritbound falchion",
         "game": "fh",
         "character_id": "IF",
         "level": 8,
@@ -3328,14 +3048,6 @@
         "id": 307
     },
     {
-        "name": "flesh fiend",
-        "game": "fh",
-        "character_id": "PC",
-        "level": 1,
-        "initiative": 19,
-        "id": 307
-    },
-    {
         "name": "shared affliction",
         "game": "fh",
         "character_id": "PC",
@@ -3385,14 +3097,6 @@
     },
     {
         "name": "unstable effigy",
-        "game": "fh",
-        "character_id": "PC",
-        "level": 1.5,
-        "initiative": 18,
-        "id": 312
-    },
-    {
-        "name": "flesh bomb",
         "game": "fh",
         "character_id": "PC",
         "level": 1.5,
@@ -3656,14 +3360,6 @@
         "id": 344
     },
     {
-        "name": "2 white owls",
-        "game": "fh",
-        "character_id": "SD",
-        "level": 2,
-        "initiative": 18,
-        "id": 344
-    },
-    {
         "name": "biting frost",
         "game": "fh",
         "character_id": "SD",
@@ -3776,14 +3472,6 @@
         "id": 334
     },
     {
-        "name": "snow fox",
-        "game": "fh",
-        "character_id": "SD",
-        "level": 1,
-        "initiative": 90,
-        "id": 334
-    },
-    {
         "name": "polar vortex",
         "game": "fh",
         "character_id": "SD",
@@ -3793,14 +3481,6 @@
     },
     {
         "name": "refreshing flurry",
-        "game": "fh",
-        "character_id": "SD",
-        "level": 6,
-        "initiative": 95,
-        "id": 352
-    },
-    {
-        "name": "polar cat",
         "game": "fh",
         "character_id": "SD",
         "level": 6,
@@ -4240,23 +3920,7 @@
         "id": 296
     },
     {
-        "name": "defense grid",
-        "game": "fh",
-        "character_id": "TA",
-        "level": 7,
-        "initiative": 90,
-        "id": 296
-    },
-    {
         "name": "furry facade",
-        "game": "fh",
-        "character_id": "TA",
-        "level": 1,
-        "initiative": 85,
-        "id": 274
-    },
-    {
-        "name": "shaggy lure",
         "game": "fh",
         "character_id": "TA",
         "level": 1,
