@@ -42,6 +42,7 @@ import getEnabledGames from "./services/app/getEnabledGames";
 import getFont from "./services/app/getFont";
 import BaseUrl from "./mixins/BaseUrl";
 import {Game} from "./models/Game";
+import enableGame from "./services/app/enableGame";
 
 window._ = require('lodash');
 window.c = require('cash-dom');
@@ -269,6 +270,9 @@ window.app = new Vue({
             this.campaignData = store.get(this.campaignId) || {};
             this.campaignData = migrateVersion2Progress(this.campaignData);
             this.game = store.get('game') || Game.gh;
+            if (!this.enabledGames.includes(this.game)) {
+                this.enabledGames = enableGame(this.game);
+            }
             this.stories = this.storyRepository.getStories();
             if (Helpers.loggedIn()) {
                 this.user = this.userRepository.getUser();

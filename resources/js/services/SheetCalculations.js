@@ -77,7 +77,7 @@ export default {
             // Initially available items
             let availableItems = Helpers.makeArrayWithNumbers(10).concat(Helpers.makeArrayWithNumbers(9, 120));
 
-            // Itmes available through building upgrades
+            // Items available through building upgrades
             let itemRewards = {
                 34: {
                     1: Helpers.makeArrayWithNumbers(10, 1), // 1 - 10
@@ -108,7 +108,7 @@ export default {
 
             for (let [buldingId, levelUnlocks] of Object.entries(itemRewards)) {
                 for (let [minLevel, itemUnlocks] of Object.entries(levelUnlocks)) {
-                    if (buildingRepository.find(buldingId).level >= minLevel) {
+                    if (buildingRepository.find(buldingId)?.level >= minLevel) {
                         availableItems.push(...itemUnlocks);
                     }
                 }
@@ -121,7 +121,7 @@ export default {
             availableItems = this.prependGame('fh', availableItems);
 
             // Sorted because FH is the only game where the unlockedItems aren't strictly at the end.
-            // .slice(3) is because the unlockedItems are passed with 'fh-' pre-appended.
+            // .slice(3) is because the unlockedItems are passed with 'fh-' prepended.
             return _.uniq(availableItems.concat(unlockedItems).sort((a, b) => +a.slice(3) - b.slice(3)));
         },
         calculateItemsJotl(unlockedItems, scenarioRepository) {

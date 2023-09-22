@@ -43,6 +43,12 @@ export default {
     beforeMount() {
         this.init();
     },
+    mounted() {
+        this.$bus.$on('campaigns-changed', this.checkDisabled);
+    },
+    destroyed() {
+        this.$bus.$off('campaigns-changed', this.checkDisabled);
+    },
     methods: {
         init() {
             const enabledGames = this.readEnabled();
@@ -50,13 +56,25 @@ export default {
             const beta = gameData.beta();
             this.games = gameData.games();
             this.games.forEach((code) => {
-                this.enabled[code] = code in enabledGames ? enabledGames[code] : !beta.includes(code);
-                this.disabled[code] = false;
+                // GH is always enabled, it's used as default in some places
+                if (code === 'gh') {
+                    this.enabled[code] = true;
+                    this.disabled[code] = true;
+                } else {
+                    this.enabled[code] = code in enabledGames ? enabledGames[code] : !beta.includes(code);
+                    this.disabled[code] = false;
+                }
             });
             this.checkDisabled();
         },
         getEnabled() {
             this.init();
+            return this.emit();
+        },
+        enableGame(game) {
+            this.init();
+            this.enabled[game] = true;
+            this.store();
             return this.emit();
         },
         store() {
@@ -78,6 +96,8 @@ export default {
                 Object.keys(this.disabled)
                     .forEach((code) => Vue.set(this.disabled, code, false));
             }
+            // The current game is always disabled
+            this.disabled[app.game] = true;
             this.rerender();
         },
         readEnabled() {
