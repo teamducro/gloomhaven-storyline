@@ -125,6 +125,7 @@ export default class GameData {
                 return itemsCsJson
             case Game.fh:
                 return itemsFhJson
+            // FC uses GH items
             default:
                 return itemsJson
         }
