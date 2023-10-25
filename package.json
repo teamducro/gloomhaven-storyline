@@ -41,7 +41,7 @@
         "laravel-mix": "^6.0.43",
         "laravel-mix-purgecss": "^6.0.0",
         "lodash": "^4.17.21",
-        "postcss": "^8.4.8",
+        "postcss": "^8.4.31",
         "resolve-url-loader": "^3.1.4",
         "sass": "^1.49.9",
         "sass-loader": "^8.0.2",
