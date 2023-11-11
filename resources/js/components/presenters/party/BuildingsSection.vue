@@ -2,7 +2,7 @@
     <div class="w-full mt-8">
         <h2 v-if="combinedResources" class="mb-2">{{ $t('Combined Resources') }}</h2>
 
-        <div v-if="combinedResources" class="mb-4 inline-grid grid-cols-2 xs:grid-cols-4 gap-4">
+        <div v-if="combinedResources" class="mb-4 inline-flex flex-wrap gap-4">
             <div>
                 <add-links-and-icons class="text-white flex items-center gap-2" tag="h2" :text="'{PROSPERITY}' + $t('Prosperity')"/>
                 <span class="font-title ml-2">{{ combinedResources.prosperity }}</span>
@@ -18,6 +18,10 @@
             <div>
                 <add-links-and-icons class="text-white flex items-center gap-2" tag="h2" :text="'{HIDE}' + $t('Hide')"/>
                 <span class="font-title ml-2">{{ combinedResources.hide }}</span>
+            </div>
+            <div>
+                <add-links-and-icons class="text-white flex items-center gap-2" tag="h2" :text="'{COINS}' + $t('Gold')"/>
+                <span class="font-title ml-2">{{ combinedResources.gold }}</span>
             </div>
         </div>
 
@@ -44,7 +48,7 @@
                         :class="{
                             'cursor-pointer': !appData.read_only,
                         }"
-                        @click="(e) => {toggleOverlay(overlay.id)}">
+                        @click="(e) => {toggleOverlay(overlay)}">
                     {{ overlayDisplayName(overlay) }}
                     <span class="ml-1" v-if="!appData.read_only">×</span>
                 </bedge>
@@ -90,7 +94,7 @@
                     <add-links-and-icons class="inline-icons" :text="$t(building.wrecked) || '-'"/>
                 </div>
                 <div class="outline-gray row-span-2 flex flex-col items-center justify-center p-2">
-                    <button v-if="!building.completed" :disabled="building.isWrecked()" @click="upgrade(building)" class="mdc-button mdc-button--raised" :class="{ 'h-auto p-1': !building.lockedUpgrade }">
+                    <button v-if="!building.completed" :disabled="building.isWrecked()" @click="upgrade(building)" class="mdc-button mdc-button--raised" :class="{ 'h-auto p-1': !building.lockedUpgrade, 'gray': !building.isWrecked() && !building.checkUpgradeCost(combinedResources) }">
                         <add-links-and-icons text="{UPGRADE}"/>
                         <div v-if="!building.lockedUpgrade" class="bg-dark-background inline-grid grid-cols-4 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -108,7 +112,7 @@
                     </button>
                     <div v-else-if="building.game === 'fh' && building.id === 84" class="flex flex-col gap-2">
                         <button v-for="overlay in overlays.filter(overlay => !overlay.present && overlay.icon)"
-                            @click="toggleOverlay(overlay.id)" :disabled="building.isWrecked()" :key="overlay.id" class="mdc-button mdc-button--raised h-auto p-1">
+                            @click="toggleOverlay(overlay)" :disabled="building.isWrecked()" :key="overlay.id" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !overlay.checkBuildCost(combinedResources) }">
                             <add-links-and-icons :text="overlay.icon"/>
                             <div class="bg-dark-background inline-grid grid-cols-4 gap-px ml-1">
                                 <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -135,7 +139,7 @@
                         <add-links-and-icons text="{WRECKED}"/>
                         {{ $t('Wreck') }}
                     </button>
-                    <button v-else @click="repair(building)" class="mdc-button mdc-button--raised h-auto p-1">
+                    <button v-else @click="repair(building)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !building.checkWreckedCost(combinedResources) }">
                         <add-links-and-icons text="{REPAIR}"/>
                         <div class="bg-dark-background inline-grid grid-cols-3 gap-px ml-1">
                             <add-links-and-icons text="{LUMBER}" class="outline-gray p-1"/>
@@ -154,7 +158,7 @@
                     {{ building.id }} {{ $t(building.name) }} {{ $t('Lvl.') }} 0
                 </div>
                 <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-gray2-60">
-                    <button @click="upgrade(building)" class="mdc-button mdc-button--raised h-auto p-1">
+                    <button @click="upgrade(building)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !building.checkUpgradeCost(combinedResources)}">
                         <add-links-and-icons text="{BUILD}"/>
                         <div class="bg-dark-background inline-grid grid-cols-5 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -176,7 +180,7 @@
                     {{ $t(overlay.name) }} {{ overlay.id }}
                 </div>
                 <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-gray2-60">
-                    <button @click="toggleOverlay(overlay.id)" class="mdc-button mdc-button--raised h-auto p-1">
+                    <button @click="toggleOverlay(overlay)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !overlay.checkBuildCost(combinedResources)}">
                         <add-links-and-icons text="{BUILD}"/>
                         <div class="bg-dark-background inline-grid grid-cols-5 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -214,10 +218,11 @@ import {BuildingState} from "../../../models/BuildingState";
 import SheetRepository from "../../../repositories/SheetRepository";
 import CharacterRepository from "../../../repositories/CharacterRepository";
 import SheetCalculations from "../../../services/SheetCalculations";
+import Confirm from "../../../mixins/Confirm";
 
 export default {
     inject: ['appData'],
-    mixins: [Slugify, SheetCalculations],
+    mixins: [Slugify, SheetCalculations, Confirm],
     props: {
         loading: {
             type: Boolean,
@@ -273,10 +278,26 @@ export default {
             building.level = 0;
         },
         upgrade(building) {
-            if (building.isAvailable()) {
-                this.buildingRepository.setBuilt(building);
+            const upgrade = () => {
+                if (building.isAvailable()) {
+                    this.buildingRepository.setBuilt(building);
+                }
+                building.level += 1;
             }
-            building.level += 1;
+
+            if (!building.checkUpgradeCost(this.combinedResources)) {
+                let title = this.$t('Are you sure you want to upgrade it?');
+                let message = this.$t('Note; You do not have enough resources to upgrade it.');
+
+                if (building.isAvailable()) {
+                    title = this.$t('Are you sure you want to build it?');
+                    message = this.$t('Note; You do not have enough resources to build it.');
+                }
+
+                this.confirm(title, message, upgrade);
+            } else {
+                upgrade();
+            }
         },
         downgrade(building) {
             building.level -= 1;
@@ -289,7 +310,17 @@ export default {
             this.buildingRepository.setWrecked(building);
         },
         repair(building) {
-            this.buildingRepository.setBuilt(building);
+            const build = () => {
+                this.buildingRepository.setBuilt(building);
+            }
+
+            if (!building.checkWreckedCost(this.combinedResources)) {
+                const title = this.$t('Are you sure you want to repair it?');
+                const message = this.$t('Note; You do not have enough resources to repair it.');
+                this.confirm(title, message, build);
+            } else {
+                build();
+            }
         },
         overlayDisplayName(overlay, showName = true) {
             // Replace "G_red" with "G (red)"
@@ -297,13 +328,25 @@ export default {
             // Put name in brackets if present
             return id + ((this.$t(overlay.name) && showName) ? ` (${this.$t(overlay.name)})`: '');
         },
-        toggleOverlay(id) {
-            let overlay = this.overlayRepository.find(id);
-            if (!overlay.present) {
-                this.overlayRepository.add(overlay.id);
+        toggleOverlay(overlayOrId) {
+            let overlay = typeof overlayOrId === 'object' ? overlayOrId
+                : this.overlayRepository.find(overlayOrId)
 
-                if (overlay.game === 'fh' && overlay.id === 'A') {
-                    this.openBoatModal();
+            if (!overlay.present) {
+                const build = () => {
+                    this.overlayRepository.add(overlay.id);
+
+                    if (overlay.game === 'fh' && overlay.id === 'A') {
+                        this.openBoatModal();
+                    }
+                }
+
+                if (!overlay.checkBuildCost(this.combinedResources)) {
+                    const title = this.$t('Are you sure you want to build it?');
+                    const message = this.$t('Note; You do not have enough resources to build it.');
+                    this.confirm(title, message, build);
+                } else {
+                    build();
                 }
             } else {
                 this.overlayRepository.remove(overlay.id);
@@ -329,13 +372,15 @@ export default {
                 lumber: sheet.resources.lumber,
                 metal: sheet.resources.metal,
                 hide: sheet.resources.hide,
+                gold: 0
             };
 
             // Add resources from characters
             collect(sheet.characters).each(character => {
-                combinedResources.lumber += character.resources.lumber;
-                combinedResources.metal += character.resources.metal;
-                combinedResources.hide += character.resources.hide;
+                combinedResources.lumber += character.resources?.lumber || 0;
+                combinedResources.metal += character.resources?.metal || 0;
+                combinedResources.hide += character.resources?.hide || 0;
+                combinedResources.gold += character.gold || 0;
             });
 
             this.combinedResources = combinedResources

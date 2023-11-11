@@ -1,5 +1,7 @@
 import Storable from './Storable';
 import UsesTranslations from "./UsesTranslations";
+import {BuildingWreckedCost} from "./BuildingWreckedCost";
+import {BuildingUpgradeCost} from "./BuildingUpgradeCost";
 
 class Overlay {
 
@@ -48,6 +50,20 @@ class Overlay {
 
     get present() {
         return this._present;
+    }
+
+    checkBuildCost(resources) {
+        return this.checkResources(resources, this.upgradeCost, BuildingUpgradeCost);
+    }
+
+    checkResources(resources, cost, map) {
+        if (!cost || !resources) {
+            return true;
+        }
+
+        return Object.entries(map).every(
+            ([name, index]) => resources[name] >= cost[index]
+        );
     }
 
     image() {

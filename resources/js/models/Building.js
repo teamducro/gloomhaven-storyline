@@ -1,6 +1,8 @@
 import {BuildingState} from "./BuildingState";
 import Storable from './Storable';
 import UsesTranslations from "./UsesTranslations";
+import {BuildingUpgradeCost} from "./BuildingUpgradeCost";
+import {BuildingWreckedCost} from "./BuildingWreckedCost";
 
 class Building {
 
@@ -133,6 +135,10 @@ class Building {
         return null;
     }
 
+    checkUpgradeCost(resources) {
+        return this.checkResources(resources, this.nextUpgradeCost, BuildingUpgradeCost);
+    }
+
     // The building is upgraded some other way besides resources
     get lockedUpgrade() {
         return (this.nextUpgradeCost
@@ -151,6 +157,20 @@ class Building {
 
     get wreckedCost() {
         return this.levels[this.level].wrecked_cost;
+    }
+
+    checkWreckedCost(resources) {
+        return this.checkResources(resources, this.wreckedCost, BuildingWreckedCost);
+    }
+
+    checkResources(resources, cost, map) {
+        if (!cost || !resources) {
+            return true;
+        }
+
+        return Object.entries(map).every(
+            ([name, index]) => resources[name] >= cost[index]
+        );
     }
 
     image() {

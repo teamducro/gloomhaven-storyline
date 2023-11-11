@@ -1,4 +1,8 @@
 .mdc-button {
+    &.gray {
+        @apply bg-gray-600;
+    }
+
     @apply whitespace-nowrap;
     &.mdc-button--circle {
         @apply rounded-full min-w-0 px-2;
