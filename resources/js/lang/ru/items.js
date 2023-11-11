@@ -1580,7 +1580,7 @@ export default {
     "fh-21": {
         "name": "Chain Hood",
         "source": "Craftsman 4",
-        "desc": "While you are adjacent to tree or more enemies, gain {SHIELD.fh} 1."
+        "desc": "While you are adjacent to three or more enemies, gain {SHIELD.fh} 1."
     },
     "fh-22": {
         "name": "Heavy Chain Armor",
