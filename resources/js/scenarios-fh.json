@@ -1587,9 +1587,6 @@
                 "Gain 1 morale",
                 "Gain 1 ✔ each"
             ],
-            "achievements_awarded": [
-                "PHOI"
-            ],
             "loot": {
                 "coins": 10,
                 "lumber": 3,
@@ -1618,9 +1615,6 @@
             "rewards": [
                 "Gain 1 morale",
                 "Gain 10 experience each"
-            ],
-            "achievements_awarded": [
-                "PHOS"
             ],
             "loot": {
                 "coins": 9,
@@ -1815,12 +1809,12 @@
                 "x": 58.65,
                 "y": 30.97
             },
-            "requirements": "Heart of Ice (Party) COMPLETE and Heart of Snow (Party) COMPLETE",
+            "requirements": "Living Glacier COMPLETE and Dead Pass COMPLETE",
             "required_by": [
                 {
                     "complete": [
-                        "PHOI",
-                        "PHOS"
+                        45,
+                        46
                     ]
                 }
             ],
