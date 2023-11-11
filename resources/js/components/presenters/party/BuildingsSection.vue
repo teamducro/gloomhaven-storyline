@@ -1,5 +1,26 @@
 <template>
     <div class="w-full mt-8">
+        <h2 v-if="combinedResources" class="mb-2">{{ $t('Combined Resources') }}</h2>
+
+        <div v-if="combinedResources" class="mb-4 inline-grid grid-cols-2 xs:grid-cols-4 gap-4">
+            <div>
+                <add-links-and-icons class="text-white flex items-center gap-2" tag="h2" :text="'{PROSPERITY}' + $t('Prosperity')"/>
+                <span class="font-title ml-2">{{ combinedResources.prosperity }}</span>
+            </div>
+            <div>
+                <add-links-and-icons class="text-white flex items-center gap-2" tag="h2" :text="'{LUMBER}' + $t('Lumber')"/>
+                <span class="font-title ml-2">{{ combinedResources.lumber }}</span>
+            </div>
+            <div>
+                <add-links-and-icons class="text-white flex items-center gap-2" tag="h2" :text="'{METAL}' + $t('Metal')"/>
+                <span class="font-title ml-2">{{ combinedResources.metal }}</span>
+            </div>
+            <div>
+                <add-links-and-icons class="text-white flex items-center gap-2" tag="h2" :text="'{HIDE}' + $t('Hide')"/>
+                <span class="font-title ml-2">{{ combinedResources.hide }}</span>
+            </div>
+        </div>
+
         <h2 class="mb-2">{{ $t('Overlay Stickers') }}</h2>
         <autocomplete
             :label="$t('Add overlay stickers')"
@@ -190,10 +211,13 @@ import Slugify from "../../../services/Slugify";
 import BuildingRepository from "../../../repositories/BuildingRepository";
 import OverlayRepository from "../../../repositories/OverlayRepository";
 import {BuildingState} from "../../../models/BuildingState";
+import SheetRepository from "../../../repositories/SheetRepository";
+import CharacterRepository from "../../../repositories/CharacterRepository";
+import SheetCalculations from "../../../services/SheetCalculations";
 
 export default {
     inject: ['appData'],
-    mixins: [Slugify],
+    mixins: [Slugify, SheetCalculations],
     props: {
         loading: {
             type: Boolean,
@@ -202,8 +226,11 @@ export default {
     },
     data() {
         return {
-            buildingRepository: new BuildingRepository(),
-            overlayRepository: new OverlayRepository(),
+            combinedResources: null,
+            buildingRepository: new BuildingRepository,
+            overlayRepository: new OverlayRepository,
+            sheetRepository: new SheetRepository,
+            characterRepository: new CharacterRepository,
             boatName: "",
         };
     },
@@ -221,7 +248,18 @@ export default {
             return this.buildingRepository.whereState(BuildingState.available);
         }
     },
+    mounted() {
+        this.render();
+
+        this.$bus.$on('campaigns-changed', this.render);
+    },
+    destroyed() {
+        this.$bus.$off('campaigns-changed', this.render);
+    },
     methods: {
+        render() {
+            this.countResources();
+        },
         toggle(id) {
             let building = this.buildingRepository.find(id);
 
@@ -276,6 +314,31 @@ export default {
         },
         saveBoatName() {
             this.overlayRepository.find('A').name = this.boatName || 'Boat';
+        },
+        countResources() {
+            let sheet = this.sheetRepository.make(this.appData.game);
+
+            // If sheet is not loaded yet, skip
+            if (_.isEmpty(sheet.resources)) {
+                return;
+            }
+
+            // Add resources from sheet
+            let combinedResources = {
+                prosperity: this.calculateProsperity(sheet.prosperityIndex, sheet.game),
+                lumber: sheet.resources.lumber,
+                metal: sheet.resources.metal,
+                hide: sheet.resources.hide,
+            };
+
+            // Add resources from characters
+            collect(sheet.characters).each(character => {
+                combinedResources.lumber += character.resources.lumber;
+                combinedResources.metal += character.resources.metal;
+                combinedResources.hide += character.resources.hide;
+            });
+
+            this.combinedResources = combinedResources
         }
     }
 }
