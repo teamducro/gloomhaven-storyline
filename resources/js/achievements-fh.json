@@ -57,7 +57,8 @@
         "id": "CITF",
         "name": "Into the Forest",
         "type": "Campaign",
-        "game": "fh"
+        "game": "fh",
+        "is_manual": true
     },
     {
         "id": "CFP",
