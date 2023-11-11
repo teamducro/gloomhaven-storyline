@@ -39,6 +39,7 @@ class Scenario {
         this.treasures_from = collect(data.treasures_from);
         this.treasures_to = collect(data.treasures_to);
         this.loot = data.loot || {};
+        this.random_item_treasure = false;
         this.unlockedTreasures = [];
         this.achievements_from_treasures = collect(data.achievements_from_treasures);
         this._rewards = collect(data.rewards);
@@ -56,7 +57,8 @@ class Scenario {
             "choice": "_choice",
             "promptChoice": "_promptChoice",
             "notes": "notes",
-            "treasures": {"unlockedTreasures": this.unlockedTreasures}
+            "treasures": {"unlockedTreasures": this.unlockedTreasures},
+            "random_item_treasure": "random_item_treasure",
         };
 
         this.read();
