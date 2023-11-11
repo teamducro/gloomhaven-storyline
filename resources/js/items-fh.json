@@ -164,7 +164,7 @@
         "id": 17,
         "name": "Cured Leather Armor",
         "count": 2,
-        "resources": { "item": [4, 8] },
+        "resources": { "item": [4, 98] },
         "slot": "Body",
         "source": "Craftsman 3\nTreasure 50",
         "desc": "On the next two attacks targeting you, the attacker gains disadvantage.",
