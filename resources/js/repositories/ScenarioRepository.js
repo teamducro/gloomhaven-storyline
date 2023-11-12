@@ -88,7 +88,7 @@ export default class ScenarioRepository {
     }
 
     unlockTreasure(scenario, id, checked = true) {
-        id = parseInt(id);
+        id = this.parseInt(id);
         scenario.unlockTreasure(id, checked);
 
         this.processTreasureItems(scenario, id, checked);
@@ -129,7 +129,7 @@ export default class ScenarioRepository {
         if (scenario.treasures_from.count()) {
             return this.findMany(scenario.treasures_from)
                 .filter((treasureScenario) => {
-                    const treasure = parseInt(treasureScenario.treasures_to.filter((treasure) => {
+                    const treasure = this.parseInt(treasureScenario.treasures_to.filter((treasure) => {
                         return treasure.includes(scenario.id);
                     }).keys().first());
 
@@ -260,7 +260,7 @@ export default class ScenarioRepository {
     }
 
     find(id) {
-        return this.get().firstWhere('id', parseInt(id));
+        return this.get().firstWhere('id', this.parseInt(id));
     }
 
     findMany(list) {
@@ -375,6 +375,10 @@ export default class ScenarioRepository {
         }).pluck('region_ids').flatten().items;
 
         return this.fetchAllRegions(game).whereIn('id', regionIds);
+    }
+
+    parseInt(id) {
+        return !isNaN(id) ? parseInt(id) : id;
     }
 
     get scenarioValidator() {
