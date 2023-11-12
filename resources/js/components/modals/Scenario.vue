@@ -124,9 +124,19 @@
                         <div class="my-2" v-if="scenario.loot && Object.keys(scenario.loot).length > 0">
                             <h2 class="text-white">{{ $t('Loot') }}</h2>
                             <ul class="mt-2">
-                                <li class="flex" v-if="value > 0" v-for="(value, type) in scenario.loot" :key="type">
+                                <li class="flex items-center" v-if="value > 0" v-for="(value, type) in scenario.loot" :key="type">
                                     <inline-svg :src="'resources/'+type" class="mr-2 text-white"/>
-                                    {{ $t(type) }} x {{ value }}
+                                    <span>{{ $t(type) }}</span>
+                                    <template v-if="type !== 'random-item-treasure'">
+                                        <span>&nbsp;x&nbsp;{{ value }}</span>
+                                    </template>
+                                    <template v-else>
+                                        <checkbox
+                                            :id="'random-item-treasure-'+scenario.id"
+                                            :checked="scenario.random_item_treasure"
+                                            @change="randomItemTreasureChanged"
+                                        />
+                                    </template>
                                 </li>
                             </ul>
                         </div>
@@ -414,6 +424,11 @@ export default {
                 this.$bus.$emit('scenarios-updated');
             }
 
+            this.storySyncer.store();
+        },
+        randomItemTreasureChanged(_, checked) {
+            this.scenario.random_item_treasure = checked;
+            this.scenario.store();
             this.storySyncer.store();
         },
         scenarioChosen(choice) {

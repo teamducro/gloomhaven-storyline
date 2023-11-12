@@ -110,7 +110,8 @@
                 "metal": 4,
                 "hide": 4,
                 "arrowvine": 2,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -122,7 +123,7 @@
                 "x": 40.36,
                 "y": 30.51
             },
-            "chapter_id": 2,
+            "chapter_id": 1,
             "complexity": 1,
             "treasures": [
                 18
@@ -149,7 +150,8 @@
                 "metal": 4,
                 "hide": 4,
                 "arrowvine": 2,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -161,7 +163,7 @@
                 "x": 35.05,
                 "y": 33.34
             },
-            "chapter_id": 2,
+            "chapter_id": 1,
             "complexity": 1,
             "treasures": [
                 70
@@ -203,7 +205,8 @@
                 "metal": 5,
                 "hide": 2,
                 "corpsecap": 1,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -365,7 +368,8 @@
                 "lumber": 5,
                 "metal": 3,
                 "corpsecap": 1,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -398,7 +402,8 @@
                 "lumber": 4,
                 "hide": 3,
                 "arrowvine": 2,
-                "axenut": 2
+                "axenut": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -431,7 +436,8 @@
                 "metal": 3,
                 "hide": 3,
                 "axenut": 2,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -462,7 +468,8 @@
                 "lumber": 4,
                 "metal": 4,
                 "corpsecap": 1,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -494,7 +501,8 @@
                 "hide": 3,
                 "arrowvine": 2,
                 "flamefruit": 1,
-                "snowthistle": 1
+                "snowthistle": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -565,7 +573,8 @@
                 "metal": 5,
                 "hide": 2,
                 "corpsecap": 1,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -597,7 +606,8 @@
                 "coins": 8,
                 "lumber": 4,
                 "metal": 5,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -689,7 +699,8 @@
                 "metal": 2,
                 "hide": 2,
                 "corpsecap": 1,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -743,7 +754,8 @@
                 "metal": 3,
                 "hide": 3,
                 "flamefruit": 1,
-                "snowthistle": 2
+                "snowthistle": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -772,7 +784,8 @@
                 "coins": 10,
                 "lumber": 5,
                 "hide": 2,
-                "arrowvine": 2
+                "arrowvine": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -800,7 +813,8 @@
                 "lumber": 4,
                 "metal": 4,
                 "corpsecap": 2,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -829,7 +843,8 @@
                 "metal": 4,
                 "hide": 2,
                 "axenut": 2,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -949,7 +964,8 @@
                 "coins": 13,
                 "lumber": 2,
                 "metal": 2,
-                "hide": 2
+                "hide": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1149,7 +1165,8 @@
                 "lumber": 5,
                 "hide": 3,
                 "axenut": 2,
-                "flamefruit": 2
+                "flamefruit": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1241,7 +1258,8 @@
                 "lumber": 5,
                 "metal": 5,
                 "hide": 2,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1276,7 +1294,8 @@
                 "coins": 9,
                 "lumber": 3,
                 "metal": 5,
-                "arrowvine": 2
+                "arrowvine": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1315,7 +1334,8 @@
                 "lumber": 3,
                 "metal": 3,
                 "arrowvine": 2,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1349,7 +1369,8 @@
                 "lumber": 5,
                 "hide": 3,
                 "arrowvine": 1,
-                "axenut": 2
+                "axenut": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1462,7 +1483,8 @@
                 "metal": 2,
                 "hide": 2,
                 "corpsecap": 2,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1496,7 +1518,8 @@
                 "lumber": 2,
                 "metal": 2,
                 "flamefruit": 1,
-                "snowthistle": 1
+                "snowthistle": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1524,7 +1547,8 @@
                 "lumber": 2,
                 "metal": 4,
                 "arrowvine": 2,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1560,7 +1584,8 @@
                 "lumber": 2,
                 "metal": 4,
                 "arrowvine": 2,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1586,9 +1611,6 @@
             "rewards": [
                 "Gain 1 morale",
                 "Gain 1 ✔ each"
-            ],
-            "achievements_awarded": [
-                "PHOI"
             ],
             "loot": {
                 "coins": 10,
@@ -1618,9 +1640,6 @@
             "rewards": [
                 "Gain 1 morale",
                 "Gain 10 experience each"
-            ],
-            "achievements_awarded": [
-                "PHOS"
             ],
             "loot": {
                 "coins": 9,
@@ -1815,18 +1834,19 @@
                 "x": 58.65,
                 "y": 30.97
             },
-            "requirements": "Heart of Ice (Party) COMPLETE and Heart of Snow (Party) COMPLETE",
+            "requirements": "Living Glacier COMPLETE and Dead Pass COMPLETE",
             "required_by": [
                 {
                     "complete": [
-                        "PHOI",
-                        "PHOS"
+                        45,
+                        46
                     ]
                 }
             ],
             "chapter_id": 5,
             "complexity": 2,
             "treasures": [
+                1,
                 28,
                 43,
                 66
@@ -1848,7 +1868,8 @@
                 "metal": 2,
                 "hide": 5,
                 "corpsecap": 2,
-                "snowthistle": 2
+                "snowthistle": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1880,7 +1901,8 @@
                 "metal": 2,
                 "hide": 3,
                 "arrowvine": 2,
-                "axenut": 2
+                "axenut": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1916,7 +1938,8 @@
                 "metal": 2,
                 "hide": 3,
                 "arrowvine": 2,
-                "axenut": 2
+                "axenut": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -1953,7 +1976,8 @@
                 "metal": 4,
                 "hide": 2,
                 "corpsecap": 1,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2065,7 +2089,8 @@
                 "lumber": 2,
                 "metal": 4,
                 "corpsecap": 1,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2109,7 +2134,8 @@
                 "coins": 11,
                 "metal": 4,
                 "axenut": 1,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2146,7 +2172,8 @@
                 "corpsecap": 1,
                 "flamefruit": 1,
                 "rockroot": 1,
-                "snowthistle": 1
+                "snowthistle": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2177,7 +2204,8 @@
                 "metal": 4,
                 "hide": 4,
                 "corpsecap": 2,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2209,7 +2237,8 @@
                 "metal": 4,
                 "hide": 4,
                 "arrowvine": 2,
-                "snowthistle": 2
+                "snowthistle": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2241,7 +2270,8 @@
                 "metal": 4,
                 "hide": 4,
                 "corpsecap": 2,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2269,7 +2299,8 @@
                 "metal": 4,
                 "hide": 4,
                 "axenut": 2,
-                "flamefruit": 2
+                "flamefruit": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2363,7 +2394,8 @@
                 "coins": 8,
                 "lumber": 3,
                 "metal": 3,
-                "hide": 3
+                "hide": 3,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2390,7 +2422,8 @@
             "loot": {
                 "lumber": 5,
                 "metal": 5,
-                "hide": 5
+                "hide": 5,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2456,7 +2489,8 @@
                 "lumber": 5,
                 "hide": 3,
                 "axenut": 2,
-                "flamefruit": 2
+                "flamefruit": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2517,7 +2551,8 @@
                 "coins": 9,
                 "lumber": 3,
                 "metal": 3,
-                "corpsecap": 2
+                "corpsecap": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2626,7 +2661,8 @@
                 "metal": 2,
                 "hide": 5,
                 "axenut": 1,
-                "snowthistle": 1
+                "snowthistle": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2674,7 +2710,8 @@
                 "metal": 2,
                 "hide": 5,
                 "axenut": 1,
-                "snowthistle": 2
+                "snowthistle": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2703,7 +2740,8 @@
                 "metal": 2,
                 "hide": 2,
                 "corpsecap": 2,
-                "flamefruit": 2
+                "flamefruit": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2794,7 +2832,8 @@
                 "metal": 3,
                 "hide": 2,
                 "axenut": 1,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2821,7 +2860,8 @@
                 "lumber": 2,
                 "metal": 5,
                 "hide": 2,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2844,7 +2884,8 @@
                 "coins": 12,
                 "lumber": 1,
                 "rockroot": 1,
-                "snowthistle": 1
+                "snowthistle": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2894,7 +2935,8 @@
                 "coins": 15,
                 "lumber": 3,
                 "metal": 3,
-                "corpsecap": 2
+                "corpsecap": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -2919,7 +2961,8 @@
                 "metal": 3,
                 "hide": 4,
                 "rockroot": 2,
-                "snowthistle": 1
+                "snowthistle": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -3013,7 +3056,8 @@
                 "metal": 4,
                 "hide": 2,
                 "corpsecap": 1,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -3041,7 +3085,8 @@
                 "metal": 2,
                 "hide": 2,
                 "arrowvine": 2,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -3128,7 +3173,8 @@
                 "metal": 3,
                 "hide": 2,
                 "axenut": 2,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -3158,7 +3204,8 @@
                 "metal": 2,
                 "hide": 2,
                 "axenut": 1,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -3193,7 +3240,8 @@
                 "lumber": 3,
                 "metal": 5,
                 "arrowvine": 1,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -3275,7 +3323,8 @@
             "loot": {
                 "coins": 10,
                 "lumber": 2,
-                "metal": 4
+                "metal": 4,
+                "random-item-treasure": 1
             }
         },
         {
@@ -3444,7 +3493,8 @@
                 "Gain 10 gold each"
             ],
             "loot": {
-                "coins": 15
+                "coins": 15,
+                "random-item-treasure": 1
             }
         },
         {
@@ -3528,7 +3578,8 @@
                 "metal": 4,
                 "hide": 2,
                 "arrowvine": 2,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -3568,7 +3619,8 @@
                 "metal": 3,
                 "arrowvine": 1,
                 "axenut": 1,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -3597,7 +3649,8 @@
                 "metal": 2,
                 "hide": 2,
                 "arrowvine": 1,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -4015,7 +4068,8 @@
                 "metal": 3,
                 "hide": 2,
                 "axenut": 1,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -4049,7 +4103,8 @@
                 "metal": 3,
                 "hide": 4,
                 "axenut": 1,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -4076,7 +4131,8 @@
                 "lumber": 2,
                 "metal": 6,
                 "flamefruit": 1,
-                "snowthistle": 1
+                "snowthistle": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -4132,7 +4188,8 @@
                 "metal": 4,
                 "hide": 2,
                 "corpsecap": 1,
-                "rockroot": 1
+                "rockroot": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -4312,7 +4369,8 @@
                 "metal": 2,
                 "hide": 3,
                 "arrowvine": 2,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -4386,7 +4444,8 @@
                 "metal": 3,
                 "hide": 3,
                 "corpsecap": 1,
-                "rockroot": 2
+                "rockroot": 2,
+                "random-item-treasure": 1
             }
         },
         {
@@ -4417,7 +4476,8 @@
                 "lumber": 2,
                 "metal": 4,
                 "hide": 2,
-                "arrowvine": 1
+                "arrowvine": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -4444,7 +4504,8 @@
                 "metal": 4,
                 "hide": 2,
                 "corpsecap": 1,
-                "flamefruit": 1
+                "flamefruit": 1,
+                "random-item-treasure": 1
             }
         },
         {
@@ -4496,7 +4557,8 @@
                 "coins": 12,
                 "lumber": 4,
                 "metal": 4,
-                "hide": 4
+                "hide": 4,
+                "random-item-treasure": 1
             }
         },
         {

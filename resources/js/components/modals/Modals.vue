@@ -15,6 +15,7 @@
         <ability-modal/>
         <modifier-deck-modal/>
         <calendar-week-modal/>
+        <confirm/>
     </div>
 </template>
 

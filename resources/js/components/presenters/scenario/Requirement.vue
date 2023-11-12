@@ -5,8 +5,14 @@
                 <span class="flex items-center">
                     <i v-if="(conditionsFiltered.length > 1 || condition.requirements.length > 1) && requirementNotMet(requirement)"
                        class="material-icons text-incomplete text-lg mr-1">error_outline</i>
-                    {{ $t(requirement.achievement.name) }} ({{ $t(requirement.achievement.type) }})
-                    {{ $t(requirement.state).toUpperCase() }}
+                    <template v-if="requirement.achievement">
+                        {{ $t(requirement.achievement.name) }} ({{ $t(requirement.achievement.type) }})
+                        {{ $t(requirement.state).toUpperCase() }}
+                    </template>
+                    <template v-if="requirement.scenario">
+                        <scenario-number :scenario="requirement.scenario" show-name />
+                        <span>&nbsp;{{ $t(requirement.state).toUpperCase() }}&nbsp;</span>
+                    </template>
                     <template v-if="requirementIndex + 1 < condition.requirements.length">
                         {{ $t('and') }}
                     </template>
@@ -23,8 +29,12 @@
 
 
 import AchievementRepository from "../../../repositories/AchievementRepository";
+import ScenarioRepository from "../../../repositories/ScenarioRepository";
+import {ScenarioState} from "../../../models/ScenarioState";
+import ScenarioNumber from "../../elements/ScenarioNumber.vue";
 
 export default {
+    components: {ScenarioNumber},
     props: {
         conditions: {
             type: Object
@@ -36,6 +46,7 @@ export default {
     data() {
         return {
             achievementRepository: new AchievementRepository(),
+            scenarioRepository: new ScenarioRepository(),
         };
     },
     computed: {
@@ -61,33 +72,58 @@ export default {
     methods: {
         requiredAchievements(condition) {
             let complete = collect(condition.complete || [])
-                .transform((item) => {
-                    return {
-                        "achievement": this.achievementRepository.find(item),
-                        "state": "Complete"
+                .transform((scenarioOrAchievementId) => {
+                    if (Number.isInteger(scenarioOrAchievementId)) {
+                        return {
+                            "scenario": this.scenarioRepository.find(scenarioOrAchievementId),
+                            "state": ScenarioState.complete
+                        }
+                    } else {
+                        return {
+                            "achievement": this.achievementRepository.find(scenarioOrAchievementId),
+                            "state": ScenarioState.complete
+                        }
                     }
                 });
             let incomplete = collect(condition.incomplete || [])
-                .transform((item) => {
-                    return {
-                        "achievement": this.achievementRepository.find(item),
-                        "state": "Incomplete"
+                .transform((scenarioOrAchievementId) => {
+                    if (Number.isInteger(scenarioOrAchievementId)) {
+                        return {
+                            "scenario": this.scenarioRepository.find(scenarioOrAchievementId),
+                            "state": ScenarioState.incomplete
+                        }
+                    } else {
+                        return {
+                            "achievement": this.achievementRepository.find(scenarioOrAchievementId),
+                            "state": ScenarioState.incomplete
+                        }
                     }
                 });
 
             return complete.items.concat(incomplete.items);
         },
         requirementNotMet(requirement) {
-            if (this.scenarioState === "complete") {
+            if (this.scenarioState === ScenarioState.complete) {
                 return false;
             }
 
-            let achievement = this.achievementRepository.find(requirement.achievement.id);
-            if (requirement.state === "Complete" && !achievement.awarded ||
-                (requirement.state === "Incomplete" && achievement.awarded)) {
-                return true;
+            // Check achievements
+            if (requirement.achievement) {
+                if (requirement.state === ScenarioState.complete && !requirement.achievement.awarded ||
+                    (requirement.state === ScenarioState.incomplete && requirement.achievement.awarded)) {
+                    return true;
+                }
             }
 
+            // Check scenarios
+            if (requirement.scenario) {
+                if (requirement.state === ScenarioState.complete && requirement.scenario.isIncomplete() ||
+                    (requirement.state === ScenarioState.incomplete && requirement.scenario.isComplete())) {
+                    return true;
+                }
+            }
+
+            return false;
         },
         openAchievement(id) {
             this.$bus.$emit('close-scenario', {});

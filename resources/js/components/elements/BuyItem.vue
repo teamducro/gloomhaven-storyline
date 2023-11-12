@@ -21,10 +21,10 @@
             </div>
 
             <div class="flex">
-                <button v-if="!owns" class="mdc-button mdc-button--raised mr-2"
-                        :disabled="appData.read_only || !hasEnoughCash || !availability" @click="buy">
-                    <i class="material-icons mdc-button__icon">euro</i>
-                    <span class="mdc-button__label">{{ cost ? (isNaN(cost) ? $t('Craft') : $t('Buy')) : $t('Get') }}</span>
+                <button v-if="!owns && this.item.cost" class="mdc-button mdc-button--raised mr-2"
+                        :disabled="appData.read_only || !hasEnoughGold || !availability" @click="buy">
+                    <add-links-and-icons class="mr-2" :text="'{COINS}'"/>
+                    <span class="mdc-button__label">{{ isNaN(cost) ? $t('Craft') : $t('Buy') }}</span>
                 </button>
                 <button v-if="!owns" class="mdc-button mdc-button--raised mr-2"
                         :disabled="appData.read_only || !availability" @click="add">
@@ -93,10 +93,12 @@ export default {
         owns() {
             return this.character?.items[this.item.id]
         },
-        hasEnoughCash() {
+        hasEnoughGold() {
             if (!this.item.cost) {
                 return true;
             }
+
+            // Check resources to craft the item.
             if (isNaN(this.item.cost)) {
                 return Object.entries(this.item.cost).every(([k, v]) => {
                     if (k == 'item') {
@@ -106,6 +108,8 @@ export default {
                     }
                 });
             }
+
+            // Check gold to buy the item.
             return this.character.gold >= this.cost;
         },
         cost() {
@@ -123,10 +127,12 @@ export default {
     },
     methods: {
         buy() {
-            if (this.hasEnoughCash) {
+            if (this.hasEnoughGold) {
                 if (!this.item.cost) {
                     // pass
-                } else if (isNaN(this.item.cost)) {
+                }
+                // Remove resources to craft it
+                else if (isNaN(this.item.cost)) {
                     for (let [k, v] of Object.entries(this.item.cost)) {
                         if (k == 'item') {
                             for (let itemId of v) {
@@ -138,8 +144,10 @@ export default {
                         }
                     }
                 } else {
+                    // Remove gold
                     this.character.gold -= this.cost;
                 }
+
                 this.add();
             }
         },

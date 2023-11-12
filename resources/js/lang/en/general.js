@@ -306,6 +306,7 @@ export default {
     "rockroot": "Rockroot",
     "snowthistle": "Snowthistle",
     "unfettered": "Unfettered",
+    "random-item-treasure": "Random item",
 
     // Game Editions
     "gh": "Gloomhaven",

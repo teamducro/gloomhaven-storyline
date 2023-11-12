@@ -302,6 +302,7 @@ export default {
     "rockroot": "Rockroot",
     "snowthistle": "Snowthistle",
     "unfettered": "Unfettered",
+    "random-item-treasure": "Random item",
     "gh": "Мрачная гавань",
     "fh": "Frosthaven",
     "Frosthaven": "Frosthaven",
