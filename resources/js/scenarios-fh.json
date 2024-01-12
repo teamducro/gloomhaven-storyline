@@ -2635,7 +2635,7 @@
             },
             "blocks_on": [
                 {
-                    "incomplete": [
+                    "complete": [
                         "CFFK"
                     ]
                 }
@@ -2676,7 +2676,7 @@
             },
             "blocks_on": [
                 {
-                    "complete": [
+                    "incomplete": [
                         "CFFK"
                     ]
                 }
