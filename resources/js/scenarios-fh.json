@@ -207,7 +207,8 @@
                 "corpsecap": 1,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 5,
@@ -438,7 +439,11 @@
                 "axenut": 2,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true,
+            "requirements": [
+                "rope"
+            ]
         },
         {
             "id": 12,
@@ -539,7 +544,10 @@
                 "metal": 2,
                 "hide": 5,
                 "snowthistle": 2
-            }
+            },
+            "requirements": [
+                "boat"
+            ]
         },
         {
             "id": 15,
@@ -756,7 +764,10 @@
                 "flamefruit": 1,
                 "snowthistle": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "requirements": [
+                "sled"
+            ]
         },
         {
             "id": 22,
@@ -1226,7 +1237,8 @@
             "achievements_awarded": [
                 "CCCS"
             ],
-            "loot": {}
+            "loot": {},
+            "has_boss": true
         },
         {
             "id": 35,
@@ -1618,7 +1630,10 @@
                 "hide": 5,
                 "flamefruit": 1,
                 "rockroot": 1
-            }
+            },
+            "requirements": [
+                "rope"
+            ]
         },
         {
             "id": 46,
@@ -1648,7 +1663,10 @@
                 "hide": 3,
                 "corpsecap": 1,
                 "rockroot": 1
-            }
+            },
+            "requirements": [
+                "sled"
+            ]
         },
         {
             "id": 47,
@@ -1785,7 +1803,8 @@
                 "lumber": 2,
                 "hide": 3,
                 "arrowvine": 2
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 51,
@@ -1903,7 +1922,8 @@
                 "arrowvine": 2,
                 "axenut": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 54,
@@ -1940,7 +1960,8 @@
                 "arrowvine": 2,
                 "axenut": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 55,
@@ -1978,7 +1999,8 @@
                 "corpsecap": 1,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 56,
@@ -2014,7 +2036,8 @@
                 "hide": 2,
                 "flamefruit": 2,
                 "rockroot": 2
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 57,
@@ -2043,7 +2066,11 @@
             "achievements_awarded": [
                 "CFSS"
             ],
-            "loot": {}
+            "loot": {},
+            "has_boss": true,
+            "requirements": [
+                "boat"
+            ]
         },
         {
             "id": 58,
@@ -2136,7 +2163,10 @@
                 "axenut": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "requirements": [
+                "rope"
+            ]
         },
         {
             "id": 60,
@@ -2174,7 +2204,8 @@
                 "rockroot": 1,
                 "snowthistle": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 61,
@@ -2301,7 +2332,8 @@
                 "axenut": 2,
                 "flamefruit": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 65,
@@ -2592,7 +2624,8 @@
                 "hide": 3,
                 "arrowvine": 2,
                 "flamefruit": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 74,
@@ -2663,7 +2696,10 @@
                 "axenut": 1,
                 "snowthistle": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "requirements": [
+                "boat"
+            ]
         },
         {
             "id": 76,
@@ -2712,7 +2748,10 @@
                 "axenut": 1,
                 "snowthistle": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "requirements": [
+                "rope"
+            ]
         },
         {
             "id": 77,
@@ -2742,7 +2781,8 @@
                 "corpsecap": 2,
                 "flamefruit": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 78,
@@ -2834,7 +2874,8 @@
                 "axenut": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 81,
@@ -2937,7 +2978,8 @@
                 "metal": 3,
                 "corpsecap": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 85,
@@ -2963,7 +3005,10 @@
                 "rockroot": 2,
                 "snowthistle": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "requirements": [
+                "rope"
+            ]
         },
         {
             "id": 86,
@@ -3175,7 +3220,10 @@
                 "axenut": 2,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "requirements": [
+                "boat"
+            ]
         },
         {
             "id": 93,
@@ -3242,7 +3290,10 @@
                 "arrowvine": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "requirements": [
+                "sled"
+            ]
         },
         {
             "id": 95,
@@ -3298,7 +3349,10 @@
                 "metal": 3,
                 "axenut": 1,
                 "rockroot": 1
-            }
+            },
+            "requirements": [
+                "rope"
+            ]
         },
         {
             "id": 97,
@@ -3325,7 +3379,8 @@
                 "lumber": 2,
                 "metal": 4,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 98,
@@ -3523,7 +3578,10 @@
                 "hide": 2,
                 "axenut": 1,
                 "snowthistle": 1
-            }
+            },
+            "requirements": [
+                "sled"
+            ]
         },
         {
             "id": 105,
@@ -3553,7 +3611,10 @@
                 "hide": 2,
                 "corpsecap": 1,
                 "flamefruit": 1
-            }
+            },
+            "requirements": [
+                "rope"
+            ]
         },
         {
             "id": 106,
@@ -3621,7 +3682,10 @@
                 "axenut": 1,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "requirements": [
+                "rope"
+            ]
         },
         {
             "id": 108,
@@ -3677,7 +3741,10 @@
                 "metal": 4,
                 "flamefruit": 1,
                 "rockroot": 2
-            }
+            },
+            "requirements": [
+                "sled"
+            ]
         },
         {
             "id": 110,
@@ -3704,7 +3771,10 @@
                 "hide": 2,
                 "corpsecap": 1,
                 "rockroot": 1
-            }
+            },
+            "requirements": [
+                "rope"
+            ]
         },
         {
             "id": 111,
@@ -3728,7 +3798,10 @@
                 "hide": 3,
                 "arrowvine": 2,
                 "corpsecap": 1
-            }
+            },
+            "requirements": [
+                "sled"
+            ]
         },
         {
             "id": 112,
@@ -3977,7 +4050,10 @@
                 "hide": 3,
                 "rockroot": 1,
                 "snowthistle": 2
-            }
+            },
+            "requirements": [
+                "sled"
+            ]
         },
         {
             "id": 119,
@@ -4533,7 +4609,10 @@
                 "hide": 4,
                 "arrowvine": 1,
                 "snowthistle": 1
-            }
+            },
+            "requirements": [
+                "boat"
+            ]
         },
         {
             "id": 137,
@@ -4559,7 +4638,10 @@
                 "metal": 4,
                 "hide": 4,
                 "random-item-treasure": 1
-            }
+            },
+            "requirements": [
+                "boat"
+            ]
         },
         {
             "id": 201,
@@ -5284,7 +5366,8 @@
                         "y": 65.75
                     }
                 }
-            ]
+            ],
+            "has_boss": true
         },
         {
             "id": 24,
