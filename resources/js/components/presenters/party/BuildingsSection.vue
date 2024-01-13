@@ -276,6 +276,8 @@ export default {
 
             // Toggling resets level:
             building.level = 0;
+
+            this.changed();
         },
         upgrade(building) {
             const upgrade = () => {
@@ -298,16 +300,22 @@ export default {
             } else {
                 upgrade();
             }
+
+            this.changed();
         },
         downgrade(building) {
             building.level -= 1;
             if (building.level <= 0) {
                 building.level = 0;
                 this.buildingRepository.setAvailable(building);
+
+                this.changed();
             }
         },
         wreck(building) {
             this.buildingRepository.setWrecked(building);
+
+            this.changed();
         },
         repair(building) {
             const build = () => {
@@ -321,6 +329,8 @@ export default {
             } else {
                 build();
             }
+
+            this.changed();
         },
         overlayDisplayName(overlay, showName = true) {
             // Replace "G_red" with "G (red)"
@@ -351,12 +361,15 @@ export default {
             } else {
                 this.overlayRepository.remove(overlay.id);
             }
+
+            this.changed();
         },
         openBoatModal() {
             this.$refs['boat-modal'].open();
         },
         saveBoatName() {
             this.overlayRepository.find('A').name = this.boatName || 'Boat';
+            this.changed();
         },
         countResources() {
             let sheet = this.sheetRepository.make(this.appData.game);
@@ -384,6 +397,9 @@ export default {
             });
 
             this.combinedResources = combinedResources
+        },
+        changed() {
+            this.$emit('change');
         }
     }
 }

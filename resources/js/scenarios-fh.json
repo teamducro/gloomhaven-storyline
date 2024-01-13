@@ -207,7 +207,8 @@
                 "corpsecap": 1,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 5,
@@ -417,6 +418,13 @@
             },
             "chapter_id": 4,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
+                    ]
+                }
+            ],
             "treasures": [
                 71
             ],
@@ -438,7 +446,8 @@
                 "axenut": 2,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 12,
@@ -516,6 +525,13 @@
             },
             "chapter_id": 3,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "treasures": [
                 64
             ],
@@ -742,6 +758,13 @@
             },
             "chapter_id": 3,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "sled"
+                    ]
+                }
+            ],
             "linked_from": [
                 13
             ],
@@ -1226,7 +1249,8 @@
             "achievements_awarded": [
                 "CCCS"
             ],
-            "loot": {}
+            "loot": {},
+            "has_boss": true
         },
         {
             "id": 35,
@@ -1599,6 +1623,13 @@
             },
             "chapter_id": 5,
             "complexity": 1,
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
+                    ]
+                }
+            ],
             "treasures": [
                 15
             ],
@@ -1631,6 +1662,13 @@
             },
             "chapter_id": 5,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "sled"
+                    ]
+                }
+            ],
             "links_to": [
                 52
             ],
@@ -1785,7 +1823,8 @@
                 "lumber": 2,
                 "hide": 3,
                 "arrowvine": 2
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 51,
@@ -1903,7 +1942,8 @@
                 "arrowvine": 2,
                 "axenut": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 54,
@@ -1940,7 +1980,8 @@
                 "arrowvine": 2,
                 "axenut": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 55,
@@ -1978,7 +2019,8 @@
                 "corpsecap": 1,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 56,
@@ -2014,7 +2056,8 @@
                 "hide": 2,
                 "flamefruit": 2,
                 "rockroot": 2
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 57,
@@ -2027,6 +2070,13 @@
             },
             "chapter_id": 4,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "treasures": [
                 53
             ],
@@ -2043,7 +2093,8 @@
             "achievements_awarded": [
                 "CFSS"
             ],
-            "loot": {}
+            "loot": {},
+            "has_boss": true
         },
         {
             "id": 58,
@@ -2118,6 +2169,13 @@
                     ]
                 }
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 2 morale",
                 "Gain 2 prosperity",
@@ -2174,7 +2232,8 @@
                 "rockroot": 1,
                 "snowthistle": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 61,
@@ -2301,7 +2360,8 @@
                 "axenut": 2,
                 "flamefruit": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 65,
@@ -2592,7 +2652,8 @@
                 "hide": 3,
                 "arrowvine": 2,
                 "flamefruit": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 74,
@@ -2635,8 +2696,15 @@
             },
             "blocks_on": [
                 {
-                    "incomplete": [
+                    "complete": [
                         "CFFK"
+                    ]
+                }
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
                     ]
                 }
             ],
@@ -2676,8 +2744,15 @@
             },
             "blocks_on": [
                 {
-                    "complete": [
+                    "incomplete": [
                         "CFFK"
+                    ]
+                }
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
                     ]
                 }
             ],
@@ -2742,7 +2817,8 @@
                 "corpsecap": 2,
                 "flamefruit": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 78,
@@ -2834,7 +2910,8 @@
                 "axenut": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 81,
@@ -2937,7 +3014,8 @@
                 "metal": 3,
                 "corpsecap": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 85,
@@ -2951,6 +3029,13 @@
             "is_side": true,
             "chapter_id": 111,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 15 experience each",
                 "Gain 1 ✔ each"
@@ -3163,6 +3248,13 @@
             "is_side": true,
             "chapter_id": 111,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "rewards": [
                 "Collectively lose 5xC/2 loot tokens. Loot tokens are then traded in for loot cards",
                 "Add 181.2 to the calendar in one week"
@@ -3220,6 +3312,13 @@
             "is_side": true,
             "chapter_id": 111,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "sled"
+                    ]
+                }
+            ],
             "treasures": [
                 12,
                 29
@@ -3282,6 +3381,13 @@
             "is_side": true,
             "chapter_id": 111,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
+                    ]
+                }
+            ],
             "treasures": [
                 10
             ],
@@ -3325,7 +3431,8 @@
                 "lumber": 2,
                 "metal": 4,
                 "random-item-treasure": 1
-            }
+            },
+            "has_boss": true
         },
         {
             "id": 98,
@@ -3509,6 +3616,13 @@
             "is_side": true,
             "chapter_id": 109,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "sled"
+                    ]
+                }
+            ],
             "links_to": [
                 105
             ],
@@ -3536,6 +3650,13 @@
             },
             "chapter_id": 109,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
+                    ]
+                }
+            ],
             "links_to": [
                 106
             ],
@@ -3594,6 +3715,13 @@
             "is_side": true,
             "chapter_id": 109,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
+                    ]
+                }
+            ],
             "rewards": [
                 [
                     "Gain any 1 collective material resource"
@@ -3665,6 +3793,13 @@
             "is_side": true,
             "chapter_id": 109,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "sled"
+                    ]
+                }
+            ],
             "treasures": [
                 80
             ],
@@ -3694,6 +3829,13 @@
             "treasures": [
                 75
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain “Rose Guantlet” (Item 75) blueprint"
             ],
@@ -3718,6 +3860,13 @@
             "is_side": true,
             "chapter_id": 109,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "sled"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain “Cracked Mirror” (Item 236)"
             ],
@@ -3966,6 +4115,13 @@
             "is_side": true,
             "chapter_id": 110,
             "complexity": 1,
+            "required_by": [
+                {
+                    "complete": [
+                        "sled"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain “Amulet of Eternal Life” (Item 66) blueprint",
                 "Trade all tokens in for loot cards"
@@ -4517,6 +4673,13 @@
                 "x": 46.88,
                 "y": 14.83
             },
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "is_side": true,
             "chapter_id": 110,
             "complexity": 2,
@@ -4544,6 +4707,13 @@
                 "x": 71.86,
                 "y": 19.58
             },
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "is_side": true,
             "chapter_id": 110,
             "complexity": 1,
@@ -5284,7 +5454,8 @@
                         "y": 65.75
                     }
                 }
-            ]
+            ],
+            "has_boss": true
         },
         {
             "id": 24,

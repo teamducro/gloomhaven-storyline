@@ -163,10 +163,6 @@ export default class GameData {
         return attackModifierDecksJson
     }
 
-    test() {
-        return 'test'
-    }
-
     map(game = Game.gh) {
         let map = Game.fc;
 

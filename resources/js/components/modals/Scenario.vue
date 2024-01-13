@@ -10,11 +10,12 @@
                         <span v-if="scenario.coordinates.name" class="text-sm text-white2-50">
                             {{ scenario.coordinates.name }}
                         </span>
-                        <span class="absolute right-0 top-0">
-                        <button type="button" data-mdc-dialog-action="close"
-                                class="mdc-button mt-4">
-                            <i class="material-icons">close</i>
-                        </button>
+                        <span class="absolute right-0 top-0 flex pt-4">
+                            <indicators class="items-center hidden xs:flex" :scenario="scenario"/>
+                            <button type="button" data-mdc-dialog-action="close"
+                                    class="mdc-button">
+                                <i class="material-icons">close</i>
+                            </button>
                         </span>
                     </h2>
                     <span v-if="scenario.regions" class="text-sm text-white2-50 font-bold">
@@ -36,7 +37,12 @@
                     </div>
                 </div>
 
-                <div class="mdc-dialog__content" id="scenario-content">
+                <indicators class="flex items-center xs:hidden absolute left-20 mt-1"
+                            style="top: 65px"
+                            :scenario="scenario"/>
+
+                <div :class="[scenario.complexity ? 'mt-4' : '']"
+                    class="mdc-dialog__content" id="scenario-content">
                     <div class="xs:flex w-full -ml-2 mb-2">
                         <radio v-if="scenario.is_side"
                                class="whitespace-nowrap"
@@ -59,7 +65,7 @@
                                    @changed="stateChanged"
                             ></radio>
                             <div v-if="scenario.isVisible()"
-                                 class="hidden sm:block ml-auto"
+                                 class="hidden ml-auto"
                                  :class="[scenario.is_side ? 'sm:block' : 'xs:block', scenario.solo ? 'w-12' : 'w-20']">
                                 <webp v-if="!scenario.solo" :src="scenario.image()"
                                       :animate="true"

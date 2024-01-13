@@ -15,6 +15,7 @@ export const ScenarioState = Object.freeze({
     },
 
     states() {
-        return Object.getOwnPropertyNames(this);
-    }
+        const properties = Object.getOwnPropertyDescriptors(this)
+        return Object.keys(properties).filter(key => typeof properties[key].value === 'string');
+    },
 });

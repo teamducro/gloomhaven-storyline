@@ -33,6 +33,7 @@ class Scenario {
         this.links_to = collect(data.links_to);
         this.linked_from = collect(data.linked_from);
         this.coupled = data.coupled;
+        this.unlocked = data.unlocked || [];
         this.required_by = collect(data.required_by);
         this.blocks_on = collect(data.blocks_on);
         this.treasures = data.treasures || [];
@@ -49,6 +50,7 @@ class Scenario {
         this.prompt = data.prompt;
         this._promptChoice = null;
         this.hasPrompt = typeof data.prompt !== 'undefined';
+        this.has_boss = data.has_boss || false;
         this.game = data.game;
         this.translationKey = `scenarios.${this.game}-${this.id}`;
 
@@ -86,6 +88,20 @@ class Scenario {
 
     isRequired() {
         return this.state === ScenarioState.required;
+    }
+
+    isRequiredBy(requirement) {
+        return this.getCompleteRequirements().includes(requirement);
+    }
+
+    getCompleteRequirements() {
+        let requirements = [];
+
+        this.required_by.each((requirement) => {
+            requirements = requirements.concat(requirement.complete || []);
+        });
+
+        return requirements;
     }
 
     set state(state) {

@@ -6,6 +6,10 @@ import ChoiceService from "../services/ChoiceService";
 import AchievementValidator from "./AchievementValidator";
 import StorySyncer from "../services/StorySyncer";
 import SheetRepository from "../repositories/SheetRepository";
+import {Requirement} from "../models/Requirement";
+import BuildingRepository from "../repositories/BuildingRepository";
+import OverlayRepository from "../repositories/OverlayRepository";
+import {BuildingState} from "../models/BuildingState";
 
 export default class ScenarioValidator {
 
@@ -164,10 +168,19 @@ export default class ScenarioValidator {
 
     checkCompleteConditions(conditions, shouldBeCompleted = true) {
         return conditions.every((scenarioOrAchievementId) => {
+            // Scenarios
             if (Number.isInteger(scenarioOrAchievementId)) {
                 let scenario = this.scenarioRepository.find(scenarioOrAchievementId) || {};
                 return shouldBeCompleted ? scenario.isComplete() : !scenario.isComplete();
-            } else {
+            }
+            // Building/Overlay Requirements
+            else if (Requirement.requirements().includes(scenarioOrAchievementId)) {
+                const overlayId = Requirement.overlayId(scenarioOrAchievementId);
+                const overlay = this.overlayRepository.find(overlayId);
+                return shouldBeCompleted ? overlay.present : !overlay.present;
+            }
+            // Achievements
+            else {
                 let achievement = this.achievementRepository.find(scenarioOrAchievementId) || {};
                 return shouldBeCompleted ? achievement.awarded : !achievement.awarded;
             }
@@ -202,6 +215,14 @@ export default class ScenarioValidator {
 
     get achievementRepository() {
         return this._achievementRepository || (this._achievementRepository = new AchievementRepository);
+    }
+
+    get buildingRepository() {
+        return this._buildingRepository || (this._buildingRepository = new BuildingRepository);
+    }
+
+    get overlayRepository() {
+        return this._overlayRepository || (this._overlayRepository = new OverlayRepository);
     }
 
     get achievementValidator() {
