@@ -89,9 +89,9 @@
                                     <span>{{ $t('Requirements') }}:</span>
                                 </div>
                                 <div class="ml-8">
-                                    <requirement :conditions="scenario.required_by"
+                                    <requirements :conditions="scenario.required_by"
                                                  v-if="scenario.required_by.isNotEmpty()"
-                                                 :scenarioState="scenario.state"></requirement>
+                                                 :scenarioState="scenario.state"></requirements>
                                     <component v-else v-bind:is="renderHtml(scenario.requirements)"></component>
                                 </div>
                             </div>
