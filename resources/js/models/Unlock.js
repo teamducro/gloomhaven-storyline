@@ -6,16 +6,8 @@ export const Unlock = Object.freeze({
     "personal": "personal",
     "job": "job",
 
-    make(unlock) {
-        const unlocks = collect(this.unlocks())
-            .mapWithKeys((unlock) => {
-                return [unlock.substr(0, 1), unlock];
-            }).all();
-
-        return unlocks[unlock];
-    },
-
     unlocks() {
-        return Object.getOwnPropertyNames(this);
+        const properties = Object.getOwnPropertyDescriptors(this)
+        return Object.keys(properties).filter(key => typeof properties[key].value === 'string');
     }
 });

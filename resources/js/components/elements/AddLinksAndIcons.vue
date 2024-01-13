@@ -290,7 +290,8 @@ export default {
                     '{WRECKED}': '<inline-svg src="icons/wrecked"/>',
                     '{BOAT}': '<inline-svg src="icons/boat"/>',
                     '{SLED}': '<inline-svg src="icons/sled"/>',
-                    '{CLIMBING_GEAR}': '<inline-svg src="icons/climbing-gear"/>',
+                    '{CLIMBING_GEAR}': '<inline-svg src="icons/rope"/>',
+                    '{ROPE}': '<inline-svg src="icons/rope"/>',
 
                     // Frosthaven (icons only) ability enhancements
                     '{DAMAGE.fh}': '<webp src="/img/icons/general/damage.png" width="20" class="inline" alt="' + this.$t('DAMAGE') + '"/>',

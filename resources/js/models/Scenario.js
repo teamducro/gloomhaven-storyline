@@ -4,7 +4,6 @@ import Card from "./Card";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemTextParser from "../services/ItemTextParser";
 import UsesTranslations from "./UsesTranslations";
-import {Requirement} from "./Requirement";
 
 class Scenario {
 
@@ -35,7 +34,6 @@ class Scenario {
         this.linked_from = collect(data.linked_from);
         this.coupled = data.coupled;
         this.unlocked = data.unlocked || [];
-        this.requirements = data.requirements || [];
         this.required_by = collect(data.required_by);
         this.blocks_on = collect(data.blocks_on);
         this.treasures = data.treasures || [];
@@ -90,6 +88,20 @@ class Scenario {
 
     isRequired() {
         return this.state === ScenarioState.required;
+    }
+
+    isRequiredBy(requirement) {
+        return this.getCompleteRequirements().includes(requirement);
+    }
+
+    getCompleteRequirements() {
+        let requirements = [];
+
+        this.required_by.each((requirement) => {
+            requirements = requirements.concat(requirement.complete || []);
+        });
+
+        return requirements;
     }
 
     set state(state) {

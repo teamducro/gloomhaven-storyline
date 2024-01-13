@@ -3,16 +3,16 @@ export const Requirement = Object.freeze({
     "boat": "boat",
     "sled": "sled",
 
-    make(requirement) {
-        const requirements = collect(this.requirements())
-            .mapWithKeys((requirement) => {
-                return [requirement.substr(0, 1), requirement];
-            }).all();
-
-        return requirements[requirement];
+    requirements() {
+        const properties = Object.getOwnPropertyDescriptors(this)
+        return Object.keys(properties).filter(key => typeof properties[key].value === 'string');
     },
 
-    requirements() {
-        return Object.getOwnPropertyNames(this);
+    overlayId(requirement) {
+        switch (requirement) {
+            case this.boat: return 'A';
+            case this.sled: return 'B';
+            case this.rope: return 'C';
+        }
     }
 });

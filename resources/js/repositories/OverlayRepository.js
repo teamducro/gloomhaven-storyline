@@ -1,5 +1,6 @@
 import Overlay from "../models/Overlay";
 import GameData from "../services/GameData";
+import ScenarioValidator from "../validators/ScenarioValidator";
 
 export default class OverlayRepository {
     fetch(game) {
@@ -17,7 +18,8 @@ export default class OverlayRepository {
 
         overlay.present = true;
 
-        this.unlockScenariosByOverlay(overlay);
+        // potentially unlock scenarios
+        this.scenarioValidator.validate();
     }
 
     remove(id) {
@@ -29,15 +31,8 @@ export default class OverlayRepository {
 
         overlay.present = false;
 
-        this.lockScenariosByOverlay(overlay);
-    }
-
-    unlockScenariosByOverlay(overlay, unlock = true) {
-        // TODO
-    }
-
-    lockScenariosByOverlay(overlay) {
-        this.unlockScenariosByOverlay(overlay, false);
+        // potentially lock scenarios
+        this.scenarioValidator.validate();
     }
 
     findLinkedFrom(scenario) {
@@ -68,5 +63,9 @@ export default class OverlayRepository {
     
     get gameData() {
         return this._gameData || (this._gameData = new GameData());
+    }
+
+    get scenarioValidator() {
+        return this._scenarioValidator || (this._scenarioValidator = new ScenarioValidator);
     }
 }
