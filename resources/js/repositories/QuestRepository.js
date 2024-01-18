@@ -15,7 +15,7 @@ export default class QuestRepository {
     }
 
     findMany(list) {
-        return app.quests.whereIn(list);
+        return app.quests.whereIn(list).filter();
     }
 
     get gameData() {

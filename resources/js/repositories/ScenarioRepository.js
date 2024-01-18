@@ -266,7 +266,7 @@ export default class ScenarioRepository {
     findMany(list) {
         return collect().wrap(list).map((id) => {
             return this.find(id);
-        });
+        }).filter();
     }
 
     findSolo(characterId) {
