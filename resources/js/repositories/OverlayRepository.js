@@ -46,7 +46,7 @@ export default class OverlayRepository {
     findMany(list) {
         return collect().wrap(list).map((id) => {
             return this.find(id);
-        });
+        }).filter();
     }
 
     where(filter) {
