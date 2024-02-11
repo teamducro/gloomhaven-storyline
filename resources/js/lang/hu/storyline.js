@@ -1,11 +1,11 @@
 export default {
     "quest": {
         "1": {
-            //"name": "The Merchant's Request",
+            "name": "The Merchant's Request",
             "sections": {
-          //      "1": "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
-           //     "2": "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic power. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
-       //         "3": "You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
+                "1": "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
+                "2": "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic power. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
+                "3": "You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
             },
             "stages": {
                 "0": "{1}",
@@ -14,10 +14,10 @@ export default {
             }
         },
         "2": {
-   //         "name": "The Merchant's Wrath",
+            "name": "The Merchant's Wrath",
             "sections": {
-    //            "1": "Jekserah offers you another job after you finished your first one. A tribe of Inox in the Dagger Forest has ransacked a couple of her caravans headed to the Capital. She asked if you could make an example of them.",
-     //           "2": "The Inox tribe is dead. You've made an brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
+                "1": "Jekserah offers you another job after you finished your first one. A tribe of Inox in the Dagger Forest has ransacked a couple of her caravans headed to the Capital. She asked if you could make an example of them.",
+                "2": "The Inox tribe is dead. You've made an brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
                 "3": "Jekserah has fled from Gloomhaven and sworn vengeange upon you due to your actions against her. She will not be keen on paying you for running her errands anymore."
             },
             "stages": {
@@ -27,10 +27,10 @@ export default {
             }
         },
         "3": {
-     //       "name": "Seeking Gloom",
+            "name": "Seeking Gloom",
             "sections": {
-   //             "1": "The Bandit Commander's proclamations of a “Gloom” during your battle do not sit well with you. Sifting through the carnage left by the battle, you found a cache of scrolls. The writing upon them was in some unknown archaic language. Among the scrolls, you found a map of the northern countryside. A bend in the Still River was clearly marked as a point of interest. Contemplating whether you want to find out more about this so-called “Gloom,” you decided that the spot could be a point of interest for you, as well.",
-     //           "2": "The map lead to a crypt full of demons and cultists. Clearly, the bandits are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One is marked as being overrun by vicious undead. It looks as though you have an opportunity to get in the cult's good graces by helping to clear out a threat. This may help you learn more about the “Gloom”.",
+                "1": "The Bandit Commander's proclamations of a “Gloom” during your battle do not sit well with you. Sifting through the carnage left by the battle, you found a cache of scrolls. The writing upon them was in some unknown archaic language. Among the scrolls, you found a map of the northern countryside. A bend in the Still River was clearly marked as a point of interest. Contemplating whether you want to find out more about this so-called “Gloom,” you decided that the spot could be a point of interest for you, as well.",
+                "2": "The map lead to a crypt full of demons and cultists. Clearly, the bandits are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One is marked as being overrun by vicious undead. It looks as though you have an opportunity to get in the cult's good graces by helping to clear out a threat. This may help you learn more about the “Gloom”.",
                 "3": "After the terrible shrieks and moans of the undead ceased, a grinning hooded figure appeared before you. His demeanor was deeply unsettling. He asked another favor of you in exchange for forgiveness for killing his brethren. The cultists want the necromancer, Jekserah, dead. If you bring her head to their headquarters, you may find out more about the “Gloom”. The figure gave you details on where to find evidence of Jekserah's plans.",
                 "4": "You have slain Jekserah. As she collapsed, the life fleeing her eyes, she whispered at you “You have no idea what’s coming...”. Perhaps your old boss's head may prove useful in future dealings with the bandits.",
                 "5": "You have slain Jekserah. It's time to bring your old boss's head to the cult's headquarters.",
@@ -51,10 +51,10 @@ export default {
             }
         },
         "4": {
-   //         "name": "Tales from the Crypt",
+            "name": "Tales from the Crypt",
             "sections": {
-     //           "1": "While investigating the “Gloom”, you discovered the bandits from the Black Barrow are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One appears to see heavy use with the cult. It looks as though you have an opportunity to disrupt more of the cult's activities.",
-      //          "2": "You followed the writings to an ancient crypt believed to be the cult’s base of operations. A group of cultists were performing ritual incantations in front of a black, gaping hole in reality. With the cultists and their minions dead, the dark rift is now dormant."
+                "1": "While investigating the “Gloom”, you discovered the bandits from the Black Barrow are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One appears to see heavy use with the cult. It looks as though you have an opportunity to disrupt more of the cult's activities.",
+                "2": "You followed the writings to an ancient crypt believed to be the cult’s base of operations. A group of cultists were performing ritual incantations in front of a black, gaping hole in reality. With the cultists and their minions dead, the dark rift is now dormant."
             },
             "stages": {
                 "0": "{1}",
@@ -62,10 +62,10 @@ export default {
             }
         },
         "6": {
-   //         "name": "The Merchant's Secret",
+            "name": "The Merchant's Secret",
             "sections": {
-     //           "1": "When you left Jekserah's manor a Quatryl city guard approached you. She told you Jekserah has been trying to overthrow the military in Gloomhaven and is up to something sinister. The guard asked for your aid in uncovering Jekserah’s plans and expose her for who she really is.",
-     //           "2": "The warehouse was full of the undead. Jekserah had been using the necromantic scroll you delivered to raise the undead within the city walls. You fought your way to the back room of the warehouse and confronted Jekserah. Just before she flipped out a window she told you she'd be back with a legion of undead. To stop her you could locate her yourself or ask the help of an Aesther enchanter mentioned by the city guard",
+                "1": "When you left Jekserah's manor a Quatryl city guard approached you. She told you Jekserah has been trying to overthrow the military in Gloomhaven and is up to something sinister. The guard asked for your aid in uncovering Jekserah’s plans and expose her for who she really is.",
+                "2": "The warehouse was full of the undead. Jekserah had been using the necromantic scroll you delivered to raise the undead within the city walls. You fought your way to the back room of the warehouse and confronted Jekserah. Just before she flipped out a window she told you she'd be back with a legion of undead. To stop her you could locate her yourself or ask the help of an Aesther enchanter mentioned by the city guard",
                 "3": "You ignored the city guard Argeise's warnings and continued working for Jekserah. “Sinister machinations” is, of course, a troubling phrase to throw around, but the phrase “considerable reward” trumps that in a heartbeat. There is no more reason to raid the warehouse."
             },
             "stages": {
@@ -75,11 +75,11 @@ export default {
             }
         },
         "7": {
-     //       "name": "A Valrath's Best Friend",
+            "name": "A Valrath's Best Friend",
             "sections": {
-       //         "1": "Jekserah has one last task for you. She requires a diamond of considerable size for a customer. There is a diamond mine in the southern mountains overrun by Vermlings, with some other more intelligent force behind them. If you can fight your way in and grab the biggest diamond you can find, Jekserah will give you a considerable reward. However, you have been also been warned by a guard that Jekserah may have more sinister machinations than she lets on. Something about overthrowing the military... but one diamond couldn't hurt, could it?",
+                "1": "Jekserah has one last task for you. She requires a diamond of considerable size for a customer. There is a diamond mine in the southern mountains overrun by Vermlings, with some other more intelligent force behind them. If you can fight your way in and grab the biggest diamond you can find, Jekserah will give you a considerable reward. However, you have been also been warned by a guard that Jekserah may have more sinister machinations than she lets on. Something about overthrowing the military... but one diamond couldn't hurt, could it?",
                 "2": "Sinister machinations or not, you decided the phrase “considerable reward” was more pertinent. As expected, the diamond mine was infested by Vermling miners. They were lead by a Merciless Overseer who swiftly turned the miners against you with a few cracks of his whip. Once the overseer was dealt with and the diamond recovered, the remaining miners scattered. You headed back to Jekserah to claim your reward. Her bodyguards escorted you inside the manor where you found her somehow different—more harrowed and grim. “Wonderful.” She exchanged the diamond for a large purse full of coins. “This will serve beautifully as a focus for the incantations. I wonder if the cultists even knew what they had here. With this, I can summon an entire army of undead!” She turned to you with a strange glint in her eye. “So then! Are you ready to overthrow the military of Gloomhaven and put control of the city into the hands of the Merchant’s Guild? Or do you not have the stomach to effect real change?”",
-     //           "3": "You decided that “sinister machinations” outweigh “considerable reward”. You raided Jekserah's warehouse and uncovered her secret plans to invade the town with an army of the dead. In the process, she fled the city. It's safe to say the “considerable reward” is off the table and there's no more reason to visit the mine."
+                "3": "You decided that “sinister machinations” outweigh “considerable reward”. You raided Jekserah's warehouse and uncovered her secret plans to invade the town with an army of the dead. In the process, she fled the city. It's safe to say the “considerable reward” is off the table and there's no more reason to visit the mine."
             },
             "stages": {
                 "0": "{1}",
@@ -88,9 +88,9 @@ export default {
             }
         },
         "8": {
-      //      "name": "Tripping the Rift",
+            "name": "Tripping the Rift",
             "sections": {
-       //         "1": "While busting up some cultist activity, you encountered a gaping black rift in reality. The cultists were performing some sort of ritual on the rift that was bringing forth horrible nightmarish forms of teeth and claws into this reality. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. You tossed a rock at it, and the rock disappeared into nothingness. You must admit that you wonder whether you could enter the rift yourself and whether you could survive the trip to wherever that rock ended up. Do you dare enter the rift?",
+                "1": "While busting up some cultist activity, you encountered a gaping black rift in reality. The cultists were performing some sort of ritual on the rift that was bringing forth horrible nightmarish forms of teeth and claws into this reality. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. You tossed a rock at it, and the rock disappeared into nothingness. You must admit that you wonder whether you could enter the rift yourself and whether you could survive the trip to wherever that rock ended up. Do you dare enter the rift?",
                 "2": "The trip was less than pleasant. As soon as you arrived, you were set upon by demons sent by an angry, booming voice. Once the demons were dispatched, the voice spoke once more and invited you into it's realm. Having already made one leap of faith, you decided there was no harm in making another. Inside the voice's realm stood a monstrous creature, horned and terrifying, holding a trident and standing on four hooved legs. It asked you to retrieve an artifact, or otherwise the demonic creature would kill you.",
                 "3": "Of course not. What kind of fool goes diving into shadowy dimensional rifts? Instead, you decided to seek aid in closing this rift permanently. Clearly nothing good could come of it, so you neutralized the rift."
             },
@@ -101,12 +101,12 @@ export default {
             }
         },
         "9": {
-       //     "name": "Necromancer Hunt",
+            "name": "Necromancer Hunt",
             "sections": {
-        //        "1": "“You will regret that decision when I return to Gloomhaven with a legion of undead at my back!” Jerkserah threatens and she flees from the city. It is clear you need to hunt her down before she can make good on her threats. The city guard Argeise suggests you to seek help from an Aesther enchanter, if she is willing to work together. Or perhaps the Sanctuary of the Great Oak will answer any question you ask of it?",
+                "1": "“You will regret that decision when I return to Gloomhaven with a legion of undead at my back!” Jerkserah threatens and she flees from the city. It is clear you need to hunt her down before she can make good on her threats. The city guard Argeise suggests you to seek help from an Aesther enchanter, if she is willing to work together. Or perhaps the Sanctuary of the Great Oak will answer any question you ask of it?",
                 "2": "Having met Hail, the Aesther enchantress, she surely will help you find Jeskerah after you helped her?",
                 "3": "While at the Temple of the Seer, a disembodied voice offers you one answer to any choice of questions. Your interest went out to other questions. The enchanters help will be the only way to find Jekserah.",
-              //  "4": "Jekserah’s location is in the Corpsewood. Lets stop her necromancy!",
+                "4": "Jekserah’s location is in the Corpsewood. Lets stop her necromancy!",
                 "5": "With one more hack of your blade, you separate her head from her body, return the head to the Captain of the Guard and are paid handsomely for the bounty on her."
             },
             "stages": {
@@ -145,13 +145,13 @@ export default {
             }
         },
         "12": {
- //           "name": "The Heart's Desire",
+            "name": "The Heart's Desire",
             "sections": {
-  //              "1": "You reach out to some of your contacts concerning Jekserah’s location, and end up with an odd bit of information from the Sanctuary of the Great Oak. They say there is a temple high in the Watcher Mountains dedicated to some unseen force that can answer any questions asked of it. So many choices in finding out what you want!",
-      //          "2": "With great risk, you finally reach the temple. “I am afraid I cannot accept visitors at this time,” a disembodied voice booms through the room. After fighting off the monsters the voice throws at you, the voice makes you a deal. “I will answer a single question for you, and then you will leave this place.” What do you choose? Great power, wealth or the location of the necromancer?",
+                "1": "You reach out to some of your contacts concerning Jekserah’s location, and end up with an odd bit of information from the Sanctuary of the Great Oak. They say there is a temple high in the Watcher Mountains dedicated to some unseen force that can answer any questions asked of it. So many choices in finding out what you want!",
+                "2": "With great risk, you finally reach the temple. “I am afraid I cannot accept visitors at this time,” a disembodied voice booms through the room. After fighting off the monsters the voice throws at you, the voice makes you a deal. “I will answer a single question for you, and then you will leave this place.” What do you choose? Great power, wealth or the location of the necromancer?",
                 "3": "Great power it is. The voice talks about a shrine in the Copperneck mountains which will give you the power you are looking for.",
                 "4": "Wealth it is. The voice talks about an island in the Misty Sea. It gives you confidence that you will find vast riches on this particular one.",
-     //           "5": "The location of the necromancer it is. The voice talks about a sanctum in the Corpsewood."
+                "5": "The location of the necromancer it is. The voice talks about a sanctum in the Corpsewood."
             },
             "stages": {
                 "0": "{1}",
@@ -161,9 +161,9 @@ export default {
             }
         },
         "13": {
-  //          "name": "The Enchantress",
+            "name": "The Enchantress",
             "sections": {
-      //          "1": "An enchanter has been called for, so an enchanter must be found. Following reports of an Aesther in the Boiler District, you find yourself in front of the Aesther woman.",
+                "1": "An enchanter has been called for, so an enchanter must be found. Following reports of an Aesther in the Boiler District, you find yourself in front of the Aesther woman.",
                 "2": "She is known to be eccentric and does not feel enthusiasm to help you at first. However, with your help in finding an orb from the frozen hollow in the Copperneck mountains, Hail is curious about what you want."
             },
             "stages": {
@@ -224,9 +224,9 @@ export default {
             }
         },
         "18": {
-      //      "name": "Closing the Rift",
+            "name": "Closing the Rift",
             "sections": {
-     //           "1": "With the goal of stopping elemental cultists, you step into a crypt and discover a horrifying sight. A group of cultists is performing ritual incantations in front of a black, gaping hole in reality. Out of the rift come nightmarish forms, full of teeth and claws. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. Having met Hail, the Aesther enchantress, she surely will help you close the rift?",
+                "1": "With the goal of stopping elemental cultists, you step into a crypt and discover a horrifying sight. A group of cultists is performing ritual incantations in front of a black, gaping hole in reality. Out of the rift come nightmarish forms, full of teeth and claws. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. Having met Hail, the Aesther enchantress, she surely will help you close the rift?",
                 "2": "Having met Hail, the Aesther enchantress, she surely will help you close the rift?",
                 "3": "Hail required an elemental censer from a long dead elementalist’s crypt. Unfortunately, the cultists inhabiting the crypt weren’t keen on parting with it. You escorted Hail through the crypt until she could secure the censer, which she used to promptly dispatch the remaining undead. She’s now ready to deal with the rift.",
                 "4": "... or at least she was, before Gloomhaven’s new Demon overlords overtook the city and made off with an artifact Hail needed. If you want Hail to close the rift, you’ll need to get the artifact back from the Prime Demon. He probably won’t be happy about it.",
