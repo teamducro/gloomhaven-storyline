@@ -97,7 +97,7 @@ export default {
                     '{MOVE}': this.$t('Move') + ' <webp src="/img/icons/general/move.png" width="20" class="inline"/>',
                     '{JUMP}': this.$t('Jump') + ' <webp src="/img/icons/general/jump.png" width="20" class="inline"/>',
                     '{FLYING}': this.$t('Flying') + ' <webp src="/img/icons/general/flying.png" width="20" class="inline"/>',
-                    '{RETALIATE}': this.$t('REGENERATE') + ' <webp src="/img/icons/general/retaliate.png" width="20" class="inline"/>',
+                    '{RETALIATE}': this.$t('Retaliate') + ' <webp src="/img/icons/general/retaliate.png" width="20" class="inline"/>',
                     '{SWING}': this.$t('SWING') + ' <webp src="/img/icons/general/swing.png" width="20" class="inline"/>',
                     '{TELEPORT}': this.$t('TELEPORT') + ' <webp src="/img/icons/general/teleport.png" width="20" class="inline"/>',
                     '{TARGET}': this.$t('TARGET') + ' <webp src="/img/icons/general/target.png" width="20" class="inline"/>',
