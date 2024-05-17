@@ -285,6 +285,8 @@ export default {
                     this.buildingRepository.setBuilt(building);
                 }
                 building.level += 1;
+
+                this.changed();
             }
 
             if (!building.checkUpgradeCost(this.combinedResources)) {
@@ -300,17 +302,15 @@ export default {
             } else {
                 upgrade();
             }
-
-            this.changed();
         },
         downgrade(building) {
             building.level -= 1;
             if (building.level <= 0) {
                 building.level = 0;
                 this.buildingRepository.setAvailable(building);
-
-                this.changed();
             }
+
+            this.changed();
         },
         wreck(building) {
             this.buildingRepository.setWrecked(building);
@@ -320,6 +320,8 @@ export default {
         repair(building) {
             const build = () => {
                 this.buildingRepository.setBuilt(building);
+
+                this.changed();
             }
 
             if (!building.checkWreckedCost(this.combinedResources)) {
@@ -329,8 +331,6 @@ export default {
             } else {
                 build();
             }
-
-            this.changed();
         },
         overlayDisplayName(overlay, showName = true) {
             // Replace "G_red" with "G (red)"
@@ -349,6 +349,8 @@ export default {
                     if (overlay.game === 'fh' && overlay.id === 'A') {
                         this.openBoatModal();
                     }
+
+                    this.changed();
                 }
 
                 if (!overlay.checkBuildCost(this.combinedResources)) {
@@ -361,8 +363,6 @@ export default {
             } else {
                 this.overlayRepository.remove(overlay.id);
             }
-
-            this.changed();
         },
         openBoatModal() {
             this.$refs['boat-modal'].open();
@@ -382,9 +382,9 @@ export default {
             // Add resources from sheet
             let combinedResources = {
                 prosperity: this.calculateProsperity(sheet.prosperityIndex, sheet.game),
-                lumber: sheet.resources.lumber,
-                metal: sheet.resources.metal,
-                hide: sheet.resources.hide,
+                lumber: sheet.resources.lumber || 0,
+                metal: sheet.resources.metal || 0,
+                hide: sheet.resources.hide || 0,
                 gold: 0
             };
 
