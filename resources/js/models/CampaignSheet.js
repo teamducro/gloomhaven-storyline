@@ -122,7 +122,7 @@ class CampaignSheet {
                 this.summerRoad[i] = true;
             }
         }
-        for (let i = 21; i <= 52; i++) {
+        for (let i = 1; i <= 52; i++) {
             this.summerRoad[i] = this.summerRoad[i] || false;
         }
 
@@ -131,7 +131,7 @@ class CampaignSheet {
                 this.summerOutpost[i] = true;
             }
         }
-        for (let i = 21; i <= 65; i++) {
+        for (let i = 1; i <= 65; i++) {
             this.summerOutpost[i] = this.summerOutpost[i] || false;
         }
 
@@ -140,7 +140,7 @@ class CampaignSheet {
                 this.winterRoad[i] = true;
             }
         }
-        for (let i = 21; i <= 49; i++) {
+        for (let i = 1; i <= 49; i++) {
             this.winterRoad[i] = this.winterRoad[i] || false;
         }
 
@@ -149,7 +149,7 @@ class CampaignSheet {
                 this.winterOutpost[i] = true;
             }
         }
-        for (let i = 21; i <= 81; i++) {
+        for (let i = 1; i <= 81; i++) {
             this.winterOutpost[i] = this.winterOutpost[i] || false;
         }
 
@@ -158,7 +158,7 @@ class CampaignSheet {
                 this.boat[i] = true;
             }
         }
-        for (let i = 14; i <= 19; i++) {
+        for (let i = 1; i <= 19; i++) {
             this.boat[i] = this.boat[i] || false;
         }
 
@@ -280,6 +280,11 @@ class CampaignSheet {
         this._characterOrder = Helpers.reverse(Object.assign({}, characterOrderWithStartersFirst));
 
         return this._characterOrder;
+    }
+
+    isSummer() {
+        const remainder = this.calendar.week % 20;
+        return (remainder % 20 >= 0 && remainder % 20 <= 9);
     }
 
     // The key used in local storage
