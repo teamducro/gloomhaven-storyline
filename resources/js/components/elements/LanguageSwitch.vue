@@ -9,7 +9,7 @@
             <div class="mdc-line-ripple"></div>
         </div>
 
-        <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class" style="min-width: 240px">
+        <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class">
             <ul class="mdc-list">
                 <li v-for="(name, lang) in languages"
                     :key="lang" :data-value="lang"

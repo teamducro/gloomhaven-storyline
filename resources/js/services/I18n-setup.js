@@ -1,7 +1,7 @@
 // import axios from 'axios';
 
 const loadedLanguages = ['en']; // our default language that is preloaded
-const supportedLanguages = ['en', 'de', 'fr', 'it', 'es', 'pl', 'ru'];
+const supportedLanguages = ['en', 'fr', 'it', 'de', 'es', 'pl', 'ru', 'hu', 'pt'];
 
 function setI18nLanguage(lang) {
     i18n.locale = lang;
