@@ -232,7 +232,8 @@ export default {
                 frosthaven: {
                     'Automatic sharing': true,
                     'Spoiler free scenario tracking': false,
-                    'Scenario summaries': false,
+                    // 'Scenario summaries': false,
+                    'Tracked buildings': false,
                     'Tracked Achievements': false,
                     'Map view': false,
                     'Items': false,
