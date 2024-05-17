@@ -315,11 +315,6 @@
                         <p class="text-gray-500 px-6 mb-2">
                             Gloomhaven Storyline is available in English, French, Italian, German and Spanish!
                         </p>
-                        <p class="text-gray-500 px-6">
-                            Please
-                            <email-me class="link">contact me</email-me>
-                            if you like to contribute with translations.
-                        </p>
 
                         <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
                             <inline-svg src="icons/cs" :classes="['w-6', 'h-6', 'mr-2']"/>

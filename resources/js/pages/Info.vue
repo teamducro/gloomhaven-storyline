@@ -11,8 +11,7 @@
             <h2 id="contribute" class="mt-8 mb-4 text-lg">{{ $t('Contributions') }}</h2>
 
             <p>{{ $t('contribute.text-1') }}</p>
-            <p class="mt-2">{{ $t('contribute.text-2') }} Upcoming features include JotL scenarios summaries,
-                solo scenarios or character cards in deck!</p>
+            <p class="mt-2">{{ $t('contribute.text-2') }} Upcoming features include Frosthaven herb garden.</p>
 
             <div class="flex flex-col sm:flex-row">
                 <div>
@@ -22,7 +21,7 @@
             </div>
 
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Support') }}</h2>
-            <p>{{ $t('support.text-1') }}</p>
+            <!--<p>{{ $t('support.text-1') }}</p>-->
             <p>{{ $t('support.text-2') }} <a href="/#/faq" class="link">{{ $t('faq') }}</a> {{ $t('or') }}
                 <email-me class="link">{{ $t('send me an e-mail') }}</email-me>.
             </p>
