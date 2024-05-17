@@ -14,6 +14,8 @@ export default {
     "Add rift events": "Add rift events",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.",
     "completed scenarios": "abgeschlossene Szenarien",
+    "Show winter events": "Winter-Ereignisse anzeigen",
+    "Show summer events": "Sommer-Ereignisse anzeigen",
     "5 Ancient Technology Global Achievements": "5x “Alte Technologie” globale Errungenschaft erhalten",
     "Add City Event 75 & Road Event 66": "Fügt Stadt-Ereignis 75 & Weg-Ereignis 66 hinzu",
     "Add City Event 76 & Road Event 67": "Fügt Stadt-Ereignis 76 & Weg-Ereignis 67 hinzu",

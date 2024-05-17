@@ -14,6 +14,8 @@ export default {
     "Add rift events": "Add rift events",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Za każdym razem, gdy Twoja drużyna pomyślnie ukończy pięć scenariuszy, zaznacz jedno z pól i zdobądź odpowiednią nagrodę.",
     "completed scenarios": "ukończone scenariusze",
+    "Show winter events": "Pokaż zimowe zdarzenia",
+    "Show summer events": "Pokaż letnie zdarzenia",
     "5 Ancient Technology Global Achievements": "Zdobycie 5 osiągnięć globalnych „Starożytna Technologia”",
     "Add City Event 75 & Road Event 66": "Dodaj do talii zdarzenie miejskie 75 oraz zdarzenie na szlaku 66",
     "Add City Event 76 & Road Event 67": "Dodaj do talii zdarzenie miejskie 76 oraz zdarzenie na szlaku 67",

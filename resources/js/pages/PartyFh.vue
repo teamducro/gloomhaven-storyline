@@ -55,7 +55,14 @@
                 :prosperity.sync="prosperity"
                 @change="store"/>
 
-            <div class="lg:flex" v-if="isSummer">
+            <checkbox-with-label
+                id="toggle-season-events"
+                class="mt-8"
+                :checked.sync="showOtherSeasonEvents"
+                :label="isSummer ? $t('Show winter events') : $t('Show summer events')"
+            />
+
+            <div class="lg:flex" v-if="isSummer || showOtherSeasonEvents">
                 <selectable-list
                     id="summer-outpost-events"
                     :title="$t('Summer Outpost Event Decks')"
@@ -89,7 +96,7 @@
                     </template>
                 </selectable-list>
                 <selectable-list
-                    v-if="boatBuilt"
+                    v-if="boatBuilt && isSummer"
                     id="boat-events"
                     :title="$t('Boat Event Decks')"
                     :label="$t('Add boat events')"
@@ -107,7 +114,7 @@
                 </selectable-list>
             </div>
 
-            <div class="lg:flex" v-else>
+            <div class="lg:flex" v-if="isWinter || showOtherSeasonEvents">
                 <selectable-list
                     id="winter-outpost-events"
                     :title="$t('Winter Outpost Event Decks')"
@@ -141,7 +148,7 @@
                     </template>
                 </selectable-list>
                 <selectable-list
-                    v-if="boatBuilt"
+                    v-if="boatBuilt && isWinter"
                     id="boat-events"
                     :title="$t('Boat Event Decks')"
                     :label="$t('Add boat events')"
@@ -183,9 +190,10 @@ import ScenarioRepository from "../repositories/ScenarioRepository";
 import OverlayRepository from "../repositories/OverlayRepository";
 import ResourcesSection from "../components/presenters/party/ResourcesSection.vue";
 import MoraleSection from "../components/presenters/party/MoraleSection.vue";
+import CheckboxWithLabel from "../components/elements/CheckboxWithLabel.vue";
 
 export default {
-    components: {MoraleSection, ResourcesSection},
+    components: {CheckboxWithLabel, MoraleSection, ResourcesSection},
     mixins: [GetCampaignName, SheetCalculations],
     inject: ['appData'],
     data() {
@@ -196,6 +204,7 @@ export default {
             loading: true,
             isLocalCampaign: true,
             renderX: 0,
+            showOtherSeasonEvents: false,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
             scenarioRepository: new ScenarioRepository,
@@ -216,6 +225,9 @@ export default {
         isSummer() {
             const remainder = this.sheet.calendar.week % 20;
             return (remainder % 20 >= 0 && remainder % 20 <= 9);
+        },
+        isWinter() {
+            return !this.isSummer;
         },
         boatBuilt() {
             return this.overlayRepository.find('A')?.present;

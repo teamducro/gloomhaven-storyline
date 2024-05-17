@@ -14,6 +14,8 @@ export default {
     "Add rift events": "Добавить карты событий «Портал»",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Каждый раз, когда ваш отряд успешно завершает 5 сценариев, проверьте любую из коробочек и получите соответствующую награду.",
     "completed scenarios": "выполненных сценариев",
+    "Show winter events": "Показать зимние события",
+    "Show summer events": "Показать летние события",
     "5 Ancient Technology Global Achievements": "5 раз получено общее достижение «Древняя технология»",
     "Add City Event 75 & Road Event 66": "Добавьте в колоду «Город» карту события 75, а в колоду «Дорога» — карту события 66",
     "Add City Event 76 & Road Event 67": "Добавьте в колоду «Город» карту события 76, а в колоду «Дорога» — карту события 67",
