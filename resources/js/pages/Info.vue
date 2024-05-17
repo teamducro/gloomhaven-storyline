@@ -111,11 +111,27 @@
                 </li>
                 <li class="py-1">
                     <span class="mr-1 block sm:inline">{{ $t('German') }}:</span>
-                    Krokantpudding & mgh1979
+                    Krokantpudding & mgh1979 & FSGrunt
                 </li>
                 <li class="py-1">
                     <span class="mr-1 block sm:inline">{{ $t('Spanish') }}:</span>
                     Juan Carlos Orte Cardona & Álvaro Frutos
+                </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Portuguese') }}:</span>
+                    lucasthibau
+                </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Hungarian') }}:</span>
+                    fajack87
+                </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Polish') }}:</span>
+                    jkubiszewski
+                </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Russian') }}:</span>
+                    Nick
                 </li>
             </ul>
 
