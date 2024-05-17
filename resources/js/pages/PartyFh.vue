@@ -114,7 +114,7 @@
                 </selectable-list>
             </div>
 
-            <div class="lg:flex" v-if="isWinter || showOtherSeasonEvents">
+            <div class="lg:flex" v-if="!isSummer || showOtherSeasonEvents">
                 <selectable-list
                     id="winter-outpost-events"
                     :title="$t('Winter Outpost Event Decks')"
@@ -148,7 +148,7 @@
                     </template>
                 </selectable-list>
                 <selectable-list
-                    v-if="boatBuilt && isWinter"
+                    v-if="boatBuilt && !isSummer"
                     id="boat-events"
                     :title="$t('Boat Event Decks')"
                     :label="$t('Add boat events')"
@@ -223,11 +223,7 @@ export default {
     },
     computed: {
         isSummer() {
-            const remainder = this.sheet.calendar.week % 20;
-            return (remainder % 20 >= 0 && remainder % 20 <= 9);
-        },
-        isWinter() {
-            return !this.isSummer;
+            return this.sheet?.isSummer();
         },
         boatBuilt() {
             return this.overlayRepository.find('A')?.present;
