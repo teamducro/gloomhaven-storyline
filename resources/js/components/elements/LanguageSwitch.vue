@@ -41,7 +41,9 @@ export default {
                 'de': 'Deutsch',
                 'es': 'Español',
                 'pl': 'Polski',
-                'ru': 'Pусский'
+                'ru': 'Pусский',
+                'hu': 'Magyar',
+                'pt': 'Português (Brasil)', // pt-br
             },
             flags: {
                 'en': '🇺🇸',
@@ -50,7 +52,9 @@ export default {
                 'de': '🇩🇪',
                 'es': '🇪🇸',
                 'pl': '🇵🇱',
-                'ru': '🇷🇺'
+                'ru': '🇷🇺',
+                'hu': '🇭🇺',
+                'pt': '🇧🇷', // pt-br
             },
             userRepository: new UserRepository,
         }
