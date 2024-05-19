@@ -8,7 +8,7 @@
                     {{ $t('Party sheet') }}
                 </option>
                 <optgroup :label="$t('Characters')">
-                    <template v-for="character in sheet.characters">
+                    <template v-for="character in orderedCharacters">
                         <option
                             :selected="selected === character.uuid && !abilities"
                             :value="character.uuid">
@@ -51,30 +51,28 @@
 
         <!-- Desktop menu -->
         <div id="desktop-character-menu" class="hidden sm:block">
-            <ul class="space-y-6 mb-4">
-                <template v-for="character in sheet.characters">
-                    <li class="flow-root" :key="'character-'+character.uuid">
-                        <a @click.stop.prevent="select(character.uuid)" href="#"
-                           class="-m-3 p-2 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
-                           :class="[selected === character.uuid && !abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
-                            <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
-                            <span class="overflow-hidden">{{
-                                    character.name === character.characterName
-                                        ? $t(character.characterName)
-                                        : character.name
-                                }}</span>
-                        </a>
-                    </li>
-                    <li v-if="selected === character.uuid" class="flow-root"
-                        :key="'character-abilities-'+character.uuid">
-                        <a @click.stop.prevent="select(character.uuid, true)" href="#"
-                           class="-m-3 p-2 pl-9 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
-                           :class="[selected === character.uuid && abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
-                            <span class="overflow-hidden">{{ $t('Abilities') }}</span>
-                        </a>
-                    </li>
-                </template>
-            </ul>
+            <draggable tag="ul" class="space-y-6 mb-4" v-model="orderedCharacters" group="characters" @end="updateCharacterOrder">
+                <li v-for="character in orderedCharacters" class="flow-root" :key="'character-'+character.uuid">
+                    <a @click.stop.prevent="select(character.uuid)" href="#"
+                       class="-m-3 p-2 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
+                       :class="[selected === character.uuid && !abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
+                        <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
+                        <span class="overflow-hidden">{{
+                                character.name === character.characterName
+                                    ? $t(character.characterName)
+                                    : character.name
+                            }}</span>
+                    </a>
+                </li>
+            </draggable>
+<!--                    <li v-if="selected === character.uuid" class="flow-root"-->
+<!--                        :key="'character-abilities-'+character.uuid">-->
+<!--                        <a @click.stop.prevent="select(character.uuid, true)" href="#"-->
+<!--                           class="-m-3 p-2 pl-9 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"-->
+<!--                           :class="[selected === character.uuid && abilities ? 'text-white bg-black2-25' : 'text-white2-75']">-->
+<!--                            <span class="overflow-hidden">{{ $t('Abilities') }}</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
 
             <template v-if="!isLocalCampaign && Object.keys(sheet.archivedCharacters).length">
                 <collapse :initialOpen="selected in sheet.archivedCharacters">
@@ -104,7 +102,12 @@
 </template>
 
 <script>
+import draggable from 'vuedraggable'
+
 export default {
+    components: {
+        draggable,
+    },
     props: {
         selected: String,
         abilities: {
@@ -114,8 +117,13 @@ export default {
         sheet: Object,
         isLocalCampaign: Boolean
     },
+    mounted() {
+        this.orderedCharacters = this.orderCharacters();
+    },
     data() {
-        return {}
+        return {
+            orderedCharacters: []
+        }
     },
     computed: {
         selectedCharacter() {
@@ -126,6 +134,13 @@ export default {
         }
     },
     methods: {
+        updateCharacterOrder() {
+            console.log(this.orderedCharacters);
+        },
+        orderCharacters() {
+            return Object.values(this.sheet.characters)
+                .sort((a,b) => a.sortOrder - b.sortOrder)
+        },
         select(uuid, abilities = false) {
             // Already on the selected page
             if (this.selected === uuid && this.abilities === abilities) {

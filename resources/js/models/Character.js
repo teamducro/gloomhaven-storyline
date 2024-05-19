@@ -49,6 +49,7 @@ class Character {
         this.gameData = new GameData;
         this.personalQuestRepository = new PersonalQuestRepository;
         this.translationKey = '';
+        this.sortOrder = data.sortOrder;
 
         this.fieldsToStore = {
             uuid: 'uuid',
@@ -69,6 +70,7 @@ class Character {
             quest: {'quest': {}},
             abilities: {'abilities': {}},
             abilityPerLevel: {'abilityPerLevel': {}},
+            sortOrder: 'sortOrder',
         };
 
         this.read();
@@ -158,6 +160,7 @@ class Character {
 
     read() {
         this.parentRead();
+        this.sortOrder = this.sortOrder || 0;
         this.translationKey = 'characters.' + this.id;
         this.readGameData();
         this.migrateItemIds();

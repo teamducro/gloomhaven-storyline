@@ -127,6 +127,12 @@
 
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
+
+                            <a @click="select(character.uuid, true)" href="#"
+                               class="flex items-center text-base font-medium">
+                                <span class="overflow-hidden">{{ $t('Abilities') }}</span>
+                            </a>
+
                             <perks :checks.sync="character.checks"
                                    :perks.sync="character.perks"
                                    :masteries.sync="character.masteries"
