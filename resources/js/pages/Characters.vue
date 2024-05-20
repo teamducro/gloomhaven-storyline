@@ -26,7 +26,7 @@
 
             <div class="sm:mt-4 sm:flex">
                 <character-menu :selected="selected" :abilities="abilities" :sheet="sheet" @select="select"
-                                :is-local-campaign="isLocalCampaign"/>
+                                @store="store" :is-local-campaign="isLocalCampaign"/>
 
                 <div v-if="character && !abilities" class="w-full relative sm:ml-8"
                      :class="{'opacity-25': !selected}">
@@ -127,17 +127,23 @@
 
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
+
                             <perks :checks.sync="character.checks"
                                    :perks.sync="character.perks"
                                    :masteries.sync="character.masteries"
                                    :character="character"
                                    @change="store"/>
 
-                            <attack-modifier-deck v-if="character.game !== Game.cs"
-                                                  :perks="character.perks"
-                                                  :perkDescriptions="character.perkDescriptions"
-                                                  :character="character"
-                                                  :playerIndex="playerIndex"/>
+                            <div class="flex mt-4 space-x-8">
+                                <attack-modifier-deck v-if="character.game !== Game.cs"
+                                                      :perks="character.perks"
+                                                      :perkDescriptions="character.perkDescriptions"
+                                                      :character="character"
+                                                      :playerIndex="playerIndex"/>
+
+                                <card-stack @click="selectAbilities(character.uuid, true)" :src="abilityBackImage()"
+                                class="cursor-pointer"/>
+                            </div>
 
                             <div v-if="soloScenario" :key="'solo-'+soloScenario.id" class="my-5 flex">
                                 <span class="font-title mr-2">{{ $t('Solo') }}:</span>
@@ -406,6 +412,12 @@ export default {
                 this.selectDemo();
             }
         },
+        selectAbilities(uuid, scrollToTop = false) {
+            this.select(uuid, true);
+            if (scrollToTop) {
+                document.getElementById('characters').scrollIntoView();
+            }
+        },
         select(uuid, abilities = false) {
             if (this.sheet.characters[uuid]) {
                 this.character = this.sheet.characters[uuid];
@@ -418,17 +430,23 @@ export default {
                     ? this.character.name
                     : this.$t(this.character.characterName);
                 this.selected = uuid;
-                this.abilities = abilities;
+                this.abilities = false;
 
-                if (this.abilities) {
-                    // refresh abilities
-                } else {
+                // refresh abilities
+                if (abilities) {
+                    this.$nextTick(() => {
+                        this.abilities = true;
+                    });
+                }
+                // refresh character
+                else {
                     this.findSoloScenario();
                     this.refreshItems();
                     this.rerender();
                     this.storeSelected();
                     this.$nextTick(() => {
                         this.resetRollback();
+                        this.abilities = false;
                     });
                 }
             }
@@ -515,6 +533,9 @@ export default {
         rerender() {
             this.refreshInputFields();
             this.sheetHash = this.sheet.makeHash();
+        },
+        abilityBackImage() {
+            return `/img/abilities/${this.character.game}/${this.character.id}/back.jpg`;
         }
     }
 }

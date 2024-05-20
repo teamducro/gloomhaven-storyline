@@ -1,9 +1,7 @@
 <template>
-    <div class="mb-4">
-        <a id="open-modifier-deck" class="cursor-pointer" @click="open">
-            <card-stack :src="backImage"/>
-        </a>
-    </div>
+    <a id="open-modifier-deck" class="cursor-pointer" @click="open">
+        <card-stack :src="backImage"/>
+    </a>
 </template>
 
 <script>

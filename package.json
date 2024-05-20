@@ -66,7 +66,7 @@
         "@sentry/vue": "^6.18.2",
         "@stripe/stripe-js": "^1.24.0",
         "animate.css": "^4.1.1",
-        "axios": "v0.27.2",
+        "axios": "^1.7.0",
         "cash-dom": "^8.1.1",
         "collect.js": "^4.31.3",
         "dayjs": "^1.10.8",
@@ -95,6 +95,7 @@
         "vue-router": "^3.5.3",
         "vue-scrollto": "^2.20.0",
         "vue-social-sharing": "^3.0.9",
+        "vuedraggable": "^2.24.3",
         "webpack": "^5.76.0"
     }
 }
