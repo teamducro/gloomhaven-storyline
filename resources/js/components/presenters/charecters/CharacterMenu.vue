@@ -147,10 +147,13 @@ export default {
     },
     methods: {
         updateCharacterOrder() {
+            // Update the sort order of the characters
             this.orderedCharacters.forEach((character, index) => {
                 character.sortOrder = index;
+                character.store();
             });
 
+            // Sync the new character order with the server
             this.$emit('store');
         },
         orderCharacters() {
