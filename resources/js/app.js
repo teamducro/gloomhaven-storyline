@@ -48,10 +48,7 @@ window._ = require('lodash');
 window.c = require('cash-dom');
 window.Vue = Vue;
 window.collect = require('collect.js');
-window.axios = require('axios').default.create({
-    baseURL: process.env.MIX_API_URL,
-    withCredentials: true
-});
+window.axios = require('axios').create();
 dayjs.extend(localizedFormat);
 dayjs.extend(relativeTime);
 
