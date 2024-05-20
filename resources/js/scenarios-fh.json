@@ -651,7 +651,15 @@
                 "lumber": 5,
                 "metal": 2,
                 "corpsecap": 2
-            }
+            },
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar",
+                        "puzzle"
+                    ]
+                }
+            ]
         },
         {
             "id": 18,
@@ -1158,7 +1166,15 @@
                 "arrowvine": 1,
                 "flamefruit": 1,
                 "rockroot": 1
-            }
+            },
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar",
+                        "puzzle"
+                    ]
+                }
+            ]
         },
         {
             "id": 32,
@@ -1205,7 +1221,8 @@
             "required_by": [
                 {
                     "complete": [
-                        "CITF"
+                        "CITF",
+                        "calendar"
                     ]
                 }
             ],
@@ -1272,6 +1289,13 @@
             "linked_from": [
                 25
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 2 collective {LUMBER}",
                 "Gain 2 collective {METAL}",
@@ -1307,6 +1331,13 @@
                 {
                     "complete": [
                         37
+                    ]
+                }
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
                     ]
                 }
             ],
@@ -1346,6 +1377,13 @@
                 {
                     "complete": [
                         36
+                    ]
+                }
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
                     ]
                 }
             ],
@@ -1410,7 +1448,8 @@
             "required_by": [
                 {
                     "complete": [
-                        "CITF"
+                        "CITF",
+                        "calendar"
                     ]
                 }
             ],
@@ -1469,7 +1508,14 @@
                 "hide": 2,
                 "arrowvine": 2,
                 "flamefruit": 1
-            }
+            },
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ]
         },
         {
             "id": 41,
@@ -1544,7 +1590,14 @@
                 "flamefruit": 1,
                 "snowthistle": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ]
         },
         {
             "id": 43,
@@ -1778,6 +1831,13 @@
                     ]
                 }
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 5 experience each",
                 "Gain 1 inspiration"
@@ -1810,6 +1870,13 @@
                 {
                     "complete": [
                         49
+                    ]
+                }
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
                     ]
                 }
             ],
@@ -2287,6 +2354,13 @@
             "linked_from": [
                 61
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "puzzle"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 1 prosperity"
             ],
@@ -2412,6 +2486,13 @@
             "linked_from": [
                 65
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain “Elemental Stone” (Item 212)",
                 "Add 29.3 to the calendar in six weeks"
@@ -2445,6 +2526,13 @@
             ],
             "linked_from": [
                 66
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
             ],
             "rewards": [
                 "Gain 1 morale",
@@ -2540,6 +2628,13 @@
             "linked_from": [
                 69
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 "“The True Oak” personal quest complete",
                 "Gain 1 Prosperity"
@@ -2603,6 +2698,13 @@
             ],
             "linked_from": [
                 71
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
             ],
             "rewards": [
                 "Gain 1 ✔ each"
@@ -2672,6 +2774,13 @@
             ],
             "linked_from": [
                 73
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
             ],
             "rewards": [
                 "Gain one random item blueprint"
@@ -2896,6 +3005,13 @@
             "linked_from": [
                 79
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 2 collective {LUMBER}",
                 "Gain 2 collective {METAL}",
@@ -2928,6 +3044,13 @@
             "treasures": [
                 19
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "puzzle"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 1 prosperity",
                 "Gain “Aesther Robe” (Item 70) blueprint"
@@ -2953,6 +3076,13 @@
             "is_side": true,
             "chapter_id": 110,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 2 prosperity",
                 "Add the following Forgotten Circles items to the Frosthaven supply: 153, 159, and 161"
@@ -3357,6 +3487,13 @@
             "linked_from": [
                 94
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 1 morale",
                 "Gain 10 gold each"
@@ -3690,6 +3827,13 @@
             "linked_from": [
                 105
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain “Key of Seasons” (Item 213)"
             ],
@@ -3973,6 +4117,13 @@
             "linked_from": [
                 114
             ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 [
                     "Gain 15 experience each",
@@ -4027,6 +4178,13 @@
             "complexity": 2,
             "linked_from": [
                 115
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
             ],
             "rewards": [
                 [
@@ -4090,6 +4248,13 @@
             "is_side": true,
             "chapter_id": 110,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 4 collective {HIDE}",
                 "Gain 10 gold each"
@@ -4118,7 +4283,8 @@
             "required_by": [
                 {
                     "complete": [
-                        "sled"
+                        "sled",
+                        "calendar"
                     ]
                 }
             ],
@@ -4148,7 +4314,8 @@
             "required_by": [
                 {
                     "complete": [
-                        "CITF"
+                        "CITF",
+                        "calendar"
                     ]
                 }
             ],
@@ -4205,6 +4372,13 @@
             "complexity": 3,
             "linked_from": [
                 120
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
             ],
             "rewards": [
                 [
@@ -4360,6 +4534,13 @@
             "is_side": true,
             "chapter_id": 110,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 10 gold each"
             ],
@@ -4384,6 +4565,13 @@
             "is_side": true,
             "chapter_id": 110,
             "complexity": 1,
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "treasures": [
                 30
             ],
@@ -4478,6 +4666,13 @@
             ],
             "linked_from": [
                 128
+            ],
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
             ],
             "rewards": [
                 "Gain 1 ✔ each"
@@ -4648,6 +4843,13 @@
             "is_side": true,
             "chapter_id": 110,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "puzzle"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain 2 morale",
                 "Gain 2 prosperity",
@@ -4710,6 +4912,7 @@
             "required_by": [
                 {
                     "complete": [
+                        "puzzle",
                         "boat"
                     ]
                 }

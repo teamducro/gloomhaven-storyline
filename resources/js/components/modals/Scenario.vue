@@ -51,17 +51,24 @@
                                :checked="scenario.isHidden()"
                                @changed="stateChanged"
                         ></radio>
+                        <radio v-if="scenario.hasManualRequirement() && !scenario.isBlocked() && !scenario.is_side"
+                               class="whitespace-nowrap"
+                               id="required" group="states" :label="$t('Required')"
+                               :key="'required-' + stateKey"
+                               :checked="scenario.isRequired()"
+                               @changed="stateChanged"
+                        ></radio>
                         <div class="flex w-full">
                             <radio id="incomplete" group="states" :label="$t('Incomplete')"
                                    :key="'incomplete-' + stateKey"
                                    :checked="scenario.isIncomplete()"
-                                   :disabled="scenario.isBlocked() || scenario.isRequired()"
+                                   :disabled="scenario.isBlocked() || (scenario.isRequired() && !scenario.hasManualRequirement())"
                                    @changed="stateChanged"
                             ></radio>
                             <radio id="complete" group="states" :label="$t('Complete')"
                                    :key="'complete-' + stateKey"
                                    :checked="scenario.isComplete()"
-                                   :disabled="scenario.isBlocked() || scenario.isRequired()"
+                                   :disabled="scenario.isHidden() || scenario.isBlocked() || scenario.isRequired()"
                                    @changed="stateChanged"
                             ></radio>
                             <div v-if="scenario.isVisible()"

@@ -4,6 +4,7 @@ import Card from "./Card";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemTextParser from "../services/ItemTextParser";
 import UsesTranslations from "./UsesTranslations";
+import {Requirement} from "./Requirement";
 
 class Scenario {
 
@@ -197,6 +198,12 @@ class Scenario {
 
     hasMultipleLocations() {
         return Object.keys(this._coordinates).includes(String(this.linked_from.first()));
+    }
+
+    hasManualRequirement() {
+        return (this.required_by).some((condition) => {
+            return (condition.complete || []).some((requirement) => Requirement.manuallyUnlock(requirement));
+        });
     }
 
     image() {
