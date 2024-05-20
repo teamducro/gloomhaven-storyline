@@ -132,16 +132,16 @@ export default {
         "name": "El fin de la Penumbra"
     },
     "gh-PTTN": {
-        "name": "El origen del veneno"
-    },
-    "gh-PAMT": {
         "name": "A través del nido"
     },
-    "gh-PBB": {
+    "gh-PAMT": {
         "name": "Mapa del tesoro"
     },
-    "gh-PTPS": {
+    "gh-PBB": {
         "name": "Mal negocio"
+    },
+    "gh-PTPS": {
+        "name": "El origen del veneno"
     },
     "gh-PSB": {
         "name": "Bendecidos por el Sol"
