@@ -22,7 +22,11 @@ import VueI18n from "vue-i18n";
 import i18nEn from "./lang/en/en";
 
 window.Vue = Vue;
-window.axios = require('axios').create();
+window.axios = require('axios').default.create({
+    baseURL: process.env.MIX_API_URL,
+    withCredentials: true,
+    withXSRFToken: true
+});
 
 Vue.use(SocialSharing);
 VueClipboard.config.autoSetContainer = true;

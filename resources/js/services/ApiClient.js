@@ -45,9 +45,6 @@ export default class ApiClient {
     }
 
     async applyHeaders(options = {}) {
-        // Add Base Url
-        options.baseURL = process.env.MIX_API_URL;
-
         if (!options.hasOwnProperty('headers')) {
             options.headers = {};
         }
@@ -64,10 +61,6 @@ export default class ApiClient {
         } else {
             await this.csrf.init();
         }
-
-        // Make sure XSRF-TOKEN is sent as a header, only to the api and not to third party sites.
-        options.withCredentials = true;
-        options.withXSRFToken = true;
 
         return options;
     }
