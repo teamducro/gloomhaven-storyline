@@ -43,6 +43,7 @@ import getFont from "./services/app/getFont";
 import BaseUrl from "./mixins/BaseUrl";
 import {Game} from "./models/Game";
 import enableGame from "./services/app/enableGame";
+import registerServiceWorker from "./services/app/RegisterServiceWorker";
 
 window._ = require('lodash');
 window.c = require('cash-dom');
@@ -312,6 +313,7 @@ window.app = new Vue({
             migrateVersion1Progress();
             this.game = store.get('game') || Game.gh;
             getFont();
+            registerServiceWorker();
         }
     }
 });

@@ -1,11 +1,13 @@
 {
     "name": "Gloomhaven Storyline",
     "short_name": "GH Storyline",
+    "description": "This Gloomhaven Storyline Tracker enables you to register what scenarios are finished and read the story for each new unlocked scenario!",
     "theme_color": "#3771E0",
     "background_color": "#000000",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/#/story",
+    "orientation": "portrait",
+    "scope": "/tracker",
+    "start_url": "/tracker/#/story",
     "icons": [
         {
             "src": "/img/icons/icon-72x72.png",
