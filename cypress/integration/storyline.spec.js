@@ -263,4 +263,23 @@ describe('Storyline', () => {
         cy.get('.mdc-dialog.mdc-dialog--open .mdc-dialog__title img.boss').should('be.visible');
     });
 
+    it('manual requirements', () => {
+        cy.visit('/tracker#/shared/1/local/N4RozgZgFgtADAIgFzAQJwIYDsAmB7AWwH0BLAFwFNiy0KMwBXW5EOAGnDJAGMBfDyLACMyUAAduAFjbps+YuSpEadRsySsBXPgOgwATHBEpZuQqUrVa9JhRbtOIEv3B7D+0afkWlKm+s1HZ11YQwBmT0wzBUtlazU7DQcwLmDXULhJSLlzRStVW3stJxdBAzgAVmzon3z-RMCUkpDygDZq7zy4goDk1NK3DtzYvwSixwAjAdgIkyjOkfjCpOKdBDwANwo0ABsMAE8YPQB1TzFaMAosMhYhaZgslB4oBFa2AHY2AA4EDgkhGTzYa+Ja9Vb3dpzHIxEE9Bp9ZrpGDvIYwupjFaOHRIn5QmpdUbLRr9DgYADCFIAyqIQBgAO4gAE8PD6Dg7Vj3ISzVBAtHderjJppMpCR486G1fkY4k8FzkqkeJ70xkcbh4JnsuBysmU6lKhlMtUajktfSK8X4xZwwXae5hbleYHool9dAUACODBItBwCF4vCAA/story/fh');
+
+        utilities.isNodeRequired(33);
+        utilities.isNodeHidden(42);
+
+        utilities.openScenario(33);
+        cy.get('#complete').should(($radio) => {
+            expect($radio).attr('disabled', 'disabled');
+        });
+
+        // Unlock and complete scenario.
+        cy.get('#scenario-content label').contains('Incomplete').click();
+        utilities.completeScenario(33);
+
+        // Next scenario should be available.
+        utilities.isNodeRequired(42);
+    });
+
 });
