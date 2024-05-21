@@ -26,6 +26,6 @@ export default [
     {path: '/buildings', component: Buildings},
     {path: '/login/:id/:token', component: Login},
     {path: '/settings', component: Settings},
-    {path: '/shared/:version/:id/:storage/:path?', component: Shared},
+    {path: '/shared/:version/:id/:storage/:path?/:game?', component: Shared},
     {path: '*', redirect: '/story'},
 ];

@@ -26,6 +26,10 @@ import attackModifierDecksJson from '../attack-modifier-decks.json'
 import {Game} from "../models/Game";
 
 export default class GameData {
+    validate(game) {
+        return this.games().includes(game)
+    }
+
     games() {
         return Object.getOwnPropertyNames(Game)
     }
