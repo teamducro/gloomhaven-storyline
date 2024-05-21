@@ -9,7 +9,6 @@ import SheetRepository from "../repositories/SheetRepository";
 import {Requirement} from "../models/Requirement";
 import BuildingRepository from "../repositories/BuildingRepository";
 import OverlayRepository from "../repositories/OverlayRepository";
-import {BuildingState} from "../models/BuildingState";
 
 export default class ScenarioValidator {
 
@@ -57,8 +56,12 @@ export default class ScenarioValidator {
 
         if (scenario.isHidden()) {
             if (states.has(ScenarioState.complete) || unlocked || scenario.root || this.soloScenarioUnlocked(scenario)) {
-                this.scenarioRepository.setIncomplete(scenario);
-                this.needsValidating = true;
+                if (scenario.hasManualRequirement()) {
+                    this.scenarioRepository.setRequired(scenario);
+                } else {
+                    this.scenarioRepository.setIncomplete(scenario);
+                }
+                this.needsValidating = true;1
             }
         } else {
             if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked && !this.soloScenarioUnlocked(scenario)) {
@@ -147,6 +150,15 @@ export default class ScenarioValidator {
             return;
         }
 
+        // Skip requirement checks when scenario requirements are manually unlocked
+        if (scenario.hasManualRequirement()) {
+            // Reset blocked scenario if no longer blocked
+            if (!shouldBeBlocked && scenario.isBlocked()) {
+                this.scenarioRepository.setIncomplete(scenario);
+            }
+            return;
+        }
+
         let requiringConditions = scenario.required_by;
         let shouldBeRequired = !!requiringConditions.count() && requiringConditions.contains((condition) => {
             let allIncompleteRequirementsOk = this.checkIncompleteConditions(condition.incomplete || []);
@@ -173,11 +185,14 @@ export default class ScenarioValidator {
                 let scenario = this.scenarioRepository.find(scenarioOrAchievementId) || {};
                 return shouldBeCompleted ? scenario.isComplete() : !scenario.isComplete();
             }
-            // Building/Overlay Requirements
-            else if (Requirement.requirements().includes(scenarioOrAchievementId)) {
+            // Building / Overlay / Calendar Requirements
+            else if (Requirement.check(scenarioOrAchievementId)) {
                 const overlayId = Requirement.overlayId(scenarioOrAchievementId);
                 const overlay = this.overlayRepository.find(overlayId);
-                return shouldBeCompleted ? overlay.present : !overlay.present;
+                if (overlay) {
+                    return shouldBeCompleted ? overlay.present : !overlay.present;
+                }
+                return shouldBeCompleted;
             }
             // Achievements
             else {
