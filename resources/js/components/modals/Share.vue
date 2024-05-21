@@ -19,6 +19,7 @@
     import ShareState from "../../services/ShareState";
 
     export default {
+        inject: ['appData'],
         data() {
             return {
                 url: '',
@@ -32,7 +33,8 @@
         methods: {
             open() {
                 const path = this.$router.currentRoute.path.split('/')[1];
-                this.url = this.shareState.link('local', path);
+                const game = this.appData.game;
+                this.url = this.shareState.link('local', path, game);
                 this.$refs['modal'].open();
                 this.addCopyTippy();
             },

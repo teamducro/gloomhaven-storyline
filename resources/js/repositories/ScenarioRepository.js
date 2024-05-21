@@ -7,6 +7,7 @@ import GameData from "../services/GameData";
 import ScenarioCompletedService from "../services/ScenarioCompletedService";
 import SheetRepository from "./SheetRepository";
 import OverlayRepository from "./OverlayRepository";
+import {Requirement} from "../models/Requirement";
 
 export default class ScenarioRepository {
     fetch(game) {
