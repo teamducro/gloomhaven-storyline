@@ -374,11 +374,6 @@ export default {
         countResources() {
             let sheet = this.sheetRepository.make(this.appData.game);
 
-            // If sheet is not loaded yet, skip
-            if (_.isEmpty(sheet.resources)) {
-                return;
-            }
-
             // Add resources from sheet
             let combinedResources = {
                 prosperity: this.calculateProsperity(sheet.prosperityIndex, sheet.game),
