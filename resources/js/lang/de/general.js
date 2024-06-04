@@ -82,7 +82,7 @@ export default {
     "Pages": "Seiten",
     "Party": "Gruppen",
     "Perks": "Verbesserungen",
-    "Please consider purchasing a licence": "Nur Pro-Lizenz-Nutzer können beliebig viele Charaktere anlegen. Bitte zieh den Kauf einer solchen Lizenz in Betracht.",
+    "Please consider purchasing a license": "Nur Pro-Lizenz-Nutzer können beliebig viele Charaktere anlegen. Bitte zieh den Kauf einer solchen Lizenz in Betracht.",
     "Preceding events": "Vorgeschichte",
     "Remove": "Löschen",
     "Required by": "Benötigt für",

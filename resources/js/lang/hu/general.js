@@ -84,7 +84,7 @@ export default {
     "Pages": "Oldalak",
     "Party": "Kalandozó csapat",
     "Perks": "Jártasságok",
-    "Please consider purchasing a licence": "Please consider purchasing a licence",
+    "Please consider purchasing a license": "Please consider purchasing a license",
     "Preceding events": "Megelőző események",
     "Remove": "Eltávolítás",
     "Required by": "Megköveteli a/az",

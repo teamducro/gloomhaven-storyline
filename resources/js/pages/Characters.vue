@@ -197,7 +197,7 @@
                 <p v-if="isLocalCampaign">{{ $t('retire-character.upgrade') }}
                     <router-link to="/campaigns" class="link">
                         <span @click="$refs['retire-character'].close()">
-                            {{ $t('Please consider purchasing a licence') }}.
+                            {{ $t('Please consider purchasing a license') }}.
                         </span>
                     </router-link>
                 </p>
