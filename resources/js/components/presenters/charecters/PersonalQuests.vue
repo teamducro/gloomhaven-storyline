@@ -143,11 +143,13 @@ export default {
                 .filter(id => !this.unavailableQuests.includes(parseInt(id)))
                 .sort((a, b) => 0.5 - Math.random())[0];
             const quest = this.quests[id];
+            this.hidden = false;
             this.update(quest);
             this.goalMet = false;
         },
         select(questId) {
             const quest = this.quests[questId];
+            this.hidden = false;
             this.update(quest);
             this.goalMet = false;
         },
@@ -158,7 +160,6 @@ export default {
             this.$emit('change', {});
         },
         update(quest) {
-            this.hidden = false;
             this.$emit('update:quest', quest);
             this.$emit('change', quest);
         },
@@ -166,13 +167,11 @@ export default {
             this.quest.progress[partIndex].value[valueIndex] = isChecked;
 
             this.validate();
-            this.update(this.quest);
         },
         changedNumberProgress(partIndex, value) {
             this.quest.progress[partIndex].value = value;
 
             this.validate();
-            this.update(this.quest);
         },
         validate() {
             this.goalMet = this.personalQuestValidator.validate(this.quest, this.sheet);
