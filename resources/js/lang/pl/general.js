@@ -82,7 +82,7 @@ export default {
     "Pages": "Strony",
     "Party": "Drużynowe",
     "Perks": "Profity",
-    "Please consider purchasing a licence": "Proszę rozważyć zakup licencji",
+    "Please consider purchasing a license": "Proszę rozważyć zakup licencji",
     "Preceding events": "Wydarzenia poprzedzające",
     "Remove": "Usuń",
     "Required by": "Wymagane przez",

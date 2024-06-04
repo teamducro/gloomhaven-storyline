@@ -82,7 +82,7 @@ export default {
     "Pages": "Pages",
     "Party": "Compagnie",
     "Perks": "Bénéfices",
-    "Please consider purchasing a licence": "Please consider purchasing a licence",
+    "Please consider purchasing a license": "Please consider purchasing a license",
     "Preceding events": "Evènements précédents",
     "Remove": "Supprimer",
     "Required by": "Prérequis pour",

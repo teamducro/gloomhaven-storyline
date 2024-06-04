@@ -82,7 +82,7 @@ export default {
     "Pages": "Páginas",
     "Party": "Grupo",
     "Perks": "Pericias",
-    "Please consider purchasing a licence": "Considere comprar una licencia",
+    "Please consider purchasing a license": "Considere comprar una licencia",
     "Preceding events": "Sucesos anteriores",
     "Remove": "Eliminar",
     "Required by": "Necesario para",

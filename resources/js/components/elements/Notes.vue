@@ -22,7 +22,7 @@
         <p v-if="isLocalCampaign && count > max / 2" class="text-sm">
             {{ $t('character-limit-message') }}.
             <router-link to="/campaigns" class="link">
-                {{ $t('Please consider purchasing a licence') }}.
+                {{ $t('Please consider purchasing a license') }}.
             </router-link>
         </p>
     </div>

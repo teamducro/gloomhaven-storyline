@@ -60,7 +60,7 @@
             >
                 <template slot="row" slot-scope="{row}">
                     <template v-if="row.isHidden()">
-                        <td @click="open(row)" :colspan="row.solo ? 20 : 2"></td>
+                        <td @click="open(row)" :colspan="row.solo ? 20 : (hasImages ? 2 : 1)"></td>
                         <td @click="open(row)" v-if="!row.solo"
                             colspan="20" class="relative px-1 py-2 md:p-3 overflow-hidden"
                             :class="{'opacity-50': !row.is_side}">#{{ row.id }}

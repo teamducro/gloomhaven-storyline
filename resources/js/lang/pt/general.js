@@ -84,7 +84,7 @@ export default {
     "Pages": "Pages",
     "Party": "Party",
     "Perks": "Perks",
-    "Please consider purchasing a licence": "Please consider purchasing a licence",
+    "Please consider purchasing a license": "Please consider purchasing a license",
     "Preceding events": "Preceding events",
     "Remove": "Remove",
     "Required by": "Required by",

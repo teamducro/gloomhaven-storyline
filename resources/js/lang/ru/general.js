@@ -82,7 +82,7 @@ export default {
     "Pages": "Страницы",
     "Party": "Отряд",
     "Perks": "Навыки",
-    "Please consider purchasing a licence": "Пожалуйста, подумайте о покупке лицензии",
+    "Please consider purchasing a license": "Пожалуйста, подумайте о покупке лицензии",
     "Preceding events": "Предшествующие события",
     "Remove": "Убрать",
     "Required by": "Требуется для",
