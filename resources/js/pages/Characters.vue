@@ -134,7 +134,7 @@
                                    :character="character"
                                    @change="store"/>
 
-                            <div class="flex mt-4 space-x-8">
+                            <div class="flex mt-4 space-x-12">
                                 <attack-modifier-deck v-if="character.game !== Game.cs"
                                                       :perks="character.perks"
                                                       :perkDescriptions="character.perkDescriptions"
@@ -142,7 +142,7 @@
                                                       :playerIndex="playerIndex"/>
 
                                 <card-stack @click="selectAbilities(character.uuid, true)" :src="abilityBackImage()"
-                                class="cursor-pointer"/>
+                                            :width="20" class="cursor-pointer"/>
                             </div>
 
                             <div v-if="soloScenario" :key="'solo-'+soloScenario.id" class="my-5 flex">
