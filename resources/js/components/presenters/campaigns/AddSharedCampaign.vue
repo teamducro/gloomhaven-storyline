@@ -33,6 +33,7 @@
 import {MDCTextField} from "@material/textfield/component";
 import AuthRepository from "../../../apiRepositories/AuthRepository";
 import StoryRepository from "../../../apiRepositories/StoryRepository";
+import GameData from "../../../services/GameData";
 
 export default {
     props: {
@@ -43,6 +44,10 @@ export default {
         redirectToPage: {
             type: String,
             default: 'story'
+        },
+        game: {
+            type: String,
+            default: ''
         }
     },
     data() {
@@ -52,6 +57,7 @@ export default {
             errors: null,
             sending: false,
             success: false,
+            gameData: new GameData,
             auth: new AuthRepository,
             storyRepository: new StoryRepository
         }
@@ -102,6 +108,14 @@ export default {
                     this.success = false;
                 }, 5000);
 
+                // Select the game if it is valid
+                if (this.gameData.validate(this.game)) {
+                    this.$bus.$emit('game-selected', this.game);
+                }
+
+                await this.$nextTick();
+
+                // Redirect to the correct path
                 if (isShared) {
                     await this.$router.push('/' + this.redirectToPage);
                 } else {

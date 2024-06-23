@@ -38,6 +38,7 @@ import tippy from 'tippy.js';
 import StoryCodeRepository from "../../apiRepositories/StoryCodeRepository";
 
 export default {
+    inject: ['appData'],
     data() {
         return {
             url: '',
@@ -107,7 +108,8 @@ export default {
             const url = process.env.MIX_APP_URL;
             const query = new URLSearchParams({
                 code: this.code.code,
-                to_page: location.hash.replace('#/', '')
+                to_page: location.hash.replace('#/', ''),
+                game: this.appData.game
             }).toString();
 
             this.url = `${url}/?${query}#/campaigns`;
