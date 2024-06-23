@@ -64,6 +64,10 @@ mix.i18n()
         for (let i = 0; i < 20; i++) {
             await replace({files: 'public/sitemap.xml', from: /release-date/, to: dayjs().format('YYYY-MM-DD')});
         }
+
+        // apply service worker cache version
+        let version = await md5File('public/js/app.js');
+        await replace({files: 'public/service-worker.js', from: /cache-version/, to: version});
     });
 
 async function versionFile(path, applyVersion) {
