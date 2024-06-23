@@ -100,6 +100,7 @@ export default class StoryRepository extends ApiRepository {
 
         if (localStory
             && localStory.data != null
+            && localStory.read_only === false
             && localStory.updated_at.isAfter(remoteStory.updated_at)) {
             remoteStory = await this.update(localStory);
         } else {
