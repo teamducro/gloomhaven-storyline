@@ -121,7 +121,7 @@
 
         <div id="add-shared-campaign-container" class="m-auto w-full max-w-3xl lg:flex">
             <div class="bg-dark-gray2-75 p-4 rounded-lg mt-8 lg:mr-4 lg:flex-1">
-                <add-shared-campaign :init-code="initCode" :redirect-to-page="redirectToPage"/>
+                <add-shared-campaign :init-code="initCode" :game="redirectToGame" :redirect-to-page="redirectToPage"/>
             </div>
 
             <div class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl lg:ml-4 lg:flex-1">
@@ -250,6 +250,7 @@ export default {
             user: null,
             paymentSuccess: false,
             initCode: '',
+            redirectToGame: '',
             redirectToPage: 'story',
             receivedACampaignCode: false,
             url: process.env.MIX_APP_URL,
@@ -293,6 +294,10 @@ export default {
 
             if (typeof parsed.to_page !== 'undefined') {
                 this.redirectToPage = parsed.to_page.replace(/[^a-z-_]/gi, '');
+            }
+
+            if (typeof parsed.game !== 'undefined') {
+                this.redirectToGame = parsed.game;
             }
 
             if (typeof parsed['received-a-campaign-code'] !== 'undefined') {
