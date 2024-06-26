@@ -48,7 +48,7 @@
                                              @change="refreshItems();store()"/>
 
                             <ul v-if="sheet.crossGameItemsEnabled">
-                                <li v-for="code in Object.keys(sheet.crossGameItems)" v-if="code !== currentGame">
+                                <li v-for="code in Object.keys(sheet.crossGameItems)" v-if="code !== currentGame && currentGame !== 'fh'">
                                     <checkbox-with-label :id="code+'-items'"
                                                          :label="$t(code)"
                                                          :checked.sync="sheet.crossGameItems[code]"
@@ -266,18 +266,25 @@ export default {
 
             // Add items from other games, if enabled.
             if (this.sheet.crossGameItemsEnabled) {
-                const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
-                otherGames.forEach(game => {
-                    if (game !== this.currentGame) {
-                        if (game === 'gh' && this.currentGame !== 'jotl') {
-                            const ghItems = this.calculateItemsGh([], this.sheet.prosperityIndex);
-                            items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
-                        } else {
-                            // Add all items for games without prosperity.
-                            items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                if (this.currentGame === 'fh') {
+                    // Frosthaven dictates only adding specific items from other games
+                    const ghItems = this.prependGame('gh', [10, 25, 72, 105, 109, 116]);
+                    items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
+                }
+                else {
+                    const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
+                    otherGames.forEach(game => {
+                        if (game !== this.currentGame) {
+                            if (game === 'gh' && this.currentGame !== 'jotl') {
+                                const ghItems = this.calculateItemsGh([], this.sheet.prosperityIndex);
+                                items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
+                            } else {
+                                // Add all items for games without prosperity.
+                                items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                            }
                         }
-                    }
-                });
+                    });
+                }
             }
 
             this.items = items
