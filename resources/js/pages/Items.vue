@@ -47,12 +47,28 @@
                                              :checked.sync="sheet.crossGameItemsEnabled"
                                              @change="refreshItems();store()"/>
 
-                            <ul v-if="sheet.crossGameItemsEnabled">
-                                <li v-for="code in Object.keys(sheet.crossGameItems)" v-if="code !== currentGame && currentGame !== 'fh'">
+                            <ul v-if="sheet.crossGameItemsEnabled && currentGame !== 'fh'">
+                                <li v-for="code in Object.keys(sheet.crossGameItems)" v-if="code !== currentGame">
                                     <checkbox-with-label :id="code+'-items'"
                                                          :label="$t(code)"
                                                          :checked.sync="sheet.crossGameItems[code]"
                                                          @change="refreshItems();store()"/>
+                                </li>
+                            </ul>
+                            <ul v-if="sheet.crossGameItemsEnabled && currentGame === 'fh'">
+                                <li class="flex items-center">
+                                    <checkbox-with-label :id="gh-10"
+                                                         :label="10"/>
+                                    <checkbox-with-label :id="gh-25"
+                                                         :label="25"/>
+                                    <checkbox-with-label :id="gh-72"
+                                                         :label="72"/>
+                                    <checkbox-with-label :id="gh-105"
+                                                         :label="105"/>
+                                    <checkbox-with-label :id="gh-109"
+                                                         :label="109"/>
+                                    <checkbox-with-label :id="gh-116"
+                                                         :label="116"/>
                                 </li>
                             </ul>
                         </div>
