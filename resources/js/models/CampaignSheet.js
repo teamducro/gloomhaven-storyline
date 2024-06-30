@@ -226,10 +226,12 @@ class CampaignSheet {
     fillDefaultCrossGameItems() {
         if (_.isEmpty(this.crossGameItems)) {
                 this.crossGameItems = {
-                'gh': false,
-                'jotl': false,
-                'cs': false,
-                'fh': false,
+                10: false,
+                25: false,
+                72: false,
+                105: false,
+                109: false,
+                116: false,
             }
         }
     }

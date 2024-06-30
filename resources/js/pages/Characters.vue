@@ -363,12 +363,19 @@ export default {
 
                 // Add items from other games, if enabled.
                 if (this.sheet.crossGameItemsEnabled) {
-                    const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
-                    otherGames.forEach(otherGame => {
-                        if (otherGame !== this.currentGame) {
-                            items = collect({...items.all(), ...this.itemRepository.fromGame(otherGame).all()});
-                        }
-                    });
+                    if (this.currentGame === Game.fh) {
+                        const otherItems = collect(this.sheet.crossGameItems).filter().keys().all();
+                        const ghItems = this.prependGame(Game.gh, otherItems);
+                        items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()})
+                    }
+                    else {
+                        const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
+                        otherGames.forEach(otherGame => {
+                            if (otherGame !== this.currentGame) {
+                                items = collect({...items.all(), ...this.itemRepository.fromGame(otherGame).all()});
+                            }
+                        });
+                    }
                 }
 
                 this.items = items.all()
