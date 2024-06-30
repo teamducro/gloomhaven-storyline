@@ -56,22 +56,15 @@
                                                             @change="refreshItems();store()"/>
                                     </li>
                                 </ul>
-                                <ul v-else>
-                                    <li class="flex items-center">
-                                        <checkbox-with-label :id="gh-10"
-                                                            :label="10"/>
-                                        <checkbox-with-label :id="gh-25"
-                                                            :label="25"/>
-                                        <checkbox-with-label :id="gh-72"
-                                                            :label="72"/>
-                                        <checkbox-with-label :id="gh-105"
-                                                            :label="105"/>
-                                        <checkbox-with-label :id="gh-109"
-                                                            :label="109"/>
-                                        <checkbox-with-label :id="gh-116"
-                                                            :label="116"/>
-                                    </li>
-                                </ul>
+                                <template v-else>
+                                    <h2 class="ml-2">{{ $t('Gloomhaven Items') }}</h2>
+                                    <ul class="flex">
+                                        <li v-for="code in Object.keys(sheet.crossGameItems)">
+                                            <checkbox-with-label :id="'gh-'+code"
+                                                                :label="$t(code)"/>
+                                        </li>
+                                    </ul>
+                                </template>
                             </template>
                         </div>
                     </div>
