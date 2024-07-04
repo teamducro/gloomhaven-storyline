@@ -165,6 +165,18 @@ export default {
         this.assertCount('#' + table + ' tbody tr', count);
     },
 
+    enableGame(game) {
+        cy.visit('/tracker/#/settings');
+        
+        cy.get('#' + game + '-enabled').invoke('is', ':checked').then(checked => {
+            if (!checked) {
+                cy.get('@checkbox').check();
+            }
+        });
+
+        switchGame(game);
+    },
+
     switchGame(game) {
         cy.get('button').contains('menu').click();
         cy.get('.game-switch .mdc-select__selected-text').click();
