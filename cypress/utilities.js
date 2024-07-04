@@ -173,8 +173,6 @@ export default {
                 cy.get('@checkbox').check();
             }
         });
-
-        switchGame(game);
     },
 
     switchGame(game) {
