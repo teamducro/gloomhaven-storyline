@@ -364,7 +364,7 @@ export default {
                 // Add items from other games, if enabled.
                 if (this.sheet.crossGameItemsEnabled) {
                     if (this.currentGame === Game.fh) {
-                        const otherItems = collect(this.sheet.crossGameItems).filter().keys().all();
+                        const otherItems = collect(this.sheet.crossGameItems[Game.gh]).filter().keys().all();
                         const ghItems = this.prependGame(Game.gh, otherItems);
                         items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()})
                     }

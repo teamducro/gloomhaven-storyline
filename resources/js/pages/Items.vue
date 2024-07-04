@@ -59,9 +59,11 @@
                                 <template v-else>
                                     <h2 class="ml-2">{{ $t('Gloomhaven Items') }}</h2>
                                     <ul class="flex">
-                                        <li v-for="code in Object.keys(sheet.crossGameItems)">
-                                            <checkbox-with-label :id="'gh-'+code"
-                                                                :label="$t(code)"/>
+                                        <li v-for="code in Object.keys(sheet.crossGameItems[Game.gh])">
+                                            <checkbox-with-label :id="Game.gh+code"
+                                                                :label="$t(code)"
+                                                                :checked.sync="sheet.crossGameItems[Game.gh][code]"
+                                                                @change="refreshItems();store()"/>
                                         </li>
                                     </ul>
                                 </template>
@@ -276,9 +278,9 @@ export default {
 
             // Add items from other games, if enabled.
             if (this.sheet.crossGameItemsEnabled) {
-                if (this.currentGame === 'fh') {
-                    // Frosthaven dictates only adding specific items from other games
-                    const ghItems = this.prependGame('gh', [10, 25, 72, 105, 109, 116]);
+                if (this.currentGame === Game.fh) {
+                    const otherItems = collect(this.sheet.crossGameItems[Game.gh]).filter().keys().all();
+                    const ghItems = this.prependGame(Game.gh, otherItems);
                     items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
                 }
                 else {
