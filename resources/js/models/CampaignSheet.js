@@ -224,7 +224,7 @@ class CampaignSheet {
     }
 
     fillDefaultCrossGameItems() {
-        if (_.isEmpty(this.crossGameItems)) {
+        if (_.isEmpty(this.crossGameItems) || typeof this.crossGameItems['gh'] !== 'object') {
             this.crossGameItems = {
                 'gh': {
                     10: false,
