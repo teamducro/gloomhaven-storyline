@@ -57,15 +57,17 @@
                                     </li>
                                 </ul>
                                 <template v-else>
-                                    <h2 class="ml-2">{{ $t('Gloomhaven Items') }}</h2>
-                                    <ul class="flex">
-                                        <li v-for="code in Object.keys(sheet.crossGameItems[Game.gh])">
-                                            <checkbox-with-label :id="Game.gh+code"
-                                                                :label="$t(code)"
-                                                                :checked.sync="sheet.crossGameItems[Game.gh][code]"
-                                                                @change="refreshItems();store()"/>
-                                        </li>
-                                    </ul>
+                                    <template v-for="gameId in Object.keys(sheet.crossGameItems)" v-if="Object.keys(sheet.crossGameItems[gameId]).length !== 0">
+                                        <h2 class="ml-2">{{ $t(gameId) + ' ' + $t('Items') }}</h2>
+                                        <ul class="flex">
+                                            <li v-for="code in Object.keys(sheet.crossGameItems[gameId])">
+                                                <checkbox-with-label :id="gameId+code"
+                                                                    :label="$t(code)"
+                                                                    :checked.sync="sheet.crossGameItems[gameId][code]"
+                                                                    @change="refreshItems();store()"/>
+                                            </li>
+                                        </ul>
+                                    </template>
                                 </template>
                             </template>
                         </div>
@@ -278,14 +280,18 @@ export default {
 
             // Add items from other games, if enabled.
             if (this.sheet.crossGameItemsEnabled) {
+                const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
+                let otherGameHandler;
+
                 if (this.currentGame === Game.fh) {
-                    const otherItems = collect(this.sheet.crossGameItems[Game.gh]).filter().keys().all();
-                    const ghItems = this.prependGame(Game.gh, otherItems);
-                    items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
+                    otherGameHandler = (game => {
+                        const otherGameItems = collect(this.sheet.crossGameItems[game]).filter().keys().all();
+                        const otherItems = this.prependGame(game, otherGameItems);
+                        items = collect({...items.all(), ...this.itemRepository.findMany(otherItems).all()})
+                    });
                 }
                 else {
-                    const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
-                    otherGames.forEach(game => {
+                    otherGameHandler = (game => {
                         if (game !== this.currentGame) {
                             if (game === 'gh' && this.currentGame !== 'jotl') {
                                 const ghItems = this.calculateItemsGh([], this.sheet.prosperityIndex);
@@ -297,6 +303,8 @@ export default {
                         }
                     });
                 }
+
+                otherGames.forEach(otherGameHandler);
             }
 
             this.items = items
