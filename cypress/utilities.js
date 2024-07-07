@@ -167,12 +167,7 @@ export default {
 
     enableGame(game) {
         cy.visit('/tracker/#/settings');
-        
-        cy.get('#' + game + '-enabled').invoke('is', ':checked').then(checked => {
-            if (!checked) {
-                cy.get('@checkbox').check();
-            }
-        });
+        cy.get('#' + game + '-enabled').check();
     },
 
     switchGame(game) {
