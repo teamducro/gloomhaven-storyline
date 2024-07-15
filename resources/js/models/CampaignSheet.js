@@ -223,14 +223,39 @@ class CampaignSheet {
         }
     }
 
+    resetCrossGameItems() {
+        this.crossGameItems = {
+            'gh': {
+                10: false,
+                25: false,
+                72: false,
+                105: false,
+                109: false,
+                116: false,
+            },
+            'jotl': {},
+            'cs': {}
+        }
+    }
+
     fillDefaultCrossGameItems() {
         if (_.isEmpty(this.crossGameItems)) {
-                this.crossGameItems = {
-                'gh': false,
-                'jotl': false,
-                'cs': false,
-                'fh': false,
-            }
+            this.resetCrossGameItems();
+        }
+        else if (typeof this.crossGameItems['gh'] !== 'object') {
+            this.resetCrossGameItems();
+
+            // Check if any characters have some cross-game items that should transfer over
+            collect(this.characters).each((character) => {
+                collect(character.items).each((available, itemId) => {
+                    const splitIndex = itemId.indexOf('-');
+                    const itemGame = itemId.substring(0, splitIndex);
+                    if (itemGame !== 'fh') {
+                        const itemNumber = itemId.slice(splitIndex + 1)
+                        this.crossGameItems[itemGame][itemNumber] = true;
+                    }
+                });
+            });
         }
     }
 
