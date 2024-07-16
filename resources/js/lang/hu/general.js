@@ -14,8 +14,8 @@ export default {
     "Add rift events": "Add rift events",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Minden alkalommal, mikor a csapat sikeresen teljesít 5 küldetést, megkapjátok az alábbi jutalmak egyikét",
     "completed scenarios": "teljesített küldetések",
-
-    // Achievements
+    "Show winter events": "Show winter events",
+    "Show summer events": "Show summer events",
     "5 Ancient Technology Global Achievements": "5 “Ősi technológia” általános eredmény",
     "Add City Event 75 & Road Event 66": "adjátok a megfelelő paklihoz a 75-ös városi és a 66-os úti eseményt",
     "Add City Event 76 & Road Event 67": "adjátok a megfelelő paklihoz a 76-oss városi és a 67-es úti eseményt",
@@ -28,8 +28,6 @@ export default {
     "Have a party reputation of 10 or higher": "Érjetek el 10 vagy magasabb hírnevet",
     "Have a party reputation of 20": "Érjetek el 20 hírnevet",
     "Retire a character": "Az első karakter visszavonul",
-
-    // Storyline App
     "Abilities": "Képességek",
     "Achievement": "Eredmény | Eredmények",
     "Achievements": "Eredmények",
@@ -45,6 +43,18 @@ export default {
     "Cancel": "Mégse",
     "character-limit-message": "Dew to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
     "Choose a scenario to unlock": "Válassz egy új helyszínt",
+    "Scenario level": "Scenario level",
+    "Recommended scenario level:": "Recommended scenario level:",
+    "Very Easy": "Very Easy",
+    "Easy": "Easy",
+    "Normal": "Normal",
+    "Hard": "Hard",
+    "Very Hard": "Very Hard",
+    "Monster level": "Monster level",
+    "Gold conversion": "Gold conversion",
+    "Trap damage": "Trap damage",
+    "Hazardous terrain": "Hazardous terrain",
+    "Bonus experience": "Bonus experience",
     "Choose": "Válassz",
     "Clear all": "Összes törlése",
     "Clues": "Nyomok",
@@ -70,7 +80,7 @@ export default {
     "Locked": "Zárva",
     "Lost": "Elvesztett",
     "Lvl": "Szint",
-   "Enable items from other games": "Felszerelés engedélyezése más játékokból",
+    "Enable items from other games": "Felszerelés engedélyezése más játékokból",
     "No items available": "Nincs elérhető felszerelés",
     "No treasures available": "Nincs elérhető kincs",
     "Not unlocked": "Nem elérhető",
@@ -84,7 +94,6 @@ export default {
     "Pages": "Oldalak",
     "Party": "Kalandozó csapat",
     "Perks": "Jártasságok",
-    "Please consider purchasing a license": "Please consider purchasing a license",
     "Preceding events": "Megelőző események",
     "Remove": "Eltávolítás",
     "Required by": "Megköveteli a/az",
@@ -111,7 +120,7 @@ export default {
     "Unlocks": "Feloldja",
     "Virtual Board": "Virtuális Tábla",
     "XP": "TP",
-      "You may select an additional perk!": "Választhatsz még egy jártasságot",
+    "You may select an additional perk!": "Választhatsz még egy jártasságot",
     "manage-abilities": {
         "title": "Kezeld a képességeidet a szintednek megfelelően",
         "text": "Válassz egy képesség kártyát minden szinten, választás után az elérhető kártyák ennek megfelelően jelennek meg",
@@ -133,7 +142,7 @@ export default {
         "following_free": "Az alábbi játékok elérhetőek ingyen",
         "expand_title": {
             "gh": "Old fel Homályrévet egy Új Kalandért",
-            "fh": "Unlock Frosthaven for a New Adventure",
+            "fh": "Unlock Frosthaven for a New Adventure"
         },
         "expand_text": {
             "gh": "Homályrévet választottad, de még nincs hozzáférésed.",
@@ -141,7 +150,7 @@ export default {
             "general": "Készen állsz egy új kalandra? Add hozzá a meglévő megosztott küldetés licenszedhez."
         },
         "local": "Vagy használd az ingyenes helyi verziót helyette.",
-        "Go to local": "Helyi verzió",
+        "Go to local": "Helyi verzió"
     },
     "share": "megosztás",
     "share-modal": {
@@ -151,11 +160,11 @@ export default {
         "title": "Homályrév Történetszál Követő megosztása"
     },
     "share-campaign-code": {
-        "not-allowed": "Ennek a küldetésnek nem te vagy a tulajdonosa, nem tudod másokkal megosztani.",
         "1": "Oszd meg az alábbi küldetés kódot a csapattársaiddal, hogy szinkronizáltan frissüljön minden eszközön",
         "2": "Érvényes eddig:",
         "3": "A kód egy hétig érvényes.",
         "4": "Ha engedélyezed, nem tudják módosítani a történetszálat azok akikkel megosztottad.",
+        "not-allowed": "Ennek a küldetésnek nem te vagy a tulajdonosa, nem tudod másokkal megosztani."
     },
     "Read only mode": "Csak olvasás mód",
     "campaign page": {
@@ -186,7 +195,11 @@ export default {
     },
     "send me an e-mail": "send me an e-mail",
     "Please send me an e-mail": "Please send me an e-mail",
-    "or": "or",
+    "Font": "Font",
+    "Choose which font you would like": "Choose which font you would like",
+    "Apply font to headers": "Apply font to headers",
+    "Apply font to storyline": "Apply font to storyline",
+    "or": "vagy",
     "Welcome": "Üdvözlet",
     "Language": "Nyelv",
     "Gloomhaven Storyline is available in multiple languages!": "A Homályrév Történetszál elérhető több nyelven is!",
@@ -307,8 +320,6 @@ export default {
     "snowthistle": "Snowthistle",
     "unfettered": "Unfettered",
     "random-item-treasure": "Véletlenszerű felszerelés",
-
-    // Game Editions
     "gh": "Homályrév",
     "fh": "Frosthaven",
     "Frosthaven": "Frosthaven",
@@ -318,7 +329,6 @@ export default {
     "Jaws of the Lion": "Oroszlánfalka",
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
-
     "Availability": "Elérhetőség",
     "Sticker": "Matrica",
     "State": "Állapot",
@@ -377,7 +387,6 @@ export default {
     "East Coast": "East Coast",
     "different Dimension": "different Dimension",
     "and": "és",
-    "or": "vagy",
     "Hidden Scenario": "Rejtett küldetés",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
@@ -392,10 +401,8 @@ export default {
         "SO": "Summer Outpost",
         "WR": "Winter Road",
         "WO": "Winter Outpost",
-        "B": "Boat",
+        "B": "Boat"
     },
-
-    //Ability Enhancements
     "Shield": "Védelem",
     "Heal": "Gyógyítás",
     "Attack": "Támadás",
@@ -404,11 +411,8 @@ export default {
     "Jump": "Ugrás",
     "Flying": "Repül",
     "Retaliate": "Megtorlás",
-
     "Recover": "Visszaszerez",
     "Refresh": "Visszaforgat",
-
-    // Conditions
     "BANE": "BANE",
     "BLESS": "ÁLDÁS",
     "CHILL": "CHILL",
@@ -433,8 +437,6 @@ export default {
     "TELEPORT": "TELEPORT",
     "WARD": "WARD",
     "WOUND": "VÉRZÉS",
-
-    // Class-colored Text
     "Augment": "Erősítés",
     "Colony": "Colony",
     "Command": "Command",

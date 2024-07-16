@@ -17,10 +17,10 @@ export default {
         ]
     },
     "gh-4": {
-        "name": "Kárhozottak kriptája",
+        "name": "Kárhozottak kriptája"
     },
     "gh-5": {
-        "name": "Romos kripta",
+        "name": "Romos kripta"
     },
     "gh-6": {
         "name": "Elhagyatott kripta",
@@ -29,7 +29,7 @@ export default {
         ]
     },
     "gh-7": {
-        "name": "Életteli barlang",
+        "name": "Életteli barlang"
     },
     "gh-8": {
         "name": "Raktárház",
@@ -45,7 +45,7 @@ export default {
         ]
     },
     "gh-10": {
-        "name": "Elemk erő létsíkja",
+        "name": "Elemk erő létsíkja"
     },
     "gh-11": {
         "name": "Főtér A",
@@ -64,10 +64,10 @@ export default {
         ]
     },
     "gh-13": {
-        "name": "A látnok temploma",
+        "name": "A látnok temploma"
     },
     "gh-14": {
-        "name": "Fagyos völgy",
+        "name": "Fagyos völgy"
     },
     "gh-15": {
         "name": "Az erő szentélye",
@@ -76,7 +76,7 @@ export default {
         ]
     },
     "gh-16": {
-        "name": "Hegyi hágó",
+        "name": "Hegyi hágó"
     },
     "gh-17": {
         "name": "Elveszett sziget",
@@ -85,7 +85,7 @@ export default {
         ]
     },
     "gh-18": {
-        "name": "Elhagyatott csatornarendszer",
+        "name": "Elhagyatott csatornarendszer"
     },
     "gh-19": {
         "name": "Elfeledett kripta",
@@ -110,16 +110,16 @@ export default {
         ]
     },
     "gh-22": {
-        "name": "Elemi erők temploma",
+        "name": "Elemi erők temploma"
     },
     "gh-23": {
-        "name": "Romok a mélyben",
+        "name": "Romok a mélyben"
     },
     "gh-24": {
-        "name": "Visszhangok csarnoka",
+        "name": "Visszhangok csarnoka"
     },
     "gh-25": {
-        "name": "Fagyhágó meredély",
+        "name": "Fagyhágó meredély"
     },
     "gh-26": {
         "name": "Ősi ciszernák",
@@ -137,7 +137,7 @@ export default {
         ]
     },
     "gh-28": {
-        "name": "Külső oltárterem",
+        "name": "Külső oltárterem"
     },
     "gh-29": {
         "name": "A Homály szentély",
@@ -152,13 +152,13 @@ export default {
         ]
     },
     "gh-31": {
-        "name": "Az éj síkja",
+        "name": "Az éj síkja"
     },
     "gh-32": {
-        "name": "Lepusztult erdő",
+        "name": "Lepusztult erdő"
     },
     "gh-33": {
-        "name": "Savvas fegyverraktár",
+        "name": "Savvas fegyverraktár"
     },
     "gh-34": {
         "name": "Felégetett kripta",
@@ -186,7 +186,7 @@ export default {
         ]
     },
     "gh-37": {
-        "name": "Átok-árok",
+        "name": "Átok-árok"
     },
     "gh-38": {
         "name": "Rabszolgák börtöne",
@@ -201,7 +201,7 @@ export default {
         ]
     },
     "gh-40": {
-        "name": "Ősi védelmi háló",
+        "name": "Ősi védelmi háló"
     },
     "gh-41": {
         "name": "Lepusztult kripta",
@@ -219,7 +219,7 @@ export default {
         ]
     },
     "gh-43": {
-        "name": "Gyíkfészek",
+        "name": "Gyíkfészek"
     },
     "gh-44": {
         "name": "Törzsi támadás",
@@ -236,13 +236,13 @@ export default {
         ]
     },
     "gh-46": {
-        "name": "A hegycsúcs réme",
+        "name": "A hegycsúcs réme"
     },
     "gh-47": {
-        "name": "A Világtalan szentélye",
+        "name": "A Világtalan szentélye"
     },
     "gh-48": {
-        "name": "Árnyékok erdeje",
+        "name": "Árnyékok erdeje"
     },
     "gh-49": {
         "name": "Lázadás leverése",
@@ -268,7 +268,7 @@ export default {
         ]
     },
     "gh-52": {
-        "name": "Veszedelmes pince",
+        "name": "Veszedelmes pince"
     },
     "gh-53": {
         "name": "Kriptapince",
@@ -314,7 +314,7 @@ export default {
         ]
     },
     "gh-59": {
-        "name": "Elfeledett liget",
+        "name": "Elfeledett liget"
     },
     "gh-60": {
         "name": "Alkimista labor",
@@ -325,7 +325,7 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Halovány világítótorony",
+        "name": "Halovány világítótorony"
     },
     "gh-62": {
         "name": "Lélekverem",
@@ -354,7 +354,7 @@ export default {
         ]
     },
     "gh-66": {
-        "name": "Óratorony",
+        "name": "Óratorony"
     },
     "gh-67": {
         "name": "Varázskönyvtár",
@@ -413,7 +413,7 @@ export default {
         ]
     },
     "gh-76": {
-        "name": "Ragályhordozók kaptárja",
+        "name": "Ragályhordozók kaptárja"
     },
     "gh-77": {
         "name": "Titkos pince",
@@ -455,7 +455,7 @@ export default {
                 "-1 hírnév",
                 "-2 Városfejlettség"
             ]
-        ],
+        ]
     },
     "gh-83": {
         "name": "Árnyékok nyomában",
@@ -468,7 +468,7 @@ export default {
         "rewards": [
             "“Resonant Crystal” (Felszerelés 133)",
             "+1 Városfejlettség"
-        ],
+        ]
     },
     "gh-85": {
         "name": "A Nap temploma",
@@ -527,7 +527,7 @@ export default {
         ]
     },
     "gh-94": {
-        "name": "Patkányfészek",
+        "name": "Patkányfészek"
     },
     "gh-95": {
         "name": "Tartozás",
@@ -674,7 +674,7 @@ export default {
                 "5 arany mindenkinek",
                 "+1 hírnév"
             ]
-        ],
+        ]
     },
     "fc-99": {
         "name": "Aftershocks",
@@ -688,13 +688,13 @@ export default {
                 "+1 Városfejlettség",
                 "“Minor Antidote” (Felszerelés 153)"
             ]
-        ],
+        ]
     },
     "fc-100": {
         "name": "Shifting Gears",
         "rewards": [
             "Choose to gain one of the following sets: “Telescopic Lens” (Felszerelés 059) and “Ancient Drill” (Felszerelés 112), OR “Curious Gear” (Felszerelés 125) and “Remote Spider” (Felszerelés 126)"
-        ],
+        ]
     },
     "fc-101": {
         "name": "Shrouded Crypt",
@@ -740,7 +740,7 @@ export default {
                 "175 arany mindenkinek, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements",
                 "+ 1 Városfejlettség"
             ]
-        ],
+        ]
     },
     "fc-107": {
         "name": "Mechanical Genius",
@@ -761,7 +761,7 @@ export default {
                 "“Curseward Armor” (Felszerelés 155)",
                 "2 “Throwing Axes” (Felszerelés 161)"
             ]
-        ],
+        ]
     },
     "fc-109": {
         "name": "Epilogue of a War",
@@ -787,7 +787,7 @@ export default {
                 "12 tapasztalati pont mindenkinek",
                 "1 ✓ mindenkinek"
             ]
-        ],
+        ]
     },
     "fc-112": {
         "name": "The Bottom of It",
@@ -801,7 +801,7 @@ export default {
                 "5 tapasztalati pont mindenkinek",
                 "1 ✓ mindenkinek"
             ]
-        ],
+        ]
     },
     "fc-113": {
         "name": "The Lost Thread",
@@ -841,7 +841,7 @@ export default {
         ]
     },
     "jotl-1": {
-        "name": "Roadside Ambush",
+        "name": "Roadside Ambush"
     },
     "jotl-2": {
         "name": "A Hole in the Wall",
@@ -881,7 +881,7 @@ export default {
         ]
     },
     "jotl-8": {
-        "name": "Hidden Tumor",
+        "name": "Hidden Tumor"
     },
     "jotl-9": {
         "name": "Explosive Evolution",
@@ -2683,7 +2683,7 @@ export default {
                 "“Steam Piston Hammer” (Felszerelés QA02)",
                 "“Spider Climb Gloves” (Felszerelés QA03)",
                 "Add copies to the city's available supply"
-            ],
+            ]
         ]
     },
     "cs-QA2": {
@@ -2721,7 +2721,7 @@ export default {
             "“Apex Predator” küldetés teljesítve",
             "Nyisd ki az alábbi borítékot: {RM}",
             "“Terrorscale Saber” design (Felszerelés RM03)",
-            "“Terrorscale Crossblades” design (Felszerelés RM04)",
+            "“Terrorscale Crossblades” design (Felszerelés RM04)"
         ]
     },
     "cs-RM5": {
@@ -2733,7 +2733,7 @@ export default {
             ],
             [
                 "2 ✓ mindenkinek",
-                "“Lucky Eye” design (Felszerelés 063)",
+                "“Lucky Eye” design (Felszerelés 063)"
             ]
         ]
     },
@@ -2749,7 +2749,7 @@ export default {
         "name": "Insatiable",
         "rewards": [
             "10 tapasztalati pont mindenkinek",
-            "“Savage Cuirass” design (Felszerelés RM06)",
+            "“Savage Cuirass” design (Felszerelés RM06)"
         ]
     }
 }

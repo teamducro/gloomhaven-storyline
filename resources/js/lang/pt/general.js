@@ -14,8 +14,8 @@ export default {
     "Add rift events": "Add rift events",
     "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.": "Every time your party successfully completes five scenarios, check any one of the boxes and gain the corresponding reward.",
     "completed scenarios": "completed scenarios",
-
-    // Achievements
+    "Show winter events": "Show winter events",
+    "Show summer events": "Show summer events",
     "5 Ancient Technology Global Achievements": "5 “Ancient Technology” Global Achievements",
     "Add City Event 75 & Road Event 66": "Add City Event 75 & Road Event 66",
     "Add City Event 76 & Road Event 67": "Add City Event 76 & Road Event 67",
@@ -28,8 +28,6 @@ export default {
     "Have a party reputation of 10 or higher": "Have a party reputation of 10 or higher",
     "Have a party reputation of 20": "Have a party reputation of 20",
     "Retire a character": "Retire a character",
-
-    // Storyline App
     "Abilities": "Habilidades",
     "Achievement": "Conquista | Conquistas",
     "Achievements": "Conquistas",
@@ -45,6 +43,18 @@ export default {
     "Cancel": "Cancelar",
     "character-limit-message": "Devido à limitações de compartilhamento de campanhas gratuitas, existe um limite de caracteres nas notas. Usuários pro não tem essa limitação",
     "Choose a scenario to unlock": "Escolha um cenário para destravar",
+    "Scenario level": "Scenario level",
+    "Recommended scenario level:": "Recommended scenario level:",
+    "Very Easy": "Very Easy",
+    "Easy": "Easy",
+    "Normal": "Normal",
+    "Hard": "Hard",
+    "Very Hard": "Very Hard",
+    "Monster level": "Monster level",
+    "Gold conversion": "Gold conversion",
+    "Trap damage": "Trap damage",
+    "Hazardous terrain": "Hazardous terrain",
+    "Bonus experience": "Bonus experience",
     "Choose": "Escolha",
     "Clear all": "Limpar todos",
     "Clues": "Dicas",
@@ -84,7 +94,6 @@ export default {
     "Pages": "Pages",
     "Party": "Party",
     "Perks": "Perks",
-    "Please consider purchasing a license": "Please consider purchasing a license",
     "Preceding events": "Preceding events",
     "Remove": "Remove",
     "Required by": "Required by",
@@ -96,7 +105,7 @@ export default {
     "Retirement counter": "Retirement counter",
     "Reward": "Reward | Rewards",
     "Rewards": "Rewards",
-    "Search name or nr": "Search name or nr",
+    "Search": "Search",
     "Set this counter to the amount of characters you have retired": "Set this counter to the amount of characters you have retired.",
     "Show all": "Show all",
     "Manage": "Manage",
@@ -127,6 +136,22 @@ export default {
     "reset": {
         "text": "Are you sure you want to remove all scenario data?"
     },
+    "purchase": {
+        "new_text": "You are purchasing a new shared campaign license, please select one or more games.",
+        "renew_text": "You are renewing your existing shared campaign license, please select one or more games.",
+        "following_free": "The following games are included for free",
+        "expand_title": {
+            "gh": "Unlock Gloomhaven for a New Adventure",
+            "fh": "Unlock Frosthaven for a New Adventure"
+        },
+        "expand_text": {
+            "gh": "You've selected Gloomhaven but you don't have access to it yet.",
+            "fh": "You've selected Frosthaven but you don't have access to it yet.",
+            "general": "Ready for a new adventure? Add it to your existing shared campaign license."
+        },
+        "local": "Or use the free local version instead.",
+        "Go to local": "Go to local"
+    },
     "share": "share",
     "share-modal": {
         "1": "Share your current local storyline with your party members.",
@@ -135,11 +160,11 @@ export default {
         "title": "Share Gloomhaven Storyline Tracker"
     },
     "share-campaign-code": {
-        "not-allowed": "You are not the owner of this campaign, you can't share it with others.",
         "1": "Share the following campaign code with your party members to enable progress sync across all your devices!",
         "2": "Valid until",
         "3": "The code is valid for one week.",
         "4": "When enabled, users who use this code won't be able to edit the storyline.",
+        "not-allowed": "You are not the owner of this campaign, you can't share it with others."
     },
     "Read only mode": "Read only mode",
     "campaign page": {
@@ -170,6 +195,10 @@ export default {
     },
     "send me an e-mail": "send me an e-mail",
     "Please send me an e-mail": "Please send me an e-mail",
+    "Font": "Font",
+    "Choose which font you would like": "Choose which font you would like",
+    "Apply font to headers": "Apply font to headers",
+    "Apply font to storyline": "Apply font to storyline",
     "or": "or",
     "Welcome": "Welcome",
     "Language": "Language",
@@ -183,6 +212,7 @@ export default {
     "Campaigns": "Campaigns",
     "Campaign code": "Campaign code",
     "Buy shared campaign": "Buy new shared campaign",
+    "Renew shared campaign": "Renew shared campaign",
     "Add shared campaign": "Add shared campaign",
     "donations": {
         "1": {
@@ -272,18 +302,33 @@ export default {
     "Characters": "Characters",
     "Character sheet": "Character sheet",
     "Party sheet": "Party sheet",
+    "Campaign sheet": "Campaign sheet",
     "Reputation": "Reputation",
     "Shop modifier": "Shop modifier",
-
-    // Game Editions
+    "corpsecap": "Corpsecap",
+    "algox": "Algox",
+    "arrowvine": "Arrowvine",
+    "axenut": "Axenut",
+    "flamefruit": "Flamefruit",
+    "coins": "Coins",
+    "gold": "Gold",
+    "hide": "Hide",
+    "lumber": "Lumber",
+    "lurkers": "Lurkers",
+    "metal": "Metal",
+    "rockroot": "Rockroot",
+    "snowthistle": "Snowthistle",
+    "unfettered": "Unfettered",
+    "random-item-treasure": "Random item",
     "gh": "Gloomhaven",
+    "fh": "Frosthaven",
+    "Frosthaven": "Frosthaven",
     "fc": "Forgotten Circles",
     "Forgotten Circles": "Forgotten Circles",
     "jotl": "Jaws of the Lion",
     "Jaws of the Lion": "Jaws of the Lion",
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
-
     "Availability": "Availability",
     "Sticker": "Sticker",
     "State": "State",
@@ -342,7 +387,6 @@ export default {
     "East Coast": "East Coast",
     "different Dimension": "different Dimension",
     "and": "and",
-    "or": "or",
     "Hidden Scenario": "Hidden Scenario",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
@@ -352,10 +396,8 @@ export default {
         "R": "Road Event",
         "C": "City Event",
         "Q": "Personal Quest",
-        "RIFT": "Rift",
+        "RIFT": "Rift"
     },
-
-    //Ability Enhancements
     "Shield": "Shield",
     "Heal": "Heal",
     "Attack": "Attack",
@@ -364,11 +406,8 @@ export default {
     "Jump": "Jump",
     "Flying": "Flying",
     "Retaliate": "Retaliate",
-
     "Recover": "Recover",
     "Refresh": "Refresh",
-
-    // Conditions
     "BANE": "BANE",
     "BLESS": "BLESS",
     "CHILL": "CHILL",
@@ -393,8 +432,6 @@ export default {
     "TELEPORT": "TELEPORT",
     "WARD": "WARD",
     "WOUND": "WOUND",
-
-    // Class-colored Text
     "Augment": "Augment",
     "Colony": "Colony",
     "Command": "Command",
