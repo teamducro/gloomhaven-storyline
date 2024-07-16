@@ -1,7 +1,7 @@
 <template>
     <div class="sm:flex">
         <div>
-            <p>{{ $t('Recommended scenario level:') }} <span class="font-title">{{ recommendedLevel }}</span></p>
+            <p>{{ $t('Recommended scenario level') }}: <span class="font-title">{{ recommendedLevel }}</span></p>
             <div class="flex flex-wrap">
                 <div class="flex flex-col items-center justify-end"
                      v-for="level in levels">
@@ -12,13 +12,13 @@
                            :checked="isChecked(level)"
                            @changed="changed"/>
                 </div>
-                <span class="ml-2">{{ difficulty }}</span>
             </div>
         </div>
 
         <table class="border-separate border-spacing-2 sm:ml-8 sm:-mt-2">
+            <tr><td>{{ $t('Difficulty') }}</td><td>{{ difficulty }}</td></tr>
             <tr v-for="row in calculateDifficultyTable(level, appData.game)">
-                <td>{{ row.label }}:</td>
+                <td>{{ row.label }}</td>
                 <td>{{ row.value }}</td>
             </tr>
         </table>

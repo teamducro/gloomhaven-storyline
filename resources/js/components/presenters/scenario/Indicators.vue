@@ -75,7 +75,7 @@ export default {
             let table = '<table class="border-separate border-spacing-2">';
             const tableData = this.calculateDifficultyTable(this.scenarioLevel, this.appData.game)
             for (const row of Object.values(tableData)) {
-                table += `<tr><td>${row.label}:</td><td>${row.value}</td></tr>`;
+                table += `<tr><td>${row.label}</td><td>${row.value}</td></tr>`;
             }
             table += '</table>';
 
