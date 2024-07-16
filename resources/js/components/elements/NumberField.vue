@@ -2,7 +2,8 @@
     <div class="number-field-container">
         <label class="mdc-text-field mdc-text-field--outlined" ref="field">
             <input type="text" :value="number" @change="numberChanged" :aria-labelledby="id"
-                   class="mdc-text-field__input font-title text-xl" :disabled="isDisabled">
+                   class="mdc-text-field__input font-title text-xl" :disabled="isDisabled"
+                   pattern="[0-9]*" inputmode="numeric" novalidate>
             <span class="mdc-notched-outline">
                 <span class="mdc-notched-outline__leading"></span>
                 <span class="mdc-notched-outline__notch">
