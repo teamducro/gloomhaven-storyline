@@ -23,6 +23,7 @@ class Sheet {
         this.rift = {...data.rift}; // FC
         this.notes = data.notes || '';
         this.unlocks = {...data.unlocks};
+        this.scenarioLevel = data.scenarioLevel || 0;
 
         // Items
         this.itemDesigns = {...data.itemDesigns};
@@ -52,6 +53,7 @@ class Sheet {
             rift: {'rift': {}},
             notes: {'notes': ''},
             unlocks: {'unlocks': {}},
+            scenarioLevel: 'scenarioLevel',
 
             // Items
             itemDesigns: {'itemDesigns': {}},

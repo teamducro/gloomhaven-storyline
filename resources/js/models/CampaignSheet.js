@@ -41,6 +41,7 @@ class CampaignSheet {
         this.boat = {...data.boat};
         this.notes = data.notes || '';
         this.unlocks = {...data.unlocks};
+        this.scenarioLevel = data.scenarioLevel || 0;
 
         // Items
         this.itemDesigns = {...data.itemDesigns};
@@ -88,6 +89,7 @@ class CampaignSheet {
             boat: {'boat': {}},
             notes: {'notes': ''},
             unlocks: {'unlocks': {}},
+            scenarioLevel: 'scenarioLevel',
 
             // Items
             itemDesigns: {'itemDesigns': {}},
