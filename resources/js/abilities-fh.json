@@ -1648,23 +1648,7 @@
         "id": 92
     },
     {
-        "name": "shadow beast",
-        "game": "fh",
-        "character_id": "DW",
-        "level": 1,
-        "initiative": 96,
-        "id": 92
-    },
-    {
         "name": "the night takes shape",
-        "game": "fh",
-        "character_id": "DW",
-        "level": 6,
-        "initiative": 94,
-        "id": 112
-    },
-    {
-        "name": "shadow horror",
         "game": "fh",
         "character_id": "DW",
         "level": 6,

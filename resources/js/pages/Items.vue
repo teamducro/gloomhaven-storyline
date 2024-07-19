@@ -47,16 +47,30 @@
                                              :checked.sync="sheet.crossGameItemsEnabled"
                                              @change="refreshItems();store()"/>
 
-                            <ul v-if="sheet.crossGameItemsEnabled">
-                                <li v-for="code in Object.keys(sheet.crossGameItems)" v-if="code !== currentGame">
-                                    <checkbox-with-label :id="code+'-items'"
-                                                         :label="$t(code)"
-                                                         :checked.sync="sheet.crossGameItems[code]"
-                                                         @change="refreshItems();store()"/>
-                                </li>
-                            </ul>
+                            <template v-if="sheet.crossGameItemsEnabled">
+                                <ul v-if="currentGame !== 'fh'">
+                                    <li v-for="code in Object.keys(sheet.crossGameItems)" v-if="code !== currentGame">
+                                        <checkbox-with-label :id="code+'-items'"
+                                                            :label="$t(code)"
+                                                            :checked.sync="sheet.crossGameItems[code]"
+                                                            @change="refreshItems();store()"/>
+                                    </li>
+                                </ul>
+                                <template v-else>
+                                    <template v-for="gameId in Object.keys(sheet.crossGameItems)" v-if="Object.keys(sheet.crossGameItems[gameId]).length !== 0">
+                                        <h2 class="ml-2">{{ $t(gameId) + ' ' + $t('Items') }}</h2>
+                                        <ul class="flex">
+                                            <li v-for="code in Object.keys(sheet.crossGameItems[gameId])">
+                                                <checkbox-with-label :id="gameId+code"
+                                                                    :label="$t(code)"
+                                                                    :checked.sync="sheet.crossGameItems[gameId][code]"
+                                                                    @change="refreshItems();store()"/>
+                                            </li>
+                                        </ul>
+                                    </template>
+                                </template>
+                            </template>
                         </div>
-
                     </div>
                 </dropdown>
             </div>
@@ -267,17 +281,30 @@ export default {
             // Add items from other games, if enabled.
             if (this.sheet.crossGameItemsEnabled) {
                 const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
-                otherGames.forEach(game => {
-                    if (game !== this.currentGame) {
-                        if (game === 'gh' && this.currentGame !== 'jotl') {
-                            const ghItems = this.calculateItemsGh([], this.sheet.prosperityIndex);
-                            items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
-                        } else {
-                            // Add all items for games without prosperity.
-                            items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                let otherGameHandler;
+
+                if (this.currentGame === Game.fh) {
+                    otherGameHandler = (game => {
+                        const otherGameItems = collect(this.sheet.crossGameItems[game]).filter().keys().all();
+                        const otherItems = this.prependGame(game, otherGameItems);
+                        items = collect({...items.all(), ...this.itemRepository.findMany(otherItems).all()})
+                    });
+                }
+                else {
+                    otherGameHandler = (game => {
+                        if (game !== this.currentGame) {
+                            if (game === 'gh' && this.currentGame !== 'jotl') {
+                                const ghItems = this.calculateItemsGh([], this.sheet.prosperityIndex);
+                                items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
+                            } else {
+                                // Add all items for games without prosperity.
+                                items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
+                            }
                         }
-                    }
-                });
+                    });
+                }
+
+                otherGames.forEach(otherGameHandler);
             }
 
             this.items = items

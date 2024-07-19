@@ -146,6 +146,72 @@ export default {
         },
         prependGame(game, items) {
             return items.map(id => game + '-' + id);
+        },
+        calculateRecommendedLevel(characters) {
+            const count = Object.keys(characters).length || 0;
+            const total = collect(Object.values(characters)).sum('level') || 0;
+
+            // No party
+            if (count === 0) {
+                return 1;
+            }
+
+            // Solo party
+            if (count === 1) {
+                return total >= 5
+                    ? Math.ceil(total / 2)
+                    : 1;
+            }
+
+            // Party of x
+            return Math.ceil(total / count / 2);
+        },
+        calculateDifficulty(level, recommendedLevel) {
+            const difference = level - recommendedLevel;
+            const difficulties = {
+                '-4': this.$t('Very Easy'),
+                '-3': this.$t('Very Easy'),
+                '-2': this.$t('Very Easy'),
+                '-1': this.$t('Easy'),
+                '0': this.$t('Normal'),
+                '1': this.$t('Hard'),
+                '2': this.$t('Very Hard'),
+                '3': this.$t('Very Hard'),
+                '4': this.$t('Very Hard'),
+            }
+
+            return difficulties[difference] || 'Normal';
+        },
+        calculateDifficultyTable(level, game)
+        {
+            let rows = {
+                monsterLevel: {
+                    label: this.$t('Monster Level'),
+                    value: level,
+                },
+                goldConversion: {
+                    label: this.$t('Gold conversion'),
+                    value: [2,2,3,3,4,4,5,6][level] || 2,
+                },
+                trapDamage: {
+                    label: this.$t('Trap damage'),
+                    value: level + 2
+                }
+            }
+
+            if (game === 'fh') {
+                rows.hazardousTerrain = {
+                    label: this.$t('Hazardous terrain'),
+                    value: [1,2,2,2,3,3,3,4][level] || 2
+                }
+            }
+
+            rows.bonusExperience = {
+                label: this.$t('Bonus experience'),
+                    value: (level * 2) + 4,
+            };
+
+            return rows;
         }
     }
 }

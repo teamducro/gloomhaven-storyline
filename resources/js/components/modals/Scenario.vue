@@ -11,7 +11,7 @@
                             {{ scenario.coordinates.name }}
                         </span>
                         <span class="absolute right-0 top-0 flex pt-4">
-                            <indicators class="items-center hidden xs:flex" :scenario="scenario"/>
+                            <indicators class="items-center hidden xs:flex" :scenario="scenario" :key="'indicators-desktop-' + stateKey"/>
                             <button type="button" data-mdc-dialog-action="close"
                                     class="mdc-button">
                                 <i class="material-icons">close</i>
@@ -38,7 +38,7 @@
                 </div>
 
                 <indicators class="flex items-center xs:hidden absolute left-20 mt-1"
-                            style="top: 65px"
+                            style="top: 65px" :key="'indicators-mobile-' + stateKey"
                             :scenario="scenario"/>
 
                 <div :class="[scenario.complexity ? 'mt-4' : '']"

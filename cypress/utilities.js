@@ -165,6 +165,11 @@ export default {
         this.assertCount('#' + table + ' tbody tr', count);
     },
 
+    enableGame(game) {
+        cy.visit('/tracker/#/settings');
+        cy.get('#' + game + '-enabled').check();
+    },
+
     switchGame(game) {
         cy.get('button').contains('menu').click();
         cy.get('.game-switch .mdc-select__selected-text').click();

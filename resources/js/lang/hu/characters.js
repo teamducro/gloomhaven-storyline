@@ -12,7 +12,7 @@ export default {
             "Adj hozzá egy {AGAIN} {DISARM} lapot és egy {AGAIN} {MUDDLE} lapot",
             "Adj hozzá egy {AGAIN} ADD {TARGET} lapot",
             "Adj hozzá egy {+1_WHITE} {SHIELD}1, Magadra lapot",
-            "Felszerelések negatív hatásait hagyd figyelmen kívül és Adj hozzá egy {+1_WHITE} lapot",
+            "Felszerelések negatív hatásait hagyd figyelmen kívül és Adj hozzá egy {+1_WHITE} lapot"
         ]
     },
     "CH": {
@@ -27,7 +27,7 @@ export default {
             "Adj hozzá két {AGAIN} {EARTH} lapot",
             "Adj hozzá két {AGAIN} {WIND} lapot",
             "Felszerelések negatív hatásait hagyd figyelmen kívül",
-            "Küldetések negatív hatásait hagyd figyelmen kívül",
+            "Küldetések negatív hatásait hagyd figyelmen kívül"
         ]
     },
     "SW": {
@@ -43,7 +43,7 @@ export default {
             "Adj hozzá egy {+2_WHITE} {FIRE} lapot",
             "Adj hozzá egy {+2_WHITE} {ICE} lapot",
             "Adj hozzá egy {AGAIN} {EARTH} és egy {AGAIN} {WIND} lapot",
-            "Adj hozzá egy {AGAIN} {LIGHT} és egy {AGAIN} {DARK} lapot",
+            "Adj hozzá egy {AGAIN} {LIGHT} és egy {AGAIN} {DARK} lapot"
         ]
     },
     "TI": {
@@ -59,7 +59,7 @@ export default {
             "Adj hozzá egy {+1_WHITE} {IMMOBILIZE} lapot",
             "Adj hozzá egy {+1_WHITE} Heal {HEAL}2 lapot",
             "Adj hozzá egy {+0_WHITE} ADD {TARGET} lapot",
-            "Küldetések negatív hatásait hagyd figyelmen kívül",
+            "Küldetések negatív hatásait hagyd figyelmen kívül"
         ]
     },
     "SC": {
@@ -75,7 +75,7 @@ export default {
             "Adj hozzá két {AGAIN} {POISON} lapot",
             "Adj hozzá két {AGAIN} {MUDDLE} lapot",
             "Adj hozzá egy {AGAIN} {INVISIBLE} lapot",
-            "Küldetések negatív hatásait hagyd figyelmen kívül",
+            "Küldetések negatív hatásait hagyd figyelmen kívül"
         ]
     },
     "MT": {
@@ -92,7 +92,7 @@ export default {
             "Adj hozzá két {AGAIN} {IMMOBILIZE} lapot",
             "Adj hozzá egy {AGAIN} {STUN} lapot",
             "Adj hozzá egy {AGAIN} {DISARM} lapot és egy {AGAIN} {MUDDLE} lapot",
-            "Küldetések negatív hatásait hagyd figyelmen kívül",
+            "Küldetések negatív hatásait hagyd figyelmen kívül"
         ]
     },
     "DS": {
@@ -107,7 +107,7 @@ export default {
             "Adj hozzá egy {+1_WHITE} {IMMOBILIZE} lapot",
             "Adj hozzá egy {+0_WHITE} {STUN} lapot",
             "Adj hozzá egy {AGAIN} {TARGET} lapot",
-            "Küldetések negatív hatásait hagyd figyelmen kívül",
+            "Küldetések negatív hatásait hagyd figyelmen kívül"
         ]
     },
     "EL": {
@@ -125,7 +125,7 @@ export default {
             "Adj hozzá két {+1_WHITE} {PUSH}1 lapot",
             "Adj hozzá egy {+1_WHITE} {WOUND} lapot",
             "Adj hozzá egy {+0_WHITE} {STUN} lapot",
-            "Adj hozzá egy {+0_WHITE} {TARGET} lapot",
+            "Adj hozzá egy {+0_WHITE} {TARGET} lapot"
         ]
     },
     "SB": {
@@ -139,7 +139,7 @@ export default {
             "Adj hozzá két {AGAIN} {WOUND} lapot",
             "Adj hozzá egy {AGAIN} {STUN} lapot",
             "Adj hozzá egy {AGAIN} {HEAL}3 lapot",
-            "Adj hozzá egy {+0_WHITE} {REFRESH} an item lapot",
+            "Adj hozzá egy {+0_WHITE} {REFRESH} an item lapot"
         ]
     },
     "SS": {
@@ -156,7 +156,7 @@ export default {
             "Cserélj ki egy {+0_WHITE} lapot egy {+3_WHITE} {MUDDLE} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {STUN} lapra",
             "Adj hozzá három {AGAIN} {+1_WHITE} lapot",
-            "Adj hozzá két {AGAIN} {CURSE} lapot",
+            "Adj hozzá két {AGAIN} {CURSE} lapot"
         ]
     },
     "SK": {
@@ -172,7 +172,7 @@ export default {
             "Adj hozzá két {AGAIN} {LIGHT} lapot",
             "Adj hozzá két {AGAIN} {SHIELD}1, Magadra lapot",
             "Felszerelések negatív hatásait hagyd figyelmen kívül és adj hozzá két {+1_WHITE} lapot",
-            "Küldetések negatív hatásait hagyd figyelmen kívül",
+            "Küldetések negatív hatásait hagyd figyelmen kívül"
         ]
     },
     "NS": {
@@ -187,7 +187,7 @@ export default {
             "Adj hozzá két {AGAIN} {HEAL}1 lapot",
             "Adj hozzá két {AGAIN} {CURSE} lapot",
             "Adj hozzá egy {AGAIN} {TARGET} lapot",
-            "Küldetések negatív hatásait hagyd figyelmen kívül és adj hozzá két {+1_WHITE} lapot",
+            "Küldetések negatív hatásait hagyd figyelmen kívül és adj hozzá két {+1_WHITE} lapot"
         ]
     },
     "SU": {
@@ -202,7 +202,7 @@ export default {
             "Adj hozzá két {AGAIN} {HEAL}1 lapot",
             "Adj hozzá egy {AGAIN} {FIRE} és egy {AGAIN} {WIND} lapot",
             "Adj hozzá egy {AGAIN} {DARK} és egy {AGAIN} {EARTH} lapot",
-            "Küldetések negatív hatásait hagyd figyelmen kívül és adj hozzá két {+1_WHITE} lapot",
+            "Küldetések negatív hatásait hagyd figyelmen kívül és adj hozzá két {+1_WHITE} lapot"
         ]
     },
     "BE": {
@@ -217,7 +217,7 @@ export default {
             "Adj hozzá egy {AGAIN} {+1_WHITE} {DISARM} lapot",
             "Adj hozzá két {AGAIN} {HEAL}1 lapot",
             "Adj hozzá egy {+2_WHITE} {FIRE} lapot",
-            "Felszerelések negatív hatásait hagyd figyelmen kívül",
+            "Felszerelések negatív hatásait hagyd figyelmen kívül"
         ]
     },
     "QM": {
@@ -232,7 +232,7 @@ export default {
             "Adj hozzá egy {AGAIN} {STUN} lapot",
             "Adj hozzá egy {AGAIN} {TARGET} lapot",
             "Adj hozzá egy {+0_WHITE} {REFRESH} an item lapot",
-            "Felszerelések negatív hatásait hagyd figyelmen kívül és adj hozzá két {+1_WHITE} lapot",
+            "Felszerelések negatív hatásait hagyd figyelmen kívül és adj hozzá két {+1_WHITE} lapot"
         ]
     },
     "PH": {
@@ -247,7 +247,7 @@ export default {
             "Adj hozzá két {AGAIN} {CURSE} lapot",
             "Adj hozzá két {AGAIN} {IMMOBILIZE} lapot",
             "Adj hozzá egy {AGAIN} {STUN} lapot",
-            "Küldetések negatív hatásait hagyd figyelmen kívül és adj hozzá egy {+1_WHITE} lapot",
+            "Küldetések negatív hatásait hagyd figyelmen kívül és adj hozzá egy {+1_WHITE} lapot"
         ]
     },
     "BT": {
@@ -260,7 +260,7 @@ export default {
             "Adj hozzá egy {+1_WHITE} {IMMOBILIZE} lapot",
             "Adj hozzá két {AGAIN} {HEAL}1 lapot",
             "Adj hozzá két {AGAIN} {EARTH} lapot",
-            "Küldetések negatív hatásait hagyd figyelmen kívül",
+            "Küldetések negatív hatásait hagyd figyelmen kívül"
         ]
     },
     "BS": {
@@ -294,7 +294,7 @@ export default {
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} {HEAL}2, Magadra vagy csapattársra lapra",
             "Adj hozzá két {AGAIN} {HEAL}1, Magadra lapot",
             "Adj hozzá két {AGAIN} {CURSE} lapot",
-            "Küldetések negatív hatásait hagyd figyelmen kívül és adj hozzá két {+1_WHITE} lapot",
+            "Küldetések negatív hatásait hagyd figyelmen kívül és adj hozzá két {+1_WHITE} lapot"
         ]
     },
     "RG": {
@@ -309,7 +309,7 @@ export default {
             "Adj hozzá egy {+1_WHITE} {FIRE_LIGHT} lapot",
             "Adj hozzá egy {+1_WHITE} {SHIELD} 1 lapot",
             "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {IMMOBILIZE} lapra",
-            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {WOUND} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {WOUND} lapra"
         ]
     },
     "DM": {
@@ -323,7 +323,7 @@ export default {
             "Adj hozzá egy {+2_WHITE} lapot",
             "Cserélj ki egy {+1_WHITE} lapot egy {+2_WHITE} {EARTH} lapra",
             "Cserélj ki egy {+1_WHITE} lapot egy {+2_WHITE} {FIRE} lapra",
-            "Adj hozzá egy {+0_WHITE} Minden szomszédos ellenfél 1-et sérül lapot",
+            "Adj hozzá egy {+0_WHITE} Minden szomszédos ellenfél 1-et sérül lapot"
         ]
     },
     "HT": {
@@ -338,7 +338,7 @@ export default {
             "Cserélj ki egy {+0_WHITE} lapot egy {+0_WHITE} {STUN} lapra",
             "Cserélj ki egy {+1_WHITE} lapot egy {+1_WHITE} {STUN} lapra",
             "Adj hozzá egy {+2_WHITE} {WIND} lapot",
-            "Cserélj ki egy {+1_WHITE} egy {+3_WHITE} lapra",
+            "Cserélj ki egy {+1_WHITE} egy {+3_WHITE} lapra"
         ]
     },
     "VW": {
@@ -352,7 +352,7 @@ export default {
             "Adj hozzá egy {+1_WHITE} {HEAL}1 ((Csapattársra)) lapot",
             "Adj hozzá egy {+1_WHITE} {POISON} lapot",
             "Adj hozzá egy {+3_WHITE} lapot",
-            "Adj hozzá egy {+1_WHITE} {CURSE} lapot",
+            "Adj hozzá egy {+1_WHITE} {CURSE} lapot"
         ]
     },
     "AA": {

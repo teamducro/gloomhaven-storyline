@@ -788,7 +788,7 @@ export default {
     "gh-155": {
         "name": "Curseward Armor",
         "source": "Reward from {SCENARIO 108}",
-        "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck.",
+        "desc": "You are immune to {CURSE}, even if the item is spent. On the next three sources of damage from attacks targeting you gain {SHIELD} 1. Add 3 {-1} to your attack modifier deck."
     },
     "gh-156": {
         "name": "Elemental Claymore",
@@ -798,32 +798,32 @@ export default {
     "gh-157": {
         "name": "Ancient Bow",
         "source": "{SCENARIO 107} (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
-        "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack.",
+        "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack."
     },
     "gh-158": {
         "name": "Rejuvenation Greaves",
         "source": "{SCENARIO 111} (Treasure #82)",
-        "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}.",
+        "desc": "During your movement, add +2 {MOVE} to the movement and gain {REGENERATE}."
     },
     "gh-159": {
         "name": "Scroll of Haste",
         "source": "{SCENARIO 103} (Treasure #81)",
-        "desc": "During any one ally's movement, add +2 {MOVE} to the movement.",
+        "desc": "During any one ally's movement, add +2 {MOVE} to the movement."
     },
     "gh-160": {
         "name": "Cutpurse Dagger",
         "source": "Unknown",
-        "desc": "When you kill a monster during your turn, gain one money token.",
+        "desc": "When you kill a monster during your turn, gain one money token."
     },
     "gh-161": {
         "name": "Throwing Axe",
         "source": "Reward from {SCENARIO 108}",
-        "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack.",
+        "desc": "During your single-target melee attack action, add {RANGE} 3 to the attack."
     },
     "gh-162": {
         "name": "Rift Device",
         "source": "Reward from {SCENARIO 112}\nSection 62 “Mechanical Splendor” in book.",
-        "desc": "During your turn, {TELEPORT} to any unoccupied hex within 4 hexes of you.",
+        "desc": "During your turn, {TELEPORT} to any unoccupied hex within 4 hexes of you."
     },
     "gh-163": {
         "name": "Crystal Tiara",
@@ -848,7 +848,7 @@ export default {
     "jotl-3": {
         "name": "Chain Armor",
         "source": "Reward from {SCENARIO 2}",
-        "desc": "During your turn gain {SHIELD} 1 for the rest of the round",
+        "desc": "During your turn gain {SHIELD} 1 for the rest of the round"
     },
     "jotl-4": {
         "name": "Studded Leather",
@@ -874,7 +874,7 @@ export default {
     "jotl-8": {
         "name": "Throwing Hammer",
         "source": "Reward from {SCENARIO 2}",
-        "desc": "During your ranged attack, add {STUN} to a single attack",
+        "desc": "During your ranged attack, add {STUN} to a single attack"
     },
     "jotl-9": {
         "name": "Poison Dagger",
@@ -884,7 +884,7 @@ export default {
     "jotl-10": {
         "name": "Iron Spear",
         "source": "Reward from {SCENARIO 2}",
-        "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes",
+        "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes"
     },
     "jotl-11": {
         "name": "Healing Potion",
@@ -1727,7 +1727,7 @@ export default {
         "name": "Shield of Reciprocity",
         "source": "Craftsman 9",
         "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack and flip this card over.",
-        "backDesc": "During your melee attack ability, add {PIERCE.fh} 1 to one attack and flip this card over.",
+        "backDesc": "During your melee attack ability, add {PIERCE.fh} 1 to one attack and flip this card over."
     },
     "fh-51": {
         "name": "Spiked Collar",
@@ -2220,7 +2220,7 @@ export default {
         "name": "Circlet of Sanctity",
         "source": "Trading Post 4",
         "desc": "After the next three attacks targeting an ally within {RANGE.fh} 2, flip this card over.",
-        "backDesc":"During your turn, perform: {WARD.fh} {RANGE.fh}3 then flip this card over."
+        "backDesc": "During your turn, perform: {WARD.fh} {RANGE.fh}3 then flip this card over."
     },
     "fh-149": {
         "name": "Platemail",
@@ -2481,7 +2481,7 @@ export default {
         "name": "Eventide Scepter",
         "source": "Treasure 4",
         "desc": "During your heal ability targeting an ally, {LIGHT_X} to add {REGENERATE.fh} to one heal and flip this card over.",
-        "backDesc":"During your attack ability, {DARK_X} to add {CURSE.fh} to one attack and flip this card over."
+        "backDesc": "During your attack ability, {DARK_X} to add {CURSE.fh} to one attack and flip this card over."
     },
     "fh-201": {
         "name": "Wave Blade",
@@ -2547,7 +2547,7 @@ export default {
         "name": "Key of Seasons",
         "source": "Scenario 106",
         "desc": "During your attack ability {ICE_X} to add {IMMOBILIZE.fh} to one attack, then flip this card over at the end of your turn.",
-        "backDesc":"During your attack ability {FIRE_X} to add {WOUND.fh} to one attack, then flip this card over at the end of your turn."
+        "backDesc": "During your attack ability {FIRE_X} to add {WOUND.fh} to one attack, then flip this card over at the end of your turn."
     },
     "fh-214": {
         "name": "Cup of Ventillion",
@@ -2603,13 +2603,13 @@ export default {
         "name": "Armor of Empathy",
         "source": "unknown",
         "desc": "After the next three attacks targeting you, flip this card over.",
-        "backDesc":"During your turn, perform {HEAL.fh} 3 {TARGET.fh} 1 ally, {RANGE.fh} 3, {BLESS.fh} then flip this card over."
+        "backDesc": "During your turn, perform {HEAL.fh} 3 {TARGET.fh} 1 ally, {RANGE.fh} 3, {BLESS.fh} then flip this card over."
     },
     "fh-225": {
         "name": "Algox Carving",
         "source": "Treasure 41",
         "desc": "During your melee attack ability, {EARTH_X} to add +1 {ATTACK.fh} to one attack and flip this card over.",
-        "backDesc":"During your melee attack ability, {WIND_X} to add {PUSH.fh} 2 to one attack and flip this card over."
+        "backDesc": "During your melee attack ability, {WIND_X} to add {PUSH.fh} 2 to one attack and flip this card over."
     },
     "fh-226": {
         "name": "Unfettered Arm",
@@ -2750,7 +2750,7 @@ export default {
         "name": "Mask of Duality",
         "source": "Reward from Solo Scenario - {GE}",
         "desc": "During your ranged attack ability while in {RANGED_ICON}, gain advantage for one attack, then flip this card over.",
-        "backDesc":"When an enemy performs an attack targeting you while you are in {MELEE_ICON}, the attacker gains disadvantage, then flip this card over."
+        "backDesc": "When an enemy performs an attack targeting you while you are in {MELEE_ICON}, the attacker gains disadvantage, then flip this card over."
     },
     "fh-254": {
         "name": "Ancestral Blade",
@@ -2781,7 +2781,7 @@ export default {
         "name": "Storm Carving",
         "source": "Reward from Solo Scenario - {SD}",
         "desc": "During an attack ability you grant an ally, add {PUSH.fh} 2 to one of their attacks, then flip this card over.",
-        "backDesc":"During your attack ability you, add {PULL.fh} 2 to one attack, then flip this card over."
+        "backDesc": "During your attack ability you, add {PULL.fh} 2 to one attack, then flip this card over."
     },
     "fh-260": {
         "name": "Freezing Orb",
@@ -2797,7 +2797,7 @@ export default {
         "name": "Exhaust Boots",
         "source": "Reward from Solo Scenario - {ME}",
         "desc": "During your move ability, when you have {PRESSURE_HIGH_ICON} or {PRESSURE_OVER_ICON}, add +1 {MOVE.fh}, then flip this card over at the end of your turn.",
-        "backDesc":"During your turn when you have {PRESSURE_LOW_ICON}, perform: {MUDDLE.fh} {RANGE.fh} 1 then flip this card over at the end of your turn."
+        "backDesc": "During your turn when you have {PRESSURE_LOW_ICON}, perform: {MUDDLE.fh} {RANGE.fh} 1 then flip this card over at the end of your turn."
     },
     "fh-263": {
         "name": "Warlords Skull",

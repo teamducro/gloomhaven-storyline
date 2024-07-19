@@ -65,6 +65,13 @@
             </div>
 
             <div class="w-full mt-8">
+                <h2 class="mb-2">{{ $t('Scenario level') }}</h2>
+                <scenario-level :value.sync="sheet.scenarioLevel" id="scenario-level"
+                                @change="store" :characters="sheet.characters"
+                ></scenario-level>
+            </div>
+
+            <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
                 <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
                        @change="store" :is-local-campaign="isLocalCampaign"

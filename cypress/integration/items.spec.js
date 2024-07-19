@@ -164,6 +164,25 @@ describe('Items', () => {
         cy.get('#items').contains('Jet Boots').should('exist');
     });
 
+    it('It can use items from other games in FH', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        
+        cy.visit('/tracker/#/items');
+        cy.get('.items-to-add-dropdown button').click();
+        utilities.scrollTo('50%');
+        cy.get('#cross-game-items-enabled-checkbox').click();
+        cy.get('#gh25').click();
+
+        utilities.scrollTo('100%', true);
+        cy.get('#items').contains('Jagged Sword').should('exist');
+
+        // Make sure it also works after a reload!
+        cy.reload(true);
+        utilities.scrollTo('100%', true);
+        cy.get('#items').contains('Jagged Sword').should('exist');
+    });
+
     it('It can add items to characters', () => {
         // Campaign with Brute without items
         cy.visit('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxASwL4BpzQwBMADEcqhjvpLKQMwXhV4F0kAsT6WrtxJAKzcWNQqQBsI3mPYB2adXAAzAMYwAnFJTMZIAIYQAwgCUm+sAG0EAcVMBZBAF1W+uycc79AdxBx8qgD2-iAANiAkfFDACPoATqpQmABuAKYAJkZQ8fqqaKlxYBR4CIk5eQUAqgB2oYGqANZFKAgAQmZIfrgIRgASyF0IAMoA6gP+CAAqAJLj3UNGcwj2k+OsZTGpGoJycNscMOkSWjAcqhKpMAAcEnBEmnKCJCQS+kTHqVxIbWYlqphoACeFAQiE6E3I4O6jChCC+g2EsO0gwUsKuSw0SzgJCxYMGdyxMPx8ImcER+ORpNR+PRsL2S1IDLxEMhgyIRIhJO6RHJEMp3OpENpbMxsPoOPBfzigTAYBs+gAtqlpvkFc0YtABiRugArQJoUJa7qqZoRKUyuWK5WqsAAUWq+gARqEMkaQOltVh0sBWAAHTAhOLahDS-TpEHM7lLDndLkIXndfkIQXdYUTUX4iX4yOg1mkmOguNkrFJuAp0Fp7r02GMms5oh57kFohxnkMpNEctESsIIgZibitb4ACuPr+2TiuXycRgWx2e0EByOJzOF2ut3uGkez1e7w0nxBTswoQBmFS6pKR5PQIACgUADKpNKGlqQ6rD0KhaHId+f2M-j8v3jAC-wQbRfyA1EINTECgNFCDx1SRoL26CBAlCcMkGDTBMJ+BBugBVI1WKboXWfZAJgdJVkDaOJh3yfCEF9AomhIhAAEdh3PNA2LiVI0EwPilWqNBmmDYdhxwmi512fZDmOCRTnOS4bjuB4nheN4Pi4boAA9fWQSJsCAA/items');
