@@ -53,6 +53,10 @@ export default class BuildingRepository {
         return this.get().firstWhere('id', parseInt(id));
     }
 
+    findName(name) {
+        return this.get().firstWhere('_name', name);
+    }
+
     findMany(list) {
         return collect().wrap(list).map((id) => {
             return this.find(id);

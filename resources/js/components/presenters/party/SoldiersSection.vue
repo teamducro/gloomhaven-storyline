@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-8 mr-4">
+    <div>
         <div class="mb-2 flex items-center">
             <slot name="title">
                 <add-links-and-icons class="flex items-center gap-2" tag="h2" :text="'{SOLDIER}' + $t('Soldiers')"/>

@@ -23,6 +23,7 @@ import abilitiesCsJson from '../abilities-cs.json'
 import abilitiesFhJson from '../abilities-fh.json'
 import charactersJson from '../characters.json'
 import attackModifierDecksJson from '../attack-modifier-decks.json'
+import alchemyFhJson from '../alchemy-fh.json'
 import {Game} from "../models/Game";
 
 export default class GameData {
@@ -165,6 +166,24 @@ export default class GameData {
 
     attackModifierDeck() {
         return attackModifierDecksJson
+    }
+
+    alchemyId(game) {
+        switch (game) {
+            case Game.fh:
+                return 35
+            default:
+                return null;
+        }
+    }
+
+    alchemy(game) {
+        switch (game) {
+            case Game.fh:
+                return alchemyFhJson
+            default:
+                return [];
+        }
     }
 
     map(game = Game.gh) {

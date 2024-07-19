@@ -16,34 +16,43 @@
                 @change="store"
             />
 
-            <morale-section :sheet="sheet" :loading="loading" @change="store" />
+            <div class="mt-4 lg:flex lg:flex-wrap">
+                <div class="lg:flex-1">
+                    <morale-section :sheet="sheet" :loading="loading" @change="store" />
 
-            <resources-section
-                ref="resources"
-                :resources.sync="sheet.resources"
-                :loading="loading"
-                @change="store"/>
+                    <resources-section
+                        ref="resources"
+                        :resources.sync="sheet.resources"
+                        :loading="loading"
+                        @change="store"/>
 
-            <div class="mt-4 flex flex-wrap">
-                <counter-section
-                    class="mb-4 mr-4"
-                    ref="inspiration"
-                    :title="$t('Inspiration')"
-                    :value.sync="sheet.inspiration"
-                    :loading="loading"
-                    @change="store"/>
+                    <div class="mt-4 inline-grid grid-cols-2 xs:grid-cols-3 gap-4">
+                        <counter-section
+                            ref="inspiration"
+                            :title="$t('Inspiration')"
+                            :value.sync="sheet.inspiration"
+                            :loading="loading"
+                            @change="store"/>
 
-                <counter-section
-                    class="mb-4 mr-4"
-                    ref="total-defense"
-                    :title="$t('Total Defense')"
-                    :value.sync="sheet.totalDefense"
-                    :loading="loading"
-                    @change="store"/>
+                        <counter-section
+                            ref="total-defense"
+                            :title="$t('Total Defense')"
+                            :value.sync="sheet.totalDefense"
+                            :loading="loading"
+                            @change="store"/>
 
-                <soldiers-section
-                    ref="soldiers"
-                    :sheet="sheet"
+                        <soldiers-section
+                            ref="soldiers"
+                            :sheet="sheet"
+                            :loading="loading"
+                            @change="store"/>
+                    </div>
+                </div>
+
+                <alchemy-section
+                    class="lg:flex-1"
+                    ref="alchemy"
+                    :itemDesigns="sheet.itemDesigns"
                     :loading="loading"
                     @change="store"/>
             </div>
