@@ -145,6 +145,7 @@ export default {
                 {version: '3.15', description: 'Added missing Rift event cards to Forgotten Circles', date: dayjs('2023-03-10')},
                 {version: '3.16', description: 'Add beta support for Frosthaven', date: dayjs('2023-08-18')},
                 {version: '3.17', description: 'Added Boat/Sled/Rope requirements to scenarios', date: dayjs('2024-01-13')},
+                {version: '3.19', description: 'Added Scenario level / Difficulty', date: dayjs('2024-07-19')},
             ].reverse()
         }
     },
