@@ -7,6 +7,13 @@
                     <template v-for="row in chart.chart">
                         <template v-for="cell in row">
                             <span v-if="cell === ''"/>
+                            <div v-if="cell === 'any'" class="relative">
+                                <div v-for="(resource, index) in resources">
+                                    <inline-svg :src="'resources/'+resource"
+                                                class="absolute w-full left-0 transition-opacity duration-500"
+                                                :class="[index === anyIndex ? 'opacity-1' : 'opacity-0']"/>
+                                </div>
+                            </div>
                             <inline-svg  v-else-if="typeof cell === 'string'" :src="'resources/'+cell"/>
                             <a v-else-if="isUnlocked(cell)" @click.prevent="openItem(cell)" class="relative rounded overflow-hidden cursor-pointer" href="#">
                                 <webp :src="cell.image" width="45" class="top-0 absolute max-w-none rounded item-thumbnail"
@@ -46,6 +53,7 @@ import GameData from "../../../services/GameData";
 import BuildingRepository from "../../../repositories/BuildingRepository";
 import ItemRepository from "../../../repositories/ItemRepository";
 import AddLinksAndIcons from "../../elements/AddLinksAndIcons.vue";
+import {shuffle} from "lodash";
 
 export default {
     inject: ['appData'],
@@ -62,6 +70,8 @@ export default {
     },
     data() {
         return {
+            anyIndex: 0,
+            resources: ['flamefruit', 'corpsecap', 'axenut', 'snowthistle', 'rockroot', 'arrowvine'],
             charts: [],
             alchemist: null,
             brewingItem: null,
@@ -70,6 +80,9 @@ export default {
         }
     },
     mounted() {
+        this.resources = shuffle(this.resources);
+        setInterval(this.cycleAnyIcon, 3000);
+
         this.render();
 
         this.$bus.$on('campaigns-changed', this.render);
@@ -104,6 +117,13 @@ export default {
             })
 
             console.log(this.charts)
+        },
+        cycleAnyIcon() {
+            if(this.anyIndex === this.resources.length - 1) {
+                this.anyIndex = 0;
+            } else {
+                this.anyIndex++;
+            }
         },
         isUnlocked(item) {
             return this.itemDesigns[item._id] || false;

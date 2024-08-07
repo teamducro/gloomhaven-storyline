@@ -29,8 +29,8 @@
             ["arrowvine", "flamefruit", "corpsecap", "axenut", "snowthistle", "", "axenut", "flamefruit"],
             ["rockroot", 105, 107, 106, 99, "", "corpsecap", 115],
             ["snowthistle", 118, 108, 100, "", "", "", ""],
-            ["axenut", 102, 101, "", "", "", "arrowvine", "arrowvine"],
-            ["corpsecap", 103, "", "" , "", "", "arrowvine", 119]
+            ["axenut", 102, 101, "", "", "", "any", "any"],
+            ["corpsecap", 103, "", "" , "", "", "any", 119]
         ]
     }
 ]
