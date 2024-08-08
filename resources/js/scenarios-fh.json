@@ -5758,8 +5758,8 @@
                     "damage_cost": 2,
                     "wrecked_cost": [1, 1, 0],
                     "coordinates": {
-                        "x": 0,
-                        "y": 0
+                        "x": 26.33,
+                        "y": 80.87
                     }
                 },
                 {
@@ -5908,8 +5908,8 @@
                     "damage_cost": 2,
                     "wrecked_cost": [1, 1, 0],
                     "coordinates": {
-                        "x": 0,
-                        "y": 0
+                        "x": 41.1,
+                        "y": 66.52
                     }
                 },
                 {
@@ -6542,9 +6542,9 @@
                     "upgrade_cost": [1, 0, 0, 0, 0, 0],
                     "damage_cost": 2,
                     "wrecked_cost": [2, 1, 1],
-                    "coordinates": {
-                        "x": 0,
-                        "y": 0
+                    "coordinates":  {
+                        "x": 58.82,
+                        "y": 78.95
                     }
                 }
             ]
@@ -6750,8 +6750,8 @@
                     "damage_cost": 2,
                     "wrecked_cost": [1, 1, 0],
                     "coordinates": {
-                        "x": 0,
-                        "y": 0
+                        "x": 72.61,
+                        "y": 67.29
                     }
                 },
                 {

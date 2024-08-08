@@ -24,6 +24,10 @@ class Building {
         this.read();
     }
 
+    isActive() {
+        return !this.isLocked() && !this.isAvailable();
+    }
+
     isLocked() {
         return this.state === BuildingState.locked;
     }
@@ -174,11 +178,11 @@ class Building {
     }
 
     image() {
-        // Some buildings have no image because they are already present
-        if (this.coordinates.x === 0 && this.coordinates.y === 0) {
-            return '';
-        }
-        return '/img/buildings/' + this.game + '/' + this.id + '_L' + this.level + '.png';
+        return '/img/buildings/' + this.game + '/' + this.id + '-level-' + this.level + '.png';
+    }
+
+    card() {
+        return '/img/buildings/' + this.game + '/' + this.id + '-level-' + this.level + '-' + (this.isWrecked() ? 'back' : 'front') + '.png';
     }
 
     key() {

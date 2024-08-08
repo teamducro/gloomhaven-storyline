@@ -19,7 +19,6 @@
                     v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
                     :key="game+'-'+achievement.id"
                     class="absolute"
-                    @click="openAchievement(achievement)"
                     :style="{
                         'top': '-174px',
                         'left': achievement.x + '%'
@@ -27,6 +26,7 @@
                     <webp :src="achievement.image"
                           :animate="true" :retina="true"
                           class="cursor-pointer"
+                          :id="'a' + achievement.id"
                           :alt="$t(achievement.name)"/>
                 </li>
             </ul>
@@ -37,16 +37,15 @@
                   :id="'o' + overlay.id"
                   :animate="true"
                   :alt="$t(overlay.id)"
-                  class="absolute scenario"
+                  class="absolute"
                   :style="{
                       'left': overlay.coordinates.x + '%',
                       'top': overlay.coordinates.y + '%',
                       'transform': 'scale('+scenarioScale+')'
                   }"/>
 
-            <template v-if="scenarios && scenarios.count()">
-                <webp v-for="scenario in scenarios.items"
-                      v-if="scenario.isVisible() && (!scenario.root || scenario.id === 1 || (scenario.root && scenario.isComplete())) && scenario.coordinates.x > 0 && scenario.coordinates.y > 0"
+            <template v-if="scenarios && scenarios.isNotEmpty()">
+                <webp v-for="scenario in scenarios.items.filter(filteredScenarios)"
                       :src="scenario.image()"
                       :key="game+'-'+scenario.id"
                       :id="'s' + scenario.id"
@@ -60,14 +59,15 @@
                       }"/>
             </template>
             
-            <template v-if="buildings && buildings.count()">
+            <template v-if="buildings && buildings.isNotEmpty()">
                 <webp v-for="building in buildings.items.filter(filteredBuildings)"
                       :src="building.image()"
                       :key="game+'-b'+building.id"
                       :id="'b' + building.id"
                       :animate="true"
                       :alt="$t(building.name)"
-                      class="absolute scenario"
+                      class="absolute"
+                      :class="[building.isActive() ? 'scenario' : '']"
                       :style="{
                           'left': building.coordinates.x + '%',
                           'top': building.coordinates.y + '%',
@@ -75,7 +75,7 @@
                       }"/>
             </template>
 
-            <p v-if="game === 'fh' && overlays && overlays.contains('id','A')"
+            <p v-if="game === Game.fh && overlays && overlays.contains('id','A')"
                 class="absolute text-center text-gray-800 font-title text-xs"
                 style="left: 69.8%; top: 85.05%; width: 165px;">{{ overlays.where('id','A').first().name }}</p>
         </div>
@@ -87,8 +87,14 @@ import panzoom from "panzoom";
 import Hammer from 'hammerjs';
 import tippy from "tippy.js";
 import GameData from "../services/GameData";
+import {Game} from "../models/Game";
 
 export default {
+    computed: {
+        Game() {
+            return Game
+        }
+    },
     inject: ['appData'],
     data() {
         return {
@@ -120,12 +126,6 @@ export default {
 
         this.$bus.$on('scenarios-updated', this.setScenarios);
         this.$bus.$on('windows-resized', this.setScenarios);
-        this.mapTouch = new Hammer(this.$map);
-        this.mapTouch.on('tap', (e) => {
-            if (e.target.id.startsWith('s')) {
-                this.scenarioClicked(e);
-            }
-        });
 
         if (app.achievements) {
             this.setAchievements();
@@ -170,6 +170,23 @@ export default {
                 bounds: true
             });
             this.centerMap();
+
+            // Register touch events
+            if (this.mapTouch) {
+                this.mapTouch.destroy();
+            }
+            this.mapTouch = new Hammer(this.$map);
+            this.mapTouch.on('tap', (e) => {
+                if (e.target.id.startsWith('s')) {
+                    this.scenarioClicked(e);
+                }
+                else if (e.target.id.startsWith('a')) {
+                    this.achievementClicked(e);
+                }
+                else if (e.target.id.startsWith('b') && e.target.classList.contains('scenario')) {
+                    this.buildingClicked(e);
+                }
+            });
         },
         setScenarios() {
             this.mapImages = this.gameData.map(this.game);
@@ -209,13 +226,22 @@ export default {
             let id = parseInt(e.target.id.replace('s', ''));
             this.open(id);
         },
+        achievementClicked(e) {
+            let id = e.target.id.substring(1);
+            this.openAchievement(id);
+        },
+        buildingClicked(e) {
+            let id = parseInt(e.target.id.replace('b', ''));
+            this.openBuilding(id);
+        },
         open(id) {
             this.$bus.$emit('open-scenario', {id});
         },
-        openAchievement(achievement) {
-            this.$bus.$emit('open-achievement', {
-                id: achievement.id
-            });
+        openAchievement(id) {
+            this.$bus.$emit('open-achievement', {id});
+        },
+        openBuilding(id) {
+            this.$bus.$emit('open-building-card', {id});
         },
         centerMap() {
             const scale = this.scale();
@@ -242,15 +268,24 @@ export default {
                 ? window.innerHeight / this.settings.width
                 : window.innerWidth / this.$map.offsetWidth;
         },
+        filteredScenarios(scenario) {
+            return scenario.isVisible()
+                && (!scenario.root || scenario.id === 1 || (scenario.root && scenario.isComplete()))
+                && scenario.coordinates.x > 0
+                && scenario.coordinates.y > 0;
+        },
         filteredBuildings(building) {
             // Building 42 should be hidden if scenario 64 is active
-            if (this.game =='fh' && building.id === 42) {
+            if (this.game === Game.fh && building.id === 42) {
                 let blocker = this.scenarios.items.find(s => s.id === 64);
                 if (blocker.isVisible() && !blocker.isComplete()) {
                     return false;
                 }
             }
-            return building.isUnlocked();
+
+            return building.isUnlocked()
+                && building.coordinates.x > 0
+                && building.coordinates.y > 0;
         },
     }
 }
