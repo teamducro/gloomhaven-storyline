@@ -96,6 +96,6 @@
         "vue-scrollto": "^2.20.0",
         "vue-social-sharing": "^3.0.9",
         "vuedraggable": "^2.24.3",
-        "webpack": "^5.76.0"
+        "webpack": "^5.94.0"
     }
 }
