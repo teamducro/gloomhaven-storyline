@@ -36,7 +36,7 @@ export default class GameData {
     }
 
     beta() {
-        return [Game.fh]
+        return []
     }
 
     purchasable() {
