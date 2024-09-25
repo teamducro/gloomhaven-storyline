@@ -122,6 +122,10 @@ window.app = new Vue({
             get: () => this.story,
         })
 
+        Object.defineProperty(appData, "hasMouse", {
+            get: () => this.hasMouse,
+        })
+
         // This shorthand is needed to use it in vue templates
         Object.defineProperty(appData, "read_only", {
             get: () => this.story?.read_only,
