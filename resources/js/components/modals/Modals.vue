@@ -8,10 +8,10 @@
         <donations/>
         <toast/>
         <confirm-transfer/>
+        <building-modal/>
         <item-modal/>
         <event-card/>
         <default-card-modal/>
-        <building-modal/>
         <edit-campaign/>
         <ability-modal/>
         <modifier-deck-modal/>

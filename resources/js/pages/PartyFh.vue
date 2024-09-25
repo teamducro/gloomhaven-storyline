@@ -16,9 +16,9 @@
                 @change="store"
             />
 
-            <div class="mt-4 lg:flex lg:flex-wrap">
+            <div class="mt-4 flex flex-wrap">
                 <div class="lg:flex-1">
-                    <morale-section :sheet="sheet" :loading="loading" @change="store" />
+                    <morale-section ref="morale" :sheet="sheet" :loading="loading" @change="store" />
 
                     <resources-section
                         ref="resources"
@@ -47,14 +47,17 @@
                             :loading="loading"
                             @change="store"/>
                     </div>
-                </div>
 
-                <alchemy-section
-                    class="lg:flex-1"
-                    ref="alchemy"
-                    :itemDesigns="sheet.itemDesigns"
-                    :loading="loading"
-                    @change="store"/>
+                    <transition name="fade">
+                        <div v-if="alchemist" class="mt-4 flex">
+                            <div class="hover:pointer flex flex-col items-center justify-center p-3"
+                                 @click="openBuilding(alchemist)">
+                                    <img v-if="alchemist.image()" :src="alchemist.image()" class="h-12" :alt="alchemist.name + ' ' + $t('Lvl.') + ' ' + alchemist.level"/>
+                                <span class="whitespace-nowrap">{{ alchemist.id }} {{ $t(alchemist.name) }} {{ $t('Lvl.') }} {{ alchemist.level }}</span>
+                            </div>
+                        </div>
+                    </transition>
+                </div>
             </div>
 
             <prosperity-section
@@ -207,6 +210,7 @@ import OverlayRepository from "../repositories/OverlayRepository";
 import ResourcesSection from "../components/presenters/party/ResourcesSection.vue";
 import MoraleSection from "../components/presenters/party/MoraleSection.vue";
 import CheckboxWithLabel from "../components/elements/CheckboxWithLabel.vue";
+import BuildingRepository from "../repositories/BuildingRepository";
 
 export default {
     components: {CheckboxWithLabel, MoraleSection, ResourcesSection},
@@ -224,6 +228,7 @@ export default {
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
             scenarioRepository: new ScenarioRepository,
+            buildingRepository: new BuildingRepository,
             overlayRepository: new OverlayRepository,
         }
     },
@@ -250,6 +255,7 @@ export default {
             this.loading = true;
 
             this.sheet = this.sheetRepository.make(this.appData.game);
+            this.alchemist = this.buildingRepository.findName('Alchemist');
             this.campaignName = this.getCampaignName();
 
             this.isLocalCampaign = app.campaignId === 'local';
@@ -284,6 +290,9 @@ export default {
                 const card = type + '-' + id;
                 this.$bus.$emit('open-event-card', {id: card, game: this.appData.game});
             }
+        },
+        openBuilding(building) {
+            this.$bus.$emit('open-building-card', building);
         },
         removeCard(card) {
             this.sheet[card.folder][card.id] = false;

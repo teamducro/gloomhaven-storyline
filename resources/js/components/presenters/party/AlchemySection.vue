@@ -7,7 +7,7 @@
                     <template v-for="row in chart.chart">
                         <template v-for="cell in row">
                             <span v-if="cell === ''"/>
-                            <div v-if="cell === 'any'" class="relative">
+                            <div v-else-if="cell === 'any'" class="relative">
                                 <div v-for="(resource, index) in resources">
                                     <inline-svg :src="'resources/'+resource"
                                                 class="absolute w-full left-0 transition-opacity duration-500"
@@ -26,24 +26,30 @@
             </div>
         </div>
 
-        <modal ref="brew-potion-modal" :title="$t('Brew a new potion!')">
-            <template v-slot:content>
-                <p>{{ $t('Are you sure you want to brew a potion using') + ': ' }}
-                    <span v-if="brewingItem" class="inline-flex">
-                        <template v-for="(count, resource) in brewingItem.cost">
-                            <inline-svg  v-if="resource !== 'any'" :src="'resources/'+resource"/>
-                            <span v-else-if="count === 2">{{ $t('any 2 herbs') }}</span>
-                            <span v-else-if="count === 3">{{ $t('any 3 herbs') }}</span>
-                        </template>
-                    </span>
-                </p>
-            </template>
-            <template v-slot:buttons>
-                <button type="button" class="mdc-button mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="yes" @click="unlock">
-                    <span class="mdc-button__label">{{ $t('Confirm') }}</span>
-                </button>
-            </template>
-        </modal>
+        <Teleport to="body">
+            <modal ref="brew-potion-modal" :title="$t('Brew a new potion!')">
+                <template v-slot:content>
+                    <p>{{ $t('Are you sure you want to brew a potion using') + ': ' }}
+                        <span v-if="brewingItem" class="inline-flex">
+                            <template v-for="(count, resource) in brewingItem.cost">
+                                <inline-svg  v-if="resource !== 'any'" :src="'resources/'+resource"/>
+                                <span v-else-if="count === 2">{{ $t('any 2 herbs') }}</span>
+                                <span v-else-if="count === 3">{{ $t('any 3 herbs') }}</span>
+                            </template>
+                        </span>
+                    </p>
+                </template>
+                <template v-slot:buttons>
+                    <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                        <span class="mdc-button__label">{{ $t('Cancel') }}</span>
+                    </button>
+                    <button type="button" class="mdc-button mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="yes"
+                            @click="unlock">
+                        <span class="mdc-button__label">{{ $t('Confirm') }}</span>
+                    </button>
+                </template>
+            </modal>
+        </Teleport>
     </div>
 </template>
 
@@ -54,9 +60,10 @@ import BuildingRepository from "../../../repositories/BuildingRepository";
 import ItemRepository from "../../../repositories/ItemRepository";
 import AddLinksAndIcons from "../../elements/AddLinksAndIcons.vue";
 import {shuffle} from "lodash";
+import Teleport from 'vue2-teleport';
 
 export default {
-    inject: ['appData'],
+    inject: ['appData', Teleport],
     components: {AddLinksAndIcons},
     props: {
         itemDesigns: {
@@ -115,8 +122,6 @@ export default {
                 });
                 return chart;
             })
-
-            console.log(this.charts)
         },
         cycleAnyIcon() {
             if(this.anyIndex === this.resources.length - 1) {
@@ -139,10 +144,8 @@ export default {
             if (this.brewingItem) {
                 Vue.set(this.itemDesigns, this.brewingItem._id, true);
                 this.$emit('change');
-
-                this.brewingItem = null;
             }
-        }
+        },
     }
 }
 </script>

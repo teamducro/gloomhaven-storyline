@@ -30,7 +30,7 @@ export default {
         loading: function () {
             setTimeout(() => {
                 this.invisible = this.loading;
-            }, 500);
+            }, 1000);
         },
         value: {
             handler(val) {
