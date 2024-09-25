@@ -8,6 +8,7 @@
         <donations/>
         <toast/>
         <confirm-transfer/>
+        <building-modal/>
         <item-modal/>
         <event-card/>
         <default-card-modal/>

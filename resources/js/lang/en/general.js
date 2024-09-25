@@ -325,6 +325,8 @@ export default {
     "snowthistle": "Snowthistle",
     "unfettered": "Unfettered",
     "random-item-treasure": "Random item",
+    "2 Herbs": "2 Herbs",
+    "3 Herbs": "3 Herbs",
 
     // Game Editions
     "gh": "Gloomhaven",

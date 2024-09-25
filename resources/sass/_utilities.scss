@@ -42,3 +42,9 @@ div.hover\:shadow-white:hover {
         color: $color;
     }
 }
+
+@for $i from 6 through 10 {
+    .grid-cols-#{$i} {
+        grid-template-columns: repeat($i, minmax(0, 1fr));
+    }
+}

@@ -74,22 +74,26 @@
         </autocomplete>
         <div>
             <div v-for="building in activeBuildings" :key="building.key()" class="bg-dark-gray2-60 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
-                <div class="outline-gray row-span-2 sm:col-span-2 lg:col-span-1 flex flex-col items-center justify-center p-3">
-                    <img v-if="building.image()" :src="building.image()" class="h-12" :alt="building.name + ' ' + $t('Lvl.') + ' ' + building.level">
+                <div class="hover:pointer outline-gray row-span-2 sm:col-span-2 lg:col-span-1 flex flex-col items-center justify-center p-3"
+                     @click="openCard(building)">
+                    <img v-if="building.image()" :src="building.image()" class="h-12" :alt="building.name + ' ' + $t('Lvl.') + ' ' + building.level"/>
                     <span>{{ building.id }} {{ $t(building.name) }} {{ $t('Lvl.') }} {{ building.level }}</span>
                 </div>
                 <template v-if="!building.isWrecked()">
-                    <div class="outline-gray flex flex-col items-center p-2 md:row-start-3 lg:row-start-auto" :class="{ 'row-span-2': !$t(building.passive) }">
+                    <div class="hover:pointer outline-gray flex flex-col items-center p-2 md:row-start-3 lg:row-start-auto" :class="{ 'row-span-2': !$t(building.passive) }"
+                         @click="openCard(building)">
                         <add-links-and-icons text="{OPERATIONS}" class="mb-1"/>
                         <add-links-and-icons class="inline-icons" :text="$t(building.operations) || '-'"/>
                     </div>
-                    <div class="outline-gray flex flex-col items-center p-2 md:row-start-3 lg:row-start-auto" :class="{ 'row-span-2': !$t(building.passive) }">
+                    <div class="hover:pointer outline-gray flex flex-col items-center p-2 md:row-start-3 lg:row-start-auto" :class="{ 'row-span-2': !$t(building.passive) }"
+                         @click="openCard(building)">
                         <add-links-and-icons text="{DOWNTIME}" class="mb-1"/>
                         <add-links-and-icons class="inline-icons" :text="$t(building.downtime) || '-'"/>
                     </div>
                     <add-links-and-icons v-if="$t(building.passive)" :text="$t(building.passive)" class="inline-icons outline-gray text-center sm:col-span-2 md:row-start-4 lg:row-start-2 lg:col-start-2 p-1"/>
                 </template>
-                <div v-else class="outline-gray flex flex-col items-center p-2 row-span-2 sm:col-span-2 md:row-start-3 lg:row-start-auto">
+                <div v-else class="hover:pointer outline-gray flex flex-col items-center p-2 row-span-2 sm:col-span-2 md:row-start-3 lg:row-start-auto"
+                     @click="openCard(building)">
                     <add-links-and-icons text="{WRECKED}" class="mb-1"/>
                     <add-links-and-icons class="inline-icons" :text="$t(building.wrecked) || '-'"/>
                 </div>
@@ -101,9 +105,9 @@
                             <add-links-and-icons text="{LUMBER}" class="outline-gray p-1"/>
                             <add-links-and-icons text="{METAL}" class="outline-gray p-1"/>
                             <add-links-and-icons text="{HIDE}" class="outline-gray p-1"/>
-                            <template v-for="(cost, i) in building.nextUpgradeCost.slice(0, 4)">
-                                <div :key="i" class="outline-gray text-center">{{ cost }}</div>
-                            </template>
+                            <div v-for="(cost, i) in building.nextUpgradeCost.slice(0, 4)"
+                                 :key="building.id + '-next-upgrade-cost-' + i"
+                                 class="outline-gray text-center">{{ cost }}</div>
                             <div v-if="building.nextUpgradeCost[5]" class="col-span-4">-{{ building.nextUpgradeCost[5] }} {{ $t('Morale') }}</div>
                         </div>
                         <div v-else>
@@ -119,9 +123,9 @@
                                 <add-links-and-icons text="{LUMBER}" class="outline-gray p-1"/>
                                 <add-links-and-icons text="{METAL}" class="outline-gray p-1"/>
                                 <add-links-and-icons text="{HIDE}" class="outline-gray p-1"/>
-                                <template v-for="(cost, i) in overlay.upgradeCost.slice(0, 4)">
-                                    <div :key="i" class="outline-gray text-center">{{ cost }}</div>
-                                </template>
+                                <div v-for="(cost, i) in overlay.upgradeCost.slice(0, 4)"
+                                     :key="overlay.id + '-upgrade-cost-' + i"
+                                     class="outline-gray text-center">{{ cost }}</div>
                             </div>
                         </button>
                     </div>
@@ -145,17 +149,17 @@
                             <add-links-and-icons text="{LUMBER}" class="outline-gray p-1"/>
                             <add-links-and-icons text="{METAL}" class="outline-gray p-1"/>
                             <add-links-and-icons text="{HIDE}" class="outline-gray p-1"/>
-                            <template v-for="(cost, i) in building.wreckedCost">
-                                <div :key="i" class="outline-gray text-center">{{ cost }}</div>
-                            </template>
+                            <div v-for="(cost, i) in building.wreckedCost"
+                                 :key="building.id + '-wrecked-cost-' + i"
+                                 class="outline-gray text-center">{{ cost }}</div>
                         </div>
                     </button>
                 </div>
             </div>
             <h3 v-if="availableBuildings.count()" class="mb-2">{{ $t('Available') }}</h3>
             <div v-for="building in availableBuildings" :key="building.key()" class="grid xs:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
-                <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-gray2-60">
-                    {{ building.id }} {{ $t(building.name) }} {{ $t('Lvl.') }} 0
+                <div class="outline-gray flex items-center p-3 bg-dark-gray2-60">
+                    <span>{{ building.id }} {{ $t(building.name) }} {{ $t('Lvl.') }} {{ building.level }}</span>
                 </div>
                 <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-gray2-60">
                     <button @click="upgrade(building)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !building.checkUpgradeCost(combinedResources)}">
@@ -166,9 +170,9 @@
                             <add-links-and-icons text="{METAL}" class="outline-gray p-1"/>
                             <add-links-and-icons text="{HIDE}" class="outline-gray p-1"/>
                             <add-links-and-icons text="{COINS}" class="outline-gray p-1"/>
-                            <template v-for="(cost, i) in building.nextUpgradeCost.slice(0, 5)">
-                                <div :key="i" class="outline-gray text-center">{{ cost }}</div>
-                            </template>
+                            <div v-for="(cost, i) in building.nextUpgradeCost.slice(0, 5)"
+                                 :key="building.id + '-cost-' + i"
+                                 class="outline-gray text-center">{{ cost }}</div>
                         </div>
                     </button>
                 </div>
@@ -176,8 +180,8 @@
             <h3 v-if="overlays.some(overlay => !overlay.present && overlay._name === 'Wall')" class="mb-2">{{ $t('Walls') }}</h3>
             <div v-for="overlay in overlays.filter(overlay => !overlay.present && overlay._name === 'Wall')"
                     :key="overlay.key()" class="grid xs:grid-cols-3 lg:grid-cols-5 gap-px mb-3">
-                <div class="text-gray-400 outline-gray flex items-center p-3 bg-dark-gray2-60">
-                    {{ $t(overlay.name) }} {{ overlay.id }}
+                <div class="outline-gray flex items-center p-3 bg-dark-gray2-60">
+                    <span>{{ $t(overlay.name) }} {{ overlay.id }}</span>
                 </div>
                 <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-gray2-60">
                     <button @click="toggleOverlay(overlay)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !overlay.checkBuildCost(combinedResources)}">
@@ -188,9 +192,9 @@
                             <add-links-and-icons text="{METAL}" class="outline-gray p-1"/>
                             <add-links-and-icons text="{HIDE}" class="outline-gray p-1"/>
                             <add-links-and-icons text="{COINS}" class="outline-gray p-1"/>
-                            <template v-for="(cost, i) in overlay.upgradeCost.slice(0, 5)">
-                                <div :key="i" class="outline-gray text-center">{{ cost }}</div>
-                            </template>
+                            <div v-for="(cost, i) in overlay.upgradeCost.slice(0, 5)"
+                                 :key="overlay.id + '-cost-' + i"
+                                 class="outline-gray text-center">{{ cost }}</div>
                         </div>
                     </button>
                 </div>
@@ -247,7 +251,7 @@ export default {
             return this.overlayRepository.get();
         },
         activeBuildings() {
-            return this.buildingRepository.where(b => !b.isLocked() && !b.isAvailable());
+            return this.buildingRepository.where(b => b.isActive());
         },
         availableBuildings() {
             return this.buildingRepository.whereState(BuildingState.available);
@@ -395,6 +399,9 @@ export default {
         },
         changed() {
             this.$emit('change');
+        },
+        openCard(building) {
+            this.$bus.$emit('open-building-card', building);
         }
     }
 }
