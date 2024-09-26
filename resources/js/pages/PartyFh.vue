@@ -18,7 +18,18 @@
 
             <div class="mt-4 flex flex-wrap">
                 <div class="lg:flex-1">
-                    <morale-section ref="morale" :sheet="sheet" :loading="loading" @change="store" />
+                    <div class="flex flex-col xs:flex-row flex-wrap">
+                        <morale-section ref="morale" :sheet="sheet" :loading="loading" @change="store" />
+
+                        <transition name="fade">
+                            <div v-if="alchemist" class="mt-4 xs:mt-0 xs:ml-auto flex">
+                                <div class="hover:pointer flex flex-col items-center justify-center p-3"
+                                     @click="openBuilding(alchemist)">
+                                    <img v-if="alchemist.image()" :src="alchemist.image()" class="h-24" :alt="alchemist.name + ' ' + $t('Lvl.') + ' ' + alchemist.level"/>
+                                </div>
+                            </div>
+                        </transition>
+                    </div>
 
                     <resources-section
                         ref="resources"
@@ -47,16 +58,6 @@
                             :loading="loading"
                             @change="store"/>
                     </div>
-
-                    <transition name="fade">
-                        <div v-if="alchemist" class="mt-4 flex">
-                            <div class="hover:pointer flex flex-col items-center justify-center p-3"
-                                 @click="openBuilding(alchemist)">
-                                    <img v-if="alchemist.image()" :src="alchemist.image()" class="h-12" :alt="alchemist.name + ' ' + $t('Lvl.') + ' ' + alchemist.level"/>
-                                <span class="whitespace-nowrap">{{ alchemist.id }} {{ $t(alchemist.name) }} {{ $t('Lvl.') }} {{ alchemist.level }}</span>
-                            </div>
-                        </div>
-                    </transition>
                 </div>
             </div>
 

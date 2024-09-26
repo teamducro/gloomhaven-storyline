@@ -1,6 +1,6 @@
 <template>
-    <div class="mt-4 flex flex-col sm:flex-row">
-        <div class="mb-8 sm:mb-0 sm:mr-4">
+    <div class="mt-4 inline-flex flex-col xs:flex-row">
+        <div class="mb-8 xs:mb-0 xs:mr-4">
             <div class="mb-2 flex items-center">
                 <slot name="title">
                     <h2>{{ $t('Morale') }}</h2>
