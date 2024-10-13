@@ -63,7 +63,7 @@
         "@material/textfield": "^4.0.0",
         "@material/theme": "^4.0.0",
         "@sentry/tracing": "^6.18.2",
-        "@sentry/vue": "^6.18.2",
+        "@sentry/vue": "^8.34.0",
         "@stripe/stripe-js": "^1.24.0",
         "animate.css": "^4.1.1",
         "axios": "^1.7.0",
