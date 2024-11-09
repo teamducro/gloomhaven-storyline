@@ -15,9 +15,9 @@
                                 </div>
                             </div>
                             <inline-svg  v-else-if="typeof cell === 'string'" :src="'resources/'+cell"/>
-                            <a v-else-if="isUnlocked(cell)" @click.prevent="openItem(cell)" class="relative rounded overflow-hidden cursor-pointer" href="#">
-                                <webp :src="cell.image" width="45" class="top-0 absolute max-w-none rounded item-thumbnail"
-                                      :alt="$t(cell.name)" :animate="true"/>
+                            <a v-else-if="isUnlocked(cell)" @click.prevent="openItem(cell.item)" class="relative rounded overflow-hidden cursor-pointer" href="#">
+                                <webp :src="cell.item.image" width="45" class="top-0 absolute max-w-none rounded item-thumbnail"
+                                      :alt="$t(cell.item.name)" :animate="true"/>
                             </a>
                             <a v-else @click.prevent="brew(cell)" class="cursor-pointer outline-gray rounded" href="#"/>
                         </template>
@@ -29,12 +29,19 @@
         <Teleport to="body">
             <modal ref="brew-potion-modal" :title="$t('Brew a new potion!')">
                 <template v-slot:content>
-                    <p>{{ $t('Are you sure you want to brew a potion using') + ': ' }}
-                        <span v-if="brewingItem" class="inline-flex">
-                            <template v-for="(count, resource) in brewingItem.cost">
+                    <p class="flex">{{ $t('Are you sure you want to brew a potion using') + ': ' }}
+                        <span v-if="brewingCell" class="inline-flex">
+                            <add-links-and-icons v-if="brewingCell.ingredients" :text="brewingCell.ingredients" class="inline-flex"/>
+                            <template v-if="!brewingCell.ingredients" v-for="(count, resource) in brewingCell.item.cost">
                                 <inline-svg  v-if="resource !== 'any'" :src="'resources/'+resource"/>
-                                <span v-else-if="count === 2">{{ $t('any 2 herbs') }}</span>
-                                <span v-else-if="count === 3">{{ $t('any 3 herbs') }}</span>
+                                <div v-if="resource === 'any'" class="relative">
+                                    <div v-for="(resource, index) in resources">
+                                        <inline-svg :src="'resources/'+resource"
+                                                    class="absolute w-full left-0 transition-opacity duration-500"
+                                                    :class="[index === anyIndex ? 'opacity-1' : 'opacity-0']"/>
+                                    </div>
+                                    <span class="ml-6">x {{ count }}</span>
+                                </div>
                             </template>
                         </span>
                     </p>
@@ -66,7 +73,7 @@ export default {
     inject: ['appData', Teleport],
     components: {AddLinksAndIcons},
     props: {
-        itemDesigns: {
+        sheet: {
             type: Object,
             default: {}
         },
@@ -81,7 +88,7 @@ export default {
             resources: ['flamefruit', 'corpsecap', 'axenut', 'snowthistle', 'rockroot', 'arrowvine'],
             charts: [],
             alchemist: null,
-            brewingItem: null,
+            brewingCell: null,
             buildingRepository: new BuildingRepository,
             itemRepository: new ItemRepository,
         }
@@ -115,7 +122,16 @@ export default {
                 chart.chart = chart.chart.map((row) => {
                     return row.map((cell) => {
                         if (cell !== '' && !isNaN(cell)) {
-                            return this.itemRepository.find(cell);
+                            return {
+                                item: this.itemRepository.find(cell),
+                            }
+                        } else if (typeof cell === 'string' && cell.substring(0, 1) === ':') {
+                            let recipe = chart.recipes[cell]
+                            return {
+                                recipe: cell,
+                                ingredients: recipe.ingredients,
+                                item: this.itemRepository.find(recipe.item),
+                            }
                         }
                         return cell;
                     });
@@ -130,19 +146,27 @@ export default {
                 this.anyIndex++;
             }
         },
-        isUnlocked(item) {
-            return this.itemDesigns[item._id] || false;
+        isUnlocked(cell) {
+            if (cell.recipe) {
+                return this.sheet.recipes[cell.recipe] || false;
+            }
+            else {
+                return this.sheet.itemDesigns[cell.item._id] || false;
+            }
         },
         openItem(item) {
             this.$bus.$emit('open-item', {item});
         },
-        brew(item) {
-            this.brewingItem = item;
+        brew(cell) {
+            this.brewingCell = cell;
             this.$refs['brew-potion-modal'].open();
         },
         unlock() {
-            if (this.brewingItem) {
-                Vue.set(this.itemDesigns, this.brewingItem._id, true);
+            if (this.brewingCell) {
+                if (this.brewingCell.recipe) {
+                    Vue.set(this.sheet.recipes, this.brewingCell.recipe, true);
+                }
+                Vue.set(this.sheet.itemDesigns, this.brewingCell.item._id, true);
                 this.$emit('change');
             }
         },

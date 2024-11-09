@@ -4,13 +4,39 @@
         "title": "2 Herbs",
         "chart": [
             ["", "flamefruit", "corpsecap", "axenut", "snowthistle", "rockroot", "arrowvine"],
-            ["arrowvine", 86, 87, 85, 84, 83, 98],
-            ["rockroot", 88, 89, 93, 92, 98, ""],
-            ["snowthistle", 96, 95, 97, 98, "", ""],
-            ["axenut", 90, 94, 98, "", "", ""],
-            ["corpsecap", 91, 98, "", "", "", ""],
-            ["flamefruit", 98, "", "", "", "", ""]
-        ]
+            ["arrowvine", 86, 87, 85, 84, 83, ":arrowvine-2x"],
+            ["rockroot", 88, 89, 93, 92, ":rockroot-2x", ""],
+            ["snowthistle", 96, 95, 97, ":snowthistle-2x", "", ""],
+            ["axenut", 90, 94, ":axenut-2x", "", "", ""],
+            ["corpsecap", 91, ":corpsecap-2x", "", "", "", ""],
+            ["flamefruit", ":flamefruit-2x", "", "", "", "", ""]
+        ],
+        "recipes": {
+            ":arrowvine-2x": {
+                "ingredients": "{ARROWVINE} x 2",
+                "item": 98
+            },
+            ":rockroot-2x": {
+                "ingredients": "{ROCKROOT} x 2",
+                "item": 98
+            },
+            ":snowthistle-2x": {
+                "ingredients": "{SNOWTHISTLE} x 2",
+                "item": 98
+            },
+            ":axenut-2x": {
+                "ingredients": "{AXENUT} x 2",
+                "item": 98
+            },
+            ":corpsecap-2x": {
+                "ingredients": "{CORPSECAP} x 2",
+                "item": 98
+            },
+            ":flamefruit-2x": {
+                "ingredients": "{FLAMEFRUIT} x 2",
+                "item": 98
+            }
+        }
     },
     {
         "level": 3,
