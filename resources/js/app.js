@@ -118,6 +118,10 @@ window.app = new Vue({
             get: () => this.game,
         })
 
+        Object.defineProperty(appData, "mainGame", {
+            get: () => this.mainGame,
+        })
+
         Object.defineProperty(appData, "story", {
             get: () => this.story,
         })
@@ -138,6 +142,7 @@ window.app = new Vue({
     data() {
         return {
             game: null,
+            mainGame: process.env.MIX_MAIN_GAME || Game.gh,
             story: null,
             enabledGames: {},
             scenarios: null,
@@ -276,7 +281,7 @@ window.app = new Vue({
 
             this.campaignData = store.get(this.campaignId) || {};
             this.campaignData = migrateVersion2Progress(this.campaignData);
-            this.game = store.get('game') || Game.gh;
+            this.game = store.get('game') || this.mainGame;
             if (!this.enabledGames.includes(this.game)) {
                 this.enabledGames = enableGame(this.game);
             }
@@ -320,7 +325,7 @@ window.app = new Vue({
             this.webpSupported = isWebpSupported();
             checkHasMouse(this.$bus);
             migrateVersion1Progress();
-            this.game = store.get('game') || Game.gh;
+            this.game = store.get('game') || this.mainGame;
             getFont();
             registerServiceWorker();
         }

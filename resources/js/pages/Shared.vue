@@ -6,6 +6,7 @@ import {Game} from "../models/Game";
 import GameData from "../services/GameData";
 
 export default {
+    inject: ['appData'],
     data() {
         return {
             shareState: new ShareState,
@@ -21,7 +22,7 @@ export default {
             const id = this.$route.params.id;
             const compressed = this.$route.params.storage;
             const path = this.$route.params.path || 'story';
-            const game = this.$route.params.game || Game.gh;
+            const game = this.$route.params.game || this.appData.mainGame;
 
             if (this.shareState.loadNewLink(version, id, compressed)) {
                 this.$bus.$emit('campaign-selected', id);

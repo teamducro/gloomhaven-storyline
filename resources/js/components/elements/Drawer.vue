@@ -8,7 +8,7 @@
         <aside ref="menu" class="mdc-drawer mdc-drawer--modal">
             <div class="mdc-drawer__header" style="min-height: 0;">
                 <a href="/">
-                    <webp class="w-3/4 mt-4" :alt="$t(mainGame)" :src="'/img/logos/'+mainGame+'.png'"/>
+                    <webp class="w-3/4 mt-4" :alt="$t(appData.mainGame)" :src="'/img/logos/'+appData.mainGame+'.png'"/>
                 </a>
             </div>
             <div class="mdc-drawer__content">
@@ -210,8 +210,7 @@ export default {
             showCampaignSwitch: false,
             auth: new AuthRepository(),
             gameData: new GameData(),
-            storyRepository: new StoryRepository,
-            mainGame: process.env.MIX_MAIN_GAME,
+            storyRepository: new StoryRepository
         }
     },
     mounted() {
