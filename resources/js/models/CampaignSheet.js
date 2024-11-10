@@ -47,6 +47,7 @@ class CampaignSheet {
         this.itemDesigns = {...data.itemDesigns};
         this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
         this.crossGameItems = {...data.crossGameItems};
+        this.recipes = {...data.recipes};
 
         // Characters
         this.characterUnlocks = {...data.characterUnlocks};
@@ -95,6 +96,7 @@ class CampaignSheet {
             itemDesigns: {'itemDesigns': {}},
             crossGameItemsEnabled: 'crossGameItemsEnabled',
             crossGameItems: {'crossGameItems': {}},
+            recipes: {'recipes': {}},
 
             // Characters
             characterUnlocks: {'characterUnlocks': {}},
@@ -283,6 +285,7 @@ class CampaignSheet {
         values.winterRoad = collect({...this.winterRoad}).filter(v => v).all();
         values.winterOutpost = collect({...this.winterOutpost}).filter(v => v).all();
         values.itemDesigns = collect({...this.itemDesigns}).filter(v => v).all();
+        values.recipes = collect({...this.recipes}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();
         values.characterUnlocks = collect({...this.characterUnlocks}).filter(v => v).all();
         values.characters = collect({...this.characters}).mapWithKeys(character => [character.uuid, character.id]).all();

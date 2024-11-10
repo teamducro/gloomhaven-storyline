@@ -3,7 +3,7 @@
         v-if="sheet"
         class="lg:flex-1 text-white2-87"
         ref="alchemy"
-        :itemDesigns="sheet.itemDesigns"
+        :sheet="sheet"
         @change="store"/>
 </template>
 
