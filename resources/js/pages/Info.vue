@@ -5,7 +5,8 @@
 
             <p>{{ $t('about us.text') }}</p>
             <div class="m-4">
-                <webp src="/img/minis.jpg" alt="Gloomhaven minis"/>
+                <webp v-if="mainGame === 'fh'" src="/img/fn-minis.jpg" alt="Frosthaven minis"/>
+                <webp v-else src="/img/minis.jpg" alt="Gloomhaven minis"/>
             </div>
 
             <h2 id="contribute" class="mt-8 mb-4 text-lg">{{ $t('Contributions') }}</h2>
@@ -158,7 +159,9 @@ export default {
         }
     },
     data() {
-        return {}
+        return {
+            mainGame: process.env.MIX_MAIN_GAME,
+        }
     },
     mounted() {
         const scrollTo = Object.keys(queryString.parse(location.search)).find(Boolean);

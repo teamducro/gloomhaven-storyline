@@ -4,13 +4,13 @@
         <div
             class="w-full container mx-auto mt-0 py-8 flex flex-wrap items-center justify-center md:justify-between md:px-4">
             <div class="text-center md:text-left">
-                <a class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                <a class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl flex items-center"
                    href="/">
-                    <webp class="inline" src="/img/gloomhaven-logo.png" alt="Gloomhaven" width="250" height="37"></webp>
+                    <webp class="mr-2" :src="'/img/logos/'+game+'.png'" :alt="$t(game)" width="250" height="35"></webp>
                     <span class="hidden md:inline">Storyline</span>
                 </a>
                 <p class="text-xs">
-                    Gloomhaven and all related properties and assets are owned by
+                    {{ $t(game) }} and all related properties and assets are owned by
                     <a class="link text-white" target="_blank" href="https://www.cephalofair.com">Cephalofair Games</a>
                 </p>
             </div>
@@ -47,6 +47,7 @@ export default {
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,
+            game: process.env.MIX_MAIN_GAME,
         }
     },
     mounted() {

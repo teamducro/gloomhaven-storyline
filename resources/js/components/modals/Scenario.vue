@@ -37,7 +37,7 @@
                     </div>
                 </div>
 
-                <indicators class="flex items-center xs:hidden absolute left-20 mt-1"
+                <indicators class="flex items-center xs:hidden absolute left-16 scale-75"
                             style="top: 65px" :key="'indicators-mobile-' + stateKey"
                             :scenario="scenario"/>
 

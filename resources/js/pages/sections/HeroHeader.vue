@@ -5,7 +5,7 @@
                 <!--Left Col-->
                 <div class="flex flex-col w-full md:w-1/2 md:pr-2 justify-center items-start text-center md:text-left">
                     <p class="uppercase tracking-loose w-full">Find the right scenario to play</p>
-                    <h1 class="my-4 text-5xl font-bold leading-tight">Gloomhaven Storyline Tracker</h1>
+                    <h1 class="my-4 text-5xl font-bold leading-tight">{{ game === 'fh' ? 'Frosthaven' : 'Gloomhaven' }} Storyline Tracker</h1>
                     <p class="leading-normal text-2xl mb-8">The all in one campaign tracker</p>
 
                     <div
@@ -23,7 +23,11 @@
                 </div>
                 <!--Right Col-->
                 <div class="w-full md:w-1/2 py-6 text-center md:pl-2">
-                    <webp class="w-full z-50"
+                    <webp v-if="game === 'fh'" class="w-full z-50"
+                          src="/img/frosthaven-characters.jpg"
+                          alt="Frosthaven starter characters"
+                          :lazy="false"/>
+                    <webp v-else class="w-full z-50"
                           src="/img/gloomhaven-cover.png"
                           alt="Gloomhaven starter characters"
                           :lazy="false"/>
@@ -38,6 +42,7 @@ export default {
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,
+            game: process.env.MIX_MAIN_GAME,
         }
     },
     mounted() {

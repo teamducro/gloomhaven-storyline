@@ -5,11 +5,10 @@
         <div class="px-4 w-full flex flex-wrap items-center justify-between mt-0 py-2">
 
             <div class="flex items-center w-full xs:w-auto">
-                <a class="text-white no-underline hover:no-underline mr-4 xs:mr-0 font-bold text-2xl lg:text-4xl"
+                <a class="text-white no-underline hover:no-underline mr-4 xs:mr-0 font-bold text-2xl lg:text-4xl flex items-center"
                    href="/"
                    :class="{'text-gray-50': !fixedHeader, 'text-gray-800': fixedHeader || menuVisible}">
-                    <webp class="inline" src="/img/gloomhaven-logo.png"
-                          alt="Gloomhaven" width="250" height="37" :lazy="false"></webp>
+                    <webp class="mr-2" :src="'/img/logos/'+game+'.png'" :alt="$t(game)" width="250" height="35" :lazy="false"></webp>
                     <span class="hidden sm:inline">Storyline</span>
                 </a>
 
@@ -69,6 +68,7 @@ export default {
     props: {},
     data() {
         return {
+            game: process.env.MIX_MAIN_GAME,
             appUrl: process.env.MIX_APP_URL,
             menuVisible: false,
             fixedHeader: false

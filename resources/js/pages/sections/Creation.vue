@@ -110,7 +110,9 @@
 <script>
 export default {
     data() {
-        return {}
+        return {
+            game: process.env.MIX_MAIN_GAME,
+        }
     },
     mounted() {
     },

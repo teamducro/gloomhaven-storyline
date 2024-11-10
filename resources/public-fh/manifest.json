@@ -1,0 +1,53 @@
+{
+    "name": "Frosthaven Storyline",
+    "short_name": "FH Storyline",
+    "description": "This Frosthaven Storyline Tracker enables you to register what scenarios are finished and read the story for each new unlocked scenario!",
+    "theme_color": "#3771E0",
+    "background_color": "#000000",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/tracker",
+    "start_url": "/tracker/#/story",
+    "icons": [
+        {
+            "src": "/img/icons/fh/icon-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/fh/icon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/fh/icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/fh/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/fh/icon-152x152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/fh/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/fh/title-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/fh/title-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

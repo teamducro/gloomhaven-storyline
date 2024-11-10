@@ -13,8 +13,8 @@
                 <br>
                 For game related questions, check the official
                 <a class="link"
-                   href="https://www.boardgamegeek.com/thread/1897763/official-faq-game-no-rules-questions-please">
-                    Gloomhaven FAQ
+                   :href="game === 'fh' ? 'https://cephalofairgames.github.io/frosthaven-faq/' : 'https://www.boardgamegeek.com/thread/1897763/official-faq-game-no-rules-questions-please'">
+                    {{ $t(game) }} FAQ
                 </a>.
             </p>
 
@@ -35,6 +35,7 @@ export default {
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,
+            game: process.env.MIX_MAIN_GAME,
             faq: []
         }
     },

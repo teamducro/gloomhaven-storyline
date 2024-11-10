@@ -10,12 +10,12 @@
             <div class="container max-w-5xl mx-auto">
                 <h1 class="w-full my-2 text-4xl lg:text-5xl lg:leading-tight font-bold leading-tight text-center text-gray-800">
                     Get the
-                    most out of Gloomhaven</h1>
+                    most out of {{ $t(game) }}</h1>
                 <div class="w-full mb-4">
                     <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded shadow"></div>
                 </div>
 
-                <two-column-content>
+                <two-column-content v-if="game === 'gh'">
                     <template v-slot:title>
                         <img src="/svg/icons/story.svg" alt="Storyline icon" class="mr-2"/>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
@@ -40,6 +40,33 @@
                     <template v-slot:right>
                         <webp src="/img/scenario1.jpg" class="w-full mx-auto rounded-md shadow-md"
                               alt="Gloomhaven Scenario 1"/>
+                    </template>
+                </two-column-content>
+
+                <two-column-content v-if="game === 'fh'">
+                    <template v-slot:title>
+                        <img src="/svg/icons/story.svg" alt="Storyline icon" class="mr-2"/>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Scenarios
+                        </h3>
+                    </template>
+                    <template v-slot:left>
+                        <p class="text-gray-500 mb-2">
+                            Track each scenario in the campaign.
+                        </p>
+                        <p class="text-gray-500 mb-4">
+                            Including loot, requirements, difficulty and more.
+                        </p>
+                        <p class="mb-4">
+                            <a :href="appUrl"
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                Open storyline
+                            </a>
+                        </p>
+                    </template>
+                    <template v-slot:right>
+                        <webp src="/img/fh-scenario0.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Frosthave Scenario 0"/>
                     </template>
                 </two-column-content>
 
@@ -79,7 +106,11 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <img src="/img/gloomhaven-storyline-spoilerfree.jpg"
+                        <img v-if="game === 'fh'" src="/img/frosthaven-storyline-spoilerfree.jpg"
+                             loading="lazy"
+                             class="w-full mx-auto rounded-md shadow-md"
+                             alt="Frosthaven schreenshot spoiler free"/>
+                        <img v-else src="/img/gloomhaven-storyline-spoilerfree.jpg"
                              loading="lazy"
                              class="w-full mx-auto rounded-md shadow-md"
                              alt="Gloomhaven schreenshot spoiler free"/>
@@ -96,7 +127,7 @@
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
-                            Share your progress with your party members! Easy with Gloomhaven Storyline!
+                            Share your progress with your party members! Easy with {{ $t(game) }} Storyline!
                         </p>
                         <p class="text-gray-500 mb-4">
                             You can share your progress manually, or have the app sync it automagically between you
@@ -112,7 +143,11 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <img src="/img/gloomhaven1.jpg"
+                        <img v-if="game === 'fh'" src="/img/frosthaven1.jpg"
+                             class="w-full mx-auto rounded-md shadow-md"
+                             alt="Frosthaven"
+                             loading="lazy"/>
+                        <img v-else src="/img/gloomhaven1.jpg"
                              class="w-full mx-auto rounded-md shadow-md"
                              alt="Gloomhaven"
                              loading="lazy"/>
@@ -129,7 +164,7 @@
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
-                            Gloomhaven storyline tracker features a Party Sheet!
+                            {{ $t(game) }} storyline tracker features a Party Sheet!
                         </p>
                         <p class="text-gray-500 mb-4">
                             With it, you can track party-related info like reputation, donations, prosperity and
@@ -147,7 +182,10 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <webp src="/img/gloomhaven-party-character-sheets.jpg"
+                        <webp v-if="game === 'fh'" src="/img/frosthaven-character-sheet.jpg"
+                              class="w-full mx-auto rounded-md shadow-md"
+                              alt="Frosthaven Character Sheet"/>
+                        <webp v-else src="/img/gloomhaven-party-character-sheets.jpg"
                               class="w-full mx-auto rounded-md shadow-md"
                               alt="Gloomhaven Party Sheet"/>
                     </template>
@@ -162,11 +200,11 @@
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
-                            Gloomhaven storyline tracker features an item database for
-                            all the available items in your Gloomhaven campaign.
+                            {{ $t(game) }} storyline tracker features an item database for
+                            all the available items in your {{ $t(game) }} campaign.
                         </p>
                         <p class="text-gray-500 mb-2">
-                            Items obtained in your Gloomhaven campaign can conveniently be searched and filtered
+                            Items obtained in your {{ $t(game) }} campaign can conveniently be searched and filtered
                             through. It includes all item card images.
                         </p>
                         <p class="mb-4">
@@ -177,7 +215,9 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <webp src="/img/gloomhaven-items.jpg" class="w-full mx-auto rounded-md shadow-md"
+                        <webp v-if="game === 'fh'" src="/img/frosthaven-items.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Frosthaven Items"/>
+                        <webp v-else src="/img/gloomhaven-items.jpg" class="w-full mx-auto rounded-md shadow-md"
                               alt="Gloomhaven Items"/>
                     </template>
                 </two-column-content>
@@ -191,8 +231,8 @@
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
-                            Frosthaven, Forgotten circles, Jaws of the Lion and Crimson Scales
-                            can be tracked in Gloomhaven Storyline.
+                            Gloomhaven, Forgotten circles, Jaws of the Lion and Crimson Scales
+                            can be tracked in {{ $t(game) }} Storyline.
                         </p>
                         <p class="text-gray-500 mb-2">
                             Solo scenarios of all the unlockable characters are also included!
@@ -214,7 +254,7 @@
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
                             See all of the scenarios you've played and achievements you've gained, displayed on the
-                            original Gloomhaven map!
+                            original {{ $t(game) }} map!
                         </p>
                         <p class="text-gray-500 mb-4">
                             All Global achievements and scenarios displayed on the map are clickable and the full
@@ -228,8 +268,10 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <webp src="/img/map-zoomed.jpg" class="w-full mx-auto rounded-md shadow-md"
-                              alt="Gloomhaven Scenario 1"/>
+                        <webp v-if="game === 'fh'" src="/img/fh-map-zoomed.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Frosthaven Map"/>
+                        <webp v-else src="/img/map-zoomed.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Gloomhaven Map"/>
                     </template>
                 </two-column-content>
 
@@ -243,7 +285,7 @@
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
-                            Gloomhaven Storyline includes the option to track looted chests and a filter feature to find
+                            {{ $t(game) }} Storyline includes the option to track looted chests and a filter feature to find
                             completed scenarios with chests you missed.
                         </p>
                         <p class="text-gray-500 mb-4">
@@ -258,7 +300,9 @@
                         </p>
                     </template>
                     <template v-slot:right>
-                        <webp src="/img/gloomhaven-filters.jpg" class="w-full mx-auto rounded-md shadow-md"
+                        <webp v-if="game === 'fh'" src="/img/frosthaven-filters.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Frosthaven Filters"/>
+                        <webp v-else src="/img/gloomhaven-filters.jpg" class="w-full mx-auto rounded-md shadow-md"
                               alt="Gloomhaven Filters"/>
                     </template>
                 </two-column-content>
@@ -284,7 +328,7 @@
                             All modern devices
                         </div>
                         <p class="text-gray-800 px-6">
-                            Gloomhaven Storyline supports all modern devices and browsers. Easy to use on your
+                            {{ $t(game) }} Storyline supports all modern devices and browsers. Easy to use on your
                             smartphone.
                         </p>
 
@@ -313,7 +357,7 @@
                             Multi language
                         </div>
                         <p class="text-gray-500 px-6 mb-2">
-                            Gloomhaven Storyline is available in English, French, Italian, German, Spanish, Portuguese, Hungarian, Polish and Russian.
+                            {{ $t(game) }} Storyline is available in English, French, Italian, German, Spanish, Portuguese, Hungarian, Polish and Russian.
                         </p>
 
                         <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
@@ -362,7 +406,7 @@
         <section class="container mx-auto text-center px-4 py-6 mb-12">
 
             <h1 class="w-full my-2 text-4xl lg:text-5xl lg:leading-tight font-bold leading-tight text-center text-white">
-                Enjoy Gloomhaven
+                Enjoy {{ $t(game) }}
             </h1>
 
             <h3 class="my-4 text-3xl leading-tight">An organized campaign synchronized with your party!</h3>
@@ -391,6 +435,7 @@ export default {
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,
+            game: process.env.MIX_MAIN_GAME,
         }
     },
     mounted() {

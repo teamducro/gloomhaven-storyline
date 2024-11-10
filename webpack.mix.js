@@ -3,6 +3,7 @@ const tailwindcss = require('tailwindcss');
 const md5File = require('md5-file/promise');
 const replace = require('replace-in-file');
 const dayjs = require('dayjs');
+const mainGame = process.env.MIX_MAIN_GAME || 'gh';
 
 mix.extend('i18n', new class {
         webpackRules() {
@@ -34,7 +35,7 @@ mix.i18n()
             includePaths: ['./node_modules']
         }
     })
-    .copyDirectory('resources/public', 'public')
+    .copyDirectory('resources/public-'+mainGame, 'public')
     .copyDirectory('resources/img', 'public/img')
     .copyDirectory('resources/svg', 'public/svg')
     .copyDirectory('resources/fonts', 'public/fonts')

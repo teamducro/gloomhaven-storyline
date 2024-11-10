@@ -81,8 +81,8 @@
                                 <div class="bg-white rounded-t-lg px-6 pt-12 pb-10">
                                     <div>
                                         <h3 class="flex items-center flex-col text-center text-3xl leading-9 font-semibold text-gray-900 sm:-mx-6"
-                                            id="tier-gloomhaven">
-                                            <webp class="" src="/img/gloomhaven-logo.png" alt="Gloomhaven logo"
+                                            :id="'tier-'+(game === 'fh' ? 'frosthaven' : 'gloomhaven')">
+                                            <webp class="" :src="'/img/logos/'+game+'.png'" :alt="$t(game) +' logo'"
                                                   width="250" height="37"></webp>
                                             Pro
                                         </h3>
@@ -99,7 +99,7 @@
                                 <div
                                     class="bg-gray-900 border-t-2 border-gray-50 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
                                     <ul class="-mt-4">
-                                        <li v-for="(isPro, feature) in features.gloomhaven"
+                                        <li v-for="(isPro, feature) in (game === 'fh' ? features.frosthaven : features.gloomhaven)"
                                             class="mt-4 flex items-start">
                                             <div class="flex-shrink-0">
                                                 <inline-svg src="icons/checkmark"></inline-svg>
@@ -112,10 +112,10 @@
                                     </ul>
                                     <div class="mt-10">
                                         <div class="rounded-lg shadow-md">
-                                            <purchase preselect="gh">
+                                            <purchase :preselect="game">
                                                 <a href="#"
                                                    class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring focus:ring-blue-700 transition ease-in-out duration-150"
-                                                   aria-describedby="tier-gloomhaven">
+                                                   :aria-describedby="'tier-'+$t(game)">
                                                     Buy shared campaign
                                                 </a>
                                             </purchase>
@@ -132,10 +132,12 @@
                                     <div class="bg-white px-6 py-10">
                                         <div>
                                             <h3 class="flex items-center flex-col text-center text-2xl leading-8 font-medium text-gray-900"
-                                                id="tier-frosthaven">
-                                                <webp class="" src="/img/frosthaven-logo.png" alt="Frosthaven logo"
+                                                :id="'tier-'+(game === 'fh' ? 'gloomhaven' : 'frosthaven')">
+                                                <webp v-if="game === 'fh'" class="" src="/img/logos/gh.png" alt="Gloomhaven logo"
                                                       width="250" height="37"></webp>
-                                                <span>Pro <span class="text-xs">(Beta)</span></span>
+                                                <webp v-else class="" src="/img/logos/fh.png" alt="Frosthaven logo"
+                                                      width="250" height="37"></webp>
+                                                <span>Pro</span>
                                             </h3>
                                             <div class="font-title mt-4 flex items-center justify-center">
                                                 <span
@@ -150,7 +152,7 @@
                                     <div
                                         class="bg-gray-800 flex-1 flex flex-col justify-between border-t-2 border-gray-50 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                                         <ul class="-mt-4">
-                                            <li v-for="(isPro, feature) in features.frosthaven"
+                                            <li v-for="(isPro, feature) in (game === 'fh' ? features.gloomhaven : features.frosthaven)"
                                                 class="mt-4 flex items-start">
                                                 <div class="flex-shrink-0">
                                                     <inline-svg src="icons/checkmark"></inline-svg>
@@ -163,10 +165,10 @@
                                         </ul>
                                         <div class="mt-8">
                                             <div class="rounded-lg shadow-md">
-                                                <purchase preselect="fh">
+                                                <purchase :preselect="game === 'fh' ? 'gh' : 'fh'">
                                                     <a href="#"
                                                        class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring focus:ring-blue-700 transition ease-in-out duration-150"
-                                                       aria-describedby="tier-frosthaven">
+                                                       :aria-describedby="'tier-'+(game === 'fh' ? 'gloomhaven' : 'frosthaven')">
                                                         Buy shared campaign
                                                     </a>
                                                 </purchase>
@@ -204,6 +206,7 @@ export default {
     data() {
         return {
             appUrl: process.env.MIX_APP_URL,
+            game: process.env.MIX_MAIN_GAME,
             features: {
                 free: {
                     'Manual sharing': false,

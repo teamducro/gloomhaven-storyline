@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta name="description"
+          content="This Frosthaven Storyline Tracker enables you to register what scenarios are finished and read the story for each new unlocked scenario!">
+    <meta name="keywords"
+          content="Frosthaven,Gloomhaven,forgotten circles,jaws of the lion,storyline tracker,storyline,party sheet,road event,city event,treasures,scenario">
+    <meta name="author" content="Daniël Ducro">
+
+    <title>Frosthaven storyline</title>
+
+    <link rel="preload" href="/fonts/Nyala-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/PirataOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/img/logos/fh.webp" as="image">
+    <link rel="preload" href="/img/frosthaven-characters.webp" as="image">
+
+    <link href="/css/website-theme.css" rel="stylesheet">
+    <link href="/css/website.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Google Analytics -->
+<!--    <script src="/js/gtm.js" rel="script"></script>-->
+</head>
+<body>
+<div class="gradient fixed top-0 left-0 w-screen h-screen"></div>
+<div id="app" class="relative" v-cloak>
+    <top-menu></top-menu>
+
+    <router-view></router-view>
+
+    <site-footer></site-footer>
+</div>
+<script src="/js/website.js" rel="script"></script>
+</body>
+</html>
