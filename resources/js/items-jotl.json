@@ -73,7 +73,7 @@
         "id": 8,
         "name": "Throwing Hammer",
         "count": 2,
-        "cost": 35,
+        "cost": 30,
         "slot": "One Hand",
         "source": "Reward from Scenario #2",
         "desc": "During your ranged attack, add {STUN} to a single attack",
