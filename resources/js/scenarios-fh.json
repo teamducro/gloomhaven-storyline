@@ -384,6 +384,13 @@
             },
             "chapter_id": 2,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "sled"
+                    ]
+                }
+            ],
             "treasures": [
                 46,
                 71
@@ -800,6 +807,13 @@
             },
             "chapter_id": 3,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "links_to": [
                 33
             ],
@@ -1594,6 +1608,7 @@
             "required_by": [
                 {
                     "complete": [
+                        "boat",
                         "calendar"
                     ]
                 }
@@ -1785,6 +1800,13 @@
             },
             "chapter_id": 4,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "links_to": [
                 57
             ],
@@ -1834,6 +1856,7 @@
             "required_by": [
                 {
                     "complete": [
+                        "boat",
                         "calendar"
                     ]
                 }
@@ -1876,6 +1899,7 @@
             "required_by": [
                 {
                     "complete": [
+                        "boat",
                         "calendar"
                     ]
                 }
@@ -1989,6 +2013,13 @@
             },
             "chapter_id": 3,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "links_to": [
                 60
             ],
@@ -2236,13 +2267,6 @@
                     ]
                 }
             ],
-            "required_by": [
-                {
-                    "complete": [
-                        "rope"
-                    ]
-                }
-            ],
             "rewards": [
                 "Gain 2 morale",
                 "Gain 2 prosperity",
@@ -2274,6 +2298,13 @@
             },
             "chapter_id": 3,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "linked_from": [
                 53,
                 54
@@ -2861,7 +2892,7 @@
             "required_by": [
                 {
                     "complete": [
-                        "rope"
+                        "boat"
                     ]
                 }
             ],
@@ -2909,6 +2940,13 @@
             },
             "chapter_id": 107,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "linked_from": [
                 75,
                 76
@@ -2941,6 +2979,13 @@
             "is_side": true,
             "chapter_id": 111,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
+                    ]
+                }
+            ],
             "treasures": [
                 58,
                 13
@@ -2969,6 +3014,13 @@
             "is_side": true,
             "chapter_id": 111,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "sled"
+                    ]
+                }
+            ],
             "treasures": [
                 8
             ],
@@ -3107,6 +3159,13 @@
             "is_side": true,
             "chapter_id": 111,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "rewards": [
                 "Gain “Giant Piranha Pig Spine” (Item 202)"
             ],
@@ -4754,6 +4813,13 @@
             "is_side": true,
             "chapter_id": 111,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "rope"
+                    ]
+                }
+            ],
             "links_to": [
                 133
             ],
