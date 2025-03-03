@@ -64,7 +64,7 @@ export default {
     "Completed": "Complété",
     "Conclusion": "Conclusion",
     "Deck": "Deck",
-    "Draw": "Piger",
+    "Draw": "Piocher",
     "Envelope X solution": "Envelope X solution",
     "Envelope": "Enveloppe",
     "Gained from": "Gagné depuis",
