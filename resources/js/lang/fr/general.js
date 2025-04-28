@@ -366,7 +366,7 @@ export default {
     "Hide personal quests": "Masquer les quêtes personnelles",
     "Show personal quest": "Afficher la quête personnelle",
     "Random Scenarios": "Scénarios Aléatoires",
-    "Sealed": "Enveloppes",
+    "Sealed": "Scellés",
     "Road Events": "Evènements de Route",
     "City Events": "Evènements de Ville",
     "Diviner": "Diviner",
