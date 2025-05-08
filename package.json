@@ -99,6 +99,6 @@
         "vue-social-sharing": "^3.0.9",
         "vue2-teleport": "^1.1.4",
         "vuedraggable": "^2.24.3",
-        "webpack": "^5.76.0"
+        "webpack": "^5.95.0"
     }
 }
