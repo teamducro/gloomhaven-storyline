@@ -41,7 +41,7 @@ export default {
     "Blocked": "Zárolva",
     "Buy me a Beer": "Buy me a Beer!",
     "Cancel": "Mégse",
-    "character-limit-message": "Dew to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
+    "character-limit-message": "Due to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
     "Choose a scenario to unlock": "Válassz egy új helyszínt",
     "Scenario level": "Scenario level",
     "Recommended scenario level": "Recommended scenario level",
