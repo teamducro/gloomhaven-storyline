@@ -59,12 +59,14 @@
                                 <template v-else>
                                     <template v-for="gameId in Object.keys(sheet.crossGameItems)" v-if="Object.keys(sheet.crossGameItems[gameId]).length !== 0">
                                         <h2 class="ml-2">{{ $t(gameId) + ' ' + $t('Items') }}</h2>
-                                        <ul class="flex">
-                                            <li v-for="code in Object.keys(sheet.crossGameItems[gameId])">
-                                                <checkbox-with-label :id="gameId+code"
-                                                                    :label="$t(code)"
-                                                                    :checked.sync="sheet.crossGameItems[gameId][code]"
-                                                                    @change="refreshItems();store()"/>
+                                        <ul class="flex flex-row flex-wrap">
+                                            <li v-for="code in Object.keys(sheet.crossGameItems[gameId])"
+                                                class="flex items-center">
+                                                <checkbox group="items"
+                                                          :checked.sync="sheet.crossGameItems[gameId][code]"
+                                                          :id="gameId+code"
+                                                          @change="refreshItems();store()"/>
+                                                <span class="w-8 font-title">{{ code }}</span>
                                             </li>
                                         </ul>
                                     </template>

@@ -79,6 +79,7 @@ export default {
 
             // Items available through building upgrades
             let itemRewards = {
+                // Craftsman
                 34: {
                     1: Helpers.makeArrayWithNumbers(10, 1), // 1 - 10
                     2: Helpers.makeArrayWithNumbers(5, 11), // 10 - 15
@@ -90,17 +91,20 @@ export default {
                     8: Helpers.makeArrayWithNumbers(5, 41), // 40 - 45
                     9: Helpers.makeArrayWithNumbers(5, 46), // 45 - 50
                 },
+                // Trading Post
                 37: {
                     1: Helpers.makeArrayWithNumbers(9, 120), // 120 - 128
                     2: Helpers.makeArrayWithNumbers(9, 129), // 129 - 137
                     3: Helpers.makeArrayWithNumbers(9, 138), // 138 - 146
                     4: Helpers.makeArrayWithNumbers(9, 147), // 147 - 155
                 },
+                // Jeweler
                 39: {
                     1: Helpers.makeArrayWithNumbers(4, 156), // 156 - 159
                     2: Helpers.makeArrayWithNumbers(4, 160), // 160 - 163
                     3: Helpers.makeArrayWithNumbers(4, 164), // 164 - 167
                 },
+                // Stables
                 88: {
                     1: [247],
                 },
@@ -123,6 +127,35 @@ export default {
             // Sorted because FH is the only game where the unlockedItems aren't strictly at the end.
             // .slice(3) is because the unlockedItems are passed with 'fh-' prepended.
             return _.uniq(availableItems.concat(unlockedItems).sort((a, b) => +a.slice(3) - b.slice(3)));
+        },
+        calculateCrossGhItems(buildingRepository) {
+            // Initially available items
+            let availableItems = [10, 25, 72, 105, 109, 116];
+
+            // Items available through building upgrades
+            let itemRewards = {
+                // Trading Post
+                37: {
+                    2: [21, 37, 53, 93, 94, 106, 115],
+                    3: [46, 83, 84, 85, 86, 87, 88, 102, 110, 111, 120, 121, 122, 123, 126, 128],
+                    4: [17, 35, 47, 51, 62, 74, 77, 78, 79, 80, 81, 82, 117, 118, 119, 127, 129, 131]
+                },
+                // Enhancer
+                44: {
+                    1: [153, 159, 161],
+                    4: [154, 155, 157, 163]
+                }
+            };
+
+            for (let [buldingId, levelUnlocks] of Object.entries(itemRewards)) {
+                for (let [minLevel, itemUnlocks] of Object.entries(levelUnlocks)) {
+                    if (buildingRepository.find(buldingId)?.level >= minLevel) {
+                        availableItems.push(...itemUnlocks);
+                    }
+                }
+            }
+
+            return availableItems.sort();
         },
         calculateItemsJotl(unlockedItems, scenarioRepository) {
             let shopItems = [];

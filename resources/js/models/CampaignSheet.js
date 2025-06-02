@@ -2,7 +2,9 @@ import Storable from './Storable'
 import Character from "./Character";
 import Helpers from "../services/Helpers";
 import CharacterRepository from "../repositories/CharacterRepository";
+import BuildingRepository from "../repositories/BuildingRepository";
 import Versionable from "./Versionable";
+import SheetCalculations from "../services/SheetCalculations";
 
 class CampaignSheet {
     static make(game) {
@@ -57,6 +59,7 @@ class CampaignSheet {
 
         this.game = data.game;
         this.characterRepository = new CharacterRepository();
+        this.buildingRepository = new BuildingRepository();
 
         this.fieldsToStore = {
             version: 'version',
@@ -229,16 +232,9 @@ class CampaignSheet {
 
     resetCrossGameItems() {
         this.crossGameItems = {
-            'gh': {
-                10: false,
-                25: false,
-                72: false,
-                105: false,
-                109: false,
-                116: false,
-            },
-            'jotl': {},
-            'cs': {}
+            gh: {},
+            jotl: {},
+            cs: {}
         }
     }
 
@@ -261,6 +257,12 @@ class CampaignSheet {
                 });
             });
         }
+
+        // Fill cross game items from unlocked buildings
+        SheetCalculations.methods.calculateCrossGhItems(this.buildingRepository)
+            .forEach((itemId) => {
+                this.crossGameItems.gh[itemId] = this.crossGameItems.gh[itemId] || false;
+            });
     }
 
     removeInvalid(list, maxId) {
