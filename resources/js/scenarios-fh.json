@@ -392,7 +392,6 @@
                 }
             ],
             "treasures": [
-                46,
                 71
             ],
             "links_to": [
@@ -4094,6 +4093,9 @@
             "is_side": true,
             "chapter_id": 109,
             "complexity": 1,
+            "treasures": [
+                25
+            ],
             "rewards": [
                 "Gain 15 experience each"
             ],
