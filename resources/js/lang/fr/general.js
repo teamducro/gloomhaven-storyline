@@ -41,7 +41,7 @@ export default {
     "Blocked": "Bloqué",
     "Buy me a Beer": "Offrez-moi une bière!",
     "Cancel": "Annuler",
-    "character-limit-message": "Dew to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
+    "character-limit-message": "Due to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
     "Choose a scenario to unlock": "Choisissez un scénario à débloquer",
     "Scenario level": "Scenario level",
     "Recommended scenario level": "Recommended scenario level",
