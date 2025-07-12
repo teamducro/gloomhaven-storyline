@@ -120,7 +120,7 @@ export default {
     "gh-527": {
         "name": "Fanatyk boga krwi",
         "progress": [
-            "20 razy doprowadź do swojego wyczerpania."
+            "12 razy doprowadź do swojego wyczerpania."
         ]
     },
     "gh-528": {
