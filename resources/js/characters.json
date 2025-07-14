@@ -6286,13 +6286,13 @@
                     "count": 1,
                     "cards": [
                         {
-                            "count": 1,
+                            "count": 2,
                             "attackModifier": {
                                 "type": "plus0"
                             }
                         },
                         {
-                            "count": 1,
+                            "count": 2,
                             "attackModifier": {
                                 "type": "plus0_pierce3_rolling"
                             }
@@ -6305,13 +6305,13 @@
                     "count": 1,
                     "cards": [
                         {
-                            "count": 1,
+                            "count": 2,
                             "attackModifier": {
                                 "type": "plus0"
                             }
                         },
                         {
-                            "count": 1,
+                            "count": 2,
                             "attackModifier": {
                                 "type": "plus0_push2_rolling"
                             }

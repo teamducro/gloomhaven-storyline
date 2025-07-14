@@ -3882,6 +3882,9 @@
             },
             "chapter_id": 109,
             "complexity": 2,
+            "treasures": [
+                68
+            ],
             "linked_from": [
                 105
             ],
@@ -3966,8 +3969,7 @@
             "chapter_id": 109,
             "complexity": 2,
             "treasures": [
-                3,
-                68
+                3
             ],
             "rewards": [
                 "Gain 2 morale",
