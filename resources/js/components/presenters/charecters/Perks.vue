@@ -3,13 +3,12 @@
         <h2 class="mb-2">{{ $t('Perks') }}</h2>
         <div class="mb-4">
             <div class="flex" v-for="(perkDescription, perkIndex) in character.perkDescriptions">
-                <div v-for="(perk, index) in perks[perkIndex]"
-                          v-if="index < perkDescription.count"
-                          :key="'perk-'+perkIndex+'-'+index"
-                          class="checkbox-groups">
-                    <checkbox v-for="i in perkDescription.size"
-                          :key="i" group="perks"
-                          :id="'perk-'+perkIndex+'-'+index+'-'+i"
+                <div :key="'perk-'+perkIndex"
+                     :class="{'checkbox-groups': perkDescription.linked}">
+                    <checkbox v-for="(perk, index) in perks[perkIndex]"
+                              v-if="index < perkDescription.count"
+                          :key="index" group="perks"
+                          :id="'perk-'+perkIndex+'-'+index"
                           :checked="perks[perkIndex][index]"
                           @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
                 </div>
@@ -105,15 +104,21 @@ export default {
 .checkbox-groups {
     display: flex;
     padding: 12px;
-}
-.checkbox-groups .mdc-checkbox {
-    margin: -12px;
-}
-.checkbox-groups .mdc-checkbox:not(:first-child) ::v-deep .mdc-checkbox__background {
-    border-left-color: transparent;
-}
-.checkbox-groups .mdc-checkbox:not(:last-child) ::v-deep .mdc-checkbox__background {
-    border-right-style: dotted;
+    .mdc-checkbox {
+        padding: 0;
+        ::v-deep .mdc-checkbox__background, ::v-deep .mdc-checkbox__native-control {
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+        }
+        &:not(:first-child) ::v-deep .mdc-checkbox__background {
+            border-left-style: dotted;
+        }
+        &:not(:last-child) ::v-deep .mdc-checkbox__background {
+            border-right-style: dotted;
+        }
+    }
 }
 
 </style>

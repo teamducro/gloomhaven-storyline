@@ -6388,7 +6388,8 @@
                 {
                     "type": "add",
                     "desc": "Whenever you long rest, you may move one of your character tokens backward one slot",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked": true,
                     "cards": [
                         {
                             "count": 1,
@@ -6762,7 +6763,8 @@
                 {
                     "type": "add",
                     "desc": "Once each scenario, during your turn, gain {SHIELD.fh}2 for the round",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked":  true,
                     "cards": [
                         {
                             "count": 1,
@@ -7109,7 +7111,8 @@
                 {
                     "type": "add",
                     "desc": "At the start of each scenario, you may play a level 1 card from your hand to perform a summon action of the card",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked":  true,
                     "cards": [
                         {
                             "count": 1,
@@ -7304,7 +7307,8 @@
                 {
                     "type": "add",
                     "desc": "Whenever you perform an action with a lost icon, you may discard one card to {RECOVER.fh} one card from your discard pile of equal or lower level",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked":  true,
                     "cards": [
                         {
                             "count": 1,
@@ -7466,7 +7470,8 @@
                 {
                     "type": "add",
                     "desc": "Ignore item {-1} effects. Whenever you become exhausted, keep all your active bonuses in play, with your summons acting on initiative 99 each round",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked":  true,
                     "cards": [
                         {
                             "count": 1,
@@ -7681,7 +7686,8 @@
                 {
                     "type": "add",
                     "desc": "You and all allies are unaffected by hazardous terrain you create",
-                    "count": 0.3,
+                    "count": 3,
+                    "linked":true,
                     "cards": [
                         {
                             "count": 1,
@@ -7831,7 +7837,8 @@
                 {
                     "type": "add",
                     "desc": "Whenever you short rest, you may {WIND_X} to perform {STRENGTHEN.fh}, {RANGE.fh}3 and {LIGHT_X} to perform {BLESS.fh}, {RANGE.fh}3",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked":  true,
                     "cards": [
                         {
                             "count": 1,
@@ -8223,7 +8230,8 @@
                 {
                     "type": "add",
                     "desc": "Increase your maximum hit point value by 5",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked":  true,
                     "cards": [
                         {
                             "count": 1,
@@ -8367,7 +8375,8 @@
                 {
                     "type": "add",
                     "desc": "Whenever you short rest, you may {ICE_X} to perform {REGENERATE.fh}, {RANGE.fh}3 and {WIND_X} tp perform {WARD.fh}, {RANGE.fh}3",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked":  true,
                     "cards": [
                         {
                             "count": 1,
@@ -8380,7 +8389,8 @@
                 {
                     "type": "add",
                     "desc": "At the start of each scenario, all enemies gain {MUDDLE.fh}. Whenever a new room is revealed, all enemies in the newly revealed room gain {MUDDLE.fh}",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked":  true,
                     "cards": [
                         {
                             "count": 1,
@@ -8576,7 +8586,8 @@
                 {
                     "type": "add",
                     "desc": "Once each scenario, when you would suffer {DAMAGE.fh}, you may negate the {DAMAGE.fh}",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked":  true,
                     "cards": [
                         {
                             "count": 1,
@@ -8714,7 +8725,8 @@
                 {
                     "type": "add",
                     "desc": "Whenever you long rest, you may do so on any initiative value, choosing your initiative after all ability cards have been revealed, and you decide how your summons perform their abilities for the round",
-                    "count": 0.5,
+                    "count": 2,
+                    "linked":  true,
                     "cards": [
                         {
                             "count": 1,
@@ -8916,7 +8928,8 @@
                 {
                     "type": "add",
                     "desc": "Once each scenario, when you would become exhausted, instead gain {BRITTLE.fh} and {INVISIBLE.fh}, lose all your cards, {RECOVER.fh} four lost cards, and then discard the recovered cards",
-                    "count": 0.3,
+                    "count": 3,
+                    "linked": true,
                     "cards": [
                         {
                             "count": 1,
@@ -9125,7 +9138,8 @@
                 {
                     "type": "add",
                     "desc": "While you have {INVISIBLE.fh}, gain advantage on all your attacks",
-                    "count": 0.3,
+                    "count": 3,
+                    "linked": true,
                     "cards": [
                         {
                             "count": 1,
@@ -9290,7 +9304,8 @@
                 {
                     "type": "add",
                     "desc": "Gain advantage on all your attacks performed while occupying or targeting enemies occupying water hexes",
-                    "count": 0.3,
+                    "count": 3,
+                    "linked": true,
                     "cards": [
                         {
                             "count": 1,
