@@ -24,14 +24,14 @@
                 {
                     "count": 1,
                     "attackModifier": {
-                        "type": "minus20"
-                    },
-                    "effects": [
-                        {
-                            "type": "resource",
-                            "value": "any"
-                        }
-                    ]
+                        "type": "minus20",
+                        "effects": [
+                            {
+                                "type": "resource",
+                                "value": "any"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -59,14 +59,14 @@
                 {
                     "count": 1,
                     "attackModifier": {
-                        "type": "minus20"
-                    },
-                    "effects": [
-                        {
-                            "type": "resource",
-                            "value": "any2"
-                        }
-                    ]
+                        "type": "minus20",
+                        "effects": [
+                            {
+                                "type": "resource",
+                                "value": "any2"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -136,6 +136,7 @@
                     "rolling": true,
                     "attackModifier": {
                         "type": "plus10",
+                        "rolling": true,
                         "effects": [
                             {
                                 "type": "advantage",

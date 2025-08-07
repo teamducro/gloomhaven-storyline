@@ -20,19 +20,6 @@
                 <div class="md:flex-1">
                     <div class="xs:grid xs:grid-cols-3">
                         <morale-section ref="morale" :sheet="sheet" :loading="loading" @change="store" />
-
-                        <transition name="fade">
-                            <div v-if="alchemist" class="xs:mt-4 xs:mt-0">
-                                <div class="hover:pointer relative xs:flex xs:flex-col xs:items-center xs:justify-center"
-                                     @click="openBuilding(alchemist)">
-                                    <img v-if="alchemist.image()" :src="alchemist.image()" class="h-24" :alt="alchemist.name + ' ' + $t('Lvl.') + ' ' + alchemist.level"/>
-                                    <button type="button"
-                                            class="absolute top-0 ml-16 mdc-icon-button mdc-button--raised material-icons p-2 !bg-black2-50 rounded-full transform transition-transform">
-                                        add
-                                    </button>
-                                </div>
-                            </div>
-                        </transition>
                     </div>
 
                     <resources-section
@@ -62,12 +49,23 @@
                             :loading="loading"
                             @change="store"/>
                     </div>
+
+                    <alchemy-section
+                        class="lg:flex-1 text-white2-87"
+                        ref="alchemy"
+                        :sheet="sheet"
+                        @change="store"/>
                 </div>
 
-                <town-guard-perks :checks.sync="sheet.checks"
+                <div class="mt-4 md:flex-1 flex flex-col">
+                    <town-guard-perks :checks.sync="sheet.checks"
                                   :perks.sync="sheet.perks"
                                   :sheet="sheet"
                                   @change="store"/>
+
+                    <town-guard-modifier-deck :perks="sheet.perks"
+                                              :perkDescriptions="sheet.perkDescriptions"/>
+                </div>
             </div>
 
             <prosperity-section

@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-4 md:flex-1">
+    <div>
         <h2 class="mb-2 md:ml-2">{{ $t('Town Guard Perks') }}</h2>
         <div class="flex flex-wrap max-w-xs">
             <template v-for="groupIndex in [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42]">

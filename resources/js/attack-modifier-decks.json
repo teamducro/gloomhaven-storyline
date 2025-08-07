@@ -414,5 +414,28 @@
         "plus0_pushpull2_rolling",
         "plus0_suffer1trap",
         "plus2_immobilize"
+    ],
+    "town-guard": [
+        "minus10",
+        "minus20",
+        "minus20_any",
+        "minus20_any2",
+        "plus0",
+        "plus0_hide_rolling",
+        "plus0_lumber_rolling",
+        "plus0_metal_rolling",
+        "plus10",
+        "plus10_advantage_rolling",
+        "plus10_rolling",
+        "plus10_shield_rolling",
+        "plus20",
+        "plus20_shield",
+        "plus30",
+        "plus30_shield",
+        "plus50_1",
+        "plus50_2",
+        "plus50_3",
+        "success",
+        "wreck"
     ]
 }
