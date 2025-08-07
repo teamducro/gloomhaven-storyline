@@ -17,15 +17,19 @@
             />
 
             <div class="mt-4 flex flex-wrap">
-                <div class="lg:flex-1">
-                    <div class="flex flex-col xs:flex-row flex-wrap">
+                <div class="md:flex-1">
+                    <div class="xs:grid xs:grid-cols-3">
                         <morale-section ref="morale" :sheet="sheet" :loading="loading" @change="store" />
 
                         <transition name="fade">
-                            <div v-if="alchemist" class="mt-4 xs:mt-0 xs:ml-auto flex">
-                                <div class="hover:pointer flex flex-col items-center justify-center p-3"
+                            <div v-if="alchemist" class="xs:mt-4 xs:mt-0">
+                                <div class="hover:pointer relative xs:flex xs:flex-col xs:items-center xs:justify-center"
                                      @click="openBuilding(alchemist)">
                                     <img v-if="alchemist.image()" :src="alchemist.image()" class="h-24" :alt="alchemist.name + ' ' + $t('Lvl.') + ' ' + alchemist.level"/>
+                                    <button type="button"
+                                            class="absolute top-0 ml-16 mdc-icon-button mdc-button--raised material-icons p-2 !bg-black2-50 rounded-full transform transition-transform">
+                                        add
+                                    </button>
                                 </div>
                             </div>
                         </transition>
@@ -37,7 +41,7 @@
                         :loading="loading"
                         @change="store"/>
 
-                    <div class="mt-4 inline-grid grid-cols-2 xs:grid-cols-3 gap-4">
+                    <div class="mt-4 grid grid-cols-2 xs:grid-cols-3 gap-4">
                         <counter-section
                             ref="inspiration"
                             :title="$t('Inspiration')"
@@ -59,6 +63,11 @@
                             @change="store"/>
                     </div>
                 </div>
+
+                <town-guard-perks :checks.sync="sheet.checks"
+                                  :perks.sync="sheet.perks"
+                                  :sheet="sheet"
+                                  @change="store"/>
             </div>
 
             <prosperity-section
@@ -208,13 +217,9 @@ import SheetCalculations from "../services/SheetCalculations";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import OverlayRepository from "../repositories/OverlayRepository";
-import ResourcesSection from "../components/presenters/party/ResourcesSection.vue";
-import MoraleSection from "../components/presenters/party/MoraleSection.vue";
-import CheckboxWithLabel from "../components/elements/CheckboxWithLabel.vue";
 import BuildingRepository from "../repositories/BuildingRepository";
 
 export default {
-    components: {CheckboxWithLabel, MoraleSection, ResourcesSection},
     mixins: [GetCampaignName, SheetCalculations],
     inject: ['appData'],
     data() {
@@ -226,6 +231,7 @@ export default {
             isLocalCampaign: true,
             renderX: 0,
             showOtherSeasonEvents: false,
+            alchemist: null,
             storySyncer: new StorySyncer,
             sheetRepository: new SheetRepository,
             scenarioRepository: new ScenarioRepository,

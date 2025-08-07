@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-4 inline-grid grid-cols-2 xs:grid-cols-3 gap-4">
+    <div class="mt-4 grid grid-cols-2 xs:grid-cols-3 gap-4">
         <counter-section
             ref="lumber"
             :title="'{LUMBER}' + $t('Lumber')"

@@ -18,7 +18,7 @@ class ModifierCard {
 
         let code = this.type;
         this.effects.forEach(effect => {
-            if (['element', 'condition'].includes(effect.type)) {
+            if (['element', 'condition', 'resource'].includes(effect.type)) {
                 code += '_' + effect.value;
             } else {
                 code += '_' + effect.type + effect.value;
