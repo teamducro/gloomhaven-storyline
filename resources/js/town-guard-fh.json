@@ -1,0 +1,237 @@
+{
+    "perks": [
+        {
+            "type": "replace",
+            "desc": "Replace one {-10_WHITE} card with one {+30_WHITE} card and one {-20_WHITE} “Gain any one material resource” card.",
+            "count": 2,
+            "sections": [
+                19.2,
+                178.3
+            ],
+            "cards": [
+                {
+                    "count": 1,
+                    "attackModifier": {
+                        "type": "minus10"
+                    }
+                },
+                {
+                    "count": 1,
+                    "attackModifier": {
+                        "type": "plus30"
+                    }
+                },
+                {
+                    "count": 1,
+                    "attackModifier": {
+                        "type": "minus20",
+                        "effects": [
+                            {
+                                "type": "resource",
+                                "value": "any"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "replace",
+            "desc": "Replace two {+10_WHITE} cards with two {+30_WHITE} cards and one {-20_WHITE} “Gain any two material resources” card.",
+            "count": 2,
+            "sections": [
+                17.2,
+                166.4
+            ],
+            "cards": [
+                {
+                    "count": 2,
+                    "attackModifier": {
+                        "type": "plus10"
+                    }
+                },
+                {
+                    "count": 2,
+                    "attackModifier": {
+                        "type": "plus30"
+                    }
+                },
+                {
+                    "count": 1,
+                    "attackModifier": {
+                        "type": "minus20",
+                        "effects": [
+                            {
+                                "type": "resource",
+                                "value": "any2"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "replace",
+            "desc": "Replace one {-10_WHITE} card with one {+10_WHITE} card.",
+            "count": 2,
+            "sections": [
+                151.3,
+                194.3
+            ],
+            "cards": [
+                {
+                    "count": 1,
+                    "attackModifier": {
+                        "type": "minus10"
+                    }
+                },
+                {
+                    "count": 1,
+                    "attackModifier": {
+                        "type": "plus10"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "replace",
+            "desc": "Replace two {+0_WHITE} cards with one {+10_WHITE} card.",
+            "count": 2,
+            "sections": [
+                91.4,
+                157.3
+            ],
+            "cards": [
+                {
+                    "count": 2,
+                    "attackModifier": {
+                        "type": "plus0"
+                    }
+                },
+                {
+                    "count": 1,
+                    "attackModifier": {
+                        "type": "plus10"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "replace",
+            "desc": "Replace two {+10_WHITE} cards with two {AGAIN}{+10_WHITE} “Gain Advantage on this target” cards.",
+            "count": 2,
+            "sections": [
+                130.3,
+                104.1
+            ],
+            "cards": [
+                {
+                    "count": 2,
+                    "attackModifier": {
+                        "type": "plus10"
+                    }
+                },
+                {
+                    "count": 2,
+                    "rolling": true,
+                    "attackModifier": {
+                        "type": "plus10",
+                        "rolling": true,
+                        "effects": [
+                            {
+                                "type": "advantage",
+                                "value": ""
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "add",
+            "desc": "Add one {+30_WHITE} card.",
+            "count": 2,
+            "sections": [
+                167.2,
+                175.1
+            ],
+            "cards": [
+                {
+                    "count": 1,
+                    "attackModifier": {
+                        "type": "plus30"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "add",
+            "desc": "Add two {AGAIN}{+0_WHITE} “Gain one Hide” cards.",
+            "count": 1,
+            "sections": [
+                180.3
+            ],
+            "cards": [
+                {
+                    "count": 2,
+                    "attackModifier": {
+                        "rolling": true,
+                        "type": "plus0",
+                        "effects": [
+                            {
+                                "type": "resource",
+                                "value": "hide"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "add",
+            "desc": "Add two {AGAIN}{+0_WHITE} “Gain one Lumber” cards.",
+            "count": 1,
+            "sections": [
+                41.1
+            ],
+            "cards": [
+                {
+                    "count": 2,
+                    "attackModifier": {
+                        "rolling": true,
+                        "type": "plus0",
+                        "effects": [
+                            {
+                                "type": "resource",
+                                "value": "lumber"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "add",
+            "desc": "Add two {AGAIN}{+0_WHITE} “Gain one Metal” cards.",
+            "count": 1,
+            "sections": [
+                192.1
+            ],
+            "cards": [
+                {
+                    "count": 2,
+                    "attackModifier": {
+                        "rolling": true,
+                        "type": "plus0",
+                        "effects": [
+                            {
+                                "type": "resource",
+                                "value": "metal"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

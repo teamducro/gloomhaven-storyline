@@ -106,14 +106,6 @@ class Character {
                     })
                 });
 
-                if (perk.count === 0.5) {
-                    perk.size = 2;
-                } else if (perk.count === 0.3) {
-                    perk.size = 3;
-                } else {
-                    perk.size = 1;
-                }
-
                 return perk;
             });
         }

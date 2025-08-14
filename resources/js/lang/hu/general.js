@@ -321,6 +321,8 @@ export default {
     "snowthistle": "Snowthistle",
     "unfettered": "Unfettered",
     "random-item-treasure": "Véletlenszerű felszerelés",
+    "2 Herbs": "2 Herbs",
+    "3 Herbs": "3 Herbs",
     "gh": "Homályrév",
     "fh": "Frosthaven",
     "Frosthaven": "Frosthaven",

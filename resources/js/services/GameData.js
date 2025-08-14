@@ -23,6 +23,7 @@ import abilitiesCsJson from '../abilities-cs.json'
 import abilitiesFhJson from '../abilities-fh.json'
 import charactersJson from '../characters.json'
 import attackModifierDecksJson from '../attack-modifier-decks.json'
+import townGuardFhJson from '../town-guard-fh.json'
 import alchemyFhJson from '../alchemy-fh.json'
 import {Game} from "../models/Game";
 
@@ -168,12 +169,12 @@ export default class GameData {
         return attackModifierDecksJson
     }
 
-    alchemyId(game) {
+    townGuard(game) {
         switch (game) {
             case Game.fh:
-                return 35
+                return townGuardFhJson
             default:
-                return null;
+                return {};
         }
     }
 

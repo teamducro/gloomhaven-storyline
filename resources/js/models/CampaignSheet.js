@@ -1,10 +1,13 @@
 import Storable from './Storable'
 import Character from "./Character";
+import GameData from "../services/GameData";
 import Helpers from "../services/Helpers";
 import CharacterRepository from "../repositories/CharacterRepository";
 import BuildingRepository from "../repositories/BuildingRepository";
 import Versionable from "./Versionable";
 import SheetCalculations from "../services/SheetCalculations";
+import ModifierCard from "./ModifierCard";
+import UsesTranslations from "./UsesTranslations";
 
 class CampaignSheet {
     static make(game) {
@@ -30,6 +33,7 @@ class CampaignSheet {
         };
         this.checks = {...data.checks};
         this.perks = {...data.perks};
+        this.perkDescriptions = [];
         this.morale = data.morale || 0;
         this.resources = data.resources || {};
         this.soldiers = data.soldiers || 0;
@@ -57,9 +61,11 @@ class CampaignSheet {
         this.archivedCharacters = {...data.archivedCharacters};
         this.c = data.hidePersonalQuests || false;
 
+        this.translationKey = '';
         this.game = data.game;
-        this.characterRepository = new CharacterRepository();
-        this.buildingRepository = new BuildingRepository();
+        this.characterRepository = new CharacterRepository;
+        this.buildingRepository = new BuildingRepository;
+        this.gameData = new GameData;
 
         this.fieldsToStore = {
             version: 'version',
@@ -117,6 +123,26 @@ class CampaignSheet {
 
     new() {
         // Nothing to set up...
+    }
+
+    readGameData() {
+        const data = this.gameData.townGuard(this.game);
+
+        this.perkDescriptions = data.perks.map((perk) => {
+            perk.cards = perk.cards?.map((card) => {
+                if (card instanceof ModifierCard) {
+                    return card;
+                }
+
+                return new ModifierCard({
+                    path: 'town-guard',
+                    count: card.count,
+                    ...card.attackModifier
+                })
+            });
+
+            return perk;
+        });
     }
 
     fillBlanksFH() {
@@ -183,6 +209,14 @@ class CampaignSheet {
         }
 
         this.itemDesigns = this.removeInvalid(this.itemDesigns, 264);
+
+        this.perkDescriptions.forEach((perk, index) => {
+            perk.desc = this.$tPrefix('town_guard_perks.' + index);
+            for (let i = 0; i < perk.count; i++) {
+                this.perks[index] = this.perks[index] || [];
+                this.perks[index][i] = this.perks[index][i] || false;
+            }
+        })
     }
 
     fillCharacterUnlocks() {
@@ -272,6 +306,8 @@ class CampaignSheet {
     read() {
         this.parentRead();
 
+        this.translationKey = 'campaign_sheet.' + this.game;
+        this.readGameData();
         this.fillBlanksFH();
         this.fillCharacterUnlocks();
         this.fillRelations();
@@ -331,6 +367,7 @@ Object.assign(CampaignSheet.prototype, {
     parentStore: Storable.store,
 });
 
+Object.assign(CampaignSheet.prototype, UsesTranslations);
 Object.assign(CampaignSheet.prototype, Versionable);
 
 export default CampaignSheet;

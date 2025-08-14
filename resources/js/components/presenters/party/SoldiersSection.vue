@@ -9,11 +9,13 @@
         </div>
         <div class="flex flex-col">
             <div v-for="(soldiers, lvl) in soldiersPerLvl" class="flex items-center">
-                <span class="font-title mr-1 inline-block w-2">{{ lvl + 1 }}</span>
-                <checkbox v-for="s in soldiers" style="transform: scale(0.7)" class="-m-1"
-                          :key="'soldier-'+s" :id="'s-'+s" group="soldiers"
-                          :checked="sheet.soldiers >= s"
-                          @change="changed"/>
+                <span class="font-title inline-block w-2">{{ lvl + 1 }}</span>
+                <div class="flex flex-row flex-wrap">
+                    <checkbox v-for="s in soldiers" style="transform: scale(0.7)" class="-m-1"
+                              :key="'soldier-'+s" :id="'s-'+s" group="soldiers"
+                              :checked="sheet.soldiers >= s"
+                              @change="changed"/>
+                </div>
             </div>
         </div>
     </div>

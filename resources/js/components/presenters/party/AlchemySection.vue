@@ -67,11 +67,11 @@ import BuildingRepository from "../../../repositories/BuildingRepository";
 import ItemRepository from "../../../repositories/ItemRepository";
 import AddLinksAndIcons from "../../elements/AddLinksAndIcons.vue";
 import {shuffle} from "lodash";
-import Teleport from 'vue2-teleport';
+import Teleport from "vue2-teleport";
 
 export default {
-    inject: ['appData', Teleport],
-    components: {AddLinksAndIcons},
+    inject: ['appData'],
+    components: {AddLinksAndIcons, Teleport},
     props: {
         sheet: {
             type: Object,

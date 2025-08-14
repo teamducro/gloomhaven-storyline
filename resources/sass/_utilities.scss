@@ -43,8 +43,20 @@ div.hover\:shadow-white:hover {
     }
 }
 
-@for $i from 6 through 10 {
+@for $i from 1 through 10 {
     .grid-cols-#{$i} {
         grid-template-columns: repeat($i, minmax(0, 1fr));
+    }
+}
+
+@for $i from 1 through 10 {
+    .grid-rows-#{$i} {
+        grid-template-rows: repeat($i, minmax(0, 1fr));
+    }
+}
+
+@for $i from 1 through 6 {
+    .col-span-#{$i} {
+        grid-column: span $i;
     }
 }

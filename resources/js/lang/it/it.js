@@ -7,7 +7,10 @@ import treasures from "./treasures"
 import personal_quests from "./personal_quests"
 import characters from "./characters"
 import prompts from "./prompts"
-import abilities from "../en/abilities";
+import abilities from "./abilities"
+import buildings from "./buildings"
+import overlays from "./overlays"
+import campaign_sheet from "./campaign_sheet"
 
 export default {
     ...general,
@@ -35,5 +38,14 @@ export default {
     },
     "abilities": {
         ...abilities
+    },
+    "buildings": {
+        ...buildings
+    },
+    "overlays": {
+        ...overlays
+    },
+    "campaign_sheet": {
+        ...campaign_sheet
     }
 }

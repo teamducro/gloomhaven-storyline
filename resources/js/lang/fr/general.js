@@ -132,7 +132,7 @@ export default {
         "upgrade": "Are you sure you want to permanently remove this character? Pro users may retire a character without removing it permanently."
     },
     "remove-character": {
-        "text": "Êtes-vous sûr de vouloir supprimer définitivement ce personnage ?",
+        "text": "Êtes-vous sûr de vouloir supprimer définitivement ce personnage ?"
     },
     "reset": {
         "text": "Voulez-vous vraiment supprimer toutes les données de scénario?"
@@ -143,7 +143,7 @@ export default {
         "following_free": "Les parties suivantes sont gratuites avec votre licence de campagne partagée.",
         "expand_title": {
             "gh": "Débloquer Gloomhaven pour une nouvelle aventure",
-            "fh": "Débloquer Frosthaven pour une nouvelle aventure",
+            "fh": "Débloquer Frosthaven pour une nouvelle aventure"
         },
         "expand_text": {
             "gh": "Vous avez sélectionné Gloomhaven mais vous n'y avez pas accès.",
@@ -321,6 +321,8 @@ export default {
     "snowthistle": "Chardoneige",
     "unfettered": "Unfettered",
     "random-item-treasure": "Random item",
+    "2 Herbs": "2 Herbs",
+    "3 Herbs": "3 Herbs",
     "gh": "Gloomhaven",
     "fh": "Frosthaven",
     "Frosthaven": "Frosthaven",

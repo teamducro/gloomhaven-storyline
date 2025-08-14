@@ -10,6 +10,7 @@ import prompts from "./prompts"
 import abilities from "./abilities"
 import buildings from "./buildings"
 import overlays from "./overlays"
+import campaign_sheet from "./campaign_sheet"
 
 export default {
     ...general,
@@ -44,4 +45,7 @@ export default {
     "overlays": {
         ...overlays
     },
+    "campaign_sheet": {
+        ...campaign_sheet
+    }
 }

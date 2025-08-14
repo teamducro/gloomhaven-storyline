@@ -89,6 +89,8 @@ export default {
         addIcons(text) {
             if (text.includes('{')) {
                 collect({
+                    '{BOOK}': '<inline-svg src="icons/book"/>',
+
                     // Ability Enhancements
                     '{SHIELD}': this.$t('Shield') + ' <webp src="/img/icons/general/shield.png" width="20" class="inline"/>',
                     '{HEAL}': this.$t('Heal') + ' <webp src="/img/icons/general/heal.png" width="20" class="inline"/>',
@@ -240,6 +242,8 @@ export default {
                     '{TIDE_ICON}': '<webp src="/img/icons/status/tide.png" width="20" class="inline" alt="' + this.$t('Tide') + '"/>',
 
                     // Damage Modifiers
+                    '{-20_WHITE}': '<webp src="/img/icons/perks/-20_white.png" width="20" class="inline"/>',
+                    '{-10_WHITE}': '<webp src="/img/icons/perks/-10_white.png" width="20" class="inline"/>',
                     '{-2_WHITE}': '<webp src="/img/icons/perks/-2_white.png" width="20" class="inline"/>',
                     '{-1_WHITE}': '<webp src="/img/icons/perks/-1_white.png" width="20" class="inline"/>',
                     '{+0_WHITE}': '<webp src="/img/icons/perks/+0_white.png" width="20" class="inline"/>',
@@ -247,6 +251,9 @@ export default {
                     '{+2_WHITE}': '<webp src="/img/icons/perks/+2_white.png" width="20" class="inline"/>',
                     '{+3_WHITE}': '<webp src="/img/icons/perks/+3_white.png" width="20" class="inline"/>',
                     '{+4_WHITE}': '<webp src="/img/icons/perks/+4_white.png" width="20" class="inline"/>',
+                    '{+10_WHITE}': '<webp src="/img/icons/perks/+10_white.png" width="20" class="inline"/>',
+                    '{+20_WHITE}': '<webp src="/img/icons/perks/+20_white.png" width="20" class="inline"/>',
+                    '{+30_WHITE}': '<webp src="/img/icons/perks/+30_white.png" width="20" class="inline"/>',
                     '{+X_WHITE}': '<webp src="/img/icons/perks/+x_white.png" width="20" class="inline"/>',
                     '{2X_WHITE}': '<webp src="/img/icons/perks/2x_white.png" width="20" class="inline"/>',
                     '{AGAIN}': '<webp src="/img/icons/perks/again_white.png" width="20" class="inline"/>',

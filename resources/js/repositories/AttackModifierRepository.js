@@ -19,6 +19,16 @@ export default class AttackModifierRepository {
         return collect(baseCards.concat(characterCards)).keyBy('code');
     }
 
+    getTownGuardModifiers() {
+        const cards = (this.gameData.attackModifierDeck()["town-guard"] || [])
+            .map(code => {
+                const path = "town-guard";
+                return new ModifierCard({code, path});
+            })
+
+        return collect(cards).keyBy('code');
+    }
+
     get gameData() {
         return this._gameData || (this._gameData = new GameData());
     }
