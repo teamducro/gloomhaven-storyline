@@ -147,6 +147,7 @@ export default {
                 {version: '3.17', description: 'Added Boat/Sled/Rope requirements to scenarios', date: dayjs('2024-01-13')},
                 {version: '3.19', description: 'Added Scenario level / Difficulty', date: dayjs('2024-07-19')},
                 {version: '3.20', description: 'Alchemy chart and building cards', date: dayjs('2024-09-26')},
+                {version: '3.21', description: 'Added Town Guard Perks to Frosthaven campaign sheet', date: dayjs('2025-08-14')},
             ].reverse()
         }
     },
