@@ -395,6 +395,9 @@ export default {
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "Die Szenariozahlen im Text sind nur zur Erinnerung, sie werden nicht freigeschaltet.",
     "Level up when youre back in town": "Steige eine Stufe auf, wenn du nach Gloomhaven zurückkehrst.",
     "Add {x} {-1} to your attack modifier deck.": "Füge {x} {-1} zu deinem Angriffsmodifikator-Deck hinzu.",
+    "Attack Modifier Deck": "Attack Modifier Deck",
+    "Town Guard Perks": "Town Guard Perks",
+    "Town Guard Deck": "Town Guard Deck",
     "card_types": {
         "R": "Weg-Ereignis",
         "C": "Stadt-Ereignis",

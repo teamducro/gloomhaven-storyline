@@ -1,6 +1,6 @@
 <template>
     <div>
-        <modal ref="modal" title="Attack modifier deck">
+        <modal ref="modal" :title="title">
             <div v-if="deck" slot="content" class="w-full h-full flex flex-col outline-none">
                 <ul class="grid grid-cols-2 xs:grid-cols-3 gap-4 mt-2">
                     <li v-for="(card, i) in deck" class="relative">
@@ -20,18 +20,20 @@
 export default {
     data() {
         return {
-            deck: null
+            deck: null,
+            title: ''
         }
     },
     mounted() {
-        this.$bus.$on('open-modifier-deck', (deck) => {
-            this.open(deck);
+        this.$bus.$on('open-modifier-deck', (args) => {
+            this.open(args);
         });
         this.$bus.$on('close-modifier-deck', this.close);
     },
     methods: {
-        async open(deck) {
-            this.deck = deck;
+        async open(args) {
+            this.title = args.title;
+            this.deck = args.deck;
             this.$refs['modal'].open();
         },
         close() {

@@ -403,6 +403,9 @@ export default {
     "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
     "Level up when youre back in town": "Level up when you're back in town!",
     "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
+    "Attack Modifier Deck": "Attack Modifier Deck",
+    "Town Guard Perks": "Town Guard Perks",
+    "Town Guard Deck": "Town Guard Deck",
     "card_types": {
         "R": "Road Event",
         "C": "City Event",

@@ -4,7 +4,8 @@
                    :perk-descriptions="perkDescriptions"
                    :available-cards="availableCards"
                    :default-deck="defaultDeck"
-                   :back-image="backImage"/>
+                   :back-image="backImage"
+                   :title="$t('Attack Modifier Deck')"/>
 </template>
 
 <script>

@@ -3,7 +3,8 @@
                    :perk-descriptions="perkDescriptions"
                    :available-cards="availableCards"
                    :default-deck="defaultDeck"
-                   :back-image="backImage"/>
+                   :back-image="backImage"
+                   :title="$t('Town Guard Deck')"/>
 </template>
 
 <script>
