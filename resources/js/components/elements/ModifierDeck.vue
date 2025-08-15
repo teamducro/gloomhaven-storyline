@@ -13,6 +13,7 @@ export default {
         perks: Object,
         perkDescriptions: Array,
         backImage: String,
+        title: String,
         defaultDeck: Object,
         availableCards: Collection
     },
@@ -71,7 +72,7 @@ export default {
     },
     methods: {
         open() {
-            this.$bus.$emit('open-modifier-deck', this.deck);
+            this.$bus.$emit('open-modifier-deck', {title: this.title, deck: this.deck});
         },
         addCard(deck, card) {
             deck[card.code] = (deck[card.code] || 0) + (card.count || 1);
