@@ -1207,7 +1207,8 @@
         "cost": 25,
         "slot": "Head",
         "source": "Initially Available",
-        "desc": "During your turn, perform {ANY_X}: {ANY}"
+        "desc": "During your turn, perform {ANY_X}: {ANY}",
+        "spent": true
     },
     {
         "id": 122,
