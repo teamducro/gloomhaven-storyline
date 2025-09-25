@@ -826,18 +826,18 @@ export default {
             "Dodaj do odpowiednich talii wydarzenie miejskie 83 oraz na szlaku 83"
         ]
     },
-    "fc-200": {
+    "fc-116": {
+        "name": "Zapowiedź nieuniknionego",
+        "rewards": [
+            "„Misa Przepowiedni” (przedmiot 164)"
+        ]
+    },
+    "fc-117": {
         "name": "Wieża do gwiazd",
         "rewards": [
             "Po 15 szt. złota dla każdego",
             "Po 1 ✔ dla każdego",
             "Wszystkie postacie mogą dodać jedną nową kartę ze swojej klasy do aktywnej puli kart. Wybrana karta musi być na poziomie mniejszym lub równym poziomowi postaci minus 2"
-        ]
-    },
-    "fc-201": {
-        "name": "Zapowiedź nieuniknionego",
-        "rewards": [
-            "„Misa Przepowiedni” (przedmiot 164)"
         ]
     },
     "jotl-1": {

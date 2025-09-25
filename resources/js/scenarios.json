@@ -4820,7 +4820,23 @@
             ]
         },
         {
-            "id": 200,
+            "id": 116,
+            "game": "fc",
+            "name": "Forecast of the Inevitable",
+            "solo": "DR",
+            "pages": [
+                "fc/1/25",
+                "fc/2/11",
+                "fc/2/25",
+                "fc/2/30",
+                "fc/2/27"
+            ],
+            "rewards": [
+                "“Basin of Prophecy” (Item 164)"
+            ]
+        },
+        {
+            "id": 117,
             "game": "fc",
             "name": "Tower to the Stars",
             "coordinates": {
@@ -4838,26 +4854,11 @@
             "treasures": [
                 89
             ],
+            "is_side": true,
             "rewards": [
                 "15 gold each",
                 "1 ✓ each",
                 "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
-            ]
-        },
-        {
-            "id": 201,
-            "game": "fc",
-            "name": "Forecast of the Inevitable",
-            "solo": "DR",
-            "pages": [
-                "fc/1/25",
-                "fc/2/11",
-                "fc/2/25",
-                "fc/2/30",
-                "fc/2/27"
-            ],
-            "rewards": [
-                "“Basin of Prophecy” (Item 164)"
             ]
         }
     ],
