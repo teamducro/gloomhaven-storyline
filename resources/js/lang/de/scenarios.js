@@ -826,18 +826,18 @@ export default {
             "Fügt Stadt- und Weg-Ereignis 83 den entsprechenden Decks hinzu."
         ]
     },
-    "fc-200": {
+    "fc-116": {
+        "name": "Vorhersage des Unvermeidlichen",
+        "rewards": [
+            "“Wahrsagebecken” (Gegenstand 164)"
+        ]
+    },
+    "fc-117": {
         "name": "Turm zu den Sternen",
         "rewards": [
             "je 15 Gold",
             "je 1 ✓",
             "Alle Charaktere können eine neue Karte ihrer Klasse zu ihrem aktiven Kartenpool hinzufügen. Die gewählte Karte muss eine Stufe haben, die gleich oder kleiner als die Stufe des Charakters minus 2 ist."
-        ]
-    },
-    "fc-201": {
-        "name": "Vorhersage des Unvermeidlichen",
-        "rewards": [
-            "“Wahrsagebecken” (Gegenstand 164)"
         ]
     },
     "jotl-1": {

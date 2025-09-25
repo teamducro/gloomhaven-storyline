@@ -828,18 +828,18 @@ export default {
             "Añade los Eventos de ciudad y camino 83 a sus mazos"
         ]
     },
-    "fc-200": {
+    "fc-116": {
+        "name": "Una visión de lo inevitable",
+        "rewards": [
+            "“Cuenco de profecía” (Objeto 164)"
+        ]
+    },
+    "fc-117": {
         "name": "Torre a las estrellas",
         "rewards": [
             "15 de oro para cada personaje",
             "1 ✓ para cada personaje",
             "Todos los personajes pueden añadir una nueva carta de su clase a su reserva de cartas activas. La carta seleccionada debe tener un nivel igual o inferior al nivel del personaje menos 2."
-        ]
-    },
-    "fc-201": {
-        "name": "Una visión de lo inevitable",
-        "rewards": [
-            "“Cuenco de profecía” (Objeto 164)"
         ]
     },
     "jotl-1": {

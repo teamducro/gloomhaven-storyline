@@ -826,18 +826,18 @@ export default {
             "Adicionem os Eventos de Cidade e Estrada 83 to their respective decks"
         ]
     },
-    "fc-200": {
+    "fc-116": {
+        "name": "Forecast of the Inevitable",
+        "rewards": [
+            "“Basin of Prophecy” (Item 164)"
+        ]
+    },
+    "fc-117": {
         "name": "Tower to the Stars",
         "rewards": [
             "15 moedas de ouro para cada personagem",
             "1 ✓ each",
             "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
-        ]
-    },
-    "fc-201": {
-        "name": "Forecast of the Inevitable",
-        "rewards": [
-            "“Basin of Prophecy” (Item 164)"
         ]
     },
     "jotl-1": {
