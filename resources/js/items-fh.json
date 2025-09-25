@@ -893,7 +893,7 @@
         "id": 90,
         "name": "Muscle Potion",
         "count": 2,
-        "resources": { "rockroot": 1, "flamefruit": 1 },
+        "resources": { "axenut": 1, "flamefruit": 1 },
         "slot": "Small Item",
         "source": "Alchemy",
         "desc": "During your turn, perform {STRENGTHEN.fh} self",
