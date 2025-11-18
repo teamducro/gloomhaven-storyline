@@ -1356,7 +1356,8 @@
             ],
             "rewards": [
                 "Gain 3 collective {LUMBER}",
-                "Gain 3 collective {METAL}"
+                "Gain 3 collective {METAL}",
+                "Gain “Converging Lenses” (Item 67) blueprint"
             ],
             "loot": {
                 "coins": 9,
@@ -1402,7 +1403,8 @@
             ],
             "rewards": [
                 "Gain 3 collective {LUMBER}",
-                "Gain 3 collective {METAL}"
+                "Gain 3 collective {METAL}",
+                "Gain “Converging Lenses” (Item 67) blueprint"
             ],
             "loot": {
                 "coins": 10,
