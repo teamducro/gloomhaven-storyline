@@ -39,7 +39,7 @@
         "@kazupon/vue-i18n-loader": "^0.5.0",
         "autoprefixer": "^10.4.2",
         "cross-env": "^7.0.3",
-        "cypress": "^5.6.0",
+        "cypress": "^11.2.0",
         "laravel-mix": "^6.0.43",
         "laravel-mix-purgecss": "^6.0.0",
         "lodash": "^4.17.21",

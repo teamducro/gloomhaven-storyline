@@ -90,12 +90,12 @@ describe('Character', () => {
         utilities.openCharacter();
 
         for (let i = 0; i <= 9; i++) {
-            cy.get(`#perk-${i}-0-1`).click();
+            cy.get(`#perk-${i}-0`).click({scrollBehavior: false});
         }
 
         utilities.scrollTo('60%');
-        cy.get('#open-modifier-deck').click();
-        cy.contains('Attack modifier deck');
+        cy.get('#open-modifier-deck').click({scrollBehavior: false});
+        cy.contains('Attack Modifier Deck');
 
         utilities.assertCount('.mdc-dialog__content ul.grid li', 12);
     });
@@ -104,13 +104,11 @@ describe('Character', () => {
         cy.visit('/tracker/#/characters');
 
         utilities.openCharacter();
-        utilities.scrollTo('60%');
 
         for (let i = 1; i <= 3; i++) {
-            cy.get(`#check${i}`).click();
+            cy.get(`#check${i}`).click({scrollBehavior: false});
         }
         cy.contains('You may select an additional perk!');
-
     });
 
     it('It can\'t add more items then there is stock', () => {
@@ -169,7 +167,7 @@ describe('Character', () => {
         utilities.openCharacter();
         utilities.scrollTo('60%');
 
-        cy.get('button').contains('Draw').click();
+        cy.get('button').contains('Draw').click({scrollBehavior: false});
 
         cy.get(`input[name="personal-quests"]`).should('not.exist');
     });
@@ -180,10 +178,10 @@ describe('Character', () => {
         utilities.openCharacter();
         utilities.scrollTo('60%');
 
-        cy.get(`input[name="personal-quests"]`).click();
-        cy.get('li').contains('#510 Seeker of Xorn').click();
+        cy.get(`input[name="personal-quests"]`).click({scrollBehavior: false});
+        cy.get('li').contains('#510 Seeker of Xorn').click({scrollBehavior: false});
 
-        cy.get('img[alt="Seeker of Xorn"]').click();
+        cy.get('img[alt="Seeker of Xorn"]').click({scrollBehavior: false});
         cy.get('h2').contains('Personal Quest #510');
     });
 
@@ -205,11 +203,11 @@ describe('Character', () => {
 
         cy.get('p').contains(message).should('exist');
 
-        cy.get('#perk-8-0-1').click({force: true});
+        cy.get('#perk-8-0').click({force: true});
 
         cy.get('p').contains(message).should('exist');
 
-        cy.get('#perk-9-0-1').click();
+        cy.get('#perk-9-0').click({force: true});
 
         cy.get('p').contains(message).should('not.exist');
     });
@@ -222,12 +220,12 @@ describe('Character', () => {
         cy.get('input[aria-labelledby="level"]').clear({force: true}).type('2{enter}');
         cy.get('input[aria-labelledby="xp"]').clear({force: true}).type('50{enter}');
         cy.get('input[aria-labelledby="gold"]').clear({force: true}).type('50{enter}');
-        cy.get('#perk-0-0-1').click({force: true});
+        cy.get('#perk-0-0').click({force: true});
         cy.get('input[name="items"]').click();
         cy.get('li').contains('Boots of Striding').click();
         utilities.closeModel();
         utilities.scrollTo('60%');
-        cy.get('#check1').click();
+        cy.get('#check1').click({force: true});
         cy.get('#notes').type('Foo Bar');
         utilities.closeModel();
         cy.get(`input[name="personal-quests"]`).click();
@@ -242,7 +240,7 @@ describe('Character', () => {
         cy.get('input[aria-labelledby="xp"]').should('have.value', '50');
         cy.get('input[aria-labelledby="gold"]').should('have.value', '50');
         cy.get('#check1').should('be.checked');
-        cy.get('#perk-0-0-1').should('be.checked');
+        cy.get('#perk-0-0').should('be.checked');
         cy.get('#notes').should('have.value', 'Foo Bar');
         cy.get('h3').contains('#510 Seeker of Xorn');
         cy.get('#pq-0-0').should('be.checked');
@@ -258,7 +256,7 @@ describe('Character', () => {
             cy.get('input[aria-labelledby="level"]').should('be.disabled');
             cy.get('input[aria-labelledby="xp"]').should('be.disabled');
             cy.get('input[aria-labelledby="gold"]').should('be.disabled');
-            cy.get('#perk-0-0-1').should('be.disabled');
+            cy.get('#perk-0-0').should('be.disabled');
             cy.get('input[name="items"]').should('be.disabled');
             cy.get('#notes').should('be.disabled');
             cy.get('input[aria-labelledby="personal-quests"]').should('be.disabled');
