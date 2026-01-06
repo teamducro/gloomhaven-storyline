@@ -68,7 +68,7 @@ export default {
     },
     computed: {
         perkCount() {
-            return Object.entries(this.perks).reduce((sum, [i, perk]) => sum + this.character.perkDescriptions[i].size * perk.filter(Boolean).length, 0);
+            return Object.values(this.perks).flatMap(perk => perk.filter(Boolean)).length;
         },
         minimalPerks() {
             return (this.character.retirements || 0)
