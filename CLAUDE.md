@@ -26,9 +26,10 @@ npm run prod-fh    # production build for Frosthaven
 
 ### Testing
 ```bash
-npm test           # opens Cypress test runner
+npm test           # opens Cypress test runner (interactive)
+npx cypress run --spec cypress/e2e/tracker/storyline.cy.js  # run single test headlessly
 ```
-Tests in `cypress/integration/`. Cypress configured for `https://gloomhaven-storyline.test/`.
+Tests in `cypress/e2e/`. Cypress configured for `https://gloomhaven-storyline.test/`.
 
 ### Utilities
 ```bash
@@ -157,4 +158,4 @@ Game selection via `MIX_MAIN_GAME` env var (gh/fh/jotl/fc/cs):
 2. Complete scenarios via flowchart UI
 3. Validator runs automatically on state change
 4. Check console for validation logs
-5. Cypress tests in `cypress/integration/storyline.spec.js`
+5. Cypress tests in `cypress/e2e/tracker/storyline.cy.js`
