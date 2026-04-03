@@ -87,7 +87,7 @@
 
         <checkbox-with-label id="hide-personal-quests"
                              class="my-2"
-                             :label="$t('Hide personal quests')"
+                             :label="$t('Hide personal quests from others')"
                              :checked.sync="sheet.hidePersonalQuests"
                              @change="store"/>
 

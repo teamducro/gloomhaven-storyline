@@ -365,7 +365,7 @@ export default {
     "Solo Scenarios": "Solo Scenarios",
     "Personal Quests": "Quêtes Personnelles",
     "Personal Quest": "Quête Personnelle",
-    "Hide personal quests": "Masquer les quêtes personnelles",
+    "Hide personal quests from others": "Masquer les quêtes personnelles aux autres",
     "Show personal quest": "Afficher la quête personnelle",
     "Random Scenarios": "Scénarios Aléatoires",
     "Sealed": "Scellés",

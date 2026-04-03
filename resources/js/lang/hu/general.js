@@ -365,7 +365,7 @@ export default {
     "Solo Scenarios": "Solo Scenarios",
     "Personal Quests": "Életcélok",
     "Personal Quest": "Életcél",
-    "Hide personal quests": "Életcél elrejtése",
+    "Hide personal quests from others": "Életcél elrejtése másoktól",
     "Show personal quest": "Show personal quest",
     "Random Scenarios": "Véletlenszerű küldetés",
     "Sealed": "Lezárva",

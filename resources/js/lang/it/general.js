@@ -365,7 +365,7 @@ export default {
     "Solo Scenarios": "Scenari in Solo",
     "Personal Quests": "Missioni Personali",
     "Personal Quest": "Missione Personale",
-    "Hide personal quests": "Nascondi missione personale",
+    "Hide personal quests from others": "Nascondi missioni personali agli altri",
     "Show personal quest": "Mostra missione personale",
     "Random Scenarios": "Scenari casuali",
     "Sealed": "Sigillati",

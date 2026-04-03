@@ -365,7 +365,7 @@ export default {
     "Solo Scenarios": "Solo-Szenarien",
     "Personal Quests": "Persönliche Ziele",
     "Personal Quest": "Persönliches Ziel",
-    "Hide personal quests": "Persönliche Ziele ausblenden",
+    "Hide personal quests from others": "Persönliche Ziele vor anderen ausblenden",
     "Show personal quest": "Persönliches Ziel anzeigen",
     "Random Scenarios": "Zufällige Szenarien",
     "Sealed": "Versiegelt",

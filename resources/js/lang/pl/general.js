@@ -364,7 +364,7 @@ export default {
     "Solo Scenarios": "Scenariusze dla jednego gracza",
     "Personal Quests": "Cele życiowe",
     "Personal Quest": "Cel życiowy",
-    "Hide personal quests": "Hide personal quests",
+    "Hide personal quests from others": "Hide personal quests from others",
     "Show personal quest": "Show personal quest",
     "Random Scenarios": "Losowe scenariusze",
     "Sealed": "Zapieczętowane",

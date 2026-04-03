@@ -365,7 +365,7 @@ export default {
     "Solo Scenarios": "Solo Scenarios",
     "Personal Quests": "Personal Quests",
     "Personal Quest": "Personal Quest",
-    "Hide personal quests": "Hide personal quests",
+    "Hide personal quests from others": "Hide personal quests from others",
     "Show personal quest": "Show personal quest",
     "Random Scenarios": "Random Scenarios",
     "Sealed": "Sealed",
