@@ -254,6 +254,8 @@ export default {
     "Expires": "Caduca",
     "Renew": "Renovar",
     "Extend": "Extender",
+    "Shared campaigns": "Campañas compartidas",
+    "Buy new campaign": "Comprar nueva campaña",
     "Edit": "Editar",
     "Unlink": "Desconectar",
     "Restore Purchase": "Restaurar compra",

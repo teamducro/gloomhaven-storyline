@@ -254,6 +254,8 @@ export default {
     "Expires": "Lejár",
     "Renew": "Megújít",
     "Extend": "Kibővít",
+    "Shared campaigns": "Megosztott kampányok",
+    "Buy new campaign": "Új kampány vásárlása",
     "Edit": "Szerkesztés",
     "Unlink": "Unlink",
     "Restore Purchase": "Restore Purchase",

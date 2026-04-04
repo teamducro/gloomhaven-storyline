@@ -254,6 +254,8 @@ export default {
     "Expires": "Expires",
     "Renew": "Обновить",
     "Extend": "Расширить",
+    "Shared campaigns": "Общие кампании",
+    "Buy new campaign": "Купить новую кампанию",
     "Edit": "Изменить",
     "Unlink": "Unlink",
     "Restore Purchase": "Восстановить покупку",

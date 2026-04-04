@@ -258,6 +258,8 @@ export default {
     "Expires": "Expires",
     "Renew": "Renew",
     "Extend": "Extend",
+    "Shared campaigns": "Shared campaigns",
+    "Buy new campaign": "Buy new campaign",
     "Edit": "Edit",
     "Unlink": "Unlink",
     "Restore Purchase": "Restore Purchase",
