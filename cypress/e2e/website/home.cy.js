@@ -15,7 +15,7 @@ describe('Home', () => {
     it('It opens the storyline app', () => {
         cy.visit('/');
 
-        cy.get('a').contains('Open storyline').click();
+        cy.get('a').contains('Open storyline').click({ scrollBehavior: 'center' });
         cy.url().should('include', '/tracker')
     });
 

@@ -33,7 +33,8 @@ describe('Abilities', () => {
 
         utilities.assertCount('.ability-card.available', 14);
 
-        cy.get('#desktop-show-all-abilities').click();
+        utilities.scrollTo(0);
+        cy.get('#desktop-show-all-abilities').click({scrollBehavior: false});
 
         utilities.assertCount('.ability-card.available', 30);
     });

@@ -34,6 +34,9 @@ class Story extends Model {
             this.data = JSON.parse(LZString.decompressFromEncodedURIComponent(this.data));
         }
         this.expires_at = dayjs(this.expires_at);
+        if (!this.has_expired && this.expires_at.isBefore(dayjs())) {
+            this.has_expired = true;
+        }
         this.updated_at = this.updated_at
             ? dayjs(this.updated_at)
             : dayjs().subtract(10, 'years');

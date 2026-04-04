@@ -12,8 +12,8 @@
                 </label>
             </template>
 
-            <div class="mdc-list z-10" :class="[width]">
-                <ul v-if="list.length" class="mdc-list" aria-hidden="true"
+            <div class="mdc-list z-10 pt-0" :class="[width]">
+                <ul v-if="list.length" class="mdc-list pt-0" aria-hidden="true"
                     aria-orientation="vertical" tabindex="-1">
                     <li v-for="(item, i) in items" :key="i"
                         class="mdc-list-item" @click="select(item)">
@@ -44,7 +44,7 @@ export default {
         list: {type: Array},
         disabled: {type: Array},
         autoDisable: {type: Boolean, default: true},
-        maxItems: {default: 10},
+        maxItems: {default: 11},
         width: {type: String, default: 'w-40'},
         autoClose: {type: Boolean, default: false},
         filterClosure: {

@@ -15,7 +15,7 @@ describe('Scenario list', () => {
     it('It opens a scenario', () => {
         cy.visit('/tracker/#/scenarios');
 
-        cy.get('td').contains('#1 Black Barrow').click();
+        cy.get('td').contains('#1 Black Barrow').click({ scrollBehavior: 'center' });
         cy.get('label').contains('Incomplete');
         cy.get('label').contains('Complete');
     });
@@ -33,7 +33,7 @@ describe('Scenario list', () => {
         utilities.closeModel();
 
         cy.get('#scenarios').within(() => {
-            cy.contains('#1 Black Barrow').should('not.be.visible');
+            cy.contains('#1 Black Barrow').should('not.exist');
         });
 
         utilities.assertTableCount('scenarios', 7);
@@ -67,9 +67,9 @@ describe('Scenario list', () => {
         utilities.closeModel();
 
         cy.get('#scenarios').within(() => {
-            cy.contains('#1 ').should('not.be.visible');
-            cy.contains('#2 ').should('not.be.visible');
-            cy.contains('#3 ').should('not.be.visible');
+            cy.contains('#1 ').should('not.exist');
+            cy.contains('#2 ').should('not.exist');
+            cy.contains('#3 ').should('not.exist');
         });
 
         cy.get('#scenarios').within(() => {
@@ -100,7 +100,7 @@ describe('Scenario list', () => {
         cy.get('span').contains('Solo').click();
         utilities.closeModel();
 
-        cy.get('#scenarios').contains('#1 ').should('not.be.visible');
+        cy.get('#scenarios').contains('#1 ').should('not.exist');
 
         cy.get('#scenarios').contains('Return to the Black Barrow').should('be.visible');
     });

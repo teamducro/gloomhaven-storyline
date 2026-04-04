@@ -1,5 +1,5 @@
 import utilities from "../utilities";
-import migrateVersion2Progress from "../../resources/js/services/app/migrateVersion2Progress";
+import migrateVersion2Progress from "../../../resources/js/services/app/migrateVersion2Progress";
 
 describe('Storage', () => {
     it('It stores data correctly in local storage', () => {
@@ -12,11 +12,11 @@ describe('Storage', () => {
             let campaignData = JSON.parse(store.getItem('local'));
             campaignData = collect(campaignData).map(x => JSON.stringify(x));
 
-            expect(campaignData.get('scenario-gh-1')).eq('{"state":"complete"}');
+            expect(campaignData.get('scenario-gh-1')).eq('{"random_item_treasure":false,"state":"complete"}');
             expect(campaignData.get('achievementgroup-CR')).eq('{"achievements":["GCRM"]}');
             expect(campaignData.get('achievement-GCRM')).eq('{"awarded":true,"count":1,"lost":false}');
             expect(campaignData.get('achievement-PFS')).eq('{"awarded":true,"count":1,"lost":false}');
-            expect(campaignData.get('scenario-gh-2')).eq('{"state":"incomplete"}');
+            expect(campaignData.get('scenario-gh-2')).eq('{"random_item_treasure":false,"state":"incomplete"}');
         });
     });
 

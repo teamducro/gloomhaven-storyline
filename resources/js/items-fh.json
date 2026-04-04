@@ -665,7 +665,7 @@
         "count": 2,
         "resources": { "item": [1, 93], "metal": 1 },
         "slot": "Head",
-        "source": "unknown",
+        "source": "Scenario 36\nScenario 37",
         "desc": "When you are attacked, add +1 {ATTACK.fh} to attack to instead of drawing an attack modifier card and flip this card over.",
         "backDesc": "During you attack ability add +1 {ATTACK.fh} to one attack instead of drawing an attack modifier card and flip this card over."
     },

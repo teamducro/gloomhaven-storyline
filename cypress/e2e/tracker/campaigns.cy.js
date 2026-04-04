@@ -21,7 +21,7 @@ describe('Campaigns', () => {
 
         utilities.scrollTo('50%');
         cy.get('#add-shared-campaign').within(() => {
-            cy.get('input[name=code]').type('123456');
+            cy.get('input[name=code]').type('123456', {scrollBehavior: false});
             cy.get('form').submit();
             cy.wait('@storyCode').should((xhr) => {
                 expect(xhr.requestBody.code).eq('123456');
@@ -43,7 +43,7 @@ describe('Campaigns', () => {
 
         utilities.scrollTo('50%');
         cy.get('#request-login-link').within(() => {
-            cy.get('input[name=email]').type('test');
+            cy.get('input[name=email]').type('test', {scrollBehavior: false});
             cy.get('form').submit();
             cy.wait('@mailLoginLink').should((xhr) => {
                 expect(xhr.requestBody.email).eq('test');
@@ -64,7 +64,7 @@ describe('Campaigns', () => {
 
         utilities.scrollTo('50%');
         cy.get('#request-login-link').within(() => {
-            cy.get('input[name=email]').type('test');
+            cy.get('input[name=email]').type('test', {scrollBehavior: false});
             cy.get('form').submit();
             cy.contains('An email has been sent to your inbox.');
         });
