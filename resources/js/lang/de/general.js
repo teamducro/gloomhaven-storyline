@@ -334,6 +334,7 @@ export default {
     "Jaws of the Lion": "Pranken des Löwen",
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
+    "mp": "Mercenary Pack",
     "Availability": "Verfügbarkeit",
     "Sticker": "Sticker",
     "State": "Staat/Status",

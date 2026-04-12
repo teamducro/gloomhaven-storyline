@@ -340,6 +340,7 @@ export default {
     "Jaws of the Lion": "Jaws of the Lion",
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
+    "mp": "Mercenary Pack",
 
     "Availability": "Availability",
     "Sticker": "Sticker",

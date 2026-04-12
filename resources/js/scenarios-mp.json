@@ -1,0 +1,36 @@
+{
+    "scenarios": [
+        {
+            "id": 103,
+            "game": "mp",
+            "name": "A Harrowing Deal",
+            "root": true,
+            "solo": "anaphi",
+            "rewards": ["AN"]
+        },
+        {
+            "id": 104,
+            "game": "mp",
+            "name": "Horns in the Night",
+            "root": true,
+            "solo": "satha",
+            "rewards": ["SA"]
+        },
+        {
+            "id": 105,
+            "game": "mp",
+            "name": "Escape from Corruption",
+            "root": true,
+            "solo": "cassandra",
+            "rewards": ["CSA", "CSB"]
+        },
+        {
+            "id": 106,
+            "game": "mp",
+            "name": "Major Annoyance",
+            "root": true,
+            "solo": "hail",
+            "rewards": ["HL"]
+        }
+    ]
+}

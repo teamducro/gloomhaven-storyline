@@ -334,6 +334,7 @@ export default {
     "Jaws of the Lion": "Челюсти льва",
     "cs": "Багровая чешуя",
     "Crimson Scales": "Багровая чешуя",
+    "mp": "Mercenary Pack",
     "Availability": "Доступность",
     "Sticker": "Наклейка",
     "State": "State",
