@@ -1,368 +1,368 @@
 export default {
     "gh-PFS": {
-        "name": "First Steps"
+        name: "Premiers pas",
     },
     "gh-PJP": {
-        "name": "Jekserah's Plans"
+        name: "Les Plans de Jekserah",
     },
     "gh-PDB": {
-        "name": "Dark Bounty"
+        name: "Dark Bounty",
     },
     "gh-GTMF": {
-        "name": "The Merchant Flees"
+        name: "La Fuite de la Négociante",
     },
     "gh-GTDI": {
-        "name": "The Dead Invade"
+        name: "The Dead Invade",
     },
     "gh-PADE": {
-        "name": "A Demon's Errand"
+        name: "A Demon's Errand",
     },
     "gh-GCRE": {
-        "name": "City Rule: Economic"
+        name: "City Rule: Economic",
     },
     "gh-GCRM": {
-        "name": "City Rule: Militaristic"
+        name: "City Rule: Militaristic",
     },
     "gh-GEOI": {
-        "name": "End of the Invasion"
+        name: "End of the Invasion",
     },
     "gh-GTPE": {
-        "name": "The Power of Enhancement"
+        name: "Le Pouvoir de l'Amélioration",
     },
     "gh-PSC": {
-        "name": "Stonebreaker's Censer"
+        name: "L'Encensoir de Brisepierre",
     },
     "gh-GTRN": {
-        "name": "The Rift Neutralized"
+        name: "La Faille Neutralisée",
     },
     "gh-GAR": {
-        "name": "The Artifact: Recovered"
+        name: "Relique : Récupérée",
     },
     "gh-GAR2": {
-        "name": "The Artifact: Recovered (previously Lost)"
+        name: "Relique : Récupérée (previously Lost)",
     },
     "gh-GAL": {
-        "name": "The Artifact: Lost"
+        name: "Relique : Perdue",
     },
     "gh-GAT": {
-        "name": "Ancient Technology"
+        name: "Technologie Ancienne",
     },
     "gh-GAT2": {
-        "name": "Ancient Technology x2"
+        name: "Technologie Ancienne x2",
     },
     "gh-GAT3": {
-        "name": "Ancient Technology x3"
+        name: "Technologie Ancienne x3",
     },
     "gh-GAT4": {
-        "name": "Ancient Technology x4"
+        name: "Technologie Ancienne x4",
     },
     "gh-GAT5": {
-        "name": "Ancient Technology x5"
+        name: "Technologie Ancienne x5",
     },
     "gh-PTR": {
-        "name": "Through the Ruins"
+        name: "Through the Ruins",
     },
     "gh-PTVC": {
-        "name": "The Voice's Command"
+        name: "The Voice's Command",
     },
     "gh-PTDC": {
-        "name": "The Drake's Command"
+        name: "L'Injonction de la Wyverne",
     },
     "gh-PFC": {
-        "name": "Following Clues"
+        name: "Suivre les Indices",
     },
     "gh-PAI": {
-        "name": "An Invitation"
+        name: "An Invitation",
     },
     "gh-GTED": {
-        "name": "The Edge of Darkness"
+        name: "The Edge of Darkness",
     },
     "gh-PTSV": {
-        "name": "The Scepter and the Voice"
+        name: "Le Sceptre et la Voix",
     },
     "gh-GAC": {
-        "name": "Artifact: Cleansed"
+        name: "Relique : Purifiée",
     },
     "gh-PTVT": {
-        "name": "The Voices Treasure"
+        name: "The Voices Treasure",
     },
     "gh-PTDT": {
-        "name": "The Drakes Treasure"
+        name: "The Drakes Treasure",
     },
     "gh-GTDS": {
-        "name": "The Drake Slain"
+        name: "The Drake Slain",
     },
     "gh-GTDA": {
-        "name": "The Drake Aided"
+        name: "The Drake Aided",
     },
     "gh-GCRD": {
-        "name": "City Rule: Demonic"
+        name: "City Rule: Demonic",
     },
     "gh-PTTT": {
-        "name": "Through the Trench"
+        name: "Par la Tranchée",
     },
     "gh-PRA": {
-        "name": "Redthorn's Aid"
+        name: "Au secours de Rougépine",
     },
     "gh-PATD": {
-        "name": "Across the Divide"
+        name: "Across the Divide",
     },
     "gh-GTVF": {
-        "name": "The Voice Freed"
+        name: "The Voice Freed",
     },
     "gh-GTVS": {
-        "name": "The Voice Silenced"
+        name: "La Voix réduite au Silence",
     },
     "gh-GWB": {
-        "name": "Water-Breathing"
+        name: "Respiration aquatique",
     },
     "gh-GEOC": {
-        "name": "End of Corruption"
+        name: "La Fin de la Corruption",
     },
     "gh-GEOC2": {
-        "name": "End of Corruption x2"
+        name: "La Fin de la Corruption x2",
     },
     "gh-GEOC3": {
-        "name": "End of Corruption x3"
+        name: "La Fin de la Corruption x3",
     },
     "gh-GAOO": {
-        "name": "Annihilation of Order"
+        name: "Annihilation of Order",
     },
     "gh-GEOG": {
-        "name": "End of Gloom"
+        name: "End of Gloom",
     },
     "gh-PTTN": {
-        "name": "Through the Nest"
+        name: "Through the Nest",
     },
     "gh-PAMT": {
-        "name": "A Map to Treasure"
+        name: "La Carte du Trésor",
     },
     "gh-PBB": {
-        "name": "Bad Business"
+        name: "Mauvaise Affaire",
     },
     "gh-PTPS": {
-        "name": "The Poison's Source"
+        name: "The Poison's Source",
     },
     "gh-PSB": {
-        "name": "Sun-Blessed"
+        name: "Sun-Blessed",
     },
     "gh-PSR": {
-        "name": "Sin-Ra"
+        name: "Sin-Ra",
     },
     "gh-PDC": {
-        "name": "Debt Collection"
+        name: "Debt Collection",
     },
     "gh-PWS": {
-        "name": "Water Staff"
+        name: "Water Staff",
     },
     "gh-PFA": {
-        "name": "Fish's Aid"
+        name: "Fish's Aid",
     },
     "gh-PT": {
-        "name": "Tremors"
+        name: "Tremors",
     },
     "gh-PHSE": {
-        "name": "High Sea Escort"
+        name: "Escorte en Haute Mer",
     },
     "gh-PGJ": {
-        "name": "Grave Job"
+        name: "Grave Job",
     },
     "gh-PNE": {
-        "name": "Northern Expedition"
+        name: "Northern Expedition",
     },
     "gh-GTTP": {
-        "name": "Through the Portal"
+        name: "À Travers le Portail",
     },
     "gh-PO": {
-        "name": "Opportunistes"
+        name: "Opportunistes",
     },
     "gh-GKIP": {
-        "name": "Knowledge is Power"
+        name: "Le Savoir est un Pouvoir",
     },
     "gh-GKIP2": {
-        "name": "Knowledge is Power x2"
+        name: "Le Savoir est un Pouvoir x2",
     },
     "gh-GKIP3": {
-        "name": "Knowledge is Power x3"
+        name: "Le Savoir est un Pouvoir x3",
     },
     "gh-GKIP4": {
-        "name": "Knowledge is Power x4"
+        name: "Le Savoir est un Pouvoir x4",
     },
     "gh-PAD": {
-        "name": "Angels of Death"
+        name: "Angels of Death",
     },
     "gh-PC": {
-        "name": "Custodians"
+        name: "Custodians",
     },
     "gh-PHP": {
-        "name": "Hunted Prey"
+        name: "Hunted Prey",
     },
     "gh-GPOA": {
-        "name": "Pieces of an Artifact"
+        name: "Pieces of an Artifact",
     },
     "gh-GPOA2": {
-        "name": "Pieces of an Artifact x2"
+        name: "Pieces of an Artifact x2",
     },
     "gh-GPOA3": {
-        "name": "Pieces of an Artifact x3"
+        name: "Pieces of an Artifact x3",
     },
     "gh-PGD": {
-        "name": "Guard Detail"
+        name: "Guard Detail",
     },
     "gh-PDE": {
-        "name": "Dimensional Equilibrium"
+        name: "Dimensional Equilibrium",
     },
     "gh-PHH": {
-        "name": "Hunting the Hunter"
+        name: "Hunting the Hunter",
     },
     "gh-PXA": {
-        "name": "Xangroth's Aid"
+        name: "Xangroth's Aid",
     },
     "gh-PDA": {
-        "name": "Diamara's Aid"
+        name: "Diamara's Aid",
     },
     "gh-PBF": {
-        "name": "Beauty in Freedom"
+        name: "Beauty in Freedom",
     },
     "gh-GPA": {
-        "name": "A Peril Averted"
+        name: "A Peril Averted",
     },
     "gh-GPA2": {
-        "name": "A Peril Averted x2"
+        name: "A Peril Averted x2",
     },
     "gh-GPA3": {
-        "name": "A Peril Averted x3"
+        name: "A Peril Averted x3",
     },
     "gh-GPA4": {
-        "name": "A Peril Averted x4"
+        name: "A Peril Averted x4",
     },
     "gh-GMS": {
-        "name": "Mechanical Splendor"
+        name: "Mechanical Splendor",
     },
     "gh-GST": {
-        "name": "Severed Ties"
+        name: "Severed Ties",
     },
     "cs-PCSOD": {
-        "name": "Ooze Destroyed"
+        name: "Ooze Destroyed",
     },
     "cs-PCSFL": {
-        "name": "Fallen Lava"
+        name: "Fallen Lava",
     },
     "cs-PCSFM": {
-        "name": "Follow the Money"
+        name: "Follow the Money",
     },
     "cs-PCSFW": {
-        "name": "Frozen Warrior"
+        name: "Frozen Warrior",
     },
     "cs-PCSOA": {
-        "name": "Oak Alliance"
+        name: "Oak Alliance",
     },
     "cs-PCSIA": {
-        "name": "Inox Alliance"
+        name: "Inox Alliance",
     },
     "cs-PCSGB": {
-        "name": "Guttermaw's Bounty"
+        name: "Guttermaw's Bounty",
     },
     "cs-PCSFR": {
-        "name": "Feirgrin's Request"
+        name: "Feirgrin's Request",
     },
     "cs-PCSPL": {
-        "name": "A Potion Lost"
+        name: "A Potion Lost",
     },
     "cs-PCSTM": {
-        "name": "Take the Money"
+        name: "Take the Money",
     },
     "cs-PCSAM": {
-        "name": "Accomplished Mercenaries"
+        name: "Accomplished Mercenaries",
     },
     "fh-CFIS": {
-        "name": "Friend of the Icespeakers"
+        name: "Friend of the Icespeakers",
     },
     "fh-CFSS": {
-        "name": "Friend of the Snowspeakers"
+        name: "Friend of the Snowspeakers",
     },
     "fh-CFFS": {
-        "name": "Friend of the Frostspeakers"
+        name: "Friend of the Frostspeakers",
     },
     "fh-CDIS": {
-        "name": "Destroyer of the Icespeakers"
+        name: "Destroyer of the Icespeakers",
     },
     "fh-CDSS": {
-        "name": "Destroyer of the Snowspeakers"
+        name: "Destroyer of the Snowspeakers",
     },
     "fh-CFFK": {
-        "name": "Friend of the Fish King"
+        name: "Friend of the Fish King",
     },
     "fh-CCU": {
-        "name": "Crown United"
+        name: "Crown United",
     },
     "fh-CUA": {
-        "name": "Unfettered Allies"
+        name: "Unfettered Allies",
     },
     "fh-CUD": {
-        "name": "Unfettered Deactivated"
+        name: "Unfettered Deactivated",
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        name: "Into the Forest",
     },
     "fh-CFP": {
-        "name": "Firepepper"
+        name: "Firepepper",
     },
     "fh-CSS": {
-        "name": "Shard Seeker"
+        name: "Shard Seeker",
     },
     "fh-CEJ": {
-        "name": "Empty Jar"
+        name: "Empty Jar",
     },
     "fh-CBJ": {
-        "name": "Bug in a Jar"
+        name: "Bug in a Jar",
     },
     "fh-CUC": {
-        "name": "Uncharged Core"
+        name: "Uncharged Core",
     },
     "fh-CCC": {
-        "name": "Charged Core"
+        name: "Charged Core",
     },
     "fh-CHF": {
-        "name": "Harvest Festival"
+        name: "Harvest Festival",
     },
     "fh-CBT": {
-        "name": "Brummix Tracks"
+        name: "Brummix Tracks",
     },
     "fh-CBT2": {
-        "name": "Brummix Tracks x2"
+        name: "Brummix Tracks x2",
     },
     "fh-CBT3": {
-        "name": "Brummix Tracks x3"
+        name: "Brummix Tracks x3",
     },
     "fh-CBT4": {
-        "name": "Brummix Tracks x4"
+        name: "Brummix Tracks x4",
     },
     "fh-CBT5": {
-        "name": "Brummix Tracks x5"
+        name: "Brummix Tracks x5",
     },
     "fh-CCCS": {
-        "name": "Coral Crown Shard"
+        name: "Coral Crown Shard",
     },
     "fh-CCCS2": {
-        "name": "Coral Crown Shard x2"
+        name: "Coral Crown Shard x2",
     },
     "fh-CCCS3": {
-        "name": "Coral Crown Shard x3"
+        name: "Coral Crown Shard x3",
     },
     "fh-CCCS4": {
-        "name": "Coral Crown Shard x4"
+        name: "Coral Crown Shard x4",
     },
     "fh-CCCS5": {
-        "name": "Coral Crown Shard x5"
+        name: "Coral Crown Shard x5",
     },
     "fh-CCCS6": {
-        "name": "Coral Crown Shard x6"
+        name: "Coral Crown Shard x6",
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        name: "Heart of Ice",
     },
     "fh-PHOS": {
-        "name": "Heart of Snow"
-    }
-}
+        name: "Heart of Snow",
+    },
+};
