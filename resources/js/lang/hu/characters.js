@@ -915,5 +915,70 @@ export default {
             "Whenever you declare a long rest during lapot selection, gain {SHIELD.fh}1 for the round",
             "Gain advantage on all your attacks performed while occupying or targeting enemies occupying water hexes"
         ]
+    },
+    "SA": {
+        "name": "Satha",
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{SHIELD.fh}1” {AGAIN} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {ICE} card",
+            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally and self” card",
+            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
+            "Add one {+0_WHITE} “%data.custom.perks.satha.6%” card",
+            "Add one {AGAIN} {DISARM.fh} card and one {AGAIN} “%data.custom.perks.satha.7%” card",
+            "Add two {AGAIN} “{WARD.fh}, {RANGE.fh}1” cards",
+            "Ignore item {-1} effects and %data.custom.perks.satha.9%",
+            "%data.custom.perks.satha.10%",
+            "%data.custom.perks.satha.11%",
+            "%data.custom.perks.satha.12%"
+        ]
+    },
+    "HA": {
+        "name": "Hail",
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{WOUND.fh} or {IMMOBILIZE.fh}” card",
+            "Replace one {-1_WHITE} card with one {+1_WHITE} {WILD} card",
+            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{POISON.fh} or {MUDDLE.fh}” card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” {AGAIN} card",
+            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
+            "Add one {+1_WHITE} {STUN.fh} card",
+            "Add one {+3_WHITE} “{SAFEGUARD}, {TARGET.fh}1 ally” card",
+            "Ignore scenario effects and add two {+1_WHITE} cards",
+            "%data.custom.perks.hail.10%",
+            "%data.custom.perks.hail.11%",
+            "Add one {+1_WHITE} “%data.custom.perks.hail.12%” card to the monster attack modifier deck"
+        ]
+    },
+    "CA": {
+        "name": "Cassandra",
+        "perks": [
+            "Remove one {-2_WHITE} card",
+            "Remove two {-1_WHITE} cards",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{BLESS.fh}, self or {TARGET.fh}1 ally” card",
+            "Replace one {+0_WHITE} card with one {+2_WHITE} “%data.custom.perks.cassandra.4%” card",
+            "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT_OR_DARK} card",
+            "Add one {+1_WHITE} “%data.custom.perks.cassandra.6%” {AGAIN} card",
+            "Ignore scenario effects and add two {+1_WHITE} cards",
+            "%data.custom.perks.cassandra.8%",
+            "%data.custom.perks.cassandra.9%",
+            "%data.custom.perks.cassandra.10%"
+        ]
+    },
+    "AN": {
+        "name": "Anaphi",
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON.fh} card",
+            "Replace two {+0_WHITE} cards with one {+1_WHITE} “%data.custom.perks.anaphi.3%” card",
+            "Replace one {+0_WHITE} card with one {+0_WHITE} {STUN.fh} card",
+            "Replace one {+1_WHITE} card with one {+1_WHITE} “{INVISIBLE.fh}, self” card",
+            "Add one {+2_WHITE} {WIND_OR_DARK} card",
+            "Add one {+2_WHITE} “{STRENGTHEN.fh}, 1 of your summons” card",
+            "Ignore scenario effects and remove one {+0_WHITE} card",
+            "%data.custom.perks.anaphi.9%",
+            "%data.custom.perks.anaphi.10%",
+            "%data.custom.perks.anaphi.11%"
+        ]
     }
 }

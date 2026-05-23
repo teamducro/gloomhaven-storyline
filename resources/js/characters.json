@@ -9319,7 +9319,7 @@
         },
         "SA": {
             "id": "SA",
-            "name": "satha",
+            "name": "Satha",
             "game": "mp",
             "translatedName": "characters.SA.name",
             "starting_group": [
@@ -9545,7 +9545,7 @@
         },
         "HA": {
             "id": "HA",
-            "name": "hail",
+            "name": "Hail",
             "game": "mp",
             "translatedName": "characters.HA.name",
             "starting_group": [
@@ -9807,7 +9807,7 @@
         },
         "CA": {
             "id": "CA",
-            "name": "cassandra",
+            "name": "Cassandra",
             "game": "mp",
             "translatedName": "characters.CA.name",
             "starting_group": [
@@ -9973,7 +9973,7 @@
         },
         "AN": {
             "id": "AN",
-            "name": "anaphi",
+            "name": "Anaphi",
             "game": "mp",
             "translatedName": "characters.AN.name",
             "starting_group": [

@@ -22,6 +22,7 @@
                             }}
                         </option>
                         <option
+                            v-if="character.hasAbilities"
                             :selected="selected === character.uuid && abilities"
                             :value="character.uuid+'|abilities'"
                         >
@@ -71,7 +72,7 @@
                                 }}</span>
                         </a>
                     </span>
-                    <span v-if="selected === character.uuid" class="flow-root"
+                    <span v-if="selected === character.uuid && character.hasAbilities" class="flow-root"
                         :key="'character-abilities-'+character.uuid">
                         <a @click.stop.prevent="select(character.uuid, true)" href="#"
                            class="-m-3 p-2 pl-9 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"

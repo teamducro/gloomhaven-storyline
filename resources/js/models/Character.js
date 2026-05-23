@@ -170,6 +170,10 @@ class Character {
         return values;
     }
 
+    get hasAbilities() {
+        return this.abilityCount > 0;
+    }
+
     key() {
         return 'character-' + this.uuid;
     }
