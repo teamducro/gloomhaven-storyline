@@ -394,7 +394,7 @@ export default {
             "Replace two {+0_WHITE} cards with two {AGAIN} {PIERCE}3 cards",
             "Replace one {-1_WHITE} card with one {+0_WHITE} “{+3_WHITE} if {PROJECTILE} {BM_CIRCLE}” card",
             "Add one {+2_WHITE} {IMMOBILIZE} card",
-            "Replace one {+1_WHITE} card with two {+1_WHITE} “{RELALIATE}1 {RANGE}3” card",
+            "Replace one {+1_WHITE} card with two {+1_WHITE} “{RETALIATE}1 {RANGE}3” card",
             "Add two {+1_WHITE} “{PULL}3, Self, toward the target” cards",
             "Add one {+0_WHITE} “{STRENGTHEN}, Self” card",
             "Add one {+0_WHITE} {STUN} card",
@@ -924,13 +924,13 @@ export default {
             "Replace one {-1_WHITE} card with one {+0_WHITE} {ICE} card",
             "Replace two {+0_WHITE} cards with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally and self” card",
             "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-            "Add one {+0_WHITE} “%data.custom.perks.satha.6%” card",
-            "Add one {AGAIN} {DISARM.fh} card and one {AGAIN} “%data.custom.perks.satha.7%” card",
+            "Add one {+0_WHITE} “Grant one ally within {RANGE.fh}3: {ATTACK.fh}2 {RANGE.fh}3 or {ATTACK.fh}3” card",
+            "Add one {AGAIN} {DISARM.fh} card and one {AGAIN} “Grant one ally within {RANGE.fh}3: {MOVE.fh}2” card",
             "Add two {AGAIN} “{WARD.fh}, {RANGE.fh}1” cards",
-            "Ignore item {-1} effects and %data.custom.perks.satha.9%",
-            "%data.custom.perks.satha.10%",
-            "%data.custom.perks.satha.11%",
-            "%data.custom.perks.satha.12%"
+            "Ignore item {-1} effects and whenever you would gain {STUN.fh}, prevent the condition",
+            "Whenever you long rest, perform: {STRENGTHEN.fh}, {TARGET.fh}1 ally, {RANGE.fh}3",
+            "All initiative values may be discussed freely and precisely",
+            "The first time each scenario that you or an ally exhaust, perform: {HEAL.fh}3, {TARGET.fh}all, {WARD.fh}, {STRENGTHEN.fh}"
         ]
     },
     "HA": {
@@ -945,9 +945,9 @@ export default {
             "Add one {+1_WHITE} {STUN.fh} card",
             "Add one {+3_WHITE} “{SAFEGUARD}, {TARGET.fh}1 ally” card",
             "Ignore scenario effects and add two {+1_WHITE} cards",
-            "%data.custom.perks.hail.10%",
-            "%data.custom.perks.hail.11%",
-            "Add one {+1_WHITE} “%data.custom.perks.hail.12%” card to the monster attack modifier deck"
+            "Whenever you short rest, you may choose which card to lose",
+            "Your and your allies' enhancements cost five gold less and whenever an ally enhances a card, you gain five gold",
+            "Add one {+1_WHITE} “{HA} gains 1 {MP-RESOLVE}” card to the monster attack modifier deck"
         ]
     },
     "CA": {
@@ -956,13 +956,13 @@ export default {
             "Remove one {-2_WHITE} card",
             "Remove two {-1_WHITE} cards",
             "Replace one {-1_WHITE} card with one {+0_WHITE} “{BLESS.fh}, self or {TARGET.fh}1 ally” card",
-            "Replace one {+0_WHITE} card with one {+2_WHITE} “%data.custom.perks.cassandra.4%” card",
+            "Replace one {+0_WHITE} card with one {+2_WHITE} “Add +1{ATTACK.fh} if the top card of the monster attack modifier deck is revealed” card",
             "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT_OR_DARK} card",
-            "Add one {+1_WHITE} “%data.custom.perks.cassandra.6%” {AGAIN} card",
+            "Add one {+1_WHITE} “Place this card in your active area. When you next place a {MP-RIFT}, discard this card to place another {MP-RIFT} within {RANGE.fh}1 of it” {AGAIN} card",
             "Ignore scenario effects and add two {+1_WHITE} cards",
-            "%data.custom.perks.cassandra.8%",
-            "%data.custom.perks.cassandra.9%",
-            "%data.custom.perks.cassandra.10%"
+            "Whenever you long rest, you may read one unread {SECTION} from the current scenario’s “Section Links",
+            "Whenever you place a {MP-RIFT}, you may perform “{PULL.fh}1, {TARGET.fh}1 ally or enemy, {RANGE.fh}1” as if you occupied a hex containing a {MP-RIFT}",
+            "Whenever a deck is shuffled, you may set aside all revealed cards from that deck and place them back on top after shuffling"
         ]
     },
     "AN": {
@@ -970,15 +970,15 @@ export default {
         "perks": [
             "Replace one {-2_WHITE} card with one {+0_WHITE} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON.fh} card",
-            "Replace two {+0_WHITE} cards with one {+1_WHITE} “%data.custom.perks.anaphi.3%” card",
+            "Replace two {+0_WHITE} cards with one {+1_WHITE} “Add +1{ATTACK.fh} when drawn by a summon” card",
             "Replace one {+0_WHITE} card with one {+0_WHITE} {STUN.fh} card",
             "Replace one {+1_WHITE} card with one {+1_WHITE} “{INVISIBLE.fh}, self” card",
             "Add one {+2_WHITE} {WIND_OR_DARK} card",
             "Add one {+2_WHITE} “{STRENGTHEN.fh}, 1 of your summons” card",
             "Ignore scenario effects and remove one {+0_WHITE} card",
-            "%data.custom.perks.anaphi.9%",
-            "%data.custom.perks.anaphi.10%",
-            "%data.custom.perks.anaphi.11%"
+            "Whenever you long rest, you may {WIND_OR_DARK}",
+            "Once each scenario, during your turn, all enemies adjacent to a wall suffer {DAMAGE.fh}1",
+            "At the start of the first round of each scenario, after all ability cards have been revealed, control one enemy within {RANGE.fh}5: {MOVE.fh}2"
         ]
     }
 }
