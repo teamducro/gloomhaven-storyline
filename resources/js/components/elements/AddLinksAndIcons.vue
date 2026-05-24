@@ -90,6 +90,7 @@ export default {
             if (text.includes('{')) {
                 collect({
                     '{BOOK}': '<inline-svg src="icons/book"/>',
+                    '{SECTION}': '<inline-svg src="icons/book" width="20" class="inline-block vertical-align-middle"/>',
 
                     // Ability Enhancements
                     '{SHIELD}': this.$t('Shield') + ' <webp src="/img/icons/general/shield.png" width="20" class="inline"/>',
@@ -346,6 +347,12 @@ export default {
                     '{+2_MODIFIER}': '<webp src="/img/icons/perks/+2_white.png" width="20" class="inline" alt="+2"/>',
                     '{2X_MODIFIER}': '<webp src="/img/icons/perks/2x_white.png" width="20" class="inline" alt="2x"/>',
                     '{NULL_MODIFIER}': '<webp src="/img/icons/perks/null_white.png" width="20" class="inline" alt="0x"/>',
+                    '{SAFEGUARD_WHITE}': '<webp src="/img/icons/perks/safeguard_white.png" width="20" class="inline" alt="safeguard"/>',
+                    '{SAFEGUARD_BLACK}': '<webp src="/img/icons/perks/safeguard_black.png" width="20" class="inline" alt="safeguard"/>',
+                    '{RESOLVE_WHITE}': '<webp src="/img/icons/perks/resolve_white.png" width="20" class="inline" alt="resolve"/>',
+                    '{RESOLVE_BLACK}': '<webp src="/img/icons/perks/resolve_black.png" width="20" class="inline" alt="resolve"/>',
+                    '{RIFT_WHITE}': '<webp src="/img/icons/perks/rift_white.png" width="20" class="inline" alt="rift"/>',
+                    '{RIFT_BLACK}': '<webp src="/img/icons/perks/rift_black.png" width="20" class="inline" alt="rift"/>',
 
                     // Bonuses
                     '{CHECK}': '<webp src="/img/icons/general/check.png" width="20" class="inline" alt="' + this.$t('check mark') + '"/>',

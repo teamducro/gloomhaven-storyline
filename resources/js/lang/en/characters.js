@@ -918,6 +918,10 @@ export default {
     },
     "SA": {
         "name": "Satha",
+        "masteries": [
+            "For an entire scenario, have at least one ally perform a move or attack ability during each of your turns except when performing a long rest",
+            "For an entire scenario, never have an ally be a target of an attack"
+        ],
         "perks": [
             "Replace one {-2_WHITE} card with one {+0_WHITE} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} “{SHIELD.fh}1” {AGAIN} card",
@@ -935,38 +939,50 @@ export default {
     },
     "HA": {
         "name": "Hail",
+        "masteries": [
+            "For an entire scenario, gain at least 1 {RESOLVE_WHITE} each round",
+            "In a single scenario, across three consecutive rounds, spend at least 3 {RESOLVE_WHITE} each round"
+        ],
         "perks": [
             "Replace one {-2_WHITE} card with one {+0_WHITE} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} “{WOUND.fh} or {IMMOBILIZE.fh}” card",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} {WILD} card",
+            "Replace one {-1_WHITE} card with one {+1_WHITE} {ANY} card",
             "Replace two {+0_WHITE} cards with one {+1_WHITE} “{POISON.fh} or {MUDDLE.fh}” card",
             "Replace one {+0_WHITE} card with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” {AGAIN} card",
             "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
             "Add one {+1_WHITE} {STUN.fh} card",
-            "Add one {+3_WHITE} “{SAFEGUARD}, {TARGET.fh}1 ally” card",
+            "Add one {+3_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 ally” card",
             "Ignore scenario effects and add two {+1_WHITE} cards",
             "Whenever you short rest, you may choose which card to lose",
             "Your and your allies' enhancements cost five gold less and whenever an ally enhances a card, you gain five gold",
-            "Add one {+1_WHITE} “{HA} gains 1 {MP-RESOLVE}” card to the monster attack modifier deck"
+            "Add one {+1_WHITE} “{HA} gains 1 {RESOLVE_WHITE}” card to the monster attack modifier deck"
         ]
     },
     "CA": {
         "name": "Cassandra",
+        "masteries": [
+            "For an entire scenario, reveal at least one card from an attack modifier deck or monster ability card deck each round",
+            "Target 6 figures with an ability that targets figures occupying hexes containing {RIFT_WHITE}"
+        ],
         "perks": [
             "Remove one {-2_WHITE} card",
             "Remove two {-1_WHITE} cards",
             "Replace one {-1_WHITE} card with one {+0_WHITE} “{BLESS.fh}, self or {TARGET.fh}1 ally” card",
             "Replace one {+0_WHITE} card with one {+2_WHITE} “Add +1{ATTACK.fh} if the top card of the monster attack modifier deck is revealed” card",
             "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT_OR_DARK} card",
-            "Add one {+1_WHITE} “Place this card in your active area. When you next place a {MP-RIFT}, discard this card to place another {MP-RIFT} within {RANGE.fh}1 of it” {AGAIN} card",
+            "Add one {+1_WHITE} “Place this card in your active area. When you next place a {RIFT_WHITE}, discard this card to place another {RIFT_WHITE} within {RANGE.fh}1 of it” {AGAIN} card",
             "Ignore scenario effects and add two {+1_WHITE} cards",
             "Whenever you long rest, you may read one unread {SECTION} from the current scenario’s “Section Links",
-            "Whenever you place a {MP-RIFT}, you may perform “{PULL.fh}1, {TARGET.fh}1 ally or enemy, {RANGE.fh}1” as if you occupied a hex containing a {MP-RIFT}",
+            "Whenever you place a {RIFT_WHITE}, you may perform “{PULL.fh}1, {TARGET.fh}1 ally or enemy, {RANGE.fh}1” as if you occupied a hex containing a {RIFT_WHITE}",
             "Whenever a deck is shuffled, you may set aside all revealed cards from that deck and place them back on top after shuffling"
         ]
     },
     "AN": {
         "name": "Anaphi",
+        "masteries": [
+            "Have 3 different summons kill 3 enemies each",
+            "In each of 3 scenarios, perform 8 attacks targeting enemies that have negative conditions"
+        ],
         "perks": [
             "Replace one {-2_WHITE} card with one {+0_WHITE} card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON.fh} card",

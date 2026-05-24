@@ -927,7 +927,11 @@ export default {
             "Whenever you long rest, perform: {STRENGTHEN.fh}, {TARGET.fh}1 ally, {RANGE.fh}3",
             "All initiative values may be discussed freely and precisely",
             "The first time each scenario that you or an ally exhaust, perform: {HEAL.fh}3, {TARGET.fh}all, {WARD.fh}, {STRENGTHEN.fh}"
-        ]
+        ],
+        "masteries": [
+            "",
+            ""
+        ],
     },
     "HA": {
         "name": "Hail",
@@ -939,12 +943,16 @@ export default {
             "Replace one {+0_WHITE} card with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” {AGAIN} card",
             "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
             "Add one {+1_WHITE} {STUN.fh} card",
-            "Add one {+3_WHITE} “{SAFEGUARD}, {TARGET.fh}1 ally” card",
+            "Add one {+3_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 ally” card",
             "Ignore scenario effects and add two {+1_WHITE} cards",
             "Whenever you short rest, you may choose which card to lose",
             "Your and your allies' enhancements cost five gold less and whenever an ally enhances a card, you gain five gold",
-            "Add one {+1_WHITE} “{HA} gains 1 {MP-RESOLVE}” card to the monster attack modifier deck"
-        ]
+            "Add one {+1_WHITE} “{HA} gains 1 {RESOLVE_WHITE}” card to the monster attack modifier deck"
+        ],
+        "masteries": [
+            "",
+            ""
+        ],
     },
     "CA": {
         "name": "Cassandra",
@@ -954,12 +962,16 @@ export default {
             "Replace one {-1_WHITE} card with one {+0_WHITE} “{BLESS.fh}, self or {TARGET.fh}1 ally” card",
             "Replace one {+0_WHITE} card with one {+2_WHITE} “Add +1{ATTACK.fh} if the top card of the monster attack modifier deck is revealed” card",
             "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT_OR_DARK} card",
-            "Add one {+1_WHITE} “Place this card in your active area. When you next place a {MP-RIFT}, discard this card to place another {MP-RIFT} within {RANGE.fh}1 of it” {AGAIN} card",
+            "Add one {+1_WHITE} “Place this card in your active area. When you next place a {RIFT_WHITE}, discard this card to place another {RIFT_WHITE} within {RANGE.fh}1 of it” {AGAIN} card",
             "Ignore scenario effects and add two {+1_WHITE} cards",
             "Whenever you long rest, you may read one unread {SECTION} from the current scenario’s “Section Links",
-            "Whenever you place a {MP-RIFT}, you may perform “{PULL.fh}1, {TARGET.fh}1 ally or enemy, {RANGE.fh}1” as if you occupied a hex containing a {MP-RIFT}",
+            "Whenever you place a {RIFT_WHITE}, you may perform “{PULL.fh}1, {TARGET.fh}1 ally or enemy, {RANGE.fh}1” as if you occupied a hex containing a {RIFT_WHITE}",
             "Whenever a deck is shuffled, you may set aside all revealed cards from that deck and place them back on top after shuffling"
-        ]
+        ],
+        "masteries": [
+            "",
+            ""
+        ],
     },
     "AN": {
         "name": "Anaphi",
@@ -975,6 +987,10 @@ export default {
             "Whenever you long rest, you may {WIND_OR_DARK}",
             "Once each scenario, during your turn, all enemies adjacent to a wall suffer {DAMAGE.fh}1",
             "At the start of the first round of each scenario, after all ability cards have been revealed, control one enemy within {RANGE.fh}5: {MOVE.fh}2"
-        ]
+        ],
+        "masteries": [
+            "",
+            ""
+        ],
     }
 }
