@@ -643,6 +643,31 @@ export default {
             "“Sword of the Sands” (Item 151)"
         ]
     },
+    "mp-103": {
+        "name": "A Harrowing Deal",
+        "rewards": [
+            "“Ribbon of Friendship”"
+        ]
+    },
+    "mp-104": {
+        "name": "Horns in the Night",
+        "rewards": [
+            "“Crest of Frosthaven”"
+        ]
+    },
+    "mp-105": {
+        "name": "Escape from Corruption",
+        "rewards": [
+            "“Basin of Prophecy (A)”",
+            "“Basin of Prophecy (B)”"
+        ]
+    },
+    "mp-106": {
+        "name": "Major Annoyance",
+        "rewards": [
+            "“No Nonsense Boots”"
+        ]
+    },
     "fc-96": {
         "name": "Unerwartete Besucher",
         "rewards": [

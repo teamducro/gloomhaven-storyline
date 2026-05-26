@@ -3704,6 +3704,47 @@
             ]
         },
         {
+            "id": 103,
+            "game": "mp",
+            "name": "A Harrowing Deal",
+            "root": true,
+            "solo": "AN",
+            "rewards": [
+                "“Ribbon of Friendship”"
+            ]
+        },
+        {
+            "id": 104,
+            "game": "mp",
+            "name": "Horns in the Night",
+            "root": true,
+            "solo": "SA",
+            "rewards": [
+                "“Crest of Frosthaven”"
+            ]
+        },
+        {
+            "id": 105,
+            "game": "mp",
+            "name": "Escape from Corruption",
+            "root": true,
+            "solo": "CA",
+            "rewards": [
+                "“Basin of Prophecy (A)”",
+                "“Basin of Prophecy (B)”"
+            ]
+        },
+        {
+            "id": 106,
+            "game": "mp",
+            "name": "Major Annoyance",
+            "root": true,
+            "solo": "HA",
+            "rewards": [
+                "“No Nonsense Boots”"
+            ]
+        },
+        {
             "root": true,
             "id": 96,
             "game": "fc",

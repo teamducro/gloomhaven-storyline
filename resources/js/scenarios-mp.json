@@ -5,32 +5,41 @@
             "game": "mp",
             "name": "A Harrowing Deal",
             "root": true,
-            "solo": "anaphi",
-            "rewards": ["AN"]
+            "solo": "AN",
+            "rewards": [
+                ""Ribbon of Friendship""
+            ]
         },
         {
             "id": 104,
             "game": "mp",
             "name": "Horns in the Night",
             "root": true,
-            "solo": "satha",
-            "rewards": ["SA"]
+            "solo": "SA",
+            "rewards": [
+                ""Crest of Frosthaven""
+            ]
         },
         {
             "id": 105,
             "game": "mp",
             "name": "Escape from Corruption",
             "root": true,
-            "solo": "cassandra",
-            "rewards": ["CSA", "CSB"]
+            "solo": "CA",
+            "rewards": [
+                ""Basin of Prophecy (A)"",
+                ""Basin of Prophecy (B)""
+            ]
         },
         {
             "id": 106,
             "game": "mp",
             "name": "Major Annoyance",
             "root": true,
-            "solo": "hail",
-            "rewards": ["HL"]
+            "solo": "HA",
+            "rewards": [
+                ""No Nonsense Boots""
+            ]
         }
     ]
 }

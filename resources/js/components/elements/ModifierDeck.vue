@@ -63,6 +63,10 @@ export default {
             // Convert the strings to cards so the modal can show the cards as images
             for (const [code, count] of Object.entries(deck)) {
                 const card = this.availableCards.get(code);
+                if (!card) {
+                    console.error('Card not found: ' + code);
+                    continue;
+                }
                 card.count = count
                 result.push(card)
             }
