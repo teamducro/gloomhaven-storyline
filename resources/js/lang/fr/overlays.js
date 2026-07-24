@@ -1,44 +1,44 @@
 export default {
     "fh-A": {
-        "name": "Boat"
+        name: "Boat",
     },
     "fh-B": {
-        "name": "Sled"
+        name: "Sled",
     },
     "fh-C": {
-        "name": "Climbing Gear"
+        name: "Climbing Gear",
     },
     "fh-D": {
-        "name": "Ice Spike"
+        name: "Ice Spike",
     },
     "fh-E": {
-        "name": "Portcullis"
+        name: "Portcullis",
     },
     "fh-F": {
-        "name": "Statue"
+        name: "Statue",
     },
     "fh-G_red": {
-        "name": "Red Well"
+        name: "Red Well",
     },
     "fh-G_blue": {
-        "name": "Blue Well"
+        name: "Blue Well",
     },
     "fh-H": {
-        "name": "Stage"
+        name: "Stage",
     },
     "fh-J": {
-        "name": "Wall"
+        name: "Wall",
     },
     "fh-K": {
-        "name": "Wall"
+        name: "Wall",
     },
     "fh-L": {
-        "name": "Wall"
+        name: "Wall",
     },
     "fh-M": {
-        "name": "Wall"
+        name: "Wall",
     },
     "fh-N": {
-        "name": "Wall"
-    }
-}
+        name: "Wall",
+    },
+};

@@ -1,51 +1,51 @@
-import general from "./general"
-import storyline from "./storyline"
-import scenarios from "./scenarios"
-import achievements from "./achievements"
-import items from "./items"
-import treasures from "./treasures"
-import personal_quests from "./personal_quests"
-import characters from "./characters"
-import prompts from "./prompts"
-import abilities from "./abilities"
-import buildings from "./buildings"
-import overlays from "./overlays"
-import campaign_sheet from "./campaign_sheet"
+import general from "./general";
+import storyline from "./storyline";
+import scenarios from "./scenarios";
+import achievements from "./achievements";
+import items from "./items";
+import treasures from "./treasures";
+import personal_quests from "./personal_quests";
+import characters from "./characters";
+import prompts from "./prompts";
+import abilities from "./abilities";
+import buildings from "./buildings";
+import overlays from "./overlays";
+import campaign_sheet from "./campaign_sheet";
 
 export default {
     ...general,
     ...storyline,
-    "scenarios": {
-        ...scenarios
+    scenarios: {
+        ...scenarios,
     },
-    "achievements": {
-        ...achievements
+    achievements: {
+        ...achievements,
     },
-    "items": {
-        ...items
+    items: {
+        ...items,
     },
-    "treasures": {
-        ...treasures
+    treasures: {
+        ...treasures,
     },
-    "personal_quests": {
-        ...personal_quests
+    personal_quests: {
+        ...personal_quests,
     },
-    "characters": {
-        ...characters
+    characters: {
+        ...characters,
     },
-    "prompts": {
-        ...prompts
+    prompts: {
+        ...prompts,
     },
-    "abilities": {
-        ...abilities
+    abilities: {
+        ...abilities,
     },
-    "buildings": {
-        ...buildings
+    buildings: {
+        ...buildings,
     },
-    "overlays": {
-        ...overlays
+    overlays: {
+        ...overlays,
     },
-    "campaign_sheet": {
-        ...campaign_sheet
-    }
-}
+    campaign_sheet: {
+        ...campaign_sheet,
+    },
+};
