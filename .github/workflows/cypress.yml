@@ -27,6 +27,15 @@ jobs:
         if: steps.node-modules-cache.outputs.cache-hit != 'true'
         run: npm ci --prefer-offline --no-audit --no-fund
 
+      - name: Cache Cypress binary
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-binary-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Ensure Cypress binary is installed
+        run: npx cypress install
+
       - name: Set up .env
         run: cp .github/.env .env
 
