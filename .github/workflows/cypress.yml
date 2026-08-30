@@ -17,7 +17,7 @@ jobs:
           cache: 'npm'
 
       - name: Set up .env
-        run: cp .env.example .env
+        run: cp .github/.env .env
 
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
