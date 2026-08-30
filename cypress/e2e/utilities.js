@@ -1,12 +1,8 @@
 export default {
     startServer() {
-        cy.server();
-
-        cy.route({
-            method: 'GET',
-            url: 'sanctum/csrf-cookie',
-            status: 204,
-            response: ''
+        cy.intercept('GET', '**/sanctum/csrf-cookie', {
+            statusCode: 204,
+            body: ''
         }).as('csrf');
     },
 

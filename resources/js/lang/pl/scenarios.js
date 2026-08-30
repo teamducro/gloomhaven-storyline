@@ -1015,694 +1015,694 @@ export default {
         ]
     },
     "fh-0": {
-        "name": "Howling in the Snow"
+        "name": "Skowyt w śniegu"
     },
     "fh-1": {
-        "name": "A Town in Flames",
+        "name": "Miasto w płomieniach",
         "rewards": [
             [
-                "Gain 2 morale"
+                "+2 do morale"
             ],
             [
-                "Gain 3 morale"
+                "+3 do morale"
             ],
             [
-                "Gain 4 morale"
+                "+4 do morale"
             ],
             [
-                "Gain 5 morale"
+                "+5 do morale"
             ],
             [
-                "Gain 6 morale"
+                "+6 do morale"
             ],
             [
-                "Gain 7 morale"
+                "+7 do morale"
             ]
         ]
     },
     "fh-2": {
-        "name": "Algox Scouting",
+        "name": "Podchody z Algoxami",
         "rewards": [
-            "Gain 1 ✔ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "fh-3": {
-        "name": "Algox Offensive",
+        "name": "Ofensywa Algoksów",
         "rewards": [
-            "Gain 1 ✔ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "fh-4": {
-        "name": "Heart of Ice",
+        "name": "Serce lodu",
         "rewards": [
             [
-                "Unlock {FF} class box",
-                "Gain 1 morale",
-                "Gain 1 prosperity",
-                "Add 156.1 to the calendar in four weeks"
+                "Odblokuj pudełko postaci {FF}",
+                "+1 do morale",
+                "+1 do dobrobytu",
+                "Dodaj sekcję 156.1 do kalendarza za cztery tygodnie"
             ],
             [
-                "Unlock {SD} class box",
-                "Gain 1 morale",
-                "Gain 1 prosperity",
-                "Add 156.1 to the calendar in four weeks"
+                "Odblokuj pudełko postaci {SD}",
+                "+1 do morale",
+                "+1 do dobrobytu",
+                "Dodaj sekcję 156.1 do kalendarza za cztery tygodnie"
             ]
         ]
     },
     "fh-5": {
-        "name": "Frozen Crypt",
+        "name": "Zamarznięta krypta",
         "rewards": [
-            "Gain 2 collective {LUMBER}"
+            "Otrzymujecie wspólnie 2 {LUMBER}"
         ]
     },
     "fh-6": {
-        "name": "Avalanche",
+        "name": "Lawina",
         "rewards": [
-            "Gain 2 collective {METAL}"
+            "Otrzymujecie wspólnie 2 {METAL}"
         ]
     },
     "fh-7": {
-        "name": "Edge of the World",
+        "name": "Krawędź świata",
         "rewards": [
-            "10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-8": {
-        "name": "Crystal Trench",
+        "name": "Krzyształowy rów",
         "rewards": [
-            "Gain 1 collective {LUMBER}",
-            "Gain 2 collective {HIDE}"
+            "Otrzymujecie wspólnie 1 {LUMBER}",
+            "Otrzymujecie wspólnie 2 {HIDE}"
         ]
     },
     "fh-9": {
-        "name": "Glowing Catacombs",
+        "name": "Lśniące katakumby",
         "rewards": [
-            "Gain 2 collective {CORPSECAP}"
+            "Otrzymujecie wspólnie 2 {CORPSECAP}"
         ]
     },
     "fh-10": {
-        "name": "Crystal Enclosure",
+        "name": "Kryształowa enklawa",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration"
+            "+1 do morale",
+            "+1 do inspiracji"
         ]
     },
     "fh-11": {
-        "name": "Snowscorn Peak",
+        "name": "Szczyt Śnieżnicy",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration"
+            "+1 do morale",
+            "+1 do inspiracji"
         ]
     },
     "fh-12": {
-        "name": "Temple Entrance",
+        "name": "Wejście do Świątyni",
         "rewards": [
-            "Gain 15 experience each"
+            "Po 15 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-13": {
-        "name": "Frozen Fjord",
+        "name": "Zamarznięty fiord",
         "rewards": [
-            "Gain “Dead Raven” (Item 233)"
+            "“Dead Raven” (przedmiot 233)"
         ]
     },
     "fh-14": {
-        "name": "Jagged Shoals",
+        "name": "Kolczaste mielizny",
         "rewards": [
-            "Choose one: Unlock {CR} class box OR unlock {DT} class box",
-            "Add event WO-81 to the winter outpost deck"
+            "Wybierz jedno: odblokuj pudełko postaci {CR} ALBO odblokuj pudełko postaci {DT}",
+            "Dodajcie wydarzenie WO-81 do zimowej talii posterunku"
         ]
     },
     "fh-15": {
-        "name": "Ancient Spire",
+        "name": "Starożytna iglica",
         "rewards": [
-            "Gain 1 collective {LUMBER}",
-            "Gain 1 collective {METAL}",
-            "Gain 1 collective {HIDE}"
+            "Otrzymujecie wspólnie 1 {LUMBER}",
+            "Otrzymujecie wspólnie 1 {METAL}",
+            "Otrzymujecie wspólnie 1 {HIDE}"
         ]
     },
     "fh-16": {
-        "name": "Derelict Elevator",
+        "name": "Opuszczona winda",
         "rewards": [
-            "Gain 5 experience each",
-            "Gain 1 inspiration"
+            "Po 5 pkt. doświadczenia dla każdego",
+            "+1 do inspiracji"
         ]
     },
     "fh-17": {
-        "name": "Haunted Vault",
+        "name": "Nawiedzona krypta",
         "rewards": [
-            "Gain 1 ✔ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "fh-18": {
-        "name": "Crystal Fields",
+        "name": "Kryształowe Pola",
         "rewards": [
-            "Gain 1 morale",
-            "Gain one random item blueprint",
-            "Add 122.3 to the calendar in four weeks"
+            "+1 do morale",
+            "Losowy schemat przedmiotu",
+            "Dodaj sekcję 122.3 do kalendarza za cztery tygodnie"
         ]
     },
     "fh-19": {
-        "name": "Skyhall",
+        "name": "Sala Niebios",
         "rewards": [
-            "Gain 1 morale",
-            "Gain one random item blueprint",
-            "Add 54.3 to the calendar in four weeks"
+            "+1 do morale",
+            "Losowy schemat przedmiotu",
+            "Dodaj sekcję 54.3 do kalendarza za cztery tygodnie"
         ]
     },
     "fh-20": {
-        "name": "Temple of Liberation",
+        "name": "Światynia Wyzwolenia",
         "rewards": [
-            "Gain 15 gold each"
+            "Po 15 szt. złota dla każdego"
         ]
     },
     "fh-21": {
-        "name": "Realm of Endless Frost",
+        "name": "Kraina Wiecznego Mrozu",
         "rewards": [
-            "Gain 2 prosperity"
+            "+2 do dobrobytu"
         ]
     },
     "fh-22": {
-        "name": "Ice Floes",
+        "name": "Lodowa Kra",
         "rewards": [
             "Lose 1 collective {LUMBER} for each set of five hexes with water tiles on tile 7-G",
-            "Gain 15 experience each",
-            "Add 62.2 to the calendar in two weeks"
+            "Po 15 pkt. doświadczenia dla każdego",
+            "Dodaj sekcję 62.2 do kalendarza za dwa tygodnie"
         ]
     },
     "fh-23": {
-        "name": "Spire Basement",
+        "name": "Podziemia iglicy",
         "rewards": [
-            "Gain one random item blueprint"
+            "Losowy schemat przedmiotu"
         ]
     },
     "fh-24": {
-        "name": "Upper Spire",
+        "name": "Fórna iglica",
         "rewards": [
-            "Gain one random item blueprint"
+            "Losowy schemat przedmiotu"
         ]
     },
     "fh-25": {
-        "name": "Rusted Tunnels",
+        "name": "Zardzewiałe tunele",
         "rewards": [
-            "Gain 2 collective {LUMBER}",
-            "Gain 2 collective {METAL}",
-            "Add 128.2 to the calendar in four weeks"
+            "Otrzymujecie wspólnie 2 {LUMBER}",
+            "Otrzymujecie wspólnie 2 {METAL}",
+            "Dodaj sekcję 128.2 do kalendarza za cztery tygodnie"
         ]
     },
     "fh-26": {
-        "name": "Quatryl Library",
+        "name": "Biblioteka Kwatryli",
         "rewards": [
-            "Gain 10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-27": {
-        "name": "Depths of Delirium",
+        "name": "Otchłań delirium",
         "rewards": [
-            "Gain 10 experience each",
-            "Gain 1 ✔ each",
-            "Ancient Technology"
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Po 1 ✔ dla każdego",
+            "Starożytna Technologia"
         ]
     },
     "fh-28": {
-        "name": "Summit Meeting",
+        "name": "Spotkanie na szczycie",
         "rewards": [
-            "Lose 1 morale"
+            "-1 morale"
         ]
     },
     "fh-29": {
-        "name": "War of the Spire A",
+        "name": "Wojna o iglicę A",
         "rewards": [
-            "Gain 3 morale",
-            "Remove all {ALGOX} events from all outpost event decks",
-            "Add event WO-68 to the winter outpost deck",
-            "Add 46.3 to the calendar in five weeks"
+            "+3 do morale",
+            "Usuń wszystkie wydarzenia {ALGOX} z wszystkich talii wydarzeń na posterunku",
+            "Dodaj wydarzenie WO-68 do zimowej talii wydarzeń na posterunku",
+            "Dodaj sekcję 46.3 do kalendarza za pięć tygodni"
         ]
     },
     "fh-30": {
-        "name": "War of the Spire B",
+        "name": "Wojna o iglicę B",
         "rewards": [
-            "Gain 3 morale",
-            "Gain “Destroyer of the Snowspeakers” sticker",
-            "Remove all {ALGOX} events from all outpost event decks",
-            "Add event WO-69 to the winter outpost deck",
-            "Add 34.2 to the calendar in five weeks"
+            "+3 do morale",
+            "Zyskaj nakleję “Destroyer of the Snowspeakers”",
+            "Usuń wszystkie wydarzenia {ALGOX} z wszystkich talii wydarzeń na posterunku",
+            "Dodaj wydarzenie WO-69 do zimowej talii wydarzeń na posterunku",
+            "Dodaj sekcję 34.2 do kalendarza za pięć tygodni"
         ]
     },
     "fh-31": {
-        "name": "Crackling Tunnel",
+        "name": "Trzeszczący Tunel",
         "rewards": [
-            "Gain 5 experience each",
-            "Gain 10 gold each"
+            "Po 5 pkt. doświadczenia dla każdego",
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "fh-32": {
-        "name": "Ravens' Roost",
+        "name": "Krucze Gniazdo",
         "rewards": [
-            "Gain “Feathered Cloak” (Item 69) blueprint"
+            "Schemat “Feathered Cloak” (przedmiot 69)"
         ]
     },
     "fh-33": {
-        "name": "Thawed Wood",
+        "name": "Roztopiona knieja",
         "rewards": [
-            "Gain 5 experience each for each unrevealed dowsing rune",
-            "Gain “Ember Energy Source” (Item 244)",
-            "Add 135.1 to the calendar in three weeks"
+            "Po 5 pkt. doświadczenia dla każdego za każdą nieodkrytą runę",
+            "“Ember Energy Source” (przedmiot 244)",
+            "Dodaj sekcję 135.1 do kalendarza za trzy tygodnie"
         ]
     },
     "fh-34": {
-        "name": "Top of the Spire"
+        "name": "Szczyt Iglicy"
     },
     "fh-35": {
-        "name": "Scrap Pit",
+        "name": "Złomowisko",
         "rewards": [
-            "Gain 2 collective {LUMBER}",
-            "Gain 2 collective {METAL}",
-            "Gain 2 collective {HIDE}"
+            "Otrzymujecie wspólnie 2 {LUMBER}",
+            "Otrzymujecie wspólnie 2 {METAL}",
+            "Otrzymujecie wspólnie 2 {HIDE}"
         ]
     },
     "fh-36": {
-        "name": "Buried Ducts",
+        "name": "Zakopane kanały",
         "rewards": [
-            "Gain 3 collective {LUMBER}",
-            "Gain 3 collective {METAL}"
+            "Otrzymujecie wspólnie 3 {LUMBER}",
+            "Otrzymujecie wspólnie 3 {METAL}"
         ]
     },
     "fh-37": {
-        "name": "The Dead Mile",
+        "name": "Martwa mila",
         "rewards": [
-            "Gain 3 collective {LUMBER}",
-            "Gain 3 collective {METAL}"
+            "Otrzymujecie wspólnie 3 {LUMBER}",
+            "Otrzymujecie wspólnie 3 {METAL}"
         ]
     },
     "fh-38": {
-        "name": "The Way Forward",
+        "name": "Droga naprzód",
         "rewards": [
-            "Gain 10 experience each",
-            "Gain 1 ✔ each",
-            "Gain 1 inspiration"
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Po 1 ✔ dla każdego",
+            "+1 do inspiracji"
         ]
     },
     "fh-39": {
-        "name": "Corrupted Camp",
+        "name": "Spaczony obóz",
         "rewards": [
-            "Lose 1 inspiration",
-            "Gain 2 additional loot cards each"
+            "-1 do inspiracji",
+            "Każdy otrzymuje 2 dodatkowe karty łupu"
         ]
     },
     "fh-40": {
-        "name": "Relief Effort",
+        "name": "Akcja ratunkowa",
         "rewards": [
-            "Lose 1 inspiration",
-            "Gain 2 additional loot cards each"
+            "-1 do inspiracji",
+            "Każdy otrzymuje 2 dodatkowe karty łupu"
         ]
     },
     "fh-41": {
-        "name": "Unfettered Shard",
+        "name": "Odłamek Nieposkromionych",
         "rewards": [
-            "Gain 15 gold each",
-            "Gain 2 collective {AXENUT}",
-            "Ancient Technology"
+            "Po 15 szt. złota dla każdego",
+            "Otrzymujecie wspólnie 2 {AXENUT}",
+            "Starożytna Technologia"
         ]
     },
     "fh-42": {
-        "name": "Sunless Trench",
+        "name": "Bezsłoneczny rów",
         "rewards": [
-            "Gain 2 ✔ each",
-            "Add event B-16 to the boat deck",
-            "Add 114.2 to the calendar in three weeks"
+            "Po 2 ✔ dla każdego",
+            "Dodaj wydarzenie B-16 do talii łodzi",
+            "Dodaj sekcję 114.2 do kalendarza za trzy tygodnie"
         ]
     },
     "fh-43": {
-        "name": "Overrun Barricade",
+        "name": "Przerwana barykada",
         "rewards": [
-            "Gain 10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-44": {
-        "name": "Nerve Center",
+        "name": "Centrum nerwowe",
         "rewards": [
-            "Gain 5 gold each",
-            "Gain “Energizing Baton” (Item 73) blueprint"
+            "Po 5 szt. złota dla każdego",
+            "Schemat “Energizing Baton” (przedmiot 73)"
         ]
     },
     "fh-45": {
-        "name": "Living Glacier",
+        "name": "żywy Lodowiec",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 ✔ each"
+            "+1 do morale",
+            "Po 1 ✔ dla każdego"
         ]
     },
     "fh-46": {
-        "name": "Dead Pass",
+        "name": "Martwa Przełęcz",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 10 experience each"
+            "+1 do morale",
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-47": {
-        "name": "Carrion Ridge",
+        "name": "Grań Padliny",
         "rewards": [
-            "Gain 10 gold each",
-            "Gain 2 collective {LUMBER}"
+            "Po 10 szt. złota dla każdego",
+            "Otrzymujecie wspólnie 2 {LUMBER}"
         ]
     },
     "fh-48": {
-        "name": "Blizzard island",
+        "name": "Wyspa Zamieci",
         "rewards": [
-            "Gain 10 gold each",
-            "Gain 2 collective {METAL}"
+            "Po 10 szt. złota dla każdego",
+            "Otrzymujecie wspólnie 2 {METAL}"
         ]
     },
     "fh-49": {
-        "name": "Beneath Sea and Stone",
+        "name": "Na morza dnie",
         "rewards": [
-            "Gain 5 experience each",
-            "Gain 1 inspiration"
+            "Po 5 pkt. doświadczenia dla każdego",
+            "+1 do inspiracji"
         ]
     },
     "fh-50": {
-        "name": "Explosive Descent",
+        "name": "Wybuchowe zejście",
         "rewards": [
-            "Lose 2 inspiration",
-            "Gain 4 collective {LUMBER}",
-            "Gain 4 collective {METAL}"
+            "-2 do inspiracji",
+            "Otrzymujecie wspólnie 4 {LUMBER}",
+            "Otrzymujecie wspólnie 4 {METAL}"
         ]
     },
     "fh-51": {
-        "name": "Orphan's Halls",
+        "name": "Sale Sieroty",
         "rewards": [
-            "Gain 10 experience each",
-            "Gain “Shock Grenades” (Item 74) blueprint"
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Schemat “Shock Grenades” (przedmiot 74)"
         ]
     },
     "fh-52": {
-        "name": "Fleeting Permanence",
+        "name": "Ulotna trwałość",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration"
+            "+1 do morale",
+            "+1 do inspiracji"
         ]
     },
     "fh-53": {
-        "name": "Underwater Throne",
+        "name": "Podwodny tron",
         "rewards": [
-            "Gain 2 ✔ each"
+            "Po 2 ✔ dla każdego"
         ]
     },
     "fh-54": {
-        "name": "Among the Wreckage",
+        "name": "Pośród wraków",
         "rewards": [
-            "Gain 2 ✔ each"
+            "Po 2 ✔ dla każdego"
         ]
     },
     "fh-55": {
-        "name": "Change of Heart",
+        "name": "Bicie Serca",
         "rewards": [
-            "Gain 2 morale",
-            "Gain 2 prosperity",
+            "+2 do morale",
+            "+2 do dobrobytu",
             "Unlock whichever class box is still locked: {FF} or {SD}",
-            "Remove all {ALGOX} events from all outpost event decks",
-            "Add events WO-66 and WO-67 to the winter outpost deck",
-            "Add one +50 card to town guard deck"
+            "Usuńcie wszystkie wydarzenia {ALGOX} z wszystkich talii wydarzeń posterunków",
+            "Dodajcie wydarzenia WO-66 i WO-67 do zimowej talii posterunku",
+            "Dodaj jedną kartę +50 do talii straży miejskiej"
         ]
     },
     "fh-56": {
-        "name": "Call of the Harbinger",
+        "name": "Zew Zwiastuna",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration",
-            "Unlock {FF} class box",
-            "Add event SO-51 to the summer outpost deck",
-            "Add one +50 card to town guard deck"
+            "+1 do morale",
+            "+1 do inspiracji",
+            "Odblokuj pudełko postaci {FF}",
+            "Dodajcie wydarzenie SO-51 do letniej talii posterunku",
+            "Dodaj jedną kartę +50 do talii straży miejskiej"
         ]
     },
     "fh-57": {
-        "name": "Sanctuary of Snow",
+        "name": "Sanktuarium Śniegu",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration",
-            "Unlock {SD} class box",
-            "Add event WO-68 to the winter outpost deck",
-            "Add one +50 card to town guard deck"
+            "+1 do morale",
+            "+1 do inspiracji",
+            "Odblokuj pudełko postaci {SD}",
+            "Dodajcie wydarzenie WO-68 do zimowej talii posterunku",
+            "Dodaj jedną kartę +50 do talii straży miejskiej"
         ]
     },
     "fh-58": {
-        "name": "Orphan's Core",
+        "name": "Rdzeń Sieroty",
         "rewards": [
-            "Gain 1 morale",
-            "Gain “Key Card” (Item 246)",
-            "Gain 3 collective {LUMBER}",
-            "Gain 3 collective {METAL}",
-            "Gain 3 collective {HIDE}",
-            "Unlock {HV} class box",
-            "Remove all {UNFETTERED} events from all outpost event decks",
-            "Add events WO-64 and WO-65 to the winter outpost deck",
-            "Add one +50 card to town guard deck"
+            "+1 do morale",
+            "“Key Card” (przedmiot 246)",
+            "Otrzymujecie wspólnie 3 {LUMBER}",
+            "Otrzymujecie wspólnie 3 {METAL}",
+            "Otrzymujecie wspólnie 3 {HIDE}",
+            "Odblokuj pudełko postaci {HV}",
+            "Usuńcie wszystkie wydarzenia {UNFETTERED} z wszystkich talii wydarzeń posterunków",
+            "Dodajcie wydarzenia WO-64 i WO-65 do zimowej talii posterunku",
+            "Dodaj jedną kartę +50 do talii straży miejskiej"
         ]
     },
     "fh-59": {
-        "name": "Automation Uprising",
+        "name": "Powstanie automatonów",
         "rewards": [
-            "Gain 2 morale",
-            "Gain 2 prosperity",
-            "Gain “Key Card” (Item 246)",
-            "Unlock {HV} class box",
-            "Remove all {UNFETTERED} events from all outpost event decks",
-            "Add event SO-49 to the summer outpost deck and event WO-63 to the winter outpost deck",
-            "Add one +50 card to town guard deck"
+            "+2 do morale",
+            "+2 do dobrobytu",
+            "“Key Card” (przedmiot 246)",
+            "Odblokuj pudełko postaci {HV}",
+            "Usuńcie wszystkie wydarzenia {UNFETTERED} z wszystkich talii wydarzeń posterunków",
+            "Dodajcie wydarzenie SO-49 do letniej talii posterunku i wydarzenie WO-63 do zimowej talii posterunku",
+            "Dodaj jedną kartę +50 do talii straży miejskiej"
         ]
     },
     "fh-60": {
-        "name": "Uniting the Crown",
+        "name": "Scalenie Korony",
         "rewards": [
-            "Gain 2 morale",
-            "Gain 1 prosperity",
-            "Gain 30 experience each",
-            "Unlock whichever class box is still locked: {CR} or {DT}",
-            "Remove all {LURKERS} events from all outpost event decks",
-            "Add event SO-48 to the summer outpost deck and event B-17 to the boat deck",
-            "Add one +50 card to town guard deck"
+            "+2 do morale",
+            "+1 do dobrobytu",
+            "Po 30 pkt. doświadczenia dla każdego",
+            "Odblokuj pudełko postaci: {CR} lub {DT}",
+            "Usuńcie wszystkie wydarzenia {LURKERS} z wszystkich talii wydarzeń posterunków",
+            "Dodajcie wydarzenie SO-48 do letniej talii posterunku i wydarzenie B-17 do talii łodzi",
+            "Dodaj jedną kartę +50 do talii straży miejskiej"
         ]
     },
     "fh-61": {
-        "name": "Life and Death",
+        "name": "Życie i śmierć",
         "rewards": [
-            "Unlock {SH} class box",
-            "Add section 140.3 to the calendar in one week"
+            "Odblokuj pudełko postaci {SH}",
+            "Dodaj sekcję 140.3 do kalendarza za tydzień"
         ]
     },
     "fh-62": {
-        "name": "The Unfettered Seal",
+        "name": "Pieczęć Nieposkromionych",
         "rewards": [
-            "Gain 1 prosperity"
+            "+1 do dobrobytu"
         ]
     },
     "fh-63": {
-        "name": "The Savvas Seal",
+        "name": "Pieczęć Sawasów",
         "rewards": [
-            "Gain 2 prosperity"
+            "+2 do dobrobytu"
         ]
     },
     "fh-64": {
-        "name": "The Frosthaven Seal",
+        "name": "Pieczęć Frosthaven",
         "rewards": [
-            "Gain 3 morale",
-            "Gain 3 prosperity",
-            "Gain 3 ✔ each"
+            "+3 do morale",
+            "+3 do dobrobytu",
+            "Po 3 ✔ dla każdego"
         ]
     },
     "fh-65": {
-        "name": "A Strong Foundation",
+        "name": "Mocne fundamenty",
         "rewards": [
-            "Gain 2 collective {LUMBER}",
-            "Gain 2 collective {METAL}",
-            "Add 95.4 to the calendar in six weeks"
+            "Otrzymujecie wspólnie 2 {LUMBER}",
+            "Otrzymujecie wspólnie 2 {METAL}",
+            "Dodaj sekcję 95.4 do kalendarza za sześć tygodni"
         ]
     },
     "fh-66": {
-        "name": "Elemental Cores",
+        "name": "Rdzenie żywiołów",
         "rewards": [
-            "Gain “Elemental Stone” (Item 212)",
-            "Add 29.3 to the calendar in six weeks"
+            "“Elemental Stone” (przedmiot 212)",
+            "Dodaj sekcję 29.3 do kalendarza za sześć tygodni"
         ]
     },
     "fh-67": {
-        "name": "Core Attunement",
+        "name": "Dostrojenie rdzenia",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 prosperity"
+            "+1 do morale",
+            "+1 do dobrobytu"
         ]
     },
     "fh-68": {
-        "name": "The Face of Torment",
+        "name": "Oblicze udręki",
         "rewards": [
-            "“Aesther Outpost” personal quest complete",
-            "Add 133.1 to the calendar in two weeks"
+            "Cel życiowy: “Aesther Outpost” ukończony",
+            "Dodaj sekcję 133.1 do kalendarza za dwa tygodnie"
         ]
     },
     "fh-69": {
-        "name": "Sacred Soil",
+        "name": "Święta gleba",
         "rewards": [
-            "Gain 1 {ARROWVINE}",
-            "Gain 1 {AXENUT}",
-            "Gain 1 {FLAMEFRUIT}",
-            "Add 15.4 to the calendar in three weeks"
+            "Otrzymujecie 1 {ARROWVINE}",
+            "Otrzymujecie 1 {AXENUT}",
+            "Otrzymujecie 1 {FLAMEFRUIT}",
+            "Dodaj sekcję 15.4 do kalendarza za trzy tygodnie"
         ]
     },
     "fh-70": {
-        "name": "The True Oak",
+        "name": "Prawdziwy Dąb",
         "rewards": [
-            "“The True Oak” personal quest complete",
-            "Gain 1 Prosperity"
+            "Cel życiowy: “The True Oak” ukończony",
+            "+1 do dobrobytu"
         ]
     },
     "fh-71": {
-        "name": "Invasion of the Dock",
+        "name": "Inwazja na doki",
         "rewards": [
             "Damage any one even building between 71 and 89",
-            "Gain 10 experience each",
-            "Add 149.5 to the calendar in five weeks"
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Dodaj sekcję 149.5 do kalendarza za pięć tygodni"
         ]
     },
     "fh-72": {
-        "name": "A Giant Block of Ice",
+        "name": "Olbrzymia bryła lodu",
         "rewards": [
-            "Gain 1 ✔ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "fh-73": {
-        "name": "Flotsam",
+        "name": "Resztki",
         "rewards": [
-            "Gain 3 collective {LUMBER}",
-            "Add 146.1 to the calendar in five weeks"
+            "Otrzymujecie wspólnie 3 {LUMBER}",
+            "Dodaj sekcję 146.1 do kalendarza za pięć tygodni"
         ]
     },
     "fh-74": {
-        "name": "Gaps in the Road",
+        "name": "Problemy na drodze",
         "rewards": [
-            "Gain one random item blueprint"
+            "Losowy schemat przedmiotu"
         ]
     },
     "fh-75": {
-        "name": "Infiltraiting the Lair",
+        "name": "Infiltracja legowiska",
         "rewards": [
-            "Gain 10 gold each"
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "fh-76": {
-        "name": "Apotheosis",
+        "name": "Apoteoza",
         "rewards": [
             [
-                "“Threat from the Deep” personal quest complete",
-                "Gain “Wave Blade” (Item 201)",
+                "Cel życiowy: “Threat from the Deep” ukończony",
+                "“Wave Blade” (przedmiot 201)",
                 "Add event B-18 to the boat deck"
             ],
             []
         ]
     },
     "fh-77": {
-        "name": "Fish King's Ascension",
+        "name": "Wywyższenie Rybiego Króla",
         "rewards": [
-            "“Threat from the Deep” personal quest complete",
-            "Gain “Wave Blade” (Item 201)",
-            "Add event B-19 to the boat deck"
+            "Cel życiowy: “Threat from the Deep” ukończony",
+            "“Wave Blade” (przedmiot 201)",
+            "Dodaj wydarzenie B-19 do talii łodzi"
         ]
     },
     "fh-78": {
-        "name": "The Lurker Problem",
+        "name": "Problem z Czychaczami",
         "rewards": [
-            "Gain 10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-79": {
-        "name": "Relic",
+        "name": "Relikt",
         "rewards": [
-            "Gain 3 morale",
-            "Add 45.2 to the calendar in three weeks"
+            "+3 do morale",
+            "Dodaj sekcję 45.2 do kalendarza za trzy tygodnie"
         ]
     },
     "fh-80": {
-        "name": "Relic Renewed",
+        "name": "Odnowiony Relikt",
         "rewards": [
-            "Gain 2 collective {LUMBER}",
-            "Gain 2 collective {METAL}",
-            "Gain 2 collective {HIDE}",
-            "Gain 2 morale"
+            "Otrzymujecie wspólnie 2 {LUMBER}",
+            "Otrzymujecie wspólnie 2 {METAL}",
+            "Otrzymujecie wspólnie 2 {HIDE}",
+            "+2 do morale"
         ]
     },
     "fh-81": {
-        "name": "Ruinous Research Lab",
+        "name": "Zrójnowane laboratorium badawcze",
         "rewards": [
-            "Gain 1 prosperity",
-            "Gain “Aesther Robe” (Item 70) blueprint"
+            "+1 do dobrobytu",
+            "Schemat “Aesther Robe” (przedmiot 70)"
         ]
     },
     "fh-82": {
-        "name": "Expedition North",
+        "name": "Ekspedycja na północ",
         "rewards": [
-            "Gain 2 prosperity",
-            "Add the following Forgotten Circles items to the Frosthaven supply: 153, 159, and 161"
+            "+2 do dobrobytu",
+            "Dodaj przedmioty Forgotten Circles do zapasów Frosthaven: 153, 159 i 161"
         ]
     },
     "fh-83": {
-        "name": "Rising Brine",
+        "name": "Przypływ słonej wody",
         "rewards": [
-            "Gain “Giant Piranha Pig Spine” (Item 202)"
+            "“Giant Piranha Pig Spine” (przedmiot 202)"
         ]
     },
     "fh-84": {
-        "name": "Here There Be Oozes",
+        "name": "Tamże są Szlamy",
         "rewards": [
-            "Gain “Ooze Vial” (Item 234)"
+            "“Ooze Vial” (przedmiot 234)"
         ]
     },
     "fh-85": {
-        "name": "Deadly Pastimes",
+        "name": "Zabójcze rozgrywki",
         "rewards": [
-            "Gain 15 experience each",
-            "Gain 1 ✔ each"
+            "Po 15 pkt. doświadczenia dla każdego",
+            "Po 1 ✔ dla każdego"
         ]
     },
     "fh-86": {
-        "name": "The Lady in White",
+        "name": "Biała Dama",
         "rewards": [
-            "Gain 2 morale"
+            "+2 do morale"
         ]
     },
     "fh-87": {
-        "name": "The Collection",
+        "name": "Kolekcja",
         "rewards": [
             [
-                "Gain 2 inspiration"
+                "+2 do inspiracji"
             ],
             [
-                "Gain 1 inspiration"
+                "+1 do inspiracji"
             ]
         ]
     },
     "fh-88": {
-        "name": "Collection's Capstone",
+        "name": "Chluba kolekcji",
         "rewards": [
-            "Gain 2 morale"
+            "+2 do morale"
         ]
     },
     "fh-89": {
-        "name": "A Contained Fire",
+        "name": "Zdławiony ogień",
         "rewards": [
-            "Gain 2 collective {ROCKROOT}",
-            "Gain 2 collective {LUMBER}"
+            "Otrzymujecie wspólnie 2 {ROCKROOT}",
+            "Otrzymujecie wspólnie 2 {LUMBER}"
         ]
     },
     "fh-90": {
-        "name": "Frozen Treasure",
+        "name": "Zamarznięty skarb",
         "rewards": [
             [
-                "Gain 1 ✔ each",
+                "Po 1 ✔ dla każdego",
                 "Each character gains 10 gold for each numbered token they looted",
                 "Lose 10 collective gold"
             ],
             [
-                "Gain 1 ✔ each",
+                "Po 1 ✔ dla każdego",
                 "Each character gains 10 gold for each numbered token they looted",
                 "Lose 5 collective gold",
                 "All characters start the next scenario with {MUDDLE.fh} and {CURSE.fh}"
@@ -1710,547 +1710,547 @@ export default {
         ]
     },
     "fh-91": {
-        "name": "Shoreline Scramble",
+        "name": "Przybrzeżna pogoń",
         "rewards": [
-            "Gain 2 collective {LUMBER}",
-            "Gain 1 morale"
+            "Otrzymujecie wspólnie 2 {LUMBER}",
+            "+1 do morale"
         ]
     },
     "fh-92": {
-        "name": "Sinking Ship",
+        "name": "Tonący statek",
         "rewards": [
             "Collectively lose 5xC/2 loot tokens. Loot tokens are then traded in for loot cards",
-            "Add 181.2 to the calendar in one week"
+            "Dodaj sekcję 181.2 do kalendarza za tydzień"
         ]
     },
     "fh-93": {
-        "name": "Midwinter Brawl",
+        "name": "Rozróba w środku zimy",
         "rewards": [
             [
-                "Gain “Small Rat” (Item 235)"
+                "“Small Rat” (przedmiot 235)"
             ],
             [
-                "Gain “Roasted Fowl” (Item 79)"
+                "“Roasted Fowl” (przedmiot 79)"
             ]
         ]
     },
     "fh-94": {
-        "name": "A Grand View",
+        "name": "Wspaniały widok",
         "rewards": [
-            "Gain 10 experience each"
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-95": {
-        "name": "To Bury the Dead",
+        "name": "Pochować zmarłych",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 10 gold each"
+            "+1 do morale",
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "fh-96": {
-        "name": "Underground Station",
+        "name": "Podziemna stacja",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 5 experience each"
+            "+1 do morale",
+            "Po 5 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-97": {
-        "name": "Program Control Nexus",
+        "name": "Centrum kontroli programu",
         "rewards": [
-            "Gain 5 collective {METAL}"
+            "Otrzymujecie wspólnie 5 {METAL}"
         ]
     },
     "fh-98": {
-        "name": "Collapsing Vent",
+        "name": "Zapadający się szyb",
         "rewards": [
-            "Gain 1 prosperity"
+            "+1 do dobrobytu"
         ]
     },
     "fh-99": {
-        "name": "Prison Break",
+        "name": "Ucieczka z więzienia",
         "rewards": [
-            "Gain 10 gold each"
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "fh-100": {
-        "name": "Inside the Swarm",
+        "name": "Wewnątrz roju",
         "rewards": [
-            "Gain 5 gold each",
-            "Gain 10 experience each"
+            "Po 5 szt. złota dla każdego",
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-101": {
-        "name": "Harrower Library",
+        "name": "Biblioteka Dreszczowców",
         "rewards": [
-            "Gain 1 ✔ each",
-            "Gain 10 experience each"
+            "Po 1 ✔ dla każdego",
+            "Po 10 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-102": {
-        "name": "Into the Black",
+        "name": "W czerń",
         "rewards": [
-            "Gain 20 experience each"
+            "Po 20 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-103": {
-        "name": "The Lead Door",
+        "name": "Ołowiane drzwi",
         "rewards": [
-            "Gain 1 ✔ each",
-            "Gain 30 experience each",
-            "Gain 10 gold each"
+            "Po 1 ✔ dla każdego",
+            "Po 30 pkt. doświadczenia dla każdego",
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "fh-104": {
-        "name": "Ruins of the Solstice",
+        "name": "Ruiny Przesilenia",
         "rewards": [
-            "Gain 2 collective {SNOWTHISTLE}",
+            "Otrzymujecie wspólnie 2 {SNOWTHISTLE}",
             "Add event WR-49 to the winter road deck"
         ]
     },
     "fh-105": {
-        "name": "Ruins of the Equinox",
+        "name": "Ruiny Równonocy",
         "rewards": [
-            "Gain 2 collective {FLAMEFRUIT}",
-            "Add 159.4 to the calendar in four weeks"
+            "Otrzymujecie wspólnie 2 {FLAMEFRUIT}",
+            "Dodaj sekcję 159.4 do kalendarza za cztery tygodnie"
         ]
     },
     "fh-106": {
-        "name": "The Tempus Forge",
+        "name": "Kuźnia Tempusa",
         "rewards": [
-            "Gain “Key of Seasons” (Item 213)"
+            "“Key of Seasons” (przedmiot 213)"
         ]
     },
     "fh-107": {
-        "name": "My Private Empire",
+        "name": "Moje prywatne imperium",
         "rewards": [
             [
-                "Gain any 1 collective material resource"
+                "Otrzymujecie wspólnie 1 surowiec materiałowy"
             ],
             [
-                "Gain any 2 collective material resources"
+                "Otrzymujecie wspólnie 2 surowce materiałowe"
             ],
             [
-                "Gain any 3 collective material resources"
+                "Otrzymujecie wspólnie 3 surowce materiałowe"
             ],
             [
-                "Gain any 4 collective material resources"
+                "Otrzymujecie wspólnie 4 surowce materiałowe"
             ],
             [
-                "Gain any 5 collective material resources",
-                "Gain “Cup of Ventillion” (Item 214)"
+                "Otrzymujecie wspólnie 5 surowców materiałowych",
+                "“Cup of Ventillion” (przedmiot 214)"
             ]
         ]
     },
     "fh-108": {
-        "name": "Lustrous Pit",
+        "name": "Świetlisty szyb",
         "rewards": [
-            "Gain 2 morale",
-            "Gain 2 inspiration"
+            "+2 do morale",
+            "+2 do inspiracji"
         ]
     },
     "fh-109": {
-        "name": "Furious Factory",
+        "name": "Wściekła fabryka",
         "rewards": [
-            "Gain 5 collective {METAL}"
+            "Otrzymujecie wspólnie 5 {METAL}"
         ]
     },
     "fh-110": {
-        "name": "Guardian's Temple",
+        "name": "Światynia strażnika",
         "rewards": [
-            "Gain “Rose Guantlet” (Item 75) blueprint"
+            "Schemat “Rose Guantlet” (przedmiot 75)"
         ]
     },
     "fh-111": {
-        "name": "Ice Cave",
+        "name": "Lodowa Jaskinia",
         "rewards": [
-            "Gain “Cracked Mirror” (Item 236)"
+            "“Cracked Mirror” (przedmiot 236)"
         ]
     },
     "fh-112": {
-        "name": "Raised by Wolves",
+        "name": "Wychowani przez wilki",
         "rewards": [
-            "Gain 15 experience each"
+            "Po 15 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-113": {
-        "name": "Lush Grotto",
+        "name": "Bujna grota",
         "rewards": [
-            "Gain any 4 collective herb resources"
+            "Otrzymujecie wspólnie 4 zioła"
         ]
     },
     "fh-114": {
-        "name": "Work Freeze",
+        "name": "Zamrożona robota",
         "rewards": [
-            "Gain 5 collective {HIDE}",
-            "Add 86.1 to the calendar in four weeks"
+            "Otrzymujecie wspólnie 5 {HIDE}",
+            "Dodaj sekcję 86.1 do kalendarza za cztery tygodnie"
         ]
     },
     "fh-115": {
-        "name": "Pylon Problems",
+        "name": "Pylonowy problem",
         "rewards": [
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in one week"
+                "Po 15 pkt. doświadczenia dla każdego",
+                "Dodaj sekcję 66.2 do kalendarza za tydzień"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in two weeks"
+                "Po 15 pkt. doświadczenia dla każdego",
+                "Dodaj sekcję 66.2 do kalendarza za dwa tygodnie"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in three weeks"
+                "Po 15 pkt. doświadczenia dla każdego",
+                "Dodaj sekcję 66.2 do kalendarza za trzy tygodnie"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in four weeks"
+                "Po 15 pkt. doświadczenia dla każdego",
+                "Dodaj sekcję 66.2 do kalendarza za cztery tygodnie"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in five weeks"
+                "Po 15 pkt. doświadczenia dla każdego",
+                "Dodaj sekcję 66.2 do kalendarza za pięć tygodni"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in six weeks"
+                "Po 15 pkt. doświadczenia dla każdego",
+                "Dodaj sekcję 66.2 do kalendarza za sześć tygodni"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in seven weeks"
+                "Po 15 pkt. doświadczenia dla każdego",
+                "Dodaj sekcję 66.2 do kalendarza za siedem tygodni"
             ]
         ]
     },
     "fh-116": {
-        "name": "Caravan Guards",
+        "name": "Strażnicy karawany",
         "rewards": [
             [
-                "Gain 1 morale"
+                "+1 do morale"
             ],
             [
-                "Gain 1 morale",
-                "Gain 1 collective {LUMBER}",
-                "Gain 1 collective {METAL}",
-                "Gain 1 collective {HIDE}"
+                "+1 do morale",
+                "Otrzymujecie wspólnie 1 {LUMBER}",
+                "Otrzymujecie wspólnie 1 {METAL}",
+                "Otrzymujecie wspólnie 1 {HIDE}"
             ],
             [
-                "Gain 1 morale",
-                "Gain 1 collective {LUMBER}",
-                "Gain 1 collective {METAL}",
-                "Gain 1 collective {HIDE}",
-                "Gain any 2 material resources each",
-                "Gain 10 experience each"
+                "+1 do morale",
+                "Otrzymujecie wspólnie 1 {LUMBER}",
+                "Otrzymujecie wspólnie 1 {METAL}",
+                "Otrzymujecie wspólnie 1 {HIDE}",
+                "+2 surowce materiałowe dla każdego",
+                "Po 10 pkt. doświadczenia dla każdego"
             ],
             [
-                "Gain 1 morale",
-                "Gain 1 collective {LUMBER}",
-                "Gain 1 collective {METAL}",
-                "Gain 1 collective {HIDE}",
-                "Gain any 2 material resources each",
-                "Gain 10 experience each",
-                "Gain one random item blueprint"
+                "+1 do morale",
+                "Otrzymujecie wspólnie 1 {LUMBER}",
+                "Otrzymujecie wspólnie 1 {METAL}",
+                "Otrzymujecie wspólnie 1 {HIDE}",
+                "+2 surowce materiałowe dla każdego",
+                "Po 10 pkt. doświadczenia dla każdego",
+                "Losowy schemat przedmiotu"
             ],
             [
-                "Gain 1 morale",
-                "Gain 1 collective {LUMBER}",
-                "Gain 1 collective {METAL}",
-                "Gain 1 collective {HIDE}",
-                "Gain any 2 material resources each",
-                "Gain 10 experience each",
-                "Gain one random item blueprint",
-                "Gain 1 prosperity",
-                "Gain 2 morale"
+                "+1 do morale",
+                "Otrzymujecie wspólnie 1 {LUMBER}",
+                "Otrzymujecie wspólnie 1 {METAL}",
+                "Otrzymujecie wspólnie 1 {HIDE}",
+                "+2 surowce materiałowe dla każdego",
+                "Po 10 pkt. doświadczenia dla każdego",
+                "Losowy schemat przedmiotu",
+                "+1 do dobrobytu",
+                "+2 do morale"
             ]
         ]
     },
     "fh-117": {
-        "name": "A Waiting Game",
+        "name": "Gra w oczekiwanie",
         "rewards": [
-            "Gain 4 collective {HIDE}",
-            "Gain 10 gold each"
+            "Otrzymujecie wspólnie 4 {HIDE}",
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "fh-118": {
-        "name": "Lurker Necromancy",
+        "name": "Czychająca nekromancja",
         "rewards": [
-            "Gain “Amulet of Eternal Life” (Item 66) blueprint",
+            "Schemat “Amulet of Eternal Life” (przedmiot 66)",
             "Trade all tokens in for loot cards"
         ]
     },
     "fh-119": {
-        "name": "Radiant Dust",
+        "name": "Promienny pył",
         "rewards": [
-            "Spend 7 remaining dust to gain “Scepter of Control” (Item 203)",
+            "Spend 7 remaining dust to gain “Scepter of Control” (przedmiot 203)",
             "Spend 1 remaining dust to gain any 1 material resource",
             "Spend 2 remaining dust to gain any 1 herb resource"
         ]
     },
     "fh-120": {
-        "name": "Under the Influence",
+        "name": "Pod wpływem",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 2 collective {LUMBER}",
-            "Add 76.3 to the calendar in ten weeks"
+            "+1 do morale",
+            "Otrzymujecie wspólnie 2 {LUMBER}",
+            "Dodaj sekcję 76.3 do kalendarza za dziesięć tygodni"
         ]
     },
     "fh-121": {
-        "name": "Black Memories",
+        "name": "Czarne wspomnienia",
         "rewards": [
             [
-                "Add 184.3 to the calendar in six weeks"
+                "Dodaj sekcję 184.3 do kalendarza za sześć tygodni"
             ],
             [
-                "Gain “Mind-Thieving Helmet” (Item 193)"
+                "“Mind-Thieving Helmet” (przedmiot 193)"
             ],
             [
-                "Gain 2 morale"
+                "+2 do morale"
             ]
         ]
     },
     "fh-122": {
-        "name": "The Eternal Crave",
+        "name": "Wieczny Głód",
         "rewards": [
             [
-                "Gain 10 gold each"
+                "Po 10 szt. złota dla każdego"
             ],
             [
-                "Gain 15 experience each",
-                "Gain 1 ✔ each"
+                "Po 15 pkt. doświadczenia dla każdego",
+                "Po 1 ✔ dla każdego"
             ]
         ]
     },
     "fh-123": {
-        "name": "The Titan",
+        "name": "Tytan",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration"
+            "+1 do morale",
+            "+1 do inspiracji"
         ]
     },
     "fh-124": {
-        "name": "A Growing Problem",
+        "name": "Rosnący problem",
         "rewards": [
-            "Gain 15 experience each"
+            "Po 15 pkt. doświadczenia dla każdego"
         ]
     },
     "fh-125": {
-        "name": "The Longest Second",
+        "name": "Najdłuższa sekunda",
         "rewards": [
-            "Gain “Temporal Amulet” (Item 194)"
+            "“Temporal Amulet” (przedmiot 194)"
         ]
     },
     "fh-126": {
-        "name": "Joseph the Lion",
+        "name": "Józef Lew",
         "rewards": [
-            "Gain 10 gold each"
+            "Po 10 szt. złota dla każdego"
         ]
     },
     "fh-127": {
-        "name": "Derelict Freighter",
+        "name": "Opuszczony frachtowiec",
         "rewards": [
             [
-                "Gain 10 collective gold"
+                "Otrzymujecie wspólnie 10 szt. złota"
             ],
             [
-                "Gain 10 collective gold",
-                "Gain 2 collective {LUMBER}"
+                "Otrzymujecie wspólnie 10 szt. złota",
+                "Otrzymujecie wspólnie 2 {LUMBER}"
             ],
             [
-                "Gain 10 collective gold",
-                "Gain 2 collective {LUMBER}",
-                "Gain “Tri-Corner Hat” 195"
+                "Otrzymujecie wspólnie 10 szt. złota",
+                "Otrzymujecie wspólnie 2 {LUMBER}",
+                "“Tri-Corner Hat” 195"
             ],
             [
-                "Gain 10 collective gold",
-                "Gain 2 collective {LUMBER}",
-                "Gain “Tri-Corner Hat” 195",
-                "Gain 1 prosperity"
+                "Otrzymujecie wspólnie 10 szt. złota",
+                "Otrzymujecie wspólnie 2 {LUMBER}",
+                "“Tri-Corner Hat” 195",
+                "+1 do dobrobytu"
             ]
         ]
     },
     "fh-128": {
-        "name": "A Tall Drunken Tale",
+        "name": "Opowieść wielce pijana",
         "rewards": [
             [
-                "Gain 1 morale",
-                "Add 100.3 to the calendar in three weeks"
+                "+1 do morale",
+                "Dodaj sekcję 100.3 do kalendarza za trzy tygodnie"
             ],
             [
-                "Gain 2 morale",
-                "Add 100.3 to the calendar in three weeks"
+                "+2 do morale",
+                "Dodaj sekcję 100.3 do kalendarza za trzy tygodnie"
             ],
             [
-                "Gain 3 morale",
-                "Gain “Befuddling Mug” (Item 215)",
-                "Add 100.3 to the calendar in three weeks"
+                "+3 do morale",
+                "“Befuddling Mug” (przedmiot 215)",
+                "Dodaj sekcję 100.3 do kalendarza za trzy tygodnie"
             ]
         ]
     },
     "fh-129": {
-        "name": "How to Lay an Ambush",
+        "name": "Jak przygotować zasadzkę",
         "rewards": [
-            "Gain 1 ✔ each"
+            "Po 1 ✔ dla każdego"
         ]
     },
     "fh-130": {
-        "name": "And Then, a Stream",
+        "name": "A potem strumień",
         "rewards": [
             [
-                "Lose 3 morale",
-                "Gain 1 prosperity",
-                "Gain 10 collective gold for each token carried"
+                "-3 do morale",
+                "+1 do dobrobytu",
+                "Otrzymujecie wspólnie 10 szt. złota for each token carried"
             ],
             [
-                "Gain 5 collective gold for each token carried"
+                "Otrzymujecie wspólnie 5 szt. złota for each token carried"
             ]
         ]
     },
     "fh-131": {
-        "name": "The Dancing Iceberg",
+        "name": "Tańczący lodowiec",
         "rewards": [
-            "Gain 10 experience each",
-            "Gain “Mesmerizing Seashell” (Item 237)"
+            "Po 10 pkt. doświadczenia dla każdego",
+            "“Mesmerizing Seashell” (przedmiot 237)"
         ]
     },
     "fh-132": {
-        "name": "Temple of Feline Power",
+        "name": "Świątynia Kociej Mocy",
         "rewards": [
-            "Gain 1 inspiration"
+            "+1 do inspiracji"
         ]
     },
     "fh-133": {
-        "name": "Bolt",
+        "name": "Piorun",
         "rewards": [
-            "Gain “Cracked Idol” (Item 238)"
+            "“Cracked Idol” (przedmiot 238)"
         ]
     },
     "fh-134": {
-        "name": "Tower of Knowledge",
+        "name": "Wieża Wiedzy",
         "rewards": [
-            "Gain “Tome of Conflict” (Item 219)"
+            "“Tome of Conflict” (przedmiot 219)"
         ]
     },
     "fh-135": {
-        "name": "Belara's Keep",
+        "name": "Twierdza Belary",
         "rewards": [
-            "Gain 2 morale",
-            "Gain 2 prosperity",
-            "Gain 1 inspiration",
-            "Gain “Belara's quill” (Item 220)"
+            "+2 do morale",
+            "+2 do dobrobytu",
+            "+1 do inspiracji",
+            "“Belara's quill” (przedmiot 220)"
         ]
     },
     "fh-136": {
-        "name": "Abandoned Hideout",
+        "name": "Opuszczona kryjówka",
         "rewards": [
-            "Gain 20 gold each",
-            "Gain “Ancient Coin” (Item 245)"
+            "Po 20 szt. złota dla każdego",
+            "“Ancient Coin” (przedmiot 245)"
         ]
     },
     "fh-137": {
-        "name": "Pirate Queen's Haul",
+        "name": "Łup Królowej Piratów",
         "rewards": [
-            "Gain 2 prosperity",
-            "Gain 3 morale",
-            "Gain 30 gold each",
+            "+2 do dobrobytu",
+            "+3 do morale",
+            "Po 30 szt. złota dla każdego",
             "Add one +1 sticker to a money loot card"
         ]
     },
     "fh-201": {
         "name": "Wonder of Nature",
         "rewards": [
-            "“Wanderer's Club” (Item 248)"
+            "“Wanderer's Club” (przedmiot 248)"
         ]
     },
     "fh-202": {
         "name": "Race Against the Clock",
         "rewards": [
-            "“Recalibration Trigger” (Item 249)"
+            "“Recalibration Trigger” (przedmiot 249)"
         ]
     },
     "fh-203": {
         "name": "Scouting Ambush",
         "rewards": [
-            "“Spear of Justice” (Item 250)"
+            "“Spear of Justice” (przedmiot 250)"
         ]
     },
     "fh-204": {
         "name": "The Dead of Night",
         "rewards": [
-            "“Soul Urn” (Item 251)"
+            "“Soul Urn” (przedmiot 251)"
         ]
     },
     "fh-205": {
         "name": "Bones in the Dirt",
         "rewards": [
-            "“Black Earth Codex” (Item 252)"
+            "“Black Earth Codex” (przedmiot 252)"
         ]
     },
     "fh-206": {
         "name": "Divide and Conquer",
         "rewards": [
-            "“Mask of Duality” (Item 253)"
+            "“Mask of Duality” (przedmiot 253)"
         ]
     },
     "fh-207": {
         "name": "Path of Ancestry",
         "rewards": [
-            "“Ancestral Blade” (Item 254)"
+            "“Ancestral Blade” (przedmiot 254)"
         ]
     },
     "fh-208": {
         "name": "Crumbling Descent",
         "rewards": [
-            "“Mountain's Heart” (Item 255)"
+            "“Mountain's Heart” (przedmiot 255)"
         ]
     },
     "fh-209": {
         "name": "Tuning the Resonance",
         "rewards": [
-            "“Sonorous Shard” (Item 256)"
+            "“Sonorous Shard” (przedmiot 256)"
         ]
     },
     "fh-210": {
         "name": "A Magnificent Trap",
         "rewards": [
-            "“Sly Camouflage” (Item 257)"
+            "“Sly Camouflage” (przedmiot 257)"
         ]
     },
     "fh-211": {
         "name": "A Collection of Suffering",
         "rewards": [
-            "“Skull of Agony” (Item 258)"
+            "“Skull of Agony” (przedmiot 258)"
         ]
     },
     "fh-212": {
         "name": "Fighting Snow with Snow",
         "rewards": [
-            "“Storm Carving” (Item 259)"
+            "“Storm Carving” (przedmiot 259)"
         ]
     },
     "fh-213": {
         "name": "Under the Ice",
         "rewards": [
-            "“Freezing Orb” (Item 260)"
+            "“Freezing Orb” (przedmiot 260)"
         ]
     },
     "fh-214": {
         "name": "Recharge",
         "rewards": [
-            "“Energized Module” (Item 261)"
+            "“Energized Module” (przedmiot 261)"
         ]
     },
     "fh-215": {
         "name": "Boiler Room",
         "rewards": [
-            "“Exhaust Boots” (Item 262)"
+            "“Exhaust Boots” (przedmiot 262)"
         ]
     },
     "fh-216": {
         "name": "Wet Work",
         "rewards": [
-            "“Warlord's Skull” (Item 263)"
+            "“Warlord's Skull” (przedmiot 263)"
         ]
     },
     "fh-217": {
         "name": "Crash Against the Waves",
         "rewards": [
-            "“Spiraled Medallion” (Item 264)"
+            "“Spiraled Medallion” (przedmiot 264)"
         ]
     },
     "cs-1": {
@@ -2286,7 +2286,7 @@ export default {
     "cs-7": {
         "name": "Golden Eggs",
         "rewards": [
-            "Gain 30 collective gold"
+            "Otrzymujecie wspólnie 30 szt. złota"
         ]
     },
     "cs-8": {
@@ -2494,13 +2494,13 @@ export default {
     "cs-40": {
         "name": "Smugglers Hideout",
         "rewards": [
-            "Gain 50 collective gold"
+            "Otrzymujecie wspólnie 50 szt. złota"
         ]
     },
     "cs-41": {
         "name": "Curse of the Void",
         "rewards": [
-            "Gain 50 collective gold"
+            "Otrzymujecie wspólnie 50 szt. złota"
         ]
     },
     "cs-42": {

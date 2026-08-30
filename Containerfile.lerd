@@ -1,0 +1,6 @@
+# Containerfile.lerd
+FROM nginx:alpine
+
+COPY nginx.lerd.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 3000
