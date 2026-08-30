@@ -16,12 +16,24 @@ jobs:
           node-version: '16'
           cache: 'npm'
 
+      - name: Cache node_modules
+        id: node-modules-cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies
+        if: steps.node-modules-cache.outputs.cache-hit != 'true'
+        run: npm ci --prefer-offline --no-audit --no-fund
+
       - name: Set up .env
         run: cp .github/.env .env
 
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
+          install: false
           build: npm run production
           start: npx http-server public -p 8080 --silent
           wait-on: 'http://localhost:8080'
