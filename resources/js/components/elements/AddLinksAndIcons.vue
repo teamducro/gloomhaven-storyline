@@ -54,7 +54,7 @@ export default {
             this.itemTextParser.parse(text).each((itemText, id) => {
                 let item = this.itemRepository.find(id);
                 const linkContent = itemText.replace(`“${item._name}”`, `“${this.$t(item.name)}”`);
-                text = text.replace(itemText, `<a class="link" href="#" @click.prevent="$bus.$emit('open-item', {id:${id}})">${linkContent}</a>`);
+                text = text.replace(itemText, `<a class="link" href="#" @click.prevent="$bus.$emit('open-item', {id:'${id}'})">${linkContent}</a>`);
             });
 
             return text;

@@ -18,8 +18,9 @@ class Item {
         this._faq = data.faq;
         this.spent = data.spent || false;
         this.consumed = data.consumed || false;
-        this._game = game;
-        this.translationKey = `items.${this.id}`;
+        // Crossover packs keep their own assets/translations wherever they're merged in.
+        this._game = data.game || game;
+        this.translationKey = `items.${this._game}-${data.id}`;
     }
 
     get name() {
@@ -32,6 +33,10 @@ class Item {
 
     get backDesc() {
         return this._backDesc && this.$tPrefix('backDesc');
+    }
+
+    get flip() {
+        return !!this._backDesc;
     }
 
     get source() {

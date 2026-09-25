@@ -9321,6 +9321,7 @@
             "id": "SA",
             "name": "Satha",
             "game": "mp",
+            "abilityCount": 10,
             "translatedName": "characters.SA.name",
             "starting_group": [
                 "mp_unlocked"
@@ -9547,6 +9548,7 @@
             "id": "HA",
             "name": "Hail",
             "game": "mp",
+            "abilityCount": 9,
             "translatedName": "characters.HA.name",
             "starting_group": [
                 "mp_unlocked"
@@ -9809,6 +9811,7 @@
             "id": "CA",
             "name": "Cassandra",
             "game": "mp",
+            "abilityCount": 10,
             "translatedName": "characters.CA.name",
             "starting_group": [
                 "mp_unlocked"
@@ -9975,6 +9978,7 @@
             "id": "AN",
             "name": "Anaphi",
             "game": "mp",
+            "abilityCount": 11,
             "translatedName": "characters.AN.name",
             "starting_group": [
                 "mp_unlocked"

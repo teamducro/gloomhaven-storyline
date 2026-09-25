@@ -1,45 +1,53 @@
 {
     "scenarios": [
         {
-            "id": 103,
+            "id": "AN1",
             "game": "mp",
             "name": "A Harrowing Deal",
-            "root": true,
             "solo": "AN",
             "rewards": [
-                ""Ribbon of Friendship""
-            ]
+                "“Ribbon of Friendship” (Item AN)"
+            ],
+            "loot": {
+                "coins": 15
+            }
         },
         {
-            "id": 104,
+            "id": "SA1",
             "game": "mp",
             "name": "Horns in the Night",
-            "root": true,
             "solo": "SA",
             "rewards": [
-                ""Crest of Frosthaven""
-            ]
+                "“Crest of Frosthaven” (Item SA)"
+            ],
+            "loot": {
+                "coins": 15
+            }
         },
         {
-            "id": 105,
+            "id": "CA1",
             "game": "mp",
             "name": "Escape from Corruption",
-            "root": true,
             "solo": "CA",
             "rewards": [
-                ""Basin of Prophecy (A)"",
-                ""Basin of Prophecy (B)""
-            ]
+                "“Basin of Prophecy A” (Item CA A)",
+                "“Basin of Prophecy B” (Item CA B)"
+            ],
+            "loot": {
+                "coins": 15
+            }
         },
         {
-            "id": 106,
+            "id": "HA1",
             "game": "mp",
             "name": "Major Annoyance",
-            "root": true,
             "solo": "HA",
             "rewards": [
-                ""No Nonsense Boots""
-            ]
+                "“No Nonsense Boots” (Item HA)"
+            ],
+            "loot": {
+                "coins": 15
+            }
         }
     ]
 }

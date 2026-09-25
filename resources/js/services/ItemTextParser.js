@@ -3,10 +3,12 @@ export default class ItemTextParser {
         let list = collect({});
 
         if (text.includes('(')) {
-            let items = text.match(/“[^”()]+”[^”()]+\(\w+ [\d]+\)/g) || [];
+            // The id itself may contain a space (e.g. crossover pack ids like "CA A"),
+            // so only the leading "Item"/label word is a single \w+ token.
+            let items = text.match(/“[^”()]+”[^”()]+\(\w+ [\w ]+\)/g) || [];
             items.forEach((item) => {
-                const id = parseInt(item.replace(/\D/g, ''));
-                list.put(id, item);
+                const id = item.match(/\(\w+ ([\w ]+)\)$/)[1];
+                list.put(isNaN(id) ? id : parseInt(id), item);
             });
         }
 
@@ -14,6 +16,6 @@ export default class ItemTextParser {
     }
 
     ids(text) {
-        return this.parse(text).keys().map((id) => parseInt(id));
+        return this.parse(text).keys();
     }
 }

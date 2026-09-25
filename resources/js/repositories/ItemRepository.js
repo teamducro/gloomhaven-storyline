@@ -1,5 +1,6 @@
 import Item from "../models/Item";
 import GameData from "../services/GameData";
+import {Game} from "../models/Game";
 
 export default class ItemRepository {
 
@@ -31,9 +32,11 @@ export default class ItemRepository {
         })
     }
 
-    // If id is numeric, prepend the current game
     prefixGame(id) {
-        if (!isNaN(id)) {
+        const alreadyPrefixed = typeof id === 'string'
+            && Object.values(Game).some(game => id.startsWith(game + '-'));
+
+        if (!alreadyPrefixed) {
             // FC uses GH items
             const game = app.game === 'fc' ? 'gh' : app.game;
             id = game + '-' + id;

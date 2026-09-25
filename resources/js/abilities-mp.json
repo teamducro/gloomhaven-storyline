@@ -1,0 +1,930 @@
+[
+    {
+        "name": "bug-bodys bidding",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 81,
+        "id": 1
+    },
+    {
+        "name": "phantasmal flurry",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 23,
+        "id": 2
+    },
+    {
+        "name": "sharp teeth",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 31,
+        "id": 3
+    },
+    {
+        "name": "nocturnal feeding",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 25,
+        "id": 4
+    },
+    {
+        "name": "vermincall",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 7,
+        "id": 5
+    },
+    {
+        "name": "sickening betrayal",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 15,
+        "id": 6
+    },
+    {
+        "name": "touch of atrophy",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 47,
+        "id": 7
+    },
+    {
+        "name": "surrounding shadows",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 16,
+        "id": 8
+    },
+    {
+        "name": "howling apparition",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 93,
+        "id": 9
+    },
+    {
+        "name": "endless biting",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 72,
+        "id": 10
+    },
+    {
+        "name": "black claws",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 1,
+        "initiative": 79,
+        "id": 11
+    },
+    {
+        "name": "anguish",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 0.1,
+        "initiative": 33,
+        "id": 12
+    },
+    {
+        "name": "consume with regret",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 0.2,
+        "initiative": 75,
+        "id": 13
+    },
+    {
+        "name": "rat surprise",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 0.3,
+        "initiative": 89,
+        "id": 14
+    },
+    {
+        "name": "tibers tenacity",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 2,
+        "initiative": 12,
+        "id": 15
+    },
+    {
+        "name": "hidden assault",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 2,
+        "initiative": 17,
+        "id": 16
+    },
+    {
+        "name": "musophobia",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 3,
+        "initiative": 53,
+        "id": 17
+    },
+    {
+        "name": "seeking strikes",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 3,
+        "initiative": 10,
+        "id": 18
+    },
+    {
+        "name": "doks ferocity",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 4,
+        "initiative": 35,
+        "id": 19
+    },
+    {
+        "name": "compulsive hoarding",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 4,
+        "initiative": 62,
+        "id": 20
+    },
+    {
+        "name": "my loyal friend",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 5,
+        "initiative": 91,
+        "id": 21
+    },
+    {
+        "name": "nibbled to death",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 5,
+        "initiative": 83,
+        "id": 22
+    },
+    {
+        "name": "diamartia's dominance",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 6,
+        "initiative": 68,
+        "id": 23
+    },
+    {
+        "name": "revel in misery",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 6,
+        "initiative": 22,
+        "id": 24
+    },
+    {
+        "name": "twin frenzy",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 7,
+        "initiative": 14,
+        "id": 25
+    },
+    {
+        "name": "rat tide",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 7,
+        "initiative": 85,
+        "id": 26
+    },
+    {
+        "name": "powders ingenuity",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 8,
+        "initiative": 39,
+        "id": 27
+    },
+    {
+        "name": "pay the piper",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 8,
+        "initiative": 49,
+        "id": 28
+    },
+    {
+        "name": "her highness",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 9,
+        "initiative": 94,
+        "id": 29
+    },
+    {
+        "name": "treacherous tactics",
+        "game": "mp",
+        "character_id": "AN",
+        "level": 9,
+        "initiative": 59,
+        "id": 30
+    },
+    {
+        "name": "anticipate intricacies",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 1,
+        "initiative": 79,
+        "id": 31
+    },
+    {
+        "name": "peer into battle",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 1,
+        "initiative": 82,
+        "id": 32
+    },
+    {
+        "name": "cursed ground",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 1,
+        "initiative": 5,
+        "id": 33
+    },
+    {
+        "name": "void snare",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 1,
+        "initiative": 17,
+        "id": 34
+    },
+    {
+        "name": "approach of the void",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 1,
+        "initiative": 21,
+        "id": 35
+    },
+    {
+        "name": "duality shards",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 1,
+        "initiative": 39,
+        "id": 36
+    },
+    {
+        "name": "envision the course",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 1,
+        "initiative": 8,
+        "id": 37
+    },
+    {
+        "name": "otherworldly journey",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 1,
+        "initiative": 34,
+        "id": 38
+    },
+    {
+        "name": "ray of light",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 1,
+        "initiative": 48,
+        "id": 39
+    },
+    {
+        "name": "dimensional transfer",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 1,
+        "initiative": 57,
+        "id": 40
+    },
+    {
+        "name": "inspiration from beyond",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 0.1,
+        "initiative": 13,
+        "id": 41
+    },
+    {
+        "name": "call of the nether",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 0.2,
+        "initiative": 87,
+        "id": 42
+    },
+    {
+        "name": "recurrence",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 0.3,
+        "initiative": 18,
+        "id": 43
+    },
+    {
+        "name": "dimensional divide",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 2,
+        "initiative": 52,
+        "id": 44
+    },
+    {
+        "name": "cleansing rite",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 2,
+        "initiative": 23,
+        "id": 45
+    },
+    {
+        "name": "past and future",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 3,
+        "initiative": 40,
+        "id": 46
+    },
+    {
+        "name": "ethereal vortex",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 3,
+        "initiative": 72,
+        "id": 47
+    },
+    {
+        "name": "protective aura",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 4,
+        "initiative": 11,
+        "id": 48
+    },
+    {
+        "name": "enfeebling hex",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 4,
+        "initiative": 25,
+        "id": 49
+    },
+    {
+        "name": "seal their fate",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 5,
+        "initiative": 20,
+        "id": 50
+    },
+    {
+        "name": "constant flux",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 5,
+        "initiative": 37,
+        "id": 51
+    },
+    {
+        "name": "careful attunement",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 6,
+        "initiative": 80,
+        "id": 52
+    },
+    {
+        "name": "tether the planes",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 6,
+        "initiative": 19,
+        "id": 53
+    },
+    {
+        "name": "tear reality",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 7,
+        "initiative": 59,
+        "id": 54
+    },
+    {
+        "name": "time and again",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 7,
+        "initiative": 7,
+        "id": 55
+    },
+    {
+        "name": "deep contemplation",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 8,
+        "initiative": 75,
+        "id": 56
+    },
+    {
+        "name": "planar chaos",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 8,
+        "initiative": 14,
+        "id": 57
+    },
+    {
+        "name": "convergence",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 9,
+        "initiative": 91,
+        "id": 58
+    },
+    {
+        "name": "hand of destiny",
+        "game": "mp",
+        "character_id": "CA",
+        "level": 9,
+        "initiative": 96,
+        "id": 59
+    },
+    {
+        "name": "cant be bothered",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 1,
+        "initiative": 75,
+        "id": 60
+    },
+    {
+        "name": "interesting speciments",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 1,
+        "initiative": 80,
+        "id": 61
+    },
+    {
+        "name": "gather reagents",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 1,
+        "initiative": 21,
+        "id": 62
+    },
+    {
+        "name": "somewhere to be",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 1,
+        "initiative": 10,
+        "id": 63
+    },
+    {
+        "name": "not amused",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 1,
+        "initiative": 47,
+        "id": 64
+    },
+    {
+        "name": "perpetual annoyance",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 1,
+        "initiative": 30,
+        "id": 65
+    },
+    {
+        "name": "minor inconvenience",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 1,
+        "initiative": 28,
+        "id": 66
+    },
+    {
+        "name": "fleeting interest",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 1,
+        "initiative": 76,
+        "id": 67
+    },
+    {
+        "name": "bizarre antics",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 1,
+        "initiative": 13,
+        "id": 68
+    },
+    {
+        "name": "leave me alone",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 0.1,
+        "initiative": 70,
+        "id": 69
+    },
+    {
+        "name": "abundant nuisance",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 0.2,
+        "initiative": 90,
+        "id": 70
+    },
+    {
+        "name": "trial and success",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 0.3,
+        "initiative": 95,
+        "id": 71
+    },
+    {
+        "name": "experimental insights",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 2,
+        "initiative": 24,
+        "id": 72
+    },
+    {
+        "name": "outsource",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 2,
+        "initiative": 68,
+        "id": 73
+    },
+    {
+        "name": "beneath me",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 3,
+        "initiative": 85,
+        "id": 74
+    },
+    {
+        "name": "fading presence",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 3,
+        "initiative": 15,
+        "id": 75
+    },
+    {
+        "name": "fools errand",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 4,
+        "initiative": 26,
+        "id": 76
+    },
+    {
+        "name": "miniaturize",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 4,
+        "initiative": 86,
+        "id": 77
+    },
+    {
+        "name": "dont be a baby",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 5,
+        "initiative": 33,
+        "id": 78
+    },
+    {
+        "name": "trying to remember",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 5,
+        "initiative": 55,
+        "id": 79
+    },
+    {
+        "name": "withering stare",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 6,
+        "initiative": 38,
+        "id": 80
+    },
+    {
+        "name": "dismissive comment",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 6,
+        "initiative": 20,
+        "id": 81
+    },
+    {
+        "name": "tear a new one",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 7,
+        "initiative": 19,
+        "id": 82
+    },
+    {
+        "name": "collect essence",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 7,
+        "initiative": 41,
+        "id": 83
+    },
+    {
+        "name": "kill that one first",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 8,
+        "initiative": 7,
+        "id": 84
+    },
+    {
+        "name": "closed for business",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 8,
+        "initiative": 23,
+        "id": 85
+    },
+    {
+        "name": "fired up",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 9,
+        "initiative": 70,
+        "id": 86
+    },
+    {
+        "name": "the power of enhancement",
+        "game": "mp",
+        "character_id": "HA",
+        "level": 9,
+        "initiative": 98,
+        "id": 87
+    },
+    {
+        "name": "shared glory",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 1,
+        "initiative": 8,
+        "id": 88
+    },
+    {
+        "name": "bring them down",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 1,
+        "initiative": 16,
+        "id": 89
+    },
+    {
+        "name": "blade of the north",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 1,
+        "initiative": 76,
+        "id": 90
+    },
+    {
+        "name": "victory rush",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 1,
+        "initiative": 63,
+        "id": 91
+    },
+    {
+        "name": "dazing sweep",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 1,
+        "initiative": 86,
+        "id": 92
+    },
+    {
+        "name": "lead the charge",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 1,
+        "initiative": 39,
+        "id": 93
+    },
+    {
+        "name": "spur their spirits",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 1,
+        "initiative": 18,
+        "id": 94
+    },
+    {
+        "name": "implacable advance",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 1,
+        "initiative": 82,
+        "id": 95
+    },
+    {
+        "name": "combined might",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 1,
+        "initiative": 22,
+        "id": 96
+    },
+    {
+        "name": "get behind me",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 1,
+        "initiative": 11,
+        "id": 97
+    },
+    {
+        "name": "take command",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 0.1,
+        "initiative": 55,
+        "id": 98
+    },
+    {
+        "name": "wolf pack tactics",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 0.2,
+        "initiative": 26,
+        "id": 99
+    },
+    {
+        "name": "emboldening call",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 0.3,
+        "initiative": 31,
+        "id": 100
+    },
+    {
+        "name": "outmaneuver",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 2,
+        "initiative": 41,
+        "id": 101
+    },
+    {
+        "name": "stand firm",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 2,
+        "initiative": 12,
+        "id": 102
+    },
+    {
+        "name": "a little help here",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 3,
+        "initiative": 15,
+        "id": 103
+    },
+    {
+        "name": "raze",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 3,
+        "initiative": 6,
+        "id": 104
+    },
+    {
+        "name": "strike now",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 4,
+        "initiative": 52,
+        "id": 105
+    },
+    {
+        "name": "northern valor",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 4,
+        "initiative": 84,
+        "id": 106
+    },
+    {
+        "name": "unleash the archers",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 5,
+        "initiative": 64,
+        "id": 107
+    },
+    {
+        "name": "armory",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 5,
+        "initiative": 14,
+        "id": 108
+    },
+    {
+        "name": "crashing steel",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 6,
+        "initiative": 29,
+        "id": 109
+    },
+    {
+        "name": "defiance",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 6,
+        "initiative": 47,
+        "id": 110
+    },
+    {
+        "name": "send them reeling",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 7,
+        "initiative": 20,
+        "id": 111
+    },
+    {
+        "name": "for frosthaven",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 7,
+        "initiative": 79,
+        "id": 112
+    },
+    {
+        "name": "lead from the front",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 8,
+        "initiative": 10,
+        "id": 113
+    },
+    {
+        "name": "bonded through battle",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 8,
+        "initiative": 72,
+        "id": 114
+    },
+    {
+        "name": "fight as one",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 9,
+        "initiative": 37,
+        "id": 115
+    },
+    {
+        "name": "stand against many",
+        "game": "mp",
+        "character_id": "SA",
+        "level": 9,
+        "initiative": 13,
+        "id": 116
+    }
+]

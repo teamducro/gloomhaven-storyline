@@ -96,6 +96,7 @@
 
 <script>
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import SheetRepository from "../repositories/SheetRepository";
 import {ScenarioState} from "../models/ScenarioState";
 import When from "../services/When";
 import CharacterIcon from "../components/elements/CharacterIcon";
@@ -127,6 +128,7 @@ export default {
             states: [ScenarioState.incomplete],
             hasImages: true,
             scenarioRepository: new ScenarioRepository(),
+            sheetRepository: new SheetRepository(),
             gameData: new GameData()
         }
     },
@@ -168,10 +170,24 @@ export default {
                 });
             }
         },
-        applyFilter(scenario) {
-            // Only show scenarios from selected game (GH/FC)
-            if (scenario.game && this.appData.game && scenario.game !== this.appData.game) {
+        crossoverScenarioVisible(scenario) {
+            if (!this.gameData.enabledCrossovers().includes(scenario.game)) {
                 return false;
+            }
+
+            const sheet = this.sheetRepository.make(this.appData.game);
+            const partyCharacters = collect(sheet.characters).pluck('id').toArray();
+
+            return partyCharacters.includes(scenario.solo);
+        },
+        applyFilter(scenario) {
+            // Only show scenarios from selected game (GH/FC), except crossover pack
+            // scenarios (e.g. Mercenary Pack solo scenarios), which show only when
+            // their pack is enabled and their character has been added to the party.
+            if (scenario.game && this.appData.game && scenario.game !== this.appData.game) {
+                if (!this.crossoverScenarioVisible(scenario)) {
+                    return false;
+                }
             }
 
             // Filter is not applied

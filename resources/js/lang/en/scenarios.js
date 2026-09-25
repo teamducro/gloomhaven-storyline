@@ -643,31 +643,6 @@ export default {
             "“Sword of the Sands” (Item 151)"
         ]
     },
-    "mp-103": {
-        "name": "A Harrowing Deal",
-        "rewards": [
-            "“Ribbon of Friendship”"
-        ]
-    },
-    "mp-104": {
-        "name": "Horns in the Night",
-        "rewards": [
-            "“Crest of Frosthaven”"
-        ]
-    },
-    "mp-105": {
-        "name": "Escape from Corruption",
-        "rewards": [
-            "“Basin of Prophecy (A)”",
-            "“Basin of Prophecy (B)”"
-        ]
-    },
-    "mp-106": {
-        "name": "Major Annoyance",
-        "rewards": [
-            "“No Nonsense Boots”"
-        ]
-    },
     "fc-96": {
         "name": "Unexpected Visitors",
         "rewards": [
@@ -2775,6 +2750,31 @@ export default {
         "rewards": [
             "10 experience each",
             "“Savage Cuirass” design (Item RM06)",
+        ]
+    },
+    "mp-AN1": {
+        "name": "A Harrowing Deal",
+        "rewards": [
+            "“Ribbon of Friendship” (Item AN)"
+        ]
+    },
+    "mp-SA1": {
+        "name": "Horns in the Night",
+        "rewards": [
+            "“Crest of Frosthaven” (Item SA)"
+        ]
+    },
+    "mp-CA1": {
+        "name": "Escape from Corruption",
+        "rewards": [
+            "“Basin of Prophecy A” (Item CA A)",
+            "“Basin of Prophecy B” (Item CA B)"
+        ]
+    },
+    "mp-HA1": {
+        "name": "Major Annoyance",
+        "rewards": [
+            "“No Nonsense Boots” (Item HA)"
         ]
     }
 }
