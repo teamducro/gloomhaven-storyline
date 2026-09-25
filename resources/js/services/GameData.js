@@ -32,8 +32,9 @@ import {Game} from "../models/Game";
 import store from "store/dist/store.modern";
 
 export default class GameData {
+    // Crossover packs are not selectable as the main/active game, only as add-on content.
     validate(game) {
-        return this.games().includes(game)
+        return this.games().includes(game) && !this.crossover().includes(game)
     }
 
     games() {
@@ -146,6 +147,8 @@ export default class GameData {
                 return scenariosJotlJson
             case Game.cs:
                 return scenariosCsJson
+            case Game.mp:
+                return scenariosMpJson
             default:
                 return scenariosJson
         }
@@ -189,6 +192,8 @@ export default class GameData {
                 return itemsCsJson
             case Game.fh:
                 return itemsFhJson
+            case Game.mp:
+                return itemsMpJson
             // FC uses GH items
             default:
                 return itemsJson

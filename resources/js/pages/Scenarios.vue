@@ -115,6 +115,7 @@ export default {
                 solo: false
             },
             stateFilter: null,
+            partyCharacterIds: [],
             regions: [],
             columns: [],
             sortFunctions: {
@@ -153,6 +154,9 @@ export default {
             this.regions = this.scenarioRepository.fetchRegionsWithScenarios().items;
             this.hasImages = this.gameData.map(this.appData.game) !== null;
 
+            const sheet = this.sheetRepository.make(this.appData.game);
+            this.partyCharacterIds = collect(sheet.characters).pluck('id').toArray();
+
             this.columns = (new When).filter([
                 new When(this.hasImages, {id: 'image', name: 'Sticker'}),
                 {id: 'state', name: 'State'},
@@ -175,10 +179,7 @@ export default {
                 return false;
             }
 
-            const sheet = this.sheetRepository.make(this.appData.game);
-            const partyCharacters = collect(sheet.characters).pluck('id').toArray();
-
-            return partyCharacters.includes(scenario.solo);
+            return this.partyCharacterIds.includes(scenario.solo);
         },
         applyFilter(scenario) {
             // Only show scenarios from selected game (GH/FC), except crossover pack

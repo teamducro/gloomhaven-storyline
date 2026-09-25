@@ -6,7 +6,7 @@ class Item {
     constructor(data, game) {
         this.id = game + '-' + data.id;
         this._id = data.id;
-        this.number = '#' + String(data.id).padStart(3, '0');
+        this.number = '#' + Item.formatId(data.id);
         this._name = data.name;
         this.cost = data.cost || data.resources;
         this.count = data.count;
@@ -76,6 +76,10 @@ class Item {
     get game() {
         // FC uses GH items
         return this._game === 'fc' ? 'gh' : this._game;
+    }
+
+    static formatId(id) {
+        return /^\d+$/.test(id) ? String(id).padStart(3, '0') : id;
     }
 }
 
