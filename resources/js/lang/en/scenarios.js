@@ -2751,5 +2751,30 @@ export default {
             "10 experience each",
             "“Savage Cuirass” design (Item RM06)",
         ]
+    },
+    "mp-AN1": {
+        "name": "A Harrowing Deal",
+        "rewards": [
+            "“Ribbon of Friendship” (Item AN)"
+        ]
+    },
+    "mp-SA1": {
+        "name": "Horns in the Night",
+        "rewards": [
+            "“Crest of Frosthaven” (Item SA)"
+        ]
+    },
+    "mp-CA1": {
+        "name": "Escape from Corruption",
+        "rewards": [
+            "“Basin of Prophecy A” (Item CA A)",
+            "“Basin of Prophecy B” (Item CA B)"
+        ]
+    },
+    "mp-HA1": {
+        "name": "Major Annoyance",
+        "rewards": [
+            "“No Nonsense Boots” (Item HA)"
+        ]
     }
 }

@@ -141,7 +141,7 @@
                                                       :character="character"
                                                       :playerIndex="playerIndex"/>
 
-                                <card-stack @click="selectAbilities(character.uuid, true)" :src="abilityBackImage()"
+                                <card-stack v-if="character.hasAbilities" @click="selectAbilities(character.uuid, true)" :src="abilityBackImage()"
                                             :width="20" class="cursor-pointer"/>
                             </div>
 

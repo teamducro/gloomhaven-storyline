@@ -4,6 +4,7 @@ import scenariosJson from '../scenarios.json'
 import scenariosFhJson from '../scenarios-fh.json'
 import scenariosJotlJson from '../scenarios-jotl.json'
 import scenariosCsJson from '../scenarios-cs.json'
+import scenariosMpJson from '../scenarios-mp.json'
 import questsJson from '../quests.json'
 import questsFcJson from '../quests-fc.json'
 import questsJotlJson from '../quests-jotl.json'
@@ -16,20 +17,24 @@ import itemsJson from '../items.json'
 import itemsJotlJson from '../items-jotl.json'
 import itemsCsJson from '../items-cs.json'
 import itemsFhJson from '../items-fh.json'
+import itemsMpJson from '../items-mp.json'
 import abilitiesJson from '../abilities.json'
 import abilitiesFcJson from '../abilities-fc.json'
 import abilitiesJotlJson from '../abilities-jotl.json'
 import abilitiesCsJson from '../abilities-cs.json'
 import abilitiesFhJson from '../abilities-fh.json'
+import abilitiesMpJson from '../abilities-mp.json'
 import charactersJson from '../characters.json'
 import attackModifierDecksJson from '../attack-modifier-decks.json'
 import townGuardFhJson from '../town-guard-fh.json'
 import alchemyFhJson from '../alchemy-fh.json'
 import {Game} from "../models/Game";
+import store from "store/dist/store.modern";
 
 export default class GameData {
+    // Crossover packs are not selectable as the main/active game, only as add-on content.
     validate(game) {
-        return this.games().includes(game)
+        return this.games().includes(game) && !this.crossover().includes(game)
     }
 
     games() {
@@ -46,6 +51,26 @@ export default class GameData {
 
     free() {
         return this.games().filter(game => !this.purchasable().includes(game))
+    }
+
+    // Crossover packs are not standalone games: their characters and solo
+    // scenarios are merged into whichever game is actually being played.
+    crossoverData() {
+        return {
+            [Game.mp]: {
+                scenarios: scenariosMpJson.scenarios,
+                items: itemsMpJson
+            }
+        }
+    }
+
+    crossover() {
+        return Object.keys(this.crossoverData())
+    }
+
+    enabledCrossovers() {
+        const enabled = store.get('gamesEnabled', {})
+        return this.crossover().filter(game => enabled[game] !== false)
     }
 
     achievements(game) {
@@ -94,6 +119,27 @@ export default class GameData {
     }
 
     _scenarioData(game) {
+        const data = this._baseScenarioData(game)
+
+        if (this.crossover().includes(game)) {
+            return data
+        }
+
+        // Keep each scenario's own `game` (e.g. "mp") rather than retagging it to the
+        // base game: translations are keyed by game-id, so retagging would orphan them.
+        const crossoverData = this.crossoverData()
+        const extraScenarios = this.enabledCrossovers().flatMap((crossoverGame) => {
+            return crossoverData[crossoverGame].scenarios
+        })
+
+        if (!extraScenarios.length) {
+            return data
+        }
+
+        return {...data, scenarios: [...data.scenarios, ...extraScenarios]}
+    }
+
+    _baseScenarioData(game) {
         switch (game) {
             case Game.fh:
                 return scenariosFhJson
@@ -101,6 +147,8 @@ export default class GameData {
                 return scenariosJotlJson
             case Game.cs:
                 return scenariosCsJson
+            case Game.mp:
+                return scenariosMpJson
             default:
                 return scenariosJson
         }
@@ -124,6 +172,19 @@ export default class GameData {
     }
 
     items(game) {
+        const data = this._baseItems(game)
+
+        if (this.crossover().includes(game)) {
+            return data
+        }
+
+        const crossoverData = this.crossoverData()
+        const extraItems = this.enabledCrossovers().flatMap((crossoverGame) => crossoverData[crossoverGame].items)
+
+        return extraItems.length ? [...data, ...extraItems] : data
+    }
+
+    _baseItems(game) {
         switch (game) {
             case Game.jotl:
                 return itemsJotlJson
@@ -131,6 +192,8 @@ export default class GameData {
                 return itemsCsJson
             case Game.fh:
                 return itemsFhJson
+            case Game.mp:
+                return itemsMpJson
             // FC uses GH items
             default:
                 return itemsJson
@@ -147,6 +210,8 @@ export default class GameData {
                 return abilitiesCsJson
             case Game.fh:
                 return abilitiesFhJson
+            case Game.mp:
+                return abilitiesMpJson
             default:
                 return abilitiesJson
         }

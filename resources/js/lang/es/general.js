@@ -334,6 +334,7 @@ export default {
     "Jaws of the Lion": "Fauces del León",
     "cs": "Escamas carmesís",
     "Crimson Scales": "Escamas carmesís",
+    "mp": "Mercenary Pack",
     "Availability": "Disponibilidad",
     "Sticker": "Pegatina",
     "State": "Estado",

@@ -62,7 +62,9 @@ export default {
                 .last();
         },
         unlockedItems(items, game = 'gh') {
-            let filteredItems = collect(items).filter().keys().all().map(Number)
+            // Ids aren't always numeric: crossover packs like the Mercenary
+            // Pack use ids such as "AN", which Number() would turn into NaN.x
+            let filteredItems = collect(items).filter().keys().all().map((id) => isNaN(id) ? id : Number(id))
             return this.prependGame(game, filteredItems);
         },
         // CS uses the GH "base" items and adds a few more
@@ -126,7 +128,11 @@ export default {
 
             // Sorted because FH is the only game where the unlockedItems aren't strictly at the end.
             // .slice(3) is because the unlockedItems are passed with 'fh-' prepended.
-            return _.uniq(availableItems.concat(unlockedItems).sort((a, b) => +a.slice(3) - b.slice(3)));
+            // Crossover ids (e.g. "fh-AN") aren't numeric after the prefix, fall back to string sorting for those.
+            return _.uniq(availableItems.concat(unlockedItems).sort((a, b) => {
+                const aNum = +a.slice(3), bNum = +b.slice(3);
+                return isNaN(aNum) || isNaN(bNum) ? a.localeCompare(b) : aNum - bNum;
+            }));
         },
         calculateCrossGhItems(buildingRepository) {
             // Initially available items

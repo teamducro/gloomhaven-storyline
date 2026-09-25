@@ -82,7 +82,8 @@ export default {
             }
         },
         setGames(enabledGames) {
-            this.games = enabledGames || app.enabledGames
+            const crossover = this.gameData.crossover()
+            this.games = (enabledGames || app.enabledGames).filter(code => !crossover.includes(code))
         },
         isNotAvailable(code) {
             return this.story && this.gameData.purchasable().includes(code) && !this.story?.games?.includes(code)

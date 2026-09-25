@@ -6,7 +6,7 @@ class Item {
     constructor(data, game) {
         this.id = game + '-' + data.id;
         this._id = data.id;
-        this.number = '#' + String(data.id).padStart(3, '0');
+        this.number = '#' + Item.formatId(data.id);
         this._name = data.name;
         this.cost = data.cost || data.resources;
         this.count = data.count;
@@ -18,8 +18,9 @@ class Item {
         this._faq = data.faq;
         this.spent = data.spent || false;
         this.consumed = data.consumed || false;
-        this._game = game;
-        this.translationKey = `items.${this.id}`;
+        // Crossover packs keep their own assets/translations wherever they're merged in.
+        this._game = data.game || game;
+        this.translationKey = `items.${this._game}-${data.id}`;
     }
 
     get name() {
@@ -32,6 +33,10 @@ class Item {
 
     get backDesc() {
         return this._backDesc && this.$tPrefix('backDesc');
+    }
+
+    get flip() {
+        return !!this._backDesc;
     }
 
     get source() {
@@ -71,6 +76,10 @@ class Item {
     get game() {
         // FC uses GH items
         return this._game === 'fc' ? 'gh' : this._game;
+    }
+
+    static formatId(id) {
+        return /^\d+$/.test(id) ? String(id).padStart(3, '0') : id;
     }
 }
 

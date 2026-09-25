@@ -183,6 +183,28 @@ describe('Items', () => {
         cy.get('#items').contains('Jagged Sword').should('exist');
     });
 
+    it('It can flip a flip item\'s card in the item modal', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+
+        cy.visit('/tracker/#/items');
+        cy.get('.items-to-add-dropdown button').click();
+        cy.get('#item-67').click();
+        utilities.closeModel();
+
+        cy.get('#items').contains('Converging Lenses').click();
+        cy.get('.mdc-dialog').contains('h2', '#067');
+
+        // Starts on the front, flipping via the button shows the back.
+        cy.get('.mdc-dialog .flip-card .inner').should('not.have.class', 'flipped');
+        cy.get('.mdc-dialog').contains('button', 'flip').click();
+        cy.get('.mdc-dialog .flip-card .inner').should('have.class', 'flipped');
+
+        // The whole card image is clickable too, and flips back to the front.
+        cy.get('.mdc-dialog .flip-card').parent().click();
+        cy.get('.mdc-dialog .flip-card .inner').should('not.have.class', 'flipped');
+    });
+
     it('It can add items to characters', () => {
         // Campaign with Brute without items
         cy.visit('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxASwL4BpzQwBMADEcqhjvpLKQMwXhV4F0kAsT6WrtxJAKzcWNQqQBsI3mPYB2adXAAzAMYwAnFJTMZIAIYQAwgCUm+sAG0EAcVMBZBAF1W+uycc79AdxBx8qgD2-iAANiAkfFDACPoATqpQmABuAKYAJkZQ8fqqaKlxYBR4CIk5eQUAqgB2oYGqANZFKAgAQmZIfrgIRgASyF0IAMoA6gP+CAAqAJLj3UNGcwj2k+OsZTGpGoJycNscMOkSWjAcqhKpMAAcEnBEmnKCJCQS+kTHqVxIbWYlqphoACeFAQiE6E3I4O6jChCC+g2EsO0gwUsKuSw0SzgJCxYMGdyxMPx8ImcER+ORpNR+PRsL2S1IDLxEMhgyIRIhJO6RHJEMp3OpENpbMxsPoOPBfzigTAYBs+gAtqlpvkFc0YtABiRugArQJoUJa7qqZoRKUyuWK5WqsAAUWq+gARqEMkaQOltVh0sBWAAHTAhOLahDS-TpEHM7lLDndLkIXndfkIQXdYUTUX4iX4yOg1mkmOguNkrFJuAp0Fp7r02GMms5oh57kFohxnkMpNEctESsIIgZibitb4ACuPr+2TiuXycRgWx2e0EByOJzOF2ut3uGkez1e7w0nxBTswoQBmFS6pKR5PQIACgUADKpNKGlqQ6rD0KhaHId+f2M-j8v3jAC-wQbRfyA1EINTECgNFCDx1SRoL26CBAlCcMkGDTBMJ+BBugBVI1WKboXWfZAJgdJVkDaOJh3yfCEF9AomhIhAAEdh3PNA2LiVI0EwPilWqNBmmDYdhxwmi512fZDmOCRTnOS4bjuB4nheN4Pi4boAA9fWQSJsCAA/items');
