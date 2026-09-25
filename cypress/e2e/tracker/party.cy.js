@@ -168,6 +168,41 @@ describe('Party', () => {
         cy.get('#scenarios').contains('Caravan Escort').should('be.visible');
     });
 
+    it('It shows lock tooltip on locked party characters and updates after unlock', () => {
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+
+        cy.get('#character-SK').should('have.attr', 'title', 'Locked');
+        cy.get('label[for="character-SK"]').should('have.attr', 'title', 'Locked');
+
+        cy.get('#character-SK').click();
+        cy.get('#character-SK').should('not.have.attr', 'title', 'Locked');
+        cy.get('label[for="character-SK"]').should('not.have.attr', 'title', 'Locked');
+    });
+
+    it('It updates character tooltips when switching games', () => {
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+
+        cy.get('#character-BR').should('have.attr', 'title', 'Brute');
+        cy.get('label[for="character-BR"]').should('have.attr', 'title', 'Brute');
+
+        cy.get('#character-DF').should('have.attr', 'title', 'Locked');
+        cy.get('label[for="character-DF"]').should('have.attr', 'title', 'Locked');
+
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+
+        cy.get('#character-DF').should('have.attr', 'title', 'Drifter');
+        cy.get('label[for="character-DF"]').should('have.attr', 'title', 'Drifter');
+        
+        cy.get('#character-BR').should('have.attr', 'title', 'Locked');
+        cy.get('label[for="character-BR"]').should('have.attr', 'title', 'Locked');
+    });
+
     it('it unlocks envelope X', () => {
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);

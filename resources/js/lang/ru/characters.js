@@ -394,7 +394,7 @@ export default {
             "Поменяйте 2 карты {+0_WHITE} на 2 {AGAIN} {PIERCE} 3",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{+3_WHITE} if {PROJECTILE} {BM_CIRCLE}”",
             "Добавьте 1 карту {+2_WHITE} {IMMOBILIZE}",
-            "Поменяйте 1 карту {+1_WHITE} на 2 {+1_WHITE} “{RELALIATE} 1 карту {RANGE} 3”",
+            "Поменяйте 1 карту {+1_WHITE} на 2 {+1_WHITE} “{RETALIATE} 1 карту {RANGE} 3”",
             "Добавьте 2 карты {+1_WHITE} “{PULL} 3 (на себя), toward the target”",
             "Добавьте 1 карту {+0_WHITE} “{STRENGTHEN} (на себя)”",
             "Добавьте 1 карту {+0_WHITE} {STUN}",
@@ -914,6 +914,71 @@ export default {
             "Ignore item {-1} effects, and, whenever you would gain {IMPAIR.fh}, prevent the condition",
             "Whenever you declare a long rest during card selection, gain {SHIELD.fh}1 for the round",
             "Gain advantage on all your attacks performed while occupying or targeting enemies occupying water hexes"
+        ]
+    },
+    "SA": {
+        "name": "Satha",
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{SHIELD.fh}1” {AGAIN} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {ICE} card",
+            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally and self” card",
+            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
+            "Add one {+0_WHITE} “Grant one ally within {RANGE.fh}3: {ATTACK.fh}2 {RANGE.fh}3 or {ATTACK.fh}3” card",
+            "Add one {AGAIN} {DISARM.fh} card and one {AGAIN} “Grant one ally within {RANGE.fh}3: {MOVE.fh}2” card",
+            "Add two {AGAIN} “{WARD.fh}, {RANGE.fh}1” cards",
+            "Ignore item {-1} effects and whenever you would gain {STUN.fh}, prevent the condition",
+            "Whenever you long rest, perform: {STRENGTHEN.fh}, {TARGET.fh}1 ally, {RANGE.fh}3",
+            "All initiative values may be discussed freely and precisely",
+            "The first time each scenario that you or an ally exhaust, perform: {HEAL.fh}3, {TARGET.fh}all, {WARD.fh}, {STRENGTHEN.fh}"
+        ]
+    },
+    "HA": {
+        "name": "Hail",
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{WOUND.fh} or {IMMOBILIZE.fh}” card",
+            "Replace one {-1_WHITE} card with one {+1_WHITE} {WILD} card",
+            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{POISON.fh} or {MUDDLE.fh}” card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” {AGAIN} card",
+            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
+            "Add one {+1_WHITE} {STUN.fh} card",
+            "Add one {+3_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 ally” card",
+            "Ignore scenario effects and add two {+1_WHITE} cards",
+            "Whenever you short rest, you may choose which card to lose",
+            "Your and your allies' enhancements cost five gold less and whenever an ally enhances a card, you gain five gold",
+            "Add one {+1_WHITE} “{HA} gains 1 {RESOLVE_WHITE}” card to the monster attack modifier deck"
+        ]
+    },
+    "CA": {
+        "name": "Cassandra",
+        "perks": [
+            "Remove one {-2_WHITE} card",
+            "Remove two {-1_WHITE} cards",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{BLESS.fh}, self or {TARGET.fh}1 ally” card",
+            "Replace one {+0_WHITE} card with one {+2_WHITE} “Add +1{ATTACK.fh} if the top card of the monster attack modifier deck is revealed” card",
+            "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT_OR_DARK} card",
+            "Add one {+1_WHITE} “Place this card in your active area. When you next place a {RIFT_WHITE}, discard this card to place another {RIFT_WHITE} within {RANGE.fh}1 of it” {AGAIN} card",
+            "Ignore scenario effects and add two {+1_WHITE} cards",
+            "Whenever you long rest, you may read one unread {SECTION} from the current scenario’s “Section Links",
+            "Whenever you place a {RIFT_WHITE}, you may perform “{PULL.fh}1, {TARGET.fh}1 ally or enemy, {RANGE.fh}1” as if you occupied a hex containing a {RIFT_WHITE}",
+            "Whenever a deck is shuffled, you may set aside all revealed cards from that deck and place them back on top after shuffling"
+        ]
+    },
+    "AN": {
+        "name": "Anaphi",
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON.fh} card",
+            "Replace two {+0_WHITE} cards with one {+1_WHITE} “Add +1{ATTACK.fh} when drawn by a summon” card",
+            "Replace one {+0_WHITE} card with one {+0_WHITE} {STUN.fh} card",
+            "Replace one {+1_WHITE} card with one {+1_WHITE} “{INVISIBLE.fh}, self” card",
+            "Add one {+2_WHITE} {WIND_OR_DARK} card",
+            "Add one {+2_WHITE} “{STRENGTHEN.fh}, 1 of your summons” card",
+            "Ignore scenario effects and remove one {+0_WHITE} card",
+            "Whenever you long rest, you may {WIND_OR_DARK}",
+            "Once each scenario, during your turn, all enemies adjacent to a wall suffer {DAMAGE.fh}1",
+            "At the start of the first round of each scenario, after all ability cards have been revealed, control one enemy within {RANGE.fh}5: {MOVE.fh}2"
         ]
     }
 }

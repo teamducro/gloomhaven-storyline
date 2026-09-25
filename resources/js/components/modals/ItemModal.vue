@@ -1,11 +1,28 @@
 <template>
     <div>
-        <modal ref="modal" :title="item ? item.number : ''">
+        <modal ref="modal" :title="item ? item.number : ''" :overflowHidden="animating">
             <div v-if="item" slot="content" class="w-full h-full flex outline-none">
                 <div class="flex-1 mr-3">
-                    <webp :src="item.image" :alt="$t(item.name)"
-                          class="w-full rounded-lg sm:rounded-xl" style="max-width: 400px;"/>
-                    <webp v-if="item.backImage" :src="item.backImage" :alt="$t(item.name)"
+                    <div v-if="item.flip" class="relative cursor-pointer" style="max-width: 400px;" @click="flip">
+                        <flip-card :flipped="flipped" class="w-full">
+                            <template v-slot:front>
+                                <webp :src="item.image" :alt="$t(item.name)" class="w-full rounded-lg sm:rounded-xl"/>
+                            </template>
+                            <template v-slot:back>
+                                <webp :src="item.backImage" :alt="$t(item.name)" class="w-full rounded-lg sm:rounded-xl"/>
+                            </template>
+                        </flip-card>
+
+                        <!-- push the card under the flip card to the same aspect ratio -->
+                        <webp :src="item.image" class="invisible"/>
+
+                        <button type="button"
+                                class="mdc-icon-button mdc-button--raised material-icons p-2 !bg-black2-50 rounded-full absolute top-0 left-0 m-2 z-5"
+                                @click.stop="flip">
+                            flip
+                        </button>
+                    </div>
+                    <webp v-else :src="item.image" :alt="$t(item.name)"
                           class="w-full rounded-lg sm:rounded-xl" style="max-width: 400px;"/>
                 </div>
 
@@ -32,11 +49,16 @@
 
 <script>
 import ItemRepository from "../../repositories/ItemRepository";
+import FlipCard from "../elements/FlipCard";
+import Helpers from "../../services/Helpers";
 
 export default {
+    components: {FlipCard},
     data() {
         return {
             item: null,
+            flipped: false,
+            animating: false,
             itemRepository: new ItemRepository()
         }
     },
@@ -52,9 +74,17 @@ export default {
     methods: {
         open(item) {
             this.item = item;
+            this.flipped = false;
+            this.animating = false;
 
             this.$refs['modal'].open();
             this.$refs['buy-item']?.refresh();
+        },
+        async flip() {
+            this.flipped = !this.flipped;
+            this.animating = true;
+            await Helpers.sleep(600);
+            this.animating = false;
         },
         close() {
             this.unsetItem();

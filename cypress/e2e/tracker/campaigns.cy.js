@@ -12,19 +12,17 @@ describe('Campaigns', () => {
         cy.visit('/tracker/#/campaigns');
 
         utilities.startServer();
-        cy.route({
-            method: 'POST',
-            url: 'login/story-code',
-            status: 422,
-            response: 'fixture:incorrect-code.json'
+        cy.intercept('POST', '**/login/story-code', {
+            statusCode: 422,
+            fixture: 'incorrect-code.json'
         }).as('storyCode');
 
         utilities.scrollTo('50%');
         cy.get('#add-shared-campaign').within(() => {
             cy.get('input[name=code]').type('123456', {scrollBehavior: false});
             cy.get('form').submit();
-            cy.wait('@storyCode').should((xhr) => {
-                expect(xhr.requestBody.code).eq('123456');
+            cy.wait('@storyCode').should((interception) => {
+                expect(interception.request.body.code).eq('123456');
             });
             cy.contains('The provided code is incorrect.');
         });
@@ -34,19 +32,17 @@ describe('Campaigns', () => {
         cy.visit('/tracker/#/campaigns');
 
         utilities.startServer();
-        cy.route({
-            method: 'POST',
-            url: 'mail-login-link',
-            status: 422,
-            response: 'fixture:incorrect-email.json'
+        cy.intercept('POST', '**/mail-login-link', {
+            statusCode: 422,
+            fixture: 'incorrect-email.json'
         }).as('mailLoginLink');
 
         utilities.scrollTo('50%');
         cy.get('#request-login-link').within(() => {
             cy.get('input[name=email]').type('test', {scrollBehavior: false});
             cy.get('form').submit();
-            cy.wait('@mailLoginLink').should((xhr) => {
-                expect(xhr.requestBody.email).eq('test');
+            cy.wait('@mailLoginLink').should((interception) => {
+                expect(interception.request.body.email).eq('test');
             });
             cy.contains('The email must be a valid email address.');
         });
@@ -56,10 +52,8 @@ describe('Campaigns', () => {
         cy.visit('/tracker/#/campaigns');
 
         utilities.startServer();
-        cy.route({
-            method: 'POST',
-            url: 'mail-login-link',
-            response: 'fixture:request-login-email.json'
+        cy.intercept('POST', '**/mail-login-link', {
+            fixture: 'request-login-email.json'
         }).as('mailLoginLink');
 
         utilities.scrollTo('50%');

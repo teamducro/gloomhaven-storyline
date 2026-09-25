@@ -1,0 +1,7 @@
+domains:
+  - gloomhaven-storyline
+node_version: "16"
+secured: true
+container:
+  port: 3000
+  containerfile: Containerfile.lerd

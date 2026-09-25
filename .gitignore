@@ -2,11 +2,11 @@
 /node_modules
 /vendor
 .env
+!/.github/.env
 npm-debug.log
 /public
 .DS_Store
 /cypress/examples
 /cypress/videos
 /cypress/screenshots
-/cypress/fixtures
 .vscode

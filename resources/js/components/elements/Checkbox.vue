@@ -6,6 +6,7 @@
                v-model="isChecked"
                :disabled="isDisabled"
                :id="id"
+               :title="title"
                @change="changed"/>
         <div class="mdc-checkbox__background">
             <svg class="mdc-checkbox__checkmark"
@@ -43,6 +44,10 @@ export default {
         autoDisable: {
             type: Boolean,
             default: true
+        },
+        title: {
+            type: String,
+            default: undefined
         },
     },
     data() {

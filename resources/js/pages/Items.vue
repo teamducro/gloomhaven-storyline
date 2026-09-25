@@ -312,7 +312,8 @@ export default {
             this.items = items
         },
         changeItem(id, isChecked) {
-            const item = parseInt(id.replace('item-', ''));
+            const key = id.replace('item-', '');
+            const item = isNaN(key) ? key : parseInt(key);
             Vue.set(this.sheet.itemDesigns, item, isChecked);
             this.refreshItems();
             this.store();

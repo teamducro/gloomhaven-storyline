@@ -234,7 +234,9 @@ class Sheet {
     }
 
     removeInvalid(list, maxId) {
-        return collect(list).filter((value, key) => key >= 0 && key <= maxId).all();
+        // Crossover packs (e.g. Mercenary Pack) use non-numeric ids like "AN1",
+        // which the numeric range check below doesn't apply to; keep them as-is.
+        return collect(list).filter((value, key) => isNaN(key) || (key >= 0 && key <= maxId)).all();
     }
 
     read() {

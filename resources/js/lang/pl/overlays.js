@@ -1,44 +1,44 @@
 export default {
     "fh-A": {
-        "name": "Boat"
+        "name": "Łódź"
     },
     "fh-B": {
-        "name": "Sled"
+        "name": "Sanie"
     },
     "fh-C": {
-        "name": "Climbing Gear"
+        "name": "Sprzęt Wspinaczkowy"
     },
     "fh-D": {
-        "name": "Ice Spike"
+        "name": "Lodowy Kolec"
     },
     "fh-E": {
-        "name": "Portcullis"
+        "name": "Opuszczana krata"
     },
     "fh-F": {
-        "name": "Statue"
+        "name": "Posąg"
     },
     "fh-G_red": {
-        "name": "Red Well"
+        "name": "Czerwona studnia"
     },
     "fh-G_blue": {
-        "name": "Blue Well"
+        "name": "Niebieska studnia"
     },
     "fh-H": {
-        "name": "Stage"
+        "name": "Scena"
     },
     "fh-J": {
-        "name": "Wall"
+        "name": "Mur"
     },
     "fh-K": {
-        "name": "Wall"
+        "name": "Mur"
     },
     "fh-L": {
-        "name": "Wall"
+        "name": "Mur"
     },
     "fh-M": {
-        "name": "Wall"
+        "name": "Mur"
     },
     "fh-N": {
-        "name": "Wall"
+        "name": "Mur"
     }
 }
