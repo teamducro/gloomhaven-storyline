@@ -19,6 +19,21 @@ jobs:
             '[to_entries | group_by(.key % 3)[] | [.[].value] | join(",")]')
           echo "specs=$specs" >> "$GITHUB_OUTPUT"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+
+      - name: Cache node_modules
+        id: node-modules-cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies
+        if: steps.node-modules-cache.outputs.cache-hit != 'true'
+        run: npm ci --prefer-offline --no-audit --no-fund
+
   test:
     needs: prepare
     runs-on: ubuntu-latest
@@ -32,18 +47,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '16'
-          cache: 'npm'
 
-      - name: Cache node_modules
-        id: node-modules-cache
+      - name: Restore node_modules
         uses: actions/cache@v4
         with:
           path: node_modules
           key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-
-      - name: Install dependencies
-        if: steps.node-modules-cache.outputs.cache-hit != 'true'
-        run: npm ci --prefer-offline --no-audit --no-fund
 
       - name: Cache Cypress binary
         uses: actions/cache@v4
