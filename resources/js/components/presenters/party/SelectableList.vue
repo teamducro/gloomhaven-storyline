@@ -33,15 +33,13 @@
         <div :key="key" :id="(id || slugify(title)) + '-bedges'">
             <span v-for="item in checkedItems" :key="item">
                 <slot name="item" :item="item">
-                    <bedge class="mr-2 mt-2 white rounded-md animate__animated"
+                    <bedge class="mr-2 mt-2 white rounded-md cursor-pointer animate__animated"
                            :class="{
-                                'cursor-pointer': !appData.read_only,
                                 'animate__flipInX': animationsEnabled  && addedItems.includes(item),
                                 'animate__flipOutX': animationsEnabled && removedItems.includes(item)
                             }"
-                           @click="(e) => {deselect(item)}">
+                           @click="(e) => {$emit('view', item)}">
                         {{ item }}
-                        <span class="ml-1" v-if="!appData.read_only">×</span>
                     </bedge>
                 </slot>
             </span>

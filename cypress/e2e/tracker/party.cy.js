@@ -85,6 +85,8 @@ describe('Party', () => {
         cy.get('.mdc-list-item__text span').contains('50').click();
         utilities.closeModel();
         cy.get('.bedge').contains('50').should('be.visible').click();
+        cy.get('.mdc-dialog__title').contains('City Event #50').should('be.visible');
+        cy.get('.mdc-dialog__content button img[alt="Remove #50"]').click();
         cy.get('.bedge').contains('50').should('not.exist');
     });
 
@@ -108,8 +110,10 @@ describe('Party', () => {
 
         utilities.scrollTo('35%');
         cy.get('#city-events-bedges .bedge').contains('10').click();
+        cy.get('.mdc-dialog__content button img[alt="Remove #10"]').click();
         cy.get('#city-events-bedges .bedge').contains('10').should('not.exist');
         cy.get('#city-events-bedges .bedge').contains('15').click();
+        cy.get('.mdc-dialog__content button img[alt="Remove #15"]').click();
         cy.get('#city-events-bedges .bedge').contains('15').should('not.exist');
 
         utilities.scrollTo('35%');
@@ -149,6 +153,7 @@ describe('Party', () => {
         utilities.scrollTo('50%');
         cy.get('button').contains('Draw').first().click();
         cy.get('.mdc-dialog__title').contains('City Event #').should('be.visible');
+        cy.get('.mdc-dialog__content img[alt^="Remove #"]').should('not.exist');
         cy.get('.mdc-dialog__content button').contains('A').click();
         cy.get('.mdc-dialog__content button').contains('A').should('not.exist');
         cy.get('.mdc-dialog__content .blur').should('be.visible');

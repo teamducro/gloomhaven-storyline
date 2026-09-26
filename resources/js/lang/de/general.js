@@ -435,6 +435,8 @@ export default {
     "Persistent bonus": "Persistent bonus",
     "Targets multiple figures/tiles": "Targets multiple figures/tiles",
     "Existing hexes": "Existing hexes",
+    "Enhance abilities": "Enhance abilities",
+    "No characters in the party": "No characters in the party",
     "Enhanced card limit reached (prosperity level {level})": "Enhanced card limit reached (prosperity level {level})",
     "Recover": "Wiedererhalten",
     "Refresh": "Erneuern",

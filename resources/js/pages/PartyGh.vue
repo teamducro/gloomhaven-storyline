@@ -53,6 +53,7 @@
                     :label="$t('Add city events')"
                     :items.sync="sheet.city"
                     @change="store"
+                    @view="(item) => openCard(item, 'C')"
                     ref="city-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
@@ -69,6 +70,7 @@
                     :label="$t('Add road events')"
                     :items.sync="sheet.road"
                     @change="store"
+                    @view="(item) => openCard(item, 'R')"
                     ref="road-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
@@ -86,6 +88,7 @@
                     :label="$t('Add rift events')"
                     :items.sync="sheet.rift"
                     @change="store"
+                    @view="(item) => openCard(item, 'RIFT')"
                     ref="rift-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
@@ -274,11 +277,14 @@ export default {
         },
         draw(checkedItems, type) {
             let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
-            console.log(this.game, this.appData.game)
             if (id) {
                 const card = type + '-' + id;
-                this.$bus.$emit('open-event-card', {id: card, game: this.appData.game});
+                this.$bus.$emit('open-event-card', {id: card, game: this.appData.game, viaDraw: true});
             }
+        },
+        openCard(id, type) {
+            const card = type + '-' + id;
+            this.$bus.$emit('open-event-card', {id: card, game: this.appData.game});
         },
         removeCard(card) {
             this.sheet[card.folder][card.id] = false;

@@ -30,7 +30,7 @@
                     <div>
                         <button v-if="achievement.is_manual && achievement.manual_awarded"
                                 class="mdc-button mdc-button--raised origin-right transform scale-75 my-4"
-                                @click="removeManualAchievement(achievement)">
+                                :disabled="appData.read_only" @click="removeManualAchievement(achievement)">
                             <i class="material-icons mdc-button__icon">delete</i>
                             <span class="mdc-button__label">{{ $t('Remove') }}</span>
                         </button>
@@ -57,6 +57,7 @@ import AchievementRepository from "../../repositories/AchievementRepository";
 import ScenarioNumber from "../elements/ScenarioNumber";
 
 export default {
+    inject: ['appData'],
     components: {ScenarioNumber},
     data() {
         return {

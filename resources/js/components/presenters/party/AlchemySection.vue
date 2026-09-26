@@ -19,7 +19,8 @@
                                 <webp :src="cell.item.image" width="45" class="top-0 absolute max-w-none rounded item-thumbnail"
                                       :alt="$t(cell.item.name)" :animate="true"/>
                             </a>
-                            <a v-else @click.prevent="brew(cell)" class="cursor-pointer outline-gray rounded" href="#"/>
+                            <a v-else @click.prevent="brew(cell)" class="cursor-pointer outline-gray rounded"
+                               :class="{'outline-green-700': canAfford(cell.item.cost)}" href="#"/>
                         </template>
                     </template>
                 </div>
@@ -51,7 +52,7 @@
                         <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                     </button>
                     <button type="button" class="mdc-button mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="yes"
-                            @click="unlock">
+                            :disabled="appData.read_only" @click="unlock">
                         <span class="mdc-button__label">{{ $t('Confirm') }}</span>
                     </button>
                 </template>
@@ -145,6 +146,27 @@ export default {
             } else {
                 this.anyIndex++;
             }
+        },
+        canAfford(cost) {
+            if (!cost) {
+                return true;
+            }
+
+            const remaining = {...this.sheet.resources};
+            let anyNeeded = 0;
+
+            for (const [resource, count] of Object.entries(cost)) {
+                if (resource === 'any') {
+                    anyNeeded = count;
+                } else if (resource !== 'item') {
+                    if ((remaining[resource] || 0) < count) {
+                        return false;
+                    }
+                    remaining[resource] -= count;
+                }
+            }
+
+            return Object.values(remaining).reduce((sum, count) => sum + count, 0) >= anyNeeded;
         },
         isUnlocked(cell) {
             if (cell.recipe) {

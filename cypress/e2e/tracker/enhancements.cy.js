@@ -395,6 +395,67 @@ describe('Enhancements', () => {
         cy.get('.ability-modal').contains('p', 'Cost: 70 Gold');
     });
 
+    it('It turns enhancements on when the Enhancer is built, and remembers turning them off', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+
+        cy.visit('/tracker/#/characters');
+        utilities.openAbilities('Blinkblade');
+        cy.get('#desktop-enable-enhancements').should('not.be.checked');
+
+        cy.window().then((win) => {
+            win.app.buildings.firstWhere('id', 44).state = 'available';
+        });
+        cy.visit('/tracker/#/buildings');
+        cy.contains('span', '44 Enhancer').closest('.grid').find('button').click();
+        // Not enough resources: confirm building it anyway.
+        cy.get('.mdc-dialog--open').contains('button', 'Confirm').click();
+
+        cy.visit('/tracker/#/characters');
+        utilities.openAbilities('Blinkblade', false);
+        cy.get('#desktop-enable-enhancements').should('be.checked');
+
+        // Turning them off afterwards sticks.
+        cy.get('#desktop-enable-enhancements').uncheck();
+        cy.reload();
+        utilities.openAbilities('Blinkblade', false);
+        cy.get('#desktop-enable-enhancements').should('not.be.checked');
+    });
+
+    it('It turns enhancements on when "The Power of Enhancement" is awarded in Gloomhaven', () => {
+        // Completing scenario 14 awards the global achievement.
+        cy.visit('/tracker?states=1_c-2_c-4_c-6_c-7_c-8_c-14_c');
+        cy.window().its('app.achievements').invoke('firstWhere', 'id', 'GTPE').its('awarded').should('eq', true);
+
+        cy.visit('/tracker/#/characters');
+        utilities.openAbilities();
+        cy.get('#desktop-enable-enhancements').should('be.checked');
+    });
+
+    it("It opens a party member's abilities from the Enhancer building card", () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Blinkblade');
+
+        cy.window().then((win) => {
+            const enhancer = win.app.buildings.firstWhere('id', 44);
+            enhancer.state = 'built';
+            enhancer.level = 1;
+        });
+
+        cy.visit('/tracker/#/buildings');
+        cy.contains('span', '44 Enhancer').click();
+        cy.get('.building-modal .enhancer-character').should('have.length', 1).contains('Blinkblade').click();
+
+        // Lands on Blinkblade's abilities, with enhancements turned on so the cards can be enhanced.
+        cy.url().should('include', '#/characters?abilities=');
+        cy.get('#desktop-enable-enhancements').should('be.checked');
+        openAbilityByImage('blurry-jab');
+        abilityModalButton('Enhance').should('exist');
+    });
+
     it('It blocks enhancement changes for read-only viewers', () => {
         enableAndOpenAbility('available-avalanche');
         abilityModalButton('Enhance').click();

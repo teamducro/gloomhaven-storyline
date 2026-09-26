@@ -34,6 +34,10 @@
                             class="mdc-button origin-left transform scale-90 mdc-button--raised">
                         <span class="mdc-button__label">B</span>
                     </button>
+                    <button v-if="!viaDraw && !appData.read_only" @click="remove"
+                            class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                        <img width="26" :src="baseUrl+'/img/icons/remove-card.png'" :alt="'Remove #' + card.id"/>
+                    </button>
                 </div>
                 <div v-if="choice" class="mt-4 flex justify-between">
                     <button @click="blur = !blur"
@@ -43,7 +47,7 @@
                         </span>
                     </button>
 
-                    <button @click="remove"
+                    <button v-if="!appData.read_only" @click="remove"
                             class="mdc-button origin-left transform scale-90 mdc-button--raised">
                         <img width="26" :src="baseUrl+'/img/icons/remove-card.png'" :alt="'Remove #' + card.id"/>
                     </button>
@@ -64,6 +68,7 @@ import BaseUrl from "../../mixins/BaseUrl";
 export default {
     components: {FlipCard},
     mixins: [BaseUrl],
+    inject: ['appData'],
     data() {
         return {
             card: null,
@@ -71,6 +76,7 @@ export default {
             animating: false,
             blur: false,
             removed: false,
+            viaDraw: false,
             preloadImage: new PreloadImage(),
         }
     },
@@ -87,6 +93,7 @@ export default {
             this.animating = false;
             this.blur = false;
             this.removed = false;
+            this.viaDraw = !!card.viaDraw;
             this.$refs['modal'].open();
             this.preloadImage.handle(this.card.images[1]);
         },
@@ -100,7 +107,7 @@ export default {
             this.animating = false;
         },
         remove() {
-            if (!this.removed && this.choice && !this.animating) {
+            if (!this.removed && !this.animating && (this.choice || !this.viaDraw)) {
                 this.removed = true;
                 this.$bus.$emit('remove-card', this.card);
                 this.close();

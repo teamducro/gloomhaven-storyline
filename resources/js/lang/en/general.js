@@ -452,6 +452,8 @@ export default {
     "Targets multiple figures/tiles": "Targets multiple figures/tiles",
     "Existing hexes": "Existing hexes",
     "Buy": "Buy",
+    "Enhance abilities": "Enhance abilities",
+    "No characters in the party": "No characters in the party",
     "Buying enhancements needs the Enhancer (building 44) built and not wrecked": "Buying enhancements needs the Enhancer (building 44) built and not wrecked",
     "Enhanced card limit reached (prosperity level {level})": "Enhanced card limit reached (prosperity level {level})",
 
