@@ -827,18 +827,18 @@ export default {
             "Add City and Road Events 83 to their respective decks"
         ]
     },
-    "fc-116": {
-        "name": "Forecast of the Inevitable",
-        "rewards": [
-            "“Basin of Prophecy” (Item 164)"
-        ]
-    },
     "fc-117": {
         "name": "Tower to the Stars",
         "rewards": [
             "Все получают по 15 золотых",
             "1 ✓ each",
             "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
+        ]
+    },
+    "fc-116": {
+        "name": "Forecast of the Inevitable",
+        "rewards": [
+            "“Basin of Prophecy” (Item 164)"
         ]
     },
     "jotl-1": {
@@ -2751,6 +2751,31 @@ export default {
         "rewards": [
             "10 experience each",
             "“Savage Cuirass” design (Item RM06)"
+        ]
+    },
+    "mp-AN1": {
+        "name": "A Harrowing Deal",
+        "rewards": [
+            "“Ribbon of Friendship” (Item AN)"
+        ]
+    },
+    "mp-SA1": {
+        "name": "Horns in the Night",
+        "rewards": [
+            "“Crest of Frosthaven” (Item SA)"
+        ]
+    },
+    "mp-CA1": {
+        "name": "Escape from Corruption",
+        "rewards": [
+            "“Basin of Prophecy A” (Item CA A)",
+            "“Basin of Prophecy B” (Item CA B)"
+        ]
+    },
+    "mp-HA1": {
+        "name": "Major Annoyance",
+        "rewards": [
+            "“No Nonsense Boots” (Item HA)"
         ]
     }
 }

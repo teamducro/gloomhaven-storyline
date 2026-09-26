@@ -12,6 +12,7 @@
             <buildings-section
                 ref="buildings"
                 :loading="loading"
+                @enhancer-built="enableEnhancements"
                 @change="store"/>
 
         </div>
@@ -54,6 +55,10 @@ export default {
 
             await this.$nextTick();
             this.loading = false;
+        },
+        // Building the Enhancer unlocks enhancements.
+        enableEnhancements() {
+            this.sheet.enhancementsEnabled = true;
         },
         store() {
             if (this.loading) {

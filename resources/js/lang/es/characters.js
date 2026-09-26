@@ -931,7 +931,7 @@ export default {
         "masteries": [
             "",
             ""
-        ],
+        ]
     },
     "HA": {
         "name": "Hail",
@@ -952,7 +952,7 @@ export default {
         "masteries": [
             "",
             ""
-        ],
+        ]
     },
     "CA": {
         "name": "Cassandra",
@@ -971,7 +971,7 @@ export default {
         "masteries": [
             "",
             ""
-        ],
+        ]
     },
     "AN": {
         "name": "Anaphi",
@@ -991,6 +991,6 @@ export default {
         "masteries": [
             "",
             ""
-        ],
+        ]
     }
 }

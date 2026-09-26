@@ -2808,5 +2808,32 @@ export default {
         "name": "Spiraled Medallion",
         "source": "Reward from Solo Scenario - {CR}",
         "desc": "When you rest, you may keep up to three {TIDE_ICON} cards in your active area. {LIGHT_OR_DARK}"
+    },
+    "mp-AN": {
+        "name": "Ribbon of Friendship",
+        "source": "Reward from Solo Scenario - {AN}",
+        "desc": "Immediately after you perform an Augment ability, perform: {POISON.fh} {RANGE.fh} 2. You may perform this ability as if you occupied the same hex as one of your summons."
+    },
+    "mp-SA": {
+        "name": "Crest of Frosthaven",
+        "source": "Reward from Solo Scenario - {SA}",
+        "desc": "Whenever you long rest, Ice and flip this card over.",
+        "backDesc": "Whenever an ally rests, you may flip this card over to grant them: {HEAL.fh} 2, Self"
+    },
+    "mp-CA A": {
+        "name": "Basin of Prophecy A",
+        "source": "Reward from Solo Scenario - {CA}",
+        "desc": "Add +1 Divination to all Divination."
+    },
+    "mp-CA B": {
+        "name": "Basin of Prophecy B",
+        "source": "Reward from Solo Scenario - {CA}",
+        "desc": "During your turn, perform: {ATTACK.fh} 1, {TARGET.fh} 1 enemy occupying a hex containing a {RIFT}, {PIERCE.fh} 2, {DIVINATION} 3"
+    },
+    "mp-HA": {
+        "name": "No Nonsense Boots",
+        "source": "Reward from Solo Scenario - {HA}",
+        "desc": "At the end of your turn, if you have spent 3 or more Resolve this turn, flip this card over.",
+        "backDesc": "During your turn, if you have an active Irritation, you may move that card to your pool to play a different card from your pool and perform its Irritation action, then flip this card over."
     }
 }

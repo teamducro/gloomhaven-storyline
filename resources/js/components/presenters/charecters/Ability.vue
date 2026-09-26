@@ -4,6 +4,11 @@
          @click="click">
         <webp :src="ability.image" :class="[stacked ? 'absolute' : '']"
               class="rounded w-full aspect-card"/>
+        <transition-group name="fadein" tag="div">
+            <enhancement-sticker v-for="enhancement in visibleEnhancements" :key="enhancement.id"
+                                  :id="enhancement.id" :type="enhancement.type"
+                                  :x="enhancement.x" :y="enhancement.y"/>
+        </transition-group>
         <transition name="fadein">
             <div v-if="!animating && active" class="absolute bg-dark-gray2-75" @click.stop=""
                  :class="[stacked ? 'left-0 h-full flex items-center' : 'bottom-0 left-0 pt-2 pr-2 rounded-tr-full']">
@@ -44,6 +49,10 @@ export default {
             type: Boolean,
             default: false
         },
+        enhancements: {
+            type: Array,
+            default: () => []
+        },
     },
     data() {
         return {}
@@ -51,7 +60,11 @@ export default {
     mounted() {
 
     },
-    computed: {},
+    computed: {
+        visibleEnhancements() {
+            return (!this.animating && !this.stacked) ? this.enhancements : [];
+        }
+    },
     methods: {
         changed(id, checked) {
             this.$emit('selected', this.ability.code, checked);

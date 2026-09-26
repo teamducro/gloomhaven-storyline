@@ -39,7 +39,7 @@ export default {
                     modelKey = key;
                 }
 
-                this[modelKey] = model[storeKey] || defaultValue;
+                this[modelKey] = model[storeKey] ?? defaultValue;
             });
         }
     },

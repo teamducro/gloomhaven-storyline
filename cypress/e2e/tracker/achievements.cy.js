@@ -143,6 +143,16 @@ describe('Achievements', () => {
         cy.get('.mdc-dialog__title').contains('End of Corruption (3)');
     })
 
+    it('cant remove manual achievements in read only mode', () => {
+        cy.visit('/tracker/?groups=CR_GCRM&states=74_i');
+        cy.visit('/tracker/#/achievements');
+
+        utilities.setReadOnly().then(() => {
+            cy.get('#party-achievements li').contains('High Sea Escort').click();
+            cy.contains('button', 'Remove').should('be.disabled');
+        });
+    });
+
     it('cant add achievements in read only mode', () => {
         cy.visit('/tracker/#/achievements');
 

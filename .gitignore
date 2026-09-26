@@ -10,3 +10,5 @@ npm-debug.log
 /cypress/videos
 /cypress/screenshots
 .vscode
+/docs
+/plans

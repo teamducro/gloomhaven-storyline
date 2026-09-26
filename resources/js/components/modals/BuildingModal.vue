@@ -22,6 +22,7 @@
 import Building from "../../models/Building";
 import BuildingRepository from "../../repositories/BuildingRepository";
 import AlchemistSidebar from "./AlchemistSidebar.vue";
+import EnhancerSidebar from "./EnhancerSidebar.vue";
 
 export default {
     data() {
@@ -29,7 +30,8 @@ export default {
             building: null,
             buildingRepository: new BuildingRepository,
             sidebars: {
-                'fh-35': AlchemistSidebar
+                'fh-35': AlchemistSidebar,
+                'fh-44': EnhancerSidebar,
             }
         }
     },

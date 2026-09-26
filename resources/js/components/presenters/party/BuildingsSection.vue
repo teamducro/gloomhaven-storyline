@@ -48,6 +48,7 @@
                         :class="{
                             'cursor-pointer': !appData.read_only,
                         }"
+                        :disabled="appData.read_only"
                         @click="(e) => {toggleOverlay(overlay)}">
                     {{ overlayDisplayName(overlay) }}
                     <span class="ml-1" v-if="!appData.read_only">×</span>
@@ -98,7 +99,7 @@
                     <add-links-and-icons class="inline-icons" :text="$t(building.wrecked) || '-'"/>
                 </div>
                 <div class="outline-gray row-span-2 flex flex-col items-center justify-center p-2">
-                    <button v-if="!building.completed" :disabled="building.isWrecked()" @click="upgrade(building)" class="mdc-button mdc-button--raised" :class="{ 'h-auto p-1': !building.lockedUpgrade, 'gray': !building.isWrecked() && !building.checkUpgradeCost(combinedResources) }">
+                    <button v-if="!building.completed" :disabled="appData.read_only || building.isWrecked()" @click="upgrade(building)" class="mdc-button mdc-button--raised" :class="{ 'h-auto p-1': !building.lockedUpgrade, 'gray': !building.isWrecked() && !building.checkUpgradeCost(combinedResources) }">
                         <add-links-and-icons text="{UPGRADE}"/>
                         <div v-if="!building.lockedUpgrade" class="bg-dark-background inline-grid grid-cols-4 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -116,7 +117,7 @@
                     </button>
                     <div v-else-if="building.game === 'fh' && building.id === 84" class="flex flex-col gap-2">
                         <button v-for="overlay in overlays.filter(overlay => !overlay.present && overlay.icon)"
-                            @click="toggleOverlay(overlay)" :disabled="building.isWrecked()" :key="overlay.id" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !overlay.checkBuildCost(combinedResources) }">
+                            @click="toggleOverlay(overlay)" :disabled="appData.read_only || building.isWrecked()" :key="overlay.id" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !overlay.checkBuildCost(combinedResources) }">
                             <add-links-and-icons :text="overlay.icon"/>
                             <div class="bg-dark-background inline-grid grid-cols-4 gap-px ml-1">
                                 <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -129,7 +130,7 @@
                             </div>
                         </button>
                     </div>
-                    <button v-if="building.upgraded" class="mdc-button -mb-2" @click="downgrade(building)">
+                    <button v-if="building.upgraded" class="mdc-button -mb-2" :disabled="appData.read_only" @click="downgrade(building)">
                         <span class="material-icons mr-1">replay</span> {{ $t('Downgrade') }}
                     </button>
                 </div>
@@ -139,11 +140,11 @@
                         {{ $t('Any') + ' ' + building.damageCost }}
                         <add-links-and-icons class="materials flex ml-1" text="{LUMBER} {METAL} {HIDE}"/>
                     </div>
-                    <button v-if="!building.isWrecked()" @click="wreck(building)" class="mdc-button mdc-button--raised">
+                    <button v-if="!building.isWrecked()" :disabled="appData.read_only" @click="wreck(building)" class="mdc-button mdc-button--raised">
                         <add-links-and-icons text="{WRECKED}"/>
                         {{ $t('Wreck') }}
                     </button>
-                    <button v-else @click="repair(building)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !building.checkWreckedCost(combinedResources) }">
+                    <button v-else :disabled="appData.read_only" @click="repair(building)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !building.checkWreckedCost(combinedResources) }">
                         <add-links-and-icons text="{REPAIR}"/>
                         <div class="bg-dark-background inline-grid grid-cols-3 gap-px ml-1">
                             <add-links-and-icons text="{LUMBER}" class="outline-gray p-1"/>
@@ -162,7 +163,7 @@
                     <span>{{ building.id }} {{ $t(building.name) }} {{ $t('Lvl.') }} {{ building.level }}</span>
                 </div>
                 <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-gray2-60">
-                    <button @click="upgrade(building)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !building.checkUpgradeCost(combinedResources)}">
+                    <button :disabled="appData.read_only" @click="upgrade(building)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !building.checkUpgradeCost(combinedResources)}">
                         <add-links-and-icons text="{BUILD}"/>
                         <div class="bg-dark-background inline-grid grid-cols-5 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -184,7 +185,7 @@
                     <span>{{ $t(overlay.name) }} {{ overlay.id }}</span>
                 </div>
                 <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-gray2-60">
-                    <button @click="toggleOverlay(overlay)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !overlay.checkBuildCost(combinedResources)}">
+                    <button :disabled="appData.read_only" @click="toggleOverlay(overlay)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !overlay.checkBuildCost(combinedResources)}">
                         <add-links-and-icons text="{BUILD}"/>
                         <div class="bg-dark-background inline-grid grid-cols-5 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -287,6 +288,10 @@ export default {
             const upgrade = () => {
                 if (building.isAvailable()) {
                     this.buildingRepository.setBuilt(building);
+
+                    if (building.game === 'fh' && building.id === 44) {
+                        this.$emit('enhancer-built');
+                    }
                 }
                 building.level += 1;
 

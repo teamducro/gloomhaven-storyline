@@ -58,7 +58,7 @@
 
         <!-- Desktop menu -->
         <div id="desktop-character-menu" class="hidden sm:block">
-            <draggable tag="ul" class="space-y-6 mb-4" v-model="orderedCharacters" group="characters" @end="updateCharacterOrder" :disabled="!appData.hasMouse">
+            <draggable tag="ul" class="space-y-6 mb-4" v-model="orderedCharacters" group="characters" @end="updateCharacterOrder" :disabled="!appData.hasMouse || appData.read_only">
                 <li class="space-y-6" v-for="character in orderedCharacters" :key="'character-'+character.uuid">
                     <span class="flow-root">
                         <a @click.stop.prevent="select(character.uuid)" href="#"

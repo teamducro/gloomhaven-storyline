@@ -89,6 +89,7 @@
                     :label="$t('Add summer outpost events')"
                     :items.sync="sheet.summerOutpost"
                     @change="store"
+                    @view="(item) => openCard(item, 'SO')"
                     ref="summer-outpost-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
@@ -105,6 +106,7 @@
                     :label="$t('Add summer road events')"
                     :items.sync="sheet.summerRoad"
                     @change="store"
+                    @view="(item) => openCard(item, 'SR')"
                     ref="summer-road-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
@@ -122,6 +124,7 @@
                     :label="$t('Add boat events')"
                     :items.sync="sheet.boat"
                     @change="store"
+                    @view="(item) => openCard(item, 'B')"
                     ref="boat-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
@@ -141,6 +144,7 @@
                     :label="$t('Add winter outpost events')"
                     :items.sync="sheet.winterOutpost"
                     @change="store"
+                    @view="(item) => openCard(item, 'WO')"
                     ref="winter-outpost-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
@@ -157,6 +161,7 @@
                     :label="$t('Add winter road events')"
                     :items.sync="sheet.winterRoad"
                     @change="store"
+                    @view="(item) => openCard(item, 'WR')"
                     ref="winter-road-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
@@ -174,6 +179,7 @@
                     :label="$t('Add boat events')"
                     :items.sync="sheet.boat"
                     @change="store"
+                    @view="(item) => openCard(item, 'B')"
                     ref="boat-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
@@ -293,8 +299,12 @@ export default {
             let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
             if (id) {
                 const card = type + '-' + id;
-                this.$bus.$emit('open-event-card', {id: card, game: this.appData.game});
+                this.$bus.$emit('open-event-card', {id: card, game: this.appData.game, viaDraw: true});
             }
+        },
+        openCard(id, type) {
+            const card = type + '-' + id;
+            this.$bus.$emit('open-event-card', {id: card, game: this.appData.game});
         },
         openBuilding(building) {
             this.$bus.$emit('open-building-card', building);
