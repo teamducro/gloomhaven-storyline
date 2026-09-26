@@ -21,6 +21,7 @@
                             <ability v-else :key="'selected-available-'+character.abilityPerLevel[level]"
                                      :ability="abilities.firstWhere('code', character.abilityPerLevel[level])"
                                      :selected="true" :active="true" :stacked="true"
+                                     :enhancements="characterEnhancements[character.abilityPerLevel[level]] || []"
                                      group="selected-available" @selected="selected" @click="openModel"/>
                         </div>
                     </div>
@@ -36,6 +37,7 @@
                                  :class="['transition-opacity', isActive(ability) ? 'opacity-100' : 'opacity-50']"
                                  :ability="ability" :selected="selectedAbilities.includes(ability.code)"
                                  :active="isActive(ability)" :stacked="false"
+                                 :enhancements="characterEnhancements[ability.code] || []"
                                  group="manage-available" @selected="selected" @click="openModel"/>
                     </div>
                 </template>
@@ -47,13 +49,17 @@
 <script>
 
 import AbilityRepository from "../../repositories/AbilityRepository";
+import SheetRepository from "../../repositories/SheetRepository";
 
 export default {
+    inject: ['appData'],
     data() {
         return {
             character: null,
+            sheet: null,
             abilities: collect([]),
-            abilityRepository: new AbilityRepository
+            abilityRepository: new AbilityRepository,
+            sheetRepository: new SheetRepository
         }
     },
     mounted() {
@@ -63,6 +69,13 @@ export default {
         this.$bus.$on('close-manage-abilities', this.close);
     },
     computed: {
+        characterEnhancements() {
+            if (!this.sheet?.enhancementsEnabled) {
+                return {};
+            }
+
+            return this.sheet.enhancements[this.character.id] || {};
+        },
         hasAvailableSlots() {
             return this.availableSlots.isNotEmpty();
         },
@@ -78,6 +91,7 @@ export default {
     methods: {
         async open(character) {
             this.character = character;
+            this.sheet = this.sheetRepository.make(this.appData.game);
             this.abilities = collect(this.abilityRepository.abilities(this.character))
                 .filter(ability => ability.level >= 2 && ability.level <= this.character.level)
                 .sortBy('name').sortBy('level');
@@ -121,7 +135,7 @@ export default {
             this.$emit('store');
         },
         openModel(group, ability) {
-            this.$bus.$emit('open-ability-card', ability);
+            this.$bus.$emit('open-ability-card', {ability, character: this.character, sheet: this.sheet});
         }
     }
 }

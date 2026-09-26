@@ -3,6 +3,12 @@
 
         <div class="md2:-mt-12 mb-2 flex flex-row justify-end">
 
+            <!-- Enhancements toggle -->
+            <checkbox-with-label id="desktop-enable-enhancements"
+                                 class="hidden md:flex" :label="$t('Enhancements')"
+                                 :auto-disable="false" :checked.sync="sheet.enhancementsEnabled"
+                                 @change="storeSheet"/>
+
             <!-- Show all toggle -->
             <checkbox-with-label id="desktop-show-all-abilities" class="hidden md:flex"
                                  :label="$t('Show all')" :auto-disable="false"
@@ -69,6 +75,11 @@
                     <checkbox-with-label id="mobile-show-all-abilities" class="md:hidden"
                                          :label="$t('Show all')" :auto-disable="false"
                                          :checked.sync="prefs.showAll"/>
+                    <!-- Enhancements toggle -->
+                    <checkbox-with-label id="mobile-enable-enhancements" class="md:hidden"
+                                         :label="$t('Enhancements')" :auto-disable="false"
+                                         :checked.sync="sheet.enhancementsEnabled"
+                                         @change="storeSheet"/>
                 </div>
 
                 <div class="grid gap-x-2"
@@ -81,6 +92,7 @@
                              :ability="ability" :selected="character.abilities[ability.code]"
                              :active="(character.level+.5) >= ability.level"
                              :stacked="prefs.stackedAvailable" :animating="animatingAvailable"
+                             :enhancements="characterEnhancements[ability.code] || []"
                              group="available" @selected="selected" @click="openModel"/>
                 </div>
             </div>
@@ -105,6 +117,7 @@
                     <ability v-for="ability in sortedAbilities" :key="'deck-'+ability.code"
                              v-if="(character.level+.5) >= ability.level && character.abilities[ability.code]"
                              :ability="ability" :selected="true" :stacked="prefs.stackedDeck" :animating="animatingDeck"
+                             :enhancements="characterEnhancements[ability.code] || []"
                              group="deck" @selected="selected" @click="openModel"/>
                 </div>
             </div>
@@ -117,6 +130,7 @@
 <script>
 import Character from "../../../models/Character";
 import AbilityRepository from "../../../repositories/AbilityRepository";
+import SheetRepository from "../../../repositories/SheetRepository";
 import store from "store/dist/store.modern";
 import Flip from "../../../mixins/Flip";
 
@@ -128,6 +142,7 @@ export default {
     mixins: [Flip],
     data() {
         return {
+            sheet: null,
             prefs: {
                 showAll: false,
                 sortBy: 'level',
@@ -141,8 +156,12 @@ export default {
             sortByTypes: ['level', 'initiative'],
             abilities: collect([]),
             abilityRenderKeys: {},
-            abilityRepository: new AbilityRepository
+            abilityRepository: new AbilityRepository,
+            sheetRepository: new SheetRepository
         }
+    },
+    created() {
+        this.sheet = this.sheetRepository.make(this.appData.game);
     },
     mounted() {
         this.abilities = collect(this.abilityRepository.abilities(this.character));
@@ -158,6 +177,13 @@ export default {
         }
     },
     computed: {
+        characterEnhancements() {
+            if (!this.sheet.enhancementsEnabled) {
+                return {};
+            }
+
+            return this.sheet.enhancements[this.character.id] || {};
+        },
         sortedAbilities() {
             const sortBy = this.prefs.asc ? 'sortBy' : 'sortByDesc'
             return this.prefs.sortBy === 'initiative'
@@ -254,7 +280,10 @@ export default {
             this.$bus.$emit('open-manage-abilities', this.character);
         },
         openModel(group, ability) {
-            this.$bus.$emit('open-ability-card', ability);
+            this.$bus.$emit('open-ability-card', {ability, character: this.character, sheet: this.sheet});
+        },
+        storeSheet() {
+            this.sheet.store();
         },
         store() {
             this.$emit('store');
