@@ -1,7 +1,7 @@
 <template>
     <span class="bedge font-default"
           :class="{expired: expired}"
-          @click="(e) => $emit('click', e)">
+          @click="(e) => disabled || $emit('click', e)">
         <slot></slot>
     </span>
 </template>
@@ -10,6 +10,10 @@
 export default {
     props: {
         expired: {
+            type: Boolean,
+            default: false
+        },
+        disabled: {
             type: Boolean,
             default: false
         }

@@ -186,7 +186,7 @@
                     </div>
                 </div>
                 <div v-if="character && selected && abilities" class="w-full relative sm:ml-8">
-                    <abilities :character="character" @store="store"/>
+                    <abilities :character="character" :sheet="sheet" @store="store"/>
                 </div>
             </div>
         </div>
@@ -414,6 +414,13 @@ export default {
             this.$refs['resources']?.reset();
         },
         selectDefault() {
+            // Opened from the Enhancer building: go straight to that character's abilities.
+            const abilitiesUuid = this.$route.query.abilities;
+            if (abilitiesUuid && this.sheet.characters[abilitiesUuid]) {
+                this.select(abilitiesUuid, true);
+                return;
+            }
+
             const storedUuid = this.readSelected();
             if (storedUuid && (this.sheet.characters[storedUuid] || this.sheet.archivedCharacters[storedUuid])) {
                 this.select(storedUuid);

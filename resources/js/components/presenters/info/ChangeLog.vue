@@ -149,6 +149,7 @@ export default {
                 {version: '3.20', description: 'Alchemy chart and building cards', date: dayjs('2024-09-26')},
                 {version: '3.22', description: 'Added Town Guard Perks to Frosthaven campaign sheet', date: dayjs('2025-08-14')},
                 {version: '3.23', description: 'Mercenary Pack support', date: dayjs('2026-09-25')},
+                {version: '3.24', description: 'Ability card enhancement tracking', date: dayjs('2026-09-26')},
             ].reverse()
         }
     },

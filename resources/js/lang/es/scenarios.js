@@ -828,18 +828,18 @@ export default {
             "Añade los Eventos de ciudad y camino 83 a sus mazos"
         ]
     },
-    "fc-116": {
-        "name": "Una visión de lo inevitable",
-        "rewards": [
-            "“Cuenco de profecía” (Objeto 164)"
-        ]
-    },
     "fc-117": {
         "name": "Torre a las estrellas",
         "rewards": [
             "15 de oro para cada personaje",
             "1 ✓ para cada personaje",
             "Todos los personajes pueden añadir una nueva carta de su clase a su reserva de cartas activas. La carta seleccionada debe tener un nivel igual o inferior al nivel del personaje menos 2."
+        ]
+    },
+    "fc-116": {
+        "name": "Una visión de lo inevitable",
+        "rewards": [
+            "“Cuenco de profecía” (Objeto 164)"
         ]
     },
     "jotl-1": {
@@ -2761,6 +2761,31 @@ export default {
         "rewards": [
             "10 experience each",
             "“Savage Cuirass” design (Item RM06)"
+        ]
+    },
+    "mp-AN1": {
+        "name": "A Harrowing Deal",
+        "rewards": [
+            "“Ribbon of Friendship” (Item AN)"
+        ]
+    },
+    "mp-SA1": {
+        "name": "Horns in the Night",
+        "rewards": [
+            "“Crest of Frosthaven” (Item SA)"
+        ]
+    },
+    "mp-CA1": {
+        "name": "Escape from Corruption",
+        "rewards": [
+            "“Basin of Prophecy A” (Item CA A)",
+            "“Basin of Prophecy B” (Item CA B)"
+        ]
+    },
+    "mp-HA1": {
+        "name": "Major Annoyance",
+        "rewards": [
+            "“No Nonsense Boots” (Item HA)"
         ]
     }
 }

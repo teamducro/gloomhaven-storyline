@@ -826,18 +826,18 @@ export default {
             "Fügt Stadt- und Weg-Ereignis 83 den entsprechenden Decks hinzu."
         ]
     },
-    "fc-116": {
-        "name": "Vorhersage des Unvermeidlichen",
-        "rewards": [
-            "“Wahrsagebecken” (Gegenstand 164)"
-        ]
-    },
     "fc-117": {
         "name": "Turm zu den Sternen",
         "rewards": [
             "je 15 Gold",
             "je 1 ✓",
             "Alle Charaktere können eine neue Karte ihrer Klasse zu ihrem aktiven Kartenpool hinzufügen. Die gewählte Karte muss eine Stufe haben, die gleich oder kleiner als die Stufe des Charakters minus 2 ist."
+        ]
+    },
+    "fc-116": {
+        "name": "Vorhersage des Unvermeidlichen",
+        "rewards": [
+            "“Wahrsagebecken” (Gegenstand 164)"
         ]
     },
     "jotl-1": {
@@ -2762,6 +2762,31 @@ export default {
         "rewards": [
             "10 experience each",
             "“Savage Cuirass” design (Item RM06)"
+        ]
+    },
+    "mp-AN1": {
+        "name": "A Harrowing Deal",
+        "rewards": [
+            "“Ribbon of Friendship” (Item AN)"
+        ]
+    },
+    "mp-SA1": {
+        "name": "Horns in the Night",
+        "rewards": [
+            "“Crest of Frosthaven” (Item SA)"
+        ]
+    },
+    "mp-CA1": {
+        "name": "Escape from Corruption",
+        "rewards": [
+            "“Basin of Prophecy A” (Item CA A)",
+            "“Basin of Prophecy B” (Item CA B)"
+        ]
+    },
+    "mp-HA1": {
+        "name": "Major Annoyance",
+        "rewards": [
+            "“No Nonsense Boots” (Item HA)"
         ]
     }
 }

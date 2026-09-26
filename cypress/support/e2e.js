@@ -15,3 +15,15 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+
+// Clear any service worker left over from a previous local build so it can't serve stale assets.
+before(() => {
+    cy.visit('/tracker');
+    cy.window().then((win) => {
+        const unregister = win.navigator.serviceWorker?.getRegistrations().then((registrations) => {
+            return Promise.all(registrations.map((registration) => registration.unregister()));
+        });
+        return Promise.race([unregister, new Promise((resolve) => setTimeout(resolve, 2000))]);
+    });
+    cy.reload();
+});

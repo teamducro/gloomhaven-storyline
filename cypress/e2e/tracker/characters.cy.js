@@ -266,4 +266,17 @@ describe('Character', () => {
         });
     });
 
+    it('It cant reorder characters in read only mode', () => {
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter();
+
+        // Reordering is only offered with a mouse.
+        cy.window().then((win) => win.app.hasMouse = true);
+        const sortableDisabled = (disabled) => cy.get('#desktop-character-menu ul.space-y-6')
+            .should(($list) => expect(!!$list[0].__vue__._sortable.option('disabled')).to.eq(disabled));
+
+        sortableDisabled(false);
+        utilities.setReadOnly().then(() => sortableDisabled(true));
+    });
+
 });

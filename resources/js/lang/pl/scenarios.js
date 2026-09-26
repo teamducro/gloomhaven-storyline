@@ -826,18 +826,18 @@ export default {
             "Dodaj do odpowiednich talii wydarzenie miejskie 83 oraz na szlaku 83"
         ]
     },
-    "fc-116": {
-        "name": "Zapowiedź nieuniknionego",
-        "rewards": [
-            "„Misa Przepowiedni” (przedmiot 164)"
-        ]
-    },
     "fc-117": {
         "name": "Wieża do gwiazd",
         "rewards": [
             "Po 15 szt. złota dla każdego",
             "Po 1 ✔ dla każdego",
             "Wszystkie postacie mogą dodać jedną nową kartę ze swojej klasy do aktywnej puli kart. Wybrana karta musi być na poziomie mniejszym lub równym poziomowi postaci minus 2"
+        ]
+    },
+    "fc-116": {
+        "name": "Zapowiedź nieuniknionego",
+        "rewards": [
+            "„Misa Przepowiedni” (przedmiot 164)"
         ]
     },
     "jotl-1": {
@@ -2750,6 +2750,31 @@ export default {
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego",
             "„Savage Cuirass” design (przedmiot RM06)"
+        ]
+    },
+    "mp-AN1": {
+        "name": "A Harrowing Deal",
+        "rewards": [
+            "“Ribbon of Friendship” (Item AN)"
+        ]
+    },
+    "mp-SA1": {
+        "name": "Horns in the Night",
+        "rewards": [
+            "“Crest of Frosthaven” (Item SA)"
+        ]
+    },
+    "mp-CA1": {
+        "name": "Escape from Corruption",
+        "rewards": [
+            "“Basin of Prophecy A” (Item CA A)",
+            "“Basin of Prophecy B” (Item CA B)"
+        ]
+    },
+    "mp-HA1": {
+        "name": "Major Annoyance",
+        "rewards": [
+            "“No Nonsense Boots” (Item HA)"
         ]
     }
 }

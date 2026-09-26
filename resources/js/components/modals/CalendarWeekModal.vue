@@ -10,11 +10,12 @@
 
                 <ul v-if="calendar.sections[week] && calendar.sections[week].length" class="my-4 list-none" :key="'list-'+hash">
                     <li v-for="(section, index) in calendar.sections[week]">
-                        <a href="#" class="inline-flex items-center text-white py-2 pr-4" @click.prevent.stop="removeSection(index)">
+                        <button type="button" class="inline-flex items-center text-white py-2 pr-4"
+                                :disabled="appData.read_only" @click.stop="removeSection(index)">
                             <inline-svg class="w-3 mr-2 inline-block" src="icons/book"/>
                             {{ section }}
                             <span class="ml-2" v-if="!appData.read_only">×</span>
-                        </a>
+                        </button>
                     </li>
                 </ul>
                 <p v-else class="my-4" :key="hash">{{ $t('No sections added') }}</p>

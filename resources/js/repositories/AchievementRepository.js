@@ -6,6 +6,7 @@ import StorySyncer from "../services/StorySyncer";
 import GameData from "../services/GameData";
 import ScenarioCompletedService from "../services/ScenarioCompletedService";
 import Helpers from "../services/Helpers";
+import SheetRepository from "./SheetRepository";
 
 export default class AchievementRepository {
 
@@ -22,6 +23,8 @@ export default class AchievementRepository {
         if (!achievement) {
             return;
         }
+
+        const wasAwarded = achievement.awarded;
 
         // An achievement can require an other achievement
         if (achievement.requirement) {
@@ -53,6 +56,16 @@ export default class AchievementRepository {
 
         achievement.gain();
         this.unlockScenariosByAchievement(achievement);
+
+        // "The Power of Enhancement" unlocks enhancements in Gloomhaven: turn them on once it's first
+        // awarded. The user can still turn them off (or on without it) on the Abilities page.
+        if (!wasAwarded && achievement.id === 'GTPE') {
+            const sheet = new SheetRepository().make(app.game);
+            if (!sheet.enhancementsEnabled) {
+                sheet.enhancementsEnabled = true;
+                sheet.store();
+            }
+        }
     }
 
     // These achievements are unlocked via the user interface and may unlock scenarios.

@@ -16,6 +16,7 @@
                     :label="$t('Add city events')"
                     :items.sync="sheet.city"
                     @change="store"
+                    @view="(item) => openCard(item, 'C')"
                     ref="city-events"
                 >
                     <template slot="after-field" slot-scope="{checkedItems}">
