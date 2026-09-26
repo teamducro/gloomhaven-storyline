@@ -74,10 +74,9 @@ const frosthavenCosts = {
 };
 
 // Types whose cost doesn't double for multi-target abilities.
-const noMultiTargetDouble = ['target', 'fire', 'ice', 'air', 'earth', 'light', 'dark', 'wild_element', 'attack_hex'];
+export const noMultiTargetDouble = ['target', 'fire', 'ice', 'air', 'earth', 'light', 'dark', 'wild_element', 'attack_hex'];
 
-// Enhancements that just add +1 to a stat already printed on the card (Appendix D) share
-// one generic "+1" sticker rather than a per-type icon; keyword/condition additions keep theirs.
+// Enhancements that just add +1 to a stat already printed on the card
 export const numericBoostTypes = [
     'move', 'attack', 'range', 'shield', 'push', 'pull', 'pierce', 'retaliate', 'heal',
     'target', 'teleport', 'summon_move', 'summon_attack', 'summon_range', 'summon_hp',
@@ -137,15 +136,29 @@ export default {
         titleCase(text) {
             return text === text.toUpperCase() ? text.charAt(0) + text.slice(1).toLowerCase() : text;
         },
-        // Building #44 "Enhancer" (Frosthaven, Appendix D): level 2+ knocks 10 gold off every
-        // enhancement, level 3+ also cuts the per-level penalty by 10, level 4 also cuts the
-        // repeat penalty by 25.
+        // Frosthaven: enhancements are bought at building #44 "Enhancer", which
+        // can't be used before it's built or while it's wrecked. A damaged building stays in use.
+        enhancerUsable(game) {
+            if (game !== 'fh') {
+                return true;
+            }
+
+            const enhancer = new BuildingRepository().find(44);
+            return !!enhancer && (enhancer.isBuilt() || enhancer.isDamaged());
+        },
+        // Enhancer level 2+ knocks 10 gold off every enhancement, level 3+ also cuts the
+        // per-level penalty by 10, level 4 also cuts the repeat penalty by 25.
         enhancerLevel(game) {
-            return game === 'fh'
-                ? (new BuildingRepository().find(44)?.level || 0)
+            return game === 'fh' && this.enhancerUsable(game)
+                ? new BuildingRepository().find(44).level
                 : 0;
         },
-        calculateEnhancementCost({type, level, multiTarget, abilityProperty, previousCount, hexCount}, game) {
+        // Frosthaven and Mercenary Pack classes use the Frosthaven card design, where the
+        // lost/persistent enhancement cost multipliers apply (Appendix D).
+        hasFrosthavenCards(character) {
+            return ['fh', 'mp'].includes(character?.game);
+        },
+        calculateEnhancementCost({type, level, multiTarget, abilityProperty, frosthavenCard, previousCount, hexCount}, game) {
             const costs = this.enhancementBaseCosts(game);
 
             let cost = type === 'attack_hex'
@@ -156,15 +169,21 @@ export default {
                 cost *= 2;
             }
 
-            if (abilityProperty === 'lost') {
-                cost *= 0.5;
-            } else if (abilityProperty === 'persistent') {
-                cost *= 3;
+            // Lost/persistent multipliers only apply to Frosthaven-style cards.
+            if (frosthavenCard) {
+                if (abilityProperty === 'lost') {
+                    cost *= 0.5;
+                }
+                // Persistent doesn't triple summon stat enhancements.
+                else if (abilityProperty === 'persistent' && !type.startsWith('summon_')) {
+                    cost *= 3;
+                }
             }
 
             const enhancerLevel = this.enhancerLevel(game);
 
-            cost += Math.max(0, Math.round(level || 1) - 1) * (enhancerLevel >= 3 ? 15 : 25);
+            // X cards are stored as level 1.5 and cost the same as level 1.
+            cost += Math.max(0, Math.floor(level || 1) - 1) * (enhancerLevel >= 3 ? 15 : 25);
             cost += (previousCount || 0) * (enhancerLevel >= 4 ? 50 : 75);
 
             if (enhancerLevel >= 2) {

@@ -310,6 +310,7 @@ export default {
     "Character sheet": "Character sheet",
     "Party sheet": "Party sheet",
     "Campaign sheet": "Campaign sheet",
+    "Buildings": "Buildings",
     "Reputation": "Reputation",
     "Shop modifier": "Shop modifier",
     "corpsecap": "Corpsecap",
@@ -450,6 +451,8 @@ export default {
     "Persistent bonus": "Persistent bonus",
     "Targets multiple figures/tiles": "Targets multiple figures/tiles",
     "Existing hexes": "Existing hexes",
+    "Buy": "Buy",
+    "Buying enhancements needs the Enhancer (building 44) built and not wrecked": "Buying enhancements needs the Enhancer (building 44) built and not wrecked",
     "Enhanced card limit reached (prosperity level {level})": "Enhanced card limit reached (prosperity level {level})",
 
     "Recover": "Recover",

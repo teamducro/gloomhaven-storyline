@@ -6,7 +6,7 @@
             <!-- Enhancements toggle -->
             <checkbox-with-label id="desktop-enable-enhancements"
                                  class="hidden md:flex" :label="$t('Enhancements')"
-                                 :auto-disable="false" :checked.sync="sheet.enhancementsEnabled"
+                                 :checked.sync="sheet.enhancementsEnabled"
                                  @change="storeSheet"/>
 
             <!-- Show all toggle -->
@@ -77,7 +77,7 @@
                                          :checked.sync="prefs.showAll"/>
                     <!-- Enhancements toggle -->
                     <checkbox-with-label id="mobile-enable-enhancements" class="md:hidden"
-                                         :label="$t('Enhancements')" :auto-disable="false"
+                                         :label="$t('Enhancements')"
                                          :checked.sync="sheet.enhancementsEnabled"
                                          @change="storeSheet"/>
                 </div>
@@ -123,26 +123,27 @@
             </div>
         </div>
 
-        <manage-abilities @store="store"></manage-abilities>
+        <manage-abilities :sheet="sheet" @store="store"></manage-abilities>
     </div>
 </template>
 
 <script>
 import Character from "../../../models/Character";
 import AbilityRepository from "../../../repositories/AbilityRepository";
-import SheetRepository from "../../../repositories/SheetRepository";
+import StorySyncer from "../../../services/StorySyncer";
 import store from "store/dist/store.modern";
 import Flip from "../../../mixins/Flip";
 
 export default {
     inject: ['appData'],
     props: {
-        character: Character
+        character: Character,
+        // Shared with the parent page so every save writes the same, up-to-date sheet.
+        sheet: Object,
     },
     mixins: [Flip],
     data() {
         return {
-            sheet: null,
             prefs: {
                 showAll: false,
                 sortBy: 'level',
@@ -157,11 +158,8 @@ export default {
             abilities: collect([]),
             abilityRenderKeys: {},
             abilityRepository: new AbilityRepository,
-            sheetRepository: new SheetRepository
+            storySyncer: new StorySyncer,
         }
-    },
-    created() {
-        this.sheet = this.sheetRepository.make(this.appData.game);
     },
     mounted() {
         this.abilities = collect(this.abilityRepository.abilities(this.character));
@@ -284,6 +282,7 @@ export default {
         },
         storeSheet() {
             this.sheet.store();
+            this.storySyncer.store();
         },
         store() {
             this.$emit('store');

@@ -12,7 +12,7 @@
                           class="w-full rounded-lg sm:rounded-xl"/>
                     <enhancement-sticker v-for="enhancement in enhancements" :key="enhancement.id"
                                           :id="enhancement.id" :type="enhancement.type"
-                                          :x="enhancement.x" :y="enhancement.y" :editable="true"
+                                          :x="enhancement.x" :y="enhancement.y" :editable="!appData.read_only"
                                           @drag="drag" @reposition="reposition"/>
                 </div>
 
@@ -47,7 +47,7 @@
                             </div>
                         </label>
 
-                        <label class="flex flex-col">
+                        <label v-if="hasFrosthavenCards(character)" class="flex flex-col">
                             {{ $t('Ability property') }}
                             <select v-model="abilityProperty" class="bg-dark-gray2-75 p-2 rounded">
                                 <option value="normal">{{ $t('Normal') }}</option>
@@ -66,13 +66,16 @@
                         </label>
 
                         <p>{{ $t('Cost') }}: {{ cost }} {{ $t('gold') }}</p>
+                        <p v-if="!enhancerUsable(sheet.game)" class="text-red-400">
+                            {{ $t('Buying enhancements needs the Enhancer (building 44) built and not wrecked') }}
+                        </p>
                         <p v-if="atEnhancedCardLimit" class="text-red-400">
                             {{ $t('Enhanced card limit reached (prosperity level {level})', {level: maxEnhancedCards(sheet)}) }}
                         </p>
 
                         <div class="flex flex-wrap gap-2">
                             <button @click="buy" type="button" class="mdc-button mdc-button--raised"
-                                    :disabled="appData.read_only || !hasEnoughGold">
+                                    :disabled="appData.read_only || !canBuy">
                                 <add-links-and-icons class="mr-2" :text="'{COINS}'"/>
                                 <span class="mdc-button__label">{{ $t('Buy') }}</span>
                             </button>
@@ -95,9 +98,7 @@
 <script>
 import {v4 as uuidv4} from 'uuid';
 import StorySyncer from "../../services/StorySyncer";
-import AbilityEnhancements from "../../services/AbilityEnhancements";
-
-const noMultiTargetDouble = ['target', 'fire', 'ice', 'air', 'earth', 'light', 'dark', 'wild_element', 'attack_hex'];
+import AbilityEnhancements, {noMultiTargetDouble} from "../../services/AbilityEnhancements";
 
 export default {
     inject: ['appData'],
@@ -148,12 +149,13 @@ export default {
                 level: this.ability.level,
                 multiTarget: this.canDoubleForMultiTarget && this.multiTarget,
                 abilityProperty: this.abilityProperty,
+                frosthavenCard: this.hasFrosthavenCards(this.character),
                 previousCount: this.previousCount,
                 hexCount: this.hexCount,
             }, this.sheet.game);
         },
-        hasEnoughGold() {
-            return this.character.gold >= this.cost;
+        canBuy() {
+            return this.character.gold >= this.cost && this.enhancerUsable(this.sheet.game);
         },
         atEnhancedCardLimit() {
             return this.previousCount === 0
@@ -184,7 +186,12 @@ export default {
             }
         },
         reposition() {
+            if (this.appData.read_only) {
+                return;
+            }
+
             this.sheet.store();
+            this.storySyncer.store();
         },
         remove(id) {
             if (this.appData.read_only) {
@@ -200,7 +207,7 @@ export default {
             }
         },
         buy() {
-            if (!this.hasEnoughGold) {
+            if (!this.canBuy) {
                 return;
             }
 
@@ -210,6 +217,9 @@ export default {
             this.addEnhancement(false);
         },
         addEnhancement(deductGold) {
+            // Read before adding: the cost is recomputed with the repeat penalty once the enhancement exists.
+            const cost = this.cost;
+
             if (!this.sheet.enhancements[this.character.id]) {
                 Vue.set(this.sheet.enhancements, this.character.id, {});
             }
@@ -220,13 +230,13 @@ export default {
             this.sheet.enhancements[this.character.id][this.ability.code].push({
                 id: uuidv4(),
                 type: this.type,
-                cost: this.cost,
+                cost,
                 x: 75,
                 y: 10,
             });
 
             if (deductGold) {
-                this.character.gold -= this.cost;
+                this.character.gold -= cost;
                 this.character.store();
             }
 

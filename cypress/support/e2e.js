@@ -20,9 +20,10 @@ import './commands'
 before(() => {
     cy.visit('/tracker');
     cy.window().then((win) => {
-        return win.navigator.serviceWorker?.getRegistrations().then((registrations) => {
+        const unregister = win.navigator.serviceWorker?.getRegistrations().then((registrations) => {
             return Promise.all(registrations.map((registration) => registration.unregister()));
         });
+        return Promise.race([unregister, new Promise((resolve) => setTimeout(resolve, 2000))]);
     });
     cy.reload();
 });

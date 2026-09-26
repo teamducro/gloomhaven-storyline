@@ -59,7 +59,7 @@ class CampaignSheet {
         this.characterUnlocks = {...data.characterUnlocks};
         this.characters = {...data.characters};
         this.archivedCharacters = {...data.archivedCharacters};
-        this.c = data.hidePersonalQuests || false;
+        this.hidePersonalQuests = data.hidePersonalQuests || false;
 
         // Ability enhancements, keyed by character class id so they survive retirement.
         this.enhancementsEnabled = data.enhancementsEnabled || false;
@@ -340,6 +340,17 @@ class CampaignSheet {
         values.enhancements = collect({...this.enhancements}).map(perAbility =>
             collect(perAbility).filter(list => list.length).all()
         ).filter(perAbility => Object.keys(perAbility).length).all();
+
+        // Left out while unset, so adding these fields doesn't change existing campaigns' sync hash.
+        if (!Object.keys(values.enhancements).length) {
+            delete values.enhancements;
+        }
+        if (!values.enhancementsEnabled) {
+            delete values.enhancementsEnabled;
+        }
+        if (!values.hidePersonalQuests) {
+            delete values.hidePersonalQuests;
+        }
         return values;
     }
 

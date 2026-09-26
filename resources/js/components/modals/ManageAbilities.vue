@@ -49,17 +49,17 @@
 <script>
 
 import AbilityRepository from "../../repositories/AbilityRepository";
-import SheetRepository from "../../repositories/SheetRepository";
 
 export default {
     inject: ['appData'],
+    props: {
+        sheet: Object,
+    },
     data() {
         return {
             character: null,
-            sheet: null,
             abilities: collect([]),
             abilityRepository: new AbilityRepository,
-            sheetRepository: new SheetRepository
         }
     },
     mounted() {
@@ -91,7 +91,6 @@ export default {
     methods: {
         async open(character) {
             this.character = character;
-            this.sheet = this.sheetRepository.make(this.appData.game);
             this.abilities = collect(this.abilityRepository.abilities(this.character))
                 .filter(ability => ability.level >= 2 && ability.level <= this.character.level)
                 .sortBy('name').sortBy('level');

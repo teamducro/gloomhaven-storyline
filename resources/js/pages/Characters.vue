@@ -186,7 +186,7 @@
                     </div>
                 </div>
                 <div v-if="character && selected && abilities" class="w-full relative sm:ml-8">
-                    <abilities :character="character" @store="store"/>
+                    <abilities :character="character" :sheet="sheet" @store="store"/>
                 </div>
             </div>
         </div>

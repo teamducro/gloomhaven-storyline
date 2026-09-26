@@ -59,15 +59,22 @@ export default {
                 this.$emit('drag', this.id, x, y);
             };
 
-            const stop = (upEvent) => {
-                move(upEvent);
+            // A cancelled pointer (e.g. an interrupted touch) keeps the last dragged position.
+            const cancel = () => {
                 event.target.removeEventListener('pointermove', move);
                 event.target.removeEventListener('pointerup', stop);
+                event.target.removeEventListener('pointercancel', cancel);
                 this.$emit('reposition', this.id);
+            };
+
+            const stop = (upEvent) => {
+                move(upEvent);
+                cancel();
             };
 
             event.target.addEventListener('pointermove', move);
             event.target.addEventListener('pointerup', stop);
+            event.target.addEventListener('pointercancel', cancel);
         },
         clamp(value) {
             return Math.min(100, Math.max(0, value));

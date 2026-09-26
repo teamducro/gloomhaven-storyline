@@ -105,4 +105,35 @@ describe('Scenario list', () => {
         cy.get('#scenarios').contains('Return to the Black Barrow').should('be.visible');
     });
 
+    it('It persists the random item treasure checkbox across a reload', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+
+        // Scenario #2 isn't visible until #1 is complete.
+        cy.visit('/tracker?states=1_c');
+        cy.visit('/tracker/#/scenarios');
+        cy.get('td').contains('Algox Scouting').click({ scrollBehavior: 'center' });
+        cy.get('#random-item-treasure-2').check();
+        utilities.closeModel();
+        cy.reload();
+
+        cy.get('td').contains('Algox Scouting').click({ scrollBehavior: 'center' });
+        cy.get('#random-item-treasure-2').should('be.checked');
+
+        cy.get('#random-item-treasure-2').uncheck();
+        utilities.closeModel();
+        cy.reload();
+
+        cy.get('td').contains('Algox Scouting').click({ scrollBehavior: 'center' });
+        cy.get('#random-item-treasure-2').should('not.be.checked');
+
+        // Saving the scenario again must keep the unchecked state stored as false, not drop it.
+        cy.get('#scenario-content label').contains('Complete').click();
+        utilities.store().then((store) => {
+            const scenario = JSON.parse(store.getItem('local'))['scenario-fh-2'];
+            expect(scenario.state).eq('complete');
+            expect(scenario.random_item_treasure).eq(false);
+        });
+    });
+
 });
