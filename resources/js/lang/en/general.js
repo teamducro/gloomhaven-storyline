@@ -144,6 +144,7 @@ export default {
     "purchase": {
         "new_text": "You are purchasing a new shared campaign license, please select one or more games.",
         "renew_text": "You are renewing your existing shared campaign license, please select one or more games.",
+        "choose_text": "Renew an existing campaign or buy a new one?",
         "following_free": "The following games are included for free",
         "expand_title": {
             "gh": "Unlock Gloomhaven for a New Adventure",

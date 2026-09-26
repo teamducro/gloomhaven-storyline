@@ -5,6 +5,7 @@
         </div>
         <modal ref="choose-modal" :title="$t('Shared campaigns')">
             <template v-slot:content>
+                <p class="mb-4">{{ $t('purchase.choose_text') }}</p>
                 <table class="w-full">
                     <tr v-for="story in stories" :key="'choose-'+story.id" class="border-b border-white2-10">
                         <td class="py-2 pr-4">

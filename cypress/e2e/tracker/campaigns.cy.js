@@ -64,4 +64,34 @@ describe('Campaigns', () => {
         });
     });
 
+    it('It opens the purchase modal directly without owned campaigns', () => {
+        cy.visit('/tracker/#/campaigns');
+
+        cy.contains('#campaigns button.mdc-button--raised', 'Buy new shared campaign').click();
+        cy.get('.mdc-dialog--open').contains('You are purchasing a new shared campaign license');
+    });
+
+    it('It asks to renew an owned campaign or buy a new one', () => {
+        cy.visit('/tracker/#/campaigns');
+        cy.window().then((win) => {
+            win.localStorage.setItem('stories', JSON.stringify([
+                {id: 1, name: 'Owned', data: {}, games: ['gh'], expires_at: '2099-01-01'}
+            ]));
+        });
+        cy.reload();
+
+        cy.contains('#campaigns button.mdc-button--raised', 'Buy new shared campaign').click();
+        cy.get('.mdc-dialog--open').within(() => {
+            cy.contains('Renew an existing campaign or buy a new one?');
+            cy.contains('Owned');
+            cy.contains('button', 'Extend').click();
+        });
+        cy.get('.mdc-dialog--open').contains('You are renewing your existing shared campaign license');
+        cy.get('.mdc-dialog--open button').contains('Cancel').click();
+
+        cy.contains('#campaigns button.mdc-button--raised', 'Buy new shared campaign').click();
+        cy.get('.mdc-dialog--open button').contains('Buy new campaign').click();
+        cy.get('.mdc-dialog--open').contains('You are purchasing a new shared campaign license');
+    });
+
 });

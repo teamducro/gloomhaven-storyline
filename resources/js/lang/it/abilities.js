@@ -4862,5 +4862,355 @@ export default {
         "unavoidable-outcome": {
             "name": "unavoidable outcome"
         }
+    },
+    "mp": {
+        "bug-bodys-bidding": {
+            "name": "bug-bodys bidding"
+        },
+        "phantasmal-flurry": {
+            "name": "phantasmal flurry"
+        },
+        "sharp-teeth": {
+            "name": "sharp teeth"
+        },
+        "nocturnal-feeding": {
+            "name": "nocturnal feeding"
+        },
+        "vermincall": {
+            "name": "vermincall"
+        },
+        "sickening-betrayal": {
+            "name": "sickening betrayal"
+        },
+        "touch-of-atrophy": {
+            "name": "touch of atrophy"
+        },
+        "surrounding-shadows": {
+            "name": "surrounding shadows"
+        },
+        "howling-apparition": {
+            "name": "howling apparition"
+        },
+        "endless-biting": {
+            "name": "endless biting"
+        },
+        "black-claws": {
+            "name": "black claws"
+        },
+        "anguish": {
+            "name": "anguish"
+        },
+        "consume-with-regret": {
+            "name": "consume with regret"
+        },
+        "rat-surprise": {
+            "name": "rat surprise"
+        },
+        "tibers-tenacity": {
+            "name": "tibers tenacity"
+        },
+        "hidden-assault": {
+            "name": "hidden assault"
+        },
+        "musophobia": {
+            "name": "musophobia"
+        },
+        "seeking-strikes": {
+            "name": "seeking strikes"
+        },
+        "doks-ferocity": {
+            "name": "doks ferocity"
+        },
+        "compulsive-hoarding": {
+            "name": "compulsive hoarding"
+        },
+        "my-loyal-friend": {
+            "name": "my loyal friend"
+        },
+        "nibbled-to-death": {
+            "name": "nibbled to death"
+        },
+        "diamartias-dominance": {
+            "name": "diamartia's dominance"
+        },
+        "revel-in-misery": {
+            "name": "revel in misery"
+        },
+        "twin-frenzy": {
+            "name": "twin frenzy"
+        },
+        "rat-tide": {
+            "name": "rat tide"
+        },
+        "powders-ingenuity": {
+            "name": "powders ingenuity"
+        },
+        "pay-the-piper": {
+            "name": "pay the piper"
+        },
+        "her-highness": {
+            "name": "her highness"
+        },
+        "treacherous-tactics": {
+            "name": "treacherous tactics"
+        },
+        "anticipate-intricacies": {
+            "name": "anticipate intricacies"
+        },
+        "peer-into-battle": {
+            "name": "peer into battle"
+        },
+        "cursed-ground": {
+            "name": "cursed ground"
+        },
+        "void-snare": {
+            "name": "void snare"
+        },
+        "approach-of-the-void": {
+            "name": "approach of the void"
+        },
+        "duality-shards": {
+            "name": "duality shards"
+        },
+        "envision-the-course": {
+            "name": "envision the course"
+        },
+        "otherworldly-journey": {
+            "name": "otherworldly journey"
+        },
+        "ray-of-light": {
+            "name": "ray of light"
+        },
+        "dimensional-transfer": {
+            "name": "dimensional transfer"
+        },
+        "inspiration-from-beyond": {
+            "name": "inspiration from beyond"
+        },
+        "call-of-the-nether": {
+            "name": "call of the nether"
+        },
+        "recurrence": {
+            "name": "recurrence"
+        },
+        "dimensional-divide": {
+            "name": "dimensional divide"
+        },
+        "cleansing-rite": {
+            "name": "cleansing rite"
+        },
+        "past-and-future": {
+            "name": "past and future"
+        },
+        "ethereal-vortex": {
+            "name": "ethereal vortex"
+        },
+        "protective-aura": {
+            "name": "protective aura"
+        },
+        "enfeebling-hex": {
+            "name": "enfeebling hex"
+        },
+        "seal-their-fate": {
+            "name": "seal their fate"
+        },
+        "constant-flux": {
+            "name": "constant flux"
+        },
+        "careful-attunement": {
+            "name": "careful attunement"
+        },
+        "tether-the-planes": {
+            "name": "tether the planes"
+        },
+        "tear-reality": {
+            "name": "tear reality"
+        },
+        "time-and-again": {
+            "name": "time and again"
+        },
+        "deep-contemplation": {
+            "name": "deep contemplation"
+        },
+        "planar-chaos": {
+            "name": "planar chaos"
+        },
+        "convergence": {
+            "name": "convergence"
+        },
+        "hand-of-destiny": {
+            "name": "hand of destiny"
+        },
+        "cant-be-bothered": {
+            "name": "cant be bothered"
+        },
+        "interesting-speciments": {
+            "name": "interesting speciments"
+        },
+        "gather-reagents": {
+            "name": "gather reagents"
+        },
+        "somewhere-to-be": {
+            "name": "somewhere to be"
+        },
+        "not-amused": {
+            "name": "not amused"
+        },
+        "perpetual-annoyance": {
+            "name": "perpetual annoyance"
+        },
+        "minor-inconvenience": {
+            "name": "minor inconvenience"
+        },
+        "fleeting-interest": {
+            "name": "fleeting interest"
+        },
+        "bizarre-antics": {
+            "name": "bizarre antics"
+        },
+        "leave-me-alone": {
+            "name": "leave me alone"
+        },
+        "abundant-nuisance": {
+            "name": "abundant nuisance"
+        },
+        "trial-and-success": {
+            "name": "trial and success"
+        },
+        "experimental-insights": {
+            "name": "experimental insights"
+        },
+        "outsource": {
+            "name": "outsource"
+        },
+        "beneath-me": {
+            "name": "beneath me"
+        },
+        "fading-presence": {
+            "name": "fading presence"
+        },
+        "fools-errand": {
+            "name": "fools errand"
+        },
+        "miniaturize": {
+            "name": "miniaturize"
+        },
+        "dont-be-a-baby": {
+            "name": "dont be a baby"
+        },
+        "trying-to-remember": {
+            "name": "trying to remember"
+        },
+        "withering-stare": {
+            "name": "withering stare"
+        },
+        "dismissive-comment": {
+            "name": "dismissive comment"
+        },
+        "tear-a-new-one": {
+            "name": "tear a new one"
+        },
+        "collect-essence": {
+            "name": "collect essence"
+        },
+        "kill-that-one-first": {
+            "name": "kill that one first"
+        },
+        "closed-for-business": {
+            "name": "closed for business"
+        },
+        "fired-up": {
+            "name": "fired up"
+        },
+        "the-power-of-enhancement": {
+            "name": "the power of enhancement"
+        },
+        "shared-glory": {
+            "name": "shared glory"
+        },
+        "bring-them-down": {
+            "name": "bring them down"
+        },
+        "blade-of-the-north": {
+            "name": "blade of the north"
+        },
+        "victory-rush": {
+            "name": "victory rush"
+        },
+        "dazing-sweep": {
+            "name": "dazing sweep"
+        },
+        "lead-the-charge": {
+            "name": "lead the charge"
+        },
+        "spur-their-spirits": {
+            "name": "spur their spirits"
+        },
+        "implacable-advance": {
+            "name": "implacable advance"
+        },
+        "combined-might": {
+            "name": "combined might"
+        },
+        "get-behind-me": {
+            "name": "get behind me"
+        },
+        "take-command": {
+            "name": "take command"
+        },
+        "wolf-pack-tactics": {
+            "name": "wolf pack tactics"
+        },
+        "emboldening-call": {
+            "name": "emboldening call"
+        },
+        "outmaneuver": {
+            "name": "outmaneuver"
+        },
+        "stand-firm": {
+            "name": "stand firm"
+        },
+        "a-little-help-here": {
+            "name": "a little help here"
+        },
+        "raze": {
+            "name": "raze"
+        },
+        "strike-now": {
+            "name": "strike now"
+        },
+        "northern-valor": {
+            "name": "northern valor"
+        },
+        "unleash-the-archers": {
+            "name": "unleash the archers"
+        },
+        "armory": {
+            "name": "armory"
+        },
+        "crashing-steel": {
+            "name": "crashing steel"
+        },
+        "defiance": {
+            "name": "defiance"
+        },
+        "send-them-reeling": {
+            "name": "send them reeling"
+        },
+        "for-frosthaven": {
+            "name": "for frosthaven"
+        },
+        "lead-from-the-front": {
+            "name": "lead from the front"
+        },
+        "bonded-through-battle": {
+            "name": "bonded through battle"
+        },
+        "fight-as-one": {
+            "name": "fight as one"
+        },
+        "stand-against-many": {
+            "name": "stand against many"
+        }
     }
 }

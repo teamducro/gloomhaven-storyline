@@ -140,6 +140,7 @@ export default {
     "purchase": {
         "new_text": "Vous achetez une nouvelle licence de campagne partagée, veuillez sélectionner une ou plusieurs parties.",
         "renew_text": "Vous renouvelez votre licence de campagne partagée, veuillez sélectionner une ou plusieurs parties.",
+        "choose_text": "Renew an existing campaign or buy a new one?",
         "following_free": "Les parties suivantes sont gratuites avec votre licence de campagne partagée.",
         "expand_title": {
             "gh": "Débloquer Gloomhaven pour une nouvelle aventure",

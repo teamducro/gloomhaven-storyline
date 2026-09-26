@@ -140,6 +140,7 @@ export default {
     "purchase": {
         "new_text": "Egy új megosztott küldetés licenszet vásárolsz, kérlek válassz egy vagy több játékot.",
         "renew_text": "Egy méglévő megosztott küldetés licenszet újítasz meg, kérlek válassz egy vagy több játékot",
+        "choose_text": "Renew an existing campaign or buy a new one?",
         "following_free": "Az alábbi játékok elérhetőek ingyen",
         "expand_title": {
             "gh": "Old fel Homályrévet egy Új Kalandért",
