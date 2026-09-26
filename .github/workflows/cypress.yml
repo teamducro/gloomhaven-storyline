@@ -6,8 +6,26 @@ on:
   pull_request:
 
 jobs:
-  test:
+  prepare:
     runs-on: ubuntu-latest
+    outputs:
+      specs: ${{ steps.split.outputs.specs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: split
+        run: |
+          files=(cypress/e2e/tracker/*.cy.js)
+          specs=$(printf '%s\n' "${files[@]}" | jq -R . | jq -sc \
+            '[to_entries | group_by(.key % 3)[] | [.[].value] | join(",")]')
+          echo "specs=$specs" >> "$GITHUB_OUTPUT"
+
+  test:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        specs: ${{ fromJson(needs.prepare.outputs.specs) }}
     steps:
       - uses: actions/checkout@v4
 
@@ -46,4 +64,4 @@ jobs:
           build: npm run production
           start: npx http-server public -p 8080 --silent
           wait-on: 'http://localhost:8080'
-          command: npm run test:ci -- --config baseUrl=http://localhost:8080
+          command: npx cypress run --config baseUrl=http://localhost:8080 --spec "${{ matrix.specs }}"
