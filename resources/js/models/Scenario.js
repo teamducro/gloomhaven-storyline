@@ -5,11 +5,14 @@ import ScenarioRepository from "../repositories/ScenarioRepository";
 import ItemTextParser from "../services/ItemTextParser";
 import UsesTranslations from "./UsesTranslations";
 import {Requirement} from "./Requirement";
+import Versionable from "./Versionable";
 
 class Scenario {
 
     constructor(data) {
         this.id = data.id;
+        this.version = data.version;
+        this.hash = data.hash;
         this.number = `#${this.id}`;
         this.root = data.root || false;
         this._name = data.name;
@@ -56,6 +59,8 @@ class Scenario {
         this.translationKey = `scenarios.${this.game}-${this.id}`;
 
         this.fieldsToStore = {
+            "version": "version",
+            "hash": "hash",
             "state": "_state",
             "choice": "_choice",
             "promptChoice": "_promptChoice",
@@ -284,6 +289,8 @@ class Scenario {
 }
 
 Object.assign(Scenario.prototype, Storable);
+Object.assign(Scenario.prototype, {parentStore: Storable.store});
 Object.assign(Scenario.prototype, UsesTranslations);
+Object.assign(Scenario.prototype, Versionable);
 
 export default Scenario

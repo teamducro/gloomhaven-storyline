@@ -225,6 +225,84 @@ describe('Storyline', () => {
         }
     });
 
+    it('It bootstraps version/hash for old-format scenario data without corrupting it', () => {
+        cy.visit('/tracker#/shared/1/local/N4Rohg5gwgSgRALlGAzgbTgcVgWTgXQF8AacCAQRgBVFl0tK5iGomH5nNzXPHef2bLgK4cWQvuN5jhEmdzkSRk2dKWL+BEuAAKAMQDKtcAHcQARlIBjAPaWQAGxAAGbWB0ApHcbBn7t+ydXUncAEQAhHz9rO1Igt0wqHD0oixjAlzcdclCAUVT-WMdMkMSdfKRTNJAAuJLdA1ZK32ra4uDwRJgAOQL0uo6wWWbomqL40sYRlxjnOvME8hppwoBWAdIAWzB69yp4Ff72rKoANSbkUbaJ3SpQi6rCjMH9B5angazyAEk+seeElRcqE-tddjoqAZTqDxuCzstLq1YS87gjHkcbnsqGj3hjwTByDCASFsnciZ9JlQAEzk46lM4pQ7-CmdADqkSZYMGmFyAHk3lcbABmFlDPlQGmc5EJcVC2mYnm8zDy3ZcKhyqXE25UXqa0WJUKEvV0kAoAAWoCsZrAwDgzkQaTg5gdljgksdGsdABYXcxVr64AA2AMAdgDAA4AwBOAPme0IR3mZ0J13md2pz2pn0p5jmf05p3BgvmMMpkhwKwASwALgBPWhOgPp5iZ5jZx35x1Fx2lx2Rgsx4vxxPJxPNp2tp3t1Od1Pd1O91P9xODx1U4euqmjzfjqmTqnT5hU2dH+dHxdH5eb1euoUblujuZwIXup9Cz1v9tvztv7tv3tvsub6rk+XrDqBj5tq+bYfm2X5tj+bZ-m2AFtkBbYgX64F+pBcCrNBeGwXh8F4YheHIXhqF4eheGYUG2FBrhgYEYGRGBiRgZkYGFGBlRgY0YGdEhgxIa4SGBEhkRIYkSGZEhhRIZUSGNEhnR4YMeGuHhgR4ZEeGJHhmR4YUeGVHhjR4Z0VG4HaAAJsxcwgJWtm2tufoBkKN5tm5cBelefrjqsXlBmecDCaGYkSVJMlyQpSkqWpGlaTpekGUZJlmRZVn3nAUa4VGBFRkRUYkVGZFRhRUZUVGNFRsFcYMXGuFxgRcZEXGJFxmRcYUXGVFxjRcZ0UmOVJs1aaxuY7XmJ1eYOk+Sa9SW825uYg3mMN64rU6W7bWm45pu1B57ceJ29VS-VUoNVLDXesZCs1L73ZOU2dUK3VCr1Qr9UKg2eXtYEA81XqtV67Vep1XrdV6vVev1fkA8NqyNaszX4Xtqwvash5OqsJ6471qwXrj-m4-VgaNYGPnmMxe2sbG7Hbd0YC6hY2gAA6VlTpAAE55swPM2GAtkNj546Tjj+OhcTpP1aN1MHS9ONzcWoXLcWpMbU2OW7QWVK7vuOOnXroUXU2pM3R5OUPdtT0Jm+RFCiR722xR322zR-3222DFerhIPbWDgckVDgcUXDgc0V6dHI9tqNxwRmNxyReNxxRRNxzRQXbRTOdMSxbEcVxPF8QJakpfN2gAK62qNTYeQGks59tMuVycKqOdsbMkgAEgYFSIh87RbDsCwkuEHKD3inej4sVDZlPzImkMSz5ovXJZAYBzr8iI-d7orJGNMjm2I5QR79yuAdycOhH4iJ82GfMwgF3LzkDgOJmA-T8z+C9wd3vMenRsTeGNAqAA0t8UBO8vSih0AKJEWohiQJ0JKHeSDMAoI1Og-UKCF7oiXpiHQmAQRgL-gPAhG9e7QModKEkORr6lGyDCKk+pshoNoRggwn9EEshQBAM0ABaZMoAUDVhqKQasGAwxEFIPwoRHCxE1G0PIwR2DTTiKsJIjAnEtByIEYI-BSitEgCkc+SMSE9GmgMWvDREjTEYB9JeKxqiiyiM0dovC9pZHWKEaWdxyj9FCP7AEkxZj44+NUYOAJAAjFRBi4zGGMZ4pMLiEnqKtPzOxYSMCJMiQkoxHiHFumDPkoRKtQnxPKW47JKS0nlP8bU4pol6nCJCU0sx9MynCOiR03JMiqmCK2pUYxgzdahJSf6bp+sklFLMbtaZ6jknFP+swcSrTjojLmdI7xYzbHsysHAWyPNIA2AAHZQDNDYSsVgACmzo5HbOohsmpyzOmlLGY00ZQShntLeRgJ60zen-N8s6bpd0tmBN8WokRfSgwxnBYozRgz3zGAOUck5EBzmXOuXch52SUWFJADEzxe5Wku0hXEn5n1ZnEpRV8p50cmDR3BX8p5ltwXAqeZJVpgNIU5N8gMn5ftaUCuOt0gOlLBlB35Z4l2EqiVWGla8xlkYJUMvsWYtabAM4SrZZqnRPpunx1lcU1YHyfno35YMpO1rLWKptRqgVcojw0mNfqpVPyqaisGbTU14SEW+qWU8ia3TGb+owIGr1tjvnQu4qKlJwYWwWrjU6lJRrfUerlXKMNXKoWqPChGoMrSWl2uhesstBbg35oMdJBNxStrdPkvWsxskS1OsGcpH1PzNItp0WqwZ2k0VWFYXC2m3TdLduhfpPtvk3WDJKlOqJMbkU-NSZCs0nipkqIAGZWEERVWdeVWmWVnVNNgQdzwnv1WaQdGrb09pVSAB90Kiq0pfVE2FsaolIqcru-dVUl17oPe0q0TpnCsLakwEABz7AgtUi44DdVjBgY6sQLq0GDmjpBWVRD+6GrDrg9ypNcBDJ4eEc4L9Ty32ROAy1Wdik2DGXI1BotvbaP4ecIqzxpkWPOBXQa0jLrSMDrkXR5wT6P3ifvf+ij7SDkigJWJzjeaBXqTYIujjwjEmVEyTNR5gmZ1abGoRgzan53Ke0w6yzSZq2etNHRipcLD3dOsrSysg74wBI85a1TvqvN2J89C1OkKguqPXGguAJyzm2RsJsAA+jWW5CXqw81uagKuaWVqBbGc4bBUWwAxbi4l6syX4upfSygTLtzstKLCwY9cC8CtFYS0llLaWMtZe9jln56417Ndi610r7XKvVdq+I+rCiJMNmi4NkrZWKudZq91uruX-EDeK218rHWqtdefqt3rzgQkbaGwtnbY2VsTdy9Ek782RtLfG3+3rOnbSzc28N7bo29uOQO9CrcIjbtbcW7t5b+2rvPci290792QePcm0M89SBAcfeBxdsHT2-szRm4VubQPzvfYM-Drc-Wod3c+w9y7GPws02xy1snqOCc9cx+t0neOvug5++DzHx3Wco-xxzwnhBCBAA/story');
+
+        cy.window().then((window) => {
+            // Sanity check: genuinely old-format data, no version/hash yet.
+            expect(window.app.campaignData['scenario-gh-1'].version).to.be.undefined;
+            expect(window.app.campaignData['scenario-gh-1'].hash).to.be.undefined;
+
+            const firstPass = window.app.storySyncer.getStoryData();
+
+            // Bootstrapped to version 1 without corrupting id/game/content.
+            expect(firstPass['scenario-gh-1'].version).to.equal(1);
+            expect(firstPass['scenario-gh-1'].hash).to.be.a('string');
+            expect(firstPass['scenario-gh-1'].state).to.equal('complete');
+            expect(firstPass['scenario-gh-1'].treasures).to.deep.equal(['7']);
+
+            // The bootstrap is persisted into the live campaign data, without leaking recovered id/game.
+            expect(window.app.campaignData['scenario-gh-1'].version).to.equal(1);
+            expect(window.app.campaignData['scenario-gh-1']).not.to.have.any.keys('id', 'game');
+
+            // Calling it again with no real change must not bump the version (idempotent).
+            const secondPass = window.app.storySyncer.getStoryData();
+            expect(secondPass['scenario-gh-1'].version).to.equal(1);
+        });
+
+        // A real edit afterward correctly bumps the version again.
+        utilities.incompleteScenario(1);
+
+        cy.window().then((window) => {
+            const thirdPass = window.app.storySyncer.getStoryData();
+            expect(thirdPass['scenario-gh-1'].version).to.equal(2);
+            expect(thirdPass['scenario-gh-1'].state).to.equal('incomplete');
+        });
+    });
+
+    it('describes conflicted keys with human-readable labels for the sync-conflict toast', () => {
+        cy.visit('/tracker');
+
+        cy.window().then((window) => {
+            const describe = (key) => window.app.storyRepository.describeConflictedKey(key);
+
+            expect(describe('sheet')).to.equal('the Party Sheet');
+            expect(describe('sheet-fh')).to.equal('the Party Sheet');
+            expect(describe('campaign-gh')).to.equal('the Campaign Sheet');
+            expect(describe('scenario-gh-13')).to.equal('Scenario #13');
+            expect(describe('achievement-PFS')).to.equal(window.app.achievements.firstWhere('id', 'PFS').name);
+            expect(describe('achievement-UNKNOWN')).to.equal('Achievement UNKNOWN');
+            expect(describe('building-fh-A')).to.equal('Building #A');
+            expect(describe('overlay-fh-A')).to.equal('Overlay #A');
+            expect(describe('something-unknown')).to.equal('a resource');
+
+            // Uses the character's own stored name when present.
+            window.app.campaignData['character-abc'] = {name: 'Alice the Brute'};
+            expect(describe('character-abc')).to.equal('Alice the Brute');
+
+            // Falls back to a generic label when no name is stored yet.
+            expect(describe('character-missing')).to.equal('a character');
+        });
+    });
+
+    it('shows a specific toast when the server reports a sync conflict', () => {
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01', conflicted_keys: ['scenario-gh-1', 'scenario-gh-2']};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+
+        // Seed a cloud campaign (not shared, so nothing is fetched at boot) and reload into it.
+        cy.visit('/tracker');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([{id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'}]));
+        });
+        cy.reload();
+
+        utilities.completeScenario(1);
+
+        cy.get('.toast').should('be.visible')
+            .and('contain.text', 'their change was kept: Scenario #1, Scenario #2');
+    });
+
     it('It renders FC scenarios correctly', () => {
         cy.visit('/tracker#/shared/1/local/N4Rohg5gwgSgRALlGAzgbTgcVgWTgXQF8AacCAQRgBVFl0tK5iGomH5nNzXPHef2bLgK4cWQvuN5jhEmdzkSRk2dKWL+BEuAAKAMQDKtcAHcQARlIBjAPaWQAGxAAGbWB0ApHcbBn7t+ydXUncAEQAhHz9rO1Igt0wqHD0oixjAlzcdclCAUVT-WMdMkMSdfKRTNJAAuJLdA1ZK32ra4uDwRJgAOQL0uo6wWWbomqL40sYRlxjnOvME8hppwoBWAdIAWzB69yp4Ff72rKoANSbkUbaJ3SpQi6rCjMH9B5angazyAEk+seeElRcqE-tddjoqAZTqDxuCzstLq1YS87gjHkcbnsqGj3hjwTByDCASFsnciZ9JlQAEzk46lM4pQ7-CmdADqkSZYMGmFyAHk3lcbABmFlDPlQGmc5EJcVC2mYnm8zDy3ZcKhyqXE25UXqa0WJUKEvV0kAoAAWoCsZrAwDgzkQaTg5gdljgksdGsdABYXcxVr64AA2AMAdgDAA4AwBOAPme0IR3mZ0J13md2pz2pn0p5jmf05p3BgvmMMpkhwKwASwALgBPWhOgPp5iZ5jZx35x1Fx2lx2Rgsx4vxxPJxPNp2tp3t1Od1Pd1O91P9xODx1U4euqmjzfjqmTqnT5hU2dH+dHxdH5eb1euoUblujuZwIXup9Cz1v9tvztv7tv3tvsub6rk+XrDqBj5tq+bYfm2X5tj+bZ-m2AFtkBbYgX64F+pBcCrNBeGwXh8F4YheHIXhqF4eheGYUG2FBrhgYEYGRGBiRgZkYGFGBlRgY0YGdEhgxIa4SGBEhkRIYkSGZEhhRIZUSGNEhnR4YMeGuHhgR4ZEeGJHhmR4YUeGVHhjR4Z0VG4HaAAJsxcwgJWtm2tufoBkKN5tm5cBelefrjqsXlBmecDCaGYkSVJMlyQpSkqWpGlaTpekGUZJlmRZVn3nAUa4VGBFRkRUYkVGZFRhRUZUVGNFRsFcYMXGuFxgRcZEXGJFxmRcYUXGVFxjRcZ0UmOVJs1aaxuY7XmJ1eYOk+Sa9SW825uYg3mMN64rU6W7bWm45pu1B57ceJ29VS-VUoNVLDXesZCs1L73ZOU2dUK3VCr1Qr9UKg2eXtYEA81XqtV67Vep1XrdV6vVev1fkA8NqyNaszX4Xtqwvash5OqsJ6471qwXrj-m4-VgaNYGPnmMxe2sbG7Hbd0YC6hY2gAA6VlTpAAE55swPM2GAtkNj546Tjj+OhcTpP1aN1MHS9ONzcWoXLcWpMbU2OW7QWVK7vuOOnXroUXU2pM3R5OUPdtT0Jm+RFCiR722xR322zR-3222DFerhIPbWDgckVDgcUXDgc0V6dHI9tqNxwRmNxyReNxxRRNxzRQXbRTOdMSxbEcVxPF8QJakpfN2gAK62qNTYeQGks59tMuVycKqOdsbMkgAEgYFSIh87RbDsCwkuEHKD3inej4sVDZlPzImkMSz5ovXJZAYBzr8iI-d7orJGNMjm2I5QR79yuAdycOhH4iJ82GfMwgF3LzkDgOJmA-T8z+C9wd3vMenRsTeGNAqAA0t8UBO8vSih0AKJEWohiQJ0JKHeSDMAoI1Og-UKCF7oiXpiHQmAQRgL-gPAhG9e7QModKEkORr6lGyDCKk+pshoNoRggwn9EEshQBAM0ABaZMoAUDVhqKQasGAwxEFIPwoRHCxE1G0PIwR2DTTiKsJIjAnEtByIEYI-BSitEgCkc+SMSE9GmgMWvDREjTEYB9JeKxqiiyiM0dovC9pZHWKEaWdxyj9FCP7AEkxZj44+NUYOAJAAjFRBi4zGGMZ4pMLiEnqKtPzOxYSMCJMiQkoxHiHFumDPkoRKtQnxPKW47JKS0nlP8bU4pol6nCJCU0sx9MynCOiR03JMiqmCK2pUYxgzdahJSf6bp+sklFLMbtaZ6jknFP+swcSrTjojLmdI7xYzbHsysHAWyPNIA2AAHZQDNDYSsVgACmzo5HbOohsmpyzOmlLGY00ZQShntLeRgJ60zen-N8s6bpd0tmBN8WokRfSgwxnBYozRgz3zGAOUck5EBzmXOuXch52SUWFJADEzxe5Wku0hXEn5n1ZnEpRV8p50cmDR3BX8p5ltwXAqeZJVpgNIU5N8gMn5ftaUCuOt0gOlLBlB35Z4l2EqiVWGla8xlkYJUMvsWYtabAM4SrZZqnRPpunx1lcU1YHyfno35YMpO1rLWKptRqgVcojw0mNfqpVPyqaisGbTU14SEW+qWU8ia3TGb+owIGr1tjvnQu4qKlJwYWwWrjU6lJRrfUerlXKMNXKoWqPChGoMrSWl2uhesstBbg35oMdJBNxStrdPkvWsxskS1OsGcpH1PzNItp0WqwZ2k0VWFYXC2m3TdLduhfpPtvk3WDJKlOqJMbkU-NSZCs0nipkqIAGZWEERVWdeVWmWVnVNNgQdzwnv1WaQdGrb09pVSAB90Kiq0pfVE2FsaolIqcru-dVUl17oPe0q0TpnCsLakwEABz7AgtUi44DdVjBgY6sQLq0GDmjpBWVRD+6GrDrg9ypNcBDJ4eEc4L9Ty32ROAy1Wdik2DGXI1BotvbaP4ecIqzxpkWPOBXQa0jLrSMDrkXR5wT6P3ifvf+ij7SDkigJWJzjeaBXqTYIujjwjEmVEyTNR5gmZ1abGoRgzan53Ke0w6yzSZq2etNHRipcLD3dOsrSysg74wBI85a1TvqvN2J89C1OkKguqPXGguAJyzm2RsJsAA+jWW5CXqw81uagKuaWVqBbGc4bBUWwAxbi4l6syX4upfSygTLtzstKLCwY9cC8CtFYS0llLaWMtZe9jln56417Ndi610r7XKvVdq+I+rCiJMNmi4NkrZWKudZq91uruX-EDeK218rHWqtdefqt3rzgQkbaGwtnbY2VsTdy9Ek782RtLfG3+3rOnbSzc28N7bo29uOQO9CrcIjbtbcW7t5b+2rvPci290792QePcm0M89SBAcfeBxdsHT2-szRm4VubQPzvfYM-Drc-Wod3c+w9y7GPws02xy1snqOCc9cx+t0neOvug5++DzHx3Wco-xxzwnhBCBAA/story');
         let expectedData = JSON.parse('{"scenario-fc-96":{"state":"complete"},"scenario-fc-97":{"state":"complete"},"scenario-fc-98":{"state":"complete"},"scenario-fc-99":{"state":"complete"},"scenario-fc-100":{"state":"complete"},"scenario-fc-101":{"state":"complete"},"scenario-fc-102":{"state":"complete"},"scenario-fc-103":{"state":"complete"},"scenario-fc-104":{"state":"complete"},"scenario-fc-105":{"state":"complete"},"scenario-fc-106":{"state":"hidden"},"scenario-fc-107":{"state":"hidden"},"scenario-fc-108":{"state":"complete"},"scenario-fc-109":{"state":"complete"},"scenario-fc-110":{"state":"complete"},"scenario-fc-111":{"state":"complete"},"scenario-fc-114":{"state":"complete"},"scenario-fc-113":{"state":"complete"},"scenario-fc-115":{"state":"complete"}}');

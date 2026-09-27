@@ -3,11 +3,14 @@ import Storable from './Storable';
 import UsesTranslations from "./UsesTranslations";
 import {BuildingUpgradeCost} from "./BuildingUpgradeCost";
 import {BuildingWreckedCost} from "./BuildingWreckedCost";
+import Versionable from "./Versionable";
 
 class Building {
 
     constructor(data) {
         this.id = data.id;
+        this.version = data.version;
+        this.hash = data.hash;
         this.number = `#${this.id}`;
         this._name = data.name;
         this.levels = data.levels || [];
@@ -17,6 +20,8 @@ class Building {
         this.translationKey = `buildings.${this.game}-${this.id}`;
 
         this.fieldsToStore = {
+            "version": "version",
+            "hash": "hash",
             "state": "_state",
             "level": "_level",
         };
@@ -191,6 +196,8 @@ class Building {
 }
 
 Object.assign(Building.prototype, Storable);
+Object.assign(Building.prototype, {parentStore: Storable.store});
 Object.assign(Building.prototype, UsesTranslations);
+Object.assign(Building.prototype, Versionable);
 
 export default Building;

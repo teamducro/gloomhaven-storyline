@@ -55,6 +55,12 @@ export default class StoryRepository extends ApiRepository {
                 }
                 this.storeStory(storyResponse);
 
+                // Toast has a single slot, so report all conflicts at once. Escape: Toast compiles the message as a template.
+                const conflicts = [...new Set((storyResponse.conflicted_keys || []).map(key => _.escape(this.describeConflictedKey(key))))];
+                if (conflicts.length) {
+                    window.app.$bus.$emit('toast', window.app.$t('sync-conflict', {resources: conflicts.join(', ')}), false);
+                }
+
                 return new Story(storyResponse);
             })
             .catch(e => {
@@ -148,6 +154,30 @@ export default class StoryRepository extends ApiRepository {
 
     storeCampaignData(story) {
         store.set(story.campaignId, story.data);
+    }
+
+    // Maps a campaignData key to a human-readable label for the sync-conflict toast.
+    describeConflictedKey(key) {
+        if (key === 'sheet' || key.startsWith('sheet-')) {
+            return window.app.$t('the Party Sheet');
+        }
+        if (key.startsWith('campaign-')) {
+            return window.app.$t('the Campaign Sheet');
+        }
+        if (key.startsWith('character-')) {
+            return window.app.campaignData[key]?.name || window.app.$t('a character');
+        }
+        if (key.startsWith('achievement-')) {
+            const id = key.split('-').slice(1).join('-');
+            return window.app.achievements?.firstWhere('id', id)?.name || window.app.$t('sync-achievement', {id});
+        }
+        for (const type of ['scenario', 'building', 'overlay']) {
+            if (key.startsWith(type + '-')) {
+                return window.app.$t('sync-' + type, {id: key.split('-').slice(2).join('-')});
+            }
+        }
+
+        return window.app.$t('a resource');
     }
 
     getStories() {
