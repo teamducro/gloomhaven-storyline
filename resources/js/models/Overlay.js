@@ -2,11 +2,14 @@ import Storable from './Storable';
 import UsesTranslations from "./UsesTranslations";
 import {BuildingWreckedCost} from "./BuildingWreckedCost";
 import {BuildingUpgradeCost} from "./BuildingUpgradeCost";
+import Versionable from "./Versionable";
 
 class Overlay {
 
     constructor(data) {
         this.id = data.id;
+        this.version = data.version;
+        this.hash = data.hash;
         this._name = data.name;
         this._present = data.present || false;
         this.coordinates = data.coordinates || {};
@@ -17,6 +20,8 @@ class Overlay {
         this.translationKey = `overlays.${this.game}-${this.id}`;
 
         this.fieldsToStore = {
+            "version": "version",
+            "hash": "hash",
             "name": "_name", // Because the name of the Boat is customisable
             "present": "_present",
         };
@@ -76,6 +81,8 @@ class Overlay {
 }
 
 Object.assign(Overlay.prototype, Storable);
+Object.assign(Overlay.prototype, {parentStore: Storable.store});
 Object.assign(Overlay.prototype, UsesTranslations);
+Object.assign(Overlay.prototype, Versionable);
 
 export default Overlay;

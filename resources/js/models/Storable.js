@@ -45,7 +45,8 @@ export default {
     },
 
     delete() {
-        delete app.campaignData[this.key()];
+        // Tombstone instead of removing the key, so the server can tell a genuine delete from a stale/incomplete payload.
+        app.campaignData[this.key()] = null;
         store.set(app.campaignId, app.campaignData);
     },
 }
