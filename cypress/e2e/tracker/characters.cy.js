@@ -279,4 +279,39 @@ describe('Character', () => {
         utilities.setReadOnly().then(() => sortableDisabled(true));
     });
 
+    it('removes a character by sending its key as null so the server deletes it', () => {
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        let lastPayload = null;
+        cy.intercept('PUT', '**/stories/1', (req) => {
+            lastPayload = JSON.parse(req.body.data);
+            req.reply(story);
+        });
+
+        // Seed a cloud campaign (not shared, so nothing is fetched at boot) and reload into it.
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+
+        utilities.openCharacter();
+
+        cy.window().then((win) => {
+            const uuid = Object.keys(win.app.campaignData).find(key => key.startsWith('character-'));
+
+            // Not a local campaign, so "Retire" archives instead of removing outright.
+            cy.get('button').contains('Retire').click();
+            cy.get('.mdc-dialog.mdc-dialog--open button').contains('Retire').click();
+
+            // Now archived, "Remove" permanently deletes.
+            cy.get('button').contains('Remove').click();
+            cy.get('.mdc-dialog.mdc-dialog--open button').contains('Remove').click();
+
+            cy.wrap(null).should(() => {
+                expect(lastPayload).to.have.property(uuid, null);
+            });
+        });
+    });
+
 });

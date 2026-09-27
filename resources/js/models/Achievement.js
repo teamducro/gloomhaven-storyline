@@ -1,11 +1,14 @@
 import Storable from './Storable'
 import Card from "./Card";
 import UsesTranslations from "./UsesTranslations";
+import Versionable from "./Versionable";
 
 class Achievement {
 
     constructor(data) {
         this.id = data.id;
+        this.version = data.version;
+        this.hash = data.hash;
         this._name = data.name;
         this.type = data.type;
         this.x = data.x;
@@ -23,6 +26,8 @@ class Achievement {
         this.translationKey = `achievements.${this.game}-${this.id}`;
 
         this.fieldsToStore = {
+            "version": "version",
+            "hash": "hash",
             "awarded": {"_awarded": this._awarded},
             "count": {"_count": this._count},
             "lost": {"_lost": this._lost}
@@ -121,6 +126,8 @@ class Achievement {
 }
 
 Object.assign(Achievement.prototype, Storable);
+Object.assign(Achievement.prototype, {parentStore: Storable.store});
 Object.assign(Achievement.prototype, UsesTranslations);
+Object.assign(Achievement.prototype, Versionable);
 
 export default Achievement;

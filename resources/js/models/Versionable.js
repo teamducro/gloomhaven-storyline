@@ -5,7 +5,6 @@ export default {
     increaseVersion() {
         this.version = (this.version || 0) + 1;
         this.hash = this.makeHash();
-        this.parentStore();
     },
 
     hasChanged() {
