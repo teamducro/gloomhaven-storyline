@@ -119,7 +119,8 @@
         ],
         "is_manual": true,
         "cards": [
-            "C-3"
+            "C-3",
+            "RIFT-13"
         ]
     },
     {
@@ -628,6 +629,26 @@
         "x": 84.6
     },
     {
+        "id": "PA",
+        "name": "Accomplices",
+        "type": "Party",
+        "game": "gh",
+        "is_manual": true,
+        "cards": [
+            "RIFT-14"
+        ]
+    },
+    {
+        "id": "PS",
+        "name": "Saboteurs",
+        "type": "Party",
+        "game": "gh",
+        "is_manual": true,
+        "cards": [
+            "RIFT-14"
+        ]
+    },
+    {
         "id": "PCSOD",
         "name": "Ooze Destroyed",
         "type": "Party",
@@ -655,7 +676,11 @@
         "id": "PCSOA",
         "name": "Oak Alliance",
         "type": "Party",
-        "game": "cs"
+        "game": "cs",
+        "is_manual": true,
+        "cards": [
+            "C-42"
+        ]
     },
     {
         "id": "PCSIA",
@@ -671,13 +696,15 @@
         "id": "PCSGB",
         "name": "Guttermaw's Bounty",
         "type": "Party",
-        "game": "cs"
+        "game": "cs",
+        "is_manual": true
     },
     {
         "id": "PCSFR",
         "name": "Feirgrin's Request",
         "type": "Party",
-        "game": "cs"
+        "game": "cs",
+        "is_manual": true
     },
     {
         "id": "PCSPL",

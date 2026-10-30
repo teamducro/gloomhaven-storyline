@@ -83,6 +83,7 @@
         "game": "fh",
         "is_manual": true,
         "cards": [
+            "SR-17",
             "SR-34"
         ],
         "group": "JAR"

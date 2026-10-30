@@ -242,6 +242,12 @@ export default {
     "gh-GST": {
         "name": "Zerwane więzy"
     },
+    "gh-PA": {
+        "name": "Accomplices"
+    },
+    "gh-PS": {
+        "name": "Saboteurs"
+    },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
     },

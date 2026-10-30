@@ -119,6 +119,34 @@ describe('Achievements', () => {
         utilities.isNodeIncomplete(74);
     });
 
+    it('It can add the party achievements from Rift Event 14', () => {
+        cy.visit('/tracker/#/achievements');
+
+        cy.get('button').contains('add').click();
+        cy.get('input[name=achievement-to-add]').type('acc');
+        cy.get('li').contains('Accomplices').click();
+        cy.get('#party-achievements li').contains('Accomplices').should('be.visible');
+
+        cy.get('button').contains('add').click();
+        cy.get('input[name=achievement-to-add]').type('sab');
+        cy.get('li').contains('Saboteurs').click();
+        cy.get('#party-achievements li').contains('Saboteurs').should('be.visible');
+    });
+
+    it('It unlocks Unseen Plight when adding Guttermaw\'s Bounty', () => {
+        cy.visit('/tracker');
+        utilities.switchGame('cs');
+        cy.visit('/tracker/#/achievements');
+
+        cy.get('button').contains('add').click();
+        cy.get('input[name=achievement-to-add]').type('gut');
+        cy.get('li').contains('Guttermaw\'s Bounty').click();
+
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 'RM5').state).eq('incomplete');
+        });
+    });
+
     it('It can remove manual achievements', () => {
         cy.visit('/tracker/?groups=CR_GCRM&states=74_i');
         cy.visit('/tracker/#/achievements');
