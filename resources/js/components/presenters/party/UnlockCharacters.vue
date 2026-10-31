@@ -52,7 +52,7 @@ export default {
             this.sheet.characterUnlocks[id] = isChecked;
             this.sheet.store();
             this.scenarioRepository.scenarioValidator.validate();
-            this.$emit('changed')
+            this.$emit('changed', id, isChecked)
         },
     }
 }

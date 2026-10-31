@@ -2776,5 +2776,836 @@ export default {
         "rewards": [
             "“No Nonsense Boots” (Item HA)"
         ]
+    },
+    "gh2-0": {
+        "name": "Training Course",
+        "rewards": [
+            "2 gold each"
+        ]
+    },
+    "gh2-1": {
+        "name": "Bandit Camp",
+        "rewards": [
+            "10 gold each",
+            "+1 Merchant's Guild reputation",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-2": {
+        "name": "Ruinous Crypt",
+        "rewards": [
+            "10 experience each",
+            "+1 Demons reputation",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-3": {
+        "name": "Frozen Hollow",
+        "rewards": [
+            "+1 prosperity",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-4": {
+        "name": "Crypt of the Damned",
+        "rewards": [
+            "10 experience each",
+            "+1 Demons reputation"
+        ]
+    },
+    "gh2-5": {
+        "name": "Forgotten Crypt",
+        "rewards": [
+            "+1 prosperity",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-6": {
+        "name": "Decaying Crypt",
+        "rewards": [
+            "5 gold each",
+            "10 experience each",
+            "+1 Demons reputation",
+            "Add city event C-51 to the deck"
+        ]
+    },
+    "gh2-7": {
+        "name": "Black Barrow",
+        "rewards": []
+    },
+    "gh2-8": {
+        "name": "Barrow Lair",
+        "rewards": [
+            "15 gold each",
+            "+2 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-9": {
+        "name": "Ruinous Rift",
+        "rewards": [
+            "+1 prosperity",
+            "+1 Military reputation",
+            "Add road event R-30 to the deck"
+        ]
+    },
+    "gh2-10": {
+        "name": "Mountain Pass",
+        "rewards": []
+    },
+    "gh2-11": {
+        "name": "Ritual Chamber",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each",
+            "+1 Demons reputation"
+        ]
+    },
+    "gh2-12": {
+        "name": "Inox Encampment",
+        "rewards": [
+            "20 gold each",
+            "+1 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-13": {
+        "name": "Icecrag Ascent",
+        "rewards": [
+            [],
+            [
+                "30 gold each",
+                "20 experience each",
+                "2 ✔ each",
+                "-1 Military reputation",
+                "Add city event C-39 to the deck",
+                "Add road event R-32 to the deck"
+            ],
+            []
+        ]
+    },
+    "gh2-14": {
+        "name": "Echo Chamber",
+        "rewards": []
+    },
+    "gh2-15": {
+        "name": "Plane of Elemental Power",
+        "rewards": [
+            "20 experience each",
+            "2 ✔ each",
+            "+1 Demons reputation"
+        ]
+    },
+    "gh2-16": {
+        "name": "Diamond Mine",
+        "rewards": [
+            "20 gold each",
+            "+1 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-17": {
+        "name": "Demonic Rift",
+        "rewards": [
+            "+1 prosperity",
+            "-1 Demons reputation",
+            "+2 Military reputation"
+        ]
+    },
+    "gh2-18": {
+        "name": "Investigation",
+        "rewards": [
+            "15 gold each",
+            "+1 prosperity",
+            "-1 Merchant's Guild reputation",
+            "+2 Military reputation"
+        ]
+    },
+    "gh2-19": {
+        "name": "Military Outpost",
+        "rewards": [
+            "25 experience each",
+            "+2 Demons reputation",
+            "-1 Military reputation"
+        ]
+    },
+    "gh2-20": {
+        "name": "Gloomhaven Warehouse",
+        "rewards": [
+            "25 experience each",
+            "+2 Demons reputation",
+            "-1 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-21": {
+        "name": "The Ghost Fortress",
+        "rewards": [
+            "15 gold each",
+            "+2 Merchant's Guild reputation",
+            "-1 Military reputation"
+        ]
+    },
+    "gh2-22": {
+        "name": "Doomcannon Demolition",
+        "rewards": [
+            "15 gold each",
+            "-1 Demons reputation",
+            "+2 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-24": {
+        "name": "Gloomhaven Square B",
+        "rewards": []
+    },
+    "gh2-26": {
+        "name": "Gloomhaven Battlements B",
+        "rewards": []
+    },
+    "gh2-27": {
+        "name": "Infernal Throne",
+        "rewards": [
+            [
+                "25 gold each",
+                "-10 Demons reputation",
+                "+2 Merchant's Guild reputation",
+                "-10 Military reputation",
+                "Add city event C-36 to the deck",
+                "Add city event C-54 to the deck",
+                "Add city event C-55 to the deck",
+                "Add road event R-37 to the deck",
+                "Add road event R-38 to the deck",
+                "Open envelope “Merchant's Guild”"
+            ],
+            [
+                "+1 prosperity",
+                "-10 Demons reputation",
+                "-10 Merchant's Guild reputation",
+                "+2 Military reputation",
+                "Add city event C-36 to the deck",
+                "Add city event C-53 to the deck",
+                "Add city event C-56 to the deck",
+                "Add road event R-38 to the deck",
+                "Open envelope “Military”"
+            ]
+        ]
+    },
+    "gh2-28": {
+        "name": "Temple of the Seer",
+        "rewards": [
+            [],
+            [],
+            [
+                "Unlock a random side scenario"
+            ]
+        ]
+    },
+    "gh2-29": {
+        "name": "Scorched Summit",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-30": {
+        "name": "Shrine of the Depths",
+        "rewards": []
+    },
+    "gh2-31": {
+        "name": "Decrepit Wood",
+        "rewards": [
+            [],
+            []
+        ]
+    },
+    "gh2-32": {
+        "name": "Savvas Armory",
+        "rewards": [
+            [
+                "15 gold each"
+            ],
+            [
+                "15 gold each"
+            ],
+            [
+                "15 gold each"
+            ],
+            [
+                "45 gold each",
+                "20 experience each",
+                "2 ✔ each",
+                "-1 Military reputation",
+                "Add city event C-38 to the deck",
+                "Add road event R-32 to the deck"
+            ],
+            [
+                "45 gold each",
+                "20 experience each",
+                "2 ✔ each",
+                "-1 Military reputation",
+                "Add city event C-38 to the deck",
+                "Add road event R-32 to the deck"
+            ],
+            [
+                "15 gold each"
+            ]
+        ]
+    },
+    "gh2-33": {
+        "name": "Ancient Defense Network",
+        "rewards": []
+    },
+    "gh2-34": {
+        "name": "Timeworn Tomb",
+        "rewards": [
+            [
+                "30 gold each"
+            ],
+            [
+                "30 experience each",
+                "2 ✔ each"
+            ]
+        ]
+    },
+    "gh2-35": {
+        "name": "Realm of the Voice",
+        "rewards": [
+            "30 experience each"
+        ]
+    },
+    "gh2-36": {
+        "name": "Abandoned Sewers",
+        "rewards": []
+    },
+    "gh2-37": {
+        "name": "Deep Ruins",
+        "rewards": []
+    },
+    "gh2-38": {
+        "name": "Drake Nest",
+        "rewards": []
+    },
+    "gh2-39": {
+        "name": "Vibrant Grotto",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-40": {
+        "name": "Wetlands Ambush",
+        "rewards": []
+    },
+    "gh2-41": {
+        "name": "Ancient Cistern",
+        "rewards": [
+            "+2 prosperity"
+        ]
+    },
+    "gh2-42": {
+        "name": "Secluded Valley",
+        "rewards": []
+    },
+    "gh2-43": {
+        "name": "Chasing Secrets",
+        "rewards": [
+            [
+                "+1 prosperity",
+                "Unlock a random side scenario"
+            ],
+            [
+                "+1 prosperity"
+            ],
+            [
+                "+1 prosperity"
+            ]
+        ]
+    },
+    "gh2-44": {
+        "name": "Temple of the Elements",
+        "rewards": [
+            "100 gold each",
+            "+1 prosperity",
+            "This money must immediately be spent on enhancements"
+        ]
+    },
+    "gh2-45": {
+        "name": "Plane of Night",
+        "rewards": [
+            "+1 prosperity",
+            "Open envelope “Candle”"
+        ]
+    },
+    "gh2-46": {
+        "name": "Doom Trench",
+        "rewards": []
+    },
+    "gh2-47": {
+        "name": "Slave Pens",
+        "rewards": []
+    },
+    "gh2-48": {
+        "name": "Treacherous Divide",
+        "rewards": []
+    },
+    "gh2-49": {
+        "name": "Tribal Assault",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-50": {
+        "name": "Nightmare Peak",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-51": {
+        "name": "Lair of the Unseeing Eye",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-52": {
+        "name": "Shadow Weald",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-53": {
+        "name": "Shrine of Strength",
+        "rewards": [
+            "30 experience each",
+            "2 ✔ each"
+        ]
+    },
+    "gh2-54": {
+        "name": "The Void",
+        "rewards": []
+    },
+    "gh2-55": {
+        "name": "The Last Stand",
+        "rewards": []
+    },
+    "gh2-56": {
+        "name": "The Gloom",
+        "rewards": [
+            "50 experience each",
+            "+5 prosperity"
+        ]
+    },
+    "gh2-57": {
+        "name": "Crypt Basement",
+        "rewards": [
+            "Gain “Scepter of Xorn” (Item 147)"
+        ]
+    },
+    "gh2-58": {
+        "name": "Palace of Ice",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each",
+            "Gain “Scepter of Xorn” (Item 147)",
+            "Add road event R-39 to the deck",
+            "Add city event C-66 to the deck"
+        ]
+    },
+    "gh2-59": {
+        "name": "Foggy Thicket",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-60": {
+        "name": "Bandit's Wood",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity",
+            "Personal quest 08 complete"
+        ]
+    },
+    "gh2-61": {
+        "name": "Dangerous Grove",
+        "rewards": []
+    },
+    "gh2-62": {
+        "name": "Alchemy Lab",
+        "rewards": [
+            "+1 prosperity",
+            "Personal quest 09 complete"
+        ]
+    },
+    "gh2-63": {
+        "name": "Fading Lighthouse",
+        "rewards": [
+            "Personal quest 04 complete"
+        ]
+    },
+    "gh2-64": {
+        "name": "Roots of Chaos",
+        "rewards": [
+            "Personal quest 10 complete"
+        ]
+    },
+    "gh2-65": {
+        "name": "Hero's Mausoleum",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each"
+        ]
+    },
+    "gh2-66": {
+        "name": "A Friend in Need",
+        "rewards": [
+            "15 gold each",
+            "Personal quest 11 complete"
+        ]
+    },
+    "gh2-67": {
+        "name": "Temple of the Eclipse",
+        "rewards": [
+            "15 gold each",
+            "10 experience each",
+            "Gain “Helix Ring” (Item 136)"
+        ]
+    },
+    "gh2-68": {
+        "name": "Sunken Vessel",
+        "rewards": [
+            "10 gold each"
+        ]
+    },
+    "gh2-69": {
+        "name": "Corrupted Cove",
+        "rewards": [
+            "15 experience each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-70": {
+        "name": "Underwater Lagoon",
+        "rewards": [
+            "10 gold each",
+            "10 experience each"
+        ]
+    },
+    "gh2-71": {
+        "name": "Clockwork Factory",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each"
+        ]
+    },
+    "gh2-72": {
+        "name": "Well of the Unfortunate",
+        "rewards": [
+            "15 gold each"
+        ]
+    },
+    "gh2-73": {
+        "name": "Chained Isle",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-74": {
+        "name": "Windswept Highlands",
+        "rewards": [
+            "+1 prosperity",
+            "Gain “Major Power Potion” (Item 53)"
+        ]
+    },
+    "gh2-75": {
+        "name": "Rockslide Ridge",
+        "rewards": [
+            "Gain “Ruby Talisman” (Item 152)"
+        ]
+    },
+    "gh2-76": {
+        "name": "Oozing Grove",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-77": {
+        "name": "Harrower Hive",
+        "rewards": []
+    },
+    "gh2-78": {
+        "name": "Vault of Secrets",
+        "rewards": [
+            "+3 prosperity"
+        ]
+    },
+    "gh2-79": {
+        "name": "Lurker Assault",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-80": {
+        "name": "Lost Temple",
+        "rewards": [
+            "100 gold each",
+            "+2 prosperity",
+            "Gain “Heart of the Betrayer” (Item 133)",
+            "This money must immediately be spent on enhancements"
+        ]
+    },
+    "gh2-81": {
+        "name": "Overgrown Graveyard",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-82": {
+        "name": "Syndicate Hideout",
+        "rewards": [
+            "+1 prosperity",
+            "Add city event C-72 to the deck"
+        ]
+    },
+    "gh2-83": {
+        "name": "Lost Island",
+        "rewards": [
+            "15 gold each"
+        ]
+    },
+    "gh2-84": {
+        "name": "Wild Melee",
+        "rewards": [
+            "15 experience each",
+            "1 ✔ each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-85": {
+        "name": "Crossroads Station",
+        "rewards": [
+            "1 ✔ each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-86": {
+        "name": "Magma Pit",
+        "rewards": [
+            "15 gold each"
+        ]
+    },
+    "gh2-87": {
+        "name": "Sulfur Mine",
+        "rewards": [
+            "Gain “Ancient Drill” (Item 109)"
+        ]
+    },
+    "gh2-88": {
+        "name": "Arcane Library",
+        "rewards": [
+            "Add city event C-37 to the deck"
+        ]
+    },
+    "gh2-89": {
+        "name": "Community Service",
+        "rewards": [
+            "Gain “Major Healing Potion” (Item 37)"
+        ]
+    },
+    "gh2-90": {
+        "name": "Burning Mountain",
+        "rewards": []
+    },
+    "gh2-91": {
+        "name": "Shadows Within",
+        "rewards": []
+    },
+    "gh2-92": {
+        "name": "Chronal Anchor",
+        "rewards": [
+            "10 experience each",
+            "Gain “Temporal Matrix” (Item 144)"
+        ]
+    },
+    "gh2-93": {
+        "name": "Harried Village",
+        "rewards": [
+            "1 ✔ each"
+        ]
+    },
+    "gh2-94": {
+        "name": "A Watery Rescue",
+        "rewards": [
+            "10 experience each",
+            "Gain “Otherworldly Scepter” (Item 139)"
+        ]
+    },
+    "gh2-95": {
+        "name": "Cargo Ship",
+        "rewards": []
+    },
+    "gh2-96": {
+        "name": "Back Alley Brawl",
+        "rewards": [
+            "10 gold each"
+        ]
+    },
+    "gh2-97": {
+        "name": "Vermling Camp",
+        "rewards": [
+            "5 experience each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-98": {
+        "name": "Metamorphic Fault",
+        "rewards": [
+            "10 experience each",
+            "Gain “Skull of Hatred” (Item 111)"
+        ]
+    },
+    "gh2-99": {
+        "name": "Sintering Forge",
+        "rewards": [
+            "Gain “Dawnblade” (Item 117)",
+            "Add road event R-33 to the deck"
+        ]
+    },
+    "gh2-100": {
+        "name": "Silence Falls",
+        "rewards": [
+            "+1 prosperity",
+            "Add city event C-60 to the deck"
+        ]
+    },
+    "gh2-101": {
+        "name": "Gloomhaven Square A (Demon Allies)",
+        "rewards": [
+            "30 experience each",
+            "+2 Demons reputation",
+            "-10 Merchant's Guild reputation",
+            "-10 Military reputation",
+            "Add city event C-36 to the deck",
+            "Add city event C-55 to the deck",
+            "Add city event C-56 to the deck",
+            "Add road event R-36 to the deck",
+            "Open envelope “Demons”"
+        ]
+    },
+    "gh2-102": {
+        "name": "Gloomhaven Square A (Military Allies)",
+        "rewards": []
+    },
+    "gh2-103": {
+        "name": "Gloomhaven Battlements A (Merchant Allies)",
+        "rewards": []
+    },
+    "gh2-104": {
+        "name": "Gloomhaven Battlements A (Military Allies)",
+        "rewards": []
+    },
+    "gh2-201": {
+        "name": "A Night Out",
+        "rewards": [
+            "Gain “Hooked Shield” (Item 153)"
+        ]
+    },
+    "gh2-202": {
+        "name": "An Unfortunate Intrusion",
+        "rewards": [
+            "Gain “Focusing Ray” (Item 154)"
+        ]
+    },
+    "gh2-203": {
+        "name": "Corrupted Apothecary",
+        "rewards": [
+            "Gain “Etheric Elixir” (Item 155)"
+        ]
+    },
+    "gh2-204": {
+        "name": "Material Concerns",
+        "rewards": [
+            "Gain “Silent Stiletto” (Item 156)"
+        ]
+    },
+    "gh2-205": {
+        "name": "Stone Defense",
+        "rewards": [
+            "Gain “Stone Charm” (Item 157)"
+        ]
+    },
+    "gh2-206": {
+        "name": "Vermling Liberation",
+        "rewards": [
+            "Gain “Psychic Knife” (Item 158)"
+        ]
+    },
+    "gh2-207": {
+        "name": "Caravan Escort",
+        "rewards": [
+            "Gain “Insignia of the Divine” (Item 159)"
+        ]
+    },
+    "gh2-208": {
+        "name": "Storage Fees",
+        "rewards": [
+            "Gain “Utility Belt” (Item 160)"
+        ]
+    },
+    "gh2-209": {
+        "name": "Plane of Wild Beasts",
+        "rewards": [
+            "Gain “Phasing Idol” (Item 161)"
+        ]
+    },
+    "gh2-210": {
+        "name": "Harvesting the Night",
+        "rewards": [
+            "Gain “The Night's Caress” (Item 162)"
+        ]
+    },
+    "gh2-211": {
+        "name": "Plagued Crypt",
+        "rewards": [
+            "Gain “Pendant of the Plague” (Item 163)"
+        ]
+    },
+    "gh2-212": {
+        "name": "Unnatural Insults",
+        "rewards": [
+            "Gain “Mask of Death” (Item 164)"
+        ]
+    },
+    "gh2-213": {
+        "name": "Battle of the Bards",
+        "rewards": [
+            "Gain “Master's Lute” (Item 165)"
+        ]
+    },
+    "gh2-214": {
+        "name": "Corrupted Hunt",
+        "rewards": [
+            "Gain “Cloak of the Hunter” (Item 166)"
+        ]
+    },
+    "gh2-215": {
+        "name": "Aftermath",
+        "rewards": [
+            "Gain “Doctor's Coat” (Item 167)"
+        ]
+    },
+    "gh2-216": {
+        "name": "Elemental Secrets",
+        "rewards": [
+            "Gain “Elemental Vest” (Item 168)"
+        ]
+    },
+    "gh2-217": {
+        "name": "The Caged Bear",
+        "rewards": [
+            "Gain “Staff of Command” (Item 169)"
+        ]
+    },
+    "gh2-218": {
+        "name": "The Sands of Time",
+        "rewards": [
+            "Gain “Crawling Carapace” (Item 170)"
+        ]
     }
 }

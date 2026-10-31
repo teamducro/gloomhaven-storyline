@@ -149,10 +149,12 @@ export default {
         "expand_title": {
             "gh": "Unlock Gloomhaven for a New Adventure",
             "fh": "Unlock Frosthaven for a New Adventure",
+            "gh2": "Unlock Gloomhaven 2nd Edition for a New Adventure",
         },
         "expand_text": {
             "gh": "You've selected Gloomhaven but you don't have access to it yet.",
             "fh": "You've selected Frosthaven but you don't have access to it yet.",
+            "gh2": "You've selected Gloomhaven 2nd Edition, it's included with Gloomhaven but you don't have access to it yet.",
             "general": "Ready for a new adventure? Add it to your existing shared campaign license."
         },
         "local": "Or use the free local version instead.",
@@ -352,6 +354,7 @@ export default {
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
     "mp": "Mercenary Pack",
+    "gh2": "Gloomhaven 2nd Edition",
 
     "Availability": "Availability",
     "Sticker": "Sticker",
@@ -529,5 +532,29 @@ export default {
     "Spirits": "Spirits",
     "Timed": "Timed",
     "Void": "Void Energy",
-    "Voidsight": "Voidsight"
+    "Voidsight": "Voidsight",
+
+    "Inspiration": "Inspiration",
+    "Demons": "Demons",
+    "Military": "Military",
+    "Imbuement": "Imbuement",
+    "Read section": "Read section",
+    "Scenario": "Scenario",
+    "13 reputation with any faction": "13 reputation with any faction",
+    "Add City Event 57": "Add City Event 57",
+    "Reputation above 12 unlocked": "Reputation above 12 unlocked",
+    "gained prosperity checkboxes by imbuement.": "gained prosperity checkboxes by imbuement.",
+    "Classes unlocked": "Classes unlocked",
+    "Unlocking a class adds its events to the event decks.": "Unlocking a class adds its events to the event decks.",
+    "The Sect": "The Sect",
+    "Merchant's Guild": "Merchant's Guild",
+    "The Shields": "The Shields",
+    "Hail": "Hail",
+    "The Voice and the Drake": "The Voice and the Drake",
+    "The Sewers": "The Sewers",
+    "The Gloom": "The Gloom",
+    "Finale": "Finale",
+    "Random Side Scenarios": "Random Side Scenarios",
+    "Puzzle Book": "Puzzle Book",
+    "Events": "Events"
 }

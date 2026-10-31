@@ -61,7 +61,7 @@
                                 <select v-model="abilityProperty" class="bg-dark-gray2-75 p-2 rounded">
                                     <option value="normal">{{ $t('Normal') }}</option>
                                     <option value="lost">{{ $t('Lost (no persistent)') }}</option>
-                                    <option value="persistent">{{ $t('Persistent bonus') }}</option>
+                                    <option v-if="sheet.game !== 'gh2'" value="persistent">{{ $t('Persistent bonus') }}</option>
                                 </select>
                             </label>
 

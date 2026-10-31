@@ -120,10 +120,13 @@ const labels = {
     attack_hex: 'Attack Hex',
 };
 
+// GH2e (rulebook Appendix D, p.65): Frosthaven prices, but no Regenerate enhancement.
+const {regenerate, ...gh2Costs} = frosthavenCosts;
+
 export default {
     methods: {
         enhancementBaseCosts(game) {
-            return game === 'fh' ? frosthavenCosts : classicCosts;
+            return {fh: frosthavenCosts, gh2: gh2Costs}[game] || classicCosts;
         },
         enhancementLabel(type) {
             return labels[type] || type;
@@ -153,10 +156,10 @@ export default {
                 ? new BuildingRepository().find(44).level
                 : 0;
         },
-        // Frosthaven and Mercenary Pack classes use the Frosthaven card design, where the
+        // Frosthaven, Mercenary Pack and GH2e classes use the Frosthaven card design, where the
         // lost/persistent enhancement cost multipliers apply (Appendix D).
         hasFrosthavenCards(character) {
-            return ['fh', 'mp'].includes(character?.game);
+            return ['fh', 'mp', 'gh2'].includes(character?.game);
         },
         calculateEnhancementCost({type, level, multiTarget, abilityProperty, frosthavenCard, previousCount, hexCount}, game) {
             const costs = this.enhancementBaseCosts(game);
@@ -171,11 +174,12 @@ export default {
 
             // Lost/persistent multipliers only apply to Frosthaven-style cards.
             if (frosthavenCard) {
-                if (abilityProperty === 'lost') {
+                // GH2e: lost halves, except summon actions, and there is no persistent multiplier.
+                if (abilityProperty === 'lost' && !(game === 'gh2' && type.startsWith('summon_'))) {
                     cost *= 0.5;
                 }
                 // Persistent doesn't triple summon stat enhancements.
-                else if (abilityProperty === 'persistent' && !type.startsWith('summon_')) {
+                else if (abilityProperty === 'persistent' && game !== 'gh2' && !type.startsWith('summon_')) {
                     cost *= 3;
                 }
             }
@@ -196,6 +200,10 @@ export default {
             return !!sheet.enhancementsEnabled;
         },
         maxEnhancedCards(sheet) {
+            if (sheet.game === 'gh2') {
+                return Infinity; // GH2e FAQ 4.1: no limit
+            }
+
             return SheetCalculations.methods.calculateProsperity(sheet.prosperityIndex, sheet.game);
         },
         enhancedCardCount(sheet, characterId) {

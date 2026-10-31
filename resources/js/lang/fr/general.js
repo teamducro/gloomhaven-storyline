@@ -346,6 +346,7 @@ export default {
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
     "mp": "Mercenary Pack",
+    "gh2": "Gloomhaven 2nd Edition",
     "Availability": "Disponibilité",
     "Sticker": "Autocollant",
     "State": "État",
@@ -509,5 +510,16 @@ export default {
     "Spirits": "Esprits",
     "Timed": "Chronométré",
     "Void": "Énergie du Vide",
-    "Voidsight": "Vision du Vide"
+    "Voidsight": "Vision du Vide",
+    "The Sect": "The Sect",
+    "Merchant's Guild": "Merchant's Guild",
+    "The Shields": "The Shields",
+    "Hail": "Hail",
+    "The Voice and the Drake": "The Voice and the Drake",
+    "The Sewers": "The Sewers",
+    "The Gloom": "The Gloom",
+    "Finale": "Finale",
+    "Random Side Scenarios": "Random Side Scenarios",
+    "Puzzle Book": "Puzzle Book",
+    "Events": "Events"
 }

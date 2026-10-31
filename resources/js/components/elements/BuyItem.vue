@@ -183,7 +183,7 @@ export default {
         getCharacters() {
             const sheet = this.sheetRepository.make(this.appData.game);
             this.characters = collect(sheet.characters);
-            this.costModifier = this.calculateCostModifier(sheet.reputation);
+            this.costModifier = this.calculateCostModifier(sheet.reputation, sheet.game);
         },
         store() {
             this.character.store();

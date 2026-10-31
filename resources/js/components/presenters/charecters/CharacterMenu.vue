@@ -5,7 +5,7 @@
             <select id="mobile-character-menu" @change="mobileSelect"
                     class="block w-full absolute opacity-0 font-title text-md -ml-1">
                 <option value="party">
-                    {{ sheet.game === Game.fh
+                    {{ [Game.fh, Game.gh2].includes(sheet.game)
                         ? $t('Campaign sheet')
                         : $t('Party sheet')
                     }}

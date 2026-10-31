@@ -346,6 +346,7 @@ export default {
     "cs": "Escamas carmesís",
     "Crimson Scales": "Escamas carmesís",
     "mp": "Mercenary Pack",
+    "gh2": "Gloomhaven Segunda Edición",
     "Availability": "Disponibilidad",
     "Sticker": "Pegatina",
     "State": "Estado",
@@ -509,5 +510,16 @@ export default {
     "Spirits": "Spirits",
     "Timed": "Timed",
     "Void": "Void Energy",
-    "Voidsight": "Voidsight"
+    "Voidsight": "Voidsight",
+    "The Sect": "The Sect",
+    "Merchant's Guild": "Merchant's Guild",
+    "The Shields": "The Shields",
+    "Hail": "Hail",
+    "The Voice and the Drake": "The Voice and the Drake",
+    "The Sewers": "The Sewers",
+    "The Gloom": "The Gloom",
+    "Finale": "Finale",
+    "Random Side Scenarios": "Random Side Scenarios",
+    "Puzzle Book": "Puzzle Book",
+    "Events": "Events"
 }

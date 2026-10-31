@@ -11,7 +11,14 @@
                                       class="w-full rounded-lg sm:rounded-xl"/>
                             </template>
                             <template v-slot:back>
-                                <webp :src="card.images[1]" :alt="$t(card.translatedType) + ' #' + card.id"
+                                <div v-if="card.game === 'gh2'" class="w-full">
+                                    <div v-for="(src, index) in card.images.slice(1)" :key="src" class="relative">
+                                        <webp :src="src" :alt="$t(card.translatedType) + ' #' + card.id + ' ' + card.outcomes[index]"
+                                              class="w-full"/>
+                                        <div v-if="blur && card.outcomes[index] !== choice" class="blur absolute inset-0"></div>
+                                    </div>
+                                </div>
+                                <webp v-else :src="card.images[1]" :alt="$t(card.translatedType) + ' #' + card.id"
                                       class="w-full rounded-lg sm:rounded-xl"/>
                             </template>
                         </flip-card>
@@ -20,20 +27,16 @@
                         <webp :src="card.images[0]" class="invisible"></webp>
 
                         <transition name="fade">
-                            <div v-if="blur"
+                            <div v-if="blur && card.game !== 'gh2'"
                                  class="blur rounded-lg absolute h-1/2 w-full top-0 left-0"
                                  :class="{'top-1/2': choice === 'A'}">
                             </div>
                         </transition>
                     </div>
                     <div v-if="!choice" class="mt-4 flex justify-between">
-                        <button @click="chose('A')"
+                        <button v-for="outcome in card.outcomes" :key="outcome" @click="chose(outcome)"
                                 class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                            <span class="mdc-button__label">A</span>
-                        </button>
-                        <button @click="chose('B')"
-                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                            <span class="mdc-button__label">B</span>
+                            <span class="mdc-button__label">{{ outcome }}</span>
                         </button>
                         <button v-if="!viaDraw && !appData.read_only" @click="remove"
                                 class="mdc-button origin-left transform scale-90 mdc-button--raised">
@@ -41,10 +44,10 @@
                         </button>
                     </div>
                     <div v-if="choice" class="mt-4 flex justify-between">
-                        <button @click="blur = !blur"
+                        <button v-if="card.outcomes.length > 1" @click="blur = !blur"
                                 class="mdc-button origin-left transform scale-90 mdc-button--raised">
                             <span class="mdc-button__label">
-                                {{ $t('Toggle') + ' ' + (choice === 'A' ? 'B' : 'A') }}
+                                {{ $t('Toggle') + ' ' + card.outcomes.filter(outcome => outcome !== choice).join('/') }}
                             </span>
                         </button>
 

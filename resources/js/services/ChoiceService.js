@@ -12,6 +12,22 @@ class ChoiceService {
             return undefined;
         }
 
+        // Data-driven prompts (gh2): option n unlocks prompt_unlocks[n - 1].
+        if (scenario.prompt_unlocks) {
+            return new PromptConfig(scenario, {
+                options: scenario.prompt_unlocks.length,
+                callback: (value) => {
+                    if (value) {
+                        this.scenarioRepository.choose(scenario, scenario.prompt_unlocks[value - 1].join(',') || null);
+                    } else {
+                        // reset; the validator hides the targets, as a target may have another completed parent
+                        this.scenarioRepository.choose(scenario, null);
+                    }
+                    this.setChoice(scenario, value);
+                }
+            });
+        }
+
         switch (scenario.prompt) {
             case 'dragon':
                 let drakesCommand = this.achievementRepository.find('PTDC');

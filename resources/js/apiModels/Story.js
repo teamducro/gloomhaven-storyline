@@ -1,6 +1,7 @@
 import Model from "./Model";
 import dayjs from "dayjs";
 import Snapshot from "./Snapshot";
+import GameData from "../services/GameData";
 import LZString from "lz-string";
 
 import md5 from 'js-md5';
@@ -58,7 +59,8 @@ class Story extends Model {
         return {
             data: JSON.stringify(this.data),
             name: this.name,
-            game: app.game
+            // The API only knows purchasable games; gh2 is covered by gh.
+            game: (new GameData).accessGame(app.game)
         }
     }
 

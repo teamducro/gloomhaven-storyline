@@ -20,6 +20,7 @@ let decks = {
 
 // Read perks per character
 for (const [id, character] of Object.entries(characters.characters)) {
+    if (!fs.existsSync(new URL('../resources/img/attack-modifiers/' + id.toLowerCase(), import.meta.url))) continue; // No images (gh2): ModifierDeck shows text cards
     let perkCards = [];
 
     // Generate unique codes for each perk card

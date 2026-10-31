@@ -12,8 +12,8 @@ export default {
             if (morale <= 20) return 15;
             return 0;
         },
-        calculateCostModifier(reputation) {
-            if (!reputation) {
+        calculateCostModifier(reputation, game) {
+            if (!reputation || game === 'gh2') {
                 return 0;
             }
 
@@ -28,7 +28,12 @@ export default {
 
             return costModifier;
         },
-        calculateDonationProsperity(donations) {
+        calculateDonationProsperity(donations, game = 'gh') {
+            if (game === 'gh2') {
+                // Great Oak track: 10 gold per box, +1 prosperity every 5th box, 100 boxes.
+                return Math.min(20, Math.floor(donations / 50));
+            }
+
             let rates = [100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, 900, 1000];
             let donationProsperity = 0;
 
@@ -49,6 +54,10 @@ export default {
                 case 'fh':
                     return collect({
                         1: 1, 7: 2, 16: 3, 28: 4, 43: 5, 61: 6, 82: 7, 106: 8, 133: 9
+                    });
+                case 'gh2':
+                    return collect({
+                        1: 1, 6: 2, 13: 3, 23: 4, 34: 5, 46: 6, 60: 7, 75: 8, 90: 9
                     });
                 default:
                     return collect({
@@ -74,6 +83,13 @@ export default {
             prosperityItems = this.prependGame('gh', prosperityItems);
 
             return _.uniq(prosperityItems.concat(unlockedItems));
+        },
+        calculateItemsGh2(unlockedItems, prosperityIndex) {
+            // Last item number per prosperity level (rulebook p.52). Item 116 was unlocked for everyone by the FAQ.
+            const prosperityMap = [16, 24, 32, 40, 48, 53, 58, 63, 68];
+            const prosperityItems = Helpers.makeArrayWithNumbers(prosperityMap[this.calculateProsperity(prosperityIndex, 'gh2') - 1]).concat(116);
+
+            return _.uniq(this.prependGame('gh2', prosperityItems).concat(unlockedItems));
         },
         calculateItemsFh(unlockedItems, buildingRepository) {
             // Initially available items
@@ -238,7 +254,7 @@ export default {
                 }
             }
 
-            if (game === 'fh') {
+            if (['fh', 'gh2'].includes(game)) {
                 rows.hazardousTerrain = {
                     label: this.$t('Hazardous terrain'),
                     value: [1,2,2,2,3,3,3,4][level] || 2

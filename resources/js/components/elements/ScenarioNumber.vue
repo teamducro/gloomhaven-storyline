@@ -3,7 +3,7 @@
         <button type="button" v-if="s.isVisible() || s.is_side"
                 :class="classes">
             <character-icon class="hover:cursor-pointer" v-if="s.solo" :character="s.solo"/>
-            <span v-else>{{ s.id }}</span>
+            <span v-else>{{ s.displayId }}</span>
         </button>
         <span class="ml-2" v-if="showName">{{ $t(s.name) }}</span>
     </span>

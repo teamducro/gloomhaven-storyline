@@ -12,7 +12,14 @@ export default class PersonalQuestValidator {
         if (allGoalsMet) {
             // Unlock a character
             if (quest.character_unlock && sheet.characterUnlocks.hasOwnProperty(quest.character_unlock)) {
-                sheet.characterUnlocks[quest.character_unlock] = true;
+                if (!sheet.characterUnlocks[quest.character_unlock]) {
+                    sheet.characterUnlocks[quest.character_unlock] = true;
+                    if (sheet.game === 'gh2') {
+                        sheet.unlockClassEvents(quest.character_unlock);
+                    }
+                    // The caller only stores the character, not the sheet.
+                    sheet.store();
+                }
             }
             // Unlock a building
             if (quest.building_unlocks && !quest.unlockedBuilding) {

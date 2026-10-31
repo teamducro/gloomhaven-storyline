@@ -375,6 +375,9 @@ export default {
                 else if (this.currentGame === Game.fh) {
                     sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
                 }
+                else if (this.currentGame === Game.gh2) {
+                    sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.prosperityIndex);
+                }
                 else {
                     sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
                 }

@@ -260,7 +260,7 @@ export default {
             this.loading = true;
 
             this.sheet = this.sheetRepository.make(this.appData.game);
-            this.costModifier = this.calculateCostModifier(this.sheet.reputation || 0);
+            this.costModifier = this.calculateCostModifier(this.sheet.reputation || 0, this.sheet.game);
             this.campaignName = this.getCampaignName();
             this.itemAvailability = new ItemAvailability(this.sheet);
 
@@ -282,6 +282,9 @@ export default {
             }
             else if (this.currentGame === 'fh') {
                 sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
+            }
+            else if (this.currentGame === Game.gh2) {
+                sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.prosperityIndex);
             }
             else {
                 sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);

@@ -13,7 +13,7 @@
         <ul :key="listKey">
             <li v-for="code in games">
                 <checkbox-with-label :id="code+'-enabled'"
-                                     :label="$t(code)"
+                                     :label="$t(code) + (beta.includes(code) ? ' (BETA)' : '')"
                                      v-model:checked="enabled[code]"
                                      :disabled="disabled[code]"
                                      :auto-disable="false"
@@ -54,6 +54,7 @@ export default {
             const enabledGames = this.readEnabled();
             const gameData = new GameData;
             const beta = gameData.beta();
+            this.beta = beta;
             this.games = gameData.games();
             this.games.forEach((code) => {
                 // GH is always enabled, it's used as default in some places

@@ -10,7 +10,9 @@ class AchievementValidator {
 
     validate() {
         if (this.validateOneTime) {
-            if (app.game !== 'fh') {
+            if (app.game === 'gh2') {
+                this.checkStartingRule();
+            } else if (app.game !== 'fh') {
                 this.checkCityRule();
             }
             this.fixAchievementGroups();
@@ -29,6 +31,13 @@ class AchievementValidator {
         else if (cityRuleGroup.achievements[0] !== 'GCRM') {
             cityRuleGroup._achievements.unshift('GCRM');
             cityRuleGroup.store();
+        }
+    }
+
+    // The board starts with "An Uneasy Peace" until another city rule replaces it.
+    checkStartingRule() {
+        if (!new AchievementGroup('CR2').achievements.length) {
+            this.achievementRepository.gain('G2AUP');
         }
     }
 

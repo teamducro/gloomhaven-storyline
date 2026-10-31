@@ -4,6 +4,13 @@ import Helpers from "../services/Helpers";
 import CharacterRepository from "../repositories/CharacterRepository";
 import Versionable from "./Versionable";
 
+// Events added when a locked gh2 class is unlocked (revised campaign sheet / FAQ major errata)
+const classEvents = {
+    SK2: ['R-50', 'R-51'], QM2: ['R-47', 'C-78'], ST2: ['R-44', 'R-45'], NS2: ['R-46', 'C-81'],
+    PH2: ['C-76', 'C-77'], BE2: ['C-73', 'R-40'], SS2: ['R-49', 'C-80'], DS2: ['C-74', 'C-75'],
+    SB2: ['R-48', 'C-79'], EL2: ['R-42', 'R-43'], WF2: ['R-52', 'R-53'], BS2: ['R-54'],
+};
+
 class Sheet {
 
     static make(game) {
@@ -24,6 +31,11 @@ class Sheet {
         this.notes = data.notes || '';
         this.unlocks = {...data.unlocks};
         this.scenarioLevel = data.scenarioLevel || 0;
+
+        // GH2e
+        this.factionReputation = {...data.factionReputation};
+        this.inspiration = data.inspiration || 0;
+        this.imbuement = data.imbuement || 0;
 
         // Items
         this.itemDesigns = {...data.itemDesigns};
@@ -58,6 +70,9 @@ class Sheet {
             notes: {'notes': ''},
             unlocks: {'unlocks': {}},
             scenarioLevel: 'scenarioLevel',
+            factionReputation: {'factionReputation': {}},
+            inspiration: {'inspiration': 0},
+            imbuement: {'imbuement': 0},
 
             // Items
             itemDesigns: {'itemDesigns': {}},
@@ -184,6 +199,55 @@ class Sheet {
         this.unlocks = this.removeInvalid(this.unlocks, 14);
     }
 
+    // Item designs, event decks, campaign sheet unlocks and faction tracks for GH2e.
+    fillBlanksGh2() {
+        // Items 1–68 and 116 come from prosperity; the rest are unlocked by game effects.
+        for (let i = 69; i <= 170; i++) {
+            if (i !== 116) {
+                this.itemDesigns[i] = this.itemDesigns[i] || false;
+            }
+        }
+        this.itemDesigns = this.removeInvalid(this.itemDesigns, 170);
+
+        // Starting decks C-01..C-20 and R-01..R-20
+        if (!Object.keys(this.city).length) {
+            for (let i = 1; i <= 20; i++) {
+                this.city[i] = true;
+            }
+        }
+
+        if (!Object.keys(this.road).length) {
+            for (let i = 1; i <= 20; i++) {
+                this.road[i] = true;
+            }
+        }
+
+        for (let i = 1; i <= 100; i++) {
+            this.city[i] = this.city[i] || false;
+        }
+
+        for (let i = 1; i <= 77; i++) {
+            this.road[i] = this.road[i] || false;
+        }
+
+        for (let i = 0; i < 20; i++) {
+            this.unlocks[i] = this.unlocks[i] || false;
+        }
+
+        this.factionReputation = {demons: 0, 'merchant-guild': 0, military: 0, ...this.factionReputation};
+
+        this.city = this.removeInvalid(this.city, 100);
+        this.road = this.removeInvalid(this.road, 77);
+        this.unlocks = this.removeInvalid(this.unlocks, 19);
+    }
+
+    unlockClassEvents(id) {
+        (classEvents[id] || []).forEach((event) => {
+            const [type, number] = event.split('-');
+            this[type === 'C' ? 'city' : 'road'][parseInt(number)] = true;
+        });
+    }
+
     fillRelations() {
         // Copies: read() shares these objects with app.campaignData, which must keep the unknown characters.
         this.characters = {...this.characters};
@@ -245,6 +309,9 @@ class Sheet {
             case 'cs':
                 this.fillBlanksCs();
                 break;
+            case 'gh2':
+                this.fillBlanksGh2();
+                break;
             default:
                 this.fillBlanksGH();
                 this.migrateEnvelopeXResult();
@@ -300,6 +367,15 @@ class Sheet {
         if (!values.hidePersonalQuests) {
             delete values.hidePersonalQuests;
         }
+        if (!Object.values(values.factionReputation || {}).some(v => v)) {
+            delete values.factionReputation;
+        }
+        if (!values.inspiration) {
+            delete values.inspiration;
+        }
+        if (!values.imbuement) {
+            delete values.imbuement;
+        }
         return values;
     }
 
@@ -311,6 +387,8 @@ class Sheet {
                 return ["RG", "DM", "HT", "VW"];
             case 'cs':
                 return ["BM", "BK", "CG", "CT", "FK", "HP", "HO", "LU", "MF", "ST"];
+            case 'gh2':
+                return ["BR2", "CH2", "MT2", "SC2", "SW2", "TI2"];
             default:
                 return ["BR", "CH", "SW", "TI", "SC", "MT"];
         }

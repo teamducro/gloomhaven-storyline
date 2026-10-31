@@ -86,7 +86,8 @@ export default {
             this.games = (enabledGames || app.enabledGames).filter(code => !crossover.includes(code))
         },
         isNotAvailable(code) {
-            return this.story && this.gameData.purchasable().includes(code) && !this.story?.games?.includes(code)
+            const accessGame = this.gameData.accessGame(code)
+            return this.story && this.gameData.purchasable().includes(accessGame) && !this.story?.games?.includes(accessGame)
         },
         selected(event) {
             const code = event?.detail?.value

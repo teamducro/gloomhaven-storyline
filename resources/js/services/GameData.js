@@ -1,10 +1,12 @@
 import achievementsJson from '../achievements.json'
 import achievementsFhJson from '../achievements-fh.json'
+import achievementsGh2Json from '../achievements-gh2.json'
 import scenariosJson from '../scenarios.json'
 import scenariosFhJson from '../scenarios-fh.json'
 import scenariosJotlJson from '../scenarios-jotl.json'
 import scenariosCsJson from '../scenarios-cs.json'
 import scenariosMpJson from '../scenarios-mp.json'
+import scenariosGh2Json from '../scenarios-gh2.json'
 import questsJson from '../quests.json'
 import questsFcJson from '../quests-fc.json'
 import questsJotlJson from '../quests-jotl.json'
@@ -13,17 +15,20 @@ import questsCsJson from '../quests-cs.json'
 import personalQuestsJson from '../personal-quests.json'
 import personalQuestsCsJson from '../personal-quests-cs.json'
 import personalQuestsFhJson from '../personal-quests-fh.json'
+import personalQuestsGh2Json from '../personal-quests-gh2.json'
 import itemsJson from '../items.json'
 import itemsJotlJson from '../items-jotl.json'
 import itemsCsJson from '../items-cs.json'
 import itemsFhJson from '../items-fh.json'
 import itemsMpJson from '../items-mp.json'
+import itemsGh2Json from '../items-gh2.json'
 import abilitiesJson from '../abilities.json'
 import abilitiesFcJson from '../abilities-fc.json'
 import abilitiesJotlJson from '../abilities-jotl.json'
 import abilitiesCsJson from '../abilities-cs.json'
 import abilitiesFhJson from '../abilities-fh.json'
 import abilitiesMpJson from '../abilities-mp.json'
+import abilitiesGh2Json from '../abilities-gh2.json'
 import charactersJson from '../characters.json'
 import attackModifierDecksJson from '../attack-modifier-decks.json'
 import townGuardFhJson from '../town-guard-fh.json'
@@ -42,15 +47,25 @@ export default class GameData {
     }
 
     beta() {
-        return []
+        return [Game.gh2]
     }
 
     purchasable() {
         return [Game.gh, Game.fh]
     }
 
+    // Games without their own product: buying the mapped game unlocks them too.
+    includedIn() {
+        return {[Game.gh2]: Game.gh}
+    }
+
+    // The game whose purchase gives access to `game`.
+    accessGame(game) {
+        return this.includedIn()[game] || game
+    }
+
     free() {
-        return this.games().filter(game => !this.purchasable().includes(game))
+        return this.games().filter(game => !this.purchasable().includes(this.accessGame(game)))
     }
 
     // Crossover packs are not standalone games: their characters and solo
@@ -79,6 +94,8 @@ export default class GameData {
                 return []
             case Game.fh:
                 return achievementsFhJson
+            case Game.gh2:
+                return achievementsGh2Json
             default:
                 return achievementsJson
         }
@@ -149,6 +166,8 @@ export default class GameData {
                 return scenariosCsJson
             case Game.mp:
                 return scenariosMpJson
+            case Game.gh2:
+                return scenariosGh2Json
             default:
                 return scenariosJson
         }
@@ -194,6 +213,8 @@ export default class GameData {
                 return itemsFhJson
             case Game.mp:
                 return itemsMpJson
+            case Game.gh2:
+                return itemsGh2Json
             // FC uses GH items
             default:
                 return itemsJson
@@ -212,6 +233,8 @@ export default class GameData {
                 return abilitiesFhJson
             case Game.mp:
                 return abilitiesMpJson
+            case Game.gh2:
+                return abilitiesGh2Json
             default:
                 return abilitiesJson
         }
@@ -225,6 +248,8 @@ export default class GameData {
                 return personalQuestsCsJson
             case Game.fh:
                 return personalQuestsFhJson
+            case Game.gh2:
+                return personalQuestsGh2Json
             default:
                 return personalQuestsJson
         }
@@ -286,6 +311,14 @@ export default class GameData {
                 width: 2500,
                 height: 3159
             };
+        } else if (game === Game.gh2) {
+            // Keep in sync with commands/gh2-map.js
+            return {
+                stickerScale: 0.8,
+                yOffset: 283,
+                width: 2500,
+                height: 2217
+            };
         }
 
         return {
@@ -325,6 +358,11 @@ export default class GameData {
                 return {
                     portrait: '-20 -40 718 691',
                     landscape: '-20 -40 718 691'
+                }
+            case Game.gh2:
+                return {
+                    portrait: '0 -110 860 1402',
+                    landscape: '0 -90 1292 950'
                 }
             default:
                 return {

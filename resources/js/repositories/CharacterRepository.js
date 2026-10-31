@@ -2,6 +2,7 @@ import Character from "../models/Character";
 import {v4 as uuidv4} from 'uuid';
 import GameData from "../services/GameData";
 import SheetRepository from "./SheetRepository";
+import {Game} from "../models/Game";
 
 export default class CharacterRepository {
 
@@ -25,8 +26,14 @@ export default class CharacterRepository {
             characters.forget("BS");
         }
 
-        // Hide characters from inactive games
-        const games = _.uniq([app.game, ...app.enabledGames]);
+        // Hide characters from inactive games. gh is always enabled, and gh2 replaces its classes,
+        // so don't list 1e classes in a gh2 campaign or gh2 classes in a gh/fc campaign.
+        let games = _.uniq([app.game, ...app.enabledGames]);
+        if (app.game === Game.gh2) {
+            games = _.without(games, Game.gh);
+        } else if ([Game.gh, Game.fc].includes(app.game)) {
+            games = _.without(games, Game.gh2);
+        }
         characters = characters.values().whereIn('game', games);
 
         return characters.keyBy('id');

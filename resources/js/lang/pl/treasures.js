@@ -739,5 +739,242 @@ export default {
     },
     "fh-85": {
         "name": "Gain 10 money."
+    },
+    "gh2-1": {
+        "name": "Gain “Magma Waders” (Item 142)"
+    },
+    "gh2-2": {
+        "name": "Suffer 3 damage and gain {POISON}"
+    },
+    "gh2-3": {
+        "name": "Gain “Star Earring” (Item 63)"
+    },
+    "gh2-4": {
+        "name": "Gain “Cloak of Phasing” (Item 98)"
+    },
+    "gh2-5": {
+        "name": "Gain “Pendant of Dark Pacts” (Item 128)"
+    },
+    "gh2-6": {
+        "name": "Random Side Scenario"
+    },
+    "gh2-7": {
+        "name": "Gain “Thief's Hood” (Item 108)"
+    },
+    "gh2-8": {
+        "name": "Suffer 3 damage and gain {CURSE}"
+    },
+    "gh2-9": {
+        "name": "Gain 20 experience"
+    },
+    "gh2-10": {
+        "name": "Gain 30 gold"
+    },
+    "gh2-11": {
+        "name": "Random Side Scenario"
+    },
+    "gh2-12": {
+        "name": "Gain 1 ✔"
+    },
+    "gh2-13": {
+        "name": "Gain 1 ✔"
+    },
+    "gh2-14": {
+        "name": "Gain 40 gold"
+    },
+    "gh2-15": {
+        "name": "Gain 20 gold"
+    },
+    "gh2-16": {
+        "name": "Suffer 3 damage and gain {WOUND}"
+    },
+    "gh2-17": {
+        "name": "Gain 15 gold"
+    },
+    "gh2-18": {
+        "name": "Gain “Unstable Explosives” (Item 99)"
+    },
+    "gh2-19": {
+        "name": "Gain “Drakescale Boots” (Item 119)"
+    },
+    "gh2-20": {
+        "name": "Gain 25 gold"
+    },
+    "gh2-21": {
+        "name": "Gain 2 ✔"
+    },
+    "gh2-22": {
+        "name": "Gain “Helm of the Mountain” (Item 129) and “Mountain Hammer” (Item 130)"
+    },
+    "gh2-23": {
+        "name": "Gain 15 gold"
+    },
+    "gh2-24": {
+        "name": "Gain “Warding Rod” (Item 104)"
+    },
+    "gh2-25": {
+        "name": "Gain 1 ✔"
+    },
+    "gh2-26": {
+        "name": "Random Item Design"
+    },
+    "gh2-27": {
+        "name": "Suffer 3 damage and gain {MUDDLE}"
+    },
+    "gh2-28": {
+        "name": "Gain 2 ✔"
+    },
+    "gh2-29": {
+        "name": "Gain “Charged Boots” (Item 100)"
+    },
+    "gh2-30": {
+        "name": "Gain 20 experience"
+    },
+    "gh2-31": {
+        "name": "Gain “Wave Crest” (Item 131)"
+    },
+    "gh2-32": {
+        "name": "Random Side Scenario"
+    },
+    "gh2-33": {
+        "name": "Gain “Cure Potion” (Item 101)"
+    },
+    "gh2-34": {
+        "name": "Gain “Drakescale Helm” (Item 121)"
+    },
+    "gh2-35": {
+        "name": "Gain “Rod of Transference” (Item 115)"
+    },
+    "gh2-36": {
+        "name": "Random Item Design"
+    },
+    "gh2-37": {
+        "name": "Gain “Shoes of Happiness” (Item 97)"
+    },
+    "gh2-38": {
+        "name": "Gain 1 ✔"
+    },
+    "gh2-39": {
+        "name": "Gain 20 experience"
+    },
+    "gh2-40": {
+        "name": "Gain “Fueled Falchion” (Item 110)"
+    },
+    "gh2-41": {
+        "name": "Gain 15 gold"
+    },
+    "gh2-42": {
+        "name": "Suffer 5 damage"
+    },
+    "gh2-43": {
+        "name": "Random Item Design"
+    },
+    "gh2-44": {
+        "name": "Random Item Design"
+    },
+    "gh2-45": {
+        "name": "Gain 2 ✔"
+    },
+    "gh2-46": {
+        "name": "Gain 15 gold"
+    },
+    "gh2-47": {
+        "name": "Suffer 3 damage and gain {POISON}"
+    },
+    "gh2-48": {
+        "name": "Random Item Design"
+    },
+    "gh2-49": {
+        "name": "Gain 15 experience"
+    },
+    "gh2-50": {
+        "name": "Gain “Steam Armor” (Item 106)"
+    },
+    "gh2-51": {
+        "name": "Gain 15 experience"
+    },
+    "gh2-52": {
+        "name": "Random Side Scenario"
+    },
+    "gh2-53": {
+        "name": "Gain 1 ✔"
+    },
+    "gh2-54": {
+        "name": "Gain 15 gold and “Steel Ring” (Item 102)"
+    },
+    "gh2-55": {
+        "name": "Gain 20 experience"
+    },
+    "gh2-56": {
+        "name": "Gain 15 gold"
+    },
+    "gh2-57": {
+        "name": "Random Side Scenario"
+    },
+    "gh2-58": {
+        "name": "Gain 20 gold"
+    },
+    "gh2-59": {
+        "name": "Gain “Shield of the Righteous” (Item 148)"
+    },
+    "gh2-60": {
+        "name": "Suffer 5 damage"
+    },
+    "gh2-61": {
+        "name": "Gain “Boots of Bracing” (Item 143)"
+    },
+    "gh2-62": {
+        "name": "Gain 20 gold"
+    },
+    "gh2-63": {
+        "name": "Random Item Design"
+    },
+    "gh2-64": {
+        "name": "Random Item Design"
+    },
+    "gh2-65": {
+        "name": "Gain “Ranger's Hood” (Item 103)"
+    },
+    "gh2-66": {
+        "name": "Gain {POISON} and {STRENGTHEN} and Recover 2 lost cards"
+    },
+    "gh2-67": {
+        "name": "Gain “Doomed Compass” (Item 132)"
+    },
+    "gh2-68": {
+        "name": "Random Item Design"
+    },
+    "gh2-69": {
+        "name": "Gain 25 gold"
+    },
+    "gh2-70": {
+        "name": "Random Item Design"
+    },
+    "gh2-71": {
+        "name": "Gain 2 ✔"
+    },
+    "gh2-72": {
+        "name": "Gain 25 gold"
+    },
+    "gh2-73": {
+        "name": "Gain “Necklace of Teeth” (Item 107)"
+    },
+    "gh2-74": {
+        "name": "Suffer 3 damage and gain {IMMOBILIZE}"
+    },
+    "gh2-75": {
+        "name": "Gain “Drakescale Armor” (Item 120)"
+    },
+    "gh2-76": {
+        "name": "Random Item Design"
+    },
+    "gh2-77": {
+        "name": "Gain 30 gold"
+    },
+    "gh2-78": {
+        "name": "Gain 20 gold"
+    },
+    "gh2-79": {
+        "name": "Random Side Scenario"
     }
 }

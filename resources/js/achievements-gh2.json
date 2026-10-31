@@ -1,0 +1,204 @@
+[
+    {
+        "id": "G2ATD",
+        "name": "Activating the Device",
+        "type": "Global",
+        "game": "gh2",
+        "is_manual": true,
+        "x": 85
+    },
+    {
+        "id": "G2AUP",
+        "name": "An Uneasy Peace",
+        "type": "Global",
+        "game": "gh2",
+        "is_manual": true,
+        "group": "CR2",
+        "x": 9.98
+    },
+    {
+        "id": "G2AT",
+        "name": "Ancient Technology",
+        "type": "Global",
+        "game": "gh2",
+        "x": 79.88
+    },
+    {
+        "id": "G2CRD",
+        "name": "City Rule: Demons",
+        "type": "Global",
+        "game": "gh2",
+        "group": "CR2",
+        "x": 9.98
+    },
+    {
+        "id": "G2CRME",
+        "name": "City Rule: Merchants",
+        "type": "Global",
+        "game": "gh2",
+        "group": "CR2",
+        "x": 9.98
+    },
+    {
+        "id": "G2CRMI",
+        "name": "City Rule: Military",
+        "type": "Global",
+        "game": "gh2",
+        "group": "CR2",
+        "x": 9.98
+    },
+    {
+        "id": "G2EM",
+        "name": "Elements Mastered",
+        "type": "Global",
+        "game": "gh2",
+        "x": 33.13
+    },
+    {
+        "id": "G2EOC",
+        "name": "End of Corruption",
+        "type": "Global",
+        "game": "gh2",
+        "x": 68.13
+    },
+    {
+        "id": "G2EOG",
+        "name": "End of Gloom",
+        "type": "Global",
+        "game": "gh2",
+        "x": 73.94
+    },
+    {
+        "id": "G2HW",
+        "name": "Hallowed Waters",
+        "type": "Global",
+        "game": "gh2",
+        "x": 38.81
+    },
+    {
+        "id": "G2ITD",
+        "name": "Into the Depths",
+        "type": "Global",
+        "game": "gh2",
+        "x": 26.88
+    },
+    {
+        "id": "G2PTB",
+        "name": "Peace Through Bloodshed",
+        "type": "Global",
+        "game": "gh2",
+        "x": 15.38
+    },
+    {
+        "id": "G2TCE",
+        "name": "The Candle Extinguished",
+        "type": "Global",
+        "game": "gh2",
+        "x": 61.38
+    },
+    {
+        "id": "G2TCK",
+        "name": "The Candle Kept",
+        "type": "Global",
+        "game": "gh2",
+        "x": 61.38
+    },
+    {
+        "id": "G2TDR",
+        "name": "The Darkness Retreats",
+        "type": "Global",
+        "game": "gh2",
+        "x": 44.63
+    },
+    {
+        "id": "G2TDA",
+        "name": "The Drake Aided",
+        "type": "Global",
+        "game": "gh2",
+        "x": 50.25
+    },
+    {
+        "id": "G2TDS",
+        "name": "The Drake Slain",
+        "type": "Global",
+        "game": "gh2",
+        "x": 50.25
+    },
+    {
+        "id": "G2TPE",
+        "name": "The Power of Enhancement",
+        "type": "Global",
+        "game": "gh2",
+        "x": 20.94
+    },
+    {
+        "id": "G2TVF",
+        "name": "The Voice Freed",
+        "type": "Global",
+        "game": "gh2",
+        "x": 55.94
+    },
+    {
+        "id": "G2TVS",
+        "name": "The Voice Silenced",
+        "type": "Global",
+        "game": "gh2",
+        "x": 55.94
+    },
+    {
+        "id": "P2R16",
+        "name": "Faction Reputation 16",
+        "type": "Party",
+        "game": "gh2",
+        "is_manual": true
+    },
+    {
+        "id": "P2R20",
+        "name": "Faction Reputation 20",
+        "type": "Party",
+        "game": "gh2",
+        "is_manual": true
+    },
+    {
+        "id": "P2RD6",
+        "name": "Demon Reputation 6",
+        "type": "Party",
+        "game": "gh2",
+        "is_manual": true
+    },
+    {
+        "id": "P2RD12",
+        "name": "Demon Reputation 12",
+        "type": "Party",
+        "game": "gh2",
+        "is_manual": true
+    },
+    {
+        "id": "P2RME6",
+        "name": "Merchant Reputation 6",
+        "type": "Party",
+        "game": "gh2",
+        "is_manual": true
+    },
+    {
+        "id": "P2RME12",
+        "name": "Merchant Reputation 12",
+        "type": "Party",
+        "game": "gh2",
+        "is_manual": true
+    },
+    {
+        "id": "P2RMI6",
+        "name": "Military Reputation 6",
+        "type": "Party",
+        "game": "gh2",
+        "is_manual": true
+    },
+    {
+        "id": "P2RMI12",
+        "name": "Military Reputation 12",
+        "type": "Party",
+        "game": "gh2",
+        "is_manual": true
+    }
+]
