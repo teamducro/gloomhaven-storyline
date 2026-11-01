@@ -241,7 +241,6 @@
 import Helpers from "../services/Helpers";
 import StoryRepository from "../repositories/StoryRepository";
 
-const queryString = require('query-string');
 
 export default {
     data() {
@@ -286,7 +285,7 @@ export default {
             return location.search.includes('payment_success');
         },
         applyShareCode() {
-            let parsed = queryString.parse(location.search);
+            let parsed = Object.fromEntries(new URLSearchParams(location.search));
 
             if (typeof parsed.code !== 'undefined') {
                 this.initCode = parsed.code.substring(0, 6);

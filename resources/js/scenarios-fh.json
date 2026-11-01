@@ -772,6 +772,9 @@
             },
             "chapter_id": 3,
             "complexity": 3,
+            "treasures": [
+                84
+            ],
             "required_by": [
                 {
                     "complete": [
@@ -1023,8 +1026,16 @@
             },
             "chapter_id": 5,
             "complexity": 3,
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "treasures": [
-                48
+                48,
+                60
             ],
             "links_to": [
                 38
@@ -1068,6 +1079,13 @@
             },
             "chapter_id": 2,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "treasures": [
                 45
             ],
@@ -1113,6 +1131,13 @@
             },
             "chapter_id": 4,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "calendar"
+                    ]
+                }
+            ],
             "treasures": [
                 45
             ],
@@ -1159,7 +1184,6 @@
             "chapter_id": 4,
             "complexity": 2,
             "treasures": [
-                25,
                 26
             ],
             "links_to": [
@@ -1655,6 +1679,9 @@
             },
             "chapter_id": 6,
             "complexity": 2,
+            "treasures": [
+                61
+            ],
             "links_to": [
                 58,
                 59
@@ -1801,6 +1828,9 @@
             },
             "chapter_id": 4,
             "complexity": 2,
+            "treasures": [
+                15
+            ],
             "required_by": [
                 {
                     "complete": [
@@ -2014,6 +2044,9 @@
             },
             "chapter_id": 3,
             "complexity": 2,
+            "treasures": [
+                63
+            ],
             "required_by": [
                 {
                     "complete": [
@@ -2055,9 +2088,15 @@
             },
             "chapter_id": 3,
             "complexity": 2,
+            "required_by": [
+                {
+                    "complete": [
+                        "boat"
+                    ]
+                }
+            ],
             "treasures": [
-                5,
-                63
+                5
             ],
             "links_to": [
                 60
@@ -2302,7 +2341,8 @@
             "required_by": [
                 {
                     "complete": [
-                        "boat"
+                        "boat",
+                        "CCCS6"
                     ]
                 }
             ],
@@ -2989,7 +3029,8 @@
             ],
             "treasures": [
                 58,
-                13
+                13,
+                61
             ],
             "rewards": [
                 "Gain 10 experience each"
@@ -3764,6 +3805,10 @@
             },
             "chapter_id": 111,
             "complexity": 3,
+            "treasures": [
+                57,
+                85
+            ],
             "links_to": [
                 103
             ],
@@ -6609,7 +6654,7 @@
                     "operations": "",
                     "downtime": "",
                     "wrecked": "Lose 1 collective {LUMBER}",
-                    "passive": "Each of the following is an upgrade that can be built in any order.",
+                    "passive": "Each of the following upgrades (Boat, Sled, Climbing Gear) can be built in any order.",
                     "rewards": "+1 prosperity",
                     "upgrade_cost": [1, 0, 0, 0, 0, 0],
                     "damage_cost": 2,

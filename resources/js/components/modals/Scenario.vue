@@ -317,7 +317,6 @@ import Cards from "../presenters/cards/Cards";
 import StorySyncer from "../../services/StorySyncer";
 
 const md5 = require('js-md5');
-const queryString = require('query-string');
 
 export default {
     inject: ['appData'],
@@ -549,7 +548,7 @@ export default {
                 query.seed = parseInt(md5(current.campaignId + this.scenario.id).substr(0, 7), 16);
             }
 
-            this.virtualBoardUrl = process.env.MIX_VIRTUAL_BOARD_URL + '?' + queryString.stringify(query);
+            this.virtualBoardUrl = process.env.MIX_VIRTUAL_BOARD_URL + '?' + new URLSearchParams(query);
         },
         makeSureScenariosAreLoaded() {
             return new Promise((resolve) => {

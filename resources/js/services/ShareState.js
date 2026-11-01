@@ -8,7 +8,6 @@ import ChoiceService from "./ChoiceService";
 import LZString from "lz-string";
 import store from "store/dist/store.modern";
 
-const queryString = require('query-string');
 
 export default class ShareState {
     constructor() {
@@ -153,7 +152,7 @@ export default class ShareState {
     }
 
     decodeOldLink() {
-        let parsed = queryString.parse(location.search);
+        let parsed = Object.fromEntries(new URLSearchParams(location.search));
         let result = {};
 
         if (typeof parsed.groups !== 'undefined') {

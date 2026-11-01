@@ -1,7 +1,7 @@
 let mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 const md5File = require('md5-file/promise');
-const replace = require('replace-in-file');
+const fs = require('fs');
 const dayjs = require('dayjs');
 const mainGame = process.env.MIX_MAIN_GAME || 'gh';
 
@@ -79,4 +79,11 @@ async function versionFile(path, applyVersion) {
         : file;
 
     return replace({files: ['public/index.html', 'public/tracker/index.html'], from: pattern, to: to});
+}
+
+async function replace({files, from, to}) {
+    for (const file of [].concat(files)) {
+        const content = await fs.promises.readFile(file, 'utf8');
+        await fs.promises.writeFile(file, content.replace(from, to));
+    }
 }
