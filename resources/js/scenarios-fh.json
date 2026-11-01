@@ -29,6 +29,9 @@
             "root": true,
             "id": 1,
             "name": "A Town in Flames",
+            "quests": [
+                1
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -77,6 +80,9 @@
         {
             "id": 2,
             "name": "Algox Scouting",
+            "quests": [
+                1
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "K8",
@@ -117,6 +123,9 @@
         {
             "id": 3,
             "name": "Algox Offensive",
+            "quests": [
+                1
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "L7",
@@ -157,6 +166,9 @@
         {
             "id": 4,
             "name": "Heart of Ice",
+            "quests": [
+                1
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "M8",
@@ -213,6 +225,9 @@
         {
             "id": 5,
             "name": "Frozen Crypt",
+            "quests": [
+                2
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "I6",
@@ -246,6 +261,9 @@
         {
             "id": 6,
             "name": "Avalanche",
+            "quests": [
+                4
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "L8",
@@ -277,6 +295,9 @@
         {
             "id": 7,
             "name": "Edge of the World",
+            "quests": [
+                7
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "K3",
@@ -313,6 +334,9 @@
         {
             "id": 8,
             "name": "Crystal Trench",
+            "quests": [
+                9
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "G8",
@@ -344,6 +368,9 @@
         {
             "id": 9,
             "name": "Glowing Catacombs",
+            "quests": [
+                3
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "J6",
@@ -376,6 +403,9 @@
         {
             "id": 10,
             "name": "Crystal Enclosure",
+            "quests": [
+                2
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "F6",
@@ -416,6 +446,9 @@
         {
             "id": 11,
             "name": "Snowscorn Peak",
+            "quests": [
+                4
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "M6",
@@ -458,6 +491,9 @@
         {
             "id": 12,
             "name": "Temple Entrance",
+            "quests": [
+                5
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "K8",
@@ -490,6 +526,9 @@
         {
             "id": 13,
             "name": "Frozen Fjord",
+            "quests": [
+                7
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "O2",
@@ -523,6 +562,9 @@
         {
             "id": 14,
             "name": "Jagged Shoals",
+            "quests": [
+                8
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "L2",
@@ -566,6 +608,9 @@
         {
             "id": 15,
             "name": "Ancient Spire",
+            "quests": [
+                9
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "D7",
@@ -602,6 +647,9 @@
         {
             "id": 16,
             "name": "Derelict Elevator",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "F10",
@@ -635,6 +683,9 @@
         {
             "id": 17,
             "name": "Haunted Vault",
+            "quests": [
+                3
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "H6",
@@ -670,6 +721,9 @@
         {
             "id": 18,
             "name": "Crystal Fields",
+            "quests": [
+                2
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "E7",
@@ -703,6 +757,9 @@
         {
             "id": 19,
             "name": "Skyhall",
+            "quests": [
+                4
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "N7",
@@ -736,6 +793,9 @@
         {
             "id": 20,
             "name": "Temple of Liberation",
+            "quests": [
+                5
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "L9",
@@ -764,6 +824,9 @@
         {
             "id": 21,
             "name": "Realm of Endless Frost",
+            "quests": [
+                7
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "N1",
@@ -801,6 +864,9 @@
         {
             "id": 22,
             "name": "Ice Floes",
+            "quests": [
+                8
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "I2",
@@ -838,6 +904,9 @@
         {
             "id": 23,
             "name": "Spire Basement",
+            "quests": [
+                9
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "B8",
@@ -867,6 +936,9 @@
         {
             "id": 24,
             "name": "Upper Spire",
+            "quests": [
+                9
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "D6",
@@ -897,6 +969,9 @@
         {
             "id": 25,
             "name": "Rusted Tunnels",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "E10",
@@ -937,6 +1012,9 @@
         {
             "id": 26,
             "name": "Quatryl Library",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "E10",
@@ -976,6 +1054,9 @@
         {
             "id": 27,
             "name": "Depths of Delirium",
+            "quests": [
+                3
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "H6",
@@ -1018,6 +1099,9 @@
         {
             "id": 28,
             "name": "Summit Meeting",
+            "quests": [
+                6
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "J8",
@@ -1071,6 +1155,9 @@
         {
             "id": 29,
             "name": "War of the Spire A",
+            "quests": [
+                2
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "F8",
@@ -1123,6 +1210,9 @@
         {
             "id": 30,
             "name": "War of the Spire B",
+            "quests": [
+                4
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "E8",
@@ -1175,6 +1265,9 @@
         {
             "id": 31,
             "name": "Crackling Tunnel",
+            "quests": [
+                5
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "F10",
@@ -1216,6 +1309,9 @@
         {
             "id": 32,
             "name": "Ravens' Roost",
+            "quests": [
+                7
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "Q3",
@@ -1248,6 +1344,9 @@
         {
             "id": 33,
             "name": "Thawed Wood",
+            "quests": [
+                8
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "R2",
@@ -1288,6 +1387,9 @@
         {
             "id": 34,
             "name": "Top of the Spire",
+            "quests": [
+                9
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "C6",
@@ -1309,6 +1411,9 @@
         {
             "id": 35,
             "name": "Scrap Pit",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "C10",
@@ -1350,6 +1455,9 @@
         {
             "id": 36,
             "name": "Buried Ducts",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "C9",
@@ -1394,6 +1502,9 @@
         {
             "id": 37,
             "name": "The Dead Mile",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "C11",
@@ -1442,6 +1553,9 @@
         {
             "id": 38,
             "name": "The Way Forward",
+            "quests": [
+                6
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "G8",
@@ -1477,6 +1591,9 @@
         {
             "id": 39,
             "name": "Corrupted Camp",
+            "quests": [
+                2
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "Q4",
@@ -1519,6 +1636,9 @@
         {
             "id": 40,
             "name": "Relief Effort",
+            "quests": [
+                4
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "H9",
@@ -1559,6 +1679,9 @@
         {
             "id": 41,
             "name": "Unfettered Shard",
+            "quests": [
+                5
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "E12",
@@ -1599,6 +1722,9 @@
         {
             "id": 42,
             "name": "Sunless Trench",
+            "quests": [
+                8
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "J1",
@@ -1642,6 +1768,9 @@
         {
             "id": 43,
             "name": "Overrun Barricade",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "C9",
@@ -1671,6 +1800,9 @@
         {
             "id": 44,
             "name": "Nerve Center",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "B10",
@@ -1711,6 +1843,9 @@
         {
             "id": 45,
             "name": "Living Glacier",
+            "quests": [
+                6
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "C3",
@@ -1750,6 +1885,9 @@
         {
             "id": 46,
             "name": "Dead Pass",
+            "quests": [
+                6
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "B12",
@@ -1787,6 +1925,9 @@
         {
             "id": 47,
             "name": "Carrion Ridge",
+            "quests": [
+                2
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "Q5",
@@ -1820,6 +1961,9 @@
         {
             "id": 48,
             "name": "Blizzard island",
+            "quests": [
+                4
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "D2",
@@ -1860,6 +2004,9 @@
         {
             "id": 49,
             "name": "Beneath Sea and Stone",
+            "quests": [
+                8
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "G3",
@@ -1906,6 +2053,9 @@
         {
             "id": 50,
             "name": "Explosive Descent",
+            "quests": [
+                8
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "G1",
@@ -1951,6 +2101,9 @@
         {
             "id": 51,
             "name": "Orphan's Halls",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "B9",
@@ -1989,6 +2142,9 @@
         {
             "id": 52,
             "name": "Fleeting Permanence",
+            "quests": [
+                6
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "G7",
@@ -2036,6 +2192,9 @@
         {
             "id": 53,
             "name": "Underwater Throne",
+            "quests": [
+                8
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "E2",
@@ -2080,6 +2239,9 @@
         {
             "id": 54,
             "name": "Among the Wreckage",
+            "quests": [
+                8
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "F1",
@@ -2124,6 +2286,9 @@
         {
             "id": 55,
             "name": "Change of Heart",
+            "quests": [
+                6
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "M8",
@@ -2163,6 +2328,9 @@
         {
             "id": 56,
             "name": "Call of the Harbinger",
+            "quests": [
+                2
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "R4",
@@ -2200,6 +2368,9 @@
         {
             "id": 57,
             "name": "Sanctuary of Snow",
+            "quests": [
+                4
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "D1",
@@ -2237,6 +2408,9 @@
         {
             "id": 58,
             "name": "Orphan's Core",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "A10",
@@ -2285,6 +2459,9 @@
         {
             "id": 59,
             "name": "Automation Uprising",
+            "quests": [
+                10
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "A11",
@@ -2330,6 +2507,9 @@
         {
             "id": 60,
             "name": "Uniting the Crown",
+            "quests": [
+                8
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "G2",
@@ -2377,6 +2557,9 @@
         {
             "id": 61,
             "name": "Life and Death",
+            "quests": [
+                11
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "I11",
@@ -2409,6 +2592,9 @@
         {
             "id": 62,
             "name": "The Unfettered Seal",
+            "quests": [
+                11
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "B8",
@@ -2449,6 +2635,9 @@
         {
             "id": 63,
             "name": "The Savvas Seal",
+            "quests": [
+                11
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "G12",
@@ -2482,6 +2671,9 @@
         {
             "id": 64,
             "name": "The Frosthaven Seal",
+            "quests": [
+                11
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -2512,6 +2704,9 @@
         {
             "id": 65,
             "name": "A Strong Foundation",
+            "quests": [
+                12
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "L4",
@@ -2544,6 +2739,9 @@
         {
             "id": 66,
             "name": "Elemental Cores",
+            "quests": [
+                12
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "L4",
@@ -2585,6 +2783,9 @@
         {
             "id": 67,
             "name": "Core Attunement",
+            "quests": [
+                12
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "K4",
@@ -2621,6 +2822,9 @@
         {
             "id": 68,
             "name": "The Face of Torment",
+            "quests": [
+                12
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "L3",
@@ -2649,6 +2853,9 @@
         {
             "id": 69,
             "name": "Sacred Soil",
+            "quests": [
+                13
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "P2",
@@ -2686,6 +2893,9 @@
         {
             "id": 70,
             "name": "The True Oak",
+            "quests": [
+                13
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "Q2",
@@ -2723,6 +2933,9 @@
         {
             "id": 71,
             "name": "Invasion of the Dock",
+            "quests": [
+                14
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -2754,6 +2967,9 @@
         {
             "id": 72,
             "name": "A Giant Block of Ice",
+            "quests": [
+                14
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "A5",
@@ -2792,6 +3008,9 @@
         {
             "id": 73,
             "name": "Flotsam",
+            "quests": [
+                14
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "D3",
@@ -2832,6 +3051,9 @@
         {
             "id": 74,
             "name": "Gaps in the Road",
+            "quests": [
+                14
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "G6",
@@ -2869,6 +3091,9 @@
         {
             "id": 75,
             "name": "Infiltraiting the Lair",
+            "quests": [
+                14
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "C2",
@@ -2917,6 +3142,9 @@
         {
             "id": 76,
             "name": "Apotheosis",
+            "quests": [
+                14
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "B2",
@@ -2973,6 +3201,9 @@
         {
             "id": 77,
             "name": "Fish King's Ascension",
+            "quests": [
+                14
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "B1",
@@ -3011,6 +3242,9 @@
         {
             "id": 78,
             "name": "The Lurker Problem",
+            "quests": [
+                78
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "H5",
@@ -3047,6 +3281,9 @@
         {
             "id": 79,
             "name": "Relic",
+            "quests": [
+                15
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "B5",
@@ -3084,6 +3321,9 @@
         {
             "id": 80,
             "name": "Relic Renewed",
+            "quests": [
+                15
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -3161,6 +3401,9 @@
         {
             "id": 82,
             "name": "Expedition North",
+            "quests": [
+                82
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "P8",
@@ -3192,6 +3435,9 @@
         {
             "id": 83,
             "name": "Rising Brine",
+            "quests": [
+                83
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "E3",
@@ -3224,6 +3470,9 @@
         {
             "id": 84,
             "name": "Here There Be Oozes",
+            "quests": [
+                84
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "R5",
@@ -3251,6 +3500,9 @@
         {
             "id": 85,
             "name": "Deadly Pastimes",
+            "quests": [
+                85
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "O5",
@@ -3284,6 +3536,9 @@
         {
             "id": 86,
             "name": "The Lady in White",
+            "quests": [
+                86
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -3311,6 +3566,9 @@
         {
             "id": 87,
             "name": "The Collection",
+            "quests": [
+                16
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "J7",
@@ -3349,6 +3607,9 @@
         {
             "id": 88,
             "name": "Collection's Capstone",
+            "quests": [
+                16
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "I7",
@@ -3379,6 +3640,9 @@
         {
             "id": 89,
             "name": "A Contained Fire",
+            "quests": [
+                89
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "G10",
@@ -3408,6 +3672,9 @@
         {
             "id": 90,
             "name": "Frozen Treasure",
+            "quests": [
+                17
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "I3",
@@ -3444,6 +3711,9 @@
         {
             "id": 91,
             "name": "Shoreline Scramble",
+            "quests": [
+                17
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "J4",
@@ -3470,6 +3740,9 @@
         {
             "id": 92,
             "name": "Sinking Ship",
+            "quests": [
+                92
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "I4",
@@ -3503,6 +3776,9 @@
         {
             "id": 93,
             "name": "Midwinter Brawl",
+            "quests": [
+                93
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "H7",
@@ -3534,6 +3810,9 @@
         {
             "id": 94,
             "name": "A Grand View",
+            "quests": [
+                18
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "B6",
@@ -3577,6 +3856,9 @@
         {
             "id": 95,
             "name": "To Bury the Dead",
+            "quests": [
+                18
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -3610,6 +3892,9 @@
         {
             "id": 96,
             "name": "Underground Station",
+            "quests": [
+                19
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "E11",
@@ -3647,6 +3932,9 @@
         {
             "id": 97,
             "name": "Program Control Nexus",
+            "quests": [
+                19
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "D12",
@@ -3675,6 +3963,9 @@
         {
             "id": 98,
             "name": "Collapsing Vent",
+            "quests": [
+                19
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "E12",
@@ -3704,6 +3995,9 @@
         {
             "id": 99,
             "name": "Prison Break",
+            "quests": [
+                20
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "A4",
@@ -3730,6 +4024,9 @@
         {
             "id": 100,
             "name": "Inside the Swarm",
+            "quests": [
+                20
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "A3",
@@ -3758,6 +4055,9 @@
         {
             "id": 101,
             "name": "Harrower Library",
+            "quests": [
+                20
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "O3",
@@ -3797,6 +4097,9 @@
         {
             "id": 102,
             "name": "Into the Black",
+            "quests": [
+                20
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "R7",
@@ -3825,6 +4128,9 @@
         {
             "id": 103,
             "name": "The Lead Door",
+            "quests": [
+                20
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "R8",
@@ -3849,6 +4155,9 @@
         {
             "id": 104,
             "name": "Ruins of the Solstice",
+            "quests": [
+                21
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "E5",
@@ -3884,6 +4193,9 @@
         {
             "id": 105,
             "name": "Ruins of the Equinox",
+            "quests": [
+                21
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "H11",
@@ -3921,6 +4233,9 @@
         {
             "id": 106,
             "name": "The Tempus Forge",
+            "quests": [
+                21
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "M5",
@@ -3958,6 +4273,9 @@
         {
             "id": 107,
             "name": "My Private Empire",
+            "quests": [
+                107
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "J10",
@@ -4006,6 +4324,9 @@
         {
             "id": 108,
             "name": "Lustrous Pit",
+            "quests": [
+                108
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "C12",
@@ -4035,6 +4356,9 @@
         {
             "id": 109,
             "name": "Furious Factory",
+            "quests": [
+                109
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "C8",
@@ -4068,6 +4392,9 @@
         {
             "id": 110,
             "name": "Guardian's Temple",
+            "quests": [
+                110
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "R6",
@@ -4102,6 +4429,9 @@
         {
             "id": 111,
             "name": "Ice Cave",
+            "quests": [
+                111
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "O1",
@@ -4133,6 +4463,9 @@
         {
             "id": 112,
             "name": "Raised by Wolves",
+            "quests": [
+                112
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -4160,6 +4493,9 @@
         {
             "id": 113,
             "name": "Lush Grotto",
+            "quests": [
+                113
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "G9",
@@ -4186,6 +4522,9 @@
         {
             "id": 114,
             "name": "Work Freeze",
+            "quests": [
+                22
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "O7",
@@ -4213,6 +4552,9 @@
         {
             "id": 115,
             "name": "Pylon Problems",
+            "quests": [
+                22
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "O8",
@@ -4278,6 +4620,9 @@
         {
             "id": 116,
             "name": "Caravan Guards",
+            "quests": [
+                22
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "O8",
@@ -4349,6 +4694,9 @@
         {
             "id": 117,
             "name": "A Waiting Game",
+            "quests": [
+                117
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "F7",
@@ -4381,6 +4729,9 @@
         {
             "id": 118,
             "name": "Lurker Necromancy",
+            "quests": [
+                118
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "F4",
@@ -4414,6 +4765,9 @@
         {
             "id": 119,
             "name": "Radiant Dust",
+            "quests": [
+                119
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "Q1",
@@ -4442,6 +4796,9 @@
         {
             "id": 120,
             "name": "Under the Influence",
+            "quests": [
+                23
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -4472,6 +4829,9 @@
         {
             "id": 121,
             "name": "Black Memories",
+            "quests": [
+                23
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "C13",
@@ -4515,6 +4875,9 @@
         {
             "id": 122,
             "name": "The Eternal Crave",
+            "quests": [
+                122
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "H10",
@@ -4550,6 +4913,9 @@
         {
             "id": 123,
             "name": "The Titan",
+            "quests": [
+                123
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "K5",
@@ -4578,6 +4944,9 @@
         {
             "id": 124,
             "name": "A Growing Problem",
+            "quests": [
+                24
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -4605,6 +4974,9 @@
         {
             "id": 125,
             "name": "The Longest Second",
+            "quests": [
+                24
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -4635,6 +5007,9 @@
         {
             "id": 126,
             "name": "Joseph the Lion",
+            "quests": [
+                126
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -4666,6 +5041,9 @@
         {
             "id": 127,
             "name": "Derelict Freighter",
+            "quests": [
+                127
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -4716,6 +5094,9 @@
         {
             "id": 128,
             "name": "A Tall Drunken Tale",
+            "quests": [
+                25
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "FR",
@@ -4760,6 +5141,9 @@
         {
             "id": 129,
             "name": "How to Lay an Ambush",
+            "quests": [
+                25
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "J9",
@@ -4799,6 +5183,9 @@
         {
             "id": 130,
             "name": "And Then, a Stream",
+            "quests": [
+                25
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "H8",
@@ -4837,6 +5224,9 @@
         {
             "id": 131,
             "name": "The Dancing Iceberg",
+            "quests": [
+                131
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "K2",
@@ -4855,6 +5245,9 @@
         {
             "id": 132,
             "name": "Temple of Feline Power",
+            "quests": [
+                26
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "Q6",
@@ -4889,6 +5282,9 @@
         {
             "id": 133,
             "name": "Bolt",
+            "quests": [
+                26
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "P6",
@@ -4919,6 +5315,9 @@
         {
             "id": 134,
             "name": "Tower of Knowledge",
+            "quests": [
+                27
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "R1",
@@ -4951,6 +5350,9 @@
         {
             "id": 135,
             "name": "Belara's Keep",
+            "quests": [
+                27
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "O4",
@@ -4986,6 +5388,9 @@
         {
             "id": 136,
             "name": "Abandoned Hideout",
+            "quests": [
+                28
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "I2",
@@ -5020,6 +5425,9 @@
         {
             "id": 137,
             "name": "Pirate Queen's Haul",
+            "quests": [
+                28
+            ],
             "game": "fh",
             "coordinates": {
                 "name": "D3",

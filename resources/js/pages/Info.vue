@@ -99,6 +99,16 @@
                 <li class="py-1">
                     Summaries for Forgotten Circles by O.T.Nad
                 </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Scenario summaries by') }}
+                        <a class="link" target="_blank" rel="noreferrer"
+                           href="https://www.reddit.com/user/dwarf74/">
+                            dwarf74</a>:
+                    </span>
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://www.reddit.com/r/Gloomhaven/comments/1dc93aj/previously_on_frosthaven_a_collection_of_scenario/">
+                        Previously, on Frosthaven</a>
+                </li>
             </ul>
             <p>{{ $t('Translations') }}</p>
             <ul class="list-disc ml-4">

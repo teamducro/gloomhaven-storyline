@@ -767,5 +767,884 @@ export default {
             }
         }
     },
+    "quest-fh": {
+        "1": {
+            "name": "Arrival",
+            "sections": {
+                "1": "Your group of mercenaries was hired to escort a Merchant’s Guild caravan from White Oak, bringing supplies to (and checking on the status of) Frosthaven, a distant and remote outpost that the Guild has been looking to expand.",
+                "2": "You helped push back an Algox attack; Mayor Satha asked your help dealing with them further. Satha’s Valrath scout spotted a small group heading to Snowscorn Mountain’s deadly eastern face, and suspected a secret entrance back there. He also pointed you towards a main cave at the base of Snowscorn Peak, but mentioned another group was heading there as well.",
+                "3": "You rescued an Algox Priest, named Lanprul, when investigating a hidden entrance to Snowscorn Peak. She is of the Snowspeakers, a group of Algox who believe their god (Geryuu) communicates to them through falling snow. They are at war with a rival group of Algox, the Icespeakers, who believe they can communicate with their god through the ice which emerges from the ground below. The Icespeakers currently occupy Snowscorn Peak, but the Snowspeakers took the opportunity to take it over when they left to attack Frosthaven.",
+                "4": "You interrupted a battle between two rival groups of Algox. One of the brawler Algox, calling himself an Icespeaker, greeted you and said the Snowspeakers invaded their home while they were away attacking Frosthaven. Snowscorn Peak holds religious significance to both Snowspeakers and Icespeakers, who differ in how they believe they should communicate with their god, Geryuu.",
+                "5": "You sided with the Snowspeakers in their battle against the Icespeakers by killing the Icespeaker chieftain. Snowscorn Peak is holy to both groups.",
+                "6": "The Snowspeaker Chief, Lanprul, asked you to help her end the war with the Icespeakers to guarantee Frosthaven’s safety from Algox. She spotted a group of Icespeakers north of Whitefire Wood who will launch a counterattack if not stopped.",
+                "7": "You sided with the Icespeakers in their battle against the Snowspeakers by killing the Snowspeaker chieftain. Snowscorn Peak is holy to both groups.",
+                "8": "The Icespeaker Chief Elland believes Geryuu brought you to help defeat the Snowspeakers, and has promised to temporarily cease hostilities against Frosthaven.",
+                "9": "A powerful Snowspeaker has attained the summit of Snowscorn Peak and is threatening to bring down the whole mountain. Elland has suggested you prove your strength and friendship by defeating this Snowspeaker."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{4}",
+                "4": "{1}{2}{3}{5}{6}",
+                "5": "{1}{2}{4}{5}{6}",
+                "6": "{1}{2}{3}{7}{8}{9}",
+                "7": "{1}{2}{4}{7}{8}{9}"
+            }
+        },
+        "2": {
+            "name": "The Snowspeaker War",
+            "sections": {
+                "1": "You sided with the Snowspeakers in their battle against the Icespeakers by killing the Icespeaker chieftain. The Snowspeakers, who believe they communicate with their god Geryuu through the falling snow, are at war with the Icespeakers, who believe they can communicate with Geryuu through the ice which emerges from the ground below. Snowscorn Peak is holy to both groups.",
+                "2": "The Snowspeaker Chief, Lanprul, asked you to help her end the war with the Icespeakers to guarantee Frosthaven’s safety from Algox. She spotted a group of Icespeakers north of Whitefire Wood who will launch a counterattack if not stopped.",
+                "3": "An Icespeaker you were pursuing lured you into a trap of sorts - you fell through a hidden fissure into an underground crypt full of spirits. Having dealt with them, and having secured a sled, you began to pursue these Algox.",
+                "4": "The Algox you found were channeling energy through strange crystal spikes - conduits - that enhanced their power. You defeated these, but spotted another field of these spikes in the distance. This one is much larger, so you set out in search of their source.",
+                "5": "You defeated the Icespeakers, but brought one survivor back to meet Chief Lanprul. The survivor reported that Geryuu had sent “burrowers” against them and that he was tired of this war. While Chief Lanprul was receptive, another - Denpang - encouraged an all-out assault with you at the Snowspeakers’ side. She left, to plan for war.",
+                "6": "You left with Denpang to assist with the assault for a final Snowspeaker victory. The Snowspeakers were victorious, but you’ve had guilt and nightmares ever since. So when, a few weeks later, you received word of an Icespeaker refugee camp in the Radiant Forest, you decided to try and help.",
+                "7": "The Icespeakers were under attack by possessed members of their own tribe, and instead of finishing off the rest of these Algox, you rescued them. An Icespeaker named Putargal thanked you; she asked your help in rooting out the rest of the possessed Algox and finding the source of the corruption.",
+                "8": "You followed the Algox and found a nest of Harrowers and Shrike Fiends. You cleared it out, but the darkness remained. You found a tunnel leading deeper towards the source of the corruption.",
+                "9": "You killed the demon that had been the source of the corruption. As it died, black threads dragged its body into the earth, and when you returned to the Harrower nest the demon’s creatures had fled. The Icespeakers could now start a new life in the Radiant Forest in relative peace, and Putargal thanked you with a small beaded charm.",
+                "10": "You stayed with Chief Lanprul to plan for peace, instead."
+            },
+            "stages": {
+                "0": "{1}{2}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}",
+                "4": "{1}{2}{3}{4}{5}{10}",
+                "5": "{1}{2}{3}{4}{5}{6}",
+                "6": "{1}{2}{3}{4}{5}{6}{7}",
+                "7": "{1}{2}{3}{4}{5}{6}{7}{8}",
+                "8": "{1}{2}{3}{4}{5}{6}{7}{8}{9}"
+            }
+        },
+        "3": {
+            "name": "Glowing Catacombs",
+            "sections": {
+                "1": "You sided with the Snowspeakers in their battle against the Icespeakers by killing the Icespeaker chieftain. The Snowspeakers, who believe they communicate with their god Geryuu through the falling snow, are at war with the Icespeakers, who believe they can communicate with Geryuu through the ice which emerges from the ground below. Snowscorn Peak is holy to both groups.",
+                "2": "The Snowspeaker Chief, Lanprul, asked you to help her end the war with the Icespeakers to guarantee Frosthaven’s safety from Algox. She spotted a group of Icespeakers north of Whitefire Wood who will launch a counterattack if not stopped.",
+                "3": "An Icespeaker you were pursuing lured you into a trap of sorts - you fell through a hidden fissure into an underground crypt full of spirits. After dealing with those, you decided to explore this underground area further.",
+                "4": "In the final room of the Catacombs, you found a strange puzzle door with gears and symbols. This meant nothing to you until the Quatryl academic, Crain, started asking you to investigate “Death Sites” and weird energies that linger in certain parts of the North - probably as the result of a war fought long ago.",
+                "5": "You puzzled your way through a Haunted Vault and found a stockpile of ancient treasure. You also found another carved relief in the final room.",
+                "6": "The monsters were dead, but you kept hacking at them until some sense of reason returned. In a small stone box in the middle of the emptied chamber you found a slim piece of pink coral - a piece of the Coral Crown - and pocketed it before heading back out of the catacombs."
+            },
+            "stages": {
+                "0": "{1}{2}{3}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}",
+                "3": "{1}{2}{3}{4}{5}{6}"
+            }
+        },
+        "4": {
+            "name": "The Icespeaker War",
+            "sections": {
+                "1": "You sided with the Icespeakers in their battle against the Snowspeakers by killing the Snowspeaker chieftain. The Icespeakers believe they can communicate with their god Geryuu through the ice which emerges from the ground below. They are at war with the Snowspeakers, who believe they can communicate with their god Geryuu through the falling snow. Snowscorn Peak is holy to both groups.",
+                "2": "The Icespeaker Chief Elland believes Geryuu brought you to help defeat the Snowspeakers, and has promised to temporarily cease hostilities against Frosthaven.",
+                "3": "A powerful Snowspeaker has attained the summit of Snowscorn Peak and is threatening to bring down the whole mountain. Elland has suggested you prove your strength and friendship by defeating this Snowspeaker.",
+                "4": "On your way up, you were caught by an avalanche. You have fought your way through and obtained Climbing Gear to help you reach the summit.",
+                "5": "You defeated the mighty Snowspeaker, but something she did made Snowscorn Peak tremble; you quickly rappelled down.",
+                "6": "You found that the spirits of Skyhall - a place of great religious significance - had turned against the Icespeakers. While you laid them to rest, Chief Elland declared this could not continue - that war was bringing ruin to all the Algox. An older woman among them, Putargal, instead urged vengeance on the Snowspeakers for what they’ve done to Snowscorn and Skyhall. She left to plan for an assault against their enemies.",
+                "7": "You went with her to join the battle. The Icespeakers were victorious, but you’ve had guilt and nightmares ever since. A small group of Snowspeakers survived, and asked Mayor Satha for aid. You made an agreement with Satha and set out to see if you could help.",
+                "8": "You found the Snowspeaker refugees under attack by Unfettered. You did your best to save as many of the injured as you could. A young woman of the Snowspeakers, Denpang, thanked you and asked for a bit more help - that you bring her remaining clan to an island called Frai’d Tog, where the remaining Snowspeakers could live in peace.",
+                "9": "You found the island in the Biting Sea, but it was surrounded by a vortex of snow and wind and occupied by demons. You headed up a mountain on the island towards the source of this chaos.",
+                "10": "You killed the Render, and the wind died down and the walls of blustering snow dissolved. From the highest point of the peak you looked out over the island that would be the Snowspeakers’ new home, and Denpang celebrated that they had finally made it.",
+                "11": "You stayed with Chief Elland to plan for peace."
+            },
+            "stages": {
+                "0": "{1}{2}{3}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}",
+                "3": "{1}{2}{3}{4}{5}{6}",
+                "4": "{1}{2}{3}{4}{5}{6}{11}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}",
+                "6": "{1}{2}{3}{4}{5}{6}{7}{8}",
+                "7": "{1}{2}{3}{4}{5}{6}{7}{8}{9}",
+                "8": "{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}"
+            }
+        },
+        "5": {
+            "name": "Temple of Liberation",
+            "sections": {
+                "1": "You sided with the Icespeakers in their battle against the Snowspeakers by killing the Snowspeaker chieftain. The Icespeakers believe they can communicate with their god Geryuu through the ice which emerges from the ground below. They are at war with the Snowspeakers, who believe they can communicate with their god Geryuu through the falling snow. Snowscorn Peak is holy to both groups.",
+                "2": "The Icespeaker Chief Elland believes Geryuu brought you to help defeat the Snowspeakers, and has promised to temporarily cease hostilities against Frosthaven.",
+                "3": "A powerful Snowspeaker has attained the summit of Snowscorn Peak and is threatening to bring down the whole mountain. Elland has suggested you prove your strength and friendship by defeating this Snowspeaker.",
+                "4": "On your way up, you were caught by an avalanche. You noticed that the avalanche revealed a ruined stone structure jutting out of the ground, not too far away, and decided it was worth a look.",
+                "5": "You entered the Temple and found a lot of metal creatures; defeating them, you found a series of glowing indentations in the floor. They seemed to be conduits for the creatures to regain power - and power suggests a power source. You found metal cords buried underneath the floor and elected to follow them deeper into the Temple.",
+                "6": "To defeat all the automata, you needed to destroy a strange glowing orb. Once defeated, you were able to investigate a strange door sealed by a complex puzzle door with gears and symbols. This meant nothing to you until the Quatryl academic, Crain, started asking you to investigate “Death Sites” and weird energies that linger in certain parts of the North - probably as the result of a war fought long ago.",
+                "7": "You followed the glowing corridor deeper, defeated more automata, and rested before moving on.",
+                "8": "You returned the final piece of stone to the pedestal, and the night demons were pulled back into their ancient prison. With the shard in your possession, you pocketed your treasure and started the long journey back out of the tunnels."
+            },
+            "stages": {
+                "0": "{1}{2}{3}{4}",
+                "1": "{1}{2}{3}{4}{5}",
+                "2": "{1}{2}{3}{4}{5}{6}",
+                "3": "{1}{2}{3}{4}{5}{6}{7}",
+                "4": "{1}{2}{3}{4}{5}{6}{7}{8}"
+            }
+        },
+        "6": {
+            "name": "Algox Peace",
+            "sections": {
+                "1": "You sided with the Snowspeakers in their battle against the Icespeakers by killing the Icespeaker chieftain. The Snowspeakers, who believe they communicate with their god Geryuu through the falling snow, are at war with the Icespeakers, who believe they can communicate with Geryuu through the ice which emerges from the ground below. Snowscorn Peak is holy to both groups.",
+                "2": "The Snowspeaker Chief, Lanprul, asked you to help her end the war with the Icespeakers to guarantee Frosthaven’s safety from Algox. She spotted a group of Icespeakers north of Whitefire Wood who will launch a counterattack if not stopped.",
+                "3": "An Icespeaker you were pursuing lured you into a trap of sorts - you fell through a hidden fissure into an underground crypt full of spirits. Having dealt with them, and having secured a sled, you began to pursue these Algox.",
+                "4": "The Algox you found were channeling energy through strange crystal spikes - conduits - that enhanced their power. You defeated these, but spotted another field of these spikes in the distance. This one is much larger, so you set out in search of their source.",
+                "5": "You defeated the Icespeakers, but brought one survivor back to meet Chief Lanprul. The survivor reported that Geryuu had sent “burrowers” against them and that he was tired of this war. While Chief Lanprul was receptive, another - Denpang - encouraged an all-out assault with you at the Snowspeakers’ side. She left, to plan for war. You stayed with Chief Lanprul to plan for peace, instead.",
+                "6": "You sided with the Icespeakers in their battle against the Snowspeakers by killing the Snowspeaker chieftain. The Icespeakers believe they can communicate with their god Geryuu through the ice which emerges from the ground below. They are at war with the Snowspeakers, who believe they can communicate with their god Geryuu through the falling snow. Snowscorn Peak is holy to both groups.",
+                "7": "The Icespeaker Chief Elland believes Geryuu brought you to help defeat the Snowspeakers, and has promised to temporarily cease hostilities against Frosthaven.",
+                "8": "A powerful Snowspeaker has attained the summit of Snowscorn Peak and is threatening to bring down the whole mountain. Elland has suggested you prove your strength and friendship by defeating this Snowspeaker.",
+                "9": "On your way up, you were caught by an avalanche. You have fought your way through and obtained Climbing Gear to help you reach the summit.",
+                "10": "You defeated the mighty Snowspeaker, but something she did made Snowscorn Peak tremble; you quickly rappelled down.",
+                "11": "You found that the spirits of Skyhall - a place of great religious significance - had turned against the Icespeakers. While you laid them to rest, Chief Elland declared this could not continue - that war was bringing ruin to all the Algox. An older woman among them, Putargal, instead urged vengeance on the Snowspeakers for what they’ve done to Snowscorn and Skyhall. She left to plan for an assault against their enemies, but you stayed with Chief Elland to plan for peace.",
+                "12": "Whichever group of Algox you sided with first, you have agreed to help their chief look for a peaceful resolution to their conflict.",
+                "13": "You attended a secret meeting between two Algox emissaries, Gurndel and Barduu, as witnesses and bodyguards. Both the Icespeakers and the Snowspeakers attacked it, however, fighting against both you and their enemy tribes. You managed to escape with them; they agreed the only way forward is to seek the Oracle in the Whitefire Wood, Mar’ogh.",
+                "14": "Barduu and Gurndel consulted Mar’ogh, who spoke: “THE CORRUPTION HAS SPREAD TOO FAR. HE WHO SLEEPS NOW MOVES TO AWAKEN. HIS INFLUENCE SPURS ON THE CONFLICT. THE HEART OF ICE GROWS BLACK. HIS IMPURITY MUST BE ROOTED OUT—REPLACED. FORM A NEW HEART MADE OF ICE AND SNOW. ONE PATH LIES HIDDEN IN THE SEA—THE LIVING GLACIER, FORMED IN AGES PAST. THE OTHER LIES IN THE SOUTHERN HILLS—THE NEW SNOW THAT HOLDS THE SONG OF DAYS TO COME. TOGETHER THEY CONTAIN THE POWER TO STOP THE CORRUPTION. SEEK THEM AND RETURN.”",
+                "15": "Thus, you traveled to the Living Glacier in search of ice, and retrieved a shard of living glacial ice.",
+                "16": "Thus, you traveled to the Dead Pass in search of New Snow, and retrieved it.",
+                "17": "Thus, you traveled to the Dead Pass in search of New Snow and the Living Glacier in search of ice. You retrieved both a shard of living glacial ice and new snow, and brought them back to the sacred clearing to combine them.",
+                "18": "Mar’ogh opened a strange portal for the ritual’s completion. Nothing is ever that easy though; you found you needed to defeat creatures of ice and snow and use their essence to form a glyph. Once done, the two emissaries finished their ritual, combining the ice and the snow, to form the Unyielding Shard. Inside it, they found the true words of Geryuu and learned the Algox have been deceived by some other power. You needed to return to Snowscorn to embed the Shard into the Heart of Ice, remove the darkness that has fallen upon the Algox, and return them to Geryuu.",
+                "19": "You sank the Unyielding Shard into the Heart of Ice, and a wave of radiant energy filled the room and ended the corruption. The Algox, realizing the evil that had pitted them against their kin was banished, ceased fighting; the chief declared the war over and the two sects joined as the Frostspeakers. For the first time in ages, Snowscorn Mountain was at peace, and the Heart marked you as Allies of the Frost."
+            },
+            "stages": {
+                "0": "{1}{2}{3}{4}{5}",
+                "1": "{6}{7}{8}{9}{10}{11}",
+                "2": "{1}{2}{3}{4}{5}{12}{13}",
+                "3": "{6}{7}{8}{9}{10}{11}{12}{13}",
+                "4": "{1}{2}{3}{4}{5}{12}{13}{14}",
+                "5": "{6}{7}{8}{9}{10}{11}{12}{13}{14}",
+                "6": "{1}{2}{3}{4}{5}{12}{13}{14}{15}",
+                "7": "{6}{7}{8}{9}{10}{11}{12}{13}{14}{15}",
+                "8": "{1}{2}{3}{4}{5}{12}{13}{14}{16}",
+                "9": "{6}{7}{8}{9}{10}{11}{12}{13}{14}{16}",
+                "10": "{1}{2}{3}{4}{5}{12}{13}{14}{17}",
+                "11": "{6}{7}{8}{9}{10}{11}{12}{13}{14}{17}",
+                "12": "{1}{2}{3}{4}{5}{12}{13}{14}{17}{18}",
+                "13": "{6}{7}{8}{9}{10}{11}{12}{13}{14}{17}{18}",
+                "14": "{1}{2}{3}{4}{5}{12}{13}{14}{17}{18}{19}",
+                "15": "{6}{7}{8}{9}{10}{11}{12}{13}{14}{17}{18}{19}"
+            }
+        },
+        "7": {
+            "name": "The Coral Shard",
+            "sections": {
+                "1": "After dealing with the immediate Algox issue threatening Frosthaven, Mayor Satha mentioned Lurkers were sighted on the outskirts of Frosthaven territory. You have been asked to check it out.",
+                "2": "You pursued them to the edge of the Biting Sea, where you encountered Lurkers in a cave dug into a cliff. You found a strange coral shard in the skull of a Living Corpse; it communicated with you that it wanted you to take it north, far out to the sea, away from the cliffs. You figured this was what the Lurkers were after.",
+                "3": "Before heading out on the open sea, you decided to follow the shard’s pull overland along the northern coast.",
+                "4": "You crossed a bridge made of an ancient ribcage, and defeated the fiends guarding it. The shard still pulled you further north, but there was also a forest to the west to investigate.",
+                "5": "You decided to follow the pull of the Coral Shard further north, hoping to reach wherever it was leading you.",
+                "6": "You defeated the Prince of Frost, a demon host who shattered like a dropped vase, and made your way back to Frosthaven. Mayor Satha was unimpressed by what you brought back: her concern was the demons outside the walls, not the ones in the past.",
+                "7": "You decided to ignore the pull of the shard for now, and investigate the western forest.",
+                "8": "You defeated the creatures and felled their tree, and finally the forest was quiet. The clearing was the warmest part of the forest you had encountered, with even more heat radiating from the west, where a great swarm of glowing orbs had gathered. You made the long hike back to Frosthaven.",
+                "9": "The shard pulled you north. You could follow its pull overland along the northern coast, or build a ship and head out onto the ice-choked sea.",
+                "10": "You also investigated the western forest."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{9}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}{6}",
+                "4": "{1}{2}{3}{4}{7}{8}",
+                "5": "{1}{2}{3}{4}{5}{6}{10}{8}"
+            }
+        },
+        "8": {
+            "name": "The Coral Crown",
+            "sections": {
+                "1": "After dealing with the immediate Algox issue threatening Frosthaven, Mayor Satha mentioned Lurkers were sighted on the outskirts of Frosthaven territory. You have been asked to check it out.",
+                "2": "You pursued them to the edge of the Biting Sea, where you encountered Lurkers in a cave dug into a cliff. You found a strange coral shard in the skull of a Living Corpse; it communicated with you that it wanted you to take it north, far out to the sea, away from the cliffs. You figured this was what the Lurkers were after.",
+                "3": "Having built a ship, you decided to head out to the ice-choked sea and see where the Shard wanted to bring you.",
+                "4": "After facing a nightmare of abaeli, eels, and piranha pigs, you broke a second Coral Shard from a stone. A semicircle of Lurkers arose from the water, including one named Sun in Shallows. They told you of a Coral Crown which shattered into pieces - and shattered the great Lurker Kingdom with it. Most Lurkers went into blind frenzy afterwards; you have agreed to help reunite the crown in the hope that it will rebuild the Lurker civilization. The psychic draw of the Coral Shards drew you further eastwards, and deeper into the sea.",
+                "5": "There, you were set upon by Lurkers drawn to the pull of the Shards you carry. They wrecked your boat, so you decided to search for another means of travel. Frosthaven’s Tinkerer, Pinter Droman, designed a bathysphere - a craft to travel safely underwater - but it needed a power source. He suggested you might find one at the heart of the Radiant Forest.",
+                "6": "You retrieved the Energy Source and returned it to Pinter. After a few weeks, the Bathysphere was complete - along with a group of underwater suits. It was time to continue following the pull of the Coral Shards.",
+                "7": "The test of the bathysphere was successful. A few weeks later, Sun in Shallows visited Frosthaven. She reported that she and a group of fellow Lurkers tried to obtain a Shard that was corrupted by shadows, but she and her allies were defeated. Until that Shard is freed from evil, it would keep corrupting Lurkers, and Frosthaven would never be safe. More, the Crown cannot be reunited without it.",
+                "8": "Pinter recommended turning your shards into a psychic bomb to stun the Lurkers, though you could also try to find another way in.",
+                "9": "Pinter recommended turning your shards into a psychic bomb to stun the Lurkers, but you decided to find another way in.",
+                "10": "Pinter recommended turning your shards into a psychic bomb to stun the Lurkers, and you decided to trust him.",
+                "11": "Returning to the Biting Sea, you found the massive underwater dome of the Lurker garrison where the shard is being held, and looked for a way in. Unfortunately, the guards noticed you, so you retreated to a narrow cave. Somehow, you and your bathysphere made it through, exiting into a weird flower-like structure of coral. Behind a massive throne, by sheer luck, you spotted another Coral Shard.",
+                "12": "You found a suitable location, and began the process of arming the device, but the Lurker guards caught on before you were done. The device worked, though - all the Lurker guards were stunned, but many structures have been demolished. The shard called to you from underneath the wreckage, so you knew you had to excavate.",
+                "13": "You defeated and cleansed a corrupted Lurker, Fallen Whale, who gave you visions of a reunited crown. And, after obtaining all six shards, it was time to reunite it.",
+                "14": "You found that the collapse had awoken many of the guards. You defeated and cleansed a corrupted Lurker, Fallen Whale, who gave you visions of a reunited crown. And, after obtaining all six shards, it was time to reunite it.",
+                "15": "You brought the final shards together at the altar at the bottom of the sea, and Sun in Shallows, scarred and battered by the war, lifted the reunited Coral Crown. Its light transformed her into a Lurker queen, and the Lurkers returned in droves to the rebirth of their empire. She sent you a vision of a new age of peace between the people of the sea and the coastal settlements, and you returned to the surface, leaving the Lurkers to rebuild."
+            },
+            "stages": {
+                "0": "{1}{2}{3}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}",
+                "3": "{1}{2}{3}{4}{5}{6}",
+                "4": "{1}{2}{3}{4}{5}{6}{7}{8}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}{9}{11}",
+                "6": "{1}{2}{3}{4}{5}{6}{7}{9}{11}{13}",
+                "7": "{1}{2}{3}{4}{5}{6}{7}{10}{12}",
+                "8": "{1}{2}{3}{4}{5}{6}{7}{10}{12}{14}",
+                "9": "{1}{2}{3}{4}{5}{6}{7}{9}{11}{13}{15}",
+                "10": "{1}{2}{3}{4}{5}{6}{7}{10}{12}{14}{15}"
+            }
+        },
+        "9": {
+            "name": "The Crystal Spire",
+            "sections": {
+                "1": "After dealing with the immediate Algox situation, Mayor Satha mentioned strange metal constructs were marching through the wastes. Scouts tracked them through Whitefire Wood, then into a frozen valley. She asked you to look into this.",
+                "2": "You ran through a hazardous valley, pursued by wolves, where it opened into the Crystal Fields, full of huge crystal pillars as tall as trees.",
+                "3": "You noted one massive spire, larger and darker in color than the rest, and decided to check it out.",
+                "4": "You defeated the Chaos Lieutenant guarding the entrance, who proclaimed they were preparing to destroy your outpost. You found both a stairwell leading down and a beam of light which would carry you up.",
+                "5": "You opted to head downstairs.",
+                "6": "You stepped into the beam to be drawn upwards.",
+                "7": "You found at least one way to ascend - beam or elevator - to defeat this tower’s sinister purpose. You knew the answers would be found at the top.",
+                "8": "The great beam of energy flickered and went out. The demon you defeated at the top cracked, and its ancient body disintegrated into a cloud of sooty, prismatic smoke. In its remains you noticed a pink piece of coral, felt a strong connection to it, and took it with you. It was impossible to know what cataclysm you prevented, but the north was safer now.",
+                "9": "Among the pillars, you noted one massive spire, larger and darker in color than the rest, and one distant spike which looked a little curious - shorter and wider than the rest."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{9}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}{7}",
+                "4": "{1}{2}{3}{4}{6}{7}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}",
+                "6": "{1}{2}{3}{4}{5}{7}{8}",
+                "7": "{1}{2}{3}{4}{6}{7}{8}",
+                "8": "{1}{2}{3}{4}{5}{6}{7}{8}"
+            }
+        },
+        "10": {
+            "name": "The Orphan",
+            "sections": {
+                "1": "After dealing with the immediate Algox situation, Mayor Satha mentioned strange metal constructs were marching through the wastes. Scouts tracked them through Whitefire Wood, then into a frozen valley. She asked you to look into this.",
+                "2": "You ran through a hazardous valley, pursued by wolves, where it opened into the Crystal Fields, full of huge crystal pillars as tall as trees.",
+                "3": "You noticed one distant spike which looked a little curious - shorter and wider than the rest - and decided to check it out.",
+                "4": "This turned out to be an ancient building of some sort. You broke it open and found broken machines, glass, and clutter. You found an ancient elevator and managed to turn it on, heading far downwards. At the bottom was a walkway in two directions.",
+                "5": "You headed straight for a security alert to meet it face on.",
+                "6": "There, you rescued a Quatryl scholar, Crain Tallengyr, who was studying the Unfettered. He has been recovering in Frosthaven, and believes he developed a device which would deactivate the Unfettered. He needs materials first, though, and asked you to bring him back so he could find the parts he needs.",
+                "7": "You headed away from a security alert, hoping to avoid the defenders.",
+                "8": "There, you rescued a Quatryl scholar, Crain Tallengyr, who was studying the Unfettered. He has been recovering in Frosthaven. He showed you some maps for the complex, and two possible paths to the core.",
+                "9": "After rooting around for scrap, Crain finished his Crain Unfettered Disabling Device. Now that it’s built, you could head with him for the core of the complex.",
+                "10": "You elected to sneak above them through the ducts.",
+                "11": "You elected to take a deeper path, which may have once been a transportation system.",
+                "12": "After the dangers of your journey, you came to the central chamber. Now, you just have to figure out how to shut it down.",
+                "13": "You cleared out some access tunnels, where you could use the Disabling Devices to great effect, and brought down the passage behind you to protect your backs. You continued forwards.",
+                "14": "At the center of the complex, you encountered - and were taunted by - an intelligent and speaking Unfettered, who told you that they cannot coexist with biological life. You found it was an awkward being, simply built and not imposing at all. It told you of their history - that they used to be slaves, but were then abandoned. They refuse to be servants again, and this Unfettered - the Orphan - challenged you to destroy them, because they would not bow and beg for peace.",
+                "15": "At the center of the complex, you encountered - and were taunted by - an intelligent and speaking Unfettered, who told you that they cannot coexist with biological life. You found it was an awkward being, simply built and not imposing at all. It told you of their history - that they used to be slaves, but were then abandoned - and it recognized Crain as kin to those who did so. They refuse to be servants again, and this Unfettered - the Orphan - challenged you to destroy them, because they would not bow and beg for peace.",
+                "16": "You elected to end the threat they pose to Frosthaven forever - and destroy them.",
+                "17": "You unexpectedly found yourselves envoys for the living creatures of the surface, and decided to try and broker a peace between your peoples.",
+                "18": "The Orphan lay ruined at your feet. With its last strength it shut down the Unfettered across the complex, and their lights went out one by one, ending with the fading glow of its mask. You sealed the silent complex behind you as a grave and returned to Frosthaven.",
+                "19": "Just as the machines closed in on you, the Orphan announced that its work was done, and the other Unfettered turned on their own guards and came to your defense. The Orphan, battered but alive, told you the Unfettered had chosen peace. After recovering you returned to Frosthaven, accompanied by a retinue of cloaked Unfettered."
+            },
+            "stages": {
+                "0": "{1}{2}{3}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}{6}",
+                "3": "{1}{2}{3}{4}{7}{8}",
+                "4": "{1}{2}{3}{4}{5}{6}{9}",
+                "5": "{1}{2}{3}{4}{7}{8}{10}{12}",
+                "6": "{1}{2}{3}{4}{7}{8}{11}{12}",
+                "7": "{1}{2}{3}{4}{5}{6}{9}{13}",
+                "8": "{1}{2}{3}{4}{7}{8}{10}{12}{14}{17}",
+                "9": "{1}{2}{3}{4}{7}{8}{10}{12}{14}{16}",
+                "10": "{1}{2}{3}{4}{7}{8}{11}{12}{14}{17}",
+                "11": "{1}{2}{3}{4}{7}{8}{11}{12}{14}{16}",
+                "12": "{1}{2}{3}{4}{5}{6}{9}{13}{15}{17}",
+                "13": "{1}{2}{3}{4}{5}{6}{9}{13}{15}{16}",
+                "14": "{1}{2}{3}{4}{7}{8}{10}{12}{14}{17}{19}",
+                "15": "{1}{2}{3}{4}{7}{8}{10}{12}{14}{16}{18}",
+                "16": "{1}{2}{3}{4}{7}{8}{11}{12}{14}{17}{19}",
+                "17": "{1}{2}{3}{4}{7}{8}{11}{12}{14}{16}{18}",
+                "18": "{1}{2}{3}{4}{5}{6}{9}{13}{15}{17}{19}",
+                "19": "{1}{2}{3}{4}{5}{6}{9}{13}{15}{16}{18}"
+            }
+        },
+        "11": {
+            "name": "The Harbinger’s Seals",
+            "sections": {
+                "1": "With your help, Crain, the Quatryl academic you rescued from the Unfettered, has been working through a strangely encoded journal called Project: Source. The journal details one Logren’s research for a strange energy that lingers in some areas of the North. You investigated a spire, first, and then what Logren called “Death Sites.”",
+                "2": "With your help, on the sites of ancient battlefields and frozen fjords, Crain found signs of these weird energies - apparently remnants of a war fought long ago. Your research bore fruit in the Radiant Forest, where a strange stone turned out to be the final clue. With the help of alchemy, Crain was able to distill the energy signatures - but not before you quelled the Algox raids.",
+                "3": "On returning, you found Crain disturbed - and ranting about the “one who waits” or the “Bringer of Ruin,” lying “deep beneath the soil, waiting to rise.” Fortunately, a punch from Satha and a mutton sandwich (plus a few weeks of rest) brought him back to his senses. He used this time to diagram out a synthesis device to more safely distill the energies - but he needed some schematics and parts from the Unfettered to finish it.",
+                "4": "He showed you how the Unfettered carapaces are treated - and mentioned that Logren used the same treatment in making a “symbol of power” or simply “seals.” He wants to build a device to create these seals - but needs some “star iron.” You headed to the Copperneck Mountains to find some, with his aid.",
+                "5": "There, you found Deep Terrors - and an Orchid woman named Moonshard, who helped you get through your nightmares. She introduced you to Terra, another orchid; it seemed they were waiting for Crain. They warned you of the imminent emergence of “The Harbinger” - an imprisoned god of malice and spite, sleeping deep within the earth. It has been corrupting all around it, and weakening the seals holding it. Terra offered to provide Crain with some of that star metal.",
+                "6": "Crain and Terra started working in Frosthaven - but Crain first needed some improvements made to Frosthaven. Ultimately, with his own workshop complete, he set you to make peace with the Lurkers so they wouldn’t wreck his gyroscopic stabilizers and make his machine explode. Once that was done, he needed to research animals, an improved Craftsman to help with the construction, and even a lot of adventurers to interview. Finally, with all that done, he completed his machine and you helped him untangle the calibration instructions. Instead of waiting for help, Crain charged the device on his own … and it seems like it worked! He was ready to strengthen the seals.",
+                "7": "The first Seal was deep below the Crystal Fields. While Crain worked, the Harbinger sent guardians to repel you. You held the monsters at bay and bought him time. Ultimately, Crain found the right place and activated his machine. New lines grew in the Seal’s design. It seemed like Terra’s plan might work. You headed off to the Savvas’s source of life.",
+                "8": "The second seal was in another tunnel - between where the Harbinger sleeps and the Savvas source of life; through this, it was corrupting the Savvas. You hoped strengthening the seal would preserve this source of life while freeing them from corruption. Fortunately - it worked, and the Savvas were freed from its influence. Crain had warned you that the Harbinger may try to emerge once the second seal was repaired, but that he didn’t yet know where the third seal was. Turns out, it was in Frosthaven.",
+                "9": "The Harbinger’s colossal limb stopped, broken and battered, and for a moment it seemed it would fall and crush you all. Then Crain and Terra, kneeling over the Harbinger’s seal, re-engaged the remnant of Crain’s device. A burst of light spread outward and held the falling limb in the air, until the whole of it ripped out of reality and was gone. Frosthaven stood, its walls ruined and its defenders battered, as a new snow began to fall."
+            },
+            "stages": {
+                "0": "{1}{2}{3}{4}",
+                "1": "{1}{2}{3}{4}{5}",
+                "2": "{1}{2}{3}{4}{5}{6}",
+                "3": "{1}{2}{3}{4}{5}{6}{7}",
+                "4": "{1}{2}{3}{4}{5}{6}{7}{8}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}{8}{9}"
+            }
+        },
+        "12": {
+            "name": "Voice of Eight",
+            "sections": {
+                "1": "The Aesther are interested in setting up a research outpost in the North. You are doing the leg work.",
+                "2": "A group of eight Aesther approached Frosthaven, merged into one being. Voice of Eight, their spokesperson, asked for your help in return for knowledge. They located an elemental array, and asked you to retrieve it.",
+                "3": "The eight Aesther found that only the Anchor of the device was still intact, and that it needed new elemental cores. A few weeks later, they reported that they found them, and asked you to meet them at the array.",
+                "4": "Voice of Eight and Nera, one of the eight who specialized in enchantments, opened portals to four elemental planes for you. You retrieved a core from each and placed them inside special housing the Aesther had prepared. They needed to spend time reshaping the cores, and promised they would call you when they needed your aid again.",
+                "5": "On return to the Aesther Outpost, you found the eight Aesther in trouble. You needed to empower the cores with your own energies. Denizens of the elemental planes came forth to retrieve the stones, and you fought them off. While you succeeded at your task, something still went wrong... A new rift opened.",
+                "6": "You destroyed the demon that emerged from the rift, and the rift closed. Voice of Eight resumed their chant and repaired the damage to the array. They thanked you for helping to restore a place of research and learning, promised knowledge and guidance to all who seek it, and opened a stable portal between Frosthaven and their new home."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}",
+                "4": "{1}{2}{3}{4}{5}{6}"
+            }
+        },
+        "13": {
+            "name": "The True Oak",
+            "sections": {
+                "1": "You have heard rumors of a True Oak somewhere in the North, planted by a prophet from an acorn of the Great Oak in the capitol. You have been collecting wood samples.",
+                "2": "A local savvas botanist, Listerius, studied these wood samples. It sent you to the Radiant Forest to collect some soil samples, as well. With these, it was confident it could triangulate the location. After bringing them back, Listerius started to analyze them.",
+                "3": "A few weeks later, you found Listerius’s cabin ransacked. The Radiant Order from White Oak had heard of its “blasphemy,” stole the notes, and went to destroy the True Oak you’ve been searching for.",
+                "4": "You killed the zealots, and the True Oak still stands. You told Listerius it was safe. It was glad the Oak stood, but with the Radiant Order still a threat, it felt the True Oak must remain a myth for now."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}"
+            }
+        },
+        "14": {
+            "name": "The Fish King",
+            "sections": {
+                "1": "You have heard rumors that the Abaeli have been uniting under a “King” with eyes on conquest - and that this King is trying to control the great Leviathans of the ocean.",
+                "2": "Abaeli and Lurkers both invaded Frosthaven’s docks. They were trying to get to a valrath named Lihrey, who introduced himself as an “artificer of the Storm Society.” He recently found a piece of a scale from the Leviathan, a massive sea creature which Abaeli worship as a god. The Abaeli want it, and the Lurkers want to prevent the Abaeli from getting it - thus, the invasion.",
+                "3": "The Abaeli got the piece Lihrey was carrying, but there are two others. He asked your help to make sure the fish people didn’t get to the others first. He said he’d contact you when he pinpointed the second scale, and did so after a few weeks.",
+                "4": "You took the Cinnabar, Lihrey’s ship, to the base of a mountain. The scale was embedded in a giant block of ice, which you worked to haul back to the ship - fighting through a series of defenses to do so. He told you he needed to bring it back to Frosthaven in order to melt the block. You headed back.",
+                "5": "On the way back, the ship was attacked and destroyed by enormous waves - controlled somehow by the Abaeli Fish King. The Fish King attacked you and used the first scale to steal the second one from the block.",
+                "6": "After a brief fight, the Fish King recognized your strength. He asked you to help him retrieve the third scale; in return he promised to bring peace to the seas and protect you from the Lurkers.",
+                "7": "You declined his offer.",
+                "8": "You accepted his offer and became a Friend of the Fish King.",
+                "9": "While Lihrey was still alive, he was badly hurt, and needed a few weeks to recover before finding the final piece of the scale. In time, though, he found it - in the hands of an older clan of Algox.",
+                "10": "Unfortunately, the Fish King got there first and stole the third piece of the scale. Lihrey told you his device could now serve to track down the Fish King’s lair, however, so not all was lost.",
+                "11": "You obtained the third piece of the scale for the Fish King - and despite Lihrey’s warnings, went to deliver it to your abael ally.",
+                "12": "After finding his lair and defeating his guards, only one target was left - the Fish King himself.",
+                "13": "While he was ascending to his full power, you protected him from the collected peoples of the North, all set on stopping him. You decided to leave the Fish King to his own devices; he had promised not to harm Frosthaven, and that was all that mattered to you. You gathered up your reward, including the spear he would not be needing anymore, and left before the transformation finished and the whole place came crashing down.",
+                "14": "While he was ascending to his full power, you protected him from the collected peoples of the North, all set on stopping him. And... well, you began to have second thoughts about entrusting this mad fish-man with that much power. You decided to change course and stop him.",
+                "15": "With a pained gurgle, the Fish King finally stopped thrashing, the chaos around him receded, and his limp body returned to its original size. His own mistreated piranha pigs descended on him. You took the Leviathan scale and his spear and made a quick exit to the ship, hoping the Abaeli left behind would thrive without their ruler and leave Frosthaven alone. You delivered the scale to Lihrey, warning him that no one should try to control its power. He promised that the Storm Society would study it only for historical importance and keep it safe."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}{6}{8}{9}",
+                "4": "{1}{2}{3}{4}{5}{6}{7}{9}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}{9}{10}",
+                "6": "{1}{2}{3}{4}{5}{6}{8}{9}{11}",
+                "7": "{1}{2}{3}{4}{5}{6}{7}{9}{10}{12}",
+                "8": "{1}{2}{3}{4}{5}{6}{8}{9}{11}{13}",
+                "9": "{1}{2}{3}{4}{5}{6}{8}{9}{11}{14}",
+                "10": "{1}{2}{3}{4}{5}{6}{7}{9}{10}{12}{15}",
+                "11": "{1}{2}{3}{4}{5}{6}{8}{9}{11}{14}{15}"
+            }
+        },
+        "15": {
+            "name": "The Relic",
+            "sections": {
+                "1": "Satha was surrounded by people in their nightclothes, complaining about a terrible dream all of them had, collectively. The dream was of a machine which needed help freeing itself from the ice. They chanted in creepy unison and told you they couldn’t sleep until this was done.",
+                "2": "You found the relic, a strange cube buried in ice and snow. You returned it to Frosthaven. The villagers all cheered again in unison, and your dreams have since been troubled and full of their chanting.",
+                "3": "A few weeks later, you awoke to those townspeople screaming. The cube you retrieved had activated overnight, broke a wall, and rolled off into the wilderness.",
+                "4": "You tracked the Relic down and destroyed it. It shattered into countless cogs and gears, and its voice left Satha’s mind. She thanked you, punched you in the arm, and went back to bed."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}"
+            }
+        },
+        "16": {
+            "name": "The Collector",
+            "sections": {
+                "1": "Captain Olmstead brought you to an Inox girl, found nearly frozen, just outside of Frosthaven. She told him “The Collector” has been holding her and her family for weeks. The girl managed to tell you where this “Collector” is.",
+                "2": "The Collector’s lair was a metallic structure in the Whitefire Woods. You fought the Collector’s guards and rescued the girl’s two brothers. They headed back to Frosthaven for medical care, while you continued on to finish the monster.",
+                "3": "You destroyed the Collector, and its body crumbled into lifeless stone. You opened the remaining cages so that nothing else would suffer. Back in Frosthaven, you met the sister and her brothers, injured but safe and very grateful."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}"
+            }
+        },
+        "17": {
+            "name": "Rattusca’s Treasure",
+            "sections": {
+                "1": "You met a vermling, Rattusca, who had newly arrived in Frosthaven. She showed you a nearly-mummified algox corpse, adorned with thick gold bracelets. She told you her ship, the Lucky Lady, had recently collided with a small iceberg; she thinks this algox came from there - and that there may be more, likewise richly adorned. She offered to give you the location, for a cut of the spoils.",
+                "2": "The algox corpses were frozen in ice, but (naturally) came to life once you started breaking them free of ice. You had your fill of treasure, and then discussed splitting the treasure with Rattusca.",
+                "3": "As soon as she disappeared, you were hit by a sudden storm.",
+                "4": "She asked for just a small finder’s fee - one of the bracelets - and you gave it to her. Meanwhile, the captain yelled that a storm was approaching fast, with no way to outrun it.",
+                "5": "You refused her a share; she hadn’t done any of the work. That’s when you realized you could no longer move - Rattusca was a Mindthief, and she helped herself to one of the bracelets. While you were distracted with her, a massive storm rolled up right on top of the ship.",
+                "6": "Chased by Lurkers, you finally scrambled up a cliff slope to safety, leaving them hissing and clacking their claws on the beach below as the storm died down. Nearby you found Rattusca, collecting coins from a pair of bedraggled sailors. She said she had known you would make it - in fact, she had bet on it. She could surely have helped you against the Lurkers, but told you not to be so cross: it was all water under the boat."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{4}",
+                "3": "{1}{2}{5}",
+                "4": "{1}{2}{3}{6}",
+                "5": "{1}{2}{4}{6}",
+                "6": "{1}{2}{5}{6}"
+            }
+        },
+        "18": {
+            "name": "The Missing Painter",
+            "sections": {
+                "1": "Eros, the savvas playwright, has told you a human painter, Camilla, is missing. She’d gone off to see a pack of “rare, majestic beasts” in fields off to the far east, and hasn’t returned. He’s asked you to go find her, in the name of arts and beauty.",
+                "2": "While searching for her, a vermling told you Unfettered had taken his family. He brought you to a complex where Camilla may have gone. While you found the vermling’s family, unfortunately you found that Camilla had perished. Her family came to you a few weeks later and asked if you might bury her.",
+                "3": "You laid Camilla to rest, reciting prayers of the Oak at her graveside while her family waved smoldering oak branches. Camilla’s restless spirit, and the graveyard around her, finally grew calm."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}"
+            }
+        },
+        "19": {
+            "name": "The Active Complex",
+            "sections": {
+                "1": "A traveler came to Frosthaven, from across the Whitefire Woods, with word of an active Unfettered complex - it was lit up and humming. Glint characteristically tried to get rid of him, but you showed up at just the right time. He’s asked you to go check this complex out.",
+                "2": "Sure enough, it was still active - and guarded. You took a rail line deep within the complex, chased by machines. While you considered going back, it seemed like you were near the heart of the complex - clean and scrubbed. The automated cleaners decided you needed cleaning, too.",
+                "3": "You battled a “Program Director” who wanted to decontaminate the facility. By beheading you. Cleanly. That didn’t sound too appealing, so you defended yourselves and destroyed it. That deactivated all the cleaning robots - and also started collapsing the whole complex. Time to make a clean getaway.",
+                "4": "You burst out of the exit into the fresh air as the mountain rumbled and settled, sealing the facility under a permanent blanket of rock and snow."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{3}{4}"
+            }
+        },
+        "20": {
+            "name": "Gem and Zu",
+            "sections": {
+                "1": "“Gem,” an ancient orchid, found you at the Crater just before bedtime. Without too many details - she moved far too slowly to even consider that - she handed you a bag of ancient gold coins and hired you.",
+                "2": "She brought you to an old and remote prison, where the guards were (naturally) not as dead as promised. The “prisoner” seemed to be held in a wooden box on a pedestal. The box contained a Harrower named Zu, who had evidently gone a bit mad from long imprisonment. Gem sent you into the Harrower’s hive-mind to try and bring it back.",
+                "3": "While your conscious minds were slumbering, your subconscious headed toward the core of Zu’s mind. This turned out to be a replica of it and Gem’s old hideout. You finished off the last of the figments clouding Zu’s consciousness, and brought it back to awareness.",
+                "4": "Zu complained that this was supposed to be a life sentence, and that it had not done its penance yet. Gem told it that they needed to find and help a Savvas, “Bartlet,” and to stop complaining. Zu acquiesced.",
+                "5": "To find Bartlet, Gem and Zu brought you to an ancient Harrower “library” - a storehouse of their memories, only accessible by other Harrowers. You found where Bartlet was, and also learned that the three of them (plus a mysterious fourth) were once mercenaries like yourselves, before making a mistake of some sort.",
+                "6": "Bartlet was easy enough to find, once you knew where, but he’d gone completely dormant. Gem told you more about her crew’s background - they’d made a bad choice, and their fourth member (a Lurker named Ripple) died for it. She sent you, this time, into the Savvas’s mind. You brought him peace - but while you were there, you found a strange lead trap door at the bottom of a chest. You figured you should tell Gem about it.",
+                "7": "Back in the cold cavern, you found Gem and Zu standing over Bartlet’s body. Gem wept and asked Zu whether it had been enough. Then Bartlet drew his last breath, and the Savvas’s chest faded to dull rock as a reverent silence fell over the room."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}",
+                "4": "{1}{2}{3}{4}{5}{6}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}"
+            }
+        },
+        "21": {
+            "name": "The Rainbow Key",
+            "sections": {
+                "1": "Inside a chest, you found a rainbow key. While holding it, a keyhole appeared in the air, through which you saw a sunny spring landscape. You tried to use the key to open the door, but it didn’t work. You resolved to try again later.",
+                "2": "You heard of a cult that experimented with strange keys, not too far from Frosthaven. A locksmith directed you to a mural on a cave wall, in hopes it would shed light on how to use it. Your key caused a door to appear in colors of green and blue; it opened for you.",
+                "3": "Inside, you found a clue - a key mold with four indentations for elemental symbols. You found two such symbols on the dead monsters, a leaf and a snowflake, and slid them into their receptacles. That was only half what was needed, though, so you began searching for the other two.",
+                "4": "Later, on one of your winter travels, you found a strange cave full of wind and warmth. Your strange key began to pulse as you went deeper. There, you found another door with symbols for wind and fire.",
+                "5": "Deep within that, you found the “elemental alloy” - a bar of metal, which could be used to forge a new key. Written on the bar was “The Tempus Forge,” which seemed as good a place as any to go for the next step. A few weeks later, while wandering around, you recognized your landscape as matching scratches on the metal bar. Under the snow, you found another mural and another keyhole.",
+                "6": "With the blacksmith dead, you melted the elemental alloy and poured it into the mold, then pried the mold open to retrieve your new key. It shimmered with power in your hands. You sealed the forge with the key as you left, letting it rest in peace."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}",
+                "3": "{1}{2}{3}{4}{5}{6}"
+            }
+        },
+        "22": {
+            "name": "The Copperneck Pass",
+            "sections": {
+                "1": "Frosthaven’s resident Tinkerer, Pinter Droman, thinks there’s a new opportunity to create a pass through the Copperneck Mountains after a recent landslide. It could save several days on each journey. Pinter has created some bombs to help clear the remaining rubble, but the local wildlife hasn’t felt kindly towards this course of action. He’s asked you to put some explosives in certain locations there, since unlike his normal workers, you can protect yourselves.",
+                "2": "That went about as well as could be expected when dynamite and polar bears mix, but you were victorious and turned the site back over to Pinter.",
+                "3": "A few weeks later, he needed more help on the project. Part of the road passes beneath a cliff; the work crew installed pylons to keep it held up. However, some Algox bandits - a clan called the Horns of Ruin - aren’t too pleased with this new construction. Pinter asked you to go protect the pylons, in advance of the attack.",
+                "4": "Once that was done, Pinter and his crew were able to complete the road. Mayor Satha asked some local merchants to do a test run on this new shortcut, and asked you to guard the first caravans going south.",
+                "5": "You drove off the attackers, and Pinter climbed down from his hiding place in a nearby tree, exclaiming that it had been close. The merchants circled their wagons to calm their animals. The road had very nearly become Droman’s Grave, so you made a note to tell Satha to set up patrols to keep the shortcut safe."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}"
+            }
+        },
+        "23": {
+            "name": "The Mindthief",
+            "sections": {
+                "1": "Some force has been toying with the minds of Frosthaven’s residents, including some guards - one of whom stabbed another. Captain Olmstead reported that this has been happening a lot this week. He’s pretty sure something has set itself up in an abandoned cabin. Whatever it was then tried to make you disembowel yourselves. You figured you should check this out.",
+                "2": "Some of the guards had fallen under the influence of the cabin’s inhabitant - a group of Vermlings led by a Mindthief. She escaped - and you set to destroying an emitter device she’d been working on. You asked for Captain Olmstead’s help in tracking down the Mindthief, and he introduced you to his friend, a valrath tracker and cartographer named Kefra. It took months, but Kefra returned with news. She’d found evidence of the mindthief - in an old burial mound called the Black Barrow, on the outskirts of Gloomhaven.",
+                "3": "In the Black Barrow you confronted the Mindthief in her power armor and brought it down, ending her hold over the guards and the rats.",
+                "4": "In the Black Barrow you confronted the Mindthief in her power armor and destroyed it. Fatally wounded, she told you she had only wanted everyone to understand what it was like to be in a mind like hers, caught in a body unsuited to it. She removed the helmet which powered her machines and controlled the rats, and begged you to give it to the other Vermlings, so her efforts would not go to waste. You waited quietly beside her until she was gone.",
+                "5": "On your way out, small, pointed Vermling faces peered from the shadows. You held out the helmet to the boldest of them; she squinted at you suspiciously, but took it.",
+                "6": "Unsure whether the other Vermlings would even want such technology, you kept the helmet for yourselves.",
+                "7": "In the Black Barrow you confronted the Mindthief in her power armor and concentrated on disabling her mind control helmet. It released a blaze of energy that swept the rats away and knocked her suit to the ground. She climbed out of the wreckage, furious - until she saw the Vermlings peering from the shadows, afraid of her because she had mind-controlled them. Mortified, she admitted that her passion for advocating for her people had turned into a diabolical obsession. Giving you one last look of suspicion and reluctant gratitude, she went to speak to the other Vermlings, drawing them in with her natural magnetism rather than any evil tech. You suspect she will now use her powers for good."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{4}{5}",
+                "4": "{1}{2}{4}{6}",
+                "5": "{1}{2}{7}"
+            }
+        },
+        "24": {
+            "name": "The Fracture in Time",
+            "sections": {
+                "1": "You met versions of yourselves from the future, on the road. They passed you an amulet, and asked you to heal a pair of fractures in time. The amulet drew you towards a giant field of ice; it could simply teleport you there, whenever you were ready.",
+                "2": "The amulet pulled you into an alien landscape of crystalline trees. You found one, much larger than the others, and entered a cave at its base. Somehow, it flung you perhaps thousands of years back in time. This created a reaction in the world around you, and time started speeding up around you to bring you back - with the crystalline roots threatening you all around. You found a device which accepted your amulet as a key of sorts. One side of the amulet started glowing green; perhaps one of the two fractures was healed? It drew you onwards towards the next step in your quest.",
+                "3": "You raced out of the facility and dived down the hill as a firestorm raged in the space above you. The second fracture was gone and the other crystal in your amulet now glowed blue. Time had normalized, and with your restored amulet you returned to Frosthaven."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}"
+            }
+        },
+        "25": {
+            "name": "Nits and Narb",
+            "sections": {
+                "1": "You found two brothers, Nits and Narb, drunk on the side of the road one summer day. They were attacking both each other and the snow - possibly hallucinating. You tried to help - maybe successfully.",
+                "2": "Later, you saw the two in the Crater; they greeted you warmly and drunkenly, introducing you to a nobleman named Derrick Windemere. They started boasting to him of your (fictional) accomplishments, and then a whole lot of nonsense ensued. Derrick was impressed, though, and said he might have a job for you later.",
+                "3": "Sure enough, a few weeks later, he did. He showed you a pouch of sun agates - rare and beautiful gemstones. Apparently they are very popular with the Radiant Order, zealous worshippers of the Great Oak. Derrick found a source nearby, being mined by Algox, and suggested taking the mine by force. First, however, he asked you to capture a whole sled full of them, by laying an ambush.",
+                "4": "With the assistance of some mercenaries, you captured the sled and salvaged what sun agates you could - packing them away in insulated containers. You set off for Frosthaven.",
+                "5": "You ran until you could no longer hear the screeching of the birds that harried you, and rested in a shallow cave, taking turns on watch. You weighed handing the sun agates over to Derrick: it could earn you a lot of money and bring prosperity to the outpost, but it would also give him the means to incite more Algox aggression.",
+                "6": "The rest of the journey was calmer. Back at the Crater, Derrick, Nits and Narb greeted you warmly and drunkenly. Derrick found the haul a little less than he’d hoped, but handed you a large sack of gold. As you watched him load the containers onto a cart bound south, you couldn’t help but wonder how angry the Algox would be - and whether his militia would be around when they came to take that anger out on Frosthaven.",
+                "7": "Unwilling to help Derrick do more harm to the Algox, you stashed the gems in the cave and returned to Frosthaven empty-handed. You told him the Algox had ambushed you and you had bargained the gems for your lives, hinting that provoking them might not be worth it. Derrick stormed off in tears, and you joined Nits and Narb for another round. Over the next few weeks you sold off the sun agates for a tidy profit, though much less than he had offered."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}",
+                "4": "{1}{2}{3}{4}{5}{6}",
+                "5": "{1}{2}{3}{4}{5}{7}"
+            }
+        },
+        "26": {
+            "name": "The Feline Idol",
+            "sections": {
+                "1": "An old man named Mulbrynn introduced himself in the Crater, and offered to tell you a legend for a drink. He told you about another group of adventurers, who found a “dark and powerful” idol that compelled them to go high up into the Imperial Mountains, promising them it would fulfill their dreams. They never returned. He handed you a map to the place they were heading.",
+                "2": "When you got near, you were compelled to jump down a crack in the mountain. In an underground passage, you found a pedestal topped by a feline idol, radiating dark power. You grabbed it; it demanded to be put back, but you couldn’t. The place started collapsing, and you decided it was time to escape.",
+                "3": "You got through the doors before your room collapsed - and saw the darkness had cleared from the idol. Before you could go any further, you were met by Mulbrynn, who appeared from the shadows. He demanded “his” idol from you.",
+                "4": "You fought your way out to the surface. The idol told you it had sealed itself away after seeing the chaos that creatures of this land would cause with its power, but that you had changed its fate: those who would do harm were now buried beneath the mountain, and it was free to aid you, though its power was diminished."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}"
+            }
+        },
+        "27": {
+            "name": "Belara’s Tomes",
+            "sections": {
+                "1": "Eddica, the Valrath Librarian, has been researching certain magic tomes, written by the Savvas spellcaster Belara. She thinks she’s found the location of the Tome of Conflict. There’s a tower referenced in older texts, said to be in the Radiant Forest - but it’s not on any newer surveys. She thinks this might be where the Tome could be found.",
+                "2": "You destroyed the steel automaton guarding the tower, which unbolted the trap door. A hatch opened in the fallen machine’s chest, and inside you found the Tome of Conflict.",
+                "3": "Eddica believed the Tome of Conflict was only one of several tomes Belara had written, and hoped that together they might reveal more about their author.",
+                "4": "In time, you located all four of the tomes, and noticed some weird markings. You showed them to Eddica, who went through all four at once, finding hidden links, meanings, and secrets.",
+                "5": "She filled you in on the Tomes’ background. The power Belara unlocked turned it to evil. Such was its might that the Orchid High Council stepped in; they imprisoned Belara and scattered the tomes to make sure Belara could never recover all of them. The Council sealed the savvas away... but Eddica is pretty sure she’s figured out the location of its prison. It seems like a bad idea to go there... but...",
+                "6": "You defeated Belara. With its concentration broken, the two forces at war within its body burst outward in a blaze of light and darkness, and you woke outside the keep as it collapsed, sealing whatever remained of Belara inside. You recounted the story to Eddica in the Library, who was thrilled."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}{5}",
+                "3": "{1}{2}{3}{4}{5}{6}"
+            }
+        },
+        "28": {
+            "name": "The Pirate Queen",
+            "sections": {
+                "1": "Dinah Snapclaw, the vermling tavern-keeper at the Boiled Crab, has told you tales of a notorious pirate, Barty Half-Ear. She’s had you hunting down ancient coins - like the one she wears. If you find all of them, they’re supposed to lead to a huge treasure hoard.",
+                "2": "After bringing her one of the coins, she told you of the Pirate Queen’s Haul, a huge treasure she and Barty were seeking together before he betrayed her. You need four coins to find it; she has one, he has another, you just found a third, and the final one is still missing.",
+                "3": "She wants both revenge and the treasure, so gave you the location of Barty’s hideout. She’s pretty sure that’s where he’s stored his coin. Bring her two more coins, and you’ll all be rich, together.",
+                "4": "Barty’s hideout was at the end of an eel-infested subterranean river. His coin was, indeed, there - along with quite a bit of treasure.",
+                "5": "With Dinah’s coin, Barty’s, and the other two you found during your explorations, you had all the elements you needed.",
+                "6": "Dinah brought you to a cave not all too far from Frosthaven itself. She told you more about the Pirate Queen - a quatryl who’d apparently tried using automatons for her crew. The remaining living ones didn’t like this much, so they mutinied. They thought they had her trapped, but she just sealed herself and her robots away. The pirates marked down the location of her grave, and sealed that information in a cave, behind a lock that could only be opened by four specific coins. You figured out the proper orientation, and Dinah retrieved an ancient scroll from the cavern beyond. The Pirate Queen’s Haul was just a short boat trip away.",
+                "7": "You rowed the loot-laden dinghy back to the ship, and divided the treasure; Dinah even gave some to Captain Doghogger, who had become fond of a goblet etched with a dolphin. As you sailed back to Frosthaven, Dinah gleefully pictured Barty finding nothing in the end but cave rats gnawing at the crumbs she had left in the treasure chests."
+            },
+            "stages": {
+                "0": "{1}{2}{3}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}{6}",
+                "3": "{1}{2}{3}{4}{5}{6}{7}"
+            }
+        },
+        "78": {
+            "name": "The Lurker Problem",
+            "sections": {
+                "1": "A very strange and thirsty figure in a wet trenchcoat wanted to hire you for a job. He told you Lurkers had killed his family. He gave you directions to their location, said he’d meet you there, and then left abruptly. Totally normal. Not at all suspicious.",
+                "2": "You cleared out the Lurker-infested structure by the sea, whichever way you went about it, and returned to the town hall. The man in the trenchcoat never showed up to pay you, and Glint only grumbled about the floor the man had soaked and the varnishing it needed."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "82": {
+            "name": "Expedition North",
+            "sections": {
+                "1": "An unfamiliar aesther woman visited your dreams and asked you to find her friends somewhere in the Imperial Mountains, west of the Frozen Pass. They had been coming to see you, but have been caught in a massive snowstorm.",
+                "2": "You reached the edge of the unnatural storm and rescued the mercenaries trapped in it, warming them at a campfire in a cave on the way back through the pass. When you mentioned the aesther woman, they recognized her as Cassandra, a former member of their adventuring group. You brought them back to Frosthaven to recover."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "83": {
+            "name": "Rising Brine",
+            "sections": {
+                "1": "Glint, the inox record keeper at the Town Hall, handed out all the good assignments to other groups. He found one for you, finally, that reads “Cave that smells like fish.” A cartographer found a cave that smells like fish. It’s far away.",
+                "2": "With the piranha pigs defeated, you collected the rusty parts and paddled out against the rising tide, reaching the daylight and then Frosthaven exhausted. Glint examined your salvage, declared it all junk, and shoved it off his desk."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "84": {
+            "name": "Here There Be Oozes",
+            "sections": {
+                "1": "Glint, the inox record-keeper, gave you a bounty. There were three reports of oozes, and they have apparently eaten a herd of sheep. Glint doesn’t think there’s anything to it, but you know better.",
+                "2": "You destroyed the ooze, ending up covered head to toe in gunk, and collected a sample of the goo in a vial. You also noted the strange deer-like skeleton it left behind, then washed off in a creek on the way back to Frosthaven."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "85": {
+            "name": "Deadly Pastimes",
+            "sections": {
+                "1": "A woman came to Glint to get immediate assistance; her husband had told her if he hadn’t returned by the afternoon, she was supposed to find help. She handed you a map of “where he went spelunking.”",
+                "2": "Utterly exhausted, you finally emerged from the cave into daylight and found the husband sitting happily by a campfire, roasting a bird. He had decided the cave was too dangerous and gone exploring elsewhere. You almost killed him, but instead collapsed beside his fire and took a nap."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "86": {
+            "name": "The Lady in White",
+            "sections": {
+                "1": "A guard came straight to you to ask your help. He believes he’s cursed because his wife hasn’t delivered their child yet. Last month, he saw a ghostly woman with bleeding eyes in the forest around Frosthaven. None of the other guards saw this lady, but he’s offered to pay you to get the curse lifted.",
+                "2": "The Lady in White let out a final wail and dissipated into the cold mist. When you returned to Frosthaven, you heard that the guard’s wife had given birth to a healthy baby girl, and people nodded and smiled at you as you passed."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "89": {
+            "name": "A Contained Fire",
+            "sections": {
+                "1": "Three ragged Algox came to Frosthaven and asked for the town’s assistance. They told you their clan has been abused at the hands of a neighboring tribe. That tribe’s chief, Vanjal, has been overtaxing them to feed his own vanity.",
+                "2": "You defeated Vanjal, and his army scattered in terror. The neighboring Algox clans returned to the stronghold to reclaim their stolen supplies and thanked you profusely."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "92": {
+            "name": "Sinking Ship",
+            "sections": {
+                "1": "Captain Doghogger has heard there’s an abandoned ship full of supplies out on the sea. A fishing crew spotted it, and he’s looking for a team to relieve it of some supplies and/or treasure.",
+                "2": "You threw the last of the loot to Doghogger just as the deck tipped over, and watched the ship slip beneath the waves with trapped Lurkers circling the hull. You returned home with a new, very loud crewmember: the automaton HE-RO-IC-S."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "93": {
+            "name": "Midwinter Brawl",
+            "sections": {
+                "1": "Scabwit, a vermling, has told you his people are negotiating with an Algox tribe for some land to make their own. He’s looking for muscle to come “be scary for him” out in the Whitefire Woods, to help in these negotiations.",
+                "2": "You helped settle the brawl in the Whitefire Woods, and the side you had backed thanked you for your help.",
+                "3": "You stood with Scabwit and the Vermlings won the brawl. Scabwit expected more conflict in the future, but hoped his people would grow strong enough to fend for themselves, and offered you a small woodland friend as thanks.",
+                "4": "You stood with Yoglang and the Algox won the brawl. She hugged you all, named you friends of the Algox, and promised to teach you how to make her tribe’s best dish so you could stay warm in the snow."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{3}",
+                "3": "{1}{4}"
+            }
+        },
+        "107": {
+            "name": "My Private Empire",
+            "sections": {
+                "1": "In a chest, you found a wax-sealed letter - exquisitely written and decorated. The letter, signed by an “Emperor Ventillion,” invited you to join him for a Midwinter Ball. It included a map to his estate (in the middle of nowhere) and will surely be an actual party, with wine and dancing, and not anything more sinister.",
+                "2": "You made it through Emperor Ventillion’s strange party and out of his hidden estate, and he sent you off with a gift as thanks for attending.",
+                "3": "Worn out, you fled Emperor Ventillion’s party before every episode was overcome and scrambled back up to the courtyard. His voice lamented your tired feet, urged you to remember the name Ventillion, and offered a velvet sack embroidered with a “V” as thanks for attending.",
+                "4": "You overcame every episode of Emperor Ventillion’s ball. The shade of the Emperor vanished as the music turned to a wistful aria; he thanked you for a magnificent gala, offered you what was left of his wealth, and asked only that you tell others of Ventillion. With that, all life went out of the estate, and you left it behind."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{3}",
+                "3": "{1}{4}"
+            }
+        },
+        "108": {
+            "name": "Lustrous Pit",
+            "sections": {
+                "1": "In a chest, you found a painted stone tablet. The image depicts a strangely familiar landscape, and you felt you could find the location if you looked hard enough.",
+                "2": "You gathered the last of the slabs from the walls and returned to Frosthaven. Satha was unimpressed by the murals of demons, but you were sure they held a deeper cultural significance."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "109": {
+            "name": "Furious Factory",
+            "sections": {
+                "1": "You found a delicate piece of curious machinery in a chest. When you took it out, it animated and projected a map above it. You figured out how to manipulate this projected map, and found the location of what looks to be a factory of some sort.",
+                "2": "You shattered the central crystal and the metal construct crashed to the floor, leaving the whole facility as silent as a tomb. You stripped the place of as much metal as you could carry and headed back to Frosthaven."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "110": {
+            "name": "Guardian’s Temple",
+            "sections": {
+                "1": "You found a slab of shaped stone in a chest. It was shaped like a keystone, and you felt like you knew where it belonged. It mentally projected directions for you.",
+                "2": "The last rock column collapsed and the electricity left the room, but the whole cavern began to shake. You grabbed the scroll from the defenseless altar and raced out as everything crumbled behind you, bursting from the cave mouth in a cloud of rubble and dust."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "111": {
+            "name": "Ice Cave",
+            "sections": {
+                "1": "You found a silver mirror in a chest. Unlike most mirrors, this one didn’t reflect you - it showed an image of your group walking through the wilderness to a cave full of treasure.",
+                "2": "You exited the cave and came face to face with a duplicate of yourself emerging from another cavern. You focused the mirror’s dwindling power to convince reality that you were only one person, and became one again, then set off back to Frosthaven with the mirror in hand."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "112": {
+            "name": "Raised by Wolves",
+            "sections": {
+                "1": "Inside a treasure chest, deep within a terrifying dungeon full of dangerous monsters, you found an adorable wolf cub, just peacefully sleeping. And alive, somehow. Locked in a chest. You took it back to Frosthaven with you.",
+                "2": "You swept the cave to make sure no more demons were around, and the wolves howled in victory for their hero. You said goodbye to Wolfie and headed back to Frosthaven with a single tear in your eye."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "113": {
+            "name": "Lush Grotto",
+            "sections": {
+                "1": "While traveling, you found yourself enveloped in thick fog. When it cleared, you found yourself in a lush forest, where it wasn’t winter at all, full of forest animals and pollen. It felt like it was trying to keep you away from something. It’s hard to fool you, though, so you forced your way past the illusions and found a lush grotto. You decided to investigate (maybe right away, or maybe you decided you’d come back later).",
+                "2": "You killed the elemental demons and filled your packs with strange and wondrous botanical discoveries. You retraced your steps out of the grotto and hurried back through the stinging snow to Frosthaven so as not to wilt your findings."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "117": {
+            "name": "A Waiting Game",
+            "sections": {
+                "1": "After some time away from Frosthaven, your friendly vermling trapper returned. They settled down in the Whitefire Woods, but polar bears have been driving away all the smaller animals. Other local Vermlings were overhunting the bears, pushing them from their normal habitat. Your old friend asked you to help relocate the bears to a better location.",
+                "2": "You snared the bears and put the hunting party down, which the Trapper regretted but accepted as the cost of restoring the natural course of things. After tranquilizing the bears, you helped move them on sleds to their home in the barrens, and the Trapper mumbled a thank-you."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "118": {
+            "name": "Lurker Necromancy",
+            "sections": {
+                "1": "The Boneshaper returned and surprised you one day. They’ve been seeking energy from new planes of existence - and found a strange energy much closer to home, emanating from somewhere near Frosthaven.",
+                "2": "With the Lurkers and undead defeated, you helped the Boneshaper gather up the strange amulets that had been causing the trouble. The Boneshaper took them off your hands, thanked you, and blinked away to another plane."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "119": {
+            "name": "Radiant Dust",
+            "sections": {
+                "1": "Your old friend found, in their studies, a way to perhaps increase the power of their infusions. It seems to be related to strange plants growing in the Radiant Forest. They hauled you along for an adventure, searching for these materials.",
+                "2": "With the path finally clear, you reached a massive pine in the heart of the wood, from whose branches the radiant powder falls like sunlight. Your friend realized the powder is a kind of pollen and, absorbed in studying it, thanked you with a gift for your help in collecting it."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "122": {
+            "name": "The Eternal Crave",
+            "sections": {
+                "1": "In your travels, you found an elderly Quatryl tending some delicious-smelling peppers. She called these “firepeppers” - and told you a tale of a beast called the Hungry Maw, which lives beneath the Copperneck Mountains. Apparently, it eats entire villages, but can only be sated by a Firepepper Stew. She asked if you were up for a challenge.",
+                "2": "You made your way through the caverns beneath the Copperneck Mountains and dealt with the Hungry Maw, putting an end to the danger it posed to the north.",
+                "3": "You fought the Hungry Maw and wounded it mortally. Its eternal craving turned to despair as it groaned “So hungry...” one last time and died. Noore admitted she hadn’t thought that would work.",
+                "4": "You brewed the Firepepper Stew with Noore and carried the cauldron to the Hungry Maw, which devoured it with satisfaction and lay down to rest in peace. Noore assured you the beast would stay happy for another hundred years."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{3}",
+                "3": "{1}{4}"
+            }
+        },
+        "123": {
+            "name": "The Titan",
+            "sections": {
+                "1": "You met your old companion on the road, carving runes into the air. It said there was a “massive creature, so full of pain and suffering” coming close to their portal. The conduit worked some magics to bring that beast to them, so they could feast on it. You weren’t really down, but they didn’t give you much choice. When they finished creating a portal, an unbelievably titanic beast bore down upon you. The being turned out not to be the source of the pain, however - it was the world it had come through, and now it was in yours. Time to stop it.",
+                "2": "The titan’s power core burst in a violent blue explosion as you raced out through its skull. The titan toppled backward and crashed to the ground only a few strides from Frosthaven, soaking a child who had been fishing nearby."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "126": {
+            "name": "Joseph the Lion",
+            "sections": {
+                "1": "A merchant named Joseph greeted you and told you all of his assistants died, and all of his merchandise was just sitting in the icy wastes. He asked your help to retrieve it. A few weeks after you did, he opened up an “ice-cream” stand in Frosthaven; you decided to check it out.",
+                "2": "Joseph paid little attention to your many wounds and torn armor; he was just glad to have his hands back on the ice-cream. Before long he vanished from sight, babbling about his latest hare-brained scheme."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "127": {
+            "name": "Derelict Freighter",
+            "sections": {
+                "1": "A derelict ship came, apparently on its own, to Frosthaven’s harbor. It was totally unoccupied, but the last page of the Captain’s Log held only two words - “BURN IT.” The crew may have tried to do this before their disappearance, because the decks are covered in lamp oil. The manifest showed eight crates of unknown cargo, bound for White Oak - but you only found one, bolted to the deck and sealed with tar. A few weeks later, the rest of the crates arrived at Frosthaven - this time, on a ship crewed by ice wraiths.",
+                "2": "You hauled the last crate onto the dock, where a Valrath in an ashen cloak and a single bronze gauntlet was waiting. He thanked you for retrieving his cargo, had it loaded onto sleds, paid you, and advised you to burn the ship, the only way to stop it, before vanishing into the night without answering your questions."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "131": {
+            "name": "The Dancing Iceberg",
+            "sections": {
+                "1": "You found a young, dancing lurker, staring at the ocean. They filled your mind with visions of an icy peninsula. You may or may not have made contact - but you did find the location the lurker was projecting to you.",
+                "2": "You pushed the giant Conductor’s corpse off the iceberg, which took teamwork, and balanced the platform so it no longer toppled. The remaining Lurkers seemed to awaken from a stupor and scuttled back into the sea. You then found the seashell lodged in a crack in the ice and let the iceberg drift back to safer shores while its song filled the air."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        }
+    },
     "quest-jotl": {}
 }
