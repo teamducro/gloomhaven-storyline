@@ -147,6 +147,20 @@ describe('Achievements', () => {
         });
     });
 
+    it('It unlocks Unseen Plight when adding Feirgrin\'s Request', () => {
+        cy.visit('/tracker');
+        utilities.switchGame('cs');
+        cy.visit('/tracker/#/achievements');
+
+        cy.get('button').contains('add').click();
+        cy.get('input[name=achievement-to-add]').type('fei');
+        cy.get('li').contains('Feirgrin\'s Request').click();
+
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 'RM5').state).eq('incomplete');
+        });
+    });
+
     it('It can remove manual achievements', () => {
         cy.visit('/tracker/?groups=CR_GCRM&states=74_i');
         cy.visit('/tracker/#/achievements');

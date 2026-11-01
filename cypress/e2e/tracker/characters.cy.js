@@ -151,6 +151,29 @@ describe('Character', () => {
         cy.get('p').contains('Unlocked');
     });
 
+    it('It pads stored personal quest progress to the quest data length', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+        utilities.scrollTo('60%');
+        cy.get(`input[name="personal-quests"]`).type("510");
+        cy.get('li').contains('#510 Seeker of Xorn').click();
+        cy.get('#pq-0-0').click();
+
+        // Simulate progress stored before the quest gained checkboxes
+        cy.window().then((window) => {
+            const campaignData = JSON.parse(window.localStorage.getItem(window.app.campaignId));
+            const characterKey = Object.keys(campaignData).find(key => key.startsWith('character-'));
+            campaignData[characterKey].quest.progress[0] = [true];
+            window.localStorage.setItem(window.app.campaignId, JSON.stringify(campaignData));
+        });
+        cy.reload();
+
+        cy.get('#pq-0-0').should('be.checked');
+        cy.get('#pq-0-1').should('not.be.checked');
+        cy.get('#pq-0-2').should('not.be.checked');
+    });
+
     it('It can open solo scenario', () => {
         cy.visit('/tracker/#/characters');
 

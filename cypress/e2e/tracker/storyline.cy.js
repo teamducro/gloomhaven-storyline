@@ -221,6 +221,47 @@ describe('Storyline', () => {
         utilities.closeModel();
     });
 
+    it('It shows the FH summary stage for a scenario unlocked after its puzzle', () => {
+        cy.visit('/tracker');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/?states=61_c-62_r');
+
+        utilities.openScenario(62);
+        cy.get('#scenario-content').contains('Preceding events').click();
+        cy.get('#scenario-content').contains('Moonshard');
+        cy.get('#scenario-content').contains('Crain and Terra started working').should('not.exist');
+
+        cy.get('#scenario-content label').contains('Incomplete').click();
+        cy.get('#scenario-content').contains('Crain and Terra started working');
+
+        utilities.closeModel();
+    });
+
+    it('It requires the boat and six Coral Crown Shards for FH 60', () => {
+        // Boat built, scenarios 7, 14, 34, 42 and 53 completed (five shards), 41 unlocked
+        cy.visit('/tracker#/shared/1/local/N4RozgZgFgtADAIgFzAQJwIYDsAmB7AWwH0BLAFwFNiy0KMwBXW5EOAGnDJAGMBfDyLACMyUAAduQtumz5i5KkRp1GzJKwFc+A6DABMcEShm5CpStVr0mFFu04gS-cLoN7RJuecXLrajQ5OOrAGAMwemKbyFkpWqrbq9mBcQS4hcAAsEbJmCpYqNnaajs6C+nAArNlR3vl+CQHJJcHlAGzVXnmxBf5JKfwIeABuFGgANhgAnjC6AIIeWBgECQgAQngYZAjSYrRgFFhb6kKlrh25Mb7xRQ7aaTDhxpGdl3GFicUARgPDoxPTugA6h5dhR9ocWCcWlkUDwoAhWmwAOxsAAc2xAEiknguPjevWKdzK7SeOWieJ6DT6PFOsCR53JdWuH1utJg6NJNS6V3ejS0zgwAGFhQBlUQgDAAdxAUh4eAqHDGrDZQkeqGeuKZvOpqTKQhh6rJtW69RuTTuQtF7lhUplHG4eFlSrgAsFIrFNulsodTuVLT01sNXNelLN-Okv3GUxmsAAGiC9gcjjKVVVOS8KaaWeaVSSgxmtQTAmy9GqcYyTcy+TT-Qby8aeUWcy1QnWNRXG1TCa7RWqJV77Y7FX77qEy+2G-iu6zpNwlmIMCQAOZYGMeDBobhQEgjHCCqAbjDcShoMCiAafDZHVBGO0Ia13x53mF3tN3kl3+nHaQcu8ATkhaQhEQb8ECEW9sSEB9IKfSCX3YMC3wQoQP2Qr8NDA39kIAxIBjnMYDhwDcPElCgKAAa2QBD9mPEg8CwM9jDTABtUI9AAOlCABdICQOYoRUVCTi2D0IR2IyHj7z4qC-04yS9BYgShO46RQmkwS5OkDJ1IydihEk1ppNCJF2L0LjeDwg9MGPUYAFUsDGPBuHIxjUAAEQAMUAtZVm81YADlvLc4FQNWAB5byAHEAFE-IAJSKBBBQACUSkUQowgAVABJNLBUSgBZTLErcj0MOigAZNLfI+BB3TSgBpRL-LKhCRVsxLVli2qAEUCsSgAFVLatWYrarchLariyKSv62rkrGjCADUMoQ2Z5hGuaMNWJrasFGa9sWhCPN2jDkoGxLkoi2qKo62qCq83qNowuKtrai7apFI7pGyx6MIGgBNNLhqy56EIG-LPrcxKPL+hDkqWwruowtzvqSyaMJFMHpGS7Gkrx2ZAtw+0D2ASyKGc1yEBAjDbwQh8EKfBD4OkJDpFQ6R0IQrDpBw2maeQumgIZoCmaAlnEMSlCpa5oCebAvn6YF6RRMSgM1bF+8JYUtWOfvWX73lvRFdU5WEFCIXzZF83NdbRLQjZ829eM+35dCE2EG0xKMktjJrYyTWMngvC0DwMAwEipYKGyiwqaXeFjGAtXHaRa3gMd4CPfA1CBgAKzwMgxnPWdXIs2dQ-DyPlhjqgwGixZPgInBEpIBixBITAyDorAqI4EgcFQPRtYNi37YNjIDYqS2KmtipNYqCWKkdio9YqSf5YqD3DMS1pLdaa3Wk11oJdaR3Wj11oDdaeXWg9pEzaRS3U8SpFNaRCWkRTvWkQNpF5aRD2qIzaoktqia2glEqoglqiR2qI9aogNqieWqIPZ-jNn+S2f5rZ-k1n+CWf5HZ-j1n+A2f55Z-iznAM2wFLbATTnATWwEJbpylnAPWwEDbAXlpnKWSdargVoVBXhjD9S8IztLfhQhOECV4VnS+Utr4KKzvfGWtDn78NfjLZhn8ZbsJ-jLbhACpZAOMbQsBxjGFQOMRnOBxjOFIOMVnNBUsMEuLTjglxzCCEuPYSQlx3CKFqyoUEy2bggmawMNrSoQS9YGANgYI2cAPaiTNqJUJQjaqiQiaIzJQhHaiViVItWMjcnJIMGrVWmT1ZVIiUPCp+S9CxL0PEvQRtjYa1SaPTJbENYRLtt0-JoRYku26Ubd2asvaZJ9hM62Q8IlB28kPfJGRYkZCNhkZJFRUlT2TrMueydtZL2TrEteycjab11qk3eutZmH11sHaQBA8CYAIr3BAYhRguQ8HxAIcBJJGGYr8+SyBAX2D+apEFQKtKQrBZJFiUKEQwskl+UFkkOSoucO3bEtBuAkA+aXaQew8BMG4GCYuCAwCksWGgOiFUKAjCLkgaieAxg4BIKMRi1EGAEGWGgMKDAyBiDDteMCizvKwWhaBN82IPzYnQtiX82I+aQRppBCCwtvKqk1S+SC0qgKyqAvKuWmrlUq1VSrUJsz5nJ11mreJRsPZqXtpbHptUxz2wlg7e2zsR5uw9pMjC0zap+29oHCWGRHYrO9uPeWGzEpbPjdPWe89F7L1XuveNW8zbXNqvvHeR8T5IQGIwHlow4obGbonMVoEJWe28nqxFoEjUIEVbzTV5qwLqrAtBUW2rNUNokXeIpoESlDtNVJRZlqNYTJtZk2J9q1aOrNl0jCrrV2209Y7IZY9Xb239WbINgb-Zhu9pGvWE9vaxo9gm2qOzb0MwGGQAuGAxhuQoBAA4+xe4gAYGTaQkpW4nn5YK4VHgu09vNt5HVrNvIGoQM21tCBx18KHV2jJQ7a05KHQOuDw6h2IaEOO8poFKkYWqWR61mT8nzrVg6+2y6XXW3dW6zd3qd1ur9d7A9vtj3e3DWe6Nl7vbXrNnejCM940pvjWm+NGbb1Zp3nvA+Bad5nwvlfG+d8H5P2tpo2q78X5fxfr-f+gDgF0wGABw4ZaK1gerY+KD9bYPeQQ95ZDHbwKaog1qkd0HJYjtw820dkEiMdtI-TK1M6qO2syQuzJS7nX2yYxu+2W6fW7rdfu72PHQ18dPd7c9MbhN2DLvcEN6ZNSVm1N2Dglo3QGn7HaOUvoXQRhGFGAEsAABaCYwRJkhGyONFWOxTjDDWe4N78yVc7GN74LR9nDcnKGbM4YJTCjdGmUAtpvRDhAM6Nk29FvclGyt9AFAACODAO4UGbiqIwU2RvLb5Gdy713bstAyQ9pbWZqxElcCBL7x2nvUj+7ALpgOQw-ZB4N+79YgdQ+KE4XgQA/story/fh');
+
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 60).state).eq('required');
+        });
+
+        utilities.completeScenario(41);
+
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 60).state).eq('incomplete');
+        });
+    });
+
+    it('It links to the virtual board with the scenario query', () => {
+        cy.visit('/tracker');
+
+        utilities.openScenario(1);
+        cy.contains('a', 'Virtual Board').should('have.attr', 'href')
+            .and('match', /\?scenario=1&lockScenario=1/);
+
+        utilities.closeModel();
+    });
+
     it('It opens JotL', () => {
         cy.visit('/tracker');
 

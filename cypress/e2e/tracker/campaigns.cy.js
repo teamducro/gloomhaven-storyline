@@ -28,6 +28,20 @@ describe('Campaigns', () => {
         });
     });
 
+    it('It submits the campaign code from the url', () => {
+        utilities.startServer();
+        cy.intercept('POST', '**/login/story-code', {
+            statusCode: 422,
+            fixture: 'incorrect-code.json'
+        }).as('storyCode');
+
+        cy.visit('/tracker/?code=654321abc#/campaigns');
+
+        cy.wait('@storyCode').should((interception) => {
+            expect(interception.request.body.code).eq('654321');
+        });
+    });
+
     it('It shows a validation message on an incorrect email', () => {
         cy.visit('/tracker/#/campaigns');
 
