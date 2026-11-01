@@ -85,8 +85,6 @@
         "minimist": "^1.2.6",
         "panzoom": "^9.4.2",
         "pusher-js": "^6.0.3",
-        "query-string": "^6.14.1",
-        "replace-in-file": "^5.0.2",
         "scroll-js": "^3.5.0",
         "slugify": "^1.6.5",
         "store": "^2.0.12",
@@ -102,5 +100,17 @@
         "vue2-teleport": "^1.1.4",
         "vuedraggable": "^2.24.3",
         "webpack": "~5.105.4"
+    },
+    "overrides": {
+        "qs": "^6.17.1",
+        "sockjs": {
+            "uuid": "^11.1.1"
+        },
+        "node-notifier": {
+            "uuid": "^11.1.1"
+        },
+        "@vue/component-compiler-utils": {
+            "postcss": "$postcss"
+        }
     }
 }

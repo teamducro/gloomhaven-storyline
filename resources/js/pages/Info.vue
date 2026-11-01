@@ -149,7 +149,6 @@
 
 import Helpers from "../services/Helpers";
 
-const queryString = require('query-string');
 
 export default {
     props: {
@@ -164,7 +163,7 @@ export default {
         }
     },
     mounted() {
-        const scrollTo = Object.keys(queryString.parse(location.search)).find(Boolean);
+        const scrollTo = new URLSearchParams(location.search).keys().next().value;
         if (scrollTo) {
             this.scrollTo(scrollTo);
         } else if (this.contribute) {
