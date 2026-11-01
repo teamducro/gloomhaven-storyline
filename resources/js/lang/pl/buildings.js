@@ -626,7 +626,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Tracicie wspólnie 1 {LUMBER}",
-                "passive": "Each of the following is an upgrade that can be built in any order.",
+                "passive": "Each of the following upgrades (Boat, Sled, Climbing Gear) can be built in any order.",
                 "rewards": "+1 do dobrobytu"
             }
         ]

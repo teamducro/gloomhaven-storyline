@@ -47,6 +47,14 @@
                             </div>
                         </label>
 
+                        <label class="flex flex-col">
+                            {{ $t('Action') }}
+                            <select id="enhancement-half" v-model="half" class="bg-dark-gray2-75 p-2 rounded">
+                                <option value="top">{{ $t('Top action') }}</option>
+                                <option value="bottom">{{ $t('Bottom action') }}</option>
+                            </select>
+                        </label>
+
                         <label v-if="hasFrosthavenCards(character)" class="flex flex-col">
                             {{ $t('Ability property') }}
                             <select v-model="abilityProperty" class="bg-dark-gray2-75 p-2 rounded">
@@ -110,6 +118,7 @@ export default {
             sheet: null,
             enhancing: false,
             type: 'attack',
+            half: 'top',
             abilityProperty: 'normal',
             multiTarget: false,
             hexCount: 1,
@@ -141,7 +150,8 @@ export default {
             return this.sheet.enhancements[this.character.id]?.[this.ability.code] || [];
         },
         previousCount() {
-            return this.enhancements.length;
+            // The surcharge only counts enhancements on the same action (top or bottom half)
+            return this.enhancements.filter(e => (e.y < 50) === (this.half === 'top')).length;
         },
         cost() {
             return this.calculateEnhancementCost({
@@ -158,7 +168,7 @@ export default {
             return this.character.gold >= this.cost && this.enhancerUsable(this.sheet.game);
         },
         atEnhancedCardLimit() {
-            return this.previousCount === 0
+            return this.enhancements.length === 0
                 && this.enhancedCardCount(this.sheet, this.character.id) >= this.maxEnhancedCards(this.sheet);
         }
     },
@@ -169,6 +179,7 @@ export default {
             this.sheet = sheet;
             this.enhancing = false;
             this.type = 'attack';
+            this.half = 'top';
             this.abilityProperty = 'normal';
             this.multiTarget = false;
             this.hexCount = 1;
@@ -232,7 +243,7 @@ export default {
                 type: this.type,
                 cost,
                 x: 75,
-                y: 10,
+                y: this.half === 'top' ? 10 : 60,
             });
 
             if (deductGold) {
