@@ -78,7 +78,7 @@ export default {
             "name": "A Valrath's Best Friend",
             "sections": {
                 "1": "Jekserah has one last task for you. She requires a diamond of considerable size for a customer. There is a diamond mine in the southern mountains overrun by Vermlings, with some other more intelligent force behind them. If you can fight your way in and grab the biggest diamond you can find, Jekserah will give you a considerable reward. However, you have been also been warned by a guard that Jekserah may have more sinister machinations than she lets on. Something about overthrowing the military... but one diamond couldn't hurt, could it?",
-                "2": "Sinister machinations or not, you decided the phrase “considerable reward” was more pertinent. As expected, the diamond mine was infested by Vermling miners. They were lead by a Merciless Overseer who swiftly turned the miners against you with a few cracks of his whip. Once the overseer was dealt with and the diamond recovered, the remaining miners scattered. You headed back to Jekserah to claim your reward. Her bodyguards escorted you inside the manor where you found her somehow different—more harrowed and grim. “Wonderful.” She exchanged the diamond for a large purse full of coins. “This will serve beautifully as a focus for the incantations. I wonder if the cultists even knew what they had here. With this, I can summon an entire army of undead!” She turned to you with a strange glint in her eye. “So then! Are you ready to overthrow the military of Gloomhaven and put control of the city into the hands of the Merchant’s Guild? Or do you not have the stomach to effect real change?”",
+                "2": "Sinister machinations or not, you decided the phrase “considerable reward” was more pertinent. As expected, the diamond mine was infested by Vermling miners. They were lead by a Merciless Overseer who swiftly turned the miners against you with a few cracks of his whip. Once the overseer was dealt with and the diamond recovered, the remaining miners scattered. You headed back to Jekserah to claim your reward. Her bodyguards escorted you inside the manor where you found her somehow different, more harrowed and grim. “Wonderful.” She exchanged the diamond for a large purse full of coins. “This will serve beautifully as a focus for the incantations. I wonder if the cultists even knew what they had here. With this, I can summon an entire army of undead!” She turned to you with a strange glint in her eye. “So then! Are you ready to overthrow the military of Gloomhaven and put control of the city into the hands of the Merchant’s Guild? Or do you not have the stomach to effect real change?”",
                 "3": "You decided that “sinister machinations” outweigh “considerable reward”. You raided Jekserah's warehouse and uncovered her secret plans to invade the town with an army of the dead. In the process, she fled the city. It's safe to say the “considerable reward” is off the table and there's no more reason to visit the mine."
             },
             "stages": {
@@ -424,7 +424,7 @@ export default {
             "sections": {
                 "1": "Ever since that voice started talking to you, when you discovered a cave in the Copperneck Mountains, you want to get rid of it. Perhaps a scepter with dark energies will be of some help. ",
                 "2": "Weakness is the new strength today and you are going to use it to get rid of that awful voice by giving in and just doing what it says. You free the voice of its prison.",
-                "3": "You stand before the entrance of the mountain cave, scepter in hand. Once again, the Voice calls to you. “Your intentions are noble. You fear me and wish to keep me imprisoned. I understand, but what you are doing will only lead to disaster and ruin. “That scepter was not created to strengthen my prison. I created it! I used it to imprison one of my greatest foes—a being of death and hatred. I do not know what will happen when you bring that thing to my chamber, but I can guarantee you no good will come of it!” You block the Voice’s lies from your mind and venture into the cave. You make your way to the Echo Chamber, and, before the Voice can speak another word, you raise up the scepter and channel its power. A black fog oozes from it and envelops you. The Voice screams out once more, but there is no coherence in the sound—only pain. The fog begins to dissipate and, for a moment, you feel relief, until you see that you are not in the Echo Chamber anymore, but some dark and hostile realm instead. The Voice rings out again, but somehow it is different: “The power of the Voice is mine! You will be the first I destroy with it!” A strong note of dissonance rings out as you snap the last chord, and then there is silence."
+                "3": "You stand before the entrance of the mountain cave, scepter in hand. Once again, the Voice calls to you. “Your intentions are noble. You fear me and wish to keep me imprisoned. I understand, but what you are doing will only lead to disaster and ruin. “That scepter was not created to strengthen my prison. I created it! I used it to imprison one of my greatest foes: a being of death and hatred. I do not know what will happen when you bring that thing to my chamber, but I can guarantee you no good will come of it!” You block the Voice’s lies from your mind and venture into the cave. You make your way to the Echo Chamber, and, before the Voice can speak another word, you raise up the scepter and channel its power. A black fog oozes from it and envelops you. The Voice screams out once more, but there is no coherence in the sound, only pain. The fog begins to dissipate and, for a moment, you feel relief, until you see that you are not in the Echo Chamber anymore, but some dark and hostile realm instead. The Voice rings out again, but somehow it is different: “The power of the Voice is mine! You will be the first I destroy with it!” A strong note of dissonance rings out as you snap the last chord, and then there is silence."
             },
             "stages": {
                 "0": "{1}",
@@ -1646,5 +1646,165 @@ export default {
             }
         }
     },
-    "quest-jotl": {}
+    "quest-jotl": {
+        "1": {
+            "name": "The Missing Blacksmith",
+            "sections": {
+                "1": "People from Gloomhaven's poorer districts have been disappearing, and nobody seems to care. Sandy, the wife of a missing blacksmith, scraped together enough coin to hire you to find her husband. After two fruitless weeks chasing a bad tip along the Still River, you were ambushed by Vermlings on the road just outside the city walls.",
+                "2": "You have defeated the Vermling ambushers. Vermlings operating this close to the city is unusual, and you suspect they may have something to do with the disappearances. The ambush site was not their home, so there must be a nest nearby.",
+                "3": "You followed the Vermlings' tracks, and the drag marks of a body, to a nest burrowed into the city wall. Among their hoard of gold you found a note: a man named Roland has been paying the Vermlings to deliver fresh corpses. It is the best lead you have.",
+                "4": "Vermlings in the Sinking Market told you Roland's corpses were delivered to an abandoned ship at the Old Docks. Inside, Zealots in red robes were chanting over an altar heaped with remains. Among them you found the necklace the blacksmith never took off. You can at least bring Sandy some closure, but Roland was not among the dead. In the captain's cabin you found a map of the Boiler District with one building clearly marked."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{3}{4}"
+            }
+        },
+        "2": {
+            "name": "The Blood Tumors",
+            "sections": {
+                "1": "While searching for a missing blacksmith, you uncovered a cult of red-robed Zealots who buy fresh corpses from Vermlings for a man named Roland. On their ship at the Old Docks you found the blacksmith's necklace among the remains on their altar, and a map of the Boiler District with one building clearly marked.",
+                "2": "The marked building, an old slaughterhouse, had burned down, but its stone cellar was intact. Below, Zealots were performing a ritual that shook the earth and threatened to bury everyone alive. You stopped the ritual and fought off the cultists who came rushing out of the deeper tunnels. Whatever answers you seek lie further down.",
+                "3": "Deeper in the tunnels, the Zealots opened rifts and let chaos demons through to stop you. Behind the last door you found an enormous pulsing tumor of bloody flesh and destroyed it. A dying Zealot laughed that more of their experiments were growing in power and that the Blood God would soon devour the city. You took a piece of the tumor to bring to the university.",
+                "4": "At the university, Professor Haltrip took the tumor to his lab, where it overran the room, killed his assistants and turned the rats into monstrosities. After you cleaned up the mess, Haltrip gave you slimy stones that glow green near the tumor's organic matter. Searching the city with them, you found two more growths: one in abandoned houses in the Sinking Market and one in a warehouse at the Old Docks.",
+                "5": "You have destroyed the tumor in the Sinking Market. But as you left, the warehouse at the Old Docks went up in a massive column of fire. You were too late, and the explosion is probably only the beginning.",
+                "6": "You have destroyed the tumor in the warehouse at the Old Docks. But as you left, the houses in the Sinking Market went up in a massive column of fire. You were too late, and the explosion is probably only the beginning.",
+                "7": "In the rubble, the last tumor had grown a hard cocoon. As a Zealot laughed that Roland's plan had come to fruition, it burst open and a monstrous horror emerged. You have killed it, and the undead abominations it created collapsed with it. The blood creatures seem to be destroyed and the cult thwarted. Roland is still alive, but you told the City Guard everything and left the rest of the cult to them."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{3}{4}",
+                "4": "{1}{2}{3}{4}{5}",
+                "5": "{1}{2}{3}{4}{6}",
+                "6": "{1}{2}{3}{4}{5}{7}",
+                "7": "{1}{2}{3}{4}{6}{7}"
+            }
+        },
+        "3": {
+            "name": "Roland's Trail",
+            "sections": {
+                "1": "You have destroyed the blood tumors of the Zealots' cult and left their leader, Roland, to the City Guard. Back to paid work: a half-mad hermit on the Hook Coast offered gold to anyone who could fight through the pets and traps of his gauntlet.",
+                "2": "You fought through the hermit's gauntlet of oozes, explosives, golems, poison gas and even a chaos demon, but the old man was gone. In his place was a note from Roland: the gauntlet had supplied him with plenty of mercenary corpses, and the city was still doomed. He didn't even pay you. The captain of the City Guard has offered gold to search the sewers, where his guards rarely patrol, for what remains of the blood cult.",
+                "3": "You searched the sewers beneath the Sinking Market. Pulling a rusty lever opened a sluice gate, and the flood washed the remaining monsters toward the bay and cleared the way upstream. The Vermlings had also dug a tunnel in a side room, which may be worth investigating.",
+                "4": "You searched the sewers beneath the Traveler's District, which were suspiciously clean. Rune-covered pillars were maintaining an illusion. Once you smashed them, the illusion faded and revealed a hidden passage deeper into the tunnels. Along the way you found a ladder leading up into one of the wealthy estates.",
+                "5": "Deeper in the Sinking Market tunnels you found Zealots chanting over a basin of black slime, breeding blood creatures. You have shut down their ritual, but the cultists refused to give up Roland. A passage leads even deeper.",
+                "6": "Down the hidden passage under the Traveler's District you found Zealots watching blood creatures crawl out of snakes they used as hosts. You have killed them, but they refused to give up Roland. A passage leads even deeper."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{4}",
+                "4": "{1}{2}{3}{5}",
+                "5": "{1}{2}{4}{6}"
+            }
+        },
+        "4": {
+            "name": "The Blood God",
+            "sections": {
+                "1": "You have destroyed the blood tumors of the Zealots who worship the Blood God, but their leader Roland escaped and left a note claiming the city is still doomed. Hired by the captain of the City Guard, you followed the cult into the sewers, where the Zealots were breeding blood creatures. Their passages lead ever deeper.",
+                "2": "Deep in the sewers, Roland's voice taunted you. The incident in Haltrip's lab had shown the cult how fast their corruption could spread to new hosts, and they had already poured it into the city's water supply. You killed the cultist poisoning the cisterns, but the water was already contaminated. You took a sample of the black liquid to Professor Haltrip.",
+                "3": "Haltrip locked you in his lab and tested wave after wave of specimens infected with the poison on you. It worked: his assistants are making an agent to neutralize the poison across the city. Then a pillar of red light struck the Old Wall Gate from a cloudless sky. This is Roland's doing.",
+                "4": "At the Old Wall Gate, Roland, swollen to a colossal size by the Blood God's lightning, turned his Zealots into hulking monstrosities. You fought your way to the top of the wall. When Roland begged his god for more power, no answer came. His minions turned to ash, and he shrank back into the frail hermit of the Hook Coast before you finished him. The captain of the guard paid you a heavy purse, and you told Sandy her husband has been avenged. Back at the Sleeping Lion, the whole tavern chanted your name."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{3}{4}"
+            }
+        },
+        "5": {
+            "name": "The Merchant's Estate",
+            "sections": {
+                "1": "Beneath the Traveler's District, a passage hidden behind an illusion led you to a ladder up into a wealthy merchant's estate. Whether or not the owner is involved with the cult, it is a good excuse to have a look around and pocket a valuable or two.",
+                "2": "You snuck into a grand hall and filled your pockets from a chest, until the stone statues stepped off their pedestals and surrounded you. You escaped back into the sewer. You found no evidence against the owner, but you are a good deal richer."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "6": {
+            "name": "The Vermling Tunnel",
+            "sections": {
+                "1": "In the sewers beneath the Sinking Market you found a tunnel dug by Vermlings. A Vermling nest inside the city walls is trouble, especially if they are working with the blood cult or infected by its experiments.",
+                "2": "You have wiped out a nest of Vermlings covered in oozing sores. The deformed rats point to a link between the Vermlings and the blood cult, but you found no proof, only a ring that might be worth something."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "7": {
+            "name": "The Inox Captain",
+            "sections": {
+                "1": "At the Sleeping Lion, an Inox sea captain asked for your help. Goods had gone missing from her ship, and she tracked the thieves to an abandoned warehouse at the Old Docks.",
+                "2": "The warehouse was overrun by chaos demons. You have killed them and recovered every last crate of her goods, mostly apples. The captain, about to sail for Velcyll Harbor, paid you, though not generously."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "8": {
+            "name": "Trouble at the New Docks",
+            "sections": {
+                "1": "A Valrath merchant asked you to investigate the New Docks, where goods are moving or disappearing and people report eerie noises and visions of demons. He wants it stopped before it threatens the city's trade.",
+                "2": "In a cluster of warehouses at the New Docks, a malevolent aura clawed at your mind. You have found and killed the demons behind it, and your sanity returned. The Valrath merchant paid you for your trouble."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "9": {
+            "name": "The Red Order",
+            "sections": {
+                "1": "A messenger brought the Red Guard a note bearing a snake coiled around a sun. Exile from the Red Order in Jhinda usually means death, and the Red Guard fled to Gloomhaven, but fate has caught up with them. A meeting place was written on the back.",
+                "2": "The Red Guard's hunters did not come themselves. In a dark alley by the western wall they sent Vermlings and a golem built with venomous Red Desert snakes. You have defeated them and bought the Red Guard some time. In the golem's heart you found a steel ring bound with energy from Jhinda's forge."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "10": {
+            "name": "The Hatchet's Contest",
+            "sections": {
+                "1": "A poster on the Silent Bridge advertised a fighting competition in Gloomhaven Square. Only individual fighters may compete, so the Hatchet signed up while the rest of you cheer from the stands.",
+                "2": "Gloomhaven Square had been turned into a brutal arena where contestant after contestant was mauled by monsters. The Hatchet has defeated every last one. The crowd went wild and the organizers awarded the Hatchet a beautifully crafted weapon."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "11": {
+            "name": "Something Stirs in the Void",
+            "sections": {
+                "1": "During a night of gambling at the Sleeping Lion, a wave of dread came over you. The Voidwarden warned that something inside the Void is stirring, and something terrible is coming.",
+                "2": "At the edge of the Void a black storm was raging. The Voidwarden planted three wards and you held off wave after wave of demons until the storm died down. The Voidwarden stayed the night to make sure it was over, and returned in a new set of robes. You didn't ask."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "12": {
+            "name": "The Cursed Building",
+            "sections": {
+                "1": "In the New Market you ran into the Demolitionist's old boss. He has a job for you: demolishing a building in the Coin District, supposedly cursed by its former owner.",
+                "2": "Ignoring the lingering ghosts, you have torn the building down, and the haunting went with it. The Demolitionist reported to the foreman and used the pay to craft a new pair of boots."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        }
+    }
 }
