@@ -200,7 +200,7 @@
                                 <transition-expand>
                                     <div v-if="questExpand[index]">
                                         <i18n :path="quest.description" tag="div">
-                                            <template v-for="n in [1,2,3,4,5,6,7,8,9]" v-slot:[n]>
+                                            <template v-for="n in 20" v-slot:[n]>
                                                 <p class="mb-4">
                                                     {{ $t(quest.translationKey() + '.sections.' + n) }}
                                                 </p>

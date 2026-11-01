@@ -18,6 +18,7 @@ export default class QuestValidator {
      *
      * scenario states
      * [scenario_id]==c | 1==c | 2!=c
+     * [scenario_id]=="[state]" | 62=="incomplete" (e.g. unlocked after a puzzle requirement)
      *
      * scenario choices
      * [scenario_id]'==[chosen_prompt_value] | 1==1 | 1!=2

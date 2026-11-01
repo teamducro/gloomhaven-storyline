@@ -202,6 +202,25 @@ describe('Storyline', () => {
         utilities.isNodeIncomplete(97);
     });
 
+    it('It shows FH summaries', () => {
+        cy.visit('/tracker');
+
+        utilities.switchGame('fh');
+        utilities.openScenario(1);
+
+        cy.get('#scenario-content').contains('Preceding events');
+        cy.get('#scenario-content label').contains('Complete').click();
+        cy.contains('How many City Guards').parents('.mdc-dialog__surface').within(() => {
+            cy.get('input[type="radio"]').first().check({force: true});
+            cy.contains('button', /choose/i).click();
+        });
+        cy.get('#scenario-content').contains('Summary').click();
+        cy.get('#scenario-content').contains('White Oak');
+        cy.get('#scenario-content').contains('Mayor Satha');
+
+        utilities.closeModel();
+    });
+
     it('It opens JotL', () => {
         cy.visit('/tracker');
 
