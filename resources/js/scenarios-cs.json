@@ -2136,8 +2136,12 @@
             "required_by": [
                 {
                     "complete": [
-                        "GWB",
-                        "PWS"
+                        "PCSGB"
+                    ]
+                },
+                {
+                    "complete": [
+                        "PCSFR"
                     ]
                 }
             ],

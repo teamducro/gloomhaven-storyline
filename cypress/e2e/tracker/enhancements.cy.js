@@ -85,6 +85,31 @@ describe('Enhancements', () => {
         cy.get('.enhancement-sticker').should('not.exist');
     });
 
+    it('It only adds the repeat cost for enhancements on the same action (top or bottom half)', () => {
+        enableAndOpenAbility('available-avalanche');
+        abilityModalButton('Enhance').click();
+        cy.get('#enhancement-type').select('poison');
+        abilityModalButton('Add').click();
+
+        // The top action already has an enhancement, the bottom action doesn't
+        abilityModalButton('Enhance').click();
+        cy.get('#enhancement-type').select('poison');
+        cy.get('.ability-modal').contains('p', 'Cost: 150 Gold');
+        cy.get('#enhancement-half').select('bottom');
+        cy.get('.ability-modal').contains('p', 'Cost: 75 Gold');
+        abilityModalButton('Add').click();
+
+        // The new sticker is placed on the bottom half of the card
+        cy.get('.ability-modal .enhancement-sticker').eq(1).should('have.attr', 'style').and('contain', 'top: 60%');
+
+        // Each action now has one enhancement: +75 on either half
+        abilityModalButton('Enhance').click();
+        cy.get('#enhancement-type').select('poison');
+        cy.get('.ability-modal').contains('p', 'Cost: 150 Gold');
+        cy.get('#enhancement-half').select('bottom');
+        cy.get('.ability-modal').contains('p', 'Cost: 150 Gold');
+    });
+
     it('It renders a generic "+1" sticker for stat-boost enhancements, keeping distinct icons for keyword ones', () => {
         enableAndOpenAbility('available-avalanche');
         abilityModalButton('Enhance').click();

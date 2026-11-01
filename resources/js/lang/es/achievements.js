@@ -242,6 +242,12 @@ export default {
     "gh-GST": {
         "name": "Lazos cortados"
     },
+    "gh-PA": {
+        "name": "Accomplices"
+    },
+    "gh-PS": {
+        "name": "Saboteurs"
+    },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
     },

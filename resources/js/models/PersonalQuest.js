@@ -38,7 +38,11 @@ class PersonalQuest {
 
     applyProgress(progress = []) {
         for (const key in progress) {
-            this.progress[key].value = _.clone(progress[key]);
+            const current = this.progress[key].value;
+            // Data length wins: quests may have gained checkboxes since progress was stored
+            this.progress[key].value = Array.isArray(current) && Array.isArray(progress[key])
+                ? current.map((_value, index) => progress[key][index] || 0)
+                : _.clone(progress[key]);
         }
     }
 

@@ -200,7 +200,7 @@
                                 <transition-expand>
                                     <div v-if="questExpand[index]">
                                         <i18n :path="quest.description" tag="div">
-                                            <template v-for="n in [1,2,3,4,5,6,7,8,9]" v-slot:[n]>
+                                            <template v-for="n in 20" v-slot:[n]>
                                                 <p class="mb-4">
                                                     {{ $t(quest.translationKey() + '.sections.' + n) }}
                                                 </p>
@@ -317,7 +317,6 @@ import Cards from "../presenters/cards/Cards";
 import StorySyncer from "../../services/StorySyncer";
 
 const md5 = require('js-md5');
-const queryString = require('query-string');
 
 export default {
     inject: ['appData'],
@@ -549,7 +548,7 @@ export default {
                 query.seed = parseInt(md5(current.campaignId + this.scenario.id).substr(0, 7), 16);
             }
 
-            this.virtualBoardUrl = process.env.MIX_VIRTUAL_BOARD_URL + '?' + queryString.stringify(query);
+            this.virtualBoardUrl = process.env.MIX_VIRTUAL_BOARD_URL + '?' + new URLSearchParams(query);
         },
         makeSureScenariosAreLoaded() {
             return new Promise((resolve) => {
