@@ -30,6 +30,7 @@
 import SheetCalculations from "../../services/SheetCalculations";
 
 export default {
+    emits: ['change', 'update:value'],
     mixins: [SheetCalculations],
     inject: ['appData'],
     props: {
@@ -37,7 +38,7 @@ export default {
             type: String
         },
         value: {
-            type: Number|null,
+            type: [Number, null],
             default: null
         },
         characters: {

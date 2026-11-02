@@ -32,6 +32,7 @@
 import {MDCTextField} from "@material/textfield/component";
 
 export default {
+    emits: ['change', 'update:value'],
     inject: ['appData'],
     props: {
         id: {

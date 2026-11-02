@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Gloomhaven Storyline is a Vue 2 single-page application for tracking Gloomhaven game progress. Supports multiple games (Gloomhaven, Frosthaven, Jaws of the Lion, Forgotten Circles, Crimson Scales). Operates offline-first with optional cloud sync.
+Gloomhaven Storyline is a Vue 3 (Options API) single-page application for tracking Gloomhaven game progress. Supports multiple games (Gloomhaven, Frosthaven, Jaws of the Lion, Forgotten Circles, Crimson Scales). Operates offline-first with optional cloud sync.
 
 ## Development Commands
 
@@ -19,7 +19,7 @@ valet link  # or use alternative local server
 ### Build
 ```bash
 npm run dev        # dev build
-npm run watch      # watch mode
+npm run watch      # watch mode (vite build --watch into public/, no dev server)
 npm run prod       # production build
 npm run prod-fh    # production build for Frosthaven
 ```
@@ -90,18 +90,23 @@ resources/
 ```
 
 ### Build System
-Laravel Mix (webpack wrapper) configured in `webpack.mix.js`:
-- Vue 2 compilation with i18n loader for SFC translation blocks
-- Tailwind CSS + Material Design SCSS
-- SVG as HTML loader for inline SVGs
-- MD5 versioning for cache busting
-- Service worker cache version injection
+Vite configured in `vite.config.mjs`, run twice (`BUNDLE=app|website`) so each bundle gets one css file:
+- Vue 3 full build (`vue/dist/vue.esm-bundler.js`): root templates live in-DOM in `index.html`
+- Env vars keep the `MIX_` prefix (`envPrefix`), read via `import.meta.env.MIX_*`
+- Tailwind CSS + Material Design SCSS, imported from the entry files
+- Inline SVGs via `import.meta.glob('...svg', {query: '?raw'})` in `InlineSvg.vue`
+- Production entry files are content-hashed (`js/app-<hash>.js`, written into the HTML): lazy chunks import the entry
+  by file name, so a `?v=` query would load the app twice. CSS keeps `?v=`.
+- Post-build plugin: copies `resources/public-{game}`, img, svg, fonts to `public/`, entry/`?v=` versioning,
+  service worker cache version + precache file list (`'build-files'` placeholder)
 - Multi-game builds: `MIX_MAIN_GAME=gh|fh` selects base game
-- Copies game-specific assets: `resources/public-{game}` → `public/`
 
 Two bundles:
 - `app.js` - main tracker app (loads at `/tracker`)
 - `website.js` - marketing site (loads at `/`)
+
+vue-i18n 11 runs in legacy mode via `services/createLegacyI18n.js`, with a lenient message compiler:
+messages contain custom `{TOKEN}` placeholders and literal `|` that the vue-i18n 9+ syntax rejects.
 
 ### Backend Integration
 Optional Laravel backend for cloud sync:
@@ -135,7 +140,6 @@ Game selection via `MIX_MAIN_GAME` env var (gh/fh/jotl/fc/cs):
 ### Adding a New Component
 1. Create `.vue` file in `resources/js/components/`
 2. Component auto-registers globally with filename as tag name
-3. Use i18n block in SFC for translations if needed
 
 ### Modifying Scenario Data
 1. Edit JSON in `resources/js/scenarios-{game}.json`
@@ -145,7 +149,6 @@ Game selection via `MIX_MAIN_GAME` env var (gh/fh/jotl/fc/cs):
 ### Adding Translations
 1. Add keys to `resources/js/lang/{locale}.json`
 2. Run `npm run lang` to sync missing keys across locales
-3. Or use i18n block in Vue SFC for component-specific translations
 
 ### Debugging State
 - Open browser console: `window.app` for global state

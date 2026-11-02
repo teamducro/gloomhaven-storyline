@@ -23,6 +23,7 @@ import ScenarioRepository from "../../../repositories/ScenarioRepository";
 import CharacterRepository from "../../../repositories/CharacterRepository";
 
 export default {
+    emits: ['changed'],
     props: {
         sheet: {
             type: [Sheet, CampaignSheet],

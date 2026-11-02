@@ -4,13 +4,11 @@
     "description": "Gloomhaven storyline",
     "main": "index.js",
     "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "hot": "mix watch --hot",
-        "prod": "npm run production;",
-        "production": "mix --production",
-        "prod-fh": "cross-env MIX_MAIN_GAME=fh npm run production;",
+        "dev": "cross-env NODE_ENV=development vite build --mode development && cross-env NODE_ENV=development BUNDLE=website vite build --mode development",
+        "watch": "cross-env NODE_ENV=development vite build --watch --mode development & cross-env NODE_ENV=development BUNDLE=website vite build --watch --mode development",
+        "prod": "npm run production",
+        "production": "vite build && cross-env BUNDLE=website vite build",
+        "prod-fh": "cross-env MIX_MAIN_GAME=fh npm run production",
         "test": "cypress open",
         "test:ci": "cypress run ${npm_config_spec:+--spec \"cypress/e2e/**/*$npm_config_spec*.cy.js\"}",
         "lang": "commands/add-missing-translation-keys.js",
@@ -37,24 +35,20 @@
     ],
     "homepage": "https://gloomhaven-storyline.com",
     "devDependencies": {
-        "@kazupon/vue-i18n-loader": "^0.5.0",
+        "@vitejs/plugin-vue": "^6.0.10",
         "autoprefixer": "^10.4.2",
         "cross-env": "^7.0.3",
         "cypress": "^15.21.1",
         "http-server": "^14.1.1",
-        "laravel-mix": "^6.0.43",
-        "laravel-mix-purgecss": "^6.0.0",
         "lodash": "^4.17.21",
         "postcss": "^8.5.27",
-        "resolve-url-loader": "^5.0.0",
-        "sass": "^1.49.9",
-        "sass-loader": "^8.0.2",
+        "sass": "^1.107.1",
         "tailwindcss": "^2.2.19",
-        "vue": "^2.6.14",
-        "vue-loader": "^15.9.8",
-        "vue-template-compiler": "^2.6.14"
+        "vite": "^8.3.5",
+        "vue": "^3.5.44"
     },
     "dependencies": {
+        "@intlify/core-base": "^11.4.17",
         "@material/button": "^4.0.0",
         "@material/checkbox": "^4.0.0",
         "@material/dialog": "^4.0.0",
@@ -81,7 +75,6 @@
         "laravel-echo": "^1.11.3",
         "loadjs": "^4.2.0",
         "lz-string": "^1.4.4",
-        "md5-file": "^4.0.0",
         "minimist": "^1.2.6",
         "panzoom": "^9.4.2",
         "pusher-js": "^6.0.3",
@@ -91,15 +84,9 @@
         "svg-pan-zoom": "github:ariutta/svg-pan-zoom",
         "tippy.js": "^6.3.7",
         "uuid": "^14.0.0",
-        "vue-analytics": "^5.22.1",
-        "vue-clipboard2": "^0.3.3",
-        "vue-i18n": "^8.27.0",
-        "vue-router": "^3.5.3",
-        "vue-scrollto": "^2.20.0",
-        "vue-social-sharing": "^3.0.9",
-        "vue2-teleport": "^1.1.4",
-        "vuedraggable": "^2.24.3",
-        "webpack": "~5.105.4"
+        "vue-i18n": "^11.4.17",
+        "vue-router": "^4.6.4",
+        "vuedraggable": "^4.1.0"
     },
     "overrides": {
         "qs": "^6.17.1",
@@ -111,6 +98,9 @@
         },
         "@vue/component-compiler-utils": {
             "postcss": "$postcss"
+        },
+        "purgecss": {
+            "glob": "^14.0.3"
         }
     }
 }

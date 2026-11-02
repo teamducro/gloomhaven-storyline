@@ -48,7 +48,7 @@
         mounted() {
             this.emailField = new MDCTextField(this.$refs['email']);
         },
-        destroyed() {
+        unmounted() {
             this.emailField?.destroy();
         },
         methods: {

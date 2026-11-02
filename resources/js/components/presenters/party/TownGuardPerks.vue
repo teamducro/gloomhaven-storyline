@@ -15,20 +15,21 @@
         <table class="my-4">
             <tr v-for="(perkDescription, perkIndex) in sheet.perkDescriptions">
                 <td :key="'perk-'+perkIndex" class="">
-                    <div v-for="(perk, index) in perks[perkIndex]"
-                         v-if="index < perkDescription.count"
-                         class="flex items-center mr-2">
-                        <checkbox
-                              :key="index" group="perks"
-                              :id="'perk-'+perkIndex+'-'+index"
-                              :checked="perks[perkIndex][index]"
-                              @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
-                        <label class="border border-white rounded-sm px-1 mx-1 flex items-center"
-                            :for="'perk-'+perkIndex+'-'+index">
-                            <inline-svg class="w-3 mr-1" src="icons/book"/>
-                            <span>{{ perkDescription.sections[index] }}</span>
-                        </label>
-                    </div>
+                    <template v-for="(perk, index) in perks[perkIndex]">
+                        <div v-if="index < perkDescription.count"
+                             class="flex items-center mr-2">
+                            <checkbox
+                                  :key="index" group="perks"
+                                  :id="'perk-'+perkIndex+'-'+index"
+                                  :checked="perks[perkIndex][index]"
+                                  @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
+                            <label class="border border-white rounded-sm px-1 mx-1 flex items-center"
+                                :for="'perk-'+perkIndex+'-'+index">
+                                <inline-svg class="w-3 mr-1" src="icons/book"/>
+                                <span>{{ perkDescription.sections[index] }}</span>
+                            </label>
+                        </div>
+                    </template>
                 </td>
                 <td class="ml-2 align-top flex items-start">
                     <add-links-and-icons :text="$t(perkDescription.desc)"/>
@@ -47,6 +48,7 @@
 import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
+    emits: ['change', 'update:checks', 'update:perks'],
     props: {
         perks: Object,
         checks: Object,

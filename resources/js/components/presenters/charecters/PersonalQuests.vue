@@ -88,7 +88,7 @@
         <checkbox-with-label id="hide-personal-quests"
                              class="my-2"
                              :label="$t('Hide personal quests from others')"
-                             :checked.sync="sheet.hidePersonalQuests"
+                             v-model:checked="sheet.hidePersonalQuests"
                              @change="store"/>
 
     </div>
@@ -102,6 +102,7 @@ import Helpers from "../../../services/Helpers";
 import StorySyncer from "../../../services/StorySyncer";
 
 export default {
+    emits: ['change', 'update:quest'],
     inject: ['appData'],
     props: {
         quest: Object,

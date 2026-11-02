@@ -1,6 +1,6 @@
 <template>
     <div>
-        <modal ref="modal" :title="$t(config.title)">
+        <modal ref="modal" :title="$t(config.title)" @closing="event => $emit('closing', event.detail.action || 'chosen')">
             <template v-slot:content>
                 <div class="flex flex-col mb-4">
                     {{ $t(config.text) }}
@@ -37,6 +37,7 @@ import ChoiceService from "../../services/ChoiceService";
 import ScenarioRepository from "../../repositories/ScenarioRepository";
 
 export default {
+    emits: ['closing'],
     props: {
         config: {
             type: PromptConfig,
@@ -57,10 +58,6 @@ export default {
                 this.togglePrompt(this.config.show);
             });
         }
-
-        this.$refs['modal'].$on('closing', (event) => {
-            this.$emit('closing', event.detail.action || "chosen");
-        });
     },
     watch: {
         config: function (newVal, oldVal) {

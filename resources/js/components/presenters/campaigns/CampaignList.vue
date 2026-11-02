@@ -116,7 +116,7 @@ export default {
     mounted() {
         this.$bus.$on('campaigns-changed', this.applyData);
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('campaigns-changed', this.applyData);
     },
     computed: {

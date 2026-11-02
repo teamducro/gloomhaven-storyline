@@ -17,6 +17,7 @@
 import Checkbox from "./Checkbox";
 
 export default {
+    emits: ['change', 'update:checked'],
     components: {Checkbox},
     props: {
         id: {

@@ -1,15 +1,17 @@
 <template>
     <div>
         <modal ref="modal" :title="title" :full-screen="true">
-            <div slot="content" class="w-full h-full overflow-y-scroll outline-none">
-                <div id="pages" class="grid grid-cols-1 md:grid-cols-2 gap-0">
-                    <webp v-for="page in pages"
-                          :src="pageSrc(page)"
-                          :key="'page' + page"
-                          :alt="'Page #' + pageId(page)"
-                          class="w-full"/>
+            <template #content>
+                <div class="w-full h-full overflow-y-scroll outline-none">
+                    <div id="pages" class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                        <webp v-for="page in pages"
+                              :src="pageSrc(page)"
+                              :key="'page' + page"
+                              :alt="'Page #' + pageId(page)"
+                              class="w-full"/>
+                    </div>
                 </div>
-            </div>
+            </template>
         </modal>
     </div>
 </template>
@@ -36,7 +38,7 @@ export default {
             return this.pages.length > 1;
         },
         title() {
-            return this.$tc('Page', this.pages.length) + ' #' + this.pages.map(p => this.pageId(p)).join(', ');
+            return this.$t('Page', this.pages.length) + ' #' + this.pages.map(p => this.pageId(p)).join(', ');
         }
     },
     methods: {

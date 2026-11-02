@@ -78,7 +78,7 @@ export default {
         this.$bus.$on('campaigns-changed', this.setStory);
         this.setStory();
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('campaigns-changed', this.setStory);
     },
     methods: {

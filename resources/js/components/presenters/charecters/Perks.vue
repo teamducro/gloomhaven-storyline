@@ -5,12 +5,12 @@
             <div class="flex" v-for="(perkDescription, perkIndex) in character.perkDescriptions">
                 <div :key="'perk-'+perkIndex"
                      :class="{'checkbox-groups': perkDescription.linked}">
-                    <checkbox v-for="(perk, index) in perks[perkIndex]"
-                              v-if="index < perkDescription.count"
-                          :key="index" group="perks"
-                          :id="'perk-'+perkIndex+'-'+index"
-                          :checked="perks[perkIndex][index]"
-                          @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
+                    <template v-for="(perk, index) in perks[perkIndex]" :key="index">
+                        <checkbox v-if="index < perkDescription.count" group="perks"
+                              :id="'perk-'+perkIndex+'-'+index"
+                              :checked="perks[perkIndex][index]"
+                              @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
+                    </template>
                 </div>
                 <p class="ml-2 mt-1 mb-1">
                     <add-links-and-icons :text="$t(perkDescription.desc)"/>
@@ -54,6 +54,7 @@
 import Character from "../../../models/Character";
 
 export default {
+    emits: ['change', 'update:checks', 'update:masteries', 'update:perks'],
     props: {
         character: Character,
         perks: Object,
@@ -106,16 +107,16 @@ export default {
     padding: 12px;
     .mdc-checkbox {
         padding: 0;
-        ::v-deep .mdc-checkbox__background, ::v-deep .mdc-checkbox__native-control {
+        :deep(.mdc-checkbox__background), :deep(.mdc-checkbox__native-control) {
             top: 0;
             left: 0;
             width: 20px;
             height: 20px;
         }
-        &:not(:first-child) ::v-deep .mdc-checkbox__background {
+        &:not(:first-child) :deep(.mdc-checkbox__background) {
             border-left-style: dotted;
         }
-        &:not(:last-child) ::v-deep .mdc-checkbox__background {
+        &:not(:last-child) :deep(.mdc-checkbox__background) {
             border-right-style: dotted;
         }
     }

@@ -29,6 +29,7 @@ import Ability from "../../../models/Ability";
 import Checkbox from "../../elements/Checkbox";
 
 export default {
+    emits: ['click', 'selected'],
     components: {Checkbox},
     props: {
         group: String,

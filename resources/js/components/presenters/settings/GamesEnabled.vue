@@ -14,7 +14,7 @@
             <li v-for="code in games">
                 <checkbox-with-label :id="code+'-enabled'"
                                      :label="$t(code)"
-                                     :checked.sync="enabled[code]"
+                                     v-model:checked="enabled[code]"
                                      :disabled="disabled[code]"
                                      :auto-disable="false"
                                      @change="store"/>
@@ -28,7 +28,7 @@
 import GameData from "../../../services/GameData";
 import store from "store/dist/store.modern";
 
-const md5 = require('js-md5');
+import md5 from 'js-md5';
 
 export default {
     data() {
@@ -46,7 +46,7 @@ export default {
     mounted() {
         this.$bus.$on('campaigns-changed', this.checkDisabled);
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('campaigns-changed', this.checkDisabled);
     },
     methods: {
@@ -91,10 +91,10 @@ export default {
         checkDisabled() {
             const enabled = collect(this.enabled).filter(v => v);
             if (enabled.count() === 1) {
-                Vue.set(this.disabled, enabled.keys().first(), true);
+                this.disabled[enabled.keys().first()] = true;
             } else {
                 Object.keys(this.disabled)
-                    .forEach((code) => Vue.set(this.disabled, code, false));
+                    .forEach((code) => this.disabled[code] = false);
             }
             // The current game is always disabled
             this.disabled[app.game] = true;

@@ -1,8 +1,7 @@
-import Vue from "vue";
+import componentMethods from "./componentMethods";
 import FontSelected from "../../components/elements/FontSwitch.vue";
 
 export default function getFont() {
-    const fontSelectedClass = Vue.extend(FontSelected);
-    const fontSelectedComponent = new fontSelectedClass;
+    const fontSelectedComponent = componentMethods(FontSelected);
     return fontSelectedComponent.getFont();
 }

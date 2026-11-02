@@ -26,7 +26,7 @@
                 ref="prosperity"
                 :sheet="sheet"
                 :loading="loading"
-                :prosperity.sync="prosperity"
+                v-model:prosperity="prosperity"
                 @change="store"/>
 
             <div class="lg:flex">
@@ -34,12 +34,12 @@
                     id="city-events"
                     :title="$t('City Event Decks')"
                     :label="$t('Add city events')"
-                    :items.sync="sheet.city"
+                    v-model:items="sheet.city"
                     @change="store"
                     @view="(item) => openCard(item, true)"
                     ref="city-events"
                 >
-                    <template slot="after-field" slot-scope="{checkedItems}">
+                    <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, true)" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
@@ -51,12 +51,12 @@
                     id="road-events"
                     :title="$t('Road Event Decks')"
                     :label="$t('Add road events')"
-                    :items.sync="sheet.road"
+                    v-model:items="sheet.road"
                     @change="store"
                     @view="(item) => openCard(item, false)"
                     ref="road-events"
                 >
-                    <template slot="after-field" slot-scope="{checkedItems}">
+                    <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, false)" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
@@ -68,14 +68,14 @@
 
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Scenario level') }}</h2>
-                <scenario-level :value.sync="sheet.scenarioLevel" id="scenario-level"
+                <scenario-level v-model:value="sheet.scenarioLevel" id="scenario-level"
                                 @change="store" :characters="sheet.characters"
                 ></scenario-level>
             </div>
 
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
-                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
+                <notes v-model:value="sheet.notes" id="notes" :label="$t('Notes')"
                        @change="store" :is-local-campaign="isLocalCampaign"
                 ></notes>
             </div>
@@ -208,7 +208,7 @@ export default {
             return parseInt(this.completedCount / 5)
         }
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('campaigns-changed', this.render);
         this.$bus.$off('remove-card', this.removeCard);
     },

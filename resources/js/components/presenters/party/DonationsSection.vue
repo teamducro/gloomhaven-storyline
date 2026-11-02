@@ -5,9 +5,9 @@
                 <h2>{{ $t('Sanctuary of the Great Oak') }}</h2>
             </slot>
             <rollback :loading="loading" ref="rollback"
-                      :value.sync="sheet.donations"/>
+                      v-model:value="sheet.donations"/>
         </div>
-        <number-field :value.sync="sheet.donations" :min="min" :step="step" :id="'donations'"
+        <number-field v-model:value="sheet.donations" :min="min" :step="step" :id="'donations'"
                       @change="$emit('change')"></number-field>
         <p v-if="threshold && sheet.donations <= threshold" class="mt-2 text-sm">
             <slot name="threshold">
@@ -31,6 +31,7 @@ import ScenarioRepository from "../../../repositories/ScenarioRepository";
 import SheetCalculations from "../../../services/SheetCalculations";
 
 export default {
+    emits: ['change'],
     mixins: [SheetCalculations],
     props: {
         sheet: {

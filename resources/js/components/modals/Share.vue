@@ -32,7 +32,7 @@
         },
         methods: {
             open() {
-                const path = this.$router.currentRoute.path.split('/')[1];
+                const path = this.$route.path.split('/')[1];
                 const game = this.appData.game;
                 this.url = this.shareState.link('local', path, game);
                 this.$refs['modal'].open();

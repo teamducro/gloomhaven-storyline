@@ -53,7 +53,7 @@ export default {
     mounted() {
         this.$bus.$on('open-share-campaign-code-modal', this.open);
     },
-    destroyed() {
+    unmounted() {
         this.clearTimer();
     },
     methods: {
@@ -105,7 +105,7 @@ export default {
             }
         },
         setUrl() {
-            const url = process.env.MIX_APP_URL;
+            const url = import.meta.env.MIX_APP_URL;
             const query = new URLSearchParams({
                 code: this.code.code,
                 to_page: location.hash.replace('#/', ''),

@@ -2,57 +2,59 @@
     <div>
         <modal ref="modal" :title="card ? ($t(card.translatedType) + ' #' + card.id) : ''" :max-width="'348px'"
                :overflowHidden="animating">
-            <div v-if="card" slot="content" class="w-full h-full flex flex-col outline-none">
-                <div class="relative w-full" style="max-width: 300px;">
-                    <flip-card :flipped="!!choice">
-                        <template v-slot:front>
-                            <webp :src="card.images[0]" :alt="$t(card.translatedType) + ' #' + card.id"
-                                  class="w-full rounded-lg sm:rounded-xl"/>
-                        </template>
-                        <template v-slot:back>
-                            <webp :src="card.images[1]" :alt="$t(card.translatedType) + ' #' + card.id"
-                                  class="w-full rounded-lg sm:rounded-xl"/>
-                        </template>
-                    </flip-card>
+            <template #content>
+                <div v-if="card" class="w-full h-full flex flex-col outline-none">
+                    <div class="relative w-full" style="max-width: 300px;">
+                        <flip-card :flipped="!!choice">
+                            <template v-slot:front>
+                                <webp :src="card.images[0]" :alt="$t(card.translatedType) + ' #' + card.id"
+                                      class="w-full rounded-lg sm:rounded-xl"/>
+                            </template>
+                            <template v-slot:back>
+                                <webp :src="card.images[1]" :alt="$t(card.translatedType) + ' #' + card.id"
+                                      class="w-full rounded-lg sm:rounded-xl"/>
+                            </template>
+                        </flip-card>
 
-                    <!-- push buttons under the flip card wit the same aspect ratio -->
-                    <webp :src="card.images[0]" class="invisible"></webp>
+                        <!-- push buttons under the flip card wit the same aspect ratio -->
+                        <webp :src="card.images[0]" class="invisible"></webp>
 
-                    <transition name="fade">
-                        <div v-if="blur"
-                             class="blur rounded-lg absolute h-1/2 w-full top-0 left-0"
-                             :class="{'top-1/2': choice === 'A'}">
-                        </div>
-                    </transition>
-                </div>
-                <div v-if="!choice" class="mt-4 flex justify-between">
-                    <button @click="chose('A')"
-                            class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                        <span class="mdc-button__label">A</span>
-                    </button>
-                    <button @click="chose('B')"
-                            class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                        <span class="mdc-button__label">B</span>
-                    </button>
-                    <button v-if="!viaDraw && !appData.read_only" @click="remove"
-                            class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                        <img width="26" :src="baseUrl+'/img/icons/remove-card.png'" :alt="'Remove #' + card.id"/>
-                    </button>
-                </div>
-                <div v-if="choice" class="mt-4 flex justify-between">
-                    <button @click="blur = !blur"
-                            class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                        <span class="mdc-button__label">
-                            {{ $t('Toggle') + ' ' + (choice === 'A' ? 'B' : 'A') }}
-                        </span>
-                    </button>
+                        <transition name="fade">
+                            <div v-if="blur"
+                                 class="blur rounded-lg absolute h-1/2 w-full top-0 left-0"
+                                 :class="{'top-1/2': choice === 'A'}">
+                            </div>
+                        </transition>
+                    </div>
+                    <div v-if="!choice" class="mt-4 flex justify-between">
+                        <button @click="chose('A')"
+                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__label">A</span>
+                        </button>
+                        <button @click="chose('B')"
+                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__label">B</span>
+                        </button>
+                        <button v-if="!viaDraw && !appData.read_only" @click="remove"
+                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <img width="26" :src="baseUrl+'/img/icons/remove-card.png'" :alt="'Remove #' + card.id"/>
+                        </button>
+                    </div>
+                    <div v-if="choice" class="mt-4 flex justify-between">
+                        <button @click="blur = !blur"
+                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__label">
+                                {{ $t('Toggle') + ' ' + (choice === 'A' ? 'B' : 'A') }}
+                            </span>
+                        </button>
 
-                    <button v-if="!appData.read_only" @click="remove"
-                            class="mdc-button origin-left transform scale-90 mdc-button--raised">
-                        <img width="26" :src="baseUrl+'/img/icons/remove-card.png'" :alt="'Remove #' + card.id"/>
-                    </button>
+                        <button v-if="!appData.read_only" @click="remove"
+                                class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <img width="26" :src="baseUrl+'/img/icons/remove-card.png'" :alt="'Remove #' + card.id"/>
+                        </button>
+                    </div>
                 </div>
-            </div>
+            </template>
         </modal>
     </div>
 </template>

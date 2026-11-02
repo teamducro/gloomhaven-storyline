@@ -5,7 +5,7 @@
 export default {
     props: {
         src: String,
-        classes: Array | String,
+        classes: [Array, String],
         width: Number,
         height: Number,
         id: String,
@@ -25,13 +25,15 @@ export default {
     }
 };
 
+const svgs = import.meta.glob('../../../svg/**/*.svg', {query: '?raw', import: 'default', eager: true});
+
 class Svg {
     constructor(src) {
         let div = document.createElement('div');
         if (!src.endsWith('.svg')) {
             src += '.svg';
         }
-        div.innerHTML = require('../../../svg/' + src);
+        div.innerHTML = svgs['../../../svg/' + src];
 
         let fragment = document.createDocumentFragment();
         fragment.appendChild(div);

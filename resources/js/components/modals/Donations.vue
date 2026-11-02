@@ -77,7 +77,7 @@ export default {
         },
         shouldOpen() {
             // Only show the Donations modal in production and hasn't purchased a license
-            if (process.env.NODE_ENV !== 'production' || this.loggedIn) {
+            if (import.meta.env.MODE !== 'production' || this.loggedIn) {
                 return false;
             }
 

@@ -36,6 +36,7 @@ import Slugify from "../../services/Slugify";
 import Helpers from "../../services/Helpers";
 
 export default {
+    emits: ['change'],
     inject: ['appData'],
     mixins: [Slugify],
     props: {
@@ -76,7 +77,8 @@ export default {
             handler(list) {
                 this.filter();
             },
-            immediate: true
+            immediate: true,
+            deep: true
         }
     },
     methods: {

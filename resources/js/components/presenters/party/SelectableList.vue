@@ -52,6 +52,7 @@ import Slugify from "../../../services/Slugify";
 import Helpers from "../../../services/Helpers";
 
 export default {
+    emits: ['change', 'update:items', 'view'],
     inject: ['appData'],
     mixins: [Slugify],
     props: {
@@ -100,7 +101,7 @@ export default {
             if (this.isDisabled(item)) {
                 return;
             }
-            this.$set(this.items, item, select);
+            this.items[item] = select;
             this.$refs['rollback'].set(this.items);
             this.rerender();
             this.$emit('update:items', this.items);
@@ -148,7 +149,7 @@ export default {
                 await Helpers.sleep(800);
                 this.checkedItems.forEach((id) => {
                     if (currentRemovedItems.includes(id) && !this.items[id]) {
-                        this.$delete(this.checkedItems, this.checkedItems.indexOf(id));
+                        this.checkedItems.includes(id) && this.checkedItems.splice(this.checkedItems.indexOf(id), 1);
                     }
                 });
                 this.addedItems = this.addedItems.filter((item) => !currentAddedItems.includes(item));

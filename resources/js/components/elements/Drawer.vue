@@ -187,7 +187,7 @@ import StoryRepository from "../../repositories/StoryRepository";
 import GameData from "../../services/GameData";
 import {Game} from "../../models/Game";
 
-const md5 = require('js-md5');
+import md5 from 'js-md5';
 
 export default {
     computed: {
@@ -227,7 +227,7 @@ export default {
 
             this.drawer.open = !this.drawer.open;
             if (this.drawer.open) {
-                this.currentRoute = this.$router.currentRoute.path;
+                this.currentRoute = this.$route.path;
                 this.stopToggle = false;
 
                 // load campaign options

@@ -58,7 +58,7 @@ export default {
 
         this.setCampaignName();
     },
-    destroyed() {
+    unmounted() {
         this.removeZoom();
         c('#storyline-container').off('click', '.scenario', this.scenarioClicked);
         this.$bus.$off('scenarios-updated', this.render);

@@ -88,6 +88,7 @@ import Helpers from "../../services/Helpers";
 import CheckoutRepository from "../../apiRepositories/CheckoutRepository";
 import GameData from "../../services/GameData";
 import StoryRepository from "../../repositories/StoryRepository";
+import ApiStoryRepository from "../../apiRepositories/StoryRepository";
 
 export default {
     props: {
@@ -129,7 +130,8 @@ export default {
             this.selectedStoryId = null
 
             if (!this.storyId) {
-                this.stories = (app.stories.items || []).filter(s => !s.is_shared && s.expires_at)
+                // Read from storage: the website has no app.stories.
+                this.stories = (new ApiStoryRepository).getStories().filter(s => !s.is_shared && s.expires_at).all()
                 if (this.stories.length > 0) {
                     this.$refs['choose-modal'].open()
                     return

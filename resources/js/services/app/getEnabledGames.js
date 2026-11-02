@@ -1,8 +1,7 @@
-import Vue from "vue";
+import componentMethods from "./componentMethods";
 import GamesEnabled from "../../components/presenters/settings/GamesEnabled";
 
 export default function getEnabledGames() {
-    const gamesEnabledClass = Vue.extend(GamesEnabled);
-    const gamesEnabledComponent = new gamesEnabledClass;
+    const gamesEnabledComponent = componentMethods(GamesEnabled);
     return gamesEnabledComponent.getEnabled();
 }

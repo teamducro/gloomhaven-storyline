@@ -24,12 +24,12 @@
         </div>
         <checkbox-with-label id="font-apply-headers"
                              :label="$t('Apply font to headers')"
-                             :checked.sync="settings.headers"
+                             v-model:checked="settings.headers"
                              :auto-disable="false"
                              @change="changeFont"/>
         <checkbox-with-label id="font-apply-storyline"
                              :label="$t('Apply font to storyline')"
-                             :checked.sync="settings.storyline"
+                             v-model:checked="settings.storyline"
                              :auto-disable="false"
                              @change="changeFont"/>
     </div>
@@ -66,7 +66,7 @@ export default {
         this.select = new MDCSelect(this.$refs['font-switch']);
         this.select.listen('MDCSelect:change', this.changeFont);
     },
-    destroyed() {
+    unmounted() {
         this.select?.destroy()
     },
     methods: {
@@ -116,7 +116,7 @@ export default {
             return this.fonts.hasOwnProperty(font);
         },
         rerender() {
-            const stylesheet = document.styleSheets[1];
+            const stylesheet = [...document.styleSheets].find(sheet => sheet.href?.includes('/css/app.css'));
             const titleFont = 'Pirata One';
 
             const cssSelectors = ['html, body', '.font-title', '.font-default', 'div[class*="mdc-"]', 'h1, h2, h3', '#storyline text'];

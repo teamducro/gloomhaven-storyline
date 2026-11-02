@@ -572,11 +572,12 @@ describe('Enhancements', () => {
         abilityModalButton('Enhance').click();
         expectSync(() => abilityModalButton('Add').click());
 
-        // Dragging needs real pointer capture, so fire the sticker's drag and drop events directly.
-        expectSync(() => cy.get('.ability-modal .enhancement-sticker').then(($sticker) => {
-            const sticker = $sticker[0].__vue__;
-            sticker.$emit('drag', sticker.id, 20, 30);
-            sticker.$emit('reposition', sticker.id);
-        }));
+        // Synthetic pointers can't be captured, so stub the capture and drag with pointer events.
+        expectSync(() => cy.get('.ability-modal .enhancement-sticker')
+            .then(($sticker) => {
+                $sticker[0].setPointerCapture = () => {};
+            })
+            .trigger('pointerdown', {pointerId: 1})
+            .trigger('pointerup', {pointerId: 1, clientX: 20, clientY: 30}));
     });
 });

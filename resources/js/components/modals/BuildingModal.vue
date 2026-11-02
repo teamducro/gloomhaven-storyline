@@ -2,17 +2,19 @@
     <div>
         <modal ref="modal" :title="this.title" :max-width="hasSideBar ? '' : '348px'" @closed="close"
                class="building-modal">
-            <div v-if="building" slot="content">
-                <div class="w-full h-full flex flex-col md:flex-row outline-none">
-                    <div class="relative w-full" style="max-width: 300px;">
-                        <webp :src="building.card()" :alt="this.title"
-                              class="w-full rounded-lg sm:rounded-xl"/>
-                    </div>
-                    <div v-if="hasSideBar" class="md:ml-4 mb-4">
-                        <component :is="sidebar"></component>
+            <template #content>
+                <div v-if="building">
+                    <div class="w-full h-full flex flex-col md:flex-row outline-none">
+                        <div class="relative w-full" style="max-width: 300px;">
+                            <webp :src="building.card()" :alt="this.title"
+                                  class="w-full rounded-lg sm:rounded-xl"/>
+                        </div>
+                        <div v-if="hasSideBar" class="md:ml-4 mb-4">
+                            <component :is="sidebar"></component>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </template>
         </modal>
     </div>
 </template>

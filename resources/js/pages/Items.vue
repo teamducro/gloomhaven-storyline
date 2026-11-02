@@ -44,31 +44,35 @@
                             <checkbox-with-label id="cross-game-items-enabled-checkbox"
                                              class="my-2"
                                              :label="$t('Enable items from other games')"
-                                             :checked.sync="sheet.crossGameItemsEnabled"
+                                             v-model:checked="sheet.crossGameItemsEnabled"
                                              @change="refreshItems();store()"/>
 
                             <template v-if="sheet.crossGameItemsEnabled">
                                 <ul v-if="currentGame !== 'fh'">
-                                    <li v-for="code in Object.keys(sheet.crossGameItems)" v-if="code !== currentGame">
-                                        <checkbox-with-label :id="code+'-items'"
-                                                            :label="$t(code)"
-                                                            :checked.sync="sheet.crossGameItems[code]"
-                                                            @change="refreshItems();store()"/>
-                                    </li>
+                                    <template v-for="code in Object.keys(sheet.crossGameItems)">
+                                        <li v-if="code !== currentGame">
+                                            <checkbox-with-label :id="code+'-items'"
+                                                                :label="$t(code)"
+                                                                v-model:checked="sheet.crossGameItems[code]"
+                                                                @change="refreshItems();store()"/>
+                                        </li>
+                                    </template>
                                 </ul>
                                 <template v-else>
-                                    <template v-for="gameId in Object.keys(sheet.crossGameItems)" v-if="Object.keys(sheet.crossGameItems[gameId]).length !== 0">
-                                        <h2 class="ml-2">{{ $t(gameId) + ' ' + $t('Items') }}</h2>
-                                        <ul class="flex flex-row flex-wrap">
-                                            <li v-for="code in Object.keys(sheet.crossGameItems[gameId])"
-                                                class="flex items-center">
-                                                <checkbox group="items"
-                                                          :checked.sync="sheet.crossGameItems[gameId][code]"
-                                                          :id="gameId+code"
-                                                          @change="refreshItems();store()"/>
-                                                <span class="w-8 font-title">{{ code }}</span>
-                                            </li>
-                                        </ul>
+                                    <template v-for="gameId in Object.keys(sheet.crossGameItems)">
+                                        <template v-if="Object.keys(sheet.crossGameItems[gameId]).length !== 0">
+                                            <h2 class="ml-2">{{ $t(gameId) + ' ' + $t('Items') }}</h2>
+                                            <ul class="flex flex-row flex-wrap">
+                                                <li v-for="code in Object.keys(sheet.crossGameItems[gameId])"
+                                                    class="flex items-center">
+                                                    <checkbox group="items"
+                                                              v-model:checked="sheet.crossGameItems[gameId][code]"
+                                                              :id="gameId+code"
+                                                              @change="refreshItems();store()"/>
+                                                    <span class="w-8 font-title">{{ code }}</span>
+                                                </li>
+                                            </ul>
+                                        </template>
                                     </template>
                                 </template>
                             </template>
@@ -121,38 +125,44 @@
                         :translatable="['name', 'desc']"
                         :noResults="$t('No items available')"
             >
-                <template slot="image" slot-scope="{value, row}">
+                <template #image="{value, row}">
                     <div class="overflow-hidden h-full -m-1 md:-m-3 top-0 left-0 cursor-pointer">
                         <webp :src="value" width="80" class="-mt-2 top-0 absolute max-w-none"
                               :alt="$t(row.name)" :animate="true"/>
                     </div>
                     <div class="w-16 md:w-12 h-2"></div>
                 </template>
-                <span slot="number" slot-scope="{value, row}">
-                    {{ value }}<br>
-                    <span class="lg:hidden">
-                        <webp :src="row.slot" class="inline-block mr-2" width="20"/>
-                    </span>
-                </span>
-                <span slot="name" class="xs:whitespace-nowrap" slot-scope="{value, row}">
-                    {{ $t(value) }}<br>
-                    <span class="lg:hidden">
-                        <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
-                        <span class="inline-block mr-2">
-                            {{ row.count - itemAvailability.uses(row.id) }}/{{ row.count }}
+                <template #number="{value, row}">
+                    <span>
+                        {{ value }}<br>
+                        <span class="lg:hidden">
+                            <webp :src="row.slot" class="inline-block mr-2" width="20"/>
                         </span>
-                        <add-links-and-icons v-if="row.cost && isNaN(row.cost)" :text="getResourceCost(row.cost).replaceAll('<br>', ' ')" class="resources inline-block md:hidden"/>
-                        <span v-else class="inline-block md:hidden">{{ isNaN(row.cost) ? '-' : (row.cost + costModifier) }}</span>
                     </span>
-                </span>
-                <span slot="cost" slot-scope="{value}">
-                    <add-links-and-icons v-if="value && isNaN(value)" :text="getResourceCost(value)" class="resources"/>
-                    <template v-else>{{ isNaN(value) ? '-' : (value + costModifier) }}</template>
-                </span>
-                <template slot="availability" slot-scope="{value, row}">
+                </template>
+                <template #name="{value, row}">
+                    <span class="xs:whitespace-nowrap">
+                        {{ $t(value) }}<br>
+                        <span class="lg:hidden">
+                            <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
+                            <span class="inline-block mr-2">
+                                {{ row.count - itemAvailability.uses(row.id) }}/{{ row.count }}
+                            </span>
+                            <add-links-and-icons v-if="row.cost && isNaN(row.cost)" :text="getResourceCost(row.cost).replaceAll('<br>', ' ')" class="resources inline-block md:hidden"/>
+                            <span v-else class="inline-block md:hidden">{{ isNaN(row.cost) ? '-' : (row.cost + costModifier) }}</span>
+                        </span>
+                    </span>
+                </template>
+                <template #cost="{value}">
+                    <span>
+                        <add-links-and-icons v-if="value && isNaN(value)" :text="getResourceCost(value)" class="resources"/>
+                        <template v-else>{{ isNaN(value) ? '-' : (value + costModifier) }}</template>
+                    </span>
+                </template>
+                <template #availability="{value, row}">
                     {{ row.count - itemAvailability.uses(row.id) }} / {{ row.count }}
                 </template>
-                <template slot="desc" slot-scope="{value, row}">
+                <template #desc="{value, row}">
                     <p v-if="row.backDesc">{{ $t('Front') }}:</p>
                     <add-links-and-icons :text="$t(value)"/>
                     <p v-if="row.backDesc">{{ $t('Back') }}:</p>
@@ -214,7 +224,7 @@ export default {
 
         this.$bus.$on('campaigns-changed', this.render);
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('campaigns-changed', this.render);
     },
     computed: {
@@ -314,7 +324,7 @@ export default {
         changeItem(id, isChecked) {
             const key = id.replace('item-', '');
             const item = isNaN(key) ? key : parseInt(key);
-            Vue.set(this.sheet.itemDesigns, item, isChecked);
+            this.sheet.itemDesigns[item] = isChecked;
             this.refreshItems();
             this.store();
         },
@@ -327,20 +337,20 @@ export default {
             this.storySyncer.store();
         },
         applySearch() {
-            Vue.delete(this.search, 'number');
-            Vue.delete(this.search, 'name,desc');
+            delete this.search['number'];
+            delete this.search['name,desc'];
 
             if (this.query) {
-                Vue.set(this.search, isNaN(this.query) ? 'name,desc' : 'number', this.query);
+                this.search[isNaN(this.query) ? 'name,desc' : 'number'] = this.query;
             }
         },
         applyFilter(filter) {
             if (this.selectedFilter === filter) {
                 this.selectedFilter = null;
-                Vue.delete(this.search, 'slot');
+                delete this.search['slot'];
             } else {
                 this.selectedFilter = filter;
-                Vue.set(this.search, 'slot', filter);
+                this.search['slot'] = filter;
             }
         },
         async openItemModel(item) {

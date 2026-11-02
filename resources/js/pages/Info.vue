@@ -169,7 +169,7 @@ export default {
     },
     data() {
         return {
-            mainGame: process.env.MIX_MAIN_GAME,
+            mainGame: import.meta.env.MIX_MAIN_GAME,
         }
     },
     mounted() {

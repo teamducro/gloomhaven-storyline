@@ -33,6 +33,7 @@
 import {MDCDialog} from '@material/dialog';
 
 export default {
+    emits: ['closed', 'closing', 'opened', 'opening'],
     props: {
         title: {
             type: String

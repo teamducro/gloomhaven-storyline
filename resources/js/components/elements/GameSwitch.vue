@@ -61,7 +61,7 @@ export default {
         this.select = new MDCSelect(this.$refs['game-switch'])
         this.select.listen('MDCSelect:change', this.selected)
     },
-    destroyed() {
+    unmounted() {
         this.select?.destroy()
 
         this.$bus.$off('campaigns-changed', this.setCurrent)

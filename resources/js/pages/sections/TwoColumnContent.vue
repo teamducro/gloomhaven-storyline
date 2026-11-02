@@ -22,7 +22,7 @@ export default {
     },
     data() {
         return {
-            appUrl: process.env.MIX_APP_URL,
+            appUrl: import.meta.env.MIX_APP_URL,
         }
     },
     mounted() {

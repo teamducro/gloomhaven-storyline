@@ -54,6 +54,7 @@ import SheetCalculations from "../../services/SheetCalculations";
 import SheetRepository from "../../repositories/SheetRepository";
 
 export default {
+    emits: ['change'],
     inject: ['appData'],
     mixins: [SheetCalculations],
     props: {

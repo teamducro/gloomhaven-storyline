@@ -63,10 +63,10 @@ export default {
                 return !this.achievementRepository
                     .findMany(condition.hidden_when)
                     .contains((achievement) => achievement.awarded);
-            }).map((condition) => {
-                condition.requirements = this.requiredAchievements(condition);
-                return condition;
-            }).all();
+            }).map((condition) => ({
+                ...condition,
+                requirements: this.requiredAchievements(condition)
+            })).all();
         }
     },
     methods: {
@@ -131,15 +131,6 @@ export default {
                 id: id
             });
         },
-    },
-    filters: {
-        capitalize: function (value) {
-            if (!value) {
-                return "";
-            }
-            value = value.toString();
-            return value.charAt(0).toLocaleUpperCase() + value.slice(1);
-        }
     }
 
 }

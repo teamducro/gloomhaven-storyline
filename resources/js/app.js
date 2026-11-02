@@ -1,13 +1,11 @@
+import './services/app/globals';
+import components from './services/app/components';
 import ScenarioRepository from "./repositories/ScenarioRepository";
 import ScenarioValidator from "./validators/ScenarioValidator";
-import SocialSharing from 'vue-social-sharing';
-import VueClipboard from 'vue-clipboard2';
 import ShareState from "./services/ShareState";
 import QuestRepository from "./repositories/QuestRepository";
 import AchievementRepository from "./repositories/AchievementRepository";
-import VueRouter from 'vue-router';
-import VueI18n from 'vue-i18n';
-import VueAnalytics from 'vue-analytics';
+import {createRouter, createWebHashHistory} from 'vue-router';
 import i18nEn from "./lang/en/en";
 import Helpers from './services/Helpers';
 import store from "store/dist/store.modern";
@@ -15,7 +13,6 @@ import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
 import {loadStripe} from '@stripe/stripe-js/pure';
 import EchoService from "./services/app/EchoService";
-import VueScrollTo from "vue-scrollto";
 import StorySyncer from "./services/StorySyncer";
 import OfflineChecker from "./services/app/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
@@ -30,11 +27,8 @@ import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
 import checkOrientation from "./services/app/checkOrientation";
 import polyfills from "./services/app/polyfills";
-import dayjs from "dayjs";
-import localizedFormat from 'dayjs/plugin/localizedFormat';
-import relativeTime from 'dayjs/plugin/relativeTime';
 import TreasureValidator from "./validators/TreasureValidator";
-import Vue from 'vue';
+import {createApp} from 'vue';
 import setInitialLanguage from "./services/app/setInitialLanguage";
 import {gsap} from "gsap";
 import {Flip} from "gsap/Flip.js";
@@ -44,73 +38,31 @@ import BaseUrl from "./mixins/BaseUrl";
 import {Game} from "./models/Game";
 import enableGame from "./services/app/enableGame";
 import registerServiceWorker from "./services/app/RegisterServiceWorker";
-
-window._ = require('lodash');
-window.c = require('cash-dom');
-window.Vue = Vue;
-window.collect = require('collect.js');
-window.axios = require('axios').default.create({
-    baseURL: process.env.MIX_API_URL,
-    withCredentials: true,
-    withXSRFToken: true
-});
-
-dayjs.extend(localizedFormat);
-dayjs.extend(relativeTime);
-
-Vue.use(SocialSharing);
-VueClipboard.config.autoSetContainer = true;
-Vue.use(VueClipboard);
-Vue.use(VueScrollTo);
+import routes from './routes';
+import bus from './services/EventBus';
+import createLegacyI18n from './services/createLegacyI18n';
+import registerGlobals from './services/app/registerGlobals';
+import '../sass/theme.scss';
+import '../sass/app.scss';
 
 gsap.registerPlugin(Flip);
 
-// Vue components
-const components = require.context('./components', true, /\.vue$/i);
-components.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], components(key).default));
+const router = createRouter({history: createWebHashHistory(), routes});
 
-// Router
-const routes = require('./routes').default;
-const router = new VueRouter({routes});
-Vue.use(VueRouter);
-
-// Analytics
-if (Helpers.inProduction() && process.env.MIX_GA_ID) {
-    Vue.use(VueAnalytics, {
-        id: process.env.MIX_GA_ID,
-        router
-    });
-}
-
-if (Helpers.inProduction() && process.env.MIX_SENTRY_DSN) {
-    Sentry.init({
-        Vue: window.Vue,
-        dsn: process.env.MIX_SENTRY_DSN,
-        integrations: [new Integrations.BrowserTracing()],
-        tracesSampleRate: 0,
-        logErrors: false
-    });
-}
-
-// Multi Language
-Vue.use(VueI18n);
-window.i18n = new VueI18n({
-    locale: 'en',
-    fallbackLocale: 'en',
-    messages: {
-        en: i18nEn
-    },
-    silentTranslationWarn: true
+// Router 4 ignores URL changes until its first navigation is done, then overwrites them; follow one made while booting.
+const bootHash = location.hash;
+const removeBootGuard = router.beforeResolve(() => {
+    removeBootGuard();
+    if (location.hash !== bootHash) {
+        return location.hash.slice(1) || '/';
+    }
 });
 
-// event bus
-Vue.prototype.$bus = new Vue;
+const i18n = createLegacyI18n({en: i18nEn});
+window.i18n = i18n.global;
 
-window.app = new Vue({
+const vueApp = createApp({
     mixins: [BaseUrl],
-    i18n,
-    router,
-    el: '#app',
     provide() {
         const appData = {}
 
@@ -142,7 +94,7 @@ window.app = new Vue({
     data() {
         return {
             game: null,
-            mainGame: process.env.MIX_MAIN_GAME || Game.gh,
+            mainGame: import.meta.env.MIX_MAIN_GAME || Game.gh,
             story: null,
             enabledGames: {},
             scenarios: null,
@@ -189,7 +141,7 @@ window.app = new Vue({
         this.$bus.$on('campaign-selected', this.switchCampaign);
         this.$bus.$on('load-campaign-data', this.loadCampaignData);
 
-        Vue.prototype.$stripe = await loadStripe(process.env.MIX_STRIPE_KEY);
+        vueApp.config.globalProperties.$stripe = await loadStripe(import.meta.env.MIX_STRIPE_KEY);
 
         this.$bus.$emit('open-donations');
 
@@ -331,3 +283,25 @@ window.app = new Vue({
         }
     }
 });
+
+// Vue components
+Object.entries(components)
+    .forEach(([path, component]) => vueApp.component(path.split('/').pop().split('.')[0], component.default));
+
+// Before Sentry, which wraps the errorHandler set here.
+registerGlobals(vueApp);
+
+if (Helpers.inProduction() && import.meta.env.MIX_SENTRY_DSN) {
+    Sentry.init({
+        app: vueApp,
+        dsn: import.meta.env.MIX_SENTRY_DSN,
+        integrations: [new Integrations.BrowserTracing()],
+        tracesSampleRate: 0,
+        logErrors: false
+    });
+}
+
+vueApp.config.globalProperties.$bus = bus;
+vueApp.use(router);
+vueApp.use(i18n);
+window.app = vueApp.mount('#app');

@@ -252,7 +252,7 @@ export default {
             redirectToGame: '',
             redirectToPage: 'story',
             receivedACampaignCode: false,
-            url: process.env.MIX_APP_URL,
+            url: import.meta.env.MIX_APP_URL,
             storyRepository: new StoryRepository
         }
     },
@@ -269,7 +269,7 @@ export default {
             this.scrollToForm();
         }
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('campaigns-changed', this.setUser);
     },
     computed: {

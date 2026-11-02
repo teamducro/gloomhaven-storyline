@@ -39,7 +39,7 @@
                             <div class="mb-4">
                                 <h2 class="mb-2">{{ $t('Name') }}</h2>
                                 <text-field id="name" ref="name-field" :label="$t('Name')"
-                                            :value.sync="nameText" @change="store"></text-field>
+                                            v-model:value="nameText" @change="store"></text-field>
                             </div>
 
                             <div class="flex flex-wrap">
@@ -47,9 +47,9 @@
                                     <div class="mb-2 flex items-center">
                                         <h2>{{ $t('Level') }}</h2>
                                         <rollback v-show="!loading" ref="level-rollback"
-                                                  :value.sync="character.level"></rollback>
+                                                  v-model:value="character.level"></rollback>
                                     </div>
-                                    <number-field class="w-14" :value.sync="character.level" :min="1" :max="9"
+                                    <number-field class="w-14" v-model:value="character.level" :min="1" :max="9"
                                                   id="level"
                                                   @change="store"></number-field>
                                 </div>
@@ -57,18 +57,18 @@
                                     <div class="mb-2 flex items-center">
                                         <h2>{{ $t('XP') }}</h2>
                                         <rollback v-show="!loading" ref="xp-rollback"
-                                                  :value.sync="character.xp"></rollback>
+                                                  v-model:value="character.xp"></rollback>
                                     </div>
-                                    <number-field :value.sync="character.xp" :min="0" :max="9999" id="xp"
+                                    <number-field v-model:value="character.xp" :min="0" :max="9999" id="xp"
                                                   @change="store"></number-field>
                                 </div>
                                 <div class="mb-4">
                                     <div class="mb-2 flex items-center">
                                         <h2>{{ $t('Gold') }}</h2>
                                         <rollback v-show="!loading" ref="gold-rollback"
-                                                  :value.sync="character.gold"></rollback>
+                                                  v-model:value="character.gold"></rollback>
                                     </div>
-                                    <number-field :value.sync="character.gold" :min="0" :max="9999" id="gold"
+                                    <number-field v-model:value="character.gold" :min="0" :max="9999" id="gold"
                                                   @change="store"></number-field>
                                 </div>
 
@@ -77,7 +77,7 @@
 
                             <resources-section v-if="sheet.game === Game.fh"
                                 ref="resources"
-                                :resources.sync="character.resources"
+                                v-model:resources="character.resources"
                                 :loading="loading"
                                 @change="store"/>
 
@@ -85,7 +85,7 @@
                                 id="items"
                                 :title="$t('Items')"
                                 :label="$t('Search name or nr')"
-                                :items.sync="sheetItems"
+                                v-model:items="sheetItems"
                                 :disabled="outOfStockItems"
                                 :filter-closure="itemFilterClosure"
                                 :animations="false"
@@ -94,19 +94,23 @@
                                 @change="storeItems"
                                 ref="items"
                             >
-                                <span class="flex items-center mr-6" slot="label" slot-scope="{item}"
-                                      v-if="items[item]">
-                                    <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                    <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
-                                </span>
-                                <div slot="item" slot-scope="{item}"
-                                     class="cursor-pointer flex items-center border-b border-white2-50 py-1"
-                                     v-if="items[item]" @click="openItemModel(item)">
-                                    <webp :src="items[item].slot" width="20" class="mr-2"/>
-                                    <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
-                                    <span @click.stop="$refs.items.deselect(item)"
-                                          class="ml-auto material-icons">clear</span>
-                                </div>
+                                <template #label="{item}">
+                                    <span class="flex items-center mr-6"
+                                          v-if="items[item]">
+                                        <webp :src="items[item].slot" width="20" class="mr-2"/>
+                                        <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
+                                    </span>
+                                </template>
+                                <template #item="{item}">
+                                    <div
+                                         class="cursor-pointer flex items-center border-b border-white2-50 py-1"
+                                         v-if="items[item]" @click="openItemModel(item)">
+                                        <webp :src="items[item].slot" width="20" class="mr-2"/>
+                                        <span>{{ items[item].number }} {{ $t(items[item].name) }}</span>
+                                        <span @click.stop="$refs.items.deselect(item)"
+                                              class="ml-auto material-icons">clear</span>
+                                    </div>
+                                </template>
                             </selectable-list>
 
                             <router-link to="/items">
@@ -116,21 +120,21 @@
                                 </button>
                             </router-link>
 
-                            <personal-quests :quest.sync="character.quest"
+                            <personal-quests v-model:quest="character.quest"
                                              :sheet="sheet"
                                              @change="store"/>
 
                             <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
-                            <notes :value.sync="character.notes" id="notes" :label="$t('Notes')"
+                            <notes v-model:value="character.notes" id="notes" :label="$t('Notes')"
                                    @change="store" :is-local-campaign="isLocalCampaign"
                             ></notes>
 
                         </div>
                         <div class="w-full sheet-break-lg:w-1/2">
 
-                            <perks :checks.sync="character.checks"
-                                   :perks.sync="character.perks"
-                                   :masteries.sync="character.masteries"
+                            <perks v-model:checks="character.checks"
+                                   v-model:perks="character.perks"
+                                   v-model:masteries="character.masteries"
                                    :character="character"
                                    @change="store"/>
 
@@ -156,9 +160,9 @@
                         <div class="mb-2 flex items-center">
                             <h2>{{ $t('Retirement counter') }}</h2>
                             <rollback v-show="!loading" ref="level-rollback"
-                                      :value.sync="character.retirements"></rollback>
+                                      v-model:value="character.retirements"></rollback>
                         </div>
-                        <number-field :value.sync="character.retirements" :min="0" :max="20"
+                        <number-field v-model:value="character.retirements" :min="0" :max="20"
                                       id="retirements" @change="store"></number-field>
                         <p class="text-sm">
                             {{ $t('Set this counter to the amount of characters you have retired') }}
@@ -288,7 +292,7 @@ export default {
         this.$bus.$on('campaigns-changed', this.render);
         this.$bus.$on('select-character', this.select);
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('campaigns-changed', this.render);
         this.$bus.$off('select-character', this.select);
     },

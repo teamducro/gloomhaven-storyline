@@ -3,11 +3,14 @@
         <alert v-if="!isEmpty || message" type="error" class="inline-block">
             <ul>
                 <li v-if="message">{{ message }}</li>
-                <template v-if="errors" v-for="(messages, key) in errors">
-                    <li v-if="field == null || key === field"
-                        v-for="error in messages">
-                        {{ error }}
-                    </li>
+                <template v-if="errors">
+                    <template v-for="(messages, key) in errors">
+                        <template v-if="field == null || key === field">
+                            <li v-for="error in messages">
+                                {{ error }}
+                            </li>
+                        </template>
+                    </template>
                 </template>
             </ul>
         </alert>

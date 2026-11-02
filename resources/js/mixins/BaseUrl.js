@@ -1,7 +1,7 @@
 export default {
     data: function () {
         return {
-            baseUrl: process.env.MIX_CDN_URL || ''
+            baseUrl: import.meta.env.MIX_CDN_URL || ''
         }
     },
 }

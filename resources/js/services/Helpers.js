@@ -2,7 +2,7 @@ import AccessToken from "./AccessToken";
 
 export default {
     inProduction() {
-        return process.env.NODE_ENV === 'production';
+        return import.meta.env.MODE === 'production';
     },
     loggedIn() {
         return typeof (new AccessToken).get() === 'string'

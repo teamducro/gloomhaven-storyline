@@ -29,7 +29,7 @@ export default {
     mounted() {
         this.$bus.$on('toast', this.open)
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('toast', this.open)
     },
     methods: {

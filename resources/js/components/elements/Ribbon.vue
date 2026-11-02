@@ -21,7 +21,7 @@
 
             this.$bus.$on('campaigns-changed', this.render);
         },
-        destroyed() {
+        unmounted() {
             this.$bus.$off('campaigns-changed', this.render);
         },
         methods: {

@@ -6,13 +6,13 @@
             <!-- Enhancements toggle -->
             <checkbox-with-label id="desktop-enable-enhancements"
                                  class="hidden md:flex" :label="$t('Enhancements')"
-                                 :checked.sync="sheet.enhancementsEnabled"
+                                 v-model:checked="sheet.enhancementsEnabled"
                                  @change="storeSheet"/>
 
             <!-- Show all toggle -->
             <checkbox-with-label id="desktop-show-all-abilities" class="hidden md:flex"
                                  :label="$t('Show all')" :auto-disable="false"
-                                 :checked.sync="prefs.showAll"/>
+                                 v-model:checked="prefs.showAll"/>
 
             <!-- Manage -->
             <button @click="manageAvailable" id="open-manage-abilities" :disabled="appData.read_only"
@@ -74,11 +74,11 @@
                     <!-- Show all toggle -->
                     <checkbox-with-label id="mobile-show-all-abilities" class="md:hidden"
                                          :label="$t('Show all')" :auto-disable="false"
-                                         :checked.sync="prefs.showAll"/>
+                                         v-model:checked="prefs.showAll"/>
                     <!-- Enhancements toggle -->
                     <checkbox-with-label id="mobile-enable-enhancements" class="md:hidden"
                                          :label="$t('Enhancements')"
-                                         :checked.sync="sheet.enhancementsEnabled"
+                                         v-model:checked="sheet.enhancementsEnabled"
                                          @change="storeSheet"/>
                 </div>
 
@@ -86,14 +86,14 @@
                      :class="[
                          prefs.stackedAvailable ? 'gap-y-0': 'gap-y-2',
                          prefs.deckSide ? 'grid-cols-2 xs:grid-cols-3 sm:grid-cols-2 md2:grid-cols-3' : 'grid-cols-2 xs:grid-cols-3 sm:grid-cols-2 md:grid-cols-1']">
-                    <ability v-for="ability in sortedAbilities"
-                             :key="'available-'+ability.code+'-'+abilityRenderKeys[ability.code]"
-                             v-if="prefs.showAll || (character.level+.5) >= ability.level"
-                             :ability="ability" :selected="character.abilities[ability.code]"
-                             :active="(character.level+.5) >= ability.level"
-                             :stacked="prefs.stackedAvailable" :animating="animatingAvailable"
-                             :enhancements="characterEnhancements[ability.code] || []"
-                             group="available" @selected="selected" @click="openModel"/>
+                    <template v-for="ability in sortedAbilities" :key="'available-'+ability.code+'-'+abilityRenderKeys[ability.code]">
+                        <ability v-if="prefs.showAll || (character.level+.5) >= ability.level"
+                                 :ability="ability" :selected="character.abilities[ability.code]"
+                                 :active="(character.level+.5) >= ability.level"
+                                 :stacked="prefs.stackedAvailable" :animating="animatingAvailable"
+                                 :enhancements="characterEnhancements[ability.code] || []"
+                                 group="available" @selected="selected" @click="openModel"/>
+                    </template>
                 </div>
             </div>
 
@@ -114,11 +114,12 @@
                      :class="[
                          prefs.stackedDeck ? 'gap-y-0': 'gap-y-2',
                          prefs.deckSide ? 'grid-cols-2 xs:grid-cols-3 sm:grid-cols-2 md:grid-cols-1' : 'grid-cols-2 xs:grid-cols-3 sm:grid-cols-2 md2:grid-cols-3']">
-                    <ability v-for="ability in sortedAbilities" :key="'deck-'+ability.code"
-                             v-if="(character.level+.5) >= ability.level && character.abilities[ability.code]"
-                             :ability="ability" :selected="true" :stacked="prefs.stackedDeck" :animating="animatingDeck"
-                             :enhancements="characterEnhancements[ability.code] || []"
-                             group="deck" @selected="selected" @click="openModel"/>
+                    <template v-for="ability in sortedAbilities" :key="'deck-'+ability.code">
+                        <ability v-if="(character.level+.5) >= ability.level && character.abilities[ability.code]"
+                                 :ability="ability" :selected="true" :stacked="prefs.stackedDeck" :animating="animatingDeck"
+                                 :enhancements="characterEnhancements[ability.code] || []"
+                                 group="deck" @selected="selected" @click="openModel"/>
+                    </template>
                 </div>
             </div>
         </div>
@@ -135,6 +136,7 @@ import store from "store/dist/store.modern";
 import Flip from "../../../mixins/Flip";
 
 export default {
+    emits: ['store'],
     inject: ['appData'],
     props: {
         character: Character,
@@ -222,14 +224,14 @@ export default {
         async selected(code, checked) {
             if (checked) {
                 if (this.abilityCount < this.character.abilityCount) {
-                    Vue.set(this.character.abilities, code, true);
+                    this.character.abilities[code] = true;
                     this.store();
                 } else {
-                    Vue.set(this.abilityRenderKeys, code, (this.abilityRenderKeys[code] || 0) + 1);
+                    this.abilityRenderKeys[code] = (this.abilityRenderKeys[code] || 0) + 1;
                     this.$bus.$emit('toast', this.$t('Deck is full'), false);
                 }
             } else {
-                Vue.delete(this.character.abilities, code);
+                delete this.character.abilities[code];
                 this.store();
             }
         },
