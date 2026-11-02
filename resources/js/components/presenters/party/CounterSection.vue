@@ -5,9 +5,9 @@
                 <add-links-and-icons class="text-white flex items-center gap-2" tag="h2" :text="title"/>
             </slot>
             <rollback :loading="loading" ref="rollback"
-                      :value.sync="currentValue"/>
+                      v-model:value="currentValue"/>
         </div>
-        <number-field :value.sync="currentValue" :step="step" :min="min" :max="max" :id="slugify(title)"/>
+        <number-field v-model:value="currentValue" :step="step" :min="min" :max="max" :id="slugify(title)"/>
     </div>
 </template>
 
@@ -15,6 +15,7 @@
 import Slugify from "../../../services/Slugify";
 
 export default {
+    emits: ['change', 'update:value'],
     mixins: [Slugify],
     props: {
         title: {

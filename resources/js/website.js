@@ -1,8 +1,5 @@
-import SocialSharing from 'vue-social-sharing';
-import VueClipboard from 'vue-clipboard2';
-import VueRouter from 'vue-router';
-import Helpers from './services/Helpers';
-import VueAnalytics from 'vue-analytics';
+import './services/app/globals';
+import {createRouter, createWebHashHistory} from 'vue-router';
 import {loadStripe} from '@stripe/stripe-js/pure';
 import Home from "./pages/Home";
 import Alert from "./components/elements/Alert";
@@ -17,72 +14,28 @@ import Webp from "./components/elements/Webp";
 import TopMenu from "./pages/sections/TopMenu";
 import SiteFooter from "./pages/sections/SiteFooter";
 import BecomePatronButton from "./components/elements/BecomePatronButton";
-import Vue from 'vue';
-import VueI18n from "vue-i18n";
+import {createApp} from 'vue';
 import i18nEn from "./lang/en/en";
-
-window.Vue = Vue;
-window.axios = require('axios').default.create({
-    baseURL: process.env.MIX_API_URL,
-    withCredentials: true,
-    withXSRFToken: true
-});
-
-Vue.use(SocialSharing);
-VueClipboard.config.autoSetContainer = true;
-Vue.use(VueClipboard);
-
-// Vue components
-Vue.component('alert', Alert);
-Vue.component('email-me', EmailMe);
-Vue.component('inline-svg', InlineSvg);
-Vue.component('purchase', Purchase);
-Vue.component('modal', Modal);
-Vue.component('checkbox', Checkbox);
-Vue.component('share-icons', ShareIcons);
-Vue.component('toast', Toast);
-Vue.component('webp', Webp);
-Vue.component('becomePatronButton', BecomePatronButton);
-
-// Vue page sections
-Vue.component('top-menu', TopMenu);
-Vue.component('site-footer', SiteFooter);
+import bus from './services/EventBus';
+import createLegacyI18n from './services/createLegacyI18n';
+import registerGlobals from './services/app/registerGlobals';
+import '../sass/website-theme.scss';
+import '../sass/website.scss';
 
 // Router
-const router = new VueRouter({
+const router = createRouter({
+    history: createWebHashHistory(),
     routes: [
         {path: '/', component: Home},
-        {path: '*', component: Home}
+        {path: '/:pathMatch(.*)*', component: Home}
     ]
 });
-Vue.use(VueRouter);
-
-// Analytics
-if (Helpers.inProduction() && process.env.MIX_GA_ID) {
-    Vue.use(VueAnalytics, {
-        id: process.env.MIX_GA_ID,
-        router
-    });
-}
 
 // Multi Language
-Vue.use(VueI18n);
-window.i18n = new VueI18n({
-    locale: 'en',
-    fallbackLocale: 'en',
-    messages: {
-        en: i18nEn
-    },
-    silentTranslationWarn: true
-});
+const i18n = createLegacyI18n({en: i18nEn});
+window.i18n = i18n.global;
 
-// event bus
-Vue.prototype.$bus = new Vue;
-
-window.app = new Vue({
-    router,
-    i18n,
-    el: '#app',
+const vueApp = createApp({
     provide() {
         return {
             appData: {}
@@ -90,14 +43,15 @@ window.app = new Vue({
     },
     data() {
         return {
-            appUrl: process.env.MIX_APP_URL,
+            appUrl: import.meta.env.MIX_APP_URL,
+            webpSupported: true,
         }
     },
     async mounted() {
         this.webpSupported = this.isWebpSupported();
         this.shouldRedirectToApp();
 
-        Vue.prototype.$stripe = await loadStripe(process.env.MIX_STRIPE_KEY);
+        vueApp.config.globalProperties.$stripe = await loadStripe(import.meta.env.MIX_STRIPE_KEY);
     },
     methods: {
         isWebpSupported() {
@@ -112,10 +66,32 @@ window.app = new Vue({
         shouldRedirectToApp() {
             ['story', 'scenarios', 'map', 'achievements', 'info', 'campaigns', 'party', 'login', 'shared', 'states'].forEach(path => {
                 if (location.hash.includes(path) || location.search.includes(path)) {
-                    const newLocation = location.href.replace(process.env.MIX_WEB_URL, process.env.MIX_APP_URL);
+                    const newLocation = location.href.replace(import.meta.env.MIX_WEB_URL, import.meta.env.MIX_APP_URL);
                     location.replace(newLocation);
                 }
             });
         }
     }
 });
+
+// Vue components
+vueApp.component('alert', Alert);
+vueApp.component('email-me', EmailMe);
+vueApp.component('inline-svg', InlineSvg);
+vueApp.component('purchase', Purchase);
+vueApp.component('modal', Modal);
+vueApp.component('checkbox', Checkbox);
+vueApp.component('share-icons', ShareIcons);
+vueApp.component('toast', Toast);
+vueApp.component('webp', Webp);
+vueApp.component('becomePatronButton', BecomePatronButton);
+
+// Vue page sections
+vueApp.component('top-menu', TopMenu);
+vueApp.component('site-footer', SiteFooter);
+
+vueApp.config.globalProperties.$bus = bus;
+registerGlobals(vueApp);
+vueApp.use(router);
+vueApp.use(i18n);
+window.app = vueApp.mount('#app');

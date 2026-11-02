@@ -309,7 +309,7 @@ export default {
         "title": "Instantáneas",
         "text-1": "Si alguna vez pierde el progreso de la campaña, puede usar estas instantáneas automáticas para revertir los cambios no deseados!",
         "text-2": "Las instantáneas solo están disponibles para campañas compartidas porque se almacenan en la nube.",
-        "only-owner": "Solo l@s propietari@s de esta campaña pueden administrar instantáneas",
+        "only-owner": "Solo l{'@'}s propietari{'@'}s de esta campaña pueden administrar instantáneas",
         "no-snapshots": "Aún no hay instantáneas"
     },
     "Characters": "Personajes",

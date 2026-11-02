@@ -204,7 +204,7 @@
         <modal ref="boat-modal" :title="$t('Name your Boat')">
             <template v-slot:content>
                 <p class="mb-3">“{{ $t('Now, whaddya call this beauty? G’head, pick a name. Bad luck to set forth on an unnamed vessel!') }}”</p>
-                <text-field id="boat-name" :label="$t('Boat Name')" :value.sync="boatName" @keyup.enter="saveBoatName" />
+                <text-field id="boat-name" :label="$t('Boat Name')" v-model:value="boatName" @keyup.enter="saveBoatName" />
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="yes" @click="saveBoatName">
@@ -226,6 +226,7 @@ import SheetCalculations from "../../../services/SheetCalculations";
 import Confirm from "../../../mixins/Confirm";
 
 export default {
+    emits: ['change', 'enhancer-built'],
     inject: ['appData'],
     mixins: [Slugify, SheetCalculations, Confirm],
     props: {
@@ -263,7 +264,7 @@ export default {
 
         this.$bus.$on('campaigns-changed', this.render);
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('campaigns-changed', this.render);
     },
     methods: {
@@ -413,10 +414,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.inline-icons ::v-deep div, .inline-icons ::v-deep svg {
+.inline-icons :deep(div), .inline-icons :deep(svg) {
     @apply inline;
 }
-.materials ::v-deep svg {
+.materials :deep(svg) {
     @apply h-3 w-3;
 }
 </style>

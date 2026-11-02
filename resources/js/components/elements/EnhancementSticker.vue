@@ -13,6 +13,7 @@
 import {numericBoostTypes} from "../../services/AbilityEnhancements";
 
 export default {
+    emits: ['click', 'drag', 'reposition'],
     props: {
         id: {
             type: String,

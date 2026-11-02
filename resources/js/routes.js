@@ -18,7 +18,7 @@ export default [
     {path: '/scenarios', component: Scenarios},
     {path: '/map', component: Map},
     {path: '/achievements', component: Achievements},
-    {path: '/info', name: 'info', component: Info, props: true},
+    {path: '/info', name: 'info', component: Info, props: route => ({contribute: !!route.query.contribute})},
     {path: '/campaigns', component: Campaigns},
     {path: '/party', component: Party},
     {path: '/characters', component: Characters},
@@ -27,5 +27,5 @@ export default [
     {path: '/login/:id/:token', component: Login},
     {path: '/settings', component: Settings},
     {path: '/shared/:version/:id/:storage/:path?/:game?', component: Shared},
-    {path: '*', redirect: '/story'},
+    {path: '/:pathMatch(.*)*', redirect: '/story'},
 ];

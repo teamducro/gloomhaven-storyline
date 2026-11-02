@@ -116,18 +116,19 @@
                         <div class="my-2"
                              v-if="(scenario.isComplete() || treasuresVisible) && scenario.treasures.length">
                             <h2 class="text-white">{{ $t('Treasures') }}</h2>
-                            <div v-if="scenario.treasures.length"
-                                 v-for="id in scenario.treasures" :key="'treasure-'+id"
-                                 class="flex items-center -ml-2">
-                                <checkbox-with-label
-                                    :id="'treasure-'+id"
-                                    :label="isNaN(id) ? id.toUpperCase() : '#' + id"
-                                    :checked="scenario.isTreasureUnlocked(id)"
-                                    @change="treasureChanged"></checkbox-with-label>
-                                <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
-                                    <add-links-and-icons :text="$t(`treasures.${scenario.game}-${id}.name`)"/>
-                                </span>
-                            </div>
+                            <template v-if="scenario.treasures.length">
+                                <div v-for="id in scenario.treasures" :key="'treasure-'+id"
+                                     class="flex items-center -ml-2">
+                                    <checkbox-with-label
+                                        :id="'treasure-'+id"
+                                        :label="isNaN(id) ? id.toUpperCase() : '#' + id"
+                                        :checked="scenario.isTreasureUnlocked(id)"
+                                        @change="treasureChanged"></checkbox-with-label>
+                                    <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
+                                        <add-links-and-icons :text="$t(`treasures.${scenario.game}-${id}.name`)"/>
+                                    </span>
+                                </div>
+                            </template>
                         </div>
                         <p class="mb-2"
                            v-if="!scenario.isComplete() && !scenario.treasures.length && treasuresVisible">
@@ -137,20 +138,22 @@
                         <div class="my-2" v-if="scenario.loot && Object.keys(scenario.loot).length > 0">
                             <h2 class="text-white">{{ $t('Loot') }}</h2>
                             <ul class="mt-2">
-                                <li class="flex items-center" v-if="value > 0" v-for="(value, type) in scenario.loot" :key="type">
-                                    <inline-svg :src="'resources/'+type" class="mr-2 text-white"/>
-                                    <span>{{ $t(type) }}</span>
-                                    <template v-if="type !== 'random-item-treasure'">
-                                        <span>&nbsp;x&nbsp;{{ value }}</span>
-                                    </template>
-                                    <template v-else>
-                                        <checkbox
-                                            :id="'random-item-treasure-'+scenario.id"
-                                            :checked="scenario.random_item_treasure"
-                                            @change="randomItemTreasureChanged"
-                                        />
-                                    </template>
-                                </li>
+                                <template v-for="(value, type) in scenario.loot" :key="type">
+                                    <li class="flex items-center" v-if="value > 0">
+                                        <inline-svg :src="'resources/'+type" class="mr-2 text-white"/>
+                                        <span>{{ $t(type) }}</span>
+                                        <template v-if="type !== 'random-item-treasure'">
+                                            <span>&nbsp;x&nbsp;{{ value }}</span>
+                                        </template>
+                                        <template v-else>
+                                            <checkbox
+                                                :id="'random-item-treasure-'+scenario.id"
+                                                :checked="scenario.random_item_treasure"
+                                                @change="randomItemTreasureChanged"
+                                            />
+                                        </template>
+                                    </li>
+                                </template>
                             </ul>
                         </div>
 
@@ -161,7 +164,7 @@
                                     <h2 class="text-white">
                                         {{ is_awarded ? '' : $t('Lost') }}
                                         {{ scenario.game === 'fh' ? '' : (is_global ? $t('Global') : $t('Party')) }}
-                                        {{ $tc('Achievement', y.count()) }}
+                                        {{ $t('Achievement', y.count()) }}
                                     </h2>
                                     <div v-for="achievement in y"
                                          class="flex items-center">
@@ -199,13 +202,13 @@
                                 </button>
                                 <transition-expand>
                                     <div v-if="questExpand[index]">
-                                        <i18n :path="quest.description" tag="div">
+                                        <i18n-t :keypath="quest.description" tag="div">
                                             <template v-for="n in 20" v-slot:[n]>
                                                 <p class="mb-4">
                                                     {{ $t(quest.translationKey() + '.sections.' + n) }}
                                                 </p>
                                             </template>
-                                        </i18n>
+                                        </i18n-t>
                                     </div>
                                 </transition-expand>
                             </template>
@@ -224,7 +227,7 @@
                             </button>
 
                             <transition-expand
-                                :duration="{ enter: 500, leave: 800 }"
+                                 :duration="{ enter: 500, leave: 800 }"
                                 @after-enter="notesEntered"
                                 @leave="notesLeft">
                                 <div v-if="notesIsOpen" ref="notes"
@@ -258,8 +261,7 @@
                             </div>
                         </div>
                     </template>
-                    <blockquote
-                        v-if="scenario.game === 'gh' && (scenario.id === 14 || scenario.id === 43) && scenario.isComplete()"
+                    <blockquote v-if="scenario.game === 'gh' && (scenario.id === 14 || scenario.id === 43) && scenario.isComplete()"
                         class="relative py-2 px-4 text-base italic border-l-4 quote">
                         <a class="absolute w-full h-full top-0 left-0" target="_blank"
                            href="https://boardgamegeek.com/thread/1722032/scenario-14-conclusion-spoilers"></a>
@@ -316,7 +318,7 @@ import StoryRepository from "../../repositories/StoryRepository";
 import Cards from "../presenters/cards/Cards";
 import StorySyncer from "../../services/StorySyncer";
 
-const md5 = require('js-md5');
+import md5 from 'js-md5';
 
 export default {
     inject: ['appData'],
@@ -463,7 +465,7 @@ export default {
             this.rollback = null;
         },
         toggleQuest(index) {
-            this.$set(this.questExpand, index, !this.questExpand[index]);
+            this.questExpand[index] = !this.questExpand[index];
         },
         openPages() {
             this.$refs['pages'].open();
@@ -548,7 +550,7 @@ export default {
                 query.seed = parseInt(md5(current.campaignId + this.scenario.id).substr(0, 7), 16);
             }
 
-            this.virtualBoardUrl = process.env.MIX_VIRTUAL_BOARD_URL + '?' + new URLSearchParams(query);
+            this.virtualBoardUrl = import.meta.env.MIX_VIRTUAL_BOARD_URL + '?' + new URLSearchParams(query);
         },
         makeSureScenariosAreLoaded() {
             return new Promise((resolve) => {

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <modal ref="modal" :title="$t('Choose a scenario to unlock')">
+        <modal ref="modal" :title="$t('Choose a scenario to unlock')" @closing="event => $emit('closing', event.detail.action)">
             <template v-slot:content>
                 <div class="flex flex-col">
                     <radio v-for="scenario in scenarios"
@@ -31,6 +31,7 @@
     import ScenarioRepository from "../../repositories/ScenarioRepository";
 
     export default {
+        emits: ['closing', 'scenario-chosen'],
         props: {
             scenarioIds: Array
         },
@@ -43,9 +44,6 @@
         },
         mounted() {
             this.scenarios = this.scenarioRepository.findMany(this.scenarioIds);
-            this.$refs['modal'].$on('closing', (event) => {
-                this.$emit('closing', event.detail.action);
-            });
         },
         methods: {
             open() {

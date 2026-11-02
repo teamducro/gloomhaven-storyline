@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import Snapshot from "./Snapshot";
 import LZString from "lz-string";
 
-const md5 = require('js-md5');
+import md5 from 'js-md5';
 
 class Story extends Model {
 

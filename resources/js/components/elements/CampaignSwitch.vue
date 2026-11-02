@@ -58,7 +58,7 @@ export default {
 
         this.$bus.$on('campaigns-changed', this.applyData);
     },
-    destroyed() {
+    unmounted() {
         this.select?.destroy();
 
         this.$bus.$off('campaigns-changed', this.applyData);

@@ -5,7 +5,7 @@
                 <h2>{{ $t(sheet.game == 'fh' ? 'Frosthaven' : 'Gloomhaven') + ' ' + $t('Prosperity') }}</h2>
             </slot>
             <rollback :loading="loading" ref="rollback"
-                      :value.sync="sheet.prosperityIndex"/>
+                      v-model:value="sheet.prosperityIndex"/>
         </div>
         <div class="flex flex-wrap">
             <div class="flex flex-col items-center justify-end"
@@ -27,10 +27,11 @@ import SheetCalculations from "../../../services/SheetCalculations";
 import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
+    emits: ['change', 'update:prosperity'],
     mixins: [SheetCalculations],
     props: {
         sheet: {
-            type: Sheet|CampaignSheet,
+            type: [Sheet, CampaignSheet],
             required: true
         },
         loading: {

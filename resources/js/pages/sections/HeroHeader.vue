@@ -41,8 +41,8 @@
 export default {
     data() {
         return {
-            appUrl: process.env.MIX_APP_URL,
-            game: process.env.MIX_MAIN_GAME,
+            appUrl: import.meta.env.MIX_APP_URL,
+            game: import.meta.env.MIX_MAIN_GAME,
         }
     },
     mounted() {

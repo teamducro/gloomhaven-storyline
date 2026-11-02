@@ -15,20 +15,20 @@
                       'top': '-'+settings.yOffset+'px'
                   }"/>
             <ul v-if="achievements && achievements.count()">
-                <li v-for="achievement in achievements.items"
-                    v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
-                    :key="game+'-'+achievement.id"
-                    class="absolute"
-                    :style="{
-                        'top': '-174px',
-                        'left': achievement.x + '%'
-                    }">
-                    <webp :src="achievement.image"
-                          :animate="true" :retina="true"
-                          class="cursor-pointer"
-                          :id="'a' + achievement.id"
-                          :alt="$t(achievement.name)"/>
-                </li>
+                <template v-for="achievement in achievements.items" :key="game+'-'+achievement.id">
+                    <li v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
+                        class="absolute"
+                        :style="{
+                            'top': '-174px',
+                            'left': achievement.x + '%'
+                        }">
+                        <webp :src="achievement.image"
+                              :animate="true" :retina="true"
+                              class="cursor-pointer"
+                              :id="'a' + achievement.id"
+                              :alt="$t(achievement.name)"/>
+                    </li>
+                </template>
             </ul>
 
             <webp v-for="overlay in overlays"
@@ -100,7 +100,7 @@ export default {
         return {
             game: 'gh',
             map: null,
-            $map: null,
+            mapElement: null,
             mapImages: null,
             settings: {
                 stickerScale: 1,
@@ -142,7 +142,7 @@ export default {
         this.$bus.$on('buildings-updated', this.setBuildings);
         this.$bus.$on('overlays-updated', this.setOverlays);
     },
-    destroyed() {
+    unmounted() {
         this.map?.dispose();
         this.$bus.$off('scenarios-updated', this.setScenarios);
         this.$bus.$off('windows-resized', this.setScenarios);
@@ -162,9 +162,9 @@ export default {
 
             await this.$nextTick();
 
-            this.$map = document.getElementById('map');
+            this.mapElement = document.getElementById('map');
             this.map?.dispose();
-            this.map = panzoom(this.$map, {
+            this.map = panzoom(this.mapElement, {
                 minZoom: this.scale(),
                 maxZoom: 4,
                 bounds: true
@@ -175,7 +175,7 @@ export default {
             if (this.mapTouch) {
                 this.mapTouch.destroy();
             }
-            this.mapTouch = new Hammer(this.$map);
+            this.mapTouch = new Hammer(this.mapElement);
             this.mapTouch.on('tap', (e) => {
                 if (e.target.id.startsWith('s')) {
                     this.scenarioClicked(e);
@@ -249,11 +249,11 @@ export default {
             const yOffset = this.settings.yOffset * scale;
 
             if (this.isLandscape()) {
-                const mapWidth = this.$map.offsetWidth * scale;
+                const mapWidth = this.mapElement.offsetWidth * scale;
                 let x = (window.innerWidth - mapWidth) / 2;
                 this.map.moveTo(x, yOffset + (20 / scale));
             } else {
-                const mapHeight = this.$map.offsetHeight * scale;
+                const mapHeight = this.mapElement.offsetHeight * scale;
                 let y = (window.innerHeight - mapHeight) / 2;
                 this.map.moveTo(0, y + yOffset);
             }
@@ -266,7 +266,7 @@ export default {
 
             return this.isLandscape()
                 ? window.innerHeight / this.settings.width
-                : window.innerWidth / this.$map.offsetWidth;
+                : window.innerWidth / this.mapElement.offsetWidth;
         },
         filteredScenarios(scenario) {
             return scenario.isVisible()

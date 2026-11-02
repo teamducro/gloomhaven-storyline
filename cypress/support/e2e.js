@@ -27,3 +27,6 @@ before(() => {
     });
     cy.reload();
 });
+
+// Production builds (CI) open the donations popup on every 5th page load, which covers the page under test.
+Cypress.on('window:before:load', (win) => win.localStorage.setItem('donations', '0'));

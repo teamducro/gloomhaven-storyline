@@ -121,7 +121,7 @@
 export default {
     data() {
         return {
-            game: process.env.MIX_MAIN_GAME,
+            game: import.meta.env.MIX_MAIN_GAME,
         }
     },
     mounted() {

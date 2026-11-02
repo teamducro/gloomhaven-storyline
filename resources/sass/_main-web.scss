@@ -41,14 +41,14 @@ button:focus {
 }
 
 .wave-mask {
-    mask: url(../img/wave-mask.png);
+    mask: url(/img/wave-mask.png);
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: top;
 }
 
 .wave-mask-reverse {
-    mask: url(../img/wave-mask-reverse.png);
+    mask: url(/img/wave-mask-reverse.png);
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: bottom;

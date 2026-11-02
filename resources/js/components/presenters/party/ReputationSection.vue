@@ -6,9 +6,9 @@
                     <h2>{{ $t('Reputation') }}</h2>
                 </slot>
                 <rollback :loading="loading" ref="rollback"
-                          :value.sync="sheet.reputation"/>
+                          v-model:value="sheet.reputation"/>
             </div>
-            <number-field :value.sync="sheet.reputation" :min="min" :max="max" id="reputation"
+            <number-field v-model:value="sheet.reputation" :min="min" :max="max" id="reputation"
                           @change="$emit('change')"/>
         </div>
         <div v-if="hasShopModifier">
@@ -26,6 +26,7 @@ import Sheet from "../../../models/Sheet";
 import SheetCalculations from "../../../services/SheetCalculations";
 
 export default {
+    emits: ['change'],
     mixins: [SheetCalculations],
     props: {
         sheet: {

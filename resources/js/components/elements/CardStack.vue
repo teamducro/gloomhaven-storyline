@@ -1,14 +1,17 @@
 <template>
     <span @click="click" class="inline-block relative">
         <webp :src="src" :class="'w-'+width" class="z-1 relative"/>
-        <webp v-if="count > 1 && index < maxCount" v-for="index in maxCount" :key="'stack-'+index"
-              :src="src" :class="'w-'+width" class="absolute z-0 top-0 left-0" :style="rotation(index)"/>
+        <template v-for="index in maxCount" :key="'stack-'+index">
+            <webp v-if="count > 1 && index < maxCount"
+                  :src="src" :class="'w-'+width" class="absolute z-0 top-0 left-0" :style="rotation(index)"/>
+        </template>
     </span>
 </template>
 
 <script>
 
 export default {
+    emits: ['click'],
     props: {
         src: String,
         width: {

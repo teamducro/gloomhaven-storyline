@@ -21,6 +21,7 @@
 
 <script>
 export default {
+    emits: ['close', 'closed', 'open', 'opened'],
     inject: ['appData'],
     props: {
         width: {

@@ -38,13 +38,14 @@
 
                     <li v-if="regions.length" role="separator" class="mdc-list-divider !my-2"></li>
 
-                    <li v-if="scenarios && regions.length"
-                        v-for="region in regions"
-                        class="mdc-list-item cursor-pointer"
-                        :class="{'mdc-list-item--activated': regionFilter.includes(region.id)}"
-                        @click="toggleRegionFilter(region.id)">
-                        <span class="mdc-list-item__text">{{ $t(region.name) }}</span>
-                    </li>
+                    <template v-if="scenarios && regions.length">
+                        <li v-for="region in regions"
+                            class="mdc-list-item cursor-pointer"
+                            :class="{'mdc-list-item--activated': regionFilter.includes(region.id)}"
+                            @click="toggleRegionFilter(region.id)">
+                            <span class="mdc-list-item__text">{{ $t(region.name) }}</span>
+                        </li>
+                    </template>
                 </ul>
             </dropdown>
         </div>
@@ -58,7 +59,7 @@
                         :translatable="translatable"
                         @rowClick="open"
             >
-                <template slot="row" slot-scope="{row}">
+                <template #row="{row}">
                     <template v-if="row.isHidden()">
                         <td @click="open(row)" :colspan="row.solo ? 20 : (hasImages ? 2 : 1)"></td>
                         <td @click="open(row)" v-if="!row.solo"
@@ -67,16 +68,16 @@
                         </td>
                     </template>
                 </template>
-                <template slot="name" slot-scope="{value, row}">
+                <template #name="{value, row}">
                     <span v-if="!row.solo">{{ row.number }}</span> {{ $t(value) }}
                 </template>
-                <template slot="image" slot-scope="{value, row}">
+                <template #image="{value, row}">
                     <webp v-if="!row.solo" :src="row.image()"
                           class="w-16 mr-4 my-1"
                           :alt="row.name"/>
                     <character-icon class="w-12 inline-block" :character="row.solo" v-if="row.solo"/>
                 </template>
-                <template slot="state" slot-scope="{value, row}">
+                <template #state="{value, row}">
                     <i v-if="row.isRequired()"
                        class="material-icons text-required text-2xl mr-2">error_outline</i>
                     <i v-else-if="row.isBlocked()"
@@ -86,7 +87,7 @@
                     <i v-else-if="row.isIncomplete()"
                        class="material-icons text-complete text-2xl mr-2">radio_button_unchecked</i>
                 </template>
-                <template slot="regions" slot-scope="{value, row}">
+                <template #regions="{value, row}">
                     <span v-if="value">{{ value.pluck('name').map(name => $t(name)).join(', ') }}</span>
                 </template>
             </data-table>
@@ -140,12 +141,12 @@ export default {
 
         this.$bus.$on('scenarios-updated', this.setScenarios);
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('scenarios-updated', this.setScenarios);
     },
     computed: {
         filterEnabled() {
-            return this.regionFilter.length || this.missedTreasuresFilter || this.stateFilter;
+            return this.regionFilter.length || Object.values(this.otherFilters).some(enabled => enabled) || this.stateFilter;
         }
     },
     methods: {

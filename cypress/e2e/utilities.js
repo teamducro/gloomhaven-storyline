@@ -34,6 +34,12 @@ export default {
         );
     },
 
+    // Shared links import the campaign asynchronously and then redirect; wait for that before continuing.
+    visitShared(url) {
+        cy.visit(url);
+        cy.location('hash').should('not.include', '#/shared/');
+    },
+
     setReadOnly() {
         return cy.wrap(
             new Promise((fulfilled) => {

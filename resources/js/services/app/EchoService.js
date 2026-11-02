@@ -1,5 +1,6 @@
 import AuthRepository from "../../apiRepositories/AuthRepository";
 import Echo from "laravel-echo";
+import Pusher from "pusher-js";
 import StoryRepository from "../../apiRepositories/StoryRepository";
 
 export default class EchoService {
@@ -10,11 +11,11 @@ export default class EchoService {
 
     init() {
         let auth = new AuthRepository();
-        window.Pusher = require('pusher-js');
+        window.Pusher = Pusher;
         window.Echo = new Echo({
             broadcaster: 'pusher',
-            key: process.env.MIX_PUSHER_KEY,
-            cluster: process.env.MIX_PUSHER_APP_CLUSTER,
+            key: import.meta.env.MIX_PUSHER_KEY,
+            cluster: import.meta.env.MIX_PUSHER_APP_CLUSTER,
             encrypted: true,
             authorizer: (channel, options) => {
                 return {

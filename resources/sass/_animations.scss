@@ -4,7 +4,7 @@
     transition: opacity .5s;
 }
 
-.fade-enter, .fade-leave-to {
+.fade-enter-from, .fade-leave-to {
     opacity: 0;
 }
 
@@ -12,7 +12,7 @@
     transition: opacity .5s;
 }
 
-.fadein-enter, .fadein-leave-to {
+.fadein-enter-from, .fadein-leave-to {
     transition: opacity 0s;
     opacity: 0;
 }
@@ -22,7 +22,7 @@
     transform-origin: top;
 }
 
-.dropdown-enter, .dropdown-leave-to {
+.dropdown-enter-from, .dropdown-leave-to {
     transform-origin: top;
     opacity: 0;
     transform: scaleY(.9);
@@ -33,7 +33,7 @@
     overflow: hidden;
 }
 
-.expand-enter, .expand-leave-to {
+.expand-enter-from, .expand-leave-to {
     height: 0;
 }
 
@@ -42,7 +42,7 @@
     transform-origin: center;
 }
 
-.modal-enter, .modal-leave-to {
+.modal-enter-from, .modal-leave-to {
     transform-origin: center;
     opacity: 0;
     transform: scale(.9);

@@ -16,9 +16,10 @@
 
 <script>
 
-const md5 = require('js-md5');
+import md5 from 'js-md5';
 
 export default {
+    emits: ['change', 'update:calendar'],
     inject: ['appData'],
     props: {
         calendar: {
@@ -41,7 +42,7 @@ export default {
         this.hash = md5(JSON.stringify(this.currentCalendar));
         this.$bus.$on('calendar-updated', this.setCalendar);
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('calendar-updated', this.setCalendar);
     },
     watch: {

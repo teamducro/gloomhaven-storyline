@@ -23,7 +23,7 @@
                 ref="prosperity"
                 :sheet="sheet"
                 :loading="loading"
-                :prosperity.sync="prosperity"
+                v-model:prosperity="prosperity"
                 @change="store"/>
 
             <div class="w-full mt-8">
@@ -51,12 +51,12 @@
                     id="city-events"
                     :title="$t('City Event Decks')"
                     :label="$t('Add city events')"
-                    :items.sync="sheet.city"
+                    v-model:items="sheet.city"
                     @change="store"
                     @view="(item) => openCard(item, 'C')"
                     ref="city-events"
                 >
-                    <template slot="after-field" slot-scope="{checkedItems}">
+                    <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'C')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
@@ -68,12 +68,12 @@
                     id="road-events"
                     :title="$t('Road Event Decks')"
                     :label="$t('Add road events')"
-                    :items.sync="sheet.road"
+                    v-model:items="sheet.road"
                     @change="store"
                     @view="(item) => openCard(item, 'R')"
                     ref="road-events"
                 >
-                    <template slot="after-field" slot-scope="{checkedItems}">
+                    <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'R')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
@@ -86,12 +86,12 @@
                     id="rift-events"
                     :title="$t('Rift Event Decks')"
                     :label="$t('Add rift events')"
-                    :items.sync="sheet.rift"
+                    v-model:items="sheet.rift"
                     @change="store"
                     @view="(item) => openCard(item, 'RIFT')"
                     ref="rift-events"
                 >
-                    <template slot="after-field" slot-scope="{checkedItems}">
+                    <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'RIFT')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <i class="material-icons mdc-button__icon">launch</i>
@@ -103,14 +103,14 @@
 
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Scenario level') }}</h2>
-                <scenario-level :value.sync="sheet.scenarioLevel" id="scenario-level"
+                <scenario-level v-model:value="sheet.scenarioLevel" id="scenario-level"
                                 @change="store" :characters="sheet.characters"
                 ></scenario-level>
             </div>
 
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
-                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
+                <notes v-model:value="sheet.notes" id="notes" :label="$t('Notes')"
                        @change="store" :is-local-campaign="isLocalCampaign"
                 ></notes>
             </div>
@@ -118,24 +118,26 @@
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Unlocks') }}</h2>
                 <table class="w-full mb-4">
-                    <tr v-for="(unlock, index) in unlocks" v-if="index < 8" :key="'unlock'+index"
-                        class="flex items-center border-b border-gray-600">
-                        <td class="-ml-2">
-                            <checkbox group="unlocks"
-                                      :id="'unlock'+index"
-                                      :checked="sheet.unlocks[index]"
-                                      @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
-                        </td>
-                        <td class="w-full flex items-center flex-wrap">
-                            <label :for="'unlock'+index" class="whitespace-normal md:whitespace-nowrap cursor-pointer">
-                                {{ unlock.goal }}
-                            </label>
-                            <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
-                                <span class="material-icons mr-1">remove</span>
-                                <component v-bind:is="renderHtml(unlock.reward)"></component>
-                            </span>
-                        </td>
-                    </tr>
+                    <template v-for="(unlock, index) in unlocks" :key="'unlock'+index">
+                        <tr v-if="index < 8"
+                            class="flex items-center border-b border-gray-600">
+                            <td class="-ml-2">
+                                <checkbox group="unlocks"
+                                          :id="'unlock'+index"
+                                          :checked="sheet.unlocks[index]"
+                                          @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
+                            </td>
+                            <td class="w-full flex items-center flex-wrap">
+                                <label :for="'unlock'+index" class="whitespace-normal md:whitespace-nowrap cursor-pointer">
+                                    {{ unlock.goal }}
+                                </label>
+                                <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
+                                    <span class="material-icons mr-1">remove</span>
+                                    <component v-bind:is="renderHtml(unlock.reward)"></component>
+                                </span>
+                            </td>
+                        </tr>
+                    </template>
                     <tr class="flex items-center border-b border-gray-600">
                         <td class="-ml-2">
                             <checkbox group="unlocks" id="unlock8"
@@ -243,7 +245,7 @@ export default {
         this.$bus.$on('campaigns-changed', this.render);
         this.$bus.$on('remove-card', this.removeCard);
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('campaigns-changed', this.render);
         this.$bus.$off('remove-card', this.removeCard);
     },

@@ -6,99 +6,101 @@
                     {{ ability ? $t(ability.name) : '' }}
                 </span>
             </template>
-            <div v-if="ability" slot="content" class="w-full h-full flex flex-col md:flex-row outline-none">
-                <div class="relative w-full" style="max-width: 300px;">
-                    <webp :src="ability.image" :alt="$t(ability.name)"
-                          class="w-full rounded-lg sm:rounded-xl"/>
-                    <enhancement-sticker v-for="enhancement in enhancements" :key="enhancement.id"
-                                          :id="enhancement.id" :type="enhancement.type"
-                                          :x="enhancement.x" :y="enhancement.y" :editable="!appData.read_only"
-                                          @drag="drag" @reposition="reposition"/>
-                </div>
-
-                <div v-if="canEnhance" class="md:ml-4 md:mt-0 mb-4 md:w-64 mt-4">
-                    <div v-if="enhancements.length" class="mb-4 space-y-1">
-                        <div v-for="enhancement in enhancements" :key="enhancement.id"
-                             class="flex items-center bg-dark-gray2-75 rounded px-2 py-1">
-                            <enhancement-icon :type="enhancement.type" :size="16" class="mr-2"/>
-                            <span class="truncate">{{ enhancementDisplayLabel(enhancement.type) }}</span>
-                            <span @click="remove(enhancement.id)"
-                                  class="ml-auto material-icons cursor-pointer"
-                                  :class="{'opacity-25 pointer-events-none': appData.read_only}">clear</span>
-                        </div>
+            <template #content>
+                <div v-if="ability" class="w-full h-full flex flex-col md:flex-row outline-none">
+                    <div class="relative w-full" style="max-width: 300px;">
+                        <webp :src="ability.image" :alt="$t(ability.name)"
+                              class="w-full rounded-lg sm:rounded-xl"/>
+                        <enhancement-sticker v-for="enhancement in enhancements" :key="enhancement.id"
+                                              :id="enhancement.id" :type="enhancement.type"
+                                              :x="enhancement.x" :y="enhancement.y" :editable="!appData.read_only"
+                                              @drag="drag" @reposition="reposition"/>
                     </div>
 
-                    <button v-if="!enhancing" @click="enhancing = true" type="button"
-                            class="mdc-button mdc-button--raised">
-                        <i class="material-icons mdc-button__icon">add</i>
-                        <span class="mdc-button__label">{{ $t('Enhance') }}</span>
-                    </button>
-
-                    <div v-else class="flex flex-col space-y-2">
-                        <label class="flex flex-col">
-                            {{ $t('Enhancement') }}
-                            <div class="flex items-center gap-2">
-                                <enhancement-icon :type="type" :size="20"/>
-                                <select id="enhancement-type" v-model="type" class="bg-dark-gray2-75 p-2 rounded flex-1">
-                                    <option v-for="option in typeOptions" :value="option">
-                                        {{ enhancementDisplayLabel(option) }}
-                                    </option>
-                                </select>
+                    <div v-if="canEnhance" class="md:ml-4 md:mt-0 mb-4 md:w-64 mt-4">
+                        <div v-if="enhancements.length" class="mb-4 space-y-1">
+                            <div v-for="enhancement in enhancements" :key="enhancement.id"
+                                 class="flex items-center bg-dark-gray2-75 rounded px-2 py-1">
+                                <enhancement-icon :type="enhancement.type" :size="16" class="mr-2"/>
+                                <span class="truncate">{{ enhancementDisplayLabel(enhancement.type) }}</span>
+                                <span @click="remove(enhancement.id)"
+                                      class="ml-auto material-icons cursor-pointer"
+                                      :class="{'opacity-25 pointer-events-none': appData.read_only}">clear</span>
                             </div>
-                        </label>
+                        </div>
 
-                        <label class="flex flex-col">
-                            {{ $t('Action') }}
-                            <select id="enhancement-half" v-model="half" class="bg-dark-gray2-75 p-2 rounded">
-                                <option value="top">{{ $t('Top action') }}</option>
-                                <option value="bottom">{{ $t('Bottom action') }}</option>
-                            </select>
-                        </label>
+                        <button v-if="!enhancing" @click="enhancing = true" type="button"
+                                class="mdc-button mdc-button--raised">
+                            <i class="material-icons mdc-button__icon">add</i>
+                            <span class="mdc-button__label">{{ $t('Enhance') }}</span>
+                        </button>
 
-                        <label v-if="hasFrosthavenCards(character)" class="flex flex-col">
-                            {{ $t('Ability property') }}
-                            <select v-model="abilityProperty" class="bg-dark-gray2-75 p-2 rounded">
-                                <option value="normal">{{ $t('Normal') }}</option>
-                                <option value="lost">{{ $t('Lost (no persistent)') }}</option>
-                                <option value="persistent">{{ $t('Persistent bonus') }}</option>
-                            </select>
-                        </label>
+                        <div v-else class="flex flex-col space-y-2">
+                            <label class="flex flex-col">
+                                {{ $t('Enhancement') }}
+                                <div class="flex items-center gap-2">
+                                    <enhancement-icon :type="type" :size="20"/>
+                                    <select id="enhancement-type" v-model="type" class="bg-dark-gray2-75 p-2 rounded flex-1">
+                                        <option v-for="option in typeOptions" :value="option">
+                                            {{ enhancementDisplayLabel(option) }}
+                                        </option>
+                                    </select>
+                                </div>
+                            </label>
 
-                        <checkbox-with-label v-if="canDoubleForMultiTarget" id="enhancement-multi-target"
-                                             :label="$t('Targets multiple figures/tiles')"
-                                             :auto-disable="false" :checked.sync="multiTarget"/>
+                            <label class="flex flex-col">
+                                {{ $t('Action') }}
+                                <select id="enhancement-half" v-model="half" class="bg-dark-gray2-75 p-2 rounded">
+                                    <option value="top">{{ $t('Top action') }}</option>
+                                    <option value="bottom">{{ $t('Bottom action') }}</option>
+                                </select>
+                            </label>
 
-                        <label v-if="type === 'attack_hex'" class="flex flex-col">
-                            {{ $t('Existing hexes') }}
-                            <number-field id="enhancement-hex-count" :value.sync="hexCount" :min="1" :max="20"/>
-                        </label>
+                            <label v-if="hasFrosthavenCards(character)" class="flex flex-col">
+                                {{ $t('Ability property') }}
+                                <select v-model="abilityProperty" class="bg-dark-gray2-75 p-2 rounded">
+                                    <option value="normal">{{ $t('Normal') }}</option>
+                                    <option value="lost">{{ $t('Lost (no persistent)') }}</option>
+                                    <option value="persistent">{{ $t('Persistent bonus') }}</option>
+                                </select>
+                            </label>
 
-                        <p>{{ $t('Cost') }}: {{ cost }} {{ $t('gold') }}</p>
-                        <p v-if="!enhancerUsable(sheet.game)" class="text-red-400">
-                            {{ $t('Buying enhancements needs the Enhancer (building 44) built and not wrecked') }}
-                        </p>
-                        <p v-if="atEnhancedCardLimit" class="text-red-400">
-                            {{ $t('Enhanced card limit reached (prosperity level {level})', {level: maxEnhancedCards(sheet)}) }}
-                        </p>
+                            <checkbox-with-label v-if="canDoubleForMultiTarget" id="enhancement-multi-target"
+                                                 :label="$t('Targets multiple figures/tiles')"
+                                                 :auto-disable="false" v-model:checked="multiTarget"/>
 
-                        <div class="flex flex-wrap gap-2">
-                            <button @click="buy" type="button" class="mdc-button mdc-button--raised"
-                                    :disabled="appData.read_only || !canBuy">
-                                <add-links-and-icons class="mr-2" :text="'{COINS}'"/>
-                                <span class="mdc-button__label">{{ $t('Buy') }}</span>
-                            </button>
-                            <button @click="addFree" type="button" class="mdc-button mdc-button--raised"
-                                    :disabled="appData.read_only">
-                                <i class="material-icons mdc-button__icon">add</i>
-                                <span class="mdc-button__label">{{ $t('Add') }}</span>
-                            </button>
-                            <button @click="enhancing = false" type="button" class="mdc-button">
-                                <span class="mdc-button__label">{{ $t('Cancel') }}</span>
-                            </button>
+                            <label v-if="type === 'attack_hex'" class="flex flex-col">
+                                {{ $t('Existing hexes') }}
+                                <number-field id="enhancement-hex-count" v-model:value="hexCount" :min="1" :max="20"/>
+                            </label>
+
+                            <p>{{ $t('Cost') }}: {{ cost }} {{ $t('gold') }}</p>
+                            <p v-if="!enhancerUsable(sheet.game)" class="text-red-400">
+                                {{ $t('Buying enhancements needs the Enhancer (building 44) built and not wrecked') }}
+                            </p>
+                            <p v-if="atEnhancedCardLimit" class="text-red-400">
+                                {{ $t('Enhanced card limit reached (prosperity level {level})', {level: maxEnhancedCards(sheet)}) }}
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                                <button @click="buy" type="button" class="mdc-button mdc-button--raised"
+                                        :disabled="appData.read_only || !canBuy">
+                                    <add-links-and-icons class="mr-2" :text="'{COINS}'"/>
+                                    <span class="mdc-button__label">{{ $t('Buy') }}</span>
+                                </button>
+                                <button @click="addFree" type="button" class="mdc-button mdc-button--raised"
+                                        :disabled="appData.read_only">
+                                    <i class="material-icons mdc-button__icon">add</i>
+                                    <span class="mdc-button__label">{{ $t('Add') }}</span>
+                                </button>
+                                <button @click="enhancing = false" type="button" class="mdc-button">
+                                    <span class="mdc-button__label">{{ $t('Cancel') }}</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </template>
         </modal>
     </div>
 </template>
@@ -232,10 +234,10 @@ export default {
             const cost = this.cost;
 
             if (!this.sheet.enhancements[this.character.id]) {
-                Vue.set(this.sheet.enhancements, this.character.id, {});
+                this.sheet.enhancements[this.character.id] = {};
             }
             if (!this.sheet.enhancements[this.character.id][this.ability.code]) {
-                Vue.set(this.sheet.enhancements[this.character.id], this.ability.code, []);
+                this.sheet.enhancements[this.character.id][this.ability.code] = [];
             }
 
             this.sheet.enhancements[this.character.id][this.ability.code].push({

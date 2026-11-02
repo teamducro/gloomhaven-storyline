@@ -73,7 +73,7 @@ export default {
             this.select.listen('MDCSelect:change', this.changeLanguage);
         }
     },
-    destroyed() {
+    unmounted() {
         this.select?.destroy()
     },
     methods: {

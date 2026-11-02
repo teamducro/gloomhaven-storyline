@@ -43,7 +43,7 @@ export default {
     },
     methods: {
         toggle(index) {
-            this.$set(this.expand, index, !this.expand[index]);
+            this.expand[index] = !this.expand[index];
         },
     }
 }

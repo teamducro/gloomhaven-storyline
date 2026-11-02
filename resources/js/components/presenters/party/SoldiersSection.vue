@@ -5,7 +5,7 @@
                 <add-links-and-icons class="flex items-center gap-2" tag="h2" :text="'{SOLDIER}' + $t('Soldiers')"/>
             </slot>
             <rollback :loading="loading" ref="rollback"
-                      :value.sync="sheet.soldiers"/>
+                      v-model:value="sheet.soldiers"/>
         </div>
         <div class="flex flex-col">
             <div v-for="(soldiers, lvl) in soldiersPerLvl" class="flex items-center">
@@ -25,6 +25,7 @@
 import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
+    emits: ['change'],
     props: {
         sheet: {
             type: CampaignSheet,

@@ -49,6 +49,7 @@
 import Helpers from "../../services/Helpers";
 
 export default {
+    emits: ['rowClick'],
     props: {
         data: {
             type: Array,

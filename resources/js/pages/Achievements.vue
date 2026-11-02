@@ -46,17 +46,15 @@
             <div v-if="appData.game !== 'fh'" class="w-full flex justify-center">
                 <ul v-if="achievements" id="global-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="global-list">
-                    <li v-for="achievement in achievements.items"
-                        v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
-                        :key="achievement.id"
-                        class="mdc-list-item h-auto cursor-pointer"
-                        :tabindex="achievement.id">
-                        <template>
-                    <span class="mdc-list-item__text opacity-75">
-                        {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
-                    </span>
-                        </template>
-                    </li>
+                    <template v-for="achievement in achievements.items" :key="achievement.id">
+                        <li v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
+                            class="mdc-list-item h-auto cursor-pointer"
+                            :tabindex="achievement.id">
+                            <span class="mdc-list-item__text opacity-75">
+                                {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
+                            </span>
+                        </li>
+                    </template>
                 </ul>
             </div>
         </div>
@@ -67,17 +65,15 @@
             <div class="w-full flex justify-center">
                 <ul v-if="achievements" id="party-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="party-list">
-                    <li v-for="achievement in achievements.items"
-                        v-if="achievement.isParty() && achievement.awarded"
-                        :key="achievement.id"
-                        class="mdc-list-item h-auto cursor-pointer"
-                        :tabindex="achievement.id">
-                        <template>
-                    <span class="mdc-list-item__text opacity-75">
-                        {{ $t(achievement.name) }}
-                    </span>
-                        </template>
-                    </li>
+                    <template v-for="achievement in achievements.items" :key="achievement.id">
+                        <li v-if="achievement.isParty() && achievement.awarded"
+                            class="mdc-list-item h-auto cursor-pointer"
+                            :tabindex="achievement.id">
+                            <span class="mdc-list-item__text opacity-75">
+                                {{ $t(achievement.name) }}
+                            </span>
+                        </li>
+                    </template>
                 </ul>
             </div>
         </div>
@@ -88,17 +84,15 @@
             <div class="w-full flex justify-center">
                 <ul v-if="achievements" id="campaign-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="campaign-list">
-                    <li v-for="achievement in achievements.items"
-                        v-if="achievement.isCampaign() && achievement.awarded && !achievement.hidden"
-                        :key="achievement.id"
-                        class="mdc-list-item h-auto cursor-pointer"
-                        :tabindex="achievement.id">
-                        <template>
-                    <span class="mdc-list-item__text opacity-75">
-                        {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
-                    </span>
-                        </template>
-                    </li>
+                    <template v-for="achievement in achievements.items" :key="achievement.id">
+                        <li v-if="achievement.isCampaign() && achievement.awarded && !achievement.hidden"
+                            class="mdc-list-item h-auto cursor-pointer"
+                            :tabindex="achievement.id">
+                            <span class="mdc-list-item__text opacity-75">
+                                {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
+                            </span>
+                        </li>
+                    </template>
                 </ul>
             </div>
         </div>
@@ -140,7 +134,7 @@ export default {
 
         this.$bus.$on('achievements-updated', this.setAchievements);
     },
-    destroyed() {
+    unmounted() {
         if (this.globalList) {
             this.globalList.destroy();
         }

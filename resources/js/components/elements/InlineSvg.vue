@@ -1,29 +1,34 @@
 <template>
-    <component v-bind:is="render()"></component>
+    <component v-bind:is="component"></component>
 </template>
 <script>
 export default {
     props: {
         src: String,
-        classes: Array | String,
+        classes: [Array, String],
         width: Number,
         height: Number,
         id: String,
     },
 
-    methods: {
-        render() {
-            return {
-                template: new Svg(this.src)
-                    .classes(this.classes)
-                    .width(this.width)
-                    .height(this.height)
-                    .id(this.id)
-                    .toString()
-            };
-        }
+    computed: {
+        // Separate from component: classes is often an inline array, a new one each parent render, but the markup stays equal.
+        markup() {
+            return new Svg(this.src)
+                .classes(this.classes)
+                .width(this.width)
+                .height(this.height)
+                .id(this.id)
+                .toString();
+        },
+        // A new component object per render made Vue remount the whole svg on every parent update.
+        component() {
+            return {template: this.markup};
+        },
     }
 };
+
+const svgs = import.meta.glob('../../../svg/**/*.svg', {query: '?raw', import: 'default', eager: true});
 
 class Svg {
     constructor(src) {
@@ -31,7 +36,7 @@ class Svg {
         if (!src.endsWith('.svg')) {
             src += '.svg';
         }
-        div.innerHTML = require('../../../svg/' + src);
+        div.innerHTML = svgs['../../../svg/' + src];
 
         let fragment = document.createDocumentFragment();
         fragment.appendChild(div);

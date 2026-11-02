@@ -17,6 +17,7 @@ import PreloadImage from "../../services/PreloadImage";
 import BaseUrl from "../../mixins/BaseUrl";
 
 export default {
+    emits: ['loaded'],
     mixins: [BaseUrl],
     props: {
         src: {

@@ -2,24 +2,26 @@
     <div>
         <modal ref="modal" :title="card ? ($t(card.translatedType) + ' #' + card.id) : ''" :max-width="'348px'"
                :overflowHidden="animating">
-            <div v-if="card" slot="content" class="w-full h-full flex flex-col outline-none">
-                <div class="relative w-full" style="max-width: 300px;">
-                    <flip-card :flipped="flipped">
-                        <template v-slot:front>
-                            <webp :src="card.images[0]" :alt="$t(card.translatedType) + ' #' + card.id"
-                                  class="w-full rounded-lg sm:rounded-xl"/>
-                        </template>
-                        <template v-slot:back>
-                            <webp :src="card.images[1]" :alt="$t(card.translatedType) + ' #' + card.id"
-                                  class="w-full rounded-lg sm:rounded-xl"/>
-                        </template>
-                    </flip-card>
+            <template #content>
+                <div v-if="card" class="w-full h-full flex flex-col outline-none">
+                    <div class="relative w-full" style="max-width: 300px;">
+                        <flip-card :flipped="flipped">
+                            <template v-slot:front>
+                                <webp :src="card.images[0]" :alt="$t(card.translatedType) + ' #' + card.id"
+                                      class="w-full rounded-lg sm:rounded-xl"/>
+                            </template>
+                            <template v-slot:back>
+                                <webp :src="card.images[1]" :alt="$t(card.translatedType) + ' #' + card.id"
+                                      class="w-full rounded-lg sm:rounded-xl"/>
+                            </template>
+                        </flip-card>
 
-                    <!-- push buttons under the flip card wit the same aspect ratio -->
-                    <webp :src="card.images[0]" class="invisible"></webp>
+                        <!-- push buttons under the flip card wit the same aspect ratio -->
+                        <webp :src="card.images[0]" class="invisible"></webp>
 
+                    </div>
                 </div>
-            </div>
+            </template>
         </modal>
     </div>
 </template>

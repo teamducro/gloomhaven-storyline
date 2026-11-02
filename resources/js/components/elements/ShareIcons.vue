@@ -5,14 +5,12 @@
                  :srcset="`${baseUrl}/img/icons/copy-link${black ? '-black' : ''}@2x.png 2x`"
                  class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
         </a>
-        <share-network
+        <a
                 v-for="network in networks"
                 :key="network"
-                :network="network"
-                :url="url"
-                :title="title"
-                :description="description"
-                :hashtags="hashtags"
+                :href="shareUrl(network)"
+                target="_blank"
+                rel="noopener"
                 class="cursor-pointer"
                 :class="{
                     'ml-auto': network === 'reddit' && marginCenter,
@@ -21,7 +19,7 @@
             <img :src="`${baseUrl}/img/icons/${network}${black ? '-black' : ''}.png`" :alt="network"
                  :srcset="`${baseUrl}/img/icons/${network}${black ? '-black' : ''}@2x.png 2x`"
                  class="opacity-75 hover:opacity-100 transition-opacity duration-200"/>
-        </share-network>
+        </a>
     </div>
 </template>
 
@@ -77,6 +75,20 @@
             this.addCopyTippy();
         },
         methods: {
+            shareUrl(network) {
+                const url = encodeURIComponent(this.url);
+                const title = encodeURIComponent(this.title);
+                const description = encodeURIComponent(this.description);
+                const hashtags = encodeURIComponent(this.hashtags);
+
+                return {
+                    whatsapp: `https://api.whatsapp.com/send?text=${title}%0D%0A${url}%0D%0A%0D%0A${description}`,
+                    email: `mailto:?subject=${title}&body=${url}%0D%0A%0D%0A${description}`,
+                    reddit: `https://www.reddit.com/submit?url=${url}&title=${title}`,
+                    facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}&hashtag=${hashtags}`,
+                    twitter: `https://twitter.com/intent/tweet?text=${title}&url=${url}&hashtags=${hashtags}`,
+                }[network];
+            },
             addCopyTippy() {
                 if (this.copyTippy) {
                     return;

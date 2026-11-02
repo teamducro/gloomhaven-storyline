@@ -70,7 +70,7 @@ export default {
             this.submitCampaignCode();
         }
     },
-    destroyed() {
+    unmounted() {
         this.codeField?.destroy();
     },
     methods: {

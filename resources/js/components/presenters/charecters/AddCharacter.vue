@@ -14,27 +14,31 @@
             <div class="w-full">
                 <h2>{{ $t('Add Character') }}</h2>
                 <ul class="flex flex-col py-4 px-3">
-                    <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" v-if="unlocked"
-                        class="add-character flow-root"
-                        :class="['order-'+sheet.characterOrder[id], sheet.characterOrder[id] == 0 ? 'mt-0' : 'mt-6']">
-                        <a @click.stop.prevent="$emit('create', id)" href="#"
-                           class="-m-3 p-3 whitespace-nowrap flex items-center rounded-md text-base font-medium text-white hover:bg-black2-75 transition ease-in-out duration-150"
-                           :class="{'text-white2-50 grayscale cursor-default': characterRepository.partyHasCharacter(sheet, id)}">
-                            <character-icon class="flex-shrink-0 w-5 mr-2"
-                                            :class="[!characterRepository.partyHasCharacter(sheet, id) ? 'hover:cursor-pointer': '']"
-                                            :character="id"/>
-                            <span>{{ $t(characterNames[id]) }}</span>
-                        </a>
-                    </li>
+                    <template v-for="(unlocked, id) in sheet.characterUnlocks" :key="id">
+                        <li v-if="unlocked"
+                            class="add-character flow-root"
+                            :class="['order-'+sheet.characterOrder[id], sheet.characterOrder[id] == 0 ? 'mt-0' : 'mt-6']">
+                            <a @click.stop.prevent="$emit('create', id)" href="#"
+                               class="-m-3 p-3 whitespace-nowrap flex items-center rounded-md text-base font-medium text-white hover:bg-black2-75 transition ease-in-out duration-150"
+                               :class="{'text-white2-50 grayscale cursor-default': characterRepository.partyHasCharacter(sheet, id)}">
+                                <character-icon class="flex-shrink-0 w-5 mr-2"
+                                                :class="[!characterRepository.partyHasCharacter(sheet, id) ? 'hover:cursor-pointer': '']"
+                                                :character="id"/>
+                                <span>{{ $t(characterNames[id]) }}</span>
+                            </a>
+                        </li>
+                    </template>
                 </ul>
                 <h2 v-if="hasLocked">{{ $t('Locked') }}</h2>
                 <ul v-if="hasLocked" class="flex flex-wrap mx-1 py-2">
-                    <li v-for="(unlocked, id) in sheet.characterUnlocks" :key="id" v-if="!unlocked" class="flow-root"
-                        :class="'order-'+sheet.characterOrder[id]">
-                        <a @click.stop.prevent="$emit('create', id)" href="#" class="block w-5 m-1">
-                            <character-icon class="flex-shrink-0 w-5" :character="id"/>
-                        </a>
-                    </li>
+                    <template v-for="(unlocked, id) in sheet.characterUnlocks" :key="id">
+                        <li v-if="!unlocked" class="flow-root"
+                            :class="'order-'+sheet.characterOrder[id]">
+                            <a @click.stop.prevent="$emit('create', id)" href="#" class="block w-5 m-1">
+                                <character-icon class="flex-shrink-0 w-5" :character="id"/>
+                            </a>
+                        </li>
+                    </template>
                 </ul>
             </div>
         </dropdown>
@@ -49,6 +53,7 @@ import Sheet from "../../../models/Sheet";
 import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
+    emits: ['create'],
     inject: ['appData'],
     props: {
         sheet: Sheet|CampaignSheet
@@ -71,7 +76,7 @@ export default {
 
         this.$bus.$on('campaigns-changed', this.render);
     },
-    destroyed() {
+    unmounted() {
         this.$bus.$off('campaigns-changed', this.render);
     },
     methods: {

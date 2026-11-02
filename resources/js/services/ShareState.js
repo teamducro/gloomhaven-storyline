@@ -197,7 +197,7 @@ export default class ShareState {
 
     url() {
         return Helpers.inProduction()
-            ? process.env.MIX_APP_URL
+            ? import.meta.env.MIX_APP_URL
             : location.protocol + '//' + location.host;
     }
 

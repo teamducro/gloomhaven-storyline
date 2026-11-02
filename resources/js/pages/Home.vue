@@ -434,12 +434,12 @@ export default {
     components: {HeroHeader, TwoColumnContent, Pricing, Creation, Faq, Patreons},
     data() {
         return {
-            appUrl: process.env.MIX_APP_URL,
-            game: process.env.MIX_MAIN_GAME,
+            appUrl: import.meta.env.MIX_APP_URL,
+            game: import.meta.env.MIX_MAIN_GAME,
         }
     },
     mounted() {
-        let path = this.$router.currentRoute.path.substring(1);
+        let path = this.$route.path.substring(1);
         if (path.length) {
             this.scrollTo(path);
         }

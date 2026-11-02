@@ -4,44 +4,48 @@
             <template v-slot:title>
                 <span class="capitalize">{{ $t('manage-abilities.title') }}</span>
             </template>
-            <div v-if="character" slot="content" class="w-full">
-                <p v-if="character.level === 1">
-                    {{ $t('manage-abilities.level_1', {character: character.name}) }}
-                </p>
-                <p v-else>{{ $t('manage-abilities.text') }}</p>
+            <template #content>
+                <div v-if="character" class="w-full">
+                    <p v-if="character.level === 1">
+                        {{ $t('manage-abilities.level_1', {character: character.name}) }}
+                    </p>
+                    <p v-else>{{ $t('manage-abilities.text') }}</p>
 
-                <template v-if="abilities.isNotEmpty()">
-                    <div class="grid gap-2 grid-cols-2 xs:grid-cols-3 my-4">
-                        <div v-for="level in character.level" v-if="level > 1" :class="'slot-'+level">
-                            <h3 class="text-white text-xl text-center">{{ level }}</h3>
-                            <div v-if="!character.abilityPerLevel[level]"
-                                 :class="'w-full h-9 border-dashed rounded border border-character-'+character.id.toLowerCase()">
+                    <template v-if="abilities.isNotEmpty()">
+                        <div class="grid gap-2 grid-cols-2 xs:grid-cols-3 my-4">
+                            <template v-for="level in character.level">
+                                <div v-if="level > 1" :class="'slot-'+level">
+                                    <h3 class="text-white text-xl text-center">{{ level }}</h3>
+                                    <div v-if="!character.abilityPerLevel[level]"
+                                         :class="'w-full h-9 border-dashed rounded border border-character-'+character.id.toLowerCase()">
 
+                                    </div>
+                                    <ability v-else :key="'selected-available-'+character.abilityPerLevel[level]"
+                                             :ability="abilities.firstWhere('code', character.abilityPerLevel[level])"
+                                             :selected="true" :active="true" :stacked="true"
+                                             :enhancements="characterEnhancements[character.abilityPerLevel[level]] || []"
+                                             group="selected-available" @selected="selected" @click="openModel"/>
+                                </div>
+                            </template>
+                        </div>
+
+                        <div class="relative">
+                            <div class="inset-0 flex items-center" aria-hidden="true">
+                                <div class="w-full border-t border-white2-25"/>
                             </div>
-                            <ability v-else :key="'selected-available-'+character.abilityPerLevel[level]"
-                                     :ability="abilities.firstWhere('code', character.abilityPerLevel[level])"
-                                     :selected="true" :active="true" :stacked="true"
-                                     :enhancements="characterEnhancements[character.abilityPerLevel[level]] || []"
-                                     group="selected-available" @selected="selected" @click="openModel"/>
                         </div>
-                    </div>
 
-                    <div class="relative">
-                        <div class="inset-0 flex items-center" aria-hidden="true">
-                            <div class="w-full border-t border-white2-25"/>
+                        <div class="my-4 grid gap-2 grid-cols-2 xs:grid-cols-3">
+                            <ability v-for="ability in abilities" :key="'manage-available-'+ability.code"
+                                     :class="['transition-opacity', isActive(ability) ? 'opacity-100' : 'opacity-50']"
+                                     :ability="ability" :selected="selectedAbilities.includes(ability.code)"
+                                     :active="isActive(ability)" :stacked="false"
+                                     :enhancements="characterEnhancements[ability.code] || []"
+                                     group="manage-available" @selected="selected" @click="openModel"/>
                         </div>
-                    </div>
-
-                    <div class="my-4 grid gap-2 grid-cols-2 xs:grid-cols-3">
-                        <ability v-for="ability in abilities" :key="'manage-available-'+ability.code"
-                                 :class="['transition-opacity', isActive(ability) ? 'opacity-100' : 'opacity-50']"
-                                 :ability="ability" :selected="selectedAbilities.includes(ability.code)"
-                                 :active="isActive(ability)" :stacked="false"
-                                 :enhancements="characterEnhancements[ability.code] || []"
-                                 group="manage-available" @selected="selected" @click="openModel"/>
-                    </div>
-                </template>
-            </div>
+                    </template>
+                </div>
+            </template>
         </modal>
     </div>
 </template>
@@ -51,6 +55,7 @@
 import AbilityRepository from "../../repositories/AbilityRepository";
 
 export default {
+    emits: ['store'],
     inject: ['appData'],
     props: {
         sheet: Object,
@@ -118,14 +123,14 @@ export default {
                     .find(slotLevel => slotLevel >= ability.level && this.character.abilityPerLevel[slotLevel] === null);
 
                 if (slotLevel) {
-                    Vue.set(this.character.abilityPerLevel, slotLevel, code);
+                    this.character.abilityPerLevel[slotLevel] = code;
                     this.store();
                 }
             } else {
                 const slotLevel = this.getSelectedLevel(code);
 
                 if (slotLevel) {
-                    Vue.set(this.character.abilityPerLevel, slotLevel, null);
+                    this.character.abilityPerLevel[slotLevel] = null;
                     this.store();
                 }
             }
