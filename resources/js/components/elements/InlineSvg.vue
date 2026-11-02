@@ -1,5 +1,5 @@
 <template>
-    <component v-bind:is="render()"></component>
+    <component v-bind:is="component"></component>
 </template>
 <script>
 export default {
@@ -11,17 +11,20 @@ export default {
         id: String,
     },
 
-    methods: {
-        render() {
-            return {
-                template: new Svg(this.src)
-                    .classes(this.classes)
-                    .width(this.width)
-                    .height(this.height)
-                    .id(this.id)
-                    .toString()
-            };
-        }
+    computed: {
+        // Separate from component: classes is often an inline array, a new one each parent render, but the markup stays equal.
+        markup() {
+            return new Svg(this.src)
+                .classes(this.classes)
+                .width(this.width)
+                .height(this.height)
+                .id(this.id)
+                .toString();
+        },
+        // A new component object per render made Vue remount the whole svg on every parent update.
+        component() {
+            return {template: this.markup};
+        },
     }
 };
 

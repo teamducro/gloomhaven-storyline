@@ -9,6 +9,9 @@ import SheetRepository from "./SheetRepository";
 import OverlayRepository from "./OverlayRepository";
 import {Requirement} from "../models/Requirement";
 
+// Keyed by the scenarios array, so a refetch builds a new index.
+const idIndexes = new WeakMap();
+
 export default class ScenarioRepository {
     fetch(game) {
         return collect(this.gameData.scenarios(game)).map((scenario) => {
@@ -261,7 +264,7 @@ export default class ScenarioRepository {
     }
 
     find(id) {
-        return this.get().firstWhere('id', this.parseInt(id));
+        return this.idIndex().get(this.parseInt(id));
     }
 
     findMany(list) {
@@ -284,6 +287,18 @@ export default class ScenarioRepository {
 
     get() {
         return app.scenarios || collect();
+    }
+
+    // The validator looks scenarios up thousands of times per run; a linear scan through the reactive collection dominated it.
+    idIndex() {
+        const items = this.get().items;
+        if (!idIndexes.has(items)) {
+            const index = new Map();
+            items.forEach(scenario => index.has(scenario.id) || index.set(scenario.id, scenario));
+            idIndexes.set(items, index);
+        }
+
+        return idIndexes.get(items);
     }
 
     whereState(state) {
