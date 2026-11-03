@@ -43,11 +43,12 @@ https://gloomhaven-storyline.com
 
   Using the filter feature, you can find just the scenario you need to complete your personal quest.
 - **Expansions**\
-  The tracker has support for Forgotten Circles and Jaws of the Lion
+  The tracker has support for Frosthaven, Forgotten Circles, Jaws of the Lion, Crimson Scales and the Mercenary Pack
 - **Support for all modern devices**\
   Gloomhaven Storyline supports all modern devices and browsers. Easy to use on your smartphone.
 - **Multi language**\
-  Gloomhaven Storyline is available in English, French, Italian, German and Spanish!
+  Gloomhaven Storyline is available in English, French, Italian, German, Spanish, Polish, Russian, Hungarian and
+  Portuguese!
 
   Please contact me if you like to contribute with translations.
 - **Virtual Gloomhaven Board**\
@@ -71,41 +72,69 @@ Thanks to these creators for their content.
 
 ## How to build the tracker locally?
 
-*Setup local webserver using Laravel Valet* (feel free to use something else like mamp for a local webserver) 
+The tracker is a Vue 3 app built with [Vite](https://vite.dev). It is a static site: the build writes everything into
+`public/`, and any web server that serves that directory will do. There is no Vite dev server. No backend is needed
+either; cloud sync is optional and stays off while `MIX_API_URL` is empty.
 
-- Fork the project and clone it 
-- Install [Laravel Valet](https://laravel.com/docs/master/valet)
-- Navigate to project directory
-- run `valet link`
-- run `valet secure`
+*Install dependencies*
 
-*Setup project and install dependencies*
+- Fork the project and clone it.
+- Install [node](https://nodejs.org/) 22 (see `.nvmrc`; Vite needs at least 20.19), which includes `npm`.
+- Run `npm install` from the project directory.
 
-- Install [node](https://nodejs.org/) version 22 (Vite needs at least 20.19), the installation will include `npm`.
-- copy `.env.example` to `.env`
-- set the `MIX_WEB_URL` to your local website, for example: `MIX_WEB_URL=https://gloomhaven-storyline.test`
-- set `MIX_APP_URL` to the same domain and append `/tracker`, for example: `MIX_APP_URL=https://gloomhaven-storyline.test/tracker`
-- run `npm install` from the project directory to install dependencies.
-- run `npm run dev` to compile project files and assets to the `public` directory.
+*Option A: quick start on localhost (no extra tools)*
 
-If everything is working correctly you can visit the tracker locally on: `https://gloomhaven-storyline.test/tracker`
+- Copy `.github/.env` to `.env`. It is preconfigured for `http://localhost:8080`.
+- Run `npm run watch` to build into `public/` and rebuild when files change.
+- In a second terminal, run `npx http-server public -p 8080 -c-1` (`-c-1` turns off caching so you always get the latest build).
+- Visit `http://localhost:8080/tracker`.
 
-*Development*
+*Option B: a local `.test` domain (matches the Cypress default config)*
 
-The project is a Vue 3 app built with [Vite](https://vite.dev). There is no dev server: Vite builds into `public`, which Valet serves.
+- Set up [Laravel Valet](https://laravel.com/docs/master/valet) (macOS), then run `valet link && valet secure`.
+  On Linux, lerd works too (it reads `.lerd.yaml`). `nginx.lerd.conf` currently hardcodes the maintainer's `root`
+  path, so point it at your own `public/` directory first.
+- Copy `.env.example` to `.env` and set:
+  - `MIX_WEB_URL=https://gloomhaven-storyline.test`
+  - `MIX_APP_URL=https://gloomhaven-storyline.test/tracker`
+- Run `npm run watch` (or `npm run dev` for a single build).
+- Visit `https://gloomhaven-storyline.test/tracker`.
+
+*Builds*
 
 - `npm run watch` rebuilds the tracker and the website on every change; refresh the browser to see it.
 - `npm run dev` builds once (unminified, with source maps).
 - `npm run production` builds for production (minified, hashed file names), `npm run prod-fh` builds the Frosthaven site.
+- `MIX_MAIN_GAME` in `.env` picks the base game of the build (`gh` or `fh`). The other games are selectable inside the app.
 - The service worker caches the app; if a change doesn't show up, use a hard reload or unregister it in the browser's dev tools.
 
-*Tests*
+## Running the tests
 
-End-to-end tests use [Cypress](https://www.cypress.io) against `https://gloomhaven-storyline.test`, so build first.
+The tests are [Cypress](https://www.cypress.io) end-to-end tests in `cypress/e2e/`. They run against a built, served
+copy of the site, so build and start one of the setups above first.
 
-- `npm test` opens the Cypress runner.
-- `npx cypress run --spec cypress/e2e/tracker/storyline.cy.js` runs one spec headless.
+- `npm test` opens the interactive Cypress runner (expects `https://gloomhaven-storyline.test`).
+- `npx cypress run --spec cypress/e2e/tracker/storyline.cy.js` runs one spec headless against the `.test` domain.
+- To run headless against Option A instead:
+  ```bash
+  npx cypress run --config baseUrl=http://localhost:8080 --spec cypress/e2e/tracker/storyline.cy.js
+  ```
+  Leave off `--spec` to run every test.
 
-After changes are made, open a Pull Request into the develop branch for review. 
+If Cypress reports a missing binary, run `npx cypress install`. Some npm versions skip Cypress's install script.
+
+The same tests run on GitHub Actions for every pull request.
+
+## Translations
+
+English (`resources/js/lang/en/`) is the source of truth. After adding English keys, run `npm run lang` to copy any
+missing keys into the other languages, then translate them. The script needs `"type": "module"` temporarily added to
+`package.json`; don't commit that change.
+
+## Contributing
+
+Open pull requests against the `develop` branch of
+[teamducro/gloomhaven-storyline](https://github.com/teamducro/gloomhaven-storyline), and make sure the Cypress tests
+pass.
 
 All content remains under creative commons license BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
