@@ -11,7 +11,9 @@ class PersonalQuest {
         this.building_unlocks = data.building_unlocks;
         this._unlock = data.unlock;
         this.requiredBuildingLevel = data.required_building_level;
-        this.progress = [...data.progress];
+        // Deep copy: progress values are mutated in place, and the imported JSON is shared by every
+        // instance of the quest (ConQuests cards are even shared between games).
+        this.progress = _.cloneDeep(data.progress);
         this.card = new Card('Q-' + this.id, game);
         // Store already unlocked building so that subsequent validations don't unlock the alt. building
         this.unlockedBuilding = data.unlockedBuilding;

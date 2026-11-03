@@ -186,7 +186,8 @@ export default {
             return (id) => {
                 return id.toLowerCase().startsWith(query)
                     || Helpers.sanitize(this.quests[id]._name).startsWith(query)
-                    || Helpers.sanitize(this.quests[id].number).startsWith(query);
+                    || Helpers.sanitize(this.quests[id].number).startsWith(query)
+                    || (this.quests[id].pack === 'conquests' && String(this.quests[id].id).slice(2).replace(/^0+/, '').startsWith(query));
             }
         },
         unlockedBuildingName() {

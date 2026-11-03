@@ -58,6 +58,27 @@ describe('Settings', () => {
         });
     });
 
+    it('It does not overwrite reloaded campaign data when toggling ConQuests', () => {
+        cy.visit('/tracker/#/settings');
+        cy.get('#conquests-enabled');
+
+        // A teammate's sync lands while Settings is open: same path as the live-sync listener in app.js.
+        cy.window().then(async (win) => {
+            const data = JSON.parse(win.localStorage.getItem(win.app.campaignId));
+            data['sheet'] = {...(data['sheet'] || {}), prosperityIndex: 10};
+            win.localStorage.setItem(win.app.campaignId, JSON.stringify(data));
+            await win.app.loadCampaignData();
+            await win.app.campaignsChanged(false);
+        });
+
+        cy.get('#conquests-enabled').check();
+        cy.window().then((win) => {
+            const data = JSON.parse(win.localStorage.getItem(win.app.campaignId));
+            expect(data['sheet'].prosperityIndex).to.eq(10);
+            expect(data['sheet'].conquestsEnabled).to.eq(true);
+        });
+    });
+
     it('It disables the ConQuests checkbox when read only', () => {
         cy.visit('/tracker/#/settings');
 

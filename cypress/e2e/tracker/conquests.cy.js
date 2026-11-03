@@ -126,6 +126,35 @@ describe('ConQuests personal quests', () => {
         cy.get('li').contains('Conquer Your Demons').closest('span').should('not.have.class', 'opacity-50');
     });
 
+    it('It finds ConQuests cards by their printed number', () => {
+        cy.visit('/tracker/#/characters');
+        seedSheet('sheet', {conquestsEnabled: true, prosperityIndex: ghProsperity5});
+
+        utilities.openCharacter();
+        utilities.scrollTo('60%');
+        cy.get(`input[name="personal-quests"]`).type('03', {scrollBehavior: false});
+        cy.get('li').contains('ConQuests 03 Consequences of Combat');
+    });
+
+    it('It does not share ConQuests progress between games', () => {
+        utilities.enableGame('fh');
+        cy.visit('/tracker/#/characters');
+        seedSheet('campaign-fh', {conquestsEnabled: true, prosperityIndex: fhProsperity5});
+        seedSheet('sheet', {conquestsEnabled: true, prosperityIndex: ghProsperity5});
+
+        utilities.openCharacter();
+        utilities.scrollTo('60%');
+        selectQuest('ConQuests 01 Conquer Your Demons');
+        cy.get('#pq-0-0').click();
+
+        // Switch game in-app, without reloading the page.
+        cy.window().then((win) => win.app.$bus.$emit('game-selected', 'fh'));
+        utilities.openCharacter('Blinkblade');
+        utilities.scrollTo('60%');
+        selectQuest('ConQuests 01 Conquer Your Demons');
+        cy.get('#pq-0-0').should('not.be.checked');
+    });
+
     it('It offers ConQuests in Frosthaven', () => {
         utilities.enableGame('fh');
         utilities.switchGame('fh');

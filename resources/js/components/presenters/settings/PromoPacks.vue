@@ -34,11 +34,22 @@ export default {
         }
     },
     beforeMount() {
-        if (conquestsGames.includes(this.appData.game)) {
-            this.sheet = new SheetRepository().make(this.appData.game);
-        }
+        this.init();
+    },
+    mounted() {
+        this.$bus.$on('campaigns-changed', this.init);
+    },
+    unmounted() {
+        this.$bus.$off('campaigns-changed', this.init);
     },
     methods: {
+        // Rebuild from the current campaign data: storing a stale sheet would overwrite a restored
+        // snapshot, another campaign, or a teammate's synced changes.
+        init() {
+            this.sheet = conquestsGames.includes(this.appData.game)
+                ? new SheetRepository().make(this.appData.game)
+                : null;
+        },
         store() {
             this.sheet.store();
             new StorySyncer().store();
