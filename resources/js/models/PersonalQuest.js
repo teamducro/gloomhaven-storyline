@@ -17,6 +17,17 @@ class PersonalQuest {
         this.unlockedBuilding = data.unlockedBuilding;
         this._game = game;
         this.translationKey = `personal_quests.${this.game}-${this.id}`;
+        this.pack = data.pack;
+        this.requiredProsperity = data.required_prosperity;
+
+        // Promo pack quests are shared between games: one translation entry and one image folder for all of them,
+        // and the printed card number (e.g. "ConQuests 01") instead of "#cq01".
+        if (this.pack === 'conquests') {
+            this.number = 'ConQuests ' + String(this.id).slice(2);
+            this.translationKey = `personal_quests.conquests-${this.id}`;
+            this.card = new Card('Q-' + this.id, 'conquests');
+            this.card.label = this.number;
+        }
     }
 
     get name() {

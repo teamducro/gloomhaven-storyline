@@ -13,6 +13,7 @@ import questsCsJson from '../quests-cs.json'
 import personalQuestsJson from '../personal-quests.json'
 import personalQuestsCsJson from '../personal-quests-cs.json'
 import personalQuestsFhJson from '../personal-quests-fh.json'
+import personalQuestsConquestsJson from '../personal-quests-conquests.json'
 import itemsJson from '../items.json'
 import itemsJotlJson from '../items-jotl.json'
 import itemsCsJson from '../items-cs.json'
@@ -228,6 +229,11 @@ export default class GameData {
             default:
                 return personalQuestsJson
         }
+    }
+
+    // ConQuests 2025 promo pack: personal quests shared by Gloomhaven, Forgotten Circles and Frosthaven.
+    conquestsPersonalQuests() {
+        return personalQuestsConquestsJson
     }
 
     attackModifierDeck() {

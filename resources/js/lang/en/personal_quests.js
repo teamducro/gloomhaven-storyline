@@ -524,5 +524,38 @@ export default {
         "progress": [
             "Experience 10 allies exhaust during scenarios you otherwise complete.",
         ]
+    },
+    "conquests-cq01": {
+        "name": "Conquer Your Demons",
+        "unlock": "Open a class or building envelope of your choice. Your future characters add {PIERCE} 1 and {WOUND} to any attacks targeting demons.",
+        "progress": [
+            "Kill two Earth Demons spawned this way.",
+            "Kill two Flame Demons spawned this way.",
+            "Kill two Frost Demons spawned this way.",
+            "Kill two Night Demons spawned this way.",
+            "Kill two Sun Demons spawned this way.",
+            "Kill two Wind Demons spawned this way.",
+        ]
+    },
+    "conquests-cq02": {
+        "name": "Your Friends Are Concerned",
+        "unlock": "Open a class or building envelope of your choice. You may permanently lose bonus perk marks earned from retiring characters in your lineage. For each perk mark lost, gain 30 gold to immediately spend on enhancements for your next character.",
+        "progress": [
+            "Earn 30 checkmarks from Battle Goals. Draw and keep an additional Battle Goal each scenario; earn no checkmarks unless you succeed on all of them.",
+        ]
+    },
+    "conquests-cq03": {
+        "name": "Consequences of Combat",
+        "unlock": "Open a class or building envelope of your choice. Your future characters gain {STRENGTHEN} each time they draw a {NULL_MODIFIER} during a scenario.",
+        "progress": [
+            "Gain 50 restraint: once per scenario, reduce an attack's value before drawing a modifier; gain one restraint per point reduced.",
+        ]
+    },
+    "conquests-cq04": {
+        "name": "A Dramatic Conclusion",
+        "unlock": "Open a class or building envelope of your choice. Your future characters may immediately perform the steps of a long rest whenever an ally exhausts.",
+        "progress": [
+            "Win 10 scenarios where your last two actions are a top loss action and a bottom loss action.",
+        ]
     }
 }
