@@ -94,6 +94,38 @@ describe('ConQuests personal quests', () => {
         cy.get('input[aria-labelledby="pq-0"]').should('have.value', '5');
     });
 
+    it('It does not draw a ConQuests card another character holds', () => {
+        cy.visit('/tracker/#/characters');
+        seedSheet('sheet', {conquestsEnabled: true, prosperityIndex: ghProsperity5});
+
+        utilities.openCharacter();
+        utilities.scrollTo('60%');
+        selectQuest('ConQuests 04 A Dramatic Conclusion');
+
+        utilities.openCharacter('Spellweaver');
+        utilities.scrollTo('60%');
+        // Pick the last quest in the pool: that's ConQuests 04 unless held quests are excluded.
+        cy.window().then((win) => cy.stub(win.Math, 'random').returns(0.9999));
+        cy.get('button').contains('Draw').click({scrollBehavior: false});
+
+        cy.contains('ConQuests 03 Consequences of Combat');
+    });
+
+    it('It disables a ConQuests card another character holds in search', () => {
+        cy.visit('/tracker/#/characters');
+        seedSheet('sheet', {conquestsEnabled: true, prosperityIndex: ghProsperity5});
+
+        utilities.openCharacter();
+        utilities.scrollTo('60%');
+        selectQuest('ConQuests 04 A Dramatic Conclusion');
+
+        utilities.openCharacter('Spellweaver');
+        utilities.scrollTo('60%');
+        cy.get(`input[name="personal-quests"]`).type('ConQuests', {scrollBehavior: false});
+        cy.get('li').contains('A Dramatic Conclusion').closest('span').should('have.class', 'opacity-50');
+        cy.get('li').contains('Conquer Your Demons').closest('span').should('not.have.class', 'opacity-50');
+    });
+
     it('It offers ConQuests in Frosthaven', () => {
         utilities.enableGame('fh');
         utilities.switchGame('fh');

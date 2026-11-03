@@ -139,9 +139,10 @@ export default {
     },
     methods: {
         random() {
-            const id = [...Object.keys(this.quests)]
-                .filter(id => !this.unavailableQuests.includes(parseInt(id)))
-                .sort((a, b) => 0.5 - Math.random())[0];
+            // Compare ids as strings: they can be numbers (510) or strings ("330", "cq01").
+            const unavailable = this.unavailableQuests.map(String);
+            const candidates = Object.keys(this.quests).filter(id => !unavailable.includes(id));
+            const id = candidates[Math.floor(Math.random() * candidates.length)];
             const quest = this.quests[id];
             this.hidden = false;
             this.update(quest);
