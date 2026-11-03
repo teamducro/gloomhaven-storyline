@@ -1,6 +1,7 @@
 <template>
     <div class="pt-12 pb-4 px-2 sm:px-4">
         <games-enabled></games-enabled>
+        <promo-packs></promo-packs>
         <transfer></transfer>
         <snapshots></snapshots>
 

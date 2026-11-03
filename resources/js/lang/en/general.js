@@ -305,6 +305,11 @@ export default {
         "title": "Enabled Games",
         "text": "To hide games and it's characters enable only ones you own."
     },
+    "promo-packs": {
+        "title": "Promo Pack",
+        "conquests": "ConQuests",
+        "conquests-text": "Adds the four ConQuests 2025 personal quests to this campaign (requires prosperity 5)."
+    },
     "Please consider purchasing a license": "Please consider purchasing a license",
     "Danger zone!": "Danger zone!",
     "Alternatively you may": "Alternatively you may",

@@ -60,6 +60,7 @@ class CampaignSheet {
         this.characters = {...data.characters};
         this.archivedCharacters = {...data.archivedCharacters};
         this.hidePersonalQuests = data.hidePersonalQuests || false;
+        this.conquestsEnabled = data.conquestsEnabled || false;
 
         // Ability enhancements, keyed by character class id so they survive retirement.
         this.enhancementsEnabled = data.enhancementsEnabled || false;
@@ -116,6 +117,7 @@ class CampaignSheet {
             characters: {'characters': {}},
             archivedCharacters: {'archivedCharacters': {}},
             hidePersonalQuests: 'hidePersonalQuests',
+            conquestsEnabled: 'conquestsEnabled',
 
             enhancementsEnabled: 'enhancementsEnabled',
             enhancements: {'enhancements': {}},
@@ -350,6 +352,9 @@ class CampaignSheet {
         }
         if (!values.hidePersonalQuests) {
             delete values.hidePersonalQuests;
+        }
+        if (!values.conquestsEnabled) {
+            delete values.conquestsEnabled;
         }
         return values;
     }
