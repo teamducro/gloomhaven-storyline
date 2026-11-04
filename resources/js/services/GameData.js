@@ -361,8 +361,8 @@ export default class GameData {
                 }
             case Game.gh2:
                 return {
-                    portrait: '0 -110 860 1402',
-                    landscape: '0 -90 1292 950'
+                    portrait: '0 -110 588 1177',
+                    landscape: '0 -90 818 845'
                 }
             default:
                 return {

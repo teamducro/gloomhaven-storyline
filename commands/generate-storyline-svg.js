@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // Generates the Gloomhaven 2nd Edition storyline flowchart from scenarios-gh2.json.
-// Layout fixes belong in the constants below, never in gh2.svg.
+// Node positions are hand-placed in the grid below; layout fixes belong there, never in gh2.svg.
 
 const fs = require('fs');
 
@@ -9,224 +9,172 @@ const INPUT = 'resources/js/scenarios-gh2.json';
 const OUTPUT = 'resources/svg/storylines/gh2.svg';
 
 const R = 12;           // node radius
-const COL = 39;         // node spacing inside a lane / side grid
-const ROW = 52;         // main-area layer spacing
-const SIDE_ROW = 39;    // side-grid row spacing
+const UX = 40;          // grid column width
+const UY = 44;          // grid row height
 const PAD = 10;         // rect padding around nodes
-const LABEL_H = 12;     // space for a chapter label (below the last row)
-const LANE_GAP = 14;    // gap between lanes / side blocks
+const LABEL_H = 13;     // space for a chapter label (below the last row)
 const M = 12;           // outer margin
-const SIDE_COLS = 5;    // nodes per row in a side block
-const LANE_ORDER = [3, 4, 2, 1, 5, 6, 7, 8, 9]; // chapter ids, left to right
+const ORIGIN = M + PAD + R;
 
 const LIGHT = '#e4dedd';
 const COLORS = {
     1: LIGHT, 2: '#a1243f', 3: '#1f7a85', 4: '#c9a94a', 5: '#34488a', 6: '#9a2f8a', 7: '#4f7d46', 8: '#5a6680', 9: LIGHT,
     101: '#c8673a', 102: '#7fbccc', 103: '#7a5236', 104: '#5b3a6e', 105: LIGHT,
 };
+// Chapter fill: #111 at .7 opacity over the #333 background, solid so overlapping rects of one chapter merge
+const FILL = '#1b1b1b';
+
+// Main storyline: scenario id => [column, row]. Every edge points down; chapters fit together without crossings.
+const NODES = {
+    0: [7, 0], 1: [8, 0], 2: [8, 1],
+    3: [8, 2.2], 9: [9, 2.2], 5: [8, 3.4], 28: [10.5, 3.4], 39: [10, 4.4], 42: [11, 4.4], 40: [10, 5.4], 43: [11, 5.4], 44: [10.5, 6.4],
+    6: [1, 2.2], 4: [2, 2.2], 11: [1, 3.4], 7: [2, 3.4], 15: [0, 4.6], 19: [1, 4.6], 20: [2, 4.6], 26: [1.5, 5.6], 101: [1.5, 6.6],
+    12: [3.5, 4.6], 8: [4.5, 4.6], 16: [5.5, 4.6], 21: [4, 5.6], 22: [5, 5.6], 24: [4.5, 6.6], 103: [4.5, 7.6],
+    10: [8, 4.75], 17: [7.5, 5.75], 18: [8.5, 5.75], 102: [8, 6.75], 104: [8, 7.75],
+    13: [4.5, 9.4], 14: [6.5, 9.4], 29: [4, 10.4], 32: [5, 10.4], 31: [6, 10.4], 30: [7, 10.4], 33: [5, 11.4], 34: [6, 11.4], 35: [7, 11.4],
+    27: [5.5, 13],
+    36: [1.5, 13], 37: [1, 14.3], 38: [2, 14.3], 41: [1, 15.3],
+    45: [10.5, 9.2], 46: [10, 10.2], 47: [11, 10.2], 48: [12, 10.2], 51: [10, 11.2], 49: [11, 11.2], 50: [12, 11.2], 53: [13, 11.2], 52: [11, 12.2],
+    54: [10, 15.3], 55: [11, 15.3], 56: [12, 15.3],
+};
+
+// Chapter overrides: rects in grid units [x0, y0, x1, y1] around node centers (default: bounding box), label [x, y, anchor]
+const CHAPTERS = {
+    1: {label: [7, 1.15, 'middle']},
+    5: {rects: [[8, 2.2, 10.5, 3.4], [10, 3.4, 11, 6.4]], label: [9.45, 2.2]},
+    8: {rects: [[10, 9.2, 13, 12.2], [10, 12.2, 12, 15.3]]},
+};
+
+// Edge routes: bend points in grid units (default: down, across just above the target, down)
+const ROUTES = {
+    '5-9': [[8.5, 3.4], [8.5, 2.2]],
+    '28-53': [[13, 3.4]],
+    '7-8': [[2, 3.95], [4.5, 3.95]],
+    '10-13': [[6.5, 4.75], [6.5, 8.9], [4.5, 8.9]],
+    '10-14': [[6.5, 4.75]],
+    '31-33': [[6, 10.9], [5, 10.9]],
+    '103-27': [[3, 7.6], [3, 12.5], [5.5, 12.5]],
+    '104-27': [[8, 13]],
+    '101-36': [],
+    '45-38': [[9, 9.2], [9, 14.3]],
+    '41-54': [],
+};
+
+// Side blocks per orientation: top-left node position and nodes per row
+const SIDE = {
+    landscape: [
+        {chapter: 101, x: 14.75, y: 0, cols: 5}, {chapter: 102, x: 14.75, y: 2.6, cols: 5}, {chapter: 103, x: 14.75, y: 5.2, cols: 4},
+        {chapter: 104, x: 14.75, y: 6.6, cols: 5}, {chapter: 105, x: 14.75, y: 11.2, cols: 2},
+    ],
+    portrait: [
+        {chapter: 101, x: 0, y: 16.8, cols: 5}, {chapter: 102, x: 6.5, y: 16.8, cols: 5},
+        {chapter: 104, x: 0, y: 19.4, cols: 5}, {chapter: 103, x: 6.5, y: 19.4, cols: 4}, {chapter: 105, x: 6.5, y: 20.8, cols: 2},
+    ],
+};
 
 const round = (n) => Math.round(n * 100) / 100;
-const byId = (a, b) => a - b;
+const px = ([gx, gy]) => ({x: ORIGIN + gx * UX, y: ORIGIN + gy * UY});
 
 const data = JSON.parse(fs.readFileSync(INPUT, 'utf-8'));
-const model = layout(data);
-check(model, data);
-fs.writeFileSync(OUTPUT, svg(model));
-console.log(`landscape: '0 0 ${model.W} ${model.H}'\nportrait: '0 0 ${model.H} ${model.W}'`);
+const scenarios = new Map(data.scenarios.filter((s) => !s.solo).map((s) => [s.id, s]));
+const chapterName = new Map(data.chapters.map((c) => [c.id, c.name]));
+const targets = (s) => [...new Set([
+    ...(s.links_to || []), ...(s.choices || []), ...Object.values(s.treasures_to || {}).flat(),
+])].sort((a, b) => a - b);
 
-function layout(data) {
-    const scenarios = data.scenarios.filter((s) => !s.solo).sort((a, b) => a.id - b.id);
-    scenarios.forEach((s) => {
-        if (!Number.isInteger(s.id)) throw new Error(`Scenario id ${s.id} is not an integer`);
-        if (!s.chapter_id) throw new Error(`Scenario ${s.id} has no chapter_id`);
+const models = Object.fromEntries(Object.entries(SIDE).map(([orientation, side]) => [orientation, layout(side)]));
+Object.values(models).forEach(check);
+fs.writeFileSync(OUTPUT, svg(models));
+Object.entries(models).forEach(([orientation, m]) => console.log(`${orientation}: ${m.W} x ${m.H}`));
+
+function layout(side) {
+    const pos = new Map(Object.entries(NODES).map(([id, g]) => [Number(id), px(g)]));
+    const chapters = [];
+
+    [...new Set([...scenarios.values()].filter((s) => s.chapter_id < 100).map((s) => s.chapter_id))].sort((a, b) => a - b).forEach((c) => {
+        const o = CHAPTERS[c] || {};
+        const grid = [...scenarios.values()].filter((s) => s.chapter_id === c).map((s) => {
+            if (!NODES[s.id]) throw new Error(`Scenario ${s.id} has no position in NODES`);
+            return NODES[s.id];
+        });
+        const rects = o.rects || [[
+            Math.min(...grid.map((g) => g[0])), Math.min(...grid.map((g) => g[1])),
+            Math.max(...grid.map((g) => g[0])), Math.max(...grid.map((g) => g[1])),
+        ]];
+        chapters.push({id: c, rects, label: o.label, intro: data.scenarios.some((s) => s.root && s.chapter_id === c)});
     });
 
-    const main = scenarios.filter((s) => s.chapter_id < 100);
-    const side = scenarios.filter((s) => s.chapter_id >= 100);
-    const scenarioById = new Map(scenarios.map((s) => [s.id, s]));
-    const introId = data.scenarios.find((s) => s.root).chapter_id;
-    const chapterName = new Map(data.chapters.map((c) => [c.id, c.name]));
+    side.forEach(({chapter, x, y, cols}) => {
+        const order = sideOrder(chapter, cols);
+        order.forEach((id, i) => pos.set(id, px([x + (i % cols), y + Math.floor(i / cols)])));
+        const rows = Math.ceil(order.length / cols);
+        chapters.push({id: chapter, side: true, rects: [[x, y, x + Math.min(cols, order.length) - 1, y + rows - 1]]});
+    });
 
-    const targets = (s) => [...new Set([
-        ...(s.links_to || []), ...(s.choices || []), ...Object.values(s.treasures_to || {}).flat(),
-    ])].sort(byId);
+    chapters.forEach((c) => {
+        c.boxes = c.rects.map(([x0, y0, x1, y1], i) => {
+            const a = px([x0, y0]);
+            const b = px([x1, y1]);
+            const box = {x: a.x - R - PAD, y: a.y - R - PAD, w: b.x - a.x + 2 * (R + PAD), h: b.y - a.y + 2 * (R + PAD)};
+            if (i === 0 && !c.label) box.h += LABEL_H;
+            return box;
+        });
+        const first = c.boxes[0];
+        c.labelAt = c.label
+            ? {...px(c.label), anchor: c.label[2] || 'start'}
+            : {x: first.x + 6, y: first.y + first.h - 9, anchor: 'start'};
+    });
 
-    const log = {skipped: [], cross: [], back: [], orphans: []};
-    const mainEdges = [];
-    const sideEdges = [];
+    const edges = [];
     scenarios.forEach((s) => targets(s).forEach((t) => {
-        const target = scenarioById.get(t);
-        if (!target) return log.skipped.push(`${s.id}->${t}`);
-        if (s.chapter_id < 100 && target.chapter_id < 100) mainEdges.push([s.id, t]);
-        else if (s.chapter_id === target.chapter_id) sideEdges.push([s.id, t]);
-        else log.cross.push(`${s.id}->${t}`);
+        const target = scenarios.get(t);
+        if (!target) return;
+        const isSide = s.chapter_id >= 100 || target.chapter_id >= 100;
+        if (isSide && s.chapter_id !== target.chapter_id) return;
+        edges.push({from: s.id, to: t, points: route(pos.get(s.id), pos.get(t), isSide ? [] : ROUTES[`${s.id}-${t}`])});
     }));
 
-    // Break cycles: an edge to a node on the DFS stack is a back edge
-    const out = new Map(main.map((s) => [s.id, []]));
-    mainEdges.forEach(([f, t]) => out.get(f).push(t));
-    const state = new Map();
-    const back = new Set();
-    const visit = (id) => {
-        state.set(id, 1);
-        out.get(id).forEach((t) => {
-            if (state.get(t) === 1) back.add(`${id}-${t}`);
-            else if (!state.has(t)) visit(t);
-        });
-        state.set(id, 2);
-    };
-    main.forEach((s) => state.has(s.id) || visit(s.id));
-    log.back = [...back];
+    const boxes = chapters.flatMap((c) => c.boxes);
+    const W = Math.ceil(Math.max(...boxes.map((b) => b.x + b.w)) + M);
+    const H = Math.ceil(Math.max(...boxes.map((b) => b.y + b.h)) + M);
 
-    // Longest-path layering over the forward edges
-    const forward = mainEdges.filter(([f, t]) => !back.has(`${f}-${t}`));
-    const preds = new Map(main.map((s) => [s.id, []]));
-    const indegree = new Map(main.map((s) => [s.id, 0]));
-    forward.forEach(([f, t]) => {
-        preds.get(t).push(f);
-        indegree.set(t, indegree.get(t) + 1);
-    });
-    const layer = new Map();
-    const queue = main.filter((s) => indegree.get(s.id) === 0).map((s) => s.id);
-    while (queue.length) {
-        const id = queue.shift();
-        layer.set(id, Math.max(0, ...preds.get(id).map((p) => layer.get(p) + 1)));
-        forward.filter(([f]) => f === id).forEach(([, t]) => {
-            indegree.set(t, indegree.get(t) - 1);
-            if (indegree.get(t) === 0) queue.push(t);
-        });
-    }
-    if (layer.size !== main.length) throw new Error('Cycle left after removing back edges');
-    log.orphans = main
-        .filter((s) => !s.root && preds.get(s.id).length === 0)
-        .map((s) => s.id);
-
-    // Cells (chapter, layer) and lane geometry
-    const lanes = LANE_ORDER.filter((c) => main.some((s) => s.chapter_id === c));
-    main.forEach((s) => {
-        if (!LANE_ORDER.includes(s.chapter_id)) throw new Error(`Chapter ${s.chapter_id} is not in LANE_ORDER`);
-    });
-    const cells = new Map();
-    main.forEach((s) => {
-        const key = `${s.chapter_id}:${layer.get(s.id)}`;
-        cells.set(key, [...(cells.get(key) || []), s.id]);
-    });
-    const laneCols = new Map(lanes.map((c) => [c, Math.max(...main
-        .filter((s) => s.chapter_id === c)
-        .map((s) => cells.get(`${c}:${layer.get(s.id)}`).length))]));
-    const laneBox = (c) => 2 * PAD + 2 * R + (laneCols.get(c) - 1) * COL;
-    const laneX = new Map();
-    let cursor = M;
-    lanes.forEach((c) => {
-        laneX.set(c, cursor);
-        cursor += laneBox(c) + LANE_GAP;
-    });
-    const mainRight = cursor - LANE_GAP;
-
-    // Order each cell by the barycenter of its placed predecessors
-    const maxLayer = Math.max(...layer.values());
-    const pos = new Map();
-    const index = new Map();
-    for (let l = 0; l <= maxLayer; l++) {
-        lanes.forEach((c) => {
-            const ids = cells.get(`${c}:${l}`);
-            if (!ids) return;
-            const bary = (id) => {
-                const xs = preds.get(id).filter((p) => pos.has(p)).map((p) => pos.get(p).x);
-                return xs.length ? xs.reduce((a, b) => a + b) / xs.length : Infinity;
-            };
-            ids.sort((a, b) => bary(a) - bary(b) || a - b);
-            ids.forEach((id, i) => {
-                const col = Math.floor((laneCols.get(c) - ids.length) / 2) + i;
-                pos.set(id, {x: laneX.get(c) + PAD + R + col * COL, y: M + PAD + R + l * ROW});
-                index.set(id, i);
-            });
-        });
-    }
-
-    const nodes = [];
-    const chapters = [];
-    const marks = (s) => ({blocked: (s.blocks_on || []).length > 0, required: (s.required_by || []).length > 0});
-    main.forEach((s) => nodes.push({id: s.id, text: s.number || String(s.id), ...pos.get(s.id), ...marks(s)}));
-    lanes.forEach((c) => {
-        const ys = main.filter((s) => s.chapter_id === c).map((s) => pos.get(s.id).y);
-        const top = Math.min(...ys) - R - PAD;
-        chapters.push({
-            id: c, intro: c === introId, x: laneX.get(c), y: top, w: laneBox(c),
-            h: Math.max(...ys) + R + PAD + LABEL_H - top, label: chapterName.get(c), color: COLORS[c],
-        });
-    });
-
-    // Side blocks, stacked top to bottom right of the main area
-    const sideX = mainRight + LANE_GAP;
-    let sideY = M;
-    [...new Set(side.map((s) => s.chapter_id))].sort(byId).forEach((c) => {
-        const members = side.filter((s) => s.chapter_id === c);
-        const rows = Math.ceil(members.length / SIDE_COLS);
-        members.forEach((s, i) => {
-            pos.set(s.id, {
-                x: sideX + PAD + R + (i % SIDE_COLS) * COL,
-                y: sideY + PAD + R + Math.floor(i / SIDE_COLS) * SIDE_ROW,
-            });
-            nodes.push({id: s.id, text: s.number || String(s.id), ...pos.get(s.id), ...marks(s)});
-        });
-        const h = 2 * PAD + 2 * R + (rows - 1) * SIDE_ROW + LABEL_H;
-        chapters.push({
-            id: c, side: true, x: sideX, y: sideY, w: 2 * PAD + 2 * R + (Math.min(members.length, SIDE_COLS) - 1) * COL,
-            h, label: chapterName.get(c), color: COLORS[c],
-        });
-        sideY += h + LANE_GAP;
-    });
-
-    // Edges
-    const edges = [];
-    forward.forEach(([f, t]) => {
-        const s = pos.get(f);
-        const e = pos.get(t);
-        const dy = layer.get(t) - layer.get(f);
-        const enterY = e.y - R - 12 - 3 * (index.get(t) % 3);
-        const exitY = s.y + R + 4 + 3 * (index.get(f) % 2);
-        const points = [{x: s.x, y: s.y + R}];
-        if (dy > 1) {
-            const cx = s.x + (e.x >= s.x ? COL / 2 : -COL / 2);
-            points.push({x: s.x, y: exitY}, {x: cx, y: exitY}, {x: cx, y: enterY});
-        } else {
-            points.push({x: s.x, y: enterY});
-        }
-        points.push({x: e.x, y: enterY}, {x: e.x, y: e.y - R});
-        edges.push({from: f, to: t, points: simplify(points)});
-    });
-    const straight = (f, t) => {
-        const a = pos.get(f);
-        const b = pos.get(t);
-        const d = Math.hypot(b.x - a.x, b.y - a.y);
-        const ux = (b.x - a.x) / d;
-        const uy = (b.y - a.y) / d;
-        edges.push({from: f, to: t, points: [{x: a.x + ux * R, y: a.y + uy * R}, {x: b.x - ux * R, y: b.y - uy * R}]});
-    };
-    [...back].map((e) => e.split('-').map(Number)).forEach(([f, t]) => straight(f, t));
-    sideEdges.forEach(([f, t]) => straight(f, t));
-
-    const W = Math.ceil(Math.max(...chapters.map((c) => c.x + c.w)) + M);
-    const H = Math.ceil(Math.max(...chapters.map((c) => c.y + c.h)) + M);
-
-    console.log(`layers: ${maxLayer + 1}, lanes: ${lanes.map((c) => `${chapterName.get(c)}=${laneCols.get(c)}`).join(', ')}`);
-    console.log(`nodes: ${nodes.length} (main ${main.length}, side ${side.length}), edges: ${edges.length}`);
-    console.log(`orphans: ${log.orphans.join(',') || 'none'}`);
-    console.log(`back edges: ${log.back.join(',') || 'none'}`);
-    console.log(`skipped (target not drawn): ${log.skipped.join(',') || 'none'}`);
-    console.log(`not drawn (cross-area): ${log.cross.join(',') || 'none'}`);
-
-    return {nodes, edges, chapters, W, H};
+    return {pos, chapters, edges, W, H};
 }
 
-function simplify(points) {
-    return points.filter((p, i) => {
-        const a = points[i - 1];
-        const b = points[i + 1];
-        if (a && p.x === a.x && p.y === a.y) return false;
-        return !(a && b && ((a.x === p.x && p.x === b.x) || (a.y === p.y && p.y === b.y)));
+// Side-chapter nodes in id order, linked pairs adjacent and never split over two rows
+function sideOrder(chapter, cols) {
+    const linked = (id) => targets(scenarios.get(id)).length > 0 || order.some((o) => targets(scenarios.get(o)).includes(id));
+    const order = [];
+    [...scenarios.values()].filter((s) => s.chapter_id === chapter).sort((a, b) => a.id - b.id).forEach((s) => {
+        if (order.includes(s.id)) return;
+        order.push(s.id);
+        targets(s).filter((t) => scenarios.get(t)?.chapter_id === chapter && !order.includes(t)).forEach((t) => order.push(t));
     });
+    for (let i = cols; i < order.length; i += cols) {
+        if (!targets(scenarios.get(order[i - 1])).includes(order[i])) continue;
+        const j = order.findIndex((id, k) => k > i && !linked(id));
+        if (j > 0) order.splice(i - 1, 0, ...order.splice(j, 1));
+    }
+    return order;
+}
+
+function route(a, b, bends) {
+    let points;
+    if (bends) points = [a, ...bends.map(px), b];
+    else if (a.x === b.x || a.y === b.y) points = [a, b];
+    else {
+        const y = b.y > a.y ? b.y - UY / 2 : b.y + UY / 2;
+        points = [a, {x: a.x, y}, {x: b.x, y}, b];
+    }
+    points = points.filter((p, i) => !i || p.x !== points[i - 1].x || p.y !== points[i - 1].y);
+    // Start and end on the node circles
+    const clip = (p, q) => {
+        const d = Math.hypot(q.x - p.x, q.y - p.y);
+        return {x: p.x + (q.x - p.x) / d * R, y: p.y + (q.y - p.y) / d * R};
+    };
+    points[0] = clip(points[0], points[1]);
+    points[points.length - 1] = clip(points[points.length - 1], points[points.length - 2]);
+    return points;
 }
 
 // Notched arrow head; returns the line path (ending at the arrow base) and the arrow path
@@ -244,65 +192,63 @@ function arrow(points) {
     };
 }
 
-function svg(model) {
+function svg(models) {
     return `<!-- Generated by commands/generate-storyline-svg.js from ${INPUT}. Do not edit by hand. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${model.W} ${model.H}" text-anchor="middle" dominant-baseline="central" font-size="12">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${models.landscape.W} ${models.landscape.H}" text-anchor="middle" dominant-baseline="central" font-size="12">
  <style>svg{background:#333}text{fill:white;font-family:"Pirata One",sans-serif}.label{font-size:10px}.node{fill:black;stroke:white}.line{fill:none;stroke:white}.arrow{fill:white;stroke:white}</style>
  <g class="landscape">
-${group(model, false)}
+${group(models.landscape)}
  </g>
  <g class="portrait">
-${group(model, true)}
+${group(models.portrait)}
  </g>
 </svg>
 `;
 }
 
-function group(model, swap) {
-    const p = (point) => (swap ? {x: point.y, y: point.x} : point);
+function group(model) {
     const lines = [];
+    const rect = (b, attributes) => `<rect x="${b.x}" y="${b.y}" width="${b.w}" height="${b.h}" rx="10" ry="10" ${attributes}/>`;
 
     model.chapters.forEach((c) => {
-        const r = swap ? {x: c.y, y: c.x, w: c.h, h: c.w} : c;
-        const label = `<text class="label" x="${r.x + 6}" y="${swap ? r.y + r.h + 7 : r.y + r.h - 7}" text-anchor="start">{{ $t(${JSON.stringify(c.label)}) }}</text>`;
-        const box = `<rect x="${r.x}" y="${r.y}" width="${r.w}" height="${r.h}" rx="10" ry="10" fill="#111" fill-opacity=".7" stroke="${c.color}"/>`;
+        // Multi-rect chapters: outlines first, then slightly inset fills hide the inner borders
+        const shape = c.boxes.length === 1
+            ? rect(c.boxes[0], `fill="${FILL}" stroke="${COLORS[c.id]}"`)
+            : c.boxes.map((b) => rect(b, `fill="none" stroke="${COLORS[c.id]}"`)).join('')
+                + c.boxes.map((b) => rect({x: b.x + 1, y: b.y + 1, w: b.w - 2, h: b.h - 2}, `fill="${FILL}"`)).join('');
+        const label = `<text class="label" x="${round(c.labelAt.x)}" y="${round(c.labelAt.y)}" text-anchor="${c.labelAt.anchor}">{{ $t(${JSON.stringify(chapterName.get(c.id))}) }}</text>`;
         lines.push(c.side
-            ? `  ${box}${label}`
-            : `  <g class="chapter${c.intro ? ' intro' : ''}" id="chapter${c.id}">${box}${label}</g>`);
+            ? `  ${shape}${label}`
+            : `  <g class="chapter${c.intro ? ' intro' : ''}" id="chapter${c.id}">${shape}${label}</g>`);
     });
 
     model.edges.forEach((e) => {
-        const a = arrow(e.points.map(p));
+        const a = arrow(e.points);
         lines.push(`  <g class="edge edge${e.from}" id="edge${e.from}-${e.to}"><path class="line" d="${a.line}"/><path class="arrow" d="${a.arrow}"/></g>`);
     });
 
-    model.nodes.forEach((n) => {
-        const c = p(n);
-        const marks = (n.blocked ? `<text class="blocked" x="${c.x - 12}" y="${c.y - 16}" font-size="20">×</text>` : '')
-            + (n.required ? `<text class="required" x="${c.x - 14}" y="${c.y - 12}" font-weight="bold">!</text>` : '');
-        lines.push(`  <g class="scenario" id="node${n.id}"><circle class="node" cx="${c.x}" cy="${c.y}" r="${R}"/><text x="${c.x}" y="${c.y}">${n.text}</text>${marks}</g>`);
+    model.pos.forEach((c, id) => {
+        const s = scenarios.get(id);
+        const marks = ((s.blocks_on || []).length ? `<text class="blocked" x="${c.x - 12}" y="${c.y - 16}" font-size="20">×</text>` : '')
+            + ((s.required_by || []).length ? `<text class="required" x="${c.x - 14}" y="${c.y - 12}" font-weight="bold">!</text>` : '');
+        lines.push(`  <g class="scenario" id="node${id}"><circle class="node" cx="${c.x}" cy="${c.y}" r="${R}"/><text x="${c.x}" y="${c.y}">${s.number || String(id)}</text>${marks}</g>`);
     });
 
     return lines.join('\n');
 }
 
-function check(model, data) {
-    const drawn = data.scenarios.filter((s) => !s.solo);
-    const ids = model.nodes.map((n) => n.id);
-    if (new Set(ids).size !== ids.length) throw new Error('Duplicate node ids');
-    drawn.forEach((s) => {
-        if (!ids.includes(s.id)) throw new Error(`Scenario ${s.id} has no node`);
+function check(model) {
+    scenarios.forEach((s) => {
+        if (!model.pos.has(s.id)) throw new Error(`Scenario ${s.id} has no node`);
     });
-    if (ids.length !== drawn.length) throw new Error('Node count differs from non-solo scenario count');
-
-    const edgeIds = model.edges.map((e) => `${e.from}-${e.to}`);
-    if (new Set(edgeIds).size !== edgeIds.length) throw new Error('Duplicate edge ids');
-    model.edges.forEach((e) => {
-        if (!ids.includes(e.from) || !ids.includes(e.to)) throw new Error(`Edge ${e.from}-${e.to} has no node`);
+    if (model.pos.size !== scenarios.size) throw new Error('Node count differs from non-solo scenario count');
+    Object.keys(ROUTES).forEach((key) => {
+        if (!model.edges.some((e) => `${e.from}-${e.to}` === key)) throw new Error(`Route ${key} is not an edge`);
     });
 
-    model.nodes.forEach((a, i) => model.nodes.slice(i + 1).forEach((b) => {
-        if (Math.hypot(a.x - b.x, a.y - b.y) < 2 * R) throw new Error(`Nodes ${a.id} and ${b.id} overlap`);
+    const nodes = [...model.pos.entries()];
+    nodes.forEach(([a, p], i) => nodes.slice(i + 1).forEach(([b, q]) => {
+        if (Math.hypot(p.x - q.x, p.y - q.y) < 2 * R + 8) throw new Error(`Nodes ${a} and ${b} overlap`);
     }));
 
     if (!model.chapters.some((c) => c.intro)) throw new Error('No intro chapter');
