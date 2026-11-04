@@ -37,6 +37,9 @@ class Sheet {
         this.inspiration = data.inspiration || 0;
         this.imbuement = data.imbuement || 0;
 
+        // Gloomhaven edition played in this campaign (gh sheet only), 2 = GH2e
+        this.edition = data.edition;
+
         // Items
         this.itemDesigns = {...data.itemDesigns};
         this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
@@ -73,6 +76,7 @@ class Sheet {
             factionReputation: {'factionReputation': {}},
             inspiration: {'inspiration': 0},
             imbuement: {'imbuement': 0},
+            edition: 'edition',
 
             // Items
             itemDesigns: {'itemDesigns': {}},
@@ -272,10 +276,11 @@ class Sheet {
             }
         }
 
-        // Remove old character unlocks from party sheet, keys are ids now
-        // Remove hidden characters
+        // Remove old character unlocks from party sheet, keys are ids now.
+        // Hidden classes are kept, so switching games or editions doesn't lose their unlocks.
+        const allCharacters = this.characterRepository.gameData.characters();
         this.characterUnlocks = _.each(this.characterUnlocks, (characterUnlock, id) => {
-            if (!characterOrder.includes(id)) {
+            if (!(id in allCharacters)) {
                 delete this.characterUnlocks[id];
             }
         });

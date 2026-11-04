@@ -42,28 +42,12 @@
                     @change="factionChanged"/>
             </div>
 
-            <div class="w-full mt-8">
-                <h2 class="mb-2">{{ $t('Unlocks') }}</h2>
-                <table class="w-full mb-4">
-                    <tr v-for="(unlock, index) in unlocks" :key="'unlock'+index"
-                        class="flex items-center border-b border-gray-600">
-                        <td class="-ml-2">
-                            <checkbox group="unlocks"
-                                      :id="'unlock'+index"
-                                      :checked="sheet.unlocks[index]"
-                                      @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
-                        </td>
-                        <td class="w-full flex items-center flex-wrap">
-                            <label :for="'unlock'+index" class="whitespace-normal md:whitespace-nowrap cursor-pointer">
-                                {{ unlock.goal }}
-                            </label>
-                            <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
-                                <span class="material-icons mr-1">remove</span>{{ unlock.reward }}
-                            </span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <donations-section
+                ref="donations"
+                :sheet="sheet"
+                :loading="loading"
+                :threshold="0"
+                @change="store"/>
 
             <prosperity-section
                 ref="prosperity"
@@ -112,13 +96,6 @@
                     {{ $t('Read section') }} {{ imbuementSectionsReached.join(', ') }}
                 </p>
             </div>
-
-            <donations-section
-                ref="donations"
-                :sheet="sheet"
-                :loading="loading"
-                :threshold="0"
-                @change="store"/>
 
             <div class="lg:flex">
                 <selectable-list
@@ -169,6 +146,29 @@
                 <notes v-model:value="sheet.notes" id="notes" :label="$t('Notes')"
                        @change="store" :is-local-campaign="isLocalCampaign"
                 ></notes>
+            </div>
+
+            <div class="w-full mt-8">
+                <h2 class="mb-2">{{ $t('Unlocks') }}</h2>
+                <table class="w-full mb-4">
+                    <tr v-for="(unlock, index) in unlocks" :key="'unlock'+index"
+                        class="flex items-center border-b border-gray-600">
+                        <td class="-ml-2">
+                            <checkbox group="unlocks"
+                                      :id="'unlock'+index"
+                                      :checked="sheet.unlocks[index]"
+                                      @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
+                        </td>
+                        <td class="w-full flex items-center flex-wrap">
+                            <label :for="'unlock'+index" class="whitespace-normal md:whitespace-nowrap cursor-pointer">
+                                {{ unlock.goal }}
+                            </label>
+                            <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
+                                <span class="material-icons mr-1">remove</span>{{ unlock.reward }}
+                            </span>
+                        </td>
+                    </tr>
+                </table>
             </div>
 
             <div class="w-full mt-8">

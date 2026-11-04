@@ -38,7 +38,7 @@ Read the reference for every game your change touches: [gh](references/gh.md) (+
 
 - One blob holds **every** game. Keys from each model's `key()`: `scenario-{game}-{id}`, `achievement-{id}` / `achievementgroup-{id}` (not game-scoped, hence GH2 `G2`/`P2` ids), `sheet` (gh **and** fc) / `sheet-{game}`, `campaign-fh`, `character-{uuid}`, `building-{game}-{id}`, `overlay-{game}-{id}`.
 - `Storable` (`fieldsToStore`; `delete()` writes null), `Versionable` for sync.
-- Current/enabled games are **device** settings (`store 'game'`, `'gamesEnabled'`).
+- Current/enabled games are **device** settings (`store 'game'`, `'gamesEnabled'`); the Gloomhaven edition (gh or gh2) is per campaign (`sheet.edition`), survives a reset.
 - `StorySyncer` after each validation: bump changed model versions, PUT the whole blob if its hash changed; server returns per-key conflicts; newer `updated_at` wins on load; Echo channel `story.{id}`. Share links overwrite the local campaign; `Reseter` wipes all games.
 
 ## Scenario unlocking

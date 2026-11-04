@@ -4,7 +4,7 @@ A separate game from Gloomhaven, being built on `feature/2nd`. Background, sourc
 
 ## Wiring
 
-- Beta game (`GameData.beta()`): disabled by default in Settings > Games. Covered by the GH licence (`GameData.includedIn()`, API receives `accessGame = 'gh'`).
+- Beta game (`GameData.beta()`), chosen per campaign in Settings > Enabled Games (`GamesEnabled.vue`): stored as `edition: 2` on the gh `sheet`, read by `SheetRepository.gloomhavenGame()`. gh and gh2 share one slot in the game switch; both keep their own data. Covered by the GH licence (`GameData.includedIn()`, API receives `accessGame = 'gh'`).
 - Data is generated: `commands/convert-gh2-data.js` (scenarios, achievements, lang), `convert-gh2-characters.js`, `convert-gh2-items.js`, `convert-gh2-cards.js` (`events-gh2.json`), `gh2-map.js` + `gh2-coordinates.json` (approximate map positions), `generate-storyline-svg.js` (`svg/storylines/gh2.svg`). Change the converter and regenerate.
 - Specs: `cypress/e2e/tracker/gh2*.cy.js`.
 
@@ -32,7 +32,7 @@ Labelled "Campaign sheet" but stored as a plain `Sheet` (`sheet-gh2`).
 
 ## Characters and items
 
-- 18 classes with ids suffixed `2` (`BR2` Bruiser, `SC2` Silent Knife, `ST2` Soultether from Summoner, `WF2` Wildfury from Beast Tyrant). Masteries; perks of `type: "custom"` have no `cards` (text only). GH classes are hidden in a GH2 campaign and vice versa.
+- 18 classes with ids suffixed `2` (`BR2` Bruiser, `SC2` Silent Knife, `ST2` Soultether from Summoner, `WF2` Wildfury from Beast Tyrant). Masteries; perks of `type: "custom"` have no `cards` (text only). Only the chosen edition's classes are playable, in every game; unlocks of hidden classes are kept.
 - Personal quests 1–22 unlock classes and add class events.
 - Shop by prosperity (thresholds over items 1–68, plus 116), item designs 69–170, flip items (`backDesc`).
 - Enhancements: GH2 cost table (FH costs without Regenerate), no limit on enhanced cards. Difficulty table adds hazardous terrain.

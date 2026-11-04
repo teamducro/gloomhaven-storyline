@@ -1,18 +1,20 @@
 <template>
     <ul class="flex flex-row flex-wrap -mx-2">
-        <li v-for="(checked, id) in sheet.characterUnlocks" :key="id" class="flex items-center"
-            :class="'order-'+sheet.characterOrder[id]"
-            :title="characterTooltip(id)">
-            <checkbox group="items"
-                      :id="'character-'+id"
-                      :checked="checked"
-                      :disabled="sheet.starterCharacters.includes(id)"
-                      :title="characterTooltip(id)"
-                      @change="(_, isChecked) => {unlockCharacter(id, isChecked)}"></checkbox>
-            <label class="w-8 font-title" :for="'character-'+id" :title="characterTooltip(id)">
-                <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
-            </label>
-        </li>
+        <template v-for="(checked, id) in sheet.characterUnlocks" :key="id">
+            <li v-if="id in sheet.characterOrder" class="flex items-center"
+                :class="'order-'+sheet.characterOrder[id]"
+                :title="characterTooltip(id)">
+                <checkbox group="items"
+                          :id="'character-'+id"
+                          :checked="checked"
+                          :disabled="sheet.starterCharacters.includes(id)"
+                          :title="characterTooltip(id)"
+                          @change="(_, isChecked) => {unlockCharacter(id, isChecked)}"></checkbox>
+                <label class="w-8 font-title" :for="'character-'+id" :title="characterTooltip(id)">
+                    <character-icon class="w-6 -mb-2 inline-block" :character="id"/>
+                </label>
+            </li>
+        </template>
     </ul>
 </template>
 

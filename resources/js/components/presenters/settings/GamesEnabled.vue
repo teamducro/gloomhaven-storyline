@@ -11,13 +11,22 @@
         </p>
 
         <ul :key="listKey">
-            <li v-for="code in games">
+            <li v-for="code in games.filter(code => code !== Game.gh2)">
                 <checkbox-with-label :id="code+'-enabled'"
                                      :label="$t(code) + (beta.includes(code) ? ' (BETA)' : '')"
                                      v-model:checked="enabled[code]"
                                      :disabled="disabled[code]"
                                      :auto-disable="false"
                                      @change="store"/>
+                <div v-if="code === Game.gh && enabled[Game.gh]" id="gloomhaven-edition" class="ml-10 mb-2">
+                    <radio v-for="edition in [Game.gh, Game.gh2]"
+                           :key="edition"
+                           :id="edition + '-edition'"
+                           group="gloomhaven-edition"
+                           :label="$t(edition) + (beta.includes(edition) ? ' (BETA)' : '')"
+                           :checked="currentEdition === edition"
+                           @changed="selectEdition(edition)"/>
+                </div>
             </li>
         </ul>
     </div>
@@ -29,6 +38,9 @@ import GameData from "../../../services/GameData";
 import store from "store/dist/store.modern";
 
 import md5 from 'js-md5';
+import {Game} from "../../../models/Game";
+import Sheet from "../../../models/Sheet";
+import SheetRepository from "../../../repositories/SheetRepository";
 
 export default {
     data() {
@@ -38,16 +50,24 @@ export default {
             disabled: {},
             listKey: '',
             beta: [],
+            currentEdition: null,
+            sheetRepository: new SheetRepository,
+        }
+    },
+    computed: {
+        Game() {
+            return Game
         }
     },
     beforeMount() {
         this.init();
     },
     mounted() {
-        this.$bus.$on('campaigns-changed', this.checkDisabled);
+        this.setEdition();
+        this.$bus.$on('campaigns-changed', this.setEdition);
     },
     unmounted() {
-        this.$bus.$off('campaigns-changed', this.checkDisabled);
+        this.$bus.$off('campaigns-changed', this.setEdition);
     },
     methods: {
         init() {
@@ -89,6 +109,23 @@ export default {
 
             return games;
         },
+        // gh and gh2 are separate games, the campaign picks which one is played as Gloomhaven
+        selectEdition(game) {
+            const sheet = new Sheet({game: Game.gh});
+            sheet.edition = game === Game.gh2 ? 2 : 1;
+            sheet.store();
+
+            if ([Game.gh, Game.gh2].includes(app.game)) {
+                this.$bus.$emit('game-selected', game);
+            } else {
+                this.$bus.$emit('campaign-selected', app.campaignId);
+            }
+        },
+        setEdition() {
+            this.currentEdition = this.sheetRepository.gloomhavenGame();
+            // Loading a campaign may enable gh2, re-read so store() doesn't overwrite it
+            this.init();
+        },
         checkDisabled() {
             const enabled = collect(this.enabled).filter(v => v);
             if (enabled.count() === 1) {
@@ -97,15 +134,18 @@ export default {
                 Object.keys(this.disabled)
                     .forEach((code) => this.disabled[code] = false);
             }
-            // The current game is always disabled
+            // The current game is always disabled, gh2 is played in the gh slot
             this.disabled[app.game] = true;
+            if (app.game === Game.gh2) {
+                this.disabled[Game.gh] = true;
+            }
             this.rerender();
         },
         readEnabled() {
             return store.get('gamesEnabled', {});
         },
         rerender() {
-            this.listKey = md5(JSON.stringify(this.disabled));
+            this.listKey = md5(JSON.stringify(this.disabled) + this.currentEdition);
         },
         enabledAsArray() {
             return collect(this.enabled).filter(v => v).keys().toArray();

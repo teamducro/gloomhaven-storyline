@@ -33,6 +33,8 @@
 import {MDCSelect} from "@material/select/component"
 import GameData from "../../services/GameData"
 import StoryRepository from "../../repositories/StoryRepository"
+import SheetRepository from "../../repositories/SheetRepository"
+import {Game} from "../../models/Game"
 
 export default {
     inject: ['appData'],
@@ -49,6 +51,7 @@ export default {
             games: [],
             beta: [],
             storyRepository: new StoryRepository,
+            sheetRepository: new SheetRepository,
             gameData: new GameData
         }
     },
@@ -73,6 +76,7 @@ export default {
             document.querySelector('.game-switch .mdc-select__selected-text').click()
         },
         setCurrent() {
+            this.setGames()
             this.current = this.appData.game
             this.story = this.storyRepository.current()
 
@@ -82,8 +86,13 @@ export default {
             }
         },
         setGames(enabledGames) {
-            const crossover = this.gameData.crossover()
-            this.games = (enabledGames || app.enabledGames).filter(code => !crossover.includes(code))
+            enabledGames = enabledGames || app.enabledGames
+            const hidden = [...this.gameData.crossover(), this.sheetRepository.gloomhavenGame() === Game.gh2 ? Game.gh : Game.gh2]
+            // gh2 is played in the gh slot, turning off gh hides both editions
+            if (!enabledGames.includes(Game.gh)) {
+                hidden.push(Game.gh2)
+            }
+            this.games = enabledGames.filter(code => !hidden.includes(code))
         },
         isNotAvailable(code) {
             const accessGame = this.gameData.accessGame(code)

@@ -32,19 +32,14 @@ export default {
     },
     data() {
         return {
-            s: null,
             scenarioRepository: new ScenarioRepository(),
         };
     },
-    mounted() {
-        if (this.scenario) {
-            this.s = this.scenario;
-        }
-        if (!this.scenario && this.id) {
-            this.s = this.scenarioRepository.find(this.id);
-        }
-    },
     computed: {
+        // Computed, not set on mount: reused instances (e.g. in the scenario modal) get new props
+        s() {
+            return this.scenario || (this.id ? this.scenarioRepository.find(this.id) : null);
+        },
         classes() {
             let classes = {
                 'is-small': this.isSmall

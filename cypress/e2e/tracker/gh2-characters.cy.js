@@ -90,7 +90,7 @@ describe('Gloomhaven 2nd Edition characters', () => {
     });
 
     it('It does not offer gh2 classes in a Gloomhaven campaign', () => {
-        utilities.switchGame('gh');
+        utilities.chooseEdition('gh');
         cy.visit('/tracker/#/characters');
         cy.get('.items-to-add-dropdown').click();
 

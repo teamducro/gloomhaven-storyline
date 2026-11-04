@@ -299,7 +299,7 @@ export default {
     },
     "games-enabled": {
         "title": "Elérhető Játékok",
-        "text": "A játékok és a hozzá tartozó karakterek elrejtéséhez csak azokat engedélyezd, amelyek a tulajdonodban vannak."
+        "text": "A játékok és a hozzá tartozó karakterek elrejtéséhez csak azokat engedélyezd, amelyek a tulajdonodban vannak. Progress is kept when switching."
     },
     "Please consider purchasing a license": "Please consider purchasing a license",
     "Danger zone!": "Danger zone!",

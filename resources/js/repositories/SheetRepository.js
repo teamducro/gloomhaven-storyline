@@ -12,6 +12,11 @@ export default class SheetRepository {
         return _.clone(app.campaignData[this.key(game)]);
     }
 
+    // gh and gh2 are separate games, the campaign picks which one is played as Gloomhaven
+    gloomhavenGame() {
+        return this.data(Game.gh)?.edition === 2 ? Game.gh2 : Game.gh;
+    }
+
     key(game) {
         switch (game) {
             case Game.gh:

@@ -299,7 +299,7 @@ export default {
     },
     "games-enabled": {
         "title": "Jeux activés",
-        "text": "Pour masquer les jeux et ses personnages, n'activez que ceux que vous possédez.\n"
+        "text": "Pour masquer les jeux et ses personnages, n'activez que ceux que vous possédez. Progress is kept when switching."
     },
     "Please consider purchasing a license": "Pensez à acheter une licence",
     "Danger zone!": "Zone dangereuse !",

@@ -299,7 +299,7 @@ export default {
     },
     "games-enabled": {
         "title": "Giochi abilitati",
-        "text": "Per nascondere i giochi e i suoi personaggi, abilita solo quelli che possiedi."
+        "text": "Per nascondere i giochi e i suoi personaggi, abilita solo quelli che possiedi. Progress is kept when switching."
     },
     "Please consider purchasing a license": "Per favore considera l'acquisto di una licenza",
     "Danger zone!": "Danger zone!",

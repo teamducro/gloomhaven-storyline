@@ -42,11 +42,12 @@ describe('Gloomhaven 2nd Edition', () => {
         cy.visit('/tracker');
         cy.window().then((win) => {
             win.localStorage.setItem('stories', JSON.stringify([
-                {id: 1, name: 'Owned', data: {}, games: ['fh'], expires_at: '2099-01-01'}
+                {id: 1, name: 'Owned', data: {sheet: {edition: 2}}, games: ['fh'], expires_at: '2099-01-01'}
             ]));
+            win.localStorage.setItem('_1', JSON.stringify({sheet: {edition: 2}}));
+            win.localStorage.setItem('game', JSON.stringify('fh'));
             win.localStorage.setItem('campaignId', JSON.stringify('_1'));
         });
-        utilities.enableGame('gh2');
         cy.visit('/tracker');
 
         cy.get('button').contains('menu').click();

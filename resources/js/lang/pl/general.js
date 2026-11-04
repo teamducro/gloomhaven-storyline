@@ -298,7 +298,7 @@ export default {
     },
     "games-enabled": {
         "title": "Włączone gry",
-        "text": "Aby ukryć gry i ich postacie, włącz tylko te, które posiadasz."
+        "text": "Aby ukryć gry i ich postacie, włącz tylko te, które posiadasz. Progress is kept when switching."
     },
     "Please consider purchasing a license": "Proszę rozważyć zakup licencji",
     "Danger zone!": "Obszar niebezpieczny!",

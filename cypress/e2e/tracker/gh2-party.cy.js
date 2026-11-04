@@ -138,7 +138,7 @@ describe('Party GH2', () => {
     });
 
     it('It keeps the gh sheet free of gh2 fields', () => {
-        utilities.switchGame('gh');
+        utilities.chooseEdition('gh');
         cy.visit('/tracker/#/party');
         cy.get('input#p-5').click();
 

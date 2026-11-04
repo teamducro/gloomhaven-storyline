@@ -169,14 +169,30 @@ export default {
 
     enableGame(game) {
         cy.visit('/tracker/#/settings');
-        cy.get('#' + game + '-enabled').check();
+        if (game === 'gh2') {
+            this.chooseEdition('gh2');
+        } else {
+            cy.get('#' + game + '-enabled').check();
+        }
+    },
+
+    chooseEdition(game) {
+        cy.visit('/tracker/#/settings');
+        cy.get('#' + game + '-edition').check({force: true});
+        cy.get('#' + game + '-edition').should('be.checked');
     },
 
     switchGame(game) {
-        cy.get('button').contains('menu').click();
-        cy.get('.game-switch .mdc-select__selected-text').click();
-        cy.get('.' + game).click();
-        cy.reload();
+        cy.window().then((win) => {
+            // Choosing the gh2 edition already switches to it
+            if (win.app.game === game) {
+                return;
+            }
+            cy.get('button').contains('menu').click();
+            cy.get('.game-switch .mdc-select__selected-text').click();
+            cy.get('.' + game).click();
+            cy.reload();
+        });
     },
 
     openCharacter(character = 'Cragheart') {

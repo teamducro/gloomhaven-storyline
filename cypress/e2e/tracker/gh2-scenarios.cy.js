@@ -104,4 +104,17 @@ describe('GH2 scenarios', () => {
         awarded('G2CRD').should('eq', true);
         awarded('G2AUP').should('eq', false);
     });
+
+    it('shows the requirements of the opened scenario after another one', () => {
+        cy.visit('/tracker?states=1_c-2_c-3_c-4_c-5_c-6_c-10_c-11_c-17_c-19_c-20_c');
+        cy.visit('/tracker/#/scenarios');
+        cy.get('td').contains('#26 ').click({scrollBehavior: 'center'});
+        cy.get('#scenario-content').contains('Military Outpost');
+        utilities.closeModel();
+
+        cy.get('td').contains('#23B ').click({scrollBehavior: 'center'});
+        cy.get('#scenario-content').contains('Demonic Rift');
+        cy.get('#scenario-content').contains('Investigation');
+        cy.get('#scenario-content').should('not.contain', 'Military Outpost');
+    });
 });

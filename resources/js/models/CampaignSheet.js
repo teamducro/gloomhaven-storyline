@@ -240,10 +240,11 @@ class CampaignSheet {
             }
         }
 
-        // Remove old character unlocks from party sheet, keys are ids now
-        // Remove hidden characters
+        // Remove old character unlocks from party sheet, keys are ids now.
+        // Hidden classes are kept, so switching games or editions doesn't lose their unlocks.
+        const allCharacters = this.characterRepository.gameData.characters();
         this.characterUnlocks = _.each(this.characterUnlocks, (characterUnlock, id) => {
-            if (!characterOrder.includes(id)) {
+            if (!(id in allCharacters)) {
                 delete this.characterUnlocks[id];
             }
         });
