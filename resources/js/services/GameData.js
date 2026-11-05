@@ -81,17 +81,15 @@ export default class GameData {
         return this.crossover().filter(game => game in enabled ? enabled[game] : this.enabledByDefault(game))
     }
 
-    // Crossover packs start off, except MP for campaigns that already play one of its classes.
+    // Crossover packs start off, unless the campaign already uses one: a class (MP) or a personal quest (ConQuests).
     enabledByDefault(game) {
-        if (game === Game.mp) {
-            const campaign = store.get(store.get('campaignId') || 'local') || {}
-            const mpClasses = files[Game.mp].characterOrder
-
-            return Object.entries(campaign)
-                .some(([key, value]) => key.startsWith('character-') && mpClasses.includes(value?.id))
+        if (!this.crossover().includes(game)) {
+            return true
         }
+        const campaign = store.get(store.get('campaignId') || 'local') || {}
 
-        return !this.crossover().includes(game)
+        return Object.entries(campaign).some(([key, character]) => key.startsWith('character-')
+            && (files[game].characterOrder.includes(character?.id) || character?.quest?.game === game))
     }
 
     // Games whose personal quest deck the ConQuests cards can be shuffled into.

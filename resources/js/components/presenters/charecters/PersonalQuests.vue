@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <div @click="openCard" class="cursor-pointer w-12">
+            <div @click="openCard" class="cursor-pointer w-20 flex-shrink-0 pl-2">
                 <webp :src="quest.card.images[1]" :alt="$t(quest.name)"/>
             </div>
         </div>
@@ -144,7 +144,8 @@ export default {
             const id = [...Object.keys(this.quests)]
                 .filter(id => !unavailable.includes(id))
                 // GH2e starts with the `starting` quests; the rest join the deck later (FAQ 2.0), so pick those manually.
-                .filter(id => this.sheet.game !== 'gh2' || this.quests[id].starting)
+                // ConQuests cards are shuffled in like in GH.
+                .filter(id => this.sheet.game !== 'gh2' || this.quests[id].starting || this.quests[id].game === 'cq')
                 .sort((a, b) => 0.5 - Math.random())[0];
             const quest = this.quests[id];
             this.hidden = false;

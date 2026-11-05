@@ -311,7 +311,8 @@ export default {
     },
     "games-enabled": {
         "title": "Enabled Games",
-        "text": "To hide games and its characters enable only ones you own. Progress is kept when switching."
+        "text": "To hide games and its characters enable only ones you own. Progress is kept when switching.",
+        "packs": "Smaller expansions"
     },
     "Please consider purchasing a license": "Please consider purchasing a license",
     "Danger zone!": "Danger zone!",

@@ -109,9 +109,11 @@ describe('Mercenary Pack', () => {
 
 describe('Mercenary Pack default', () => {
 
-    it('It is off by default', () => {
+    it('It is off by default, listed under the smaller expansions', () => {
         cy.visit('/tracker/#/settings');
-        cy.get('#mp-enabled').should('not.be.checked');
+        cy.contains('h2', 'Smaller expansions');
+        cy.get('#packs-enabled #mp-enabled').should('not.be.checked');
+        cy.get('#packs-enabled #cq-enabled').should('not.be.checked');
     });
 
     it('It is on by default when the campaign plays a Mercenary Pack class', () => {

@@ -140,4 +140,28 @@ describe('ConQuests personal quests', () => {
 
         cy.contains('Earn 30 checkmarks from Battle Goals.');
     });
+
+    it('It draws the cards in Gloomhaven 2nd Edition', () => {
+        utilities.enableGame('cq');
+        utilities.enableGame('gh2');
+        utilities.switchGame('gh2');
+        openCharacterWithProsperity('sheet-gh2', prosperity5.gh2, 'Bruiser');
+        // Pick the last quest in the pool: the ConQuests cards come after the GH2 ones.
+        cy.window().then((win) => cy.stub(win.Math, 'random').returns(0.9999));
+        cy.get('button').contains('Draw').click({scrollBehavior: false});
+
+        cy.contains('ConQuests 04 A Dramatic Conclusion');
+    });
+
+    it('It is on by default when a character holds a card', () => {
+        cy.visit('/tracker/#/settings');
+        cy.window().then((win) => {
+            const data = JSON.parse(win.localStorage.getItem(win.app.campaignId)) || {};
+            data['character-cq-test'] = {uuid: 'cq-test', id: 'CH', quest: {id: 'cq01', game: 'cq', progress: []}};
+            win.localStorage.setItem(win.app.campaignId, JSON.stringify(data));
+        });
+        cy.reload();
+
+        cy.get('#cq-enabled').should('be.checked');
+    });
 });

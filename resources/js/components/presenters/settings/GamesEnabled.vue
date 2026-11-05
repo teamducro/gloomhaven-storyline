@@ -11,7 +11,7 @@
         </p>
 
         <ul :key="listKey">
-            <li v-for="code in games.filter(code => code !== Game.gh2)">
+            <li v-for="code in games.filter(code => code !== Game.gh2 && !packs.includes(code))">
                 <checkbox-with-label :id="code+'-enabled'"
                                      :label="$t(code)"
                                      v-model:checked="enabled[code]"
@@ -27,6 +27,17 @@
                            :checked="currentEdition === edition"
                            @changed="selectEdition(edition)"/>
                 </div>
+            </li>
+        </ul>
+
+        <h2 class="text-xl mt-4 mb-2">{{ $t('games-enabled.packs') }}</h2>
+        <ul :key="listKey + '-packs'" id="packs-enabled">
+            <li v-for="code in packs">
+                <checkbox-with-label :id="code+'-enabled'"
+                                     :label="$t(code)"
+                                     v-model:checked="enabled[code]"
+                                     :auto-disable="false"
+                                     @change="toggle(code)"/>
             </li>
         </ul>
     </div>
@@ -46,6 +57,7 @@ export default {
     data() {
         return {
             games: [],
+            packs: new GameData().crossover(),
             enabled: {},
             disabled: {},
             listKey: '',
