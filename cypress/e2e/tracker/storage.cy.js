@@ -107,4 +107,15 @@ describe('Storage', () => {
         }
     });
 
+    it('It falls back to the main game when the stored game is not supported', () => {
+        cy.visit('/tracker');
+        cy.window().then((win) => win.localStorage.setItem('game', JSON.stringify('unknown')));
+        cy.reload();
+
+        utilities.completeScenario(1);
+        cy.window().then((win) => {
+            expect(win.app.game).eq('gh');
+            expect(JSON.parse(win.localStorage.getItem('game'))).eq('gh');
+        });
+    });
 });

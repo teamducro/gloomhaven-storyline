@@ -36,6 +36,7 @@ import getEnabledGames from "./services/app/getEnabledGames";
 import getFont from "./services/app/getFont";
 import BaseUrl from "./mixins/BaseUrl";
 import {Game} from "./models/Game";
+import GameData from "./services/GameData";
 import enableGame from "./services/app/enableGame";
 import registerServiceWorker from "./services/app/RegisterServiceWorker";
 import routes from './routes';
@@ -213,6 +214,16 @@ const vueApp = createApp({
             store.set('campaignId', this.campaignId);
             this.story = null
         },
+        storedGame() {
+            const game = store.get('game');
+            // A game from another branch/release may not exist in this build
+            if (game && !new GameData().validate(game)) {
+                store.set('game', this.mainGame);
+                return this.mainGame;
+            }
+
+            return game || this.mainGame;
+        },
         async switchGame(game) {
             this.game = game;
             store.set('game', game);
@@ -233,7 +244,7 @@ const vueApp = createApp({
 
             this.campaignData = store.get(this.campaignId) || {};
             this.campaignData = migrateVersion2Progress(this.campaignData);
-            this.game = store.get('game') || this.mainGame;
+            this.game = this.storedGame();
             if (!this.enabledGames.includes(this.game)) {
                 this.enabledGames = enableGame(this.game);
             }
@@ -277,7 +288,7 @@ const vueApp = createApp({
             this.webpSupported = isWebpSupported();
             checkHasMouse(this.$bus);
             migrateVersion1Progress();
-            this.game = store.get('game') || this.mainGame;
+            this.game = this.storedGame();
             getFont();
             registerServiceWorker();
         }

@@ -12,6 +12,7 @@
         <item-modal/>
         <event-card/>
         <default-card-modal/>
+        <character-mat-modal/>
         <edit-campaign/>
         <ability-modal/>
         <modifier-deck-modal/>

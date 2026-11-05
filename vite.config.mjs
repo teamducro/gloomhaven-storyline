@@ -100,7 +100,8 @@ function postBuild(bundle, mainGame, inProduction) {
         async closeBundle() {
             if (bundle === 'app') {
                 for (const dir of [`resources/public-${mainGame}`, 'resources/img', 'resources/svg', 'resources/fonts']) {
-                    await fs.promises.cp(dir, dir.startsWith('resources/public-') ? 'public' : dir.replace('resources', 'public'), {recursive: true});
+                    await fs.promises.cp(dir, dir.startsWith('resources/public-') ? 'public' : dir.replace('resources', 'public'),
+                        {recursive: true, preserveTimestamps: true, filter: isChanged});
                 }
 
                 await replace('public/sitemap.xml', /release-date/g, dayjs().format('YYYY-MM-DD'));
@@ -126,6 +127,13 @@ async function replaceInHtml(from, to) {
     for (const html of ['public/index.html', 'public/tracker/index.html']) {
         await replace(html, from, to);
     }
+}
+
+// resources/img is ~800MB: only copy files that are new or differ from the previous build's copy.
+async function isChanged(src, dest) {
+    const [from, to] = await Promise.all([fs.promises.stat(src), fs.promises.stat(dest).catch(() => null)]);
+
+    return from.isDirectory() || !to || from.size !== to.size || from.mtimeMs !== to.mtimeMs;
 }
 
 function md5(path) {

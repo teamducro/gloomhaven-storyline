@@ -376,6 +376,8 @@ export default {
     "Dragons": "Dragons",
     "Voice": "Voix",
     "Solo": "Solo",
+    "Flip": "Retourner",
+    "Character mat": "Plateau de personnage",
     "Solo Scenarios": "Solo Scenarios",
     "Personal Quests": "Quêtes Personnelles",
     "Personal Quest": "Quête Personnelle",
