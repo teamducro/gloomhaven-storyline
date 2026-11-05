@@ -440,7 +440,7 @@ export default {
         "name": "Chieftain",
         "perks": [
             "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{HEAL}1, {CT}” card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{HEAL}1, {CT_CIRCLE}” card",
             "Replace one {-1_WHITE} card with one {+0_WHITE} “{HEAL}1, all summoned allies owned” card",
             "Replace one {-2_WHITE} card with one {-2_WHITE} “{BLESS}, Self” card",
             "Replace two {+0_WHITE} cards with one {+0_WHITE} “{IMMOBILIZE} and {PUSH}1” card",

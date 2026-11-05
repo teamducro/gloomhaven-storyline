@@ -185,25 +185,13 @@ class Sheet {
     }
 
     fillRelations() {
-        for (const uuid in this.characters) {
-            if (!(this.characters[uuid] instanceof Character)) {
-                this.characters[uuid] = Character.make(uuid, this.game);
-                // Character was removed, remove it from sheet
-                if (!this.characters[uuid].id) {
-                    delete this.characters[uuid];
-                }
-            }
-        }
-
-        for (const uuid in this.archivedCharacters) {
-            if (!(this.archivedCharacters[uuid] instanceof Character)) {
-                this.archivedCharacters[uuid] = Character.make(uuid, this.game);
-                // Character was removed, remove it from sheet
-                if (!this.archivedCharacters[uuid].id) {
-                    delete this.archivedCharacters[uuid];
-                }
-            }
-        }
+        // Copies: read() shares these objects with app.campaignData, which must keep the unknown characters.
+        this.characters = {...this.characters};
+        this.archivedCharacters = {...this.archivedCharacters};
+        this.unknownCharacters = {};
+        this.unknownArchivedCharacters = {};
+        Character.makeForSheet(this.characters, this.game, this.unknownCharacters);
+        Character.makeForSheet(this.archivedCharacters, this.game, this.unknownArchivedCharacters);
     }
 
     fillCharacterUnlocks() {
@@ -290,8 +278,14 @@ class Sheet {
         values.rift = collect({...this.rift}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();
         values.characterUnlocks = collect({...this.characterUnlocks}).filter(v => v).all();
-        values.characters = collect({...this.characters}).mapWithKeys(character => [character.uuid, character.id]).all();
-        values.archivedCharacters = collect({...this.archivedCharacters}).mapWithKeys(character => [character.uuid, character.id]).all();
+        values.characters = {
+            ...collect({...this.characters}).mapWithKeys(character => [character.uuid, character.id]).all(),
+            ...this.unknownCharacters,
+        };
+        values.archivedCharacters = {
+            ...collect({...this.archivedCharacters}).mapWithKeys(character => [character.uuid, character.id]).all(),
+            ...this.unknownArchivedCharacters,
+        };
         values.enhancements = collect({...this.enhancements}).map(perAbility =>
             collect(perAbility).filter(list => list.length).all()
         ).filter(perAbility => Object.keys(perAbility).length).all();

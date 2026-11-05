@@ -31,6 +31,31 @@ describe('Character', () => {
         cy.get('li.add-character').contains('Cragheart').contains('Cragheart').parent().should('have.class', 'grayscale');
     });
 
+    it('It opens the character mat and flips it', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+
+        cy.get('#character-art').click();
+        cy.get('#character-mat img[src*="character-mats/gh/CH-front"]').should('exist');
+        cy.get('#character-mat .inner').should('not.have.class', 'flipped');
+
+        cy.get('#flip-character-mat').click();
+        cy.get('#character-mat .inner').should('have.class', 'flipped');
+    });
+
+    it('It hides the character mat for characters without one', () => {
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+        cy.get('#character-SA').click();
+
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Satha');
+
+        cy.get('input[name="name"]').should('have.value', 'Satha');
+        cy.get('#character-art').should('not.exist');
+    });
+
     it('It can change the character name', () => {
         cy.visit('/tracker/#/characters');
 
@@ -172,6 +197,37 @@ describe('Character', () => {
         cy.get('#pq-0-0').should('be.checked');
         cy.get('#pq-0-1').should('not.be.checked');
         cy.get('#pq-0-2').should('not.be.checked');
+    });
+
+    it('It skips stored characters of an unknown class', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+
+        // Simulate a class this version doesn't know, e.g. stored by a newer version
+        let characterKey;
+        cy.window().then((window) => {
+            const campaignData = JSON.parse(window.localStorage.getItem(window.app.campaignId));
+            characterKey = Object.keys(campaignData).find(key => key.startsWith('character-'));
+            campaignData[characterKey].id = 'XX2';
+            window.localStorage.setItem(window.app.campaignId, JSON.stringify(campaignData));
+        });
+        cy.reload();
+
+        cy.get('input[name="name"]').should('have.value', 'Brute');
+        cy.get('#desktop-character-menu').should('not.contain', 'Cragheart');
+
+        // Storing the sheet keeps the unknown character for the version that knows it
+        utilities.openCharacter('Spellweaver');
+        cy.get('#desktop-character-menu').should('contain', 'Spellweaver');
+        cy.window().then((window) => {
+            const campaignData = JSON.parse(window.localStorage.getItem(window.app.campaignId));
+            const uuid = characterKey.replace('character-', '');
+            const sheet = Object.values(campaignData).find(value => value?.characters?.[uuid]);
+
+            expect(sheet, 'sheet still lists the unknown character').to.exist;
+            expect(campaignData[characterKey].id).to.equal('XX2');
+        });
     });
 
     it('It can open solo scenario', () => {

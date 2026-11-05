@@ -438,7 +438,7 @@ export default {
         "name": "Chieftain",
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {POISON}",
-            "TODO:: Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {HEAL}1, {CT}",
+            "TODO:: Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {HEAL}1, {CT_CIRCLE}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {HEAL}1, all summoned allies owned",
             "TODO::Sustituye 1 carta {-2_WHITE} por 1 carta {-2_WHITE} {BLESS}, Personal",
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {+0_WHITE} {IMMOBILIZE} y {PUSH}1",

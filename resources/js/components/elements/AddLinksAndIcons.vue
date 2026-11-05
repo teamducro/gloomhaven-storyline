@@ -79,7 +79,7 @@ export default {
 
             if (text.match(new RegExp('{' + characters.join('|'))) !== null) {
                 characters.forEach((character) => {
-                    text = text.replace(`{${character}_CIRCLE}`, `<span class="rounded-full border border-white inline-flex"><character-icon class="w-4" character="${character}" /></span>`);
+                    text = text.replace(`{${character}_CIRCLE}`, `<span class="rounded-full border border-white inline-flex relative top-1"><character-icon class="w-4" character="${character}" /></span>`);
                     text = text.replace(`{${character}}`, `<character-icon class="w-6 -ml-1 -mb-2 inline-block" character="${character}" />`);
                 });
             }

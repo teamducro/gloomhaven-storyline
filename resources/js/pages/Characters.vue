@@ -2,20 +2,35 @@
     <div v-if="sheet" :key="sheetHash" class="pt-12 pb-4 px-2 sm:px-4 md:px-8">
         <div id="characters" class="relative bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-party min-h-screen">
 
-            <tabs v-if="sheet.game === Game.fh" class="hidden sm:block"
+            <template v-if="character && selected && !abilities && character.hasMat">
+                <div id="character-art" @click="openCharacterMat" aria-hidden="true"
+                     class="character-art-hover hidden sm:block absolute top-0 right-0 z-1 w-80 h-32 cursor-pointer"></div>
+                <!-- Same position and size as the add character button, one row below it -->
+                <div class="character-art-touch character-art-hover absolute right-0 top-0 mt-[7.5rem] sm:mt-[5rem] mr-4 z-5">
+                    <button id="character-art-button" type="button" :title="$t('Character mat')"
+                            @click="openCharacterMat"
+                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-dark-gray2-75 rounded-full">
+                        open_in_full
+                    </button>
+                </div>
+                <webp :key="character.artImage" :src="character.artImage" alt=""
+                      class="character-art absolute top-0 right-0 w-56 sm:w-80 rounded-tr-lg"/>
+            </template>
+
+            <tabs v-if="sheet.game === Game.fh" class="hidden sm:block sm:w-max relative z-1"
                   :tabs="[$t('Campaign sheet'), $t('Characters'), $t('Items'), $t('Buildings')]"
                   :icons="['assignment', 'person', 'style', 'home']"
                   :urls="['party', 'characters', 'items', 'buildings']"
                   :active="$t('Characters')"
             />
-            <tabs v-else class="hidden sm:block"
+            <tabs v-else class="hidden sm:block sm:w-max relative z-1"
                   :tabs="[$t('Party sheet'), $t('Characters'), $t('Items')]"
                   :icons="['assignment', 'person', 'style']"
                   :urls="['party', 'characters', 'items']"
                   :active="$t('Characters')"
             />
             
-            <h1 class="hidden sm:inline-block mt-4 text-xl">{{ campaignName }}
+            <h1 class="hidden sm:inline-block relative z-1 mt-4 text-xl">{{ campaignName }}
                 <span v-if="character && selected"
                       class="pl-6">{{ $t(character.characterName) }}</span>
                 <span v-if="abilities"
@@ -30,8 +45,8 @@
 
                 <div v-if="character && !abilities" class="w-full relative sm:ml-8"
                      :class="{'opacity-25': !selected}">
-                    <div class="flex flex-col sheet-break-lg:flex-row sheet-break-lg:space-x-4">
-                        <div class="w-full sheet-break-lg:w-1/2">
+                    <div class="character-sheet flex flex-col">
+                        <div class="w-full">
                             <div v-if="!selected" @click.stop="() => {$refs['add-character'].open()}"
                                  class="absolute z-1 top-0 right-0 bottom-0 left-0 cursor-pointer">
                             </div>
@@ -130,7 +145,7 @@
                             ></notes>
 
                         </div>
-                        <div class="w-full sheet-break-lg:w-1/2">
+                        <div class="character-sheet-right w-full mt-8 sheet-break-lg:mt-0">
 
                             <perks v-model:checks="character.checks"
                                    v-model:perks="character.perks"
@@ -154,39 +169,41 @@
                                 <scenario-number :scenario="soloScenario" show-name/>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="mt-8">
-                        <div class="mb-2 flex items-center">
-                            <h2>{{ $t('Retirement counter') }}</h2>
-                            <rollback v-show="!loading" ref="level-rollback"
-                                      v-model:value="character.retirements"></rollback>
+                        <div>
+                            <div class="mt-8">
+                                <div class="mb-2 flex items-center">
+                                    <h2>{{ $t('Retirement counter') }}</h2>
+                                    <rollback v-show="!loading" ref="level-rollback"
+                                              v-model:value="character.retirements"></rollback>
+                                </div>
+                                <number-field v-model:value="character.retirements" :min="0" :max="20"
+                                              id="retirements" @change="store"></number-field>
+                                <p class="text-sm">
+                                    {{ $t('Set this counter to the amount of characters you have retired') }}
+                                </p>
+                            </div>
+
+                            <div class="my-8">
+                                <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
+                                        class="mr-4 mdc-button mdc-button--raised" :disabled="appData.read_only">
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
+                                    <span class="mdc-button__label">{{ $t('Retire') }}</span>
+                                </button>
+                                <button v-if="isArchived" @click="$refs['remove-character'].open()" type="button"
+                                        class="mdc-button mdc-button--raised" :disabled="appData.read_only">
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
+                                    <span class="mdc-button__label">{{ $t('Remove') }}</span>
+                                </button>
+                                <button v-if="isArchived" type="button"
+                                        @click="restore"
+                                        :disabled="appData.read_only || characterRepository.partyHasCharacter(sheet, character.id)"
+                                        class="ml-4 mdc-button mdc-button--raised">
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
+                                    <span class="mdc-button__label">{{ $t('Restore') }}</span>
+                                </button>
+                            </div>
                         </div>
-                        <number-field v-model:value="character.retirements" :min="0" :max="20"
-                                      id="retirements" @change="store"></number-field>
-                        <p class="text-sm">
-                            {{ $t('Set this counter to the amount of characters you have retired') }}
-                        </p>
-                    </div>
-
-                    <div class="my-8">
-                        <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
-                                class="mr-4 mdc-button mdc-button--raised" :disabled="appData.read_only">
-                            <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
-                            <span class="mdc-button__label">{{ $t('Retire') }}</span>
-                        </button>
-                        <button v-if="isArchived" @click="$refs['remove-character'].open()" type="button"
-                                class="mdc-button mdc-button--raised" :disabled="appData.read_only">
-                            <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
-                            <span class="mdc-button__label">{{ $t('Remove') }}</span>
-                        </button>
-                        <button v-if="isArchived" type="button"
-                                @click="restore"
-                                :disabled="appData.read_only || characterRepository.partyHasCharacter(sheet, character.id)"
-                                class="ml-4 mdc-button mdc-button--raised">
-                            <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
-                            <span class="mdc-button__label">{{ $t('Restore') }}</span>
-                        </button>
                     </div>
                 </div>
                 <div v-if="character && selected && abilities" class="w-full relative sm:ml-8">
@@ -560,7 +577,65 @@ export default {
         },
         abilityBackImage() {
             return `/img/abilities/${this.character.game}/${this.character.id}/back.jpg`;
+        },
+        openCharacterMat() {
+            this.$bus.$emit('open-character-mat', this.character);
         }
     }
 }
 </script>
+
+<style scoped lang="scss">
+// Two columns; the retirement section sits under the left column so long perk lists don't push it down.
+// Stacked (mobile) it stays last.
+@screen sheet-break-lg {
+    .character-sheet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 1rem;
+    }
+
+    .character-sheet-right {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+}
+
+#characters {
+    // Keeps the art's negative z-index above the panel background.
+    isolation: isolate;
+}
+
+.character-art {
+    z-index: -1;
+    opacity: .3;
+    pointer-events: none;
+    mask-image: radial-gradient(ellipse at top right, black 35%, transparent 75%);
+    transition: opacity .3s;
+}
+
+.character-art-hover:hover ~ .character-art {
+    opacity: .6;
+}
+
+// Mouse users click the art itself; touch devices and mobile (where the art isn't clickable) get a button.
+.character-art-touch {
+    display: none;
+
+    @media (hover: none), (max-width: 639px) {
+        display: block;
+        animation: fade-in .5s ease-in;
+    }
+}
+
+// Smaller icon, padding grown by the difference so the circle matches the add character button.
+#character-art-button {
+    font-size: 20px;
+    padding: calc(.5rem + 2px);
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+}
+</style>

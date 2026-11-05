@@ -4,7 +4,7 @@
         <div class="mb-4">
             <div class="flex" v-for="(perkDescription, perkIndex) in character.perkDescriptions">
                 <div :key="'perk-'+perkIndex"
-                     :class="{'checkbox-groups': perkDescription.linked}">
+                     class="perk-checkboxes" :class="{'checkbox-groups': perkDescription.linked}">
                     <template v-for="(perk, index) in perks[perkIndex]" :key="index">
                         <checkbox v-if="index < perkDescription.count" group="perks"
                               :id="'perk-'+perkIndex+'-'+index"
@@ -29,8 +29,8 @@
                 </div>
             </template>
         </div>
-        <h2 v-if="masteries" class="mt-4 mb-2">{{ $t('Masteries') }}</h2>
-        <div v-if="masteries" class="mb-4">
+        <h2 v-if="character.masteryDescriptions?.length" class="mt-4 mb-2">{{ $t('Masteries') }}</h2>
+        <div v-if="character.masteryDescriptions?.length" class="mb-4">
             <div v-for="(masteryDescription, masteryIndex) in character.masteryDescriptions"
                 :key="'mastery-'+masteryIndex"
                 class="flex items-center">
@@ -102,6 +102,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// At most two checkboxes per row; more wrap below.
+.perk-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-shrink: 0;
+    max-width: 80px;
+}
+
 .checkbox-groups {
     display: flex;
     padding: 12px;

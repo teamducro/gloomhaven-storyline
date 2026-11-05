@@ -375,6 +375,8 @@ export default {
     "Dragons": "Smoki",
     "Voice": "Głos",
     "Solo": "Solo",
+    "Flip": "Odwróć",
+    "Character mat": "Plansza postaci",
     "Solo Scenarios": "Scenariusze dla jednego gracza",
     "Personal Quests": "Cele życiowe",
     "Personal Quest": "Cel życiowy",

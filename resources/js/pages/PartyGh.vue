@@ -118,50 +118,52 @@
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Unlocks') }}</h2>
                 <table class="w-full mb-4">
-                    <template v-for="(unlock, index) in unlocks" :key="'unlock'+index">
-                        <tr v-if="index < 8"
-                            class="flex items-center border-b border-gray-600">
+                    <tbody>
+                        <template v-for="(unlock, index) in unlocks" :key="'unlock'+index">
+                            <tr v-if="index < 8"
+                                class="flex items-center border-b border-gray-600">
+                                <td class="-ml-2">
+                                    <checkbox group="unlocks"
+                                              :id="'unlock'+index"
+                                              :checked="sheet.unlocks[index]"
+                                              @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
+                                </td>
+                                <td class="w-full flex items-center flex-wrap">
+                                    <label :for="'unlock'+index" class="whitespace-normal md:whitespace-nowrap cursor-pointer">
+                                        {{ unlock.goal }}
+                                    </label>
+                                    <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
+                                        <span class="material-icons mr-1">remove</span>
+                                        <component v-bind:is="renderHtml(unlock.reward)"></component>
+                                    </span>
+                                </td>
+                            </tr>
+                        </template>
+                        <tr class="flex items-center border-b border-gray-600">
                             <td class="-ml-2">
-                                <checkbox group="unlocks"
-                                          :id="'unlock'+index"
-                                          :checked="sheet.unlocks[index]"
-                                          @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
+                                <checkbox group="unlocks" id="unlock8"
+                                          :checked="sheet.unlocks[8]"
+                                          @change="(id, isChecked) => {sheet.unlocks[8] = isChecked; store(); rerenderX();}"></checkbox>
                             </td>
-                            <td class="w-full flex items-center flex-wrap">
-                                <label :for="'unlock'+index" class="whitespace-normal md:whitespace-nowrap cursor-pointer">
-                                    {{ unlock.goal }}
-                                </label>
-                                <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
-                                    <span class="material-icons mr-1">remove</span>
-                                    <component v-bind:is="renderHtml(unlock.reward)"></component>
+                            <td class="w-full flex flex-wrap items-center">
+                                <span class="whitespace-normal md:whitespace-nowrap">
+                                    {{ $t('Envelope') }} <span class="font-title">x</span> {{ $t('opened') }}
                                 </span>
                             </td>
                         </tr>
-                    </template>
-                    <tr class="flex items-center border-b border-gray-600">
-                        <td class="-ml-2">
-                            <checkbox group="unlocks" id="unlock8"
-                                      :checked="sheet.unlocks[8]"
-                                      @change="(id, isChecked) => {sheet.unlocks[8] = isChecked; store(); rerenderX();}"></checkbox>
-                        </td>
-                        <td class="w-full flex flex-wrap items-center">
-                            <span class="whitespace-normal md:whitespace-nowrap">
-                                {{ $t('Envelope') }} <span class="font-title">x</span> {{ $t('opened') }}
-                            </span>
-                        </td>
-                    </tr>
-                    <tr v-show="sheet.unlocks[8]" :key="'a'+renderX"
-                        class="flex items-center border-b border-gray-600">
-                        <td class="-ml-2">
-                            <checkbox disabled="disabled" readonly="readonly"
-                                      :checked="'BS' in sheet.characterUnlocks"></checkbox>
-                        </td>
-                        <td class="w-full flex flex-wrap">
-                            <text-field class="my-2" id="x-result" :label="$t('Envelope X solution')"
-                                        :value="sheet.xResult || ''" :max="10"
-                                        @change="xResultChanged"></text-field>
-                        </td>
-                    </tr>
+                        <tr v-show="sheet.unlocks[8]" :key="'a'+renderX"
+                            class="flex items-center border-b border-gray-600">
+                            <td class="-ml-2">
+                                <checkbox disabled="disabled" readonly="readonly"
+                                          :checked="'BS' in sheet.characterUnlocks"></checkbox>
+                            </td>
+                            <td class="w-full flex flex-wrap">
+                                <text-field class="my-2" id="x-result" :label="$t('Envelope X solution')"
+                                            :value="sheet.xResult || ''" :max="10"
+                                            @change="xResultChanged"></text-field>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <unlock-characters :sheet="sheet" @change="store" :key="'b'+renderX"/>

@@ -440,7 +440,7 @@ export default {
         "name": "Chieftain",
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {POISON}",
-            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}1, {CT}”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}1, {CT_CIRCLE}”",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}1, all summoned allies owned”",
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “{BLESS}, na siebie”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {+0_WHITE} “{IMMOBILIZE} and {PUSH}1”",

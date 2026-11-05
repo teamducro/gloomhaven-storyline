@@ -440,7 +440,7 @@ export default {
         "name": "Chieftain",
         "perks": [
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {POISON}",
-            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{HEAL} 1, {CT}”",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{HEAL} 1, {CT_CIRCLE}”",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{HEAL} 1, all summ1d allies owned”",
             "Поменяйте 1 карту {-2_WHITE} на 1 карту {-2_WHITE} “{BLESS} (на себя)”",
             "Поменяйте 2 карты {+0_WHITE} на 1 карту {+0_WHITE} “{IMMOBILIZE} и {PUSH} 1”",

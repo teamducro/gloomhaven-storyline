@@ -440,7 +440,7 @@ export default {
         "name": "Chieftain",
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {POISON} lapra",
-            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{HEAL}1, {CT}” lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{HEAL}1, {CT_CIRCLE}” lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{HEAL}1, összes idézet csapattárs lény” lapra",
             "Cserélj ki egy {-2_WHITE} lapot egy {-2_WHITE} “{BLESS}, Magadra” lapra",
             "Cserélj ki két {+0_WHITE} lapot egy {+0_WHITE} “{IMMOBILIZE} and {PUSH}1” lapra",

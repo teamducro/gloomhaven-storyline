@@ -376,6 +376,8 @@ export default {
     "Dragons": "Dragons",
     "Voice": "Voice",
     "Solo": "Solo",
+    "Flip": "Megfordítás",
+    "Character mat": "Karaktertábla",
     "Solo Scenarios": "Solo Scenarios",
     "Personal Quests": "Életcélok",
     "Personal Quest": "Életcél",
