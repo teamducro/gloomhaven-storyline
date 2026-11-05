@@ -2,19 +2,19 @@
 
 The only game with its own sheet model (`models/CampaignSheet.js`, key `campaign-fh`; `SheetRepository.make('fh')`) and the only game with buildings. Party page: `pages/PartyFh.vue`; buildings: `pages/Buildings.vue`.
 
-## Data (`scenarios-fh.json`)
+## Data (`games/fh.json`)
 
-Top-level `scenarios` (0–137 + solo 201–217), `chapters` (1–6 story; 107 Personal Quests, 108 Puzzle Book, 109 Random Scenarios, 110 Other, 111 Job Postings), `overlays`, `buildings`. Also `achievements-fh.json`, `items-fh.json`, `quests-fh.json` (story summaries), `personal-quests-fh.json`, `abilities-fh.json`, `alchemy-fh.json`, `town-guard-fh.json`.
+Top-level `scenarios` (0–137 + solo 201–217), `chapters` (1–6 story; 107 Personal Quests, 108 Puzzle Book, 109 Random Scenarios, 110 Other, 111 Job Postings), `overlays`, `buildings`. Also `achievements`, `items`, `quests` (story summaries), `personalQuests`, `abilities`, `alchemy`, `townGuard`.
 
 Scenario extras: `complexity`, `loot` (coins, materials, herbs, `random-item-treasure`), `prompt` (named conclusion decisions handled in `ChoiceService`, e.g. `startingMorale`, `finalNegotiation`), free-text `requirements`. `required_by` tokens `boat`/`sled`/`rope` (Climbing Gear) check workshop vehicles; `calendar` and `puzzle` are ticked by hand (`Requirement.manuallyUnlock`).
 
 ## Campaign sheet
 
-- Calendar: `calendar.week` = passed weeks (80), `calendar.sections[week]` = sections to read. Weeks 1–10 summer, 11–20 winter, repeating (`CampaignSheet.isSummer`). Nothing triggers automatically.
+- Calendar: `calendar.week` = passed weeks (80), `calendar.sections` = sections to read per week, seeded from `rules` (`calendarSections`) for new campaigns, then added/removed by hand. Weeks 1–10 summer, 11–20 winter, repeating (`CampaignSheet.isSummer`). Nothing triggers automatically.
 - Morale 0–20 → defense (`SheetCalculations.calculateDefense`); walls add 5 each; `totalDefense` is a separate manual counter.
 - Resources: `sheet.resources` and `character.resources` (lumber, metal, hide, six herbs). Soldiers, inspiration: counters.
 - Prosperity thresholds 1/7/16/28/43/61/82/106/133.
-- Town guard: `sheet.checks` (45 checkmarks, groups of 3), `sheet.perks` from `town-guard-fh.json`, deck from `AttackModifierRepository.getTownGuardModifiers`.
+- Town guard: `sheet.checks` (45 checkmarks, groups of 3), `sheet.perks` from `townGuard`, deck from `AttackModifierRepository.getTownGuardModifiers`.
 - Event decks: `summerOutpost`, `summerRoad`, `winterOutpost`, `winterRoad`, `boat` (shown only when the Boat exists). Draw picks a random card in the deck; card types in `models/Card.js`.
 - Alchemy (`AlchemySection.vue`): brewing sets `sheet.itemDesigns` and `sheet.recipes`; 2 herbs from Alchemist level 1, 3 from level 3.
 

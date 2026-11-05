@@ -36,8 +36,8 @@
                     <slot name="label" :item="overlay.id">
                         <span>{{ overlayDisplayName(overlay, false) }}</span>
                     </slot>
-                    <span class="material-icons">
-                        {{ overlay.present ? 'check_circle_outline' : 'radio_button_unchecked' }}
+                    <span class="material-icons outlined">
+                        {{ overlay.present ? 'check_circle' : 'radio_button_unchecked' }}
                     </span>
                 </div>
             </template>
@@ -67,8 +67,8 @@
                     <slot name="label" :item="building.id">
                         <span>{{ building.id }}</span>
                     </slot>
-                    <span class="material-icons">
-                        {{ building.isUnlocked() ? 'check_circle_outline' : 'radio_button_unchecked' }}
+                    <span class="material-icons outlined">
+                        {{ building.isUnlocked() ? 'check_circle' : 'radio_button_unchecked' }}
                     </span>
                 </div>
             </template>
@@ -130,6 +130,7 @@
                             </div>
                         </button>
                     </div>
+                    <add-links-and-icons v-if="building.nextUpgradeRequirement" class="inline-icons text-center mt-1" :text="$t(building.nextUpgradeRequirement)"/>
                     <button v-if="building.upgraded" class="mdc-button -mb-2" :disabled="appData.read_only" @click="downgrade(building)">
                         <span class="material-icons mr-1">replay</span> {{ $t('Downgrade') }}
                     </button>

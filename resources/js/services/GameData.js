@@ -1,40 +1,32 @@
-import achievementsJson from '../achievements.json'
-import achievementsFhJson from '../achievements-fh.json'
-import achievementsGh2Json from '../achievements-gh2.json'
-import scenariosJson from '../scenarios.json'
-import scenariosFhJson from '../scenarios-fh.json'
-import scenariosJotlJson from '../scenarios-jotl.json'
-import scenariosCsJson from '../scenarios-cs.json'
-import scenariosMpJson from '../scenarios-mp.json'
-import scenariosGh2Json from '../scenarios-gh2.json'
-import questsJson from '../quests.json'
-import questsFcJson from '../quests-fc.json'
-import questsJotlJson from '../quests-jotl.json'
-import questsFhJson from '../quests-fh.json'
-import questsCsJson from '../quests-cs.json'
-import personalQuestsJson from '../personal-quests.json'
-import personalQuestsCsJson from '../personal-quests-cs.json'
-import personalQuestsFhJson from '../personal-quests-fh.json'
-import personalQuestsGh2Json from '../personal-quests-gh2.json'
-import itemsJson from '../items.json'
-import itemsJotlJson from '../items-jotl.json'
-import itemsCsJson from '../items-cs.json'
-import itemsFhJson from '../items-fh.json'
-import itemsMpJson from '../items-mp.json'
-import itemsGh2Json from '../items-gh2.json'
-import abilitiesJson from '../abilities.json'
-import abilitiesFcJson from '../abilities-fc.json'
-import abilitiesJotlJson from '../abilities-jotl.json'
-import abilitiesCsJson from '../abilities-cs.json'
-import abilitiesFhJson from '../abilities-fh.json'
-import abilitiesMpJson from '../abilities-mp.json'
-import abilitiesGh2Json from '../abilities-gh2.json'
-import charactersJson from '../characters.json'
-import attackModifierDecksJson from '../attack-modifier-decks.json'
-import townGuardFhJson from '../town-guard-fh.json'
-import alchemyFhJson from '../alchemy-fh.json'
+import ghJson from '../games/gh.json'
+import gh2Json from '../games/gh2.json'
+import fhJson from '../games/fh.json'
+import fcJson from '../games/fc.json'
+import jotlJson from '../games/jotl.json'
+import csJson from '../games/cs.json'
+import mpJson from '../games/mp.json'
+import GameDataFile from "./GameDataFile";
 import {Game} from "../models/Game";
 import store from "store/dist/store.modern";
+
+const files = {
+    [Game.gh]: new GameDataFile(ghJson),
+    [Game.gh2]: new GameDataFile(gh2Json),
+    [Game.fh]: new GameDataFile(fhJson),
+    [Game.fc]: new GameDataFile(fcJson),
+    [Game.jotl]: new GameDataFile(jotlJson),
+    [Game.cs]: new GameDataFile(csJson),
+    [Game.mp]: new GameDataFile(mpJson),
+}
+
+// Merge order of the lists that span all games; keeps the historical global order.
+const mergeOrder = [Game.gh, Game.fc, Game.jotl, Game.cs, Game.fh, Game.mp, Game.gh2].map(game => files[game])
+
+const allCharacters = Object.assign({}, ...mergeOrder.map(file => file.characters))
+const allCharacterOrder = mergeOrder.flatMap(file => file.characterOrder)
+const allAttackModifierDecks = Object.assign({}, ...mergeOrder.map(file => file.attackModifierDecks))
+// GH, FC, CS and MP share one list: the GH achievements, then the CS Party achievements.
+const ghFamilyAchievements = [...files.gh.achievements, ...files.cs.achievements]
 
 export default class GameData {
     // Crossover packs are not selectable as the main/active game, only as add-on content.
@@ -44,10 +36,6 @@ export default class GameData {
 
     games() {
         return Object.getOwnPropertyNames(Game)
-    }
-
-    beta() {
-        return [Game.gh2]
     }
 
     purchasable() {
@@ -73,8 +61,8 @@ export default class GameData {
     crossoverData() {
         return {
             [Game.mp]: {
-                scenarios: scenariosMpJson.scenarios,
-                items: itemsMpJson
+                scenarios: files[Game.mp].scenarios,
+                items: files[Game.mp].items
             }
         }
     }
@@ -89,286 +77,172 @@ export default class GameData {
     }
 
     achievements(game) {
-        switch (game) {
-            case Game.jotl:
-                return []
-            case Game.fh:
-                return achievementsFhJson
-            case Game.gh2:
-                return achievementsGh2Json
-            default:
-                return achievementsJson
+        if ([Game.jotl, Game.fh, Game.gh2].includes(game)) {
+            return files[game].achievements
         }
+
+        return ghFamilyAchievements
     }
 
+    // Keep each scenario's own `game` (e.g. "mp") rather than retagging it to the
+    // base game: translations are keyed by game-id, so retagging would orphan them.
     scenarios(game) {
-        return this._scenarioData(game).scenarios
+        const scenarios = this._playable(game).scenarios
+
+        if (this.crossover().includes(game)) {
+            return scenarios
+        }
+
+        const crossoverData = this.crossoverData()
+        const extraScenarios = this.enabledCrossovers().flatMap((crossoverGame) => crossoverData[crossoverGame].scenarios)
+
+        return extraScenarios.length ? [...scenarios, ...extraScenarios] : scenarios
     }
 
     regions(game) {
-        return this._scenarioData(game).regions
+        return this._playable(game).regions
     }
 
     chapters(game) {
-        return this._scenarioData(game).chapters
+        return this._playable(game).chapters
     }
 
     overlays(game) {
-        return this._scenarioData(game).overlays || []
+        return this._playable(game).overlays
     }
 
     buildings(game) {
-        return this._scenarioData(game).buildings || []
+        return this._playable(game).buildings
     }
 
-    characters(game) {
-        switch (game) {
-            default:
-                return _.clone(charactersJson.characters)
-        }
+    characters() {
+        return _.clone(allCharacters)
     }
 
-    characterOrder(game) {
-        switch (game) {
-            default:
-                return charactersJson.order
-        }
-    }
-
-    _scenarioData(game) {
-        const data = this._baseScenarioData(game)
-
-        if (this.crossover().includes(game)) {
-            return data
-        }
-
-        // Keep each scenario's own `game` (e.g. "mp") rather than retagging it to the
-        // base game: translations are keyed by game-id, so retagging would orphan them.
-        const crossoverData = this.crossoverData()
-        const extraScenarios = this.enabledCrossovers().flatMap((crossoverGame) => {
-            return crossoverData[crossoverGame].scenarios
-        })
-
-        if (!extraScenarios.length) {
-            return data
-        }
-
-        return {...data, scenarios: [...data.scenarios, ...extraScenarios]}
-    }
-
-    _baseScenarioData(game) {
-        switch (game) {
-            case Game.fh:
-                return scenariosFhJson
-            case Game.jotl:
-                return scenariosJotlJson
-            case Game.cs:
-                return scenariosCsJson
-            case Game.mp:
-                return scenariosMpJson
-            case Game.gh2:
-                return scenariosGh2Json
-            default:
-                return scenariosJson
-        }
+    characterOrder() {
+        return allCharacterOrder
     }
 
     quests(game) {
-        switch (game) {
-            case Game.gh:
-                return questsJson
-            case Game.jotl:
-                return questsJotlJson
-            case Game.fh:
-                return questsFhJson
-            case Game.fc:
-                return questsFcJson
-            case Game.cs:
-                return questsCsJson
-            default:
-                return []
-        }
+        return files[game]?.quests || []
     }
 
     items(game) {
-        const data = this._baseItems(game)
+        const items = this._playable(game).items
 
         if (this.crossover().includes(game)) {
-            return data
+            return items
         }
 
         const crossoverData = this.crossoverData()
         const extraItems = this.enabledCrossovers().flatMap((crossoverGame) => crossoverData[crossoverGame].items)
 
-        return extraItems.length ? [...data, ...extraItems] : data
-    }
-
-    _baseItems(game) {
-        switch (game) {
-            case Game.jotl:
-                return itemsJotlJson
-            case Game.cs:
-                return itemsCsJson
-            case Game.fh:
-                return itemsFhJson
-            case Game.mp:
-                return itemsMpJson
-            case Game.gh2:
-                return itemsGh2Json
-            // FC uses GH items
-            default:
-                return itemsJson
-        }
+        return extraItems.length ? [...items, ...extraItems] : items
     }
 
     abilities(game) {
-        switch (game) {
-            case Game.jotl:
-                return abilitiesJotlJson
-            case Game.fc:
-                return abilitiesFcJson
-            case Game.cs:
-                return abilitiesCsJson
-            case Game.fh:
-                return abilitiesFhJson
-            case Game.mp:
-                return abilitiesMpJson
-            case Game.gh2:
-                return abilitiesGh2Json
-            default:
-                return abilitiesJson
-        }
+        return this._file(game).abilities
     }
 
     personalQuests(game) {
-        switch (game) {
-            case Game.jotl:
-                return []
-            case Game.cs:
-                return personalQuestsCsJson
-            case Game.fh:
-                return personalQuestsFhJson
-            case Game.gh2:
-                return personalQuestsGh2Json
-            default:
-                return personalQuestsJson
+        return [Game.fc, Game.mp].includes(game) ? files[Game.gh].personalQuests : this._file(game).personalQuests
+    }
+
+    events(game) {
+        return files[game]?.events || {}
+    }
+
+    // Class id => {unlock, retire} event lists; the caller maps games that share a list (fc uses gh).
+    classEvents(game) {
+        return files[game]?.classEvents || {}
+    }
+
+    // Starters are the classes in a group other than `<game>_locked` / `<game>_addon`; FC adds the GH starters.
+    startingClasses(game) {
+        const startersOf = (origin) => Object.values(this.characters())
+            .filter(character => character.game === origin
+                && (character.starting_group || []).some(group => !/_(locked|addon)$/.test(group)))
+            .map(character => character.id)
+
+        const own = this.crossover().includes(game) ? [] : startersOf(game)
+
+        if (game === Game.fc) {
+            return [...own, ...startersOf(Game.gh)]
         }
+
+        return own.length ? own : startersOf(Game.gh)
+    }
+
+    decks(game) {
+        return this._ownOrGh(game, 'decks')
+    }
+
+    prosperity(game) {
+        return this._ownOrGh(game, 'prosperity')
+    }
+
+    shop(game) {
+        return files[game]?.shop || {}
+    }
+
+    // A game's own value wins (even null), otherwise the GH one.
+    campaignRule(game, key) {
+        const rules = files[game]?.rules
+
+        return rules && key in rules ? rules[key] : files[Game.gh].rules[key]
+    }
+
+    enhancementCosts(game) {
+        return this._ownOrGh(game, 'enhancements')
+    }
+
+    sectionsGh2() {
+        return files[Game.gh2].sections
     }
 
     attackModifierDeck() {
-        return attackModifierDecksJson
+        return allAttackModifierDecks
     }
 
     townGuard(game) {
-        switch (game) {
-            case Game.fh:
-                return townGuardFhJson
-            default:
-                return {};
-        }
+        return files[game]?.townGuard || {}
     }
 
     alchemy(game) {
-        switch (game) {
-            case Game.fh:
-                return alchemyFhJson
-            default:
-                return [];
-        }
+        return files[game]?.alchemy || []
     }
 
+    // GH is played on the FC map (see games/gh.json).
     map(game = Game.gh) {
-        let map = Game.fc;
+        const images = this._file(game).map.images
 
-        // GH uses the FC map
-        if (game !== Game.gh) {
-            map = game;
-        }
-
-        // Games that do not support a map
-        if ([Game.cs].includes(map)) {
-            return null;
-        }
-
-        return {
-            lowres: `/img/maps/${map}/lowres.jpg`,
-            highres: `/img/maps/${map}/highres.jpg`
-        }
+        return images && {...images}
     }
 
     mapSettings(game = Game.gh) {
-        if (game === Game.gh || game === Game.fc) {
-            return {
-                stickerScale: 0.79,
-                yOffset: 184,
-                width: 2606,
-                height: 2155
-            };
-        } else if (game == Game.fh) {
-            return {
-                stickerScale: 0.7,
-                yOffset: 0,
-                width: 2500,
-                height: 3159
-            };
-        } else if (game === Game.gh2) {
-            // Keep in sync with commands/gh2-map.js
-            return {
-                stickerScale: 0.8,
-                yOffset: 283,
-                width: 2500,
-                height: 2217
-            };
-        }
-
-        return {
-            stickerScale: 1,
-            yOffset: 0,
-            width: 2486,
-            height: 1905
-        };
+        return {...this._file(game).map.settings}
     }
 
     mapYOffset(game = Game.gh) {
-        if (game === Game.gh || game === Game.fc) {
-            return 184;
-        }
-
-        return 0;
+        return this._file(game).map.yOffset
     }
 
     storylineViewBox(game = Game.gh) {
-        switch (game) {
-            case Game.fc:
-                return {
-                    portrait: '0 0 560 600',
-                    landscape: '0 -40 560 600'
-                }
-            case Game.jotl:
-                return {
-                    portrait: '-100 0 500 500',
-                    landscape: '-100 -70 500 500'
-                }
-            case Game.cs:
-                return {
-                    portrait: '0 0 370 540',
-                    landscape: '0 -40 530 370'
-                }
-            case Game.fh:
-                return {
-                    portrait: '-20 -40 718 691',
-                    landscape: '-20 -40 718 691'
-                }
-            case Game.gh2:
-                return {
-                    portrait: '0 -110 588 1177',
-                    landscape: '0 -90 818 845'
-                }
-            default:
-                return {
-                    portrait: '0 -70 420 1080',
-                    landscape: '0 -40 610 700'
-                }
-        }
+        return {...this._file(game).map.viewBox}
+    }
+
+    _file(game) {
+        return files[game] || files[Game.gh]
+    }
+
+    // FC is played inside a GH campaign and has no scenario, item or story data of its own.
+    _playable(game) {
+        return game === Game.fc ? files[Game.gh] : this._file(game)
+    }
+
+    _ownOrGh(game, key) {
+        const own = files[game]?.[key]
+
+        return own && Object.keys(own).length ? own : files[Game.gh][key]
     }
 }

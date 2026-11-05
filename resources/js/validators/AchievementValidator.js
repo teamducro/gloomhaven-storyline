@@ -1,5 +1,6 @@
 import AchievementRepository from "../repositories/AchievementRepository";
 import AchievementGroup from "../models/AchievementGroup";
+import GameData from "../services/GameData";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 
 class AchievementValidator {
@@ -10,10 +11,11 @@ class AchievementValidator {
 
     validate() {
         if (this.validateOneTime) {
-            if (app.game === 'gh2') {
-                this.checkStartingRule();
-            } else if (app.game !== 'fh') {
-                this.checkCityRule();
+            const rule = new GameData().campaignRule(app.game, 'defaultCityRule');
+            if (rule && app.game === 'gh2') {
+                this.checkStartingRule(rule);
+            } else if (rule) {
+                this.checkCityRule(rule);
             }
             this.fixAchievementGroups();
             this.checkMissingManualAchievements();
@@ -22,22 +24,22 @@ class AchievementValidator {
         this.validateOneTime = false;
     }
 
-    checkCityRule() {
-        let cityRuleGroup = new AchievementGroup('CR');
+    checkCityRule(rule) {
+        let cityRuleGroup = new AchievementGroup(rule.group);
         if (!cityRuleGroup.achievements.length) {
-            this.achievementRepository.gain('GCRM');
+            this.achievementRepository.gain(rule.achievement);
         }
         // Fix missing starting City Rule: Militaristic
-        else if (cityRuleGroup.achievements[0] !== 'GCRM') {
-            cityRuleGroup._achievements.unshift('GCRM');
+        else if (cityRuleGroup.achievements[0] !== rule.achievement) {
+            cityRuleGroup._achievements.unshift(rule.achievement);
             cityRuleGroup.store();
         }
     }
 
     // The board starts with "An Uneasy Peace" until another city rule replaces it.
-    checkStartingRule() {
-        if (!new AchievementGroup('CR2').achievements.length) {
-            this.achievementRepository.gain('G2AUP');
+    checkStartingRule(rule) {
+        if (!new AchievementGroup(rule.group).achievements.length) {
+            this.achievementRepository.gain(rule.achievement);
         }
     }
 

@@ -4,7 +4,7 @@ The smallest game: no achievements, prosperity, reputation, donations, road even
 
 ## Data
 
-`scenarios-jotl.json`: 25 scenarios in chapters 1 Intro (tutorial scenarios 1–5, root 1), 2 Main, 3 City Events (side 20–21), 4 Characters (side 22–25). `items-jotl.json`, `quests-jotl.json` (story summaries), `abilities-jotl.json` (no `id`; tutorial `variations` a/b of level-1 cards). Treasure ids can be strings (`"X"` → `jotl-X`).
+`games/jotl.json` `scenarios`: 25 scenarios in chapters 1 Intro (tutorial scenarios 1–5, root 1), 2 Main, 3 City Events (side 20–21), 4 Characters (side 22–25). `items`, `quests` (story summaries), `abilities` (no `id`; tutorial `variations` a/b of level-1 cards). Treasure ids can be strings (`"X"` → `jotl-X`).
 
 ## Storyline
 

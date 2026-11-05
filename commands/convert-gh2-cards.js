@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // One-off: converts the GH2e event and personal quest scans in docs/GH 2nd (gitignored) into
-// resources/img/cards/gh2/{city,road,quest} (jpg + webp) and writes resources/js/events-gh2.json.
+// resources/img/cards/gh2/{city,road,quest} (jpg + webp) and writes the events of resources/js/games/gh2.json.
 // Requires macOS `sips` and `cwebp` (brew install webp). Run from the repo root: node commands/convert-gh2-cards.js
 const fs = require('fs');
 const {execFileSync} = require('child_process');
@@ -29,7 +29,10 @@ for (const [dir, folder] of [['ce', 'city'], ['re', 'road']]) {
         convert(`${src}/events/${dir}/${file}`, `${out}/${folder}/${id}-${letter || 'f'}`);
     }
 }
-fs.writeFileSync('resources/js/events-gh2.json', JSON.stringify(events, null, 4) + '\n');
+const gameFile = 'resources/js/games/gh2.json';
+const game = JSON.parse(fs.readFileSync(gameFile, 'utf-8'));
+game.events = events;
+fs.writeFileSync(gameFile, JSON.stringify(game, null, 4) + '\n');
 
 fs.mkdirSync(`${out}/quest`, {recursive: true});
 for (const file of fs.readdirSync(`${src}/personal-quests`)) {

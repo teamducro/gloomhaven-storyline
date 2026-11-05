@@ -1,0 +1,3030 @@
+{
+    "scenarios": [
+        {
+            "root": true,
+            "id": 1,
+            "game": "jotl",
+            "name": "Roadside Ambush",
+            "quests": [
+                1
+            ],
+            "coordinates": {
+                "name": "B-1",
+                "x": 0.6333024405,
+                "y": 19.67741935
+            },
+            "chapter_id": 1,
+            "links_to": [
+                2
+            ]
+        },
+        {
+            "id": 2,
+            "game": "jotl",
+            "name": "A Hole in the Wall",
+            "quests": [
+                1
+            ],
+            "coordinates": {
+                "name": "B-1",
+                "x": 5.15909793,
+                "y": 27.23790323
+            },
+            "chapter_id": 1,
+            "linked_from": [
+                1
+            ],
+            "links_to": [
+                3
+            ],
+            "treasures": [
+                14
+            ],
+            "rewards": [
+                "25 gold each",
+                "Add items 1-13 to the shop"
+            ]
+        },
+        {
+            "id": 3,
+            "game": "jotl",
+            "name": "The Black Ship",
+            "quests": [
+                1
+            ],
+            "coordinates": {
+                "name": "D-5",
+                "x": 43.21902997,
+                "y": 48.75
+            },
+            "chapter_id": 1,
+            "linked_from": [
+                2
+            ],
+            "links_to": [
+                4
+            ],
+            "treasures": [
+                10
+            ],
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        {
+            "id": 4,
+            "game": "jotl",
+            "name": "A Ritual in Stone",
+            "quests": [
+                2
+            ],
+            "coordinates": {
+                "name": "C-2",
+                "x": 11.22953352,
+                "y": 33.00403226
+            },
+            "chapter_id": 1,
+            "linked_from": [
+                3
+            ],
+            "links_to": [
+                5
+            ],
+            "treasures": [
+                16
+            ],
+            "rewards": [
+                "“Mana Potion” (Item 14)"
+            ]
+        },
+        {
+            "id": 5,
+            "game": "jotl",
+            "name": "A Deeper Understanding",
+            "quests": [
+                2
+            ],
+            "coordinates": {
+                "name": "C-2",
+                "x": 14.38059932,
+                "y": 38.46774194
+            },
+            "chapter_id": 1,
+            "linked_from": [
+                4
+            ],
+            "links_to": [
+                6
+            ],
+            "treasures": [
+                9
+            ],
+            "rewards": [
+                "25 experience each"
+            ]
+        },
+        {
+            "id": 6,
+            "game": "jotl",
+            "name": "Corrupted Research",
+            "quests": [
+                2
+            ],
+            "coordinates": {
+                "name": "B-4",
+                "x": 32.43744208,
+                "y": 24.69758065
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                5
+            ],
+            "links_to": [
+                7,
+                8
+            ],
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        {
+            "id": 7,
+            "game": "jotl",
+            "name": "Sunken Tumor",
+            "quests": [
+                2
+            ],
+            "coordinates": {
+                "name": "D-2",
+                "x": 16.45041705,
+                "y": 54.29435484
+            },
+            "chapter_id": 2,
+            "blocks_on": [
+                {
+                    "complete": [
+                        8
+                    ]
+                }
+            ],
+            "linked_from": [
+                6
+            ],
+            "links_to": [
+                9
+            ],
+            "treasures": [
+                12
+            ],
+            "rewards": [
+                "20 experience each"
+            ]
+        },
+        {
+            "id": 8,
+            "game": "jotl",
+            "name": "Hidden Tumor",
+            "quests": [
+                2
+            ],
+            "coordinates": {
+                "name": "C-4",
+                "x": 37.79734322,
+                "y": 41.89516129
+            },
+            "chapter_id": 2,
+            "blocks_on": [
+                {
+                    "complete": [
+                        7
+                    ]
+                }
+            ],
+            "linked_from": [
+                6
+            ],
+            "links_to": [
+                9
+            ],
+            "treasures": [
+                4
+            ]
+        },
+        {
+            "id": 9,
+            "game": "jotl",
+            "name": "Explosive Evolution",
+            "quests": [
+                2
+            ],
+            "coordinates": {
+                "7": {
+                    "name": "C-4",
+                    "x": 37.85912882,
+                    "y": 42.03629032
+                },
+                "8": {
+                    "name": "D-2",
+                    "x": 16.46586345,
+                    "y": 53.68951613
+                }
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                7,
+                8
+            ],
+            "links_to": [
+                10
+            ],
+            "treasures": [
+                1
+            ],
+            "rewards": [
+                "20 experience each",
+                "Add items 15-20 to the shop"
+            ]
+        },
+        {
+            "id": 10,
+            "game": "jotl",
+            "name": "The Gauntlet",
+            "quests": [
+                3
+            ],
+            "coordinates": {
+                "name": "E-2",
+                "x": 15.678097,
+                "y": 69.75806452
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                9
+            ],
+            "links_to": [
+                11,
+                12
+            ],
+            "treasures": [
+                8
+            ],
+            "rewards": [
+                "15 experience each"
+            ]
+        },
+        {
+            "id": 11,
+            "game": "jotl",
+            "name": "Defiled Sewers",
+            "quests": [
+                3
+            ],
+            "coordinates": {
+                "name": "D-2",
+                "x": 16.92925548,
+                "y": 45.34274194
+            },
+            "blocks_on": [
+                {
+                    "complete": [
+                        12
+                    ]
+                }
+            ],
+            "chapter_id": 2,
+            "linked_from": [
+                10
+            ],
+            "links_to": [
+                13,
+                19
+            ],
+            "rewards": [
+                "“Flea-Bitten Shawl” (Item 28)"
+            ]
+        },
+        {
+            "id": 12,
+            "game": "jotl",
+            "name": "Beguiling Sewers",
+            "quests": [
+                3
+            ],
+            "coordinates": {
+                "name": "B-5",
+                "x": 42.72474513,
+                "y": 23.26612903
+            },
+            "blocks_on": [
+                {
+                    "complete": [
+                        11
+                    ]
+                }
+            ],
+            "chapter_id": 2,
+            "linked_from": [
+                10
+            ],
+            "links_to": [
+                14,
+                18
+            ],
+            "rewards": [
+                "“Flea-Bitten Shawl” (Item 28)"
+            ]
+        },
+        {
+            "id": 13,
+            "game": "jotl",
+            "name": "Vile Harvest",
+            "quests": [
+                3
+            ],
+            "coordinates": {
+                "name": "D-3",
+                "x": 26.64504171,
+                "y": 47.21774194
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                11
+            ],
+            "links_to": [
+                15
+            ],
+            "treasures": [
+                5
+            ],
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        {
+            "id": 14,
+            "game": "jotl",
+            "name": "Toxic Harvest",
+            "quests": [
+                3
+            ],
+            "coordinates": {
+                "name": "B-4",
+                "x": 37.62743281,
+                "y": 31.25
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                12
+            ],
+            "links_to": [
+                15
+            ],
+            "treasures": [
+                15
+            ],
+            "rewards": [
+                "1 ✔ each"
+            ]
+        },
+        {
+            "id": 15,
+            "game": "jotl",
+            "name": "Tainted Blood",
+            "quests": [
+                4
+            ],
+            "coordinates": {
+                "name": "C-4",
+                "x": 31.61878282,
+                "y": 35.60483871
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                13,
+                14
+            ],
+            "links_to": [
+                16
+            ],
+            "rewards": [
+                "10 gold each",
+                "Add items 21-26 to the shop"
+            ]
+        },
+        {
+            "id": 16,
+            "game": "jotl",
+            "name": "Mixed Results",
+            "quests": [
+                4
+            ],
+            "coordinates": {
+                "name": "B-4",
+                "x": 30.69199876,
+                "y": 19.25403226
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                15
+            ],
+            "links_to": [
+                17
+            ],
+            "rewards": [
+                "15 experience each",
+                "“Tower Shield” (Item 29)"
+            ]
+        },
+        {
+            "id": 17,
+            "game": "jotl",
+            "name": "Red Twilight",
+            "quests": [
+                4
+            ],
+            "coordinates": {
+                "name": "C-6",
+                "x": 59.66944702,
+                "y": 37.35887097
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                16
+            ],
+            "treasures": [
+                3
+            ],
+            "rewards": [
+                "25 experience each",
+                "30 gold each"
+            ]
+        },
+        {
+            "id": 18,
+            "game": "jotl",
+            "name": "The Heist",
+            "quests": [
+                5
+            ],
+            "coordinates": {
+                "name": "A-5",
+                "x": 44.43929564,
+                "y": 15.26209677
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                12
+            ],
+            "treasures": [
+                2,
+                6,
+                7,
+                13
+            ],
+            "rewards": [
+                "10 experience each"
+            ]
+        },
+        {
+            "id": 19,
+            "game": "jotl",
+            "name": "Den of Thieves",
+            "quests": [
+                6
+            ],
+            "coordinates": {
+                "name": "A-5",
+                "x": 9.592215014,
+                "y": 49.55645161
+            },
+            "chapter_id": 2,
+            "linked_from": [
+                11
+            ],
+            "rewards": [
+                "“Ring of Strength” (Item 31)"
+            ]
+        },
+        {
+            "id": 20,
+            "game": "jotl",
+            "name": "Misplaced Goods",
+            "quests": [
+                7
+            ],
+            "coordinates": {
+                "name": "C-5",
+                "x": 47.96107507,
+                "y": 39.33467742
+            },
+            "is_side": true,
+            "chapter_id": 3,
+            "treasures": [
+                "X"
+            ],
+            "rewards": [
+                "10 gold each"
+            ]
+        },
+        {
+            "id": 21,
+            "game": "jotl",
+            "name": "Agents of Chaos",
+            "quests": [
+                8
+            ],
+            "coordinates": {
+                "name": "C-9",
+                "x": 80.93914118,
+                "y": 39.67741935
+            },
+            "is_side": true,
+            "chapter_id": 3,
+            "treasures": [
+                11
+            ],
+            "rewards": [
+                "15 gold each"
+            ]
+        },
+        {
+            "id": 22,
+            "game": "jotl",
+            "name": "Unfriendly Message",
+            "quests": [
+                9
+            ],
+            "coordinates": {
+                "name": "D-1",
+                "x": 0.8804448563,
+                "y": 44.23387097
+            },
+            "is_side": true,
+            "chapter_id": 4,
+            "rewards": [
+                "“Steel Ring” (Item 33)"
+            ]
+        },
+        {
+            "id": 23,
+            "game": "jotl",
+            "name": "Best of the Best",
+            "quests": [
+                10
+            ],
+            "coordinates": {
+                "name": "B-5",
+                "x": 45.79857893,
+                "y": 30.12096774
+            },
+            "is_side": true,
+            "chapter_id": 4,
+            "rewards": [
+                "“Barbed Axe” (Item 34)"
+            ]
+        },
+        {
+            "id": 24,
+            "game": "jotl",
+            "name": "Warding the Void",
+            "quests": [
+                11
+            ],
+            "coordinates": {
+                "name": "A-3",
+                "x": 24.46709917,
+                "y": 8.225806452
+            },
+            "is_side": true,
+            "chapter_id": 4,
+            "rewards": [
+                "“Robes of Command” (Item 35)"
+            ]
+        },
+        {
+            "id": 25,
+            "game": "jotl",
+            "name": "The Greatest Job in the World",
+            "quests": [
+                12
+            ],
+            "coordinates": {
+                "name": "C-7",
+                "x": 66.09514983,
+                "y": 35.08064516
+            },
+            "is_side": true,
+            "chapter_id": 4,
+            "rewards": [
+                "“Jet Boots” (Item 36)"
+            ]
+        }
+    ],
+    "chapters": [
+        {
+            "id": 1,
+            "name": "Intro"
+        },
+        {
+            "id": 2,
+            "name": "Main"
+        },
+        {
+            "id": 3,
+            "name": "City Events"
+        },
+        {
+            "id": 4,
+            "name": "Characters"
+        }
+    ],
+    "regions": [],
+    "overlays": [],
+    "buildings": [],
+    "achievements": [],
+    "quests": [
+        {
+            "id": 1,
+            "checks": [
+                "",
+                "1==c",
+                "2==c",
+                "3==c"
+            ]
+        },
+        {
+            "id": 2,
+            "checks": [
+                "",
+                "4==c",
+                "5==c",
+                "6==c",
+                "7==c",
+                "8==c",
+                "9==c && 7==c",
+                "9==c && 8==c"
+            ]
+        },
+        {
+            "id": 3,
+            "checks": [
+                "",
+                "10==c",
+                "11==c",
+                "12==c",
+                "13==c",
+                "14==c"
+            ]
+        },
+        {
+            "id": 4,
+            "checks": [
+                "",
+                "15==c",
+                "16==c",
+                "17==c"
+            ]
+        },
+        {
+            "id": 5,
+            "checks": [
+                "",
+                "18==c"
+            ]
+        },
+        {
+            "id": 6,
+            "checks": [
+                "",
+                "19==c"
+            ]
+        },
+        {
+            "id": 7,
+            "checks": [
+                "",
+                "20==c"
+            ]
+        },
+        {
+            "id": 8,
+            "checks": [
+                "",
+                "21==c"
+            ]
+        },
+        {
+            "id": 9,
+            "checks": [
+                "",
+                "22==c"
+            ]
+        },
+        {
+            "id": 10,
+            "checks": [
+                "",
+                "23==c"
+            ]
+        },
+        {
+            "id": 11,
+            "checks": [
+                "",
+                "24==c"
+            ]
+        },
+        {
+            "id": 12,
+            "checks": [
+                "",
+                "25==c"
+            ]
+        }
+    ],
+    "personalQuests": [],
+    "items": [
+        {
+            "id": 1,
+            "name": "Eagle-Eye Goggles",
+            "count": 2,
+            "cost": 30,
+            "slot": "Head",
+            "source": "Reward from Scenario #2",
+            "spent": true,
+            "desc": "During your attack, gain Advantage on the entire Attack action."
+        },
+        {
+            "id": 2,
+            "name": "Iron Helmet",
+            "count": 2,
+            "cost": 20,
+            "slot": "Head",
+            "source": "Reward from Scenario #2",
+            "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+        },
+        {
+            "id": 3,
+            "name": "Chain Armor",
+            "count": 2,
+            "cost": 30,
+            "slot": "Body",
+            "source": "Reward from Scenario #2",
+            "desc": "During your turn gain {SHIELD} 1 for the rest of the round",
+            "spent": true
+        },
+        {
+            "id": 4,
+            "name": "Studded Leather",
+            "count": 2,
+            "cost": 30,
+            "slot": "Body",
+            "source": "Reward from Scenario #2",
+            "spent": true,
+            "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+        },
+        {
+            "id": 5,
+            "name": "Weathered Boots",
+            "count": 2,
+            "cost": 15,
+            "slot": "Legs",
+            "source": "Reward from Scenario #2",
+            "spent": true,
+            "desc": "During your movement add +1 {MOVE} to a single movement."
+        },
+        {
+            "id": 6,
+            "name": "Winged Shoes",
+            "cost": 15,
+            "count": 2,
+            "slot": "Legs",
+            "source": "Reward from Scenario #2",
+            "spent": true,
+            "desc": "During your movement, add {JUMP} to the entire Move Action.",
+            "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
+        },
+        {
+            "id": 7,
+            "name": "Heater Shield",
+            "count": 2,
+            "cost": 20,
+            "slot": "One Hand",
+            "source": "Reward from Scenario #2",
+            "spent": true,
+            "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+        },
+        {
+            "id": 8,
+            "name": "Throwing Hammer",
+            "count": 2,
+            "cost": 30,
+            "slot": "One Hand",
+            "source": "Reward from Scenario #2",
+            "desc": "During your ranged attack, add {STUN} to a single attack",
+            "consumed": true
+        },
+        {
+            "id": 9,
+            "name": "Poison Dagger",
+            "count": 2,
+            "cost": 20,
+            "slot": "One Hand",
+            "source": "Reward from Scenario #2",
+            "spent": true,
+            "desc": "During your melee attack, add {POISON} to a single attack."
+        },
+        {
+            "id": 10,
+            "name": "Iron Spear",
+            "count": 2,
+            "cost": 20,
+            "slot": "One Hand",
+            "source": "Reward from Scenario #2",
+            "desc": "During your single-target melee Attack ability, attack any one enemy within 2 hexes",
+            "spent": true
+        },
+        {
+            "id": 11,
+            "name": "Healing Potion",
+            "count": 2,
+            "cost": 10,
+            "slot": "Small Item",
+            "source": "Reward from Scenario #2",
+            "consumed": true,
+            "desc": "During your turn, perform a “{HEAL} 3, Self” action."
+        },
+        {
+            "id": 12,
+            "name": "Stamina Potion",
+            "count": 2,
+            "cost": 10,
+            "slot": "Small Item",
+            "source": "Reward from Scenario #2",
+            "consumed": true,
+            "desc": "During your turn, return one of your discarded cards to your hand."
+        },
+        {
+            "id": 13,
+            "name": "Power Potion",
+            "count": 2,
+            "cost": 10,
+            "slot": "Small Item",
+            "source": "Reward from Scenario #2",
+            "consumed": true,
+            "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+        },
+        {
+            "id": 14,
+            "name": "Mana Potion",
+            "count": 2,
+            "cost": 10,
+            "slot": "Small Item",
+            "source": "Reward from Scenario #4\n Scenario #4 (Treasure #16)",
+            "consumed": true,
+            "desc": "During your turn, infuse any one element. {ANY}"
+        },
+        {
+            "id": 15,
+            "name": "Amulet of Life",
+            "count": 1,
+            "cost": 20,
+            "slot": "Head",
+            "source": "Reward from Scenario #9",
+            "spent": true,
+            "desc": "During your turn, “{HEAL} 1, Self” action."
+        },
+        {
+            "id": 16,
+            "name": "Robes of Evocation",
+            "count": 1,
+            "cost": 40,
+            "slot": "Body",
+            "source": "Reward from Scenario #9",
+            "spent": true,
+            "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        },
+        {
+            "id": 17,
+            "name": "Comfortable Shoes",
+            "count": 1,
+            "cost": 30,
+            "slot": "Legs",
+            "source": "Reward from Scenario #9",
+            "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+        },
+        {
+            "id": 18,
+            "name": "Battle-Axe",
+            "count": 1,
+            "cost": 25,
+            "slot": "One Hand",
+            "source": "Reward from Scenario #9",
+            "consumed": true,
+            "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+        },
+        {
+            "id": 19,
+            "name": "Black Candle",
+            "count": 1,
+            "cost": 40,
+            "slot": "One Hand",
+            "source": "Reward from Scenario #9",
+            "spent": true,
+            "desc": "During your ranged attack, add {CURSE} to a single attack."
+        },
+        {
+            "id": 20,
+            "name": "Stun Powder",
+            "count": 2,
+            "cost": 20,
+            "slot": "Small Item",
+            "source": "Reward from Scenario #9",
+            "consumed": true,
+            "desc": "During your attack, add {STUN} to a single attack."
+        },
+        {
+            "id": 21,
+            "name": "Hawk Helm",
+            "count": 1,
+            "cost": 20,
+            "slot": "Head",
+            "source": "Reward from Scenario #15",
+            "spent": true,
+            "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
+        },
+        {
+            "id": 22,
+            "name": "Bladed Armor",
+            "count": 1,
+            "cost": 45,
+            "slot": "Body",
+            "source": "Reward from Scenario #15",
+            "spent": true,
+            "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack and the attacker suffers 2 damage."
+        },
+        {
+            "id": 23,
+            "name": "Boots of Striding",
+            "cost": 30,
+            "count": 1,
+            "slot": "Legs",
+            "source": "Reward from Scenario #15",
+            "spent": true,
+            "desc": "During your movement, add +2 {MOVE} to a single movement."
+        },
+        {
+            "id": 24,
+            "name": "Volatile Bomb",
+            "count": 1,
+            "cost": 40,
+            "slot": "One Hand",
+            "source": "Reward from Scenario #15",
+            "consumed": true,
+            "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+        },
+        {
+            "id": 25,
+            "name": "Barbed Chain",
+            "count": 1,
+            "cost": 30,
+            "slot": "One Hand",
+            "source": "Reward from Scenario #15",
+            "spent": true,
+            "desc": "During your ranged attack, add {PULL} 2 to a single attack."
+        },
+        {
+            "id": 26,
+            "name": "Oak Charm",
+            "count": 2,
+            "cost": 30,
+            "slot": "Small Item",
+            "source": "Reward from Scenario #15",
+            "consumed": true,
+            "desc": "During your turn, perform a “{BLESS}, {RANGE} 5” action."
+        },
+        {
+            "id": 27,
+            "name": "Fateful Compass",
+            "count": 1,
+            "cost": 25,
+            "slot": "Small Item",
+            "source": "Scenario #3 (Treasure #10)",
+            "consumed": true,
+            "desc": "During your turn, force one enemy within {RANGE} 3 to peform a “{MOVE} 2” action with you controlling the action."
+        },
+        {
+            "id": 28,
+            "name": "Flea-Bitten Shawl",
+            "count": 1,
+            "cost": 10,
+            "slot": "Body",
+            "source": "Reward from Scenario #8\nReward from Scenario #12",
+            "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
+            "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
+        },
+        {
+            "id": 29,
+            "name": "Tower Shield",
+            "count": 1,
+            "cost": 40,
+            "slot": "One Hand",
+            "source": "Reward from Scenario #16",
+            "spent": true,
+            "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
+        },
+        {
+            "id": 30,
+            "name": "Ring of Haste",
+            "count": 1,
+            "cost": 40,
+            "slot": "Small Item",
+            "source": "Scenario #21 (Treasure #11)",
+            "consumed": true,
+            "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of that card."
+        },
+        {
+            "id": 31,
+            "name": "Ring of Strength",
+            "count": 1,
+            "cost": 40,
+            "slot": "Small Item",
+            "source": "Reward from Scenario #19\nScenario #18 (Treasure #2)",
+            "consumed": true,
+            "desc": "During your turn, gain {STRENGTHEN}."
+        },
+        {
+            "id": 32,
+            "name": "Ring of Restoration",
+            "count": 1,
+            "cost": 40,
+            "slot": "Small Item",
+            "source": "Misplaced Good #F from Scenario #20",
+            "consumed": true,
+            "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action."
+        },
+        {
+            "id": 33,
+            "name": "Steel Ring",
+            "count": 1,
+            "cost": 30,
+            "slot": "Small Item",
+            "source": "Reward from Scenario #22",
+            "consumed": true,
+            "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
+        },
+        {
+            "id": 34,
+            "name": "Barbed Axe",
+            "count": 1,
+            "cost": 40,
+            "slot": "One Hand",
+            "source": "Reward from Scenario #34",
+            "consumed": true,
+            "desc": "During your attack, add {WOUND} to the entire Attack Action."
+        },
+        {
+            "id": 35,
+            "name": "Robes of Command",
+            "count": 1,
+            "cost": 40,
+            "slot": "Body",
+            "source": "Reward from Scenario #24",
+            "spent": true,
+            "desc": "During your turn, one adjacent ally may perform and “{ATTACK} 2” Action."
+        },
+        {
+            "id": 36,
+            "name": "Jet Boots",
+            "count": 1,
+            "cost": 30,
+            "slot": "Legs",
+            "source": "Reward from Scenario #25",
+            "spent": true,
+            "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."
+        }
+    ],
+    "abilities": [
+        {
+            "name": "collateral damage",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 9,
+            "initiative": 15
+        },
+        {
+            "name": "crash protocol",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 2,
+            "initiative": 74
+        },
+        {
+            "name": "crushing weight",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1,
+            "initiative": 22
+        },
+        {
+            "name": "drill fist",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 6,
+            "initiative": 62
+        },
+        {
+            "name": "dust cloud",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 6,
+            "initiative": 15
+        },
+        {
+            "name": "explode",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1,
+            "initiative": 28
+        },
+        {
+            "name": "explosive blitz",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1,
+            "initiative": 19,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "extra fuel",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 4,
+            "initiative": 17
+        },
+        {
+            "name": "fire bombs",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 3,
+            "initiative": 24
+        },
+        {
+            "name": "gut punch",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 8,
+            "initiative": 26
+        },
+        {
+            "name": "implode",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1,
+            "initiative": 88,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "insult to injury",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 7,
+            "initiative": 64
+        },
+        {
+            "name": "knock out the support",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1,
+            "initiative": 20,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "level",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1.5,
+            "initiative": 61
+        },
+        {
+            "name": "lobbed charge",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1.5,
+            "initiative": 52
+        },
+        {
+            "name": "mech suit",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 5,
+            "initiative": 80
+        },
+        {
+            "name": "micro missiles",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 7,
+            "initiative": 16
+        },
+        {
+            "name": "nowhere to run",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 3,
+            "initiative": 39
+        },
+        {
+            "name": "one-two punch",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1,
+            "initiative": 66,
+            "variations": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "name": "piston punch",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1,
+            "initiative": 42,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "remote detonation",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 4,
+            "initiative": 63
+        },
+        {
+            "name": "robotic enhancement",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 2,
+            "initiative": 33
+        },
+        {
+            "name": "rubble",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1.5,
+            "initiative": 55
+        },
+        {
+            "name": "the bigger one",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 8,
+            "initiative": 31
+        },
+        {
+            "name": "the big one",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1,
+            "initiative": 37,
+            "variations": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "name": "wholesale destruction",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 9,
+            "initiative": 34
+        },
+        {
+            "name": "windup",
+            "game": "jotl",
+            "character_id": "DM",
+            "level": 1,
+            "initiative": 77
+        },
+        {
+            "name": "bombardment",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 6,
+            "initiative": 54
+        },
+        {
+            "name": "brutalize",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 7,
+            "initiative": 22
+        },
+        {
+            "name": "camaraderie",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 8,
+            "initiative": 75
+        },
+        {
+            "name": "care package",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1.5,
+            "initiative": 30
+        },
+        {
+            "name": "center mass",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1,
+            "initiative": 24,
+            "variations": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "name": "close cuts",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1,
+            "initiative": 25,
+            "variations": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "name": "disorienting barrage",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1,
+            "initiative": 51,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "double throw",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1,
+            "initiative": 64,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "excessive force",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 7,
+            "initiative": 47
+        },
+        {
+            "name": "executioner's axe",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 9,
+            "initiative": 79
+        },
+        {
+            "name": "extra lift",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1.5,
+            "initiative": 21
+        },
+        {
+            "name": "fancy hat",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1.5,
+            "initiative": 12
+        },
+        {
+            "name": "fearsome efficiency",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 3,
+            "initiative": 58
+        },
+        {
+            "name": "follow through",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1,
+            "initiative": 39
+        },
+        {
+            "name": "heart seeker",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 9,
+            "initiative": 32
+        },
+        {
+            "name": "overwatch",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 4,
+            "initiative": 40
+        },
+        {
+            "name": "power pitch",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1,
+            "initiative": 60
+        },
+        {
+            "name": "quick turnaround",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 6,
+            "initiative": 11
+        },
+        {
+            "name": "repeat shot",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 2,
+            "initiative": 31
+        },
+        {
+            "name": "retrieval",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1,
+            "initiative": 46
+        },
+        {
+            "name": "ricochet",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 2,
+            "initiative": 56
+        },
+        {
+            "name": "ripped from the flesh",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 4,
+            "initiative": 20
+        },
+        {
+            "name": "second wind",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1,
+            "initiative": 18,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "sharpened blades",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 3,
+            "initiative": 44
+        },
+        {
+            "name": "shrapnel",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 8,
+            "initiative": 37
+        },
+        {
+            "name": "stopping power",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1,
+            "initiative": 35,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "the favorite",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 1,
+            "initiative": 17
+        },
+        {
+            "name": "the new favorite",
+            "game": "jotl",
+            "character_id": "HT",
+            "level": 5,
+            "initiative": 15
+        },
+        {
+            "name": "barbaric instincts",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 2,
+            "initiative": 12
+        },
+        {
+            "name": "blade dance",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1.5,
+            "initiative": 29
+        },
+        {
+            "name": "blinding sickle",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1,
+            "initiative": 87,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "burn away the dark",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 4,
+            "initiative": 31
+        },
+        {
+            "name": "desert night",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1,
+            "initiative": 90,
+            "variations": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "name": "fierce brilliance",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 6,
+            "initiative": 22
+        },
+        {
+            "name": "flame shroud",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1,
+            "initiative": 6
+        },
+        {
+            "name": "flaming sickle",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1,
+            "initiative": 63,
+            "variations": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "name": "flying sickle",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 6,
+            "initiative": 91
+        },
+        {
+            "name": "harvest sickle",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 2,
+            "initiative": 52
+        },
+        {
+            "name": "healing sands",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1,
+            "initiative": 32
+        },
+        {
+            "name": "honorable fury",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 9,
+            "initiative": 89
+        },
+        {
+            "name": "horns of the beast",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 7,
+            "initiative": 8
+        },
+        {
+            "name": "no fear",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 8,
+            "initiative": 1
+        },
+        {
+            "name": "precision strike",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1.5,
+            "initiative": 40
+        },
+        {
+            "name": "prismatic sickle",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 8,
+            "initiative": 70
+        },
+        {
+            "name": "radiant sickle",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 4,
+            "initiative": 79
+        },
+        {
+            "name": "sand devil",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 5,
+            "initiative": 55
+        },
+        {
+            "name": "shield of the desert",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1,
+            "initiative": 10
+        },
+        {
+            "name": "shield spikes",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1,
+            "initiative": 41,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "shocking advance",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1,
+            "initiative": 14,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "soaring shield",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 9,
+            "initiative": 11
+        },
+        {
+            "name": "strangling chain",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 3,
+            "initiative": 19
+        },
+        {
+            "name": "swift strength",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1,
+            "initiative": 16
+        },
+        {
+            "name": "twirling stabs",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1,
+            "initiative": 38,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "vicious ballet",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 7,
+            "initiative": 28
+        },
+        {
+            "name": "warmth of the sun",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 3,
+            "initiative": 23
+        },
+        {
+            "name": "warrior of the sun",
+            "game": "jotl",
+            "character_id": "RG",
+            "level": 1.5,
+            "initiative": 13
+        },
+        {
+            "name": "black boon",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 43,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "close to the abyss",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 72
+        },
+        {
+            "name": "cold embrace",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1.5,
+            "initiative": 71
+        },
+        {
+            "name": "commanding presence",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 3,
+            "initiative": 75
+        },
+        {
+            "name": "crushing cold",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 2,
+            "initiative": 86
+        },
+        {
+            "name": "empowered link",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 8,
+            "initiative": 59
+        },
+        {
+            "name": "eye of the void",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 9,
+            "initiative": 19
+        },
+        {
+            "name": "freeze the soul",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 58
+        },
+        {
+            "name": "gift of the void",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 89,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "give and take",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 2,
+            "initiative": 21
+        },
+        {
+            "name": "grasp of doom",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 36
+        },
+        {
+            "name": "hateful blast",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 7,
+            "initiative": 29
+        },
+        {
+            "name": "lull into oblivion",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 8,
+            "initiative": 11
+        },
+        {
+            "name": "lure of the void",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 67,
+            "variations": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "name": "master influence",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 83
+        },
+        {
+            "name": "possessed by fate",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 9,
+            "initiative": 66
+        },
+        {
+            "name": "resigned frenzy",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1.5,
+            "initiative": 26
+        },
+        {
+            "name": "sap warmth",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1.5,
+            "initiative": 59
+        },
+        {
+            "name": "savage instinct",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 4,
+            "initiative": 51
+        },
+        {
+            "name": "signs of the void",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 15
+        },
+        {
+            "name": "spirit hunger",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 7,
+            "initiative": 68
+        },
+        {
+            "name": "stand fast",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 5,
+            "initiative": 90
+        },
+        {
+            "name": "suggestion",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 23,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "surge of power",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 6,
+            "initiative": 81
+        },
+        {
+            "name": "taunting fate",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 3,
+            "initiative": 13
+        },
+        {
+            "name": "the last journey",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 4,
+            "initiative": 38
+        },
+        {
+            "name": "turn out the lights",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 49,
+            "variations": [
+                "a"
+            ]
+        },
+        {
+            "name": "wicked scratch",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 1,
+            "initiative": 68,
+            "variations": [
+                "a",
+                "b"
+            ]
+        },
+        {
+            "name": "withering conviction",
+            "game": "jotl",
+            "character_id": "VW",
+            "level": 6,
+            "initiative": 44
+        }
+    ],
+    "characters": {
+        "RG": {
+            "id": "RG",
+            "name": "Red Guard",
+            "game": "jotl",
+            "translatedName": "characters.RG.name",
+            "abilityCount": 10,
+            "starting_group": [
+                "jotl_unlocked"
+            ],
+            "perks": [
+                {
+                    "type": "remove",
+                    "desc": "Remove four {+0_WHITE} cards",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 4,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "remove",
+                    "desc": "Remove two {-1_WHITE} cards",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 2,
+                            "attackModifier": {
+                                "type": "minus1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "remove",
+                    "desc": "Remove one {-2_WHITE} card and one {+1_WHITE} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "minus2"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "minus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "element",
+                                        "value": "fire"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {LIGHT} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "element",
+                                        "value": "light"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add one {+1_WHITE} {FIRE_LIGHT} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "element",
+                                        "value": "fire"
+                                    },
+                                    {
+                                        "type": "element",
+                                        "value": "light"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add one {+1_WHITE} {SHIELD} 1 card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "shield",
+                                        "value": 1,
+                                        "effects": [
+                                            {
+                                                "type": "specialTarget",
+                                                "value": "self"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "immobilize"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "wound"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "DM": {
+            "id": "DM",
+            "name": "Demolitionist",
+            "game": "jotl",
+            "translatedName": "characters.DM.name",
+            "abilityCount": 9,
+            "starting_group": [
+                "jotl_unlocked"
+            ],
+            "perks": [
+                {
+                    "type": "remove",
+                    "desc": "Remove four {+0_WHITE} cards",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 4,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "remove",
+                    "desc": "Remove two {-1_WHITE} cards",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 2,
+                            "attackModifier": {
+                                "type": "minus1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "remove",
+                    "desc": "Remove one {-2_WHITE} card and one {+1_WHITE} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "minus2"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "muddle"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "minus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "poison"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add one {+2_WHITE} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {EARTH} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "element",
+                                        "value": "earth"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+1_WHITE} card with one {+2_WHITE} {FIRE} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "element",
+                                        "value": "fire"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add one {+0_WHITE} All adjacent enemies suffer 1 damage card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0",
+                                "effects": [
+                                    {
+                                        "type": "damage",
+                                        "value": "1"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "HT": {
+            "id": "HT",
+            "name": "Hatchet",
+            "game": "jotl",
+            "translatedName": "characters.HT.name",
+            "abilityCount": 10,
+            "starting_group": [
+                "jotl_unlocked"
+            ],
+            "perks": [
+                {
+                    "type": "remove",
+                    "desc": "Remove two {-1_WHITE} cards",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 2,
+                            "attackModifier": {
+                                "type": "minus1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {MUDDLE} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "muddle"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {POISON} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "poison"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "wound"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "immobilize"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {PUSH}2 card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "push",
+                                        "value": 2
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+0_WHITE} {STUN} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "stun"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+1_WHITE} card with one {+1_WHITE} {STUN} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "stun"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add one {+2_WHITE} {WIND} card",
+                    "count": 3,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "element",
+                                        "value": "air"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+1_WHITE} with one {+3_WHITE} card",
+                    "count": 3,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus3"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "VW": {
+            "id": "VW",
+            "name": "Voidwarden",
+            "game": "jotl",
+            "translatedName": "characters.VW.name",
+            "abilityCount": 11,
+            "starting_group": [
+                "jotl_unlocked"
+            ],
+            "perks": [
+                {
+                    "type": "remove",
+                    "desc": "Remove two {-1_WHITE} cards",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 2,
+                            "attackModifier": {
+                                "type": "minus1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "remove",
+                    "desc": "Remove one {-2_WHITE} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "minus2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} with one {+1_WHITE} {DARK} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "element",
+                                        "value": "dark"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} with one {+1_WHITE} {ICE} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "element",
+                                        "value": "ice"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {-1_WHITE} with one {+0_WHITE} {HEAL}1 (Ally) card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "minus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0",
+                                "effects": [
+                                    {
+                                        "type": "heal",
+                                        "value": 1,
+                                        "effects": [
+                                            {
+                                                "type": "specialTarget",
+                                                "value": "allyShort"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add one {+1_WHITE} {HEAL}1 (Ally) card",
+                    "count": 3,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "heal",
+                                        "value": 1,
+                                        "effects": [
+                                            {
+                                                "type": "specialTarget",
+                                                "value": "allyShort"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add one {+1_WHITE} {POISON} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "poison"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add one {+3_WHITE} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus3"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add one {+1_WHITE} {CURSE} card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "curse"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "characterOrder": [
+        "RG",
+        "DM",
+        "HT",
+        "VW"
+    ],
+    "attackModifierDecks": {
+        "RG": [
+            "plus2_fire",
+            "plus2_light",
+            "plus1_fire_light",
+            "plus1_shield1",
+            "plus1_immobilize",
+            "plus1_wound"
+        ],
+        "DM": [
+            "plus2_muddle",
+            "plus0_poison",
+            "plus2_earth",
+            "plus2_fire",
+            "plus0_damage1"
+        ],
+        "HT": [
+            "plus2_muddle",
+            "plus1_poison",
+            "plus1_wound",
+            "plus1_immobilize",
+            "plus1_push2",
+            "plus0_stun",
+            "plus1_stun",
+            "plus2_air",
+            "plus3"
+        ],
+        "VW": [
+            "plus1_dark",
+            "plus1_ice",
+            "plus0_heal1",
+            "plus1_heal1",
+            "plus1_poison",
+            "plus3",
+            "plus1_curse"
+        ]
+    },
+    "events": {},
+    "townGuard": {},
+    "alchemy": [],
+    "classEvents": {},
+    "decks": {
+        "city": {
+            "start": 22,
+            "max": 22
+        },
+        "itemDesigns": {
+            "ranges": [
+                [
+                    26,
+                    36
+                ]
+            ],
+            "max": 36
+        }
+    },
+    "prosperity": {
+        "breaks": {
+            "1": 1,
+            "5": 2,
+            "10": 3,
+            "16": 4,
+            "23": 5,
+            "31": 6,
+            "40": 7,
+            "51": 8,
+            "65": 9
+        },
+        "lastItems": [
+            14,
+            21,
+            28,
+            35,
+            42,
+            49,
+            56,
+            63,
+            70
+        ]
+    },
+    "shop": {
+        "scenarios": {
+            "2": [
+                [
+                    1,
+                    13
+                ]
+            ],
+            "4": [
+                14
+            ],
+            "9": [
+                [
+                    15,
+                    20
+                ]
+            ],
+            "15": [
+                [
+                    21,
+                    26
+                ]
+            ]
+        }
+    },
+    "rules": {
+        "reputationPrices": [
+            -18,
+            -14,
+            -10,
+            -6,
+            -2,
+            3,
+            7,
+            11,
+            15,
+            19
+        ],
+        "donationThresholds": [
+            100,
+            150,
+            200,
+            250,
+            300,
+            350,
+            400,
+            500,
+            600,
+            700,
+            800,
+            900,
+            1000
+        ],
+        "defaultCityRule": {
+            "group": "CR",
+            "achievement": "GCRM"
+        },
+        "enhancementAchievements": [
+            "GTPE"
+        ],
+        "goldConversion": [
+            2,
+            2,
+            3,
+            3,
+            4,
+            4,
+            5,
+            6
+        ]
+    },
+    "enhancements": {
+        "move": 30,
+        "attack": 50,
+        "range": 30,
+        "shield": 100,
+        "push": 30,
+        "pull": 30,
+        "pierce": 30,
+        "retaliate": 100,
+        "heal": 30,
+        "target": 50,
+        "summon_move": 100,
+        "summon_attack": 100,
+        "summon_range": 50,
+        "summon_hp": 50,
+        "regenerate": 50,
+        "poison": 75,
+        "wound": 75,
+        "muddle": 50,
+        "immobilize": 100,
+        "disarm": 150,
+        "curse": 75,
+        "strengthen": 50,
+        "bless": 50,
+        "jump": 50,
+        "fire": 100,
+        "ice": 100,
+        "air": 100,
+        "earth": 100,
+        "light": 100,
+        "dark": 100,
+        "wild_element": 150,
+        "attack_hex": 200
+    },
+    "sections": {},
+    "map": {
+        "images": {
+            "lowres": "/img/maps/jotl/lowres.jpg",
+            "highres": "/img/maps/jotl/highres.jpg"
+        },
+        "settings": {
+            "stickerScale": 1,
+            "yOffset": 0,
+            "width": 2486,
+            "height": 1905
+        },
+        "yOffset": 0,
+        "viewBox": {
+            "portrait": "-100 0 500 500",
+            "landscape": "-100 -70 500 500"
+        }
+    }
+}

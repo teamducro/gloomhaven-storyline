@@ -9,7 +9,7 @@ Campaign tracker for the Gloomhaven family of board games. Terms follow each gam
 **Game**: a standalone product with its own campaign: Gloomhaven, Gloomhaven 2nd Edition, Frosthaven, Jaws of the Lion, Crimson Scales.
 _Avoid_: edition, box
 
-**Gloomhaven 2nd Edition**: the revised Gloomhaven, a separate game (own scenarios, classes, faction reputation, imbuement). In progress.
+**Gloomhaven 2nd Edition**: the revised Gloomhaven, a separate game (own scenarios, classes, faction reputation, imbuement).
 
 **Expansion**: content continuing one game's campaign. Forgotten Circles is an expansion of Gloomhaven (scenarios, Diviner, Rift events), viewable with its own storyline.
 _Avoid_: calling Forgotten Circles a game

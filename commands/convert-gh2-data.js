@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Converts the Gloomhaven Secretariat gh2e data into scenarios-gh2.json, achievements-gh2.json and the gh2 lang blocks.
+// Converts the Gloomhaven Secretariat gh2e data into the scenarios, chapters and achievements of games/gh2.json and the gh2 lang blocks.
 // Usage (from the repo root): node commands/convert-gh2-data.js
 // The gh2 lang blocks must stay last in the lang files: writeLangBlock truncates everything after the first "gh2-" key.
 
@@ -72,7 +72,7 @@ const gh2Map = require('./gh2-map');
 const GENERATED = ['id', 'number', 'game', 'name', 'root', 'is_side', 'solo', 'chapter_id', 'links_to', 'linked_from',
     'choices', 'prompt', 'prompt_unlocks', 'required_by', 'requirements', 'blocks_on', 'treasures',
     'achievements_awarded', 'achievements_awarded_by_choice', 'rewards', 'has_boss', 'coordinates'];
-const ACHIEVEMENT_GENERATED = ['id', 'name', 'type', 'game', 'is_manual', 'group', 'x'];
+const ACHIEVEMENT_GENERATED = ['id', 'name', 'type', 'game', 'is_manual', 'group', 'x', 'y'];
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf-8'));
 const readDir = (dir) => fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => readJson(`${dir}/${f}`));
@@ -144,8 +144,9 @@ function resolveUnlock(index, source) {
 const factionLabel = (f) => labels.factions.gh2e[f];
 const itemName = (id) => (spoilerItems[`gh2e-${id}`] || {})[''] || items.get(id);
 const itemText = (id) => {
-    const n = String(parseInt(id, 10));
-    return `Gain “${itemName(n)}” (Item ${n})`;
+    // "37-2" means two copies of item 37.
+    const [n, copies] = String(id).split('-').map((part) => String(parseInt(part, 10)));
+    return `Gain ${copies ? copies + '× ' : ''}“${itemName(n)}” (Item ${n})`;
 };
 
 function rewardTexts(r = {}) {
@@ -295,7 +296,7 @@ globalKeys.forEach((key) => {
     const o = {id, name: labels.globalAchievements[key], type: 'Global', game: 'gh2'};
     if (MANUAL.includes(id)) o.is_manual = true;
     if (CITY_RULES.includes(id)) o.group = 'CR2';
-    o.x = gh2Map.achievementX(key);
+    Object.assign(o, gh2Map.achievement(key));
     allAchievements.set(id, o);
 });
 reputationAchievements.forEach((a, id) => allAchievements.set(id, a));
@@ -328,25 +329,23 @@ const promptLabels = new Map(scenarios.filter((o) => o.prompt_labels).map((o) =>
 const cleaned = scenarios.map(clean);
 
 // 9. Preserve hand-maintained data
-function preserve(file, fresh, list, generated) {
-    if (!fs.existsSync(file)) return {top: {}};
-    const existing = readJson(file);
-    const old = new Map((Array.isArray(existing) ? existing : existing[list] || []).map((e) => [e.id, e]));
+function preserve(existing, fresh, generated) {
+    const old = new Map(existing.map((e) => [e.id, e]));
     fresh.forEach((entry) => {
         const previous = old.get(entry.id) || {};
         Object.keys(previous).filter((k) => !generated.includes(k)).forEach((k) => (entry[k] = previous[k]));
     });
-    return {top: Array.isArray(existing) ? {} : existing};
 }
-const scenarioFile = `${JS}/scenarios-gh2.json`;
-const achievementFile = `${JS}/achievements-gh2.json`;
-const {top} = preserve(scenarioFile, cleaned, 'scenarios', GENERATED);
-preserve(achievementFile, achievements, null, ACHIEVEMENT_GENERATED);
+const gameFile = `${JS}/games/gh2.json`;
+const game = readJson(gameFile);
+preserve(game.scenarios, cleaned, GENERATED);
+preserve(game.achievements, achievements, ACHIEVEMENT_GENERATED);
 
-// 10. Write
-const scenarioData = {...top, scenarios: cleaned, chapters: CHAPTERS.map(({id, name}) => ({id, name})).sort((a, b) => a.id - b.id), regions: top.regions || []};
-fs.writeFileSync(scenarioFile, JSON.stringify(scenarioData, null, 4) + '\n');
-fs.writeFileSync(achievementFile, JSON.stringify(achievements.map((a) => Object.fromEntries(Object.entries(a).filter(([, v]) => v !== undefined))), null, 4) + '\n');
+// 10. Write (only these keys; the rest of games/gh2.json is kept)
+game.scenarios = cleaned;
+game.chapters = CHAPTERS.map(({id, name}) => ({id, name})).sort((a, b) => a.id - b.id);
+game.achievements = achievements.map((a) => Object.fromEntries(Object.entries(a).filter(([, v]) => v !== undefined)));
+fs.writeFileSync(gameFile, JSON.stringify(game, null, 4) + '\n');
 
 // 11. Lang
 // Replaces the trailing "gh2-*" block of a lang file (always appended last) with `entries`.

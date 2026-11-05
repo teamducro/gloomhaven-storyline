@@ -248,4 +248,38 @@ describe('Items', () => {
 
     // TODO: it can buy items
     // TODO: it can sell items
+
+    it('It has the corrected Frosthaven item data', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/#/items');
+
+        cy.window().then((win) => {
+            const item = (id) => win.app.items.firstWhere('id', 'fh-' + id);
+            expect(item(225)._slot).eq('One Hand');
+            expect(item(224)._source).eq('Scenario 60');
+            expect(item(39)._source).contains('Personal Quest 19');
+        });
+    });
+
+    it('It rewards Armor of Empathy for FH scenario 60', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/#/story');
+
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 60).rewardItems().values().all().map(Number)).to.include(224);
+        });
+    });
+
+    it('It can mark the Abyss Axe design in Frosthaven', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/#/items');
+
+        cy.get('.items-to-add-dropdown button').click();
+        cy.get('#item-39').click();
+        utilities.closeModel();
+        cy.get('#items').contains('Abyss Axe');
+    });
 });

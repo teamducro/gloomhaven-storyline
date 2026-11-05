@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Vue 3 (Options API) SPA tracking campaign progress for Gloomhaven (+ Forgotten Circles expansion), Gloomhaven 2nd Edition (in progress), Frosthaven, Jaws of the Lion, Crimson Scales and the Mercenary Pack crossover. Offline-first, optional cloud sync via a Laravel backend.
+Vue 3 (Options API) SPA tracking campaign progress for Gloomhaven (+ Forgotten Circles expansion), Gloomhaven 2nd Edition, Frosthaven, Jaws of the Lion, Crimson Scales and the Mercenary Pack crossover. Offline-first, optional cloud sync via a Laravel backend.
 
 ## Domain
 
@@ -30,7 +30,7 @@ PRs target `develop`.
 ## Architecture
 
 - No Vuex: global state on root instance `window.app`; event bus `$bus` (`services/EventBus.js` on `globalProperties`); `provide/inject` for `appData.game`, `appData.story`.
-- Static game data in `resources/js/*.json` via `services/GameData.js`: `{type}-{game}.json`, except GH is unsuffixed (`scenarios.json`) and holds FC scenarios too.
+- Static game data: one `resources/js/games/{gh,gh2,fh,jotl,cs,fc,mp}.json` per game, all with the same top-level keys, read via `services/GameData.js` (`GameDataFile` per game). `gh.json` holds the FC scenarios, items and achievements; `fc.json` only FC's own data.
 - `ScenarioValidator` unlocks scenarios on every change, up to 5 passes.
 - Campaign state: one localStorage blob per campaign (`app.campaignData`, key `app.campaignId`) holding every game; each `Storable` model writes its `fieldsToStore` under its `key()`, and `delete()` writes `null` (a tombstone the server needs). Key layout: `gloomhaven-domain` skill.
 - Sync: `Versionable` models carry `version` + md5 `hash`; `StorySyncer` bumps the version of each changed model and PUTs the blob when its hash changes; the server reports per-key conflicts. Realtime via Echo/Pusher.

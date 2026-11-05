@@ -1,11 +1,11 @@
-# Gloomhaven 2nd Edition (gh2), in progress
+# Gloomhaven 2nd Edition (gh2)
 
 A separate game from Gloomhaven, being built on `feature/2nd`. Background, sources and decisions: `docs/GH 2nd/README.md` and `docs/GH 2nd/plans/00-overview.md` … `07-campaign.md`.
 
 ## Wiring
 
-- Beta game (`GameData.beta()`), chosen per campaign in Settings > Enabled Games (`GamesEnabled.vue`): stored as `edition: 2` on the gh `sheet`, read by `SheetRepository.gloomhavenGame()`. gh and gh2 share one slot in the game switch; both keep their own data. Covered by the GH licence (`GameData.includedIn()`, API receives `accessGame = 'gh'`).
-- Data is generated: `commands/convert-gh2-data.js` (scenarios, achievements, lang), `convert-gh2-characters.js`, `convert-gh2-items.js`, `convert-gh2-cards.js` (`events-gh2.json`), `gh2-map.js` + `gh2-coordinates.json` (approximate map positions), `generate-storyline-svg.js` (`svg/storylines/gh2.svg`). Change the converter and regenerate.
+- Chosen per campaign in Settings > Enabled Games (`GamesEnabled.vue`): stored as `edition: 2` on the gh `sheet`, read by `SheetRepository.gloomhavenGame()`. gh and gh2 share one slot in the game switch; both keep their own data. Covered by the GH licence (`GameData.includedIn()`, API receives `accessGame = 'gh'`).
+- Data is generated: `commands/convert-gh2-data.js` (scenarios, achievements, lang), `convert-gh2-characters.js`, `convert-gh2-items.js`, `convert-gh2-cards.js` (`events`); all write their keys into `games/gh2.json`, `gh2-map.js` + `gh2-coordinates.json` (sticker positions matched to the map art at 0.596 source px per sticker px; per-sticker banner fits), `generate-storyline-svg.js` (`svg/storylines/gh2.svg`). Change the converter and regenerate.
 - Specs: `cypress/e2e/tracker/gh2*.cy.js`.
 
 ## Campaign sheet (`pages/PartyGh2.vue`, model `Sheet`)
@@ -13,10 +13,10 @@ A separate game from Gloomhaven, being built on `feature/2nd`. Background, sourc
 Labelled "Campaign sheet" but stored as a plain `Sheet` (`sheet-gh2`).
 
 - Faction reputation: `sheet.factionReputation` with keys `demons`, `merchant-guild`, `military`, range -10..12 (cap 20 once sheet unlock 17/18/19 is ticked). No party reputation; shop price modifier is 0.
-- Reputation thresholds are stored as `Party` achievements `P2RD6/12`, `P2RME6/12`, `P2RMI6/12`, `P2R16`, `P2R20`, auto-gained (gain only) by `PartyGh2`. First faction at 13 ticks sheet unlock 0 and adds City event 57.
+- Reputation thresholds are stored as `Party` achievements `P2RD6/12`, `P2RME6/12`, `P2RMI6/12`, `P2R16`, `P2R20`, auto-gained (gain only) by `PartyGh2`. First faction at 13 ticks sheet unlock 0 and adds City event 57 (data in `sections` of `games/gh2.json`, with reputation 9 events, prosperity events and first-retirement unlock 7).
 - Inspiration (number), imbuement (80 boxes; every 5th = +1 prosperity, every 10th = section), prosperity (thresholds 1/6/13/23/34/46/60/75/90, sections at boxes 13/23/34/46), donations (+1 prosperity per 50 gold, max 20).
 - 20 sheet unlocks: index order is persisted, append only.
-- Decks: City/Road start 1–20 (max C100 / R77). Unlocking a class adds its class events (`Sheet.classEvents`). Event cards are a front plus 1–4 outcome strips (`events-gh2.json`).
+- Decks: City/Road start 1–20 (max C100 / R77). Unlocking a class adds its class events (`classEvents`); retiring reads the mat's section, no events. Event cards are a front plus 1–4 outcome strips (`events`).
 
 ## Scenarios
 
@@ -28,7 +28,7 @@ Labelled "Campaign sheet" but stored as a plain `Sheet` (`sheet-gh2`).
 
 ## Achievements
 
-`achievements-gh2.json`: Global `G2*`, city rule group `CR2` (start `G2AUP` An Uneasy Peace, then `G2CRD` Demons, `G2CRME` Merchants, `G2CRMI` Military). No stacking stickers. `G2TPE` enables enhancements.
+`achievements` in `games/gh2.json`: Global `G2*`, city rule group `CR2` (start `G2AUP` An Uneasy Peace, then `G2CRD` Demons, `G2CRME` Merchants, `G2CRMI` Military). No stacking stickers. `G2TPE` enables enhancements.
 
 ## Characters and items
 

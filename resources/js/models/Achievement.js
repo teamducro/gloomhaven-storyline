@@ -12,6 +12,7 @@ class Achievement {
         this._name = data.name;
         this.type = data.type;
         this.x = data.x;
+        this.y = data.y;
         this.group = data.group;
         this.requirement = data.requirement;
         this.upgrades = data.upgrades || [];

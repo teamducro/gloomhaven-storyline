@@ -45,6 +45,7 @@
 <script>
 
 import md5 from "js-md5";
+import CampaignSheet from "../../models/CampaignSheet";
 
 export default {
     inject: ['appData'],
@@ -66,8 +67,7 @@ export default {
             return this.$t('Week') + ' ' + this.week + ' ' + (this.isSummer ? this.$t('Summer') : this.$t('Winter'));
         },
         isSummer() {
-            const remainder = this.week % 20;
-            return (remainder % 20 >= 0 && remainder % 20 <= 9);
+            return CampaignSheet.isSummerWeek(this.week);
         }
     },
     methods: {

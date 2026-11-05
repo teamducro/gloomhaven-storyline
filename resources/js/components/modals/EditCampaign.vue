@@ -5,8 +5,8 @@
                 {{ $t('Change name') }}
                 <span class="flex ml-auto items-center space-x-4">
                     <campaign-badge class="hidden sm:block" :story="story"></campaign-badge>
-                    <span class="ml-auto material-icons">
-                        {{ story.has_expired ? 'cloud_off' : 'cloud_queue' }}
+                    <span class="ml-auto material-icons" :class="{outlined: !story.has_expired}">
+                        {{ story.has_expired ? 'cloud_off' : 'cloud' }}
                     </span>
                 </span>
             </span>

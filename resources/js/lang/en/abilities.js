@@ -6469,7 +6469,7 @@ export default {
             "name": "accelerated end"
         },
         "deliriums-danse": {
-            "name": "deliriums danse"
+            "name": "delirium's danse"
         },
         "gift-of-rot": {
             "name": "gift of rot"

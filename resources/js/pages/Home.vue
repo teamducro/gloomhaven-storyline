@@ -231,7 +231,7 @@
                     </template>
                     <template v-slot:left>
                         <p class="text-gray-500 mb-2">
-                            Gloomhaven, Forgotten circles, Jaws of the Lion and Crimson Scales
+                            Gloomhaven, Gloomhaven 2nd Edition, Forgotten circles, Jaws of the Lion and Crimson Scales
                             can be tracked in {{ $t(game) }} Storyline.
                         </p>
                         <p class="text-gray-500 mb-2">
@@ -245,6 +245,35 @@
                 </two-column-content>
 
                 <two-column-content>
+                    <template v-slot:title>
+                        <img src="/svg/icons/story.svg" alt="Storyline icon" class="mr-2"/>
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none">
+                            Gloomhaven 2nd Edition
+                        </h3>
+                    </template>
+                    <template v-slot:left>
+                        <p class="text-gray-500 mb-2">
+                            Gloomhaven 2nd Edition can now be tracked in {{ $t(game) }} Storyline.
+                            Pick your edition in the settings.
+                        </p>
+                        <p class="text-gray-500 mb-4">
+                            Includes the flowchart, the 2nd Edition map, the campaign sheet with faction reputation,
+                            all 18 classes with their masteries, items and the City and Road Event Decks.
+                        </p>
+                        <p class="mb-4">
+                            <a :href="appUrl+'/#/map'"
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                Open map
+                            </a>
+                        </p>
+                    </template>
+                    <template v-slot:right>
+                        <webp src="/img/gh2-map-zoomed.jpg" class="w-full mx-auto rounded-md shadow-md"
+                              alt="Gloomhaven 2nd Edition Map"/>
+                    </template>
+                </two-column-content>
+
+                <two-column-content reverse>
                     <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2" aria-hidden="true">map</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
@@ -276,7 +305,7 @@
                 </two-column-content>
 
 
-                <two-column-content reverse>
+                <two-column-content>
                     <template v-slot:title>
                         <i class="material-icons text-gray-800 mr-2" aria-hidden="true">filter_list</i>
                         <h3 class="text-3xl text-gray-800 font-bold leading-none">
@@ -366,6 +395,14 @@
                         </div>
                         <p class="text-gray-800 px-6">
                             The unofficial fanmade expansion Crimson Scales is available in the tracker!
+                        </p>
+
+                        <div class="pt-6 w-full font-bold text-xl text-gray-800 px-6 flex items-center">
+                            <img src="/svg/icons/enhancements/plus-one.svg" alt="" class="w-6 h-6 mr-2"/>
+                            Ability enhancements
+                        </div>
+                        <p class="text-gray-800 px-6">
+                            Place enhancement stickers on your ability cards. The tracker calculates the cost for you.
                         </p>
                     </div>
                 </div>

@@ -25,6 +25,25 @@ describe('Party GH2', () => {
         cy.get('#city-events-bedges .bedge').contains('57').should('be.visible');
     });
 
+    it('It adds the reputation 9 section events', () => {
+        cy.visit('/tracker/#/party');
+
+        cy.get('input[aria-labelledby="military"]').clear().type('9{enter}');
+        cy.get('input#unlock14').should('be.checked');
+        cy.get('input#unlock8').should('not.be.checked');
+        cy.contains('#city-events-bedges .bedge', /^\s*47\s*$/);
+        cy.contains('#city-events-bedges .bedge', /^\s*48\s*$/).should('not.exist');
+    });
+
+    it('It adds the prosperity section events', () => {
+        cy.visit('/tracker/#/party');
+
+        cy.get('input#p-23').click();
+        ['21', '28'].forEach(event => cy.contains('#city-events-bedges .bedge', new RegExp(`^\\s*${event}\\s*$`)));
+        ['21', '25'].forEach(event => cy.contains('#road-events-bedges .bedge', new RegExp(`^\\s*${event}\\s*$`)));
+        cy.contains('#city-events-bedges .bedge', /^\s*29\s*$/).should('not.exist');
+    });
+
     it('It awards reputation threshold achievements', () => {
         cy.visit('/tracker/#/party');
 
@@ -135,6 +154,74 @@ describe('Party GH2', () => {
         cy.get('img[alt="Seeker of Xorn"]').click();
         cy.get('h2').contains('Personal Quest #5');
         cy.get('img[src*="/img/cards/gh2/quest/5."]').should('exist');
+    });
+
+    it('It re-locks open quest scenarios when a character is abandoned', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter('Bruiser');
+        utilities.scrollTo('60%');
+
+        cy.get('input[name="personal-quests"]').type('5');
+        cy.get('li').contains('#005 Seeker of Xorn').click();
+        cy.get('#pq-0-0').click();
+        cy.get('span').contains('57 Crypt Basement');
+        cy.window().then((win) => {
+            win.app.scenarioRepository.setComplete(win.app.scenarios.firstWhere('id', 57));
+        });
+        ['pq-1-0', 'pq-2-0', 'pq-2-1', 'pq-2-2', 'pq-2-3', 'pq-2-4', 'pq-2-5', 'pq-2-6']
+            .forEach((id) => cy.get('#' + id).click());
+        cy.get('span').contains('58 ');
+
+        cy.get('button').contains('Abandon').click();
+        cy.get('.mdc-dialog--open').contains('Retiring or abandoning permanently removes this character');
+        cy.get('.mdc-dialog--open a[href*="campaigns"]').contains('Please consider purchasing a license');
+        cy.get('#abandon-character').click();
+
+        cy.window().then((win) => {
+            // Completed quest scenarios stay complete, open ones are locked again
+            expect(win.app.scenarios.firstWhere('id', 57).isComplete()).to.be.true;
+            expect(win.app.scenarios.firstWhere('id', 58).isHidden()).to.be.true;
+            // Abandoning isn't a retirement
+            expect(win.app.campaignData['sheet-gh2'].unlocks).not.to.have.property('7');
+        });
+    });
+
+    it('It adds city events from a personal quest step', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter('Bruiser');
+        utilities.scrollTo('60%');
+
+        cy.get('input[name="personal-quests"]').type('1');
+        cy.get('li').contains('#001').click();
+        cy.get('#pq-0-0').click();
+
+        cy.window().then((win) => {
+            expect(win.app.campaignData['sheet-gh2'].city).to.have.property('61', true);
+        });
+    });
+
+    it('It keeps quest scenarios when a character retires with a completed quest', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter('Bruiser');
+        utilities.scrollTo('60%');
+
+        cy.get('input[name="personal-quests"]').type('5');
+        cy.get('li').contains('#005 Seeker of Xorn').click();
+        ['pq-0-0', 'pq-1-0', 'pq-2-0', 'pq-2-1', 'pq-2-2', 'pq-2-3', 'pq-2-4', 'pq-2-5', 'pq-2-6', 'pq-3-0']
+            .forEach((id) => cy.get('#' + id).click());
+        cy.contains('Unlocked:');
+
+        cy.get('button').contains('Retire').click();
+        cy.get('#retire-character').click();
+
+        cy.window().then((win) => {
+            expect(win.app.scenarios.firstWhere('id', 57).isHidden()).to.be.false;
+            // The first retirement reads section 68.4
+            expect(win.app.campaignData['sheet-gh2'].unlocks).to.have.property('7', true);
+        });
     });
 
     it('It keeps the gh sheet free of gh2 fields', () => {

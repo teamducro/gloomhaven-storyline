@@ -43,7 +43,7 @@ https://gloomhaven-storyline.com
 
   Using the filter feature, you can find just the scenario you need to complete your personal quest.
 - **Expansions**\
-  The tracker supports Gloomhaven with Forgotten Circles, Gloomhaven 2nd Edition (in progress), Frosthaven, Jaws of the
+  The tracker supports Gloomhaven with Forgotten Circles, Gloomhaven 2nd Edition, Frosthaven, Jaws of the
   Lion, Crimson Scales and the Mercenary Pack.
 - **Support for all modern devices**\
   Gloomhaven Storyline supports all modern devices and browsers. Easy to use on your smartphone.

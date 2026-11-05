@@ -74,6 +74,35 @@ describe('Gloomhaven 2nd Edition characters', () => {
         cy.get('#enhancement-type option[value="regenerate"]').should('not.exist');
         cy.get('.ability-modal option[value="persistent"]').should('not.exist');
     });
+
+    it('It only draws starting personal quests 1-11 at random', () => {
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Bruiser');
+        utilities.scrollTo('60%');
+
+        cy.window().then((win) => cy.stub(win.Math, 'random').returns(0));
+        cy.get('button').contains('Draw').click({scrollBehavior: false});
+
+        cy.window().then((win) => {
+            const key = Object.keys(win.app.campaignData).find(key => key.startsWith('character-'));
+            expect(win.app.campaignData[key].quest.id).to.be.at.most(11);
+        });
+    });
+
+    it('It doubles gh2 summon attack and range enhancements for multi-target summons', () => {
+        cy.visit('/tracker/#/characters');
+        utilities.openAbilities('Bruiser');
+        cy.get('#desktop-enable-enhancements').check();
+        cy.get('#available-trample').closest('.ability-card').click();
+        cy.get('.ability-modal').contains('button', 'Enhance').click();
+
+        cy.get('#enhancement-type').select('summon_attack');
+        cy.get('#enhancement-multi-target').check();
+        cy.get('.ability-modal').contains('Cost: 200 Gold');
+
+        cy.get('#enhancement-type').select('summon_move');
+        cy.get('#enhancement-multi-target').should('not.exist');
+    });
     it('It applies replaceCount and null cards in the gh2 deck', () => {
         cy.visit('/tracker/#/party');
         cy.get('#character-SS2').check({force: true});

@@ -61,7 +61,8 @@ button:focus, .scenario {
 
 .cloud-on:after {
     @extend .material-icons;
-    content: 'cloud_queue';
+    font-variation-settings: 'FILL' 0;
+    content: 'cloud';
 }
 
 .cloud-off:after {

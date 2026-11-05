@@ -55,7 +55,7 @@ export default class ScenarioValidator {
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         if (scenario.isHidden()) {
-            if (states.has(ScenarioState.complete) || unlocked || scenario.root || this.soloScenarioUnlocked(scenario)) {
+            if (this.isUnlockedByStory(scenario)) {
                 if (scenario.hasManualRequirement()) {
                     this.scenarioRepository.setRequired(scenario);
                 } else {
@@ -212,6 +212,14 @@ export default class ScenarioValidator {
 
     linkedStates(scenario) {
         return this.linkedScenarios(scenario).pluck('state', 'state');
+    }
+
+    // Unlocked without a manual unlock such as a personal quest
+    isUnlockedByStory(scenario) {
+        return this.linkedStates(scenario).has(ScenarioState.complete)
+            || this.scenarioRepository.isScenarioUnlockedByTreasure(scenario)
+            || !!scenario.root
+            || !!this.soloScenarioUnlocked(scenario);
     }
 
     soloScenarioUnlocked(scenario) {

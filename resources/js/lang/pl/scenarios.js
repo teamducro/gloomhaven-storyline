@@ -1260,14 +1260,16 @@ export default {
         "name": "Zakopane kanały",
         "rewards": [
             "Otrzymujecie wspólnie 3 {LUMBER}",
-            "Otrzymujecie wspólnie 3 {METAL}"
+            "Otrzymujecie wspólnie 3 {METAL}",
+            "Gain “Converging Lenses” (Item 67) blueprint"
         ]
     },
     "fh-37": {
         "name": "Martwa mila",
         "rewards": [
             "Otrzymujecie wspólnie 3 {LUMBER}",
-            "Otrzymujecie wspólnie 3 {METAL}"
+            "Otrzymujecie wspólnie 3 {METAL}",
+            "Gain “Converging Lenses” (Item 67) blueprint"
         ]
     },
     "fh-38": {
@@ -1453,6 +1455,7 @@ export default {
             "+2 do morale",
             "+1 do dobrobytu",
             "Po 30 pkt. doświadczenia dla każdego",
+            "Gain “Armor of Empathy” (Item 224)",
             "Odblokuj pudełko postaci: {CR} lub {DT}",
             "Usuńcie wszystkie wydarzenia {LURKERS} z wszystkich talii wydarzeń posterunków",
             "Dodajcie wydarzenie SO-48 do letniej talii posterunku i wydarzenie B-17 do talii łodzi",
@@ -3405,7 +3408,7 @@ export default {
     "gh2-89": {
         "name": "Community Service",
         "rewards": [
-            "Gain “Major Healing Potion” (Item 37)"
+            "Gain 2× “Major Healing Potion” (Item 37)"
         ]
     },
     "gh2-90": {

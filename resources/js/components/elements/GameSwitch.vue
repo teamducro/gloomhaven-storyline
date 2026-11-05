@@ -19,7 +19,6 @@
                     :aria-selected="current === code"
                     :class="[code + (current === code ? 'mdc-list-item--selected': '')]">
                     {{ $t(code) }}
-                    <bedge v-if="beta.includes(code)" class="small white ml-2">BETA</bedge>
                 </li>
             </ul>
         </div>
@@ -49,14 +48,12 @@ export default {
             current: null,
             story: null,
             games: [],
-            beta: [],
             storyRepository: new StoryRepository,
             sheetRepository: new SheetRepository,
             gameData: new GameData
         }
     },
     mounted() {
-        this.beta = this.gameData.beta()
         this.$bus.$on('campaigns-changed', this.setCurrent)
         this.$bus.$on('game-selected', this.setSelected)
         this.$bus.$on('enabled-games-changed', this.setGames)

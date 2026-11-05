@@ -28,6 +28,7 @@ export default {
     "Have a party reputation of 10 or higher": "Érjetek el 10 vagy magasabb hírnevet",
     "Have a party reputation of 20": "Érjetek el 20 hírnevet",
     "Retire a character": "Az első karakter visszavonul",
+    "When the first character retires": "When the first character retires",
     "Abilities": "Képességek",
     "Achievement": "Eredmény | Eredmények",
     "Achievements": "Eredmények",
@@ -102,6 +103,7 @@ export default {
     "Required": "Kötelező",
     "Requirements": "Előfeltétel",
     "Retire": "Visszavonul",
+    "Abandon": "Abandon",
     "Retired": "Visszavonult",
     "Retirement counter": "Visszavonulás számláló",
     "Reward": "Jutalom | Jutalmak",
@@ -129,7 +131,11 @@ export default {
     },
     "retire-character": {
         "text": "Biztos vagy benne, hogy visszavonulsz ezzel a karakterrel? Nem lesz véglegesen eltávolítva.",
-        "upgrade": "Biztos vagy benne, hogy véglegesen törlöd a karaktert? Pro felhasználók vissza tudnak vonulni anélkül, hogy a karakter eltávolításra kerülne."
+        "upgrade": "Biztos vagy benne, hogy véglegesen törlöd a karaktert? Pro felhasználók vissza tudnak vonulni anélkül, hogy a karakter eltávolításra kerülne.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Biztos vagy benne, hogy véglegesen eltávolítod ezt a karaktert?"

@@ -1229,8 +1229,8 @@ export default {
             "Add two {AGAIN} “{HEAL.fh}1, {TARGET.fh}1 ally” cards",
             "Ignore scenario effects and add one {+1_WHITE} card",
             "You have {FLYING.fh}",
-            "Whenever you heal from a long rest, you may remove {POISON.fh} from on ally to add +1 {HEAL.fh}",
-            "Once each scenario, when an enemy that has a plague would die, you first control that enemy and have it perform the abilities on its ability card, adding plague to all its attack, then it dies"
+            "Whenever you heal from a long rest, you may remove {POISON.fh} from one ally to add +1 {HEAL.fh}",
+            "Once each scenario, when an enemy that has a plague would die, you first control that enemy and have it perform the abilities on its ability card, adding plague to all its attacks, then it dies"
         ]
     },
     "QM2": {
@@ -1267,8 +1267,8 @@ export default {
             "Add two {+1_WHITE} “Add +1 {ATTACK.fh} if an ally has an active prescription” cards",
             "Add one {AGAIN} “{HEAL.fh}3, {RANGE.fh}1” card",
             "Add +1 {HEAL.fh} to all heal abilities on \"Medical Pack\" ability cards",
-            "Each City Phase after completing a scenario, your or one ally's donation to the Sanctuary of the Great Oak is free",
-            "At the end of each of your rests, if an ally as an active prescription, gain one \"Medical Pack\" ability card and move the token on one ally's active prescription backward one slot"
+            "Each City Phase after completing a scenario, you or one ally's donation to the Sanctuary of the Great Oak is free",
+            "At the end of each of your rests, if an ally has an active prescription, gain one \"Medical Pack\" ability card and move the token on one ally's active prescription backward one slot"
         ]
     },
     "SK2": {
@@ -1282,7 +1282,7 @@ export default {
             "Replace one {+0_WHITE} card with one {AGAIN} {+1_WHITE} {SHIELD.fh}1 card",
             "Replace one {+0_WHITE} card with one {+2_WHITE} card",
             "Add two {+1_WHITE} “{HEAL.fh}1, {RANGE.fh}3” cards",
-            "Add one {-1_WHITE} “You or an adjacent ally may {RECOVER.fh} on level 1 card from the discard pile” card",
+            "Add one {-1_WHITE} “You or an adjacent ally may {RECOVER.fh} one level 1 card from the discard pile” card",
             "Add one {AGAIN} {STUN.fh} card",
             "Ignore scenario effects and add one {+1_WHITE} card",
             "Ignore item {-1} effects and remove one {-1_WHITE} card",
@@ -1346,7 +1346,7 @@ export default {
             "Add two {+1_WHITE} {WIND}/{EARTH} cards",
             "Add one {+2_WHITE} {PUSH.fh}2 card",
             "Ignore scenario effects and add one {+1_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 ally” card",
-            "Whenever Bear is attacked, treat and {2X_MODIFIER} attack modifier card the enemy draws as {+0_MODIFIER} instead",
+            "Whenever Bear is attacked, treat any {2X_MODIFIER} attack modifier card the enemy draws as {+0_MODIFIER} instead",
             "Once each scenario, during your turn, {COMMAND}: {MOVE.fh}4. If Bear exits a hex adjacent to you during this movement, you may {TELEPORT.fh} to an empty hex adjacent to Bear at the end of the movement",
             "At the start or end of each of your long rests, you may {WIND}/{EARTH} and reduce your current hit point value by X (X must be at least 1) to {COMMAND}: {HEAL.fh}X, self"
         ]

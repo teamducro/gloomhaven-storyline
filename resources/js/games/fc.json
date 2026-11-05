@@ -1,0 +1,772 @@
+{
+    "scenarios": [],
+    "chapters": [],
+    "regions": [],
+    "overlays": [],
+    "buildings": [],
+    "achievements": [],
+    "quests": [
+        {
+            "id": 96,
+            "checks": [
+                "",
+                "96==c"
+            ]
+        },
+        {
+            "id": 97,
+            "checks": [
+                "96==c",
+                "97==c"
+            ]
+        },
+        {
+            "id": 98,
+            "checks": [
+                "97==c",
+                "98==c && 98'==2",
+                "98==c && 98'==3",
+                "98==c && 98'==1"
+            ]
+        },
+        {
+            "id": 99,
+            "checks": [
+                "97==c",
+                "99==c && 99'==1",
+                "99==c && 99'==2"
+            ]
+        },
+        {
+            "id": 100,
+            "checks": [
+                "97==c",
+                "100==c && 100'==2",
+                "100==c && 100'==1"
+            ]
+        },
+        {
+            "id": 101,
+            "checks": [
+                "97==c",
+                "101==c"
+            ]
+        },
+        {
+            "id": 102,
+            "checks": [
+                "98==c",
+                "102==c"
+            ]
+        },
+        {
+            "id": 103,
+            "checks": [
+                "98==c",
+                "103==c"
+            ]
+        },
+        {
+            "id": 104,
+            "checks": [
+                "99==c",
+                "104==c"
+            ]
+        },
+        {
+            "id": 105,
+            "checks": [
+                "99==c",
+                "105==c"
+            ]
+        },
+        {
+            "id": 106,
+            "checks": [
+                "100==c",
+                "106==c && 106'==1",
+                "106==c && 106'==2"
+            ]
+        },
+        {
+            "id": 107,
+            "checks": [
+                "100==c",
+                "107==c && 107t90==0",
+                "107==c && 107t90==1"
+            ]
+        },
+        {
+            "id": 108,
+            "checks": [
+                "101==c",
+                "108==c && 108'==1",
+                "108==c && 108'==2",
+                "108==c && 108'==3"
+            ]
+        },
+        {
+            "id": 109,
+            "checks": [
+                "101==c",
+                "109==c"
+            ]
+        },
+        {
+            "id": 110,
+            "checks": [
+                "102==c || 103==c",
+                "110==c"
+            ]
+        },
+        {
+            "id": 111,
+            "checks": [
+                "104==c || 105==c",
+                "111==c && 111'==1",
+                "111==c && 111'==2"
+            ]
+        },
+        {
+            "id": 112,
+            "checks": [
+                "106==c && 107==c",
+                "112==c && 112'==1",
+                "112==c && 112'==2"
+            ]
+        },
+        {
+            "id": 113,
+            "checks": [
+                "109==c",
+                "113==c"
+            ]
+        },
+        {
+            "id": 114,
+            "checks": [
+                "(110==c && 111==c) || (110==c && 112==c) || (110==c && 113==c) || (111==c && 112==c) || (111==c && 113==c) || (112==c && 113==c)",
+                "114==c"
+            ]
+        },
+        {
+            "id": 115,
+            "checks": [
+                "114==c",
+                "115==c"
+            ]
+        }
+    ],
+    "personalQuests": [],
+    "items": [],
+    "abilities": [
+        {
+            "name": "anguish and salvation",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 8,
+            "initiative": 21,
+            "id": 599
+        },
+        {
+            "name": "anticipate intricacies",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1,
+            "initiative": 79,
+            "id": 575
+        },
+        {
+            "name": "bad omen",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1.5,
+            "initiative": 66,
+            "id": 583
+        },
+        {
+            "name": "call of the nether",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 3,
+            "initiative": 43,
+            "id": 589
+        },
+        {
+            "name": "careful attunement",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 6,
+            "initiative": 7,
+            "id": 595
+        },
+        {
+            "name": "clairvoyance",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1,
+            "initiative": 8,
+            "id": 577
+        },
+        {
+            "name": "cleansing rite",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 4,
+            "initiative": 62,
+            "id": 591
+        },
+        {
+            "name": "curative flux",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 7,
+            "initiative": 40,
+            "id": 596
+        },
+        {
+            "name": "cursed ground",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1,
+            "initiative": 17,
+            "id": 582
+        },
+        {
+            "name": "deep contemplation",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 8,
+            "initiative": 91,
+            "id": 598
+        },
+        {
+            "name": "dimensional divide",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 5,
+            "initiative": 13,
+            "id": 593
+        },
+        {
+            "name": "dimensional transfer",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1,
+            "initiative": 57,
+            "id": 580
+        },
+        {
+            "name": "duality shards",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1.5,
+            "initiative": 39,
+            "id": 585
+        },
+        {
+            "name": "enfeebling hex",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 6,
+            "initiative": 52,
+            "id": 594
+        },
+        {
+            "name": "envision the course",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 3,
+            "initiative": 80,
+            "id": 588
+        },
+        {
+            "name": "ethereal vortex",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 7,
+            "initiative": 59,
+            "id": 597
+        },
+        {
+            "name": "gift of the void",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 2,
+            "initiative": 72,
+            "id": 587
+        },
+        {
+            "name": "hand of destiny",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 9,
+            "initiative": 96,
+            "id": 600
+        },
+        {
+            "name": "inspiration from beyond",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1.5,
+            "initiative": 23,
+            "id": 584
+        },
+        {
+            "name": "otherworldly journey",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1,
+            "initiative": 34,
+            "id": 578
+        },
+        {
+            "name": "peer into battle",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1,
+            "initiative": 82,
+            "id": 574
+        },
+        {
+            "name": "planar fissure",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 9,
+            "initiative": 75,
+            "id": 601
+        },
+        {
+            "name": "preordain the path",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 4,
+            "initiative": 87,
+            "id": 590
+        },
+        {
+            "name": "protective aura",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1,
+            "initiative": 13,
+            "id": 576
+        },
+        {
+            "name": "ray of light",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1,
+            "initiative": 48,
+            "id": 579
+        },
+        {
+            "name": "revitalizing fount",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 2,
+            "initiative": 21,
+            "id": 586
+        },
+        {
+            "name": "seal their fate",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 5,
+            "initiative": 37,
+            "id": 592
+        },
+        {
+            "name": "void snare",
+            "game": "fc",
+            "character_id": "DR",
+            "level": 1,
+            "initiative": 25,
+            "id": 581
+        }
+    ],
+    "characters": {
+        "DR": {
+            "id": "DR",
+            "name": "Diviner",
+            "game": "fc",
+            "translatedName": "characters.DR.name",
+            "abilityCount": 9,
+            "starting_group": [
+                "fc_unlocked"
+            ],
+            "summons": [
+                {
+                    "name": "ghost-falcon",
+                    "level": 3,
+                    "health": 4,
+                    "attack": 2,
+                    "movement": 3
+                },
+                {
+                    "name": "twilight-archon",
+                    "level": 9,
+                    "health": 9,
+                    "attack": 2,
+                    "movement": 3
+                }
+            ],
+            "perks": [
+                {
+                    "type": "remove",
+                    "desc": "Remove two {-1_WHITE} cards",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 2,
+                            "attackModifier": {
+                                "type": "minus1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "remove",
+                    "desc": "Remove one {-2_WHITE} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "minus2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace two {+1_WHITE} cards with one {+3_WHITE} {SHIELD}1, Self card",
+                    "count": 2,
+                    "cards": [
+                        {
+                            "count": 2,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus3",
+                                "effects": [
+                                    {
+                                        "type": "shield",
+                                        "value": 1,
+                                        "effects": [
+                                            {
+                                                "type": "specialTarget",
+                                                "value": "self"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+1_WHITE} {SHIELD}1, Affect any ally card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "shield",
+                                        "value": 1,
+                                        "effects": [
+                                            {
+                                                "type": "specialTarget",
+                                                "value": "allyShort"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {DARK} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "element",
+                                        "value": "dark"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "element",
+                                        "value": "light"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+3_WHITE} {MUDDLE} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus3",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "muddle"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {CURSE} card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "curse"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {+0_WHITE} card with one {+2_WHITE} {REGENERATE}, Self card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus0"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus2",
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "regenerate",
+                                        "effects": [
+                                            {
+                                                "type": "specialTarget",
+                                                "value": "self"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "replace",
+                    "desc": "Replace one {-1_WHITE} card with one {+1_WHITE} {HEAL}2, Affect any ally card",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "minus1"
+                            }
+                        },
+                        {
+                            "count": 1,
+                            "attackModifier": {
+                                "type": "plus1",
+                                "effects": [
+                                    {
+                                        "type": "heal",
+                                        "value": 2,
+                                        "effects": [
+                                            {
+                                                "type": "specialTarget",
+                                                "value": "allyShort"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add two {AGAIN} {HEAL}1, Self cards",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 2,
+                            "attackModifier": {
+                                "type": "plus0",
+                                "rolling": true,
+                                "effects": [
+                                    {
+                                        "type": "heal",
+                                        "value": 1,
+                                        "effects": [
+                                            {
+                                                "type": "specialTarget",
+                                                "value": "self"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Add two {AGAIN} {CURSE} cards",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 2,
+                            "attackModifier": {
+                                "type": "plus0",
+                                "rolling": true,
+                                "effects": [
+                                    {
+                                        "type": "condition",
+                                        "value": "curse"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "add",
+                    "desc": "Ignore negative scenario effects and add two {+1_WHITE} cards",
+                    "custom": "ignoreNegativeScenario",
+                    "count": 1,
+                    "cards": [
+                        {
+                            "count": 2,
+                            "attackModifier": {
+                                "type": "plus1"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "characterOrder": [
+        "DR"
+    ],
+    "attackModifierDecks": {
+        "DR": [
+            "plus3_shield1",
+            "plus1_shield1",
+            "plus2_dark",
+            "plus2_light",
+            "plus3_muddle",
+            "plus2_curse",
+            "plus2_regenerate",
+            "plus1_heal2",
+            "plus0_heal1_rolling",
+            "plus0_curse_rolling"
+        ]
+    },
+    "events": {},
+    "townGuard": {},
+    "alchemy": [],
+    "classEvents": {},
+    "decks": {},
+    "prosperity": {},
+    "shop": {},
+    "rules": {},
+    "enhancements": {},
+    "sections": {},
+    "map": {
+        "images": {
+            "lowres": "/img/maps/fc/lowres.jpg",
+            "highres": "/img/maps/fc/highres.jpg"
+        },
+        "settings": {
+            "stickerScale": 0.79,
+            "yOffset": 184,
+            "width": 2606,
+            "height": 2155
+        },
+        "yOffset": 184,
+        "viewBox": {
+            "portrait": "0 0 560 600",
+            "landscape": "0 -40 560 600"
+        }
+    }
+}

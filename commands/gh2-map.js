@@ -28,8 +28,10 @@ function coordinates(index, id) {
     }
 }
 
-function achievementX(slug) {
-    return data.achievements[slug]
+// Banner sticker: left edge as % of the map width, top in div px (Map.vue draws it at half its natural width; scale is baked into the png)
+function achievement(slug) {
+    const {x, top} = data.achievements[slug]
+    return {x, y: Math.round((top * WIDTH / SOURCE_SIZE - Y_OFFSET) * 10) / 10}
 }
 
 function cellOf([x, y]) {
@@ -73,4 +75,4 @@ function writeSticker(index, id) {
     return [header.readUInt32BE(16), header.readUInt32BE(20)]
 }
 
-module.exports = {coordinates, achievementX}
+module.exports = {coordinates, achievement}

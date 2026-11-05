@@ -1670,7 +1670,7 @@ export default {
     },
     "fh-39": {
         "name": "Abyss Axe",
-        "source": "Craftsman 7",
+        "source": "Craftsman 7\nPersonal Quest 19",
         "desc": "During your attack ability, add +3 {ATTACK.fh} and {PIERCE.fh} 1 to one attack targeting a Frozen Corpse, Ice Wraith, or Living Doom."
     },
     "fh-40": {
@@ -2601,7 +2601,7 @@ export default {
     },
     "fh-224": {
         "name": "Armor of Empathy",
-        "source": "unknown",
+        "source": "Scenario 60",
         "desc": "After the next three attacks targeting you, flip this card over.",
         "backDesc": "During your turn, perform {HEAL.fh} 3 {TARGET.fh} 1 ally, {RANGE.fh} 3, {BLESS.fh} then flip this card over."
     },
@@ -2923,7 +2923,7 @@ export default {
         "desc": "During ordering of initiative, after all ability cards have been revealed, increase or decrease your initiative by 10."
     },
     "gh2-18": {
-        "name": "Heavy Bassinet",
+        "name": "Ciężki Basinet",
         "source": "Prosperity 2\nRoad Event 61",
         "desc": "Whenever an enemy would give you {DISARM.fh}, {STUN.fh} or {MUDDLE.fh}, prevent the condition.",
         "faq": "Only prevents conditions applied by enemies, not self-inflicted ones."
@@ -3021,7 +3021,7 @@ export default {
     },
     "gh2-37": {
         "name": "Większa Mikstura Leczenia",
-        "source": "Prosperity 4",
+        "source": "Prosperity 4\nReward from {SCENARIO 89}",
         "desc": "During your turn, perform: {HEAL.fh} 6, Self"
     },
     "gh2-38": {
@@ -3182,52 +3182,64 @@ export default {
     },
     "gh2-69": {
         "name": "Plate Mail",
+        "source": "Military Reputation 13",
         "desc": "On the next five sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1 for the attacks."
     },
     "gh2-70": {
         "name": "Standard Rations",
+        "source": "Military Reputation 15",
         "desc": "Whenever you heal from a long rest, add +2 {HEAL.fh}."
     },
     "gh2-71": {
         "name": "Mastercraft Crossbow",
+        "source": "Military Reputation 17",
         "desc": "During your ranged attack ability, add {WOUND.fh} to one attack. One enemy adjacent to that target and further from you than that target suffers {DAMAGE.fh} 2."
     },
     "gh2-72": {
         "name": "Commander's Cap",
+        "source": "Military Reputation 19",
         "desc": "Allies gain advantage on the next three attacks performed while adjacent to you. Then flip this card over.",
         "backDesc": "After the next three attack abilities you perform while within {RANGE.fh} 2 of one or more allies, flip this card over."
     },
     "gh2-73": {
         "name": "Mantle of Summoning",
+        "source": "Merchant's Guild Reputation 13",
         "desc": "During your turn, grant one of your summons: {SHIELD.fh} 2 {ROUND}"
     },
     "gh2-74": {
         "name": "Concealed Dagger",
+        "source": "Merchant's Guild Reputation 15",
         "desc": "During your turn, place a character token on one adjacent enemy. At the start of each of the enemy's turns, they suffer {DAMAGE.fh} 1. When that enemy dies, flip this card over. {PERSISTENT}",
         "backDesc": "Place the character token in the hex in which the enemy died. You may loot that token to flip this card over."
     },
     "gh2-75": {
         "name": "Opulent Hood",
+        "source": "Merchant's Guild Reputation 17",
         "desc": "During your turn, grant one adjacent ally: {ATTACK.fh} 1, {PUSH.fh} 1"
     },
     "gh2-76": {
         "name": "Merchant's Insignia",
+        "source": "Merchant's Guild Reputation 19",
         "desc": "Whenever you complete a scenario, gain 10 gold."
     },
     "gh2-77": {
         "name": "Szata Ewokacji",
+        "source": "Demons Reputation 13",
         "desc": "During your attack ability, {ANY_X} to add +1 {ATTACK.fh} to all your attacks."
     },
     "gh2-78": {
         "name": "Kosa Bojowa",
+        "source": "Demons Reputation 15",
         "desc": "During your melee attack ability, add +1 {ATTACK.fh} and gain advantage on one attack. If this attack kills the target, after the attack perform: {HEAL.fh} 2, Self"
     },
     "gh2-79": {
         "name": "Proch Zguby",
+        "source": "Demons Reputation 17",
         "desc": "During your attack ability, add {POISON.fh}, {STUN.fh}, and {CURSE.fh} to one attack."
     },
     "gh2-80": {
         "name": "Demonic Skull",
+        "source": "Demons Reputation 19",
         "desc": "During your turn, {ANY} and flip this card over at the end of your turn.",
         "backDesc": "When you kill a monster, flip this card over at the end of your turn."
     },
@@ -3379,7 +3391,7 @@ export default {
     },
     "gh2-110": {
         "name": "Płomienny Falcjon",
-        "source": "{SCENARIO 37} (Treasure #40)",
+        "source": "{SCENARIO 37} {SCENARIO 82} (Treasure #40)",
         "desc": "During your turn, add +1 {ATTACK.fh} to your next melee attack. If {FIRE} is strong or waning, all enemies adjacent to the target of that attack suffer {DAMAGE.fh} 1."
     },
     "gh2-111": {
@@ -3393,6 +3405,7 @@ export default {
     },
     "gh2-113": {
         "name": "Czarna Karta",
+        "source": "Personal Quest 15",
         "desc": "During your turn, place a character token on one normal or elite enemy within {RANGE.fh} 3. You and all allies add +1 {ATTACK.fh} to all attacks targeting this enemy. {PERSISTENT}"
     },
     "gh2-114": {
@@ -3509,12 +3522,13 @@ export default {
     "gh2-136": {
         "name": "Pierścień Spirali",
         "source": "Reward from {SCENARIO 67}",
-        "desc": "During your turn, perform: {LIGHT_X}: {HEAL.fh} 3, Self, {BLESS.fh} {DARK_X}: {ATTACK.fh} 3, {CURSE.fh}",
-        "faq": "Does not affect your summons."
+        "desc": "During your turn, perform: {LIGHT_X}: {HEAL.fh} 3, Self, {BLESS.fh} {DARK_X}: {ATTACK.fh} 3, {CURSE.fh}"
     },
     "gh2-137": {
         "name": "Zapchlona Derka",
-        "desc": "All monsters consider you to be last in initiative order when determining their focus."
+        "source": "City Event 86",
+        "desc": "All monsters consider you to be last in initiative order when determining their focus.",
+        "faq": "Does not affect your summons."
     },
     "gh2-138": {
         "name": "Krwawy Topór",
@@ -3578,6 +3592,7 @@ export default {
     },
     "gh2-150": {
         "name": "Experimental Armor",
+        "source": "Personal Quest 17",
         "desc": "This item cannot be sold and must be brought into each scenario. When you suffer {DAMAGE.fh} from an attack, you may suffer {DAMAGE.fh} 2 to have all adjacent allies and enemies suffer {DAMAGE.fh} 2."
     },
     "gh2-151": {
@@ -3643,7 +3658,7 @@ export default {
     "gh2-163": {
         "name": "Medalion Zarazy",
         "source": "Reward from Solo Scenario - {PH2}",
-        "desc": "During your turn, perform: {CURSE.fh}, {PLAGUE.fh}, {RANGE.fh} 5 You may give one ally within {RANGE.fh} 3 (of you) {POISON.fh} to add +1 {TARGET.fh}."
+        "desc": "During your turn, perform: {CURSE.fh}, Plague, {RANGE.fh} 5 You may give one ally within {RANGE.fh} 3 (of you) {POISON.fh} to add +1 {TARGET.fh}."
     },
     "gh2-164": {
         "name": "Maska Śmierci",

@@ -19,7 +19,7 @@
                     <li v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
                         class="absolute"
                         :style="{
-                            'top': '-174px',
+                            'top': (achievement.y ?? -174) + 'px',
                             'left': achievement.x + '%'
                         }">
                         <webp :src="achievement.image"

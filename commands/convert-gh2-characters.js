@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Converts GH2e classes (docs/GH 2nd, gitignored sources) into characters.json, abilities-gh2.json,
+// Converts GH2e classes (docs/GH 2nd, gitignored sources) into the characters, characterOrder and abilities of games/gh2.json,
 // lang/en/{characters,abilities}.js and, with --images, resources/img/{abilities/gh2,character-mats}.
 // Usage (repo root): node commands/convert-gh2-characters.js [--images]
 const fs = require('fs');
@@ -33,7 +33,7 @@ const CLASSES = [
     ['WF2', 'two-mini', 'BT', 'wildfury', 'gh2-wildfury.jpeg', 'wildfury'],
 ];
 const STARTERS = ['BR2', 'CH2', 'MT2', 'SC2', 'SW2', 'TI2'];
-const NAME_OVERRIDES = {'MT2/feedback loops': 'feedback loop'};
+const NAME_OVERRIDES = {'MT2/feedback loops': 'feedback loop', 'PH2/deliriums danse': "delirium's danse"};
 const LEVEL_OVERRIDES = {};
 const INITIATIVE_OVERRIDES = {};
 const COUNT_WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six'];
@@ -110,7 +110,17 @@ const placeholder = (inner) => {
     return fail('Unknown placeholder %' + inner + '%');
 };
 
-const text = (str) => str
+// Typos in the source perk texts
+const TEXT_FIXES = [
+    ['may %game.card.recover% on level', 'may %game.card.recover% one level'],
+    ["your or one ally's donation", "you or one ally's donation"],
+    ['if an ally as an active', 'if an ally has an active'],
+    ['from on ally', 'from one ally'],
+    ['to all its attack,', 'to all its attacks,'],
+    ['treat and %game.attackmodifier.double%', 'treat any %game.attackmodifier.double%'],
+];
+
+const text = (str) => TEXT_FIXES.reduce((fixed, [from, to]) => fixed.replace(from, to), str)
     .replace(/<br\s*\/?>/g, ' ')
     .replace(/%([^%]+)%/g, (_, inner) => placeholder(inner));
 
@@ -218,7 +228,7 @@ const convertPerk = (perk) => {
     return {perk: result, desc: describe(perk, result)};
 };
 
-// characters.json + lang
+// characters + lang
 
 const convertCharacter = ([id, file, , ,], secretariat) => {
     const name = className(file) || fail('No name for ' + file);
@@ -241,14 +251,10 @@ const convertCharacter = ([id, file, , ,], secretariat) => {
 };
 
 const writeCharactersJson = (entries) => {
-    const file = JS + 'characters.json';
+    const file = JS + 'games/gh2.json';
     const data = readJson(file);
-    Object.keys(data.characters).filter(id => data.characters[id].game === 'gh2').forEach(id => delete data.characters[id]);
-    entries.forEach(entry => data.characters[entry.id] = entry);
-    data.order = data.order.filter(id => !data.characters[id] || data.characters[id].game !== 'gh2').concat(entries.map(e => e.id));
-    ['gh2_unlocked', 'gh2_locked'].forEach(group => {
-        if (!data.starting_group.includes(group)) data.starting_group.push(group);
-    });
+    data.characters = Object.fromEntries(entries.map(entry => [entry.id, entry]));
+    data.characterOrder = entries.map(entry => entry.id);
     fs.writeFileSync(file, JSON.stringify(data, null, 4) + '\n');
 };
 
@@ -311,7 +317,10 @@ const diffSecretariat = (abilities) => {
 
 const writeAbilities = (abilities) => {
     const clean = abilities.map(({_image, ...rest}) => rest);
-    fs.writeFileSync(JS + 'abilities-gh2.json', JSON.stringify(clean, null, 4) + '\n');
+    const file = JS + 'games/gh2.json';
+    const data = readJson(file);
+    data.abilities = clean;
+    fs.writeFileSync(file, JSON.stringify(data, null, 4) + '\n');
 
     const lang = {};
     abilities.forEach(a => lang[abilityCode(a.name)] = {name: a.name});

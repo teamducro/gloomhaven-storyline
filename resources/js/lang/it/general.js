@@ -28,6 +28,7 @@ export default {
     "Have a party reputation of 10 or higher": "Avere una reputazione gruppo di 10 o superiore",
     "Have a party reputation of 20": "Avere una reputazione gruppo di 20",
     "Retire a character": "Ritira un personaggio",
+    "When the first character retires": "When the first character retires",
     "Abilities": "Abilità",
     "Achievement": "Traguardo",
     "Achievements": "Traguardi",
@@ -102,6 +103,7 @@ export default {
     "Required": "Richiesto",
     "Requirements": "Requisiti",
     "Retire": "Ritira",
+    "Abandon": "Abandon",
     "Retired": "Ritirato",
     "Retirement counter": "Contatore ritiri",
     "Reward": "Ricompensa",
@@ -129,7 +131,11 @@ export default {
     },
     "retire-character": {
         "text": "Sei sicuro di ritirare questo personaggio? Non verrà rimosso permanentemente.",
-        "upgrade": "Sei sicuro di voler rimuovere permanentemente questo personaggio? Gli utenti Pro possono ritirare un personaggio senza rimuoverlo permanentemente."
+        "upgrade": "Sei sicuro di voler rimuovere permanentemente questo personaggio? Gli utenti Pro possono ritirare un personaggio senza rimuoverlo permanentemente.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Sei sicuro di voler rimuovere permanentemente questo personaggio?"

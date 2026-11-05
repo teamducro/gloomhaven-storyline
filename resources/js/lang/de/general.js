@@ -28,6 +28,7 @@ export default {
     "Have a party reputation of 10 or higher": "Erlangt ein Ansehen von 10 oder mehr",
     "Have a party reputation of 20": "Erlangt ein Ansehen von 20",
     "Retire a character": "Einen Charakter in den Ruhestand schicken",
+    "When the first character retires": "When the first character retires",
     "Abilities": "Fähigkeiten",
     "Achievement": "Erfolg",
     "Achievements": "Erfolge",
@@ -102,6 +103,7 @@ export default {
     "Required": "Benötigt",
     "Requirements": "Voraussetzungen",
     "Retire": "in Ruhestand schicken",
+    "Abandon": "Abandon",
     "Retired": "in Ruhestand geschickt",
     "Retirement counter": "Ruhestand-Zähler",
     "Reward": "Belohnung",
@@ -129,7 +131,11 @@ export default {
     },
     "retire-character": {
         "text": "Bist du sicher, dass du diesen Charakter in Ruhestand schicken willst? Er wird nicht endgültig gelöscht.",
-        "upgrade": "Bist du sicher, dass du diesen Charakter endgültig löschen willst? Pro-Lizenz-Nutzer können einen Charakter in Ruhestand schicken ohne dass er endgültig entfernt wird."
+        "upgrade": "Bist du sicher, dass du diesen Charakter endgültig löschen willst? Pro-Lizenz-Nutzer können einen Charakter in Ruhestand schicken ohne dass er endgültig entfernt wird.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Bist du sicher, dass du diesen Charakter endgültig löschen willst?"

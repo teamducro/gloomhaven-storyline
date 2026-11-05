@@ -48,8 +48,8 @@ describe('Gloomhaven edition', () => {
         utilities.chooseEdition('gh');
         cy.window().its('app.game').should('eq', 'gh');
         cy.window().then((win) => {
-            const characters = Object.values(win.app.campaignData.sheet.characters);
-            expect(characters.map(character => character.id)).to.deep.eq(['BR']);
+            // Stored as uuid => class id
+            expect(Object.values(win.app.campaignData.sheet.characters)).to.deep.eq(['BR']);
         });
     });
 

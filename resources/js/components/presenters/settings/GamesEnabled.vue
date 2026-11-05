@@ -13,7 +13,7 @@
         <ul :key="listKey">
             <li v-for="code in games.filter(code => code !== Game.gh2)">
                 <checkbox-with-label :id="code+'-enabled'"
-                                     :label="$t(code) + (beta.includes(code) ? ' (BETA)' : '')"
+                                     :label="$t(code)"
                                      v-model:checked="enabled[code]"
                                      :disabled="disabled[code]"
                                      :auto-disable="false"
@@ -23,7 +23,7 @@
                            :key="edition"
                            :id="edition + '-edition'"
                            group="gloomhaven-edition"
-                           :label="$t(edition) + (beta.includes(edition) ? ' (BETA)' : '')"
+                           :label="$t(edition)"
                            :checked="currentEdition === edition"
                            @changed="selectEdition(edition)"/>
                 </div>
@@ -49,7 +49,6 @@ export default {
             enabled: {},
             disabled: {},
             listKey: '',
-            beta: [],
             currentEdition: null,
             sheetRepository: new SheetRepository,
         }
@@ -73,8 +72,6 @@ export default {
         init() {
             const enabledGames = this.readEnabled();
             const gameData = new GameData;
-            const beta = gameData.beta();
-            this.beta = beta;
             this.games = gameData.games();
             this.games.forEach((code) => {
                 // GH is always enabled, it's used as default in some places
@@ -82,7 +79,7 @@ export default {
                     this.enabled[code] = true;
                     this.disabled[code] = true;
                 } else {
-                    this.enabled[code] = code in enabledGames ? enabledGames[code] : !beta.includes(code);
+                    this.enabled[code] = code in enabledGames ? enabledGames[code] : true;
                     this.disabled[code] = false;
                 }
             });

@@ -4,9 +4,9 @@ A fan-made campaign (originally free print-and-play, later published) built on G
 
 ## Data
 
-- `scenarios-cs.json`: 79 scenarios, **no map coordinates** (no Map page, no scenario images). Story chapters 1 Intro, 2 Infectious, 3 Wonderous, 4 Chilly, 5 Sail, 6 Tainted; side chapters 100 Solo Quests, 101 Personal Quests, 102 Road Events, 103 City Events, 104 Side Quests; add-on chapters 12 Beetle (AA), 13 Tools (QA), 14 Bleeding Claw (RM) with string ids (`"AA1"`, `"RM5"`). Extra fields `pages`, `monsters`, `cards` (event cards that unlock a scenario), `solo`.
-- Achievements live in the shared `achievements.json` as `PCS*` Party achievements; GH Global achievements and the GH city rule therefore also apply.
-- `items-cs.json` (1–100 plus `aa01`…, `qa01`…, `rm01`…), `personal-quests-cs.json` (string ids `"330"`, `"aa-001"`), `abilities-cs.json`, `quests-cs.json` is empty.
+- `games/cs.json` `scenarios`: 79 scenarios, **no map coordinates** (no Map page, no scenario images). Story chapters 1 Intro, 2 Infectious, 3 Wonderous, 4 Chilly, 5 Sail, 6 Tainted; side chapters 100 Solo Quests, 101 Personal Quests, 102 Road Events, 103 City Events, 104 Side Quests; add-on chapters 12 Beetle (AA), 13 Tools (QA), 14 Bleeding Claw (RM) with string ids (`"AA1"`, `"RM5"`). Extra fields `pages`, `monsters`, `cards` (event cards that unlock a scenario), `solo`.
+- Achievements are `PCS*` Party achievements in `games/cs.json`, served together with the GH ones (`GameData.achievements`); GH Global achievements and the GH city rule therefore also apply.
+- `items` (1–100 plus `aa01`…, `qa01`…, `rm01`…), `personalQuests` (string ids `"330"`, `"aa-001"`), `abilities`; `quests` is empty.
 
 ## Party sheet (`pages/PartyCs.vue`)
 

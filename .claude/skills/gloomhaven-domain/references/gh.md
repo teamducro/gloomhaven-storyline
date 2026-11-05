@@ -4,13 +4,13 @@ Forgotten Circles is an expansion: it is the **same campaign** as Gloomhaven. Se
 
 ## Shared between gh and fc
 
-- `scenarios.json`: GH 1–95 + solo 202–219, FC 96–117 (FC chapters 20–25, FC root 96, FC solo 116 Diviner, 117 without chapter). Scenario keys are still `scenario-gh-*` / `scenario-fc-*` by the scenario's `game`; the scenario list only shows the current game's scenarios.
-- `achievements.json` (FC achievements are tagged `game: "gh"`), `items.json`, `personal-quests.json`, the party sheet (storage key `sheet` for both).
+- `games/gh.json` `scenarios`: GH 1–95 + solo 202–219, FC 96–117 (FC chapters 20–25, FC root 96, FC solo 116 Diviner, 117 without chapter). Scenario keys are still `scenario-gh-*` / `scenario-fc-*` by the scenario's `game`; the scenario list only shows the current game's scenarios.
+- `achievements` (FC achievements are tagged `game: "gh"`), `items`, `personalQuests` (all in `gh.json`), the party sheet (storage key `sheet` for both).
 - Map: both use the FC world map image (`img/maps/fc`).
 
 ## FC-only
 
-- `quests-fc.json` story summaries (only these load in the fc view), `abilities-fc.json` (Diviner `DR`), `svg/storylines/fc.svg`, Rift event deck (`sheet.rift`, shown in `PartyGh` for fc only).
+- `games/fc.json` `quests` story summaries (only these load in the fc view), `abilities` and `characters` in `fc.json` (Diviner `DR`), `svg/storylines/fc.svg`, Rift event deck (`sheet.rift`, shown in `PartyGh` for fc only).
 - `ScenarioCompletedService`: 106/107 → 112 after 3× `GPOA`, 110–113 → 114 after 2× `GPA`.
 
 ## Party sheet (`pages/PartyGh.vue`)

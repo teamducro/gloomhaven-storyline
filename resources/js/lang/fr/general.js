@@ -28,6 +28,7 @@ export default {
     "Have a party reputation of 10 or higher": "Avoir une réputation de Compagnie de 10 ou plus.",
     "Have a party reputation of 20": "Avoir une réputation de compagnie de 20",
     "Retire a character": "Avoir fait la Retraite d'un personnage",
+    "When the first character retires": "When the first character retires",
     "Abilities": "Capacités",
     "Achievement": "Haut-Fait | Haut-Faits",
     "Achievements": "Haut-Faits",
@@ -102,6 +103,7 @@ export default {
     "Required": "Prérequis",
     "Requirements": "Pré-requis",
     "Retire": "Retire",
+    "Abandon": "Abandon",
     "Retired": "Retired",
     "Retirement counter": "Compteur de mises à la retraite",
     "Reward": "Récompense | Récompenses",
@@ -129,7 +131,11 @@ export default {
     },
     "retire-character": {
         "text": "Êtes-vous sûr de vouloir mettre cet avanturier à la retraite ? Il ne sera pas supprimé définitivement.",
-        "upgrade": "Êtes-vous sûr de vouloir définitivement mettre cet avanturier à la retraite ? Les utilisateurs Pro peuvent mettre un avanturier à la retraite sans le supprimer définitivement."
+        "upgrade": "Êtes-vous sûr de vouloir définitivement mettre cet avanturier à la retraite ? Les utilisateurs Pro peuvent mettre un avanturier à la retraite sans le supprimer définitivement.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Êtes-vous sûr de vouloir supprimer définitivement ce personnage ?"

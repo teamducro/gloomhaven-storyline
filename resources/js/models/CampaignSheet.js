@@ -2,6 +2,7 @@ import Storable from './Storable'
 import Character from "./Character";
 import GameData from "../services/GameData";
 import Helpers from "../services/Helpers";
+import DeckFiller from "../services/DeckFiller";
 import CharacterRepository from "../repositories/CharacterRepository";
 import BuildingRepository from "../repositories/BuildingRepository";
 import Versionable from "./Versionable";
@@ -19,24 +20,15 @@ class CampaignSheet {
         this.hash = data.hash;
 
         // Sheet fields
-        this.calendar = data.calendar || {
-            week: 0,
-            sections: {
-                5: [32.3],
-                10: [183.3, 21.4],
-                20: [129.3],
-                25: [183.3],
-                30: [183.3],
-                40: [184.1],
-                60: [137.2],
-            }
-        };
+        // `sections` only holds the ones added by hand, the rest come from campaign-rules.json.
+        // New campaigns start with the printed calendar sections, players can add and remove them.
+        this.calendar = data.calendar || {week: 0, sections: _.cloneDeep(new GameData().campaignRule('fh', 'calendarSections'))};
         this.checks = {...data.checks};
         this.perks = {...data.perks};
         this.perkDescriptions = [];
         this.morale = data.morale || 0;
         this.resources = data.resources || {};
-        this.soldiers = data.soldiers || 0;
+        this.soldiers = data.soldiers ?? 4;
         this.inspiration = data.inspiration || 0;
         this.totalDefense = data.totalDefense || 0;
         this.prosperityIndex = data.prosperityIndex || 1;
@@ -76,18 +68,7 @@ class CampaignSheet {
             hash: 'hash',
 
             // Sheet fields
-            calendar: {'calendar': {
-                    week: 0,
-                    sections: {
-                        5: [32.3],
-                        10: [183.3, 21.4],
-                        20: [129.3],
-                        25: [183.3],
-                        30: [183.3],
-                        40: [184.1],
-                        60: [137.2],
-                    }
-                }},
+            calendar: {'calendar': {week: 0, sections: _.cloneDeep(new GameData().campaignRule('fh', 'calendarSections'))}},
             checks: {'checks': {}},
             perks: {'perks': {}},
             morale: 'morale',
@@ -157,65 +138,13 @@ class CampaignSheet {
             this.checks[i] = this.checks[i] || false;
         }
 
-        if (!Object.keys(this.summerRoad).length) {
-            for (let i = 1; i <= 20; i++) {
-                this.summerRoad[i] = true;
-            }
-        }
-        for (let i = 1; i <= 52; i++) {
-            this.summerRoad[i] = this.summerRoad[i] || false;
-        }
+        const decks = this.gameData.decks(this.game);
 
-        if (!Object.keys(this.summerOutpost).length) {
-            for (let i = 1; i <= 20; i++) {
-                this.summerOutpost[i] = true;
-            }
-        }
-        for (let i = 1; i <= 65; i++) {
-            this.summerOutpost[i] = this.summerOutpost[i] || false;
-        }
+        ['summerRoad', 'summerOutpost', 'winterRoad', 'winterOutpost', 'boat'].forEach((deck) => {
+            this[deck] = DeckFiller.fill(this[deck], decks[deck]);
+        });
 
-        if (!Object.keys(this.winterRoad).length) {
-            for (let i = 1; i <= 20; i++) {
-                this.winterRoad[i] = true;
-            }
-        }
-        for (let i = 1; i <= 49; i++) {
-            this.winterRoad[i] = this.winterRoad[i] || false;
-        }
-
-        if (!Object.keys(this.winterOutpost).length) {
-            for (let i = 1; i <= 20; i++) {
-                this.winterOutpost[i] = true;
-            }
-        }
-        for (let i = 1; i <= 81; i++) {
-            this.winterOutpost[i] = this.winterOutpost[i] || false;
-        }
-
-        if (!Object.keys(this.boat).length) {
-            for (let i = 1; i <= 13; i++) {
-                this.boat[i] = true;
-            }
-        }
-        for (let i = 1; i <= 19; i++) {
-            this.boat[i] = this.boat[i] || false;
-        }
-
-        [24,27,31,37,47].forEach((id) => {
-            this.itemDesigns[id] = this.itemDesigns[id] || false;
-        })
-        for (let i = 51; i <= 119; i++) {
-            this.itemDesigns[i] = this.itemDesigns[i] || false;
-        }
-        for (let i = 167; i <= 246; i++) {
-            this.itemDesigns[i] = this.itemDesigns[i] || false;
-        }
-        for (let i = 248; i <= 264; i++) {
-            this.itemDesigns[i] = this.itemDesigns[i] || false;
-        }
-
-        this.itemDesigns = this.removeInvalid(this.itemDesigns, 264);
+        this.itemDesigns = DeckFiller.fill(this.itemDesigns, decks.itemDesigns);
 
         this.perkDescriptions.forEach((perk, index) => {
             perk.desc = this.$tPrefix('town_guard_perks.' + index);
@@ -224,6 +153,10 @@ class CampaignSheet {
                 this.perks[index][i] = this.perks[index][i] || false;
             }
         })
+    }
+
+    // Frosthaven classes add no events when unlocked or retired.
+    addClassEvents() {
     }
 
     fillCharacterUnlocks() {
@@ -295,12 +228,6 @@ class CampaignSheet {
             });
     }
 
-    removeInvalid(list, maxId) {
-        // Crossover packs (e.g. Mercenary Pack) use non-numeric ids like "AN1",
-        // which the numeric range check below doesn't apply to; keep them as-is.
-        return collect(list).filter((value, key) => isNaN(key) || (key >= 0 && key <= maxId)).all();
-    }
-
     read() {
         this.parentRead();
 
@@ -350,10 +277,7 @@ class CampaignSheet {
     }
 
     get starterCharacters() {
-        switch (this.game) {
-            default:
-                return ["DF", "BB", "BN", "DW", "BO", "GE"];
-        }
+        return this.gameData.startingClasses(this.game);
     }
 
     get characterOrder() {
@@ -368,9 +292,16 @@ class CampaignSheet {
         return this._characterOrder;
     }
 
+    // Calendar sections printed on the sheet for a week, followed by the ones added by hand.
+    // Weeks 1-10 are summer, 11-20 winter
+    static isSummerWeek(week) {
+        const remainder = week % 20;
+        return remainder > 0 && remainder <= 10;
+    }
+
+    // calendar.week is the number of crossed off weeks, so the current week is the next one
     isSummer() {
-        const remainder = this.calendar.week % 20;
-        return (remainder % 20 >= 0 && remainder % 20 <= 9);
+        return CampaignSheet.isSummerWeek(this.calendar.week + 1);
     }
 
     // The key used in local storage

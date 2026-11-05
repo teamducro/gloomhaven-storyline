@@ -52,6 +52,9 @@ export default {
         },
         unlockCharacter(id, isChecked) {
             this.sheet.characterUnlocks[id] = isChecked;
+            if (isChecked) {
+                this.sheet.addClassEvents(id, 'unlock');
+            }
             this.sheet.store();
             this.scenarioRepository.scenarioValidator.validate();
             this.$emit('changed', id, isChecked)

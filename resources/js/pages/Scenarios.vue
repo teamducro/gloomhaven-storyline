@@ -79,11 +79,11 @@
                 </template>
                 <template #state="{value, row}">
                     <i v-if="row.isRequired()"
-                       class="material-icons text-required text-2xl mr-2">error_outline</i>
+                       class="material-icons outlined text-required text-2xl mr-2">error</i>
                     <i v-else-if="row.isBlocked()"
-                       class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
+                       class="material-icons outlined text-incomplete text-2xl mr-2">cancel</i>
                     <i v-else-if="row.isComplete()"
-                       class="material-icons text-2xl mr-2">check_circle_outline</i>
+                       class="material-icons outlined text-2xl mr-2">check_circle</i>
                     <i v-else-if="row.isIncomplete()"
                        class="material-icons text-complete text-2xl mr-2">radio_button_unchecked</i>
                 </template>

@@ -90,9 +90,9 @@
                             <div class="flex flex-wrap" style="margin-left: -2px;">
                                 <div class="w-full flex items-center">
                                     <i v-if="scenario.isRequired() || scenario.isBlocked()"
-                                       class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
+                                       class="material-icons outlined text-incomplete text-2xl mr-2">cancel</i>
                                     <i v-else
-                                       class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
+                                       class="material-icons outlined text-complete text-2xl mr-2">check_circle</i>
                                     <span>{{ $t('Requirements') }}:</span>
                                 </div>
                                 <div class="ml-8">

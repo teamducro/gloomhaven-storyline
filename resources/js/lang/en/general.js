@@ -30,6 +30,7 @@ export default {
     "Have a party reputation of 10 or higher": "Have a party reputation of 10 or higher",
     "Have a party reputation of 20": "Have a party reputation of 20",
     "Retire a character": "Retire a character",
+    "When the first character retires": "When the first character retires",
 
     // Storyline App
     "Abilities": "Abilities",
@@ -106,6 +107,7 @@ export default {
     "Required": "Required",
     "Requirements": "Requirements",
     "Retire": "Retire",
+    "Abandon": "Abandon",
     "Retired": "Retired",
     "Retirement counter": "Retirement counter",
     "Reward": "Reward | Rewards",
@@ -133,7 +135,11 @@ export default {
     },
     "retire-character": {
         "text": "Are you sure you want to retire this character? It's not removed permanently.",
-        "upgrade": "Are you sure you want to permanently remove this character? Pro users may retire a character without removing it permanently."
+        "upgrade": "Retiring or abandoning permanently removes this character. Pro users can retire a character and keep an archived copy.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Are you sure you want to permanently remove this character?"

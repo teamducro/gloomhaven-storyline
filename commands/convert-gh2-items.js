@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Converts Gloomhaven Secretariat GH2e items into resources/js/items-gh2.json, lang/*/items.js and img/items/gh2.
+// Converts Gloomhaven Secretariat GH2e items into the items of resources/js/games/gh2.json, lang/*/items.js and img/items/gh2.
 // Usage (from the repo root): node commands/convert-gh2-items.js "docs/GH 2nd" [--images]
 
 const fs = require('fs');
@@ -18,7 +18,7 @@ const read = file => JSON.parse(fs.readFileSync(path.join(src, file), 'utf8'));
 const items = read('items.json');
 const labels = read('label/spoiler/en.json').items;
 
-// Secretariat class names → our class ids (same as characters.json).
+// Secretariat class names → our class ids (same as the gh2 characters).
 const CLASS = {
     bruiser: 'BR2', tinkerer: 'TI2', spellweaver: 'SW2', 'silent-knife': 'SC2', cragheart: 'CH2', mindthief: 'MT2',
     sun: 'SK2', 'three-spears': 'QM2', circles: 'ST2', eclipse: 'NS2', squidface: 'PH2', lightning: 'BE2',
@@ -33,8 +33,15 @@ const CUSTOM = {'gh2e-doom': '{DOOM}', 'gh2e-augment': '{AUGMENT}', 'gh2e-song':
 const SPECIAL = {self: 'Self', ally: 'One ally', all: 'All', allies: 'All allies'};
 const CARD = {round: '{ROUND}', persistent: '{PERSISTENT}'};
 
-// Unlocks Secretariat doesn't model (official FAQ).
-const SOURCE_OVERRIDES = {149: 'Personal Quest 04'};
+// Unlocks Secretariat doesn't model: personal quest gains (official FAQ) and C-86's narrative gain.
+const SOURCE_OVERRIDES = {113: 'Personal Quest 15', 137: 'City Event 86', 149: 'Personal Quest 04', 150: 'Personal Quest 17'};
+// Reputation items 069-080, requirement printed on the card: Military, Merchant's Guild, Demons at 13/15/17/19.
+['Military', "Merchant's Guild", 'Demons'].forEach((faction, f) => [13, 15, 17, 19].forEach((value, v) =>
+    SOURCE_OVERRIDES[69 + f * 4 + v] = `${faction} Reputation ${value}`));
+// The card prints "Heavy Basinet"; Secretariat spells it "Bassinet".
+const NAME_OVERRIDES = {18: 'Heavy Basinet'};
+// The card prints "1/21", a misprint Secretariat copied; every other design is a single copy.
+const COUNT_OVERRIDES = {112: 1};
 
 // Official FAQ §9.1, item rulings (paraphrased).
 const FAQ = {
@@ -44,7 +51,8 @@ const FAQ = {
     98: 'End of turn looting happens in your original hex, after the teleport.',
     116: 'You cannot use the front side if you already have disadvantage on the attack. The front can be used on an attack an ally grants you, but the card only flips at the end of your next turn.',
     133: 'Instead of attacking you, the enemy performs an Attack -1 on one of your other enemies. Can also be used just to negate the attack.',
-    136: 'Does not affect your summons.',
+    // The FAQ numbers the Flea-Bitten Shawl 136; the card is 137.
+    137: 'Does not affect your summons.',
     142: 'You do not take damage from the hazardous terrain you create; it only damages figures that enter it.',
 };
 
@@ -62,7 +70,7 @@ function token(raw) {
         const icon = `{${m[1].toUpperCase()}.fh}`;
         return num === '' ? icon : (signed ? `${num} ${icon}` : `${icon} ${num}`);
     }
-    if ((m = name.match(/^game\.condition\.(\w+)$/))) return m[1] === 'safeguard' ? 'Safeguard' : `{${m[1].toUpperCase()}.fh}`;
+    if ((m = name.match(/^game\.condition\.(\w+)$/))) return {safeguard: 'Safeguard', plague: 'Plague'}[m[1]] || `{${m[1].toUpperCase()}.fh}`;
     if ((m = name.match(/^game\.element\.consume\.(\w+)$/))) return `{${ELEMENT[m[1]]}_X}`;
     if ((m = name.match(/^game\.element\.(\w+)$/))) return `{${ELEMENT[m[1]]}}`;
     if ((m = name.match(/^game\.attackmodifier\.(\w+)$/))) return MODIFIER[m[1]];
@@ -118,15 +126,16 @@ for (const dir of ['scenarios', 'sections']) {
     for (const file of fs.readdirSync(path.join(src, dir))) {
         const d = read(dir + '/' + file);
         const scenario = dir === 'scenarios' ? d.index : d.parent;
-        walk(d, o => (o.treasures || []).forEach(t => /^\d+$/.test(t) && (treasureScenario[t] = treasureScenario[t] || scenario)));
-        ((d.rewards && d.rewards.items) || []).forEach(id => addSource(+id, d.group === 'solo'
-            ? `Reward from Solo Scenario - {${CLASS[items.find(i => i.id === +id).solo]}}`
+        walk(d, o => (o.treasures || []).forEach(t => /^\d+$/.test(t) && (treasureScenario[t] = treasureScenario[t] || new Set()).add(+scenario)));
+        // "37-2" means two copies of item 37.
+        ((d.rewards && d.rewards.items) || []).map(id => parseInt(id, 10)).forEach(id => addSource(id, d.group === 'solo'
+            ? `Reward from Solo Scenario - {${CLASS[items.find(i => i.id === id).solo]}}`
             : `Reward from {SCENARIO ${+scenario}}`));
     }
 }
 read('treasures.json').forEach((reward, i) => (reward.match(/item:(\d+)/g) || []).forEach(m => {
-    const scenario = treasureScenario[i + 1];
-    addSource(+m.slice(5), (scenario ? `{SCENARIO ${+scenario}} ` : '') + `(Treasure #${String(i + 1).padStart(2, '0')})`);
+    const scenarios = [...(treasureScenario[i + 1] || [])].map(s => `{SCENARIO ${s}} `).join('');
+    addSource(+m.slice(5), scenarios + `(Treasure #${String(i + 1).padStart(2, '0')})`);
 }));
 read('events.json').forEach(e => walk(e, o => o.type === 'item' && (o.values || []).forEach(id =>
     addSource(+id, `${e.type === 'city' ? 'City' : 'Road'} Event ${e.cardId.replace(/^\w-0*/, '')}`))));
@@ -138,7 +147,7 @@ const output = items.map(i => {
     source.push(...(sources[i.id] || []));
     if (SOURCE_OVERRIDES[i.id]) source.push(SOURCE_OVERRIDES[i.id]);
 
-    const item = {id: i.id, name: i.name, count: i.count, cost: i.cost, slot: SLOT[i.slot]};
+    const item = {id: i.id, name: NAME_OVERRIDES[i.id] || i.name, count: COUNT_OVERRIDES[i.id] || i.count, cost: i.cost, slot: SLOT[i.slot]};
     if (source.length) item.source = source.join('\n');
     if (i.spent) item.spent = true;
     if (i.consumed) item.consumed = true;
@@ -151,7 +160,10 @@ const output = items.map(i => {
 
 if (unresolved.size) throw new Error('Unresolved tokens: ' + [...unresolved].join(', '));
 if (output.length !== 170) throw new Error('Expected 170 items, got ' + output.length);
-fs.writeFileSync('resources/js/items-gh2.json', JSON.stringify(output, null, 4) + '\n');
+const gameFile = 'resources/js/games/gh2.json';
+const game = JSON.parse(fs.readFileSync(gameFile, 'utf8'));
+game.items = output;
+fs.writeFileSync(gameFile, JSON.stringify(game, null, 4) + '\n');
 
 // Translations: English text everywhere, item names reused from existing translations with the same English name.
 const langDir = 'resources/js/lang';

@@ -1,4 +1,6 @@
-import eventsGh2 from "../events-gh2.json";
+import GameData from "../services/GameData";
+
+const gameData = new GameData();
 
 class Card {
 
@@ -38,7 +40,7 @@ class Card {
     }
 
     get outcomes() {
-        return this.game === 'gh2' ? (eventsGh2[`${this.type}-${this.id}`] || ['A']) : ['A', 'B'];
+        return this.game === 'gh2' ? (gameData.events(this.game)[`${this.type}-${this.id}`] || ['A']) : ['A', 'B'];
     }
 
     get folder() {

@@ -1260,14 +1260,16 @@ export default {
         "name": "Buried Ducts",
         "rewards": [
             "Gain 3 collective {LUMBER}",
-            "Gain 3 collective {METAL}"
+            "Gain 3 collective {METAL}",
+            "Gain “Converging Lenses” (Item 67) blueprint"
         ]
     },
     "fh-37": {
         "name": "The Dead Mile",
         "rewards": [
             "Gain 3 collective {LUMBER}",
-            "Gain 3 collective {METAL}"
+            "Gain 3 collective {METAL}",
+            "Gain “Converging Lenses” (Item 67) blueprint"
         ]
     },
     "fh-38": {
@@ -1453,6 +1455,7 @@ export default {
             "Gain 2 morale",
             "Gain 1 prosperity",
             "Gain 30 experience each",
+            "Gain “Armor of Empathy” (Item 224)",
             "Unlock whichever class box is still locked: {CR} or {DT}",
             "Remove all {LURKERS} events from all outpost event decks",
             "Add event SO-48 to the summer outpost deck and event B-17 to the boat deck",
@@ -3414,7 +3417,7 @@ export default {
     "gh2-89": {
         "name": "Community Service",
         "rewards": [
-            "Gain “Major Healing Potion” (Item 37)"
+            "Gain 2× “Major Healing Potion” (Item 37)"
         ]
     },
     "gh2-90": {

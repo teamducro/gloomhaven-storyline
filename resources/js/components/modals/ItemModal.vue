@@ -30,13 +30,13 @@
                     <div class="flex-1 space-y-2">
                         <p v-if="item._source">
                             <span class="relative w-6 h-4 inline-block">
-                                <span class="material-icons absolute">info_outline</span>
+                                <span class="material-icons outlined absolute">info</span>
                             </span>
                             <add-links-and-icons :text="$t(item.source)"/>
                         </p>
                         <p v-if="item._faq">
                             <span class="relative w-6 h-4 inline-block">
-                                <span class="material-icons absolute">help_outline</span>
+                                <span class="material-icons outlined absolute">help</span>
                             </span>
                             {{ $t(item.faq) }}
                         </p>

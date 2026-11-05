@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-// Generates the Gloomhaven 2nd Edition storyline flowchart from scenarios-gh2.json.
+// Generates the Gloomhaven 2nd Edition storyline flowchart from games/gh2.json.
 // Node positions are hand-placed in the grid below; layout fixes belong there, never in gh2.svg.
 
 const fs = require('fs');
 
-const INPUT = 'resources/js/scenarios-gh2.json';
+const INPUT = 'resources/js/games/gh2.json';
 const OUTPUT = 'resources/svg/storylines/gh2.svg';
 
 const R = 12;           // node radius

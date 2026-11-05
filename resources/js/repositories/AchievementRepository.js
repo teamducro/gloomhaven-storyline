@@ -59,7 +59,7 @@ export default class AchievementRepository {
 
         // "The Power of Enhancement" unlocks enhancements in Gloomhaven: turn them on once it's first
         // awarded. The user can still turn them off (or on without it) on the Abilities page.
-        if (!wasAwarded && ['GTPE', 'G2TPE'].includes(achievement.id)) {
+        if (!wasAwarded && new GameData().campaignRule(app.game, 'enhancementAchievements').includes(achievement.id)) {
             const sheet = new SheetRepository().make(app.game);
             if (!sheet.enhancementsEnabled) {
                 sheet.enhancementsEnabled = true;

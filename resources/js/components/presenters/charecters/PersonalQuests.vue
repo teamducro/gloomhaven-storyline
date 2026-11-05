@@ -142,6 +142,8 @@ export default {
         random() {
             const id = [...Object.keys(this.quests)]
                 .filter(id => !this.unavailableQuests.includes(parseInt(id)))
+                // GH2e starts with the `starting` quests; the rest join the deck later (FAQ 2.0), so pick those manually.
+                .filter(id => this.sheet.game !== 'gh2' || this.quests[id].starting)
                 .sort((a, b) => 0.5 - Math.random())[0];
             const quest = this.quests[id];
             this.hidden = false;
@@ -157,6 +159,7 @@ export default {
         remove() {
             this.quest.resetProgress();
             this.update(this.quest);
+            this.personalQuestValidator.validate(this.quest, this.sheet);
             this.$emit('update:quest', {});
             this.$emit('change', {});
         },
@@ -175,6 +178,8 @@ export default {
             this.validate();
         },
         validate() {
+            // Store first, unlocking a scenario re-validates the story, which reloads the character from storage
+            this.update(this.quest);
             this.goalMet = this.personalQuestValidator.validate(this.quest, this.sheet);
             this.update(this.quest);
         },

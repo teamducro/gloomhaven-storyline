@@ -24,11 +24,11 @@ Read the reference for every game your change touches: [gh](references/gh.md) (+
 | Requirement | `required_by` (logic), `requirements` (text), `models/Requirement.js` (tokens) |
 | Branch choice | `choices` / `scenario.choice` |
 | Conclusion decision | `prompt` / `promptChoice` / `services/ChoiceService.js` |
-| Story summary | `models/Quest.js`, `quests-*.json`, `QuestValidator` |
+| Story summary | `models/Quest.js`, `quests` in `games/{game}.json`, `QuestValidator` |
 | Personal quest | `models/PersonalQuest.js`, `character.quest` |
 | City rule | `AchievementGroup` `CR`, `CR2`; other exclusive groups `ART`, FH `CORE`/`JAR` |
 | Prosperity / checkmark | `SheetCalculations.calculateProsperity` / `sheet.prosperityIndex` |
-| Retire / Remove | `CharacterRepository.archiveCharacter` / `removeCharacter` |
+| Retire / Abandon / Remove | Cloud: `CharacterRepository.archiveCharacter`; local: `retireCharacter` (events) / `abandonCharacter` (re-locks open quest scenarios); `removeCharacter` deletes |
 | Perk checkmark | `character.checks` |
 | Item design | `sheet.itemDesigns` |
 | FH vehicle, wall, town feature, world sticker | `models/Overlay.js` |
@@ -43,7 +43,7 @@ Read the reference for every game your change touches: [gh](references/gh.md) (+
 
 ## Scenario unlocking
 
-Data `scenarios-{game}.json` (GH+FC: `scenarios.json`). `ScenarioValidator` ≤5 passes, then `AchievementValidator`, `QuestValidator`, `StorySyncer.store()`.
+Data: `scenarios` in `games/{game}.json` (GH+FC: `gh.json`). `ScenarioValidator` ≤5 passes, then `AchievementValidator`, `QuestValidator`, `StorySyncer.store()`.
 
 - `hidden` → visible: `root`, a complete `linked_from` parent (respecting `choice`), `treasures_to`, or `solo` class unlocked/in party. Visible `is_side` never re-hides.
 - `required_by`: OR of AND-groups `{complete, incomplete}`; ints = scenarios, strings = achievements or tokens `rope boat sled calendar puzzle`; `hidden`/`hidden_when` display-only. Unmet → `required`, met → `incomplete`.
@@ -54,18 +54,24 @@ Data `scenarios-{game}.json` (GH+FC: `scenarios.json`). `ScenarioValidator` ≤5
 
 ## Achievements
 
-`achievements.json` = gh, fc, cs; plus `-gh2`, `-fh`; jotl none. Types `Global`, `Party`, `Campaign` (FH). `upgrades` + `count` = stacking stickers. `is_manual` added on the Achievements page, may reveal a side scenario. Group gain replaces the current; default city rule (`GCRM`, `G2AUP`) auto-gained. `GTPE`/`G2TPE` enable enhancements.
+`achievements`: `gh.json` = gh, fc; `cs.json` holds the `PCS*` ones (GameData serves gh+cs together for gh, fc, cs, mp); own in gh2, fh; jotl none. Types `Global`, `Party`, `Campaign` (FH). `upgrades` + `count` = stacking stickers. `is_manual` added on the Achievements page, may reveal a side scenario. Group gain replaces the current; default city rule (`GCRM`, `G2AUP`) auto-gained. `GTPE`/`G2TPE` enable enhancements.
 
 ## Rules per game
 
-`services/SheetCalculations.js`: prosperity thresholds, reputation price, donations, FH defense, shop (`calculateItems*`), scenario level, difficulty. Add new rules there keyed by game.
+`services/SheetCalculations.js` holds the rules; the numbers live per game in `resources/js/games/{game}.json`, read via `services/GameData.js` getters (`decks`, `prosperity`, `shop`, `campaignRule`, `enhancementCosts`, `classEvents`, `startingClasses`, `sectionsGh2`):
+- `decks`: event deck sizes, item design ranges, sheet unlock counts, FH boat (filled by `DeckFiller`).
+- `prosperity`: thresholds, last item per level. `shop`: FH/JotL shop items, GH items in FH.
+- `rules`: reputation prices, donations (GH2 Great Oak), FH morale → defense and calendar sections, difficulty tables, default city rule, enhancement-unlocking achievements.
+- `enhancements`: base costs. `classEvents`. `sections` (gh2): GH2 sheet events, reputation achievements, sections.
+Add new rules to the game's file. Games without own values copy GH's (jotl, cs prosperity/enhancements/rules); fc and mp fall back to GH in `GameData`. Every file has the same keys (`cypress/e2e/tracker/game-data.cy.js`).
 
 ## Characters, items, enhancements
 
-- `characters.json`: `perks[].cards` → attack modifier deck; `masteries`. Starters hard-coded in `starterCharacters` (`starting_group` unused). `character.game` = class origin, `sheet_game` = campaign game.
+- `characters` (own classes per file; `characterOrder`; `GameData.characters()` merges all): `perks[].cards` → attack modifier deck; `masteries`. Starters derive from `starting_group` (`GameData.startingClasses`: groups other than `_locked`/`_addon`; FC adds the GH starters); GH2 personal quests flag `starting` for the opening deck. `character.game` = class origin, `sheet_game` = campaign game.
 - `sheet.characterUnlocks`: Party page, personal quest (`PersonalQuestValidator`), Envelope X (`xResult`).
+- Class events: `Sheet.addClassEvents(id, 'unlock'|'retire')` on unlock (Party checkbox, personal quest, adding a locked class, CS starting class) and retirement (`CharacterRepository.applyRetirement`); each once per class (`sheet.classEventsAdded`). Lists per class in `classEvents` (GH/FC/CS: unlock/retire, City + Road; GH2: unlock only; FH none).
 - Item id `{game}-{number}` (fc → gh); `app.items` merges enabled games; shop = `calculateItems*` + `itemDesigns` + cross-game; `ItemAvailability` = stock − owned.
-- `sheet.enhancements[classId][abilityCode]` (survives retirement); costs/limits in `AbilityEnhancements.js`.
+- `sheet.enhancements[classId][abilityCode]` (survives retirement); costs in `enhancements`, rules in `AbilityEnhancements.js`.
 
 ## Pages
 
