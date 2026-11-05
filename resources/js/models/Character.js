@@ -202,9 +202,9 @@ class Character {
         return this.abilityCount > 0;
     }
 
-    // No mat scans available yet for GH2 and these Mercenary Pack characters.
+    // No mat scans available yet for these Mercenary Pack characters.
     get hasMat() {
-        return this.game !== 'gh2' && !['SA', 'CA', 'AN'].includes(this.id);
+        return !['SA', 'CA', 'AN'].includes(this.id);
     }
 
     get matImages() {

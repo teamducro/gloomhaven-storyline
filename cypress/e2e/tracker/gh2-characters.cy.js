@@ -28,6 +28,14 @@ describe('Gloomhaven 2nd Edition characters', () => {
         cy.contains('You may select an additional perk!');
     });
 
+    it('It opens the gh2 character mat', () => {
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Bruiser');
+
+        cy.get('#character-art').click();
+        cy.get('#character-mat img[src*="character-mats/gh2/BR2-front"]').should('exist');
+    });
+
     it('It applies gh2 perks to the attack modifier deck', () => {
         cy.visit('/tracker/#/characters');
         utilities.openCharacter('Bruiser');
