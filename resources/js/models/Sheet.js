@@ -105,7 +105,7 @@ class Sheet {
         // Nothing to set up..
     }
 
-    // Item designs, event decks and campaign sheet unlocks, sized per game by decks.json.
+    // Item designs, event decks and campaign sheet unlocks, sized per game by `decks` in games/<game>.json.
     fillBlanks() {
         const decks = this.gameData.decks(this.game);
 
@@ -147,9 +147,13 @@ class Sheet {
 
     // Events as 'C-57' / 'R-21'.
     addEvents(events) {
+        const decks = {C: 'city', R: 'road'};
         events.forEach((event) => {
             const [type, number] = event.split('-');
-            this[type === 'C' ? 'city' : 'road'][parseInt(number)] = true;
+            if (!decks[type]) {
+                throw new Error(`Unknown event type: ${event}`);
+            }
+            this[decks[type]][parseInt(number)] = true;
         });
     }
 

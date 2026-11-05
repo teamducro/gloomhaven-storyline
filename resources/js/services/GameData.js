@@ -5,18 +5,17 @@ import fcJson from '../games/fc.json'
 import jotlJson from '../games/jotl.json'
 import csJson from '../games/cs.json'
 import mpJson from '../games/mp.json'
-import GameDataFile from "./GameDataFile";
 import {Game} from "../models/Game";
 import store from "store/dist/store.modern";
 
 const files = {
-    [Game.gh]: new GameDataFile(ghJson),
-    [Game.gh2]: new GameDataFile(gh2Json),
-    [Game.fh]: new GameDataFile(fhJson),
-    [Game.fc]: new GameDataFile(fcJson),
-    [Game.jotl]: new GameDataFile(jotlJson),
-    [Game.cs]: new GameDataFile(csJson),
-    [Game.mp]: new GameDataFile(mpJson),
+    [Game.gh]: ghJson,
+    [Game.gh2]: gh2Json,
+    [Game.fh]: fhJson,
+    [Game.fc]: fcJson,
+    [Game.jotl]: jotlJson,
+    [Game.cs]: csJson,
+    [Game.mp]: mpJson,
 }
 
 // Merge order of the lists that span all games; keeps the historical global order.
@@ -221,10 +220,6 @@ export default class GameData {
 
     mapSettings(game = Game.gh) {
         return {...this._file(game).map.settings}
-    }
-
-    mapYOffset(game = Game.gh) {
-        return this._file(game).map.yOffset
     }
 
     storylineViewBox(game = Game.gh) {

@@ -51,7 +51,7 @@ const labels = {
 
 export default {
     methods: {
-        // Base gold cost per type (enhancements.json): classic rules for gh/cs/fc, Frosthaven Appendix D, and
+        // Base gold cost per type (`enhancements` in games/<game>.json): classic rules for gh/cs/fc, Frosthaven Appendix D, and
         // GH2e (rulebook Appendix D, p.65) which is Frosthaven's without Regenerate.
         enhancementBaseCosts(game) {
             return new GameData().enhancementCosts(game);

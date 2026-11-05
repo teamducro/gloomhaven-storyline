@@ -474,7 +474,7 @@ describe('Character', () => {
         });
     });
 
-    it('It locks a personal quest scenario again when its goal is unchecked, and keeps FH 65 locked until scenario 1', () => {
+    it('It keeps a personal quest scenario unlocked when its goal is unchecked, and FH 65 locked until scenario 1', () => {
         utilities.enableGame('fh');
         utilities.switchGame('fh');
         cy.visit('/tracker/#/characters');
@@ -491,30 +491,7 @@ describe('Character', () => {
 
         cy.get('#pq-0-0').click();
         utilities.scenarios().then((scenarios) => {
-            expect(scenarios.firstWhere('id', 65).state).eq('hidden');
-        });
-    });
-
-    it('It keeps a CS personal quest scenario unlocked while any of its goals is met', () => {
-        utilities.enableGame('cs');
-        utilities.switchGame('cs');
-        cy.visit('/tracker/#/characters');
-
-        utilities.openCharacter('Bombard');
-        utilities.scrollTo('60%');
-        cy.get(`input[name="personal-quests"]`).type('Natural');
-        cy.get('li').contains('Natural Selection').click();
-
-        // Only the second goal (ICE) is met
-        cy.get('#pq-1-0').click();
-        cy.get('#pq-1-1').click();
-        utilities.scenarios().then((scenarios) => {
-            expect(scenarios.firstWhere('id', 37).state).eq('incomplete');
-        });
-
-        cy.get('#pq-1-1').click();
-        utilities.scenarios().then((scenarios) => {
-            expect(scenarios.firstWhere('id', 37).state).eq('hidden');
+            expect(scenarios.firstWhere('id', 65).state).eq('required');
         });
     });
 });

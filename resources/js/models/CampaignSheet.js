@@ -20,8 +20,7 @@ class CampaignSheet {
         this.hash = data.hash;
 
         // Sheet fields
-        // `sections` only holds the ones added by hand, the rest come from campaign-rules.json.
-        // New campaigns start with the printed calendar sections, players can add and remove them.
+        // New campaigns start with the printed calendar sections (fh.json rules), players can add and remove them.
         this.calendar = data.calendar || {week: 0, sections: _.cloneDeep(new GameData().campaignRule('fh', 'calendarSections'))};
         this.checks = {...data.checks};
         this.perks = {...data.perks};
@@ -292,7 +291,6 @@ class CampaignSheet {
         return this._characterOrder;
     }
 
-    // Calendar sections printed on the sheet for a week, followed by the ones added by hand.
     // Weeks 1-10 are summer, 11-20 winter
     static isSummerWeek(week) {
         const remainder = week % 20;

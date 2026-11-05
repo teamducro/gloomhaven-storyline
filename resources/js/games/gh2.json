@@ -14526,7 +14526,113 @@
                 "C-57"
             ]
         },
-        "firstRetirementUnlock": 7
+        "firstRetirementUnlock": 7,
+        "unlocks": [
+            {
+                "goal": "13 reputation with any faction",
+                "reward": "Add City Event 57"
+            },
+            {
+                "faction": "demons",
+                "reputation": 6,
+                "scenarios": "11",
+                "section": "29.1"
+            },
+            {
+                "faction": "demons",
+                "reputation": 12,
+                "scenarios": "19 & 20",
+                "section": "133.5"
+            },
+            {
+                "faction": "merchant-guild",
+                "reputation": 6,
+                "scenarios": "8",
+                "section": "49.1"
+            },
+            {
+                "faction": "merchant-guild",
+                "reputation": 12,
+                "scenarios": "21 & 22",
+                "section": "41.3"
+            },
+            {
+                "faction": "military",
+                "reputation": 6,
+                "scenarios": "10",
+                "section": "46.3"
+            },
+            {
+                "faction": "military",
+                "reputation": 12,
+                "scenarios": "17 & 18",
+                "section": "39.3"
+            },
+            {
+                "goal": "When the first character retires",
+                "section": "68.4"
+            },
+            {
+                "faction": "demons",
+                "reputation": 9,
+                "section": "78.3"
+            },
+            {
+                "faction": "demons",
+                "reputation": 16,
+                "section": "73.3"
+            },
+            {
+                "faction": "demons",
+                "reputation": 20,
+                "section": "77.2"
+            },
+            {
+                "faction": "merchant-guild",
+                "reputation": 9,
+                "section": "77.3"
+            },
+            {
+                "faction": "merchant-guild",
+                "reputation": 16,
+                "section": "10.2"
+            },
+            {
+                "faction": "merchant-guild",
+                "reputation": 20,
+                "section": "20.1"
+            },
+            {
+                "faction": "military",
+                "reputation": 9,
+                "section": "83.3"
+            },
+            {
+                "faction": "military",
+                "reputation": 16,
+                "section": "53.1"
+            },
+            {
+                "faction": "military",
+                "reputation": 20,
+                "section": "31.5"
+            },
+            {
+                "faction": "demons",
+                "reward": "Reputation above 12 unlocked",
+                "maxReputation": 20
+            },
+            {
+                "faction": "merchant-guild",
+                "reward": "Reputation above 12 unlocked",
+                "maxReputation": 20
+            },
+            {
+                "faction": "military",
+                "reward": "Reputation above 12 unlocked",
+                "maxReputation": 20
+            }
+        ]
     },
     "map": {
         "images": {
@@ -14539,7 +14645,6 @@
             "width": 2500,
             "height": 2217
         },
-        "yOffset": 0,
         "viewBox": {
             "portrait": "0 -110 588 1177",
             "landscape": "0 -90 818 845"

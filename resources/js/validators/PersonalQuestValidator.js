@@ -8,14 +8,10 @@ export default class PersonalQuestValidator {
         const goals = quest.progress.map((progress) => this.isPartialGoalMet(progress));
         const allGoalsMet = goals.every((goal) => goal);
 
-        // Several goals can unlock the same scenario, any met goal keeps it unlocked
-        const scenarioUnlocks = new Map();
-        quest.progress.forEach((progress, index) => {
-            if (progress.scenario_unlock) {
-                scenarioUnlocks.set(progress.scenario_unlock, scenarioUnlocks.get(progress.scenario_unlock) || goals[index]);
-            }
-        });
-        scenarioUnlocks.forEach((met, id) => this.toggleScenario(id, met, sheet));
+        // Un-checking a goal doesn't lock its scenario again, players may have unlocked it without tracking progress
+        quest.progress
+            .filter((progress, index) => goals[index] && progress.scenario_unlock)
+            .forEach(progress => this.unlockScenario(progress.scenario_unlock));
 
         // GH2e quest steps that add city events to the deck; un-checking leaves them, they're shuffled in.
         const cityEvents = quest.progress
@@ -66,22 +62,21 @@ export default class PersonalQuestValidator {
         return false;
     }
 
-    toggleScenario(id, unlock, sheet) {
-        const scenario = this.scenarioRepository.find(id);
-        if (unlock) {
-            if (scenario.isHidden()) {
-                this.scenarioRepository.changeState(scenario, ScenarioState.incomplete);
-            }
-            return;
-        }
+    // Abandoning locks the quest's open scenarios again, completed ones stay (FAQ 3.2).
+    lockScenarios(quest, sheet) {
+        const scenarioValidator = new ScenarioValidator;
+        scenarioValidator.sheet = sheet;
+        quest.progress
+            .filter(progress => progress.scenario_unlock)
+            .map(progress => this.scenarioRepository.find(progress.scenario_unlock))
+            .filter(scenario => !scenario.isHidden() && !scenario.isComplete() && !scenarioValidator.isUnlockedByStory(scenario))
+            .forEach(scenario => this.scenarioRepository.setHidden(scenario));
+    }
 
-        // Un-checking the goal locks the scenario again, unless it is completed or unlocked some other way
-        if (!scenario.isHidden() && !scenario.isComplete()) {
-            const scenarioValidator = new ScenarioValidator;
-            scenarioValidator.sheet = sheet;
-            if (!scenarioValidator.isUnlockedByStory(scenario)) {
-                this.scenarioRepository.setHidden(scenario);
-            }
+    unlockScenario(id) {
+        const scenario = this.scenarioRepository.find(id);
+        if (scenario.isHidden()) {
+            this.scenarioRepository.changeState(scenario, ScenarioState.incomplete);
         }
     }
 

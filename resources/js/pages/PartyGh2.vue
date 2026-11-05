@@ -21,7 +21,7 @@
                     :title="$t('Demons')"
                     v-model:value="sheet.factionReputation.demons"
                     :min="-10"
-                    :max="sheet.unlocks[17] ? 20 : 12"
+                    :max="maxReputation('demons')"
                     :loading="loading"
                     @change="factionChanged"/>
                 <counter-section
@@ -29,7 +29,7 @@
                     :title="$t('Merchant\'s Guild')"
                     v-model:value="sheet.factionReputation['merchant-guild']"
                     :min="-10"
-                    :max="sheet.unlocks[18] ? 20 : 12"
+                    :max="maxReputation('merchant-guild')"
                     :loading="loading"
                     @change="factionChanged"/>
                 <counter-section
@@ -37,7 +37,7 @@
                     :title="$t('Military')"
                     v-model:value="sheet.factionReputation.military"
                     :min="-10"
-                    :max="sheet.unlocks[19] ? 20 : 12"
+                    :max="maxReputation('military')"
                     :loading="loading"
                     @change="factionChanged"/>
             </div>
@@ -186,42 +186,18 @@ import PartyGh from "./PartyGh";
 import AchievementRepository from "../repositories/AchievementRepository";
 import GameData from "../services/GameData";
 
-// Campaign sheet rules (reputation and prosperity events, sections, unlocks) live in sections-gh2.json.
+// Campaign sheet rules (reputation and prosperity events, sections, unlocks) live in `sections` of gh2.json.
 const sections = new GameData().sectionsGh2();
+const factionNames = {demons: 'Demons', 'merchant-guild': 'Merchant\'s Guild', military: 'Military'};
 
 export default {
     extends: PartyGh,
     data() {
-        const section = this.$t('Read section');
-        const faction = (name, value, scenarios) => this.$t(name) + ' ' + value
-            + (scenarios ? ' + ' + this.$t('Scenario') + ' ' + scenarios : '');
         return {
             prosperityItems: ['001–016', '017–024', '025–032', '033–040', '041–048', '049–053', '054–058', '059–063', '064–068'],
             prosperitySections: sections.prosperitySections,
             imbuementSections: sections.imbuementSections,
-            // Index = sheet.unlocks key, never reorder.
-            unlocks: [
-                {goal: this.$t('13 reputation with any faction'), reward: this.$t('Add City Event 57')},
-                {goal: faction('Demons', 6, '11'), reward: section + ' 29.1'},
-                {goal: faction('Demons', 12, '19 & 20'), reward: section + ' 133.5'},
-                {goal: faction('Merchant\'s Guild', 6, '8'), reward: section + ' 49.1'},
-                {goal: faction('Merchant\'s Guild', 12, '21 & 22'), reward: section + ' 41.3'},
-                {goal: faction('Military', 6, '10'), reward: section + ' 46.3'},
-                {goal: faction('Military', 12, '17 & 18'), reward: section + ' 39.3'},
-                {goal: this.$t('When the first character retires'), reward: section + ' 68.4'},
-                {goal: faction('Demons', 9), reward: section + ' 78.3'},
-                {goal: faction('Demons', 16), reward: section + ' 73.3'},
-                {goal: faction('Demons', 20), reward: section + ' 77.2'},
-                {goal: faction('Merchant\'s Guild', 9), reward: section + ' 77.3'},
-                {goal: faction('Merchant\'s Guild', 16), reward: section + ' 10.2'},
-                {goal: faction('Merchant\'s Guild', 20), reward: section + ' 20.1'},
-                {goal: faction('Military', 9), reward: section + ' 83.3'},
-                {goal: faction('Military', 16), reward: section + ' 53.1'},
-                {goal: faction('Military', 20), reward: section + ' 31.5'},
-                {goal: this.$t('Demons'), reward: this.$t('Reputation above 12 unlocked')},
-                {goal: this.$t('Merchant\'s Guild'), reward: this.$t('Reputation above 12 unlocked')},
-                {goal: this.$t('Military'), reward: this.$t('Reputation above 12 unlocked')},
-            ],
+            unlocks: sections.unlocks.map(unlock => ({goal: this.unlockGoal(unlock), reward: this.unlockReward(unlock)})),
         }
     },
     computed: {
@@ -233,6 +209,22 @@ export default {
         },
     },
     methods: {
+        // Above 12 once the faction's sheet unlock is checked.
+        maxReputation(faction) {
+            const index = sections.unlocks.findIndex(unlock => unlock.faction === faction && unlock.maxReputation);
+            return this.sheet.unlocks[index] ? sections.unlocks[index].maxReputation : 12;
+        },
+        unlockGoal({goal, faction, reputation, scenarios}) {
+            if (goal) {
+                return this.$t(goal);
+            }
+
+            return [this.$t(factionNames[faction]), reputation, scenarios && '+ ' + this.$t('Scenario') + ' ' + scenarios]
+                .filter(Boolean).join(' ');
+        },
+        unlockReward({reward, section}) {
+            return reward ? this.$t(reward) : this.$t('Read section') + ' ' + section;
+        },
         async render() {
             this.loading = true;
 

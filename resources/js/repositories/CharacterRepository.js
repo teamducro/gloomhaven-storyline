@@ -91,9 +91,9 @@ export default class CharacterRepository {
     // Abandoning adds no events and locks the scenarios its personal quest unlocked again; completed ones stay (FAQ 3.2).
     abandonCharacter(sheet, character, archive) {
         if (character.quest instanceof PersonalQuest) {
+            new PersonalQuestValidator().lockScenarios(character.quest, sheet);
             character.quest.resetProgress();
             character.store();
-            new PersonalQuestValidator().validate(character.quest, sheet);
         }
         this.archiveOrRemove(sheet, character, archive);
     }

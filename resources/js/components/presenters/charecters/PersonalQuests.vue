@@ -159,7 +159,6 @@ export default {
         remove() {
             this.quest.resetProgress();
             this.update(this.quest);
-            this.personalQuestValidator.validate(this.quest, this.sheet);
             this.$emit('update:quest', {});
             this.$emit('change', {});
         },
